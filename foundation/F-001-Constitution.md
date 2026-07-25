@@ -577,10 +577,10 @@ F-001 wajib diharmonisasi setelah F-002 sampai F-005 memperoleh persetujuan subs
 
 ## 15. Governance / Tata Kelola
 
-### QF-001-GOV-001 — Stewardship / Pengampunan dan pemeliharaan
+### QF-001-GOV-001 — Stewardship / Pengelolaan dan pemeliharaan
 
 QURBATA shall be governed by an authorized stewardship structure designated by its founding institution.  
-QURBATA wajib dikelola oleh struktur pemeliharaan yang berwenang dan ditetapkan oleh lembaga pendiri.
+QURBATA wajib dikelola oleh struktur pengelolaan dan pemeliharaan yang berwenang serta ditetapkan oleh lembaga pendiri.
 
 ### QF-001-GOV-002 — Roles / Peran
 
