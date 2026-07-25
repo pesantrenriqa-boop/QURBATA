@@ -12,7 +12,7 @@
 | ID Dokumen | QC-000 |
 | Judul | Konstitusi QURBATA |
 | Bahasa | Bahasa Indonesia |
-| Versi | 0.1.0-id |
+| Versi | 0.2.0-id |
 | Status | Draf Pendiri |
 | Tingkat Dokumen | Konstitusional |
 | Kedudukan | Dokumen normatif tertinggi dalam ekosistem QURBATA |
@@ -32,6 +32,7 @@
 | Versi | Tanggal | Status | Ringkasan |
 |---|---|---|---|
 | 0.1.0-id | 25 Juli 2026 | Draf Pendiri | Inisialisasi master Bahasa Indonesia, penetapan struktur dokumen, Bab I Pendahuluan, dan Bab II Identitas |
+| 0.2.0-id | 25 Juli 2026 | Draf Pendiri | Penyempurnaan struktur, penambahan Bab III Tujuan dan Bab IV Ruang Lingkup, serta pembaruan status pengerjaan |
 
 ---
 
@@ -49,8 +50,8 @@
 
 1. [BAB I — Pendahuluan](#bab-i--pendahuluan)
 2. [BAB II — Identitas QURBATA](#bab-ii--identitas-qurbata)
-3. BAB III — Tujuan
-4. BAB IV — Ruang Lingkup
+3. [BAB III — Tujuan](#bab-iii--tujuan)
+4. [BAB IV — Ruang Lingkup](#bab-iv--ruang-lingkup)
 5. BAB V — Landasan Filosofis
 6. BAB VI — Landasan Teologis
 7. BAB VII — Landasan Akademik
@@ -323,6 +324,315 @@ Nama, isi, data, instrumen, dan teknologi QURBATA tidak boleh digunakan dengan c
 
 ---
 
+# BAB III — TUJUAN
+
+## Pasal 13 — Tujuan Umum
+
+QURBATA bertujuan membangun sistem pendidikan Al-Qur'an yang utuh, terarah, ilmiah, beradab, terdokumentasi, dapat diuji, serta mampu berkembang secara berkelanjutan sesuai kebutuhan peserta didik, guru, lembaga, dan masyarakat.
+
+Tujuan umum tersebut diwujudkan dengan menjaga keseimbangan antara kesetiaan kepada nilai-nilai Islam, ketepatan akademik, kualitas pedagogis, tanggung jawab kelembagaan, dan pemanfaatan teknologi yang bijaksana.
+
+## Pasal 14 — Tujuan Akademik
+
+QURBATA bertujuan:
+
+1. membangun kerangka akademik yang menghubungkan kajian Al-Qur'an, bahasa Arab, ilmu pendidikan, asesmen, teknologi, tata kelola, dan manajemen pengetahuan;
+2. menyediakan landasan konseptual yang konsisten bagi pengembangan kurikulum, buku, asesmen, pelatihan guru, penelitian, dan teknologi;
+3. membedakan secara jelas antara landasan normatif Islam, pengetahuan ilmiah, asumsi desain, pendapat ahli, kebijakan kelembagaan, dan temuan penelitian;
+4. mendorong penggunaan sumber yang sahih, relevan, dapat dilacak, dan disajikan secara jujur;
+5. mengembangkan budaya kritik, telaah sejawat, validasi, dan perbaikan berbasis bukti;
+6. menghasilkan pengetahuan yang dapat dipertanggungjawabkan dan bermanfaat bagi pengembangan pendidikan Al-Qur'an; dan
+7. mendukung penelitian akademik, termasuk tesis, disertasi, publikasi ilmiah, dan penelitian kelembagaan, tanpa mengurangi integritas kepengarangan.
+
+## Pasal 15 — Tujuan Pendidikan
+
+QURBATA bertujuan:
+
+1. membantu peserta didik membangun hubungan yang benar, dekat, beradab, dan berkelanjutan dengan Al-Qur'an;
+2. mengembangkan kemampuan membaca Al-Qur'an secara bertahap, tepat, lancar, dan sesuai kaidah yang berlaku;
+3. mendukung pembelajaran yang terstruktur, kumulatif, adaptif, dan sesuai perkembangan peserta didik;
+4. mengintegrasikan pengetahuan, keterampilan, adab, kebiasaan baik, dan tanggung jawab keagamaan;
+5. menyediakan jalur belajar yang dapat digunakan oleh peserta didik dengan usia, kemampuan, latar belakang, dan kecepatan belajar yang beragam;
+6. memastikan asesmen digunakan untuk memperbaiki pembelajaran, bukan sekadar menentukan kelulusan;
+7. mencegah praktik pembelajaran yang merendahkan martabat, mengabaikan kebutuhan peserta didik, atau mengutamakan target administratif di atas tujuan pendidikan; dan
+8. mendorong terbentuknya pembelajar Al-Qur'an yang mandiri, tekun, jujur, dan terus bertumbuh.
+
+## Pasal 16 — Tujuan Pengembangan Guru
+
+QURBATA bertujuan:
+
+1. menetapkan kerangka kompetensi guru yang jelas dan bertahap;
+2. memperkuat kemampuan bacaan, pedagogi, asesmen, komunikasi, dokumentasi, penggunaan teknologi, dan kepemimpinan pendidikan;
+3. menyediakan jalur pengembangan profesional yang dapat dipantau dan dievaluasi;
+4. mendorong guru menjadi teladan dalam adab, amanah, kedisiplinan, keterbukaan belajar, dan integritas akademik;
+5. melindungi guru dari tuntutan kerja yang tidak wajar, sistem penilaian yang tidak adil, dan ketidakjelasan tanggung jawab;
+6. mendorong pembinaan, supervisi, umpan balik, dan komunitas belajar yang sehat; dan
+7. memastikan kewenangan mengajar dan menilai diberikan berdasarkan kompetensi yang dapat dibuktikan.
+
+## Pasal 17 — Tujuan Kelembagaan
+
+QURBATA bertujuan:
+
+1. membantu lembaga menyusun sistem pendidikan yang konsisten dan tidak bergantung sepenuhnya kepada individu tertentu;
+2. memperkuat tata kelola, dokumentasi, pengambilan keputusan, pengelolaan risiko, dan kesinambungan program;
+3. menyediakan struktur standar yang dapat disesuaikan secara bertanggung jawab dengan konteks lembaga;
+4. menjaga keterhubungan antara visi lembaga, kurikulum, sumber daya manusia, pembiayaan, teknologi, data, dan mutu;
+5. memungkinkan evaluasi internal dan eksternal yang adil, proporsional, dan dapat ditindaklanjuti;
+6. mendukung kolaborasi antarprogram, antarlembaga, dan antardisiplin; dan
+7. membantu lembaga membangun budaya belajar, bukan hanya budaya administrasi.
+
+## Pasal 18 — Tujuan Dokumentasi dan Manajemen Pengetahuan
+
+QURBATA bertujuan:
+
+1. memastikan setiap dokumen memiliki identitas, tujuan, pemilik, status, versi, dan riwayat perubahan yang jelas;
+2. mencegah hilangnya konsep, keputusan, bahan ajar, data, hasil evaluasi, dan pengalaman implementasi;
+3. membangun repositori pengetahuan yang tertata, aman, dapat dicari, dan dapat dipelihara;
+4. menghubungkan setiap ketentuan penting dengan dasar pemikiran, bukti, keputusan, dan dampak implementasinya;
+5. menjaga satu sumber resmi untuk setiap dokumen dan mencegah beredarnya versi yang saling bertentangan;
+6. mendukung regenerasi pengelola, peneliti, penyusun kurikulum, dan pengembang teknologi; dan
+7. memungkinkan pengetahuan QURBATA dikembangkan secara kumulatif dari waktu ke waktu.
+
+## Pasal 19 — Tujuan Teknologi dan Data
+
+QURBATA bertujuan:
+
+1. menggunakan teknologi untuk memperkuat pembelajaran, asesmen, dokumentasi, komunikasi, tata kelola, dan pengambilan keputusan;
+2. mengembangkan sistem digital yang berorientasi kepada kebutuhan pengguna dan tujuan pendidikan;
+3. menjaga keamanan, kerahasiaan, keutuhan, ketersediaan, dan penggunaan data secara bertanggung jawab;
+4. mencegah penggunaan kecerdasan buatan atau otomatisasi yang menyesatkan, tidak transparan, atau menggantikan tanggung jawab manusia pada keputusan penting;
+5. memastikan teknologi tetap dapat diaudit, diperbaiki, dan disesuaikan dengan kebutuhan lembaga;
+6. mendorong interoperabilitas antara buku, kurikulum, asesmen, sistem guru, dan RIQA OS atau teknologi lain yang disetujui; dan
+7. memastikan keputusan teknologi tidak mengorbankan aksesibilitas, keadilan, adab, dan hubungan pedagogis.
+
+## Pasal 20 — Tujuan Sosial dan Kemaslahatan
+
+QURBATA bertujuan:
+
+1. memperluas manfaat pendidikan Al-Qur'an bagi masyarakat;
+2. mendukung layanan pendidikan yang inklusif, terjangkau, aman, dan bermartabat;
+3. mendorong kerja sama yang sehat antara keluarga, guru, lembaga, peneliti, masyarakat, dan mitra profesional;
+4. menghasilkan sumber belajar dan pengetahuan yang memberi manfaat luas tanpa mengabaikan keberlanjutan kelembagaan;
+5. mencegah eksploitasi agama, peserta didik, guru, data, atau hasil penelitian untuk kepentingan yang bertentangan dengan nilai QURBATA; dan
+6. menempatkan kemaslahatan manusia, tanggung jawab kepada Allah, serta perlindungan martabat sebagai batas etis seluruh pengembangan.
+
+## Pasal 21 — Ukuran Ketercapaian Tujuan
+
+### 21.1 Prinsip Pengukuran
+
+Ketercapaian tujuan QURBATA harus dinilai melalui indikator yang relevan, proporsional, dapat dipertanggungjawabkan, dan sesuai dengan sifat tujuan yang diukur.
+
+### 21.2 Ragam Bukti
+
+Penilaian ketercapaian dapat menggunakan:
+
+1. hasil belajar peserta didik;
+2. perkembangan kompetensi guru;
+3. mutu kurikulum dan sumber belajar;
+4. hasil asesmen dan tindak lanjutnya;
+5. audit dokumen dan kepatuhan standar;
+6. data implementasi;
+7. hasil penelitian dan validasi;
+8. umpan balik pengguna dan pemangku kepentingan;
+9. evaluasi kelembagaan; dan
+10. bukti lain yang sah dan relevan.
+
+### 21.3 Larangan Penyederhanaan Berlebihan
+
+Keberhasilan QURBATA tidak boleh dinilai hanya berdasarkan jumlah peserta, jumlah lembaga, jumlah dokumen, jumlah sertifikat, pendapatan, popularitas, atau penggunaan teknologi. Ukuran kuantitatif harus ditafsirkan bersama mutu, manfaat, integritas, keberlanjutan, dan dampak pendidikan.
+
+---
+
+# BAB IV — RUANG LINGKUP
+
+## Pasal 22 — Ruang Lingkup Umum
+
+QURBATA mencakup seluruh unsur yang diperlukan untuk merancang, melaksanakan, menilai, mendokumentasikan, meneliti, mengelola, dan menyempurnakan pendidikan Al-Qur'an dalam satu sistem yang saling terhubung.
+
+Ruang lingkup QURBATA bersifat luas, tetapi tidak tanpa batas. Setiap unsur yang dimasukkan ke dalam sistem harus memiliki hubungan yang jelas dengan tujuan QURBATA serta tunduk kepada nilai, prinsip, tata kelola, dan pengendalian mutu yang ditetapkan.
+
+## Pasal 23 — Ruang Lingkup Peserta Didik
+
+QURBATA dapat digunakan untuk peserta didik dengan:
+
+1. rentang usia yang beragam;
+2. tingkat kemampuan yang berbeda;
+3. pengalaman belajar yang tidak sama;
+4. kebutuhan pembelajaran umum maupun khusus;
+5. jalur pendidikan formal, nonformal, informal, mukim, nonmukim, luring, daring, atau campuran;
+6. tujuan belajar membaca, memperbaiki bacaan, menghafal, memahami, mengajar, atau mengembangkan kompetensi terkait; dan
+7. latar sosial, budaya, bahasa, ekonomi, serta kelembagaan yang beragam.
+
+Penerapan terhadap kelompok tertentu wajib mempertimbangkan tahap perkembangan, keselamatan, aksesibilitas, kapasitas lembaga, dan kesesuaian pedagogis.
+
+## Pasal 24 — Ruang Lingkup Kurikulum dan Pembelajaran
+
+QURBATA dapat mencakup:
+
+1. profil lulusan dan capaian pembelajaran;
+2. struktur jenjang, level, fase, program, dan jalur belajar;
+3. urutan kompetensi dan prasyarat;
+4. materi bacaan Al-Qur'an, tajwid, tahsin, tahfiz, adab, bahasa Arab, dan bidang pendukung yang disahkan;
+5. perencanaan pembelajaran;
+6. strategi talqin, talaqqi, latihan, pembiasaan, penguatan, remedial, dan pengayaan;
+7. sumber belajar cetak, digital, audio, visual, dan interaktif;
+8. diferensiasi dan adaptasi pembelajaran;
+9. pengelolaan kelas dan pengalaman belajar; dan
+10. evaluasi serta perbaikan kurikulum.
+
+Ketercakupan suatu bidang dalam QURBATA tidak otomatis menjadikannya materi wajib bagi semua program. Ketentuan wajib, pilihan, prasyarat, dan pengayaan harus ditetapkan dalam standar atau kurikulum turunannya.
+
+## Pasal 25 — Ruang Lingkup Buku dan Sumber Belajar
+
+QURBATA dapat mengembangkan dan mengendalikan:
+
+1. buku peserta didik;
+2. panduan guru;
+3. buku latihan;
+4. lembar asesmen;
+5. flashcard;
+6. presentasi;
+7. audio dan video pembelajaran;
+8. bahan ajar digital;
+9. bank contoh dan bank soal;
+10. kamus istilah dan glosarium; dan
+11. sumber belajar lain yang disetujui.
+
+Setiap sumber belajar wajib memiliki tujuan yang jelas, sasaran pengguna, hubungan dengan kurikulum, status versi, mekanisme penelaahan, dan bukti kelayakan yang sesuai dengan tingkat risikonya.
+
+## Pasal 26 — Ruang Lingkup Asesmen
+
+QURBATA dapat mencakup:
+
+1. asesmen diagnostik;
+2. asesmen formatif;
+3. asesmen sumatif;
+4. asesmen penempatan;
+5. asesmen kompetensi guru;
+6. ujian kenaikan tingkat;
+7. uji kelayakan mengajar atau menilai;
+8. rubrik observasi;
+9. portofolio;
+10. rekaman kinerja; dan
+11. analisis hasil serta tindak lanjut.
+
+Asesmen wajib dirancang untuk tujuan yang sah, dilaksanakan secara adil, ditafsirkan secara tepat, dan tidak digunakan di luar batas validitasnya.
+
+## Pasal 27 — Ruang Lingkup Pengembangan Guru dan SDM
+
+QURBATA dapat mencakup:
+
+1. standar kompetensi guru;
+2. jalur karier dan jenjang kewenangan;
+3. rekrutmen dan orientasi;
+4. pendidikan dan pelatihan;
+5. sertifikasi internal;
+6. supervisi dan pembinaan;
+7. evaluasi kinerja;
+8. komunitas belajar;
+9. pengembangan kepemimpinan;
+10. pengakuan kontribusi; dan
+11. regenerasi pengelola serta tenaga ahli.
+
+Setiap sistem pengembangan sumber daya manusia harus menjaga keadilan, transparansi, kelayakan beban kerja, perlindungan martabat, dan peluang bertumbuh.
+
+## Pasal 28 — Ruang Lingkup Penelitian
+
+QURBATA dapat mencakup:
+
+1. kajian literatur;
+2. penelitian dasar;
+3. penelitian pengembangan;
+4. penelitian desain pendidikan;
+5. uji coba terbatas dan luas;
+6. studi validasi;
+7. evaluasi program;
+8. penelitian tindakan;
+9. analisis data pendidikan;
+10. penelitian kebijakan; dan
+11. publikasi serta diseminasi ilmiah.
+
+Kegiatan penelitian wajib tunduk pada etika, metodologi yang sesuai, perlindungan partisipan, pengelolaan data, pengakuan kepengarangan, dan larangan fabrikasi, falsifikasi, serta plagiarisme.
+
+## Pasal 29 — Ruang Lingkup Teknologi dan Sistem Data
+
+QURBATA dapat mencakup:
+
+1. RIQA OS dan aplikasi lain yang disahkan;
+2. sistem profil dan progres peserta;
+3. sistem kurikulum dan pembelajaran;
+4. sistem asesmen dan sertifikasi;
+5. sistem guru, pengurus, dan pengembangan SDM;
+6. sistem dokumentasi dan repositori;
+7. sistem pembayaran dan layanan administrasi;
+8. dashboard, analitika, dan pelaporan;
+9. integrasi identitas, QR, barcode, NFC, atau teknologi lain;
+10. kecerdasan buatan dan otomatisasi yang dikendalikan; dan
+11. tata kelola, keamanan, retensi, serta pemulihan data.
+
+Setiap teknologi harus melalui penilaian kebutuhan, risiko, keamanan, aksesibilitas, keberlanjutan, dan dampak pedagogis sebelum diterapkan secara luas.
+
+## Pasal 30 — Ruang Lingkup Tata Kelola dan Mutu
+
+QURBATA dapat mencakup:
+
+1. struktur kewenangan;
+2. dewan, komite, dan unit kerja;
+3. pengambilan keputusan;
+4. manajemen dokumen;
+5. manajemen perubahan;
+6. manajemen risiko;
+7. audit internal dan eksternal;
+8. penanganan ketidaksesuaian;
+9. perbaikan berkelanjutan;
+10. ratifikasi dan penerbitan; dan
+11. penghentian, penggantian, atau pengarsipan komponen sistem.
+
+## Pasal 31 — Ruang Lingkup Implementasi Kelembagaan
+
+QURBATA dapat diterapkan pada:
+
+1. pesantren;
+2. sekolah;
+3. madrasah;
+4. taman pendidikan Al-Qur'an;
+5. rumah tahfiz;
+6. pusat pelatihan guru;
+7. perguruan tinggi;
+8. komunitas belajar;
+9. program keluarga;
+10. lembaga sosial dan keagamaan; dan
+11. bentuk kelembagaan lain yang memenuhi ketentuan.
+
+Setiap adopsi wajib menyatakan ruang penerapan, versi yang digunakan, bentuk penyesuaian, penanggung jawab, dan status kepatuhan terhadap standar QURBATA.
+
+## Pasal 32 — Batas Ruang Lingkup
+
+QURBATA tidak dimaksudkan untuk:
+
+1. menggantikan otoritas keagamaan yang sah dalam penetapan hukum Islam;
+2. mengklaim sebagai satu-satunya metode pendidikan Al-Qur'an yang benar;
+3. meniadakan tradisi, metode, atau lembaga lain yang memiliki dasar dan praktik yang dapat dipertanggungjawabkan;
+4. memberikan diagnosis medis, psikologis, atau kebutuhan khusus di luar kewenangan tenaga profesional;
+5. menjadikan teknologi sebagai pengganti guru, talaqqi, keteladanan, atau tanggung jawab manusia;
+6. menggunakan penelitian atau data peserta didik tanpa dasar etis dan kewenangan yang sah;
+7. menerbitkan klaim keunggulan, efektivitas, atau dampak yang melampaui bukti; dan
+8. menggunakan nama QURBATA untuk kepentingan yang bertentangan dengan nilai Islam, hukum yang berlaku, keselamatan, atau martabat manusia.
+
+## Pasal 33 — Perluasan Ruang Lingkup
+
+Perluasan ruang lingkup QURBATA hanya dapat dilakukan apabila:
+
+1. memiliki hubungan yang jelas dengan tujuan QURBATA;
+2. tidak bertentangan dengan Konstitusi;
+3. didukung oleh kajian kebutuhan dan risiko;
+4. memiliki penanggung jawab yang kompeten;
+5. dapat didokumentasikan dan dievaluasi;
+6. tidak mengganggu komponen yang telah valid; dan
+7. disetujui melalui mekanisme tata kelola yang berlaku.
+
+---
+
 ## Status Pengerjaan
 
 - [x] Kendali dokumen
@@ -332,8 +642,8 @@ Nama, isi, data, instrumen, dan teknologi QURBATA tidak boleh digunakan dengan c
 - [x] Mukadimah
 - [x] BAB I — Pendahuluan
 - [x] BAB II — Identitas QURBATA
-- [ ] BAB III — Tujuan
-- [ ] BAB IV — Ruang Lingkup
+- [x] BAB III — Tujuan
+- [x] BAB IV — Ruang Lingkup
 - [ ] BAB V — Landasan Filosofis
 - [ ] BAB VI — Landasan Teologis
 - [ ] BAB VII — Landasan Akademik
