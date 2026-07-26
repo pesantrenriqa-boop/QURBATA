@@ -28,7 +28,15 @@ Dokumen ini menjadi pintu masuk resmi untuk membaca, menelusuri, mengaudit, dan 
 | 12 | QC-011 | [Analisis Dampak Bisnis dan Pemulihan Bencana](QC-011-Analisis-Dampak-Bisnis-dan-Pemulihan-Bencana.md) | BIA, MTPD, RTO, RPO, pencadangan, pemulihan, dan pengujian |
 | 13 | QC-012 | [Perlindungan Peserta Didik, Keselamatan, dan Kesejahteraan](QC-012-Perlindungan-Peserta-Didik-Keselamatan-dan-Kesejahteraan.md) | Safeguarding, pencegahan kekerasan, respons, dan pemulihan peserta didik |
 
-## 3. Kelompok Substansi
+## 3. Instrumen Pengendalian dan Audit
+
+| Instrumen | Fungsi |
+|---|---|
+| [Matriks Keterlacakan Konstitusional](QURBATA-Constitutional-Traceability-Matrix.md) | Menghubungkan persyaratan QC-000 dengan dokumen pelaksana, bukti, pemilik, risiko, status penerapan, dan objek RIQA OS. |
+
+Instrumen pada bagian ini bersifat pengendali dan audit, tetapi tidak membuat norma baru serta tidak menggantikan dokumen QC.
+
+## 4. Kelompok Substansi
 
 ### A. Konstitusi dan Arsitektur
 
@@ -55,7 +63,7 @@ Dokumen ini menjadi pintu masuk resmi untuk membaca, menelusuri, mengaudit, dan 
 - QC-011 — Analisis Dampak Bisnis dan Pemulihan Bencana
 - QC-012 — Perlindungan Peserta Didik, Keselamatan, dan Kesejahteraan
 
-## 4. Hubungan Pengendali
+## 5. Hubungan Pengendali
 
 | Tema | Dokumen Pengendali | Dokumen Pendukung |
 |---|---|---|
@@ -73,7 +81,7 @@ Dokumen ini menjadi pintu masuk resmi untuk membaca, menelusuri, mengaudit, dan 
 | Pemulihan layanan dan data | QC-011 | QC-004, QC-006, QC-010, QC-012 |
 | Perlindungan peserta didik | QC-012 | QC-006, QC-008, QC-009, QC-010, QC-011 |
 
-## 5. Status Pengembangan
+## 6. Status Pengembangan
 
 | ID | Status Dokumen | Status Bahasa Indonesia | Bahasa Inggris | Bahasa Arab |
 |---|---|---|---|---|
@@ -82,18 +90,18 @@ Dokumen ini menjadi pintu masuk resmi untuk membaca, menelusuri, mengaudit, dan 
 
 Status pada tabel ini harus diperbarui setelah persetujuan, ratifikasi, penerbitan versi baru, atau perubahan kedudukan bahasa.
 
-## 6. Aturan Membaca dan Menggunakan
+## 7. Aturan Membaca dan Menggunakan
 
 1. Mulai dari QC-000 sebelum menafsirkan dokumen turunan.
 2. Gunakan definisi QC-005 ketika suatu istilah mempunyai arti khusus.
 3. Periksa QC-006 dan QC-007 sebelum menetapkan siapa yang berwenang mengambil atau mengesahkan keputusan.
-4. Gunakan QC-004 untuk menghubungkan persyaratan dengan bukti, rekaman, keluaran, dan tindakan korektif.
+4. Gunakan QC-004 dan Matriks Keterlacakan Konstitusional untuk menghubungkan persyaratan dengan bukti, rekaman, keluaran, risiko, dan tindakan korektif.
 5. Gunakan QC-009 untuk sengketa, keluhan, keberatan, banding, dan perlindungan pelapor.
 6. Gunakan QC-010 dan QC-011 untuk risiko, gangguan besar, kesinambungan, dan pemulihan.
 7. Gunakan QC-012 untuk setiap keputusan yang memengaruhi keselamatan, martabat, hak, atau kesejahteraan peserta didik.
 8. Jangan menggunakan salinan lokal yang tidak terkendali sebagai dasar keputusan material tanpa memeriksa versi di repositori.
 
-## 7. Persyaratan Minimum Metadata
+## 8. Persyaratan Minimum Metadata
 
 Setiap dokumen QC pada tahap final sekurang-kurangnya harus memiliki:
 
@@ -112,7 +120,7 @@ Setiap dokumen QC pada tahap final sekurang-kurangnya harus memiliki:
 
 Kelengkapan metadata akan diaudit berdasarkan QC-002, QC-003, dan QC-004.
 
-## 8. Kriteria Keluar dari Status Draf
+## 9. Kriteria Keluar dari Status Draf
 
 Seri tata kelola belum boleh dinyatakan final sebelum:
 
@@ -127,7 +135,7 @@ Seri tata kelola belum boleh dinyatakan final sebelum:
 9. terjemahan resmi tidak diberi status pengendali sebelum harmonisasi selesai; dan
 10. perubahan telah tercatat dan disetujui sesuai kewenangan.
 
-## 9. Arah Integrasi RIQA OS
+## 10. Arah Integrasi RIQA OS
 
 Indeks ini menjadi dasar pengembangan register dokumen pada RIQA OS yang sekurang-kurangnya memuat:
 
@@ -143,7 +151,9 @@ Indeks ini menjadi dasar pengembangan register dokumen pada RIQA OS yang sekuran
 - tindakan korektif; dan
 - peringatan apabila rujukan, versi, atau persetujuan tidak valid.
 
-## 10. Catatan Pengendalian
+Matriks keterlacakan juga menjadi dasar untuk objek persyaratan, bukti, risiko, kontrol, pemilik, keputusan, insiden, dan tindakan korektif pada RIQA OS.
+
+## 11. Catatan Pengendalian
 
 Indeks ini harus diperbarui setiap kali:
 
@@ -151,5 +161,6 @@ Indeks ini harus diperbarui setiap kali:
 - nomor atau judul dokumen berubah;
 - dokumen dicabut, digabung, atau digantikan;
 - status bahasa berubah;
-- hubungan normatif berubah; atau
+- hubungan normatif berubah;
+- matriks keterlacakan berubah secara material; atau
 - versi resmi baru diratifikasi.
