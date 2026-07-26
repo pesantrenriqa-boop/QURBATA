@@ -36,6 +36,9 @@ Dokumen ini menjadi pintu masuk resmi untuk membaca, menelusuri, mengaudit, dan 
 | [REG-GOV-001 — Register Knowledge-ID](REG-GOV-001-Register-Knowledge-ID-QURBATA.md) | Menetapkan format, domain, jenis objek, status, hubungan, register awal, dan pengendalian Knowledge-ID QURBATA. |
 | [REG-GOV-011 — Register Governance Freeze](REG-GOV-011-Register-Governance-Freeze-QURBATA.md) | Mengendalikan permohonan freeze, 16 gate wajib, bukti, keputusan, baseline, dan pembukaan kembali. |
 | [AUD-GOV-001 — Audit Kesiapan Governance Freeze](AUD-GOV-001-Audit-Kesiapan-Governance-Freeze.md) | Mencatat audit awal 16 gate, RACI, checklist, tautan, bukti, temuan, dan keputusan BLOCKED. |
+| [REG-GOV-012 — Register Keberatan Material](REG-GOV-012-Register-Keberatan-Material-QURBATA.md) | Menjaga keberatan, respons, keputusan, dan perlindungan pelapor dalam audit trail. |
+| [REG-GOV-013 — Register Bukti Governance](REG-GOV-013-Register-Bukti-Governance-QURBATA.md) | Mengendalikan Evidence-ID, validasi, keterbatasan, dan supersesi bukti. |
+| [BAS-GOV-001 — Kandidat Baseline Governance v1.0](BAS-GOV-001-Kandidat-Baseline-Governance-v1.0.md) | Mendefinisikan ruang lingkup kandidat baseline tanpa mengubah status BLOCKED. |
 
 Instrumen pada bagian ini bersifat pengendali dan audit, tetapi tidak membuat norma baru serta tidak menggantikan dokumen QC.
 
