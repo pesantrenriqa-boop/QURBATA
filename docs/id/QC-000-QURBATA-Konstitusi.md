@@ -12,7 +12,7 @@
 | ID Dokumen | QC-000 |
 | Judul | Konstitusi QURBATA |
 | Bahasa | Bahasa Indonesia |
-| Versi | 0.4.0-id |
+| Versi | 0.5.0-id |
 | Status | Draf Pendiri |
 | Tingkat Dokumen | Konstitusional |
 | Kedudukan | Dokumen normatif tertinggi dalam ekosistem QURBATA |
@@ -35,6 +35,7 @@
 | 0.2.0-id | 25 Juli 2026 | Draf Pendiri | Penyempurnaan struktur, penambahan Bab III Tujuan dan Bab IV Ruang Lingkup, serta pembaruan status pengerjaan |
 | 0.3.0-id | 26 Juli 2026 | Draf Pendiri | Integrasi Bab V Landasan Filosofis ke dalam master resmi Bahasa Indonesia |
 | 0.4.0-id | 26 Juli 2026 | Draf Pendiri | Integrasi batch besar Bab VI–X: landasan teologis, landasan akademik, nilai dasar, prinsip konstitusional, dan arsitektur dokumen |
+| 0.5.0-id | 26 Juli 2026 | Draf Pendiri | Penyelesaian master substantif melalui integrasi Bab XI–XV dan Lampiran Konstitusional |
 
 ---
 
@@ -60,12 +61,12 @@
 8. [BAB VIII — Nilai Dasar](#bab-viii--nilai-dasar)
 9. [BAB IX — Prinsip Konstitusional](#bab-ix--prinsip-konstitusional)
 10. [BAB X — Arsitektur Dokumen](#bab-x--arsitektur-dokumen)
-11. BAB XI — Tata Kelola
-12. BAB XII — Integritas Akademik
-13. BAB XIII — Penelitian dan Bukti Ilmiah
-14. BAB XIV — Implementasi dan Pengendalian Mutu
-15. BAB XV — Perubahan dan Ratifikasi
-16. Lampiran
+11. [BAB XI — Tata Kelola](#bab-xi--tata-kelola)
+12. [BAB XII — Integritas Akademik](#bab-xii--integritas-akademik)
+13. [BAB XIII — Penelitian dan Bukti Ilmiah](#bab-xiii--penelitian-dan-bukti-ilmiah)
+14. [BAB XIV — Implementasi dan Pengendalian Mutu](#bab-xiv--implementasi-dan-pengendalian-mutu)
+15. [BAB XV — Perubahan dan Ratifikasi](#bab-xv--perubahan-penafsiran-dan-ratifikasi)
+16. [Lampiran Konstitusional](#lampiran-konstitusional)
 
 ---
 
@@ -1050,6 +1051,391 @@ Setiap Knowledge-ID kritis wajib mempunyai pemilik, jenis objek, domain, status,
 Perubahan material wajib disertai alasan, pemilik, analisis dampak, telaah, persetujuan, versi baru, pembaruan keterlacakan, dan rencana transisi. Bagian lama yang masih valid wajib dipertahankan, sedangkan dokumen yang digantikan harus dikeluarkan dari sumber aktif dan status historisnya dicatat dalam register perubahan.
 
 
+
+---
+
+# BAB XI — TATA KELOLA
+
+## Pasal 69 — Sistem Tata Kelola
+
+Tata kelola QURBATA wajib menjamin arah yang jelas, kewenangan yang sah, pemisahan tugas yang proporsional, pengambilan keputusan yang dapat ditelusuri, perlindungan pemangku kepentingan, dan kesinambungan sistem.
+
+Struktur tata kelola dapat berkembang sesuai skala dan kebutuhan, tetapi fungsi konstitusional, akademik, mutu, dokumentasi, perlindungan peserta didik, pengelolaan data, dan pengawasan risiko tidak boleh dihilangkan.
+
+## Pasal 70 — Kewenangan Pendiri pada Tahap Pendirian
+
+### 70.1 Kedudukan Awal
+
+Pada tahap pendirian, Aris Liswanto, S.Pd., M.Pd. sebagai Pendiri dan Peneliti Utama memegang kewenangan konstitusional awal untuk mengarahkan, menafsirkan, menelaah, menyetujui, menangguhkan, mengubah, atau mencabut dokumen dasar QURBATA.
+
+### 70.2 Batas Kewenangan
+
+Kewenangan pendiri wajib digunakan sesuai Konstitusi, terdokumentasi, mempertimbangkan bukti dan nasihat yang relevan, serta tidak membenarkan pelanggaran hukum, keselamatan, integritas ilmiah, hak peserta didik, atau amanah kelembagaan.
+
+### 70.3 Delegasi
+
+Kewenangan dapat didelegasikan secara tertulis dengan menyatakan ruang lingkup, penerima, batas, masa berlaku, mekanisme pengawasan, dan ketentuan pencabutannya. Tanggung jawab yang secara khusus dipertahankan oleh pendiri wajib disebutkan dengan jelas.
+
+## Pasal 71 — Organ Tata Kelola
+
+Sesuai tahap perkembangan, QURBATA dapat membentuk:
+
+1. Dewan Konstitusi;
+2. Dewan Akademik;
+3. fungsi penjaminan mutu;
+4. fungsi pengendalian dokumen dan pengetahuan;
+5. komite etik dan integritas;
+6. fungsi perlindungan peserta didik;
+7. fungsi pengelolaan risiko, data, dan keamanan;
+8. panel pengaduan atau banding; dan
+9. kelompok ahli atau penelaah ad hoc.
+
+Pembentukan organ wajib disertai mandat, komposisi, kompetensi, kewenangan, masa tugas, quorum, aturan konflik kepentingan, pelaporan, serta mekanisme evaluasi.
+
+## Pasal 72 — Pemisahan Tugas dan Independensi
+
+Pihak yang menyusun, menyetujui, melaksanakan, menilai, dan mengaudit suatu keputusan material harus dipisahkan sejauh wajar menurut tingkat risikonya. Apabila keterbatasan sumber daya menyebabkan perangkapan, konflik dan langkah pengendaliannya wajib dinyatakan serta disetujui.
+
+Fungsi audit, banding, perlindungan peserta didik, dan verifikasi mutu harus mempunyai independensi yang memadai dari objek atau keputusan yang diperiksa.
+
+## Pasal 73 — Pengambilan Keputusan
+
+Setiap keputusan material sekurang-kurangnya mencatat:
+
+1. ID keputusan;
+2. masalah dan ruang lingkup;
+3. kewenangan pengambil keputusan;
+4. pihak yang berkonsultasi;
+5. informasi dan bukti;
+6. alternatif yang dipertimbangkan;
+7. risiko dan dampak;
+8. konflik kepentingan;
+9. keputusan dan alasan;
+10. tindakan, pemilik, dan tenggat;
+11. masa berlaku atau jadwal tinjauan; dan
+12. mekanisme keberatan apabila relevan.
+
+Keputusan darurat dapat menggunakan prosedur dipercepat, tetapi wajib dibatasi, dicatat, dan ditinjau kembali setelah keadaan memungkinkan.
+
+## Pasal 74 — Konflik Kepentingan
+
+Setiap orang wajib mengungkapkan kepentingan pribadi, keluarga, keuangan, jabatan, akademik, organisasi, atau hubungan lain yang dapat memengaruhi objektivitasnya. Pengendalian dapat berupa pengungkapan, pembatasan akses, tidak ikut menilai, tidak ikut memutuskan, penelaah independen, atau pembatalan keputusan.
+
+## Pasal 75 — Pengaduan, Keberatan, dan Banding
+
+QURBATA wajib menyediakan kanal yang mudah diakses, aman, terdokumentasi, dan sesuai usia untuk pengaduan, keberatan, banding, serta pelaporan pelanggaran. Pelapor dan pihak terkait wajib dilindungi dari pembalasan, intimidasi, penyebaran informasi yang tidak perlu, dan konflik kepentingan.
+
+Keputusan banding harus ditangani oleh pihak yang tidak membuat keputusan awal atau mempunyai independensi yang memadai.
+
+## Pasal 76 — Perlindungan Peserta Didik
+
+Kepentingan terbaik, martabat, keselamatan, suara, privasi, perkembangan, dan kesejahteraan peserta didik wajib menjadi pertimbangan utama dalam keputusan yang memengaruhi mereka.
+
+QURBATA melarang kekerasan fisik, kekerasan seksual, perundungan, penghinaan, eksploitasi, diskriminasi, pengabaian, manipulasi spiritual, dan bentuk perlakuan merendahkan lainnya. Dugaan bahaya wajib ditangani segera melalui prosedur perlindungan yang sah dan berorientasi pada keselamatan.
+
+## Pasal 77 — Keberlangsungan dan Keadaan Darurat
+
+Fungsi kritis wajib mempunyai pemilik, pengganti, dokumentasi, pengamanan akses, pencadangan, target pemulihan, jalur komunikasi, dan pengujian berkala. Dalam keadaan darurat, perlindungan jiwa, keselamatan, data penting, layanan pokok, dan komunikasi yang benar didahulukan.
+
+---
+
+# BAB XII — INTEGRITAS AKADEMIK
+
+## Pasal 78 — Prinsip Integritas Akademik
+
+Seluruh kegiatan penelitian, penulisan, pengajaran, asesmen, publikasi, penerjemahan, pengembangan perangkat lunak, dan penggunaan kecerdasan buatan wajib menjunjung kejujuran, ketepatan atribusi, keterbukaan metode, proporsionalitas klaim, dan tanggung jawab manusia.
+
+## Pasal 79 — Pelanggaran Integritas
+
+Pelanggaran integritas meliputi:
+
+1. fabrikasi data, sumber, kutipan, hasil, atau bukti;
+2. falsifikasi atau manipulasi yang menyesatkan;
+3. plagiarisme dan penggunaan karya tanpa atribusi;
+4. sitasi rekaan atau tidak diverifikasi;
+5. pengakuan kepengarangan yang tidak patut;
+6. penyembunyian kontribusi material;
+7. manipulasi asesmen atau kelulusan;
+8. penyajian promosi sebagai penelitian;
+9. klaim efektivitas atau keunggulan yang melampaui bukti; dan
+10. penggunaan AI tanpa verifikasi manusia pada substansi berisiko.
+
+Dugaan pelanggaran wajib diperiksa secara adil, rahasia sejauh diperlukan, terdokumentasi, dan bebas dari pembalasan.
+
+## Pasal 80 — Kepengarangan dan Kontribusi
+
+Kepengarangan diberikan kepada pihak yang memberikan kontribusi intelektual material, menyetujui hasil akhir, dan bersedia bertanggung jawab atas karya. Kontribusi lain wajib diakui secara layak. Jabatan, pendanaan, kepemilikan lembaga, atau kedekatan tidak dengan sendirinya memberikan hak kepengarangan.
+
+## Pasal 81 — Penggunaan Kecerdasan Buatan
+
+AI dapat membantu pencarian, perancangan, penulisan, penerjemahan, analisis, dokumentasi, pengkodean, dan pengujian. Penggunaannya wajib:
+
+1. berada di bawah tanggung jawab manusia;
+2. tidak menggantikan verifikasi sumber dan fakta;
+3. tidak menerima keluaran sebagai benar hanya karena tampak meyakinkan;
+4. melindungi data pribadi dan informasi rahasia;
+5. dicatat apabila kontribusinya material;
+6. diuji terhadap bias, kesalahan, dan dampak; serta
+7. tidak digunakan sebagai satu-satunya penentu keputusan berisiko tinggi.
+
+## Pasal 82 — Koreksi dan Pencabutan
+
+Kesalahan material wajib diperbaiki secara terbuka dan proporsional. Dokumen, hasil, sertifikat, atau klaim dapat dikoreksi, ditangguhkan, atau dicabut apabila terbukti tidak sah, tidak dapat dipercaya, membahayakan, atau melanggar standar.
+
+---
+
+# BAB XIII — PENELITIAN DAN BUKTI ILMIAH
+
+## Pasal 83 — Agenda Penelitian
+
+Penelitian QURBATA diarahkan untuk memahami kebutuhan peserta didik, menguji desain pembelajaran, meningkatkan mutu bacaan dan pembelajaran, mengembangkan guru, memperbaiki asesmen, menilai teknologi, mengurangi risiko, dan menghasilkan manfaat publik.
+
+Agenda penelitian tidak boleh mengalahkan keselamatan, hak, martabat, atau kebutuhan pendidikan peserta.
+
+## Pasal 84 — Etika Penelitian
+
+Penelitian yang melibatkan manusia wajib memperhatikan persetujuan yang sah, penjelasan yang dapat dipahami, kerahasiaan, minimisasi risiko, keadilan pemilihan peserta, hak menarik diri, perlindungan kelompok rentan, dan penanganan insiden.
+
+Penelitian terhadap anak memerlukan perlindungan tambahan, persetujuan orang tua atau wali sesuai ketentuan, serta pelibatan anak yang sesuai usia dan kemampuannya.
+
+## Pasal 85 — Protokol dan Persetujuan
+
+Penelitian material wajib mempunyai protokol yang menetapkan pertanyaan, metode, peserta, data, risiko, analisis, tanggung jawab, jadwal, keluaran, dan pengelolaan perubahan. Telaah etik atau akademik wajib disesuaikan dengan tingkat risiko dan ketentuan yang berlaku.
+
+## Pasal 86 — Pengelolaan Data Penelitian
+
+Data wajib dikumpulkan untuk tujuan yang sah, secukupnya, akurat sejauh wajar, aman, dibatasi aksesnya, mempunyai masa retensi, dan dapat dimusnahkan secara tepat. Penggunaan ulang, pembagian, atau pemindahan data harus mempunyai dasar kewenangan dan perlindungan yang sesuai.
+
+## Pasal 87 — Pelaporan dan Klaim
+
+Hasil wajib dilaporkan secara jujur, termasuk keterbatasan, hasil negatif, ketidakpastian, perubahan metode, konflik kepentingan, serta sumber pendanaan yang relevan. Korelasi tidak boleh dinyatakan sebagai sebab akibat tanpa dasar yang memadai.
+
+## Pasal 88 — Bukti untuk Keputusan
+
+Keputusan QURBATA dapat menggunakan gabungan landasan normatif, penelitian, data implementasi, penilaian ahli, pengalaman praktik, dan kebutuhan kelembagaan. Tingkat bukti yang diperlukan harus sebanding dengan risiko dan besarnya klaim.
+
+---
+
+# BAB XIV — IMPLEMENTASI DAN PENGENDALIAN MUTU
+
+## Pasal 89 — Persyaratan Implementasi
+
+Setiap implementasi QURBATA wajib menetapkan ruang lingkup, versi, pemilik, pengguna, sumber daya, kompetensi, risiko, target, indikator, data, mekanisme pengawasan, dan batas penyesuaian.
+
+Penggunaan nama QURBATA tidak dengan sendirinya membuktikan kepatuhan. Kepatuhan harus ditentukan berdasarkan persyaratan dan bukti yang berlaku.
+
+## Pasal 90 — Penyesuaian Kontekstual
+
+Lembaga dapat menyesuaikan tempo, media, jadwal, contoh, bahasa pendukung, dan tata operasional sesuai konteks. Penyesuaian tidak boleh mengubah tujuan, prasyarat, perlindungan, standar kelulusan, integritas asesmen, atau prinsip konstitusional tanpa persetujuan perubahan yang sah.
+
+## Pasal 91 — Sistem Mutu
+
+Sistem mutu QURBATA sekurang-kurangnya mencakup:
+
+1. perencanaan mutu;
+2. standar dan kriteria penerimaan;
+3. verifikasi dan validasi;
+4. pemantauan proses serta hasil;
+5. audit berbasis risiko;
+6. pengelolaan temuan;
+7. tindakan korektif dan pencegahan;
+8. evaluasi efektivitas;
+9. pengendalian perubahan; dan
+10. tinjauan manajemen.
+
+## Pasal 92 — Audit dan Bukti Kepatuhan
+
+Audit wajib menggunakan kriteria yang dinyatakan, bukti yang cukup, auditor yang kompeten, dan independensi yang proporsional. Temuan diklasifikasikan menurut dampak dan risiko, mempunyai pemilik serta tenggat, dan tidak boleh ditutup hanya berdasarkan pernyataan tanpa bukti efektivitas.
+
+## Pasal 93 — Tindakan Korektif dan Pencegahan
+
+Ketidaksesuaian material wajib dianalisis untuk menemukan penyebab, bukan hanya gejala. Tindakan harus menetapkan pemilik, jadwal, sumber daya, bukti penyelesaian, verifikasi efektivitas, dan risiko sisa.
+
+## Pasal 94 — Teknologi, Data, dan Keamanan
+
+Sistem digital wajib menerapkan kendali akses, autentikasi, pencatatan aktivitas, minimisasi data, pencadangan, pemulihan, pengelolaan insiden, retensi, penghapusan, dan pengujian keamanan sesuai risiko.
+
+Keputusan otomatis yang berdampak material harus dapat dijelaskan, ditinjau manusia, dan dipersoalkan melalui mekanisme yang layak.
+
+## Pasal 95 — Lisensi, Kekayaan Intelektual, dan Penggunaan Nama
+
+Kepemilikan, kontribusi, lisensi, hak penggunaan, distribusi, modifikasi, penerjemahan, dan komersialisasi produk QURBATA wajib dinyatakan secara tertulis. Perlindungan kekayaan intelektual tidak boleh digunakan untuk menutupi pelanggaran, menghambat audit yang sah, atau mengambil hak kontributor secara tidak adil.
+
+Penggunaan nama, tanda, sertifikat, atau klaim afiliasi QURBATA wajib memperoleh kewenangan dan mengikuti standar identitas serta mutu.
+
+## Pasal 96 — Penghentian dan Transisi
+
+Program, produk, sistem, atau kerja sama dapat ditangguhkan atau dihentikan apabila tidak patuh, tidak efektif, tidak berkelanjutan, melanggar hukum, atau menimbulkan risiko yang tidak dapat diterima. Transisi wajib melindungi peserta didik, data, hak, rekaman, layanan kritis, dan kewajiban yang belum selesai.
+
+---
+
+# BAB XV — PERUBAHAN, PENAFSIRAN, DAN RATIFIKASI
+
+## Pasal 97 — Penafsiran Konstitusi
+
+Penafsiran wajib mempertimbangkan secara berurutan:
+
+1. teks Bahasa Indonesia yang berlaku;
+2. tujuan dan struktur Konstitusi;
+3. definisi resmi;
+4. nilai dan prinsip konstitusional;
+5. hubungan dengan dokumen turunan;
+6. riwayat perubahan dan keputusan; serta
+7. bukti atau konteks implementasi yang relevan.
+
+Penafsiran tidak boleh digunakan untuk mengubah substansi yang seharusnya diproses sebagai amandemen.
+
+## Pasal 98 — Usulan Amandemen
+
+Usulan amandemen wajib memuat:
+
+1. bagian yang diubah;
+2. alasan dan masalah yang hendak diselesaikan;
+3. dasar normatif, ilmiah, hukum, atau operasional;
+4. analisis dampak terhadap dokumen, Knowledge-ID, sistem, pengguna, dan implementasi;
+5. risiko perubahan dan tidak melakukan perubahan;
+6. hasil konsultasi;
+7. rancangan transisi; dan
+8. penanggung jawab.
+
+## Pasal 99 — Klasifikasi Perubahan
+
+Perubahan dibedakan menjadi:
+
+1. editorial, yang tidak mengubah makna;
+2. klarifikasi, yang memperjelas tanpa mengubah kewajiban;
+3. material, yang mengubah hak, kewajiban, kewenangan, ruang lingkup, atau kontrol; dan
+4. konstitusional mendasar, yang mengubah identitas, tujuan, supremasi, nilai pokok, struktur kewenangan, atau mekanisme ratifikasi.
+
+Klasifikasi wajib ditentukan sebelum proses persetujuan dan dapat ditinjau oleh fungsi dokumentasi atau mutu.
+
+## Pasal 100 — Proses Persetujuan Amandemen
+
+Perubahan editorial dapat disetujui oleh otoritas dokumentasi yang didelegasikan. Klarifikasi memerlukan telaah pemilik substansi dan persetujuan otoritas konstitusional.
+
+Perubahan material dan konstitusional mendasar memerlukan naskah lengkap, analisis dampak, telaah lintas bidang yang relevan, masa konsultasi yang layak, pencatatan keberatan, serta keputusan otoritas konstitusional.
+
+Setelah Dewan Konstitusi terbentuk dan dinyatakan aktif, perubahan material sekurang-kurangnya memerlukan quorum dua pertiga anggotanya dan persetujuan dua pertiga anggota yang hadir serta berhak memutuskan. Perubahan konstitusional mendasar memerlukan persetujuan tiga perempat anggota Dewan dan pengesahan Pendiri atau penerus kewenangan konstitusional yang sah.
+
+## Pasal 101 — Ratifikasi Naskah Pendirian
+
+QC-000 dapat diratifikasi apabila:
+
+1. naskah Bahasa Indonesia lengkap;
+2. tidak terdapat konflik material yang belum diselesaikan;
+3. istilah dan rujukan silang telah diaudit;
+4. seluruh bab dan lampiran wajib tersedia;
+5. dokumen turunan kritis telah dipetakan;
+6. Knowledge-ID kritis tidak ganda atau yatim;
+7. telaah akademik, dokumentasi, perlindungan peserta didik, data, dan hukum yang relevan telah dilakukan;
+8. keberatan material telah dicatat dan ditanggapi;
+9. lembar persetujuan telah dilengkapi; dan
+10. keputusan ratifikasi tercatat dalam register resmi.
+
+Pada tahap pendirian, ratifikasi dilakukan oleh Pendiri dan Peneliti Utama setelah mempertimbangkan hasil telaah para penelaah yang ditetapkan.
+
+## Pasal 102 — Tanggal Berlaku dan Publikasi
+
+Keputusan ratifikasi wajib menetapkan versi, tanggal ratifikasi, tanggal berlaku, ruang transisi, pihak yang terikat, lokasi publikasi resmi, dan jadwal tinjauan berikutnya.
+
+Naskah yang telah diratifikasi wajib diterbitkan pada repositori resmi dengan status yang jelas. Salinan cetak atau PDF hanya sah apabila identitas, versi, dan statusnya sama dengan sumber resmi.
+
+## Pasal 103 — Pembekuan dan Tinjauan Berkala
+
+Pembekuan berarti penetapan suatu versi sebagai acuan stabil, bukan larangan untuk belajar atau memperbaiki. Versi beku hanya dapat diubah melalui prosedur yang sesuai dengan klasifikasi perubahan.
+
+Konstitusi ditinjau sekurang-kurangnya satu kali dalam tiga tahun atau lebih cepat apabila terdapat perubahan hukum, risiko kritis, temuan audit material, perkembangan ilmiah penting, perubahan kelembagaan, atau kebutuhan perlindungan.
+
+## Pasal 104 — Pencabutan dan Penggantian
+
+Konstitusi hanya dapat dicabut setelah tersedia keputusan yang sah mengenai pengganti, transisi, arsip, hak, kewajiban, data, aset, dan kesinambungan fungsi kritis. Pencabutan tidak menghapus rekaman historis atau tanggung jawab yang telah timbul.
+
+## Pasal 105 — Ketentuan Peralihan
+
+Sebelum seluruh organ dan standar berfungsi penuh:
+
+1. Pendiri menjalankan kewenangan konstitusional awal;
+2. dokumen berstatus draf digunakan hanya untuk pengembangan dan uji terkendali;
+3. kekosongan prosedur ditangani melalui keputusan sementara yang terdokumentasi;
+4. keputusan sementara tidak boleh bertentangan dengan prinsip konstitusional;
+5. seluruh dokumen lama wajib dipetakan sebagai dipertahankan, digabungkan, digantikan, dicabut, atau diarsipkan;
+6. bahasa Inggris dan Arab tidak menjadi teks pengendali sebelum diratifikasi; dan
+7. tahap transisi berakhir melalui keputusan tata kelola yang menyatakan kesiapan sistem.
+
+## Pasal 106 — Penutup
+
+Konstitusi ini menjadi amanah bersama untuk membangun QURBATA sebagai sistem pendidikan Al-Qur'an yang beradab, ilmiah, dapat dipercaya, melindungi manusia, terbuka terhadap koreksi, dan terus bertumbuh dalam kemaslahatan.
+
+---
+
+# LAMPIRAN KONSTITUSIONAL
+
+## Lampiran A — Hierarki Normatif
+
+| Tingkat | Jenis | Fungsi |
+|---:|---|---|
+| 1 | Konstitusi | Norma internal tertinggi |
+| 2 | Arsitektur | Struktur komponen dan hubungan sistem |
+| 3 | Standar | Persyaratan normatif bidang tertentu |
+| 4 | Kerangka | Susunan konsep dan model |
+| 5 | Spesifikasi | Persyaratan teknis atau fungsional |
+| 6 | Pedoman | Arahan penerapan |
+| 7 | Manual | Petunjuk pelaksanaan fungsi |
+| 8 | Prosedur | Langkah operasional dan kontrol |
+| 9 | Formulir/Templat | Struktur pencatatan dan keluaran |
+| 10 | Rekaman/Bukti | Bukti pelaksanaan dan keputusan |
+
+## Lampiran B — Keluarga Dokumen QC
+
+| ID | Judul Ringkas | Fungsi |
+|---|---|---|
+| QC-000 | Konstitusi QURBATA | Norma tertinggi |
+| QC-001 | Arsitektur Tata Kelola | Struktur tata kelola |
+| QC-002 | Penomoran dan Pengkodean | Identitas serta kendali dokumen |
+| QC-003 | Pengelolaan Dokumen | Siklus hidup dokumen |
+| QC-004 | Keterlacakan | Hubungan persyaratan dan bukti |
+| QC-005 | Terminologi Resmi | Kendali istilah dan definisi |
+| QC-006 | Peran dan Kewenangan | Akuntabilitas dan delegasi |
+| QC-007 | Keputusan dan Ratifikasi | Mekanisme keputusan |
+| QC-008 | Konflik Kepentingan dan Etika | Integritas tata kelola |
+| QC-009 | Pengaduan dan Banding | Keadilan prosedural |
+| QC-010 | Manajemen Risiko | Risiko dan keberlangsungan |
+| QC-011 | Dampak dan Pemulihan | BIA serta pemulihan bencana |
+| QC-012 | Perlindungan Peserta Didik | Keselamatan dan kesejahteraan |
+
+## Lampiran C — Status Dokumen
+
+| Status | Makna |
+|---|---|
+| Konsep | Gagasan awal yang belum menjadi draf terkendali |
+| Draf | Naskah pengembangan yang belum disahkan |
+| Dalam Telaah | Naskah sedang diperiksa |
+| Disetujui | Isi telah disetujui tetapi belum tentu berlaku |
+| Diratifikasi | Telah memperoleh pengesahan konstitusional |
+| Berlaku | Menjadi acuan resmi aktif |
+| Ditangguhkan | Pemberlakuan dihentikan sementara |
+| Dicabut | Tidak berlaku berdasarkan keputusan resmi |
+| Digantikan | Tidak berlaku karena mempunyai pengganti |
+| Arsip | Dipertahankan sebagai rekaman historis |
+
+## Lampiran D — Rekaman Ratifikasi
+
+| Peran | Nama | Keputusan | Tanggal | Tanda Tangan |
+|---|---|---|---|---|
+| Pendiri dan Peneliti Utama | Aris Liswanto, S.Pd., M.Pd. | Menunggu | — | — |
+| Penelaah Akademik | Akan ditetapkan | Menunggu | — | — |
+| Penelaah Keislaman | Akan ditetapkan | Menunggu | — | — |
+| Penelaah Perlindungan Peserta Didik | Akan ditetapkan | Menunggu | — | — |
+| Penelaah Dokumentasi | Akan ditetapkan | Menunggu | — | — |
+| Penelaah Hukum/Data | Akan ditetapkan sesuai kebutuhan | Menunggu | — | — |
+
+## Lampiran E — Pernyataan Ratifikasi
+
+Kami yang bertanda tangan pada rekaman ratifikasi, setelah memeriksa identitas, tujuan, landasan, nilai, prinsip, arsitektur, tata kelola, integritas akademik, penelitian, implementasi, mutu, perubahan, dan ketentuan peralihan QURBATA, menyatakan keputusan terhadap QC-000 sesuai kewenangan dan catatan yang tercantum.
+
+Ratifikasi hanya berlaku setelah nomor versi, tanggal ratifikasi, tanggal berlaku, lokasi publikasi, serta keputusan resmi dicatat secara lengkap.
+
+
 ---
 
 ## Status Pengerjaan
@@ -1069,9 +1455,9 @@ Perubahan material wajib disertai alasan, pemilik, analisis dampak, telaah, pers
 - [x] BAB VIII — Nilai Dasar
 - [x] BAB IX — Prinsip Konstitusional
 - [x] BAB X — Arsitektur Dokumen
-- [ ] BAB XI — Tata Kelola
-- [ ] BAB XII — Integritas Akademik
-- [ ] BAB XIII — Penelitian dan Bukti Ilmiah
-- [ ] BAB XIV — Implementasi dan Pengendalian Mutu
-- [ ] BAB XV — Perubahan dan Ratifikasi
-- [ ] Lampiran
+- [x] BAB XI — Tata Kelola
+- [x] BAB XII — Integritas Akademik
+- [x] BAB XIII — Penelitian dan Bukti Ilmiah
+- [x] BAB XIV — Implementasi dan Pengendalian Mutu
+- [x] BAB XV — Perubahan dan Ratifikasi
+- [x] Lampiran
