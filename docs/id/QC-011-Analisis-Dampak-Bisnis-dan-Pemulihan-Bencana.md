@@ -1,5 +1,18 @@
 # QC-011 Analisis Dampak Bisnis dan Pemulihan Bencana
 
+**Kode Dokumen:** QC-011  
+**Judul:** Analisis Dampak Bisnis dan Pemulihan Bencana QURBATA  
+**Bahasa Induk:** Bahasa Indonesia  
+**Status:** Draf Normatif  
+**Versi:** 0.2.0-id  
+**Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
+**Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
+**Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
+**Tinjauan Berikutnya:** Maksimal tiga tahun setelah berlaku atau ketika dipicu perubahan material  
+**Klasifikasi Akses:** Publik  
+**Induk Normatif:** QC-000 — Konstitusi QURBATA  
+
+
 Dokumen ini menetapkan standar resmi QURBATA untuk analisis dampak bisnis, penetapan prioritas layanan, pemulihan bencana, pemulihan teknologi, pengujian kesiapan, serta pemulihan bertahap setelah gangguan besar.
 
 ## 1. Tujuan
