@@ -43,6 +43,7 @@ PROPOSED, COLLECTED, UNDER-VALIDATION, VALID, REJECTED, EXPIRED, SUPERSEDED, dan
 | EVD-AUD-000009 | Norma safeguarding/pengaduan | QC-009/QC-012 | COLLECTED | Safeguarding Lead | Belum ditetapkan |
 | EVD-AUD-000010 | Register risiko dan CAPA | REG-GOV-007/REG-GOV-008 | COLLECTED | Risk/QA Lead | Belum ditetapkan |
 | EVD-GOV-000001 | Pernyataan independensi Arif Nasruddin | REC-GOV-001 | COLLECTED | Sekretariat Tata Kelola | Memerlukan pemeriksaan formal/tanda tangan |
+| EVD-GOV-000002 | Hasil telaah independen awal QC-001–QC-012 | REC-GOV-002 | COLLECTED | Sekretariat Tata Kelola | Pernyataan penelaah; keberatan material belum dikonfirmasi eksplisit |
 
 ## 5. Data Minimum
 
