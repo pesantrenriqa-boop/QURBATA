@@ -90,7 +90,7 @@ NOT-APPLICABLE hanya sah apabila alasan dan otoritas penetapannya terdokumentasi
 
 | Freeze-ID | Objek | Versi/Baseline | Status | PASS | PARTIAL | FAIL | Pemilik | Decision-ID |
 |---|---|---|---|---:|---:|---:|---|---|
-| GF-2026-001 | Governance v1.0 | PR #1 / branch feature/f001-constitution | BLOCKED | 4 | 10 | 2 | Fungsi Tata Kelola | Menunggu |
+| GF-2026-001 | Governance v1.0 | PR #1 / branch feature/f001-constitution | BLOCKED | 5 | 9 | 2 | Fungsi Tata Kelola | Menunggu |
 
 Angka gate pada register hanya diperbarui setelah bukti dinilai, bukan berdasarkan keberadaan dokumen semata.
 
@@ -111,7 +111,7 @@ Angka gate pada register hanya diperbarui setelah bukti dinilai, bukan berdasark
 | GF-2026-001 | GF-11 | PARTIAL | EVD-AUD-000010 | Audit internal awal | 2026-07-26 | Efektivitas CAPA belum diverifikasi |
 | GF-2026-001 | GF-12 | PARTIAL | EVD-AUD-000006 | Audit internal awal | 2026-07-26 | Bukti implementasi CTM belum lengkap |
 | GF-2026-001 | GF-13 | PARTIAL | EVD-AUD-000002 | Audit internal awal | 2026-07-26 | Telaah independen belum selesai |
-| GF-2026-001 | GF-14 | PARTIAL | EVD-AUD-000008 | Audit internal awal | 2026-07-26 | Register keberatan belum tersedia |
+| GF-2026-001 | GF-14 | PASS | EVD-GOV-000003 | Arif Nasruddin | 2026-07-26 | Tidak ada keberatan material yang dinyatakan |
 | GF-2026-001 | GF-15 | PARTIAL | EVD-AUD-000008 | Audit internal awal | 2026-07-26 | Baseline hash final belum ditetapkan |
 | GF-2026-001 | GF-16 | FAIL | EVD-AUD-000008 | Audit internal awal | 2026-07-26 | Decision-ID dan tanggal efektif belum ada |
 
@@ -149,4 +149,4 @@ Sistem harus mencegah status FROZEN apabila ada gate kritis FAIL, Evidence-ID wa
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 0.1.0-id | 26 Juli 2026 | Register awal Governance Freeze dan 16 gate wajib |
-| 0.2.0-id | 26 Juli 2026 | Penilaian audit awal: 4 PASS, 10 PARTIAL, 2 FAIL; status BLOCKED |
+| 0.2.0-id | 26 Juli 2026 | Penilaian audit awal diperbarui: 5 PASS, 9 PARTIAL, 2 FAIL; status BLOCKED |
