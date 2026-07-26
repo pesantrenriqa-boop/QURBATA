@@ -62,6 +62,10 @@ Register ini menjadi daftar induk seluruh dokumen resmi QURBATA yang wajib diken
 
 | AUD-GOV-001 | Audit Awal Kesiapan Governance Freeze | 0.1.0-id | Laporan Audit Internal Awal | Fungsi Tata Kelola dan Penjaminan Mutu | docs/id/AUD-GOV-001-Audit-Kesiapan-Governance-Freeze.md |
 
+| REG-GOV-012 | Register Keberatan Material QURBATA | 0.1.0-id | Draf Terkendali | Sekretariat Tata Kelola | docs/id/REG-GOV-012-Register-Keberatan-Material-QURBATA.md |
+| REG-GOV-013 | Register Bukti Governance QURBATA | 0.1.0-id | Draf Terkendali | Fungsi Penjaminan Mutu | docs/id/REG-GOV-013-Register-Bukti-Governance-QURBATA.md |
+| BAS-GOV-001 | Kandidat Baseline Governance v1.0 | 0.1.0-id | Kandidat; Belum Frozen | Fungsi Tata Kelola | docs/id/BAS-GOV-001-Kandidat-Baseline-Governance-v1.0.md |
+
 ## 5. Kolom Minimum RIQA OS
 `document_id`, `title`, `type`, `owner`, `approver`, `status`, `version`, `language_master`, `effective_date`, `next_review`, `repository_path`, `decision_id`, `supersedes`, `access_class`, `last_modified_at`.
 
