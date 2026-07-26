@@ -4,7 +4,7 @@
 **Judul:** Register Governance Freeze QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.1.0-id  
+**Versi:** 0.2.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola dan Penjaminan Mutu QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -88,9 +88,9 @@ NOT-APPLICABLE hanya sah apabila alasan dan otoritas penetapannya terdokumentasi
 
 ## 6. Register Permohonan
 
-| Freeze-ID | Objek | Versi/Baseline | Status | Gate Lulus | Gate Gagal | Pemilik | Decision-ID |
-|---|---|---|---|---:|---:|---|---|
-| GF-2026-001 | Governance v1.0 | PR #1 / branch feature/f001-constitution | UNDER-REVIEW | 0 | 0 | Fungsi Tata Kelola | Menunggu |
+| Freeze-ID | Objek | Versi/Baseline | Status | PASS | PARTIAL | FAIL | Pemilik | Decision-ID |
+|---|---|---|---|---:|---:|---:|---|---|
+| GF-2026-001 | Governance v1.0 | PR #1 / branch feature/f001-constitution | BLOCKED | 4 | 10 | 2 | Fungsi Tata Kelola | Menunggu |
 
 Angka gate pada register hanya diperbarui setelah bukti dinilai, bukan berdasarkan keberadaan dokumen semata.
 
@@ -98,7 +98,22 @@ Angka gate pada register hanya diperbarui setelah bukti dinilai, bukan berdasark
 
 | Freeze-ID | Gate | Status | Evidence-ID | Validator | Tanggal | Catatan |
 |---|---|---|---|---|---|---|
-| GF-2026-001 | GF-01–GF-16 | Belum dinilai resmi | — | — | — | Menunggu audit berbasis bukti |
+| GF-2026-001 | GF-01 | PASS | EVD-AUD-000002 | Audit internal awal | 2026-07-26 | Master substantif lengkap |
+| GF-2026-001 | GF-02 | PARTIAL | EVD-AUD-000003 | Audit internal awal | 2026-07-26 | Telaah konflik independen belum selesai |
+| GF-2026-001 | GF-03 | PASS | EVD-AUD-000003 | Audit internal awal | 2026-07-26 | Metadata minimum tersedia |
+| GF-2026-001 | GF-04 | PARTIAL | EVD-AUD-000006 | Audit internal awal | 2026-07-26 | Audit orphan dan populasi penuh belum selesai |
+| GF-2026-001 | GF-05 | PASS | EVD-AUD-000001 | Audit internal awal | 2026-07-26 | Tidak ada tautan relatif rusak |
+| GF-2026-001 | GF-06 | PARTIAL | EVD-AUD-000006 | Audit internal awal | 2026-07-26 | Audit penggunaan istilah belum selesai |
+| GF-2026-001 | GF-07 | PARTIAL | EVD-AUD-000005 | Audit internal awal | 2026-07-26 | Penetapan personel belum dibuktikan |
+| GF-2026-001 | GF-08 | PASS | EVD-AUD-000009 | Audit internal awal | 2026-07-26 | Dokumen safeguarding dan pengaduan tersedia |
+| GF-2026-001 | GF-09 | PARTIAL | EVD-AUD-000010 | Audit internal awal | 2026-07-26 | Mitigasi risiko belum seluruhnya diverifikasi |
+| GF-2026-001 | GF-10 | FAIL | EVD-AUD-000007 | Audit internal awal | 2026-07-26 | Temuan mayor masih terbuka |
+| GF-2026-001 | GF-11 | PARTIAL | EVD-AUD-000010 | Audit internal awal | 2026-07-26 | Efektivitas CAPA belum diverifikasi |
+| GF-2026-001 | GF-12 | PARTIAL | EVD-AUD-000006 | Audit internal awal | 2026-07-26 | Bukti implementasi CTM belum lengkap |
+| GF-2026-001 | GF-13 | PARTIAL | EVD-AUD-000002 | Audit internal awal | 2026-07-26 | Telaah independen belum selesai |
+| GF-2026-001 | GF-14 | PARTIAL | EVD-AUD-000008 | Audit internal awal | 2026-07-26 | Register keberatan belum tersedia |
+| GF-2026-001 | GF-15 | PARTIAL | EVD-AUD-000008 | Audit internal awal | 2026-07-26 | Baseline hash final belum ditetapkan |
+| GF-2026-001 | GF-16 | FAIL | EVD-AUD-000008 | Audit internal awal | 2026-07-26 | Decision-ID dan tanggal efektif belum ada |
 
 ## 8. Keputusan Freeze
 
@@ -134,3 +149,4 @@ Sistem harus mencegah status FROZEN apabila ada gate kritis FAIL, Evidence-ID wa
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 0.1.0-id | 26 Juli 2026 | Register awal Governance Freeze dan 16 gate wajib |
+| 0.2.0-id | 26 Juli 2026 | Penilaian audit awal: 4 PASS, 10 PARTIAL, 2 FAIL; status BLOCKED |
