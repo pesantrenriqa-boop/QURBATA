@@ -1,5 +1,19 @@
 # REG-GOV-009 — Kalender Tinjauan Tata Kelola QURBATA
 
+**Kode Dokumen:** REG-GOV-009  
+**Judul:** Kalender Tinjauan Tata Kelola QURBATA  
+**Bahasa Induk:** Bahasa Indonesia  
+**Status:** Draf Terkendali  
+**Versi:** 0.2.0-id  
+**Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
+**Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
+**Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
+**Tinjauan Berikutnya:** Tahunan atau ketika terdapat perubahan material  
+**Klasifikasi Akses:** Internal; ringkasan dapat dipublikasikan  
+**Induk Normatif:** QC-000 — Konstitusi QURBATA  
+**Dokumen Pengendali:** QC-001, QC-003, QC-004, QC-006, dan QC-007  
+
+
 ## 1. Tujuan
 Kalender ini menetapkan kapan dokumen, risiko, keputusan, audit, CAPA, safeguarding, data, dan kesiapan sistem harus ditinjau agar pengendalian tidak bergantung pada ingatan individu.
 
