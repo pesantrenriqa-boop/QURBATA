@@ -4,7 +4,7 @@
 **Judul:** Register Bukti Governance QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.3.0-id  
+**Versi:** 0.4.0-id  
 **Pemilik Dokumen:** Fungsi Penjaminan Mutu QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -47,7 +47,7 @@ PROPOSED, COLLECTED, UNDER-VALIDATION, VALID, REJECTED, EXPIRED, SUPERSEDED, dan
 | EVD-GOV-000003 | Konfirmasi tidak ada keberatan material | REC-GOV-003 | VALID | Sekretariat Tata Kelola | Konfirmasi penelaah independen |
 | EVD-GOV-000004 | Validasi substantif awal QC-000 | REC-GOV-004 | VALID | Pemilik QC-000 | Arif Nasruddin |
 | EVD-GOV-000005 | Penerimaan mandat Safeguarding Lead dan deklarasi tidak ada kasus terbuka | REC-GOV-005 | VALID | Ainul Yakin | Pernyataan langsung; efektivitas operasional belum diuji |
-| EVD-GOV-000006 | Penetapan email sebagai kanal awal dan Aris Liswanto sebagai pemegang akses | REC-GOV-006 | COLLECTED | Aris Liswanto | Alamat dan kontrol keamanan belum diverifikasi |
+| EVD-GOV-000006 | Kanal safeguarding safeguardingqurbata@gmail.com dan Aris Liswanto sebagai pemegang akses awal | REC-GOV-006 | UNDER-VALIDATION | Aris Liswanto | Alamat ditetapkan; autentikasi dua faktor dan kontrol keamanan belum diverifikasi |
 
 ## 5. Data Minimum
 
@@ -64,3 +64,4 @@ RIQA OS mencegah gate PASS bila Evidence-ID wajib tidak berstatus VALID, telah k
 | 0.1.0-id | 26 Juli 2026 | Register bukti awal untuk AUD-GOV-001 |
 | 0.2.0-id | 27 Juli 2026 | Menambahkan EVD-GOV-000005 dan memperjelas batas validasi bukti safeguarding |
 | 0.3.0-id | 27 Juli 2026 | Menambahkan EVD-GOV-000006 untuk penetapan kanal awal pelaporan safeguarding |
+| 0.4.0-id | 27 Juli 2026 | Mencatat alamat kanal safeguarding dan menaikkan bukti ke UNDER-VALIDATION |
