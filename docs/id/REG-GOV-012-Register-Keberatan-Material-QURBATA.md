@@ -28,7 +28,7 @@ Objection-ID, objek/versi, pengaju, tanggal, substansi, dasar, dampak, konflik k
 
 | Objection-ID | Objek | Keberatan | Tingkat | Status | Pemilik Respons | Decision-ID |
 |---|---|---|---|---|---|---|
-| OBJ-2026-001 | Governance v1.0 | Belum ada keberatan material yang diajukan secara resmi; masa konsultasi dan penelaah independen belum dibuka | Mayor | DRAFT | Sekretariat Tata Kelola | Menunggu |
+| OBJ-2026-001 | Governance v1.0 | Penelaah independen menyatakan tidak ada keberatan material | Mayor | CLOSED | Sekretariat Tata Kelola | REC-GOV-003 |
 
 Ketiadaan entri tidak boleh ditafsirkan sebagai tidak adanya keberatan sebelum masa konsultasi dibuka dan pihak relevan memperoleh kesempatan yang layak.
 
