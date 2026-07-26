@@ -79,3 +79,31 @@ Satu aktivitas idealnya hanya memiliki satu `A`. Pihak yang memiliki konflik kep
 | OPS | execute-process, create-record, implement-action |
 
 Hak akses aktual harus mengikuti prinsip least privilege, separation of duties, dan audit trail.
+
+## 7. Register Penetapan Peran
+
+| Assignment-ID | Peran | Personel | Dasar Penetapan | Pengganti | Kompetensi Diverifikasi | Konflik Diperiksa | Status |
+|---|---|---|---|---|---|---|---|
+| ASN-GOV-001 | Otoritas Konstitusional Awal | Aris Liswanto, S.Pd., M.Pd. | QC-000 tahap pendirian | Menunggu | Menunggu bukti formal | Wajib diperiksa per keputusan | DRAFT |
+| ASN-GOV-002 | Document Controller | Menunggu | Menunggu surat penetapan | Menunggu | Belum | Belum | VACANT |
+| ASN-GOV-003 | QA Lead | Menunggu | Menunggu surat penetapan | Menunggu | Belum | Belum | VACANT |
+| ASN-GOV-004 | Knowledge Architect | Menunggu | Menunggu surat penetapan | Menunggu | Belum | Belum | VACANT |
+| ASN-GOV-005 | Safeguarding Lead | Menunggu | Menunggu surat penetapan | Menunggu | Belum | Belum | VACANT |
+| ASN-GOV-006 | Risk/Continuity Lead | Menunggu | Menunggu surat penetapan | Menunggu | Belum | Belum | VACANT |
+| ASN-GOV-007 | Penelaah Independen | Menunggu | Menunggu surat penetapan | Menunggu | Belum | Belum | VACANT |
+
+Status yang diizinkan: DRAFT, ACTIVE, SUSPENDED, EXPIRED, REVOKED, dan VACANT. Peran kritis berstatus VACANT menggagalkan gate yang membutuhkan kewenangan atau independensi tersebut.
+
+## 8. Kontrol Pemisahan Tugas
+
+1. Penyusun tidak menjadi satu-satunya penelaah atau pengesah karyanya sendiri.
+2. Pelaksana CAPA tidak memverifikasi efektivitas tindakannya sendiri.
+3. Pemilik risiko tidak menjadi satu-satunya pihak yang menerima risiko kritis.
+4. Pengambil keputusan awal tidak menjadi satu-satunya pemutus banding.
+5. Administrator sistem tidak otomatis memperoleh kewenangan normatif.
+6. Akses RIQA OS harus diturunkan dari Assignment-ID aktif dan dicabut ketika status tidak aktif.
+
+## 9. Uji RACI dan Akses
+
+Sebelum freeze, dilakukan uji skenario untuk persetujuan dokumen, perubahan material, konflik kepentingan, pengaduan, insiden safeguarding, CAPA, penerimaan risiko, pemulihan, dan pembukaan kembali freeze. Setiap uji menghasilkan Evidence-ID.
+
