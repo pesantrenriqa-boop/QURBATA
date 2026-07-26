@@ -1,5 +1,19 @@
 # REG-GOV-010 — Dashboard Tata Kelola QURBATA
 
+**Kode Dokumen:** REG-GOV-010  
+**Judul:** Dashboard Tata Kelola QURBATA  
+**Bahasa Induk:** Bahasa Indonesia  
+**Status:** Draf Terkendali  
+**Versi:** 0.2.0-id  
+**Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
+**Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
+**Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
+**Tinjauan Berikutnya:** Tahunan atau ketika terdapat perubahan material  
+**Klasifikasi Akses:** Internal; ringkasan dapat dipublikasikan  
+**Induk Normatif:** QC-000 — Konstitusi QURBATA  
+**Dokumen Pengendali:** QC-001, QC-003, QC-004, QC-006, dan QC-007  
+
+
 ## 1. Tujuan
 Dashboard ini merangkum kondisi tata kelola QURBATA dalam satu tampilan agar pimpinan dapat melihat kesiapan ratifikasi, kepatuhan, risiko, audit, CAPA, review, dan integrasi RIQA OS.
 
@@ -20,12 +34,12 @@ Dashboard ini merangkum kondisi tata kelola QURBATA dalam satu tampilan agar pim
 ## 3. Status Awal per 26 Juli 2026
 | Area | Status | Catatan |
 |---|---|---|
-| Konstitusi QC-000 | Kuning | Master Indonesia tersedia tetapi masih harmonisasi akhir |
-| QC-001–QC-012 | Kuning | Substansi tersedia; audit lintas dokumen belum selesai |
+| Konstitusi QC-000 | Kuning | Master Indonesia lengkap secara substantif; audit editorial dan ratifikasi belum selesai |
+| QC-001–QC-012 | Kuning | Metadata dan arsitektur telah diharmonisasikan; verifikasi bukti implementasi belum selesai |
 | Governance toolkit | Kuning | Register inti tersedia; implementasi dan bukti belum lengkap |
 | Bahasa Inggris | Merah | Belum harmonis penuh dengan master Indonesia |
 | Bahasa Arab | Merah | Belum menjadi terjemahan resmi lengkap |
-| Knowledge-ID | Kuning | Skema tersedia; populasi seluruh objek belum selesai |
+| Knowledge-ID | Kuning | Namespace, status, supersesi, dan matriks tersedia; populasi objek isi belum selesai |
 | Safeguarding | Kuning | Kebijakan tersedia; simulasi implementasi belum selesai |
 | RIQA OS integration | Kuning | Model data dirumuskan; implementasi belum selesai |
 | Governance Freeze | Belum Lulus | Menunggu seluruh gate kritis |
@@ -77,7 +91,12 @@ Skor agregat hanya informatif. Satu kegagalan pada butir kritis tetap menggagalk
 | 5 | Tutup temuan mayor dan verifikasi CAPA | QA Lead |
 | 6 | Putuskan Governance Freeze melalui Decision-ID | Pimpinan QURBATA |
 
-## 9. Catatan Perubahan
+## 9. Register Governance Freeze
+
+Keputusan kesiapan freeze wajib dicatat pada REG-GOV-011. Dashboard hanya menyajikan ringkasan dan tidak dapat menggantikan bukti, penilaian gate, keberatan, persetujuan, atau Decision-ID pada register tersebut.
+
+## 10. Catatan Perubahan
 | Versi | Tanggal | Perubahan |
 |---|---|---|
 | 0.1.0 | 2026-07-26 | Dashboard tata kelola awal dan stage gate Governance Freeze dibuat |
+| 0.2.0-id | 2026-07-26 | Pembaruan status QC-000, seri QC, Knowledge-ID, dan integrasi REG-GOV-011 |
