@@ -1,5 +1,18 @@
 # QC-012 Perlindungan Peserta Didik, Keselamatan, dan Kesejahteraan
 
+**Kode Dokumen:** QC-012  
+**Judul:** Perlindungan Peserta Didik, Keselamatan, dan Kesejahteraan QURBATA  
+**Bahasa Induk:** Bahasa Indonesia  
+**Status:** Draf Normatif  
+**Versi:** 0.2.0-id  
+**Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
+**Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
+**Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
+**Tinjauan Berikutnya:** Maksimal tiga tahun setelah berlaku atau ketika dipicu perubahan material  
+**Klasifikasi Akses:** Publik  
+**Induk Normatif:** QC-000 — Konstitusi QURBATA  
+
+
 Dokumen ini menetapkan standar resmi perlindungan peserta didik, keselamatan, kesejahteraan, pencegahan kekerasan, penanganan risiko, pelaporan, pemulihan, dan akuntabilitas dalam seluruh ekosistem QURBATA.
 
 ## 1. Kedudukan
