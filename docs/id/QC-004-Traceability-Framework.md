@@ -335,3 +335,41 @@ Penerapan dilakukan dengan urutan:
 QC-004 menjadi standar wajib bagi seluruh dokumen, proses, fitur, data, integrasi, asesmen, sertifikasi, laporan, dan audit dalam ekosistem QURBATA.
 
 Setiap dokumen turunan wajib merujuk pada kerangka ini ketika menetapkan hubungan antara aturan, pelaksanaan, sistem, dan bukti.
+
+---
+
+## 19. Pemisahan Identitas Objek dan Baris Audit
+
+QURBATA membedakan:
+
+| Identitas | Fungsi | Contoh |
+|---|---|---|
+| Knowledge-ID | Identitas stabil objek pengetahuan atau tata kelola | KID-GOV-REQ-001, KO-000001 |
+| CTM-ID | Identitas baris pengujian keterlacakan dan kepatuhan | CTM-GOV-001 |
+| Document ID | Identitas dokumen terkendali | QC-004, STD-ACA-001 |
+| Decision ID | Identitas keputusan | DEC-GOV-000001 |
+| Evidence ID | Identitas bukti atau rekaman | EVD-AUD-000001 |
+
+Satu CTM-ID dapat menguji beberapa Knowledge-ID. Satu Knowledge-ID dapat muncul pada beberapa CTM-ID apabila mempunyai beberapa konteks implementasi atau kontrol. ID baris audit tidak boleh digunakan sebagai pengganti identitas objek pengetahuan.
+
+## 20. Keterlacakan Graf Pengetahuan dan Pembelajaran
+
+Objek isi pendidikan menggunakan identitas kelas langsung:
+
+| Prefix | Objek | Format |
+|---|---|---|
+| KO | Knowledge Object — satu unit pengetahuan terkecil yang bermakna | KO-000001 |
+| LO | Learning Object — satu pengalaman belajar yang mempunyai tujuan dan aktivitas | LO-000001 |
+| PO | Page Object — satu halaman atau unit tampilan sumber tunggal | PO-000001 |
+| CO | Chapter Object — satu bab atau kelompok halaman | CO-000001 |
+| BO | Book Object — satu buku atau jilid | BO-000001 |
+| CUR | Curriculum Object — satu kurikulum atau struktur program | CUR-000001 |
+
+KO dan LO tidak boleh disamakan: KO menyimpan apa yang diketahui, sedangkan LO mengatur pengalaman untuk mempelajari atau menguasainya. Satu KO dapat digunakan oleh beberapa LO; satu LO dapat menggunakan beberapa KO. PO, CO, dan BO mengatur komposisi publikasi, sedangkan CUR mengatur urutan serta jalur capaian.
+
+Relasi minimum meliputi contains, part-of, teaches, taught-by, prerequisite-of, assessed-by, evidenced-by, derived-from, supersedes, dan superseded-by.
+
+## 21. Validasi Dua Arah
+
+Setiap persyaratan kritis harus dapat ditelusuri maju dari sumber menuju implementasi dan bukti, serta mundur dari bukti atau fitur menuju persyaratan sumber. Pemeriksaan wajib mendeteksi objek tanpa sumber, persyaratan tanpa implementasi, bukti tanpa objek, relasi putus, versi tidak selaras, dan ID yang merujuk objek berstatus retired.
+
