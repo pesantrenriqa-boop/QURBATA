@@ -4,7 +4,7 @@
 **Judul:** Audit Awal Kesiapan Governance Freeze QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Laporan Audit Internal Awal  
-**Versi:** 0.1.0-id  
+**Versi:** 0.2.0-id  
 **Tanggal Audit:** 26 Juli 2026  
 **Objek:** GF-2026-001 — Governance v1.0  
 **Ruang Lingkup:** PR #1, branch feature/f001-constitution  
@@ -20,8 +20,8 @@ Status awal Governance Freeze adalah BLOCKED.
 
 Dari 16 gate kritis:
 
-- 4 PASS;
-- 10 PARTIAL;
+- 6 PASS;
+- 8 PARTIAL;
 - 2 FAIL;
 - 0 NOT-APPLICABLE.
 
@@ -45,7 +45,7 @@ Audit ini merupakan desk review internal. Audit belum mencakup wawancara, observ
 | EVD-AUD-000006 | QC-004, QC-005, REG-GOV-001, CTM | Namespace dan hubungan tersedia; populasi serta bukti belum lengkap |
 | EVD-AUD-000007 | REG-GOV-006 | Masih terdapat temuan mayor terbuka |
 | EVD-AUD-000008 | REG-GOV-011 | Belum ada Decision-ID, baseline hash final, atau tanggal efektif |
-| EVD-AUD-000009 | QC-009 dan QC-012 | Norma pengaduan dan safeguarding tersedia; efektivitas operasional belum diuji |
+| EVD-AUD-000009 / EVD-GOV-000005 | QC-009, QC-012, dan REC-GOV-005 | Norma tersedia, Ainul Yakin menerima mandat, dan menyatakan tidak ada kasus terbuka yang diketahui; efektivitas operasional belum diuji |
 | EVD-AUD-000010 | REG-GOV-008 dan REG-GOV-007 | Register risiko serta CAPA tersedia; bukti efektivitas belum lengkap |
 
 ## 4. Penilaian Gate
@@ -64,8 +64,8 @@ Audit ini merupakan desk review internal. Audit belum mencakup wawancara, observ
 | GF-10 | FAIL | EVD-AUD-000007 | Temuan mayor masih terbuka dan belum mempunyai keputusan penerimaan risiko yang sah |
 | GF-11 | PARTIAL | EVD-AUD-000010 | Mekanisme CAPA tersedia; verifikasi efektivitas independen belum lengkap |
 | GF-12 | PARTIAL | EVD-AUD-000006 | CTM mempunyai pemilik dan objek sistem; sebagian besar bukti implementasi belum tersedia |
-| GF-13 | PARTIAL | EVD-AUD-000002 | Naskah Indonesia lengkap; telaah substantif/editorial independen belum selesai |
-| GF-14 | PARTIAL | EVD-AUD-000008 | Mekanisme keberatan tersedia; register keberatan material dan penyelesaiannya belum tersedia |
+| GF-13 | PASS | EVD-GOV-000004 | QC-000 dinilai valid dan layak dilanjutkan oleh Arif Nasruddin |
+| GF-14 | PASS | EVD-GOV-000003 | Penelaah independen menyatakan tidak ada keberatan material |
 | GF-15 | PARTIAL | EVD-AUD-000008 | Branch dan PR teridentifikasi; baseline commit/hash final serta paket arsip belum ditetapkan |
 | GF-16 | FAIL | EVD-AUD-000008 | Decision-ID, tanggal efektif, transisi final, dan otoritas pengesah belum diisi |
 
@@ -98,8 +98,8 @@ Checklist dinilai lengkap sebagai instrumen, tetapi belum boleh dinyatakan lulus
 ## 8. Tindakan Prioritas
 
 1. selesaikan audit editorial dan substantif Bahasa Indonesia;
-2. tunjuk penelaah independen dan dokumentasikan kompetensinya;
-3. buat register keberatan material serta resolusinya;
+2. lengkapi formalitas dan audit trail penelaah independen;
+3. pertahankan register keberatan material dan rekam setiap keberatan baru;
 4. tutup atau terima secara sah seluruh temuan mayor;
 5. isi bukti pada CTM, checklist, risiko, CAPA, dan safeguarding;
 6. tetapkan personel RACI serta uji hak akses;
@@ -115,3 +115,4 @@ GF-2026-001 tidak memenuhi syarat untuk status FROZEN. Status tetap BLOCKED samp
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 0.1.0-id | 26 Juli 2026 | Audit awal 16 gate, RACI, checklist, tautan, dan bukti |
+| 0.2.0-id | 27 Juli 2026 | Menyelaraskan hasil menjadi 6 PASS, 8 PARTIAL, 2 FAIL serta mencatat bukti kesiapan Safeguarding Lead |
