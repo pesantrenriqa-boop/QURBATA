@@ -90,7 +90,7 @@ Hak akses aktual harus mengikuti prinsip least privilege, separation of duties, 
 | ASN-GOV-004 | Knowledge Architect | Menunggu | Menunggu surat penetapan | Menunggu | Belum | Belum | VACANT |
 | ASN-GOV-005 | Safeguarding Lead | Ainul Yakin | Penetapan pengguna 26 Juli 2026 untuk tahap pendirian | Menunggu | Perlu dilengkapi | Wajib diperiksa per perkara dan keputusan | ACTIVE |
 | ASN-GOV-006 | Risk/Continuity Lead | Menunggu | Menunggu surat penetapan | Menunggu | Belum | Belum | VACANT |
-| ASN-GOV-007 | Penelaah Independen | Arif Nasruddin | Penetapan pengguna 26 Juli 2026 untuk telaah Governance v1.0 | Menunggu | Perlu dilengkapi | Pernyataan independensi dan konflik kepentingan wajib ditandatangani | ACTIVE |
+| ASN-GOV-007 | Penelaah Independen | Arif Nasruddin | Penetapan pengguna 26 Juli 2026 untuk telaah Governance v1.0 | Menunggu | Dosen UNIRA dan UIN Maulana Malik Ibrahim Malang; REC-GOV-001 | Tidak ada konflik yang dinyatakan; REC-GOV-001 | ACTIVE |
 
 Status yang diizinkan: DRAFT, ACTIVE, SUSPENDED, EXPIRED, REVOKED, dan VACANT. Peran kritis berstatus VACANT menggagalkan gate yang membutuhkan kewenangan atau independensi tersebut.
 
