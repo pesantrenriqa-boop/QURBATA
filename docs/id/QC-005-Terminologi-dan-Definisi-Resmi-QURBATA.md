@@ -255,3 +255,63 @@ Suatu dokumen, modul, atau komunikasi dinyatakan patuh apabila:
 ## 13. Ketentuan Penutup
 
 QC-005 menjadi sumber terminologi resmi QURBATA. Seluruh dokumen dan sistem yang telah ada wajib diselaraskan secara bertahap berdasarkan prioritas risiko, frekuensi penggunaan, dan dampak kelembagaan.
+
+---
+
+## 14. Terminologi Model Pengetahuan
+
+### 14.1 Knowledge-ID
+
+Identitas unik, stabil, tidak didaur ulang, dan dapat dibaca mesin yang diberikan kepada objek pengetahuan atau tata kelola agar objek tersebut dapat ditelusuri lintas dokumen, bahasa, versi, sistem, dan bukti.
+
+### 14.2 Knowledge Object (KO)
+
+Unit pengetahuan terkecil yang masih mempunyai makna mandiri untuk menjelaskan, memahami, memprediksi, memutuskan, atau bertindak. KO bukan keseluruhan kompetensi dan bukan otomatis sebuah aktivitas belajar.
+
+### 14.3 Learning Object (LO)
+
+Unit pengalaman belajar yang mempunyai tujuan, sasaran pengguna, prasyarat, aktivitas, sumber, asesmen, dan kriteria keberhasilan. LO dapat menggunakan satu atau lebih KO.
+
+### 14.4 Page Object (PO)
+
+Unit halaman atau tampilan pada sumber tunggal yang dapat diturunkan ke buku, presentasi, flashcard, aplikasi, atau media lain tanpa mengubah identitas isi sumbernya.
+
+### 14.5 Chapter Object (CO)
+
+Kelompok terstruktur dari Page Object atau unit isi lain yang membentuk satu bab atau bagian besar dengan tujuan dan urutan yang jelas.
+
+### 14.6 Book Object (BO)
+
+Produk buku atau jilid yang mempunyai identitas, versi, struktur bab, cakupan, sasaran pengguna, dan hubungan dengan kurikulum.
+
+### 14.7 Curriculum Object (CUR)
+
+Struktur kurikulum yang menetapkan tujuan, jenjang, capaian, urutan, prasyarat, jalur pembelajaran, asesmen, serta hubungan dengan objek buku dan pembelajaran.
+
+### 14.8 Persyaratan
+
+Ketentuan yang cukup spesifik sehingga dua penelaah independen dapat menilai apakah ketentuan tersebut dipenuhi. Persyaratan harus membedakan kata wajib, dilarang, dapat, dan dianjurkan.
+
+### 14.9 Kepatuhan
+
+Keadaan ketika seluruh persyaratan yang berlaku pada suatu ruang lingkup telah dipenuhi dan dibuktikan. Pemenuhan sebagian wajib dilaporkan sebagai kepatuhan sebagian, bukan kepatuhan penuh.
+
+### 14.10 Keterlacakan
+
+Kemampuan menelusuri asal, hubungan, versi, keputusan, implementasi, bukti, perubahan, dan dampak suatu objek secara maju serta mundur.
+
+### 14.11 Audit Trail
+
+Rekaman kronologis yang memungkinkan pemeriksa mengetahui siapa melakukan apa, kapan, atas dasar apa, terhadap objek mana, dan dengan hasil apa. Audit trail tidak sama dengan log teknis mentah apabila konteks keputusan tidak tersedia.
+
+## 15. Singkatan yang Dilarang Ambigu
+
+Singkatan COM tidak boleh digunakan sebagai domain atau jenis objek karena dapat ditafsirkan sebagai communication, competency, committee, atau complaint. Gunakan kode yang eksplisit:
+
+- CMR untuk komunikasi dan hubungan pemangku kepentingan;
+- CMP untuk kompetensi;
+- CMT untuk komite; dan
+- CML untuk pengaduan apabila diperlukan di luar CTM.
+
+Penambahan singkatan baru wajib diperiksa terhadap register terminologi dan skema data sebelum digunakan.
+
