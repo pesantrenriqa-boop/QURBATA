@@ -1,6 +1,19 @@
 # QC-004 — Traceability Framework
 
 **Kode Dokumen:** QC-004  
+**Judul:** Kerangka Keterlacakan QURBATA  
+**Bahasa Induk:** Bahasa Indonesia  
+**Status:** Draf Normatif  
+**Versi:** 0.2.0-id  
+**Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
+**Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
+**Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
+**Tinjauan Berikutnya:** Maksimal tiga tahun setelah berlaku atau ketika dipicu perubahan material  
+**Klasifikasi Akses:** Publik  
+**Induk Normatif:** QC-000 — Konstitusi QURBATA  
+
+
+**Kode Dokumen:** QC-004  
 **Judul:** Kerangka Ketertelusuran Kebijakan, Proses, Sistem, dan Bukti  
 **Bahasa Master:** Indonesia  
 **Status:** Draft terkendali  
