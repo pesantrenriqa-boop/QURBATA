@@ -33,11 +33,16 @@ Status tambahan: `Ditangguhkan dengan Risiko Diterima`, hanya dengan keputusan b
 ## 4. Register Awal
 | Finding-ID | Area | Referensi | Tingkat | Temuan | Pemilik | Tenggat | Status |
 |---|---|---|---|---|---|---|---|
-| AUD-2026-001 | Governance | QC-000–QC-012 | Mayor | Metadata versi, tanggal berlaku, dan review belum seragam pada seluruh dokumen | Document Controller | Sebelum Governance Freeze | Terbuka |
+| AUD-2026-001 | Governance | QC-000–QC-012 | Mayor | Metadata versi, tanggal berlaku, dan review belum seragam pada seluruh dokumen | Document Controller | Sebelum Governance Freeze | Menunggu Verifikasi |
 | AUD-2026-002 | Bahasa | QC-000 | Mayor | Naskah Inggris belum sepenuhnya harmonis dengan master Indonesia | Translation Lead | Sebelum keluar dari Draft | Terbuka |
 | AUD-2026-003 | Knowledge-ID | REG-GOV-001 | Mayor | Register awal belum mencakup seluruh objek kurikulum dan buku | Knowledge Architect | Sebelum Curriculum Freeze | Terbuka |
 | AUD-2026-004 | Safeguarding | QC-012 | Mayor | Bukti implementasi dan kanal respons belum diuji operasional | Safeguarding Lead | Sebelum pilot peserta didik | Terbuka |
 | AUD-2026-005 | Keterlacakan | QC-004/CTM | Minor | Sejumlah persyaratan belum memiliki bukti dan pemilik final | QA Lead | Sebelum ratifikasi | Terbuka |
+| AUD-2026-006 | Governance Freeze | REG-GOV-011 | Mayor | Temuan mayor terbuka menghalangi GF-10 | QA Lead | Sebelum Governance Freeze | Terbuka |
+| AUD-2026-007 | Review | QC-000/REG-GOV-011 | Mayor | Telaah independen dan register keberatan material belum tersedia | Governance Lead | Sebelum Governance Freeze | Terbuka |
+| AUD-2026-008 | Ratifikasi | QC-007/REG-GOV-011 | Mayor | Baseline final, Decision-ID, tanggal efektif, dan transisi belum ditetapkan | Otoritas Konstitusional | Sebelum Governance Freeze | Terbuka |
+| AUD-2026-009 | RACI | MAT-GOV-001 | Minor | Penetapan personel, pengganti, kompetensi, dan uji akses belum tersedia | Governance Lead | Sebelum implementasi | Terbuka |
+| AUD-2026-010 | Bukti | CTM/CHK-GOV-001 | Minor | Bukti implementasi belum lengkap pada CTM, risiko, CAPA, safeguarding, dan RIQA OS | QA Lead | Sebelum Governance Freeze | Terbuka |
 
 ## 5. Data Wajib
 - Finding-ID;
@@ -70,3 +75,4 @@ RIQA OS harus menyediakan pengingat tenggat, eskalasi temuan kritis/mayor, relas
 | Versi | Tanggal | Perubahan |
 |---|---|---|
 | 0.1.0 | 2026-07-26 | Register temuan audit awal dibuat |
+| 0.2.0-id | 2026-07-26 | Metadata kendali dan temuan audit kesiapan freeze ditambahkan |
