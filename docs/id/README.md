@@ -33,6 +33,7 @@ Dokumen ini menjadi pintu masuk resmi untuk membaca, menelusuri, mengaudit, dan 
 | Instrumen | Fungsi |
 |---|---|
 | [Matriks Keterlacakan Konstitusional](QURBATA-Constitutional-Traceability-Matrix.md) | Menghubungkan persyaratan QC-000 dengan dokumen pelaksana, bukti, pemilik, risiko, status penerapan, dan objek RIQA OS. |
+| [REG-GOV-001 — Register Knowledge-ID](REG-GOV-001-Register-Knowledge-ID-QURBATA.md) | Menetapkan format, domain, jenis objek, status, hubungan, register awal, dan pengendalian Knowledge-ID QURBATA. |
 
 Instrumen pada bagian ini bersifat pengendali dan audit, tetapi tidak membuat norma baru serta tidak menggantikan dokumen QC.
 
@@ -49,6 +50,7 @@ Instrumen pada bagian ini bersifat pengendali dan audit, tetapi tidak membuat no
 - QC-003 — Penyusunan dan Pengelolaan Dokumen
 - QC-004 — Keterlacakan
 - QC-005 — Terminologi dan Definisi
+- REG-GOV-001 — Register Knowledge-ID
 
 ### C. Kewenangan, Keputusan, dan Integritas
 
@@ -69,10 +71,10 @@ Instrumen pada bagian ini bersifat pengendali dan audit, tetapi tidak membuat no
 |---|---|---|
 | Kedudukan konstitusional | QC-000 | seluruh QC |
 | Struktur tata kelola | QC-001 | QC-006, QC-007 |
-| Identitas dan kode dokumen | QC-002 | QC-003, QC-004 |
+| Identitas dan kode dokumen | QC-002 | QC-003, QC-004, REG-GOV-001 |
 | Siklus hidup dokumen | QC-003 | QC-002, QC-004, QC-007 |
-| Keterlacakan dan bukti | QC-004 | seluruh QC operasional |
-| Istilah resmi | QC-005 | seluruh QC |
+| Keterlacakan dan bukti | QC-004 | seluruh QC operasional, CTM, REG-GOV-001 |
+| Istilah resmi | QC-005 | seluruh QC, REG-GOV-001 |
 | Peran dan pemisahan tugas | QC-006 | QC-007, QC-008, QC-009 |
 | Keputusan dan ratifikasi | QC-007 | QC-006, QC-008 |
 | Etika dan independensi | QC-008 | QC-006, QC-007, QC-009 |
@@ -80,6 +82,7 @@ Instrumen pada bagian ini bersifat pengendali dan audit, tetapi tidak membuat no
 | Risiko dan insiden | QC-010 | QC-009, QC-011, QC-012 |
 | Pemulihan layanan dan data | QC-011 | QC-004, QC-006, QC-010, QC-012 |
 | Perlindungan peserta didik | QC-012 | QC-006, QC-008, QC-009, QC-010, QC-011 |
+| Knowledge-ID | QC-002, QC-004 | QC-005, REG-GOV-001, CTM |
 
 ## 6. Status Pengembangan
 
@@ -87,6 +90,7 @@ Instrumen pada bagian ini bersifat pengendali dan audit, tetapi tidak membuat no
 |---|---|---|---|---|
 | QC-000 | Draf lanjut | Master normatif dalam harmonisasi akhir | Belum harmonis penuh | Dalam pengembangan |
 | QC-001–QC-012 | Draf terkendali | Substansi tersedia; audit lintas dokumen berjalan | Belum menjadi terjemahan resmi lengkap | Belum menjadi terjemahan resmi lengkap |
+| REG-GOV-001 | Draf terkendali | Skema dan register awal tersedia | Belum diterjemahkan | Belum diterjemahkan |
 
 Status pada tabel ini harus diperbarui setelah persetujuan, ratifikasi, penerbitan versi baru, atau perubahan kedudukan bahasa.
 
@@ -96,10 +100,11 @@ Status pada tabel ini harus diperbarui setelah persetujuan, ratifikasi, penerbit
 2. Gunakan definisi QC-005 ketika suatu istilah mempunyai arti khusus.
 3. Periksa QC-006 dan QC-007 sebelum menetapkan siapa yang berwenang mengambil atau mengesahkan keputusan.
 4. Gunakan QC-004 dan Matriks Keterlacakan Konstitusional untuk menghubungkan persyaratan dengan bukti, rekaman, keluaran, risiko, dan tindakan korektif.
-5. Gunakan QC-009 untuk sengketa, keluhan, keberatan, banding, dan perlindungan pelapor.
-6. Gunakan QC-010 dan QC-011 untuk risiko, gangguan besar, kesinambungan, dan pemulihan.
-7. Gunakan QC-012 untuk setiap keputusan yang memengaruhi keselamatan, martabat, hak, atau kesejahteraan peserta didik.
-8. Jangan menggunakan salinan lokal yang tidak terkendali sebagai dasar keputusan material tanpa memeriksa versi di repositori.
+5. Gunakan REG-GOV-001 untuk membuat, memeriksa, mengubah status, dan menghubungkan Knowledge-ID.
+6. Gunakan QC-009 untuk sengketa, keluhan, keberatan, banding, dan perlindungan pelapor.
+7. Gunakan QC-010 dan QC-011 untuk risiko, gangguan besar, kesinambungan, dan pemulihan.
+8. Gunakan QC-012 untuk setiap keputusan yang memengaruhi keselamatan, martabat, hak, atau kesejahteraan peserta didik.
+9. Jangan menggunakan salinan lokal yang tidak terkendali sebagai dasar keputusan material tanpa memeriksa versi di repositori.
 
 ## 8. Persyaratan Minimum Metadata
 
@@ -132,8 +137,9 @@ Seri tata kelola belum boleh dinyatakan final sebelum:
 6. perlindungan peserta didik terintegrasi pada proses yang relevan;
 7. konflik dengan QC-000 telah diselesaikan;
 8. master Bahasa Indonesia telah melalui telaah substantif dan editorial;
-9. terjemahan resmi tidak diberi status pengendali sebelum harmonisasi selesai; dan
-10. perubahan telah tercatat dan disetujui sesuai kewenangan.
+9. terjemahan resmi tidak diberi status pengendali sebelum harmonisasi selesai;
+10. Knowledge-ID kritis telah dipetakan dan tidak terdapat ID ganda atau yatim; dan
+11. perubahan telah tercatat dan disetujui sesuai kewenangan.
 
 ## 10. Arah Integrasi RIQA OS
 
@@ -149,9 +155,9 @@ Indeks ini menjadi dasar pengembangan register dokumen pada RIQA OS yang sekuran
 - riwayat perubahan;
 - temuan audit;
 - tindakan korektif; dan
-- peringatan apabila rujukan, versi, atau persetujuan tidak valid.
+- peringatan apabila rujukan, versi, persetujuan, atau Knowledge-ID tidak valid.
 
-Matriks keterlacakan juga menjadi dasar untuk objek persyaratan, bukti, risiko, kontrol, pemilik, keputusan, insiden, dan tindakan korektif pada RIQA OS.
+Matriks keterlacakan dan REG-GOV-001 menjadi dasar untuk objek persyaratan, bukti, risiko, kontrol, pemilik, keputusan, insiden, tindakan korektif, serta mesin dampak perubahan pada RIQA OS.
 
 ## 11. Catatan Pengendalian
 
@@ -162,5 +168,6 @@ Indeks ini harus diperbarui setiap kali:
 - dokumen dicabut, digabung, atau digantikan;
 - status bahasa berubah;
 - hubungan normatif berubah;
-- matriks keterlacakan berubah secara material; atau
+- matriks keterlacakan berubah secara material;
+- skema atau register Knowledge-ID berubah secara material; atau
 - versi resmi baru diratifikasi.
