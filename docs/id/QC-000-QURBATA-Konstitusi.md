@@ -12,7 +12,7 @@
 | ID Dokumen | QC-000 |
 | Judul | Konstitusi QURBATA |
 | Bahasa | Bahasa Indonesia |
-| Versi | 0.3.0-id |
+| Versi | 0.4.0-id |
 | Status | Draf Pendiri |
 | Tingkat Dokumen | Konstitusional |
 | Kedudukan | Dokumen normatif tertinggi dalam ekosistem QURBATA |
@@ -34,6 +34,7 @@
 | 0.1.0-id | 25 Juli 2026 | Draf Pendiri | Inisialisasi master Bahasa Indonesia, penetapan struktur dokumen, Bab I Pendahuluan, dan Bab II Identitas |
 | 0.2.0-id | 25 Juli 2026 | Draf Pendiri | Penyempurnaan struktur, penambahan Bab III Tujuan dan Bab IV Ruang Lingkup, serta pembaruan status pengerjaan |
 | 0.3.0-id | 26 Juli 2026 | Draf Pendiri | Integrasi Bab V Landasan Filosofis ke dalam master resmi Bahasa Indonesia |
+| 0.4.0-id | 26 Juli 2026 | Draf Pendiri | Integrasi batch besar Bab VI–X: landasan teologis, landasan akademik, nilai dasar, prinsip konstitusional, dan arsitektur dokumen |
 
 ---
 
@@ -54,11 +55,11 @@
 3. [BAB III — Tujuan](#bab-iii--tujuan)
 4. [BAB IV — Ruang Lingkup](#bab-iv--ruang-lingkup)
 5. [BAB V — Landasan Filosofis](#bab-v--landasan-filosofis)
-6. BAB VI — Landasan Teologis
-7. BAB VII — Landasan Akademik
-8. BAB VIII — Nilai Dasar
-9. BAB IX — Prinsip Konstitusional
-10. BAB X — Arsitektur Dokumen
+6. [BAB VI — Landasan Teologis](#bab-vi--landasan-teologis)
+7. [BAB VII — Landasan Akademik](#bab-vii--landasan-akademik)
+8. [BAB VIII — Nilai Dasar](#bab-viii--nilai-dasar)
+9. [BAB IX — Prinsip Konstitusional](#bab-ix--prinsip-konstitusional)
+10. [BAB X — Arsitektur Dokumen](#bab-x--arsitektur-dokumen)
 11. BAB XI — Tata Kelola
 12. BAB XII — Integritas Akademik
 13. BAB XIII — Penelitian dan Bukti Ilmiah
@@ -863,6 +864,192 @@ Landasan filosofis dalam Bab ini mewajibkan seluruh dokumen dan implementasi tur
 11. menggunakan dokumentasi dan bukti secara proporsional; serta
 12. mengarahkan pengembangan kepada kemaslahatan dan perbaikan berkelanjutan.
 
+
+---
+
+# BAB VI — LANDASAN TEOLOGIS
+
+## Pasal 43 — Kedudukan Landasan Teologis
+
+Landasan teologis menempatkan seluruh pengembangan QURBATA dalam kerangka penghambaan kepada Allah, pemuliaan Al-Qur'an, tanggung jawab kekhalifahan, dan pencarian kemaslahatan. Landasan ini menjadi arah nilai bagi seluruh keputusan akademik, pendidikan, teknologi, dan kelembagaan tanpa menggantikan kewenangan ulama dalam penetapan hukum Islam.
+
+## Pasal 44 — Sumber Normatif Islam
+
+### 44.1 Sumber Utama
+
+Prinsip normatif Islam dalam QURBATA bersumber dari Al-Qur'an dan Sunnah yang sahih serta dipahami dengan memperhatikan tradisi keilmuan Islam yang dapat dipertanggungjawabkan.
+
+### 44.2 Penggunaan Pendapat Ulama
+
+Pendapat ulama wajib dinisbatkan secara tepat, dibedakan menurut tingkat otoritas dan konteksnya, serta tidak boleh disajikan sebagai kesepakatan apabila terdapat perbedaan yang diakui.
+
+### 44.3 Verifikasi Keagamaan
+
+Ketentuan yang mengandung klaim akidah, hukum, qiraat, tajwid, tafsir, hadis, atau adab keagamaan wajib ditelaah oleh pihak yang kompeten sesuai bidangnya sebelum ditetapkan sebagai ketentuan final.
+
+## Pasal 45 — Tauhid dan Orientasi Pendidikan
+
+Pendidikan Al-Qur'an diarahkan untuk memperkuat keimanan, ibadah, adab, ilmu, tanggung jawab, dan kemanfaatan. Capaian teknis tidak boleh dipisahkan dari kejujuran, kerendahan hati, amanah, dan kesadaran bahwa ilmu merupakan titipan serta sarana pengabdian.
+
+## Pasal 46 — Adab terhadap Al-Qur'an dan Ilmu
+
+Seluruh produk dan kegiatan QURBATA wajib menjaga kehormatan mushaf, ayat, bacaan, ilmu, guru, peserta didik, dan majelis pembelajaran. Penggunaan ayat atau simbol keagamaan untuk manipulasi, klaim tanpa bukti, eksploitasi komersial, atau pencitraan yang menyesatkan dilarang.
+
+## Pasal 47 — Ikhtiar, Tawakal, dan Pertanggungjawaban
+
+Tawakal tidak menghapus kewajiban merencanakan, memeriksa, mengukur risiko, memperbaiki kesalahan, dan mempertanggungjawabkan keputusan. Keberhasilan program tidak boleh dinyatakan semata-mata berdasarkan niat baik, jumlah peserta, popularitas, atau pengalaman pribadi.
+
+---
+
+# BAB VII — LANDASAN AKADEMIK
+
+## Pasal 48 — Karakter Akademik QURBATA
+
+QURBATA dikembangkan sebagai sistem berbasis penelitian, bukti, telaah ilmiah, pengalaman praktik, dan evaluasi berkelanjutan. Setiap klaim wajib disampaikan secara proporsional terhadap kekuatan bukti yang tersedia.
+
+## Pasal 49 — Bidang Keilmuan
+
+Pengembangan QURBATA dapat memadukan studi Al-Qur'an, tajwid, qiraat, bahasa Arab, pendidikan Islam, kurikulum, psikologi perkembangan, ilmu belajar, asesmen, pengembangan guru, teknologi pendidikan, manajemen pengetahuan, mutu, dan bidang lain yang relevan.
+
+Penggunaan pendekatan lintas disiplin tidak boleh mengaburkan batas kompetensi, metode, istilah, atau tingkat kepastian masing-masing bidang.
+
+## Pasal 50 — Hierarki Pengetahuan dan Bukti
+
+QURBATA membedakan sekurang-kurangnya:
+
+1. prinsip normatif Islam;
+2. pengetahuan ilmiah yang mapan;
+3. hasil penelitian yang telah ditelaah;
+4. temuan uji coba atau data lapangan;
+5. penilaian ahli;
+6. pengalaman profesional;
+7. asumsi desain;
+8. hipotesis; dan
+9. keputusan kelembagaan.
+
+Setiap dokumen wajib menunjukkan kedudukan klaim penting agar asumsi atau keputusan internal tidak diperlakukan sebagai fakta universal.
+
+## Pasal 51 — Validitas, Reliabilitas, dan Keterbatasan
+
+Instrumen, asesmen, penelitian, dan analitika wajib memperhatikan validitas, reliabilitas, keadilan, konteks penggunaan, serta keterbatasannya. Hasil pengukuran tidak boleh digunakan di luar tujuan yang telah dinilai layak tanpa kajian tambahan.
+
+## Pasal 52 — Telaah dan Replikasi
+
+Produk akademik material harus dapat ditelaah, dikritik, diuji, dan diperbaiki. QURBATA wajib menyimpan informasi yang cukup mengenai sumber, metode, versi, konteks, keputusan, dan hasil agar proses pengembangan dapat ditelusuri dan, bila relevan, direplikasi.
+
+---
+
+# BAB VIII — NILAI DASAR
+
+## Pasal 53 — Nilai Pengendali
+
+Nilai dasar QURBATA meliputi:
+
+1. tauhid;
+2. ikhlas;
+3. amanah;
+4. itqan;
+5. adil;
+6. rahmah;
+7. syura;
+8. integritas ilmiah;
+9. keterlacakan;
+10. pembelajaran berkelanjutan;
+11. kemaslahatan; dan
+12. keberlanjutan.
+
+Nilai tersebut wajib diterjemahkan menjadi persyaratan, perilaku, kontrol, indikator, atau bukti yang dapat diperiksa sesuai sifat kegiatannya.
+
+## Pasal 54 — Amanah dan Integritas
+
+Amanah mencakup pengelolaan ilmu, data, dana, aset, karya, kewenangan, waktu, dan hubungan dengan pemangku kepentingan. Fabrikasi, falsifikasi, plagiarisme, sitasi rekaan, manipulasi hasil, penyembunyian konflik kepentingan, dan penyalahgunaan kewenangan dilarang.
+
+## Pasal 55 — Keadilan dan Rahmah
+
+Kebijakan, pembelajaran, asesmen, disiplin, layanan, dan penggunaan teknologi wajib menjaga keadilan, martabat, keselamatan, serta kebutuhan peserta didik. Rahmah tidak menghapus standar, sedangkan penegakan standar tidak membenarkan kekerasan, penghinaan, diskriminasi, atau tindakan sewenang-wenang.
+
+## Pasal 56 — Itqan dan Perbaikan Berkelanjutan
+
+Itqan diwujudkan melalui ketelitian, kompetensi, pengujian, dokumentasi, pengendalian mutu, dan kesediaan memperbaiki kekurangan. Penyempurnaan harus diarahkan pada manfaat yang nyata, bukan penambahan kerumitan tanpa tujuan.
+
+---
+
+# BAB IX — PRINSIP KONSTITUSIONAL
+
+## Pasal 57 — Supremasi Konstitusi
+
+QC-000 merupakan norma internal tertinggi QURBATA. Dokumen, keputusan, sistem, atau tindakan yang bertentangan dengannya wajib dihentikan, diperbaiki, dicabut, atau memperoleh penyelesaian konstitusional yang terdokumentasi.
+
+## Pasal 58 — Legalitas dan Kewenangan
+
+Keputusan material hanya sah apabila dibuat oleh pihak yang berwenang, mengikuti prosedur yang berlaku, menggunakan informasi yang memadai, bebas dari konflik kepentingan yang tidak dikendalikan, dan dicatat dalam register keputusan.
+
+## Pasal 59 — Proporsionalitas Berbasis Risiko
+
+Kedalaman kajian, persetujuan, dokumentasi, pengujian, perlindungan, dan pengawasan harus sebanding dengan tingkat risiko, dampak, skala, serta kerentanan pihak yang terpengaruh.
+
+## Pasal 60 — Transparansi dan Akuntabilitas
+
+Alasan, pemilik, dasar, risiko, status, dan akibat keputusan material harus dapat ditelusuri. Keterbukaan dapat dibatasi untuk melindungi privasi, keselamatan, hak kekayaan intelektual, keamanan, atau kepentingan sah lainnya, tetapi pembatasan tersebut wajib beralasan dan diawasi.
+
+## Pasal 61 — Perlindungan Hak dan Proses yang Adil
+
+Setiap orang yang terdampak keputusan material berhak memperoleh penjelasan yang layak, mekanisme pengaduan atau keberatan, perlindungan dari pembalasan, serta pemeriksaan oleh pihak yang cukup independen sesuai tingkat risikonya.
+
+## Pasal 62 — Keberlanjutan dan Suksesi
+
+QURBATA wajib mengurangi ketergantungan yang tidak terkendali kepada satu orang, sistem, penyedia, atau sumber pembiayaan. Kewenangan, pengetahuan, data, arsip, akses, dan fungsi kritis harus mempunyai mekanisme delegasi, pemulihan, dan suksesi.
+
+---
+
+# BAB X — ARSITEKTUR DOKUMEN
+
+## Pasal 63 — Hierarki Dokumen
+
+Hierarki dokumen QURBATA terdiri atas:
+
+1. Konstitusi;
+2. arsitektur;
+3. standar;
+4. kerangka;
+5. spesifikasi;
+6. pedoman;
+7. manual;
+8. prosedur operasional;
+9. formulir dan templat; serta
+10. rekaman dan bukti.
+
+Dokumen yang lebih rendah wajib menerapkan dan tidak boleh mengubah norma dokumen yang lebih tinggi.
+
+## Pasal 64 — Keluarga Dokumen Konstitusional
+
+QC-001 sampai QC-012 merupakan dokumen turunan langsung QC-000 yang mengatur arsitektur tata kelola, identitas dokumen, siklus hidup dokumen, keterlacakan, terminologi, kewenangan, keputusan, etika, pengaduan, risiko, pemulihan, dan perlindungan peserta didik.
+
+Penambahan, penggabungan, penggantian, atau pencabutan dokumen keluarga QC wajib ditetapkan melalui keputusan yang sah dan diperbarui pada indeks serta register resmi.
+
+## Pasal 65 — Sumber Tunggal dan Bahasa Induk
+
+Bahasa Indonesia merupakan bahasa induk normatif QC-000. Terjemahan bahasa Inggris dan bahasa Arab hanya memperoleh status resmi setelah harmonisasi, penelaahan, persetujuan, dan pencatatan versinya selesai.
+
+Tidak boleh ada dua berkas aktif yang mengklaim sebagai master normatif untuk ID dan versi yang sama.
+
+## Pasal 66 — Identitas, Versi, dan Status
+
+Setiap dokumen resmi wajib memiliki ID unik, judul, versi, status, bahasa, pemilik, otoritas persetujuan, tanggal berlaku, tanggal peninjauan, klasifikasi akses, riwayat perubahan, dan hubungan dengan dokumen lain.
+
+Status draf tidak boleh diperlakukan sebagai ketentuan operasional final kecuali ada keputusan sementara yang sah, terbatas, dan terdokumentasi.
+
+## Pasal 67 — Knowledge-ID dan Keterlacakan
+
+Setiap norma, definisi, persyaratan, keputusan, bukti, risiko, kontrol, dan objek pengetahuan kritis dapat diberi Knowledge-ID unik. Knowledge-ID tidak menggantikan nomor dokumen atau pasal, melainkan menghubungkan objek lintas dokumen, versi, sistem, dan bukti.
+
+Setiap Knowledge-ID kritis wajib mempunyai pemilik, jenis objek, domain, status, sumber, hubungan, versi, dan riwayat perubahan dalam register resmi.
+
+## Pasal 68 — Pengendalian Perubahan Dokumen
+
+Perubahan material wajib disertai alasan, pemilik, analisis dampak, telaah, persetujuan, versi baru, pembaruan keterlacakan, dan rencana transisi. Bagian lama yang masih valid wajib dipertahankan, sedangkan dokumen yang digantikan harus dikeluarkan dari sumber aktif dan status historisnya dicatat dalam register perubahan.
+
+
 ---
 
 ## Status Pengerjaan
@@ -877,11 +1064,11 @@ Landasan filosofis dalam Bab ini mewajibkan seluruh dokumen dan implementasi tur
 - [x] BAB III — Tujuan
 - [x] BAB IV — Ruang Lingkup
 - [x] BAB V — Landasan Filosofis
-- [ ] BAB VI — Landasan Teologis
-- [ ] BAB VII — Landasan Akademik
-- [ ] BAB VIII — Nilai Dasar
-- [ ] BAB IX — Prinsip Konstitusional
-- [ ] BAB X — Arsitektur Dokumen
+- [x] BAB VI — Landasan Teologis
+- [x] BAB VII — Landasan Akademik
+- [x] BAB VIII — Nilai Dasar
+- [x] BAB IX — Prinsip Konstitusional
+- [x] BAB X — Arsitektur Dokumen
 - [ ] BAB XI — Tata Kelola
 - [ ] BAB XII — Integritas Akademik
 - [ ] BAB XIII — Penelitian dan Bukti Ilmiah
