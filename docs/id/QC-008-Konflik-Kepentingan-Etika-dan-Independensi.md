@@ -1,5 +1,18 @@
 # QC-008 Konflik Kepentingan, Etika, dan Independensi
 
+**Kode Dokumen:** QC-008  
+**Judul:** Konflik Kepentingan, Etika, dan Independensi QURBATA  
+**Bahasa Induk:** Bahasa Indonesia  
+**Status:** Draf Normatif  
+**Versi:** 0.2.0-id  
+**Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
+**Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
+**Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
+**Tinjauan Berikutnya:** Maksimal tiga tahun setelah berlaku atau ketika dipicu perubahan material  
+**Klasifikasi Akses:** Publik  
+**Induk Normatif:** QC-000 — Konstitusi QURBATA  
+
+
 Dokumen ini menetapkan standar resmi untuk mengenali, mengungkapkan, menilai, mengelola, memantau, dan menyelesaikan konflik kepentingan serta menjaga etika dan independensi dalam seluruh kegiatan QURBATA.
 
 ## 1. Tujuan
