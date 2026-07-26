@@ -4,7 +4,7 @@
 **Judul:** Penetapan Kanal Awal Pelaporan Safeguarding QURBATA  
 **Tanggal Penetapan:** 27 Juli 2026  
 **Pemberi Penetapan:** Aris Liswanto  
-**Status:** Draf Operasional  
+**Status:** Kanal Ditetapkan; Menunggu Validasi Keamanan  
 **Klasifikasi Akses:** Internal  
 **Dokumen Terkait:** QC-009, QC-012, MAT-GOV-001, REC-GOV-005, REG-GOV-013
 
@@ -12,7 +12,7 @@
 
 1. Kanal awal pelaporan safeguarding QURBATA menggunakan **email**.
 2. Personel yang ditetapkan memiliki akses awal ke kotak masuk laporan adalah **Aris Liswanto**.
-3. Alamat email operasional belum dicantumkan dan harus ditetapkan sebelum kanal dinyatakan aktif.
+3. Alamat email operasional ditetapkan sebagai **safeguardingqurbata@gmail.com**.
 
 ## 2. Pembagian Tanggung Jawab
 
@@ -30,4 +30,4 @@ Ainul Yakin tetap memegang peran **Safeguarding Lead** dan akuntabilitas penanga
 
 ## 4. Batas Bukti
 
-Rekaman ini membuktikan pemilihan jenis kanal dan pemegang akses awal. Rekaman ini belum membuktikan bahwa alamat telah dibuat, keamanan akun telah diuji, Ainul Yakin memiliki jalur penerimaan yang efektif, simulasi laporan berhasil, atau waktu respons telah dipenuhi.
+Rekaman ini membuktikan pemilihan kanal, penetapan alamat, dan pemegang akses awal. Rekaman ini belum membuktikan bahwa autentikasi dua faktor telah aktif, keamanan akun telah diuji, Ainul Yakin memiliki jalur penerimaan yang efektif, simulasi laporan berhasil, atau waktu respons telah dipenuhi.
