@@ -1,5 +1,19 @@
 # REG-GOV-007 — Register Tindakan Korektif dan Pencegahan QURBATA
 
+**Kode Dokumen:** REG-GOV-007  
+**Judul:** Register Tindakan Korektif dan Pencegahan QURBATA  
+**Bahasa Induk:** Bahasa Indonesia  
+**Status:** Draf Terkendali  
+**Versi:** 0.2.0-id  
+**Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
+**Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
+**Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
+**Tinjauan Berikutnya:** Tahunan atau ketika terdapat perubahan material  
+**Klasifikasi Akses:** Internal; ringkasan dapat dipublikasikan  
+**Induk Normatif:** QC-000 — Konstitusi QURBATA  
+**Dokumen Pengendali:** QC-001, QC-003, QC-004, QC-006, dan QC-007  
+
+
 ## 1. Tujuan
 Register CAPA ini memastikan setiap ketidaksesuaian, insiden, keluhan, temuan audit, atau risiko berulang ditangani sampai akar masalah dan efektivitas perbaikannya terbukti.
 
