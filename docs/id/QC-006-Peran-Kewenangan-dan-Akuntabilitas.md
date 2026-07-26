@@ -1,5 +1,18 @@
 # QC-006 Peran, Kewenangan, dan Akuntabilitas
 
+**Kode Dokumen:** QC-006  
+**Judul:** Peran, Kewenangan, dan Akuntabilitas QURBATA  
+**Bahasa Induk:** Bahasa Indonesia  
+**Status:** Draf Normatif  
+**Versi:** 0.2.0-id  
+**Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
+**Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
+**Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
+**Tinjauan Berikutnya:** Maksimal tiga tahun setelah berlaku atau ketika dipicu perubahan material  
+**Klasifikasi Akses:** Publik  
+**Induk Normatif:** QC-000 — Konstitusi QURBATA  
+
+
 Dokumen ini menetapkan kerangka peran, kewenangan, tanggung jawab, pemisahan fungsi, dan akuntabilitas dalam ekosistem QURBATA.
 
 ## 1. Tujuan
