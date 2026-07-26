@@ -33,7 +33,7 @@ PROPOSED, COLLECTED, UNDER-VALIDATION, VALID, REJECTED, EXPIRED, SUPERSEDED, dan
 | Evidence-ID | Objek | Sumber | Status | Pemilik | Validator |
 |---|---|---|---|---|---|
 | EVD-AUD-000001 | Audit tautan 28 Markdown | AUD-GOV-001 | UNDER-VALIDATION | QA Lead | Penelaah independen belum ditetapkan |
-| EVD-AUD-000002 | Kelengkapan substantif QC-000 | QC-000 v0.5.0-id | UNDER-VALIDATION | Pemilik QC-000 | Penelaah independen belum ditetapkan |
+| EVD-AUD-000002 | Kelengkapan substantif QC-000 | QC-000 v0.5.0-id | VALID | Pemilik QC-000 | Arif Nasruddin; REC-GOV-004 |
 | EVD-AUD-000003 | Metadata QC-000–QC-012 | Repository PR #1 | UNDER-VALIDATION | Document Controller | Penelaah independen belum ditetapkan |
 | EVD-AUD-000004 | Checklist 44 butir | CHK-GOV-001 | COLLECTED | QA Lead | Belum ditetapkan |
 | EVD-AUD-000005 | Matriks RACI | MAT-GOV-001 | COLLECTED | Governance Lead | Belum ditetapkan |
@@ -45,6 +45,7 @@ PROPOSED, COLLECTED, UNDER-VALIDATION, VALID, REJECTED, EXPIRED, SUPERSEDED, dan
 | EVD-GOV-000001 | Pernyataan independensi Arif Nasruddin | REC-GOV-001 | COLLECTED | Sekretariat Tata Kelola | Memerlukan pemeriksaan formal/tanda tangan |
 | EVD-GOV-000002 | Hasil telaah independen awal QC-001–QC-012 | REC-GOV-002 | COLLECTED | Sekretariat Tata Kelola | Pernyataan penelaah |
 | EVD-GOV-000003 | Konfirmasi tidak ada keberatan material | REC-GOV-003 | VALID | Sekretariat Tata Kelola | Konfirmasi penelaah independen |
+| EVD-GOV-000004 | Validasi substantif awal QC-000 | REC-GOV-004 | VALID | Pemilik QC-000 | Arif Nasruddin |
 
 ## 5. Data Minimum
 
