@@ -88,7 +88,7 @@ Instrumen pada bagian ini bersifat pengendali dan audit, tetapi tidak membuat no
 
 | ID | Status Dokumen | Status Bahasa Indonesia | Bahasa Inggris | Bahasa Arab |
 |---|---|---|---|---|
-| QC-000 | Draf lanjut | Master normatif dalam harmonisasi akhir | Belum harmonis penuh | Dalam pengembangan |
+| QC-000 | Draf substantif lengkap | Master normatif BAB I–XV dan lampiran lengkap; audit editorial serta lintas dokumen berjalan | Belum disusun dari master final | Belum disusun dari master final |
 | QC-001–QC-012 | Draf terkendali | Substansi tersedia; audit lintas dokumen berjalan | Belum menjadi terjemahan resmi lengkap | Belum menjadi terjemahan resmi lengkap |
 | REG-GOV-001 | Draf terkendali | Skema dan register awal tersedia | Belum diterjemahkan | Belum diterjemahkan |
 
