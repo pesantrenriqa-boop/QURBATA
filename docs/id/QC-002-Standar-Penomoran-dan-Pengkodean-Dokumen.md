@@ -98,7 +98,7 @@ Contoh:
 
 ```text
 QC-000
-QC-200
+QC-012
 SOP-ACA-001
 FRM-FIN-004
 REG-HR-002
@@ -130,20 +130,16 @@ SPEC-OS-012
 
 ### 5.1 Seri QC
 
-Seri `QC` digunakan untuk konstitusi, arsitektur tata kelola, manual kebijakan, dan standar pengendalian tingkat organisasi.
+Prefix QC dicadangkan khusus untuk keluarga dokumen konstitusional QURBATA.
 
-| Rentang | Kelompok Dokumen |
+| Rentang | Kedudukan |
 |---|---|
-| QC-000–QC-099 | Konstitusi, arsitektur, legislasi, terminologi, dan pengendalian dokumen |
-| QC-100–QC-199 | Visi, strategi, kelembagaan, dan tata kelola pimpinan |
-| QC-200–QC-299 | Tata kelola akademik, kurikulum, pembelajaran, asesmen, dan sertifikasi |
-| QC-300–QC-399 | Peserta didik, perlindungan, adab, kesejahteraan, dan pengembangan manusia |
-| QC-400–QC-499 | SDM, guru, pengurus, karier, kompetensi, dan kinerja |
-| QC-500–QC-599 | Keuangan, pembayaran, aset, pengadaan, dan keberlanjutan ekonomi |
-| QC-600–QC-699 | Informasi, data, privasi, keamanan, teknologi, dan RIQA OS |
-| QC-700–QC-799 | Penjaminan mutu, evaluasi, akreditasi, dan kepatuhan |
-| QC-800–QC-899 | Kerangka SOP, layanan operasional, dan pengendalian pelaksanaan |
-| QC-900–QC-999 | Audit, insiden, tindakan korektif, risiko, dan peningkatan berkelanjutan |
+| QC-000 | Konstitusi QURBATA |
+| QC-001–QC-012 | Dokumen konstitusional turunan yang ditetapkan dalam QC-000 |
+| QC-013–QC-099 | Dicadangkan; hanya dapat digunakan melalui keputusan arsitektur dan perubahan konstitusional yang sah |
+| QC-100–QC-999 | Tidak digunakan untuk dokumen baru; fungsi operasional wajib memakai prefix jenis dan domain yang sesuai |
+
+Kebijakan, standar bidang, manual, prosedur, formulir, register, spesifikasi, kurikulum, objek pengetahuan, dan implementasi teknologi tidak boleh menggunakan prefix QC hanya karena dianggap penting. Kedudukan normatif ditentukan oleh hierarki dan keputusan pengesahan, bukan dengan mengambil nomor seri konstitusional.
 
 ### 5.2 Kode Jenis Dokumen Turunan
 
