@@ -1,0 +1,56 @@
+# REG-GOV-007 — Register Tindakan Korektif dan Pencegahan QURBATA
+
+## 1. Tujuan
+Register CAPA ini memastikan setiap ketidaksesuaian, insiden, keluhan, temuan audit, atau risiko berulang ditangani sampai akar masalah dan efektivitas perbaikannya terbukti.
+
+## 2. Jenis Tindakan
+- **Koreksi:** memperbaiki masalah yang sedang terjadi.
+- **Tindakan korektif:** menghilangkan akar penyebab agar tidak berulang.
+- **Tindakan pencegahan:** mengurangi kemungkinan masalah serupa pada area lain.
+- **Pengendalian sementara:** membatasi dampak sebelum solusi permanen diterapkan.
+
+## 3. Metode Analisis Akar Masalah
+Gunakan salah satu atau kombinasi:
+- 5 Why;
+- fishbone;
+- fault tree;
+- analisis proses;
+- analisis prasyarat pembelajaran;
+- analisis data kesalahan peserta/guru/sistem.
+
+Kesimpulan “human error” tidak diterima tanpa pemeriksaan desain proses, instruksi, beban kerja, pelatihan, akses, dan kontrol sistem.
+
+## 4. Register Awal
+| CAPA-ID | Sumber | Masalah | Akar Masalah Awal | Tindakan | Pemilik | Tenggat | Verifikator | Status |
+|---|---|---|---|---|---|---|---|---|
+| CAPA-2026-001 | AUD-2026-001 | Metadata governance tidak seragam | Belum ada register dokumen tunggal | Terapkan REG-GOV-004 dan audit seluruh metadata | Document Controller | Sebelum Governance Freeze | QA Lead | Berjalan |
+| CAPA-2026-002 | AUD-2026-002 | Ketidakharmonisan bahasa | Terjemahan berkembang sebelum master stabil | Bekukan master Indonesia dahulu, lalu harmonisasi per pasal | Translation Lead | Sebelum status Ready for Review | Governance Lead | Terbuka |
+| CAPA-2026-003 | AUD-2026-003 | Knowledge-ID belum lengkap | Ontologi dan domain kurikulum belum dibekukan | Selesaikan ontology baseline dan lakukan validasi ID yatim/ganda | Knowledge Architect | Sebelum Curriculum Freeze | QA Lead | Terbuka |
+| CAPA-2026-004 | AUD-2026-004 | Safeguarding belum diuji | Instrumen operasional belum dipilotkan | Simulasikan kanal laporan, eskalasi, pencatatan, dan respons | Safeguarding Lead | Sebelum pilot peserta didik | Pimpinan QURBATA | Terbuka |
+
+## 5. Data Wajib
+`capa_id`, `source_type`, `source_id`, `problem`, `containment`, `root_cause`, `corrective_action`, `preventive_action`, `owner`, `due_date`, `evidence`, `verifier`, `effectiveness_method`, `effectiveness_result`, `status`, `closed_at`.
+
+## 6. Uji Efektivitas
+Efektivitas dinilai melalui salah satu atau lebih cara:
+1. audit ulang;
+2. pengukuran penurunan kesalahan;
+3. uji pengguna/pilot;
+4. simulasi insiden;
+5. pemeriksaan sampel dokumen;
+6. validasi otomatis pada RIQA OS;
+7. tidak berulang dalam periode yang ditetapkan.
+
+## 7. Eskalasi
+- CAPA kritis yang terlambat harus otomatis dieskalasikan kepada Pimpinan.
+- CAPA mayor yang terlambat lebih dari 7 hari harus masuk Risk Register.
+- Perpanjangan tenggat harus memiliki alasan, risiko residual, dan persetujuan.
+- Pemilik tindakan tidak boleh menjadi satu-satunya verifikator.
+
+## 8. Penutupan
+CAPA ditutup hanya setelah bukti, verifikasi independen, dan hasil uji efektivitas tercatat. Penutupan administratif tanpa uji efektivitas dilarang.
+
+## 9. Catatan Perubahan
+| Versi | Tanggal | Perubahan |
+|---|---|---|
+| 0.1.0 | 2026-07-26 | Register CAPA awal dibuat |
