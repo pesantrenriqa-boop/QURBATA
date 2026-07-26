@@ -60,6 +60,8 @@ Register ini menjadi daftar induk seluruh dokumen resmi QURBATA yang wajib diken
 | REG-GOV-011 | Register Governance Freeze QURBATA | 0.1.0-id | Draf Terkendali | Fungsi Tata Kelola dan Penjaminan Mutu | docs/id/REG-GOV-011-Register-Governance-Freeze-QURBATA.md |
 
 
+| AUD-GOV-001 | Audit Awal Kesiapan Governance Freeze | 0.1.0-id | Laporan Audit Internal Awal | Fungsi Tata Kelola dan Penjaminan Mutu | docs/id/AUD-GOV-001-Audit-Kesiapan-Governance-Freeze.md |
+
 ## 5. Kolom Minimum RIQA OS
 `document_id`, `title`, `type`, `owner`, `approver`, `status`, `version`, `language_master`, `effective_date`, `next_review`, `repository_path`, `decision_id`, `supersedes`, `access_class`, `last_modified_at`.
 
