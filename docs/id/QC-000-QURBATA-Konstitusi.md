@@ -14,9 +14,12 @@
 | Bahasa | Bahasa Indonesia |
 | Versi | 0.5.0-id |
 | Status | Draf Pendiri |
+| Klasifikasi Akses | Publik |
 | Tingkat Dokumen | Konstitusional |
 | Kedudukan | Dokumen normatif tertinggi dalam ekosistem QURBATA |
 | Pemrakarsa dan Peneliti Utama | Aris Liswanto, S.Pd., M.Pd. |
+| Pemilik Dokumen | Fungsi Tata Kelola Konstitusional QURBATA |
+| Otoritas Persetujuan | Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif |
 | Rumah Kelembagaan Awal | Rumah Ilmu Al-Qur'an (RIQA) |
 | Format Sumber | Markdown |
 | Format Terbitan | PDF A4 yang diturunkan dari sumber resmi |
