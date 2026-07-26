@@ -4,7 +4,7 @@
 **Judul:** Register Knowledge-ID QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.1.0-id  
+**Versi:** 0.2.0-id  
 **Induk Normatif:** QC-000 — Konstitusi QURBATA  
 **Dokumen Pengendali:** QC-002, QC-003, QC-004, QC-005  
 
@@ -80,7 +80,8 @@ KID-OS-SPEC-021
 | `QA` | Mutu, audit, evaluasi, dan peningkatan |
 | `PUB` | Publikasi, penerbitan, lisensi, dan kekayaan intelektual |
 | `RSC` | Riset dan pengembangan |
-| `COM` | Komunikasi dan hubungan pemangku kepentingan |
+| `CMR` | Komunikasi dan hubungan pemangku kepentingan |
+| `CMP` | Kompetensi dan struktur kompetensi |
 
 Kode domain harus selaras dengan QC-002. Penambahan domain baru memerlukan persetujuan pengelola dokumen dan pencatatan dalam QC-005.
 
@@ -106,6 +107,12 @@ Kode domain harus selaras dengan QC-002. Penambahan domain baru memerlukan perse
 | `DATA` | Elemen atau objek data |
 | `TERM` | Istilah terkelola |
 | `MAP` | Hubungan atau pemetaan |
+| `KO` | Knowledge Object |
+| `LO` | Learning Object |
+| `PO` | Page Object |
+| `CO` | Chapter Object |
+| `BO` | Book Object |
+| `CUR` | Curriculum Object |
 
 ## 6. Status Knowledge-ID
 
@@ -261,3 +268,61 @@ Register ini harus diperbarui apabila:
 - status bahasa berubah;
 - hubungan implementasi atau bukti berubah; atau
 - modul RIQA OS terkait diterbitkan.
+
+## 16. Namespace Objek Isi Pendidikan
+
+Objek isi pendidikan menggunakan ID kelas langsung dan tidak dibungkus ulang dengan prefix KID:
+
+| Kelas | Format | Contoh pertama | Fungsi |
+|---|---|---|---|
+| Knowledge Object | KO-NNNNNN | KO-000001 | Unit pengetahuan terkecil |
+| Learning Object | LO-NNNNNN | LO-000001 | Pengalaman belajar |
+| Page Object | PO-NNNNNN | PO-000001 | Halaman sumber tunggal |
+| Chapter Object | CO-NNNNNN | CO-000001 | Bab atau kelompok halaman |
+| Book Object | BO-NNNNNN | BO-000001 | Buku atau jilid |
+| Curriculum Object | CUR-NNNNNN | CUR-000001 | Kurikulum atau jalur program |
+
+Nomor enam digit bersifat global dalam setiap kelas. ID tidak memuat jilid, halaman, level, tahun, bahasa, atau versi karena atribut tersebut dapat berubah. Kode tampilan seperti QJ1-P001 tetap dapat digunakan sebagai locator produk, tetapi wajib dipetakan kepada PO yang stabil.
+
+## 17. Aturan Satu ID Satu Objek
+
+1. Satu ID hanya mewakili satu objek dengan batas makna yang jelas.
+2. Satu objek aktif hanya mempunyai satu ID kanonik dalam kelasnya.
+3. Alias atau kode lama dicatat sebagai alias dan tidak menjadi identitas kedua.
+4. Perubahan editorial mempertahankan ID.
+5. Perubahan material menghasilkan ID baru dan relasi supersedes/superseded-by.
+6. Pemecahan menghasilkan ID baru untuk setiap hasil; objek lama menjadi superseded.
+7. Penggabungan menghasilkan ID baru; seluruh sumber tetap tercatat.
+8. ID yang retired atau superseded tidak pernah diterbitkan ulang.
+9. Objek lintas bahasa menggunakan ID yang sama dan versi bahasa terpisah.
+10. ID hanya berstatus permanent setelah objek dan skema terkait diratifikasi atau dibekukan melalui kewenangan yang sah.
+
+## 18. Status Kanonik
+
+Status teknis yang diizinkan adalah PROPOSED, ACTIVE-DRAFT, ACTIVE, DEPRECATED, SUPERSEDED, RETIRED, dan RESERVED. DEPRECATED berarti masih dapat dibaca untuk kompatibilitas tetapi tidak boleh dipakai pada implementasi baru. SUPERSEDED wajib memiliki superseded-by; pengganti wajib memiliki supersedes.
+
+## 19. Otoritas Penerbitan
+
+Pengendali Register Knowledge-ID merupakan satu-satunya fungsi yang menerbitkan ID resmi. Penyusun dapat meminta reservasi, tetapi tidak boleh menganggap nomor sebagai resmi sebelum tercatat. RIQA OS wajib menggunakan transaksi atomik atau penguncian yang mencegah dua objek memperoleh ID sama.
+
+## 20. Metadata Objek Isi
+
+Selain metadata minimum pada Bagian 7, KO/LO/PO/CO/BO/CUR mencatat judul, ringkasan, versi, bahasa, status validasi, prasyarat, parent, children, sumber, capaian terkait, asesmen terkait, hak penggunaan, dan checksum konten apabila relevan.
+
+## 21. Register Awal Model Isi
+
+| ID | Nama Awal | Status | Catatan |
+|---|---|---|---|
+| KO-000001 | Objek Pengetahuan Awal QURBATA | RESERVED | Diisi setelah ontology disetujui |
+| LO-000001 | Objek Pembelajaran Awal QURBATA | RESERVED | Diisi setelah desain pembelajaran disetujui |
+| PO-000001 | Halaman Awal QURBATA | RESERVED | Dipetakan kemudian ke kode halaman produk |
+| CO-000001 | Bab Awal QURBATA | RESERVED | Struktur bab belum dibekukan |
+| BO-000001 | Buku QURBATA Jilid 1 | PROPOSED | Menunggu struktur buku final |
+| CUR-000001 | Kurikulum QURBATA | PROPOSED | Menunggu arsitektur kurikulum final |
+
+## 22. Riwayat Perubahan
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 0.1.0-id | 26 Juli 2026 | Skema KID tata kelola dan register awal |
+| 0.2.0-id | 26 Juli 2026 | Penambahan namespace KO/LO/PO/CO/BO/CUR, aturan satu ID, status, supersesi, dan otoritas penerbitan |
