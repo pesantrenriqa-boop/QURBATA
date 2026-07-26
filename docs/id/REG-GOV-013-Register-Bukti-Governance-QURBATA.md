@@ -42,6 +42,7 @@ PROPOSED, COLLECTED, UNDER-VALIDATION, VALID, REJECTED, EXPIRED, SUPERSEDED, dan
 | EVD-AUD-000008 | Ketiadaan keputusan freeze | REG-GOV-011 | VALID | Sekretariat Tata Kelola | Audit internal awal |
 | EVD-AUD-000009 | Norma safeguarding/pengaduan | QC-009/QC-012 | COLLECTED | Safeguarding Lead | Belum ditetapkan |
 | EVD-AUD-000010 | Register risiko dan CAPA | REG-GOV-007/REG-GOV-008 | COLLECTED | Risk/QA Lead | Belum ditetapkan |
+| EVD-GOV-000001 | Pernyataan independensi Arif Nasruddin | REC-GOV-001 | COLLECTED | Sekretariat Tata Kelola | Memerlukan pemeriksaan formal/tanda tangan |
 
 ## 5. Data Minimum
 
