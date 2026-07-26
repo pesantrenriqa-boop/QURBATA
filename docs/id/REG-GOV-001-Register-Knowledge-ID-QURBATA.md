@@ -250,7 +250,7 @@ Audit register sekurang-kurangnya memeriksa:
 
 ## 14. Masa Transisi
 
-1. Knowledge-ID lama seperti `QF-001-*` tidak otomatis dibawa ke skema ini.
+1. Identitas dari skema pengetahuan sebelumnya tidak otomatis dibawa ke skema ini.
 2. ID lama harus dipetakan, dinilai, dan ditetapkan sebagai `mapped`, `superseded`, atau `retired`.
 3. Tidak boleh ada dua skema Knowledge-ID aktif sebagai sumber otoritatif.
 4. Selama masa transisi, register ini menjadi sumber rancangan tunggal pada branch konstitusi.
