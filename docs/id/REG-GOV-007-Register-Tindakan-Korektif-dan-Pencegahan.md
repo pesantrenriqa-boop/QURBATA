@@ -42,6 +42,13 @@ Kesimpulan “human error” tidak diterima tanpa pemeriksaan desain proses, ins
 | CAPA-2026-003 | AUD-2026-003 | Knowledge-ID belum lengkap | Ontologi dan domain kurikulum belum dibekukan | Selesaikan ontology baseline dan lakukan validasi ID yatim/ganda | Knowledge Architect | Sebelum Curriculum Freeze | QA Lead | Terbuka |
 | CAPA-2026-004 | AUD-2026-004 | Safeguarding belum diuji | Instrumen operasional belum dipilotkan | Simulasikan kanal laporan, eskalasi, pencatatan, dan respons | Safeguarding Lead | Sebelum pilot peserta didik | Pimpinan QURBATA | Terbuka |
 
+
+| CAPA-2026-006 | AUD-2026-006 | Tutup atau putuskan risiko seluruh temuan mayor | Governance/QA Lead | Sebelum freeze | OPEN |
+| CAPA-2026-007 | AUD-2026-007 | Tunjuk penelaah independen dan buka register keberatan | Governance Lead | Sebelum freeze | OPEN |
+| CAPA-2026-008 | AUD-2026-008 | Tetapkan baseline final, Decision-ID, tanggal efektif, dan transisi | Otoritas Konstitusional | Setelah gate lain PASS | OPEN |
+| CAPA-2026-009 | AUD-2026-009 | Tetapkan personel, pengganti, kompetensi, konflik, dan uji akses RACI | Governance Lead | Sebelum implementasi | OPEN |
+| CAPA-2026-010 | AUD-2026-010 | Lengkapi dan validasi Evidence-ID untuk CTM, risiko, CAPA, safeguarding, dan RIQA OS | QA Lead | Sebelum freeze | OPEN |
+
 ## 5. Data Wajib
 `capa_id`, `source_type`, `source_id`, `problem`, `containment`, `root_cause`, `corrective_action`, `preventive_action`, `owner`, `due_date`, `evidence`, `verifier`, `effectiveness_method`, `effectiveness_result`, `status`, `closed_at`.
 
