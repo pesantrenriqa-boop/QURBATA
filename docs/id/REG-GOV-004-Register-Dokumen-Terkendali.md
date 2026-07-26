@@ -57,6 +57,8 @@ Register ini menjadi daftar induk seluruh dokumen resmi QURBATA yang wajib diken
 | MAT-GOV-001 | Matriks Kewenangan RACI | Matriks | Governance Lead | Pimpinan QURBATA | Draf terkendali | 0.1.0 | Indonesia | Saat struktur berubah |
 | CHK-GOV-001 | Checklist Kepatuhan Konstitusional | Checklist | QA Lead | Governance Lead | Draf terkendali | 0.1.0 | Indonesia | Setiap audit/ratifikasi |
 | REG-GOV-004 | Register Dokumen Terkendali | Register | Document Controller | Governance Lead | Draf terkendali | 0.1.0 | Indonesia | Mingguan selama pengembangan |
+| REG-GOV-011 | Register Governance Freeze QURBATA | 0.1.0-id | Draf Terkendali | Fungsi Tata Kelola dan Penjaminan Mutu | docs/id/REG-GOV-011-Register-Governance-Freeze-QURBATA.md |
+
 
 ## 5. Kolom Minimum RIQA OS
 `document_id`, `title`, `type`, `owner`, `approver`, `status`, `version`, `language_master`, `effective_date`, `next_review`, `repository_path`, `decision_id`, `supersedes`, `access_class`, `last_modified_at`.
