@@ -86,7 +86,7 @@ Hak akses aktual harus mengikuti prinsip least privilege, separation of duties, 
 |---|---|---|---|---|---|---|---|
 | ASN-GOV-001 | Otoritas Konstitusional Awal | Aris Liswanto, S.Pd., M.Pd. | QC-000 tahap pendirian | Menunggu | Menunggu bukti formal | Wajib diperiksa per keputusan | DRAFT |
 | ASN-GOV-002 | Document Controller | Aris Liswanto | QC-000 tahap pendirian dan penetapan pengguna 26 Juli 2026 | Menunggu | Perlu dilengkapi | Wajib diperiksa per keputusan | ACTIVE |
-| ASN-GOV-003 | QA Lead | Menunggu | Menunggu surat penetapan | Menunggu | Belum | Belum | VACANT |
+| ASN-GOV-003 | QA Lead | Aris Liswanto | QC-000 tahap pendirian dan penetapan pengguna 26 Juli 2026 | Menunggu | Perlu dilengkapi | Perangkapan dengan Document Controller; verifikasi independen diwajibkan | ACTIVE |
 | ASN-GOV-004 | Knowledge Architect | Menunggu | Menunggu surat penetapan | Menunggu | Belum | Belum | VACANT |
 | ASN-GOV-005 | Safeguarding Lead | Menunggu | Menunggu surat penetapan | Menunggu | Belum | Belum | VACANT |
 | ASN-GOV-006 | Risk/Continuity Lead | Menunggu | Menunggu surat penetapan | Menunggu | Belum | Belum | VACANT |
