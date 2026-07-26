@@ -1,5 +1,18 @@
 # QC-010 Manajemen Risiko dan Keberlangsungan Bisnis
 
+**Kode Dokumen:** QC-010  
+**Judul:** Manajemen Risiko dan Keberlangsungan Bisnis QURBATA  
+**Bahasa Induk:** Bahasa Indonesia  
+**Status:** Draf Normatif  
+**Versi:** 0.2.0-id  
+**Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
+**Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
+**Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
+**Tinjauan Berikutnya:** Maksimal tiga tahun setelah berlaku atau ketika dipicu perubahan material  
+**Klasifikasi Akses:** Publik  
+**Induk Normatif:** QC-000 — Konstitusi QURBATA  
+
+
 Dokumen ini menetapkan standar resmi untuk mengidentifikasi, menilai, mengendalikan, memantau, melaporkan, dan meninjau risiko serta menjaga keberlangsungan layanan, pembelajaran, data, tata kelola, dan operasi dalam seluruh ekosistem QURBATA.
 
 ## 1. Tujuan
