@@ -35,6 +35,7 @@ Dokumen ini menjadi pintu masuk resmi untuk membaca, menelusuri, mengaudit, dan 
 | [Matriks Keterlacakan Konstitusional](QURBATA-Constitutional-Traceability-Matrix.md) | Menghubungkan persyaratan QC-000 dengan dokumen pelaksana, bukti, pemilik, risiko, status penerapan, dan objek RIQA OS. |
 | [REG-GOV-001 — Register Knowledge-ID](REG-GOV-001-Register-Knowledge-ID-QURBATA.md) | Menetapkan format, domain, jenis objek, status, hubungan, register awal, dan pengendalian Knowledge-ID QURBATA. |
 | [REG-GOV-011 — Register Governance Freeze](REG-GOV-011-Register-Governance-Freeze-QURBATA.md) | Mengendalikan permohonan freeze, 16 gate wajib, bukti, keputusan, baseline, dan pembukaan kembali. |
+| [AUD-GOV-001 — Audit Kesiapan Governance Freeze](AUD-GOV-001-Audit-Kesiapan-Governance-Freeze.md) | Mencatat audit awal 16 gate, RACI, checklist, tautan, bukti, temuan, dan keputusan BLOCKED. |
 
 Instrumen pada bagian ini bersifat pengendali dan audit, tetapi tidak membuat norma baru serta tidak menggantikan dokumen QC.
 
