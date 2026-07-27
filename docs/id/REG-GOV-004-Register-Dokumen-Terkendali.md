@@ -4,7 +4,7 @@
 **Judul:** Register Dokumen Terkendali QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.6.0-id  
+**Versi:** 0.7.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -87,3 +87,4 @@ RIQA OS harus menandai:
 | 0.4.0-id | 2026-07-27 | Menyelaraskan versi setelah audit terminologi master Bahasa Indonesia |
 | 0.5.0-id | 2026-07-27 | Menyelaraskan versi register risiko dan dasbor tata kelola |
 | 0.6.0-id | 2026-07-27 | Audit metadata mengonfirmasi QC-000–QC-012 mempunyai identitas, bahasa, versi, status, pemilik, otoritas, tanggal berlaku bersyarat, siklus tinjauan, klasifikasi, dan induk normatif yang sesuai |
+| 0.7.0-id | 2026-07-27 | Menyelaraskan versi register risiko, CAPA, bukti, freeze, audit, dan dasbor setelah validasi GF-09 |
