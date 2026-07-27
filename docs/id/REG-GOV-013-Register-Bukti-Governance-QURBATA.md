@@ -4,7 +4,7 @@
 **Judul:** Register Bukti Governance QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.17.0-id  
+**Versi:** 0.18.0-id  
 **Pemilik Dokumen:** Fungsi Penjaminan Mutu QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -34,7 +34,7 @@ PROPOSED, COLLECTED, UNDER-VALIDATION, VALID, REJECTED, EXPIRED, SUPERSEDED, dan
 |---|---|---|---|---|---|
 | EVD-AUD-000001 | Audit tautan 28 Markdown | AUD-GOV-001 | UNDER-VALIDATION | QA Lead | Penelaah independen belum ditetapkan |
 | EVD-AUD-000002 | Kelengkapan substantif QC-000 | QC-000 v0.5.0-id | VALID | Pemilik QC-000 | Arif Nasruddin; REC-GOV-004 |
-| EVD-AUD-000003 | Metadata QC-000–QC-012 | Repository PR #1 | UNDER-VALIDATION | Document Controller | Penelaah independen belum ditetapkan |
+| EVD-AUD-000003 | Metadata QC-000–QC-012 | Repository PR #1 | VALID | Document Controller | Audit 27 Juli 2026: 13/13 dokumen mempunyai metadata minimum; tanggal efektif tetap bersyarat pada ratifikasi |
 | EVD-AUD-000004 | Checklist 44 butir | CHK-GOV-001 | COLLECTED | QA Lead | Belum ditetapkan |
 | EVD-AUD-000005 | Matriks RACI dan penetapan pengganti peran kritis | MAT-GOV-001/REC-GOV-013/REC-GOV-014 | UNDER-VALIDATION | Governance Lead | Pengganti SAFE dan DOC tervalidasi; kompetensi peran lain dan uji kewenangan masih terbuka |
 | EVD-AUD-000006 | Model Knowledge-ID dan CTM | QC-004/QC-005/REG-GOV-001/CTM | UNDER-VALIDATION | Knowledge Architect | Audit awal: format ID valid, tidak ada ID ganda dalam register, dan seluruh referensi KID pada 20 baris CTM ditemukan; kelengkapan seluruh norma material masih perlu divalidasi independen |
@@ -87,3 +87,4 @@ RIQA OS mencegah gate PASS bila Evidence-ID wajib tidak berstatus VALID, telah k
 | 0.15.0-id | 27 Juli 2026 | Memvalidasi penerimaan mandat dan kontrol Document Controller pengganti |
 | 0.16.0-id | 27 Juli 2026 | Menyelaraskan bukti RACI dan mencatat hasil audit awal keunikan serta referensi Knowledge-ID governance |
 | 0.17.0-id | 27 Juli 2026 | Mencatat audit terminologi master Bahasa Indonesia sebagai EVD-GOV-000015 |
+| 0.18.0-id | 27 Juli 2026 | Memvalidasi kelengkapan metadata minimum QC-000–QC-012 |
