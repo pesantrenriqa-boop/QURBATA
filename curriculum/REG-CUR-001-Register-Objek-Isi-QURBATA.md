@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.23.0-id  
+**Versi:** 0.24.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -254,6 +254,14 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000182 | Knowledge Object | Integrasi kasrah baru dengan kasrah sebelumnya | QJ1-P023 | ACTIVE-DRAFT | used-by LO-000023 |
 | KO-000183 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P023 | QJ1-P023 | ACTIVE-DRAFT | used-by LO-000023 |
 | KO-000184 | Knowledge Object | Adab membaca tanpa menambah panjang | QJ1-P023-AKH01 | ACTIVE-DRAFT | supports LO-000023 |
+| PO-000024 | Page Object | Integrasi Seluruh Huruf Berkasrah | QJ1-P024 | ACTIVE-DRAFT | child-of CO-000002 |
+| LO-000024 | Learning Object | Mengintegrasikan seluruh huruf berkasrah QJ1-P016–QJ1-P023 | QJ1-P024 | ACTIVE-DRAFT | uses KO-000185–KO-000190 |
+| KO-000185 | Knowledge Object | Integrasi seluruh bentuk dan bunyi kasrah QJ1-P016–QJ1-P023 | QJ1-P024 | ACTIVE-DRAFT | used-by LO-000024 |
+| KO-000186 | Knowledge Object | Diskriminasi keluarga bentuk dan titik | QJ1-P024 | ACTIVE-DRAFT | used-by LO-000024 |
+| KO-000187 | Knowledge Object | Ketepatan makhraj lintas keluarga huruf | QJ1-P024 | ACTIVE-DRAFT | used-by LO-000024 |
+| KO-000188 | Knowledge Object | Konsistensi kasrah pendek tanpa mad | QJ1-P024 | ACTIVE-DRAFT | used-by LO-000024 |
+| KO-000189 | Knowledge Object | Kelancaran rangkaian dua dan tiga huruf terpisah QJ1-P024 | QJ1-P024 | ACTIVE-DRAFT | used-by LO-000024 |
+| KO-000190 | Knowledge Object | Adab istiqamah dan teliti sampai akhir | QJ1-P024-AKH01 | ACTIVE-DRAFT | supports LO-000024 |
 
 ## 3. Aturan
 
@@ -293,3 +301,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.21.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P021 |
 | 0.22.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P022 |
 | 0.23.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P023 |
+| 0.24.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk integrasi kasrah QJ1-P024 |
