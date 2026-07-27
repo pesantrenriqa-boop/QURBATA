@@ -4,7 +4,7 @@
 **Judul:** Terminologi dan Definisi Resmi QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Normatif  
-**Versi:** 0.3.0-id  
+**Versi:** 0.4.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -203,6 +203,14 @@ Konfirmasi melalui bukti objektif bahwa persyaratan tertentu telah dipenuhi.
 
 Konfirmasi bahwa suatu produk, proses, atau sistem mampu memenuhi kebutuhan penggunaan yang ditetapkan.
 
+### 8.10 Dasbor
+
+Tampilan ringkas terkendali yang menyajikan indikator, status, risiko, tindakan, dan tautan bukti untuk mendukung pemantauan serta keputusan. Dasbor tidak menggantikan sumber data, register, atau keputusan resmi.
+
+### 8.11 Daftar Periksa
+
+Instrumen pemeriksaan terstruktur yang memuat butir, kriteria, hasil, bukti, penilai, dan tindak lanjut. Daftar periksa tidak dapat dinyatakan lulus apabila butir kritis gagal meskipun skor agregat tinggi.
+
 ## 9. Istilah Status Dokumen
 
 Status resmi dokumen meliputi:
@@ -316,3 +324,5 @@ Singkatan COM tidak boleh digunakan sebagai domain atau jenis objek karena dapat
 Penambahan singkatan baru wajib diperiksa terhadap register terminologi dan skema data sebelum digunakan.
 
 <!-- Audit editorial 27 Juli 2026: istilah review, dashboard, dan checklist diselaraskan menjadi penelaahan, dasbor, dan daftar periksa pada master Bahasa Indonesia. -->
+
+<!-- Audit terminologi 27 Juli 2026: definisi Penelaahan, Dasbor, dan Daftar Periksa dibakukan. -->
