@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.22.0-id  
+**Versi:** 0.23.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -242,6 +242,18 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000172 | Knowledge Object | Integrasi kasrah baru dengan kasrah sebelumnya | QJ1-P022 | ACTIVE-DRAFT | used-by LO-000022 |
 | KO-000173 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P022 | QJ1-P022 | ACTIVE-DRAFT | used-by LO-000022 |
 | KO-000174 | Knowledge Object | Adab menjaga ketelitian pada bentuk dan bunyi mirip | QJ1-P022-AKH01 | ACTIVE-DRAFT | supports LO-000022 |
+| PO-000023 | Page Object | Kasrah Mim–Nun–Waw–Ya | QJ1-P023 | ACTIVE-DRAFT | child-of CO-000002 |
+| LO-000023 | Learning Object | Membedakan dan membaca مِ نِ وِ يِ dengan review terkait | QJ1-P023 | ACTIVE-DRAFT | uses KO-000175–KO-000184 |
+| KO-000175 | Knowledge Object | Bentuk kasrah م ن و ي | QJ1-P023 | ACTIVE-DRAFT | used-by LO-000023 |
+| KO-000176 | Knowledge Object | Bunyi مِ | QJ1-P023 | ACTIVE-DRAFT | used-by LO-000023 |
+| KO-000177 | Knowledge Object | Bunyi نِ | QJ1-P023 | ACTIVE-DRAFT | used-by LO-000023 |
+| KO-000178 | Knowledge Object | Bunyi وِ | QJ1-P023 | ACTIVE-DRAFT | used-by LO-000023 |
+| KO-000179 | Knowledge Object | Bunyi يِ | QJ1-P023 | ACTIVE-DRAFT | used-by LO-000023 |
+| KO-000180 | Knowledge Object | Diskriminasi م/ن dan و/ي | QJ1-P023 | ACTIVE-DRAFT | used-by LO-000023 |
+| KO-000181 | Knowledge Object | Kontras kasrah–fathah pada م ن و ي | QJ1-P023 | ACTIVE-DRAFT | used-by LO-000023 |
+| KO-000182 | Knowledge Object | Integrasi kasrah baru dengan kasrah sebelumnya | QJ1-P023 | ACTIVE-DRAFT | used-by LO-000023 |
+| KO-000183 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P023 | QJ1-P023 | ACTIVE-DRAFT | used-by LO-000023 |
+| KO-000184 | Knowledge Object | Adab membaca tanpa menambah panjang | QJ1-P023-AKH01 | ACTIVE-DRAFT | supports LO-000023 |
 
 ## 3. Aturan
 
@@ -280,3 +292,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.20.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk Evaluasi Fathah–Kasrah QJ1-P020 |
 | 0.21.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P021 |
 | 0.22.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P022 |
+| 0.23.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P023 |
