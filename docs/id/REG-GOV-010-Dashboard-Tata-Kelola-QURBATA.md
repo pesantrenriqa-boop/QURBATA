@@ -4,7 +4,7 @@
 **Judul:** Dasbor Tata Kelola QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.10.0-id  
+**Versi:** 0.11.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -42,7 +42,7 @@ Dasbor ini merangkum kondisi tata kelola QURBATA dalam satu tampilan agar pimpin
 | Knowledge-ID | Kuning | Audit format, duplikasi, dan referensi CTM awal lulus; validasi kelengkapan substantif dan populasi objek isi belum selesai |
 | Safeguarding | Hijau | Kebijakan dan kesiapan operasional awal tervalidasi; audit efektivitas berkala tetap wajib |
 | RIQA OS integration | Kuning | Model data dirumuskan; implementasi belum selesai |
-| Governance Freeze | Belum Lulus—81,3% informatif | 12 PASS, 2 PARTIAL, 2 FAIL; satu FAIL tetap memblokir freeze |
+| Governance Freeze | Belum Lulus—84,4% informatif | 13 PASS, 1 PARTIAL, 2 FAIL; satu FAIL tetap memblokir freeze |
 
 ## 4. Stage Gate Governance Freeze
 Governance v1.0 hanya boleh dibekukan jika:
@@ -107,3 +107,4 @@ Keputusan kesiapan freeze wajib dicatat pada REG-GOV-011. Dasbor hanya menyajika
 | 0.8.0-id | 2026-07-27 | Memperbarui readiness informatif menjadi 75,0% setelah GF-04 PASS |
 | 0.9.0-id | 2026-07-27 | Memperbarui readiness informatif menjadi 78,1% setelah GF-11 PASS |
 | 0.10.0-id | 2026-07-27 | Memperbarui readiness informatif menjadi 81,3% setelah GF-07 PASS |
+| 0.11.0-id | 2026-07-27 | Memperbarui readiness informatif menjadi 84,4% setelah GF-12 PASS |
