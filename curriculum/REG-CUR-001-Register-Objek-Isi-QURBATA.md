@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.24.0-id  
+**Versi:** 0.25.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -262,6 +262,14 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000188 | Knowledge Object | Konsistensi kasrah pendek tanpa mad | QJ1-P024 | ACTIVE-DRAFT | used-by LO-000024 |
 | KO-000189 | Knowledge Object | Kelancaran rangkaian dua dan tiga huruf terpisah QJ1-P024 | QJ1-P024 | ACTIVE-DRAFT | used-by LO-000024 |
 | KO-000190 | Knowledge Object | Adab istiqamah dan teliti sampai akhir | QJ1-P024-AKH01 | ACTIVE-DRAFT | supports LO-000024 |
+| PO-000025 | Page Object | Kontras Fathah–Kasrah | QJ1-P025 | ACTIVE-DRAFT | child-of CO-000002 |
+| LO-000025 | Learning Object | Membedakan dan membaca seluruh huruf dalam kontras fathah–kasrah | QJ1-P025 | ACTIVE-DRAFT | uses KO-000191–KO-000196 |
+| KO-000191 | Knowledge Object | Integrasi seluruh padanan fathah–kasrah QJ1-P001–QJ1-P024 | QJ1-P025 | ACTIVE-DRAFT | used-by LO-000025 |
+| KO-000192 | Knowledge Object | Diskriminasi posisi fathah dan kasrah | QJ1-P025 | ACTIVE-DRAFT | used-by LO-000025 |
+| KO-000193 | Knowledge Object | Peralihan fonetik fathah–kasrah dengan makhraj tetap | QJ1-P025 | ACTIVE-DRAFT | used-by LO-000025 |
+| KO-000194 | Knowledge Object | Konsistensi bunyi pendek tanpa mad | QJ1-P025 | ACTIVE-DRAFT | used-by LO-000025 |
+| KO-000195 | Knowledge Object | Kelancaran rangkaian dua dan tiga huruf terpisah QJ1-P025 | QJ1-P025 | ACTIVE-DRAFT | used-by LO-000025 |
+| KO-000196 | Knowledge Object | Adab teliti melihat harakat sebelum membaca | QJ1-P025-AKH01 | ACTIVE-DRAFT | supports LO-000025 |
 
 ## 3. Aturan
 
@@ -302,3 +310,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.22.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P022 |
 | 0.23.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P023 |
 | 0.24.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk integrasi kasrah QJ1-P024 |
+| 0.25.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk kontras fathah–kasrah QJ1-P025 |
