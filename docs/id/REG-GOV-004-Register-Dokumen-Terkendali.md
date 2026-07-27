@@ -4,7 +4,7 @@
 **Judul:** Register Dokumen Terkendali QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.8.0-id  
+**Versi:** 0.9.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -43,7 +43,7 @@ Register ini menjadi daftar induk seluruh dokumen resmi QURBATA yang wajib diken
 | QC-002 | Standar Penomoran dan Pengkodean Dokumen | Standar | Document Controller | Governance Lead | Draf terkendali | 0.3.0-id | Indonesia | Sebelum Governance Freeze |
 | QC-003 | Proses Penyusunan dan Pengelolaan Dokumen | Prosedur | Document Controller | Governance Lead | Draf terkendali | 0.2.0-id | Indonesia | Sebelum Governance Freeze |
 | QC-004 | Kerangka Keterlacakan | Kerangka | QA Lead | Governance Lead | Draf terkendali | 0.3.0-id | Indonesia | Sebelum Governance Freeze |
-| QC-005 | Terminologi dan Definisi Resmi | Standar | Knowledge Architect | Governance Lead | Draf terkendali | 0.3.0-id | Indonesia | Sebelum Governance Freeze |
+| QC-005 | Terminologi dan Definisi Resmi | Standar | Knowledge Architect | Governance Lead | Draf terkendali | 0.4.0-id | Indonesia | Sebelum Governance Freeze |
 | QC-006 | Peran, Kewenangan, dan Akuntabilitas | Kebijakan | Governance Lead | Pimpinan QURBATA | Draf terkendali | 0.3.0-id | Indonesia | Sebelum Governance Freeze |
 | QC-007 | Pengambilan Keputusan, Persetujuan, dan Ratifikasi | Prosedur | Governance Lead | Pimpinan QURBATA | Draf terkendali | 0.3.0-id | Indonesia | Sebelum Governance Freeze |
 | QC-008 | Konflik Kepentingan, Etika, dan Independensi | Kebijakan | Ethics Officer | Pimpinan QURBATA | Draf terkendali | 0.3.0-id | Indonesia | Sebelum Governance Freeze |
@@ -89,3 +89,4 @@ RIQA OS harus menandai:
 | 0.6.0-id | 2026-07-27 | Audit metadata mengonfirmasi QC-000–QC-012 mempunyai identitas, bahasa, versi, status, pemilik, otoritas, tanggal berlaku bersyarat, siklus tinjauan, klasifikasi, dan induk normatif yang sesuai |
 | 0.7.0-id | 2026-07-27 | Menyelaraskan versi register risiko, CAPA, bukti, freeze, audit, dan dasbor setelah validasi GF-09 |
 | 0.8.0-id | 2026-07-27 | Menyelaraskan versi bukti, register freeze, audit, dan dasbor setelah GF-02 PASS |
+| 0.9.0-id | 2026-07-27 | Menyelaraskan QC-005 dan register terkait setelah GF-06 PASS |
