@@ -4,7 +4,7 @@
 **Judul:** Register Bukti Governance QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.21.0-id  
+**Versi:** 0.22.0-id  
 **Pemilik Dokumen:** Fungsi Penjaminan Mutu QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -37,7 +37,7 @@ PROPOSED, COLLECTED, UNDER-VALIDATION, VALID, REJECTED, EXPIRED, SUPERSEDED, dan
 | EVD-AUD-000003 | Metadata QC-000–QC-012 | Repository PR #1 | VALID | Document Controller | Audit 27 Juli 2026: 13/13 dokumen mempunyai metadata minimum; tanggal efektif tetap bersyarat pada ratifikasi |
 | EVD-AUD-000004 | Checklist 44 butir | CHK-GOV-001 | COLLECTED | QA Lead | Belum ditetapkan |
 | EVD-AUD-000005 | Matriks RACI dan penetapan pengganti peran kritis | MAT-GOV-001/REC-GOV-013/REC-GOV-014 | UNDER-VALIDATION | Governance Lead | Pengganti SAFE dan DOC tervalidasi; kompetensi peran lain dan uji kewenangan masih terbuka |
-| EVD-AUD-000006 | Model Knowledge-ID dan CTM | QC-004/QC-005/REG-GOV-001/CTM | UNDER-VALIDATION | Knowledge Architect | Audit awal: format ID valid, tidak ada ID ganda dalam register, dan seluruh referensi KID pada 20 baris CTM ditemukan; kelengkapan seluruh norma material masih perlu divalidasi independen |
+| EVD-AUD-000006 | Integritas namespace Knowledge-ID dan referensi CTM | QC-004/QC-005/REG-GOV-001 v0.4.0-id/CTM | VALID | Knowledge Architect | Format valid, 20 ID unik, tidak ada ID ganda, dan seluruh referensi pada 20 baris CTM ditemukan; kelengkapan substantif tetap dinilai melalui GF-12 |
 | EVD-AUD-000007 | Temuan mayor terbuka | REG-GOV-006 | VALID | QA Lead | Audit internal awal |
 | EVD-AUD-000008 | Ketiadaan keputusan freeze | REG-GOV-011 | VALID | Sekretariat Tata Kelola | Audit internal awal |
 | EVD-AUD-000009 | Norma dan kesiapan operasional awal safeguarding/pengaduan | QC-009/QC-012/REC-GOV-005–REC-GOV-012 | VALID | Safeguarding Lead | Kanal, 2FA, penerimaan, eskalasi, target respons, dan Case-ID tersedia; audit berkala tetap wajib |
@@ -92,3 +92,4 @@ RIQA OS mencegah gate PASS bila Evidence-ID wajib tidak berstatus VALID, telah k
 | 0.19.0-id | 27 Juli 2026 | Mencatat audit profil risiko dan bukti kelulusan GF-09 sebagai EVD-GOV-000016 |
 | 0.20.0-id | 27 Juli 2026 | Memvalidasi hasil telaah independen QC-001–QC-012 untuk GF-02 |
 | 0.21.0-id | 27 Juli 2026 | Memvalidasi audit terminologi dan bukti kelulusan GF-06 |
+| 0.22.0-id | 27 Juli 2026 | Memvalidasi integritas namespace dan referensi Knowledge-ID untuk GF-04 |
