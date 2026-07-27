@@ -4,7 +4,7 @@
 **Judul:** Register Tindakan Korektif dan Pencegahan QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.5.0-id  
+**Versi:** 0.6.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -52,7 +52,16 @@ Kesimpulan “human error” tidak diterima tanpa pemeriksaan desain proses, ins
 ## 5. Data Wajib
 `capa_id`, `source_type`, `source_id`, `problem`, `containment`, `root_cause`, `corrective_action`, `preventive_action`, `owner`, `due_date`, `evidence`, `verifier`, `effectiveness_method`, `effectiveness_result`, `status`, `closed_at`.
 
-## 6. Uji Efektivitas
+## 6. Hasil Verifikasi CAPA yang Ditutup
+
+| CAPA-ID | Bukti Efektivitas | Hasil | Status Verifikasi |
+|---|---|---|---|
+| CAPA-2026-004 | EVD-GOV-000006–EVD-GOV-000012: kanal ber-2FA, email diterima, eskalasi WhatsApp diterima, target respons dan Case-ID ditetapkan | Rangkaian awal pelaporan dan eskalasi berfungsi; audit berkala tetap wajib | Efektif untuk kesiapan operasional awal |
+| CAPA-2026-007 | EVD-GOV-000001–EVD-GOV-000004 dan REG-GOV-012: independensi, hasil telaah, validasi QC-000, dan ketiadaan keberatan material tercatat | Penelaah independen dan mekanisme keberatan tersedia serta dapat diaudit | Efektif |
+
+Tidak ada CAPA lain yang berstatus ditutup. CAPA terbuka dan Menunggu Verifikasi tetap dipantau, tetapi tidak dihitung sebagai CAPA selesai pada GF-11.
+
+## 7. Uji Efektivitas
 Efektivitas dinilai melalui salah satu atau lebih cara:
 1. audit ulang;
 2. pengukuran penurunan kesalahan;
@@ -62,19 +71,20 @@ Efektivitas dinilai melalui salah satu atau lebih cara:
 6. validasi otomatis pada RIQA OS;
 7. tidak berulang dalam periode yang ditetapkan.
 
-## 7. Eskalasi
+## 8. Eskalasi
 - CAPA kritis yang terlambat harus otomatis dieskalasikan kepada Pimpinan.
 - CAPA mayor yang terlambat lebih dari 7 hari harus masuk Risk Register.
 - Perpanjangan tenggat harus memiliki alasan, risiko residual, dan persetujuan.
 - Pemilik tindakan tidak boleh menjadi satu-satunya verifikator.
 
-## 8. Penutupan
+## 9. Penutupan
 CAPA ditutup hanya setelah bukti, verifikasi independen, dan hasil uji efektivitas tercatat. Penutupan administratif tanpa uji efektivitas dilarang.
 
-## 9. Catatan Perubahan
+## 10. Catatan Perubahan
 | Versi | Tanggal | Perubahan |
 |---|---|---|
 | 0.1.0 | 2026-07-26 | Register CAPA awal dibuat |
 | 0.3.0-id | 2026-07-27 | Menyelaraskan CAPA bahasa, safeguarding, dan telaah independen dengan keputusan ruang lingkup serta bukti terbaru |
 | 0.4.0-id | 2026-07-27 | Memperbarui CAPA RACI berdasarkan penetapan pengganti SAFE dan DOC |
 | 0.5.0-id | 2026-07-27 | Memindahkan CAPA metadata ke Menunggu Verifikasi dan memperjelas CAPA objek isi sebagai non-blocking governance |
+| 0.6.0-id | 2026-07-27 | Mencatat verifikasi efektivitas seluruh CAPA yang berstatus ditutup untuk GF-11 |
