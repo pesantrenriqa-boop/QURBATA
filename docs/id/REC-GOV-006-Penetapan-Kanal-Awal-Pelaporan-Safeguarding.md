@@ -4,7 +4,7 @@
 **Judul:** Penetapan Kanal Awal Pelaporan Safeguarding QURBATA  
 **Tanggal Penetapan:** 27 Juli 2026  
 **Pemberi Penetapan:** Aris Liswanto  
-**Status:** Kanal Aktif; Penerimaan Teruji; Menunggu Uji Eskalasi  
+**Status:** Kanal Aktif; Penerimaan dan Eskalasi Teruji  
 **Klasifikasi Akses:** Internal  
 **Dokumen Terkait:** QC-009, QC-012, MAT-GOV-001, REC-GOV-005, REG-GOV-013
 
@@ -31,4 +31,4 @@ Ainul Yakin tetap memegang peran **Safeguarding Lead** dan akuntabilitas penanga
 
 ## 4. Batas Bukti
 
-Rekaman ini membuktikan pemilihan kanal, penetapan alamat, dan pemegang akses awal. Autentikasi dua faktor telah dikonfirmasi melalui REC-GOV-007 dan penerimaan email telah lulus uji melalui REC-GOV-008. Jalur eskalasi WhatsApp kepada Ainul Yakin telah ditetapkan melalui REC-GOV-009, tetapi belum diuji. Penomoran perkara dan waktu respons juga belum dibuktikan.
+Rekaman ini membuktikan pemilihan kanal, penetapan alamat, dan pemegang akses awal. Autentikasi dua faktor telah dikonfirmasi melalui REC-GOV-007 dan penerimaan email telah lulus uji melalui REC-GOV-008. Jalur eskalasi WhatsApp kepada Ainul Yakin telah ditetapkan melalui REC-GOV-009 dan lulus uji melalui REC-GOV-010. Penomoran perkara dan target waktu respons belum ditetapkan.
