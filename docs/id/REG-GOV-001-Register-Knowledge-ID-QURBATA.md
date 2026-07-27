@@ -4,7 +4,7 @@
 **Judul:** Register Knowledge-ID QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Induk Normatif:** QC-000 — Konstitusi QURBATA  
 **Dokumen Pengendali:** QC-002, QC-003, QC-004, QC-005  
 
@@ -320,9 +320,23 @@ Selain metadata minimum pada Bagian 7, KO/LO/PO/CO/BO/CUR mencatat judul, ringka
 | BO-000001 | Buku QURBATA Jilid 1 | PROPOSED | Menunggu struktur buku final |
 | CUR-000001 | Kurikulum QURBATA | PROPOSED | Menunggu arsitektur kurikulum final |
 
-## 22. Riwayat Perubahan
+## 22. Audit Awal Namespace Governance
+
+Audit awal 27 Juli 2026 terhadap register dan matriks keterlacakan mencatat:
+
+1. 20 Knowledge-ID unik dalam register awal;
+2. seluruh ID mengikuti pola namespace yang ditetapkan;
+3. tidak ditemukan Knowledge-ID ganda dalam register;
+4. seluruh referensi Knowledge-ID pada 20 baris CTM ditemukan dalam register;
+5. penggunaan satu Knowledge-ID pada lebih dari satu baris CTM merupakan relasi konteks yang diizinkan, bukan duplikasi identitas; dan
+6. audit ini belum menyatakan seluruh norma material QC-000 telah memperoleh Knowledge-ID.
+
+Status tetap `UNDER-VALIDATION` sampai audit kelengkapan substantif dan validasi independen selesai.
+
+## 23. Riwayat Perubahan
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 0.1.0-id | 26 Juli 2026 | Skema KID tata kelola dan register awal |
 | 0.2.0-id | 26 Juli 2026 | Penambahan namespace KO/LO/PO/CO/BO/CUR, aturan satu ID, status, supersesi, dan otoritas penerbitan |
+| 0.3.0-id | 27 Juli 2026 | Mencatat audit awal format, keunikan, dan referensi Knowledge-ID pada CTM governance |
