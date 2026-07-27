@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.15.0-id  
+**Versi:** 0.16.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -160,6 +160,20 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000105 | Knowledge Object | Konsistensi fathah pendek pada peningkatan kelancaran | QJ1-P015 | ACTIVE-DRAFT | used-by LO-000015 |
 | KO-000106 | Knowledge Object | Baca mandiri rangkaian dua dan tiga huruf terpisah QJ1-P015 | QJ1-P015 | ACTIVE-DRAFT | used-by LO-000015 |
 | KO-000107 | Knowledge Object | Adab mendahulukan ketepatan daripada kecepatan | QJ1-P015-AKH01 | ACTIVE-DRAFT | supports LO-000015 |
+| CO-000002 | Chapter Object | Fase Kasrah Jilid 1 | QJ1-P016–P025 | ACTIVE-DRAFT | child-of BO-000001 |
+| PO-000016 | Page Object | Bunyi Kasrah Awal | QJ1-P016 | ACTIVE-DRAFT | child-of CO-000002 |
+| LO-000016 | Learning Object | Membedakan dan membaca ءِ إِ بِ تِ ثِ dengan review fathah padanannya | QJ1-P016 | ACTIVE-DRAFT | uses KO-000108–KO-000118 |
+| KO-000108 | Knowledge Object | Bentuk kasrah pada hamza mandiri ءِ dan hamza di bawah alif إِ | QJ1-P016 | ACTIVE-DRAFT | used-by LO-000016 |
+| KO-000109 | Knowledge Object | Bentuk kasrah pada keluarga ب ت ث | QJ1-P016 | ACTIVE-DRAFT | used-by LO-000016 |
+| KO-000110 | Knowledge Object | Bunyi ءِ | QJ1-P016 | ACTIVE-DRAFT | used-by LO-000016 |
+| KO-000111 | Knowledge Object | Bunyi إِ | QJ1-P016 | ACTIVE-DRAFT | used-by LO-000016 |
+| KO-000112 | Knowledge Object | Bunyi بِ | QJ1-P016 | ACTIVE-DRAFT | used-by LO-000016 |
+| KO-000113 | Knowledge Object | Bunyi تِ | QJ1-P016 | ACTIVE-DRAFT | used-by LO-000016 |
+| KO-000114 | Knowledge Object | Bunyi ثِ | QJ1-P016 | ACTIVE-DRAFT | used-by LO-000016 |
+| KO-000115 | Knowledge Object | Kontras visual dan fonetik kasrah–fathah | QJ1-P016 | ACTIVE-DRAFT | used-by LO-000016 |
+| KO-000116 | Knowledge Object | Integrasi ءِ إِ بِ تِ ثِ dengan review fathah padanannya | QJ1-P016 | ACTIVE-DRAFT | used-by LO-000016 |
+| KO-000117 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P016 | QJ1-P016 | ACTIVE-DRAFT | used-by LO-000016 |
+| KO-000118 | Knowledge Object | Adab rendah hati memulai bunyi baru | QJ1-P016-AKH01 | ACTIVE-DRAFT | supports LO-000016 |
 
 ## 3. Aturan
 
@@ -191,3 +205,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.13.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P013 |
 | 0.14.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk integrasi fathah QJ1-P014 |
 | 0.15.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk otomatisasi fathah QJ1-P015 |
+| 0.16.0-id | 27 Juli 2026 | Membentuk CO fase kasrah serta menambahkan PO, LO, dan KO untuk QJ1-P016 |
