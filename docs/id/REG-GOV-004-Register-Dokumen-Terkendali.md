@@ -4,7 +4,7 @@
 **Judul:** Register Dokumen Terkendali QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.4.0-id  
+**Versi:** 0.5.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -85,3 +85,4 @@ RIQA OS harus menandai:
 | 0.1.0 | 2026-07-26 | Register awal dokumen governance dibuat | Pengembangan PR #1 |
 | 0.3.0-id | 2026-07-27 | Menyelaraskan versi QC-000–QC-012 dengan metadata aktual pada branch kandidat |
 | 0.4.0-id | 2026-07-27 | Menyelaraskan versi setelah audit terminologi master Bahasa Indonesia |
+| 0.5.0-id | 2026-07-27 | Menyelaraskan versi register risiko dan dasbor tata kelola |
