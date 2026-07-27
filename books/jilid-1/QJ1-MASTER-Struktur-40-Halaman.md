@@ -2,13 +2,24 @@
 
 **Kode:** QJ1-MASTER  
 **Produk:** Buku QURBATA Jilid 1  
-**Status:** Draf Produk — Sprint Struktur  
-**Versi:** 0.1.0-id  
-**Bahasa:** Indonesia  
+**Judul Resmi:** Struktur Buku QURBATA Jilid 1  
+**Status:** Draf Terkendali — Belum Disetujui  
+**Versi:** 0.2.0-id  
+**Bahasa Induk:** Bahasa Indonesia  
 **Jumlah Halaman Inti:** 40  
+**Sasaran Pengguna:** Peserta didik pemula membaca Al-Qur’an; usia dan kebutuhan spesifik ditetapkan saat validasi pengguna  
 **Model:** 1 halaman = 1 pertemuan (maksimal 2 halaman jika peserta telah menguasai prasyarat)  
-**Induk Tata Kelola:** QC-000 dan Governance QURBATA v1.0  
-**Pemilik Akademik:** Aris Liswanto  
+**Dokumen Induk:** QC-000  
+**Dokumen Pengendali:** QC-002, QC-004, QC-005, QC-006, QC-007, QC-010, QC-012  
+**Kurikulum Terkait:** CUR-QJ1-001  
+**Pemilik Akademik/Penyusun:** Aris Liswanto  
+**Pemeriksa Akademik:** Menunggu penetapan  
+**Pemeriksa Editorial:** Menunggu penetapan  
+**Pengesah:** Menunggu persetujuan sesuai QC-007  
+**Tanggal Berlaku:** Belum berlaku  
+**Tinjauan Berikutnya:** Sebelum isi halaman diproduksi massal atau ketika struktur berubah material  
+**Klasifikasi Akses:** Internal selama draf; publik setelah disetujui  
+**Ringkasan Perubahan:** Menambahkan metadata wajib, koreksi klasifikasi ID, relasi kurikulum/LO/KO, tema akhlak per halaman, dan gate kepatuhan
 
 ## 1. Hasil Akhir Jilid
 
@@ -18,7 +29,7 @@ Jilid 1 belum mengajarkan mad, tanwin, sukun, tasydid, atau kaidah tajwid lanjut
 
 ## 2. Aturan Tetap Setiap Halaman Latihan
 
-1. Setiap halaman mempunyai Knowledge-ID unik `QJ1-P001` sampai `QJ1-P040`.
+1. Setiap halaman mempunyai **kode unit buku** unik `QJ1-P001` sampai `QJ1-P040` sesuai QC-002. Kode ini bukan Knowledge-ID dan tidak menggantikan identitas LO atau KO.
 2. Satu halaman memuat 24 tangga latihan.
 3. Tangga 1–8 berisi rangkaian dua huruf.
 4. Tangga 9–24 berisi rangkaian tiga huruf.
@@ -30,6 +41,10 @@ Jilid 1 belum mengajarkan mad, tanwin, sukun, tasydid, atau kaidah tajwid lanjut
 10. Tanwin, ketika kelak diajarkan, hanya ditempatkan pada akhir kata.
 11. Contoh Qurani, hadis, atau mufradat digunakan hanya apabila seluruh unsurnya sudah dipelajari; selain itu digunakan kombinasi huruf terkontrol.
 12. Kesulitan bergerak dari sederhana ke kompleks, terbimbing ke mandiri, dan pengenalan ke otomatisasi.
+13. Setiap halaman memuat satu tema nasihat akhlak singkat yang sesuai usia dan tidak mengurangi fokus latihan; QJ1-P038 menjadi halaman akhlak khusus.
+14. Setiap halaman wajib dipetakan ke minimal satu Learning Object (LO), satu atau lebih Knowledge Object (KO), outcome, prasyarat, asesmen, dan bukti sebelum berstatus siap uji.
+15. Master Markdown/data adalah sumber tunggal; PDF, slide, flashcard, audio, dan turunan lain tidak diedit sebagai sumber mandiri.
+16. Setiap klaim efektivitas tetap berstatus hipotesis desain sampai didukung hasil uji dan bukti yang memadai.
 
 ## 3. Alur Satu Pertemuan
 
@@ -46,7 +61,7 @@ Jilid 1 belum mengajarkan mad, tanwin, sukun, tasydid, atau kaidah tajwid lanjut
 
 ## 4. Peta 40 Halaman
 
-| Halaman | Knowledge-ID | Fokus | Materi Baru | Review/Integrasi | Jenis |
+| Halaman | Kode Unit Buku | Fokus | Materi Baru | Review/Integrasi | Jenis |
 |---:|---|---|---|---|---|
 | 1 | QJ1-P001 | Bunyi fathah awal | ءَ اَ | — | Latihan |
 | 2 | QJ1-P002 | Keluarga Ba | بَ تَ ثَ | ءَ اَ | Latihan |
@@ -89,7 +104,40 @@ Jilid 1 belum mengajarkan mad, tanwin, sukun, tasydid, atau kaidah tajwid lanjut
 | 39 | QJ1-P039 | Simulasi baca mandiri | — | Seluruh huruf dan tiga harakat | Latihan akhir |
 | 40 | QJ1-P040 | Ujian Akhir Jilid 1 | — | Seluruh kompetensi Jilid 1 | Evaluasi 4 |
 
-## 5. Gerbang Mutu Halaman
+## 5. Hubungan Kurikulum dan Keterlacakan
+
+Rantai wajib setiap halaman adalah:
+
+`QC-000 → CUR-QJ1-001 → QJ1-Pxxx → LO → KO → latihan/asesmen → bukti uji → revisi`.
+
+Ketentuan identitas:
+
+- `QJ1-Pxxx` adalah kode unit halaman buku;
+- `LO-xxxxxx` adalah identitas Learning Object;
+- `KO-xxxxxx` adalah Knowledge-ID untuk Knowledge Object;
+- latihan menggunakan sufiks `-L01` sampai `-L24`;
+- asesmen menggunakan sufiks `-ASMxx`;
+- hafalan, kosakata, akhlak, audio, gambar, dan video menggunakan jenis kode QC-002 yang sesuai.
+
+Daftar LO/KO belum ditetapkan dalam versi struktur ini. Ketiadaan pemetaan tersebut memblokir status “Siap Uji” dan “Disetujui”, tetapi tidak memblokir penyusunan draf struktur.
+
+## 6. Matriks Kepatuhan Konstitusional
+
+| Sumber | Persyaratan | Implementasi pada Master | Status |
+|---|---|---|---|
+| QC-000 Pasal 4, 24–26 | Buku selaras dengan konstitusi, kurikulum, prasyarat, pembelajaran, dan asesmen | Struktur bertahap, evaluasi, kurikulum CUR-QJ1-001, serta gate mutu | Sesuai pada tingkat desain |
+| QC-000 Pasal 48–52 | Klaim berbasis bukti, dapat ditelaah, diuji, dan direplikasi | Klaim efektivitas ditahan; uji dan bukti diwajibkan sebelum final | Sesuai |
+| QC-000 Pasal 53–56 | Amanah, itqan, rahmah, keterlacakan, perbaikan | Tema akhlak, kontrol mutu, larangan materi prematur, riwayat versi | Sesuai |
+| QC-002 | Kode, metadata, versi, dan status terkendali | Kode QJ sebagai unit buku; metadata wajib dilengkapi | Sesuai setelah koreksi 0.2.0 |
+| QC-004 | Telusur norma–kurikulum–produk–bukti | Rantai keterlacakan dan kewajiban LO/KO ditetapkan | Sebagian; ID LO/KO menunggu |
+| QC-005 | Istilah KO, LO, Book Object, Curriculum Object tepat | QJ tidak lagi disebut Knowledge-ID; istilah dipisahkan | Sesuai |
+| QC-006/007 | Pemilik, pemeriksa, pengesah, persetujuan eksplisit | Pemilik ditetapkan; pemeriksa/pengesah masih menunggu | Belum siap disetujui |
+| QC-010 | Risiko mutu/pedagogis dikelola | Materi prematur dan beban belajar dikontrol; registrasi risiko uji menyusul | Sebagian |
+| QC-012 | Kepentingan, martabat, kebutuhan, dan keselamatan peserta | Kesulitan bertahap, adaptasi, nasihat nonmerendahkan, tanpa klaim berlebihan | Sesuai pada tingkat desain |
+
+**Kesimpulan kepatuhan:** struktur ini selaras secara arah dan desain, tetapi tetap berstatus Draf Terkendali. Struktur belum boleh dinyatakan final, berlaku, atau terbukti efektif sebelum pemetaan LO/KO, penelaahan akademik-editorial, asesmen, risiko uji, dan persetujuan QC-007 selesai.
+
+## 7. Gerbang Mutu Halaman
 
 Sebuah halaman belum boleh disebut final sebelum:
 
@@ -102,17 +150,27 @@ Sebuah halaman belum boleh disebut final sebelum:
 - instruksi guru dan kriteria lulus tersedia;
 - seluruh contoh diperiksa secara akademik dan editorial.
 
-## 6. Kriteria Lulus Awal
+## 8. Kriteria Lulus Awal
 
 Untuk halaman latihan, peserta ditargetkan mampu membaca 24 tangga tanpa penyebutan nama harakat, dengan bunyi yang tepat, tanpa bantuan langsung, dan dengan jumlah kesalahan yang akan ditetapkan pada standar asesmen Jilid 1.
 
 Halaman evaluasi tidak mengenalkan materi baru dan harus mengambil sampel dari seluruh prasyarat yang tercantum.
 
-## 7. Pekerjaan Berikutnya
+## 9. Pekerjaan Berikutnya
 
 1. validasi akademik peta QJ1-P001–QJ1-P040;
-2. finalisasi spesifikasi QJ1-P001;
-3. susun 24 rangkaian nyata QJ1-P001;
-4. audit tingkat kesulitan dan materi prematur;
-5. lanjutkan berurutan sampai QJ1-P040;
-6. desain visual dan turunan digital dimulai setelah isi sumber stabil.
+2. tetapkan LO, KO, outcome, prasyarat, dan asesmen setiap halaman;
+3. lakukan analisis risiko pedagogis dan safeguarding untuk uji coba;
+4. tetapkan pemeriksa akademik dan editorial;
+5. finalisasi spesifikasi QJ1-P001;
+6. susun 24 rangkaian nyata QJ1-P001;
+7. audit tingkat kesulitan dan materi prematur;
+8. lanjutkan berurutan sampai QJ1-P040;
+9. desain visual dan turunan digital dimulai setelah isi sumber stabil.
+
+## 10. Riwayat Perubahan
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 0.1.0-id | 27 Juli 2026 | Struktur awal 40 halaman dan aturan 24 tangga |
+| 0.2.0-id | 27 Juli 2026 | Audit konstitusional: metadata dilengkapi, kode QJ diklasifikasi ulang, relasi CUR/LO/KO dan tema akhlak per halaman ditambahkan |
