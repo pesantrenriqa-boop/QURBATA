@@ -4,7 +4,7 @@
 **Judul:** Penetapan Kanal Awal Pelaporan Safeguarding QURBATA  
 **Tanggal Penetapan:** 27 Juli 2026  
 **Pemberi Penetapan:** Aris Liswanto  
-**Status:** Kanal Ditetapkan; 2FA Dikonfirmasi; Menunggu Uji Operasional  
+**Status:** Kanal Aktif; Penerimaan Teruji; Menunggu Uji Eskalasi  
 **Klasifikasi Akses:** Internal  
 **Dokumen Terkait:** QC-009, QC-012, MAT-GOV-001, REC-GOV-005, REG-GOV-013
 
@@ -30,4 +30,4 @@ Ainul Yakin tetap memegang peran **Safeguarding Lead** dan akuntabilitas penanga
 
 ## 4. Batas Bukti
 
-Rekaman ini membuktikan pemilihan kanal, penetapan alamat, dan pemegang akses awal. Autentikasi dua faktor telah dikonfirmasi melalui REC-GOV-007. Rekaman ini belum membuktikan bahwa pengiriman dan penerimaan email telah diuji, Ainul Yakin memiliki jalur penerimaan yang efektif, simulasi laporan berhasil, atau waktu respons telah dipenuhi.
+Rekaman ini membuktikan pemilihan kanal, penetapan alamat, dan pemegang akses awal. Autentikasi dua faktor telah dikonfirmasi melalui REC-GOV-007 dan penerimaan email telah lulus uji melalui REC-GOV-008. Rekaman ini belum membuktikan bahwa Ainul Yakin memiliki jalur eskalasi yang efektif, penomoran perkara berjalan, atau waktu respons telah dipenuhi.
