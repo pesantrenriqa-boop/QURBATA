@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.9.0-id  
+**Versi:** 0.10.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -109,6 +109,13 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000066 | Knowledge Object | Integrasi فَ قَ dengan review عَ غَ dan keluarga sebelumnya | QJ1-P009 | ACTIVE-DRAFT | used-by LO-000009 |
 | KO-000067 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P009 | QJ1-P009 | ACTIVE-DRAFT | used-by LO-000009 |
 | KO-000068 | Knowledge Object | Adab menjaga semangat sampai selesai | QJ1-P009-AKH01 | ACTIVE-DRAFT | supports LO-000009 |
+| PO-000010 | Page Object | Evaluasi Fathah I | QJ1-P010 | ACTIVE-DRAFT | child-of CO-000001 |
+| LO-000010 | Learning Object | Menunjukkan penguasaan awal huruf berfathah ءَ–قَ | QJ1-P010 | ACTIVE-DRAFT | uses KO-000069–KO-000073 |
+| KO-000069 | Knowledge Object | Integrasi huruf berfathah QJ1-P001–P009 | QJ1-P010 | ACTIVE-DRAFT | used-by LO-000010 |
+| KO-000070 | Knowledge Object | Diskriminasi bentuk dan titik ء–ق | QJ1-P010 | ACTIVE-DRAFT | used-by LO-000010 |
+| KO-000071 | Knowledge Object | Ketepatan makhraj huruf ءَ–قَ | QJ1-P010 | ACTIVE-DRAFT | used-by LO-000010 |
+| KO-000072 | Knowledge Object | Kelancaran rangkaian dua dan tiga huruf terpisah | QJ1-P010 | ACTIVE-DRAFT | used-by LO-000010 |
+| KO-000073 | Knowledge Object | Adab jujur dan tenang ketika dievaluasi | QJ1-P010-AKH01 | ACTIVE-DRAFT | supports LO-000010 |
 
 ## 3. Aturan
 
@@ -134,3 +141,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.7.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P007 |
 | 0.8.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P008 |
 | 0.9.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P009 |
+| 0.10.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk Evaluasi Fathah I QJ1-P010 |
