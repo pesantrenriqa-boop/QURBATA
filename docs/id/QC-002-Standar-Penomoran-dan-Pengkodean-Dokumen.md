@@ -4,7 +4,7 @@
 **Judul:** Standar Penomoran dan Pengkodean Dokumen QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Normatif  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -314,7 +314,7 @@ Setiap dokumen wajib menggunakan salah satu status berikut:
 |---|---|
 | `Konsep` | Gagasan awal; belum menjadi draf resmi |
 | `Draf` | Sedang disusun; belum berlaku |
-| `Dalam Review` | Sedang diperiksa oleh pihak berwenang |
+| `Dalam Penelaahan` | Sedang diperiksa oleh pihak berwenang |
 | `Disetujui` | Telah disahkan dan siap diberlakukan |
 | `Berlaku` | Menjadi acuan resmi aktif |
 | `Ditangguhkan` | Pemberlakuan dihentikan sementara |
@@ -340,7 +340,7 @@ Setiap dokumen normatif sekurang-kurangnya memuat:
 - pemeriksa;
 - pengesah;
 - tanggal berlaku;
-- tanggal review berikutnya;
+- tanggal penelaahan berikutnya;
 - dokumen induk;
 - dokumen terkait;
 - klasifikasi akses;
@@ -467,7 +467,7 @@ Dilarang:
 
 ### 16.1 Pemilik Dokumen
 
-Pemilik dokumen bertanggung jawab atas ketepatan isi, relevansi, review berkala, dan usulan perubahan.
+Pemilik dokumen bertanggung jawab atas ketepatan isi, relevansi, penelaahan berkala, dan usulan perubahan.
 
 ### 16.2 Pengelola Dokumen
 
@@ -508,7 +508,7 @@ Register kendali dokumen sekurang-kurangnya memuat:
 | Induk | Dokumen sumber |
 | Pengganti | Dokumen pengganti bila ada |
 | Tanggal Berlaku | Awal pemberlakuan |
-| Review Berikutnya | Jadwal peninjauan |
+| Penelaahan Berikutnya | Jadwal peninjauan |
 | Klasifikasi | Publik, internal, terbatas, atau rahasia |
 
 Register resmi harus menjadi sumber tunggal status dokumen.
@@ -545,3 +545,5 @@ Suatu dokumen dinilai patuh apabila:
 | Versi | Status | Ringkasan |
 |---|---|---|
 | 0.1.0-id | Draf Normatif | Pembentukan standar awal penomoran, pengkodean, versi, status, metadata, dan keterlacakan dokumen QURBATA |
+
+<!-- Audit editorial 27 Juli 2026: istilah review, dashboard, dan checklist diselaraskan menjadi penelaahan, dasbor, dan daftar periksa pada master Bahasa Indonesia. -->
