@@ -4,7 +4,7 @@
 **Judul:** Register Dokumen Terkendali QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.9.0-id  
+**Versi:** 0.10.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -90,3 +90,4 @@ RIQA OS harus menandai:
 | 0.7.0-id | 2026-07-27 | Menyelaraskan versi register risiko, CAPA, bukti, freeze, audit, dan dasbor setelah validasi GF-09 |
 | 0.8.0-id | 2026-07-27 | Menyelaraskan versi bukti, register freeze, audit, dan dasbor setelah GF-02 PASS |
 | 0.9.0-id | 2026-07-27 | Menyelaraskan QC-005 dan register terkait setelah GF-06 PASS |
+| 0.10.0-id | 2026-07-27 | Menyelaraskan REG-GOV-001 dan register terkait setelah GF-04 PASS |
