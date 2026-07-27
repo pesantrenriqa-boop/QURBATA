@@ -4,7 +4,7 @@
 **Judul:** Dashboard Tata Kelola QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -37,10 +37,10 @@ Dashboard ini merangkum kondisi tata kelola QURBATA dalam satu tampilan agar pim
 | Konstitusi QC-000 | Kuning | Master Indonesia lengkap secara substantif; audit editorial dan ratifikasi belum selesai |
 | QC-001–QC-012 | Kuning | Metadata dan arsitektur telah diharmonisasikan; verifikasi bukti implementasi belum selesai |
 | Governance toolkit | Kuning | Register inti tersedia; implementasi dan bukti belum lengkap |
-| Bahasa Inggris | Merah | Belum harmonis penuh dengan master Indonesia |
-| Bahasa Arab | Merah | Belum menjadi terjemahan resmi lengkap |
+| Bahasa Inggris | Abu-abu | Tindak lanjut non-blocking; tidak termasuk baseline Governance v1.0 Bahasa Indonesia |
+| Bahasa Arab | Abu-abu | Tindak lanjut non-blocking; tidak termasuk baseline Governance v1.0 Bahasa Indonesia |
 | Knowledge-ID | Kuning | Namespace, status, supersesi, dan matriks tersedia; populasi objek isi belum selesai |
-| Safeguarding | Kuning | Kebijakan tersedia; simulasi implementasi belum selesai |
+| Safeguarding | Hijau | Kebijakan dan kesiapan operasional awal tervalidasi; audit efektivitas berkala tetap wajib |
 | RIQA OS integration | Kuning | Model data dirumuskan; implementasi belum selesai |
 | Governance Freeze | Belum Lulus | Menunggu seluruh gate kritis |
 
@@ -87,7 +87,7 @@ Skor agregat hanya informatif. Satu kegagalan pada butir kritis tetap menggagalk
 | 1 | Audit metadata dan rujukan QC-000–QC-012 | Document Controller/QA |
 | 2 | Tutup gap master Bahasa Indonesia | Governance & Editorial Leads |
 | 3 | Selesaikan ontology dan populasi Knowledge-ID | Knowledge Architect |
-| 4 | Lengkapi bukti safeguarding dan simulasi | Safeguarding Lead |
+| 4 | Pertahankan audit efektivitas berkala safeguarding | Safeguarding Lead |
 | 5 | Tutup temuan mayor dan verifikasi CAPA | QA Lead |
 | 6 | Putuskan Governance Freeze melalui Decision-ID | Pimpinan QURBATA |
 
