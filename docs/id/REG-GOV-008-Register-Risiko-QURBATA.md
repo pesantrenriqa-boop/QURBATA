@@ -4,7 +4,7 @@
 **Judul:** Register Risiko QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -42,12 +42,12 @@ Probabilitas dan dampak dinilai 1–5. Nilai risiko = probabilitas × dampak.
 ## 4. Register Awal
 | Risk-ID | Kategori | Risiko | P | D | Nilai | Kontrol Saat Ini | Mitigasi Lanjutan | Pemilik | Status |
 |---|---|---|---:|---:|---:|---|---|---|---|
-| RSK-GOV-001 | GOV | Dua sumber normatif menimbulkan konflik kewenangan | 2 | 5 | 10 | QC-000 ditetapkan sebagai norma tertinggi | Audit seluruh rujukan dan hapus sumber lama | Governance Lead | Mitigasi berjalan |
+| RSK-GOV-001 | GOV | Dua sumber normatif menimbulkan konflik kewenangan | 1 | 5 | 5 | QC-000 ditetapkan sebagai norma tertinggi; README dan arsitektur lama telah diselaraskan | Pertahankan audit rujukan pada setiap perubahan material | Governance Lead | Terkendali; dipantau |
 | RSK-GOV-002 | GOV | Dokumen digunakan sebelum disetujui | 3 | 4 | 12 | Status dokumen dan branch PR | Terapkan validasi status otomatis | Document Controller | Terbuka |
-| RSK-CUR-001 | CUR | Urutan materi tidak sesuai prasyarat belajar | 3 | 5 | 15 | Review kurikulum dan knowledge graph | Bekukan competency/prerequisite graph sebelum buku final | Curriculum Lead | Terbuka |
-| RSK-PED-001 | PED | Buku terlalu kompleks atau terlalu cepat bagi peserta pemula | 4 | 4 | 16 | Review pedagogis dan pola bertahap | Pilot, data kesalahan, dan revisi berbasis bukti | Pedagogy Lead | Terbuka |
+| RSK-CUR-001 | CUR | Urutan materi tidak sesuai prasyarat belajar | 3 | 5 | 15 | Penelaahan kurikulum dan graf pengetahuan | Bekukan graf kompetensi dan prasyarat sebelum buku final | Curriculum Lead | Terbuka |
+| RSK-PED-001 | PED | Buku terlalu kompleks atau terlalu cepat bagi peserta pemula | 4 | 4 | 16 | Penelaahan pedagogis dan pola bertahap | Uji coba, data kesalahan, dan revisi berbasis bukti | Pedagogy Lead | Terbuka |
 | RSK-ASM-001 | ASM | Soal tidak benar-benar mengukur kompetensi target | 3 | 5 | 15 | Traceability target–soal | Audit kualitas butir dan validasi assessment graph | Assessment Lead | Terbuka |
-| RSK-SFG-001 | SFG | Laporan perlindungan peserta terlambat ditangani | 2 | 5 | 10 | QC-012 dan jalur eskalasi | Uji simulasi dan SLA respons | Safeguarding Lead | Terbuka |
+| RSK-SFG-001 | SFG | Laporan perlindungan peserta terlambat ditangani | 2 | 5 | 10 | QC-012, kanal email ber-2FA, eskalasi WhatsApp, target respons, dan Case-ID telah diuji awal | Audit waktu respons aktual dan simulasi berkala | Safeguarding Lead | Mitigasi berjalan |
 | RSK-DAT-001 | DAT | Data peserta bocor atau diakses tanpa kewenangan | 3 | 5 | 15 | Role-based access direncanakan | Minimasi data, audit log, backup, dan kontrol akses | Data Lead | Terbuka |
 | RSK-TEC-001 | TEC | RIQA OS menjadi ketergantungan tunggal tanpa pemulihan | 3 | 4 | 12 | QC-011 | Backup, ekspor portabel, RTO/RPO, uji pemulihan | Technology Lead | Terbuka |
 | RSK-LEG-001 | LEG | Contoh, gambar, font, audio, atau materi melanggar lisensi | 3 | 4 | 12 | Asset register direncanakan | Bukti lisensi dan provenance wajib | Legal/IP Owner | Terbuka |
@@ -65,7 +65,7 @@ Risiko kritis tidak boleh diterima oleh pemilik operasional sendiri.
 ## 6. Data Wajib RIQA OS
 `risk_id`, `category`, `statement`, `cause`, `impact`, `probability`, `severity`, `inherent_score`, `controls`, `residual_score`, `response`, `owner`, `review_date`, `linked_requirement`, `linked_finding`, `linked_capa`, `status`.
 
-## 7. Review
+## 7. Penelaahan
 - Kritis: mingguan;
 - Tinggi: bulanan;
 - Sedang: triwulanan;
@@ -76,3 +76,4 @@ Risiko kritis tidak boleh diterima oleh pemilik operasional sendiri.
 | Versi | Tanggal | Perubahan |
 |---|---|---|
 | 0.1.0 | 2026-07-26 | Register risiko awal dan sepuluh risiko prioritas dibuat |
+| 0.3.0-id | 2026-07-27 | Menyelaraskan risiko sumber normatif, terminologi, dan kontrol safeguarding dengan bukti terbaru |
