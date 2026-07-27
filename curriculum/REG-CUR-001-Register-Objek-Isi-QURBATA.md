@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.17.0-id  
+**Versi:** 0.18.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -188,6 +188,14 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000128 | Knowledge Object | Integrasi kasrah baru dengan kasrah awal dan fathah terkait | QJ1-P017 | ACTIVE-DRAFT | used-by LO-000017 |
 | KO-000129 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P017 | QJ1-P017 | ACTIVE-DRAFT | used-by LO-000017 |
 | KO-000130 | Knowledge Object | Adab sabar tanpa memaksa suara | QJ1-P017-AKH01 | ACTIVE-DRAFT | supports LO-000017 |
+| PO-000018 | Page Object | Hafalan 1 — Materi Menunggu Keputusan | QJ1-P018 | BLOCKED-DRAFT | child-of CO-000002 |
+| LO-000018 | Learning Object | Menirukan, mengurutkan, dan mengingat materi hafalan pendek yang disahkan | QJ1-P018 | BLOCKED-DRAFT | uses KO-000131–KO-000136 |
+| KO-000131 | Knowledge Object | Kriteria pemilihan dan pengesahan materi Hafalan 1 | QJ1-P018 | ACTIVE-DRAFT | used-by LO-000018 |
+| KO-000132 | Knowledge Object | Simakan model hafalan utuh dan per potongan | QJ1-P018 | ACTIVE-DRAFT | used-by LO-000018 |
+| KO-000133 | Knowledge Object | Talqin–ittiba’ materi hafalan | QJ1-P018 | ACTIVE-DRAFT | used-by LO-000018 |
+| KO-000134 | Knowledge Object | Penggabungan serta penguatan urutan potongan | QJ1-P018 | ACTIVE-DRAFT | used-by LO-000018 |
+| KO-000135 | Knowledge Object | Recall mandiri dan retensi hafalan | QJ1-P018 | ACTIVE-DRAFT | used-by LO-000018 |
+| KO-000136 | Knowledge Object | Adab amanah, rahmah, dan tanpa mempermalukan dalam hafalan | QJ1-P018-AKH01 | ACTIVE-DRAFT | supports LO-000018 |
 
 ## 3. Aturan
 
@@ -221,3 +229,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.15.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk otomatisasi fathah QJ1-P015 |
 | 0.16.0-id | 27 Juli 2026 | Membentuk CO fase kasrah serta menambahkan PO, LO, dan KO untuk QJ1-P016 |
 | 0.17.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P017 |
+| 0.18.0-id | 27 Juli 2026 | Menambahkan spesifikasi terkendali PO, LO, dan KO Hafalan 1 QJ1-P018; materi masih terblokir keputusan |
