@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.28.0-id  
+**Versi:** 0.29.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -306,6 +306,19 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000223 | Knowledge Object | Produksi lisan terkendali dalam konteks sederhana | QJ1-P028 | ACTIVE-DRAFT | used-by LO-000028 |
 | KO-000224 | Knowledge Object | Pemisahan pembelajaran lisan dari materi baca prematur | QJ1-P028 | ACTIVE-DRAFT | used-by LO-000028 |
 | KO-000225 | Knowledge Object | Adab santun dan percaya diri dalam komunikasi | QJ1-P028-AKH01 | ACTIVE-DRAFT | supports LO-000028 |
+| PO-000029 | Page Object | Dhammah Dal–Syin | QJ1-P029 | ACTIVE-DRAFT | child-of CO-000003 |
+| LO-000029 | Learning Object | Membedakan dan membaca دُ ذُ رُ زُ سُ شُ dengan review dhammah sebelumnya | QJ1-P029 | ACTIVE-DRAFT | uses KO-000226–KO-000236 |
+| KO-000226 | Knowledge Object | Bentuk dhammah pasangan د ذ، ر ز، dan س ش | QJ1-P029 | ACTIVE-DRAFT | used-by LO-000029 |
+| KO-000227 | Knowledge Object | Bunyi دُ | QJ1-P029 | ACTIVE-DRAFT | used-by LO-000029 |
+| KO-000228 | Knowledge Object | Bunyi ذُ | QJ1-P029 | ACTIVE-DRAFT | used-by LO-000029 |
+| KO-000229 | Knowledge Object | Bunyi رُ | QJ1-P029 | ACTIVE-DRAFT | used-by LO-000029 |
+| KO-000230 | Knowledge Object | Bunyi زُ | QJ1-P029 | ACTIVE-DRAFT | used-by LO-000029 |
+| KO-000231 | Knowledge Object | Bunyi سُ | QJ1-P029 | ACTIVE-DRAFT | used-by LO-000029 |
+| KO-000232 | Knowledge Object | Bunyi شُ | QJ1-P029 | ACTIVE-DRAFT | used-by LO-000029 |
+| KO-000233 | Knowledge Object | Diskriminasi bentuk, titik, dan makhraj ujung lidah | QJ1-P029 | ACTIVE-DRAFT | used-by LO-000029 |
+| KO-000234 | Knowledge Object | Integrasi dhammah baru dengan dhammah sebelumnya dan padanan fathah–kasrah | QJ1-P029 | ACTIVE-DRAFT | used-by LO-000029 |
+| KO-000235 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P029 | QJ1-P029 | ACTIVE-DRAFT | used-by LO-000029 |
+| KO-000236 | Knowledge Object | Adab teliti melihat titik dan tanda sebelum membaca | QJ1-P029-AKH01 | ACTIVE-DRAFT | supports LO-000029 |
 
 ## 3. Aturan
 
@@ -350,3 +363,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.26.0-id | 27 Juli 2026 | Membentuk CO fase dhammah serta menambahkan PO, LO, dan KO untuk QJ1-P026 |
 | 0.27.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P027 |
 | 0.28.0-id | 27 Juli 2026 | Menambahkan spesifikasi terkendali PO, LO, dan KO Bahasa Arab 1 QJ1-P028; materi masih terblokir keputusan |
+| 0.29.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P029 |
