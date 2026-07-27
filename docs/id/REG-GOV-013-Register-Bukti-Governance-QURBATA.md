@@ -4,7 +4,7 @@
 **Judul:** Register Bukti Governance QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.25.0-id  
+**Versi:** 0.26.0-id  
 **Pemilik Dokumen:** Fungsi Penjaminan Mutu QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -61,6 +61,7 @@ PROPOSED, COLLECTED, UNDER-VALIDATION, VALID, REJECTED, EXPIRED, SUPERSEDED, dan
 | EVD-GOV-000017 | Verifikasi efektivitas CAPA yang ditutup | REG-GOV-007 v0.6.0-id/EVD-GOV-000001–EVD-GOV-000012 | VALID | QA/Governance Lead | CAPA-2026-004 dan CAPA-2026-007 memiliki bukti hasil yang dapat diperiksa; tidak ada CAPA tertutup lain |
 | EVD-GOV-000018 | Uji meja RACI dan kewenangan Governance v1.0 | REC-GOV-015/MAT-GOV-001 v0.8.0-id/QC-007 | VALID | Governance Lead | Delapan skenario PASS; desain peran, pemisahan tugas, pengganti, quorum, dan ratifikasi konsisten; akses RIQA OS diuji terpisah |
 | EVD-GOV-000019 | Validasi desain matriks keterlacakan Governance v1.0 | REC-GOV-016/CTM/REG-GOV-001 | VALID | QA/Knowledge Architect | 20/20 baris lengkap: ID, persyaratan, kontrol, bukti minimum, pemilik, dan objek implementasi; 0 ID ganda/yatim |
+| EVD-GOV-000020 | Attestasi baseline kandidat Governance v1.0 | REC-GOV-017/BAS-GOV-001 | VALID | Document Controller | Snapshot `20892fbd5892dc2a79f23012ed6c98d0685a6eaa` dan URL arsip ZIP/TAR.GZ berbasis SHA ditetapkan; ratifikasi tetap menunggu Decision-ID |
 
 ## 5. Data Minimum
 
@@ -99,3 +100,4 @@ RIQA OS mencegah gate PASS bila Evidence-ID wajib tidak berstatus VALID, telah k
 | 0.23.0-id | 27 Juli 2026 | Mencatat verifikasi efektivitas CAPA tertutup sebagai EVD-GOV-000017 |
 | 0.24.0-id | 27 Juli 2026 | Mencatat uji meja RACI dan kewenangan sebagai EVD-GOV-000018 |
 | 0.25.0-id | 27 Juli 2026 | Mencatat validasi desain CTM sebagai EVD-GOV-000019 |
+| 0.26.0-id | 27 Juli 2026 | Mencatat attestasi baseline kandidat sebagai EVD-GOV-000020 |
