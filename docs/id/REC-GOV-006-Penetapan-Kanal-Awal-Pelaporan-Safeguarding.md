@@ -14,6 +14,7 @@
 2. Personel yang ditetapkan memiliki akses awal ke kotak masuk laporan adalah **Aris Liswanto**.
 3. Alamat email operasional ditetapkan sebagai **safeguardingqurbata@gmail.com**.
 4. Jalur eskalasi kepada Ainul Yakin ditetapkan melalui **WhatsApp** sesuai REC-GOV-009.
+5. Target waktu respons ditetapkan melalui REC-GOV-011.
 
 ## 2. Pembagian Tanggung Jawab
 
@@ -31,4 +32,4 @@ Ainul Yakin tetap memegang peran **Safeguarding Lead** dan akuntabilitas penanga
 
 ## 4. Batas Bukti
 
-Rekaman ini membuktikan pemilihan kanal, penetapan alamat, dan pemegang akses awal. Autentikasi dua faktor telah dikonfirmasi melalui REC-GOV-007 dan penerimaan email telah lulus uji melalui REC-GOV-008. Jalur eskalasi WhatsApp kepada Ainul Yakin telah ditetapkan melalui REC-GOV-009 dan lulus uji melalui REC-GOV-010. Penomoran perkara dan target waktu respons belum ditetapkan.
+Rekaman ini membuktikan pemilihan kanal, penetapan alamat, dan pemegang akses awal. Autentikasi dua faktor telah dikonfirmasi melalui REC-GOV-007 dan penerimaan email telah lulus uji melalui REC-GOV-008. Jalur eskalasi WhatsApp kepada Ainul Yakin telah ditetapkan melalui REC-GOV-009 dan lulus uji melalui REC-GOV-010. Target waktu respons ditetapkan melalui REC-GOV-011. Format penomoran perkara belum ditetapkan.
