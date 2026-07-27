@@ -2,7 +2,7 @@
 
 **Kode Dokumen:** MAT-GOV-001  
 **Status:** Draf Terkendali  
-**Versi:** 0.4.0-id  
+**Versi:** 0.5.0-id  
 **Bahasa Induk:** Bahasa Indonesia  
 **Induk Normatif:** QC-000, QC-006, QC-007, QC-008
 
@@ -85,7 +85,7 @@ Hak akses aktual harus mengikuti prinsip least privilege, separation of duties, 
 | Assignment-ID | Peran | Personel | Dasar Penetapan | Pengganti | Kompetensi Diverifikasi | Konflik Diperiksa | Status |
 |---|---|---|---|---|---|---|---|
 | ASN-GOV-001 | Otoritas Konstitusional Awal | Aris Liswanto, S.Pd., M.Pd. | QC-000 tahap pendirian | Menunggu | Menunggu bukti formal | Wajib diperiksa per keputusan | DRAFT |
-| ASN-GOV-002 | Document Controller | Aris Liswanto | QC-000 tahap pendirian dan penetapan pengguna 26 Juli 2026 | Menunggu | Perlu dilengkapi | Wajib diperiksa per keputusan | ACTIVE |
+| ASN-GOV-002 | Document Controller | Aris Liswanto | QC-000 tahap pendirian dan penetapan pengguna 26 Juli 2026 | Izathy Khoirina — menunggu penerimaan mandat; REC-GOV-014 | Perlu dilengkapi | Wajib diperiksa per keputusan | ACTIVE |
 | ASN-GOV-003 | QA Lead | Aris Liswanto | QC-000 tahap pendirian dan penetapan pengguna 26 Juli 2026 | Menunggu | Perlu dilengkapi | Perangkapan dengan Document Controller; verifikasi independen diwajibkan | ACTIVE |
 | ASN-GOV-004 | Knowledge Architect | Aris Liswanto | QC-000 tahap pendirian dan penetapan pengguna 26 Juli 2026 | Menunggu | Pengetahuan arsitektur QURBATA; bukti formal perlu dilengkapi | Merangkap Document Controller dan QA Lead; validasi independen diwajibkan untuk perubahan material | ACTIVE |
 | ASN-GOV-005 | Safeguarding Lead | Ainul Yakin | Penetapan pengguna 26 Juli 2026 untuk tahap pendirian | Ulifah — mandat dan deklarasi konflik diterima; aktif hanya saat delegasi dicatat; REC-GOV-013 | Perlu dilengkapi | Ulifah menyatakan tidak ada konflik umum; pemeriksaan tetap wajib per perkara | ACTIVE |
