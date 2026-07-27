@@ -4,7 +4,7 @@
 **Judul:** Register Dokumen Terkendali QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -38,19 +38,19 @@ Register ini menjadi daftar induk seluruh dokumen resmi QURBATA yang wajib diken
 ## 4. Register Induk Awal
 | ID | Judul | Jenis | Pemilik | Otoritas Persetujuan | Status | Versi | Bahasa Induk | Review Berikutnya |
 |---|---|---|---|---|---|---|---|---|
-| QC-000 | Konstitusi QURBATA | Konstitusi | Pimpinan QURBATA | Otoritas Ratifikasi | Draf lanjut | 0.9.0 | Indonesia | Sebelum ratifikasi |
-| QC-001 | Arsitektur Tata Kelola | Kebijakan | Governance Lead | Pimpinan QURBATA | Draf terkendali | 0.8.0 | Indonesia | Sebelum Governance Freeze |
-| QC-002 | Standar Penomoran dan Pengkodean Dokumen | Standar | Document Controller | Governance Lead | Draf terkendali | 0.8.0 | Indonesia | Sebelum Governance Freeze |
-| QC-003 | Proses Penyusunan dan Pengelolaan Dokumen | Prosedur | Document Controller | Governance Lead | Draf terkendali | 0.8.0 | Indonesia | Sebelum Governance Freeze |
-| QC-004 | Kerangka Keterlacakan | Kerangka | QA Lead | Governance Lead | Draf terkendali | 0.8.0 | Indonesia | Sebelum Governance Freeze |
-| QC-005 | Terminologi dan Definisi Resmi | Standar | Knowledge Architect | Governance Lead | Draf terkendali | 0.8.0 | Indonesia | Sebelum Governance Freeze |
-| QC-006 | Peran, Kewenangan, dan Akuntabilitas | Kebijakan | Governance Lead | Pimpinan QURBATA | Draf terkendali | 0.8.0 | Indonesia | Sebelum Governance Freeze |
-| QC-007 | Pengambilan Keputusan, Persetujuan, dan Ratifikasi | Prosedur | Governance Lead | Pimpinan QURBATA | Draf terkendali | 0.8.0 | Indonesia | Sebelum Governance Freeze |
-| QC-008 | Konflik Kepentingan, Etika, dan Independensi | Kebijakan | Ethics Officer | Pimpinan QURBATA | Draf terkendali | 0.8.0 | Indonesia | Sebelum Governance Freeze |
-| QC-009 | Pengaduan, Keberatan, Banding, dan Perlindungan Pelapor | Prosedur | Complaints Officer | Pimpinan QURBATA | Draf terkendali | 0.8.0 | Indonesia | Sebelum Governance Freeze |
-| QC-010 | Manajemen Risiko dan Keberlangsungan Bisnis | Kerangka | Risk Owner | Pimpinan QURBATA | Draf terkendali | 0.8.0 | Indonesia | Sebelum Governance Freeze |
-| QC-011 | Analisis Dampak Bisnis dan Pemulihan Bencana | Kerangka | Technology & Data Lead | Pimpinan QURBATA | Draf terkendali | 0.8.0 | Indonesia | Sebelum Governance Freeze |
-| QC-012 | Perlindungan Peserta Didik, Keselamatan, dan Kesejahteraan | Kebijakan | Safeguarding Lead | Pimpinan QURBATA | Draf terkendali | 0.8.0 | Indonesia | Sebelum Governance Freeze |
+| QC-000 | Konstitusi QURBATA | Konstitusi | Pimpinan QURBATA | Otoritas Ratifikasi | Draf lanjut | 0.5.0-id | Indonesia | Sebelum ratifikasi |
+| QC-001 | Arsitektur Tata Kelola | Kebijakan | Governance Lead | Pimpinan QURBATA | Draf terkendali | 0.2.0-id | Indonesia | Sebelum Governance Freeze |
+| QC-002 | Standar Penomoran dan Pengkodean Dokumen | Standar | Document Controller | Governance Lead | Draf terkendali | 0.2.0-id | Indonesia | Sebelum Governance Freeze |
+| QC-003 | Proses Penyusunan dan Pengelolaan Dokumen | Prosedur | Document Controller | Governance Lead | Draf terkendali | 0.2.0-id | Indonesia | Sebelum Governance Freeze |
+| QC-004 | Kerangka Keterlacakan | Kerangka | QA Lead | Governance Lead | Draf terkendali | 0.2.0-id | Indonesia | Sebelum Governance Freeze |
+| QC-005 | Terminologi dan Definisi Resmi | Standar | Knowledge Architect | Governance Lead | Draf terkendali | 0.2.0-id | Indonesia | Sebelum Governance Freeze |
+| QC-006 | Peran, Kewenangan, dan Akuntabilitas | Kebijakan | Governance Lead | Pimpinan QURBATA | Draf terkendali | 0.2.0-id | Indonesia | Sebelum Governance Freeze |
+| QC-007 | Pengambilan Keputusan, Persetujuan, dan Ratifikasi | Prosedur | Governance Lead | Pimpinan QURBATA | Draf terkendali | 0.2.0-id | Indonesia | Sebelum Governance Freeze |
+| QC-008 | Konflik Kepentingan, Etika, dan Independensi | Kebijakan | Ethics Officer | Pimpinan QURBATA | Draf terkendali | 0.2.0-id | Indonesia | Sebelum Governance Freeze |
+| QC-009 | Pengaduan, Keberatan, Banding, dan Perlindungan Pelapor | Prosedur | Complaints Officer | Pimpinan QURBATA | Draf terkendali | 0.2.0-id | Indonesia | Sebelum Governance Freeze |
+| QC-010 | Manajemen Risiko dan Keberlangsungan Bisnis | Kerangka | Risk Owner | Pimpinan QURBATA | Draf terkendali | 0.2.0-id | Indonesia | Sebelum Governance Freeze |
+| QC-011 | Analisis Dampak Bisnis dan Pemulihan Bencana | Kerangka | Technology & Data Lead | Pimpinan QURBATA | Draf terkendali | 0.2.0-id | Indonesia | Sebelum Governance Freeze |
+| QC-012 | Perlindungan Peserta Didik, Keselamatan, dan Kesejahteraan | Kebijakan | Safeguarding Lead | Pimpinan QURBATA | Draf terkendali | 0.2.0-id | Indonesia | Sebelum Governance Freeze |
 | REG-GOV-001 | Register Knowledge-ID | Register | Knowledge Architect | Governance Lead | Draf terkendali | 0.1.0 | Indonesia | Bersamaan dengan QC-005 |
 | REG-GOV-002 | Register Siklus Hidup Dokumen | Register | Document Controller | Governance Lead | Draf terkendali | 0.1.0 | Indonesia | Bulanan selama pengembangan |
 | REG-GOV-003 | Register Keputusan Tata Kelola | Register | Governance Secretariat | Governance Lead | Draf terkendali | 0.1.0 | Indonesia | Setiap keputusan material |
@@ -83,3 +83,4 @@ RIQA OS harus menandai:
 | Versi | Tanggal | Perubahan | Keputusan |
 |---|---|---|---|
 | 0.1.0 | 2026-07-26 | Register awal dokumen governance dibuat | Pengembangan PR #1 |
+| 0.3.0-id | 2026-07-27 | Menyelaraskan versi QC-000–QC-012 dengan metadata aktual pada branch kandidat |
