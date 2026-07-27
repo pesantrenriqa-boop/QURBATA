@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.12.0-id  
+**Versi:** 0.13.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -134,6 +134,16 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000085 | Knowledge Object | Integrasi مَ نَ dengan review كَ لَ dan keluarga sebelumnya | QJ1-P012 | ACTIVE-DRAFT | used-by LO-000012 |
 | KO-000086 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P012 | QJ1-P012 | ACTIVE-DRAFT | used-by LO-000012 |
 | KO-000087 | Knowledge Object | Adab menjaga kebersihan lisan | QJ1-P012-AKH01 | ACTIVE-DRAFT | supports LO-000012 |
+| PO-000013 | Page Object | Halaman Keluarga Ha–Waw–Ya Berfathah | QJ1-P013 | ACTIVE-DRAFT | child-of CO-000001 |
+| LO-000013 | Learning Object | Membedakan dan membaca هَ وَ يَ dengan review keluarga sebelumnya | QJ1-P013 | ACTIVE-DRAFT | uses KO-000088–KO-000095 |
+| KO-000088 | Knowledge Object | Bentuk dasar ه و ي | QJ1-P013 | ACTIVE-DRAFT | used-by LO-000013 |
+| KO-000089 | Knowledge Object | Bunyi هَ | QJ1-P013 | ACTIVE-DRAFT | used-by LO-000013 |
+| KO-000090 | Knowledge Object | Bunyi وَ | QJ1-P013 | ACTIVE-DRAFT | used-by LO-000013 |
+| KO-000091 | Knowledge Object | Bunyi يَ | QJ1-P013 | ACTIVE-DRAFT | used-by LO-000013 |
+| KO-000092 | Knowledge Object | Diskriminasi visual dan fonetik ه و ي | QJ1-P013 | ACTIVE-DRAFT | used-by LO-000013 |
+| KO-000093 | Knowledge Object | Integrasi هَ وَ يَ dengan review مَ نَ dan keluarga sebelumnya | QJ1-P013 | ACTIVE-DRAFT | used-by LO-000013 |
+| KO-000094 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P013 | QJ1-P013 | ACTIVE-DRAFT | used-by LO-000013 |
+| KO-000095 | Knowledge Object | Adab amanah mengikuti contoh bacaan | QJ1-P013-AKH01 | ACTIVE-DRAFT | supports LO-000013 |
 
 ## 3. Aturan
 
@@ -162,3 +172,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.10.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk Evaluasi Fathah I QJ1-P010 |
 | 0.11.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P011 |
 | 0.12.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P012 |
+| 0.13.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P013 |
