@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.16.0-id  
+**Versi:** 0.17.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -174,6 +174,20 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000116 | Knowledge Object | Integrasi ءِ إِ بِ تِ ثِ dengan review fathah padanannya | QJ1-P016 | ACTIVE-DRAFT | used-by LO-000016 |
 | KO-000117 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P016 | QJ1-P016 | ACTIVE-DRAFT | used-by LO-000016 |
 | KO-000118 | Knowledge Object | Adab rendah hati memulai bunyi baru | QJ1-P016-AKH01 | ACTIVE-DRAFT | supports LO-000016 |
+| PO-000017 | Page Object | Kasrah Keluarga Tenggorokan | QJ1-P017 | ACTIVE-DRAFT | child-of CO-000002 |
+| LO-000017 | Learning Object | Membedakan dan membaca جِ حِ خِ عِ غِ هِ dengan review terkait | QJ1-P017 | ACTIVE-DRAFT | uses KO-000119–KO-000130 |
+| KO-000119 | Knowledge Object | Bentuk kasrah keluarga ج ح خ | QJ1-P017 | ACTIVE-DRAFT | used-by LO-000017 |
+| KO-000120 | Knowledge Object | Bentuk kasrah keluarga ع غ dan ه | QJ1-P017 | ACTIVE-DRAFT | used-by LO-000017 |
+| KO-000121 | Knowledge Object | Bunyi جِ | QJ1-P017 | ACTIVE-DRAFT | used-by LO-000017 |
+| KO-000122 | Knowledge Object | Bunyi حِ | QJ1-P017 | ACTIVE-DRAFT | used-by LO-000017 |
+| KO-000123 | Knowledge Object | Bunyi خِ | QJ1-P017 | ACTIVE-DRAFT | used-by LO-000017 |
+| KO-000124 | Knowledge Object | Bunyi عِ | QJ1-P017 | ACTIVE-DRAFT | used-by LO-000017 |
+| KO-000125 | Knowledge Object | Bunyi غِ | QJ1-P017 | ACTIVE-DRAFT | used-by LO-000017 |
+| KO-000126 | Knowledge Object | Bunyi هِ | QJ1-P017 | ACTIVE-DRAFT | used-by LO-000017 |
+| KO-000127 | Knowledge Object | Diskriminasi bentuk, titik, dan makhraj keluarga tenggorokan | QJ1-P017 | ACTIVE-DRAFT | used-by LO-000017 |
+| KO-000128 | Knowledge Object | Integrasi kasrah baru dengan kasrah awal dan fathah terkait | QJ1-P017 | ACTIVE-DRAFT | used-by LO-000017 |
+| KO-000129 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P017 | QJ1-P017 | ACTIVE-DRAFT | used-by LO-000017 |
+| KO-000130 | Knowledge Object | Adab sabar tanpa memaksa suara | QJ1-P017-AKH01 | ACTIVE-DRAFT | supports LO-000017 |
 
 ## 3. Aturan
 
@@ -206,3 +220,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.14.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk integrasi fathah QJ1-P014 |
 | 0.15.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk otomatisasi fathah QJ1-P015 |
 | 0.16.0-id | 27 Juli 2026 | Membentuk CO fase kasrah serta menambahkan PO, LO, dan KO untuk QJ1-P016 |
+| 0.17.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P017 |
