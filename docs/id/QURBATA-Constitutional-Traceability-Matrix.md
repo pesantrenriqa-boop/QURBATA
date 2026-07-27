@@ -105,7 +105,13 @@ Prioritas wajib adalah:
 
 Audit awal 27 Juli 2026 menemukan 20 baris CTM, seluruh referensi Knowledge-ID ditemukan dalam REG-GOV-001, dan tidak ditemukan ID ganda dalam register awal. Hasil ini belum membuktikan bahwa seluruh norma material QC-000 telah dipetakan; validasi kelengkapan substantif tetap wajib.
 
-## 8. Implementasi RIQA OS
+## 8. Validasi Desain Governance
+
+Validasi REC-GOV-016/EVD-GOV-000019 mengonfirmasi bahwa 20 dari 20 baris CTM memiliki sembilan kolom wajib lengkap, seluruh Knowledge-ID ditemukan dalam register, setiap baris memiliki dokumen pengendali, bukti minimum, pemilik, dan objek implementasi, serta tidak ada ID ganda atau referensi yatim.
+
+Status penerapan operasional tetap dipertahankan sebagai “Sebagian” atau “Direncanakan” sampai bukti lapangan tersedia. Status tersebut tidak membatalkan kelengkapan desain keterlacakan Governance v1.0.
+
+## 9. Implementasi RIQA OS
 
 RIQA OS sekurang-kurangnya harus mendukung:
 
@@ -122,7 +128,7 @@ RIQA OS sekurang-kurangnya harus mendukung:
 
 Implementasi digital tidak menggantikan kewajiban penilaian substansi oleh pihak yang kompeten.
 
-## 9. Peninjauan
+## 10. Peninjauan
 
 Matriks ini ditinjau:
 
