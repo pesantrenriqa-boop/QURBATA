@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.4.0-id  
+**Versi:** 0.5.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -64,6 +64,15 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000031 | Knowledge Object | Integrasi دَ ذَ رَ زَ dengan review ءَ–خَ | QJ1-P004 | ACTIVE-DRAFT | used-by LO-000004 |
 | KO-000032 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P004 | QJ1-P004 | ACTIVE-DRAFT | used-by LO-000004 |
 | KO-000033 | Knowledge Object | Adab berhati-hati dan tidak tergesa-gesa | QJ1-P004-AKH01 | ACTIVE-DRAFT | supports LO-000004 |
+| PO-000005 | Page Object | Halaman Keluarga Sin Berfathah | QJ1-P005 | ACTIVE-DRAFT | child-of CO-000001 |
+| LO-000005 | Learning Object | Membedakan dan membaca سَ شَ dengan review دَ ذَ رَ زَ | QJ1-P005 | ACTIVE-DRAFT | uses KO-000034–KO-000040 |
+| KO-000034 | Knowledge Object | Bentuk dasar pasangan س ش | QJ1-P005 | ACTIVE-DRAFT | used-by LO-000005 |
+| KO-000035 | Knowledge Object | Bunyi سَ | QJ1-P005 | ACTIVE-DRAFT | used-by LO-000005 |
+| KO-000036 | Knowledge Object | Bunyi شَ | QJ1-P005 | ACTIVE-DRAFT | used-by LO-000005 |
+| KO-000037 | Knowledge Object | Diskriminasi titik س ش | QJ1-P005 | ACTIVE-DRAFT | used-by LO-000005 |
+| KO-000038 | Knowledge Object | Integrasi سَ شَ dengan review دَ ذَ رَ زَ | QJ1-P005 | ACTIVE-DRAFT | used-by LO-000005 |
+| KO-000039 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P005 | QJ1-P005 | ACTIVE-DRAFT | used-by LO-000005 |
+| KO-000040 | Knowledge Object | Adab tekun memperbaiki bacaan | QJ1-P005-AKH01 | ACTIVE-DRAFT | supports LO-000005 |
 
 ## 3. Aturan
 
@@ -84,3 +93,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.2.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P002 |
 | 0.3.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P003 |
 | 0.4.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P004 |
+| 0.5.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P005 |
