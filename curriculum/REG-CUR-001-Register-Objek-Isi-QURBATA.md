@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.11.0-id  
+**Versi:** 0.12.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -125,6 +125,15 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000078 | Knowledge Object | Integrasi كَ لَ dengan review فَ قَ dan keluarga sebelumnya | QJ1-P011 | ACTIVE-DRAFT | used-by LO-000011 |
 | KO-000079 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P011 | QJ1-P011 | ACTIVE-DRAFT | used-by LO-000011 |
 | KO-000080 | Knowledge Object | Adab istiqamah setelah evaluasi | QJ1-P011-AKH01 | ACTIVE-DRAFT | supports LO-000011 |
+| PO-000012 | Page Object | Halaman Keluarga Mim–Nun Berfathah | QJ1-P012 | ACTIVE-DRAFT | child-of CO-000001 |
+| LO-000012 | Learning Object | Membedakan dan membaca مَ نَ dengan review keluarga sebelumnya | QJ1-P012 | ACTIVE-DRAFT | uses KO-000081–KO-000087 |
+| KO-000081 | Knowledge Object | Bentuk dasar م dan ن | QJ1-P012 | ACTIVE-DRAFT | used-by LO-000012 |
+| KO-000082 | Knowledge Object | Bunyi مَ | QJ1-P012 | ACTIVE-DRAFT | used-by LO-000012 |
+| KO-000083 | Knowledge Object | Bunyi نَ | QJ1-P012 | ACTIVE-DRAFT | used-by LO-000012 |
+| KO-000084 | Knowledge Object | Diskriminasi bentuk, titik, dan makhraj م ن | QJ1-P012 | ACTIVE-DRAFT | used-by LO-000012 |
+| KO-000085 | Knowledge Object | Integrasi مَ نَ dengan review كَ لَ dan keluarga sebelumnya | QJ1-P012 | ACTIVE-DRAFT | used-by LO-000012 |
+| KO-000086 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P012 | QJ1-P012 | ACTIVE-DRAFT | used-by LO-000012 |
+| KO-000087 | Knowledge Object | Adab menjaga kebersihan lisan | QJ1-P012-AKH01 | ACTIVE-DRAFT | supports LO-000012 |
 
 ## 3. Aturan
 
@@ -152,3 +161,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.9.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P009 |
 | 0.10.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk Evaluasi Fathah I QJ1-P010 |
 | 0.11.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P011 |
+| 0.12.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P012 |
