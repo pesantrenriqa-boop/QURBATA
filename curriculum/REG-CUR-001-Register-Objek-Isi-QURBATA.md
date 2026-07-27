@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.10.0-id  
+**Versi:** 0.11.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -116,6 +116,15 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000071 | Knowledge Object | Ketepatan makhraj huruf ءَ–قَ | QJ1-P010 | ACTIVE-DRAFT | used-by LO-000010 |
 | KO-000072 | Knowledge Object | Kelancaran rangkaian dua dan tiga huruf terpisah | QJ1-P010 | ACTIVE-DRAFT | used-by LO-000010 |
 | KO-000073 | Knowledge Object | Adab jujur dan tenang ketika dievaluasi | QJ1-P010-AKH01 | ACTIVE-DRAFT | supports LO-000010 |
+| PO-000011 | Page Object | Halaman Keluarga Kaf–Lam Berfathah | QJ1-P011 | ACTIVE-DRAFT | child-of CO-000001 |
+| LO-000011 | Learning Object | Membedakan dan membaca كَ لَ dengan review keluarga sebelumnya | QJ1-P011 | ACTIVE-DRAFT | uses KO-000074–KO-000080 |
+| KO-000074 | Knowledge Object | Bentuk dasar ك dan ل | QJ1-P011 | ACTIVE-DRAFT | used-by LO-000011 |
+| KO-000075 | Knowledge Object | Bunyi كَ | QJ1-P011 | ACTIVE-DRAFT | used-by LO-000011 |
+| KO-000076 | Knowledge Object | Bunyi لَ | QJ1-P011 | ACTIVE-DRAFT | used-by LO-000011 |
+| KO-000077 | Knowledge Object | Diskriminasi bentuk dan makhraj ك ل | QJ1-P011 | ACTIVE-DRAFT | used-by LO-000011 |
+| KO-000078 | Knowledge Object | Integrasi كَ لَ dengan review فَ قَ dan keluarga sebelumnya | QJ1-P011 | ACTIVE-DRAFT | used-by LO-000011 |
+| KO-000079 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P011 | QJ1-P011 | ACTIVE-DRAFT | used-by LO-000011 |
+| KO-000080 | Knowledge Object | Adab istiqamah setelah evaluasi | QJ1-P011-AKH01 | ACTIVE-DRAFT | supports LO-000011 |
 
 ## 3. Aturan
 
@@ -142,3 +151,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.8.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P008 |
 | 0.9.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P009 |
 | 0.10.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk Evaluasi Fathah I QJ1-P010 |
+| 0.11.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P011 |
