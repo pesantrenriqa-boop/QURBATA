@@ -4,7 +4,7 @@
 **Judul:** Kandidat Baseline Governance v1.0  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Kandidat; Belum Disetujui dan Belum Frozen  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Pemilik:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Klasifikasi Akses:** Internal  
@@ -35,14 +35,14 @@ Terjemahan Inggris dan Arab, implementasi RIQA OS, bukti operasional lapangan di
 
 | Elemen | Status |
 |---|---|
-| Commit SHA kandidat final | Menunggu seluruh tindakan repository selesai |
-| Tree/hash arsip | Menunggu |
-| Paket arsip | Menunggu |
+| Commit SHA kandidat final | `20892fbd5892dc2a79f23012ed6c98d0685a6eaa` |
+| Tree/hash arsip | Diidentifikasi oleh commit SHA Git kandidat |
+| Paket arsip | ZIP dan TAR.GZ berbasis SHA pada REC-GOV-017 |
 | Tanggal persetujuan | Menunggu |
 | Tanggal efektif | Menunggu |
 | Decision-ID | Menunggu |
-| Penandatangan | Menunggu |
-| Rencana transisi | Draf belum disahkan |
+| Penandatangan | Menunggu Decision-ID |
+| Rencana transisi | Draf tersedia; belum disahkan |
 
 ## 5. Aturan Kandidat
 
@@ -54,3 +54,4 @@ Setiap commit setelah kandidat ditetapkan wajib dinilai dampaknya. Kandidat hany
 |---|---|---|
 | 0.1.0-id | 26 Juli 2026 | Definisi awal ruang lingkup kandidat baseline |
 | 0.2.0-id | 27 Juli 2026 | Menetapkan master Bahasa Indonesia sebagai ruang lingkup gate Draft dan memisahkan terjemahan sebagai tindak lanjut non-blocking |
+| 0.3.0-id | 27 Juli 2026 | Menetapkan commit SHA kandidat dan paket arsip immutable melalui REC-GOV-017 |
