@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.1.0-id  
+**Versi:** 0.2.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -33,6 +33,16 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000006 | Knowledge Object | Rangkaian dua huruf terpisah keluarga ب ت ث | QJ1-P001 | ACTIVE-DRAFT | used-by LO-000001 |
 | KO-000007 | Knowledge Object | Rangkaian tiga huruf terpisah keluarga ب ت ث | QJ1-P001 | ACTIVE-DRAFT | used-by LO-000001 |
 | KO-000008 | Knowledge Object | Adab mendengar dan menirukan bacaan guru | QJ1-P001-AKH01 | ACTIVE-DRAFT | supports LO-000001 |
+| PO-000002 | Page Object | Halaman Hamza–Alif dan Penguatan Keluarga Ba | QJ1-P002 | ACTIVE-DRAFT | child-of CO-000001 |
+| LO-000002 | Learning Object | Membedakan dan membaca ءَ أَ dengan review بَ تَ ثَ | QJ1-P002 | ACTIVE-DRAFT | uses KO-000009–KO-000016 |
+| KO-000009 | Knowledge Object | Bentuk hamza mandiri ء | QJ1-P002 | ACTIVE-DRAFT | used-by LO-000002 |
+| KO-000010 | Knowledge Object | Bentuk hamza di atas alif أ | QJ1-P002 | ACTIVE-DRAFT | used-by LO-000002 |
+| KO-000011 | Knowledge Object | Bunyi fathah pendek ءَ | QJ1-P002 | ACTIVE-DRAFT | used-by LO-000002 |
+| KO-000012 | Knowledge Object | Bunyi fathah pendek أَ | QJ1-P002 | ACTIVE-DRAFT | used-by LO-000002 |
+| KO-000013 | Knowledge Object | Diskriminasi visual ء dan أ | QJ1-P002 | ACTIVE-DRAFT | used-by LO-000002 |
+| KO-000014 | Knowledge Object | Integrasi ءَ أَ dengan review بَ تَ ثَ | QJ1-P002 | ACTIVE-DRAFT | used-by LO-000002 |
+| KO-000015 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P002 | QJ1-P002 | ACTIVE-DRAFT | used-by LO-000002 |
+| KO-000016 | Knowledge Object | Adab sabar dalam mengulang bacaan | QJ1-P002-AKH01 | ACTIVE-DRAFT | supports LO-000002 |
 
 ## 3. Aturan
 
@@ -50,3 +60,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 0.1.0-id | 27 Juli 2026 | Membentuk BO, CUR, CO, PO, LO, dan KO awal untuk QJ1-P001 |
+| 0.2.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P002 |
