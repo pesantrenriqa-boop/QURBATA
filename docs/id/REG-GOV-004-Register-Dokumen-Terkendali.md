@@ -4,7 +4,7 @@
 **Judul:** Register Dokumen Terkendali QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.14.0-id  
+**Versi:** 1.0.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -64,7 +64,8 @@ Register ini menjadi daftar induk seluruh dokumen resmi QURBATA yang wajib diken
 
 | REG-GOV-012 | Register Keberatan Material QURBATA | 0.1.0-id | Draf Terkendali | Sekretariat Tata Kelola | docs/id/REG-GOV-012-Register-Keberatan-Material-QURBATA.md |
 | REG-GOV-013 | Register Bukti Governance QURBATA | 0.1.0-id | Draf Terkendali | Fungsi Penjaminan Mutu | docs/id/REG-GOV-013-Register-Bukti-Governance-QURBATA.md |
-| BAS-GOV-001 | Kandidat Baseline Governance v1.0 | 0.1.0-id | Kandidat; Belum Frozen | Fungsi Tata Kelola | docs/id/BAS-GOV-001-Kandidat-Baseline-Governance-v1.0.md |
+| BAS-GOV-001 | Baseline Governance v1.0 | 1.0.0-id | FROZEN; Efektif | Fungsi Tata Kelola | docs/id/BAS-GOV-001-Kandidat-Baseline-Governance-v1.0.md |
+| DEC-GOV-004 | Keputusan Ratifikasi Governance v1.0 | 1.0.0-id | RATIFIED; Efektif | Aris Liswanto | docs/id/DEC-GOV-004-Keputusan-Ratifikasi-Governance-v1.0.md |
 
 ## 5. Kolom Minimum RIQA OS
 `document_id`, `title`, `type`, `owner`, `approver`, `status`, `version`, `language_master`, `effective_date`, `next_review`, `repository_path`, `decision_id`, `supersedes`, `access_class`, `last_modified_at`.
@@ -95,3 +96,4 @@ RIQA OS harus menandai:
 | 0.12.0-id | 2026-07-27 | Menambahkan REC-GOV-015 dan menyelaraskan register setelah GF-07 PASS |
 | 0.13.0-id | 2026-07-27 | Menambahkan REC-GOV-016 dan menyelaraskan register setelah GF-12 PASS |
 | 0.14.0-id | 2026-07-27 | Menambahkan REC-GOV-017 dan menyelaraskan register setelah GF-15 PASS |
+| 1.0.0-id | 2026-07-27 | Mendaftarkan DEC-GOV-004 final dan baseline Governance v1.0 berstatus FROZEN |
