@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -43,6 +43,16 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000014 | Knowledge Object | Integrasi ءَ أَ dengan review بَ تَ ثَ | QJ1-P002 | ACTIVE-DRAFT | used-by LO-000002 |
 | KO-000015 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P002 | QJ1-P002 | ACTIVE-DRAFT | used-by LO-000002 |
 | KO-000016 | Knowledge Object | Adab sabar dalam mengulang bacaan | QJ1-P002-AKH01 | ACTIVE-DRAFT | supports LO-000002 |
+| PO-000003 | Page Object | Halaman Keluarga Jim Berfathah | QJ1-P003 | ACTIVE-DRAFT | child-of CO-000001 |
+| LO-000003 | Learning Object | Membedakan dan membaca جَ حَ خَ dengan review بَ تَ ثَ | QJ1-P003 | ACTIVE-DRAFT | uses KO-000017–KO-000024 |
+| KO-000017 | Knowledge Object | Bentuk dasar keluarga ج ح خ | QJ1-P003 | ACTIVE-DRAFT | used-by LO-000003 |
+| KO-000018 | Knowledge Object | Bunyi جَ | QJ1-P003 | ACTIVE-DRAFT | used-by LO-000003 |
+| KO-000019 | Knowledge Object | Bunyi حَ | QJ1-P003 | ACTIVE-DRAFT | used-by LO-000003 |
+| KO-000020 | Knowledge Object | Bunyi خَ | QJ1-P003 | ACTIVE-DRAFT | used-by LO-000003 |
+| KO-000021 | Knowledge Object | Diskriminasi jumlah dan posisi titik ج ح خ | QJ1-P003 | ACTIVE-DRAFT | used-by LO-000003 |
+| KO-000022 | Knowledge Object | Integrasi جَ حَ خَ dengan review بَ تَ ثَ | QJ1-P003 | ACTIVE-DRAFT | used-by LO-000003 |
+| KO-000023 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P003 | QJ1-P003 | ACTIVE-DRAFT | used-by LO-000003 |
+| KO-000024 | Knowledge Object | Adab teliti sebelum membaca | QJ1-P003-AKH01 | ACTIVE-DRAFT | supports LO-000003 |
 
 ## 3. Aturan
 
@@ -61,3 +71,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 |---|---|---|
 | 0.1.0-id | 27 Juli 2026 | Membentuk BO, CUR, CO, PO, LO, dan KO awal untuk QJ1-P001 |
 | 0.2.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P002 |
+| 0.3.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P003 |
