@@ -4,7 +4,7 @@
 **Produk:** Buku QURBATA Jilid 1  
 **Judul Resmi:** Struktur Buku QURBATA Jilid 1  
 **Status:** Draf Terkendali — Belum Disetujui  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Bahasa Induk:** Bahasa Indonesia  
 **Jumlah Halaman Inti:** 40  
 **Sasaran Pengguna:** Peserta didik pemula membaca Al-Qur’an; usia dan kebutuhan spesifik ditetapkan saat validasi pengguna  
@@ -63,8 +63,8 @@ Jilid 1 belum mengajarkan mad, tanwin, sukun, tasydid, atau kaidah tajwid lanjut
 
 | Halaman | Kode Unit Buku | Fokus | Materi Baru | Review/Integrasi | Jenis |
 |---:|---|---|---|---|---|
-| 1 | QJ1-P001 | Bunyi fathah awal | ءَ اَ | — | Latihan |
-| 2 | QJ1-P002 | Keluarga Ba | بَ تَ ثَ | ءَ اَ | Latihan |
+| 1 | QJ1-P001 | Keluarga Ba berfathah | بَ تَ ثَ | — | Latihan |
+| 2 | QJ1-P002 | Hamza–Alif dan penguatan keluarga Ba | ءَ أَ | بَ تَ ثَ | Latihan |
 | 3 | QJ1-P003 | Keluarga Jim | جَ حَ خَ | بَ تَ ثَ | Latihan |
 | 4 | QJ1-P004 | Keluarga Dal–Ra | دَ ذَ رَ زَ | ءَ–خَ | Latihan |
 | 5 | QJ1-P005 | Keluarga Sin | سَ شَ | دَ ذَ رَ زَ | Latihan |
@@ -174,3 +174,4 @@ Halaman evaluasi tidak mengenalkan materi baru dan harus mengambil sampel dari s
 |---|---|---|
 | 0.1.0-id | 27 Juli 2026 | Struktur awal 40 halaman dan aturan 24 tangga |
 | 0.2.0-id | 27 Juli 2026 | Audit konstitusional: metadata dilengkapi, kode QJ diklasifikasi ulang, relasi CUR/LO/KO dan tema akhlak per halaman ditambahkan |
+| 0.3.0-id | 27 Juli 2026 | Mengunci QJ1-P001 pada keluarga ب ت ث; menempatkan hamza–alif pada QJ1-P002 dan menghapus bentuk اَ yang tidak tepat |
