@@ -4,7 +4,7 @@
 **Judul:** Audit Awal Kesiapan Governance Freeze QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Laporan Audit Internal Awal  
-**Versi:** 0.3.0-id  
+**Versi:** 0.4.0-id  
 **Tanggal Audit:** 26 Juli 2026  
 **Objek:** GF-2026-001 — Governance v1.0  
 **Ruang Lingkup:** PR #1, branch feature/f001-constitution  
@@ -90,7 +90,7 @@ Checklist dinilai lengkap sebagai instrumen, tetapi belum boleh dinyatakan lulus
 | Finding-ID | Tingkat | Temuan |
 |---|---|---|
 | AUD-2026-006 | Mayor | Temuan mayor terbuka menghalangi GF-10 |
-| AUD-2026-007 | Mayor | Telaah independen dan register keberatan material belum tersedia |
+| AUD-2026-007 | Mayor—Ditutup | Telaah independen dan register keberatan material tersedia melalui REC-GOV-001–REC-GOV-004 dan REG-GOV-012 |
 | AUD-2026-008 | Mayor | Baseline final, Decision-ID, tanggal efektif, dan transisi freeze belum ditetapkan |
 | AUD-2026-009 | Minor | RACI belum didukung penetapan personel, pengganti, kompetensi, dan uji akses |
 | AUD-2026-010 | Minor | Bukti implementasi CTM, risiko, CAPA, safeguarding, dan RIQA OS belum lengkap |
@@ -98,7 +98,7 @@ Checklist dinilai lengkap sebagai instrumen, tetapi belum boleh dinyatakan lulus
 ## 8. Tindakan Prioritas
 
 1. selesaikan audit editorial dan substantif Bahasa Indonesia;
-2. lengkapi formalitas dan audit trail penelaah independen;
+2. pertahankan formalitas dan audit trail penelaah independen yang telah tersedia;
 3. pertahankan register keberatan material dan rekam setiap keberatan baru;
 4. tutup atau terima secara sah seluruh temuan mayor;
 5. isi bukti pada CTM, checklist, risiko, CAPA, dan safeguarding;
@@ -117,3 +117,4 @@ GF-2026-001 tidak memenuhi syarat untuk status FROZEN. Status tetap BLOCKED samp
 | 0.1.0-id | 26 Juli 2026 | Audit awal 16 gate, RACI, checklist, tautan, dan bukti |
 | 0.2.0-id | 27 Juli 2026 | Menyelaraskan hasil menjadi 6 PASS, 8 PARTIAL, 2 FAIL serta mencatat bukti kesiapan Safeguarding Lead |
 | 0.3.0-id | 27 Juli 2026 | Memvalidasi kesiapan operasional awal safeguarding berdasarkan REC-GOV-005–REC-GOV-012 |
+| 0.4.0-id | 27 Juli 2026 | Menyelaraskan status telaah independen dan memisahkan gate Ready for Review dari Governance Freeze |
