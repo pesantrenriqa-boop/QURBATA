@@ -4,7 +4,7 @@
 **Judul:** Register Risiko QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.3.0-id  
+**Versi:** 0.4.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -53,7 +53,11 @@ Probabilitas dan dampak dinilai 1–5. Nilai risiko = probabilitas × dampak.
 | RSK-LEG-001 | LEG | Contoh, gambar, font, audio, atau materi melanggar lisensi | 3 | 4 | 12 | Asset register direncanakan | Bukti lisensi dan provenance wajib | Legal/IP Owner | Terbuka |
 | RSK-OPS-001 | OPS | Visi sistem terlalu besar memperlambat penyelesaian buku | 4 | 4 | 16 | Prioritas buku sebagai produk utama | Stage gate: fondasi minimum lalu produksi buku | Program Lead | Mitigasi berjalan |
 
-## 5. Respons Risiko
+## 5. Kesimpulan Gate Risiko
+
+Audit internal 27 Juli 2026 menemukan 10 risiko terdaftar dengan skor tertinggi 16 dan **0 risiko berkategori kritis** (17–25). Dengan demikian, kriteria GF-09—tidak membiarkan risiko kritis tanpa pengendalian—terpenuhi. Risiko tinggi tetap wajib dimitigasi dan dipantau; kelulusan GF-09 tidak berarti seluruh risiko telah ditutup.
+
+## 6. Respons Risiko
 - Hindari;
 - Kurangi;
 - Alihkan;
@@ -62,18 +66,19 @@ Probabilitas dan dampak dinilai 1–5. Nilai risiko = probabilitas × dampak.
 
 Risiko kritis tidak boleh diterima oleh pemilik operasional sendiri.
 
-## 6. Data Wajib RIQA OS
+## 7. Data Wajib RIQA OS
 `risk_id`, `category`, `statement`, `cause`, `impact`, `probability`, `severity`, `inherent_score`, `controls`, `residual_score`, `response`, `owner`, `review_date`, `linked_requirement`, `linked_finding`, `linked_capa`, `status`.
 
-## 7. Penelaahan
+## 8. Penelaahan
 - Kritis: mingguan;
 - Tinggi: bulanan;
 - Sedang: triwulanan;
 - Rendah: semesteran;
 - seluruh risiko: setiap perubahan mayor atau insiden.
 
-## 8. Catatan Perubahan
+## 9. Catatan Perubahan
 | Versi | Tanggal | Perubahan |
 |---|---|---|
 | 0.1.0 | 2026-07-26 | Register risiko awal dan sepuluh risiko prioritas dibuat |
 | 0.3.0-id | 2026-07-27 | Menyelaraskan risiko sumber normatif, terminologi, dan kontrol safeguarding dengan bukti terbaru |
+| 0.4.0-id | 2026-07-27 | Mencatat audit profil risiko: 10 risiko, skor maksimum 16, dan tidak ada risiko kritis tak terkendali |
