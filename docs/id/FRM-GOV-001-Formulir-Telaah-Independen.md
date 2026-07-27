@@ -4,7 +4,11 @@
 **Penelaah:** Arif Nasruddin  
 **Assignment-ID:** ASN-GOV-007  
 **Freeze-ID:** GF-2026-001  
-**Status:** Menunggu diisi
+**Status:** Diarsipkan sebagai instrumen; hasil telaah tercatat pada REC-GOV-001–REC-GOV-004
+
+## Catatan Kendali
+
+Formulir ini dipertahankan sebagai instrumen telaah. Keputusan, independensi, validasi substantif, dan ketiadaan keberatan material telah dicatat pada REC-GOV-001–REC-GOV-004; formulir kosong ini tidak boleh ditafsirkan sebagai belum dilaksanakannya telaah.
 
 ## Petunjuk
 
