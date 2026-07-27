@@ -4,7 +4,7 @@
 **Judul:** Register Temuan Audit QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.5.0-id  
+**Versi:** 0.6.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -33,9 +33,9 @@ Status tambahan: `Ditangguhkan dengan Risiko Diterima`, hanya dengan keputusan b
 ## 4. Register Awal
 | Finding-ID | Area | Referensi | Tingkat | Temuan | Pemilik | Tenggat | Status |
 |---|---|---|---|---|---|---|---|
-| AUD-2026-001 | Governance | QC-000–QC-012 | Mayor | Versi register telah diselaraskan dan istilah penelaahan telah dibakukan; tanggal berlaku, jadwal tinjauan, serta validasi editorial independen belum lengkap | Document Controller | Sebelum Governance Freeze | Dalam Pelaksanaan |
+| AUD-2026-001 | Governance | QC-000–QC-012 | Minor | Metadata minimum 13/13 dokumen dan versi register telah diselaraskan; validasi editorial independen masih diperlukan | Document Controller | Sebelum Governance Freeze | Menunggu Verifikasi |
 | AUD-2026-002 | Bahasa | Terjemahan QC-000 | Minor | Naskah Inggris belum sepenuhnya harmonis dengan master Indonesia; tidak termasuk baseline Governance v1.0 Bahasa Indonesia | Translation Lead | Sebelum publikasi terjemahan resmi | Terbuka; Non-blocking untuk Ready for Review |
-| AUD-2026-003 | Knowledge-ID | REG-GOV-001 | Mayor | Register awal belum mencakup seluruh objek kurikulum dan buku | Knowledge Architect | Sebelum Curriculum Freeze | Terbuka |
+| AUD-2026-003 | Knowledge-ID | REG-GOV-001 | Minor | Register objek kurikulum dan buku belum dipopulasi; tidak termasuk baseline Governance v1.0 | Knowledge Architect | Sebelum Curriculum Freeze | Terbuka; Non-blocking untuk Governance Freeze |
 | AUD-2026-004 | Safeguarding | QC-012 | Mayor | Uji awal kanal, 2FA, penerimaan email, eskalasi WhatsApp, target respons, dan Case-ID telah dilaksanakan | Safeguarding Lead | 27 Juli 2026 | Ditutup; audit efektivitas berkala tetap wajib |
 | AUD-2026-005 | Keterlacakan | QC-004/CTM | Minor | Sejumlah persyaratan belum memiliki bukti dan pemilik final | QA Lead | Sebelum ratifikasi | Terbuka |
 | AUD-2026-006 | Governance Freeze | REG-GOV-011 | Mayor | Temuan mayor terbuka menghalangi GF-10 | QA Lead | Sebelum Governance Freeze | Terbuka |
@@ -79,3 +79,4 @@ RIQA OS harus menyediakan pengingat tenggat, eskalasi temuan kritis/mayor, relas
 | 0.3.0-id | 2026-07-27 | Terjemahan dipindahkan menjadi tindak lanjut non-blocking; temuan safeguarding dan telaah independen diselaraskan dengan bukti |
 | 0.4.0-id | 2026-07-27 | Menyelaraskan temuan RACI dengan penetapan Ulifah dan Izathy Khoirina serta menyisakan verifikasi yang benar-benar belum selesai |
 | 0.5.0-id | 2026-07-27 | Mencatat penyelarasan versi dan terminologi serta mempersempit sisa temuan metadata/editorial |
+| 0.6.0-id | 2026-07-27 | Memvalidasi metadata 13/13 dokumen dan memisahkan populasi objek kurikulum/buku dari baseline Governance v1.0 |
