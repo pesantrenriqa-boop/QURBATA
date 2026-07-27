@@ -4,7 +4,7 @@
 **Judul:** Audit Awal Kesiapan Governance Freeze QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Laporan Audit Internal Awal  
-**Versi:** 0.8.0-id  
+**Versi:** 0.9.0-id  
 **Tanggal Audit:** 26 Juli 2026  
 **Objek:** GF-2026-001 — Governance v1.0  
 **Ruang Lingkup:** PR #1, branch feature/f001-constitution  
@@ -20,8 +20,8 @@ Status awal Governance Freeze adalah BLOCKED.
 
 Dari 16 gate kritis:
 
-- 10 PASS;
-- 4 PARTIAL;
+- 11 PASS;
+- 3 PARTIAL;
 - 2 FAIL;
 - 0 NOT-APPLICABLE.
 
@@ -62,7 +62,7 @@ Audit ini merupakan desk review internal. Audit belum mencakup observasi lapanga
 | GF-08 | PASS | EVD-AUD-000009 | Dokumen safeguarding dan proses pengaduan tersedia |
 | GF-09 | PASS | EVD-GOV-000016 | Sepuluh risiko terdaftar; skor maksimum 16 dan tidak terdapat risiko kritis tanpa pengendalian |
 | GF-10 | FAIL | EVD-AUD-000007 | Temuan mayor masih terbuka dan belum mempunyai keputusan penerimaan risiko yang sah |
-| GF-11 | PARTIAL | EVD-AUD-000010 | Mekanisme CAPA tersedia; verifikasi efektivitas independen belum lengkap |
+| GF-11 | PASS | EVD-GOV-000017 | Seluruh CAPA yang ditutup memiliki bukti efektivitas; CAPA terbuka tidak dihitung sebagai selesai |
 | GF-12 | PARTIAL | EVD-AUD-000006 | CTM mempunyai pemilik dan objek sistem; sebagian besar bukti implementasi belum tersedia |
 | GF-13 | PASS | EVD-GOV-000004 | QC-000 dinilai valid dan layak dilanjutkan oleh Arif Nasruddin |
 | GF-14 | PASS | EVD-GOV-000003 | Penelaah independen menyatakan tidak ada keberatan material |
@@ -122,3 +122,4 @@ GF-2026-001 tidak memenuhi syarat untuk status FROZEN. Status tetap BLOCKED samp
 | 0.6.0-id | 27 Juli 2026 | Menaikkan GF-02 menjadi PASS dan memperbarui hasil menjadi 8 PASS, 6 PARTIAL, 2 FAIL |
 | 0.7.0-id | 27 Juli 2026 | Menaikkan GF-06 menjadi PASS dan memperbarui hasil menjadi 9 PASS, 5 PARTIAL, 2 FAIL |
 | 0.8.0-id | 27 Juli 2026 | Menaikkan GF-04 menjadi PASS dan memperbarui hasil menjadi 10 PASS, 4 PARTIAL, 2 FAIL |
+| 0.9.0-id | 27 Juli 2026 | Menaikkan GF-11 menjadi PASS dan memperbarui hasil menjadi 11 PASS, 3 PARTIAL, 2 FAIL |
