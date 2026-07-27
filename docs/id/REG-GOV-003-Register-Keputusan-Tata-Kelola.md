@@ -2,7 +2,7 @@
 
 **Kode Dokumen:** REG-GOV-003  
 **Status:** Draf Terkendali  
-**Versi:** 0.1.0-id  
+**Versi:** 0.2.0-id  
 **Bahasa Induk:** Bahasa Indonesia  
 **Induk Normatif:** QC-000, QC-006, QC-007, QC-008
 
@@ -61,7 +61,7 @@ Contoh: `DEC-GOV-001`, `DEC-CUR-001`, `DEC-OS-001`, `DEC-RSK-001`.
 | DEC-GOV-001 | Bahasa Indonesia ditetapkan sebagai bahasa induk normatif QURBATA | APPROVED-DRAFT | QC-000, QC-002 | Terjemahan tidak mengendalikan sebelum harmonisasi |
 | DEC-GOV-002 | QC-000 menjadi norma tertinggi dan QC-001–QC-012 menjadi dokumen turunan | APPROVED-DRAFT | QC-000, QC-001 | Menetapkan hierarki tata kelola |
 | DEC-GOV-003 | Knowledge-ID digunakan untuk objek pengetahuan dan keterlacakan | APPROVED-DRAFT | QC-002, QC-004, REG-GOV-001 | Dasar integrasi RIQA OS |
-| DEC-GOV-004 | Governance v1.0 dibekukan setelah audit final dan kriteria keluar draf terpenuhi | PROPOSED | QC-003, README Governance | Mencegah perluasan governance tanpa batas |
+| DEC-GOV-004 | Ratifikasi dan pembekuan Governance v1.0 Bahasa Indonesia atas baseline kandidat | UNDER-REVIEW | QC-003, QC-007, BAS-GOV-001, AUD-GOV-001 | Menunggu persetujuan eksplisit otoritas; belum efektif dan belum FROZEN |
 | DEC-PRD-001 | Buku QURBATA tetap menjadi produk utama tahap pertama | APPROVED-DRAFT | Arah proyek QURBATA | Turunan digital mengikuti setelah struktur dan isi buku stabil |
 | DEC-DAT-001 | Master data menjadi sumber tunggal bagi buku dan keluaran turunannya | APPROVED-DRAFT | QC-004, arsitektur produk | Mengurangi duplikasi dan inkonsistensi |
 
