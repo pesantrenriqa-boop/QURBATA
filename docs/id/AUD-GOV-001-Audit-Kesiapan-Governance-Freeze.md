@@ -4,7 +4,7 @@
 **Judul:** Audit Awal Kesiapan Governance Freeze QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Laporan Audit Internal Awal  
-**Versi:** 0.9.0-id  
+**Versi:** 0.10.0-id  
 **Tanggal Audit:** 26 Juli 2026  
 **Objek:** GF-2026-001 — Governance v1.0  
 **Ruang Lingkup:** PR #1, branch feature/f001-constitution  
@@ -20,8 +20,8 @@ Status awal Governance Freeze adalah BLOCKED.
 
 Dari 16 gate kritis:
 
-- 11 PASS;
-- 3 PARTIAL;
+- 12 PASS;
+- 2 PARTIAL;
 - 2 FAIL;
 - 0 NOT-APPLICABLE.
 
@@ -58,7 +58,7 @@ Audit ini merupakan desk review internal. Audit belum mencakup observasi lapanga
 | GF-04 | PASS | EVD-AUD-000006 | Dua puluh ID unik, tanpa duplikasi, dan seluruh referensi CTM ditemukan; kelengkapan substantif dinilai melalui GF-12 |
 | GF-05 | PASS | EVD-AUD-000001 | Seluruh tautan relatif Markdown pada ruang lingkup PR dapat diresolusikan |
 | GF-06 | PASS | EVD-GOV-000015/EVD-GOV-000002 | Terminologi material diselaraskan, didefinisikan dalam QC-005, dan seri QC lulus telaah independen |
-| GF-07 | PARTIAL | EVD-AUD-000005 | RACI, quorum, dan mekanisme ratifikasi tersedia; penetapan personel dan uji kewenangan belum dibuktikan |
+| GF-07 | PASS | EVD-AUD-000005/EVD-GOV-000013/EVD-GOV-000014/EVD-GOV-000018 | Penetapan peran/pengganti tersedia dan delapan skenario RACI, quorum, pemisahan tugas, serta ratifikasi lulus uji meja |
 | GF-08 | PASS | EVD-AUD-000009 | Dokumen safeguarding dan proses pengaduan tersedia |
 | GF-09 | PASS | EVD-GOV-000016 | Sepuluh risiko terdaftar; skor maksimum 16 dan tidak terdapat risiko kritis tanpa pengendalian |
 | GF-10 | FAIL | EVD-AUD-000007 | Temuan mayor masih terbuka dan belum mempunyai keputusan penerimaan risiko yang sah |
@@ -123,3 +123,4 @@ GF-2026-001 tidak memenuhi syarat untuk status FROZEN. Status tetap BLOCKED samp
 | 0.7.0-id | 27 Juli 2026 | Menaikkan GF-06 menjadi PASS dan memperbarui hasil menjadi 9 PASS, 5 PARTIAL, 2 FAIL |
 | 0.8.0-id | 27 Juli 2026 | Menaikkan GF-04 menjadi PASS dan memperbarui hasil menjadi 10 PASS, 4 PARTIAL, 2 FAIL |
 | 0.9.0-id | 27 Juli 2026 | Menaikkan GF-11 menjadi PASS dan memperbarui hasil menjadi 11 PASS, 3 PARTIAL, 2 FAIL |
+| 0.10.0-id | 27 Juli 2026 | Menaikkan GF-07 menjadi PASS dan memperbarui hasil menjadi 12 PASS, 2 PARTIAL, 2 FAIL |
