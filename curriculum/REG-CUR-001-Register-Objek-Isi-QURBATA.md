@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.25.0-id  
+**Versi:** 0.26.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -270,6 +270,19 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000194 | Knowledge Object | Konsistensi bunyi pendek tanpa mad | QJ1-P025 | ACTIVE-DRAFT | used-by LO-000025 |
 | KO-000195 | Knowledge Object | Kelancaran rangkaian dua dan tiga huruf terpisah QJ1-P025 | QJ1-P025 | ACTIVE-DRAFT | used-by LO-000025 |
 | KO-000196 | Knowledge Object | Adab teliti melihat harakat sebelum membaca | QJ1-P025-AKH01 | ACTIVE-DRAFT | supports LO-000025 |
+| CO-000003 | Chapter Object | Fase Dhammah Jilid 1 | QJ1-P026–P035 | ACTIVE-DRAFT | child-of BO-000001 |
+| PO-000026 | Page Object | Bunyi Dhammah Awal | QJ1-P026 | ACTIVE-DRAFT | child-of CO-000003 |
+| LO-000026 | Learning Object | Membedakan dan membaca أُ بُ تُ ثُ dengan review padanan fathah–kasrah | QJ1-P026 | ACTIVE-DRAFT | uses KO-000197–KO-000206 |
+| KO-000197 | Knowledge Object | Bentuk dhammah pada أ ب ت ث | QJ1-P026 | ACTIVE-DRAFT | used-by LO-000026 |
+| KO-000198 | Knowledge Object | Bunyi أُ | QJ1-P026 | ACTIVE-DRAFT | used-by LO-000026 |
+| KO-000199 | Knowledge Object | Bunyi بُ | QJ1-P026 | ACTIVE-DRAFT | used-by LO-000026 |
+| KO-000200 | Knowledge Object | Bunyi تُ | QJ1-P026 | ACTIVE-DRAFT | used-by LO-000026 |
+| KO-000201 | Knowledge Object | Bunyi ثُ | QJ1-P026 | ACTIVE-DRAFT | used-by LO-000026 |
+| KO-000202 | Knowledge Object | Diskriminasi bentuk dan titik أ ب ت ث | QJ1-P026 | ACTIVE-DRAFT | used-by LO-000026 |
+| KO-000203 | Knowledge Object | Kontras dhammah–fathah–kasrah pada أ ب ت ث | QJ1-P026 | ACTIVE-DRAFT | used-by LO-000026 |
+| KO-000204 | Knowledge Object | Integrasi dhammah baru dengan review padanan | QJ1-P026 | ACTIVE-DRAFT | used-by LO-000026 |
+| KO-000205 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P026 | QJ1-P026 | ACTIVE-DRAFT | used-by LO-000026 |
+| KO-000206 | Knowledge Object | Adab rendah hati ketika memulai bunyi baru | QJ1-P026-AKH01 | ACTIVE-DRAFT | supports LO-000026 |
 
 ## 3. Aturan
 
@@ -311,3 +324,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.23.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P023 |
 | 0.24.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk integrasi kasrah QJ1-P024 |
 | 0.25.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk kontras fathah–kasrah QJ1-P025 |
+| 0.26.0-id | 27 Juli 2026 | Membentuk CO fase dhammah serta menambahkan PO, LO, dan KO untuk QJ1-P026 |
