@@ -12,7 +12,7 @@
 | ID Dokumen | QC-000 |
 | Judul | Konstitusi QURBATA |
 | Bahasa | Bahasa Indonesia |
-| Versi | 0.5.0-id |
+| Versi | 0.6.0-id |
 | Status | Draf Pendiri |
 | Klasifikasi Akses | Publik |
 | Tingkat Dokumen | Konstitusional |
@@ -571,7 +571,7 @@ QURBATA dapat mencakup:
 5. sistem guru, pengurus, dan pengembangan SDM;
 6. sistem dokumentasi dan repositori;
 7. sistem pembayaran dan layanan administrasi;
-8. dashboard, analitika, dan pelaporan;
+8. dasbor, analitika, dan pelaporan;
 9. integrasi identitas, QR, barcode, NFC, atau teknologi lain;
 10. kecerdasan buatan dan otomatisasi yang dikendalikan; dan
 11. tata kelola, keamanan, retensi, serta pemulihan data.
@@ -1464,3 +1464,5 @@ Ratifikasi hanya berlaku setelah nomor versi, tanggal ratifikasi, tanggal berlak
 - [x] BAB XIV — Implementasi dan Pengendalian Mutu
 - [x] BAB XV — Perubahan dan Ratifikasi
 - [x] Lampiran
+
+<!-- Audit editorial 27 Juli 2026: istilah review, dashboard, dan checklist diselaraskan menjadi penelaahan, dasbor, dan daftar periksa pada master Bahasa Indonesia. -->
