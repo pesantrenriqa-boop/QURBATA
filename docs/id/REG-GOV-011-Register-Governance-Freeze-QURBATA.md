@@ -4,7 +4,7 @@
 **Judul:** Register Governance Freeze QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.7.0-id  
+**Versi:** 0.8.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola dan Penjaminan Mutu QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -90,7 +90,7 @@ NOT-APPLICABLE hanya sah apabila alasan dan otoritas penetapannya terdokumentasi
 
 | Freeze-ID | Objek | Versi/Baseline | Status | PASS | PARTIAL | FAIL | Pemilik | Decision-ID |
 |---|---|---|---|---:|---:|---:|---|---|
-| GF-2026-001 | Governance v1.0 | PR #1 / branch feature/f001-constitution | BLOCKED | 11 | 3 | 2 | Fungsi Tata Kelola | Menunggu |
+| GF-2026-001 | Governance v1.0 | PR #1 / branch feature/f001-constitution | BLOCKED | 12 | 2 | 2 | Fungsi Tata Kelola | Menunggu |
 
 Angka gate pada register hanya diperbarui setelah bukti dinilai, bukan berdasarkan keberadaan dokumen semata.
 
@@ -104,7 +104,7 @@ Angka gate pada register hanya diperbarui setelah bukti dinilai, bukan berdasark
 | GF-2026-001 | GF-04 | PASS | EVD-AUD-000006 | Audit internal | 2026-07-27 | Tidak ditemukan ID ganda atau referensi CTM yatim; kelengkapan pemetaan dinilai terpisah pada GF-12 |
 | GF-2026-001 | GF-05 | PASS | EVD-AUD-000001 | Audit internal awal | 2026-07-26 | Tidak ada tautan relatif rusak |
 | GF-2026-001 | GF-06 | PASS | EVD-GOV-000015/EVD-GOV-000002 | Document Controller/Arif Nasruddin | 2026-07-27 | Istilah material diselaraskan dengan QC-005 dan seri QC lulus telaah independen tanpa keberatan material |
-| GF-2026-001 | GF-07 | PARTIAL | EVD-AUD-000005 | Audit internal awal | 2026-07-26 | Penetapan personel belum dibuktikan |
+| GF-2026-001 | GF-07 | PASS | EVD-AUD-000005/EVD-GOV-000013/EVD-GOV-000014/EVD-GOV-000018 | Audit internal | 2026-07-27 | Peran, pengganti, pemisahan tugas, quorum, dan ratifikasi konsisten dalam delapan skenario uji meja |
 | GF-2026-001 | GF-08 | PASS | EVD-AUD-000009 | Audit internal awal | 2026-07-26 | Dokumen safeguarding dan pengaduan tersedia |
 | GF-2026-001 | GF-09 | PASS | EVD-GOV-000016 | Audit internal | 2026-07-27 | Sepuluh risiko terdaftar; skor maksimum 16 dan tidak terdapat risiko kritis tanpa pengendalian |
 | GF-2026-001 | GF-10 | FAIL | EVD-AUD-000007 | Audit internal awal | 2026-07-26 | Temuan mayor masih terbuka |
@@ -155,3 +155,4 @@ Sistem harus mencegah status FROZEN apabila ada gate kritis FAIL, Evidence-ID wa
 | 0.5.0-id | 27 Juli 2026 | GF-06 dinaikkan menjadi PASS setelah harmonisasi dan pembakuan terminologi; total 9 PASS, 5 PARTIAL, 2 FAIL |
 | 0.6.0-id | 27 Juli 2026 | GF-04 dinaikkan menjadi PASS setelah audit duplikasi dan orphan; total 10 PASS, 4 PARTIAL, 2 FAIL |
 | 0.7.0-id | 27 Juli 2026 | GF-11 dinaikkan menjadi PASS setelah verifikasi CAPA tertutup; total 11 PASS, 3 PARTIAL, 2 FAIL |
+| 0.8.0-id | 27 Juli 2026 | GF-07 dinaikkan menjadi PASS setelah uji meja RACI dan kewenangan; total 12 PASS, 2 PARTIAL, 2 FAIL |
