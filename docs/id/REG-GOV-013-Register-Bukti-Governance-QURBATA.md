@@ -4,7 +4,7 @@
 **Judul:** Register Bukti Governance QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.12.0-id  
+**Versi:** 0.13.0-id  
 **Pemilik Dokumen:** Fungsi Penjaminan Mutu QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -54,7 +54,7 @@ PROPOSED, COLLECTED, UNDER-VALIDATION, VALID, REJECTED, EXPIRED, SUPERSEDED, dan
 | EVD-GOV-000010 | Uji eskalasi WhatsApp kepada Safeguarding Lead | REC-GOV-010 | VALID | Ainul Yakin | Konfirmasi langsung penerima; tanpa kasus nyata atau data santri |
 | EVD-GOV-000011 | Target waktu respons safeguarding | REC-GOV-011 | VALID | Ainul Yakin | Disetujui Aris Liswanto; efektivitas waktu aktual belum diuji |
 | EVD-GOV-000012 | Format nomor perkara safeguarding | REC-GOV-012 | VALID | Aris Liswanto | Format disetujui; identitas santri dilarang dalam Case-ID dan subjek email |
-| EVD-GOV-000013 | Penunjukan dan penerimaan mandat Ulifah sebagai pengganti Safeguarding Lead | REC-GOV-013 | VALID | Aris Liswanto | Ulifah menerima mandat dan komitmen kerahasiaan; aktivasi wajib dicatat per kejadian |
+| EVD-GOV-000013 | Penunjukan, penerimaan mandat, dan deklarasi konflik Ulifah sebagai pengganti Safeguarding Lead | REC-GOV-013 | VALID | Aris Liswanto | Tidak ada konflik umum yang dinyatakan; konflik wajib diperiksa dan diungkap per perkara |
 
 ## 5. Data Minimum
 
@@ -80,3 +80,4 @@ RIQA OS mencegah gate PASS bila Evidence-ID wajib tidak berstatus VALID, telah k
 | 0.10.0-id | 27 Juli 2026 | Menetapkan format Case-ID dan memvalidasi kesiapan operasional awal safeguarding |
 | 0.11.0-id | 27 Juli 2026 | Mencatat penunjukan awal Ulifah sebagai pengganti Safeguarding Lead |
 | 0.12.0-id | 27 Juli 2026 | Memvalidasi penerimaan mandat dan komitmen kerahasiaan Ulifah |
+| 0.13.0-id | 27 Juli 2026 | Mencatat deklarasi tidak ada konflik umum dari Ulifah |
