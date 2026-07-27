@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.31.0-id  
+**Versi:** 0.32.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -341,6 +341,18 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000252 | Knowledge Object | Integrasi dhammah baru dengan keluarga sebelumnya | QJ1-P031 | ACTIVE-DRAFT | used-by LO-000031 |
 | KO-000253 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P031 | QJ1-P031 | ACTIVE-DRAFT | used-by LO-000031 |
 | KO-000254 | Knowledge Object | Adab bersungguh-sungguh tanpa memaksa suara | QJ1-P031-AKH01 | ACTIVE-DRAFT | supports LO-000031 |
+| PO-000032 | Page Object | Dhammah Fa–Lam | QJ1-P032 | ACTIVE-DRAFT | child-of CO-000003 |
+| LO-000032 | Learning Object | Membedakan dan membaca فُ قُ كُ لُ dengan review dhammah sebelumnya | QJ1-P032 | ACTIVE-DRAFT | uses KO-000255–KO-000264 |
+| KO-000255 | Knowledge Object | Bentuk dhammah ف ق ك ل | QJ1-P032 | ACTIVE-DRAFT | used-by LO-000032 |
+| KO-000256 | Knowledge Object | Bunyi فُ | QJ1-P032 | ACTIVE-DRAFT | used-by LO-000032 |
+| KO-000257 | Knowledge Object | Bunyi قُ | QJ1-P032 | ACTIVE-DRAFT | used-by LO-000032 |
+| KO-000258 | Knowledge Object | Bunyi كُ | QJ1-P032 | ACTIVE-DRAFT | used-by LO-000032 |
+| KO-000259 | Knowledge Object | Bunyi لُ | QJ1-P032 | ACTIVE-DRAFT | used-by LO-000032 |
+| KO-000260 | Knowledge Object | Diskriminasi ف/ق، ق/ك، dan ك/ل | QJ1-P032 | ACTIVE-DRAFT | used-by LO-000032 |
+| KO-000261 | Knowledge Object | Kontras dhammah–fathah–kasrah pada ف ق ك ل | QJ1-P032 | ACTIVE-DRAFT | used-by LO-000032 |
+| KO-000262 | Knowledge Object | Integrasi dhammah baru dengan keluarga sebelumnya | QJ1-P032 | ACTIVE-DRAFT | used-by LO-000032 |
+| KO-000263 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P032 | QJ1-P032 | ACTIVE-DRAFT | used-by LO-000032 |
+| KO-000264 | Knowledge Object | Adab menjaga ketelitian pada bentuk dan bunyi mirip | QJ1-P032-AKH01 | ACTIVE-DRAFT | supports LO-000032 |
 
 ## 3. Aturan
 
@@ -388,3 +400,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.29.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P029 |
 | 0.30.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk Evaluasi Tiga Harakat I QJ1-P030 |
 | 0.31.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P031 |
+| 0.32.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P032 |
