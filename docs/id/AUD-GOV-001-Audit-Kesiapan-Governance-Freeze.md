@@ -4,7 +4,7 @@
 **Judul:** Audit Awal Kesiapan Governance Freeze QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Laporan Audit Internal Awal  
-**Versi:** 0.4.0-id  
+**Versi:** 0.5.0-id  
 **Tanggal Audit:** 26 Juli 2026  
 **Objek:** GF-2026-001 — Governance v1.0  
 **Ruang Lingkup:** PR #1, branch feature/f001-constitution  
@@ -20,8 +20,8 @@ Status awal Governance Freeze adalah BLOCKED.
 
 Dari 16 gate kritis:
 
-- 6 PASS;
-- 8 PARTIAL;
+- 7 PASS;
+- 7 PARTIAL;
 - 2 FAIL;
 - 0 NOT-APPLICABLE.
 
@@ -60,7 +60,7 @@ Audit ini merupakan desk review internal. Audit belum mencakup observasi lapanga
 | GF-06 | PARTIAL | EVD-AUD-000006 | Terminologi inti ditetapkan; audit seluruh penggunaan istilah belum selesai |
 | GF-07 | PARTIAL | EVD-AUD-000005 | RACI, quorum, dan mekanisme ratifikasi tersedia; penetapan personel dan uji kewenangan belum dibuktikan |
 | GF-08 | PASS | EVD-AUD-000009 | Dokumen safeguarding dan proses pengaduan tersedia |
-| GF-09 | PARTIAL | EVD-AUD-000010 | Register risiko tersedia; bukti mitigasi seluruh risiko kritis belum diverifikasi |
+| GF-09 | PASS | EVD-GOV-000016 | Sepuluh risiko terdaftar; skor maksimum 16 dan tidak terdapat risiko kritis tanpa pengendalian |
 | GF-10 | FAIL | EVD-AUD-000007 | Temuan mayor masih terbuka dan belum mempunyai keputusan penerimaan risiko yang sah |
 | GF-11 | PARTIAL | EVD-AUD-000010 | Mekanisme CAPA tersedia; verifikasi efektivitas independen belum lengkap |
 | GF-12 | PARTIAL | EVD-AUD-000006 | CTM mempunyai pemilik dan objek sistem; sebagian besar bukti implementasi belum tersedia |
@@ -118,3 +118,4 @@ GF-2026-001 tidak memenuhi syarat untuk status FROZEN. Status tetap BLOCKED samp
 | 0.2.0-id | 27 Juli 2026 | Menyelaraskan hasil menjadi 6 PASS, 8 PARTIAL, 2 FAIL serta mencatat bukti kesiapan Safeguarding Lead |
 | 0.3.0-id | 27 Juli 2026 | Memvalidasi kesiapan operasional awal safeguarding berdasarkan REC-GOV-005–REC-GOV-012 |
 | 0.4.0-id | 27 Juli 2026 | Menyelaraskan status telaah independen dan memisahkan gate Ready for Review dari Governance Freeze |
+| 0.5.0-id | 27 Juli 2026 | Menaikkan GF-09 menjadi PASS dan memperbarui hasil menjadi 7 PASS, 7 PARTIAL, 2 FAIL |
