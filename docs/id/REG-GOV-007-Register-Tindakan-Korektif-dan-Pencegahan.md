@@ -4,7 +4,7 @@
 **Judul:** Register Tindakan Korektif dan Pencegahan QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.7.0-id  
+**Versi:** 0.8.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -45,7 +45,7 @@ Kesimpulan “human error” tidak diterima tanpa pemeriksaan desain proses, ins
 
 | CAPA-2026-006 | AUD-2026-006 | Catatan turunan GF-10, bukan akar masalah mandiri | Duplikasi logika antara GF-10 dan GF-16 | Nilai temuan material langsung dan pisahkan prasyarat ratifikasi ke GF-16 | QA Lead | 27 Juli 2026 | Governance Lead | CLOSED; SUPERSEDED |
 | CAPA-2026-007 | AUD-2026-007 | Penelaah independen ditunjuk, telaah dicatat, dan register keberatan dibuka | Governance Lead | 27 Juli 2026 | CLOSED |
-| CAPA-2026-008 | AUD-2026-008 | Ratifikasi final belum diputuskan | Keputusan konstitusional belum diterbitkan | Tetapkan Decision-ID, tanggal efektif, penandatangan, dan transisi melalui GF-16 | Otoritas Konstitusional | Setelah 15 gate lain PASS | Governance Secretariat | AWAITING-DECISION; bukan CAPA temuan mayor |
+| CAPA-2026-008 | AUD-2026-008 | Ratifikasi final belum diputuskan | Keputusan konstitusional belum diterbitkan | DEC-GOV-004 diterbitkan dengan baseline, tanggal efektif, pengesah, transisi, dan tinjauan | Otoritas Konstitusional | 27 Juli 2026 | Governance Secretariat | CLOSED |
 | CAPA-2026-009 | AUD-2026-009 | Pengganti SAFE dan DOC telah ditetapkan; lengkapi kompetensi peran lain, kontrol pemisahan tugas, dan uji akses RACI | Governance Lead | Sebelum implementasi | IN-PROGRESS |
 | CAPA-2026-010 | AUD-2026-010 | Lengkapi dan validasi Evidence-ID untuk CTM, risiko, CAPA, safeguarding, dan RIQA OS | QA Lead | Sebelum freeze | OPEN |
 
@@ -89,3 +89,4 @@ CAPA ditutup hanya setelah bukti, verifikasi independen, dan hasil uji efektivit
 | 0.5.0-id | 2026-07-27 | Memindahkan CAPA metadata ke Menunggu Verifikasi dan memperjelas CAPA objek isi sebagai non-blocking governance |
 | 0.6.0-id | 2026-07-27 | Mencatat verifikasi efektivitas seluruh CAPA yang berstatus ditutup untuk GF-11 |
 | 0.7.0-id | 2026-07-27 | Menutup catatan turunan CAPA-2026-006 dan memisahkan tindakan ratifikasi CAPA-2026-008 dari temuan mayor material |
+| 0.8.0-id | 2026-07-27 | Menutup CAPA-2026-008 setelah DEC-GOV-004 diratifikasi |
