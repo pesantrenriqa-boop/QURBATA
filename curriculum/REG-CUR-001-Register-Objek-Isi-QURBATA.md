@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.8.0-id  
+**Versi:** 0.9.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -100,6 +100,15 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000059 | Knowledge Object | Integrasi عَ غَ dengan review طَ ظَ dan keluarga sebelumnya | QJ1-P008 | ACTIVE-DRAFT | used-by LO-000008 |
 | KO-000060 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P008 | QJ1-P008 | ACTIVE-DRAFT | used-by LO-000008 |
 | KO-000061 | Knowledge Object | Adab rendah hati menerima koreksi | QJ1-P008-AKH01 | ACTIVE-DRAFT | supports LO-000008 |
+| PO-000009 | Page Object | Halaman Keluarga Fa–Qaf Berfathah | QJ1-P009 | ACTIVE-DRAFT | child-of CO-000001 |
+| LO-000009 | Learning Object | Membedakan dan membaca فَ قَ dengan review keluarga sebelumnya | QJ1-P009 | ACTIVE-DRAFT | uses KO-000062–KO-000068 |
+| KO-000062 | Knowledge Object | Bentuk dasar pasangan ف ق | QJ1-P009 | ACTIVE-DRAFT | used-by LO-000009 |
+| KO-000063 | Knowledge Object | Bunyi فَ | QJ1-P009 | ACTIVE-DRAFT | used-by LO-000009 |
+| KO-000064 | Knowledge Object | Bunyi قَ | QJ1-P009 | ACTIVE-DRAFT | used-by LO-000009 |
+| KO-000065 | Knowledge Object | Diskriminasi titik, bentuk, dan makhraj ف ق | QJ1-P009 | ACTIVE-DRAFT | used-by LO-000009 |
+| KO-000066 | Knowledge Object | Integrasi فَ قَ dengan review عَ غَ dan keluarga sebelumnya | QJ1-P009 | ACTIVE-DRAFT | used-by LO-000009 |
+| KO-000067 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P009 | QJ1-P009 | ACTIVE-DRAFT | used-by LO-000009 |
+| KO-000068 | Knowledge Object | Adab menjaga semangat sampai selesai | QJ1-P009-AKH01 | ACTIVE-DRAFT | supports LO-000009 |
 
 ## 3. Aturan
 
@@ -124,3 +133,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.6.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P006 |
 | 0.7.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P007 |
 | 0.8.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P008 |
+| 0.9.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P009 |
