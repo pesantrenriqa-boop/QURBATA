@@ -4,7 +4,7 @@
 **Judul:** Register Tindakan Korektif dan Pencegahan QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.4.0-id  
+**Versi:** 0.5.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -37,9 +37,9 @@ Kesimpulan “human error” tidak diterima tanpa pemeriksaan desain proses, ins
 ## 4. Register Awal
 | CAPA-ID | Sumber | Masalah | Akar Masalah Awal | Tindakan | Pemilik | Tenggat | Verifikator | Status |
 |---|---|---|---|---|---|---|---|---|
-| CAPA-2026-001 | AUD-2026-001 | Metadata governance tidak seragam | Belum ada register dokumen tunggal | Terapkan REG-GOV-004 dan audit seluruh metadata | Document Controller | Sebelum Governance Freeze | QA Lead | Berjalan |
+| CAPA-2026-001 | AUD-2026-001 | Metadata governance tidak seragam | Belum ada register dokumen tunggal | REG-GOV-004 diterapkan dan metadata 13/13 QC diaudit | Document Controller | 27 Juli 2026 | QA Lead independen | Menunggu Verifikasi |
 | CAPA-2026-002 | AUD-2026-002 | Ketidakharmonisan bahasa | Terjemahan berkembang sebelum master stabil | Harmonisasikan terjemahan per pasal setelah baseline Indonesia stabil | Translation Lead | Sebelum publikasi terjemahan resmi | Governance Lead | Terbuka; Non-blocking untuk Ready for Review |
-| CAPA-2026-003 | AUD-2026-003 | Knowledge-ID belum lengkap | Ontologi dan domain kurikulum belum dibekukan | Selesaikan ontology baseline dan lakukan validasi ID yatim/ganda | Knowledge Architect | Sebelum Curriculum Freeze | QA Lead | Terbuka |
+| CAPA-2026-003 | AUD-2026-003 | Knowledge-ID objek isi belum lengkap | Ontologi dan domain kurikulum belum dibekukan | Selesaikan ontologi baseline dan validasi ID yatim/ganda | Knowledge Architect | Sebelum Curriculum Freeze | QA Lead | Terbuka; Non-blocking untuk Governance Freeze |
 | CAPA-2026-004 | AUD-2026-004 | Safeguarding belum diuji | Instrumen operasional belum dipilotkan | Kanal, 2FA, penerimaan, eskalasi, target respons, dan Case-ID diuji; lanjutkan audit efektivitas berkala | Safeguarding Lead | 27 Juli 2026 | Pimpinan QURBATA | Ditutup |
 
 
@@ -77,3 +77,4 @@ CAPA ditutup hanya setelah bukti, verifikasi independen, dan hasil uji efektivit
 | 0.1.0 | 2026-07-26 | Register CAPA awal dibuat |
 | 0.3.0-id | 2026-07-27 | Menyelaraskan CAPA bahasa, safeguarding, dan telaah independen dengan keputusan ruang lingkup serta bukti terbaru |
 | 0.4.0-id | 2026-07-27 | Memperbarui CAPA RACI berdasarkan penetapan pengganti SAFE dan DOC |
+| 0.5.0-id | 2026-07-27 | Memindahkan CAPA metadata ke Menunggu Verifikasi dan memperjelas CAPA objek isi sebagai non-blocking governance |
