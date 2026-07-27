@@ -4,7 +4,7 @@
 **Judul:** Register Knowledge-ID QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.3.0-id  
+**Versi:** 0.4.0-id  
 **Induk Normatif:** QC-000 — Konstitusi QURBATA  
 **Dokumen Pengendali:** QC-002, QC-003, QC-004, QC-005  
 
@@ -331,7 +331,7 @@ Audit awal 27 Juli 2026 terhadap register dan matriks keterlacakan mencatat:
 5. penggunaan satu Knowledge-ID pada lebih dari satu baris CTM merupakan relasi konteks yang diizinkan, bukan duplikasi identitas; dan
 6. audit ini belum menyatakan seluruh norma material QC-000 telah memperoleh Knowledge-ID.
 
-Status tetap `UNDER-VALIDATION` sampai audit kelengkapan substantif dan validasi independen selesai.
+Status integritas namespace untuk GF-04 adalah `VALID`: tidak ditemukan ID ganda atau referensi CTM yatim. Kelengkapan substantif pemetaan norma tetap `UNDER-VALIDATION` dan dinilai terpisah melalui GF-12. Populasi objek kurikulum serta buku dinilai pada Curriculum Freeze, bukan Governance Freeze.
 
 ## 23. Riwayat Perubahan
 
@@ -340,3 +340,4 @@ Status tetap `UNDER-VALIDATION` sampai audit kelengkapan substantif dan validasi
 | 0.1.0-id | 26 Juli 2026 | Skema KID tata kelola dan register awal |
 | 0.2.0-id | 26 Juli 2026 | Penambahan namespace KO/LO/PO/CO/BO/CUR, aturan satu ID, status, supersesi, dan otoritas penerbitan |
 | 0.3.0-id | 27 Juli 2026 | Mencatat audit awal format, keunikan, dan referensi Knowledge-ID pada CTM governance |
+| 0.4.0-id | 27 Juli 2026 | Memisahkan validitas integritas namespace GF-04 dari kelengkapan substantif GF-12 dan populasi objek isi |
