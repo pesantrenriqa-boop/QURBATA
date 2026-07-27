@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.19.0-id  
+**Versi:** 0.20.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -209,6 +209,15 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000145 | Knowledge Object | Integrasi kasrah baru dengan kasrah sebelumnya dan fathah terkait | QJ1-P019 | ACTIVE-DRAFT | used-by LO-000019 |
 | KO-000146 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P019 | QJ1-P019 | ACTIVE-DRAFT | used-by LO-000019 |
 | KO-000147 | Knowledge Object | Adab teliti melihat titik sebelum membaca | QJ1-P019-AKH01 | ACTIVE-DRAFT | supports LO-000019 |
+| PO-000020 | Page Object | Evaluasi Fathah–Kasrah | QJ1-P020 | ACTIVE-DRAFT | child-of CO-000002 |
+| LO-000020 | Learning Object | Menunjukkan penguasaan formatif atas fathah dan kasrah QJ1-P001–QJ1-P019 | QJ1-P020 | ACTIVE-DRAFT | uses KO-000148–KO-000154 |
+| KO-000148 | Knowledge Object | Integrasi cakupan fathah QJ1-P001–QJ1-P015 | QJ1-P020 | ACTIVE-DRAFT | used-by LO-000020 |
+| KO-000149 | Knowledge Object | Integrasi cakupan kasrah QJ1-P016–QJ1-P019 | QJ1-P020 | ACTIVE-DRAFT | used-by LO-000020 |
+| KO-000150 | Knowledge Object | Diskriminasi visual bentuk, titik, dan posisi harakat | QJ1-P020 | ACTIVE-DRAFT | used-by LO-000020 |
+| KO-000151 | Knowledge Object | Kontras fonetik fathah–kasrah | QJ1-P020 | ACTIVE-DRAFT | used-by LO-000020 |
+| KO-000152 | Knowledge Object | Ketepatan makhraj dan panjang-pendek | QJ1-P020 | ACTIVE-DRAFT | used-by LO-000020 |
+| KO-000153 | Knowledge Object | Kelancaran serta kemandirian pada sampel dua dan tiga huruf | QJ1-P020 | ACTIVE-DRAFT | used-by LO-000020 |
+| KO-000154 | Knowledge Object | Adab jujur dan tenang dalam evaluasi | QJ1-P020-AKH01 | ACTIVE-DRAFT | supports LO-000020 |
 
 ## 3. Aturan
 
@@ -244,3 +253,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.17.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P017 |
 | 0.18.0-id | 27 Juli 2026 | Menambahkan spesifikasi terkendali PO, LO, dan KO Hafalan 1 QJ1-P018; materi masih terblokir keputusan |
 | 0.19.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P019 |
+| 0.20.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk Evaluasi Fathah–Kasrah QJ1-P020 |
