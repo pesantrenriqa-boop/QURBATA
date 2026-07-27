@@ -4,7 +4,7 @@
 **Judul:** Audit Awal Kesiapan Governance Freeze QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Laporan Audit Internal Awal  
-**Versi:** 0.7.0-id  
+**Versi:** 0.8.0-id  
 **Tanggal Audit:** 26 Juli 2026  
 **Objek:** GF-2026-001 — Governance v1.0  
 **Ruang Lingkup:** PR #1, branch feature/f001-constitution  
@@ -20,8 +20,8 @@ Status awal Governance Freeze adalah BLOCKED.
 
 Dari 16 gate kritis:
 
-- 9 PASS;
-- 5 PARTIAL;
+- 10 PASS;
+- 4 PARTIAL;
 - 2 FAIL;
 - 0 NOT-APPLICABLE.
 
@@ -55,7 +55,7 @@ Audit ini merupakan desk review internal. Audit belum mencakup observasi lapanga
 | GF-01 | PASS | EVD-AUD-000002 | Master QC-000 lengkap secara substantif |
 | GF-02 | PASS | EVD-GOV-000002/EVD-GOV-000003 | Penelaah independen menyatakan QC-001–QC-012 bagus, valid, dapat dilanjutkan, dan tanpa keberatan material |
 | GF-03 | PASS | EVD-AUD-000003 | Metadata minimum tersedia pada QC-000–QC-012 dan toolkit utama |
-| GF-04 | PARTIAL | EVD-AUD-000006 | Skema ID tidak menunjukkan duplikasi pada register awal; populasi penuh dan audit orphan belum selesai |
+| GF-04 | PASS | EVD-AUD-000006 | Dua puluh ID unik, tanpa duplikasi, dan seluruh referensi CTM ditemukan; kelengkapan substantif dinilai melalui GF-12 |
 | GF-05 | PASS | EVD-AUD-000001 | Seluruh tautan relatif Markdown pada ruang lingkup PR dapat diresolusikan |
 | GF-06 | PASS | EVD-GOV-000015/EVD-GOV-000002 | Terminologi material diselaraskan, didefinisikan dalam QC-005, dan seri QC lulus telaah independen |
 | GF-07 | PARTIAL | EVD-AUD-000005 | RACI, quorum, dan mekanisme ratifikasi tersedia; penetapan personel dan uji kewenangan belum dibuktikan |
@@ -121,3 +121,4 @@ GF-2026-001 tidak memenuhi syarat untuk status FROZEN. Status tetap BLOCKED samp
 | 0.5.0-id | 27 Juli 2026 | Menaikkan GF-09 menjadi PASS dan memperbarui hasil menjadi 7 PASS, 7 PARTIAL, 2 FAIL |
 | 0.6.0-id | 27 Juli 2026 | Menaikkan GF-02 menjadi PASS dan memperbarui hasil menjadi 8 PASS, 6 PARTIAL, 2 FAIL |
 | 0.7.0-id | 27 Juli 2026 | Menaikkan GF-06 menjadi PASS dan memperbarui hasil menjadi 9 PASS, 5 PARTIAL, 2 FAIL |
+| 0.8.0-id | 27 Juli 2026 | Menaikkan GF-04 menjadi PASS dan memperbarui hasil menjadi 10 PASS, 4 PARTIAL, 2 FAIL |
