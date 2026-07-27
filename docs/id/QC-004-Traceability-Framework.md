@@ -4,7 +4,7 @@
 **Judul:** Kerangka Keterlacakan QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Normatif  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -74,13 +74,13 @@ Objek berikut wajib memiliki pengenal ketertelusuran unik:
 - kebijakan dan standar;
 - manual dan pedoman;
 - SOP dan instruksi kerja;
-- formulir, template, rubrik, dan checklist;
+- formulir, template, rubrik, dan daftar periksa;
 - proses bisnis;
 - peran dan kewenangan;
 - modul, menu, halaman, dan fitur RIQA OS;
 - tabel, kolom, relasi, dan aturan validasi database;
 - endpoint API dan integrasi eksternal;
-- laporan, dashboard, indikator, dan notifikasi;
+- laporan, dasbor, indikator, dan notifikasi;
 - kontrol internal;
 - rekaman audit;
 - temuan, koreksi, dan tindakan perbaikan.
@@ -130,7 +130,7 @@ Setiap hubungan antarobjek wajib menggunakan salah satu jenis relasi berikut:
 | CONTROLS | mengendalikan | Kontrol membatasi atau memastikan kepatuhan objek |
 | PRODUCES | menghasilkan | Proses menghasilkan rekaman, laporan, atau data |
 | CONSUMES | menggunakan | Proses atau fitur menggunakan data atau keluaran lain |
-| VERIFIED_BY | diverifikasi oleh | Kepatuhan dibuktikan melalui audit, tes, atau review |
+| VERIFIED_BY | diverifikasi oleh | Kepatuhan dibuktikan melalui audit, tes, atau penelaahan |
 | REPLACES | menggantikan | Versi baru menggantikan versi lama |
 | DEPENDS_ON | bergantung pada | Objek tidak dapat berjalan tanpa objek lain |
 | EXCEPTION_TO | pengecualian terhadap | Objek menetapkan pengecualian yang disahkan |
@@ -152,9 +152,9 @@ Setiap domain wajib memiliki Traceability Matrix minimum dengan kolom:
 | Objek Turunan | Dokumen, proses, fitur, atau data terkait |
 | Pemilik | Penanggung jawab substantif |
 | Pengelola | Penanggung jawab administrasi atau teknis |
-| Status | Draft, review, berlaku, ditangguhkan, dicabut, arsip |
+| Status | Draft, penelaahan, berlaku, ditangguhkan, dicabut, arsip |
 | Bukti | Lokasi log, laporan, dokumen, atau rekaman |
-| Tanggal Review | Jadwal pemeriksaan terakhir |
+| Tanggal Penelaahan | Jadwal pemeriksaan terakhir |
 | Risiko | Dampak bila relasi tidak terpenuhi |
 
 ## 8. Ketertelusuran Modul RIQA OS
@@ -256,7 +256,7 @@ Perubahan tidak boleh dinyatakan selesai sebelum seluruh relasi terdampak diperb
 
 Validasi dilakukan melalui:
 
-1. review dokumen;
+1. penelaahan dokumen;
 2. inspeksi matriks traceability;
 3. pengujian fitur;
 4. pemeriksaan log;
@@ -373,3 +373,4 @@ Relasi minimum meliputi contains, part-of, teaches, taught-by, prerequisite-of, 
 
 Setiap persyaratan kritis harus dapat ditelusuri maju dari sumber menuju implementasi dan bukti, serta mundur dari bukti atau fitur menuju persyaratan sumber. Pemeriksaan wajib mendeteksi objek tanpa sumber, persyaratan tanpa implementasi, bukti tanpa objek, relasi putus, versi tidak selaras, dan ID yang merujuk objek berstatus retired.
 
+<!-- Audit editorial 27 Juli 2026: istilah review, dashboard, dan checklist diselaraskan menjadi penelaahan, dasbor, dan daftar periksa pada master Bahasa Indonesia. -->
