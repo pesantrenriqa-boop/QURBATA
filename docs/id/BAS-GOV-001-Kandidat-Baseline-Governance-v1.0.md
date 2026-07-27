@@ -1,19 +1,19 @@
-# BAS-GOV-001 — Kandidat Baseline Governance v1.0
+# BAS-GOV-001 — Baseline Governance v1.0
 
 **Kode Dokumen:** BAS-GOV-001  
 **Judul:** Kandidat Baseline Governance v1.0  
 **Bahasa Induk:** Bahasa Indonesia  
-**Status:** Kandidat; Belum Disetujui dan Belum Frozen  
-**Versi:** 0.3.0-id  
+**Status:** FROZEN; Efektif  
+**Versi:** 1.0.0-id  
 **Pemilik:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Klasifikasi Akses:** Internal  
 **Freeze-ID:** GF-2026-001  
-**Decision-ID:** Menunggu
+**Decision-ID:** DEC-GOV-004
 
 ## 1. Tujuan
 
-Dokumen ini mendefinisikan kandidat paket baseline agar objek freeze mempunyai batas yang jelas. Dokumen ini bukan keputusan freeze dan tidak mengubah status BLOCKED.
+Dokumen ini mendefinisikan paket baseline resmi yang telah diratifikasi melalui DEC-GOV-004 dan berstatus FROZEN sejak 27 Juli 2026.
 
 ## 2. Ruang Lingkup Kandidat
 
@@ -38,15 +38,15 @@ Terjemahan Inggris dan Arab, implementasi RIQA OS, bukti operasional lapangan di
 | Commit SHA kandidat final | `20892fbd5892dc2a79f23012ed6c98d0685a6eaa` |
 | Tree/hash arsip | Diidentifikasi oleh commit SHA Git kandidat |
 | Paket arsip | ZIP dan TAR.GZ berbasis SHA pada REC-GOV-017 |
-| Tanggal persetujuan | Menunggu |
-| Tanggal efektif | Menunggu |
-| Decision-ID | Menunggu |
-| Penandatangan | Menunggu Decision-ID |
-| Rencana transisi | Draf tersedia; belum disahkan |
+| Tanggal persetujuan | 27 Juli 2026 |
+| Tanggal efektif | 27 Juli 2026 |
+| Decision-ID | DEC-GOV-004 |
+| Penandatangan | Aris Liswanto — Pendiri dan Peneliti Utama QURBATA |
+| Rencana transisi | Disahkan melalui DEC-GOV-004; PR masuk Ready for Review dan perubahan pasca-freeze wajib dikendalikan |
 
 ## 5. Aturan Kandidat
 
-Setiap commit setelah kandidat ditetapkan wajib dinilai dampaknya. Kandidat hanya menjadi baseline resmi setelah seluruh gate kritis PASS, bukti divalidasi, keberatan diselesaikan, dan Decision-ID diterbitkan.
+Setiap commit setelah baseline wajib dinilai dampaknya dan tidak otomatis menjadi bagian Governance v1.0. Perubahan material hanya dapat dimasukkan melalui Decision-ID, versi baru, bukti, dan persetujuan sah.
 
 ## 6. Riwayat Perubahan
 
@@ -55,3 +55,4 @@ Setiap commit setelah kandidat ditetapkan wajib dinilai dampaknya. Kandidat hany
 | 0.1.0-id | 26 Juli 2026 | Definisi awal ruang lingkup kandidat baseline |
 | 0.2.0-id | 27 Juli 2026 | Menetapkan master Bahasa Indonesia sebagai ruang lingkup gate Draft dan memisahkan terjemahan sebagai tindak lanjut non-blocking |
 | 0.3.0-id | 27 Juli 2026 | Menetapkan commit SHA kandidat dan paket arsip immutable melalui REC-GOV-017 |
+| 1.0.0-id | 27 Juli 2026 | Menetapkan baseline resmi FROZEN berdasarkan DEC-GOV-004 |
