@@ -4,7 +4,7 @@
 **Judul:** Register Tindakan Korektif dan Pencegahan QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.6.0-id  
+**Versi:** 0.7.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -43,9 +43,9 @@ Kesimpulan “human error” tidak diterima tanpa pemeriksaan desain proses, ins
 | CAPA-2026-004 | AUD-2026-004 | Safeguarding belum diuji | Instrumen operasional belum dipilotkan | Kanal, 2FA, penerimaan, eskalasi, target respons, dan Case-ID diuji; lanjutkan audit efektivitas berkala | Safeguarding Lead | 27 Juli 2026 | Pimpinan QURBATA | Ditutup |
 
 
-| CAPA-2026-006 | AUD-2026-006 | Tutup atau putuskan risiko seluruh temuan mayor | Governance/QA Lead | Sebelum freeze | OPEN |
+| CAPA-2026-006 | AUD-2026-006 | Catatan turunan GF-10, bukan akar masalah mandiri | Duplikasi logika antara GF-10 dan GF-16 | Nilai temuan material langsung dan pisahkan prasyarat ratifikasi ke GF-16 | QA Lead | 27 Juli 2026 | Governance Lead | CLOSED; SUPERSEDED |
 | CAPA-2026-007 | AUD-2026-007 | Penelaah independen ditunjuk, telaah dicatat, dan register keberatan dibuka | Governance Lead | 27 Juli 2026 | CLOSED |
-| CAPA-2026-008 | AUD-2026-008 | Tetapkan baseline final, Decision-ID, tanggal efektif, dan transisi | Otoritas Konstitusional | Setelah gate lain PASS | OPEN |
+| CAPA-2026-008 | AUD-2026-008 | Ratifikasi final belum diputuskan | Keputusan konstitusional belum diterbitkan | Tetapkan Decision-ID, tanggal efektif, penandatangan, dan transisi melalui GF-16 | Otoritas Konstitusional | Setelah 15 gate lain PASS | Governance Secretariat | AWAITING-DECISION; bukan CAPA temuan mayor |
 | CAPA-2026-009 | AUD-2026-009 | Pengganti SAFE dan DOC telah ditetapkan; lengkapi kompetensi peran lain, kontrol pemisahan tugas, dan uji akses RACI | Governance Lead | Sebelum implementasi | IN-PROGRESS |
 | CAPA-2026-010 | AUD-2026-010 | Lengkapi dan validasi Evidence-ID untuk CTM, risiko, CAPA, safeguarding, dan RIQA OS | QA Lead | Sebelum freeze | OPEN |
 
@@ -59,7 +59,7 @@ Kesimpulan “human error” tidak diterima tanpa pemeriksaan desain proses, ins
 | CAPA-2026-004 | EVD-GOV-000006–EVD-GOV-000012: kanal ber-2FA, email diterima, eskalasi WhatsApp diterima, target respons dan Case-ID ditetapkan | Rangkaian awal pelaporan dan eskalasi berfungsi; audit berkala tetap wajib | Efektif untuk kesiapan operasional awal |
 | CAPA-2026-007 | EVD-GOV-000001–EVD-GOV-000004 dan REG-GOV-012: independensi, hasil telaah, validasi QC-000, dan ketiadaan keberatan material tercatat | Penelaah independen dan mekanisme keberatan tersedia serta dapat diaudit | Efektif |
 
-Tidak ada CAPA lain yang berstatus ditutup. CAPA terbuka dan Menunggu Verifikasi tetap dipantau, tetapi tidak dihitung sebagai CAPA selesai pada GF-11.
+CAPA-2026-006 ditutup secara administratif sebagai catatan turunan yang digantikan penilaian langsung GF-10; status ini bukan klaim uji efektivitas tindakan korektif. CAPA terbuka dan Menunggu Verifikasi tetap dipantau, tetapi tidak dihitung sebagai CAPA selesai pada GF-11.
 
 ## 7. Uji Efektivitas
 Efektivitas dinilai melalui salah satu atau lebih cara:
@@ -88,3 +88,4 @@ CAPA ditutup hanya setelah bukti, verifikasi independen, dan hasil uji efektivit
 | 0.4.0-id | 2026-07-27 | Memperbarui CAPA RACI berdasarkan penetapan pengganti SAFE dan DOC |
 | 0.5.0-id | 2026-07-27 | Memindahkan CAPA metadata ke Menunggu Verifikasi dan memperjelas CAPA objek isi sebagai non-blocking governance |
 | 0.6.0-id | 2026-07-27 | Mencatat verifikasi efektivitas seluruh CAPA yang berstatus ditutup untuk GF-11 |
+| 0.7.0-id | 2026-07-27 | Menutup catatan turunan CAPA-2026-006 dan memisahkan tindakan ratifikasi CAPA-2026-008 dari temuan mayor material |
