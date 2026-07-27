@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.27.0-id  
+**Versi:** 0.28.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -297,6 +297,15 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000216 | Knowledge Object | Integrasi dhammah baru dengan dhammah awal dan padanan fathah–kasrah | QJ1-P027 | ACTIVE-DRAFT | used-by LO-000027 |
 | KO-000217 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P027 | QJ1-P027 | ACTIVE-DRAFT | used-by LO-000027 |
 | KO-000218 | Knowledge Object | Adab sabar tanpa memaksa suara | QJ1-P027-AKH01 | ACTIVE-DRAFT | supports LO-000027 |
+| PO-000028 | Page Object | Bahasa Arab 1 — Materi Menunggu Keputusan | QJ1-P028 | BLOCKED-DRAFT | child-of CO-000003 |
+| LO-000028 | Learning Object | Menyimak, memahami, dan menggunakan mufradat lisan yang disahkan | QJ1-P028 | BLOCKED-DRAFT | uses KO-000219–KO-000225 |
+| KO-000219 | Knowledge Object | Kriteria pemilihan dan pengesahan materi Bahasa Arab 1 | QJ1-P028 | ACTIVE-DRAFT | used-by LO-000028 |
+| KO-000220 | Knowledge Object | Simakan mufradat dan hubungan bunyi–makna | QJ1-P028 | ACTIVE-DRAFT | used-by LO-000028 |
+| KO-000221 | Knowledge Object | Talqin–ittiba’ pelafalan mufradat | QJ1-P028 | ACTIVE-DRAFT | used-by LO-000028 |
+| KO-000222 | Knowledge Object | Pemahaman lisan melalui respons bermakna | QJ1-P028 | ACTIVE-DRAFT | used-by LO-000028 |
+| KO-000223 | Knowledge Object | Produksi lisan terkendali dalam konteks sederhana | QJ1-P028 | ACTIVE-DRAFT | used-by LO-000028 |
+| KO-000224 | Knowledge Object | Pemisahan pembelajaran lisan dari materi baca prematur | QJ1-P028 | ACTIVE-DRAFT | used-by LO-000028 |
+| KO-000225 | Knowledge Object | Adab santun dan percaya diri dalam komunikasi | QJ1-P028-AKH01 | ACTIVE-DRAFT | supports LO-000028 |
 
 ## 3. Aturan
 
@@ -340,3 +349,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.25.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk kontras fathah–kasrah QJ1-P025 |
 | 0.26.0-id | 27 Juli 2026 | Membentuk CO fase dhammah serta menambahkan PO, LO, dan KO untuk QJ1-P026 |
 | 0.27.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P027 |
+| 0.28.0-id | 27 Juli 2026 | Menambahkan spesifikasi terkendali PO, LO, dan KO Bahasa Arab 1 QJ1-P028; materi masih terblokir keputusan |
