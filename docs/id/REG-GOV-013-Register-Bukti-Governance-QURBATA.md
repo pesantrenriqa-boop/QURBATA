@@ -4,7 +4,7 @@
 **Judul:** Register Bukti Governance QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.6.0-id  
+**Versi:** 0.7.0-id  
 **Pemilik Dokumen:** Fungsi Penjaminan Mutu QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -47,9 +47,10 @@ PROPOSED, COLLECTED, UNDER-VALIDATION, VALID, REJECTED, EXPIRED, SUPERSEDED, dan
 | EVD-GOV-000003 | Konfirmasi tidak ada keberatan material | REC-GOV-003 | VALID | Sekretariat Tata Kelola | Konfirmasi penelaah independen |
 | EVD-GOV-000004 | Validasi substantif awal QC-000 | REC-GOV-004 | VALID | Pemilik QC-000 | Arif Nasruddin |
 | EVD-GOV-000005 | Penerimaan mandat Safeguarding Lead dan deklarasi tidak ada kasus terbuka | REC-GOV-005 | VALID | Ainul Yakin | Pernyataan langsung; efektivitas operasional belum diuji |
-| EVD-GOV-000006 | Kanal safeguarding safeguardingqurbata@gmail.com dan Aris Liswanto sebagai pemegang akses awal | REC-GOV-006/REC-GOV-007/REC-GOV-008 | UNDER-VALIDATION | Aris Liswanto | Alamat, 2FA, dan penerimaan terkonfirmasi; alur eskalasi belum diuji |
+| EVD-GOV-000006 | Kanal safeguarding safeguardingqurbata@gmail.com dan Aris Liswanto sebagai pemegang akses awal | REC-GOV-006/REC-GOV-007/REC-GOV-008/REC-GOV-009 | UNDER-VALIDATION | Aris Liswanto | Alamat, 2FA, dan penerimaan terkonfirmasi; WhatsApp ditetapkan tetapi belum diuji |
 | EVD-GOV-000007 | Aktivasi autentikasi dua faktor kanal safeguarding | REC-GOV-007 | VALID | Aris Liswanto | Konfirmasi langsung pemegang akses; rahasia autentikasi tidak dicatat |
 | EVD-GOV-000008 | Uji penerimaan email kanal safeguarding | REC-GOV-008 | VALID | Aris Liswanto | Pesan uji diterima; tidak memuat kasus nyata atau identitas santri |
+| EVD-GOV-000009 | Penetapan WhatsApp sebagai jalur eskalasi kepada Ainul Yakin | REC-GOV-009 | COLLECTED | Aris Liswanto | Menunggu uji penerimaan dan konfirmasi Safeguarding Lead |
 
 ## 5. Data Minimum
 
@@ -69,3 +70,4 @@ RIQA OS mencegah gate PASS bila Evidence-ID wajib tidak berstatus VALID, telah k
 | 0.4.0-id | 27 Juli 2026 | Mencatat alamat kanal safeguarding dan menaikkan bukti ke UNDER-VALIDATION |
 | 0.5.0-id | 27 Juli 2026 | Mencatat aktivasi 2FA sebagai EVD-GOV-000007 dan menyisakan uji operasional kanal |
 | 0.6.0-id | 27 Juli 2026 | Mencatat keberhasilan uji penerimaan sebagai EVD-GOV-000008 |
+| 0.7.0-id | 27 Juli 2026 | Menetapkan jalur eskalasi WhatsApp sebagai EVD-GOV-000009 |
