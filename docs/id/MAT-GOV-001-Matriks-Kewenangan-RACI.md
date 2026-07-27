@@ -2,7 +2,7 @@
 
 **Kode Dokumen:** MAT-GOV-001  
 **Status:** Draf Terkendali  
-**Versi:** 0.7.0-id  
+**Versi:** 0.8.0-id  
 **Bahasa Induk:** Bahasa Indonesia  
 **Induk Normatif:** QC-000, QC-006, QC-007, QC-008
 
@@ -105,10 +105,11 @@ Status yang diizinkan: DRAFT, ACTIVE, SUSPENDED, EXPIRED, REVOKED, dan VACANT. P
 
 ## 9. Uji RACI dan Akses
 
-Sebelum freeze, dilakukan uji skenario untuk persetujuan dokumen, perubahan material, konflik kepentingan, pengaduan, insiden safeguarding, CAPA, penerimaan risiko, pemulihan, dan pembukaan kembali freeze. Setiap uji menghasilkan Evidence-ID.
+Uji meja delapan skenario governance telah dilaksanakan dan dicatat pada REC-GOV-015/EVD-GOV-000018. Uji menyatakan desain RACI, pemisahan tugas, pengganti, quorum, dan ratifikasi konsisten. Konfigurasi hak akses RIQA OS tetap diuji terpisah sebelum implementasi produksi.
 
 ## 10. Riwayat Perubahan
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 0.7.0-id | 27 Juli 2026 | Mengonfirmasi Ulifah sebagai pengganti Safeguarding Lead dan Izathy Khoirina sebagai pengganti Document Controller berdasarkan REC-GOV-013 dan REC-GOV-014 |
+| 0.8.0-id | 27 Juli 2026 | Mencatat hasil uji meja RACI dan kewenangan melalui REC-GOV-015 |
