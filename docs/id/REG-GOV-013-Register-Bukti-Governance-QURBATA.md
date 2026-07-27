@@ -4,7 +4,7 @@
 **Judul:** Register Bukti Governance QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.20.0-id  
+**Versi:** 0.21.0-id  
 **Pemilik Dokumen:** Fungsi Penjaminan Mutu QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -56,7 +56,7 @@ PROPOSED, COLLECTED, UNDER-VALIDATION, VALID, REJECTED, EXPIRED, SUPERSEDED, dan
 | EVD-GOV-000012 | Format nomor perkara safeguarding | REC-GOV-012 | VALID | Aris Liswanto | Format disetujui; identitas santri dilarang dalam Case-ID dan subjek email |
 | EVD-GOV-000013 | Penunjukan, penerimaan mandat, dan deklarasi konflik Ulifah sebagai pengganti Safeguarding Lead | REC-GOV-013 | VALID | Aris Liswanto | Tidak ada konflik umum yang dinyatakan; konflik wajib diperiksa dan diungkap per perkara |
 | EVD-GOV-000014 | Penunjukan, penerimaan mandat, dan deklarasi konflik Izathy Khoirina sebagai pengganti Document Controller | REC-GOV-014 | VALID | Aris Liswanto | Mandat, kerahasiaan, kontrol versi, metadata, arsip, audit trail, dan deklarasi konflik dikonfirmasi |
-| EVD-GOV-000015 | Audit terminologi master Bahasa Indonesia QC-000–QC-012 | QC-000/QC-002/QC-004–QC-009 | UNDER-VALIDATION | Document Controller | Istilah review, dashboard, dan checklist diselaraskan menjadi penelaahan, dasbor, dan daftar periksa; validasi editorial independen tetap diperlukan |
+| EVD-GOV-000015 | Audit terminologi master Bahasa Indonesia QC-000–QC-012 | QC-000/QC-002/QC-004–QC-009/QC-005 v0.4.0-id | VALID | Document Controller | Istilah penelaahan, dasbor, dan daftar periksa telah diselaraskan dan didefinisikan; seri QC lulus telaah independen tanpa keberatan material |
 | EVD-GOV-000016 | Audit profil risiko Governance v1.0 | REG-GOV-008 v0.4.0-id | VALID | Risk/Continuity Lead | Audit internal: 10 risiko, skor maksimum 16, dan 0 risiko kritis; GF-09 dapat PASS tanpa menyatakan seluruh risiko selesai |
 
 ## 5. Data Minimum
@@ -91,3 +91,4 @@ RIQA OS mencegah gate PASS bila Evidence-ID wajib tidak berstatus VALID, telah k
 | 0.18.0-id | 27 Juli 2026 | Memvalidasi kelengkapan metadata minimum QC-000–QC-012 |
 | 0.19.0-id | 27 Juli 2026 | Mencatat audit profil risiko dan bukti kelulusan GF-09 sebagai EVD-GOV-000016 |
 | 0.20.0-id | 27 Juli 2026 | Memvalidasi hasil telaah independen QC-001–QC-012 untuk GF-02 |
+| 0.21.0-id | 27 Juli 2026 | Memvalidasi audit terminologi dan bukti kelulusan GF-06 |
