@@ -4,7 +4,7 @@
 **Judul:** Terminologi dan Definisi Resmi QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Normatif  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -43,7 +43,7 @@ QC-005 bertujuan untuk:
 ## 4. Bahasa Resmi
 
 1. Bahasa Indonesia menjadi bahasa induk dan sumber resmi utama dokumen QURBATA.
-2. Versi bahasa Inggris akademik dan bahasa Arab formal merupakan terjemahan resmi setelah melalui proses review silang.
+2. Versi bahasa Inggris akademik dan bahasa Arab formal merupakan terjemahan resmi setelah melalui proses penelaahan silang.
 3. Dalam hal terjadi perbedaan penafsiran antarversi bahasa, versi bahasa Indonesia menjadi rujukan utama sampai ditetapkan koreksi resmi.
 4. Istilah Qurani dan syar'i wajib dijaga ketepatan makna, transliterasi, dan konteks penggunaannya.
 
@@ -191,7 +191,7 @@ Tindakan untuk mengurangi risiko terjadinya ketidaksesuaian sebelum kejadian ber
 
 Pemeriksaan sistematis, independen, dan terdokumentasi untuk memperoleh bukti dan menilai kesesuaian.
 
-### 8.7 Review
+### 8.7 Penelaahan
 
 Penelaahan terstruktur untuk menilai kecukupan, ketepatan, konsistensi, dan kelayakan suatu objek.
 
@@ -208,7 +208,7 @@ Konfirmasi bahwa suatu produk, proses, atau sistem mampu memenuhi kebutuhan peng
 Status resmi dokumen meliputi:
 
 - Konsep;
-- Dalam Review;
+- Dalam Penelaahan;
 - Disetujui;
 - Berlaku;
 - Dalam Revisi;
@@ -315,3 +315,4 @@ Singkatan COM tidak boleh digunakan sebagai domain atau jenis objek karena dapat
 
 Penambahan singkatan baru wajib diperiksa terhadap register terminologi dan skema data sebelum digunakan.
 
+<!-- Audit editorial 27 Juli 2026: istilah review, dashboard, dan checklist diselaraskan menjadi penelaahan, dasbor, dan daftar periksa pada master Bahasa Indonesia. -->
