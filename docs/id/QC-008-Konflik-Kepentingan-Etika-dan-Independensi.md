@@ -4,7 +4,7 @@
 **Judul:** Konflik Kepentingan, Etika, dan Independensi QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Normatif  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -182,7 +182,7 @@ Tindakan pengendalian dapat berupa:
 - pengunduran diri dari proses keputusan;
 - penunjukan penelaah atau penyetuju independen;
 - pemisahan tugas;
-- review tambahan;
+- penelaahan tambahan;
 - audit khusus;
 - penghentian sementara kewenangan;
 - penggantian personel;
@@ -212,7 +212,7 @@ Tidak seorang pun boleh menjadi satu-satunya pihak yang:
 - mengaudit proses yang berada di bawah tanggung jawab operasionalnya; atau
 - memutus sengketa yang melibatkan kepentingannya sendiri.
 
-Apabila keterbatasan sumber daya tidak memungkinkan pemisahan penuh, kontrol kompensasi dan review independen wajib diterapkan.
+Apabila keterbatasan sumber daya tidak memungkinkan pemisahan penuh, kontrol kompensasi dan penelaahan independen wajib diterapkan.
 
 ## 12. Hadiah, Fasilitas, dan Manfaat
 
@@ -257,7 +257,7 @@ Dukungan sponsor atau donor tidak boleh memberi hak untuk mengubah hasil penelit
 2. Pihak yang memiliki hubungan dengan vendor atau mitra wajib mengungkapkannya.
 3. Pemilihan vendor harus didasarkan pada kebutuhan, kompetensi, mutu, biaya, risiko, dan kepatuhan.
 4. Komisi rahasia, mark-up pribadi, kickback, dan pembagian keuntungan tanpa izin dilarang.
-5. Kesepakatan dengan pihak terkait wajib memperoleh review dan persetujuan independen.
+5. Kesepakatan dengan pihak terkait wajib memperoleh penelaahan dan persetujuan independen.
 
 ## 16. Etika Data dan Teknologi
 
@@ -307,7 +307,7 @@ Pemeriksaan dugaan pelanggaran harus:
 4. memberi kesempatan kepada pihak yang diperiksa untuk menjelaskan;
 5. membedakan kesalahan administratif, kelalaian, dan kesengajaan;
 6. menghasilkan temuan dan rekomendasi tertulis; dan
-7. memberikan jalur banding atau review untuk perkara material.
+7. memberikan jalur banding atau penelaahan untuk perkara material.
 
 ## 20. Konsekuensi Pelanggaran
 
@@ -315,7 +315,7 @@ Konsekuensi dapat berupa:
 
 - peringatan dan pembinaan;
 - koreksi deklarasi;
-- pengulangan review;
+- pengulangan penelaahan;
 - pembatasan akses;
 - pembatalan keputusan;
 - pencabutan kewenangan;
@@ -340,7 +340,7 @@ QURBATA wajib memelihara register konflik kepentingan yang sekurang-kurangnya me
 - otoritas penilai;
 - kontrol yang ditetapkan;
 - masa berlaku;
-- status review;
+- status penelaahan;
 - bukti penyelesaian; dan
 - referensi keputusan terkait.
 
@@ -354,16 +354,16 @@ RIQA OS harus mendukung, sesuai prioritas dan tingkat kematangan:
 2. pembaruan deklarasi berkala;
 3. penautan deklarasi dengan rapat, keputusan, asesmen, pengadaan, dan penelitian;
 4. pembatasan akses dan partisipasi;
-5. notifikasi masa review;
+5. notifikasi masa penelaahan;
 6. rekaman pengunduran diri dari keputusan;
 7. audit trail perubahan;
 8. klasifikasi kerahasiaan;
 9. pelaporan dan tindak lanjut kasus; dan
-10. dashboard kepatuhan untuk pihak berwenang.
+10. dasbor kepatuhan untuk pihak berwenang.
 
 Sistem tidak boleh menggantikan penilaian etis manusia, tetapi harus memperkuat keterlacakan dan kepatuhan.
 
-## 23. Review dan Audit
+## 23. Penelaahan dan Audit
 
 1. Kepatuhan terhadap QC-008 ditinjau sekurang-kurangnya satu kali dalam satu tahun.
 2. Peran berisiko tinggi dapat ditinjau lebih sering.
@@ -382,3 +382,5 @@ Sistem tidak boleh menggantikan penilaian etis manusia, tetapi harus memperkuat 
 ## 25. Ketentuan Penutup
 
 QC-008 menjadi dasar resmi pengelolaan konflik kepentingan, etika, dan independensi dalam ekosistem QURBATA. Seluruh kebijakan, manual, SOP, formulir, kontrak, alur persetujuan, asesmen, penelitian, pengadaan, dan konfigurasi RIQA OS wajib menurunkan ketentuan ini secara konsisten, proporsional, dan dapat diaudit.
+
+<!-- Audit editorial 27 Juli 2026: istilah review, dashboard, dan checklist diselaraskan menjadi penelaahan, dasbor, dan daftar periksa pada master Bahasa Indonesia. -->
