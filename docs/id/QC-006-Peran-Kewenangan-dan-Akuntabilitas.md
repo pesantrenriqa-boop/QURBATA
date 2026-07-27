@@ -4,7 +4,7 @@
 **Judul:** Peran, Kewenangan, dan Akuntabilitas QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Normatif  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -151,7 +151,7 @@ Untuk proses berisiko tinggi, fungsi berikut harus dipisahkan sejauh memungkinka
 - pengembang sistem dan penyetuju rilis;
 - pelaksana proses dan auditor.
 
-Apabila keterbatasan sumber daya menyebabkan pemisahan tidak dapat dilakukan, wajib diterapkan kontrol kompensasi dan review berkala.
+Apabila keterbatasan sumber daya menyebabkan pemisahan tidak dapat dilakukan, wajib diterapkan kontrol kompensasi dan penelaahan berkala.
 
 ## 9. Konflik Kepentingan
 
@@ -185,12 +185,12 @@ Setiap keputusan penting wajib memiliki rekaman minimal:
 6. Hak akses tidak boleh digunakan bersama.
 7. Seluruh perubahan hak akses wajib terekam dalam audit trail.
 
-## 12. Review Kewenangan
+## 12. Penelaahan Kewenangan
 
 1. Struktur kewenangan ditinjau sekurang-kurangnya sekali dalam satu tahun atau ketika terjadi perubahan organisasi besar.
 2. Hak akses kritis ditinjau lebih sering berdasarkan tingkat risiko.
 3. Temuan tumpang tindih, kekosongan, atau penyalahgunaan kewenangan wajib ditindaklanjuti.
-4. Hasil review menjadi masukan bagi perbaikan organisasi dan sistem.
+4. Hasil penelaahan menjadi masukan bagi perbaikan organisasi dan sistem.
 
 ## 13. Ketidaksesuaian
 
@@ -215,3 +215,5 @@ Ketidaksesuaian peran dan kewenangan meliputi:
 ## 15. Ketentuan Penutup
 
 QC-006 menjadi dasar resmi pembagian peran, kewenangan, tanggung jawab, dan hak akses dalam ekosistem QURBATA. Manual, SOP, matriks organisasi, serta RIQA OS wajib menurunkan ketentuan ini secara konsisten dan dapat diaudit.
+
+<!-- Audit editorial 27 Juli 2026: istilah review, dashboard, dan checklist diselaraskan menjadi penelaahan, dasbor, dan daftar periksa pada master Bahasa Indonesia. -->
