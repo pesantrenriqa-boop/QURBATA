@@ -1,10 +1,10 @@
-# REG-GOV-010 — Dashboard Tata Kelola QURBATA
+# REG-GOV-010 — Dasbor Tata Kelola QURBATA
 
 **Kode Dokumen:** REG-GOV-010  
-**Judul:** Dashboard Tata Kelola QURBATA  
+**Judul:** Dasbor Tata Kelola QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.3.0-id  
+**Versi:** 0.4.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -15,7 +15,7 @@
 
 
 ## 1. Tujuan
-Dashboard ini merangkum kondisi tata kelola QURBATA dalam satu tampilan agar pimpinan dapat melihat kesiapan ratifikasi, kepatuhan, risiko, audit, CAPA, review, dan integrasi RIQA OS.
+Dasbor ini merangkum kondisi tata kelola QURBATA dalam satu tampilan agar pimpinan dapat melihat kesiapan ratifikasi, kepatuhan, risiko, audit, CAPA, penelaahan, dan integrasi RIQA OS.
 
 ## 2. Indikator Utama
 | Indikator | Rumus | Target Governance Freeze |
@@ -28,18 +28,18 @@ Dashboard ini merangkum kondisi tata kelola QURBATA dalam satu tampilan agar pim
 | Penyelesaian temuan mayor | temuan mayor ditutup / seluruh temuan mayor | 100% sebelum ratifikasi |
 | CAPA efektif | CAPA terverifikasi efektif / CAPA selesai | 100% |
 | Risiko kritis tak terkendali | jumlah risiko kritis tanpa mitigasi | 0 |
-| Review terlambat | review lewat tenggat | 0 |
+| Penelaahan terlambat | penelaahan lewat tenggat | 0 |
 | Konflik ID | ID ganda/yatim/ambigu | 0 |
 
 ## 3. Status Awal per 26 Juli 2026
 | Area | Status | Catatan |
 |---|---|---|
-| Konstitusi QC-000 | Kuning | Master Indonesia lengkap secara substantif; audit editorial dan ratifikasi belum selesai |
+| Konstitusi QC-000 | Kuning | Master Indonesia lengkap secara substantif; audit terminologi internal selesai, validasi editorial independen dan ratifikasi belum selesai |
 | QC-001–QC-012 | Kuning | Metadata dan arsitektur telah diharmonisasikan; verifikasi bukti implementasi belum selesai |
 | Governance toolkit | Kuning | Register inti tersedia; implementasi dan bukti belum lengkap |
 | Bahasa Inggris | Abu-abu | Tindak lanjut non-blocking; tidak termasuk baseline Governance v1.0 Bahasa Indonesia |
 | Bahasa Arab | Abu-abu | Tindak lanjut non-blocking; tidak termasuk baseline Governance v1.0 Bahasa Indonesia |
-| Knowledge-ID | Kuning | Namespace, status, supersesi, dan matriks tersedia; populasi objek isi belum selesai |
+| Knowledge-ID | Kuning | Audit format, duplikasi, dan referensi CTM awal lulus; validasi kelengkapan substantif dan populasi objek isi belum selesai |
 | Safeguarding | Hijau | Kebijakan dan kesiapan operasional awal tervalidasi; audit efektivitas berkala tetap wajib |
 | RIQA OS integration | Kuning | Model data dirumuskan; implementasi belum selesai |
 | Governance Freeze | Belum Lulus | Menunggu seluruh gate kritis |
@@ -66,9 +66,9 @@ Governance v1.0 hanya boleh dibekukan jika:
 - **Abu-abu:** belum berlaku atau belum dinilai.
 
 ## 6. Tampilan Minimum RIQA OS
-Dashboard harus menampilkan:
+Dasbor harus menampilkan:
 - jumlah dokumen per status dan versi;
-- dokumen/review yang terlambat;
+- dokumen/penelaahan yang terlambat;
 - temuan audit per tingkat;
 - CAPA per status dan efektivitas;
 - risiko inheren dan residual;
@@ -93,10 +93,11 @@ Skor agregat hanya informatif. Satu kegagalan pada butir kritis tetap menggagalk
 
 ## 9. Register Governance Freeze
 
-Keputusan kesiapan freeze wajib dicatat pada REG-GOV-011. Dashboard hanya menyajikan ringkasan dan tidak dapat menggantikan bukti, penilaian gate, keberatan, persetujuan, atau Decision-ID pada register tersebut.
+Keputusan kesiapan freeze wajib dicatat pada REG-GOV-011. Dasbor hanya menyajikan ringkasan dan tidak dapat menggantikan bukti, penilaian gate, keberatan, persetujuan, atau Decision-ID pada register tersebut.
 
 ## 10. Catatan Perubahan
 | Versi | Tanggal | Perubahan |
 |---|---|---|
-| 0.1.0 | 2026-07-26 | Dashboard tata kelola awal dan stage gate Governance Freeze dibuat |
+| 0.1.0 | 2026-07-26 | Dasbor tata kelola awal dan stage gate Governance Freeze dibuat |
 | 0.2.0-id | 2026-07-26 | Pembaruan status QC-000, seri QC, Knowledge-ID, dan integrasi REG-GOV-011 |
+| 0.4.0-id | 2026-07-27 | Menyelaraskan istilah dasbor serta status audit editorial dan Knowledge-ID |
