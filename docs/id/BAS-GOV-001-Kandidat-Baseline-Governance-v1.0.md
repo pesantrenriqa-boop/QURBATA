@@ -4,7 +4,7 @@
 **Judul:** Kandidat Baseline Governance v1.0  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Kandidat; Belum Disetujui dan Belum Frozen  
-**Versi:** 0.1.0-id  
+**Versi:** 0.2.0-id  
 **Pemilik:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Klasifikasi Akses:** Internal  
@@ -17,6 +17,8 @@ Dokumen ini mendefinisikan kandidat paket baseline agar objek freeze mempunyai b
 
 ## 2. Ruang Lingkup Kandidat
 
+Baseline Governance v1.0 dan gerbang keluar dari status Draft berlaku atas paket normatif **Bahasa Indonesia**. Bahasa Indonesia adalah satu-satunya teks induk dan pengendali pada tahap ini.
+
 1. QC-000–QC-012;
 2. README tata kelola;
 3. QC-004, QC-005, REG-GOV-001, dan matriks keterlacakan;
@@ -27,7 +29,7 @@ Dokumen ini mendefinisikan kandidat paket baseline agar objek freeze mempunyai b
 
 ## 3. Pengecualian
 
-Terjemahan Inggris dan Arab, implementasi RIQA OS, bukti operasional lapangan, penetapan personel, telaah eksternal, serta produk kurikulum dan buku tidak termasuk dalam klaim baseline Governance v1.0 kecuali kemudian ditambahkan melalui keputusan sah.
+Terjemahan Inggris dan Arab, implementasi RIQA OS, bukti operasional lapangan di luar bukti minimum gate, serta produk kurikulum dan buku tidak termasuk dalam klaim baseline Governance v1.0. Ketidakharmonisan atau belum tersedianya terjemahan tidak menghalangi master Bahasa Indonesia keluar dari Draft atau masuk Ready for Review. Penetapan personel, kewenangan ratifikasi, independensi, dan bukti minimum RACI tetap termasuk persyaratan wajib governance. Objek yang dikecualikan hanya dapat ditambahkan melalui keputusan sah.
 
 ## 4. Identitas yang Masih Harus Diisi
 
@@ -51,3 +53,4 @@ Setiap commit setelah kandidat ditetapkan wajib dinilai dampaknya. Kandidat hany
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 0.1.0-id | 26 Juli 2026 | Definisi awal ruang lingkup kandidat baseline |
+| 0.2.0-id | 27 Juli 2026 | Menetapkan master Bahasa Indonesia sebagai ruang lingkup gate Draft dan memisahkan terjemahan sebagai tindak lanjut non-blocking |
