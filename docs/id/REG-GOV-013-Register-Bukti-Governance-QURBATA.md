@@ -4,7 +4,7 @@
 **Judul:** Register Bukti Governance QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.22.0-id  
+**Versi:** 0.23.0-id  
 **Pemilik Dokumen:** Fungsi Penjaminan Mutu QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -58,6 +58,7 @@ PROPOSED, COLLECTED, UNDER-VALIDATION, VALID, REJECTED, EXPIRED, SUPERSEDED, dan
 | EVD-GOV-000014 | Penunjukan, penerimaan mandat, dan deklarasi konflik Izathy Khoirina sebagai pengganti Document Controller | REC-GOV-014 | VALID | Aris Liswanto | Mandat, kerahasiaan, kontrol versi, metadata, arsip, audit trail, dan deklarasi konflik dikonfirmasi |
 | EVD-GOV-000015 | Audit terminologi master Bahasa Indonesia QC-000–QC-012 | QC-000/QC-002/QC-004–QC-009/QC-005 v0.4.0-id | VALID | Document Controller | Istilah penelaahan, dasbor, dan daftar periksa telah diselaraskan dan didefinisikan; seri QC lulus telaah independen tanpa keberatan material |
 | EVD-GOV-000016 | Audit profil risiko Governance v1.0 | REG-GOV-008 v0.4.0-id | VALID | Risk/Continuity Lead | Audit internal: 10 risiko, skor maksimum 16, dan 0 risiko kritis; GF-09 dapat PASS tanpa menyatakan seluruh risiko selesai |
+| EVD-GOV-000017 | Verifikasi efektivitas CAPA yang ditutup | REG-GOV-007 v0.6.0-id/EVD-GOV-000001–EVD-GOV-000012 | VALID | QA/Governance Lead | CAPA-2026-004 dan CAPA-2026-007 memiliki bukti hasil yang dapat diperiksa; tidak ada CAPA tertutup lain |
 
 ## 5. Data Minimum
 
@@ -93,3 +94,4 @@ RIQA OS mencegah gate PASS bila Evidence-ID wajib tidak berstatus VALID, telah k
 | 0.20.0-id | 27 Juli 2026 | Memvalidasi hasil telaah independen QC-001–QC-012 untuk GF-02 |
 | 0.21.0-id | 27 Juli 2026 | Memvalidasi audit terminologi dan bukti kelulusan GF-06 |
 | 0.22.0-id | 27 Juli 2026 | Memvalidasi integritas namespace dan referensi Knowledge-ID untuk GF-04 |
+| 0.23.0-id | 27 Juli 2026 | Mencatat verifikasi efektivitas CAPA tertutup sebagai EVD-GOV-000017 |
