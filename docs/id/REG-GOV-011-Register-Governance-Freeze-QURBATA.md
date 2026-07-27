@@ -4,7 +4,7 @@
 **Judul:** Register Governance Freeze QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.9.0-id  
+**Versi:** 0.10.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola dan Penjaminan Mutu QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -90,7 +90,7 @@ NOT-APPLICABLE hanya sah apabila alasan dan otoritas penetapannya terdokumentasi
 
 | Freeze-ID | Objek | Versi/Baseline | Status | PASS | PARTIAL | FAIL | Pemilik | Decision-ID |
 |---|---|---|---|---:|---:|---:|---|---|
-| GF-2026-001 | Governance v1.0 | PR #1 / branch feature/f001-constitution | BLOCKED | 13 | 1 | 2 | Fungsi Tata Kelola | Menunggu |
+| GF-2026-001 | Governance v1.0 | `20892fbd5892dc2a79f23012ed6c98d0685a6eaa` | BLOCKED | 14 | 0 | 2 | Fungsi Tata Kelola | Menunggu |
 
 Angka gate pada register hanya diperbarui setelah bukti dinilai, bukan berdasarkan keberadaan dokumen semata.
 
@@ -112,7 +112,7 @@ Angka gate pada register hanya diperbarui setelah bukti dinilai, bukan berdasark
 | GF-2026-001 | GF-12 | PASS | EVD-GOV-000019 | Audit internal | 2026-07-27 | Dua puluh dari dua puluh baris CTM memiliki ID, kontrol, bukti minimum, pemilik, dan objek implementasi lengkap |
 | GF-2026-001 | GF-13 | PASS | EVD-GOV-000004 | Arif Nasruddin | 2026-07-26 | QC-000 dinilai valid dan layak dilanjutkan |
 | GF-2026-001 | GF-14 | PASS | EVD-GOV-000003 | Arif Nasruddin | 2026-07-26 | Tidak ada keberatan material yang dinyatakan |
-| GF-2026-001 | GF-15 | PARTIAL | EVD-AUD-000008 | Audit internal awal | 2026-07-26 | Baseline hash final belum ditetapkan |
+| GF-2026-001 | GF-15 | PASS | EVD-GOV-000020 | Document Controller | 2026-07-27 | Commit SHA kandidat, lokasi resmi, dan paket arsip ZIP/TAR.GZ berbasis SHA telah ditetapkan |
 | GF-2026-001 | GF-16 | FAIL | EVD-AUD-000008 | Audit internal awal | 2026-07-26 | Decision-ID dan tanggal efektif belum ada |
 
 ## 8. Keputusan Freeze
@@ -157,3 +157,4 @@ Sistem harus mencegah status FROZEN apabila ada gate kritis FAIL, Evidence-ID wa
 | 0.7.0-id | 27 Juli 2026 | GF-11 dinaikkan menjadi PASS setelah verifikasi CAPA tertutup; total 11 PASS, 3 PARTIAL, 2 FAIL |
 | 0.8.0-id | 27 Juli 2026 | GF-07 dinaikkan menjadi PASS setelah uji meja RACI dan kewenangan; total 12 PASS, 2 PARTIAL, 2 FAIL |
 | 0.9.0-id | 27 Juli 2026 | GF-12 dinaikkan menjadi PASS setelah validasi desain CTM; total 13 PASS, 1 PARTIAL, 2 FAIL |
+| 0.10.0-id | 27 Juli 2026 | GF-15 dinaikkan menjadi PASS setelah attestasi baseline kandidat; total 14 PASS, 0 PARTIAL, 2 FAIL |
