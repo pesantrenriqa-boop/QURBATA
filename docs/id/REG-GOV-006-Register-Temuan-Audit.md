@@ -4,7 +4,7 @@
 **Judul:** Register Temuan Audit QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.8.0-id  
+**Versi:** 0.9.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -40,7 +40,7 @@ Status tambahan: `Ditangguhkan dengan Risiko Diterima`, hanya dengan keputusan b
 | AUD-2026-005 | Keterlacakan | QC-004/CTM/REC-GOV-016 | Minor | Desain 20/20 baris lengkap dan tervalidasi; bukti efektivitas operasional tetap dikumpulkan pada tahap implementasi terkait | QA Lead | Sebelum implementasi/pilot terkait | Ditutup untuk Governance Freeze; tindak lanjut operasional tetap terbuka |
 | AUD-2026-006 | Governance Freeze | REG-GOV-011 | Mayor | Temuan mayor terbuka menghalangi GF-10 | QA Lead | Sebelum Governance Freeze | Terbuka |
 | AUD-2026-007 | Review | QC-000/REG-GOV-011/REG-GOV-012 | Mayor | Telaah independen dan register keberatan material telah tersedia melalui REC-GOV-001–REC-GOV-004 | Governance Lead | 27 Juli 2026 | Ditutup |
-| AUD-2026-008 | Ratifikasi | QC-007/REG-GOV-011 | Mayor | Baseline final, Decision-ID, tanggal efektif, dan transisi belum ditetapkan | Otoritas Konstitusional | Sebelum Governance Freeze | Terbuka |
+| AUD-2026-008 | Ratifikasi | QC-007/REG-GOV-011/REC-GOV-017 | Mayor | Baseline kandidat dan paket arsip telah ditetapkan; Decision-ID, tanggal efektif, penandatangan, dan transisi sah belum ditetapkan | Otoritas Konstitusional | Sebelum Governance Freeze | Dalam Pelaksanaan |
 | AUD-2026-009 | RACI | MAT-GOV-001/REC-GOV-015 | Minor | Pengganti SAFE dan DOC telah ditetapkan dan uji meja delapan skenario PASS; bukti kompetensi beberapa peran dan uji akses RIQA OS tetap diperlukan sebelum implementasi produksi | Governance Lead | Sebelum implementasi produksi | Dalam Pelaksanaan; Non-blocking untuk Governance Freeze |
 | AUD-2026-010 | Bukti | CTM/CHK-GOV-001 | Minor | Desain CTM, risiko, CAPA, dan safeguarding memiliki bukti governance; implementasi RIQA OS dan bukti lapangan mengikuti gate tahap implementasi | QA Lead | Sebelum implementasi terkait | Terbuka; Non-blocking untuk Governance Freeze |
 
@@ -82,3 +82,4 @@ RIQA OS harus menyediakan pengingat tenggat, eskalasi temuan kritis/mayor, relas
 | 0.6.0-id | 2026-07-27 | Memvalidasi metadata 13/13 dokumen dan memisahkan populasi objek kurikulum/buku dari baseline Governance v1.0 |
 | 0.7.0-id | 2026-07-27 | Mencatat uji meja RACI yang lulus dan memisahkan uji akses RIQA OS sebagai tindak lanjut implementasi |
 | 0.8.0-id | 2026-07-27 | Memvalidasi kelengkapan desain CTM dan memisahkan bukti implementasi lapangan dari baseline governance |
+| 0.9.0-id | 2026-07-27 | Mencatat baseline kandidat dan mempersempit sisa temuan ratifikasi menjadi Decision-ID serta tanggal efektif |
