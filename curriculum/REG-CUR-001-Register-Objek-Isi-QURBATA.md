@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.30.0-id  
+**Versi:** 0.31.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -329,6 +329,18 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000242 | Knowledge Object | Ketepatan makhraj dan panjang-pendek | QJ1-P030 | ACTIVE-DRAFT | used-by LO-000030 |
 | KO-000243 | Knowledge Object | Kelancaran serta kemandirian pada sampel dua dan tiga huruf | QJ1-P030 | ACTIVE-DRAFT | used-by LO-000030 |
 | KO-000244 | Knowledge Object | Adab jujur dan tenang dalam evaluasi | QJ1-P030-AKH01 | ACTIVE-DRAFT | supports LO-000030 |
+| PO-000031 | Page Object | Dhammah Huruf Tebal | QJ1-P031 | ACTIVE-DRAFT | child-of CO-000003 |
+| LO-000031 | Learning Object | Membedakan dan membaca صُ ضُ طُ ظُ dengan review keluarga sebelumnya | QJ1-P031 | ACTIVE-DRAFT | uses KO-000245–KO-000254 |
+| KO-000245 | Knowledge Object | Bentuk dhammah keluarga ص ض ط ظ | QJ1-P031 | ACTIVE-DRAFT | used-by LO-000031 |
+| KO-000246 | Knowledge Object | Bunyi صُ | QJ1-P031 | ACTIVE-DRAFT | used-by LO-000031 |
+| KO-000247 | Knowledge Object | Bunyi ضُ | QJ1-P031 | ACTIVE-DRAFT | used-by LO-000031 |
+| KO-000248 | Knowledge Object | Bunyi طُ | QJ1-P031 | ACTIVE-DRAFT | used-by LO-000031 |
+| KO-000249 | Knowledge Object | Bunyi ظُ | QJ1-P031 | ACTIVE-DRAFT | used-by LO-000031 |
+| KO-000250 | Knowledge Object | Diskriminasi titik, bentuk, makhraj, dan ketebalan relatif | QJ1-P031 | ACTIVE-DRAFT | used-by LO-000031 |
+| KO-000251 | Knowledge Object | Kontras dhammah–fathah–kasrah pada ص ض ط ظ | QJ1-P031 | ACTIVE-DRAFT | used-by LO-000031 |
+| KO-000252 | Knowledge Object | Integrasi dhammah baru dengan keluarga sebelumnya | QJ1-P031 | ACTIVE-DRAFT | used-by LO-000031 |
+| KO-000253 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P031 | QJ1-P031 | ACTIVE-DRAFT | used-by LO-000031 |
+| KO-000254 | Knowledge Object | Adab bersungguh-sungguh tanpa memaksa suara | QJ1-P031-AKH01 | ACTIVE-DRAFT | supports LO-000031 |
 
 ## 3. Aturan
 
@@ -375,3 +387,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.28.0-id | 27 Juli 2026 | Menambahkan spesifikasi terkendali PO, LO, dan KO Bahasa Arab 1 QJ1-P028; materi masih terblokir keputusan |
 | 0.29.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P029 |
 | 0.30.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk Evaluasi Tiga Harakat I QJ1-P030 |
+| 0.31.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P031 |
