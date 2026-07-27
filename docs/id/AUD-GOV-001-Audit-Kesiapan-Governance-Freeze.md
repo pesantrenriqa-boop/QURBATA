@@ -4,7 +4,7 @@
 **Judul:** Audit Awal Kesiapan Governance Freeze QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Laporan Audit Internal Awal  
-**Versi:** 0.11.0-id  
+**Versi:** 0.12.0-id  
 **Tanggal Audit:** 26 Juli 2026  
 **Objek:** GF-2026-001 — Governance v1.0  
 **Ruang Lingkup:** PR #1, branch feature/f001-constitution  
@@ -20,8 +20,8 @@ Status awal Governance Freeze adalah BLOCKED.
 
 Dari 16 gate kritis:
 
-- 13 PASS;
-- 1 PARTIAL;
+- 14 PASS;
+- 0 PARTIAL;
 - 2 FAIL;
 - 0 NOT-APPLICABLE.
 
@@ -66,7 +66,7 @@ Audit ini merupakan desk review internal. Audit belum mencakup observasi lapanga
 | GF-12 | PASS | EVD-GOV-000019 | Dua puluh dari dua puluh baris CTM lengkap untuk desain governance; bukti efektivitas lapangan dinilai pada tahap implementasi |
 | GF-13 | PASS | EVD-GOV-000004 | QC-000 dinilai valid dan layak dilanjutkan oleh Arif Nasruddin |
 | GF-14 | PASS | EVD-GOV-000003 | Penelaah independen menyatakan tidak ada keberatan material |
-| GF-15 | PARTIAL | EVD-AUD-000008 | Branch dan PR teridentifikasi; baseline commit/hash final serta paket arsip belum ditetapkan |
+| GF-15 | PASS | EVD-GOV-000020 | Snapshot `20892fbd5892dc2a79f23012ed6c98d0685a6eaa`, lokasi commit, dan paket arsip immutable berbasis SHA telah ditetapkan |
 | GF-16 | FAIL | EVD-AUD-000008 | Decision-ID, tanggal efektif, transisi final, dan otoritas pengesah belum diisi |
 
 ## 5. Audit RACI
@@ -125,3 +125,4 @@ GF-2026-001 tidak memenuhi syarat untuk status FROZEN. Status tetap BLOCKED samp
 | 0.9.0-id | 27 Juli 2026 | Menaikkan GF-11 menjadi PASS dan memperbarui hasil menjadi 11 PASS, 3 PARTIAL, 2 FAIL |
 | 0.10.0-id | 27 Juli 2026 | Menaikkan GF-07 menjadi PASS dan memperbarui hasil menjadi 12 PASS, 2 PARTIAL, 2 FAIL |
 | 0.11.0-id | 27 Juli 2026 | Menaikkan GF-12 menjadi PASS dan memperbarui hasil menjadi 13 PASS, 1 PARTIAL, 2 FAIL |
+| 0.12.0-id | 27 Juli 2026 | Menaikkan GF-15 menjadi PASS dan memperbarui hasil menjadi 14 PASS, 0 PARTIAL, 2 FAIL |
