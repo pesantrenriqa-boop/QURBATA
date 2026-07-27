@@ -4,7 +4,7 @@
 **Judul:** Mekanisme Pengambilan Keputusan, Persetujuan, dan Ratifikasi QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Normatif  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -163,7 +163,7 @@ Keputusan yang telah berlaku harus dikomunikasikan kepada pihak yang wajib menge
 
 Pelaksanaan wajib memiliki pemilik, tenggat, sumber daya, kontrol, indikator keberhasilan, dan bukti penyelesaian.
 
-### 6.11 Monitoring dan Review
+### 6.11 Monitoring dan Penelaahan
 
 Keputusan ditinjau berdasarkan jadwal, pemicu risiko, hasil implementasi, atau perubahan keadaan.
 
@@ -248,7 +248,7 @@ Commit GitHub membuktikan perubahan teknis dan riwayat versi, tetapi tidak denga
 2. Ruang lingkup keputusan harus dibatasi pada tindakan yang diperlukan.
 3. Alasan, otoritas, waktu, bukti, dan tindakan harus dicatat secepat mungkin.
 4. Keputusan darurat bersifat sementara kecuali diratifikasi melalui prosedur normal.
-5. Review pascakejadian wajib dilakukan paling lambat setelah keadaan terkendali.
+5. Penelaahan pascakejadian wajib dilakukan paling lambat setelah keadaan terkendali.
 6. Keputusan darurat tidak boleh digunakan untuk menghindari pengawasan atau menutupi kelalaian perencanaan.
 
 ## 12. Konflik Kepentingan
@@ -256,7 +256,7 @@ Commit GitHub membuktikan perubahan teknis dan riwayat versi, tetapi tidak denga
 1. Setiap pihak wajib mengungkapkan konflik kepentingan aktual, potensial, atau yang dipersepsikan.
 2. Pihak yang berkonflik tidak boleh menjadi penyetuju tunggal.
 3. Pengunduran diri dari pembahasan atau pemungutan suara harus dicatat.
-4. Untuk keputusan berisiko tinggi, review independen dapat diwajibkan.
+4. Untuk keputusan berisiko tinggi, penelaahan independen dapat diwajibkan.
 5. Kegagalan mengungkapkan konflik kepentingan dapat menyebabkan keputusan ditinjau ulang atau dibatalkan.
 
 ## 13. Rekaman Keputusan
@@ -277,7 +277,7 @@ Setiap keputusan material wajib memiliki rekaman minimal:
 - syarat atau batasan;
 - penyetuju dan bentuk persetujuan;
 - tanggal keputusan dan tanggal efektif;
-- masa berlaku atau tanggal review;
+- masa berlaku atau tanggal penelaahan;
 - rencana implementasi;
 - indikator hasil;
 - status tindak lanjut; dan
@@ -323,12 +323,12 @@ Keputusan dapat ditangguhkan, diubah, atau dibatalkan apabila:
 
 Perubahan atau pembatalan harus menggunakan tingkat kewenangan sekurang-kurangnya setara dengan keputusan awal, kecuali tindakan sementara untuk mencegah kerugian.
 
-## 17. Review Keputusan
+## 17. Penelaahan Keputusan
 
-1. Keputusan sementara wajib memiliki tanggal kedaluwarsa atau tanggal review.
+1. Keputusan sementara wajib memiliki tanggal kedaluwarsa atau tanggal penelaahan.
 2. Keputusan tinggi dan kritis harus ditinjau setelah implementasi.
-3. Review menilai kepatuhan, hasil, dampak tidak diinginkan, efektivitas kontrol, dan kebutuhan perubahan.
-4. Hasil review wajib dicatat dan dihubungkan dengan keputusan awal.
+3. Penelaahan menilai kepatuhan, hasil, dampak tidak diinginkan, efektivitas kontrol, dan kebutuhan perubahan.
+4. Hasil penelaahan wajib dicatat dan dihubungkan dengan keputusan awal.
 5. Keputusan yang tidak lagi relevan harus dicabut atau dinyatakan superseded.
 
 ## 18. Indikator Kepatuhan
@@ -339,7 +339,7 @@ Kepatuhan terhadap QC-007 dapat dinilai melalui:
 - persentase persetujuan yang sesuai matriks kewenangan;
 - jumlah keputusan tanpa dasar normatif;
 - jumlah konflik kepentingan yang tidak diungkapkan;
-- ketepatan waktu review keputusan;
+- ketepatan waktu penelaahan keputusan;
 - penyelesaian tindak lanjut;
 - jumlah keputusan darurat yang belum diratifikasi; dan
 - temuan audit terkait pelampauan kewenangan.
@@ -368,4 +368,6 @@ Ketidaksesuaian meliputi:
 
 ## 21. Ketentuan Penutup
 
-QC-007 menjadi dasar resmi bagi seluruh pengambilan keputusan, persetujuan, pengesahan, ratifikasi, pencatatan, eskalasi, review, dan pembatalan keputusan dalam ekosistem QURBATA. Seluruh manual, SOP, matriks kewenangan, rapat, repositori, dan alur RIQA OS wajib menurunkan ketentuan ini secara konsisten, proporsional, dan dapat diaudit.
+QC-007 menjadi dasar resmi bagi seluruh pengambilan keputusan, persetujuan, pengesahan, ratifikasi, pencatatan, eskalasi, penelaahan, dan pembatalan keputusan dalam ekosistem QURBATA. Seluruh manual, SOP, matriks kewenangan, rapat, repositori, dan alur RIQA OS wajib menurunkan ketentuan ini secara konsisten, proporsional, dan dapat diaudit.
+
+<!-- Audit editorial 27 Juli 2026: istilah review, dashboard, dan checklist diselaraskan menjadi penelaahan, dasbor, dan daftar periksa pada master Bahasa Indonesia. -->
