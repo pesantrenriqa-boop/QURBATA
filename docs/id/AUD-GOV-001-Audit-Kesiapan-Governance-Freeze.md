@@ -4,7 +4,7 @@
 **Judul:** Audit Awal Kesiapan Governance Freeze QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Laporan Audit Internal Awal  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Tanggal Audit:** 26 Juli 2026  
 **Objek:** GF-2026-001 — Governance v1.0  
 **Ruang Lingkup:** PR #1, branch feature/f001-constitution  
@@ -31,7 +31,7 @@ Keberadaan dokumen membuktikan kesiapan struktur, tetapi belum membuktikan imple
 
 Audit dilakukan melalui pemeriksaan struktur dan isi repository, metadata, daftar dokumen, nomor pasal, ID, rujukan Markdown, RACI, checklist, register, matriks keterlacakan, status temuan, dan persyaratan freeze.
 
-Audit ini merupakan desk review internal. Audit belum mencakup wawancara, observasi lapangan, pengujian RIQA OS, verifikasi kanal pengaduan, uji pemulihan, inspeksi bukti personalia, telaah hukum eksternal, atau telaah akademik independen.
+Audit ini merupakan desk review internal. Audit belum mencakup observasi lapangan, pengujian RIQA OS, uji pemulihan, inspeksi bukti personalia, atau telaah hukum eksternal. Kanal safeguarding telah menjalani uji operasional awal terbatas.
 
 ## 3. Bukti Audit
 
@@ -45,7 +45,7 @@ Audit ini merupakan desk review internal. Audit belum mencakup wawancara, observ
 | EVD-AUD-000006 | QC-004, QC-005, REG-GOV-001, CTM | Namespace dan hubungan tersedia; populasi serta bukti belum lengkap |
 | EVD-AUD-000007 | REG-GOV-006 | Masih terdapat temuan mayor terbuka |
 | EVD-AUD-000008 | REG-GOV-011 | Belum ada Decision-ID, baseline hash final, atau tanggal efektif |
-| EVD-AUD-000009 / EVD-GOV-000005 | QC-009, QC-012, dan REC-GOV-005 | Norma tersedia, Ainul Yakin menerima mandat, dan menyatakan tidak ada kasus terbuka yang diketahui; efektivitas operasional belum diuji |
+| EVD-AUD-000009 / EVD-GOV-000005–000012 | QC-009, QC-012, dan REC-GOV-005–REC-GOV-012 | Norma, mandat, kanal email, 2FA, uji penerimaan, eskalasi WhatsApp, target respons, serta Case-ID tersedia dan teruji secara awal |
 | EVD-AUD-000010 | REG-GOV-008 dan REG-GOV-007 | Register risiko serta CAPA tersedia; bukti efektivitas belum lengkap |
 
 ## 4. Penilaian Gate
@@ -116,3 +116,4 @@ GF-2026-001 tidak memenuhi syarat untuk status FROZEN. Status tetap BLOCKED samp
 |---|---|---|
 | 0.1.0-id | 26 Juli 2026 | Audit awal 16 gate, RACI, checklist, tautan, dan bukti |
 | 0.2.0-id | 27 Juli 2026 | Menyelaraskan hasil menjadi 6 PASS, 8 PARTIAL, 2 FAIL serta mencatat bukti kesiapan Safeguarding Lead |
+| 0.3.0-id | 27 Juli 2026 | Memvalidasi kesiapan operasional awal safeguarding berdasarkan REC-GOV-005–REC-GOV-012 |
