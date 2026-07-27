@@ -4,7 +4,7 @@
 **Judul:** Register Temuan Audit QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.3.0-id  
+**Versi:** 0.4.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -41,7 +41,7 @@ Status tambahan: `Ditangguhkan dengan Risiko Diterima`, hanya dengan keputusan b
 | AUD-2026-006 | Governance Freeze | REG-GOV-011 | Mayor | Temuan mayor terbuka menghalangi GF-10 | QA Lead | Sebelum Governance Freeze | Terbuka |
 | AUD-2026-007 | Review | QC-000/REG-GOV-011/REG-GOV-012 | Mayor | Telaah independen dan register keberatan material telah tersedia melalui REC-GOV-001–REC-GOV-004 | Governance Lead | 27 Juli 2026 | Ditutup |
 | AUD-2026-008 | Ratifikasi | QC-007/REG-GOV-011 | Mayor | Baseline final, Decision-ID, tanggal efektif, dan transisi belum ditetapkan | Otoritas Konstitusional | Sebelum Governance Freeze | Terbuka |
-| AUD-2026-009 | RACI | MAT-GOV-001 | Minor | Penetapan personel, pengganti, kompetensi, dan uji akses belum tersedia | Governance Lead | Sebelum implementasi | Terbuka |
+| AUD-2026-009 | RACI | MAT-GOV-001 | Minor | Pengganti Safeguarding Lead dan Document Controller telah ditetapkan; bukti kompetensi peran lain, pemisahan tugas, dan uji akses belum lengkap | Governance Lead | Sebelum implementasi | Dalam Pelaksanaan |
 | AUD-2026-010 | Bukti | CTM/CHK-GOV-001 | Minor | Bukti implementasi belum lengkap pada CTM, risiko, CAPA, safeguarding, dan RIQA OS | QA Lead | Sebelum Governance Freeze | Terbuka |
 
 ## 5. Data Wajib
@@ -77,3 +77,4 @@ RIQA OS harus menyediakan pengingat tenggat, eskalasi temuan kritis/mayor, relas
 | 0.1.0 | 2026-07-26 | Register temuan audit awal dibuat |
 | 0.2.0-id | 2026-07-26 | Metadata kendali dan temuan audit kesiapan freeze ditambahkan |
 | 0.3.0-id | 2026-07-27 | Terjemahan dipindahkan menjadi tindak lanjut non-blocking; temuan safeguarding dan telaah independen diselaraskan dengan bukti |
+| 0.4.0-id | 2026-07-27 | Menyelaraskan temuan RACI dengan penetapan Ulifah dan Izathy Khoirina serta menyisakan verifikasi yang benar-benar belum selesai |
