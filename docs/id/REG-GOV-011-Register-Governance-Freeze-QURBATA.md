@@ -4,7 +4,7 @@
 **Judul:** Register Governance Freeze QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.11.0-id  
+**Versi:** 0.12.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola dan Penjaminan Mutu QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -90,7 +90,7 @@ NOT-APPLICABLE hanya sah apabila alasan dan otoritas penetapannya terdokumentasi
 
 | Freeze-ID | Objek | Versi/Baseline | Status | PASS | PARTIAL | FAIL | Pemilik | Decision-ID |
 |---|---|---|---|---:|---:|---:|---|---|
-| GF-2026-001 | Governance v1.0 | `20892fbd5892dc2a79f23012ed6c98d0685a6eaa` | BLOCKED | 14 | 0 | 2 | Fungsi Tata Kelola | Menunggu |
+| GF-2026-001 | Governance v1.0 | `20892fbd5892dc2a79f23012ed6c98d0685a6eaa` | FROZEN | 16 | 0 | 0 | Fungsi Tata Kelola | DEC-GOV-004 |
 
 Angka gate pada register hanya diperbarui setelah bukti dinilai, bukan berdasarkan keberadaan dokumen semata.
 
@@ -113,7 +113,7 @@ Angka gate pada register hanya diperbarui setelah bukti dinilai, bukan berdasark
 | GF-2026-001 | GF-13 | PASS | EVD-GOV-000004 | Arif Nasruddin | 2026-07-26 | QC-000 dinilai valid dan layak dilanjutkan |
 | GF-2026-001 | GF-14 | PASS | EVD-GOV-000003 | Arif Nasruddin | 2026-07-26 | Tidak ada keberatan material yang dinyatakan |
 | GF-2026-001 | GF-15 | PASS | EVD-GOV-000020 | Document Controller | 2026-07-27 | Commit SHA kandidat, lokasi resmi, dan paket arsip ZIP/TAR.GZ berbasis SHA telah ditetapkan |
-| GF-2026-001 | GF-16 | FAIL | EVD-AUD-000008 | Audit internal awal | 2026-07-26 | Decision-ID dan tanggal efektif belum ada |
+| GF-2026-001 | GF-16 | PASS | DEC-GOV-004/EVD-AUD-000008 | Aris Liswanto | 2026-07-27 | DEC-GOV-004 diratifikasi; efektif 27 Juli 2026; transisi dan tinjauan berikutnya ditetapkan |
 
 ## 8. Keputusan Freeze
 
@@ -159,3 +159,4 @@ Sistem harus mencegah status FROZEN apabila ada gate kritis FAIL, Evidence-ID wa
 | 0.9.0-id | 27 Juli 2026 | GF-12 dinaikkan menjadi PASS setelah validasi desain CTM; total 13 PASS, 1 PARTIAL, 2 FAIL |
 | 0.10.0-id | 27 Juli 2026 | GF-15 dinaikkan menjadi PASS setelah attestasi baseline kandidat; total 14 PASS, 0 PARTIAL, 2 FAIL |
 | 0.11.0-id | 27 Juli 2026 | GF-10 dinaikkan menjadi PASS setelah temuan material dinilai langsung dan prasyarat ratifikasi dipisahkan ke GF-16; total 15 PASS, 0 PARTIAL, 1 FAIL |
+| 0.12.0-id | 27 Juli 2026 | GF-16 dinaikkan menjadi PASS berdasarkan DEC-GOV-004; GF-2026-001 berstatus FROZEN dengan 16 PASS, 0 PARTIAL, 0 FAIL |
