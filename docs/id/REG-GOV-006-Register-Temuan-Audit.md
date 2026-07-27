@@ -4,7 +4,7 @@
 **Judul:** Register Temuan Audit QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.10.0-id  
+**Versi:** 0.11.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -40,7 +40,7 @@ Status tambahan: `Ditangguhkan dengan Risiko Diterima`, hanya dengan keputusan b
 | AUD-2026-005 | Keterlacakan | QC-004/CTM/REC-GOV-016 | Minor | Desain 20/20 baris lengkap dan tervalidasi; bukti efektivitas operasional tetap dikumpulkan pada tahap implementasi terkait | QA Lead | Sebelum implementasi/pilot terkait | Ditutup untuk Governance Freeze; tindak lanjut operasional tetap terbuka |
 | AUD-2026-006 | Governance Freeze | REG-GOV-011 | Observasi | Catatan turunan bahwa temuan mayor terbuka menghalangi GF-10; bukan ketidaksesuaian mandiri | QA Lead | 27 Juli 2026 | Ditutup; digantikan penilaian langsung GF-10 |
 | AUD-2026-007 | Review | QC-000/REG-GOV-011/REG-GOV-012 | Mayor | Telaah independen dan register keberatan material telah tersedia melalui REC-GOV-001–REC-GOV-004 | Governance Lead | 27 Juli 2026 | Ditutup |
-| AUD-2026-008 | Ratifikasi | QC-007/REG-GOV-011/REC-GOV-017 | Prasyarat Ratifikasi | Baseline kandidat dan paket arsip telah ditetapkan; Decision-ID, tanggal efektif, penandatangan, dan transisi sah menunggu keputusan pada GF-16 | Otoritas Konstitusional | Sebelum status FROZEN | Menunggu Keputusan; tidak dihitung sebagai temuan mayor GF-10 |
+| AUD-2026-008 | Ratifikasi | QC-007/REG-GOV-011/REC-GOV-017/DEC-GOV-004 | Prasyarat Ratifikasi | Decision-ID, baseline, tanggal efektif, pengesah, transisi, dan tinjauan telah ditetapkan melalui DEC-GOV-004 | Otoritas Konstitusional | 27 Juli 2026 | Ditutup; GF-16 PASS |
 | AUD-2026-009 | RACI | MAT-GOV-001/REC-GOV-015 | Minor | Pengganti SAFE dan DOC telah ditetapkan dan uji meja delapan skenario PASS; bukti kompetensi beberapa peran dan uji akses RIQA OS tetap diperlukan sebelum implementasi produksi | Governance Lead | Sebelum implementasi produksi | Dalam Pelaksanaan; Non-blocking untuk Governance Freeze |
 | AUD-2026-010 | Bukti | CTM/CHK-GOV-001 | Minor | Desain CTM, risiko, CAPA, dan safeguarding memiliki bukti governance; implementasi RIQA OS dan bukti lapangan mengikuti gate tahap implementasi | QA Lead | Sebelum implementasi terkait | Terbuka; Non-blocking untuk Governance Freeze |
 
@@ -84,3 +84,4 @@ RIQA OS harus menyediakan pengingat tenggat, eskalasi temuan kritis/mayor, relas
 | 0.8.0-id | 2026-07-27 | Memvalidasi kelengkapan desain CTM dan memisahkan bukti implementasi lapangan dari baseline governance |
 | 0.9.0-id | 2026-07-27 | Mencatat baseline kandidat dan mempersempit sisa temuan ratifikasi menjadi Decision-ID serta tanggal efektif |
 | 0.10.0-id | 2026-07-27 | Menghapus sirkularitas GF-10/GF-16: AUD-2026-006 ditutup sebagai catatan turunan dan AUD-2026-008 diklasifikasikan sebagai prasyarat ratifikasi |
+| 0.11.0-id | 2026-07-27 | Menutup AUD-2026-008 berdasarkan ratifikasi eksplisit DEC-GOV-004 |
