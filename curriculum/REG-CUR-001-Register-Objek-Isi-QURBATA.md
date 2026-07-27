@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.14.0-id  
+**Versi:** 0.15.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -152,6 +152,14 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000099 | Knowledge Object | Konsistensi fathah pendek tanpa mad | QJ1-P014 | ACTIVE-DRAFT | used-by LO-000014 |
 | KO-000100 | Knowledge Object | Kelancaran rangkaian dua dan tiga huruf terpisah QJ1-P014 | QJ1-P014 | ACTIVE-DRAFT | used-by LO-000014 |
 | KO-000101 | Knowledge Object | Adab istiqamah dan teliti sampai akhir | QJ1-P014-AKH01 | ACTIVE-DRAFT | supports LO-000014 |
+| PO-000015 | Page Object | Otomatisasi Fathah | QJ1-P015 | ACTIVE-DRAFT | child-of CO-000001 |
+| LO-000015 | Learning Object | Mengotomatisasikan seluruh huruf berfathah melalui kontras bentuk dan makhraj | QJ1-P015 | ACTIVE-DRAFT | uses KO-000102–KO-000107 |
+| KO-000102 | Knowledge Object | Otomatisasi seluruh bunyi fathah QJ1-P001–QJ1-P014 | QJ1-P015 | ACTIVE-DRAFT | used-by LO-000015 |
+| KO-000103 | Knowledge Object | Kontras cepat keluarga bentuk dan titik | QJ1-P015 | ACTIVE-DRAFT | used-by LO-000015 |
+| KO-000104 | Knowledge Object | Kontras makhraj lintas keluarga huruf | QJ1-P015 | ACTIVE-DRAFT | used-by LO-000015 |
+| KO-000105 | Knowledge Object | Konsistensi fathah pendek pada peningkatan kelancaran | QJ1-P015 | ACTIVE-DRAFT | used-by LO-000015 |
+| KO-000106 | Knowledge Object | Baca mandiri rangkaian dua dan tiga huruf terpisah QJ1-P015 | QJ1-P015 | ACTIVE-DRAFT | used-by LO-000015 |
+| KO-000107 | Knowledge Object | Adab mendahulukan ketepatan daripada kecepatan | QJ1-P015-AKH01 | ACTIVE-DRAFT | supports LO-000015 |
 
 ## 3. Aturan
 
@@ -182,3 +190,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.12.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P012 |
 | 0.13.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P013 |
 | 0.14.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk integrasi fathah QJ1-P014 |
+| 0.15.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk otomatisasi fathah QJ1-P015 |
