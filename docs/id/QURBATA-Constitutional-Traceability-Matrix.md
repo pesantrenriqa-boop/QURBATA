@@ -98,10 +98,12 @@ Prioritas wajib adalah:
 4. menambahkan cross-reference yang tepat pada setiap QC;
 5. memastikan tidak ada nomor atau identitas dokumen yang ganda;
 6. menetapkan pemilik dan status setiap dokumen dalam register;
-7. menyelesaikan hubungan bahasa Indonesia–Inggris;
-8. mencatat kesenjangan bahasa Arab secara terbuka;
+7. memastikan terjemahan Inggris dan Arab tetap berstatus tindak lanjut non-blocking serta tidak diberi kedudukan pengendali;
+8. mencatat kesenjangan terjemahan secara terbuka sebelum publikasi versi bahasa terkait;
 9. menguji seluruh tautan pada indeks tata kelola; dan
 10. melakukan audit final terhadap matriks ini.
+
+Audit awal 27 Juli 2026 menemukan 20 baris CTM, seluruh referensi Knowledge-ID ditemukan dalam REG-GOV-001, dan tidak ditemukan ID ganda dalam register awal. Hasil ini belum membuktikan bahwa seluruh norma material QC-000 telah dipetakan; validasi kelengkapan substantif tetap wajib.
 
 ## 8. Implementasi RIQA OS
 
