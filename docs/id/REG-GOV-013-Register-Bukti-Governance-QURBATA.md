@@ -4,7 +4,7 @@
 **Judul:** Register Bukti Governance QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.19.0-id  
+**Versi:** 0.20.0-id  
 **Pemilik Dokumen:** Fungsi Penjaminan Mutu QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -43,7 +43,7 @@ PROPOSED, COLLECTED, UNDER-VALIDATION, VALID, REJECTED, EXPIRED, SUPERSEDED, dan
 | EVD-AUD-000009 | Norma dan kesiapan operasional awal safeguarding/pengaduan | QC-009/QC-012/REC-GOV-005–REC-GOV-012 | VALID | Safeguarding Lead | Kanal, 2FA, penerimaan, eskalasi, target respons, dan Case-ID tersedia; audit berkala tetap wajib |
 | EVD-AUD-000010 | Register risiko dan CAPA | REG-GOV-007/REG-GOV-008 | COLLECTED | Risk/QA Lead | Belum ditetapkan |
 | EVD-GOV-000001 | Pernyataan independensi Arif Nasruddin | REC-GOV-001 | COLLECTED | Sekretariat Tata Kelola | Memerlukan pemeriksaan formal/tanda tangan |
-| EVD-GOV-000002 | Hasil telaah independen awal QC-001–QC-012 | REC-GOV-002 | COLLECTED | Sekretariat Tata Kelola | Pernyataan penelaah |
+| EVD-GOV-000002 | Hasil telaah independen awal QC-001–QC-012 | REC-GOV-002 | VALID | Sekretariat Tata Kelola | Pernyataan langsung menyatakan seri QC bagus, valid, dan dapat dilanjutkan; REC-GOV-003 mencatat tidak ada keberatan material |
 | EVD-GOV-000003 | Konfirmasi tidak ada keberatan material | REC-GOV-003 | VALID | Sekretariat Tata Kelola | Konfirmasi penelaah independen |
 | EVD-GOV-000004 | Validasi substantif awal QC-000 | REC-GOV-004 | VALID | Pemilik QC-000 | Arif Nasruddin |
 | EVD-GOV-000005 | Penerimaan mandat Safeguarding Lead dan deklarasi tidak ada kasus terbuka | REC-GOV-005 | VALID | Ainul Yakin | Pernyataan langsung; efektivitas operasional belum diuji |
@@ -90,3 +90,4 @@ RIQA OS mencegah gate PASS bila Evidence-ID wajib tidak berstatus VALID, telah k
 | 0.17.0-id | 27 Juli 2026 | Mencatat audit terminologi master Bahasa Indonesia sebagai EVD-GOV-000015 |
 | 0.18.0-id | 27 Juli 2026 | Memvalidasi kelengkapan metadata minimum QC-000–QC-012 |
 | 0.19.0-id | 27 Juli 2026 | Mencatat audit profil risiko dan bukti kelulusan GF-09 sebagai EVD-GOV-000016 |
+| 0.20.0-id | 27 Juli 2026 | Memvalidasi hasil telaah independen QC-001–QC-012 untuk GF-02 |
