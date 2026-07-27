@@ -4,7 +4,7 @@
 **Judul:** Register Tindakan Korektif dan Pencegahan QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.3.0-id  
+**Versi:** 0.4.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -46,7 +46,7 @@ Kesimpulan “human error” tidak diterima tanpa pemeriksaan desain proses, ins
 | CAPA-2026-006 | AUD-2026-006 | Tutup atau putuskan risiko seluruh temuan mayor | Governance/QA Lead | Sebelum freeze | OPEN |
 | CAPA-2026-007 | AUD-2026-007 | Penelaah independen ditunjuk, telaah dicatat, dan register keberatan dibuka | Governance Lead | 27 Juli 2026 | CLOSED |
 | CAPA-2026-008 | AUD-2026-008 | Tetapkan baseline final, Decision-ID, tanggal efektif, dan transisi | Otoritas Konstitusional | Setelah gate lain PASS | OPEN |
-| CAPA-2026-009 | AUD-2026-009 | Tetapkan personel, pengganti, kompetensi, konflik, dan uji akses RACI | Governance Lead | Sebelum implementasi | OPEN |
+| CAPA-2026-009 | AUD-2026-009 | Pengganti SAFE dan DOC telah ditetapkan; lengkapi kompetensi peran lain, kontrol pemisahan tugas, dan uji akses RACI | Governance Lead | Sebelum implementasi | IN-PROGRESS |
 | CAPA-2026-010 | AUD-2026-010 | Lengkapi dan validasi Evidence-ID untuk CTM, risiko, CAPA, safeguarding, dan RIQA OS | QA Lead | Sebelum freeze | OPEN |
 
 ## 5. Data Wajib
@@ -76,3 +76,4 @@ CAPA ditutup hanya setelah bukti, verifikasi independen, dan hasil uji efektivit
 |---|---|---|
 | 0.1.0 | 2026-07-26 | Register CAPA awal dibuat |
 | 0.3.0-id | 2026-07-27 | Menyelaraskan CAPA bahasa, safeguarding, dan telaah independen dengan keputusan ruang lingkup serta bukti terbaru |
+| 0.4.0-id | 2026-07-27 | Memperbarui CAPA RACI berdasarkan penetapan pengganti SAFE dan DOC |
