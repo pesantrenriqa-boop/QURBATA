@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.26.0-id  
+**Versi:** 0.27.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -283,6 +283,20 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000204 | Knowledge Object | Integrasi dhammah baru dengan review padanan | QJ1-P026 | ACTIVE-DRAFT | used-by LO-000026 |
 | KO-000205 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P026 | QJ1-P026 | ACTIVE-DRAFT | used-by LO-000026 |
 | KO-000206 | Knowledge Object | Adab rendah hati ketika memulai bunyi baru | QJ1-P026-AKH01 | ACTIVE-DRAFT | supports LO-000026 |
+| PO-000027 | Page Object | Dhammah Keluarga Jim dan Tenggorokan | QJ1-P027 | ACTIVE-DRAFT | child-of CO-000003 |
+| LO-000027 | Learning Object | Membedakan dan membaca جُ حُ خُ عُ غُ هُ dengan review harakat sebelumnya | QJ1-P027 | ACTIVE-DRAFT | uses KO-000207–KO-000218 |
+| KO-000207 | Knowledge Object | Bentuk dhammah keluarga ج ح خ | QJ1-P027 | ACTIVE-DRAFT | used-by LO-000027 |
+| KO-000208 | Knowledge Object | Bentuk dhammah keluarga ع غ dan ه | QJ1-P027 | ACTIVE-DRAFT | used-by LO-000027 |
+| KO-000209 | Knowledge Object | Bunyi جُ | QJ1-P027 | ACTIVE-DRAFT | used-by LO-000027 |
+| KO-000210 | Knowledge Object | Bunyi حُ | QJ1-P027 | ACTIVE-DRAFT | used-by LO-000027 |
+| KO-000211 | Knowledge Object | Bunyi خُ | QJ1-P027 | ACTIVE-DRAFT | used-by LO-000027 |
+| KO-000212 | Knowledge Object | Bunyi عُ | QJ1-P027 | ACTIVE-DRAFT | used-by LO-000027 |
+| KO-000213 | Knowledge Object | Bunyi غُ | QJ1-P027 | ACTIVE-DRAFT | used-by LO-000027 |
+| KO-000214 | Knowledge Object | Bunyi هُ | QJ1-P027 | ACTIVE-DRAFT | used-by LO-000027 |
+| KO-000215 | Knowledge Object | Diskriminasi bentuk, titik, dan makhraj keluarga tenggorokan | QJ1-P027 | ACTIVE-DRAFT | used-by LO-000027 |
+| KO-000216 | Knowledge Object | Integrasi dhammah baru dengan dhammah awal dan padanan fathah–kasrah | QJ1-P027 | ACTIVE-DRAFT | used-by LO-000027 |
+| KO-000217 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P027 | QJ1-P027 | ACTIVE-DRAFT | used-by LO-000027 |
+| KO-000218 | Knowledge Object | Adab sabar tanpa memaksa suara | QJ1-P027-AKH01 | ACTIVE-DRAFT | supports LO-000027 |
 
 ## 3. Aturan
 
@@ -325,3 +339,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.24.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk integrasi kasrah QJ1-P024 |
 | 0.25.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk kontras fathah–kasrah QJ1-P025 |
 | 0.26.0-id | 27 Juli 2026 | Membentuk CO fase dhammah serta menambahkan PO, LO, dan KO untuk QJ1-P026 |
+| 0.27.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P027 |
