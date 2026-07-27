@@ -4,7 +4,7 @@
 **Judul:** Audit Awal Kesiapan Governance Freeze QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Laporan Audit Internal Awal  
-**Versi:** 0.12.0-id  
+**Versi:** 0.13.0-id  
 **Tanggal Audit:** 26 Juli 2026  
 **Objek:** GF-2026-001 — Governance v1.0  
 **Ruang Lingkup:** PR #1, branch feature/f001-constitution  
@@ -20,9 +20,9 @@ Status awal Governance Freeze adalah BLOCKED.
 
 Dari 16 gate kritis:
 
-- 14 PASS;
+- 15 PASS;
 - 0 PARTIAL;
-- 2 FAIL;
+- 1 FAIL;
 - 0 NOT-APPLICABLE.
 
 Keberadaan dokumen membuktikan kesiapan struktur, tetapi belum membuktikan implementasi, validasi independen, penyelesaian keberatan, efektivitas CAPA, atau pengesahan freeze. Karena terdapat gate kritis FAIL, baseline belum boleh diberi status FROZEN.
@@ -61,7 +61,7 @@ Audit ini merupakan desk review internal. Audit belum mencakup observasi lapanga
 | GF-07 | PASS | EVD-AUD-000005/EVD-GOV-000013/EVD-GOV-000014/EVD-GOV-000018 | Penetapan peran/pengganti tersedia dan delapan skenario RACI, quorum, pemisahan tugas, serta ratifikasi lulus uji meja |
 | GF-08 | PASS | EVD-AUD-000009 | Dokumen safeguarding dan proses pengaduan tersedia |
 | GF-09 | PASS | EVD-GOV-000016 | Sepuluh risiko terdaftar; skor maksimum 16 dan tidak terdapat risiko kritis tanpa pengendalian |
-| GF-10 | FAIL | EVD-AUD-000007 | Temuan mayor masih terbuka dan belum mempunyai keputusan penerimaan risiko yang sah |
+| GF-10 | PASS | EVD-AUD-000007 | Tidak ada temuan kritis atau mayor material yang terbuka; prasyarat ratifikasi dinilai secara terpisah pada GF-16 |
 | GF-11 | PASS | EVD-GOV-000017 | Seluruh CAPA yang ditutup memiliki bukti efektivitas; CAPA terbuka tidak dihitung sebagai selesai |
 | GF-12 | PASS | EVD-GOV-000019 | Dua puluh dari dua puluh baris CTM lengkap untuk desain governance; bukti efektivitas lapangan dinilai pada tahap implementasi |
 | GF-13 | PASS | EVD-GOV-000004 | QC-000 dinilai valid dan layak dilanjutkan oleh Arif Nasruddin |
@@ -89,9 +89,9 @@ Checklist dinilai lengkap sebagai instrumen, tetapi belum boleh dinyatakan lulus
 
 | Finding-ID | Tingkat | Temuan |
 |---|---|---|
-| AUD-2026-006 | Mayor | Temuan mayor terbuka menghalangi GF-10 |
+| AUD-2026-006 | Observasi—Ditutup | Catatan turunan GF-10 ditutup dan digantikan penilaian langsung atas temuan material |
 | AUD-2026-007 | Mayor—Ditutup | Telaah independen dan register keberatan material tersedia melalui REC-GOV-001–REC-GOV-004 dan REG-GOV-012 |
-| AUD-2026-008 | Mayor | Baseline final, Decision-ID, tanggal efektif, dan transisi freeze belum ditetapkan |
+| AUD-2026-008 | Prasyarat Ratifikasi | Decision-ID, tanggal efektif, penandatangan, dan transisi menunggu keputusan GF-16; bukan temuan mayor material |
 | AUD-2026-009 | Minor | RACI belum didukung penetapan personel, pengganti, kompetensi, dan uji akses |
 | AUD-2026-010 | Minor | Bukti implementasi CTM, risiko, CAPA, safeguarding, dan RIQA OS belum lengkap |
 
@@ -126,3 +126,4 @@ GF-2026-001 tidak memenuhi syarat untuk status FROZEN. Status tetap BLOCKED samp
 | 0.10.0-id | 27 Juli 2026 | Menaikkan GF-07 menjadi PASS dan memperbarui hasil menjadi 12 PASS, 2 PARTIAL, 2 FAIL |
 | 0.11.0-id | 27 Juli 2026 | Menaikkan GF-12 menjadi PASS dan memperbarui hasil menjadi 13 PASS, 1 PARTIAL, 2 FAIL |
 | 0.12.0-id | 27 Juli 2026 | Menaikkan GF-15 menjadi PASS dan memperbarui hasil menjadi 14 PASS, 0 PARTIAL, 2 FAIL |
+| 0.13.0-id | 27 Juli 2026 | Menaikkan GF-10 menjadi PASS setelah menghapus duplikasi logika ratifikasi; hasil menjadi 15 PASS, 0 PARTIAL, 1 FAIL |
