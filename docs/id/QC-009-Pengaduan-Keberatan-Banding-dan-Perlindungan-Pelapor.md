@@ -4,7 +4,7 @@
 **Judul:** Pengaduan, Keberatan, Banding, dan Perlindungan Pelapor QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Normatif  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Pemilik Dokumen:** Fungsi Tata Kelola QURBATA  
 **Otoritas Persetujuan:** Pendiri dan Peneliti Utama/Dewan Konstitusi setelah aktif  
 **Tanggal Berlaku:** Setelah persetujuan sesuai kewenangan  
@@ -267,7 +267,7 @@ Keberatan tidak boleh digunakan hanya karena pihak tidak menyukai hasil yang sah
 
 ### 13.3 Penelaah Keberatan
 
-Keberatan harus ditelaah oleh pihak yang tidak menjadi satu-satunya pembuat keputusan awal. Apabila sumber daya terbatas, wajib ada review tambahan atau kontrol independen.
+Keberatan harus ditelaah oleh pihak yang tidak menjadi satu-satunya pembuat keputusan awal. Apabila sumber daya terbatas, wajib ada penelaahan tambahan atau kontrol independen.
 
 ## 14. Banding
 
@@ -399,7 +399,7 @@ Keputusan sekurang-kurangnya memuat:
 Tindakan dapat berupa:
 
 - koreksi data, nilai, dokumen, atau keputusan;
-- pengulangan asesmen atau review independen;
+- pengulangan asesmen atau penelaahan independen;
 - pemulihan akses, hak, pembayaran, atau layanan;
 - permintaan maaf resmi;
 - pengembalian biaya atau kompensasi sesuai kewenangan;
@@ -474,7 +474,7 @@ Perkara dapat dibuka kembali apabila:
 ## 31. Perkara Asesmen dan Sertifikasi
 
 1. Keberatan nilai harus merujuk pada rubrik, bukti performa, prosedur, dan catatan asesor.
-2. Review ulang dilakukan oleh pihak yang kompeten dan tidak menjadi satu-satunya asesor awal.
+2. Penelaahan ulang dilakukan oleh pihak yang kompeten dan tidak menjadi satu-satunya asesor awal.
 3. Banding tidak boleh digunakan untuk menurunkan standar kelulusan.
 4. Kesalahan administratif wajib segera dikoreksi.
 5. Apabila instrumen atau proses dinyatakan cacat, dampaknya terhadap peserta lain harus diperiksa.
@@ -570,7 +570,7 @@ Rekaman minimum mencakup:
 - catatan penutupan; dan
 - keputusan pembukaan kembali apabila ada.
 
-## 38. Review dan Perbaikan Berkelanjutan
+## 38. Penelaahan dan Perbaikan Berkelanjutan
 
 Data perkara harus dianalisis secara berkala untuk menemukan:
 
@@ -617,3 +617,5 @@ QC-009 merupakan dokumen turunan normatif dari QC-000.
 Dokumen ini menjadi dasar bagi penyusunan SOP, formulir, matriks kewenangan, kode perkara, modul RIQA OS, serta mekanisme audit yang berkaitan dengan pengaduan, keberatan, banding, perlindungan pelapor, dan tindak lanjut perbaikan.
 
 QC-009 berlaku setelah melalui telaah, persetujuan, dan ratifikasi sesuai QC-007.
+
+<!-- Audit editorial 27 Juli 2026: istilah review, dashboard, dan checklist diselaraskan menjadi penelaahan, dasbor, dan daftar periksa pada master Bahasa Indonesia. -->
