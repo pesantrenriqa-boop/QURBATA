@@ -1,51 +1,55 @@
 # QURBATA
 
-**QURBATA** is a structured Qur’anic literacy and education-development project initiated by Rumah Ilmu Al-Qur’an (RIQA). The repository serves as the official, version-controlled source for its constitutional documents, terminology, educational DNA, graduate profile, research protocol, curriculum architecture, learning materials, assessments, standards, and supporting assets.
+**QURBATA** adalah proyek pengembangan literasi dan pendidikan Al-Qur’an yang disusun secara bertahap, terukur, dan dapat ditelusuri oleh Rumah Ilmu Al-Qur’an (RIQA).
 
-## Repository Status
+Repository ini menjadi sumber resmi terkendali untuk konstitusi, tata kelola, terminologi, kurikulum, buku, asesmen, penelitian, standar, dan aset pendukung QURBATA.
 
-QURBATA is currently in the **Foundation Documentation Phase**. The first priority is to establish and harmonize five governing documents:
+## Status Repository
 
-1. `F-001` — Constitution
-2. `F-002` — Lexicon
-3. `F-003` — QURBATA DNA
-4. `F-004` — Graduate Profile
-5. `F-005` — Research Protocol
+QURBATA sedang berada pada **Fase Fondasi dan Tata Kelola**. PR #1 membangun Governance v1.0 dengan:
 
-These documents will govern subsequent curriculum, book, assessment, and research development.
+1. `QC-000` sebagai satu-satunya Konstitusi QURBATA;
+2. `QC-001–QC-012` sebagai keluarga dokumen turunan;
+3. Bahasa Indonesia sebagai bahasa induk dan satu-satunya teks normatif pengendali;
+4. terjemahan Inggris dan Arab sebagai produk lanjutan setelah harmonisasi;
+5. register, matriks keterlacakan, RACI, bukti, risiko, CAPA, dan mekanisme audit sebagai toolkit governance.
 
-## Repository Structure
+Arsitektur lama `F-001–F-005` tidak lagi menjadi sumber kewenangan konstitusional.
+
+## Struktur Repository
 
 ```text
-foundation/     Governing and foundational documents
-curriculum/     Curriculum architecture, scope, sequence, and learning outcomes
-books/          Master manuscripts and book-development files
-assessments/    Assessment frameworks, instruments, and rubrics
-research/       Research records, validation studies, and evidence
-standards/      Editorial, pedagogical, linguistic, and quality standards
-references/     Bibliographies and approved reference records
-assets/         Project-owned visual and supporting assets
-templates/      Controlled templates for recurring documents
-archive/        Superseded or historical material retained for traceability
+docs/id/        Master Bahasa Indonesia dan toolkit governance
+curriculum/     Arsitektur, lingkup, urutan, dan capaian kurikulum
+books/          Naskah sumber tunggal dan berkas pengembangan buku
+assessments/    Kerangka asesmen, instrumen, dan rubrik
+research/       Rekaman penelitian, validasi, dan bukti
+standards/      Standar editorial, pedagogis, bahasa, dan mutu
+references/     Bibliografi dan sumber yang disetujui
+assets/         Aset visual dan pendukung milik proyek
+templates/      Template terkendali
+archive/        Materi lama yang dipertahankan untuk keterlacakan
 ```
 
-## Source-of-Truth Policy
+## Kebijakan Sumber Kebenaran
 
-The `main` branch is the authoritative record of approved QURBATA documentation. Every meaningful change must be traceable through a clear commit history. Drafts, revisions, and superseded documents must not silently replace approved material.
+Branch `main` menjadi rekaman otoritatif setelah dokumen disetujui dan digabungkan. Perubahan material wajib mempunyai riwayat yang dapat ditelusuri. Draf, revisi, dan dokumen yang digantikan tidak boleh mengganti sumber resmi secara diam-diam.
 
-## Working Language
+## Bahasa Kerja
 
-Foundation documents use **English for normative provisions** and may include **Indonesian explanatory notes** where needed for implementation and institutional clarity.
+Bahasa Indonesia adalah teks induk normatif dan pengendali. Bahasa Inggris dan Arab tidak mempunyai kedudukan pengendali sebelum diterjemahkan, diharmonisasikan, ditelaah, dan disahkan sesuai kewenangan.
 
-## Current Governance Rule
+## Aturan Pengembangan
 
-No curriculum, book, assessment, or derivative product may be treated as final before its governing Foundation documents have been reviewed for consistency.
+Kurikulum, buku, asesmen, aplikasi, dan produk turunan tidak boleh dinyatakan final sebelum fondasi governance yang relevan tersedia. Ketentuan ini tidak melarang pekerjaan pengembangan paralel, tetapi setiap keluaran harus tetap berstatus draf dan dapat ditelusuri sampai memperoleh persetujuan.
 
-## Institution
+Fokus produk utama setelah fondasi minimum selesai adalah penyelesaian **Buku QURBATA**, dimulai dari Jilid 1, sebelum pengembangan produk turunan seperti flashcard dan presentasi.
+
+## Institusi
 
 **Rumah Ilmu Al-Qur’an (RIQA)**  
 Malang, Indonesia
 
 ---
 
-Copyright © RIQA. Repository use and distribution remain subject to the project’s formal licensing decision.
+Hak cipta © RIQA. Penggunaan dan distribusi tunduk pada keputusan lisensi resmi QURBATA.
