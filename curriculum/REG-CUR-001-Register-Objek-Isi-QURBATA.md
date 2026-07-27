@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.29.0-id  
+**Versi:** 0.30.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -319,6 +319,16 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000234 | Knowledge Object | Integrasi dhammah baru dengan dhammah sebelumnya dan padanan fathah–kasrah | QJ1-P029 | ACTIVE-DRAFT | used-by LO-000029 |
 | KO-000235 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P029 | QJ1-P029 | ACTIVE-DRAFT | used-by LO-000029 |
 | KO-000236 | Knowledge Object | Adab teliti melihat titik dan tanda sebelum membaca | QJ1-P029-AKH01 | ACTIVE-DRAFT | supports LO-000029 |
+| PO-000030 | Page Object | Evaluasi Tiga Harakat I | QJ1-P030 | ACTIVE-DRAFT | child-of CO-000003 |
+| LO-000030 | Learning Object | Menunjukkan penguasaan formatif tiga harakat sampai QJ1-P029 | QJ1-P030 | ACTIVE-DRAFT | uses KO-000237–KO-000244 |
+| KO-000237 | Knowledge Object | Integrasi sampel fathah QJ1-P001–QJ1-P025 | QJ1-P030 | ACTIVE-DRAFT | used-by LO-000030 |
+| KO-000238 | Knowledge Object | Integrasi sampel kasrah QJ1-P016–QJ1-P025 | QJ1-P030 | ACTIVE-DRAFT | used-by LO-000030 |
+| KO-000239 | Knowledge Object | Integrasi dhammah QJ1-P026–QJ1-P029 | QJ1-P030 | ACTIVE-DRAFT | used-by LO-000030 |
+| KO-000240 | Knowledge Object | Diskriminasi visual bentuk, titik, dan posisi tiga harakat | QJ1-P030 | ACTIVE-DRAFT | used-by LO-000030 |
+| KO-000241 | Knowledge Object | Kontras fonetik fathah–kasrah–dhammah | QJ1-P030 | ACTIVE-DRAFT | used-by LO-000030 |
+| KO-000242 | Knowledge Object | Ketepatan makhraj dan panjang-pendek | QJ1-P030 | ACTIVE-DRAFT | used-by LO-000030 |
+| KO-000243 | Knowledge Object | Kelancaran serta kemandirian pada sampel dua dan tiga huruf | QJ1-P030 | ACTIVE-DRAFT | used-by LO-000030 |
+| KO-000244 | Knowledge Object | Adab jujur dan tenang dalam evaluasi | QJ1-P030-AKH01 | ACTIVE-DRAFT | supports LO-000030 |
 
 ## 3. Aturan
 
@@ -364,3 +374,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.27.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P027 |
 | 0.28.0-id | 27 Juli 2026 | Menambahkan spesifikasi terkendali PO, LO, dan KO Bahasa Arab 1 QJ1-P028; materi masih terblokir keputusan |
 | 0.29.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P029 |
+| 0.30.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk Evaluasi Tiga Harakat I QJ1-P030 |
