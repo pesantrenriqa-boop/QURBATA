@@ -45,8 +45,8 @@
 | Abjad | Lexeme-ID | Kosa kata | Arti | Hitungan |
 |---|---|---|---|---:|
 | ب | AR-LEX-000003 | بَابٌ | pintu | 1 |
-| ب | AR-LEX-000009 | بَيْتٌ | rumah | 1 |
 | ب | AR-LEX-000016 | بِنْتٌ | anak perempuan | 1 |
+| ب | AR-LEX-000009 | بَيْتٌ | rumah | 1 |
 | ح | AR-LEX-000006 | حَقِيبَةٌ | tas | 1 |
 | س | AR-LEX-000005 | سَبُّورَةٌ | papan tulis | 1 |
 | ط | AR-LEX-000013 | طَالِبٌ | pelajar laki-laki | 1 |
@@ -56,9 +56,9 @@
 | ك | AR-LEX-000004 | كُرْسِيٌّ | kursi | 1 |
 | م | AR-LEX-000010 | مَاءٌ | air | 1 |
 | م | AR-LEX-000008 | مَسْجِدٌ | masjid | 1 |
+| م | AR-LEX-000007 | مُصْحَفٌ | mushaf | 1 |
 | م | AR-LEX-000011 | مُعَلِّمٌ | guru laki-laki | 1 |
 | م | AR-LEX-000012 | مُعَلِّمَةٌ | guru perempuan | 0 |
-| م | AR-LEX-000007 | مُصْحَفٌ | mushaf | 1 |
 | و | AR-LEX-000015 | وَلَدٌ | anak laki-laki | 1 |
 
 Urutan alfabet harus diperiksa ulang dengan kebijakan kolasi Arab sebelum kamus dibekukan.
