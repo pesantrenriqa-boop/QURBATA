@@ -97,8 +97,17 @@ Pengisian contoh final dimulai setelah:
 4. aturan vokalisasi dan sumber ditetapkan;
 5. panel ahli menyetujui batch pilot.
 
+## 8A. Batch Kalimat Terdaftar
+
+| Batch-ID | Pattern-ID | Sentence-ID | Status |
+|---|---|---|---|
+| BAT-ARB-001 | AR-PAT-000001–AR-PAT-000004 | AR-SEN-000001–AR-SEN-000024 | DRAF PILOT |
+
+Seluruh kalimat memakai kosa kata LEX-ARB-001 dan belum dipetakan final ke halaman.
+
 ## 9. Riwayat
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.2.0-id | 28 Juli 2026 | Mencatat 4 pola dan 24 contoh dari BAT-ARB-001 |
 | 0.1.0-id | 28 Juli 2026 | Skema master kalimat dan hubungan ke kosa kata/kaidah |
