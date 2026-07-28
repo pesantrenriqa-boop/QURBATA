@@ -15,7 +15,24 @@
 | BLOCKED-CUR-HAF-002 | QJ1-P036 | Teks Hafalan 2, sumber, batas potongan, model bacaan, Hafalan Object-ID, pengesah | Pemilik Akademik + ahli | OPEN |
 | BLOCKED-ORTHO-QJ1-001 | QJ1-P033 | Verifikasi fungsi, penulisan, dan penyajian ءُ dalam urutan Jilid 1 | Ahli Bahasa Arab/Qira’at | OPEN |
 
-## 1A. Substatus Blocker Bahasa Arab
+## 1A. Substatus Blocker Tahfidz
+
+| Komponen | Bukti | Status |
+|---|---|---|
+| kandidat Hafalan 1 | Al-Fatihah ayat 1–3; PROP-CUR-QJ1-001 | PROPOSED |
+| kandidat Hafalan 2 | Al-Fatihah ayat 4–7 + murojaah ayat 1–3; PROP-CUR-QJ1-001 | PROPOSED |
+| pemetaan halaman | MAP-HAF-QJ1-001; P001–P040 | COMPLETE-DRAFT |
+| pola akuisisi dan murojaah | sima’, talqin, recall, penyambungan, distributed review, delayed retention | COMPLETE-DRAFT |
+| Hafalan Object-ID | HAF-QJ1-000001–000003 | PROPOSED — INACTIVE |
+| keputusan Pemilik Akademik | setuju/ubah/tolak dan Decision-ID | NOT PROVIDED |
+| teks dan sumber resmi | teks Utsmani, nomor ayat, versi sumber, hak penggunaan | NOT PROVIDED |
+| tashih dan model bacaan | ahli Al-Qur’an/Qira’at, tajwid, waqaf-ibtida’, audio | NOT PROVIDED |
+| rubrik checkpoint | P018, P036, dan P040 | NOT PROVIDED |
+| safeguarding dan uji beban | durasi lima menit, remedial, penghentian aman | NOT PROVIDED |
+
+Pemetaan halaman mengurangi ketidakjelasan implementasi, tetapi tidak menutup BLOCKED-CUR-HAF-001/002 sebelum keputusan dan bukti ahli tersedia.
+
+## 1B. Substatus Blocker Bahasa Arab
 
 | Komponen | Bukti | Status |
 |---|---|---|
@@ -82,7 +99,7 @@ Kesiapan keluar-Draft berbasis gate saat ini: **2 dari 8 gate makro selesai (25%
 
 ## 5. Urutan Tindak Lanjut
 
-1. Pemilik Akademik menetapkan materi Hafalan 1 dan Hafalan 2 serta memastikan ruang lingkup review Bahasa Arab.
+1. Pemilik Akademik menilai kandidat dan MAP-HAF-QJ1-001, lalu menetapkan atau mengubah materi Hafalan 1 dan Hafalan 2 serta memastikan ruang lingkup review Bahasa Arab.
 2. Ahli Bahasa Arab mengisi REV-ARB-QJ1-002, menilai 81 kalimat terdahulu dan tiga teks, lalu mencatat Evidence-ID.
 3. Ahli memverifikasi ءُ, model pelafalan, batas literasi, dan kandidat leksikal; gunakan AUD-ARB-QJ1-003 sebagai baseline, lalu editorial/render membuktikan bahwa naskah guru tidak bocor menjadi bacaan peserta.
 4. Pemeriksa akademik menelaah urutan, bentuk, harakat, makhraj, dan beban.
@@ -95,6 +112,7 @@ Kesiapan keluar-Draft berbasis gate saat ini: **2 dari 8 gate makro selesai (25%
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.12.0-id | 28 Juli 2026 | Menambahkan MAP-HAF-QJ1-001 dan substatus Tahfidz; pemetaan P001–P040 selesai-draf tanpa menutup keputusan serta validasi ahli |
 | 0.11.0-id | 28 Juli 2026 | Mengubah prototipe ke A5 potret 42 halaman dan menutup audit kebocoran render pada tingkat teknis; finishing/final approval tetap terbuka |
 | 0.10.0-id | 28 Juli 2026 | Mengunci A5 lanskap dan Amiri Quran 1.003; build 40/40 serta audit visual ulang lulus teknis |
 | 0.9.0-id | 28 Juli 2026 | Build PDF peserta 40/40 lulus teknis; empat halaman khusus dipisahkan; proof dan persetujuan tetap terbuka |
