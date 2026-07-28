@@ -14,7 +14,8 @@ Audit awal menemukan 23 kalimat panduan tanpa Sentence-ID persis. Penutupan dila
 - 8 kalimat panduan disamakan dengan Sentence-ID master yang telah ada;
 - 15 kalimat yang diperlukan urutan halaman diregistrasi sebagai AR-SEN-000082–000096;
 - 0 kalimat model baku tersisa tanpa identitas sumber;
-- 15 objek baru tetap berstatus **LANGUAGE-REVIEW**, bukan VALIDATED.
+- 15 objek baru tetap berstatus **LANGUAGE-REVIEW**, bukan VALIDATED;
+- dependency AR-LEX, AR-FW, AR-GRM, AR-FUN, Stage, halaman, dan risiko telah diisi; Validator/Evidence tetap NOT PROVIDED.
 
 | Pemeriksaan | Hasil | Status |
 |---|---:|---|
@@ -77,7 +78,11 @@ AR-SEN-000082–000091 berada pada BAT-ARB-002 dan AR-SEN-000092–000096 berada
 - hubungan AR-LEX, AR-FW, AR-GRM, dan AR-FUN;
 - batas antara naskah lisan guru dan whitelist bacaan peserta.
 
-## 5. Keputusan Audit
+## 5. Kesiapan Paket Ahli
+
+AR-FUN-000005–000008 dan metadata dependency untuk seluruh 15 kandidat telah tersedia di BAT-ARB-002/003. Paket kini siap dibaca ahli, tetapi belum boleh berpindah dari LANGUAGE-REVIEW sampai nama validator, tanggal, keputusan per butir, koreksi, dan Evidence-ID dicatat.
+
+## 6. Keputusan Audit
 
 - Kesenjangan identitas sumber: **DITUTUP**.
 - Keterlacakan 40 halaman: **LULUS**.
