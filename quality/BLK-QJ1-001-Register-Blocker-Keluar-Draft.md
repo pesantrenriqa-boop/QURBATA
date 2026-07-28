@@ -13,6 +13,7 @@
 | BLOCKED-CUR-ARB-001 | QJ1-P001–P040/P028 | Validasi ahli atas model bahasa dan AR-SEN-000082–000096, model pelafalan, batas literasi, keputusan gerbang, Arabic Learning Object-ID, serta otorisasi | Pemilik Akademik + ahli Bahasa Arab | OPEN — PRODUK SIAP REVIEW |
 | BLOCKED-CUR-ARB-002 | Jilid 1–8 | Validasi ACP-QUR-001 dan pemetaan Stage-ID/AR-LEX/AR-GRM/AR-FUN/AR-ASM ke jilid dan halaman | Pemilik Akademik + panel ahli | OPEN |
 | BLOCKED-CUR-HAF-002 | QJ1-P036 | Teks Hafalan 2, sumber, batas potongan, model bacaan, Hafalan Object-ID, pengesah | Pemilik Akademik + ahli | OPEN |
+| BLOCKED-CUR-HAD-001 | Jilid 1–8 | Inventaris hadis akhlak sahih, audit keunikan Full-Hadith-ID, takhrij, terjemah, mapping halaman, whitelist, asesmen, dan otorisasi | Pemilik Akademik + ahli hadis/syar‘i | OPEN — ARSITEKTUR SIAP, OBJEK BELUM DIISI |
 | BLOCKED-ORTHO-QJ1-001 | QJ1-P033 | Verifikasi fungsi, penulisan, dan penyajian ءُ dalam urutan Jilid 1 | Ahli Bahasa Arab/Qira’at | OPEN |
 
 ## 1A. Substatus Blocker Tahfidz
@@ -62,6 +63,21 @@ Pemetaan halaman mengurangi ketidakjelasan implementasi, tetapi tidak menutup BL
 
 COMPLETE-DRAFT berarti artefak telah tersedia dan terlacak, bukan telah divalidasi atau disahkan. Karena unsur NOT PROVIDED dan OPEN masih material, BLOCKED-CUR-ARB-001/002 tetap OPEN.
 
+## 1C. Substatus Blocker Hadis Akhlak
+
+| Komponen | Bukti | Status |
+|---|---|---|
+| progression Jilid 1–8 | HCP-QUR-001 | COMPLETE-DRAFT |
+| sumber tunggal dan skema deduplikasi | REG-HAD-001 | COMPLETE-DRAFT |
+| kapasitas desain | sampai 320 slot; kuota final belum disahkan | CONTROLLED-ASSUMPTION |
+| kandidat Hadith-ID | belum ada objek aktif | NOT PROVIDED |
+| sumber, takhrij, dan grading authority | belum ada | NOT PROVIDED |
+| terjemah, whitelist, asesmen, safeguarding | belum ada | NOT PROVIDED |
+| mapping halaman Jilid 1–8 | belum ada | NOT PROVIDED |
+| review ahli, Evidence-ID, Decision-ID | belum ada | NOT PROVIDED |
+
+Arsitektur menutup gap definisi dan kontrol, tetapi tidak menutup BLOCKED-CUR-HAD-001 sebelum objek nyata, takhrij, validasi, dan otorisasi tersedia.
+
 ## 2. Usulan Penutupan yang Tersedia
 
 [PROP-CUR-QJ1-001](https://github.com/pesantrenriqa-boop/QURBATA/blob/feature/qj1-master-structure/quality/PROP-CUR-QJ1-001-Usulan-Materi-Khusus.md) telah menyiapkan rekomendasi terkontrol:
@@ -104,19 +120,21 @@ Persentase keseluruhan proyek QURBATA Jilid 1–8 dicatat terpisah dalam `STAT-Q
 
 ## 5. Urutan Tindak Lanjut
 
-1. Pemilik Akademik menilai kandidat dan MAP-HAF-QJ1-001, lalu menetapkan atau mengubah materi Hafalan 1 dan Hafalan 2 serta memastikan ruang lingkup review Bahasa Arab.
-2. Ahli Bahasa Arab mengisi REV-ARB-QJ1-002, menilai 81 kalimat terdahulu dan tiga teks, lalu mencatat Evidence-ID.
-3. Ahli memverifikasi ءُ, model pelafalan, batas literasi, dan kandidat leksikal; gunakan AUD-ARB-QJ1-003 sebagai baseline, lalu editorial/render membuktikan bahwa naskah guru tidak bocor menjadi bacaan peserta.
-4. Pemeriksa akademik menelaah urutan, bentuk, harakat, makhraj, dan beban.
-5. Editorial serta render memeriksa seluruh sumber halaman.
-6. Tim asesmen dan safeguarding mengesahkan rubrik serta kontrol peserta.
-7. Document Controller mencatat bukti, versi, penutupan blocker, dan otorisasi.
-8. PR baru dapat dipertimbangkan keluar dari Draft.
+1. Pemilik Akademik menetapkan panel ahli hadis/syar‘i, standar sumber/locator, dan metode takhrij untuk mengisi REG-HAD-001 tanpa duplikasi.
+2. Pemilik Akademik menilai kandidat dan MAP-HAF-QJ1-001, lalu menetapkan atau mengubah materi Hafalan 1 dan Hafalan 2 serta memastikan ruang lingkup review Bahasa Arab.
+3. Ahli Bahasa Arab mengisi REV-ARB-QJ1-002, menilai 81 kalimat terdahulu dan tiga teks, lalu mencatat Evidence-ID.
+4. Ahli memverifikasi ءُ, model pelafalan, batas literasi, dan kandidat leksikal; gunakan AUD-ARB-QJ1-003 sebagai baseline, lalu editorial/render membuktikan bahwa naskah guru tidak bocor menjadi bacaan peserta.
+5. Pemeriksa akademik menelaah urutan, bentuk, harakat, makhraj, dan beban.
+6. Editorial serta render memeriksa seluruh sumber halaman.
+7. Tim asesmen dan safeguarding mengesahkan rubrik serta kontrol peserta.
+8. Document Controller mencatat bukti, versi, penutupan blocker, dan otorisasi.
+9. PR baru dapat dipertimbangkan keluar dari Draft.
 
 ## 6. Riwayat
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.18.0-id | 29 Juli 2026 | Menambahkan HCP-QUR-001 dan REG-HAD-001; arsitektur Hadis Akhlak lintas Jilid 1–8 tersedia, tetapi objek, takhrij, mapping, dan validasi tetap OPEN |
 | 0.17.0-id | 28 Juli 2026 | Menautkan dashboard STAT-QUR-001: progres keseluruhan QURBATA 30%, terpisah dari kesiapan Jilid 1 25% |
 | 0.16.0-id | 28 Juli 2026 | Menutup inkonsistensi format Object-ID menjadi HAF-000001–000003 dan menambahkan AUD-HAF-QJ1-001 |
 | 0.15.0-id | 28 Juli 2026 | Mendaftarkan HAF-000001–000003 sebagai PROPOSED-INACTIVE dan menyiapkan DEC-CUR-004 tanpa mengaktifkan objek |
