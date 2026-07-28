@@ -11,6 +11,7 @@
 |---|---|---|---|---|
 | BLOCKED-CUR-HAF-001 | QJ1-P018 | Teks Hafalan 1, sumber, batas potongan, model bacaan, Hafalan Object-ID, pengesah | Pemilik Akademik + ahli | OPEN |
 | BLOCKED-CUR-ARB-001 | QJ1-P028 | Tema, tujuan komunikatif, mufradat, vokalisasi, makna, konteks, model pelafalan, Arabic Learning Object-ID | Pemilik Akademik + ahli Bahasa Arab | OPEN |
+| BLOCKED-CUR-ARB-002 | Jilid 1–8 | Validasi ACP-QUR-001 dan pemetaan Stage-ID/AR-LEX/AR-GRM/AR-FUN/AR-ASM ke jilid dan halaman | Pemilik Akademik + panel ahli | OPEN |
 | BLOCKED-CUR-HAF-002 | QJ1-P036 | Teks Hafalan 2, sumber, batas potongan, model bacaan, Hafalan Object-ID, pengesah | Pemilik Akademik + ahli | OPEN |
 | BLOCKED-ORTHO-QJ1-001 | QJ1-P033 | Verifikasi fungsi, penulisan, dan penyajian ءُ dalam urutan Jilid 1 | Ahli Bahasa Arab/Qira’at | OPEN |
 
@@ -19,7 +20,7 @@
 [PROP-CUR-QJ1-001](https://github.com/pesantrenriqa-boop/QURBATA/blob/feature/qj1-master-structure/quality/PROP-CUR-QJ1-001-Usulan-Materi-Khusus.md) telah menyiapkan rekomendasi terkontrol:
 
 - P018: Surah Al-Fatihah ayat 1–3;
-- P028: tema lisan benda dan orang dalam pembelajaran Al-Qur’an;
+- P028: rekomendasi tema lama superseded parsial; isi harus diturunkan dari ACP-QUR-001;
 - P036: Surah Al-Fatihah ayat 4–7 disertai murojaah ayat 1–3.
 
 Proposal belum mengikat dan tidak mengubah status blocker. Pemilik Akademik harus memilih, lalu ahli terkait memverifikasi sumber, teks, vokalisasi, pelafalan, beban, serta kelayakannya.
@@ -66,5 +67,6 @@ Kesiapan keluar-Draft berbasis gate saat ini: **2 dari 8 gate makro selesai (25%
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.3.0-id | 28 Juli 2026 | Menambahkan blocker validasi dan pemetaan Arabic Competency Progression |
 | 0.2.0-id | 28 Juli 2026 | Menautkan usulan materi khusus tanpa menutup blocker |
 | 0.1.0-id | 28 Juli 2026 | Register blocker dan gate pertama setelah struktur 40/40 selesai |
