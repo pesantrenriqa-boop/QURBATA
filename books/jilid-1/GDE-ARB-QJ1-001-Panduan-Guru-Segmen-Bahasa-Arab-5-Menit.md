@@ -4,7 +4,8 @@
 **Tanggal:** 28 Juli 2026  
 **Cakupan:** QJ1-P001–QJ1-P040  
 **Terkait:** MAP-ARB-QJ1-001, ACP-QUR-001, REG-ARB-001, REG-ARB-003, REG-ARB-004, RUB-ARB-001, FRM-ARB-001  
-**Blocker:** BLOCKED-CUR-ARB-001; BLOCKED-CUR-ARB-002
+**Audit keterlacakan:** [AUD-ARB-QJ1-002](../../quality/AUD-ARB-QJ1-002-Audit-Keterlacakan-Panduan-Guru-Bahasa-Arab.md)  
+**Blocker:** BLOCKED-CUR-ARB-001; BLOCKED-CUR-ARB-002; 23 kandidat Sentence-ID
 
 ## 1. Kedudukan dan Batas
 
@@ -125,6 +126,7 @@ Catatan ini tidak menggantikan FRM-ARB-001 pada halaman gerbang. Tidak boleh dir
 - [ ] Uji keterlaksanaan durasi lima menit pada kelas nyata.
 - [ ] Bukti bahwa rotasi murojaah tidak meninggalkan objek lama.
 - [ ] Pelaksanaan dan dokumentasi gerbang P010, P020, dan P028.
+- [ ] Penyelesaian 23 kandidat kalimat dalam AUD-ARB-QJ1-002 melalui registrasi, penggantian, atau penolakan.
 - [ ] Penyelesaian BLOCKED-CUR-ARB-001 dan BLOCKED-CUR-ARB-002 melalui kewenangan yang sah.
 
 Sebelum seluruh syarat dipenuhi, dokumen ini tetap pilot, PR tetap Draft, dan tidak boleh diklaim sebagai materi final atau telah tervalidasi ilmiah.
