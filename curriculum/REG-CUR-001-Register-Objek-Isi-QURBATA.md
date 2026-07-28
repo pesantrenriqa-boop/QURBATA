@@ -474,4 +474,5 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.30.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk Evaluasi Tiga Harakat I QJ1-P030 |
 | 0.31.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P031 |
 | 0.32.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P032 |
+| 0.41.0-id | 28 Juli 2026 | Menautkan ACP-QUR-001, REG-ARB-001, VAL-ARB-001, dan blocker pemetaan lintas jilid |
 | 0.40.0-id | 28 Juli 2026 | Menambahkan PO, LO, dan KO QJ1-P033–QJ1-P040 serta blocker Hafalan 2 |
