@@ -94,6 +94,7 @@ Batas sumber kini eksplisit: segmen Arab adalah naskah lisan guru, bukan teks ba
 - Kesenjangan identitas sumber: **DITUTUP**.
 - Keterlacakan 40 halaman: **LULUS**.
 - Batas audiens pada sumber 40/40: **COMPLETE-DRAFT**.
+- Audit silang whitelist sumber: **COMPLETE-DRAFT — lihat AUD-ARB-QJ1-003; 40/40 HOLD-PARTICIPANT**.
 - Audit whitelist pada render buku peserta: **OPEN — BELUM ADA BUKTI RENDER FINAL**.
 - Validasi isi 15 kandidat: **BELUM LULUS — LANGUAGE-REVIEW**.
 - Gerbang integrasi: **0/3 SIAP; GATE NOT RUN**.
