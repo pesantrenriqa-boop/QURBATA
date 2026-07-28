@@ -4,7 +4,7 @@
 **Judul:** Register Objek Isi Buku QURBATA  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali  
-**Versi:** 0.32.0-id  
+**Versi:** 0.40.0-id  
 **Pemilik:** Aris Liswanto  
 **Dokumen Induk:** QC-000, QC-002, QC-004, QC-005, REG-GOV-001  
 **Kurikulum Terkait:** CUR-QJ1-001  
@@ -354,6 +354,79 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | KO-000263 | Knowledge Object | Rangkaian dua dan tiga huruf terpisah QJ1-P032 | QJ1-P032 | ACTIVE-DRAFT | used-by LO-000032 |
 | KO-000264 | Knowledge Object | Adab menjaga ketelitian pada bentuk dan bunyi mirip | QJ1-P032-AKH01 | ACTIVE-DRAFT | supports LO-000032 |
 
+| PO-0000033 | Page Object | Dhammah Mim–Ya dan Hamza Mandiri | QJ1-P033 | ACTIVE-DRAFT | child-of CO-000003 |
+| LO-0000033 | Learning Object | Dhammah Mim–Ya dan Hamza Mandiri | QJ1-P033 | ACTIVE-DRAFT | uses KO-000265–KO-000274 |
+| KO-000265 | Knowledge Object | Dhammah Mim–Ya dan Hamza Mandiri — unsur 1 | QJ1-P033 | ACTIVE-DRAFT | used-by LO-0000033 |
+| KO-000266 | Knowledge Object | Dhammah Mim–Ya dan Hamza Mandiri — unsur 2 | QJ1-P033 | ACTIVE-DRAFT | used-by LO-0000033 |
+| KO-000267 | Knowledge Object | Dhammah Mim–Ya dan Hamza Mandiri — unsur 3 | QJ1-P033 | ACTIVE-DRAFT | used-by LO-0000033 |
+| KO-000268 | Knowledge Object | Dhammah Mim–Ya dan Hamza Mandiri — unsur 4 | QJ1-P033 | ACTIVE-DRAFT | used-by LO-0000033 |
+| KO-000269 | Knowledge Object | Dhammah Mim–Ya dan Hamza Mandiri — unsur 5 | QJ1-P033 | ACTIVE-DRAFT | used-by LO-0000033 |
+| KO-000270 | Knowledge Object | Dhammah Mim–Ya dan Hamza Mandiri — unsur 6 | QJ1-P033 | ACTIVE-DRAFT | used-by LO-0000033 |
+| KO-000271 | Knowledge Object | Dhammah Mim–Ya dan Hamza Mandiri — unsur 7 | QJ1-P033 | ACTIVE-DRAFT | used-by LO-0000033 |
+| KO-000272 | Knowledge Object | Dhammah Mim–Ya dan Hamza Mandiri — unsur 8 | QJ1-P033 | ACTIVE-DRAFT | used-by LO-0000033 |
+| KO-000273 | Knowledge Object | Dhammah Mim–Ya dan Hamza Mandiri — unsur 9 | QJ1-P033 | ACTIVE-DRAFT | used-by LO-0000033 |
+| KO-000274 | Knowledge Object | Dhammah Mim–Ya dan Hamza Mandiri — unsur 10 | QJ1-P033 | ACTIVE-DRAFT | used-by LO-0000033 |
+| PO-0000034 | Page Object | Integrasi Seluruh Dhammah | QJ1-P034 | ACTIVE-DRAFT | child-of CO-000003 |
+| LO-0000034 | Learning Object | Integrasi Seluruh Dhammah | QJ1-P034 | ACTIVE-DRAFT | uses KO-000275–KO-000280 |
+| KO-000275 | Knowledge Object | Integrasi Seluruh Dhammah — unsur 1 | QJ1-P034 | ACTIVE-DRAFT | used-by LO-0000034 |
+| KO-000276 | Knowledge Object | Integrasi Seluruh Dhammah — unsur 2 | QJ1-P034 | ACTIVE-DRAFT | used-by LO-0000034 |
+| KO-000277 | Knowledge Object | Integrasi Seluruh Dhammah — unsur 3 | QJ1-P034 | ACTIVE-DRAFT | used-by LO-0000034 |
+| KO-000278 | Knowledge Object | Integrasi Seluruh Dhammah — unsur 4 | QJ1-P034 | ACTIVE-DRAFT | used-by LO-0000034 |
+| KO-000279 | Knowledge Object | Integrasi Seluruh Dhammah — unsur 5 | QJ1-P034 | ACTIVE-DRAFT | used-by LO-0000034 |
+| KO-000280 | Knowledge Object | Integrasi Seluruh Dhammah — unsur 6 | QJ1-P034 | ACTIVE-DRAFT | used-by LO-0000034 |
+| PO-0000035 | Page Object | Kontras Tiga Harakat per Keluarga | QJ1-P035 | ACTIVE-DRAFT | child-of CO-000003 |
+| LO-0000035 | Learning Object | Kontras Tiga Harakat per Keluarga | QJ1-P035 | ACTIVE-DRAFT | uses KO-000281–KO-000286 |
+| KO-000281 | Knowledge Object | Kontras Tiga Harakat per Keluarga — unsur 1 | QJ1-P035 | ACTIVE-DRAFT | used-by LO-0000035 |
+| KO-000282 | Knowledge Object | Kontras Tiga Harakat per Keluarga — unsur 2 | QJ1-P035 | ACTIVE-DRAFT | used-by LO-0000035 |
+| KO-000283 | Knowledge Object | Kontras Tiga Harakat per Keluarga — unsur 3 | QJ1-P035 | ACTIVE-DRAFT | used-by LO-0000035 |
+| KO-000284 | Knowledge Object | Kontras Tiga Harakat per Keluarga — unsur 4 | QJ1-P035 | ACTIVE-DRAFT | used-by LO-0000035 |
+| KO-000285 | Knowledge Object | Kontras Tiga Harakat per Keluarga — unsur 5 | QJ1-P035 | ACTIVE-DRAFT | used-by LO-0000035 |
+| KO-000286 | Knowledge Object | Kontras Tiga Harakat per Keluarga — unsur 6 | QJ1-P035 | ACTIVE-DRAFT | used-by LO-0000035 |
+| PO-0000036 | Page Object | Hafalan 2 | QJ1-P036 | ACTIVE-DRAFT | child-of CO-000003 |
+| LO-0000036 | Learning Object | Hafalan 2 | QJ1-P036 | ACTIVE-DRAFT | uses KO-000287–KO-000292 |
+| KO-000287 | Knowledge Object | Hafalan 2 — unsur 1 | QJ1-P036 | ACTIVE-DRAFT | used-by LO-0000036 |
+| KO-000288 | Knowledge Object | Hafalan 2 — unsur 2 | QJ1-P036 | ACTIVE-DRAFT | used-by LO-0000036 |
+| KO-000289 | Knowledge Object | Hafalan 2 — unsur 3 | QJ1-P036 | ACTIVE-DRAFT | used-by LO-0000036 |
+| KO-000290 | Knowledge Object | Hafalan 2 — unsur 4 | QJ1-P036 | ACTIVE-DRAFT | used-by LO-0000036 |
+| KO-000291 | Knowledge Object | Hafalan 2 — unsur 5 | QJ1-P036 | ACTIVE-DRAFT | used-by LO-0000036 |
+| KO-000292 | Knowledge Object | Hafalan 2 — unsur 6 | QJ1-P036 | ACTIVE-DRAFT | used-by LO-0000036 |
+| PO-0000037 | Page Object | Ketelitian Titik dan Bentuk Serupa | QJ1-P037 | ACTIVE-DRAFT | child-of CO-000003 |
+| LO-0000037 | Learning Object | Ketelitian Titik dan Bentuk Serupa | QJ1-P037 | ACTIVE-DRAFT | uses KO-000293–KO-000300 |
+| KO-000293 | Knowledge Object | Ketelitian Titik dan Bentuk Serupa — unsur 1 | QJ1-P037 | ACTIVE-DRAFT | used-by LO-0000037 |
+| KO-000294 | Knowledge Object | Ketelitian Titik dan Bentuk Serupa — unsur 2 | QJ1-P037 | ACTIVE-DRAFT | used-by LO-0000037 |
+| KO-000295 | Knowledge Object | Ketelitian Titik dan Bentuk Serupa — unsur 3 | QJ1-P037 | ACTIVE-DRAFT | used-by LO-0000037 |
+| KO-000296 | Knowledge Object | Ketelitian Titik dan Bentuk Serupa — unsur 4 | QJ1-P037 | ACTIVE-DRAFT | used-by LO-0000037 |
+| KO-000297 | Knowledge Object | Ketelitian Titik dan Bentuk Serupa — unsur 5 | QJ1-P037 | ACTIVE-DRAFT | used-by LO-0000037 |
+| KO-000298 | Knowledge Object | Ketelitian Titik dan Bentuk Serupa — unsur 6 | QJ1-P037 | ACTIVE-DRAFT | used-by LO-0000037 |
+| KO-000299 | Knowledge Object | Ketelitian Titik dan Bentuk Serupa — unsur 7 | QJ1-P037 | ACTIVE-DRAFT | used-by LO-0000037 |
+| KO-000300 | Knowledge Object | Ketelitian Titik dan Bentuk Serupa — unsur 8 | QJ1-P037 | ACTIVE-DRAFT | used-by LO-0000037 |
+| PO-0000038 | Page Object | Akhlak 1: Adab Belajar Al-Qur’an | QJ1-P038 | ACTIVE-DRAFT | child-of CO-000003 |
+| LO-0000038 | Learning Object | Akhlak 1: Adab Belajar Al-Qur’an | QJ1-P038 | ACTIVE-DRAFT | uses KO-000301–KO-000306 |
+| KO-000301 | Knowledge Object | Akhlak 1: Adab Belajar Al-Qur’an — unsur 1 | QJ1-P038 | ACTIVE-DRAFT | used-by LO-0000038 |
+| KO-000302 | Knowledge Object | Akhlak 1: Adab Belajar Al-Qur’an — unsur 2 | QJ1-P038 | ACTIVE-DRAFT | used-by LO-0000038 |
+| KO-000303 | Knowledge Object | Akhlak 1: Adab Belajar Al-Qur’an — unsur 3 | QJ1-P038 | ACTIVE-DRAFT | used-by LO-0000038 |
+| KO-000304 | Knowledge Object | Akhlak 1: Adab Belajar Al-Qur’an — unsur 4 | QJ1-P038 | ACTIVE-DRAFT | used-by LO-0000038 |
+| KO-000305 | Knowledge Object | Akhlak 1: Adab Belajar Al-Qur’an — unsur 5 | QJ1-P038 | ACTIVE-DRAFT | used-by LO-0000038 |
+| KO-000306 | Knowledge Object | Akhlak 1: Adab Belajar Al-Qur’an — unsur 6 | QJ1-P038 | ACTIVE-DRAFT | used-by LO-0000038 |
+| PO-0000039 | Page Object | Simulasi Baca Mandiri | QJ1-P039 | ACTIVE-DRAFT | child-of CO-000003 |
+| LO-0000039 | Learning Object | Simulasi Baca Mandiri | QJ1-P039 | ACTIVE-DRAFT | uses KO-000307–KO-000312 |
+| KO-000307 | Knowledge Object | Simulasi Baca Mandiri — unsur 1 | QJ1-P039 | ACTIVE-DRAFT | used-by LO-0000039 |
+| KO-000308 | Knowledge Object | Simulasi Baca Mandiri — unsur 2 | QJ1-P039 | ACTIVE-DRAFT | used-by LO-0000039 |
+| KO-000309 | Knowledge Object | Simulasi Baca Mandiri — unsur 3 | QJ1-P039 | ACTIVE-DRAFT | used-by LO-0000039 |
+| KO-000310 | Knowledge Object | Simulasi Baca Mandiri — unsur 4 | QJ1-P039 | ACTIVE-DRAFT | used-by LO-0000039 |
+| KO-000311 | Knowledge Object | Simulasi Baca Mandiri — unsur 5 | QJ1-P039 | ACTIVE-DRAFT | used-by LO-0000039 |
+| KO-000312 | Knowledge Object | Simulasi Baca Mandiri — unsur 6 | QJ1-P039 | ACTIVE-DRAFT | used-by LO-0000039 |
+| PO-0000040 | Page Object | Ujian Akhir Jilid 1 | QJ1-P040 | ACTIVE-DRAFT | child-of CO-000003 |
+| LO-0000040 | Learning Object | Ujian Akhir Jilid 1 | QJ1-P040 | ACTIVE-DRAFT | uses KO-000313–KO-000320 |
+| KO-000313 | Knowledge Object | Ujian Akhir Jilid 1 — unsur 1 | QJ1-P040 | ACTIVE-DRAFT | used-by LO-0000040 |
+| KO-000314 | Knowledge Object | Ujian Akhir Jilid 1 — unsur 2 | QJ1-P040 | ACTIVE-DRAFT | used-by LO-0000040 |
+| KO-000315 | Knowledge Object | Ujian Akhir Jilid 1 — unsur 3 | QJ1-P040 | ACTIVE-DRAFT | used-by LO-0000040 |
+| KO-000316 | Knowledge Object | Ujian Akhir Jilid 1 — unsur 4 | QJ1-P040 | ACTIVE-DRAFT | used-by LO-0000040 |
+| KO-000317 | Knowledge Object | Ujian Akhir Jilid 1 — unsur 5 | QJ1-P040 | ACTIVE-DRAFT | used-by LO-0000040 |
+| KO-000318 | Knowledge Object | Ujian Akhir Jilid 1 — unsur 6 | QJ1-P040 | ACTIVE-DRAFT | used-by LO-0000040 |
+| KO-000319 | Knowledge Object | Ujian Akhir Jilid 1 — unsur 7 | QJ1-P040 | ACTIVE-DRAFT | used-by LO-0000040 |
+| KO-000320 | Knowledge Object | Ujian Akhir Jilid 1 — unsur 8 | QJ1-P040 | ACTIVE-DRAFT | used-by LO-0000040 |
+
 ## 3. Aturan
 
 1. Nomor enam digit bersifat global dalam setiap kelas.
@@ -401,3 +474,4 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 | 0.30.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk Evaluasi Tiga Harakat I QJ1-P030 |
 | 0.31.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P031 |
 | 0.32.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P032 |
+| 0.40.0-id | 28 Juli 2026 | Menambahkan PO, LO, dan KO QJ1-P033–QJ1-P040 serta blocker Hafalan 2 |
