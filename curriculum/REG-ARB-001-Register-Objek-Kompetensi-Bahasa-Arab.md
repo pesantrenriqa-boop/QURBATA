@@ -109,6 +109,7 @@ Setiap AR-GRM wajib memuat:
 |---|---|---|---|
 | LEX-ARB-001 | AR-STG-001–003 | 16 entri; 14 target terhitung; tampilan pedagogis dan alfabetis | CANDIDATE |
 | BAT-ARB-001 | AR-STG-001–003 | 4 struktur, 4 fungsi, 4 pola, 24 kalimat, 6 asesmen | DRAF PILOT |
+| MAT-ARB-001 | Jilid 1–8 | baseline progresif 40/50/60/70/80/100/120/120; total 640 | DRAF PERENCANAAN |
 
 Batch belum mengubah status UNMAPPED pada pemetaan jilid/halaman.
 
@@ -116,6 +117,7 @@ Batch belum mengubah status UNMAPPED pada pemetaan jilid/halaman.
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.4.0-id | 28 Juli 2026 | Menautkan MAT-ARB-001 dan baseline progresif nonseragam |
 | 0.3.0-id | 28 Juli 2026 | Mencatat LEX-ARB-001 dan BAT-ARB-001 sebagai batch nyata pertama |
 | 0.2.0-id | 28 Juli 2026 | Menautkan pola, kalimat, dialog, dan master contoh |
 | 0.1.0-id | 28 Juli 2026 | Skema register dan 20 Stage-ID |
