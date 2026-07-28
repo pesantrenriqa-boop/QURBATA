@@ -100,7 +100,7 @@ Rekaman suara tidak wajib dan tidak boleh dibuat tanpa dasar, tujuan, persetujua
 
 ### P018 — Hafalan 1
 
-Kandidat target: `HAF-QJ1-000001`, Al-Fatihah ayat 1–3.
+Kandidat target: `HAF-000001`, Al-Fatihah ayat 1–3.
 
 Bukti minimum:
 
@@ -111,7 +111,7 @@ Bukti minimum:
 
 ### P036 — Hafalan 2
 
-Kandidat target: `HAF-QJ1-000002` dan penyambungan `HAF-QJ1-000003`.
+Kandidat target: `HAF-000002` dan penyambungan `HAF-000003`.
 
 Bukti minimum:
 
@@ -123,7 +123,7 @@ Bukti minimum:
 
 ### P040 — Bukti Akhir Jilid 1
 
-Kandidat target: retensi `HAF-QJ1-000003`.
+Kandidat target: retensi `HAF-000003`.
 
 Bukti minimum:
 
