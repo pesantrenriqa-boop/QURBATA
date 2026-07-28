@@ -28,8 +28,9 @@ Aturan tetap:
 1. Akuisisi tidak boleh menghapus murojaah. Guru mengambil sampel materi lama secara bergilir agar seluruh inventaris mendapat giliran terjadwal lintas pertemuan.
 2. Kata sasaran baru hanya dihitung sekali pada register keluarga leksikal. Bentuk turunan boleh dipakai, tetapi tidak menambah hitungan sasaran baru.
 3. Jangan menambah kata, pola, atau teks di luar inventaris valid hanya demi membuat contoh lebih panjang.
-4. Gerbang tidak dipakai untuk mengajar materi baru. Teks kumulatif dibuka hanya bila status siklus **SIAP INTEGRASI**; bila belum, lakukan remediasi pada prasyarat yang belum mantap.
-5. Bukti kelas diutamakan berupa catatan kode. Perekaman audio hanya boleh dilakukan dengan tujuan sah, persetujuan, perlindungan anak, dan tata kelola data yang berlaku.
+4. Unsur fungsi wajib ditautkan ke Function-Word-ID. Dalam panduan ini: **إِلَى = AR-FW-000013** dan bentuk dasar **مِنْ = AR-FW-000014**; bentuk permukaan **مِنَ الْفَصْلِ** adalah realisasi kontekstual sebelum `الـ`, bukan target kosa kata baru.
+5. Gerbang tidak dipakai untuk mengajar materi baru. Teks kumulatif dibuka hanya bila status siklus **SIAP INTEGRASI**; bila belum, lakukan remediasi pada prasyarat yang belum mantap.
+6. Bukti kelas diutamakan berupa catatan kode. Perekaman audio hanya boleh dilakukan dengan tujuan sah, persetujuan, perlindungan anak, dan tata kelola data yang berlaku.
 
 ## 3. Naskah Operasional P001–P010 — Siklus 1
 
@@ -71,10 +72,10 @@ Aturan tetap:
 | P021 | Peragakan: **قَرَأَ الطَّالِبُ. كَتَبَ الطَّالِبُ.** | Memilih tindakan dan menirukan kalimat | Ulang **طَالِبٌ، كِتَابٌ، قَلَمٌ** sebagai referen konkret. |
 | P022 | **جَلَسَ الطَّالِبُ. ذَهَبَ الطَّالِبُ.** | Menanggapi peragaan dan menghasilkan satu kalimat | Ulang lokasi dengan benda/ruang yang telah dipelajari. |
 | P023 | **فَتَحَ الطَّالِبُ الْبَابَ. أَغْلَقَ الطَّالِبُ الْبَابَ.** | Membedakan dua tindakan berlawanan | Ulang **بَابٌ، طَالِبٌ** dan tindakan P021–P022 secara acak. |
-| P024 | **دَخَلَ الطَّالِبُ الْفَصْلَ. خَرَجَ الطَّالِبُ مِنَ الْفَصْلِ.** | Memilih tindakan dan menyebut model | Ulang **فَصْلٌ** serta verba lama; **مِنَ** dipakai sebagai unsur fungsi, bukan sasaran leksikal baru. |
+| P024 | **دَخَلَ الطَّالِبُ الْفَصْلَ. خَرَجَ الطَّالِبُ مِنَ الْفَصْلِ.** (`مِنْ`: AR-FW-000014; tampil sebagai `مِنَ` sebelum `الـ`) | Memilih tindakan dan menyebut model | Ulang **فَصْلٌ** serta verba lama; **مِنَ** dipakai sebagai unsur fungsi, bukan sasaran leksikal baru. |
 | P025 | **شَرِبَ الطَّالِبُ الْمَاءَ. أَكَلَ الطَّالِبُ.** | Menirukan dan memilih tindakan sesuai peragaan | Ulang **مَاءٌ** dan agen lama; jangan menambah nama makanan di luar inventaris. |
 | P026 | **نَامَ الْوَلَدُ. قَامَ الْوَلَدُ.** | Membedakan dan menghasilkan satu kalimat | Ganti agen secara terkontrol dengan persona yang telah dipelajari. |
-| P027 | **سَمِعَ الطَّالِبُ الْمُعَلِّمَ. نَظَرَ الطَّالِبُ إِلَى الْكِتَابِ.** | Memilih tindakan dan mengucapkan model | Ulang persona, benda, dan verba P021–P026; **إِلَى** unsur fungsi, bukan sasaran leksikal baru. |
+| P027 | **سَمِعَ الطَّالِبُ الْمُعَلِّمَ. نَظَرَ الطَّالِبُ إِلَى الْكِتَابِ.** (`إِلَى`: AR-FW-000013) | Memilih tindakan dan mengucapkan model | Ulang persona, benda, dan verba P021–P026; **إِلَى** unsur fungsi, bukan sasaran leksikal baru. |
 | P028 | **Gerbang AR-GATE-000001–000007. Tidak ada sasaran baru.** | Sampel pemahaman, produksi, dan transfer Siklus 3; retensi Siklus 1–2 | Jika **SIAP INTEGRASI**, buka AR-TXT-000001 secara lisan. Jika belum, remediasi butir gagal dan pertahankan batas literasi halaman. |
 
 **AR-TXT-000001 untuk guru, bersyarat:**  
@@ -127,3 +128,16 @@ Catatan ini tidak menggantikan FRM-ARB-001 pada halaman gerbang. Tidak boleh dir
 - [ ] Penyelesaian BLOCKED-CUR-ARB-001 dan BLOCKED-CUR-ARB-002 melalui kewenangan yang sah.
 
 Sebelum seluruh syarat dipenuhi, dokumen ini tetap pilot, PR tetap Draft, dan tidak boleh diklaim sebagai materi final atau telah tervalidasi ilmiah.
+
+## 10. Keterlacakan Dokumen
+
+| Hubungan | Dokumen/objek |
+|---|---|
+| pemetaan 40 halaman | MAP-ARB-QJ1-001 |
+| panduan pelaksanaan | GDE-ARB-QJ1-001 |
+| kosa kata/fungsi | LEX-ARB-001–003; AR-FW-000001–000016 |
+| kalimat dan teks | REG-ARB-002; REG-ARB-003 |
+| siklus dan gerbang | REG-ARB-004; RUB-ARB-001; FRM-ARB-001 |
+| validasi | VAL-ARB-001 |
+
+Ketika terjadi perbedaan, dokumen pengendali dan register sumber berlaku; panduan guru harus diperbarui melalui audit perubahan, bukan menambahkan objek secara diam-diam.
