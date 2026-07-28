@@ -1,7 +1,7 @@
 # REG-HAD-001 — Master Hadis Akhlak QURBATA
 
 **Register-ID:** REG-HAD-001  
-**Status:** DRAF TERKENDALI — 24 KANDIDAT SOURCE-CHECK; 0 APPROVED  
+**Status:** DRAF TERKENDALI — 32 KANDIDAT SOURCE-CHECK; 0 APPROVED  
 **Tanggal:** 29 Juli 2026  
 **Pengendali:** HCP-QUR-001  
 **Cakupan:** Jilid 1–8
@@ -47,7 +47,7 @@ Register ini adalah sumber tunggal untuk memastikan hadis akhlak QURBATA bertaha
 
 ## 4. Register Objek
 
-Dua puluh empat kandidat awal telah dimasukkan melalui BAT-HAD-001, BAT-HAD-002, dan BAT-HAD-003. Tidak ada Hadith-ID yang diaktifkan; semua masih memerlukan takhrij, review penggalan, terjemah, pedagogi, safeguarding, dan keputusan ahli.
+Tiga puluh dua kandidat awal telah dimasukkan melalui BAT-HAD-001 sampai BAT-HAD-004. Tidak ada Hadith-ID yang diaktifkan; semua masih memerlukan takhrij, review penggalan, terjemah, pedagogi, safeguarding, dan keputusan ahli.
 
 | Hadith-ID | Full-Hadith-ID | Tema | Jilid/Halaman | Sumber | Status |
 |---|---|---|---|---|---|
@@ -75,6 +75,14 @@ Dua puluh empat kandidat awal telah dimasukkan melalui BAT-HAD-001, BAT-HAD-002,
 | HAD-000022 | FHD-000022 | tidak menipu | J1/P022 usulan | Muslim 101/102 | SOURCE-CHECK / WORDING |
 | HAD-000023 | FHD-000023 | menyingkirkan gangguan | J1/P023 usulan | Muslim 35 | SOURCE-CHECK / SAFETY |
 | HAD-000024 | FHD-000024 | ihsan | J1/P024 usulan | Muslim 1955 | SOURCE-CHECK / HIGH-CONTEXT |
+| HAD-000025 | FHD-000025 | kejujuran | J1/P025 usulan | Bukhari 6094; Muslim 2607 | SOURCE-CHECK / EXCERPT |
+| HAD-000026 | FHD-000026 | setiap kebaikan | J1/P026 usulan | Bukhari 6021 | SOURCE-CHECK / OVERLAP |
+| HAD-000027 | FHD-000027 | persaudaraan aman | J1/P027 usulan | Bukhari 2442; Muslim 2580 | SOURCE-CHECK / SAFE |
+| HAD-000028 | FHD-000028 | anti-kezaliman | J1/P028 usulan | Muslim 2578 | SOURCE-CHECK / AGE |
+| HAD-000029 | FHD-000029 | kasih sayang luas | J1/P029 usulan | Abu Dawud 4941; Tirmidzi 1924 | SOURCE-CHECK / VARIANT |
+| HAD-000030 | FHD-000030 | tawaduk | J1/P030 usulan | Muslim 2588 | SOURCE-CHECK / CONCEPT |
+| HAD-000031 | FHD-000031 | persaudaraan tanpa iri | J1/P031 usulan | Muslim 2563 | SOURCE-CHECK / VARIANT |
+| HAD-000032 | FHD-000032 | nasihat tulus | J1/P032 usulan | Muslim 55 | SOURCE-CHECK / HIGH-CONCEPT |
 
 ## 5. Register Tema Awal
 
@@ -102,7 +110,7 @@ Sebelum aktivasi, pemeriksa wajib membandingkan matan lengkap dan kutipan, peraw
 ## 7. Blocker Awal
 
 - pemilik akademik belum menetapkan panel ahli hadis/syar‘i;
-- baru 24 kandidat dari kapasitas desain maksimal 320 slot yang tersedia; 296 slot belum memiliki kandidat;
+- baru 32 kandidat dari kapasitas desain maksimal 320 slot yang tersedia; 288 slot belum memiliki kandidat;
 - sumber dan locator awal tersedia untuk 8 kandidat, tetapi standar edisi/locator lintas register belum diputuskan;
 - takhrij, terjemah, whitelist literasi, dan safeguarding belum dijalankan;
 - mapping Hadith-ID ke halaman Jilid 1–8 belum tersedia;
@@ -114,6 +122,7 @@ Karena itu register ini meningkatkan kesiapan arsitektur dan inventaris awal, bu
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.5.0-id | 29 Juli 2026 | Menambahkan HAD-000025–000032 melalui BAT-HAD-004; akumulasi 32 SOURCE-CHECK, 0 APPROVED |
 | 0.4.0-id | 29 Juli 2026 | Menambahkan HAD-000017–000024 melalui BAT-HAD-003; akumulasi 24 SOURCE-CHECK, 0 APPROVED |
 | 0.3.0-id | 29 Juli 2026 | Menambahkan HAD-000009–000016 melalui BAT-HAD-002; akumulasi 16 SOURCE-CHECK, 0 APPROVED |
 | 0.2.0-id | 29 Juli 2026 | Menambahkan HAD-000001–000008 melalui BAT-HAD-001; seluruhnya SOURCE-CHECK dan HOLD-PARTICIPANT |
