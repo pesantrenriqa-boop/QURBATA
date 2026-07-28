@@ -14,7 +14,17 @@
 | BLOCKED-CUR-HAF-002 | QJ1-P036 | Teks Hafalan 2, sumber, batas potongan, model bacaan, Hafalan Object-ID, pengesah | Pemilik Akademik + ahli | OPEN |
 | BLOCKED-ORTHO-QJ1-001 | QJ1-P033 | Verifikasi fungsi, penulisan, dan penyajian ءُ dalam urutan Jilid 1 | Ahli Bahasa Arab/Qira’at | OPEN |
 
-## 2. Gate Penelaahan
+## 2. Usulan Penutupan yang Tersedia
+
+[PROP-CUR-QJ1-001](https://github.com/pesantrenriqa-boop/QURBATA/blob/feature/qj1-master-structure/quality/PROP-CUR-QJ1-001-Usulan-Materi-Khusus.md) telah menyiapkan rekomendasi terkontrol:
+
+- P018: Surah Al-Fatihah ayat 1–3;
+- P028: tema lisan benda dan orang dalam pembelajaran Al-Qur’an;
+- P036: Surah Al-Fatihah ayat 4–7 disertai murojaah ayat 1–3.
+
+Proposal belum mengikat dan tidak mengubah status blocker. Pemilik Akademik harus memilih, lalu ahli terkait memverifikasi sumber, teks, vokalisasi, pelafalan, beban, serta kelayakannya.
+
+## 3. Gate Penelaahan
 
 | Gate-ID | Cakupan hasil pindai | Bukti yang Dibutuhkan | Status |
 |---|---:|---|---|
@@ -27,7 +37,7 @@
 
 Jumlah berasal dari audit metadata otomatis dan harus dikonfirmasi Document Controller saat review.
 
-## 3. Gate Makro Keluar-Draft
+## 4. Gate Makro Keluar-Draft
 
 | No. | Gate Makro | Status |
 |---:|---|---|
@@ -42,7 +52,7 @@ Jumlah berasal dari audit metadata otomatis dan harus dikonfirmasi Document Cont
 
 Kesiapan keluar-Draft berbasis gate saat ini: **2 dari 8 gate makro selesai (25%)**. Angka ini bukan persentase efektivitas buku atau persentase keseluruhan proyek QURBATA.
 
-## 4. Urutan Tindak Lanjut
+## 5. Urutan Tindak Lanjut
 
 1. Pemilik Akademik menetapkan kandidat materi Hafalan 1, Bahasa Arab 1, dan Hafalan 2.
 2. Ahli memverifikasi ءُ dan kandidat leksikal.
@@ -52,8 +62,9 @@ Kesiapan keluar-Draft berbasis gate saat ini: **2 dari 8 gate makro selesai (25%
 6. Document Controller mencatat bukti, versi, penutupan blocker, dan otorisasi.
 7. PR baru dapat dipertimbangkan keluar dari Draft.
 
-## 5. Riwayat
+## 6. Riwayat
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.2.0-id | 28 Juli 2026 | Menautkan usulan materi khusus tanpa menutup blocker |
 | 0.1.0-id | 28 Juli 2026 | Register blocker dan gate pertama setelah struktur 40/40 selesai |
