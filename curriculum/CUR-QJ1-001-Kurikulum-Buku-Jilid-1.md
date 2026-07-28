@@ -4,7 +4,7 @@
 **Judul:** Kurikulum Buku QURBATA Jilid 1  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali — Belum Disetujui  
-**Versi:** 0.1.0-id  
+**Versi:** 0.2.0-id  
 **Pemilik Akademik/Penyusun:** Aris Liswanto  
 **Pemeriksa Akademik:** Menunggu penetapan  
 **Pemeriksa Asesmen:** Menunggu penetapan  
@@ -15,7 +15,7 @@
 **Dokumen Pengendali:** QC-002, QC-004, QC-005, QC-006, QC-007, QC-010, QC-012  
 **Produk Terkait:** QJ1-MASTER dan QJ1-P001–QJ1-P040  
 **Klasifikasi Akses:** Internal selama draf; publik setelah disetujui  
-**Ringkasan Perubahan:** Pembentukan kurikulum pengendali Jilid 1  
+**Ringkasan Perubahan:** Menambahkan murojaah kumulatif, pemerataan huruf–harakat, rasio 50:50, dan Keselarasan Leksikal Qurani  
 
 ## 1. Kedudukan
 
@@ -88,6 +88,28 @@ Setiap halaman latihan:
 7. mempunyai tema nasihat akhlak;
 8. mempunyai asesmen formatif dan kriteria keberhasilan; dan
 9. menghasilkan bukti uji yang dapat ditelusuri.
+
+## 6A. Murojaah Kumulatif dan Pemerataan
+
+1. Murojaah merupakan requirement kurikulum, bukan elemen tambahan.
+2. QJ1-P001 menggunakan 64 token fokus karena belum mempunyai prasyarat.
+3. Setiap halaman akuisisi berikutnya menggunakan 32 token fokus saat ini dan 32 token murojaah kumulatif.
+4. Halaman integrasi, penguatan, simulasi, dan evaluasi menggunakan 64 token review.
+5. Unit Hafalan, Bahasa Arab, dan Akhlak menggunakan murojaah lisan/bermakna yang dipisahkan dari klaim literasi.
+6. Sebelum alfabet lengkap, seluruh identitas prasyarat harus hadir sedikitnya sekali.
+7. Setelah alfabet lengkap, seluruh 29 identitas huruf harus hadir sedikitnya sekali pada bagian murojaah halaman akuisisi.
+8. Harakat yang telah dipelajari dibagi seimbang sejauh kumpulan bentuk yang sah memungkinkan.
+9. Setiap kombinasi huruf–harakat yang sah harus muncul dalam siklus maksimal tiga halaman latihan.
+10. Materi baru dijadwalkan pada N+1, N+2, N+4, N+8, lalu rotasi kumulatif.
+11. Distribusi wajib dicatat dalam MAT-CUR-QJ1-001 dan diperiksa sebelum halaman disebut Siap Uji.
+
+## 6B. Keselarasan Leksikal Qurani
+
+1. Rangkaian tiga huruf diprioritaskan mendekati akar/kosakata Al-Qur'an, kemudian Bahasa Arab baku, kemudian kombinasi terkontrol.
+2. Kedekatan leksikal tidak boleh melanggar whitelist atau urutan pedagogis.
+3. Huruf terpisah tidak boleh diklaim sebagai kata tertulis.
+4. Tag internal `QLX-Q`, `QLX-A`, dan `CTL` wajib dapat ditelusuri.
+5. Kandidat leksikal harus diverifikasi sumber, akar, makna, harakat, dan kesesuaian usia sebelum Siap Uji.
 
 ## 7. Pengalaman Belajar
 
