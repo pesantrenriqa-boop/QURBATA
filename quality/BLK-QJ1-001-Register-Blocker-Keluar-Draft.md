@@ -70,10 +70,10 @@ COMPLETE-DRAFT berarti artefak telah tersedia dan terlacak, bukan telah divalida
 | progression Jilid 1–8 | HCP-QUR-001 | COMPLETE-DRAFT |
 | sumber tunggal dan skema deduplikasi | REG-HAD-001 | COMPLETE-DRAFT |
 | kapasitas desain | sampai 320 slot; kuota final belum disahkan | CONTROLLED-ASSUMPTION |
-| kandidat Hadith-ID | HAD-000001–000016 dalam BAT-HAD-001/002; 16 kandidat, 0 aktif | SOURCE-CHECK |
-| sumber dan metadata grading awal | 16/16 memiliki locator awal; takhrij/edisi final belum disahkan | PARTIAL — EXPERT REVIEW OPEN |
+| kandidat Hadith-ID | HAD-000001–000024 dalam BAT-HAD-001/002/003; 24 kandidat, 0 aktif | SOURCE-CHECK |
+| sumber dan metadata grading awal | 24/24 memiliki locator awal; takhrij/edisi final belum disahkan | PARTIAL — EXPERT REVIEW OPEN |
 | terjemah, whitelist, asesmen, safeguarding | belum ada | NOT PROVIDED |
-| mapping halaman Jilid 1–8 | usulan P001–P016 tersedia; mapping formal dan P017–J8 belum ada | PARTIAL-DRAFT |
+| mapping halaman Jilid 1–8 | usulan P001–P024 tersedia; mapping formal dan P025–J8 belum ada | PARTIAL-DRAFT |
 | review ahli, Evidence-ID, Decision-ID | belum ada | NOT PROVIDED |
 
 Arsitektur menutup gap definisi dan kontrol, tetapi tidak menutup BLOCKED-CUR-HAD-001 sebelum objek nyata, takhrij, validasi, dan otorisasi tersedia.
@@ -134,6 +134,7 @@ Persentase keseluruhan proyek QURBATA Jilid 1–8 dicatat terpisah dalam `STAT-Q
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.21.0-id | 29 Juli 2026 | Menambahkan BAT-HAD-003 dan HAD-000017–000024; akumulasi 24 kandidat, 0 APPROVED |
 | 0.20.0-id | 29 Juli 2026 | Menambahkan BAT-HAD-002 dan HAD-000009–000016; akumulasi 16 kandidat, 0 APPROVED |
 | 0.19.0-id | 29 Juli 2026 | Menambahkan BAT-HAD-001 dan HAD-000001–000008; sumber awal tersedia, tetapi 0 APPROVED dan review ahli tetap OPEN |
 | 0.18.0-id | 29 Juli 2026 | Menambahkan HCP-QUR-001 dan REG-HAD-001; arsitektur Hadis Akhlak lintas Jilid 1–8 tersedia, tetapi objek, takhrij, mapping, dan validasi tetap OPEN |
