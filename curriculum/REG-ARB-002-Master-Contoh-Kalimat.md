@@ -102,6 +102,7 @@ Pengisian contoh final dimulai setelah:
 | Batch-ID | Pattern-ID | Sentence-ID | Status |
 |---|---|---|---|
 | BAT-ARB-001 | AR-PAT-000001–AR-PAT-000004 | AR-SEN-000001–AR-SEN-000024 | DRAF PILOT |
+| BAT-ARB-002 | AR-PAT-000005–AR-PAT-000009 | AR-SEN-000025–AR-SEN-000048 | DRAF PILOT |
 
 Seluruh kalimat memakai kosa kata LEX-ARB-001 dan belum dipetakan final ke halaman.
 
@@ -109,5 +110,6 @@ Seluruh kalimat memakai kosa kata LEX-ARB-001 dan belum dipetakan final ke halam
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.3.0-id | 28 Juli 2026 | Mencatat 5 pola dan 24 contoh dari BAT-ARB-002; akumulasi 48 |
 | 0.2.0-id | 28 Juli 2026 | Mencatat 4 pola dan 24 contoh dari BAT-ARB-001 |
 | 0.1.0-id | 28 Juli 2026 | Skema master kalimat dan hubungan ke kosa kata/kaidah |
