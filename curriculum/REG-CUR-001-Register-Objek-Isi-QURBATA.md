@@ -438,6 +438,17 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 7. Locator QJ1-Pxxx tetap digunakan pada produk, tetapi selalu dipetakan ke PO.
 8. Penambahan ID final dilakukan melalui register ini, bukan secara manual pada hasil PDF.
 
+## Objek Induk Bahasa Arab Lintas Jilid
+
+| Object-ID | Jenis | Nama | Status | Pengendali |
+|---|---|---|---|---|
+| ACP-QUR-001 | progression | Arabic Competency Progression QURBATA | DRAF TERKENDALI | DEC-CUR-003 |
+| REG-ARB-001 | register | Objek kompetensi, lema, struktur, fungsi, asesmen | DRAF TERKENDALI | ACP-QUR-001 |
+| VAL-ARB-001 | validation | Protokol validasi ilmiah | BELUM DIEKSEKUSI | ACP-QUR-001 |
+| BLOCKED-CUR-ARB-002 | blocker | Pemetaan progression ke Jilid 1–8 | OPEN | DEC-CUR-003 |
+
+Objek rinci Bahasa Arab tidak diduplikasi di REG-CUR-001; register ini menunjuk REG-ARB-001 sebagai sumber tunggal.
+
 ## 4. Riwayat
 
 | Versi | Tanggal | Ringkasan |
