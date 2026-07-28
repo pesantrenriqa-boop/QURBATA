@@ -198,3 +198,12 @@ Halaman evaluasi tidak mengenalkan materi baru dan harus mengambil sampel dari s
 ## Catatan Penyelesaian P033–P040
 
 QJ1-P033–P040 telah disusun sesuai DEC-CUR-002. P033 menutup bentuk dhammah melalui ءُ مُ نُ وُ يُ dengan gate verifikasi ahli untuk ءُ. P034–P035, P037, P039, dan P040 memakai pemerataan 29 identitas serta rotasi 22:21:21. P036 tetap terblokir BLOCKED-CUR-HAF-002; P038 merupakan unit Akhlak lisan/visual tanpa materi baca baru.
+
+
+## Gate Arabic Competency Progression
+
+- Struktur Bahasa Arab Jilid 1 dikendalikan secara lintas jilid oleh ACP-QUR-001.
+- DEC-CUR-003 masih Draf Keputusan; pembagian tahap ke halaman belum final.
+- P028 tidak boleh dibekukan berdasarkan proposal kosa kata lama saja.
+- Sebelum pemetaan, REG-ARB-001 harus berisi outcome, lema, struktur, fungsi, asesmen, dan dependency yang tervalidasi.
+- Perubahan ini tidak mengubah 40 halaman, tetapi dapat mengubah isi segmen Bahasa Arab pada seluruh halaman.
