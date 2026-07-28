@@ -4,7 +4,7 @@
 **Produk:** Buku QURBATA Jilid 1  
 **Judul Resmi:** Struktur Buku QURBATA Jilid 1  
 **Status:** Draf Terkendali — Belum Disetujui  
-**Versi:** 0.3.0-id  
+**Versi:** 0.4.0-id  
 **Bahasa Induk:** Bahasa Indonesia  
 **Jumlah Halaman Inti:** 40  
 **Sasaran Pengguna:** Peserta didik pemula membaca Al-Qur’an; usia dan kebutuhan spesifik ditetapkan saat validasi pengguna  
@@ -19,7 +19,7 @@
 **Tanggal Berlaku:** Belum berlaku  
 **Tinjauan Berikutnya:** Sebelum isi halaman diproduksi massal atau ketika struktur berubah material  
 **Klasifikasi Akses:** Internal selama draf; publik setelah disetujui  
-**Ringkasan Perubahan:** Menambahkan metadata wajib, koreksi klasifikasi ID, relasi kurikulum/LO/KO, tema akhlak per halaman, dan gate kepatuhan
+**Ringkasan Perubahan:** Mengganti rasio halaman akuisisi menjadi 50:50 dan menambahkan murojaah kumulatif, pemerataan harakat, serta Keselarasan Leksikal Qurani
 
 ## 1. Hasil Akhir Jilid
 
@@ -34,13 +34,18 @@ Jilid 1 belum mengajarkan mad, tanwin, sukun, tasydid, atau kaidah tajwid lanjut
 3. Tangga 1–8 berisi rangkaian dua huruf.
 4. Tangga 9–24 berisi rangkaian tiga huruf.
 5. Setiap kotak berisi satu rangkaian latihan, bukan label atau nama huruf.
-6. Materi baru ditargetkan sekitar 60% dan review sekitar 40%.
-7. Halaman pertama suatu urutan boleh tidak mempunyai review jika belum ada materi prasyarat.
+6. QJ1-P001 menggunakan 64 token fokus; halaman akuisisi berikutnya menggunakan 32 token fokus (50%) dan 32 token murojaah kumulatif (50%).
+7. Halaman integrasi, penguatan, simulasi, dan evaluasi menggunakan 64 token review; unit khusus mengikuti aturan lisan/bermakna.
 8. Huruf ditampilkan terpisah pada tahap awal; bentuk sambung tidak boleh muncul sebelum ditetapkan sebagai materi baru.
 9. Mad, tanwin, sukun, tasydid, dan materi lain yang belum diajarkan dilarang muncul dalam contoh.
 10. Tanwin, ketika kelak diajarkan, hanya ditempatkan pada akhir kata.
 11. Contoh Qurani, hadis, atau mufradat digunakan hanya apabila seluruh unsurnya sudah dipelajari; selain itu digunakan kombinasi huruf terkontrol.
 12. Kesulitan bergerak dari sederhana ke kompleks, terbimbing ke mandiri, dan pengenalan ke otomatisasi.
+13. Sebelum alfabet lengkap, setiap identitas prasyarat hadir sedikitnya sekali; setelah lengkap, seluruh 29 identitas hadir pada bagian murojaah halaman akuisisi.
+14. Harakat eligible didistribusikan seimbang dan seluruh kombinasi huruf–harakat tercakup dalam siklus maksimal tiga halaman.
+15. Materi baru diulang pada N+1, N+2, N+4, N+8, lalu rotasi kumulatif.
+16. Rangkaian tiga huruf diprioritaskan menurut Keselarasan Leksikal Qurani tanpa mengklaim huruf terpisah sebagai kata.
+17. Distribusi dikendalikan oleh DEC-CUR-001 dan MAT-CUR-QJ1-001.
 13. Setiap halaman memuat satu tema nasihat akhlak singkat yang sesuai usia dan tidak mengurangi fokus latihan; QJ1-P038 menjadi halaman akhlak khusus.
 14. Setiap halaman wajib dipetakan ke minimal satu Learning Object (LO), satu atau lebih Knowledge Object (KO), outcome, prasyarat, asesmen, dan bukti sebelum berstatus siap uji.
 15. Master Markdown/data adalah sumber tunggal; PDF, slide, flashcard, audio, dan turunan lain tidak diedit sebagai sumber mandiri.
@@ -144,7 +149,10 @@ Sebuah halaman belum boleh disebut final sebelum:
 - tujuan visual, fonetik, kelancaran, dan target Qurani ditulis;
 - prasyarat dan materi baru dinyatakan;
 - 24 tangga lengkap sesuai pola 8 rangkaian dua huruf dan 16 rangkaian tiga huruf;
-- komposisi materi baru/review diperiksa;
+- komposisi fokus/murojaah diperiksa sesuai jenis halaman;
+- seluruh identitas huruf eligible dan distribusi harakat diperiksa;
+- jadwal N+1, N+2, N+4, N+8 serta siklus tiga halaman diperiksa;
+- tag Keselarasan Leksikal Qurani diverifikasi;
 - tidak terdapat materi yang datang terlalu awal;
 - kemiripan bentuk, titik, dan makhraj diaudit;
 - instruksi guru dan kriteria lulus tersedia;
@@ -175,3 +183,4 @@ Halaman evaluasi tidak mengenalkan materi baru dan harus mengambil sampel dari s
 | 0.1.0-id | 27 Juli 2026 | Struktur awal 40 halaman dan aturan 24 tangga |
 | 0.2.0-id | 27 Juli 2026 | Audit konstitusional: metadata dilengkapi, kode QJ diklasifikasi ulang, relasi CUR/LO/KO dan tema akhlak per halaman ditambahkan |
 | 0.3.0-id | 27 Juli 2026 | Mengunci QJ1-P001 pada keluarga ب ت ث; menempatkan hamza–alif pada QJ1-P002 dan menghapus bentuk اَ yang tidak tepat |
+| 0.4.0-id | 28 Juli 2026 | Menerapkan DEC-CUR-001: murojaah kumulatif 50:50, pemerataan huruf–harakat, jadwal retensi, dan Keselarasan Leksikal Qurani |
