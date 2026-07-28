@@ -7,11 +7,11 @@
 
 ## Profil Cetak Awal
 
-- ukuran potong: A4 lanskap, 297 × 210 mm;
+- ukuran potong: A5 lanskap, 210 × 148 mm;
 - bleed: 3 mm pada empat sisi;
-- safe area: 12 mm dari garis potong;
+- safe area: 8 mm dari garis potong;
 - latihan: 24 kotak, susunan 4 kolom × 6 baris;
-- huruf Arab latihan: 25 pt sebagai baseline, dibesarkan setelah uji keterbacaan bila ruang memungkinkan;
+- huruf Arab latihan: Amiri Quran 18 pt sebagai baseline A5; ukuran final tunduk pada uji keterbacaan dan proof print;
 - warna kerja: hijau RIQA, aksen oranye, latar putih;
 - keluaran: PDF buku peserta; buku guru dibangkitkan sebagai keluaran terpisah;
 - crop marks: aktif pada PDF produksi;
@@ -38,10 +38,10 @@ Build gagal apabila:
 
 ## Font
 
-Pilot teknis memakai DejaVu Sans agar build dapat direproduksi. Sebelum status siap cetak final:
+Font Arab produksi ditetapkan **Amiri Quran**. Font antarmuka Latin pada tahap prototipe memakai DejaVu Sans.
 
-- font Arab produksi harus dipilih dan lisensinya dicatat;
-- kandidat utama: Amiri atau font Arab lain yang lulus uji harakat, makhraj visual, jarak, dan keterbacaan anak;
+- berkas resmi `AmiriQuran.ttf` harus ditempatkan pada `production/print/fonts/`;
+- lisensi SIL Open Font License harus disimpan bersama catatan sumber;
 - font harus ditanam di PDF;
 - hasil shaping Arab wajib diperiksa dari render PNG, bukan hanya ekstraksi teks.
 
@@ -49,6 +49,7 @@ Pilot teknis memakai DejaVu Sans agar build dapat direproduksi. Sebelum status s
 
 ```bash
 python3 -m pip install -r production/print/requirements.txt
+./production/print/fetch_amiri_quran.sh
 python3 production/print/generate_qurbata_pdf.py
 pdfinfo output/pdf/QURBATA-Jilid-1-Peserta-print.pdf
 pdftoppm -png -f 1 -singlefile output/pdf/QURBATA-Jilid-1-Peserta-print.pdf tmp/pdfs/qj1-preview
