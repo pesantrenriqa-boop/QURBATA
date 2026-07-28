@@ -28,6 +28,7 @@ Urutan kosa kata, susunan kalimat, sharaf, nahwu, fungsi komunikasi, dan Bahasa 
 10. Setiap objek Bahasa Arab wajib mempunyai ID, prasyarat, outcome, bukti, sumber, halaman pengenalan, halaman murojaah, dan status validasi.
 11. Struktur final hanya boleh dibekukan setelah review ahli Bahasa Arab/TAFL, ahli nahwu–sharaf, ahli Al-Qur’an/hadis, penelaah asesmen, dan safeguarding.
 12. Angka target tidak boleh mengalahkan mastery, dependency, maintenance, aksesibilitas, safeguarding, atau bukti empiris.
+13. Setiap pelajaran Bahasa Arab mempunyai satu teks kumulatif bermakna yang memakai kosa kata serta kaidah tersedia, memurojaah target lama, dan mengintegrasikan tema secara terkendali melalui STD-ARB-002 serta REG-ARB-003.
 
 ## 2A. Interpretasi Mengikat yang Diusulkan
 
