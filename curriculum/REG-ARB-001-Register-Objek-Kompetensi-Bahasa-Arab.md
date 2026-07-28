@@ -103,6 +103,19 @@ Setiap AR-GRM wajib memuat:
 - Setiap AR-GRM harus mempunyai Pattern-ID dan contoh reseptif, produktif, serta transfer.
 - Pengulangan lema dalam contoh tidak menambah hitungan kosa kata.
 
+## 6A. Register Fungsi Komunikasi Jilid 1
+
+| Function-ID | Fungsi | Sumber pertama | Status |
+|---|---|---|---|
+| AR-FUN-000001 | mengenali benda | BAT-ARB-001 | DRAF PILOT |
+| AR-FUN-000002 | mengenali orang | BAT-ARB-001 | DRAF PILOT |
+| AR-FUN-000003 | menunjukkan dan mengidentifikasi | BAT-ARB-001 | DRAF PILOT |
+| AR-FUN-000004 | bertanya identitas benda/orang | BAT-ARB-001 | DRAF PILOT |
+| AR-FUN-000005 | mendeskripsikan benda/tempat | BAT-ARB-002 | LANGUAGE-REVIEW |
+| AR-FUN-000006 | menyatakan lokasi benda | BAT-ARB-002 | LANGUAGE-REVIEW |
+| AR-FUN-000007 | menyatakan tindakan yang telah terjadi | BAT-ARB-003 | LANGUAGE-REVIEW |
+| AR-FUN-000008 | menyatakan tindakan yang sedang/umum terjadi | BAT-ARB-003 | LANGUAGE-REVIEW |
+
 ## 6B. Batch Objek Nyata
 
 | Batch-ID | Cakupan | Isi | Status |
@@ -110,9 +123,9 @@ Setiap AR-GRM wajib memuat:
 | LEX-ARB-001 | AR-STG-001–003 | 16 entri; 14 target terhitung; tampilan pedagogis dan alfabetis | CANDIDATE |
 | BAT-ARB-001 | AR-STG-001–003 | 4 struktur, 4 fungsi, 4 pola, 24 kalimat, 6 asesmen | DRAF PILOT |
 | LEX-ARB-002 | AR-STG-004–006 | 15 entri; 14 target terhitung; akumulasi 28 | CANDIDATE |
-| BAT-ARB-002 | AR-STG-004–006 | 5 struktur, 24 kalimat/pasangan, 6 asesmen | DRAF PILOT |
+| BAT-ARB-002 | AR-STG-004–006 | 5 struktur, 2 fungsi tambahan, 34 kalimat/pasangan, 6 asesmen | DRAF PILOT / LANGUAGE-REVIEW |
 | LEX-ARB-003 | AR-STG-007–009 | 14 entri; 12 target terhitung; akumulasi baseline 40 | CANDIDATE |
-| BAT-ARB-003 | AR-STG-007–009 | 6 struktur, 4 pola, 32 contoh, 6 asesmen | DRAF PILOT |
+| BAT-ARB-003 | AR-STG-007–009 | 6 struktur, 2 fungsi tambahan, 4 pola, 38 contoh, 6 asesmen | DRAF PILOT / LANGUAGE-REVIEW |
 | MAT-ARB-001 | Jilid 1–8 | baseline progresif 40/50/60/70/80/100/120/120; total 640 | DRAF PERENCANAAN |
 | STD-ARB-002 | Jilid 1–8 | standar satu teks kumulatif terintegrasi per pelajaran | DRAF TERKENDALI |
 | REG-ARB-003 | Jilid 1–8 | master microtext, paragraf, dan wacana; AR-TXT-000001 tersedia | PILOT |
@@ -123,6 +136,7 @@ Batch belum mengubah status UNMAPPED pada pemetaan jilid/halaman.
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.8.0-id | 28 Juli 2026 | Mencatat AR-FUN-000001–000008 serta memperbarui total BAT-ARB-002/003 menjadi 34/38 contoh |
 | 0.7.0-id | 28 Juli 2026 | Menautkan STD-ARB-002, REG-ARB-003, dan teks kumulatif pertama |
 | 0.6.0-id | 28 Juli 2026 | Mencatat LEX-ARB-003 dan BAT-ARB-003; kandidat baseline Jilid 1 mencapai 40 |
 | 0.5.0-id | 28 Juli 2026 | Mencatat LEX-ARB-002 dan BAT-ARB-002 untuk Tahap 4–6 |
