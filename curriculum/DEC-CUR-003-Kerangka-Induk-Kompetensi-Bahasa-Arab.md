@@ -28,7 +28,7 @@ Urutan kosa kata, susunan kalimat, sharaf, nahwu, fungsi komunikasi, dan Bahasa 
 10. Setiap objek Bahasa Arab wajib mempunyai ID, prasyarat, outcome, bukti, sumber, halaman pengenalan, halaman murojaah, dan status validasi.
 11. Struktur final hanya boleh dibekukan setelah review ahli Bahasa Arab/TAFL, ahli nahwu–sharaf, ahli Al-Qur’an/hadis, penelaah asesmen, dan safeguarding.
 12. Angka target tidak boleh mengalahkan mastery, dependency, maintenance, aksesibilitas, safeguarding, atau bukti empiris.
-13. Setiap pelajaran Bahasa Arab mempunyai satu teks kumulatif bermakna yang memakai kosa kata serta kaidah tersedia, memurojaah target lama, dan mengintegrasikan tema secara terkendali melalui STD-ARB-002 serta REG-ARB-003.
+13. Setiap siklus Bahasa Arab wajib berujung pada satu teks kumulatif bermakna setelah kosa kata dan kaidah prasyarat mencapai gerbang ketuntasan. Pelajaran akuisisi sebelum gerbang tidak wajib memuat paragraf. Penempatan dikendalikan oleh MAT-ARB-002, STD-ARB-002, dan REG-ARB-003.
 
 ## 2A. Interpretasi Mengikat yang Diusulkan
 
@@ -73,4 +73,5 @@ Dokumen berikut wajib merujuk ACP-QUR-001 setelah ratifikasi:
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.2.0-id | 28 Juli 2026 | Menetapkan teks kumulatif per siklus setelah gerbang ketuntasan |
 | 0.1.0-id | 28 Juli 2026 | Draf keputusan pembentukan progression Bahasa Arab Jilid 1–8 |
