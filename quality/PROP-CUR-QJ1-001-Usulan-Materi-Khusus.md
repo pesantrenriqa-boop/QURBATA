@@ -183,11 +183,12 @@ Setelah pilihan pemilik akademik, ahli terkait tetap harus memverifikasi isi kei
 
 ## 8. Supersesi Parsial Rekomendasi P028
 
-Rekomendasi tema dan tujuh mufradat P028 dalam versi 0.1.0 tidak lagi boleh diratifikasi secara mandiri. P028 harus diturunkan dari ACP-QUR-001 dan REG-ARB-001 setelah pemetaan lintas jilid lulus VAL-ARB-001. Bagian Hafalan P018 dan P036 tidak terpengaruh oleh supersesi parsial ini.
+Rekomendasi tema dan tujuh mufradat P028 dalam versi 0.1.0 tidak lagi boleh diratifikasi secara mandiri. MAP-ARB-QJ1-001 menggantikannya sebagai kandidat operasional: akuisisi didistribusikan pada segmen Bahasa Arab P001–P027, sedangkan P028 menjadi kandidat integrasi AR-CYC-000003/AR-TXT-000001. Pemetaan tetap harus diturunkan dari ACP-QUR-001 dan lulus VAL-ARB-001. Bagian Hafalan P018 dan P036 tidak terpengaruh oleh supersesi parsial ini.
 
 ## 9. Riwayat
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.3.0-id | 28 Juli 2026 | Menautkan kandidat P028 ke MAP-ARB-QJ1-001 dan AR-CYC-000003 |
 | 0.2.0-id | 28 Juli 2026 | Menandai rekomendasi P028 superseded parsial oleh progression Bahasa Arab lintas jilid |
 | 0.1.0-id | 28 Juli 2026 | Usulan pertama materi khusus P018, P028, dan P036 |
