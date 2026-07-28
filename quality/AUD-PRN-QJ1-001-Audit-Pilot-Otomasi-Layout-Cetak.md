@@ -1,63 +1,87 @@
-# AUD-PRN-QJ1-001 — Audit Pilot Otomasi Layout Cetak Jilid 1
+# AUD-PRN-QJ1-001 — Audit Otomasi Layout Cetak Jilid 1
 
 **Audit-ID:** AUD-PRN-QJ1-001  
-**Status:** PILOT 1 HALAMAN LULUS — BUILD 40 HALAMAN BELUM DIJALANKAN  
+**Status:** BUILD 40 HALAMAN LULUS TEKNIS — FINAL PRINT APPROVAL OPEN  
 **Tanggal:** 28 Juli 2026  
 **Objek:** `production/print/generate_qurbata_pdf.py`  
 **Edisi:** Buku peserta  
+**Sumber:** QJ1-P001–QJ1-P040 pada cabang `feature/qj1-master-structure`  
 **Keputusan:** PR #2 tetap Draft
 
-## 1. Cakupan Pilot
+## 1. Cakupan
 
-Pilot memakai fixture terkendali QJ1-P001 dengan 24 latihan. Generator membentuk PDF A4 lanskap dengan bleed 3 mm, safe area 12 mm, crop marks, grid 4 × 6, metadata Draft, font tertanam, dan pemisahan konten guru–peserta.
+Generator dijalankan terhadap seluruh 40 sumber nyata Jilid 1. Keluaran merupakan PDF peserta A4 lanskap dengan bleed 3 mm, safe area 12 mm, crop marks, font tertanam, metadata Draft, dan pemisahan konten guru–peserta.
 
-## 2. Hasil Teknis
+## 2. Hasil Build
 
 | Pemeriksaan | Hasil |
 |---|---|
-| jumlah sumber pilot | 1 halaman |
-| jumlah halaman PDF | 1 halaman |
-| jumlah latihan | 24/24 |
-| susunan | 4 kolom × 6 baris |
+| sumber ditemukan | 40/40 |
+| halaman PDF | 40/40 |
+| halaman latihan/evaluasi | 36 halaman × 24 butir |
+| halaman khusus | P018, P028, P036, P038 |
+| tata latihan | 4 kolom × 6 baris |
+| urutan halaman | P001–P040 lengkap |
 | urutan tangga | kanan atas menuju kiri, lalu turun |
-| urutan rangkaian Arab | RTL sesuai urutan sumber |
+| urutan token Arab | token pertama sumber selalu paling kanan |
 | ukuran MediaBox | A4 lanskap + bleed 3 mm |
-| crop marks | hadir |
-| safe area | 12 mm |
-| shaping/harakat Arab | tampil pada render PNG |
-| kebocoran marker guru | tidak ditemukan oleh preflight |
-| inspeksi visual PNG | tidak ditemukan clipping, overlap, kotak hitam, atau harakat terpotong |
+| crop marks | hadir pada 40/40 |
+| marker konten guru | tidak ditemukan pada PDF peserta |
+| clipping/overlap/kotak hitam | tidak ditemukan pada contact sheet 40 halaman |
+| render sampel rinci | P001 dan P033 diperiksa pada resolusi lebih tinggi |
+| status khusus | placeholder Draft; materi belum disahkan tidak dicetak |
 
-## 3. Koreksi Selama Pilot
+## 3. Koreksi Teknis
 
-Render pertama menempatkan urutan kotak dan rangkaian secara tidak tepat untuk alur kanan-ke-kiri. Generator dikoreksi sehingga:
+1. Generator pertama hanya menerima halaman dengan tepat 24 butir.
+2. Generator diperluas untuk empat halaman khusus tanpa memaksakan grid latihan.
+3. Urutan kotak dikoreksi agar Tangga 1 dimulai dari kanan atas.
+4. Mesin bidi sempat membalik rangkaian huruf terpisah.
+5. Render diubah menjadi per-token: token pertama sumber ditempatkan paling kanan secara deterministik.
+6. PDF dibangkitkan ulang, dirender 40 halaman, dan diperiksa ulang.
 
-- Tangga 1 dimulai dari kanan atas;
-- urutan empat tangga bergerak dari kanan ke kiri;
-- token Arab diolah agar tampilan visual mempertahankan urutan logis sumber;
-- render kedua diperiksa ulang dan lulus secara visual.
+## 4. Kontrol Halaman Khusus
 
-## 4. Yang Sudah Diotomatisasi
+P018, P028, P036, dan P038 tidak memperoleh materi peserta buatan. Selama keputusan kurikulum belum sah, halaman hanya menampilkan:
 
-- parsing 24 latihan/sampel dari sumber Markdown;
-- validasi tepat 24 butir;
-- pembuatan halaman peserta;
-- pemisahan otomatis pada marker `Segmen Bahasa Arab 5 Menit — Pilot`;
-- bleed, safe area, crop marks, grid, header, footer, dan nasihat akhlak;
-- PDF metadata;
-- pemeriksaan jumlah halaman, MediaBox, serta marker kebocoran guru.
+- identitas halaman;
+- label `HALAMAN KHUSUS`;
+- keterangan bahwa materi peserta menunggu keputusan dan pengesahan;
+- status Draft dari sumber;
+- nasihat akhlak bila tersedia.
 
-## 5. Yang Masih Terbuka
+## 5. Preflight Otomatis
 
-1. menjalankan build terhadap 40 sumber nyata pada cabang;
-2. menangani empat halaman khusus yang tidak semuanya memakai tabel 24 latihan;
-3. menetapkan font Arab produksi dan lisensinya;
-4. membangkitkan serta memeriksa PNG seluruh halaman;
-5. membuat edisi guru otomatis;
-6. menetapkan cover, punggung, halaman legal, daftar isi, dan halaman pembuka;
-7. menetapkan CMYK/profil warna sesuai percetakan;
-8. proof print fisik, binding, kertas, finishing, dan persetujuan Evidence-ID.
+Build gagal apabila:
 
-## 6. Keputusan Audit
+- halaman biasa tidak memiliki tepat 24 butir;
+- halaman tanpa latihan bukan salah satu dari empat halaman khusus;
+- kode/judul tidak ditemukan;
+- butir tidak memuat karakter Arab;
+- jumlah halaman PDF berbeda dari jumlah sumber;
+- MediaBox tidak sesuai;
+- marker guru ditemukan dalam PDF peserta.
 
-Pipeline otomatis **LAYAK DILANJUTKAN** dan pilot teknis satu halaman **LULUS**. Namun, status **siap cetak final belum boleh diberikan** sampai build 40 halaman, inspeksi visual penuh, proof print, review ahli, editorial, safeguarding, serta otorisasi selesai.
+## 6. Batas Kelulusan
+
+Kelulusan teknis ini membuktikan pipeline dapat menghasilkan PDF peserta lengkap dan konsisten. Kelulusan ini belum mencakup:
+
+1. validasi akademik, Arab/Qira’at, asesmen, dan safeguarding;
+2. keputusan materi P018, P028, P036, dan P038;
+3. verifikasi ahli atas `ءُ` pada P033;
+4. font Arab produksi dan lisensi final;
+5. cover, halaman legal, daftar isi, punggung, dan edisi guru;
+6. profil CMYK/mesin cetak, jenis kertas, binding, serta finishing;
+7. proof print fisik dan Evidence-ID editorial/render;
+8. otorisasi Document Controller.
+
+## 7. Keputusan Audit
+
+- Build sumber nyata P001–P040: **LULUS TEKNIS**.
+- Pemeriksaan contact sheet 40 halaman: **LULUS INTERNAL**.
+- Pemisahan naskah guru dari PDF peserta: **LULUS STRUKTURAL**.
+- Persetujuan siap cetak final: **OPEN**.
+- GATE-RND-QJ1: **OPEN — BUILD LULUS, PROOF/APPROVAL BELUM ADA**.
+- PR #2: **tetap Draft**.
+
+PDF saat ini adalah **prototipe cetak lengkap**, bukan produk final terotorisasi.
