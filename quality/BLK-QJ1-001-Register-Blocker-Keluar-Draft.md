@@ -10,10 +10,32 @@
 | Blocker-ID | Lokasi | Kebutuhan | Pemilik Keputusan | Status |
 |---|---|---|---|---|
 | BLOCKED-CUR-HAF-001 | QJ1-P018 | Teks Hafalan 1, sumber, batas potongan, model bacaan, Hafalan Object-ID, pengesah | Pemilik Akademik + ahli | OPEN |
-| BLOCKED-CUR-ARB-001 | QJ1-P028 | Tema, tujuan komunikatif, mufradat, vokalisasi, makna, konteks, model pelafalan, Arabic Learning Object-ID | Pemilik Akademik + ahli Bahasa Arab | OPEN |
+| BLOCKED-CUR-ARB-001 | QJ1-P001–P040/P028 | Validasi ahli atas model bahasa dan AR-SEN-000082–000096, model pelafalan, batas literasi, keputusan gerbang, Arabic Learning Object-ID, serta otorisasi | Pemilik Akademik + ahli Bahasa Arab | OPEN — PRODUK SIAP REVIEW |
 | BLOCKED-CUR-ARB-002 | Jilid 1–8 | Validasi ACP-QUR-001 dan pemetaan Stage-ID/AR-LEX/AR-GRM/AR-FUN/AR-ASM ke jilid dan halaman | Pemilik Akademik + panel ahli | OPEN |
 | BLOCKED-CUR-HAF-002 | QJ1-P036 | Teks Hafalan 2, sumber, batas potongan, model bacaan, Hafalan Object-ID, pengesah | Pemilik Akademik + ahli | OPEN |
 | BLOCKED-ORTHO-QJ1-001 | QJ1-P033 | Verifikasi fungsi, penulisan, dan penyajian ءُ dalam urutan Jilid 1 | Ahli Bahasa Arab/Qira’at | OPEN |
+
+## 1A. Substatus Blocker Bahasa Arab
+
+| Komponen | Bukti | Status |
+|---|---|---|
+| baseline kosa kata Jilid 1 | 45 entri aktual; 40 target terhitung; turunan tidak dihitung ulang | COMPLETE-DRAFT |
+| master kalimat | 96 Sentence-ID unik; 0 duplikasi | COMPLETE-DRAFT |
+| struktur/fungsi | AR-GRM dan AR-FUN-000001–000008 terdaftar | COMPLETE-DRAFT |
+| pemetaan halaman | MAP-ARB-QJ1-001; P001–P040 | COMPLETE-DRAFT |
+| panduan guru lima menit | GDE-ARB-QJ1-001; 40 halaman | COMPLETE-DRAFT |
+| penanaman sumber ke halaman | 40/40 memiliki Sentence-ID/Text-ID dan status; 0 hilang/duplikat | COMPLETE-DRAFT |
+| audit keterlacakan | AUD-ARB-QJ1-002 | COMPLETE-DRAFT |
+| paket ahli 15 kalimat | REV-ARB-QJ1-002; 15/15 PRECHECK-PASS | READY-FOR-EXPERT |
+| keputusan ahli kalimat | 15/15 keputusan dan Evidence-ID | NOT PROVIDED |
+| validasi 81 kalimat terdahulu dan tiga teks | bukti ahli bahasa/pedagogi/syar‘i | NOT PROVIDED |
+| model pelafalan/audio resmi | sumber, pengisi suara, review, hak penggunaan | NOT PROVIDED |
+| whitelist literasi silang | audit bentuk Arab guru versus unsur baca setiap halaman | OPEN |
+| gerbang siklus | P010, P020, P028 | 0/3 SIAP; GATE NOT RUN |
+| safeguarding dan uji durasi kelas | bukti pelaksanaan dan tindak lanjut | NOT PROVIDED |
+| otorisasi akademik dan Document Controller | keputusan, tanggal, audit trail | NOT PROVIDED |
+
+COMPLETE-DRAFT berarti artefak telah tersedia dan terlacak, bukan telah divalidasi atau disahkan. Karena unsur NOT PROVIDED dan OPEN masih material, BLOCKED-CUR-ARB-001/002 tetap OPEN.
 
 ## 2. Usulan Penutupan yang Tersedia
 
@@ -55,18 +77,20 @@ Kesiapan keluar-Draft berbasis gate saat ini: **2 dari 8 gate makro selesai (25%
 
 ## 5. Urutan Tindak Lanjut
 
-1. Pemilik Akademik menetapkan kandidat materi Hafalan 1, Bahasa Arab 1, dan Hafalan 2.
-2. Ahli memverifikasi ءُ dan kandidat leksikal.
-3. Pemeriksa akademik menelaah urutan, bentuk, harakat, makhraj, dan beban.
-4. Editorial serta render memeriksa seluruh sumber halaman.
-5. Tim asesmen dan safeguarding mengesahkan rubrik serta kontrol peserta.
-6. Document Controller mencatat bukti, versi, penutupan blocker, dan otorisasi.
-7. PR baru dapat dipertimbangkan keluar dari Draft.
+1. Pemilik Akademik menetapkan materi Hafalan 1 dan Hafalan 2 serta memastikan ruang lingkup review Bahasa Arab.
+2. Ahli Bahasa Arab mengisi REV-ARB-QJ1-002, menilai 81 kalimat terdahulu dan tiga teks, lalu mencatat Evidence-ID.
+3. Ahli memverifikasi ءُ, model pelafalan, batas literasi, dan kandidat leksikal.
+4. Pemeriksa akademik menelaah urutan, bentuk, harakat, makhraj, dan beban.
+5. Editorial serta render memeriksa seluruh sumber halaman.
+6. Tim asesmen dan safeguarding mengesahkan rubrik serta kontrol peserta.
+7. Document Controller mencatat bukti, versi, penutupan blocker, dan otorisasi.
+8. PR baru dapat dipertimbangkan keluar dari Draft.
 
 ## 6. Riwayat
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.5.0-id | 28 Juli 2026 | Memecah blocker Bahasa Arab menjadi substatus selesai-draf versus bukti/validasi yang masih terbuka |
 | 0.4.0-id | 28 Juli 2026 | Menautkan pemetaan pilot Bahasa Arab tanpa menutup blocker |
 | 0.3.0-id | 28 Juli 2026 | Menambahkan blocker validasi dan pemetaan Arabic Competency Progression |
 | 0.2.0-id | 28 Juli 2026 | Menautkan usulan materi khusus tanpa menutup blocker |
