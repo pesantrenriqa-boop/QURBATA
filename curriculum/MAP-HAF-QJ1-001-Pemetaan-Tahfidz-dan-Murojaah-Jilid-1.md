@@ -14,9 +14,9 @@ Dokumen ini mengubah usulan Hafalan 1 dan Hafalan 2 menjadi jadwal akuisisi, pen
 
 Kandidat materi:
 
-- `HAF-QJ1-000001`: Surah Al-Fatihah ayat 1–3;
-- `HAF-QJ1-000002`: Surah Al-Fatihah ayat 4–7;
-- `HAF-QJ1-000003`: Surah Al-Fatihah ayat 1–7 sebagai rangkaian utuh.
+- `HAF-000001`: Surah Al-Fatihah ayat 1–3;
+- `HAF-000002`: Surah Al-Fatihah ayat 4–7;
+- `HAF-000003`: Surah Al-Fatihah ayat 1–7 sebagai rangkaian utuh.
 
 Seluruh Hafalan Object-ID di atas berstatus `PROPOSED`. Status hanya dapat berubah setelah teks, sumber, model bacaan, batas potongan, review ahli, Decision-ID, dan pengesah dicatat.
 
@@ -66,7 +66,7 @@ Kode aktivitas tidak merupakan skor dan tidak membuktikan mastery tanpa catatan 
 | P015 | recall ayat 1–3 | bagian yang paling lemah | R | koreksi individual |
 | P016 | ayat 1–3 | mulai dari ayat 2 atau 3 | X-D | transfer dan retensi |
 | P017 | pra-checkpoint | ayat 1–3 | R | remedial terarah |
-| P018 | Hafalan 1 | ayat 1–3 | G | checkpoint kandidat HAF-QJ1-000001 |
+| P018 | Hafalan 1 | ayat 1–3 | G | checkpoint kandidat HAF-000001 |
 | P019 | potongan awal ayat 4 | ayat 1 | S-T-D | target baru + distributed review |
 | P020 | ayat 4 utuh | ayat 1–3 | C | penyambungan |
 | P021 | potongan awal ayat 5 | ayat 2 dan 4 | S-T-D | target baru + distributed review |
@@ -84,7 +84,7 @@ Kode aktivitas tidak merupakan skor dan tidak membuktikan mastery tanpa catatan 
 | P033 | ayat 1–7 | pasangan ayat lama–baru | D | retensi berjarak |
 | P034 | ayat 1–7 | koreksi tajwid individual | R | stabilisasi |
 | P035 | pra-checkpoint | ayat 4–7 dan sambungan 1–7 | R-C | remedial terarah |
-| P036 | Hafalan 2 | ayat 4–7 dan ayat 1–3 | G | checkpoint HAF-QJ1-000002/000003 |
+| P036 | Hafalan 2 | ayat 4–7 dan ayat 1–3 | G | checkpoint HAF-000002/000003 |
 | P037 | ayat 1–7 | mulai dari ayat tengah | X-D | delayed retention |
 | P038 | ayat 1–7 | adab dan pemaknaan global tanpa klaim tafsir baru | R | integrasi akhlak |
 | P039 | ayat 1–7 | bagian yang pernah salah | D | retensi tertunda |
@@ -119,9 +119,9 @@ Nilai numerik tidak wajib pada fase akuisisi. Checkpoint P018, P036, dan P040 ha
 
 | Objek | Dependency minimum | Status |
 |---|---|---|
-| HAF-QJ1-000001 | teks/sumber ayat 1–3; model bacaan; tashih; rubrik P018 | PROPOSED |
-| HAF-QJ1-000002 | HAF-QJ1-000001; teks/sumber ayat 4–7; model bacaan; tashih; rubrik P036 | PROPOSED |
-| HAF-QJ1-000003 | HAF-QJ1-000001 dan HAF-QJ1-000002; bukti sambungan dan retensi | PROPOSED |
+| HAF-000001 | teks/sumber ayat 1–3; model bacaan; tashih; rubrik P018 | PROPOSED |
+| HAF-000002 | HAF-000001; teks/sumber ayat 4–7; model bacaan; tashih; rubrik P036 | PROPOSED |
+| HAF-000003 | HAF-000001 dan HAF-000002; bukti sambungan dan retensi | PROPOSED |
 
 Pemetaan ini tidak:
 
