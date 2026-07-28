@@ -64,6 +64,7 @@ Contoh: `DEC-GOV-001`, `DEC-CUR-001`, `DEC-OS-001`, `DEC-RSK-001`.
 | DEC-GOV-004 | Ratifikasi dan pembekuan Governance v1.0 Bahasa Indonesia atas baseline `20892fbd5892dc2a79f23012ed6c98d0685a6eaa` | RATIFIED | QC-003, QC-007, BAS-GOV-001, AUD-GOV-001 | Efektif 27 Juli 2026; GF-2026-001 FROZEN; ditinjau paling lambat 27 Juli 2029 |
 | DEC-PRD-001 | Buku QURBATA tetap menjadi produk utama tahap pertama | APPROVED-DRAFT | Arah proyek QURBATA | Turunan digital mengikuti setelah struktur dan isi buku stabil |
 | DEC-DAT-001 | Master data menjadi sumber tunggal bagi buku dan keluaran turunannya | APPROVED-DRAFT | QC-004, arsitektur produk | Mengurangi duplikasi dan inkonsistensi |
+| DEC-CUR-004 | Aktivasi kandidat Objek Tahfidz Jilid 1 | PROPOSED | REV-HAF-QJ1-001, MAP-HAF-QJ1-001, RUB-HAF-QJ1-001 | Belum mengaktifkan HAF-QJ1-000001–000003; menunggu ahli, Pemilik Akademik, dan Evidence-ID |
 
 ## 7. Aturan Pengendalian
 
