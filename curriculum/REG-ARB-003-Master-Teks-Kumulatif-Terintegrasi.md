@@ -20,7 +20,9 @@ Setiap entri Text-ID wajib mencatat Cycle-ID, pelajaran akuisisi prasyarat, Inte
 
 ### AR-TXT-000001 — Adab Belajar di Kelas
 
-**Status:** CANDIDATE  
+**Status:** CANDIDATE — GATE NOT RUN  
+**Cycle-ID calon:** AR-CYC-000001  
+**Paket gerbang:** BAT-ARB-004  
 **Integration-Type:** AKHLAQ  
 **Stage maksimum:** AR-STG-007  
 **Sumber nilai:** adab menjaga kebersihan, duduk tertib, membaca, dan menyimak; belum dikaitkan sebagai kutipan hadis/ayat.
@@ -46,7 +48,7 @@ Setiap entri Text-ID wajib mencatat Cycle-ID, pelajaran akuisisi prasyarat, Inte
 | Kosa kata baru tersembunyi | NIHIL |
 | Kutipan ayat/hadis | TIDAK |
 
-Semua lema pernah diperkenalkan pada LEX-ARB-001–003. Teks tidak menambah hitungan baseline 40.
+Semua lema pernah diperkenalkan pada LEX-ARB-001–003. Teks tidak menambah hitungan baseline 40. AR-SEN-000081 menutup bukti contoh kalimat untuk bentuk يَسْمَعُ. Status tetap GATE NOT RUN sampai BAT-ARB-004 menghasilkan Evidence-ID yang sah.
 
 ## 5. Tugas Pilot
 
@@ -83,5 +85,6 @@ Pertanyaan dapat disampaikan dalam Bahasa Indonesia pada tahap awal. Versi Arab 
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.3.0-id | 28 Juli 2026 | Menautkan AR-TXT-000001 ke AR-CYC-000001 dan BAT-ARB-004; gate belum dijalankan |
 | 0.2.0-id | 28 Juli 2026 | Penempatan Text-ID dikunci per siklus setelah gerbang ketuntasan |
 | 0.1.0-id | 28 Juli 2026 | Register dibentuk dan microtext pilot pertama ditambahkan |
