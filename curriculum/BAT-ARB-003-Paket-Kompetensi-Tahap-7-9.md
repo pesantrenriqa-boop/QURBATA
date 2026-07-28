@@ -70,8 +70,20 @@
 | AR-SEN-000079 | لَا تَكْتُبْ فِي الْكِتَابِ. | Jangan menulis di buku. |
 | AR-SEN-000080 | لَا تَذْهَبْ إِلَى الْبَيْتِ. | Jangan pergi ke rumah. |
 
-**Total Batch 03:** 33 contoh.  
-**Akumulasi Batch 01–03:** 81 Sentence-ID.
+## 5A. Kandidat Tambahan untuk Panduan Guru QJ1
+
+Semua objek berikut berstatus **LANGUAGE-REVIEW**. ID tidak sama dengan validasi ahli.
+
+| Sentence-ID | Halaman | Kalimat | Arti | Status |
+|---|---|---|---|---|
+| AR-SEN-000092 | P025 | شَرِبَ الطَّالِبُ الْمَاءَ. | Pelajar telah minum air. | LANGUAGE-REVIEW |
+| AR-SEN-000093 | P025 | أَكَلَ الطَّالِبُ. | Pelajar telah makan. | LANGUAGE-REVIEW |
+| AR-SEN-000094 | P026 | نَامَ الْوَلَدُ. | Anak laki-laki telah tidur. | LANGUAGE-REVIEW |
+| AR-SEN-000095 | P026 | قَامَ الْوَلَدُ. | Anak laki-laki telah berdiri. | LANGUAGE-REVIEW |
+| AR-SEN-000096 | P028 | يَفْتَحُ الْمُعَلِّمُ الْمُصْحَفَ. | Guru membuka mushaf. | LANGUAGE-REVIEW |
+
+**Total Batch 03:** 38 contoh.  
+**Akumulasi Batch 01–03:** 96 Sentence-ID.
 
 ## 6. Asesmen Pilot
 
@@ -102,5 +114,6 @@ Baseline 40 tidak berarti seluruh verba harus masuk Jilid 1. Pemetaan dapat memi
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.3.0-id | 28 Juli 2026 | Menambahkan 5 kandidat LANGUAGE-REVIEW untuk panduan QJ1; total 38 contoh dan akumulasi 96 |
 | 0.2.0-id | 28 Juli 2026 | Menambahkan AR-SEN-000081 untuk menutup prasyarat AR-TXT-000001; total 33 contoh |
 | 0.1.0-id | 28 Juli 2026 | Tahap 7–9 dengan 32 contoh dan enam asesmen |
