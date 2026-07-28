@@ -1,7 +1,7 @@
 # AUD-ARB-QJ1-003 — Audit Silang Whitelist Literasi Segmen Bahasa Arab Jilid 1
 
 **Audit-ID:** AUD-ARB-QJ1-003  
-**Status:** SOURCE-LEVEL COMPLETE-DRAFT — RENDER FINAL OPEN  
+**Status:** SOURCE-LEVEL COMPLETE-DRAFT — PROTOTYPE-RENDER TECHNICAL-PASS
 **Tanggal:** 28 Juli 2026  
 **Objek:** QJ1-P001–QJ1-P040, segmen `Bahasa Arab 5 Menit — Pilot`  
 **Rujukan:** MAP-ARB-QJ1-001, GDE-ARB-QJ1-001, AUD-ARB-QJ1-002, DEC-CUR-002, VAL-ARB-001  
@@ -25,7 +25,8 @@ Apakah tulisan Arab pada segmen Bahasa Arab lima menit boleh masuk ke area baca 
 - Segmen berstatus `HOLD-PARTICIPANT`: **40/40**.
 - Segmen yang boleh langsung dipindahkan menjadi teks baca peserta: **0/40**.
 - Materi tetap boleh dipakai sebagai naskah lisan guru: **40/40**, tunduk pada status sumber, gerbang siklus, dan validasi ahli masing-masing.
-- Temuan kebocoran pada render final: **belum dapat dinilai karena render buku peserta final belum tersedia**.
+- Temuan kebocoran pada prototipe render A5 potret 42 halaman: **tidak ditemukan**.
+- Audit render final terotorisasi tetap terbuka karena finishing, review ahli, dan Evidence-ID belum tersedia.
 
 Alasan utamanya ialah sasaran baca Jilid 1 masih berupa bentuk terpisah dengan fathah, kasrah, dan dhammah secara bertahap, sedangkan fokus Bahasa Arab menggunakan kata/pola/teks utuh serta berbagai unsur ortografis yang melampaui whitelist baca halaman.
 
@@ -86,17 +87,17 @@ Pada pembuatan layout dan render:
 
 ## 6. Bukti yang Masih Diperlukan
 
-1. render final atau prototipe representatif buku peserta;
-2. daftar layer/komponen yang masuk ke versi guru versus versi peserta;
-3. audit visual 40 halaman oleh editorial dan pemeriksa Arab/Qira’at;
-4. Evidence-ID, nama pemeriksa, tanggal, temuan, koreksi, dan keputusan;
-5. verifikasi bahwa tidak ada teks guru bocor melalui caption, header, alt-text tercetak, atau template bersama.
+1. daftar layer/komponen yang masuk ke versi guru versus versi peserta;
+2. audit visual 40 halaman oleh editorial dan pemeriksa Arab/Qira’at;
+3. Evidence-ID, nama pemeriksa, tanggal, temuan, koreksi, dan keputusan;
+4. verifikasi ulang pada render final bahwa tidak ada teks guru bocor melalui caption, header, alt-text tercetak, atau template bersama.
 
 ## 7. Keputusan Audit
 
 - Audit silang pada **sumber halaman**: **COMPLETE-DRAFT**.
 - Izin menampilkan segmen sebagai bacaan peserta: **DITAHAN 40/40**.
-- Audit produk render peserta: **OPEN**.
+- Audit produk prototipe peserta A5 potret: **TECHNICAL-PASS — 0 kebocoran marker guru**.
+- Audit produk final dan Evidence-ID: **OPEN**.
 - Validasi bahasa dan gerbang siklus: **tetap OPEN sesuai status objek**.
 - BLOCKED-CUR-ARB-001/002: **tetap OPEN**.
 - PR #2: **tetap Draft**.
