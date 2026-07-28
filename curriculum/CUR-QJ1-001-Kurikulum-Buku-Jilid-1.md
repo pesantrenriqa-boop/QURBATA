@@ -209,3 +209,14 @@ CUR-QJ1-001 dan QJ1-MASTER belum boleh berstatus berlaku sebelum:
 5. Setelah 29 identitas selesai, setiap identitas muncul dua atau tiga kali pada halaman 64 token.
 6. Kombinasi huruf–harakat penuh ditutup melalui siklus maksimal dua halaman.
 7. DEC-CUR-002 menggantikan ketentuan alokasi 50:50 dalam DEC-CUR-001.
+
+
+## Pengendalian Kompetensi Bahasa Arab Lintas Jilid
+
+1. ACP-QUR-001 menjadi sumber struktur Bahasa Arab Jilid 1–8 setelah DEC-CUR-003 diratifikasi.
+2. QJ1 hanya boleh menerima tahap yang telah lulus dependency review dan validitas isi.
+3. P028 tetap placeholder terkendali; tema dan mufradat sebelumnya tidak final.
+4. Kosa kata baru wajib mempunyai AR-LEX; bentuk turunan tidak menambah hitungan lema.
+5. Murojaah kosa kata dan struktur wajib, tetapi tidak dihitung sebagai pengenalan baru.
+6. Kemampuan lisan tidak boleh diklaim sebagai kemampuan membaca bentuk yang belum diajarkan.
+7. Pemetaan Stage-ID, AR-GRM, AR-FUN, dan AR-ASM ke halaman akan ditambahkan setelah VAL-ARB-001 fase awal selesai.
