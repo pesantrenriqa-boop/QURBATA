@@ -169,6 +169,8 @@ Jika rekomendasi utama disetujui:
 - ketiga file halaman harus diperbarui dari placeholder menjadi materi terkendali;
 - blocker hanya dapat ditutup setelah review dan otorisasi.
 
+`MAP-HAF-QJ1-001` telah menurunkan rekomendasi P018/P036 menjadi kandidat jadwal akuisisi dan murojaah P001–P040. Dokumen tersebut tetap tidak mengikat sampai keputusan Pemilik Akademik dan validasi ahli tersedia.
+
 ## 7. Keputusan yang Diminta
 
 Pemilik Akademik memilih salah satu untuk setiap unit:
@@ -189,6 +191,7 @@ Rekomendasi tema dan tujuh mufradat P028 dalam versi 0.1.0 tidak lagi boleh dira
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.4.0-id | 28 Juli 2026 | Menautkan rekomendasi Hafalan 1/2 ke kandidat pemetaan MAP-HAF-QJ1-001 |
 | 0.3.0-id | 28 Juli 2026 | Menautkan kandidat P028 ke MAP-ARB-QJ1-001 dan AR-CYC-000003 |
 | 0.2.0-id | 28 Juli 2026 | Menandai rekomendasi P028 superseded parsial oleh progression Bahasa Arab lintas jilid |
 | 0.1.0-id | 28 Juli 2026 | Usulan pertama materi khusus P018, P028, dan P036 |
