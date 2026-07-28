@@ -2,7 +2,7 @@
 
 **Status-ID:** STAT-QUR-001  
 **Status:** BASELINE TERKENDALI  
-**Tanggal pengukuran:** 28 Juli 2026  
+**Tanggal pengukuran:** 29 Juli 2026  
 **Cakupan:** QURBATA Jilid 1–8 sampai rilis tervalidasi  
 **Cabang bukti:** `feature/qj1-master-structure`  
 **Catatan:** persentase adalah progres penyelesaian artefak dan gate, bukan klaim efektivitas pendidikan.
@@ -11,14 +11,14 @@
 
 | Indikator | Nilai |
 |---|---:|
-| Progres keseluruhan QURBATA menuju 100% | **30%** |
+| Progres keseluruhan QURBATA menuju 100% | **31%** |
 | Kesiapan Jilid 1 keluar-Draft | **25% — 2 dari 8 gate makro** |
 | Governance QURBATA v1.0 | **100% untuk baseline yang telah diratifikasi** |
 | Buku dengan sumber halaman lengkap | **1 dari 8 jilid** |
 | Halaman buku formal tersedia | **40 halaman Jilid 1** |
 | Jilid 2–8 dengan halaman formal | **0 dari 7 jilid** |
 
-Angka 30% tidak boleh dibaca sebagai “Jilid 1 sudah 30%”. Angka itu adalah gabungan berbobot seluruh proyek 8 jilid. Angka 25% hanya mengukur gate keluar-Draft Jilid 1.
+Angka 31% tidak boleh dibaca sebagai “Jilid 1 sudah 30%”. Angka itu adalah gabungan berbobot seluruh proyek 8 jilid. Angka 25% hanya mengukur gate keluar-Draft Jilid 1.
 
 ## 2. Definisi QURBATA 100%
 
@@ -42,12 +42,12 @@ Flashcard, presentasi, atau RIQA OS tidak menjadi syarat menyebut **delapan buku
 | Domain | Bobot terhadap 100% | Ketercapaian domain | Kontribusi |
 |---|---:|---:|---:|
 | Governance dan kontrol konstitusional | 10% | 100% | 10,0% |
-| Arsitektur kurikulum lintas jilid | 20% | 60% | 12,0% |
+| Arsitektur kurikulum lintas jilid | 20% | 65% | 13,0% |
 | Isi buku Jilid 1–8 | 45% | 8,75% | 3,94% |
 | Validasi ilmiah, ahli, asesmen, dan pilot | 15% | 20% | 3,0% |
 | Produksi dan rilis final | 10% | 15% | 1,5% |
-| **Total mentah** | **100%** |  | **30,44%** |
-| **Nilai laporan dibulatkan** |  |  | **30%** |
+| **Total mentah** | **100%** |  | **31,44%** |
+| **Nilai laporan dibulatkan** |  |  | **31%** |
 
 ### Rumus domain buku
 
@@ -75,7 +75,7 @@ Bukti:
 
 Pekerjaan pemeliharaan governance tidak menurunkan baseline 100%, kecuali ditemukan cacat material atau perubahan organisasi.
 
-### B. Arsitektur kurikulum lintas jilid — 60%
+### B. Arsitektur kurikulum lintas jilid — 65%
 
 Sudah tersedia:
 
@@ -86,13 +86,14 @@ Sudah tersedia:
 - register kosa kata, kalimat, teks, dan siklus;
 - mapping Bahasa Arab Jilid 1;
 - mapping dan kontrol Tahfidz Jilid 1;
-- prinsip murojaah kumulatif.
+- prinsip murojaah kumulatif;
+- HCP-QUR-001 dan REG-HAD-001 sebagai progression serta sumber tunggal Hadis Akhlak Jilid 1–8 (belum berisi objek aktif).
 
 Masih belum lengkap:
 
 - progression baca/tajwid formal Jilid 2–8;
 - mapping Tahfidz Jilid 2–8;
-- master hadis akhlak sahih Jilid 1–8;
+- inventaris Hadith-ID nyata, takhrij, terjemah, mapping halaman, dan validasi ahli atas hadis akhlak Jilid 1–8;
 - pembagian final Bahasa Arab Jilid 2–8;
 - aturan kenaikan jilid lintas-strand yang tervalidasi.
 
@@ -175,7 +176,7 @@ Kesiapan Jilid 1 keluar-Draft tetap **25%**. Artefak internal tambahan memperbai
 
 ## 7. Target Kenaikan Berikutnya
 
-Jalur tercepat yang sah dari 30%:
+Jalur tercepat yang sah dari 31%:
 
 1. menetapkan materi khusus Jilid 1 melalui keputusan ahli dan Pemilik Akademik;
 2. menyelesaikan review akademik, editorial, asesmen, serta safeguarding Jilid 1;
@@ -188,4 +189,5 @@ Jalur tercepat yang sah dari 30%:
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.2.0-id | 29 Juli 2026 | Progression dan register Hadis Akhlak menambah ketercapaian arsitektur menjadi 65%; total mentah 31,44%, laporan 31% |
 | 0.1.0-id | 28 Juli 2026 | Baseline berbobot pertama: progres keseluruhan 30%, kesiapan keluar-Draft Jilid 1 25% |
