@@ -135,7 +135,7 @@ Pemetaan ini tidak:
 
 1. Pemilik Akademik memilih setuju, ubah, atau tolak terhadap kandidat materi.
 2. Ahli Al-Qur’an/Qira’at menetapkan teks, sumber, batas potongan, tajwid, dan model bacaan.
-3. Tim asesmen menelaah rubrik P018, P036, dan P040.
+3. Tim asesmen menelaah `RUB-HAF-QJ1-001` dan `FRM-HAF-QJ1-001` untuk P018, P036, dan P040.
 4. Safeguarding menilai beban lima menit, koreksi, penghentian aman, dan remedial.
 5. Document Controller menerbitkan Decision-ID dan mengaktifkan Hafalan Object-ID setelah bukti lengkap.
 6. Setelah ratifikasi, mapping ditanam ke sumber halaman, buku guru, buku peserta, dan RIQA OS.
