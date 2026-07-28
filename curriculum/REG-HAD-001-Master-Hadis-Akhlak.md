@@ -1,7 +1,7 @@
 # REG-HAD-001 — Master Hadis Akhlak QURBATA
 
 **Register-ID:** REG-HAD-001  
-**Status:** DRAF TERKENDALI — 32 KANDIDAT SOURCE-CHECK; 0 APPROVED  
+**Status:** DRAF TERKENDALI — 40 KANDIDAT SOURCE-CHECK; 0 APPROVED  
 **Tanggal:** 29 Juli 2026  
 **Pengendali:** HCP-QUR-001  
 **Cakupan:** Jilid 1–8
@@ -47,7 +47,7 @@ Register ini adalah sumber tunggal untuk memastikan hadis akhlak QURBATA bertaha
 
 ## 4. Register Objek
 
-Tiga puluh dua kandidat awal telah dimasukkan melalui BAT-HAD-001 sampai BAT-HAD-004. Tidak ada Hadith-ID yang diaktifkan; semua masih memerlukan takhrij, review penggalan, terjemah, pedagogi, safeguarding, dan keputusan ahli.
+Empat puluh kandidat awal telah dimasukkan melalui BAT-HAD-001 sampai BAT-HAD-005. Tidak ada Hadith-ID yang diaktifkan; semua masih memerlukan takhrij, review penggalan, terjemah, pedagogi, safeguarding, dan keputusan ahli.
 
 | Hadith-ID | Full-Hadith-ID | Tema | Jilid/Halaman | Sumber | Status |
 |---|---|---|---|---|---|
@@ -83,6 +83,14 @@ Tiga puluh dua kandidat awal telah dimasukkan melalui BAT-HAD-001 sampai BAT-HAD
 | HAD-000030 | FHD-000030 | tawaduk | J1/P030 usulan | Muslim 2588 | SOURCE-CHECK / CONCEPT |
 | HAD-000031 | FHD-000031 | persaudaraan tanpa iri | J1/P031 usulan | Muslim 2563 | SOURCE-CHECK / VARIANT |
 | HAD-000032 | FHD-000032 | nasihat tulus | J1/P032 usulan | Muslim 55 | SOURCE-CHECK / HIGH-CONCEPT |
+| HAD-000033 | FHD-000033 | kelembutan memperindah | J1/P033 usulan | Muslim 2594 | SOURCE-CHECK / SEMANTIC-OVERLAP |
+| HAD-000034 | FHD-000034 | memudahkan dan menggembirakan | J1/P034 usulan | Bukhari 69; Muslim 1734 | SOURCE-CHECK / CONTEXT |
+| HAD-000035 | FHD-000035 | menunjukkan kebaikan | J1/P035 usulan | Muslim 1893 | SOURCE-CHECK / ATTRIBUTION |
+| HAD-000036 | FHD-000036 | kasih muda dan hormat tua | J1/P036 usulan | Abu Dawud 4943; Tirmidzi 1920 | SOURCE-CHECK / THEOLOGICAL-WORDING / SAFE |
+| HAD-000037 | FHD-000037 | kelapangan bermuamalah | J1/P037 usulan | Bukhari 2076 | SOURCE-CHECK / AGE-LOAD |
+| HAD-000038 | FHD-000038 | menjaga anak yatim | J1/P038 usulan | Bukhari 6005 | SOURCE-CHECK / PRIVACY |
+| HAD-000039 | FHD-000039 | membantu keluarga rentan | J1/P039 usulan | Bukhari 5353; Muslim 2982 | SOURCE-CHECK / EXCERPT / PRIVACY |
+| HAD-000040 | FHD-000040 | kebaikan kecil yang ikhlas | J1/P040 usulan | Bukhari 1417; Muslim 1016 | SOURCE-CHECK / EXCERPT / AGE-SAFETY |
 
 ## 5. Register Tema Awal
 
@@ -110,10 +118,10 @@ Sebelum aktivasi, pemeriksa wajib membandingkan matan lengkap dan kutipan, peraw
 ## 7. Blocker Awal
 
 - pemilik akademik belum menetapkan panel ahli hadis/syar‘i;
-- baru 32 kandidat dari kapasitas desain maksimal 320 slot yang tersedia; 288 slot belum memiliki kandidat;
-- sumber dan locator awal tersedia untuk 8 kandidat, tetapi standar edisi/locator lintas register belum diputuskan;
+- 40 kandidat Jilid 1 telah tersedia dari kapasitas desain maksimal 320 slot; 280 slot lintas Jilid 2–8 belum memiliki kandidat;
+- sumber dan locator awal tersedia untuk 40/40 kandidat Jilid 1, tetapi standar edisi/locator lintas register belum diputuskan;
 - takhrij, terjemah, whitelist literasi, dan safeguarding belum dijalankan;
-- mapping Hadith-ID ke halaman Jilid 1–8 belum tersedia;
+- usulan mapping Hadith-ID ke P001–P040 tersedia, tetapi mapping formal, pola murojaah, dan mapping Jilid 2–8 belum tersedia;
 - Evidence-ID dan Decision-ID belum tersedia.
 
 Karena itu register ini meningkatkan kesiapan arsitektur dan inventaris awal, bukan kesiapan terbit.
@@ -122,6 +130,7 @@ Karena itu register ini meningkatkan kesiapan arsitektur dan inventaris awal, bu
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.6.0-id | 29 Juli 2026 | Menambahkan HAD-000033–000040 melalui BAT-HAD-005; kandidat P001–P040 lengkap, akumulasi 40 SOURCE-CHECK dan 0 APPROVED |
 | 0.5.0-id | 29 Juli 2026 | Menambahkan HAD-000025–000032 melalui BAT-HAD-004; akumulasi 32 SOURCE-CHECK, 0 APPROVED |
 | 0.4.0-id | 29 Juli 2026 | Menambahkan HAD-000017–000024 melalui BAT-HAD-003; akumulasi 24 SOURCE-CHECK, 0 APPROVED |
 | 0.3.0-id | 29 Juli 2026 | Menambahkan HAD-000009–000016 melalui BAT-HAD-002; akumulasi 16 SOURCE-CHECK, 0 APPROVED |
