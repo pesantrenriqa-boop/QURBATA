@@ -442,9 +442,9 @@ Register ini menjadi sumber nomor global objek isi pendidikan. Locator produk se
 
 | Object-ID | Jenis | Nama | Locator | Status | Pengendali |
 |---|---|---|---|---|---|
-| HAF-QJ1-000001 | Hafalan Object | Kandidat Al-Fatihah ayat 1–3 | P001–P018 | PROPOSED-INACTIVE | DEC-CUR-004 |
-| HAF-QJ1-000002 | Hafalan Object | Kandidat Al-Fatihah ayat 4–7 | P019–P036 | PROPOSED-INACTIVE | DEC-CUR-004 |
-| HAF-QJ1-000003 | Hafalan Object | Kandidat integrasi/retensi Al-Fatihah ayat 1–7 | P029–P040 | PROPOSED-INACTIVE | DEC-CUR-004 |
+| HAF-000001 | Hafalan Object | Kandidat Al-Fatihah ayat 1–3 | P001–P018 | PROPOSED-INACTIVE | DEC-CUR-004 |
+| HAF-000002 | Hafalan Object | Kandidat Al-Fatihah ayat 4–7 | P019–P036 | PROPOSED-INACTIVE | DEC-CUR-004 |
+| HAF-000003 | Hafalan Object | Kandidat integrasi/retensi Al-Fatihah ayat 1–7 | P029–P040 | PROPOSED-INACTIVE | DEC-CUR-004 |
 
 Objek Tahfidz tidak boleh dipakai sebagai materi aktif, sumber buku, atau data RIQA OS sampai DEC-CUR-004 memperoleh keputusan ahli, keputusan Pemilik Akademik, dan Evidence-ID lengkap.
 
@@ -463,7 +463,7 @@ Objek rinci Bahasa Arab tidak diduplikasi di REG-CUR-001; register ini menunjuk 
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
-| 0.42.0-id | 28 Juli 2026 | Mendaftarkan HAF-QJ1-000001–000003 sebagai PROPOSED-INACTIVE di bawah DEC-CUR-004 |
+| 0.42.0-id | 28 Juli 2026 | Mendaftarkan HAF-000001–000003 sebagai PROPOSED-INACTIVE di bawah DEC-CUR-004 |
 | 0.1.0-id | 27 Juli 2026 | Membentuk BO, CUR, CO, PO, LO, dan KO awal untuk QJ1-P001 |
 | 0.2.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P002 |
 | 0.3.0-id | 27 Juli 2026 | Menambahkan PO, LO, dan KO untuk QJ1-P003 |
