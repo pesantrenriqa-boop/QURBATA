@@ -90,6 +90,22 @@ Kemampuan membaca tulisan yang belum diajarkan tidak boleh diinferensikan dari k
 
 Tidak semua langkah harus selesai pada satu halaman.
 
+## 6A. Arsitektur Contoh Kalimat
+
+Kosa kata bukan hasil akhir. Setiap lema harus masuk ke jaringan penggunaan:
+
+`AR-LEX/AR-FAM → AR-GRM → AR-FUN → Pattern-ID → AR-SEN/AR-DLG/AR-TXT → AR-ASM → Evidence-ID`
+
+Ketentuan:
+
+1. contoh hanya memakai lema, bentuk turunan, partikel, dan kaidah yang sudah tersedia;
+2. pengulangan lema dalam kalimat adalah murojaah/penerapan dan tidak menambah target 640;
+3. kalimat dibangun dari kata → frasa → pola tetap → substitusi → produksi → dialog → wacana;
+4. contoh pedagogis, ayat, hadis, dan adaptasi harus diberi Source-Type berbeda;
+5. STD-ARB-001 mengendalikan whitelist; REG-ARB-002 menjadi sumber tunggal contoh;
+6. setiap entri kamus dapat menautkan contoh pemakaian dari REG-ARB-002;
+7. asesmen transfer memakai kombinasi baru dari unsur yang telah dikuasai.
+
 ## 7. Dependency Kritis
 
 - na‘at dan idhafah tidak boleh diajarkan sebelum peserta membedakan nomina dan relasi makna dasar;
