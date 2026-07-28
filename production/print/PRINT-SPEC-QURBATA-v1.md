@@ -7,15 +7,20 @@
 
 ## Profil Cetak Awal
 
-- ukuran potong: A5 lanskap, 210 × 148 mm;
+- ukuran potong: A5 potret, 148 × 210 mm;
 - bleed: 3 mm pada empat sisi;
 - safe area: 8 mm dari garis potong;
-- latihan: 24 kotak, susunan 4 kolom × 6 baris;
-- huruf Arab latihan: Amiri Quran 18 pt sebagai baseline A5; ukuran final tunduk pada uji keterbacaan dan proof print;
+- latihan: 24 kotak, susunan 3 kolom × 8 baris;
+- huruf Arab latihan: Amiri Quran 16 pt sebagai baseline A5 potret; ukuran final tunduk pada uji keterbacaan dan proof print;
 - warna kerja: hijau RIQA, aksen oranye, latar putih;
 - keluaran: PDF buku peserta; buku guru dibangkitkan sebagai keluaran terpisah;
 - crop marks: aktif pada PDF produksi;
 - metadata Draft tetap tampil sampai seluruh gate selesai.
+- halaman awal: cover dan identitas peserta;
+- setiap halaman pelajaran menampilkan nomor halaman, tanggal, nilai, status lulus/ulang, dan paraf/TTD guru;
+- setiap halaman pelajaran menyediakan panel Bahasa Arab dan Tahfidz/Murojaah;
+- materi Bahasa Arab tertulis hanya boleh muncul setelah lulus whitelist literasi;
+- target tahfidz hanya boleh muncul setelah mapping tahfidz per halaman disahkan.
 
 Ukuran dan gaya visual dapat diubah melalui generator tanpa mengubah 40 sumber halaman.
 
