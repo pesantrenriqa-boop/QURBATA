@@ -2,7 +2,7 @@
 
 **Decision-ID:** DEC-CUR-001  
 **Jenis:** Keputusan Kurikulum Material  
-**Status:** Draf Terkendali — Menunggu Persetujuan Formal QC-007  
+**Status:** Draf Terkendali — ketentuan alokasi token digantikan DEC-CUR-002
 **Tanggal Instruksi Pemilik:** 28 Juli 2026  
 **Pemilik Akademik:** Aris Liswanto  
 **Dokumen Induk:** QC-000  
@@ -72,3 +72,8 @@ Audit QJ1-P001–QJ1-P032 menemukan bahwa prinsip pengulangan telah tersedia dal
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 0.1.0-id | 28 Juli 2026 | Draf keputusan murojaah kumulatif, pemerataan huruf–harakat, rasio 50:50, dan Keselarasan Leksikal Qurani |
+
+
+## Adendum Supersesi — 28 Juli 2026
+
+Ketentuan rasio 50:50, 32 token materi saat ini, dan 32 token review tidak lagi berlaku. DEC-CUR-002 menjadi pengendali alokasi: semua identitas huruf dibagi dengan selisih maksimal satu; harakat dibagi seimbang di dalam jatah setiap identitas; materi baru ditekankan melalui urutan dan pengajaran.
