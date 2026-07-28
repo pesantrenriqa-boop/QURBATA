@@ -3,7 +3,7 @@
 **Review-Package-ID:** REV-HAF-QJ1-001  
 **Status:** READY-FOR-EXPERT — KEPUTUSAN BELUM TERSEDIA  
 **Tanggal:** 28 Juli 2026  
-**Cakupan:** kandidat HAF-QJ1-000001–HAF-QJ1-000003; QJ1-P001–P040  
+**Cakupan:** kandidat HAF-000001–HAF-000003; QJ1-P001–P040
 **Mapping:** MAP-HAF-QJ1-001  
 **Rubrik/Form:** RUB-HAF-QJ1-001; FRM-HAF-QJ1-001  
 **Proposal:** PROP-CUR-QJ1-001  
@@ -28,9 +28,9 @@ Ahli diminta menilai:
 
 | Object-ID kandidat | Cakupan | Checkpoint | Status |
 |---|---|---|---|
-| HAF-QJ1-000001 | Al-Fatihah ayat 1–3 | P018 | PROPOSED — INACTIVE |
-| HAF-QJ1-000002 | Al-Fatihah ayat 4–7 | P036 | PROPOSED — INACTIVE |
-| HAF-QJ1-000003 | Al-Fatihah ayat 1–7 sebagai rangkaian | P036 dan P040 | PROPOSED — INACTIVE |
+| HAF-000001 | Al-Fatihah ayat 1–3 | P018 | PROPOSED — INACTIVE |
+| HAF-000002 | Al-Fatihah ayat 4–7 | P036 | PROPOSED — INACTIVE |
+| HAF-000003 | Al-Fatihah ayat 1–7 sebagai rangkaian | P036 dan P040 | PROPOSED — INACTIVE |
 
 ## 3. Sumber Primer yang Diusulkan
 
@@ -166,7 +166,7 @@ Pilih satu:
 | Elemen | Isian |
 |---|---|
 | Keputusan |  |
-| Cakupan objek | HAF-QJ1-000001 / 000002 / 000003 |
+| Cakupan objek | HAF-000001 / 000002 / 000003 |
 | Temuan material |  |
 | Koreksi wajib |  |
 | Syarat tindak lanjut |  |
