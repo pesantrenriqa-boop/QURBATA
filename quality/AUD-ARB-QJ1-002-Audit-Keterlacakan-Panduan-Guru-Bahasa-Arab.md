@@ -83,7 +83,11 @@ AR-SEN-000082–000091 berada pada BAT-ARB-002 dan AR-SEN-000092–000096 berada
 
 AR-FUN-000005–000008 dan metadata dependency untuk seluruh 15 kandidat telah tersedia di BAT-ARB-002/003. Paket penelaahan REV-ARB-QJ1-002 kini siap diisi ahli, tetapi objek belum boleh berpindah dari LANGUAGE-REVIEW sampai nama validator, tanggal, keputusan per butir, koreksi, dan Evidence-ID dicatat.
 
-## 6. Keputusan Audit
+## 6. Penanaman ke 40 File Halaman
+
+Setiap QJ1-P001–P040 kini memuat tepat satu baris `Sentence-ID / Text-ID` dan satu baris `Status sumber bahasa`. Audit pascapenanaman menghasilkan 40/40 hadir, 0 hilang, dan 0 duplikat. Sembilan halaman yang memuat kandidat LANGUAGE-REVIEW atau campuran berlabel eksplisit; halaman gerbang tetap GATE NOT RUN atau bersyarat.
+
+## 7. Keputusan Audit
 
 - Kesenjangan identitas sumber: **DITUTUP**.
 - Keterlacakan 40 halaman: **LULUS**.
