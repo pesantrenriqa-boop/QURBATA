@@ -5,7 +5,9 @@
 **Tanggal:** 28 Juli 2026  
 **Cakupan:** QURBATA Jilid 1–8  
 **Pengendali:** DEC-CUR-003, ACP-QUR-001, MAT-ARB-002, STD-ARB-002  
-**Register terkait:** REG-ARB-001, REG-ARB-002, REG-ARB-003
+**Register terkait:** REG-ARB-001, REG-ARB-002, REG-ARB-003  
+**Rubrik:** RUB-ARB-001  
+**Form bukti:** FRM-ARB-001
 
 ## 1. Fungsi Register
 
@@ -75,7 +77,7 @@ Cycle-ID belum sama dengan Page-ID. Pemetaan final hanya boleh dilakukan setelah
 - jumlah pelajaran per siklus belum ditetapkan;
 - ambang keputusan belum divalidasi;
 - jadwal jeda retensi belum dipilih;
-- bentuk bukti guru/peserta belum dibakukan;
+- template bukti telah tersedia pada FRM-ARB-001 tetapi belum diuji dan belum disahkan;
 - penempatan lisan versus tertulis belum dipetakan;
 - seluruh tiga siklus masih GATE NOT RUN;
 - tidak ada klaim kesiapan final atau efektivitas.
@@ -84,4 +86,5 @@ Cycle-ID belum sama dengan Page-ID. Pemetaan final hanya boleh dilakukan setelah
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.2.0-id | 28 Juli 2026 | Menautkan rubrik keputusan dan template bukti gerbang |
 | 0.1.0-id | 28 Juli 2026 | Register induk untuk tiga siklus pilot dan 20 Gate-Item |
