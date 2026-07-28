@@ -23,7 +23,8 @@
 | kandidat Hafalan 2 | Al-Fatihah ayat 4–7 + murojaah ayat 1–3; PROP-CUR-QJ1-001 | PROPOSED |
 | pemetaan halaman | MAP-HAF-QJ1-001; P001–P040 | COMPLETE-DRAFT |
 | pola akuisisi dan murojaah | sima’, talqin, recall, penyambungan, distributed review, delayed retention | COMPLETE-DRAFT |
-| Hafalan Object-ID | HAF-QJ1-000001–000003 | PROPOSED — INACTIVE |
+| Hafalan Object-ID | HAF-QJ1-000001–000003 terdaftar di REG-CUR-001 | PROPOSED-INACTIVE |
+| Decision Record aktivasi | DEC-CUR-004 | PROPOSED — keputusan/bukti belum diisi |
 | keputusan Pemilik Akademik | setuju/ubah/tolak dan Decision-ID | NOT PROVIDED |
 | teks dan sumber resmi | teks Utsmani, nomor ayat, versi sumber, hak penggunaan | NOT PROVIDED |
 | tashih dan model bacaan | ahli Al-Qur’an/Qira’at, tajwid, waqaf-ibtida’, audio | NOT PROVIDED |
@@ -113,6 +114,7 @@ Kesiapan keluar-Draft berbasis gate saat ini: **2 dari 8 gate makro selesai (25%
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.15.0-id | 28 Juli 2026 | Mendaftarkan HAF-QJ1-000001–000003 sebagai PROPOSED-INACTIVE dan menyiapkan DEC-CUR-004 tanpa mengaktifkan objek |
 | 0.14.0-id | 28 Juli 2026 | Menambahkan REV-HAF-QJ1-001; blocker Tahfidz kini memiliki paket keputusan ahli lengkap tetapi belum memiliki hasil/Evidence-ID |
 | 0.13.0-id | 28 Juli 2026 | Menambahkan rubrik dan form bukti checkpoint Tahfidz P018/P036/P040; validasi dan ambang tetap terbuka |
 | 0.12.0-id | 28 Juli 2026 | Menambahkan MAP-HAF-QJ1-001 dan substatus Tahfidz; pemetaan P001–P040 selesai-draf tanpa menutup keputusan serta validasi ahli |
