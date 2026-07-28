@@ -4,7 +4,7 @@
 **Produk:** Buku QURBATA Jilid 1  
 **Judul Resmi:** Struktur Buku QURBATA Jilid 1  
 **Status:** Draf Terkendali — Belum Disetujui  
-**Versi:** 0.5.0-id  
+**Versi:** 0.6.0-id  
 **Bahasa Induk:** Bahasa Indonesia  
 **Jumlah Halaman Inti:** 40  
 **Sasaran Pengguna:** Peserta didik pemula membaca Al-Qur’an; usia dan kebutuhan spesifik ditetapkan saat validasi pengguna  
@@ -100,7 +100,7 @@ Jilid 1 belum mengajarkan mad, tanwin, sukun, tasydid, atau kaidah tajwid lanjut
 | 30 | QJ1-P030 | Evaluasi Tiga Harakat I | — | Kontras fathah, kasrah, dhammah P001–P029 | Evaluasi 3 |
 | 31 | QJ1-P031 | Dhammah huruf tebal | صُ ضُ طُ ظُ | Keluarga sebelumnya | Latihan |
 | 32 | QJ1-P032 | Dhammah Fa–Lam | فُ قُ كُ لُ | Dhammah sebelumnya | Latihan |
-| 33 | QJ1-P033 | Dhammah Mim–Ya | مُ نُ وُ يُ | Dhammah sebelumnya | Latihan |
+| 33 | QJ1-P033 | Dhammah Mim–Ya dan Hamza Mandiri | ءُ مُ نُ وُ يُ | Dhammah sebelumnya | Latihan |
 | 34 | QJ1-P034 | Integrasi seluruh dhammah | — | Seluruh huruf berdhammah | Penguatan |
 | 35 | QJ1-P035 | Kontras tiga harakat per keluarga | — | Fathah, kasrah, dhammah | Penguatan |
 | 36 | QJ1-P036 | Hafalan 2 | Materi hafalan pendek yang disahkan | Seluruh bunyi Jilid 1 | Hafalan 2 |
@@ -194,3 +194,7 @@ Halaman evaluasi tidak mengenalkan materi baru dan harus mengambil sampel dari s
 - setelah 29 identitas lengkap, setiap huruf memperoleh 2–3 token per halaman;
 - cakupan seluruh kombinasi huruf–harakat dijamin melalui siklus maksimal dua halaman;
 - materi baru diprioritaskan pada posisi dan proses pengajaran, bukan frekuensi berlebih.
+
+## Catatan Penyelesaian P033–P040
+
+QJ1-P033–P040 telah disusun sesuai DEC-CUR-002. P033 menutup bentuk dhammah melalui ءُ مُ نُ وُ يُ dengan gate verifikasi ahli untuk ءُ. P034–P035, P037, P039, dan P040 memakai pemerataan 29 identitas serta rotasi 22:21:21. P036 tetap terblokir BLOCKED-CUR-HAF-002; P038 merupakan unit Akhlak lisan/visual tanpa materi baca baru.
