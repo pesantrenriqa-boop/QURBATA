@@ -11,7 +11,7 @@ from pathlib import Path
 from pypdf import PdfReader
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER
-from reportlab.lib.pagesizes import A4, landscape
+from reportlab.lib.pagesizes import A5, landscape
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
@@ -38,6 +38,7 @@ class PrintPage:
 
 
 SPECIAL_PAGE_CODES = {"QJ1-P018", "QJ1-P028", "QJ1-P036", "QJ1-P038"}
+TRIM_PAGE = landscape(A5)
 
 
 def parse_page(path: Path) -> PrintPage:
@@ -111,9 +112,9 @@ def crop_marks(canvas: Canvas, trim_x: float, trim_y: float, trim_w: float, trim
 
 
 def draw_page(canvas: Canvas, page: PrintPage, bleed: float) -> None:
-    trim_w, trim_h = landscape(A4)
+    trim_w, trim_h = TRIM_PAGE
     trim_x = trim_y = bleed
-    safe = 12 * mm
+    safe = 8 * mm
     content_x = trim_x + safe
     content_y = trim_y + safe
     content_w = trim_w - 2 * safe
@@ -128,22 +129,22 @@ def draw_page(canvas: Canvas, page: PrintPage, bleed: float) -> None:
     ink = colors.HexColor("#17231E")
     pale = colors.HexColor("#F3F8F5")
 
-    header_h = 19 * mm
+    header_h = 15 * mm
     canvas.setFillColor(green)
     canvas.roundRect(content_x, content_y + content_h - header_h, content_w, header_h, 4 * mm, fill=1, stroke=0)
     canvas.setFillColor(colors.white)
-    canvas.setFont("QurbataUI", 9)
-    canvas.drawString(content_x + 6 * mm, content_y + content_h - 7.5 * mm, page.code)
-    canvas.setFont("QurbataUI", 17)
-    canvas.drawString(content_x + 6 * mm, content_y + content_h - 15 * mm, page.title)
+    canvas.setFont("QurbataUI", 6.5)
+    canvas.drawString(content_x + 4 * mm, content_y + content_h - 5.5 * mm, page.code)
+    canvas.setFont("QurbataUI", 11.5)
+    canvas.drawString(content_x + 4 * mm, content_y + content_h - 12 * mm, page.title)
     canvas.setFillColor(orange)
-    canvas.circle(content_x + content_w - 8 * mm, content_y + content_h - header_h / 2, 3.2 * mm, fill=1, stroke=0)
+    canvas.circle(content_x + content_w - 6 * mm, content_y + content_h - header_h / 2, 2.4 * mm, fill=1, stroke=0)
 
-    footer_h = 12 * mm
-    grid_top = content_y + content_h - header_h - 5 * mm
-    grid_bottom = content_y + footer_h + 4 * mm
+    footer_h = 8 * mm
+    grid_top = content_y + content_h - header_h - 3 * mm
+    grid_bottom = content_y + footer_h + 2.5 * mm
     grid_h = grid_top - grid_bottom
-    gap = 3 * mm
+    gap = 2 * mm
     cols, rows = 4, 6
     cell_w = (content_w - (cols - 1) * gap) / cols
     cell_h = (grid_h - (rows - 1) * gap) / rows
@@ -151,8 +152,8 @@ def draw_page(canvas: Canvas, page: PrintPage, bleed: float) -> None:
     arabic_style = ParagraphStyle(
         "ArabicExercise",
         fontName="QurbataArabic",
-        fontSize=25,
-        leading=31,
+        fontSize=18,
+        leading=22,
         alignment=TA_CENTER,
         wordWrap="LTR",
         shaping=1,
@@ -167,16 +168,16 @@ def draw_page(canvas: Canvas, page: PrintPage, bleed: float) -> None:
             canvas.setFillColor(pale if row % 2 == 0 else colors.white)
             canvas.setStrokeColor(colors.HexColor("#B8D3C6"))
             canvas.setLineWidth(0.55)
-            canvas.roundRect(x, y, cell_w, cell_h, 2.4 * mm, fill=1, stroke=1)
+            canvas.roundRect(x, y, cell_w, cell_h, 1.8 * mm, fill=1, stroke=1)
             # Render isolated tokens one by one. This avoids Unicode bidi
             # reordering across whitespace and guarantees that source token 1
             # is visually rightmost, followed by token 2 and token 3.
             tokens = exercise.split()
-            token_gap = 5.5 * mm
+            token_gap = 3.2 * mm
             rendered = []
             for token in tokens:
                 paragraph = Paragraph(token, arabic_style)
-                pw, ph = paragraph.wrap(18 * mm, cell_h - 3 * mm)
+                pw, ph = paragraph.wrap(12 * mm, cell_h - 2 * mm)
                 rendered.append((paragraph, pw, ph))
             total_w = sum(item[1] for item in rendered) + token_gap * (len(rendered) - 1)
             cursor_right = x + (cell_w + total_w) / 2
@@ -185,30 +186,30 @@ def draw_page(canvas: Canvas, page: PrintPage, bleed: float) -> None:
                 paragraph.drawOn(canvas, cursor_right, y + (cell_h - ph) / 2)
                 cursor_right -= token_gap
     else:
-        card_x = content_x + 24 * mm
-        card_y = grid_bottom + 12 * mm
-        card_w = content_w - 48 * mm
-        card_h = grid_h - 24 * mm
+        card_x = content_x + 18 * mm
+        card_y = grid_bottom + 9 * mm
+        card_w = content_w - 36 * mm
+        card_h = grid_h - 18 * mm
         canvas.setFillColor(pale)
         canvas.setStrokeColor(colors.HexColor("#B8D3C6"))
         canvas.setLineWidth(0.8)
         canvas.roundRect(card_x, card_y, card_w, card_h, 5 * mm, fill=1, stroke=1)
         canvas.setFillColor(green)
-        canvas.setFont("QurbataUI", 19)
+        canvas.setFont("QurbataUI", 14)
         canvas.drawCentredString(card_x + card_w / 2, card_y + card_h * 0.62, "HALAMAN KHUSUS")
         canvas.setFillColor(orange)
-        canvas.setFont("QurbataUI", 12)
+        canvas.setFont("QurbataUI", 8.5)
         canvas.drawCentredString(card_x + card_w / 2, card_y + card_h * 0.47, "Materi peserta menunggu keputusan dan pengesahan")
         canvas.setFillColor(colors.HexColor("#68766F"))
-        canvas.setFont("QurbataUI", 9)
+        canvas.setFont("QurbataUI", 6.5)
         canvas.drawCentredString(card_x + card_w / 2, card_y + card_h * 0.34, page.status[:110])
 
     canvas.setFillColor(green)
-    canvas.setFont("QurbataUI", 8.5)
+    canvas.setFont("QurbataUI", 6.2)
     advice = page.advice or "Belajar dengan tenang, teliti, dan sungguh-sungguh."
     canvas.drawString(content_x, content_y + 3.5 * mm, advice[:150])
     canvas.setFillColor(colors.HexColor("#68766F"))
-    canvas.setFont("QurbataUI", 7)
+    canvas.setFont("QurbataUI", 5.5)
     canvas.drawRightString(content_x + content_w, content_y + 3.5 * mm, "QURBATA Jilid 1 • Draf terkendali")
 
 
@@ -219,7 +220,7 @@ def generate(input_dir: Path, output: Path, arabic_font: Path, ui_font: Path, bl
     pages = [parse_page(path) for path in paths]
     register_fonts(arabic_font, ui_font)
     bleed = bleed_mm * mm
-    trim_w, trim_h = landscape(A4)
+    trim_w, trim_h = TRIM_PAGE
     output.parent.mkdir(parents=True, exist_ok=True)
     canvas = Canvas(str(output), pagesize=(trim_w + 2 * bleed, trim_h + 2 * bleed), pageCompression=1)
     canvas.setTitle("QURBATA Jilid 1 - Buku Peserta")
@@ -235,8 +236,8 @@ def preflight(output: Path, pages: list[PrintPage], bleed_mm: float) -> None:
     reader = PdfReader(str(output))
     if len(reader.pages) != len(pages):
         raise ValueError(f"PDF page count mismatch: {len(reader.pages)} != {len(pages)}")
-    expected_w = landscape(A4)[0] + 2 * bleed_mm * mm
-    expected_h = landscape(A4)[1] + 2 * bleed_mm * mm
+    expected_w = TRIM_PAGE[0] + 2 * bleed_mm * mm
+    expected_h = TRIM_PAGE[1] + 2 * bleed_mm * mm
     for index, pdf_page in enumerate(reader.pages, 1):
         width = float(pdf_page.mediabox.width)
         height = float(pdf_page.mediabox.height)
@@ -253,7 +254,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input-dir", type=Path, default=Path("books/jilid-1/pages"))
     parser.add_argument("--output", type=Path, default=Path("output/pdf/QURBATA-Jilid-1-Peserta-print.pdf"))
-    parser.add_argument("--arabic-font", type=Path, default=Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"))
+    parser.add_argument("--arabic-font", type=Path, default=Path("production/print/fonts/AmiriQuran.ttf"))
     parser.add_argument("--ui-font", type=Path, default=Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"))
     parser.add_argument("--bleed-mm", type=float, default=3.0)
     args = parser.parse_args()
