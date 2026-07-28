@@ -30,7 +30,8 @@
 | keputusan ahli kalimat | 15/15 keputusan dan Evidence-ID | NOT PROVIDED |
 | validasi 81 kalimat terdahulu dan tiga teks | bukti ahli bahasa/pedagogi/syar‘i | NOT PROVIDED |
 | model pelafalan/audio resmi | sumber, pengisi suara, review, hak penggunaan | NOT PROVIDED |
-| whitelist literasi silang | audit bentuk Arab guru versus unsur baca setiap halaman | OPEN |
+| batas audiens sumber halaman | 40/40 segmen berlabel GURU dan bukan teks baca peserta; larangan tampil sebelum whitelist/editorial/render | COMPLETE-DRAFT |
+| whitelist literasi silang dan render peserta | audit bentuk Arab guru versus unsur baca setiap halaman pada produk render final | OPEN |
 | gerbang siklus | P010, P020, P028 | 0/3 SIAP; GATE NOT RUN |
 | safeguarding dan uji durasi kelas | bukti pelaksanaan dan tindak lanjut | NOT PROVIDED |
 | otorisasi akademik dan Document Controller | keputusan, tanggal, audit trail | NOT PROVIDED |
@@ -79,7 +80,7 @@ Kesiapan keluar-Draft berbasis gate saat ini: **2 dari 8 gate makro selesai (25%
 
 1. Pemilik Akademik menetapkan materi Hafalan 1 dan Hafalan 2 serta memastikan ruang lingkup review Bahasa Arab.
 2. Ahli Bahasa Arab mengisi REV-ARB-QJ1-002, menilai 81 kalimat terdahulu dan tiga teks, lalu mencatat Evidence-ID.
-3. Ahli memverifikasi ءُ, model pelafalan, batas literasi, dan kandidat leksikal.
+3. Ahli memverifikasi ءُ, model pelafalan, batas literasi, dan kandidat leksikal; editorial/render membuktikan bahwa naskah guru tidak bocor menjadi bacaan peserta.
 4. Pemeriksa akademik menelaah urutan, bentuk, harakat, makhraj, dan beban.
 5. Editorial serta render memeriksa seluruh sumber halaman.
 6. Tim asesmen dan safeguarding mengesahkan rubrik serta kontrol peserta.
@@ -90,6 +91,7 @@ Kesiapan keluar-Draft berbasis gate saat ini: **2 dari 8 gate makro selesai (25%
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.6.0-id | 28 Juli 2026 | Menetapkan batas audiens guru pada 40/40 sumber halaman; audit whitelist produk render tetap terbuka |
 | 0.5.0-id | 28 Juli 2026 | Memecah blocker Bahasa Arab menjadi substatus selesai-draf versus bukti/validasi yang masih terbuka |
 | 0.4.0-id | 28 Juli 2026 | Menautkan pemetaan pilot Bahasa Arab tanpa menutup blocker |
 | 0.3.0-id | 28 Juli 2026 | Menambahkan blocker validasi dan pemetaan Arabic Competency Progression |
