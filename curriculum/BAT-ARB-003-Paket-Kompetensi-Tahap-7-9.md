@@ -17,6 +17,13 @@
 | AR-GRM-000014 | fi‘il amr + pelengkap | AR-STG-009 |
 | AR-GRM-000015 | لَا الناهية + mudhari‘ majzum | AR-STG-009 |
 
+## 1A. Fungsi Komunikasi Tambahan
+
+| Function-ID | Fungsi | Bukti produksi |
+|---|---|---|
+| AR-FUN-000007 | menyatakan tindakan yang telah terjadi | menghasilkan jumlah fi‘liyah madhi sederhana |
+| AR-FUN-000008 | menyatakan tindakan yang sedang/umum terjadi | menghasilkan jumlah fi‘liyah mudhari‘ sederhana |
+
 ## 2. AR-PAT-000010 — Tindakan Kini
 
 | Sentence-ID | Kalimat | Arti |
@@ -82,6 +89,18 @@ Semua objek berikut berstatus **LANGUAGE-REVIEW**. ID tidak sama dengan validasi
 | AR-SEN-000095 | P026 | قَامَ الْوَلَدُ. | Anak laki-laki telah berdiri. | LANGUAGE-REVIEW |
 | AR-SEN-000096 | P028 | يَفْتَحُ الْمُعَلِّمُ الْمُصْحَفَ. | Guru membuka mushaf. | LANGUAGE-REVIEW |
 
+## 5B. Metadata Dependency Kandidat AR-SEN-000092–000096
+
+| Sentence-ID | AR-LEX | AR-FW | AR-GRM | AR-FUN | Stage | Halaman pertama | Risiko utama | Validator/Evidence |
+|---|---|---|---|---|---|---|---|---|
+| AR-SEN-000092 | 000040, 000013 | — | 000013 | 000007 | 8 | P025 | maf‘ul dan vokalisasi akhir | NOT PROVIDED |
+| AR-SEN-000093 | 000041, 000013 | — | 000012 | 000007 | 8 | P025 | kelengkapan makna tanpa maf‘ul | NOT PROVIDED |
+| AR-SEN-000094 | 000042, 000015 | — | 000012 | 000007 | 8 | P026 | naturalitas dan konteks | NOT PROVIDED |
+| AR-SEN-000095 | 000043, 000015 | — | 000012 | 000007 | 8 | P026 | polisemi “berdiri/bangun” | NOT PROVIDED |
+| AR-SEN-000096 | 000036, 000011, 000007 | — | 000011 | 000008 | 7 | P028 | mudhari‘ turunan, objek mushaf, dependency teks | NOT PROVIDED |
+
+AR-SEN-000096 memakai bentuk mudhari‘ dari keluarga AR-LEX-000036 dan bernilai nol terhadap hitungan lema baru. Seluruh validator dan Evidence-ID masih kosong secara sengaja.
+
 **Total Batch 03:** 38 contoh.  
 **Akumulasi Batch 01–03:** 96 Sentence-ID.
 
@@ -114,6 +133,7 @@ Baseline 40 tidak berarti seluruh verba harus masuk Jilid 1. Pemetaan dapat memi
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.4.0-id | 28 Juli 2026 | Menambahkan AR-FUN-000007–000008 dan metadata dependency 5 kandidat; status tetap LANGUAGE-REVIEW |
 | 0.3.0-id | 28 Juli 2026 | Menambahkan 5 kandidat LANGUAGE-REVIEW untuk panduan QJ1; total 38 contoh dan akumulasi 96 |
 | 0.2.0-id | 28 Juli 2026 | Menambahkan AR-SEN-000081 untuk menutup prasyarat AR-TXT-000001; total 33 contoh |
 | 0.1.0-id | 28 Juli 2026 | Tahap 7–9 dengan 32 contoh dan enam asesmen |
