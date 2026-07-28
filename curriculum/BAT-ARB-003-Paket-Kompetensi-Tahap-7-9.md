@@ -31,6 +31,7 @@
 | AR-SEN-000056 | يَخْرُجُ الطَّالِبُ مِنَ الْفَصْلِ. | Pelajar keluar dari ruang kelas. |
 | AR-SEN-000057 | يَشْرَبُ الْوَلَدُ الْمَاءَ. | Anak laki-laki minum air. |
 | AR-SEN-000058 | يَنْظُرُ الطَّالِبُ إِلَى الْكِتَابِ. | Pelajar melihat buku. |
+| AR-SEN-000081 | يَسْمَعُ الطَّالِبُ الْمُعَلِّمَ. | Pelajar mendengar guru. |
 
 ## 3. AR-PAT-000011 — Tindakan Lampau
 
@@ -69,8 +70,8 @@
 | AR-SEN-000079 | لَا تَكْتُبْ فِي الْكِتَابِ. | Jangan menulis di buku. |
 | AR-SEN-000080 | لَا تَذْهَبْ إِلَى الْبَيْتِ. | Jangan pergi ke rumah. |
 
-**Total Batch 03:** 32 contoh.  
-**Akumulasi Batch 01–03:** 80 Sentence-ID.
+**Total Batch 03:** 33 contoh.  
+**Akumulasi Batch 01–03:** 81 Sentence-ID.
 
 ## 6. Asesmen Pilot
 
@@ -101,4 +102,5 @@ Baseline 40 tidak berarti seluruh verba harus masuk Jilid 1. Pemetaan dapat memi
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.2.0-id | 28 Juli 2026 | Menambahkan AR-SEN-000081 untuk menutup prasyarat AR-TXT-000001; total 33 contoh |
 | 0.1.0-id | 28 Juli 2026 | Tahap 7–9 dengan 32 contoh dan enam asesmen |
