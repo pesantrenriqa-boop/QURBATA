@@ -28,6 +28,7 @@
 | teks dan sumber resmi | teks Utsmani, nomor ayat, versi sumber, hak penggunaan | NOT PROVIDED |
 | tashih dan model bacaan | ahli Al-Qur’an/Qira’at, tajwid, waqaf-ibtida’, audio | NOT PROVIDED |
 | rubrik checkpoint | RUB-HAF-QJ1-001 dan FRM-HAF-QJ1-001 untuk P018, P036, dan P040 | COMPLETE-DRAFT |
+| paket validasi ahli | REV-HAF-QJ1-001: sumber, teks, ayat, potongan, audio, mapping, rubrik, safeguarding, dan form keputusan | READY-FOR-EXPERT |
 | safeguarding dan uji beban | durasi lima menit, remedial, penghentian aman | NOT PROVIDED |
 
 Pemetaan halaman mengurangi ketidakjelasan implementasi, tetapi tidak menutup BLOCKED-CUR-HAF-001/002 sebelum keputusan dan bukti ahli tersedia.
@@ -112,6 +113,7 @@ Kesiapan keluar-Draft berbasis gate saat ini: **2 dari 8 gate makro selesai (25%
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.14.0-id | 28 Juli 2026 | Menambahkan REV-HAF-QJ1-001; blocker Tahfidz kini memiliki paket keputusan ahli lengkap tetapi belum memiliki hasil/Evidence-ID |
 | 0.13.0-id | 28 Juli 2026 | Menambahkan rubrik dan form bukti checkpoint Tahfidz P018/P036/P040; validasi dan ambang tetap terbuka |
 | 0.12.0-id | 28 Juli 2026 | Menambahkan MAP-HAF-QJ1-001 dan substatus Tahfidz; pemetaan P001–P040 selesai-draf tanpa menutup keputusan serta validasi ahli |
 | 0.11.0-id | 28 Juli 2026 | Mengubah prototipe ke A5 potret 42 halaman dan menutup audit kebocoran render pada tingkat teknis; finishing/final approval tetap terbuka |
