@@ -3,7 +3,7 @@
 **Register-ID:** REG-ARB-003  
 **Status:** DRAF TERKENDALI  
 **Tanggal:** 28 Juli 2026  
-**Pengendali:** STD-ARB-002  
+**Pengendali:** STD-ARB-002, REG-ARB-004  
 **Cakupan:** seluruh siklus pembelajaran Bahasa Arab QURBATA Jilid 1–8
 
 ## 1. Pola ID
@@ -118,7 +118,7 @@ Arti: Ini ruang kelas yang bersih. Ini jendela yang terbuka. Buku itu berada di 
 | 2 | AR-CYC-000002 | 4–6 | AR-TXT-000003 | BAT-ARB-006 | GATE NOT RUN |
 | 3 | AR-CYC-000003 | 7 | AR-TXT-000001 | BAT-ARB-004 | GATE NOT RUN |
 
-Nomor Text-ID menunjukkan urutan penciptaan register, sedangkan Cycle-ID mengendalikan urutan pedagogis.
+Nomor Text-ID menunjukkan urutan penciptaan register, sedangkan Cycle-ID mengendalikan urutan pedagogis. Status Cycle-ID dikelola pada REG-ARB-004.
 
 ## 9. Aturan Penempatan
 
@@ -142,6 +142,7 @@ Nomor Text-ID menunjukkan urutan penciptaan register, sedangkan Cycle-ID mengend
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.5.0-id | 28 Juli 2026 | Menautkan status Cycle-ID ke REG-ARB-004 |
 | 0.4.0-id | 28 Juli 2026 | Menambahkan microtext Tahap 1–3, paragraf Tahap 4–6, dan urutan tiga siklus pilot |
 | 0.3.0-id | 28 Juli 2026 | Menautkan AR-TXT-000001 ke BAT-ARB-004; gate belum dijalankan |
 | 0.2.0-id | 28 Juli 2026 | Penempatan Text-ID dikunci per siklus setelah gerbang ketuntasan |
