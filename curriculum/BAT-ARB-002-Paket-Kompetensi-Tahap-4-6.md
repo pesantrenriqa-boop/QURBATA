@@ -68,7 +68,24 @@
 | AR-SEN-000047 | هَلْ هٰذَا مَسْجِدٌ؟ نَعَمْ، هٰذَا مَسْجِدٌ. | Apakah ini masjid? Ya, ini masjid. |
 | AR-SEN-000048 | هَلْ هٰذَا بَيْتٌ؟ لَا، هٰذَا مَسْجِدٌ. | Apakah ini rumah? Tidak, ini masjid. |
 
-**Total contoh Batch 02:** 24 kalimat/pasangan.  
+## 6A. Kandidat Tambahan untuk Panduan Guru QJ1
+
+Semua objek berikut berstatus **LANGUAGE-REVIEW**. Pemberian ID menutup gap keterlacakan, bukan mengesahkan validitas bahasa atau kelayakan tahap.
+
+| Sentence-ID | Halaman | Kalimat | Arti | Status |
+|---|---|---|---|---|
+| AR-SEN-000082 | P011 | هٰذَا فَصْلٌ. | Ini ruang kelas. | LANGUAGE-REVIEW |
+| AR-SEN-000083 | P011 | هٰذِهِ غُرْفَةٌ. | Ini ruangan. | LANGUAGE-REVIEW |
+| AR-SEN-000084 | P012 | هٰذِهِ مَدْرَسَةٌ. | Ini sekolah. | LANGUAGE-REVIEW |
+| AR-SEN-000085 | P012 | هٰذِهِ نَافِذَةٌ. | Ini jendela. | LANGUAGE-REVIEW |
+| AR-SEN-000086 | P013 | هٰذَا سَرِيرٌ جَدِيدٌ. | Ini tempat tidur baru. | LANGUAGE-REVIEW |
+| AR-SEN-000087 | P015 | هٰذَا قَلَمٌ صَغِيرٌ. | Ini pena kecil. | LANGUAGE-REVIEW |
+| AR-SEN-000088 | P016 | هٰذَا مَسْجِدٌ قَرِيبٌ. | Ini masjid yang dekat. | LANGUAGE-REVIEW |
+| AR-SEN-000089 | P017 | هٰذَا بَابٌ مَفْتُوحٌ. | Ini pintu yang terbuka. | LANGUAGE-REVIEW |
+| AR-SEN-000090 | P017 | هٰذَا مَسْجِدٌ بَعِيدٌ. | Ini masjid yang jauh. | LANGUAGE-REVIEW |
+| AR-SEN-000091 | P019 | الْقَلَمُ فِي الْحَقِيبَةِ. | Pena berada di dalam tas. | LANGUAGE-REVIEW |
+
+**Total contoh Batch 02:** 34 kalimat/pasangan.  
 **Akumulasi Batch 01–02:** 58 Sentence-ID.
 
 ## 7. Status Unsur
