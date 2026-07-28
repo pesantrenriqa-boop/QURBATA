@@ -47,7 +47,7 @@ Register ini adalah sumber tunggal untuk memastikan hadis akhlak QURBATA bertaha
 
 ## 4. Register Objek
 
-Empat puluh kandidat awal telah dimasukkan melalui BAT-HAD-001 sampai BAT-HAD-005. Tidak ada Hadith-ID yang diaktifkan; semua masih memerlukan takhrij, review penggalan, terjemah, pedagogi, safeguarding, dan keputusan ahli.
+Empat puluh kandidat awal telah dimasukkan melalui BAT-HAD-001 sampai BAT-HAD-005 dan dipetakan melalui MAP-HAD-QJ1-001. Tidak ada Hadith-ID yang diaktifkan; semua masih memerlukan takhrij, review penggalan, terjemah, pedagogi, safeguarding, dan keputusan ahli.
 
 | Hadith-ID | Full-Hadith-ID | Tema | Jilid/Halaman | Sumber | Status |
 |---|---|---|---|---|---|
@@ -121,8 +121,8 @@ Sebelum aktivasi, pemeriksa wajib membandingkan matan lengkap dan kutipan, peraw
 - 40 kandidat Jilid 1 telah tersedia dari kapasitas desain maksimal 320 slot; 280 slot lintas Jilid 2–8 belum memiliki kandidat;
 - sumber dan locator awal tersedia untuk 40/40 kandidat Jilid 1, tetapi standar edisi/locator lintas register belum diputuskan;
 - takhrij, terjemah, whitelist literasi, dan safeguarding belum dijalankan;
-- usulan mapping Hadith-ID ke P001–P040 tersedia, tetapi mapping formal, pola murojaah, dan mapping Jilid 2–8 belum tersedia;
-- Evidence-ID dan Decision-ID belum tersedia.
+- mapping formal kandidat P001–P040 dan pola murojaah berjarak tersedia dalam MAP-HAD-QJ1-001; validasi interval, frekuensi aktual, serta mapping Jilid 2–8 belum tersedia;
+- REV-HAD-QJ1-001 siap diisi ahli, tetapi Reviewer-ID, Evidence-ID, dan Decision-ID belum tersedia.
 
 Karena itu register ini meningkatkan kesiapan arsitektur dan inventaris awal, bukan kesiapan terbit.
 
@@ -130,6 +130,7 @@ Karena itu register ini meningkatkan kesiapan arsitektur dan inventaris awal, bu
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.7.0-id | 29 Juli 2026 | Menambahkan MAP-HAD-QJ1-001 dan REV-HAD-QJ1-001; intro P001–P040 serta jadwal recall tersedia, keputusan ahli tetap 0 APPROVED |
 | 0.6.0-id | 29 Juli 2026 | Menambahkan HAD-000033–000040 melalui BAT-HAD-005; kandidat P001–P040 lengkap, akumulasi 40 SOURCE-CHECK dan 0 APPROVED |
 | 0.5.0-id | 29 Juli 2026 | Menambahkan HAD-000025–000032 melalui BAT-HAD-004; akumulasi 32 SOURCE-CHECK, 0 APPROVED |
 | 0.4.0-id | 29 Juli 2026 | Menambahkan HAD-000017–000024 melalui BAT-HAD-003; akumulasi 24 SOURCE-CHECK, 0 APPROVED |
