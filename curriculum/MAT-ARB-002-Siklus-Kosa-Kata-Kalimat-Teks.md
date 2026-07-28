@@ -5,7 +5,7 @@
 **Tanggal:** 28 Juli 2026  
 **Cakupan:** QURBATA Jilid 1–8  
 **Pengendali:** DEC-CUR-003, ACP-QUR-001, STD-ARB-001, STD-ARB-002  
-**Register:** REG-ARB-001, REG-ARB-002, REG-ARB-003
+**Register:** REG-ARB-001, REG-ARB-002, REG-ARB-003, REG-ARB-004
 
 ## 1. Tujuan
 
@@ -79,7 +79,7 @@ Contoh ini bukan kuota tetap. Siklus dapat diperlambat atau dipercepat berdasark
 | 2 | AR-CYC-000002 | 4–6 | AR-TXT-000003 | BAT-ARB-006 |
 | 3 | AR-CYC-000003 | 7 | AR-TXT-000001 | BAT-ARB-004 |
 
-Ketiga teks tetap berstatus PILOT—BELUM DIPETAKAN dan GATE NOT RUN. Masing-masing baru boleh memperoleh Integration-Lesson-ID final setelah seluruh lema, bentuk, struktur, dan pola dalam auditnya memiliki bukti gerbang SIAP INTEGRASI.
+REG-ARB-004 menjadi sumber kendali status Cycle-ID. Ketiga teks tetap berstatus PILOT—BELUM DIPETAKAN dan GATE NOT RUN. Masing-masing baru boleh memperoleh Integration-Lesson-ID final setelah seluruh lema, bentuk, struktur, dan pola dalam auditnya memiliki bukti gerbang SIAP INTEGRASI.
 
 ## 8. Larangan
 
@@ -99,6 +99,7 @@ Matriks ini belum memetakan Cycle-ID final ke halaman Jilid 1–8. Pemetaan menu
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.4.0-id | 28 Juli 2026 | Menautkan sumber kendali Cycle-ID ke REG-ARB-004 |
 | 0.3.0-id | 28 Juli 2026 | Menetapkan urutan tiga siklus pilot Tahap 1–7 |
 | 0.2.0-id | 28 Juli 2026 | Menautkan implementasi pilot pertama melalui BAT-ARB-004 |
 | 0.1.0-id | 28 Juli 2026 | Siklus pembelajaran dan gerbang ketuntasan sebelum teks ditetapkan sebagai draf terkendali |
