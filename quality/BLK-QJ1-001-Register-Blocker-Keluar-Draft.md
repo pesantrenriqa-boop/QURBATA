@@ -20,7 +20,7 @@
 [PROP-CUR-QJ1-001](https://github.com/pesantrenriqa-boop/QURBATA/blob/feature/qj1-master-structure/quality/PROP-CUR-QJ1-001-Usulan-Materi-Khusus.md) telah menyiapkan rekomendasi terkontrol:
 
 - P018: Surah Al-Fatihah ayat 1–3;
-- P028: rekomendasi tema lama superseded parsial; isi harus diturunkan dari ACP-QUR-001;
+- P028: rekomendasi tema lama superseded parsial; MAP-ARB-QJ1-001 kini menyediakan pemetaan pilot P001–P040 dan kandidat AR-CYC-000003/AR-TXT-000001, tetapi belum divalidasi;
 - P036: Surah Al-Fatihah ayat 4–7 disertai murojaah ayat 1–3.
 
 Proposal belum mengikat dan tidak mengubah status blocker. Pemilik Akademik harus memilih, lalu ahli terkait memverifikasi sumber, teks, vokalisasi, pelafalan, beban, serta kelayakannya.
@@ -67,6 +67,7 @@ Kesiapan keluar-Draft berbasis gate saat ini: **2 dari 8 gate makro selesai (25%
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.4.0-id | 28 Juli 2026 | Menautkan pemetaan pilot Bahasa Arab tanpa menutup blocker |
 | 0.3.0-id | 28 Juli 2026 | Menambahkan blocker validasi dan pemetaan Arabic Competency Progression |
 | 0.2.0-id | 28 Juli 2026 | Menautkan usulan materi khusus tanpa menutup blocker |
 | 0.1.0-id | 28 Juli 2026 | Register blocker dan gate pertama setelah struktur 40/40 selesai |
