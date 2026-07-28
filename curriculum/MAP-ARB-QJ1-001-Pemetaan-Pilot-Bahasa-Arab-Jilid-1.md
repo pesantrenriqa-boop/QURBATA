@@ -6,6 +6,7 @@
 **Cakupan:** segmen Bahasa Arab 5 menit QJ1-P001–QJ1-P040 dan unit khusus QJ1-P028  
 **Pengendali:** CUR-QJ1-001, ACP-QUR-001, MAT-ARB-001, MAT-ARB-002, REG-ARB-004  
 **Panduan pelaksanaan:** [GDE-ARB-QJ1-001](../books/jilid-1/GDE-ARB-QJ1-001-Panduan-Guru-Segmen-Bahasa-Arab-5-Menit.md)  
+**Audit keterlacakan:** [AUD-ARB-QJ1-002](../quality/AUD-ARB-QJ1-002-Audit-Keterlacakan-Panduan-Guru-Bahasa-Arab.md)  
 **Validasi:** VAL-ARB-001  
 **Blocker:** BLOCKED-CUR-ARB-001 dan BLOCKED-CUR-ARB-002
 
@@ -110,6 +111,7 @@ Pemetaan ini menyediakan kandidat operasional untuk P028 dan Jilid 1, tetapi:
 
 - BLOCKED-CUR-ARB-001 tetap OPEN sampai tema, isi, vokalisasi, audio/model, Arabic Learning Object-ID, ahli, dan otorisasi disahkan;
 - BLOCKED-CUR-ARB-002 tetap OPEN sampai ACP-QUR-001, dependency, rubrik, beban, dan pemetaan lintas jilid lulus VAL-ARB-001;
+- 23 bentuk kalimat panduan belum memiliki Sentence-ID persis dan ditahan oleh AUD-ARB-QJ1-002;
 - 0/3 siklus tetap SIAP INTEGRASI sebelum gerbang dijalankan;
 - dokumen ini tidak mengubah PR dari Draft.
 
