@@ -32,8 +32,9 @@
 | model pelafalan/audio resmi | sumber, pengisi suara, review, hak penggunaan | NOT PROVIDED |
 | batas audiens sumber halaman | 40/40 segmen berlabel GURU dan bukan teks baca peserta; larangan tampil sebelum whitelist/editorial/render | COMPLETE-DRAFT |
 | audit silang whitelist sumber | AUD-ARB-QJ1-003; 40/40 segmen HOLD-PARTICIPANT, 0/40 izin teks baca peserta | COMPLETE-DRAFT |
-| otomasi layout cetak | generator, spesifikasi A4 lanskap, bleed, crop marks, grid 4×6, dan preflight | PILOT 1 HALAMAN LULUS |
-| build penuh buku peserta | PDF 40 halaman dari sumber cabang dan audit PNG seluruh halaman | NOT RUN |
+| otomasi layout cetak | generator, spesifikasi A4 lanskap, bleed, crop marks, grid 4×6, halaman khusus, RTL deterministik, dan preflight | COMPLETE-DRAFT |
+| build penuh buku peserta | PDF 40/40; 36×24 butir + 4 halaman khusus; contact sheet diperiksa | TECHNICAL-PASS |
+| persetujuan produksi cetak | font/lisensi final, cover, CMYK, proof fisik, percetakan, Evidence-ID | NOT PROVIDED |
 | whitelist produk render peserta | audit visual kebocoran naskah guru pada PDF/cetak final dan Evidence-ID | OPEN |
 | gerbang siklus | P010, P020, P028 | 0/3 SIAP; GATE NOT RUN |
 | safeguarding dan uji durasi kelas | bukti pelaksanaan dan tindak lanjut | NOT PROVIDED |
@@ -57,7 +58,7 @@ Proposal belum mengikat dan tidak mengubah status blocker. Pemilik Akademik haru
 |---|---:|---|---|
 | GATE-ACA-QJ1 | 39 halaman menunggu pemeriksa akademik | Nama, tanggal, temuan, keputusan, tanda persetujuan | OPEN |
 | GATE-EDT-QJ1 | 39 halaman menunggu pemeriksa editorial | Koreksi bahasa, konsistensi istilah, layout source | OPEN |
-| GATE-RND-QJ1 | pipeline tersedia; pilot QJ1-P001 lulus; build sumber nyata penuh belum dijalankan | Render 40 halaman, font produksi, spasi tidak tersambung, diakritik terbaca, proof print | OPEN — PILOT TEKNIS LULUS |
+| GATE-RND-QJ1 | build 40/40 dan audit internal render lulus; proof serta otorisasi belum tersedia | Font produksi, review 40 halaman, proof fisik, percetakan, Evidence-ID | OPEN — TECHNICAL BUILD PASS |
 | GATE-ASM-QJ1 | 38 halaman memerlukan telaah asesmen | Rubrik, bukti, aturan keputusan, bentuk paralel | OPEN |
 | GATE-SAFE-QJ1 | 40 halaman memerlukan safeguarding | Beban, bahasa rahmah, penghentian aman, non-stigmatisasi | OPEN |
 | GATE-AUTH-QJ1 | 38 halaman menunggu pengesah | Identitas otoritas dan keputusan eksplisit | OPEN |
@@ -94,6 +95,7 @@ Kesiapan keluar-Draft berbasis gate saat ini: **2 dari 8 gate makro selesai (25%
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.9.0-id | 28 Juli 2026 | Build PDF peserta 40/40 lulus teknis; empat halaman khusus dipisahkan; proof dan persetujuan tetap terbuka |
 | 0.8.0-id | 28 Juli 2026 | Menambahkan pipeline layout otomatis dan AUD-PRN-QJ1-001; pilot satu halaman lulus, build penuh belum dijalankan |
 | 0.7.0-id | 28 Juli 2026 | Menutup audit silang sumber melalui AUD-ARB-QJ1-003; 40/40 ditahan dari area baca peserta, audit render tetap terbuka |
 | 0.6.0-id | 28 Juli 2026 | Menetapkan batas audiens guru pada 40/40 sumber halaman; audit whitelist produk render tetap terbuka |
