@@ -27,7 +27,7 @@
 
 **Arti:**
 
-> Ini ruang kelas yang bersih. Pelajar masuk ke ruang kelas. Pelajar duduk di kursi. Guru membuka mushaf. Pelajar membaca buku. Pelajar menyimak guru.
+> Ini ruang kelas yang bersih. Pelajar masuk ke ruang kelas. Pelajar duduk di kursi. Guru membuka mushaf. Pelajar membaca buku. Pelajar mendengar guru.
 
 ## 3. Audit Unsur AR-TXT-000001
 
