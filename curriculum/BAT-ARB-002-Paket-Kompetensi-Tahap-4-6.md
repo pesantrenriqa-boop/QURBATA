@@ -69,7 +69,7 @@
 | AR-SEN-000048 | هَلْ هٰذَا بَيْتٌ؟ لَا، هٰذَا مَسْجِدٌ. | Apakah ini rumah? Tidak, ini masjid. |
 
 **Total contoh Batch 02:** 24 kalimat/pasangan.  
-**Akumulasi Batch 01–02:** 48 Sentence-ID.
+**Akumulasi Batch 01–02:** 58 Sentence-ID.
 
 ## 7. Status Unsur
 
@@ -103,4 +103,5 @@
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.2.0-id | 28 Juli 2026 | Menambahkan 10 kandidat LANGUAGE-REVIEW untuk keterlacakan panduan QJ1; total 34 contoh |
 | 0.1.0-id | 28 Juli 2026 | Tahap 4–6, 24 contoh, dan enam asesmen |
