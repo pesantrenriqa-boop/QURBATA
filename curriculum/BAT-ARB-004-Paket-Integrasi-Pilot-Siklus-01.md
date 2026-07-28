@@ -1,7 +1,7 @@
-# BAT-ARB-004 — Paket Integrasi Pilot Siklus 01
+# BAT-ARB-004 — Paket Integrasi Pilot Tahap 7
 
 **Batch-ID:** BAT-ARB-004  
-**Cycle-ID:** AR-CYC-000001  
+**Cycle-ID:** AR-CYC-000003  
 **Status:** DRAF PILOT — GERBANG BELUM DIJALANKAN  
 **Tanggal:** 28 Juli 2026  
 **Teks tujuan:** AR-TXT-000001  
@@ -56,14 +56,14 @@ AR-SEN-000053 berfungsi sebagai pola; penggantian الْبَابَ menjadi ال�
 
 | Fase | Materi | Bukti calon |
 |---|---|---|
-| A — Akuisisi | 12 lema yang diperlukan teks | AR-EVD-CYC01-A |
-| B — Pemantapan | makna, referen, recall, dan bentuk perlu | AR-EVD-CYC01-B |
-| C — Frasa/pola | sifat, عَلَى, pelaku–tindakan–objek | AR-EVD-CYC01-C |
-| D — Kalimat | enam Sentence-ID prasyarat | AR-EVD-CYC01-D |
-| E — Gerbang | audit reseptif, terbimbing, transfer, dan review | AR-EVD-CYC01-GATE |
+| A — Akuisisi | 12 lema yang diperlukan teks | AR-EVD-CYC03-A |
+| B — Pemantapan | makna, referen, recall, dan bentuk perlu | AR-EVD-CYC03-B |
+| C — Frasa/pola | sifat, عَلَى, pelaku–tindakan–objek | AR-EVD-CYC03-C |
+| D — Kalimat | enam Sentence-ID prasyarat | AR-EVD-CYC03-D |
+| E — Gerbang | audit reseptif, terbimbing, transfer, dan review | AR-EVD-CYC03-GATE |
 | F — Integrasi | AR-TXT-000001 | hanya setelah SIAP INTEGRASI |
-| G — Transfer | retelling dan penggantian unsur | AR-EVD-CYC01-TR |
-| H — Retensi | pemeriksaan tertunda | AR-EVD-CYC01-RET |
+| G — Transfer | retelling dan penggantian unsur | AR-EVD-CYC03-TR |
+| H — Retensi | pemeriksaan tertunda | AR-EVD-CYC03-RET |
 
 Evidence-ID di atas adalah slot bukti calon, bukan bukti yang sudah tersedia.
 
@@ -102,7 +102,7 @@ Satu keberhasilan sesaat tidak cukup untuk mengubah status menjadi SIAP INTEGRAS
 
 ## 7. Blocker
 
-AR-CYC-000001 belum dapat dipetakan final karena:
+AR-CYC-000003 belum dapat dipetakan final karena:
 
 - daftar lema dan tashrif belum lulus review ahli;
 - naturalitas, vokalisasi, dan i‘rab belum disahkan;
