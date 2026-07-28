@@ -34,6 +34,10 @@ class PrintPage:
     exercises: tuple[str, ...]
     advice: str
     status: str
+    kind: str
+
+
+SPECIAL_PAGE_CODES = {"QJ1-P018", "QJ1-P028", "QJ1-P036", "QJ1-P038"}
 
 
 def parse_page(path: Path) -> PrintPage:
@@ -55,17 +59,21 @@ def parse_page(path: Path) -> PrintPage:
         if match:
             exercises.append(match.group(3).strip())
 
-    if len(exercises) != 24:
+    code = heading.group(1)
+    if len(exercises) not in (0, 24):
         raise ValueError(f"{path}: expected 24 exercises/samples, found {len(exercises)}")
+    if not exercises and code not in SPECIAL_PAGE_CODES:
+        raise ValueError(f"{path}: missing participant exercises on a non-special page")
     if any(not ARABIC_RE.search(item) for item in exercises):
         raise ValueError(f"{path}: a participant exercise has no Arabic character")
 
     return PrintPage(
-        code=heading.group(1),
+        code=code,
         title=heading.group(2).strip(),
         exercises=tuple(exercises),
         advice=(advice_match.group(1).strip() if advice_match else ""),
         status=(status_match.group(1).strip() if status_match else "Draf"),
+        kind=("exercise" if exercises else "special"),
     )
 
 
@@ -150,22 +158,50 @@ def draw_page(canvas: Canvas, page: PrintPage, bleed: float) -> None:
         shaping=1,
         textColor=ink,
     )
-    for index, exercise in enumerate(page.exercises):
-        row, logical_col = divmod(index, cols)
-        col = cols - 1 - logical_col
-        x = content_x + col * (cell_w + gap)
-        y = grid_top - (row + 1) * cell_h - row * gap
-        canvas.setFillColor(pale if row % 2 == 0 else colors.white)
+    if page.kind == "exercise":
+        for index, exercise in enumerate(page.exercises):
+            row, logical_col = divmod(index, cols)
+            col = cols - 1 - logical_col
+            x = content_x + col * (cell_w + gap)
+            y = grid_top - (row + 1) * cell_h - row * gap
+            canvas.setFillColor(pale if row % 2 == 0 else colors.white)
+            canvas.setStrokeColor(colors.HexColor("#B8D3C6"))
+            canvas.setLineWidth(0.55)
+            canvas.roundRect(x, y, cell_w, cell_h, 2.4 * mm, fill=1, stroke=1)
+            # Render isolated tokens one by one. This avoids Unicode bidi
+            # reordering across whitespace and guarantees that source token 1
+            # is visually rightmost, followed by token 2 and token 3.
+            tokens = exercise.split()
+            token_gap = 5.5 * mm
+            rendered = []
+            for token in tokens:
+                paragraph = Paragraph(token, arabic_style)
+                pw, ph = paragraph.wrap(18 * mm, cell_h - 3 * mm)
+                rendered.append((paragraph, pw, ph))
+            total_w = sum(item[1] for item in rendered) + token_gap * (len(rendered) - 1)
+            cursor_right = x + (cell_w + total_w) / 2
+            for paragraph, pw, ph in rendered:
+                cursor_right -= pw
+                paragraph.drawOn(canvas, cursor_right, y + (cell_h - ph) / 2)
+                cursor_right -= token_gap
+    else:
+        card_x = content_x + 24 * mm
+        card_y = grid_bottom + 12 * mm
+        card_w = content_w - 48 * mm
+        card_h = grid_h - 24 * mm
+        canvas.setFillColor(pale)
         canvas.setStrokeColor(colors.HexColor("#B8D3C6"))
-        canvas.setLineWidth(0.55)
-        canvas.roundRect(x, y, cell_w, cell_h, 2.4 * mm, fill=1, stroke=1)
-        # ReportLab's RTL line handling reverses whitespace-separated runs.
-        # Reverse the source tokens once so the visual right-to-left order
-        # remains identical to the controlled Markdown exercise.
-        visual_exercise = " ".join(reversed(exercise.split()))
-        paragraph = Paragraph(visual_exercise, arabic_style)
-        pw, ph = paragraph.wrap(cell_w - 5 * mm, cell_h - 3 * mm)
-        paragraph.drawOn(canvas, x + (cell_w - pw) / 2, y + (cell_h - ph) / 2)
+        canvas.setLineWidth(0.8)
+        canvas.roundRect(card_x, card_y, card_w, card_h, 5 * mm, fill=1, stroke=1)
+        canvas.setFillColor(green)
+        canvas.setFont("QurbataUI", 19)
+        canvas.drawCentredString(card_x + card_w / 2, card_y + card_h * 0.62, "HALAMAN KHUSUS")
+        canvas.setFillColor(orange)
+        canvas.setFont("QurbataUI", 12)
+        canvas.drawCentredString(card_x + card_w / 2, card_y + card_h * 0.47, "Materi peserta menunggu keputusan dan pengesahan")
+        canvas.setFillColor(colors.HexColor("#68766F"))
+        canvas.setFont("QurbataUI", 9)
+        canvas.drawCentredString(card_x + card_w / 2, card_y + card_h * 0.34, page.status[:110])
 
     canvas.setFillColor(green)
     canvas.setFont("QurbataUI", 8.5)
