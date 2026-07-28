@@ -32,10 +32,10 @@
 | model pelafalan/audio resmi | sumber, pengisi suara, review, hak penggunaan | NOT PROVIDED |
 | batas audiens sumber halaman | 40/40 segmen berlabel GURU dan bukan teks baca peserta; larangan tampil sebelum whitelist/editorial/render | COMPLETE-DRAFT |
 | audit silang whitelist sumber | AUD-ARB-QJ1-003; 40/40 segmen HOLD-PARTICIPANT, 0/40 izin teks baca peserta | COMPLETE-DRAFT |
-| otomasi layout cetak | generator A5 lanskap, Amiri Quran 1.003, bleed, crop marks, grid 4×6, halaman khusus, RTL deterministik, dan preflight | COMPLETE-DRAFT |
-| build penuh buku peserta | PDF 40/40; 36×24 butir + 4 halaman khusus; contact sheet diperiksa | TECHNICAL-PASS |
+| otomasi layout cetak | generator A5 potret, Amiri Quran 1.003, bleed, crop marks, grid 3×8, cover contoh, identitas, panel integrasi, rekam guru, RTL deterministik, dan preflight | COMPLETE-DRAFT |
+| build penuh buku peserta | PDF 42 halaman: cover + identitas + 36×24 butir + 4 halaman khusus; render diperiksa | TECHNICAL-PASS |
 | persetujuan produksi cetak | proof keterbacaan Amiri Quran 18 pt, cover, CMYK, proof fisik, percetakan, Evidence-ID | NOT PROVIDED |
-| whitelist produk render peserta | audit visual kebocoran naskah guru pada PDF/cetak final dan Evidence-ID | OPEN |
+| whitelist produk render peserta | prototipe A5 potret 42 halaman: 0 kebocoran marker guru; render final dan Evidence-ID tetap diperlukan | PROTOTYPE TECHNICAL-PASS / FINAL OPEN |
 | gerbang siklus | P010, P020, P028 | 0/3 SIAP; GATE NOT RUN |
 | safeguarding dan uji durasi kelas | bukti pelaksanaan dan tindak lanjut | NOT PROVIDED |
 | otorisasi akademik dan Document Controller | keputusan, tanggal, audit trail | NOT PROVIDED |
@@ -95,6 +95,7 @@ Kesiapan keluar-Draft berbasis gate saat ini: **2 dari 8 gate makro selesai (25%
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.11.0-id | 28 Juli 2026 | Mengubah prototipe ke A5 potret 42 halaman dan menutup audit kebocoran render pada tingkat teknis; finishing/final approval tetap terbuka |
 | 0.10.0-id | 28 Juli 2026 | Mengunci A5 lanskap dan Amiri Quran 1.003; build 40/40 serta audit visual ulang lulus teknis |
 | 0.9.0-id | 28 Juli 2026 | Build PDF peserta 40/40 lulus teknis; empat halaman khusus dipisahkan; proof dan persetujuan tetap terbuka |
 | 0.8.0-id | 28 Juli 2026 | Menambahkan pipeline layout otomatis dan AUD-PRN-QJ1-001; pilot satu halaman lulus, build penuh belum dijalankan |
