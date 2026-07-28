@@ -5,6 +5,7 @@
 **Tanggal:** 28 Juli 2026  
 **Objek:** GDE-ARB-QJ1-001 dan MAP-ARB-QJ1-001  
 **Sumber:** LEX-ARB-001–003, BAT-ARB-001–003, REG-ARB-002, REG-ARB-004  
+**Paket ahli:** [REV-ARB-QJ1-002](REV-ARB-QJ1-002-Paket-Validasi-Ahli-15-Kalimat.md)  
 **Keputusan:** PR tetap Draft
 
 ## 1. Hasil Penutupan
@@ -80,7 +81,7 @@ AR-SEN-000082–000091 berada pada BAT-ARB-002 dan AR-SEN-000092–000096 berada
 
 ## 5. Kesiapan Paket Ahli
 
-AR-FUN-000005–000008 dan metadata dependency untuk seluruh 15 kandidat telah tersedia di BAT-ARB-002/003. Paket kini siap dibaca ahli, tetapi belum boleh berpindah dari LANGUAGE-REVIEW sampai nama validator, tanggal, keputusan per butir, koreksi, dan Evidence-ID dicatat.
+AR-FUN-000005–000008 dan metadata dependency untuk seluruh 15 kandidat telah tersedia di BAT-ARB-002/003. Paket penelaahan REV-ARB-QJ1-002 kini siap diisi ahli, tetapi objek belum boleh berpindah dari LANGUAGE-REVIEW sampai nama validator, tanggal, keputusan per butir, koreksi, dan Evidence-ID dicatat.
 
 ## 6. Keputusan Audit
 
