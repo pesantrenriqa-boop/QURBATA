@@ -20,9 +20,9 @@ Dokumen ini adalah wadah keputusan. Keberadaannya tidak berarti pilihan telah di
 
 | Object-ID | Nama kandidat | Cakupan | Status sebelum keputusan |
 |---|---|---|---|
-| HAF-QJ1-000001 | Hafalan 1 — Al-Fatihah ayat 1–3 | P001–P018 | PROPOSED-INACTIVE |
-| HAF-QJ1-000002 | Hafalan 2 — Al-Fatihah ayat 4–7 | P019–P036 | PROPOSED-INACTIVE |
-| HAF-QJ1-000003 | Integrasi dan retensi Al-Fatihah ayat 1–7 | P029–P040 | PROPOSED-INACTIVE |
+| HAF-000001 | Hafalan 1 — Al-Fatihah ayat 1–3 | P001–P018 | PROPOSED-INACTIVE |
+| HAF-000002 | Hafalan 2 — Al-Fatihah ayat 4–7 | P019–P036 | PROPOSED-INACTIVE |
+| HAF-000003 | Integrasi dan retensi Al-Fatihah ayat 1–7 | P029–P040 | PROPOSED-INACTIVE |
 
 ## 3. Pilihan yang Dipertimbangkan
 
