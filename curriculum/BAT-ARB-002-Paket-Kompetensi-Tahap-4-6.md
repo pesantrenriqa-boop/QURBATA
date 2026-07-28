@@ -24,7 +24,7 @@
 | AR-GRM-000008 | هَلْ + jumlah ismiyah | AR-GRM-000001–7 |
 | AR-GRM-000009 | respons نَعَمْ/لَا sederhana | AR-GRM-000008 |
 
-## 3. Contoh Na‘at–Man‘ut
+## 3. Pola AR-PAT-000005 — Na‘at–Man‘ut
 
 | Sentence-ID | Kalimat | Arti |
 |---|---|---|
@@ -37,7 +37,7 @@
 | AR-SEN-000031 | هٰذِهِ مَدْرَسَةٌ كَبِيرَةٌ. | Ini sekolah besar. |
 | AR-SEN-000032 | هٰذِهِ نَافِذَةٌ مَفْتُوحَةٌ. | Ini jendela terbuka. |
 
-## 4. Contoh Lokasi
+## 4. Pola AR-PAT-000006 — Lokasi
 
 | Sentence-ID | Kalimat | Arti |
 |---|---|---|
@@ -48,7 +48,7 @@
 | AR-SEN-000037 | الْمَسْجِدُ قَرِيبٌ. | Masjid itu dekat. |
 | AR-SEN-000038 | الْمَدْرَسَةُ بَعِيدَةٌ. | Sekolah itu jauh. |
 
-## 5. Contoh Idhafah
+## 5. Pola AR-PAT-000007 — Idhafah
 
 | Sentence-ID | Kalimat | Arti |
 |---|---|---|
@@ -57,7 +57,7 @@
 | AR-SEN-000041 | هٰذِهِ حَقِيبَةُ الطَّالِبَةِ. | Ini tas milik pelajar perempuan. |
 | AR-SEN-000042 | هٰذَا بَابُ الْفَصْلِ. | Ini pintu ruang kelas. |
 
-## 6. Tanya–Jawab
+## 6. Pola AR-PAT-000008–000009 — Pertanyaan dan Respons
 
 | Sentence-ID | Kalimat | Arti |
 |---|---|---|
