@@ -14,6 +14,13 @@
 | AR-STG-005 | kepemilikan | peserta memahami dan membentuk idhafah sederhana |
 | AR-STG-006 | interaksi dasar | peserta menanyakan serta mengonfirmasi benda/orang |
 
+## 1A. Fungsi Komunikasi Tambahan
+
+| Function-ID | Fungsi | Bukti produksi |
+|---|---|---|
+| AR-FUN-000005 | mendeskripsikan benda/tempat | menghasilkan nomina + sifat yang sesuai |
+| AR-FUN-000006 | menyatakan lokasi benda | menghasilkan pola lokasi dengan referen sah |
+
 ## 2. Struktur
 
 | Grammar-ID | Struktur | Prasyarat |
@@ -85,6 +92,23 @@ Semua objek berikut berstatus **LANGUAGE-REVIEW**. Pemberian ID menutup gap kete
 | AR-SEN-000090 | P017 | هٰذَا مَسْجِدٌ بَعِيدٌ. | Ini masjid yang jauh. | LANGUAGE-REVIEW |
 | AR-SEN-000091 | P019 | الْقَلَمُ فِي الْحَقِيبَةِ. | Pena berada di dalam tas. | LANGUAGE-REVIEW |
 
+## 6B. Metadata Dependency Kandidat AR-SEN-000082–000091
+
+| Sentence-ID | AR-LEX | AR-FW | AR-GRM | AR-FUN | Stage | Halaman pertama | Risiko utama | Validator/Evidence |
+|---|---|---|---|---|---|---|---|---|
+| AR-SEN-000082 | 000017 | 000001 | 000001–000002 | 000003 | 4 | P011 | batas bentuk demonstratif | NOT PROVIDED |
+| AR-SEN-000083 | 000018 | 000002 | 000001–000002 | 000003 | 4 | P011 | gender dan akhir kata | NOT PROVIDED |
+| AR-SEN-000084 | 000019 | 000002 | 000001–000002 | 000003 | 4 | P012 | gender dan naturalitas | NOT PROVIDED |
+| AR-SEN-000085 | 000020 | 000002 | 000001–000002 | 000003 | 4 | P012 | gender dan akhir kata | NOT PROVIDED |
+| AR-SEN-000086 | 000021, 000022 | 000001 | 000005 | 000005 | 4 | P013 | kesesuaian na‘at–man‘ut | NOT PROVIDED |
+| AR-SEN-000087 | 000002, 000025 | 000001 | 000005 | 000005 | 4 | P015 | konteks sifat “kecil” | NOT PROVIDED |
+| AR-SEN-000088 | 000008, 000028 | 000001 | 000005 | 000005 | 4 | P016 | naturalitas referen jarak | NOT PROVIDED |
+| AR-SEN-000089 | 000003, 000030 | 000001 | 000005 | 000005 | 4 | P017 | bentuk sifat dan konteks | NOT PROVIDED |
+| AR-SEN-000090 | 000008, 000029 | 000001 | 000005 | 000005 | 4 | P017 | naturalitas referen jarak | NOT PROVIDED |
+| AR-SEN-000091 | 000002, 000006 | 000005 | 000006 | 000006 | 4 | P019 | i‘rab majrur dan definiteness | NOT PROVIDED |
+
+Nomor “000xxx” pada kolom dependency dibaca dengan prefiks kolom masing-masing. Seluruh objek tetap LANGUAGE-REVIEW sampai validator dan Evidence-ID diisi.
+
 **Total contoh Batch 02:** 34 kalimat/pasangan.  
 **Akumulasi Batch 01–02:** 58 Sentence-ID.
 
@@ -120,5 +144,6 @@ Semua objek berikut berstatus **LANGUAGE-REVIEW**. Pemberian ID menutup gap kete
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.3.0-id | 28 Juli 2026 | Menambahkan AR-FUN-000005–000006 dan metadata dependency 10 kandidat; status tetap LANGUAGE-REVIEW |
 | 0.2.0-id | 28 Juli 2026 | Menambahkan 10 kandidat LANGUAGE-REVIEW untuk keterlacakan panduan QJ1; total 34 contoh |
 | 0.1.0-id | 28 Juli 2026 | Tahap 4–6, 24 contoh, dan enam asesmen |
