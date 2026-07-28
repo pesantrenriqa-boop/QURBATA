@@ -1,0 +1,104 @@
+# BAT-ARB-003 — Paket Kompetensi Bahasa Arab Tahap 7–9
+
+**Batch-ID:** BAT-ARB-003  
+**Status:** DRAF PILOT — MENUNGGU REVIEW AHLI  
+**Tanggal:** 28 Juli 2026  
+**Kosa kata:** LEX-ARB-001–003  
+**Fokus:** jumlah fi‘liyah kini, lampau, perintah, dan larangan
+
+## 1. Struktur
+
+| Grammar-ID | Struktur | Tahap |
+|---|---|---|
+| AR-GRM-000010 | fi‘il mudhari‘ + fa‘il | AR-STG-007 |
+| AR-GRM-000011 | fi‘il mudhari‘ + fa‘il + maf‘ul/preposisi | AR-STG-007 |
+| AR-GRM-000012 | fi‘il madhi + fa‘il | AR-STG-008 |
+| AR-GRM-000013 | fi‘il madhi + fa‘il + maf‘ul/preposisi | AR-STG-008 |
+| AR-GRM-000014 | fi‘il amr + pelengkap | AR-STG-009 |
+| AR-GRM-000015 | لَا الناهية + mudhari‘ majzum | AR-STG-009 |
+
+## 2. AR-PAT-000010 — Tindakan Kini
+
+| Sentence-ID | Kalimat | Arti |
+|---|---|---|
+| AR-SEN-000049 | يَقْرَأُ الطَّالِبُ الْكِتَابَ. | Pelajar laki-laki membaca buku. |
+| AR-SEN-000050 | يَكْتُبُ الطَّالِبُ بِالْقَلَمِ. | Pelajar menulis dengan pena. |
+| AR-SEN-000051 | يَجْلِسُ الطَّالِبُ عَلَى الْكُرْسِيِّ. | Pelajar duduk di kursi. |
+| AR-SEN-000052 | يَذْهَبُ الْوَلَدُ إِلَى الْمَسْجِدِ. | Anak laki-laki pergi ke masjid. |
+| AR-SEN-000053 | يَفْتَحُ الْمُعَلِّمُ الْبَابَ. | Guru membuka pintu. |
+| AR-SEN-000054 | يُغْلِقُ الْمُعَلِّمُ الْبَابَ. | Guru menutup pintu. |
+| AR-SEN-000055 | يَدْخُلُ الطَّالِبُ الْفَصْلَ. | Pelajar masuk ke ruang kelas. |
+| AR-SEN-000056 | يَخْرُجُ الطَّالِبُ مِنَ الْفَصْلِ. | Pelajar keluar dari ruang kelas. |
+| AR-SEN-000057 | يَشْرَبُ الْوَلَدُ الْمَاءَ. | Anak laki-laki minum air. |
+| AR-SEN-000058 | يَنْظُرُ الطَّالِبُ إِلَى الْكِتَابِ. | Pelajar melihat buku. |
+
+## 3. AR-PAT-000011 — Tindakan Lampau
+
+| Sentence-ID | Kalimat | Arti |
+|---|---|---|
+| AR-SEN-000059 | قَرَأَ الطَّالِبُ الْكِتَابَ. | Pelajar telah membaca buku. |
+| AR-SEN-000060 | كَتَبَ الطَّالِبُ بِالْقَلَمِ. | Pelajar telah menulis dengan pena. |
+| AR-SEN-000061 | جَلَسَ الطَّالِبُ عَلَى الْكُرْسِيِّ. | Pelajar telah duduk di kursi. |
+| AR-SEN-000062 | ذَهَبَ الْوَلَدُ إِلَى الْمَسْجِدِ. | Anak laki-laki telah pergi ke masjid. |
+| AR-SEN-000063 | فَتَحَ الْمُعَلِّمُ الْبَابَ. | Guru telah membuka pintu. |
+| AR-SEN-000064 | أَغْلَقَ الْمُعَلِّمُ الْبَابَ. | Guru telah menutup pintu. |
+| AR-SEN-000065 | دَخَلَ الطَّالِبُ الْفَصْلَ. | Pelajar telah masuk ke ruang kelas. |
+| AR-SEN-000066 | خَرَجَ الطَّالِبُ مِنَ الْفَصْلِ. | Pelajar telah keluar dari ruang kelas. |
+
+## 4. AR-PAT-000012 — Perintah
+
+| Sentence-ID | Kalimat | Arti |
+|---|---|---|
+| AR-SEN-000067 | اِقْرَأِ الْكِتَابَ. | Bacalah buku. |
+| AR-SEN-000068 | اُكْتُبْ بِالْقَلَمِ. | Menulislah dengan pena. |
+| AR-SEN-000069 | اِجْلِسْ عَلَى الْكُرْسِيِّ. | Duduklah di kursi. |
+| AR-SEN-000070 | اِذْهَبْ إِلَى الْمَسْجِدِ. | Pergilah ke masjid. |
+| AR-SEN-000071 | اِفْتَحِ الْبَابَ. | Bukalah pintu. |
+| AR-SEN-000072 | أَغْلِقِ الْبَابَ. | Tutuplah pintu. |
+| AR-SEN-000073 | اُدْخُلِ الْفَصْلَ. | Masuklah ke ruang kelas. |
+| AR-SEN-000074 | اُخْرُجْ مِنَ الْفَصْلِ. | Keluarlah dari ruang kelas. |
+| AR-SEN-000075 | اِشْرَبِ الْمَاءَ. | Minumlah air. |
+
+## 5. AR-PAT-000013 — Larangan
+
+| Sentence-ID | Kalimat | Arti |
+|---|---|---|
+| AR-SEN-000076 | لَا تَفْتَحِ الْبَابَ. | Jangan membuka pintu. |
+| AR-SEN-000077 | لَا تُغْلِقِ الْبَابَ. | Jangan menutup pintu. |
+| AR-SEN-000078 | لَا تَخْرُجْ مِنَ الْفَصْلِ. | Jangan keluar dari ruang kelas. |
+| AR-SEN-000079 | لَا تَكْتُبْ فِي الْكِتَابِ. | Jangan menulis di buku. |
+| AR-SEN-000080 | لَا تَذْهَبْ إِلَى الْبَيْتِ. | Jangan pergi ke rumah. |
+
+**Total Batch 03:** 32 contoh.  
+**Akumulasi Batch 01–03:** 80 Sentence-ID.
+
+## 6. Asesmen Pilot
+
+| Assessment-ID | Tugas |
+|---|---|
+| AR-ASM-000013 | memilih tindakan kini sesuai sima’ |
+| AR-ASM-000014 | mengubah satu contoh mudhari‘ ke madhi |
+| AR-ASM-000015 | mengikuti instruksi amr |
+| AR-ASM-000016 | membedakan amr dan nahi |
+| AR-ASM-000017 | membuat kalimat baru dari verba dan isim tersedia |
+| AR-ASM-000018 | retensi serta transfer setelah jeda |
+
+## 7. Gate Keilmuan
+
+- tashrif dan harakat seluruh verba;
+- hamzat al-washl/qat‘ pada amr;
+- kasrah penghubung dalam bentuk seperti اِقْرَأِ الْكِتَابَ;
+- fungsi بِـ، إِلَى، مِنْ;
+- i‘rab fa‘il, maf‘ul, dan majrur;
+- naturalitas serta kesesuaian usia;
+- kelayakan tahap amr/nahi.
+
+## 8. Gate Pedagogis
+
+Baseline 40 tidak berarti seluruh verba harus masuk Jilid 1. Pemetaan dapat memindahkan sebagian ke jilid berikutnya bila beban, literasi, atau dependency tidak sesuai.
+
+## 9. Riwayat
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 0.1.0-id | 28 Juli 2026 | Tahap 7–9 dengan 32 contoh dan enam asesmen |
