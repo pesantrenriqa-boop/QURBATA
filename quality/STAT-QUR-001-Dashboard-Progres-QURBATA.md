@@ -18,7 +18,7 @@
 | Halaman buku formal tersedia | **40 halaman Jilid 1** |
 | Jilid 2–8 dengan halaman formal | **0 dari 7 jilid** |
 
-Angka 31% tidak boleh dibaca sebagai “Jilid 1 sudah 30%”. Angka itu adalah gabungan berbobot seluruh proyek 8 jilid. Angka 25% hanya mengukur gate keluar-Draft Jilid 1.
+Angka 31% tidak boleh dibaca sebagai “Jilid 1 sudah 31%”. Angka itu adalah gabungan berbobot seluruh proyek 8 jilid. Angka 25% hanya mengukur gate keluar-Draft Jilid 1.
 
 ## 2. Definisi QURBATA 100%
 
