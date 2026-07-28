@@ -111,7 +111,7 @@ Ketentuan:
 
 ## 6B. Teks Kumulatif Terintegrasi
 
-Setiap pelajaran Bahasa Arab harus mempunyai satu Text-ID dari REG-ARB-003. Pada tahap awal Text-ID dapat berupa microtext; panjang berkembang mengikuti inventaris dan kemampuan.
+Setiap siklus Bahasa Arab harus berujung pada satu Text-ID dari REG-ARB-003 setelah kosa kata, bentuk, dan struktur prasyarat berstatus SIAP INTEGRASI. Pelajaran akuisisi sebelum gerbang tidak wajib mempunyai paragraf. Teks tidak menunggu seluruh kosa kata satu jilid selesai; gerbang berlaku per unit kompetensi.
 
 Ketentuan:
 
@@ -120,7 +120,23 @@ Ketentuan:
 - berfungsi sebagai latihan menyimak, memahami, membaca bila diizinkan, berbicara, retensi, dan transfer;
 - tema mengintegrasikan akhlak, kandungan Al-Qur’an/hadis, atau komunikasi umum;
 - kutipan langsung dan parafrasa dibedakan secara eksplisit;
-- STD-ARB-002 mengendalikan sumber, whitelist, dan gate.
+- STD-ARB-002 mengendalikan sumber, whitelist, dan gate;
+- MAT-ARB-002 mengendalikan urutan akuisisi → latihan → pemeriksaan ketuntasan → teks → transfer → murojaah berjarak.
+
+## 6C. Siklus Kosa Kata–Kalimat–Teks
+
+Urutan minimum satu siklus:
+
+1. pengenalan kosa kata dan makna;
+2. latihan reseptif serta pengucapan;
+3. penggunaan dalam frasa/pola;
+4. penggunaan dalam contoh kalimat;
+5. pemeriksaan ketuntasan prasyarat;
+6. microtext/paragraf kumulatif;
+7. pemahaman, retelling, dan transfer;
+8. murojaah berjarak pada siklus berikutnya.
+
+Jika langkah 5 belum berstatus SIAP INTEGRASI, guru melakukan remedial dan tidak menambahkan Text-ID baru.
 
 ## 7. Dependency Kritis
 
@@ -170,4 +186,5 @@ Referensi merupakan dasar pembanding, bukan adopsi otomatis. ACP-QUR-001 harus d
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.2.0-id | 28 Juli 2026 | Menambahkan gerbang ketuntasan dan siklus kosa kata–kalimat–teks |
 | 0.1.0-id | 28 Juli 2026 | Struktur induk 20 tahap dan kebijakan kosa kata |
