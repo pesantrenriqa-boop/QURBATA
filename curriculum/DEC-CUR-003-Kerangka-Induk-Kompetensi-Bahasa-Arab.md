@@ -28,6 +28,12 @@ Urutan kosa kata, susunan kalimat, sharaf, nahwu, fungsi komunikasi, dan Bahasa 
 10. Setiap objek Bahasa Arab wajib mempunyai ID, prasyarat, outcome, bukti, sumber, halaman pengenalan, halaman murojaah, dan status validasi.
 11. Struktur final hanya boleh dibekukan setelah review ahli Bahasa Arab/TAFL, ahli nahwu–sharaf, ahli Al-Qur’an/hadis, penelaah asesmen, dan safeguarding.
 
+## 2A. Interpretasi Mengikat yang Diusulkan
+
+Bahasa Arab QURBATA bukan program hafalan daftar kosa kata. Target lema berfungsi untuk mengendalikan cakupan dan mencegah duplikasi pengenalan. Penguasaan dibuktikan melalui penggunaan kosa kata dalam frasa, kalimat, dialog, wacana, dan pemahaman teks sesuai kaidah serta fungsi bahasa.
+
+STD-ARB-001 dan REG-ARB-002 menjadi pengendali contoh kalimat. Kemunculan ulang suatu lema di dalam contoh merupakan pemeliharaan, bukan penambahan hitungan.
+
 ## 3. Non-Keputusan
 
 Dokumen ini belum:
