@@ -85,12 +85,16 @@ AR-FUN-000005–000008 dan metadata dependency untuk seluruh 15 kandidat telah t
 
 ## 6. Penanaman ke 40 File Halaman
 
-Setiap QJ1-P001–P040 kini memuat tepat satu baris `Sentence-ID / Text-ID` dan satu baris `Status sumber bahasa`. Audit pascapenanaman menghasilkan 40/40 hadir, 0 hilang, dan 0 duplikat. Sembilan halaman yang memuat kandidat LANGUAGE-REVIEW atau campuran berlabel eksplisit; halaman gerbang tetap GATE NOT RUN atau bersyarat.
+Setiap QJ1-P001–P040 kini memuat tepat satu baris `Sentence-ID / Text-ID`, satu baris `Status sumber bahasa`, satu label `Audience materi Arab: GURU`, dan satu `Aturan tampilan peserta`. Audit pascapenanaman menghasilkan **40/40 lulus**, 0 hilang, dan 0 duplikat untuk keempat kendali. Sembilan halaman yang memuat kandidat LANGUAGE-REVIEW atau campuran berlabel eksplisit; halaman gerbang tetap GATE NOT RUN atau bersyarat.
+
+Batas sumber kini eksplisit: segmen Arab adalah naskah lisan guru, bukan teks baca peserta. Materi tersebut dilarang dicetak atau ditampilkan sebagai bacaan peserta sebelum seluruh unsur lulus whitelist literasi halaman dan keputusan editorial/render dicatat. Penanaman batas ini berstatus **COMPLETE-DRAFT**; kepatuhan pada produk render akhir masih **OPEN**.
 
 ## 7. Keputusan Audit
 
 - Kesenjangan identitas sumber: **DITUTUP**.
 - Keterlacakan 40 halaman: **LULUS**.
+- Batas audiens pada sumber 40/40: **COMPLETE-DRAFT**.
+- Audit whitelist pada render buku peserta: **OPEN — BELUM ADA BUKTI RENDER FINAL**.
 - Validasi isi 15 kandidat: **BELUM LULUS — LANGUAGE-REVIEW**.
 - Gerbang integrasi: **0/3 SIAP; GATE NOT RUN**.
 - BLOCKED-CUR-ARB-001 dan BLOCKED-CUR-ARB-002: **tetap OPEN**.
