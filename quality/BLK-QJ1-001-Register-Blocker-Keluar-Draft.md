@@ -13,7 +13,7 @@
 | BLOCKED-CUR-ARB-001 | QJ1-P001–P040/P028 | Validasi ahli atas model bahasa dan AR-SEN-000082–000096, model pelafalan, batas literasi, keputusan gerbang, Arabic Learning Object-ID, serta otorisasi | Pemilik Akademik + ahli Bahasa Arab | OPEN — PRODUK SIAP REVIEW |
 | BLOCKED-CUR-ARB-002 | Jilid 1–8 | Validasi ACP-QUR-001 dan pemetaan Stage-ID/AR-LEX/AR-GRM/AR-FUN/AR-ASM ke jilid dan halaman | Pemilik Akademik + panel ahli | OPEN |
 | BLOCKED-CUR-HAF-002 | QJ1-P036 | Teks Hafalan 2, sumber, batas potongan, model bacaan, Hafalan Object-ID, pengesah | Pemilik Akademik + ahli | OPEN |
-| BLOCKED-CUR-HAD-001 | Jilid 1–8 | Inventaris hadis akhlak sahih, audit keunikan Full-Hadith-ID, takhrij, terjemah, mapping halaman, whitelist, asesmen, dan otorisasi | Pemilik Akademik + ahli hadis/syar‘i | OPEN — ARSITEKTUR SIAP, OBJEK BELUM DIISI |
+| BLOCKED-CUR-HAD-001 | Jilid 1–8 | Inventaris hadis akhlak sahih, audit keunikan Full-Hadith-ID, takhrij, terjemah, mapping halaman, whitelist, asesmen, dan otorisasi | Pemilik Akademik + ahli hadis/syar‘i | OPEN — KANDIDAT JILID 1 LENGKAP, VALIDASI BELUM ADA |
 | BLOCKED-ORTHO-QJ1-001 | QJ1-P033 | Verifikasi fungsi, penulisan, dan penyajian ءُ dalam urutan Jilid 1 | Ahli Bahasa Arab/Qira’at | OPEN |
 
 ## 1A. Substatus Blocker Tahfidz
@@ -70,10 +70,10 @@ COMPLETE-DRAFT berarti artefak telah tersedia dan terlacak, bukan telah divalida
 | progression Jilid 1–8 | HCP-QUR-001 | COMPLETE-DRAFT |
 | sumber tunggal dan skema deduplikasi | REG-HAD-001 | COMPLETE-DRAFT |
 | kapasitas desain | sampai 320 slot; kuota final belum disahkan | CONTROLLED-ASSUMPTION |
-| kandidat Hadith-ID | HAD-000001–000032 dalam BAT-HAD-001–004; 32 kandidat, 0 aktif | SOURCE-CHECK |
-| sumber dan metadata grading awal | 32/32 memiliki locator awal; takhrij/edisi final belum disahkan | PARTIAL — EXPERT REVIEW OPEN |
+| kandidat Hadith-ID | HAD-000001–000040 dalam BAT-HAD-001–005; 40 kandidat, 0 aktif | SOURCE-CHECK |
+| sumber dan metadata grading awal | 40/40 memiliki locator awal; takhrij/edisi final belum disahkan | COMPLETE-CANDIDATE / EXPERT REVIEW OPEN |
 | terjemah, whitelist, asesmen, safeguarding | belum ada | NOT PROVIDED |
-| mapping halaman Jilid 1–8 | usulan P001–P032 tersedia; mapping formal dan P033–J8 belum ada | PARTIAL-DRAFT |
+| mapping halaman Jilid 1–8 | usulan P001–P040 tersedia; mapping formal, pola murojaah, dan Jilid 2–8 belum ada | COMPLETE-CANDIDATE / FORMAL-MAP OPEN |
 | review ahli, Evidence-ID, Decision-ID | belum ada | NOT PROVIDED |
 
 Arsitektur menutup gap definisi dan kontrol, tetapi tidak menutup BLOCKED-CUR-HAD-001 sebelum objek nyata, takhrij, validasi, dan otorisasi tersedia.
@@ -134,6 +134,7 @@ Persentase keseluruhan proyek QURBATA Jilid 1–8 dicatat terpisah dalam `STAT-Q
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.23.0-id | 29 Juli 2026 | Menambahkan BAT-HAD-005 dan HAD-000033–000040; kandidat Jilid 1 lengkap 40/40, 0 APPROVED; audit ahli dan mapping murojaah tetap OPEN |
 | 0.22.0-id | 29 Juli 2026 | Menambahkan BAT-HAD-004 dan HAD-000025–000032; akumulasi 32 kandidat, 0 APPROVED |
 | 0.21.0-id | 29 Juli 2026 | Menambahkan BAT-HAD-003 dan HAD-000017–000024; akumulasi 24 kandidat, 0 APPROVED |
 | 0.20.0-id | 29 Juli 2026 | Menambahkan BAT-HAD-002 dan HAD-000009–000016; akumulasi 16 kandidat, 0 APPROVED |
