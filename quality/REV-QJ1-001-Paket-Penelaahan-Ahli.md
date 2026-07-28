@@ -53,6 +53,8 @@ Ahli harus memilih salah satu:
 
 Wajib ditetapkan: teks, sumber, batas potongan, tujuan, model bacaan, Hafalan Object-ID, pemilik akademik, dan pengesah.
 
+Gunakan `REV-HAF-QJ1-001` sebagai paket keputusan rinci untuk P018, P036, mapping P001–P040, serta rubrik checkpoint.
+
 ### QJ1-P028 — Bahasa Arab 1
 
 Wajib ditetapkan: tema, tujuan komunikatif, mufradat, vokalisasi, makna, konteks, model pelafalan, Arabic Learning Object-ID, ahli Bahasa Arab, dan pengesah.
@@ -118,4 +120,5 @@ Paket ini selesai hanya jika:
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.2.0-id | 28 Juli 2026 | Menautkan paket validasi khusus Tahfidz REV-HAF-QJ1-001 |
 | 0.1.0-id | 28 Juli 2026 | Paket penelaahan ahli pertama untuk QJ1-P001–P040 |
