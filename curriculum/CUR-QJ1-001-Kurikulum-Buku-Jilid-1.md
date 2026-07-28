@@ -4,7 +4,7 @@
 **Judul:** Kurikulum Buku QURBATA Jilid 1  
 **Bahasa Induk:** Bahasa Indonesia  
 **Status:** Draf Terkendali — Belum Disetujui  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Pemilik Akademik/Penyusun:** Aris Liswanto  
 **Pemeriksa Akademik:** Menunggu penetapan  
 **Pemeriksa Asesmen:** Menunggu penetapan  
@@ -198,3 +198,14 @@ CUR-QJ1-001 dan QJ1-MASTER belum boleh berstatus berlaku sebelum:
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 0.1.0-id | 27 Juli 2026 | Kurikulum pengendali Jilid 1 dibentuk untuk memastikan keterlacakan konstitusi–kurikulum–buku |
+
+
+## 6C. Pemerataan Mutlak — DEC-CUR-002
+
+1. Semua identitas huruf yang telah dipelajari hadir di setiap halaman baca berikutnya.
+2. Jumlah antarahuruf berbeda maksimal satu token.
+3. Harakat dibagi seimbang di dalam jatah tiap identitas; bentuk yang belum diajarkan tetap dilarang.
+4. Materi baru mendapat penekanan pada posisi tangga, talqin, dan talaqqi, bukan dominasi jumlah.
+5. Setelah 29 identitas selesai, setiap identitas muncul dua atau tiga kali pada halaman 64 token.
+6. Kombinasi huruf–harakat penuh ditutup melalui siklus maksimal dua halaman.
+7. DEC-CUR-002 menggantikan ketentuan alokasi 50:50 dalam DEC-CUR-001.
