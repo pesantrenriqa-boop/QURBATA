@@ -5,6 +5,7 @@
 **Tanggal:** 28 Juli 2026  
 **Cakupan:** segmen Bahasa Arab 5 menit QJ1-P001–QJ1-P040 dan unit khusus QJ1-P028  
 **Pengendali:** CUR-QJ1-001, ACP-QUR-001, MAT-ARB-001, MAT-ARB-002, REG-ARB-004  
+**Panduan pelaksanaan:** [GDE-ARB-QJ1-001](../books/jilid-1/GDE-ARB-QJ1-001-Panduan-Guru-Segmen-Bahasa-Arab-5-Menit.md)  
 **Validasi:** VAL-ARB-001  
 **Blocker:** BLOCKED-CUR-ARB-001 dan BLOCKED-CUR-ARB-002
 
@@ -128,9 +129,14 @@ Bagian “Segmen Bahasa Arab 5 Menit — Pilot” telah ditanamkan pada QJ1-P001
 - Document Controller;
 - otoritas akademik.
 
-## 10. Riwayat
+## 10. Turunan Operasional
+
+Pemetaan ini dilaksanakan melalui [GDE-ARB-QJ1-001](../books/jilid-1/GDE-ARB-QJ1-001-Panduan-Guru-Segmen-Bahasa-Arab-5-Menit.md), yang memuat pembagian waktu, model guru, respons peserta, murojaah, transfer, dan pencatatan bukti untuk P001–P040. Panduan tersebut tetap pilot dan tidak mengubah status gerbang maupun blocker.
+
+## 11. Riwayat
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.3.0-id | 28 Juli 2026 | Menautkan panduan guru operasional GDE-ARB-QJ1-001 dan keterlacakan 40 halaman |
 | 0.2.0-id | 28 Juli 2026 | Menanamkan segmen pilot ke seluruh 40 file halaman |
 | 0.1.0-id | 28 Juli 2026 | Pemetaan provisional segmen Bahasa Arab 5 menit pada 40 halaman Jilid 1 |
