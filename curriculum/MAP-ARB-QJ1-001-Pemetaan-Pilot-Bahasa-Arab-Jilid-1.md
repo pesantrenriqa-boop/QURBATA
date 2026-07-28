@@ -1,7 +1,7 @@
 # MAP-ARB-QJ1-001 — Pemetaan Pilot Bahasa Arab QURBATA Jilid 1
 
 **Mapping-ID:** MAP-ARB-QJ1-001  
-**Status:** USULAN TERKENDALI — BELUM FINAL  
+**Status:** USULAN TERKENDALI — TERTANAM 40/40, BELUM FINAL  
 **Tanggal:** 28 Juli 2026  
 **Cakupan:** segmen Bahasa Arab 5 menit QJ1-P001–QJ1-P040 dan unit khusus QJ1-P028  
 **Pengendali:** CUR-QJ1-001, ACP-QUR-001, MAT-ARB-001, MAT-ARB-002, REG-ARB-004  
@@ -112,7 +112,11 @@ Pemetaan ini menyediakan kandidat operasional untuk P028 dan Jilid 1, tetapi:
 - 0/3 siklus tetap SIAP INTEGRASI sebelum gerbang dijalankan;
 - dokumen ini tidak mengubah PR dari Draft.
 
-## 8. Review Wajib
+## 8. Status Implementasi Halaman
+
+Bagian “Segmen Bahasa Arab 5 Menit — Pilot” telah ditanamkan pada QJ1-P001–QJ1-P040. Penanaman 40/40 berarti keterlacakan desain tersedia, bukan berarti isi telah divalidasi, gerbang telah dijalankan, atau halaman siap uji.
+
+## 9. Review Wajib
 
 - ahli TAFL/Bahasa Arab;
 - ahli nahwu–sharaf;
@@ -124,8 +128,9 @@ Pemetaan ini menyediakan kandidat operasional untuk P028 dan Jilid 1, tetapi:
 - Document Controller;
 - otoritas akademik.
 
-## 9. Riwayat
+## 10. Riwayat
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.2.0-id | 28 Juli 2026 | Menanamkan segmen pilot ke seluruh 40 file halaman |
 | 0.1.0-id | 28 Juli 2026 | Pemetaan provisional segmen Bahasa Arab 5 menit pada 40 halaman Jilid 1 |
