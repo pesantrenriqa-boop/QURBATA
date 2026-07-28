@@ -100,6 +100,8 @@ Jumlah berasal dari audit metadata otomatis dan harus dikonfirmasi Document Cont
 
 Kesiapan keluar-Draft berbasis gate saat ini: **2 dari 8 gate makro selesai (25%)**. Angka ini bukan persentase efektivitas buku atau persentase keseluruhan proyek QURBATA.
 
+Persentase keseluruhan proyek QURBATA Jilid 1–8 dicatat terpisah dalam `STAT-QUR-001`; baseline 28 Juli 2026 adalah **30%**.
+
 ## 5. Urutan Tindak Lanjut
 
 1. Pemilik Akademik menilai kandidat dan MAP-HAF-QJ1-001, lalu menetapkan atau mengubah materi Hafalan 1 dan Hafalan 2 serta memastikan ruang lingkup review Bahasa Arab.
@@ -115,6 +117,7 @@ Kesiapan keluar-Draft berbasis gate saat ini: **2 dari 8 gate makro selesai (25%
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.17.0-id | 28 Juli 2026 | Menautkan dashboard STAT-QUR-001: progres keseluruhan QURBATA 30%, terpisah dari kesiapan Jilid 1 25% |
 | 0.16.0-id | 28 Juli 2026 | Menutup inkonsistensi format Object-ID menjadi HAF-000001–000003 dan menambahkan AUD-HAF-QJ1-001 |
 | 0.15.0-id | 28 Juli 2026 | Mendaftarkan HAF-000001–000003 sebagai PROPOSED-INACTIVE dan menyiapkan DEC-CUR-004 tanpa mengaktifkan objek |
 | 0.14.0-id | 28 Juli 2026 | Menambahkan REV-HAF-QJ1-001; blocker Tahfidz kini memiliki paket keputusan ahli lengkap tetapi belum memiliki hasil/Evidence-ID |
