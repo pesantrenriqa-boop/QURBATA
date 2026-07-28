@@ -1,7 +1,7 @@
 # REG-HAD-001 — Master Hadis Akhlak QURBATA
 
 **Register-ID:** REG-HAD-001  
-**Status:** DRAF TERKENDALI — REGISTER KOSONG TERSTRUKTUR  
+**Status:** DRAF TERKENDALI — 8 KANDIDAT SOURCE-CHECK; 0 APPROVED  
 **Tanggal:** 29 Juli 2026  
 **Pengendali:** HCP-QUR-001  
 **Cakupan:** Jilid 1–8
@@ -47,11 +47,18 @@ Register ini adalah sumber tunggal untuk memastikan hadis akhlak QURBATA bertaha
 
 ## 4. Register Objek
 
-Belum ada Hadith-ID yang diaktifkan. Kandidat pertama hanya boleh dimasukkan setelah sumber dan mekanisme takhrij disepakati.
+Delapan kandidat awal telah dimasukkan melalui BAT-HAD-001. Tidak ada Hadith-ID yang diaktifkan; semua masih memerlukan takhrij, review penggalan, terjemah, pedagogi, safeguarding, dan keputusan ahli.
 
 | Hadith-ID | Full-Hadith-ID | Tema | Jilid/Halaman | Sumber | Status |
 |---|---|---|---|---|---|
-| — | — | — | — | — | REGISTER READY; NO CANDIDATE ENTERED |
+| HAD-000001 | FHD-000001 | kasih sayang | J1/P001 usulan | Bukhari 6013; Muslim 2319 | SOURCE-CHECK |
+| HAD-000002 | FHD-000002 | ucapan baik | J1/P002 usulan | Bukhari 2989; Muslim 1009 | SOURCE-CHECK / EXCERPT |
+| HAD-000003 | FHD-000003 | bersuci dan kebersihan | J1/P003 usulan | Muslim 223 | SOURCE-CHECK / EXCERPT |
+| HAD-000004 | FHD-000004 | wajah ramah | J1/P004 usulan | Tirmidzi 1956; Ibn Hibban 529 | SOURCE-CHECK / VARIANT |
+| HAD-000005 | FHD-000005 | haya’ terpuji | J1/P005 usulan | Bukhari 6117; Muslim 37 | SOURCE-CHECK |
+| HAD-000006 | FHD-000006 | kelembutan | J1/P006 usulan | Muslim 2593; Bukhari 6927 | SOURCE-CHECK / EXCERPT |
+| HAD-000007 | FHD-000007 | salam | J1/P007 usulan | Muslim 54 | SOURCE-CHECK / EXCERPT |
+| HAD-000008 | FHD-000008 | kebaikan kecil | J1/P008 usulan | Muslim 2626 | SOURCE-CHECK / OVERLAP-REVIEW |
 
 ## 5. Register Tema Awal
 
@@ -79,10 +86,17 @@ Sebelum aktivasi, pemeriksa wajib membandingkan matan lengkap dan kutipan, peraw
 ## 7. Blocker Awal
 
 - pemilik akademik belum menetapkan panel ahli hadis/syar‘i;
-- daftar kandidat 320 slot belum disusun;
-- sumber teks/edisi dan standar locator belum diputuskan;
+- baru 8 kandidat dari kapasitas desain maksimal 320 slot yang tersedia; 312 slot belum memiliki kandidat;
+- sumber dan locator awal tersedia untuk 8 kandidat, tetapi standar edisi/locator lintas register belum diputuskan;
 - takhrij, terjemah, whitelist literasi, dan safeguarding belum dijalankan;
 - mapping Hadith-ID ke halaman Jilid 1–8 belum tersedia;
 - Evidence-ID dan Decision-ID belum tersedia.
 
-Karena itu register ini meningkatkan kesiapan arsitektur, bukan kesiapan terbit.
+Karena itu register ini meningkatkan kesiapan arsitektur dan inventaris awal, bukan kesiapan terbit.
+
+## 8. Riwayat
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 0.2.0-id | 29 Juli 2026 | Menambahkan HAD-000001–000008 melalui BAT-HAD-001; seluruhnya SOURCE-CHECK dan HOLD-PARTICIPANT |
+| 0.1.0-id | 29 Juli 2026 | Membentuk register kosong terstruktur |
