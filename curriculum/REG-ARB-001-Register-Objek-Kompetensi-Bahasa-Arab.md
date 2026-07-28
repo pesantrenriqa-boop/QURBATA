@@ -21,6 +21,9 @@ Mencegah duplikasi, lompatan prasyarat, dan hitungan semu pada progression Bahas
 | fungsi komunikasi | AR-FUN-xxxxxx | AR-FUN-000001 |
 | tugas asesmen | AR-ASM-xxxxxx | AR-ASM-000001 |
 | bukti validasi | AR-EVD-xxxxxx | AR-EVD-000001 |
+| pola kalimat | AR-PAT-xxxxxx | AR-PAT-000001 |
+| contoh kalimat | AR-SEN-xxxxxx | AR-SEN-000001 |
+| dialog | AR-DLG-xxxxxx | AR-DLG-000001 |
 
 ## 3. Skema Lema
 
@@ -92,8 +95,17 @@ Setiap AR-GRM wajib memuat:
 - partikel berulang tetap satu objek;
 - perubahan vokalisasi yang mengubah lema/fungsi harus diputuskan ahli.
 
+## 6A. Hubungan dengan Master Kalimat
+
+- STD-ARB-001 mengendalikan aturan pembentukan contoh.
+- REG-ARB-002 menyimpan frasa, kalimat, dialog, dan teks.
+- Setiap AR-LEX harus dapat ditelusuri ke contoh pemakaian.
+- Setiap AR-GRM harus mempunyai Pattern-ID dan contoh reseptif, produktif, serta transfer.
+- Pengulangan lema dalam contoh tidak menambah hitungan kosa kata.
+
 ## 7. Riwayat
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.2.0-id | 28 Juli 2026 | Menautkan pola, kalimat, dialog, dan master contoh |
 | 0.1.0-id | 28 Juli 2026 | Skema register dan 20 Stage-ID |
