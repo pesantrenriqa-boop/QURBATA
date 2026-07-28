@@ -3,7 +3,7 @@
 **Protocol-ID:** VAL-ARB-001  
 **Status:** DRAF — BELUM DIEKSEKUSI  
 **Tanggal:** 28 Juli 2026  
-**Objek:** ACP-QUR-001 dan seluruh turunannya
+**Objek:** ACP-QUR-001 dan seluruh turunannya, termasuk RUB-ARB-001 dan FRM-ARB-001
 
 ## 1. Pertanyaan Validasi
 
@@ -68,7 +68,7 @@ Setiap AR-CO minimal mempunyai:
 |---|---|
 | dependency review | OPEN |
 | expert content validity | OPEN |
-| assessment review | OPEN |
+| assessment review | OPEN — RUB-ARB-001/FRM-ARB-001 tersedia sebagai draf |
 | pilot approval | OPEN |
 | safeguarding approval | OPEN |
 | data plan | OPEN |
@@ -79,4 +79,5 @@ Setiap AR-CO minimal mempunyai:
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.2.0-id | 28 Juli 2026 | Menambahkan rubrik gerbang dan form bukti sebagai objek validasi |
 | 0.1.0-id | 28 Juli 2026 | Protokol validasi awal progression Bahasa Arab |
