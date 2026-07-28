@@ -2,7 +2,7 @@
 
 **Kode Dokumen:** MAT-CUR-QJ1-001  
 **Status:** Draf Terkendali — Audit Korektif Berjalan  
-**Versi:** 0.1.0-id  
+**Versi:** 0.3.0-id  
 **Tanggal:** 28 Juli 2026  
 **Pemilik Akademik:** Aris Liswanto  
 **Keputusan Pengendali:** DEC-CUR-001  
@@ -109,3 +109,14 @@ Tag tersebut merupakan metadata penyusun. Huruf yang tampil terpisah tetap latih
 - [ ] seluruh tag QLX diverifikasi sumber dan maknanya;
 - [ ] tidak ada bentuk sambung, mad, tanwin, sukun, atau tasydid prematur;
 - [ ] audit independen dan persetujuan QC-007 selesai.
+
+
+## 6C. Pemerataan Mutlak — DEC-CUR-002
+
+1. Semua identitas huruf yang telah dipelajari hadir di setiap halaman baca berikutnya.
+2. Jumlah antarahuruf berbeda maksimal satu token.
+3. Harakat dibagi seimbang di dalam jatah tiap identitas; bentuk yang belum diajarkan tetap dilarang.
+4. Materi baru mendapat penekanan pada posisi tangga, talqin, dan talaqqi, bukan dominasi jumlah.
+5. Setelah 29 identitas selesai, setiap identitas muncul dua atau tiga kali pada halaman 64 token.
+6. Kombinasi huruf–harakat penuh ditutup melalui siklus maksimal dua halaman.
+7. DEC-CUR-002 menggantikan ketentuan alokasi 50:50 dalam DEC-CUR-001.
