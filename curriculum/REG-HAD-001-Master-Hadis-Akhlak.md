@@ -1,7 +1,7 @@
 # REG-HAD-001 — Master Hadis Akhlak QURBATA
 
 **Register-ID:** REG-HAD-001  
-**Status:** DRAF TERKENDALI — 8 KANDIDAT SOURCE-CHECK; 0 APPROVED  
+**Status:** DRAF TERKENDALI — 16 KANDIDAT SOURCE-CHECK; 0 APPROVED  
 **Tanggal:** 29 Juli 2026  
 **Pengendali:** HCP-QUR-001  
 **Cakupan:** Jilid 1–8
@@ -47,7 +47,7 @@ Register ini adalah sumber tunggal untuk memastikan hadis akhlak QURBATA bertaha
 
 ## 4. Register Objek
 
-Delapan kandidat awal telah dimasukkan melalui BAT-HAD-001. Tidak ada Hadith-ID yang diaktifkan; semua masih memerlukan takhrij, review penggalan, terjemah, pedagogi, safeguarding, dan keputusan ahli.
+Enam belas kandidat awal telah dimasukkan melalui BAT-HAD-001 dan BAT-HAD-002. Tidak ada Hadith-ID yang diaktifkan; semua masih memerlukan takhrij, review penggalan, terjemah, pedagogi, safeguarding, dan keputusan ahli.
 
 | Hadith-ID | Full-Hadith-ID | Tema | Jilid/Halaman | Sumber | Status |
 |---|---|---|---|---|---|
@@ -59,6 +59,14 @@ Delapan kandidat awal telah dimasukkan melalui BAT-HAD-001. Tidak ada Hadith-ID 
 | HAD-000006 | FHD-000006 | kelembutan | J1/P006 usulan | Muslim 2593; Bukhari 6927 | SOURCE-CHECK / EXCERPT |
 | HAD-000007 | FHD-000007 | salam | J1/P007 usulan | Muslim 54 | SOURCE-CHECK / EXCERPT |
 | HAD-000008 | FHD-000008 | kebaikan kecil | J1/P008 usulan | Muslim 2626 | SOURCE-CHECK / OVERLAP-REVIEW |
+| HAD-000009 | FHD-000009 | niat | J1/P009 usulan | Bukhari 1; Muslim 1907 | SOURCE-CHECK / EXCERPT |
+| HAD-000010 | FHD-000010 | konsistensi | J1/P010 usulan | Muslim 783; Bukhari 6465 | SOURCE-CHECK / VARIANT |
+| HAD-000011 | FHD-000011 | tidak mengganggu | J1/P011 usulan | Bukhari 10; Muslim 40/41 | SOURCE-CHECK / VARIANT |
+| HAD-000012 | FHD-000012 | kendali marah | J1/P012 usulan | Bukhari 6116 | SOURCE-CHECK / CONTEXT |
+| HAD-000013 | FHD-000013 | kebaikan bagi sesama | J1/P013 usulan | Bukhari 13; Muslim 45 | SOURCE-CHECK / WORDING |
+| HAD-000014 | FHD-000014 | membantu sesama | J1/P014 usulan | Muslim 2699 | SOURCE-CHECK / EXCERPT |
+| HAD-000015 | FHD-000015 | belajar Al-Qur’an | J1/P015 usulan | Bukhari 5027 | SOURCE-CHECK / VARIANT |
+| HAD-000016 | FHD-000016 | berkata baik | J1/P016 usulan | Muslim 47; Bukhari 6018/6138 | SOURCE-CHECK / EXCERPT |
 
 ## 5. Register Tema Awal
 
@@ -86,7 +94,7 @@ Sebelum aktivasi, pemeriksa wajib membandingkan matan lengkap dan kutipan, peraw
 ## 7. Blocker Awal
 
 - pemilik akademik belum menetapkan panel ahli hadis/syar‘i;
-- baru 8 kandidat dari kapasitas desain maksimal 320 slot yang tersedia; 312 slot belum memiliki kandidat;
+- baru 16 kandidat dari kapasitas desain maksimal 320 slot yang tersedia; 304 slot belum memiliki kandidat;
 - sumber dan locator awal tersedia untuk 8 kandidat, tetapi standar edisi/locator lintas register belum diputuskan;
 - takhrij, terjemah, whitelist literasi, dan safeguarding belum dijalankan;
 - mapping Hadith-ID ke halaman Jilid 1–8 belum tersedia;
@@ -98,5 +106,6 @@ Karena itu register ini meningkatkan kesiapan arsitektur dan inventaris awal, bu
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.3.0-id | 29 Juli 2026 | Menambahkan HAD-000009–000016 melalui BAT-HAD-002; akumulasi 16 SOURCE-CHECK, 0 APPROVED |
 | 0.2.0-id | 29 Juli 2026 | Menambahkan HAD-000001–000008 melalui BAT-HAD-001; seluruhnya SOURCE-CHECK dan HOLD-PARTICIPANT |
 | 0.1.0-id | 29 Juli 2026 | Membentuk register kosong terstruktur |
