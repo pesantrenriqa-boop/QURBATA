@@ -23,10 +23,11 @@ Urutan kosa kata, susunan kalimat, sharaf, nahwu, fungsi komunikasi, dan Bahasa 
    - Bahasa Arab Qurani dan hadis.
 6. Target kosa kata dihitung berdasarkan lema/kosa kata pokok. Bentuk tashrif, infleksi, mutsanna, jamak, muannats, dan turunan tidak menambah angka target, tetapi tetap dicatat sebagai perluasan keluarga.
 7. Satu kosa kata hanya satu kali berstatus BARU. Kemunculan berikutnya berstatus MUROJAAH, TRANSFER, atau PEMAKAIAN.
-8. Target sementara lintas Jilid 1–8 adalah 640 lema unik dan harus dikonfirmasi melalui analisis beban serta korpus.
+8. Baseline perencanaan lintas Jilid 1–8 adalah 640 lema unik berdasarkan rerata sistemik dua lema per halaman. Baseline bukan batas maksimum dan tidak boleh dipaksakan merata per halaman; distribusi progresif dikendalikan MAT-ARB-001 serta harus dikonfirmasi melalui analisis beban, korpus, retensi, dan transfer.
 9. Partikel dan unsur gramatikal boleh muncul berulang sesuai fungsi dan tidak diperlakukan sebagai duplikasi target baru.
 10. Setiap objek Bahasa Arab wajib mempunyai ID, prasyarat, outcome, bukti, sumber, halaman pengenalan, halaman murojaah, dan status validasi.
 11. Struktur final hanya boleh dibekukan setelah review ahli Bahasa Arab/TAFL, ahli nahwu–sharaf, ahli Al-Qur’an/hadis, penelaah asesmen, dan safeguarding.
+12. Angka target tidak boleh mengalahkan mastery, dependency, maintenance, aksesibilitas, safeguarding, atau bukti empiris.
 
 ## 2A. Interpretasi Mengikat yang Diusulkan
 
