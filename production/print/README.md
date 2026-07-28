@@ -6,6 +6,7 @@ Pipeline ini membangkitkan layout buku peserta langsung dari sumber halaman Mark
 
 ```bash
 python3 -m pip install -r production/print/requirements.txt
+./production/print/fetch_amiri_quran.sh
 python3 production/print/generate_qurbata_pdf.py
 ```
 
@@ -17,7 +18,9 @@ Keluaran baku:
 
 - sumber Markdown tetap menjadi sumber tunggal;
 - edisi peserta dan guru dipisahkan;
+- ukuran buku A5 lanskap dengan bleed 3 mm;
 - 24 latihan dibentuk otomatis menjadi grid 4 × 6;
+- font Arab produksi memakai Amiri Quran;
 - teks Arab memakai shaping dan RTL;
 - bleed, safe area, crop marks, metadata, dan preflight dihasilkan otomatis;
 - hasil tidak disebut final sebelum pemeriksaan visual dan proof print.
