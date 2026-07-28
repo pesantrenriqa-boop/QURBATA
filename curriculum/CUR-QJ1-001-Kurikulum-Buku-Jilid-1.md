@@ -103,7 +103,17 @@ Setiap halaman latihan:
 10. Materi baru dijadwalkan pada N+1, N+2, N+4, N+8, lalu rotasi kumulatif.
 11. Distribusi wajib dicatat dalam MAT-CUR-QJ1-001 dan diperiksa sebelum halaman disebut Siap Uji.
 
-## 6B. Keselarasan Leksikal Qurani
+## 6B. Pemetaan Segmen Bahasa Arab
+
+1. Segmen Bahasa Arab lima menit berjalan pada setiap pertemuan, bukan hanya pada QJ1-P028.
+2. P001–P027 dapat dipakai untuk akuisisi, pemantapan, pola, kalimat, dan murojaah lisan sesuai MAP-ARB-QJ1-001.
+3. P010, P020, dan P028 menjadi kandidat gerbang integrasi AR-CYC-000001–000003 tanpa mengubah fungsi utama halaman.
+4. P028 tetap unit khusus dan kandidat integrasi AR-TXT-000001 jika gerbang SIAP INTEGRASI.
+5. P029–P040 diarahkan pada review distributed, transfer, retelling, dan retensi.
+6. Tulisan Arab peserta tunduk pada whitelist literasi; naskah guru lisan tidak otomatis menjadi materi baca.
+7. Pemetaan provisional tidak menutup BLOCKED-CUR-ARB-001/002 dan tidak menjadi klaim efektivitas.
+
+## 6C. Keselarasan Leksikal Qurani
 
 1. Rangkaian tiga huruf diprioritaskan mendekati akar/kosakata Al-Qur'an, kemudian Bahasa Arab baku, kemudian kombinasi terkontrol.
 2. Kedekatan leksikal tidak boleh melanggar whitelist atau urutan pedagogis.
