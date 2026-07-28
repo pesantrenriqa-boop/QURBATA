@@ -8,7 +8,7 @@
 
 ## 1. Tujuan
 
-Setiap pelajaran Bahasa Arab menghasilkan satu bacaan bermakna yang:
+Setiap siklus pembelajaran Bahasa Arab menghasilkan satu bacaan bermakna setelah kosa kata dan struktur prasyarat mencapai gerbang ketuntasan. Pelajaran akuisisi sebelum gerbang tersebut tidak wajib memuat paragraf.
 
 - menggunakan kosa kata dan kaidah yang telah tersedia;
 - memurojaah target lama secara terencana;
@@ -31,6 +31,21 @@ Bentuk perkembangan:
 | lanjut | wacana/teks | sesuai fungsi dan tahap |
 
 Panjang tidak boleh dipaksakan bila kosa kata atau struktur belum cukup.
+
+## 2A. Gerbang Ketuntasan Sebelum Teks
+
+Text-ID baru hanya boleh dibuka setelah unit prasyaratnya menunjukkan bukti bahwa peserta:
+
+1. memahami makna kosa kata sasaran secara reseptif;
+2. mengenali atau memakai bentuk turunan yang diperlukan;
+3. memahami pola kalimat prasyarat;
+4. memakai unsur tersebut dalam frasa atau kalimat terbimbing;
+5. mempertahankan sebagian target lama melalui pemeriksaan murojaah;
+6. siap menerima gabungan unsur tanpa kosa kata atau kaidah tersembunyi.
+
+Status gerbang: BELUM SIAP, BERKEMBANG, atau SIAP INTEGRASI. Hanya status SIAP INTEGRASI yang mengizinkan Text-ID baru. Ambang numerik ditetapkan setelah validasi; sebelum itu keputusan wajib berbasis bukti dan catatan guru.
+
+Satu siklus boleh mencakup beberapa pelajaran akuisisi. Teks wajib hadir pada pelajaran integrasi/murojaah setelah gerbang, bukan dipaksakan pada setiap pelajaran.
 
 ## 3. Aturan Whitelist
 
@@ -84,6 +99,9 @@ Setiap teks minimal mendukung:
 ## 7. Metadata Wajib
 
 - Text-ID;
+- Cycle-ID dan Integration-Lesson-ID;
+- daftar pelajaran akuisisi prasyarat;
+- status serta Evidence-ID gerbang ketuntasan;
 - judul/tema;
 - teks Arab tervokalisasi;
 - arti;
@@ -117,4 +135,5 @@ Teks belum boleh masuk buku final sebelum:
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
-| 0.1.0-id | 28 Juli 2026 | Standar bacaan kumulatif terintegrasi setiap pelajaran |
+| 0.2.0-id | 28 Juli 2026 | Mengganti kewajiban per pelajaran menjadi kewajiban per siklus setelah gerbang ketuntasan |
+| 0.1.0-id | 28 Juli 2026 | Standar awal bacaan kumulatif terintegrasi |
