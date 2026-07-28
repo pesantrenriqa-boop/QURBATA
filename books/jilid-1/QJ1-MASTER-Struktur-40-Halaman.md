@@ -4,7 +4,7 @@
 **Produk:** Buku QURBATA Jilid 1  
 **Judul Resmi:** Struktur Buku QURBATA Jilid 1  
 **Status:** Draf Terkendali — Belum Disetujui  
-**Versi:** 0.4.0-id  
+**Versi:** 0.5.0-id  
 **Bahasa Induk:** Bahasa Indonesia  
 **Jumlah Halaman Inti:** 40  
 **Sasaran Pengguna:** Peserta didik pemula membaca Al-Qur’an; usia dan kebutuhan spesifik ditetapkan saat validasi pengguna  
@@ -184,3 +184,13 @@ Halaman evaluasi tidak mengenalkan materi baru dan harus mengambil sampel dari s
 | 0.2.0-id | 27 Juli 2026 | Audit konstitusional: metadata dilengkapi, kode QJ diklasifikasi ulang, relasi CUR/LO/KO dan tema akhlak per halaman ditambahkan |
 | 0.3.0-id | 27 Juli 2026 | Mengunci QJ1-P001 pada keluarga ب ت ث; menempatkan hamza–alif pada QJ1-P002 dan menghapus bentuk اَ yang tidak tepat |
 | 0.4.0-id | 28 Juli 2026 | Menerapkan DEC-CUR-001: murojaah kumulatif 50:50, pemerataan huruf–harakat, jadwal retensi, dan Keselarasan Leksikal Qurani |
+
+## Koreksi Pengendali DEC-CUR-002
+
+- aturan 50:50 dicabut;
+- seluruh identitas yang telah dipelajari harus hadir dengan selisih maksimal satu token;
+- harakat dibagi seimbang di dalam jatah setiap identitas tanpa memperkenalkan bentuk prematur;
+- kelebihan pembagian diputar antark halaman;
+- setelah 29 identitas lengkap, setiap huruf memperoleh 2–3 token per halaman;
+- cakupan seluruh kombinasi huruf–harakat dijamin melalui siklus maksimal dua halaman;
+- materi baru diprioritaskan pada posisi dan proses pengajaran, bukan frekuensi berlebih.
