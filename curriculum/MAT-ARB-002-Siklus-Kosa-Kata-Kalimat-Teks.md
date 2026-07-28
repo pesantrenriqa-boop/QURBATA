@@ -73,7 +73,7 @@ Contoh ini bukan kuota tetap. Siklus dapat diperlambat atau dipercepat berdasark
 
 ## 7. Hubungan dengan AR-TXT-000001
 
-AR-TXT-000001 tetap berstatus PILOT—BELUM DIPETAKAN. Teks tersebut baru boleh memperoleh Integration-Lesson-ID final setelah seluruh lema, bentuk mudhari‘, struktur, dan pola dalam auditnya memiliki bukti gerbang SIAP INTEGRASI.
+AR-TXT-000001 tetap berstatus PILOT—BELUM DIPETAKAN dan ditautkan secara calon ke AR-CYC-000001 melalui BAT-ARB-004. Teks tersebut baru boleh memperoleh Integration-Lesson-ID final setelah seluruh lema, bentuk mudhari‘, struktur, dan pola dalam auditnya memiliki bukti gerbang SIAP INTEGRASI.
 
 ## 8. Larangan
 
@@ -93,4 +93,5 @@ Matriks ini belum memetakan Cycle-ID final ke halaman Jilid 1–8. Pemetaan menu
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.2.0-id | 28 Juli 2026 | Menautkan implementasi pilot pertama melalui BAT-ARB-004 |
 | 0.1.0-id | 28 Juli 2026 | Siklus pembelajaran dan gerbang ketuntasan sebelum teks ditetapkan sebagai draf terkendali |
