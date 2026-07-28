@@ -42,13 +42,16 @@ Kemampuan membaca tulisan yang belum diajarkan tidak boleh diinferensikan dari k
 
 ## 4. Kebijakan Kosa Kata
 
-- Target perencanaan: 640 lema unik lintas Jilid 1–8.
+- Baseline perencanaan: 640 lema unik lintas Jilid 1–8; bukan batas maksimum dan bukan kuota seragam per halaman.
 - Sumber prioritas: benda sekitar; mudah dilihat; sering didengar; mudah dipahami; Al-Qur’an; hadis sahih; Fusha umum.
 - Setiap lema mempunyai Lexeme-ID dan Lexical-Family-ID.
 - Tashrif, infleksi, bentuk gender, dual, plural, dan turunan dicatat tetapi bernilai nol tambahan pada penghitung 640.
 - Status kemunculan: BARU, MUROJAAH, TRANSFER, ANALISIS.
 - Kosa kata lama harus muncul kembali melalui jadwal pemeliharaan.
-- Angka 640 bersifat provisional sampai audit korpus, beban, dan duplikasi selesai.
+- MAT-ARB-001 membagi baseline secara progresif: 40, 50, 60, 70, 80, 100, 120, dan 120 lema pada Jilid 1–8.
+- Halaman evaluasi/murojaah boleh memiliki nol lema baru; halaman tingkat tinggi dapat memiliki lebih banyak bila tervalidasi.
+- Angka 640 bersifat provisional sampai audit korpus, beban, duplikasi, retensi, dan transfer selesai.
+- Mastery dan dependency mengalahkan pencapaian kuota numerik.
 
 ## 5. Progression 20 Tahap
 
