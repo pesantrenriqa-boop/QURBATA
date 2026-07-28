@@ -114,6 +114,8 @@ Setiap AR-GRM wajib memuat:
 | LEX-ARB-003 | AR-STG-007–009 | 14 entri; 12 target terhitung; akumulasi baseline 40 | CANDIDATE |
 | BAT-ARB-003 | AR-STG-007–009 | 6 struktur, 4 pola, 32 contoh, 6 asesmen | DRAF PILOT |
 | MAT-ARB-001 | Jilid 1–8 | baseline progresif 40/50/60/70/80/100/120/120; total 640 | DRAF PERENCANAAN |
+| STD-ARB-002 | Jilid 1–8 | standar satu teks kumulatif terintegrasi per pelajaran | DRAF TERKENDALI |
+| REG-ARB-003 | Jilid 1–8 | master microtext, paragraf, dan wacana; AR-TXT-000001 tersedia | PILOT |
 
 Batch belum mengubah status UNMAPPED pada pemetaan jilid/halaman.
 
@@ -121,6 +123,7 @@ Batch belum mengubah status UNMAPPED pada pemetaan jilid/halaman.
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.7.0-id | 28 Juli 2026 | Menautkan STD-ARB-002, REG-ARB-003, dan teks kumulatif pertama |
 | 0.6.0-id | 28 Juli 2026 | Mencatat LEX-ARB-003 dan BAT-ARB-003; kandidat baseline Jilid 1 mencapai 40 |
 | 0.5.0-id | 28 Juli 2026 | Mencatat LEX-ARB-002 dan BAT-ARB-002 untuk Tahap 4–6 |
 | 0.4.0-id | 28 Juli 2026 | Menautkan MAT-ARB-001 dan baseline progresif nonseragam |
