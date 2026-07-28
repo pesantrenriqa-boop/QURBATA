@@ -117,7 +117,7 @@ Pemetaan ini menyediakan kandidat operasional untuk P028 dan Jilid 1, tetapi:
 
 ## 8. Status Implementasi Halaman
 
-Bagian “Segmen Bahasa Arab 5 Menit — Pilot” telah ditanamkan pada QJ1-P001–QJ1-P040. Penanaman 40/40 berarti keterlacakan desain tersedia, bukan berarti isi telah divalidasi, gerbang telah dijalankan, atau halaman siap uji.
+Bagian “Segmen Bahasa Arab 5 Menit — Pilot” telah ditanamkan pada QJ1-P001–QJ1-P040. Setiap file kini juga memuat `Sentence-ID / Text-ID` dan `Status sumber bahasa`; audit menunjukkan 40/40 hadir tanpa duplikasi. Penanaman 40/40 berarti keterlacakan desain tersedia, bukan berarti isi telah divalidasi, gerbang telah dijalankan, atau halaman siap uji.
 
 ## 9. Review Wajib
 
@@ -139,6 +139,7 @@ Pemetaan ini dilaksanakan melalui [GDE-ARB-QJ1-001](../books/jilid-1/GDE-ARB-QJ1
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.4.0-id | 28 Juli 2026 | Menanamkan Sentence-ID/Text-ID dan status sumber bahasa pada 40/40 file halaman |
 | 0.3.0-id | 28 Juli 2026 | Menautkan panduan guru operasional GDE-ARB-QJ1-001 dan keterlacakan 40 halaman |
 | 0.2.0-id | 28 Juli 2026 | Menanamkan segmen pilot ke seluruh 40 file halaman |
 | 0.1.0-id | 28 Juli 2026 | Pemetaan provisional segmen Bahasa Arab 5 menit pada 40 halaman Jilid 1 |
