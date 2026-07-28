@@ -5,7 +5,7 @@
 **Cakupan:** QJ1-P001–QJ1-P040  
 **Terkait:** MAP-ARB-QJ1-001, ACP-QUR-001, REG-ARB-001, REG-ARB-003, REG-ARB-004, RUB-ARB-001, FRM-ARB-001  
 **Audit keterlacakan:** [AUD-ARB-QJ1-002](../../quality/AUD-ARB-QJ1-002-Audit-Keterlacakan-Panduan-Guru-Bahasa-Arab.md)  
-**Blocker:** BLOCKED-CUR-ARB-001; BLOCKED-CUR-ARB-002; 23 kandidat Sentence-ID
+**Blocker:** BLOCKED-CUR-ARB-001; BLOCKED-CUR-ARB-002; validasi ahli atas 15 Sentence-ID berstatus LANGUAGE-REVIEW
 
 ## 1. Kedudukan dan Batas
 
@@ -70,13 +70,13 @@ Aturan tetap:
 
 | Halaman | Fokus dan model guru tervokalisasi | Respons/produksi yang diharapkan | Murojaah, transfer, dan bukti |
 |---|---|---|---|
-| P021 | Peragakan: **قَرَأَ الطَّالِبُ. كَتَبَ الطَّالِبُ.** | Memilih tindakan dan menirukan kalimat | Ulang **طَالِبٌ، كِتَابٌ، قَلَمٌ** sebagai referen konkret. |
-| P022 | **جَلَسَ الطَّالِبُ. ذَهَبَ الطَّالِبُ.** | Menanggapi peragaan dan menghasilkan satu kalimat | Ulang lokasi dengan benda/ruang yang telah dipelajari. |
-| P023 | **فَتَحَ الطَّالِبُ الْبَابَ. أَغْلَقَ الطَّالِبُ الْبَابَ.** | Membedakan dua tindakan berlawanan | Ulang **بَابٌ، طَالِبٌ** dan tindakan P021–P022 secara acak. |
+| P021 | Peragakan: **قَرَأَ الطَّالِبُ الْكِتَابَ. كَتَبَ الطَّالِبُ بِالْقَلَمِ.** | Memilih tindakan dan menirukan kalimat | Ulang **طَالِبٌ، كِتَابٌ، قَلَمٌ** sebagai referen konkret. |
+| P022 | **جَلَسَ الطَّالِبُ عَلَى الْكُرْسِيِّ. ذَهَبَ الْوَلَدُ إِلَى الْمَسْجِدِ.** | Menanggapi peragaan dan menghasilkan satu kalimat | Ulang lokasi dengan benda/ruang yang telah dipelajari. |
+| P023 | **فَتَحَ الْمُعَلِّمُ الْبَابَ. أَغْلَقَ الْمُعَلِّمُ الْبَابَ.** | Membedakan dua tindakan berlawanan | Ulang **بَابٌ، طَالِبٌ** dan tindakan P021–P022 secara acak. |
 | P024 | **دَخَلَ الطَّالِبُ الْفَصْلَ. خَرَجَ الطَّالِبُ مِنَ الْفَصْلِ.** (`مِنْ`: AR-FW-000014; tampil sebagai `مِنَ` sebelum `الـ`) | Memilih tindakan dan menyebut model | Ulang **فَصْلٌ** serta verba lama; **مِنَ** dipakai sebagai unsur fungsi, bukan sasaran leksikal baru. |
 | P025 | **شَرِبَ الطَّالِبُ الْمَاءَ. أَكَلَ الطَّالِبُ.** | Menirukan dan memilih tindakan sesuai peragaan | Ulang **مَاءٌ** dan agen lama; jangan menambah nama makanan di luar inventaris. |
 | P026 | **نَامَ الْوَلَدُ. قَامَ الْوَلَدُ.** | Membedakan dan menghasilkan satu kalimat | Ganti agen secara terkontrol dengan persona yang telah dipelajari. |
-| P027 | **سَمِعَ الطَّالِبُ الْمُعَلِّمَ. نَظَرَ الطَّالِبُ إِلَى الْكِتَابِ.** (`إِلَى`: AR-FW-000013) | Memilih tindakan dan mengucapkan model | Ulang persona, benda, dan verba P021–P026; **إِلَى** unsur fungsi, bukan sasaran leksikal baru. |
+| P027 | **يَسْمَعُ الطَّالِبُ الْمُعَلِّمَ. يَنْظُرُ الطَّالِبُ إِلَى الْكِتَابِ.** (`إِلَى`: AR-FW-000013) | Memilih tindakan dan mengucapkan model | Ulang persona, benda, dan verba P021–P026; **إِلَى** unsur fungsi, bukan sasaran leksikal baru. |
 | P028 | **Gerbang AR-GATE-000001–000007. Tidak ada sasaran baru.** | Sampel pemahaman, produksi, dan transfer Siklus 3; retensi Siklus 1–2 | Jika **SIAP INTEGRASI**, buka AR-TXT-000001 secara lisan. Jika belum, remediasi butir gagal dan pertahankan batas literasi halaman. |
 
 **AR-TXT-000001 untuk guru, bersyarat:**  
@@ -126,7 +126,8 @@ Catatan ini tidak menggantikan FRM-ARB-001 pada halaman gerbang. Tidak boleh dir
 - [ ] Uji keterlaksanaan durasi lima menit pada kelas nyata.
 - [ ] Bukti bahwa rotasi murojaah tidak meninggalkan objek lama.
 - [ ] Pelaksanaan dan dokumentasi gerbang P010, P020, dan P028.
-- [ ] Penyelesaian 23 kandidat kalimat dalam AUD-ARB-QJ1-002 melalui registrasi, penggantian, atau penolakan.
+- [x] Kesenjangan identitas 23 kalimat ditutup: 8 disamakan dengan master dan 15 diregistrasi sebagai LANGUAGE-REVIEW.
+- [ ] Validasi ahli atas AR-SEN-000082–000096 sebelum kenaikan status.
 - [ ] Penyelesaian BLOCKED-CUR-ARB-001 dan BLOCKED-CUR-ARB-002 melalui kewenangan yang sah.
 
 Sebelum seluruh syarat dipenuhi, dokumen ini tetap pilot, PR tetap Draft, dan tidak boleh diklaim sebagai materi final atau telah tervalidasi ilmiah.
