@@ -4,7 +4,7 @@
 **Status:** DRAF TERKENDALI  
 **Tanggal:** 28 Juli 2026  
 **Pengendali:** STD-ARB-002  
-**Cakupan:** seluruh pelajaran Bahasa Arab QURBATA Jilid 1–8
+**Cakupan:** seluruh siklus pembelajaran Bahasa Arab QURBATA Jilid 1–8
 
 ## 1. Pola ID
 
@@ -12,7 +12,11 @@
 - pertanyaan pemahaman: AR-TQ-xxxxxx;
 - tugas produksi: AR-TP-xxxxxx.
 
-## 2. Teks Pilot Pertama
+## 2. Kendali Siklus dan Ketuntasan
+
+Setiap entri Text-ID wajib mencatat Cycle-ID, pelajaran akuisisi prasyarat, Integration-Lesson-ID, status gerbang, dan Evidence-ID. Teks pilot belum boleh dipetakan final ke halaman sebelum bukti gerbang tersedia.
+
+## 3. Teks Pilot Pertama
 
 ### AR-TXT-000001 — Adab Belajar di Kelas
 
@@ -29,7 +33,7 @@
 
 > Ini ruang kelas yang bersih. Pelajar masuk ke ruang kelas. Pelajar duduk di kursi. Guru membuka mushaf. Pelajar membaca buku. Pelajar mendengar guru.
 
-## 3. Audit Unsur AR-TXT-000001
+## 4. Audit Unsur AR-TXT-000001
 
 | Jenis | Objek |
 |---|---|
@@ -44,7 +48,7 @@
 
 Semua lema pernah diperkenalkan pada LEX-ARB-001–003. Teks tidak menambah hitungan baseline 40.
 
-## 4. Tugas Pilot
+## 5. Tugas Pilot
 
 | ID | Tugas | Keterampilan |
 |---|---|---|
@@ -57,23 +61,27 @@ Semua lema pernah diperkenalkan pada LEX-ARB-001–003. Teks tidak menambah hitu
 
 Pertanyaan dapat disampaikan dalam Bahasa Indonesia pada tahap awal. Versi Arab hanya dibuka setelah struktur pertanyaan tersedia.
 
-## 5. Aturan Penempatan
+## 6. Aturan Penempatan
 
-- satu Text-ID direncanakan untuk setiap pelajaran Bahasa Arab;
+- satu Text-ID direncanakan untuk setiap siklus yang telah mencapai status SIAP INTEGRASI;
+- pelajaran pengenalan kosa kata, latihan kata, frasa, atau pola sebelum gerbang tidak wajib memuat Text-ID;
+- Text-ID ditempatkan pada pelajaran integrasi/murojaah setelah kosa kata dan struktur prasyarat cukup dikuasai;
+- teks tidak menunggu seluruh kosa kata satu jilid selesai; gerbang berlaku per unit kompetensi;
 - teks awal dapat diajarkan secara lisan sebelum boleh dibaca;
 - satu teks boleh kembali pada pelajaran lain sebagai murojaah, tetapi tidak menjadi Text-ID baru;
 - versi perluasan mempunyai Version-ID atau Parent-Text-ID;
 - teks tidak boleh dipetakan final ke halaman sebelum Arabic progression disahkan.
 
-## 6. Status Produksi
+## 7. Status Produksi
 
 | Cakupan | Target sistem | Tersedia | Status |
 |---|---:|---:|---|
-| Teks pelajaran Jilid 1 | mengikuti jumlah pelajaran final | 1 | PILOT |
+| Teks integrasi Jilid 1 | mengikuti jumlah siklus yang lulus gerbang | 1 | PILOT—BELUM DIPETAKAN |
 | Teks Jilid 2–8 | menunggu pemetaan | 0 | UNMAPPED |
 
-## 7. Riwayat
+## 8. Riwayat
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.2.0-id | 28 Juli 2026 | Penempatan Text-ID dikunci per siklus setelah gerbang ketuntasan |
 | 0.1.0-id | 28 Juli 2026 | Register dibentuk dan microtext pilot pertama ditambahkan |
