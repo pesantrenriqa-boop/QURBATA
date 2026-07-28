@@ -10,7 +10,7 @@
 
 ## 1. Cakupan
 
-Generator dijalankan terhadap seluruh 40 sumber nyata Jilid 1. Keluaran merupakan PDF peserta A4 lanskap dengan bleed 3 mm, safe area 12 mm, crop marks, font tertanam, metadata Draft, dan pemisahan konten guru–peserta.
+Generator dijalankan terhadap seluruh 40 sumber nyata Jilid 1. Keluaran merupakan PDF peserta **A5 lanskap** dengan bleed 3 mm, safe area 8 mm, font **Amiri Quran 1.003** tertanam, crop marks, metadata Draft, dan pemisahan konten guru–peserta.
 
 ## 2. Hasil Build
 
@@ -24,8 +24,10 @@ Generator dijalankan terhadap seluruh 40 sumber nyata Jilid 1. Keluaran merupaka
 | urutan halaman | P001–P040 lengkap |
 | urutan tangga | kanan atas menuju kiri, lalu turun |
 | urutan token Arab | token pertama sumber selalu paling kanan |
-| ukuran MediaBox | A4 lanskap + bleed 3 mm |
+| ukuran MediaBox | A5 lanskap 210 × 148 mm + bleed 3 mm |
 | crop marks | hadir pada 40/40 |
+| font Arab | Amiri Quran 1.003; SHA-256 tercatat; lisensi OFL disimpan |
+| ukuran font Arab | 18 pt baseline A5; wajib proof keterbacaan fisik |
 | marker konten guru | tidak ditemukan pada PDF peserta |
 | clipping/overlap/kotak hitam | tidak ditemukan pada contact sheet 40 halaman |
 | render sampel rinci | P001 dan P033 diperiksa pada resolusi lebih tinggi |
