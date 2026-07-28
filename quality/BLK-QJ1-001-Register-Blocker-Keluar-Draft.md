@@ -73,10 +73,11 @@ COMPLETE-DRAFT berarti artefak telah tersedia dan terlacak, bukan telah divalida
 | kandidat Hadith-ID | HAD-000001–000040 dalam BAT-HAD-001–005; 40 kandidat, 0 aktif | SOURCE-CHECK |
 | sumber dan metadata grading awal | 40/40 memiliki locator awal; takhrij/edisi final belum disahkan | COMPLETE-CANDIDATE / EXPERT REVIEW OPEN |
 | terjemah, whitelist, asesmen, safeguarding | belum ada | NOT PROVIDED |
-| mapping halaman Jilid 1–8 | usulan P001–P040 tersedia; mapping formal, pola murojaah, dan Jilid 2–8 belum ada | COMPLETE-CANDIDATE / FORMAL-MAP OPEN |
-| review ahli, Evidence-ID, Decision-ID | belum ada | NOT PROVIDED |
+| mapping halaman Jilid 1–8 | MAP-HAD-QJ1-001 memetakan intro P001–P040, interval 1/3/7/14, dan checkpoint; validasi serta Jilid 2–8 belum ada | COMPLETE-DRAFT / EXPERT REVIEW OPEN |
+| paket review ahli | REV-HAD-QJ1-001 memuat matriks 40 objek, audit murojaah, risiko, dan form keputusan | READY-FOR-EXPERT |
+| hasil review, Reviewer-ID, Evidence-ID, Decision-ID | belum ada | NOT PROVIDED |
 
-Arsitektur menutup gap definisi dan kontrol, tetapi tidak menutup BLOCKED-CUR-HAD-001 sebelum objek nyata, takhrij, validasi, dan otorisasi tersedia.
+Arsitektur, inventaris 40 kandidat, mapping murojaah, dan paket ahli menutup gap desain Jilid 1. BLOCKED-CUR-HAD-001 tetap OPEN sampai takhrij, validasi, whitelist, uji durasi, bukti, dan otorisasi tersedia.
 
 ## 2. Usulan Penutupan yang Tersedia
 
@@ -134,6 +135,7 @@ Persentase keseluruhan proyek QURBATA Jilid 1–8 dicatat terpisah dalam `STAT-Q
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.24.0-id | 29 Juli 2026 | Menambahkan MAP-HAD-QJ1-001 dan REV-HAD-QJ1-001; mapping kandidat serta paket keputusan ahli lengkap-draf, 0 APPROVED |
 | 0.23.0-id | 29 Juli 2026 | Menambahkan BAT-HAD-005 dan HAD-000033–000040; kandidat Jilid 1 lengkap 40/40, 0 APPROVED; audit ahli dan mapping murojaah tetap OPEN |
 | 0.22.0-id | 29 Juli 2026 | Menambahkan BAT-HAD-004 dan HAD-000025–000032; akumulasi 32 kandidat, 0 APPROVED |
 | 0.21.0-id | 29 Juli 2026 | Menambahkan BAT-HAD-003 dan HAD-000017–000024; akumulasi 24 kandidat, 0 APPROVED |
