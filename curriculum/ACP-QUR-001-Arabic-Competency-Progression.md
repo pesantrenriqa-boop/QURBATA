@@ -109,6 +109,19 @@ Ketentuan:
 6. setiap entri kamus dapat menautkan contoh pemakaian dari REG-ARB-002;
 7. asesmen transfer memakai kombinasi baru dari unsur yang telah dikuasai.
 
+## 6B. Teks Kumulatif Terintegrasi
+
+Setiap pelajaran Bahasa Arab harus mempunyai satu Text-ID dari REG-ARB-003. Pada tahap awal Text-ID dapat berupa microtext; panjang berkembang mengikuti inventaris dan kemampuan.
+
+Ketentuan:
+
+- hanya memakai unsur yang telah tersedia;
+- memuat murojaah target lama;
+- berfungsi sebagai latihan menyimak, memahami, membaca bila diizinkan, berbicara, retensi, dan transfer;
+- tema mengintegrasikan akhlak, kandungan Al-Qur’an/hadis, atau komunikasi umum;
+- kutipan langsung dan parafrasa dibedakan secara eksplisit;
+- STD-ARB-002 mengendalikan sumber, whitelist, dan gate.
+
 ## 7. Dependency Kritis
 
 - na‘at dan idhafah tidak boleh diajarkan sebelum peserta membedakan nomina dan relasi makna dasar;
