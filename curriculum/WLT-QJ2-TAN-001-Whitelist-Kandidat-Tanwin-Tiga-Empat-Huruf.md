@@ -26,7 +26,7 @@
 | TAN-3-004 | مَثَل | مَثَلًا | مَثَلٍ | مَثَلٌ | perumpamaan | Q 22:73; 18:54 | SOURCE-CANDIDATE |
 | TAN-3-005 | بَشَر | بَشَرًا | بَشَرٍ | بَشَرٌ | manusia | rujukan Qurani perlu ditetapkan | LEXICAL-CANDIDATE |
 | TAN-3-006 | وَلَد | وَلَدًا | وَلَدٍ | وَلَدٌ | anak | Q 4:176 | SOURCE-CANDIDATE |
-| TAN-3-007 | أَجَل | أَجَلًا | أَجَلٍ | أَجَلٌ | batas waktu | rujukan Qurani perlu ditetapkan | LEXICAL-CANDIDATE |
+| TAN-3-007 | أَجَل | أَجَلًا | أَجَلٍ | أَجَلٌ | batas waktu | Q 6:2 | SOURCE-CANDIDATE |
 | TAN-3-008 | خَبَر | خَبَرًا | خَبَرٍ | خَبَرٌ | berita | Q 27:7 | SOURCE-CANDIDATE |
 
 ## 3. Enam Belas Kata Empat Huruf
