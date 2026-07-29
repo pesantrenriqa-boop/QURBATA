@@ -10,7 +10,7 @@
 
 Matriks ini menyatukan sumber awal seluruh kandidat agar ahli dapat bekerja dari satu daftar. Isi kolom sumber dan locator adalah hasil konsolidasi administratif, bukan pengesahan kesahihan, edisi, nomor, perawi, atau kecocokan penggalan.
 
-Untuk HAD-000001–HAD-000016 dan HAD-000033–HAD-000040, locator daring tersedia sebagai alat penelusuran awal. HAD-000017–HAD-000032 masih memakai locator batch sampai pencocokan daring berikutnya. Bukti final tetap harus merujuk sumber/edisi yang disahkan.
+Untuk HAD-000001–HAD-000024 dan HAD-000033–HAD-000040, locator daring tersedia sebagai alat penelusuran awal. HAD-000025–HAD-000032 masih memakai locator batch sampai pencocokan daring berikutnya. Bukti final tetap harus merujuk sumber/edisi yang disahkan.
 
 ## 2. Matriks 40 Objek
 
@@ -34,14 +34,14 @@ Kolom **Hasil ahli** diisi salah satu: CONFIRMED, CORRECTED, VARIANT, DUPLICATE,
 | HAD-000014 | FHD-000014 | P014 | Abu Hurairah | penggalan Shahih Muslim no. 2699 | https://dorar.net/hadith/sharh/117078 | SOURCE-CHECK / EXCERPT-REVIEW |  |  |
 | HAD-000015 | FHD-000015 | P015 | Utsman bin Affan | Shahih al-Bukhari no. 5027; Abu Dawud no. 1452; at-Tirmidzi no. 2907/2908 | https://dorar.net/h/SjMYOdNW | SOURCE-CHECK / LOCATOR-VARIANT-REVIEW |  |  |
 | HAD-000016 | FHD-000016 | P016 | Abu Hurairah | penggalan Shahih Muslim no. 47; Shahih al-Bukhari no. 6018/6138 dalam redaksi terkait | https://dorar.net/hadith/sharh/4361 | SOURCE-CHECK / EXCERPT-REVIEW |  |  |
-| HAD-000017 | FHD-000017 | P017 | Abu Hurairah | Shahih Muslim no. 2664 | BAT-HAD-003 | SOURCE-CHECK / EXCERPT-AND-INCLUSION-REVIEW |  |  |
-| HAD-000018 | FHD-000018 | P018 | Abu Hurairah | at-Tirmidzi no. 1954 (hasan sahih); Abu Dawud no. 4811 | BAT-HAD-003 | SOURCE-CHECK / VARIANT-WORDING-REVIEW |  |  |
-| HAD-000019 | FHD-000019 | P019 | Abu Hurairah | Shahih al-Bukhari no. 6114; Shahih Muslim no. 2609 | BAT-HAD-003 | SOURCE-CHECK / SEMANTIC-PROGRESSION-REVIEW |  |  |
-| HAD-000020 | FHD-000020 | P020 | an-Nawwas bin Sam‘an | penggalan Shahih Muslim no. 2553 | BAT-HAD-003 | SOURCE-CHECK / EXCERPT-REVIEW |  |  |
-| HAD-000021 | FHD-000021 | P021 | Abu Musa al-Asy‘ari | Shahih al-Bukhari no. 6026/481; Shahih Muslim no. 2585 | BAT-HAD-003 | SOURCE-CHECK / LOCATOR-REVIEW |  |  |
-| HAD-000022 | FHD-000022 | P022 | Abu Hurairah | Shahih Muslim no. 101/102 dalam riwayat terkait | BAT-HAD-003 | SOURCE-CHECK / THEOLOGICAL-WORDING-AND-VARIANT-REVIEW |  |  |
-| HAD-000023 | FHD-000023 | P023 | Abu Hurairah | penggalan Shahih Muslim no. 35 | BAT-HAD-003 | SOURCE-CHECK / EXCERPT-AND-SAFETY-REVIEW |  |  |
-| HAD-000024 | FHD-000024 | P024 | Syaddad bin Aus | penggalan Shahih Muslim no. 1955 | BAT-HAD-003 | SOURCE-CHECK / HIGH-CONTEXT-EXCERPT-REVIEW |  |  |
+| HAD-000017 | FHD-000017 | P017 | Abu Hurairah | Shahih Muslim no. 2664 | https://dorar.net/h/cKPg3YHb | SOURCE-CHECK / EXCERPT-AND-INCLUSION-REVIEW |  |  |
+| HAD-000018 | FHD-000018 | P018 | Abu Hurairah | at-Tirmidzi no. 1954 (hasan sahih); Abu Dawud no. 4811 | https://dorar.net/h/ffQTIAlh | SOURCE-CHECK / VARIANT-WORDING-REVIEW |  |  |
+| HAD-000019 | FHD-000019 | P019 | Abu Hurairah | Shahih al-Bukhari no. 6114; Shahih Muslim no. 2609 | https://dorar.net/h/FKzk4Uek | SOURCE-CHECK / SEMANTIC-PROGRESSION-REVIEW |  |  |
+| HAD-000020 | FHD-000020 | P020 | an-Nawwas bin Sam‘an | penggalan Shahih Muslim no. 2553 | https://dorar.net/h/EwM9mzz0 | SOURCE-CHECK / EXCERPT-REVIEW |  |  |
+| HAD-000021 | FHD-000021 | P021 | Abu Musa al-Asy‘ari | Shahih al-Bukhari no. 6026/481; Shahih Muslim no. 2585 | https://dorar.net/h/GwA4p6m1 | SOURCE-CHECK / LOCATOR-REVIEW |  |  |
+| HAD-000022 | FHD-000022 | P022 | Abu Hurairah | Shahih Muslim no. 101/102 dalam riwayat terkait | https://dorar.net/h/xNJyF35K | SOURCE-CHECK / THEOLOGICAL-WORDING-AND-VARIANT-REVIEW |  |  |
+| HAD-000023 | FHD-000023 | P023 | Abu Hurairah | penggalan Shahih Muslim no. 35 | https://dorar.net/h/tNWT5WIt | SOURCE-CHECK / EXCERPT-AND-SAFETY-REVIEW |  |  |
+| HAD-000024 | FHD-000024 | P024 | Syaddad bin Aus | penggalan Shahih Muslim no. 1955 | https://dorar.net/h/zJB1WCUU | SOURCE-CHECK / HIGH-CONTEXT-EXCERPT-REVIEW |  |  |
 | HAD-000025 | FHD-000025 | P025 | Abdullah bin Mas‘ud | penggalan Shahih al-Bukhari no. 6094 dan Shahih Muslim no. 2607 | BAT-HAD-004 | SOURCE-CHECK / EXCERPT-REVIEW |  |  |
 | HAD-000026 | FHD-000026 | P026 | Jabir bin Abdullah | Shahih al-Bukhari no. 6021 | BAT-HAD-004 | SOURCE-CHECK / SEMANTIC-OVERLAP-REVIEW |  |  |
 | HAD-000027 | FHD-000027 | P027 | Abdullah bin Umar | penggalan Shahih al-Bukhari no. 2442 dan Shahih Muslim no. 2580 | BAT-HAD-004 | SOURCE-CHECK / EXCERPT-AND-SAFEGUARDING-REVIEW |  |  |
@@ -93,8 +93,8 @@ Kolom **Hasil ahli** diisi salah satu: CONFIRMED, CORRECTED, VARIANT, DUPLICATE,
 | Full-Hadith-ID administratif | 40/40 |
 | Perawi awal terisi | 40/40 |
 | Sumber/nomor awal terisi | 40/40 |
-| Locator daring eksplisit | 24/40 |
-| Locator batch untuk penelusuran | 16/40 |
+| Locator daring eksplisit | 32/40 |
+| Locator batch untuk penelusuran | 8/40 |
 | Evidence-ID ahli | 0/40 |
 | Hasil ahli | 0/40 |
 | APPROVED | 0/40 |
