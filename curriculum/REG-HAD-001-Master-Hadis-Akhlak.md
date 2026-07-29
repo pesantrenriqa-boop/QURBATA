@@ -119,7 +119,7 @@ Sebelum aktivasi, pemeriksa wajib membandingkan matan lengkap dan kutipan, peraw
 
 - pemilik akademik belum menetapkan panel ahli hadis/syar‘i;
 - 40 kandidat Jilid 1 telah tersedia dari kapasitas desain maksimal 320 slot; 280 slot lintas Jilid 2–8 belum memiliki kandidat;
-- SRC-HAD-QJ1-001 mengonsolidasikan perawi dan sumber awal 40/40 kandidat; 16/40 memiliki locator daring eksplisit dan 24/40 masih mengandalkan locator batch, sementara standar edisi/locator final belum diputuskan;
+- SRC-HAD-QJ1-001 mengonsolidasikan perawi dan sumber awal 40/40 kandidat; 24/40 memiliki locator daring eksplisit dan 16/40 masih mengandalkan locator batch, sementara standar edisi/locator final belum diputuskan;
 - takhrij, terjemah, whitelist literasi, dan safeguarding belum dijalankan;
 - MAP-HAD-QJ1-001 v0.2 memetakan P001–P040, interval 1/3/7/14, checkpoint maksimum delapan prompt, dan carryover; AUD-HAD-QJ1-001 selesai internal, tetapi frekuensi aktual serta mapping Jilid 2–8 belum tersedia;
 - PROP-HAD-QJ1-001 menyediakan resolusi enam klaster semantik dan prioritas pemindahan/penggantian; REV/RUB/FRM/PRO/DEC-HAD-QJ1-001 menyiapkan review hingga otorisasi. Seluruh keputusan panel, prasyarat pilot, data, Reviewer-ID, Evidence-ID, dan Decision-ID masih kosong.
@@ -130,6 +130,7 @@ Karena itu register ini meningkatkan kesiapan arsitektur dan inventaris awal, bu
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.14.0-id | 29 Juli 2026 | Menambahkan locator daring HAD-000009–HAD-000016; cakupan locator daring menjadi 24/40 |
 | 0.13.0-id | 29 Juli 2026 | Menambahkan locator daring HAD-000001–HAD-000008; cakupan locator daring menjadi 16/40 |
 | 0.12.0-id | 29 Juli 2026 | Menambahkan SRC-HAD-QJ1-001; perawi dan sumber awal 40/40 terkonsolidasi, 0 Evidence-ID ahli |
 | 0.11.0-id | 29 Juli 2026 | Menambahkan PROP-HAD-QJ1-001 untuk membedakan enam klaster tema dan memprioritaskan objek yang mungkin dipindah/diganti |
