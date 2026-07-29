@@ -205,6 +205,7 @@ Jalur tercepat yang sah dari 42%:
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.18.0-id | 29 Juli 2026 | Peta P016–P021 selesai dan lulus audit distribusi 44:44; progres tetap 42% karena halaman masih tertahan Evidence-ID |
 | 0.17.0-id | 29 Juli 2026 | Audit otomatis 24 lema/72 bentuk tanwin lulus dan paket ahli siap; progres tetap 42% sampai Evidence-ID tersedia |
 | 0.16.0-id | 29 Juli 2026 | WLT-QJ2-TAN-001 menghasilkan 24 kata nyata dan 72 bentuk tanwin kandidat; progres tetap 42% karena verifikasi ahli/Utsmani belum menutup P016 |
 | 0.15.0-id | 29 Juli 2026 | DEC-CUR-009 dikoreksi: setiap halaman empat-huruf diawali 8 tangga tiga-huruf, lalu 16 tangga empat-huruf; progres tetap 42% |
