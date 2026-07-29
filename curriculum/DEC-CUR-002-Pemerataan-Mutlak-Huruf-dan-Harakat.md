@@ -1,11 +1,11 @@
 # DEC-CUR-002 — Pemerataan Mutlak Huruf dan Harakat Jilid 1
 
 **Decision-ID:** DEC-CUR-002  
-**Status:** Draf Terkendali — Berlaku untuk penyusunan PR #2 setelah persetujuan pemilik akademik  
+**Status:** SUPERSEDED UNTUK ALOKASI — dipertahankan sebagai riwayat/audit  
 **Tanggal Keputusan:** 28 Juli 2026  
 **Pemilik Akademik:** Aris Liswanto  
 **Ruang Lingkup:** QJ1-P001–QJ1-P040  
-**Menggantikan:** ketentuan alokasi 50:50 dalam DEC-CUR-001  
+**Digantikan oleh:** DEC-CUR-007 untuk alokasi produksi Jilid 1–8  
 **Tidak Mengubah:** Konstitusi QURBATA, Governance v1.0, safeguarding, atau blocker materi khusus  
 
 ## 1. Latar Belakang
