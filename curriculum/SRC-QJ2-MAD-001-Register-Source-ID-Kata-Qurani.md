@@ -47,3 +47,22 @@
 قِيلَ، دِيْنٌ، تِيْنٌ، طِيْنٌ، حِيْنٌ، فِيْلٌ، كَرِيْمٌ، يَتِيْمٌ، شَدِيْدٌ، قَرِيْبٌ، بَعِيْدٌ، نُوْرٌ، سُوْقٌ، رُوْحٌ، فَوْزٌ، دُوْنَ، نُجُوْمٌ، سُجُوْدٌ، حُدُوْدٌ، شُهُوْدٌ، دُخُوْلٌ، خُرُوْجٌ.
 
 Entri di bagian ini tetap berstatus `PENDING-SOURCE-ID` dan tidak boleh diklaim sebagai lafaz Qurani persis sebelum diverifikasi.
+
+## 5. Entri terverifikasi lanjutan
+
+| Source-ID | Lafaz persis | Surah:ayat | Bukti konteks | Status |
+|---|---|---|---|---|
+| QID-058-011-QILA | قِيْلَ | Al-Mujadilah 58:11 | اِذَا قِيْلَ لَكُمْ | EXACT-QURAN |
+| QID-093-006-YATIMAN | يَتِيْمًا | Ad-Duha 93:6 | اَلَمْ يَجِدْكَ يَتِيْمًا | EXACT-QURAN |
+| QID-038-026-SHADID | شَدِيْدٌ | Sad 38:26 | لَهُمْ عَذَابٌ شَدِيْدٌ | EXACT-QURAN |
+| QID-002-186-QARIB | قَرِيْبٌ | Al-Baqarah 2:186 | فَاِنِّيْ قَرِيْبٌ | EXACT-QURAN |
+| QID-021-109-BAID | بَعِيْدٌ | Al-Anbiya' 21:109 | اَقَرِيْبٌ اَمْ بَعِيْدٌ | EXACT-QURAN |
+| QID-024-035-NUR | نُوْرٌ | An-Nur 24:35 | نُوْرٌ عَلٰى نُوْرٍ | EXACT-QURAN |
+
+## 6. Koreksi klasifikasi penting
+
+- **فَوْزٌ** adalah fathah + waw sukun (lin), bukan dhammah + waw mad.
+- Bentuk salah **فُوْزٌ** telah dikeluarkan dari P037–P038.
+- Penggantinya **طُوْرٌ** sah sebagai mufradat mad waw, tetapi tetap berstatus `ARABIC-VOCAB/PENDING-SOURCE-ID` sampai bentuk persisnya diverifikasi.
+- **دِيْنٌ** adalah mufradat Arab yang benar, tetapi pencarian awal pada Mushaf Standar Indonesia menemukan bentuk kontekstual seperti **الدِّيْنِ** dan **دِيْنِ**; karena itu bentuk nominatif indefinit **دِيْنٌ** belum diberi status EXACT-QURAN.
+- **فِيْلٌ** dan **تِيْنٌ** sah sebagai mufradat, tetapi ayat terkenal menampilkan bentuk **الْفِيْلِ** dan **التِّيْنِ**; bentuk halaman tetap vocabulary sampai Source-ID persis ditemukan.
