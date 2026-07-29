@@ -2,17 +2,18 @@
 
 **Whitelist-ID:** WLT-QJ2-TAN-001  
 **Tanggal:** 29 Juli 2026  
-**Cakupan:** QJ2-P016, P017, P019–P021  
-**Pengendali:** DEC-CUR-009 dan BLK-QJ2-ORTHO-001  
+**Cakupan:** QJ2-P021–P024  
+**Pengendali:** DEC-CUR-009, DEC-CUR-010, dan BLK-QJ2-ORTHO-001  
 **Status:** CANDIDATE-WHITELIST / BELUM BOLEH DICETAK
 
 ## 1. Aturan
 
-- Tangga 1–8 menggunakan kata tiga huruf.
-- Tangga 9–24 menggunakan kata empat huruf.
+- Tangga 1–8 menggunakan lema dasar tiga huruf.
+- Tangga 9–24 menggunakan lema dasar empat huruf.
 - Seluruh kata mempunyai tiga bentuk kasus: fathatain, kasratain, dan dhammatain.
 - Tanwin selalu berada pada huruf terakhir.
 - Kata berakhiran ta marbuthah tidak menerima alif tambahan pada fathatain.
+- Alif penyangga fathatain pada bentuk seperti أَحَدًا adalah unsur ortografis, bukan tambahan identitas lema; audit panjang tangga memakai jumlah huruf lema dasar.
 - Daftar ini menghindari sukun, tasydid, dan pola mad eksplisit sebagai fokus.
 - Rujukan Qurani berstatus kandidat sampai teks Utsmani, posisi kata, dan konteks kasus diverifikasi ahli.
 
