@@ -2,7 +2,7 @@
 
 **Kode:** QJ2-MASTER  
 **Produk:** Buku QURBATA Jilid 2  
-**Versi:** 0.9.0-id  
+**Versi:** 0.10.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 29 Juli 2026  
 **Jumlah Halaman Inti:** 40  
@@ -27,8 +27,8 @@ Target belum merupakan klaim efektivitas sebelum review ahli, pilot, Evidence-ID
 ## 3. Aturan Halaman
 
 1. Kode halaman: `QJ2-P001`–`QJ2-P040`.
-2. Mulai Jilid 2, seluruh halaman latihan menggunakan 24 tangga dan setiap tangga tepat tiga huruf sesuai DEC-CUR-008.
-3. Halaman akuisisi menggunakan DEC-CUR-007 dan DEC-CUR-008: 36/72 token fokus dan 36/72 token review; seluruh 29 identitas termasuk hamzah/alif serta pemutus sambungan masuk rotasi.
+2. QJ2-P001–P015 menggunakan 24 tangga × 3 huruf sesuai DEC-CUR-008; mulai tahap tanwin QJ2-P016 menggunakan 24 tangga × 4 huruf sesuai DEC-CUR-009.
+3. Halaman akuisisi tetap 50:50: sebelum tanwin 36:36 token; mulai tanwin 48:48 token. Seluruh identitas termasuk hamzah/alif serta pemutus sambungan tetap masuk rotasi.
 4. Bentuk terpisah hanya dipakai sebagai remedial; fokus bergerak ke bentuk sambung.
 5. Kata Qurani harus memiliki Source-ID dan lulus audit teks.
 6. Tanwin hanya muncul pada posisi yang benar.
@@ -58,10 +58,10 @@ Target belum merupakan klaim efektivitas sebelum review ahli, pilot, Evidence-ID
 | 13 | QJ2-P013 | ه و ي | bentuk sambung Ha–Waw–Ya | Latihan |
 | 14 | QJ2-P014 | integrasi posisi awal | seluruh keluarga eligible | Penguatan |
 | 15 | QJ2-P015 | integrasi posisi tengah–akhir | seluruh keluarga eligible | Penguatan |
-| 16 | QJ2-P016 | fathatain | ـً pada bentuk/kata sah | Latihan |
-| 17 | QJ2-P017 | kasratain | ـٍ pada bentuk/kata sah | Latihan |
+| 16 | QJ2-P016 | fathatain + transisi empat huruf | kata empat huruf sah berakhiran ـً | Latihan |
+| 17 | QJ2-P017 | kasratain | kata empat huruf sah berakhiran ـٍ | Latihan |
 | 18 | QJ2-P018 | Hafalan 1 | unit Al-Qur'an yang disahkan | Hafalan 1 |
-| 19 | QJ2-P019 | dhammatain | ـٌ pada bentuk/kata sah | Latihan |
+| 19 | QJ2-P019 | dhammatain | kata empat huruf sah berakhiran ـٌ | Latihan |
 | 20 | QJ2-P020 | Evaluasi Sambung dan Tanwin | P001–P019 | Evaluasi 2 |
 | 21 | QJ2-P021 | integrasi tiga tanwin | kontras ـً ـٍ ـٌ | Penguatan |
 | 22 | QJ2-P022 | mad alif | fathah + alif | Latihan |
@@ -135,6 +135,7 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.10.0-id | 29 Juli 2026 | DEC-CUR-009 menetapkan transisi ke 24 tangga kata empat huruf mulai tahap tanwin; distribusi akuisisi 48:48 |
 | 0.9.0-id | 29 Juli 2026 | DEC-CUR-008 diterapkan: P001–P015 seluruhnya tiga huruf, 1.080 token, prioritas kata bermakna, lulus AUD-QJ2-CONTENT-007 |
 | 0.8.0-id | 29 Juli 2026 | Regenerasi P001–P015 selesai dan lulus AUD-QJ2-CONTENT-006; seluruh 29 identitas, hamzah/alif, dan pemutus sambungan hadir |
 | 0.7.0-id | 29 Juli 2026 | Menerapkan DEC-CUR-007 dan membuka regenerasi P001–P015 menjadi 50:50 dengan seluruh identitas pada review |
