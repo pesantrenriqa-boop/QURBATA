@@ -2,9 +2,9 @@
 
 **Document-ID:** DEC-CUR-006  
 **Versi:** 1.0.0-id  
-**Status:** BERLAKU UNTUK DRAF JILID 1  
+**Status:** SUPERSEDED OLEH DEC-CUR-007  
 **Tanggal:** 29 Juli 2026  
-**Cakupan:** halaman pembelajaran reguler QJ1-P002–QJ1-P039  
+**Cakupan historis:** halaman pembelajaran reguler QJ1-P002–QJ1-P039  
 **Pengecualian:** halaman pembuka, evaluasi, hafalan, Bahasa Arab khusus, dan akhlak khusus
 
 ## 1. Keputusan
