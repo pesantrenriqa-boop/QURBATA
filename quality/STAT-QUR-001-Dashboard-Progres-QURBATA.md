@@ -205,6 +205,7 @@ Jalur tercepat yang sah dari 42%:
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.14.0-id | 29 Juli 2026 | DEC-CUR-009 menetapkan transisi kata empat huruf mulai tanwin; progres tetap 42% karena isi P016 masih menunggu whitelist ortografi |
 | 0.13.0-id | 29 Juli 2026 | Koreksi DEC-CUR-008 diterapkan pada QJ2-P001–P015: tidak ada lagi tangga dua huruf; 1.080 token lulus audit, progres tetap 42% karena pekerjaan ulang |
 | 0.12.0-id | 29 Juli 2026 | Regenerasi korektif QJ2-P001–P015 lulus audit 50:50 dan cakupan 29 identitas; progres tetap 42% karena pekerjaan ulang menjaga integritas baseline |
 | 0.11.0-id | 29 Juli 2026 | P014–P015 menyelesaikan integrasi posisi; BLK-QJ2-ORTHO-001 mencegah contoh tanwin keliru; 360 latihan lulus audit, total mentah 42,222%, laporan 42% |
