@@ -1,37 +1,39 @@
 # DEC-CUR-004 — Aktivasi Objek Tahfidz Jilid 1
 
 **Decision-ID:** DEC-CUR-004  
-**Status:** PROPOSED — BELUM DISETUJUI/BELUM DIRATIFIKASI  
+**Status:** OWNER-APPROVED-FOR-VALIDATION — BELUM ACTIVE  
 **Tanggal usulan:** 28 Juli 2026  
+**Tanggal keputusan pemilik:** 29 Juli 2026  
 **Kelas:** Akademik  
 **Domain:** Kurikulum/Tahfidz  
 **Pemohon/Penyusun draf:** Tim penyusunan QURBATA  
 **Pengambil keputusan:** Pemilik Akademik QURBATA  
-**Document Controller:** Menunggu pencatatan  
+**Document Controller:** Aris Liswanto  
 **Blocker:** BLOCKED-CUR-HAF-001 dan BLOCKED-CUR-HAF-002
 
 ## 1. Masalah
 
-QURBATA Jilid 1 telah mempunyai kandidat materi, pemetaan P001–P040, rubrik checkpoint, form bukti, dan paket validasi ahli Tahfidz. Objek masih harus tetap tidak aktif sampai sumber, teks, qiraah, model bacaan, pembagian potongan, beban, asesmen, safeguarding, serta keputusan ahli lengkap.
+QURBATA Jilid 1 telah mempunyai kandidat materi, pemetaan P001–P040, rubrik checkpoint, form bukti, dan paket validasi ahli Tahfidz. Objek tidak boleh berubah menjadi aktif sampai sumber, teks, qiraah, model bacaan, pembagian potongan, beban, asesmen, safeguarding, serta keputusan ahli lengkap.
 
-Dokumen ini adalah wadah keputusan. Keberadaannya tidak berarti pilihan telah disetujui.
+Keputusan pemilik akademik dalam dokumen ini menetapkan arah materi untuk diteruskan ke validasi ahli. Keputusan ini **bukan** tashih qiraah, bukan izin publikasi, dan bukan aktivasi produk.
 
-## 2. Objek yang Diusulkan
+## 2. Objek yang Diputuskan
 
-| Object-ID | Nama kandidat | Cakupan | Status sebelum keputusan |
-|---|---|---|---|
-| HAF-000001 | Hafalan 1 — Al-Fatihah ayat 1–3 | P001–P018 | PROPOSED-INACTIVE |
-| HAF-000002 | Hafalan 2 — Al-Fatihah ayat 4–7 | P019–P036 | PROPOSED-INACTIVE |
-| HAF-000003 | Integrasi dan retensi Al-Fatihah ayat 1–7 | P029–P040 | PROPOSED-INACTIVE |
+| Object-ID | Nama kandidat | Cakupan | Keputusan pemilik | Status operasional |
+|---|---|---|---|---|
+| HAF-000001 | Hafalan 1 — Al-Fatihah ayat 1–3 | P001–P018 | DISETUJUI UNTUK VALIDASI | APPROVED-CANDIDATE-INACTIVE |
+| HAF-000002 | Hafalan 2 — Al-Fatihah ayat 4–7 | P019–P036 | DISETUJUI UNTUK VALIDASI | APPROVED-CANDIDATE-INACTIVE |
+| HAF-000003 | Integrasi dan retensi Al-Fatihah ayat 1–7 | P029–P040 | DISETUJUI UNTUK VALIDASI | APPROVED-CANDIDATE-INACTIVE |
 
-## 3. Pilihan yang Dipertimbangkan
+Alur yang dipilih adalah satu jalur utuh: P018 menargetkan Al-Fatihah ayat 1–3, P036 menargetkan ayat 4–7, dan fase akhir mengintegrasikan serta mempertahankan ayat 1–7.
 
-| Opsi | Dampak |
-|---|---|
-| A — setujui kandidat tanpa perubahan | mengaktifkan objek setelah seluruh bukti/gate lengkap |
-| B — setujui dengan perubahan | objek tetap tidak aktif sampai perubahan dan verifikasi ulang selesai |
-| C — tunda | objek tetap PROPOSED-INACTIVE; mapping tidak ditanam ke produk |
-| D — tolak | kandidat ditutup tanpa penghapusan riwayat; alternatif memperoleh keputusan baru |
+## 3. Dasar Keputusan
+
+1. Al-Fatihah merupakan materi sentral dalam ibadah dan relevan bagi seluruh peserta.
+2. Pembagian ayat 1–3 dan 4–7 memungkinkan akuisisi bertahap serta murojaah kumulatif.
+3. Materi dapat diajarkan melalui sima’, talqin, talaqqi, penyambungan, dan recall tanpa menyamakan hafalan dengan kemampuan membaca.
+4. Struktur ini telah diturunkan dalam PROP-CUR-QJ1-001 dan MAP-HAF-QJ1-001.
+5. Beban aktual, pembagian potongan, qiraah, rasm, tajwid, waqaf-ibtida’, model bacaan, dan kelayakan usia tetap wajib diputuskan oleh ahli.
 
 ## 4. Bukti Wajib
 
@@ -47,23 +49,22 @@ Dokumen ini adalah wadah keputusan. Keberadaannya tidak berarti pilihan telah di
 | review safeguarding dan beban |  | NOT PROVIDED |
 | pernyataan konflik kepentingan |  | NOT PROVIDED |
 
-Sistem dan Document Controller harus menolak perubahan menjadi `APPROVED`, `RATIFIED`, atau `ACTIVE` jika satu bukti wajib belum tersedia.
+Sistem dan Document Controller harus menolak perubahan menjadi `ACTIVE-DRAFT`, `APPROVED-FOR-PILOT`, `RATIFIED`, atau `ACTIVE` jika satu bukti wajib belum tersedia.
 
-## 5. Dampak Jika Disetujui
+## 5. Dampak Keputusan
 
-Dokumen/objek yang wajib diperbarui:
+Dokumen/objek berikut boleh dipersiapkan sebagai kandidat validasi, tetapi belum boleh dipublikasikan sebagai materi final:
 
 - REG-CUR-001;
 - MAP-HAF-QJ1-001;
-- QJ1-P001–P040 pada bagian Tahfidz/Murojaah;
-- khususnya QJ1-P018, QJ1-P036, dan QJ1-P040;
+- REV-HAF-QJ1-001;
+- RUB-HAF-QJ1-001 dan FRM-HAF-QJ1-001;
+- QJ1-P018, QJ1-P036, dan QJ1-P040;
 - panduan guru;
-- rubrik/form checkpoint;
-- buku peserta setelah whitelist tampilan;
 - register keputusan, bukti, versi, perubahan, dan blocker;
 - sumber tunggal untuk turunan RIQA OS.
 
-Persetujuan tidak otomatis mengizinkan publikasi teks Arab, audio, atau buku final. Gate editorial, render, hak penggunaan, dan otorisasi publikasi tetap berlaku.
+Persetujuan ini tidak otomatis mengizinkan publikasi teks Arab, audio, atau buku final. Gate ahli, editorial, render, hak penggunaan, safeguarding, dan otorisasi publikasi tetap berlaku.
 
 ## 6. Keputusan Ahli
 
@@ -71,7 +72,7 @@ Persetujuan tidak otomatis mengizinkan publikasi teks Arab, audio, atau buku fin
 |---|---|
 | Paket review | REV-HAF-QJ1-001 |
 | Keputusan | SETUJU UNTUK PILOT / SETUJU DENGAN KOREKSI / REVISI / TOLAK / BLOCKED |
-| Cakupan objek |  |
+| Cakupan objek | HAF-000001, HAF-000002, HAF-000003 |
 | Temuan material |  |
 | Koreksi wajib |  |
 | Evidence-ID |  |
@@ -82,20 +83,18 @@ Persetujuan tidak otomatis mengizinkan publikasi teks Arab, audio, atau buku fin
 
 ## 7. Keputusan Pemilik Akademik
 
-Bagian ini kosong sampai Pemilik Akademik mengambil keputusan eksplisit.
-
 | Elemen | Isian |
 |---|---|
-| Keputusan | SETUJUI / SETUJUI DENGAN PERUBAHAN / TUNDA / TOLAK |
-| Alasan |  |
-| Objek yang diaktifkan |  |
-| Tanggal efektif |  |
-| Risiko residual yang diterima |  |
-| Pemilik implementasi |  |
-| Tenggat implementasi |  |
-| Tanggal review |  |
+| Keputusan | SETUJUI REKOMENDASI UNTUK DILANJUTKAN KE VALIDASI AHLI |
+| Alasan | Al-Fatihah dipilih sebagai jalur hafalan utuh yang sentral, bertahap, kumulatif, dan sesuai orientasi Qurani QURBATA |
+| Objek yang disetujui sebagai kandidat | HAF-000001, HAF-000002, HAF-000003 |
+| Tanggal efektif keputusan arah | 29 Juli 2026 |
+| Risiko residual yang diterima | Kandidat belum tervalidasi pada qiraah, rasm, tajwid, waqaf-ibtida’, beban, audio, asesmen, dan safeguarding; karena itu objek tetap inactive |
+| Pemilik implementasi | Tim Kurikulum QURBATA dan Document Controller |
+| Tenggat implementasi | Mengikuti penyelesaian paket validasi ahli; tidak menetapkan tanggal publikasi |
+| Tanggal review | Setelah Evidence-ID validasi ahli tersedia |
 | Nama | Aris Liswanto |
-| Tanda tangan/paraf |  |
+| Tanda tangan/paraf | Persetujuan elektronik melalui instruksi kelanjutan pekerjaan pada repositori QURBATA, 29 Juli 2026 |
 
 ## 8. Kontrol Aktivasi
 
@@ -103,11 +102,11 @@ Document Controller hanya boleh mengubah status objek menjadi `ACTIVE-DRAFT` unt
 
 1. keputusan ahli tersedia;
 2. seluruh koreksi material telah diverifikasi;
-3. Pemilik Akademik memberi keputusan eksplisit;
-4. Evidence-ID lengkap;
-5. konflik kepentingan tercatat;
-6. implementasi lintas dokumen mempunyai daftar perubahan;
-7. audit konsistensi pasca-implementasi lulus.
+3. Evidence-ID lengkap;
+4. konflik kepentingan tercatat;
+5. implementasi lintas dokumen mempunyai daftar perubahan;
+6. audit konsistensi pasca-implementasi lulus;
+7. tampilan peserta dan model audio memperoleh izin penggunaan yang sesuai.
 
 Aktivasi pilot tidak sama dengan ratifikasi publikasi atau klaim efektivitas.
 
@@ -115,14 +114,17 @@ Aktivasi pilot tidak sama dengan ratifikasi publikasi atau klaim efektivitas.
 
 | Action-ID | Tindakan | Pemilik | Status | Bukti |
 |---|---|---|---|---|
-| ACT-DEC-CUR-004-01 | menerapkan koreksi ahli |  | NOT STARTED |  |
-| ACT-DEC-CUR-004-02 | mengaktifkan Object-ID yang disetujui | Document Controller | NOT STARTED |  |
-| ACT-DEC-CUR-004-03 | menanam mapping ke sumber halaman |  | NOT STARTED |  |
-| ACT-DEC-CUR-004-04 | menjalankan audit konsistensi |  | NOT STARTED |  |
-| ACT-DEC-CUR-004-05 | menutup/menurunkan blocker sesuai bukti | Document Controller | NOT STARTED |  |
+| ACT-DEC-CUR-004-01 | mencatat keputusan arah pemilik akademik | Document Controller | COMPLETE | DEC-CUR-004 v0.2.0-id |
+| ACT-DEC-CUR-004-02 | menjalankan validasi ahli | Ahli Al-Qur’an/Qiraat/Tahfidz | NOT STARTED | REV-HAF-QJ1-001 |
+| ACT-DEC-CUR-004-03 | menerapkan koreksi ahli | Tim Kurikulum | BLOCKED-BY-EXPERT |  |
+| ACT-DEC-CUR-004-04 | mengaktifkan Object-ID yang lulus | Document Controller | BLOCKED-BY-EVIDENCE |  |
+| ACT-DEC-CUR-004-05 | menanam materi tervalidasi ke sumber halaman | Tim Buku | BLOCKED-BY-EVIDENCE |  |
+| ACT-DEC-CUR-004-06 | menjalankan audit konsistensi | QA Lead | BLOCKED-BY-IMPLEMENTATION |  |
+| ACT-DEC-CUR-004-07 | menutup/menurunkan blocker sesuai bukti | Document Controller | BLOCKED-BY-EVIDENCE |  |
 
 ## 10. Riwayat
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.2.0-id | 29 Juli 2026 | Pemilik akademik menyetujui HAF-000001–000003 sebagai kandidat untuk validasi ahli; objek tetap inactive dan blocker belum ditutup |
 | 0.1.0-id | 28 Juli 2026 | Wadah keputusan aktivasi objek Tahfidz; seluruh keputusan dan bukti masih kosong |
