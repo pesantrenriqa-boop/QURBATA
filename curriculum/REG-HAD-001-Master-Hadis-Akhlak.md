@@ -130,6 +130,7 @@ Karena itu register ini meningkatkan kesiapan arsitektur dan inventaris awal, bu
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.21.0-id | 29 Juli 2026 | Menambahkan WRK-HAD-QJ1-004; instrumen terperinci kumulatif 32/40, hasil ahli tetap 0/32 |
 | 0.20.0-id | 29 Juli 2026 | Menambahkan WRK-HAD-QJ1-003; instrumen terperinci kumulatif 24/40, hasil ahli tetap 0/24 |
 | 0.19.0-id | 29 Juli 2026 | Menambahkan WRK-HAD-QJ1-002 untuk delapan objek Gelombang 2; instrumen kumulatif siap 16/40, hasil ahli tetap 0/16 |
 | 0.18.0-id | 29 Juli 2026 | Menambahkan WRK-HAD-QJ1-001 untuk delapan objek Gelombang 1; instrumen siap, hasil ahli tetap 0/8 |
