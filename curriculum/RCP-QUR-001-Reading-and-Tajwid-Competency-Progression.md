@@ -1,7 +1,7 @@
 # RCP-QUR-001 — Reading and Tajwid Competency Progression Jilid 1–8
 
 **Document-ID:** RCP-QUR-001  
-**Versi:** 0.1.0-id  
+**Versi:** 0.2.0-id  
 **Status:** DRAFT TERKENDALI  
 **Tanggal:** 29 Juli 2026  
 **Cakupan:** QURBATA Jilid 1–8  
@@ -27,6 +27,8 @@ Progression bersifat kumulatif. Materi hanya dapat tampil sebagai bacaan peserta
 8. Setiap kenaikan jilid membutuhkan Assessment-ID, Evidence-ID, dan keputusan tercatat.
 9. Hafalan, Bahasa Arab, serta hadis/akhlak terintegrasi tanpa mengurangi fokus kompetensi baca.
 10. Master Markdown/data adalah sumber tunggal; PDF dan turunan tidak diedit sebagai sumber mandiri.
+11. Halaman akuisisi menerapkan DEC-CUR-007: 50% fokus dan 50% murojaah seluruh identitas/kompetensi eligible.
+12. Hamzah/alif serta huruf pemutus sambungan wajib tetap masuk rotasi kumulatif pada seluruh jilid.
 
 ## 3. Progression Delapan Jilid
 
@@ -103,4 +105,5 @@ Posisi khusus mengikuti baseline P010, P018, P020, P028, P030, P036, P038, dan P
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.2.0-id | 29 Juli 2026 | Menautkan DEC-CUR-007: 50:50 dan murojaah seluruh identitas berlaku lintas Jilid 1–8 |
 | 0.1.0-id | 29 Juli 2026 | Menetapkan progression baca/tajwid Jilid 1–8, dependency, pola halaman, gate, dan pekerjaan turunan |
