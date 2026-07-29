@@ -10,9 +10,9 @@
 | No. | Bacaan | Jenis |
 |---:|---|---|
 | 1 | قِيلَ | fokus ya mad |
-| 2 | دِينَ | fokus ya mad |
-| 3 | طِينَ | fokus ya mad |
-| 4 | حِينَ | fokus ya mad |
+| 2 | دِينٌ | fokus ya mad |
+| 3 | طِينٌ | fokus ya mad |
+| 4 | حِينٌ | fokus ya mad |
 | 5 | قَالَ | murojaah alif |
 | 6 | كَانَ | murojaah alif |
 | 7 | تَابَ | murojaah alif |
@@ -22,22 +22,22 @@
 
 | No. | Bacaan | Makna/status |
 |---:|---|---|
-| 9 | كَرِيمَ | mulia; kandidat Qurani |
-| 10 | رَحِيمَ | penyayang; kandidat Qurani |
-| 11 | عَلِيمَ | mengetahui; kandidat Qurani |
-| 12 | حَكِيمَ | bijaksana; kandidat Qurani |
-| 13 | عَظِيمَ | agung; kandidat Qurani |
-| 14 | يَتِيمَ | anak yatim; kandidat Qurani |
-| 15 | شَدِيدَ | keras/berat; kandidat Qurani |
-| 16 | قَرِيبَ | dekat; kandidat Qurani |
-| 17 | بَعِيدَ | jauh; kandidat Qurani |
-| 18 | كَبِيرَ | besar; kandidat Qurani |
-| 19 | صَغِيرَ | kecil; kandidat Qurani |
-| 20 | جَمِيلَ | indah; Arab/hadis kandidat |
-| 21 | سَبِيلَ | jalan; kandidat Qurani |
-| 22 | فَرِيقَ | kelompok; kandidat Qurani |
-| 23 | نَذِيرَ | pemberi peringatan; kandidat Qurani |
-| 24 | بَشِيرَ | pembawa kabar gembira; kandidat Qurani |
+| 9 | كَرِيمٌ | mulia; kandidat Qurani |
+| 10 | رَحِيمٌ | penyayang; kandidat Qurani |
+| 11 | عَلِيمٌ | mengetahui; kandidat Qurani |
+| 12 | حَكِيمٌ | bijaksana; kandidat Qurani |
+| 13 | عَظِيمٌ | agung; kandidat Qurani |
+| 14 | يَتِيمٌ | anak yatim; kandidat Qurani |
+| 15 | شَدِيدٌ | keras/berat; kandidat Qurani |
+| 16 | قَرِيبٌ | dekat; kandidat Qurani |
+| 17 | بَعِيدٌ | jauh; kandidat Qurani |
+| 18 | كَبِيرٌ | besar; kandidat Qurani |
+| 19 | صَغِيرٌ | kecil; kandidat Qurani |
+| 20 | جَمِيلٌ | indah; Arab/hadis kandidat |
+| 21 | سَبِيلٌ | jalan; kandidat Qurani |
+| 22 | فَرِيقٌ | kelompok; kandidat Qurani |
+| 23 | نَذِيرٌ | pemberi peringatan; kandidat Qurani |
+| 24 | بَشِيرٌ | pembawa kabar gembira; kandidat Qurani |
 
 ## Panel terintegrasi
 
