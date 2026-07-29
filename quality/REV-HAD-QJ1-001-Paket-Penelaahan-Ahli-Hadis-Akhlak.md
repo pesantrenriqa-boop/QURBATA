@@ -4,7 +4,7 @@
 **Status:** READY-FOR-EXPERT — BELUM DIISI  
 **Tanggal:** 29 Juli 2026  
 **Objek:** HAD-000001–HAD-000040  
-**Acuan:** HCP-QUR-001, REG-HAD-001, BAT-HAD-001–005, SRC-HAD-QJ1-001, MAP-HAD-QJ1-001 v0.2, AUD-HAD-QJ1-001, PROP-HAD-QJ1-001, RUB-HAD-QJ1-001, FRM-HAD-QJ1-001, PRO-HAD-QJ1-001, DEC-HAD-QJ1-001, QPR-HAD-QJ1-001, WRK-HAD-QJ1-001, WRK-HAD-QJ1-002, WRK-HAD-QJ1-003
+**Acuan:** HCP-QUR-001, REG-HAD-001, BAT-HAD-001–005, SRC-HAD-QJ1-001, MAP-HAD-QJ1-001 v0.2, AUD-HAD-QJ1-001, PROP-HAD-QJ1-001, RUB-HAD-QJ1-001, FRM-HAD-QJ1-001, PRO-HAD-QJ1-001, DEC-HAD-QJ1-001, QPR-HAD-QJ1-001, WRK-HAD-QJ1-001, WRK-HAD-QJ1-002, WRK-HAD-QJ1-003, WRK-HAD-QJ1-004
 
 ## 1. Tujuan
 
@@ -140,7 +140,7 @@ Penelaah wajib memberi catatan khusus pada:
 
 ## 8A. Urutan Pelaksanaan
 
-Pemeriksaan menggunakan lima gelombang pada QPR-HAD-QJ1-001. Gelombang 1–3 masing-masing menggunakan WRK-HAD-QJ1-001, WRK-HAD-QJ1-002, dan WRK-HAD-QJ1-003 sebagai lembar objek serta audit silang. Pengelompokan hanya menentukan prioritas; ahli tetap mengisi matriks berdasarkan bukti setiap objek. Pasangan yang berpotensi VARIANT atau DUPLICATE harus diaudit silang sebelum keputusan Full-Hadith-ID dikunci.
+Pemeriksaan menggunakan lima gelombang pada QPR-HAD-QJ1-001. Gelombang 1–4 masing-masing menggunakan WRK-HAD-QJ1-001 sampai WRK-HAD-QJ1-004 sebagai lembar objek, audit silang, dan keputusan progression. Pengelompokan hanya menentukan prioritas; ahli tetap mengisi matriks berdasarkan bukti setiap objek. Pasangan yang berpotensi VARIANT atau DUPLICATE harus diaudit silang sebelum keputusan Full-Hadith-ID dikunci.
 
 ## 9. Status Awal
 
