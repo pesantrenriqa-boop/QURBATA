@@ -1,7 +1,7 @@
 # BAT-HAD-001 — Kandidat Hadis Akhlak Jilid 1, Batch 01
 
 **Batch-ID:** BAT-HAD-001  
-**Status:** SOURCE-CHECK — BELUM DISETUJUI  
+**Status:** SOURCE-CHECK — LOCATOR DARING 8/8; BELUM DISETUJUI  
 **Tanggal:** 29 Juli 2026  
 **Cakupan usulan:** QJ1-P001–QJ1-P008  
 **Pengendali:** HCP-QUR-001 dan REG-HAD-001
@@ -24,6 +24,7 @@
 - **Makna kerja:** Siapa yang tidak menyayangi, tidak akan disayangi.
 - **Perawi:** Jarir bin Abdullah
 - **Sumber:** Shahih al-Bukhari no. 6013; Shahih Muslim no. 2319
+- **Locator awal:** https://dorar.net/h/a0twW4od
 - **Metadata derajat:** sahih pada sumber
 - **Tindakan teramati:** memperlakukan teman, guru, keluarga, hewan, dan benda dengan lembut sesuai konteks.
 - **Risiko:** jangan mengajarkan bahwa satu kesalahan membuat anak “tidak disayang Allah”; tekankan pembiasaan rahmah dan perbaikan.
@@ -37,6 +38,7 @@
 - **Makna kerja:** Ucapan yang baik adalah sedekah.
 - **Perawi:** Abu Hurairah
 - **Sumber:** bagian dari Shahih al-Bukhari no. 2989 dan Shahih Muslim no. 1009
+- **Locator awal:** https://dorar.net/h/UEVPfkdE
 - **Metadata derajat:** sahih; kandidat berupa penggalan hadis
 - **Tindakan teramati:** mengucapkan salam, terima kasih, permohonan maaf, dan kata yang menenangkan.
 - **Risiko:** Excerpt-Rationale wajib memastikan penggalan tidak diperlakukan sebagai hadis lain yang terpisah dari hadis induknya.
@@ -50,6 +52,7 @@
 - **Makna kerja:** Bersuci adalah separuh dari iman.
 - **Perawi:** Abu Malik al-Asy‘ari
 - **Sumber:** bagian awal Shahih Muslim no. 223
+- **Locator awal:** https://dorar.net/h/nu8DvRlD
 - **Metadata derajat:** sahih; kandidat berupa penggalan hadis
 - **Tindakan teramati:** menjaga kebersihan diri dan tempat belajar serta belajar bersuci secara benar.
 - **Risiko:** الطهور tidak boleh direduksi hanya menjadi “rapi”; guru perlu membedakan kebersihan umum dan thaharah syar‘iyyah sesuai usia.
@@ -63,6 +66,7 @@
 - **Makna kerja:** Senyummu kepada saudaramu adalah sedekah bagimu.
 - **Perawi:** Abu Dzarr al-Ghifari
 - **Sumber:** Jami‘ at-Tirmidzi no. 1956; Shahih Ibn Hibban no. 529
+- **Locator awal:** https://dorar.net/hadith/sharh/62397
 - **Metadata derajat:** at-Tirmidzi: hasan gharib; dinilai sahih oleh al-Albani dan Syu‘aib al-Arna’uth pada jalur/edisi yang dicatat
 - **Tindakan teramati:** menyambut orang lain dengan wajah ramah tanpa mengejek.
 - **Risiko:** tidak memaksa ekspresi anak; nilai utamanya keramahan dan tidak menyakiti.
@@ -76,6 +80,7 @@
 - **Makna kerja:** Rasa malu tidak mendatangkan kecuali kebaikan.
 - **Perawi:** Imran bin Hushain
 - **Sumber:** Shahih al-Bukhari no. 6117; Shahih Muslim no. 37
+- **Locator awal:** https://dorar.net/h/7HFvUXT1
 - **Metadata derajat:** sahih pada sumber
 - **Tindakan teramati:** menjaga kehormatan, meminta izin, dan menghindari tindakan tidak pantas.
 - **Risiko:** wajib membedakan haya’ terpuji dari takut bertanya, minder, atau diam ketika mengalami kekerasan.
@@ -89,6 +94,7 @@
 - **Makna kerja:** Sesungguhnya Allah Maha Lembut dan mencintai kelembutan.
 - **Perawi:** Aisyah Ummul Mukminin
 - **Sumber:** penggalan Shahih Muslim no. 2593; juga diriwayatkan al-Bukhari no. 6927 dalam konteks terkait
+- **Locator awal:** https://dorar.net/hadith/sharh/152138
 - **Metadata derajat:** sahih; kandidat berupa penggalan hadis
 - **Tindakan teramati:** berbicara dan memperlakukan orang lain dengan lembut, tanpa kekerasan.
 - **Risiko:** kelembutan tidak berarti membiarkan bahaya atau pelanggaran; safeguarding tetap berlaku.
@@ -102,6 +108,7 @@
 - **Makna kerja:** Sebarkanlah salam di antara kalian.
 - **Perawi:** Abu Hurairah
 - **Sumber:** penggalan Shahih Muslim no. 54
+- **Locator awal:** https://dorar.net/hadith/sharh/23595
 - **Metadata derajat:** sahih; kandidat berupa penggalan hadis
 - **Tindakan teramati:** memberi dan menjawab salam dengan adab yang benar.
 - **Risiko:** makna hadis induk dan konteks menumbuhkan kasih sayang wajib dijelaskan; jangan direduksi menjadi formalitas suara.
@@ -115,6 +122,7 @@
 - **Makna kerja:** Jangan sekali-kali meremehkan kebaikan apa pun.
 - **Perawi:** Abu Dzarr al-Ghifari
 - **Sumber:** penggalan Shahih Muslim no. 2626
+- **Locator awal:** https://dorar.net/h/J6s2MSMp
 - **Metadata derajat:** sahih; kandidat berupa penggalan hadis
 - **Tindakan teramati:** melakukan satu kebaikan kecil setiap hari dan mampu menyebut dampaknya.
 - **Risiko:** memiliki kedekatan tema dengan HAD-000004, tetapi Full-Hadith-ID dan sumber induknya berbeda; tetap perlu audit deduplikasi dan keputusan ahli.
