@@ -2,7 +2,7 @@
 
 **Blocker-ID:** BLK-QJ2-ORTHO-001  
 **Tanggal:** 29 Juli 2026  
-**Status:** OPEN — MATERIAL BLOCKER  
+**Status:** OPEN — CANDIDATE WHITELIST AVAILABLE / EXPERT GATE OPEN  
 **Cakupan:** QJ2-P016, QJ2-P017, QJ2-P019, QJ2-P020–P021  
 
 ## 1. Alasan
@@ -16,6 +16,10 @@ Tanwin hanya sah pada posisi akhir. Fathatain mempunyai aturan alif penyangga da
 3. Setiap entri memuat bentuk dasar, bentuk bertanwin, posisi akhir, aturan alif, arti, sumber, dan status review.
 4. Sukun, tasydid, dan mad yang belum diajarkan tidak boleh bocor melalui kata pilihan.
 5. Bila tidak tersedia cukup kata sesuai prasyarat, urutan tanwin dipindahkan melalui Decision-ID.
+
+## 2A. Kemajuan Whitelist
+
+WLT-QJ2-TAN-001 menyediakan 8 kandidat kata tiga huruf dan 16 kandidat kata empat huruf beserta 72 bentuk tanwin. Struktur kandidat tersedia, tetapi verifikasi ahli, teks Utsmani, dan render masih terbuka.
 
 ## 3. Bukti untuk Menutup Gate
 
