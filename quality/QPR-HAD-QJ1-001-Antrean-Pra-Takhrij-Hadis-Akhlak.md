@@ -40,6 +40,10 @@ Setiap gelombang berisi delapan objek. Gelombang berikutnya boleh disiapkan, tet
 | 4 — kedekatan tema dan progression | 001, 002, 008, 019, 021, 026, 029, 033 | rahmah, kebaikan umum, kekuatan, bantuan sosial, dan kelembutan berdekatan dengan objek lain | DUP ilmiah + keputusan APPROVE/RESEQUENCE/REPLACE/MERGE-THEME |
 | 5 — konsolidasi sisa | 003, 005, 012, 018, 025, 030, 034, 035 | risiko relatif lebih terkendali tetapi seluruh bukti tetap wajib | paket lengkap per objek dan audit silang 40/40 |
 
+## 3A. Instrumen Gelombang 1
+
+WRK-HAD-QJ1-001 menyediakan lembar terperinci untuk delapan objek Gelombang 1, termasuk sumber awal, risiko spesifik, pertanyaan wajib, audit silang, Evidence-ID, dan keputusan. Instrumen siap digunakan; hasil ahli tetap 0/8.
+
 ## 4. Lembar Kendali Gelombang
 
 | Gelombang | Objek | Locator | SRC/MAT/GRD/DUP ahli | TRN | PED/SAFE/AUD | Evidence-ID | Status |
