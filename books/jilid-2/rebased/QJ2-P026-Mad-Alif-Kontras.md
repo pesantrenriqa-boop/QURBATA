@@ -9,7 +9,7 @@
 
 | No. | Tangga bacaan | Target |
 |---:|---|---|
-| 1 | بَتَبَتَ → بَاتَ | jangan panjangkan بَ |
+| 1 | بَتَبَ → بَاتَ | jangan panjangkan بَ |
 | 2 | تَبَ → تَابَ | alif setelah تَ |
 | 3 | قَتَلَ → قَالَ | kata Qurani kandidat |
 | 4 | كَتَبَ → كَانَ | kata Qurani kandidat |
