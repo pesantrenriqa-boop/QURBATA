@@ -8,23 +8,24 @@
 
 ## 1. Keputusan
 
-Mulai halaman pengenalan tanwin, tangga latihan meningkat dari rangkaian tiga huruf menjadi **kata atau bentuk latihan dengan tepat empat huruf dasar**. Tanwin adalah tanda bunyi akhir dan tidak dihitung sebagai huruf kelima.
+Mulai halaman pengenalan tanwin, tangga latihan meningkat dari rangkaian tiga huruf menjadi **kata tiga huruf sebagai jembatan, kemudian kata empat huruf dasar**. Tanwin adalah tanda bunyi akhir dan tidak dihitung sebagai huruf kelima.
 
 ## 2. Titik Transisi
 
 - QJ2-P001–P015: 24 tangga × 3 huruf.
-- Mulai QJ2-P016 dan halaman literasi sesudahnya: 24 tangga × 4 huruf, selama whitelist materi mengizinkan.
-- Pola empat huruf diteruskan pada Jilid 3–8 sebagai baseline minimum kata, kecuali Decision-ID khusus menetapkan struktur lebih panjang sesuai tahap kompetensi.
+- Mulai QJ2-P016 dan setiap halaman tahap empat huruf: Tangga 1–8 tetap kata tiga huruf; Tangga 9–24 meningkat menjadi kata empat huruf.
+- Pola jembatan 3→4 ini diulang pada setiap halaman terkait, bukan hanya halaman pertama tanwin.
+- Pola tersebut diteruskan pada Jilid 3–8 sampai Decision-ID tahap berikutnya menetapkan struktur yang lebih panjang.
 
 ## 3. Distribusi 50:50
 
 Pada halaman akuisisi:
 
-- 12 tangga fokus × 4 huruf = 48 token fokus;
-- 12 tangga murojaah × 4 huruf = 48 token review;
-- total 96 token per halaman.
+- Tangga 1–8: 4 fokus + 4 review, masing-masing tiga huruf = 12 token fokus + 12 token review;
+- Tangga 9–24: 8 fokus + 8 review, masing-masing empat huruf = 32 token fokus + 32 token review;
+- total 44 token fokus + 44 token review = 88 token per halaman.
 
-Pada halaman evaluasi, integrasi, dan penguatan: 24 tangga × 4 huruf = 96 token review/transfer tanpa materi baru.
+Pada halaman evaluasi, integrasi, dan penguatan: struktur tetap 8 tangga tiga huruf + 16 tangga empat huruf = 88 token review/transfer tanpa materi baru.
 
 ## 4. Syarat Kata Tanwin
 
@@ -44,10 +45,10 @@ Porsi review tetap mencampurkan huruf penyambung dengan huruf pemutus sambungan 
 
 Halaman tahap tanwin gagal apabila:
 
-- ada tangga kurang atau lebih dari empat huruf dasar;
-- tanwin tidak berada pada huruf akhir;
-- jumlah token bukan 96;
-- halaman akuisisi tidak mencapai 48:48;
+- Tangga 1–8 tidak tepat tiga huruf atau Tangga 9–24 tidak tepat empat huruf dasar;
+- tanwin tidak berada pada huruf akhir kata;
+- jumlah token bukan 88;
+- halaman akuisisi tidak mencapai 44:44;
 - bentuk tanwin tidak mempunyai entri whitelist;
 - kata dinisbatkan kepada Al-Qur’an/hadis tanpa Source-ID;
 - ditemukan pseudo-kata tanwin.
@@ -55,3 +56,10 @@ Halaman tahap tanwin gagal apabila:
 ## 7. Status Produksi
 
 Keputusan struktur ini sah, tetapi produksi QJ2-P016 dan seterusnya tetap mengikuti BLK-QJ2-ORTHO-001. Isi nyata baru boleh dibuat setelah whitelist empat-huruf bertanwin dan verifikasi ahli tersedia.
+
+## 8. Riwayat
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 0.2.0-id | 29 Juli 2026 | Mengoreksi transisi: setiap halaman empat-huruf selalu diawali delapan tangga tiga-huruf; total 44:44 |
+| 0.1.0-id | 29 Juli 2026 | Menetapkan transisi awal ke kata empat huruf pada tahap tanwin |
