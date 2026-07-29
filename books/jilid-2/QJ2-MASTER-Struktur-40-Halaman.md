@@ -2,7 +2,7 @@
 
 **Kode:** QJ2-MASTER  
 **Produk:** Buku QURBATA Jilid 2  
-**Versi:** 0.7.0-id  
+**Versi:** 0.8.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 29 Juli 2026  
 **Jumlah Halaman Inti:** 40  
@@ -126,7 +126,7 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 ## 9. Status Produksi Isi
 
 - QJ2-P001–P015 tersedia sebagai isi nyata COMPLETE-DRAFT.
-- 360 latihan/sampel lulus audit kumulatif dalam AUD-QJ2-CONTENT-005.
+- 360 latihan/sampel (960 token huruf) telah diregenerasi dan lulus AUD-QJ2-CONTENT-006: 12 halaman akuisisi memakai 32 fokus + 32 review; P010/P014/P015 memakai review/transfer penuh.
 - P016–P017 diblokir BLK-QJ2-ORTHO-001 sampai whitelist tanwin sah.
 - QJ2-P018–P040 belum diproduksi.
 - Kesiapan isi sumber: **15/40 halaman (37,5%)**; kesiapan keluar-Draft tetap terpisah.
@@ -135,6 +135,7 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.8.0-id | 29 Juli 2026 | Regenerasi P001–P015 selesai dan lulus AUD-QJ2-CONTENT-006; seluruh 29 identitas, hamzah/alif, dan pemutus sambungan hadir |
 | 0.7.0-id | 29 Juli 2026 | Menerapkan DEC-CUR-007 dan membuka regenerasi P001–P015 menjadi 50:50 dengan seluruh identitas pada review |
 | 0.6.0-id | 29 Juli 2026 | Menambah P014–P015 dan membuka gate ortografi tanwin; 15 halaman dan 360 latihan/sampel lulus audit |
 | 0.5.0-id | 29 Juli 2026 | Menambah QJ2-P011–P013; 13 halaman dan 312 latihan/sampel lulus audit kumulatif |
