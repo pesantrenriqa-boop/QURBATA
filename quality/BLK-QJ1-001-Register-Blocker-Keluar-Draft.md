@@ -80,6 +80,7 @@ COMPLETE-DRAFT berarti artefak telah tersedia dan terlacak, bukan telah divalida
 | antrean pra-takhrij | QPR-HAD-QJ1-001 membagi 40/40 objek ke lima gelombang prioritas; locator siap 40/40, hasil ahli 0/40 | READY-FOR-EXPERT / RESULTS OPEN |
 | lembar kerja Gelombang 1 | WRK-HAD-QJ1-001 mempraisi delapan objek kritis, pertanyaan ahli, audit silang, dan form keputusan; hasil 0/8 | READY-FOR-EXPERT / RESULTS OPEN |
 | lembar kerja Gelombang 2 | WRK-HAD-QJ1-002 mempraisi delapan objek usia/privasi/emosi/muamalah/konsep tinggi; hasil 0/8, kumulatif instrumen 16/40 | READY-FOR-EXPERT / RESULTS OPEN |
+| lembar kerja Gelombang 3 | WRK-HAD-QJ1-003 mempraisi delapan objek penggalan/varian/atribusi/grading; hasil 0/8, kumulatif instrumen 24/40 | READY-FOR-EXPERT / RESULTS OPEN |
 | rubrik dan form pilot | RUB-HAD-QJ1-001 + FRM-HAD-QJ1-001; dimensi perkembangan, checkpoint, log frekuensi, carryover, dan safeguarding | READY-FOR-PILOT-AUTHORIZATION |
 | protokol dan otorisasi pilot | PRO-HAD-QJ1-001 bertahap; DEC-HAD-QJ1-001 kosong dan efektif NO-GO | READY-FOR-AUTHORIZATION / NOT ACTIVE |
 | data pilot | durasi, load aktual, retensi, remedial, dan frekuensi per peserta belum ada | NOT PROVIDED |
@@ -143,6 +144,7 @@ Persentase keseluruhan proyek QURBATA Jilid 1–8 dicatat terpisah dalam `STAT-Q
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.37.0-id | 29 Juli 2026 | Menambahkan lembar ahli Gelombang 3; instrumen objek kumulatif 24/40, keputusan dan Evidence-ID tetap 0/24 |
 | 0.36.0-id | 29 Juli 2026 | Menambahkan lembar ahli Gelombang 2; instrumen objek kumulatif 16/40, keputusan dan Evidence-ID tetap 0/16 |
 | 0.35.0-id | 29 Juli 2026 | Menambahkan lembar ahli Gelombang 1 untuk delapan objek kritis; instrumen lengkap, keputusan dan Evidence-ID tetap 0/8 |
 | 0.34.0-id | 29 Juli 2026 | Menambahkan antrean pra-takhrij 40/40 objek dalam lima gelombang; kesiapan administrasi ahli meningkat, tetapi Evidence-ID tetap 0/40 |
