@@ -16,7 +16,7 @@
 | Governance QURBATA v1.0 | **100% untuk baseline yang telah diratifikasi** |
 | Buku dengan sumber halaman lengkap | **1 dari 8 jilid**; master formal seluruh Jilid 1–8 tersedia |
 | Halaman buku formal tersedia | **40 halaman Jilid 1** |
-| Jilid 2–8 dengan halaman formal | **7 dari 7 master tersedia; isi nyata Jilid 2: 10/40, total 10/280** |
+| Jilid 2–8 dengan halaman formal | **7 dari 7 master tersedia; isi nyata Jilid 2: 13/40, total 13/280** |
 
 Angka 42% tidak boleh dibaca sebagai “Jilid 1 sudah 42%”. Angka itu adalah gabungan berbobot seluruh proyek 8 jilid. Angka 38% hanya mengukur gate keluar-Draft Jilid 1.
 
@@ -43,10 +43,10 @@ Flashcard, presentasi, atau RIQA OS tidak menjadi syarat menyebut **delapan buku
 |---|---:|---:|---:|
 | Governance dan kontrol konstitusional | 10% | 100% | 10,0% |
 | Arsitektur kurikulum lintas jilid | 20% | 90% | 18,0% |
-| Isi buku Jilid 1–8 | 45% | 19,375% | 8,719% |
+| Isi buku Jilid 1–8 | 45% | 20,3125% | 9,141% |
 | Validasi ilmiah, ahli, asesmen, dan pilot | 15% | 22% | 3,3% |
 | Produksi dan rilis final | 10% | 15% | 1,5% |
-| **Total mentah** | **100%** |  | **41,519%** |
+| **Total mentah** | **100%** |  | **41,941%** |
 | **Nilai laporan dibulatkan** |  |  | **42%** |
 
 ### Rumus domain buku
@@ -56,8 +56,8 @@ Domain buku mempunyai bobot terbesar karena produk utama QURBATA adalah delapan 
 ```text
 Ketercapaian domain buku
 = (ketercapaian Jilid 1 + ... + ketercapaian Jilid 8) / 8
-= (70% + 25% + 10% + 10% + 10% + 10% + 10% + 10%) / 8
-= 19,375%
+= (70% + 32,5% + 10% + 10% + 10% + 10% + 10% + 10%) / 8
+= 20,3125%
 ```
 
 Nilai internal Jilid 1 sebesar 70% berarti sumber 40 halaman, audit distribusi, pemetaan Bahasa Arab/Tahfidz, dan prototipe cetak tersedia. Nilai ini tidak berarti Jilid 1 siap terbit; gate manusia dan keputusan material masih terbuka.
@@ -99,12 +99,12 @@ Masih belum lengkap:
 - pembagian final Bahasa Arab Jilid 2–8;
 - aturan kenaikan jilid lintas-strand yang tervalidasi.
 
-### C. Isi buku Jilid 1–8 — 19,375%
+### C. Isi buku Jilid 1–8 — 20,3125%
 
 | Jilid | Status isi formal | Estimasi internal |
 |---:|---|---:|
 | 1 | 40 halaman sumber, audit, mapping, dan prototipe tersedia; tetap Draft | 70% |
-| 2 | master formal tersedia; QJ2-P001–P010 dan checkpoint 240 latihan/sampel tersedia | 25% |
+| 2 | master formal tersedia; QJ2-P001–P013 dan audit kumulatif 312 latihan/sampel tersedia | 32,5% |
 | 3 | master formal 40 halaman tersedia; isi nyata halaman belum diproduksi | 10% |
 | 4 | master formal 40 halaman tersedia; isi nyata halaman belum diproduksi | 10% |
 | 5 | master formal 40 halaman tersedia; isi nyata halaman belum diproduksi | 10% |
@@ -205,6 +205,7 @@ Jalur tercepat yang sah dari 42%:
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.10.0-id | 29 Juli 2026 | QJ2-P011–P013 melengkapi keluarga huruf utama; 312 latihan/sampel lulus audit kumulatif, domain isi menjadi 20,3125%, total mentah 41,941%, laporan tetap 42% |
 | 0.9.0-id | 29 Juli 2026 | Siklus pertama Jilid 2 ditutup sampai QJ2-P010; 240 latihan/sampel lulus checkpoint struktur, domain isi menjadi 19,375%, total mentah 41,519%, laporan 42% |
 | 0.8.0-id | 29 Juli 2026 | Isi nyata Jilid 2 diperluas sampai QJ2-P006; 144 latihan lulus audit struktur kumulatif, domain isi menjadi 18,125%, total mentah 40,956%, laporan tetap 41% |
 | 0.7.0-id | 29 Juli 2026 | Produksi isi nyata Jilid 2 dimulai: QJ2-P001–P003, 72 latihan, dan AUD-QJ2-CONTENT-001; domain isi menjadi 17,8125%, total mentah 40,816%, laporan tetap 41% |
