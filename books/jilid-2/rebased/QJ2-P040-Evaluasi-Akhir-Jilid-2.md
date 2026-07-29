@@ -9,40 +9,40 @@
 
 | No. | Bacaan | Domain utama |
 |---:|---|---|
-| 1 | نُورٌ | mad waw + tanwin |
+| 1 | نُوْرٌ | mad waw + tanwin |
 | 2 | قَالَ | mad alif + pemutus |
-| 3 | دِينٌ | mad ya + tanwin |
-| 4 | رُوحٌ | mad waw + pemutus |
+| 3 | دِيْنٌ | mad ya + tanwin |
+| 4 | رُوْحٌ | mad waw + pemutus |
 | 5 | كَانَ | mad alif |
-| 6 | قِيلَ | mad ya + pemutus |
-| 7 | سُوقٌ | mad waw + tanwin |
+| 6 | قِيْلَ | mad ya + pemutus |
+| 7 | سُوْقٌ | mad waw + tanwin |
 | 8 | تَابَ | mad alif |
 
 ## Bagian B — 8 tangga empat huruf
 
 | No. | Bacaan | Domain utama |
 |---:|---|---|
-| 9 | رَحِيمٌ | mad ya + keluarga bentuk |
+| 9 | رَحِيْمٌ | mad ya + keluarga bentuk |
 | 10 | سَلَامٌ | mad alif + tanwin |
-| 11 | غَفُورٌ | mad waw + pemutus |
-| 12 | حَكِيمٌ | mad ya |
+| 11 | غَفُوْرٌ | mad waw + pemutus |
+| 12 | حَكِيْمٌ | mad ya |
 | 13 | عَذَابٌ | mad alif + ذ pemutus |
-| 14 | رَسُولٌ | mad waw + ر pemutus |
-| 15 | كَرِيمٌ | mad ya + ر pemutus |
+| 14 | رَسُوْلٌ | mad waw + ر pemutus |
+| 15 | كَرِيْمٌ | mad ya + ر pemutus |
 | 16 | حِسَابٌ | mad alif |
 
 ## Bagian C — 8 tangga lima huruf
 
 | No. | Bacaan | Domain utama |
 |---:|---|---|
-| 17 | رَسُولًا | mad waw + fathatain |
+| 17 | رَسُوْلًا | mad waw + fathatain |
 | 18 | مَكَانًا | mad alif + fathatain |
-| 19 | كَرِيمًا | mad ya + fathatain |
-| 20 | غَفُورًا | mad waw + fathatain |
+| 19 | كَرِيْمًا | mad ya + fathatain |
+| 20 | غَفُوْرًا | mad waw + fathatain |
 | 21 | سَلَامًا | mad alif + fathatain |
-| 22 | عَلِيمًا | mad ya + fathatain |
-| 23 | شَكُورًا | mad waw + fathatain |
-| 24 | رَحِيمًا | mad ya + fathatain |
+| 22 | عَلِيْمًا | mad ya + fathatain |
+| 23 | شَكُوْرًا | mad waw + fathatain |
+| 24 | رَحِيْمًا | mad ya + fathatain |
 
 ## Bagian D — Uji jebakan harakat pendek
 
