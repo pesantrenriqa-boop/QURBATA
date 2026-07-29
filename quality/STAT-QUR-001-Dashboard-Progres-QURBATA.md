@@ -11,14 +11,14 @@
 
 | Indikator | Nilai |
 |---|---:|
-| Progres keseluruhan QURBATA menuju 100% | **33%** |
+| Progres keseluruhan QURBATA menuju 100% | **35%** |
 | Kesiapan Jilid 1 keluar-Draft | **38% — 3 dari 8 gate makro** |
 | Governance QURBATA v1.0 | **100% untuk baseline yang telah diratifikasi** |
-| Buku dengan sumber halaman lengkap | **1 dari 8 jilid**; struktur formal Jilid 2 tersedia |
+| Buku dengan sumber halaman lengkap | **1 dari 8 jilid**; master formal Jilid 2–4 tersedia |
 | Halaman buku formal tersedia | **40 halaman Jilid 1** |
-| Jilid 2–8 dengan halaman formal | **Jilid 2: master 40 halaman; isi halaman nyata 0/40** |
+| Jilid 2–8 dengan halaman formal | **Jilid 2–4: master masing-masing 40 halaman; isi nyata 0/120** |
 
-Angka 33% tidak boleh dibaca sebagai “Jilid 1 sudah 33%”. Angka itu adalah gabungan berbobot seluruh proyek 8 jilid. Angka 38% hanya mengukur gate keluar-Draft Jilid 1.
+Angka 35% tidak boleh dibaca sebagai “Jilid 1 sudah 35%”. Angka itu adalah gabungan berbobot seluruh proyek 8 jilid. Angka 38% hanya mengukur gate keluar-Draft Jilid 1.
 
 ## 2. Definisi QURBATA 100%
 
@@ -42,12 +42,12 @@ Flashcard, presentasi, atau RIQA OS tidak menjadi syarat menyebut **delapan buku
 | Domain | Bobot terhadap 100% | Ketercapaian domain | Kontribusi |
 |---|---:|---:|---:|
 | Governance dan kontrol konstitusional | 10% | 100% | 10,0% |
-| Arsitektur kurikulum lintas jilid | 20% | 70% | 14,0% |
-| Isi buku Jilid 1–8 | 45% | 10% | 4,5% |
+| Arsitektur kurikulum lintas jilid | 20% | 75% | 15,0% |
+| Isi buku Jilid 1–8 | 45% | 12,5% | 5,625% |
 | Validasi ilmiah, ahli, asesmen, dan pilot | 15% | 22% | 3,3% |
 | Produksi dan rilis final | 10% | 15% | 1,5% |
-| **Total mentah** | **100%** |  | **33,3%** |
-| **Nilai laporan dibulatkan** |  |  | **33%** |
+| **Total mentah** | **100%** |  | **35,425%** |
+| **Nilai laporan dibulatkan** |  |  | **35%** |
 
 ### Rumus domain buku
 
@@ -56,8 +56,8 @@ Domain buku mempunyai bobot terbesar karena produk utama QURBATA adalah delapan 
 ```text
 Ketercapaian domain buku
 = (ketercapaian Jilid 1 + ... + ketercapaian Jilid 8) / 8
-= (70% + 10% + 0% + 0% + 0% + 0% + 0% + 0%) / 8
-= 10%
+= (70% + 10% + 10% + 10% + 0% + 0% + 0% + 0%) / 8
+= 12,5%
 ```
 
 Nilai internal Jilid 1 sebesar 70% berarti sumber 40 halaman, audit distribusi, pemetaan Bahasa Arab/Tahfidz, dan prototipe cetak tersedia. Nilai ini tidak berarti Jilid 1 siap terbit; gate manusia dan keputusan material masih terbuka.
@@ -75,7 +75,7 @@ Bukti:
 
 Pekerjaan pemeliharaan governance tidak menurunkan baseline 100%, kecuali ditemukan cacat material atau perubahan organisasi.
 
-### B. Arsitektur kurikulum lintas jilid — 70%
+### B. Arsitektur kurikulum lintas jilid — 75%
 
 Sudah tersedia:
 
@@ -89,7 +89,7 @@ Sudah tersedia:
 - prinsip murojaah kumulatif;
 - HCP-QUR-001 dan REG-HAD-001 sebagai progression serta sumber tunggal Hadis Akhlak Jilid 1–8 (belum berisi objek aktif);
 - RCP-QUR-001 sebagai progression baca dan tajwid formal Jilid 1–8;
-- QJ2-MASTER sebagai struktur formal 40 halaman Jilid 2.
+- QJ2-MASTER, QJ3-MASTER, dan QJ4-MASTER sebagai struktur formal masing-masing 40 halaman Jilid 2–4.
 
 Masih belum lengkap:
 
@@ -98,14 +98,14 @@ Masih belum lengkap:
 - pembagian final Bahasa Arab Jilid 2–8;
 - aturan kenaikan jilid lintas-strand yang tervalidasi.
 
-### C. Isi buku Jilid 1–8 — 10%
+### C. Isi buku Jilid 1–8 — 12,5%
 
 | Jilid | Status isi formal | Estimasi internal |
 |---:|---|---:|
 | 1 | 40 halaman sumber, audit, mapping, dan prototipe tersedia; tetap Draft | 70% |
 | 2 | master formal 40 halaman tersedia; isi nyata halaman belum diproduksi | 10% |
-| 3 | halaman formal belum tersedia | 0% |
-| 4 | halaman formal belum tersedia | 0% |
+| 3 | master formal 40 halaman tersedia; isi nyata halaman belum diproduksi | 10% |
+| 4 | master formal 40 halaman tersedia; isi nyata halaman belum diproduksi | 10% |
 | 5 | halaman formal belum tersedia | 0% |
 | 6 | halaman formal belum tersedia | 0% |
 | 7 | halaman formal belum tersedia | 0% |
@@ -180,14 +180,14 @@ Kesiapan Jilid 1 keluar-Draft sekarang **38% (3 dari 8 gate)**. Gate 3 selesai k
 
 ## 7. Target Kenaikan Berikutnya
 
-Jalur tercepat yang sah dari 33%:
+Jalur tercepat yang sah dari 35%:
 
 1. menyelesaikan review ahli Tahfidz/Qira’at, Bahasa Arab, dan ortografi ءُ;
 2. menyelesaikan review akademik, editorial, asesmen, serta safeguarding Jilid 1;
 3. memperoleh Evidence-ID dan menanam hasil tervalidasi ke P018, P028, P036, register, dan PDF;
 4. menyusun master hadis akhlak sahih dan progression Tahfidz Jilid 1–8;
 5. memproduksi sumber nyata QJ2-P001–QJ2-P040 dari QJ2-MASTER;
-6. membentuk master formal Jilid 3–8 berdasarkan RCP-QUR-001;
+6. membentuk master formal Jilid 5–8 berdasarkan RCP-QUR-001;
 7. menjalankan pilot Jilid 1 dan menerapkan koreksi;
 8. mengulang pipeline audit, validasi, dan produksi sampai Jilid 8.
 
@@ -195,7 +195,7 @@ Jalur tercepat yang sah dari 33%:
 
 | Target | Syarat utama |
 |---|---|
-| **35% keseluruhan** | sumber halaman nyata Jilid 2 mulai terbentuk dan master Jilid 3–4 tersedia; atau Evidence-ID material Jilid 1 tersedia |
+| **40% keseluruhan** | master formal Jilid 5–8 tersedia dan produksi isi nyata Jilid 2 dimulai; atau Evidence-ID material Jilid 1 tersedia |
 | **50% kesiapan keluar-Draft Jilid 1** | Gate 4 review akademik/Arab/Qira’at selesai |
 | **63% kesiapan keluar-Draft Jilid 1** | Gate 5 editorial dan render final selesai |
 | **100% kesiapan keluar-Draft Jilid 1** | seluruh 8 gate dan semua blocker ditutup |
@@ -204,6 +204,7 @@ Jalur tercepat yang sah dari 33%:
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.5.0-id | 29 Juli 2026 | QJ3-MASTER dan QJ4-MASTER membentuk struktur formal masing-masing 40 halaman; arsitektur naik 70%→75%, domain isi menjadi 12,5%, total mentah 35,425%, laporan 35% |
 | 0.4.0-id | 29 Juli 2026 | RCP-QUR-001 menetapkan progression baca/tajwid Jilid 1–8 dan QJ2-MASTER membentuk struktur formal 40 halaman Jilid 2; arsitektur naik 65%→70%, domain isi menjadi 10%, total mentah 33,3%, laporan 33% |
 | 0.3.0-id | 29 Juli 2026 | DEC-CUR-004 dan DEC-CUR-005 menutup Gate 3 keputusan materi khusus; kesiapan keluar-Draft naik 25%→38%, validasi domain naik 20%→22%, total mentah 31,74% dan laporan 32% |
 | 0.2.0-id | 29 Juli 2026 | Progression dan register Hadis Akhlak menambah ketercapaian arsitektur menjadi 65%; total mentah 31,44%, laporan 31% |
