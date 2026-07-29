@@ -12,7 +12,7 @@ Tanwin hanya sah pada posisi akhir. Fathatain mempunyai aturan alif penyangga da
 ## 2. Keputusan Sementara
 
 1. P016–P017 tidak diisi dengan pseudo-kata tanwin.
-2. Materi tanwin harus berasal dari whitelist kata nyata empat huruf yang mempunyai Source-ID.
+2. Materi tanwin harus berasal dari whitelist kata nyata: delapan tangga tiga huruf sebagai jembatan dan enam belas tangga empat huruf, semuanya mempunyai Source-ID.
 3. Setiap entri memuat bentuk dasar, bentuk bertanwin, posisi akhir, aturan alif, arti, sumber, dan status review.
 4. Sukun, tasydid, dan mad yang belum diajarkan tidak boleh bocor melalui kata pilihan.
 5. Bila tidak tersedia cukup kata sesuai prasyarat, urutan tanwin dipindahkan melalui Decision-ID.
@@ -21,7 +21,7 @@ Tanwin hanya sah pada posisi akhir. Fathatain mempunyai aturan alif penyangga da
 
 - standar ortografi fathatain, kasratain, dan dhammatain;
 - daftar alif penyangga dan pengecualian;
-- whitelist minimal 24 kata nyata empat huruf per halaman;
+- whitelist minimal 8 kata nyata tiga huruf dan 16 kata nyata empat huruf per halaman;
 - review ahli Bahasa Arab/Al-Qur'an;
 - audit shaping Amiri Quran;
 - Reviewer-ID, Evidence-ID, dan Decision-ID.
