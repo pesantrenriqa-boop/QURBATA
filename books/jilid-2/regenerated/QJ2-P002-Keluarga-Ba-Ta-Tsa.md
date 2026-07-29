@@ -29,7 +29,7 @@ Guru memperagakan bentuk tunggal, awal, tengah, dan akhir untuk huruf target seb
 | 8 | Murojaah | كَسَبَ | kata nyata | ب akhir |
 | 9 | Fokus | بَتَثَ | rangkaian kendali | ب–ت–ث |
 | 10 | Murojaah | عَبَدَ | kata nyata | ب tengah |
-| 11 | Fokus | ثَبَتَ | kata nyata | tiga posisi |
+| 11 | Fokus | ثَبَرَ | kata nyata | ث awal; ب tengah; ر pemutus |
 | 12 | Murojaah | قَبِلَ | kata nyata | ب tengah |
 | 13 | Fokus | تَبِعَ | kata nyata | ت awal; ب tengah |
 | 14 | Murojaah | حَبَسَ | kata nyata | ب tengah |
