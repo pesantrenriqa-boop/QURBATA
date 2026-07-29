@@ -2,7 +2,7 @@
 
 **Kode:** QJ2-MASTER  
 **Produk:** Buku QURBATA Jilid 2  
-**Versi:** 0.10.0-id  
+**Versi:** 0.11.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 29 Juli 2026  
 **Jumlah Halaman Inti:** 40  
@@ -27,8 +27,8 @@ Target belum merupakan klaim efektivitas sebelum review ahli, pilot, Evidence-ID
 ## 3. Aturan Halaman
 
 1. Kode halaman: `QJ2-P001`–`QJ2-P040`.
-2. QJ2-P001–P015 menggunakan 24 tangga × 3 huruf sesuai DEC-CUR-008; mulai tahap tanwin QJ2-P016 menggunakan 24 tangga × 4 huruf sesuai DEC-CUR-009.
-3. Halaman akuisisi tetap 50:50: sebelum tanwin 36:36 token; mulai tanwin 48:48 token. Seluruh identitas termasuk hamzah/alif serta pemutus sambungan tetap masuk rotasi.
+2. QJ2-P001–P015 menggunakan 24 tangga × 3 huruf. Mulai tahap tanwin, setiap halaman selalu diawali Tangga 1–8 tiga huruf, lalu Tangga 9–24 empat huruf sesuai DEC-CUR-009.
+3. Halaman akuisisi tetap 50:50: sebelum tanwin 36:36 token; mulai tanwin 44:44 token dari pola jembatan 3→4. Seluruh identitas termasuk hamzah/alif serta pemutus sambungan tetap masuk rotasi.
 4. Bentuk terpisah hanya dipakai sebagai remedial; fokus bergerak ke bentuk sambung.
 5. Kata Qurani harus memiliki Source-ID dan lulus audit teks.
 6. Tanwin hanya muncul pada posisi yang benar.
@@ -135,6 +135,7 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.11.0-id | 29 Juli 2026 | Mengoreksi DEC-CUR-009: setiap halaman tahap empat huruf diawali 8 tangga tiga huruf lalu 16 tangga empat huruf; distribusi 44:44 |
 | 0.10.0-id | 29 Juli 2026 | DEC-CUR-009 menetapkan transisi ke 24 tangga kata empat huruf mulai tahap tanwin; distribusi akuisisi 48:48 |
 | 0.9.0-id | 29 Juli 2026 | DEC-CUR-008 diterapkan: P001–P015 seluruhnya tiga huruf, 1.080 token, prioritas kata bermakna, lulus AUD-QJ2-CONTENT-007 |
 | 0.8.0-id | 29 Juli 2026 | Regenerasi P001–P015 selesai dan lulus AUD-QJ2-CONTENT-006; seluruh 29 identitas, hamzah/alif, dan pemutus sambungan hadir |
