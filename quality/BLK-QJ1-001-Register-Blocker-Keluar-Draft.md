@@ -71,7 +71,7 @@ COMPLETE-DRAFT berarti artefak telah tersedia dan terlacak, bukan telah divalida
 | sumber tunggal dan skema deduplikasi | REG-HAD-001 | COMPLETE-DRAFT |
 | kapasitas desain | sampai 320 slot; kuota final belum disahkan | CONTROLLED-ASSUMPTION |
 | kandidat Hadith-ID | HAD-000001–000040 dalam BAT-HAD-001–005; 40 kandidat, 0 aktif | SOURCE-CHECK |
-| sumber dan metadata grading awal | SRC-HAD-QJ1-001: perawi/sumber 40/40; locator daring 32/40, locator batch 8/40; takhrij/edisi final 0/40 | LOCATOR-IN-PROGRESS / EXPERT REVIEW OPEN |
+| sumber dan metadata grading awal | SRC-HAD-QJ1-001: perawi/sumber 40/40; locator daring 40/40, locator batch 0/40; takhrij/edisi final 0/40 | LOCATOR-COMPLETE / EXPERT REVIEW OPEN |
 | terjemah, whitelist, asesmen, safeguarding | belum ada | NOT PROVIDED |
 | mapping halaman Jilid 1–8 | MAP-HAD-QJ1-001 v0.2 memetakan intro, interval 1/3/7/14, checkpoint maksimum 8 prompt, dan carryover; validasi serta Jilid 2–8 belum ada | COMPLETE-DRAFT / PILOT OPEN |
 | pra-audit internal | AUD-HAD-QJ1-001: identitas/mapping lengkap; overload checkpoint dikoreksi; klaster tema, usia, dan safeguarding dipetakan | COMPLETE-INTERNAL / EXPERT OPEN |
@@ -140,6 +140,7 @@ Persentase keseluruhan proyek QURBATA Jilid 1–8 dicatat terpisah dalam `STAT-Q
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.33.0-id | 29 Juli 2026 | Memverifikasi locator daring awal HAD-000025–HAD-000032; konsolidasi locator awal lengkap 40/40, takhrij ahli tetap 0/40 |
 | 0.32.0-id | 29 Juli 2026 | Memverifikasi locator daring awal HAD-000017–HAD-000024; total locator daring 32/40, takhrij ahli tetap 0/40 |
 | 0.31.0-id | 29 Juli 2026 | Memverifikasi locator daring awal HAD-000009–HAD-000016; total locator daring 24/40, takhrij ahli tetap 0/40 |
 | 0.30.0-id | 29 Juli 2026 | Memverifikasi locator daring awal HAD-000001–HAD-000008; total locator daring 16/40, takhrij ahli tetap 0/40 |
