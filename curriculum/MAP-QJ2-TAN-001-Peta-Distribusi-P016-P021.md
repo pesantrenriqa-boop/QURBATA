@@ -4,7 +4,9 @@
 **Tanggal:** 29 Juli 2026  
 **Sumber:** WLT-QJ2-TAN-001  
 **Pengendali:** DEC-CUR-007, DEC-CUR-009, BLK-QJ2-ORTHO-001  
-**Status:** COMPLETE-DRAFT / ACTIVATION BLOCKED BY EXPERT GATE
+**Status:** SUPERSEDED — JANGAN DIGUNAKAN UNTUK PRODUKSI
+
+> **Pemberitahuan DEC-CUR-010:** peta P016–P021 ini dibekukan karena P001–P020 kini dikhususkan untuk keluarga bentuk. Tanwin dipindahkan ke P021–P024. Dokumen dipertahankan sebagai riwayat dan bahan migrasi; distribusinya harus diterbitkan ulang sebelum produksi.
 
 ## 1. Struktur Tetap Setiap Halaman
 
