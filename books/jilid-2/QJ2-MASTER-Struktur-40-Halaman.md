@@ -2,7 +2,7 @@
 
 **Kode:** QJ2-MASTER  
 **Produk:** Buku QURBATA Jilid 2  
-**Versi:** 0.21.0-id  
+**Versi:** 0.22.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 29 Juli 2026  
 **Jumlah Halaman Inti:** 40  
@@ -96,7 +96,7 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 |---:|---|---|
 | 1 | struktur 40 halaman | COMPLETE-DRAFT |
 | 2 | progression dan dependency | COMPLETE-DRAFT |
-| 3 | isi nyata 40 halaman | IN PROGRESS — 20/40 COMPLETE-DRAFT + 10/40 STAGED-BLOCKED; sumber tersedia P001–P030 |
+| 3 | isi nyata 40 halaman | SOURCE-COMPLETE — 40/40 tersedia; 20 COMPLETE-DRAFT +20 STAGED-BLOCKED |
 | 4 | audit otomatis | OPEN |
 | 5 | review ahli/akademik/editorial | OPEN |
 | 6 | asesmen dan safeguarding | OPEN |
@@ -128,7 +128,9 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 - QJ2-P001–P015 versi lama adalah draf warisan yang **SUPERSEDED** dan tidak boleh dipakai sebagai materi peserta.
 - Baseline DEC-CUR-010: **QJ2-P001–P020 COMPLETE-DRAFT** dan fondasi bentuk lulus AUD-QJ2-CONTENT-011.
 - **QJ2-P021–P024 tersedia sebagai STAGED-BLOCKED** dan lulus AUD-QJ2-TAN-003; menunggu BLK-QJ2-ORTHO-001.
-- **QJ2-P025–P030 tersedia sebagai STAGED-BLOCKED**. P026/P027/P029/P030 lulus struktur AUD-QJ2-MAD-001; P025 dan P028 menunggu objek materi khusus.
+- **QJ2-P025–P030 tersedia sebagai STAGED-BLOCKED**. P026/P027/P029/P030 lulus AUD-QJ2-MAD-001; P025 dan P028 menunggu objek khusus.
+- **QJ2-P031–P040 tersedia sebagai STAGED-BLOCKED** dan lulus AUD-QJ2-FINAL-001.
+- Cakupan sumber Jilid 2: **40/40 halaman (100%)**; kesiapan cetak dan otorisasi belum 100%.
 - Struktur, whitelist, dan audit lama tetap disimpan sebagai riwayat; peta tanwin P016–P021 wajib direvisi menjadi P021–P024.
 - Progres program keseluruhan tetap **42%** sampai model pembobotan proyek dihitung ulang; angka ini bukan klaim bahwa isi Jilid 2 telah selesai.
 - Kesiapan keluar-Draft tetap menunggu review ahli, pilot, Evidence-ID, dan otorisasi.
@@ -137,6 +139,7 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.22.0-id | 29 Juli 2026 | P031–P040 selesai sebagai staging; seluruh sumber Jilid 2 tersedia 40/40, terdiri dari 20 COMPLETE-DRAFT dan 20 STAGED-BLOCKED; audit final sumber lulus |
 | 0.21.0-id | 29 Juli 2026 | Staging P025–P030 selesai; whitelist dan blocker mad dibuat; sumber Jilid 2 tersedia sampai P030, dengan 20 COMPLETE-DRAFT dan 10 STAGED-BLOCKED |
 | 0.20.0-id | 29 Juli 2026 | MAP-QJ2-TAN-002 dan staging P021–P024 selesai; pola 8×3+16×4, 44:44, dan integrasi 8–8–8 lulus AUD-QJ2-TAN-003; gate ahli tetap terbuka |
 | 0.19.0-id | 29 Juli 2026 | P016–P020 selesai; fondasi bentuk P001–P020 mencapai 480 tangga (204 fokus, 204 murojaah, 72 transfer) dan lulus AUD-QJ2-CONTENT-011 |
