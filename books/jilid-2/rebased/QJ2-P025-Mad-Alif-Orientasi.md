@@ -7,20 +7,20 @@
 
 ## Petunjuk talqin
 
-Guru membaca pasangan kiri satu harakat dan kanan dua harakat. Anak mendengar, menunjuk, lalu menirukan. Bentuk kiri merupakan drill kontras dan tidak diklaim sebagai kata.
+Guru membaca unit kiri dengan seluruh harakat pendek, lalu unit kanan yang memuat alif mad dua harakat. Anak mendengar, menunjuk, lalu menirukan. Bentuk kiri merupakan drill kontras dan tidak diklaim sebagai kata.
 
 ## 8 tangga tiga huruf
 
 | No. | Pendek | Panjang | Fungsi |
 |---:|---|---|---|
-| 1 | بَتَ | بَاتَ | dengar–tiru |
+| 1 | بَتَبَتَ | بَاتَ | dengar–tiru |
 | 2 | تَبَ | تَابَ | dengar–tiru |
-| 3 | قَلَ | قَالَ | kontras |
-| 4 | كَنَ | كَانَ | kontras |
-| 5 | مَلَ | مَالَ | kontras |
-| 6 | نَرَ | نَارَ | pemutus ر |
-| 7 | بَبَ | بَابَ | posisi tengah |
-| 8 | دَرَ | دَارَ | pemutus د/ر |
+| 3 | قَتَلَ | قَالَ | kontras |
+| 4 | كَتَبَ | كَانَ | kontras |
+| 5 | مَلَكَ | مَالَ | kontras |
+| 6 | نَظَرَ | نَارَ | pemutus ر |
+| 7 | بَلَغَ | بَابَ | posisi tengah |
+| 8 | دَخَلَ | دَارَ | pemutus د/ر |
 
 ## 16 tangga empat huruf
 
