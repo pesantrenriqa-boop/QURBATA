@@ -22,13 +22,13 @@
 | No. | Bacaan | Target |
 |---:|---|---|
 | 9 | فَقَالَ | transfer قَالَ |
-| 10 | وَقَالَ | transfer قَالَ |
-| 11 | وَكَانَ | transfer كَانَ |
+| 10 | وَقَالَ | transfer قَالَ; waw penghubung berfathah, bukan mad |
+| 11 | وَكَانَ | transfer كَانَ; waw penghubung berfathah, bukan mad |
 | 12 | فَتَابَ | transfer تَابَ |
 | 13 | أَمَالَ | hamzah/alif dibedakan |
-| 14 | مَنَارَ | bentuk rangkaian |
-| 15 | دِيَارَ | **BLOCKED:** mengandung ya; guru tidak mencetak |
-| 16 | أَبْوَابَ | **BLOCKED:** sukun/waw di luar prasyarat |
+| 14 | مَنَارَ | mufradat Arab |
+| 15 | سَحَابَ | kata bermakna; kandidat Qurani |
+| 16 | سَرَابَ | kata bermakna; kandidat Qurani |
 | 17 | عَذَابَ | kata Qurani |
 | 18 | سَلَامَ | kata Qurani |
 | 19 | نَهَارَ | kata Qurani |
@@ -37,8 +37,6 @@
 | 22 | شَرَابَ | kata Qurani |
 | 23 | سِرَاجَ | kata Qurani |
 | 24 | لِبَاسَ | kata Qurani |
-
-> Nomor 15–16 adalah catatan kontrol guru, bukan kotak peserta. Keduanya wajib diganti kandidat empat huruf yang lulus whitelist sebelum layout.
 
 ## Panel terintegrasi
 
