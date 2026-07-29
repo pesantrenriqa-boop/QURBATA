@@ -52,7 +52,7 @@ Audit ini memeriksa struktur data, keunikan identitas, kelengkapan locator awal,
 | bantuan sosial | HAD-000014, HAD-000021, HAD-000027, HAD-000039 | bedakan bantuan individual, saling menguatkan, perlindungan, dan pelayanan rentan |
 | lisan | HAD-000002, HAD-000016, HAD-000032 | bedakan ucapan baik, diam dari keburukan, dan nasihat tulus |
 
-Full-Hadith-ID administratif berbeda tidak membuktikan bahwa beban pedagogisnya tidak berulang. Panel ahli harus memilih APPROVE, RESEQUENCE, REPLACE, atau MERGE-THEME.
+Full-Hadith-ID administratif berbeda tidak membuktikan bahwa beban pedagogisnya tidak berulang. PROP-HAD-QJ1-001 kini menyediakan outcome, prompt pembeda, prioritas pemindahan/penggantian, dan form keputusan. Panel ahli tetap harus memilih APPROVE, RESEQUENCE, REPLACE, atau MERGE-THEME.
 
 ### HAD-AUD-004 — Penggalan dan varian
 
