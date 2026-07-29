@@ -42,7 +42,7 @@ Setiap gelombang berisi delapan objek. Gelombang berikutnya boleh disiapkan, tet
 
 ## 3A. Instrumen Gelombang 1
 
-WRK-HAD-QJ1-001 menyediakan lembar terperinci untuk delapan objek Gelombang 1, termasuk sumber awal, risiko spesifik, pertanyaan wajib, audit silang, Evidence-ID, dan keputusan. Instrumen siap digunakan; hasil ahli tetap 0/8.
+WRK-HAD-QJ1-001 menyediakan lembar terperinci untuk delapan objek Gelombang 1, termasuk sumber awal, risiko spesifik, pertanyaan wajib, audit silang, Evidence-ID, dan keputusan. WRK-HAD-QJ1-002 menyediakan struktur setara untuk Gelombang 2 dengan fokus usia, privasi, emosi, muamalah, dan istilah abstrak. Kedua instrumen siap digunakan; hasil ahli tetap 0/16.
 
 ## 4. Lembar Kendali Gelombang
 
