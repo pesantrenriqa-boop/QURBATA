@@ -9,14 +9,14 @@
 
 | No. | Tangga bacaan | Target |
 |---:|---|---|
-| 1 | بَتَ → بَاتَ | jangan panjangkan بَ |
+| 1 | بَتَبَتَ → بَاتَ | jangan panjangkan بَ |
 | 2 | تَبَ → تَابَ | alif setelah تَ |
-| 3 | قَلَ → قَالَ | kata Qurani kandidat |
-| 4 | كَنَ → كَانَ | kata Qurani kandidat |
-| 5 | مَلَ → مَالَ | kata bermakna |
-| 6 | نَرَ → نَارَ | mad sebelum ر |
-| 7 | دَرَ → دَارَ | pemutus د |
-| 8 | جَءَ → جَاءَ | hamzah akhir; review ahli wajib |
+| 3 | قَتَلَ → قَالَ | kata Qurani kandidat |
+| 4 | كَتَبَ → كَانَ | kata Qurani kandidat |
+| 5 | مَلَكَ → مَالَ | kata bermakna |
+| 6 | نَظَرَ → نَارَ | mad sebelum ر |
+| 7 | دَخَلَ → دَارَ | pemutus د |
+| 8 | جَمَعَ → جَاءَ | hamzah akhir; review ahli wajib |
 
 ## 16 tangga empat huruf
 
