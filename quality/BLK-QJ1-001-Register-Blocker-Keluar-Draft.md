@@ -73,7 +73,8 @@ COMPLETE-DRAFT berarti artefak telah tersedia dan terlacak, bukan telah divalida
 | kandidat Hadith-ID | HAD-000001–000040 dalam BAT-HAD-001–005; 40 kandidat, 0 aktif | SOURCE-CHECK |
 | sumber dan metadata grading awal | 40/40 memiliki locator awal; takhrij/edisi final belum disahkan | COMPLETE-CANDIDATE / EXPERT REVIEW OPEN |
 | terjemah, whitelist, asesmen, safeguarding | belum ada | NOT PROVIDED |
-| mapping halaman Jilid 1–8 | MAP-HAD-QJ1-001 memetakan intro P001–P040, interval 1/3/7/14, dan checkpoint; validasi serta Jilid 2–8 belum ada | COMPLETE-DRAFT / EXPERT REVIEW OPEN |
+| mapping halaman Jilid 1–8 | MAP-HAD-QJ1-001 v0.2 memetakan intro, interval 1/3/7/14, checkpoint maksimum 8 prompt, dan carryover; validasi serta Jilid 2–8 belum ada | COMPLETE-DRAFT / PILOT OPEN |
+| pra-audit internal | AUD-HAD-QJ1-001: identitas/mapping lengkap; overload checkpoint dikoreksi; klaster tema, usia, dan safeguarding dipetakan | COMPLETE-INTERNAL / EXPERT OPEN |
 | paket review ahli | REV-HAD-QJ1-001 memuat matriks 40 objek, audit murojaah, risiko, dan form keputusan | READY-FOR-EXPERT |
 | hasil review, Reviewer-ID, Evidence-ID, Decision-ID | belum ada | NOT PROVIDED |
 
@@ -135,6 +136,7 @@ Persentase keseluruhan proyek QURBATA Jilid 1–8 dicatat terpisah dalam `STAT-Q
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.25.0-id | 29 Juli 2026 | Menambahkan AUD-HAD-QJ1-001 dan mengoreksi checkpoint 39 menjadi maksimum 8 prompt; carryover Jilid 2 diwajibkan |
 | 0.24.0-id | 29 Juli 2026 | Menambahkan MAP-HAD-QJ1-001 dan REV-HAD-QJ1-001; mapping kandidat serta paket keputusan ahli lengkap-draf, 0 APPROVED |
 | 0.23.0-id | 29 Juli 2026 | Menambahkan BAT-HAD-005 dan HAD-000033–000040; kandidat Jilid 1 lengkap 40/40, 0 APPROVED; audit ahli dan mapping murojaah tetap OPEN |
 | 0.22.0-id | 29 Juli 2026 | Menambahkan BAT-HAD-004 dan HAD-000025–000032; akumulasi 32 kandidat, 0 APPROVED |
