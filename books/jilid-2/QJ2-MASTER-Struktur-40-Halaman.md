@@ -2,7 +2,7 @@
 
 **Kode:** QJ2-MASTER  
 **Produk:** Buku QURBATA Jilid 2  
-**Versi:** 0.17.0-id  
+**Versi:** 0.18.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 29 Juli 2026  
 **Jumlah Halaman Inti:** 40  
@@ -96,7 +96,7 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 |---:|---|---|
 | 1 | struktur 40 halaman | COMPLETE-DRAFT |
 | 2 | progression dan dependency | COMPLETE-DRAFT |
-| 3 | isi nyata 40 halaman | IN PROGRESS — 10/40 COMPLETE-DRAFT pada baseline DEC-CUR-010; review ahli terbuka |
+| 3 | isi nyata 40 halaman | IN PROGRESS — 15/40 COMPLETE-DRAFT pada baseline DEC-CUR-010; review ahli terbuka |
 | 4 | audit otomatis | OPEN |
 | 5 | review ahli/akademik/editorial | OPEN |
 | 6 | asesmen dan safeguarding | OPEN |
@@ -126,7 +126,7 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 ## 9. Status Produksi Isi
 
 - QJ2-P001–P015 versi lama adalah draf warisan yang **SUPERSEDED** dan tidak boleh dipakai sebagai materi peserta.
-- Baseline DEC-CUR-010: **QJ2-P001–P010 telah diregenerasi (10/40)**. P001–P005 lulus AUD-QJ2-CONTENT-008; P006–P010 lulus AUD-QJ2-CONTENT-009.
+- Baseline DEC-CUR-010: **QJ2-P001–P015 telah diregenerasi (15/40)**. Batch lulus audit struktur AUD-QJ2-CONTENT-008, AUD-QJ2-CONTENT-009, dan AUD-QJ2-CONTENT-010.
 - Struktur, whitelist, dan audit lama tetap disimpan sebagai riwayat; peta tanwin P016–P021 wajib direvisi menjadi P021–P024.
 - Progres program keseluruhan tetap **42%** sampai model pembobotan proyek dihitung ulang; angka ini bukan klaim bahwa isi Jilid 2 telah selesai.
 - Kesiapan keluar-Draft tetap menunggu review ahli, pilot, Evidence-ID, dan otorisasi.
@@ -135,6 +135,7 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.18.0-id | 29 Juli 2026 | Regenerasi P011–P015 selesai: 120 tangga 60:60 dan tabel visual eksplisit untuk ف ق ك ل م ع غ ه; lulus AUD-QJ2-CONTENT-010 |
 | 0.17.0-id | 29 Juli 2026 | Regenerasi P006–P010 selesai: 96 tangga akuisisi 48:48 dan 24 tangga evaluasi transfer; lulus AUD-QJ2-CONTENT-009 |
 | 0.16.0-id | 29 Juli 2026 | Regenerasi P001–P005 selesai: 120 tangga tiga huruf, 60:60 fokus–murojaah, tanpa tanwin/sukun/tasydid, lulus AUD-QJ2-CONTENT-008 |
 | 0.15.0-id | 29 Juli 2026 | DEC-CUR-010 merombak Jilid 2 menjadi skala keluarga bentuk P001–P020; tanwin bergeser ke P021–P024; draf P001–P015 dibekukan |
