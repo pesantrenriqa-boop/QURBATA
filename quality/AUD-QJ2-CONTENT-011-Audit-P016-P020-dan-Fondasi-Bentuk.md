@@ -22,9 +22,8 @@ Semua 120 tangga tepat tiga identitas huruf dan memiliki peta bentuk/cakupan vis
 
 - 20/20 halaman fondasi bentuk telah diregenerasi.
 - Total: 480 tangga tiga huruf.
-- Halaman akuisisi: 16 halaman × 24 = 384 tangga, terbagi 192 fokus + 192 murojaah.
+- Halaman akuisisi: 17 halaman × 24 = 408 tangga, terbagi 204 fokus + 204 murojaah.
 - Halaman integrasi/evaluasi: P010, P019, P020 = 72 tangga transfer.
-- Sisa P001 adalah orientasi-akuisisi dan tetap memakai 12:12.
 - Tanwin, sukun, dan tasydid: 0 pada seluruh batch yang diaudit.
 - Tanwin baru boleh dimulai P021 dengan struktur 8 tangga tiga huruf + 16 tangga empat huruf.
 
