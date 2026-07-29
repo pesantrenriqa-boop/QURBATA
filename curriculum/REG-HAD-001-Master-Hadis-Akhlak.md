@@ -122,7 +122,7 @@ Sebelum aktivasi, pemeriksa wajib membandingkan matan lengkap dan kutipan, peraw
 - sumber dan locator awal tersedia untuk 40/40 kandidat Jilid 1, tetapi standar edisi/locator lintas register belum diputuskan;
 - takhrij, terjemah, whitelist literasi, dan safeguarding belum dijalankan;
 - MAP-HAD-QJ1-001 v0.2 memetakan P001–P040, interval 1/3/7/14, checkpoint maksimum delapan prompt, dan carryover; AUD-HAD-QJ1-001 selesai internal, tetapi frekuensi aktual serta mapping Jilid 2–8 belum tersedia;
-- REV-HAD-QJ1-001 siap diisi ahli; RUB/FRM/PRO-HAD-QJ1-001 dan DEC-HAD-QJ1-001 menyiapkan rubrik, bukti, protokol bertahap, serta keputusan otorisasi. Seluruh prasyarat pilot, data, Reviewer-ID, Evidence-ID, dan keputusan masih kosong.
+- PROP-HAD-QJ1-001 menyediakan resolusi enam klaster semantik dan prioritas pemindahan/penggantian; REV/RUB/FRM/PRO/DEC-HAD-QJ1-001 menyiapkan review hingga otorisasi. Seluruh keputusan panel, prasyarat pilot, data, Reviewer-ID, Evidence-ID, dan Decision-ID masih kosong.
 
 Karena itu register ini meningkatkan kesiapan arsitektur dan inventaris awal, bukan kesiapan terbit.
 
@@ -130,6 +130,7 @@ Karena itu register ini meningkatkan kesiapan arsitektur dan inventaris awal, bu
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.11.0-id | 29 Juli 2026 | Menambahkan PROP-HAD-QJ1-001 untuk membedakan enam klaster tema dan memprioritaskan objek yang mungkin dipindah/diganti |
 | 0.10.0-id | 29 Juli 2026 | Menambahkan protokol pilot bertahap dan record otorisasi; status efektif NO-GO sampai prasyarat dibuktikan |
 | 0.9.0-id | 29 Juli 2026 | Menambahkan rubrik perkembangan aman dan form bukti pilot 40 halaman; belum ada data atau aktivasi |
 | 0.8.0-id | 29 Juli 2026 | Mengoreksi beban checkpoint menjadi maksimum delapan prompt dan menambahkan AUD-HAD-QJ1-001; validasi ahli tetap OPEN |
