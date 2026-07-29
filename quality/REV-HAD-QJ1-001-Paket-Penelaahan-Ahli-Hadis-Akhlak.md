@@ -4,7 +4,7 @@
 **Status:** READY-FOR-EXPERT — BELUM DIISI  
 **Tanggal:** 29 Juli 2026  
 **Objek:** HAD-000001–HAD-000040  
-**Acuan:** HCP-QUR-001, REG-HAD-001, BAT-HAD-001–005, MAP-HAD-QJ1-001
+**Acuan:** HCP-QUR-001, REG-HAD-001, BAT-HAD-001–005, MAP-HAD-QJ1-001 v0.2, AUD-HAD-QJ1-001, RUB-HAD-QJ1-001, FRM-HAD-QJ1-001
 
 ## 1. Tujuan
 
@@ -44,7 +44,7 @@ Sebuah objek hanya dapat diusulkan APPROVED bila seluruh pemeriksaan berikut mem
 
 1. SRC, MAT, GRD, dan DUP selesai oleh ahli hadis.
 2. TRN selesai oleh ahli yang berwenang.
-3. PED dan MAP lulus uji pedagogis.
+3. PED dan MAP lulus uji pedagogis menggunakan RUB-HAD-QJ1-001 dan bukti FRM-HAD-QJ1-001.
 4. SAFE lulus safeguarding.
 5. AUD menetapkan salah satu kanal: GURU-ONLY, PARTICIPANT-WHITELISTED, atau REJECTED.
 6. Evidence-ID dan Decision-ID tercatat.
