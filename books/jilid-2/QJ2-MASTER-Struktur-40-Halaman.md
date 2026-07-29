@@ -2,7 +2,7 @@
 
 **Kode:** QJ2-MASTER  
 **Produk:** Buku QURBATA Jilid 2  
-**Versi:** 0.11.0-id  
+**Versi:** 0.12.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 29 Juli 2026  
 **Jumlah Halaman Inti:** 40  
@@ -127,7 +127,7 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 
 - QJ2-P001–P015 tersedia sebagai isi nyata COMPLETE-DRAFT.
 - 360 latihan/sampel (1.080 token huruf) telah diregenerasi dan lulus AUD-QJ2-CONTENT-007: seluruh tangga tepat tiga huruf; 12 halaman akuisisi memakai 36 fokus + 36 review; P010/P014/P015 memakai 72 token review/transfer.
-- P016–P017 diblokir BLK-QJ2-ORTHO-001 sampai whitelist tanwin sah.
+- WLT-QJ2-TAN-001 menyediakan 24 kandidat kata (8 tiga huruf + 16 empat huruf); P016–P017 tetap diblokir BLK-QJ2-ORTHO-001 sampai verifikasi ahli dan Utsmani selesai.
 - QJ2-P018–P040 belum diproduksi.
 - Kesiapan isi sumber: **15/40 halaman (37,5%)**; kesiapan keluar-Draft tetap terpisah.
 
@@ -135,6 +135,7 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.12.0-id | 29 Juli 2026 | Menambah WLT-QJ2-TAN-001: 24 kata nyata dan 72 bentuk tanwin kandidat; gate ahli tetap terbuka |
 | 0.11.0-id | 29 Juli 2026 | Mengoreksi DEC-CUR-009: setiap halaman tahap empat huruf diawali 8 tangga tiga huruf lalu 16 tangga empat huruf; distribusi 44:44 |
 | 0.10.0-id | 29 Juli 2026 | DEC-CUR-009 menetapkan transisi ke 24 tangga kata empat huruf mulai tahap tanwin; distribusi akuisisi 48:48 |
 | 0.9.0-id | 29 Juli 2026 | DEC-CUR-008 diterapkan: P001–P015 seluruhnya tiga huruf, 1.080 token, prioritas kata bermakna, lulus AUD-QJ2-CONTENT-007 |
