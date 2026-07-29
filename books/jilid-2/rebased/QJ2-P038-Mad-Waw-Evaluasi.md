@@ -16,7 +16,7 @@
 | 4 | قِيْلَ | ya mad |
 | 5 | رُوْحٌ | waw mad |
 | 6 | كَانَ | alif mad |
-| 7 | فُوْزٌ | waw mad |
+| 7 | طُوْرٌ | waw mad |
 | 8 | دِيْنٌ | ya mad |
 
 ## 8 tangga empat huruf
