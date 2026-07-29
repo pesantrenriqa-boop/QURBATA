@@ -15,11 +15,11 @@ Guru membaca unit kasrah pendek tanpa memanjangkannya, lalu unit yang memuat kas
 | No. | Bacaan | Jenis | Target |
 |---:|---|---|---|
 | 1 | كِتَبَ | pendek | semua kasrah tetap pendek |
-| 2 | قِيلَ | fokus ya mad | قِ + يْ |
+| 2 | قِيْلَ | fokus ya mad | قِ + يْ |
 | 3 | مِهَنَ | pendek | jangan dipanjangkan |
-| 4 | دِينٌ | fokus ya mad | دِ + يْ |
+| 4 | دِيْنٌ | fokus ya mad | دِ + يْ |
 | 5 | نِعَمَ | pendek | kontras |
-| 6 | تِينٌ | fokus ya mad | تِ + يْ |
+| 6 | تِيْنٌ | fokus ya mad | تِ + يْ |
 | 7 | قَالَ | murojaah alif | dua harakat |
 | 8 | كَانَ | murojaah alif | dua harakat |
 
@@ -27,27 +27,27 @@ Guru membaca unit kasrah pendek tanpa memanjangkannya, lalu unit yang memuat kas
 
 | No. | Bacaan | Jenis/status |
 |---:|---|---|
-| 9 | كَرِيمٌ | fokus ya mad; kandidat Qurani |
+| 9 | كَرِيْمٌ | fokus ya mad; kandidat Qurani |
 | 10 | عَذَابَ | murojaah alif |
-| 11 | رَحِيمٌ | fokus ya mad; kandidat Qurani |
+| 11 | رَحِيْمٌ | fokus ya mad; kandidat Qurani |
 | 12 | سَلَامَ | murojaah alif |
-| 13 | عَلِيمٌ | fokus ya mad; kandidat Qurani |
+| 13 | عَلِيْمٌ | fokus ya mad; kandidat Qurani |
 | 14 | نَهَارَ | murojaah alif |
-| 15 | حَكِيمٌ | fokus ya mad; kandidat Qurani |
+| 15 | حَكِيْمٌ | fokus ya mad; kandidat Qurani |
 | 16 | حِسَابَ | murojaah alif |
-| 17 | عَظِيمٌ | fokus ya mad; kandidat Qurani |
+| 17 | عَظِيْمٌ | fokus ya mad; kandidat Qurani |
 | 18 | طَعَامَ | murojaah alif |
-| 19 | يَتِيمٌ | fokus ya mad; kandidat Qurani |
+| 19 | يَتِيْمٌ | fokus ya mad; kandidat Qurani |
 | 20 | شَرَابَ | murojaah alif |
-| 21 | قَرِيبٌ | fokus ya mad; kandidat Qurani |
+| 21 | قَرِيْبٌ | fokus ya mad; kandidat Qurani |
 | 22 | لِبَاسَ | murojaah alif |
-| 23 | بَعِيدٌ | fokus ya mad; kandidat Qurani |
+| 23 | بَعِيْدٌ | fokus ya mad; kandidat Qurani |
 | 24 | مَكَانَ | murojaah alif |
 
 ## Panel terintegrasi
 
-- **Tahfidz 5 menit:** talqin رَحِيمٌ; potongan ayat lengkap menunggu Source-ID dan prasyarat.
-- **Bahasa Arab/mufradat:** كَرِيمٌ = mulia; يَتِيمٌ = anak yatim.
+- **Tahfidz 5 menit:** talqin رَحِيْمٌ; potongan ayat lengkap menunggu Source-ID dan prasyarat.
+- **Bahasa Arab/mufradat:** كَرِيْمٌ = mulia; يَتِيْمٌ = anak yatim.
 - **Hadis/akhlak:** memuliakan anak yatim.
 - **NIDOM:** murojaah قَالَ، كَانَ، سَلَامَ، عَذَابَ.
 - **Evaluasi singkat:** guru mengacak empat kasrah pendek, empat ya mad, dan dua mad alif.
