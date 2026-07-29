@@ -3,7 +3,7 @@
 **Blocker-ID:** BLK-QJ2-ORTHO-001  
 **Tanggal:** 29 Juli 2026  
 **Status:** OPEN — AUTOMATED AUDIT PASS / EXPERT GATE OPEN  
-**Cakupan:** QJ2-P016, QJ2-P017, QJ2-P019, QJ2-P020–P021  
+**Cakupan:** QJ2-P021–P024  
 
 ## 1. Alasan
 
@@ -11,7 +11,7 @@ Tanwin hanya sah pada posisi akhir. Fathatain mempunyai aturan alif penyangga da
 
 ## 2. Keputusan Sementara
 
-1. P016–P017 tidak diisi dengan pseudo-kata tanwin.
+1. P021–P024 tidak diisi dengan pseudo-kata tanwin.
 2. Materi tanwin harus berasal dari whitelist kata nyata: delapan tangga tiga huruf sebagai jembatan dan enam belas tangga empat huruf, semuanya mempunyai Source-ID.
 3. Setiap entri memuat bentuk dasar, bentuk bertanwin, posisi akhir, aturan alif, arti, sumber, dan status review.
 4. Sukun, tasydid, dan mad yang belum diajarkan tidak boleh bocor melalui kata pilihan.
@@ -19,7 +19,7 @@ Tanwin hanya sah pada posisi akhir. Fathatain mempunyai aturan alif penyangga da
 
 ## 2A. Kemajuan Whitelist
 
-WLT-QJ2-TAN-001 menyediakan 8 kandidat kata tiga huruf dan 16 kandidat kata empat huruf beserta 72 bentuk tanwin. AUD-QJ2-TAN-001 lulus audit struktur otomatis; MAP-QJ2-TAN-001 memetakan P016–P021 dan lulus AUD-QJ2-TAN-002; REV-QJ2-TAN-001 siap dikirim. Verifikasi ahli, teks Utsmani, dan render masih terbuka.
+WLT-QJ2-TAN-001 menyediakan 8 kandidat kata tiga huruf dan 16 kandidat kata empat huruf beserta 72 bentuk tanwin. AUD-QJ2-TAN-001 lulus audit struktur otomatis; MAP-QJ2-TAN-001 telah superseded oleh DEC-CUR-010; MAP-QJ2-TAN-002 wajib memetakan P021–P024; REV-QJ2-TAN-001 siap dikirim. Verifikasi ahli, teks Utsmani, dan render masih terbuka.
 
 ## 3. Bukti untuk Menutup Gate
 
@@ -32,4 +32,4 @@ WLT-QJ2-TAN-001 menyediakan 8 kandidat kata tiga huruf dan 16 kandidat kata empa
 
 ## 4. Dampak
 
-P014–P015 dapat diproduksi. P016–P017 tetap **BLOCKED-CONTENT** sampai tersedia whitelist kata empat huruf bertanwin dan gate ditutup. Blocker ini menjaga ketepatan ilmiah dan tidak membatalkan struktur 40 halaman.
+P001–P020 telah diproduksi sebagai fondasi bentuk. P021–P024 boleh dibuat sebagai staging, tetapi tetap **BLOCKED-CONTENT** sampai review ahli, Evidence-ID, dan audit render menutup gate. Blocker ini menjaga ketepatan ilmiah dan tidak membatalkan struktur 40 halaman.
