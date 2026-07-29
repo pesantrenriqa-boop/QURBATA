@@ -2,7 +2,7 @@
 
 **Kode:** QJ2-MASTER  
 **Produk:** Buku QURBATA Jilid 2  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 29 Juli 2026  
 **Jumlah Halaman Inti:** 40  
@@ -96,7 +96,7 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 |---:|---|---|
 | 1 | struktur 40 halaman | COMPLETE-DRAFT |
 | 2 | progression dan dependency | COMPLETE-DRAFT |
-| 3 | isi nyata 40 halaman | IN PROGRESS — 3/40 COMPLETE-DRAFT |
+| 3 | isi nyata 40 halaman | IN PROGRESS — 6/40 COMPLETE-DRAFT |
 | 4 | audit otomatis | OPEN |
 | 5 | review ahli/akademik/editorial | OPEN |
 | 6 | asesmen dan safeguarding | OPEN |
@@ -125,14 +125,15 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 
 ## 9. Status Produksi Isi
 
-- QJ2-P001–P003 tersedia sebagai isi nyata COMPLETE-DRAFT.
-- 72 latihan unik tercatat dalam AUD-QJ2-CONTENT-001.
-- QJ2-P004–P040 belum diproduksi.
-- Kesiapan isi sumber: **3/40 halaman (7,5%)**; kesiapan keluar-Draft tetap terpisah.
+- QJ2-P001–P006 tersedia sebagai isi nyata COMPLETE-DRAFT.
+- 144 latihan unik tercatat secara kumulatif dalam AUD-QJ2-CONTENT-002.
+- QJ2-P007–P040 belum diproduksi.
+- Kesiapan isi sumber: **6/40 halaman (15%)**; kesiapan keluar-Draft tetap terpisah.
 
 ## 10. Riwayat
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.3.0-id | 29 Juli 2026 | Memperluas isi nyata sampai QJ2-P006; audit kumulatif mencatat 6 halaman dan 144 latihan |
 | 0.2.0-id | 29 Juli 2026 | Memulai produksi isi nyata QJ2-P001–P003 dan mencatat audit struktur 72 latihan |
 | 0.1.0-id | 29 Juli 2026 | Membentuk struktur formal 40 halaman Jilid 2 berdasarkan RCP-QUR-001 |
