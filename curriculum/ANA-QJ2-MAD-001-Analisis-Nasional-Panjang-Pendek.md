@@ -77,3 +77,11 @@ QURBATA menetapkan 16 halaman (P025–P040) untuk tangga panjang–pendek. Fokus
 ## 8. Gate ahli
 
 Halaman tidak boleh berstatus final sampai ahli memastikan: ejaan, status huruf mad, kecocokan rasm Mushaf Standar Indonesia, panjang model audio, makna/sumber contoh, dan tidak adanya materi tajwid yang melampaui prasyarat.
+
+## 9. Rujukan nasional
+
+- Keputusan Menteri Agama Nomor 347 Tahun 2022, Pedoman Implementasi Kurikulum Merdeka pada Madrasah: https://staibabussalamsula.ac.id/wp-content/uploads/2023/06/KMA-No-347-Tahun-2022-Pedoman-Implementasi-Kurikulum-Merdeka-Belajar-Pada-Madrasah.pdf
+- Kementerian Agama Jawa Barat, “Privat Tahsinul Qur'an”: https://jabar.kemenag.go.id/daerah/privat-tahsinul-quran-ikhtiar-penting-membumikan-bacaan-al-quran-yang-benar-di-masyarakat-9Kcmpl
+- Kementerian Agama Bengkulu, penjelasan hukum mad secara bertahap: https://bengkulu.kemenag.go.id/berita/view/290/perlancar-bacaan-alqur%E2%80%99an-pai-kua-curup-tengah-jelaskan-hukum-bacaan-mad-di-mt-attaqwa
+- Jurnal SUHUF Kementerian Agama, kajian ortografi Mushaf Standar Indonesia: https://jurnalsuhuf.kemenag.go.id/suhuf/article/download/20/20/
+- Kementerian Agama Sulawesi Tengah, mad thabi'i dalam asesmen baca Al-Qur'an: https://sulteng.kemenag.go.id/berita/0yz8/27-06-2024-seleksi-wawancara-ppdb-man-tolitoli-tahun-ajaran-2024-2025-dimulai
