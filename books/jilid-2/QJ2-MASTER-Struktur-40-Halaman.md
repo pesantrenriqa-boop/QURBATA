@@ -2,7 +2,7 @@
 
 **Kode:** QJ2-MASTER  
 **Produk:** Buku QURBATA Jilid 2  
-**Versi:** 0.13.0-id  
+**Versi:** 0.14.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 29 Juli 2026  
 **Jumlah Halaman Inti:** 40  
@@ -135,6 +135,7 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.14.0-id | 29 Juli 2026 | MAP-QJ2-TAN-001 memetakan P016–P021 dan lulus AUD-QJ2-TAN-002: 44:44 pada halaman akuisisi |
 | 0.13.0-id | 29 Juli 2026 | AUD-QJ2-TAN-001 lulus otomatis dan REV-QJ2-TAN-001 siap untuk review ahli tanwin |
 | 0.12.0-id | 29 Juli 2026 | Menambah WLT-QJ2-TAN-001: 24 kata nyata dan 72 bentuk tanwin kandidat; gate ahli tetap terbuka |
 | 0.11.0-id | 29 Juli 2026 | Mengoreksi DEC-CUR-009: setiap halaman tahap empat huruf diawali 8 tangga tiga huruf lalu 16 tangga empat huruf; distribusi 44:44 |
