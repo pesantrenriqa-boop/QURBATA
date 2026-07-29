@@ -20,15 +20,15 @@ Guru memperagakan bentuk tunggal, awal, tengah, dan akhir untuk huruf target seb
 | No. | Fungsi | Materi | Klasifikasi | Sasaran bentuk |
 |---:|---|---|---|---|
 | 1 | Fokus | دَرَسَ | kata nyata | د/ر pemutus |
-| 2 | Murojaah | جَبَلٌ | kata nyata | review ج |
+| 2 | Murojaah | جَبَلَ | kata nyata/berinfleksi | review ج |
 | 3 | Fokus | ذَهَبَ | kata nyata | ذ pemutus |
-| 4 | Murojaah | حَبْلٌ | kata nyata | review ح |
+| 4 | Murojaah | حَبلَ | kata nyata | review ح |
 | 5 | Fokus | رَزَقَ | kata nyata | ر/ز pemutus |
-| 6 | Murojaah | خَبَرٌ | kata nyata | review خ + ر |
+| 6 | Murojaah | خَبَرَ | kata nyata | review خ + ر |
 | 7 | Fokus | زَرَعَ | kata nyata | ز/ر pemutus |
 | 8 | Murojaah | نَجَحَ | kata nyata | review ج/ح |
 | 9 | Fokus | بَدَأَ | kata nyata | د pemutus |
-| 10 | Murojaah | بَحَرٌ | kata nyata | review ح + ر |
+| 10 | Murojaah | بَحَرَ | kata nyata | review ح + ر |
 | 11 | Fokus | نَذَرَ | kata nyata | ذ/ر pemutus |
 | 12 | Murojaah | دَخَلَ | kata nyata | review خ + د |
 | 13 | Fokus | خَرَجَ | kata nyata | ر pemutus |
@@ -38,16 +38,16 @@ Guru memperagakan bentuk tunggal, awal, tengah, dan akhir untuk huruf target seb
 | 17 | Fokus | رَدَدَ | kata nyata | ر/د/د pemutus |
 | 18 | Murojaah | ثَبَتَ | kata nyata | review keluarga Ba |
 | 19 | Fokus | ذَكَرَ | kata nyata | ذ/ر pemutus |
-| 20 | Murojaah | بَيْتٌ | kata nyata | review ي/ت |
+| 20 | Murojaah | بَيتَ | kata nyata | review ي/ت |
 | 21 | Fokus | دَخَرَ | rangkaian bermakna potensial | د/خ/ر |
-| 22 | Murojaah | نَبِيٌّ | kata nyata | review ن/ي |
+| 22 | Murojaah | نَبِيَ | rangkaian kendali | review ن/ي |
 | 23 | Fokus | زَهَدَ | kata nyata | ز/د pemutus |
 | 24 | Murojaah | خَلَقَ | kata nyata | review خ |
 
 ## Kendali Pembelajaran
 
 - Fokus dan murojaah diselang-seling.
-- Semua tangga terdiri dari tepat tiga identitas huruf; harakat, sukun, tanwin, dan tasydid tidak dihitung sebagai identitas tambahan.
+- Semua tangga terdiri dari tepat tiga identitas huruf; harakat pendek tidak dihitung sebagai identitas tambahan; tanwin, sukun, dan tasydid belum boleh tampil pada P001–P020.
 - “Kata nyata” boleh dipakai sebagai bahan makna setelah guru memastikan arti dan konteks.
 - “Rangkaian kendali” hanya untuk latihan bentuk dan tidak boleh diajarkan sebagai mufradat.
 - Klaim berasal dari Al-Qur'an atau hadis belum boleh diberikan tanpa Source-ID.
