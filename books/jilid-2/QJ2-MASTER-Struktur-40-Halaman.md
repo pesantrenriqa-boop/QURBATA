@@ -2,7 +2,7 @@
 
 **Kode:** QJ2-MASTER  
 **Produk:** Buku QURBATA Jilid 2  
-**Versi:** 0.14.0-id  
+**Versi:** 0.15.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 29 Juli 2026  
 **Jumlah Halaman Inti:** 40  
@@ -27,8 +27,8 @@ Target belum merupakan klaim efektivitas sebelum review ahli, pilot, Evidence-ID
 ## 3. Aturan Halaman
 
 1. Kode halaman: `QJ2-P001`–`QJ2-P040`.
-2. QJ2-P001–P015 menggunakan 24 tangga × 3 huruf. Mulai tahap tanwin, setiap halaman selalu diawali Tangga 1–8 tiga huruf, lalu Tangga 9–24 empat huruf sesuai DEC-CUR-009.
-3. Halaman akuisisi tetap 50:50: sebelum tanwin 36:36 token; mulai tanwin 44:44 token dari pola jembatan 3→4. Seluruh identitas termasuk hamzah/alif serta pemutus sambungan tetap masuk rotasi.
+2. QJ2-P001–P020 menggunakan 24 tangga × 3 huruf dan mengikuti skala keluarga bentuk DEC-CUR-010.
+3. Halaman akuisisi tetap 50:50: sebelum tanwin 36:36 token. Mulai P021, setiap halaman diawali 8 tangga tiga huruf lalu 16 tangga empat huruf, setara 44:44 token fokus–murojaah.
 4. Bentuk terpisah hanya dipakai sebagai remedial; fokus bergerak ke bentuk sambung.
 5. Kata Qurani harus memiliki Source-ID dan lulus audit teks.
 6. Tanwin hanya muncul pada posisi yang benar.
@@ -43,46 +43,46 @@ Target belum merupakan klaim efektivitas sebelum review ahli, pilot, Evidence-ID
 
 | Halaman | Kode | Fokus | Materi Baru/Utama | Jenis |
 |---:|---|---|---|---|
-| 1 | QJ2-P001 | orientasi bentuk sambung | konsep bentuk terpisah–awal–tengah–akhir | Latihan |
-| 2 | QJ2-P002 | keluarga ب ت ث | bentuk sambung keluarga Ba | Latihan |
-| 3 | QJ2-P003 | keluarga ج ح خ | bentuk sambung keluarga Jim | Latihan |
-| 4 | QJ2-P004 | د ذ ر ز | huruf yang tidak menyambung ke kiri | Latihan |
-| 5 | QJ2-P005 | س ش | bentuk sambung keluarga Sin | Latihan |
-| 6 | QJ2-P006 | ص ض | bentuk sambung keluarga Shad | Latihan |
-| 7 | QJ2-P007 | ط ظ | bentuk sambung keluarga Tha | Latihan |
-| 8 | QJ2-P008 | ع غ | variasi bentuk 'Ain–Ghain | Latihan |
-| 9 | QJ2-P009 | ف ق | bentuk sambung Fa–Qaf | Latihan |
-| 10 | QJ2-P010 | Evaluasi Bentuk Sambung I | P001–P009 | Evaluasi 1 |
-| 11 | QJ2-P011 | ك ل | bentuk sambung Kaf–Lam | Latihan |
-| 12 | QJ2-P012 | م ن | bentuk sambung Mim–Nun | Latihan |
-| 13 | QJ2-P013 | ه و ي | bentuk sambung Ha–Waw–Ya | Latihan |
-| 14 | QJ2-P014 | integrasi posisi awal | seluruh keluarga eligible | Penguatan |
-| 15 | QJ2-P015 | integrasi posisi tengah–akhir | seluruh keluarga eligible | Penguatan |
-| 16 | QJ2-P016 | fathatain + transisi empat huruf | kata empat huruf sah berakhiran ـً | Latihan |
-| 17 | QJ2-P017 | kasratain | kata empat huruf sah berakhiran ـٍ | Latihan |
-| 18 | QJ2-P018 | Hafalan 1 | unit Al-Qur'an yang disahkan | Hafalan 1 |
-| 19 | QJ2-P019 | dhammatain | kata empat huruf sah berakhiran ـٌ | Latihan |
-| 20 | QJ2-P020 | Evaluasi Sambung dan Tanwin | P001–P019 | Evaluasi 2 |
-| 21 | QJ2-P021 | integrasi tiga tanwin | kontras ـً ـٍ ـٌ | Penguatan |
-| 22 | QJ2-P022 | mad alif | fathah + alif | Latihan |
-| 23 | QJ2-P023 | mad ya | kasrah + ya sakinah sebagai pola mad | Latihan |
-| 24 | QJ2-P024 | mad waw | dhammah + waw sakinah sebagai pola mad | Latihan |
-| 25 | QJ2-P025 | pendek–panjang I | fathah versus mad alif | Penguatan |
-| 26 | QJ2-P026 | pendek–panjang II | kasrah/dhammah versus mad ya/waw | Penguatan |
-| 27 | QJ2-P027 | kata terkendali | bentuk sambung + tanwin/mad eligible | Latihan |
-| 28 | QJ2-P028 | Bahasa Arab 2 | mufradat/frasa lisan tervalidasi | Bahasa Arab |
-| 29 | QJ2-P029 | integrasi kata Qurani | kandidat bersumber dan whitelist lulus | Latihan |
-| 30 | QJ2-P030 | Evaluasi Mad Asli | tiga pola mad dan kontras pendek | Evaluasi 3 |
-| 31 | QJ2-P031 | transfer bentuk sambung | kata baru setara | Latihan |
-| 32 | QJ2-P032 | transfer tanwin | kata baru setara | Latihan |
-| 33 | QJ2-P033 | transfer mad | kata baru setara | Latihan |
-| 34 | QJ2-P034 | integrasi sambung–tanwin–mad | seluruh kompetensi eligible | Penguatan |
+| 1 | QJ2-P001 | konsep sambung dengan ب | tunggal–awal–tengah–akhir | Latihan |
+| 2 | QJ2-P002 | ب ت ث | satu kerangka, beda titik | Latihan |
+| 3 | QJ2-P003 | ب ت ث ن ي | kontras bentuk awal/tengah | Latihan |
+| 4 | QJ2-P004 | ج ح خ | keluarga mangkuk | Latihan |
+| 5 | QJ2-P005 | د ذ ر ز | pemutus sambungan | Latihan |
+| 6 | QJ2-P006 | ا و | pemutus dalam rangkaian | Latihan |
+| 7 | QJ2-P007 | س ش | gigi dan titik | Latihan |
+| 8 | QJ2-P008 | ص ض | mangkuk tebal | Latihan |
+| 9 | QJ2-P009 | ط ظ | batang tegak | Latihan |
+| 10 | QJ2-P010 | Evaluasi Bentuk I | P001–P009 | Evaluasi 1 |
+| 11 | QJ2-P011 | ف ق | kepala, ekor, dan titik | Latihan |
+| 12 | QJ2-P012 | ك | perubahan khas tiap posisi | Latihan |
+| 13 | QJ2-P013 | ل م | perubahan alur sambung | Latihan |
+| 14 | QJ2-P014 | ع غ | variasi awal–tengah–akhir | Latihan |
+| 15 | QJ2-P015 | ه | empat bentuk yang berubah | Latihan |
+| 16 | QJ2-P016 | ت ة ه | ta panjang, ta bulat, ha | Latihan |
+| 17 | QJ2-P017 | ي ى | kontras bentuk akhir | Latihan |
+| 18 | QJ2-P018 | ء أ إ ؤ ئ | pengenalan kursi hamzah | Latihan |
+| 19 | QJ2-P019 | integrasi bentuk | penyambung dan pemutus | Penguatan |
+| 20 | QJ2-P020 | Evaluasi Bentuk II | P011–P019 | Evaluasi 2 |
+| 21 | QJ2-P021 | fathatain | jembatan 8×3 + 16×4 | Latihan |
+| 22 | QJ2-P022 | kasratain | jembatan 8×3 + 16×4 | Latihan |
+| 23 | QJ2-P023 | dhammatain | jembatan 8×3 + 16×4 | Latihan |
+| 24 | QJ2-P024 | integrasi tiga tanwin | transfer 3→4 huruf | Penguatan |
+| 25 | QJ2-P025 | Hafalan 1 | unit Al-Qur'an yang disahkan | Hafalan 1 |
+| 26 | QJ2-P026 | mad alif | fathah + alif | Latihan |
+| 27 | QJ2-P027 | mad ya | kasrah + ya sakinah | Latihan |
+| 28 | QJ2-P028 | Bahasa Arab 2 | mufradat/frasa tervalidasi | Bahasa Arab |
+| 29 | QJ2-P029 | mad waw | dhammah + waw sakinah | Latihan |
+| 30 | QJ2-P030 | Evaluasi Mad Asli | mad dan kontras pendek | Evaluasi 3 |
+| 31 | QJ2-P031 | pendek–panjang | tiga pola mad | Penguatan |
+| 32 | QJ2-P032 | kata terkendali | sambung + tanwin/mad eligible | Latihan |
+| 33 | QJ2-P033 | integrasi kata Qurani | kandidat bersumber | Latihan |
+| 34 | QJ2-P034 | transfer bentuk–tanwin–mad | kata baru setara | Penguatan |
 | 35 | QJ2-P035 | remedial pola kritis | hasil audit formatif | Remedial |
-| 36 | QJ2-P036 | Hafalan 2 | unit Al-Qur'an yang disahkan + murojaah | Hafalan 2 |
+| 36 | QJ2-P036 | Hafalan 2 | unit sah + murojaah | Hafalan 2 |
 | 37 | QJ2-P037 | simulasi baca kata | sampel paralel | Simulasi |
-| 38 | QJ2-P038 | Akhlak/Hadis 2 | adab keluarga, teman, guru, dan benda bersama | Akhlak/Hadis |
+| 38 | QJ2-P038 | Akhlak/Hadis 2 | adab tervalidasi | Akhlak/Hadis |
 | 39 | QJ2-P039 | simulasi mandiri | seluruh materi Jilid 2 | Simulasi |
-| 40 | QJ2-P040 | Ujian Akhir Jilid 2 | seluruh kompetensi Jilid 2 | Evaluasi 4 |
+| 40 | QJ2-P040 | Ujian Akhir Jilid 2 | seluruh kompetensi | Evaluasi 4 |
 
 ## 5. Keterlacakan Wajib
 
@@ -96,7 +96,7 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 |---:|---|---|
 | 1 | struktur 40 halaman | COMPLETE-DRAFT |
 | 2 | progression dan dependency | COMPLETE-DRAFT |
-| 3 | isi nyata 40 halaman | IN PROGRESS — 15/40 COMPLETE-DRAFT; P016–P017 BLOCKED-ORTHO |
+| 3 | isi nyata 40 halaman | REGENERATION — 15 halaman warisan dibekukan; 0/40 sah pada baseline DEC-CUR-010 |
 | 4 | audit otomatis | OPEN |
 | 5 | review ahli/akademik/editorial | OPEN |
 | 6 | asesmen dan safeguarding | OPEN |
@@ -125,16 +125,17 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 
 ## 9. Status Produksi Isi
 
-- QJ2-P001–P015 tersedia sebagai isi nyata COMPLETE-DRAFT.
-- 360 latihan/sampel (1.080 token huruf) telah diregenerasi dan lulus AUD-QJ2-CONTENT-007: seluruh tangga tepat tiga huruf; 12 halaman akuisisi memakai 36 fokus + 36 review; P010/P014/P015 memakai 72 token review/transfer.
-- WLT-QJ2-TAN-001 menyediakan 24 kandidat kata (8 tiga huruf + 16 empat huruf); P016–P017 tetap diblokir BLK-QJ2-ORTHO-001 sampai verifikasi ahli dan Utsmani selesai.
-- QJ2-P018–P040 belum diproduksi.
-- Kesiapan isi sumber: **15/40 halaman (37,5%)**; kesiapan keluar-Draft tetap terpisah.
+- QJ2-P001–P015 versi lama adalah draf warisan yang **SUPERSEDED** dan tidak boleh dipakai sebagai materi peserta.
+- Baseline DEC-CUR-010 memulai ulang validitas isi: **0/40 halaman telah diregenerasi**.
+- Struktur, whitelist, dan audit lama tetap disimpan sebagai riwayat; peta tanwin P016–P021 wajib direvisi menjadi P021–P024.
+- Progres program keseluruhan tetap **42%** sampai model pembobotan proyek dihitung ulang; angka ini bukan klaim bahwa isi Jilid 2 telah selesai.
+- Kesiapan keluar-Draft tetap menunggu review ahli, pilot, Evidence-ID, dan otorisasi.
 
 ## 10. Riwayat
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.15.0-id | 29 Juli 2026 | DEC-CUR-010 merombak Jilid 2 menjadi skala keluarga bentuk P001–P020; tanwin bergeser ke P021–P024; draf P001–P015 dibekukan |
 | 0.14.0-id | 29 Juli 2026 | MAP-QJ2-TAN-001 memetakan P016–P021 dan lulus AUD-QJ2-TAN-002: 44:44 pada halaman akuisisi |
 | 0.13.0-id | 29 Juli 2026 | AUD-QJ2-TAN-001 lulus otomatis dan REV-QJ2-TAN-001 siap untuk review ahli tanwin |
 | 0.12.0-id | 29 Juli 2026 | Menambah WLT-QJ2-TAN-001: 24 kata nyata dan 72 bentuk tanwin kandidat; gate ahli tetap terbuka |
