@@ -2,7 +2,7 @@
 
 **Kode:** QJ2-MASTER  
 **Produk:** Buku QURBATA Jilid 2  
-**Versi:** 0.8.0-id  
+**Versi:** 0.9.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 29 Juli 2026  
 **Jumlah Halaman Inti:** 40  
@@ -27,8 +27,8 @@ Target belum merupakan klaim efektivitas sebelum review ahli, pilot, Evidence-ID
 ## 3. Aturan Halaman
 
 1. Kode halaman: `QJ2-P001`–`QJ2-P040`.
-2. Halaman latihan menggunakan 24 tangga; jumlah token ditetapkan menurut tipe materi.
-3. Halaman akuisisi menggunakan DEC-CUR-007: 32/64 token fokus dan 32/64 token review; seluruh 29 identitas termasuk hamzah/alif serta pemutus sambungan masuk rotasi.
+2. Mulai Jilid 2, seluruh halaman latihan menggunakan 24 tangga dan setiap tangga tepat tiga huruf sesuai DEC-CUR-008.
+3. Halaman akuisisi menggunakan DEC-CUR-007 dan DEC-CUR-008: 36/72 token fokus dan 36/72 token review; seluruh 29 identitas termasuk hamzah/alif serta pemutus sambungan masuk rotasi.
 4. Bentuk terpisah hanya dipakai sebagai remedial; fokus bergerak ke bentuk sambung.
 5. Kata Qurani harus memiliki Source-ID dan lulus audit teks.
 6. Tanwin hanya muncul pada posisi yang benar.
@@ -126,7 +126,7 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 ## 9. Status Produksi Isi
 
 - QJ2-P001–P015 tersedia sebagai isi nyata COMPLETE-DRAFT.
-- 360 latihan/sampel (960 token huruf) telah diregenerasi dan lulus AUD-QJ2-CONTENT-006: 12 halaman akuisisi memakai 32 fokus + 32 review; P010/P014/P015 memakai review/transfer penuh.
+- 360 latihan/sampel (1.080 token huruf) telah diregenerasi dan lulus AUD-QJ2-CONTENT-007: seluruh tangga tepat tiga huruf; 12 halaman akuisisi memakai 36 fokus + 36 review; P010/P014/P015 memakai 72 token review/transfer.
 - P016–P017 diblokir BLK-QJ2-ORTHO-001 sampai whitelist tanwin sah.
 - QJ2-P018–P040 belum diproduksi.
 - Kesiapan isi sumber: **15/40 halaman (37,5%)**; kesiapan keluar-Draft tetap terpisah.
@@ -135,6 +135,7 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.9.0-id | 29 Juli 2026 | DEC-CUR-008 diterapkan: P001–P015 seluruhnya tiga huruf, 1.080 token, prioritas kata bermakna, lulus AUD-QJ2-CONTENT-007 |
 | 0.8.0-id | 29 Juli 2026 | Regenerasi P001–P015 selesai dan lulus AUD-QJ2-CONTENT-006; seluruh 29 identitas, hamzah/alif, dan pemutus sambungan hadir |
 | 0.7.0-id | 29 Juli 2026 | Menerapkan DEC-CUR-007 dan membuka regenerasi P001–P015 menjadi 50:50 dengan seluruh identitas pada review |
 | 0.6.0-id | 29 Juli 2026 | Menambah P014–P015 dan membuka gate ortografi tanwin; 15 halaman dan 360 latihan/sampel lulus audit |
