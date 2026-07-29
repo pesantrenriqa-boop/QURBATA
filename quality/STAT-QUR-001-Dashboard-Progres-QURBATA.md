@@ -205,6 +205,7 @@ Jalur tercepat yang sah dari 42%:
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.12.0-id | 29 Juli 2026 | Regenerasi korektif QJ2-P001–P015 lulus audit 50:50 dan cakupan 29 identitas; progres tetap 42% karena pekerjaan ulang menjaga integritas baseline |
 | 0.11.0-id | 29 Juli 2026 | P014–P015 menyelesaikan integrasi posisi; BLK-QJ2-ORTHO-001 mencegah contoh tanwin keliru; 360 latihan lulus audit, total mentah 42,222%, laporan 42% |
 | 0.10.0-id | 29 Juli 2026 | QJ2-P011–P013 melengkapi keluarga huruf utama; 312 latihan/sampel lulus audit kumulatif, domain isi menjadi 20,3125%, total mentah 41,941%, laporan tetap 42% |
 | 0.9.0-id | 29 Juli 2026 | Siklus pertama Jilid 2 ditutup sampai QJ2-P010; 240 latihan/sampel lulus checkpoint struktur, domain isi menjadi 19,375%, total mentah 41,519%, laporan 42% |
