@@ -19,16 +19,16 @@ Guru memperagakan bentuk tunggal, awal, tengah, dan akhir untuk huruf target seb
 
 | No. | Fungsi | Materi | Klasifikasi | Sasaran bentuk |
 |---:|---|---|---|---|
-| 1 | Fokus | بَيْتٌ | kata nyata | ب awal; ي tengah; ت akhir |
+| 1 | Fokus | بَيتَ | kata nyata | ب awal; ي tengah; ت akhir |
 | 2 | Murojaah | كَتَبَ | kata nyata | ب/ت |
-| 3 | Fokus | بَنَى | kata nyata | ب awal; ن tengah; ى akhir |
+| 3 | Fokus | بَنَتَ | rangkaian kendali | ب awal; ن tengah; ت akhir |
 | 4 | Murojaah | ثَبَتَ | kata nyata | ث/ب/ت |
 | 5 | Fokus | نَبَتَ | kata nyata | ن awal; ب tengah; ت akhir |
 | 6 | Murojaah | بَتَرَ | kata nyata | ب/ت |
 | 7 | Fokus | يَتِمَ | kata nyata | ي awal; ت tengah |
 | 8 | Murojaah | تَبِعَ | kata nyata | ت/ب |
 | 9 | Fokus | يَبِنَ | rangkaian kendali | ي–ب–ن |
-| 10 | Fokus | تَبَيَّنَ | kata nyata | empat identitas; tidak masuk tangga |
+| 10 | Murojaah | بَتَثَ | rangkaian kendali | review ب–ت–ث |
 | 11 | Fokus | بَيَنَ | rangkaian kendali | ب–ي–ن |
 | 12 | Murojaah | ثَقَبَ | kata nyata | ث/ب |
 | 13 | Fokus | نَيَبَ | rangkaian kendali | ن–ي–ب |
@@ -37,17 +37,17 @@ Guru memperagakan bentuk tunggal, awal, tengah, dan akhir untuk huruf target seb
 | 16 | Murojaah | تَابَ | kata nyata | ت/ب |
 | 17 | Fokus | تَيَنَ | rangkaian kendali | ت–ي–ن |
 | 18 | Murojaah | بَثَثَ | rangkaian kendali | ب/ث |
-| 19 | Fokus | ثَنَى | kata nyata | ث awal; ن tengah; ى akhir |
+| 19 | Fokus | ثَنَا | rangkaian kendali | ث awal; ن tengah; ا pemutus |
 | 20 | Murojaah | تَبَتَ | rangkaian kendali | ت/ب |
-| 21 | Fokus | بَنَتْ | kata nyata | ب awal; ن tengah; ت akhir |
-| 22 | Murojaah | بَقَرٌ | kata nyata | ب awal |
-| 23 | Fokus | نَبِيٌّ | kata nyata | ن awal; ب tengah; ي akhir |
+| 21 | Fokus | بَنَت | kata nyata | ب awal; ن tengah; ت akhir |
+| 22 | Murojaah | بَقَرَ | kata nyata | ب awal |
+| 23 | Fokus | نَبِيَ | rangkaian kendali | ن awal; ب tengah; ي akhir |
 | 24 | Murojaah | سَبَقَ | kata nyata | ب tengah |
 
 ## Kendali Pembelajaran
 
 - Fokus dan murojaah diselang-seling.
-- Semua tangga terdiri dari tepat tiga identitas huruf; harakat, sukun, tanwin, dan tasydid tidak dihitung sebagai identitas tambahan.
+- Semua tangga terdiri dari tepat tiga identitas huruf; harakat pendek tidak dihitung sebagai identitas tambahan; tanwin, sukun, dan tasydid belum boleh tampil pada P001–P020.
 - “Kata nyata” boleh dipakai sebagai bahan makna setelah guru memastikan arti dan konteks.
 - “Rangkaian kendali” hanya untuk latihan bentuk dan tidak boleh diajarkan sebagai mufradat.
 - Klaim berasal dari Al-Qur'an atau hadis belum boleh diberikan tanpa Source-ID.
