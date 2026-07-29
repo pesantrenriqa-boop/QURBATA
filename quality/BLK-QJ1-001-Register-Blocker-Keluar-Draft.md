@@ -77,6 +77,7 @@ COMPLETE-DRAFT berarti artefak telah tersedia dan terlacak, bukan telah divalida
 | pra-audit internal | AUD-HAD-QJ1-001: identitas/mapping lengkap; overload checkpoint dikoreksi; klaster tema, usia, dan safeguarding dipetakan | COMPLETE-INTERNAL / EXPERT OPEN |
 | paket review ahli | REV-HAD-QJ1-001 memuat matriks 40 objek, audit murojaah, risiko, dan form keputusan | READY-FOR-EXPERT |
 | rubrik dan form pilot | RUB-HAD-QJ1-001 + FRM-HAD-QJ1-001; dimensi perkembangan, checkpoint, log frekuensi, carryover, dan safeguarding | READY-FOR-PILOT-AUTHORIZATION |
+| protokol dan otorisasi pilot | PRO-HAD-QJ1-001 bertahap; DEC-HAD-QJ1-001 kosong dan efektif NO-GO | READY-FOR-AUTHORIZATION / NOT ACTIVE |
 | data pilot | durasi, load aktual, retensi, remedial, dan frekuensi per peserta belum ada | NOT PROVIDED |
 | hasil review, Reviewer-ID, Evidence-ID, Decision-ID | belum ada | NOT PROVIDED |
 
@@ -138,6 +139,7 @@ Persentase keseluruhan proyek QURBATA Jilid 1–8 dicatat terpisah dalam `STAT-Q
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.27.0-id | 29 Juli 2026 | Menambahkan PRO-HAD-QJ1-001 dan DEC-HAD-QJ1-001; pilot dibagi lima fase dan tetap NO-GO sampai otorisasi |
 | 0.26.0-id | 29 Juli 2026 | Menambahkan RUB-HAD-QJ1-001 dan FRM-HAD-QJ1-001; instrumen pilot siap-draf tanpa data, persetujuan, atau Evidence-ID |
 | 0.25.0-id | 29 Juli 2026 | Menambahkan AUD-HAD-QJ1-001 dan mengoreksi checkpoint 39 menjadi maksimum 8 prompt; carryover Jilid 2 diwajibkan |
 | 0.24.0-id | 29 Juli 2026 | Menambahkan MAP-HAD-QJ1-001 dan REV-HAD-QJ1-001; mapping kandidat serta paket keputusan ahli lengkap-draf, 0 APPROVED |
