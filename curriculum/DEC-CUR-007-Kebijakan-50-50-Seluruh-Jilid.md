@@ -3,6 +3,8 @@
 **Decision-ID:** DEC-CUR-007  
 **Versi:** 1.0.0-id  
 **Status:** BERLAKU UNTUK PRODUKSI DRAF  
+
+> **Catatan koreksi:** DEC-CUR-008 mengoreksi mekanik Jilid 2–8: seluruh tangga wajib tiga huruf. Dengan demikian 50:50 dihitung sebagai 36 token fokus + 36 token review, bukan 32 + 32.
 **Tanggal keputusan Pemilik Akademik:** 29 Juli 2026  
 **Pemilik Akademik:** Aris Liswanto  
 **Cakupan:** seluruh halaman akuisisi QURBATA Jilid 1–8  
