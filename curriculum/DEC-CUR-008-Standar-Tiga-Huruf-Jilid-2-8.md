@@ -10,6 +10,8 @@
 
 Mulai QURBATA Jilid 2, setiap tangga latihan baca wajib berisi tepat **tiga identitas huruf**. Pola dua huruf hanya milik tahap fondasi Jilid 1 dan tidak boleh digunakan lagi pada Jilid 2–8.
 
+Standar tiga huruf ini dibatasi sampai sebelum tahap tanwin. Mulai tanwin, DEC-CUR-009 menaikkan tangga menjadi empat huruf dasar.
+
 ## 2. Distribusi Halaman Akuisisi
 
 Setiap halaman akuisisi memiliki 24 tangga:
