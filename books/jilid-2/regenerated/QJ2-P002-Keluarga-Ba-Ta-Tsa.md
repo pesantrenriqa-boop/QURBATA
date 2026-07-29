@@ -38,7 +38,7 @@ Guru memperagakan bentuk tunggal, awal, tengah, dan akhir untuk huruf target seb
 | 17 | Fokus | ثَقَبَ | kata nyata | ث awal; ب akhir |
 | 18 | Murojaah | ذَهَبَ | kata nyata | pemutus + ب akhir |
 | 19 | Fokus | تَابَ | kata nyata | ت awal; ب akhir |
-| 20 | Murojaah | بَقَرٌ | kata nyata | ب awal |
+| 20 | Murojaah | بَقَرَ | kata nyata | ب awal |
 | 21 | Fokus | بَاتَ | kata nyata | ب awal; ت akhir |
 | 22 | Murojaah | بَدَأَ | kata nyata | ب awal/pemutus |
 | 23 | Fokus | ثَابَ | rangkaian bermakna potensial | ث awal; ب akhir |
@@ -47,7 +47,7 @@ Guru memperagakan bentuk tunggal, awal, tengah, dan akhir untuk huruf target seb
 ## Kendali Pembelajaran
 
 - Fokus dan murojaah diselang-seling.
-- Semua tangga terdiri dari tepat tiga identitas huruf; harakat, sukun, tanwin, dan tasydid tidak dihitung sebagai identitas tambahan.
+- Semua tangga terdiri dari tepat tiga identitas huruf; harakat pendek tidak dihitung sebagai identitas tambahan; tanwin, sukun, dan tasydid belum boleh tampil pada P001–P020.
 - “Kata nyata” boleh dipakai sebagai bahan makna setelah guru memastikan arti dan konteks.
 - “Rangkaian kendali” hanya untuk latihan bentuk dan tidak boleh diajarkan sebagai mufradat.
 - Klaim berasal dari Al-Qur'an atau hadis belum boleh diberikan tanpa Source-ID.
