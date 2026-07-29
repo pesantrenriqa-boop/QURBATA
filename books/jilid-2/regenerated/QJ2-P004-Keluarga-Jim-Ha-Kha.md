@@ -19,16 +19,16 @@ Guru memperagakan bentuk tunggal, awal, tengah, dan akhir untuk huruf target seb
 
 | No. | Fungsi | Materi | Klasifikasi | Sasaran bentuk |
 |---:|---|---|---|---|
-| 1 | Fokus | جَبَلٌ | kata nyata | ج awal |
-| 2 | Murojaah | بَيْتٌ | kata nyata | review keluarga Ba |
-| 3 | Fokus | حَبْلٌ | kata nyata | ح awal |
-| 4 | Murojaah | نَبِيٌّ | kata nyata | review ن/ي |
-| 5 | Fokus | خَبَرٌ | kata nyata | خ awal |
+| 1 | Fokus | جَبَلَ | kata nyata/berinfleksi | ج awal |
+| 2 | Murojaah | بَيتَ | kata nyata | review keluarga Ba |
+| 3 | Fokus | حَبلَ | kata nyata | ح awal |
+| 4 | Murojaah | نَبِيَ | rangkaian kendali | review ن/ي |
+| 5 | Fokus | خَبَرَ | kata nyata | خ awal |
 | 6 | Murojaah | ثَنَى | kata nyata | review ث/ن/ى |
 | 7 | Fokus | سَجَدَ | kata nyata | ج tengah |
 | 8 | Murojaah | كَتَبَ | kata nyata | review ب/ت |
-| 9 | Fokus | بَحَرٌ | kata nyata | ح tengah |
-| 10 | Murojaah | بَنَتْ | kata nyata | review ب/ن/ت |
+| 9 | Fokus | بَحَرَ | kata nyata | ح tengah |
+| 10 | Murojaah | بَنَت | kata nyata | review ب/ن/ت |
 | 11 | Fokus | دَخَلَ | kata nyata | خ tengah |
 | 12 | Murojaah | يَبِسَ | kata nyata | review ي/ب |
 | 13 | Fokus | خَرَجَ | kata nyata | خ awal; ج akhir |
@@ -47,7 +47,7 @@ Guru memperagakan bentuk tunggal, awal, tengah, dan akhir untuk huruf target seb
 ## Kendali Pembelajaran
 
 - Fokus dan murojaah diselang-seling.
-- Semua tangga terdiri dari tepat tiga identitas huruf; harakat, sukun, tanwin, dan tasydid tidak dihitung sebagai identitas tambahan.
+- Semua tangga terdiri dari tepat tiga identitas huruf; harakat pendek tidak dihitung sebagai identitas tambahan; tanwin, sukun, dan tasydid belum boleh tampil pada P001–P020.
 - “Kata nyata” boleh dipakai sebagai bahan makna setelah guru memastikan arti dan konteks.
 - “Rangkaian kendali” hanya untuk latihan bentuk dan tidak boleh diajarkan sebagai mufradat.
 - Klaim berasal dari Al-Qur'an atau hadis belum boleh diberikan tanpa Source-ID.
