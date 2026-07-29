@@ -9,7 +9,7 @@
 
 | No. | Bacaan | Uji |
 |---:|---|---|
-| 1 | فُوْزٌ | fokus waw mad |
+| 1 | طُوْرٌ | fokus waw mad |
 | 2 | دَارٌ | murojaah alif |
 | 3 | دُوْنَ | fokus waw mad |
 | 4 | حِيْنٌ | murojaah ya |
