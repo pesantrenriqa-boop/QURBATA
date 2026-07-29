@@ -132,6 +132,7 @@ Karena itu register ini meningkatkan kesiapan arsitektur dan inventaris awal, bu
 |---|---|---|
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.17.0-id | 29 Juli 2026 | Menambahkan QPR-HAD-QJ1-001: antrean pra-takhrij lima gelombang untuk 40 objek; pekerjaan ahli tetap 0/40 |
 | 0.16.0-id | 29 Juli 2026 | Menambahkan locator daring HAD-000025–HAD-000032; cakupan locator daring awal lengkap 40/40 |
 | 0.15.0-id | 29 Juli 2026 | Menambahkan locator daring HAD-000017–HAD-000024; cakupan locator daring menjadi 32/40 |
 | 0.14.0-id | 29 Juli 2026 | Menambahkan locator daring HAD-000009–HAD-000016; cakupan locator daring menjadi 24/40 |
