@@ -13,8 +13,8 @@ Guru membaca unit kiri dengan seluruh harakat pendek, lalu unit kanan yang memua
 
 | No. | Pendek | Panjang | Fungsi |
 |---:|---|---|---|
-| 1 | بَتَبَتَ | بَاتَ | dengar–tiru |
-| 2 | تَبَ | تَابَ | dengar–tiru |
+| 1 | بَتَبَ | بَاتَ | dengar–tiru |
+| 2 | تَبَتَ | تَابَ | dengar–tiru |
 | 3 | قَتَلَ | قَالَ | kontras |
 | 4 | كَتَبَ | كَانَ | kontras |
 | 5 | مَلَكَ | مَالَ | kontras |
