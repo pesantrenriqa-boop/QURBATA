@@ -3,7 +3,7 @@
 **Audit-ID:** AUD-HAD-QJ1-001  
 **Status:** INTERNAL-PRECHECK COMPLETE — EXPERT VALIDATION OPEN  
 **Tanggal:** 29 Juli 2026  
-**Cakupan:** REG-HAD-001, BAT-HAD-001–005, MAP-HAD-QJ1-001 v0.2.0-id, REV-HAD-QJ1-001
+**Cakupan:** REG-HAD-001, BAT-HAD-001–005, MAP-HAD-QJ1-001 v0.2.0-id, REV-HAD-QJ1-001, QPR-HAD-QJ1-001
 
 ## 1. Batas Audit
 
@@ -85,6 +85,10 @@ HAD-000038–HAD-000040 tidak boleh memicu identifikasi anak yatim, pengungkapan
 Semua kandidat masih HOLD-PARTICIPANT. Penyebutan tema, makna, atau teks Arab dalam layout peserta harus menunggu keputusan per objek. Template buku tidak boleh mengimpor otomatis kolom Arabic-Text dari register kandidat.
 
 - **Status:** RENDER WHITELIST OPEN.
+
+## 3A. Triase Pra-Takhrij
+
+QPR-HAD-QJ1-001 membagi 40 objek ke lima gelombang berisi delapan objek. Gelombang 1 memprioritaskan keselamatan dan konteks kritis; gelombang berikutnya menangani usia/privasi, penggalan/varian, kedekatan tema, lalu konsolidasi sisa. Triase lengkap 40/40, tetapi pekerjaan ahli tetap 0/40.
 
 ## 4. Gerbang Tindak Lanjut
 
