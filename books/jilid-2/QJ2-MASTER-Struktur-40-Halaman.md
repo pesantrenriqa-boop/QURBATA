@@ -2,7 +2,7 @@
 
 **Kode:** QJ2-MASTER  
 **Produk:** Buku QURBATA Jilid 2  
-**Versi:** 0.6.0-id  
+**Versi:** 0.7.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 29 Juli 2026  
 **Jumlah Halaman Inti:** 40  
@@ -28,7 +28,7 @@ Target belum merupakan klaim efektivitas sebelum review ahli, pilot, Evidence-ID
 
 1. Kode halaman: `QJ2-P001`–`QJ2-P040`.
 2. Halaman latihan menggunakan 24 tangga; jumlah token ditetapkan menurut tipe materi.
-3. Materi baru dan review dipisahkan dalam metadata.
+3. Halaman akuisisi menggunakan DEC-CUR-007: 32/64 token fokus dan 32/64 token review; seluruh 29 identitas termasuk hamzah/alif serta pemutus sambungan masuk rotasi.
 4. Bentuk terpisah hanya dipakai sebagai remedial; fokus bergerak ke bentuk sambung.
 5. Kata Qurani harus memiliki Source-ID dan lulus audit teks.
 6. Tanwin hanya muncul pada posisi yang benar.
@@ -135,6 +135,7 @@ Setiap halaman belum boleh disebut lengkap sampai memiliki outcome, prasyarat, w
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
+| 0.7.0-id | 29 Juli 2026 | Menerapkan DEC-CUR-007 dan membuka regenerasi P001–P015 menjadi 50:50 dengan seluruh identitas pada review |
 | 0.6.0-id | 29 Juli 2026 | Menambah P014–P015 dan membuka gate ortografi tanwin; 15 halaman dan 360 latihan/sampel lulus audit |
 | 0.5.0-id | 29 Juli 2026 | Menambah QJ2-P011–P013; 13 halaman dan 312 latihan/sampel lulus audit kumulatif |
 | 0.4.0-id | 29 Juli 2026 | Menutup Siklus 1 QJ2-P001–P010; 240 latihan/sampel lulus checkpoint struktur draf |
