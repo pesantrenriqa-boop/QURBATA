@@ -19,7 +19,7 @@ Tanwin hanya sah pada posisi akhir. Fathatain mempunyai aturan alif penyangga da
 
 ## 2A. Kemajuan Whitelist
 
-WLT-QJ2-TAN-001 menyediakan 8 kandidat kata tiga huruf dan 16 kandidat kata empat huruf beserta 72 bentuk tanwin. AUD-QJ2-TAN-001 lulus audit struktur otomatis dan REV-QJ2-TAN-001 siap dikirim; verifikasi ahli, teks Utsmani, dan render masih terbuka.
+WLT-QJ2-TAN-001 menyediakan 8 kandidat kata tiga huruf dan 16 kandidat kata empat huruf beserta 72 bentuk tanwin. AUD-QJ2-TAN-001 lulus audit struktur otomatis; MAP-QJ2-TAN-001 memetakan P016–P021 dan lulus AUD-QJ2-TAN-002; REV-QJ2-TAN-001 siap dikirim. Verifikasi ahli, teks Utsmani, dan render masih terbuka.
 
 ## 3. Bukti untuk Menutup Gate
 
