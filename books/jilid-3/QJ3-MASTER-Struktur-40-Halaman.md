@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 1.0.3-draft  
+**Versi:** 1.0.4-draft  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
@@ -429,3 +429,23 @@ Produksi frasa dikendalikan [REG-QJ3-FRQ-001](../../curriculum/REG-QJ3-FRQ-001-R
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 1.0.3-draft | 30 Juli 2026 | Mengikat normalisasi P006–P010; 120 item lulus struktural dengan antrean tashih leksikal dan audio khusus |
+
+
+## 44. Audit Tahap II — Normalisasi P011–P015
+
+[AUD-QJ3-004](../../audit/AUD-QJ3-004-Normalisasi-P011-P015.md) dan [data item P011–P015](../../data/jilid-3/QJ3-ITEMS-P011-P015.csv) menetapkan:
+
+- 120/120 kotak P011–P015 telah dinormalisasi menjadi Item-ID;
+- tangga terverifikasi: 40 kata tiga huruf, 60 kata empat huruf, dan 20 kata lima huruf;
+- 120/120 item lulus pemeriksaan struktural awal;
+- bentuk kursi أْ/ئْ/ؤْ dipetakan kepada target ءْ dengan bentuk tulis asli tetap dipertahankan;
+- 0 item multi-kata, selisih hitung huruf, target sukun hilang, tasydid, alif-lam prematur, sukun qalqalah prematur, atau kelompok target + mad tanpa mad;
+- `سُخْفٌ`, `شَغْبٌ`, `دَغْلٌ`, `جُؤْرٌ`, dan `مَصْلُوبٌ` masuk antrean tashih Prioritas A untuk keputusan ganti/pertahankan;
+- audit audio khusus diwajibkan untuk خْ, عْ, kontras غْ–خْ, kursi hamzah, serta ketebalan صْ;
+- seluruh item tetap AR-CANDIDATE/PENDING dan belum SIAP UJI/CETAK.
+
+## 45. Riwayat Audit Tahap II P011–P015
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 1.0.4-draft | 30 Juli 2026 | Mengikat normalisasi P011–P015; 120 item lulus struktural dengan lima kandidat leksikal Prioritas A |
