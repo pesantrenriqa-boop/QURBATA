@@ -1,21 +1,22 @@
 # QJ3-B01B — Regenerasi Materi Jilid 3 P001–P005
 
 **Kode:** QJ3-B01B  
-**Versi:** 0.1.0-id  
+**Versi:** 0.2.0-id  
 **Tanggal:** 30 Juli 2026  
 **Status:** COMPLETE-DRAFT — MENUNGGU TASHIH AHLI  
 **Menggantikan:** QJ3-B01A yang berstatus SUPERSEDED  
-**Pengendali:** DEC-CUR-018, QJ3-MASTER v0.5.0, MAT-QJ3-REV-001 v0.2.0
+**Pengendali:** DEC-CUR-018, DEC-CUR-019, QJ3-MASTER v0.5.0, MAT-QJ3-REV-001 v0.2.0
 
 ## 1. Batas Produksi
 
 1. Urutan berdasarkan huruf yang menyandang sukun: مْ → لْ → فْ → كْ → سْ/شْ.
-2. Setiap halaman tepat 24 kotak: 12 kata tiga huruf untuk fokus dan 12 kata empat huruf untuk murojaah/transfer.
-3. Setiap kotak hanya satu kata; tidak ada hukum pertemuan antarkata.
+2. Setiap halaman tepat 24 kotak: 12 kata tiga huruf untuk fokus, 6 kata empat huruf untuk murojaah kumulatif, dan 6 kata empat huruf yang menggabungkan sukun dengan mad yang telah dipelajari.
+3. Kotak utama hanya satu kata; tidak ada hukum pertemuan antarkata.
 4. Tanwin hanya berada di akhir kata/kotak dan tidak disambungkan ke kata berikutnya.
 5. Tidak ada huruf tunggal, tangga dua huruf, tasydid, alif-lam, atau qalqalah bersukun.
 6. Tidak ada nama hukum pertemuan nun/mim/tanwin.
-7. Semua lema masih berstatus kandidat Bahasa Arab sampai makna, harakat, ortografi, dan sumber ditashih.
+7. Frasa Qurani hanya boleh masuk panel transfer bila seluruh dependency sudah eligible dan Source-ID telah diverifikasi; ketiadaan frasa yang sesuai bukan kekurangan.
+8. Semua lema non-Qurani masih berstatus kandidat Bahasa Arab sampai makna, harakat, dan ortografinya ditashih.
 
 ## QJ3-P001 — Sukun pada مْ
 
@@ -35,18 +36,18 @@
 | 10 | هَمْسٌ | 3 | Fokus huruf target | AR-CANDIDATE |
 | 11 | خَمْسٌ | 3 | Fokus huruf target | AR-CANDIDATE |
 | 12 | رَمْزٌ | 3 | Fokus huruf target | AR-CANDIDATE |
-| 13 | يَمْنَعُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 14 | يَمْلِكُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 15 | يَمْسَحُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 16 | أَمْسَكَ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 17 | أَمْهَلَ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 18 | تَمْنَعُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 19 | تَمْلِكُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 20 | حَمْزَةٌ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 21 | سَمْكَةٌ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 22 | مُمْسِكٌ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 23 | مُمْهِلٌ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 24 | يُمْهِلُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
+| 13 | يَمْنَعُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 14 | يَمْلِكُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 15 | يَمْسَحُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 16 | أَمْسَكَ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 17 | أَمْهَلَ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 18 | تَمْنَعُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 19 | يَمْشِي | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 20 | تَمْشِي | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 21 | يَمْحُو | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 22 | تَمْحُو | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 23 | يُمْلِي | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 24 | تُمْلِي | 4 | Murojaah mad + sukun | AR-CANDIDATE |
 
 ## QJ3-P002 — Sukun pada لْ
 
@@ -66,18 +67,26 @@
 | 10 | أَلْفٌ | 3 | Fokus huruf target | AR-CANDIDATE |
 | 11 | حُلْوٌ | 3 | Fokus huruf target | AR-CANDIDATE |
 | 12 | جِلْدٌ | 3 | Fokus huruf target | AR-CANDIDATE |
-| 13 | يَمْهَرُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 14 | يَمْزَحُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 15 | يَمْلَأُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 16 | يَمْشِي | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 17 | أَمْطَرَ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 18 | أَمْرَضَ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 19 | أَمْعَنَ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 20 | سَمْعَةٌ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 21 | جُمْلَةٌ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 22 | عُمْدَةٌ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 23 | تَمْرَةٌ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 24 | حُمْرَةٌ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
+| 13 | يَمْهَرُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 14 | يَمْزَحُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 15 | يَمْلَأُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 16 | يَمْشِي | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 17 | أَمْطَرَ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 18 | أَمْرَضَ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 19 | يَلْهُو | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 20 | تَلْهُو | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 21 | يَلْقَى | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 22 | تَلْقَى | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 23 | سَلْوَى | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 24 | بَلْوَى | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+
+### Tangga Transfer Qurani Opsional
+
+| Frasa asli | Fokus | Source-ID | Status |
+|---:|---|---|---|
+| هَلْ أَتَىٰ | لْ + alif maqsurah sebagai mad | Q-076-001-A | ELIGIBLE-CANDIDATE; wajib cocokkan rasm cetak |
+
+Frasa ini merupakan awal QS Al-Insan 76:1. Ia dipilih karena memadukan لْ yang sedang dipelajari dengan mad yang sudah dikuasai tanpa tanwin/nun/mim sukun antarkata. Panel ini tidak mengurangi 24 kotak utama.
 
 ## QJ3-P003 — Sukun pada فْ
 
@@ -97,18 +106,18 @@
 | 10 | سُفْرٌ | 3 | Fokus huruf target | AR-CANDIDATE |
 | 11 | حَفْلٌ | 3 | Fokus huruf target | AR-CANDIDATE |
 | 12 | طِفْلٌ | 3 | Fokus huruf target | AR-CANDIDATE |
-| 13 | يَمْنَعُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 14 | يَمْلِكُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 15 | يَمْسَحُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 16 | أَمْهَلَ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 17 | يَمْشِي | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 18 | أَمْطَرَ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 19 | يَلْعَبُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 20 | يَلْبَسُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 21 | يَلْهُو | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 22 | أَلْهَمَ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 23 | أَلْزَمَ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 24 | جَلْسَةٌ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
+| 13 | يَمْنَعُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 14 | يَمْلِكُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 15 | يَمْسَحُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 16 | أَمْهَلَ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 17 | يَلْعَبُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 18 | يَلْبَسُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 19 | يَفْنَى | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 20 | تَفْنَى | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 21 | يَفْدِي | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 22 | تَفْدِي | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 23 | نَفْسِي | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 24 | لَفْظِي | 4 | Murojaah mad + sukun | AR-CANDIDATE |
 
 ## QJ3-P004 — Sukun pada كْ
 
@@ -128,18 +137,18 @@
 | 10 | نَكْسٌ | 3 | Fokus huruf target | AR-CANDIDATE |
 | 11 | وَكْرٌ | 3 | Fokus huruf target | AR-CANDIDATE |
 | 12 | فَكْرٌ | 3 | Fokus huruf target | AR-CANDIDATE |
-| 13 | يَمْنَعُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 14 | يَمْسَحُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 15 | أَمْسَكَ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 16 | أَمْهَلَ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 17 | يَلْعَبُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 18 | يَلْبَسُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 19 | أَلْهَمَ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 20 | أَلْزَمَ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 21 | يَفْهَمُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 22 | يَفْرَحُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 23 | يَفْسَحُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 24 | يَفْنَى | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
+| 13 | يَمْنَعُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 14 | يَمْسَحُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 15 | أَمْسَكَ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 16 | يَلْعَبُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 17 | يَفْهَمُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 18 | يَفْرَحُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 19 | يَكْفِي | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 20 | تَكْفِي | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 21 | يَكْسُو | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 22 | تَكْسُو | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 23 | يَكْوِي | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 24 | تَكْوِي | 4 | Murojaah mad + sukun | AR-CANDIDATE |
 
 ## QJ3-P005 — Sukun pada سْ dan شْ
 
@@ -159,28 +168,30 @@
 | 10 | عَشْرٌ | 3 | Fokus huruf target | AR-CANDIDATE |
 | 11 | كَشْفٌ | 3 | Fokus huruf target | AR-CANDIDATE |
 | 12 | رُشْدٌ | 3 | Fokus huruf target | AR-CANDIDATE |
-| 13 | يَمْنَعُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 14 | يَمْلِكُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 15 | يَمْسَحُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 16 | يَلْعَبُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 17 | يَلْبَسُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 18 | يَلْهُو | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 19 | يَفْهَمُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 20 | يَفْرَحُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 21 | يَفْسَحُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 22 | يَكْتُبُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 23 | يَكْسِبُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
-| 24 | يَكْشِفُ | 4 | Murojaah kumulatif/transfer | AR-CANDIDATE |
+| 13 | يَمْنَعُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 14 | يَمْلِكُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 15 | يَلْعَبُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 16 | يَلْبَسُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 17 | يَفْهَمُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 18 | يَكْتُبُ | 4 | Murojaah kumulatif | AR-CANDIDATE |
+| 19 | يَسْعَى | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 20 | تَسْعَى | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 21 | يَسْرِي | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 22 | تَسْرِي | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 23 | يَشْفِي | 4 | Murojaah mad + sukun | AR-CANDIDATE |
+| 24 | تَشْفِي | 4 | Murojaah mad + sukun | AR-CANDIDATE |
 
 ## 2. Audit Otomatis Awal
 
 | Pemeriksaan | Hasil |
 |---|---:|
 | halaman | 5 |
-| kotak | 120/120 |
+| kotak utama | 120/120 |
 | kata 3 huruf | 60 |
 | kata 4 huruf | 60 |
-| contoh lebih dari satu kata | 0 |
+| kotak integrasi mad–sukun | 30 |
+| contoh utama lebih dari satu kata | 0 |
+| frasa Qurani tervalidasi awal | 1 |
 | tasydid | 0 |
 | alif-lam | 0 |
 | قْ طْ بْ جْ دْ | 0 |
@@ -188,12 +199,12 @@
 ## 3. Audit Manual yang Masih Wajib
 
 - tashih harakat dan bentuk tanwin setiap lema;
+- tashih mad asli/alif maqsurah pada setiap kotak integrasi;
 - tashih makna serta kelaziman kosakata untuk anak;
-- audit apakah suatu lema terlalu jarang atau tidak sesuai konteks;
-- pemetaan Source-ID bila benar-benar dipilih dari Al-Qur'an/hadis;
-- rekaman audio pendek–sukun tanpa tawallud;
+- cocokkan frasa Qurani dengan rasm mushaf yang akan menjadi standar cetak;
+- pemetaan Source-ID tambahan hanya bila seluruh dependency eligible;
+- rekaman audio pendek–mad–sukun tanpa tawallud;
 - audit makhraj target dan non-target;
-- uji font Amiri Quran dan urutan kanan-ke-kiri;
 - persetujuan ahli sebelum materi dinyatakan SIAP UJI.
 
 Dokumen ini tidak mengklaim kelima halaman sudah siap cetak.
