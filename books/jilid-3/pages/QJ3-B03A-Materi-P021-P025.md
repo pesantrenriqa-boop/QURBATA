@@ -2,10 +2,10 @@
 
 **Kode:** QJ3-B03A  
 **Produk:** QURBATA Jilid 3  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Status:** COMPLETE-DRAFT — menunggu tashih ahli  
 **Tanggal:** 30 Juli 2026  
-**Pengendali:** QJ3-MASTER, DEC-CUR-018, DEC-CUR-019, DEC-CUR-020, MAT-QJ3-REV-001  
+**Pengendali:** QJ3-MASTER, DEC-CUR-018, DEC-CUR-019, DEC-CUR-020, DEC-CUR-021, MAT-QJ3-REV-001  
 **Jumlah:** 120 kotak materi
 
 ## Kendali batch
@@ -110,4 +110,5 @@
 2. Audit makna, kelaziman, ضبط, level usia, audio, dan risiko tawallud.
 3. Verifikasi pemerataan mad dan keluarga sukun P001–P025, termasuk transfer pola enam huruf berakhiran ـُونَ.
 4. Jangan menyamakan kata transfer seperti يَعْلَمُونَ dengan kata fokus لْ; klasifikasi ditentukan oleh huruf yang benar-benar menyandang sukun.
-5. Jangan gunakan batch untuk uji/cetak sebelum pengesahan reviewer.
+5. Audit pemerataan tiga tanwin dan pola transfer Qurani lain menurut DEC-CUR-021; masukkan hanya bila seluruh dependency bersih.
+6. Jangan gunakan batch untuk uji/cetak sebelum pengesahan reviewer.
