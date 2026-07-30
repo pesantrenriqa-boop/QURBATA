@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 1.0.0-draft  
+**Versi:** 1.0.1-draft  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
@@ -374,3 +374,20 @@ Produksi frasa dikendalikan [REG-QJ3-FRQ-001](../../curriculum/REG-QJ3-FRQ-001-R
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 1.0.0-draft | 30 Juli 2026 | Menyelesaikan draf materi nyata P001–P040 sebanyak 960 kotak; belum merupakan versi siap uji/cetak |
+
+
+## 38. Audit Tahap I
+
+[AUD-QJ3-001](../../audit/AUD-QJ3-001-Audit-Tahap-I-Jilid-3.md) menetapkan:
+
+- 8/8 batch, 40/40 kode halaman unik, dan struktur 960 kotak lulus pemeriksaan mekanis awal;
+- 0 tanda tasydid dan 0 istilah hukum tajwid prematur terdeteksi pada delapan dokumen materi;
+- daftar leksikal prioritas A, ortografi/rasm, klasifikasi fokus–transfer, dan frasa Qurani masih OPEN;
+- status tetap COMPLETE-DRAFT, bukan SIAP UJI/CETAK;
+- tahap berikutnya adalah normalisasi 960 kotak menjadi Item-ID untuk audit pemerataan dan tashih.
+
+## 39. Riwayat Audit
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 1.0.1-draft | 30 Juli 2026 | Mengikat AUD-QJ3-001: struktur lulus audit tahap I; leksikal, rasm, sumber, audio, dan pemerataan masih terbuka |
