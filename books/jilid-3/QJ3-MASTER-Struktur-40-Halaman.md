@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 0.8.0-id  
+**Versi:** 0.9.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
@@ -112,7 +112,7 @@ Integrasi tidak boleh mengurangi jumlah halaman materi atau menggantikan latihan
 | 1 | struktur 40 halaman materi | COMPLETE-DRAFT |
 | 2 | dependency sukun → lam sukun → qamariyah | COMPLETE-DRAFT |
 | 3 | distribusi keluarga bentuk dan murojaah MAT-QJ3-REV-001 | COMPLETE-DRAFT; contoh belum diaudit |
-| 4 | isi nyata dan whitelist 40 halaman | B01A SUPERSEDED; P001–P020 COMPLETE-DRAFT menunggu tashih |
+| 4 | isi nyata dan whitelist 40 halaman | B01A SUPERSEDED; P001–P025 COMPLETE-DRAFT menunggu tashih |
 | 5 | audit sumber, ortografi, distribusi, retensi | OPEN |
 | 6 | review ahli/akademik/editorial | OPEN |
 | 7 | asesmen, safeguarding, pilot, revisi | OPEN |
@@ -258,3 +258,19 @@ DEC-CUR-019 mewajibkan mad asli tetap hadir sebagai murojaah pada halaman sukun.
 - Nama harakat/tanda diajarkan setelah bunyinya dikuasai: tiga harakat pendek di akhir Jilid 1, tanwin/mad pada Jilid 2 sesuai dependency, dan sukun pada Jilid 3.
 - Checkpoint awā’il ditempatkan pada halaman 20 dan 30, menggunakan registry lintas jilid agar tidak ada bentuk yang diperkenalkan dua kali.
 - Sesudah daftar awā’il selesai, slot checkpoint beralih ke nama tanda waqaf dan literasi mushaf lain secara bertahap.
+
+
+## 25. Produksi B03A
+
+- [QJ3-B03A P021–P025](pages/QJ3-B03A-Materi-P021-P025.md): 120 kotak COMPLETE-DRAFT.
+- Cakupan: kontras lam berharakat–لْ, لْ setelah fatḥah/kasrah/ḍammah, kata panjang, dan evaluasi bersama mad.
+- Kenaikan tangga: P021 = 3/4 huruf; P022–P023 = 3/4/5 huruf; P024–P025 = 3/4/5/6 huruf.
+- Komposisi batch: 36 kata tiga huruf + 56 kata empat huruf + 20 kata lima huruf + 8 kata enam huruf.
+- Audit mekanis: 0 frasa dua kata, 0 tasydid, 0 alif-lam, dan 0 sukun qalqalah.
+- Status P001–P025: 600 kotak draf nyata; belum SIAP UJI/CETAK.
+
+## 26. Riwayat Produksi B03A
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 0.9.0-id | 30 Juli 2026 | Menambahkan P021–P025 dan menaikkan kompleksitas lam sukun secara bertahap sampai kata enam huruf |
