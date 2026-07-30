@@ -112,7 +112,7 @@ Integrasi tidak boleh mengurangi jumlah halaman materi atau menggantikan latihan
 | 1 | struktur 40 halaman materi | COMPLETE-DRAFT |
 | 2 | dependency sukun → lam sukun → qamariyah | COMPLETE-DRAFT |
 | 3 | distribusi keluarga bentuk dan murojaah MAT-QJ3-REV-001 | COMPLETE-DRAFT; contoh belum diaudit |
-| 4 | isi nyata dan whitelist 40 halaman | B01A SUPERSEDED; B01B P001–P005 COMPLETE-DRAFT menunggu tashih |
+| 4 | isi nyata dan whitelist 40 halaman | B01A SUPERSEDED; P001–P010 COMPLETE-DRAFT menunggu tashih |
 | 5 | audit sumber, ortografi, distribusi, retensi | OPEN |
 | 6 | review ahli/akademik/editorial | OPEN |
 | 7 | asesmen, safeguarding, pilot, revisi | OPEN |
@@ -202,3 +202,12 @@ QJ3-MASTER v0.4.0 pada bagian P001–P020 dinyatakan superseded. Urutan sukun ti
 ## 18. Kendali Mad dan Frasa Qurani
 
 DEC-CUR-019 mewajibkan mad asli tetap hadir sebagai murojaah pada halaman sukun. Frasa Qurani hanya ditambahkan bila seluruh dependency telah eligible; halaman tidak wajib mempunyai frasa Qurani bila tidak ditemukan kandidat yang bersih.
+
+
+## 19. Produksi B01C
+
+- [QJ3-B01C P006–P010](pages/QJ3-B01C-Materi-P006-P010.md): 120 kotak COMPLETE-DRAFT.
+- Cakupan: ثْ/ذْ/زْ, رْ, نْ satu kata, هْ/حْ, dan evaluasi kumulatif.
+- Komposisi: 60 kata tiga huruf + 30 kata empat huruf murojaah + 30 kata empat huruf integrasi mad–sukun.
+- Tidak ada frasa Qurani yang dipaksakan; kandidat menunggu gate DEC-CUR-019.
+- Status P001–P010: 240 kotak draf nyata; belum SIAP UJI/CETAK.
