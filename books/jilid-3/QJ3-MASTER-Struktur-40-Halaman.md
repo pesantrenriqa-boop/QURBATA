@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 0.6.0-id  
+**Versi:** 0.7.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
@@ -112,7 +112,7 @@ Integrasi tidak boleh mengurangi jumlah halaman materi atau menggantikan latihan
 | 1 | struktur 40 halaman materi | COMPLETE-DRAFT |
 | 2 | dependency sukun → lam sukun → qamariyah | COMPLETE-DRAFT |
 | 3 | distribusi keluarga bentuk dan murojaah MAT-QJ3-REV-001 | COMPLETE-DRAFT; contoh belum diaudit |
-| 4 | isi nyata dan whitelist 40 halaman | B01A SUPERSEDED; P001–P015 COMPLETE-DRAFT menunggu tashih |
+| 4 | isi nyata dan whitelist 40 halaman | B01A SUPERSEDED; P001–P020 COMPLETE-DRAFT menunggu tashih |
 | 5 | audit sumber, ortografi, distribusi, retensi | OPEN |
 | 6 | review ahli/akademik/editorial | OPEN |
 | 7 | asesmen, safeguarding, pilot, revisi | OPEN |
@@ -228,3 +228,21 @@ DEC-CUR-019 mewajibkan mad asli tetap hadir sebagai murojaah pada halaman sukun.
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 0.6.0-id | 30 Juli 2026 | Menambahkan 120 kotak P011–P015: خْ, عْ, غْ, ءْ, صْ; menaikkan tangga menjadi 3/4/5 huruf serta mempertahankan mad dan murojaah |
+
+
+## 22. Produksi B02B
+
+- [QJ3-B02B P016–P020](pages/QJ3-B02B-Materi-P016-P020.md): 120 kotak COMPLETE-DRAFT + panel prioritas P020.
+- Cakupan: ضْ, ظْ, waw/ya sukun non-mad, integrasi keluarga sukun, dan Evaluasi Sukun II.
+- Komposisi: 40 kata tiga huruf + 60 kata empat huruf + 20 kata lima huruf.
+- P018 mengontraskan وْ/يْ non-mad dengan mad yang telah dipelajari tanpa menambah hukum baru.
+- P020 memuat panel tambahan nama huruf tahap I dan checkpoint `طه — طَا هَا`; keduanya tidak mengambil 24 kotak utama.
+- Tidak ada frasa Qurani yang dipaksakan; semua kata dan panel tetap kandidat sampai tashih.
+- Audit mekanis kotak utama: 0 frasa dua kata, 0 tasydid, 0 alif-lam, dan 0 sukun pada huruf qalqalah.
+- Status P001–P020: 480 kotak draf nyata; belum SIAP UJI/CETAK.
+
+## 23. Riwayat Produksi B02B
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 0.7.0-id | 30 Juli 2026 | Menambahkan P016–P020: ضْ, ظْ, وْ/يْ non-mad, integrasi, evaluasi, nama huruf tahap I, dan checkpoint طه |
