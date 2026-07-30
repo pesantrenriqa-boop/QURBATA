@@ -1,51 +1,46 @@
 # QJ2-P030 — Transfer Mad Waw ke Kata Bermakna
 
-**Status:** COMPLETE-DRAFT — wajib Source-ID, tashih, dan review ahli  
-**Fokus:** mengenalkan panjang dua harakat pada mad waw dengan perpindahan bertahap dari bentuk pendek ke kata bermakna  
-**Murojaah:** mad alif, tanwin, huruf pemutus, keluarga bentuk lama  
-**Distribusi:** 24 kotak baca; 8 murojaah + 16 fokus/transfer
+**Status:** REVISED — audit tangga QURBATA
 
-## Petunjuk talqin
+## Fokus
+Mengenalkan mad waw dua harakat setelah penguatan mad alif.
 
-Guru mencontohkan satu kata, santri menirukan, kemudian membaca kembali tanpa mengeja. Wawu mad dibaca dua harakat secara stabil. Santri membedakan antara wawu mad dan wawu yang berfungsi sebagai huruf asli tanpa dipanjangkan.
+## Prinsip Tangga
+- Fokus hanya pada mad waw.
+- Panjang kata boleh bertambah, tetapi pola bacaan harus sudah dikuasai.
+- Tidak memasukkan sukun.
+- Tidak memasukkan lafadz Allah.
+- Tidak memasukkan pola وا.
+- Tidak memasukkan hukum nun/tanwin lanjutan.
 
-## 24 kotak baca
+## Distribusi
+24 kotak baca:
+- 8 murojaah
+- 16 fokus transfer
 
-| Kotak | Bacaan | Fungsi |
-|---:|---|---|
-| 1 | نُورٌ | murojaah mad waw |
-| 2 | سُورٌ | murojaah س/ر pemutus |
-| 3 | دُورٌ | murojaah د/ر |
-| 4 | فُولٌ | murojaah bentuk ف |
-| 5 | قُولُوا | murojaah rangkaian waw |
-| 6 | يَقُولُ | murojaah kata panjang |
-| 7 | رُوحٌ | murojaah ح akhir |
-| 8 | سُوءٌ | review hamzah setelah waw |
-| 9 | رَسُولٌ | fokus kata Qurani |
-| 10 | رَسُولًا | fokus mad waw + tanwin fathah |
-| 11 | غَفُورٌ | fokus waw tengah |
-| 12 | شَكُورٌ | fokus ك/ر |
-| 13 | صَبُورٌ | fokus ص tebal |
-| 14 | ذَكُورٌ | fokus ذ pemutus |
-| 15 | وَجُوهٌ | fokus ج/ه |
-| 16 | قُلُوبٌ | fokus ل/ب |
-| 17 | عُيُونٌ | transfer dua waw |
-| 18 | جُيُوبٌ | transfer ي setelah waw |
-| 19 | حُرُوفٌ | transfer bentuk berulang |
-| 20 | خُرُوجٌ | transfer ج akhir |
-| 21 | دُخُولٌ | transfer rangkaian panjang |
-| 22 | وُجُوهًا | transfer tanwin fathah |
-| 23 | نُفُوسٌ | transfer ف/س |
-| 24 | قُدُورٌ | transfer akhir jilid |
+## Contoh Bacaan
+1. نُورٌ
+2. سُورٌ
+3. دُورٌ
+4. فُولٌ
+5. رُوحٌ
+6. غَفُورٌ
+7. شَكُورٌ
+8. صَبُورٌ
+9. ذَكُورٌ
+10. وَجُوهٌ
+11. قُلُوبٌ
+12. عُيُونٌ
+13. حُرُوفٌ
+14. خُرُوجٌ
+15. دُخُولٌ
+16. نُفُوسٌ
 
-## Panel terintegrasi
+## Dikeluarkan dari halaman ini
+- قُولُوا (pola وا/waw jama')
+- يَقُولُ (ditunda sampai audit pola lebih lanjut)
+- رَسُولًا dan bentuk bertanwin yang berpotensi membawa materi tambahan
+- kata yang memperkenalkan hukum baru
 
-- **Tahfidz:** pilih lafaz yang sudah memiliki Source-ID setelah audit Mushaf Standar Indonesia.
-- **Bahasa Arab/mufradat:** نُورٌ = cahaya; رَسُولٌ = utusan; قَلْبٌ = hati.
-- **Akhlak:** adab membaca Al-Qur'an dengan tartil dan tidak tergesa-gesa.
-- **NIDOM:** ulang pola mad alif P026–P029 sebelum membaca mad waw.
-- **Evaluasi:** guru mengacak 12 kata dari kelompok awal, tengah, dan akhir.
-
-## Gate halaman
-
-Santri siap ke QJ2-P031 apabila mampu membaca minimal 20 dari 24 kotak dengan panjang mad waw stabil dan mampu membedakan wawu mad dengan wawu asli.
+## Evaluasi
+Santri mampu membaca mad waw dengan stabil dan membedakan bacaan panjang dengan bacaan pendek.
