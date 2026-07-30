@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-B03A  
 **Produk:** QURBATA Jilid 3  
-**Versi:** 0.3.0-id  
+**Versi:** 0.4.0-id  
 **Status:** COMPLETE-DRAFT — menunggu tashih ahli  
 **Tanggal:** 30 Juli 2026  
 **Pengendali:** QJ3-MASTER, DEC-CUR-018, DEC-CUR-019, DEC-CUR-020, DEC-CUR-021, MAT-QJ3-REV-001  
@@ -72,6 +72,22 @@
 **Catatan tangga:** empat kata enam huruf pertama tetap berfokus لْ; empat berikutnya adalah transfer kumulatif sukun terdahulu + mad wāw. يَعْلَمُونَ tidak dihitung sebagai fokus لْ karena yang bersukun ialah عْ.
 
 **Catatan tashih ketat:** seluruh kata enam huruf wajib diaudit ضبط, makna, frekuensi, dan kesesuaian tingkat anak.  
+
+### Panel Transfer Qurani Kandidat — Lam Sukun
+
+| ID Kandidat | Frasa asli | Sumber | Fokus | Status |
+|---|---:|---|---|---|
+| Q-005-003-LAM-A | أَكْمَلْتُ لَكُمْ | QS Al-Mā’idah 5:3 | كْ + لْ + مْ akhir frasa | ELIGIBLE-CANDIDATE |
+| Q-007-010-LAM-A | وَجَعَلْنَا لَكُمْ | QS Al-A‘rāf 7:10 | لْ + mad alif + مْ akhir frasa | ELIGIBLE-CANDIDATE |
+
+- Kedua frasa terdiri dari dua kata berurutan persis dalam ayat.
+- Frasa berhenti pada `لَكُمْ`; mim sukun tidak disambungkan ke kata sesudahnya.
+- Frasa tidak mengandung tasydid, alif-lam, tanwin antarkata, atau sukun qalqalah.
+- Teks panel tidak dihitung sebagai bagian dari 24 kotak utama.
+- Status kandidat belum berarti whitelist: rasm mushaf acuan, qira’at, panjang bacaan, titik berhenti pedagogis, audio, dan Source-ID final tetap wajib ditashih.
+- Bentuk lebih panjang `وَجَعَلْنَا لَكُمْ فِيهَا` berstatus HOLD karena hubungan mim sukun antarkata belum eligible.
+
+
 **Cek formatif:** satu kata dari setiap tangga 3/4/5/6, kemudian dua pilihan acak.  
 **Remedial:** turunkan hanya satu tingkat panjang kata, bukan kembali ke huruf atau dua huruf.
 
@@ -99,7 +115,8 @@
 | Kata 4 huruf | 48 |
 | Kata 5 huruf | 20 |
 | Kata 6 huruf | 20 |
-| Frasa dua kata | 0 |
+| Frasa dua kata pada kotak utama | 0 |
+| Panel frasa Qurani kandidat | 2 |
 | Tasydid | 0 |
 | Alif-lam | 0 |
 | Sukun qalqalah | 0 |
@@ -111,4 +128,5 @@
 3. Verifikasi pemerataan mad dan keluarga sukun P001–P025, termasuk transfer pola enam huruf berakhiran ـُونَ.
 4. Jangan menyamakan kata transfer seperti يَعْلَمُونَ dengan kata fokus لْ; klasifikasi ditentukan oleh huruf yang benar-benar menyandang sukun.
 5. Audit pemerataan tiga tanwin dan pola transfer Qurani lain menurut DEC-CUR-021; masukkan hanya bila seluruh dependency bersih.
-6. Jangan gunakan batch untuk uji/cetak sebelum pengesahan reviewer.
+6. Tashih dua panel frasa Qurani kandidat; jangan memperpanjang frasa melewati `لَكُمْ` sebelum hubungan mim sukun antarkata eligible.
+7. Jangan gunakan batch untuk uji/cetak sebelum pengesahan reviewer.
