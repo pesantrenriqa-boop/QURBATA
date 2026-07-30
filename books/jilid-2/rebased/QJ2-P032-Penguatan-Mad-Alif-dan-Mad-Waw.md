@@ -9,6 +9,7 @@
 - Tidak mengenalkan lafadz Allah.
 - Tidak mengenalkan pola وا.
 - Tidak mengenalkan ikhfa, idgham, atau hukum tajwid lanjutan.
+- Tidak mengenalkan mad wajib muttasil.
 
 ## 24 kotak baca
 
@@ -22,22 +23,26 @@
 |6|غَفُورٌ|review mad waw|
 |7|قُلُوبٌ|review mad waw|
 |8|نُفُوسٌ|review mad waw|
-|9|رَجَاءٌ|transfer panjang alif|
-|10|دُعَاءٌ|transfer panjang alif|
-|11|سَمَاءٌ|transfer panjang alif|
-|12|مَاءٌ|transfer sederhana|
-|13|صُدُورٌ|transfer waw|
-|14|حُدُودٌ|transfer waw|
-|15|دُخُولٌ|transfer waw|
-|16|خُرُوجٌ|transfer waw|
-|17|كِتَابٌ|penguatan pola|
-|18|حِسَابٌ|penguatan pola|
-|19|غَفُورٌ|penguatan pola|
-|20|نُورٌ|penguatan pola|
-|21|قُلُوبٌ|kata Qurani populer|
-|22|صُدُورٌ|kata Qurani populer|
-|23|نُفُوسٌ|kata Qurani populer|
-|24|حُدُودٌ|gate akhir|
+|9|صُدُورٌ|transfer waw|
+|10|حُدُودٌ|transfer waw|
+|11|دُخُولٌ|transfer waw|
+|12|خُرُوجٌ|transfer waw|
+|13|كِتَابٌ|penguatan pola|
+|14|حِسَابٌ|penguatan pola|
+|15|غَفُورٌ|penguatan pola|
+|16|نُورٌ|penguatan pola|
+|17|قُلُوبٌ|kata Qurani populer|
+|18|صُدُورٌ|kata Qurani populer|
+|19|نُفُوسٌ|kata Qurani populer|
+|20|حُدُودٌ|kata Qurani populer|
+|21|بَابٌ|penguatan mad alif|
+|22|عَذَابٌ|penguatan mad alif|
+|23|كِتَابٌ|penguatan mad alif|
+|24|غَفُورٌ|gate akhir|
+
+## Catatan audit
+
+Lafadz seperti رَجَاءٌ، دُعَاءٌ، سَمَاءٌ، مَاءٌ dikeluarkan dari halaman ini karena mengandung pertemuan mad dengan hamzah dalam satu kata yang masuk pembahasan mad wajib muttasil. Materi tersebut dibuat sebagai tangga tersendiri setelah konsep mad dasar stabil.
 
 ## Gate halaman
 
