@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 1.0.2-draft  
+**Versi:** 1.0.3-draft  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
@@ -409,3 +409,23 @@ Produksi frasa dikendalikan [REG-QJ3-FRQ-001](../../curriculum/REG-QJ3-FRQ-001-R
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 1.0.2-draft | 30 Juli 2026 | Mengikat normalisasi 120 item P001–P005; seluruhnya lulus audit struktural awal dan tetap menunggu tashih ahli |
+
+
+## 42. Audit Tahap II — Normalisasi P006–P010
+
+[AUD-QJ3-003](../../audit/AUD-QJ3-003-Normalisasi-P006-P010.md) dan [data item P006–P010](../../data/jilid-3/QJ3-ITEMS-P006-P010.csv) menetapkan:
+
+- 120/120 kotak P006–P010 telah memiliki Item-ID dan rekaman per item;
+- 120/120 item lulus pemeriksaan struktural awal;
+- 0 item multi-kata, 0 selisih hitung huruf, 0 target sukun hilang, 0 sukun baru pada evaluasi, 0 tasydid, 0 alif-lam prematur, 0 sukun qalqalah prematur, dan 0 integrasi tanpa mad;
+- `حَثْوٌ` masuk tashih leksikal prioritas karena kelangkaannya;
+- seluruh P008 memerlukan pemetaan audio per item karena bunyi نْ dipengaruhi huruf sesudahnya, tanpa menampilkan nama hukum yang belum diajarkan;
+- P007 memerlukan kontrol audio رْ menurut lingkungannya tanpa menjadikan perbedaannya teori formal;
+- `يَنْظُرُ` pada P010 harus dipastikan sebagai transfer yang sudah dituntun, bukan pola baru pada evaluasi;
+- seluruh item tetap AR-CANDIDATE/PENDING dan belum SIAP UJI/CETAK.
+
+## 43. Riwayat Audit Tahap II P006–P010
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 1.0.3-draft | 30 Juli 2026 | Mengikat normalisasi P006–P010; 120 item lulus struktural dengan antrean tashih leksikal dan audio khusus |
