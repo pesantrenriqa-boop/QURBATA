@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 1.0.4-draft  
+**Versi:** 1.0.5-draft  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
@@ -449,3 +449,24 @@ Produksi frasa dikendalikan [REG-QJ3-FRQ-001](../../curriculum/REG-QJ3-FRQ-001-R
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 1.0.4-draft | 30 Juli 2026 | Mengikat normalisasi P011–P015; 120 item lulus struktural dengan lima kandidat leksikal Prioritas A |
+
+
+## 46. Audit Tahap II — Normalisasi P016–P020
+
+[AUD-QJ3-005](../../audit/AUD-QJ3-005-Normalisasi-P016-P020.md) dan [data item P016–P020](../../data/jilid-3/QJ3-ITEMS-P016-P020.csv) menetapkan:
+
+- 120/120 kotak P016–P020 telah dinormalisasi menjadi Item-ID;
+- 120/120 item lulus pemeriksaan struktural awal;
+- 0 item multi-kata, selisih hitung huruf, target sukun hilang, sukun baru pada integrasi/evaluasi, tasydid, alif-lam prematur, sukun qalqalah prematur, atau integrasi mad tanpa mad;
+- panel nama `سُكُونٌ` P019 dan checkpoint `طه` P020 berada di luar 24 kotak materi;
+- delapan latihan awal P017 terdiri dari empat lema dasar dengan dua variasi tanwin; dihitung sebagai delapan latihan tetapi empat kosakata;
+- lema ضْ/ظْ yang jarang masuk antrean Prioritas A dan belum boleh masuk whitelist;
+- P018 wajib mengontraskan waw/ya sukun non-mad dengan mad melalui kata utuh dan audio;
+- `طه` memerlukan Source-ID, standar rasm, panjang baca, dan audio ahli;
+- seluruh item tetap AR-CANDIDATE/PENDING dan belum SIAP UJI/CETAK.
+
+## 47. Riwayat Audit Tahap II P016–P020
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 1.0.5-draft | 30 Juli 2026 | Mengikat normalisasi P016–P020; 120 item lulus struktural, variasi tanwin tidak menggandakan jumlah lema, dan kedua panel tambahan terverifikasi |
