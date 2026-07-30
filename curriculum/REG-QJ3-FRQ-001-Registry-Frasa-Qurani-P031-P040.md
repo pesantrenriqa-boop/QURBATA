@@ -1,7 +1,7 @@
 # REG-QJ3-FRQ-001 — Registry Frasa Qurani P031–P040
 
 **Kode:** REG-QJ3-FRQ-001  
-**Versi:** 0.1.0-id  
+**Versi:** 0.2.0-id  
 **Status:** CANDIDATE-REGISTRY — belum whitelist/cetak  
 **Tanggal:** 30 Juli 2026  
 **Pengendali:** DEC-CUR-019, DEC-CUR-021, QJ3-MASTER
@@ -25,6 +25,7 @@
 | FRQ-QJ3-003 | ٱلْيَوْمَ أَكْمَلْتُ | QS Al-Mā’idah 5:3 | 2 kata | qamariyah + يْ non-mad + كْ + لْ | CANDIDATE-HIGH |
 | FRQ-QJ3-004 | ٱلْعَفْوَ وَأْمُرْ | QS Al-A‘rāf 7:199 | 2 kata | qamariyah + وْ non-mad + ءْ + رْ | CANDIDATE-HIGH |
 | FRQ-QJ3-005 | لَا رَيْبَ فِيهِ | QS Al-Baqarah 2:2 | 3 kata | mad alif + يْ non-mad + mad ya | CANDIDATE-TRANSFER |
+| FRQ-QJ3-006 | ٱلْيَوْمَ نَخْتِمُ | QS Yā-Sīn 36:65 | 2 kata | qamariyah + يْ non-mad + خْ + kata panjang | CANDIDATE-HIGH |
 
 ## Pemeriksaan eligibility awal
 
@@ -57,5 +58,6 @@
 - QS 2:2: https://quran.ksu.edu.sa/tafseer/katheer/sura2-aya2.html
 - QS 5:3: https://quran.com/al-maidah/3
 - QS 7:199: https://quran.com/al-araf/199/tafsirs/ar-tafsir-al-baghawi
+- QS 36:65: https://quran.com/36/65
 
 Locator awal tidak menggantikan Source-ID internal, mushaf acuan, dan tashih rasm.
