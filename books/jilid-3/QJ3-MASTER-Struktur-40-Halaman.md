@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 0.14.0-id  
+**Versi:** 1.0.0-draft  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
@@ -112,7 +112,7 @@ Integrasi tidak boleh mengurangi jumlah halaman materi atau menggantikan latihan
 | 1 | struktur 40 halaman materi | COMPLETE-DRAFT |
 | 2 | dependency sukun → lam sukun → qamariyah | COMPLETE-DRAFT |
 | 3 | distribusi keluarga bentuk dan murojaah MAT-QJ3-REV-001 | COMPLETE-DRAFT; contoh belum diaudit |
-| 4 | isi nyata dan whitelist 40 halaman | B01A SUPERSEDED; P001–P035 COMPLETE-DRAFT menunggu tashih |
+| 4 | isi nyata dan whitelist 40 halaman | B01A SUPERSEDED; P001–P040 COMPLETE-DRAFT menunggu tashih |
 | 5 | audit sumber, ortografi, distribusi, retensi | OPEN |
 | 6 | review ahli/akademik/editorial | OPEN |
 | 7 | asesmen, safeguarding, pilot, revisi | OPEN |
@@ -345,3 +345,32 @@ Produksi frasa dikendalikan [REG-QJ3-FRQ-001](../../curriculum/REG-QJ3-FRQ-001-R
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 0.14.0-id | 30 Juli 2026 | Menambahkan P031–P035 dengan tangga kata sampai 8 huruf dan lima frasa Qurani autentik kandidat |
+
+
+## 35. Produksi B04B — Penutupan 40 Halaman
+
+- [QJ3-B04B P036–P040](pages/QJ3-B04B-Materi-P036-P040.md): 120 kotak COMPLETE-DRAFT.
+- Cakupan: transfer frasa, potongan Qurani, murojaah kompleks, simulasi, dan evaluasi akhir.
+- Kandidat puncak mencakup `ٱلْكِتَابُ لَا رَيْبَ فِيهِ` (2:2) serta rangkaian QS Yā-Sīn 36:65.
+- P040 tetap 24 kotak materi/evaluasi tanpa awā’il atau nama huruf.
+- Status P001–P040: **960 kotak materi nyata COMPLETE-DRAFT**.
+- Kelengkapan halaman tidak berarti siap cetak: tashih, Source-ID, audio, review ahli, pilot, dan otorisasi tetap OPEN.
+
+## 36. Status Akhir Draf Materi Jilid 3
+
+| Komponen | Status |
+|---|---|
+| Struktur 40 halaman | COMPLETE-DRAFT |
+| Materi nyata 960 kotak | COMPLETE-DRAFT |
+| Tangga 3 → 8+ huruf → frasa | COMPLETE-DRAFT |
+| Murojaah mad/sukun/tanwin/qamariyah | COMPLETE-DRAFT; audit ahli OPEN |
+| Registry pola dan frasa Qurani | COMPLETE-DRAFT; tashih OPEN |
+| Tahfidz/Bahasa Arab/hadis-akhlak/NIDOM setiap halaman | MAPPING/VALIDASI OPEN |
+| Tashih rasm/qira’at/audio | OPEN |
+| Pilot dan otorisasi cetak | OPEN |
+
+## 37. Riwayat Penutupan Draf
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 1.0.0-draft | 30 Juli 2026 | Menyelesaikan draf materi nyata P001–P040 sebanyak 960 kotak; belum merupakan versi siap uji/cetak |
