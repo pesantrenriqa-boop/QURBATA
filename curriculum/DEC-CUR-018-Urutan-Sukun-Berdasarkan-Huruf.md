@@ -12,7 +12,7 @@
 2. Harakat sebelum sukun bukan sumbu urutan halaman. Fathah, kasrah, dan dhammah hanya menjadi variasi bertahap setelah huruf target stabil.
 3. Qalqalah قْ طْ بْ جْ دْ tetap ditunda ke Jilid 4.
 4. P001–P020 versi yang mengurutkan “sukun setelah fathah/kasrah/dhammah”, “sukun akhir”, dan “sukun tengah” dinyatakan superseded.
-5. Materi peserta/guru tahap ini tidak menyebut atau mengajarkan izhar, ikhfa, idgham, iqlab, maupun hukum mim sukun.
+5. Materi peserta/guru tahap ini tidak menyebut atau mengajarkan nama hukum pertemuan nun/mim sukun dan tanwin.
 6. Nun/mim sukun dasar dapat ditalqinkan dalam satu kata secara terbatas. Hubungan dengan huruf berikutnya tidak diberi nama kaidah dan tidak dijadikan sasaran asesmen tajwid.
 7. Contoh dua kata yang melahirkan hukum tanwin, nun sukun, atau mim sukun antarkata ditunda sampai hukum tersebut diajarkan.
 8. Contoh frasa tidak boleh hanya “secara kosakata benar”; i'rab, tanwin, hubungan antarkata, konteks makna, dan tajwidnya harus semuanya eligible.
