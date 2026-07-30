@@ -1,88 +1,66 @@
 # QJ2-P040 — Evaluasi Akhir QURBATA Jilid 2
 
-**Status:** REBASED-DRAFT — belum menjadi instrumen kelulusan sebelum review ahli dan pilot  
-**Cakupan:** bentuk sambung awal–tengah–akhir, keluarga bentuk, huruf pemutus, tiga tanwin, kontras pendek–panjang, mad alif, mad ya, dan mad waw  
-**Materi baru:** tidak ada  
-**Distribusi:** 8 × 3 + 8 × 4 + 8 × 5 huruf; tiga mad seimbang dan tersebar dari awal sampai akhir
+Status: REVISED-DRAFT — wajib audit akhir
 
-## Bagian A — 8 tangga tiga huruf
+Fokus:
+Evaluasi kesiapan santri setelah menyelesaikan tangga Jilid 2.
 
-| No. | Bacaan | Domain utama |
-|---:|---|---|
-| 1 | نُوْرٌ | mad waw + tanwin |
-| 2 | قَالَ | mad alif + pemutus |
-| 3 | دِيْنٌ | mad ya + tanwin |
-| 4 | رُوْحٌ | mad waw + pemutus |
-| 5 | كَانَ | mad alif |
-| 6 | قِيْلَ | mad ya + pemutus |
-| 7 | سُوْقٌ | mad waw + tanwin |
-| 8 | تَابَ | mad alif |
+Prinsip:
+- Tidak ada materi baru.
+- Pengulangan hanya untuk fungsi murojaah.
+- Setiap contoh diberi fungsi M (Murojaah), T (Transfer), atau F (Evaluasi/Fokus).
 
-## Bagian B — 8 tangga empat huruf
+Audit batas materi:
+- Tidak memasukkan sukun.
+- Tidak memasukkan mad wajib muttasil.
+- Tidak memasukkan mad ya sebagai materi baru.
+- Tidak memasukkan lafadz Allah sebagai materi baru.
+- Tidak memasukkan pola وا.
 
-| No. | Bacaan | Domain utama |
-|---:|---|---|
-| 9 | رَحِيْمٌ | mad ya + keluarga bentuk |
-| 10 | سَلَامٌ | mad alif + tanwin |
-| 11 | غَفُوْرٌ | mad waw + pemutus |
-| 12 | حَكِيْمٌ | mad ya |
-| 13 | عَذَابٌ | mad alif + ذ pemutus |
-| 14 | رَسُوْلٌ | mad waw + ر pemutus |
-| 15 | كَرِيْمٌ | mad ya + ر pemutus |
-| 16 | حِسَابٌ | mad alif |
+## Bank Evaluasi 24 Bacaan
 
-## Bagian C — 8 tangga lima huruf
+|No|Bacaan|Fungsi|
+|-|-|-|
+|1|بَابٌ|M — mad alif|
+|2|كِتَابٌ|M — mad alif|
+|3|حِسَابٌ|T — transfer alif|
+|4|مَالٌ|F — evaluasi alif|
+|5|دَارٌ|F — evaluasi alif|
+|6|نَارٌ|F — evaluasi alif|
+|7|نُورٌ|M — mad waw|
+|8|غَفُورٌ|M — mad waw|
+|9|قُلُوبٌ|T — transfer waw|
+|10|نُفُوسٌ|T — transfer waw|
+|11|صُدُورٌ|F — evaluasi waw|
+|12|حُدُودٌ|F — evaluasi waw|
+|13|دُخُولٌ|F — kata panjang|
+|14|خُرُوجٌ|F — kata panjang|
+|15|شُكُورٌ|F — kata panjang|
+|16|صَبُورٌ|F — kata panjang|
+|17|جَمَالٌ|F — contoh baru alif|
+|18|سَلَامٌ|F — contoh baru alif|
+|19|كَلَامٌ|F — contoh baru alif|
+|20|طَعَامٌ|F — contoh baru alif|
+|21|رُكُوعٌ|F — contoh baru waw|
+|22|خُشُوعٌ|F — contoh baru waw|
+|23|سُرُورٌ|F — contoh baru waw|
+|24|وُرُودٌ|F — evaluasi akhir|
 
-| No. | Bacaan | Domain utama |
-|---:|---|---|
-| 17 | رَسُوْلًا | mad waw + fathatain |
-| 18 | مَكَانًا | mad alif + fathatain |
-| 19 | كَرِيْمًا | mad ya + fathatain |
-| 20 | غَفُوْرًا | mad waw + fathatain |
-| 21 | سَلَامًا | mad alif + fathatain |
-| 22 | عَلِيْمًا | mad ya + fathatain |
-| 23 | شَكُوْرًا | mad waw + fathatain |
-| 24 | رَحِيْمًا | mad ya + fathatain |
+## Rubrik Kelulusan
 
-## Bagian D — Uji jebakan harakat pendek
+Santri siap masuk Jilid 3 apabila:
 
-Guru menampilkan delapan rangkaian tiga sampai lima huruf yang seluruhnya menggunakan harakat pendek. Peserta harus membaca tanpa memanjangkan. Sampel diambil dari whitelist P001–P024 dan disebarkan di antara Bagian A–C saat pelaksanaan.
+1. Membaca tanpa mengeja.
+2. Stabil membedakan pendek dan panjang.
+3. Mampu membaca mad alif dan mad waw dengan konsisten.
+4. Kesalahan kritis tidak berulang.
 
-## Bagian E — Uji bentuk dan pemutus
+## Catatan Guru
 
-Guru memilih sampel yang mewakili:
+Penilaian tidak hanya angka. Guru mencatat kode kesalahan agar remedial tepat sasaran.
 
-- bentuk awal, tengah, dan akhir;
-- keluarga ب ت ث ن ي;
-- ج ح خ;
-- د ذ ر ز dan ا و sebagai pemutus;
-- س ش، ص ض، ط ظ، ف ق، ك، ل م، ع غ، ه، ت ة;
-- ya konsonan versus ya mad;
-- waw konsonan versus waw mad;
-- alif/hamzah versus alif mad.
-
-## Rubrik diagnosis
-
-| Domain | Indikator |
-|---|---|
-| bentuk | mengenali perubahan bentuk awal–tengah–akhir |
-| sambung | tidak menyambungkan huruf pemutus secara salah |
-| harakat pendek | tidak dipanjangkan |
-| tanwin | jenis dan posisi dibaca benar |
-| mad alif | fathah + alif stabil dua harakat |
-| mad ya | kasrah + ya sukun stabil dua harakat |
-| mad waw | dhammah + waw sukun stabil dua harakat |
-| transfer | ketepatan bertahan pada kata 3/4/5 huruf |
-| kelancaran | tidak mengeja kembali secara berlebihan |
-
-## Gate menuju Jilid 3
-
-Kelulusan tidak ditentukan oleh nilai total saja. Peserta belum boleh berpindah apabila mempunyai kesalahan kritis berulang pada bunyi pendek–panjang, bentuk huruf, pemutus sambungan, atau salah satu dari tiga mad. Ambang angka final ditetapkan setelah validasi ahli dan pilot.
-
-## Panel terintegrasi
-
-- **Tahfidz:** murojaah materi tervalidasi Jilid 2; bukan materi baru.
-- **Mufradat:** peserta memilih enam kata dan menyebutkan maknanya.
-- **Akhlak:** jujur, tenang, dan menerima remedial.
-- **NIDOM:** peta retensi seluruh Jilid 2.
-- **Catatan guru:** tulis kode kesalahan, bukan hanya angka nilai.
+Panel:
+- Tahfidz: murojaah materi Jilid 2.
+- Mufradat: memahami makna kata pilihan.
+- Akhlak: adab belajar dan menerima koreksi.
+- NIDOM: retensi seluruh materi Jilid 2.
