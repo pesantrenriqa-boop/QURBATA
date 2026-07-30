@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-B03A  
 **Produk:** QURBATA Jilid 3  
-**Versi:** 0.1.0-id  
+**Versi:** 0.2.0-id  
 **Status:** COMPLETE-DRAFT — menunggu tashih ahli  
 **Tanggal:** 30 Juli 2026  
 **Pengendali:** QJ3-MASTER, DEC-CUR-018, DEC-CUR-019, DEC-CUR-020, MAT-QJ3-REV-001  
@@ -65,11 +65,13 @@
 | Tangga | Kotak | Materi |
 |---|---:|---|
 | 3 huruf — pembuka | 1–4 | قَلْبٌ · عِلْمٌ · مُلْكٌ · صُلْحٌ |
-| 4 huruf | 5–12 | يَلْعَبُ · مِلْعَبٌ · مُلْحَقٌ · مُلْزَمٌ · يَلْبَسُ · يَلْحَقُ · يَسْمَعُ · يَنْظُرُ |
-| 5 huruf | 13–20 | مَلْعُوبٌ · مَلْبُوسٌ · مَلْحُوظٌ · مَلْفُوفٌ · مِلْعَقَةٌ · سُلْطَانٌ · مُلْتَقًى · مُلْتَحِفٌ |
-| 6 huruf | 21–24 | مُسْتَلْزِمٌ · مُسْتَلْهِمٌ · مُسْتَلْحَقٌ · مُسْتَلْطَفٌ |
+| 4 huruf — fokus لْ | 5–8 | يَلْعَبُ · مِلْعَبٌ · مُلْحَقٌ · مُلْزَمٌ |
+| 5 huruf — fokus/transfer لْ | 9–16 | مَلْعُوبٌ · مَلْبُوسٌ · مَلْحُوظٌ · مَلْفُوفٌ · مِلْعَقَةٌ · سُلْطَانٌ · مُلْتَقًى · مُلْتَحِفٌ |
+| 6 huruf — fokus لْ + transfer kumulatif | 17–24 | مُسْتَلْزِمٌ · مُسْتَلْهِمٌ · مُسْتَلْحَقٌ · مُسْتَلْطَفٌ · يَعْلَمُونَ · يَخْرُجُونَ · يَغْفِرُونَ · يَسْمَعُونَ |
 
-**Catatan tashih ketat:** empat kata enam huruf wajib diaudit ضبط, makna, frekuensi, dan kesesuaian tingkat anak.  
+**Catatan tangga:** empat kata enam huruf pertama tetap berfokus لْ; empat berikutnya adalah transfer kumulatif sukun terdahulu + mad wāw. يَعْلَمُونَ tidak dihitung sebagai fokus لْ karena yang bersukun ialah عْ.
+
+**Catatan tashih ketat:** seluruh kata enam huruf wajib diaudit ضبط, makna, frekuensi, dan kesesuaian tingkat anak.  
 **Cek formatif:** satu kata dari setiap tangga 3/4/5/6, kemudian dua pilihan acak.  
 **Remedial:** turunkan hanya satu tingkat panjang kata, bukan kembali ke huruf atau dua huruf.
 
@@ -80,9 +82,9 @@
 | Tangga | Kotak | Materi |
 |---|---:|---|
 | 3 huruf — evaluasi awal | 1–4 | ثَلْجٌ · حِلْمٌ · فُلْكٌ · نَظْمٌ |
-| 4 huruf | 5–12 | يَلْعَبُ · مِلْحَفٌ · مُلْهِمٌ · يَخْرُجُ · يَعْلَمُ · يَغْفِرُ · يَصْبِرُ · يَرْمِي |
-| 5 huruf — mad dan sukun | 13–20 | مَلْعُوبٌ · مَلْبُوسٌ · مَلْحُوظٌ · مَضْمُونٌ · مَظْلُومٌ · مَوْعُودٌ · مَأْكُولٌ · مَخْلُوقٌ |
-| 6 huruf — transfer | 21–24 | مُسْتَلْزِمٌ · مُسْتَلْحَقٌ · يَسْتَغْفِرُ · يَسْتَعْمِلُ |
+| 4 huruf | 5–8 | يَلْعَبُ · مِلْحَفٌ · مُلْهِمٌ · يَنْظُرُ |
+| 5 huruf — mad dan sukun | 9–12 | مَلْعُوبٌ · مَلْحُوظٌ · مَضْمُونٌ · مَظْلُومٌ |
+| 6 huruf — transfer intensif | 13–24 | يَعْلَمُونَ · يَعْمَلُونَ · يَخْرُجُونَ · يَغْفِرُونَ · يَسْمَعُونَ · يَنْظُرُونَ · يَصْبِرُونَ · يَضْرِبُونَ · يَظْلِمُونَ · يَأْكُلُونَ · مُسْتَلْزِمٌ · يَسْتَغْفِرُ |
 
 **Cek formatif:** delapan kotak lintas panjang; nilai terpisah untuk ketepatan لْ, sukun lain, mad, dan kelancaran.  
 **Remedial:** pilih keluarga kesalahan lalu ulang tiga kata pada tingkat tertinggi yang masih mampu dibaca benar.
@@ -93,10 +95,10 @@
 |---|---:|
 | Halaman | 5 |
 | Kotak | 120 |
-| Kata 3 huruf | 36 |
-| Kata 4 huruf | 56 |
+| Kata 3 huruf | 32 |
+| Kata 4 huruf | 48 |
 | Kata 5 huruf | 20 |
-| Kata 6 huruf | 8 |
+| Kata 6 huruf | 20 |
 | Frasa dua kata | 0 |
 | Tasydid | 0 |
 | Alif-lam | 0 |
@@ -106,5 +108,6 @@
 
 1. Tashih seluruh `AR-CANDIDATE`, terutama kata 5–6 huruf.
 2. Audit makna, kelaziman, ضبط, level usia, audio, dan risiko tawallud.
-3. Verifikasi pemerataan mad dan keluarga sukun P001–P025.
-4. Jangan gunakan batch untuk uji/cetak sebelum pengesahan reviewer.
+3. Verifikasi pemerataan mad dan keluarga sukun P001–P025, termasuk transfer pola enam huruf berakhiran ـُونَ.
+4. Jangan menyamakan kata transfer seperti يَعْلَمُونَ dengan kata fokus لْ; klasifikasi ditentukan oleh huruf yang benar-benar menyandang sukun.
+5. Jangan gunakan batch untuk uji/cetak sebelum pengesahan reviewer.
