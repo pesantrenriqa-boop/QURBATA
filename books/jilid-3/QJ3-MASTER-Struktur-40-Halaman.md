@@ -8,7 +8,7 @@
 **Jumlah Halaman Materi:** 40  
 **Model:** 1 halaman = 1 pertemuan; maksimal 2 bila prasyarat dikuasai  
 **Pemilik Akademik/Penyusun:** Aris Liswanto  
-**Pengendali:** DEC-CUR-010, DEC-CUR-015, DEC-CUR-016, DEC-CUR-017, DEC-CUR-018, MAT-QJ3-REV-001, ANA-QUR-SUK-001, QC-000, QCF-QUR-001, QCF-QUR-002, RCP-QUR-001  
+**Pengendali:** DEC-CUR-010, DEC-CUR-015, DEC-CUR-016, DEC-CUR-017, DEC-CUR-018, DEC-CUR-019, MAT-QJ3-REV-001, ANA-QUR-SUK-001, QC-000, QCF-QUR-001, QCF-QUR-002, RCP-QUR-001  
 **Prasyarat:** Mastery Gate QURBATA Jilid 2  
 **Pemeriksa/Pengesah:** Menunggu  
 
@@ -193,6 +193,12 @@ QJ3-MASTER v0.4.0 pada bagian P001–P020 dinyatakan superseded. Urutan sukun ti
 ## 17. Regenerasi B01B
 
 - [QJ3-B01B P001–P005](pages/QJ3-B01B-Regenerasi-P001-P005.md): 120 kata tunggal sesuai urutan مْ، لْ، فْ، كْ، سْ/شْ.
-- Komposisi: 60 kata tiga huruf + 60 kata empat huruf.
-- Audit awal: 0 frasa dua kata, 0 tasydid, 0 alif-lam, 0 sukun qalqalah.
+- Komposisi: 60 kata tiga huruf + 30 kata empat huruf murojaah + 30 kata empat huruf integrasi mad–sukun.
+- Audit awal kotak utama: 0 frasa dua kata, 0 tasydid, 0 alif-lam, 0 sukun qalqalah.
+- Panel transfer awal: هَلْ أَتَىٰ (QS Al-Insan 76:1), berstatus kandidat tervalidasi sumber; menunggu tashih rasm/ahli.
 - Status tetap COMPLETE-DRAFT; belum SIAP UJI/CETAK sebelum tashih ahli.
+
+
+## 18. Kendali Mad dan Frasa Qurani
+
+DEC-CUR-019 mewajibkan mad asli tetap hadir sebagai murojaah pada halaman sukun. Frasa Qurani hanya ditambahkan bila seluruh dependency telah eligible; halaman tidak wajib mempunyai frasa Qurani bila tidak ditemukan kandidat yang bersih.
