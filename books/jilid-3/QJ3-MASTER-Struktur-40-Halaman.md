@@ -2,13 +2,13 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 0.10.0-id  
+**Versi:** 0.11.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
 **Model:** 1 halaman = 1 pertemuan; maksimal 2 bila prasyarat dikuasai  
 **Pemilik Akademik/Penyusun:** Aris Liswanto  
-**Pengendali:** DEC-CUR-010, DEC-CUR-015, DEC-CUR-016, DEC-CUR-017, DEC-CUR-018, DEC-CUR-019, DEC-CUR-020, MAT-QJ3-REV-001, ANA-QUR-SUK-001, QC-000, QCF-QUR-001, QCF-QUR-002, RCP-QUR-001  
+**Pengendali:** DEC-CUR-010, DEC-CUR-015, DEC-CUR-016, DEC-CUR-017, DEC-CUR-018, DEC-CUR-019, DEC-CUR-020, DEC-CUR-021, MAT-QJ3-REV-001, ANA-QUR-SUK-001, QC-000, QCF-QUR-001, QCF-QUR-002, RCP-QUR-001  
 **Prasyarat:** Mastery Gate QURBATA Jilid 2  
 **Pemeriksa/Pengesah:** Menunggu  
 
@@ -276,3 +276,21 @@ DEC-CUR-019 mewajibkan mad asli tetap hadir sebagai murojaah pada halaman sukun.
 |---|---|---|
 | 0.9.0-id | 30 Juli 2026 | Menambahkan P021–P025 dan menaikkan kompleksitas lam sukun secara bertahap sampai kata enam huruf |
 | 0.10.0-id | 30 Juli 2026 | Audit ulang P021–P025; memperbaiki hitungan panjang kata dan menaikkan latihan enam huruf menjadi 20 kotak, termasuk pola ـُونَ |
+
+
+## 27. Registry Pola Transfer Kata Qurani
+
+Produksi P026–P040 wajib mengikuti [DEC-CUR-021](../../curriculum/DEC-CUR-021-Registry-Pola-Transfer-Kata-Qurani.md):
+
+- pola Qurani yang dibutuhkan dimasukkan segera setelah seluruh dependency eligible;
+- pola ـُونَ aktif sebagai latihan transfer kata enam huruf;
+- tiga tanwin, ـِينَ، ـَانِ، ـَيْنِ, tā’ marbūṭah bertanwin, dhamir sambung, dua sukun, dan kata 6–8+ huruf diaudit bertahap;
+- setiap halaman tetap mempunyai satu fokus utama; pola gabungan ditempatkan sebagai transfer;
+- tidak ada contoh yang dipaksakan atau diklaim Qurani tanpa Source-ID dan tashih;
+- bentuk yang melahirkan materi antarkata prematur tetap ditunda.
+
+## 28. Riwayat Registry Pola
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 0.11.0-id | 30 Juli 2026 | Mengikat DEC-CUR-021: pola kata yang diperlukan untuk bacaan Qurani masuk menurut dependency; tidak ada pemaksaan contoh |
