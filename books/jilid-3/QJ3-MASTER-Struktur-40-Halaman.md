@@ -2,13 +2,13 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 0.7.0-id  
+**Versi:** 0.8.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
 **Model:** 1 halaman = 1 pertemuan; maksimal 2 bila prasyarat dikuasai  
 **Pemilik Akademik/Penyusun:** Aris Liswanto  
-**Pengendali:** DEC-CUR-010, DEC-CUR-015, DEC-CUR-016, DEC-CUR-017, DEC-CUR-018, DEC-CUR-019, MAT-QJ3-REV-001, ANA-QUR-SUK-001, QC-000, QCF-QUR-001, QCF-QUR-002, RCP-QUR-001  
+**Pengendali:** DEC-CUR-010, DEC-CUR-015, DEC-CUR-016, DEC-CUR-017, DEC-CUR-018, DEC-CUR-019, DEC-CUR-020, MAT-QJ3-REV-001, ANA-QUR-SUK-001, QC-000, QCF-QUR-001, QCF-QUR-002, RCP-QUR-001  
 **Prasyarat:** Mastery Gate QURBATA Jilid 2  
 **Pemeriksa/Pengesah:** Menunggu  
 
@@ -63,7 +63,7 @@ Huruf ق ط ب ج د tetap boleh muncul dengan harakat atau mad. Larangan hanya 
 | 16 | QJ3-P016 | Sukun pada ضْ | huruf tebal non-qalqalah II | 3 → 4/5 |
 | 17 | QJ3-P017 | Sukun pada ظْ | huruf tebal non-qalqalah III | 3 → 4/5 |
 | 18 | QJ3-P018 | Waw dan ya sukun non-mad | kontras dengan waw/ya mad | 3 → 4/5 |
-| 19 | QJ3-P019 | Integrasi sukun menurut keluarga huruf | kata 4–5 huruf; tanpa hukum pertemuan formal | 3 → 4/5 |
+| 19 | QJ3-P019 | Integrasi sukun menurut keluarga huruf + nama tanda sukun | kata 4–5 huruf; panel istilah setelah keterampilan | 3 → 4/5 + panel |
 | 20 | QJ3-P020 | Evaluasi Sukun II + Checkpoint Awā’il I: طه | seluruh sukun eligible; panel prioritas | 3 → 4/5 + panel |
 | 21 | QJ3-P021 | Lam berharakat versus lam sukun | 3 → 4 |
 | 22 | QJ3-P022 | Lam sukun setelah fathah | 3 → 4/5 |
@@ -74,7 +74,7 @@ Huruf ق ط ب ج د tetap boleh muncul dengan harakat atau mad. Larangan hanya 
 | 27 | QJ3-P027 | Qamariyah mudah: ب م ك ف ق | 3 → 4/5 |
 | 28 | QJ3-P028 | Qamariyah tenggorokan: ج ح خ ع غ | 3 → 4/5 |
 | 29 | QJ3-P029 | Qamariyah: ه و ي dan hamzah | 3 → 4/5 |
-| 30 | QJ3-P030 | Evaluasi alif-lam qamariyah dasar | 3 → 4/5 |
+| 30 | QJ3-P030 | Evaluasi alif-lam qamariyah dasar + Checkpoint Awā’il II: طس | 3 → 4/5 + panel |
 | 31 | QJ3-P031 | Qamariyah pada kata 4–6 huruf | 3 → 4/5/6 |
 | 32 | QJ3-P032 | Kontras kata tanpa/dengan ال qamariyah | 3 → 4/5/6 |
 | 33 | QJ3-P033 | Frasa dua kata dengan qamariyah | 3 → kata/frasa |
@@ -84,7 +84,7 @@ Huruf ق ط ب ج د tetap boleh muncul dengan harakat atau mad. Larangan hanya 
 | 37 | QJ3-P037 | Potongan Qurani pendek tervalidasi | 3 → 4 kotak/frasa |
 | 38 | QJ3-P038 | Murojaah kompleks seluruh materi | 3 → 4/5/6+ |
 | 39 | QJ3-P039 | Simulasi baca melalui contoh materi paralel | 3 → kata/frasa |
-| 40 | QJ3-P040 | Evaluasi akhir + Checkpoint Awā’il II: طه dan طس | 3 → kata/frasa + panel prioritas |
+| 40 | QJ3-P040 | Evaluasi akhir Jilid 3 | 3 → kata/frasa |
 
 Urutan internal huruf qamariyah pada P027–P029 masih wajib ditashih ahli dari sisi makhraj, ortografi, dan ketersediaan contoh; pengelompokan di atas adalah rancangan beban visual awal.
 
@@ -156,14 +156,17 @@ Murojaah Jilid 3 berarti menggunakan kembali harakat pendek, bentuk sambung, tan
 
 Audit setiap halaman harus membuktikan bahwa latihan review tetap menambah kelancaran, akurasi, retensi, atau transfer.
 
-## 12. Jalur Tambahan Prioritas: Awā’il/Fawātiḥ as-Suwar
+## 12. Jalur Tambahan Prioritas: Nama Tanda dan Awā’il/Fawātiḥ as-Suwar
 
-- QJ3-P020 memperkenalkan dan menalqinkan **طه** sebagai bentuk paling ringan pada jalur awal.
-- QJ3-P040 menguji retensi **طه** dan memperkenalkan **طس** secara talqin.
-- Panel ini merupakan tambahan prioritas, tidak mengambil 24 kotak/tangga materi utama.
-- Peserta boleh meniru bacaan tervalidasi sebelum mempelajari nama kaidah; penguasaan tajwid formal baru dinilai setelah mad terkait diajarkan.
+- Nama huruf hijaiyah dituntaskan pada Jilid 1 dan tidak diulang pada Jilid 3.
+- QJ3-P019 menamai tanda yang telah dikuasai: **ـْ = سُكُونٌ**.
+- QJ3-P020 memperkenalkan dan menalqinkan **طه — طَا هَا**.
+- QJ3-P030 memperkenalkan **طس — طَا سِينْ** tanpa mengulang طه sebagai materi baru.
+- QJ3-P040 tidak memuat checkpoint awā’il; halaman tetap menjadi evaluasi akhir.
+- Panel tambahan tidak mengambil 24 kotak/tangga materi utama.
+- Peserta boleh meniru bacaan tervalidasi sebelum mempelajari istilah tajwid formal.
 - Audio ahli, rasm/tanda baca mushaf, panjang bacaan, sambungan ke ayat berikut, dan Source-ID wajib diverifikasi.
-- Peta lanjutan seluruh bentuk dikendalikan DEC-CUR-017.
+- Jalur global dikendalikan DEC-CUR-017 dan dikoreksi oleh DEC-CUR-020.
 
 ## 13. Riwayat Tambahan
 
@@ -236,7 +239,7 @@ DEC-CUR-019 mewajibkan mad asli tetap hadir sebagai murojaah pada halaman sukun.
 - Cakupan: ضْ, ظْ, waw/ya sukun non-mad, integrasi keluarga sukun, dan Evaluasi Sukun II.
 - Komposisi: 40 kata tiga huruf + 60 kata empat huruf + 20 kata lima huruf.
 - P018 mengontraskan وْ/يْ non-mad dengan mad yang telah dipelajari tanpa menambah hukum baru.
-- P020 memuat panel tambahan nama huruf tahap I dan checkpoint `طه — طَا هَا`; keduanya tidak mengambil 24 kotak utama.
+- P019 memuat nama tanda sukun setelah keterampilan dikuasai; P020 memuat checkpoint `طه — طَا هَا`; keduanya tidak mengambil 24 kotak utama.
 - Tidak ada frasa Qurani yang dipaksakan; semua kata dan panel tetap kandidat sampai tashih.
 - Audit mekanis kotak utama: 0 frasa dua kata, 0 tasydid, 0 alif-lam, dan 0 sukun pada huruf qalqalah.
 - Status P001–P020: 480 kotak draf nyata; belum SIAP UJI/CETAK.
@@ -245,4 +248,13 @@ DEC-CUR-019 mewajibkan mad asli tetap hadir sebagai murojaah pada halaman sukun.
 
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
-| 0.7.0-id | 30 Juli 2026 | Menambahkan P016–P020: ضْ, ظْ, وْ/يْ non-mad, integrasi, evaluasi, nama huruf tahap I, dan checkpoint طه |
+| 0.7.0-id | 30 Juli 2026 | Menambahkan P016–P020: ضْ, ظْ, وْ/يْ non-mad, integrasi, evaluasi, dan checkpoint طه |
+| 0.8.0-id | 30 Juli 2026 | DEC-CUR-020: nama huruf hanya Jilid 1; nama sukun di P019; awā’il tanpa pengulangan pada P020/P030; checkpoint P040 dibatalkan |
+
+
+## 24. Koreksi Jalur Literasi Mushaf DEC-CUR-020
+
+- Nama huruf hijaiyah hanya diajarkan pada Jilid 1.
+- Nama harakat/tanda diajarkan setelah bunyinya dikuasai: tiga harakat pendek di akhir Jilid 1, tanwin/mad pada Jilid 2 sesuai dependency, dan sukun pada Jilid 3.
+- Checkpoint awā’il ditempatkan pada halaman 20 dan 30, menggunakan registry lintas jilid agar tidak ada bentuk yang diperkenalkan dua kali.
+- Sesudah daftar awā’il selesai, slot checkpoint beralih ke nama tanda waqaf dan literasi mushaf lain secara bertahap.
