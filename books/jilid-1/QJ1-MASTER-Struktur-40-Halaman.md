@@ -4,7 +4,7 @@
 **Produk:** Buku QURBATA Jilid 1  
 **Judul Resmi:** Struktur Buku QURBATA Jilid 1  
 **Status:** Draf Terkendali — Belum Disetujui  
-**Versi:** 0.6.0-id  
+**Versi:** 0.7.0-id  
 **Bahasa Induk:** Bahasa Indonesia  
 **Jumlah Halaman Inti:** 40  
 **Sasaran Pengguna:** Peserta didik pemula membaca Al-Qur’an; usia dan kebutuhan spesifik ditetapkan saat validasi pengguna  
@@ -87,7 +87,7 @@ Jilid 1 belum mengajarkan mad, tanwin, sukun, tasydid, atau kaidah tajwid lanjut
 | 17 | QJ1-P017 | Kasrah keluarga tenggorokan | جِ حِ خِ عِ غِ هِ | Fathah terkait | Latihan |
 | 18 | QJ1-P018 | Hafalan 1 | Materi hafalan pendek yang disahkan | Huruf/harakat yang sudah dipelajari | Hafalan 1 |
 | 19 | QJ1-P019 | Kasrah ujung lidah | دِ ذِ رِ زِ سِ شِ | Kasrah sebelumnya dan fathah | Latihan |
-| 20 | QJ1-P020 | Evaluasi Fathah–Kasrah | — | Kontras fathah dan kasrah P001–P019 | Evaluasi 2 |
+| 20 | QJ1-P020 | Evaluasi Fathah–Kasrah + Checkpoint Nama Huruf I | — | Kontras fathah–kasrah; panel lisan أَلِف–خَاء | Evaluasi 2 |
 | 21 | QJ1-P021 | Kasrah huruf tebal | صِ ضِ طِ ظِ | دِ–شِ dan padanan fathah | Latihan |
 | 22 | QJ1-P022 | Kasrah Fa–Qaf–Kaf–Lam | فِ قِ كِ لِ | Kasrah sebelumnya | Latihan |
 | 23 | QJ1-P023 | Kasrah Mim–Nun–Waw–Ya | مِ نِ وِ يِ | Kasrah sebelumnya | Latihan |
@@ -107,7 +107,7 @@ Jilid 1 belum mengajarkan mad, tanwin, sukun, tasydid, atau kaidah tajwid lanjut
 | 37 | QJ1-P037 | Ketelitian titik dan bentuk serupa | — | ب ت ث; ج ح خ; د ذ; ر ز; س ش; ص ض; ط ظ; ع غ; ف ق | Penguatan |
 | 38 | QJ1-P038 | Akhlak 1 | Adab belajar Al-Qur’an | Penguatan lisan dan visual tanpa materi baca baru | Akhlak 1 |
 | 39 | QJ1-P039 | Simulasi baca mandiri | — | Seluruh huruf dan tiga harakat | Latihan akhir |
-| 40 | QJ1-P040 | Ujian Akhir Jilid 1 | — | Seluruh kompetensi Jilid 1 | Evaluasi 4 |
+| 40 | QJ1-P040 | Ujian Akhir + Checkpoint Nama Huruf II | — | Kompetensi Jilid 1; panel lisan دَال–صَاد | Evaluasi 4 |
 
 ## 5. Hubungan Kurikulum dan Keterlacakan
 
@@ -209,3 +209,16 @@ QJ1-P033–P040 telah disusun sesuai DEC-CUR-002. P033 menutup bentuk dhammah me
 - Sebelum pemetaan, REG-ARB-001 harus berisi outcome, lema, struktur, fungsi, asesmen, dan dependency yang tervalidasi.
 - Perubahan ini tidak mengubah 40 halaman, tetapi dapat mengubah isi segmen Bahasa Arab pada seluruh halaman.
 - Pemetaan masih provisional; BLOCKED-CUR-ARB-001 dan BLOCKED-CUR-ARB-002 tetap OPEN.
+
+
+## Jalur Tambahan Prioritas: Nama Huruf
+
+Sesuai DEC-CUR-017, pengenalan **nama** huruf berjalan sebagai panel lisan/aural tambahan dan tidak menggantikan 24 tangga baca.
+
+- **QJ1-P020 — Checkpoint I:** أَلِف، بَاء، تَاء، ثَاء، جِيم، حَاء، خَاء.
+- **QJ1-P040 — Checkpoint II:** دَال، ذَال، رَاء، زَاي، سِين، شِين، صَاد.
+- Nama huruf ditunjukkan pada bentuknya, ditalqinkan guru, diacak, lalu peserta menunjuk dan menyebutkan.
+- Pengenalan nama tidak mengubah target utama Jilid 1: membaca bunyi huruf berharakat tanpa mengeja nama huruf.
+- Bentuk nama bertanda baca dan audio model wajib ditashih sebelum dicetak/digunakan.
+
+**Riwayat tambahan 0.7.0-id — 30 Juli 2026:** menambahkan checkpoint nama huruf pada P020 dan P040 berdasarkan DEC-CUR-017.
