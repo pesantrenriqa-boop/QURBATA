@@ -117,7 +117,7 @@ Setiap halaman harus lulus:
 - contoh semakin kompleks menuju akhir;
 - sumber, nahwu, ortografi, serta batas satu-kata/antarkata tervalidasi;
 - tidak ada contoh dua kata yang memicu hukum tanwin/nun/mim sukun sebelum diajarkan;
-- dokumen peserta/guru tidak menyebut izhar, ikhfa, idgham, iqlab, atau hukum mim sukun pada tahap ini;
+- dokumen peserta/guru tidak menyebut nama hukum pertemuan nun/mim sukun dan tanwin pada tahap ini;
 - tidak ada atribusi Qurani/hadis tanpa Source-ID;
 - panel nama huruf/awā’il tidak mengurangi 24 kotak utama.
 
