@@ -2,10 +2,10 @@
 
 **Kode:** QJ3-B02B  
 **Produk:** QURBATA Jilid 3  
-**Versi:** 0.1.0-id  
+**Versi:** 0.2.0-id  
 **Status:** COMPLETE-DRAFT — menunggu tashih ahli  
 **Tanggal:** 30 Juli 2026  
-**Pengendali:** QJ3-MASTER, DEC-CUR-017, DEC-CUR-018, DEC-CUR-019, MAT-QJ3-REV-001  
+**Pengendali:** QJ3-MASTER, DEC-CUR-017, DEC-CUR-018, DEC-CUR-019, DEC-CUR-020, MAT-QJ3-REV-001  
 **Cakupan:** QJ3-P016–QJ3-P020  
 **Jumlah:** 120 kotak materi utama + panel prioritas P020
 
@@ -18,7 +18,7 @@
 - Seluruh contoh berstatus `AR-CANDIDATE` sampai tashih ضبط, lema, makna, kefasihan, dan kelayakan anak selesai.
 - Tidak ada tasydid, alif-lam, atau huruf ق ط ب ج د yang menyandang sukun.
 - Nama hukum pertemuan antarkata yang belum dipelajari tidak digunakan.
-- Panel nama huruf dan awā’il as-suwar merupakan tambahan prioritas; tidak mengambil jatah 24 kotak.
+- Nama huruf hijaiyah tidak muncul karena dituntaskan pada Jilid 1. Panel nama tanda harakat dan awā’il as-suwar merupakan tambahan prioritas; tidak mengambil jatah 24 kotak.
 
 ## QJ3-P016 — Sukun pada ضْ
 
@@ -81,6 +81,14 @@
 **Cek formatif:** guru memilih enam kotak lintas baris; kelulusan menilai akurasi sukun, panjang-pendek, dan kelancaran kata.  
 **Remedial mikro:** tandai keluarga kesalahan, lalu ulang tiga kata utuh: mudah → sedang → transfer.
 
+### Panel literasi tanda — nama sukun
+
+**ـْ = سُكُونٌ (sukun)**
+
+- Nama tanda baru diberikan setelah peserta mampu membaca sukun dalam kata.
+- Panel hanya menamai tanda yang telah dikuasai; tidak menambah hukum bacaan baru.
+- Tidak dihitung sebagai bagian dari 24 kotak materi.
+
 ## QJ3-P020 — Evaluasi Sukun II
 
 **Tujuan baca:** mengevaluasi retensi dan transfer P001–P019 tanpa unsur baru; mempertahankan tangga dari tiga hingga lima huruf.
@@ -92,14 +100,6 @@
 | 4 huruf — evaluasi II | 13–20 | يَخْسَرُ · يَعْبُدُ · يَغْسِلُ · يَأْسَفُ · يَصْلُحُ · يَثْنِي · يَرْمِي · يَكْتُبُ |
 | 5 huruf — evaluasi transfer | 21–24 | مَضْرُوبٌ · مَظْنُونٌ · مَوْلُودٌ · مَأْكُولٌ |
 
-### Panel tambahan prioritas — nama huruf I
-
-Talqin nama huruf secara bertahap:
-
-**أَلِفٌ · بَاءٌ · تَاءٌ · ثَاءٌ · جِيمٌ · حَاءٌ · خَاءٌ**
-
-Panel ini untuk pengenalan nama dan peniruan lisan; tidak dihitung sebagai tujuh kotak materi utama dan tidak menggantikan evaluasi baca.
-
 ### Panel tambahan prioritas — Awā’il as-Suwar I
 
 **طه — طَا هَا**
@@ -110,7 +110,7 @@ Panel ini untuk pengenalan nama dan peniruan lisan; tidak dihitung sebagai tujuh
 - Tidak dihitung sebagai bagian dari 24 kotak evaluasi.
 
 **Cek formatif:** 8 kotak sampel yang mewakili kata 3/4/5 huruf, keluarga tenggorokan, huruf tebal, non-mad, dan mad.  
-**Remedial mikro:** peserta hanya mengulang keluarga yang salah melalui kata utuh; panel nama huruf/طه dinilai terpisah melalui talqin.
+**Remedial mikro:** peserta hanya mengulang keluarga yang salah melalui kata utuh; checkpoint طه dinilai terpisah melalui talqin.
 
 ## Audit mekanis batch
 
@@ -124,7 +124,8 @@ Panel ini untuk pengenalan nama dan peniruan lisan; tidak dihitung sebagai tujuh
 | Kotak akuisisi terarah P016–P018 | 36 |
 | Kotak review/transfer P016–P018 | 36 |
 | Kotak integrasi/evaluasi P019–P020 | 48 |
-| Panel tambahan P020 | 2 |
+| Panel nama tanda P019 | 1 |
+| Panel awā’il P020 | 1 |
 | Frasa dua kata pada kotak utama | 0 |
 | Tasydid | 0 |
 | Alif-lam | 0 |
@@ -139,6 +140,6 @@ Audit menghitung huruf dasar setelah harakat/tanwin dihapus. Variasi tanwin pada
 2. Pastikan setiap kata bermakna tepat, lazim, tidak ambigu bagi anak, dan sesuai ضبط.
 3. Verifikasi kontras ضْ–ظْ serta وْ/يْ non-mad melalui audio ahli.
 4. Registrasikan Source-ID dan rasm `طه`; jangan gunakan panel sebelum panjang bacaannya disahkan.
-5. Tetapkan daftar nama huruf yang telah dikenalkan pada jilid sebelumnya agar panel P020 benar-benar kumulatif dan tidak duplikatif.
+5. Pastikan nama huruf hijaiyah hanya berada di Jilid 1; jangan mengulangnya pada Jilid 2 dan seterusnya.
 6. Setelah lolos, masukkan integrasi Bahasa Arab, Tahfidz, hadis/akhlak/NIDOM tanpa mengurangi kotak materi.
 7. Status tetap **belum siap uji/cetak** sampai reviewer akademik mengesahkan.
