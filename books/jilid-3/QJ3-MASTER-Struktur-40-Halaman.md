@@ -112,7 +112,7 @@ Integrasi tidak boleh mengurangi jumlah halaman materi atau menggantikan latihan
 | 1 | struktur 40 halaman materi | COMPLETE-DRAFT |
 | 2 | dependency sukun → lam sukun → qamariyah | COMPLETE-DRAFT |
 | 3 | distribusi keluarga bentuk dan murojaah MAT-QJ3-REV-001 | COMPLETE-DRAFT; contoh belum diaudit |
-| 4 | isi nyata dan whitelist 40 halaman | OPEN |
+| 4 | isi nyata dan whitelist 40 halaman | P001–P005 COMPLETE-DRAFT; P006–P040 OPEN |
 | 5 | audit sumber, ortografi, distribusi, retensi | OPEN |
 | 6 | review ahli/akademik/editorial | OPEN |
 | 7 | asesmen, safeguarding, pilot, revisi | OPEN |
@@ -175,3 +175,11 @@ Audit setiap halaman harus membuktikan bahwa latihan review tetap menambah kelan
 ## 14. Kendali Pemerataan
 
 Seluruh produksi contoh QJ3-P001–P040 wajib mengikuti [MAT-QJ3-REV-001](../../curriculum/MAT-QJ3-REV-001-Matriks-Pemerataan-Murojaah-Jilid-3.md). Matriks tersebut melarang regresi ke huruf tunggal/dua huruf dan mengendalikan 960 kotak berdasarkan kompetensi aktif.
+
+
+## 15. Status Materi Nyata
+
+- [QJ3-B01A P001–P005](pages/QJ3-B01A-Materi-P001-P005.md): 120/120 kotak COMPLETE-DRAFT.
+- Audit otomatis awal: 0 huruf tunggal, 0 tangga dua huruf, 0 tasydid, 0 alif-lam prematur, dan 0 sukun pada ق ط ب ج د.
+- Seluruh entri masih AR-CANDIDATE sampai tashih dan Source-ID selesai.
+- P006–P009 menunggu whitelist sukun akhir agar tidak memaksa waqaf atau materi prematur; P010 mengikuti setelahnya.
