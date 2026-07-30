@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 0.5.0-id  
+**Versi:** 0.6.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
@@ -112,7 +112,7 @@ Integrasi tidak boleh mengurangi jumlah halaman materi atau menggantikan latihan
 | 1 | struktur 40 halaman materi | COMPLETE-DRAFT |
 | 2 | dependency sukun → lam sukun → qamariyah | COMPLETE-DRAFT |
 | 3 | distribusi keluarga bentuk dan murojaah MAT-QJ3-REV-001 | COMPLETE-DRAFT; contoh belum diaudit |
-| 4 | isi nyata dan whitelist 40 halaman | B01A SUPERSEDED; P001–P010 COMPLETE-DRAFT menunggu tashih |
+| 4 | isi nyata dan whitelist 40 halaman | B01A SUPERSEDED; P001–P015 COMPLETE-DRAFT menunggu tashih |
 | 5 | audit sumber, ortografi, distribusi, retensi | OPEN |
 | 6 | review ahli/akademik/editorial | OPEN |
 | 7 | asesmen, safeguarding, pilot, revisi | OPEN |
@@ -211,3 +211,20 @@ DEC-CUR-019 mewajibkan mad asli tetap hadir sebagai murojaah pada halaman sukun.
 - Komposisi: 60 kata tiga huruf + 30 kata empat huruf murojaah + 30 kata empat huruf integrasi mad–sukun.
 - Tidak ada frasa Qurani yang dipaksakan; kandidat menunggu gate DEC-CUR-019.
 - Status P001–P010: 240 kotak draf nyata; belum SIAP UJI/CETAK.
+
+
+## 20. Produksi B02A
+
+- [QJ3-B02A P011–P015](pages/QJ3-B02A-Materi-P011-P015.md): 120 kotak COMPLETE-DRAFT.
+- Cakupan: خْ, عْ, غْ, ءْ, dan صْ menurut kenaikan kesulitan makhraj dan bentuk.
+- Komposisi: 40 kata tiga huruf + 60 kata empat huruf + 20 kata lima huruf.
+- Distribusi: 60 kotak fokus target + 60 kotak murojaah/transfer; 20 kata lima huruf menggabungkan target sukun dengan mad.
+- Tidak ada frasa Qurani yang dipaksakan; seluruh contoh tetap AR-CANDIDATE sampai tashih.
+- Audit mekanis: 0 frasa dua kata, 0 tasydid, 0 alif-lam, dan 0 sukun pada huruf qalqalah.
+- Status P001–P015: 360 kotak draf nyata; belum SIAP UJI/CETAK.
+
+## 21. Riwayat Produksi B02A
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 0.6.0-id | 30 Juli 2026 | Menambahkan 120 kotak P011–P015: خْ, عْ, غْ, ءْ, صْ; menaikkan tangga menjadi 3/4/5 huruf serta mempertahankan mad dan murojaah |
