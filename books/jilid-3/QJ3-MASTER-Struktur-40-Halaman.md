@@ -2,27 +2,27 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 0.4.0-id  
+**Versi:** 0.5.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
 **Model:** 1 halaman = 1 pertemuan; maksimal 2 bila prasyarat dikuasai  
 **Pemilik Akademik/Penyusun:** Aris Liswanto  
-**Pengendali:** DEC-CUR-010, DEC-CUR-015, DEC-CUR-016, DEC-CUR-017, MAT-QJ3-REV-001, ANA-QUR-SUK-001, QC-000, QCF-QUR-001, QCF-QUR-002, RCP-QUR-001  
+**Pengendali:** DEC-CUR-010, DEC-CUR-015, DEC-CUR-016, DEC-CUR-017, DEC-CUR-018, MAT-QJ3-REV-001, ANA-QUR-SUK-001, QC-000, QCF-QUR-001, QCF-QUR-002, RCP-QUR-001  
 **Prasyarat:** Mastery Gate QURBATA Jilid 2  
 **Pemeriksa/Pengesah:** Menunggu  
 
 ## 1. Hasil Akhir Jilid
 
-Setelah menyelesaikan Jilid 3, peserta ditargetkan mampu membaca sukun dasar non-qalqalah pada akhir dan tengah kata tanpa tawallud, menjaga kontras vokal pendek–mad–sukun, membaca lam sukun, mengenali dan membaca alif-lam qamariyah pada posisi mulai baca, serta mentransfer keterampilan ke kata 3–6+ huruf dan frasa pendek terkendali.
+Setelah menyelesaikan Jilid 3, peserta ditargetkan mampu membaca sukun dasar non-qalqalah menurut keluarga huruf pembawanya pada tengah/akhir unit baca tanpa tawallud, menjaga kontras vokal pendek–mad–sukun, membaca lam sukun, mengenali dan membaca alif-lam qamariyah pada posisi mulai baca, serta mentransfer keterampilan ke kata 3–6+ huruf dan frasa pendek terkendali.
 
 Target belum merupakan klaim efektivitas sebelum review ahli, pilot, Evidence-ID, dan otorisasi selesai.
 
 ## 2. Batas Materi
 
-**Masuk Jilid 3:** sukun dasar non-qalqalah; sukun akhir dan tengah; lam sukun; alif-lam qamariyah; ya/waw sukun non-mad secara kontras terbatas; hamzah sukun terbatas; kontras pendek–mad–sukun; kata 3, 4, 5, 6+ huruf; frasa pendek; dan murojaah kompetensi aktif dari Jilid 2 yang diperlukan untuk membaca teks Qurani.
+**Masuk Jilid 3:** sukun dasar non-qalqalah yang diurutkan menurut huruf pembawa, makhraj, sifat, dan tingkat kesulitan; posisi tengah/akhir unit; lam sukun; alif-lam qamariyah; ya/waw sukun non-mad secara kontras terbatas; hamzah sukun terbatas; kontras pendek–mad–sukun; kata 3, 4, 5, 6+ huruf; frasa pendek; dan murojaah kompetensi aktif dari Jilid 2 yang diperlukan untuk membaca teks Qurani.
 
-**Belum masuk:** sukun pada lima huruf qalqalah ق ط ب ج د, qalqalah, tasydid, alif-lam syamsiyah, ghunnah sistematis, hukum nun/mim sakinah lengkap, mad far'i, tafkhim–tarqiq formal, hamzah wasal lengkap ketika tersambung, dan waqaf–ibtida' formal.
+**Belum masuk:** sukun pada lima huruf qalqalah ق ط ب ج د, qalqalah, tasydid, alif-lam syamsiyah, ghunnah sistematis, penyebutan/pengajaran izhar–idgham–iqlab–ikhfa serta hukum mim sakinah, mad far'i, tafkhim–tarqiq formal, hamzah wasal lengkap ketika tersambung, dan waqaf–ibtida' formal.
 
 Huruf ق ط ب ج د tetap boleh muncul dengan harakat atau mad. Larangan hanya berlaku ketika huruf itu sendiri bersukun agar peserta tidak dilatih dengan bunyi yang keliru sebelum pelajaran qalqalah di Jilid 4.
 
@@ -45,26 +45,26 @@ Huruf ق ط ب ج د tetap boleh muncul dengan harakat atau mad. Larangan hanya 
 
 | Hlm | Kode | Fokus materi baca | Tangga kompleksitas |
 |---:|---|---|---|
-| 1 | QJ3-P001 | Hidup–mati; sukun setelah fathah tanpa tawallud | dominan 3 huruf |
-| 2 | QJ3-P002 | Sukun setelah fathah: م ن ل ر | 3 → 4 |
-| 3 | QJ3-P003 | Sukun setelah kasrah; kontras kasrah–ya mad | 3 → 4 |
-| 4 | QJ3-P004 | Sukun setelah dhammah; kontras dhammah–waw mad | 3 → 4 |
-| 5 | QJ3-P005 | Integrasi pendek–mad–sukun I | 3 → 4 |
-| 6 | QJ3-P006 | Sukun akhir: س ش ث | 3 → 4 |
-| 7 | QJ3-P007 | Sukun akhir: ح خ ع غ | 3 → 4 |
-| 8 | QJ3-P008 | Sukun akhir: ف ك ه | 3 → 4 |
-| 9 | QJ3-P009 | Sukun akhir dan huruf pemutus: ذ ز ر و | 3 → 4 |
-| 10 | QJ3-P010 | Evaluasi materi sukun akhir | 3 → 4 |
-| 11 | QJ3-P011 | Sukun tengah keluarga gigi: س ش ث | 3 → 4 |
-| 12 | QJ3-P012 | Sukun tengah tenggorokan: ح خ ع غ ه | 3 → 4 |
-| 13 | QJ3-P013 | Sukun tengah: ف ك ل م ن | 3 → 4 |
-| 14 | QJ3-P014 | Sukun tengah dengan pemutus sambungan | 3 → 4 |
-| 15 | QJ3-P015 | Kontras bentuk awal–tengah–akhir bersukun | 3 → 4/5 |
-| 16 | QJ3-P016 | Kontras keluarga bentuk mirip bersukun | 3 → 4/5 |
-| 17 | QJ3-P017 | Ya/waw sukun non-mad: pembeda visual dan bunyi | 3 → 4/5 |
-| 18 | QJ3-P018 | Hamzah sukun terbatas dan kursinya | 3 → 4/5 |
-| 19 | QJ3-P019 | Kata 4–5 huruf dengan sukun tengah | 3 → 4/5 |
-| 20 | QJ3-P020 | Evaluasi sukun tengah + Checkpoint Awā’il I: طه | 3 → 4/5 + panel prioritas |
+| 1 | QJ3-P001 | Sukun pada مْ | penutupan dua bibir tanpa tawallud | 3 → 4 |
+| 2 | QJ3-P002 | Sukun pada لْ | ujung lidah; jelas tanpa vokal tambahan | 3 → 4 |
+| 3 | QJ3-P003 | Sukun pada فْ | bibir bawah–gigi atas; aliran terukur | 3 → 4 |
+| 4 | QJ3-P004 | Sukun pada كْ | pangkal lidah; tidak dipantulkan | 3 → 4 |
+| 5 | QJ3-P005 | Sukun pada سْ dan شْ | aliran suara dan kontras bentuk | 3 → 4 |
+| 6 | QJ3-P006 | Sukun pada ثْ ذْ زْ | kontras ujung lidah/gigi | 3 → 4 |
+| 7 | QJ3-P007 | Sukun pada رْ | penutupan ra dasar; hukum tafkhim/tarqiq belum formal | 3 → 4 |
+| 8 | QJ3-P008 | Sukun pada نْ | bunyi dasar dalam satu kata; tanpa istilah hukum pertemuan | 3 → 4 |
+| 9 | QJ3-P009 | Sukun pada هْ dan حْ | awal keluarga tenggorokan | 3 → 4 |
+| 10 | QJ3-P010 | Evaluasi Sukun I | م ل ف ك س ش ث ذ ز ر ن ه ح | 3 → 4 |
+| 11 | QJ3-P011 | Sukun pada خْ | tenggorokan; bunyi gesek terukur | 3 → 4/5 |
+| 12 | QJ3-P012 | Sukun pada عْ | makhraj tengah tenggorokan | 3 → 4/5 |
+| 13 | QJ3-P013 | Sukun pada غْ | kontras غْ–خْ dan tanpa vokal tambahan | 3 → 4/5 |
+| 14 | QJ3-P014 | Sukun pada ءْ | penutupan hamzah; bentuk kursi bertahap | 3 → 4/5 |
+| 15 | QJ3-P015 | Sukun pada صْ | huruf tebal non-qalqalah I | 3 → 4/5 |
+| 16 | QJ3-P016 | Sukun pada ضْ | huruf tebal non-qalqalah II | 3 → 4/5 |
+| 17 | QJ3-P017 | Sukun pada ظْ | huruf tebal non-qalqalah III | 3 → 4/5 |
+| 18 | QJ3-P018 | Waw dan ya sukun non-mad | kontras dengan waw/ya mad | 3 → 4/5 |
+| 19 | QJ3-P019 | Integrasi sukun menurut keluarga huruf | kata 4–5 huruf; tanpa hukum pertemuan formal | 3 → 4/5 |
+| 20 | QJ3-P020 | Evaluasi Sukun II + Checkpoint Awā’il I: طه | seluruh sukun eligible; panel prioritas | 3 → 4/5 + panel |
 | 21 | QJ3-P021 | Lam berharakat versus lam sukun | 3 → 4 |
 | 22 | QJ3-P022 | Lam sukun setelah fathah | 3 → 4/5 |
 | 23 | QJ3-P023 | Lam sukun setelah kasrah dan dhammah | 3 → 4/5 |
@@ -112,7 +112,7 @@ Integrasi tidak boleh mengurangi jumlah halaman materi atau menggantikan latihan
 | 1 | struktur 40 halaman materi | COMPLETE-DRAFT |
 | 2 | dependency sukun → lam sukun → qamariyah | COMPLETE-DRAFT |
 | 3 | distribusi keluarga bentuk dan murojaah MAT-QJ3-REV-001 | COMPLETE-DRAFT; contoh belum diaudit |
-| 4 | isi nyata dan whitelist 40 halaman | P001–P005 COMPLETE-DRAFT; P006–P040 OPEN |
+| 4 | isi nyata dan whitelist 40 halaman | P001–P005 SUPERSEDED; P001–P040 OPEN setelah DEC-CUR-018 |
 | 5 | audit sumber, ortografi, distribusi, retensi | OPEN |
 | 6 | review ahli/akademik/editorial | OPEN |
 | 7 | asesmen, safeguarding, pilot, revisi | OPEN |
@@ -179,7 +179,12 @@ Seluruh produksi contoh QJ3-P001–P040 wajib mengikuti [MAT-QJ3-REV-001](../../
 
 ## 15. Status Materi Nyata
 
-- [QJ3-B01A P001–P005](pages/QJ3-B01A-Materi-P001-P005.md): 120/120 kotak COMPLETE-DRAFT.
-- Audit otomatis awal: 0 huruf tunggal, 0 tangga dua huruf, 0 tasydid, 0 alif-lam prematur, dan 0 sukun pada ق ط ب ج د.
-- Seluruh entri masih AR-CANDIDATE sampai tashih dan Source-ID selesai.
-- P006–P009 menunggu whitelist sukun akhir agar tidak memaksa waqaf atau materi prematur; P010 mengikuti setelahnya.
+- [QJ3-B01A P001–P005](pages/QJ3-B01A-Materi-P001-P005.md): **SUPERSEDED — DILARANG DIGUNAKAN** berdasarkan DEC-CUR-018.
+- Regenerasi P001–P020 harus mengikuti urutan huruf pembawa sukun, bukan harakat sebelumnya.
+- Contoh dua kata yang melahirkan hukum tanwin/nun/mim sukun antarkata dilarang sebelum materinya diajarkan.
+- Regenerasi dimulai setelah whitelist DEC-CUR-018 selesai.
+
+
+## 16. Koreksi DEC-CUR-018
+
+QJ3-MASTER v0.4.0 pada bagian P001–P020 dinyatakan superseded. Urutan sukun tidak lagi berdasarkan harakat sebelum sukun atau pembagian posisi semata, tetapi berdasarkan huruf yang menyandang sukun dan kesulitan artikulasinya. Istilah hukum nun/mim sukun tidak muncul pada Jilid 3 tahap ini. Contoh dua kata bertanwin atau bernun/mim sukun yang memerlukan hukum pertemuan ditunda.
