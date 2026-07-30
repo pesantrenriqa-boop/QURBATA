@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 1.0.5-draft  
+**Versi:** 1.0.6-draft  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
@@ -470,3 +470,24 @@ Produksi frasa dikendalikan [REG-QJ3-FRQ-001](../../curriculum/REG-QJ3-FRQ-001-R
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 1.0.5-draft | 30 Juli 2026 | Mengikat normalisasi P016–P020; 120 item lulus struktural, variasi tanwin tidak menggandakan jumlah lema, dan kedua panel tambahan terverifikasi |
+
+
+## 48. Audit Tahap II — Normalisasi P021–P025
+
+[AUD-QJ3-006](../../audit/AUD-QJ3-006-Normalisasi-P021-P025.md) dan [data item P021–P025](../../data/jilid-3/QJ3-ITEMS-P021-P025.csv) menetapkan:
+
+- 120/120 kotak P021–P025 telah dinormalisasi menjadi Item-ID dan lulus pemeriksaan struktural awal;
+- tangga meningkat dari kata tiga huruf sampai enam huruf tanpa regresi dua huruf;
+- klasifikasi fokus لْ ditentukan oleh penyandang sukun aktual; `يَعْلَمُونَ` dan pola serupa adalah transfer sukun terdahulu + mad, bukan fokus lam;
+- 0 item multi-kata pada kotak utama, selisih hitung huruf, fokus lam tanpa لْ, sukun baru prematur, tasydid, alif-lam prematur, atau sukun qalqalah;
+- panel `أَكْمَلْتُ لَكُمْ` (QS 5:3) dan `وَجَعَلْنَا لَكُمْ` (QS 7:10) berstatus ELIGIBLE-CANDIDATE di luar 24 kotak;
+- kedua panel berhenti pada `لَكُمْ`; perluasan melewati مْ tetap HOLD sampai hubungan antarkata eligible;
+- pola verba enam huruf berakhiran ـُونَ dan `يَسْتَغْفِرُ` dipertahankan sebagai transfer prioritas dengan gate tashih;
+- kata panjang yang jarang tidak boleh dipertahankan hanya demi mencapai jumlah huruf;
+- seluruh item dan panel tetap PENDING serta belum SIAP UJI/CETAK.
+
+## 49. Riwayat Audit Tahap II P021–P025
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 1.0.6-draft | 30 Juli 2026 | Mengikat normalisasi P021–P025 dan dua panel frasa Qurani autentik kandidat tanpa mengurangi 24 kotak materi |
