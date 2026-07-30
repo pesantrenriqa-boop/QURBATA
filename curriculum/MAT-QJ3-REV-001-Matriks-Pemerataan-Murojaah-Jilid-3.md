@@ -1,15 +1,15 @@
 # MAT-QJ3-REV-001 — Matriks Pemerataan dan Murojaah Kompetensi Jilid 3
 
 **Kode:** MAT-QJ3-REV-001  
-**Versi:** 0.1.0-id  
+**Versi:** 0.2.0-id  
 **Tanggal:** 30 Juli 2026  
 **Status:** COMPLETE-DRAFT — MENUNGGU AUDIT CONTOH  
 **Cakupan:** QJ3-P001–P040; 960 kotak utama  
-**Pengendali:** DEC-CUR-010, DEC-CUR-015, DEC-CUR-016, DEC-CUR-017, QJ3-MASTER v0.4.0
+**Pengendali:** DEC-CUR-010, DEC-CUR-015, DEC-CUR-016, DEC-CUR-017, DEC-CUR-018, QJ3-MASTER v0.5.0
 
 ## 1. Fungsi
 
-Matriks ini mengendalikan pemerataan materi baru dan murojaah Jilid 3. Yang diulang adalah **kompetensi yang diperlukan untuk membaca teks Al-Qur'an**, bukan format latihan lama.
+Matriks ini mengendalikan pemerataan materi baru dan murojaah Jilid 3. P001–P020 diurutkan berdasarkan huruf yang menyandang sukun serta kesulitan makhraj/sifatnya, bukan berdasarkan harakat sebelum sukun. Yang diulang adalah **kompetensi yang diperlukan untuk membaca teks Al-Qur'an**, bukan format latihan lama.
 
 Karena itu:
 
@@ -49,26 +49,26 @@ Pada fase G, empat kotak berurutan boleh membentuk satu frasa/potongan ayat sesu
 
 | Hlm | Fokus aktif | Murojaah wajib yang masih fungsional | Level terendah → tertinggi |
 |---:|---|---|---|
-| 1 | hidup–mati; sukun setelah fathah | harakat pendek dalam rangkaian sambung; pemutus | 3→4 |
-| 2 | sukun fathah pada م ن ل ر | P1; mad alif sebagai kontras | 3→4 |
-| 3 | sukun setelah kasrah | P1–2; kasrah pendek vs ya mad | 3→4 |
-| 4 | sukun setelah dhammah | P1–3; dhammah pendek vs waw mad | 3→4 |
-| 5 | integrasi pendek–mad–sukun | seluruh P1–4; tiga mad asli J2 | 3→4 |
-| 6 | sukun akhir س ش ث | P1–5; bentuk gigi dan titik | 3→4 |
-| 7 | sukun akhir ح خ ع غ | P2–6; keluarga tenggorokan | 3→4 |
-| 8 | sukun akhir ف ك ه | P3–7; kaf/ha unik dan mad | 3→4 |
-| 9 | sukun akhir ذ ز ر و | P4–8; huruf pemutus | 3→4 |
-| 10 | evaluasi sukun akhir | sampel P1–9; pendek–mad–sukun | 3→4 |
-| 11 | sukun tengah س ش ث | P3, P6, P9–10; bentuk tengah | 3→4→5 |
-| 12 | sukun tengah ح خ ع غ ه | P4, P7–11; tenggorokan | 3→4→5 |
-| 13 | sukun tengah ف ك ل م ن | P5, P8–12; sambung dan pemutus | 3→4→5 |
-| 14 | sukun tengah dengan pemutus | P6, P9–13; segmentasi visual | 3→4→5 |
-| 15 | posisi awal–tengah–akhir | P7–14; keluarga bentuk DEC-CUR-010 | 3→4→5 |
-| 16 | kontras bentuk mirip bersukun | P8–15; titik/kerangka/makhraj | 3→4→5 |
-| 17 | ya/waw sukun non-mad | P9–16; ya/waw mad sebagai kontras | 3→4→5 |
-| 18 | hamzah sukun terbatas | P10–17; kursi hamzah | 3→4→5 |
-| 19 | kata 4–5 huruf | P11–18; tanwin dan tiga mad | 3→4→5 |
-| 20 | evaluasi sukun tengah | sampel P1–19 + checkpoint طه | 3→4→5 |
+| 1 | Sukun pada مْ | bentuk sambung, tiga harakat, mad asli dalam satu kata | 3→4 |
+| 2 | Sukun pada لْ | P1; mad asli dan pemutus dalam satu kata | 3→4 |
+| 3 | Sukun pada فْ | P1–2; bentuk bibir dan mad | 3→4 |
+| 4 | Sukun pada كْ | P1–3; kontras sukun non-pantul | 3→4 |
+| 5 | Sukun pada سْ dan شْ | P1–4; keluarga bentuk س ش | 3→4 |
+| 6 | Sukun pada ثْ ذْ زْ | P2–5; bentuk/titik ث ذ ز | 3→4 |
+| 7 | Sukun pada رْ | P3–6; pemutus dan rangkaian sambung | 3→4 |
+| 8 | Sukun pada نْ | P4–7; hanya satu kata; tanpa nama hukum | 3→4 |
+| 9 | Sukun pada هْ dan حْ | P5–8; tenggorokan awal | 3→4 |
+| 10 | Evaluasi Sukun I | sampel P1–9; tanpa aturan pertemuan antarkata | 3→4 |
+| 11 | Sukun pada خْ | P3, P7–10; kontras خْ–حْ | 3→4→5 |
+| 12 | Sukun pada عْ | P4, P8–11; fokus makhraj عْ | 3→4→5 |
+| 13 | Sukun pada غْ | P5, P9–12; kontras غْ–خْ | 3→4→5 |
+| 14 | Sukun pada ءْ | P6, P10–13; kursi hamzah eligible | 3→4→5 |
+| 15 | Sukun pada صْ | P7, P11–14; tebal non-qalqalah | 3→4→5 |
+| 16 | Sukun pada ضْ | P8, P12–15; kontras صْ–ضْ | 3→4→5 |
+| 17 | Sukun pada ظْ | P9, P13–16; kontras huruf tebal | 3→4→5 |
+| 18 | Waw dan ya sukun non-mad | P10, P14–17; kontras mad–nonmad | 3→4→5 |
+| 19 | Integrasi sukun menurut keluarga huruf | P11–18; kata tunggal 4–5 huruf | 3→4→5 |
+| 20 | Evaluasi Sukun II + Checkpoint Awā’il I: طه | sampel P1–19 + checkpoint طه | 3→4→5 |
 | 21 | lam hidup vs lam sukun | P13, P17–20; pendek–mad–sukun | 3→4→5→6 |
 | 22 | lam sukun setelah fathah | P14, P18–21; pemutus | 3→4→5→6 |
 | 23 | lam sukun setelah kasrah/dhammah | P15, P19–22; mad ya/waw | 3→4→5→6 |
@@ -115,7 +115,9 @@ Setiap halaman harus lulus:
 - materi baru maksimal sesuai whitelist halaman;
 - fokus–murojaah dan N+1/N+2/N+4/N+8 terhitung;
 - contoh semakin kompleks menuju akhir;
-- sumber dan ortografi tervalidasi;
+- sumber, nahwu, ortografi, serta batas satu-kata/antarkata tervalidasi;
+- tidak ada contoh dua kata yang memicu hukum tanwin/nun/mim sukun sebelum diajarkan;
+- dokumen peserta/guru tidak menyebut izhar, ikhfa, idgham, iqlab, atau hukum mim sukun pada tahap ini;
 - tidak ada atribusi Qurani/hadis tanpa Source-ID;
 - panel nama huruf/awā’il tidak mengurangi 24 kotak utama.
 
@@ -129,3 +131,11 @@ Setiap halaman harus lulus:
 | Source-ID dan whitelist | OPEN |
 | audit otomatis | OPEN |
 | tashih ahli dan pilot | OPEN |
+
+
+## 8. Koreksi 0.2.0
+
+- Baseline P001–P020 versi 0.1.0 superseded.
+- Harakat sebelum sukun hanya divariasikan setelah bunyi huruf target stabil; harakat bukan sumbu urutan halaman.
+- Contoh awal diprioritaskan satu kata. Frasa hanya boleh dipakai bila tidak melahirkan hukum tajwid antarkata yang belum diajarkan.
+- Semua contoh lama P001–P005 harus diregenerasi.
