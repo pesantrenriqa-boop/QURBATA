@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 0.3.0-id  
+**Versi:** 0.4.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
@@ -20,7 +20,7 @@ Target belum merupakan klaim efektivitas sebelum review ahli, pilot, Evidence-ID
 
 ## 2. Batas Materi
 
-**Masuk Jilid 3:** sukun dasar non-qalqalah; sukun akhir dan tengah; lam sukun; alif-lam qamariyah; ya/waw sukun non-mad secara kontras terbatas; hamzah sukun terbatas; kontras pendek–mad–sukun; kata 3, 4, 5, 6+ huruf; frasa pendek; dan murojaah seluruh kompetensi Jilid 2.
+**Masuk Jilid 3:** sukun dasar non-qalqalah; sukun akhir dan tengah; lam sukun; alif-lam qamariyah; ya/waw sukun non-mad secara kontras terbatas; hamzah sukun terbatas; kontras pendek–mad–sukun; kata 3, 4, 5, 6+ huruf; frasa pendek; dan murojaah kompetensi aktif dari Jilid 2 yang diperlukan untuk membaca teks Qurani.
 
 **Belum masuk:** sukun pada lima huruf qalqalah ق ط ب ج د, qalqalah, tasydid, alif-lam syamsiyah, ghunnah sistematis, hukum nun/mim sakinah lengkap, mad far'i, tafkhim–tarqiq formal, hamzah wasal lengkap ketika tersambung, dan waqaf–ibtida' formal.
 
@@ -32,7 +32,7 @@ Huruf ق ط ب ج د tetap boleh muncul dengan harakat atau mad. Larangan hanya 
 2. Seluruh 40 halaman adalah halaman materi baca dengan contoh nyata; tidak ada halaman konsep, hafalan, bahasa Arab, hadis/akhlak, remedial, atau simulasi yang menggantikan jatah materi.
 3. Tahfidz, Bahasa Arab, hadis/akhlak, NIDOM, asesmen, dan remedial mikro terintegrasi pada setiap halaman.
 4. Urutan dan pemerataan huruf meneruskan **DEC-CUR-010**: keluarga kerangka, bentuk awal–tengah–akhir, huruf pemutus, bentuk unik, dan kontras bentuk mirip dari mudah ke sulit.
-5. Setiap halaman akuisisi memuat kira-kira 50% fokus baru dan 50% murojaah; materi kembali melalui N+1, N+2, N+4, N+8 serta tetap tersebar sampai akhir jilid.
+5. Setiap halaman akuisisi memuat kira-kira 50% fokus baru dan 50% murojaah kompetensi aktif; materi kembali melalui N+1, N+2, N+4, N+8 serta tetap tersebar sampai akhir jilid. Murojaah harus tampil pada level kata/frasa tertinggi yang sudah eligible, bukan kembali ke huruf tunggal Jilid 1 atau tangga dua huruf.
 6. Tangga dimulai dari tiga huruf pada setiap halaman. Kompleksitas kemudian naik adaptif menjadi 4, 5, dan 6+ huruf; jumlah contoh kompleks meningkat seiring nomor halaman.
 7. Contoh diprioritaskan: Al-Qur'an → hadis → kosakata Arab bermakna → lema latihan terkontrol. Setiap klaim sumber wajib memiliki Source-ID dan teks harus ditashih.
 8. Sukun baru hanya muncul setelah bentuk posisi hurufnya telah dikuasai; bentuk mirip selalu disertai latihan kontras.
@@ -64,7 +64,7 @@ Huruf ق ط ب ج د tetap boleh muncul dengan harakat atau mad. Larangan hanya 
 | 17 | QJ3-P017 | Ya/waw sukun non-mad: pembeda visual dan bunyi | 3 → 4/5 |
 | 18 | QJ3-P018 | Hamzah sukun terbatas dan kursinya | 3 → 4/5 |
 | 19 | QJ3-P019 | Kata 4–5 huruf dengan sukun tengah | 3 → 4/5 |
-| 20 | QJ3-P020 | Evaluasi sukun tengah dan transfer | 3 → 4/5 |
+| 20 | QJ3-P020 | Evaluasi sukun tengah + Checkpoint Awā’il I: طه | 3 → 4/5 + panel prioritas |
 | 21 | QJ3-P021 | Lam berharakat versus lam sukun | 3 → 4 |
 | 22 | QJ3-P022 | Lam sukun setelah fathah | 3 → 4/5 |
 | 23 | QJ3-P023 | Lam sukun setelah kasrah dan dhammah | 3 → 4/5 |
@@ -84,7 +84,7 @@ Huruf ق ط ب ج د tetap boleh muncul dengan harakat atau mad. Larangan hanya 
 | 37 | QJ3-P037 | Potongan Qurani pendek tervalidasi | 3 → 4 kotak/frasa |
 | 38 | QJ3-P038 | Murojaah kompleks seluruh materi | 3 → 4/5/6+ |
 | 39 | QJ3-P039 | Simulasi baca melalui contoh materi paralel | 3 → kata/frasa |
-| 40 | QJ3-P040 | Evaluasi akhir melalui materi baca lengkap | 3 → kata/frasa |
+| 40 | QJ3-P040 | Evaluasi akhir + Checkpoint Awā’il II: طه dan طس | 3 → kata/frasa + panel prioritas |
 
 Urutan internal huruf qamariyah pada P027–P029 masih wajib ditashih ahli dari sisi makhraj, ortografi, dan ketersediaan contoh; pengelompokan di atas adalah rancangan beban visual awal.
 
@@ -143,3 +143,30 @@ Integrasi tidak boleh mengurangi jumlah halaman materi atau menggantikan latihan
 | 0.3.0-id | 30 Juli 2026 | Menetapkan 40 halaman semuanya materi; mengikat urutan huruf DEC-CUR-010; Jilid 3 = sukun non-qalqalah, lam sukun, qamariyah; qalqalah dipindah ke Jilid 4; integrasi lintas materi hadir pada setiap halaman |
 | 0.2.0-id | 29 Juli 2026 | Memusatkan Jilid 3 pada sukun dan qalqalah dasar; superseded oleh DEC-CUR-016 |
 | 0.1.0-id | 29 Juli 2026 | Membentuk struktur formal 40 halaman Jilid 3 |
+
+
+## 11. Batas Murojaah Lintas Jilid
+
+Murojaah Jilid 3 berarti menggunakan kembali harakat pendek, bentuk sambung, tanwin, dan mad asli **di dalam kata atau frasa yang relevan dengan bacaan Al-Qur'an sesungguhnya**. Murojaah tidak berarti:
+
+- mengulang huruf tunggal sebagaimana latihan awal Jilid 1;
+- kembali ke tangga dua huruf;
+- memenuhi kuota token dengan bentuk yang sudah terlalu mudah;
+- memasukkan kaidah baru yang belum eligible.
+
+Audit setiap halaman harus membuktikan bahwa latihan review tetap menambah kelancaran, akurasi, retensi, atau transfer.
+
+## 12. Jalur Tambahan Prioritas: Awā’il/Fawātiḥ as-Suwar
+
+- QJ3-P020 memperkenalkan dan menalqinkan **طه** sebagai bentuk paling ringan pada jalur awal.
+- QJ3-P040 menguji retensi **طه** dan memperkenalkan **طس** secara talqin.
+- Panel ini merupakan tambahan prioritas, tidak mengambil 24 kotak/tangga materi utama.
+- Peserta boleh meniru bacaan tervalidasi sebelum mempelajari nama kaidah; penguasaan tajwid formal baru dinilai setelah mad terkait diajarkan.
+- Audio ahli, rasm/tanda baca mushaf, panjang bacaan, sambungan ke ayat berikut, dan Source-ID wajib diverifikasi.
+- Peta lanjutan seluruh bentuk dikendalikan DEC-CUR-017.
+
+## 13. Riwayat Tambahan
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 0.4.0-id | 30 Juli 2026 | Murojaah dibatasi pada kompetensi aktif tanpa regresi; menambahkan checkpoint awā’il as-suwar pada P020/P040 |
