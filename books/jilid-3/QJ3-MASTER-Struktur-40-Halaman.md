@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 1.0.1-draft  
+**Versi:** 1.0.2-draft  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
@@ -391,3 +391,21 @@ Produksi frasa dikendalikan [REG-QJ3-FRQ-001](../../curriculum/REG-QJ3-FRQ-001-R
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 1.0.1-draft | 30 Juli 2026 | Mengikat AUD-QJ3-001: struktur lulus audit tahap I; leksikal, rasm, sumber, audio, dan pemerataan masih terbuka |
+
+
+## 40. Audit Tahap II — Normalisasi P001–P005
+
+[AUD-QJ3-002](../../audit/AUD-QJ3-002-Normalisasi-P001-P005.md) dan [data item P001–P005](../../data/jilid-3/QJ3-ITEMS-P001-P005.csv) menetapkan:
+
+- 120/120 kotak telah memiliki Item-ID stabil dan rekaman satu item per baris;
+- setiap item merekam Page-ID, urutan, teks Arab, jumlah huruf deklaratif/terhitung, penyandang dan target sukun, fungsi, mad, tanwin, tipe sumber, status tashih, serta flag validasi;
+- 120/120 item lulus pemeriksaan struktural awal;
+- 0 item multi-kata, 0 selisih jumlah huruf, 0 target sukun hilang pada kelompok fokus/integrasi, 0 tasydid, 0 alif-lam prematur, 0 sukun qalqalah prematur, dan 0 kotak integrasi tanpa mad;
+- seluruh item tetap AR-CANDIDATE/PENDING sampai tashih ahli; lulus struktural bukan status siap cetak;
+- normalisasi berikutnya menerapkan skema yang sama pada P006–P010.
+
+## 41. Riwayat Audit Tahap II
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 1.0.2-draft | 30 Juli 2026 | Mengikat normalisasi 120 item P001–P005; seluruhnya lulus audit struktural awal dan tetap menunggu tashih ahli |
