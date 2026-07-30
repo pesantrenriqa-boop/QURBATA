@@ -22,7 +22,7 @@ Target belum merupakan klaim efektivitas sebelum review ahli, pilot, Evidence-ID
 
 **Masuk Jilid 3:** sukun dasar non-qalqalah yang diurutkan menurut huruf pembawa, makhraj, sifat, dan tingkat kesulitan; posisi tengah/akhir unit; lam sukun; alif-lam qamariyah; ya/waw sukun non-mad secara kontras terbatas; hamzah sukun terbatas; kontras pendek–mad–sukun; kata 3, 4, 5, 6+ huruf; frasa pendek; dan murojaah kompetensi aktif dari Jilid 2 yang diperlukan untuk membaca teks Qurani.
 
-**Belum masuk:** sukun pada lima huruf qalqalah ق ط ب ج د, qalqalah, tasydid, alif-lam syamsiyah, ghunnah sistematis, penyebutan/pengajaran izhar–idgham–iqlab–ikhfa serta hukum mim sakinah, mad far'i, tafkhim–tarqiq formal, hamzah wasal lengkap ketika tersambung, dan waqaf–ibtida' formal.
+**Belum masuk:** sukun pada lima huruf qalqalah ق ط ب ج د, qalqalah, tasydid, alif-lam syamsiyah, ghunnah sistematis, hukum pertemuan nun/mim sakinah dan tanwin, mad far'i, tafkhim–tarqiq formal, hamzah wasal lengkap ketika tersambung, dan waqaf–ibtida' formal.
 
 Huruf ق ط ب ج د tetap boleh muncul dengan harakat atau mad. Larangan hanya berlaku ketika huruf itu sendiri bersukun agar peserta tidak dilatih dengan bunyi yang keliru sebelum pelajaran qalqalah di Jilid 4.
 
