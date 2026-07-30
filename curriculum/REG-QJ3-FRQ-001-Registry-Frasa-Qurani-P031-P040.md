@@ -1,7 +1,7 @@
 # REG-QJ3-FRQ-001 — Registry Frasa Qurani P031–P040
 
 **Kode:** REG-QJ3-FRQ-001  
-**Versi:** 0.2.0-id  
+**Versi:** 0.3.0-id  
 **Status:** CANDIDATE-REGISTRY — belum whitelist/cetak  
 **Tanggal:** 30 Juli 2026  
 **Pengendali:** DEC-CUR-019, DEC-CUR-021, QJ3-MASTER
@@ -26,6 +26,10 @@
 | FRQ-QJ3-004 | ٱلْعَفْوَ وَأْمُرْ | QS Al-A‘rāf 7:199 | 2 kata | qamariyah + وْ non-mad + ءْ + رْ | CANDIDATE-HIGH |
 | FRQ-QJ3-005 | لَا رَيْبَ فِيهِ | QS Al-Baqarah 2:2 | 3 kata | mad alif + يْ non-mad + mad ya | CANDIDATE-TRANSFER |
 | FRQ-QJ3-006 | ٱلْيَوْمَ نَخْتِمُ | QS Yā-Sīn 36:65 | 2 kata | qamariyah + يْ non-mad + خْ + kata panjang | CANDIDATE-HIGH |
+| FRQ-QJ3-007 | ٱلْيَوْمَ نَخْتِمُ عَلَىٰ | QS Yā-Sīn 36:65 | 3 kata | perluasan frasa + mad | CANDIDATE-HIGH |
+| FRQ-QJ3-008 | عَلَىٰ أَفْوَاهِهِمْ | QS Yā-Sīn 36:65 | 2 kata | mad + hamzah + وْ non-mad + mad alif + مْ | CANDIDATE-HIGH |
+| FRQ-QJ3-009 | بِمَا كَانُوا يَكْسِبُونَ | QS Yā-Sīn 36:65 | 3 kata | rangkaian mad + كْ + kata panjang ـُونَ | CANDIDATE-HIGH |
+| FRQ-QJ3-010 | ٱلْكِتَابُ لَا رَيْبَ فِيهِ | QS Al-Baqarah 2:2 | 4 kata | qamariyah + mad + يْ non-mad + mad ya | CANDIDATE-FINAL |
 
 ## Pemeriksaan eligibility awal
 
