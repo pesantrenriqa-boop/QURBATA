@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 0.11.0-id  
+**Versi:** 0.12.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
@@ -112,7 +112,7 @@ Integrasi tidak boleh mengurangi jumlah halaman materi atau menggantikan latihan
 | 1 | struktur 40 halaman materi | COMPLETE-DRAFT |
 | 2 | dependency sukun → lam sukun → qamariyah | COMPLETE-DRAFT |
 | 3 | distribusi keluarga bentuk dan murojaah MAT-QJ3-REV-001 | COMPLETE-DRAFT; contoh belum diaudit |
-| 4 | isi nyata dan whitelist 40 halaman | B01A SUPERSEDED; P001–P025 COMPLETE-DRAFT menunggu tashih |
+| 4 | isi nyata dan whitelist 40 halaman | B01A SUPERSEDED; P001–P030 COMPLETE-DRAFT menunggu tashih |
 | 5 | audit sumber, ortografi, distribusi, retensi | OPEN |
 | 6 | review ahli/akademik/editorial | OPEN |
 | 7 | asesmen, safeguarding, pilot, revisi | OPEN |
@@ -294,3 +294,20 @@ Produksi P026–P040 wajib mengikuti [DEC-CUR-021](../../curriculum/DEC-CUR-021-
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 0.11.0-id | 30 Juli 2026 | Mengikat DEC-CUR-021: pola kata yang diperlukan untuk bacaan Qurani masuk menurut dependency; tidak ada pemaksaan contoh |
+
+
+## 29. Produksi B03B
+
+- [QJ3-B03B P026–P030](pages/QJ3-B03B-Materi-P026-P030.md): 120 kotak COMPLETE-DRAFT + checkpoint طس.
+- Cakupan: اَلْ pada posisi mulai, qamariyah mudah, qamariyah tenggorokan, ه/و/ي/hamzah, dan evaluasi.
+- Komposisi: 20 kata tiga huruf + 24 kata empat huruf + 40 kata lima huruf + 36 kata enam huruf.
+- P030 memperkenalkan طس tanpa mengulang طه dan tanpa mengambil kotak materi.
+- Semua bentuk ber-ال masih memerlukan tashih antara notasi pedagogis, rasm mushaf, dan audio.
+- Audit mekanis: 0 tasydid, 0 syamsiyah, 0 frasa dua kata, 0 sukun qalqalah.
+- Status P001–P030: 720 kotak draf nyata; belum SIAP UJI/CETAK.
+
+## 30. Riwayat Produksi B03B
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 0.12.0-id | 30 Juli 2026 | Menambahkan P026–P030 qamariyah dasar, tangga sampai enam huruf, dan checkpoint awā’il طس tanpa pengulangan |
