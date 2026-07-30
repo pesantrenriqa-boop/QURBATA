@@ -1,7 +1,7 @@
 # QJ2-MASTER — Struktur Buku QURBATA Jilid 2
 
 **Kode:** QJ2-MASTER  
-**Versi:** 0.24.0-id  
+**Versi:** 0.25.0-id  
 **Status:** Draf Terkendali — Direbasiskan  
 **Tanggal:** 29 Juli 2026  
 **Jumlah Halaman Inti:** 40 halaman materi baca  
@@ -25,7 +25,7 @@ Peserta mampu membaca bentuk huruf bersambung pada posisi awal, tengah, dan akhi
 8. Mad asli dibaca dua harakat mengikuti model ahli; bunyi pendek tidak boleh dipanjangkan.
 9. Alif mad dipelajari menurut tampilan Mushaf Standar Indonesia dan tidak dipaksa memiliki tanda sukun. Ya/waw dipelajari sebagai huruf mad sekaligus dikontraskan dengan fungsi konsonannya.
 10. Tahfidz 5 menit, Bahasa Arab/mufradat, hadis/akhlak, NIDOM, evaluasi singkat, remedial, dan catatan guru terintegrasi di setiap halaman—bukan halaman khusus.
-11. N+1, N+2, N+4, dan N+8 digunakan untuk murojaah.
+11. N+1, N+2, N+4, dan N+8 digunakan untuk murojaah kompetensi aktif. Mulai Jilid 2 tidak ada regresi ke tangga dua huruf; pada jilid lebih tinggi tidak ada regresi ke huruf tunggal.
 12. Materi guru yang belum lulus whitelist tidak dicetak sebagai bacaan peserta.
 
 ## 3. Peta 40 Halaman
@@ -51,7 +51,7 @@ Peserta mampu membaca bentuk huruf bersambung pada posisi awal, tengah, dan akhi
 | 17 | QJ2-P017 | ي ى: kontras bentuk akhir | 24 × 3 huruf |
 | 18 | QJ2-P018 | ء أ إ ؤ ئ: kursi hamzah | 24 × 3 huruf |
 | 19 | QJ2-P019 | integrasi keluarga bentuk dan pemutus | 24 × 3 huruf |
-| 20 | QJ2-P020 | evaluasi bentuk II | 24 × 3 huruf |
+| 20 | QJ2-P020 | evaluasi bentuk II + Checkpoint Nama Huruf III | 24 × 3 huruf + panel lisan |
 | 21 | QJ2-P021 | fathatain | 8 × 3 + 16 × 4 |
 | 22 | QJ2-P022 | kasratain | 8 × 3 + 16 × 4 |
 | 23 | QJ2-P023 | dhammatain | 8 × 3 + 16 × 4 |
@@ -71,7 +71,7 @@ Peserta mampu membaca bentuk huruf bersambung pada posisi awal, tengah, dan akhi
 | 37 | QJ2-P037 | waw mad pada empat huruf dan transfer | 8 × 3 + 16 × 4 |
 | 38 | QJ2-P038 | waw mad vs waw konsonan; murojaah alif/ya | 8 × 3 + 16 × 4 |
 | 39 | QJ2-P039 | integrasi tiga mad dan kontras pendek–panjang | 8 × 3 + 16 × 4 |
-| 40 | QJ2-P040 | evaluasi akhir: bentuk, tanwin, mad asli | 8 × 3 + 16 × 4 |
+| 40 | QJ2-P040 | evaluasi akhir + Checkpoint Nama Huruf IV | 8 × 3 + 16 × 4 + panel lisan |
 
 ## 4. Tangga Mikro Mad P025–P040
 
@@ -117,3 +117,20 @@ Setiap halaman harus lulus: validasi ortografi, status huruf mad, kecocokan Mush
 |---|---|---|
 | 0.24.0-id | 29 Juli 2026 | Seluruh 40 halaman ditegaskan sebagai materi baca; halaman khusus dihapus; P025–P040 dirombak menjadi 16 halaman tangga panjang–pendek/mad asli; klaim 40/40 dicabut |
 | 0.23.0-id | 29 Juli 2026 | Versi lama; digantikan oleh DEC-CUR-012 |
+
+
+## 10. Jalur Tambahan Prioritas: Penuntasan Nama Huruf
+
+Panel ini tidak mengambil kotak materi baca dan tidak mengubah fokus sambung–tanwin–mad.
+
+- **QJ2-P020 — Checkpoint III:** ضَاد، طَاء، ظَاء، عَيْن، غَيْن، فَاء، قَاف.
+- **QJ2-P040 — Checkpoint IV:** كَاف، لَام، مِيم، نُون، هَاء، وَاو، يَاء، هَمْزَة.
+- QJ2-P040 menjadi gate penuntasan 29 identitas nama: alif dan hamzah dibedakan secara terminologis serta visual.
+- Checkpoint memakai tunjuk–sebut acak, dengar–pilih, dan koreksi makhraj; bukan ejaan untuk membaca kata.
+- Setelah gate ini lulus, Jilid 3 memulai awā’il/fawātiḥ as-suwar menurut DEC-CUR-017.
+
+## 11. Riwayat Tambahan
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 0.25.0-id | 30 Juli 2026 | Menetapkan murojaah kompetensi tanpa regresi serta checkpoint nama huruf P020/P040 |
