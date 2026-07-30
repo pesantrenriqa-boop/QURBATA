@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 0.13.0-id  
+**Versi:** 0.14.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
@@ -112,7 +112,7 @@ Integrasi tidak boleh mengurangi jumlah halaman materi atau menggantikan latihan
 | 1 | struktur 40 halaman materi | COMPLETE-DRAFT |
 | 2 | dependency sukun → lam sukun → qamariyah | COMPLETE-DRAFT |
 | 3 | distribusi keluarga bentuk dan murojaah MAT-QJ3-REV-001 | COMPLETE-DRAFT; contoh belum diaudit |
-| 4 | isi nyata dan whitelist 40 halaman | B01A SUPERSEDED; P001–P030 COMPLETE-DRAFT menunggu tashih |
+| 4 | isi nyata dan whitelist 40 halaman | B01A SUPERSEDED; P001–P035 COMPLETE-DRAFT menunggu tashih |
 | 5 | audit sumber, ortografi, distribusi, retensi | OPEN |
 | 6 | review ahli/akademik/editorial | OPEN |
 | 7 | asesmen, safeguarding, pilot, revisi | OPEN |
@@ -328,3 +328,20 @@ Produksi frasa dikendalikan [REG-QJ3-FRQ-001](../../curriculum/REG-QJ3-FRQ-001-R
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 0.13.0-id | 30 Juli 2026 | Memulai registry frasa Qurani autentik P031–P040 dengan gate eligibility dan daftar HOLD |
+
+
+## 33. Produksi B04A
+
+- [QJ3-B04A P031–P035](pages/QJ3-B04A-Materi-P031-P035.md): 120 kotak COMPLETE-DRAFT.
+- P031–P032 menaikkan kata qamariyah dan kontras tanpa/dengan ال.
+- P033 memuat empat tangga frasa Qurani autentik dari QS 5:3, 7:199, dan 2:2.
+- P034 menjaga tanwin tetap pada kata tunggal sambil mengintegrasikan mad, sukun, dan qamariyah.
+- P035 menaikkan kata sampai delapan huruf dan menambahkan kandidat `ٱلْيَوْمَ نَخْتِمُ` (QS 36:65).
+- Total kandidat frasa dalam batch: 5; semuanya menunggu tashih rasm/qira’at/audio/Source-ID.
+- Status P001–P035: 840 kotak draf nyata; belum SIAP UJI/CETAK.
+
+## 34. Riwayat Produksi B04A
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 0.14.0-id | 30 Juli 2026 | Menambahkan P031–P035 dengan tangga kata sampai 8 huruf dan lima frasa Qurani autentik kandidat |
