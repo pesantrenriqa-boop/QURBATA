@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 0.12.0-id  
+**Versi:** 0.13.0-id  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
@@ -311,3 +311,20 @@ Produksi P026–P040 wajib mengikuti [DEC-CUR-021](../../curriculum/DEC-CUR-021-
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 0.12.0-id | 30 Juli 2026 | Menambahkan P026–P030 qamariyah dasar, tangga sampai enam huruf, dan checkpoint awā’il طس tanpa pengulangan |
+
+
+## 31. Registry Frasa Qurani P031–P040
+
+Produksi frasa dikendalikan [REG-QJ3-FRQ-001](../../curriculum/REG-QJ3-FRQ-001-Registry-Frasa-Qurani-P031-P040.md).
+
+- Kandidat awal tervalidasi locator: `ٱلْكِتَابُ لَا رَيْبَ` (2:2), `ٱلْيَوْمَ يَئِسَ` dan `ٱلْيَوْمَ أَكْمَلْتُ` (5:3), serta `ٱلْعَفْوَ وَأْمُرْ` (7:199).
+- Kandidat tetap berstatus CANDIDATE sampai rasm, qira’at, audio, Source-ID, dependency, titik mulai, dan titik akhir ditashih.
+- Frasa yang memerlukan tasydid, hukum tanwin antarkata, atau penyambungan hamzah waṣl yang belum eligible berstatus HOLD.
+- Frasa harus berupa 2–3 kata berurutan persis dalam satu ayat; dilarang merangkai kata Qurani secara buatan.
+- Bila tidak ada kandidat bersih, halaman tetap menggunakan kata tunggal.
+
+## 32. Riwayat Registry Frasa
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 0.13.0-id | 30 Juli 2026 | Memulai registry frasa Qurani autentik P031–P040 dengan gate eligibility dan daftar HOLD |
