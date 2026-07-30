@@ -4,17 +4,18 @@
 
 **Fokus:** menggabungkan kemampuan membaca mad alif dan mad waw tanpa memasukkan hukum tajwid baru.
 
-**Murojaah:**
-- mad alif P029
-- mad waw P030–P032
-- huruf pemutus
-- kontras panjang dan pendek
+## Aturan halaman
 
-**Distribusi:** 12 × murojaah + 12 × penguatan
+- Tidak mengenalkan sukun.
+- Tidak mengenalkan lafadz Allah.
+- Tidak mengenalkan pola وا.
+- Tidak mengenalkan mad wajib muttasil.
+- Tidak mengenalkan mad ya sebagai materi baru.
+- Tidak mengenalkan ikhfa, idgham, atau hukum tajwid lanjutan.
 
-## Petunjuk talqin
+## Distribusi
 
-Guru membaca perlahan. Santri mengikuti. Fokus utama adalah kestabilan dua harakat pada mad alif dan mad waw.
+12 murojaah + 12 penguatan.
 
 ## 24 kotak baca
 
@@ -23,38 +24,35 @@ Guru membaca perlahan. Santri mengikuti. Fokus utama adalah kestabilan dua harak
 |1|بَابٌ|murojaah mad alif|
 |2|كِتَابٌ|murojaah mad alif|
 |3|حِسَابٌ|murojaah mad alif|
-|4|نُورٌ|murojaah mad waw|
-|5|غَفُورٌ|murojaah mad waw|
-|6|قُلُوبٌ|murojaah mad waw|
-|7|دَارٌ|kontras alif|
-|8|نَارٌ|kontras alif|
-|9|حُضُورٌ|kontras waw|
-|10|دُخُولٌ|kontras waw|
-|11|خُرُوجٌ|kontras waw|
-|12|وُجُوهٌ|kontras waw awal|
+|4|عَذَابٌ|murojaah mad alif|
+|5|نُورٌ|murojaah mad waw|
+|6|غَفُورٌ|murojaah mad waw|
+|7|قُلُوبٌ|murojaah mad waw|
+|8|نُفُوسٌ|murojaah mad waw|
+|9|دَارٌ|kontras panjang alif|
+|10|نَارٌ|kontras panjang alif|
+|11|دُورٌ|kontras panjang waw|
+|12|صُدُورٌ|kontras panjang waw|
 |13|مَالٌ|transfer mad alif|
-|14|مَالِكٌ|transfer panjang kata|
-|15|سَبِيلٌ|mengenal panjang ya (belum fokus tajwid)|
-|16|قَرِيبٌ|transfer kata panjang|
-|17|يَقُولُ|transfer mad waw dalam kata|
-|18|يَكُونُ|transfer mad waw dalam kata|
-|19|تَكُونُ|transfer mad waw dalam kata|
-|20|فُرُوقٌ|penguatan waw|
-|21|نُفُوسٌ|penguatan waw|
-|22|صُدُورٌ|penguatan waw|
-|23|عُيُونٌ|penguatan waw|
-|24|شُكُورٌ|evaluasi akhir|
+|14|مَالِكٌ|transfer kata panjang|
+|15|حَالٌ|penguatan alif|
+|16|بَالٌ|penguatan alif|
+|17|حُدُودٌ|transfer mad waw|
+|18|دُخُولٌ|transfer mad waw|
+|19|خُرُوجٌ|transfer mad waw|
+|20|شُكُورٌ|penguatan waw|
+|21|حُضُورٌ|penguatan waw|
+|22|فُرُوقٌ|penguatan waw|
+|23|وُجُوهٌ|penguatan waw|
+|24|نُورٌ|evaluasi akhir|
 
 ## Catatan kurikulum
 
-Tidak memasukkan:
-- lafadz Allah
-- waw jama' (وا)
-- ikhfa/idgham tanwin
-- hukum tajwid lanjutan
-
-Tujuan halaman: santri mampu membedakan dan membaca panjang mad alif serta mad waw secara stabil.
+Dikeluarkan dari halaman ini:
+- mad wajib muttasil seperti رَجَاءٌ dan دُعَاءٌ.
+- mad ya seperti سَبِيلٌ dan قَرِيبٌ.
+- pola kata kerja seperti يَقُولُ dan يَكُونُ yang memerlukan tangga tersendiri.
 
 ## Gate halaman
 
-Santri siap menuju materi berikutnya apabila mampu membaca minimal 20 dari 24 kotak dengan panjang mad stabil dan tidak mencampur mad alif dengan mad waw.
+Santri siap menuju materi berikutnya apabila mampu membedakan mad alif dan mad waw secara stabil tanpa menambah atau mengurangi panjang bacaan.
