@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 1.0.7-draft  
+**Versi:** 1.0.8-draft  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
@@ -511,3 +511,24 @@ Produksi frasa dikendalikan [REG-QJ3-FRQ-001](../../curriculum/REG-QJ3-FRQ-001-R
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 1.0.7-draft | 30 Juli 2026 | Mengikat normalisasi P026–P030; 88 item qamariyah terverifikasi dan checkpoint طس tidak mengulang طه |
+
+
+## 52. Audit Tahap II — Normalisasi P031–P035
+
+[AUD-QJ3-008](../../audit/AUD-QJ3-008-Normalisasi-P031-P035.md) dan [data item P031–P035](../../data/jilid-3/QJ3-ITEMS-P031-P035.csv) menetapkan:
+
+- 120/120 kotak telah dinormalisasi dan lulus pemeriksaan struktural awal;
+- 11 kotak berfungsi sebagai komponen frasa dan 9 kotak sebagai frasa utuh, tetapi hanya terdapat 5 frasa unik;
+- pengulangan frasa pada kotak kelancaran tidak dihitung sebagai materi atau frasa baru;
+- lima frasa Qurani kandidat telah dicocokkan dengan locator QS 5:3, QS 7:199, QS 2:2, dan QS 36:65;
+- 0 multi-kata di luar kotak frasa, tasydid, sukun qalqalah, huruf non-qamariyah setelah ال, tanwin antarkata, atau nun/mim sukun antarkata;
+- tangga kata mencapai delapan huruf pada P035;
+- variasi tanpa/dengan ال dan variasi tanwin dihitung sebagai latihan bentuk, bukan penggandaan lema;
+- seluruh kata dan frasa tetap CANDIDATE/PENDING sampai tashih rasm, qira’at, makna, audio, dan Source-ID final;
+- status tetap belum SIAP UJI/CETAK.
+
+## 53. Riwayat Audit Tahap II P031–P035
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 1.0.8-draft | 30 Juli 2026 | Mengikat normalisasi P031–P035; lima frasa Qurani unik terverifikasi secara struktural dan tangga mencapai delapan huruf |
