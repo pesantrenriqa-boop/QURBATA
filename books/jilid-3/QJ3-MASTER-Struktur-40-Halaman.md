@@ -112,7 +112,7 @@ Integrasi tidak boleh mengurangi jumlah halaman materi atau menggantikan latihan
 | 1 | struktur 40 halaman materi | COMPLETE-DRAFT |
 | 2 | dependency sukun → lam sukun → qamariyah | COMPLETE-DRAFT |
 | 3 | distribusi keluarga bentuk dan murojaah MAT-QJ3-REV-001 | COMPLETE-DRAFT; contoh belum diaudit |
-| 4 | isi nyata dan whitelist 40 halaman | P001–P005 SUPERSEDED; P001–P040 OPEN setelah DEC-CUR-018 |
+| 4 | isi nyata dan whitelist 40 halaman | B01A SUPERSEDED; B01B P001–P005 COMPLETE-DRAFT menunggu tashih |
 | 5 | audit sumber, ortografi, distribusi, retensi | OPEN |
 | 6 | review ahli/akademik/editorial | OPEN |
 | 7 | asesmen, safeguarding, pilot, revisi | OPEN |
@@ -188,3 +188,11 @@ Seluruh produksi contoh QJ3-P001–P040 wajib mengikuti [MAT-QJ3-REV-001](../../
 ## 16. Koreksi DEC-CUR-018
 
 QJ3-MASTER v0.4.0 pada bagian P001–P020 dinyatakan superseded. Urutan sukun tidak lagi berdasarkan harakat sebelum sukun atau pembagian posisi semata, tetapi berdasarkan huruf yang menyandang sukun dan kesulitan artikulasinya. Istilah hukum nun/mim sukun tidak muncul pada Jilid 3 tahap ini. Contoh dua kata bertanwin atau bernun/mim sukun yang memerlukan hukum pertemuan ditunda.
+
+
+## 17. Regenerasi B01B
+
+- [QJ3-B01B P001–P005](pages/QJ3-B01B-Regenerasi-P001-P005.md): 120 kata tunggal sesuai urutan مْ، لْ، فْ، كْ، سْ/شْ.
+- Komposisi: 60 kata tiga huruf + 60 kata empat huruf.
+- Audit awal: 0 frasa dua kata, 0 tasydid, 0 alif-lam, 0 sukun qalqalah.
+- Status tetap COMPLETE-DRAFT; belum SIAP UJI/CETAK sebelum tashih ahli.
