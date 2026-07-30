@@ -2,7 +2,7 @@
 
 **Kode:** QJ3-MASTER  
 **Produk:** Buku QURBATA Jilid 3  
-**Versi:** 1.0.6-draft  
+**Versi:** 1.0.7-draft  
 **Status:** Draf Terkendali — Belum Disetujui  
 **Tanggal:** 30 Juli 2026  
 **Jumlah Halaman Materi:** 40  
@@ -491,3 +491,23 @@ Produksi frasa dikendalikan [REG-QJ3-FRQ-001](../../curriculum/REG-QJ3-FRQ-001-R
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 1.0.6-draft | 30 Juli 2026 | Mengikat normalisasi P021–P025 dan dua panel frasa Qurani autentik kandidat tanpa mengurangi 24 kotak materi |
+
+
+## 50. Audit Tahap II — Normalisasi P026–P030
+
+[AUD-QJ3-007](../../audit/AUD-QJ3-007-Normalisasi-P026-P030.md) dan [data item P026–P030](../../data/jilid-3/QJ3-ITEMS-P026-P030.csv) menetapkan:
+
+- 120/120 kotak telah dinormalisasi menjadi Item-ID dan lulus pemeriksaan struktural awal;
+- 88 item qamariyah teridentifikasi; seluruh huruf setelah `اَلْ` termasuk keluarga qamariyah yang ditetapkan;
+- 0 item multi-kata, selisih hitung huruf, huruf non-qamariyah setelah ال, lam sukun hilang, tasydid, sukun qalqalah, atau campuran rasm `ٱلْ` di kotak pedagogis;
+- notasi `اَلْ` diperlakukan sebagai lapisan pedagogis posisi mulai dan belum menjadi rasm mushaf final;
+- variasi `اَلْفَمُ/اَلْفَمَ/اَلْفَمِ` dihitung sebagai tiga latihan, tetapi satu lema;
+- frasa baru belum diaktifkan karena gate P026–P030 masih membatasi alif-lam pada posisi mulai; aktivasi frasa dimulai P033;
+- checkpoint `طس` tersedia di luar 24 kotak, tidak mengulang `طه`, dan tetap menunggu tashih;
+- seluruh item tetap AR-CANDIDATE/PENDING dan belum SIAP UJI/CETAK.
+
+## 51. Riwayat Audit Tahap II P026–P030
+
+| Versi | Tanggal | Ringkasan |
+|---|---|---|
+| 1.0.7-draft | 30 Juli 2026 | Mengikat normalisasi P026–P030; 88 item qamariyah terverifikasi dan checkpoint طس tidak mengulang طه |
