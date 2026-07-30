@@ -8,7 +8,7 @@
 **Jumlah Halaman Materi:** 40  
 **Model:** 1 halaman = 1 pertemuan; maksimal 2 bila prasyarat dikuasai  
 **Pemilik Akademik/Penyusun:** Aris Liswanto  
-**Pengendali:** DEC-CUR-010, DEC-CUR-015, DEC-CUR-016, ANA-QUR-SUK-001, QC-000, QCF-QUR-001, QCF-QUR-002, RCP-QUR-001  
+**Pengendali:** DEC-CUR-010, DEC-CUR-015, DEC-CUR-016, DEC-CUR-017, MAT-QJ3-REV-001, ANA-QUR-SUK-001, QC-000, QCF-QUR-001, QCF-QUR-002, RCP-QUR-001  
 **Prasyarat:** Mastery Gate QURBATA Jilid 2  
 **Pemeriksa/Pengesah:** Menunggu  
 
@@ -111,7 +111,7 @@ Integrasi tidak boleh mengurangi jumlah halaman materi atau menggantikan latihan
 |---:|---|---|
 | 1 | struktur 40 halaman materi | COMPLETE-DRAFT |
 | 2 | dependency sukun → lam sukun → qamariyah | COMPLETE-DRAFT |
-| 3 | distribusi keluarga bentuk DEC-CUR-010 | OPEN-AUDIT |
+| 3 | distribusi keluarga bentuk dan murojaah MAT-QJ3-REV-001 | COMPLETE-DRAFT; contoh belum diaudit |
 | 4 | isi nyata dan whitelist 40 halaman | OPEN |
 | 5 | audit sumber, ortografi, distribusi, retensi | OPEN |
 | 6 | review ahli/akademik/editorial | OPEN |
@@ -121,7 +121,7 @@ Integrasi tidak boleh mengurangi jumlah halaman materi atau menggantikan latihan
 ## 8. Urutan Produksi
 
 1. tetapkan LO/KO dan whitelist kumulatif P001–P040;
-2. buat matriks distribusi keluarga bentuk dan pengulangan N+1/N+2/N+4/N+8;
+2. gunakan MAT-QJ3-REV-001 untuk distribusi keluarga bentuk dan pengulangan N+1/N+2/N+4/N+8;
 3. pilih contoh berdasarkan prioritas sumber dan tashih setiap Source-ID;
 4. produksi empat batch materi P001–P010, P011–P020, P021–P030, P031–P040;
 5. audit larangan sukun qalqalah, materi prematur, kompleksitas, retensi, dan transfer;
@@ -170,3 +170,8 @@ Audit setiap halaman harus membuktikan bahwa latihan review tetap menambah kelan
 | Versi | Tanggal | Ringkasan |
 |---|---|---|
 | 0.4.0-id | 30 Juli 2026 | Murojaah dibatasi pada kompetensi aktif tanpa regresi; menambahkan checkpoint awā’il as-suwar pada P020/P040 |
+
+
+## 14. Kendali Pemerataan
+
+Seluruh produksi contoh QJ3-P001–P040 wajib mengikuti [MAT-QJ3-REV-001](../../curriculum/MAT-QJ3-REV-001-Matriks-Pemerataan-Murojaah-Jilid-3.md). Matriks tersebut melarang regresi ke huruf tunggal/dua huruf dan mengendalikan 960 kotak berdasarkan kompetensi aktif.
