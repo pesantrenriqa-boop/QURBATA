@@ -14,7 +14,8 @@ Prinsip:
 - materi baru dan murojaah seimbang,
 - contoh dipilih berdasarkan fungsi pedagogis,
 - contoh Qur'an digunakan sesuai kesiapan santri,
-- tidak memasukkan hukum bacaan sebelum tangganya.
+- tidak memasukkan hukum bacaan sebelum tangganya,
+- setiap contoh harus memiliki fungsi (materi baru, transfer, murojaah, atau evaluasi).
 
 ## Struktur Halaman
 
@@ -80,6 +81,26 @@ Target:
 - kematangan membaca,
 - persiapan talaqqi lanjutan,
 - kesiapan menuju standar tartil/sanad sesuai program.
+
+---
+
+# Alur Produksi Buku
+
+Tahap 1:
+Master Curriculum Map disetujui.
+
+Tahap 2:
+Blueprint setiap jilid diturunkan menjadi halaman 1-40.
+
+Tahap 3:
+Setiap halaman dibuat dalam format 24 kotak materi.
+
+Tahap 4:
+Dilakukan audit:
+- tidak ada pengulangan tanpa fungsi,
+- tidak ada materi tajwid terlalu dini,
+- contoh sesuai tangga kompetensi,
+- siap layout buku.
 
 ---
 
