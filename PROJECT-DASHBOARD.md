@@ -10,74 +10,58 @@
 
 | Area | Target | Selesai | Progres | Status |
 |---|---:|---:|---:|---|
-| Penemuan sumber Jilid 1 | 40 halaman | 40 | 100% | SOURCE FOUND |
-| Register/audit sumber Jilid 1 | 40 halaman | 40 | 100% | RECOVERY STATUS COMPLETE |
-| Penemuan sumber Jilid 2 | 40 halaman | 40 | 100% | SOURCE COMPLETE |
-| Register recovery terintegrasi Jilid 2 | 40 halaman | 40 | 100% | P001–P020 COMPLETE-DRAFT; P021–P040 STAGED-BLOCKED |
-| Salinan isi penuh Jilid 2 ke jalur kanonik/recovery | 40 halaman | 24 | 60% | P021–P024 RECOVERED; P025–P040 NEXT |
-| Penemuan sumber Jilid 3 | 40 halaman | 40 | 100% | SOURCE FOUND |
-| Pengembalian batch Jilid 3 ke jalur resmi | 4 batch | 4 | 100% | RECOVERED-SOURCE-COMPLETE |
-| Migrasi Jilid 3 ke file per halaman | 40 halaman | 40 | 100% | P001–P040 CREATED |
-| Freeze sumber recovery Jilid 1–3 | 1 baseline | 1 | 100% | FROZEN |
-| Snapshot branch pengaman | 1 branch | 1 | 100% | ACTIVE |
+| Penemuan sumber Jilid 1 | 40 | 40 | 100% | SOURCE FOUND |
+| Register/audit sumber Jilid 1 | 40 | 40 | 100% | RECOVERY STATUS COMPLETE |
+| Penemuan sumber Jilid 2 | 40 | 40 | 100% | SOURCE COMPLETE |
+| Register recovery terintegrasi Jilid 2 | 40 | 40 | 100% | COMPLETE |
+| Salinan isi Jilid 2 ke jalur recovery | 40 | 30 | 75% | P021–P030 RECOVERED |
+| Penemuan sumber Jilid 3 | 40 | 40 | 100% | SOURCE FOUND |
+| Migrasi Jilid 3 per halaman | 40 | 40 | 100% | CREATED |
+| Freeze dan snapshot pengaman | 1 | 1 | 100% | ACTIVE |
 
-## 2. Ringkasan Persentase
+## 2. Ringkasan
 
-- **Keamanan sumber data Jilid 1–3:** 100%
+- **Keamanan sumber Jilid 1–3:** 100%
 - **Register/status recovery 120 halaman:** 100%
-- **Konsolidasi isi penuh ke jalur kanonik/recovery:** 87%
+- **Konsolidasi isi ke jalur kanonik/recovery:** 92%
 - **Audit akademik dan progression:** 33%
-- **Kesiapan pilot/cetak:** belum dinilai sebagai progres recovery
+- **Kesiapan pilot/cetak:** belum dinyatakan.
 
 ## 3. Status per Jilid
 
 ### Jilid 1
-
-- Struktur 40 halaman tersedia pada `books/jilid-1/`.
-- Recovery register telah memetakan P001–P040.
-- Konflik pemerataan mutlak, 50:50, dan 60:40 dipertahankan sampai keputusan final.
-
-**Progres register recovery Jilid 1: 100%.**  
-**Status akademik:** belum siap cetak.
+Register P001–P040 lengkap. Konflik kebijakan dan gate ahli masih terbuka.
 
 ### Jilid 2
+- P001–P020: `COMPLETE-DRAFT`.
+- P021–P024: salinan recovery penuh unit tanwin.
+- P025–P029: salinan recovery tangga mad alif dan transfer.
+- P030: versi revisi mad waw; baru 16 contoh terkonfirmasi dan tetap memerlukan pelengkapan 24 kotak final.
+- Seluruh P021–P030 berada di `books/jilid-2/recovery/pages/`.
 
-- Sumber 40/40 ditemukan dan seluruh halaman memiliki register recovery.
-- P001–P020 berstatus `COMPLETE-DRAFT`.
-- P021–P040 berstatus `STAGED-BLOCKED`.
-- Salinan isi penuh recovery sudah dibuat untuk `QJ2-P021.md` sampai `QJ2-P024.md` pada `books/jilid-2/recovery/pages/`.
-- Isi P021–P024 tidak lagi hanya bergantung pada folder `regenerated/`.
-
-**Progres keamanan/register Jilid 2: 100%.**  
-**Progres salinan isi penuh Jilid 2: 24/40 — 60%.**
+**Progres salinan isi Jilid 2: 30/40 — 75%.**
 
 ### Jilid 3
+Empat batch sumber dan file per halaman P001–P040 telah diamankan. Kekosongan sumber tetap ditandai, tidak diisi dengan materi rekaan.
 
-- Empat batch sumber dan file kanonik P001–P040 telah diamankan.
-- Halaman yang sumbernya tidak lengkap tetap ditandai `RECOVERED-SOURCE-INCOMPLETE`; tidak ada materi rekaan.
-
-**Progres keamanan dan migrasi Jilid 3: 100%.**
-
-## 4. Gate Definisi Recovery 100%
+## 4. Gate Recovery 100%
 
 - [x] seluruh sumber utama ditemukan;
 - [x] commit asal dicatat;
-- [x] baseline freeze dan snapshot branch dibuat;
-- [x] P001–P040 Jilid 1 memiliki status recovery;
-- [x] P001–P040 Jilid 2 memiliki register recovery;
-- [x] P001–P040 Jilid 3 memiliki file per halaman;
-- [ ] P021–P040 Jilid 2 mempunyai salinan isi penuh di jalur recovery;
+- [x] baseline freeze dan snapshot dibuat;
+- [x] seluruh 120 halaman memiliki status recovery;
+- [x] Jilid 3 P001–P040 memiliki file per halaman;
+- [ ] Jilid 2 P031–P040 memiliki salinan isi pada jalur recovery;
 - [ ] tidak ada sumber staging/batch sebagai satu-satunya salinan;
-- [ ] manifest akhir dan freeze final diperbarui;
-- [ ] checksum/commit baseline final dicatat.
+- [ ] manifest akhir, freeze final, dan commit baseline final dicatat.
 
 ## 5. Urutan Eksekusi Aktif
 
-1. Mengekstrak isi penuh Jilid 2 P025–P040.
-2. Membandingkan P006–P010 Jilid 3 dengan commit lanjutan `f9f9677a6a5388afa740158b969520dc61fbb7a0`.
-3. Menjalankan audit duplikasi dan progression lintas Jilid 1–3.
-4. Memperbarui freeze final dan snapshot branch.
-5. Setelah recovery 100%, melanjutkan penyusunan halaman dan jilid berikutnya.
+1. Ekstraksi Jilid 2 P031–P040.
+2. Bandingkan Jilid 3 P006–P010 dengan commit lanjutan.
+3. Audit duplikasi dan progression lintas Jilid 1–3.
+4. Freeze final, snapshot, dan baseline commit.
+5. Lanjut penyusunan halaman dan jilid berikutnya.
 
 ## 6. Dokumen Kendali
 
@@ -86,6 +70,5 @@
 - `books/jilid-1/RECOVERY-SOURCES.md`
 - `books/jilid-2/RECOVERY-SOURCES.md`
 - `books/jilid-2/recovery/QJ2-RECOVERED-SOURCE-P021-P040.md`
-- `books/jilid-2/recovery/pages/QJ2-P021.md` sampai `QJ2-P024.md`
+- `books/jilid-2/recovery/pages/QJ2-P021.md` sampai `QJ2-P030.md`
 - `books/jilid-3/RECOVERY-SOURCES.md`
-- `books/jilid-3/recovery/README.md`
