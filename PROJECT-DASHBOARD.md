@@ -16,15 +16,15 @@
 | Integrasi kanonik Jilid 2 | 40 halaman | 20 | 50% | 20 COMPLETE-DRAFT; 20 STAGED-BLOCKED |
 | Penemuan sumber Jilid 3 | 40 halaman | 40 | 100% | SOURCE FOUND |
 | Pengembalian batch Jilid 3 ke jalur resmi | 4 batch | 4 | 100% | RECOVERED-SOURCE-COMPLETE |
-| Migrasi Jilid 3 ke file per halaman | 40 halaman | 0 | 0% | NEXT PRIORITY |
+| Migrasi Jilid 3 ke file per halaman | 40 halaman | 10 | 25% | P001-P010 CREATED |
 | Freeze sumber recovery Jilid 1–3 | 1 baseline | 1 | 100% | FROZEN |
 | Snapshot branch pengaman | 1 branch | 1 | 100% | ACTIVE |
 
 ## 2. Ringkasan Persentase
 
 - **Keamanan sumber data Jilid 1–3:** 100%
-- **Pengembalian data ke jalur resmi proyek:** 83%
-- **Konsolidasi menjadi satu file kanonik per halaman:** 50%
+- **Pengembalian data ke jalur resmi proyek:** 88%
+- **Konsolidasi menjadi satu file kanonik per halaman:** 58%
 - **Audit akademik dan progression:** 17%
 - **Kesiapan pilot/cetak:** belum dinilai sebagai progres recovery
 
@@ -62,13 +62,14 @@ Empat batch telah dikembalikan ke:
 - `books/jilid-3/recovery/QJ3-RECOVERED-SOURCE-P021-P030.md`
 - `books/jilid-3/recovery/QJ3-RECOVERED-SOURCE-P031-P040.md`
 
-Prioritas berikutnya adalah migrasi tanpa kehilangan isi menjadi:
+File per halaman yang telah dibuat:
 
-- `books/jilid-3/pages/QJ3-P001.md`
-- hingga `books/jilid-3/pages/QJ3-P040.md`
+- `books/jilid-3/pages/QJ3-P001.md` sampai `QJ3-P010.md`.
+- P001–P005 memuat contoh asli yang ditemukan.
+- P006–P010 diberi status `RECOVERED-SOURCE-INCOMPLETE`, karena batch awal tidak memuat contoh khusus dan harus dibandingkan dengan commit lanjutan `f9f9677a6a5388afa740158b969520dc61fbb7a0`.
 
 **Progres keamanan sumber Jilid 3: 100%.**  
-**Progres migrasi per halaman Jilid 3: 0%.**
+**Progres migrasi per halaman Jilid 3: 25%.**
 
 ## 4. Gate Definisi Recovery 100%
 
@@ -87,12 +88,14 @@ Recovery Jilid 1–3 hanya dinyatakan 100% apabila:
 
 ## 5. Urutan Eksekusi Aktif
 
-1. Menyelesaikan register Jilid 1 P021–P040.
-2. Mengintegrasikan Jilid 2 P021–P040 sebagai sumber `STAGED-BLOCKED` yang aman.
-3. Memecah recovery Jilid 3 menjadi QJ3-P001–P040 tanpa mengubah isi sumber.
-4. Menjalankan audit duplikasi dan progression lintas Jilid 1–3.
-5. Memperbarui freeze final dan snapshot branch.
-6. Setelah recovery 100%, melanjutkan penyusunan halaman dan jilid berikutnya.
+1. Melanjutkan migrasi Jilid 3 P011–P020.
+2. Membandingkan P006–P010 dengan versi lanjutan commit `f9f9677a6a5388afa740158b969520dc61fbb7a0`.
+3. Menyelesaikan register Jilid 1 P021–P040.
+4. Mengintegrasikan Jilid 2 P021–P040 sebagai sumber `STAGED-BLOCKED` yang aman.
+5. Melanjutkan migrasi Jilid 3 P021–P040.
+6. Menjalankan audit duplikasi dan progression lintas Jilid 1–3.
+7. Memperbarui freeze final dan snapshot branch.
+8. Setelah recovery 100%, melanjutkan penyusunan halaman dan jilid berikutnya.
 
 ## 6. Dokumen Kendali
 
