@@ -28,81 +28,37 @@
 - **Audit akademik dan progression:** 17%
 - **Kesiapan pilot/cetak:** belum dinilai sebagai progres recovery
 
-Persentase keamanan sumber berarti commit dan file sumber utama telah ditemukan serta dicatat. Persentase tersebut tidak berarti seluruh halaman sudah disahkan secara akademik atau siap cetak.
-
 ## 3. Status per Jilid
 
 ### Jilid 1
-
-- Struktur 40 halaman tersedia pada `books/jilid-1/`.
-- Halaman kanonik tersedia pada `books/jilid-1/pages/`.
+- Struktur 40 halaman tersedia.
 - Recovery register telah memetakan P001–P020.
-- Konflik pemerataan mutlak, 50:50, dan 60:40 dipertahankan sampai keputusan final.
 - Prioritas berikutnya: audit dan register P021–P040.
 
-**Progres recovery terkendali Jilid 1: 50%.**
-
 ### Jilid 2
-
 - Sumber 40/40 ditemukan.
-- P001–P020 berstatus `COMPLETE-DRAFT`.
-- P021–P040 berstatus `STAGED-BLOCKED` dan tetap diamankan.
-- Contoh kanonik sudah ditemukan pada `books/jilid-2/pages/`.
-- Prioritas berikutnya: menyalin sumber terblokir ke jalur recovery resmi tanpa mengaktifkannya sebagai materi cetak.
-
-**Progres keamanan sumber Jilid 2: 100%.**  
-**Progres konsolidasi kanonik Jilid 2: 50%.**
+- P001–P020 `COMPLETE-DRAFT`; P021–P040 `STAGED-BLOCKED`.
 
 ### Jilid 3
+- Empat batch sumber telah dikembalikan.
+- File per halaman tersedia dari `QJ3-P001.md` sampai `QJ3-P030.md`.
+- P006–P010, P027, dan P029 tetap `RECOVERED-SOURCE-INCOMPLETE` karena sumber tidak memberi contoh khusus terpisah.
 
-Empat batch telah dikembalikan ke:
-
-- `books/jilid-3/recovery/QJ3-RECOVERED-SOURCE-P001-P010.md`
-- `books/jilid-3/recovery/QJ3-RECOVERED-SOURCE-P011-P020.md`
-- `books/jilid-3/recovery/QJ3-RECOVERED-SOURCE-P021-P030.md`
-- `books/jilid-3/recovery/QJ3-RECOVERED-SOURCE-P031-P040.md`
-
-File per halaman yang telah dibuat:
-
-- `books/jilid-3/pages/QJ3-P001.md` sampai `QJ3-P030.md`.
-- P001–P005, P011–P026, P028, dan P030 memuat contoh atau kompetensi yang ditemukan.
-- P006–P010, P027, dan P029 diberi status `RECOVERED-SOURCE-INCOMPLETE` karena sumber batch tidak memuat contoh khusus terpisah.
-
-**Progres keamanan sumber Jilid 3: 100%.**  
 **Progres migrasi per halaman Jilid 3: 75%.**
 
-## 4. Gate Definisi Recovery 100%
-
-Recovery Jilid 1–3 hanya dinyatakan 100% apabila:
-
+## 4. Gate Recovery 100%
 - [x] seluruh sumber utama ditemukan;
 - [x] commit asal dicatat;
-- [x] baseline freeze dibuat;
-- [x] snapshot branch pengaman dibuat;
-- [ ] P001–P040 Jilid 1 memiliki status recovery per halaman;
-- [ ] P001–P040 Jilid 2 berada pada jalur kanonik/recovery resmi;
-- [ ] P001–P040 Jilid 3 memiliki file kanonik per halaman;
-- [ ] tidak ada sumber staging/batch sebagai satu-satunya salinan;
-- [ ] manifest akhir dan freeze final diperbarui;
-- [ ] checksum/commit baseline final dicatat.
+- [x] baseline freeze dan snapshot dibuat;
+- [ ] Jilid 1 P001–P040 memiliki status recovery;
+- [ ] Jilid 2 P001–P040 berada pada jalur resmi;
+- [ ] Jilid 3 P001–P040 memiliki file per halaman;
+- [ ] manifest akhir dan freeze final diperbarui.
 
 ## 5. Urutan Eksekusi Aktif
-
-1. Melanjutkan migrasi Jilid 3 P031–P040.
-2. Membandingkan P006–P010 dengan versi lanjutan commit `f9f9677a6a5388afa740158b969520dc61fbb7a0`.
-3. Menyelesaikan register Jilid 1 P021–P040.
-4. Mengintegrasikan Jilid 2 P021–P040 sebagai sumber `STAGED-BLOCKED` yang aman.
-5. Menjalankan audit duplikasi dan progression lintas Jilid 1–3.
-6. Memperbarui freeze final dan snapshot branch.
-7. Setelah recovery 100%, melanjutkan penyusunan halaman dan jilid berikutnya.
-
-## 6. Dokumen Kendali
-
-- `books/QURBATA-JILID-1-3-RECOVERY-FREEZE.md`
-- `books/RECOVERY-CONSOLIDATION-INDEX-JILID-1-3.md`
-- `books/jilid-1/RECOVERY-SOURCES.md`
-- `books/jilid-2/RECOVERY-SOURCES.md`
-- `books/jilid-3/RECOVERY-SOURCES.md`
-- `books/jilid-3/recovery/README.md`
-
-Dashboard ini harus diperbarui setelah setiap batch recovery atau perubahan status halaman.
+1. Migrasi Jilid 3 P031–P040.
+2. Bandingkan P006–P010 dengan commit lanjutan `f9f9677a6a5388afa740158b969520dc61fbb7a0`.
+3. Selesaikan register Jilid 1 P021–P040.
+4. Integrasikan Jilid 2 P021–P040.
+5. Audit duplikasi dan progression.
+6. Freeze final.
