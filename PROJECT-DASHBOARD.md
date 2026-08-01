@@ -11,7 +11,7 @@
 | Area | Target | Selesai | Progres | Status |
 |---|---:|---:|---:|---|
 | Penemuan sumber Jilid 1 | 40 halaman | 40 | 100% | SOURCE FOUND |
-| Register/audit sumber Jilid 1 | 40 halaman | 20 | 50% | IN PROGRESS |
+| Register/audit sumber Jilid 1 | 40 halaman | 40 | 100% | RECOVERY STATUS COMPLETE |
 | Penemuan sumber Jilid 2 | 40 halaman | 40 | 100% | SOURCE COMPLETE |
 | Integrasi kanonik Jilid 2 | 40 halaman | 20 | 50% | 20 COMPLETE-DRAFT; 20 STAGED-BLOCKED |
 | Penemuan sumber Jilid 3 | 40 halaman | 40 | 100% | SOURCE FOUND |
@@ -24,8 +24,8 @@
 
 - **Keamanan sumber data Jilid 1–3:** 100%
 - **Pengembalian data ke jalur resmi proyek:** 100%
-- **Konsolidasi menjadi satu file kanonik per halaman:** 75%
-- **Audit akademik dan progression:** 17%
+- **Konsolidasi menjadi satu file kanonik/status per halaman:** 83%
+- **Audit akademik dan progression:** 33%
 - **Kesiapan pilot/cetak:** belum dinilai sebagai progres recovery
 
 Persentase keamanan sumber berarti commit dan file sumber utama telah ditemukan serta dicatat. Persentase tersebut tidak berarti seluruh halaman sudah disahkan secara akademik atau siap cetak.
@@ -36,11 +36,12 @@ Persentase keamanan sumber berarti commit dan file sumber utama telah ditemukan 
 
 - Struktur 40 halaman tersedia pada `books/jilid-1/`.
 - Halaman kanonik tersedia pada `books/jilid-1/pages/`.
-- Recovery register telah memetakan P001–P020.
+- Recovery register telah memetakan P001–P040.
 - Konflik pemerataan mutlak, 50:50, dan 60:40 dipertahankan sampai keputusan final.
-- Prioritas berikutnya: audit dan register P021–P040.
+- Unit Bahasa Arab, hafalan, akhlak, evaluasi, simulasi, dan checkpoint nama huruf telah dipisahkan statusnya dari halaman latihan baca.
 
-**Progres recovery terkendali Jilid 1: 50%.**
+**Progres register recovery Jilid 1: 100%.**  
+**Status akademik:** masih memiliki konflik kebijakan dan gate ahli; belum siap cetak.
 
 ### Jilid 2
 
@@ -73,7 +74,7 @@ Recovery Jilid 1–3 hanya dinyatakan 100% apabila:
 - [x] commit asal dicatat;
 - [x] baseline freeze dibuat;
 - [x] snapshot branch pengaman dibuat;
-- [ ] P001–P040 Jilid 1 memiliki status recovery per halaman;
+- [x] P001–P040 Jilid 1 memiliki status recovery per halaman;
 - [ ] P001–P040 Jilid 2 berada pada jalur kanonik/recovery resmi;
 - [x] P001–P040 Jilid 3 memiliki file kanonik per halaman;
 - [ ] tidak ada sumber staging/batch sebagai satu-satunya salinan;
@@ -82,12 +83,11 @@ Recovery Jilid 1–3 hanya dinyatakan 100% apabila:
 
 ## 5. Urutan Eksekusi Aktif
 
-1. Menyelesaikan register Jilid 1 P021–P040.
-2. Mengintegrasikan Jilid 2 P021–P040 sebagai sumber `STAGED-BLOCKED` yang aman.
-3. Membandingkan P006–P010 Jilid 3 dengan versi lanjutan commit `f9f9677a6a5388afa740158b969520dc61fbb7a0`.
-4. Menjalankan audit duplikasi dan progression lintas Jilid 1–3.
-5. Memperbarui freeze final dan snapshot branch.
-6. Setelah recovery 100%, melanjutkan penyusunan halaman dan jilid berikutnya.
+1. Mengintegrasikan Jilid 2 P021–P040 sebagai sumber `STAGED-BLOCKED` yang aman.
+2. Membandingkan P006–P010 Jilid 3 dengan versi lanjutan commit `f9f9677a6a5388afa740158b969520dc61fbb7a0`.
+3. Menjalankan audit duplikasi dan progression lintas Jilid 1–3.
+4. Memperbarui freeze final dan snapshot branch.
+5. Setelah recovery 100%, melanjutkan penyusunan halaman dan jilid berikutnya.
 
 ## 6. Dokumen Kendali
 
