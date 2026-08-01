@@ -31,7 +31,19 @@
 | P018 | FOUND-HAFALAN-CANDIDATE-BLOCKED | Unit Hafalan 1, kandidat Al-Fatihah ayat 1–3, berstatus `APPROVED-CANDIDATE-INACTIVE`. Aturan 24 tangga/token tidak berlaku. Belum boleh aktif sebelum validasi qiraah, rasm, tajwid, waqaf-ibtida’, pembagian potongan, model audio, asesmen, dan safeguarding. |
 | P019 | FOUND-POLICY-CONFLICT | Halaman kasrah ujung lidah. Perlu audit distribusi kasrah baru versus review kasrah/fathah sebelumnya serta verifikasi whitelist. |
 | P020 | FOUND-ASSESSMENT-WITH-GATE | Evaluasi fathah–kasrah dan checkpoint lisan nama huruf. Tidak boleh mengenalkan materi baca baru; panel nama huruf harus dipisahkan dari skor kemampuan membaca. |
-| P021–P040 | FOUND-UNASSESSED | Verifikasi isi contoh satu per satu terhadap master, whitelist, progression, dan versi terakhir yang tidak superseded/invalid. |
+| P021–P023 | FOUND-CANONICAL-WITH-GATE | Penyelesaian akuisisi kasrah: huruf tebal, Fa–Lam, serta Mim–Ya. File kanonik tersedia; audit harus memastikan hanya fathah–kasrah yang sah, distribusi review kumulatif, dan tidak ada dhammah atau materi lanjut. |
+| P024–P025 | FOUND-INTEGRATION-REVIEW | Integrasi seluruh kasrah dan kontras fathah–kasrah. Tidak ada keluarga huruf baru; seluruh contoh harus berasal dari inventaris sah sebelumnya dan berfungsi sebagai penguatan. |
+| P026–P027 | FOUND-CANONICAL-WITH-GATE | Awal dhammah dan keluarga Jim/tenggorokan. Audit wajib memisahkan token dhammah baru dari review fathah–kasrah serta mencegah mad, tanwin, sukun, dan tasydid. |
+| P028 | FOUND-ARABIC-UNIT-WITH-GATE | Bahasa Arab 1 adalah unit lisan tervalidasi, bukan halaman akuisisi bacaan baru. Mufradat, Source-ID, urutan ACP, dan larangan pengulangan harus dipisahkan dari latihan baca. |
+| P029 | FOUND-CANONICAL-WITH-GATE | Dhammah keluarga Dal–Syin. File kanonik tersedia; audit progression, distribusi review, makhraj, dan shaping tetap terbuka. |
+| P030 | FOUND-ASSESSMENT-WITH-GATE | Evaluasi Tiga Harakat I. Tidak boleh mengenalkan materi baru; sampel harus berasal dari P001–P029 dan rubrik keputusan harus divalidasi. |
+| P031–P033 | FOUND-CANONICAL-WITH-GATE | Penyelesaian dhammah huruf tebal, Fa–Lam, Mim–Ya, dan hamzah mandiri. Audit whitelist, bentuk hamzah, serta review tiga harakat tetap diperlukan. |
+| P034–P035 | FOUND-INTEGRATION-REVIEW | Integrasi seluruh dhammah dan kontras tiga harakat per keluarga. Semua contoh harus berupa penguatan materi sah, bukan materi baru terselubung. |
+| P036 | FOUND-HAFALAN-CANDIDATE-BLOCKED | Hafalan 2 tersedia sebagai unit khusus. Tidak mengikuti rumus 24 tangga; teks, audio, qiraah, rasm, tajwid, waqaf-ibtida’, asesmen, dan safeguarding harus divalidasi sebelum aktif. |
+| P037 | FOUND-PRECISION-REVIEW | Ketelitian titik dan bentuk serupa. Berfungsi sebagai penguatan visual/fonetik; tidak boleh menambah hukum tajwid atau pola baca baru. |
+| P038 | FOUND-AKHLAK-UNIT-WITH-GATE | Akhlak 1 tersedia sebagai unit adab belajar Al-Qur’an. Materi lisan/visual harus dipisahkan dari target baca dan membutuhkan validasi sumber serta safeguarding. |
+| P039 | FOUND-SIMULATION-WITH-GATE | Simulasi baca mandiri menggunakan seluruh kompetensi Jilid 1. Paket simulasi harus berasal dari whitelist tiga harakat dan tidak boleh mengandung unsur Jilid 2. |
+| P040 | FOUND-FINAL-ASSESSMENT-WITH-GATE | Ujian Akhir plus checkpoint nama huruf II. Skor membaca, nama huruf, adab, dan kebutuhan remedial wajib dicatat terpisah; tidak ada materi baru. |
 
 ## Catatan Audit P002
 
@@ -63,11 +75,18 @@ Audit distribusi draf tidak otomatis menjadikan versi 60:40 sebagai sumber final
 - P016–P017 dan P019 merupakan tahap kasrah.
 - P018 adalah unit hafalan lisan, sehingga tidak boleh dipaksa mengikuti format 24 tangga latihan baca.
 - P020 adalah evaluasi dua harakat plus checkpoint nama huruf lisan; kedua hasil harus dicatat terpisah.
-- Segmen Bahasa Arab guru, hafalan, nama huruf, dan latihan baca harus tetap menjadi bidang data terpisah agar turunan buku/aplikasi tidak mencampur fungsi.
+
+## Catatan Batch P021–P040
+
+- P021–P025 menutup dan menguatkan seluruh kasrah.
+- P026–P035 mengakuisisi lalu mengintegrasikan dhammah.
+- P028, P036, dan P038 adalah unit khusus Bahasa Arab, hafalan, dan akhlak; ketiganya tidak boleh dipaksa mengikuti format halaman latihan baca.
+- P030 dan P040 adalah evaluasi; P039 adalah simulasi, sedangkan P037 adalah penguatan ketelitian visual.
+- Seluruh 40 halaman sekarang telah memiliki status recovery di register ini.
 
 ## Larangan
 
 - Jangan membuat contoh baru untuk menggantikan isi recovery sebelum audit selesai.
 - Jangan memakai file PDF/slide sebagai sumber mandiri.
 - Jangan memilih versi hanya berdasarkan tanggal commit; status superseded, keputusan kurikulum, whitelist, dan konsistensi lintas halaman lebih tinggi prioritasnya.
-- Jangan menyatakan Jilid 1 selesai recovery hanya berdasarkan keberadaan struktur 40 halaman.
+- Jangan menyatakan Jilid 1 siap cetak hanya karena register recovery telah mencapai 40/40.
