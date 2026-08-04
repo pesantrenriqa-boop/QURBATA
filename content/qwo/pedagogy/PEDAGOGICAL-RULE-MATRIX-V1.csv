@@ -1,0 +1,18 @@
+CompetencyID,AllowedObjectTypes,AllowedBaseLetters,AllowedMarks,ForbiddenMarks,MaxBaseLetters,RequireConnected,RequireNonConnector,AllowHamzaForms,AllowMadd,AllowTanwin,AllowSukun,AllowShadda,AllowAlifLam,AllowTaMarbuta,AllowAlifMaqsura,Notes
+C0001,LETTER,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱى,َُِ,ًٌٍّْٰٓ,1,ANY,ANY,YES,NO,NO,NO,NO,NO,NO,NO,Huruf tunggal hanya tiga harakat pendek
+C0002,LETTER,ابتثجحخدذرزسشصضطظعغفقكلمنهوي,َ,ًٌٍّْٰٓ,1,ANY,ANY,NO,NO,NO,NO,NO,NO,NO,NO,Fathah huruf tunggal
+C0003,LETTER,ابتثجحخدذرزسشصضطظعغفقكلمنهوي,ِ,ًٌٍّْٰٓ,1,ANY,ANY,NO,NO,NO,NO,NO,NO,NO,NO,Kasrah huruf tunggal
+C0004,LETTER,ابتثجحخدذرزسشصضطظعغفقكلمنهوي,ُ,ًٌٍّْٰٓ,1,ANY,ANY,NO,NO,NO,NO,NO,NO,NO,NO,Dhammah huruf tunggal
+C0005,WORD_FRAGMENT,ابتثجحخدذرزسشصضطظعغفقكلمنهوي,َُِ,ًٌٍّْٰٓ,2,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,Dua huruf tidak tersambung
+C0006,WORD_FRAGMENT,ابتثجحخدذرزسشصضطظعغفقكلمنهوي,َُِ,ًٌٍّْٰٓ,2,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Dua huruf tersambung
+C0007,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهوي,َُِ,ًٌٍّْٰٓ,3,ANY,ANY,NO,NO,NO,NO,NO,NO,NO,NO,Tiga huruf sederhana
+C0014,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهوي,َُِْٰ,ًٌٍّٓ,8,ANY,ANY,NO,YES,NO,YES,NO,YES,YES,YES,Mad alif
+C0015,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهوي,َُِْ,ًٌٍّٰٓ,8,ANY,ANY,NO,YES,NO,YES,NO,YES,YES,YES,Mad ya
+C0016,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهوي,َُِْ,ًٌٍّٰٓ,8,ANY,ANY,NO,YES,NO,YES,NO,YES,YES,YES,Mad waw
+C0017,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهوي,ًَُِ,ٌٍّْٰٓ,8,ANY,ANY,NO,YES,YES,YES,YES,YES,YES,YES,Tanwin fathah
+C0018,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهوي,ٍَُِ,ًٌّْٰٓ,8,ANY,ANY,NO,YES,YES,YES,YES,YES,YES,YES,Tanwin kasrah
+C0019,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهوي,ٌَُِ,ًٍّْٰٓ,8,ANY,ANY,NO,YES,YES,YES,YES,YES,YES,YES,Tanwin dhammah
+C0020,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهوي,َُِْ,ًٌٍّٰٓ,8,ANY,ANY,NO,YES,NO,YES,NO,YES,YES,YES,Sukun dasar
+C0024,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهوي,َُِّْ,ًٌٍٰٓ,8,ANY,ANY,NO,YES,NO,YES,YES,YES,YES,YES,Tasydid dasar
+C0028,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآ,َُِْ,ًٌٍّٰٓ,8,ANY,ANY,YES,YES,NO,YES,NO,YES,YES,YES,Hamzah qatha
+C0030,WORD,اللهٱ,َُِّْٰ,ًٌٍٓ,8,ANY,ANY,YES,YES,NO,YES,YES,YES,NO,NO,Lafzul Jalalah dasar
