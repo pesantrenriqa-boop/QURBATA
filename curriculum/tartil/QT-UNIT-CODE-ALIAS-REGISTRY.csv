@@ -1,0 +1,24 @@
+LegacyCode,CanonicalCode,Disposition,Notes
+QT-U-HURUF,QT-UK-001,DEPRECATED_ALIAS,Huruf dan fathah dasar; rincian keluarga huruf tetap memakai QT-UK-002 sampai QT-UK-007
+QT-U-FATHAH,QT-UK-001,DEPRECATED_ALIAS,Fathah dasar
+QT-U-FATHAH-DASAR,QT-UK-001,DEPRECATED_ALIAS,Fathah dasar
+QT-U-SAMBUNG,QT-UK-009,DEPRECATED_ALIAS,Tiga huruf sambung; gunakan QT-UK-008 untuk dua huruf
+QT-U-HARAKAT,QT-UK-012;QT-UK-013,REQUIRES_REVIEW,Label terlalu umum dan harus dipecah menurut kasrah atau dhammah
+QT-U-KASRAH,QT-UK-012,DEPRECATED_ALIAS,Kasrah pada kata tersambung
+QT-U-DHAMMAH,QT-UK-013,DEPRECATED_ALIAS,Dhammah pada kata tersambung
+QT-U-DHAMMAH-WAW,QT-UK-013,DEPRECATED_ALIAS,Bukan mad wawu apabila wawu tetap berharakat
+QT-U-MAD-ALIF,QT-UK-011,DEPRECATED_ALIAS,Mad fathah dengan alif
+QT-U-MAD-YA,QT-UK-014,DEPRECATED_ALIAS,Mad ya sukun
+QT-U-MAD-WAW,QT-UK-015,DEPRECATED_ALIAS,Mad wawu sukun
+QT-U-SUKUN,QT-UK-031,REQUIRES_REVIEW,Sukun wajib dipetakan per kelompok huruf; QT-UK-031 hanya untuk huruf mudah nonqalqalah
+QT-U-TANWIN,QT-UK-019;QT-UK-020,REQUIRES_REVIEW,Harus dibedakan tanwin fathah dari kasrah atau dhammah
+QT-U-TANWIN-FATHAH,QT-UK-019,DEPRECATED_ALIAS,Tanwin fathah
+QT-U-TANWIN-KASRAH,QT-UK-020,DEPRECATED_ALIAS,Tanwin kasrah
+QT-U-TANWIN-DHAMMAH,QT-UK-020,DEPRECATED_ALIAS,Tanwin dhammah
+QT-U-SYADDAH,QT-UK-023,DEPRECATED_ALIAS,Ejaan kanonik metadata memakai tasydid
+QT-U-TASYDID,QT-UK-023,DEPRECATED_ALIAS,Tasydid dasar
+QT-U-LAM,QT-UK-021,REQUIRES_REVIEW,Label terlalu umum; periksa apakah yang dimaksud alif-lam
+QT-U-ALIF-LAM,QT-UK-021,DEPRECATED_ALIAS,Alif-lam bertahap
+QT-U-LAM-TASYDID,QT-UK-034,DEPRECATED_ALIAS,Kombinasi alif-lam dan tasydid
+QT-U-ALIF-MAQSURAH,QT-UK-032,DEPRECATED_ALIAS,Alif maqṣūrah sebagai pemanjang fathah
+QT-U-WAW-ATHAF,QT-UK-033,DEPRECATED_ALIAS,Wawu penghubung pada awal kata
