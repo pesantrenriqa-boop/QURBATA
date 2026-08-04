@@ -1,4 +1,0 @@
-QWO_ID,ArabicWord,CanonicalKey,SourceRef,TokenIndex,PrimaryCompetencyID,SecondaryCompetencyIDs,TargetCompetency,StrictFeatures,DifficultyScore,OccurrenceCount,Status
-QWO-V2-0001,صٓ,ص,38:1,1,C0005,C0013,LENGTH_1_2,LENGTH_1_2,1,1,CANDIDATE
-QWO-V2-0002,قٓ,ق,50:1,1,C0005,C0013,LENGTH_1_2,LENGTH_1_2,1,1,CANDIDATE
-QWO-V2-0003,نٓ,ن,68:1,1,C0005,C0013,LENGTH_1_2,LENGTH_1_2,1,1,CANDIDATE
