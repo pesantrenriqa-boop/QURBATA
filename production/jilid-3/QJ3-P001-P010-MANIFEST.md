@@ -1,67 +1,57 @@
 # QJ3 P001–P010 — Production Manifest
 
 **Batch:** QJ3-BATCH-001-010  
-**Status:** AUDITED-WITH-CORRECTIONS  
+**Status:** REJECTED-FOR-RECONSTRUCTION  
 **Source file:** `production/jilid-3/QJ3-P001-P010-PRODUCTION-BATCH.md`  
-**Audit:** `production/jilid-3/QJ3-P001-P010-AUDIT-V1.md`
+**Correction authority:** `docs/content/QURBATA-CORRECTION-COMPETENCY-REVIEW-NOT-EXAMPLE-REPEAT.md`
 
-## Cakupan
+## Keputusan
 
-| Halaman | Fokus | Unit utama | Jumlah kotak |
-|---|---|---|---:|
-| P001 | kata tiga huruf berharakat | QT-U-008, QT-U-009 | 24 |
-| P002 | kontras bentuk dan pola kata | QT-U-010, QT-U-011 | 24 |
-| P003 | mad fathah + alif | QT-U-012 | 24 |
-| P004 | mad kasrah + ya sukun | QT-U-013 | 24 |
-| P005 | mad dhammah + wawu sukun | QT-U-014 | 24 |
-| P006 | campuran tiga mad | QT-U-015 | 24 |
-| P007 | sukun target ringan | QT-U-016 | 24 |
-| P008 | sukun tenggorokan dan tebal | QT-U-017 | 24 |
-| P009 | kata empat–lima huruf | QT-U-018 | 24 |
-| P010 | integrasi dan evaluasi | QT-U-012–QT-U-018 | 24 |
+Batch ini tidak boleh diteruskan sebagai sumber cetak atau sumber final halaman kanonik.
 
-## Total
+## Alasan Penolakan
 
-- Halaman: 10
-- Kotak: 240
-- Kotak per halaman: 24
-- Materi baru/integrasi: 96
-- Review langsung: 71
-- Review berjarak: 53
-- Review global: 20
-- Rasio: 40% materi baru dan 60% murojaah
+1. Pengulangan dilakukan terlalu banyak pada teks contoh yang sama.
+2. Prinsip yang benar adalah mengulang kompetensi dan Unit Kompetensi dengan contoh baru.
+3. Kekayaan contoh Qur’ani belum memadai.
+4. Beberapa halaman memakai gabungan dua huruf atau suku kata sebagai filler/global review.
+5. Hal tersebut tidak sesuai tingkat Jilid 3 yang seharusnya dominan kata utuh.
+6. Pola pedagogis Iqro’ Jilid 3 belum diterjemahkan secara tepat.
 
-## Hasil audit V1
+## Status Halaman
 
-- Struktur dan rasio dinyatakan valid.
-- Progression mad dinyatakan valid.
-- Progression sukun per huruf target dinyatakan valid secara arah.
-- Satu duplikasi internal ditemukan pada P009 K11 dan wajib dikoreksi dari `يَسْمَعُ` menjadi `يَفْتَحُ`.
-- Semua drill buatan wajib diklasifikasikan sebagai `CONTROLLED_DRILL` atau `CONTROLLED_PATTERN`.
-- Kata Arab yang belum diverifikasi dari mushaf tidak boleh diberi klaim Qur’ani.
+| Halaman | Status lama | Status baru |
+|---|---|---|
+| P001 | CANONICAL-DRAFT | RECONSTRUCTION-REQUIRED |
+| P002 | CANONICAL-DRAFT | RECONSTRUCTION-REQUIRED |
+| P003 | CANONICAL-DRAFT | RECONSTRUCTION-REQUIRED |
+| P004 | CANONICAL-DRAFT | RECONSTRUCTION-REQUIRED |
+| P005 | CANONICAL-DRAFT | RECONSTRUCTION-REQUIRED |
+| P006 | CANONICAL-DRAFT | RECONSTRUCTION-REQUIRED |
+| P007 | PRODUCTION-DRAFT | STOPPED |
+| P008 | PRODUCTION-DRAFT | STOPPED |
+| P009 | PRODUCTION-DRAFT | STOPPED |
+| P010 | PRODUCTION-DRAFT | STOPPED |
 
-## Klasifikasi sumber kanonik
+## Aturan Rekonstruksi
 
-Setiap kotak wajib memiliki salah satu SourceType:
+Setiap halaman Jilid 3 yang baru harus:
 
-1. `QURAN_VERIFIED`
-2. `ARABIC_LEXICON`
-3. `CONTROLLED_DRILL`
-4. `CONTROLLED_PATTERN`
-5. `RECOVERY_SOURCE`
+- berisi 24 contoh berbeda;
+- memakai kata utuh, bukan dua huruf terpisah;
+- mengulang kompetensi dengan contoh baru;
+- memprioritaskan kata dan potongan ayat Al-Qur’an;
+- menggunakan kosakata Arab valid bila contoh Qur’ani tidak mencukupi;
+- menghindari pengulangan contoh identik antarsatu halaman dengan halaman berikutnya;
+- tetap menjaga progression materi baru dan murojaah kompetensi;
+- mencatat kode kompetensi, Unit Kompetensi, SourceType, dan status verifikasi.
 
-## Gate sebelum APPROVED
+## Tindakan Berikutnya
 
-1. Terapkan koreksi audit V1.
-2. Tambahkan SourceType untuk seluruh 240 kotak.
-3. Verifikasi mushaf untuk item berstatus `QURAN_VERIFIED`.
-4. Audit duplikasi terhadap Jilid 1–2.
-5. Migrasi ke file kanonik `books/jilid-3/pages/QJ3-P001.md` sampai `QJ3-P010.md`.
-6. Review akademik pemilik.
+1. Audit ulang prinsip progression Jilid 1–3 dari Iqro’.
+2. Susun ulang peta kompetensi Jilid 3.
+3. Buat bank contoh Qur’ani yang kaya untuk setiap Unit Kompetensi.
+4. Produksi ulang P001–P010 dari nol.
+5. Audit ulang Jilid 1 dan 2 dengan prinsip pengulangan kompetensi, bukan contoh.
 
-## Keputusan desain
-
-- Contoh recovery dipertahankan bila sesuai progression.
-- Contoh terlalu lanjut dipindahkan ke HOLD, tidak dihapus.
-- Struktur review mengikuti prinsip Iqro’: materi lama tetap hadir sejak bagian awal sampai akhir jilid.
-- Susunan, pemilihan, kode, distribusi, dan progression halaman merupakan struktur asli QURBATA.
+Batch lama tetap dipertahankan sebagai bukti proses, bukan sebagai produk.
