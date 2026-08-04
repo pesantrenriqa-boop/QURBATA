@@ -1,0 +1,43 @@
+name: QURBATA Pedagogical Engine
+
+on:
+  push:
+    branches:
+      - content/qurbata-jilid-1-8-production
+    paths:
+      - 'content/qwo/**'
+      - '.github/workflows/qurbata-pedagogical-engine.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compile Python sources
+        run: |
+          python -m compileall -q content/qwo
+
+      - name: Validate competency dependency map
+        run: |
+          python content/qwo/pedagogical/runtime/foundation_smoke_test.py --mode dependency
+
+      - name: Run pedagogical regression suite
+        run: |
+          python content/qwo/pedagogical/runtime/foundation_smoke_test.py --mode regression
+
+      - name: Run end-to-end foundation validation
+        run: |
+          python content/qwo/pedagogical/runtime/foundation_smoke_test.py --mode all
