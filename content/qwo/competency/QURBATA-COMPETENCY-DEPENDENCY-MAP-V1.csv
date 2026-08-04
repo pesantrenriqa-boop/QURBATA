@@ -1,0 +1,42 @@
+CompetencyID,CompetencyName,Category,PrerequisiteIDs,ObjectScope,Status,Notes
+C0001,Huruf hijaiyah tunggal,LETTER,,LETTER,ACTIVE,Dasar pengenalan bentuk
+C0002,Fathah huruf tunggal,HARAKAT,C0001,LETTER,ACTIVE,
+C0003,Kasrah huruf tunggal,HARAKAT,C0002,LETTER,ACTIVE,
+C0004,Dhammah huruf tunggal,HARAKAT,C0003,LETTER,ACTIVE,
+C0005,Dua huruf tidak tersambung,STRUCTURE,C0002|C0003|C0004,WORD_FRAGMENT,ACTIVE,
+C0006,Dua huruf tersambung,STRUCTURE,C0005,WORD_FRAGMENT,ACTIVE,
+C0007,Tiga huruf sederhana,STRUCTURE,C0006,WORD,ACTIVE,
+C0008,Sambungan awal,CONNECTOR,C0007,WORD,ACTIVE,
+C0009,Sambungan tengah,CONNECTOR,C0008,WORD,ACTIVE,
+C0010,Sambungan akhir,CONNECTOR,C0009,WORD,ACTIVE,
+C0011,Huruf non-connector,CONNECTOR,C0007,WORD,ACTIVE,Alif dal dzal ra zai waw dan bentuk terkait
+C0012,Kata empat huruf,STRUCTURE,C0010|C0011,WORD,ACTIVE,
+C0013,Kata lima huruf atau lebih,STRUCTURE,C0012,WORD,ACTIVE,
+C0014,Mad fathah dengan alif,MAD,C0010,WORD,ACTIVE,
+C0015,Mad kasrah dengan ya sukun,MAD,C0014,WORD,ACTIVE,
+C0016,Mad dhammah dengan waw sukun,MAD,C0015,WORD,ACTIVE,
+C0017,Tanwin fathah,TANWIN,C0012,WORD,ACTIVE,
+C0018,Tanwin kasrah,TANWIN,C0017,WORD,ACTIVE,
+C0019,Tanwin dhammah,TANWIN,C0018,WORD,ACTIVE,
+C0020,Sukun dasar,SUKUN,C0012,WORD,ACTIVE,
+C0021,Sukun hamzah,SUKUN,C0020,WORD,ACTIVE,
+C0022,Sukun ain dan ghain,SUKUN,C0020,WORD,ACTIVE,
+C0023,Sukun huruf tebal,SUKUN,C0020,WORD,ACTIVE,
+C0024,Tasydid dasar,TASYDID,C0020,WORD,ACTIVE,
+C0025,Alif lam,ARTICLE,C0012,WORD,ACTIVE,
+C0026,Ta marbuthah,ENDING,C0012,WORD,ACTIVE,
+C0027,Alif maqshurah,ENDING,C0014,WORD,ACTIVE,
+C0028,Hamzah qatha,HAMZAH,C0012,WORD,ACTIVE,
+C0029,Hamzah washal,HAMZAH,C0025,WORD,ACTIVE,
+C0030,Lafzul Jalalah bentuk dasar,SPECIAL,C0024|C0025,WORD,ACTIVE,Bab khusus
+C0031,Lafzul Jalalah berharakat,SPECIAL,C0030,WORD,ACTIVE,Dhammah fathah kasrah
+C0032,Lafzul Jalalah dengan awalan,SPECIAL,C0031,WORD,ACTIVE,Billah lillah wallahu dan bentuk Quran lain
+C0033,Frasa dua kata,PHRASE,C0013|C0014|C0020,PHRASE,ACTIVE,
+C0034,Frasa tiga sampai empat kata,PHRASE,C0033,PHRASE,ACTIVE,
+C0035,Potongan ayat pendek,AYAH_FRAGMENT,C0034|C0024|C0025,AYAH_FRAGMENT,ACTIVE,Empat sampai delapan kata
+C0036,Potongan ayat menengah,AYAH_FRAGMENT,C0035,AYAH_FRAGMENT,ACTIVE,Delapan sampai lima belas kata
+C0037,Ayat utuh pendek,FULL_AYAH,C0036,FULL_AYAH,ACTIVE,
+C0038,Ayat utuh sedang,FULL_AYAH,C0037,FULL_AYAH,ACTIVE,
+C0039,Ayat utuh panjang,FULL_AYAH,C0038,FULL_AYAH,ACTIVE,
+C0040,Waqaf dan ibtida dasar,WAQF,C0035,AYAH_FRAGMENT|FULL_AYAH,ACTIVE,
+C0041,Integrasi multi-kompetensi,INTEGRATION,C0038|C0040,FULL_AYAH,ACTIVE,
