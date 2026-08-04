@@ -51,6 +51,24 @@
 | QT-UK-029 | QT-CMP-008 | Membaca ayat panjang dengan stabil | QT-UK-028 | 7 |
 | QT-UK-030 | QT-CMP-008 | Transisi mandiri ke mushaf | QT-UK-029 | 8 |
 
+## Unit Ekstensi QWO
+
+Unit berikut melengkapi dependency yang ditemukan saat validasi korpus. Nomor unit tidak menunjukkan urutan pengajaran; urutan tetap dikendalikan oleh prasyarat dan jilid sasaran.
+
+| Kode | Induk | Unit Kompetensi | Prasyarat | Jilid sasaran |
+|---|---|---|---|---|
+| QT-UK-031 | QT-CMP-005 | Sukun dasar pada huruf mudah nonqalqalah | QT-UK-009; QT-UK-012; QT-UK-013 | 3 |
+| QT-UK-032 | QT-CMP-004 | Alif maqṣūrah sebagai pemanjang fathah | QT-UK-011; QT-UK-014 | 5–6 |
+| QT-UK-033 | QT-CMP-002 | Wawu penghubung pada awal kata | QT-UK-009; QT-UK-013 | 3–4 |
+| QT-UK-034 | QT-CMP-007 | Kombinasi alif-lam dan tasydid pada kata Qur'ani | QT-UK-021; QT-UK-023 | 5 |
+
+## Ketentuan Kode
+
+- `QT-CMP-*` adalah kompetensi inti.
+- `QT-UK-*` adalah satu-satunya kode Unit Kompetensi kanonik untuk metadata dan generator.
+- Label lama berbentuk `QT-U-*` hanya boleh berada pada registry alias dan tidak boleh ditulis pada record produksi baru.
+- Satu objek QWO boleh memiliki lebih dari satu target unit apabila mengandung kombinasi yang memang menjadi fokus pembelajaran.
+
 ## Ketentuan
 
 - Unit ini menjadi baseline; rincian elemen, indikator, error map, dan evidence ditambahkan per sprint.
