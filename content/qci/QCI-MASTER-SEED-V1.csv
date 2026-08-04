@@ -1,0 +1,35 @@
+CompetencyID,Code,NameID,NameAR,Dimension,Category,Description,Requires,DifficultyBase,ReviewPriority,DefaultSequence,Status,Version
+QCI-GR-0001,LETTER-ISOLATED,Mengenali huruf bentuk mandiri,,GRAPHEME,HURUF,Mengenali huruf hijaiyah dalam bentuk mandiri,,5,HIGH,10,ACTIVE,1.0.0
+QCI-GR-0002,LETTER-INITIAL,Mengenali huruf bentuk awal,,GRAPHEME,HURUF,Mengenali huruf hijaiyah pada posisi awal,QCI-GR-0001,12,HIGH,20,ACTIVE,1.0.0
+QCI-GR-0003,LETTER-MEDIAL,Mengenali huruf bentuk tengah,,GRAPHEME,HURUF,Mengenali huruf hijaiyah pada posisi tengah,QCI-GR-0001|QCI-GR-0002,18,HIGH,30,ACTIVE,1.0.0
+QCI-GR-0004,LETTER-FINAL,Mengenali huruf bentuk akhir,,GRAPHEME,HURUF,Mengenali huruf hijaiyah pada posisi akhir,QCI-GR-0001|QCI-GR-0002,16,HIGH,40,ACTIVE,1.0.0
+QCI-VF-0001,FAMILY-BTT,Keluarga bentuk ب ت ث,,VISUAL_FAMILY,HURUF,Membedakan ب ت ث berdasarkan titik dan posisi,QCI-GR-0001,10,HIGH,50,ACTIVE,1.0.0
+QCI-VF-0002,FAMILY-JHKH,Keluarga bentuk ج ح خ,,VISUAL_FAMILY,HURUF,Membedakan ج ح خ berdasarkan titik,QCI-GR-0001,12,HIGH,60,ACTIVE,1.0.0
+QCI-VF-0003,FAMILY-DR,Keluarga bentuk د ذ,,VISUAL_FAMILY,HURUF,Membedakan د dan ذ,QCI-GR-0001,8,MEDIUM,70,ACTIVE,1.0.0
+QCI-VF-0004,FAMILY-RZ,Keluarga bentuk ر ز,,VISUAL_FAMILY,HURUF,Membedakan ر dan ز,QCI-GR-0001,8,MEDIUM,80,ACTIVE,1.0.0
+QCI-PH-0001,FATHAH,Fathah,فَتْحَة,PHONOLOGY,HARAKAT,Membaca bunyi pendek a pada huruf,QCI-GR-0001,8,CRITICAL,100,ACTIVE,1.0.0
+QCI-PH-0002,KASRAH,Kasrah,كَسْرَة,PHONOLOGY,HARAKAT,Membaca bunyi pendek i pada huruf,QCI-GR-0001|QCI-PH-0001,10,CRITICAL,110,ACTIVE,1.0.0
+QCI-PH-0003,DHAMMAH,Dhammah,ضَمَّة,PHONOLOGY,HARAKAT,Membaca bunyi pendek u pada huruf,QCI-GR-0001|QCI-PH-0001|QCI-PH-0002,12,CRITICAL,120,ACTIVE,1.0.0
+QCI-CN-0001,CONNECT-2,Sambungan dua huruf,,CONNECTION_PATTERN,SAMBUNGAN,Membaca dua huruf yang tersambung,QCI-GR-0002|QCI-GR-0004|QCI-PH-0001,15,HIGH,130,ACTIVE,1.0.0
+QCI-CN-0002,CONNECT-3,Sambungan tiga huruf,,CONNECTION_PATTERN,SAMBUNGAN,Membaca tiga huruf yang tersambung,QCI-GR-0002|QCI-GR-0003|QCI-GR-0004|QCI-CN-0001,22,HIGH,140,ACTIVE,1.0.0
+QCI-CN-0003,NONCONNECTING,Transisi huruf tidak menyambung,,CONNECTION_PATTERN,SAMBUNGAN,Membaca pola yang terputus karena huruf non-connector,QCI-CN-0001,20,HIGH,150,ACTIVE,1.0.0
+QCI-MD-0001,MAD-ALIF,Mad alif,مَدّ بِالأَلِف,PHONOLOGY,MAD,Membaca fathah diikuti alif dengan panjang yang benar,QCI-PH-0001|QCI-CN-0002,25,CRITICAL,200,ACTIVE,1.0.0
+QCI-MD-0002,MAD-YA,Mad ya,مَدّ بِاليَاء,PHONOLOGY,MAD,Membaca kasrah diikuti ya sukun dengan panjang yang benar,QCI-PH-0002|QCI-CN-0002,28,CRITICAL,210,ACTIVE,1.0.0
+QCI-MD-0003,MAD-WAW,Mad wawu,مَدّ بِالوَاو,PHONOLOGY,MAD,Membaca dhammah diikuti wawu sukun dengan panjang yang benar,QCI-PH-0003|QCI-CN-0002,30,CRITICAL,220,ACTIVE,1.0.0
+QCI-TN-0001,TANWIN-FATH,Tanwin fathah,فَتْحَتَان,PHONOLOGY,TANWIN,Membaca akhiran an pada kata,QCI-PH-0001|QCI-CN-0002,28,HIGH,300,ACTIVE,1.0.0
+QCI-TN-0002,TANWIN-KASR,Tanwin kasrah,كَسْرَتَان,PHONOLOGY,TANWIN,Membaca akhiran in pada kata,QCI-PH-0002|QCI-TN-0001,30,HIGH,310,ACTIVE,1.0.0
+QCI-TN-0003,TANWIN-DAMM,Tanwin dhammah,ضَمَّتَان,PHONOLOGY,TANWIN,Membaca akhiran un pada kata,QCI-PH-0003|QCI-TN-0001|QCI-TN-0002,32,HIGH,320,ACTIVE,1.0.0
+QCI-SK-0001,SUKUN-BASIC,Sukun dasar,سُكُون,PHONOLOGY,SUKUN,Membaca konsonan mati pada pola dasar,QCI-PH-0001|QCI-PH-0002|QCI-PH-0003|QCI-CN-0002,35,CRITICAL,400,ACTIVE,1.0.0
+QCI-SK-0002,SUKUN-HAMZAH,Sukun pada hamzah,,PHONOLOGY,SUKUN,Membaca hamzah sukun secara tepat,QCI-SK-0001,42,HIGH,410,ACTIVE,1.0.0
+QCI-SK-0003,SUKUN-AIN-GHAIN,Sukun pada ain dan ghain,,PHONOLOGY,SUKUN,Membaca ع dan غ bersukun secara tepat,QCI-SK-0001,45,HIGH,420,ACTIVE,1.0.0
+QCI-SK-0004,SUKUN-EMPHATIC,Sukun pada huruf tebal,,PHONOLOGY,SUKUN,Membaca huruf isti'la bersukun dengan tepat,QCI-SK-0001,48,HIGH,430,ACTIVE,1.0.0
+QCI-SH-0001,SHADDAH-BASIC,Tasydid dasar,شَدَّة,PHONOLOGY,TASYDID,Membaca penggandaan konsonan secara tepat,QCI-SK-0001,45,CRITICAL,500,ACTIVE,1.0.0
+QCI-OR-0001,ALIF-LAM,Alif lam,ال,ORTHOGRAPHY,STRUKTUR,Mengenali dan membaca struktur alif lam,QCI-CN-0002|QCI-PH-0001|QCI-PH-0002|QCI-PH-0003,32,HIGH,600,ACTIVE,1.0.0
+QCI-OR-0002,HAMZAH-QATA,Hamzah qatha',هَمْزَةُ القَطْع,ORTHOGRAPHY,STRUKTUR,Mengenali hamzah qatha pada posisi yang berbeda,QCI-GR-0001|QCI-CN-0002,35,HIGH,610,ACTIVE,1.0.0
+QCI-OR-0003,HAMZAH-WASL,Hamzah washal,هَمْزَةُ الوَصْل,ORTHOGRAPHY,STRUKTUR,Mengenali dan membaca hamzah washal sesuai konteks,QCI-OR-0001|QCI-SK-0001,50,HIGH,620,ACTIVE,1.0.0
+QCI-OR-0004,TA-MARBUTAH,Ta marbuthah,تَاء مَرْبُوطَة,ORTHOGRAPHY,STRUKTUR,Mengenali ta marbuthah pada akhir kata,QCI-GR-0004|QCI-PH-0001|QCI-PH-0002|QCI-PH-0003,30,MEDIUM,630,ACTIVE,1.0.0
+QCI-OR-0005,ALIF-MAQSURAH,Alif maqshurah,أَلِف مَقْصُورَة,ORTHOGRAPHY,STRUKTUR,Mengenali alif maqshurah pada akhir kata,QCI-GR-0004|QCI-MD-0001,34,MEDIUM,640,ACTIVE,1.0.0
+QCI-FL-0001,WORD-FLUENCY,Kelancaran kata,,FLUENCY,FLUENCY,Membaca kata tanpa mengeja berlebihan,QCI-CN-0002|QCI-MD-0001,40,CRITICAL,700,ACTIVE,1.0.0
+QCI-FL-0002,PHRASE-2,Kelancaran frasa dua kata,,FLUENCY,FLUENCY,Membaca frasa dua kata secara stabil,QCI-FL-0001,48,HIGH,710,ACTIVE,1.0.0
+QCI-FL-0003,PHRASE-3,Kelancaran frasa tiga kata,,FLUENCY,FLUENCY,Membaca frasa tiga kata secara stabil,QCI-FL-0002,55,HIGH,720,ACTIVE,1.0.0
+QCI-FL-0004,AYAH-SEGMENT,Kelancaran potongan ayat,,FLUENCY,FLUENCY,Membaca potongan ayat sesuai batas latihan,QCI-FL-0003|QCI-SK-0001|QCI-SH-0001,65,CRITICAL,730,ACTIVE,1.0.0
