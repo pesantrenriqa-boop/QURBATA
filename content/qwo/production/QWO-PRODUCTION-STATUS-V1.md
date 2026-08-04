@@ -1,34 +1,48 @@
 # QWO Production Status V1
 
-Tanggal baseline: 4 Agustus 2026
+Tanggal pembaruan: 4 Agustus 2026
 
-## Hasil gelombang pertama
-- Candidate pool competency-first: 90 objek
+## Hasil produksi
+- Candidate pool A-001: 90 objek
+- Candidate pool A-002: 120 objek
+- Total kandidat competency-first: 210 objek
 - Corpus surah-first: 0 objek aktif
 - QWO aktif: 0 objek
-- Status seluruh kandidat: CANDIDATE
+- Status umum: CANDIDATE
 
-## Distribusi awal
-- Mad alif: 10
-- Mad ya: 11
-- Mad wawu: 5
-- Sukun: 4
-- Tanwin dhammah: 10
-- Tanwin fathah: 10
-- Tanwin kasrah: 10
-- Alif lam: 10
-- Tasydid: 10
-- Ta marbuthah: 10
+## Cakupan kompetensi yang sudah diproduksi
+- Sambungan tiga huruf
+- Transisi huruf non-connector
+- Hamzah qatha
+- Alif maqshurah
+- Sukun dasar
+- Sukun ain dan ghain
+- Sukun huruf tebal
+- Tasydid
+- Mad alif
+- Mad ya
+- Mad wawu
+- Tanwin fathah
+- Tanwin kasrah
+- Tanwin dhammah
+- Alif lam
+- Ta marbuthah
 
-## Gate berikutnya
-1. Verifikasi setiap kata terhadap mushaf.
+## Gate validasi
+1. Verifikasi kandidat terhadap teks mushaf.
 2. Isi SourceRef surah:ayat.
-3. Audit TargetCompetency dan dependency.
-4. Pisahkan kompetensi utama dan kompetensi sekunder.
-5. Promosikan kandidat lolos menjadi REVIEW.
-6. Promosikan REVIEW tervalidasi menjadi ACTIVE.
+3. Normalisasi bentuk Utsmani dan bentuk pencarian.
+4. Audit TargetCompetency dan SecondaryCompetencies.
+5. Tandai duplikasi bentuk dan keluarga morfologi.
+6. Promosikan kandidat lolos menjadi SOURCE_VERIFIED.
+7. Promosikan kandidat tervalidasi pedagogis menjadi ACTIVE.
 
-## Target produksi berikutnya
-- 250 kandidat tambahan untuk mad, tanwin, sukun, dan tasydid.
-- 100 kandidat bentuk sambungan dan huruf non-connector.
-- 100 kandidat untuk frasa dua kata setelah QWO aktif mencukupi.
+## Target gelombang selanjutnya
+- Naikkan total menjadi minimal 350 kandidat.
+- Tambahkan keluarga visual huruf yang belum terwakili.
+- Tambahkan pola mad dan sukun yang lebih beragam.
+- Mulai verifikasi sumber untuk 100 kandidat prioritas tertinggi.
+- Setelah minimal 100 QWO ACTIVE tersedia, mulai produksi QPO frasa dua kata.
+
+## Catatan kualitas
+Candidate pool adalah area produksi cepat, bukan data final generator. Kandidat yang bentuknya meragukan atau memerlukan verifikasi khusus tetap dipertahankan sebagai CANDIDATE dengan prioritas REVIEW dan tidak boleh digunakan oleh generator.
