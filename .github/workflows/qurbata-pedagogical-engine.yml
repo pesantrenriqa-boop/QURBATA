@@ -41,3 +41,7 @@ jobs:
       - name: Run end-to-end foundation validation
         run: |
           python content/qwo/pedagogical/runtime/foundation_smoke_test.py --mode all
+
+      - name: Validate real Quran objects from letter to full ayah
+        run: |
+          python content/qwo/pedagogy/runtime/real_object_acceptance_test.py
