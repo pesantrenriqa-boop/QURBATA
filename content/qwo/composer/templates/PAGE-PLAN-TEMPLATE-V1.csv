@@ -1,0 +1,11 @@
+PageNumber,TargetCompetencyID,ReviewCompetencyIDs,ObjectScope,ObjectCount,Status,Notes
+1,C0001,,LETTER,24,DRAFT,Isi dari objek huruf bukan QWO kata
+2,C0002,C0001,LETTER,24,DRAFT,Fathah huruf tunggal
+3,C0003,C0001|C0002,LETTER,24,DRAFT,Kasrah huruf tunggal
+4,C0004,C0001|C0002|C0003,LETTER,24,DRAFT,Dhammah huruf tunggal
+5,C0005,C0002|C0003|C0004,WORD_FRAGMENT,24,DRAFT,Dua huruf tidak tersambung
+6,C0006,C0005,WORD_FRAGMENT,24,DRAFT,Dua huruf tersambung
+7,C0007,C0005|C0006,WORD,24,DRAFT,Tiga huruf sederhana
+8,C0008,C0007,WORD,24,DRAFT,Sambungan awal
+9,C0009,C0007|C0008,WORD,24,DRAFT,Sambungan tengah
+10,C0010,C0008|C0009,WORD,24,DRAFT,Sambungan akhir
