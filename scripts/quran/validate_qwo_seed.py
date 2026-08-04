@@ -76,7 +76,8 @@ def validate_row(row_no: int, row: dict[str, str], seen_ids: set[str], errors: l
     as_int(row_no, row, "Surah", 1, 114, errors)
     as_int(row_no, row, "Ayah", 1, 286, errors)
     as_int(row_no, row, "WordPosition", 1, 999, errors)
-    as_int(row_no, row, "OccurrenceFrequency", 1, 999999, errors)
+    # Zero means the curated seed has not yet been reconciled with the full corpus.
+    as_int(row_no, row, "OccurrenceFrequency", 0, 999999, errors)
     as_int(row_no, row, "LetterCount", 1, 99, errors)
     as_int(row_no, row, "DifficultyScore", 1, 100, errors)
     as_int(row_no, row, "PedagogicalScore", 1, 100, errors)
