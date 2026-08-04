@@ -8,11 +8,11 @@ F0006,C0007,WORD,خَلَقَ,96:1,PASS,Tiga huruf sederhana
 F0007,C0014,WORD,قَالَ,2:30,PASS,Mad alif
 F0008,C0015,WORD,قِيلَ,2:11,PASS,Mad ya
 F0009,C0016,WORD,قُولُوا,2:43,PASS,Mad waw
-F0010,C0017,WORD,هُدًى,2:2,PASS,Tanwin fathah
-F0011,C0018,WORD,شَيْءٍ,2:20,PASS,Tanwin kasrah
+F0010,C0017,WORD,عَذَابًا,2:7,PASS,Tanwin fathah setelah mad
+F0011,C0018,WORD,رَحِيمٍ,36:58,PASS,Tanwin kasrah tanpa hamzah atau sukun baru
 F0012,C0019,WORD,عَلِيمٌ,2:29,PASS,Tanwin dhammah
 F0013,C0020,WORD,مِنْ,1:7,PASS,Sukun dasar
-F0014,C0024,WORD,إِنَّ,2:6,PASS,Tasydid dasar
+F0014,C0024,WORD,رَبِّ,1:2,PASS,Tasydid tanpa hamzah
 F0015,C0025,WORD,الْحَمْدُ,1:2,PASS,Alif lam
 F0016,C0026,WORD,رَحْمَةٌ,2:157,PASS,Ta marbuthah
 F0017,C0027,WORD,هُدَى,2:5,PASS,Alif maqshurah
@@ -26,13 +26,13 @@ F0024,C0034,PHRASE,إِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌ,2:1
 F0025,C0035,AYAH_FRAGMENT,إِنَّ ٱللَّهَ مَعَ ٱلصَّابِرِينَ,2:153,PASS,Potongan ayat pendek
 F0026,C0036,AYAH_FRAGMENT,وَبَشِّرِ ٱلصَّابِرِينَ ٱلَّذِينَ إِذَا أَصَابَتْهُم مُّصِيبَةٌ قَالُوا,2:155-156,PASS,Potongan ayat menengah
 F0027,C0037,FULL_AYAH,قُلْ هُوَ ٱللَّهُ أَحَدٌ,112:1,PASS,Ayat utuh pendek
-F0028,C0038,FULL_AYAH,إِنَّا أَعْطَيْنَاكَ ٱلْكَوْثَرَ فَصَلِّ لِرَبِّكَ وَٱنْحَرْ,108:1-2,PASS,Ayat utuh sedang untuk fixture gabungan
+F0028,C0038,FULL_AYAH,إِنَّا أَعْطَيْنَاكَ ٱلْكَوْثَرَ فَصَلِّ لِرَبِّكَ وَٱنْحَرْ,108:1-2,PASS,Fixture rentang ayat sedang
 F0029,C0039,FULL_AYAH,ٱللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ٱلْحَيُّ ٱلْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ,2:255,PASS,Ayat panjang subset acceptance
 F0030,C0040,AYAH_FRAGMENT,وَلَا تَقْرَبُوا ٱلزِّنَىٰٓ ۖ إِنَّهُۥ كَانَ فَٰحِشَةً وَسَآءَ سَبِيلًا,17:32,PASS,Waqaf dan ibtida
 F0031,C0041,FULL_AYAH,إِنَّآ أَنزَلْنَٰهُ فِى لَيْلَةِ ٱلْقَدْرِ,97:1,PASS,Integrasi multi-kompetensi
 N0001,C0005,WORD_FRAGMENT,ؤُهُ,2:0,FAIL,Hamzah harus ditolak
 N0002,C0006,WORD_FRAGMENT,مِنْ,1:7,FAIL,Sukun terlalu dini
 N0003,C0007,WORD,إِنَّ,2:6,FAIL,Hamzah dan tasydid terlalu dini
-N0004,C0014,WORD,عَلِيمٌ,2:29,FAIL,Tanwin bukan target mad alif
+N0004,C0014,WORD,عَلِيمٌ,2:29,FAIL,Bukan target mad alif dan mengandung tanwin
 N0005,C0033,WORD,غَفُورٌ,2:173,FAIL,Tipe objek salah
 N0006,C0039,FULL_AYAH,قُلْ هُوَ ٱللَّهُ أَحَدٌ,112:1,FAIL,Terlalu pendek untuk ayat panjang
