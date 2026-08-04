@@ -1,8 +1,9 @@
 # QJ3 P001–P010 — Production Manifest
 
 **Batch:** QJ3-BATCH-001-010  
-**Status:** PRODUCTION-DRAFT  
-**Source file:** `production/jilid-3/QJ3-P001-P010-PRODUCTION-BATCH.md`
+**Status:** AUDITED-WITH-CORRECTIONS  
+**Source file:** `production/jilid-3/QJ3-P001-P010-PRODUCTION-BATCH.md`  
+**Audit:** `production/jilid-3/QJ3-P001-P010-AUDIT-V1.md`
 
 ## Cakupan
 
@@ -28,19 +29,39 @@
 - Review langsung: 71
 - Review berjarak: 53
 - Review global: 20
+- Rasio: 40% materi baru dan 60% murojaah
+
+## Hasil audit V1
+
+- Struktur dan rasio dinyatakan valid.
+- Progression mad dinyatakan valid.
+- Progression sukun per huruf target dinyatakan valid secara arah.
+- Satu duplikasi internal ditemukan pada P009 K11 dan wajib dikoreksi dari `يَسْمَعُ` menjadi `يَفْتَحُ`.
+- Semua drill buatan wajib diklasifikasikan sebagai `CONTROLLED_DRILL` atau `CONTROLLED_PATTERN`.
+- Kata Arab yang belum diverifikasi dari mushaf tidak boleh diberi klaim Qur’ani.
+
+## Klasifikasi sumber kanonik
+
+Setiap kotak wajib memiliki salah satu SourceType:
+
+1. `QURAN_VERIFIED`
+2. `ARABIC_LEXICON`
+3. `CONTROLLED_DRILL`
+4. `CONTROLLED_PATTERN`
+5. `RECOVERY_SOURCE`
 
 ## Gate sebelum APPROVED
 
-1. Audit ejaan dan harakat seluruh contoh.
-2. Verifikasi sumber langsung untuk item yang akan diklaim berasal dari Al-Qur’an.
-3. Audit duplikasi terhadap Jilid 1–2.
-4. Audit tingkat kesulitan khusus P004–P009.
-5. Keputusan pemilik akademik atas contoh buatan pola seperti `بَتَثَ`, `جَحَخَ`, dan pola suku kata global.
-6. Migrasi batch ke file kanonik `books/jilid-3/pages/QJ3-P001.md` sampai `QJ3-P010.md` setelah gate 1–5 lulus.
+1. Terapkan koreksi audit V1.
+2. Tambahkan SourceType untuk seluruh 240 kotak.
+3. Verifikasi mushaf untuk item berstatus `QURAN_VERIFIED`.
+4. Audit duplikasi terhadap Jilid 1–2.
+5. Migrasi ke file kanonik `books/jilid-3/pages/QJ3-P001.md` sampai `QJ3-P010.md`.
+6. Review akademik pemilik.
 
 ## Keputusan desain
 
 - Contoh recovery dipertahankan bila sesuai progression.
 - Contoh terlalu lanjut dipindahkan ke HOLD, tidak dihapus.
 - Struktur review mengikuti prinsip Iqro’: materi lama tetap hadir sejak bagian awal sampai akhir jilid.
-- Susunan dan distribusi halaman merupakan struktur asli QURBATA.
+- Susunan, pemilihan, kode, distribusi, dan progression halaman merupakan struktur asli QURBATA.
