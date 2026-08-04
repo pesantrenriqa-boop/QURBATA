@@ -1,20 +1,25 @@
 #!/usr/bin/env python3
-"""Executable smoke tests for the QURBATA pedagogical foundation.
+"""Executable validation for the QURBATA pedagogical foundation.
 
-This suite intentionally depends only on the Python standard library so it can
-run in GitHub Actions without installing packages.
+The suite uses only Python's standard library. It fails closed: incomplete
+coverage, missing files, dependency errors, or known pedagogical regressions
+must block page generation.
 """
 
 from __future__ import annotations
 
 import argparse
 import csv
+import importlib.util
 import sys
 import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[4]
 DEPENDENCY_MAP = ROOT / "content/qwo/competency/QURBATA-COMPETENCY-DEPENDENCY-MAP-V1.csv"
+POLICY_MATRIX = ROOT / "content/qwo/pedagogy/PEDAGOGICAL-POLICY-MATRIX-V2.csv"
+RULE_MATRIX = ROOT / "content/qwo/pedagogy/PEDAGOGICAL-RULE-MATRIX-V1.csv"
+ENGINE_FILE = ROOT / "content/qwo/pedagogy/runtime/pedagogical_engine.py"
 
 HAMZAH_FORMS = set("ءأإؤئآ")
 TANWIN = set("ًٌٍ")
@@ -23,7 +28,6 @@ SHADDA = "ّ"
 FATHA = "َ"
 DAMMA = "ُ"
 KASRA = "ِ"
-ARABIC_MARKS = set("ًٌٍَُِّْٰٓۥۦۭ۟ۢ")
 
 
 def fail(message: str) -> None:
@@ -40,24 +44,27 @@ def load_rows(path: Path) -> list[dict[str, str]]:
     return rows
 
 
-def validate_dependency_map() -> None:
+def ordered_ids(rows: list[dict[str, str]]) -> list[str]:
+    return [row["CompetencyID"].strip() for row in rows]
+
+
+def validate_dependency_map() -> list[str]:
     rows = load_rows(DEPENDENCY_MAP)
-    ids = [row["CompetencyID"].strip() for row in rows]
+    ids = ordered_ids(rows)
     if len(ids) != len(set(ids)):
         fail("Duplicate CompetencyID found")
-    if ids != [f"C{i:04d}" for i in range(1, len(ids) + 1)]:
-        fail("Competency IDs must be contiguous and ordered")
+    expected = [f"C{i:04d}" for i in range(1, 42)]
+    if ids != expected:
+        fail("Dependency map must contain ordered C0001-C0041")
 
-    known: set[str] = set()
     graph: dict[str, set[str]] = {}
     for row in rows:
         cid = row["CompetencyID"].strip()
-        deps = {x for x in row.get("PrerequisiteIDs", "").split("|") if x}
+        deps = {x.strip() for x in row.get("PrerequisiteIDs", "").split("|") if x.strip()}
         missing = deps - set(ids)
         if missing:
             fail(f"{cid} references missing prerequisites: {sorted(missing)}")
         graph[cid] = deps
-        known.add(cid)
 
     visiting: set[str] = set()
     visited: set[str] = set()
@@ -76,6 +83,7 @@ def validate_dependency_map() -> None:
     for cid in ids:
         visit(cid)
 
+    names = {row["CompetencyName"].strip() for row in rows}
     required_names = {
         "Lafzul Jalalah bentuk dasar",
         "Lafzul Jalalah berharakat",
@@ -83,10 +91,57 @@ def validate_dependency_map() -> None:
         "Ayat utuh panjang",
         "Integrasi multi-kompetensi",
     }
-    names = {row["CompetencyName"].strip() for row in rows}
     missing_names = required_names - names
     if missing_names:
         fail(f"Required competencies missing: {sorted(missing_names)}")
+    return ids
+
+
+def validate_policy_coverage(expected_ids: list[str]) -> None:
+    policy_rows = load_rows(POLICY_MATRIX)
+    policy_ids = ordered_ids(policy_rows)
+    if policy_ids != expected_ids:
+        fail("Policy matrix must cover ordered C0001-C0041 exactly once")
+
+    allowed_types = {"LETTER", "WORD_FRAGMENT", "WORD", "PHRASE", "AYAH_FRAGMENT", "FULL_AYAH"}
+    for row in policy_rows:
+        cid = row["CompetencyID"].strip()
+        object_types = {x for x in row["ObjectType"].split("|") if x}
+        unknown = object_types - allowed_types
+        if unknown:
+            fail(f"{cid} has unknown ObjectType values: {sorted(unknown)}")
+        minimum = int(row["MinUnits"])
+        maximum = int(row["MaxUnits"])
+        if minimum < 1 or maximum < minimum:
+            fail(f"{cid} has invalid unit range {minimum}-{maximum}")
+
+
+def import_engine():
+    if not ENGINE_FILE.exists():
+        fail(f"Pedagogical engine missing: {ENGINE_FILE}")
+    spec = importlib.util.spec_from_file_location("qurbata_pedagogical_engine", ENGINE_FILE)
+    if spec is None or spec.loader is None:
+        fail("Unable to load pedagogical engine module")
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = module
+    spec.loader.exec_module(module)
+    for name in ("load_rules", "validate", "has_madd", "base_letters"):
+        if not hasattr(module, name):
+            fail(f"Pedagogical engine missing callable: {name}")
+    return module
+
+
+def validate_executable_rules(module, expected_ids: list[str]) -> None:
+    rules = module.load_rules(RULE_MATRIX)
+    rule_ids = sorted(rules)
+    missing = sorted(set(expected_ids) - set(rule_ids))
+    extra = sorted(set(rule_ids) - set(expected_ids))
+    if missing or extra:
+        fail(
+            "Executable rule coverage incomplete; "
+            f"missing={missing}, extra={extra}. "
+            "Page generation must remain blocked until C0001-C0041 are executable."
+        )
 
 
 def base_letters(text: str) -> list[str]:
@@ -122,7 +177,7 @@ def early_stage_allowed(text: str) -> bool:
     return True
 
 
-def run_regressions() -> None:
+def run_regressions(module) -> None:
     rejected = ["ؤُ", "إِ", "دَءُ", "مِنْ", "إِنَّ", "عَلِيمٌ", "قُولُوا"]
     for sample in rejected:
         if early_stage_allowed(sample):
@@ -133,28 +188,39 @@ def run_regressions() -> None:
         if not early_stage_allowed(sample):
             fail(f"Early-stage gate incorrectly rejected: {sample}")
 
-    if has_true_mad_waw("هُوَ"):
+    if has_true_mad_waw("هُوَ") or module.has_madd("هُوَ"):
         fail("هُوَ must not be classified as mad waw")
-    if not has_true_mad_waw("قُولُوا"):
+    if not has_true_mad_waw("قُولُوا") or not module.has_madd("قُولُوا"):
         fail("قُولُوا must be classified as containing mad waw")
-
-    if len(base_letters("بَتَ")) != 2:
+    if len(base_letters("بَتَ")) != 2 or len(module.base_letters("بَتَ")) != 2:
         fail("Base-letter counting failed for بَتَ")
-    if len(base_letters("إِنَّ")) != 2:
+    if len(base_letters("إِنَّ")) != 2 or len(module.base_letters("إِنَّ")) != 2:
         fail("Base-letter counting failed for إِنَّ")
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--mode", choices=("dependency", "regression", "all"), default="all")
+    parser.add_argument(
+        "--mode",
+        choices=("dependency", "coverage", "regression", "all"),
+        default="all",
+    )
     args = parser.parse_args()
 
+    ids = validate_dependency_map()
     if args.mode in ("dependency", "all"):
-        validate_dependency_map()
-        print("PASS dependency map")
+        print("PASS dependency map C0001-C0041")
+
+    module = import_engine()
+    if args.mode in ("coverage", "all"):
+        validate_policy_coverage(ids)
+        validate_executable_rules(module, ids)
+        print("PASS policy and executable rule coverage")
+
     if args.mode in ("regression", "all"):
-        run_regressions()
+        run_regressions(module)
         print("PASS regression suite")
+
     print("QURBATA pedagogical foundation: VERIFIED_PASS")
     return 0
 
