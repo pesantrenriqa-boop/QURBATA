@@ -1,0 +1,37 @@
+schema_version: 1
+engine: QAE
+profile: jilid-1-fathah-v1
+status: production-test
+
+mark:
+  id: fathah
+  unicode: "َ"
+  renderer: css-shape
+  width_em: 0.42
+  height_em: 0.075
+  rotation_deg: -12
+  color: "#000000"
+
+anchors:
+  "ب":
+    x_em: 0.00
+    y_em: -0.10
+    scale: 1.00
+  "ت":
+    x_em: 0.00
+    y_em: -0.21
+    scale: 1.00
+  "ث":
+    x_em: 0.00
+    y_em: -0.28
+    scale: 1.00
+
+default_anchor:
+  x_em: 0.00
+  y_em: -0.16
+  scale: 1.00
+
+notes:
+  - "Koordinat relatif terhadap kotak huruf, bukan terhadap baris halaman."
+  - "Fathah dibuat lebih jelas tanpa mengecilkan huruf dasar."
+  - "Anchor ت dan ث dinaikkan secukupnya agar tidak menabrak titik."
