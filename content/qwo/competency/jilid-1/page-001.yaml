@@ -1,0 +1,43 @@
+schema_version: 1
+id: QURBATA-J1-P001
+status: production-test
+scope:
+  volume: 1
+  page: 1
+  lesson: 1
+allowed:
+  base_letters:
+    - "ب"
+    - "ت"
+    - "ث"
+  marks:
+    - fathah
+  token_count_per_object:
+    single: 1
+    pair: 2
+    triple: 3
+forbidden:
+  connected_letters: true
+  other_base_letters: true
+  kasrah: true
+  dhammah: true
+  sukun: true
+  tanwin: true
+  shaddah: true
+  mad: true
+distribution:
+  single: 6
+  pair: 8
+  triple: 8
+material_title:
+  tokens:
+    - "بَ"
+    - "تَ"
+    - "ثَ"
+validation:
+  require_unique_object_ids: true
+  require_fathah_on_every_token: true
+  reject_combining_marks_outside_source_data: true
+notes:
+  - "Jilid 1 halaman 1 hanya memperkenalkan keluarga ب ت ث dengan fathah."
+  - "Objek dua dan tiga huruf berisi huruf tunggal yang tetap terpisah."
