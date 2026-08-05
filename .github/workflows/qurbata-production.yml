@@ -1,0 +1,42 @@
+name: QURBATA Production Engine
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'books/**'
+      - '.github/workflows/qurbata-production.yml'
+
+jobs:
+  production-test:
+    name: QURBATA Production Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Verify engine structure
+        run: |
+          echo "Checking QURBATA engine files"
+          test -f books/jilid-1/engine/object-engine-v1.js
+          test -f books/jilid-1/engine/page-renderer-v1.js
+          test -f books/jilid-1/engine/html-builder-v1.js
+          test -f books/jilid-1/engine/layout-validator-v1.js
+          echo "Engine structure OK"
+
+      - name: Prepare production artifact folder
+        run: |
+          mkdir -p production-artifacts
+          echo "QURBATA Production Engine v1" > production-artifacts/status.txt
+
+      - name: Upload production report
+        uses: actions/upload-artifact@v4
+        with:
+          name: qurbata-production-report
+          path: production-artifacts
