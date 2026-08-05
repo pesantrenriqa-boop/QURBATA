@@ -1,0 +1,42 @@
+CompetencyID,MinimumUniqueCandidates,Reason
+C0001,84,28 huruf x 3 harakat
+C0002,28,Satu fathah per huruf dasar
+C0003,28,Satu kasrah per huruf dasar
+C0004,28,Satu dhammah per huruf dasar
+C0005,180,Latihan dua huruf tidak tersambung
+C0006,180,Latihan dua huruf tersambung
+C0007,150,Kata tiga huruf sederhana
+C0008,80,Sambungan awal
+C0009,80,Sambungan tengah
+C0010,80,Sambungan akhir
+C0011,80,Transisi nonconnector
+C0012,100,Kata empat huruf
+C0013,100,Kata lima huruf atau lebih
+C0014,100,Mad alif
+C0015,100,Mad ya
+C0016,100,Mad waw
+C0017,80,Tanwin fathah
+C0018,80,Tanwin kasrah
+C0019,80,Tanwin dhammah
+C0020,100,Sukun dasar
+C0021,40,Sukun hamzah
+C0022,40,Sukun ain ghain
+C0023,40,Sukun huruf tebal
+C0024,100,Tasydid
+C0025,100,Alif lam
+C0026,80,Ta marbuthah
+C0027,60,Alif maqshurah
+C0028,80,Hamzah qatha
+C0029,80,Hamzah washal
+C0030,30,Lafzul Jalalah dasar
+C0031,30,Lafzul Jalalah berharakat
+C0032,30,Lafzul Jalalah dengan awalan
+C0033,120,Frasa dua kata
+C0034,100,Frasa tiga-empat kata
+C0035,80,Potongan ayat pendek
+C0036,60,Potongan ayat menengah
+C0037,60,Ayat utuh pendek
+C0038,50,Ayat utuh sedang
+C0039,40,Ayat utuh panjang
+C0040,40,Waqaf dan ibtida
+C0041,40,Integrasi multi-kompetensi
