@@ -8,7 +8,9 @@ on:
       - 'books/**'
       - 'content/qwo/arabic-engine/**'
       - 'content/qwo/competency/**'
+      - 'docs/production-engine-v1-readiness.md'
       - 'tools/build_qurbata.py'
+      - 'tools/check_production_readiness.py'
       - 'tools/object_engine.py'
       - 'tools/render_qurbata_v2.py'
       - 'tools/qae.py'
@@ -50,7 +52,10 @@ jobs:
       - name: Validate and render Jilid 1
         run: python tools/build_qurbata.py --book-dir books/jilid-1 --output-dir dist/jilid-1
 
-      - name: Upload print and preview outputs
+      - name: Run Production Engine v1 readiness gates
+        run: python tools/check_production_readiness.py --output-dir dist/jilid-1
+
+      - name: Upload print, preview, and readiness evidence
         uses: actions/upload-artifact@v4
         with:
           name: QURBATA-JILID-1-render
@@ -61,3 +66,4 @@ jobs:
             dist/jilid-1/png/*.png
             dist/jilid-1/html/*.html
             dist/jilid-1/runtime-layout.css
+            dist/jilid-1/production-readiness.json
