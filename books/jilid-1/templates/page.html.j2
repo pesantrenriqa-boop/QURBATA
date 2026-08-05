@@ -10,8 +10,7 @@
 <main class="page">
   <header class="header">
     <div class="brand-block" aria-label="Identitas QURBATA">
-      {% if logo_uri %}<img class="brand-logo" src="{{ logo_uri }}" alt="Logo QURBATA">{% endif %}
-      <div class="brand-word">{{ identity.title }}</div>
+      <img class="brand-logo" src="{{ logo_uri }}" alt="Logo QURBATA">
     </div>
     <div class="heading">
       <div class="subtitle">{{ identity.subtitle }}</div>
@@ -30,19 +29,21 @@
 
   <section class="material-title" lang="ar" aria-label="Judul materi">
     <div class="title-ornament" aria-hidden="true"></div>
-    <div class="material-title-text">{% for item in material_title %}<span>{{ item }}</span>{% endfor %}</div>
+    <div class="material-title-text">
+      {% for item in material_title %}<span class="arabic-token">{{ item }}</span>{% endfor %}
+    </div>
     <div class="title-ornament" aria-hidden="true"></div>
   </section>
 
   <section class="exercise-area" aria-label="Latihan membaca">
     <div class="group singles">
-      {% for item in objects.singles %}<div class="object">{{ item }}</div>{% endfor %}
+      {% for item in objects.singles %}<div class="object"><span class="arabic-token">{{ item }}</span></div>{% endfor %}
     </div>
     <div class="group pairs">
-      {% for item in objects.pairs %}<div class="object">{{ item|join(' ') }}</div>{% endfor %}
+      {% for item in objects.pairs %}<div class="object">{% for token in item %}<span class="arabic-token">{{ token }}</span>{% endfor %}</div>{% endfor %}
     </div>
     <div class="group triples">
-      {% for item in objects.triples %}<div class="object">{{ item|join(' ') }}</div>{% endfor %}
+      {% for item in objects.triples %}<div class="object">{% for token in item %}<span class="arabic-token">{{ token }}</span>{% endfor %}</div>{% endfor %}
     </div>
   </section>
 
