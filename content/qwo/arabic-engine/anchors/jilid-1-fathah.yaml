@@ -5,37 +5,37 @@ status: production-test
 
 mark:
   id: fathah
-  unicode: "َ"
   renderer: inline-svg-path
   view_box: "0 0 100 30"
-  path_d: "M 8 22 L 92 6"
-  stroke_width: 13
-  width_em: 0.46
-  height_em: 0.18
+  path_d: "M 18 18 L 82 8"
+  stroke_width: 5
+  width_em: 0.22
+  height_em: 0.08
   rotation_deg: 0
   color: "#000000"
+  optical_scale: 0.42
 
 anchors:
   "ب":
     x_em: 0.00
-    y_em: 0.10
-    scale: 1.00
+    y_em: 0.16
+    scale: 0.42
   "ت":
     x_em: 0.00
-    y_em: 0.00
-    scale: 1.00
+    y_em: 0.08
+    scale: 0.42
   "ث":
     x_em: 0.00
-    y_em: -0.06
-    scale: 1.00
+    y_em: 0.04
+    scale: 0.42
 
 default_anchor:
   x_em: 0.00
-  y_em: 0.04
-  scale: 1.00
+  y_em: 0.10
+  scale: 0.42
 
 notes:
   - "Fathah dirender sebagai SVG path QURBATA, bukan glyph combining mark font."
-  - "Koordinat relatif terhadap kotak token huruf. Nilai y positif menurunkan fathah mendekati huruf."
-  - "Anchor ta dan tsa sedikit lebih tinggi agar tidak bertabrakan dengan titik."
-  - "Ukuran fathah berdiri sendiri dan tidak memengaruhi ukuran huruf dasar."
+  - "Versi ini memakai optical scale kecil agar harakat tidak mendominasi huruf."
+  - "Nilai y positif menurunkan fathah mendekati badan huruf."
+  - "Anchor ta dan tsa tetap dinaikkan agar tidak bertabrakan dengan titik."
