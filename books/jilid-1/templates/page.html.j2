@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{{ css_uri }}">
 </head>
 <body>
-<main class="page">
+<main class="page" data-qae-profile="{{ qae.profile }}">
   <header class="header">
     <div class="brand-block" aria-label="Identitas QURBATA">
       <img class="brand-logo" src="{{ logo_uri }}" alt="Logo QURBATA">
@@ -27,12 +27,17 @@
     <div class="target-item"><span>Bahasa Arab</span><strong>{{ targets.arabic_language }}</strong></div>
   </section>
 
+  {% macro qae_token(token) -%}
+  <span class="arabic-token qae-token" style="{{ token.style }}" aria-label="{{ token.source }}">
+    <span class="arabic-base">{{ token.base }}</span>
+    <span class="qae-mark qae-fathah" aria-hidden="true"></span>
+  </span>
+  {%- endmacro %}
+
   <section class="material-title" lang="ar" aria-label="Judul materi">
     <div class="title-ornament" aria-hidden="true"></div>
     <div class="material-title-text">
-      {% for token in material_title %}
-      <span class="arabic-token"><span class="arabic-base">{{ token[0] }}</span><span class="arabic-mark">{{ token[1:] }}</span></span>
-      {% endfor %}
+      {% for token in qae.material_title %}{{ qae_token(token) }}{% endfor %}
     </div>
     <div class="title-ornament" aria-hidden="true"></div>
   </section>
@@ -40,28 +45,22 @@
   <section class="exercise-area" aria-label="Latihan membaca">
     <section class="exercise-section singles-section">
       <div class="group singles">
-        {% for token in objects.singles %}
-        <div class="object"><span class="arabic-token"><span class="arabic-base">{{ token[0] }}</span><span class="arabic-mark">{{ token[1:] }}</span></span></div>
-        {% endfor %}
+        {% for token in qae.singles %}<div class="object">{{ qae_token(token) }}</div>{% endfor %}
       </div>
     </section>
 
     <section class="exercise-section pairs-section">
       <div class="group pairs">
-        {% for item in objects.pairs %}
-        <div class="object">
-          {% for token in item %}<span class="arabic-token"><span class="arabic-base">{{ token[0] }}</span><span class="arabic-mark">{{ token[1:] }}</span></span>{% endfor %}
-        </div>
+        {% for item in qae.pairs %}
+        <div class="object">{% for token in item %}{{ qae_token(token) }}{% endfor %}</div>
         {% endfor %}
       </div>
     </section>
 
     <section class="exercise-section triples-section">
       <div class="group triples">
-        {% for item in objects.triples %}
-        <div class="object">
-          {% for token in item %}<span class="arabic-token"><span class="arabic-base">{{ token[0] }}</span><span class="arabic-mark">{{ token[1:] }}</span></span>{% endfor %}
-        </div>
+        {% for item in qae.triples %}
+        <div class="object">{% for token in item %}{{ qae_token(token) }}{% endfor %}</div>
         {% endfor %}
       </div>
     </section>
