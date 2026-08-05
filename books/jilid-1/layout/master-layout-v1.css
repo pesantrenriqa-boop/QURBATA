@@ -42,24 +42,15 @@ html, body {
 
 .brand-block {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  color: var(--green);
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .brand-logo {
-  width: 20mm;
-  height: 13mm;
+  width: 24mm;
+  height: 17mm;
   object-fit: contain;
   display: block;
-}
-
-.brand-word {
-  margin-top: .3mm;
-  font-size: 6.8pt;
-  font-weight: 700;
-  letter-spacing: .18em;
 }
 
 .heading { text-align: center; padding-top: 2.5mm; }
@@ -130,7 +121,6 @@ html, body {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 4mm;
-  direction: rtl;
 }
 .title-ornament {
   height: .25mm;
@@ -140,12 +130,16 @@ html, body {
   background: linear-gradient(to right, transparent, var(--gold));
 }
 .material-title-text {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 9mm;
   text-align: center;
-  font-family: "Noto Naskh Arabic", "Amiri Quran", Amiri, serif;
+  font-family: "Amiri Quran", "Amiri", serif;
   font-size: 33pt;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1;
-  word-spacing: 8mm;
   white-space: nowrap;
 }
 
@@ -177,18 +171,26 @@ html, body {
 }
 
 .object {
-  direction: rtl;
-  unicode-bidi: isolate;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  font-family: "Noto Naskh Arabic", "Amiri Quran", Amiri, serif;
-  font-weight: 600;
+  font-family: "Amiri Quran", "Amiri", serif;
+  font-weight: 400;
   white-space: nowrap;
   line-height: 1;
   color: #000;
 }
+.arabic-token {
+  display: inline-block;
+  direction: rtl;
+  unicode-bidi: isolate;
+  flex: 0 0 auto;
+}
 .singles .object { font-size: 39pt; }
-.pairs .object { font-size: 34pt; word-spacing: 4.5mm; }
-.triples .object { font-size: 29pt; word-spacing: 3mm; }
+.pairs .object { font-size: 34pt; gap: 4.5mm; }
+.triples .object { font-size: 29pt; gap: 3mm; }
 
 .footer {
   height: 10mm;
