@@ -1,29 +1,38 @@
 @page { size: A5 portrait; margin: 0; }
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; background: #e9ece8; font-family: var(--latin-font), "Noto Sans", Arial, sans-serif; }
-.page { width: var(--page-width); height: var(--page-height); margin: 0 auto; padding: var(--margin-top) var(--margin-right) var(--margin-bottom) var(--margin-left); background: #fff; color: var(--ink); position: relative; overflow: hidden; page-break-after: always; }
-.header { height: var(--header-height); display: grid; grid-template-columns: 25mm minmax(0, 1fr) 12mm; align-items: start; gap: var(--group-gap); }
+
+/* Production print contract: preserve the exact A5 canvas and brand colors. */
+@media print {
+  html, body { width: var(--page-width); background: #fff; }
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { margin: 0; break-after: page; page-break-after: always; }
+  .page:last-child { break-after: auto; page-break-after: auto; }
+}
+
+.page { width: var(--page-width); height: var(--page-height); margin: 0 auto; padding: var(--margin-top) var(--margin-right) var(--margin-bottom) var(--margin-left); background: #fff; color: var(--ink); position: relative; overflow: hidden; page-break-after: always; break-after: page; isolation: isolate; }
+.header { height: var(--header-height); display: grid; grid-template-columns: 25mm minmax(0, 1fr) 12mm; align-items: start; gap: var(--group-gap); min-width: 0; }
 .brand-block { display: flex; align-items: flex-start; justify-content: flex-start; min-width: 0; }
 .brand-logo { width: 23mm; height: 16.5mm; object-fit: contain; display: block; }
 .heading { min-width: 0; text-align: center; padding-top: 2.5mm; }
-.heading .subtitle { color: var(--green); font-weight: 600; letter-spacing: .15em; font-size: var(--header-size); white-space: nowrap; }
+.heading .subtitle { color: var(--green); font-weight: 600; letter-spacing: .15em; font-size: var(--header-size); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .heading .ornament { display: flex; align-items: center; justify-content: center; gap: 2mm; margin-top: 1.5mm; color: var(--gold); }
 .heading .ornament span { width: 18mm; max-width: 38%; height: .25mm; background: var(--gold); }
 .heading .ornament b { font-size: 12pt; font-weight: 500; }
 .page-number { background: var(--green); color: #fff; border-bottom: 1.1mm solid var(--gold); text-align: center; font-weight: 700; padding: 2.6mm 1mm 3.4mm; border-radius: 0 0 3mm 3mm; font-size: 12pt; }
-.targets { height: var(--targets-height); display: grid; grid-template-columns: .88fr repeat(4, minmax(0, 1fr)); align-items: center; gap: .7mm; padding: 1.2mm 2mm; background: var(--soft); border-radius: 3mm; color: var(--green); font-size: var(--target-size); overflow: hidden; }
+.targets { height: var(--targets-height); display: grid; grid-template-columns: .88fr repeat(4, minmax(0, 1fr)); align-items: center; gap: .7mm; padding: 1.2mm 2mm; background: var(--soft); border-radius: 3mm; color: var(--green); font-size: var(--target-size); overflow: hidden; min-width: 0; }
 .targets-label { font-weight: 800; letter-spacing: .01em; }
 .target-item { min-width: 0; min-height: 8mm; border-left: .25mm solid var(--gold); padding-left: 1.2mm; display: flex; flex-direction: column; justify-content: center; }
 .target-item span, .target-item strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .target-item strong { margin-top: .4mm; color: var(--ink); font-size: calc(var(--target-size) + .8pt); line-height: 1.15; }
-.material-title { height: var(--material-title-height); display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: var(--group-gap); }
+.material-title { height: var(--material-title-height); display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: var(--group-gap); min-width: 0; overflow: hidden; }
 .title-ornament { min-width: 0; height: .25mm; background: linear-gradient(to left, transparent, var(--gold)); }
 .title-ornament:last-child { background: linear-gradient(to right, transparent, var(--gold)); }
-.material-title-text { display: flex; flex-direction: row-reverse; align-items: center; justify-content: center; gap: var(--title-token-gap); font-family: var(--arabic-font), "Amiri", serif; font-size: var(--material-title-size); font-weight: 400; line-height: 1; white-space: nowrap; }
-.exercise-area { height: calc(var(--singles-height) + var(--pairs-height) + var(--triples-height)); display: grid; grid-template-rows: var(--singles-height) var(--pairs-height) var(--triples-height); min-width: 0; }
-.exercise-section { min-width: 0; min-height: 0; padding-block: var(--section-vertical-gap); overflow: hidden; }
-.group { width: 100%; height: 100%; direction: rtl; display: flex; flex-flow: row wrap; justify-content: space-evenly; align-content: space-evenly; align-items: center; padding-inline: var(--group-inline-safety); overflow: hidden; }
-.object { min-width: 0; height: 50%; display: flex; flex-direction: row-reverse; align-items: center; justify-content: center; text-align: center; font-family: var(--arabic-font), "Amiri", serif; font-weight: 400; white-space: nowrap; line-height: 1; color: #000; font-feature-settings: "liga" 0, "calt" 0; text-rendering: geometricPrecision; }
+.material-title-text { min-width: 0; display: flex; flex-direction: row-reverse; align-items: center; justify-content: center; gap: var(--title-token-gap); font-family: var(--arabic-font), "Amiri", serif; font-size: var(--material-title-size); font-weight: 400; line-height: 1; white-space: nowrap; }
+.exercise-area { height: calc(var(--singles-height) + var(--pairs-height) + var(--triples-height)); display: grid; grid-template-rows: var(--singles-height) var(--pairs-height) var(--triples-height); min-width: 0; min-height: 0; overflow: hidden; }
+.exercise-section { min-width: 0; min-height: 0; padding-block: var(--section-vertical-gap); overflow: hidden; display: flex; }
+.group { width: 100%; height: 100%; min-width: 0; min-height: 0; direction: rtl; display: flex; flex-flow: row wrap; justify-content: space-evenly; align-content: space-evenly; align-items: center; padding-inline: var(--group-inline-safety); overflow: hidden; }
+.object { min-width: 0; min-height: 0; max-width: 100%; display: flex; flex-direction: row-reverse; align-items: center; justify-content: center; text-align: center; font-family: var(--arabic-font), "Amiri", serif; font-weight: 400; white-space: nowrap; line-height: 1; color: #000; font-feature-settings: "liga" 0, "calt" 0; text-rendering: geometricPrecision; break-inside: avoid; page-break-inside: avoid; }
 .singles .object { flex: 0 0 30%; font-size: var(--single-object-size); }
 .pairs .object { flex: 0 0 23%; font-size: var(--pair-object-size); gap: var(--pair-token-gap); }
 .triples .object { flex: 0 0 23%; font-size: var(--triple-object-size); gap: var(--triple-token-gap); }
@@ -31,8 +40,33 @@ html, body { margin: 0; padding: 0; background: #e9ece8; font-family: var(--lati
 .arabic-base { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); display: block; line-height: 1; }
 .qae-mark { position: absolute; left: calc(50% + var(--qae-x)); top: .03em; width: calc(var(--qae-mark-width) * var(--qae-scale)); height: calc(var(--qae-mark-height) * var(--qae-scale)); transform: translate(-50%, var(--qae-y)) rotate(var(--qae-mark-rotation)); transform-origin: center; display: block; overflow: visible; pointer-events: none; }
 .qae-mark path { vector-effect: non-scaling-stroke; }
-.footer { height: var(--footer-height); margin-top: 1mm; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; gap: var(--footer-gap); padding: .8mm 4mm; background: var(--soft); border-radius: 3mm; color: var(--green); font-size: var(--footer-size); }
+.footer { height: var(--footer-height); margin-top: 1mm; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; gap: var(--footer-gap); padding: .8mm 4mm; background: var(--soft); border-radius: 3mm; color: var(--green); font-size: var(--footer-size); min-width: 0; overflow: hidden; }
 .footer .field { min-width: 0; display: flex; gap: 2mm; align-items: center; }
 .footer .line { flex: 1; min-width: 0; border-bottom: .25mm dotted var(--muted); height: 3.5mm; }
 .bottom-band { position: absolute; bottom: 0; left: 0; width: 100%; height: var(--bottom-band-height); background: var(--green); }
 .bottom-band::after { content: "◇"; position: absolute; left: 50%; transform: translate(-50%, -55%); color: var(--gold); background: white; padding: 0 2mm; font-size: 10pt; }
+
+/*
+ * The renderer/validator adds .is-overflow to any element whose scroll box
+ * exceeds its production box. Hidden overflow remains the print-safe default,
+ * while debug mode makes the exact failing object visible in HTML/PNG QA.
+ */
+html[data-layout-debug="true"] .is-overflow {
+  outline: .6mm solid #c00 !important;
+  outline-offset: -.6mm;
+  background-image: repeating-linear-gradient(135deg, rgba(204, 0, 0, .12) 0 2mm, transparent 2mm 4mm) !important;
+}
+
+html[data-layout-debug="true"] .page.is-overflow::before {
+  content: "LAYOUT OVERFLOW";
+  position: absolute;
+  z-index: 9999;
+  top: 1mm;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: .8mm 2mm;
+  background: #c00;
+  color: #fff;
+  font: 700 7pt/1 var(--latin-font), "Noto Sans", Arial, sans-serif;
+  letter-spacing: .08em;
+}
