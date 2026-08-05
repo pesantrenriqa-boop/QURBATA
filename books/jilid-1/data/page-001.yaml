@@ -15,9 +15,9 @@ material_title:
   - "ثَ"
 targets:
   material_progress: "01 / 24"
-  memorization: "—"
-  nidom_hadith: "—"
-  arabic_language: "—"
+  memorization: "Al-Fatihah 1–7"
+  nidom_hadith: "Nidom 1 • Hadits 1"
+  arabic_language: "Mufradat 1–10"
 objects:
   singles:
     - "بَ"
