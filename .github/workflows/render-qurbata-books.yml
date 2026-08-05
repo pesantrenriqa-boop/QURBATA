@@ -6,7 +6,9 @@ on:
       - content/qurbata-jilid-1-8-production
     paths:
       - 'books/**'
+      - 'content/qwo/arabic-engine/**'
       - 'tools/render_qurbata.py'
+      - 'tools/qae.py'
       - 'requirements-render.txt'
       - '.github/workflows/render-qurbata-books.yml'
   workflow_dispatch:
@@ -55,3 +57,4 @@ jobs:
             dist/jilid-1/QURBATA-JILID-1.pdf
             dist/jilid-1/png/*.png
             dist/jilid-1/html/*.html
+            dist/jilid-1/runtime-layout.css
