@@ -7,7 +7,10 @@ on:
     paths:
       - 'books/**'
       - 'content/qwo/arabic-engine/**'
-      - 'tools/render_qurbata.py'
+      - 'content/qwo/competency/**'
+      - 'tools/build_qurbata.py'
+      - 'tools/object_engine.py'
+      - 'tools/render_qurbata_v2.py'
       - 'tools/qae.py'
       - 'requirements-render.txt'
       - '.github/workflows/render-qurbata-books.yml'
@@ -44,8 +47,8 @@ jobs:
           pip install -r requirements-render.txt
           playwright install --with-deps chromium
 
-      - name: Render Jilid 1
-        run: python tools/render_qurbata.py --book-dir books/jilid-1 --output-dir dist/jilid-1
+      - name: Validate and render Jilid 1
+        run: python tools/build_qurbata.py --book-dir books/jilid-1 --output-dir dist/jilid-1
 
       - name: Upload print and preview outputs
         uses: actions/upload-artifact@v4
