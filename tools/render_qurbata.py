@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 FATHA = "َ"
 FORBIDDEN_PAGE_1_MARKS = {"ِ", "ُ", "ْ", "ّ", "ً", "ٍ", "ٌ", "ٰ", "ٓ"}
 PAGE_1_LETTERS = {"ب", "ت", "ث"}
+REQUIRED_ARABIC_FONT = "Amiri Quran"
 
 
 def load_pages(data_dir: Path) -> list[dict]:
@@ -85,19 +86,39 @@ def render_html(
     logo_path: Path,
     output_path: Path,
 ) -> None:
+    if not logo_path.is_file():
+        raise FileNotFoundError(f"OFFICIAL_LOGO_NOT_FOUND: {logo_path}")
     env = Environment(
         loader=FileSystemLoader(str(template_dir)),
         undefined=StrictUndefined,
         autoescape=True,
     )
     template = env.get_template("page.html.j2")
-    logo_uri = logo_path.resolve().as_uri() if logo_path.is_file() else None
     html = template.render(
         **page,
         css_uri=css_path.resolve().as_uri(),
-        logo_uri=logo_uri,
+        logo_uri=logo_path.resolve().as_uri(),
     )
     output_path.write_text(html, encoding="utf-8")
+
+
+async def assert_font_and_tokens(page) -> None:
+    font_ready = await page.evaluate(
+        "font => document.fonts.check(`32px \\\"${font}\\\"`, 'بَ تَ ثَ')",
+        REQUIRED_ARABIC_FONT,
+    )
+    if not font_ready:
+        raise RuntimeError(f"REQUIRED_FONT_NOT_ACTIVE: {REQUIRED_ARABIC_FONT}")
+
+    title_tokens = await page.locator(".material-title-text .arabic-token").count()
+    if title_tokens != 3:
+        raise RuntimeError(f"MATERIAL_TITLE_TOKEN_COUNT_INVALID: {title_tokens}")
+
+    connected_title = await page.locator(".material-title-text").evaluate(
+        "el => getComputedStyle(el).display !== 'flex'"
+    )
+    if connected_title:
+        raise RuntimeError("MATERIAL_TITLE_NOT_USING_SEPARATE_TOKEN_LAYOUT")
 
 
 async def browser_render(html_paths: list[Path], png_dir: Path, pdf_path: Path, css_path: Path) -> None:
@@ -108,6 +129,8 @@ async def browser_render(html_paths: list[Path], png_dir: Path, pdf_path: Path, 
         combined_sections: list[str] = []
         for html_path in html_paths:
             await page.goto(html_path.resolve().as_uri(), wait_until="networkidle")
+            await page.evaluate("document.fonts.ready")
+            await assert_font_and_tokens(page)
             await page.screenshot(
                 path=str(png_dir / f"{html_path.stem}.png"),
                 full_page=True,
@@ -124,6 +147,8 @@ async def browser_render(html_paths: list[Path], png_dir: Path, pdf_path: Path, 
             + "</body></html>"
         )
         await page.set_content(combined_html, wait_until="networkidle")
+        await page.evaluate("document.fonts.ready")
+        await assert_font_and_tokens(page)
         await page.pdf(
             path=str(pdf_path),
             format="A5",
@@ -137,7 +162,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--book-dir", default="books/jilid-1")
     parser.add_argument("--output-dir", default="dist/jilid-1")
-    parser.add_argument("--logo", default="books/shared/assets/qurbata-logo.png")
+    parser.add_argument("--logo", default="books/shared/assets/qurbata-logo.svg")
     args = parser.parse_args()
 
     book_dir = ROOT / args.book_dir
@@ -166,7 +191,8 @@ def main() -> int:
     pdf_path = output_dir / "QURBATA-JILID-1.pdf"
     asyncio.run(browser_render(html_paths, png_dir, pdf_path, css_path))
     print(f"PAGES_RENDERED={len(html_paths)}")
-    print(f"LOGO={'FOUND' if logo_path.is_file() else 'FALLBACK_WORDMARK'}")
+    print(f"LOGO=OFFICIAL_ASSET")
+    print(f"ARABIC_FONT={REQUIRED_ARABIC_FONT}")
     print(f"PDF={pdf_path.relative_to(ROOT)}")
     print(f"PNG_DIR={png_dir.relative_to(ROOT)}")
     return 0
