@@ -28,9 +28,9 @@ C0026,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهوية,َُِّْ
 C0027,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهويى,َُِّْٰ,ًٌٍٓ,12,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Alif maqshurah
 C0028,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,َُِّْٰ,ًٌٍٓ,12,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Hamzah qatha
 C0029,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهويٱ,َُِّْٰ,ًٌٍٓ,12,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Hamzah washal
-C0030,WORD,اللهٱ,َُِّْٰ,ًٌٍٓ,8,ANY,ANY,YES,YES,NO,YES,YES,YES,NO,NO,Lafzul Jalalah dasar
-C0031,WORD,اللهٱ,َُِّْٰ,ًٌٍٓ,10,ANY,ANY,YES,YES,NO,YES,YES,YES,NO,NO,Lafzul Jalalah berharakat
-C0032,WORD,وبفتلثمكاللهٱ,َُِّْٰ,ًٌٍٓ,12,ANY,ANY,YES,YES,NO,YES,YES,YES,NO,NO,Lafzul Jalalah awalan
+C0030,WORD|PHRASE,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,40,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Lafzul Jalalah dasar dalam kata atau konteks dua kata unik
+C0031,PHRASE,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,60,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Lafzul Jalalah berharakat dalam konteks frasa unik
+C0032,WORD|PHRASE,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,60,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Lafzul Jalalah berawalan dalam kata atau konteks frasa unik
 C0033,PHRASE,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,30,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Frasa dua kata
 C0034,PHRASE,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,60,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Frasa 3-4 kata
 C0035,AYAH_FRAGMENT,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,120,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Potongan pendek
