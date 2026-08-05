@@ -68,7 +68,7 @@ def main() -> int:
 
     command = [
         sys.executable,
-        str(ROOT / "tools/render_qurbata.py"),
+        str(ROOT / "tools/render_qurbata_v2.py"),
         "--book-dir",
         args.book_dir,
         "--output-dir",
