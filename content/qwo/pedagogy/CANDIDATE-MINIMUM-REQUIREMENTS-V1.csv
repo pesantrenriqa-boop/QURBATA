@@ -1,8 +1,8 @@
 CompetencyID,MinimumUniqueCandidates,Reason
-C0001,84,28 huruf x 3 harakat
-C0002,28,Satu fathah per huruf dasar
-C0003,28,Satu kasrah per huruf dasar
-C0004,28,Satu dhammah per huruf dasar
+C0001,81,27 huruf non-hamzah x 3 harakat; hamzah diajarkan pada bab khusus
+C0002,27,Satu fathah per huruf dasar non-hamzah
+C0003,27,Satu kasrah per huruf dasar non-hamzah
+C0004,27,Satu dhammah per huruf dasar non-hamzah
 C0005,180,Latihan dua huruf tidak tersambung
 C0006,180,Latihan dua huruf tersambung
 C0007,150,Kata tiga huruf sederhana
@@ -28,9 +28,9 @@ C0026,80,Ta marbuthah
 C0027,60,Alif maqshurah
 C0028,80,Hamzah qatha
 C0029,80,Hamzah washal
-C0030,30,Lafzul Jalalah dasar
-C0031,30,Lafzul Jalalah berharakat
-C0032,30,Lafzul Jalalah dengan awalan
+C0030,3,Seluruh bentuk kata unik Lafzul Jalalah dasar pada corpus
+C0031,10,Variasi kata unik Lafzul Jalalah berharakat; latihan tambahan memakai konteks frasa berbeda
+C0032,5,Variasi kata unik Lafzul Jalalah dengan awalan; latihan tambahan memakai konteks frasa berbeda
 C0033,120,Frasa dua kata
 C0034,100,Frasa tiga-empat kata
 C0035,80,Potongan ayat pendek
