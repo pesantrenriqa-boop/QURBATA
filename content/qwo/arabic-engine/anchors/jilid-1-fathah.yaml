@@ -1,37 +1,41 @@
-schema_version: 1
+schema_version: 2
 engine: QAE
-profile: jilid-1-fathah-v1
+profile: jilid-1-fathah-svg-v2
 status: production-test
 
 mark:
   id: fathah
   unicode: "َ"
-  renderer: css-shape
-  width_em: 0.42
-  height_em: 0.075
-  rotation_deg: -12
+  renderer: inline-svg-path
+  view_box: "0 0 100 30"
+  path_d: "M 8 22 L 92 6"
+  stroke_width: 13
+  width_em: 0.46
+  height_em: 0.18
+  rotation_deg: 0
   color: "#000000"
 
 anchors:
   "ب":
     x_em: 0.00
-    y_em: -0.10
+    y_em: 0.10
     scale: 1.00
   "ت":
     x_em: 0.00
-    y_em: -0.21
+    y_em: 0.00
     scale: 1.00
   "ث":
     x_em: 0.00
-    y_em: -0.28
+    y_em: -0.06
     scale: 1.00
 
 default_anchor:
   x_em: 0.00
-  y_em: -0.16
+  y_em: 0.04
   scale: 1.00
 
 notes:
-  - "Koordinat relatif terhadap kotak huruf, bukan terhadap baris halaman."
-  - "Fathah dibuat lebih jelas tanpa mengecilkan huruf dasar."
-  - "Anchor ت dan ث dinaikkan secukupnya agar tidak menabrak titik."
+  - "Fathah dirender sebagai SVG path QURBATA, bukan glyph combining mark font."
+  - "Koordinat relatif terhadap kotak token huruf. Nilai y positif menurunkan fathah mendekati huruf."
+  - "Anchor ta dan tsa sedikit lebih tinggi agar tidak bertabrakan dengan titik."
+  - "Ukuran fathah berdiri sendiri dan tidak memengaruhi ukuran huruf dasar."
