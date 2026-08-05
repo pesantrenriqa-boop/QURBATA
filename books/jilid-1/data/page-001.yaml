@@ -1,0 +1,53 @@
+schema_version: 1
+book: QURBATA
+volume: 1
+lesson: 1
+page: 1
+status: draft
+layout: master-layout-v1
+identity:
+  title: QURBATA
+  subtitle: "JILID 1 • PELAJARAN 1"
+  motto: "Mudah • Indah • Barokah"
+material_title:
+  - "بَ"
+  - "تَ"
+  - "ثَ"
+targets:
+  material_progress: "01 / 24"
+  memorization: "—"
+  nidom_hadith: "—"
+  arabic_language: "—"
+objects:
+  singles:
+    - "بَ"
+    - "تَ"
+    - "ثَ"
+    - "بَ"
+    - "تَ"
+    - "ثَ"
+  pairs:
+    - ["بَ", "تَ"]
+    - ["تَ", "بَ"]
+    - ["بَ", "ثَ"]
+    - ["ثَ", "بَ"]
+    - ["تَ", "ثَ"]
+    - ["ثَ", "تَ"]
+    - ["بَ", "بَ"]
+    - ["تَ", "تَ"]
+  triples:
+    - ["بَ", "تَ", "ثَ"]
+    - ["ثَ", "تَ", "بَ"]
+    - ["تَ", "بَ", "ثَ"]
+    - ["بَ", "ثَ", "تَ"]
+    - ["ثَ", "بَ", "تَ"]
+    - ["تَ", "ثَ", "بَ"]
+    - ["بَ", "بَ", "تَ"]
+    - ["ثَ", "تَ", "ثَ"]
+footer:
+  teacher_label: "Nama Guru"
+  date_label: "Tanggal"
+  score_label: "Nilai"
+notes:
+  - "Semua huruf pada halaman ini berharakat fathah."
+  - "Huruf pada objek dua dan tiga huruf tetap terpisah, belum disambung."
