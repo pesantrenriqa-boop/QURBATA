@@ -45,3 +45,7 @@ jobs:
       - name: Validate real Quran objects from letter to full ayah
         run: |
           python content/qwo/pedagogy/runtime/real_object_acceptance_test.py
+
+      - name: Require positive fixture coverage for C0001-C0041
+        run: |
+          python content/qwo/pedagogy/runtime/competency_coverage_gate.py
