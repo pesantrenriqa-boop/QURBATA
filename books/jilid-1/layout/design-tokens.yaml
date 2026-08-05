@@ -1,15 +1,15 @@
-schema_version: 1
+schema_version: 2
 name: QURBATA Jilid 1 Design Tokens
-status: draft
+status: active
 
 page:
   size: A5
   width_mm: 148
   height_mm: 210
   margin_top_mm: 7
-  margin_right_mm: 12
+  margin_right_mm: 14
   margin_bottom_mm: 7
-  margin_left_mm: 12
+  margin_left_mm: 14
 
 colors:
   green: "#064d37"
@@ -23,8 +23,8 @@ fonts:
   latin_family: "Inter"
   material_title_pt: 33
   single_object_pt: 39
-  pair_object_pt: 34
-  triple_object_pt: 29
+  pair_object_pt: 32
+  triple_object_pt: 27
   header_pt: 9.5
   target_pt: 6.2
   footer_pt: 7
@@ -32,17 +32,19 @@ fonts:
 spacing:
   title_token_gap_mm: 9
   pair_token_gap_mm: 4.5
-  triple_token_gap_mm: 3
-  group_gap_mm: 3
+  triple_token_gap_mm: 3.2
+  group_gap_mm: 4
   footer_gap_mm: 3
+  group_inline_safety_mm: 4
+  section_vertical_gap_mm: 3
 
 zones:
   header_height_mm: 18
-  targets_height_mm: 13
-  material_title_height_mm: 19
-  singles_height_mm: 36
-  pairs_height_mm: 42
-  triples_height_mm: 54
+  targets_height_mm: 14
+  material_title_height_mm: 18
+  singles_height_mm: 37
+  pairs_height_mm: 43
+  triples_height_mm: 50
   footer_height_mm: 10
   bottom_band_height_mm: 3.5
 
@@ -50,17 +52,25 @@ objects:
   singles_count: 6
   pairs_count: 8
   triples_count: 8
-  show_group_labels: true
+  show_group_labels: false
   show_object_boxes: false
   keep_letters_disconnected: true
+  layout_engine: flex-rtl-safe-v2
 
 arabic_rendering:
   direction: rtl
+  split_base_and_marks: true
+  mark_top_em: -0.18
+  mark_scale_em: 0.58
+  token_padding_top_em: 0.18
   font_feature_mark: true
   font_feature_mkmk: true
-  font_feature_liga: true
-  font_feature_calt: true
+  font_feature_liga: false
+  font_feature_calt: false
 
 notes:
-  - "File ini adalah sumber tunggal untuk ukuran, margin, jarak, warna, dan tipografi."
-  - "PDF dan PNG tidak diedit langsung; semua perubahan dilakukan melalui token ini atau data halaman."
+  - "Satu slot adalah satu objek; isi objek dapat berupa satu, dua, atau tiga huruf terpisah."
+  - "Label satu, dua, dan tiga huruf tidak ditampilkan pada halaman santri."
+  - "Kelompok dibedakan hanya melalui ritme dan ruang vertikal."
+  - "Huruf dasar dan harakat dirender sebagai elemen terpisah agar posisi harakat dapat dikendalikan."
+  - "PDF dan PNG tidak diedit langsung; semua perubahan dilakukan melalui token, template, atau data halaman."
