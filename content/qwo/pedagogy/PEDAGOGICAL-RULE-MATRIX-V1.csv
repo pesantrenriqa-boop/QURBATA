@@ -24,12 +24,12 @@ C0022,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهوي,َُِْ,ً�
 C0023,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهوي,َُِْ,ًٌٍّٰٓ,12,ANY,ANY,NO,YES,NO,YES,NO,YES,YES,YES,Sukun tebal
 C0024,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهوي,َُِّْ,ًٌٍٰٓ,12,ANY,ANY,NO,YES,NO,YES,YES,YES,YES,YES,Tasydid
 C0025,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهويٱ,َُِّْٰ,ًٌٍٓ,12,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Alif lam
-C0026,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهوية,َُِّْٰ,ًٌٍٓ,12,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Ta marbuthah
+C0026,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهوية,ًٌٍَُِّْٰٓ,,12,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Ta marbuthah
 C0027,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهويى,َُِّْٰ,ًٌٍٓ,12,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Alif maqshurah
-C0028,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,َُِّْٰ,ًٌٍٓ,12,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Hamzah qatha
+C0028,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,12,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Hamzah qatha
 C0029,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهويٱ,َُِّْٰ,ًٌٍٓ,12,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Hamzah washal
 C0030,WORD|PHRASE,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,40,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Lafzul Jalalah dasar dalam kata atau konteks dua kata unik
-C0031,PHRASE,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,60,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Lafzul Jalalah berharakat dalam konteks frasa unik
+C0031,WORD,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,60,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Lafzul Jalalah berharakat
 C0032,WORD|PHRASE,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,60,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Lafzul Jalalah berawalan dalam kata atau konteks frasa unik
 C0033,PHRASE,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,30,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Frasa dua kata
 C0034,PHRASE,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,60,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Frasa 3-4 kata
@@ -37,6 +37,6 @@ C0035,AYAH_FRAGMENT,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأ
 C0036,AYAH_FRAGMENT,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,250,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Potongan menengah
 C0037,FULL_AYAH,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,300,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Ayat pendek
 C0038,FULL_AYAH,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,600,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Ayat sedang
-C0039,FULL_AYAH,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,2000,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Ayat panjang
+C0039,FULL_AYAH,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓٔ,,2000,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Ayat panjang
 C0040,AYAH_FRAGMENT|FULL_AYAH,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,2000,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Waqaf ibtida
 C0041,FULL_AYAH,ابتثجحخدذرزسشصضطظعغفقكلمنهويءأإؤئآٱىة,ًٌٍَُِّْٰٓ,,2000,ANY,ANY,YES,YES,YES,YES,YES,YES,YES,YES,Integrasi
