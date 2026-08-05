@@ -15,7 +15,7 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
 
     steps:
       - name: Checkout
@@ -57,13 +57,25 @@ jobs:
             --labeled-output content/qwo/production/generated/LABELED-QURAN-OBJECTS-V1.csv \
             --report-output content/qwo/production/generated/CANDIDATE-SUFFICIENCY-REPORT-V1.csv
 
-      - name: Upload production audit outputs
+      - name: Compose QURBATA volumes 1-8
+        run: |
+          python content/qwo/composer/runtime/series_composer_v1.py \
+            --labeled content/qwo/production/generated/LABELED-QURAN-OBJECTS-V1.csv \
+            --allocation content/qwo/composer/SERIES-COMPETENCY-ALLOCATION-V1.csv \
+            --objects-per-competency 24 \
+            --output content/qwo/production/generated/QURBATA-1-8-COMPOSITION-V1.csv
+
+      - name: Require final readiness for QURBATA 1-8
+        run: python content/qwo/production/runtime/final_readiness_gate.py
+
+      - name: Upload production outputs
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: qurbata-candidate-audit
+          name: qurbata-1-8-production
           if-no-files-found: warn
           path: |
             content/qwo/production/generated/MASTER-QURAN-OBJECTS-V1.csv
             content/qwo/production/generated/LABELED-QURAN-OBJECTS-V1.csv
             content/qwo/production/generated/CANDIDATE-SUFFICIENCY-REPORT-V1.csv
+            content/qwo/production/generated/QURBATA-1-8-COMPOSITION-V1.csv
