@@ -9,16 +9,29 @@
 <body>
 <main class="page">
   <header class="header">
-    <div class="brand">{{ identity.title }}</div>
+    <div class="brand-block" aria-label="Identitas QURBATA">
+      {% if logo_uri %}<img class="brand-logo" src="{{ logo_uri }}" alt="Logo QURBATA">{% endif %}
+      <div class="brand-word">{{ identity.title }}</div>
+    </div>
     <div class="heading">
       <div class="subtitle">{{ identity.subtitle }}</div>
-      <div class="ornament">━━ ◇ ━━</div>
+      <div class="ornament" aria-hidden="true"><span></span><b>◇</b><span></span></div>
     </div>
     <div class="page-number">{{ '%02d'|format(page) }}</div>
   </header>
 
-  <section class="material-title" lang="ar">
-    {% for item in material_title %}<span>{{ item }}</span>{% endfor %}
+  <section class="targets" aria-label="Target capaian halaman">
+    <div class="targets-label">TARGET CAPAIAN</div>
+    <div class="target-item"><span>Progres materi</span><strong>{{ targets.material_progress }}</strong></div>
+    <div class="target-item"><span>Hafalan surat</span><strong>{{ targets.memorization }}</strong></div>
+    <div class="target-item"><span>Nidom / Hadits</span><strong>{{ targets.nidom_hadith }}</strong></div>
+    <div class="target-item"><span>Bahasa Arab</span><strong>{{ targets.arabic_language }}</strong></div>
+  </section>
+
+  <section class="material-title" lang="ar" aria-label="Judul materi">
+    <div class="title-ornament" aria-hidden="true"></div>
+    <div class="material-title-text">{% for item in material_title %}<span>{{ item }}</span>{% endfor %}</div>
+    <div class="title-ornament" aria-hidden="true"></div>
   </section>
 
   <section class="exercise-area" aria-label="Latihan membaca">
@@ -31,14 +44,6 @@
     <div class="group triples">
       {% for item in objects.triples %}<div class="object">{{ item|join(' ') }}</div>{% endfor %}
     </div>
-  </section>
-
-  <section class="targets">
-    <div class="label">TARGET CAPAIAN</div>
-    <div class="item">Progres materi<strong>{{ targets.material_progress }}</strong></div>
-    <div class="item">Hafalan surat<strong>{{ targets.memorization }}</strong></div>
-    <div class="item">Nidom / Hadits<strong>{{ targets.nidom_hadith }}</strong></div>
-    <div class="item">Bahasa Arab<strong>{{ targets.arabic_language }}</strong></div>
   </section>
 
   <footer class="footer">
