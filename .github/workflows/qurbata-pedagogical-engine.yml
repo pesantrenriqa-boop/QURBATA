@@ -15,7 +15,7 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
 
     steps:
       - name: Checkout
@@ -27,25 +27,43 @@ jobs:
           python-version: '3.12'
 
       - name: Compile Python sources
-        run: |
-          python -m compileall -q content/qwo
+        run: python -m compileall -q content/qwo
 
       - name: Validate competency dependency map
-        run: |
-          python content/qwo/pedagogical/runtime/foundation_smoke_test.py --mode dependency
+        run: python content/qwo/pedagogical/runtime/foundation_smoke_test.py --mode dependency
 
       - name: Run pedagogical regression suite
-        run: |
-          python content/qwo/pedagogical/runtime/foundation_smoke_test.py --mode regression
+        run: python content/qwo/pedagogical/runtime/foundation_smoke_test.py --mode regression
 
       - name: Run end-to-end foundation validation
-        run: |
-          python content/qwo/pedagogical/runtime/foundation_smoke_test.py --mode all
+        run: python content/qwo/pedagogical/runtime/foundation_smoke_test.py --mode all
 
       - name: Validate real Quran objects from letter to full ayah
-        run: |
-          python content/qwo/pedagogy/runtime/real_object_acceptance_test.py
+        run: python content/qwo/pedagogy/runtime/real_object_acceptance_test.py
 
       - name: Require positive fixture coverage for C0001-C0041
+        run: python content/qwo/pedagogy/runtime/competency_coverage_gate.py
+
+      - name: Verify Tanzil corpus and generate master Quran objects
         run: |
-          python content/qwo/pedagogy/runtime/competency_coverage_gate.py
+          python content/qwo/production/runtime/corpus_candidate_generator.py \
+            --corpus content/qwo/corpus/quran-uthmani.txt \
+            --output content/qwo/production/generated/MASTER-QURAN-OBJECTS-V1.csv
+
+      - name: Label candidates and audit sufficiency C0001-C0041
+        run: |
+          python content/qwo/production/runtime/candidate_sufficiency_pipeline.py \
+            --objects content/qwo/production/generated/MASTER-QURAN-OBJECTS-V1.csv \
+            --labeled-output content/qwo/production/generated/LABELED-QURAN-OBJECTS-V1.csv \
+            --report-output content/qwo/production/generated/CANDIDATE-SUFFICIENCY-REPORT-V1.csv
+
+      - name: Upload production audit outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qurbata-candidate-audit
+          if-no-files-found: warn
+          path: |
+            content/qwo/production/generated/MASTER-QURAN-OBJECTS-V1.csv
+            content/qwo/production/generated/LABELED-QURAN-OBJECTS-V1.csv
+            content/qwo/production/generated/CANDIDATE-SUFFICIENCY-REPORT-V1.csv
