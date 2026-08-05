@@ -3,28 +3,20 @@
   margin: 0;
 }
 
-:root {
-  --green: #064d37;
-  --gold: #b98a2f;
-  --ink: #0b0b0b;
-  --soft: #f7f8f5;
-  --muted: #65736c;
-}
-
 * { box-sizing: border-box; }
 
 html, body {
   margin: 0;
   padding: 0;
   background: #e9ece8;
-  font-family: Inter, "Noto Sans", Arial, sans-serif;
+  font-family: var(--latin-font), "Noto Sans", Arial, sans-serif;
 }
 
 .page {
-  width: 148mm;
-  height: 210mm;
+  width: var(--page-width);
+  height: var(--page-height);
   margin: 0 auto;
-  padding: 7mm 12mm 7mm;
+  padding: var(--margin-top) var(--margin-right) var(--margin-bottom) var(--margin-left);
   background: #fff;
   color: var(--ink);
   position: relative;
@@ -33,11 +25,11 @@ html, body {
 }
 
 .header {
-  height: 18mm;
+  height: var(--header-height);
   display: grid;
   grid-template-columns: 28mm 1fr 13mm;
   align-items: start;
-  gap: 3mm;
+  gap: var(--group-gap);
 }
 
 .brand-block {
@@ -58,7 +50,7 @@ html, body {
   color: var(--green);
   font-weight: 600;
   letter-spacing: .18em;
-  font-size: 9.5pt;
+  font-size: var(--header-size);
 }
 
 .heading .ornament {
@@ -88,7 +80,7 @@ html, body {
 }
 
 .targets {
-  height: 14mm;
+  height: var(--targets-height);
   display: grid;
   grid-template-columns: .9fr repeat(4, 1fr);
   align-items: center;
@@ -97,7 +89,7 @@ html, body {
   background: var(--soft);
   border-radius: 3mm;
   color: var(--green);
-  font-size: 5.9pt;
+  font-size: var(--target-size);
 }
 .targets-label { font-weight: 800; letter-spacing: .02em; }
 .target-item {
@@ -112,16 +104,16 @@ html, body {
 .target-item strong {
   margin-top: .4mm;
   color: var(--ink);
-  font-size: 6.7pt;
+  font-size: calc(var(--target-size) + .8pt);
   line-height: 1.15;
 }
 
 .material-title {
-  height: 18mm;
+  height: var(--material-title-height);
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  gap: 4mm;
+  gap: var(--group-gap);
 }
 .title-ornament {
   height: .25mm;
@@ -135,10 +127,10 @@ html, body {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
-  gap: 9mm;
+  gap: var(--title-token-gap);
   text-align: center;
-  font-family: "Amiri Quran", "Amiri", serif;
-  font-size: 33pt;
+  font-family: var(--arabic-font), "Amiri", serif;
+  font-size: var(--material-title-size);
   font-weight: 400;
   line-height: .82;
   white-space: nowrap;
@@ -147,10 +139,10 @@ html, body {
 }
 
 .exercise-area {
-  height: 130mm;
+  height: calc(var(--singles-height) + var(--pairs-height) + var(--triples-height));
   display: grid;
-  grid-template-rows: 37mm 43mm 50mm;
-  row-gap: 1mm;
+  grid-template-rows: var(--singles-height) var(--pairs-height) var(--triples-height);
+  row-gap: 0;
 }
 
 .exercise-section {
@@ -199,7 +191,7 @@ html, body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: "Amiri Quran", "Amiri", serif;
+  font-family: var(--arabic-font), "Amiri", serif;
   font-weight: 400;
   white-space: nowrap;
   line-height: .82;
@@ -213,22 +205,22 @@ html, body {
   unicode-bidi: isolate;
   flex: 0 0 auto;
 }
-.singles .object { font-size: 38pt; }
-.pairs .object { font-size: 32pt; gap: 4.5mm; }
-.triples .object { font-size: 27pt; gap: 3.2mm; }
+.singles .object { font-size: var(--single-object-size); }
+.pairs .object { font-size: var(--pair-object-size); gap: var(--pair-token-gap); }
+.triples .object { font-size: var(--triple-object-size); gap: var(--triple-token-gap); }
 
 .footer {
-  height: 10mm;
+  height: var(--footer-height);
   margin-top: 1mm;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  gap: 3mm;
+  gap: var(--footer-gap);
   padding: .8mm 4mm;
   background: var(--soft);
   border-radius: 3mm;
   color: var(--green);
-  font-size: 7pt;
+  font-size: var(--footer-size);
 }
 .footer .field { display: flex; gap: 2mm; align-items: center; }
 .footer .line { flex: 1; border-bottom: .25mm dotted var(--muted); height: 3.5mm; }
@@ -238,7 +230,7 @@ html, body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 3.5mm;
+  height: var(--bottom-band-height);
   background: var(--green);
 }
 .bottom-band::after {
