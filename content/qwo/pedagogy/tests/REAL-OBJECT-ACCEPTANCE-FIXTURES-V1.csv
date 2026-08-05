@@ -1,10 +1,17 @@
 FixtureID,CompetencyID,ObjectType,Text,SourceRef,Expected,Notes
+F0000,C0001,LETTER,نَ,1:7,PASS,Huruf tunggal berharakat pendek
 F0001,C0002,LETTER,بَ,2:2,PASS,Fathah tunggal
 F0002,C0003,LETTER,بِ,1:1,PASS,Kasrah tunggal
 F0003,C0004,LETTER,تُ,2:30,PASS,Dhammah tunggal
 F0004,C0005,WORD_FRAGMENT,دَرَ,2:27,PASS,Dua huruf dengan transisi non-connector
 F0005,C0006,WORD_FRAGMENT,بَتَ,2:74,PASS,Dua huruf tersambung
 F0006,C0007,WORD,خَلَقَ,96:1,PASS,Tiga huruf sederhana
+F0006A,C0008,WORD,كَتَبَ,2:79,PASS,Sambungan awal pada kata tiga huruf
+F0006B,C0009,WORD,خَلَقَ,96:1,PASS,Sambungan tengah pada kata tiga huruf
+F0006C,C0010,WORD,رَزَقَ,2:212,PASS,Sambungan akhir pada kata tiga huruf
+F0006D,C0011,WORD,ذَهَبَ,2:17,PASS,Transisi huruf non-connector
+F0006E,C0012,WORD,رَزَقَهُ,2:212,PASS,Kata empat huruf tanpa fitur lanjutan
+F0006F,C0013,WORD,فَجَعَلَهُ,87:5,PASS,Kata lima huruf atau lebih tanpa fitur lanjutan
 F0007,C0014,WORD,قَالَ,2:30,PASS,Mad alif
 F0008,C0015,WORD,قِيلَ,2:11,PASS,Mad ya
 F0009,C0016,WORD,قُولُوا,2:43,PASS,Mad waw
@@ -12,6 +19,9 @@ F0010,C0017,WORD,عَذَابًا,2:7,PASS,Tanwin fathah setelah mad
 F0011,C0018,WORD,رَحِيمٍ,36:58,PASS,Tanwin kasrah tanpa hamzah atau sukun baru
 F0012,C0019,WORD,عَلِيمٌ,2:29,PASS,Tanwin dhammah
 F0013,C0020,WORD,مِنْ,1:7,PASS,Sukun dasar
+F0013A,C0021,WORD,يَأْتِ,2:210,PASS,Sukun pada hamzah
+F0013B,C0022,WORD,يَعْلَمُ,2:30,PASS,Sukun pada ain
+F0013C,C0023,WORD,يَطْمَعُ,2:75,PASS,Sukun pada huruf tebal tha
 F0014,C0024,WORD,رَبِّ,1:2,PASS,Tasydid tanpa hamzah
 F0015,C0025,WORD,الْحَمْدُ,1:2,PASS,Alif lam
 F0016,C0026,WORD,رَحْمَةٌ,2:157,PASS,Ta marbuthah
