@@ -1,10 +1,11 @@
-schema_version: 1
+schema_version: 2
 book: QURBATA
 volume: 1
 lesson: 1
 page: 1
 status: draft
 layout: master-layout-v1
+competency_path: content/qwo/competency/jilid-1/page-001.yaml
 identity:
   title: QURBATA
   subtitle: "JILID 1 • PELAJARAN 1"
@@ -51,3 +52,4 @@ footer:
 notes:
   - "Semua huruf pada halaman ini berharakat fathah."
   - "Huruf pada objek dua dan tiga huruf tetap terpisah, belum disambung."
+  - "Identitas objek kanonik dibuat otomatis oleh Object Engine sebelum render."
