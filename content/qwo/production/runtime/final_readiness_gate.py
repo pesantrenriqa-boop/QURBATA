@@ -10,7 +10,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[4]
 REPORT = ROOT / "content/qwo/production/generated/CANDIDATE-SUFFICIENCY-REPORT-V1.csv"
 COMPOSITION = ROOT / "content/qwo/production/generated/QURBATA-1-8-COMPOSITION-V1.csv"
-EXPECTED_COMPETENCIES = {f"C{i:04d}" for i in range(1, 42)}
+EXPECTED_REPORT_COMPETENCIES = {f"C{i:04d}" for i in range(1, 42)}
+EXPECTED_PAGE_COMPETENCIES = {f"C{i:04d}" for i in range(2, 42)}
 EXPECTED_VOLUMES = {str(i) for i in range(1, 9)}
 
 
@@ -31,7 +32,7 @@ def main() -> int:
 
     report_ids = {row.get("CompetencyID", "") for row in report}
     shortages = [row for row in report if row.get("Status") != "PASS"]
-    if report_ids != EXPECTED_COMPETENCIES:
+    if report_ids != EXPECTED_REPORT_COMPETENCIES:
         print("READINESS_FAIL competency_report_incomplete", file=sys.stderr)
         return 3
     if shortages:
@@ -51,7 +52,7 @@ def main() -> int:
     if volumes != EXPECTED_VOLUMES:
         print(f"READINESS_FAIL volumes={sorted(volumes)}", file=sys.stderr)
         return 6
-    if competencies != EXPECTED_COMPETENCIES:
+    if competencies != EXPECTED_PAGE_COMPETENCIES:
         print("READINESS_FAIL composition_competency_coverage", file=sys.stderr)
         return 7
     if len(keys) != len(set(keys)):
@@ -63,11 +64,15 @@ def main() -> int:
     if any(count != 24 for count in positions.values()):
         print("READINESS_FAIL page_object_count", file=sys.stderr)
         return 10
+    if len(positions) != 40 or len(composition) != 960:
+        print("READINESS_FAIL prototype_page_count", file=sys.stderr)
+        return 11
 
     print(f"COMPOSITION_ROWS={len(composition)}")
     print(f"UNIQUE_OBJECTS={len(set(keys))}")
     print(f"VOLUMES={len(volumes)}")
-    print(f"COMPETENCIES={len(competencies)}")
+    print(f"PAGE_COMPETENCIES={len(competencies)}")
+    print("C0001_STATUS=NON_PAGE_PREREQUISITE")
     print("READY_TO_GENERATE_QURBATA_1_8")
     return 0
 
