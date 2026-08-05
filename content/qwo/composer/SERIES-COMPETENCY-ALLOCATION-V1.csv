@@ -1,8 +1,8 @@
 Volume,CompetencyStart,CompetencyEnd,PrimaryObjectProgression,PedagogicalFocus
-1,C0001,C0006,LETTER|WORD_FRAGMENT,Huruf berharakat dan dua huruf sederhana
+1,C0002,C0006,LETTER|WORD_FRAGMENT,C0001 menjadi prasyarat payung; halaman dimulai fathah kasrah dhammah dan dua huruf
 2,C0007,C0013,WORD,Tiga huruf sambung hingga kata lima huruf atau lebih
 3,C0014,C0020,WORD,Mad tanwin dan sukun dasar
-4,C0021,C0032,WORD,Sukun khusus tasydid bentuk khusus hamzah dan bab Lafzul Jalalah
+4,C0021,C0032,WORD|PHRASE,Sukun khusus tasydid bentuk khusus hamzah dan bab Lafzul Jalalah berkonteks
 5,C0033,C0034,PHRASE,Frasa dua sampai empat kata Al-Quran
 6,C0035,C0036,AYAH_FRAGMENT,Potongan ayat pendek dan menengah sesuai tangga kompetensi
 7,C0037,C0040,FULL_AYAH|AYAH_FRAGMENT,Ayat utuh pendek-sedang-panjang serta waqaf ibtida
