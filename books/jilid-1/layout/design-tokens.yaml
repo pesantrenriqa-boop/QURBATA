@@ -1,4 +1,4 @@
-schema_version: 2
+schema_version: 3
 name: QURBATA Jilid 1 Design Tokens
 status: active
 
@@ -35,8 +35,8 @@ spacing:
   triple_token_gap_mm: 3.2
   group_gap_mm: 4
   footer_gap_mm: 3
-  group_inline_safety_mm: 4
-  section_vertical_gap_mm: 3
+  group_inline_safety_mm: 5
+  section_vertical_gap_mm: 2.5
 
 zones:
   header_height_mm: 18
@@ -58,19 +58,16 @@ objects:
   layout_engine: flex-rtl-safe-v2
 
 arabic_rendering:
+  engine: QAE
+  profile_path: content/qwo/arabic-engine/anchors/jilid-1-fathah.yaml
   direction: rtl
   split_base_and_marks: true
-  mark_top_em: -0.18
-  mark_scale_em: 0.58
-  token_padding_top_em: 0.18
-  font_feature_mark: true
-  font_feature_mkmk: true
+  mark_renderer: css-shape
   font_feature_liga: false
   font_feature_calt: false
 
 notes:
-  - "Satu slot adalah satu objek; isi objek dapat berupa satu, dua, atau tiga huruf terpisah."
-  - "Label satu, dua, dan tiga huruf tidak ditampilkan pada halaman santri."
-  - "Kelompok dibedakan hanya melalui ritme dan ruang vertikal."
-  - "Huruf dasar dan harakat dirender sebagai elemen terpisah agar posisi harakat dapat dikendalikan."
-  - "PDF dan PNG tidak diedit langsung; semua perubahan dilakukan melalui token, template, atau data halaman."
+  - "Huruf dasar memakai Amiri Quran tanpa combining harakat."
+  - "Fathah digambar mandiri oleh QAE agar besar, dekat, dan tidak bertumpuk."
+  - "Posisi fathah ditentukan per huruf melalui anchor profile."
+  - "PDF dan PNG tidak diedit langsung."
