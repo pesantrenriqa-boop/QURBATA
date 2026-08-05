@@ -36,15 +36,24 @@
   </section>
 
   <section class="exercise-area" aria-label="Latihan membaca">
-    <div class="group singles">
-      {% for item in objects.singles %}<div class="object"><span class="arabic-token">{{ item }}</span></div>{% endfor %}
-    </div>
-    <div class="group pairs">
-      {% for item in objects.pairs %}<div class="object">{% for token in item %}<span class="arabic-token">{{ token }}</span>{% endfor %}</div>{% endfor %}
-    </div>
-    <div class="group triples">
-      {% for item in objects.triples %}<div class="object">{% for token in item %}<span class="arabic-token">{{ token }}</span>{% endfor %}</div>{% endfor %}
-    </div>
+    <section class="exercise-section singles-section">
+      <div class="group-label">HURUF TUNGGAL</div>
+      <div class="group singles">
+        {% for item in objects.singles %}<div class="object"><span class="arabic-token">{{ item }}</span></div>{% endfor %}
+      </div>
+    </section>
+    <section class="exercise-section pairs-section">
+      <div class="group-label">2 HURUF TERPISAH</div>
+      <div class="group pairs">
+        {% for item in objects.pairs %}<div class="object">{% for token in item %}<span class="arabic-token">{{ token }}</span>{% endfor %}</div>{% endfor %}
+      </div>
+    </section>
+    <section class="exercise-section triples-section">
+      <div class="group-label">3 HURUF TERPISAH</div>
+      <div class="group triples">
+        {% for item in objects.triples %}<div class="object">{% for token in item %}<span class="arabic-token">{{ token }}</span>{% endfor %}</div>{% endfor %}
+      </div>
+    </section>
   </section>
 
   <footer class="footer">
