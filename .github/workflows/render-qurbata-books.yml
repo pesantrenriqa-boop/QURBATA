@@ -1,0 +1,54 @@
+name: Render QURBATA Books
+
+on:
+  push:
+    branches:
+      - content/qurbata-jilid-1-8-production
+    paths:
+      - 'books/**'
+      - 'tools/render_qurbata.py'
+      - 'requirements-render.txt'
+      - '.github/workflows/render-qurbata-books.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render-jilid-1:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Arabic fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-core fonts-noto-extra
+
+      - name: Install renderer
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-render.txt
+          playwright install --with-deps chromium
+
+      - name: Render Jilid 1
+        run: python tools/render_qurbata.py --book-dir books/jilid-1 --output-dir dist/jilid-1
+
+      - name: Upload print and preview outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-JILID-1-render
+          if-no-files-found: error
+          retention-days: 30
+          path: |
+            dist/jilid-1/QURBATA-JILID-1.pdf
+            dist/jilid-1/png/*.png
+            dist/jilid-1/html/*.html
