@@ -1,4 +1,4 @@
-schema_version: 3
+schema_version: 4
 name: QURBATA Jilid 1 Design Tokens
 status: active
 
@@ -56,18 +56,25 @@ objects:
   show_object_boxes: false
   keep_letters_disconnected: true
   layout_engine: flex-rtl-safe-v2
+  canonical_object_engine: true
 
 arabic_rendering:
   engine: QAE
   profile_path: content/qwo/arabic-engine/anchors/jilid-1-fathah.yaml
   direction: rtl
   split_base_and_marks: true
-  mark_renderer: css-shape
+  mark_renderer: inline-svg-path
   font_feature_liga: false
   font_feature_calt: false
 
+validation:
+  competency_required: true
+  object_engine_required: true
+  render_only_after_validation: true
+
 notes:
-  - "Huruf dasar memakai Amiri Quran tanpa combining harakat."
-  - "Fathah digambar mandiri oleh QAE agar besar, dekat, dan tidak bertumpuk."
-  - "Posisi fathah ditentukan per huruf melalui anchor profile."
+  - "Huruf dasar memakai Amiri Quran tanpa combining harakat pada hasil visual."
+  - "Fathah digambar sebagai inline SVG path oleh QAE."
+  - "Setiap halaman wajib terhubung ke competency contract."
+  - "Setiap slot menjadi learning object kanonik sebelum proses render."
   - "PDF dan PNG tidak diedit langsung."
