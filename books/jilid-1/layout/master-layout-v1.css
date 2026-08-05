@@ -27,9 +27,10 @@ html, body { margin: 0; padding: 0; background: #e9ece8; font-family: var(--lati
 .singles .object { flex: 0 0 30%; font-size: var(--single-object-size); }
 .pairs .object { flex: 0 0 23%; font-size: var(--pair-object-size); gap: var(--pair-token-gap); }
 .triples .object { flex: 0 0 23%; font-size: var(--triple-object-size); gap: var(--triple-token-gap); }
-.arabic-token { position: relative; display: inline-flex; align-items: flex-end; justify-content: center; flex: 0 0 auto; width: 1em; height: 1.18em; direction: rtl; unicode-bidi: isolate; }
+.arabic-token { position: relative; display: inline-flex; align-items: flex-end; justify-content: center; flex: 0 0 auto; width: 1em; height: 1.12em; direction: rtl; unicode-bidi: isolate; overflow: visible; }
 .arabic-base { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); display: block; line-height: 1; }
-.qae-mark { position: absolute; left: calc(50% + var(--qae-x)); top: .12em; width: calc(var(--qae-mark-width) * var(--qae-scale)); height: calc(var(--qae-mark-height) * var(--qae-scale)); background: var(--qae-mark-color); border-radius: 999px; transform: translate(-50%, var(--qae-y)) rotate(var(--qae-mark-rotation)); transform-origin: center; display: block; pointer-events: none; }
+.qae-mark { position: absolute; left: calc(50% + var(--qae-x)); top: .03em; width: calc(var(--qae-mark-width) * var(--qae-scale)); height: calc(var(--qae-mark-height) * var(--qae-scale)); transform: translate(-50%, var(--qae-y)) rotate(var(--qae-mark-rotation)); transform-origin: center; display: block; overflow: visible; pointer-events: none; }
+.qae-mark path { vector-effect: non-scaling-stroke; }
 .footer { height: var(--footer-height); margin-top: 1mm; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; gap: var(--footer-gap); padding: .8mm 4mm; background: var(--soft); border-radius: 3mm; color: var(--green); font-size: var(--footer-size); }
 .footer .field { min-width: 0; display: flex; gap: 2mm; align-items: center; }
 .footer .line { flex: 1; min-width: 0; border-bottom: .25mm dotted var(--muted); height: 3.5mm; }
