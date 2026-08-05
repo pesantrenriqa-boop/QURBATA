@@ -30,28 +30,39 @@
   <section class="material-title" lang="ar" aria-label="Judul materi">
     <div class="title-ornament" aria-hidden="true"></div>
     <div class="material-title-text">
-      {% for item in material_title %}<span class="arabic-token">{{ item }}</span>{% endfor %}
+      {% for token in material_title %}
+      <span class="arabic-token"><span class="arabic-base">{{ token[0] }}</span><span class="arabic-mark">{{ token[1:] }}</span></span>
+      {% endfor %}
     </div>
     <div class="title-ornament" aria-hidden="true"></div>
   </section>
 
   <section class="exercise-area" aria-label="Latihan membaca">
     <section class="exercise-section singles-section">
-      <div class="group-label">HURUF TUNGGAL</div>
       <div class="group singles">
-        {% for item in objects.singles %}<div class="object"><span class="arabic-token">{{ item }}</span></div>{% endfor %}
+        {% for token in objects.singles %}
+        <div class="object"><span class="arabic-token"><span class="arabic-base">{{ token[0] }}</span><span class="arabic-mark">{{ token[1:] }}</span></span></div>
+        {% endfor %}
       </div>
     </section>
+
     <section class="exercise-section pairs-section">
-      <div class="group-label">2 HURUF TERPISAH</div>
       <div class="group pairs">
-        {% for item in objects.pairs %}<div class="object">{% for token in item %}<span class="arabic-token">{{ token }}</span>{% endfor %}</div>{% endfor %}
+        {% for item in objects.pairs %}
+        <div class="object">
+          {% for token in item %}<span class="arabic-token"><span class="arabic-base">{{ token[0] }}</span><span class="arabic-mark">{{ token[1:] }}</span></span>{% endfor %}
+        </div>
+        {% endfor %}
       </div>
     </section>
+
     <section class="exercise-section triples-section">
-      <div class="group-label">3 HURUF TERPISAH</div>
       <div class="group triples">
-        {% for item in objects.triples %}<div class="object">{% for token in item %}<span class="arabic-token">{{ token }}</span>{% endfor %}</div>{% endfor %}
+        {% for item in objects.triples %}
+        <div class="object">
+          {% for token in item %}<span class="arabic-token"><span class="arabic-base">{{ token[0] }}</span><span class="arabic-mark">{{ token[1:] }}</span></span>{% endfor %}
+        </div>
+        {% endfor %}
       </div>
     </section>
   </section>
