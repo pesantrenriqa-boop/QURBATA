@@ -2,14 +2,30 @@
 """QURBATA Arabic Engine v2: render fathah, kasrah, and dhammah independently."""
 from __future__ import annotations
 
-import unicodedata
+import importlib.util
+import sys
 from copy import deepcopy
 from pathlib import Path
 from typing import Any
 
 import yaml
 
+ROOT = Path(__file__).resolve().parents[1]
+PUE_PATH = ROOT / "content/qwo/pedagogy/runtime/pedagogical_unit_engine.py"
 MARK_NAMES = {"َ": "fathah", "ِ": "kasrah", "ُ": "dhammah"}
+
+
+def load_pue():
+    spec = importlib.util.spec_from_file_location("qurbata_pue", PUE_PATH)
+    if spec is None or spec.loader is None:
+        raise RuntimeError("PUE_IMPORT_FAILED")
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = module
+    spec.loader.exec_module(module)
+    return module
+
+
+PUE = load_pue()
 
 
 def load_qae_profile(path: Path) -> dict[str, Any]:
@@ -34,15 +50,15 @@ def load_qae_profile(path: Path) -> dict[str, Any]:
 
 
 def split_token(token: str) -> tuple[str, str]:
-    normalized = unicodedata.normalize("NFD", token)
-    bases = [char for char in normalized if unicodedata.category(char).startswith("L")]
-    marks = [char for char in normalized if unicodedata.category(char).startswith("M")]
-    if len(bases) != 1:
-        raise ValueError(f"QAE_TOKEN_MUST_HAVE_ONE_BASE: {token!r}")
-    supported = [mark for mark in marks if mark in MARK_NAMES]
-    if len(marks) != 1 or len(supported) != 1:
-        raise ValueError(f"QAE_EXACTLY_ONE_SHORT_VOWEL_REQUIRED: {token!r}")
-    return bases[0], supported[0]
+    units = PUE.grapheme_units(token)
+    if len(units) != 1:
+        raise ValueError(f"QAE_TOKEN_MUST_HAVE_ONE_UNIT: {token!r}")
+    decision = PUE.validate_short_vowel_unit(units[0])
+    if not decision.passed:
+        raise ValueError(
+            f"QAE_EXACTLY_ONE_SHORT_VOWEL_REQUIRED: {token!r} reasons={decision.reasons}"
+        )
+    return decision.base, decision.marks[0]
 
 
 def render_token(token: str, profile: dict[str, Any]) -> dict[str, Any]:
@@ -80,9 +96,16 @@ def render_token(token: str, profile: dict[str, Any]) -> dict[str, Any]:
 
 def enrich_page(page: dict[str, Any], profile: dict[str, Any]) -> dict[str, Any]:
     enriched = deepcopy(page)
-    objects = page.get("objects", [])
-    enriched["qae"] = {
-        "profile": profile.get("profile"),
-        "objects": [[render_token(token, profile) for token in item["tokens"]] for item in objects],
-    }
+    rendered_objects: list[dict[str, Any]] = []
+    for item in page.get("objects", []):
+        rendered = deepcopy(item)
+        if item.get("render_mode") == "qae-short-vowel":
+            rendered["qae_tokens"] = [render_token(token, profile) for token in item["tokens"]]
+        elif item.get("render_mode") == "raw-quran":
+            rendered["qae_tokens"] = []
+        else:
+            raise ValueError(f"QAE_UNKNOWN_RENDER_MODE: {item.get('render_mode')}")
+        rendered_objects.append(rendered)
+    enriched["objects"] = rendered_objects
+    enriched["qae"] = {"profile": profile.get("profile")}
     return enriched
