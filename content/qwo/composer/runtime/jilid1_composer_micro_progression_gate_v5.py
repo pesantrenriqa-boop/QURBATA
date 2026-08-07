@@ -34,12 +34,14 @@ def main() -> int:
     if len(injection) != 28:
         issues.append(f"LETTER_NAME_ROWS actual={len(injection)} expected=28")
 
+    meta_by_page = {int(r["Page"]): r for r in metadata}
     by_page: dict[int, list[dict[str, str]]] = defaultdict(list)
     for row in reading:
         by_page[int(row["Page"])].append(row)
     if set(by_page) != {p for p in range(1, 41) if p not in SPECIAL_PAGES}:
         issues.append("READING_PAGE_SET_INVALID")
 
+    adjacent_duplicate_count = 0
     for page, page_rows in sorted(by_page.items()):
         slots = sorted(int(r["Slot"]) for r in page_rows)
         if slots != list(range(1, 25)):
@@ -57,12 +59,15 @@ def main() -> int:
             if r["ObjectOrigin"] != "PRACTICE_GENERATED" or r["QuranQuotation"] != "NO":
                 issues.append(f"ORIGIN_POLICY page={page} slot={r['Slot']}")
             bases = [r[f"Base{i}"] for i in range(1, length+1)]
-            meta = metadata[page-1]
+            meta = meta_by_page[page]
             active = set(meta["ActiveLetters"])
             if any(base not in active for base in bases):
                 issues.append(f"FUTURE_LETTER_LEAKAGE page={page} slot={r['Slot']} bases={''.join(bases)}")
+            if length > 1 and any(bases[i] == bases[i+1] for i in range(length-1)):
+                adjacent_duplicate_count += 1
+                issues.append(f"ADJACENT_DUPLICATE_BASE page={page} slot={r['Slot']} bases={''.join(bases)}")
 
-    page1 = by_page.get(1, [])
+    page1 = sorted(by_page.get(1, []), key=lambda r: int(r["Slot"]))
     page1_bases = {r[f"Base{i}"] for r in page1 for i in range(1, int(r["UnitLength"])+1)}
     if not page1_bases <= set("ابتث"):
         issues.append(f"PAGE1_LETTER_SET actual={''.join(sorted(page1_bases))}")
@@ -70,6 +75,11 @@ def main() -> int:
         issues.append("PAGE1_FUTURE_NUN_YA_LEAKAGE")
     if any(r["HarakatStage"] != "FATHAH" for r in page1):
         issues.append("PAGE1_NOT_FATHAH_ONLY")
+
+    page1_l1 = [r["Base1"] for r in page1 if r["UnitLength"] == "1"]
+    expected_page1_l1 = list("ابتثابتث")
+    if page1_l1 != expected_page1_l1:
+        issues.append(f"PAGE1_L1_ORDER actual={''.join(page1_l1)} expected={''.join(expected_page1_l1)}")
 
     page20_reading = len(by_page.get(20, []))
     page40_reading = len(by_page.get(40, []))
@@ -84,7 +94,9 @@ def main() -> int:
     print("V7_SLOT_PATTERN=8_L1|8_L2|8_L3")
     print("V7_PAGE1_ACTIVE_LETTERS=ابتث")
     print(f"V7_PAGE1_BASES={''.join(sorted(page1_bases))}")
+    print(f"V7_PAGE1_L1_ORDER={''.join(page1_l1)}")
     print("V7_PAGE1_NUN_YA=FORBIDDEN")
+    print(f"V7_ADJACENT_DUPLICATES={adjacent_duplicate_count}")
     print("V7_DISPLAY_JOIN_POLICY=DISCONNECTED_NO_SPACE")
     print(f"V7_MICRO_PROGRESSION_ISSUES={len(issues)}")
     print(f"PAGE20_READING_OBJECTS={page20_reading}")
