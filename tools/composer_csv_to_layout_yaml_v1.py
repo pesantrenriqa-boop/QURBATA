@@ -4,26 +4,41 @@ from __future__ import annotations
 
 import argparse
 import csv
-import unicodedata
+import importlib.util
+import sys
 from collections import defaultdict
 from pathlib import Path
 
 import yaml
 
-SHORT_MARKS = {"َ", "ِ", "ُ"}
+ROOT = Path(__file__).resolve().parents[1]
+PUE_PATH = ROOT / "content/qwo/pedagogy/runtime/pedagogical_unit_engine.py"
+
+
+def load_pue():
+    spec = importlib.util.spec_from_file_location("qurbata_pedagogical_unit_engine", PUE_PATH)
+    if spec is None or spec.loader is None:
+        raise RuntimeError("PUE_IMPORT_FAILED")
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = module
+    spec.loader.exec_module(module)
+    return module
+
+
+PUE = load_pue()
 
 
 def split_short_units(text: str) -> list[str]:
-    units: list[str] = []
-    for char in unicodedata.normalize("NFC", text):
-        if unicodedata.category(char).startswith("L"):
-            units.append(char)
-        elif units and unicodedata.category(char).startswith("M"):
-            units[-1] += char
+    units = PUE.grapheme_units(text)
+    if not units:
+        raise ValueError(f"NO_PEDAGOGICAL_UNITS: {text!r}")
+
     for unit in units:
-        marks = [char for char in unicodedata.normalize("NFD", unit) if unicodedata.category(char).startswith("M")]
-        if len(marks) != 1 or marks[0] not in SHORT_MARKS:
-            raise ValueError(f"INVALID_SHORT_UNIT: {unit!r} from {text!r}")
+        decision = PUE.validate_short_vowel_unit(unit)
+        if not decision.passed:
+            raise ValueError(
+                f"INVALID_SHORT_UNIT: {unit!r} from {text!r} reasons={'|'.join(decision.reasons)}"
+            )
     return units
 
 
