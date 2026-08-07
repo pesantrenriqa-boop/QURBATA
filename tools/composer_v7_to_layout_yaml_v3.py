@@ -14,6 +14,18 @@ DEFAULT_INPUT=ROOT/'content/qwo/composer/output/jilid-1-v7-micro-progression'
 SPECIAL={20,40}
 def read(path):
  with path.open(encoding='utf-8-sig',newline='') as h:return list(csv.DictReader(h))
+def material_title(meta,page):
+ if page in SPECIAL:return 'NAMA HURUF HIJAIYAH'
+ stage=meta.get('HarakatStage','').strip()
+ new_letters=meta.get('NewLetters','').strip()
+ labels={'FATHAH':'FATHAH','KASRAH':'KASRAH','DHAMMAH':'DHAMMAH','MIXED':'CAMPURAN HARAKAT'}
+ label=labels.get(stage,stage or 'LATIHAN MEMBACA')
+ if new_letters:
+  return f"{label} • HURUF BARU: {' '.join(new_letters)}"
+ if stage=='KASRAH':return 'KASRAH • MUROJAAH FATHAH'
+ if stage=='DHAMMAH':return 'DHAMMAH • MUROJAAH FATHAH & KASRAH'
+ if stage=='MIXED':return 'CAMPURAN FATHAH • KASRAH • DHAMMAH'
+ return label
 def main():
  p=argparse.ArgumentParser();p.add_argument('--input-dir',default=str(DEFAULT_INPUT.relative_to(ROOT)));p.add_argument('--output-dir',default='books/jilid-1/data-generated-v7-native');a=p.parse_args()
  inp=Path(a.input_dir);inp=inp if inp.is_absolute() else ROOT/inp;out=Path(a.output_dir);out=out if out.is_absolute() else ROOT/out;out.mkdir(parents=True,exist_ok=True)
@@ -26,7 +38,7 @@ def main():
  total=names=0
  for page in range(1,41):
   m=mb[page]
-  data={'schema_version':3,'book':'QURBATA','volume':1,'page':page,'status':'v7-pedagogical-layout-review-candidate','layout':'canonical-j1-v2','source':str(inp).replace('\\','/'),'page_role':'LETTER_NAMES' if page in SPECIAL else 'READING','identity':{'title':'QURBATA','subtitle':f'JILID 1 • HALAMAN {page:02d}'},'targets':{'material_progress':f'{page:02d} / 40','competency_codes':m.get('CompetencyCodes',''),'competency_descriptions':m.get('CompetencyDescriptions',''),'memorization_code':m.get('MemorizationCode',''),'memorization':m.get('MemorizationDescription',''),'memorization_stage':m.get('MemorizationStage',''),'arabic_code':m.get('ArabicCode',''),'arabic_language':m.get('ArabicDescription',''),'akhlaq_code':m.get('AkhlaqCode',''),'akhlaq':m.get('AkhlaqDescription',''),'assessment_code':m.get('AssessmentCode',''),'assessment':m.get('AssessmentDescription',''),'harakat_stage':m.get('HarakatStage',''),'new_letters':m.get('NewLetters',''),'active_letters':m.get('ActiveLetters','')},'special_injection':m.get('SpecialInjection','NONE'),'footer':{'profile':m.get('FooterProfile','J1_STANDARD_V2'),'teacher_label':'Nama Guru','date_label':'Tanggal','score_label':'Nilai'}}
+  data={'schema_version':3,'book':'QURBATA','volume':1,'page':page,'status':'v7-pedagogical-layout-review-candidate','layout':'canonical-j1-v2','source':str(inp).replace('\\','/'),'page_role':'LETTER_NAMES' if page in SPECIAL else 'READING','identity':{'title':'QURBATA','subtitle':f'JILID 1 • HALAMAN {page:02d}'},'targets':{'material_progress':f'{page:02d} / 40','material_title':material_title(m,page),'competency_codes':m.get('CompetencyCodes',''),'competency_descriptions':m.get('CompetencyDescriptions',''),'memorization_code':m.get('MemorizationCode',''),'memorization':m.get('MemorizationDescription',''),'memorization_stage':m.get('MemorizationStage',''),'arabic_code':m.get('ArabicCode',''),'arabic_language':m.get('ArabicDescription',''),'akhlaq_code':m.get('AkhlaqCode',''),'akhlaq':m.get('AkhlaqDescription',''),'assessment_code':m.get('AssessmentCode',''),'assessment':m.get('AssessmentDescription',''),'harakat_stage':m.get('HarakatStage',''),'new_letters':m.get('NewLetters',''),'active_letters':m.get('ActiveLetters','')},'special_injection':m.get('SpecialInjection','NONE'),'footer':{'profile':m.get('FooterProfile','J1_STANDARD_V2'),'teacher_label':'Nama Guru','date_label':'Tanggal','score_label':'Nilai'}}
   if page in SPECIAL:
    rows=sorted(ib[page],key=lambda r:int(r['Sequence']))
    if len(rows)!=14:raise ValueError(f'LETTER_NAME_COUNT page={page} actual={len(rows)}')
@@ -41,5 +53,5 @@ def main():
     objs.append({'slot':int(r['Slot']),'object_id':r['ObjectID'],'object_type':'PRACTICE','competency_code':r['CompetencyCode'],'competency_description':r['CompetencyDescription'],'learning_state':r['LearningState'],'source_ref':r['SourceRef'],'text':r['ArabicObject'],'unit_length':length,'row_band':r['RowBand'],'display_join_policy':r['DisplayJoinPolicy'],'render_mode':'qae-native-short-vowel','tokens':tokens})
    data['page_kind']='READING';data['objects']=objs;data['letter_names']=[];total+=len(objs)
   (out/f'page-{page:03d}.yaml').write_text(yaml.safe_dump(data,allow_unicode=True,sort_keys=False),encoding='utf-8')
- print('PAGES_WRITTEN=40');print(f'READING_OBJECTS_WRITTEN={total}');print(f'LETTER_NAMES_WRITTEN={names}');print('UNIT_SOURCE=Unit1|Unit2|Unit3');print('DISPLAY_JOIN_POLICY=DISCONNECTED_NO_SPACE');print('LAYOUT_ADAPTER_V3=PASS');return 0
+ print('PAGES_WRITTEN=40');print(f'READING_OBJECTS_WRITTEN={total}');print(f'LETTER_NAMES_WRITTEN={names}');print('UNIT_SOURCE=Unit1|Unit2|Unit3');print('DISPLAY_JOIN_POLICY=DISCONNECTED_NO_SPACE');print('MATERIAL_TITLE=CONCISE_STAGE_AWARE');print('LAYOUT_ADAPTER_V3=PASS');return 0
 if __name__=='__main__':raise SystemExit(main())
