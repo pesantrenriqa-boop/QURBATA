@@ -14,28 +14,28 @@ Page,HarakatStage,NewLetters,ActiveLetters,L1Slots,L2Slots,L3Slots,SpecialInject
 13,FATHAH,م,ابتثجحخدذرزسشصضطظعغفقكلم,0,4,15,NONE,REVIEW_CANDIDATE
 14,FATHAH,ه,ابتثجحخدذرزسشصضطظعغفقكلمه,0,4,15,NONE,REVIEW_CANDIDATE
 15,FATHAH,و,ابتثجحخدذرزسشصضطظعغفقكلمهو,0,4,15,NONE,REVIEW_CANDIDATE
-16,FATHAH,ني,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-17,KASRAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-18,KASRAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-19,KASRAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-20,SPECIAL,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,0,0,LETTER_NAMES,REVIEW_CANDIDATE
-21,KASRAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-22,KASRAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-23,KASRAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-24,KASRAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-25,KASRAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-26,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-27,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-28,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-29,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-30,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-31,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-32,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-33,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-34,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-35,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-36,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-37,MIXED,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-38,MIXED,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-39,MIXED,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,4,15,NONE,REVIEW_CANDIDATE
-40,SPECIAL,,ابتثجحخدذرزسشصضطظعغفقكلمهو ني,0,0,0,LETTER_NAMES,REVIEW_CANDIDATE
+16,FATHAH,ني,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+17,KASRAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+18,KASRAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+19,KASRAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+20,SPECIAL,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,0,0,LETTER_NAMES,REVIEW_CANDIDATE
+21,KASRAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+22,KASRAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+23,KASRAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+24,KASRAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+25,KASRAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+26,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+27,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+28,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+29,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+30,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+31,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+32,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+33,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+34,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+35,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+36,DHAMMAH,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+37,MIXED,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+38,MIXED,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+39,MIXED,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,4,15,NONE,REVIEW_CANDIDATE
+40,SPECIAL,,ابتثجحخدذرزسشصضطظعغفقكلمهوني,0,0,0,LETTER_NAMES,REVIEW_CANDIDATE
