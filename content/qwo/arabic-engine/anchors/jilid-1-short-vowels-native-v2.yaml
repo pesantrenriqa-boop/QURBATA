@@ -1,0 +1,83 @@
+schema_version: 2
+engine: QAE
+profile: jilid-1-short-vowels-native-v2
+status: review-candidate
+
+strategy:
+  primary_renderer: font-combining-mark
+  fallback_renderer: inline-svg-path
+  principle: preserve canonical Arabic combining-mark glyph shapes from the active Quranic Arabic font rather than approximating final harakat with generic line paths
+
+marks:
+  fathah:
+    unicode: "َ"
+    renderer: font-combining-mark
+    css_class: qae-mark-fathah
+    scale: 1.00
+    x_em: 0.00
+    y_em: 0.00
+  kasrah:
+    unicode: "ِ"
+    renderer: font-combining-mark
+    css_class: qae-mark-kasrah
+    scale: 1.00
+    x_em: 0.00
+    y_em: 0.00
+  dhammah:
+    unicode: "ُ"
+    renderer: font-combining-mark
+    css_class: qae-mark-dhammah
+    scale: 1.00
+    x_em: 0.00
+    y_em: 0.00
+
+anchors:
+  default:
+    fathah: {x_em: 0.00, y_em: 0.00, scale: 1.00}
+    kasrah: {x_em: 0.00, y_em: 0.00, scale: 1.00}
+    dhammah: {x_em: 0.00, y_em: 0.00, scale: 1.00}
+  "ب":
+    fathah: {x_em: 0.00, y_em: 0.00, scale: 1.00}
+    kasrah: {x_em: 0.00, y_em: 0.00, scale: 1.00}
+    dhammah: {x_em: 0.00, y_em: 0.00, scale: 1.00}
+  "ت":
+    fathah: {x_em: 0.00, y_em: 0.00, scale: 1.00}
+    kasrah: {x_em: 0.00, y_em: 0.00, scale: 1.00}
+    dhammah: {x_em: 0.00, y_em: 0.00, scale: 1.00}
+  "ث":
+    fathah: {x_em: 0.00, y_em: 0.00, scale: 1.00}
+    kasrah: {x_em: 0.00, y_em: 0.00, scale: 1.00}
+    dhammah: {x_em: 0.00, y_em: 0.00, scale: 1.00}
+
+fallback_svg:
+  fathah:
+    view_box: "0 0 100 30"
+    path_d: "M 20 17 L 80 9"
+    stroke_width: 2.2
+    width_em: 0.28
+    height_em: 0.09
+  kasrah:
+    view_box: "0 0 100 30"
+    path_d: "M 20 11 L 80 19"
+    stroke_width: 2.2
+    width_em: 0.28
+    height_em: 0.09
+  dhammah:
+    view_box: "0 0 100 55"
+    path_d: "M 20 32 C 30 10, 55 10, 58 27 C 60 39, 48 46, 35 42 C 49 43, 68 37, 77 22"
+    stroke_width: 2.2
+    width_em: 0.28
+    height_em: 0.16
+
+visual_qa:
+  require_distinct_fathah_kasrah: true
+  require_non_dot_like_short_vowels: true
+  require_dhammah_loop_identity: true
+  require_no_base_collision: true
+  require_font_ready: true
+
+notes:
+  - "Profil lama memakai stroke_width 5 pada SVG yang sangat kecil sehingga mark dapat tampak terlalu gemuk atau seperti titik setelah scaling."
+  - "Profil v2 menjadikan glyph combining mark dari font Arab aktif sebagai renderer utama."
+  - "SVG dipertahankan hanya sebagai fallback dan diperingan, bukan sebagai bentuk final utama."
+  - "Anchor default dibiarkan netral; koreksi per-huruf hanya ditambahkan berdasarkan hasil visual QA nyata."
