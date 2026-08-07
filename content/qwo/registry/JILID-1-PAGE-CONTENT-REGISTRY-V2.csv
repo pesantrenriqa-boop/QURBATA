@@ -1,0 +1,41 @@
+Page,MemorizationCode,MemorizationDescription,MemorizationStage,ArabicCode,ArabicDescription,AkhlaqCode,AkhlaqDescription,AssessmentCode,AssessmentDescription,FooterProfile,Status
+1,H001,Doa Sebelum Belajar,PENGENALAN,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+2,H001,Doa Sebelum Belajar,LATIHAN,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+3,H001,Doa Sebelum Belajar,LATIHAN,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+4,H001,Doa Sebelum Belajar,LATIHAN,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+5,H001,Doa Sebelum Belajar,LATIHAN,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+6,H001,Doa Sebelum Belajar,LATIHAN,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+7,H001,Doa Sebelum Belajar,LATIHAN,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+8,H001,Doa Sebelum Belajar,LATIHAN,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+9,H001,Doa Sebelum Belajar,LATIHAN,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+10,H001,Doa Sebelum Belajar,CHECKPOINT,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,AS010,Checkpoint 1,J1_STANDARD_V2,REVIEW_CANDIDATE
+11,H001,Doa Sebelum Belajar,MUROJAAH,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+12,H001,Doa Sebelum Belajar,MUROJAAH,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+13,H001,Doa Sebelum Belajar,MUROJAAH,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+14,H001,Doa Sebelum Belajar,MUROJAAH,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+15,H001,Doa Sebelum Belajar,MUROJAAH,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+16,H001,Doa Sebelum Belajar,MUROJAAH,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+17,H001,Doa Sebelum Belajar,MUROJAAH,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+18,H001,Doa Sebelum Belajar,MUROJAAH,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+19,H001,Doa Sebelum Belajar,MUROJAAH,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+20,H001,Doa Sebelum Belajar,MASTERY,BA001,Nama Huruf Hijaiyah,A001,Adab Memegang Mushaf,AS020,Checkpoint 2,J1_STANDARD_V2,REVIEW_CANDIDATE
+21,H002,Doa Setelah Belajar,PENGENALAN,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+22,H002,Doa Setelah Belajar,LATIHAN,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+23,H002,Doa Setelah Belajar,LATIHAN,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+24,H002,Doa Setelah Belajar,LATIHAN,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+25,H002,Doa Setelah Belajar,LATIHAN,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+26,H002,Doa Setelah Belajar,LATIHAN,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+27,H002,Doa Setelah Belajar,LATIHAN,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+28,H002,Doa Setelah Belajar,LATIHAN,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+29,H002,Doa Setelah Belajar,LATIHAN,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+30,H002,Doa Setelah Belajar,CHECKPOINT,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,AS030,Checkpoint 3,J1_STANDARD_V2,REVIEW_CANDIDATE
+31,H002,Doa Setelah Belajar,MUROJAAH,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+32,H002,Doa Setelah Belajar,MUROJAAH,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+33,H002,Doa Setelah Belajar,MUROJAAH,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+34,H002,Doa Setelah Belajar,MUROJAAH,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+35,H002,Doa Setelah Belajar,MUROJAAH,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+36,H002,Doa Setelah Belajar,MUROJAAH,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+37,H002,Doa Setelah Belajar,MUROJAAH,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+38,H002,Doa Setelah Belajar,MUROJAAH,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+39,H002,Doa Setelah Belajar,MUROJAAH,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,NONE,Tidak ada checkpoint formal,J1_STANDARD_V2,REVIEW_CANDIDATE
+40,H002,Doa Setelah Belajar,MASTERY,BA002,Nama Harakat Dasar,A002,Mendengarkan Guru Ketika Membaca,AS040,Checkpoint Akhir Jilid 1,J1_STANDARD_V2,REVIEW_CANDIDATE
