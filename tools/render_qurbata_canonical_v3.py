@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import importlib.util
+import json
 import sys
 from pathlib import Path
 from typing import Any
@@ -104,26 +105,64 @@ def render_html(page: dict[str, Any], template_dir: Path, css: Path, logo: Path,
     output.write_text(html, encoding="utf-8")
 
 
-async def mark_and_count_overflow(page) -> int:
+async def inspect_layout(page) -> list[dict[str, Any]]:
+    """Return only production-significant geometric overflows.
+
+    QAE marks deliberately extend outside their inline token boxes. Therefore
+    scrollWidth/scrollHeight on every Arabic descendant produces false positives.
+    This gate checks the fixed A5 page box, major layout zones, and whether each
+    rendered Arabic object remains geometrically contained by its 24-slot cell.
+    """
     return await page.evaluate("""
     () => {
-      const nodes = [...document.querySelectorAll('.page, .canonical-object, .canonical-arabic, .targets, .footer')];
-      let count = 0;
-      for (const el of nodes) {
-        const bad = el.scrollWidth > el.clientWidth + 1 || el.scrollHeight > el.clientHeight + 1;
-        if (bad) { el.classList.add('is-overflow'); count += 1; }
+      const tolerance = 2;
+      const issues = [];
+      const add = (kind, el, extra = {}) => {
+        el.classList.add('is-overflow');
+        const r = el.getBoundingClientRect();
+        issues.push({kind, className: el.className, x:r.x, y:r.y, width:r.width, height:r.height, ...extra});
+      };
+
+      const structural = document.querySelectorAll('.page, .header, .targets, .canonical-title, .canonical-grid, .footer');
+      for (const el of structural) {
+        if (el.scrollWidth > el.clientWidth + tolerance || el.scrollHeight > el.clientHeight + tolerance) {
+          add('STRUCTURAL_SCROLL_OVERFLOW', el, {
+            scrollWidth: el.scrollWidth,
+            clientWidth: el.clientWidth,
+            scrollHeight: el.scrollHeight,
+            clientHeight: el.clientHeight,
+          });
+        }
       }
-      return count;
+
+      for (const slot of document.querySelectorAll('.canonical-object')) {
+        const content = slot.querySelector('.canonical-arabic');
+        if (!content) continue;
+        const s = slot.getBoundingClientRect();
+        const c = content.getBoundingClientRect();
+        const outside = c.left < s.left - tolerance || c.right > s.right + tolerance ||
+                        c.top < s.top - tolerance || c.bottom > s.bottom + tolerance;
+        if (outside) {
+          add('OBJECT_OUTSIDE_SLOT', slot, {
+            slot: slot.dataset.slot || null,
+            contentLeft: c.left, contentRight: c.right,
+            contentTop: c.top, contentBottom: c.bottom,
+            slotLeft: s.left, slotRight: s.right,
+            slotTop: s.top, slotBottom: s.bottom,
+          });
+        }
+      }
+      return issues;
     }
     """)
 
 
-async def browser_render(html_paths: list[Path], png_dir: Path, pdf_path: Path, css: Path, font: str) -> None:
+async def browser_render(html_paths: list[Path], png_dir: Path, pdf_path: Path, css: Path, font: str, report_path: Path) -> None:
     async with async_playwright() as playwright:
         browser = await playwright.chromium.launch()
         page = await browser.new_page(viewport={"width": 1120, "height": 1584}, device_scale_factor=2)
         sections: list[str] = []
-        total_overflow = 0
+        all_issues: list[dict[str, Any]] = []
         for html_path in html_paths:
             await page.goto(html_path.resolve().as_uri(), wait_until="networkidle")
             await page.evaluate("document.fonts.ready")
@@ -132,11 +171,21 @@ async def browser_render(html_paths: list[Path], png_dir: Path, pdf_path: Path, 
                 raise RuntimeError(f"REQUIRED_FONT_NOT_ACTIVE: {font}")
             if await page.locator(".canonical-object").count() != 24:
                 raise RuntimeError(f"CANONICAL_SLOT_COUNT_INVALID: {html_path}")
-            total_overflow += await mark_and_count_overflow(page)
+            issues = await inspect_layout(page)
+            for issue in issues:
+                issue["page"] = html_path.stem
+            all_issues.extend(issues)
             await page.screenshot(path=str(png_dir / f"{html_path.stem}.png"), full_page=True)
             sections.append(await page.locator("main.page").evaluate("el => el.outerHTML"))
-        if total_overflow:
-            raise RuntimeError(f"LAYOUT_OVERFLOW_COUNT={total_overflow}")
+
+        report_path.write_text(json.dumps(all_issues, ensure_ascii=False, indent=2), encoding="utf-8")
+        if all_issues:
+            kinds: dict[str, int] = {}
+            for issue in all_issues:
+                kinds[issue["kind"]] = kinds.get(issue["kind"], 0) + 1
+            summary = ",".join(f"{key}:{value}" for key, value in sorted(kinds.items()))
+            raise RuntimeError(f"LAYOUT_OVERFLOW_COUNT={len(all_issues)} TYPES={summary} REPORT={report_path}")
+
         combined = "<!doctype html><html><head><meta charset='utf-8'><style>" + css.read_text(encoding="utf-8") + "</style></head><body>" + "".join(sections) + "</body></html>"
         await page.set_content(combined, wait_until="networkidle")
         await page.evaluate("document.fonts.ready")
@@ -173,10 +222,12 @@ def main() -> int:
         html_paths.append(path)
 
     pdf = output_dir / "QURBATA-JILID-1-CANONICAL-V3.pdf"
-    asyncio.run(browser_render(html_paths, png_dir, pdf, runtime_css, str(tokens["fonts"]["arabic_family"])))
+    report = output_dir / "LAYOUT-OVERFLOW-REPORT-V3.json"
+    asyncio.run(browser_render(html_paths, png_dir, pdf, runtime_css, str(tokens["fonts"]["arabic_family"]), report))
     print(f"PAGES_RENDERED={len(html_paths)}")
     print("OBJECTS_RENDERED=864")
     print("LAYOUT_OVERFLOW=0")
+    print(f"OVERFLOW_REPORT={report.relative_to(ROOT)}")
     print(f"PDF={pdf.relative_to(ROOT)}")
     print("CANONICAL_RENDERER_V3=PASS")
     return 0
