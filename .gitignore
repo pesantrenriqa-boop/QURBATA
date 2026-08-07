@@ -1,0 +1,8 @@
+﻿
+# QURBATA generated Python cache
+__pycache__/
+*.pyc
+
+# QURBATA reproducible large generated datasets
+content/qwo/production/generated/MASTER-QURAN-OBJECTS-*.csv
+content/qwo/production/generated/LABELED-QURAN-OBJECTS-*.csv
