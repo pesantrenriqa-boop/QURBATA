@@ -1,0 +1,19 @@
+/* Canonical 24-slot layout layered on top of master-layout-v1.css. */
+.canonical-page { display: flex; flex-direction: column; }
+.canonical-targets { grid-template-columns: .8fr .8fr 2fr .8fr .8fr; }
+.competency-target strong { font-size: 6.4pt; }
+.canonical-title { height: 11mm; display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); align-items: center; gap: 3mm; color: var(--green); font-size: 8pt; overflow: hidden; }
+.canonical-title strong { white-space: nowrap; }
+.canonical-grid { flex: 1; min-height: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: repeat(6, minmax(0, 1fr)); gap: 2.2mm 2.4mm; padding: 2mm 0 2.5mm; direction: rtl; }
+.canonical-object { position: relative; min-width: 0; min-height: 0; display: flex; align-items: center; justify-content: center; border-bottom: .22mm solid rgba(6,77,55,.22); overflow: visible; break-inside: avoid; }
+.slot-number { position: absolute; top: .3mm; inset-inline-start: .5mm; font: 500 5.5pt/1 var(--latin-font), sans-serif; color: var(--muted); opacity: .65; }
+.canonical-arabic { min-width: 0; max-width: 100%; display: inline-flex; flex-direction: row-reverse; align-items: center; justify-content: center; gap: .12em; white-space: nowrap; font-family: var(--arabic-font), "Amiri", serif; font-size: 31pt; line-height: 1; color: #000; }
+.object-type-letter .canonical-arabic { font-size: 36pt; }
+.object-type-awail_al_suwar .canonical-arabic { font-size: 24pt; }
+.raw-quran-text { font-family: var(--arabic-font), "Amiri Quran", "Amiri", serif; direction: rtl; unicode-bidi: isolate; }
+.qae-kasrah .qae-mark { top: auto; bottom: -.02em; }
+.qae-dhammah .qae-mark { top: -.04em; }
+.canonical-page .footer { margin-top: 0; }
+
+html[data-layout-debug="true"] .canonical-object { outline: .15mm dashed rgba(0,0,0,.12); }
+html[data-layout-debug="true"] .canonical-object.is-overflow { outline: .6mm solid #c00 !important; background: rgba(204,0,0,.08); }
