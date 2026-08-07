@@ -1,0 +1,58 @@
+schema_version: 1
+engine: QAE
+profile: jilid-1-short-vowels-svg-v1
+status: production-test
+
+marks:
+  fathah:
+    unicode: "َ"
+    renderer: inline-svg-path
+    view_box: "0 0 100 30"
+    path_d: "M 18 18 L 82 8"
+    stroke_width: 5
+    width_em: 0.22
+    height_em: 0.08
+    rotation_deg: 0
+    color: "#000000"
+  kasrah:
+    unicode: "ِ"
+    renderer: inline-svg-path
+    view_box: "0 0 100 30"
+    path_d: "M 18 10 L 82 20"
+    stroke_width: 5
+    width_em: 0.22
+    height_em: 0.08
+    rotation_deg: 0
+    color: "#000000"
+  dhammah:
+    unicode: "ُ"
+    renderer: inline-svg-path
+    view_box: "0 0 100 55"
+    path_d: "M 20 32 C 30 10, 55 10, 58 27 C 60 39, 48 46, 35 42 C 49 43, 68 37, 77 22"
+    stroke_width: 5
+    width_em: 0.24
+    height_em: 0.15
+    rotation_deg: 0
+    color: "#000000"
+
+anchors:
+  default:
+    fathah: {x_em: 0.00, y_em: 0.10, scale: 0.42}
+    kasrah: {x_em: 0.00, y_em: 0.88, scale: 0.42}
+    dhammah: {x_em: 0.00, y_em: 0.03, scale: 0.42}
+  "ب":
+    fathah: {x_em: 0.00, y_em: 0.16, scale: 0.42}
+    kasrah: {x_em: 0.00, y_em: 0.90, scale: 0.42}
+    dhammah: {x_em: 0.00, y_em: 0.04, scale: 0.42}
+  "ت":
+    fathah: {x_em: 0.00, y_em: 0.08, scale: 0.42}
+    kasrah: {x_em: 0.00, y_em: 0.90, scale: 0.42}
+    dhammah: {x_em: 0.00, y_em: -0.01, scale: 0.42}
+  "ث":
+    fathah: {x_em: 0.00, y_em: 0.04, scale: 0.42}
+    kasrah: {x_em: 0.00, y_em: 0.90, scale: 0.42}
+    dhammah: {x_em: 0.00, y_em: -0.03, scale: 0.42}
+
+notes:
+  - "Profil ini memperluas QAE dari fathah saja menjadi fathah, kasrah, dan dhammah."
+  - "Nilai anchor awal bersifat production-test dan wajib melalui visual QA sebelum freeze."
