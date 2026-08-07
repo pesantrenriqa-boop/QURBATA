@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id" data-layout-debug="{{ 'true' if layout_debug else 'false' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ identity.title }} — Jilid {{ volume }} Halaman {{ '%02d'|format(page) }}</title>
+  <link rel="stylesheet" href="{{ css_uri }}">
+</head>
+<body>
+<main class="page canonical-page page-kind-{{ page_kind|lower }}" data-page-number="{{ page }}" data-qae-profile="{{ qae.profile }}">
+  <header class="header">
+    <div class="brand-block" aria-label="Identitas QURBATA"><img class="brand-logo" src="{{ logo_uri }}" alt="Logo QURBATA"></div>
+    <div class="heading"><div class="subtitle">{{ identity.subtitle }}</div><div class="ornament" aria-hidden="true"><span></span><b>◇</b><span></span></div></div>
+    <div class="page-number">{{ '%02d'|format(page) }}</div>
+  </header>
+
+  <section class="targets canonical-targets" aria-label="Target capaian halaman">
+    <div class="targets-label">TARGET CAPAIAN</div>
+    <div class="target-item"><span>Progres</span><strong>{{ targets.material_progress }}</strong></div>
+    <div class="target-item competency-target"><span>Kompetensi</span><strong>{{ targets.competency_codes }} — {{ targets.competency_descriptions }}</strong></div>
+    <div class="target-item"><span>Hafalan</span><strong>{{ targets.memorization_code }} — {{ targets.memorization }} ({{ targets.memorization_stage }})</strong></div>
+    <div class="target-item"><span>Bahasa Arab</span><strong>{{ targets.arabic_code }} — {{ targets.arabic_language }}</strong></div>
+  </section>
+
+  <section class="canonical-title" aria-label="Materi halaman">
+    <div class="title-ornament" aria-hidden="true"></div>
+    <strong>{% if page_kind == 'LETTER_NAMES' %}NAMA HURUF HIJAIYAH{% else %}{{ targets.competency_codes }} — {{ targets.competency_descriptions }}{% endif %}</strong>
+    <div class="title-ornament" aria-hidden="true"></div>
+  </section>
+
+  {% if page_kind == 'READING' %}
+  <section class="canonical-grid" aria-label="24 objek latihan membaca">
+    {% for item in objects %}
+    <article class="canonical-object object-type-{{ item.object_type|lower }} render-mode-{{ item.render_mode }} unit-length-{{ item.unit_length }}" data-slot="{{ item.slot }}" data-object-id="{{ item.object_id }}" data-source-ref="{{ item.source_ref }}" data-learning-state="{{ item.learning_state }}">
+      <span class="slot-number">{{ item.slot }}</span>
+      <div class="canonical-arabic qae-native" lang="ar" dir="rtl" aria-label="{{ item.text }}">
+        {% for token in item.tokens %}<span class="qae-native-token">{{ token }}</span>{% endfor %}
+      </div>
+    </article>
+    {% endfor %}
+  </section>
+  {% else %}
+  <section class="letter-name-grid" aria-label="Nama huruf hijaiyah">
+    {% for item in letter_names %}
+    <article class="letter-name-card" data-sequence="{{ item.sequence }}">
+      <div class="letter-name-letter" lang="ar" dir="rtl">{{ item.letter }}</div>
+      <div class="letter-name-arabic" lang="ar" dir="rtl">{{ item.letter_name_arabic }}</div>
+    </article>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  <footer class="footer">
+    <div class="field"><strong>{{ footer.teacher_label }}</strong><span class="line"></span></div>
+    <div class="field"><strong>{{ footer.date_label }}</strong><span class="line"></span></div>
+    <div class="field"><strong>{{ footer.score_label }}</strong><span class="line"></span></div>
+  </footer>
+  <div class="bottom-band"></div>
+</main>
+</body>
+</html>
