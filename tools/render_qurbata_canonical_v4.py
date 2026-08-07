@@ -102,8 +102,10 @@ def compile_css(tokens: dict[str, Any], output: Path, book_dir: Path) -> None:
 .unit-length-1 .canonical-arabic { font-size: var(--single-object-size); }
 .unit-length-2 .canonical-arabic { font-size: var(--pair-object-size); }
 .unit-length-3 .canonical-arabic { font-size: var(--triple-object-size); }
-.letter-name-grid { box-sizing:border-box; height:130mm; display:grid; grid-template-columns:repeat(2, 1fr); grid-template-rows:repeat(7, 1fr); gap:2.5mm; padding:3mm 8mm; direction:rtl; }
-.letter-name-card { min-width:0; min-height:0; display:flex; align-items:center; justify-content:center; gap:5mm; border:0.25mm solid rgba(185,138,47,.38); border-radius:2mm; background:#fff; }
+/* Competency descriptions are metadata, not a 33pt Arabic material title. Keep code + description readable without horizontal overflow. */
+.canonical-title strong { font-family:var(--latin-font); font-size:9pt; line-height:1.15; white-space:normal; text-align:center; max-width:100%; overflow-wrap:anywhere; }
+.letter-name-grid { box-sizing:border-box; height:130mm; display:grid; grid-template-columns:repeat(2, 1fr); grid-template-rows:repeat(7, minmax(0, 1fr)); gap:2.5mm; padding:3mm 8mm; direction:rtl; overflow:visible; }
+.letter-name-card { box-sizing:border-box; min-width:0; min-height:0; display:flex; align-items:center; justify-content:center; gap:5mm; border:0.25mm solid rgba(185,138,47,.38); border-radius:2mm; background:#fff; }
 .letter-name-letter { font-family:var(--arabic-font); font-size:30pt; color:var(--green); line-height:1; }
 .letter-name-arabic { font-family:var(--arabic-font); font-size:18pt; color:var(--ink); line-height:1.2; }
 .page-kind-letter_names .canonical-title strong { font-family:var(--latin-font); }
@@ -126,21 +128,45 @@ def render_html(page: dict[str, Any], template_dir: Path, css: Path, logo: Path,
 
 
 async def inspect_layout(page, page_number: int) -> list[dict[str, Any]]:
+    """Detect production-significant overflow without scroll-box false positives.
+
+    Arabic glyphs and CSS grids can legitimately report scroll extents a few pixels
+    larger than their layout boxes. Major fixed zones still use scroll checks, while
+    reading objects and letter-name cards are validated by geometric containment.
+    """
     return await page.evaluate("""(pageNumber) => {
       const tolerance = 2;
       const issues = [];
       const add = (kind, el, extra={}) => { const r=el.getBoundingClientRect(); issues.push({kind,className:el.className,x:r.x,y:r.y,width:r.width,height:r.height,...extra}); };
-      for (const el of document.querySelectorAll('.page,.header,.targets,.canonical-title,.footer,.canonical-grid,.letter-name-grid')) {
-        if (el.scrollWidth > el.clientWidth + tolerance || el.scrollHeight > el.clientHeight + tolerance) add('STRUCTURAL_SCROLL_OVERFLOW', el, {scrollWidth:el.scrollWidth,clientWidth:el.clientWidth,scrollHeight:el.scrollHeight,clientHeight:el.clientHeight});
+
+      /* Only true fixed structural zones use scroll dimensions. */
+      for (const el of document.querySelectorAll('.page,.header,.targets,.canonical-title,.footer')) {
+        if (el.scrollWidth > el.clientWidth + tolerance || el.scrollHeight > el.clientHeight + tolerance) {
+          add('STRUCTURAL_SCROLL_OVERFLOW', el, {scrollWidth:el.scrollWidth,clientWidth:el.clientWidth,scrollHeight:el.scrollHeight,clientHeight:el.clientHeight});
+        }
       }
+
+      /* Reading content must stay geometrically inside its canonical slot. */
       for (const slot of document.querySelectorAll('.canonical-object')) {
         const content=slot.querySelector('.canonical-arabic'); if(!content) continue;
         const s=slot.getBoundingClientRect(), c=content.getBoundingClientRect();
-        if(c.left<s.left-tolerance||c.right>s.right+tolerance||c.top<s.top-tolerance||c.bottom>s.bottom+tolerance) add('OBJECT_OUTSIDE_SLOT',slot,{slot:slot.dataset.slot});
+        if(c.left<s.left-tolerance||c.right>s.right+tolerance||c.top<s.top-tolerance||c.bottom>s.bottom+tolerance) {
+          add('OBJECT_OUTSIDE_SLOT',slot,{slot:slot.dataset.slot,contentLeft:c.left,contentRight:c.right,contentTop:c.top,contentBottom:c.bottom,slotLeft:s.left,slotRight:s.right,slotTop:s.top,slotBottom:s.bottom});
+        }
       }
-      for (const card of document.querySelectorAll('.letter-name-card')) {
-        const r=card.getBoundingClientRect();
-        if(r.width<=0||r.height<=0) add('LETTER_NAME_CARD_INVALID',card,{pageNumber});
+
+      /* Letter-name cards are checked against the visible grid boundary, not scrollHeight. */
+      const grid = document.querySelector('.letter-name-grid');
+      if (grid) {
+        const g=grid.getBoundingClientRect();
+        for (const card of grid.querySelectorAll('.letter-name-card')) {
+          const r=card.getBoundingClientRect();
+          if(r.width<=0||r.height<=0) {
+            add('LETTER_NAME_CARD_INVALID',card,{pageNumber});
+          } else if(r.left<g.left-tolerance||r.right>g.right+tolerance||r.top<g.top-tolerance||r.bottom>g.bottom+tolerance) {
+            add('LETTER_NAME_CARD_OUTSIDE_GRID',card,{pageNumber,gridLeft:g.left,gridRight:g.right,gridTop:g.top,gridBottom:g.bottom});
+          }
+        }
       }
       return issues;
     }""", page_number)
