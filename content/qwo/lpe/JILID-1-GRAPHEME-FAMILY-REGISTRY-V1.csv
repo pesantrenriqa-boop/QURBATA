@@ -1,0 +1,16 @@
+FamilyID,FamilyOrder,FamilyName,Letters,Notes,Status
+GF01,1,ALIF,ا,Alif sebagai bentuk mandiri dasar,REVIEW_CANDIDATE
+GF02,2,BA_FAMILY,بتثني,Keluarga bentuk dasar ب dengan variasi titik dan bentuk terkait ن ي,REVIEW_CANDIDATE
+GF03,3,JIM_FAMILY,جحخ,Keluarga ج ح خ,REVIEW_CANDIDATE
+GF04,4,DAL_FAMILY,دذ,Keluarga د ذ,REVIEW_CANDIDATE
+GF05,5,RA_FAMILY,رز,Keluarga ر ز,REVIEW_CANDIDATE
+GF06,6,SIN_FAMILY,سش,Keluarga س ش,REVIEW_CANDIDATE
+GF07,7,SAD_FAMILY,صض,Keluarga ص ض,REVIEW_CANDIDATE
+GF08,8,TA_FAMILY,طظ,Keluarga ط ظ,REVIEW_CANDIDATE
+GF09,9,AIN_FAMILY,عغ,Keluarga ع غ,REVIEW_CANDIDATE
+GF10,10,FA_QAF_FAMILY,فق,Keluarga ف ق; bentuk tidak identik tetapi dekat secara grafis dan titik membedakan,REVIEW_CANDIDATE
+GF11,11,KAF,ك,Kaf sebagai keluarga mandiri,REVIEW_CANDIDATE
+GF12,12,LAM,ل,Lam sebagai keluarga mandiri,REVIEW_CANDIDATE
+GF13,13,MIM,م,Mim sebagai keluarga mandiri,REVIEW_CANDIDATE
+GF14,14,HA,ه,Ha sebagai keluarga mandiri,REVIEW_CANDIDATE
+GF15,15,WAW,و,Waw sebagai keluarga mandiri,REVIEW_CANDIDATE
