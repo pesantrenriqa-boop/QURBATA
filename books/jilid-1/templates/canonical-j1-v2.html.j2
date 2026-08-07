@@ -31,9 +31,9 @@
   {% if page_kind == 'READING' %}
   <section class="canonical-grid" aria-label="24 objek latihan membaca">
     {% for item in objects %}
-    <article class="canonical-object object-type-{{ item.object_type|lower }} render-mode-{{ item.render_mode }} unit-length-{{ item.unit_length }}" data-slot="{{ item.slot }}" data-object-id="{{ item.object_id }}" data-source-ref="{{ item.source_ref }}" data-learning-state="{{ item.learning_state }}">
+    <article class="canonical-object object-type-{{ item.object_type|lower }} render-mode-{{ item.render_mode }} unit-length-{{ item.unit_length }}" data-slot="{{ item.slot }}" data-object-id="{{ item.object_id }}" data-source-ref="{{ item.source_ref }}" data-learning-state="{{ item.learning_state }}" data-display-join-policy="{{ item.display_join_policy|default('DISCONNECTED_NO_SPACE') }}">
       <span class="slot-number">{{ item.slot }}</span>
-      <div class="canonical-arabic qae-native" lang="ar" dir="rtl" aria-label="{{ item.text }}">
+      <div class="canonical-arabic qae-native" lang="ar" dir="rtl" style="gap:0" aria-label="{{ item.text }}">
         {% for token in item.tokens %}<span class="qae-native-token">{{ token }}</span>{% endfor %}
       </div>
     </article>
