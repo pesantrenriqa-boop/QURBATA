@@ -161,6 +161,10 @@ def triple_word_candidates(corpus: Path) -> list[Candidate]:
 
 
 def take_new(pool: list[Candidate], seen_texts: set[str], count: int) -> list[Candidate]:
+    if count < 0:
+        raise ValueError(f"NEW_COUNT_INVALID: {count}")
+    if count == 0:
+        return []
     selected: list[Candidate] = []
     for candidate in pool:
         if candidate.text in seen_texts:
