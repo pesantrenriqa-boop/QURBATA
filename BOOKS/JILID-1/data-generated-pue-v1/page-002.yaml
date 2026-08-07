@@ -1,0 +1,237 @@
+schema_version: 1
+book: QURBATA
+volume: 1
+page: 2
+status: composer-verified-layout-candidate
+layout: canonical-24-slot-v1
+source: content/qwo/composer/output/jilid-1-pue-v1/JILID-1-READING-OBJECTS-V2.csv
+identity:
+  title: QURBATA
+  subtitle: JILID 1 • HALAMAN 02
+targets:
+  material_progress: 02 / 36
+  competencies: C0002 | C0003 | C0004
+  memorization: —
+  nidom_hadith: —
+  arabic_language: —
+objects:
+- slot: 1
+  object_id: J1-P02-S01
+  object_type: LETTER
+  competency: C0002
+  source_ref: '1:2'
+  text: رَ
+  render_mode: qae-short-vowel
+  tokens:
+  - رَ
+- slot: 2
+  object_id: J1-P02-S02
+  object_type: LETTER
+  competency: C0003
+  source_ref: '1:7'
+  text: رِ
+  render_mode: qae-short-vowel
+  tokens:
+  - رِ
+- slot: 3
+  object_id: J1-P02-S03
+  object_type: LETTER
+  competency: C0004
+  source_ref: '2:6'
+  text: رُ
+  render_mode: qae-short-vowel
+  tokens:
+  - رُ
+- slot: 4
+  object_id: J1-P02-S04
+  object_type: LETTER
+  competency: C0002
+  source_ref: '2:3'
+  text: زَ
+  render_mode: qae-short-vowel
+  tokens:
+  - زَ
+- slot: 5
+  object_id: J1-P02-S05
+  object_type: LETTER
+  competency: C0003
+  source_ref: '2:4'
+  text: زِ
+  render_mode: qae-short-vowel
+  tokens:
+  - زِ
+- slot: 6
+  object_id: J1-P02-S06
+  object_type: LETTER
+  competency: C0004
+  source_ref: 2:67
+  text: زُ
+  render_mode: qae-short-vowel
+  tokens:
+  - زُ
+- slot: 7
+  object_id: J1-P02-S07
+  object_type: LETTER
+  competency: C0002
+  source_ref: '2:6'
+  text: سَ
+  render_mode: qae-short-vowel
+  tokens:
+  - سَ
+- slot: 8
+  object_id: J1-P02-S08
+  object_type: LETTER
+  competency: C0003
+  source_ref: '2:8'
+  text: سِ
+  render_mode: qae-short-vowel
+  tokens:
+  - سِ
+- slot: 9
+  object_id: J1-P02-S09
+  object_type: LETTER
+  competency: C0004
+  source_ref: '2:13'
+  text: سُ
+  render_mode: qae-short-vowel
+  tokens:
+  - سُ
+- slot: 10
+  object_id: J1-P02-S10
+  object_type: LETTER
+  competency: C0002
+  source_ref: '2:14'
+  text: شَ
+  render_mode: qae-short-vowel
+  tokens:
+  - شَ
+- slot: 11
+  object_id: J1-P02-S11
+  object_type: LETTER
+  competency: C0003
+  source_ref: '2:35'
+  text: شِ
+  render_mode: qae-short-vowel
+  tokens:
+  - شِ
+- slot: 12
+  object_id: J1-P02-S12
+  object_type: LETTER
+  competency: C0004
+  source_ref: '2:23'
+  text: شُ
+  render_mode: qae-short-vowel
+  tokens:
+  - شُ
+- slot: 13
+  object_id: J1-P02-S13
+  object_type: LETTER
+  competency: C0002
+  source_ref: '2:19'
+  text: صَ
+  render_mode: qae-short-vowel
+  tokens:
+  - صَ
+- slot: 14
+  object_id: J1-P02-S14
+  object_type: LETTER
+  competency: C0003
+  source_ref: '1:7'
+  text: صِ
+  render_mode: qae-short-vowel
+  tokens:
+  - صِ
+- slot: 15
+  object_id: J1-P02-S15
+  object_type: LETTER
+  competency: C0004
+  source_ref: '2:18'
+  text: صُ
+  render_mode: qae-short-vowel
+  tokens:
+  - صُ
+- slot: 16
+  object_id: J1-P02-S16
+  object_type: LETTER
+  competency: C0002
+  source_ref: '2:17'
+  text: ضَ
+  render_mode: qae-short-vowel
+  tokens:
+  - ضَ
+- slot: 17
+  object_id: J1-P02-S17
+  object_type: LETTER
+  competency: C0003
+  source_ref: '2:11'
+  text: ضِ
+  render_mode: qae-short-vowel
+  tokens:
+  - ضِ
+- slot: 18
+  object_id: J1-P02-S18
+  object_type: LETTER
+  competency: C0004
+  source_ref: '1:7'
+  text: ضُ
+  render_mode: qae-short-vowel
+  tokens:
+  - ضُ
+- slot: 19
+  object_id: J1-P02-S19
+  object_type: LETTER
+  competency: C0002
+  source_ref: '1:6'
+  text: طَ
+  render_mode: qae-short-vowel
+  tokens:
+  - طَ
+- slot: 20
+  object_id: J1-P02-S20
+  object_type: LETTER
+  competency: C0003
+  source_ref: '2:14'
+  text: طِ
+  render_mode: qae-short-vowel
+  tokens:
+  - طِ
+- slot: 21
+  object_id: J1-P02-S21
+  object_type: LETTER
+  competency: C0004
+  source_ref: '2:15'
+  text: طُ
+  render_mode: qae-short-vowel
+  tokens:
+  - طُ
+- slot: 22
+  object_id: J1-P02-S22
+  object_type: LETTER
+  competency: C0002
+  source_ref: '2:54'
+  text: ظَ
+  render_mode: qae-short-vowel
+  tokens:
+  - ظَ
+- slot: 23
+  object_id: J1-P02-S23
+  object_type: LETTER
+  competency: C0003
+  source_ref: '2:7'
+  text: ظِ
+  render_mode: qae-short-vowel
+  tokens:
+  - ظِ
+- slot: 24
+  object_id: J1-P02-S24
+  object_type: LETTER
+  competency: C0004
+  source_ref: '2:17'
+  text: ظُ
+  render_mode: qae-short-vowel
+  tokens:
+  - ظُ
+footer:
+  teacher_label: Nama Guru
+  date_label: Tanggal
+  score_label: Nilai

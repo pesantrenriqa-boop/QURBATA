@@ -1,0 +1,261 @@
+schema_version: 1
+book: QURBATA
+volume: 1
+page: 31
+status: composer-verified-layout-candidate
+layout: canonical-24-slot-v1
+source: content/qwo/composer/output/jilid-1-pue-v1/JILID-1-READING-OBJECTS-V2.csv
+identity:
+  title: QURBATA
+  subtitle: JILID 1 • HALAMAN 31
+targets:
+  material_progress: 31 / 36
+  competencies: C0005 | C0006
+  memorization: —
+  nidom_hadith: —
+  arabic_language: —
+objects:
+- slot: 1
+  object_id: J1-P31-S01
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '2:20'
+  text: رَهُ
+  render_mode: qae-short-vowel
+  tokens:
+  - رَ
+  - هُ
+- slot: 2
+  object_id: J1-P31-S02
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: '21:20'
+  text: تُرُ
+  render_mode: qae-short-vowel
+  tokens:
+  - تُ
+  - رُ
+- slot: 3
+  object_id: J1-P31-S03
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '52:21'
+  text: رَهِ
+  render_mode: qae-short-vowel
+  tokens:
+  - رَ
+  - هِ
+- slot: 4
+  object_id: J1-P31-S04
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 2:108
+  text: تُرِ
+  render_mode: qae-short-vowel
+  tokens:
+  - تُ
+  - رِ
+- slot: 5
+  object_id: J1-P31-S05
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '34:12'
+  text: رَوَ
+  render_mode: qae-short-vowel
+  tokens:
+  - رَ
+  - وَ
+- slot: 6
+  object_id: J1-P31-S06
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 9:103
+  text: تُزَ
+  render_mode: qae-short-vowel
+  tokens:
+  - تُ
+  - زَ
+- slot: 7
+  object_id: J1-P31-S07
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '2:16'
+  text: رَوُ
+  render_mode: qae-short-vowel
+  tokens:
+  - رَ
+  - وُ
+- slot: 8
+  object_id: J1-P31-S08
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: '3:8'
+  text: تُزِ
+  render_mode: qae-short-vowel
+  tokens:
+  - تُ
+  - زِ
+- slot: 9
+  object_id: J1-P31-S09
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '19:26'
+  text: رَيِ
+  render_mode: qae-short-vowel
+  tokens:
+  - رَ
+  - يِ
+- slot: 10
+  object_id: J1-P31-S10
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: '4:42'
+  text: تُسَ
+  render_mode: qae-short-vowel
+  tokens:
+  - تُ
+  - سَ
+- slot: 11
+  object_id: J1-P31-S11
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 2:196
+  text: رُءُ
+  render_mode: qae-short-vowel
+  tokens:
+  - رُ
+  - ءُ
+- slot: 12
+  object_id: J1-P31-S12
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: '16:10'
+  text: تُسِ
+  render_mode: qae-short-vowel
+  tokens:
+  - تُ
+  - سِ
+- slot: 13
+  object_id: J1-P31-S13
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 18:86
+  text: رُبُ
+  render_mode: qae-short-vowel
+  tokens:
+  - رُ
+  - بُ
+- slot: 14
+  object_id: J1-P31-S14
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 9:84
+  text: تُصَ
+  render_mode: qae-short-vowel
+  tokens:
+  - تُ
+  - صَ
+- slot: 15
+  object_id: J1-P31-S15
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 56:63
+  text: رُثُ
+  render_mode: qae-short-vowel
+  tokens:
+  - رُ
+  - ثُ
+- slot: 16
+  object_id: J1-P31-S16
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 3:120
+  text: تُصِ
+  render_mode: qae-short-vowel
+  tokens:
+  - تُ
+  - صِ
+- slot: 17
+  object_id: J1-P31-S17
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '49:5'
+  text: رُجَ
+  render_mode: qae-short-vowel
+  tokens:
+  - رُ
+  - جَ
+- slot: 18
+  object_id: J1-P31-S18
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 2:233
+  text: تُضَ
+  render_mode: qae-short-vowel
+  tokens:
+  - تُ
+  - ضَ
+- slot: 19
+  object_id: J1-P31-S19
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 2:74
+  text: رُجُ
+  render_mode: qae-short-vowel
+  tokens:
+  - رُ
+  - جُ
+- slot: 20
+  object_id: J1-P31-S20
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 7:155
+  text: تُضِ
+  render_mode: qae-short-vowel
+  tokens:
+  - تُ
+  - ضِ
+- slot: 21
+  object_id: J1-P31-S21
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '48:29'
+  text: رُحَ
+  render_mode: qae-short-vowel
+  tokens:
+  - رُ
+  - حَ
+- slot: 22
+  object_id: J1-P31-S22
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 9:103
+  text: تُطَ
+  render_mode: qae-short-vowel
+  tokens:
+  - تُ
+  - طَ
+- slot: 23
+  object_id: J1-P31-S23
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '38:36'
+  text: رُخَ
+  render_mode: qae-short-vowel
+  tokens:
+  - رُ
+  - خَ
+- slot: 24
+  object_id: J1-P31-S24
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 3:100
+  text: تُطِ
+  render_mode: qae-short-vowel
+  tokens:
+  - تُ
+  - طِ
+footer:
+  teacher_label: Nama Guru
+  date_label: Tanggal
+  score_label: Nilai

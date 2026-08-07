@@ -1,0 +1,261 @@
+schema_version: 1
+book: QURBATA
+volume: 1
+page: 14
+status: composer-verified-layout-candidate
+layout: canonical-24-slot-v1
+source: content/qwo/composer/output/jilid-1-pue-v1/JILID-1-READING-OBJECTS-V2.csv
+identity:
+  title: QURBATA
+  subtitle: JILID 1 • HALAMAN 14
+targets:
+  material_progress: 14 / 36
+  competencies: C0006
+  memorization: —
+  nidom_hadith: —
+  arabic_language: —
+objects:
+- slot: 1
+  object_id: J1-P14-S01
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: '74:45'
+  text: ئِضِ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - ضِ
+- slot: 2
+  object_id: J1-P14-S02
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: '4:43'
+  text: ئِطِ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - طِ
+- slot: 3
+  object_id: J1-P14-S03
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: '26:55'
+  text: ئِظُ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - ظُ
+- slot: 4
+  object_id: J1-P14-S04
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: '41:11'
+  text: ئِعِ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - عِ
+- slot: 5
+  object_id: J1-P14-S05
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 3:69
+  text: ئِفَ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - فَ
+- slot: 6
+  object_id: J1-P14-S06
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 2:114
+  text: ئِفِ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - فِ
+- slot: 7
+  object_id: J1-P14-S07
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 3:185
+  text: ئِقَ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - قَ
+- slot: 8
+  object_id: J1-P14-S08
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: '37:31'
+  text: ئِقُ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - قُ
+- slot: 9
+  object_id: J1-P14-S09
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: '2:5'
+  text: ئِكَ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - كَ
+- slot: 10
+  object_id: J1-P14-S10
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: '2:54'
+  text: ئِكُ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - كُ
+- slot: 11
+  object_id: J1-P14-S11
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: '18:31'
+  text: ئِكِ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - كِ
+- slot: 12
+  object_id: J1-P14-S12
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 2:108
+  text: ئِلَ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - لَ
+- slot: 13
+  object_id: J1-P14-S13
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: '4:23'
+  text: ئِلُ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - لُ
+- slot: 14
+  object_id: J1-P14-S14
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 2:177
+  text: ئِلِ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - لِ
+- slot: 15
+  object_id: J1-P14-S15
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 3:113
+  text: ئِمَ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - مَ
+- slot: 16
+  object_id: J1-P14-S16
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 7:97
+  text: ئِمُ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - مُ
+- slot: 17
+  object_id: J1-P14-S17
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: '22:26'
+  text: ئِمِ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - مِ
+- slot: 18
+  object_id: J1-P14-S18
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 2:246
+  text: ئِنَ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - نَ
+- slot: 19
+  object_id: J1-P14-S19
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: '6:50'
+  text: ئِنُ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - نُ
+- slot: 20
+  object_id: J1-P14-S20
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 2:120
+  text: ئِنِ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - نِ
+- slot: 21
+  object_id: J1-P14-S21
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 2:61
+  text: ئِهَ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - هَ
+- slot: 22
+  object_id: J1-P14-S22
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: '2:33'
+  text: ئِهِ
+  render_mode: qae-short-vowel
+  tokens:
+  - ئِ
+  - هِ
+- slot: 23
+  object_id: J1-P14-S23
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: '2:33'
+  text: بَأَ
+  render_mode: qae-short-vowel
+  tokens:
+  - بَ
+  - أَ
+- slot: 24
+  object_id: J1-P14-S24
+  object_type: WORD_FRAGMENT
+  competency: C0006
+  source_ref: 9:70
+  text: بَأُ
+  render_mode: qae-short-vowel
+  tokens:
+  - بَ
+  - أُ
+footer:
+  teacher_label: Nama Guru
+  date_label: Tanggal
+  score_label: Nilai

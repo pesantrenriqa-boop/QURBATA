@@ -1,0 +1,261 @@
+schema_version: 1
+book: QURBATA
+volume: 1
+page: 6
+status: composer-verified-layout-candidate
+layout: canonical-24-slot-v1
+source: content/qwo/composer/output/jilid-1-pue-v1/JILID-1-READING-OBJECTS-V2.csv
+identity:
+  title: QURBATA
+  subtitle: JILID 1 • HALAMAN 06
+targets:
+  material_progress: 06 / 36
+  competencies: C0005
+  memorization: —
+  nidom_hadith: —
+  arabic_language: —
+objects:
+- slot: 1
+  object_id: J1-P06-S01
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 2:187
+  text: أَتِ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - تِ
+- slot: 2
+  object_id: J1-P06-S02
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 20:84
+  text: أَثَ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - ثَ
+- slot: 3
+  object_id: J1-P06-S03
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '10:51'
+  text: أَثُ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - ثُ
+- slot: 4
+  object_id: J1-P06-S04
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 2:276
+  text: أَثِ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - ثِ
+- slot: 5
+  object_id: J1-P06-S05
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 2:231
+  text: أَجَ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - جَ
+- slot: 6
+  object_id: J1-P06-S06
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 6:145
+  text: أَجِ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - جِ
+- slot: 7
+  object_id: J1-P06-S07
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 2:96
+  text: أَحَ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - حَ
+- slot: 8
+  object_id: J1-P06-S08
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '5:18'
+  text: أَحِ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - حِ
+- slot: 9
+  object_id: J1-P06-S09
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '2:55'
+  text: أَخَ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - خَ
+- slot: 10
+  object_id: J1-P06-S10
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '12:8'
+  text: أَخُ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - خُ
+- slot: 11
+  object_id: J1-P06-S11
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 2:178
+  text: أَخِ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - خِ
+- slot: 12
+  object_id: J1-P06-S12
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 2:178
+  text: أَدَ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - دَ
+- slot: 13
+  object_id: J1-P06-S13
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '20:40'
+  text: أَدُ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - دُ
+- slot: 14
+  object_id: J1-P06-S14
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 2:264
+  text: أَذَ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - ذَ
+- slot: 15
+  object_id: J1-P06-S15
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 3:123
+  text: أَذِ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - ذِ
+- slot: 16
+  object_id: J1-P06-S16
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '2:26'
+  text: أَرَ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - رَ
+- slot: 17
+  object_id: J1-P06-S17
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '31:11'
+  text: أَرُ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - رُ
+- slot: 18
+  object_id: J1-P06-S18
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 2:128
+  text: أَرِ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - رِ
+- slot: 19
+  object_id: J1-P06-S19
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '2:36'
+  text: أَزَ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - زَ
+- slot: 20
+  object_id: J1-P06-S20
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '14:7'
+  text: أَزِ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - زِ
+- slot: 21
+  object_id: J1-P06-S21
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '5:52'
+  text: أَسَ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - سَ
+- slot: 22
+  object_id: J1-P06-S22
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 7:150
+  text: أَسِ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - سِ
+- slot: 23
+  object_id: J1-P06-S23
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 2:74
+  text: أَشَ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - شَ
+- slot: 24
+  object_id: J1-P06-S24
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 6:152
+  text: أَشُ
+  render_mode: qae-short-vowel
+  tokens:
+  - أَ
+  - شُ
+footer:
+  teacher_label: Nama Guru
+  date_label: Tanggal
+  score_label: Nilai

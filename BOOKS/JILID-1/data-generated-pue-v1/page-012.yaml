@@ -1,0 +1,261 @@
+schema_version: 1
+book: QURBATA
+volume: 1
+page: 12
+status: composer-verified-layout-candidate
+layout: canonical-24-slot-v1
+source: content/qwo/composer/output/jilid-1-pue-v1/JILID-1-READING-OBJECTS-V2.csv
+identity:
+  title: QURBATA
+  subtitle: JILID 1 • HALAMAN 12
+targets:
+  material_progress: 12 / 36
+  competencies: C0005
+  memorization: —
+  nidom_hadith: —
+  arabic_language: —
+objects:
+- slot: 1
+  object_id: J1-P12-S01
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '49:1'
+  text: دَىِ
+  render_mode: qae-short-vowel
+  tokens:
+  - دَ
+  - ىِ
+- slot: 2
+  object_id: J1-P12-S02
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '8:16'
+  text: دُبُ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - بُ
+- slot: 3
+  object_id: J1-P12-S03
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '54:9'
+  text: دُجِ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - جِ
+- slot: 4
+  object_id: J1-P12-S04
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '37:9'
+  text: دُحُ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - حُ
+- slot: 5
+  object_id: J1-P12-S05
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '41:11'
+  text: دُخَ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - خَ
+- slot: 6
+  object_id: J1-P12-S06
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '33:14'
+  text: دُخِ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - خِ
+- slot: 7
+  object_id: J1-P12-S07
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '99:6'
+  text: دُرُ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - رُ
+- slot: 8
+  object_id: J1-P12-S08
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '4:11'
+  text: دُسُ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - سُ
+- slot: 9
+  object_id: J1-P12-S09
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 2:87
+  text: دُسِ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - سِ
+- slot: 10
+  object_id: J1-P12-S10
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 2:171
+  text: دُعَ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - عَ
+- slot: 11
+  object_id: J1-P12-S11
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 2:282
+  text: دُعُ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - عُ
+- slot: 12
+  object_id: J1-P12-S12
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '33:53'
+  text: دُعِ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - عِ
+- slot: 13
+  object_id: J1-P12-S13
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 5:118
+  text: دُكَ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - كَ
+- slot: 14
+  object_id: J1-P12-S14
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 2:266
+  text: دُكُ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - كُ
+- slot: 15
+  object_id: J1-P12-S15
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 17:78
+  text: دُلُ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - لُ
+- slot: 16
+  object_id: J1-P12-S16
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 11:98
+  text: دُمُ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - مُ
+- slot: 17
+  object_id: J1-P12-S17
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 7:70
+  text: دُنَ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - نَ
+- slot: 18
+  object_id: J1-P12-S18
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 18:69
+  text: دُنِ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - نِ
+- slot: 19
+  object_id: J1-P12-S19
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '2:24'
+  text: دُهَ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - هَ
+- slot: 20
+  object_id: J1-P12-S20
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 2:96
+  text: دُهُ
+  render_mode: qae-short-vowel
+  tokens:
+  - دُ
+  - هُ
+- slot: 21
+  object_id: J1-P12-S21
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: '29:19'
+  text: دِئُ
+  render_mode: qae-short-vowel
+  tokens:
+  - دِ
+  - ئُ
+- slot: 22
+  object_id: J1-P12-S22
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 18:70
+  text: دِثَ
+  render_mode: qae-short-vowel
+  tokens:
+  - دِ
+  - ثَ
+- slot: 23
+  object_id: J1-P12-S23
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 20:113
+  text: دِثُ
+  render_mode: qae-short-vowel
+  tokens:
+  - دِ
+  - ثُ
+- slot: 24
+  object_id: J1-P12-S24
+  object_type: WORD_FRAGMENT
+  competency: C0005
+  source_ref: 9:63
+  text: دِدِ
+  render_mode: qae-short-vowel
+  tokens:
+  - دِ
+  - دِ
+footer:
+  teacher_label: Nama Guru
+  date_label: Tanggal
+  score_label: Nilai

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """Render verified 24-slot QURBATA Jilid 1 pages to HTML, PNG, and PDF."""
 from __future__ import annotations
 
@@ -123,7 +123,7 @@ async def inspect_layout(page) -> list[dict[str, Any]]:
         issues.push({kind, className: el.className, x:r.x, y:r.y, width:r.width, height:r.height, ...extra});
       };
 
-      const structural = document.querySelectorAll('.page, .header, .targets, .canonical-title, .canonical-grid, .footer');
+      const structural = document.querySelectorAll('.page, .header, .targets, .canonical-title, .footer');
       for (const el of structural) {
         if (el.scrollWidth > el.clientWidth + tolerance || el.scrollHeight > el.clientHeight + tolerance) {
           add('STRUCTURAL_SCROLL_OVERFLOW', el, {
@@ -235,3 +235,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

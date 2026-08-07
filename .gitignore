@@ -6,3 +6,6 @@ __pycache__/
 # QURBATA reproducible large generated datasets
 content/qwo/production/generated/MASTER-QURAN-OBJECTS-*.csv
 content/qwo/production/generated/LABELED-QURAN-OBJECTS-*.csv
+
+# QURBATA rendered build outputs
+dist/
