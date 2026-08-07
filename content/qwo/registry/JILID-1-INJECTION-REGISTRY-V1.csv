@@ -1,0 +1,3 @@
+Page,InjectionCode,InjectionType,SourceRegistry,Required,Description,Status
+20,J1-INJ-020,LETTER_NAMES,JILID-1-LETTER-NAME-REGISTRY-V1.csv,YES,Nama huruf hijaiyah bagian pertama,REVIEW_CANDIDATE
+40,J1-INJ-040,LETTER_NAMES,JILID-1-LETTER-NAME-REGISTRY-V1.csv,YES,Nama huruf hijaiyah bagian kedua,REVIEW_CANDIDATE
