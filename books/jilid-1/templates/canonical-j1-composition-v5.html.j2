@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="id" data-layout-debug="{{ 'true' if layout_debug else 'false' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ identity.title }} — Jilid {{ volume }} Halaman {{ '%02d'|format(page) }}</title>
+  <link rel="stylesheet" href="{{ css_uri }}">
+</head>
+<body>
+<main class="page composition-v5-page page-kind-{{ page_kind|lower }}" data-page-number="{{ page }}" data-qae-profile="{{ qae.profile }}">
+  <header class="header">
+    <div class="brand-block"><img class="brand-logo" src="{{ logo_uri }}" alt="Logo QURBATA"></div>
+    <div class="heading"><div class="subtitle">{{ identity.subtitle }}</div><div class="ornament" aria-hidden="true"><span></span><b>◇</b><span></span></div></div>
+    <div class="page-number">{{ '%02d'|format(page) }}</div>
+  </header>
+
+  <section class="targets canonical-targets" aria-label="Target capaian halaman">
+    <div class="targets-label">TARGET CAPAIAN</div>
+    <div class="target-item"><span>Progres</span><strong>{{ targets.material_progress }}</strong></div>
+    <div class="target-item competency-target"><span>Kompetensi</span><strong>{{ targets.competency_codes }} — {{ targets.competency_descriptions }}</strong></div>
+    <div class="target-item"><span>Hafalan</span><strong>{{ targets.memorization_code }} — {{ targets.memorization }} ({{ targets.memorization_stage }})</strong></div>
+    <div class="target-item"><span>Bahasa Arab</span><strong>{{ targets.arabic_code }} — {{ targets.arabic_language }}</strong></div>
+  </section>
+
+  {% if page_kind == 'READING' %}
+  <section class="composition-v5-focus" aria-label="Materi baru halaman">
+    <div class="composition-v5-focus-label">{{ new_material.label }}</div>
+    <div class="composition-v5-focus-arabic qae-native" lang="ar" dir="rtl">
+      {% for token in new_material.tokens %}<span class="composition-v5-focus-token">{{ token }}</span>{% endfor %}
+    </div>
+  </section>
+  <div class="composition-v5-divider"></div>
+  <section class="composition-v5-pairs" aria-label="Pembiasaan dua huruf materi baru">
+    {% for item in objects if item.row_band == 'ROW_2_L2_CURRENT' %}
+    <article class="composition-v5-object" data-slot="{{ item.slot }}" data-learning-state="{{ item.learning_state }}">
+      <span class="slot-number">{{ item.slot }}</span>
+      <div class="composition-v5-arabic qae-native" lang="ar" dir="rtl" aria-label="{{ item.text }}">{% for token in item.tokens %}<span class="composition-v5-token">{{ token }}</span>{% endfor %}</div>
+    </article>
+    {% endfor %}
+  </section>
+  <div class="composition-v5-divider"></div>
+  <section class="composition-v5-triples" aria-label="Latihan tiga huruf">
+    {% for item in objects if item.row_band == 'ROWS_3_6_L3' %}
+    <article class="composition-v5-object" data-slot="{{ item.slot }}" data-learning-state="{{ item.learning_state }}">
+      <span class="slot-number">{{ item.slot }}</span>
+      <div class="composition-v5-arabic qae-native" lang="ar" dir="rtl" aria-label="{{ item.text }}">{% for token in item.tokens %}<span class="composition-v5-token">{{ token }}</span>{% endfor %}</div>
+    </article>
+    {% endfor %}
+  </section>
+  {% else %}
+  <section class="canonical-title"><div class="title-ornament"></div><strong>NAMA HURUF HIJAIYAH</strong><div class="title-ornament"></div></section>
+  <section class="letter-name-grid" aria-label="Nama huruf hijaiyah">
+    {% for item in letter_names %}
+    <article class="letter-name-card" data-sequence="{{ item.sequence }}"><div class="letter-name-letter" lang="ar" dir="rtl">{{ item.letter }}</div><div class="letter-name-arabic" lang="ar" dir="rtl">{{ item.letter_name_arabic }}</div></article>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  <footer class="footer">
+    <div class="field"><strong>{{ footer.teacher_label }}</strong><span class="line"></span></div>
+    <div class="field"><strong>{{ footer.date_label }}</strong><span class="line"></span></div>
+    <div class="field"><strong>{{ footer.score_label }}</strong><span class="line"></span></div>
+  </footer>
+  <div class="bottom-band"></div>
+</main>
+</body>
+</html>
