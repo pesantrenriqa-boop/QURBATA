@@ -7,6 +7,7 @@ ROOT=Path(__file__).resolve().parents[4]
 OUT=ROOT/'content/qwo/composer/output/jilid-1-v8-composition-v5'
 READING=OUT/'JILID-1-READING-OBJECTS-V8.csv'; META=OUT/'JILID-1-PAGE-METADATA-V8.csv'; INJ=OUT/'JILID-1-INJECTION-CONTENT-V8.csv'
 SPECIAL={20,40}
+HIJAIYAH="ابتثجحخدذرزسشصضطظعغفقكلمنهوي"
 def rows(p):
  with p.open(encoding='utf-8-sig',newline='') as h:return list(csv.DictReader(h))
 def main():
@@ -23,7 +24,7 @@ def main():
   bands=Counter(x['RowBand'] for x in pr); lengths=Counter(int(x['UnitLength']) for x in pr)
   if bands!=Counter({'ROW_2_L2_CURRENT':4,'ROWS_3_6_L3':12}):issues.append(f'ROW_PATTERN page={p} actual={dict(bands)}')
   if lengths!=Counter({2:4,3:12}):issues.append(f'LENGTH_PATTERN page={p} actual={dict(lengths)}')
-  row2=pr[:4]; triples=pr[4:]
+  row2=pr[:4];triples=pr[4:]
   if any(x['LearningState'] not in ({'FOUNDATION'} if p==1 else {'CURRENT'}) for x in row2):issues.append(f'ROW2_NOT_CURRENT page={p}')
   if p==1:
    if Counter(x['LearningState'] for x in pr)!=Counter({'FOUNDATION':16}):issues.append('PAGE1_FOUNDATION_STATE')
@@ -32,19 +33,23 @@ def main():
    if states['CURRENT']!=8 or states['REVIEW']!=8:issues.append(f'PAGE_RATIO page={p} current={states["CURRENT"]} review={states["REVIEW"]}')
    ts=Counter(x['LearningState'] for x in triples)
    if ts['CURRENT']!=4 or ts['REVIEW']!=8:issues.append(f'TRIPLE_RATIO page={p} current={ts["CURRENT"]} review={ts["REVIEW"]}')
-  active=set(meta[p]['ActiveLetters']);new=set(meta[p]['NewLetters'])
+  active=meta[p]['ActiveLetters'];new=meta[p]['NewLetters'];focus=meta[p].get('NewMaterialBases','')
+  canonical_prefix=''.join(ch for ch in HIJAIYAH if ch in set(active))
+  if canonical_prefix!=active:issues.append(f'ACTIVE_ORDER_NOT_HIJAIYAH page={p} active={active}')
+  if new and focus!=new:issues.append(f'ROW1_FOCUS_NOT_NEW page={p} focus={focus} new={new}')
+  if not focus:issues.append(f'ROW1_FOCUS_EMPTY page={p}')
+  focus_set=set(focus)
   for x in pr:
-   L=int(x['UnitLength']); bases=[x[f'Base{i}'] for i in range(1,L+1)]
-   if any(b not in active for b in bases):issues.append(f'FUTURE_LETTER page={p} slot={x["Slot"]}')
+   L=int(x['UnitLength']);bases=[x[f'Base{i}'] for i in range(1,L+1)]
+   if any(b not in set(active) for b in bases):issues.append(f'FUTURE_LETTER page={p} slot={x["Slot"]}')
    if x['DisplayJoinPolicy']!='DISCONNECTED_NO_SPACE':issues.append(f'JOIN_POLICY page={p} slot={x["Slot"]}')
-  if new:
-   for x in row2:
-    bases=[x['Base1'],x['Base2']]
-    if any(b not in new for b in bases):issues.append(f'ROW2_NOT_NEW_MATERIAL page={p} slot={x["Slot"]}')
+  for x in row2:
+   bases=[x['Base1'],x['Base2']]
+   if any(b not in focus_set for b in bases):issues.append(f'ROW2_NOT_ROW1_MATERIAL page={p} slot={x["Slot"]} bases={"".join(bases)} focus={focus}')
   if not meta[p].get('NewMaterialLabel'):issues.append(f'NEW_MATERIAL_LABEL_EMPTY page={p}')
   if not meta[p].get('NewMaterialTokens'):issues.append(f'NEW_MATERIAL_TOKENS_EMPTY page={p}')
  if any(int(x['Page']) in SPECIAL for x in r):issues.append('SPECIAL_PAGE_HAS_READING')
- print(f'V8_READING_ROWS={len(r)}');print('V8_PAGE_PATTERN=ROW1_FOCUS|ROW2_4xL2|ROWS3_6_12xL3');print('V8_COMMON_PRACTICE_FONT=REQUIRED');print('V8_REVIEW_TARGET=8_CURRENT|8_REVIEW');print(f'V8_COMPOSITION_ISSUES={len(issues)}')
+ print(f'V8_READING_ROWS={len(r)}');print('V8_PAGE_PATTERN=ROW1_FOCUS|ROW2_4xL2|ROWS3_6_12xL3');print(f'V8_HIJAIYAH_ORDER={HIJAIYAH}');print('V8_ROW2_SOURCE=ROW1_FOCUS_ONLY');print('V8_RTL_ORDER=REQUIRED');print('V8_HEH_DISPLAY=TWO_EYE_REQUIRED');print('V8_REVIEW_TARGET=8_CURRENT|8_REVIEW');print(f'V8_COMPOSITION_ISSUES={len(issues)}')
  if issues:
   for x in issues[:40]:print('ISSUE='+x)
   print('JILID1_COMPOSITION_V5_GATE_V1=FAIL');return 1
