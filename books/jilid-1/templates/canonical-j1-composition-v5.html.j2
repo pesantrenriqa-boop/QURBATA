@@ -16,25 +16,20 @@
 
   {% if page_kind == 'READING' %}
   <section class="composition-v5-focus" aria-label="Materi baru halaman">
-    <div class="composition-v5-focus-label">{{ new_material.label }}</div>
     <div class="composition-v5-focus-arabic qae-native" lang="ar" dir="rtl">
       {% for token in new_material.tokens %}<span class="composition-v5-focus-token">{{ token }}</span>{% endfor %}
     </div>
   </section>
-  <div class="composition-v5-divider"></div>
   <section class="composition-v5-pairs" aria-label="Pembiasaan dua huruf materi baru">
     {% for item in objects if item.row_band == 'ROW_2_L2_CURRENT' %}
     <article class="composition-v5-object" data-slot="{{ item.slot }}" data-learning-state="{{ item.learning_state }}">
-      <span class="slot-number">{{ item.slot }}</span>
       <div class="composition-v5-arabic qae-native" lang="ar" dir="rtl" aria-label="{{ item.text }}">{% for token in item.tokens %}<span class="composition-v5-token">{{ token }}</span>{% endfor %}</div>
     </article>
     {% endfor %}
   </section>
-  <div class="composition-v5-divider"></div>
   <section class="composition-v5-triples" aria-label="Latihan tiga huruf">
     {% for item in objects if item.row_band in ['ROWS_3_6_L3','ROWS_3_7_L3'] %}
     <article class="composition-v5-object" data-slot="{{ item.slot }}" data-learning-state="{{ item.learning_state }}">
-      <span class="slot-number">{{ item.slot }}</span>
       <div class="composition-v5-arabic qae-native" lang="ar" dir="rtl" aria-label="{{ item.text }}">{% for token in item.tokens %}<span class="composition-v5-token">{{ token }}</span>{% endfor %}</div>
     </article>
     {% endfor %}
