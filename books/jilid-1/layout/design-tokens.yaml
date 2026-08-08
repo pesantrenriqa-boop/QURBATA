@@ -8,7 +8,7 @@ page:
   height_mm: 210
   margin_top_mm: 5
   margin_right_mm: 8
-  margin_bottom_mm: 3.5
+  margin_bottom_mm: 2.5
   margin_left_mm: 8
 
 colors:
@@ -74,6 +74,6 @@ validation:
 
 notes:
   - "Margin kanan-kiri Jilid 1 dipersempit agar latihan memiliki ruang horizontal lebih luas."
-  - "Footer diturunkan mendekati batas bawah halaman dengan safe area tetap dijaga oleh renderer gate."
+  - "Margin bawah disamakan dengan tinggi bottom band supaya footer dapat duduk tepat di atas band tanpa ruang kosong lebar."
   - "Harakat memakai combining mark font aktif; jarak antarbaris ditangani oleh layout, bukan dengan memindahkan glyph secara manual."
   - "PDF dan PNG tidak diedit langsung."
