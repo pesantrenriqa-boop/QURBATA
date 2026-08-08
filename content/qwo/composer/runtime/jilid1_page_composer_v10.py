@@ -11,7 +11,7 @@ Jilid-1 specific policy:
 - practice target after foundation: 32 CURRENT units + 21 REVIEW units = 53 total units (~60/40).
 """
 from __future__ import annotations
-import argparse,csv
+import argparse
 from pathlib import Path
 from jilid1_page_composer_v8 import ROOT,PROGRESSION,CRE,LETTER_NAMES,SPECIAL,MARKS,read_csv,write_csv,uniq,display_base
 from jilid1_page_composer_v9 import PEDAGOGICAL_ORDER,EXPECTED_NEW,stage_focus
@@ -26,7 +26,6 @@ def current_mark(stage:str,page:int,index:int)->str:
     if stage=='FATHAH': return 'َ'
     if stage=='KASRAH': return 'ِ'
     if stage=='DHAMMAH': return 'ُ'
-    # mixed is fluency: rotate all mastered short vowels.
     return ('َ','ِ','ُ')[(page+index)%3]
 
 def focus_for(active, new, stage, page):
@@ -50,9 +49,7 @@ def prior_unit_pool(prog:dict[int,dict], page:int):
 def cycle_select(pool:list[dict], count:int, seed:int)->list[dict]:
     if not pool:raise ValueError('EMPTY_UNIT_POOL')
     start=seed%len(pool);ordered=pool[start:]+pool[:start]
-    out=[]
-    for i in range(count):out.append(dict(ordered[i%len(ordered)]))
-    return out
+    return [dict(ordered[i%len(ordered)]) for i in range(count)]
 
 def make_pairs(focus_bases,stage,page):
     cur=[unit(b,current_mark(stage,page,i),'CURRENT') for i,b in enumerate(focus_bases)]
@@ -60,15 +57,22 @@ def make_pairs(focus_bases,stage,page):
     seq=[]
     for i in range(8):
         x=dict(cur[i%len(cur)]);x['state']='CURRENT';seq.append(x)
-    # four fixed-width L2 boxes, each rebuilt from units.
     return [seq[i:i+2] for i in range(0,8,2)]
 
+def _replacement_same_state(pool:list[dict], forbidden_token:str, seed:int)->dict|None:
+    """Find a different surface unit without changing CURRENT/REVIEW accounting."""
+    if not pool:return None
+    for off in range(len(pool)):
+        cand=pool[(seed+off)%len(pool)]
+        if cand['token']!=forbidden_token:
+            return dict(cand)
+    return None
+
 def make_triples(current_pool,review_pool,page):
-    # 45 units = 24 current + 21 review. Interleave state at unit level.
+    # Exactly 45 units: 24 current + 21 review. Duplicate avoidance MUST preserve state counts.
     cur=cycle_select(current_pool,24,page*3)
     rev=cycle_select(review_pool,21,page*5+1)
     units=[];ci=ri=0
-    # repeating 8-unit motif C,R,C,R,C,C,R,C gives current dominance without block-level copying.
     motif=('C','R','C','R','C','C','R','R')
     for i in range(45):
         want=motif[(i+page)%len(motif)]
@@ -78,13 +82,23 @@ def make_triples(current_pool,review_pool,page):
         else:units.append(rev[ri]);ri+=1
     triples=[]
     for i in range(0,45,3):
-        block=units[i:i+3]
-        # avoid identical adjacent surface units when alternatives exist.
-        if len(block)==3 and block[0]['token']==block[1]['token'] and len(review_pool)>1:
-            block[1]=dict(review_pool[(page+i+1)%len(review_pool)])
-        if len(block)==3 and block[1]['token']==block[2]['token'] and len(current_pool)>1:
-            block[2]=dict(current_pool[(page+i+2)%len(current_pool)])
+        block=[dict(x) for x in units[i:i+3]]
+        if len(block)==3 and block[0]['token']==block[1]['token']:
+            pool=current_pool if block[1]['state']=='CURRENT' else review_pool
+            repl=_replacement_same_state(pool,block[0]['token'],page+i+1)
+            if repl is not None:
+                repl['state']=block[1]['state'];block[1]=repl
+        if len(block)==3 and block[1]['token']==block[2]['token']:
+            pool=current_pool if block[2]['state']=='CURRENT' else review_pool
+            repl=_replacement_same_state(pool,block[1]['token'],page+i+2)
+            if repl is not None:
+                repl['state']=block[2]['state'];block[2]=repl
         triples.append(block)
+    # Regression assertion at generation time: never let cosmetic de-duplication alter pedagogy.
+    cc=sum(u['state']=='CURRENT' for b in triples for u in b)
+    rr=sum(u['state']=='REVIEW' for b in triples for u in b)
+    if (cc,rr)!=(24,21):
+        raise ValueError(f'UNIT_RATIO_DRIFT page={page} current={cc} review={rr}')
     return triples
 
 def row(page,slot,band,units,stage,code,desc):
@@ -113,13 +127,10 @@ def main():
         for i,b in enumerate(pairs):reading.append(row(page,i+1,'ROW_2_L2_CURRENT',b,stage,code,desc))
         if page==1:
             basepool=[unit(b,'َ','CURRENT') for b in focus]
-            triples=[]
-            flat=cycle_select(basepool,45,1)
-            for i in range(0,45,3):triples.append(flat[i:i+3])
+            flat=cycle_select(basepool,45,1);triples=[flat[i:i+3] for i in range(0,45,3)]
         else:
             review_pool=prior_unit_pool(prog,page)
-            current_pool=[]
-            for i,b in enumerate(focus):current_pool.append(unit(b,current_mark(stage,page,i),'CURRENT'))
+            current_pool=[unit(b,current_mark(stage,page,i),'CURRENT') for i,b in enumerate(focus)]
             triples=make_triples(current_pool,review_pool,page)
         for i,b in enumerate(triples):reading.append(row(page,5+i,'ROWS_3_7_L3',b,stage,code,desc))
         metadata.append({'Page':page,'HarakatStage':stage,'NewLetters':p['NewLetters'],'ActiveLetters':p['ActiveLetters'],'NewMaterialLabel':label,'NewMaterialBases':''.join(focus),'NewMaterialTokens':'|'.join(u['token'] for u in focus_units),'CompetencyCodes':code,'CompetencyDescriptions':desc,'MemorizationCode':c['MemorizationCode'],'MemorizationDescription':c['MemorizationDescription'],'MemorizationStage':c['MemorizationStage'],'ArabicCode':c['ArabicCode'],'ArabicDescription':c['ArabicDescription'],'AkhlaqCode':c['AkhlaqCode'],'AkhlaqDescription':c['AkhlaqDescription'],'AssessmentCode':c['AssessmentCode'],'AssessmentDescription':c['AssessmentDescription'],'FooterProfile':c['FooterProfile'],'SpecialInjection':'NONE','Status':'UNIT_REVIEW_CANDIDATE_V10'})
