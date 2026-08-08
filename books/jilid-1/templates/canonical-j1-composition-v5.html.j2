@@ -23,14 +23,14 @@
   <section class="composition-v5-pairs" aria-label="Pembiasaan dua huruf materi baru">
     {% for item in objects if item.row_band == 'ROW_2_L2_CURRENT' %}
     <article class="composition-v5-object" data-slot="{{ item.slot }}" data-learning-state="{{ item.learning_state }}">
-      <div class="composition-v5-arabic qae-native" lang="ar" dir="rtl" aria-label="{{ item.text }}">{% for token in item.tokens %}<span class="composition-v5-token">{{ token }}</span>{% endfor %}</div>
+      <div class="composition-v5-arabic qae-native" lang="ar" dir="rtl" aria-label="{{ item.text }}">{% for token in item.tokens %}<span class="composition-v5-token"><span class="composition-v5-glyph">{{ token }}</span></span>{% endfor %}</div>
     </article>
     {% endfor %}
   </section>
   <section class="composition-v5-triples" aria-label="Latihan tiga huruf">
     {% for item in objects if item.row_band in ['ROWS_3_6_L3','ROWS_3_7_L3'] %}
     <article class="composition-v5-object" data-slot="{{ item.slot }}" data-learning-state="{{ item.learning_state }}">
-      <div class="composition-v5-arabic qae-native" lang="ar" dir="rtl" aria-label="{{ item.text }}">{% for token in item.tokens %}<span class="composition-v5-token">{{ token }}</span>{% endfor %}</div>
+      <div class="composition-v5-arabic qae-native" lang="ar" dir="rtl" aria-label="{{ item.text }}">{% for token in item.tokens %}<span class="composition-v5-token"><span class="composition-v5-glyph">{{ token }}</span></span>{% endfor %}</div>
     </article>
     {% endfor %}
   </section>
