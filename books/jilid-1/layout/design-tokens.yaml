@@ -1,4 +1,4 @@
-schema_version: 4
+schema_version: 5
 name: QURBATA Jilid 1 Design Tokens
 status: active
 
@@ -6,10 +6,10 @@ page:
   size: A5
   width_mm: 148
   height_mm: 210
-  margin_top_mm: 7
-  margin_right_mm: 14
-  margin_bottom_mm: 7
-  margin_left_mm: 14
+  margin_top_mm: 5
+  margin_right_mm: 8
+  margin_bottom_mm: 3.5
+  margin_left_mm: 8
 
 colors:
   green: "#064d37"
@@ -39,14 +39,14 @@ spacing:
   section_vertical_gap_mm: 2.5
 
 zones:
-  header_height_mm: 18
-  targets_height_mm: 14
+  header_height_mm: 13
+  targets_height_mm: 18
   material_title_height_mm: 18
   singles_height_mm: 37
   pairs_height_mm: 43
   triples_height_mm: 50
-  footer_height_mm: 10
-  bottom_band_height_mm: 3.5
+  footer_height_mm: 7
+  bottom_band_height_mm: 2.5
 
 objects:
   singles_count: 6
@@ -60,10 +60,10 @@ objects:
 
 arabic_rendering:
   engine: QAE
-  profile_path: content/qwo/arabic-engine/anchors/jilid-1-fathah.yaml
+  profile_path: content/qwo/arabic-engine/anchors/jilid-1-short-vowels-native-v2.yaml
   direction: rtl
-  split_base_and_marks: true
-  mark_renderer: inline-svg-path
+  split_base_and_marks: false
+  mark_renderer: font-combining-mark
   font_feature_liga: false
   font_feature_calt: false
 
@@ -73,8 +73,7 @@ validation:
   render_only_after_validation: true
 
 notes:
-  - "Huruf dasar memakai Amiri Quran tanpa combining harakat pada hasil visual."
-  - "Fathah digambar sebagai inline SVG path oleh QAE."
-  - "Setiap halaman wajib terhubung ke competency contract."
-  - "Setiap slot menjadi learning object kanonik sebelum proses render."
+  - "Margin kanan-kiri Jilid 1 dipersempit agar latihan memiliki ruang horizontal lebih luas."
+  - "Footer diturunkan mendekati batas bawah halaman dengan safe area tetap dijaga oleh renderer gate."
+  - "Harakat memakai combining mark font aktif; jarak antarbaris ditangani oleh layout, bukan dengan memindahkan glyph secara manual."
   - "PDF dan PNG tidak diedit langsung."
