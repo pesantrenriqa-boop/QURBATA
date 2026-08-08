@@ -15,7 +15,7 @@ Page,Code,Competency,SubCompetency,Stair,PresentationRequired,PresentationTitle,
 14,QJ2-P014,Bentuk Huruf Bersambung,Keluarga ع غ,Membaca variasi awal tengah akhir,YES,Keluarga ع غ,عَ + غِ + عُ = عَغِعُ,PAPARAN_MATERI_BARU
 15,QJ2-P015,Bentuk Huruf Bersambung,Huruf ه,Mengenali perubahan bentuk ha dalam sambungan,YES,Perubahan Bentuk ه,هَ + بِ + هُ = هَبِهُ,PAPARAN_MATERI_BARU
 16,QJ2-P016,Bentuk Huruf Bersambung,Kontras ت ة ه,Membedakan ta panjang ta bulat dan ha,YES,Kontras ت ة ه,تَ | ةَ | هَ,PAPARAN_MATERI_BARU
-17,QJ2-P017,Bentuk Huruf Bersambung,Kontras ي ى,Membedakan bentuk akhir ya dan alif maqsurah,YES,Kontras ي ى,يَ | ى, PAPARAN_MATERI_BARU
+17,QJ2-P017,Bentuk Huruf Bersambung,Kontras ي ى,Membedakan bentuk akhir ya dan alif maqsurah,YES,Kontras ي ى,يَ | ى,PAPARAN_MATERI_BARU
 18,QJ2-P018,Bentuk Huruf Bersambung,Hamzah berkursi,Mengenali ء أ إ ؤ ئ dalam bentuk yang diperkenalkan,YES,Hamzah dan Kursinya,ء | أ | إ | ؤ | ئ,PAPARAN_MATERI_BARU
 19,QJ2-P019,Bentuk Huruf Bersambung,Integrasi keluarga bentuk,Menggabungkan keluarga dan pemutus,NO,Integrasi Bentuk Bersambung,,INTEGRATION_NO_NEW_PRESENTATION
 20,QJ2-P020,Bentuk Huruf Bersambung,Evaluasi II,Menguji bentuk sambung kumulatif,NO,Evaluasi Bentuk II,,EVALUATION_NO_NEW_PRESENTATION
