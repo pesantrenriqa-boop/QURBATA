@@ -1,12 +1,31 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import argparse,asyncio,json
+import argparse,asyncio,copy,json
 from pathlib import Path
 import yaml
 from jinja2 import Environment,FileSystemLoader,StrictUndefined
 from playwright.async_api import async_playwright
 ROOT=Path(__file__).resolve().parents[1];SPECIAL={20,40};NATIVE_PROFILE=ROOT/'content/qwo/arabic-engine/anchors/jilid-1-short-vowels-native-v2.yaml'
+HEH_FORMS={'ه','ﻫ','ﻬ','ﻭه','ﻩ','ﻪ'}
 def load_yaml(p):return yaml.safe_load(p.read_text(encoding='utf-8'))
+def display_token(token):
+ s=str(token)
+ # Jilid 1 is intentionally disconnected. Use the two-eye standalone heh display form
+ # requested for print, while canonical source data remains unchanged.
+ if s:
+  chars=list(s)
+  if chars[0] in {'ه','ﻫ','ﻬ','ﻩ','ﻪ'}:chars[0]='ھ'  # U+06BE ARABIC LETTER HEH DOACHASHMEE
+  s=''.join(chars)
+ return s
+def prepare_display_data(d):
+ e=copy.deepcopy(d)
+ nm=e.get('new_material') or {}
+ if isinstance(nm.get('tokens'),list):nm['tokens']=[display_token(x) for x in nm['tokens']]
+ for obj in e.get('objects',[]):
+  if isinstance(obj.get('tokens'),list):obj['tokens']=[display_token(x) for x in obj['tokens']]
+ for item in e.get('letter_names',[]):
+  if 'letter' in item:item['letter']=display_token(item['letter'])
+ return e
 def load_pages(data):
  paths=sorted(data.glob('page-*.yaml'))
  if len(paths)!=40:raise ValueError(f'LAYOUT_PAGE_COUNT actual={len(paths)} expected=40')
@@ -29,10 +48,10 @@ def compile_css(tokens,out,book):
  extra='''.qae-native{font-family:var(--arabic-font);font-feature-settings:"liga" 0,"calt" 0;unicode-bidi:isolate}.canonical-title{height:11mm;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:3mm;color:var(--green);font-size:8pt;overflow:hidden}.canonical-title strong{white-space:nowrap}.letter-name-grid{box-sizing:border-box;height:130mm;display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(7,minmax(0,1fr));gap:2.5mm;padding:3mm 8mm;direction:rtl;overflow:visible}.letter-name-card{box-sizing:border-box;min-width:0;min-height:0;display:flex;align-items:center;justify-content:center;gap:5mm;border:.25mm solid rgba(185,138,47,.38);border-radius:2mm;background:#fff}.letter-name-letter{font-family:var(--arabic-font);font-size:30pt;color:var(--green);line-height:1}.letter-name-arabic{font-family:var(--arabic-font);font-size:18pt;color:var(--ink);line-height:1.2}'''
  out.write_text('\n\n'.join([token_css(tokens),(book/'layout/master-layout-v1.css').read_text(encoding='utf-8'),(book/'layout/composition-v5.css').read_text(encoding='utf-8'),extra]),encoding='utf-8')
 def render_html(d,template_dir,css,logo,out,debug,profile):
- env=Environment(loader=FileSystemLoader(str(template_dir)),undefined=StrictUndefined,autoescape=True);e=dict(d);e['qae']={'profile':profile.get('profile')};out.write_text(env.get_template('canonical-j1-composition-v5.html.j2').render(**e,css_uri=css.resolve().as_uri(),logo_uri=logo.resolve().as_uri(),layout_debug=debug),encoding='utf-8')
+ env=Environment(loader=FileSystemLoader(str(template_dir)),undefined=StrictUndefined,autoescape=True);e=prepare_display_data(d);e['qae']={'profile':profile.get('profile')};out.write_text(env.get_template('canonical-j1-composition-v5.html.j2').render(**e,css_uri=css.resolve().as_uri(),logo_uri=logo.resolve().as_uri(),layout_debug=debug),encoding='utf-8')
 async def apply_optical_alignment(page):
  return await page.evaluate('''()=>{
-  const canvas=document.createElement('canvas'),ctx=canvas.getContext('2d');let count=0,fitCount=0;
+  const canvas=document.createElement('canvas'),ctx=canvas.getContext('2d');let count=0,fitCount=0,dammaCount=0,kasraCount=0;
   const mm=(v)=>v*96/25.4,safe=mm(.55);
   for(const group of document.querySelectorAll('.composition-v5-arabic')){
     const cells=[...group.querySelectorAll(':scope > .composition-v5-token')];
@@ -44,12 +63,16 @@ async def apply_optical_alignment(page):
       const rawWidth=Math.max(.01,rawRight-rawLeft),w=cell.getBoundingClientRect().width,available=Math.max(1,w-2*safe);
       const scale=Math.min(1,available/rawWidth),scaledLeft=rawLeft*scale,scaledRight=rawRight*scale;
       let x;if(i===0)x=w-scaledRight-safe;else if(i===cells.length-1)x=safe-scaledLeft;else x=w/2-(scaledLeft+scaledRight)/2;
-      glyph.style.left=`${x}px`;glyph.style.transform=`translate(0,-50%) scaleX(${scale})`;glyph.style.transformOrigin='0 50%';
-      glyph.dataset.optical='1';glyph.dataset.fit=scale<.999?'1':'0';glyph.dataset.scale=String(scale);glyph.dataset.inkLeft=String(x+scaledLeft);glyph.dataset.inkRight=String(x+scaledRight);glyph.dataset.safe=String(safe);
+      // Micro-only vertical correction. This does not change the frozen grid or horizontal optical anchors.
+      let y=0;
+      if(text.includes('\u064F')){y=mm(.38);dammaCount++;}       // dammah slightly down toward its own base
+      else if(text.includes('\u0650')){y=-mm(.20);kasraCount++;} // kasrah slightly up toward its own base
+      glyph.style.left=`${x}px`;glyph.style.top=`calc(50% + ${y}px)`;glyph.style.transform=`translate(0,-50%) scaleX(${scale})`;glyph.style.transformOrigin='0 50%';
+      glyph.dataset.optical='1';glyph.dataset.fit=scale<.999?'1':'0';glyph.dataset.scale=String(scale);glyph.dataset.inkLeft=String(x+scaledLeft);glyph.dataset.inkRight=String(x+scaledRight);glyph.dataset.safe=String(safe);glyph.dataset.yOffset=String(y);
       if(scale<.999)fitCount++;count++;
     });
   }
-  return {count,fitCount};
+  return {count,fitCount,dammaCount,kasraCount};
  }''')
 async def inspect(page,n):
  return await page.evaluate('''(n)=>{const t=2,eps=.35,issues=[];const add=(kind,el,extra={})=>{const r=el.getBoundingClientRect();issues.push({kind,className:el.className,x:r.x,y:r.y,width:r.width,height:r.height,...extra})};
@@ -61,14 +84,14 @@ async def inspect(page,n):
  return issues}''',n)
 async def browser_render(html_paths,png_dir,pdf,css,font,report):
  async with async_playwright() as p:
-  b=await p.chromium.launch();page=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2);sections=[];issues=[];optical_total=0;fit_total=0
+  b=await p.chromium.launch();page=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2);sections=[];issues=[];optical_total=0;fit_total=0;damma_total=0;kasra_total=0
   for n,h in enumerate(html_paths,1):
    await page.goto(h.resolve().as_uri(),wait_until='networkidle');await page.evaluate('document.fonts.ready');obj=await page.locator('.composition-v5-object').count();names=await page.locator('.letter-name-card').count()
    if n in SPECIAL:
     if obj!=0 or names!=14:raise RuntimeError(f'SPECIAL_RENDER_COUNT_INVALID page={n} objects={obj} names={names}')
    else:
     if obj!=19 or names!=0:raise RuntimeError(f'READING_RENDER_COUNT_INVALID page={n} objects={obj} names={names}')
-    aligned=await apply_optical_alignment(page);optical_total+=aligned['count'];fit_total+=aligned['fitCount']
+    aligned=await apply_optical_alignment(page);optical_total+=aligned['count'];fit_total+=aligned['fitCount'];damma_total+=aligned['dammaCount'];kasra_total+=aligned['kasraCount']
    x=await inspect(page,n)
    for i in x:i['page']=f'page-{n:03d}'
    issues.extend(x);await page.screenshot(path=str(png_dir/f'page-{n:03d}.png'),full_page=True);sections.append(await page.locator('main.page').evaluate('el=>el.outerHTML'))
@@ -77,10 +100,10 @@ async def browser_render(html_paths,png_dir,pdf,css,font,report):
    kinds={}
    for x in issues:kinds[x['kind']]=kinds.get(x['kind'],0)+1
    raise RuntimeError('LAYOUT_OVERFLOW_COUNT='+str(len(issues))+' TYPES='+','.join(f'{k}:{v}' for k,v in sorted(kinds.items()))+f' REPORT={report}')
-  combined="<!doctype html><html><head><meta charset='utf-8'><style>"+css.read_text(encoding='utf-8')+"</style></head><body>"+''.join(sections)+"</body></html>";await page.set_content(combined,wait_until='networkidle');await page.evaluate('document.fonts.ready');await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await b.close();return optical_total,fit_total
+  combined="<!doctype html><html><head><meta charset='utf-8'><style>"+css.read_text(encoding='utf-8')+"</style></head><body>"+''.join(sections)+"</body></html>";await page.set_content(combined,wait_until='networkidle');await page.evaluate('document.fonts.ready');await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await b.close();return optical_total,fit_total,damma_total,kasra_total
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--book-dir',default='books/jilid-1');ap.add_argument('--data-dir',default='books/jilid-1/data-generated-v9-composition-v6');ap.add_argument('--output-dir',default='dist/jilid-1-production-candidate-v4');ap.add_argument('--logo',default='books/shared/assets/qurbata-logo.svg');ap.add_argument('--profile',default=str(NATIVE_PROFILE.relative_to(ROOT)));ap.add_argument('--debug',action='store_true');a=ap.parse_args();book=ROOT/a.book_dir;data=ROOT/a.data_dir;out=ROOT/a.output_dir;logo=ROOT/a.logo;profile=load_yaml(ROOT/a.profile);pages=load_pages(data);tokens=load_yaml(book/'layout/design-tokens.yaml');html_dir=out/'html';png_dir=out/'png';html_dir.mkdir(parents=True,exist_ok=True);png_dir.mkdir(parents=True,exist_ok=True);css=out/'runtime-layout.css';compile_css(tokens,css,book);html=[]
  for d in pages:
   h=html_dir/f"page-{int(d['page']):03d}.html";render_html(d,book/'templates',css,logo,h,a.debug,profile);html.append(h)
- pdf=out/'QURBATA-JILID-1-COMPOSITION-V6-CANDIDATE-V4.pdf';report=out/'LAYOUT-OVERFLOW-REPORT-V6.json';optical,fit=asyncio.run(browser_render(html,png_dir,pdf,css,str(tokens['fonts']['arabic_family']),report));print('PAGES_RENDERED=40');print('READING_OBJECTS_RENDERED=722');print('LETTER_NAMES_RENDERED=28');print(f'OPTICAL_GLYPHS_ALIGNED={optical}');print(f'COLLISION_FIT_GLYPHS={fit}');print('OPTICAL_ALIGNMENT=CANVAS_INK_BOUNDS_COLLISION_SAFE_V2');print('COLLISION_VALIDATION=POST_SCALE_INK_BOUNDS');print('PRACTICE_FONT_SIZE=36pt');print('FOCUS_FONT_SIZE=44pt');print('LAYOUT_OVERFLOW=0');print(f'OVERFLOW_REPORT={report.relative_to(ROOT)}');print(f'PDF={pdf.relative_to(ROOT)}');print('COMPOSITION_V6_RENDERER=PASS');return 0
+ pdf=out/'QURBATA-JILID-1-COMPOSITION-V6-CANDIDATE-V4.pdf';report=out/'LAYOUT-OVERFLOW-REPORT-V6.json';optical,fit,damma,kasra=asyncio.run(browser_render(html,png_dir,pdf,css,str(tokens['fonts']['arabic_family']),report));print('PAGES_RENDERED=40');print('READING_OBJECTS_RENDERED=722');print('LETTER_NAMES_RENDERED=28');print(f'OPTICAL_GLYPHS_ALIGNED={optical}');print(f'COLLISION_FIT_GLYPHS={fit}');print(f'DAMMAH_MICRO_OFFSET_GLYPHS={damma}');print(f'KASRAH_MICRO_OFFSET_GLYPHS={kasra}');print('HEH_DISPLAY_FORM=TWO_EYE_U+06BE');print('OPTICAL_ALIGNMENT=CANVAS_INK_BOUNDS_COLLISION_SAFE_V2');print('COLLISION_VALIDATION=POST_SCALE_INK_BOUNDS');print('LAYOUT_GRID=V22_FROZEN');print('PRACTICE_FONT_SIZE=36pt');print('FOCUS_FONT_SIZE=44pt');print('LAYOUT_OVERFLOW=0');print(f'OVERFLOW_REPORT={report.relative_to(ROOT)}');print(f'PDF={pdf.relative_to(ROOT)}');print('COMPOSITION_V6_RENDERER=PASS');return 0
 if __name__=='__main__':raise SystemExit(main())
