@@ -10,15 +10,9 @@
 <main class="page composition-v5-page page-kind-{{ page_kind|lower }}" data-page-number="{{ page }}" data-qae-profile="{{ qae.profile }}">
   <header class="header">
     <div class="brand-block"><img class="brand-logo" src="{{ logo_uri }}" alt="Logo QURBATA"></div>
-    <div class="heading"><div class="learning-header-title">TARGET PEMBELAJARAN</div><div class="learning-header-subtitle">Kompetensi • Hafalan • Bahasa Arab</div></div>
+    <div class="heading"><div class="learning-header-title">QURBATA • JILID 1</div></div>
     <div class="page-number">{{ '%02d'|format(page) }}</div>
   </header>
-
-  <section class="targets canonical-targets" aria-label="Target pembelajaran halaman">
-    <div class="target-item competency-target"><span>Kompetensi</span><strong>{{ targets.competency_codes }} — {{ targets.competency_descriptions }}</strong></div>
-    <div class="target-item memorization-target"><span>Hafalan</span><strong>{{ targets.memorization_code }} — {{ targets.memorization }}{% if targets.memorization_stage %} ({{ targets.memorization_stage }}){% endif %}</strong></div>
-    <div class="target-item arabic-target"><span>Bahasa Arab</span><strong>{{ targets.arabic_code }} — {{ targets.arabic_language }}</strong></div>
-  </section>
 
   {% if page_kind == 'READING' %}
   <section class="composition-v5-focus" aria-label="Materi baru halaman">
@@ -53,6 +47,13 @@
     {% endfor %}
   </section>
   {% endif %}
+
+  <section class="targets canonical-targets" aria-label="Ringkasan subkompetensi halaman">
+    <div class="target-item competency-target"><span>Kompetensi</span><strong>{{ targets.competency_unit }}</strong></div>
+    <div class="target-item memorization-target"><span>Hafalan</span><strong>{{ targets.memorization_item }}</strong></div>
+    <div class="target-item arabic-target"><span>Bahasa Arab</span><strong>{{ targets.arabic_subcompetency }}</strong></div>
+    <div class="target-item nidom-target"><span>NIDOM</span><strong>{{ targets.nidom_subcompetency }}</strong></div>
+  </section>
 
   <footer class="footer">
     <div class="field"><strong>{{ footer.teacher_label }}</strong><span class="line"></span></div>
