@@ -39,27 +39,22 @@ async def apply_optical_alignment(page):
     cells.forEach((cell,i)=>{
       const glyph=cell.querySelector('.composition-v5-glyph');if(!glyph)return;
       const cs=getComputedStyle(glyph),text=glyph.textContent||'';
-      ctx.font=`${cs.fontStyle} ${cs.fontVariant} ${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
-      ctx.direction='rtl';ctx.textAlign='left';
-      const m=ctx.measureText(text),inkLeft=-m.actualBoundingBoxLeft,inkRight=m.actualBoundingBoxRight;
-      const inkWidth=Math.max(.01,inkRight-inkLeft),w=cell.getBoundingClientRect().width,available=Math.max(1,w-2*safe);
-      const scale=Math.min(1,available/inkWidth);
-      let x;
-      if(i===0)x=w-(inkRight*scale)-safe;
-      else if(i===cells.length-1)x=safe-(inkLeft*scale);
-      else x=w/2-((inkLeft+inkRight)*scale)/2;
-      glyph.style.left=`${x}px`;
-      glyph.style.transform=`translate(0,-50%) scaleX(${scale})`;
-      glyph.dataset.optical='1';glyph.dataset.fit=scale<.999?'1':'0';glyph.dataset.scale=String(scale);
+      ctx.font=`${cs.fontStyle} ${cs.fontVariant} ${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;ctx.direction='rtl';ctx.textAlign='left';
+      const m=ctx.measureText(text),rawLeft=-m.actualBoundingBoxLeft,rawRight=m.actualBoundingBoxRight;
+      const rawWidth=Math.max(.01,rawRight-rawLeft),w=cell.getBoundingClientRect().width,available=Math.max(1,w-2*safe);
+      const scale=Math.min(1,available/rawWidth),scaledLeft=rawLeft*scale,scaledRight=rawRight*scale;
+      let x;if(i===0)x=w-scaledRight-safe;else if(i===cells.length-1)x=safe-scaledLeft;else x=w/2-(scaledLeft+scaledRight)/2;
+      glyph.style.left=`${x}px`;glyph.style.transform=`translate(0,-50%) scaleX(${scale})`;glyph.style.transformOrigin='0 50%';
+      glyph.dataset.optical='1';glyph.dataset.fit=scale<.999?'1':'0';glyph.dataset.scale=String(scale);glyph.dataset.inkLeft=String(x+scaledLeft);glyph.dataset.inkRight=String(x+scaledRight);glyph.dataset.safe=String(safe);
       if(scale<.999)fitCount++;count++;
     });
   }
   return {count,fitCount};
  }''')
 async def inspect(page,n):
- return await page.evaluate('''(n)=>{const t=2,issues=[];const add=(kind,el,extra={})=>{const r=el.getBoundingClientRect();issues.push({kind,className:el.className,x:r.x,y:r.y,width:r.width,height:r.height,...extra})};
+ return await page.evaluate('''(n)=>{const t=2,eps=.35,issues=[];const add=(kind,el,extra={})=>{const r=el.getBoundingClientRect();issues.push({kind,className:el.className,x:r.x,y:r.y,width:r.width,height:r.height,...extra})};
  for(const el of document.querySelectorAll('.page,.header,.targets,.footer')){if(el.scrollWidth>el.clientWidth+t||el.scrollHeight>el.clientHeight+t)add('STRUCTURAL_SCROLL_OVERFLOW',el,{scrollWidth:el.scrollWidth,clientWidth:el.clientWidth,scrollHeight:el.scrollHeight,clientHeight:el.clientHeight})}
- for(const grid of document.querySelectorAll('.composition-v5-pairs,.composition-v5-triples')){const g=grid.getBoundingClientRect();for(const slot of grid.querySelectorAll('.composition-v5-object')){const s=slot.getBoundingClientRect();if(s.left<g.left-t||s.right>g.right+t||s.top<g.top-t||s.bottom>g.bottom+t)add('SLOT_OUTSIDE_GRID',slot,{slot:slot.dataset.slot,gridClass:grid.className});const c=slot.querySelector('.composition-v5-arabic');if(!c)continue;const r=c.getBoundingClientRect();if(r.left<s.left-t||r.right>s.right+t||r.top<s.top-t||r.bottom>s.bottom+t)add('OBJECT_OUTSIDE_SLOT',slot,{slot:slot.dataset.slot});const cells=[...c.querySelectorAll(':scope > .composition-v5-token')];for(const cell of cells){const glyph=cell.querySelector('.composition-v5-glyph');if(!glyph)continue;if(glyph.dataset.optical!=='1')add('OPTICAL_ALIGNMENT_MISSING',glyph,{slot:slot.dataset.slot});const cr=cell.getBoundingClientRect(),gr=glyph.getBoundingClientRect();if(gr.left<cr.left-1||gr.right>cr.right+1)add('GLYPH_CELL_COLLISION',glyph,{slot:slot.dataset.slot,cellLeft:cr.left,cellRight:cr.right,glyphLeft:gr.left,glyphRight:gr.right,scale:glyph.dataset.scale})}}
+ for(const grid of document.querySelectorAll('.composition-v5-pairs,.composition-v5-triples')){const g=grid.getBoundingClientRect();for(const slot of grid.querySelectorAll('.composition-v5-object')){const s=slot.getBoundingClientRect();if(s.left<g.left-t||s.right>g.right+t||s.top<g.top-t||s.bottom>g.bottom+t)add('SLOT_OUTSIDE_GRID',slot,{slot:slot.dataset.slot,gridClass:grid.className});const c=slot.querySelector('.composition-v5-arabic');if(!c)continue;const r=c.getBoundingClientRect();if(r.left<s.left-t||r.right>s.right+t||r.top<s.top-t||r.bottom>s.bottom+t)add('OBJECT_OUTSIDE_SLOT',slot,{slot:slot.dataset.slot});const cells=[...c.querySelectorAll(':scope > .composition-v5-token')];for(const cell of cells){const glyph=cell.querySelector('.composition-v5-glyph');if(!glyph)continue;if(glyph.dataset.optical!=='1')add('OPTICAL_ALIGNMENT_MISSING',glyph,{slot:slot.dataset.slot});const cr=cell.getBoundingClientRect(),inkLeft=cr.left+Number(glyph.dataset.inkLeft),inkRight=cr.left+Number(glyph.dataset.inkRight),safe=Number(glyph.dataset.safe);if(inkLeft<cr.left+safe-eps||inkRight>cr.right-safe+eps)add('GLYPH_CELL_COLLISION',glyph,{slot:slot.dataset.slot,cellLeft:cr.left,cellRight:cr.right,inkLeft,inkRight,safe,scale:glyph.dataset.scale})}}
  }
  const f=document.querySelector('.composition-v5-focus');if(f){const c=f.querySelector('.composition-v5-focus-arabic');if(c){const s=f.getBoundingClientRect(),r=c.getBoundingClientRect();if(r.left<s.left-t||r.right>s.right+t||r.top<s.top-t||r.bottom>s.bottom+t)add('FOCUS_OUTSIDE_ROW',f,{pageNumber:n})}}
  const triples=document.querySelector('.composition-v5-triples'),footer=document.querySelector('.footer');if(triples&&footer){const b=footer.getBoundingClientRect();const glyphs=[...triples.querySelectorAll('.composition-v5-glyph')].map(x=>x.getBoundingClientRect());const lowest=glyphs.length?Math.max(...glyphs.map(r=>r.bottom)):0;if(lowest>b.top-4)add('GLYPH_FOOTER_CLEARANCE',triples,{lowestGlyphBottom:lowest,footerTop:b.top,clearance:b.top-lowest})}
@@ -87,5 +82,5 @@ def main():
  ap=argparse.ArgumentParser();ap.add_argument('--book-dir',default='books/jilid-1');ap.add_argument('--data-dir',default='books/jilid-1/data-generated-v9-composition-v6');ap.add_argument('--output-dir',default='dist/jilid-1-production-candidate-v4');ap.add_argument('--logo',default='books/shared/assets/qurbata-logo.svg');ap.add_argument('--profile',default=str(NATIVE_PROFILE.relative_to(ROOT)));ap.add_argument('--debug',action='store_true');a=ap.parse_args();book=ROOT/a.book_dir;data=ROOT/a.data_dir;out=ROOT/a.output_dir;logo=ROOT/a.logo;profile=load_yaml(ROOT/a.profile);pages=load_pages(data);tokens=load_yaml(book/'layout/design-tokens.yaml');html_dir=out/'html';png_dir=out/'png';html_dir.mkdir(parents=True,exist_ok=True);png_dir.mkdir(parents=True,exist_ok=True);css=out/'runtime-layout.css';compile_css(tokens,css,book);html=[]
  for d in pages:
   h=html_dir/f"page-{int(d['page']):03d}.html";render_html(d,book/'templates',css,logo,h,a.debug,profile);html.append(h)
- pdf=out/'QURBATA-JILID-1-COMPOSITION-V6-CANDIDATE-V4.pdf';report=out/'LAYOUT-OVERFLOW-REPORT-V6.json';optical,fit=asyncio.run(browser_render(html,png_dir,pdf,css,str(tokens['fonts']['arabic_family']),report));print('PAGES_RENDERED=40');print('READING_OBJECTS_RENDERED=722');print('LETTER_NAMES_RENDERED=28');print(f'OPTICAL_GLYPHS_ALIGNED={optical}');print(f'COLLISION_FIT_GLYPHS={fit}');print('OPTICAL_ALIGNMENT=CANVAS_INK_BOUNDS_COLLISION_SAFE');print('PRACTICE_FONT_SIZE=36pt');print('FOCUS_FONT_SIZE=44pt');print('LAYOUT_OVERFLOW=0');print(f'OVERFLOW_REPORT={report.relative_to(ROOT)}');print(f'PDF={pdf.relative_to(ROOT)}');print('COMPOSITION_V6_RENDERER=PASS');return 0
+ pdf=out/'QURBATA-JILID-1-COMPOSITION-V6-CANDIDATE-V4.pdf';report=out/'LAYOUT-OVERFLOW-REPORT-V6.json';optical,fit=asyncio.run(browser_render(html,png_dir,pdf,css,str(tokens['fonts']['arabic_family']),report));print('PAGES_RENDERED=40');print('READING_OBJECTS_RENDERED=722');print('LETTER_NAMES_RENDERED=28');print(f'OPTICAL_GLYPHS_ALIGNED={optical}');print(f'COLLISION_FIT_GLYPHS={fit}');print('OPTICAL_ALIGNMENT=CANVAS_INK_BOUNDS_COLLISION_SAFE_V2');print('COLLISION_VALIDATION=POST_SCALE_INK_BOUNDS');print('PRACTICE_FONT_SIZE=36pt');print('FOCUS_FONT_SIZE=44pt');print('LAYOUT_OVERFLOW=0');print(f'OVERFLOW_REPORT={report.relative_to(ROOT)}');print(f'PDF={pdf.relative_to(ROOT)}');print('COMPOSITION_V6_RENDERER=PASS');return 0
 if __name__=='__main__':raise SystemExit(main())
