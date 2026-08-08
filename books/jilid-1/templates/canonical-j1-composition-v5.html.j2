@@ -10,16 +10,14 @@
 <main class="page composition-v5-page page-kind-{{ page_kind|lower }}" data-page-number="{{ page }}" data-qae-profile="{{ qae.profile }}">
   <header class="header">
     <div class="brand-block"><img class="brand-logo" src="{{ logo_uri }}" alt="Logo QURBATA"></div>
-    <div class="heading"><div class="subtitle">{{ identity.subtitle }}</div><div class="ornament" aria-hidden="true"><span></span><b>◇</b><span></span></div></div>
+    <div class="heading"><div class="learning-header-title">TARGET PEMBELAJARAN</div><div class="learning-header-subtitle">Kompetensi • Hafalan • Bahasa Arab</div></div>
     <div class="page-number">{{ '%02d'|format(page) }}</div>
   </header>
 
-  <section class="targets canonical-targets" aria-label="Target capaian halaman">
-    <div class="targets-label">TARGET CAPAIAN</div>
-    <div class="target-item"><span>Progres</span><strong>{{ targets.material_progress }}</strong></div>
+  <section class="targets canonical-targets" aria-label="Target pembelajaran halaman">
     <div class="target-item competency-target"><span>Kompetensi</span><strong>{{ targets.competency_codes }} — {{ targets.competency_descriptions }}</strong></div>
-    <div class="target-item"><span>Hafalan</span><strong>{{ targets.memorization_code }} — {{ targets.memorization }} ({{ targets.memorization_stage }})</strong></div>
-    <div class="target-item"><span>Bahasa Arab</span><strong>{{ targets.arabic_code }} — {{ targets.arabic_language }}</strong></div>
+    <div class="target-item memorization-target"><span>Hafalan</span><strong>{{ targets.memorization_code }} — {{ targets.memorization }}{% if targets.memorization_stage %} ({{ targets.memorization_stage }}){% endif %}</strong></div>
+    <div class="target-item arabic-target"><span>Bahasa Arab</span><strong>{{ targets.arabic_code }} — {{ targets.arabic_language }}</strong></div>
   </section>
 
   {% if page_kind == 'READING' %}
