@@ -9,15 +9,16 @@
 .composition-v5-page .targets { height:11mm; padding:.5mm 2mm; }
 .composition-v5-page .footer { height:6.5mm; margin-top:.3mm; padding:.2mm 4mm; }
 
-.composition-v5-focus { height:15mm; flex:0 0 15mm; display:flex; align-items:center; justify-content:center; gap:4mm; padding:.1mm 2mm; direction:rtl; overflow:visible; }
+/* Final glyph-safety adjustment: +1mm for the single focus glyph case that exceeded its row. */
+.composition-v5-focus { height:16mm; flex:0 0 16mm; display:flex; align-items:center; justify-content:center; gap:4mm; padding:.1mm 2mm; direction:rtl; overflow:visible; }
 .composition-v5-focus-label { font:600 7pt/1.1 var(--latin-font),sans-serif; color:var(--muted); direction:ltr; }
 .composition-v5-focus-arabic { display:inline-flex; flex-direction:row; direction:rtl; unicode-bidi:isolate; align-items:center; justify-content:center; gap:0; white-space:nowrap; font-family:var(--arabic-font),"Amiri",serif; font-size:44pt; line-height:.9; color:var(--green); }
 .composition-v5-focus-token { display:inline-block; }
 
 .composition-v5-pairs { height:30mm; flex:0 0 30mm; min-height:0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.8mm; padding:0; direction:rtl; align-items:center; overflow:visible; }
 
-/* Explicit height: 5 rows x ~19.6mm. This removes the flex/grid min-content feedback that caused +17px scroll height on every reading page. */
-.composition-v5-triples { height:98mm; flex:0 0 98mm; min-height:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); grid-template-rows:repeat(5,minmax(0,1fr)); gap:.35mm 2mm; padding:0; direction:rtl; align-items:center; overflow:visible; }
+/* Reclaim the 1mm focus safety allowance here; 97mm remains ample for five 36pt rows. */
+.composition-v5-triples { height:97mm; flex:0 0 97mm; min-height:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); grid-template-rows:repeat(5,minmax(0,1fr)); gap:.35mm 2mm; padding:0; direction:rtl; align-items:center; overflow:visible; }
 .composition-v5-object { position:relative; min-width:0; min-height:0; display:flex; align-items:center; justify-content:center; overflow:visible; break-inside:avoid; }
 .composition-v5-object .slot-number { position:absolute; top:.03mm; inset-inline-start:.35mm; font:500 5pt/1 var(--latin-font),sans-serif; color:var(--muted); opacity:.52; }
 
