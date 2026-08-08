@@ -1,10 +1,16 @@
-/* Jilid 1 Composition v22.2 — FROZEN optical grid.
+/* Jilid 1 Composition v22.3 — FROZEN optical grid.
    Freeze contract: practice/focus sizing, pair/triple grid geometry, optical alignment model,
    and column anchors are locked for subsequent Jilid 1 pages. Only scoped print refinements follow. */
 .composition-v5-page { display:flex; flex-direction:column; }
-.composition-v5-page .header { height:17mm; flex:0 0 17mm; align-items:start; overflow:hidden; }
-.composition-v5-page .heading { padding-top:1.2mm; }
-.learning-header-title { color:var(--green); font:700 7.4pt/1.1 var(--latin-font),sans-serif; letter-spacing:.04em; white-space:nowrap; }
+.composition-v5-page .header { height:17mm; flex:0 0 17mm; align-items:center; overflow:hidden; }
+.composition-v5-page .heading { min-width:0; height:100%; padding:0; display:flex; align-items:center; justify-content:center; text-align:center; }
+.learning-header-title {
+  color:var(--green); white-space:nowrap;
+  font-family:var(--latin-font),"Segoe UI Semibold","Trebuchet MS",sans-serif;
+  font-size:8.4pt; font-weight:700; line-height:1;
+  letter-spacing:.11em; font-variant:small-caps;
+  transform:translateY(.15mm);
+}
 .learning-header-subtitle { display:none; }
 
 /* Readable, restrained lower information band; slightly raised from the bottom rule. */
