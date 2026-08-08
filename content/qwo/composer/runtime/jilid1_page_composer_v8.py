@@ -7,7 +7,7 @@ Reading-page contract:
 - Rows 3-6: 12 x L3, with page 2+ distribution 4 CURRENT + 8 REVIEW.
 - Letter introduction follows standard hijaiyah order ا..ي.
 - Visual reading order is authored first-to-last for RTL rendering.
-- Canonical ه remains metadata; display uses a two-eye heh presentation glyph.
+- Canonical ه is rendered as the isolated standalone form; never force the initial/connecting presentation glyph.
 """
 from __future__ import annotations
 import argparse, csv
@@ -39,8 +39,9 @@ def write_csv(path: Path, rows: list[dict[str,Any]]) -> None:
 def uniq(text: str) -> tuple[str,...]: return tuple(dict.fromkeys(text))
 
 def display_base(base: str) -> str:
-    # U+FEEB: initial-form presentation of canonical ه; visually the requested two-eye heh.
-    return "ﻫ" if base == "ه" else base
+    # Jilid 1 practices standalone/disconnected letters. Keep canonical isolated ه.
+    # Do NOT substitute U+FEEB (ﻫ), which is the initial/connecting form.
+    return base
 
 def mark_for(stage: str, page: int, seq: int, unit: int) -> str:
     if stage in MARKS: return MARKS[stage]
@@ -73,11 +74,9 @@ def structural(pool: tuple[str,...], length: int, limit: int, seed: int, allow_a
     return out[:limit]
 
 def current_triples(active: tuple[str,...], focus: tuple[str,...], limit: int, seed: int) -> list[tuple[str,...]]:
-    """CURRENT triples must contain at least one focus/current-material base."""
     focus_set=set(focus); candidates=structural(active,3,max(limit*8,len(active)*5),seed=seed)
     out=[c for c in candidates if any(ch in focus_set for ch in c)]
     if len(out)<limit:
-        # Deterministic fallback: place a focus base first, then two active review bases.
         seen=set(out)
         for f in focus:
             for a in active:
@@ -93,16 +92,13 @@ def units_for(combo: tuple[str,...], stage: str, page: int, seq: int) -> tuple[s
     return tuple(display_base(base)+mark_for(stage,page,seq,i) for i,base in enumerate(combo))
 
 def ordered_stage_focus(active: tuple[str,...], stage: str, page: int) -> tuple[str,...]:
-    """Choose a small contiguous focus group in standard hijaiyah order."""
     pages=STAGE_READING_PAGES[stage]
     idx=pages.index(page)
     if stage in {"KASRAH","DHAMMAH"}:
-        # Progress sequentially through ا..ي; use 2-4 letters so Row 1 remains spacious.
         q,r=divmod(len(active),len(pages))
         sizes=[q+(1 if i<r else 0) for i in range(len(pages))]
         start=sum(sizes[:idx]); size=sizes[idx]
         return tuple(active[start:start+size])
-    # MIXED is review, not a new alphabet pass: use compact sequential windows.
     start=(idx*3)%len(active)
     return tuple(active[(start+i)%len(active)] for i in range(3))
 
@@ -139,7 +135,6 @@ def main() -> int:
         label, focus_tokens, focus_bases=material_focus(active,new,stage,page)
         pair_code=f"J1-PAIR-CURRENT-{stage}"; pair_desc="Pembiasaan dua satuan huruf yang sama dengan materi fokus baris pertama; setiap unit tetap tunggal dan tidak tersambung."
         triple_code=f"J1-TRIPLE-{stage}"; triple_desc="Membaca tiga satuan huruf dengan komposisi materi halaman dan murojaah kumulatif."
-        # Row 2 MUST be generated only from the exact Row-1 focus bases.
         pairs=structural(focus_bases,2,4,seed=page,allow_adjacent_repeat=True)
         for i,combo in enumerate(pairs):
             units=units_for(combo,stage,page,i); reading.append(row_from(combo,units,page=page,slot=i+1,band="ROW_2_L2_CURRENT",state="FOUNDATION" if page==1 else "CURRENT",stage=stage,code=pair_code,desc=pair_desc))
@@ -161,5 +156,5 @@ def main() -> int:
         metadata.append({"Page":page,"HarakatStage":stage,"NewLetters":p["NewLetters"],"ActiveLetters":p["ActiveLetters"],"NewMaterialLabel":label,"NewMaterialBases":"".join(focus_bases),"NewMaterialTokens":"|".join(focus_tokens),"CompetencyCodes":f"{pair_code} | {triple_code}","CompetencyDescriptions":f"{pair_desc} | {triple_desc}","MemorizationCode":c["MemorizationCode"],"MemorizationDescription":c["MemorizationDescription"],"MemorizationStage":c["MemorizationStage"],"ArabicCode":c["ArabicCode"],"ArabicDescription":c["ArabicDescription"],"AkhlaqCode":c["AkhlaqCode"],"AkhlaqDescription":c["AkhlaqDescription"],"AssessmentCode":c["AssessmentCode"],"AssessmentDescription":c["AssessmentDescription"],"FooterProfile":c["FooterProfile"],"SpecialInjection":"NONE","Status":"COMPOSITION_V5_REVIEW_CANDIDATE_V8"})
     names=read_csv(LETTER_NAMES); injections=[{"Page":int(r["TargetPage"]),"Sequence":int(r["Sequence"]),"ContentType":"LETTER_NAME","Letter":r["Letter"],"LetterNameArabic":r["LetterNameArabic"],"Status":r.get("Status","REVIEW_CANDIDATE")} for r in names]
     write_csv(out/"JILID-1-READING-OBJECTS-V8.csv",reading); write_csv(out/"JILID-1-PAGE-METADATA-V8.csv",metadata); write_csv(out/"JILID-1-INJECTION-CONTENT-V8.csv",injections)
-    print("JILID1_COMPOSER_V8=PASS"); print(f"READING_ROWS={len(reading)}"); print("HIJAIYAH_ORDER=ابتثجحخدذرزسشصضطظعغفقكلمنهوي"); print("ROW2_SOURCE=ROW1_FOCUS_ONLY"); print("RTL_AUTHORING_ORDER=FIRST_TOKEN_ON_RIGHT"); print("HEH_DISPLAY=TWO_EYE_PRESENTATION"); print("REVIEW_POLICY=8_CURRENT|8_REVIEW_AFTER_FOUNDATION"); return 0
+    print("JILID1_COMPOSER_V8=PASS"); print(f"READING_ROWS={len(reading)}"); print("HIJAIYAH_ORDER=ابتثجحخدذرزسشصضطظعغفقكلمنهوي"); print("ROW2_SOURCE=ROW1_FOCUS_ONLY"); print("RTL_AUTHORING_ORDER=FIRST_TOKEN_ON_RIGHT"); print("HEH_DISPLAY=ISOLATED_CANONICAL"); print("REVIEW_POLICY=8_CURRENT|8_REVIEW_AFTER_FOUNDATION"); return 0
 if __name__=="__main__": raise SystemExit(main())
