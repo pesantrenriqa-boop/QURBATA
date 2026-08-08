@@ -1,0 +1,41 @@
+Page,HafalanCode,HafalanDescription,ActivityCode,SourceMap,Status
+1,HAF-J1-P001,Al-Fatihah ayat 1 — orientasi sima’,S,MAP-HAF-QJ1-001,ACTIVE
+2,HAF-J1-P002,Al-Fatihah ayat 1 — potongan awal,S-T,MAP-HAF-QJ1-001,ACTIVE
+3,HAF-J1-P003,Al-Fatihah ayat 1 — lanjutan,T-R,MAP-HAF-QJ1-001,ACTIVE
+4,HAF-J1-P004,Al-Fatihah ayat 1 — ayat utuh,C,MAP-HAF-QJ1-001,ACTIVE
+5,HAF-J1-P005,Al-Fatihah ayat 1 — recall,R,MAP-HAF-QJ1-001,ACTIVE
+6,HAF-J1-P006,Al-Fatihah ayat 2 — potongan awal,S-T,MAP-HAF-QJ1-001,ACTIVE
+7,HAF-J1-P007,Al-Fatihah ayat 2 — lanjutan,T-R,MAP-HAF-QJ1-001,ACTIVE
+8,HAF-J1-P008,Al-Fatihah ayat 2 — ayat utuh,C,MAP-HAF-QJ1-001,ACTIVE
+9,HAF-J1-P009,Al-Fatihah ayat 1–2 — penyambungan,R-C,MAP-HAF-QJ1-001,ACTIVE
+10,HAF-J1-P010,Al-Fatihah ayat 1–2 — recall dari ayat 1 atau 2,X,MAP-HAF-QJ1-001,ACTIVE
+11,HAF-J1-P011,Al-Fatihah ayat 3 — potongan awal,S-T,MAP-HAF-QJ1-001,ACTIVE
+12,HAF-J1-P012,Al-Fatihah ayat 3 — lanjutan,T-R,MAP-HAF-QJ1-001,ACTIVE
+13,HAF-J1-P013,Al-Fatihah ayat 3 — ayat utuh,C,MAP-HAF-QJ1-001,ACTIVE
+14,HAF-J1-P014,Al-Fatihah ayat 1–3 — penyambungan,C,MAP-HAF-QJ1-001,ACTIVE
+15,HAF-J1-P015,Al-Fatihah ayat 1–3 — recall,R,MAP-HAF-QJ1-001,ACTIVE
+16,HAF-J1-P016,Al-Fatihah ayat 1–3 — mulai dari ayat 2 atau 3,X-D,MAP-HAF-QJ1-001,ACTIVE
+17,HAF-J1-P017,Al-Fatihah ayat 1–3 — pra-checkpoint,R,MAP-HAF-QJ1-001,ACTIVE
+18,HAF-J1-P018,Al-Fatihah ayat 1–3 — checkpoint Hafalan 1,G,MAP-HAF-QJ1-001,ACTIVE
+19,HAF-J1-P019,Al-Fatihah ayat 4 — potongan awal,S-T-D,MAP-HAF-QJ1-001,ACTIVE
+20,HAF-J1-P020,Al-Fatihah ayat 4 — ayat utuh,C,MAP-HAF-QJ1-001,ACTIVE
+21,HAF-J1-P021,Al-Fatihah ayat 5 — potongan awal,S-T-D,MAP-HAF-QJ1-001,ACTIVE
+22,HAF-J1-P022,Al-Fatihah ayat 5 — ayat utuh,C,MAP-HAF-QJ1-001,ACTIVE
+23,HAF-J1-P023,Al-Fatihah ayat 6 — potongan awal,S-T-D,MAP-HAF-QJ1-001,ACTIVE
+24,HAF-J1-P024,Al-Fatihah ayat 6 — lanjutan,T-R,MAP-HAF-QJ1-001,ACTIVE
+25,HAF-J1-P025,Al-Fatihah ayat 6 — ayat utuh,C,MAP-HAF-QJ1-001,ACTIVE
+26,HAF-J1-P026,Al-Fatihah ayat 7 — potongan awal,S-T-D,MAP-HAF-QJ1-001,ACTIVE
+27,HAF-J1-P027,Al-Fatihah ayat 7 — lanjutan,T-R,MAP-HAF-QJ1-001,ACTIVE
+28,HAF-J1-P028,Al-Fatihah ayat 7 — ayat utuh,C,MAP-HAF-QJ1-001,ACTIVE
+29,HAF-J1-P029,Al-Fatihah ayat 4–7 — penyambungan,C-D,MAP-HAF-QJ1-001,ACTIVE
+30,HAF-J1-P030,Al-Fatihah ayat 1–7 — integrasi surah,C,MAP-HAF-QJ1-001,ACTIVE
+31,HAF-J1-P031,Al-Fatihah ayat 1–7 — mulai dari ayat 4,X,MAP-HAF-QJ1-001,ACTIVE
+32,HAF-J1-P032,Al-Fatihah ayat 1–7 — mulai dari ayat pilihan guru,X,MAP-HAF-QJ1-001,ACTIVE
+33,HAF-J1-P033,Al-Fatihah ayat 1–7 — retensi berjarak,D,MAP-HAF-QJ1-001,ACTIVE
+34,HAF-J1-P034,Al-Fatihah ayat 1–7 — koreksi tajwid individual,R,MAP-HAF-QJ1-001,ACTIVE
+35,HAF-J1-P035,Al-Fatihah ayat 1–7 — pra-checkpoint,R-C,MAP-HAF-QJ1-001,ACTIVE
+36,HAF-J1-P036,Al-Fatihah ayat 4–7 + penyambungan ayat 1–7 — checkpoint Hafalan 2,G,MAP-HAF-QJ1-001,ACTIVE
+37,HAF-J1-P037,Al-Fatihah ayat 1–7 — mulai dari ayat tengah,X-D,MAP-HAF-QJ1-001,ACTIVE
+38,HAF-J1-P038,Al-Fatihah ayat 1–7 — recall dan pemaknaan global,R,MAP-HAF-QJ1-001,ACTIVE
+39,HAF-J1-P039,Al-Fatihah ayat 1–7 — retensi bagian yang pernah salah,D,MAP-HAF-QJ1-001,ACTIVE
+40,HAF-J1-P040,Al-Fatihah ayat 1–7 — sampel akhir Jilid 1,G,MAP-HAF-QJ1-001,ACTIVE
