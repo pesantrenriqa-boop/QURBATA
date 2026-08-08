@@ -5,7 +5,7 @@ Jilid-1 specific policy:
 - the atomic review unit is one learned letter+harakat, NOT a previously generated L2/L3 block;
 - each page is dominated by the current page's letter+harakat material;
 - cumulative review samples previously introduced letter+harakat units;
-- row 2 remains four L2 boxes from current focus only;
+- row 2 remains four L2 boxes from current focus only, but avoids repeating the same pair surface when the focus has >=2 units;
 - rows 3-7 contain fifteen L3 boxes assembled afresh from unit pools;
 - no L3 surface block is copied as the review unit;
 - practice target after foundation: 32 CURRENT units + 21 REVIEW units = 53 total units (~60/40).
@@ -52,15 +52,21 @@ def cycle_select(pool:list[dict], count:int, seed:int)->list[dict]:
     return [dict(ordered[i%len(ordered)]) for i in range(count)]
 
 def make_pairs(focus_bases,stage,page):
+    """Four L2 boxes from focus units only, with surface variation when possible."""
     cur=[unit(b,current_mark(stage,page,i),'CURRENT') for i,b in enumerate(focus_bases)]
     if not cur:raise ValueError(f'FOCUS_EMPTY page={page}')
-    seq=[]
-    for i in range(8):
-        x=dict(cur[i%len(cur)]);x['state']='CURRENT';seq.append(x)
-    return [seq[i:i+2] for i in range(0,8,2)]
+    n=len(cur)
+    if n==1:
+        patterns=((0,0),(0,0),(0,0),(0,0))
+    elif n==2:
+        # AB, BA, AA, BB: four distinct pedagogical exposures instead of AB x4.
+        patterns=((0,1),(1,0),(0,0),(1,1))
+    else:
+        # Rotate across the focus set while keeping every unit CURRENT.
+        patterns=((0,1),(1,2),(2,0),(0,2))
+    return [[dict(cur[a%n]),dict(cur[b%n])] for a,b in patterns]
 
 def _replacement_same_state(pool:list[dict], forbidden_token:str, seed:int)->dict|None:
-    """Find a different surface unit without changing CURRENT/REVIEW accounting."""
     if not pool:return None
     for off in range(len(pool)):
         cand=pool[(seed+off)%len(pool)]
@@ -69,7 +75,6 @@ def _replacement_same_state(pool:list[dict], forbidden_token:str, seed:int)->dic
     return None
 
 def make_triples(current_pool,review_pool,page):
-    # Exactly 45 units: 24 current + 21 review. Duplicate avoidance MUST preserve state counts.
     cur=cycle_select(current_pool,24,page*3)
     rev=cycle_select(review_pool,21,page*5+1)
     units=[];ci=ri=0
@@ -94,7 +99,6 @@ def make_triples(current_pool,review_pool,page):
             if repl is not None:
                 repl['state']=block[2]['state'];block[2]=repl
         triples.append(block)
-    # Regression assertion at generation time: never let cosmetic de-duplication alter pedagogy.
     cc=sum(u['state']=='CURRENT' for b in triples for u in b)
     rr=sum(u['state']=='REVIEW' for b in triples for u in b)
     if (cc,rr)!=(24,21):
@@ -136,5 +140,5 @@ def main():
         metadata.append({'Page':page,'HarakatStage':stage,'NewLetters':p['NewLetters'],'ActiveLetters':p['ActiveLetters'],'NewMaterialLabel':label,'NewMaterialBases':''.join(focus),'NewMaterialTokens':'|'.join(u['token'] for u in focus_units),'CompetencyCodes':code,'CompetencyDescriptions':desc,'MemorizationCode':c['MemorizationCode'],'MemorizationDescription':c['MemorizationDescription'],'MemorizationStage':c['MemorizationStage'],'ArabicCode':c['ArabicCode'],'ArabicDescription':c['ArabicDescription'],'AkhlaqCode':c['AkhlaqCode'],'AkhlaqDescription':c['AkhlaqDescription'],'AssessmentCode':c['AssessmentCode'],'AssessmentDescription':c['AssessmentDescription'],'FooterProfile':c['FooterProfile'],'SpecialInjection':'NONE','Status':'UNIT_REVIEW_CANDIDATE_V10'})
     names=read_csv(LETTER_NAMES);inj=[{'Page':int(r['TargetPage']),'Sequence':int(r['Sequence']),'ContentType':'LETTER_NAME','Letter':r['Letter'],'LetterNameArabic':r['LetterNameArabic'],'Status':r.get('Status','REVIEW_CANDIDATE')} for r in names]
     write_csv(out/'JILID-1-READING-OBJECTS-V10.csv',reading);write_csv(out/'JILID-1-PAGE-METADATA-V10.csv',metadata);write_csv(out/'JILID-1-INJECTION-CONTENT-V10.csv',inj)
-    print('JILID1_COMPOSER_V10=PASS');print(f'READING_ROWS={len(reading)}');print('REVIEW_ATOM=LETTER_PLUS_HARAKAT');print('BLOCK_REUSE_AS_REVIEW=FORBIDDEN');print('PAGE_UNIT_TARGET=32_CURRENT|21_REVIEW');print('ROW2_SOURCE=FOCUS_UNITS_ONLY');print('ROWS3_7=FRESH_UNIT_ASSEMBLY');return 0
+    print('JILID1_COMPOSER_V10=PASS');print(f'READING_ROWS={len(reading)}');print('REVIEW_ATOM=LETTER_PLUS_HARAKAT');print('BLOCK_REUSE_AS_REVIEW=FORBIDDEN');print('PAGE_UNIT_TARGET=32_CURRENT|21_REVIEW');print('ROW2_SOURCE=FOCUS_UNITS_ONLY');print('ROW2_VARIATION=UNIQUE_WHEN_FOCUS_GE_2');print('ROWS3_7=FRESH_UNIT_ASSEMBLY');return 0
 if __name__=='__main__':raise SystemExit(main())
