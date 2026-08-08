@@ -6,7 +6,7 @@ import yaml
 ROOT=Path(__file__).resolve().parents[1];SPECIAL={20,40}
 def read(p):
  with p.open(encoding='utf-8-sig',newline='') as h:return list(csv.DictReader(h))
-def dl(x):return 'ﻫ' if x=='ه' else x
+def dl(x):return x
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--input-dir',default='content/qwo/composer/output/jilid-1-v10-unit-review');ap.add_argument('--output-dir',default='books/jilid-1/data-generated-v10-unit-review');a=ap.parse_args();inp=ROOT/a.input_dir;out=ROOT/a.output_dir;out.mkdir(parents=True,exist_ok=True)
  reading=read(inp/'JILID-1-READING-OBJECTS-V10.csv');meta=read(inp/'JILID-1-PAGE-METADATA-V10.csv');inj=read(inp/'JILID-1-INJECTION-CONTENT-V10.csv');rb=defaultdict(list);ib=defaultdict(list)
@@ -26,5 +26,5 @@ def main():
     objs.append({'slot':int(r['Slot']),'object_id':r['ObjectID'],'object_type':'PRACTICE','competency_code':r['CompetencyCode'],'competency_description':r['CompetencyDescription'],'learning_state':r['LearningState'],'unit_states':states,'source_ref':r['SourceRef'],'text':r['ArabicObject'],'unit_length':L,'row_band':r['RowBand'],'display_join_policy':r['DisplayJoinPolicy'],'render_mode':'qae-native-short-vowel','tokens':tokens})
    d['page_kind']='READING';d['objects']=objs;d['letter_names']=[];total+=len(rows)
   (out/f'page-{page:03d}.yaml').write_text(yaml.safe_dump(d,allow_unicode=True,sort_keys=False),encoding='utf-8')
- print('PAGES_WRITTEN=40');print(f'READING_OBJECTS_WRITTEN={total}');print(f'LETTER_NAMES_WRITTEN={names}');print('REVIEW_ATOM=LETTER_PLUS_HARAKAT');print('BOX_WIDTH_POLICY=FIXED_EQUAL_COLUMNS');print('UNIT_ALIGNMENT=JUSTIFIED_RTL');print('LAYOUT_ADAPTER_V6=PASS');return 0
+ print('PAGES_WRITTEN=40');print(f'READING_OBJECTS_WRITTEN={total}');print(f'LETTER_NAMES_WRITTEN={names}');print('REVIEW_ATOM=LETTER_PLUS_HARAKAT');print('BOX_WIDTH_POLICY=FIXED_EQUAL_COLUMNS');print('UNIT_ALIGNMENT=EDGE_LOCKED_RTL');print('HEH_DISPLAY=ISOLATED_CANONICAL');print('LAYOUT_ADAPTER_V6=PASS');return 0
 if __name__=='__main__':raise SystemExit(main())
