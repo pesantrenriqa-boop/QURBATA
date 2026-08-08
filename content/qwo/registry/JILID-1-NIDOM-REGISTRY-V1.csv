@@ -1,41 +1,41 @@
 Page,NidomCode,NidomSubcompetency,SourceRule,Status
-1,NID-J1-001,Niat baik belajar Al-Qur'an,HCP-QUR-001|QJ1-P038,ACTIVE
-2,NID-J1-002,Mendengarkan guru dengan baik,HCP-QUR-001|QJ1-P038,ACTIVE
-3,NID-J1-003,Menunggu giliran dengan tertib,HCP-QUR-001|QJ1-P038,ACTIVE
-4,NID-J1-004,Sabar ketika mengulang bacaan,HCP-QUR-001|QJ1-P038,ACTIVE
-5,NID-J1-005,Menerima koreksi dengan tenang,HCP-QUR-001|QJ1-P038,ACTIVE
-6,NID-J1-006,Menjaga mushaf dan bahan belajar,HCP-QUR-001|QJ1-P038,ACTIVE
-7,NID-J1-007,Menghormati guru,HCP-QUR-001|QJ1-P038,ACTIVE
-8,NID-J1-008,Menghormati teman belajar,HCP-QUR-001|QJ1-P038,ACTIVE
-9,NID-J1-009,Tidak mengejek kesalahan teman,HCP-QUR-001|QJ1-P038,ACTIVE
-10,NID-J1-010,Berani memperbaiki kesalahan,HCP-QUR-001|QJ1-P038,ACTIVE
-11,NID-J1-011,Duduk dan belajar dengan tertib,HCP-QUR-001|JILID1_STAGE,ACTIVE
-12,NID-J1-012,Menyiapkan alat belajar sebelum mulai,HCP-QUR-001|JILID1_STAGE,ACTIVE
-13,NID-J1-013,Menjaga kebersihan tempat belajar,HCP-QUR-001|JILID1_STAGE,ACTIVE
-14,NID-J1-014,Membiasakan salam ketika bertemu,HCP-QUR-001|JILID1_STAGE,ACTIVE
-15,NID-J1-015,Menjawab salam dengan baik,HCP-QUR-001|JILID1_STAGE,ACTIVE
-16,NID-J1-016,Menyimak sebelum menirukan,HCP-QUR-001|QJ1-P001,ACTIVE
-17,NID-J1-017,Tidak tergesa-gesa saat belajar,HCP-QUR-001|QJ1-P038,ACTIVE
-18,NID-J1-018,Jujur ketika belum hafal,HCP-QUR-001|JILID1_STAGE,ACTIVE
-19,NID-J1-019,Mengulang dengan sabar,HCP-QUR-001|QJ1-P038,ACTIVE
-20,NID-J1-020,Fokus saat guru memberi contoh,HCP-QUR-001|QJ1-P038,ACTIVE
-21,NID-J1-021,Mengucapkan dengan sopan,HCP-QUR-001|JILID1_STAGE,ACTIVE
-22,NID-J1-022,Menjaga suara agar tidak mengganggu,HCP-QUR-001|JILID1_STAGE,ACTIVE
-23,NID-J1-023,Meminta bantuan dengan sopan,HCP-QUR-001|JILID1_STAGE,ACTIVE
-24,NID-J1-024,Membantu teman tanpa merendahkan,HCP-QUR-001|JILID1_STAGE,ACTIVE
-25,NID-J1-025,Bersyukur atas kemajuan belajar,HCP-QUR-001|JILID1_STAGE,ACTIVE
-26,NID-J1-026,Menjaga kebersihan diri,HCP-QUR-001|JILID1_STAGE,ACTIVE
-27,NID-J1-027,Menjaga kebersihan alat belajar,HCP-QUR-001|JILID1_STAGE,ACTIVE
-28,NID-J1-028,Membiasakan kata-kata yang baik,HCP-QUR-001|JILID1_STAGE,ACTIVE
-29,NID-J1-029,Menyayangi teman belajar,HCP-QUR-001|JILID1_STAGE,ACTIVE
-30,NID-J1-030,Tetap tenang saat diuji,HCP-QUR-001|QJ1-P038,ACTIVE
-31,NID-J1-031,Teliti membedakan bentuk huruf,HCP-QUR-001|JILID1_STAGE,ACTIVE
-32,NID-J1-032,Tekun menyelesaikan latihan,HCP-QUR-001|JILID1_STAGE,ACTIVE
-33,NID-J1-033,Tidak menyerah ketika sulit,HCP-QUR-001|JILID1_STAGE,ACTIVE
-34,NID-J1-034,Mengakui kesalahan dan memperbaikinya,HCP-QUR-001|QJ1-P038,ACTIVE
-35,NID-J1-035,Murojaah dengan disiplin,HCP-QUR-001|JILID1_STAGE,ACTIVE
-36,NID-J1-036,Jujur saat setoran hafalan,HCP-QUR-001|JILID1_STAGE,ACTIVE
-37,NID-J1-037,Teliti pada titik dan bentuk,HCP-QUR-001|JILID1_STAGE,ACTIVE
-38,NID-J1-038,Adab belajar Al-Qur'an,HCP-QUR-001|QJ1-P038,ACTIVE
-39,NID-J1-039,Percaya diri membaca mandiri,HCP-QUR-001|JILID1_STAGE,ACTIVE
-40,NID-J1-040,Tenang dan jujur saat ujian,HCP-QUR-001|JILID1_STAGE,ACTIVE
+1,NID-J1-KO301,Niat belajar Al-Qur'an,QJ1-P038|KO-000301|SPAN-01-06,ACTIVE
+2,NID-J1-KO301,Niat belajar Al-Qur'an,QJ1-P038|KO-000301|SPAN-01-06,ACTIVE
+3,NID-J1-KO301,Niat belajar Al-Qur'an,QJ1-P038|KO-000301|SPAN-01-06,ACTIVE
+4,NID-J1-KO301,Niat belajar Al-Qur'an,QJ1-P038|KO-000301|SPAN-01-06,ACTIVE
+5,NID-J1-KO301,Niat belajar Al-Qur'an,QJ1-P038|KO-000301|SPAN-01-06,ACTIVE
+6,NID-J1-KO301,Niat belajar Al-Qur'an,QJ1-P038|KO-000301|SPAN-01-06,ACTIVE
+7,NID-J1-KO302,Adab mendengarkan dan menunggu giliran,QJ1-P038|KO-000302|SPAN-07-13,ACTIVE
+8,NID-J1-KO302,Adab mendengarkan dan menunggu giliran,QJ1-P038|KO-000302|SPAN-07-13,ACTIVE
+9,NID-J1-KO302,Adab mendengarkan dan menunggu giliran,QJ1-P038|KO-000302|SPAN-07-13,ACTIVE
+10,NID-J1-KO302,Adab mendengarkan dan menunggu giliran,QJ1-P038|KO-000302|SPAN-07-13,ACTIVE
+11,NID-J1-KO302,Adab mendengarkan dan menunggu giliran,QJ1-P038|KO-000302|SPAN-07-13,ACTIVE
+12,NID-J1-KO302,Adab mendengarkan dan menunggu giliran,QJ1-P038|KO-000302|SPAN-07-13,ACTIVE
+13,NID-J1-KO302,Adab mendengarkan dan menunggu giliran,QJ1-P038|KO-000302|SPAN-07-13,ACTIVE
+14,NID-J1-KO303,Sabar dalam murojaah,QJ1-P038|KO-000303|SPAN-14-20,ACTIVE
+15,NID-J1-KO303,Sabar dalam murojaah,QJ1-P038|KO-000303|SPAN-14-20,ACTIVE
+16,NID-J1-KO303,Sabar dalam murojaah,QJ1-P038|KO-000303|SPAN-14-20,ACTIVE
+17,NID-J1-KO303,Sabar dalam murojaah,QJ1-P038|KO-000303|SPAN-14-20,ACTIVE
+18,NID-J1-KO303,Sabar dalam murojaah,QJ1-P038|KO-000303|SPAN-14-20,ACTIVE
+19,NID-J1-KO303,Sabar dalam murojaah,QJ1-P038|KO-000303|SPAN-14-20,ACTIVE
+20,NID-J1-KO303,Sabar dalam murojaah,QJ1-P038|KO-000303|SPAN-14-20,ACTIVE
+21,NID-J1-KO304,Menjaga mushaf dan bahan belajar,QJ1-P038|KO-000304|SPAN-21-27,ACTIVE
+22,NID-J1-KO304,Menjaga mushaf dan bahan belajar,QJ1-P038|KO-000304|SPAN-21-27,ACTIVE
+23,NID-J1-KO304,Menjaga mushaf dan bahan belajar,QJ1-P038|KO-000304|SPAN-21-27,ACTIVE
+24,NID-J1-KO304,Menjaga mushaf dan bahan belajar,QJ1-P038|KO-000304|SPAN-21-27,ACTIVE
+25,NID-J1-KO304,Menjaga mushaf dan bahan belajar,QJ1-P038|KO-000304|SPAN-21-27,ACTIVE
+26,NID-J1-KO304,Menjaga mushaf dan bahan belajar,QJ1-P038|KO-000304|SPAN-21-27,ACTIVE
+27,NID-J1-KO304,Menjaga mushaf dan bahan belajar,QJ1-P038|KO-000304|SPAN-21-27,ACTIVE
+28,NID-J1-KO305,Menerima koreksi dengan tenang,QJ1-P038|KO-000305|SPAN-28-33,ACTIVE
+29,NID-J1-KO305,Menerima koreksi dengan tenang,QJ1-P038|KO-000305|SPAN-28-33,ACTIVE
+30,NID-J1-KO305,Menerima koreksi dengan tenang,QJ1-P038|KO-000305|SPAN-28-33,ACTIVE
+31,NID-J1-KO305,Menerima koreksi dengan tenang,QJ1-P038|KO-000305|SPAN-28-33,ACTIVE
+32,NID-J1-KO305,Menerima koreksi dengan tenang,QJ1-P038|KO-000305|SPAN-28-33,ACTIVE
+33,NID-J1-KO305,Menerima koreksi dengan tenang,QJ1-P038|KO-000305|SPAN-28-33,ACTIVE
+34,NID-J1-KO306,Menghormati teman dan guru,QJ1-P038|KO-000306|SPAN-34-40,ACTIVE
+35,NID-J1-KO306,Menghormati teman dan guru,QJ1-P038|KO-000306|SPAN-34-40,ACTIVE
+36,NID-J1-KO306,Menghormati teman dan guru,QJ1-P038|KO-000306|SPAN-34-40,ACTIVE
+37,NID-J1-KO306,Menghormati teman dan guru,QJ1-P038|KO-000306|SPAN-34-40,ACTIVE
+38,NID-J1-KO306,Menghormati teman dan guru,QJ1-P038|KO-000306|SPAN-34-40,ACTIVE
+39,NID-J1-KO306,Menghormati teman dan guru,QJ1-P038|KO-000306|SPAN-34-40,ACTIVE
+40,NID-J1-KO306,Menghormati teman dan guru,QJ1-P038|KO-000306|SPAN-34-40,ACTIVE
