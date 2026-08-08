@@ -4,27 +4,25 @@
 /*
  * Composition-v6 fitting contract:
  * keep Arabic practice type at 36pt and focus at 44pt;
- * recover vertical space from metadata/footer zones instead of shrinking Arabic.
+ * use explicit block heights so grid scroll boxes cannot exceed their flex allocation.
  */
-.composition-v5-page .targets { height:12mm; padding:.7mm 2mm; }
-.composition-v5-page .footer { height:7mm; margin-top:.5mm; padding:.3mm 4mm; }
+.composition-v5-page .targets { height:11mm; padding:.5mm 2mm; }
+.composition-v5-page .footer { height:6.5mm; margin-top:.3mm; padding:.2mm 4mm; }
 
-.composition-v5-focus { height:15.5mm; display:flex; align-items:center; justify-content:center; gap:4mm; padding:.2mm 2mm; direction:rtl; overflow:visible; }
+.composition-v5-focus { height:15mm; flex:0 0 15mm; display:flex; align-items:center; justify-content:center; gap:4mm; padding:.1mm 2mm; direction:rtl; overflow:visible; }
 .composition-v5-focus-label { font:600 7pt/1.1 var(--latin-font),sans-serif; color:var(--muted); direction:ltr; }
-.composition-v5-focus-arabic { display:inline-flex; flex-direction:row; direction:rtl; unicode-bidi:isolate; align-items:center; justify-content:center; gap:0; white-space:nowrap; font-family:var(--arabic-font),"Amiri",serif; font-size:44pt; line-height:.92; color:var(--green); }
+.composition-v5-focus-arabic { display:inline-flex; flex-direction:row; direction:rtl; unicode-bidi:isolate; align-items:center; justify-content:center; gap:0; white-space:nowrap; font-family:var(--arabic-font),"Amiri",serif; font-size:44pt; line-height:.9; color:var(--green); }
 .composition-v5-focus-token { display:inline-block; }
 
-/* 29.7mm clears the two glyph-dependent 2px vertical pair overflows. */
-.composition-v5-pairs { height:29.7mm; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:1.2mm; padding:.2mm 0 .3mm; direction:rtl; align-items:center; }
+.composition-v5-pairs { height:30mm; flex:0 0 30mm; min-height:0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.8mm; padding:0; direction:rtl; align-items:center; overflow:visible; }
 
-/* Five equal triple rows receive the recovered page height. */
-.composition-v5-triples { flex:1; min-height:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); grid-template-rows:repeat(5,minmax(0,1fr)); gap:.7mm 2.4mm; padding:0; direction:rtl; align-items:center; }
+/* Explicit height: 5 rows x ~19.6mm. This removes the flex/grid min-content feedback that caused +17px scroll height on every reading page. */
+.composition-v5-triples { height:98mm; flex:0 0 98mm; min-height:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); grid-template-rows:repeat(5,minmax(0,1fr)); gap:.35mm 2mm; padding:0; direction:rtl; align-items:center; overflow:visible; }
 .composition-v5-object { position:relative; min-width:0; min-height:0; display:flex; align-items:center; justify-content:center; overflow:visible; break-inside:avoid; }
-.composition-v5-object .slot-number { position:absolute; top:.05mm; inset-inline-start:.4mm; font:500 5pt/1 var(--latin-font),sans-serif; color:var(--muted); opacity:.52; }
+.composition-v5-object .slot-number { position:absolute; top:.03mm; inset-inline-start:.35mm; font:500 5pt/1 var(--latin-font),sans-serif; color:var(--muted); opacity:.52; }
 
-/* Same nominal type size for every practice object. Tiny negative inline margins only reclaim glyph side-bearing space. */
-.composition-v5-arabic { min-width:0; max-width:100%; display:inline-flex; flex-direction:row; direction:rtl; unicode-bidi:isolate; align-items:center; justify-content:center; gap:0; white-space:nowrap; font-family:var(--arabic-font),"Amiri",serif; font-size:36pt; line-height:.92; color:#000; }
-.composition-v5-token { display:inline-block; margin-inline:-.012em; }
-.composition-v5-divider { height:.22mm; background:rgba(6,77,55,.18); margin:0 6mm; flex:0 0 auto; }
+.composition-v5-arabic { min-width:0; max-width:100%; display:inline-flex; flex-direction:row; direction:rtl; unicode-bidi:isolate; align-items:center; justify-content:center; gap:0; white-space:nowrap; font-family:var(--arabic-font),"Amiri",serif; font-size:36pt; line-height:.9; color:#000; }
+.composition-v5-token { display:inline-block; margin-inline:-.02em; }
+.composition-v5-divider { height:.16mm; background:rgba(6,77,55,.18); margin:0 5mm; flex:0 0 .16mm; }
 html[data-layout-debug="true"] .composition-v5-object { outline:.15mm dashed rgba(0,0,0,.12); }
 html[data-layout-debug="true"] .composition-v5-focus { outline:.15mm dashed rgba(6,77,55,.18); }
