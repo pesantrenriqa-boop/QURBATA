@@ -1,11 +1,10 @@
-/* Jilid 1 Composition v12: optical glyph anchors + bottom-pinned metadata/footer. */
+/* Jilid 1 Composition v12.1: optical glyph anchors + collision-safe wider token cells. */
 .composition-v5-page { display:flex; flex-direction:column; }
 .composition-v5-page .header { height:17mm; flex:0 0 17mm; align-items:start; overflow:hidden; }
 .composition-v5-page .heading { padding-top:1.2mm; }
 .learning-header-title { color:var(--green); font:700 7.4pt/1.1 var(--latin-font),sans-serif; letter-spacing:.04em; white-space:nowrap; }
 .learning-header-subtitle { display:none; }
 
-/* Auto top margin pushes summary/footer to the physical bottom instead of leaving dead space below. */
 .composition-v5-page .targets { height:10mm; flex:0 0 10mm; margin-top:auto; padding:.3mm 0; grid-template-columns:1.2fr 1fr 1fr 1.35fr; gap:2mm; background:transparent; border:0; border-radius:0; overflow:hidden; }
 .composition-v5-page .target-item { min-height:9mm; padding:.35mm .8mm 0; border:0; justify-content:flex-start; background:transparent; }
 .composition-v5-page .target-item span { flex:0 0 auto; overflow:visible; white-space:nowrap; text-overflow:clip; font-weight:700; color:var(--green); font-size:5.1pt; }
@@ -19,16 +18,15 @@
 .composition-v5-focus-arabic { display:inline-flex; flex-direction:row; direction:rtl; unicode-bidi:isolate; align-items:center; justify-content:center; gap:1.2mm; white-space:nowrap; font-family:var(--arabic-font),"Amiri",serif; font-size:44pt; line-height:1; color:var(--green); }
 .composition-v5-focus-token { display:inline-block; }
 
-/* Outer boxes stay fixed and invisible. */
-.composition-v5-pairs { box-sizing:border-box; height:30mm; flex:0 0 30mm; min-height:0; display:grid; grid-template-columns:repeat(4,24mm); justify-content:space-between; padding:1mm 0; direction:rtl; align-items:center; overflow:visible; }
-.composition-v5-triples { box-sizing:border-box; height:108mm; flex:0 0 108mm; min-height:0; display:grid; grid-template-columns:repeat(3,30mm); grid-template-rows:repeat(5,minmax(0,1fr)); justify-content:space-between; row-gap:5.5mm; padding:1mm 0 3mm; direction:rtl; align-items:center; overflow:visible; }
+/* Wider invisible outer boxes give wide Naskh families (ب/ف/س/ص etc.) enough ink room at 36pt. */
+.composition-v5-pairs { box-sizing:border-box; height:30mm; flex:0 0 30mm; min-height:0; display:grid; grid-template-columns:repeat(4,28mm); justify-content:space-between; padding:1mm 0; direction:rtl; align-items:center; overflow:visible; }
+.composition-v5-triples { box-sizing:border-box; height:108mm; flex:0 0 108mm; min-height:0; display:grid; grid-template-columns:repeat(3,36mm); grid-template-rows:repeat(5,minmax(0,1fr)); justify-content:space-between; row-gap:5.5mm; padding:1mm 0 3mm; direction:rtl; align-items:center; overflow:visible; }
 .composition-v5-object { box-sizing:border-box; position:relative; width:100%; height:100%; min-width:0; min-height:0; display:flex; align-items:center; justify-content:center; overflow:visible; break-inside:avoid; }
 .composition-v5-object .slot-number { display:none; }
 
-/* Fixed token cells. The renderer computes optical ink-edge offsets on .composition-v5-glyph. */
 .composition-v5-arabic { box-sizing:border-box; height:100%; min-width:0; direction:rtl; unicode-bidi:isolate; align-items:center; padding:0; white-space:nowrap; font-family:var(--arabic-font),"Amiri",serif; font-size:36pt; line-height:1; color:#000; }
-.composition-v5-pairs .composition-v5-arabic { display:grid; width:24mm; grid-template-columns:repeat(2,12mm); }
-.composition-v5-triples .composition-v5-arabic { display:grid; width:30mm; grid-template-columns:repeat(3,10mm); }
+.composition-v5-pairs .composition-v5-arabic { display:grid; width:28mm; grid-template-columns:repeat(2,14mm); }
+.composition-v5-triples .composition-v5-arabic { display:grid; width:36mm; grid-template-columns:repeat(3,12mm); }
 .composition-v5-token { box-sizing:border-box; position:relative; display:block; width:100%; height:100%; min-width:0; margin:0; padding:0; overflow:visible; }
 .composition-v5-glyph { position:absolute; top:50%; left:50%; display:inline-block; white-space:nowrap; line-height:1; transform:translate(-50%,-50%); transform-origin:center; }
 .composition-v5-divider { display:none; }
