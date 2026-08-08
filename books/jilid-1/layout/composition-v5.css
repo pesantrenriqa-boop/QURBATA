@@ -18,14 +18,15 @@
 /* Reserve a clean separation above footer. */
 .composition-v5-page .footer { height:7mm; flex:0 0 7mm; margin-top:1.8mm; padding:.3mm 4mm; }
 
-.composition-v5-focus { height:14mm; flex:0 0 14mm; display:flex; align-items:center; justify-content:center; gap:4mm; padding:.1mm 2mm; direction:rtl; overflow:visible; }
+/* 44pt focus text needs a physically taller row. We reclaim the same 3mm from the exercise zones so total page height does not grow. */
+.composition-v5-focus { height:17mm; flex:0 0 17mm; display:flex; align-items:center; justify-content:center; gap:4mm; padding:.1mm 2mm; direction:rtl; overflow:visible; }
 .composition-v5-focus-label { font:600 7pt/1.1 var(--latin-font),sans-serif; color:var(--muted); direction:ltr; }
-.composition-v5-focus-arabic { display:inline-flex; flex-direction:row; direction:rtl; unicode-bidi:isolate; align-items:center; justify-content:center; gap:0; white-space:nowrap; font-family:var(--arabic-font),"Amiri",serif; font-size:44pt; line-height:.9; color:var(--green); transform:translateY(.7mm); }
+.composition-v5-focus-arabic { display:inline-flex; flex-direction:row; direction:rtl; unicode-bidi:isolate; align-items:center; justify-content:center; gap:0; white-space:nowrap; font-family:var(--arabic-font),"Amiri",serif; font-size:44pt; line-height:.9; color:var(--green); transform:translateY(.4mm); }
 .composition-v5-focus-token { display:inline-block; }
 
 /* Fixed geometric boxes: box width is independent from glyph width. */
-.composition-v5-pairs { height:27mm; flex:0 0 27mm; min-height:0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); column-gap:3.6mm; row-gap:0; padding:0; direction:rtl; align-items:center; overflow:visible; }
-.composition-v5-triples { height:88mm; flex:0 0 88mm; min-height:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); grid-template-rows:repeat(5,minmax(0,1fr)); column-gap:4.5mm; row-gap:1mm; padding:0; direction:rtl; align-items:center; overflow:visible; }
+.composition-v5-pairs { height:26mm; flex:0 0 26mm; min-height:0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); column-gap:3.6mm; row-gap:0; padding:0; direction:rtl; align-items:center; overflow:visible; }
+.composition-v5-triples { height:86mm; flex:0 0 86mm; min-height:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); grid-template-rows:repeat(5,minmax(0,1fr)); column-gap:4.5mm; row-gap:1mm; padding:0; direction:rtl; align-items:center; overflow:visible; }
 .composition-v5-object { position:relative; width:100%; height:100%; min-width:0; min-height:0; display:flex; align-items:center; justify-content:center; overflow:visible; break-inside:avoid; }
 .composition-v5-object .slot-number { position:absolute; top:.03mm; inset-inline-start:.35mm; font:500 5pt/1 var(--latin-font),sans-serif; color:var(--muted); opacity:.42; }
 
