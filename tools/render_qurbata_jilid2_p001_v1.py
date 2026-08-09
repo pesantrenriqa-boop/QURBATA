@@ -7,10 +7,9 @@ from playwright.async_api import async_playwright
 import render_qurbata_jilid2_foundation_v3 as base
 
 ROOT=Path(__file__).resolve().parents[1]
-CONTRACT=ROOT/'content/qwo/registry/JILID-2-P001-PAGE-CONTRACT-V1.csv'
 MICRO=ROOT/'content/qwo/registry/JILID-2-MICRO-COMPETENCY-P001-V1.csv'
-DEFAULT_DATA=ROOT/'content/qwo/composer/output/jilid-2-v1-joined-foundation'
-DEFAULT_OUT=ROOT/'dist/jilid-2-p001-candidate-v3'
+LOGO=ROOT/'books/shared/assets/qurbata-logo.svg'
+DEFAULT_OUT=ROOT/'dist/jilid-2-p001-candidate-v5'
 
 def read_csv(p):
     with p.open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
@@ -18,7 +17,7 @@ def read_csv(p):
 def esc(s): return html.escape(str(s or ''))
 
 # Row 1-2: L2, four cells each. Row 3-8: L3, three cells each.
-# From row 3 onward, non-joiners are deliberately interleaved so the learner sees real joining breaks.
+# From row 3 onward, non-joiners are interleaved without leaking later joining families.
 P001_ROWS=[
     ['بَتَ','تَبَ','بَثَ','ثَبَ'],
     ['تِثُ','ثُتِ','بِثَ','ثَبُ'],
@@ -30,23 +29,37 @@ P001_ROWS=[
     ['بَزِثُ','تَرَبِ','ثَدِتُ'],
 ]
 P001_BANNED_JOINING=set('جحخسشصضطظعغفقكلمنيه')
-ACQUISITION=set('بتث')
 NONJOIN=set('ادذرزو')
 
+# Match the visual shell of the frozen Jilid 1 layout: logo, centered volume title,
+# green/gold page marker, readable lower targets, teacher/date/score footer, bottom band.
 P001_CSS=base.base.CSS + r'''
-.page{padding-top:5mm}
-.header{height:14mm;flex:0 0 14mm}
-.title-row{display:none!important}
-.presentation{height:15mm;flex:0 0 15mm;margin:1mm 3mm 1.5mm;padding:0;border:0;background:transparent;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.presentation-copy{display:none!important}
-.presentation-object-wrap{width:100%;height:100%;position:relative;overflow:hidden}
-.presentation-object{position:absolute;left:50%;top:50%;display:inline-block;direction:ltr;unicode-bidi:isolate;font-family:'Amiri Quran','Amiri','Noto Naskh Arabic',serif;font-size:27pt;line-height:1;white-space:nowrap;transform:translate(-50%,-50%);transform-origin:center;color:#000}
-.j2-grid{height:145mm;flex:0 0 145mm;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(8,minmax(0,1fr));column-gap:2.4mm;row-gap:2.2mm;padding:1mm 0 1.5mm;direction:rtl;overflow:visible}
+.page{padding:5mm 8mm 2.5mm;position:relative}
+.header{height:17mm;flex:0 0 17mm;display:grid;grid-template-columns:25mm minmax(0,1fr) 12mm;align-items:center;gap:3mm;border:0;overflow:hidden}
+.brand-block{display:flex;align-items:flex-start;justify-content:flex-start;min-width:0}
+.brand-logo{width:23mm;height:16.5mm;object-fit:contain;display:block}
+.heading{min-width:0;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;padding:0}
+.learning-header-title{color:#064d37;white-space:nowrap;font-family:"Segoe UI Semibold","Trebuchet MS",sans-serif;font-size:8.4pt;font-weight:700;line-height:1;letter-spacing:.11em;font-variant:small-caps}
+.page-number{background:#064d37;color:#fff;border-bottom:1.1mm solid #b98a2f;text-align:center;font-weight:700;padding:2.6mm 1mm 3.4mm;border-radius:0 0 3mm 3mm;font-size:12pt}
+.presentation{height:15mm;flex:0 0 15mm;margin:.5mm 3mm 1mm;padding:0;border:0;background:transparent;display:flex;align-items:center;justify-content:center;overflow:visible}
+.presentation-object-wrap{width:100%;height:100%;display:flex;align-items:center;justify-content:center;overflow:visible}
+.presentation-object{display:flex;align-items:center;justify-content:center;gap:2.2mm;direction:ltr;unicode-bidi:isolate;font-family:'Amiri Quran','Amiri','Noto Naskh Arabic',serif;font-size:27pt;line-height:1.25;color:#000;white-space:nowrap;overflow:visible}
+.presentation-object .arabic-part{direction:rtl;unicode-bidi:isolate;display:inline-block;line-height:1.25;padding-top:1mm;overflow:visible}
+.presentation-object .arrow{font-family:Arial,sans-serif;font-size:21pt;line-height:1;color:#111}
+.j2-grid{height:142mm;flex:0 0 142mm;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(8,minmax(0,1fr));column-gap:2.4mm;row-gap:2.4mm;padding:2mm 0 2mm;direction:rtl;overflow:visible}
 .j2-object{position:relative;width:100%;height:100%;min-height:0;display:flex;align-items:center;justify-content:center;overflow:visible}
 .j2-object.l2{grid-column:span 3}
 .j2-object.l3{grid-column:span 4}
-.j2-glyph{font-family:'Amiri Quran','Amiri','Noto Naskh Arabic',serif;font-size:36pt}
-.targets{height:15mm;flex:0 0 15mm}
+.j2-glyph{font-family:'Amiri Quran','Amiri','Noto Naskh Arabic',serif;font-size:36pt;line-height:1.18;margin-top:1.1mm;overflow:visible}
+.targets{height:11.5mm;flex:0 0 11.5mm;margin-top:auto;margin-bottom:1mm;padding:.7mm 1mm .6mm;display:grid;grid-template-columns:1.2fr 1fr 1fr 1.35fr;gap:1.4mm;background:linear-gradient(to bottom,rgba(247,248,245,.92),rgba(255,255,255,.98));border-top:.22mm solid rgba(185,138,47,.58);border-radius:1.8mm 1.8mm 0 0;overflow:hidden}
+.target-item{min-height:9.7mm;padding:.25mm 1mm 0;border:0;justify-content:flex-start;background:transparent}
+.target-item+.target-item{border-left:.18mm solid rgba(185,138,47,.45)}
+.target-item span{display:block;color:#064d37;font-size:5.8pt;font-weight:800;line-height:1.1;white-space:nowrap}
+.target-item strong{display:block;margin-top:.4mm;font-size:5.2pt;line-height:1.18;font-weight:600;white-space:normal;overflow:hidden}
+.footer{height:6mm;flex:0 0 6mm;margin-top:0;margin-bottom:1.6mm;padding:.15mm 3mm;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;gap:3mm;background:rgba(247,248,245,.74);border-radius:1.6mm;color:#064d37;font-size:5.2pt;overflow:hidden}
+.footer .field{min-width:0;display:flex;gap:2mm;align-items:center}.footer .line{flex:1;min-width:0;border-bottom:.25mm dotted #777;height:3.5mm}
+.bottom-band{position:absolute;bottom:0;left:0;width:100%;height:1.8mm;background:#064d37}.bottom-band::after{content:"◇";position:absolute;left:50%;transform:translate(-50%,-55%);color:#b98a2f;background:white;padding:0 2mm;font-size:10pt}
+html[data-layout-debug="true"] .j2-object,html[data-layout-debug="true"] .presentation{outline:none!important}
 '''
 
 def flatten_rows(): return [x for row in P001_ROWS for x in row]
@@ -58,47 +71,62 @@ def build_page_html(debug:bool)->str:
         cls='l2' if ri<=2 else 'l3'
         for obj in row:
             cells.append(f'<div class="j2-object {cls}" data-slot="{slot}" data-row="{ri}"><span class="j2-glyph">{esc(obj)}</span></div>');slot+=1
+    logo_uri=LOGO.resolve().as_uri()
+    # Visual order from RIGHT to LEFT: بَ, تِ, ثُ, then the fully joined result at the FAR LEFT.
+    presentation='''<div class="presentation-object">
+      <span class="arabic-part">بَتِثُ</span><span class="arrow">←</span><span class="arabic-part">ثُ</span><span class="arrow">←</span><span class="arabic-part">تِ</span><span class="arrow">←</span><span class="arabic-part">بَ</span>
+    </div>'''
     return f'''<!doctype html><html{debug_attr}><head><meta charset="utf-8"><style>{P001_CSS}</style></head><body>
 <main class="page with-presentation">
-  <header class="header"><div class="brand">QURBATA <span>• JILID 2</span></div><div class="page-no">1</div></header>
-  <section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object">بَتِثُ ← ثُ ← تِ ← بَ</div></div></section>
+  <header class="header">
+    <div class="brand-block"><img class="brand-logo" src="{logo_uri}" alt="Logo QURBATA"></div>
+    <div class="heading"><div class="learning-header-title">QURBATA • JILID 2</div></div>
+    <div class="page-number">01</div>
+  </header>
+  <section class="presentation"><div class="presentation-object-wrap">{presentation}</div></section>
   <section class="j2-grid">{''.join(cells)}</section>
   <section class="targets">
-    <div class="target-item"><span>KOMPETENSI</span><strong>Membaca huruf hijaiyah bersambung</strong></div>
-    <div class="target-item"><span>SUBKOMPETENSI</span><strong>Konsep dasar sambungan</strong></div>
-    <div class="target-item"><span>TANGGA</span><strong>2 huruf → 3 huruf → pemutus sambungan</strong></div>
+    <div class="target-item"><span>Kompetensi</span><strong>Membaca huruf hijaiyah bersambung</strong></div>
+    <div class="target-item"><span>Subkompetensi</span><strong>Konsep dasar sambungan</strong></div>
+    <div class="target-item"><span>Tangga</span><strong>2 huruf → 3 huruf → pemutus sambungan</strong></div>
     <div class="target-item"><span>NIDOM</span><strong>Registry Jilid 2 belum diikat</strong></div>
   </section>
-  <footer class="footer"><span>QURBATA • JILID 2</span><span>Guru: __________  Nilai: ____  Tanggal: ________</span></footer>
+  <footer class="footer">
+    <div class="field"><strong>Nama Guru</strong><span class="line"></span></div>
+    <div class="field"><strong>Tanggal</strong><span class="line"></span></div>
+    <div class="field"><strong>Nilai</strong><span class="line"></span></div>
+  </footer>
+  <div class="bottom-band"></div>
 </main></body></html>'''
 
 async def fit_and_inspect(page):
-    pfit=await page.evaluate('''()=>{const wrap=document.querySelector('.presentation-object-wrap'),obj=document.querySelector('.presentation-object');const w=wrap.getBoundingClientRect().width,ow=obj.getBoundingClientRect().width,s= Math.min(1,Math.max(.62,(w-12)/Math.max(1,ow)));obj.style.transform=`translate(-50%,-50%) scaleX(${s})`;return s}''')
     metrics=await base.base.fit_joined(page)
-    issues=await page.evaluate('''()=>{const out=[],t=2;const grid=document.querySelector('.j2-grid'),targets=document.querySelector('.targets');for(const slot of document.querySelectorAll('.j2-object')){const s=slot.getBoundingClientRect(),g=slot.querySelector('.j2-glyph').getBoundingClientRect();if(g.left<s.left-t||g.right>s.right+t)out.push({kind:'JOINED_GLYPH_OUTSIDE_SLOT',slot:slot.dataset.slot,row:slot.dataset.row,glyphLeft:g.left,glyphRight:g.right,slotLeft:s.left,slotRight:s.right})}if(grid&&targets){const g=grid.getBoundingClientRect(),b=targets.getBoundingClientRect();if(g.bottom>b.top+t)out.push({kind:'GRID_FOOTER_OVERLAP',gridBottom:g.bottom,targetsTop:b.top})}const p=document.querySelector('.presentation-object-wrap').getBoundingClientRect(),o=document.querySelector('.presentation-object').getBoundingClientRect();if(o.left<p.left-t||o.right>p.right+t)out.push({kind:'PRESENTATION_OBJECT_OUTSIDE_BAND'});return out}''')
-    return metrics,pfit,issues
+    # Extra global descent gives harakat breathing room without changing the frozen horizontal fitting logic.
+    await page.evaluate('''()=>{for(const g of document.querySelectorAll('.j2-glyph')){g.style.marginTop='1.1mm'}}''')
+    issues=await page.evaluate('''()=>{const out=[],t=2;const grid=document.querySelector('.j2-grid'),targets=document.querySelector('.targets');for(const slot of document.querySelectorAll('.j2-object')){const s=slot.getBoundingClientRect(),g=slot.querySelector('.j2-glyph').getBoundingClientRect();if(g.left<s.left-t||g.right>s.right+t||g.top<s.top-t||g.bottom>s.bottom+t)out.push({kind:'JOINED_GLYPH_OUTSIDE_SLOT',slot:slot.dataset.slot,row:slot.dataset.row,glyphLeft:g.left,glyphRight:g.right,glyphTop:g.top,glyphBottom:g.bottom,slotLeft:s.left,slotRight:s.right,slotTop:s.top,slotBottom:s.bottom})}if(grid&&targets){const g=grid.getBoundingClientRect(),b=targets.getBoundingClientRect();if(g.bottom>b.top+t)out.push({kind:'GRID_FOOTER_OVERLAP',gridBottom:g.bottom,targetsTop:b.top})}const wrap=document.querySelector('.presentation-object-wrap').getBoundingClientRect(),obj=document.querySelector('.presentation-object').getBoundingClientRect();if(obj.left<wrap.left-t||obj.right>wrap.right+t||obj.top<wrap.top-t||obj.bottom>wrap.bottom+t)out.push({kind:'PRESENTATION_OBJECT_OUTSIDE_BAND'});return out}''')
+    return metrics,issues
 
 async def render(html_path:Path,out:Path,debug:bool):
-    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P001-V3.json';png_dir=out/'png';png_dir.mkdir(parents=True,exist_ok=True)
+    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P001-V4.json';png_dir=out/'png';png_dir.mkdir(parents=True,exist_ok=True)
     async with async_playwright() as p:
         browser=await p.chromium.launch();page=await browser.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
         await page.goto(html_path.resolve().as_uri(),wait_until='networkidle');await page.evaluate('document.fonts.ready')
         count=await page.locator('.j2-object').count()
         if count!=26:raise RuntimeError(f'P001_OBJECT_COUNT_INVALID actual={count} expected=26')
-        metrics,pfit,issues=await fit_and_inspect(page)
+        metrics,issues=await fit_and_inspect(page)
         report.write_text(json.dumps(issues,ensure_ascii=False,indent=2),encoding='utf-8')
         if issues:
             kinds={}
             for x in issues:kinds[x['kind']]=kinds.get(x['kind'],0)+1
             raise RuntimeError('P001_LAYOUT_ISSUES='+str(len(issues))+' TYPES='+','.join(f'{k}:{v}' for k,v in sorted(kinds.items()))+f' REPORT={report}')
         await page.screenshot(path=str(png_dir/'page-001.png'),full_page=True)
-        pdf=out/'QURBATA-JILID-2-P001-CANDIDATE-V3.pdf'
+        pdf=out/'QURBATA-JILID-2-P001-CANDIDATE-V4.pdf'
         await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'})
         await browser.close()
-    return metrics,pfit,report,pdf
+    return metrics,report,pdf
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--data-dir',default=str(DEFAULT_DATA.relative_to(ROOT)));ap.add_argument('--output-dir',default=str(DEFAULT_OUT.relative_to(ROOT)));ap.add_argument('--debug',action='store_true');a=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--output-dir',default=str(DEFAULT_OUT.relative_to(ROOT)));ap.add_argument('--debug',action='store_true');a=ap.parse_args()
     out=Path(a.output_dir);out=out if out.is_absolute() else ROOT/out;out.mkdir(parents=True,exist_ok=True)
     micro=read_csv(MICRO)
     if len(micro)!=10:raise ValueError(f'P001_MICRO_LADDER_INVALID actual={len(micro)} expected=10')
@@ -107,18 +135,20 @@ def main():
     for ri,row in enumerate(P001_ROWS,1):
         expected=4 if ri<=2 else 3
         if len(row)!=expected:raise ValueError(f'P001_ROW_PATTERN_INVALID row={ri} actual={len(row)} expected={expected}')
-        if ri>=3 and any(len([c for c in obj if c in NONJOIN])==0 for obj in row[1:]):
-            raise ValueError(f'P001_NONJOIN_VARIATION_MISSING row={ri}')
+        if ri>=3 and any(len([c for c in obj if c in NONJOIN])==0 for obj in row[1:]):raise ValueError(f'P001_NONJOIN_VARIATION_MISSING row={ri}')
     for obj in objs:
         leaked=P001_BANNED_JOINING.intersection(obj)
         if leaked:raise ValueError('P001_COMPETENCY_LEAKAGE object='+obj+' leaked='+''.join(sorted(leaked)))
     html_dir=out/'html';html_dir.mkdir(parents=True,exist_ok=True);h=html_dir/'page-001.html';h.write_text(build_page_html(a.debug),encoding='utf-8')
-    metrics,pfit,report,pdf=asyncio.run(render(h,out,a.debug))
-    print('JILID2_P001_RENDERER_V3=PASS')
+    metrics,report,pdf=asyncio.run(render(h,out,a.debug))
+    print('JILID2_P001_RENDERER_V4=PASS')
     print('PAGE=1')
-    print('HEADER_EXPLANATORY_TITLE=REMOVED')
-    print('PRESENTATION_LABEL=REMOVED')
-    print('PRESENTATION_RESULT_POSITION=FAR_LEFT')
+    print('PRESENTATION_ORDER=RIGHT_BA|TA|THA|LEFT_JOINED_RESULT')
+    print('HARAKAT_CLEARANCE=EXPANDED')
+    print('DEBUG_CELL_LINES=DISABLED')
+    print('JILID1_HEADER_SHELL=RESTORED')
+    print('JILID1_FOOTER_SHELL=RESTORED')
+    print('QURBATA_LOGO=RESTORED')
     print('COMPETENCY_LEAKAGE=0')
     print('ACQUISITION_LETTERS=بتث')
     print('NON_JOINING_REVIEW=ا|د|ذ|ر|ز|و')
