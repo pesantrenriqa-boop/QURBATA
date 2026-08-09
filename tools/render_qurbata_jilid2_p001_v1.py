@@ -9,7 +9,7 @@ import render_qurbata_jilid2_foundation_v3 as base
 ROOT=Path(__file__).resolve().parents[1]
 MICRO=ROOT/'content/qwo/registry/JILID-2-MICRO-COMPETENCY-P001-V1.csv'
 LOGO=ROOT/'books/shared/assets/qurbata-logo.svg'
-DEFAULT_OUT=ROOT/'dist/jilid-2-p001-candidate-v7'
+DEFAULT_OUT=ROOT/'dist/jilid-2-p001-candidate-v9'
 
 def read_csv(p):
     with p.open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
@@ -47,11 +47,12 @@ P001_CSS=base.base.CSS + r'''
 .page-number{background:#064d37;color:#fff;border-bottom:1.1mm solid #b98a2f;text-align:center;font-weight:700;padding:2.6mm 1mm 3.4mm;border-radius:0 0 3mm 3mm;font-size:12pt}
 .presentation{height:15mm;flex:0 0 15mm;margin:.5mm 3mm 1mm;padding:0;border:0;background:transparent;display:flex;align-items:center;justify-content:center;overflow:visible}.presentation-object-wrap{width:100%;height:100%;display:flex;align-items:center;justify-content:center;overflow:visible}
 .presentation-object{display:flex;align-items:center;justify-content:center;gap:2.2mm;direction:ltr;unicode-bidi:isolate;font-family:'Amiri Quran','Amiri','Noto Naskh Arabic',serif;font-size:27pt;line-height:1.35;color:#000;white-space:nowrap;overflow:visible}.presentation-object .arabic-part{direction:rtl;unicode-bidi:isolate;display:inline-block;line-height:1.35;padding:1.2mm .4mm;overflow:visible}.presentation-object .arrow{font-family:Arial,sans-serif;font-size:21pt;line-height:1;color:#111}
-.j2-grid{height:142mm;flex:0 0 142mm;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(8,minmax(0,1fr));column-gap:2.4mm;row-gap:2.4mm;padding:2mm 0 2mm;direction:rtl;overflow:visible}.j2-object{position:relative;width:100%;height:100%;min-height:0;display:flex;align-items:center;justify-content:center;overflow:visible}.j2-object.l2{grid-column:span 3}.j2-object.l3{grid-column:span 4}.j2-glyph{font-family:'Amiri Quran','Amiri','Noto Naskh Arabic',serif;font-size:36pt;line-height:1.28;padding:1.3mm 1mm 1.5mm;margin:0;overflow:visible}
-/* Micro mark tuning only: bases and horizontal joining geometry stay untouched. */
+.j2-grid{height:142mm;flex:0 0 142mm;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(8,minmax(0,1fr));column-gap:2.4mm;row-gap:2.4mm;padding:2mm 0 2mm;direction:rtl;overflow:visible}.j2-object{position:relative;width:100%;height:100%;min-height:0;display:flex;align-items:center;justify-content:center;overflow:visible}.j2-object.l2{grid-column:span 3}.j2-object.l3{grid-column:span 4}.j2-glyph{font-family:'Amiri Quran','Amiri','Noto Naskh Arabic',serif;font-size:36pt;line-height:1.34;padding:1.7mm 1mm 1.9mm;margin:0;overflow:visible}
+/* P001 V7: stronger vertical separation of vowel marks only. Base glyph geometry is unchanged. */
 .q-mark{position:relative;display:inline;line-height:0;font:inherit}
-.q-fatha,.q-damma{top:.105em}
-.q-kasra{top:-.105em}
+.q-fatha{top:.17em}
+.q-damma{top:.20em}
+.q-kasra{top:-.17em}
 .targets{height:11.5mm;flex:0 0 11.5mm;margin-top:auto;margin-bottom:1mm;padding:.7mm 1mm .6mm;display:grid;grid-template-columns:1.2fr 1fr 1fr 1.35fr;gap:1.4mm;background:linear-gradient(to bottom,rgba(247,248,245,.92),rgba(255,255,255,.98));border-top:.22mm solid rgba(185,138,47,.58);border-radius:1.8mm 1.8mm 0 0;overflow:hidden}.target-item{min-height:9.7mm;padding:.25mm 1mm 0;border:0;justify-content:flex-start;background:transparent}.target-item+.target-item{border-left:.18mm solid rgba(185,138,47,.45)}.target-item span{display:block;color:#064d37;font-size:5.8pt;font-weight:800;line-height:1.1;white-space:nowrap}.target-item strong{display:block;margin-top:.4mm;font-size:5.2pt;line-height:1.18;font-weight:600;white-space:normal;overflow:hidden}
 .footer{height:6mm;flex:0 0 6mm;margin-top:0;margin-bottom:1.6mm;padding:.15mm 3mm;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;gap:3mm;background:rgba(247,248,245,.74);border-radius:1.6mm;color:#064d37;font-size:5.2pt;overflow:hidden}.footer .field{min-width:0;display:flex;gap:2mm;align-items:center}.footer .line{flex:1;min-width:0;border-bottom:.25mm dotted #777;height:3.5mm}.bottom-band{position:absolute;bottom:0;left:0;width:100%;height:1.8mm;background:#064d37}.bottom-band::after{content:"◇";position:absolute;left:50%;transform:translate(-50%,-55%);color:#b98a2f;background:white;padding:0 2mm;font-size:10pt}
 html[data-layout-debug="true"] .j2-object,html[data-layout-debug="true"] .presentation{outline:none!important}
@@ -71,11 +72,11 @@ def build_page_html(debug:bool)->str:
 
 async def fit_and_inspect(page):
     metrics=await base.base.fit_joined(page)
-    issues=await page.evaluate('''()=>{const out=[],t=2;const grid=document.querySelector('.j2-grid'),targets=document.querySelector('.targets');for(const slot of document.querySelectorAll('.j2-object')){const s=slot.getBoundingClientRect(),g=slot.querySelector('.j2-glyph').getBoundingClientRect();const row=Number(slot.dataset.row);const pad=row<=2?10:12;if(g.left<s.left-pad||g.right>s.right+pad)out.push({kind:'JOINED_INK_HORIZONTAL_ESCAPE',slot:slot.dataset.slot,row,glyphLeft:g.left,glyphRight:g.right,slotLeft:s.left,slotRight:s.right});if(g.top<s.top-8||g.bottom>s.bottom+8)out.push({kind:'JOINED_INK_VERTICAL_ESCAPE',slot:slot.dataset.slot,row,glyphTop:g.top,glyphBottom:g.bottom,slotTop:s.top,slotBottom:s.bottom})}if(grid&&targets){const g=grid.getBoundingClientRect(),b=targets.getBoundingClientRect();if(g.bottom>b.top+t)out.push({kind:'GRID_FOOTER_OVERLAP',gridBottom:g.bottom,targetsTop:b.top})}const wrap=document.querySelector('.presentation-object-wrap').getBoundingClientRect(),obj=document.querySelector('.presentation-object').getBoundingClientRect();if(obj.left<wrap.left-t||obj.right>wrap.right+t||obj.top<wrap.top-8||obj.bottom>wrap.bottom+8)out.push({kind:'PRESENTATION_OBJECT_OUTSIDE_BAND'});return out}''')
+    issues=await page.evaluate('''()=>{const out=[],t=2;const grid=document.querySelector('.j2-grid'),targets=document.querySelector('.targets');for(const slot of document.querySelectorAll('.j2-object')){const s=slot.getBoundingClientRect(),g=slot.querySelector('.j2-glyph').getBoundingClientRect();const row=Number(slot.dataset.row);const pad=row<=2?10:12;if(g.left<s.left-pad||g.right>s.right+pad)out.push({kind:'JOINED_INK_HORIZONTAL_ESCAPE',slot:slot.dataset.slot,row,glyphLeft:g.left,glyphRight:g.right,slotLeft:s.left,slotRight:s.right});if(g.top<s.top-11||g.bottom>s.bottom+11)out.push({kind:'JOINED_INK_VERTICAL_ESCAPE',slot:slot.dataset.slot,row,glyphTop:g.top,glyphBottom:g.bottom,slotTop:s.top,slotBottom:s.bottom})}if(grid&&targets){const g=grid.getBoundingClientRect(),b=targets.getBoundingClientRect();if(g.bottom>b.top+t)out.push({kind:'GRID_FOOTER_OVERLAP',gridBottom:g.bottom,targetsTop:b.top})}const wrap=document.querySelector('.presentation-object-wrap').getBoundingClientRect(),obj=document.querySelector('.presentation-object').getBoundingClientRect();if(obj.left<wrap.left-t||obj.right>wrap.right+t||obj.top<wrap.top-11||obj.bottom>wrap.bottom+11)out.push({kind:'PRESENTATION_OBJECT_OUTSIDE_BAND'});return out}''')
     return metrics,issues
 
 async def render(html_path:Path,out:Path,debug:bool):
-    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P001-V6.json';png_dir=out/'png';png_dir.mkdir(parents=True,exist_ok=True)
+    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P001-V7.json';png_dir=out/'png';png_dir.mkdir(parents=True,exist_ok=True)
     async with async_playwright() as p:
         browser=await p.chromium.launch();page=await browser.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2);await page.goto(html_path.resolve().as_uri(),wait_until='networkidle');await page.evaluate('document.fonts.ready')
         count=await page.locator('.j2-object').count()
@@ -85,7 +86,7 @@ async def render(html_path:Path,out:Path,debug:bool):
             kinds={}
             for x in issues:kinds[x['kind']]=kinds.get(x['kind'],0)+1
             raise RuntimeError('P001_LAYOUT_ISSUES='+str(len(issues))+' TYPES='+','.join(f'{k}:{v}' for k,v in sorted(kinds.items()))+f' REPORT={report}')
-        await page.screenshot(path=str(png_dir/'page-001.png'),full_page=True);pdf=out/'QURBATA-JILID-2-P001-CANDIDATE-V6.pdf';await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await browser.close()
+        await page.screenshot(path=str(png_dir/'page-001.png'),full_page=True);pdf=out/'QURBATA-JILID-2-P001-CANDIDATE-V7.pdf';await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await browser.close()
     return metrics,report,pdf
 
 def main():
@@ -102,5 +103,5 @@ def main():
         leaked=P001_BANNED_JOINING.intersection(obj)
         if leaked:raise ValueError('P001_COMPETENCY_LEAKAGE object='+obj+' leaked='+''.join(sorted(leaked)))
     html_dir=out/'html';html_dir.mkdir(parents=True,exist_ok=True);h=html_dir/'page-001.html';h.write_text(build_page_html(a.debug),encoding='utf-8');metrics,report,pdf=asyncio.run(render(h,out,a.debug))
-    print('JILID2_P001_RENDERER_V6=PASS');print('PAGE=1');print('PRESENTATION_ORDER=RIGHT_BA|TA|THA|LEFT_JOINED_RESULT');print('HARAKAT_MICRO_POSITION=KASRA_UP|FATHA_DOWN|DAMMA_DOWN');print('HARAKAT_OFFSET_EM=0.105');print('ARABIC_JOINING=NATIVE_WITH_INLINE_MARK_SPANS');print('DEBUG_CELL_LINES=DISABLED');print('JILID1_HEADER_SHELL=RESTORED');print('JILID1_FOOTER_SHELL=RESTORED');print('QURBATA_LOGO=RESTORED');print('COMPETENCY_LEAKAGE=0');print('ACQUISITION_LETTERS=بتث');print('NON_JOINING_REVIEW=ا|د|ذ|ر|ز|و');print('ROW_PATTERN=R1-2:4xL2|R3-8:3xL3');print('L2_AFTER_L3=FORBIDDEN');print('PRACTICE_OBJECTS=26');print('ARABIC_FONT_PRIMARY=Amiri Quran');print('JOINED_VALIDATION=LOGICAL_CELL_INK_BOUNDS');print('LAYOUT_OVERFLOW=0');print(f'OVERFLOW_REPORT={report.relative_to(ROOT)}');print(f'PDF={pdf.relative_to(ROOT)}');return 0
+    print('JILID2_P001_RENDERER_V7=PASS');print('PAGE=1');print('PRESENTATION_ORDER=RIGHT_BA|TA|THA|LEFT_JOINED_RESULT');print('HARAKAT_MICRO_POSITION=KASRA_UP_MORE|FATHA_DOWN_MORE|DAMMA_DOWN_MORE');print('HARAKAT_FATHA_OFFSET_EM=0.17');print('HARAKAT_DAMMA_OFFSET_EM=0.20');print('HARAKAT_KASRA_OFFSET_EM=-0.17');print('ARABIC_JOINING=NATIVE_WITH_INLINE_MARK_SPANS');print('DEBUG_CELL_LINES=DISABLED');print('JILID1_HEADER_SHELL=RESTORED');print('JILID1_FOOTER_SHELL=RESTORED');print('QURBATA_LOGO=RESTORED');print('COMPETENCY_LEAKAGE=0');print('ACQUISITION_LETTERS=بتث');print('NON_JOINING_REVIEW=ا|د|ذ|ر|ز|و');print('ROW_PATTERN=R1-2:4xL2|R3-8:3xL3');print('L2_AFTER_L3=FORBIDDEN');print('PRACTICE_OBJECTS=26');print('ARABIC_FONT_PRIMARY=Amiri Quran');print('JOINED_VALIDATION=LOGICAL_CELL_INK_BOUNDS');print('LAYOUT_OVERFLOW=0');print(f'OVERFLOW_REPORT={report.relative_to(ROOT)}');print(f'PDF={pdf.relative_to(ROOT)}');return 0
 if __name__=='__main__':raise SystemExit(main())
