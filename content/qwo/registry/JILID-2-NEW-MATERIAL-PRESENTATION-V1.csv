@@ -1,41 +1,41 @@
 Page,Code,Competency,SubCompetency,Stair,PresentationRequired,PresentationTitle,PresentationObject,Function
-1,QJ2-P001,Bentuk Huruf Bersambung,Konsep dasar sambungan,Mengenali huruf berubah saat dirangkai,YES,Konsep Huruf Bersambung,بَ + تِ + ثُ = بَتِثُ,PAPARAN_MATERI_BARU
-2,QJ2-P002,Bentuk Huruf Bersambung,Keluarga ب ت ث,Satu kerangka beda titik dalam rangkaian,YES,Keluarga ب ت ث,بَ + تِ + ثُ = بَتِثُ,PAPARAN_MATERI_BARU
+1,QJ2-P001,Bentuk Huruf Bersambung,Konsep dasar sambungan,Mengenali huruf berubah saat dirangkai,YES,Konsep Huruf Bersambung,بَتِثُ ← بَ ← تِ ← ثُ,PAPARAN_MATERI_BARU
+2,QJ2-P002,Bentuk Huruf Bersambung,Keluarga ب ت ث,Satu kerangka beda titik dalam rangkaian,YES,Keluarga ب ت ث,بَتِثُ ← بَ ← تِ ← ثُ,PAPARAN_MATERI_BARU
 3,QJ2-P003,Bentuk Huruf Bersambung,Keluarga ب ت ث ن ي,Kontras perubahan posisi,YES,Perubahan Posisi Huruf,بَتِثُ | نَبِتَ | يَتِبُ,PAPARAN_MATERI_BARU
-4,QJ2-P004,Bentuk Huruf Bersambung,Keluarga ج ح خ,Membaca keluarga mangkuk dalam rangkaian,YES,Keluarga ج ح خ,جَ + حِ + خُ = جَحِخُ,PAPARAN_MATERI_BARU
-5,QJ2-P005,Bentuk Huruf Bersambung,Pemutus د ذ ر ز,Mengenali putus sambungan sesudah huruf,YES,Huruf Pemutus د ذ ر ز,بَ + دِ + تَ = بَدِ تَ,PAPARAN_MATERI_BARU
-6,QJ2-P006,Bentuk Huruf Bersambung,Pemutus ا و,Mengenali alif dan waw sebagai pemutus,YES,Huruf Pemutus ا و,بَ + ا + تِ = بَا تِ,PAPARAN_MATERI_BARU
-7,QJ2-P007,Bentuk Huruf Bersambung,Keluarga س ش,Membaca keluarga gigi dalam rangkaian,YES,Keluarga س ش,سَ + شِ + سُ = سَشِسُ,PAPARAN_MATERI_BARU
-8,QJ2-P008,Bentuk Huruf Bersambung,Keluarga ص ض,Membaca keluarga mangkuk tebal,YES,Keluarga ص ض,صَ + ضِ + صُ = صَضِصُ,PAPARAN_MATERI_BARU
-9,QJ2-P009,Bentuk Huruf Bersambung,Keluarga ط ظ,Membaca bentuk batang tegak,YES,Keluarga ط ظ,طَ + ظِ + طُ = طَظِطُ,PAPARAN_MATERI_BARU
+4,QJ2-P004,Bentuk Huruf Bersambung,Keluarga ج ح خ,Membaca keluarga mangkuk dalam rangkaian,YES,Keluarga ج ح خ,جَحِخُ ← جَ ← حِ ← خُ,PAPARAN_MATERI_BARU
+5,QJ2-P005,Bentuk Huruf Bersambung,Pemutus د ذ ر ز,Mengenali putus sambungan sesudah huruf,YES,Huruf Pemutus د ذ ر ز,بَدِ تَ ← بَ ← دِ ← تَ,PAPARAN_MATERI_BARU
+6,QJ2-P006,Bentuk Huruf Bersambung,Pemutus ا و,Mengenali alif dan waw sebagai pemutus,YES,Huruf Pemutus ا و,بَا تِ ← بَ ← ا ← تِ,PAPARAN_MATERI_BARU
+7,QJ2-P007,Bentuk Huruf Bersambung,Keluarga س ش,Membaca keluarga gigi dalam rangkaian,YES,Keluarga س ش,سَشِسُ ← سَ ← شِ ← سُ,PAPARAN_MATERI_BARU
+8,QJ2-P008,Bentuk Huruf Bersambung,Keluarga ص ض,Membaca keluarga mangkuk tebal,YES,Keluarga ص ض,صَضِصُ ← صَ ← ضِ ← صُ,PAPARAN_MATERI_BARU
+9,QJ2-P009,Bentuk Huruf Bersambung,Keluarga ط ظ,Membaca bentuk batang tegak,YES,Keluarga ط ظ,طَظِطُ ← طَ ← ظِ ← طُ,PAPARAN_MATERI_BARU
 10,QJ2-P010,Bentuk Huruf Bersambung,Integrasi I,Mengintegrasikan keluarga P001-P009,NO,Evaluasi Bentuk I,,EVALUATION_NO_NEW_PRESENTATION
-11,QJ2-P011,Bentuk Huruf Bersambung,Keluarga ف ق,Membedakan bentuk dan titik dalam rangkaian,YES,Keluarga ف ق,فَ + قِ + فُ = فَقِفُ,PAPARAN_MATERI_BARU
-12,QJ2-P012,Bentuk Huruf Bersambung,Huruf ك,Mengenali perubahan khas kaf menurut posisi,YES,Perubahan Bentuk ك,كَ + بِ + كُ = كَبِكُ,PAPARAN_MATERI_BARU
-13,QJ2-P013,Bentuk Huruf Bersambung,Keluarga ل م,Membaca perubahan alur sambung,YES,Keluarga ل م,لَ + مِ + لُ = لَمِلُ,PAPARAN_MATERI_BARU
-14,QJ2-P014,Bentuk Huruf Bersambung,Keluarga ع غ,Membaca variasi awal tengah akhir,YES,Keluarga ع غ,عَ + غِ + عُ = عَغِعُ,PAPARAN_MATERI_BARU
-15,QJ2-P015,Bentuk Huruf Bersambung,Huruf ه,Mengenali perubahan bentuk ha dalam sambungan,YES,Perubahan Bentuk ه,هَ + بِ + هُ = هَبِهُ,PAPARAN_MATERI_BARU
+11,QJ2-P011,Bentuk Huruf Bersambung,Keluarga ف ق,Membedakan bentuk dan titik dalam rangkaian,YES,Keluarga ف ق,فَقِفُ ← فَ ← قِ ← فُ,PAPARAN_MATERI_BARU
+12,QJ2-P012,Bentuk Huruf Bersambung,Huruf ك,Mengenali perubahan khas kaf menurut posisi,YES,Perubahan Bentuk ك,كَبِكُ ← كَ ← بِ ← كُ,PAPARAN_MATERI_BARU
+13,QJ2-P013,Bentuk Huruf Bersambung,Keluarga ل م,Membaca perubahan alur sambung,YES,Keluarga ل م,لَمِلُ ← لَ ← مِ ← لُ,PAPARAN_MATERI_BARU
+14,QJ2-P014,Bentuk Huruf Bersambung,Keluarga ع غ,Membaca variasi awal tengah akhir,YES,Keluarga ع غ,عَغِعُ ← عَ ← غِ ← عُ,PAPARAN_MATERI_BARU
+15,QJ2-P015,Bentuk Huruf Bersambung,Huruf ه,Mengenali perubahan bentuk ha dalam sambungan,YES,Perubahan Bentuk ه,هَبِهُ ← هَ ← بِ ← هُ,PAPARAN_MATERI_BARU
 16,QJ2-P016,Bentuk Huruf Bersambung,Kontras ت ة ه,Membedakan ta panjang ta bulat dan ha,YES,Kontras ت ة ه,تَ | ةَ | هَ,PAPARAN_MATERI_BARU
 17,QJ2-P017,Bentuk Huruf Bersambung,Kontras ي ى,Membedakan bentuk akhir ya dan alif maqsurah,YES,Kontras ي ى,يَ | ى,PAPARAN_MATERI_BARU
 18,QJ2-P018,Bentuk Huruf Bersambung,Hamzah berkursi,Mengenali ء أ إ ؤ ئ dalam bentuk yang diperkenalkan,YES,Hamzah dan Kursinya,ء | أ | إ | ؤ | ئ,PAPARAN_MATERI_BARU
 19,QJ2-P019,Bentuk Huruf Bersambung,Integrasi keluarga bentuk,Menggabungkan keluarga dan pemutus,NO,Integrasi Bentuk Bersambung,,INTEGRATION_NO_NEW_PRESENTATION
 20,QJ2-P020,Bentuk Huruf Bersambung,Evaluasi II,Menguji bentuk sambung kumulatif,NO,Evaluasi Bentuk II,,EVALUATION_NO_NEW_PRESENTATION
-21,QJ2-P021,Tanwin,Fathatain,Mengenali dan membaca fathatain,YES,Fathatain,بَ → بً,PAPARAN_PENDING_ORTHOGRAPHY_GATE
-22,QJ2-P022,Tanwin,Kasratain,Mengenali dan membaca kasratain,YES,Kasratain,بِ → بٍ,PAPARAN_PENDING_ORTHOGRAPHY_GATE
-23,QJ2-P023,Tanwin,Dhammatain,Mengenali dan membaca dhammatain,YES,Dhammatain,بُ → بٌ,PAPARAN_PENDING_ORTHOGRAPHY_GATE
+21,QJ2-P021,Tanwin,Fathatain,Mengenali dan membaca fathatain,YES,Fathatain,بً ← بَ,PAPARAN_PENDING_ORTHOGRAPHY_GATE
+22,QJ2-P022,Tanwin,Kasratain,Mengenali dan membaca kasratain,YES,Kasratain,بٍ ← بِ,PAPARAN_PENDING_ORTHOGRAPHY_GATE
+23,QJ2-P023,Tanwin,Dhammatain,Mengenali dan membaca dhammatain,YES,Dhammatain,بٌ ← بُ,PAPARAN_PENDING_ORTHOGRAPHY_GATE
 24,QJ2-P024,Tanwin,Integrasi tiga tanwin,Membedakan tiga tanwin dalam rangkaian,YES,Tiga Tanwin,بً | بٍ | بٌ,PAPARAN_PENDING_ORTHOGRAPHY_GATE
-25,QJ2-P025,Mad Asli,Orientasi pendek-panjang,Menyadari perbedaan durasi pendek dan panjang,YES,Pendek dan Panjang,بَ ↔ بَا,PAPARAN_PENDING_REGENERATION
-26,QJ2-P026,Mad Alif,Fathah vs alif mad,Membedakan fathah pendek dan mad alif,YES,Fathah dan Mad Alif,بَ → بَا,PAPARAN_PENDING_REGENERATION
+25,QJ2-P025,Mad Asli,Orientasi pendek-panjang,Menyadari perbedaan durasi pendek dan panjang,YES,Pendek dan Panjang,بَا ← بَ,PAPARAN_PENDING_REGENERATION
+26,QJ2-P026,Mad Alif,Fathah vs alif mad,Membedakan fathah pendek dan mad alif,YES,Fathah dan Mad Alif,بَا ← بَ,PAPARAN_PENDING_REGENERATION
 27,QJ2-P027,Mad Alif,Alif mad pada tiga huruf,Menerapkan mad alif dalam unit L3,NO,Penguatan Mad Alif,,REINFORCEMENT_NO_NEW_PRESENTATION
 28,QJ2-P028,Mad Alif,Alif mad pada empat huruf,Menerapkan mad alif pada L4 dan pemutus,NO,Penguatan Mad Alif,,REINFORCEMENT_NO_NEW_PRESENTATION
 29,QJ2-P029,Mad Alif,Transfer mad alif,Membaca transfer kata bermakna/Qurani,NO,Transfer Mad Alif,,TRANSFER_NO_NEW_PRESENTATION
 30,QJ2-P030,Mad Alif,Evaluasi mad alif,Membedakan pendek dan mad alif secara kumulatif,NO,Evaluasi Mad Alif,,EVALUATION_NO_NEW_PRESENTATION
-31,QJ2-P031,Mad Ya,Kasrah vs ya mad,Membedakan kasrah pendek dan mad ya,YES,Kasrah dan Mad Ya,بِ → بِي,PAPARAN_PENDING_REGENERATION
+31,QJ2-P031,Mad Ya,Kasrah vs ya mad,Membedakan kasrah pendek dan mad ya,YES,Kasrah dan Mad Ya,بِي ← بِ,PAPARAN_PENDING_REGENERATION
 32,QJ2-P032,Mad Ya,Ya mad pada tiga huruf,Menerapkan mad ya dalam unit L3,NO,Penguatan Mad Ya,,REINFORCEMENT_NO_NEW_PRESENTATION
 33,QJ2-P033,Mad Ya,Ya mad pada empat huruf,Menerapkan mad ya dalam L4 dan transfer,NO,Penguatan Mad Ya,,TRANSFER_NO_NEW_PRESENTATION
-34,QJ2-P034,Mad Ya,Kontras ya,Membedakan ya mad dan ya konsonan,YES,Ya Mad dan Ya Konsonan,بِي ↔ بِيَ,PAPARAN_PENDING_REGENERATION
-35,QJ2-P035,Mad Waw,Dhammah vs waw mad,Membedakan dhammah pendek dan mad waw,YES,Dhammah dan Mad Waw,بُ → بُو,PAPARAN_PENDING_REGENERATION
+34,QJ2-P034,Mad Ya,Kontras ya,Membedakan ya mad dan ya konsonan,YES,Ya Mad dan Ya Konsonan,بِي | بِيَ,PAPARAN_PENDING_REGENERATION
+35,QJ2-P035,Mad Waw,Dhammah vs waw mad,Membedakan dhammah pendek dan mad waw,YES,Dhammah dan Mad Waw,بُو ← بُ,PAPARAN_PENDING_REGENERATION
 36,QJ2-P036,Mad Waw,Waw mad pada tiga huruf,Menerapkan mad waw dalam unit L3,NO,Penguatan Mad Waw,,REINFORCEMENT_NO_NEW_PRESENTATION
 37,QJ2-P037,Mad Waw,Waw mad pada empat huruf,Menerapkan mad waw dalam L4 dan transfer,NO,Penguatan Mad Waw,,TRANSFER_NO_NEW_PRESENTATION
-38,QJ2-P038,Mad Waw,Kontras waw,Membedakan waw mad dan waw konsonan,YES,Waw Mad dan Waw Konsonan,بُو ↔ بُوَ,PAPARAN_PENDING_REGENERATION
+38,QJ2-P038,Mad Waw,Kontras waw,Membedakan waw mad dan waw konsonan,YES,Waw Mad dan Waw Konsonan,بُو | بُوَ,PAPARAN_PENDING_REGENERATION
 39,QJ2-P039,Mad Asli,Integrasi tiga mad,Membedakan alif ya waw mad dan bacaan pendek,YES,Tiga Mad Asli,بَا | بِي | بُو,PAPARAN_PENDING_REGENERATION
 40,QJ2-P040,Mad Asli,Evaluasi akhir,Menguji kompetensi Jilid 2 secara kumulatif,NO,Evaluasi Akhir Jilid 2,,EVALUATION_NO_NEW_PRESENTATION
