@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 """QURBATA Jilid 2 P002 — competency-led lexical page.
 
-P002 continues K1 with the new joining family ج ح خ.  The page explicitly carries
-Competency, Unit Competency, Unit Murojaah and Stair metadata.  It preserves the
+P002 continues K1 with the new joining family ج ح خ. The page explicitly carries
+Competency, Unit Competency, Unit Murojaah and Stair metadata. It preserves the
 approved P001/V22 KFGQPC visual direction: 42pt practice, 46pt presentation,
 4 columns x 8 rows, native GPOS harakat, compact spacing and lexical examples.
+
+Semantic gate: every three-letter practice object MUST be a meaningful Arabic
+lexeme documented in the lexical registry. Meaning never overrides the competency
+boundary.
 """
 from __future__ import annotations
-import asyncio,csv,json,sys
+import asyncio,csv,json,sys,unicodedata
 from pathlib import Path
 from playwright.async_api import async_playwright
 
@@ -20,6 +24,7 @@ import render_qurbata_jilid2_p001_v1 as p001
 MAP=ROOT/'content/qwo/registry/JILID-2-P002-COMPETENCY-MAP-V1.csv'
 MICRO=ROOT/'content/qwo/registry/JILID-2-MICRO-COMPETENCY-P002-V1.csv'
 LEX=ROOT/'content/qwo/registry/JILID-2-P002-LEXICAL-FOUNDATION-V1.csv'
+SEMANTIC_POLICY=ROOT/'content/qwo/policies/JILID-2-THREE-LETTER-SEMANTIC-LEXEME-POLICY-V1.md'
 
 with MAP.open(encoding='utf-8-sig',newline='') as f: meta=next(csv.DictReader(f))
 with MICRO.open(encoding='utf-8-sig',newline='') as f: stairs=list(csv.DictReader(f))
@@ -27,6 +32,26 @@ with LEX.open(encoding='utf-8-sig',newline='') as f: lex=list(csv.DictReader(f))
 if len(stairs)!=10: raise ValueError('P002_MICRO_STAIRS_INVALID')
 if len(lex)!=32: raise ValueError('P002_LEXICAL_COUNT_INVALID')
 if any(r['competency_status']!='ALLOWED' for r in lex): raise ValueError('P002_LEXICAL_COMPETENCY_NOT_ALLOWED')
+if not SEMANTIC_POLICY.is_file(): raise ValueError('THREE_LETTER_SEMANTIC_POLICY_MISSING')
+
+ARABIC_MARKS=set(chr(c) for c in range(0x064B,0x0660)) | {'ـ'}
+def base_letters(s:str)->str:
+    return ''.join(ch for ch in unicodedata.normalize('NFC',s) if ch not in ARABIC_MARKS and unicodedata.category(ch)!='Mn')
+
+# Semantic lexeme gate: every practice object on this page is a 3-letter Arabic lexeme
+# and must carry a documented meaning in the registry.
+semantic_issues=[]
+for r in lex:
+    bases=base_letters(r.get('word',''))
+    meaning=(r.get('meaning_id') or '').strip()
+    if len(bases)!=3:
+        semantic_issues.append((r.get('slot'),r.get('word'),'BASE_LETTER_COUNT_'+str(len(bases))))
+    if not meaning:
+        semantic_issues.append((r.get('slot'),r.get('word'),'MISSING_MEANING'))
+    if (r.get('lexical_status') or '').strip() not in {'CURATED','VERIFIED','MEANING_VERIFIED'}:
+        semantic_issues.append((r.get('slot'),r.get('word'),'LEXICAL_STATUS_NOT_ACCEPTED'))
+if semantic_issues:
+    raise ValueError('P002_THREE_LETTER_SEMANTIC_GATE_FAIL='+repr(semantic_issues))
 
 # Bind base renderer validation to P002 registry.
 p001.MICRO=MICRO
@@ -90,8 +115,10 @@ def main():
         if hit: leaks.append((r['word'],''.join(sorted(hit))))
     if leaks: raise ValueError('P002_COMPETENCY_LEAKAGE='+repr(leaks))
     rc=v22.main()
+    three_letter_count=sum(1 for r in lex if len(base_letters(r['word']))==3)
+    meaning_count=sum(1 for r in lex if len(base_letters(r['word']))==3 and (r.get('meaning_id') or '').strip())
     print('JILID2_P002_RENDERER_V1=PASS')
-    print(f"PAGE=2")
+    print('PAGE=2')
     print(f"COMPETENCY={meta['CompetencyCode']}|{meta['Competency']}")
     print(f"UNIT_COMPETENCY={meta['UnitCompetencyCode']}|{meta['UnitCompetency']}")
     print(f"SUBCOMPETENCY={meta['SubCompetencyCode']}|{meta['SubCompetency']}")
@@ -103,11 +130,15 @@ def main():
     print('PRACTICE_OBJECTS=32')
     print('CURRENT_LEXICAL_OBJECTS=24')
     print('MUROJAAH_LEXICAL_OBJECTS=8')
+    print('THREE_LETTER_SEMANTIC_POLICY=REQUIRED')
+    print(f'THREE_LETTER_OBJECTS={three_letter_count}')
+    print(f'THREE_LETTER_WITH_MEANING={meaning_count}')
+    print(f'MEANINGLESS_THREE_LETTER_OBJECTS={three_letter_count-meaning_count}')
     print('ARABIC_FONT_PRIMARY=KFGQPC Uthman Taha Naskh')
     print('PRACTICE_FONT_SIZE=42PT')
     print('PRESENTATION_FONT_SIZE=46PT')
     print('COMPETENCY_LEAKAGE=0')
-    print('LEXICAL_STATUS=CURATED_PENDING_FINAL_VALIDATION')
+    print('LEXICAL_STATUS=CURATED_WITH_DOCUMENTED_MEANING')
     print('STATUS=P002_CANDIDATE_NOT_FROZEN')
     return rc
 
