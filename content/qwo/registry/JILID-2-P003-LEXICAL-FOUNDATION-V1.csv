@@ -1,0 +1,33 @@
+slot,word,meaning_id,function,competency_status,lexical_status
+1,سَجَدَ,bersujud,CURRENT,ALLOWED,CURATED
+2,سَحَبَ,menarik,CURRENT,ALLOWED,CURATED
+3,سَحَرَ,menyihir,CURRENT,ALLOWED,CURATED
+4,سَبَحَ,berenang atau bergerak,CURRENT,ALLOWED,CURATED
+5,سَتَرَ,menutup,CURRENT,ALLOWED,CURATED
+6,سَرَدَ,menuturkan secara berurutan,CURRENT,ALLOWED,CURATED
+7,سَرَحَ,melepaskan,CURRENT,ALLOWED,CURATED
+8,سَخِرَ,mengejek,CURRENT,ALLOWED,CURATED
+9,سَبَرَ,menguji atau menyelidiki,CURRENT,ALLOWED,CURATED
+10,سَجَرَ,menyalakan atau memenuhi,CURRENT,ALLOWED,CURATED
+11,سَحَجَ,mengikis,CURRENT,ALLOWED,CURATED
+12,سَحَتَ,mengikis atau membinasakan,CURRENT,ALLOWED,CURATED
+13,شَرِبَ,minum,CURRENT,ALLOWED,CURATED
+14,شَرَحَ,menjelaskan atau melapangkan,CURRENT,ALLOWED,CURATED
+15,شَجَرَ,berselisih,CURRENT,ALLOWED,CURATED
+16,شَحَبَ,menjadi pucat,CURRENT,ALLOWED,CURATED
+17,شَحَذَ,menajamkan,CURRENT,ALLOWED,CURATED
+18,شَرَدَ,melarikan diri,CURRENT,ALLOWED,CURATED
+19,شَذَرَ,mencerai-beraikan,CURRENT,ALLOWED,CURATED
+20,شَبَرَ,mengukur dengan jengkal,CURRENT,ALLOWED,CURATED
+21,شَبِثَ,berpegang atau melekat,CURRENT,ALLOWED,CURATED
+22,شَخَرَ,mendengkur,CURRENT,ALLOWED,CURATED
+23,شَجَبَ,mencela atau meratapi,CURRENT,ALLOWED,CURATED
+24,حَشَرَ,mengumpulkan,CURRENT,ALLOWED,CURATED
+25,جَبَرَ,memperbaiki atau memulihkan,REVIEW,ALLOWED,CURATED
+26,جَذَبَ,menarik,REVIEW,ALLOWED,CURATED
+27,جَرَحَ,melukai,REVIEW,ALLOWED,CURATED
+28,حَجَبَ,menghalangi atau menutup,REVIEW,ALLOWED,CURATED
+29,خَبَزَ,memanggang roti,REVIEW,ALLOWED,CURATED
+30,خَرَجَ,keluar,REVIEW,ALLOWED,CURATED
+31,وَجَدَ,menemukan,REVIEW,ALLOWED,CURATED
+32,وَرِثَ,mewarisi,REVIEW,ALLOWED,CURATED
