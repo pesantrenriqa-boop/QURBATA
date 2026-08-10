@@ -1,0 +1,33 @@
+slot,word,meaning_id,function,competency_status,lexical_status
+1,نَبَتَ,tumbuh,CURRENT,ALLOWED,CURATED
+2,نَبَذَ,membuang atau mencampakkan,CURRENT,ALLOWED,CURATED
+3,نَجَحَ,berhasil,CURRENT,ALLOWED,CURATED
+4,نَحَتَ,memahat,CURRENT,ALLOWED,CURATED
+5,نَخَرَ,melubangi atau menjadi lapuk,CURRENT,ALLOWED,CURATED
+6,نَدِمَ,menyesal,CURRENT,ALLOWED,CURATED
+7,نَزَحَ,menjauh atau berpindah,CURRENT,ALLOWED,CURATED
+8,نَسَخَ,menyalin atau menghapus,CURRENT,ALLOWED,CURATED
+9,نَشَرَ,menyebarkan,CURRENT,ALLOWED,CURATED
+10,نَصَحَ,menasihati,CURRENT,ALLOWED,CURATED
+11,نَضَحَ,memercik atau memancar,CURRENT,ALLOWED,CURATED
+12,نَطَحَ,menanduk,CURRENT,ALLOWED,CURATED
+13,نَفَخَ,meniup,CURRENT,ALLOWED,CURATED
+14,نَقَدَ,membayar atau mengkritik,CURRENT,ALLOWED,CURATED
+15,نَكَثَ,melanggar atau mengurai ikatan,CURRENT,ALLOWED,CURATED
+16,نَمَا,tumbuh atau bertambah,CURRENT,ALLOWED,CURATED
+17,نَفِدَ,habis atau lenyap,CURRENT,ALLOWED,CURATED
+18,نَفُسَ,menjadi berharga atau mulia,CURRENT,ALLOWED,CURATED
+19,مَنَعَ,mencegah,MUROJAAH,ALLOWED,CURATED
+20,صَنَعَ,membuat,MUROJAAH,ALLOWED,CURATED
+21,فَنِيَ,binasa atau lenyap,MUROJAAH,ALLOWED,CURATED
+22,حَسُنَ,menjadi baik atau indah,MUROJAAH,ALLOWED,CURATED
+23,سَكَنَ,diam atau tinggal,MUROJAAH,ALLOWED,CURATED
+24,فَتَنَ,menguji atau memfitnah,MUROJAAH,ALLOWED,CURATED
+25,مَرِحَ,bergembira atau bersuka ria,MUROJAAH,ALLOWED,CURATED
+26,مَرُحَ,menjadi ringan atau lincah,MUROJAAH,ALLOWED,CURATED
+27,لَبِثَ,tinggal atau menetap,MUROJAAH,ALLOWED,CURATED
+28,لَطُفَ,menjadi lembut,MUROJAAH,ALLOWED,CURATED
+29,كَسِبَ,memperoleh,MUROJAAH,ALLOWED,CURATED
+30,قَدِرَ,mampu,MUROJAAH,ALLOWED,CURATED
+31,قَرُبَ,menjadi dekat,MUROJAAH,ALLOWED,CURATED
+32,عَسِرَ,menjadi sulit,MUROJAAH,ALLOWED,CURATED
