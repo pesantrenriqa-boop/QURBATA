@@ -1,7 +1,7 @@
 slot,word,meaning_id,function,competency_status,lexical_status
 1,مَتَعَ,memberi kenikmatan atau manfaat,CURRENT,ALLOWED,CURATED
 2,مَثَلَ,berdiri atau hadir,CURRENT,ALLOWED,CURATED
-3,مَجَدَ,menjadi mulia,CURRENT,ALLOWED,CURATED
+3,مَجُدَ,menjadi mulia atau terhormat,CURRENT,ALLOWED,CURATED
 4,مَحَقَ,menghapus atau membinasakan,CURRENT,ALLOWED,CURATED
 5,مَخَرَ,membelah air,CURRENT,ALLOWED,CURATED
 6,مَدَحَ,memuji,CURRENT,ALLOWED,CURATED
@@ -21,7 +21,7 @@ slot,word,meaning_id,function,competency_status,lexical_status
 20,حَمُلَ,membawa,MUROJAAH,ALLOWED,CURATED
 21,جَمُلَ,menjadi indah,MUROJAAH,ALLOWED,CURATED
 22,كَمُلَ,menjadi sempurna,MUROJAAH,ALLOWED,CURATED
-23,لَمَحَ,melihat sekilas,MUROJAAH,ALLOWED,CURATED
+23,صَبُحَ,menjadi cerah atau elok,MUROJAAH,ALLOWED,CURATED
 24,لَمِعَ,berkilau,MUROJAAH,ALLOWED,CURATED
 25,لَبِثَ,tinggal atau menetap,MUROJAAH,ALLOWED,CURATED
 26,لَطُفَ,menjadi lembut,MUROJAAH,ALLOWED,CURATED
