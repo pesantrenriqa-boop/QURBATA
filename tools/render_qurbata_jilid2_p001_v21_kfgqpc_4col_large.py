@@ -3,7 +3,8 @@
 
 Typography-only iteration over V20. Content, competency boundary, 8x4 object
 matrix, native KFGQPC GPOS, header and footer structure remain unchanged.
-V21 also normalizes the generated PDF filename after the inherited V20 render.
+V21 normalizes the P001 PDF filename when it is actually rendering P001, but
+must remain reusable as a typography base for downstream pages such as P002.
 """
 from __future__ import annotations
 import shutil
@@ -53,12 +54,18 @@ def main():
     out=_resolve_output_dir(sys.argv[1:])
     rc=v20.main()
 
+    # Only create the friendly P001 alias if the inherited P001 PDF exists.
+    # Downstream pages replace p001.render() and intentionally produce another
+    # filename (e.g. P002). In that case absence of the P001 source is expected
+    # and must not abort the downstream render.
     inherited=out/'QURBATA-JILID-2-P001-CANDIDATE-V20-KFGQPC-4COL.pdf'
     stable=out/'QURBATA-JILID-2-P001-V21-KFGQPC-4COL-LARGE.pdf'
+    alias_status='SKIPPED_DOWNSTREAM_RENDER'
     if inherited.exists():
         shutil.copy2(inherited,stable)
-    elif not stable.exists():
-        raise FileNotFoundError(f'V21_PDF_SOURCE_NOT_FOUND expected={inherited}')
+        alias_status='CREATED'
+    elif stable.exists():
+        alias_status='ALREADY_EXISTS'
 
     print('JILID2_P001_RENDERER_V21_KFGQPC_4COL_LARGE=PASS')
     print('PRACTICE_ROWS=8')
@@ -73,7 +80,8 @@ def main():
     print('HARAKAT_MODEL=NATIVE_FONT_GPOS')
     print('CONTENT_CHANGE=NONE')
     print('COMPETENCY_CHANGE=NONE')
-    print(f'PDF={stable.relative_to(ROOT)}')
+    print(f'P001_PDF_ALIAS={alias_status}')
+    if stable.exists(): print(f'PDF={stable.relative_to(ROOT)}')
     print('STATUS=VISUAL_CANDIDATE_NOT_FROZEN')
     return rc
 
