@@ -1,0 +1,33 @@
+slot,word,meaning_id,function,competency_status,lexical_status
+1,طَرَبَ,bergembira atau tergerak oleh kegembiraan,CURRENT,ALLOWED,CURATED
+2,طَرَحَ,melempar atau menyingkirkan,CURRENT,ALLOWED,CURATED
+3,طَرَدَ,mengusir,CURRENT,ALLOWED,CURATED
+4,طَرَزَ,menyulam atau menghias dengan bordir,CURRENT,ALLOWED,CURATED
+5,بَطَحَ,membentangkan atau meratakan,CURRENT,ALLOWED,CURATED
+6,بَطِرَ,bersikap sombong atau kufur nikmat,CURRENT,ALLOWED,CURATED
+7,بَطَشَ,menyerang atau menyergap dengan keras,CURRENT,ALLOWED,CURATED
+8,حَطَبَ,mengumpulkan kayu bakar,CURRENT,ALLOWED,CURATED
+9,حَبِطَ,menjadi sia-sia atau gugur,CURRENT,ALLOWED,CURATED
+10,خَطَبَ,berpidato atau meminang,CURRENT,ALLOWED,CURATED
+11,خَبَطَ,memukul atau menghantam,CURRENT,ALLOWED,CURATED
+12,رَبَطَ,mengikat,CURRENT,ALLOWED,CURATED
+13,رَطُبَ,menjadi basah atau lembap,CURRENT,ALLOWED,CURATED
+14,سَطَحَ,meratakan atau membentangkan,CURRENT,ALLOWED,CURATED
+15,سَطَرَ,menulis atau membuat baris,CURRENT,ALLOWED,CURATED
+16,شَطَبَ,mencoret atau menghapus dengan garis,CURRENT,ALLOWED,CURATED
+17,شَطَرَ,membelah atau membagi,CURRENT,ALLOWED,CURATED
+18,ضَبَطَ,mengendalikan atau menetapkan dengan tepat,CURRENT,ALLOWED,CURATED
+19,ضَرَبَ,memukul atau mengetuk,MUROJAAH,ALLOWED,CURATED
+20,ضَرِسَ,menjadi ngilu atau kasar perangainya,MUROJAAH,ALLOWED,CURATED
+21,صَبُحَ,menjadi cerah atau elok,MUROJAAH,ALLOWED,CURATED
+22,صَحِبَ,menemani atau menyertai,MUROJAAH,ALLOWED,CURATED
+23,بَصُرَ,menjadi tajam penglihatan atau berpengetahuan,MUROJAAH,ALLOWED,CURATED
+24,خَصِبَ,menjadi subur,MUROJAAH,ALLOWED,CURATED
+25,سَبُحَ,bergerak atau berenang dengan ringan,MUROJAAH,ALLOWED,CURATED
+26,شَرِبَ,meminum,MUROJAAH,ALLOWED,CURATED
+27,خَبُثَ,menjadi buruk atau keji,MUROJAAH,ALLOWED,CURATED
+28,حَذُرَ,menjadi waspada atau berhati-hati,MUROJAAH,ALLOWED,CURATED
+29,خَبِرَ,mengetahui atau berpengalaman,MUROJAAH,ALLOWED,CURATED
+30,وَرِثَ,mewarisi,MUROJAAH,ALLOWED,CURATED
+31,بَرُدَ,menjadi dingin,MUROJAAH,ALLOWED,CURATED
+32,سَجَدَ,bersujud,MUROJAAH,ALLOWED,CURATED
