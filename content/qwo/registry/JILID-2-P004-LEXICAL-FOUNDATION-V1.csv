@@ -1,0 +1,33 @@
+slot,word,meaning_id,function,competency_status,lexical_status
+1,سَجَدَ,bersujud,TRANSFER,ALLOWED,CURATED
+2,جَبَرَ,memperbaiki atau memulihkan,TRANSFER,ALLOWED,CURATED
+3,شَرِبَ,minum,TRANSFER,ALLOWED,CURATED
+4,حَرَثَ,membajak atau mengolah tanah,TRANSFER,ALLOWED,CURATED
+5,خَرَجَ,keluar,TRANSFER,ALLOWED,CURATED
+6,بَحَثَ,mencari atau meneliti,TRANSFER,ALLOWED,CURATED
+7,سَحَبَ,menarik,TRANSFER,ALLOWED,CURATED
+8,جَرَحَ,melukai,TRANSFER,ALLOWED,CURATED
+9,شَرَحَ,menjelaskan atau melapangkan,TRANSFER,ALLOWED,CURATED
+10,حَجَبَ,menghalangi atau menutup,TRANSFER,ALLOWED,CURATED
+11,خَبَزَ,memanggang roti,TRANSFER,ALLOWED,CURATED
+12,جَذَبَ,menarik,TRANSFER,ALLOWED,CURATED
+13,سَتَرَ,menutup,TRANSFER,ALLOWED,CURATED
+14,شَحَذَ,menajamkan,TRANSFER,ALLOWED,CURATED
+15,وَجَدَ,menemukan,TRANSFER,ALLOWED,CURATED
+16,وَجَبَ,menjadi wajib atau pasti,TRANSFER,ALLOWED,CURATED
+17,حَذِرَ,berhati-hati,TRANSFER,ALLOWED,CURATED
+18,سَخِرَ,mengejek,TRANSFER,ALLOWED,CURATED
+19,شَرَدَ,melarikan diri,TRANSFER,ALLOWED,CURATED
+20,خَرِبَ,menjadi rusak,TRANSFER,ALLOWED,CURATED
+21,رَجَحَ,lebih berat atau lebih unggul,TRANSFER,ALLOWED,CURATED
+22,ذَبَحَ,menyembelih,TRANSFER,ALLOWED,CURATED
+23,دَحَرَ,mengusir,TRANSFER,ALLOWED,CURATED
+24,وَخَزَ,menusuk,TRANSFER,ALLOWED,CURATED
+25,بَذَرَ,menabur,MUROJAAH,ALLOWED,CURATED
+26,بَرَزَ,muncul atau tampil,MUROJAAH,ALLOWED,CURATED
+27,وَرَدَ,datang atau sampai,MUROJAAH,ALLOWED,CURATED
+28,وَرِثَ,mewarisi,MUROJAAH,ALLOWED,CURATED
+29,بَتَرَ,memotong atau memutus,MUROJAAH,ALLOWED,CURATED
+30,ثَبَتَ,tetap atau teguh,MUROJAAH,ALLOWED,CURATED
+31,سَبَحَ,berenang atau bergerak,MUROJAAH,ALLOWED,CURATED
+32,شَجَرَ,berselisih,MUROJAAH,ALLOWED,CURATED
