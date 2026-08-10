@@ -19,15 +19,15 @@ slot,word,meaning_id,function,competency_status,lexical_status
 18,رَصَدَ,mengamati atau mengintai,CURRENT,ALLOWED,CURATED
 19,رَخُصَ,menjadi murah,CURRENT,ALLOWED,CURATED
 20,شَخَصَ,tampak atau berangkat,CURRENT,ALLOWED,CURATED
-21,سَجَدَ,bersujud,MUROJAAH,ALLOWED,CURATED
-22,سَبَحَ,berenang atau bergerak,MUROJAAH,ALLOWED,CURATED
-23,شَرِبَ,minum,MUROJAAH,ALLOWED,CURATED
-24,شَرَحَ,menjelaskan atau melapangkan,MUROJAAH,ALLOWED,CURATED
-25,جَبَرَ,memperbaiki atau memulihkan,MUROJAAH,ALLOWED,CURATED
-26,جَذَبَ,menarik,MUROJAAH,ALLOWED,CURATED
-27,جَرَحَ,melukai,MUROJAAH,ALLOWED,CURATED
-28,حَجَبَ,menghalangi atau menutup,MUROJAAH,ALLOWED,CURATED
-29,خَبَزَ,memanggang roti,MUROJAAH,ALLOWED,CURATED
-30,خَرَجَ,keluar,MUROJAAH,ALLOWED,CURATED
-31,وَجَدَ,menemukan,MUROJAAH,ALLOWED,CURATED
-32,وَرِثَ,mewarisi,MUROJAAH,ALLOWED,CURATED
+21,سَبُحَ,bergerak atau berenang dengan ringan,MUROJAAH,ALLOWED,CURATED
+22,شَرِبَ,meminum,MUROJAAH,ALLOWED,CURATED
+23,شَرُفَ,menjadi mulia,MUROJAAH,ALLOWED,CURATED
+24,جَرُؤَ,menjadi berani,MUROJAAH,ALLOWED,CURATED
+25,حَسُنَ,menjadi baik atau bagus,MUROJAAH,ALLOWED,CURATED
+26,خَبِرَ,mengetahui atau berpengalaman,MUROJAAH,ALLOWED,CURATED
+27,خَرَجَ,keluar,MUROJAAH,ALLOWED,CURATED
+28,وَجَدَ,menemukan,MUROJAAH,ALLOWED,CURATED
+29,وَرِثَ,mewarisi,MUROJAAH,ALLOWED,CURATED
+30,بَرُدَ,menjadi dingin,MUROJAAH,ALLOWED,CURATED
+31,جَحَدَ,menyangkal,MUROJAAH,ALLOWED,CURATED
+32,سَجَدَ,bersujud,MUROJAAH,ALLOWED,CURATED
