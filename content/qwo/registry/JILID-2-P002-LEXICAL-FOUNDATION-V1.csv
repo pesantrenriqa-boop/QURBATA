@@ -1,0 +1,33 @@
+slot,word,meaning_id,function,competency_status,lexical_status
+1,جَبَرَ,memperbaiki atau memulihkan,CURRENT,ALLOWED,CURATED
+2,جَذَبَ,menarik,CURRENT,ALLOWED,CURATED
+3,جَرَحَ,melukai,CURRENT,ALLOWED,CURATED
+4,جَرَدَ,menanggalkan atau mengupas,CURRENT,ALLOWED,CURATED
+5,جَحَدَ,menolak atau mengingkari,CURRENT,ALLOWED,CURATED
+6,جَزَرَ,memotong,CURRENT,ALLOWED,CURATED
+7,حَجَبَ,menghalangi atau menutup,CURRENT,ALLOWED,CURATED
+8,حَرَثَ,membajak atau mengolah tanah,CURRENT,ALLOWED,CURATED
+9,حَذِرَ,berhati-hati,CURRENT,ALLOWED,CURATED
+10,حَزَرَ,memperkirakan,CURRENT,ALLOWED,CURATED
+11,خَبَزَ,memanggang roti,CURRENT,ALLOWED,CURATED
+12,خَرَجَ,keluar,CURRENT,ALLOWED,CURATED
+13,خَرِبَ,menjadi rusak,CURRENT,ALLOWED,CURATED
+14,خَدِرَ,menjadi mati rasa,CURRENT,ALLOWED,CURATED
+15,بَحَثَ,mencari atau meneliti,CURRENT,ALLOWED,CURATED
+16,بَخِرَ,berbau mulut,CURRENT,ALLOWED,CURATED
+17,دَحَرَ,mengusir,CURRENT,ALLOWED,CURATED
+18,ذَبَحَ,menyembelih,CURRENT,ALLOWED,CURATED
+19,رَجَحَ,lebih berat atau lebih unggul,CURRENT,ALLOWED,CURATED
+20,وَجَدَ,menemukan,CURRENT,ALLOWED,CURATED
+21,وَجَبَ,menjadi wajib atau pasti,CURRENT,ALLOWED,CURATED
+22,وَخَزَ,menusuk,CURRENT,ALLOWED,CURATED
+23,خَبَرَ,menguji atau mengetahui melalui pengalaman,CURRENT,ALLOWED,CURATED
+24,حَجَرَ,mencegah atau membatasi,CURRENT,ALLOWED,CURATED
+25,بَذَرَ,menabur,REVIEW,ALLOWED,CURATED
+26,بَرَزَ,muncul atau tampil,REVIEW,ALLOWED,CURATED
+27,زَبَرَ,menulis atau menyusun,REVIEW,ALLOWED,CURATED
+28,وَرَدَ,datang atau sampai,REVIEW,ALLOWED,CURATED
+29,وَرِثَ,mewarisi,REVIEW,ALLOWED,CURATED
+30,وَذَرَ,meninggalkan,REVIEW,ALLOWED,CURATED
+31,بَتَرَ,memotong atau memutus,REVIEW,ALLOWED,CURATED
+32,ثَبَتَ,tetap atau teguh,REVIEW,ALLOWED,CURATED
