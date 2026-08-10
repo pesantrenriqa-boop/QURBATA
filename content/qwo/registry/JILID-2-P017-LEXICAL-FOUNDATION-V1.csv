@@ -1,0 +1,33 @@
+slot,word,meaning_id,function,competency_status,lexical_status
+1,هَبَطَ,turun,CURRENT,ALLOWED,CURATED
+2,هَجَرَ,meninggalkan,CURRENT,ALLOWED,CURATED
+3,هَجَمَ,menyerbu,CURRENT,ALLOWED,CURATED
+4,هَدَمَ,merobohkan,CURRENT,ALLOWED,CURATED
+5,هَذَرَ,mengigau atau banyak bicara sia-sia,CURRENT,ALLOWED,CURATED
+6,هَرَبَ,melarikan diri,CURRENT,ALLOWED,CURATED
+7,هَزَمَ,mengalahkan,CURRENT,ALLOWED,CURATED
+8,هَمَسَ,berbisik,CURRENT,ALLOWED,CURATED
+9,هَمَزَ,mencela atau menusuk,CURRENT,ALLOWED,CURATED
+10,هَتَفَ,berseru,CURRENT,ALLOWED,CURATED
+11,هَرِمَ,menjadi tua,CURRENT,ALLOWED,CURATED
+12,هَلِعَ,menjadi sangat gelisah,CURRENT,ALLOWED,CURATED
+13,هَشِمَ,menjadi remuk,CURRENT,ALLOWED,CURATED
+14,هَنِئَ,menjadi menyenangkan atau baik,CURRENT,ALLOWED,CURATED
+15,هَزُلَ,menjadi kurus,CURRENT,ALLOWED,CURATED
+16,هَدُرَ,menjadi sia-sia atau tertumpah,CURRENT,ALLOWED,CURATED
+17,هَطُلَ,turun deras,CURRENT,ALLOWED,CURATED
+18,هَجُنَ,menjadi tercela,CURRENT,ALLOWED,CURATED
+19,فَهِمَ,memahami,MUROJAAH,ALLOWED,CURATED
+20,شَهِدَ,menyaksikan,MUROJAAH,ALLOWED,CURATED
+21,جَهِلَ,tidak mengetahui,MUROJAAH,ALLOWED,CURATED
+22,سَهِرَ,terjaga pada malam hari,MUROJAAH,ALLOWED,CURATED
+23,بَهُتَ,tercengang,MUROJAAH,ALLOWED,CURATED
+24,سَهُلَ,menjadi mudah,MUROJAAH,ALLOWED,CURATED
+25,نَهُضَ,bangkit atau berdiri,MUROJAAH,ALLOWED,CURATED
+26,هَرُبَ,menjadi sangat takut lalu lari,MUROJAAH,ALLOWED,CURATED
+27,نُشِرَ,disebarkan,MUROJAAH,ALLOWED,CURATED
+28,نُفِخَ,ditiup,MUROJAAH,ALLOWED,CURATED
+29,مَرِحَ,bergembira,MUROJAAH,ALLOWED,CURATED
+30,مَرُحَ,menjadi ringan atau lincah,MUROJAAH,ALLOWED,CURATED
+31,قَدِرَ,mampu,MUROJAAH,ALLOWED,CURATED
+32,قَرُبَ,menjadi dekat,MUROJAAH,ALLOWED,CURATED
