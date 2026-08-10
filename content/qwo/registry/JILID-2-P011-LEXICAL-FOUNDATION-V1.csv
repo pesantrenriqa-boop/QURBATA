@@ -16,7 +16,7 @@ slot,word,meaning_id,function,competency_status,lexical_status
 15,حَفَرَ,menggali,CURRENT,ALLOWED,CURATED
 16,رَفَعَ,mengangkat,CURRENT,ALLOWED,CURATED
 17,دَفَعَ,mendorong atau menolak,CURRENT,ALLOWED,CURATED
-18,نَفَذَ,menembus atau terlaksana,CURRENT,FORBIDDEN_FUTURE_LETTER,REJECTED
+18,شَفَعَ,menjadi perantara atau menggenapkan,CURRENT,ALLOWED,CURATED
 19,غَرِبَ,menjadi asing atau jauh,MUROJAAH,ALLOWED,CURATED
 20,غَرُبَ,menjadi asing atau ganjil,MUROJAAH,ALLOWED,CURATED
 21,غَضِبَ,menjadi marah,MUROJAAH,ALLOWED,CURATED
