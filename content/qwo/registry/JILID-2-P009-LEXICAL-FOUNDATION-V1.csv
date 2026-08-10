@@ -1,0 +1,33 @@
+slot,word,meaning_id,function,competency_status,lexical_status
+1,ظَهَرَ,tampak atau muncul,CURRENT,ALLOWED,CURATED
+2,ظَفِرَ,berhasil atau memperoleh kemenangan,CURRENT,ALLOWED,CURATED
+3,ظَرُفَ,menjadi elok atau cerdas,CURRENT,ALLOWED,CURATED
+4,ظَبِيَ,menyerupai kijang atau menjadi seperti kijang,CURRENT,ALLOWED,CURATED
+5,حَظَرَ,melarang atau membatasi,CURRENT,ALLOWED,CURATED
+6,حَظِرَ,berada dalam larangan atau pembatasan,CURRENT,ALLOWED,CURATED
+7,حَظُرَ,menjadi terlarang atau terjaga,CURRENT,ALLOWED,CURATED
+8,نَظَرَ,melihat atau memperhatikan,CURRENT,ALLOWED,CURATED
+9,بَطِرَ,menjadi angkuh atau tidak mensyukuri nikmat,MUROJAAH,ALLOWED,CURATED
+10,رَطُبَ,menjadi basah atau lembap,MUROJAAH,ALLOWED,CURATED
+11,ضَرِسَ,merasakan ngilu pada gigi,MUROJAAH,ALLOWED,CURATED
+12,صَبُحَ,menjadi cerah atau elok,MUROJAAH,ALLOWED,CURATED
+13,بَصِرَ,melihat atau mengetahui,MUROJAAH,ALLOWED,CURATED
+14,بَصُرَ,menjadi tajam penglihatan atau berpengetahuan,MUROJAAH,ALLOWED,CURATED
+15,خَبِرَ,mengetahui atau berpengalaman,MUROJAAH,ALLOWED,CURATED
+16,خَبُثَ,menjadi buruk atau keji,MUROJAAH,ALLOWED,CURATED
+17,شَرِبَ,meminum,MUROJAAH,ALLOWED,CURATED
+18,سَبُحَ,bergerak atau berenang dengan ringan,MUROJAAH,ALLOWED,CURATED
+19,وَرِثَ,mewarisi,MUROJAAH,ALLOWED,CURATED
+20,بَرُدَ,menjadi dingin,MUROJAAH,ALLOWED,CURATED
+21,حَذِرَ,berhati-hati atau waspada,MUROJAAH,ALLOWED,CURATED
+22,حَذُرَ,menjadi sangat waspada,MUROJAAH,ALLOWED,CURATED
+23,خَصِبَ,menjadi subur,MUROJAAH,ALLOWED,CURATED
+24,خَصُبَ,menjadi subur atau makmur,MUROJAAH,ALLOWED,CURATED
+25,سَرِرَ,menjadi gembira,MUROJAAH,ALLOWED,CURATED
+26,سَرُرَ,menjadi gembira atau senang,MUROJAAH,ALLOWED,CURATED
+27,حَضِرَ,hadir atau datang,MUROJAAH,ALLOWED,CURATED
+28,حَضُرَ,berada atau hadir,MUROJAAH,ALLOWED,CURATED
+29,رَخُصَ,menjadi murah,MUROJAAH,ALLOWED,CURATED
+30,صَحِبَ,menemani atau menyertai,MUROJAAH,ALLOWED,CURATED
+31,سَخُطَ,marah atau tidak senang,MUROJAAH,ALLOWED,CURATED
+32,خَطِرَ,terlintas atau menjadi penting,MUROJAAH,ALLOWED,CURATED
