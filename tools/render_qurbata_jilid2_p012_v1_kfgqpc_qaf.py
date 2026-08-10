@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """QURBATA Jilid 2 P012 — acquisition of ق with cumulative P001-P011 review."""
 from __future__ import annotations
-import csv,sys,unicodedata
+import csv,sys,unicodedata,shutil
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 if str(ROOT/'tools') not in sys.path: sys.path.insert(0,str(ROOT/'tools'))
@@ -33,8 +33,10 @@ p001.build_page_html=build
 orig_render=base.render_p008
 async def render(h,out,debug):
     metrics,report,pdf=await orig_render(h,out,debug)
-    target=out/'QURBATA-JILID-2-P012-V1-KFGQPC-QAF-CUMULATIVE.pdf'
-    if pdf!=target: pdf.replace(target)
+    # Do not rename the inherited PDF on Windows: an existing/open target can be locked.
+    # Copy to a fresh P012 identity instead, preserving the inherited artifact for diagnostics.
+    target=out/'QURBATA-JILID-2-P012-V2-KFGQPC-QAF-CUMULATIVE.pdf'
+    shutil.copyfile(pdf,target)
     return metrics,report,target
 p001.render=render
 
@@ -50,5 +52,5 @@ def main():
     text=''.join(r['word'] for r in lex); counts={'FATHA':text.count('َ'),'KASRA':text.count('ِ'),'DAMMA':text.count('ُ')}
     if counts['KASRA']<10 or counts['DAMMA']<10: raise ValueError('P012_HARAKAT_BALANCE_FAIL='+repr(counts))
     rc=base.v22.main()
-    print('JILID2_P012_RENDERER_V1=PASS'); print('PAGE=12'); print(f"COMPETENCY={meta['CompetencyCode']}|{meta['Competency']}"); print(f"UNIT_COMPETENCY={meta['UnitCompetencyCode']}|{meta['UnitCompetency']}"); print(f"UNIT_MUROJAAH={meta['UnitMurojaahCode']}|{meta['UnitMurojaah']}"); print(f"STAIR_RANGE={stairs[0]['StairCode']}-{stairs[-1]['StairCode']}"); print('ACQUISITION_LETTERS=ق'); print('CUMULATIVE_HARAKAT=FATHA|KASRA|DAMMA'); print('HARAKAT_FATHA_COUNT='+str(counts['FATHA'])); print('HARAKAT_KASRA_COUNT='+str(counts['KASRA'])); print('HARAKAT_DAMMA_COUNT='+str(counts['DAMMA'])); print('HARAKAT_BALANCE_GATE=KASRA>=10|DAMMA>=10'); print('CUMULATIVE_COMPETENCY_P001_P011=PRESERVED'); print('PRACTICE_OBJECTS=32'); print('CURRENT_LEXICAL_OBJECTS='+str(len(current))); print('MUROJAAH_LEXICAL_OBJECTS='+str(32-len(current))); print('THREE_LETTER_WITH_MEANING=32'); print('MEANINGLESS_THREE_LETTER_OBJECTS=0'); print('COMPETENCY_LEAKAGE=0'); print('ARABIC_FONT_PRIMARY=KFGQPC Uthman Taha Naskh'); print('STATUS=P012_CUMULATIVE_CANDIDATE_NOT_FROZEN'); return rc
+    print('JILID2_P012_RENDERER_V2=PASS'); print('PAGE=12'); print(f"COMPETENCY={meta['CompetencyCode']}|{meta['Competency']}"); print(f"UNIT_COMPETENCY={meta['UnitCompetencyCode']}|{meta['UnitCompetency']}"); print(f"UNIT_MUROJAAH={meta['UnitMurojaahCode']}|{meta['UnitMurojaah']}"); print(f"STAIR_RANGE={stairs[0]['StairCode']}-{stairs[-1]['StairCode']}"); print('ACQUISITION_LETTERS=ق'); print('CUMULATIVE_HARAKAT=FATHA|KASRA|DAMMA'); print('HARAKAT_FATHA_COUNT='+str(counts['FATHA'])); print('HARAKAT_KASRA_COUNT='+str(counts['KASRA'])); print('HARAKAT_DAMMA_COUNT='+str(counts['DAMMA'])); print('HARAKAT_BALANCE_GATE=KASRA>=10|DAMMA>=10'); print('CUMULATIVE_COMPETENCY_P001_P011=PRESERVED'); print('PRACTICE_OBJECTS=32'); print('CURRENT_LEXICAL_OBJECTS='+str(len(current))); print('MUROJAAH_LEXICAL_OBJECTS='+str(32-len(current))); print('THREE_LETTER_WITH_MEANING=32'); print('MEANINGLESS_THREE_LETTER_OBJECTS=0'); print('COMPETENCY_LEAKAGE=0'); print('ARABIC_FONT_PRIMARY=KFGQPC Uthman Taha Naskh'); print('PDF_COPY_POLICY=WINDOWS_SAFE_COPY_TO_FRESH_TARGET'); print('STATUS=P012_CUMULATIVE_CANDIDATE_NOT_FROZEN'); return rc
 if __name__=='__main__': raise SystemExit(main())
