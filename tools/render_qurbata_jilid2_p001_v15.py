@@ -32,7 +32,7 @@ async def fit_joined_cluster_overlay(page):
       const isMark=c=>c===FATHA||c===DAMMA||c===KASRA;
       const canvas=document.createElement('canvas'),ctx=canvas.getContext('2d');
       const mm=v=>v*96/25.4,safe=mm(.7);
-      let count=0,fit=0,marks=0,fatha=0,damma=0,kasra=0;
+      let count=0,fit=0,marks=0,fatha=0,damma=0,kasra=0,clamped=0;
       for(const slot of document.querySelectorAll('.j2-object')){
         const g=slot.querySelector('.j2-glyph'); if(!g)continue;
         for(const old of slot.querySelectorAll('.q-overlay-mark')) old.remove();
@@ -70,12 +70,21 @@ async def fit_joined_cluster_overlay(page):
             if(item.mark===FATHA){y=top+h*0.28;fatha++;}
             else if(item.mark===DAMMA){y=top+h*0.38;damma++;}
             else {y=bottom-h*0.03;kasra++;}
+
+            // Keep the mark anchor inside its own logical row cell. This is a
+            // geometry safety clamp only; it does not move the base word or
+            // change the relative fatha/damma/kasra policy.
+            const minY=3, maxY=Math.max(minY, s.height-3);
+            const unclampedY=y;
+            y=Math.max(minY,Math.min(maxY,y));
+            if(Math.abs(y-unclampedY)>0.01)clamped++;
+
             span.style.left=`${x}px`; span.style.top=`${y}px`; slot.appendChild(span); marks++;
           }
         }
         count++;
       }
-      return {count,fit,damma:0,kasra:0,overlayMarks:marks,overlayFatha:fatha,overlayDamma:damma,overlayKasra:kasra};
+      return {count,fit,damma:0,kasra:0,overlayMarks:marks,overlayFatha:fatha,overlayDamma:damma,overlayKasra:kasra,overlayAnchorsClamped:clamped};
     }''')
 
 p001.base.base.fit_joined = fit_joined_cluster_overlay
@@ -85,7 +94,6 @@ async def fit_and_inspect_v15(page):
     metrics, issues = await _original_fit_and_inspect(page)
     extra = await page.evaluate(r'''()=>{
       const out=[];
-      const grid=document.querySelector('.j2-grid')?.getBoundingClientRect();
       for(const slot of document.querySelectorAll('.j2-object')){
         const s=slot.getBoundingClientRect();
         for(const mark of slot.querySelectorAll('.q-overlay-mark')){
@@ -94,8 +102,8 @@ async def fit_and_inspect_v15(page):
           if(cx<s.left-6||cx>s.right+6){
             out.push({kind:'OVERLAY_MARK_ANCHOR_OUTSIDE_CELL_X',slot:slot.dataset.slot,mark:mark.dataset.mark,cx,slotLeft:s.left,slotRight:s.right});
           }
-          if(grid && (cy<grid.top-14||cy>grid.bottom+14)){
-            out.push({kind:'OVERLAY_MARK_ANCHOR_OUTSIDE_GRID_Y',slot:slot.dataset.slot,mark:mark.dataset.mark,cy,gridTop:grid.top,gridBottom:grid.bottom});
+          if(cy<s.top-1||cy>s.bottom+1){
+            out.push({kind:'OVERLAY_MARK_ANCHOR_OUTSIDE_CELL_Y',slot:slot.dataset.slot,mark:mark.dataset.mark,cy,slotTop:s.top,slotBottom:s.bottom});
           }
         }
       }
@@ -118,7 +126,8 @@ def main():
     print('FATHA_CLUSTER_Y_RATIO=0.28')
     print('DAMMA_CLUSTER_Y_RATIO=0.38')
     print('KASRA_CLUSTER_Y_RATIO=0.97')
-    print('OVERLAY_VALIDATION=ANCHOR_CENTER_NOT_GLYPH_EXTENT')
+    print('OVERLAY_ANCHOR_Y_CLAMP=3PX_INSIDE_LOGICAL_CELL')
+    print('OVERLAY_VALIDATION=ANCHOR_CENTER_INSIDE_LOGICAL_CELL')
     print('FIT_POLICY=HORIZONTAL_SCALE_ONLY')
     return rc
 
