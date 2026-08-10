@@ -1,0 +1,25 @@
+slot,word,meaning_id,lexical_status,competency_status
+R3C1,بَتَرَ,memotong atau memutus,VERIFIED,ALLOWED
+R3C2,بَذَرَ,menabur benih,VERIFIED,ALLOWED
+R3C3,بَزَرَ,menabur atau membumbui,VERIFIED,ALLOWED
+R3C4,بَرَزَ,muncul atau tampak,VERIFIED,ALLOWED
+R4C1,بَدَرَ,mendahului atau bersegera,VERIFIED,ALLOWED
+R4C2,بَرَدَ,menjadi dingin,VERIFIED,ALLOWED
+R4C3,تَرِبَ,menjadi berdebu,VERIFIED,ALLOWED
+R4C4,ثَبَتَ,tetap atau kokoh,VERIFIED,ALLOWED
+R5C1,ثَرَدَ,meremukkan roti,VERIFIED,ALLOWED
+R5C2,دَبَرَ,berlalu atau membelakangi,VERIFIED,ALLOWED
+R5C3,دَرِبَ,menjadi terlatih atau mahir,VERIFIED,ALLOWED
+R5C4,دَثَرَ,menjadi tertutup atau terhapus bekasnya,VERIFIED,ALLOWED
+R6C1,ذَرَبَ,menajamkan,VERIFIED,ALLOWED
+R6C2,ذَرِبَ,menjadi tajam,VERIFIED,ALLOWED
+R6C3,زَبَرَ,menulis atau menyusun,VERIFIED,ALLOWED
+R6C4,زَرَدَ,menelan atau merangkai baju zirah menurut konteks,VERIFIED,ALLOWED
+R7C1,زَرِدَ,menelan,VERIFIED,ALLOWED
+R7C2,زَبِدَ,berbuih,VERIFIED,ALLOWED
+R7C3,رَبِدَ,menjadi kelabu atau kusam,VERIFIED,ALLOWED
+R7C4,وَرَدَ,datang atau sampai ke air,VERIFIED,ALLOWED
+R8C1,وَرِثَ,mewarisi,VERIFIED,ALLOWED
+R8C2,وَثَبَ,melompat,VERIFIED,ALLOWED
+R8C3,وَتَرَ,mengurangi hak atau merugikan,VERIFIED,ALLOWED
+R8C4,وَذَرَ,memotong atau meninggalkan menurut penggunaan,VERIFIED,ALLOWED
