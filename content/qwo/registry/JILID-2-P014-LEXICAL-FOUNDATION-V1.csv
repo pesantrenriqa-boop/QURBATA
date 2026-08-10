@@ -1,0 +1,33 @@
+slot,word,meaning_id,function,competency_status,lexical_status
+1,لَبِثَ,tinggal atau menetap,CURRENT,ALLOWED,CURATED
+2,لَبُثَ,tinggal lama,CURRENT,ALLOWED,CURATED
+3,لَحِقَ,menyusul atau bergabung,CURRENT,ALLOWED,CURATED
+4,لَحَظَ,memperhatikan,CURRENT,ALLOWED,CURATED
+5,لَطُفَ,menjadi lembut,CURRENT,ALLOWED,CURATED
+6,لَعِبَ,bermain,CURRENT,ALLOWED,CURATED
+7,لَغَطَ,menimbulkan kegaduhan,CURRENT,ALLOWED,CURATED
+8,لَفَظَ,mengucapkan atau melontarkan,CURRENT,ALLOWED,CURATED
+9,لَفَحَ,menyambar atau membakar,CURRENT,ALLOWED,CURATED
+10,لَفَتَ,memalingkan atau menarik perhatian,CURRENT,ALLOWED,CURATED
+11,لَقِحَ,menjadi bunting atau terbuahi,CURRENT,ALLOWED,CURATED
+12,لَقَطَ,memungut,CURRENT,ALLOWED,CURATED
+13,لَكِزَ,memukul atau menusuk dengan tangan,CURRENT,ALLOWED,CURATED
+14,بَلَغَ,mencapai,CURRENT,ALLOWED,CURATED
+15,جَلَسَ,duduk,CURRENT,ALLOWED,CURATED
+16,خَلَطَ,mencampur,CURRENT,ALLOWED,CURATED
+17,سَلَبَ,merampas,CURRENT,ALLOWED,CURATED
+18,غَلَبَ,mengalahkan,CURRENT,ALLOWED,CURATED
+19,كَتَبَ,menulis,MUROJAAH,ALLOWED,CURATED
+20,كَسِبَ,memperoleh,MUROJAAH,ALLOWED,CURATED
+21,كَبُرَ,menjadi besar,MUROJAAH,ALLOWED,CURATED
+22,قَدِرَ,mampu,MUROJAAH,ALLOWED,CURATED
+23,قَرُبَ,menjadi dekat,MUROJAAH,ALLOWED,CURATED
+24,فَرِحَ,bergembira,MUROJAAH,ALLOWED,CURATED
+25,فَرُغَ,selesai atau kosong,MUROJAAH,ALLOWED,CURATED
+26,غَضِبَ,menjadi marah,MUROJAAH,ALLOWED,CURATED
+27,صَغُرَ,menjadi kecil,MUROJAAH,ALLOWED,CURATED
+28,عَبِثَ,bermain-main atau sia-sia,MUROJAAH,ALLOWED,CURATED
+29,عَجِبَ,merasa heran,MUROJAAH,ALLOWED,CURATED
+30,عَسُرَ,menjadi sulit,MUROJAAH,ALLOWED,CURATED
+31,رَطُبَ,menjadi basah atau lembap,MUROJAAH,ALLOWED,CURATED
+32,خَبِثَ,menjadi buruk atau keji,MUROJAAH,ALLOWED,CURATED
