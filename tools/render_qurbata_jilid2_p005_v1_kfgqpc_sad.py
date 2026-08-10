@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""QURBATA Jilid 2 P005 — acquisition of ص through meaningful 3-letter Arabic words."""
+"""QURBATA Jilid 2 P005 — acquisition of ص with cumulative P001-P004 review.
+
+All 3-letter objects must be meaningful Arabic lexemes. Previously acquired
+fathah, kasrah, and dhammah are mandatory cumulative review competencies.
+"""
 from __future__ import annotations
 import csv,json,sys,unicodedata
 from pathlib import Path
@@ -35,7 +39,7 @@ for r in lex:
         semantic_issues.append((r['slot'],r['word'],'LEXICAL_STATUS_NOT_ACCEPTED'))
 if semantic_issues: raise ValueError('P005_THREE_LETTER_SEMANTIC_GATE_FAIL='+repr(semantic_issues))
 
-# Through P005, acquired joining letters are ب ت ث ج ح خ س ش ص; nonjoiners ا د ذ ر ز و are review.
+# Cumulative competency gate: P005 adds ص but never drops P001-P004 competencies.
 p001.MICRO=MICRO
 p001.P001_BANNED_JOINING=set('ضطظعغفقكلمنيه')
 words=[r['word'] for r in lex]
@@ -47,7 +51,7 @@ def build_p005(debug:bool):
     h=_original_build(debug)
     h=h.replace('<div class="page-number">01</div>','<div class="page-number">05</div>',1)
     start=h.index('<section class="presentation">'); end=h.index('</section>',start)+len('</section>')
-    pres=f'''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object"><span class="arabic-part" lang="ar">{p001.arabic_html('صَبَرَ')}</span><span class="arrow">←</span><span class="arabic-part" lang="ar">{p001.arabic_html('رَ')}</span><span class="arrow">←</span><span class="arabic-part" lang="ar">{p001.arabic_html('بَ')}</span><span class="arrow">←</span><span class="arabic-part" lang="ar">{p001.arabic_html('صَ')}</span></div></div></section>'''
+    pres=f'''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object"><span class="arabic-part" lang="ar">{p001.arabic_html('صَبُحَ')}</span><span class="arrow">←</span><span class="arabic-part" lang="ar">{p001.arabic_html('حَ')}</span><span class="arrow">←</span><span class="arabic-part" lang="ar">{p001.arabic_html('بُ')}</span><span class="arrow">←</span><span class="arabic-part" lang="ar">{p001.arabic_html('صَ')}</span></div></div></section>'''
     h=h[:start]+pres+h[end:]
     ts=h.index('<section class="targets">'); te=h.index('</section>',ts)+len('</section>')
     targets=f'''<section class="targets"><div class="target-item"><span>Kompetensi</span><strong>{meta['CompetencyCode']} — {meta['Competency']}</strong></div><div class="target-item"><span>Unit Kompetensi</span><strong>{meta['UnitCompetencyCode']} — {meta['UnitCompetency']}</strong></div><div class="target-item"><span>Unit Murojaah</span><strong>{meta['UnitMurojaahCode']} — {meta['UnitMurojaah']}</strong></div><div class="target-item"><span>Tangga</span><strong>{stairs[0]['StairCode']}–{stairs[-1]['StairCode']}</strong></div></section>'''
@@ -55,7 +59,7 @@ def build_p005(debug:bool):
 p001.build_page_html=build_p005
 
 async def render_p005(h:Path,out:Path,debug:bool):
-    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P005-V1.json'; png=out/'png';png.mkdir(parents=True,exist_ok=True)
+    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P005-V2.json'; png=out/'png';png.mkdir(parents=True,exist_ok=True)
     async with async_playwright() as pw:
         browser=await pw.chromium.launch(); page=await browser.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
         await page.goto(h.resolve().as_uri(),wait_until='networkidle'); await page.evaluate('document.fonts.ready')
@@ -68,7 +72,7 @@ async def render_p005(h:Path,out:Path,debug:bool):
             for x in layout_issues:kinds[x['kind']]=kinds.get(x['kind'],0)+1
             raise RuntimeError('P005_LAYOUT_ISSUES='+str(len(layout_issues))+' TYPES='+','.join(f'{k}:{v}' for k,v in sorted(kinds.items()))+f' REPORT={report}')
         await page.screenshot(path=str(png/'page-005.png'),full_page=True)
-        pdf=out/'QURBATA-JILID-2-P005-V1-KFGQPC-SAD.pdf'
+        pdf=out/'QURBATA-JILID-2-P005-V2-KFGQPC-SAD-CUMULATIVE.pdf'
         await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
     return metrics,report,pdf
 p001.render=render_p005
@@ -82,18 +86,27 @@ def main():
     current=[r for r in lex if r['function']=='CURRENT']
     missing=[r['word'] for r in current if 'ص' not in base_letters(r['word'])]
     if missing: raise ValueError('P005_CURRENT_OBJECT_MISSING_SAD='+repr(missing))
+    # Never silently lose a previously acquired short vowel.
+    required_harakat={'َ':'FATHA','ِ':'KASRA','ُ':'DAMMA'}
+    all_text=''.join(r['word'] for r in lex)
+    harakat_counts={name:all_text.count(mark) for mark,name in required_harakat.items()}
+    missing_harakat=[name for name,count in harakat_counts.items() if count==0]
+    if missing_harakat: raise ValueError('P005_CUMULATIVE_HARAKAT_MISSING='+repr(missing_harakat))
     rc=v22.main()
     n=sum(1 for r in lex if len(base_letters(r['word']))==3); m=sum(1 for r in lex if len(base_letters(r['word']))==3 and r['meaning_id'].strip())
     review=sum(1 for r in lex if r['function']=='MUROJAAH')
-    print('JILID2_P005_RENDERER_V1=PASS'); print('PAGE=5')
+    print('JILID2_P005_RENDERER_V2=PASS'); print('PAGE=5')
     print(f"COMPETENCY={meta['CompetencyCode']}|{meta['Competency']}")
     print(f"UNIT_COMPETENCY={meta['UnitCompetencyCode']}|{meta['UnitCompetency']}")
     print(f"SUBCOMPETENCY={meta['SubCompetencyCode']}|{meta['SubCompetency']}")
     print(f"UNIT_MUROJAAH={meta['UnitMurojaahCode']}|{meta['UnitMurojaah']}")
     print(f"STAIR_RANGE={stairs[0]['StairCode']}-{stairs[-1]['StairCode']}")
     print('ACQUISITION_LETTERS=ص'); print('REVIEW_LETTERS=ب|ت|ث|ج|ح|خ|س|ش|ا|د|ذ|ر|ز|و')
+    print('CUMULATIVE_HARAKAT=FATHA|KASRA|DAMMA')
+    print('HARAKAT_FATHA_COUNT='+str(harakat_counts['FATHA'])); print('HARAKAT_KASRA_COUNT='+str(harakat_counts['KASRA'])); print('HARAKAT_DAMMA_COUNT='+str(harakat_counts['DAMMA']))
+    print('CUMULATIVE_COMPETENCY_P001_P004=PRESERVED')
     print('PRACTICE_OBJECTS=32'); print(f'CURRENT_LEXICAL_OBJECTS={len(current)}'); print(f'MUROJAAH_LEXICAL_OBJECTS={review}')
     print('THREE_LETTER_SEMANTIC_POLICY=REQUIRED'); print(f'THREE_LETTER_OBJECTS={n}'); print(f'THREE_LETTER_WITH_MEANING={m}'); print(f'MEANINGLESS_THREE_LETTER_OBJECTS={n-m}')
-    print('COMPETENCY_LEAKAGE=0'); print('ARABIC_FONT_PRIMARY=KFGQPC Uthman Taha Naskh'); print('PRACTICE_FONT_SIZE=42PT'); print('PRESENTATION_FONT_SIZE=46PT'); print('STATUS=P005_CANDIDATE_NOT_FROZEN')
+    print('COMPETENCY_LEAKAGE=0'); print('ARABIC_FONT_PRIMARY=KFGQPC Uthman Taha Naskh'); print('PRACTICE_FONT_SIZE=42PT'); print('PRESENTATION_FONT_SIZE=46PT'); print('STATUS=P005_CUMULATIVE_CANDIDATE_NOT_FROZEN')
     return rc
 if __name__=='__main__': raise SystemExit(main())
