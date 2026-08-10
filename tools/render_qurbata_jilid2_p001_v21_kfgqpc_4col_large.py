@@ -3,8 +3,10 @@
 
 Typography-only iteration over V20. Content, competency boundary, 8x4 object
 matrix, native KFGQPC GPOS, header and footer structure remain unchanged.
+V21 also normalizes the generated PDF filename after the inherited V20 render.
 """
 from __future__ import annotations
+import shutil
 import sys
 from pathlib import Path
 
@@ -14,8 +16,6 @@ if str(ROOT/'tools') not in sys.path: sys.path.insert(0,str(ROOT/'tools'))
 import render_qurbata_jilid2_p001_v20_kfgqpc_4col as v20
 import render_qurbata_jilid2_p001_v1 as p001
 
-# V21: use more of each cell for the Arabic reading object.
-# Keep native font shaping; do not detach or manually offset harakat.
 p001.P001_CSS += r'''
 .presentation{height:13mm;flex:0 0 13mm;margin:.1mm 1.4mm .35mm}
 .presentation-object{font-size:34pt;gap:1.25mm}
@@ -39,8 +39,27 @@ p001.P001_CSS += r'''
 '''
 
 
+def _resolve_output_dir(argv:list[str])->Path:
+    out='dist/jilid-2-p001-candidate-v29'
+    for i,a in enumerate(argv):
+        if a=='--output-dir' and i+1<len(argv):
+            out=argv[i+1]
+            break
+    p=Path(out)
+    return p if p.is_absolute() else ROOT/p
+
+
 def main():
+    out=_resolve_output_dir(sys.argv[1:])
     rc=v20.main()
+
+    inherited=out/'QURBATA-JILID-2-P001-CANDIDATE-V20-KFGQPC-4COL.pdf'
+    stable=out/'QURBATA-JILID-2-P001-V21-KFGQPC-4COL-LARGE.pdf'
+    if inherited.exists():
+        shutil.copy2(inherited,stable)
+    elif not stable.exists():
+        raise FileNotFoundError(f'V21_PDF_SOURCE_NOT_FOUND expected={inherited}')
+
     print('JILID2_P001_RENDERER_V21_KFGQPC_4COL_LARGE=PASS')
     print('PRACTICE_ROWS=8')
     print('PRACTICE_COLUMNS=4')
@@ -54,6 +73,7 @@ def main():
     print('HARAKAT_MODEL=NATIVE_FONT_GPOS')
     print('CONTENT_CHANGE=NONE')
     print('COMPETENCY_CHANGE=NONE')
+    print(f'PDF={stable.relative_to(ROOT)}')
     print('STATUS=VISUAL_CANDIDATE_NOT_FROZEN')
     return rc
 
