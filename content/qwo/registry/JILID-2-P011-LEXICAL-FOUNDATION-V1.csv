@@ -1,0 +1,33 @@
+slot,word,meaning_id,function,competency_status,lexical_status
+1,فَتَحَ,membuka,CURRENT,ALLOWED,CURATED
+2,فَرِحَ,bergembira,CURRENT,ALLOWED,CURATED
+3,فَرُغَ,selesai atau menjadi kosong,CURRENT,ALLOWED,CURATED
+4,فَسَدَ,rusak,CURRENT,ALLOWED,CURATED
+5,فَسُدَ,menjadi rusak,CURRENT,ALLOWED,CURATED
+6,فَصَحَ,berbicara dengan jelas,CURRENT,ALLOWED,CURATED
+7,فَصُحَ,menjadi fasih,CURRENT,ALLOWED,CURATED
+8,فَطِرَ,berbuka atau membatalkan puasa,CURRENT,ALLOWED,CURATED
+9,فَطَرَ,menciptakan atau membelah,CURRENT,ALLOWED,CURATED
+10,فَجَرَ,membelah atau memancarkan,CURRENT,ALLOWED,CURATED
+11,فَجُرَ,menjadi durhaka,CURRENT,ALLOWED,CURATED
+12,فَخِرَ,berbangga,CURRENT,ALLOWED,CURATED
+13,فَخُرَ,menjadi mulia atau membanggakan,CURRENT,ALLOWED,CURATED
+14,حَفِظَ,menjaga atau menghafal,CURRENT,ALLOWED,CURATED
+15,حَفَرَ,menggali,CURRENT,ALLOWED,CURATED
+16,رَفَعَ,mengangkat,CURRENT,ALLOWED,CURATED
+17,دَفَعَ,mendorong atau menolak,CURRENT,ALLOWED,CURATED
+18,نَفَذَ,menembus atau terlaksana,CURRENT,FORBIDDEN_FUTURE_LETTER,REJECTED
+19,غَرِبَ,menjadi asing atau jauh,MUROJAAH,ALLOWED,CURATED
+20,غَرُبَ,menjadi asing atau ganjil,MUROJAAH,ALLOWED,CURATED
+21,غَضِبَ,menjadi marah,MUROJAAH,ALLOWED,CURATED
+22,صَغُرَ,menjadi kecil,MUROJAAH,ALLOWED,CURATED
+23,عَبِثَ,bermain-main atau berbuat sia-sia,MUROJAAH,ALLOWED,CURATED
+24,عَجِبَ,merasa heran,MUROJAAH,ALLOWED,CURATED
+25,عَسُرَ,menjadi sulit,MUROJAAH,ALLOWED,CURATED
+26,جَعُدَ,menjadi keriting atau berlekuk,MUROJAAH,ALLOWED,CURATED
+27,بَطِرَ,menjadi angkuh atau tidak mensyukuri nikmat,MUROJAAH,ALLOWED,CURATED
+28,رَطُبَ,menjadi basah atau lembap,MUROJAAH,ALLOWED,CURATED
+29,ضَرِسَ,merasakan ngilu pada gigi,MUROJAAH,ALLOWED,CURATED
+30,بَصُرَ,menjadi tajam penglihatan atau berpengetahuan,MUROJAAH,ALLOWED,CURATED
+31,خَبِثَ,menjadi buruk atau keji,MUROJAAH,ALLOWED,CURATED
+32,سَبُحَ,bergerak atau berenang dengan ringan,MUROJAAH,ALLOWED,CURATED
