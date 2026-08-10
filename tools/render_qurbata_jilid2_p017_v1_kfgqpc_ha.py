@@ -20,38 +20,39 @@ for r in lex:
 p001.MICRO=MICRO
 p001.P001_BANNED_JOINING=set('ظي')
 words=[r['word'] for r in lex]; p001.P001_ROWS=[words[i:i+4] for i in range(0,32,4)]
-p001.P001_CSS += r'''.presentation-object{font-size:46pt}.j2-glyph{font-size:42pt}.ha-isolated{display:inline-block;direction:rtl;unicode-bidi:isolate;font-family:"KFGQPC Uthman Taha Naskh",serif;font-feature-settings:"isol" 1,"mark" 1,"mkmk" 1}'''
+p001.P001_CSS += r'''.presentation-object{font-size:46pt}.j2-glyph{font-size:42pt}.ha-two-counter{display:inline-block;direction:rtl;unicode-bidi:isolate;font-family:"KFGQPC Uthman Taha Naskh",serif;font-feature-settings:"mark" 1,"mkmk" 1}'''
 orig=p001.build_page_html
 def build(debug):
     h=orig(debug).replace('<div class="page-number">01</div>','<div class="page-number">17</div>',1)
     s=h.index('<section class="presentation">'); e=h.index('</section>',s)+len('</section>')
-    # The acquisition glyph is its own shaping run. ZWNJ guards both sides so ه cannot
-    # inherit contextual joining from neighbouring presentation spans/arrows.
-    isolated_ha='\u200cهَ\u200c'
-    pres=f'''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object"><span class="arabic-part" lang="ar">{p001.arabic_html('هَجَرَ')}</span><span class="arrow">←</span><span class="arabic-part" lang="ar">{p001.arabic_html('جَ')}</span><span class="arrow">←</span><span class="arabic-part ha-isolated" lang="ar">{isolated_ha}</span></div></div></section>'''
+    # U+FEEC ARABIC LETTER HEH MEDIAL FORM is intentionally displayed as a standalone
+    # pedagogical glyph. In KFGQPC this preserves the two-counter (two-hole) shape the
+    # learner needs to recognise, while remaining visually detached from neighbours.
+    two_counter_ha='ﻬَ'
+    pres=f'''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object"><span class="arabic-part" lang="ar">{p001.arabic_html('هَجَرَ')}</span><span class="arrow">←</span><span class="arabic-part" lang="ar">{p001.arabic_html('جَ')}</span><span class="arrow">←</span><span class="arabic-part ha-two-counter" lang="ar">{two_counter_ha}</span></div></div></section>'''
     h=h[:s]+pres+h[e:]
     ts=h.index('<section class="targets">'); te=h.index('</section>',ts)+len('</section>')
     t=f'''<section class="targets"><div class="target-item"><span>Kompetensi</span><strong>{meta['CompetencyCode']} — {meta['Competency']}</strong></div><div class="target-item"><span>Unit Kompetensi</span><strong>{meta['UnitCompetencyCode']} — {meta['UnitCompetency']}</strong></div><div class="target-item"><span>Unit Murojaah</span><strong>{meta['UnitMurojaahCode']} — {meta['UnitMurojaah']}</strong></div><div class="target-item"><span>Tangga</span><strong>{stairs[0]['StairCode']}–{stairs[-1]['StairCode']}</strong></div></section>'''
     return h[:ts]+t+h[te:]
 p001.build_page_html=build
 async def render(h,out,debug):
-    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P017-V2.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
+    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P017-V3.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
     async with async_playwright() as pw:
         browser=await pw.chromium.launch(); page=await browser.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
         await page.goto(h.resolve().as_uri(),wait_until='networkidle'); await page.evaluate('document.fonts.ready')
         count=await page.locator('.j2-object').count()
         if count!=32: raise RuntimeError(f'P017_OBJECT_COUNT_INVALID actual={count} expected=32')
-        isolated_count=await page.locator('.ha-isolated').count()
-        if isolated_count!=1: raise RuntimeError(f'P017_ISOLATED_HA_GATE_FAIL actual={isolated_count} expected=1')
-        isolated_text=(await page.locator('.ha-isolated').inner_text()).replace('\u200c','')
-        if isolated_text!='هَ': raise RuntimeError('P017_ISOLATED_HA_TEXT_FAIL actual='+repr(isolated_text))
+        glyph_count=await page.locator('.ha-two-counter').count()
+        if glyph_count!=1: raise RuntimeError(f'P017_TWO_COUNTER_HA_GATE_FAIL actual={glyph_count} expected=1')
+        glyph_text=await page.locator('.ha-two-counter').inner_text()
+        if glyph_text!='ﻬَ': raise RuntimeError('P017_TWO_COUNTER_HA_TEXT_FAIL actual='+repr(glyph_text))
         metrics,issues=await p001.fit_and_inspect(page)
         report.write_text(json.dumps(issues,ensure_ascii=False,indent=2),encoding='utf-8')
         if issues: raise RuntimeError('P017_LAYOUT_ISSUES='+str(len(issues))+' REPORT='+str(report))
         page_no=(await page.locator('.page-number').inner_text()).strip()
         if page_no!='17': raise RuntimeError('P017_PAGE_IDENTITY_FAIL actual='+repr(page_no))
         await page.screenshot(path=str(png/'page-017.png'),full_page=True)
-        pdf=out/'QURBATA-JILID-2-P017-V2-KFGQPC-HA-ISOLATED-CUMULATIVE.pdf'
+        pdf=out/'QURBATA-JILID-2-P017-V3-KFGQPC-HA-TWO-COUNTER-CUMULATIVE.pdf'
         await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
     return metrics,report,pdf
 p001.render=render
@@ -67,5 +68,5 @@ def main():
     text=''.join(r['word'] for r in lex); counts={'FATHA':text.count('َ'),'KASRA':text.count('ِ'),'DAMMA':text.count('ُ')}
     if counts['KASRA']<10 or counts['DAMMA']<10: raise ValueError('P017_HARAKAT_BALANCE_FAIL='+repr(counts))
     rc=v22.main()
-    print('JILID2_P017_RENDERER_V2=PASS'); print('PAGE=17'); print('PAGE_IDENTITY_GATE=17'); print('PRESENTATION_HA_FORM=ISOLATED'); print('PRESENTATION_HA_SHAPING_RUN=SEPARATE'); print('PRESENTATION_HA_ZWNJ_GUARD=ENABLED'); print('MANUAL_GLYPH_DRAWING=DISABLED'); print(f"COMPETENCY={meta['CompetencyCode']}|{meta['Competency']}"); print(f"UNIT_COMPETENCY={meta['UnitCompetencyCode']}|{meta['UnitCompetency']}"); print(f"UNIT_MUROJAAH={meta['UnitMurojaahCode']}|{meta['UnitMurojaah']}"); print(f"STAIR_RANGE={stairs[0]['StairCode']}-{stairs[-1]['StairCode']}"); print('ACQUISITION_LETTERS=ه'); print('CUMULATIVE_HARAKAT=FATHA|KASRA|DAMMA'); print('HARAKAT_FATHA_COUNT='+str(counts['FATHA'])); print('HARAKAT_KASRA_COUNT='+str(counts['KASRA'])); print('HARAKAT_DAMMA_COUNT='+str(counts['DAMMA'])); print('HARAKAT_BALANCE_GATE=KASRA>=10|DAMMA>=10'); print('CUMULATIVE_COMPETENCY_P001_P016=PRESERVED'); print('PRACTICE_OBJECTS=32'); print('THREE_LETTER_WITH_MEANING=32'); print('COMPETENCY_LEAKAGE=0'); print('STATUS=P017_ISOLATED_HA_VISUAL_CANDIDATE_NOT_FROZEN'); return rc
+    print('JILID2_P017_RENDERER_V3=PASS'); print('PAGE=17'); print('PAGE_IDENTITY_GATE=17'); print('PRESENTATION_HA_FORM=TWO_COUNTER_STANDALONE'); print('PRESENTATION_HA_CODEPOINT=U+FEEC'); print('PRESENTATION_HA_SOURCE=KFGQPC_GLYPH'); print('MANUAL_GLYPH_DRAWING=DISABLED'); print(f"COMPETENCY={meta['CompetencyCode']}|{meta['Competency']}"); print(f"UNIT_COMPETENCY={meta['UnitCompetencyCode']}|{meta['UnitCompetency']}"); print(f"UNIT_MUROJAAH={meta['UnitMurojaahCode']}|{meta['UnitMurojaah']}"); print(f"STAIR_RANGE={stairs[0]['StairCode']}-{stairs[-1]['StairCode']}"); print('ACQUISITION_LETTERS=ه'); print('CUMULATIVE_HARAKAT=FATHA|KASRA|DAMMA'); print('HARAKAT_FATHA_COUNT='+str(counts['FATHA'])); print('HARAKAT_KASRA_COUNT='+str(counts['KASRA'])); print('HARAKAT_DAMMA_COUNT='+str(counts['DAMMA'])); print('HARAKAT_BALANCE_GATE=KASRA>=10|DAMMA>=10'); print('CUMULATIVE_COMPETENCY_P001_P016=PRESERVED'); print('PRACTICE_OBJECTS=32'); print('THREE_LETTER_WITH_MEANING=32'); print('COMPETENCY_LEAKAGE=0'); print('STATUS=P017_TWO_COUNTER_HA_VISUAL_CANDIDATE_NOT_FROZEN'); return rc
 if __name__=='__main__': raise SystemExit(main())
