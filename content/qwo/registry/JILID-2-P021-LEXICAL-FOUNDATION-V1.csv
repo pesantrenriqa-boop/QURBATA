@@ -1,0 +1,33 @@
+slot,word,meaning_id,function,competency_status,lexical_status
+1,قَالَ,berkata,CURRENT,ALLOWED,CURATED
+2,مَالَ,condong,CURRENT,ALLOWED,CURATED
+3,نَالَ,memperoleh,CURRENT,ALLOWED,CURATED
+4,نَامَ,tidur,CURRENT,ALLOWED,CURATED
+5,صَامَ,berpuasa,CURRENT,ALLOWED,CURATED
+6,قَامَ,berdiri,CURRENT,ALLOWED,CURATED
+7,تَابَ,bertaubat,CURRENT,ALLOWED,CURATED
+8,عَادَ,kembali,CURRENT,ALLOWED,CURATED
+9,زَادَ,bertambah,CURRENT,ALLOWED,CURATED
+10,سَارَ,berjalan,CURRENT,ALLOWED,CURATED
+11,فَازَ,beruntung atau menang,CURRENT,ALLOWED,CURATED
+12,حَارَ,bingung,CURRENT,ALLOWED,CURATED
+13,خَافَ,takut,CURRENT,ALLOWED,CURATED
+14,طَابَ,menjadi baik,CURRENT,ALLOWED,CURATED
+15,هَابَ,segan atau takut,CURRENT,ALLOWED,CURATED
+16,جَادَ,bermurah hati,CURRENT,ALLOWED,CURATED
+17,بَاعَ,menjual,CURRENT,ALLOWED,CURATED
+18,شَاعَ,tersebar,CURRENT,ALLOWED,CURATED
+19,كَسِبَ,memperoleh,MUROJAAH,ALLOWED,CURATED
+20,قَدِرَ,mampu,MUROJAAH,ALLOWED,CURATED
+21,فَرِحَ,bergembira,MUROJAAH,ALLOWED,CURATED
+22,عَسِرَ,menjadi sulit,MUROJAAH,ALLOWED,CURATED
+23,لَبِثَ,tinggal atau menetap,MUROJAAH,ALLOWED,CURATED
+24,فَهِمَ,memahami,MUROJAAH,ALLOWED,CURATED
+25,شَهِدَ,menyaksikan,MUROJAAH,ALLOWED,CURATED
+26,قَرُبَ,menjadi dekat,MUROJAAH,ALLOWED,CURATED
+27,مَرُحَ,menjadi ringan atau lincah,MUROJAAH,ALLOWED,CURATED
+28,لَطُفَ,menjadi lembut,MUROJAAH,ALLOWED,CURATED
+29,حَسُنَ,menjadi baik atau indah,MUROJAAH,ALLOWED,CURATED
+30,جَمُلَ,menjadi indah,MUROJAAH,ALLOWED,CURATED
+31,كَمُلَ,menjadi sempurna,MUROJAAH,ALLOWED,CURATED
+32,كَبُرَ,menjadi besar,MUROJAAH,ALLOWED,CURATED
