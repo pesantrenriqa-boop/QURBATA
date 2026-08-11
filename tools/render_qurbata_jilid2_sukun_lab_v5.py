@@ -1,62 +1,40 @@
 #!/usr/bin/env python3
-"""QURBATA Jilid 2 — SUKUN LAB V5.1.
-Keep U+0652 native positioning, but obtain the visually approved open-sukun outline
-robustly even when U+06E1 is not directly encoded in the selected KFGQPC cmap.
-No book page is modified.
+"""QURBATA Jilid 2 — SUKUN LAB V6.
+Render an atlas of the exact zero-advance mark glyph candidates discovered in the
+local KFGQPC TTF. This avoids guessing which internal glyph is the approved open sukun.
+No book page or source font is modified.
 """
 from __future__ import annotations
-import argparse,asyncio,copy,json,sys
+import argparse,asyncio,json,sys
 from pathlib import Path
 from playwright.async_api import async_playwright
 ROOT=Path(__file__).resolve().parents[1]
-if str(ROOT/'tools') not in sys.path: sys.path.insert(0,str(ROOT/'tools'))
+if str(ROOT/'tools') not in sys.path:sys.path.insert(0,str(ROOT/'tools'))
 import render_qurbata_jilid2_p001_v19_kfgqpc as kfgloader
-
-def _bounds(font,gname):
-    try:
-        from fontTools.pens.boundsPen import BoundsPen
-        gs=font.getGlyphSet(); pen=BoundsPen(gs); gs[gname].draw(pen); return pen.bounds
-    except Exception:return None
-
-def patch_font(src:Path,dst:Path):
-    try: from fontTools.ttLib import TTFont
-    except ImportError as e: raise RuntimeError('FONTTOOLS_REQUIRED. Run: python -m pip install fonttools') from e
-    font=TTFont(str(src)); cmap={}
-    for table in font['cmap'].tables:
-        if table.isUnicode(): cmap.update(table.cmap)
-    g_round=cmap.get(0x0652)
-    if not g_round: raise RuntimeError('NORMAL_SUKUN_U0652_NOT_FOUND')
-    # Some KFGQPC builds render U+06E1 through GSUB/alternate glyphs and do not expose
-    # a direct cmap entry. Prefer direct cmap; otherwise find a small mark glyph whose
-    # outline differs from the round U+0652 and whose glyph name hints at 06E1/sukun.
-    g_open=cmap.get(0x06E1); source='cmap_U+06E1'
-    if not g_open:
-        names=font.getGlyphOrder(); hinted=[n for n in names if any(k in n.lower() for k in ('06e1','sukun','jazm','head')) and n!=g_round]
-        if hinted: g_open=hinted[0];source='glyph_name_hint'
-    if not g_open:
-        # Last-resort diagnostic selection: marks with zero advance and compact bounds.
-        hmtx=font['hmtx'].metrics; rb=_bounds(font,g_round); candidates=[]
-        for n in font.getGlyphOrder():
-            if n==g_round or hmtx.get(n,(1,0))[0]!=0: continue
-            b=_bounds(font,n)
-            if not b: continue
-            w=b[2]-b[0];hh=b[3]-b[1]
-            if 20<=w<=500 and 20<=hh<=500: candidates.append((abs(w-hh),w*hh,n,b))
-        candidates.sort()
-        # Do not silently patch an arbitrary glyph. Emit candidates so next step is deterministic.
-        raise RuntimeError('OPEN_SUKUN_NOT_DIRECTLY_MAPPED; round='+str(g_round)+' round_bounds='+repr(rb)+' candidate_marks='+repr(candidates[:24]))
-    if 'glyf' not in font: raise RuntimeError('KFGQPC_FONT_NOT_TRUETYPE_GLYF')
-    font['glyf'][g_round]=copy.deepcopy(font['glyf'][g_open]);dst.parent.mkdir(parents=True,exist_ok=True);font.save(str(dst))
-    return {'round_glyph':g_round,'open_source_glyph':g_open,'open_source_resolution':source,'strategy':'outline_only_U0652_anchor_preserved'}
-
-TEMPLATE='''<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><style>@page{{size:A5;margin:0}}*{{box-sizing:border-box}}body{{margin:0;background:#fff;color:#111;font-family:Arial,sans-serif}}.page{{width:148mm;height:210mm;padding:10mm;direction:ltr}}h1{{font:700 12pt Arial;text-align:center;margin:0 0 6mm}}.row{{border-bottom:1px solid #ddd;padding:5mm 0}}.label{{font:8pt Arial;direction:ltr;margin-bottom:2mm}}.arab{{direction:rtl;text-align:center;font-size:38pt;line-height:1.5;font-family:"QURBATA KFGQPC Uthman Taha Patched",serif!important;font-feature-settings:'mark' 1,'mkmk' 1;text-rendering:optimizeLegibility}}@font-face{{font-family:"QURBATA KFGQPC Uthman Taha Patched";src:url("{font_uri}") format("truetype");font-style:normal;font-weight:400;font-display:block}}</style></head><body><div class="page"><h1>SUKUN LAB V5.1 — OPEN SHAPE + U+0652 NATIVE ANCHORS</h1><div class="row"><div class="label">A · medial consonant</div><div class="arab">يَكْتُبُ &nbsp; يَفْتَحُ &nbsp; يَسْجُدُ</div></div><div class="row"><div class="label">B · final consonant</div><div class="arab">قُلْ &nbsp; مِنْ &nbsp; لَمْ &nbsp; هَلْ</div></div><div class="row"><div class="label">C · mixed positions</div><div class="arab">أَنْعَمْتَ &nbsp; يَعْلَمْ &nbsp; نَعْبُدُ</div></div><div class="row"><div class="label">D · isolated pairs</div><div class="arab">كْ &nbsp; فْ &nbsp; سْ &nbsp; لْ &nbsp; نْ &nbsp; مْ &nbsp; عْ &nbsp; بْ</div></div></div></body></html>'''
-async def run(out,font_path,font_source):
-    patched=out/'_runtime_font'/'KFGQPC-Uthman-Taha-QURBATA-OPEN-SUKUN.ttf';meta=patch_font(font_path,patched);h=out/'sukun-lab-v5.html';h.write_text(TEMPLATE.format(font_uri=patched.resolve().as_uri()),encoding='utf-8')
-    async with async_playwright() as pw:
-        b=await pw.chromium.launch();p=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2);await p.goto(h.resolve().as_uri(),wait_until='networkidle');await p.evaluate('document.fonts.ready');loaded=await p.evaluate("()=>document.fonts.check('38pt \\\"QURBATA KFGQPC Uthman Taha Patched\\\"','يَكْتُبُ')")
-        if not loaded:raise RuntimeError('PATCHED_KFGQPC_BINDING_FAIL')
-        await p.screenshot(path=str(out/'SUKUN-LAB-V5.png'),full_page=True);await p.pdf(path=str(out/'SUKUN-LAB-V5.pdf'),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await b.close()
-    (out/'SUKUN-LAB-V5.json').write_text(json.dumps({'source_font':font_path.name,'font_source':font_source,'patch':meta,'render_codepoint':'U+0652','gpos_preserved':True},ensure_ascii=False,indent=2),encoding='utf-8');print('SUKUN_LAB_V5_1=PASS');print('BASE_FONT=ACTUAL_KFGQPC_UTHMAN_TAHA');print('RENDER_CODEPOINT=U+0652');print('OPEN_SOURCE='+meta['open_source_glyph']);print('GPOS_ANCHORS=U+0652_ORIGINAL_PRESERVED')
+CANDIDATES=['afii57451','.notdef.3','uni0654','uni0655','.notdef.5','.notdef.6','.notdef.7','afii57453','afii57457','afii57454','.notdef.4','afii57456']
+TEST_BASES=['ب','ك','ل','م']
+def make_probe_font(src:Path,dst:Path,candidate:str):
+ from fontTools.ttLib import TTFont
+ import copy
+ f=TTFont(str(src));cmap={}
+ for t in f['cmap'].tables:
+  if t.isUnicode():cmap.update(t.cmap)
+ target=cmap.get(0x0652)
+ if not target:raise RuntimeError('U0652_NOT_FOUND')
+ if candidate not in f.getGlyphOrder():raise RuntimeError('CANDIDATE_NOT_FOUND='+candidate)
+ if 'glyf' not in f:raise RuntimeError('NOT_TRUETYPE_GLYF')
+ f['glyf'][target]=copy.deepcopy(f['glyf'][candidate]);dst.parent.mkdir(parents=True,exist_ok=True);f.save(str(dst));return target
+async def run(out,src,srcdesc):
+ fonts=[]
+ for i,c in enumerate(CANDIDATES,1):
+  fp=out/'_candidate_fonts'/f'candidate-{i:02d}.ttf';make_probe_font(src,fp,c);fonts.append((i,c,fp))
+ faces=''.join(f'@font-face{{font-family:"Cand{i}";src:url("{fp.resolve().as_uri()}") format("truetype");font-display:block}}' for i,c,fp in fonts)
+ cards=''.join(f'<div class="card"><div class="label">{i:02d} · {c}</div><div class="arab" style="font-family:Cand{i}">{" &nbsp; ".join(x+"ْ" for x in TEST_BASES)}</div><div class="mark" style="font-family:Cand{i}">بْ</div></div>' for i,c,fp in fonts)
+ html=f'''<!doctype html><html><head><meta charset="utf-8"><style>@page{{size:A4;margin:0}}{faces}*{{box-sizing:border-box}}body{{margin:0;font-family:Arial}}.page{{padding:10mm;display:grid;grid-template-columns:1fr 1fr;gap:3mm}}h1{{grid-column:1/-1;font-size:13pt;text-align:center}}.card{{border:1px solid #bbb;padding:3mm;min-height:39mm}}.label{{font-size:8pt}}.arab{{direction:rtl;text-align:center;font-size:31pt;line-height:1.35}}.mark{{direction:rtl;text-align:center;font-size:43pt;line-height:1.1}}</style></head><body><div class="page"><h1>SUKUN LAB V6 — KFGQPC INTERNAL MARK ATLAS</h1>{cards}</div></body></html>'''
+ h=out/'sukun-lab-v6.html';h.write_text(html,encoding='utf-8')
+ async with async_playwright() as pw:
+  b=await pw.chromium.launch();p=await b.new_page(viewport={'width':1584,'height':2240},device_scale_factor=2);await p.goto(h.resolve().as_uri(),wait_until='networkidle');await p.evaluate('document.fonts.ready');await p.screenshot(path=str(out/'SUKUN-LAB-V6.png'),full_page=True);await p.pdf(path=str(out/'SUKUN-LAB-V6.pdf'),format='A4',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await b.close()
+ (out/'SUKUN-LAB-V6.json').write_text(json.dumps({'source_font':src.name,'source':srcdesc,'candidates':CANDIDATES,'instruction':'Choose the numbered candidate whose mark is the approved open sukun shape. No book page modified.'},ensure_ascii=False,indent=2),encoding='utf-8');print('SUKUN_LAB_V6=PASS');print('MODE=INTERNAL_GLYPH_ATLAS');print('CANDIDATE_COUNT='+str(len(CANDIDATES)));print('BOOK_PAGES_MODIFIED=NO')
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--output-dir',default='dist/jilid-2-sukun-lab-v5');ap.add_argument('--font-file');ap.add_argument('--font-zip');a=ap.parse_args();out=Path(a.output_dir);out=out if out.is_absolute() else ROOT/out;out.mkdir(parents=True,exist_ok=True);fp,src=kfgloader.discover_font(a.font_file,a.font_zip,out);asyncio.run(run(out,fp,src))
+ ap=argparse.ArgumentParser();ap.add_argument('--output-dir',default='dist/jilid-2-sukun-lab-v6');ap.add_argument('--font-file');ap.add_argument('--font-zip');a=ap.parse_args();out=Path(a.output_dir);out=out if out.is_absolute() else ROOT/out;out.mkdir(parents=True,exist_ok=True);fp,src=kfgloader.discover_font(a.font_file,a.font_zip,out);asyncio.run(run(out,fp,src))
 if __name__=='__main__':main()
