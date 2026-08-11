@@ -24,19 +24,19 @@ ARABIC_FONT='QURBATA KFGQPC Uthman Taha Naskh'
 p001.P001_CSS += f'''
 .presentation{{display:none!important;height:0!important;flex:0 0 0!important;margin:0!important;padding:0!important}}
 .j2-grid{{display:block!important;height:151mm!important;flex:0 0 151mm!important;padding:.4mm 0 .2mm!important;overflow:hidden!important;direction:ltr!important;box-sizing:border-box!important}}
-.p020-board{{height:100%;display:grid;grid-template-rows:74mm 31mm 41mm;gap:2mm;box-sizing:border-box}}
+.p020-board{{height:100%;display:grid;grid-template-rows:73mm 34mm 39mm;gap:2mm;box-sizing:border-box}}
 .p020-block{{box-sizing:border-box;border:.3mm solid rgba(6,77,55,.55);border-radius:2.2mm;padding:1.2mm 1.5mm;overflow:hidden;background:#fff}}
-.p020-aw{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:16.5mm;gap:1mm 1.8mm;align-content:center}}
-.p020-aw-cell{{display:flex;align-items:center;justify-content:center;gap:2mm;border-bottom:.18mm dotted rgba(6,77,55,.34);font-family:"{ARABIC_FONT}",serif!important;font-feature-settings:'mark' 1,'mkmk' 1;font-size:31pt;line-height:.92;white-space:nowrap;min-width:0}}
+.p020-aw{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:16.2mm;gap:.9mm 1.8mm;align-content:center}}
+.p020-aw-cell{{display:flex;align-items:center;justify-content:center;gap:2mm;border-bottom:.18mm dotted rgba(6,77,55,.34);font-family:"{ARABIC_FONT}",serif!important;font-feature-settings:'mark' 1,'mkmk' 1;font-size:31pt;line-height:.9;white-space:nowrap;min-width:0}}
 .p020-aw-cell:last-child{{grid-column:1 / span 2;width:50%;justify-self:center}}
 .p020-aw-cell .sep{{font-family:Arial,sans-serif!important;font-size:17pt;color:#555;direction:ltr}}
 .p020-aw-cell .split,.p020-aw-cell .joined{{direction:rtl;unicode-bidi:isolate;font-family:"{ARABIC_FONT}",serif!important}}
 .p020-aw-cell .joined{{font-size:34pt}}
-.p020-harakat{{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:repeat(2,1fr);gap:1mm 1.4mm;align-items:stretch}}
-.p020-harakat-cell{{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;font-family:"{ARABIC_FONT}",serif!important;font-feature-settings:'mark' 1,'mkmk' 1;font-size:36pt;line-height:.78;padding-top:.1mm;min-width:0}}
-.p020-harakat-line{{width:82%;height:3.8mm;margin-top:.8mm;border-bottom:.4mm dotted #555}}
-.p020-letters{{display:grid;grid-template-columns:repeat(14,minmax(0,1fr));grid-template-rows:repeat(2,1fr);gap:1mm .4mm;align-items:center;justify-items:center;direction:rtl}}
-.p020-letter{{font-family:"{ARABIC_FONT}",serif!important;font-feature-settings:'mark' 1,'mkmk' 1;font-size:32pt;line-height:.9;direction:rtl;unicode-bidi:isolate}}
+.p020-harakat{{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:repeat(2,1fr);gap:.8mm 1.4mm;align-items:stretch}}
+.p020-harakat-cell{{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;font-family:"{ARABIC_FONT}",serif!important;font-feature-settings:'mark' 1,'mkmk' 1;font-size:36pt;line-height:.74;padding-top:0;min-width:0}}
+.p020-harakat-line{{width:82%;height:3.3mm;margin-top:.45mm;border-bottom:.4mm dotted #555}}
+.p020-letters{{display:grid;grid-template-columns:repeat(14,minmax(0,1fr));grid-template-rows:repeat(2,1fr);gap:.8mm .4mm;align-items:center;justify-items:center;direction:rtl}}
+.p020-letter{{font-family:"{ARABIC_FONT}",serif!important;font-feature-settings:'mark' 1,'mkmk' 1;font-size:32pt;line-height:.86;direction:rtl;unicode-bidi:isolate}}
 '''
 orig=p001.build_page_html
 def separated(s:str)->str: return ' '.join(list(s))
@@ -55,7 +55,7 @@ def build(debug):
     return h[:ts]+targets+h[te:]
 p001.build_page_html=build
 async def render(h,out,debug):
-    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P020-V7.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
+    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P020-V8.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
     async with async_playwright() as pw:
         browser=await pw.chromium.launch(); page=await browser.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
         await page.goto(h.resolve().as_uri(),wait_until='networkidle'); await page.evaluate('document.fonts.ready')
@@ -67,9 +67,9 @@ async def render(h,out,debug):
         report.write_text(json.dumps(issues,ensure_ascii=False,indent=2),encoding='utf-8')
         if issues: raise RuntimeError('P020_LAYOUT_ISSUES='+str(len(issues))+' DETAILS='+repr(issues)+' REPORT='+str(report))
         await page.screenshot(path=str(png/'page-020.png'),full_page=True)
-        pdf=out/'QURBATA-JILID-2-P020-V7-KFGQPC-FULL-PAGE-LARGE.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
+        pdf=out/'QURBATA-JILID-2-P020-V8-KFGQPC-FULL-PAGE-LARGE.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
     return {},report,pdf
 p001.render=render
 def main():
-    rc=v22.main(); print('JILID2_P020_RENDERER_V7=PASS'); print('PAGE=20'); print('ARABIC_FONT_PRIMARY=QURBATA KFGQPC Uthman Taha Naskh'); print('FONT_BINDING_GATE=PASS'); print('PAGE_USAGE=FULL_PROPORTIONAL'); print('AWAILUS_FONT_SIZE=31PT'); print('AWAILUS_JOINED_FONT_SIZE=34PT'); print('HARAKAT_FONT_SIZE=36PT'); print('BARE_LETTER_FONT_SIZE=32PT'); print('AWAILUS_LAYOUT=2_COLUMNS_PER_ROW'); print('HARAKAT_DRILL_OBJECTS=12'); print('BARE_LETTER_REVIEW_COUNT=28'); print('STATUS=P020_FULL_PAGE_LARGE_CANDIDATE_NOT_FROZEN'); return rc
+    rc=v22.main(); print('JILID2_P020_RENDERER_V8=PASS'); print('PAGE=20'); print('ARABIC_FONT_PRIMARY=QURBATA KFGQPC Uthman Taha Naskh'); print('FONT_BINDING_GATE=PASS'); print('PAGE_USAGE=FULL_PROPORTIONAL'); print('BLOCK_HEIGHTS_MM=73|34|39'); print('AWAILUS_FONT_SIZE=31PT'); print('AWAILUS_JOINED_FONT_SIZE=34PT'); print('HARAKAT_FONT_SIZE=36PT'); print('BARE_LETTER_FONT_SIZE=32PT'); print('AWAILUS_LAYOUT=2_COLUMNS_PER_ROW'); print('HARAKAT_DRILL_OBJECTS=12'); print('BARE_LETTER_REVIEW_COUNT=28'); print('STATUS=P020_FULL_PAGE_LARGE_REBALANCED_CANDIDATE_NOT_FROZEN'); return rc
 if __name__=='__main__': raise SystemExit(main())
