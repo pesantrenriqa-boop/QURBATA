@@ -1,33 +1,33 @@
 slot,word,meaning_id,function,competency_status,lexical_status
-1,دِينُ,agama,CURRENT,ALLOWED,CURATED
-2,فِيلُ,gajah,CURRENT,ALLOWED,CURATED
-3,طِينُ,tanah liat,CURRENT,ALLOWED,CURATED
-4,رِيحُ,angin,CURRENT,ALLOWED,CURATED
-5,عِيدُ,hari raya,CURRENT,ALLOWED,CURATED
-6,جِيدُ,leher atau bagian leher,CURRENT,ALLOWED,CURATED
-7,قِيلُ,dikatakan,CURRENT,ALLOWED,CURATED
-8,سِيقُ,digiring,CURRENT,ALLOWED,CURATED
-9,حِيلُ,dihalangi,CURRENT,ALLOWED,CURATED
-10,غِيضُ,dikurangi atau disurutkan,CURRENT,ALLOWED,CURATED
-11,كَبِيرُ,besar,CURRENT,ALLOWED,CURATED
-12,صَغِيرُ,kecil,CURRENT,ALLOWED,CURATED
-13,قَدِيرُ,Maha Kuasa atau sangat mampu,CURRENT,ALLOWED,CURATED
-14,بَصِيرُ,Maha Melihat atau sangat melihat,CURRENT,ALLOWED,CURATED
-15,خَبِيرُ,Maha Mengetahui atau sangat mengetahui,CURRENT,ALLOWED,CURATED
-16,سَمِيعُ,Maha Mendengar atau sangat mendengar,CURRENT,ALLOWED,CURATED
-17,رَحِيمُ,Maha Penyayang atau penyayang,CURRENT,ALLOWED,CURATED
-18,كَرِيمُ,mulia atau dermawan,CURRENT,ALLOWED,CURATED
-19,عَلِيمُ,Maha Mengetahui atau berilmu,CURRENT,ALLOWED,CURATED
-20,حَكِيمُ,Maha Bijaksana atau bijaksana,CURRENT,ALLOWED,CURATED
-21,عَظِيمُ,agung,CURRENT,ALLOWED,CURATED
-22,مَجِيدُ,mulia atau agung,CURRENT,ALLOWED,CURATED
-23,شَهِيدُ,saksi atau syahid,CURRENT,ALLOWED,CURATED
-24,وَكِيلُ,pelindung atau wakil,CURRENT,ALLOWED,CURATED
-25,ثَقِيلُ,berat,CURRENT,ALLOWED,CURATED
-26,جَمِيلُ,indah,CURRENT,ALLOWED,CURATED
-27,قَلِيلُ,sedikit,CURRENT,ALLOWED,CURATED
-28,كَثِيرُ,banyak,CURRENT,ALLOWED,CURATED
-29,طَوِيلُ,panjang,CURRENT,ALLOWED,CURATED
-30,حَمِيدُ,terpuji,CURRENT,ALLOWED,CURATED
-31,نَذِيرُ,pemberi peringatan,CURRENT,ALLOWED,CURATED
-32,بَشِيرُ,pembawa kabar gembira,CURRENT,ALLOWED,CURATED
+1,قَالَ,berkata,CURRENT,ALLOWED,CURATED
+2,مَالَ,condong,CURRENT,ALLOWED,CURATED
+3,نَالَ,memperoleh,CURRENT,ALLOWED,CURATED
+4,نَامَ,tidur,CURRENT,ALLOWED,CURATED
+5,صَامَ,berpuasa,CURRENT,ALLOWED,CURATED
+6,قَامَ,berdiri,CURRENT,ALLOWED,CURATED
+7,تَابَ,bertaubat,CURRENT,ALLOWED,CURATED
+8,عَادَ,kembali,CURRENT,ALLOWED,CURATED
+9,زَادَ,bertambah,CURRENT,ALLOWED,CURATED
+10,سَارَ,berjalan,CURRENT,ALLOWED,CURATED
+11,فَازَ,menang atau beruntung,CURRENT,ALLOWED,CURATED
+12,حَارَ,bingung,CURRENT,ALLOWED,CURATED
+13,كَاتَبَ,saling berkirim tulisan,CURRENT,ALLOWED,CURATED
+14,سَافَرَ,bepergian,CURRENT,ALLOWED,CURATED
+15,شَاهَدَ,menyaksikan,CURRENT,ALLOWED,CURATED
+16,جَاهَدَ,bersungguh-sungguh,CURRENT,ALLOWED,CURATED
+17,عَالَجَ,mengobati atau menangani,CURRENT,ALLOWED,CURATED
+18,قَابَلَ,menemui atau menghadapi,CURRENT,ALLOWED,CURATED
+19,سَاعَدَ,membantu,CURRENT,ALLOWED,CURATED
+20,حَاوَلَ,mencoba,CURRENT,ALLOWED,CURATED
+21,نَادَى,memanggil,CURRENT,ALLOWED,CURATED
+22,بَاعَدَ,menjauhkan,CURRENT,ALLOWED,CURATED
+23,تَعَاوَنَ,saling membantu,CURRENT,ALLOWED,CURATED
+24,تَشَاوَرَ,bermusyawarah,CURRENT,ALLOWED,CURATED
+25,تَقَابَلَ,saling bertemu,CURRENT,ALLOWED,CURATED
+26,تَسَابَقَ,berlomba,CURRENT,ALLOWED,CURATED
+27,تَنَافَسَ,bersaing,CURRENT,ALLOWED,CURATED
+28,تَعَامَلَ,berinteraksi atau bermuamalah,CURRENT,ALLOWED,CURATED
+29,تَكَامَلَ,saling melengkapi,CURRENT,ALLOWED,CURATED
+30,تَجَاوَزَ,melampaui,CURRENT,ALLOWED,CURATED
+31,تَرَاجَعَ,mundur atau meninjau kembali,CURRENT,ALLOWED,CURATED
+32,تَبَادَلَ,saling bertukar,CURRENT,ALLOWED,CURATED
