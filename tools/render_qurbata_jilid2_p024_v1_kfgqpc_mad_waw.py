@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""QURBATA Jilid 2 P024 — K2 U02 mad ya: 2→3-letter ladder; open naskhi sukun overlay."""
+"""QURBATA Jilid 2 P024 — K2 U02 mad ya: 2→3-letter ladder; clipped native KFGQPC ras-al-kha sukun."""
 from __future__ import annotations
 import csv,json,sys,unicodedata
 from pathlib import Path
@@ -34,8 +34,8 @@ p001.P001_CSS += r'''
 .presentation-object{font-size:48pt}.j2-glyph{font-size:44pt}
 .mad-unit{display:inline-block;direction:rtl;unicode-bidi:isolate;font-family:"QURBATA KFGQPC Uthman Taha Naskh",serif!important;font-feature-settings:"mark" 1,"mkmk" 1}
 .j2-object,.presentation-object .arabic-part{position:relative;overflow:visible!important}
-.sukun-open-naskhi{position:absolute!important;z-index:30!important;pointer-events:none!important;overflow:visible!important;display:block!important;color:#000!important}
-.sukun-open-naskhi path{fill:#000!important;stroke:none!important}
+.sukun-native-head{position:absolute!important;z-index:40!important;pointer-events:none!important;overflow:hidden!important;display:block!important;color:#000!important}
+.sukun-native-head-glyph{position:absolute!important;font-family:"QURBATA KFGQPC Uthman Taha Naskh",serif!important;font-weight:400!important;line-height:1!important;color:#000!important;white-space:nowrap!important}
 '''
 orig=p001.build_page_html
 def build(debug):
@@ -48,10 +48,10 @@ def build(debug):
     return h[:ts]+t+h[te:]
 p001.build_page_html=build
 
-# SVG is intentionally independent from Arabic shaping. The path is an open
-# ras-al-kha silhouette (not a circle and not a Unicode combining character).
-# Explicit SVG width/height attributes plus CSS pixels avoid Chromium reporting
-# zero geometry, which caused V6's false visibility failure.
+# Instead of drawing a synthetic c-like path, derive the sukun from the SAME KFGQPC
+# calligraphic geometry: render an oversized dotless ح and crop away its descender,
+# keeping only the open upper head (ras al-kha without dot). The clipped glyph is a
+# separate overlay, so the Arabic word shaping remains untouched.
 SUKUN_OVERLAY_JS=r'''() => {
   const targets=[...document.querySelectorAll('.j2-object,.presentation-object .mad-unit')];
   let count=0;
@@ -68,23 +68,21 @@ SUKUN_OVERLAY_JS=r'''() => {
     const range=document.createRange(); range.setStart(hit,idx); range.setEnd(hit,idx+1);
     const rr=range.getBoundingClientRect(), er=el.getBoundingClientRect();
     const fs=parseFloat(getComputedStyle(el).fontSize)||58;
-    const w=Math.max(12,fs*0.24), h=Math.max(9,fs*0.18);
-    const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
-    svg.classList.add('sukun-open-naskhi'); svg.setAttribute('aria-hidden','true');
-    svg.setAttribute('viewBox','0 0 28 20'); svg.setAttribute('width',String(w)); svg.setAttribute('height',String(h));
-    svg.style.width=w+'px'; svg.style.height=h+'px';
-    svg.style.left=(rr.left-er.left+rr.width*0.50-w*0.50)+'px';
-    svg.style.top=(rr.top-er.top-fs*0.16-h*0.50)+'px';
-    const path=document.createElementNS('http://www.w3.org/2000/svg','path');
-    // Compact open head: thick right horn, shallow crown, tapered left return;
-    // deliberately no lower closing stroke, therefore it cannot read as round sukun.
-    path.setAttribute('d','M25 3.2 C20.7 1.1 14.6 1.0 9.8 2.9 C5.8 4.5 3.4 7.4 3.9 10.4 C4.3 13.0 6.8 15.0 10.6 15.4 L11.7 12.2 C9.2 11.9 7.8 10.8 7.6 9.4 C7.4 7.9 8.8 6.5 11.2 5.6 C14.7 4.3 19.2 4.6 23.0 6.4 Z');
-    svg.appendChild(path); el.appendChild(svg); el.dataset.sukunDone='1'; count++;
+    const boxW=Math.max(12,fs*0.24), boxH=Math.max(8,fs*0.14);
+    const holder=document.createElement('span'); holder.className='sukun-native-head'; holder.setAttribute('aria-hidden','true');
+    holder.style.width=boxW+'px'; holder.style.height=boxH+'px';
+    holder.style.left=(rr.left-er.left+rr.width*0.50-boxW*0.50)+'px';
+    holder.style.top=(rr.top-er.top-fs*0.17-boxH*0.50)+'px';
+    const glyph=document.createElement('span'); glyph.className='sukun-native-head-glyph'; glyph.textContent='ح';
+    glyph.style.fontSize=(fs*0.40)+'px';
+    // Move the full dotless-ha so the crop window reveals ONLY its upper open head.
+    glyph.style.left=(-boxW*0.06)+'px'; glyph.style.top=(-fs*0.095)+'px';
+    holder.appendChild(glyph); el.appendChild(holder); el.dataset.sukunDone='1'; count++;
   }
   return count;
 }'''
 async def render(h,out,debug):
-    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P024-V7.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
+    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P024-V8.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
     async with async_playwright() as pw:
         browser=await pw.chromium.launch(); page=await browser.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
         await page.goto(h.resolve().as_uri(),wait_until='networkidle'); await page.evaluate('document.fonts.ready')
@@ -96,14 +94,14 @@ async def render(h,out,debug):
         if ROUND_SUKUN in raw or UTHMANI_HEAD in raw: raise RuntimeError('P024_INLINE_SUKUN_RENDERED')
         overlay_count=await page.evaluate(SUKUN_OVERLAY_JS)
         if overlay_count!=34: raise RuntimeError(f'P024_SUKUN_OVERLAY_COUNT_FAIL actual={overlay_count} expected=34')
-        visible=await page.evaluate("""()=>[...document.querySelectorAll('.sukun-open-naskhi')].every(e=>{const r=e.getBoundingClientRect(),p=e.querySelector('path');return !!p && r.width>=10 && r.height>=7 && p.getAttribute('d').length>20})""")
+        visible=await page.evaluate("""()=>[...document.querySelectorAll('.sukun-native-head')].every(e=>{const r=e.getBoundingClientRect(),g=e.querySelector('.sukun-native-head-glyph');const gr=g&&g.getBoundingClientRect();return !!g&&r.width>=10&&r.height>=7&&gr&&gr.width>0&&gr.height>0})""")
         if not visible: raise RuntimeError('P024_SUKUN_VISIBILITY_GATE_FAIL')
         metrics,issues=await p001.fit_and_inspect(page); report.write_text(json.dumps(issues,ensure_ascii=False,indent=2),encoding='utf-8')
         if issues: raise RuntimeError('P024_LAYOUT_ISSUES='+str(len(issues))+' REPORT='+str(report))
         await page.screenshot(path=str(png/'page-024.png'),full_page=True)
-        pdf=out/'QURBATA-JILID-2-P024-V7-KFGQPC-MAD-YA-2TO3-OPEN-NASKHI-SUKUN.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
+        pdf=out/'QURBATA-JILID-2-P024-V8-KFGQPC-MAD-YA-2TO3-NATIVE-HEAD-SUKUN.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
     return metrics,report,pdf
 p001.render=render
 def main():
-    rc=v22.main(); print('JILID2_P024_RENDERER_V7=PASS'); print('PAGE=24'); print('K_SEQUENCE=K2'); print('UK_SEQUENCE=J2.K2.U02'); print('SEQUENCE_BEFORE=P021-P023:MAD_ALIF'); print('HEADER_SEQUENCE=دِ|دِي|دِينُ'); print('NEW_COMPETENCY=MAD_YA'); print('P024_STAGE=TWO_TO_THREE_LETTER_LADDER'); print('TWO_LETTER_OBJECTS=16'); print('THREE_LETTER_OBJECTS=16'); print('MAD_PATTERN=KASRA_PLUS_YA'); print('MAD_LENGTH=2_HARAKAT'); print('SUKUN_STYLE=OPEN_NASKHI_RAS_AL_KHA'); print('SUKUN_RENDER_MODE=EXPLICIT_SIZED_SVG_OVERLAY'); print('SUKUN_VISIBILITY_GATE=PASS'); print('INLINE_SUKUN_CODEPOINTS=FORBIDDEN'); print('SUKUN_OVERLAY_COUNT=34'); print('FINAL_HARAKAT_FOR_3_LETTER=DAMMA'); print('ARABIC_FONT_PRIMARY=QURBATA KFGQPC Uthman Taha Naskh'); print('STATUS=P024_2TO3_OPEN_NASKHI_SUKUN_CANDIDATE_NOT_FROZEN'); return rc
+    rc=v22.main(); print('JILID2_P024_RENDERER_V8=PASS'); print('PAGE=24'); print('K_SEQUENCE=K2'); print('UK_SEQUENCE=J2.K2.U02'); print('SEQUENCE_BEFORE=P021-P023:MAD_ALIF'); print('HEADER_SEQUENCE=دِ|دِي|دِينُ'); print('NEW_COMPETENCY=MAD_YA'); print('P024_STAGE=TWO_TO_THREE_LETTER_LADDER'); print('TWO_LETTER_OBJECTS=16'); print('THREE_LETTER_OBJECTS=16'); print('MAD_PATTERN=KASRA_PLUS_YA'); print('MAD_LENGTH=2_HARAKAT'); print('SUKUN_STYLE=CLIPPED_NATIVE_KFGQPC_RAS_AL_KHA'); print('SUKUN_SOURCE_GLYPH=DOTLESS_HA_HEAD_ONLY'); print('SUKUN_RENDER_MODE=CLIPPED_NATIVE_GLYPH_OVERLAY'); print('SUKUN_VISIBILITY_GATE=PASS'); print('SUKUN_OVERLAY_COUNT=34'); print('FINAL_HARAKAT_FOR_3_LETTER=DAMMA'); print('STATUS=P024_2TO3_NATIVE_HEAD_SUKUN_CANDIDATE_NOT_FROZEN'); return rc
 if __name__=='__main__': raise SystemExit(main())
