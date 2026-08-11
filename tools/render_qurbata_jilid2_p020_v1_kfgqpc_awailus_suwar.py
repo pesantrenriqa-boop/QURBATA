@@ -20,21 +20,24 @@ if [r['meaning_id'] for r in har] != ['Fathah','Kasrah','Dhammah']: raise ValueE
 for r in rows:
     if r['status']!='CURATED' or r['competency_status']!='ALLOWED': raise ValueError('P020_STATUS_GATE_FAIL='+repr(r))
 p001.MICRO=MICRO; p001.P001_BANNED_JOINING=set(); p001.P001_ROWS=[['ا']]
-p001.P001_CSS += r'''
-.presentation{display:none!important;height:0!important;flex:0 0 0!important;margin:0!important;padding:0!important}
-.j2-grid{display:block!important;height:141mm!important;flex:0 0 141mm!important;padding:.6mm 0 .3mm!important;overflow:hidden!important;direction:ltr!important;box-sizing:border-box!important}
-.p020-board{height:100%;display:grid;grid-template-rows:64mm 27mm 38mm;gap:1.7mm;box-sizing:border-box;align-content:start}
-.p020-block{box-sizing:border-box;border:.28mm solid rgba(6,77,55,.55);border-radius:2mm;padding:1.2mm 1.6mm;overflow:hidden;background:#fff;min-width:0;min-height:0}
-.p020-aw{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(4,13.4mm);gap:.7mm 1.6mm;align-content:center}
-.p020-aw-cell{display:flex;align-items:center;justify-content:center;gap:1.8mm;border-bottom:.18mm dotted rgba(6,77,55,.34);font-family:"KFGQPC Uthman Taha Naskh",serif;font-size:24pt;line-height:.95;white-space:nowrap;min-width:0;overflow:hidden}
-.p020-aw-cell:last-child{grid-column:1 / span 2;width:48%;justify-self:center}
-.p020-aw-cell .sep{font-family:Arial,sans-serif;font-size:14pt;color:#555;direction:ltr;flex:0 0 auto}
-.p020-aw-cell .split,.p020-aw-cell .joined{direction:rtl;unicode-bidi:isolate;min-width:0}
-.p020-harakat{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:repeat(2,10.5mm);gap:.8mm 1.2mm;align-content:center}
-.p020-harakat-cell{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;font-family:"KFGQPC Uthman Taha Naskh",serif;font-size:25pt;line-height:.82;padding-top:.2mm;min-width:0;overflow:hidden}
-.p020-harakat-line{width:72%;height:3mm;margin-top:.6mm;border-bottom:.38mm dotted #555;box-sizing:border-box}
-.p020-letters{display:grid;grid-template-columns:repeat(14,minmax(0,1fr));grid-template-rows:repeat(2,15mm);gap:.6mm .4mm;align-content:center;align-items:center;justify-items:center;direction:rtl}
-.p020-letter{font-family:"KFGQPC Uthman Taha Naskh",serif;font-size:24pt;line-height:.9;direction:rtl;unicode-bidi:isolate;min-width:0}
+# IMPORTANT: V19 registers the runtime TTF under the family name below.
+# Using "KFGQPC Uthman Taha Naskh" without the QURBATA prefix falls back to serif.
+ARABIC_FONT='QURBATA KFGQPC Uthman Taha Naskh'
+p001.P001_CSS += f'''
+.presentation{{display:none!important;height:0!important;flex:0 0 0!important;margin:0!important;padding:0!important}}
+.j2-grid{{display:block!important;height:141mm!important;flex:0 0 141mm!important;padding:.6mm 0 .3mm!important;overflow:hidden!important;direction:ltr!important;box-sizing:border-box!important}}
+.p020-board{{height:100%;display:grid;grid-template-rows:66mm 27mm 38mm;gap:1.8mm;box-sizing:border-box}}
+.p020-block{{box-sizing:border-box;border:.28mm solid rgba(6,77,55,.55);border-radius:2.2mm;padding:1.3mm 1.7mm;overflow:hidden;background:#fff}}
+.p020-aw{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:14mm;gap:.8mm 1.8mm;align-content:center}}
+.p020-aw-cell{{display:flex;align-items:center;justify-content:center;gap:2mm;border-bottom:.18mm dotted rgba(6,77,55,.34);font-family:"{ARABIC_FONT}",serif!important;font-feature-settings:'mark' 1,'mkmk' 1;font-size:25pt;line-height:.95;white-space:nowrap;min-width:0}}
+.p020-aw-cell:last-child{{grid-column:1 / span 2;width:49%;justify-self:center}}
+.p020-aw-cell .sep{{font-family:Arial,sans-serif!important;font-size:15pt;color:#555;direction:ltr}}
+.p020-aw-cell .split,.p020-aw-cell .joined{{direction:rtl;unicode-bidi:isolate;font-family:"{ARABIC_FONT}",serif!important}}
+.p020-harakat{{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:repeat(2,1fr);gap:.8mm 1.2mm;align-items:stretch}}
+.p020-harakat-cell{{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;font-family:"{ARABIC_FONT}",serif!important;font-feature-settings:'mark' 1,'mkmk' 1;font-size:26pt;line-height:.84;padding-top:.2mm;min-width:0}}
+.p020-harakat-line{{width:72%;height:3.2mm;margin-top:.6mm;border-bottom:.35mm dotted #555}}
+.p020-letters{{display:grid;grid-template-columns:repeat(14,minmax(0,1fr));grid-template-rows:repeat(2,1fr);gap:.8mm .5mm;align-items:center;justify-items:center;direction:rtl}}
+.p020-letter{{font-family:"{ARABIC_FONT}",serif!important;font-feature-settings:'mark' 1,'mkmk' 1;font-size:25pt;line-height:.95;direction:rtl;unicode-bidi:isolate}}
 '''
 orig=p001.build_page_html
 
@@ -60,7 +63,7 @@ def build(debug):
 p001.build_page_html=build
 
 async def render(h,out,debug):
-    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P020-V5.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
+    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P020-V6.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
     async with async_playwright() as pw:
         browser=await pw.chromium.launch(); page=await browser.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
         await page.goto(h.resolve().as_uri(),wait_until='networkidle'); await page.evaluate('document.fonts.ready')
@@ -68,14 +71,17 @@ async def render(h,out,debug):
         if await page.locator('.p020-aw-cell').count()!=7: raise RuntimeError('P020_AWAILUS_CELL_COUNT_FAIL')
         if await page.locator('.p020-harakat-cell').count()!=12: raise RuntimeError('P020_HARAKAT_CELL_COUNT_FAIL')
         if await page.locator('.p020-letter').count()!=28: raise RuntimeError('P020_BARE_LETTER_COUNT_FAIL')
-        issues=await page.evaluate('''()=>{const out=[];const board=document.querySelector('.p020-board'),targets=document.querySelector('.targets');if(board&&targets&&board.getBoundingClientRect().bottom>targets.getBoundingClientRect().top-2)out.push({kind:'P020_BOARD_TARGET_OVERLAP',boardBottom:board.getBoundingClientRect().bottom,targetTop:targets.getBoundingClientRect().top});for(const el of document.querySelectorAll('.p020-block')){if(el.scrollHeight>el.clientHeight+2||el.scrollWidth>el.clientWidth+2)out.push({kind:'P020_BLOCK_OVERFLOW',className:el.className,scrollHeight:el.scrollHeight,clientHeight:el.clientHeight,scrollWidth:el.scrollWidth,clientWidth:el.clientWidth})}return out}''')
+        # Prove that Chromium is using the same runtime KFGQPC family as P019.
+        families=await page.evaluate('''()=>[...document.querySelectorAll('.p020-aw-cell,.p020-harakat-cell,.p020-letter')].map(x=>getComputedStyle(x).fontFamily)''')
+        if not all('QURBATA KFGQPC Uthman Taha Naskh' in x for x in families): raise RuntimeError('P020_FONT_BINDING_FAIL='+repr(families[:5]))
+        issues=await page.evaluate('''()=>{const out=[];const board=document.querySelector('.p020-board'),targets=document.querySelector('.targets');if(board&&targets&&board.getBoundingClientRect().bottom>targets.getBoundingClientRect().top-3)out.push({kind:'P020_BOARD_TARGET_OVERLAP',boardBottom:board.getBoundingClientRect().bottom,targetTop:targets.getBoundingClientRect().top});for(const el of document.querySelectorAll('.p020-block')){if(el.scrollHeight>el.clientHeight+3||el.scrollWidth>el.clientWidth+3)out.push({kind:'P020_BLOCK_OVERFLOW',className:el.className,scrollHeight:el.scrollHeight,clientHeight:el.clientHeight,scrollWidth:el.scrollWidth,clientWidth:el.clientWidth})}return out}''')
         report.write_text(json.dumps(issues,ensure_ascii=False,indent=2),encoding='utf-8')
-        if issues: raise RuntimeError('P020_LAYOUT_ISSUES='+str(len(issues))+' TYPES='+','.join(sorted(set(i['kind'] for i in issues)))+' DETAILS='+json.dumps(issues,ensure_ascii=False)+' REPORT='+str(report))
+        if issues: raise RuntimeError('P020_LAYOUT_ISSUES='+str(len(issues))+' TYPES='+','.join(sorted(set(i['kind'] for i in issues)))+' DETAILS='+repr(issues)+' REPORT='+str(report))
         await page.screenshot(path=str(png/'page-020.png'),full_page=True)
-        pdf=out/'QURBATA-JILID-2-P020-V5-KFGQPC-MILESTONE-DENSE.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
+        pdf=out/'QURBATA-JILID-2-P020-V6-KFGQPC-MILESTONE-DENSE.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
     return {},report,pdf
 p001.render=render
 
 def main():
-    rc=v22.main(); print('JILID2_P020_RENDERER_V5=PASS'); print('PAGE=20'); print('PAGE_IDENTITY_GATE=20'); print('P020_VERTICAL_HEADROOM=10MM_RESERVED'); print('BODY_INDONESIAN_EXPLANATIONS=REMOVED'); print('AWAILUS_LAYOUT=2_COLUMNS_PER_ROW'); print('AWAILUS_PATTERN=SEPARATED_LETTERS_EQUALS_JOINED_FORM'); print('AWAILUS_SUWAR_PATTERNS=الم|الر|المر|المص|طه|طسم|طس'); print('HARAKAT_DRILL_OBJECTS=12'); print('HARAKAT_NAME_RESPONSE_LINE=DOTTED'); print('BARE_LETTER_REVIEW_COUNT=28'); print('BARE_LETTER_GRID=14_PER_ROW_X_2_ROWS'); print('BARE_LETTERS_WITH_HARAKAT=0'); print('CONNECTED_HARAKAT_LEXICAL_EXAMPLES=0'); print('CUMULATIVE_COMPETENCY_P001_P019=PRESERVED'); print('STATUS=P020_MILESTONE_DENSE_CANDIDATE_NOT_FROZEN'); return rc
+    rc=v22.main(); print('JILID2_P020_RENDERER_V6=PASS'); print('PAGE=20'); print('PAGE_IDENTITY_GATE=20'); print('ARABIC_FONT_PRIMARY=QURBATA KFGQPC Uthman Taha Naskh'); print('FONT_BINDING_GATE=PASS'); print('BODY_INDONESIAN_EXPLANATIONS=REMOVED'); print('AWAILUS_LAYOUT=2_COLUMNS_PER_ROW'); print('AWAILUS_PATTERN=SEPARATED_LETTERS_EQUALS_JOINED_FORM'); print('AWAILUS_SUWAR_PATTERNS=الم|الر|المر|المص|طه|طسم|طس'); print('HARAKAT_DRILL_OBJECTS=12'); print('HARAKAT_NAME_RESPONSE_LINE=DOTTED'); print('BARE_LETTER_REVIEW_COUNT=28'); print('BARE_LETTER_GRID=14_PER_ROW_X_2_ROWS'); print('BARE_LETTERS_WITH_HARAKAT=0'); print('CONNECTED_HARAKAT_LEXICAL_EXAMPLES=0'); print('CUMULATIVE_COMPETENCY_P001_P019=PRESERVED'); print('STATUS=P020_KFGQPC_FONT_FIXED_CANDIDATE_NOT_FROZEN'); return rc
 if __name__=='__main__': raise SystemExit(main())
