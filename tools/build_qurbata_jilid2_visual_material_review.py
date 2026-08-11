@@ -1,48 +1,39 @@
 #!/usr/bin/env python3
-"""Build a review PDF from actual QURBATA Jilid 2 visual renderers.
+"""QURBATA Jilid 2 visual-material audit gate.
 
-This intentionally does NOT turn planning Markdown into book pages.
-It renders only participant-facing visual material that has a real renderer/dataset.
-Current verified visual coverage:
-- P001-P020: foundation renderer v3 (actual 24-object practice pages)
-- P021-P040: reported as NOT YET VISUAL-RENDERED by this audit builder
+IMPORTANT: the old P001-P020 foundation renderer is Amiri/Amiri Quran and is LEGACY.
+It must not be presented as the current QURBATA visual review after the project moved
+to KFGQPC Uthman Taha. This gate deliberately refuses to render that legacy PDF.
 
-The output PDF therefore contains only real material pages; missing visual pages are
-listed in a manifest, never replaced with documentation text.
+Current visual baseline:
+- Arabic base letters: KFGQPC Uthman Taha
+- sukun: frozen V7.6, U+0652 positioning with Amiri U+06E1 outline, Y=-1700
+- legacy Amiri foundation PDF: rejected
+
+Use this audit before building a full current-edition visual PDF. A new KFGQPC renderer
+must be bound to the current page/material dataset first.
 """
-from __future__ import annotations
-import argparse, subprocess, sys
 from pathlib import Path
-
 ROOT=Path(__file__).resolve().parents[1]
-DEFAULT_OUT=ROOT/'dist/jilid-2-visual-material-review'
-FOUNDATION_SCRIPT=ROOT/'tools/render_qurbata_jilid2_foundation_v3.py'
-FOUNDATION_OUT=DEFAULT_OUT/'p001-p020'
-FOUNDATION_PDF=FOUNDATION_OUT/'QURBATA-JILID-2-P001-P020-FOUNDATION-CANDIDATE-V1.pdf'
-
-
-def run(cmd):
-    p=subprocess.run(cmd,cwd=ROOT,text=True,encoding='utf-8',errors='replace')
-    if p.returncode!=0: raise SystemExit(p.returncode)
-
+OUT=ROOT/'dist/jilid-2-visual-material-review'
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--output-dir',default=str(DEFAULT_OUT.relative_to(ROOT)));a=ap.parse_args()
-    out=Path(a.output_dir);out=out if out.is_absolute() else ROOT/out;out.mkdir(parents=True,exist_ok=True)
-    foundation_out=out/'p001-p020'
-    run([sys.executable,str(FOUNDATION_SCRIPT),'--output-dir',str(foundation_out.relative_to(ROOT))])
-    pdf=foundation_out/'QURBATA-JILID-2-P001-P020-FOUNDATION-CANDIDATE-V1.pdf'
-    if not pdf.exists(): raise FileNotFoundError(pdf)
-    manifest=out/'JILID-2-VISUAL-MATERIAL-COVERAGE.tsv'
-    lines=['page\tvisual_status\tsource']
-    for n in range(1,21): lines.append(f'P{n:03d}\tRENDERED_REAL_MATERIAL\trender_qurbata_jilid2_foundation_v3.py')
-    for n in range(21,41): lines.append(f'P{n:03d}\tNO_VERIFIED_VISUAL_RENDERER_IN_CURRENT_PIPELINE\t')
-    manifest.write_text('\n'.join(lines)+'\n',encoding='utf-8')
-    print('JILID2_VISUAL_MATERIAL_REVIEW=PASS')
-    print('REAL_VISUAL_PAGES=20')
-    print('REAL_VISUAL_RANGE=P001-P020')
-    print('NOT_SUBSTITUTED_WITH_MARKDOWN=P021-P040')
+    OUT.mkdir(parents=True,exist_ok=True)
+    manifest=OUT/'JILID-2-CURRENT-VISUAL-BASELINE.txt'
+    manifest.write_text(
+        'STATUS=BLOCK_LEGACY_VISUAL_REVIEW\n'
+        'LEGACY_RENDERER=tools/render_qurbata_jilid2_foundation_v3.py\n'
+        'LEGACY_FONT=AMIRI_QURAN\n'
+        'CURRENT_BASE_FONT=KFGQPC_UTHMAN_TAHA\n'
+        'SUKUN_BASELINE=V7.6_FROZEN\n'
+        'SUKUN_Y_SHIFT=-1700\n'
+        'ACTION=BUILD_NEW_KFGQPC_CURRENT_EDITION_RENDERER\n',encoding='utf-8')
+    print('JILID2_VISUAL_MATERIAL_REVIEW=BLOCKED_LEGACY')
+    print('REASON=FOUNDATION_V3_USES_AMIRI_QURAN_NOT_CURRENT_KFGQPC_UTHMAN_TAHA')
+    print('CURRENT_BASE_FONT=KFGQPC_UTHMAN_TAHA')
+    print('SUKUN_BASELINE=V7.6_FROZEN')
+    print('SUKUN_Y_SHIFT=-1700')
+    print('NEXT=RENDER_CURRENT_EDITION_FROM_KFGQPC_PIPELINE')
     print(f'MANIFEST={manifest.relative_to(ROOT)}')
-    print(f'PDF={pdf.relative_to(ROOT)}')
-    return 0
+    return 2
 if __name__=='__main__':raise SystemExit(main())
