@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""QURBATA Jilid 2 P021 — acquisition of mad alif with cumulative P001-P020 review."""
+"""QURBATA Jilid 2 P021 — pure acquisition of mad alif; mixed review deferred to P022."""
 from __future__ import annotations
 import csv,json,sys,unicodedata
 from pathlib import Path
@@ -13,39 +13,31 @@ with MAP.open(encoding='utf-8-sig',newline='') as f: meta=next(csv.DictReader(f)
 with MICRO.open(encoding='utf-8-sig',newline='') as f: stairs=list(csv.DictReader(f))
 with LEX.open(encoding='utf-8-sig',newline='') as f: lex=list(csv.DictReader(f))
 if len(stairs)!=10 or len(lex)!=32: raise ValueError('P021_REGISTRY_INVALID')
-MARKS=set(chr(c) for c in range(0x064B,0x0660))|{'ـ'}
-FORBIDDEN_MARKS=set('ًٌٍّْ')
+MARKS=set(chr(c) for c in range(0x064B,0x0660))|{'ـ'}; FORBIDDEN_MARKS=set('ًٌٍّْ')
 def bases(s): return ''.join(ch for ch in unicodedata.normalize('NFC',s) if ch not in MARKS and unicodedata.category(ch)!='Mn')
 def has_mad_alif(word):
     chars=list(word)
-    for i,ch in enumerate(chars):
-        if ch=='ا' and i>=2 and chars[i-1]=='َ': return True
-    return False
+    return any(ch=='ا' and i>=2 and chars[i-1]=='َ' for i,ch in enumerate(chars))
 for r in lex:
     if len(bases(r['word']))!=3 or not r['meaning_id'].strip() or r['lexical_status']!='CURATED' or r['competency_status']!='ALLOWED': raise ValueError('P021_SEMANTIC_GATE_FAIL='+repr(r))
+    if r['function']!='CURRENT': raise ValueError('P021_MIXED_REVIEW_FORBIDDEN='+repr(r))
+    if not has_mad_alif(r['word']): raise ValueError('P021_MAD_ALIF_REQUIRED='+repr(r))
     if any(m in r['word'] for m in FORBIDDEN_MARKS): raise ValueError('P021_UPPER_COMPETENCY_MARK_LEAKAGE='+repr(r))
-current=[r for r in lex if r['function']=='CURRENT']; review=[r for r in lex if r['function']=='MUROJAAH']
-if len(current)!=18 or len(review)!=14: raise ValueError('P021_ACQUISITION_REVIEW_RATIO_INVALID')
-missing=[r['word'] for r in current if not has_mad_alif(r['word'])]
-if missing: raise ValueError('P021_CURRENT_MAD_ALIF_MISSING='+repr(missing))
-# Review objects intentionally contain no mad alif so old short-vowel competence remains visible.
-review_leak=[r['word'] for r in review if 'ا' in bases(r['word'])]
-if review_leak: raise ValueError('P021_REVIEW_MAD_ALIF_LEAK='+repr(review_leak))
-p001.MICRO=MICRO; p001.P001_BANNED_JOINING=set()
-words=[r['word'] for r in lex]; p001.P001_ROWS=[words[i:i+4] for i in range(0,32,4)]
+p001.MICRO=MICRO; p001.P001_BANNED_JOINING=set(); words=[r['word'] for r in lex]; p001.P001_ROWS=[words[i:i+4] for i in range(0,32,4)]
 p001.P001_CSS += r'''.presentation-object{font-size:46pt}.j2-glyph{font-size:42pt}.mad-unit{display:inline-block;direction:rtl;unicode-bidi:isolate;font-family:"QURBATA KFGQPC Uthman Taha Naskh",serif!important;font-feature-settings:"mark" 1,"mkmk" 1}'''
 orig=p001.build_page_html
 def build(debug):
     h=orig(debug).replace('<div class="page-number">01</div>','<div class="page-number">21</div>',1)
     s=h.index('<section class="presentation">'); e=h.index('</section>',s)+len('</section>')
-    pres=f'''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object"><span class="arabic-part" lang="ar">{p001.arabic_html('قَالَ')}</span><span class="arrow">←</span><span class="arabic-part mad-unit" lang="ar">بَا</span><span class="arrow">←</span><span class="arabic-part" lang="ar">{p001.arabic_html('بَ')}</span></div></div></section>'''
+    # Pedagogical header follows one stable letter family: ba -> baa -> baana.
+    pres='''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object"><span class="arabic-part" lang="ar">بَانَ</span><span class="arrow">←</span><span class="arabic-part mad-unit" lang="ar">بَا</span><span class="arrow">←</span><span class="arabic-part" lang="ar">بَ</span></div></div></section>'''
     h=h[:s]+pres+h[e:]
     ts=h.index('<section class="targets">'); te=h.index('</section>',ts)+len('</section>')
     t=f'''<section class="targets"><div class="target-item"><span>Kompetensi</span><strong>{meta['CompetencyCode']} — {meta['Competency']}</strong></div><div class="target-item"><span>Unit Kompetensi</span><strong>{meta['UnitCompetencyCode']} — {meta['UnitCompetency']}</strong></div><div class="target-item"><span>Unit Murojaah</span><strong>{meta['UnitMurojaahCode']} — {meta['UnitMurojaah']}</strong></div><div class="target-item"><span>Tangga</span><strong>{stairs[0]['StairCode']}–{stairs[-1]['StairCode']}</strong></div></section>'''
     return h[:ts]+t+h[te:]
 p001.build_page_html=build
 async def render(h,out,debug):
-    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P021-V1.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
+    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P021-V2.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
     async with async_playwright() as pw:
         browser=await pw.chromium.launch(); page=await browser.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
         await page.goto(h.resolve().as_uri(),wait_until='networkidle'); await page.evaluate('document.fonts.ready')
@@ -56,11 +48,9 @@ async def render(h,out,debug):
         metrics,issues=await p001.fit_and_inspect(page); report.write_text(json.dumps(issues,ensure_ascii=False,indent=2),encoding='utf-8')
         if issues: raise RuntimeError('P021_LAYOUT_ISSUES='+str(len(issues))+' REPORT='+str(report))
         await page.screenshot(path=str(png/'page-021.png'),full_page=True)
-        pdf=out/'QURBATA-JILID-2-P021-V1-KFGQPC-MAD-ALIF-CUMULATIVE.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
+        pdf=out/'QURBATA-JILID-2-P021-V2-KFGQPC-MAD-ALIF-FOCUS.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
     return metrics,report,pdf
 p001.render=render
 def main():
-    text=''.join(r['word'] for r in review); counts={'KASRA':text.count('ِ'),'DAMMA':text.count('ُ')}
-    if counts['KASRA']<7 or counts['DAMMA']<7: raise ValueError('P021_REVIEW_HARAKAT_BALANCE_FAIL='+repr(counts))
-    rc=v22.main(); print('JILID2_P021_RENDERER_V1=PASS'); print('PAGE=21'); print('PAGE_IDENTITY_GATE=21'); print('COMPETENCY=K2|Membaca mad asli dasar'); print('UNIT_COMPETENCY=J2.K2.U01|Akuisisi mad alif pada kata bermakna'); print('NEW_COMPETENCY=MAD_ALIF'); print('MAD_PATTERN=FATHA_PLUS_ALIF'); print('MAD_LENGTH=2_HARAKAT'); print('CURRENT_OBJECTS=18'); print('MUROJAAH_OBJECTS=14'); print('THREE_LETTER_WITH_MEANING=32'); print('UPPER_COMPETENCY_MARKS=SUKUN|TANWIN|SHADDA_FORBIDDEN'); print('REVIEW_KASRA_COUNT='+str(counts['KASRA'])); print('REVIEW_DAMMA_COUNT='+str(counts['DAMMA'])); print('CUMULATIVE_COMPETENCY_P001_P020=PRESERVED'); print('ARABIC_FONT_PRIMARY=QURBATA KFGQPC Uthman Taha Naskh'); print('FONT_BINDING_GATE=PASS'); print('STATUS=P021_MAD_ALIF_CANDIDATE_NOT_FROZEN'); return rc
+    rc=v22.main(); print('JILID2_P021_RENDERER_V2=PASS'); print('PAGE=21'); print('HEADER_SEQUENCE=بَ|بَا|بَانَ'); print('NEW_COMPETENCY=MAD_ALIF'); print('MAD_PATTERN=FATHA_PLUS_ALIF'); print('MAD_LENGTH=2_HARAKAT'); print('CURRENT_OBJECTS=32'); print('MUROJAAH_OBJECTS=0'); print('P021_POLICY=PURE_MAD_ALIF_ACQUISITION'); print('MIXED_CUMULATIVE_REVIEW=DEFERRED_TO_P022'); print('THREE_LETTER_WITH_MEANING=32'); print('UPPER_COMPETENCY_MARKS=SUKUN|TANWIN|SHADDA_FORBIDDEN'); print('ARABIC_FONT_PRIMARY=QURBATA KFGQPC Uthman Taha Naskh'); print('FONT_BINDING_GATE=PASS'); print('STATUS=P021_MAD_ALIF_FOCUS_CANDIDATE_NOT_FROZEN'); return rc
 if __name__=='__main__': raise SystemExit(main())
