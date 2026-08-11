@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""QURBATA Jilid 2 P024 — K2 U02 mad ya: KFGQPC words + clipped Amiri open-sukun mark."""
+"""QURBATA Jilid 2 P024 — K2 U02 mad ya: clean KFGQPC/Uthman Taha baseline, no synthetic sukun artifacts."""
 from __future__ import annotations
 import csv,json,sys,unicodedata
 from pathlib import Path
@@ -29,16 +29,15 @@ for r in lex:
     if n==3 and (not r['meaning_id'].strip() or not r['word'].endswith('ُ')): raise ValueError('P024_THREE_LETTER_SEMANTIC_OR_FINAL_DAMMA_FAIL='+repr(r))
     if any(m in r['word'] for m in FORBIDDEN_MARKS): raise ValueError('P024_UPPER_COMPETENCY_MARK_LEAKAGE='+repr(r))
 if lengths!={2:16,3:16}: raise ValueError('P024_LADDER_DISTRIBUTION_FAIL='+repr(lengths))
-# Keep words exactly in KFGQPC. Sukun is drawn separately only after word shaping.
+# V14 safety reset: preserve the exact KFGQPC shaping that is visually accepted.
+# No standalone combining marks, SVG, carrier glyphs, clipping, DOM Range anchoring,
+# or manual overlay positioning are allowed. This removes the visible '-' / stray
+# marks produced by V12-V13. Mad ya remains readable from kasra + ya itself.
 p001.MICRO=MICRO; p001.P001_BANNED_JOINING=set(); words=[r['word'] for r in lex]; p001.P001_ROWS=[words[i:i+4] for i in range(0,32,4)]
 p001.P001_CSS += r'''
 .presentation-object{font-size:48pt}.j2-glyph{font-size:44pt}
 .j2-glyph,.presentation-object,.presentation-object .arabic-part,.mad-unit{font-family:"QURBATA KFGQPC Uthman Taha Naskh","KFGQPC Uthman Taha Naskh",serif!important;font-feature-settings:'mark' 1,'mkmk' 1;font-kerning:normal;text-rendering:optimizeLegibility}
 .mad-unit{display:inline-block;direction:rtl;unicode-bidi:isolate}
-.page{position:relative}
-.sukun-mark-layer{position:absolute;inset:0;pointer-events:none;z-index:90;overflow:visible}
-.sukun-carrier-box{position:absolute;display:block;overflow:hidden;pointer-events:none;transform:translate(-50%,-50%)}
-.sukun-carrier-glyph{position:absolute;display:block;font-family:'Amiri Quran','Amiri',serif!important;font-weight:400;line-height:1;color:#000;white-space:nowrap;direction:rtl;unicode-bidi:isolate}
 '''
 orig=p001.build_page_html
 def build(debug):
@@ -50,61 +49,24 @@ def build(debug):
     t=f'''<section class="targets"><div class="target-item"><span>Kompetensi</span><strong>{meta['CompetencyCode']} — {meta['Competency']}</strong></div><div class="target-item"><span>Unit Kompetensi</span><strong>{meta['UnitCompetencyCode']} — {meta['UnitCompetency']}</strong></div><div class="target-item"><span>Unit Murojaah</span><strong>{meta['UnitMurojaahCode']} — {meta['UnitMurojaah']}</strong></div><div class="target-item"><span>Tangga</span><strong>{stairs[0]['StairCode']}–{stairs[-1]['StairCode']}</strong></div></section>'''
     return h[:ts]+t+h[te:]
 p001.build_page_html=build
-
-# U+06E1 is a combining mark and may have zero standalone advance. V13 therefore
-# gives it a real Arabic carrier (tatweel) in Amiri Quran, then clips away the carrier
-# baseline and exposes only the high open-sukun glyph. KFGQPC words remain untouched.
-SUKUN_LAYER_JS=r'''() => {
-  const page=document.querySelector('.page'); if(!page) return {count:0,placed:[]};
-  let layer=page.querySelector('.sukun-mark-layer'); if(layer) layer.remove();
-  layer=document.createElement('div'); layer.className='sukun-mark-layer'; page.appendChild(layer);
-  const pr=page.getBoundingClientRect(); const placed=[];
-  const targets=[...document.querySelectorAll('.j2-glyph,.presentation-object .mad-unit')];
-  for(const el of targets){
-    const walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); let node,hit=null,idx=-1;
-    while((node=walker.nextNode())){
-      const t=node.nodeValue||'';
-      for(let i=1;i<t.length;i++){ if(t[i]==='ي'&&t[i-1]==='ِ'){hit=node;idx=i;break;} }
-      if(hit) break;
-    }
-    if(!hit) continue;
-    const range=document.createRange(); range.setStart(hit,idx); range.setEnd(hit,idx+1);
-    const rects=[...range.getClientRects()].filter(r=>r.width>0&&r.height>0); if(!rects.length) continue;
-    const rr=rects[0], fs=parseFloat(getComputedStyle(el).fontSize)||58;
-    const box=document.createElement('span'); box.className='sukun-carrier-box'; box.setAttribute('aria-hidden','true');
-    const bw=Math.max(10,fs*0.22), bh=Math.max(7,fs*0.14);
-    box.style.width=bw+'px'; box.style.height=bh+'px';
-    box.style.left=(rr.left-pr.left+rr.width*0.52)+'px';
-    box.style.top=(rr.top-pr.top-fs*0.13)+'px';
-    const glyph=document.createElement('span'); glyph.className='sukun-carrier-glyph';
-    glyph.textContent='ـ\u06E1'; glyph.style.fontSize=(fs*0.40)+'px';
-    glyph.style.left=(-fs*0.02)+'px'; glyph.style.top=(-fs*0.27)+'px';
-    box.appendChild(glyph); layer.appendChild(box);
-    placed.push({x:rr.left-pr.left+rr.width*0.52,y:rr.top-pr.top-fs*0.13,w:bw,h:bh});
-  }
-  return {count:placed.length,placed};
-}'''
 async def render(h,out,debug):
-    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P024-V13.json';png=out/'png';png.mkdir(parents=True,exist_ok=True)
+    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P024-V14.json';png=out/'png';png.mkdir(parents=True,exist_ok=True)
     async with async_playwright() as pw:
         browser=await pw.chromium.launch();page=await browser.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
         await page.goto(h.resolve().as_uri(),wait_until='networkidle');await page.evaluate('document.fonts.ready')
         if await page.locator('.j2-object').count()!=32: raise RuntimeError('P024_OBJECT_COUNT_INVALID')
         if (await page.locator('.page-number').inner_text()).strip()!='24': raise RuntimeError('P024_PAGE_IDENTITY_FAIL')
         body=await page.locator('body').inner_text()
-        if OPEN_SUKUN in body or ROUND_SUKUN in body: raise RuntimeError('P024_INLINE_SUKUN_FORBIDDEN')
+        if OPEN_SUKUN in body or ROUND_SUKUN in body: raise RuntimeError('P024_SYNTHETIC_SUKUN_FORBIDDEN')
+        if await page.locator('[class*="sukun-"]').count()!=0: raise RuntimeError('P024_SUKUN_ARTIFACT_CLASS_FORBIDDEN')
         families=await page.evaluate("""()=>[...document.querySelectorAll('.j2-glyph,.presentation-object .arabic-part')].map(e=>getComputedStyle(e).fontFamily)""")
         if not families or any('QURBATA KFGQPC Uthman Taha Naskh' not in f for f in families): raise RuntimeError('P024_BASE_FONT_REGRESSION='+repr(families[:4]))
-        placed=await page.evaluate(SUKUN_LAYER_JS)
-        if placed['count']!=34: raise RuntimeError(f"P024_SUKUN_MARK_COUNT_FAIL actual={placed['count']} expected=34")
-        visible=await page.evaluate("""()=>[...document.querySelectorAll('.sukun-carrier-box')].every(e=>{const r=e.getBoundingClientRect(),g=e.querySelector('.sukun-carrier-glyph'),gr=g&&g.getBoundingClientRect();return r.width>=9&&r.height>=6&&gr&&gr.width>0&&gr.height>0})""")
-        if not visible: raise RuntimeError('P024_SUKUN_VISIBILITY_FAIL')
-        metrics,issues=await p001.fit_and_inspect(page);report.write_text(json.dumps({'layout_issues':issues,'sukun_positions':placed['placed']},ensure_ascii=False,indent=2),encoding='utf-8')
+        metrics,issues=await p001.fit_and_inspect(page);report.write_text(json.dumps({'layout_issues':issues,'synthetic_sukun':'disabled'},ensure_ascii=False,indent=2),encoding='utf-8')
         if issues: raise RuntimeError('P024_LAYOUT_ISSUES='+str(len(issues))+' REPORT='+str(report))
         await page.screenshot(path=str(png/'page-024.png'),full_page=True)
-        pdf=out/'QURBATA-JILID-2-P024-V13-KFGQPC-WORDS-AMIRI-CLIPPED-OPEN-SUKUN.pdf';await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await browser.close()
+        pdf=out/'QURBATA-JILID-2-P024-V14-KFGQPC-CLEAN-BASELINE.pdf';await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await browser.close()
     return metrics,report,pdf
 p001.render=render
 def main():
-    rc=v22.main();print('JILID2_P024_RENDERER_V13=PASS');print('PAGE=24');print('HEADER_SEQUENCE=دِ|دِي|دِينُ');print('P024_STAGE=TWO_TO_THREE_LETTER_LADDER');print('TWO_LETTER_OBJECTS=16');print('THREE_LETTER_OBJECTS=16');print('BASE_ARABIC_FONT=KFGQPC_UTHMAN_TAHA');print('SUKUN_CODEPOINT=U+06E1');print('SUKUN_MARK_FONT=AMIRI_QURAN_ONLY');print('SUKUN_CARRIER=TATWEEL_HIDDEN_BY_CLIP');print('SUKUN_RENDER_MODE=PAGE_LAYER_CLIPPED_CARRIER');print('INLINE_SUKUN=DISABLED');print('WORD_FONT_FALLBACK=DISABLED');print('SUKUN_MARK_COUNT=34');print('STATUS=P024_HYBRID_SUKUN_CANDIDATE_NOT_FROZEN');return rc
+    rc=v22.main();print('JILID2_P024_RENDERER_V14=PASS');print('PAGE=24');print('HEADER_SEQUENCE=دِ|دِي|دِينُ');print('P024_STAGE=TWO_TO_THREE_LETTER_LADDER');print('TWO_LETTER_OBJECTS=16');print('THREE_LETTER_OBJECTS=16');print('BASE_ARABIC_FONT=KFGQPC_UTHMAN_TAHA');print('SYNTHETIC_SUKUN=DISABLED');print('SVG_OVERLAY=DISABLED');print('DOM_RANGE_OVERLAY=DISABLED');print('CARRIER_GLYPH=DISABLED');print('MANUAL_POSITIONING=DISABLED');print('STATUS=P024_CLEAN_BASELINE_FOR_SUKUN_RESEARCH_NOT_FROZEN');return rc
 if __name__=='__main__': raise SystemExit(main())
