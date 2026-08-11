@@ -1,0 +1,33 @@
+slot,word,meaning_id,function,competency_status,lexical_status
+1,نُورُ,cahaya,CURRENT,ALLOWED,CURATED
+2,سُوقُ,pasar,CURRENT,ALLOWED,CURATED
+3,جُوعُ,lapar,CURRENT,ALLOWED,CURATED
+4,رُوحُ,ruh,CURRENT,ALLOWED,CURATED
+5,حُوتُ,ikan besar,CURRENT,ALLOWED,CURATED
+6,فُوزُ,kemenangan,CURRENT,ALLOWED,CURATED
+7,طُولُ,panjang,CURRENT,ALLOWED,CURATED
+8,عُودُ,kayu atau tongkat,CURRENT,ALLOWED,CURATED
+9,سُورُ,dinding atau surah,CURRENT,ALLOWED,CURATED
+10,ثُومُ,bawang putih,CURRENT,ALLOWED,CURATED
+11,رَسُولُ,utusan,CURRENT,ALLOWED,CURATED
+12,غَفُورُ,Maha Pengampun atau sangat pengampun,CURRENT,ALLOWED,CURATED
+13,شَكُورُ,sangat bersyukur,CURRENT,ALLOWED,CURATED
+14,صَبُورُ,sangat sabar,CURRENT,ALLOWED,CURATED
+15,حَسُودُ,pendengki,CURRENT,ALLOWED,CURATED
+16,دُخُولُ,masuk,CURRENT,ALLOWED,CURATED
+17,خُرُوجُ,keluar,CURRENT,ALLOWED,CURATED
+18,سُجُودُ,sujud,CURRENT,ALLOWED,CURATED
+19,رُكُوعُ,rukuk,CURRENT,ALLOWED,CURATED
+20,قُعُودُ,duduk,CURRENT,ALLOWED,CURATED
+21,نُجُومُ,bintang-bintang,CURRENT,ALLOWED,CURATED
+22,بُرُوجُ,menara-menara atau gugusan bintang,CURRENT,ALLOWED,CURATED
+23,قُلُوبُ,hati-hati,CURRENT,ALLOWED,CURATED
+24,وُجُوهُ,wajah-wajah,CURRENT,ALLOWED,CURATED
+25,بُيُوتُ,rumah-rumah,CURRENT,ALLOWED,CURATED
+26,عُيُونُ,mata-mata atau mata air,CURRENT,ALLOWED,CURATED
+27,حُدُودُ,batas-batas,CURRENT,ALLOWED,CURATED
+28,عُقُولُ,akal-akal,CURRENT,ALLOWED,CURATED
+29,جُنُودُ,pasukan-pasukan,CURRENT,ALLOWED,CURATED
+30,حُضُورُ,kehadiran,CURRENT,ALLOWED,CURATED
+31,وُقُوفُ,berdiri atau berhenti,CURRENT,ALLOWED,CURATED
+32,شُهُودُ,saksi-saksi atau penyaksian,CURRENT,ALLOWED,CURATED
