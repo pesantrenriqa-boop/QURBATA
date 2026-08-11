@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""QURBATA Jilid 2 P024 — mad ya. Correct harakat semantics: mad ya has no sukun mark; sukun is applied only to true consonant-sukun examples."""
+"""QURBATA Jilid 2 P024 — mad ya. Correct harakat semantics: mad ya has no explicit sukun mark. True consonant-sukun units use the validated QURBATA open-sukun engine."""
 from __future__ import annotations
 import csv,json,sys,unicodedata
 from pathlib import Path
@@ -23,11 +23,9 @@ for r in lex:
     if 'ِي' not in r['word']: raise ValueError('P024_MAD_YA_REQUIRED='+repr(r))
     if n==3 and not r['word'].endswith('ُ'): raise ValueError('P024_FINAL_DAMMA_REQUIRED='+repr(r))
 if lengths!={2:16,3:16}: raise ValueError('P024_DISTRIBUTION_FAIL='+repr(lengths))
-# IMPORTANT: In mad asli, the madd letter ya is ساكنة in grammar/tajwid terms but
-# its mushaf sign is normally not drawn as an explicit sukun above ya. The V15/V16
-# corruption came from inserting U+06E1 after every mad-ya. P024 therefore keeps
-# kasra + bare ya for the mad unit. Open ras-al-kha U+06E1 is reserved for future
-# actual consonant-sukun units, using the validated native KFGQPC Lab-B model.
+# Mad ya remains kasra + bare ya. Explicit sukun is not drawn on the madd letter.
+# For future TRUE consonant-sukun material, use tools/qurbata_open_sukun_engine.py:
+# KFGQPC base glyphs + U+0652 native positioning + Amiri U+06E1 open outline.
 p001.MICRO=MICRO; p001.P001_BANNED_JOINING=set(); words=[r['word'] for r in lex]; p001.P001_ROWS=[words[i:i+4] for i in range(0,32,4)]
 p001.P001_CSS += r'''
 .presentation-object{font-size:48pt}.j2-glyph{font-size:44pt}
@@ -53,12 +51,12 @@ async def render(h,out,debug):
         body=await p.locator('body').inner_text()
         if OPEN_SUKUN in body or ROUND_SUKUN in body: raise RuntimeError('P024_EXPLICIT_SUKUN_FORBIDDEN_ON_MAD_YA')
         if await p.locator('[class*="sukun-"]').count(): raise RuntimeError('P024_OVERLAY_FORBIDDEN')
-        metrics,issues=await p001.fit_and_inspect(p); report.write_text(json.dumps({'layout_issues':issues,'mad_ya_explicit_sukun':False,'future_consonant_sukun_model':'KFGQPC+U+06E1 native'},ensure_ascii=False,indent=2),encoding='utf-8')
+        metrics,issues=await p001.fit_and_inspect(p); report.write_text(json.dumps({'layout_issues':issues,'mad_ya_explicit_sukun':False,'future_consonant_sukun_model':'tools/qurbata_open_sukun_engine.py — KFGQPC U+0652 anchors + Amiri U+06E1 outline'},ensure_ascii=False,indent=2),encoding='utf-8')
         if issues: raise RuntimeError('P024_LAYOUT_ISSUES='+str(len(issues))+' REPORT='+str(report))
         await p.screenshot(path=str(png/'page-024.png'),full_page=True)
         pdf=out/'QURBATA-JILID-2-P024-V17-MAD-YA-CLEAN.pdf'; await p.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await b.close()
     return metrics,report,pdf
 p001.render=render
 def main():
-    rc=v22.main(); print('JILID2_P024_RENDERER_V17=PASS'); print('PAGE=24'); print('MAD_YA_EXPLICIT_SUKUN=NO'); print('MAD_PATTERN=KASRA_PLUS_BARE_YA'); print('FONT=KFGQPC_UTHMAN_TAHA'); print('FUTURE_TRUE_SUKUN_MODEL=KFGQPC_PLUS_U+06E1_NATIVE'); print('OVERLAY=DISABLED'); print('STATUS=P024_MAD_YA_CLEAN_CANDIDATE_NOT_FROZEN'); return rc
+    rc=v22.main(); print('JILID2_P024_RENDERER_V17=PASS'); print('PAGE=24'); print('MAD_YA_EXPLICIT_SUKUN=NO'); print('MAD_PATTERN=KASRA_PLUS_BARE_YA'); print('FONT=KFGQPC_UTHMAN_TAHA'); print('FUTURE_TRUE_SUKUN_ENGINE=QURBATA_OPEN_SUKUN_ENGINE'); print('OVERLAY=DISABLED'); print('STATUS=P024_MAD_YA_CLEAN_CANDIDATE_NOT_FROZEN'); return rc
 if __name__=='__main__': raise SystemExit(main())
