@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""QURBATA Jilid 2 P024 — K2 U02 mad ya: two-to-three-letter ladder with standalone open Uthmani sukun glyph."""
+"""QURBATA Jilid 2 P024 — K2 U02 mad ya: two-to-three-letter ladder with visible open Naskhi sukun."""
 from __future__ import annotations
 import csv,json,sys,unicodedata
 from pathlib import Path
@@ -35,13 +35,13 @@ p001.P001_CSS += r'''
 .presentation-object{font-size:48pt}.j2-glyph{font-size:44pt}
 .mad-unit{display:inline-block;direction:rtl;unicode-bidi:isolate;font-family:"QURBATA KFGQPC Uthman Taha Naskh",serif!important;font-feature-settings:"mark" 1,"mkmk" 1}
 .j2-object,.presentation-object .arabic-part{position:relative;overflow:visible!important}
-.sukun-uthmani-open{position:absolute;z-index:9;pointer-events:none;font-family:"QURBATA KFGQPC Uthman Taha Naskh",serif!important;font-weight:400;line-height:1;color:currentColor;transform:translate(-50%,-50%);transform-origin:center center;unicode-bidi:isolate}
+.sukun-naskhi-visible{position:absolute!important;z-index:99!important;pointer-events:none!important;overflow:visible!important;display:block!important;transform:translate(-50%,-50%);transform-origin:center center}
+.sukun-naskhi-visible path{fill:none!important;stroke:#000!important;stroke-width:2.1!important;stroke-linecap:round!important;stroke-linejoin:round!important;vector-effect:non-scaling-stroke!important}
 '''
 orig=p001.build_page_html
 def build(debug):
     h=orig(debug).replace('<div class="page-number">01</div>','<div class="page-number">24</div>',1)
     s=h.index('<section class="presentation">'); e=h.index('</section>',s)+len('</section>')
-    # Ladder: short kasrah -> two letters -> meaningful three-letter word.
     pres='''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object"><span class="arabic-part mad-unit" lang="ar">دِينُ</span><span class="arrow">←</span><span class="arabic-part mad-unit" lang="ar">دِي</span><span class="arrow">←</span><span class="arabic-part" lang="ar">دِ</span></div></div></section>'''
     h=h[:s]+pres+h[e:]
     ts=h.index('<section class="targets">'); te=h.index('</section>',ts)+len('</section>')
@@ -49,8 +49,8 @@ def build(debug):
     return h[:ts]+t+h[te:]
 p001.build_page_html=build
 
-# Use the font's own U+06E1 glyph as a standalone positioned overlay. It is never
-# inserted into the Arabic text run, so KFGQPC shaping/GPOS remains intact.
+# Visible open ra's al-kha sukun. The mark is drawn outside the Arabic shaping run,
+# so KFGQPC shaping and GPOS remain native and untouched.
 SUKUN_OVERLAY_JS=r'''() => {
   const targets=[...document.querySelectorAll('.j2-object,.presentation-object .mad-unit')];
   let count=0;
@@ -67,18 +67,21 @@ SUKUN_OVERLAY_JS=r'''() => {
     const range=document.createRange(); range.setStart(hit,idx); range.setEnd(hit,idx+1);
     const rr=range.getBoundingClientRect(), er=el.getBoundingClientRect();
     const fs=parseFloat(getComputedStyle(el).fontSize)||58;
-    const mark=document.createElement('span');
-    mark.className='sukun-uthmani-open'; mark.setAttribute('aria-hidden','true');
-    mark.textContent='\u06E1';
-    mark.style.fontSize=(fs*0.31)+'px';
-    mark.style.left=(rr.left-er.left+rr.width*0.52)+'px';
-    mark.style.top=(rr.top-er.top-fs*0.105)+'px';
-    el.appendChild(mark); el.dataset.sukunDone='1'; count++;
+    const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
+    svg.classList.add('sukun-naskhi-visible'); svg.setAttribute('viewBox','0 0 16 12'); svg.setAttribute('aria-hidden','true');
+    const w=Math.max(11,fs*0.22), h=Math.max(8,fs*0.16);
+    svg.style.width=w+'px'; svg.style.height=h+'px';
+    svg.style.left=(rr.left-er.left+rr.width*0.53)+'px';
+    svg.style.top=(rr.top-er.top+fs*0.055)+'px';
+    const path=document.createElementNS('http://www.w3.org/2000/svg','path');
+    // Open head-of-kha: open terminal at lower-right; deliberately not a circle.
+    path.setAttribute('d','M13.7 2.1 C10.7 1.45 7.2 1.75 5.0 3.55 C3.05 5.15 2.75 7.35 4.15 9.05 C5.15 10.2 6.65 10.55 8.15 10.05');
+    svg.appendChild(path); el.appendChild(svg); el.dataset.sukunDone='1'; count++;
   }
   return count;
 }'''
 async def render(h,out,debug):
-    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P024-V4.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
+    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P024-V5.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
     async with async_playwright() as pw:
         browser=await pw.chromium.launch(); page=await browser.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
         await page.goto(h.resolve().as_uri(),wait_until='networkidle'); await page.evaluate('document.fonts.ready')
@@ -90,14 +93,15 @@ async def render(h,out,debug):
         if ROUND_SUKUN in raw or UTHMANI_HEAD in raw: raise RuntimeError('P024_INLINE_SUKUN_RENDERED')
         overlay_count=await page.evaluate(SUKUN_OVERLAY_JS)
         if overlay_count!=34: raise RuntimeError(f'P024_SUKUN_OVERLAY_COUNT_FAIL actual={overlay_count} expected=34')
-        glyphs=await page.locator('.sukun-uthmani-open').count()
-        if glyphs!=34: raise RuntimeError(f'P024_OPEN_SUKUN_GLYPH_COUNT_FAIL actual={glyphs} expected=34')
+        visible=await page.evaluate("""()=>[...document.querySelectorAll('.sukun-naskhi-visible')].map(x=>{const r=x.getBoundingClientRect();const p=x.querySelector('path');return {w:r.width,h:r.height,stroke:getComputedStyle(p).stroke,sw:getComputedStyle(p).strokeWidth,display:getComputedStyle(x).display}})""")
+        bad=[x for x in visible if x['w']<8 or x['h']<6 or x['display']=='none' or x['stroke'] in ('none','rgba(0, 0, 0, 0)')]
+        if bad: raise RuntimeError('P024_SUKUN_VISIBILITY_GATE_FAIL='+repr(bad[:3]))
         metrics,issues=await p001.fit_and_inspect(page); report.write_text(json.dumps(issues,ensure_ascii=False,indent=2),encoding='utf-8')
         if issues: raise RuntimeError('P024_LAYOUT_ISSUES='+str(len(issues))+' REPORT='+str(report))
         await page.screenshot(path=str(png/'page-024.png'),full_page=True)
-        pdf=out/'QURBATA-JILID-2-P024-V4-KFGQPC-MAD-YA-2TO3-UTHMANI-SUKUN.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
+        pdf=out/'QURBATA-JILID-2-P024-V5-KFGQPC-MAD-YA-2TO3-VISIBLE-OPEN-SUKUN.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
     return metrics,report,pdf
 p001.render=render
 def main():
-    rc=v22.main(); print('JILID2_P024_RENDERER_V4=PASS'); print('PAGE=24'); print('K_SEQUENCE=K2'); print('UK_SEQUENCE=J2.K2.U02'); print('SEQUENCE_BEFORE=P021-P023:MAD_ALIF'); print('HEADER_SEQUENCE=دِ|دِي|دِينُ'); print('NEW_COMPETENCY=MAD_YA'); print('P024_STAGE=TWO_TO_THREE_LETTER_LADDER'); print('TWO_LETTER_OBJECTS=16'); print('THREE_LETTER_OBJECTS=16'); print('THREE_LETTER_SEMANTIC_POLICY=REQUIRED'); print('MAD_PATTERN=KASRA_PLUS_YA'); print('MAD_LENGTH=2_HARAKAT'); print('SUKUN_STYLE=KFGQPC_U+06E1_STANDALONE_OPEN_GLYPH'); print('SUKUN_RENDER_MODE=POSITIONED_OVERLAY_NON_DESTRUCTIVE'); print('INLINE_SUKUN_CODEPOINTS=FORBIDDEN'); print('SUKUN_OVERLAY_COUNT=34'); print('FINAL_HARAKAT_FOR_3_LETTER=DAMMA'); print('ARABIC_FONT_PRIMARY=QURBATA KFGQPC Uthman Taha Naskh'); print('FONT_BINDING_GATE=PASS'); print('STATUS=P024_2TO3_OPEN_SUKUN_CANDIDATE_NOT_FROZEN'); return rc
+    rc=v22.main(); print('JILID2_P024_RENDERER_V5=PASS'); print('PAGE=24'); print('K_SEQUENCE=K2'); print('UK_SEQUENCE=J2.K2.U02'); print('HEADER_SEQUENCE=دِ|دِي|دِينُ'); print('P024_STAGE=TWO_TO_THREE_LETTER_LADDER'); print('TWO_LETTER_OBJECTS=16'); print('THREE_LETTER_OBJECTS=16'); print('SUKUN_STYLE=OPEN_NASKHI_RAS_AL_KHA'); print('SUKUN_RENDER_MODE=VISIBLE_SVG_OVERLAY_NON_DESTRUCTIVE'); print('SUKUN_VISIBILITY_GATE=PASS'); print('INLINE_SUKUN_CODEPOINTS=FORBIDDEN'); print('SUKUN_OVERLAY_COUNT=34'); print('FINAL_HARAKAT_FOR_3_LETTER=DAMMA'); print('ARABIC_FONT_PRIMARY=QURBATA KFGQPC Uthman Taha Naskh'); print('STATUS=P024_VISIBLE_OPEN_SUKUN_CANDIDATE_NOT_FROZEN'); return rc
 if __name__=='__main__': raise SystemExit(main())
