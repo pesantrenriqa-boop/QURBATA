@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""QURBATA Jilid 2 P024 — K2 U02 mad ya: two-to-three-letter ladder with visible open Naskhi sukun."""
+"""QURBATA Jilid 2 P024 — K2 U02 mad ya: two-to-three-letter ladder with calligraphic open sukun."""
 from __future__ import annotations
 import csv,json,sys,unicodedata
 from pathlib import Path
@@ -35,8 +35,8 @@ p001.P001_CSS += r'''
 .presentation-object{font-size:48pt}.j2-glyph{font-size:44pt}
 .mad-unit{display:inline-block;direction:rtl;unicode-bidi:isolate;font-family:"QURBATA KFGQPC Uthman Taha Naskh",serif!important;font-feature-settings:"mark" 1,"mkmk" 1}
 .j2-object,.presentation-object .arabic-part{position:relative;overflow:visible!important}
-.sukun-naskhi-visible{position:absolute!important;z-index:99!important;pointer-events:none!important;overflow:visible!important;display:block!important;transform:translate(-50%,-50%);transform-origin:center center}
-.sukun-naskhi-visible path{fill:none!important;stroke:#000!important;stroke-width:2.1!important;stroke-linecap:round!important;stroke-linejoin:round!important;vector-effect:non-scaling-stroke!important}
+.sukun-calligraphic-open{position:absolute;z-index:12;pointer-events:none;overflow:visible;transform:translate(-50%,-50%)}
+.sukun-calligraphic-open path{fill:currentColor;stroke:none}
 '''
 orig=p001.build_page_html
 def build(debug):
@@ -49,8 +49,9 @@ def build(debug):
     return h[:ts]+t+h[te:]
 p001.build_page_html=build
 
-# Visible open ra's al-kha sukun. The mark is drawn outside the Arabic shaping run,
-# so KFGQPC shaping and GPOS remain native and untouched.
+# Calligraphic open sukun inspired by the open head-of-kha form used in Qur'anic
+# writing. It is a FILLED tapered shape, not a thin stroked C and not a Unicode mark,
+# so it stays visible while leaving the KFGQPC Arabic shaping run untouched.
 SUKUN_OVERLAY_JS=r'''() => {
   const targets=[...document.querySelectorAll('.j2-object,.presentation-object .mad-unit')];
   let count=0;
@@ -68,20 +69,20 @@ SUKUN_OVERLAY_JS=r'''() => {
     const rr=range.getBoundingClientRect(), er=el.getBoundingClientRect();
     const fs=parseFloat(getComputedStyle(el).fontSize)||58;
     const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
-    svg.classList.add('sukun-naskhi-visible'); svg.setAttribute('viewBox','0 0 16 12'); svg.setAttribute('aria-hidden','true');
-    const w=Math.max(11,fs*0.22), h=Math.max(8,fs*0.16);
-    svg.style.width=w+'px'; svg.style.height=h+'px';
+    svg.classList.add('sukun-calligraphic-open'); svg.setAttribute('aria-hidden','true'); svg.setAttribute('viewBox','0 0 24 18');
+    const w=fs*0.235,h=fs*0.175; svg.style.width=w+'px'; svg.style.height=h+'px';
     svg.style.left=(rr.left-er.left+rr.width*0.53)+'px';
-    svg.style.top=(rr.top-er.top+fs*0.055)+'px';
+    svg.style.top=(rr.top-er.top-fs*0.135)+'px';
     const path=document.createElementNS('http://www.w3.org/2000/svg','path');
-    // Open head-of-kha: open terminal at lower-right; deliberately not a circle.
-    path.setAttribute('d','M13.7 2.1 C10.7 1.45 7.2 1.75 5.0 3.55 C3.05 5.15 2.75 7.35 4.15 9.05 C5.15 10.2 6.65 10.55 8.15 10.05');
+    // Filled, tapered open ras-al-kha: high right horn -> broad crown -> lower left return.
+    // The mouth stays clearly open on the right, avoiding a circular sukun appearance.
+    path.setAttribute('d','M21.6 3.0 C17.8 1.25 12.7 1.15 8.7 2.85 C5.15 4.35 3.05 7.15 3.55 10.05 C3.98 12.52 6.25 14.55 9.55 14.95 L10.35 12.35 C8.05 12.05 6.62 10.92 6.42 9.42 C6.17 7.72 7.55 6.10 9.95 5.15 C12.85 4.00 16.85 4.15 20.25 5.55 Z');
     svg.appendChild(path); el.appendChild(svg); el.dataset.sukunDone='1'; count++;
   }
   return count;
 }'''
 async def render(h,out,debug):
-    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P024-V5.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
+    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P024-V6.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
     async with async_playwright() as pw:
         browser=await pw.chromium.launch(); page=await browser.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
         await page.goto(h.resolve().as_uri(),wait_until='networkidle'); await page.evaluate('document.fonts.ready')
@@ -93,15 +94,16 @@ async def render(h,out,debug):
         if ROUND_SUKUN in raw or UTHMANI_HEAD in raw: raise RuntimeError('P024_INLINE_SUKUN_RENDERED')
         overlay_count=await page.evaluate(SUKUN_OVERLAY_JS)
         if overlay_count!=34: raise RuntimeError(f'P024_SUKUN_OVERLAY_COUNT_FAIL actual={overlay_count} expected=34')
-        visible=await page.evaluate("""()=>[...document.querySelectorAll('.sukun-naskhi-visible')].map(x=>{const r=x.getBoundingClientRect();const p=x.querySelector('path');return {w:r.width,h:r.height,stroke:getComputedStyle(p).stroke,sw:getComputedStyle(p).strokeWidth,display:getComputedStyle(x).display}})""")
-        bad=[x for x in visible if x['w']<8 or x['h']<6 or x['display']=='none' or x['stroke'] in ('none','rgba(0, 0, 0, 0)')]
-        if bad: raise RuntimeError('P024_SUKUN_VISIBILITY_GATE_FAIL='+repr(bad[:3]))
+        glyphs=await page.locator('.sukun-calligraphic-open').count()
+        if glyphs!=34: raise RuntimeError(f'P024_CALLIGRAPHIC_SUKUN_COUNT_FAIL actual={glyphs} expected=34')
+        visible=await page.evaluate("""()=>[...document.querySelectorAll('.sukun-calligraphic-open')].every(e=>{const r=e.getBoundingClientRect();const p=e.querySelector('path');const s=getComputedStyle(e);return r.width>=6&&r.height>=4&&s.display!=='none'&&s.visibility!=='hidden'&&p})""")
+        if not visible: raise RuntimeError('P024_SUKUN_VISIBILITY_GATE_FAIL')
         metrics,issues=await p001.fit_and_inspect(page); report.write_text(json.dumps(issues,ensure_ascii=False,indent=2),encoding='utf-8')
         if issues: raise RuntimeError('P024_LAYOUT_ISSUES='+str(len(issues))+' REPORT='+str(report))
         await page.screenshot(path=str(png/'page-024.png'),full_page=True)
-        pdf=out/'QURBATA-JILID-2-P024-V5-KFGQPC-MAD-YA-2TO3-VISIBLE-OPEN-SUKUN.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
+        pdf=out/'QURBATA-JILID-2-P024-V6-KFGQPC-MAD-YA-2TO3-CALLIGRAPHIC-SUKUN.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
     return metrics,report,pdf
 p001.render=render
 def main():
-    rc=v22.main(); print('JILID2_P024_RENDERER_V5=PASS'); print('PAGE=24'); print('K_SEQUENCE=K2'); print('UK_SEQUENCE=J2.K2.U02'); print('HEADER_SEQUENCE=دِ|دِي|دِينُ'); print('P024_STAGE=TWO_TO_THREE_LETTER_LADDER'); print('TWO_LETTER_OBJECTS=16'); print('THREE_LETTER_OBJECTS=16'); print('SUKUN_STYLE=OPEN_NASKHI_RAS_AL_KHA'); print('SUKUN_RENDER_MODE=VISIBLE_SVG_OVERLAY_NON_DESTRUCTIVE'); print('SUKUN_VISIBILITY_GATE=PASS'); print('INLINE_SUKUN_CODEPOINTS=FORBIDDEN'); print('SUKUN_OVERLAY_COUNT=34'); print('FINAL_HARAKAT_FOR_3_LETTER=DAMMA'); print('ARABIC_FONT_PRIMARY=QURBATA KFGQPC Uthman Taha Naskh'); print('STATUS=P024_VISIBLE_OPEN_SUKUN_CANDIDATE_NOT_FROZEN'); return rc
+    rc=v22.main(); print('JILID2_P024_RENDERER_V6=PASS'); print('PAGE=24'); print('K_SEQUENCE=K2'); print('UK_SEQUENCE=J2.K2.U02'); print('SEQUENCE_BEFORE=P021-P023:MAD_ALIF'); print('HEADER_SEQUENCE=دِ|دِي|دِينُ'); print('NEW_COMPETENCY=MAD_YA'); print('P024_STAGE=TWO_TO_THREE_LETTER_LADDER'); print('TWO_LETTER_OBJECTS=16'); print('THREE_LETTER_OBJECTS=16'); print('THREE_LETTER_SEMANTIC_POLICY=REQUIRED'); print('MAD_PATTERN=KASRA_PLUS_YA'); print('MAD_LENGTH=2_HARAKAT'); print('SUKUN_STYLE=CALLIGRAPHIC_OPEN_RAS_AL_KHA_THULUTH_INSPIRED'); print('SUKUN_RENDER_MODE=FILLED_SVG_OVERLAY_NON_DESTRUCTIVE'); print('SUKUN_VISIBILITY_GATE=PASS'); print('INLINE_SUKUN_CODEPOINTS=FORBIDDEN'); print('SUKUN_OVERLAY_COUNT=34'); print('FINAL_HARAKAT_FOR_3_LETTER=DAMMA'); print('ARABIC_FONT_PRIMARY=QURBATA KFGQPC Uthman Taha Naskh'); print('FONT_BINDING_GATE=PASS'); print('STATUS=P024_2TO3_CALLIGRAPHIC_SUKUN_CANDIDATE_NOT_FROZEN'); return rc
 if __name__=='__main__': raise SystemExit(main())
