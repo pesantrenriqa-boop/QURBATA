@@ -22,19 +22,19 @@ for r in rows:
 p001.MICRO=MICRO; p001.P001_BANNED_JOINING=set(); p001.P001_ROWS=[['ا']]
 p001.P001_CSS += r'''
 .presentation{display:none!important;height:0!important;flex:0 0 0!important;margin:0!important;padding:0!important}
-.j2-grid{display:block!important;height:151mm!important;flex:0 0 151mm!important;padding:1.2mm 0 .6mm!important;overflow:hidden!important;direction:ltr!important}
-.p020-board{height:100%;display:grid;grid-template-rows:72mm 31mm 43mm;gap:2.5mm}
-.p020-block{border:.28mm solid rgba(6,77,55,.55);border-radius:2.2mm;padding:2.2mm 2.5mm;overflow:hidden;background:#fff}
-.p020-aw{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:15.5mm;gap:1.4mm 2.2mm;align-content:center}
-.p020-aw-cell{display:flex;align-items:center;justify-content:center;gap:2.6mm;border-bottom:.18mm dotted rgba(6,77,55,.34);font-family:"KFGQPC Uthman Taha Naskh",serif;font-size:27pt;line-height:1;white-space:nowrap}
+.j2-grid{display:block!important;height:143mm!important;flex:0 0 143mm!important;padding:.8mm 0 .4mm!important;overflow:hidden!important;direction:ltr!important;box-sizing:border-box!important}
+.p020-board{height:100%;display:grid;grid-template-rows:68mm 28mm 39mm;gap:2mm;box-sizing:border-box}
+.p020-block{box-sizing:border-box;border:.28mm solid rgba(6,77,55,.55);border-radius:2.2mm;padding:1.6mm 2mm;overflow:hidden;background:#fff}
+.p020-aw{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:14.7mm;gap:1mm 2mm;align-content:center}
+.p020-aw-cell{display:flex;align-items:center;justify-content:center;gap:2.2mm;border-bottom:.18mm dotted rgba(6,77,55,.34);font-family:"KFGQPC Uthman Taha Naskh",serif;font-size:26pt;line-height:1;white-space:nowrap;min-width:0}
 .p020-aw-cell:last-child{grid-column:1 / span 2;width:49%;justify-self:center}
-.p020-aw-cell .sep{font-family:Arial,sans-serif;font-size:17pt;color:#555;direction:ltr}
+.p020-aw-cell .sep{font-family:Arial,sans-serif;font-size:16pt;color:#555;direction:ltr}
 .p020-aw-cell .split,.p020-aw-cell .joined{direction:rtl;unicode-bidi:isolate}
-.p020-harakat{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:repeat(2,1fr);gap:1.6mm 2mm;align-items:stretch}
-.p020-harakat-cell{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;font-family:"KFGQPC Uthman Taha Naskh",serif;font-size:29pt;line-height:.9;padding-top:1mm}
-.p020-harakat-line{width:78%;height:5mm;margin-top:1.6mm;border-bottom:.45mm dotted #555}
-.p020-letters{display:grid;grid-template-columns:repeat(14,minmax(0,1fr));grid-template-rows:repeat(2,1fr);gap:1.5mm .8mm;align-items:center;justify-items:center;direction:rtl}
-.p020-letter{font-family:"KFGQPC Uthman Taha Naskh",serif;font-size:28pt;line-height:1;direction:rtl;unicode-bidi:isolate}
+.p020-harakat{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:repeat(2,1fr);gap:1.1mm 1.5mm;align-items:stretch}
+.p020-harakat-cell{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;font-family:"KFGQPC Uthman Taha Naskh",serif;font-size:27pt;line-height:.88;padding-top:.5mm;min-width:0}
+.p020-harakat-line{width:76%;height:3.8mm;margin-top:1mm;border-bottom:.4mm dotted #555}
+.p020-letters{display:grid;grid-template-columns:repeat(14,minmax(0,1fr));grid-template-rows:repeat(2,1fr);gap:1mm .6mm;align-items:center;justify-items:center;direction:rtl}
+.p020-letter{font-family:"KFGQPC Uthman Taha Naskh",serif;font-size:26pt;line-height:1;direction:rtl;unicode-bidi:isolate}
 '''
 orig=p001.build_page_html
 
@@ -60,7 +60,7 @@ def build(debug):
 p001.build_page_html=build
 
 async def render(h,out,debug):
-    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P020-V3.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
+    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P020-V4.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
     async with async_playwright() as pw:
         browser=await pw.chromium.launch(); page=await browser.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
         await page.goto(h.resolve().as_uri(),wait_until='networkidle'); await page.evaluate('document.fonts.ready')
@@ -68,14 +68,14 @@ async def render(h,out,debug):
         if await page.locator('.p020-aw-cell').count()!=7: raise RuntimeError('P020_AWAILUS_CELL_COUNT_FAIL')
         if await page.locator('.p020-harakat-cell').count()!=12: raise RuntimeError('P020_HARAKAT_CELL_COUNT_FAIL')
         if await page.locator('.p020-letter').count()!=28: raise RuntimeError('P020_BARE_LETTER_COUNT_FAIL')
-        issues=await page.evaluate('''()=>{const out=[];const board=document.querySelector('.p020-board'),targets=document.querySelector('.targets');if(board&&targets&&board.getBoundingClientRect().bottom>targets.getBoundingClientRect().top+2)out.push({kind:'P020_BOARD_TARGET_OVERLAP'});for(const el of document.querySelectorAll('.p020-block')){const r=el.getBoundingClientRect();if(el.scrollHeight>el.clientHeight+2||el.scrollWidth>el.clientWidth+2)out.push({kind:'P020_BLOCK_OVERFLOW',className:el.className,scrollHeight:el.scrollHeight,clientHeight:el.clientHeight})}return out}''')
+        issues=await page.evaluate('''()=>{const out=[];const board=document.querySelector('.p020-board'),targets=document.querySelector('.targets');if(board&&targets&&board.getBoundingClientRect().bottom>targets.getBoundingClientRect().top-2)out.push({kind:'P020_BOARD_TARGET_OVERLAP',boardBottom:board.getBoundingClientRect().bottom,targetTop:targets.getBoundingClientRect().top});for(const el of document.querySelectorAll('.p020-block')){if(el.scrollHeight>el.clientHeight+2||el.scrollWidth>el.clientWidth+2)out.push({kind:'P020_BLOCK_OVERFLOW',className:el.className,scrollHeight:el.scrollHeight,clientHeight:el.clientHeight,scrollWidth:el.scrollWidth,clientWidth:el.clientWidth})}return out}''')
         report.write_text(json.dumps(issues,ensure_ascii=False,indent=2),encoding='utf-8')
-        if issues: raise RuntimeError('P020_LAYOUT_ISSUES='+str(len(issues))+' REPORT='+str(report))
+        if issues: raise RuntimeError('P020_LAYOUT_ISSUES='+str(len(issues))+' TYPES='+','.join(sorted(set(i['kind'] for i in issues)))+' REPORT='+str(report))
         await page.screenshot(path=str(png/'page-020.png'),full_page=True)
-        pdf=out/'QURBATA-JILID-2-P020-V3-KFGQPC-MILESTONE-DENSE.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
+        pdf=out/'QURBATA-JILID-2-P020-V4-KFGQPC-MILESTONE-DENSE.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
     return {},report,pdf
 p001.render=render
 
 def main():
-    rc=v22.main(); print('JILID2_P020_RENDERER_V3=PASS'); print('PAGE=20'); print('PAGE_IDENTITY_GATE=20'); print('BODY_INDONESIAN_EXPLANATIONS=REMOVED'); print('AWAILUS_LAYOUT=2_COLUMNS_PER_ROW'); print('AWAILUS_PATTERN=SEPARATED_LETTERS_EQUALS_JOINED_FORM'); print('AWAILUS_SUWAR_PATTERNS=الم|الر|المر|المص|طه|طسم|طس'); print('HARAKAT_DRILL_OBJECTS=12'); print('HARAKAT_NAME_RESPONSE_LINE=DOTTED'); print('BARE_LETTER_REVIEW_COUNT=28'); print('BARE_LETTER_GRID=14_PER_ROW_X_2_ROWS'); print('BARE_LETTERS_WITH_HARAKAT=0'); print('CONNECTED_HARAKAT_LEXICAL_EXAMPLES=0'); print('CUMULATIVE_COMPETENCY_P001_P019=PRESERVED'); print('STATUS=P020_MILESTONE_DENSE_CANDIDATE_NOT_FROZEN'); return rc
+    rc=v22.main(); print('JILID2_P020_RENDERER_V4=PASS'); print('PAGE=20'); print('PAGE_IDENTITY_GATE=20'); print('P020_VERTICAL_HEADROOM=8MM_RESERVED'); print('BODY_INDONESIAN_EXPLANATIONS=REMOVED'); print('AWAILUS_LAYOUT=2_COLUMNS_PER_ROW'); print('AWAILUS_PATTERN=SEPARATED_LETTERS_EQUALS_JOINED_FORM'); print('AWAILUS_SUWAR_PATTERNS=الم|الر|المر|المص|طه|طسم|طس'); print('HARAKAT_DRILL_OBJECTS=12'); print('HARAKAT_NAME_RESPONSE_LINE=DOTTED'); print('BARE_LETTER_REVIEW_COUNT=28'); print('BARE_LETTER_GRID=14_PER_ROW_X_2_ROWS'); print('BARE_LETTERS_WITH_HARAKAT=0'); print('CONNECTED_HARAKAT_LEXICAL_EXAMPLES=0'); print('CUMULATIVE_COMPETENCY_P001_P019=PRESERVED'); print('STATUS=P020_MILESTONE_DENSE_CANDIDATE_NOT_FROZEN'); return rc
 if __name__=='__main__': raise SystemExit(main())
