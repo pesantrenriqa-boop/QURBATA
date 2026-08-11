@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""QURBATA Jilid 2 P024 — K2 U02 mad ya: KFGQPC base glyphs with Amiri open-sukun mark anchored to ya glyph."""
+"""QURBATA Jilid 2 P024 — K2 U02 mad ya: KFGQPC words + clipped Amiri open-sukun mark."""
 from __future__ import annotations
 import csv,json,sys,unicodedata
 from pathlib import Path
@@ -29,15 +29,16 @@ for r in lex:
     if n==3 and (not r['meaning_id'].strip() or not r['word'].endswith('ُ')): raise ValueError('P024_THREE_LETTER_SEMANTIC_OR_FINAL_DAMMA_FAIL='+repr(r))
     if any(m in r['word'] for m in FORBIDDEN_MARKS): raise ValueError('P024_UPPER_COMPETENCY_MARK_LEAKAGE='+repr(r))
 if lengths!={2:16,3:16}: raise ValueError('P024_LADDER_DISTRIBUTION_FAIL='+repr(lengths))
-# Keep ALL words mark-free so KFGQPC shapes them exactly as earlier pages.
+# Keep words exactly in KFGQPC. Sukun is drawn separately only after word shaping.
 p001.MICRO=MICRO; p001.P001_BANNED_JOINING=set(); words=[r['word'] for r in lex]; p001.P001_ROWS=[words[i:i+4] for i in range(0,32,4)]
 p001.P001_CSS += r'''
 .presentation-object{font-size:48pt}.j2-glyph{font-size:44pt}
 .j2-glyph,.presentation-object,.presentation-object .arabic-part,.mad-unit{font-family:"QURBATA KFGQPC Uthman Taha Naskh","KFGQPC Uthman Taha Naskh",serif!important;font-feature-settings:'mark' 1,'mkmk' 1;font-kerning:normal;text-rendering:optimizeLegibility}
 .mad-unit{display:inline-block;direction:rtl;unicode-bidi:isolate}
 .page{position:relative}
-.sukun-mark-layer{position:absolute;inset:0;pointer-events:none;z-index:80;overflow:visible}
-.sukun-native-amiri{position:absolute;display:block;font-family:'Amiri Quran','Amiri',serif!important;font-weight:400;line-height:1;color:#000;transform:translate(-50%,-50%);transform-origin:center;white-space:nowrap}
+.sukun-mark-layer{position:absolute;inset:0;pointer-events:none;z-index:90;overflow:visible}
+.sukun-carrier-box{position:absolute;display:block;overflow:hidden;pointer-events:none;transform:translate(-50%,-50%)}
+.sukun-carrier-glyph{position:absolute;display:block;font-family:'Amiri Quran','Amiri',serif!important;font-weight:400;line-height:1;color:#000;white-space:nowrap;direction:rtl;unicode-bidi:isolate}
 '''
 orig=p001.build_page_html
 def build(debug):
@@ -50,10 +51,9 @@ def build(debug):
     return h[:ts]+t+h[te:]
 p001.build_page_html=build
 
-# Hybrid strategy: KFGQPC remains the only font shaping each Arabic word. After
-# shaping is complete, locate the actual rendered ya glyph via a DOM Range and draw
-# ONLY U+06E1 in Amiri Quran on a page-level layer using viewport coordinates.
-# Appending to the page (not the word) avoids RTL local-coordinate drift seen in V7-V9.
+# U+06E1 is a combining mark and may have zero standalone advance. V13 therefore
+# gives it a real Arabic carrier (tatweel) in Amiri Quran, then clips away the carrier
+# baseline and exposes only the high open-sukun glyph. KFGQPC words remain untouched.
 SUKUN_LAYER_JS=r'''() => {
   const page=document.querySelector('.page'); if(!page) return {count:0,placed:[]};
   let layer=page.querySelector('.sukun-mark-layer'); if(layer) layer.remove();
@@ -71,16 +71,21 @@ SUKUN_LAYER_JS=r'''() => {
     const range=document.createRange(); range.setStart(hit,idx); range.setEnd(hit,idx+1);
     const rects=[...range.getClientRects()].filter(r=>r.width>0&&r.height>0); if(!rects.length) continue;
     const rr=rects[0], fs=parseFloat(getComputedStyle(el).fontSize)||58;
-    const mark=document.createElement('span'); mark.className='sukun-native-amiri'; mark.setAttribute('aria-hidden','true'); mark.textContent='\u06E1';
-    mark.style.fontSize=(fs*0.34)+'px';
-    mark.style.left=(rr.left-pr.left+rr.width*0.52)+'px';
-    mark.style.top=(rr.top-pr.top-fs*0.11)+'px';
-    layer.appendChild(mark); placed.push({x:rr.left-pr.left+rr.width*0.52,y:rr.top-pr.top-fs*0.11,w:rr.width,h:rr.height});
+    const box=document.createElement('span'); box.className='sukun-carrier-box'; box.setAttribute('aria-hidden','true');
+    const bw=Math.max(10,fs*0.22), bh=Math.max(7,fs*0.14);
+    box.style.width=bw+'px'; box.style.height=bh+'px';
+    box.style.left=(rr.left-pr.left+rr.width*0.52)+'px';
+    box.style.top=(rr.top-pr.top-fs*0.13)+'px';
+    const glyph=document.createElement('span'); glyph.className='sukun-carrier-glyph';
+    glyph.textContent='ـ\u06E1'; glyph.style.fontSize=(fs*0.40)+'px';
+    glyph.style.left=(-fs*0.02)+'px'; glyph.style.top=(-fs*0.27)+'px';
+    box.appendChild(glyph); layer.appendChild(box);
+    placed.push({x:rr.left-pr.left+rr.width*0.52,y:rr.top-pr.top-fs*0.13,w:bw,h:bh});
   }
   return {count:placed.length,placed};
 }'''
 async def render(h,out,debug):
-    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P024-V12.json';png=out/'png';png.mkdir(parents=True,exist_ok=True)
+    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P024-V13.json';png=out/'png';png.mkdir(parents=True,exist_ok=True)
     async with async_playwright() as pw:
         browser=await pw.chromium.launch();page=await browser.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
         await page.goto(h.resolve().as_uri(),wait_until='networkidle');await page.evaluate('document.fonts.ready')
@@ -92,14 +97,14 @@ async def render(h,out,debug):
         if not families or any('QURBATA KFGQPC Uthman Taha Naskh' not in f for f in families): raise RuntimeError('P024_BASE_FONT_REGRESSION='+repr(families[:4]))
         placed=await page.evaluate(SUKUN_LAYER_JS)
         if placed['count']!=34: raise RuntimeError(f"P024_SUKUN_MARK_COUNT_FAIL actual={placed['count']} expected=34")
-        visible=await page.evaluate("""()=>[...document.querySelectorAll('.sukun-native-amiri')].every(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.height>0&&getComputedStyle(e).visibility!=='hidden'})""")
+        visible=await page.evaluate("""()=>[...document.querySelectorAll('.sukun-carrier-box')].every(e=>{const r=e.getBoundingClientRect(),g=e.querySelector('.sukun-carrier-glyph'),gr=g&&g.getBoundingClientRect();return r.width>=9&&r.height>=6&&gr&&gr.width>0&&gr.height>0})""")
         if not visible: raise RuntimeError('P024_SUKUN_VISIBILITY_FAIL')
         metrics,issues=await p001.fit_and_inspect(page);report.write_text(json.dumps({'layout_issues':issues,'sukun_positions':placed['placed']},ensure_ascii=False,indent=2),encoding='utf-8')
         if issues: raise RuntimeError('P024_LAYOUT_ISSUES='+str(len(issues))+' REPORT='+str(report))
         await page.screenshot(path=str(png/'page-024.png'),full_page=True)
-        pdf=out/'QURBATA-JILID-2-P024-V12-KFGQPC-WORDS-AMIRI-OPEN-SUKUN.pdf';await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await browser.close()
+        pdf=out/'QURBATA-JILID-2-P024-V13-KFGQPC-WORDS-AMIRI-CLIPPED-OPEN-SUKUN.pdf';await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await browser.close()
     return metrics,report,pdf
 p001.render=render
 def main():
-    rc=v22.main();print('JILID2_P024_RENDERER_V12=PASS');print('PAGE=24');print('HEADER_SEQUENCE=دِ|دِي|دِينُ');print('P024_STAGE=TWO_TO_THREE_LETTER_LADDER');print('TWO_LETTER_OBJECTS=16');print('THREE_LETTER_OBJECTS=16');print('BASE_ARABIC_FONT=KFGQPC_UTHMAN_TAHA');print('SUKUN_CODEPOINT=U+06E1');print('SUKUN_MARK_FONT=AMIRI_QURAN_ONLY');print('SUKUN_RENDER_MODE=PAGE_LAYER_RANGE_ANCHORED');print('INLINE_SUKUN=DISABLED');print('WORD_FONT_FALLBACK=DISABLED');print('SUKUN_MARK_COUNT=34');print('STATUS=P024_HYBRID_SUKUN_CANDIDATE_NOT_FROZEN');return rc
+    rc=v22.main();print('JILID2_P024_RENDERER_V13=PASS');print('PAGE=24');print('HEADER_SEQUENCE=دِ|دِي|دِينُ');print('P024_STAGE=TWO_TO_THREE_LETTER_LADDER');print('TWO_LETTER_OBJECTS=16');print('THREE_LETTER_OBJECTS=16');print('BASE_ARABIC_FONT=KFGQPC_UTHMAN_TAHA');print('SUKUN_CODEPOINT=U+06E1');print('SUKUN_MARK_FONT=AMIRI_QURAN_ONLY');print('SUKUN_CARRIER=TATWEEL_HIDDEN_BY_CLIP');print('SUKUN_RENDER_MODE=PAGE_LAYER_CLIPPED_CARRIER');print('INLINE_SUKUN=DISABLED');print('WORD_FONT_FALLBACK=DISABLED');print('SUKUN_MARK_COUNT=34');print('STATUS=P024_HYBRID_SUKUN_CANDIDATE_NOT_FROZEN');return rc
 if __name__=='__main__': raise SystemExit(main())
