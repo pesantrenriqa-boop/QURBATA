@@ -1,0 +1,33 @@
+slot,word,meaning_id,function,competency_status,lexical_status
+1,دِين,agama,CURRENT,ALLOWED,CURATED
+2,فِيل,gajah,CURRENT,ALLOWED,CURATED
+3,طِين,tanah liat,CURRENT,ALLOWED,CURATED
+4,رِيح,angin,CURRENT,ALLOWED,CURATED
+5,عِيد,hari raya,CURRENT,ALLOWED,CURATED
+6,جِيد,leher atau bagian leher,CURRENT,ALLOWED,CURATED
+7,قِيلَ,dikatakan,CURRENT,ALLOWED,CURATED
+8,سِيقَ,digiring,CURRENT,ALLOWED,CURATED
+9,حِيلَ,dihalangi,CURRENT,ALLOWED,CURATED
+10,غِيضَ,dikurangi atau disurutkan,CURRENT,ALLOWED,CURATED
+11,كَبِير,besar,CURRENT,ALLOWED,CURATED
+12,صَغِير,kecil,CURRENT,ALLOWED,CURATED
+13,قَدِير,Maha Kuasa atau sangat mampu,CURRENT,ALLOWED,CURATED
+14,بَصِير,Maha Melihat atau sangat melihat,CURRENT,ALLOWED,CURATED
+15,خَبِير,Maha Mengetahui atau sangat mengetahui,CURRENT,ALLOWED,CURATED
+16,سَمِيع,Maha Mendengar atau sangat mendengar,CURRENT,ALLOWED,CURATED
+17,رَحِيم,Maha Penyayang atau penyayang,CURRENT,ALLOWED,CURATED
+18,كَرِيم,mulia atau dermawan,CURRENT,ALLOWED,CURATED
+19,عَلِيم,Maha Mengetahui atau berilmu,CURRENT,ALLOWED,CURATED
+20,حَكِيم,Maha Bijaksana atau bijaksana,CURRENT,ALLOWED,CURATED
+21,عَظِيم,agung,CURRENT,ALLOWED,CURATED
+22,مَجِيد,mulia atau agung,CURRENT,ALLOWED,CURATED
+23,شَهِيد,saksi atau syahid,CURRENT,ALLOWED,CURATED
+24,وَكِيل,pelindung atau wakil,CURRENT,ALLOWED,CURATED
+25,ثَقِيل,berat,CURRENT,ALLOWED,CURATED
+26,جَمِيل,indah,CURRENT,ALLOWED,CURATED
+27,قَلِيل,sedikit,CURRENT,ALLOWED,CURATED
+28,كَثِير,banyak,CURRENT,ALLOWED,CURATED
+29,طَوِيل,panjang,CURRENT,ALLOWED,CURATED
+30,حَمِيد,terpuji,CURRENT,ALLOWED,CURATED
+31,نَذِير,pemberi peringatan,CURRENT,ALLOWED,CURATED
+32,بَشِير,pembawa kabar gembira,CURRENT,ALLOWED,CURATED
