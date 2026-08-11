@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""QURBATA Jilid 2 P023 — K2 U02 pure acquisition of mad ya."""
+"""QURBATA Jilid 2 P023 — K2 U02 acquisition of mad ya with Uthmani sukun and final dammah."""
 from __future__ import annotations
 import csv,json,sys,unicodedata
 from pathlib import Path
@@ -13,16 +13,17 @@ with MAP.open(encoding='utf-8-sig',newline='') as f: meta=next(csv.DictReader(f)
 with MICRO.open(encoding='utf-8-sig',newline='') as f: stairs=list(csv.DictReader(f))
 with LEX.open(encoding='utf-8-sig',newline='') as f: lex=list(csv.DictReader(f))
 if len(stairs)!=10 or len(lex)!=32: raise ValueError('P023_REGISTRY_INVALID')
-MARKS=set(chr(c) for c in range(0x064B,0x0660))|{'ـ'}; FORBIDDEN_MARKS=set('ًٌٍّْ')
+MARKS=set(chr(c) for c in range(0x064B,0x0660))|{'ـ'}; FORBIDDEN_MARKS=set('ًٌٍّ')
 def bases(s): return ''.join(ch for ch in unicodedata.normalize('NFC',s) if ch not in MARKS and unicodedata.category(ch)!='Mn')
 def has_mad_ya(word):
     chars=list(word)
-    return any(ch=='ي' and i>=1 and chars[i-1]=='ِ' for i,ch in enumerate(chars))
+    return any(ch=='ي' and i>=1 and chars[i-1]=='ِ' and i+1<len(chars) and chars[i+1]=='ْ' for i,ch in enumerate(chars))
 for r in lex:
     n=len(bases(r['word']))
     if n<3 or n>5 or not r['meaning_id'].strip() or r['lexical_status']!='CURATED' or r['competency_status']!='ALLOWED': raise ValueError('P023_SEMANTIC_GATE_FAIL='+repr(r))
     if r['function']!='CURRENT': raise ValueError('P023_MIXED_REVIEW_FORBIDDEN='+repr(r))
-    if not has_mad_ya(r['word']): raise ValueError('P023_MAD_YA_REQUIRED='+repr(r))
+    if not has_mad_ya(r['word']): raise ValueError('P023_MAD_YA_WITH_SUKUN_REQUIRED='+repr(r))
+    if not r['word'].endswith('ُ'): raise ValueError('P023_FINAL_DAMMA_REQUIRED='+repr(r))
     if any(m in r['word'] for m in FORBIDDEN_MARKS): raise ValueError('P023_UPPER_COMPETENCY_MARK_LEAKAGE='+repr(r))
 p001.MICRO=MICRO; p001.P001_BANNED_JOINING=set(); words=[r['word'] for r in lex]; p001.P001_ROWS=[words[i:i+4] for i in range(0,32,4)]
 p001.P001_CSS += r'''.presentation-object{font-size:46pt}.j2-glyph{font-size:42pt}.mad-unit{display:inline-block;direction:rtl;unicode-bidi:isolate;font-family:"QURBATA KFGQPC Uthman Taha Naskh",serif!important;font-feature-settings:"mark" 1,"mkmk" 1}'''
@@ -30,14 +31,14 @@ orig=p001.build_page_html
 def build(debug):
     h=orig(debug).replace('<div class="page-number">01</div>','<div class="page-number">23</div>',1)
     s=h.index('<section class="presentation">'); e=h.index('</section>',s)+len('</section>')
-    pres='''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object"><span class="arabic-part" lang="ar">بِيعَ</span><span class="arrow">←</span><span class="arabic-part mad-unit" lang="ar">بِي</span><span class="arrow">←</span><span class="arabic-part" lang="ar">بِ</span></div></div></section>'''
+    pres='''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object"><span class="arabic-part" lang="ar">بِيْعُ</span><span class="arrow">←</span><span class="arabic-part mad-unit" lang="ar">بِيْ</span><span class="arrow">←</span><span class="arabic-part" lang="ar">بِ</span></div></div></section>'''
     h=h[:s]+pres+h[e:]
     ts=h.index('<section class="targets">'); te=h.index('</section>',ts)+len('</section>')
     t=f'''<section class="targets"><div class="target-item"><span>Kompetensi</span><strong>{meta['CompetencyCode']} — {meta['Competency']}</strong></div><div class="target-item"><span>Unit Kompetensi</span><strong>{meta['UnitCompetencyCode']} — {meta['UnitCompetency']}</strong></div><div class="target-item"><span>Unit Murojaah</span><strong>{meta['UnitMurojaahCode']} — {meta['UnitMurojaah']}</strong></div><div class="target-item"><span>Tangga</span><strong>{stairs[0]['StairCode']}–{stairs[-1]['StairCode']}</strong></div></section>'''
     return h[:ts]+t+h[te:]
 p001.build_page_html=build
 async def render(h,out,debug):
-    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P023-V1.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
+    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P023-V2.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
     async with async_playwright() as pw:
         browser=await pw.chromium.launch(); page=await browser.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
         await page.goto(h.resolve().as_uri(),wait_until='networkidle'); await page.evaluate('document.fonts.ready')
@@ -48,11 +49,11 @@ async def render(h,out,debug):
         metrics,issues=await p001.fit_and_inspect(page); report.write_text(json.dumps(issues,ensure_ascii=False,indent=2),encoding='utf-8')
         if issues: raise RuntimeError('P023_LAYOUT_ISSUES='+str(len(issues))+' REPORT='+str(report))
         await page.screenshot(path=str(png/'page-023.png'),full_page=True)
-        pdf=out/'QURBATA-JILID-2-P023-V1-KFGQPC-MAD-YA-FOCUS.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
+        pdf=out/'QURBATA-JILID-2-P023-V2-KFGQPC-MAD-YA-SUKUN-DAMMA.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
     return metrics,report,pdf
 p001.render=render
 def main():
     lengths={3:0,4:0,5:0}
     for r in lex: lengths[len(bases(r['word']))]+=1
-    rc=v22.main(); print('JILID2_P023_RENDERER_V1=PASS'); print('PAGE=23'); print('K_SEQUENCE=K2'); print('UK_SEQUENCE=J2.K2.U02'); print('HEADER_SEQUENCE=بِ|بِي|بِيعَ'); print('NEW_COMPETENCY=MAD_YA'); print('MAD_PATTERN=KASRA_PLUS_YA'); print('MAD_LENGTH=2_HARAKAT'); print('CURRENT_OBJECTS=32'); print('MUROJAAH_OBJECTS=0'); print('WORD_LENGTH_3_COUNT='+str(lengths[3])); print('WORD_LENGTH_4_COUNT='+str(lengths[4])); print('WORD_LENGTH_5_COUNT='+str(lengths[5])); print('UPPER_COMPETENCY_MARKS=SUKUN|TANWIN|SHADDA_FORBIDDEN'); print('PREVIOUS_K2_U01_MAD_ALIF=PREREQUISITE_PRESERVED'); print('ARABIC_FONT_PRIMARY=QURBATA KFGQPC Uthman Taha Naskh'); print('FONT_BINDING_GATE=PASS'); print('STATUS=P023_K2_U02_MAD_YA_CANDIDATE_NOT_FROZEN'); return rc
+    rc=v22.main(); print('JILID2_P023_RENDERER_V2=PASS'); print('PAGE=23'); print('K_SEQUENCE=K2'); print('UK_SEQUENCE=J2.K2.U02'); print('HEADER_SEQUENCE=بِ|بِيْ|بِيْعُ'); print('NEW_COMPETENCY=MAD_YA'); print('MAD_PATTERN=KASRA_PLUS_YA_SUKUN_UTHMANI'); print('MAD_LENGTH=2_HARAKAT'); print('FINAL_HARAKAT=DAMMA'); print('CURRENT_OBJECTS=32'); print('MUROJAAH_OBJECTS=0'); print('WORD_LENGTH_3_COUNT='+str(lengths[3])); print('WORD_LENGTH_4_COUNT='+str(lengths[4])); print('WORD_LENGTH_5_COUNT='+str(lengths[5])); print('FORBIDDEN_MARKS=TANWIN|SHADDA'); print('ARABIC_FONT_PRIMARY=QURBATA KFGQPC Uthman Taha Naskh'); print('FONT_BINDING_GATE=PASS'); print('STATUS=P023_K2_U02_MAD_YA_SUKUN_DAMMA_CANDIDATE_NOT_FROZEN'); return rc
 if __name__=='__main__': raise SystemExit(main())
