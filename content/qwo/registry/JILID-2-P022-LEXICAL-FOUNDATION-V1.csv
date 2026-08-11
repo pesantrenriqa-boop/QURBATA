@@ -1,0 +1,33 @@
+slot,word,meaning_id,length_class,function,competency_status,lexical_status
+1,قَالَ,berkata,3,MUROJAAH,ALLOWED,CURATED
+2,نَامَ,tidur,3,MUROJAAH,ALLOWED,CURATED
+3,صَامَ,berpuasa,3,MUROJAAH,ALLOWED,CURATED
+4,قَامَ,berdiri,3,MUROJAAH,ALLOWED,CURATED
+5,تَابَ,bertaubat,3,MUROJAAH,ALLOWED,CURATED
+6,عَادَ,kembali,3,MUROJAAH,ALLOWED,CURATED
+7,زَادَ,bertambah,3,MUROJAAH,ALLOWED,CURATED
+8,سَارَ,berjalan,3,MUROJAAH,ALLOWED,CURATED
+9,فَازَ,menang atau beruntung,3,MUROJAAH,ALLOWED,CURATED
+10,خَافَ,takut,3,MUROJAAH,ALLOWED,CURATED
+11,عَاشَ,hidup,3,MUROJAAH,ALLOWED,CURATED
+12,مَاتَ,meninggal,3,MUROJAAH,ALLOWED,CURATED
+13,كَاتَبَ,saling berkirim tulisan atau menulis kepada,4,MUROJAAH,ALLOWED,CURATED
+14,سَابَقَ,berlomba dengan,4,MUROJAAH,ALLOWED,CURATED
+15,جَاهَدَ,bersungguh-sungguh atau berjihad,4,MUROJAAH,ALLOWED,CURATED
+16,شَارَكَ,berpartisipasi,4,MUROJAAH,ALLOWED,CURATED
+17,عَاهَدَ,mengadakan perjanjian,4,MUROJAAH,ALLOWED,CURATED
+18,حَاسَبَ,menghitung atau menghisab,4,MUROJAAH,ALLOWED,CURATED
+19,قَاتَلَ,memerangi,4,MUROJAAH,ALLOWED,CURATED
+20,سَافَرَ,bepergian,4,MUROJAAH,ALLOWED,CURATED
+21,بَارَكَ,memberkahi,4,MUROJAAH,ALLOWED,CURATED
+22,جَاوَزَ,melewati,4,MUROJAAH,ALLOWED,CURATED
+23,تَعَاوَنَ,saling menolong,5,MUROJAAH,ALLOWED,CURATED
+24,تَشَاوَرَ,saling bermusyawarah,5,MUROJAAH,ALLOWED,CURATED
+25,تَقَاتَلَ,saling berperang,5,MUROJAAH,ALLOWED,CURATED
+26,تَسَابَقَ,saling berlomba,5,MUROJAAH,ALLOWED,CURATED
+27,تَعَامَلَ,saling berinteraksi atau bermuamalah,5,MUROJAAH,ALLOWED,CURATED
+28,تَكَاسَلَ,bermalas-malasan,5,MUROJAAH,ALLOWED,CURATED
+29,تَفَاخَرَ,saling membanggakan diri,5,MUROJAAH,ALLOWED,CURATED
+30,تَجَاوَزَ,melampaui atau melewati,5,MUROJAAH,ALLOWED,CURATED
+31,تَنَافَسَ,saling berlomba atau bersaing,5,MUROJAAH,ALLOWED,CURATED
+32,تَحَاسَبَ,saling berhitung atau memperhitungkan,5,MUROJAAH,ALLOWED,CURATED
