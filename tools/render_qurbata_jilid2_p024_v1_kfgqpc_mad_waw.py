@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""QURBATA Jilid 2 P024 — K2 U02 first mad-ya page: two-letter drills with open Naskhi sukun overlay."""
+"""QURBATA Jilid 2 P024 — K2 U02 mad ya: two-to-three-letter ladder with standalone open Uthmani sukun glyph."""
 from __future__ import annotations
 import csv,json,sys,unicodedata
 from pathlib import Path
@@ -16,37 +16,41 @@ if len(stairs)!=10 or len(lex)!=32: raise ValueError('P024_REGISTRY_INVALID')
 ROUND_SUKUN='ْ'; UTHMANI_HEAD='ۡ'; FORBIDDEN_MARKS=set('ًٌٍّ')
 MARKS=set(chr(c) for c in range(0x064B,0x0660))|{UTHMANI_HEAD,'ـ'}
 def bases(s): return ''.join(ch for ch in unicodedata.normalize('NFC',s) if ch not in MARKS and unicodedata.category(ch)!='Mn')
-def has_mad_ya_pair(text):
+def has_mad_ya(text):
     chars=list(text)
     return any(ch=='ي' and i>=1 and chars[i-1]=='ِ' for i,ch in enumerate(chars))
+lengths={2:0,3:0}
 for r in lex:
-    if len(bases(r['word']))!=2: raise ValueError('P024_TWO_LETTER_GATE_FAIL='+repr(r))
+    n=len(bases(r['word']))
+    if n not in lengths: raise ValueError('P024_LENGTH_GATE_FAIL='+repr(r))
+    lengths[n]+=1
     if r['function']!='CURRENT' or r['lexical_status']!='CURATED' or r['competency_status']!='ALLOWED': raise ValueError('P024_STATUS_GATE_FAIL='+repr(r))
     if ROUND_SUKUN in r['word'] or UTHMANI_HEAD in r['word']: raise ValueError('P024_INLINE_SUKUN_FORBIDDEN='+repr(r))
-    if not has_mad_ya_pair(r['word']): raise ValueError('P024_MAD_YA_PAIR_REQUIRED='+repr(r))
+    if not has_mad_ya(r['word']): raise ValueError('P024_MAD_YA_REQUIRED='+repr(r))
+    if n==3 and (not r['meaning_id'].strip() or not r['word'].endswith('ُ')): raise ValueError('P024_THREE_LETTER_SEMANTIC_OR_FINAL_DAMMA_FAIL='+repr(r))
     if any(m in r['word'] for m in FORBIDDEN_MARKS): raise ValueError('P024_UPPER_COMPETENCY_MARK_LEAKAGE='+repr(r))
+if lengths!={2:16,3:16}: raise ValueError('P024_LADDER_DISTRIBUTION_FAIL='+repr(lengths))
 p001.MICRO=MICRO; p001.P001_BANNED_JOINING=set(); words=[r['word'] for r in lex]; p001.P001_ROWS=[words[i:i+4] for i in range(0,32,4)]
 p001.P001_CSS += r'''
 .presentation-object{font-size:48pt}.j2-glyph{font-size:44pt}
 .mad-unit{display:inline-block;direction:rtl;unicode-bidi:isolate;font-family:"QURBATA KFGQPC Uthman Taha Naskh",serif!important;font-feature-settings:"mark" 1,"mkmk" 1}
 .j2-object,.presentation-object .arabic-part{position:relative;overflow:visible!important}
-.sukun-open-naskhi{position:absolute;z-index:9;pointer-events:none;overflow:visible;transform:translate(-50%,-50%)}
-.sukun-open-naskhi path{fill:none;stroke:currentColor;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.sukun-uthmani-open{position:absolute;z-index:9;pointer-events:none;font-family:"QURBATA KFGQPC Uthman Taha Naskh",serif!important;font-weight:400;line-height:1;color:currentColor;transform:translate(-50%,-50%);transform-origin:center center;unicode-bidi:isolate}
 '''
 orig=p001.build_page_html
 def build(debug):
     h=orig(debug).replace('<div class="page-number">01</div>','<div class="page-number">24</div>',1)
     s=h.index('<section class="presentation">'); e=h.index('</section>',s)+len('</section>')
-    # First mad-ya page deliberately stops at two letters: short kasrah -> kasrah + ya mad.
-    pres='''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object"><span class="arabic-part mad-unit" lang="ar">بِي</span><span class="arrow">←</span><span class="arabic-part" lang="ar">بِ</span></div></div></section>'''
+    # Ladder: short kasrah -> two letters -> meaningful three-letter word.
+    pres='''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object"><span class="arabic-part mad-unit" lang="ar">دِينُ</span><span class="arrow">←</span><span class="arabic-part mad-unit" lang="ar">دِي</span><span class="arrow">←</span><span class="arabic-part" lang="ar">دِ</span></div></div></section>'''
     h=h[:s]+pres+h[e:]
     ts=h.index('<section class="targets">'); te=h.index('</section>',ts)+len('</section>')
     t=f'''<section class="targets"><div class="target-item"><span>Kompetensi</span><strong>{meta['CompetencyCode']} — {meta['Competency']}</strong></div><div class="target-item"><span>Unit Kompetensi</span><strong>{meta['UnitCompetencyCode']} — {meta['UnitCompetency']}</strong></div><div class="target-item"><span>Unit Murojaah</span><strong>{meta['UnitMurojaahCode']} — {meta['UnitMurojaah']}</strong></div><div class="target-item"><span>Tangga</span><strong>{stairs[0]['StairCode']}–{stairs[-1]['StairCode']}</strong></div></section>'''
     return h[:ts]+t+h[te:]
 p001.build_page_html=build
 
-# The sukun is drawn as an OPEN NASKHI head-of-kha path. It is not a Unicode
-# combining mark and not a full Arabic letter, so the KFGQPC shaping run remains untouched.
+# Use the font's own U+06E1 glyph as a standalone positioned overlay. It is never
+# inserted into the Arabic text run, so KFGQPC shaping/GPOS remains intact.
 SUKUN_OVERLAY_JS=r'''() => {
   const targets=[...document.querySelectorAll('.j2-object,.presentation-object .mad-unit')];
   let count=0;
@@ -60,42 +64,40 @@ SUKUN_OVERLAY_JS=r'''() => {
       if(hit) break;
     }
     if(!hit) continue;
-    const range=document.createRange();range.setStart(hit,idx);range.setEnd(hit,idx+1);
-    const rr=range.getBoundingClientRect(),er=el.getBoundingClientRect();
+    const range=document.createRange(); range.setStart(hit,idx); range.setEnd(hit,idx+1);
+    const rr=range.getBoundingClientRect(), er=el.getBoundingClientRect();
     const fs=parseFloat(getComputedStyle(el).fontSize)||58;
-    const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
-    svg.setAttribute('viewBox','0 0 12 9');svg.setAttribute('aria-hidden','true');svg.classList.add('sukun-open-naskhi');
-    const w=fs*0.20,h=fs*0.15;svg.style.width=w+'px';svg.style.height=h+'px';
-    svg.style.left=(rr.left-er.left+rr.width*0.52)+'px';
-    svg.style.top=(rr.top-er.top-fs*0.115)+'px';
-    const path=document.createElementNS('http://www.w3.org/2000/svg','path');
-    // Open head-of-kha: broad upper sweep, descending left shoulder, OPEN lower terminal.
-    path.setAttribute('d','M10.4 1.5 C7.5 1.05 4.7 1.75 3.35 3.45 C2.45 4.60 2.35 6.10 3.25 7.35 C3.62 7.85 4.12 8.15 4.65 8.28');
-    svg.appendChild(path);el.appendChild(svg);el.dataset.sukunDone='1';count++;
+    const mark=document.createElement('span');
+    mark.className='sukun-uthmani-open'; mark.setAttribute('aria-hidden','true');
+    mark.textContent='\u06E1';
+    mark.style.fontSize=(fs*0.31)+'px';
+    mark.style.left=(rr.left-er.left+rr.width*0.52)+'px';
+    mark.style.top=(rr.top-er.top-fs*0.105)+'px';
+    el.appendChild(mark); el.dataset.sukunDone='1'; count++;
   }
   return count;
 }'''
 async def render(h,out,debug):
-    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P024-V3.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
+    report=out/'LAYOUT-OVERFLOW-REPORT-J2-P024-V4.json'; png=out/'png'; png.mkdir(parents=True,exist_ok=True)
     async with async_playwright() as pw:
         browser=await pw.chromium.launch(); page=await browser.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
         await page.goto(h.resolve().as_uri(),wait_until='networkidle'); await page.evaluate('document.fonts.ready')
         if await page.locator('.j2-object').count()!=32: raise RuntimeError('P024_OBJECT_COUNT_INVALID')
         if (await page.locator('.page-number').inner_text()).strip()!='24': raise RuntimeError('P024_PAGE_IDENTITY_FAIL')
-        family=await page.locator('.mad-unit').evaluate("e=>getComputedStyle(e).fontFamily")
+        family=await page.locator('.mad-unit').first.evaluate("e=>getComputedStyle(e).fontFamily")
         if 'QURBATA KFGQPC Uthman Taha Naskh' not in family: raise RuntimeError('P024_FONT_BINDING_FAIL='+repr(family))
         raw=await page.locator('body').inner_text()
         if ROUND_SUKUN in raw or UTHMANI_HEAD in raw: raise RuntimeError('P024_INLINE_SUKUN_RENDERED')
         overlay_count=await page.evaluate(SUKUN_OVERLAY_JS)
-        if overlay_count!=33: raise RuntimeError(f'P024_SUKUN_OVERLAY_COUNT_FAIL actual={overlay_count} expected=33')
-        path_count=await page.locator('.sukun-open-naskhi path').count()
-        if path_count!=33: raise RuntimeError(f'P024_OPEN_SUKUN_PATH_COUNT_FAIL actual={path_count} expected=33')
+        if overlay_count!=34: raise RuntimeError(f'P024_SUKUN_OVERLAY_COUNT_FAIL actual={overlay_count} expected=34')
+        glyphs=await page.locator('.sukun-uthmani-open').count()
+        if glyphs!=34: raise RuntimeError(f'P024_OPEN_SUKUN_GLYPH_COUNT_FAIL actual={glyphs} expected=34')
         metrics,issues=await p001.fit_and_inspect(page); report.write_text(json.dumps(issues,ensure_ascii=False,indent=2),encoding='utf-8')
         if issues: raise RuntimeError('P024_LAYOUT_ISSUES='+str(len(issues))+' REPORT='+str(report))
         await page.screenshot(path=str(png/'page-024.png'),full_page=True)
-        pdf=out/'QURBATA-JILID-2-P024-V3-KFGQPC-MAD-YA-TWO-LETTER-OPEN-SUKUN.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
+        pdf=out/'QURBATA-JILID-2-P024-V4-KFGQPC-MAD-YA-2TO3-UTHMANI-SUKUN.pdf'; await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await browser.close()
     return metrics,report,pdf
 p001.render=render
 def main():
-    rc=v22.main(); print('JILID2_P024_RENDERER_V3=PASS'); print('PAGE=24'); print('K_SEQUENCE=K2'); print('UK_SEQUENCE=J2.K2.U02'); print('SEQUENCE_BEFORE=P021-P023:MAD_ALIF'); print('HEADER_SEQUENCE=بِ|بِي'); print('NEW_COMPETENCY=MAD_YA'); print('P024_STAGE=TWO_LETTER_ACQUISITION_ONLY'); print('PRACTICE_OBJECT_LENGTH=2_LETTERS'); print('MAD_PATTERN=KASRA_PLUS_YA'); print('MAD_LENGTH=2_HARAKAT'); print('SUKUN_STYLE=OPEN_NASKHI_HEAD_OF_KHA'); print('SUKUN_RENDER_MODE=SVG_PATH_OVERLAY_NON_DESTRUCTIVE'); print('INLINE_SUKUN_CODEPOINTS=FORBIDDEN'); print('SUKUN_OVERLAY_COUNT=33'); print('CURRENT_OBJECTS=32'); print('MUROJAAH_OBJECTS=0'); print('ARABIC_FONT_PRIMARY=QURBATA KFGQPC Uthman Taha Naskh'); print('FONT_BINDING_GATE=PASS'); print('STATUS=P024_TWO_LETTER_OPEN_SUKUN_CANDIDATE_NOT_FROZEN'); return rc
+    rc=v22.main(); print('JILID2_P024_RENDERER_V4=PASS'); print('PAGE=24'); print('K_SEQUENCE=K2'); print('UK_SEQUENCE=J2.K2.U02'); print('SEQUENCE_BEFORE=P021-P023:MAD_ALIF'); print('HEADER_SEQUENCE=دِ|دِي|دِينُ'); print('NEW_COMPETENCY=MAD_YA'); print('P024_STAGE=TWO_TO_THREE_LETTER_LADDER'); print('TWO_LETTER_OBJECTS=16'); print('THREE_LETTER_OBJECTS=16'); print('THREE_LETTER_SEMANTIC_POLICY=REQUIRED'); print('MAD_PATTERN=KASRA_PLUS_YA'); print('MAD_LENGTH=2_HARAKAT'); print('SUKUN_STYLE=KFGQPC_U+06E1_STANDALONE_OPEN_GLYPH'); print('SUKUN_RENDER_MODE=POSITIONED_OVERLAY_NON_DESTRUCTIVE'); print('INLINE_SUKUN_CODEPOINTS=FORBIDDEN'); print('SUKUN_OVERLAY_COUNT=34'); print('FINAL_HARAKAT_FOR_3_LETTER=DAMMA'); print('ARABIC_FONT_PRIMARY=QURBATA KFGQPC Uthman Taha Naskh'); print('FONT_BINDING_GATE=PASS'); print('STATUS=P024_2TO3_OPEN_SUKUN_CANDIDATE_NOT_FROZEN'); return rc
 if __name__=='__main__': raise SystemExit(main())
