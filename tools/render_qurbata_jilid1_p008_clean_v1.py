@@ -20,8 +20,22 @@ m.doc=doc
 def audit():
  ts=[x for e in m.EXERCISES[:-1] for x in e.split()];f=sum(x in m.FOCUS for x in ts);r=len(ts)-f
  if len(ts)!=61 or (f,r)!=(31,30):raise RuntimeError(f'P008_RENDER_BALANCE_FAIL focus={f} review={r}')
+def free(base):
+ if not base.exists():return base
+ try:
+  with open(base,'ab'):pass
+  return base
+ except PermissionError:pass
+ for n in range(1,100):
+  p=base.with_name(base.stem+f'-R{n}'+base.suffix)
+  if not p.exists():return p
+  try:
+   with open(p,'ab'):pass
+   return p
+  except PermissionError:continue
+ raise RuntimeError('P008_NO_FREE_OUTPUT_FILENAME')
 async def render(h,o):
- pdf=m.free(o/'QURBATA-JILID-1-P008-TA-ZA-CANDIDATE-V2-SAFEAREA.pdf');png=m.free(o/'QURBATA-JILID-1-P008-TA-ZA-CANDIDATE-V2-SAFEAREA.png')
+ pdf=free(o/'QURBATA-JILID-1-P008-TA-ZA-CANDIDATE-V3-SAFEAREA.pdf');png=free(o/'QURBATA-JILID-1-P008-TA-ZA-CANDIDATE-V3-SAFEAREA.png')
  async with async_playwright() as pw:
   b=await pw.chromium.launch();p=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2);await p.goto(h.resolve().as_uri(),wait_until='networkidle');await p.evaluate('document.fonts.ready')
   safe=await p.evaluate("""()=>{const f=document.querySelector('.footer').getBoundingClientRect(),pg=document.querySelector('.page').getBoundingClientRect(),xs=[...document.querySelectorAll('.practice')].map(e=>e.getBoundingClientRect());const max=Math.max(...xs.map(x=>x.bottom));return {ok:max<=f.top-12&&max<=pg.bottom-12,bad:xs.filter(x=>x.bottom>f.top-12||x.bottom>pg.bottom-12).length,clearance:f.top-max}}""")
@@ -29,4 +43,4 @@ async def render(h,o):
   await p.screenshot(path=str(png),full_page=True);await p.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await b.close()
  return pdf,safe
 if __name__=='__main__':
- audit();ap=argparse.ArgumentParser();ap.add_argument('--font-file');ap.add_argument('--font-zip');a=ap.parse_args();m.OUT0.mkdir(parents=True,exist_ok=True);font,src=kfgloader.discover_font(a.font_file,a.font_zip,m.OUT0);h=m.OUT0/'QURBATA-JILID-1-P008-TA-ZA-CANDIDATE-V2-SAFEAREA.html';h.write_text(doc(font.resolve().as_uri()),encoding='utf-8');pdf,safe=asyncio.run(render(h,m.OUT0));print('QJ1_P008_TA_ZA_SAFEAREA=PASS');print('MATERIAL_NEW=طَ|ظَ');print('RENDER_BALANCE=31_FOCUS|30_REVIEW');print('BOTTOM_GLYPH_OVERFLOW=0');print('SAFE_CLEARANCE_PX='+str(round(safe['clearance'],2)));print('FONT_SOURCE='+str(src));print('PDF='+str(pdf.relative_to(ROOT)))
+ audit();ap=argparse.ArgumentParser();ap.add_argument('--font-file');ap.add_argument('--font-zip');a=ap.parse_args();m.OUT0.mkdir(parents=True,exist_ok=True);font,src=kfgloader.discover_font(a.font_file,a.font_zip,m.OUT0);h=m.OUT0/'QURBATA-JILID-1-P008-TA-ZA-CANDIDATE-V3-SAFEAREA.html';h.write_text(doc(font.resolve().as_uri()),encoding='utf-8');pdf,safe=asyncio.run(render(h,m.OUT0));print('QJ1_P008_TA_ZA_SAFEAREA=PASS');print('MATERIAL_NEW=طَ|ظَ');print('RENDER_BALANCE=31_FOCUS|30_REVIEW');print('BOTTOM_GLYPH_OVERFLOW=0');print('SAFE_CLEARANCE_PX='+str(round(safe['clearance'],2)));print('FONT_SOURCE='+str(src));print('PDF='+str(pdf.relative_to(ROOT)))
