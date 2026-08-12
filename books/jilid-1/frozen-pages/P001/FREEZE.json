@@ -1,0 +1,17 @@
+{
+  "page": "QJ1-P001",
+  "status": "FROZEN_APPROVED",
+  "approved_renderer": "tools/render_qurbata_jilid1_p001_print_anchor_v1.py",
+  "approved_renderer_commit": "a07b1e7faef67660f9c31e3c3786cd0684d16a97",
+  "visual_baseline": "CLEAN_V10",
+  "base_font": "KFGQPC_UTHMAN_TAHA",
+  "practice_font_pt": 40,
+  "header_title_alignment": "PHYSICAL_PAGE_CENTER_MATCHES_PRESENTATION_CENTER",
+  "footer_bottom_clearance": "RAISED_2.2MM",
+  "header_ornament": "NONE",
+  "footer_ornament": "NONE",
+  "footer_left": "قُرْآنٌ · لُغَةٌ · أَدَبٌ",
+  "footer_right": "تَعَلَّمْ · اِعْمَلْ · عَلِّمْ",
+  "pdf_storage_policy": "GENERATED_PDF_IN_DIST; PERMANENT_SOURCE_AND_FREEZE_METADATA_IN_REPOSITORY",
+  "change_policy": "DO_NOT_MODIFY_FROZEN_PAGE_WITHOUT_EXPLICIT_USER_REOPEN_APPROVAL"
+}
