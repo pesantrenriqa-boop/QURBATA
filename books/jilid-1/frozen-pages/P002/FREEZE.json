@@ -1,0 +1,13 @@
+{
+  "page": "QJ1-P002",
+  "status": "FROZEN_APPROVED",
+  "approval_basis": "explicit user request to freeze P002 after earlier review",
+  "historical_source_commit": "0b80531291f03e46715f5a5365b982e56146bca8",
+  "material_focus": ["ءَ", "أَ"],
+  "cumulative_review": ["بَ", "تَ", "ثَ"],
+  "historical_identity": "HAMZA_ALIF_PAGE",
+  "visual_baseline": "P001_FROZEN_CLEAN",
+  "base_font": "KFGQPC_UTHMAN_TAHA",
+  "change_policy": "DO_NOT_MODIFY_WITHOUT_EXPLICIT_USER_REOPEN_APPROVAL",
+  "note": "P008 work paused at user request while correcting freeze registry. P002 is now part of the permanent frozen page set."
+}
