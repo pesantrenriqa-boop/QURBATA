@@ -16,180 +16,187 @@ Setiap item menyimpan: Item ID; target K; prerequisite K; Qur'anic reference; ta
 
 ## 3. Pilot items P01–P12
 
-### L10-P01 — Direct morphology recognition
-- Target: K13
+P01–P12 dipertahankan dari batch awal: direct morphology recognition, object recognition, object-vs-subject negative control, coordination boundary/direct coordination, demonstrative recognition/contrast, relative-pronoun recognition/transfer, conditional-marker boundary, serta integrative morphology–relation items.
+
+## 4. Expansion P13–P24
+
+### L10-P13 — Target K15 boundary
+- Target: K15
+- Prerequisite: K13/K14
 - Reference: QS 1:5
-- Target span: `نَعْبُدُ`
-- Response class: classification
-- Prompt: klasifikasikan bentuk verbal target pada batas operasi L10.
-- Expected: fi'il mudhari' dengan subjek yang ditandai dalam bentuk verbal; tidak meminta analisis clause lanjutan.
-- Critical misconception: mengandalkan terjemahan waktu tanpa membaca bentuk.
+- Target span: `نَسْتَعِينُ`
+- Response class: classification/boundary
+- Prompt: klasifikasikan bentuk verbal target dan tentukan apakah span tunggal ini cukup untuk membuktikan objek langsung zhahir.
+- Expected: fi'il mudhari'; tidak ada objek langsung zhahir pada span tunggal.
+- Critical misconception: menambahkan objek hanya karena terjemahan membutuhkannya.
+- Error: E03/E07
+- Ambiguity: LOW
+- Status: PILOT BOUNDARY
+
+### L10-P14 — K17 direct marker recognition
+- Target: K17
+- Reference: QS 112:3
+- Target span: `لَمْ يَلِدْ`
+- Response class: recognition/classification
+- Prompt: identifikasi marker yang memengaruhi bentuk fi'il mudhari' pada span tanpa meminta penjelasan Stage 3.
+- Expected: `لم` dikenali sebagai marker yang meng-govern fi'il mudhari' sesudahnya pada ceiling L10.
+- Critical misconception: menganggap `لم` hanya unsur terjemahan negatif tanpa efek gramatikal.
 - Error: E02/E03
 - Ambiguity: LOW
 - Status: PILOT
 
-### L10-P02 — Object recognition
-- Target: K14
-- Prerequisite: K06/K10/K13
-- Reference: QS 1:5
-- Target span: `إِيَّاكَ نَعْبُدُ`
-- Response class: relation
-- Prompt: identifikasi unsur yang berfungsi sebagai objek langsung pada span.
-- Expected: `إياك` sebagai objek langsung yang didahulukan.
-- Critical misconception: menganggap unsur pertama otomatis mubtada'.
-- Error: E04/E05
-- Feature ceiling: tidak meminta analisis balaghah taqdim.
-- Ambiguity: LOW
-- Status: PILOT
-
-### L10-P03 — Negative control object vs subject
-- Target: K14
-- Prerequisite: K10
-- Reference: QS 17:81
-- Target span: `جَاءَ الْحَقُّ`
-- Response class: negative control
-- Prompt: apakah `الحق` merupakan maf'ul bih?
-- Expected: tidak; pada span ini `الحق` adalah fa'il zhahir.
-- Critical misconception: semua isim setelah fi'il dianggap objek.
-- Error: E04/E07
-- Ambiguity: LOW
-- Status: PILOT NEGATIVE CONTROL
-
-### L10-P04 — Coordination recognition
-- Target: K16
-- Reference: QS 2:2
-- Target span: `هُدًى لِّلْمُتَّقِينَ`
-- Response class: boundary
-- Prompt: apakah target ini merupakan koordinasi dengan huruf 'athaf?
-- Expected: tidak; tidak ada huruf 'athaf pada span.
-- Critical misconception: menganggap dua unit berurutan selalu terkoordinasi.
+### L10-P15 — K18 contrast control
+- Target: K18
+- Reference: QS 109:2
+- Target span: `لَا أَعْبُدُ`
+- Response class: contrast/boundary
+- Prompt: tentukan apakah `لا` pada span ini cukup disamakan dengan `لم` dari sisi governance bentuk fi'il.
+- Expected: tidak; marker berbeda dan tidak boleh disamakan hanya karena sama-sama bernuansa negatif.
+- Critical misconception: semua partikel negatif dianggap satu operasi gramatikal.
 - Error: E03/E07
-- Ambiguity: LOW
+- Ambiguity: MEDIUM
 - Status: PILOT NEGATIVE CONTROL
 
-### L10-P05 — Direct coordination
-- Target: K16
-- Reference: QS 112:3
-- Target span: `لَمْ يَلِدْ وَلَمْ يُولَدْ`
-- Response class: relation/classification
-- Prompt: tunjukkan marker koordinasi yang menghubungkan dua unit verbal.
-- Expected: `وَ` sebagai huruf 'athaf/koordinasi.
-- Critical misconception: fokus pada `لم` dan mengabaikan penghubung.
-- Error: E02/E04
-- Feature ceiling: tidak meminta analisis penuh jazm sebagai target utama.
-- Ambiguity: LOW
-- Status: PILOT WITH CEILING NOTE
-
-### L10-P06 — Direct demonstrative recognition
-- Target: K24
+### L10-P16 — K19 direct recognition
+- Target: K19
 - Reference: QS 2:2
-- Target span: `ذَٰلِكَ الْكِتَابُ`
+- Target span: `لَا رَيْبَ`
 - Response class: recognition/relation-lite
-- Prompt: identifikasi isim isyarah dan unsur nominal yang ditunjuk pada span minimal.
-- Expected: `ذلك` = isim isyarah; `الكتاب` = unsur nominal terkait pada span.
-- Critical misconception: hanya menerjemahkan `itu` tanpa klasifikasi bentuk.
-- Error: E01/E04
-- Ambiguity: MEDIUM — scoring tidak meminta analisis badal/apposition lanjutan.
+- Prompt: identifikasi marker negatif pada span dan bedakan dari negasi verbal.
+- Expected: `لا` dikenali sebagai marker pada struktur nominal; scoring tidak meminta analisis lengkap fungsi lanjutannya.
+- Critical misconception: memaksakan pola negasi verbal pada struktur nominal.
+- Error: E02/E04
+- Feature ceiling: no advanced case explanation required.
+- Ambiguity: MEDIUM
 - Status: PILOT WITH CEILING NOTE
 
-### L10-P07 — Contrast demonstrative vs relative pronoun
-- Target: K24
-- Reference: QS 1:7
-- Target span: `الَّذِينَ`
-- Response class: negative control/contrast
-- Prompt: apakah target merupakan isim isyarah?
-- Expected: tidak; target adalah isim maushul, bukan demonstratif.
-- Critical misconception: menyamakan semua closed-class nominal forms.
-- Error: E02/E07
-- Feature ceiling: tidak meminta analisis relative clause.
-- Ambiguity: LOW
-- Status: PILOT NEGATIVE CONTROL
+### L10-P17 — K20 prerequisite probe
+- Target: K20
+- Prerequisite: K08/K13
+- Reference: QS 2:255
+- Target span: `اللَّهُ لَا إِلَٰهَ`
+- Response class: prerequisite/boundary
+- Prompt: identifikasi unsur nominal awal dan marker negatif berikutnya; jangan analisis keseluruhan ayat.
+- Expected: `الله` = unsur nominal; `لا` = marker negatif nominal pada target span.
+- Critical misconception: gagal mempertahankan kategori unsur ketika struktur menjadi lebih panjang.
+- Error: E04/E05
+- Ambiguity: MEDIUM
+- Status: PILOT PREREQUISITE
 
-### L10-P08 — Relative-pronoun recognition
-- Target: K26
-- Reference: QS 1:7
-- Target span: `الَّذِينَ أَنْعَمْتَ`
-- Response class: recognition/relation-lite
-- Prompt: identifikasi isim maushul pada span dan batas awal silahnya tanpa menganalisis dependency lanjutan.
-- Expected: `الذين` = isim maushul; `أنعمت` memulai silah pada span.
-- Critical misconception: menganggap `الذين` sebagai demonstratif atau artikel + isim biasa.
-- Error: E02/E04
-- Ambiguity: LOW
-- Status: PILOT
-
-### L10-P09 — Transfer relative-pronoun recognition
-- Target: K26
-- Reference: QS 107:1
-- Target span: `الَّذِي يُكَذِّبُ`
-- Response class: transfer
-- Prompt: terapkan pengenalan isim maushul pada contoh baru.
-- Expected: `الذي` = isim maushul; `يكذب` bagian awal silah pada ceiling L10.
-- Critical misconception: transfer gagal ketika bentuk berubah dari plural ke singular.
-- Error: E06
+### L10-P18 — K21 transfer
+- Target: K21
+- Prerequisite: K16/K17
+- Reference: QS 2:3
+- Target span: `وَيُقِيمُونَ الصَّلَاةَ`
+- Response class: transfer/relation
+- Prompt: identifikasi marker koordinasi dan bentuk verbal sesudahnya tanpa meminta relation Stage 3.
+- Expected: `و` = koordinasi; `يقيمون` = fi'il mudhari'.
+- Critical misconception: transfer gagal saat marker menempel pada fi'il.
+- Error: E05/E06
 - Ambiguity: LOW
 - Status: PILOT TRANSFER
 
-### L10-P10 — Conditional marker boundary
-- Target: K29/K30 boundary
-- Reference: QS 110:1
-- Target span: `إِذَا جَاءَ نَصْرُ اللَّهِ`
-- Response class: recognition/boundary
-- Prompt: identifikasi marker pembuka konstruksi kondisional tanpa meminta analisis jawab syarat lengkap.
-- Expected: `إذا` dikenali sebagai marker kondisional/temporal conditional pada ceiling L10.
-- Critical misconception: menganggap `إذا` sekadar adverb waktu tanpa fungsi penghubung struktur.
-- Error: E02/E04
+### L10-P19 — K22 negative control
+- Target: K22
+- Reference: QS 103:2
+- Target span: `إِنَّ الْإِنسَانَ`
+- Response class: recognition/contrast
+- Prompt: apakah span ini merupakan konstruksi demonstratif atau relative-pronoun?
+- Expected: tidak; target membuka konstruksi lain dan bukan K24/K26.
+- Critical misconception: menyamakan semua particle-led nominal structures.
+- Error: E02/E07
+- Ambiguity: LOW
+- Status: PILOT NEGATIVE CONTROL
+
+### L10-P20 — K23 direct classification
+- Target: K23
+- Prerequisite: K08/K13
+- Reference: QS 103:2
+- Target span: `إِنَّ الْإِنسَانَ لَفِي خُسْرٍ`
+- Response class: relation-lite
+- Prompt: identifikasi marker pembuka dan unsur nominal yang langsung berada di bawah pengaruhnya, tanpa meminta analisis khabar kompleks.
+- Expected: `إنّ` = marker pembuka; `الإنسان` = unsur nominal langsung sesudahnya.
+- Critical misconception: menganalisis seluruh struktur semantik untuk menjawab target lokal.
+- Error: E04/E05
+- Feature ceiling: full khabar analysis not scored.
 - Ambiguity: MEDIUM
 - Status: PILOT WITH CEILING NOTE
 
-### L10-P11 — Integrative morphology + relation
-- Target: K13/K14/K16
-- Reference: QS 1:5
-- Target span: `إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ`
-- Response class: integration
-- Prompt: identifikasi dua objek yang didahulukan, dua fi'il mudhari', dan marker koordinasi di antara dua unit.
-- Expected: `إياك` pada masing-masing unit sebagai objek; `نعبد/نستعين` sebagai fi'il mudhari'; `و` sebagai penghubung koordinatif.
-- Critical misconception: peserta mampu mengenali bentuk satuan tetapi gagal mengintegrasikan fungsi lokal.
-- Error: E03/E04/E05
-- Feature ceiling: tidak meminta analisis retorika pengulangan atau discourse relation.
+### L10-P21 — K25 contrast demonstrative/relative
+- Target: K25
+- Prerequisite: K24/K26
+- Reference: QS 2:5
+- Target span: `أُولَٰئِكَ عَلَىٰ هُدًى`
+- Response class: contrast/transfer
+- Prompt: identifikasi jenis bentuk awal dan bedakan dari isim maushul.
+- Expected: `أولئك` = isim isyarah, bukan isim maushul.
+- Critical misconception: mengandalkan makna 'mereka' lalu salah klasifikasi.
+- Error: E02/E06/E07
 - Ambiguity: LOW
-- Status: PILOT INTEGRATIVE
+- Status: PILOT CONTRAST TRANSFER
 
-### L10-P12 — Integrative demonstrative/nominal boundary
-- Target: K24 + prerequisite nominal operations
-- Reference: QS 3:58
-- Target span: `ذَٰلِكَ نَتْلُوهُ`
-- Response class: integration/transfer
-- Prompt: identifikasi isim isyarah dan klasifikasikan bentuk verbal sesudahnya tanpa memaksa analisis sentence relation Stage 3.
-- Expected: `ذلك` = isim isyarah; `نتلوه` = bentuk verbal; hubungan penuh antarunit tidak menjadi target scoring.
-- Critical misconception: mencoba menyelesaikan item melalui terjemahan keseluruhan atau analisis wacana.
-- Error: E02/E06
+### L10-P22 — K27 direct relation-lite
+- Target: K27
+- Prerequisite: K26
+- Reference: QS 107:1
+- Target span: `الَّذِي يُكَذِّبُ`
+- Response class: relation-lite
+- Prompt: tentukan unsur relative-pronoun dan awal silah tanpa melacak referential dependency lebih tinggi.
+- Expected: `الذي` = isim maushul; `يكذب` = awal silah.
+- Critical misconception: memasukkan antecedent/resumptive reasoning Stage 3 ke target lokal.
+- Error: E04/E05
+- Ambiguity: LOW
+- Status: PILOT
+
+### L10-P23 — K28 prerequisite/transfer
+- Target: K28
+- Prerequisite: K13/K16
+- Reference: QS 2:4
+- Target span: `وَبِالْآخِرَةِ هُمْ يُوقِنُونَ`
+- Response class: prerequisite/transfer
+- Prompt: identifikasi marker awal, dhamir munfashil, dan fi'il mudhari' yang tampak; hubungan sentence-level penuh tidak dinilai.
+- Expected: `و` = koordinasi; `هم` = dhamir munfashil; `يوقنون` = fi'il mudhari'.
+- Critical misconception: gagal mengintegrasikan beberapa operasi lokal yang sudah dikuasai.
+- Error: E05/E06
+- Feature ceiling: no Stage-3 clause relation scoring.
 - Ambiguity: MEDIUM
-- Status: PILOT INTEGRATIVE WITH CEILING NOTE
+- Status: PILOT PREREQUISITE TRANSFER
 
-## 4. Batch-01 distribution audit
+### L10-P24 — K29/K30 contrast discriminator
+- Target: K29/K30
+- Prerequisite: K13
+- Reference: QS 110:1
+- Target span: `إِذَا جَاءَ نَصْرُ اللَّهِ`
+- Response class: contrast/discrimination
+- Prompt: identifikasi marker kondisional dan tentukan apakah span ini sudah memuat jawab syarat lengkap.
+- Expected: `إذا` = marker kondisional; span ini belum memuat jawab syarat lengkap.
+- Critical misconception: menganggap keberadaan marker sudah sama dengan struktur syarat + jawab lengkap.
+- Error: E04/E07
+- Ambiguity: LOW
+- Status: PILOT NEGATIVE/BOUNDARY CONTROL
 
-Pool size: **12/36 = 33.33%**.
+## 5. Distribution audit after P24
 
-Coverage sementara:
-- direct/classification: P01, P02, P05, P06, P08
-- negative/contrast: P03, P04, P07
-- transfer: P09, P12
-- boundary/prerequisite: P06, P10
-- integrative: P11, P12
+Pool size: **24/36 = 66.67%**.
 
-Current coverage is intentionally incomplete. K13–K30 must not be represented only by a handful of salient structures.
+Coverage status:
+- K13–K30 now broadly represented, including previously missing K15, K17–K23, K25, K27–K30;
+- direct/classification exposure is adequate for most subskills;
+- negative/contrast controls increased through P15, P19, P21, P24;
+- prerequisite probes strengthened through P17, P23;
+- transfer coverage strengthened through P18, P21, P23;
+- integrative coverage still needs expansion in final 12 items.
 
-## 5. Expansion priorities P13–P24
-
-1. tambah direct items untuk kompetensi K15, K17–K23, K25, K27–K30;
-2. tambah negative controls yang membedakan surface similarity dari target relation;
-3. tambah prerequisite probes agar failure dapat dirouting ke L05–L09 secara lokal;
-4. tambah transfer dari surah berbeda;
-5. audit setiap occurrence yang memerlukan Stage 3 relation dan tandai PREMATURE bila operasi itu wajib untuk menjawab.
+Remaining gaps before completion:
+1. more independent examples for K17–K23;
+2. more integrative items combining 2–3 local operations without Stage-3 leakage;
+3. at least two additional prerequisite probes;
+4. final PREMATURE/feature-ceiling audit across all 36;
+5. final six-item assembly simulation.
 
 ## 6. Working routing gate
 
-Untuk pilot nanti, selected six dari pool L10 harus memuat:
+Selected six dari pool L10 harus memuat:
 - minimal 4 target K berbeda;
 - 1 prerequisite integrity probe;
 - 1 contrast/negative control;
@@ -198,6 +205,10 @@ Untuk pilot nanti, selected six dari pool L10 harus memuat:
 
 Mastery sementara tetap bukan skor mentah saja. Kegagalan prerequisite atau transfer membuka diagnosis lokal L05–L10.
 
-## 7. Governance
+## 7. Next batch P25–P36
+
+Final 12 items harus memprioritaskan integrative discrimination, independent examples K17–K23, prerequisite depth, dan PREMATURE audit. Setelah 36/36, status dapat naik menjadi `POOL COMPLETE — READY FOR CONTENT QUALITY REVIEW`, bukan production freeze.
+
+## 8. Governance
 
 Dokumen berada di research layer PR #4. Tidak mengubah registry produksi. Production freeze membutuhkan Arabic-content review, item-quality review, pilot data, dan mapping RIQA OS.
