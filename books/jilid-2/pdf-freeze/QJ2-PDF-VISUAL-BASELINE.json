@@ -1,0 +1,52 @@
+{
+  "schema": "QJ2_PDF_VISUAL_BASELINE_V1",
+  "status": "FROZEN_BASELINE",
+  "scope": "QURBATA Jilid 2 participant-facing PDF visual production",
+  "rules": {
+    "page_size": "A5",
+    "new_material_presentation": {
+      "status": "FROZEN",
+      "pattern": "Arabic component(s) with arrow(s) leading to joined/read object",
+      "purpose": "show new material before practice",
+      "must_not_be_removed": true
+    },
+    "practice_grid": {
+      "status": "FROZEN_VISUAL_GRAMMAR",
+      "two_letter_or_short_step": "4 boxes per row",
+      "three_letter_or_longer_step": "3 boxes per row",
+      "internal_model": "12-column grid; L2 span=3, L3 span=4",
+      "adaptive_by_learning_step": true
+    },
+    "arabic_practice_font": {
+      "family": "KFGQPC Uthman Taha Naskh",
+      "status": "FROZEN",
+      "minimum_visual_character": "large participant-facing Arabic",
+      "reference_practice_size_pt": 36,
+      "legacy_amiri_as_base_font": "FORBIDDEN"
+    },
+    "harakat": {
+      "positioning": "native OpenType mark/mkmk from KFGQPC",
+      "detached_manual_marks": "FORBIDDEN"
+    },
+    "sukun": {
+      "status": "FROZEN",
+      "baseline_version": "V7.6",
+      "render_codepoint": "U+0652",
+      "visual_outline": "Amiri U+06E1 only as replacement outline",
+      "base_font": "KFGQPC Uthman Taha Naskh",
+      "vertical_shift_font_units": -1700,
+      "positioning": "KFGQPC U+0652 GPOS preserved"
+    }
+  },
+  "reference_sources": {
+    "visual_grammar_renderer": "tools/render_qurbata_jilid2_p001_v1.py",
+    "current_kfgqpc_wrapper": "tools/render_qurbata_jilid2_p001_v19_kfgqpc.py",
+    "current_sukun_reference": "tools/render_qurbata_jilid2_p031_frozen_sukun.py",
+    "qj2_master_freeze_checklist_commit": "7e72f9e8b43aeb5432d63ec5e89c39c76e6061d4"
+  },
+  "change_control": {
+    "rule": "No frozen visual property may be changed silently. Any change requires a new baseline version and explicit approval.",
+    "dist_is_source_of_truth": false,
+    "repository_registry_is_source_of_truth": true
+  }
+}
