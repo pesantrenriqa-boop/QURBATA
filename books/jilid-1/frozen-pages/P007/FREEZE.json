@@ -1,14 +1,15 @@
 {
   "page": "QJ1-P007",
-  "status": "REOPENED_FOR_CONTENT_CORRECTION",
-  "reason": "Rendered first two rows previously inherited stale Sin-Shin exercises; user detected mismatch. Prior freeze is invalid until corrected PDF is reviewed.",
+  "status": "FROZEN_APPROVED",
+  "approval_basis": "user approved corrected content-verified P007",
   "material_focus": ["صَ", "ضَ"],
-  "corrected_renderer": "tools/render_qurbata_jilid1_p007_clean_v1.py",
+  "approved_renderer": "tools/render_qurbata_jilid1_p007_clean_v1.py",
   "required_output_marker": "QJ1_P007_SAD_DAD_CONTENT_VERIFIED=PASS",
-  "required_content_guard": "RENDERED_CONTENT_MATCH=23_OF_23",
-  "required_first_two_rows_guard": "FIRST_TWO_ROWS=صَ|ضَ_FOCUS_VERIFIED",
+  "content_guard": "RENDERED_CONTENT_MATCH=23_OF_23",
+  "first_two_rows_guard": "FIRST_TWO_ROWS=صَ|ضَ_FOCUS_VERIFIED",
   "base_font": "KFGQPC_UTHMAN_TAHA",
   "practice_font_pt": 40,
   "group_spacing": "PRESERVED",
-  "change_policy": "DO_NOT_REFREEZE_UNTIL_USER_REVIEWS_CORRECTED_PDF"
+  "bottom_safe_area": "ENFORCED",
+  "change_policy": "DO_NOT_MODIFY_WITHOUT_EXPLICIT_USER_REOPEN_APPROVAL"
 }
