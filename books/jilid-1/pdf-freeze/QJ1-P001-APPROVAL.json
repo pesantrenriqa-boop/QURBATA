@@ -1,0 +1,23 @@
+{
+  "schema": "qurbata.pdf-page-approval.v1",
+  "jilid": 1,
+  "page": "P001",
+  "status": "VISUAL_APPROVED_FROZEN",
+  "approval": "USER_CONFIRMED_CORRECT",
+  "visual_anchor": "P017_STYLE_SYSTEM",
+  "base_font": "KFGQPC_UTHMAN_TAHA",
+  "presentation_font_pt": 46,
+  "practice_font_pt": 42,
+  "visible_boxes": false,
+  "layout": {
+    "two_letter": "4_OBJECTS_PER_ROW",
+    "three_letter": "3_OBJECTS_PER_ROW"
+  },
+  "content": {
+    "source": "QJ1-P001 recovered official source",
+    "objects": 24
+  },
+  "renderer": "tools/render_qurbata_jilid1_p001_print_anchor_v1.py",
+  "renderer_commit": "44cb6b7a60638e45c396c70ef06897a1e6c15f7e",
+  "rule": "Future Jilid 1 production must preserve this approved visual system unless explicitly re-approved. PDF binary SHA-256 is recorded when the generated artifact is ingested into the permanent print artifact store."
+}
