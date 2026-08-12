@@ -1,16 +1,19 @@
 {
   "page": "QJ1-P007",
   "status": "FROZEN_APPROVED",
-  "approval_basis": "user confirmed P007 checked",
+  "approval_basis": "user confirmed P007 spacing-preserved candidate finished",
   "material_focus": ["صَ", "ضَ"],
   "render_balance": {"focus": 31, "review": 30, "rendered_tokens": 61},
   "approved_renderer": "tools/render_qurbata_jilid1_p007_clean_v1.py",
-  "visual_baseline": "P006_SAFEAREA_V3",
+  "approved_output_family": "QURBATA-JILID-1-P007-SAD-DAD-CANDIDATE-V2-FROZEN-SPACING",
+  "visual_baseline": "P001-P006_FROZEN_SPACING_BASELINE",
   "base_font": "KFGQPC_UTHMAN_TAHA",
   "practice_font_pt": 40,
+  "group_spacing": {"two_letter_group_gap_mm": 10, "three_letter_group_gap_mm": 11, "status": "PRESERVED"},
   "grid_height_mm": 142,
   "row_gap_mm": 1.4,
   "bottom_safe_spacer_mm": 8,
   "bottom_glyph_overflow": 0,
+  "large_type_experiment": "NOT_APPLICABLE",
   "change_policy": "DO_NOT_MODIFY_WITHOUT_EXPLICIT_USER_REOPEN_APPROVAL"
 }
