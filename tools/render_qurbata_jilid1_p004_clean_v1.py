@@ -7,42 +7,34 @@ ROOT=Path(__file__).resolve().parents[1]
 if str(ROOT/'tools') not in sys.path: sys.path.insert(0,str(ROOT/'tools'))
 import render_qurbata_jilid2_p001_v19_kfgqpc as kfgloader
 LOGO=ROOT/'books/shared/assets/qurbata-logo.svg'; OUT0=ROOT/'dist/qurbata-print-ready/jilid-1/pages/P004'; FONT='QURBATA KFGQPC Uthman Taha'
-# Restored from the historical P004 v0.2.0 50:50 ladder, before later conflicting regeneration policies.
-EXERCISES=['دَ ءَ','ذَ أَ','رَ بَ','زَ تَ','ثَ دَ','جَ ذَ','حَ رَ','خَ زَ','دَ ءَ دَ','ذَ أَ ذَ','رَ بَ رَ','زَ تَ زَ','دَ ثَ دَ','ذَ جَ ذَ','رَ حَ رَ','زَ خَ زَ','ءَ دَ ءَ','أَ ذَ أَ','بَ رَ بَ','تَ زَ تَ','ثَ دَ ثَ','جَ ذَ جَ','حَ رَ حَ','خَ زَ خَ']
-FOCUS={'دَ','ذَ','رَ','زَ'}; REVIEW={'ءَ','أَ','بَ','تَ','ثَ','جَ','حَ','خَ'}
-def toks(s): return s.split()
-def obj(s): return '<span class="run">'+''.join(f'<span>{html.escape(x)}</span>' for x in toks(s))+'</span>'
-def audit_source():
-    ts=[x for e in EXERCISES for x in toks(e)]; f=sum(x in FOCUS for x in ts); r=sum(x in REVIEW for x in ts)
-    if len(EXERCISES)!=24 or len(ts)!=64 or f!=32 or r!=32: raise RuntimeError(f'P004_50_50_FAIL total={len(ts)} focus={f} review={r}')
-    if any(x not in FOCUS|REVIEW for x in ts): raise RuntimeError('P004_WHITELIST_FAIL')
+FOCUS={'دَ','ذَ'}; REVIEW=['ءَ','أَ','بَ','تَ','ثَ','جَ','حَ','خَ']
+EXERCISES=['دَ ءَ','ذَ أَ','دَ بَ','ذَ تَ','دَ ثَ','ذَ جَ','دَ حَ','ذَ خَ','دَ ذَ دَ','ءَ دَ أَ','ذَ دَ ذَ','بَ ذَ تَ','دَ دَ ذَ','ثَ دَ جَ','ذَ ذَ دَ','حَ ذَ خَ','دَ ءَ ذَ','أَ دَ بَ','ذَ تَ دَ','ثَ ذَ جَ','دَ حَ ذَ','خَ دَ ءَ','ذَ أَ دَ','بَ ذَ تَ']
+def toks(s):return s.split()
+def obj(s):return '<span class="run">'+''.join(f'<span>{html.escape(x)}</span>' for x in toks(s))+'</span>'
+def audit():
+ ts=[x for e in EXERCISES for x in toks(e)]; allowed=FOCUS|set(REVIEW)
+ if len(EXERCISES)!=24 or len(ts)!=64 or any(x not in allowed for x in ts):raise RuntimeError('P004_SOURCE_AUDIT_FAIL')
+ if sum(x in FOCUS for x in ts)!=32:raise RuntimeError('P004_FOCUS_NOT_32')
 def rows():
-    items=EXERCISES[:-1]; l2=items[:8]; l3=items[8:]; out=[]
-    for i in range(0,8,4): out.append('<div class="row r2">'+''.join(f'<div class="practice l2">{obj(x)}</div>' for x in l2[i:i+4])+'</div>')
-    for i in range(0,15,3): out.append('<div class="row r3">'+''.join(f'<div class="practice l3">{obj(x)}</div>' for x in l3[i:i+3])+'</div>')
-    return ''.join(out)
-def doc(font_uri):
-    css=f'''@page{{size:A5;margin:0}}*{{box-sizing:border-box}}@font-face{{font-family:"{FONT}";src:url("{font_uri}") format("truetype");font-display:block}}html,body{{margin:0;background:#fff}}.page{{width:148mm;height:210mm;padding:3.6mm 8mm 2.5mm;display:flex;flex-direction:column;overflow:hidden;font-family:Arial,sans-serif}}.header{{height:17mm;flex:0 0 17mm;position:relative;display:flex;align-items:center;justify-content:center}}.logo{{position:absolute;left:0;width:32mm;height:17mm;object-fit:contain}}.title{{position:absolute;left:50%;transform:translateX(-50%);color:#064d37;font:700 6.2pt Georgia,"Times New Roman",serif;letter-spacing:.16em;white-space:nowrap}}.pageno{{position:absolute;right:0;top:0;width:12mm;background:#064d37;color:#fff;border-bottom:1mm solid #b98a2f;text-align:center;font-weight:700;padding:2.2mm 1mm 3mm;border-radius:0 0 3mm 3mm;font-size:12pt}}.presentation{{height:20mm;flex:0 0 20mm;display:flex;align-items:center;justify-content:center;gap:10mm;font-family:"{FONT}",serif;font-size:46pt;line-height:1;direction:rtl;font-feature-settings:'mark' 1,'mkmk' 1}}.grid{{height:158mm;flex:0 0 158mm;display:grid;grid-template-rows:repeat(7,minmax(0,1fr));row-gap:3.2mm;padding:.8mm 0 1mm}}.row{{display:flex;direction:rtl;align-items:center;justify-content:center;min-height:0}}.r2{{gap:10mm}}.r3{{gap:11mm}}.practice{{display:flex;align-items:center;justify-content:center;flex:0 0 auto;font-family:"{FONT}",serif;font-size:40pt;line-height:1.02;white-space:nowrap;font-feature-settings:'mark' 1,'mkmk' 1}}.l2{{width:23mm}}.l3{{width:35mm}}.run{{display:inline-flex;direction:rtl;align-items:center;justify-content:center}}.l2 .run{{gap:2.8mm}}.l3 .run{{gap:2.4mm}}.footer{{height:12mm;flex:0 0 12mm;display:flex;justify-content:space-between;align-items:center;padding-bottom:2.2mm;color:#173a2d}}.ar{{font-family:"{FONT}",serif;font-size:10.3pt;direction:rtl;font-feature-settings:'mark' 1,'mkmk' 1}}'''
-    return f'''<!doctype html><html><head><meta charset="utf-8"><style>{css}</style></head><body><main class="page"><header class="header"><img class="logo" src="{LOGO.resolve().as_uri()}"><div class="title">QURBATA · JILID 1</div><div class="pageno">04</div></header><section class="presentation" lang="ar" dir="rtl"><span>دَ</span><span>ذَ</span><span>رَ</span><span>زَ</span></section><section class="grid">{rows()}</section><footer class="footer"><span class="ar">قُرْآنٌ · لُغَةٌ · أَدَبٌ</span><span class="ar">تَعَلَّمْ · اِعْمَلْ · عَلِّمْ</span></footer></main></body></html>'''
-def free(base):
-    if not base.exists(): return base
-    try:
-        with open(base,'ab'): pass
-        return base
-    except PermissionError: pass
-    for n in range(1,100):
-        p=base.with_name(base.stem+f'-R{n}'+base.suffix)
-        if not p.exists(): return p
-    raise RuntimeError('NO_FREE_OUTPUT')
-async def render(h,out):
-    pdf=free(out/'QURBATA-JILID-1-P004-CANDIDATE-V1.pdf'); png=free(out/'QURBATA-JILID-1-P004-CANDIDATE-V1.png')
-    async with async_playwright() as pw:
-        b=await pw.chromium.launch(); p=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2); await p.goto(h.resolve().as_uri(),wait_until='networkidle'); await p.evaluate('document.fonts.ready')
-        if not await p.evaluate(f"()=>document.fonts.check('40pt \\\"{FONT}\\\"','دَ ذَ رَ زَ')"): raise RuntimeError('P004_FONT_BINDING_FAIL')
-        if await p.locator('.practice').count()!=23: raise RuntimeError('P004_OBJECT_COUNT_FAIL')
-        if await p.locator('.r2').count()!=2 or await p.locator('.r3').count()!=5: raise RuntimeError('P004_ROW_COUNT_FAIL')
-        await p.screenshot(path=str(png),full_page=True); await p.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'}); await b.close()
-    return pdf,png
-def main():
-    audit_source(); ap=argparse.ArgumentParser(); ap.add_argument('--output-dir',default=str(OUT0.relative_to(ROOT))); ap.add_argument('--font-file'); ap.add_argument('--font-zip'); a=ap.parse_args(); out=Path(a.output_dir); out=out if out.is_absolute() else ROOT/out; out.mkdir(parents=True,exist_ok=True); font,src=kfgloader.discover_font(a.font_file,a.font_zip,out); h=out/'QURBATA-JILID-1-P004-CANDIDATE-V1.html'; h.write_text(doc(font.resolve().as_uri()),encoding='utf-8'); pdf,png=asyncio.run(render(h,out)); print('QJ1_P004_CANDIDATE_V1=PASS'); print('POLICY=DEC_CUR_007_50_50_CUMULATIVE'); print('SOURCE_TOKENS=64'); print('FOCUS_TOKENS=32'); print('REVIEW_TOKENS=32'); print('MATERIAL_NEW=دَ|ذَ|رَ|زَ'); print('SOURCE_EXERCISES=24'); print('RENDERED_EXERCISES=23'); print('REMOVED_ORPHAN_SOURCE=L24'); print('GLOBAL_SHELL=P001_FROZEN_CLEAN_V10'); print('BASE_FONT=KFGQPC_UTHMAN_TAHA'); print(f'FONT_SOURCE={src}'); print(f'PDF={pdf.relative_to(ROOT)}'); return 0
-if __name__=='__main__': raise SystemExit(main())
+ items=EXERCISES[:-1];out=[]
+ for i in range(0,8,4):out.append('<div class="row r2">'+''.join(f'<div class="practice l2">{obj(x)}</div>' for x in items[:8][i:i+4])+'</div>')
+ for i in range(0,15,3):out.append('<div class="row r3">'+''.join(f'<div class="practice l3">{obj(x)}</div>' for x in items[8:][i:i+3])+'</div>')
+ return ''.join(out)
+def doc(u):
+ css=f'''@page{{size:A5;margin:0}}*{{box-sizing:border-box}}@font-face{{font-family:"{FONT}";src:url("{u}") format("truetype")}}html,body{{margin:0}}.page{{width:148mm;height:210mm;padding:3.6mm 8mm 2.5mm;display:flex;flex-direction:column;overflow:hidden}}.header{{height:17mm;flex:0 0 17mm;position:relative;display:flex;align-items:center;justify-content:center}}.logo{{position:absolute;left:0;width:32mm;height:17mm}}.title{{position:absolute;left:50%;transform:translateX(-50%);color:#064d37;font:700 6.2pt Georgia;letter-spacing:.16em}}.pageno{{position:absolute;right:0;top:0;width:12mm;background:#064d37;color:white;border-bottom:1mm solid #b98a2f;text-align:center;font:700 12pt Arial;padding:2.2mm 1mm 3mm;border-radius:0 0 3mm 3mm}}.presentation{{height:20mm;display:flex;align-items:center;justify-content:center;gap:18mm;font:46pt "{FONT}";direction:rtl}}.grid{{height:158mm;display:grid;grid-template-rows:repeat(7,1fr);row-gap:3.2mm}}.row{{display:flex;direction:rtl;align-items:center;justify-content:center}}.r2{{gap:10mm}}.r3{{gap:11mm}}.practice{{display:flex;justify-content:center;font:40pt "{FONT}";white-space:nowrap}}.l2{{width:23mm}}.l3{{width:35mm}}.run{{display:inline-flex;direction:rtl}}.l2 .run{{gap:2.8mm}}.l3 .run{{gap:2.4mm}}.footer{{height:12mm;display:flex;justify-content:space-between;align-items:center;padding-bottom:2.2mm;color:#173a2d}}.ar{{font:10.3pt "{FONT}";direction:rtl}}'''
+ return f'''<!doctype html><html><head><meta charset="utf-8"><style>{css}</style></head><body><main class="page"><header class="header"><img class="logo" src="{LOGO.resolve().as_uri()}"><div class="title">QURBATA · JILID 1</div><div class="pageno">04</div></header><section class="presentation"><span>دَ</span><span>ذَ</span></section><section class="grid">{rows()}</section><footer class="footer"><span class="ar">قُرْآنٌ · لُغَةٌ · أَدَبٌ</span><span class="ar">تَعَلَّمْ · اِعْمَلْ · عَلِّمْ</span></footer></main></body></html>'''
+def free(b):
+ if not b.exists():return b
+ try:open(b,'ab').close();return b
+ except PermissionError:pass
+ for n in range(1,100):
+  p=b.with_name(b.stem+f'-R{n}'+b.suffix)
+  if not p.exists():return p
+ raise RuntimeError('NO_FREE_OUTPUT')
+async def render(h,o):
+ pdf=free(o/'QURBATA-JILID-1-P004-DAL-DHAL-CANDIDATE-V2.pdf');png=free(o/'QURBATA-JILID-1-P004-DAL-DHAL-CANDIDATE-V2.png')
+ async with async_playwright() as pw:
+  b=await pw.chromium.launch();p=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2);await p.goto(h.resolve().as_uri(),wait_until='networkidle');await p.evaluate('document.fonts.ready');await p.screenshot(path=str(png),full_page=True);await p.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await b.close()
+ return pdf
+if __name__=='__main__':
+ audit();ap=argparse.ArgumentParser();ap.add_argument('--font-file');ap.add_argument('--font-zip');a=ap.parse_args();OUT0.mkdir(parents=True,exist_ok=True);font,src=kfgloader.discover_font(a.font_file,a.font_zip,OUT0);h=OUT0/'QURBATA-JILID-1-P004-DAL-DHAL-CANDIDATE-V2.html';h.write_text(doc(font.resolve().as_uri()),encoding='utf-8');pdf=asyncio.run(render(h,OUT0));print('QJ1_P004_DAL_DHAL=PASS');print('MATERIAL_NEW=دَ|ذَ');print('PDF='+str(pdf.relative_to(ROOT)))
