@@ -1,5 +1,5 @@
 {
-  "schema": "QJ2_PDF_VISUAL_BASELINE_V1",
+  "schema": "QJ2_PDF_VISUAL_BASELINE_V2",
   "status": "FROZEN_BASELINE",
   "scope": "QURBATA Jilid 2 participant-facing PDF visual production",
   "rules": {
@@ -10,19 +10,23 @@
       "purpose": "show new material before practice",
       "must_not_be_removed": true
     },
-    "practice_grid": {
+    "practice_layout": {
       "status": "FROZEN_VISUAL_GRAMMAR",
-      "two_letter_or_short_step": "4 boxes per row",
-      "three_letter_or_longer_step": "3 boxes per row",
-      "internal_model": "12-column grid; L2 span=3, L3 span=4",
-      "adaptive_by_learning_step": true
+      "two_letter_or_short_step": "4 objects per row",
+      "three_letter_or_longer_step": "3 objects per row",
+      "internal_model": "12-column placement; L2 span=3, L3 span=4",
+      "adaptive_by_learning_step": true,
+      "visible_cell_border": "FORBIDDEN",
+      "visible_box_background": "FORBIDDEN",
+      "interpretation": "3/4 objects per row means spacing/placement only; participant-facing Arabic is not enclosed in boxes"
     },
     "arabic_practice_font": {
       "family": "KFGQPC Uthman Taha Naskh",
       "status": "FROZEN",
       "minimum_visual_character": "large participant-facing Arabic",
       "reference_practice_size_pt": 36,
-      "legacy_amiri_as_base_font": "FORBIDDEN"
+      "legacy_amiri_as_base_font": "FORBIDDEN",
+      "fallback_font_for_final_pdf": "FORBIDDEN"
     },
     "harakat": {
       "positioning": "native OpenType mark/mkmk from KFGQPC",
