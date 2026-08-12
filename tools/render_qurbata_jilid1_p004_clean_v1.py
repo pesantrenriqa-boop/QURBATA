@@ -8,9 +8,8 @@ if str(ROOT/'tools') not in sys.path: sys.path.insert(0,str(ROOT/'tools'))
 import render_qurbata_jilid2_p001_v19_kfgqpc as kfgloader
 LOGO=ROOT/'books/shared/assets/qurbata-logo.svg'; OUT0=ROOT/'dist/qurbata-print-ready/jilid-1/pages/P004'; FONT='QURBATA KFGQPC Uthman Taha'
 FOCUS={'دَ','ذَ'}; REVIEW=['ءَ','أَ','بَ','تَ','ثَ','جَ','حَ','خَ']
-# 23 rendered objects = 61 tokens. Split pages cannot be exactly 50:50 at odd token count;
-# target is nearest possible balance: 31 focus / 30 cumulative review. L24 is retained as source reserve only.
-EXERCISES=['دَ ءَ','ذَ أَ','دَ بَ','ذَ تَ','دَ ثَ','ذَ جَ','دَ حَ','ذَ خَ','دَ ذَ دَ','ءَ دَ أَ','ذَ دَ ذَ','بَ ذَ تَ','دَ دَ ذَ','ثَ دَ جَ','ذَ ذَ دَ','حَ ذَ خَ','دَ ءَ ذَ','أَ دَ بَ','ذَ تَ دَ','ثَ ذَ جَ','دَ حَ ذَ','خَ دَ ءَ','ذَ أَ دَ','بَ ذَ تَ']
+# 23 rendered objects = 61 tokens; nearest 50:50 is 31 focus / 30 cumulative review.
+EXERCISES=['دَ ءَ','ذَ أَ','دَ بَ','ذَ تَ','دَ ثَ','ذَ جَ','دَ حَ','ذَ خَ','دَ ءَ دَ','ءَ دَ أَ','ذَ بَ ذَ','بَ ذَ تَ','دَ تَ ذَ','ثَ دَ جَ','ذَ جَ دَ','حَ ذَ خَ','دَ ءَ ذَ','أَ دَ بَ','ذَ تَ دَ','ثَ ذَ جَ','دَ حَ ذَ','خَ دَ ءَ','ذَ أَ دَ','بَ ذَ تَ']
 def toks(s):return s.split()
 def obj(s):return '<span class="run">'+''.join(f'<span>{html.escape(x)}</span>' for x in toks(s))+'</span>'
 def audit():
@@ -34,9 +33,9 @@ def free(b):
   if not p.exists():return p
  raise RuntimeError('NO_FREE_OUTPUT')
 async def render(h,o):
- pdf=free(o/'QURBATA-JILID-1-P004-DAL-DHAL-CANDIDATE-V2.pdf');png=free(o/'QURBATA-JILID-1-P004-DAL-DHAL-CANDIDATE-V2.png')
+ pdf=free(o/'QURBATA-JILID-1-P004-DAL-DHAL-CANDIDATE-V3.pdf');png=free(o/'QURBATA-JILID-1-P004-DAL-DHAL-CANDIDATE-V3.png')
  async with async_playwright() as pw:
   b=await pw.chromium.launch();p=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2);await p.goto(h.resolve().as_uri(),wait_until='networkidle');await p.evaluate('document.fonts.ready');await p.screenshot(path=str(png),full_page=True);await p.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await b.close()
  return pdf
 if __name__=='__main__':
- audit();ap=argparse.ArgumentParser();ap.add_argument('--font-file');ap.add_argument('--font-zip');a=ap.parse_args();OUT0.mkdir(parents=True,exist_ok=True);font,src=kfgloader.discover_font(a.font_file,a.font_zip,OUT0);h=OUT0/'QURBATA-JILID-1-P004-DAL-DHAL-CANDIDATE-V2.html';h.write_text(doc(font.resolve().as_uri()),encoding='utf-8');pdf=asyncio.run(render(h,OUT0));print('QJ1_P004_DAL_DHAL=PASS');print('MATERIAL_NEW=دَ|ذَ');print('RENDER_BALANCE=31_FOCUS|30_REVIEW');print('PDF='+str(pdf.relative_to(ROOT)))
+ audit();ap=argparse.ArgumentParser();ap.add_argument('--font-file');ap.add_argument('--font-zip');a=ap.parse_args();OUT0.mkdir(parents=True,exist_ok=True);font,src=kfgloader.discover_font(a.font_file,a.font_zip,OUT0);h=OUT0/'QURBATA-JILID-1-P004-DAL-DHAL-CANDIDATE-V3.html';h.write_text(doc(font.resolve().as_uri()),encoding='utf-8');pdf=asyncio.run(render(h,OUT0));print('QJ1_P004_DAL_DHAL=PASS');print('MATERIAL_NEW=دَ|ذَ');print('RENDER_BALANCE=31_FOCUS|30_REVIEW');print('PDF='+str(pdf.relative_to(ROOT)))
