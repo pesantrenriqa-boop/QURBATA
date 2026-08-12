@@ -1,0 +1,60 @@
+{
+  "schema": "QURBATA_PRINT_VISUAL_SYSTEM_V1",
+  "status": "FROZEN_ANCHOR_SYSTEM",
+  "scope": ["QURBATA Jilid 1", "QURBATA Jilid 2"],
+  "anchor": {
+    "historical_page": "QJ2-P017",
+    "historical_commit": "cee937e853550c63bb508e23edfebce0d8f583f7",
+    "renderer": "tools/render_qurbata_jilid2_p017_v1_kfgqpc_ha.py",
+    "role": "visual anchor only; content remains page-specific"
+  },
+  "global": {
+    "page_size": "A5 portrait",
+    "arabic_font": "KFGQPC Uthman Taha Naskh",
+    "font_fallback_in_final_pdf": "FORBIDDEN",
+    "presentation_font_size_pt_reference": 46,
+    "practice_font_size_pt_reference": 42,
+    "visible_practice_boxes": "FORBIDDEN",
+    "visible_practice_borders": "FORBIDDEN",
+    "practice_background_boxes": "FORBIDDEN",
+    "presentation_arrow": "REQUIRED_WHEN_NEW_READING_FORM_IS_INTRODUCED",
+    "arrow_character": "←",
+    "practice_layout": {
+      "short_or_two_letter_step": "4 objects per row",
+      "longer_or_three_letter_step": "3 objects per row",
+      "special_page_types": "layout-specific; do not force reading grid"
+    },
+    "harakat_positioning": "KFGQPC native OpenType mark/mkmk",
+    "manual_detached_marks": "FORBIDDEN",
+    "sukun": {
+      "baseline_version": "V7.6",
+      "render_codepoint": "U+0652",
+      "visual_outline": "Amiri U+06E1 only as outline donor",
+      "vertical_shift_font_units": -1700,
+      "base_font_remains": "KFGQPC Uthman Taha Naskh"
+    }
+  },
+  "page_types": {
+    "READING_ACQUISITION": "P017 visual shell + arrow presentation + large Arabic + 3/4 objects per row without boxes",
+    "READING_REVIEW": "same visual shell; presentation may be review cue; no visible boxes",
+    "ASSESSMENT": "same header/footer/font identity; assessment-specific layout; no forced acquisition arrow",
+    "HAFALAN": "same visual identity; Quran text/hafalan layout; no forced 3/4 grid",
+    "ARABIC_UNIT": "same visual identity; oral/Arabic unit layout; no forced reading grid",
+    "AKHLAK": "same visual identity; adab/akhlak layout; no forced reading grid",
+    "SIMULATION": "same visual identity; reading simulation layout"
+  },
+  "output_contract": {
+    "root": "dist/qurbata-print-ready",
+    "jilid_1_pages": "dist/qurbata-print-ready/jilid-1/pages",
+    "jilid_1_combined": "dist/qurbata-print-ready/jilid-1/QURBATA-JILID-1-PRINT-REVIEW.pdf",
+    "jilid_2_pages": "dist/qurbata-print-ready/jilid-2/pages",
+    "jilid_2_combined": "dist/qurbata-print-ready/jilid-2/QURBATA-JILID-2-PRINT-REVIEW.pdf",
+    "bundle": "dist/qurbata-print-ready/QURBATA-JILID-1-2-PRINT-REVIEW-BUNDLE.pdf"
+  },
+  "freeze_policy": {
+    "every_approved_page_requires": ["source path", "renderer path", "renderer commit", "page PDF SHA256", "approval date"],
+    "dist_is_source_of_truth": false,
+    "repository_freeze_register_is_source_of_truth": true,
+    "silent_layout_regression": "FORBIDDEN"
+  }
+}
