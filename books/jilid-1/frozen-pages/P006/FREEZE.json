@@ -1,0 +1,15 @@
+{
+  "page": "QJ1-P006",
+  "status": "FROZEN_APPROVED",
+  "material_focus": ["سَ", "شَ"],
+  "render_balance": {"focus": 31, "review": 30},
+  "approved_renderer": "tools/render_qurbata_jilid1_p006_clean_v1.py",
+  "approved_renderer_commit": "ec8c9cc579b40cbce61b75eac5bdae4b67defada",
+  "visual_baseline": "P001_FROZEN_CLEAN_V10_PLUS_SAFEAREA",
+  "practice_font_pt": 40,
+  "grid_height_mm": 142,
+  "row_gap_mm": 1.4,
+  "bottom_safe_spacer_mm": 8,
+  "bottom_glyph_overflow": 0,
+  "change_policy": "DO_NOT_MODIFY_WITHOUT_EXPLICIT_USER_REOPEN_APPROVAL"
+}
