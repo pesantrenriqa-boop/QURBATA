@@ -1,0 +1,16 @@
+{
+  "page": "QJ1-P007",
+  "status": "FROZEN_APPROVED",
+  "approval_basis": "user confirmed P007 checked",
+  "material_focus": ["صَ", "ضَ"],
+  "render_balance": {"focus": 31, "review": 30, "rendered_tokens": 61},
+  "approved_renderer": "tools/render_qurbata_jilid1_p007_clean_v1.py",
+  "visual_baseline": "P006_SAFEAREA_V3",
+  "base_font": "KFGQPC_UTHMAN_TAHA",
+  "practice_font_pt": 40,
+  "grid_height_mm": 142,
+  "row_gap_mm": 1.4,
+  "bottom_safe_spacer_mm": 8,
+  "bottom_glyph_overflow": 0,
+  "change_policy": "DO_NOT_MODIFY_WITHOUT_EXPLICIT_USER_REOPEN_APPROVAL"
+}
