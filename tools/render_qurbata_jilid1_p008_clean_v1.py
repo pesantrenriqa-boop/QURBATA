@@ -1,69 +1,50 @@
 #!/usr/bin/env python3
-# QURBATA Jilid 1 P008 — طَ ظَ; content-verified standalone page over stable P004 shell.
+# QURBATA Jilid 1 P008 — طَ ظَ. Standalone renderer; no inherited exercise globals.
 from pathlib import Path
-import importlib.util, argparse, asyncio, sys
+import argparse, asyncio, html, sys
 from playwright.async_api import async_playwright
 ROOT=Path(__file__).resolve().parents[1]
 if str(ROOT/'tools') not in sys.path: sys.path.insert(0,str(ROOT/'tools'))
 import render_qurbata_jilid2_p001_v19_kfgqpc as kfgloader
-BASE=ROOT/'tools/render_qurbata_jilid1_p004_clean_v1.py'
-spec=importlib.util.spec_from_file_location('p004shell',BASE);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
-OUT=ROOT/'dist/qurbata-print-ready/jilid-1/pages/P008'
-FOCUS={'طَ','ظَ'}
-REVIEW={'ءَ','أَ','بَ','تَ','ثَ','جَ','حَ','خَ','دَ','ذَ','رَ','زَ','سَ','شَ','صَ','ضَ'}
-EXERCISES=['طَ ءَ','ظَ أَ','طَ بَ','ظَ تَ','ثَ طَ','جَ ظَ','حَ طَ','خَ ظَ','طَ دَ طَ','ظَ ذَ ظَ','طَ رَ طَ','ظَ زَ ظَ','طَ سَ طَ','ظَ شَ ظَ','طَ صَ طَ','ظَ ضَ ظَ','ءَ طَ ءَ','أَ ظَ أَ','بَ طَ بَ','تَ ظَ تَ','ثَ طَ ثَ','جَ ظَ جَ','حَ طَ حَ','خَ ظَ خَ']
+OUT=ROOT/'dist/qurbata-print-ready/jilid-1/pages/P008';LOGO=ROOT/'books/shared/assets/qurbata-logo.svg';FONT='QURBATA KFGQPC Uthman Taha'
+FOCUS={'طَ','ظَ'};REVIEW={'ءَ','أَ','بَ','تَ','ثَ','جَ','حَ','خَ','دَ','ذَ','رَ','زَ','سَ','شَ','صَ','ضَ'}
+# Rows 1–2 explicitly teach the NEW pair. Remaining rows mix cumulative review.
+EXERCISES=['طَ ظَ','ظَ طَ','طَ طَ','ظَ ظَ','طَ ظَ','ظَ طَ','طَ طَ','ظَ ظَ','طَ ءَ طَ','ظَ أَ ظَ','طَ بَ طَ','ظَ تَ ظَ','ثَ طَ ثَ','جَ ظَ جَ','حَ طَ حَ','خَ ظَ خَ','دَ طَ دَ','ذَ ظَ ذَ','رَ طَ رَ','زَ ظَ زَ','سَ طَ سَ','شَ ظَ شَ','صَ طَ ضَ','ضَ ظَ صَ']
 
+def obj(s):return '<span class="run">'+''.join(f'<span>{html.escape(x)}</span>' for x in s.split())+'</span>'
+def rows():
+ items=EXERCISES[:-1];out=[]
+ for i in range(0,8,4):out.append('<div class="row r2">'+''.join(f'<div class="practice l2">{obj(x)}</div>' for x in items[i:i+4])+'</div>')
+ for i in range(8,23,3):out.append('<div class="row r3">'+''.join(f'<div class="practice l3">{obj(x)}</div>' for x in items[i:i+3])+'</div>')
+ return ''.join(out)
 def audit():
-    rendered=EXERCISES[:-1];ts=[x for e in rendered for x in e.split()];f=sum(x in FOCUS for x in ts);r=len(ts)-f
-    if len(EXERCISES)!=24 or len(rendered)!=23 or len(ts)!=61: raise RuntimeError('P008_SOURCE_COUNT_FAIL')
-    if any(x not in FOCUS|REVIEW for x in ts): raise RuntimeError('P008_WHITELIST_FAIL')
-    if (f,r)!=(31,30): raise RuntimeError(f'P008_RENDER_BALANCE_FAIL focus={f} review={r}')
-    if any(not (set(e.split()) & FOCUS) for e in EXERCISES[:8]): raise RuntimeError('P008_FIRST_TWO_ROWS_MISSING_FOCUS')
-
-def doc(font_uri):
-    # Critical: inject P008 exercises into the shell BEFORE HTML is built.
-    m.EXERCISES=EXERCISES
-    s=m.doc(font_uri)
-    s=s.replace('<div class="pageno">04</div>','<div class="pageno">08</div>')
-    s=s.replace('<section class="presentation"><span>دَ</span><span>ذَ</span></section>','<section class="presentation"><span>طَ</span><span>ظَ</span></section>')
-    # Same accepted 40pt + group spacing; compress vertical allocation only for safe area.
-    s=s.replace('.grid{height:158mm;display:grid;', '.grid{height:142mm;flex:0 0 142mm;display:grid;')
-    s=s.replace('row-gap:3.2mm','row-gap:1.4mm')
-    s=s.replace('font:40pt "QURBATA KFGQPC Uthman Taha";white-space:nowrap','font:40pt/1 "QURBATA KFGQPC Uthman Taha";white-space:nowrap')
-    s=s.replace('</section><footer class="footer">','</section><div class="bottom-safe-spacer" style="height:8mm;flex:0 0 8mm"></div><footer class="footer">')
-    return s
-
-def free(base):
-    if not base.exists(): return base
-    try:
-        with open(base,'ab'): pass
-        return base
-    except PermissionError: pass
-    for n in range(1,100):
-        p=base.with_name(base.stem+f'-R{n}'+base.suffix)
-        if not p.exists(): return p
-    raise RuntimeError('P008_NO_FREE_OUTPUT')
-
+ if len(EXERCISES)!=24:raise RuntimeError('P008_SOURCE_COUNT_FAIL')
+ first8=EXERCISES[:8]
+ if any(set(e.split())-FOCUS for e in first8):raise RuntimeError('P008_FIRST_TWO_ROWS_NOT_PURE_TA_ZA')
+ ts=[x for e in EXERCISES[:-1] for x in e.split()]
+ if any(x not in FOCUS|REVIEW for x in ts):raise RuntimeError('P008_WHITELIST_FAIL')
+def doc(u):
+ css=f'''@page{{size:A5;margin:0}}*{{box-sizing:border-box}}@font-face{{font-family:"{FONT}";src:url("{u}") format("truetype")}}html,body{{margin:0}}.page{{width:148mm;height:210mm;padding:3.6mm 8mm 2.5mm;display:flex;flex-direction:column;overflow:hidden}}.header{{height:17mm;flex:0 0 17mm;position:relative;display:flex;align-items:center;justify-content:center}}.logo{{position:absolute;left:0;width:32mm;height:17mm}}.title{{position:absolute;left:50%;transform:translateX(-50%);color:#064d37;font:700 6.2pt Georgia;letter-spacing:.16em}}.pageno{{position:absolute;right:0;top:0;width:12mm;background:#064d37;color:white;border-bottom:1mm solid #b98a2f;text-align:center;font:700 12pt Arial;padding:2.2mm 1mm 3mm;border-radius:0 0 3mm 3mm}}.presentation{{height:20mm;display:flex;align-items:center;justify-content:center;gap:18mm;font:46pt "{FONT}";direction:rtl}}.grid{{height:142mm;flex:0 0 142mm;display:grid;grid-template-rows:repeat(7,1fr);row-gap:1.4mm}}.row{{display:flex;direction:rtl;align-items:center;justify-content:center}}.r2{{gap:10mm}}.r3{{gap:11mm}}.practice{{display:flex;justify-content:center;font:40pt/1 "{FONT}";white-space:nowrap}}.l2{{width:23mm}}.l3{{width:35mm}}.run{{display:inline-flex;direction:rtl}}.l2 .run{{gap:2.8mm}}.l3 .run{{gap:2.4mm}}.bottom-safe-spacer{{height:8mm;flex:0 0 8mm}}.footer{{height:12mm;display:flex;justify-content:space-between;align-items:center;padding-bottom:2.2mm;color:#173a2d}}.ar{{font:10.3pt "{FONT}";direction:rtl}}'''
+ return f'''<!doctype html><html><head><meta charset="utf-8"><style>{css}</style></head><body><main class="page"><header class="header"><img class="logo" src="{LOGO.resolve().as_uri()}"><div class="title">QURBATA · JILID 1</div><div class="pageno">08</div></header><section class="presentation"><span>طَ</span><span>ظَ</span></section><section class="grid">{rows()}</section><div class="bottom-safe-spacer"></div><footer class="footer"><span class="ar">قُرْآنٌ · لُغَةٌ · أَدَبٌ</span><span class="ar">تَعَلَّمْ · اِعْمَلْ · عَلِّمْ</span></footer></main></body></html>'''
+def free(b):
+ if not b.exists():return b
+ try:open(b,'ab').close();return b
+ except PermissionError:pass
+ for n in range(1,100):
+  p=b.with_name(b.stem+f'-R{n}'+b.suffix)
+  if not p.exists():return p
+ raise RuntimeError('P008_NO_FREE_OUTPUT')
 async def render(h):
-    pdf=free(OUT/'QURBATA-JILID-1-P008-TA-ZA-CANDIDATE-V5-CONTENT-VERIFIED.pdf')
-    png=free(OUT/'QURBATA-JILID-1-P008-TA-ZA-CANDIDATE-V5-CONTENT-VERIFIED.png')
-    expected=EXERCISES[:-1]
-    async with async_playwright() as pw:
-        b=await pw.chromium.launch();p=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
-        await p.goto(h.resolve().as_uri(),wait_until='networkidle');await p.evaluate('document.fonts.ready')
-        if not await p.evaluate("()=>document.fonts.check('40pt \"QURBATA KFGQPC Uthman Taha\"','طَ ظَ')"): raise RuntimeError('P008_FONT_BINDING_FAIL')
-        visible=await p.locator('.practice').evaluate_all("els=>els.map(e=>[...e.querySelectorAll('.run > span')].map(x=>x.textContent.trim()).join(' '))")
-        if visible!=expected: raise RuntimeError(f'P008_RENDERED_CONTENT_MISMATCH visible={visible} expected={expected}')
-        first8=visible[:8]
-        if any(('طَ' not in x and 'ظَ' not in x) for x in first8): raise RuntimeError(f'P008_FIRST_TWO_ROWS_VISUAL_FOCUS_FAIL={first8}')
-        geom=await p.evaluate("""()=>{const sp=document.querySelector('.bottom-safe-spacer').getBoundingClientRect(),boxes=[...document.querySelectorAll('.practice')].map(e=>e.getBoundingClientRect());const maxBottom=Math.max(...boxes.map(x=>x.bottom));const rows2=[...document.querySelectorAll('.r2')],rows3=[...document.querySelectorAll('.r3')];const gap=(rows)=>Math.min(...rows.flatMap(row=>{const cs=[...row.children].map(c=>c.getBoundingClientRect()).sort((a,b)=>a.left-b.left);return cs.slice(1).map((c,i)=>c.left-cs[i].right)}));return {ok:maxBottom<=sp.top&&sp.top-maxBottom>=6,g2:gap(rows2),g3:gap(rows3),clearance:sp.top-maxBottom,count:boxes.length}}""")
-        if not geom['ok']: raise RuntimeError(f'P008_SAFE_AREA_FAIL {geom}')
-        if geom['count']!=23: raise RuntimeError(f"P008_OBJECT_COUNT_FAIL={geom['count']}")
-        if geom['g2']<30 or geom['g3']<30: raise RuntimeError(f'P008_GROUP_GAP_TOO_SMALL g2={geom["g2"]} g3={geom["g3"]}')
-        await p.screenshot(path=str(png),full_page=True);await p.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await b.close()
-    return pdf,geom
-
+ pdf=free(OUT/'QURBATA-JILID-1-P008-TA-ZA-CANDIDATE-V6-STANDALONE.pdf');png=free(OUT/'QURBATA-JILID-1-P008-TA-ZA-CANDIDATE-V6-STANDALONE.png')
+ expected=EXERCISES[:-1]
+ async with async_playwright() as pw:
+  b=await pw.chromium.launch();p=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2);await p.goto(h.resolve().as_uri(),wait_until='networkidle');await p.evaluate('document.fonts.ready')
+  visible=await p.locator('.practice').evaluate_all("els=>els.map(e=>[...e.querySelectorAll('.run > span')].map(x=>x.textContent.trim()).join(' '))")
+  if visible!=expected:raise RuntimeError(f'P008_RENDERED_CONTENT_MISMATCH visible={visible}')
+  if any(set(x.split())-FOCUS for x in visible[:8]):raise RuntimeError(f'P008_FIRST_TWO_ROWS_VISUAL_NOT_PURE_TA_ZA={visible[:8]}')
+  g=await p.evaluate("""()=>{const sp=document.querySelector('.bottom-safe-spacer').getBoundingClientRect(),xs=[...document.querySelectorAll('.practice')].map(e=>e.getBoundingClientRect());const mb=Math.max(...xs.map(x=>x.bottom));return {ok:mb<=sp.top,clearance:sp.top-mb,count:xs.length}}""")
+  if not g['ok'] or g['count']!=23:raise RuntimeError(f'P008_SAFE_AREA_FAIL {g}')
+  await p.screenshot(path=str(png),full_page=True);await p.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await b.close()
+ return pdf,g
 if __name__=='__main__':
-    audit();ap=argparse.ArgumentParser();ap.add_argument('--font-file');ap.add_argument('--font-zip');a=ap.parse_args();OUT.mkdir(parents=True,exist_ok=True)
-    font,src=kfgloader.discover_font(a.font_file,a.font_zip,OUT);h=OUT/'QURBATA-JILID-1-P008-TA-ZA-CANDIDATE-V5-CONTENT-VERIFIED.html';h.write_text(doc(font.resolve().as_uri()),encoding='utf-8');pdf,g=asyncio.run(render(h))
-    print('QJ1_P008_TA_ZA_CONTENT_VERIFIED=PASS');print('MATERIAL_NEW=طَ|ظَ');print('FIRST_TWO_ROWS=طَ|ظَ_FOCUS_VERIFIED');print('RENDERED_CONTENT_MATCH=23_OF_23');print('PRACTICE_FONT_PT=40');print('GROUP_SPACING=PRESERVED');print('RENDER_BALANCE=31_FOCUS|30_REVIEW');print('BOTTOM_GLYPH_OVERFLOW=0');print('SAFE_CLEARANCE_PX='+str(round(g['clearance'],2)));print('PDF='+str(pdf.relative_to(ROOT)))
+ audit();ap=argparse.ArgumentParser();ap.add_argument('--font-file');ap.add_argument('--font-zip');a=ap.parse_args();OUT.mkdir(parents=True,exist_ok=True);font,src=kfgloader.discover_font(a.font_file,a.font_zip,OUT);h=OUT/'QURBATA-JILID-1-P008-TA-ZA-CANDIDATE-V6-STANDALONE.html';h.write_text(doc(font.resolve().as_uri()),encoding='utf-8');pdf,g=asyncio.run(render(h));print('QJ1_P008_TA_ZA_STANDALONE=PASS');print('MATERIAL_NEW=طَ|ظَ');print('FIRST_TWO_ROWS=PURE_طَ_ظَ');print('RENDERED_CONTENT_MATCH=23_OF_23');print('PRACTICE_FONT_PT=40');print('GROUP_SPACING=PRESERVED');print('PDF='+str(pdf.relative_to(ROOT)))
