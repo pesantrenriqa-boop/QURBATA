@@ -1,0 +1,13 @@
+{
+  "page": "QJ1-P005",
+  "status": "FROZEN_APPROVED",
+  "material_focus": ["رَ", "زَ"],
+  "render_balance": {"focus": 31, "review": 30, "rendered_tokens": 61},
+  "source_exercises": 24,
+  "rendered_exercises": 23,
+  "approved_renderer": "tools/render_qurbata_jilid1_p005_clean_v1.py",
+  "approved_output_pattern": "QURBATA-JILID-1-P005-RA-ZAY-CANDIDATE-V2*.pdf",
+  "visual_baseline": "P001_FROZEN_CLEAN_V10",
+  "base_font": "KFGQPC_UTHMAN_TAHA",
+  "change_policy": "DO_NOT_MODIFY_WITHOUT_EXPLICIT_USER_REOPEN_APPROVAL"
+}
