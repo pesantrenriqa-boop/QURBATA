@@ -1,0 +1,32 @@
+{
+  "schema": "qurbata.page-footer.v1",
+  "status": "FROZEN_FOR_PAGE_REVIEW",
+  "applies_to": ["jilid-1", "jilid-2"],
+  "principle": "Footer separates curriculum metadata from implementation/evaluation metadata and must remain compact enough to preserve the approved large Arabic learning area.",
+  "curriculum_metadata": [
+    {"id":"competency","label":"Kompetensi","required":true},
+    {"id":"subcompetency","label":"Subkompetensi","required":true},
+    {"id":"arabic_competency","label":"Bahasa Arab","required":true,"allow_value":"Penguatan/Tidak ditargetkan"},
+    {"id":"quran_memorization","label":"Hafalan Al-Qur'an","required":true,"allow_value":"Penguatan/Tidak ditargetkan"},
+    {"id":"akhlaq_nidom","label":"Akhlak/Nidom","required":true,"allow_value":"Penguatan/Tidak ditargetkan"}
+  ],
+  "implementation_metadata": [
+    {"id":"date","label":"Tanggal","required":true,"mode":"handwritten"},
+    {"id":"score","label":"Nilai","required":true,"mode":"handwritten"},
+    {"id":"teacher_signature","label":"Paraf Guru","required":true,"mode":"handwritten"},
+    {"id":"parent_signature","label":"Paraf Orang Tua","required":true,"mode":"handwritten"}
+  ],
+  "layout": {
+    "curriculum_area_percent": 70,
+    "monitoring_area_percent": 30,
+    "visible_card_boxes": false,
+    "compact_lines": true,
+    "signature_space_must_be_writable": true
+  },
+  "rules": [
+    "Do not invent a new Arabic, Quran memorization, or Akhlak/Nidom competency merely to fill the footer.",
+    "If an integrated strand is not a new target on a page, record it as reinforcement or not targeted according to the curriculum source.",
+    "Footer changes must not reduce the approved participant-facing Arabic font merely to make metadata fit.",
+    "Page-specific footer values must be traceable to the curriculum/page source before PDF freeze."
+  ]
+}
