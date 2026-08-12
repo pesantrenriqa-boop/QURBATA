@@ -1,0 +1,41 @@
+Page,ContentStatus,VisualStatus,RendererStatus,PDFStatus,SourcePath,RendererPath,RendererCommit,PDFFileName,PDF_SHA256,ApprovedDate,Notes
+P001,RECOVERY_AUDIT_REQUIRED,VISUAL_REFERENCE_CURRENT,KFGQPC_CURRENT,RENDERABLE,books/jilid-2/regenerated/QJ2-P001*,tools/render_qurbata_jilid2_p001_v19_kfgqpc.py,,QURBATA-JILID-2-P001.pdf,,,Reference for arrow presentation + mixed 4/3 box grid; content/version must be reconciled before page freeze
+P002,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,books/jilid-2/regenerated/QJ2-P002-Keluarga-Ba-Ta-Tsa.md,,,,,,Do not substitute batch layout until historical per-page visual is recovered
+P003,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P004,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P005,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P006,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P007,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P008,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P009,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P010,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P011,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P012,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P013,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P014,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P015,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P016,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P017,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P018,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P019,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P020,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required; preserve Insight Layer intent if confirmed by current master
+P021,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P022,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P023,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P024,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P025,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P026,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P027,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required; explicit sukun history exists for mad ya/waw and must be reconciled
+P028,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P029,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required; explicit sukun history exists for mad ya/waw and must be reconciled
+P030,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P031,RECOVERY_AUDIT_REQUIRED,VISUAL_REFERENCE_CURRENT,KFGQPC_CURRENT_WITH_FROZEN_SUKUN,RENDERABLE,,tools/render_qurbata_jilid2_p031_frozen_sukun.py,,QURBATA-JILID-2-P031.pdf,,,Reference for frozen sukun V7.6 only; page content/layout still subject to historical recovery
+P032,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P033,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P034,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P035,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P036,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P037,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P038,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P039,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required
+P040,RECOVERY_AUDIT_REQUIRED,RECOVERY_AUDIT_REQUIRED,NEEDS_CURRENT_WRAPPER,NOT_FROZEN,,,,,,,Historical per-page visual recovery required; final evaluation/gate must be reconciled with master
