@@ -1,0 +1,16 @@
+{
+  "page": "QJ1-P003",
+  "status": "FROZEN_APPROVED",
+  "approval_basis": "explicit user approval after P003 candidate review",
+  "policy": "DEC-CUR-007_50_50_CUMULATIVE",
+  "material_focus": ["جَ", "حَ", "خَ"],
+  "cumulative_review": ["ءَ", "أَ", "بَ", "تَ", "ثَ"],
+  "source_token_allocation": {"focus": 32, "review": 32, "total": 64},
+  "source_ladders": 24,
+  "rendered_objects": 23,
+  "orphan_policy": "LAST_SOURCE_OBJECT_NOT_RENDERED_TO_AVOID_SINGLE_BOTTOM_GROUP; SOURCE_RETAINED",
+  "approved_renderer": "tools/render_qurbata_jilid1_p003_clean_v1.py",
+  "visual_baseline": "P001_FROZEN_CLEAN_V10",
+  "base_font": "KFGQPC_UTHMAN_TAHA",
+  "change_policy": "DO_NOT_MODIFY_WITHOUT_EXPLICIT_USER_REOPEN_APPROVAL"
+}
