@@ -1,0 +1,11 @@
+{
+  "page":"QJ1-P017",
+  "status":"FROZEN_APPROVED",
+  "page_type":"ENRICHMENT",
+  "new_material":"NONE",
+  "competency_scope":"P001-P015",
+  "enrichment_focus":"THREE_LETTER_MASTERY",
+  "approved_renderer":"tools/render_qurbata_jilid1_p017_enrichment_v1.py",
+  "approved_pdf":"QURBATA-JILID-1-P017-PENGAYAAN-3-HURUF-CANDIDATE-V1.pdf",
+  "change_policy":"DO_NOT_MODIFY_WITHOUT_EXPLICIT_USER_REOPEN_APPROVAL"
+}
