@@ -1,0 +1,16 @@
+{
+  "page": "QJ1-P008",
+  "status": "FROZEN_APPROVED",
+  "approval_basis": "user confirmed P008 cumulative candidate successful",
+  "material_focus": ["طَ", "ظَ"],
+  "rows_1_2_policy": "NEW_PLUS_PREVIOUS",
+  "row_1": ["طَ ءَ", "ظَ أَ", "طَ بَ", "ظَ تَ"],
+  "row_2": ["ثَ طَ", "جَ ظَ", "حَ طَ", "خَ ظَ"],
+  "render_balance": {"focus": 31, "review": 30, "rendered_tokens": 61},
+  "approved_renderer": "tools/render_qurbata_jilid1_p008_clean_v1.py",
+  "approved_pdf": "QURBATA-JILID-1-P008-TA-ZA-CANDIDATE-V7-CUMULATIVE.pdf",
+  "practice_font_pt": 40,
+  "group_spacing": "PRESERVED",
+  "bottom_glyph_overflow": 0,
+  "change_policy": "DO_NOT_MODIFY_WITHOUT_EXPLICIT_USER_REOPEN_APPROVAL"
+}
