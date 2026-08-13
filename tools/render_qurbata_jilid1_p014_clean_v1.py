@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# QURBATA Jilid 1 P014 — ھَ وَ. Isolated ha uses the approved two-loop glyph form.
+# QURBATA Jilid 1 P014 — ھَ وَ. Two-loop isolated ha with refined tapered lower-left tail.
 from pathlib import Path
 import argparse, asyncio, html, sys
 from playwright.async_api import async_playwright
@@ -9,7 +9,10 @@ import render_qurbata_jilid2_p001_v19_kfgqpc as kfgloader
 OUT=ROOT/'dist/qurbata-print-ready/jilid-1/pages/P014';LOGO=ROOT/'books/shared/assets/qurbata-logo.svg';FONT='QURBATA KFGQPC Uthman Taha'
 HA='ھَ';FOCUS={HA,'وَ'};REVIEW={'ءَ','أَ','بَ','تَ','ثَ','جَ','حَ','خَ','دَ','ذَ','رَ','زَ','سَ','شَ','صَ','ضَ','طَ','ظَ','عَ','غَ','فَ','قَ','كَ','لَ','مَ','نَ'}
 EXERCISES=[f'{HA} ءَ','وَ أَ',f'{HA} بَ','وَ تَ',f'ثَ {HA}','جَ وَ',f'حَ {HA}','خَ وَ',f'{HA} دَ {HA}','وَ ذَ وَ',f'{HA} رَ {HA}','وَ زَ وَ',f'{HA} سَ {HA}','وَ شَ وَ',f'{HA} صَ {HA}','وَ ضَ وَ',f'طَ {HA} ظَ','عَ وَ غَ',f'فَ {HA} قَ','كَ وَ لَ',f'مَ {HA} نَ','ءَ وَ أَ',f'بَ {HA} تَ','ثَ وَ جَ']
-def obj(s):return '<span class="run">'+''.join(f'<span>{html.escape(x)}</span>' for x in s.split())+'</span>'
+def tok(x):
+ c=' class="ha2"' if x==HA else ''
+ return f'<span{c}>{html.escape(x)}</span>'
+def obj(s):return '<span class="run">'+''.join(tok(x) for x in s.split())+'</span>'
 def rows():
  a=EXERCISES[:-1];o=[]
  for i in range(0,8,4):o.append('<div class="row r2">'+''.join(f'<div class="practice l2">{obj(x)}</div>' for x in a[i:i+4])+'</div>')
@@ -27,8 +30,12 @@ def audit():
  f=sum(x in FOCUS for x in ts);r=len(ts)-f
  if (len(ts),f,r)!=(61,31,30):raise RuntimeError(f'P014_BALANCE_FAIL tokens={len(ts)} focus={f} review={r}')
 def doc(u):
- css=f'''@page{{size:A5;margin:0}}*{{box-sizing:border-box}}@font-face{{font-family:"{FONT}";src:url("{u}") format("truetype")}}html,body{{margin:0}}.page{{width:148mm;height:210mm;padding:3.6mm 8mm 2.5mm;display:flex;flex-direction:column;overflow:hidden}}.header{{height:17mm;flex:0 0 17mm;position:relative;display:flex;align-items:center;justify-content:center}}.logo{{position:absolute;left:0;width:32mm;height:17mm}}.title{{position:absolute;left:50%;transform:translateX(-50%);color:#064d37;font:700 6.2pt Georgia;letter-spacing:.16em}}.pageno{{position:absolute;right:0;top:0;width:12mm;background:#064d37;color:white;border-bottom:1mm solid #b98a2f;text-align:center;font:700 12pt Arial;padding:2.2mm 1mm 3mm;border-radius:0 0 3mm 3mm}}.presentation{{height:20mm;display:flex;align-items:center;justify-content:center;gap:18mm;font:46pt "{FONT}";direction:rtl}}.grid{{height:142mm;flex:0 0 142mm;display:grid;grid-template-rows:repeat(7,1fr);row-gap:1.4mm}}.row{{display:flex;direction:rtl;align-items:center;justify-content:center}}.r2{{gap:10mm}}.r3{{gap:11mm}}.practice{{display:flex;justify-content:center;font:40pt/1 "{FONT}";white-space:nowrap}}.l2{{width:23mm}}.l3{{width:35mm}}.run{{display:inline-flex;direction:rtl}}.l2 .run{{gap:2.8mm}}.l3 .run{{gap:2.4mm}}.bottom-safe-spacer{{height:8mm;flex:0 0 8mm}}.footer{{height:12mm;display:flex;justify-content:space-between;align-items:center;padding-bottom:2.2mm;color:#173a2d}}.ar{{font:10.3pt "{FONT}";direction:rtl}}'''
- return f'''<!doctype html><html><head><meta charset="utf-8"><style>{css}</style></head><body><main class="page"><header class="header"><img class="logo" src="{LOGO.resolve().as_uri()}"><div class="title">QURBATA · JILID 1</div><div class="pageno">14</div></header><section class="presentation"><span>{HA}</span><span>وَ</span></section><section class="grid">{rows()}</section><div class="bottom-safe-spacer"></div><footer class="footer"><span class="ar">قُرْآنٌ · لُغَةٌ · أَدَبٌ</span><span class="ar">تَعَلَّمْ · اِعْمَلْ · عَلِّمْ</span></footer></main></body></html>'''
+ css=f'''@page{{size:A5;margin:0}}*{{box-sizing:border-box}}@font-face{{font-family:"{FONT}";src:url("{u}") format("truetype")}}html,body{{margin:0}}.page{{width:148mm;height:210mm;padding:3.6mm 8mm 2.5mm;display:flex;flex-direction:column;overflow:hidden}}.header{{height:17mm;flex:0 0 17mm;position:relative;display:flex;align-items:center;justify-content:center}}.logo{{position:absolute;left:0;width:32mm;height:17mm}}.title{{position:absolute;left:50%;transform:translateX(-50%);color:#064d37;font:700 6.2pt Georgia;letter-spacing:.16em}}.pageno{{position:absolute;right:0;top:0;width:12mm;background:#064d37;color:white;border-bottom:1mm solid #b98a2f;text-align:center;font:700 12pt Arial;padding:2.2mm 1mm 3mm;border-radius:0 0 3mm 3mm}}.presentation{{height:20mm;display:flex;align-items:center;justify-content:center;gap:18mm;font:46pt "{FONT}";direction:rtl}}.grid{{height:142mm;flex:0 0 142mm;display:grid;grid-template-rows:repeat(7,1fr);row-gap:1.4mm}}.row{{display:flex;direction:rtl;align-items:center;justify-content:center}}.r2{{gap:10mm}}.r3{{gap:11mm}}.practice{{display:flex;justify-content:center;font:40pt/1 "{FONT}";white-space:nowrap}}.l2{{width:23mm}}.l3{{width:35mm}}.run{{display:inline-flex;direction:rtl}}.l2 .run{{gap:2.8mm}}.l3 .run{{gap:2.4mm}}
+/* Approved QURBATA isolated haa: keep Uthman Taha two-loop body, refine only the lower-left terminal. */
+.ha2{{position:relative;display:inline-block;isolation:isolate}}.ha2::after{{content:"";position:absolute;z-index:-1;left:-.17em;bottom:.055em;width:.25em;height:.145em;background:currentColor;clip-path:polygon(100% 0,100% 68%,0 100%);transform:rotate(-3deg);transform-origin:100% 50%;pointer-events:none}}
+.presentation .ha2::after{{left:-.18em;bottom:.052em;width:.27em;height:.15em}}
+.bottom-safe-spacer{{height:8mm;flex:0 0 8mm}}.footer{{height:12mm;display:flex;justify-content:space-between;align-items:center;padding-bottom:2.2mm;color:#173a2d}}.ar{{font:10.3pt "{FONT}";direction:rtl}}'''
+ return f'''<!doctype html><html><head><meta charset="utf-8"><style>{css}</style></head><body><main class="page"><header class="header"><img class="logo" src="{LOGO.resolve().as_uri()}"><div class="title">QURBATA · JILID 1</div><div class="pageno">14</div></header><section class="presentation"><span class="ha2">{HA}</span><span>وَ</span></section><section class="grid">{rows()}</section><div class="bottom-safe-spacer"></div><footer class="footer"><span class="ar">قُرْآنٌ · لُغَةٌ · أَدَبٌ</span><span class="ar">تَعَلَّمْ · اِعْمَلْ · عَلِّمْ</span></footer></main></body></html>'''
 def free(b):
  if not b.exists():return b
  try:open(b,'ab').close();return b
@@ -38,15 +45,20 @@ def free(b):
   if not p.exists():return p
  raise RuntimeError('P014_NO_FREE_OUTPUT')
 async def render(h):
- pdf=free(OUT/'QURBATA-JILID-1-P014-HA-WAW-CANDIDATE-V2-TWO-LOOP-HA.pdf');png=free(OUT/'QURBATA-JILID-1-P014-HA-WAW-CANDIDATE-V2-TWO-LOOP-HA.png');expected=EXERCISES[:-1]
+ pdf=free(OUT/'QURBATA-JILID-1-P014-HA-WAW-CANDIDATE-V3-TAPERED-HA.pdf');png=free(OUT/'QURBATA-JILID-1-P014-HA-WAW-CANDIDATE-V3-TAPERED-HA.png');expected=EXERCISES[:-1]
+ expected_ha=sum(e.split().count(HA) for e in expected)+1
  async with async_playwright() as pw:
   b=await pw.chromium.launch();p=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2);await p.goto(h.resolve().as_uri(),wait_until='networkidle');await p.evaluate('document.fonts.ready')
   visible=await p.locator('.practice').evaluate_all("els=>els.map(e=>[...e.querySelectorAll('.run > span')].map(x=>x.textContent.trim()).join(' '))")
   if visible!=expected:raise RuntimeError('P014_RENDERED_CONTENT_MISMATCH')
   if await p.locator('body').evaluate("e=>e.textContent.includes('هَ')"):raise RuntimeError('P014_VISUAL_WRONG_HA_FORM')
+  ha_count=await p.locator('.ha2').count()
+  if ha_count!=expected_ha:raise RuntimeError(f'P014_HA_TAPER_CLASS_COUNT_FAIL actual={ha_count} expected={expected_ha}')
+  taper=await p.locator('.ha2').first.evaluate("e=>{const s=getComputedStyle(e,'::after');return {clip:s.clipPath,w:s.width,h:s.height,bg:s.backgroundColor}}")
+  if taper['clip']=='none' or float(taper['w'].replace('px',''))<=0 or float(taper['h'].replace('px',''))<=0:raise RuntimeError(f'P014_HA_TAPER_NOT_RENDERED={taper}')
   g=await p.evaluate("""()=>{const sp=document.querySelector('.bottom-safe-spacer').getBoundingClientRect(),xs=[...document.querySelectorAll('.practice')].map(e=>e.getBoundingClientRect());const mb=Math.max(...xs.map(x=>x.bottom));return {ok:mb<=sp.top&&sp.top-mb>=6,clearance:sp.top-mb,count:xs.length}}""")
   if not g['ok'] or g['count']!=23:raise RuntimeError(f'P014_SAFE_AREA_FAIL {g}')
   await p.screenshot(path=str(png),full_page=True);await p.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await b.close()
  return pdf,g
 if __name__=='__main__':
- audit();ap=argparse.ArgumentParser();ap.add_argument('--font-file');ap.add_argument('--font-zip');a=ap.parse_args();OUT.mkdir(parents=True,exist_ok=True);font,src=kfgloader.discover_font(a.font_file,a.font_zip,OUT);h=OUT/'QURBATA-JILID-1-P014-HA-WAW-CANDIDATE-V2-TWO-LOOP-HA.html';h.write_text(doc(font.resolve().as_uri()),encoding='utf-8');pdf,g=asyncio.run(render(h));print('QJ1_P014_HA_WAW_TWO_LOOP_HA=PASS');print('MATERIAL_NEW=ھَ|وَ');print('ISOLATED_HA_FORM=TWO_LOOP_APPROVED');print('WRONG_HA_FORM_PRESENT=NO');print('RENDER_BALANCE=31_FOCUS|30_REVIEW');print('PRACTICE_FONT_PT=40');print('GROUP_SPACING=PRESERVED');print('BOTTOM_GLYPH_OVERFLOW=0');print('PDF='+str(pdf.relative_to(ROOT)))
+ audit();ap=argparse.ArgumentParser();ap.add_argument('--font-file');ap.add_argument('--font-zip');a=ap.parse_args();OUT.mkdir(parents=True,exist_ok=True);font,src=kfgloader.discover_font(a.font_file,a.font_zip,OUT);h=OUT/'QURBATA-JILID-1-P014-HA-WAW-CANDIDATE-V3-TAPERED-HA.html';h.write_text(doc(font.resolve().as_uri()),encoding='utf-8');pdf,g=asyncio.run(render(h));print('QJ1_P014_HA_WAW_TAPERED_HA=PASS');print('MATERIAL_NEW=ھَ|وَ');print('ISOLATED_HA_FORM=TWO_LOOP_APPROVED');print('HA_TAIL=TAPERED_CLEAN_POINT');print('HA_TAIL_METHOD=CSS_VECTOR_CLIP_PATH');print('WRONG_HA_FORM_PRESENT=NO');print('RENDER_BALANCE=31_FOCUS|30_REVIEW');print('PRACTICE_FONT_PT=40');print('GROUP_SPACING=PRESERVED');print('BOTTOM_GLYPH_OVERFLOW=0');print('PDF='+str(pdf.relative_to(ROOT)))
