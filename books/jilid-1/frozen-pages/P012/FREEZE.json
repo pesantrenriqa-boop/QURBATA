@@ -1,0 +1,14 @@
+{
+  "page": "QJ1-P012",
+  "status": "FROZEN_APPROVED",
+  "approval_basis": "user confirmed P012 successful",
+  "material_focus": ["كَ", "لَ"],
+  "rows_1_2_policy": "NEW_PLUS_PREVIOUS",
+  "render_balance": {"focus": 31, "review": 30, "rendered_tokens": 61},
+  "approved_renderer": "tools/render_qurbata_jilid1_p012_clean_v1.py",
+  "approved_pdf": "QURBATA-JILID-1-P012-KAF-LAM-CANDIDATE-V1-CUMULATIVE.pdf",
+  "practice_font_pt": 40,
+  "group_spacing": "PRESERVED",
+  "bottom_glyph_overflow": 0,
+  "change_policy": "DO_NOT_MODIFY_WITHOUT_EXPLICIT_USER_REOPEN_APPROVAL"
+}
