@@ -8,18 +8,18 @@ import render_qurbata_jilid2_p001_v19_kfgqpc as kfgloader
 OUT=ROOT/'dist/qurbata-print-ready/jilid-1/pages/P018';LOGO=ROOT/'books/shared/assets/qurbata-logo.svg';FONT='QURBATA KFGQPC Uthman Taha';HA='ﮪَ'
 LETTERS={'ءَ','أَ','بَ','تَ','ثَ','جَ','حَ','خَ','دَ','ذَ','رَ','زَ','سَ','شَ','صَ','ضَ','طَ','ظَ','عَ','غَ','فَ','قَ','كَ','لَ','مَ','نَ',HA,'وَ','يَ'}
 EX=['ءَ تَ جَ','أَ ثَ حَ','بَ جَ خَ','تَ حَ دَ','ثَ خَ ذَ','جَ دَ رَ','حَ ذَ زَ','خَ رَ سَ','دَ زَ شَ','ذَ سَ صَ','رَ شَ ضَ','زَ صَ طَ','سَ ضَ ظَ','شَ طَ عَ','صَ ظَ غَ','ضَ عَ فَ','طَ غَ قَ','ظَ فَ كَ','عَ قَ لَ','غَ كَ مَ','فَ لَ نَ','قَ مَ '+HA,'كَ نَ وَ','لَ '+HA+' يَ']
-# Full-width randomized unvowelled letter-name practice row. No labels and no harakat.
-NAMES=['ق','ب','ي','ث','د','ع','و','ج','ص','ك','م','ت']
+# Ordered full-width name-letter practice. First stage = ا ب ت ث, repeated to fill the row.
+NAMES=['ا','ب','ت','ث','ا','ب','ت','ث','ا','ب','ت','ث']
 UNVOWELLED_ALLOWED={'ا','ء','أ','ب','ت','ث','ج','ح','خ','د','ذ','ر','ز','س','ش','ص','ض','ط','ظ','ع','غ','ف','ق','ك','ل','م','ن','ه','ھ','ﮪ','و','ي'}
 def obj(s):return '<span class="run">'+''.join(f'<span>{html.escape(x)}</span>' for x in s.split())+'</span>'
 def audit():
  if len(EX)!=24 or any(len(x.split())!=3 for x in EX):raise RuntimeError('P018_THREE_LETTER_STRUCTURE_FAIL')
  ts=[t for e in EX for t in e.split()]
  if any(t not in LETTERS for t in ts):raise RuntimeError('P018_OUTSIDE_SCOPE')
- if len(NAMES)<10:raise RuntimeError('P018_NAME_ROW_NOT_FULL_ENOUGH')
+ if len(NAMES)!=12:raise RuntimeError('P018_NAME_ROW_COUNT_FAIL')
+ if NAMES[:4]!=['ا','ب','ت','ث']:raise RuntimeError('P018_NAME_ROW_START_ORDER_FAIL')
  if any(any(ch in n for ch in 'ًٌٍَُِّْ') for n in NAMES):raise RuntimeError('P018_NAME_ROW_MUST_BE_UNVOWELLED')
  if any(n not in UNVOWELLED_ALLOWED for n in NAMES):raise RuntimeError('P018_NAME_ROW_OUTSIDE_ALLOWED_SET')
- if len(set(NAMES))!=len(NAMES):raise RuntimeError('P018_NAME_ROW_DUPLICATE')
 def rows():return ''.join('<div class="row">'+''.join(f'<div class="practice">{obj(x)}</div>' for x in EX[i:i+3])+'</div>' for i in range(0,24,3))
 def doc(u):
  names=''.join(f'<span>{x}</span>' for x in NAMES)
@@ -34,7 +34,7 @@ def free(p):
   if not q.exists():return q
  raise RuntimeError('P018_NO_FREE_OUTPUT')
 async def render(h):
- pdf=free(OUT/'QURBATA-JILID-1-P018-PENGAYAAN-3-HURUF-NAMA-HURUF-01-CANDIDATE-V5-FULL-ROW.pdf');png=free(OUT/'QURBATA-JILID-1-P018-PENGAYAAN-3-HURUF-NAMA-HURUF-01-CANDIDATE-V5-FULL-ROW.png')
+ pdf=free(OUT/'QURBATA-JILID-1-P018-PENGAYAAN-3-HURUF-NAMA-HURUF-01-CANDIDATE-V6-ORDERED.pdf');png=free(OUT/'QURBATA-JILID-1-P018-PENGAYAAN-3-HURUF-NAMA-HURUF-01-CANDIDATE-V6-ORDERED.png')
  async with async_playwright() as pw:
   b=await pw.chromium.launch();p=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2);await p.goto(h.resolve().as_uri(),wait_until='networkidle');await p.evaluate('document.fonts.ready')
   v=await p.locator('.practice').evaluate_all("e=>e.map(x=>[...x.querySelectorAll('span span')].map(y=>y.textContent.trim()).join(' '))")
@@ -42,9 +42,9 @@ async def render(h):
   nv=await p.locator('.name-strip > span').all_text_contents()
   if nv!=NAMES:raise RuntimeError('P018_NAME_ROW_RENDER_MISMATCH')
   if any(any(ch in x for ch in 'ًٌٍَُِّْ') for x in nv):raise RuntimeError('P018_NAME_ROW_HAS_HARAKAT')
-  geom=await p.evaluate("()=>{let f=document.querySelector('.footer').getBoundingClientRect(),n=document.querySelector('.name-strip').getBoundingClientRect(),x=[...document.querySelectorAll('.practice')].map(e=>e.getBoundingClientRect()),letters=[...document.querySelectorAll('.name-strip>span')].map(e=>e.getBoundingClientRect());let m=Math.max(...x.map(z=>z.bottom));let nl=Math.min(...letters.map(z=>z.left)),nr=Math.max(...letters.map(z=>z.right));return {ok:m<=n.top-5&&n.bottom<=f.top-5&&nl>=n.left&&nr<=n.right,mainClear:n.top-m,footerClear:f.top-n.bottom,nameLeft:nl-n.left,nameRight:n.right-nr,count:letters.length}}")
+  geom=await p.evaluate("()=>{let f=document.querySelector('.footer').getBoundingClientRect(),n=document.querySelector('.name-strip').getBoundingClientRect(),x=[...document.querySelectorAll('.practice')].map(e=>e.getBoundingClientRect()),letters=[...document.querySelectorAll('.name-strip>span')].map(e=>e.getBoundingClientRect());let m=Math.max(...x.map(z=>z.bottom));let nl=Math.min(...letters.map(z=>z.left)),nr=Math.max(...letters.map(z=>z.right));return {ok:m<=n.top-5&&n.bottom<=f.top-5&&nl>=n.left&&nr<=n.right,mainClear:n.top-m,footerClear:f.top-n.bottom,count:letters.length}}")
   if not geom['ok'] or geom['count']!=len(NAMES):raise RuntimeError('P018_SAFEAREA_FAIL '+str(geom))
   await p.screenshot(path=str(png),full_page=True);await p.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await b.close()
  return pdf,geom
 if __name__=='__main__':
- audit();ap=argparse.ArgumentParser();ap.add_argument('--font-file');ap.add_argument('--font-zip');a=ap.parse_args();OUT.mkdir(parents=True,exist_ok=True);font,src=kfgloader.discover_font(a.font_file,a.font_zip,OUT);h=OUT/'QURBATA-JILID-1-P018-PENGAYAAN-3-HURUF-NAMA-HURUF-01-CANDIDATE-V5-FULL-ROW.html';h.write_text(doc(font.resolve().as_uri()),encoding='utf-8');pdf,g=asyncio.run(render(h));print('QJ1_P018_ENRICHMENT_NAMES=PASS');print('MAIN_MATERIAL=THREE_LETTER_ENRICHMENT');print('NAME_ROW=UNVOWELLED_FULL_WIDTH_RANDOMIZED');print('NAME_ROW_SEQUENCE='+'|'.join(NAMES));print('NAME_ROW_COUNT='+str(len(NAMES)));print('NAME_ROW_FONT_PT=39');print('NAME_ROW_LAYOUT=FULL_WIDTH_SPACE_BETWEEN');print('NAME_ROW_SEPARATOR=THIN_LINE');print('NAME_ROW_MARGIN_TOP_MM=1');print('PDF='+str(pdf.relative_to(ROOT)))
+ audit();ap=argparse.ArgumentParser();ap.add_argument('--font-file');ap.add_argument('--font-zip');a=ap.parse_args();OUT.mkdir(parents=True,exist_ok=True);font,src=kfgloader.discover_font(a.font_file,a.font_zip,OUT);h=OUT/'QURBATA-JILID-1-P018-PENGAYAAN-3-HURUF-NAMA-HURUF-01-CANDIDATE-V6-ORDERED.html';h.write_text(doc(font.resolve().as_uri()),encoding='utf-8');pdf,g=asyncio.run(render(h));print('QJ1_P018_ENRICHMENT_NAMES=PASS');print('MAIN_MATERIAL=THREE_LETTER_ENRICHMENT');print('NAME_ROW=UNVOWELLED_FULL_WIDTH_ORDERED');print('NAME_ROW_SEQUENCE='+'|'.join(NAMES));print('NAME_ROW_BASE_SEQUENCE=ا|ب|ت|ث');print('NAME_ROW_COUNT='+str(len(NAMES)));print('NAME_ROW_FONT_PT=39');print('NAME_ROW_LAYOUT=FULL_WIDTH_SPACE_BETWEEN');print('NAME_ROW_SEPARATOR=THIN_LINE');print('PDF='+str(pdf.relative_to(ROOT)))
