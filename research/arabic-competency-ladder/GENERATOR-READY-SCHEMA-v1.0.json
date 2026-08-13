@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "registry_version": "K01-K67-v1",
+  "project_boundary": {
+    "core_outputs": ["competency", "example", "question", "book_guide"],
+    "non_blockers": ["psychometric_calibration", "production_placement_validation"]
+  },
+  "competency_record": {
+    "required": ["competency_id", "version", "name", "learner_operation", "definition", "prerequisites", "feature_ceiling", "generator"],
+    "fields": {
+      "competency_id": "Knn",
+      "version": "semver",
+      "status": ["canonical-core", "extension", "deprecated"],
+      "name": "string",
+      "learner_operation": "string",
+      "definition": "string",
+      "prerequisites": {"hard": [], "soft": []},
+      "feature_ceiling": "Knn",
+      "allowed_operations": [],
+      "forbidden_future_operations": [],
+      "generator": {
+        "example_types": ["word", "phrase", "clause", "verse-span"],
+        "question_types": ["recognition", "identify", "classify", "segment", "relation", "contrast", "short-response", "guided-analysis"],
+        "difficulty": ["easy", "standard", "advanced-within-ceiling"],
+        "default_example_count": 5,
+        "default_question_count": 10,
+        "ambiguity_max": "medium"
+      },
+      "extension": {"supersedes": null, "children": [], "tags": []}
+    }
+  },
+  "example_record": {
+    "required": ["example_id", "competency_id", "registry_version", "source", "span_ar", "target_operation", "features_required", "ceiling_check"],
+    "fields": {
+      "example_id": "EX-Knn-NNNN",
+      "competency_id": "Knn",
+      "registry_version": "string",
+      "source": ["quran", "curated", "synthetic-future"],
+      "reference": "surah:ayah or null",
+      "span_ar": "string",
+      "target_operation": "string",
+      "features_present": [],
+      "features_required": [],
+      "difficulty": ["easy", "standard", "advanced-within-ceiling"],
+      "ambiguity": ["low", "medium", "high"],
+      "use": {"teaching": true, "assessment": true, "book": true},
+      "ceiling_check": ["pass", "fail"]
+    }
+  },
+  "question_record": {
+    "required": ["question_id", "target_K", "registry_version", "tested_operation", "question_type", "prompt", "correct_answer", "ceiling_check"],
+    "fields": {
+      "question_id": "Q-Knn-NNNN",
+      "target_K": "Knn",
+      "registry_version": "string",
+      "tested_operation": "string",
+      "source_example_id": "string or null",
+      "question_type": "string",
+      "prompt": "string",
+      "options": [],
+      "correct_answer": "any",
+      "rationale": "string",
+      "difficulty": "string",
+      "feature_signature": [],
+      "ceiling_check": ["pass", "fail"]
+    }
+  },
+  "assembly_manifest": {
+    "required": ["manifest_id", "registry_version", "output_type", "competency_range", "units"],
+    "fields": {
+      "manifest_id": "BOOK-NNNN",
+      "registry_version": "string",
+      "output_type": ["student-book", "teacher-guide", "workbook", "exercise-bank", "evaluation", "remediation", "enrichment", "handbook", "scope-sequence", "lesson-plan", "qurbata-module"],
+      "competency_range": {"from": "Knn", "to": "Knn"},
+      "audience": "string",
+      "meetings": "integer or null",
+      "review_ratio": "0..1",
+      "enrichment_ratio": "0..1",
+      "template_id": "string",
+      "units": [{"competency_id": "Knn", "sections": ["objective", "prerequisite-reminder", "explanation", "worked-examples", "guided-practice", "independent-practice", "review", "quick-check", "remediation", "enrichment"]}]
+    }
+  },
+  "global_rules": [
+    "Generated artifact for Kn MUST NOT require mastery above Kn unless explicitly non-scored enrichment.",
+    "Quran-sourced records MUST carry exact reference and Arabic span.",
+    "Existing canonical K IDs are immutable; revisions use versioning.",
+    "Every generated artifact records registry_version and seed when deterministic reproduction is requested.",
+    "Content, assembly, and presentation layers remain separable.",
+    "K68+ and Kn.x extensions are allowed without renumbering existing canonical IDs."
+  ]
+}
