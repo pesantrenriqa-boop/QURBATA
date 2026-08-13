@@ -8,7 +8,8 @@ if str(ROOT/'tools') not in sys.path:sys.path.insert(0,str(ROOT/'tools'))
 import render_qurbata_jilid2_p001_v19_kfgqpc as kfgloader
 OUT=ROOT/'dist/qurbata-print-ready/jilid-1/pages/P009';LOGO=ROOT/'books/shared/assets/qurbata-logo.svg';FONT='QURBATA KFGQPC Uthman Taha'
 FOCUS={'عَ','غَ'};REVIEW={'ءَ','أَ','بَ','تَ','ثَ','جَ','حَ','خَ','دَ','ذَ','رَ','زَ','سَ','شَ','صَ','ضَ','طَ','ظَ'}
-EXERCISES=['عَ ءَ','غَ أَ','عَ بَ','غَ تَ','ثَ عَ','جَ غَ','حَ عَ','خَ غَ','عَ دَ عَ','غَ ذَ غَ','عَ رَ عَ','غَ زَ غَ','عَ سَ عَ','غَ شَ غَ','عَ صَ عَ','غَ ضَ غَ','عَ طَ عَ','غَ ظَ غَ','ءَ عَ ءَ','أَ غَ أَ','بَ عَ بَ','تَ غَ تَ','ثَ عَ ثَ','جَ غَ جَ']
+# Rows 1–2 = new + previous. 3-letter rows are balanced so rendered 61 tokens = 31 focus / 30 review.
+EXERCISES=['عَ ءَ','غَ أَ','عَ بَ','غَ تَ','ثَ عَ','جَ غَ','حَ عَ','خَ غَ','دَ عَ ذَ','ذَ غَ دَ','عَ رَ عَ','غَ زَ غَ','عَ سَ عَ','غَ شَ غَ','عَ صَ عَ','غَ ضَ غَ','عَ طَ عَ','غَ ظَ غَ','ءَ عَ ءَ','أَ غَ أَ','بَ عَ بَ','تَ غَ تَ','ثَ عَ ثَ','جَ غَ جَ']
 def obj(s):return '<span class="run">'+''.join(f'<span>{html.escape(x)}</span>' for x in s.split())+'</span>'
 def rows():
  a=EXERCISES[:-1];o=[]
@@ -37,7 +38,7 @@ def free(b):
   if not p.exists():return p
  raise RuntimeError('P009_NO_FREE_OUTPUT')
 async def render(h):
- pdf=free(OUT/'QURBATA-JILID-1-P009-AIN-GHAIN-CANDIDATE-V1-CUMULATIVE.pdf');png=free(OUT/'QURBATA-JILID-1-P009-AIN-GHAIN-CANDIDATE-V1-CUMULATIVE.png');expected=EXERCISES[:-1]
+ pdf=free(OUT/'QURBATA-JILID-1-P009-AIN-GHAIN-CANDIDATE-V2-CUMULATIVE.pdf');png=free(OUT/'QURBATA-JILID-1-P009-AIN-GHAIN-CANDIDATE-V2-CUMULATIVE.png');expected=EXERCISES[:-1]
  async with async_playwright() as pw:
   b=await pw.chromium.launch();p=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2);await p.goto(h.resolve().as_uri(),wait_until='networkidle');await p.evaluate('document.fonts.ready')
   visible=await p.locator('.practice').evaluate_all("els=>els.map(e=>[...e.querySelectorAll('.run > span')].map(x=>x.textContent.trim()).join(' '))")
@@ -50,4 +51,4 @@ async def render(h):
   await p.screenshot(path=str(png),full_page=True);await p.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await b.close()
  return pdf,g
 if __name__=='__main__':
- audit();ap=argparse.ArgumentParser();ap.add_argument('--font-file');ap.add_argument('--font-zip');a=ap.parse_args();OUT.mkdir(parents=True,exist_ok=True);font,src=kfgloader.discover_font(a.font_file,a.font_zip,OUT);h=OUT/'QURBATA-JILID-1-P009-AIN-GHAIN-CANDIDATE-V1-CUMULATIVE.html';h.write_text(doc(font.resolve().as_uri()),encoding='utf-8');pdf,g=asyncio.run(render(h));print('QJ1_P009_AIN_GHAIN_CUMULATIVE=PASS');print('MATERIAL_NEW=عَ|غَ');print('ROWS_1_2=NEW_PLUS_PREVIOUS_VERIFIED');print('RENDER_BALANCE=31_FOCUS|30_REVIEW');print('PRACTICE_FONT_PT=40');print('GROUP_SPACING=PRESERVED');print('BOTTOM_GLYPH_OVERFLOW=0');print('PDF='+str(pdf.relative_to(ROOT)))
+ audit();ap=argparse.ArgumentParser();ap.add_argument('--font-file');ap.add_argument('--font-zip');a=ap.parse_args();OUT.mkdir(parents=True,exist_ok=True);font,src=kfgloader.discover_font(a.font_file,a.font_zip,OUT);h=OUT/'QURBATA-JILID-1-P009-AIN-GHAIN-CANDIDATE-V2-CUMULATIVE.html';h.write_text(doc(font.resolve().as_uri()),encoding='utf-8');pdf,g=asyncio.run(render(h));print('QJ1_P009_AIN_GHAIN_CUMULATIVE=PASS');print('MATERIAL_NEW=عَ|غَ');print('ROWS_1_2=NEW_PLUS_PREVIOUS_VERIFIED');print('RENDER_BALANCE=31_FOCUS|30_REVIEW');print('PRACTICE_FONT_PT=40');print('GROUP_SPACING=PRESERVED');print('BOTTOM_GLYPH_OVERFLOW=0');print('PDF='+str(pdf.relative_to(ROOT)))
