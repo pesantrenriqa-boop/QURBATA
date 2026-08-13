@@ -31,7 +31,7 @@ def free(p):
   if not q.exists():return q
  raise RuntimeError('P018_NO_FREE_OUTPUT')
 async def render(h):
- pdf=free(OUT/'QURBATA-JILID-1-P018-PENGAYAAN-3-HURUF-NAMA-HURUF-01-CANDIDATE-V1.pdf');png=free(OUT/'QURBATA-JILID-1-P018-PENGAYAAN-3-HURUF-NAMA-HURUF-01-CANDIDATE-V1.png')
+ pdf=free(OUT/'QURBATA-JILID-1-P018-PENGAYAAN-3-HURUF-NAMA-HURUF-01-CANDIDATE-V2.pdf');png=free(OUT/'QURBATA-JILID-1-P018-PENGAYAAN-3-HURUF-NAMA-HURUF-01-CANDIDATE-V2.png')
  async with async_playwright() as pw:
   b=await pw.chromium.launch();p=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2);await p.goto(h.resolve().as_uri(),wait_until='networkidle');await p.evaluate('document.fonts.ready')
   v=await p.locator('.practice').evaluate_all("e=>e.map(x=>[...x.querySelectorAll('span span')].map(y=>y.textContent.trim()).join(' '))")
@@ -42,8 +42,8 @@ async def render(h):
   gap=await p.locator('.name-strip').evaluate("e=>parseFloat(getComputedStyle(e).gap)")
   if gap>20:raise RuntimeError('P018_NAME_ROW_GAP_TOO_WIDE')
   g=await p.evaluate("()=>{let f=document.querySelector('.footer').getBoundingClientRect(),n=document.querySelector('.name-strip').getBoundingClientRect(),x=[...document.querySelectorAll('.practice')].map(e=>e.getBoundingClientRect());let m=Math.max(...x.map(z=>z.bottom));return {ok:m<=n.top-4&&n.bottom<=f.top-3,mainClear:n.top-m,footerClear:f.top-n.bottom}}")
-  if not g['ok']:raise RuntimeError('P018_SAFEAREA_FAIL '+JSON.stringify(g))
+  if not g['ok']:raise RuntimeError('P018_SAFEAREA_FAIL '+str(g))
   await p.screenshot(path=str(png),full_page=True);await p.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await b.close()
  return pdf
 if __name__=='__main__':
- audit();ap=argparse.ArgumentParser();ap.add_argument('--font-file');ap.add_argument('--font-zip');a=ap.parse_args();OUT.mkdir(parents=True,exist_ok=True);font,src=kfgloader.discover_font(a.font_file,a.font_zip,OUT);h=OUT/'QURBATA-JILID-1-P018-PENGAYAAN-3-HURUF-NAMA-HURUF-01-CANDIDATE-V1.html';h.write_text(doc(font.resolve().as_uri()),encoding='utf-8');pdf=asyncio.run(render(h));print('QJ1_P018_ENRICHMENT_NAMES=PASS');print('MAIN_MATERIAL=THREE_LETTER_ENRICHMENT');print('NAME_ROW=UNVOWELLED');print('NAME_ROW_SEQUENCE=ا|ب|ت|ث');print('NAME_ROW_FONT_PT=27');print('NAME_ROW_GAP_MM=4.5');print('NAME_ROW_SEPARATOR=THIN_LINE');print('PDF='+str(pdf.relative_to(ROOT)))
+ audit();ap=argparse.ArgumentParser();ap.add_argument('--font-file');ap.add_argument('--font-zip');a=ap.parse_args();OUT.mkdir(parents=True,exist_ok=True);font,src=kfgloader.discover_font(a.font_file,a.font_zip,OUT);h=OUT/'QURBATA-JILID-1-P018-PENGAYAAN-3-HURUF-NAMA-HURUF-01-CANDIDATE-V2.html';h.write_text(doc(font.resolve().as_uri()),encoding='utf-8');pdf=asyncio.run(render(h));print('QJ1_P018_ENRICHMENT_NAMES=PASS');print('MAIN_MATERIAL=THREE_LETTER_ENRICHMENT');print('NAME_ROW=UNVOWELLED');print('NAME_ROW_SEQUENCE=ا|ب|ت|ث');print('NAME_ROW_FONT_PT=27');print('NAME_ROW_GAP_MM=4.5');print('NAME_ROW_SEPARATOR=THIN_LINE');print('PDF='+str(pdf.relative_to(ROOT)))
