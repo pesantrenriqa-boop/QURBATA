@@ -1,0 +1,11 @@
+{
+  "page":"QJ1-P020",
+  "status":"FROZEN_APPROVED",
+  "page_type":"DEDICATED_LETTER_NAMES",
+  "harakat":"NONE",
+  "letter_count":28,
+  "layout":"4_ROWS_X_7",
+  "letter_font_pt":44,
+  "approved_renderer":"tools/render_qurbata_jilid1_p020_letter_names_v1.py",
+  "change_policy":"DO_NOT_MODIFY_WITHOUT_EXPLICIT_USER_REOPEN_APPROVAL"
+}
