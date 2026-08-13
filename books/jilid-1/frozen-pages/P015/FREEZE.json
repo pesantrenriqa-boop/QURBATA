@@ -1,0 +1,11 @@
+{
+  "page":"QJ1-P015",
+  "status":"FROZEN_APPROVED",
+  "material_focus":["يَ"],
+  "approval_basis":"user confirmed P015 successful",
+  "competency_scope":"P001-P015",
+  "approved_renderer":"tools/render_qurbata_jilid1_p015_clean_v1.py",
+  "approved_pdf":"QURBATA-JILID-1-P015-YA-CANDIDATE-V1-CUMULATIVE.pdf",
+  "render_balance":{"focus":31,"review":30},
+  "change_policy":"DO_NOT_MODIFY_WITHOUT_EXPLICIT_USER_REOPEN_APPROVAL"
+}
