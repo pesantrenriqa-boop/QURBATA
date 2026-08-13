@@ -1,0 +1,12 @@
+{
+  "page": "QJ1-P013",
+  "status": "FROZEN_APPROVED",
+  "material_focus": ["مَ", "نَ"],
+  "rows_1_2_policy": "NEW_PLUS_PREVIOUS",
+  "render_balance": {"focus": 31, "review": 30, "rendered_tokens": 61},
+  "approved_renderer": "tools/render_qurbata_jilid1_p013_clean_v1.py",
+  "approved_pdf": "QURBATA-JILID-1-P013-MIM-NUN-CANDIDATE-V1-CUMULATIVE.pdf",
+  "practice_font_pt": 40,
+  "group_spacing": "PRESERVED",
+  "change_policy": "DO_NOT_MODIFY_WITHOUT_EXPLICIT_USER_REOPEN_APPROVAL"
+}
