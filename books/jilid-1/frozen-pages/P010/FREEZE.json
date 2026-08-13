@@ -1,0 +1,15 @@
+{
+  "page": "QJ1-P010",
+  "status": "FROZEN_APPROVED",
+  "page_type": "ENRICHMENT",
+  "new_material": "NONE",
+  "competency_scope": "P001-P009",
+  "letter_coverage": "20_OF_20",
+  "rows_1_2": "TWO_LETTER_REVIEW",
+  "rows_3_7": "THREE_LETTER_REVIEW",
+  "approved_renderer": "tools/render_qurbata_jilid1_p010_enrichment_v1.py",
+  "approved_pdf": "QURBATA-JILID-1-P010-PENGAYAAN-P001-P009-CANDIDATE-V1.pdf",
+  "practice_font_pt": 40,
+  "group_spacing": "PRESERVED",
+  "change_policy": "DO_NOT_MODIFY_WITHOUT_EXPLICIT_USER_REOPEN_APPROVAL"
+}
