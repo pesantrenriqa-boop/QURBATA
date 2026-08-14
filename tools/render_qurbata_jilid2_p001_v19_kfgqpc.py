@@ -5,6 +5,9 @@ Arabic base letters and native mark positioning stay KFGQPC Uthman Taha Naskh.
 Only the U+0652 sukun outline is replaced at runtime with Amiri U+06E1 and shifted
 vertically by the approved frozen offset -1700 KFGQPC font units. Font binaries are
 runtime-only and are never committed to the repository.
+
+Default output follows the same print-ready tree used by Jilid 1:
+dist/qurbata-print-ready/jilid-2/pages/P001/
 """
 from __future__ import annotations
 import argparse
@@ -26,6 +29,7 @@ ZIP_BASENAME='kfgqpc-uthman-taha-naskh-regular.zip'
 AMIRI_URL='https://github.com/aliftype/amiri/raw/refs/heads/main/fonts/Amiri-Regular.ttf'
 SUKUN_BASELINE_VERSION='V7.6'
 SUKUN_Y_SHIFT=-1700
+DEFAULT_OUTPUT='dist/qurbata-print-ready/jilid-2/pages/P001'
 
 
 def discover_font(explicit_font:str|None, explicit_zip:str|None, out_dir:Path)->tuple[Path,str]:
@@ -90,10 +94,15 @@ def main():
     ap=argparse.ArgumentParser(add_help=False)
     ap.add_argument('--font-file');ap.add_argument('--font-zip');ap.add_argument('--amiri-font')
     known,remaining=ap.parse_known_args(sys.argv[1:])
-    out_arg='dist/jilid-2-p001-production-frozen-sukun'
+    out_arg=DEFAULT_OUTPUT
     for i,a in enumerate(remaining):
         if a=='--output-dir' and i+1<len(remaining):out_arg=remaining[i+1]
     out=Path(out_arg);out=out if out.is_absolute() else ROOT/out;out.mkdir(parents=True,exist_ok=True)
+
+    # V18 still consumes --output-dir from argv. Inject the standardized location
+    # only when the caller did not explicitly provide another destination.
+    if '--output-dir' not in remaining:
+        remaining=[*remaining,'--output-dir',DEFAULT_OUTPUT]
 
     kfg_path,font_source=discover_font(known.font_file,known.font_zip,out)
     amiri_path,amiri_source=discover_amiri(known.amiri_font,out)
@@ -116,6 +125,8 @@ def main():
     print('POSITIONING=KFGQPC_U+0652_GPOS_PRESERVED')
     print('FONT_BINARY_REPOSITORY_STORAGE=NO')
     print('V18_GEOMETRY=PRESERVED')
+    print(f'PRINT_READY_OUTPUT={DEFAULT_OUTPUT}')
+    print('OUTPUT_LAYOUT=JILID1_COMPATIBLE')
     print('STATUS=PRODUCTION_INTEGRATION_CANDIDATE')
     return rc
 
