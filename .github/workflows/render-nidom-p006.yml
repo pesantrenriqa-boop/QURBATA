@@ -41,12 +41,12 @@ jobs:
         run: node tools/render_nidom_p006.js
       - name: Verify outputs
         run: |
-          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P006-v0.7.pdf
-          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P006-v0.7.png
+          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P006-v0.8.pdf
+          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P006-v0.8.png
       - uses: actions/upload-artifact@v4
         with:
-          name: QURBATA-NIDOM-J1-P006-v0.7
+          name: QURBATA-NIDOM-J1-P006-v0.8
           path: |
-            dist/nidom-akhlak/QURBATA-NIDOM-J1-P006-v0.7.pdf
-            dist/nidom-akhlak/QURBATA-NIDOM-J1-P006-v0.7.png
+            dist/nidom-akhlak/QURBATA-NIDOM-J1-P006-v0.8.pdf
+            dist/nidom-akhlak/QURBATA-NIDOM-J1-P006-v0.8.png
           if-no-files-found: error
