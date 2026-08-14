@@ -16,12 +16,15 @@ const fs = require('fs');
   const info = await page.evaluate(() => {
     const e = document.querySelector('.hadith-ar');
     const cs = getComputedStyle(e);
-    return { family: cs.fontFamily, dir: cs.direction, text: e.textContent.trim(), width: e.getBoundingClientRect().width, height: e.getBoundingClientRect().height };
+    const sig = document.querySelector('.signatures').getBoundingClientRect();
+    const footer = document.querySelector('.footer').getBoundingClientRect();
+    return { family: cs.fontFamily, dir: cs.direction, text: e.textContent.trim(), width: e.getBoundingClientRect().width, height: e.getBoundingClientRect().height, signaturesBottom: sig.bottom, footerTop: footer.top };
   });
+  if (info.signaturesBottom > info.footerTop - 10) throw new Error('SIGNATURE_FOOTER_COLLISION');
   console.log('ARABIC_RENDER_CHECK=' + JSON.stringify(info));
-  await page.screenshot({ path: path.join(outDir, 'QURBATA-NIDOM-J1-P001-v0.3.png'), fullPage: true });
+  await page.screenshot({ path: path.join(outDir, 'QURBATA-NIDOM-J1-P001-v0.4.png'), fullPage: true });
   await page.pdf({
-    path: path.join(outDir, 'QURBATA-NIDOM-J1-P001-v0.3.pdf'),
+    path: path.join(outDir, 'QURBATA-NIDOM-J1-P001-v0.4.pdf'),
     width: '176mm',
     height: '250mm',
     printBackground: true,
