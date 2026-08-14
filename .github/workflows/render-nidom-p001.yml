@@ -15,17 +15,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-
       - name: Install Playwright
         run: |
           npm init -y >/dev/null 2>&1
           npm install playwright@1.55.0
           npx playwright install --with-deps chromium
-
       - name: Bind KFGQPC Uthman Taha Naskh
         shell: bash
         run: |
@@ -44,22 +41,18 @@ jobs:
             FONT=$(find /tmp/uthman-font/unpacked -type f -iname '*.ttf' | head -n 1 || true)
             test -n "$FONT"
             cp "$FONT" .build-fonts/UthmanTaha.ttf
-            echo 'BOUND_FONT=KFGQPC_UTHMAN_TAHA_NASKH_VER10_TTF'
           fi
           test -s .build-fonts/UthmanTaha.ttf || test -s .build-fonts/UthmanTaha.woff2
-
       - name: Render print PDF + PNG
         run: node tools/render_nidom_p001.js
-
       - name: Verify outputs
         run: |
-          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P001-v0.5.pdf
-          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P001-v0.5.png
-
+          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P001-v0.6.pdf
+          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P001-v0.6.png
       - uses: actions/upload-artifact@v4
         with:
-          name: QURBATA-NIDOM-J1-P001-v0.5
+          name: QURBATA-NIDOM-J1-P001-v0.6
           path: |
-            dist/nidom-akhlak/QURBATA-NIDOM-J1-P001-v0.5.pdf
-            dist/nidom-akhlak/QURBATA-NIDOM-J1-P001-v0.5.png
+            dist/nidom-akhlak/QURBATA-NIDOM-J1-P001-v0.6.pdf
+            dist/nidom-akhlak/QURBATA-NIDOM-J1-P001-v0.6.png
           if-no-files-found: error
