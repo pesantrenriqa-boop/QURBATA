@@ -15,8 +15,6 @@ def read_csv(p):
     with p.open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
 
 def arabic_html(s):
-    # Keep base letters and combining marks in one uninterrupted shaping run.
-    # Splitting marks into spans breaks Amiri Quran GPOS mark/mkmk attachment.
     return html.escape(str(s or ''))
 
 P001_ROWS=[['بَتَ','تَبَ','بَثَ','ثَبَ'],['تِثُ','ثُتِ','بِثَ','ثَبُ'],['بَتِثُ','بَدِتُ','تَرَثِ'],['ثَذِبُ','بَوَتِ','تَاثُ'],['بَرِثُ','ثَدَبِ','تَزُبِ'],['ثَوَبِ','بَذِتُ','تَدُثِ'],['بَتَرُ','ثِبَدَ','تَبِوَ'],['بَزِثُ','تَرَبِ','ثَدِتُ']]
@@ -40,6 +38,23 @@ async def fit_and_inspect(page):
  metrics=await base.base.fit_joined(page)
  issues=await page.evaluate('''()=>{const out=[],t=2,g=document.querySelector('.j2-grid'),b=document.querySelector('.targets');const rows={};for(const el of document.querySelectorAll('.j2-object')){const r=Number(el.dataset.row),x=el.querySelector('.j2-glyph').getBoundingClientRect();(rows[r]??=[]).push({slot:el.dataset.slot,box:x})}for(let r=1;r<=8;r++){const cur=rows[r]||[];for(const it of cur){const s=document.querySelector(`.j2-object[data-slot="${it.slot}"]`).getBoundingClientRect();const pad=r<=2?10:12;if(it.box.left<s.left-pad||it.box.right>s.right+pad)out.push({kind:'JOINED_INK_HORIZONTAL_ESCAPE',slot:it.slot,row:r})}if(r<8&&rows[r+1]){const lowerTop=Math.min(...rows[r+1].map(x=>x.box.top));const upperBottom=Math.max(...cur.map(x=>x.box.bottom));const gap=lowerTop-upperBottom;if(gap<8)out.push({kind:'INTER_ROW_CLEARANCE_TOO_SMALL',row:r,nextRow:r+1,upperBottom,lowerTop,gap,requiredGap:8})}}if(g&&b&&g.getBoundingClientRect().bottom>b.getBoundingClientRect().top+t)out.push({kind:'GRID_FOOTER_OVERLAP'});return out}''')
  return metrics,issues
+
+async def _write_pdf_with_lock_fallback(page,out):
+ primary=out/'QURBATA-JILID-2-P001-CANDIDATE-V12.pdf'
+ pdf=primary
+ try:
+  await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'})
+  return pdf,'PRIMARY'
+ except PermissionError:
+  # Windows commonly locks an open PDF. Never fail the render just because the
+  # previous candidate is being viewed; choose the first unused revision name.
+  for n in range(13,100):
+   candidate=out/f'QURBATA-JILID-2-P001-CANDIDATE-V{n}-LOCK-SAFE.pdf'
+   if candidate.exists():continue
+   await page.pdf(path=str(candidate),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'})
+   return candidate,'LOCK_FALLBACK'
+  raise RuntimeError('P001_NO_AVAILABLE_LOCK_SAFE_PDF_NAME')
+
 async def render(h,out,debug):
  report=out/'LAYOUT-OVERFLOW-REPORT-J2-P001-V12.json';png=out/'png';png.mkdir(parents=True,exist_ok=True)
  async with async_playwright() as p:
@@ -50,14 +65,14 @@ async def render(h,out,debug):
    kinds={}
    for x in issues:kinds[x['kind']]=kinds.get(x['kind'],0)+1
    raise RuntimeError('P001_LAYOUT_ISSUES='+str(len(issues))+' TYPES='+','.join(f'{k}:{v}' for k,v in sorted(kinds.items()))+f' REPORT={report}')
-  await page.screenshot(path=str(png/'page-001.png'),full_page=True);pdf=out/'QURBATA-JILID-2-P001-CANDIDATE-V12.pdf';await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await browser.close()
- return metrics,report,pdf
+  await page.screenshot(path=str(png/'page-001.png'),full_page=True);pdf,pdf_mode=await _write_pdf_with_lock_fallback(page,out);await browser.close()
+ return metrics,report,pdf,pdf_mode
 
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--output-dir',default=str(DEFAULT_OUT.relative_to(ROOT)));ap.add_argument('--debug',action='store_true');a=ap.parse_args();out=Path(a.output_dir);out=out if out.is_absolute() else ROOT/out;out.mkdir(parents=True,exist_ok=True)
  if len(read_csv(MICRO))!=10:raise ValueError('P001_MICRO_LADDER_INVALID')
  for obj in flatten_rows():
   if P001_BANNED_JOINING.intersection(obj):raise ValueError('P001_COMPETENCY_LEAKAGE object='+obj)
- hdir=out/'html';hdir.mkdir(parents=True,exist_ok=True);h=hdir/'page-001.html';h.write_text(build_page_html(a.debug),encoding='utf-8');metrics,report,pdf=asyncio.run(render(h,out,a.debug))
- print('JILID2_P001_RENDERER_V12=PASS');print('PAGE=1');print('HARAKAT_POSITIONING=AMIRI_QURAN_NATIVE_OPENTYPE');print('HARAKAT_MANUAL_OFFSETS=DISABLED');print('OPENTYPE_MARK=ENABLED');print('OPENTYPE_MKMK=ENABLED');print('ROW_GAP_MM=4.6');print('GLYPH_LINE_HEIGHT=1.04');print('VERTICAL_VALIDATION=MINIMUM_8PX_INTER_ROW_CLEARANCE');print('PRACTICE_OBJECTS=26');print('COMPETENCY_LEAKAGE=0');print('LAYOUT_OVERFLOW=0');print(f'OVERFLOW_REPORT={report.relative_to(ROOT)}');print(f'PDF={pdf.relative_to(ROOT)}');return 0
+ hdir=out/'html';hdir.mkdir(parents=True,exist_ok=True);h=hdir/'page-001.html';h.write_text(build_page_html(a.debug),encoding='utf-8');metrics,report,pdf,pdf_mode=asyncio.run(render(h,out,a.debug))
+ print('JILID2_P001_RENDERER_V12=PASS');print('PAGE=1');print('PDF_WRITE_MODE='+pdf_mode);print('HARAKAT_POSITIONING=AMIRI_QURAN_NATIVE_OPENTYPE');print('HARAKAT_MANUAL_OFFSETS=DISABLED');print('OPENTYPE_MARK=ENABLED');print('OPENTYPE_MKMK=ENABLED');print('ROW_GAP_MM=4.6');print('GLYPH_LINE_HEIGHT=1.04');print('VERTICAL_VALIDATION=MINIMUM_8PX_INTER_ROW_CLEARANCE');print('PRACTICE_OBJECTS=26');print('COMPETENCY_LEAKAGE=0');print('LAYOUT_OVERFLOW=0');print(f'OVERFLOW_REPORT={report.relative_to(ROOT)}');print(f'PDF={pdf.relative_to(ROOT)}');return 0
 if __name__=='__main__':raise SystemExit(main())
