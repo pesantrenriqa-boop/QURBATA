@@ -31,17 +31,21 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p .build-fonts /tmp/uthman-font
-          if curl -fL --retry 3 --connect-timeout 20 \
-            'https://fonts.qurancomplex.gov.sa/wp-content/uploads/2012/06/UthmanTN1-Ver10.zip' \
-            -o /tmp/uthman-font/font.zip; then
+          # Prefer the stable public QPC-font mirror used only at build time.
+          if curl -fL --retry 2 --connect-timeout 10 --max-time 30 \
+            'https://raw.githubusercontent.com/quranwbw/qpc-fonts/master/various-woff2/UthmanTN1%20Ver10.woff2' \
+            -o .build-fonts/UthmanTaha.woff2; then
+            echo 'BOUND_FONT=KFGQPC_UTHMAN_TAHA_NASKH_VER10_WOFF2'
+          else
+            rm -f .build-fonts/UthmanTaha.woff2
+            curl -fL --retry 1 --connect-timeout 10 --max-time 30 \
+              'https://fonts.qurancomplex.gov.sa/wp-content/uploads/2012/06/UthmanTN1-Ver10.zip' \
+              -o /tmp/uthman-font/font.zip
             unzip -q /tmp/uthman-font/font.zip -d /tmp/uthman-font/unpacked
             FONT=$(find /tmp/uthman-font/unpacked -type f -iname '*.ttf' | head -n 1 || true)
-            if [ -n "$FONT" ]; then cp "$FONT" .build-fonts/UthmanTaha.ttf; fi
-          fi
-          if [ ! -s .build-fonts/UthmanTaha.ttf ]; then
-            curl -fL --retry 3 \
-              'https://raw.githubusercontent.com/quranwbw/qpc-fonts/master/various-woff2/UthmanTN1%20Ver10.woff2' \
-              -o .build-fonts/UthmanTaha.woff2
+            test -n "$FONT"
+            cp "$FONT" .build-fonts/UthmanTaha.ttf
+            echo 'BOUND_FONT=KFGQPC_UTHMAN_TAHA_NASKH_VER10_TTF'
           fi
           test -s .build-fonts/UthmanTaha.ttf || test -s .build-fonts/UthmanTaha.woff2
           ls -lh .build-fonts/
