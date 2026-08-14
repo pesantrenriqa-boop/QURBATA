@@ -19,13 +19,15 @@ const fs = require('fs');
     const sig = document.querySelector('.signatures').getBoundingClientRect();
     const footer = document.querySelector('.footer').getBoundingClientRect();
     const nidom = document.querySelector('.nidom').getBoundingClientRect();
-    return { family: cs.fontFamily, dir: cs.direction, text: e.textContent.trim(), width: e.getBoundingClientRect().width, height: e.getBoundingClientRect().height, nidomBottom: nidom.bottom, signaturesBottom: sig.bottom, footerTop: footer.top };
+    const logo = document.querySelector('.brand-logo').getBoundingClientRect();
+    return { family: cs.fontFamily, dir: cs.direction, text: e.textContent.trim(), width: e.getBoundingClientRect().width, height: e.getBoundingClientRect().height, nidomBottom: nidom.bottom, signaturesBottom: sig.bottom, footerTop: footer.top, logoWidth: logo.width, logoHeight: logo.height };
   });
   if (info.signaturesBottom > info.footerTop - 8) throw new Error('SIGNATURE_FOOTER_COLLISION');
-  console.log('ARABIC_RENDER_CHECK=' + JSON.stringify(info));
-  await page.screenshot({ path: path.join(outDir, 'QURBATA-NIDOM-J1-P001-v0.5.png'), fullPage: true });
+  if (info.logoWidth < 20 || info.logoHeight < 20) throw new Error('QURBATA_LOGO_NOT_RENDERED');
+  console.log('RENDER_CHECK=' + JSON.stringify(info));
+  await page.screenshot({ path: path.join(outDir, 'QURBATA-NIDOM-J1-P001-v0.6.png'), fullPage: true });
   await page.pdf({
-    path: path.join(outDir, 'QURBATA-NIDOM-J1-P001-v0.5.pdf'),
+    path: path.join(outDir, 'QURBATA-NIDOM-J1-P001-v0.6.pdf'),
     width: '176mm',
     height: '250mm',
     printBackground: true,
