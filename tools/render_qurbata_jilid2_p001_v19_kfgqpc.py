@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
-"""QURBATA Jilid 2 P001 — production KFGQPC renderer with frozen V7.6 sukun.
+"""QURBATA Jilid 2 P001 — Jilid-1-compatible production renderer.
 
-Arabic base letters and native mark positioning stay KFGQPC Uthman Taha Naskh.
-Only the U+0652 sukun outline is replaced at runtime with Amiri U+06E1 and shifted
-vertically by the approved frozen offset -1700 KFGQPC font units. Font binaries are
-runtime-only and are never committed to the repository.
-
-Default output follows the same print-ready tree used by Jilid 1:
-dist/qurbata-print-ready/jilid-2/pages/P001/
+Keeps the frozen V7.6 sukun system while replacing the legacy Jilid 2 page
+presentation with the current Jilid 1 visual language: large Arabic practice
+text, clean lower area, no competency-description boxes, and no teacher/date/
+score form. Output is written to the qurbata-print-ready tree.
 """
 from __future__ import annotations
 import argparse
@@ -34,22 +31,22 @@ DEFAULT_OUTPUT='dist/qurbata-print-ready/jilid-2/pages/P001'
 
 def discover_font(explicit_font:str|None, explicit_zip:str|None, out_dir:Path)->tuple[Path,str]:
     candidates=[]
-    if explicit_font: candidates.append(Path(explicit_font).expanduser())
+    if explicit_font:candidates.append(Path(explicit_font).expanduser())
     env=os.environ.get('QURBATA_KFGQPC_FONT')
-    if env: candidates.append(Path(env).expanduser())
+    if env:candidates.append(Path(env).expanduser())
     home=Path.home()
     candidates += [ROOT/'_local/fonts'/TTF_BASENAME,home/'Downloads'/TTF_BASENAME,home/'Downloads'/'KFGQPC Uthman Taha Naskh Regular'/TTF_BASENAME]
     for p in candidates:
-        if p.is_file(): return p.resolve(),'TTF'
+        if p.is_file():return p.resolve(),'TTF'
     zips=[]
-    if explicit_zip: zips.append(Path(explicit_zip).expanduser())
+    if explicit_zip:zips.append(Path(explicit_zip).expanduser())
     zips += [home/'Downloads'/ZIP_BASENAME,ROOT/'_local/fonts'/ZIP_BASENAME]
     for zp in zips:
-        if not zp.is_file(): continue
+        if not zp.is_file():continue
         target=out_dir/'_runtime_font'/TTF_BASENAME;target.parent.mkdir(parents=True,exist_ok=True)
         with zipfile.ZipFile(zp) as z:
             match=next((n for n in z.namelist() if n.lower().endswith(TTF_BASENAME.lower())),None)
-            if not match: raise RuntimeError(f'KFGQPC_TTF_NOT_FOUND_IN_ZIP={zp}')
+            if not match:raise RuntimeError(f'KFGQPC_TTF_NOT_FOUND_IN_ZIP={zp}')
             target.write_bytes(z.read(match))
         return target.resolve(),'ZIP_EXTRACTED_RUNTIME'
     raise FileNotFoundError('KFGQPC_FONT_NOT_FOUND. Use --font-file or --font-zip.')
@@ -90,6 +87,12 @@ def build_frozen_sukun_font(kfg_path:Path,amiri_path:Path,out_dir:Path)->Path:
     return dst.resolve()
 
 
+async def jilid1_style_fit_and_inspect(page):
+    metrics=await p001.base.base.fit_joined(page)
+    issues=await page.evaluate('''()=>{const out=[];const rows={};const grid=document.querySelector('.j2-grid');for(const el of document.querySelectorAll('.j2-object')){const r=Number(el.dataset.row),x=el.querySelector('.j2-glyph').getBoundingClientRect();(rows[r]??=[]).push({slot:el.dataset.slot,box:x})}for(let r=1;r<=8;r++){const cur=rows[r]||[];for(const it of cur){const s=document.querySelector(`.j2-object[data-slot="${it.slot}"]`).getBoundingClientRect();const pad=r<=2?10:12;if(it.box.left<s.left-pad||it.box.right>s.right+pad)out.push({kind:'JOINED_INK_HORIZONTAL_ESCAPE',slot:it.slot,row:r})}if(r<8&&rows[r+1]){const lowerTop=Math.min(...rows[r+1].map(x=>x.box.top));const upperBottom=Math.max(...cur.map(x=>x.box.bottom));const gap=lowerTop-upperBottom;if(gap<6)out.push({kind:'INTER_ROW_CLEARANCE_TOO_SMALL',row:r,nextRow:r+1,gap,requiredGap:6})}}const pageBox=document.querySelector('.page').getBoundingClientRect();if(grid&&grid.getBoundingClientRect().bottom>pageBox.bottom-18)out.push({kind:'GRID_BOTTOM_SAFEAREA_FAIL'});return out}''')
+    return metrics,issues
+
+
 def main():
     ap=argparse.ArgumentParser(add_help=False)
     ap.add_argument('--font-file');ap.add_argument('--font-zip');ap.add_argument('--amiri-font')
@@ -98,36 +101,47 @@ def main():
     for i,a in enumerate(remaining):
         if a=='--output-dir' and i+1<len(remaining):out_arg=remaining[i+1]
     out=Path(out_arg);out=out if out.is_absolute() else ROOT/out;out.mkdir(parents=True,exist_ok=True)
-
-    # V18 still consumes --output-dir from argv. Inject the standardized location
-    # only when the caller did not explicitly provide another destination.
-    if '--output-dir' not in remaining:
-        remaining=[*remaining,'--output-dir',DEFAULT_OUTPUT]
+    if '--output-dir' not in remaining:remaining=[*remaining,'--output-dir',DEFAULT_OUTPUT]
 
     kfg_path,font_source=discover_font(known.font_file,known.font_zip,out)
     amiri_path,amiri_source=discover_amiri(known.amiri_font,out)
     frozen_font=build_frozen_sukun_font(kfg_path,amiri_path,out)
     font_uri=frozen_font.as_uri()
 
-    p001.P001_CSS += f'''\n@font-face{{font-family:"{FONT_FAMILY}";src:url("{font_uri}") format("truetype");font-style:normal;font-weight:400;font-display:block;}}\n.j2-glyph,.presentation-object,.presentation-object .arabic-part{{font-family:"{FONT_FAMILY}",serif!important;font-feature-settings:'mark' 1,'mkmk' 1;font-kerning:normal;text-rendering:optimizeLegibility;}}\n'''
+    # Final Jilid 1 visual baseline: large main text, compact header/presentation,
+    # and no legacy explanatory/form blocks below the practice grid.
+    p001.P001_CSS += f'''\n@font-face{{font-family:"{FONT_FAMILY}";src:url("{font_uri}") format("truetype");font-style:normal;font-weight:400;font-display:block;}}
+.page{{padding:3.6mm 8mm 2.5mm!important;}}
+.header{{height:17mm!important;flex:0 0 17mm!important;grid-template-columns:32mm minmax(0,1fr) 12mm!important;}}
+.brand-logo{{width:32mm!important;height:17mm!important;}}
+.learning-header-title{{font-size:6.2pt!important;letter-spacing:.16em!important;}}
+.presentation{{height:18mm!important;flex:0 0 18mm!important;margin:0!important;}}
+.presentation-object{{font-family:"{FONT_FAMILY}",serif!important;font-size:45pt!important;line-height:1.25!important;gap:4mm!important;}}
+.presentation-object .arabic-part{{font-family:"{FONT_FAMILY}",serif!important;}}
+.presentation-object .arrow{{font-size:22pt!important;}}
+.j2-grid{{height:161mm!important;flex:0 0 161mm!important;row-gap:4.8mm!important;padding:2mm 0 1.5mm!important;}}
+.j2-glyph{{font-family:"{FONT_FAMILY}",serif!important;font-size:39pt!important;line-height:1.16!important;padding:.2mm 1mm .3mm!important;font-feature-settings:'mark' 1,'mkmk' 1;font-kerning:normal;text-rendering:optimizeLegibility;}}
+.targets,.footer{{display:none!important;height:0!important;min-height:0!important;margin:0!important;padding:0!important;border:0!important;}}
+.bottom-band{{display:none!important;}}
+'''
+    p001.fit_and_inspect=jilid1_style_fit_and_inspect
 
     sys.argv=[sys.argv[0],*remaining]
     rc=v18.main()
     print('JILID2_P001_PRODUCTION_FROZEN_SUKUN=PASS')
+    print('VISUAL_BASELINE=JILID1_CURRENT')
+    print('PRACTICE_FONT_PT=39')
+    print('PRESENTATION_FONT_PT=45')
+    print('LEGACY_BOTTOM_DESCRIPTIONS=REMOVED')
+    print('LEGACY_TEACHER_DATE_SCORE_FORM=REMOVED')
     print('ARABIC_FONT_PRIMARY=KFGQPC UTHMAN TAHA')
     print(f'KFGQPC_SOURCE={font_source}')
     print(f'AMIRI_SOURCE={amiri_source}')
     print('SUKUN_BASELINE_VERSION=V7.6')
     print('SUKUN_BASELINE_STATUS=FROZEN')
-    print('SUKUN_RENDER_CODEPOINT=U+0652')
-    print('SUKUN_VISUAL_OUTLINE=AMIRI_U+06E1')
     print(f'SUKUN_Y_SHIFT={SUKUN_Y_SHIFT}')
-    print('POSITIONING=KFGQPC_U+0652_GPOS_PRESERVED')
-    print('FONT_BINARY_REPOSITORY_STORAGE=NO')
-    print('V18_GEOMETRY=PRESERVED')
     print(f'PRINT_READY_OUTPUT={DEFAULT_OUTPUT}')
-    print('OUTPUT_LAYOUT=JILID1_COMPATIBLE')
-    print('STATUS=PRODUCTION_INTEGRATION_CANDIDATE')
+    print('STATUS=JILID1_STYLE_CANDIDATE')
     return rc
 
 if __name__=='__main__':raise SystemExit(main())
