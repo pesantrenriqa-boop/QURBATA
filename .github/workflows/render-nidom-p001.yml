@@ -31,7 +31,6 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p .build-fonts /tmp/uthman-font
-          # Prefer the stable public QPC-font mirror used only at build time.
           if curl -fL --retry 2 --connect-timeout 10 --max-time 30 \
             'https://raw.githubusercontent.com/quranwbw/qpc-fonts/master/various-woff2/UthmanTN1%20Ver10.woff2' \
             -o .build-fonts/UthmanTaha.woff2; then
@@ -55,13 +54,13 @@ jobs:
 
       - name: Verify outputs
         run: |
-          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P001-v0.3.pdf
-          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P001-v0.3.png
+          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P001-v0.4.pdf
+          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P001-v0.4.png
 
       - uses: actions/upload-artifact@v4
         with:
-          name: QURBATA-NIDOM-J1-P001-v0.3
+          name: QURBATA-NIDOM-J1-P001-v0.4
           path: |
-            dist/nidom-akhlak/QURBATA-NIDOM-J1-P001-v0.3.pdf
-            dist/nidom-akhlak/QURBATA-NIDOM-J1-P001-v0.3.png
+            dist/nidom-akhlak/QURBATA-NIDOM-J1-P001-v0.4.pdf
+            dist/nidom-akhlak/QURBATA-NIDOM-J1-P001-v0.4.png
           if-no-files-found: error
