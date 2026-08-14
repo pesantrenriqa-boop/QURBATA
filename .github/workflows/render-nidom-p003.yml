@@ -1,0 +1,52 @@
+name: Render QURBATA NIDOM P003
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - content/qurbata-jilid-1-8-production
+    paths:
+      - 'books/nidom-akhlak/jilid-1/page-003.html'
+      - 'tools/render_nidom_p003.js'
+      - '.github/workflows/render-nidom-p003.yml'
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install Playwright
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Bind KFGQPC Uthman Taha Naskh
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .build-fonts /tmp/uthman-font
+          if curl -fL --retry 2 --connect-timeout 10 --max-time 30 'https://raw.githubusercontent.com/quranwbw/qpc-fonts/master/various-woff2/UthmanTN1%20Ver10.woff2' -o .build-fonts/UthmanTaha.woff2; then
+            echo 'BOUND_FONT=KFGQPC_UTHMAN_TAHA_NASKH_VER10_WOFF2'
+          else
+            rm -f .build-fonts/UthmanTaha.woff2
+            curl -fL --retry 1 --connect-timeout 10 --max-time 30 'https://fonts.qurancomplex.gov.sa/wp-content/uploads/2012/06/UthmanTN1-Ver10.zip' -o /tmp/uthman-font/font.zip
+            unzip -q /tmp/uthman-font/font.zip -d /tmp/uthman-font/unpacked
+            FONT=$(find /tmp/uthman-font/unpacked -type f -iname '*.ttf' | head -n 1 || true)
+            test -n "$FONT"
+            cp "$FONT" .build-fonts/UthmanTaha.ttf
+          fi
+          test -s .build-fonts/UthmanTaha.ttf || test -s .build-fonts/UthmanTaha.woff2
+      - name: Render print PDF + PNG
+        run: node tools/render_nidom_p003.js
+      - name: Verify outputs
+        run: |
+          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P003-v0.6.pdf
+          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P003-v0.6.png
+      - uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-NIDOM-J1-P003-v0.6
+          path: |
+            dist/nidom-akhlak/QURBATA-NIDOM-J1-P003-v0.6.pdf
+            dist/nidom-akhlak/QURBATA-NIDOM-J1-P003-v0.6.png
+          if-no-files-found: error
