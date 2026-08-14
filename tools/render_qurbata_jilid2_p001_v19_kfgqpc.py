@@ -3,8 +3,8 @@
 
 Keeps the frozen V7.6 sukun system while replacing the legacy Jilid 2 page
 presentation with the current Jilid 1 visual language: large Arabic practice
-text, clean lower area, no competency-description boxes, and no teacher/date/
-score form. Output is written to the qurbata-print-ready tree.
+text, clean lower area, no competency-description boxes, no teacher/date/score
+form, while preserving the small Arabic Uthman Taha slogan footer.
 """
 from __future__ import annotations
 import argparse
@@ -89,7 +89,7 @@ def build_frozen_sukun_font(kfg_path:Path,amiri_path:Path,out_dir:Path)->Path:
 
 async def jilid1_style_fit_and_inspect(page):
     metrics=await p001.base.base.fit_joined(page)
-    issues=await page.evaluate('''()=>{const out=[];const rows={};const grid=document.querySelector('.j2-grid');for(const el of document.querySelectorAll('.j2-object')){const r=Number(el.dataset.row),x=el.querySelector('.j2-glyph').getBoundingClientRect();(rows[r]??=[]).push({slot:el.dataset.slot,box:x})}for(let r=1;r<=8;r++){const cur=rows[r]||[];for(const it of cur){const s=document.querySelector(`.j2-object[data-slot="${it.slot}"]`).getBoundingClientRect();const pad=r<=2?10:12;if(it.box.left<s.left-pad||it.box.right>s.right+pad)out.push({kind:'JOINED_INK_HORIZONTAL_ESCAPE',slot:it.slot,row:r})}if(r<8&&rows[r+1]){const lowerTop=Math.min(...rows[r+1].map(x=>x.box.top));const upperBottom=Math.max(...cur.map(x=>x.box.bottom));const gap=lowerTop-upperBottom;if(gap<6)out.push({kind:'INTER_ROW_CLEARANCE_TOO_SMALL',row:r,nextRow:r+1,gap,requiredGap:6})}}const pageBox=document.querySelector('.page').getBoundingClientRect();if(grid&&grid.getBoundingClientRect().bottom>pageBox.bottom-18)out.push({kind:'GRID_BOTTOM_SAFEAREA_FAIL'});return out}''')
+    issues=await page.evaluate('''()=>{const out=[];const rows={};const grid=document.querySelector('.j2-grid');const footer=document.querySelector('.footer');for(const el of document.querySelectorAll('.j2-object')){const r=Number(el.dataset.row),x=el.querySelector('.j2-glyph').getBoundingClientRect();(rows[r]??=[]).push({slot:el.dataset.slot,box:x})}for(let r=1;r<=8;r++){const cur=rows[r]||[];for(const it of cur){const s=document.querySelector(`.j2-object[data-slot="${it.slot}"]`).getBoundingClientRect();const pad=r<=2?10:12;if(it.box.left<s.left-pad||it.box.right>s.right+pad)out.push({kind:'JOINED_INK_HORIZONTAL_ESCAPE',slot:it.slot,row:r})}if(r<8&&rows[r+1]){const lowerTop=Math.min(...rows[r+1].map(x=>x.box.top));const upperBottom=Math.max(...cur.map(x=>x.box.bottom));const gap=lowerTop-upperBottom;if(gap<6)out.push({kind:'INTER_ROW_CLEARANCE_TOO_SMALL',row:r,nextRow:r+1,gap,requiredGap:6})}}if(grid&&footer&&grid.getBoundingClientRect().bottom>footer.getBoundingClientRect().top-2)out.push({kind:'GRID_FOOTER_OVERLAP'});return out}''')
     return metrics,issues
 
 
@@ -108,8 +108,6 @@ def main():
     frozen_font=build_frozen_sukun_font(kfg_path,amiri_path,out)
     font_uri=frozen_font.as_uri()
 
-    # Final Jilid 1 visual baseline: large main text, compact header/presentation,
-    # and no legacy explanatory/form blocks below the practice grid.
     p001.P001_CSS += f'''\n@font-face{{font-family:"{FONT_FAMILY}";src:url("{font_uri}") format("truetype");font-style:normal;font-weight:400;font-display:block;}}
 .page{{padding:3.6mm 8mm 2.5mm!important;}}
 .header{{height:17mm!important;flex:0 0 17mm!important;grid-template-columns:32mm minmax(0,1fr) 12mm!important;}}
@@ -119,9 +117,13 @@ def main():
 .presentation-object{{font-family:"{FONT_FAMILY}",serif!important;font-size:45pt!important;line-height:1.25!important;gap:4mm!important;}}
 .presentation-object .arabic-part{{font-family:"{FONT_FAMILY}",serif!important;}}
 .presentation-object .arrow{{font-size:22pt!important;}}
-.j2-grid{{height:161mm!important;flex:0 0 161mm!important;row-gap:4.8mm!important;padding:2mm 0 1.5mm!important;}}
+.j2-grid{{height:149mm!important;flex:0 0 149mm!important;row-gap:4.8mm!important;padding:2mm 0 1.5mm!important;}}
 .j2-glyph{{font-family:"{FONT_FAMILY}",serif!important;font-size:39pt!important;line-height:1.16!important;padding:.2mm 1mm .3mm!important;font-feature-settings:'mark' 1,'mkmk' 1;font-kerning:normal;text-rendering:optimizeLegibility;}}
-.targets,.footer{{display:none!important;height:0!important;min-height:0!important;margin:0!important;padding:0!important;border:0!important;}}
+.targets{{display:none!important;height:0!important;min-height:0!important;margin:0!important;padding:0!important;border:0!important;}}
+.footer{{height:12mm!important;flex:0 0 12mm!important;margin:0!important;padding:0 1mm 1mm!important;display:flex!important;align-items:center!important;justify-content:space-between!important;background:transparent!important;border-radius:0!important;color:#173a2d!important;overflow:visible!important;font-family:"{FONT_FAMILY}",serif!important;direction:rtl!important;}}
+.footer .field{{display:none!important;}}
+.footer::before{{content:"قُرْآنٌ · لُغَةٌ · أَدَبٌ";font-family:"{FONT_FAMILY}",serif!important;font-size:10.3pt!important;line-height:1.2!important;direction:rtl!important;}}
+.footer::after{{content:"تَعَلَّمْ · اِعْمَلْ · عَلِّمْ";font-family:"{FONT_FAMILY}",serif!important;font-size:10.3pt!important;line-height:1.2!important;direction:rtl!important;}}
 .bottom-band{{display:none!important;}}
 '''
     p001.fit_and_inspect=jilid1_style_fit_and_inspect
@@ -134,6 +136,11 @@ def main():
     print('PRESENTATION_FONT_PT=45')
     print('LEGACY_BOTTOM_DESCRIPTIONS=REMOVED')
     print('LEGACY_TEACHER_DATE_SCORE_FORM=REMOVED')
+    print('ARABIC_SLOGAN_FOOTER=RESTORED')
+    print('FOOTER_LEFT=قُرْآنٌ · لُغَةٌ · أَدَبٌ')
+    print('FOOTER_RIGHT=تَعَلَّمْ · اِعْمَلْ · عَلِّمْ')
+    print('FOOTER_FONT=KFGQPC_UTHMAN_TAHA')
+    print('FOOTER_FONT_PT=10.3')
     print('ARABIC_FONT_PRIMARY=KFGQPC UTHMAN TAHA')
     print(f'KFGQPC_SOURCE={font_source}')
     print(f'AMIRI_SOURCE={amiri_source}')
