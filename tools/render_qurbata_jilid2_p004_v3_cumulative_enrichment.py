@@ -4,7 +4,8 @@
 V3 renders directly to its own PDF/report names and never deletes or overwrites
 P004 V2. Core content stays at 32 lexical objects; production typography stays
 52/39 pt. The cumulative enrichment capsule is absolutely anchored above the
-footer so it cannot push document flow into the footer area.
+footer, and P004 reserves dedicated vertical space for it by tightening only the
+practice-grid geometry (never the core font sizes).
 """
 from __future__ import annotations
 import json,sys
@@ -19,10 +20,18 @@ import render_qurbata_jilid2_p001_v1 as p001
 
 DEFAULT_P004_OUTPUT='dist/qurbata-print-ready/jilid-2/pages/P004'
 
-# Production baseline. The capsule is fixed immediately above the 7mm footer.
+# Production typography is frozen. P004 cumulative page reserves ~10mm below
+# the practice grid for enrichment by reducing only grid height/row gaps.
 p001.P001_CSS += r'''
 .presentation-object{font-size:52pt!important;}
 .j2-glyph{font-size:39pt!important;}
+.j2-grid{
+  height:139mm!important;
+  flex:0 0 139mm!important;
+  row-gap:1.75mm!important;
+  padding-top:.7mm!important;
+  padding-bottom:.2mm!important;
+}
 .cumulative-enrichment{
   position:absolute!important;
   left:8mm!important;right:8mm!important;bottom:10.2mm!important;
@@ -68,7 +77,6 @@ async def render_p004_v3(h:Path,out:Path,debug:bool):
         enrichment_count=await page.locator('.cumulative-enrichment .micro').count()
         if enrichment_count!=3: raise RuntimeError(f'P004_V3_ENRICHMENT_COUNT_INVALID actual={enrichment_count} expected=3')
         metrics,layout_issues=await p001.fit_and_inspect(page)
-        # Validate capsule against page, footer, and the last practice row.
         extra=await page.evaluate('''()=>{
           const e=document.querySelector('.cumulative-enrichment'),f=document.querySelector('.footer'),p=document.querySelector('.page');
           if(!e||!p)return [{kind:'ENRICHMENT_MISSING'}];
@@ -76,7 +84,7 @@ async def render_p004_v3(h:Path,out:Path,debug:bool):
           if(er.left<pr.left||er.right>pr.right||er.bottom>pr.bottom)out.push({kind:'ENRICHMENT_PAGE_OVERFLOW'});
           if(f){const fr=f.getBoundingClientRect();if(er.bottom>fr.top-2)out.push({kind:'ENRICHMENT_FOOTER_COLLISION',enrichmentBottom:er.bottom,footerTop:fr.top});}
           const objs=[...document.querySelectorAll('.j2-object')];
-          if(objs.length){const lastBottom=Math.max(...objs.map(x=>x.getBoundingClientRect().bottom));if(lastBottom>er.top-4)out.push({kind:'ENRICHMENT_CORE_COLLISION',lastPracticeBottom:lastBottom,enrichmentTop:er.top});}
+          if(objs.length){const lastBottom=Math.max(...objs.map(x=>x.getBoundingClientRect().bottom));const clear=er.top-lastBottom;if(clear<4)out.push({kind:'ENRICHMENT_CORE_COLLISION',lastPracticeBottom:lastBottom,enrichmentTop:er.top,clearance:clear,requiredClearance:4});}
           return out;
         }''')
         all_issues=[*layout_issues,*extra]
@@ -108,6 +116,9 @@ def main():
     print('ENRICHMENT_CATEGORY=E01|E02|E06')
     print('ENRICHMENT_ITEM=LETTER_NAMES|ARABIC_INDIC_NUMERALS_0_9|NON_JOINERS')
     print('ENRICHMENT_POSITION=ABSOLUTE_ABOVE_FOOTER')
+    print('ENRICHMENT_RESERVED_SPACE_MM=APPROX_10')
+    print('GRID_HEIGHT_MM=139')
+    print('GRID_ROW_GAP_MM=1.75')
     print('ENRICHMENT_PREREQUISITE=P001_P003_ACQUIRED_SYMBOL_SET')
     print('ENRICHMENT_STATUS=ACTIVE_CANDIDATE')
     print('CORE_PRACTICE_OBJECTS=32_UNCHANGED')
