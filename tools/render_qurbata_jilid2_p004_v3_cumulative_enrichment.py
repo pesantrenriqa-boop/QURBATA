@@ -2,8 +2,9 @@
 """QURBATA Jilid 2 P004 V3 — cumulative page with lock-safe bottom-row enrichment.
 
 V3 renders directly to its own PDF/report names and never deletes or overwrites
-P004 V2. This avoids Windows file-lock failures when an older PDF is open.
-Core content stays at 32 lexical objects; production typography stays 52/39 pt.
+P004 V2. Core content stays at 32 lexical objects; production typography stays
+52/39 pt. The cumulative enrichment capsule is absolutely anchored above the
+footer so it cannot push document flow into the footer area.
 """
 from __future__ import annotations
 import json,sys
@@ -18,18 +19,25 @@ import render_qurbata_jilid2_p001_v1 as p001
 
 DEFAULT_P004_OUTPUT='dist/qurbata-print-ready/jilid-2/pages/P004'
 
-# Production baseline; enrichment must never shrink the core material.
+# Production baseline. The capsule is fixed immediately above the 7mm footer.
 p001.P001_CSS += r'''
 .presentation-object{font-size:52pt!important;}
 .j2-glyph{font-size:39pt!important;}
-.cumulative-enrichment{margin-top:1.0mm;border-top:.30mm solid #111;padding-top:1.0mm;display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.1mm;direction:ltr}
-.cumulative-enrichment .micro{min-height:8.5mm;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;line-height:1.02;overflow:hidden}
-.cumulative-enrichment .micro-label{font-family:Arial,sans-serif;font-size:6pt;font-weight:700;letter-spacing:.12pt;margin-bottom:.55mm}
-.cumulative-enrichment .micro-ar{font-family:'KFGQPC Uthman Taha Naskh','Amiri Quran','Amiri',serif;font-size:14pt;direction:rtl;white-space:nowrap}
-.cumulative-enrichment .micro-num{font-family:'KFGQPC Uthman Taha Naskh','Amiri Quran','Amiri',serif;font-size:16pt;direction:rtl;white-space:nowrap}
+.cumulative-enrichment{
+  position:absolute!important;
+  left:8mm!important;right:8mm!important;bottom:10.2mm!important;
+  height:8.2mm!important;box-sizing:border-box!important;
+  border-top:.25mm solid #111;padding-top:.55mm!important;
+  display:grid!important;grid-template-columns:1.45fr .8fr .75fr!important;
+  gap:1.0mm!important;direction:ltr!important;overflow:hidden!important;
+  background:#fff!important;z-index:3!important;
+}
+.cumulative-enrichment .micro{height:7.2mm!important;min-height:0!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important;line-height:1!important;overflow:hidden!important}
+.cumulative-enrichment .micro-label{font-family:Arial,sans-serif!important;font-size:5.4pt!important;font-weight:700!important;letter-spacing:.08pt!important;margin:0 0 .35mm!important;line-height:1!important}
+.cumulative-enrichment .micro-ar{font-family:'KFGQPC Uthman Taha Naskh','Amiri Quran','Amiri',serif!important;font-size:11.8pt!important;line-height:1!important;direction:rtl!important;white-space:nowrap!important}
+.cumulative-enrichment .micro-num{font-family:'KFGQPC Uthman Taha Naskh','Amiri Quran','Amiri',serif!important;font-size:14pt!important;line-height:1!important;direction:rtl!important;white-space:nowrap!important}
 '''
 
-# v1 import already installs the official P004 page builder.
 _original_build=p001.build_page_html
 
 def build_p004_v3(debug:bool):
@@ -60,8 +68,17 @@ async def render_p004_v3(h:Path,out:Path,debug:bool):
         enrichment_count=await page.locator('.cumulative-enrichment .micro').count()
         if enrichment_count!=3: raise RuntimeError(f'P004_V3_ENRICHMENT_COUNT_INVALID actual={enrichment_count} expected=3')
         metrics,layout_issues=await p001.fit_and_inspect(page)
-        # Explicit capsule-vs-footer/page check because enrichment sits below the core grid.
-        extra=await page.evaluate('''()=>{const e=document.querySelector('.cumulative-enrichment'),f=document.querySelector('.footer'),p=document.querySelector('.page');if(!e||!p)return [{kind:'ENRICHMENT_MISSING'}];const er=e.getBoundingClientRect(),pr=p.getBoundingClientRect();const out=[];if(er.bottom>pr.bottom-2)out.push({kind:'ENRICHMENT_PAGE_OVERFLOW',bottom:er.bottom,pageBottom:pr.bottom});if(f){const fr=f.getBoundingClientRect();if(er.bottom>fr.top-2)out.push({kind:'ENRICHMENT_FOOTER_COLLISION',enrichmentBottom:er.bottom,footerTop:fr.top})}return out}''')
+        # Validate capsule against page, footer, and the last practice row.
+        extra=await page.evaluate('''()=>{
+          const e=document.querySelector('.cumulative-enrichment'),f=document.querySelector('.footer'),p=document.querySelector('.page');
+          if(!e||!p)return [{kind:'ENRICHMENT_MISSING'}];
+          const er=e.getBoundingClientRect(),pr=p.getBoundingClientRect(),out=[];
+          if(er.left<pr.left||er.right>pr.right||er.bottom>pr.bottom)out.push({kind:'ENRICHMENT_PAGE_OVERFLOW'});
+          if(f){const fr=f.getBoundingClientRect();if(er.bottom>fr.top-2)out.push({kind:'ENRICHMENT_FOOTER_COLLISION',enrichmentBottom:er.bottom,footerTop:fr.top});}
+          const objs=[...document.querySelectorAll('.j2-object')];
+          if(objs.length){const lastBottom=Math.max(...objs.map(x=>x.getBoundingClientRect().bottom));if(lastBottom>er.top-4)out.push({kind:'ENRICHMENT_CORE_COLLISION',lastPracticeBottom:lastBottom,enrichmentTop:er.top});}
+          return out;
+        }''')
         all_issues=[*layout_issues,*extra]
         report.write_text(json.dumps(all_issues,ensure_ascii=False,indent=2),encoding='utf-8')
         if all_issues:
@@ -90,6 +107,7 @@ def main():
     print('CUMULATIVE_ENRICHMENT=TRUE')
     print('ENRICHMENT_CATEGORY=E01|E02|E06')
     print('ENRICHMENT_ITEM=LETTER_NAMES|ARABIC_INDIC_NUMERALS_0_9|NON_JOINERS')
+    print('ENRICHMENT_POSITION=ABSOLUTE_ABOVE_FOOTER')
     print('ENRICHMENT_PREREQUISITE=P001_P003_ACQUIRED_SYMBOL_SET')
     print('ENRICHMENT_STATUS=ACTIVE_CANDIDATE')
     print('CORE_PRACTICE_OBJECTS=32_UNCHANGED')
