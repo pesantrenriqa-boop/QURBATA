@@ -22,13 +22,22 @@ def build(debug):
  pres=f'''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object" dir="ltr"><span class="arabic-part">{p001.arabic_html('عَ')}</span><span class="arrow">←</span><span class="arabic-part">{p001.arabic_html('عَبَرَ')}</span><span class="arabic-part">{p001.arabic_html('غَ')}</span><span class="arrow">←</span><span class="arabic-part">{p001.arabic_html('غَرَبَ')}</span></div></div></section>''';h=h[:s]+pres+h[e:]
  nums=''.join(f'<span class="eg">{x}</span>' for x in '٠١٢٣٤٥٦٧٨٩');njs=''.join(f'<span class="eg">{x}</span>' for x in 'ادذرزو');en=f'''<div class="p007-enrichment-row"><div class="micro"><div class="micro-label">ANGKA ARAB</div><div class="glyph-run num">{nums}</div></div><div class="micro"><div class="micro-label">PEMUTUS SAMBUNGAN</div><div class="glyph-run nonjoin">{njs}</div></div></div>''';g=h.find('<section class="j2-grid">');ge=h.find('</section>',g);return h[:ge]+en+h[ge:]
 p001.build_page_html=build
+async def _write_pdf(page,out:Path):
+ names=[out/'QURBATA-JILID-2-P007-V3-AIN-GHAIN-FORM-DRILL.pdf']+[out/f'QURBATA-JILID-2-P007-V3-AIN-GHAIN-FORM-DRILL-LOCK-SAFE-{i:02d}.pdf' for i in range(1,100)]
+ last=None
+ for idx,p in enumerate(names):
+  try:
+   await page.pdf(path=str(p),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'})
+   return p,('DIRECT_P007_V3' if idx==0 else f'LOCK_FALLBACK_P007_V3_{idx:02d}')
+  except PermissionError as e:last=e
+ raise RuntimeError('P007_NO_AVAILABLE_PDF_NAME') from last
 async def render(h,out,debug):
  report=out/'LAYOUT-OVERFLOW-REPORT-J2-P007-V3.json';png=out/'png';png.mkdir(parents=True,exist_ok=True)
  async with async_playwright() as pw:
   b=await pw.chromium.launch();page=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2);await page.goto(h.resolve().as_uri(),wait_until='networkidle');await page.evaluate('document.fonts.ready');metrics,issues=await p001.fit_and_inspect(page);report.write_text(json.dumps(issues,ensure_ascii=False,indent=2),encoding='utf-8')
   if issues:raise RuntimeError('P007_LAYOUT_ISSUES='+repr(issues))
-  await page.screenshot(path=str(png/'page-007-v3.png'),full_page=True);pdf=out/'QURBATA-JILID-2-P007-V3-AIN-GHAIN-FORM-DRILL.pdf';await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await b.close()
- return metrics,report,pdf,'DIRECT_P007_V3'
+  await page.screenshot(path=str(png/'page-007-v3.png'),full_page=True);pdf,mode=await _write_pdf(page,out);await b.close()
+ return metrics,report,pdf,mode
 p001.render=render
 def main():
  core=lex[:28];ain=sum('ع' in base(r['word']) for r in core);ghain=sum('غ' in base(r['word']) for r in core)
@@ -44,5 +53,5 @@ def main():
   if hit:leaks.append((r['word'],''.join(sorted(hit))))
  if leaks:raise ValueError('P007_FUTURE_LETTER_LEAKAGE='+repr(leaks))
  if '--output-dir' not in sys.argv[1:]:sys.argv.extend(['--output-dir','dist/qurbata-print-ready/jilid-2/pages/P007'])
- rc=v22.main();print('JILID2_P007_RENDERER_V3_AIN_GHAIN=PASS');print('ACQUISITION_LETTERS=ع|غ');print('PRACTICE_MODE=JOINING_FORM_DRILL');print(f'FORM_AIN_OBJECTS={ain}');print(f'FORM_GHAIN_OBJECTS={ghain}');print('TITLE_VISUAL_RIGHT_TO_LEFT=عَ←عَبَرَ|غَ←غَرَبَ');print('PREMATURE_MADD_OR_HAMZAH=0');print('FUTURE_LETTER_LEAKAGE=0');return rc
+ rc=v22.main();print('JILID2_P007_RENDERER_V3_AIN_GHAIN=PASS');print('ACQUISITION_LETTERS=ع|غ');print('PRACTICE_MODE=JOINING_FORM_DRILL');print(f'FORM_AIN_OBJECTS={ain}');print(f'FORM_GHAIN_OBJECTS={ghain}');print('TITLE_VISUAL_RIGHT_TO_LEFT=عَ←عَبَرَ|غَ←غَرَبَ');print('PREMATURE_MADD_OR_HAMZAH=0');print('FUTURE_LETTER_LEAKAGE=0');print('PDF_WRITE_POLICY=INCREMENTAL_LOCK_SAFE_01_99');return rc
 if __name__=='__main__':raise SystemExit(main())
