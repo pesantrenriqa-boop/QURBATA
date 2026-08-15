@@ -5,7 +5,7 @@
 
 ## Fokus
 
-Dokumen ini sengaja menyederhanakan pekerjaan. Fokus sekarang hanya:
+Fokus sekarang hanya:
 
 `JILID → HALAMAN → SURAT → AYAT`
 
@@ -64,11 +64,7 @@ Sistem murojaah, validasi kelas, status siswa, dan mekanisme guru ditunda sampai
 | P039 | Al-Ma'un 3–4 |
 | P040 | Al-Ma'un 5–7 |
 
-**Outcome J1:** Al-Fatihah + 8 surat Juz 30 lengkap.
-
 ## Jilid 2 — Working Map
-
-Beban mulai ditingkatkan. Urutan melanjutkan Juz 30 dari Quraisy menuju Ad-Duha.
 
 | Halaman | Surat / Ayat |
 |---|---|
@@ -113,22 +109,70 @@ Beban mulai ditingkatkan. Urutan melanjutkan Juz 30 dari Quraisy menuju Ad-Duha.
 | P039 | At-Tin 7–8 + Ash-Sharh 1–2 |
 | P040 | Ash-Sharh 3–8 |
 
-**Outcome J2:** jalur Juz 30 maju dari Quraisy sampai Ash-Sharh. Ad-Duha menjadi awal J3 agar P040 tidak dipaksa terlalu padat.
+## Jilid 3 — Working Map
 
-## Jilid 3 — Starting Point
+J3 meneruskan Juz 30 dengan unit yang lebih besar. Target kerja J3 adalah bergerak dari Ad-Duha hingga memasuki kelompok surat panjang bagian awal Juz 30.
 
-`P001 = Ad-Duha 1–3`
+| Halaman | Surat / Ayat |
+|---|---|
+| P001 | Ad-Duha 1–3 |
+| P002 | Ad-Duha 4–6 |
+| P003 | Ad-Duha 7–8 |
+| P004 | Ad-Duha 9–11 |
+| P005 | Al-Layl 1–4 |
+| P006 | Al-Layl 5–7 |
+| P007 | Al-Layl 8–11 |
+| P008 | Al-Layl 12–15 |
+| P009 | Al-Layl 16–18 |
+| P010 | Al-Layl 19–21 |
+| P011 | Ash-Shams 1–4 |
+| P012 | Ash-Shams 5–7 |
+| P013 | Ash-Shams 8–10 |
+| P014 | Ash-Shams 11–12 |
+| P015 | Ash-Shams 13–15 |
+| P016 | Al-Balad 1–4 |
+| P017 | Al-Balad 5–7 |
+| P018 | Al-Balad 8–10 |
+| P019 | Al-Balad 11–13 |
+| P020 | Al-Balad 14–16 |
+| P021 | Al-Balad 17–20 |
+| P022 | Al-Fajr 1–5 |
+| P023 | Al-Fajr 6–10 |
+| P024 | Al-Fajr 11–14 |
+| P025 | Al-Fajr 15–17 |
+| P026 | Al-Fajr 18–20 |
+| P027 | Al-Fajr 21–23 |
+| P028 | Al-Fajr 24–26 |
+| P029 | Al-Fajr 27–30 |
+| P030 | Al-Ghashiyah 1–4 |
+| P031 | Al-Ghashiyah 5–8 |
+| P032 | Al-Ghashiyah 9–12 |
+| P033 | Al-Ghashiyah 13–16 |
+| P034 | Al-Ghashiyah 17–20 |
+| P035 | Al-Ghashiyah 21–26 |
+| P036 | Al-A'la 1–4 |
+| P037 | Al-A'la 5–8 |
+| P038 | Al-A'la 9–12 |
+| P039 | Al-A'la 13–15 |
+| P040 | Al-A'la 16–19 |
 
-J3 akan meneruskan sisa Juz 30 dengan unit lebih besar daripada J2.
+**Outcome J3:** Ad-Duha, Al-Layl, Ash-Shams, Al-Balad, Al-Fajr, Al-Ghashiyah, dan Al-A'la selesai.
+
+## Jilid 4 — Starting Point
+
+`P001 = At-Tariq 1–4`
+
+J4 akan meneruskan sisa Juz 30 menuju An-Naba, dengan beban per halaman lebih besar daripada J3.
 
 ## Progress Pembagian Ayat
 
-- J1: 40/40 halaman terpetakan.
-- J2: 40/40 halaman terpetakan.
-- J3–J8: belum dipetakan rinci.
+- J1: 40/40
+- J2: 40/40
+- J3: 40/40
+- J4–J8: belum dipetakan rinci.
 
-**Total page mapping:** 80/320 = **25% halaman** sudah mempunyai kandidat surat/ayat dalam file sederhana ini.
+**Total page mapping: 120/320 = 37.5%.**
 
 ## Next
 
-Lanjutkan J3 P001–P040, kemudian J4, J5, J6, J7, J8 tanpa membuka subsistem lain sampai 320/320 halaman selesai.
+Lanjutkan J4 P001–P040. Tetap hanya membagi surat/ayat sampai 320/320 selesai.
