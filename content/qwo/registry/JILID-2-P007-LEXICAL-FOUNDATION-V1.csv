@@ -6,28 +6,28 @@ slot,word,meaning_id,function,competency_status,lexical_status
 5,عَبَدَ,menyembah,CURRENT,ALLOWED,CURATED
 6,عَذَرَ,memberi uzur atau memaafkan,CURRENT,ALLOWED,CURATED
 7,عَرَضَ,menampilkan atau menghadapkan,CURRENT,ALLOWED,CURATED
-8,عَزَبَ,menjauh atau tidak hadir,CURRENT,ALLOWED,CURATED
-9,عَسُرَ,menjadi sulit,CURRENT,ALLOWED,CURATED
-10,عَصَرَ,memeras,CURRENT,ALLOWED,CURATED
-11,عَسِرَ,menjadi sukar atau sulit,CURRENT,ALLOWED,CURATED
-12,بَعُدَ,menjadi jauh,CURRENT,ALLOWED,CURATED
-13,بَعَثَ,mengutus atau membangkitkan,CURRENT,ALLOWED,CURATED
-14,بَعَجَ,membelah atau merobek,CURRENT,ALLOWED,CURATED
-15,تَعِبَ,menjadi lelah,CURRENT,ALLOWED,CURATED
-16,ثَعَبَ,mengalirkan atau memancarkan,CURRENT,ALLOWED,CURATED
-17,جَعُدَ,menjadi keriting atau berlekuk,CURRENT,ALLOWED,CURATED
-18,شَعَرَ,mengetahui atau merasakan,CURRENT,ALLOWED,CURATED
-19,بَطِرَ,menjadi angkuh atau tidak mensyukuri nikmat,MUROJAAH,ALLOWED,CURATED
-20,رَطُبَ,menjadi basah atau lembap,MUROJAAH,ALLOWED,CURATED
-21,ضَرِسَ,merasakan ngilu pada gigi,MUROJAAH,ALLOWED,CURATED
-22,صَبُحَ,menjadi cerah atau elok,MUROJAAH,ALLOWED,CURATED
-23,بَصِرَ,melihat atau mengetahui,MUROJAAH,ALLOWED,CURATED
-24,بَصُرَ,menjadi tajam penglihatan atau berpengetahuan,MUROJAAH,ALLOWED,CURATED
-25,خَبِرَ,mengetahui atau berpengalaman,MUROJAAH,ALLOWED,CURATED
-26,خَبُثَ,menjadi buruk atau keji,MUROJAAH,ALLOWED,CURATED
-27,شَرِبَ,meminum,MUROJAAH,ALLOWED,CURATED
-28,سَبُحَ,bergerak atau berenang dengan ringan,MUROJAAH,ALLOWED,CURATED
-29,وَرِثَ,mewarisi,MUROJAAH,ALLOWED,CURATED
-30,بَرُدَ,menjadi dingin,MUROJAAH,ALLOWED,CURATED
+8,عَسُرَ,menjadi sulit,CURRENT,ALLOWED,CURATED
+9,غَرَبَ,pergi atau terbenam,CURRENT,ALLOWED,CURATED
+10,غَرِبَ,menjadi asing atau jauh,CURRENT,ALLOWED,CURATED
+11,غَرُبَ,menjadi asing atau ganjil,CURRENT,ALLOWED,CURATED
+12,غَضِبَ,menjadi marah,CURRENT,ALLOWED,CURATED
+13,غَضُبَ,menjadi keras dalam kemarahan,CURRENT,ALLOWED,CURATED
+14,غَزَرَ,menjadi banyak atau deras,CURRENT,ALLOWED,CURATED
+15,غَدَرَ,berkhianat atau tidak menepati janji,CURRENT,ALLOWED,CURATED
+16,غَصِبَ,merampas atau mengambil secara zalim,CURRENT,ALLOWED,CURATED
+17,بَعُدَ,menjadi jauh,MUROJAAH,ALLOWED,CURATED
+18,شَعَرَ,mengetahui atau merasakan,MUROJAAH,ALLOWED,CURATED
+19,بَغَضَ,membenci,MUROJAAH,ALLOWED,CURATED
+20,رَغِبَ,berminat atau menginginkan,MUROJAAH,ALLOWED,CURATED
+21,شَغَبَ,membuat keributan,MUROJAAH,ALLOWED,CURATED
+22,صَغُرَ,menjadi kecil,MUROJAAH,ALLOWED,CURATED
+23,ضَغَطَ,menekan,MUROJAAH,ALLOWED,CURATED
+24,بَطِرَ,menjadi angkuh atau tidak mensyukuri nikmat,MUROJAAH,ALLOWED,CURATED
+25,رَطُبَ,menjadi basah atau lembap,MUROJAAH,ALLOWED,CURATED
+26,ضَرِسَ,merasakan ngilu pada gigi,MUROJAAH,ALLOWED,CURATED
+27,صَبُحَ,menjadi cerah atau elok,MUROJAAH,ALLOWED,CURATED
+28,خَبُثَ,menjadi buruk atau keji,MUROJAAH,ALLOWED,CURATED
+29,شَرِبَ,meminum,MUROJAAH,ALLOWED,CURATED
+30,سَبُحَ,bergerak atau berenang dengan ringan,MUROJAAH,ALLOWED,CURATED
 31,حَذِرَ,berhati-hati atau waspada,MUROJAAH,ALLOWED,CURATED
 32,خَصُبَ,menjadi subur atau makmur,MUROJAAH,ALLOWED,CURATED
