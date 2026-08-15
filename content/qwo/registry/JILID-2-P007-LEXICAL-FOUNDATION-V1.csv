@@ -1,33 +1,33 @@
 slot,word,meaning_id,function,competency_status,lexical_status
-1,عَبَ,latihan bentuk ع awal,FORM,ALLOWED,FORM_DRILL
-2,بَعَ,latihan bentuk ع akhir,FORM,ALLOWED,FORM_DRILL
-3,عَبَعَ,latihan bentuk ع awal akhir,FORM,ALLOWED,FORM_DRILL
-4,بَعَبَ,latihan bentuk ع tengah,FORM,ALLOWED,FORM_DRILL
-5,عَحَ,latihan bentuk ع awal,FORM,ALLOWED,FORM_DRILL
-6,حَعَ,latihan bentuk ع akhir,FORM,ALLOWED,FORM_DRILL
-7,عَحَعَ,latihan bentuk ع berulang,FORM,ALLOWED,FORM_DRILL
-8,حَعَحَ,latihan bentuk ع tengah,FORM,ALLOWED,FORM_DRILL
-9,عَسَ,latihan bentuk ع awal,FORM,ALLOWED,FORM_DRILL
-10,سَعَ,latihan bentuk ع akhir,FORM,ALLOWED,FORM_DRILL
-11,عَسَعَ,latihan bentuk ع berulang,FORM,ALLOWED,FORM_DRILL
-12,سَعَسَ,latihan bentuk ع tengah,FORM,ALLOWED,FORM_DRILL
-13,عَطَ,latihan bentuk ع awal,FORM,ALLOWED,FORM_DRILL
-14,طَعَ,latihan bentuk ع akhir,FORM,ALLOWED,FORM_DRILL
-15,غَبَ,latihan bentuk غ awal,FORM,ALLOWED,FORM_DRILL
-16,بَغَ,latihan bentuk غ akhir,FORM,ALLOWED,FORM_DRILL
-17,غَبَغَ,latihan bentuk غ awal akhir,FORM,ALLOWED,FORM_DRILL
-18,بَغَبَ,latihan bentuk غ tengah,FORM,ALLOWED,FORM_DRILL
-19,غَحَ,latihan bentuk غ awal,FORM,ALLOWED,FORM_DRILL
-20,حَغَ,latihan bentuk غ akhir,FORM,ALLOWED,FORM_DRILL
-21,غَحَغَ,latihan bentuk غ berulang,FORM,ALLOWED,FORM_DRILL
-22,حَغَحَ,latihan bentuk غ tengah,FORM,ALLOWED,FORM_DRILL
-23,غَسَ,latihan bentuk غ awal,FORM,ALLOWED,FORM_DRILL
-24,سَغَ,latihan bentuk غ akhir,FORM,ALLOWED,FORM_DRILL
-25,غَسَغَ,latihan bentuk غ berulang,FORM,ALLOWED,FORM_DRILL
-26,سَغَسَ,latihan bentuk غ tengah,FORM,ALLOWED,FORM_DRILL
-27,غَطَ,latihan bentuk غ awal,FORM,ALLOWED,FORM_DRILL
-28,طَغَ,latihan bentuk غ akhir,FORM,ALLOWED,FORM_DRILL
-29,عَبَرَ,contoh kata nyata ع,MUROJAAH,ALLOWED,CURATED
-30,غَرَبَ,contoh kata nyata غ,MUROJAAH,ALLOWED,CURATED
-31,طَرَبَ,murojaah keluarga sebelumnya,MUROJAAH,ALLOWED,CURATED
-32,حَظَرَ,murojaah keluarga sebelumnya,MUROJAAH,ALLOWED,CURATED
+1,ظَبَ,latihan ظ awal,FORM,ALLOWED,FORM_DRILL
+2,بَظَ,latihan ظ akhir,FORM,ALLOWED,FORM_DRILL
+3,ظَبَظَ,latihan ظ awal akhir,FORM,ALLOWED,FORM_DRILL
+4,بَظَبَ,latihan ظ tengah,FORM,ALLOWED,FORM_DRILL
+5,ظَحَ,latihan ظ awal,FORM,ALLOWED,FORM_DRILL
+6,حَظَ,latihan ظ akhir,FORM,ALLOWED,FORM_DRILL
+7,ظَحَظَ,latihan ظ berulang,FORM,ALLOWED,FORM_DRILL
+8,حَظَحَ,latihan ظ tengah,FORM,ALLOWED,FORM_DRILL
+9,ظَسَ,latihan ظ awal,FORM,ALLOWED,FORM_DRILL
+10,سَظَ,latihan ظ akhir,FORM,ALLOWED,FORM_DRILL
+11,ظَسَظَ,latihan ظ berulang,FORM,ALLOWED,FORM_DRILL
+12,سَظَسَ,latihan ظ tengah,FORM,ALLOWED,FORM_DRILL
+13,ظَصَ,latihan ظ awal,FORM,ALLOWED,FORM_DRILL
+14,صَظَ,latihan ظ akhir,FORM,ALLOWED,FORM_DRILL
+15,ظَضَ,latihan ظ awal,FORM,ALLOWED,FORM_DRILL
+16,ضَظَ,latihan ظ akhir,FORM,ALLOWED,FORM_DRILL
+17,ظَجَ,latihan ظ awal,FORM,ALLOWED,FORM_DRILL
+18,جَظَ,latihan ظ akhir,FORM,ALLOWED,FORM_DRILL
+19,ظَخَ,latihan ظ awal,FORM,ALLOWED,FORM_DRILL
+20,خَظَ,latihan ظ akhir,FORM,ALLOWED,FORM_DRILL
+21,ظَشَ,latihan ظ awal,FORM,ALLOWED,FORM_DRILL
+22,شَظَ,latihan ظ akhir,FORM,ALLOWED,FORM_DRILL
+23,ظَثَ,latihan ظ awal,FORM,ALLOWED,FORM_DRILL
+24,ثَظَ,latihan ظ akhir,FORM,ALLOWED,FORM_DRILL
+25,ظَطَظَ,latihan ظ berulang,FORM,ALLOWED,FORM_DRILL
+26,طَظَطَ,latihan ظ tengah,FORM,ALLOWED,FORM_DRILL
+27,ظَبَحَ,latihan ظ awal 3 huruf,FORM,ALLOWED,FORM_DRILL
+28,بَظَحَ,latihan ظ tengah 3 huruf,FORM,ALLOWED,FORM_DRILL
+29,حَظَرَ,contoh nyata ظ,MUROJAAH,ALLOWED,CURATED
+30,طَرَبَ,murojaah,MUROJAAH,ALLOWED,CURATED
+31,ضَرَبَ,murojaah,MUROJAAH,ALLOWED,CURATED
+32,صَبَرَ,murojaah,MUROJAAH,ALLOWED,CURATED
