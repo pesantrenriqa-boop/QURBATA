@@ -21,6 +21,8 @@ if str(ROOT / "tools") not in sys.path:
 import render_qurbata_jilid2_p002_v1_kfgqpc_lexical as v1
 import render_qurbata_jilid2_p001_v1 as p001
 
+DEFAULT_P002_OUTPUT = "dist/qurbata-print-ready/jilid-2/pages/P002"
+
 p001.P001_CSS += r'''
 .presentation-object{font-size:52pt!important;}
 .j2-glyph{font-size:39pt!important;}
@@ -58,9 +60,15 @@ p001.render = render_p002_v2
 
 
 def main():
+    # P002 must never inherit the P001 default directory from the shared renderer.
+    # Preserve an explicit caller-provided --output-dir, otherwise force pages/P002.
+    if "--output-dir" not in sys.argv[1:]:
+        sys.argv.extend(["--output-dir", DEFAULT_P002_OUTPUT])
+
     rc = v1.main()
     print("JILID2_P002_RENDERER_V2=PASS")
     print("PAGE=2")
+    print("OUTPUT_DIR=" + DEFAULT_P002_OUTPUT)
     print("TYPOGRAPHY_BASELINE=P001_PRODUCTION")
     print("PRESENTATION_FONT_SIZE=52PT")
     print("PRACTICE_FONT_SIZE=39PT")
