@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""QURBATA Jilid 2 P005 — acquisition of ص in meaningful three-letter words."""
+"""QURBATA Jilid 2 P005 — acquisition of ص ض in meaningful three-letter words."""
 from __future__ import annotations
 import csv,json,sys,unicodedata
 from pathlib import Path
@@ -35,7 +35,8 @@ for r in lex:
 if issues: raise ValueError('P005_THREE_LETTER_SEMANTIC_GATE_FAIL='+repr(issues))
 
 p001.MICRO=MICRO
-p001.P001_BANNED_JOINING=set('ضطظعغفقكلمنيه')
+# ص and ض are both active on P005; later joining families remain forbidden.
+p001.P001_BANNED_JOINING=set('طظعغفقكلمنيه')
 words=[r['word'] for r in lex]
 p001.P001_ROWS=[words[i:i+4] for i in range(0,32,4)]
 p001.P001_CSS += r'''.presentation-object{font-size:46pt}.j2-glyph{font-size:42pt}'''
@@ -45,7 +46,7 @@ def build_p005(debug:bool):
     h=_original_build(debug)
     h=h.replace('<div class="page-number">01</div>','<div class="page-number">05</div>',1)
     start=h.index('<section class="presentation">'); end=h.index('</section>',start)+len('</section>')
-    pres=f'''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object"><span class="arabic-part" lang="ar">{p001.arabic_html('صَبَرَ')}</span><span class="arrow">←</span><span class="arabic-part" lang="ar">{p001.arabic_html('صَ')}</span></div></div></section>'''
+    pres=f'''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object"><span class="arabic-part" lang="ar">{p001.arabic_html('صَبَرَ')}</span><span class="arrow">·</span><span class="arabic-part" lang="ar">{p001.arabic_html('ضَرَبَ')}</span><span class="arrow">←</span><span class="arabic-part" lang="ar">{p001.arabic_html('صَ ضَ')}</span></div></div></section>'''
     h=h[:start]+pres+h[end:]
     ts=h.index('<section class="targets">'); te=h.index('</section>',ts)+len('</section>')
     targets=f'''<section class="targets"><div class="target-item"><span>Kompetensi</span><strong>{meta['CompetencyCode']} — {meta['Competency']}</strong></div><div class="target-item"><span>Unit Kompetensi</span><strong>{meta['UnitCompetencyCode']} — {meta['UnitCompetency']}</strong></div><div class="target-item"><span>Unit Murojaah</span><strong>{meta['UnitMurojaahCode']} — {meta['UnitMurojaah']}</strong></div><div class="target-item"><span>Tangga</span><strong>{stairs[0]['StairCode']}–{stairs[-1]['StairCode']}</strong></div></section>'''
@@ -77,8 +78,11 @@ def main():
         hit=p001.P001_BANNED_JOINING.intersection(r['word'])
         if hit: leaks.append((r['word'],''.join(sorted(hit))))
     if leaks: raise ValueError('P005_COMPETENCY_LEAKAGE='+repr(leaks))
-    missing=[r['word'] for r in lex if r['function']=='CURRENT' and 'ص' not in base_letters(r['word'])]
+    current=[r for r in lex if r['function']=='CURRENT']
+    missing=[r['word'] for r in current if not ({'ص','ض'} & set(base_letters(r['word'])))]
     if missing: raise ValueError('P005_CURRENT_OBJECT_MISSING_ACQUISITION_LETTER='+repr(missing))
+    if not any('ص' in base_letters(r['word']) for r in current): raise ValueError('P005_CURRENT_MISSING_SAD')
+    if not any('ض' in base_letters(r['word']) for r in current): raise ValueError('P005_CURRENT_MISSING_DAD')
     rc=v22.main()
     n=sum(1 for r in lex if len(base_letters(r['word']))==3);m=sum(1 for r in lex if len(base_letters(r['word']))==3 and r['meaning_id'].strip())
     print('JILID2_P005_RENDERER_V1=PASS');print('PAGE=5')
@@ -87,7 +91,7 @@ def main():
     print(f"SUBCOMPETENCY={meta['SubCompetencyCode']}|{meta['SubCompetency']}")
     print(f"UNIT_MUROJAAH={meta['UnitMurojaahCode']}|{meta['UnitMurojaah']}")
     print(f"STAIR_RANGE={stairs[0]['StairCode']}-{stairs[-1]['StairCode']}")
-    print('ACQUISITION_LETTERS=ص');print('PRACTICE_OBJECTS=32')
+    print('ACQUISITION_LETTERS=ص|ض');print('PRACTICE_OBJECTS=32')
     print(f'THREE_LETTER_OBJECTS={n}');print(f'THREE_LETTER_WITH_MEANING={m}');print(f'MEANINGLESS_THREE_LETTER_OBJECTS={n-m}')
     print('COMPETENCY_LEAKAGE=0');print('PRACTICE_FONT_SIZE=42PT');print('PRESENTATION_FONT_SIZE=46PT');print('STATUS=P005_CANDIDATE_NOT_FROZEN')
     return rc
