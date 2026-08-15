@@ -5,6 +5,7 @@ on:
     branches: [content/qurbata-jilid-1-8-production]
     paths:
       - 'tools/patch_nidom_v27_kamus_hadith.js'
+      - 'tools/patch_nidom_v30_adaptive_lower_zone.js'
       - '.github/workflows/render-nidom-j1-v27.yml'
 jobs:
   render:
@@ -30,6 +31,8 @@ jobs:
           node tools/patch_nidom_v23_hadith_variety.js
       - name: Add per-page hadith dictionary
         run: node tools/patch_nidom_v27_kamus_hadith.js
+      - name: Fill remaining lower zone adaptively
+        run: node tools/patch_nidom_v30_adaptive_lower_zone.js
       - name: Render 40 pages
         run: node tools/render_nidom_j1_variative_v22.js
       - name: Verify
