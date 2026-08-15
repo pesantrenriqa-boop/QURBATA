@@ -3,10 +3,9 @@
 
 Visual title is forced from the RIGHT edge as:
     ص ← صَبَرَ    ض ← ضَرَبَ
-Row 8 continues the active enrichment block from P004 instead of switching
-category on every page. Arabic spelled-out letter names remain disabled.
-Registry remains 32 items; 28 appear as core practice on this page, with 4 review
-items reserved for subsequent cumulative use.
+Presentation typography is aligned to the 39 pt practice baseline. Row 8 continues
+the active enrichment block from P004; Arabic-Indic numerals are given safe
+horizontal/vertical breathing room so edge glyphs are never clipped.
 """
 from __future__ import annotations
 import json,sys
@@ -25,17 +24,17 @@ words=[r['word'] for r in v1.lex[:28]]
 p001.P001_ROWS=[words[i:i+4] for i in range(0,28,4)]
 
 p001.P001_CSS += r'''
-.presentation-object{font-size:52pt!important;direction:ltr!important;flex-direction:row-reverse!important;unicode-bidi:isolate!important;}
-.presentation-object .arabic-part{direction:rtl!important;unicode-bidi:isolate!important;}
-.presentation-object .arrow{direction:ltr!important;unicode-bidi:isolate!important;}
+.presentation-object{font-size:39pt!important;direction:ltr!important;flex-direction:row-reverse!important;unicode-bidi:isolate!important;}
+.presentation-object .arabic-part{direction:rtl!important;unicode-bidi:isolate!important;line-height:1.12!important;padding:.35mm .25mm!important;}
+.presentation-object .arrow{direction:ltr!important;unicode-bidi:isolate!important;font-size:18pt!important;}
 .j2-glyph{font-size:39pt!important;}
-.p005-title-spacer{display:inline-block;width:8mm;flex:0 0 8mm;}
+.p005-title-spacer{display:inline-block;width:7mm;flex:0 0 7mm;}
 .j2-grid{grid-template-rows:repeat(8,minmax(0,1fr))!important;}
-.p005-enrichment-row{grid-column:1 / -1!important;grid-row:8!important;min-width:0!important;min-height:0!important;align-self:stretch!important;justify-self:stretch!important;display:grid!important;grid-template-columns:1fr 1fr!important;gap:2mm!important;direction:ltr!important;border-top:.28mm solid #111!important;padding:.55mm 1mm 0!important;box-sizing:border-box!important;overflow:hidden!important;background:#fff!important;}
-.p005-enrichment-row .micro{min-width:0!important;min-height:0!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important;overflow:hidden!important;line-height:1!important;}
-.p005-enrichment-row .micro-label{font-family:Arial,sans-serif!important;font-size:5.7pt!important;font-weight:700!important;line-height:1!important;margin:0 0 .45mm!important;white-space:nowrap!important;}
-.p005-enrichment-row .micro-ar{font-family:'KFGQPC Uthman Taha Naskh','Amiri Quran','Amiri',serif!important;font-size:16pt!important;line-height:1!important;direction:rtl!important;white-space:nowrap!important;}
-.p005-enrichment-row .micro-num{font-family:'KFGQPC Uthman Taha Naskh','Amiri Quran','Amiri',serif!important;font-size:18pt!important;line-height:1!important;direction:rtl!important;white-space:nowrap!important;}
+.p005-enrichment-row{grid-column:1 / -1!important;grid-row:8!important;min-width:0!important;min-height:0!important;align-self:stretch!important;justify-self:stretch!important;display:grid!important;grid-template-columns:1fr 1fr!important;gap:3mm!important;direction:ltr!important;border-top:.28mm solid #111!important;padding:.55mm 2.2mm .35mm!important;box-sizing:border-box!important;overflow:visible!important;background:#fff!important;}
+.p005-enrichment-row .micro{min-width:0!important;min-height:0!important;width:100%!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important;overflow:visible!important;line-height:1.12!important;padding:0 .8mm!important;box-sizing:border-box!important;}
+.p005-enrichment-row .micro-label{font-family:Arial,sans-serif!important;font-size:5.7pt!important;font-weight:700!important;line-height:1!important;margin:0 0 .6mm!important;white-space:nowrap!important;}
+.p005-enrichment-row .micro-ar{font-family:'KFGQPC Uthman Taha Naskh','Amiri Quran','Amiri',serif!important;font-size:15.5pt!important;line-height:1.18!important;direction:rtl!important;white-space:nowrap!important;display:block!important;width:100%!important;text-align:center!important;padding:.35mm 1mm!important;box-sizing:border-box!important;overflow:visible!important;}
+.p005-enrichment-row .micro-num{font-family:'KFGQPC Uthman Taha Naskh','Amiri Quran','Amiri',serif!important;font-size:15.5pt!important;line-height:1.22!important;direction:rtl!important;white-space:nowrap!important;display:block!important;width:100%!important;text-align:center!important;padding:.45mm 1.6mm!important;box-sizing:border-box!important;overflow:visible!important;letter-spacing:.05em!important;}
 '''
 
 _base_build=p001.build_page_html
@@ -77,7 +76,16 @@ async def render_p005_v4(h:Path,out:Path,debug:bool):
         if count!=28: raise RuntimeError(f'P005_V4_OBJECT_COUNT_INVALID actual={count} expected=28')
         if await page.locator('.p005-enrichment-row .micro').count()!=2: raise RuntimeError('P005_V4_ENRICHMENT_COUNT_INVALID')
         metrics,layout_issues=await p001.fit_and_inspect(page)
-        extra=await page.evaluate('''()=>{const g=document.querySelector('.j2-grid'),e=document.querySelector('.p005-enrichment-row'),f=document.querySelector('.footer');const out=[];if(!g||!e)return [{kind:'P005_ENRICHMENT_MISSING'}];const gr=g.getBoundingClientRect(),er=e.getBoundingClientRect();if(er.left<gr.left-1||er.right>gr.right+1||er.top<gr.top-1||er.bottom>gr.bottom+1)out.push({kind:'P005_ENRICHMENT_OUTSIDE_GRID'});const objs=[...document.querySelectorAll('.j2-object')];if(objs.length){const lastBottom=Math.max(...objs.map(x=>x.getBoundingClientRect().bottom));if(lastBottom>er.top-4)out.push({kind:'P005_ROW7_ROW8_CLEARANCE_TOO_SMALL',clearance:er.top-lastBottom,required:4});}if(f){const fr=f.getBoundingClientRect();if(er.bottom>fr.top-2)out.push({kind:'P005_ENRICHMENT_FOOTER_COLLISION'});}return out}''')
+        extra=await page.evaluate('''()=>{
+          const g=document.querySelector('.j2-grid'),e=document.querySelector('.p005-enrichment-row'),f=document.querySelector('.footer');
+          const out=[];if(!g||!e)return [{kind:'P005_ENRICHMENT_MISSING'}];
+          const gr=g.getBoundingClientRect(),er=e.getBoundingClientRect();
+          if(er.left<gr.left-1||er.right>gr.right+1||er.top<gr.top-1||er.bottom>gr.bottom+1)out.push({kind:'P005_ENRICHMENT_OUTSIDE_GRID'});
+          const objs=[...document.querySelectorAll('.j2-object')];if(objs.length){const lastBottom=Math.max(...objs.map(x=>x.getBoundingClientRect().bottom));if(lastBottom>er.top-4)out.push({kind:'P005_ROW7_ROW8_CLEARANCE_TOO_SMALL',clearance:er.top-lastBottom,required:4});}
+          if(f){const fr=f.getBoundingClientRect();if(er.bottom>fr.top-2)out.push({kind:'P005_ENRICHMENT_FOOTER_COLLISION'});}
+          for(const sel of ['.micro-num','.micro-ar']){const el=document.querySelector(sel);if(el){const r=el.getBoundingClientRect(),p=el.parentElement.getBoundingClientRect();if(r.left<p.left-1||r.right>p.right+1)out.push({kind:'P005_ENRICHMENT_TEXT_HORIZONTAL_CLIP',selector:sel,textLeft:r.left,textRight:r.right,parentLeft:p.left,parentRight:p.right});}}
+          return out;
+        }''')
         all_issues=[*layout_issues,*extra];report.write_text(json.dumps(all_issues,ensure_ascii=False,indent=2),encoding='utf-8')
         if all_issues:
             kinds={}
@@ -102,7 +110,8 @@ def main():
     print('CORE_PRACTICE_ROWS=7');print('CORE_PRACTICE_OBJECTS=28');print('ENRICHMENT_GRID_ROW=8_NATIVE')
     print('ENRICHMENT_BLOCK_POLICY=CONTINUE_UNTIL_MASTERY');print('ENRICHMENT_CATEGORY=E02|E06')
     print('ENRICHMENT_ITEM=ARABIC_INDIC_NUMERALS_0_9|NON_JOINERS');print('ARABIC_SPELLED_LETTER_NAMES=DISABLED')
-    print('REGISTRY_OBJECTS=32_PRESERVED');print('PRESENTATION_FONT_SIZE=52PT');print('PRACTICE_FONT_SIZE=39PT')
+    print('REGISTRY_OBJECTS=32_PRESERVED');print('PRESENTATION_FONT_SIZE=39PT');print('PRACTICE_FONT_SIZE=39PT')
+    print('PRESENTATION_SIZE_POLICY=MATCH_PRACTICE');print('ENRICHMENT_TEXT_CLIP_GUARD=ENABLED')
     print('OUTPUT_DIR='+DEFAULT_P005_OUTPUT);return rc
 
 if __name__=='__main__':raise SystemExit(main())
