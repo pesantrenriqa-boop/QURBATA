@@ -1,0 +1,44 @@
+name: Render QURBATA NIDOM J1 v2.5 Full Page Rebalance
+on:
+  workflow_dispatch:
+  push:
+    branches: [content/qurbata-jilid-1-8-production]
+    paths:
+      - 'tools/patch_nidom_v25_fullpage_rebalance.js'
+      - '.github/workflows/render-nidom-j1-v25.yml'
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '20'}
+      - name: Install renderer
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install playwright@1.55.0 pdf-lib@1.17.1
+          npx playwright install --with-deps chromium
+      - name: Bind Uthman Taha and logo
+        run: |
+          mkdir -p .build-fonts dist/shared/assets
+          curl -fL --retry 3 'https://raw.githubusercontent.com/quranwbw/qpc-fonts/master/various-woff2/UthmanTN1%20Ver10.woff2' -o .build-fonts/UthmanTaha.woff2
+          cp books/shared/assets/qurbata-logo.svg dist/shared/assets/qurbata-logo.svg
+      - name: Apply font/eval/hadith variety gates
+        run: |
+          node tools/patch_nidom_v22_font_gate.js
+          node tools/patch_nidom_v22_eval_density.js
+          node tools/patch_nidom_v23_hadith_variety.js
+      - name: Apply v2.5 full-page rebalance
+        run: node tools/patch_nidom_v25_fullpage_rebalance.js
+      - name: Render 40 pages
+        run: node tools/render_nidom_j1_variative_v22.js
+      - name: Verify
+        run: |
+          test -s dist/nidom-akhlak/j1-variative-v22/QURBATA-NIDOM-J1-P001-P040-PRINT-MASTER-v2.2.pdf
+          COUNT=$(find dist/nidom-akhlak/j1-variative-v22 -maxdepth 1 -name 'QURBATA-NIDOM-J1-P???-v2.2.pdf' | wc -l)
+          test "$COUNT" -eq 40
+      - uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-NIDOM-J1-v2.5-FULLPAGE-REBALANCE
+          path: dist/nidom-akhlak/j1-variative-v22/*.pdf
+          if-no-files-found: error
