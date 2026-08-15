@@ -38,31 +38,20 @@ ARABIC_MARKS=set(chr(c) for c in range(0x064B,0x0660)) | {'ـ'}
 def base_letters(s:str)->str:
     return ''.join(ch for ch in unicodedata.normalize('NFC',s) if ch not in ARABIC_MARKS and unicodedata.category(ch)!='Mn')
 
-# Semantic lexeme gate: every practice object on this page is a 3-letter Arabic lexeme
-# and must carry a documented meaning in the registry.
 semantic_issues=[]
 for r in lex:
     bases=base_letters(r.get('word',''))
     meaning=(r.get('meaning_id') or '').strip()
-    if len(bases)!=3:
-        semantic_issues.append((r.get('slot'),r.get('word'),'BASE_LETTER_COUNT_'+str(len(bases))))
-    if not meaning:
-        semantic_issues.append((r.get('slot'),r.get('word'),'MISSING_MEANING'))
+    if len(bases)!=3: semantic_issues.append((r.get('slot'),r.get('word'),'BASE_LETTER_COUNT_'+str(len(bases))))
+    if not meaning: semantic_issues.append((r.get('slot'),r.get('word'),'MISSING_MEANING'))
     if (r.get('lexical_status') or '').strip() not in {'CURATED','VERIFIED','MEANING_VERIFIED'}:
         semantic_issues.append((r.get('slot'),r.get('word'),'LEXICAL_STATUS_NOT_ACCEPTED'))
-if semantic_issues:
-    raise ValueError('P002_THREE_LETTER_SEMANTIC_GATE_FAIL='+repr(semantic_issues))
+if semantic_issues: raise ValueError('P002_THREE_LETTER_SEMANTIC_GATE_FAIL='+repr(semantic_issues))
 
-# Bind base renderer validation to P002 registry.
 p001.MICRO=MICRO
-# New acquisition family is allowed; later joining families remain forbidden.
 p001.P001_BANNED_JOINING=set('سشصضطظعغفقكلمنيه')
-
-# 8 rows x 4 objects. Rows 1-6 current lexical acquisition, rows 7-8 cumulative review.
 words=[r['word'] for r in lex]
 p001.P001_ROWS=[words[i:i+4] for i in range(0,32,4)]
-
-# Preserve approved V22 geometry, only page-specific presentation metadata changes.
 p001.P001_CSS += r'''
 .presentation-object{font-size:46pt}
 .j2-glyph{font-size:42pt}
@@ -100,15 +89,18 @@ async def render_p002(h:Path,out:Path,debug:bool):
             for x in issues:kinds[x['kind']]=kinds.get(x['kind'],0)+1
             raise RuntimeError('P002_LAYOUT_ISSUES='+str(len(issues))+' TYPES='+','.join(f'{k}:{v}' for k,v in sorted(kinds.items()))+f' REPORT={report}')
         await page.screenshot(path=str(png/'page-002.png'),full_page=True)
-        pdf=out/'QURBATA-JILID-2-P002-V1-KFGQPC-LEXICAL.pdf'
-        await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'})
+        pdf,pdf_mode=await p001._write_pdf_with_lock_fallback(page,out)
+        target_pdf=out/'QURBATA-JILID-2-P002-V1-KFGQPC-LEXICAL.pdf'
+        if pdf != target_pdf:
+            if target_pdf.exists(): target_pdf.unlink()
+            pdf.replace(target_pdf)
+            pdf=target_pdf
         await browser.close()
-    return metrics,report,pdf
+    return metrics,report,pdf,pdf_mode
 
 p001.render=render_p002
 
 def main():
-    # Explicit competency leakage check before render.
     leaks=[]
     for r in lex:
         hit=p001.P001_BANNED_JOINING.intersection(r['word'])
