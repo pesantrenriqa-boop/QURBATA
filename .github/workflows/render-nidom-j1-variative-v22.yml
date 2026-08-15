@@ -7,6 +7,7 @@ on:
     paths:
       - 'tools/render_nidom_j1_variative_v22.js'
       - 'tools/patch_nidom_v22_font_gate.js'
+      - 'tools/patch_nidom_v22_eval_density.js'
       - '.github/workflows/render-nidom-j1-variative-v22.yml'
 jobs:
   render:
@@ -37,6 +38,8 @@ jobs:
           test -s dist/shared/assets/qurbata-logo.svg
       - name: Scope Uthman gate to Arabic pages
         run: node tools/patch_nidom_v22_font_gate.js
+      - name: Compact evaluation pages
+        run: node tools/patch_nidom_v22_eval_density.js
       - name: Render variative 40-page master
         run: node tools/render_nidom_j1_variative_v22.js
       - name: Verify outputs
