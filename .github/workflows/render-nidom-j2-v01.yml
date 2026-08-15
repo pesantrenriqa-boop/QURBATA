@@ -5,6 +5,7 @@ on:
     branches: [content/qurbata-jilid-1-8-production]
     paths:
       - 'tools/render_nidom_j2_v01.js'
+      - 'tools/patch_nidom_j2_font_gate_v02.js'
       - '.github/workflows/render-nidom-j2-v01.yml'
 jobs:
   render:
@@ -23,6 +24,8 @@ jobs:
           mkdir -p .build-fonts dist/shared/assets
           curl -fL --retry 3 'https://raw.githubusercontent.com/quranwbw/qpc-fonts/master/various-woff2/UthmanTN1%20Ver10.woff2' -o .build-fonts/UthmanTaha.woff2
           cp books/shared/assets/qurbata-logo.svg dist/shared/assets/qurbata-logo.svg
+      - name: Patch Uthman font gate
+        run: node tools/patch_nidom_j2_font_gate_v02.js
       - name: Render Jilid 2
         run: node tools/render_nidom_j2_v01.js
       - name: Verify master and 40 pages
