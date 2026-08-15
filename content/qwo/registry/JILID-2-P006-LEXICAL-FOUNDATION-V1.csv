@@ -7,18 +7,18 @@ slot,word,meaning_id,function,competency_status,lexical_status
 6,بَطِرَ,bersikap sombong atau kufur nikmat,CURRENT,ALLOWED,CURATED
 7,بَطَشَ,menyerang atau menyergap dengan keras,CURRENT,ALLOWED,CURATED
 8,حَطَبَ,mengumpulkan kayu bakar,CURRENT,ALLOWED,CURATED
-9,حَبِطَ,menjadi sia-sia atau gugur,CURRENT,ALLOWED,CURATED
-10,خَطَبَ,berpidato atau meminang,CURRENT,ALLOWED,CURATED
-11,خَبَطَ,memukul atau menghantam,CURRENT,ALLOWED,CURATED
-12,رَبَطَ,mengikat,CURRENT,ALLOWED,CURATED
-13,رَطُبَ,menjadi basah atau lembap,CURRENT,ALLOWED,CURATED
-14,سَطَحَ,meratakan atau membentangkan,CURRENT,ALLOWED,CURATED
-15,سَطَرَ,menulis atau membuat baris,CURRENT,ALLOWED,CURATED
-16,شَطَبَ,mencoret atau menghapus dengan garis,CURRENT,ALLOWED,CURATED
-17,شَطَرَ,membelah atau membagi,CURRENT,ALLOWED,CURATED
-18,ضَبَطَ,mengendalikan atau menetapkan dengan tepat,CURRENT,ALLOWED,CURATED
-19,ضَرَبَ,memukul atau mengetuk,MUROJAAH,ALLOWED,CURATED
-20,ضَرِسَ,menjadi ngilu atau kasar perangainya,MUROJAAH,ALLOWED,CURATED
+9,ظَهَرَ,tampak atau muncul,CURRENT,ALLOWED,CURATED
+10,ظَفِرَ,menang atau memperoleh keberhasilan,CURRENT,ALLOWED,CURATED
+11,ظَرُفَ,menjadi elok atau cakap,CURRENT,ALLOWED,CURATED
+12,عَظُمَ,menjadi besar atau agung,CURRENT,ALLOWED,CURATED
+13,حَظَرَ,melarang atau mencegah,CURRENT,ALLOWED,CURATED
+14,حَظِرَ,menjadi terlarang atau tercegah,CURRENT,ALLOWED,CURATED
+15,بَظُرَ,menjadi menonjol atau membesar,CURRENT,ALLOWED,CURATED
+16,ظَلَمَ,berbuat zalim,CURRENT,ALLOWED,CURATED
+17,رَبَطَ,mengikat,MUROJAAH,ALLOWED,CURATED
+18,رَطُبَ,menjadi basah atau lembap,MUROJAAH,ALLOWED,CURATED
+19,ضَبَطَ,mengendalikan atau menetapkan dengan tepat,MUROJAAH,ALLOWED,CURATED
+20,ضَرَبَ,memukul atau mengetuk,MUROJAAH,ALLOWED,CURATED
 21,صَبُحَ,menjadi cerah atau elok,MUROJAAH,ALLOWED,CURATED
 22,صَحِبَ,menemani atau menyertai,MUROJAAH,ALLOWED,CURATED
 23,بَصُرَ,menjadi tajam penglihatan atau berpengetahuan,MUROJAAH,ALLOWED,CURATED
