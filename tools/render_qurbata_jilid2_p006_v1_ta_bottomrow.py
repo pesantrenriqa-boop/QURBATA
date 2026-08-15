@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""QURBATA Jilid 2 P006 — acquisition of ط with continued bottom-row enrichment."""
+"""QURBATA Jilid 2 P006 — acquisition family ط ظ with continued bottom-row enrichment."""
 from __future__ import annotations
 import csv,json,sys,unicodedata
 from pathlib import Path
@@ -24,14 +24,15 @@ def base_letters(s:str)->str:
     return ''.join(ch for ch in unicodedata.normalize('NFC',s) if ch not in ARABIC_MARKS and unicodedata.category(ch)!='Mn')
 
 p001.MICRO=MICRO
-p001.P001_BANNED_JOINING=set('ظعغفقكلمنيه')
-# Seven core rows + one continued enrichment row.
+# ط and ظ are both active on this page; later families remain forbidden.
+p001.P001_BANNED_JOINING=set('عغفقكلمنيه')
 words=[r['word'] for r in lex[:28]]
 p001.P001_ROWS=[words[i:i+4] for i in range(0,28,4)]
 p001.P001_CSS += r'''
 .presentation-object{font-size:34pt!important;direction:ltr!important;flex-direction:row-reverse!important;unicode-bidi:isolate!important;gap:1.7mm!important;}
 .presentation-object .arabic-part{direction:rtl!important;unicode-bidi:isolate!important;line-height:1.15!important;padding:.35mm .3mm!important;}
 .presentation-object .arrow{direction:ltr!important;unicode-bidi:isolate!important;font-size:15pt!important;}
+.p006-title-spacer{display:inline-block;width:6mm;flex:0 0 6mm;}
 .j2-glyph{font-size:39pt!important;}
 .j2-grid{grid-template-rows:repeat(8,minmax(0,1fr))!important;}
 .p006-enrichment-row{grid-column:1/-1!important;grid-row:8!important;display:grid!important;grid-template-columns:1fr 1fr!important;gap:10mm!important;padding:.55mm 6mm .35mm!important;border-top:.28mm solid #111!important;box-sizing:border-box!important;background:#fff!important;}
@@ -48,7 +49,15 @@ def build_p006(debug:bool):
     h=_base_build(debug)
     h=h.replace('<div class="page-number">01</div>','<div class="page-number">06</div>',1)
     start=h.index('<section class="presentation">');end=h.index('</section>',start)+len('</section>')
-    pres=f'''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object" dir="ltr"><span class="arabic-part" lang="ar" dir="rtl">{p001.arabic_html('طَ')}</span><span class="arrow" dir="ltr">←</span><span class="arabic-part" lang="ar" dir="rtl">{p001.arabic_html('طَرَبَ')}</span></div></div></section>'''
+    pres=f'''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object" dir="ltr">
+      <span class="arabic-part" lang="ar" dir="rtl">{p001.arabic_html('طَ')}</span>
+      <span class="arrow" dir="ltr">←</span>
+      <span class="arabic-part" lang="ar" dir="rtl">{p001.arabic_html('طَرَبَ')}</span>
+      <span class="p006-title-spacer"></span>
+      <span class="arabic-part" lang="ar" dir="rtl">{p001.arabic_html('ظَ')}</span>
+      <span class="arrow" dir="ltr">←</span>
+      <span class="arabic-part" lang="ar" dir="rtl">{p001.arabic_html('حَظَرَ')}</span>
+    </div></div></section>'''
     h=h[:start]+pres+h[end:]
     ts=h.index('<section class="targets">');te=h.index('</section>',ts)+len('</section>')
     targets=f'''<section class="targets"><div class="target-item"><span>Kompetensi</span><strong>{meta['CompetencyCode']} — {meta['Competency']}</strong></div><div class="target-item"><span>Unit Kompetensi</span><strong>{meta['UnitCompetencyCode']} — {meta['UnitCompetency']}</strong></div><div class="target-item"><span>Unit Murojaah</span><strong>{meta['UnitMurojaahCode']} — {meta['UnitMurojaah']}</strong></div><div class="target-item"><span>Tangga</span><strong>{stairs[0]['StairCode']}–{stairs[-1]['StairCode']}</strong></div></section>'''
@@ -62,7 +71,7 @@ def build_p006(debug:bool):
 p001.build_page_html=build_p006
 
 async def _write_pdf(page,out:Path):
-    names=[out/'QURBATA-JILID-2-P006-V1-TA-BOTTOMROW.pdf']+[out/f'QURBATA-JILID-2-P006-V1-TA-BOTTOMROW-LOCK-SAFE-{i:02d}.pdf' for i in range(1,100)]
+    names=[out/'QURBATA-JILID-2-P006-V1-TA-ZA-BOTTOMROW.pdf']+[out/f'QURBATA-JILID-2-P006-V1-TA-ZA-BOTTOMROW-LOCK-SAFE-{i:02d}.pdf' for i in range(1,100)]
     last=None
     for idx,p in enumerate(names):
         try:
@@ -89,8 +98,10 @@ p001.render=render_p006
 
 def main():
     current=[r for r in lex if r['function']=='CURRENT']
-    missing=[r['word'] for r in current if 'ط' not in base_letters(r['word'])]
-    if missing:raise ValueError('P006_CURRENT_MISSING_TA='+repr(missing))
+    missing=[r['word'] for r in current if not ({'ط','ظ'} & set(base_letters(r['word'])))]
+    if missing:raise ValueError('P006_CURRENT_MISSING_TA_ZA='+repr(missing))
+    current_bases=''.join(base_letters(r['word']) for r in current)
+    if 'ط' not in current_bases or 'ظ' not in current_bases:raise ValueError('P006_ACQUISITION_FAMILY_INCOMPLETE')
     leaks=[]
     for r in lex:
         hit=p001.P001_BANNED_JOINING.intersection(base_letters(r['word']))
@@ -98,7 +109,7 @@ def main():
     if leaks:raise ValueError('P006_COMPETENCY_LEAKAGE='+repr(leaks))
     if '--output-dir' not in sys.argv[1:]:sys.argv.extend(['--output-dir','dist/qurbata-print-ready/jilid-2/pages/P006'])
     rc=v22.main()
-    print('JILID2_P006_RENDERER_V1=PASS');print('PAGE=6');print('ACQUISITION_LETTERS=ط');print('TITLE_VISUAL_RIGHT_TO_LEFT=طَ←طَرَبَ')
+    print('JILID2_P006_RENDERER_V1=PASS');print('PAGE=6');print('ACQUISITION_LETTERS=ط|ظ');print('TITLE_VISUAL_RIGHT_TO_LEFT=طَ←طَرَبَ|ظَ←حَظَرَ')
     print('CORE_PRACTICE_ROWS=7');print('CORE_PRACTICE_OBJECTS=28');print('REGISTRY_OBJECTS=32_PRESERVED')
     print('PRESENTATION_FONT_SIZE=34PT');print('PRACTICE_FONT_SIZE=39PT');print('ENRICHMENT_GRID_ROW=8_NATIVE')
     print('ENRICHMENT_BLOCK_POLICY=CONTINUE_UNTIL_MASTERY');print('ENRICHMENT_CATEGORY=E02|E06')
