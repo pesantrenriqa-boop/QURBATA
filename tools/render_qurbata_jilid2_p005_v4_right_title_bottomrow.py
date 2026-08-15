@@ -66,6 +66,19 @@ def build_p005_v4(debug:bool):
 
 p001.build_page_html=build_p005_v4
 
+async def _write_pdf_incremental(page,out:Path):
+    names=[out/'QURBATA-JILID-2-P005-V4-RIGHT-TITLE-BOTTOMROW.pdf']
+    names.extend(out/f'QURBATA-JILID-2-P005-V4-RIGHT-TITLE-BOTTOMROW-LOCK-SAFE-{i:02d}.pdf' for i in range(1,100))
+    last_error=None
+    for idx,pdf in enumerate(names):
+        try:
+            await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'})
+            return pdf,('DIRECT_V4' if idx==0 else f'LOCK_FALLBACK_V4_{idx:02d}')
+        except PermissionError as e:
+            last_error=e
+            continue
+    raise RuntimeError('P005_V4_NO_AVAILABLE_PDF_NAME') from last_error
+
 async def render_p005_v4(h:Path,out:Path,debug:bool):
     report=out/'LAYOUT-OVERFLOW-REPORT-J2-P005-V4.json'
     png=out/'png';png.mkdir(parents=True,exist_ok=True)
@@ -92,11 +105,7 @@ async def render_p005_v4(h:Path,out:Path,debug:bool):
             for x in all_issues:kinds[x['kind']]=kinds.get(x['kind'],0)+1
             raise RuntimeError('P005_V4_LAYOUT_ISSUES='+str(len(all_issues))+' TYPES='+','.join(f'{k}:{v}' for k,v in sorted(kinds.items()))+f' REPORT={report}')
         await page.screenshot(path=str(png/'page-005-v4.png'),full_page=True)
-        primary=out/'QURBATA-JILID-2-P005-V4-RIGHT-TITLE-BOTTOMROW.pdf'
-        try:
-            await page.pdf(path=str(primary),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});pdf=primary;pdf_mode='DIRECT_V4'
-        except PermissionError:
-            pdf=out/'QURBATA-JILID-2-P005-V4-RIGHT-TITLE-BOTTOMROW-LOCK-SAFE.pdf';await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});pdf_mode='LOCK_FALLBACK_V4'
+        pdf,pdf_mode=await _write_pdf_incremental(page,out)
         await browser.close()
     return metrics,report,pdf,pdf_mode
 
@@ -113,6 +122,7 @@ def main():
     print('REGISTRY_OBJECTS=32_PRESERVED');print('PRESENTATION_FONT_SIZE=34PT');print('PRACTICE_FONT_SIZE=39PT')
     print('PRESENTATION_VOWELING=FATHA_ON_ISOLATED_ACQUISITION_LETTERS');print('ENRICHMENT_SEPARATOR=NONE')
     print('ENRICHMENT_ALIGNMENT=CENTERED');print('ENRICHMENT_TEXT_SIZE=NUMBERS_21PT_NONJOINERS_20PT')
-    print('ENRICHMENT_TEXT_CLIP_GUARD=ENABLED');print('OUTPUT_DIR='+DEFAULT_P005_OUTPUT);return rc
+    print('ENRICHMENT_TEXT_CLIP_GUARD=ENABLED');print('PDF_WRITE_POLICY=INCREMENTAL_LOCK_SAFE_01_99')
+    print('OUTPUT_DIR='+DEFAULT_P005_OUTPUT);return rc
 
 if __name__=='__main__':raise SystemExit(main())
