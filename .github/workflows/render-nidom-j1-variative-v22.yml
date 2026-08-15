@@ -6,6 +6,7 @@ on:
       - content/qurbata-jilid-1-8-production
     paths:
       - 'tools/render_nidom_j1_variative_v22.js'
+      - 'tools/patch_nidom_v22_font_gate.js'
       - '.github/workflows/render-nidom-j1-variative-v22.yml'
 jobs:
   render:
@@ -34,6 +35,8 @@ jobs:
           mkdir -p dist/shared/assets
           cp books/shared/assets/qurbata-logo.svg dist/shared/assets/qurbata-logo.svg
           test -s dist/shared/assets/qurbata-logo.svg
+      - name: Scope Uthman gate to Arabic pages
+        run: node tools/patch_nidom_v22_font_gate.js
       - name: Render variative 40-page master
         run: node tools/render_nidom_j1_variative_v22.js
       - name: Verify outputs
