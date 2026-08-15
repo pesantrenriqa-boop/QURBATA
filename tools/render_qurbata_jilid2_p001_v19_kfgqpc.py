@@ -89,7 +89,7 @@ def build_frozen_sukun_font(kfg_path:Path,amiri_path:Path,out_dir:Path)->Path:
 
 async def jilid1_style_fit_and_inspect(page):
     metrics=await p001.base.base.fit_joined(page)
-    issues=await page.evaluate('''()=>{const out=[];const rows={};const grid=document.querySelector('.j2-grid');const footer=document.querySelector('.footer');for(const el of document.querySelectorAll('.j2-object')){const r=Number(el.dataset.row),x=el.querySelector('.j2-glyph').getBoundingClientRect();(rows[r]??=[]).push({slot:el.dataset.slot,box:x})}for(let r=1;r<=8;r++){const cur=rows[r]||[];for(const it of cur){const s=document.querySelector(`.j2-object[data-slot="${it.slot}"]`).getBoundingClientRect();const pad=r<=2?10:12;if(it.box.left<s.left-pad||it.box.right>s.right+pad)out.push({kind:'JOINED_INK_HORIZONTAL_ESCAPE',slot:it.slot,row:r})}if(r<8&&rows[r+1]){const lowerTop=Math.min(...rows[r+1].map(x=>x.box.top));const upperBottom=Math.max(...cur.map(x=>x.box.bottom));const gap=lowerTop-upperBottom;if(gap<6)out.push({kind:'INTER_ROW_CLEARANCE_TOO_SMALL',row:r,nextRow:r+1,gap,requiredGap:6})}}if(grid&&footer){const clear=footer.getBoundingClientRect().top-grid.getBoundingClientRect().bottom;if(clear<3)out.push({kind:'GRID_FOOTER_OVERLAP',clearance:clear,requiredClearance:3})}return out}''')
+    issues=await page.evaluate('''()=>{const out=[];const rows={};const grid=document.querySelector('.j2-grid');const footer=document.querySelector('.footer');for(const el of document.querySelectorAll('.j2-object')){const r=Number(el.dataset.row),x=el.querySelector('.j2-glyph').getBoundingClientRect();(rows[r]??=[]).push({slot:el.dataset.slot,box:x})}for(let r=1;r<=8;r++){const cur=rows[r]||[];for(const it of cur){const s=document.querySelector(`.j2-object[data-slot="${it.slot}"]`).getBoundingClientRect();const pad=r<=2?10:12;if(it.box.left<s.left-pad||it.box.right>s.right+pad)out.push({kind:'JOINED_INK_HORIZONTAL_ESCAPE',slot:it.slot,row:r})}if(r<8&&rows[r+1]){const lowerTop=Math.min(...rows[r+1].map(x=>x.box.top));const upperBottom=Math.max(...cur.map(x=>x.box.bottom));const gap=lowerTop-upperBottom;if(gap<6)out.push({kind:'INTER_ROW_CLEARANCE_TOO_SMALL',row:r,nextRow:r+1,gap,requiredGap:6})}}if(grid&&footer){const clear=footer.getBoundingClientRect().top-grid.getBoundingClientRect().bottom;if(clear<2)out.push({kind:'GRID_FOOTER_OVERLAP',clearance:clear,requiredClearance:2})}return out}''')
     return metrics,issues
 
 
@@ -109,21 +109,21 @@ def main():
     font_uri=frozen_font.as_uri()
 
     p001.P001_CSS += f'''\n@font-face{{font-family:"{FONT_FAMILY}";src:url("{font_uri}") format("truetype");font-style:normal;font-weight:400;font-display:block;}}
-.page{{padding:3.6mm 8mm 2.5mm!important;}}
+.page{{padding:3.6mm 8mm 2.0mm!important;}}
 .header{{height:17mm!important;flex:0 0 17mm!important;grid-template-columns:32mm minmax(0,1fr) 12mm!important;}}
 .brand-logo{{width:32mm!important;height:17mm!important;}}
 .learning-header-title{{font-size:6.2pt!important;letter-spacing:.16em!important;}}
-.presentation{{height:18mm!important;flex:0 0 18mm!important;margin:0!important;}}
-.presentation-object{{font-family:"{FONT_FAMILY}",serif!important;font-size:45pt!important;line-height:1.25!important;gap:4mm!important;}}
+.presentation{{height:17mm!important;flex:0 0 17mm!important;margin:0!important;}}
+.presentation-object{{font-family:"{FONT_FAMILY}",serif!important;font-size:45pt!important;line-height:1.22!important;gap:4mm!important;}}
 .presentation-object .arabic-part{{font-family:"{FONT_FAMILY}",serif!important;}}
 .presentation-object .arrow{{font-size:22pt!important;}}
-.j2-grid{{height:143mm!important;flex:0 0 143mm!important;row-gap:4.0mm!important;padding:1.6mm 0 1.2mm!important;}}
-.j2-glyph{{font-family:"{FONT_FAMILY}",serif!important;font-size:39pt!important;line-height:1.12!important;padding:.15mm 1mm .25mm!important;font-feature-settings:'mark' 1,'mkmk' 1;font-kerning:normal;text-rendering:optimizeLegibility;}}
+.j2-grid{{height:150mm!important;flex:0 0 150mm!important;row-gap:4.2mm!important;padding:1.2mm 0 .6mm!important;margin:0!important;}}
+.j2-glyph{{font-family:"{FONT_FAMILY}",serif!important;font-size:39pt!important;line-height:1.10!important;padding:.10mm 1mm .18mm!important;font-feature-settings:'mark' 1,'mkmk' 1;font-kerning:normal;text-rendering:optimizeLegibility;}}
 .targets{{display:none!important;height:0!important;min-height:0!important;margin:0!important;padding:0!important;border:0!important;}}
-.footer{{height:10mm!important;flex:0 0 10mm!important;margin-top:auto!important;margin-bottom:0!important;padding:0 1mm .5mm!important;display:flex!important;align-items:flex-end!important;justify-content:space-between!important;background:transparent!important;border-radius:0!important;color:#173a2d!important;overflow:visible!important;font-family:"{FONT_FAMILY}",serif!important;direction:rtl!important;}}
+.footer{{height:8mm!important;flex:0 0 8mm!important;margin:0!important;padding:0 1mm .2mm!important;display:flex!important;align-items:flex-end!important;justify-content:space-between!important;background:transparent!important;border-radius:0!important;color:#173a2d!important;overflow:visible!important;font-family:"{FONT_FAMILY}",serif!important;direction:rtl!important;}}
 .footer .field{{display:none!important;}}
-.footer::before{{content:"قُرْآنٌ · لُغَةٌ · أَدَبٌ";font-family:"{FONT_FAMILY}",serif!important;font-size:10.3pt!important;line-height:1.15!important;direction:rtl!important;}}
-.footer::after{{content:"تَعَلَّمْ · اِعْمَلْ · عَلِّمْ";font-family:"{FONT_FAMILY}",serif!important;font-size:10.3pt!important;line-height:1.15!important;direction:rtl!important;}}
+.footer::before{{content:"قُرْآنٌ · لُغَةٌ · أَدَبٌ";font-family:"{FONT_FAMILY}",serif!important;font-size:10.3pt!important;line-height:1.10!important;direction:rtl!important;}}
+.footer::after{{content:"تَعَلَّمْ · اِعْمَلْ · عَلِّمْ";font-family:"{FONT_FAMILY}",serif!important;font-size:10.3pt!important;line-height:1.10!important;direction:rtl!important;}}
 .bottom-band{{display:none!important;}}
 '''
     p001.fit_and_inspect=jilid1_style_fit_and_inspect
@@ -134,9 +134,11 @@ def main():
     print('VISUAL_BASELINE=JILID1_CURRENT')
     print('PRACTICE_FONT_PT=39')
     print('PRESENTATION_FONT_PT=45')
-    print('GRID_HEIGHT_MM=143')
-    print('ROW_GAP_MM=4.0')
-    print('FOOTER_CLEARANCE_MIN_MM_EQUIV=SAFE')
+    print('GRID_HEIGHT_MM=150')
+    print('ROW_GAP_MM=4.2')
+    print('MATERIAL_VERTICAL_USE=EXTENDED_DOWNWARD')
+    print('FOOTER_HEIGHT_MM=8')
+    print('FOOTER_CLEARANCE_MIN_PX=2')
     print('LEGACY_BOTTOM_DESCRIPTIONS=REMOVED')
     print('LEGACY_TEACHER_DATE_SCORE_FORM=REMOVED')
     print('ARABIC_SLOGAN_FOOTER=RESTORED')
