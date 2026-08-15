@@ -35,6 +35,19 @@ jobs:
             test -n "$FONT"
             cp "$FONT" .build-fonts/UthmanTaha.ttf
           fi
+      - name: Embed QURBATA logo
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('tools/render_nidom_j1_batch_p012_p040.js')
+          s=p.read_text()
+          old="const logo='file://'+path.join(root,'books/nidom-akhlak/shared/assets/qurbata-logo.svg');"
+          new="const logo='data:image/svg+xml;base64,'+fs.readFileSync(path.join(root,'books/nidom-akhlak/shared/assets/qurbata-logo.svg')).toString('base64');"
+          if old not in s:
+              raise SystemExit('LOGO_PATCH_TARGET_NOT_FOUND')
+          p.write_text(s.replace(old,new))
+          PY
       - name: Render P012-P040
         run: node tools/render_nidom_j1_batch_p012_p040.js
       - name: Verify batch
