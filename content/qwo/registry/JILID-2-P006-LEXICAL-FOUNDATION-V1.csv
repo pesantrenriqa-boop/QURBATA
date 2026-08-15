@@ -1,33 +1,33 @@
 slot,word,meaning_id,function,competency_status,lexical_status
-1,طَرَبَ,bergembira atau tergerak oleh kegembiraan,CURRENT,ALLOWED,CURATED
-2,طَرَحَ,melempar atau menyingkirkan,CURRENT,ALLOWED,CURATED
-3,طَرَدَ,mengusir,CURRENT,ALLOWED,CURATED
-4,طَرَزَ,menyulam atau menghias dengan bordir,CURRENT,ALLOWED,CURATED
-5,بَطَحَ,membentangkan atau meratakan,CURRENT,ALLOWED,CURATED
-6,بَطِرَ,bersikap sombong atau kufur nikmat,CURRENT,ALLOWED,CURATED
-7,بَطَشَ,menyerang atau menyergap dengan keras,CURRENT,ALLOWED,CURATED
-8,حَطَبَ,mengumpulkan kayu bakar,CURRENT,ALLOWED,CURATED
-9,ظَهَرَ,tampak atau muncul,CURRENT,ALLOWED,CURATED
-10,ظَفِرَ,menang atau memperoleh keberhasilan,CURRENT,ALLOWED,CURATED
-11,ظَرُفَ,menjadi elok atau cakap,CURRENT,ALLOWED,CURATED
-12,عَظُمَ,menjadi besar atau agung,CURRENT,ALLOWED,CURATED
-13,حَظَرَ,melarang atau mencegah,CURRENT,ALLOWED,CURATED
-14,حَظِرَ,menjadi terlarang atau tercegah,CURRENT,ALLOWED,CURATED
-15,بَظُرَ,menjadi menonjol atau membesar,CURRENT,ALLOWED,CURATED
-16,ظَلَمَ,berbuat zalim,CURRENT,ALLOWED,CURATED
-17,رَبَطَ,mengikat,MUROJAAH,ALLOWED,CURATED
-18,رَطُبَ,menjadi basah atau lembap,MUROJAAH,ALLOWED,CURATED
-19,ضَبَطَ,mengendalikan atau menetapkan dengan tepat,MUROJAAH,ALLOWED,CURATED
-20,ضَرَبَ,memukul atau mengetuk,MUROJAAH,ALLOWED,CURATED
-21,صَبُحَ,menjadi cerah atau elok,MUROJAAH,ALLOWED,CURATED
-22,صَحِبَ,menemani atau menyertai,MUROJAAH,ALLOWED,CURATED
-23,بَصُرَ,menjadi tajam penglihatan atau berpengetahuan,MUROJAAH,ALLOWED,CURATED
-24,خَصِبَ,menjadi subur,MUROJAAH,ALLOWED,CURATED
-25,سَبُحَ,bergerak atau berenang dengan ringan,MUROJAAH,ALLOWED,CURATED
-26,شَرِبَ,meminum,MUROJAAH,ALLOWED,CURATED
-27,خَبُثَ,menjadi buruk atau keji,MUROJAAH,ALLOWED,CURATED
-28,حَذُرَ,menjadi waspada atau berhati-hati,MUROJAAH,ALLOWED,CURATED
-29,خَبِرَ,mengetahui atau berpengalaman,MUROJAAH,ALLOWED,CURATED
-30,وَرِثَ,mewarisi,MUROJAAH,ALLOWED,CURATED
-31,بَرُدَ,menjadi dingin,MUROJAAH,ALLOWED,CURATED
-32,سَجَدَ,bersujud,MUROJAAH,ALLOWED,CURATED
+1,طَبَ,latihan bentuk ط awal,FORM,ALLOWED,FORM_DRILL
+2,بَطَ,latihan bentuk ط akhir,FORM,ALLOWED,FORM_DRILL
+3,طَبَطَ,latihan bentuk ط awal akhir,FORM,ALLOWED,FORM_DRILL
+4,بَطَبَ,latihan bentuk ط tengah,FORM,ALLOWED,FORM_DRILL
+5,طَحَ,latihan bentuk ط awal,FORM,ALLOWED,FORM_DRILL
+6,حَطَ,latihan bentuk ط akhir,FORM,ALLOWED,FORM_DRILL
+7,طَحَطَ,latihan bentuk ط berulang,FORM,ALLOWED,FORM_DRILL
+8,حَطَحَ,latihan bentuk ط tengah,FORM,ALLOWED,FORM_DRILL
+9,طَسَ,latihan bentuk ط awal,FORM,ALLOWED,FORM_DRILL
+10,سَطَ,latihan bentuk ط akhir,FORM,ALLOWED,FORM_DRILL
+11,طَسَطَ,latihan bentuk ط berulang,FORM,ALLOWED,FORM_DRILL
+12,سَطَسَ,latihan bentuk ط tengah,FORM,ALLOWED,FORM_DRILL
+13,طَصَ,latihan bentuk ط awal,FORM,ALLOWED,FORM_DRILL
+14,صَطَ,latihan bentuk ط akhir,FORM,ALLOWED,FORM_DRILL
+15,ظَبَ,latihan bentuk ظ awal,FORM,ALLOWED,FORM_DRILL
+16,بَظَ,latihan bentuk ظ akhir,FORM,ALLOWED,FORM_DRILL
+17,ظَبَظَ,latihan bentuk ظ awal akhir,FORM,ALLOWED,FORM_DRILL
+18,بَظَبَ,latihan bentuk ظ tengah,FORM,ALLOWED,FORM_DRILL
+19,ظَحَ,latihan bentuk ظ awal,FORM,ALLOWED,FORM_DRILL
+20,حَظَ,latihan bentuk ظ akhir,FORM,ALLOWED,FORM_DRILL
+21,ظَحَظَ,latihan bentuk ظ berulang,FORM,ALLOWED,FORM_DRILL
+22,حَظَحَ,latihan bentuk ظ tengah,FORM,ALLOWED,FORM_DRILL
+23,ظَسَ,latihan bentuk ظ awal,FORM,ALLOWED,FORM_DRILL
+24,سَظَ,latihan bentuk ظ akhir,FORM,ALLOWED,FORM_DRILL
+25,ظَسَظَ,latihan bentuk ظ berulang,FORM,ALLOWED,FORM_DRILL
+26,سَظَسَ,latihan bentuk ظ tengah,FORM,ALLOWED,FORM_DRILL
+27,ظَصَ,latihan bentuk ظ awal,FORM,ALLOWED,FORM_DRILL
+28,صَظَ,latihan bentuk ظ akhir,FORM,ALLOWED,FORM_DRILL
+29,طَرَبَ,contoh kata nyata ط,MUROJAAH,ALLOWED,CURATED
+30,حَظَرَ,contoh kata nyata ظ,MUROJAAH,ALLOWED,CURATED
+31,ضَرَبَ,murojaah keluarga sebelumnya,MUROJAAH,ALLOWED,CURATED
+32,صَبَرَ,murojaah keluarga sebelumnya,MUROJAAH,ALLOWED,CURATED
