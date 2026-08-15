@@ -156,8 +156,6 @@ Sistem murojaah, validasi kelas, status siswa, dan mekanisme guru ditunda sampai
 
 ## Jilid 4 — Working Map
 
-J4 menuntaskan Juz 30 dari At-Tariq sampai An-Naba. Beban dinaikkan lagi, terutama pada ayat-ayat pendek di At-Takwir, Abasa, An-Nazi'at, dan An-Naba.
-
 | Halaman | Surat / Ayat |
 |---|---|
 | P001 | At-Tariq 1–4 |
@@ -201,11 +199,60 @@ J4 menuntaskan Juz 30 dari At-Tariq sampai An-Naba. Beban dinaikkan lagi, teruta
 | P039 | An-Nazi'at 27–46 |
 | P040 | An-Naba 1–40 |
 
-**Outcome J4:** Juz 30 selesai penuh. P040 merupakan target sangat besar dan sementara dianggap `STRESS POINT`; pada pemetaan final dapat dipecah dengan menggeser sebagian An-Naba ke awal J5 bila diperlukan.
+## Jilid 5 — Working Map
 
-## Jilid 5 — Starting Point
+J5 masuk Juz 29. Karena mayoritas ayat relatif pendek, satu halaman dapat memuat rentang ayat lebih besar daripada J1–J4.
 
-`P001 = Al-Mursalat 1–...` sebagai awal Juz 29 jika An-Naba tetap diselesaikan di J4.
+| Halaman | Surat / Ayat |
+|---|---|
+| P001 | Al-Mursalat 1–10 |
+| P002 | Al-Mursalat 11–20 |
+| P003 | Al-Mursalat 21–30 |
+| P004 | Al-Mursalat 31–40 |
+| P005 | Al-Mursalat 41–50 |
+| P006 | Al-Insan 1–6 |
+| P007 | Al-Insan 7–12 |
+| P008 | Al-Insan 13–18 |
+| P009 | Al-Insan 19–24 |
+| P010 | Al-Insan 25–31 |
+| P011 | Al-Qiyamah 1–8 |
+| P012 | Al-Qiyamah 9–16 |
+| P013 | Al-Qiyamah 17–24 |
+| P014 | Al-Qiyamah 25–32 |
+| P015 | Al-Qiyamah 33–40 |
+| P016 | Al-Muddaththir 1–8 |
+| P017 | Al-Muddaththir 9–16 |
+| P018 | Al-Muddaththir 17–24 |
+| P019 | Al-Muddaththir 25–32 |
+| P020 | Al-Muddaththir 33–40 |
+| P021 | Al-Muddaththir 41–48 |
+| P022 | Al-Muddaththir 49–56 |
+| P023 | Al-Muzzammil 1–5 |
+| P024 | Al-Muzzammil 6–10 |
+| P025 | Al-Muzzammil 11–15 |
+| P026 | Al-Muzzammil 16–20 |
+| P027 | Al-Jinn 1–7 |
+| P028 | Al-Jinn 8–14 |
+| P029 | Al-Jinn 15–21 |
+| P030 | Al-Jinn 22–28 |
+| P031 | Nuh 1–7 |
+| P032 | Nuh 8–14 |
+| P033 | Nuh 15–21 |
+| P034 | Nuh 22–28 |
+| P035 | Al-Ma'arij 1–11 |
+| P036 | Al-Ma'arij 12–22 |
+| P037 | Al-Ma'arij 23–33 |
+| P038 | Al-Ma'arij 34–44 |
+| P039 | Al-Haqqah 1–26 |
+| P040 | Al-Haqqah 27–52 |
+
+**Outcome J5:** Al-Mursalat sampai Al-Haqqah selesai. Juz 29 belum selesai; Al-Qalam dan Al-Mulk diteruskan pada awal J6 agar beban tidak dipaksa.
+
+## Jilid 6 — Starting Point
+
+`P001 = Al-Qalam 1–...`
+
+Setelah Al-Qalam dan Al-Mulk selesai, J6 masuk ke Juz 28.
 
 ## Progress Pembagian Ayat
 
@@ -213,10 +260,11 @@ J4 menuntaskan Juz 30 dari At-Tariq sampai An-Naba. Beban dinaikkan lagi, teruta
 - J2: 40/40
 - J3: 40/40
 - J4: 40/40
-- J5–J8: belum dipetakan rinci.
+- J5: 40/40
+- J6–J8: belum dipetakan rinci.
 
-**Total page mapping: 160/320 = 50%.**
+**Total page mapping: 200/320 = 62.5%.**
 
 ## Next
 
-Lanjutkan J5 P001–P040. Tetap hanya membagi surat/ayat sampai 320/320 selesai.
+Lanjutkan J6 P001–P040. Tetap hanya membagi surat/ayat sampai 320/320 selesai.
