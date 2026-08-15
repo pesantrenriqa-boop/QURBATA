@@ -201,8 +201,6 @@ Sistem murojaah, validasi kelas, status siswa, dan mekanisme guru ditunda sampai
 
 ## Jilid 5 — Working Map
 
-J5 masuk Juz 29. Karena mayoritas ayat relatif pendek, satu halaman dapat memuat rentang ayat lebih besar daripada J1–J4.
-
 | Halaman | Surat / Ayat |
 |---|---|
 | P001 | Al-Mursalat 1–10 |
@@ -246,13 +244,60 @@ J5 masuk Juz 29. Karena mayoritas ayat relatif pendek, satu halaman dapat memuat
 | P039 | Al-Haqqah 1–26 |
 | P040 | Al-Haqqah 27–52 |
 
-**Outcome J5:** Al-Mursalat sampai Al-Haqqah selesai. Juz 29 belum selesai; Al-Qalam dan Al-Mulk diteruskan pada awal J6 agar beban tidak dipaksa.
+## Jilid 6 — Working Map
 
-## Jilid 6 — Starting Point
+J6 menyelesaikan Juz 29 melalui Al-Qalam dan Al-Mulk, lalu masuk Juz 28. Karena ayat Juz 28 umumnya lebih panjang daripada bagian akhir Juz 30, rentang ayat per halaman kembali disesuaikan.
 
-`P001 = Al-Qalam 1–...`
+| Halaman | Surat / Ayat |
+|---|---|
+| P001 | Al-Qalam 1–7 |
+| P002 | Al-Qalam 8–14 |
+| P003 | Al-Qalam 15–21 |
+| P004 | Al-Qalam 22–28 |
+| P005 | Al-Qalam 29–35 |
+| P006 | Al-Qalam 36–43 |
+| P007 | Al-Qalam 44–52 |
+| P008 | Al-Mulk 1–5 |
+| P009 | Al-Mulk 6–10 |
+| P010 | Al-Mulk 11–15 |
+| P011 | Al-Mulk 16–20 |
+| P012 | Al-Mulk 21–25 |
+| P013 | Al-Mulk 26–30 |
+| P014 | At-Tahrim 1–3 |
+| P015 | At-Tahrim 4–6 |
+| P016 | At-Tahrim 7–9 |
+| P017 | At-Tahrim 10–12 |
+| P018 | At-Talaq 1–2 |
+| P019 | At-Talaq 3–4 |
+| P020 | At-Talaq 5–7 |
+| P021 | At-Talaq 8–10 |
+| P022 | At-Talaq 11–12 |
+| P023 | At-Taghabun 1–4 |
+| P024 | At-Taghabun 5–8 |
+| P025 | At-Taghabun 9–12 |
+| P026 | At-Taghabun 13–15 |
+| P027 | At-Taghabun 16–18 |
+| P028 | Al-Munafiqun 1–3 |
+| P029 | Al-Munafiqun 4–6 |
+| P030 | Al-Munafiqun 7–8 |
+| P031 | Al-Munafiqun 9–11 |
+| P032 | Al-Jumu'ah 1–4 |
+| P033 | Al-Jumu'ah 5–8 |
+| P034 | Al-Jumu'ah 9–11 |
+| P035 | As-Saff 1–4 |
+| P036 | As-Saff 5–7 |
+| P037 | As-Saff 8–10 |
+| P038 | As-Saff 11–14 |
+| P039 | Al-Mumtahanah 1–3 |
+| P040 | Al-Mumtahanah 4–6 |
 
-Setelah Al-Qalam dan Al-Mulk selesai, J6 masuk ke Juz 28.
+**Outcome J6:** Juz 29 selesai pada P013. Juz 28 kemudian berjalan dari At-Tahrim hingga Al-Mumtahanah ayat 6.
+
+## Jilid 7 — Starting Point
+
+`P001 = Al-Mumtahanah 7–...`
+
+J7 akan menyelesaikan sisa Juz 28, kemudian masuk Juz 27.
 
 ## Progress Pembagian Ayat
 
@@ -261,10 +306,11 @@ Setelah Al-Qalam dan Al-Mulk selesai, J6 masuk ke Juz 28.
 - J3: 40/40
 - J4: 40/40
 - J5: 40/40
-- J6–J8: belum dipetakan rinci.
+- J6: 40/40
+- J7–J8: belum dipetakan rinci.
 
-**Total page mapping: 200/320 = 62.5%.**
+**Total page mapping: 240/320 = 75%.**
 
 ## Next
 
-Lanjutkan J6 P001–P040. Tetap hanya membagi surat/ayat sampai 320/320 selesai.
+Lanjutkan J7 P001–P040. Tetap hanya membagi surat/ayat sampai 320/320 selesai.
