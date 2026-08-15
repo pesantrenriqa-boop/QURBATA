@@ -32,7 +32,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p dist/shared/assets
-          cp books/nidom-akhlak/shared/assets/qurbata-logo.svg dist/shared/assets/qurbata-logo.svg
+          cp books/shared/assets/qurbata-logo.svg dist/shared/assets/qurbata-logo.svg
           test -s dist/shared/assets/qurbata-logo.svg
       - name: Render rebuilt 40-page master
         run: node tools/render_nidom_j1_rebuild_v2.js
