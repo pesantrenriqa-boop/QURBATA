@@ -1,0 +1,41 @@
+name: Render QURBATA NIDOM Eval P009-P010
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - content/qurbata-jilid-1-8-production
+    paths:
+      - 'books/nidom-akhlak/jilid-1/page-009.html'
+      - 'books/nidom-akhlak/jilid-1/page-010.html'
+      - 'tools/render_nidom_eval_009_010.js'
+      - '.github/workflows/render-nidom-eval-009-010.yml'
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install Playwright
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Render evaluation PDFs + PNGs
+        run: node tools/render_nidom_eval_009_010.js
+      - name: Verify outputs
+        run: |
+          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P009-v0.9.pdf
+          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P010-v0.9.pdf
+          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P009-v0.9.png
+          test -s dist/nidom-akhlak/QURBATA-NIDOM-J1-P010-v0.9.png
+      - uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-NIDOM-J1-EVAL-P009-P010-v0.9
+          path: |
+            dist/nidom-akhlak/QURBATA-NIDOM-J1-P009-v0.9.pdf
+            dist/nidom-akhlak/QURBATA-NIDOM-J1-P010-v0.9.pdf
+            dist/nidom-akhlak/QURBATA-NIDOM-J1-P009-v0.9.png
+            dist/nidom-akhlak/QURBATA-NIDOM-J1-P010-v0.9.png
+          if-no-files-found: error
