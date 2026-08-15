@@ -27,6 +27,13 @@ jobs:
           mkdir -p .build-fonts
           curl -fL --retry 3 --connect-timeout 15 --max-time 60 'https://raw.githubusercontent.com/quranwbw/qpc-fonts/master/various-woff2/UthmanTN1%20Ver10.woff2' -o .build-fonts/UthmanTaha.woff2
           test -s .build-fonts/UthmanTaha.woff2
+      - name: Bind QURBATA logo asset
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist/shared/assets
+          cp books/nidom-akhlak/shared/assets/qurbata-logo.svg dist/shared/assets/qurbata-logo.svg
+          test -s dist/shared/assets/qurbata-logo.svg
       - name: Render rebuilt 40-page master
         run: node tools/render_nidom_j1_rebuild_v2.js
       - name: Verify production outputs
