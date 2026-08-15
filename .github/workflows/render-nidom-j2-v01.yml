@@ -6,6 +6,7 @@ on:
     paths:
       - 'tools/render_nidom_j2_v01.js'
       - 'tools/patch_nidom_j2_font_gate_v02.js'
+      - 'tools/patch_nidom_j2_embed_assets_v03.js'
       - '.github/workflows/render-nidom-j2-v01.yml'
 jobs:
   render:
@@ -26,6 +27,8 @@ jobs:
           cp books/shared/assets/qurbata-logo.svg dist/shared/assets/qurbata-logo.svg
       - name: Patch Uthman font gate
         run: node tools/patch_nidom_j2_font_gate_v02.js
+      - name: Embed font and logo
+        run: node tools/patch_nidom_j2_embed_assets_v03.js
       - name: Render Jilid 2
         run: node tools/render_nidom_j2_v01.js
       - name: Verify master and 40 pages
