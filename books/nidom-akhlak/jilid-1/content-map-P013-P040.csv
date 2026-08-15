@@ -1,0 +1,29 @@
+page,type,title,arabic_keyword,primary_competency,review_mode
+013,materi,Aku Meminta Izin,الاستئذان,meminta izin sebelum masuk mengambil atau menggunakan,spiral
+014,materi,Aku Mengucapkan Terima Kasih,الشكر,berterima kasih atas kebaikan orang lain,spiral
+015,materi,Aku Meminta Maaf,الاعتذار,mengakui kesalahan dan meminta maaf,spiral
+016,materi,Aku Memaafkan,العفو,memaafkan dan tidak membalas keburukan,spiral
+017,materi,Aku Menghormati Orang Tua,بر الوالدين,berkata dan bertindak baik kepada orang tua,spiral
+018,materi,Aku Menghormati Guru,أدب المعلم,menjaga adab kepada guru dan saat belajar,spiral
+019,evaluasi,Evaluasi Kumulatif III,,mengukur P001-P018,objektif-beralasan-urutan
+020,evaluasi,Evaluasi Kumulatif IV,,mengukur transfer akhlak P001-P018,kasus-dialog-refleksi-observasi
+021,materi,Aku Menyayangi yang Lebih Muda,الرحمة,menyayangi dan melindungi yang lebih muda,spiral
+022,materi,Aku Menghormati yang Lebih Tua,التوقير,menghormati yang lebih tua,spiral
+023,materi,Aku Suka Menolong,المساعدة,menolong dalam kebaikan,spiral
+024,materi,Aku Suka Berbagi,الإيثار,berbagi dan peduli,spiral
+025,materi,Aku Tidak Mengejek,السخرية,tidak mengejek atau merendahkan,spiral
+026,materi,Aku Tidak Mengganggu,السلامة,menjaga lisan dan tangan,spiral
+027,materi,Aku Menjaga Rahasia,حفظ السر,menjaga rahasia yang aman dan amanah,spiral
+028,materi,Aku Adil,العدل,memberikan hak dan tidak pilih kasih,spiral
+029,evaluasi,Evaluasi Kumulatif V,,mengukur P001-P028,respons-klasifikasi-singkat
+030,evaluasi,Evaluasi Kumulatif VI,,mengukur penerapan P001-P028,kasus-praktik
+031,materi,Aku Sabar Menunggu Giliran,الصبر,menahan diri dan menghormati giliran,spiral
+032,materi,Aku Tidak Sombong,التواضع,rendah hati dan tidak merendahkan,spiral
+033,materi,Aku Bersyukur,الشكر,mengenali nikmat dan menggunakannya untuk kebaikan,spiral
+034,materi,Aku Menjaga Kebersamaan,الألفة,bekerja sama dan berdamai,spiral
+035,materi,Aku Menjaga Adab Makan dan Minum,آداب الطعام,tertib sederhana dan tidak mubazir,spiral
+036,materi,Aku Menjaga Adab Belajar,آداب التعلم,niat perhatian ketekunan dan kerapian belajar,spiral
+037,evaluasi,Evaluasi Akhir Jilid I,,pengetahuan-pemahaman P001-P036,kumulatif
+038,evaluasi,Evaluasi Akhir Jilid II,,penerapan-praktik P001-P036,kasus-praktik
+039,refleksi,Jejak Kebiasaanku,,refleksi dan observasi pembiasaan,self-parent-teacher
+040,rapor,Rapor NIDOM Jilid 1,,ringkasan capaian dan target tindak lanjut,rekap
