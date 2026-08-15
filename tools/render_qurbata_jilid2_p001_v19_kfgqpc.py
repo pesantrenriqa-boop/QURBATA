@@ -89,7 +89,7 @@ def build_frozen_sukun_font(kfg_path:Path,amiri_path:Path,out_dir:Path)->Path:
 
 async def jilid1_style_fit_and_inspect(page):
     metrics=await p001.base.base.fit_joined(page)
-    issues=await page.evaluate('''()=>{const out=[];const rows={};const grid=document.querySelector('.j2-grid');const footer=document.querySelector('.footer');for(const el of document.querySelectorAll('.j2-object')){const r=Number(el.dataset.row),x=el.querySelector('.j2-glyph').getBoundingClientRect();(rows[r]??=[]).push({slot:el.dataset.slot,box:x})}for(let r=1;r<=8;r++){const cur=rows[r]||[];for(const it of cur){const s=document.querySelector(`.j2-object[data-slot="${it.slot}"]`).getBoundingClientRect();const pad=r<=2?10:12;if(it.box.left<s.left-pad||it.box.right>s.right+pad)out.push({kind:'JOINED_INK_HORIZONTAL_ESCAPE',slot:it.slot,row:r})}if(r<8&&rows[r+1]){const lowerTop=Math.min(...rows[r+1].map(x=>x.box.top));const upperBottom=Math.max(...cur.map(x=>x.box.bottom));const gap=lowerTop-upperBottom;if(gap<6)out.push({kind:'INTER_ROW_CLEARANCE_TOO_SMALL',row:r,nextRow:r+1,gap,requiredGap:6})}}if(grid&&footer&&grid.getBoundingClientRect().bottom>footer.getBoundingClientRect().top-2)out.push({kind:'GRID_FOOTER_OVERLAP'});return out}''')
+    issues=await page.evaluate('''()=>{const out=[];const rows={};const grid=document.querySelector('.j2-grid');const footer=document.querySelector('.footer');for(const el of document.querySelectorAll('.j2-object')){const r=Number(el.dataset.row),x=el.querySelector('.j2-glyph').getBoundingClientRect();(rows[r]??=[]).push({slot:el.dataset.slot,box:x})}for(let r=1;r<=8;r++){const cur=rows[r]||[];for(const it of cur){const s=document.querySelector(`.j2-object[data-slot="${it.slot}"]`).getBoundingClientRect();const pad=r<=2?10:12;if(it.box.left<s.left-pad||it.box.right>s.right+pad)out.push({kind:'JOINED_INK_HORIZONTAL_ESCAPE',slot:it.slot,row:r})}if(r<8&&rows[r+1]){const lowerTop=Math.min(...rows[r+1].map(x=>x.box.top));const upperBottom=Math.max(...cur.map(x=>x.box.bottom));const gap=lowerTop-upperBottom;if(gap<6)out.push({kind:'INTER_ROW_CLEARANCE_TOO_SMALL',row:r,nextRow:r+1,gap,requiredGap:6})}}if(grid&&footer){const clear=footer.getBoundingClientRect().top-grid.getBoundingClientRect().bottom;if(clear<3)out.push({kind:'GRID_FOOTER_OVERLAP',clearance:clear,requiredClearance:3})}return out}''')
     return metrics,issues
 
 
@@ -117,13 +117,13 @@ def main():
 .presentation-object{{font-family:"{FONT_FAMILY}",serif!important;font-size:45pt!important;line-height:1.25!important;gap:4mm!important;}}
 .presentation-object .arabic-part{{font-family:"{FONT_FAMILY}",serif!important;}}
 .presentation-object .arrow{{font-size:22pt!important;}}
-.j2-grid{{height:149mm!important;flex:0 0 149mm!important;row-gap:4.8mm!important;padding:2mm 0 1.5mm!important;}}
-.j2-glyph{{font-family:"{FONT_FAMILY}",serif!important;font-size:39pt!important;line-height:1.16!important;padding:.2mm 1mm .3mm!important;font-feature-settings:'mark' 1,'mkmk' 1;font-kerning:normal;text-rendering:optimizeLegibility;}}
+.j2-grid{{height:143mm!important;flex:0 0 143mm!important;row-gap:4.0mm!important;padding:1.6mm 0 1.2mm!important;}}
+.j2-glyph{{font-family:"{FONT_FAMILY}",serif!important;font-size:39pt!important;line-height:1.12!important;padding:.15mm 1mm .25mm!important;font-feature-settings:'mark' 1,'mkmk' 1;font-kerning:normal;text-rendering:optimizeLegibility;}}
 .targets{{display:none!important;height:0!important;min-height:0!important;margin:0!important;padding:0!important;border:0!important;}}
-.footer{{height:12mm!important;flex:0 0 12mm!important;margin:0!important;padding:0 1mm 1mm!important;display:flex!important;align-items:center!important;justify-content:space-between!important;background:transparent!important;border-radius:0!important;color:#173a2d!important;overflow:visible!important;font-family:"{FONT_FAMILY}",serif!important;direction:rtl!important;}}
+.footer{{height:10mm!important;flex:0 0 10mm!important;margin-top:auto!important;margin-bottom:0!important;padding:0 1mm .5mm!important;display:flex!important;align-items:flex-end!important;justify-content:space-between!important;background:transparent!important;border-radius:0!important;color:#173a2d!important;overflow:visible!important;font-family:"{FONT_FAMILY}",serif!important;direction:rtl!important;}}
 .footer .field{{display:none!important;}}
-.footer::before{{content:"قُرْآنٌ · لُغَةٌ · أَدَبٌ";font-family:"{FONT_FAMILY}",serif!important;font-size:10.3pt!important;line-height:1.2!important;direction:rtl!important;}}
-.footer::after{{content:"تَعَلَّمْ · اِعْمَلْ · عَلِّمْ";font-family:"{FONT_FAMILY}",serif!important;font-size:10.3pt!important;line-height:1.2!important;direction:rtl!important;}}
+.footer::before{{content:"قُرْآنٌ · لُغَةٌ · أَدَبٌ";font-family:"{FONT_FAMILY}",serif!important;font-size:10.3pt!important;line-height:1.15!important;direction:rtl!important;}}
+.footer::after{{content:"تَعَلَّمْ · اِعْمَلْ · عَلِّمْ";font-family:"{FONT_FAMILY}",serif!important;font-size:10.3pt!important;line-height:1.15!important;direction:rtl!important;}}
 .bottom-band{{display:none!important;}}
 '''
     p001.fit_and_inspect=jilid1_style_fit_and_inspect
@@ -134,6 +134,9 @@ def main():
     print('VISUAL_BASELINE=JILID1_CURRENT')
     print('PRACTICE_FONT_PT=39')
     print('PRESENTATION_FONT_PT=45')
+    print('GRID_HEIGHT_MM=143')
+    print('ROW_GAP_MM=4.0')
+    print('FOOTER_CLEARANCE_MIN_MM_EQUIV=SAFE')
     print('LEGACY_BOTTOM_DESCRIPTIONS=REMOVED')
     print('LEGACY_TEACHER_DATE_SCORE_FORM=REMOVED')
     print('ARABIC_SLOGAN_FOOTER=RESTORED')
