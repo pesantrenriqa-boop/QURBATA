@@ -111,8 +111,6 @@ Sistem murojaah, validasi kelas, status siswa, dan mekanisme guru ditunda sampai
 
 ## Jilid 3 — Working Map
 
-J3 meneruskan Juz 30 dengan unit yang lebih besar. Target kerja J3 adalah bergerak dari Ad-Duha hingga memasuki kelompok surat panjang bagian awal Juz 30.
-
 | Halaman | Surat / Ayat |
 |---|---|
 | P001 | Ad-Duha 1–3 |
@@ -156,23 +154,69 @@ J3 meneruskan Juz 30 dengan unit yang lebih besar. Target kerja J3 adalah berger
 | P039 | Al-A'la 13–15 |
 | P040 | Al-A'la 16–19 |
 
-**Outcome J3:** Ad-Duha, Al-Layl, Ash-Shams, Al-Balad, Al-Fajr, Al-Ghashiyah, dan Al-A'la selesai.
+## Jilid 4 — Working Map
 
-## Jilid 4 — Starting Point
+J4 menuntaskan Juz 30 dari At-Tariq sampai An-Naba. Beban dinaikkan lagi, terutama pada ayat-ayat pendek di At-Takwir, Abasa, An-Nazi'at, dan An-Naba.
 
-`P001 = At-Tariq 1–4`
+| Halaman | Surat / Ayat |
+|---|---|
+| P001 | At-Tariq 1–4 |
+| P002 | At-Tariq 5–8 |
+| P003 | At-Tariq 9–12 |
+| P004 | At-Tariq 13–17 |
+| P005 | Al-Buruj 1–4 |
+| P006 | Al-Buruj 5–8 |
+| P007 | Al-Buruj 9–12 |
+| P008 | Al-Buruj 13–16 |
+| P009 | Al-Buruj 17–22 |
+| P010 | Al-Inshiqaq 1–4 |
+| P011 | Al-Inshiqaq 5–8 |
+| P012 | Al-Inshiqaq 9–12 |
+| P013 | Al-Inshiqaq 13–16 |
+| P014 | Al-Inshiqaq 17–20 |
+| P015 | Al-Inshiqaq 21–25 |
+| P016 | Al-Mutaffifin 1–4 |
+| P017 | Al-Mutaffifin 5–8 |
+| P018 | Al-Mutaffifin 9–12 |
+| P019 | Al-Mutaffifin 13–17 |
+| P020 | Al-Mutaffifin 18–21 |
+| P021 | Al-Mutaffifin 22–26 |
+| P022 | Al-Mutaffifin 27–31 |
+| P023 | Al-Mutaffifin 32–36 |
+| P024 | Al-Infitar 1–5 |
+| P025 | Al-Infitar 6–10 |
+| P026 | Al-Infitar 11–15 |
+| P027 | Al-Infitar 16–19 |
+| P028 | At-Takwir 1–7 |
+| P029 | At-Takwir 8–14 |
+| P030 | At-Takwir 15–21 |
+| P031 | At-Takwir 22–29 |
+| P032 | Abasa 1–8 |
+| P033 | Abasa 9–16 |
+| P034 | Abasa 17–24 |
+| P035 | Abasa 25–32 |
+| P036 | Abasa 33–42 |
+| P037 | An-Nazi'at 1–12 |
+| P038 | An-Nazi'at 13–26 |
+| P039 | An-Nazi'at 27–46 |
+| P040 | An-Naba 1–40 |
 
-J4 akan meneruskan sisa Juz 30 menuju An-Naba, dengan beban per halaman lebih besar daripada J3.
+**Outcome J4:** Juz 30 selesai penuh. P040 merupakan target sangat besar dan sementara dianggap `STRESS POINT`; pada pemetaan final dapat dipecah dengan menggeser sebagian An-Naba ke awal J5 bila diperlukan.
+
+## Jilid 5 — Starting Point
+
+`P001 = Al-Mursalat 1–...` sebagai awal Juz 29 jika An-Naba tetap diselesaikan di J4.
 
 ## Progress Pembagian Ayat
 
 - J1: 40/40
 - J2: 40/40
 - J3: 40/40
-- J4–J8: belum dipetakan rinci.
+- J4: 40/40
+- J5–J8: belum dipetakan rinci.
 
-**Total page mapping: 120/320 = 37.5%.**
+**Total page mapping: 160/320 = 50%.**
 
 ## Next
 
-Lanjutkan J4 P001–P040. Tetap hanya membagi surat/ayat sampai 320/320 selesai.
+Lanjutkan J5 P001–P040. Tetap hanya membagi surat/ayat sampai 320/320 selesai.
