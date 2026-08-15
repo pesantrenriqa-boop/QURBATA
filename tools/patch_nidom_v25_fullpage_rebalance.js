@@ -1,0 +1,11 @@
+const fs=require('fs');
+const p='tools/render_nidom_j1_variative_v22.js';
+let s=fs.readFileSync(p,'utf8');
+if(!s.includes('V25_FULLPAGE_REBALANCE')){
+ s=s.replace('</style>',`\n/* V25_FULLPAGE_REBALANCE — distribute existing content, no filler block */\n.page{padding-top:12mm!important;padding-bottom:10mm!important;display:flex!important;flex-direction:column!important}.header{flex:0 0 auto!important;margin-bottom:4mm!important}.title{margin-bottom:4mm!important}.box{padding-top:5mm!important;padding-bottom:5mm!important;margin-bottom:4mm!important}.had{padding-top:6mm!important;padding-bottom:6mm!important;margin-top:3mm!important;margin-bottom:4mm!important;min-height:28mm!important;display:flex!important;align-items:center!important;justify-content:center!important}.arabic{line-height:1.75!important}.task,.story,.case,.practice,.reflection,.quiz{margin-top:4mm!important;margin-bottom:4mm!important}.sign{margin-top:auto!important;padding-top:5mm!important;position:static!important}.footer{position:static!important;margin-top:4mm!important;flex:0 0 auto!important}.v25-stretch{flex:1 1 auto!important;display:flex!important;flex-direction:column!important;justify-content:space-evenly!important;min-height:0!important}.v25-stretch>.box,.v25-stretch>section,.v25-stretch>div{flex:0 0 auto}\n</style>`);
+ const marker='const check=await pg.evaluate';
+ const inject=`await pg.evaluate(()=>{\n const root=document.querySelector('.page');if(!root||root.dataset.v25)return;root.dataset.v25='1';\n // Remove the v2.4 filler if present; v2.5 fills space by stretching genuine page content.\n root.querySelectorAll('.v24-lower').forEach(e=>e.remove());\n const sig=root.querySelector('.sign'),foot=root.querySelector('.footer');\n const fixed=new Set([root.querySelector('.header'),root.querySelector('.title'),sig,foot].filter(Boolean));\n const kids=[...root.children].filter(e=>!fixed.has(e));\n if(kids.length){const wrap=document.createElement('main');wrap.className='v25-stretch';root.insertBefore(wrap,sig||foot||null);kids.forEach(e=>wrap.appendChild(e));}\n});`;
+ if(s.includes(marker))s=s.replace(marker,inject+marker);else throw new Error('V25_INSERTION_POINT_MISSING');
+ fs.writeFileSync(p,s);
+}
+console.log('V25_FULLPAGE_REBALANCE=PATCHED');
