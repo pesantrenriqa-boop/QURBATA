@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""QURBATA Jilid 2 P005 V2 — production typography aligned with P001–P004."""
+"""QURBATA Jilid 2 P005 V2 — lock-safe 52/39 production wrapper."""
 from __future__ import annotations
 import sys
 from pathlib import Path
@@ -24,14 +24,37 @@ async def render_p005_v2(h:Path,out:Path,debug:bool):
         metrics,report_v1,pdf_v1=result;pdf_mode='LEGACY_DIRECT'
     else:
         raise RuntimeError(f'P005_RENDER_RETURN_ARITY_INVALID={len(result)}')
+
     report_v2=out/'LAYOUT-OVERFLOW-REPORT-J2-P005-V2.json'
-    pdf_v2=out/'QURBATA-JILID-2-P005-V2-KFGQPC-BASELINE52.pdf'
     if report_v1.exists() and report_v1!=report_v2:
-        if report_v2.exists():report_v2.unlink()
-        report_v1.replace(report_v2)
-    if pdf_v1.exists() and pdf_v1!=pdf_v2:
-        if pdf_v2.exists():pdf_v2.unlink()
-        pdf_v1.replace(pdf_v2)
+        try:
+            if report_v2.exists(): report_v2.unlink()
+            report_v1.replace(report_v2)
+        except PermissionError:
+            report_v2=out/'LAYOUT-OVERFLOW-REPORT-J2-P005-V2-LOCK-SAFE.json'
+            report_v1.replace(report_v2)
+
+    primary=out/'QURBATA-JILID-2-P005-V2-KFGQPC-BASELINE52.pdf'
+    if pdf_v1.exists() and pdf_v1!=primary:
+        if not primary.exists():
+            try:
+                pdf_v1.replace(primary)
+                pdf_v2=primary
+                pdf_mode='RENAMED_V2'
+            except PermissionError:
+                pdf_v2=out/'QURBATA-JILID-2-P005-V2-KFGQPC-BASELINE52-LOCK-SAFE.pdf'
+                if pdf_v2.exists(): pdf_v2=out/'QURBATA-JILID-2-P005-V2-KFGQPC-BASELINE52-LOCK-SAFE-2.pdf'
+                pdf_v1.replace(pdf_v2)
+                pdf_mode='LOCK_FALLBACK_V2'
+        else:
+            pdf_v2=out/'QURBATA-JILID-2-P005-V2-KFGQPC-BASELINE52-LOCK-SAFE.pdf'
+            n=2
+            while pdf_v2.exists():
+                pdf_v2=out/f'QURBATA-JILID-2-P005-V2-KFGQPC-BASELINE52-LOCK-SAFE-{n}.pdf';n+=1
+            pdf_v1.replace(pdf_v2)
+            pdf_mode='LOCK_FALLBACK_V2'
+    else:
+        pdf_v2=pdf_v1
     return metrics,report_v2,pdf_v2,pdf_mode
 
 p001.render=render_p005_v2
@@ -47,6 +70,7 @@ def main():
     print('PRACTICE_FONT_SIZE=39PT')
     print('ENRICHMENT=NONE_REGULAR_ACQUISITION_PAGE')
     print('ARABIC_SPELLED_LETTER_NAMES=DISABLED')
+    print('PDF_WRITE_POLICY=LOCK_SAFE_NO_DELETE')
     print('STATUS=P005_CANDIDATE_V2_BASELINE52')
     return rc
 if __name__=='__main__':raise SystemExit(main())
