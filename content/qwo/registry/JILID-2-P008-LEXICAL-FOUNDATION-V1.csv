@@ -1,33 +1,33 @@
 slot,word,meaning_id,function,competency_status,lexical_status
-1,غَرَبَ,pergi atau terbenam,CURRENT,ALLOWED,CURATED
-2,غَرِبَ,menjadi asing atau jauh,CURRENT,ALLOWED,CURATED
-3,غَرُبَ,menjadi asing atau ganjil,CURRENT,ALLOWED,CURATED
-4,غَضِبَ,menjadi marah,CURRENT,ALLOWED,CURATED
-5,غَضُبَ,menjadi keras dalam kemarahan,CURRENT,ALLOWED,CURATED
-6,غَزَرَ,menjadi banyak atau deras,CURRENT,ALLOWED,CURATED
-7,غَزُرَ,menjadi melimpah atau banyak,CURRENT,ALLOWED,CURATED
-8,غَدَرَ,berkhianat atau tidak menepati janji,CURRENT,ALLOWED,CURATED
-9,غَصِبَ,merampas atau mengambil secara zalim,CURRENT,ALLOWED,CURATED
-10,غَطَسَ,menyelam,CURRENT,ALLOWED,CURATED
-11,بَغَضَ,membenci,CURRENT,ALLOWED,CURATED
-12,بَغِضَ,menjadi dibenci atau membenci,CURRENT,ALLOWED,CURATED
-13,رَغِبَ,berminat atau menginginkan,CURRENT,ALLOWED,CURATED
-14,شَغَبَ,membuat keributan,CURRENT,ALLOWED,CURATED
-15,صَغُرَ,menjadi kecil,CURRENT,ALLOWED,CURATED
-16,ضَغَطَ,menekan,CURRENT,ALLOWED,CURATED
-17,عَبِثَ,bermain-main atau berbuat sia-sia,MUROJAAH,ALLOWED,CURATED
-18,عَجِبَ,merasa heran,MUROJAAH,ALLOWED,CURATED
-19,عَسُرَ,menjadi sulit,MUROJAAH,ALLOWED,CURATED
-20,جَعُدَ,menjadi keriting atau berlekuk,MUROJAAH,ALLOWED,CURATED
-21,بَطِرَ,menjadi angkuh atau tidak mensyukuri nikmat,MUROJAAH,ALLOWED,CURATED
-22,رَطُبَ,menjadi basah atau lembap,MUROJAAH,ALLOWED,CURATED
-23,ضَرِسَ,merasakan ngilu pada gigi,MUROJAAH,ALLOWED,CURATED
-24,صَبُحَ,menjadi cerah atau elok,MUROJAAH,ALLOWED,CURATED
-25,بَصِرَ,melihat atau mengetahui,MUROJAAH,ALLOWED,CURATED
-26,خَبُثَ,menjadi buruk atau keji,MUROJAAH,ALLOWED,CURATED
-27,شَرِبَ,meminum,MUROJAAH,ALLOWED,CURATED
-28,سَبُحَ,bergerak atau berenang dengan ringan,MUROJAAH,ALLOWED,CURATED
-29,حَذِرَ,berhati-hati atau waspada,MUROJAAH,ALLOWED,CURATED
-30,خَصُبَ,menjadi subur atau makmur,MUROJAAH,ALLOWED,CURATED
-31,عَبَرَ,menyeberang atau melintas,MUROJAAH,ALLOWED,CURATED
-32,طَرَبَ,bergembira atau tergerak oleh kegembiraan,MUROJAAH,ALLOWED,CURATED
+1,عَبَ,latihan ع awal,FORM,ALLOWED,FORM_DRILL
+2,بَعَ,latihan ع akhir,FORM,ALLOWED,FORM_DRILL
+3,عَبَعَ,latihan ع awal akhir,FORM,ALLOWED,FORM_DRILL
+4,بَعَبَ,latihan ع tengah,FORM,ALLOWED,FORM_DRILL
+5,عَحَ,latihan ع awal,FORM,ALLOWED,FORM_DRILL
+6,حَعَ,latihan ع akhir,FORM,ALLOWED,FORM_DRILL
+7,عَحَعَ,latihan ع berulang,FORM,ALLOWED,FORM_DRILL
+8,حَعَحَ,latihan ع tengah,FORM,ALLOWED,FORM_DRILL
+9,عَسَ,latihan ع awal,FORM,ALLOWED,FORM_DRILL
+10,سَعَ,latihan ع akhir,FORM,ALLOWED,FORM_DRILL
+11,عَسَعَ,latihan ع berulang,FORM,ALLOWED,FORM_DRILL
+12,سَعَسَ,latihan ع tengah,FORM,ALLOWED,FORM_DRILL
+13,عَطَ,latihan ع awal,FORM,ALLOWED,FORM_DRILL
+14,طَعَ,latihan ع akhir,FORM,ALLOWED,FORM_DRILL
+15,عَظَ,latihan ع awal,FORM,ALLOWED,FORM_DRILL
+16,ظَعَ,latihan ع akhir,FORM,ALLOWED,FORM_DRILL
+17,عَجَ,latihan ع awal,FORM,ALLOWED,FORM_DRILL
+18,جَعَ,latihan ع akhir,FORM,ALLOWED,FORM_DRILL
+19,عَخَ,latihan ع awal,FORM,ALLOWED,FORM_DRILL
+20,خَعَ,latihan ع akhir,FORM,ALLOWED,FORM_DRILL
+21,عَشَ,latihan ع awal,FORM,ALLOWED,FORM_DRILL
+22,شَعَ,latihan ع akhir,FORM,ALLOWED,FORM_DRILL
+23,عَثَ,latihan ع awal,FORM,ALLOWED,FORM_DRILL
+24,ثَعَ,latihan ع akhir,FORM,ALLOWED,FORM_DRILL
+25,عَطَعَ,latihan ع berulang,FORM,ALLOWED,FORM_DRILL
+26,طَعَطَ,latihan ع tengah,FORM,ALLOWED,FORM_DRILL
+27,عَبَحَ,latihan ع awal 3 huruf,FORM,ALLOWED,FORM_DRILL
+28,بَعَحَ,latihan ع tengah 3 huruf,FORM,ALLOWED,FORM_DRILL
+29,عَبَرَ,contoh nyata ع,MUROJAAH,ALLOWED,CURATED
+30,حَظَرَ,murojaah,MUROJAAH,ALLOWED,CURATED
+31,طَرَبَ,murojaah,MUROJAAH,ALLOWED,CURATED
+32,ضَرَبَ,murojaah,MUROJAAH,ALLOWED,CURATED
