@@ -1,7 +1,8 @@
-# QURBATA TAHFIDZ SYSTEM — BASELINE v0.1
+# QURBATA TAHFIDZ SYSTEM — BASELINE v0.2
 
 **Status:** WORKING BASELINE / BELUM FROZEN  
 **Tanggal awal:** 15 Agustus 2026  
+**Pembaruan:** 15 Agustus 2026  
 **Repository:** `pesantrenriqa-boop/QURBATA`  
 **Scope:** Tahfidz terintegrasi QURBATA Jilid 1–8  
 
@@ -9,187 +10,264 @@
 
 ## 1. Tujuan Dokumen
 
-Dokumen ini menjadi file induk khusus untuk pengembangan **Sistem Tahfidz QURBATA** agar seluruh keputusan, pemetaan, revisi, dan perkembangan kurikulum tahfidz QURBATA tidak hilang dan tidak tercampur dengan sistem tahfidz lanjutan 30 juz.
+Dokumen ini menjadi file induk khusus pengembangan **Sistem Tahfidz QURBATA**. Tahap pertama berfokus pada penentuan surat, ayat, dan unit hafalan yang akan ditampilkan pada setiap halaman QURBATA Jilid 1–8.
 
-Tahap pertama berfokus pada **penentuan surat, ayat, dan unit hafalan yang ditampilkan pada setiap halaman QURBATA Jilid 1–8**.
-
----
-
-## 2. Ruang Lingkup Sistem Tahfidz QURBATA
-
-Sistem tahfidz dibagi menjadi dua lapisan besar:
-
-1. **Tahfidz QURBATA Jilid 1–8** — scope dokumen ini.
-2. **Tahfidz lanjutan / Program 30 Juz** — akan dikembangkan setelah sistem QURBATA selesai dan tidak dicampur pada tahap awal ini.
+Tahfidz QURBATA dibedakan dari program tahfidz lanjutan 30 juz.
 
 ---
 
-## 3. Prinsip Integrasi dengan Pembelajaran Tartil
+## 2. Prinsip Dasar
 
-Tahfidz QURBATA harus berjalan seiring dengan pembelajaran tartil QURBATA Jilid 1–8.
+1. Setiap halaman/pertemuan QURBATA mempunyai target tahfidz yang jelas.
+2. Target tahfidz ditampilkan langsung pada halaman buku.
+3. Target tidak dipaksakan dengan rumus `1 ayat = 1 halaman`.
+4. Unit dapat berupa beberapa ayat sangat pendek, satu ayat, atau bagian dari ayat panjang.
+5. Pembagian target mempertimbangkan panjang, jumlah kata, kompleksitas bacaan, level tartil, retensi, dan kontinuitas makna.
+6. Hafalan baru dan murojaah adalah dua lapisan berbeda.
+7. Tahfidz harus berkembang seiring kemampuan tartil QURBATA.
+8. Pada level awal, hafalan dapat lebih banyak berbasis talqin; kemampuan membaca mandiri meningkat bertahap mengikuti jilid.
 
-Prinsip dasarnya:
+Format tampilan buku yang direncanakan:
 
-- setiap halaman/pertemuan QURBATA memiliki target tahfidz yang jelas;
-- target tahfidz ditampilkan langsung pada halaman QURBATA;
-- beban hafalan tidak dipaksakan sama untuk setiap halaman;
-- satu unit hafalan dapat berupa satu ayat, beberapa ayat pendek, atau sebagian dari satu ayat panjang;
-- pembagian target harus mengikuti kemampuan peserta dan tingkat kesulitan ayat;
-- urutan hafalan perlu dipetakan secara pedagogis, bukan hanya mengikuti nomor ayat secara mekanis;
-- tingkat kemampuan tartil pada jilid yang sedang dipelajari harus menjadi salah satu pertimbangan dalam pemilihan target hafalan.
+`TAHFIDZ: QS. An-Nas [114]: 1–2`
 
-Contoh format tampilan:
-
-`TAHFIDZ: QS. An-Nas [114]: 1`
-
-atau:
+atau bila satu ayat panjang dibagi:
 
 `TAHFIDZ: QS. Al-Baqarah [2]: 255 — Bagian 1`
 
-Contoh tersebut belum otomatis menjadi keputusan final sampai peta Jilid 1–8 disahkan.
+---
+
+## 3. Kapasitas Kurikulum
+
+Dengan baseline kerja sekitar **40 halaman/pertemuan per jilid**, delapan jilid menyediakan sekitar:
+
+`8 jilid × 40 halaman = ±320 slot pembelajaran`
+
+Angka 320 adalah **kapasitas slot**, bukan berarti harus ada 320 ayat baru. Sebagian slot dapat digunakan untuk ayat panjang yang dibagi, konsolidasi, evaluasi, atau target yang lebih ringan.
 
 ---
 
-## 4. Unit Dasar Pemetaan
+## 4. Unit Data Pemetaan
 
-Unit kerja kurikulum adalah:
+`JILID → HALAMAN → SURAT → AYAT → BAGIAN AYAT → BEBAN → STATUS`
 
-`JILID → HALAMAN/PERTEMUAN → SURAT → AYAT → BAGIAN AYAT → BEBAN`
-
-Template data:
-
-| Jilid | Halaman | Surat | Ayat | Bagian | Jenis Unit | Beban | Status |
-|---|---:|---|---:|---|---|---|---|
-| J1 | P001 | TBD | TBD | - | TBD | TBD | DRAFT |
-| J1 | P002 | TBD | TBD | - | TBD | TBD | DRAFT |
-
-Target awal adalah membangun peta penuh dari J1-P001 sampai akhir Jilid 8.
+| Jilid | Halaman | Surat | Ayat | Bagian | Beban | Status |
+|---|---:|---|---:|---|---|---|
+| J1 | P001 | TBD | TBD | - | TBD | DRAFT |
+| J1 | P002 | TBD | TBD | - | TBD | DRAFT |
+| ... | ... | ... | ... | ... | ... | ... |
+| J8 | P040 | TBD | TBD | - | TBD | DRAFT |
 
 ---
 
-## 5. Aturan Beban Hafalan
+## 5. Kandidat Corpus Awal
 
-Target hafalan **tidak harus 1 ayat = 1 halaman**.
+Untuk fase QURBATA, kandidat paling logis adalah memulai dari surat-surat pendek di bagian akhir Al-Qur'an. Alasannya:
 
-Kemungkinan unit:
+- relatif cocok untuk peserta pemula;
+- banyak digunakan dalam shalat dan ibadah harian;
+- memungkinkan pengalaman keberhasilan hafalan sejak dini;
+- unit ayatnya relatif mudah dibagi ke pertemuan;
+- dapat ditingkatkan bertahap menuju surat yang lebih panjang.
 
-- ayat sangat pendek: beberapa ayat dalam satu pertemuan;
-- ayat pendek: satu ayat dalam satu pertemuan;
-- ayat sedang: satu ayat atau pembagian sesuai kebutuhan;
-- ayat panjang: dapat dibagi menjadi 2, 3, atau lebih unit/pertemuan jika diperlukan.
-
-Penilaian beban nantinya minimal mempertimbangkan:
-
-1. panjang ayat;
-2. jumlah kata;
-3. kompleksitas lafaz/bacaan;
-4. level kemampuan tartil peserta;
-5. kemudahan pengulangan dan retensi;
-6. kontinuitas makna bila ayat perlu dipotong menjadi beberapa bagian.
+Namun urutan final **tidak harus mengikuti urutan mushaf secara mekanis**. Urutan akan ditentukan berdasarkan beban pedagogis dan kesesuaian dengan perkembangan tartil.
 
 ---
 
-## 6. Target Baru dan Murojaah Harus Dipisahkan
+## 6. Tiga Skenario Target Akhir
 
-Sistem harus membedakan secara eksplisit:
+### Skenario A — Fondasi Ringan
 
-### A. Hafalan Baru
-Ayat atau bagian ayat baru yang menjadi target halaman/pertemuan tersebut.
+**Target:** sekitar surat An-Nas sampai Ad-Duha dan pilihan surat/ayat fungsional.
 
-### B. Murojaah
-Hafalan sebelumnya yang harus dipertahankan.
+Karakter:
+- sangat aman untuk kelas reguler dengan jam terbatas;
+- memberi ruang murojaah sangat besar;
+- risiko ketertinggalan rendah;
+- tetapi kapasitas 8 jilid berpotensi kurang dimanfaatkan.
 
-Pada tahap pertama, fokus utama adalah menyusun **hafalan baru per halaman**. Sistem murojaah akan dirancang sebagai lapisan tersendiri agar pemetaan surat dan ayat tidak bercampur dengan mekanisme pemeliharaan hafalan.
+**Status:** kandidat konservatif.
 
----
+### Skenario B — Juz 30 sebagai Corpus Inti
 
-## 7. Problematika Utama yang Sudah Teridentifikasi
+**Target:** peserta menyelesaikan corpus hafalan **Juz 30** sepanjang QURBATA Jilid 1–8.
 
-### 7.1 Pemetaan ayat terhadap 8 jilid
+Karakter:
+- target akhir mudah dipahami sekolah, guru, orang tua, dan peserta;
+- cukup besar untuk menjadi capaian nyata QURBATA;
+- tersedia ±320 slot sehingga beban dapat dibuat sangat bertahap;
+- memungkinkan ayat panjang dibagi tanpa mengejar target secara agresif;
+- masih menyediakan ruang untuk konsolidasi dan evaluasi.
 
-Harus ditentukan:
+**Status:** **REKOMENDASI BASELINE untuk diuji.**
 
-- surat apa yang masuk;
-- urutan surat;
-- urutan ayat;
-- berapa ayat atau bagian ayat per pertemuan;
-- target akhir hafalan setelah peserta menyelesaikan Jilid 8.
+Catatan: rekomendasi ini belum berarti setiap halaman langsung mendapat target final. Distribusi harus diuji terhadap panjang ayat dan struktur halaman QURBATA.
 
-### 7.2 Menjaga hafalan pada kelas besar
+### Skenario C — Juz 30 + Corpus Pilihan
 
-Kendala utama implementasi di sekolah adalah jumlah siswa dapat sangat banyak sementara waktu pembelajaran terbatas. Pemeriksaan hafalan satu per satu oleh guru pada setiap pertemuan berpotensi menghabiskan waktu pembelajaran.
+**Target:** Juz 30 ditambah surat/ayat pilihan yang sangat relevan untuk ibadah dan pendidikan.
 
-Masalah ini akan dibuat sebagai **sub-sistem Retensi & Validasi Hafalan**, tetapi belum menjadi fokus pengerjaan tahap pertama.
+Kandidat tambahan baru boleh dipilih setelah kapasitas nyata Juz 30 dihitung. Contoh kategori, bukan keputusan final:
+- ayat/surat yang sering dibaca dalam praktik ibadah;
+- ayat perlindungan/doa;
+- ayat inti akidah/adab;
+- surat pilihan yang menjadi jembatan menuju program tahfidz 30 juz.
 
-### 7.3 Tahfidz lanjutan 30 juz
+Karakter:
+- memanfaatkan kapasitas QURBATA lebih maksimal;
+- hasil lulusan lebih kaya;
+- tetapi berisiko mengurangi ruang retensi jika corpus terlalu besar.
 
-Program tahfidz 30 juz merupakan kelanjutan setelah QURBATA dan akan dibuat sebagai sistem tersendiri yang dapat menggunakan hasil kompetensi QURBATA sebagai baseline.
-
----
-
-## 8. Tahapan Pengembangan
-
-### Fase T1 — Corpus Hafalan QURBATA
-Menentukan target akhir dan daftar surat/ayat yang realistis untuk Jilid 1–8.
-
-### Fase T2 — Distribusi Jilid
-Membagi corpus ke Jilid 1 sampai Jilid 8.
-
-### Fase T3 — Distribusi Halaman
-Menetapkan target hafalan pada setiap halaman/pertemuan.
-
-### Fase T4 — Sinkronisasi Tartil
-Audit agar target hafalan sesuai dengan perkembangan kompetensi bacaan QURBATA.
-
-### Fase T5 — Sistem Murojaah
-Membangun algoritme/lapisan pengulangan dan penjagaan hafalan.
-
-### Fase T6 — Validasi Kelas Besar
-Membangun sistem efisien agar guru tidak harus mengecek seluruh siswa satu per satu pada setiap pertemuan.
-
-### Fase T7 — Integrasi Buku & RIQA OS
-Memasukkan target tahfidz ke halaman produksi QURBATA serta menyiapkan struktur data digital bila diperlukan.
+**Status:** kandidat ekspansi setelah simulasi Skenario B.
 
 ---
 
-## 9. Keputusan Baseline v0.1
+## 7. Rekomendasi Kerja v0.2
 
-Keputusan yang sudah dapat dijadikan pegangan kerja:
+Untuk pemetaan teknis berikutnya, digunakan hipotesis kerja:
 
-1. Tahfidz QURBATA Jilid 1–8 dibuat sebagai sistem khusus.
-2. Setiap halaman/pertemuan QURBATA akan mempunyai target hafalan.
-3. Target berupa surat + nomor ayat, dan bila perlu bagian ayat.
-4. Panjang target bersifat adaptif terhadap panjang dan tingkat kesulitan ayat.
-5. Hafalan baru dan murojaah dipisahkan.
-6. Pemetaan surat/ayat dikerjakan sebelum desain sistem pengecekan kelas besar.
-7. Program 30 juz berada di luar scope tahap pertama.
-8. Dokumen ini bersifat hidup dan akan diperbarui setiap keputusan baru sampai siap dibekukan/frozen.
+> **Juz 30 menjadi corpus inti yang diuji untuk Tahfidz QURBATA Jilid 1–8.**
+
+Alasan utama bukan mengejar jumlah juz, tetapi karena corpus ini dapat dibentangkan dalam ±320 slot secara bertahap sambil memberi ruang besar untuk pembagian ayat panjang dan penjagaan kualitas.
+
+Keputusan ini masih **WORKING HYPOTHESIS**, belum FROZEN.
 
 ---
 
-## 10. Keputusan yang Belum Ditentukan
+## 8. Prinsip Urutan Hafalan
 
-- total hafalan akhir setelah Jilid 8;
-- jumlah surat yang masuk;
-- urutan surat;
-- titik awal dan titik akhir corpus;
-- alokasi target per jilid;
-- alokasi target per halaman;
-- rumus bobot ayat;
-- sistem murojaah;
-- sistem validasi hafalan kelas besar;
-- standar kelulusan tahfidz QURBATA.
+Urutan tidak akan ditetapkan hanya berdasarkan urutan nomor surat. Pemetaan akan menggunakan prinsip:
 
-Semua poin di atas berstatus **OPEN / TO BE MAPPED**.
+1. mulai dari unit yang paling pendek dan mudah ditirukan;
+2. mengutamakan surat yang fungsional dalam ibadah peserta;
+3. meningkatkan panjang target secara gradual;
+4. menghindari lonjakan beban antarhalaman;
+5. mempertimbangkan kompetensi tartil yang sudah dipelajari;
+6. mempertahankan kesinambungan satu surat sebisa mungkin;
+7. memotong ayat panjang hanya pada batas lafaz/makna yang layak;
+8. tidak menggunakan target hafalan untuk memaksa peserta membaca pola yang jauh melampaui kompetensi tartilnya tanpa dukungan talqin.
 
 ---
 
-## 11. Langkah Kerja Berikutnya
+## 9. Model Gradasi Jilid yang Akan Diuji
 
-Pekerjaan berikutnya adalah membuat **Peta Corpus Tahfidz QURBATA Jilid 1–8** dengan beberapa skenario target akhir yang realistis. Setelah target akhir dipilih, seluruh surat dan ayat akan didistribusikan ke halaman QURBATA secara bertahap.
+### Jilid 1 — Entry / Talqin Dominan
+Target sangat pendek. Fokus membangun kebiasaan mendengar, meniru, dan mengulang.
+
+### Jilid 2 — Hafalan Pendek Stabil
+Surat/ayat pendek dengan peningkatan kecil pada panjang unit.
+
+### Jilid 3 — Transisi
+Peserta mulai lebih banyak menghubungkan hafalan dengan kemampuan membaca yang berkembang.
+
+### Jilid 4 — Menengah Awal
+Unit hafalan bertambah dan mulai menerima ayat sedang.
+
+### Jilid 5 — Menengah
+Ayat sedang dan surat dengan struktur lebih panjang.
+
+### Jilid 6 — Menengah Lanjut
+Beban dapat meningkat, tetapi tetap adaptif terhadap panjang ayat.
+
+### Jilid 7 — Lanjut
+Masuk bagian Juz 30 yang relatif lebih panjang/kompleks.
+
+### Jilid 8 — Penyelesaian Corpus
+Menyelesaikan corpus inti sekaligus memperkuat kesiapan menuju tahfidz lanjutan.
+
+Pembagian surat per jilid **belum dibekukan** sampai simulasi kuantitatif selesai.
+
+---
+
+## 10. Sistem Bobot Ayat — Draft
+
+Agar distribusi tidak subjektif, setiap target nantinya akan diberi bobot berdasarkan:
+
+- **L** = panjang/jumlah kata;
+- **R** = kompleksitas lafaz dan repetisi;
+- **T** = kompleksitas tartil/tajwid relatif terhadap level;
+- **M** = kemudahan pemotongan pada batas makna;
+- **F** = familiaritas/fungsi dalam praktik peserta.
+
+Bobot ini tidak dimaksudkan untuk menilai kemuliaan ayat, melainkan hanya **beban pedagogis unit hafalan**.
+
+Kategori keluaran sementara:
+
+`Sangat Ringan → Ringan → Sedang → Berat → Sangat Berat`
+
+Ayat kategori berat dapat memperoleh beberapa slot.
+
+---
+
+## 11. Hafalan Baru vs Murojaah
+
+### Hafalan Baru
+Target surat/ayat/bagian ayat yang diperkenalkan pada halaman tersebut.
+
+### Murojaah
+Target sebelumnya yang harus dipertahankan melalui sistem retensi tersendiri.
+
+Peta 320 slot tidak boleh dianggap seluruhnya sebagai penambahan materi tanpa mempertimbangkan konsolidasi.
+
+---
+
+## 12. Problematika Kelas Besar
+
+Kendala implementasi utama adalah banyaknya siswa dan terbatasnya waktu tatap muka. Pemeriksaan satu per satu pada setiap pertemuan tidak skalabel.
+
+Masalah ini dicatat sebagai subsistem:
+
+**QURBATA Tahfidz Retention & Validation System (QTRVS)**
+
+Tujuannya nanti adalah memastikan hafalan terjaga tanpa menjadikan guru sebagai satu-satunya titik pemeriksaan setiap siswa pada setiap pertemuan.
+
+**Belum dikerjakan pada fase corpus.**
+
+---
+
+## 13. Tahapan Pengembangan
+
+- **T1A — Target Scenario:** DONE v0.2; tiga skenario dibuat, Juz 30 dipilih sebagai hipotesis kerja.
+- **T1B — Corpus Inventory:** NEXT; inventaris seluruh surat/ayat Juz 30 beserta panjang dan bobot.
+- **T1C — Pedagogical Sequence:** menentukan urutan hafalan.
+- **T2 — Distribution by Volume:** membagi corpus ke Jilid 1–8.
+- **T3 — Distribution by Page:** menetapkan J1-P001 sampai J8-P040.
+- **T4 — Tartil Alignment Audit:** sinkronisasi dengan kompetensi tartil tiap jilid.
+- **T5 — Retention/Murojaah System.**
+- **T6 — Large-Class Validation System.**
+- **T7 — Book + RIQA OS Integration.**
+
+---
+
+## 14. Decision Register
+
+| ID | Keputusan | Status |
+|---|---|---|
+| QTS-D001 | Tahfidz QURBATA J1–J8 dibuat sebagai sistem khusus | ACTIVE |
+| QTS-D002 | Setiap halaman mempunyai target tahfidz | ACTIVE |
+| QTS-D003 | Target adaptif; tidak memakai aturan 1 ayat = 1 halaman | ACTIVE |
+| QTS-D004 | Hafalan baru dipisahkan dari murojaah | ACTIVE |
+| QTS-D005 | Program 30 juz berada di luar scope awal | ACTIVE |
+| QTS-D006 | ±320 slot digunakan sebagai baseline kapasitas | WORKING |
+| QTS-D007 | Juz 30 menjadi corpus inti untuk simulasi pertama | WORKING — NOT FROZEN |
+| QTS-D008 | Urutan hafalan bersifat pedagogis, bukan mekanis | ACTIVE |
+
+---
+
+## 15. Pekerjaan Berikutnya
+
+Langkah berikutnya **bukan menebak pembagian surat per jilid**. Sistem harus terlebih dahulu membuat inventaris Juz 30 pada level ayat, menghitung beban relatif, kemudian mensimulasikan distribusi terhadap ±320 slot.
+
+Output T1B yang diperlukan:
+
+`Surat | Ayat | Jumlah Kata | Beban Relatif | Kandidat Unit | Catatan Pemotongan | Level Tartil Minimum`
+
+Setelah itu baru dapat ditentukan dengan dasar yang lebih kuat:
+
+`J1-P001 → ... → J8-P040`
 
 ---
 
 **Document ID:** `QTS-BASELINE-001`  
-**Version:** `0.1`  
+**Version:** `0.2`  
 **State:** `ACTIVE WORKING DOCUMENT`
