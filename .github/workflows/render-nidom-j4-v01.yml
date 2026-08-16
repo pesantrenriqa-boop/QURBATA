@@ -22,12 +22,19 @@ jobs:
         run: |
           npm install --no-save playwright pdf-lib
           npx playwright install --with-deps chromium
-      - name: Prepare Uthman Taha font
+          sudo apt-get update
+          sudo apt-get install -y mupdf-tools
+      - name: Prepare Uthman Taha font from frozen J3 master
         run: |
-          mkdir -p .build-fonts
-          FONT=$(find . -type f \( -iname '*uthman*taha*.woff2' -o -iname '*uthman*taha*.ttf' -o -iname '*kfgqpc*.woff2' -o -iname '*kfgqpc*.ttf' \) | head -n 1)
+          mkdir -p .build-fonts .font-extract
+          curl -L --fail --retry 3 'https://drive.usercontent.google.com/download?id=10W0qcSspllE_Gule-0g7bPC7dWht6HW-&export=download&confirm=t' -o .font-extract/j3-master.pdf
+          cd .font-extract
+          mutool extract j3-master.pdf
+          FONT=$(find . -type f \( -iname '*.ttf' -o -iname '*.otf' \) | while read f; do fc-scan --format '%{family}\n' "$f" 2>/dev/null | grep -qi 'KFGQPCUthmanTahaNaskh\|Uthman Taha' && { echo "$f"; break; }; done)
           test -n "$FONT"
-          cp "$FONT" .build-fonts/UthmanTaha.woff2
+          cp "$FONT" ../.build-fonts/UthmanTaha.ttf
+          cd ..
+          test -s .build-fonts/UthmanTaha.ttf
       - name: Render P001-P040 and master
         run: node tools/render_nidom_j4_v01.js
       - name: Production gates
