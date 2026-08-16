@@ -31,7 +31,9 @@ jobs:
         run: node tools/render_nidom_j4_v01.js
       - name: Production gates
         run: |
-          test $(find dist/nidom-akhlak/j4-v01 -maxdepth 1 -name 'QURBATA-NIDOM-J4-P*.pdf' | wc -l) -eq 40
+          COUNT=$(find dist/nidom-akhlak/j4-v01 -maxdepth 1 -type f -regextype posix-extended -regex '.*/QURBATA-NIDOM-J4-P[0-9]{3}-v0\.1\.pdf' | wc -l)
+          echo "INDIVIDUAL_PAGE_COUNT=$COUNT"
+          test "$COUNT" -eq 40
           test -f dist/nidom-akhlak/j4-v01/QURBATA-NIDOM-J4-P001-P040-PRINT-MASTER-v0.1.pdf
       - uses: actions/upload-artifact@v4
         with:
