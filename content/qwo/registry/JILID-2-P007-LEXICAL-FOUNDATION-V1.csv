@@ -1,32 +1,32 @@
 slot,word,meaning_id,function,competency_status,lexical_status
-1,عَبَعَ,latihan ع awal akhir,FORM,ALLOWED,FORM_DRILL
-2,بَعَبَ,latihan ع tengah,FORM,ALLOWED,FORM_DRILL
-3,عَحَعَ,latihan ع awal akhir,FORM,ALLOWED,FORM_DRILL
-4,حَعَحَ,latihan ع tengah,FORM,ALLOWED,FORM_DRILL
-5,عَسَعَ,latihan ع awal akhir,FORM,ALLOWED,FORM_DRILL
-6,سَعَسَ,latihan ع tengah,FORM,ALLOWED,FORM_DRILL
-7,عَصَعَ,latihan ع awal akhir,FORM,ALLOWED,FORM_DRILL
-8,صَعَصَ,latihan ع tengah,FORM,ALLOWED,FORM_DRILL
-9,عَطَعَ,latihan ع awal akhir,FORM,ALLOWED,FORM_DRILL
-10,طَعَطَ,latihan ع tengah,FORM,ALLOWED,FORM_DRILL
-11,عَجَعَ,latihan ع awal akhir,FORM,ALLOWED,FORM_DRILL
-12,جَعَجَ,latihan ع tengah,FORM,ALLOWED,FORM_DRILL
-13,عَخَعَ,latihan ع awal akhir,FORM,ALLOWED,FORM_DRILL
-14,خَعَخَ,latihan ع tengah,FORM,ALLOWED,FORM_DRILL
-15,غَبَغَ,latihan غ awal akhir,FORM,ALLOWED,FORM_DRILL
-16,بَغَبَ,latihan غ tengah,FORM,ALLOWED,FORM_DRILL
-17,غَحَغَ,latihan غ awal akhir,FORM,ALLOWED,FORM_DRILL
-18,حَغَحَ,latihan غ tengah,FORM,ALLOWED,FORM_DRILL
-19,غَسَغَ,latihan غ awal akhir,FORM,ALLOWED,FORM_DRILL
-20,سَغَسَ,latihan غ tengah,FORM,ALLOWED,FORM_DRILL
-21,غَصَغَ,latihan غ awal akhir,FORM,ALLOWED,FORM_DRILL
-22,صَغَصَ,latihan غ tengah,FORM,ALLOWED,FORM_DRILL
-23,غَطَغَ,latihan غ awal akhir,FORM,ALLOWED,FORM_DRILL
-24,طَغَطَ,latihan غ tengah,FORM,ALLOWED,FORM_DRILL
-25,غَجَغَ,latihan غ awal akhir,FORM,ALLOWED,FORM_DRILL
-26,جَغَجَ,latihan غ tengah,FORM,ALLOWED,FORM_DRILL
-27,غَخَغَ,latihan غ awal akhir,FORM,ALLOWED,FORM_DRILL
-28,خَغَخَ,latihan غ tengah,FORM,ALLOWED,FORM_DRILL
+1,عَبَرَ,menyeberang ع awal,ACQUISITION,ALLOWED,MEANINGFUL
+2,عَبَثَ,bermain main ع awal,ACQUISITION,ALLOWED,MEANINGFUL
+3,عَجِبَ,merasa kagum ع awal,ACQUISITION,ALLOWED,MEANINGFUL
+4,عَطِشَ,merasa haus ع awal,ACQUISITION,ALLOWED,MEANINGFUL
+5,عَرَضَ,menampilkan ع awal,ACQUISITION,ALLOWED,MEANINGFUL
+6,عَبَرَ,menyeberang ع awal,ACQUISITION,ALLOWED,MEANINGFUL
+7,عَبَثَ,bermain main ع awal,ACQUISITION,ALLOWED,MEANINGFUL
+8,عَجِبَ,merasa kagum ع awal,ACQUISITION,ALLOWED,MEANINGFUL
+9,عَطِشَ,merasa haus ع awal,ACQUISITION,ALLOWED,MEANINGFUL
+10,عَرَضَ,menampilkan ع awal,ACQUISITION,ALLOWED,MEANINGFUL
+11,عَبَرَ,menyeberang ع awal,ACQUISITION,ALLOWED,MEANINGFUL
+12,عَبَثَ,bermain main ع awal,ACQUISITION,ALLOWED,MEANINGFUL
+13,عَجِبَ,merasa kagum ع awal,ACQUISITION,ALLOWED,MEANINGFUL
+14,عَطِشَ,merasa haus ع awal,ACQUISITION,ALLOWED,MEANINGFUL
+15,غَرَبَ,terbenam atau pergi ke barat غ awal,ACQUISITION,ALLOWED,MEANINGFUL
+16,غَضِبَ,marah غ awal,ACQUISITION,ALLOWED,MEANINGFUL
+17,غَبَرَ,berlalu atau berdebu غ awal,ACQUISITION,ALLOWED,MEANINGFUL
+18,غَرَبَ,terbenam atau pergi ke barat غ awal,ACQUISITION,ALLOWED,MEANINGFUL
+19,غَضِبَ,marah غ awal,ACQUISITION,ALLOWED,MEANINGFUL
+20,غَبَرَ,berlalu atau berdebu غ awal,ACQUISITION,ALLOWED,MEANINGFUL
+21,غَرَبَ,terbenam atau pergi ke barat غ awal,ACQUISITION,ALLOWED,MEANINGFUL
+22,غَضِبَ,marah غ awal,ACQUISITION,ALLOWED,MEANINGFUL
+23,غَبَرَ,berlalu atau berdebu غ awal,ACQUISITION,ALLOWED,MEANINGFUL
+24,غَرَبَ,terbenam atau pergi ke barat غ awal,ACQUISITION,ALLOWED,MEANINGFUL
+25,غَضِبَ,marah غ awal,ACQUISITION,ALLOWED,MEANINGFUL
+26,غَبَرَ,berlalu atau berdebu غ awal,ACQUISITION,ALLOWED,MEANINGFUL
+27,غَرَبَ,terbenam atau pergi ke barat غ awal,ACQUISITION,ALLOWED,MEANINGFUL
+28,غَضِبَ,marah غ awal,ACQUISITION,ALLOWED,MEANINGFUL
 29,عَبَرَ,contoh nyata ع,MUROJAAH,ALLOWED,CURATED
 30,غَرَبَ,contoh nyata غ,MUROJAAH,ALLOWED,CURATED
 31,طَرَبَ,murojaah,MUROJAAH,ALLOWED,CURATED
