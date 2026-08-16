@@ -1,0 +1,41 @@
+name: Render NIDOM Jilid 4 v0.1
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - content/qurbata-jilid-1-8-production
+    paths:
+      - 'tools/render_nidom_j4_v01.js'
+      - '.github/workflows/render-nidom-j4-v01.yml'
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install renderer dependencies
+        run: |
+          npm install --no-save playwright pdf-lib
+          npx playwright install --with-deps chromium
+      - name: Prepare Uthman Taha font
+        run: |
+          mkdir -p .build-fonts
+          FONT=$(find . -type f \( -iname '*uthman*taha*.woff2' -o -iname '*uthman*taha*.ttf' -o -iname '*kfgqpc*.woff2' -o -iname '*kfgqpc*.ttf' \) | head -n 1)
+          test -n "$FONT"
+          cp "$FONT" .build-fonts/UthmanTaha.woff2
+      - name: Render P001-P040 and master
+        run: node tools/render_nidom_j4_v01.js
+      - name: Production gates
+        run: |
+          test $(find dist/nidom-akhlak/j4-v01 -maxdepth 1 -name 'QURBATA-NIDOM-J4-P*.pdf' | wc -l) -eq 40
+          test -f dist/nidom-akhlak/j4-v01/QURBATA-NIDOM-J4-P001-P040-PRINT-MASTER-v0.1.pdf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-NIDOM-J4-v0.1-P001-P040
+          path: dist/nidom-akhlak/j4-v01/*.pdf
+          if-no-files-found: error
