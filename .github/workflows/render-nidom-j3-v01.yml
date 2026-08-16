@@ -5,6 +5,7 @@ on:
     branches: [content/qurbata-jilid-1-8-production]
     paths:
       - 'tools/render_nidom_j3_v01.js'
+      - 'tools/patch_nidom_j3_restore_logo_v02.js'
       - '.github/workflows/render-nidom-j3-v01.yml'
 jobs:
   render:
@@ -22,6 +23,8 @@ jobs:
         run: |
           mkdir -p .build-fonts
           curl -fL --retry 3 'https://raw.githubusercontent.com/quranwbw/qpc-fonts/master/various-woff2/UthmanTN1%20Ver10.woff2' -o .build-fonts/UthmanTaha.woff2
+      - name: Restore J2 visual header baseline and logo
+        run: node tools/patch_nidom_j3_restore_logo_v02.js
       - name: Render 40 pages
         run: node tools/render_nidom_j3_v01.js
       - name: Verify
@@ -31,6 +34,6 @@ jobs:
           test "$COUNT" -eq 40
       - uses: actions/upload-artifact@v4
         with:
-          name: QURBATA-NIDOM-J3-v0.1-P001-P040
+          name: QURBATA-NIDOM-J3-v0.2-LOGO-BASELINE-P001-P040
           path: dist/nidom-akhlak/j3-v01/*.pdf
           if-no-files-found: error
