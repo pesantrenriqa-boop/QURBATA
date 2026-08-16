@@ -1,32 +1,32 @@
 slot,word,meaning_id,function,competency_status,lexical_status
-1,كَتِكَ,latihan ك awal akhir fathah kasrah,FORM,ALLOWED,FORM_DRILL
-2,بِكُبَ,latihan ك tengah kasrah dhammah,FORM,ALLOWED,FORM_DRILL
-3,كُحَكِ,latihan ك awal akhir dhammah kasrah,FORM,ALLOWED,FORM_DRILL
-4,حَكِحُ,latihan ك tengah fathah kasrah dhammah,FORM,ALLOWED,FORM_DRILL
-5,كِسُكِ,latihan ك awal akhir kasrah dhammah,FORM,ALLOWED,FORM_DRILL
-6,سُكِسَ,latihan ك tengah dhammah kasrah,FORM,ALLOWED,FORM_DRILL
-7,كَصُكِ,latihan ك awal akhir fathah dhammah kasrah,FORM,ALLOWED,FORM_DRILL
-8,صِكُصَ,latihan ك tengah kasrah dhammah,FORM,ALLOWED,FORM_DRILL
-9,كُطِكَ,latihan ك awal akhir dhammah kasrah,FORM,ALLOWED,FORM_DRILL
-10,طَكُطِ,latihan ك tengah fathah dhammah kasrah,FORM,ALLOWED,FORM_DRILL
-11,كِعَكُ,latihan ك awal akhir kasrah fathah dhammah,FORM,ALLOWED,FORM_DRILL
-12,عُكِعَ,latihan ك tengah dhammah kasrah,FORM,ALLOWED,FORM_DRILL
-13,كَغُكِ,latihan ك awal akhir fathah dhammah kasrah,FORM,ALLOWED,FORM_DRILL
-14,غِكُغَ,latihan ك tengah kasrah dhammah,FORM,ALLOWED,FORM_DRILL
-15,لَبِلُ,latihan ل awal akhir fathah kasrah dhammah,FORM,ALLOWED,FORM_DRILL
-16,بُلِبَ,latihan ل tengah dhammah kasrah,FORM,ALLOWED,FORM_DRILL
-17,لُحَلِ,latihan ل awal akhir dhammah kasrah,FORM,ALLOWED,FORM_DRILL
-18,حِلُحَ,latihan ل tengah kasrah dhammah,FORM,ALLOWED,FORM_DRILL
-19,لِسُلَ,latihan ل awal akhir kasrah dhammah,FORM,ALLOWED,FORM_DRILL
-20,سَلِسُ,latihan ل tengah fathah kasrah dhammah,FORM,ALLOWED,FORM_DRILL
-21,لَصُلِ,latihan ل awal akhir fathah dhammah kasrah,FORM,ALLOWED,FORM_DRILL
-22,صِلُصَ,latihan ل tengah kasrah dhammah,FORM,ALLOWED,FORM_DRILL
-23,لُطِلَ,latihan ل awal akhir dhammah kasrah,FORM,ALLOWED,FORM_DRILL
-24,طَلُطِ,latihan ل tengah fathah dhammah kasrah,FORM,ALLOWED,FORM_DRILL
-25,لِعَلُ,latihan ل awal akhir kasrah fathah dhammah,FORM,ALLOWED,FORM_DRILL
-26,عُلِعَ,latihan ل tengah dhammah kasrah,FORM,ALLOWED,FORM_DRILL
-27,لَغُلِ,latihan ل awal akhir fathah dhammah kasrah,FORM,ALLOWED,FORM_DRILL
-28,غِلُغَ,latihan ل tengah kasrah dhammah,FORM,ALLOWED,FORM_DRILL
+1,كَتَبَ,menulis ك awal,ACQUISITION,ALLOWED,MEANINGFUL
+2,كُتِبَ,ditulis ك awal variasi harakat,ACQUISITION,ALLOWED,MEANINGFUL
+3,كَبُرَ,menjadi besar ك awal,ACQUISITION,ALLOWED,MEANINGFUL
+4,كَثُرَ,menjadi banyak ك awal,ACQUISITION,ALLOWED,MEANINGFUL
+5,كَسَبَ,memperoleh ك awal,ACQUISITION,ALLOWED,MEANINGFUL
+6,كَشَفَ,membuka atau menyingkap ك awal,ACQUISITION,ALLOWED,MEANINGFUL
+7,كَفَرَ,mengingkari ك awal,ACQUISITION,ALLOWED,MEANINGFUL
+8,كَفَلَ,menanggung ك awal ل akhir,ACQUISITION,ALLOWED,MEANINGFUL
+9,كَتَبَ,menulis ك awal,ACQUISITION,ALLOWED,MEANINGFUL
+10,كُتِبَ,ditulis ك awal variasi harakat,ACQUISITION,ALLOWED,MEANINGFUL
+11,كَبُرَ,menjadi besar ك awal,ACQUISITION,ALLOWED,MEANINGFUL
+12,كَثُرَ,menjadi banyak ك awal,ACQUISITION,ALLOWED,MEANINGFUL
+13,كَسَبَ,memperoleh ك awal,ACQUISITION,ALLOWED,MEANINGFUL
+14,كَشَفَ,membuka atau menyingkap ك awal,ACQUISITION,ALLOWED,MEANINGFUL
+15,لَبِثَ,tinggal atau menetap ل awal,ACQUISITION,ALLOWED,MEANINGFUL
+16,لَبِسَ,memakai ل awal,ACQUISITION,ALLOWED,MEANINGFUL
+17,لَحِقَ,menyusul ل awal,ACQUISITION,ALLOWED,MEANINGFUL
+18,لَطُفَ,menjadi lembut ل awal,ACQUISITION,ALLOWED,MEANINGFUL
+19,لَعِبَ,bermain ل awal,ACQUISITION,ALLOWED,MEANINGFUL
+20,كَفَلَ,menanggung ل akhir,ACQUISITION,ALLOWED,MEANINGFUL
+21,لَبِثَ,tinggal atau menetap ل awal,ACQUISITION,ALLOWED,MEANINGFUL
+22,لَبِسَ,memakai ل awal,ACQUISITION,ALLOWED,MEANINGFUL
+23,لَحِقَ,menyusul ل awal,ACQUISITION,ALLOWED,MEANINGFUL
+24,لَطُفَ,menjadi lembut ل awal,ACQUISITION,ALLOWED,MEANINGFUL
+25,لَعِبَ,bermain ل awal,ACQUISITION,ALLOWED,MEANINGFUL
+26,كَفَلَ,menanggung ل akhir,ACQUISITION,ALLOWED,MEANINGFUL
+27,لَبِثَ,tinggal atau menetap ل awal,ACQUISITION,ALLOWED,MEANINGFUL
+28,لَعِبَ,bermain ل awal,ACQUISITION,ALLOWED,MEANINGFUL
 29,كُتِبَ,contoh nyata ك dengan tiga harakat,MUROJAAH,ALLOWED,CURATED
 30,لَبِثَ,contoh nyata ل dengan variasi harakat,MUROJAAH,ALLOWED,CURATED
 31,عَبَرَ,murojaah,MUROJAAH,ALLOWED,CURATED
