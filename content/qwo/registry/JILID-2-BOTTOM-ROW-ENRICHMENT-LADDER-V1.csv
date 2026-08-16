@@ -1,10 +1,10 @@
 StepCode,Category,Label,Content,Policy
 E02,ARABIC_NUMERALS,ANGKA ARAB,٠ ١ ٢ ٣ ٤ ٥ ٦ ٧ ٨ ٩,recognition_then_review
 E06,NON_JOINERS,PEMUTUS SAMBUNGAN,ا د ذ ر ز و,recognition_then_review
-E03,AWAILUSSuwar_1,AWĀ’ILUS-SUWAR 1,الم | الر | المر,visual_recognition_not_core_competency
-E04,AWAILUSSuwar_2,AWĀ’ILUS-SUWAR 2,حم | حم عسق,visual_recognition_not_core_competency
-E05,AWAILUSSuwar_3,AWĀ’ILUS-SUWAR 3,طه | طسم | طس,visual_recognition_not_core_competency
-E07,AWAILUSSuwar_4,AWĀ’ILUS-SUWAR 4,يس | ص | ق | ن,visual_recognition_not_core_competency
+E03,AWAILUSSuwar_1,AWĀ’ILUS-SUWAR 1,الم | الر | المر | الم | الر | المر | الم | الر | المر,visual_recognition_repeated_full_row
+E04,AWAILUSSuwar_2,AWĀ’ILUS-SUWAR 2,حم | حم عسق | حم | حم عسق | حم | حم عسق | حم,visual_recognition_repeated_full_row
+E05,AWAILUSSuwar_3,AWĀ’ILUS-SUWAR 3,طه | طسم | طس | طه | طسم | طس | طه,visual_recognition_repeated_full_row
+E07,AWAILUSSuwar_4,AWĀ’ILUS-SUWAR 4,يس | ص | ق | ن | يس | ص | ق | ن,visual_recognition_repeated_full_row
 E08,WAQF_SIGNS_1,TANDA WAQAF DASAR,م | لا | ج,visual_recognition_preview
 E09,WAQF_SIGNS_2,TANDA WAQAF LANJUT,قلى | صلى,visual_recognition_preview
 E10,MUSHAF_SYMBOLS,SIMBOL MUSHAF,۞ | ۩,visual_recognition_preview
