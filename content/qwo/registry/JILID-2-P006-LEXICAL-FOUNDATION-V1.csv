@@ -1,32 +1,32 @@
 slot,word,meaning_id,function,competency_status,lexical_status
-1,طَبَطَ,latihan ط awal akhir,FORM,ALLOWED,FORM_DRILL
-2,بَطَبَ,latihan ط tengah,FORM,ALLOWED,FORM_DRILL
-3,طَحَطَ,latihan ط awal akhir,FORM,ALLOWED,FORM_DRILL
-4,حَطَحَ,latihan ط tengah,FORM,ALLOWED,FORM_DRILL
-5,طَسَطَ,latihan ط awal akhir,FORM,ALLOWED,FORM_DRILL
-6,سَطَسَ,latihan ط tengah,FORM,ALLOWED,FORM_DRILL
-7,طَصَطَ,latihan ط awal akhir,FORM,ALLOWED,FORM_DRILL
-8,صَطَصَ,latihan ط tengah,FORM,ALLOWED,FORM_DRILL
-9,طَضَطَ,latihan ط awal akhir,FORM,ALLOWED,FORM_DRILL
-10,ضَطَضَ,latihan ط tengah,FORM,ALLOWED,FORM_DRILL
-11,طَجَطَ,latihan ط awal akhir,FORM,ALLOWED,FORM_DRILL
-12,جَطَجَ,latihan ط tengah,FORM,ALLOWED,FORM_DRILL
-13,طَخَطَ,latihan ط awal akhir,FORM,ALLOWED,FORM_DRILL
-14,خَطَخَ,latihan ط tengah,FORM,ALLOWED,FORM_DRILL
-15,ظَبَظَ,latihan ظ awal akhir,FORM,ALLOWED,FORM_DRILL
-16,بَظَبَ,latihan ظ tengah,FORM,ALLOWED,FORM_DRILL
-17,ظَحَظَ,latihan ظ awal akhir,FORM,ALLOWED,FORM_DRILL
-18,حَظَحَ,latihan ظ tengah,FORM,ALLOWED,FORM_DRILL
-19,ظَسَظَ,latihan ظ awal akhir,FORM,ALLOWED,FORM_DRILL
-20,سَظَسَ,latihan ظ tengah,FORM,ALLOWED,FORM_DRILL
-21,ظَصَظَ,latihan ظ awal akhir,FORM,ALLOWED,FORM_DRILL
-22,صَظَصَ,latihan ظ tengah,FORM,ALLOWED,FORM_DRILL
-23,ظَضَظَ,latihan ظ awal akhir,FORM,ALLOWED,FORM_DRILL
-24,ضَظَضَ,latihan ظ tengah,FORM,ALLOWED,FORM_DRILL
-25,ظَجَظَ,latihan ظ awal akhir,FORM,ALLOWED,FORM_DRILL
-26,جَظَجَ,latihan ظ tengah,FORM,ALLOWED,FORM_DRILL
-27,ظَخَظَ,latihan ظ awal akhir,FORM,ALLOWED,FORM_DRILL
-28,خَظَخَ,latihan ظ tengah,FORM,ALLOWED,FORM_DRILL
+1,طَبَخَ,memasak ط awal,ACQUISITION,ALLOWED,MEANINGFUL
+2,طَرَحَ,meletakkan atau melempar ط awal,ACQUISITION,ALLOWED,MEANINGFUL
+3,طَرَبَ,bergembira ط awal,ACQUISITION,ALLOWED,MEANINGFUL
+4,طَبَخَ,memasak ط awal,ACQUISITION,ALLOWED,MEANINGFUL
+5,طَرَحَ,meletakkan atau melempar ط awal,ACQUISITION,ALLOWED,MEANINGFUL
+6,طَرَبَ,bergembira ط awal,ACQUISITION,ALLOWED,MEANINGFUL
+7,طَبَخَ,memasak ط awal,ACQUISITION,ALLOWED,MEANINGFUL
+8,طَرَحَ,meletakkan atau melempar ط awal,ACQUISITION,ALLOWED,MEANINGFUL
+9,طَرَبَ,bergembira ط awal,ACQUISITION,ALLOWED,MEANINGFUL
+10,طَبَخَ,memasak ط awal,ACQUISITION,ALLOWED,MEANINGFUL
+11,طَرَحَ,meletakkan atau melempar ط awal,ACQUISITION,ALLOWED,MEANINGFUL
+12,طَرَبَ,bergembira ط awal,ACQUISITION,ALLOWED,MEANINGFUL
+13,طَبَخَ,memasak ط awal,ACQUISITION,ALLOWED,MEANINGFUL
+14,طَرَحَ,meletakkan atau melempar ط awal,ACQUISITION,ALLOWED,MEANINGFUL
+15,حَظَرَ,melarang ظ tengah,ACQUISITION,ALLOWED,MEANINGFUL
+16,حَظَرَ,melarang ظ tengah,ACQUISITION,ALLOWED,MEANINGFUL
+17,حَظَرَ,melarang ظ tengah,ACQUISITION,ALLOWED,MEANINGFUL
+18,حَظَرَ,melarang ظ tengah,ACQUISITION,ALLOWED,MEANINGFUL
+19,حَظَرَ,melarang ظ tengah,ACQUISITION,ALLOWED,MEANINGFUL
+20,حَظَرَ,melarang ظ tengah,ACQUISITION,ALLOWED,MEANINGFUL
+21,حَظَرَ,melarang ظ tengah,ACQUISITION,ALLOWED,MEANINGFUL
+22,حَظَرَ,melarang ظ tengah,ACQUISITION,ALLOWED,MEANINGFUL
+23,حَظَرَ,melarang ظ tengah,ACQUISITION,ALLOWED,MEANINGFUL
+24,حَظَرَ,melarang ظ tengah,ACQUISITION,ALLOWED,MEANINGFUL
+25,حَظَرَ,melarang ظ tengah,ACQUISITION,ALLOWED,MEANINGFUL
+26,حَظَرَ,melarang ظ tengah,ACQUISITION,ALLOWED,MEANINGFUL
+27,حَظَرَ,melarang ظ tengah,ACQUISITION,ALLOWED,MEANINGFUL
+28,حَظَرَ,melarang ظ tengah,ACQUISITION,ALLOWED,MEANINGFUL
 29,طَرَبَ,contoh nyata ط,MUROJAAH,ALLOWED,CURATED
 30,حَظَرَ,contoh nyata ظ,MUROJAAH,ALLOWED,CURATED
 31,ضَرَبَ,murojaah,MUROJAAH,ALLOWED,CURATED
