@@ -8,7 +8,7 @@ on:
       - 'tools/patch_nidom_j2_font_gate_v02.js'
       - 'tools/patch_nidom_j2_embed_assets_v03.js'
       - 'tools/patch_nidom_j2_hadith_variety_v03.js'
-      - 'tools/patch_nidom_j2_audited_content_v04.js'
+      - 'tools/patch_nidom_j2_content_audit_v03.js'
       - '.github/workflows/render-nidom-j2-v01.yml'
 jobs:
   render:
@@ -32,7 +32,7 @@ jobs:
       - name: Add verified varied hadith
         run: node tools/patch_nidom_j2_hadith_variety_v03.js
       - name: Apply audited content labels and review-page policy
-        run: node tools/patch_nidom_j2_audited_content_v04.js
+        run: node tools/patch_nidom_j2_content_audit_v03.js
       - name: Embed font and logo
         run: node tools/patch_nidom_j2_embed_assets_v03.js
       - name: Render Jilid 2
