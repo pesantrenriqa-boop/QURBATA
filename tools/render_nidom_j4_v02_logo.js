@@ -1,6 +1,6 @@
 const fs=require('fs');const path=require('path');
 const basePath=path.resolve(__dirname,'render_nidom_j4_v01.js');
-const logoPath=path.resolve(__dirname,'../assets/qurbata/QURBATA-LOGO-v1.0-FROZEN-header.jpg');
+const logoPath=path.resolve(__dirname,'../assets/qurbata/QURBATA-LOGO-v1.0-FROZEN-header.png');
 if(!fs.existsSync(basePath)) throw new Error('J4_BASE_RENDERER_MISSING');
 if(!fs.existsSync(logoPath)) throw new Error('QURBATA_FROZEN_LOGO_MISSING');
 const logo=fs.readFileSync(logoPath).toString('base64');
@@ -18,12 +18,12 @@ src=src.replace('.reason{margin-top:3mm;border:.3mm solid #c9c2a8;border-radius:
 src=src.replace('.q{min-height:17mm}', '.q{min-height:12mm}');
 src=src.replace('.qline{height:6mm;', '.qline{height:3.5mm;');
 const capture="const buf=await pg.pdf({width:'176mm',height:'250mm',printBackground:true});";
-const stamped="let buf=await pg.pdf({width:'176mm',height:'250mm',printBackground:true});const stampDoc=await PDFDocument.load(buf),stampImg=await stampDoc.embedJpg(Buffer.from(logo,'base64')),stampPage=stampDoc.getPage(0),stampH=stampPage.getHeight();stampPage.drawImage(stampImg,{x:45,y:stampH-70,width:40,height:40});buf=Buffer.from(await stampDoc.save());";
+const stamped="let buf=await pg.pdf({width:'176mm',height:'250mm',printBackground:true});const stampDoc=await PDFDocument.load(buf),stampImg=await stampDoc.embedPng(Buffer.from(logo,'base64')),stampPage=stampDoc.getPage(0),stampH=stampPage.getHeight();stampPage.drawImage(stampImg,{x:45,y:stampH-70,width:40,height:40});buf=Buffer.from(await stampDoc.save());";
 if(!src.includes(capture)) throw new Error('J4_PDF_CAPTURE_ANCHOR_MISSING');
 src=src.replace(capture,stamped);
 src=src.replace("../dist/nidom-akhlak/j4-v01","../dist/nidom-akhlak/j4-v03");
 src=src.replaceAll('-v0.1.pdf','-v0.3.pdf');
-console.log('QURBATA_OFFICIAL_LOGO=PDF_DIRECT_STAMP_JPG');
-console.log('QURBATA_LOGO_ASSET=QURBATA-LOGO-v1.0-FROZEN-header.jpg');
+console.log('QURBATA_OFFICIAL_LOGO=PDF_DIRECT_STAMP_ACCEPTED_V04_PNG');
+console.log('QURBATA_LOGO_ASSET=QURBATA-LOGO-v1.0-FROZEN-header.png');
 console.log('REASONING_DENSITY=ADAPTIVE_DALIL2_OPEN5');
 eval(src);
