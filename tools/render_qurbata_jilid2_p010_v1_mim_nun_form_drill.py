@@ -16,6 +16,8 @@ with ENRICH.open(encoding='utf-8-sig',newline='') as f: ladder={r['StepCode']:r 
 core=[r['word'] for r in lex[:28]]
 p001.MICRO=MICRO
 p001.P001_ROWS=[core[i:i+4] for i in range(0,28,4)]
+# P010 explicitly opens م ن; only ه ي remain future joining letters.
+p001.P001_BANNED_JOINING=set('هي')
 # P010 uses the already proven P009 renderer/safe-zone, but advances content and enrichment.
 p009.lex=lex
 p009.items=[x.strip() for x in ladder['E04']['Content'].split('|') if x.strip()]
@@ -39,11 +41,17 @@ p001.render=render
 def main():
  mim=sum('م' in r['word'] for r in lex[:28]);nun=sum('ن' in r['word'] for r in lex[:28])
  if mim<14 or nun<14: raise ValueError(f'P010_FORM_BALANCE_FAIL mim={mim} nun={nun}')
+ leaks=[]
+ for r in lex[:28]:
+  hit=p001.P001_BANNED_JOINING.intersection(r['word'])
+  if hit: leaks.append((r['word'],''.join(sorted(hit))))
+ if leaks: raise ValueError('P010_FUTURE_LETTER_LEAKAGE='+repr(leaks))
  if '--output-dir' not in sys.argv[1:]:sys.argv.extend(['--output-dir','dist/qurbata-print-ready/jilid-2/pages/P010'])
  rc=p009.v22.main()
- print('JILID2_P010_RENDERER_V1_MIM_NUN=PASS')
+ print('JILID2_P010_RENDERER_V2_MIM_NUN_GATE_FIX=PASS')
  print('PAGE=10')
  print('ACQUISITION_LETTERS=م|ن')
+ print('P001_BANNED_JOINING=ه|ي')
  print('PRACTICE_MODE=JOINING_FORM_DRILL_MEANINGFUL')
  print(f'FORM_MIM_OBJECTS={mim}')
  print(f'FORM_NUN_OBJECTS={nun}')
@@ -53,5 +61,6 @@ def main():
  print('BOTTOM_ROW_CONTENT=حم|حم عسق repeated full row')
  print('BOTTOM_ROW_POLICY=AWAILUSSURAR_LADDER_CONTINUATION')
  print('ANTI_CLIP_GUARD=INHERITED_FROM_P009_V10')
+ print('FUTURE_LETTER_LEAKAGE=0')
  return rc
 if __name__=='__main__':raise SystemExit(main())
