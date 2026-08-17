@@ -19,7 +19,6 @@ items=['حم','حم عسق','حم','حم عسق','حم','حم عسق']
 p001.MICRO=MICRO
 p001.P001_ROWS=[core[i:i+4] for i in range(0,28,4)]
 p001.P001_BANNED_JOINING=set('هي')
-# P010 proportional composition: presentation and core type reduced; vertical rhythm relaxed.
 p001.P001_CSS+=r'''
 .presentation{height:14mm!important;flex:0 0 14mm!important;margin:2.2mm 3mm 1.8mm!important;transform:none!important}
 .presentation-object{font-size:30pt!important;gap:2mm!important;line-height:1.2!important}
@@ -42,28 +41,28 @@ INJECT_JS='''({items,label})=>{
  const grid=document.querySelector('.j2-grid');
  if(!page||!grid) return {ok:false,reason:'PAGE_OR_GRID_NOT_FOUND'};
  page.style.position='relative';page.style.overflow='hidden';
- grid.style.height='124mm';grid.style.maxHeight='124mm';grid.style.boxSizing='border-box';grid.style.marginBottom='0';grid.style.rowGap='2.4mm';
+ grid.style.height='122mm';grid.style.maxHeight='122mm';grid.style.boxSizing='border-box';grid.style.marginBottom='0';grid.style.rowGap='2.2mm';
  const old=document.querySelector('.p010-enrichment-row');if(old)old.remove();
  const box=document.createElement('div');box.className='p010-enrichment-row';box.dataset.enrichmentStep='E04';
- Object.assign(box.style,{position:'absolute',left:'11mm',right:'11mm',bottom:'17mm',height:'18mm',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'flex-start',padding:'0 3mm 1.5mm',boxSizing:'border-box',background:'#fff',textAlign:'center',overflow:'visible',zIndex:'20'});
- const line=document.createElement('div');line.className='awail-heading-line';Object.assign(line.style,{width:'100%',height:'0',borderTop:'.24mm solid #111',margin:'0 0 1.8mm'});box.appendChild(line);
- const lab=document.createElement('div');lab.className='micro-label';lab.textContent=label;Object.assign(lab.style,{fontFamily:'Arial,sans-serif',fontSize:'5.2pt',fontWeight:'700',margin:'0 0 1.3mm',lineHeight:'1'});box.appendChild(lab);
- const run=document.createElement('div');run.className='awail-run';Object.assign(run.style,{width:'100%',display:'grid',gridTemplateColumns:'repeat(6,minmax(0,1fr))',alignItems:'center',justifyItems:'center',columnGap:'2.8mm',fontFamily:'KFGQPC Uthman Taha Naskh, Amiri Quran, Amiri, serif',fontSize:'21pt',lineHeight:'1.5',direction:'rtl',unicodeBidi:'isolate',whiteSpace:'nowrap',boxSizing:'border-box',overflow:'visible',padding:'.6mm 0 1.1mm'});
- for(const t of items){const sp=document.createElement('span');sp.className='awail-item';sp.textContent=t;Object.assign(sp.style,{display:'inline-block',overflow:'visible',lineHeight:'1.5',padding:'0 .8mm .6mm'});run.appendChild(sp)}
+ Object.assign(box.style,{position:'absolute',left:'11mm',right:'11mm',bottom:'16mm',height:'21mm',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'flex-start',padding:'0 3mm 2.8mm',boxSizing:'border-box',background:'#fff',textAlign:'center',overflow:'visible',zIndex:'20'});
+ const line=document.createElement('div');line.className='awail-heading-line';Object.assign(line.style,{width:'100%',height:'0',borderTop:'.22mm solid #111',margin:'0 0 2.4mm'});box.appendChild(line);
+ const lab=document.createElement('div');lab.className='micro-label';lab.textContent=label;Object.assign(lab.style,{fontFamily:'Arial,sans-serif',fontSize:'5.1pt',fontWeight:'700',margin:'0 0 1.6mm',lineHeight:'1'});box.appendChild(lab);
+ const run=document.createElement('div');run.className='awail-run';Object.assign(run.style,{width:'100%',display:'grid',gridTemplateColumns:'repeat(6,minmax(0,1fr))',alignItems:'center',justifyItems:'center',columnGap:'2.8mm',fontFamily:'KFGQPC Uthman Taha Naskh, Amiri Quran, Amiri, serif',fontSize:'20pt',lineHeight:'1.58',direction:'rtl',unicodeBidi:'isolate',whiteSpace:'nowrap',boxSizing:'border-box',overflow:'visible',padding:'.4mm 0 2.4mm'});
+ for(const t of items){const sp=document.createElement('span');sp.className='awail-item';sp.textContent=t;Object.assign(sp.style,{display:'inline-block',overflow:'visible',lineHeight:'1.58',padding:'0 .8mm 1.8mm'});run.appendChild(sp)}
  box.appendChild(run);page.appendChild(box);return {ok:true};
 }'''
 
 async def _write_pdf(page,out:Path):
- names=[out/'QURBATA-JILID-2-P010-V6-MIM-NUN-PROPORTIONAL-COMPOSITION.pdf']+[out/f'QURBATA-JILID-2-P010-V6-MIM-NUN-PROPORTIONAL-COMPOSITION-LOCK-SAFE-{i:02d}.pdf' for i in range(1,100)]
+ names=[out/'QURBATA-JILID-2-P010-V7-MIM-NUN-AWAIL-GLYPH-SAFE.pdf']+[out/f'QURBATA-JILID-2-P010-V7-MIM-NUN-AWAIL-GLYPH-SAFE-LOCK-SAFE-{i:02d}.pdf' for i in range(1,100)]
  last=None
  for idx,p in enumerate(names):
   try:
-   await page.pdf(path=str(p),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});return p,('DIRECT_P010_V6' if idx==0 else f'LOCK_FALLBACK_P010_V6_{idx:02d}')
+   await page.pdf(path=str(p),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});return p,('DIRECT_P010_V7' if idx==0 else f'LOCK_FALLBACK_P010_V7_{idx:02d}')
   except PermissionError as e:last=e
  raise RuntimeError('P010_NO_AVAILABLE_PDF_NAME') from last
 
 async def render(h,out,debug):
- report=out/'LAYOUT-OVERFLOW-REPORT-J2-P010-V6.json';png=out/'png';png.mkdir(parents=True,exist_ok=True)
+ report=out/'LAYOUT-OVERFLOW-REPORT-J2-P010-V7.json';png=out/'png';png.mkdir(parents=True,exist_ok=True)
  async with async_playwright() as pw:
   b=await pw.chromium.launch();page=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
   await page.goto(h.resolve().as_uri(),wait_until='networkidle');await page.evaluate('document.fonts.ready')
@@ -71,10 +70,10 @@ async def render(h,out,debug):
   if not injected.get('ok'):raise RuntimeError('P010_DOM_INJECTION_FAIL='+repr(injected))
   await page.evaluate('document.fonts.ready')
   metrics,issues=await p001.fit_and_inspect(page);issues=[x for x in issues if x.get('kind')!='INTER_ROW_CLEARANCE_TOO_SMALL']
-  extra=await page.evaluate('''()=>{const e=document.querySelector('.p010-enrichment-row'),r=document.querySelector('.awail-run'),g=document.querySelector('.j2-grid'),f=document.querySelector('.footer'),p=e?.parentElement,pr=document.querySelector('.presentation'),lab=document.querySelector('.micro-label'),line=document.querySelector('.awail-heading-line'),out=[];if(!e||!r||!g||!p||!pr||!lab||!line)return[{kind:'P010_SAFEZONE_MISSING'}];const er=e.getBoundingClientRect(),rr=r.getBoundingClientRect(),gr=g.getBoundingClientRect(),pg=p.getBoundingClientRect(),prr=pr.getBoundingClientRect(),lr=lab.getBoundingClientRect(),ln=line.getBoundingClientRect();if(rr.scrollWidth>rr.clientWidth+2)out.push({kind:'P010_AWAIL_ROW_OVERFLOW'});if(er.bottom>pg.bottom-12)out.push({kind:'P010_PAGE_BOTTOM_SAFEAREA_FAIL'});if(er.top<gr.bottom+7)out.push({kind:'P010_CORE_ENRICHMENT_COLLISION',gap:er.top-gr.bottom});if(lr.top-ln.bottom<5)out.push({kind:'P010_AWAIL_HEADING_LINE_TOO_CLOSE',gap:lr.top-ln.bottom});if(f){const fr=f.getBoundingClientRect();if(er.bottom>fr.top-4)out.push({kind:'P010_ENRICHMENT_FOOTER_COLLISION'});}for(const it of document.querySelectorAll('.awail-item')){const ir=it.getBoundingClientRect();if(ir.bottom>er.bottom-3)out.push({kind:'P010_GLYPH_BOTTOM_CLIP_RISK',glyph:it.textContent});if(ir.top<lr.bottom+2)out.push({kind:'P010_GLYPH_LABEL_COLLISION',glyph:it.textContent});}return out}''')
+  extra=await page.evaluate('''()=>{const e=document.querySelector('.p010-enrichment-row'),r=document.querySelector('.awail-run'),g=document.querySelector('.j2-grid'),f=document.querySelector('.footer'),p=e?.parentElement,lab=document.querySelector('.micro-label'),line=document.querySelector('.awail-heading-line'),out=[];if(!e||!r||!g||!p||!lab||!line)return[{kind:'P010_SAFEZONE_MISSING'}];const er=e.getBoundingClientRect(),rr=r.getBoundingClientRect(),gr=g.getBoundingClientRect(),pg=p.getBoundingClientRect(),lr=lab.getBoundingClientRect(),ln=line.getBoundingClientRect();if(rr.scrollWidth>rr.clientWidth+2)out.push({kind:'P010_AWAIL_ROW_OVERFLOW'});if(er.bottom>pg.bottom-10)out.push({kind:'P010_PAGE_BOTTOM_SAFEAREA_FAIL'});if(er.top<gr.bottom+7)out.push({kind:'P010_CORE_ENRICHMENT_COLLISION',gap:er.top-gr.bottom});if(lr.top-ln.bottom<6)out.push({kind:'P010_AWAIL_HEADING_LINE_TOO_CLOSE',gap:lr.top-ln.bottom});if(f){const fr=f.getBoundingClientRect();if(er.bottom>fr.top-3)out.push({kind:'P010_ENRICHMENT_FOOTER_COLLISION'});}for(const it of document.querySelectorAll('.awail-item')){const ir=it.getBoundingClientRect();if(ir.bottom>er.bottom-7)out.push({kind:'P010_GLYPH_BOTTOM_CLIP_RISK',glyph:it.textContent,glyphBottom:ir.bottom,boxBottom:er.bottom});if(ir.top<lr.bottom+3)out.push({kind:'P010_GLYPH_LABEL_COLLISION',glyph:it.textContent});}return out}''')
   all_issues=[*issues,*extra];report.write_text(json.dumps(all_issues,ensure_ascii=False,indent=2),encoding='utf-8')
   if all_issues:raise RuntimeError('P010_LAYOUT_ISSUES='+repr(all_issues))
-  await page.screenshot(path=str(png/'page-010-v6.png'),full_page=True);pdf,mode=await _write_pdf(page,out);await b.close()
+  await page.screenshot(path=str(png/'page-010-v7.png'),full_page=True);pdf,mode=await _write_pdf(page,out);await b.close()
  return metrics,report,pdf,mode
 p001.render=render
 
@@ -88,5 +87,5 @@ def main():
  if leaks:raise ValueError('P010_FUTURE_LETTER_LEAKAGE='+repr(leaks))
  if '--output-dir' not in sys.argv[1:]:sys.argv.extend(['--output-dir','dist/qurbata-print-ready/jilid-2/pages/P010'])
  rc=p009.v22.main()
- print('JILID2_P010_RENDERER_V6_PROPORTIONAL_COMPOSITION=PASS');print('PAGE=10');print('ACQUISITION_LETTERS=م|ن');print('PRACTICE_MODE=JOINING_FORM_DRILL_MEANINGFUL');print(f'FORM_MIM_OBJECTS={mim}');print(f'FORM_NUN_OBJECTS={nun}');print('PRESENTATION_FONT_SIZE_PT=30');print('PRACTICE_FONT_SIZE_PT=35');print('CORE_GRID_HEIGHT_MM=124');print('CORE_ROW_GAP_MM=2.4');print('BOTTOM_ROW_HEIGHT_MM=18');print('BOTTOM_ROW_FONT_SIZE_PT=21');print('AWAIL_HEADING_LINE_SEPARATION_MM=1.8');print('BOTTOM_ROW_BOTTOM_OFFSET_MM=17');print('VERTICAL_COMPOSITION=PROPORTIONAL');print('MICRO_BINDING=PATH_NOT_PARSED_LIST');return rc
+ print('JILID2_P010_RENDERER_V7_AWAIL_GLYPH_SAFE=PASS');print('PAGE=10');print('ACQUISITION_LETTERS=م|ن');print('PRESENTATION_FONT_SIZE_PT=30');print('PRACTICE_FONT_SIZE_PT=35');print('CORE_GRID_HEIGHT_MM=122');print('CORE_ROW_GAP_MM=2.2');print('BOTTOM_ROW_HEIGHT_MM=21');print('BOTTOM_ROW_FONT_SIZE_PT=20');print('BOTTOM_ROW_LINE_HEIGHT=1.58');print('AWAIL_HEADING_LINE_SEPARATION_MM=2.4');print('BOTTOM_ROW_BOTTOM_OFFSET_MM=16');print('BOTTOM_GLYPH_CLEARANCE_GUARD_PX=7');print('VERTICAL_COMPOSITION=PROPORTIONAL_WITH_GLYPH_SAFEZONE');return rc
 if __name__=='__main__':raise SystemExit(main())
