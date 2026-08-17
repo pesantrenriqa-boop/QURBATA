@@ -13,8 +13,15 @@ const oldLogoHtml='<div class=logo>Q</div>';
 const newLogoHtml='<div class=logo aria-label="QURBATA"></div>';
 if(!src.includes(oldLogoHtml)) throw new Error('J4_LOGO_HTML_ANCHOR_MISSING');
 src=src.replace(oldLogoHtml,newLogoHtml);
+// Adaptive reasoning density: dalil+kamus pages are denser, so use fewer prompts;
+// open pages use the full five. This preserves font size and avoids overflow.
+src=src.replace('ws=h?words(h[0]):[],qs=reasoning(p);return', 'ws=h?words(h[0]):[],allqs=reasoning(p),qs=allqs.slice(0,h?2:5);return');
+src=src.replace('.reason{margin-top:3mm;border:.3mm solid #c9c2a8;border-radius:3mm;padding:3mm;font-size:8.2pt;line-height:1.3}', '.reason{margin-top:2mm;border:.3mm solid #c9c2a8;border-radius:3mm;padding:2.5mm;font-size:8.2pt;line-height:1.25}');
+src=src.replace('.q{min-height:17mm}', '.q{min-height:12mm}');
+src=src.replace('.qline{height:6mm;', '.qline{height:3.5mm;');
 src=src.replace("../dist/nidom-akhlak/j4-v01","../dist/nidom-akhlak/j4-v03");
 src=src.replaceAll('-v0.1.pdf','-v0.3.pdf');
 console.log('QURBATA_OFFICIAL_LOGO=FROZEN_REFERENCE_DERIVATIVE_PNG_CSS');
 console.log('QURBATA_LOGO_SOURCE_SHA256=4d9cd82e0f4b83aa227187005f5b71f89f7144e267fed859130fd5bef79c1f32');
+console.log('REASONING_DENSITY=ADAPTIVE_DALIL2_OPEN5');
 eval(src);
