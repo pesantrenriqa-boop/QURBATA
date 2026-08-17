@@ -1,33 +1,33 @@
 slot,word,meaning_id,function,competency_status,lexical_status
-1,غَرَبَ,pergi atau terbenam,CURRENT,ALLOWED,CURATED
-2,غَرِبَ,menjadi asing atau jauh,CURRENT,ALLOWED,CURATED
-3,غَرُبَ,menjadi asing atau ganjil,CURRENT,ALLOWED,CURATED
-4,غَضِبَ,menjadi marah,CURRENT,ALLOWED,CURATED
-5,غَضُبَ,menjadi keras dalam kemarahan,CURRENT,ALLOWED,CURATED
-6,غَزَرَ,menjadi banyak atau deras,CURRENT,ALLOWED,CURATED
-7,غَزُرَ,menjadi melimpah atau banyak,CURRENT,ALLOWED,CURATED
-8,غَدَرَ,berkhianat atau tidak menepati janji,CURRENT,ALLOWED,CURATED
-9,غَشِيَ,mendatangi atau meliputi,CURRENT,ALLOWED,CURATED
-10,غَصِبَ,merampas atau mengambil secara zalim,CURRENT,ALLOWED,CURATED
-11,غَطَسَ,menyelam,CURRENT,ALLOWED,CURATED
-12,بَغَضَ,membenci,CURRENT,ALLOWED,CURATED
-13,بَغِضَ,menjadi dibenci atau membenci,CURRENT,ALLOWED,CURATED
-14,رَغِبَ,berminat atau menginginkan,CURRENT,ALLOWED,CURATED
-15,شَغَبَ,membuat keributan,CURRENT,ALLOWED,CURATED
-16,صَغُرَ,menjadi kecil,CURRENT,ALLOWED,CURATED
-17,ضَغَطَ,menekan,CURRENT,ALLOWED,CURATED
-18,طَغَى,melampaui batas,CURRENT,ALLOWED,CURATED
-19,عَبِثَ,bermain-main atau berbuat sia-sia,MUROJAAH,ALLOWED,CURATED
-20,عَجِبَ,merasa heran,MUROJAAH,ALLOWED,CURATED
-21,عَسُرَ,menjadi sulit,MUROJAAH,ALLOWED,CURATED
-22,جَعُدَ,menjadi keriting atau berlekuk,MUROJAAH,ALLOWED,CURATED
-23,بَطِرَ,menjadi angkuh atau tidak mensyukuri nikmat,MUROJAAH,ALLOWED,CURATED
-24,رَطُبَ,menjadi basah atau lembap,MUROJAAH,ALLOWED,CURATED
-25,ضَرِسَ,merasakan ngilu pada gigi,MUROJAAH,ALLOWED,CURATED
-26,صَبُحَ,menjadi cerah atau elok,MUROJAAH,ALLOWED,CURATED
-27,بَصِرَ,melihat atau mengetahui,MUROJAAH,ALLOWED,CURATED
-28,خَبُثَ,menjadi buruk atau keji,MUROJAAH,ALLOWED,CURATED
-29,شَرِبَ,meminum,MUROJAAH,ALLOWED,CURATED
-30,سَبُحَ,bergerak atau berenang dengan ringan,MUROJAAH,ALLOWED,CURATED
-31,حَذِرَ,berhati-hati atau waspada,MUROJAAH,ALLOWED,CURATED
-32,خَصُبَ,menjadi subur atau makmur,MUROJAAH,ALLOWED,CURATED
+1,مَنَعَ,mencegah atau melarang,CURRENT,ALLOWED,CURATED
+2,مَكَرَ,merencanakan tipu daya,CURRENT,ALLOWED,CURATED
+3,مَلَكَ,memiliki atau menguasai,CURRENT,ALLOWED,CURATED
+4,مَكَثَ,tinggal atau berdiam,CURRENT,ALLOWED,CURATED
+5,مَرِضَ,menjadi sakit,CURRENT,ALLOWED,CURATED
+6,مَسَكَ,memegang,CURRENT,ALLOWED,CURATED
+7,مَسَحَ,mengusap,CURRENT,ALLOWED,CURATED
+8,مَضَغَ,mengunyah,CURRENT,ALLOWED,CURATED
+9,مَطَرَ,hujan atau turun hujan,CURRENT,ALLOWED,CURATED
+10,مَدَحَ,memuji,CURRENT,ALLOWED,CURATED
+11,مَرَحَ,bergembira,CURRENT,ALLOWED,CURATED
+12,مَحَقَ,menghapus atau memusnahkan,CURRENT,ALLOWED,CURATED
+13,مَشَقَ,menulis atau menggores,CURRENT,ALLOWED,CURATED
+14,مَزَجَ,mencampur,CURRENT,ALLOWED,CURATED
+15,نَزَلَ,turun,CURRENT,ALLOWED,CURATED
+16,نَظَرَ,melihat,CURRENT,ALLOWED,CURATED
+17,نَصَرَ,menolong,CURRENT,ALLOWED,CURATED
+18,نَفَرَ,berangkat atau menjauh,CURRENT,ALLOWED,CURATED
+19,نَقَلَ,memindahkan,CURRENT,ALLOWED,CURATED
+20,نَكَثَ,melanggar janji,CURRENT,ALLOWED,CURATED
+21,نَدِمَ,menyesal,CURRENT,ALLOWED,CURATED
+22,نَشَرَ,menyebarkan,CURRENT,ALLOWED,CURATED
+23,نَفَخَ,meniup,CURRENT,ALLOWED,CURATED
+24,نَضَجَ,menjadi matang,CURRENT,ALLOWED,CURATED
+25,نَبَذَ,membuang,CURRENT,ALLOWED,CURATED
+26,نَحَرَ,menyembelih,CURRENT,ALLOWED,CURATED
+27,نَجَحَ,berhasil,CURRENT,ALLOWED,CURATED
+28,نَسَخَ,menyalin atau menghapus,CURRENT,ALLOWED,CURATED
+29,كَتَبَ,menulis,MUROJAAH,ALLOWED,CURATED
+30,لَعِبَ,bermain,MUROJAAH,ALLOWED,CURATED
+31,قَرُبَ,menjadi dekat,MUROJAAH,ALLOWED,CURATED
+32,فَرِحَ,bergembira,MUROJAAH,ALLOWED,CURATED
