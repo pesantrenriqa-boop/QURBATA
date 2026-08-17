@@ -1,6 +1,6 @@
 const fs=require('fs');const path=require('path');
 const basePath=path.resolve(__dirname,'render_nidom_j4_v01.js');
-const logoPath=path.resolve(__dirname,'../assets/qurbata/QURBATA-LOGO-v1.0-FROZEN-header.png');
+const logoPath=path.resolve(__dirname,'../assets/qurbata/QURBATA-LOGO-v1.0-FROZEN-header.jpg');
 if(!fs.existsSync(basePath)) throw new Error('J4_BASE_RENDERER_MISSING');
 if(!fs.existsSync(logoPath)) throw new Error('QURBATA_FROZEN_LOGO_MISSING');
 const logo=fs.readFileSync(logoPath).toString('base64');
@@ -13,19 +13,17 @@ const oldLogoHtml='<div class=logo>Q</div>';
 const newLogoHtml='<div class=logo aria-label="QURBATA"></div>';
 if(!src.includes(oldLogoHtml)) throw new Error('J4_LOGO_HTML_ANCHOR_MISSING');
 src=src.replace(oldLogoHtml,newLogoHtml);
-// Adaptive reasoning density: dalil+kamus pages are denser, open pages use full five.
 src=src.replace('ws=h?words(h[0]):[],qs=reasoning(p);return', 'ws=h?words(h[0]):[],allqs=reasoning(p),qs=allqs.slice(0,h?2:5);return');
 src=src.replace('.reason{margin-top:3mm;border:.3mm solid #c9c2a8;border-radius:3mm;padding:3mm;font-size:8.2pt;line-height:1.3}', '.reason{margin-top:2mm;border:.3mm solid #c9c2a8;border-radius:3mm;padding:2.5mm;font-size:8.2pt;line-height:1.25}');
 src=src.replace('.q{min-height:17mm}', '.q{min-height:12mm}');
 src=src.replace('.qline{height:6mm;', '.qline{height:3.5mm;');
-// Print-safe logo: stamp the official PNG directly into the PDF page after Chromium capture.
 const capture="const buf=await pg.pdf({width:'176mm',height:'250mm',printBackground:true});";
-const stamped="let buf=await pg.pdf({width:'176mm',height:'250mm',printBackground:true});const stampDoc=await PDFDocument.load(buf),stampImg=await stampDoc.embedPng(Buffer.from(logo,'base64')),stampPage=stampDoc.getPage(0),stampH=stampPage.getHeight();stampPage.drawImage(stampImg,{x:45,y:stampH-70,width:40,height:40});buf=Buffer.from(await stampDoc.save());";
+const stamped="let buf=await pg.pdf({width:'176mm',height:'250mm',printBackground:true});const stampDoc=await PDFDocument.load(buf),stampImg=await stampDoc.embedJpg(Buffer.from(logo,'base64')),stampPage=stampDoc.getPage(0),stampH=stampPage.getHeight();stampPage.drawImage(stampImg,{x:45,y:stampH-70,width:40,height:40});buf=Buffer.from(await stampDoc.save());";
 if(!src.includes(capture)) throw new Error('J4_PDF_CAPTURE_ANCHOR_MISSING');
 src=src.replace(capture,stamped);
 src=src.replace("../dist/nidom-akhlak/j4-v01","../dist/nidom-akhlak/j4-v03");
 src=src.replaceAll('-v0.1.pdf','-v0.3.pdf');
-console.log('QURBATA_OFFICIAL_LOGO=PDF_DIRECT_STAMP');
-console.log('QURBATA_LOGO_SOURCE_SHA256=4d9cd82e0f4b83aa227187005f5b71f89f7144e267fed859130fd5bef79c1f32');
+console.log('QURBATA_OFFICIAL_LOGO=PDF_DIRECT_STAMP_JPG');
+console.log('QURBATA_LOGO_ASSET=QURBATA-LOGO-v1.0-FROZEN-header.jpg');
 console.log('REASONING_DENSITY=ADAPTIVE_DALIL2_OPEN5');
 eval(src);
