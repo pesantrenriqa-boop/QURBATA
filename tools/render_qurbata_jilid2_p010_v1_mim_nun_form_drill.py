@@ -12,13 +12,12 @@ LEX=ROOT/'content/qwo/registry/JILID-2-P010-LEXICAL-FOUNDATION-V1.csv'
 MICRO=ROOT/'content/qwo/registry/JILID-2-MICRO-COMPETENCY-P010-V1.csv'
 ENRICH=ROOT/'content/qwo/registry/JILID-2-BOTTOM-ROW-ENRICHMENT-LADDER-V1.csv'
 with LEX.open(encoding='utf-8-sig',newline='') as f: lex=list(csv.DictReader(f))
-with MICRO.open(encoding='utf-8-sig',newline='') as f: micro=list(csv.DictReader(f))
 with ENRICH.open(encoding='utf-8-sig',newline='') as f: ladder={r['StepCode']:r for r in csv.DictReader(f)}
 core=[r['word'] for r in lex[:28]]
 enrich=ladder['E04']
-# Keep the two awail objects as intact Quranic opening units, then repeat them evenly.
 items=['حم','حم عسق','حم','حم عسق','حم','حم عسق']
-p001.MICRO=micro
+# IMPORTANT: base engine expects MICRO to be a Path, not a parsed list.
+p001.MICRO=MICRO
 p001.P001_ROWS=[core[i:i+4] for i in range(0,28,4)]
 p001.P001_BANNED_JOINING=set('هي')
 
@@ -46,16 +45,16 @@ INJECT_JS='''({items,label})=>{
 }'''
 
 async def _write_pdf(page,out:Path):
- names=[out/'QURBATA-JILID-2-P010-V3-MIM-NUN-AWAILUSSURAR2-SPACED.pdf']+[out/f'QURBATA-JILID-2-P010-V3-MIM-NUN-AWAILUSSURAR2-SPACED-LOCK-SAFE-{i:02d}.pdf' for i in range(1,100)]
+ names=[out/'QURBATA-JILID-2-P010-V4-MIM-NUN-AWAILUSSURAR2-SPACED-MICROFIX.pdf']+[out/f'QURBATA-JILID-2-P010-V4-MIM-NUN-AWAILUSSURAR2-SPACED-MICROFIX-LOCK-SAFE-{i:02d}.pdf' for i in range(1,100)]
  last=None
  for idx,p in enumerate(names):
   try:
-   await page.pdf(path=str(p),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});return p,('DIRECT_P010_V3' if idx==0 else f'LOCK_FALLBACK_P010_V3_{idx:02d}')
+   await page.pdf(path=str(p),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});return p,('DIRECT_P010_V4' if idx==0 else f'LOCK_FALLBACK_P010_V4_{idx:02d}')
   except PermissionError as e:last=e
  raise RuntimeError('P010_NO_AVAILABLE_PDF_NAME') from last
 
 async def render(h,out,debug):
- report=out/'LAYOUT-OVERFLOW-REPORT-J2-P010-V3.json';png=out/'png';png.mkdir(parents=True,exist_ok=True)
+ report=out/'LAYOUT-OVERFLOW-REPORT-J2-P010-V4.json';png=out/'png';png.mkdir(parents=True,exist_ok=True)
  async with async_playwright() as pw:
   b=await pw.chromium.launch();page=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
   await page.goto(h.resolve().as_uri(),wait_until='networkidle');await page.evaluate('document.fonts.ready')
@@ -66,7 +65,7 @@ async def render(h,out,debug):
   extra=await page.evaluate('''()=>{const e=document.querySelector('.p010-enrichment-row'),r=document.querySelector('.awail-run'),g=document.querySelector('.j2-grid'),f=document.querySelector('.footer'),p=e?.parentElement,out=[];if(!e||!r||!g||!p)return[{kind:'P010_SAFEZONE_MISSING'}];const er=e.getBoundingClientRect(),rr=r.getBoundingClientRect(),gr=g.getBoundingClientRect(),pr=p.getBoundingClientRect();if(rr.scrollWidth>rr.clientWidth+2)out.push({kind:'P010_AWAIL_ROW_OVERFLOW'});if(er.bottom>pr.bottom-14)out.push({kind:'P010_PAGE_BOTTOM_SAFEAREA_FAIL'});if(er.top<gr.bottom+6)out.push({kind:'P010_CORE_ENRICHMENT_COLLISION'});if(f){const fr=f.getBoundingClientRect();if(er.bottom>fr.top-5)out.push({kind:'P010_ENRICHMENT_FOOTER_COLLISION'});}for(const it of document.querySelectorAll('.awail-item')){const ir=it.getBoundingClientRect();if(ir.bottom>er.bottom-3)out.push({kind:'P010_GLYPH_BOTTOM_CLIP_RISK',glyph:it.textContent});if(ir.top<er.top+3)out.push({kind:'P010_GLYPH_TOP_CLIP_RISK',glyph:it.textContent});}return out}''')
   all_issues=[*issues,*extra];report.write_text(json.dumps(all_issues,ensure_ascii=False,indent=2),encoding='utf-8')
   if all_issues:raise RuntimeError('P010_LAYOUT_ISSUES='+repr(all_issues))
-  await page.screenshot(path=str(png/'page-010-v3.png'),full_page=True);pdf,mode=await _write_pdf(page,out);await b.close()
+  await page.screenshot(path=str(png/'page-010-v4.png'),full_page=True);pdf,mode=await _write_pdf(page,out);await b.close()
  return metrics,report,pdf,mode
 p001.render=render
 
@@ -80,5 +79,5 @@ def main():
  if leaks:raise ValueError('P010_FUTURE_LETTER_LEAKAGE='+repr(leaks))
  if '--output-dir' not in sys.argv[1:]:sys.argv.extend(['--output-dir','dist/qurbata-print-ready/jilid-2/pages/P010'])
  rc=p009.v22.main()
- print('JILID2_P010_RENDERER_V3_AWAIL_SPACING=PASS');print('PAGE=10');print('ACQUISITION_LETTERS=م|ن');print('PRACTICE_MODE=JOINING_FORM_DRILL_MEANINGFUL');print(f'FORM_MIM_OBJECTS={mim}');print(f'FORM_NUN_OBJECTS={nun}');print('BOTTOM_ROW_STEP=E04');print('BOTTOM_ROW_ITEMS=6');print('BOTTOM_ROW_PATTERN=حم|حم عسق repeated 3x');print('BOTTOM_ROW_FONT_SIZE_PT=22');print('BOTTOM_ROW_GRID=6_EQUAL_COLUMNS');print('BOTTOM_ROW_LINE_HEIGHT=1.42');print('BOTTOM_BORDER=REMOVED');print('GLYPH_CLIP_GUARD=ENABLED');return rc
+ print('JILID2_P010_RENDERER_V4_MICRO_PATH_FIX=PASS');print('PAGE=10');print('ACQUISITION_LETTERS=م|ن');print('PRACTICE_MODE=JOINING_FORM_DRILL_MEANINGFUL');print(f'FORM_MIM_OBJECTS={mim}');print(f'FORM_NUN_OBJECTS={nun}');print('BOTTOM_ROW_STEP=E04');print('BOTTOM_ROW_ITEMS=6');print('BOTTOM_ROW_PATTERN=حم|حم عسق repeated 3x');print('BOTTOM_ROW_FONT_SIZE_PT=22');print('BOTTOM_ROW_GRID=6_EQUAL_COLUMNS');print('BOTTOM_ROW_LINE_HEIGHT=1.42');print('BOTTOM_BORDER=REMOVED');print('GLYPH_CLIP_GUARD=ENABLED');print('MICRO_BINDING=PATH_NOT_PARSED_LIST');return rc
 if __name__=='__main__':raise SystemExit(main())
