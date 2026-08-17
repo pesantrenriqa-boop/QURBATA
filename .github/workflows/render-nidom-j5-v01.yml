@@ -1,4 +1,4 @@
-name: Render NIDOM Jilid 5 v0.1 OFFICIAL LOGO
+name: Render NIDOM Jilid 5 v0.2 OFFICIAL LOGO
 
 on:
   workflow_dispatch:
@@ -7,13 +7,14 @@ on:
       - content/qurbata-jilid-1-8-production
     paths:
       - 'tools/render_nidom_j5_v01.js'
+      - 'tools/render_nidom_j5_v02_stable.js'
       - 'assets/qurbata/QURBATA-LOGO-v1.0-FROZEN-header.png'
       - '.github/workflows/render-nidom-j5-v01.yml'
 
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -31,15 +32,15 @@ jobs:
       - name: Verify official QURBATA logo asset
         run: test -s assets/qurbata/QURBATA-LOGO-v1.0-FROZEN-header.png
       - name: Render P001-P040 and master
-        run: node tools/render_nidom_j5_v01.js
+        run: node tools/render_nidom_j5_v02_stable.js
       - name: Production gates
         run: |
-          COUNT=$(find dist/nidom-akhlak/j5-v01 -maxdepth 1 -type f -regextype posix-extended -regex '.*/QURBATA-NIDOM-J5-P[0-9]{3}-v0\.1\.pdf' | wc -l)
+          COUNT=$(find dist/nidom-akhlak/j5-v01 -maxdepth 1 -type f -regextype posix-extended -regex '.*/QURBATA-NIDOM-J5-P[0-9]{3}-v0\.2\.pdf' | wc -l)
           echo "INDIVIDUAL_PAGE_COUNT=$COUNT"
           test "$COUNT" -eq 40
-          test -f dist/nidom-akhlak/j5-v01/QURBATA-NIDOM-J5-P001-P040-PRINT-MASTER-v0.1.pdf
+          test -f dist/nidom-akhlak/j5-v01/QURBATA-NIDOM-J5-P001-P040-PRINT-MASTER-v0.2.pdf
       - uses: actions/upload-artifact@v4
         with:
-          name: QURBATA-NIDOM-J5-v0.1-OFFICIAL-LOGO-P001-P040
+          name: QURBATA-NIDOM-J5-v0.2-OFFICIAL-LOGO-P001-P040
           path: dist/nidom-akhlak/j5-v01/*.pdf
           if-no-files-found: error
