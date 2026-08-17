@@ -1,4 +1,4 @@
-name: Render NIDOM Jilid 4 v0.1
+name: Render NIDOM Jilid 4 v0.2 LOGO
 
 on:
   workflow_dispatch:
@@ -7,6 +7,8 @@ on:
       - content/qurbata-jilid-1-8-production
     paths:
       - 'tools/render_nidom_j4_v01.js'
+      - 'tools/render_nidom_j4_v02_logo.js'
+      - 'assets/qurbata/QURBATA-LOGO-v1.0-FROZEN-header.jpg'
       - '.github/workflows/render-nidom-j4-v01.yml'
 
 jobs:
@@ -27,16 +29,19 @@ jobs:
           mkdir -p .build-fonts
           curl -fL --retry 3 'https://raw.githubusercontent.com/quranwbw/qpc-fonts/master/various-woff2/UthmanTN1%20Ver10.woff2' -o .build-fonts/UthmanTaha.woff2
           test -s .build-fonts/UthmanTaha.woff2
-      - name: Render P001-P040 and master
-        run: node tools/render_nidom_j4_v01.js
+      - name: Verify official QURBATA logo asset
+        run: |
+          test -s assets/qurbata/QURBATA-LOGO-v1.0-FROZEN-header.jpg
+      - name: Render P001-P040 and master with official logo
+        run: node tools/render_nidom_j4_v02_logo.js
       - name: Production gates
         run: |
-          COUNT=$(find dist/nidom-akhlak/j4-v01 -maxdepth 1 -type f -regextype posix-extended -regex '.*/QURBATA-NIDOM-J4-P[0-9]{3}-v0\.1\.pdf' | wc -l)
+          COUNT=$(find dist/nidom-akhlak/j4-v02 -maxdepth 1 -type f -regextype posix-extended -regex '.*/QURBATA-NIDOM-J4-P[0-9]{3}-v0\.2\.pdf' | wc -l)
           echo "INDIVIDUAL_PAGE_COUNT=$COUNT"
           test "$COUNT" -eq 40
-          test -f dist/nidom-akhlak/j4-v01/QURBATA-NIDOM-J4-P001-P040-PRINT-MASTER-v0.1.pdf
+          test -f dist/nidom-akhlak/j4-v02/QURBATA-NIDOM-J4-P001-P040-PRINT-MASTER-v0.2.pdf
       - uses: actions/upload-artifact@v4
         with:
-          name: QURBATA-NIDOM-J4-v0.1-P001-P040
-          path: dist/nidom-akhlak/j4-v01/*.pdf
+          name: QURBATA-NIDOM-J4-v0.2-OFFICIAL-LOGO-P001-P040
+          path: dist/nidom-akhlak/j4-v02/*.pdf
           if-no-files-found: error
