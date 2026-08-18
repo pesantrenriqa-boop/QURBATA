@@ -44,3 +44,5 @@ jobs:
           name: QURBATA-NIDOM-J5-v0.2-OFFICIAL-LOGO-P001-P040
           path: dist/nidom-akhlak/j5-v01/*.pdf
           if-no-files-found: error
+
+# production retrigger: 2026-08-18 — stable renderer v0.2
