@@ -43,3 +43,5 @@ jobs:
           name: QURBATA-NIDOM-J6-v0.1-OFFICIAL-LOGO-P001-P040
           path: dist/nidom-akhlak/j6-v01/*.pdf
           if-no-files-found: error
+
+# production retrigger: 2026-08-19 — J6 P001-P040 master
