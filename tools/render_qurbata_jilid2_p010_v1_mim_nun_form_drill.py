@@ -25,7 +25,7 @@ p001.P001_CSS+=r'''
 .presentation-object{font-size:30pt!important;gap:2mm!important;line-height:1.2!important}
 .presentation-object .arabic-part{line-height:1.2!important;padding:.8mm .45mm!important}
 .presentation-object .arrow{font-size:17pt!important}
-.j2-grid{margin:0!important;min-height:0!important;max-height:none!important}
+.j2-grid{margin:0!important;min-height:0!important}
 .j2-glyph{font-size:33pt!important;line-height:1.08!important;padding:.35mm .8mm .55mm!important}
 '''
 
@@ -53,23 +53,22 @@ INJECT_JS='''({items,label})=>{
  const pg=page.getBoundingClientRect(),prr=pr.getBoundingClientRect(),er=box.getBoundingClientRect();
  const topPx=prr.bottom-pg.top+18,bottomPx=er.top-pg.top-10,heightPx=bottomPx-topPx;
  if(heightPx<300)return {ok:false,reason:'INSUFFICIENT_GRID_HEIGHT',topPx,bottomPx,heightPx};
- // Critical V15: neutralize inherited grid min-height/flex sizing. V14 set height,
- // but the legacy min-height kept the rendered box ~98px taller, causing collision.
- Object.assign(grid.style,{position:'absolute',left:'11mm',right:'11mm',top:topPx+'px',height:heightPx+'px',minHeight:'0px',maxHeight:heightPx+'px',boxSizing:'border-box',margin:'0',rowGap:'3mm',zIndex:'10',flex:'none'});
+ const important=(name,value)=>grid.style.setProperty(name,value,'important');
+ important('position','absolute');important('left','11mm');important('right','11mm');important('top',topPx+'px');important('height',heightPx+'px');important('min-height','0px');important('max-height',heightPx+'px');important('margin','0');important('flex','none');important('box-sizing','border-box');important('row-gap','3mm');important('z-index','10');
  const actual=grid.getBoundingClientRect();
  return {ok:true,topPx,bottomPx,heightPx,actualTop:actual.top-pg.top,actualBottom:actual.bottom-pg.top,actualHeight:actual.height};
 }'''
 
 async def _write_pdf(page,out):
- names=[out/'QURBATA-JILID-2-P010-V15-MIM-NUN-MINHEIGHT-RESET.pdf']+[out/f'QURBATA-JILID-2-P010-V15-MIM-NUN-MINHEIGHT-RESET-LOCK-SAFE-{i:02d}.pdf' for i in range(1,100)]
+ names=[out/'QURBATA-JILID-2-P010-V16-MIM-NUN-IMPORTANT-HEIGHT-OVERRIDE.pdf']+[out/f'QURBATA-JILID-2-P010-V16-MIM-NUN-IMPORTANT-HEIGHT-OVERRIDE-LOCK-SAFE-{i:02d}.pdf' for i in range(1,100)]
  for idx,p in enumerate(names):
   try:
-   await page.pdf(path=str(p),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});return p,('DIRECT_P010_V15' if idx==0 else f'LOCK_FALLBACK_P010_V15_{idx:02d}')
+   await page.pdf(path=str(p),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});return p,('DIRECT_P010_V16' if idx==0 else f'LOCK_FALLBACK_P010_V16_{idx:02d}')
   except PermissionError:pass
  raise RuntimeError('P010_NO_AVAILABLE_PDF_NAME')
 
 async def render(h,out,debug):
- report=out/'LAYOUT-OVERFLOW-REPORT-J2-P010-V15.json';png=out/'png';png.mkdir(parents=True,exist_ok=True)
+ report=out/'LAYOUT-OVERFLOW-REPORT-J2-P010-V16.json';png=out/'png';png.mkdir(parents=True,exist_ok=True)
  async with async_playwright() as pw:
   b=await pw.chromium.launch();page=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
   await page.goto(h.resolve().as_uri(),wait_until='networkidle');await page.evaluate('document.fonts.ready')
@@ -80,7 +79,7 @@ async def render(h,out,debug):
   extra=await page.evaluate('''()=>{const num=document.querySelector('.page-number'),g=document.querySelector('.j2-grid'),e=document.querySelector('.p010-enrichment-row'),f=document.querySelector('.footer'),pr=document.querySelector('.presentation'),first=document.querySelector('.j2-object[data-row="1"] .j2-glyph'),out=[];if(!num||!g||!e||!pr||!first)return[{kind:'P010_REQUIRED_ELEMENT_MISSING'}];if(num.textContent.trim()!=='10')out.push({kind:'P010_PAGE_NUMBER_WRONG',actual:num.textContent.trim()});const gr=g.getBoundingClientRect(),er=e.getBoundingClientRect(),prr=pr.getBoundingClientRect(),frst=first.getBoundingClientRect();const boxTitleGap=gr.top-prr.bottom;if(boxTitleGap<16)out.push({kind:'P010_GRID_BOX_TOO_CLOSE_TO_PRESENTATION',gap:boxTitleGap,required:16});const glyphTitleGap=frst.top-prr.bottom;if(glyphTitleGap<14)out.push({kind:'P010_PRESENTATION_FIRSTROW_TOO_CLOSE',gap:glyphTitleGap,required:14});const lowerGap=er.top-gr.bottom;if(lowerGap>14)out.push({kind:'P010_EXCESSIVE_BOTTOM_WHITESPACE',gap:lowerGap});if(lowerGap<6)out.push({kind:'P010_CORE_ENRICHMENT_COLLISION',gap:lowerGap});if(f){const fr=f.getBoundingClientRect();if(er.bottom>fr.top-3)out.push({kind:'P010_ENRICHMENT_FOOTER_COLLISION'});}return out}''')
   all_issues=[*issues,*extra];report.write_text(json.dumps({'injection':injected,'issues':all_issues},ensure_ascii=False,indent=2),encoding='utf-8')
   if all_issues:raise RuntimeError('P010_LAYOUT_ISSUES='+repr(all_issues))
-  await page.screenshot(path=str(png/'page-010-v15.png'),full_page=True);pdf,mode=await _write_pdf(page,out);await b.close()
+  await page.screenshot(path=str(png/'page-010-v16.png'),full_page=True);pdf,mode=await _write_pdf(page,out);await b.close()
  return metrics,report,pdf,mode
 p001.render=render
 
@@ -89,5 +88,5 @@ def main():
  if mim<14 or nun<14:raise ValueError(f'P010_FORM_BALANCE_FAIL mim={mim} nun={nun}')
  if '--output-dir' not in sys.argv[1:]:sys.argv.extend(['--output-dir','dist/qurbata-print-ready/jilid-2/pages/P010'])
  rc=v22.main()
- print('JILID2_P010_RENDERER_V15_MINHEIGHT_RESET=PASS');print('PAGE=10');print('GRID_POSITIONING=ABSOLUTE_FROM_DOM_GEOMETRY');print('GRID_MIN_HEIGHT=0');print('GRID_FLEX=NONE');print('GRID_TITLE_BOX_GAP_PX=18');print('GRID_ENRICHMENT_GAP_PX=10');print('VERTICAL_FIX=INHERITED_MINHEIGHT_NEUTRALIZED');return rc
+ print('JILID2_P010_RENDERER_V16_IMPORTANT_HEIGHT_OVERRIDE=PASS');print('PAGE=10');print('GRID_HEIGHT_OVERRIDE=INLINE_IMPORTANT');print('GRID_MIN_HEIGHT=0_IMPORTANT');print('GRID_MAX_HEIGHT=CALCULATED_IMPORTANT');print('GRID_TITLE_BOX_GAP_PX=18');print('GRID_ENRICHMENT_GAP_PX=10');print('VERTICAL_FIX=LEGACY_149MM_IMPORTANT_OVERRIDDEN');return rc
 if __name__=='__main__':raise SystemExit(main())
