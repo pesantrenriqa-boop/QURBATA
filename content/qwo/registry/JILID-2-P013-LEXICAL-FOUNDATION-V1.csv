@@ -1,33 +1,33 @@
 slot,word,meaning_id,function,competency_status,lexical_status
-1,بَا,latihan ba panjang,CURRENT,ALLOWED,DRILL
-2,تَا,latihan ta panjang,CURRENT,ALLOWED,DRILL
-3,ثَا,latihan tsa panjang,CURRENT,ALLOWED,DRILL
-4,جَا,latihan jim panjang,CURRENT,ALLOWED,DRILL
-5,حَا,latihan ha panjang,CURRENT,ALLOWED,DRILL
-6,خَا,latihan kha panjang,CURRENT,ALLOWED,DRILL
-7,دَا,latihan dal panjang,CURRENT,ALLOWED,DRILL
-8,ذَا,latihan dzal panjang,CURRENT,ALLOWED,DRILL
-9,رَا,latihan ra panjang,CURRENT,ALLOWED,DRILL
-10,زَا,latihan zai panjang,CURRENT,ALLOWED,DRILL
-11,سَا,latihan sin panjang,CURRENT,ALLOWED,DRILL
-12,شَا,latihan syin panjang,CURRENT,ALLOWED,DRILL
-13,صَا,latihan shad panjang,CURRENT,ALLOWED,DRILL
-14,ضَا,latihan dhad panjang,CURRENT,ALLOWED,DRILL
-15,طَا,latihan tha panjang,CURRENT,ALLOWED,DRILL
-16,ظَا,latihan zha panjang,CURRENT,ALLOWED,DRILL
-17,عَا,latihan ain panjang,CURRENT,ALLOWED,DRILL
-18,غَا,latihan ghain panjang,CURRENT,ALLOWED,DRILL
-19,فَا,latihan fa panjang,CURRENT,ALLOWED,DRILL
-20,قَا,latihan qaf panjang,CURRENT,ALLOWED,DRILL
-21,كَا,latihan kaf panjang,CURRENT,ALLOWED,DRILL
-22,لَا,latihan lam panjang,CURRENT,ALLOWED,DRILL
-23,مَا,latihan mim panjang,CURRENT,ALLOWED,DRILL
-24,نَا,latihan nun panjang,CURRENT,ALLOWED,DRILL
-25,هَا,latihan ha panjang,CURRENT,ALLOWED,DRILL
-26,وَا,latihan waw plus alif,CURRENT,ALLOWED,DRILL
-27,يَا,latihan ya panjang,CURRENT,ALLOWED,DRILL
-28,قَا,ulang qaf panjang,CURRENT,ALLOWED,DRILL
-29,مَا,ulang mim panjang,CURRENT,ALLOWED,DRILL
-30,لَا,ulang lam panjang,CURRENT,ALLOWED,DRILL
-31,نَا,ulang nun panjang,CURRENT,ALLOWED,DRILL
-32,بَا,ulang ba panjang,CURRENT,ALLOWED,DRILL
+1,بَا,pola mad alif,CURRENT,ALLOWED,DRILL
+2,تَا,pola mad alif,CURRENT,ALLOWED,DRILL
+3,ثَا,pola mad alif,CURRENT,ALLOWED,DRILL
+4,جَا,pola mad alif,CURRENT,ALLOWED,DRILL
+5,حَا,pola mad alif,CURRENT,ALLOWED,DRILL
+6,خَا,pola mad alif,CURRENT,ALLOWED,DRILL
+7,دَا,pola mad alif,CURRENT,ALLOWED,DRILL
+8,رَا,pola mad alif,CURRENT,ALLOWED,DRILL
+9,سَا,pola mad alif,CURRENT,ALLOWED,DRILL
+10,شَا,pola mad alif,CURRENT,ALLOWED,DRILL
+11,صَا,pola mad alif,CURRENT,ALLOWED,DRILL
+12,ضَا,pola mad alif,CURRENT,ALLOWED,DRILL
+13,طَا,pola mad alif,CURRENT,ALLOWED,DRILL
+14,عَا,pola mad alif,CURRENT,ALLOWED,DRILL
+15,فَا,pola mad alif,CURRENT,ALLOWED,DRILL
+16,قَا,pola mad alif,CURRENT,ALLOWED,DRILL
+17,مَا,apa / pola bermakna,CURRENT,ALLOWED,LEXICAL
+18,لَا,tidak / pola bermakna,CURRENT,ALLOWED,LEXICAL
+19,يَا,wahai / pola bermakna,CURRENT,ALLOWED,LEXICAL
+20,ذَا,ini/pemilik sesuai konteks / pola bermakna,CURRENT,ALLOWED,LEXICAL
+21,قَالَ,berkata,CURRENT,ALLOWED,LEXICAL
+22,قَامَ,berdiri,CURRENT,ALLOWED,LEXICAL
+23,صَامَ,berpuasa,CURRENT,ALLOWED,LEXICAL
+24,نَامَ,tidur,CURRENT,ALLOWED,LEXICAL
+25,مَاتَ,meninggal,CURRENT,ALLOWED,LEXICAL
+26,زَادَ,bertambah,CURRENT,ALLOWED,LEXICAL
+27,كَانَ,adalah/telah ada,CURRENT,ALLOWED,LEXICAL
+28,نَالَ,memperoleh,CURRENT,ALLOWED,LEXICAL
+29,تَابَ,bertaubat,CURRENT,ALLOWED,LEXICAL
+30,فَازَ,beruntung,CURRENT,ALLOWED,LEXICAL
+31,عَادَ,kembali,CURRENT,ALLOWED,LEXICAL
+32,بَاعَ,menjual,CURRENT,ALLOWED,LEXICAL
