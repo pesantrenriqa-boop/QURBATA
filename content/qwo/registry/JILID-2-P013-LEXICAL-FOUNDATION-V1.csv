@@ -1,33 +1,33 @@
 slot,word,meaning_id,function,competency_status,lexical_status
-1,قَالَ,berkata,CURRENT,ALLOWED,CURATED
-2,صَامَ,berpuasa,CURRENT,ALLOWED,CURATED
-3,نَامَ,tidur,CURRENT,ALLOWED,CURATED
-4,قَامَ,berdiri,CURRENT,ALLOWED,CURATED
-5,مَاتَ,meninggal,CURRENT,ALLOWED,CURATED
-6,زَادَ,bertambah,CURRENT,ALLOWED,CURATED
-7,فَازَ,menang atau berhasil,CURRENT,ALLOWED,CURATED
-8,طَابَ,menjadi baik,CURRENT,ALLOWED,CURATED
-9,دَارَ,berputar,CURRENT,ALLOWED,CURATED
-10,سَارَ,berjalan,CURRENT,ALLOWED,CURATED
-11,صَارَ,menjadi,CURRENT,ALLOWED,CURATED
-12,حَارَ,bingung,CURRENT,ALLOWED,CURATED
-13,خَافَ,takut,CURRENT,ALLOWED,CURATED
-14,ذَاقَ,merasakan,CURRENT,ALLOWED,CURATED
-15,نَالَ,memperoleh,CURRENT,ALLOWED,CURATED
-16,مَالَ,condong,CURRENT,ALLOWED,CURATED
-17,بَاعَ,menjual,CURRENT,ALLOWED,CURATED
-18,عَادَ,kembali,CURRENT,ALLOWED,CURATED
-19,يَبِسَ,menjadi kering,MUROJAAH,ALLOWED,CURATED
-20,يَمِنَ,menjadi berkah atau berada di kanan,MUROJAAH,ALLOWED,CURATED
-21,يَنَعَ,menjadi matang,MUROJAAH,ALLOWED,CURATED
-22,هَبَطَ,turun,MUROJAAH,ALLOWED,CURATED
-23,وَصَلَ,sampai atau menyambung,MUROJAAH,ALLOWED,CURATED
-24,مَنَعَ,mencegah,MUROJAAH,ALLOWED,CURATED
-25,نَزَلَ,turun,MUROJAAH,ALLOWED,CURATED
-26,كَتَبَ,menulis,MUROJAAH,ALLOWED,CURATED
-27,لَعِبَ,bermain,MUROJAAH,ALLOWED,CURATED
-28,قَرِبَ,menjadi dekat,MUROJAAH,ALLOWED,CURATED
-29,فَرِحَ,bergembira,MUROJAAH,ALLOWED,CURATED
-30,غَرِبَ,menjadi asing atau jauh,MUROJAAH,ALLOWED,CURATED
-31,عَبِثَ,bermain-main atau berbuat sia-sia,MUROJAAH,ALLOWED,CURATED
-32,رَطُبَ,menjadi basah atau lembap,MUROJAAH,ALLOWED,CURATED
+1,بَا,latihan ba panjang,CURRENT,ALLOWED,DRILL
+2,تَا,latihan ta panjang,CURRENT,ALLOWED,DRILL
+3,ثَا,latihan tsa panjang,CURRENT,ALLOWED,DRILL
+4,جَا,latihan jim panjang,CURRENT,ALLOWED,DRILL
+5,حَا,latihan ha panjang,CURRENT,ALLOWED,DRILL
+6,خَا,latihan kha panjang,CURRENT,ALLOWED,DRILL
+7,دَا,latihan dal panjang,CURRENT,ALLOWED,DRILL
+8,ذَا,latihan dzal panjang,CURRENT,ALLOWED,DRILL
+9,رَا,latihan ra panjang,CURRENT,ALLOWED,DRILL
+10,زَا,latihan zai panjang,CURRENT,ALLOWED,DRILL
+11,سَا,latihan sin panjang,CURRENT,ALLOWED,DRILL
+12,شَا,latihan syin panjang,CURRENT,ALLOWED,DRILL
+13,صَا,latihan shad panjang,CURRENT,ALLOWED,DRILL
+14,ضَا,latihan dhad panjang,CURRENT,ALLOWED,DRILL
+15,طَا,latihan tha panjang,CURRENT,ALLOWED,DRILL
+16,ظَا,latihan zha panjang,CURRENT,ALLOWED,DRILL
+17,عَا,latihan ain panjang,CURRENT,ALLOWED,DRILL
+18,غَا,latihan ghain panjang,CURRENT,ALLOWED,DRILL
+19,فَا,latihan fa panjang,CURRENT,ALLOWED,DRILL
+20,قَا,latihan qaf panjang,CURRENT,ALLOWED,DRILL
+21,كَا,latihan kaf panjang,CURRENT,ALLOWED,DRILL
+22,لَا,latihan lam panjang,CURRENT,ALLOWED,DRILL
+23,مَا,latihan mim panjang,CURRENT,ALLOWED,DRILL
+24,نَا,latihan nun panjang,CURRENT,ALLOWED,DRILL
+25,هَا,latihan ha panjang,CURRENT,ALLOWED,DRILL
+26,وَا,latihan waw plus alif,CURRENT,ALLOWED,DRILL
+27,يَا,latihan ya panjang,CURRENT,ALLOWED,DRILL
+28,قَا,ulang qaf panjang,CURRENT,ALLOWED,DRILL
+29,مَا,ulang mim panjang,CURRENT,ALLOWED,DRILL
+30,لَا,ulang lam panjang,CURRENT,ALLOWED,DRILL
+31,نَا,ulang nun panjang,CURRENT,ALLOWED,DRILL
+32,بَا,ulang ba panjang,CURRENT,ALLOWED,DRILL
