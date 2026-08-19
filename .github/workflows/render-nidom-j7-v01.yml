@@ -1,0 +1,45 @@
+name: Render NIDOM Jilid 7 v0.1 OFFICIAL LOGO
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - content/qurbata-jilid-1-8-production
+    paths:
+      - 'tools/render_nidom_j7_v01.js'
+      - 'assets/qurbata/QURBATA-LOGO-v1.0-FROZEN-header.png'
+      - '.github/workflows/render-nidom-j7-v01.yml'
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install renderer dependencies
+        run: |
+          npm install --no-save playwright pdf-lib
+          npx playwright install --with-deps chromium
+      - name: Prepare Uthman Taha font
+        run: |
+          mkdir -p .build-fonts
+          curl -fL --retry 3 'https://raw.githubusercontent.com/quranwbw/qpc-fonts/master/various-woff2/UthmanTN1%20Ver10.woff2' -o .build-fonts/UthmanTaha.woff2
+          test -s .build-fonts/UthmanTaha.woff2
+      - name: Verify official QURBATA logo asset
+        run: test -s assets/qurbata/QURBATA-LOGO-v1.0-FROZEN-header.png
+      - name: Render P001-P040 and master
+        run: node tools/render_nidom_j7_v01.js
+      - name: Production gates
+        run: |
+          COUNT=$(find dist/nidom-akhlak/j7-v01 -maxdepth 1 -type f -regextype posix-extended -regex '.*/QURBATA-NIDOM-J7-P[0-9]{3}-v0\.1\.pdf' | wc -l)
+          echo "INDIVIDUAL_PAGE_COUNT=$COUNT"
+          test "$COUNT" -eq 40
+          test -f dist/nidom-akhlak/j7-v01/QURBATA-NIDOM-J7-P001-P040-PRINT-MASTER-v0.1.pdf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-NIDOM-J7-v0.1-OFFICIAL-LOGO-P001-P040
+          path: dist/nidom-akhlak/j7-v01/*.pdf
+          if-no-files-found: error
