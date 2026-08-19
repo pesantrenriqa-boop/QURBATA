@@ -1,8 +1,12 @@
 # QURBATA Bahasa Arab M01 — Salam & Instruksi Kelas v1.0
 
-Status: CANONICAL_BASELINE
+Status: SUPPLEMENTAL_REFERENCE / SUPERSEDED_AS_CANONICAL
 Stable Unit ID: QBA-M01-BA-001
 Consumer: RIQA Akademi REC / RIQA-M01-BAHASA-01
+
+> Governance notice: sumber canonical resmi untuk kompetensi ini sudah lebih dulu dibekukan di branch `main`:
+> `03_BOOKS/JILID-1/BAHASA-ARAB/UNITS/RIQA-M01-BAHASA-01-SALAM-INSTRUKSI-v1.0.md`.
+> File ini dipertahankan hanya sebagai supplemental/reference dan TIDAK boleh dipakai sebagai canonical kedua.
 
 ## Learning Outcome
 Peserta mampu memahami dan menggunakan salam dasar serta instruksi kelas paling sering dipakai dalam pembelajaran QURBATA secara lisan dan responsif.
@@ -21,13 +25,9 @@ Peserta mampu memahami dan menggunakan salam dasar serta instruksi kelas paling 
 
 ## Mastery Rule
 PASS jika ketepatan respons minimal 80% dan salam dapat dilakukan mandiri.
-Jika belum PASS, lakukan pengulangan terarah dan asesmen ulang.
 
 ## RIQA OS Contract
-competency_id: RIQA-M01-BAHASA-01
-source_unit_id: QBA-M01-BA-001
-evidence_type: ORAL_PRACTICE
-mastery_threshold: 0.80
+Canonical binding harus mengikuti file frozen pada branch `main` yang disebutkan di atas.
 
 ## Governance
-File ini menjadi sumber canonical awal untuk M01. Ia tidak mengubah atau memetakan ulang kompetensi P013–P040. Revisi substansial wajib menaikkan versi.
+Tidak boleh digunakan untuk mengubah canonical binding selama frozen source `main` v1.0 masih berlaku.
