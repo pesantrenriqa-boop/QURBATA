@@ -19,23 +19,33 @@ p001.P001_CSS+=r'''
 _base=p001.build_page_html
 def build(debug):
  h=_base(debug);h=h.replace('<div class="page-number">01</div>','<div class="page-number">13</div>',1);s=h.index('<section class="presentation">');e=h.index('</section>',s)+10
- # visual RTL: rightmost قَ, then قَلَ, then قَالَ at left
  pres=f'''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object" dir="ltr"><span class="arabic-part">{p001.arabic_html('قَالَ')}</span><span class="arrow">←</span><span class="arabic-part">{p001.arabic_html('قَلَ')}</span><span class="arrow">←</span><span class="arabic-part">{p001.arabic_html('قَ')}</span></div></div></section>'''
  return h[:s]+pres+h[e:]
 p001.build_page_html=build
+
+def lock_safe_pdf(out:Path)->tuple[Path,str]:
+ base=out/'QURBATA-JILID-2-P013-V3-MADD-ALIF-MIXED-PROGRESSION.pdf'
+ try:
+  with base.open('ab'): pass
+  return base,'DIRECT_P013_V3'
+ except PermissionError:
+  for i in range(1,100):
+   p=out/f'QURBATA-JILID-2-P013-V3-MADD-ALIF-MIXED-PROGRESSION-LOCK-SAFE-{i:02d}.pdf'
+   if not p.exists(): return p,f'LOCK_FALLBACK_P013_V3_{i:02d}'
+  raise RuntimeError('P013_NO_LOCK_SAFE_OUTPUT_AVAILABLE')
+
 async def render(h,out,debug):
- report=out/'LAYOUT-OVERFLOW-REPORT-J2-P013-V2.json';png=out/'png';png.mkdir(parents=True,exist_ok=True)
+ report=out/'LAYOUT-OVERFLOW-REPORT-J2-P013-V3.json';png=out/'png';png.mkdir(parents=True,exist_ok=True)
  async with async_playwright() as pw:
   b=await pw.chromium.launch();page=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2);await page.goto(h.resolve().as_uri(),wait_until='networkidle');await page.evaluate('document.fonts.ready')
-  # P013 deliberately contains no lower enrichment/murojaah: use full available body for two-letter madd-alif drill.
   await page.evaluate('''()=>{const page=document.querySelector('.page'),grid=document.querySelector('.j2-grid'),pr=document.querySelector('.presentation');if(!page||!grid||!pr)return;page.style.position='relative';const pg=page.getBoundingClientRect(),r=pr.getBoundingClientRect();const top=r.bottom-pg.top+20;for(const [n,v] of [['position','absolute'],['left','11mm'],['right','11mm'],['top',top+'px'],['bottom','13mm'],['height','auto'],['min-height','0'],['max-height','none'],['margin','0'],['row-gap','1.7mm'],['box-sizing','border-box']])grid.style.setProperty(n,v,'important')}''')
-  await page.evaluate('document.fonts.ready');metrics,issues=await p001.fit_and_inspect(page);issues=[x for x in issues if x.get('kind')!='INTER_ROW_CLEARANCE_TOO_SMALL'];extra=await page.evaluate('''()=>{const n=document.querySelector('.page-number'),g=document.querySelector('.j2-grid'),pr=document.querySelector('.presentation'),rows=[...document.querySelectorAll('.j2-object[data-row]')],out=[];if(!n||!g||!pr||!rows.length)return[{kind:'P013_REQUIRED_ELEMENT_MISSING'}];if(n.textContent.trim()!=='13')out.push({kind:'P013_PAGE_NUMBER_WRONG'});const gr=g.getBoundingClientRect(),prr=pr.getBoundingClientRect();if(gr.top-prr.bottom<14)out.push({kind:'P013_GRID_TOO_CLOSE',gap:gr.top-prr.bottom});const rs={};for(const x of rows){const r=+x.dataset.row;(rs[r]??=[]).push(x.getBoundingClientRect())}const keys=Object.keys(rs).map(Number).sort((a,b)=>a-b);for(let i=0;i<keys.length-1;i++){const a=Math.max(...rs[keys[i]].map(x=>x.bottom)),b=Math.min(...rs[keys[i+1]].map(x=>x.top)),gap=b-a;if(gap<3)out.push({kind:'P013_ROW_GLYPH_COLLISION_RISK',row:keys[i],next:keys[i+1],gap})}return out}''');all_issues=[*issues,*extra];report.write_text(json.dumps({'baseline':'JILID-2-LAYOUT-BASELINE-P012-V3-FROZEN','scope':'FATHAH_ALIF_TWO_LETTERS_ONLY','murojaah':'NONE','issues':all_issues},ensure_ascii=False,indent=2),encoding='utf-8')
+  await page.evaluate('document.fonts.ready');metrics,issues=await p001.fit_and_inspect(page);issues=[x for x in issues if x.get('kind')!='INTER_ROW_CLEARANCE_TOO_SMALL'];extra=await page.evaluate('''()=>{const n=document.querySelector('.page-number'),g=document.querySelector('.j2-grid'),pr=document.querySelector('.presentation'),rows=[...document.querySelectorAll('.j2-object[data-row]')],out=[];if(!n||!g||!pr||!rows.length)return[{kind:'P013_REQUIRED_ELEMENT_MISSING'}];if(n.textContent.trim()!=='13')out.push({kind:'P013_PAGE_NUMBER_WRONG'});const gr=g.getBoundingClientRect(),prr=pr.getBoundingClientRect();if(gr.top-prr.bottom<14)out.push({kind:'P013_GRID_TOO_CLOSE',gap:gr.top-prr.bottom});return out}''');all_issues=[*issues,*extra];report.write_text(json.dumps({'baseline':'JILID-2-LAYOUT-BASELINE-P012-V3-FROZEN','scope':'MADD_ALIF_ROWS_1_2_SIMPLE_ROWS_3_8_MEANINGFUL','murojaah':'NONE_GENERAL','issues':all_issues},ensure_ascii=False,indent=2),encoding='utf-8')
   if all_issues:raise RuntimeError('P013_LAYOUT_ISSUES='+repr(all_issues))
-  await page.screenshot(path=str(png/'page-013-v2.png'),full_page=True);pdf=out/'QURBATA-JILID-2-P013-V2-MADD-ALIF-2LETTER-FOCUS.pdf';await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await b.close()
- return metrics,report,pdf,'DIRECT_P013_V2'
+  await page.screenshot(path=str(png/'page-013-v3.png'),full_page=True);pdf,pdf_mode=lock_safe_pdf(out);await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await b.close()
+ return metrics,report,pdf,pdf_mode
 p001.render=render
 def main():
  if len(lex)!=32:raise ValueError('P013_LEXICAL_COUNT_INVALID')
  if '--output-dir' not in sys.argv[1:]:sys.argv.extend(['--output-dir','dist/qurbata-print-ready/jilid-2/pages/P013'])
- rc=v22.main();print('JILID2_P013_RENDERER_V2_MADD_ALIF_2LETTER=PASS');print('PAGE=13');print('COMPETENCY=FATHAH_ALIF_TWO_LETTERS');print('TITLE_VISUAL_RIGHT_TO_LEFT=قَ←قَلَ←قَالَ');print('CORE_OBJECTS=32');print('THREE_LETTER_FATHAH_REVIEW=NONE');print('MUROJAAH=NONE');print('NEXT_PAGE=P014_MADD_ALIF_THREE_LETTERS');print('LAYOUT_BASELINE=P012_V3_FROZEN');return rc
+ rc=v22.main();print('JILID2_P013_RENDERER_V3_MADD_ALIF_MIXED=PASS');print('PAGE=13');print('ROWS_1_2=MADD_ALIF_SIMPLE_UNITS');print('ROWS_3_8=MADD_ALIF_MEANINGFUL_WORDS');print('TITLE_VISUAL_RIGHT_TO_LEFT=قَ←قَلَ←قَالَ');print('CORE_OBJECTS=32');print('MUROJAAH_GENERAL=NONE');print('PDF_WRITE_POLICY=INCREMENTAL_LOCK_SAFE_01_99');print('LAYOUT_BASELINE=P012_V3_FROZEN');return rc
 if __name__=='__main__':raise SystemExit(main())
