@@ -7,27 +7,27 @@ slot,word,meaning_id,function,competency_status,lexical_status
 6,خَا,pola mad alif,CURRENT,ALLOWED,DRILL
 7,دَا,pola mad alif,CURRENT,ALLOWED,DRILL
 8,رَا,pola mad alif,CURRENT,ALLOWED,DRILL
-9,سَا,pola mad alif,CURRENT,ALLOWED,DRILL
-10,شَا,pola mad alif,CURRENT,ALLOWED,DRILL
-11,صَا,pola mad alif,CURRENT,ALLOWED,DRILL
-12,ضَا,pola mad alif,CURRENT,ALLOWED,DRILL
-13,طَا,pola mad alif,CURRENT,ALLOWED,DRILL
-14,عَا,pola mad alif,CURRENT,ALLOWED,DRILL
-15,فَا,pola mad alif,CURRENT,ALLOWED,DRILL
-16,قَا,pola mad alif,CURRENT,ALLOWED,DRILL
-17,مَا,apa / pola bermakna,CURRENT,ALLOWED,LEXICAL
-18,لَا,tidak / pola bermakna,CURRENT,ALLOWED,LEXICAL
-19,يَا,wahai / pola bermakna,CURRENT,ALLOWED,LEXICAL
-20,ذَا,ini/pemilik sesuai konteks / pola bermakna,CURRENT,ALLOWED,LEXICAL
-21,قَالَ,berkata,CURRENT,ALLOWED,LEXICAL
-22,قَامَ,berdiri,CURRENT,ALLOWED,LEXICAL
-23,صَامَ,berpuasa,CURRENT,ALLOWED,LEXICAL
-24,نَامَ,tidur,CURRENT,ALLOWED,LEXICAL
-25,مَاتَ,meninggal,CURRENT,ALLOWED,LEXICAL
-26,زَادَ,bertambah,CURRENT,ALLOWED,LEXICAL
-27,كَانَ,adalah/telah ada,CURRENT,ALLOWED,LEXICAL
-28,نَالَ,memperoleh,CURRENT,ALLOWED,LEXICAL
-29,تَابَ,bertaubat,CURRENT,ALLOWED,LEXICAL
-30,فَازَ,beruntung,CURRENT,ALLOWED,LEXICAL
-31,عَادَ,kembali,CURRENT,ALLOWED,LEXICAL
-32,بَاعَ,menjual,CURRENT,ALLOWED,LEXICAL
+9,قَالَ,berkata,CURRENT,ALLOWED,LEXICAL
+10,قَامَ,berdiri,CURRENT,ALLOWED,LEXICAL
+11,صَامَ,berpuasa,CURRENT,ALLOWED,LEXICAL
+12,نَامَ,tidur,CURRENT,ALLOWED,LEXICAL
+13,مَاتَ,meninggal,CURRENT,ALLOWED,LEXICAL
+14,زَادَ,bertambah,CURRENT,ALLOWED,LEXICAL
+15,كَانَ,adalah atau telah ada,CURRENT,ALLOWED,LEXICAL
+16,نَالَ,memperoleh,CURRENT,ALLOWED,LEXICAL
+17,تَابَ,bertaubat,CURRENT,ALLOWED,LEXICAL
+18,فَازَ,beruntung,CURRENT,ALLOWED,LEXICAL
+19,عَادَ,kembali,CURRENT,ALLOWED,LEXICAL
+20,بَاعَ,menjual,CURRENT,ALLOWED,LEXICAL
+21,طَابَ,menjadi baik,CURRENT,ALLOWED,LEXICAL
+22,دَارَ,berputar,CURRENT,ALLOWED,LEXICAL
+23,سَارَ,berjalan,CURRENT,ALLOWED,LEXICAL
+24,صَارَ,menjadi,CURRENT,ALLOWED,LEXICAL
+25,حَارَ,bingung,CURRENT,ALLOWED,LEXICAL
+26,خَافَ,takut,CURRENT,ALLOWED,LEXICAL
+27,ذَاقَ,merasakan,CURRENT,ALLOWED,LEXICAL
+28,مَالَ,condong,CURRENT,ALLOWED,LEXICAL
+29,حَازَ,memperoleh atau menguasai,CURRENT,ALLOWED,LEXICAL
+30,جَازَ,melewati atau dibolehkan,CURRENT,ALLOWED,LEXICAL
+31,عَاشَ,hidup,CURRENT,ALLOWED,LEXICAL
+32,خَابَ,gagal atau merugi,CURRENT,ALLOWED,LEXICAL
