@@ -1,9 +1,9 @@
 slot,word,meaning_id,function,competency_status,lexical_status,source_note
-1,قَاتَلَ,berperang atau melawan,CURRENT,ALLOWED,QURAN_DERIVED,Quran 3:146 surface form verified
-2,جَاهَدَ,bersungguh-sungguh atau berjihad,CURRENT,ALLOWED,QURAN_DERIVED,Quran 29:6 surface form verified
-3,هَاجَرَ,berhijrah,CURRENT,ALLOWED,QURAN_DERIVED,Quran 59:9 surface form verified
-4,عَاهَدَ,berjanji atau membuat perjanjian,CURRENT,ALLOWED,QURAN_DERIVED,Quran 9:75 surface form verified
-5,بَارَكَ,memberkahi,CURRENT,ALLOWED,QURAN_DERIVED,Quran-derived verb form
+1,قَاتَلَ,berperang atau melawan,CURRENT,ALLOWED,QURAN_DERIVED,Quran-derived surface/lemma
+2,جَاهَدَ,bersungguh-sungguh atau berjihad,CURRENT,ALLOWED,QURAN_DERIVED,Quran-derived surface/lemma
+3,هَاجَرَ,berhijrah,CURRENT,ALLOWED,QURAN_DERIVED,Quran-derived surface/lemma
+4,عَاهَدَ,berjanji atau membuat perjanjian,CURRENT,ALLOWED,QURAN_DERIVED,Quran-derived surface/lemma
+5,بَارَكَ,memberkahi,CURRENT,ALLOWED,QURAN_DERIVED,Quran-derived surface/lemma
 6,شَاهِد,saksi,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
 7,كَافِر,orang kafir,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
 8,صَالِح,orang saleh atau baik,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
@@ -18,16 +18,16 @@ slot,word,meaning_id,function,competency_status,lexical_status,source_note
 17,عَابِد,orang yang beribadah,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
 18,سَاجِد,orang yang bersujud,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
 19,قَانِت,orang yang taat,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
-20,يُقَالُ,dikatakan,CURRENT,ALLOWED,QURAN_DERIVED,Quran 41:43 surface form verified; dhammah review
-21,سُبَات,istirahat atau tidur,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized without case ending; dhammah review
-22,تُرَاب,tanah,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized without case ending; dhammah review
-23,غُرَاب,gagak,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized without case ending; dhammah review
-24,فُرَات,air tawar yang segar,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized without case ending; dhammah review
-25,قَاتَلَ,berperang atau melawan,MUROJAAH,ALLOWED,QURAN_DERIVED,repeat for fluency
-26,جَاهَدَ,bersungguh-sungguh atau berjihad,MUROJAAH,ALLOWED,QURAN_DERIVED,repeat for fluency
-27,كَافِر,orang kafir,MUROJAAH,ALLOWED,QURAN_DERIVED,kasrah review
-28,صَالِح,orang saleh atau baik,MUROJAAH,ALLOWED,QURAN_DERIVED,kasrah review
-29,يُقَالُ,dikatakan,MUROJAAH,ALLOWED,QURAN_DERIVED,dhammah review
-30,سُبَات,istirahat atau tidur,MUROJAAH,ALLOWED,QURAN_DERIVED,dhammah review
-31,تُرَاب,tanah,MUROJAAH,ALLOWED,QURAN_DERIVED,dhammah review
-32,غُرَاب,gagak,MUROJAAH,ALLOWED,QURAN_DERIVED,dhammah review
+20,يُقَالُ,dikatakan,CURRENT,ALLOWED,QURAN_DERIVED,Quran-derived form; dhammah review
+21,سُبَات,istirahat atau tidur,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; dhammah review
+22,تُرَاب,tanah,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; dhammah review
+23,غُرَاب,gagak,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; dhammah review
+24,فُرَات,air tawar yang segar,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; dhammah review
+25,كِتَاب,kitab atau buku,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; kasrah review
+26,حِسَاب,perhitungan,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; kasrah review
+27,عَذَاب,siksaan,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized
+28,لِبَاس,pakaian,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; kasrah review
+29,شَرَاب,minuman,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized
+30,سِرَاج,pelita,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; kasrah review
+31,نَهَار,siang,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized
+32,سَلَام,salam atau keselamatan,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized
