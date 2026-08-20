@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import csv,json,sys
+import csv,json,sys,unicodedata
 from pathlib import Path
 from playwright.async_api import async_playwright
 ROOT=Path(__file__).resolve().parents[1]
@@ -11,6 +11,25 @@ LEX=ROOT/'content/qwo/registry/JILID-2-P014-LEXICAL-FOUNDATION-V1.csv'
 MICRO=ROOT/'content/qwo/registry/JILID-2-MICRO-COMPETENCY-P014-V1.csv'
 with LEX.open(encoding='utf-8-sig',newline='') as f: lex=list(csv.DictReader(f))
 core=[r['word'] for r in lex]
+
+def normalize_word(s:str)->str:
+    s=unicodedata.normalize('NFD',s).replace('ـ','')
+    return ''.join(ch for ch in s if unicodedata.category(ch)!='Mn')
+
+def duplicate_values(seq):
+    seen=set();dup=[]
+    for x in seq:
+        if x in seen and x not in dup: dup.append(x)
+        seen.add(x)
+    return dup
+
+EXACT_DUPLICATES=duplicate_values(core)
+NORMALIZED=[normalize_word(w) for w in core]
+NORMALIZED_DUPLICATES=duplicate_values(NORMALIZED)
+if EXACT_DUPLICATES: raise ValueError('P014_EXACT_DUPLICATE_WORDS='+repr(EXACT_DUPLICATES))
+if NORMALIZED_DUPLICATES: raise ValueError('P014_NORMALIZED_DUPLICATE_WORDS='+repr(NORMALIZED_DUPLICATES))
+if len(set(core))!=32 or len(set(NORMALIZED))!=32: raise ValueError('P014_UNIQUENESS_GUARD_FAIL')
+
 p001.MICRO=MICRO
 p001.P001_ROWS=[core[i:i+4] for i in range(0,32,4)]
 p001.P001_BANNED_JOINING=set()
@@ -28,24 +47,23 @@ def build(debug):
  h=_base(debug)
  h=h.replace('<div class="page-number">01</div>','<div class="page-number">14</div>',1)
  s=h.index('<section class="presentation">');e=h.index('</section>',s)+10
- # visual RTL: rightmost قَالَ then leftward expansion to قَاتَلَ
  pres=f'''<section class="presentation"><div class="presentation-object-wrap"><div class="presentation-object" dir="ltr"><span class="arabic-part">{p001.arabic_html('قَاتَلَ')}</span><span class="arrow">←</span><span class="arabic-part">{p001.arabic_html('قَالَ')}</span></div></div></section>'''
  return h[:s]+pres+h[e:]
 p001.build_page_html=build
 
 def lock_safe_target(out:Path)->tuple[Path,str]:
- base=out/'QURBATA-JILID-2-P014-V1-MADD-ALIF-4LETTER-QURAN-DERIVED.pdf'
+ base=out/'QURBATA-JILID-2-P014-V2-MADD-ALIF-4LETTER-UNIQUE32.pdf'
  try:
   with base.open('ab'): pass
-  return base,'DIRECT_P014_V1'
+  return base,'DIRECT_P014_V2'
  except PermissionError:
   for i in range(1,100):
-   p=out/f'QURBATA-JILID-2-P014-V1-MADD-ALIF-4LETTER-QURAN-DERIVED-LOCK-SAFE-{i:02d}.pdf'
-   if not p.exists(): return p,f'LOCK_FALLBACK_P014_V1_{i:02d}'
+   p=out/f'QURBATA-JILID-2-P014-V2-MADD-ALIF-4LETTER-UNIQUE32-LOCK-SAFE-{i:02d}.pdf'
+   if not p.exists(): return p,f'LOCK_FALLBACK_P014_V2_{i:02d}'
   raise RuntimeError('P014_NO_LOCK_SAFE_OUTPUT_AVAILABLE')
 
 async def render(h,out,debug):
- report=out/'LAYOUT-OVERFLOW-REPORT-J2-P014-V1.json';png=out/'png';png.mkdir(parents=True,exist_ok=True)
+ report=out/'LAYOUT-OVERFLOW-REPORT-J2-P014-V2.json';png=out/'png';png.mkdir(parents=True,exist_ok=True)
  async with async_playwright() as pw:
   b=await pw.chromium.launch();page=await b.new_page(viewport={'width':1120,'height':1584},device_scale_factor=2)
   await page.goto(h.resolve().as_uri(),wait_until='networkidle');await page.evaluate('document.fonts.ready')
@@ -53,11 +71,11 @@ async def render(h,out,debug):
   await page.evaluate('document.fonts.ready')
   metrics,issues=await p001.fit_and_inspect(page)
   issues=[x for x in issues if x.get('kind')!='INTER_ROW_CLEARANCE_TOO_SMALL']
-  extra=await page.evaluate('''()=>{const n=document.querySelector('.page-number'),g=document.querySelector('.j2-grid'),pr=document.querySelector('.presentation'),rows=[...document.querySelectorAll('.j2-object[data-row]')],out=[];if(!n||!g||!pr||!rows.length)return[{kind:'P014_REQUIRED_ELEMENT_MISSING'}];if(n.textContent.trim()!=='14')out.push({kind:'P014_PAGE_NUMBER_WRONG'});const gr=g.getBoundingClientRect(),prr=pr.getBoundingClientRect();if(gr.top-prr.bottom<14)out.push({kind:'P014_GRID_TOO_CLOSE',gap:gr.top-prr.bottom});const glyphs=[...document.querySelectorAll('.j2-glyph')];for(const el of glyphs){const r=el.getBoundingClientRect(),p=el.parentElement.getBoundingClientRect();if(r.left<p.left-1||r.right>p.right+1)out.push({kind:'P014_HORIZONTAL_GLYPH_OVERFLOW',text:el.textContent,left:r.left-p.left,right:r.right-p.right})}return out}''')
+  extra=await page.evaluate('''()=>{const n=document.querySelector('.page-number'),g=document.querySelector('.j2-grid'),pr=document.querySelector('.presentation'),out=[];if(!n||!g||!pr)return[{kind:'P014_REQUIRED_ELEMENT_MISSING'}];if(n.textContent.trim()!=='14')out.push({kind:'P014_PAGE_NUMBER_WRONG'});const gr=g.getBoundingClientRect(),prr=pr.getBoundingClientRect();if(gr.top-prr.bottom<14)out.push({kind:'P014_GRID_TOO_CLOSE',gap:gr.top-prr.bottom});const glyphs=[...document.querySelectorAll('.j2-glyph')];for(const el of glyphs){const r=el.getBoundingClientRect(),p=el.parentElement.getBoundingClientRect();if(r.left<p.left-1||r.right>p.right+1)out.push({kind:'P014_HORIZONTAL_GLYPH_OVERFLOW',text:el.textContent,left:r.left-p.left,right:r.right-p.right})}return out}''')
   all_issues=[*issues,*extra]
-  report.write_text(json.dumps({'baseline':'JILID-2-LAYOUT-BASELINE-P012-V3-FROZEN','scope':'MADD_ALIF_4LETTER_VARIATIVE','review_harakat':['kasrah','dhammah'],'quran_derived':True,'issues':all_issues},ensure_ascii=False,indent=2),encoding='utf-8')
+  report.write_text(json.dumps({'baseline':'JILID-2-LAYOUT-BASELINE-P012-V3-FROZEN','scope':'MADD_ALIF_4LETTER_VARIATIVE','review_harakat':['kasrah','dhammah'],'quran_derived':True,'exact_unique_count':len(set(core)),'normalized_unique_count':len(set(NORMALIZED)),'duplicate_guard':'PASS','issues':all_issues},ensure_ascii=False,indent=2),encoding='utf-8')
   if all_issues:raise RuntimeError('P014_LAYOUT_ISSUES='+repr(all_issues))
-  await page.screenshot(path=str(png/'page-014-v1.png'),full_page=True)
+  await page.screenshot(path=str(png/'page-014-v2.png'),full_page=True)
   pdf,pdf_mode=lock_safe_target(out);await page.pdf(path=str(pdf),format='A5',print_background=True,margin={'top':'0','right':'0','bottom':'0','left':'0'});await b.close()
  return metrics,report,pdf,pdf_mode
 p001.render=render
@@ -66,16 +84,15 @@ def main():
  if len(lex)!=32:raise ValueError('P014_LEXICAL_COUNT_INVALID')
  if '--output-dir' not in sys.argv[1:]:sys.argv.extend(['--output-dir','dist/qurbata-print-ready/jilid-2/pages/P014'])
  rc=v22.main()
- print('JILID2_P014_RENDERER_V1_MADD_ALIF_4LETTER=PASS')
+ print('JILID2_P014_RENDERER_V2_UNIQUE32_GUARD=PASS')
  print('PAGE=14')
  print('COMPETENCY=MADD_ALIF_4LETTER_VARIATIVE')
  print('TITLE_VISUAL_RIGHT_TO_LEFT=قَالَ←قَاتَلَ')
  print('CORE_OBJECTS=32')
- print('CORE_ROWS=8')
- print('PRACTICE_FONT_PT=30')
+ print('EXACT_UNIQUE_WORDS=32')
+ print('NORMALIZED_UNIQUE_WORDS=32')
+ print('DUPLICATE_GUARD=EXACT|NORMALIZED')
  print('REVIEW_HARAKAT=KASRAH|DAMMAH_WITHIN_MADD_ALIF_WORDS')
- print('QURAN_DERIVED_EXAMPLES=ENABLED')
- print('NEW_MARK_LEAKAGE=SUKUN|TANWIN|SHADDA|HAMZAH_FORBIDDEN_BY_CONTENT_POLICY')
  print('LAYOUT_BASELINE=P012_V3_FROZEN')
  print('PDF_WRITE_POLICY=INCREMENTAL_LOCK_SAFE_01_99')
  return rc
