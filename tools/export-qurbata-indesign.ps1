@@ -65,16 +65,16 @@ function Get-TableRows([string]$Text) {
     }
     return @($rows|Group-Object No|ForEach-Object{$_.Group[0]}|Sort-Object No)
 }
-function Rank-Source([int]$J,[int]$P,[string]$Path) {
-    $p=$Path -replace '\\','/'
-    if($J-eq 1-and$p-match'/pages/QJ1-P\d{3}\.md$'){return 100}
-    if($J-eq 2-and$P-le 24-and$p-match'/regenerated/'){return 100}
-    if($J-eq 2-and$P-ge 25-and$p-match'/rebased/'){return 100}
-    if($J-eq 2-and$p-match'/pages/'){return 70}
-    if($J-eq 3-and$p-match'/pages/QJ3-P\d{3}\.md$'){return 100}
-    if($J-eq 3-and$p-match'/pages/'){return 90}
-    if($J-eq 3-and$p-match'/recovery/'){return 80}
-    if($p-match"/jilid-$J/pages/"){return 90}; return 10
+function Rank-Source([int]$J,[int]$PageNumber,[string]$Path) {
+    $normalizedPath=$Path -replace '\\','/'
+    if($J-eq 1-and$normalizedPath-match'/pages/QJ1-P\d{3}\.md$'){return 100}
+    if($J-eq 2-and$PageNumber-le 24-and$normalizedPath-match'/regenerated/'){return 100}
+    if($J-eq 2-and$PageNumber-ge 25-and$normalizedPath-match'/rebased/'){return 100}
+    if($J-eq 2-and$normalizedPath-match'/pages/'){return 70}
+    if($J-eq 3-and$normalizedPath-match'/pages/QJ3-P\d{3}\.md$'){return 100}
+    if($J-eq 3-and$normalizedPath-match'/pages/'){return 90}
+    if($J-eq 3-and$normalizedPath-match'/recovery/'){return 80}
+    if($normalizedPath-match"/jilid-$J/pages/"){return 90}; return 10
 }
 function Get-Candidates([int]$J) {
     $base=Join-Path $RepoRoot "books\jilid-$J"; if(-not(Test-Path $base)){return @()}
