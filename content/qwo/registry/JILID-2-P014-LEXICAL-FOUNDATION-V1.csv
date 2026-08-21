@@ -4,30 +4,30 @@ slot,word,meaning_id,function,competency_status,lexical_status,source_note
 3,هَاجَرَ,berhijrah,CURRENT,ALLOWED,QURAN_DERIVED,Quran-derived surface/lemma
 4,عَاهَدَ,berjanji atau membuat perjanjian,CURRENT,ALLOWED,QURAN_DERIVED,Quran-derived surface/lemma
 5,بَارَكَ,memberkahi,CURRENT,ALLOWED,QURAN_DERIVED,Quran-derived surface/lemma
-6,شَاهِد,saksi,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
-7,كَافِر,orang kafir,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
-8,صَالِح,orang saleh atau baik,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
-9,ظَالِم,orang zalim,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
-10,رَاكِع,orang yang rukuk,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
-11,شَاكِر,orang yang bersyukur,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
-12,صَابِر,orang yang sabar,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
-13,قَادِر,yang mampu atau berkuasa,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
-14,خَاسِر,orang yang rugi,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
-15,فَاسِق,orang fasik,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
-16,غَالِب,yang mengalahkan atau menang,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
-17,عَابِد,orang yang beribadah,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
-18,سَاجِد,orang yang bersujud,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
-19,قَانِت,orang yang taat,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized without case ending
+6,شَاهِدُ,saksi,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized; final dhammah added for full vocalization
+7,كَافِرُ,orang kafir,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized; final dhammah added for full vocalization
+8,صَالِحُ,orang saleh atau baik,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized; final dhammah added for full vocalization
+9,ظَالِمُ,orang zalim,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized; final dhammah added for full vocalization
+10,رَاكِعُ,orang yang rukuk,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized; final dhammah added for full vocalization
+11,شَاكِرُ,orang yang bersyukur,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized; final dhammah added for full vocalization
+12,صَابِرُ,orang yang sabar,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized; final dhammah added for full vocalization
+13,قَادِرُ,yang mampu atau berkuasa,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized; final dhammah added for full vocalization
+14,خَاسِرُ,orang yang rugi,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized; final dhammah added for full vocalization
+15,فَاسِقُ,orang fasik,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized; final dhammah added for full vocalization
+16,غَالِبُ,yang mengalahkan atau menang,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized; final dhammah added for full vocalization
+17,عَابِدُ,orang yang beribadah,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized; final dhammah added for full vocalization
+18,سَاجِدُ,orang yang bersujud,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized; final dhammah added for full vocalization
+19,قَانِتُ,orang yang taat,CURRENT,ALLOWED,QURAN_DERIVED,Quranic lemma normalized; final dhammah added for full vocalization
 20,يُقَالُ,dikatakan,CURRENT,ALLOWED,QURAN_DERIVED,Quran-derived form; dhammah review
-21,سُبَات,istirahat atau tidur,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; dhammah review
-22,تُرَاب,tanah,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; dhammah review
-23,غُرَاب,gagak,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; dhammah review
-24,فُرَات,air tawar yang segar,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; dhammah review
-25,كِتَاب,kitab atau buku,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; kasrah review
-26,حِسَاب,perhitungan,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; kasrah review
-27,عَذَاب,siksaan,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized
-28,لِبَاس,pakaian,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; kasrah review
-29,شَرَاب,minuman,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized
-30,سِرَاج,pelita,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; kasrah review
-31,نَهَار,siang,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized
-32,سَلَام,salam atau keselamatan,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized
+21,سُبَاتُ,istirahat atau tidur,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; final dhammah added
+22,تُرَابُ,tanah,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; final dhammah added
+23,غُرَابُ,gagak,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; final dhammah added
+24,فُرَاتُ,air tawar yang segar,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; final dhammah added
+25,كِتَابُ,kitab atau buku,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; kasrah review and final dhammah
+26,حِسَابُ,perhitungan,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; kasrah review and final dhammah
+27,عَذَابُ,siksaan,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; final dhammah added
+28,لِبَاسُ,pakaian,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; kasrah review and final dhammah
+29,شَرَابُ,minuman,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; final dhammah added
+30,سِرَاجُ,pelita,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; kasrah review and final dhammah
+31,نَهَارُ,siang,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; final dhammah added
+32,سَلَامُ,salam atau keselamatan,CURRENT,ALLOWED,QURAN_DERIVED,Quranic noun normalized; final dhammah added
