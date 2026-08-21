@@ -7,128 +7,180 @@ param(
 $ErrorActionPreference = 'Stop'
 $Utf8Bom = New-Object System.Text.UTF8Encoding($true)
 
-function Get-SectionText {
-    param([string]$Text,[string]$HeadingPattern)
-    $m = [regex]::Match($Text, "(?ms)^##\s+[^\r\n]*$HeadingPattern[^\r\n]*\r?\n(.*?)(?=^##\s+|\z)")
-    if ($m.Success) { return $m.Groups[1].Value.Trim() }
-    return ''
+function Rel([string]$Path) {
+    return $Path.Substring($RepoRoot.Length).TrimStart('\','/') -replace '\\','/'
 }
-
-function Get-FirstBoldValue {
-    param([string]$Text,[string]$Label)
-    $m = [regex]::Match($Text, "(?m)^\*\*$([regex]::Escape($Label)):\*\*\s*(.+?)\s*$")
-    if ($m.Success) { return $m.Groups[1].Value.Trim() }
-    return ''
+function FirstBold([string]$Text,[string]$Label) {
+    $m=[regex]::Match($Text,"(?m)^\*\*$([regex]::Escape($Label)):\*\*\s*(.+?)\s*$")
+    if($m.Success){return $m.Groups[1].Value.Trim()}; return ''
 }
-
-function Get-PageTitle {
-    param([string]$Text)
-    $m = [regex]::Match($Text, '(?m)^#\s+(.+?)\s*$')
-    if ($m.Success) { return $m.Groups[1].Value.Trim() }
-    return ''
+function Title([string]$Text) {
+    $m=[regex]::Match($Text,'(?m)^#{1,3}\s+(.+?)\s*$')
+    if($m.Success){return $m.Groups[1].Value.Trim()}; return ''
 }
-
-function Get-TanggaRows {
-    param([string]$Text)
-    $rows = @()
-    foreach ($line in ($Text -split "`r?`n")) {
-        if ($line -match '^\|\s*(\d{1,2})\s*\|\s*([^|]+?)\s*\|(?:\s*([^|]+?)\s*\|)?\s*([^|]+?)\s*\|\s*$') {
-            $n = [int]$Matches[1]
-            if ($n -ge 1 -and $n -le 24) {
-                $exerciseId = $Matches[2].Trim()
-                $maybeType = $Matches[3]
-                $practice = $Matches[4].Trim()
-                $type = ''
-                if ($null -ne $maybeType -and $maybeType.Trim() -ne '') { $type = $maybeType.Trim() }
-                $rows += [pscustomobject]@{ No=$n; ExerciseID=$exerciseId; Type=$type; Text=$practice }
+function Section([string]$Text,[string]$Names) {
+    $m=[regex]::Match($Text,"(?ms)^#{2,4}\s+[^\r\n]*(?:$Names)[^\r\n]*\r?\n(.*?)(?=^#{1,4}\s+|\z)")
+    if($m.Success){return $m.Groups[1].Value.Trim()}; return ''
+}
+function OneLine([string]$Text) {
+    return (($Text -replace '(?m)^\s*[|>#].*$','' -replace '\r?\n+',' ' -replace '\s+',' ').Trim())
+}
+function Get-PageFragments([System.IO.FileInfo]$File) {
+    $text=[IO.File]::ReadAllText($File.FullName,[Text.Encoding]::UTF8)
+    $direct=[regex]::Match($File.BaseName,'QJ\d+-P\d{3}')
+    $codes=[regex]::Matches($text,'(?m)^#{1,4}\s+.*?(QJ\d+-P\d{3}).*$')
+    if($codes.Count -le 1 -and $direct.Success){
+        return ,([pscustomobject]@{Code=$direct.Value;Text=$text;File=$File})
+    }
+    $out=@()
+    for($i=0;$i -lt $codes.Count;$i++){
+        $start=$codes[$i].Index
+        $end=if($i+1 -lt $codes.Count){$codes[$i+1].Index}else{$text.Length}
+        $out += [pscustomobject]@{Code=$codes[$i].Groups[1].Value;Text=$text.Substring($start,$end-$start);File=$File}
+    }
+    return $out
+}
+function Get-TableRows([string]$Text) {
+    $lines=$Text -split "`r?`n"
+    $rows=@()
+    for($i=0;$i -lt $lines.Count-2;$i++){
+        if($lines[$i] -notmatch '^\s*\|'){continue}
+        $hdr=@($lines[$i].Trim('|') -split '\|' | ForEach-Object {$_.Trim()})
+        if($lines[$i+1] -notmatch '^\s*\|\s*:?-+'){continue}
+        $noIdx=-1;$matIdx=-1;$idIdx=-1;$typeIdx=-1
+        for($h=0;$h -lt $hdr.Count;$h++){
+            $x=$hdr[$h].ToLowerInvariant()
+            if($x -match '^(no\.?|tangga)$'){$noIdx=$h}
+            if($x -match '^(latihan|materi|bacaan|contoh|teks)$'){$matIdx=$h}
+            if($x -match 'exercise-id|id latihan'){$idIdx=$h}
+            if($x -match '^(jenis|fungsi|tipe)$'){$typeIdx=$h}
+        }
+        if($noIdx -lt 0 -or $matIdx -lt 0){continue}
+        for($r=$i+2;$r -lt $lines.Count;$r++){
+            if($lines[$r] -notmatch '^\s*\|'){break}
+            $c=@($lines[$r].Trim('|') -split '\|' | ForEach-Object {$_.Trim()})
+            if($c.Count -le [Math]::Max($noIdx,$matIdx)){continue}
+            if($c[$noIdx] -notmatch '^\d{1,2}$'){continue}
+            $n=[int]$c[$noIdx]; if($n -lt 1 -or $n -gt 24){continue}
+            $rows += [pscustomobject]@{
+                No=$n
+                Text=$c[$matIdx]
+                ExerciseID=if($idIdx -ge 0 -and $idIdx -lt $c.Count){$c[$idIdx]}else{''}
+                Type=if($typeIdx -ge 0 -and $typeIdx -lt $c.Count){$c[$typeIdx]}else{''}
             }
         }
     }
-    return $rows | Sort-Object No -Unique
+    return @($rows | Group-Object No | ForEach-Object {$_.Group[0]} | Sort-Object No)
 }
-
-function Get-ArabicPilot {
-    param([string]$Text)
-    $m = [regex]::Match($Text, '(?m)^-\s*\*\*Fokus lisan:\*\*\s*(.+?)\s*$')
-    if ($m.Success) { return $m.Groups[1].Value.Trim() }
-    return ''
+function Rank-Source([int]$J,[int]$P,[string]$Path) {
+    $p=$Path -replace '\\','/'
+    if($J -eq 1 -and $p -match '/pages/QJ1-P\d{3}\.md$'){return 100}
+    if($J -eq 2 -and $P -le 24 -and $p -match '/regenerated/'){return 100}
+    if($J -eq 2 -and $P -ge 25 -and $p -match '/rebased/'){return 100}
+    if($J -eq 2 -and $p -match '/pages/'){return 70}
+    if($J -eq 3 -and $p -match '/pages/QJ3-P\d{3}\.md$'){return 100}
+    if($J -eq 3 -and $p -match '/pages/'){return 90}
+    if($J -eq 3 -and $p -match '/recovery/'){return 80}
+    if($p -match "/jilid-$J/pages/"){return 90}
+    return 10
 }
-
-function Get-Akhlak {
-    param([string]$Text)
-    $section = Get-SectionText -Text $Text -HeadingPattern 'Tema Akhlak|Akhlak'
-    $m = [regex]::Match($section, '(?m)^>\s*(.+?)\s*$')
-    if ($m.Success) { return $m.Groups[1].Value.Trim() }
-    return ''
+function Get-Candidates([int]$J) {
+    $base=Join-Path $RepoRoot "books\jilid-$J"
+    if(-not(Test-Path $base)){return @()}
+    $dirs=@('pages')
+    if($J -eq 2){$dirs=@('regenerated','rebased','pages')}
+    if($J -eq 3){$dirs=@('pages','recovery')}
+    $all=@()
+    foreach($d in $dirs){
+        $dir=Join-Path $base $d; if(-not(Test-Path $dir)){continue}
+        foreach($f in Get-ChildItem $dir -Filter '*.md' -File){
+            foreach($frag in @(Get-PageFragments $f)){
+                if($frag.Code -notmatch "^QJ$J-P(\d{3})$"){continue}
+                $pn=[int]$Matches[1]
+                $all += [pscustomobject]@{Code=$frag.Code;Page=$pn;Text=$frag.Text;File=$frag.File;Rank=(Rank-Source $J $pn $frag.File.FullName)}
+            }
+        }
+    }
+    return $all
 }
-
-function Get-Outcome {
-    param([string]$Text)
-    $section = Get-SectionText -Text $Text -HeadingPattern 'Outcome Halaman|Hasil Akhir'
-    if (-not $section) { return '' }
-    $plain = ($section -replace '(?m)^\s*[-*>#|].*$','' -replace '\r?\n+',' ' -replace '\s+',' ').Trim()
-    return $plain
+function ExtractSimple([string]$Text,[string]$Names){
+    $s=Section $Text $Names; if(-not $s){return ''}
+    $m=[regex]::Match($s,'(?m)^>\s*(.+)$'); if($m.Success){return $m.Groups[1].Value.Trim()}
+    $m=[regex]::Match($s,'(?m)^[-*]\s+(?:\*\*[^*]+:\*\*\s*)?(.+)$'); if($m.Success){return $m.Groups[1].Value.Trim()}
+    return OneLine $s
 }
 
 New-Item -ItemType Directory -Force -Path $OutputDir | Out-Null
+$records=New-Object Collections.Generic.List[object]
+$audit=New-Object Collections.Generic.List[object]
 
-$all = New-Object System.Collections.Generic.List[object]
-
-foreach ($j in $Jilid) {
-    $pagesDir = Join-Path $RepoRoot "books\jilid-$j\pages"
-    if (-not (Test-Path $pagesDir)) { continue }
-
-    $files = Get-ChildItem $pagesDir -Filter "QJ$j-P*.md" -File | Sort-Object Name
-    foreach ($file in $files) {
-        $text = [System.IO.File]::ReadAllText($file.FullName, [System.Text.Encoding]::UTF8)
-        $pageCodeMatch = [regex]::Match($file.BaseName, 'QJ\d+-P\d{3}')
-        if (-not $pageCodeMatch.Success) { continue }
-        $pageCode = $pageCodeMatch.Value
-        $tangga = @(Get-TanggaRows -Text $text)
-
-        $record = [ordered]@{
-            PageCode       = $pageCode
-            Jilid          = $j
-            PageNumber     = [int]([regex]::Match($pageCode,'P(\d{3})').Groups[1].Value)
-            Title          = Get-PageTitle -Text $text
-            Status         = Get-FirstBoldValue -Text $text -Label 'Status'
-            Version        = Get-FirstBoldValue -Text $text -Label 'Versi'
-            Outcome        = Get-Outcome -Text $text
-            ArabicOral     = Get-ArabicPilot -Text $text
-            Akhlak         = Get-Akhlak -Text $text
-            SourceFile     = $file.FullName.Substring($RepoRoot.Length).TrimStart('\','/') -replace '\\','/'
-            TanggaCount    = $tangga.Count
+foreach($j in $Jilid){
+    $cands=@(Get-Candidates $j)
+    foreach($g in ($cands | Group-Object Code | Sort-Object Name)){
+        $ordered=@($g.Group | Sort-Object @{Expression='Rank';Descending=$true},@{Expression={$_.File.Name -match 'Revisi'};Descending=$true},@{Expression={$_.File.Length};Descending=$true})
+        $chosen=$ordered[0]
+        $sameTop=@($ordered | Where-Object Rank -eq $chosen.Rank)
+        $rows=@(Get-TableRows $chosen.Text)
+        $conflict=$sameTop.Count -gt 1
+        $r=[ordered]@{
+            PageCode=$chosen.Code; Jilid=$j; PageNumber=$chosen.Page
+            Title=Title $chosen.Text
+            Status=FirstBold $chosen.Text 'Status'
+            Version=FirstBold $chosen.Text 'Versi'
+            SourceFile=Rel $chosen.File.FullName
+            SourcePriority=$chosen.Rank
+            SourceConflict=$conflict
+            CandidateCount=$ordered.Count
+            CandidateFiles=($ordered | ForEach-Object {Rel $_.File.FullName}) -join ' | '
+            TanggaCount=$rows.Count
+            Outcome=OneLine (Section $chosen.Text 'Outcome Halaman|Tujuan|Hasil Akhir')
+            Nidom=ExtractSimple $chosen.Text 'NIDOM|NIDHOM'
+            BahasaArab=ExtractSimple $chosen.Text 'Bahasa Arab|Segmen Bahasa Arab'
+            Tahfidz=ExtractSimple $chosen.Text 'Tahfidz|Hafalan'
+            Akhlak=ExtractSimple $chosen.Text 'Tema Akhlak|Akhlak'
+            PhysicalRows=8
+            DefaultCellsPerRow=3
         }
-
-        for ($i=1; $i -le 24; $i++) {
-            $row = $tangga | Where-Object No -eq $i | Select-Object -First 1
-            $record[('ExerciseID{0:D2}' -f $i)] = if ($row) { $row.ExerciseID } else { '' }
-            $record[('Type{0:D2}' -f $i)]       = if ($row) { $row.Type } else { '' }
-            $record[('Slot{0:D2}' -f $i)]       = if ($row) { $row.Text } else { '' }
+        for($i=1;$i -le 24;$i++){
+            $x=$rows | Where-Object No -eq $i | Select-Object -First 1
+            $r[('ExerciseID{0:D2}' -f $i)]=if($x){$x.ExerciseID}else{''}
+            $r[('Type{0:D2}' -f $i)]=if($x){$x.Type}else{''}
+            $r[('Slot{0:D2}' -f $i)]=if($x){$x.Text}else{''}
         }
-
-        $all.Add([pscustomobject]$record)
+        for($row=1;$row -le 8;$row++){
+            $r[('Row{0:D2}Count' -f $row)]=3
+            for($cell=1;$cell -le 3;$cell++){
+                $slot=(($row-1)*3)+$cell
+                $r[('Row{0:D2}Cell{1:D2}' -f $row,$cell)]=$r[('Slot{0:D2}' -f $slot)]
+            }
+        }
+        $records.Add([pscustomobject]$r)
+        $audit.Add([pscustomobject]@{
+            PageCode=$chosen.Code;SourceFile=Rel $chosen.File.FullName;SourcePriority=$chosen.Rank
+            CandidateCount=$ordered.Count;SourceConflict=$conflict;TanggaCount=$rows.Count
+            ReadyForContentMerge=($rows.Count -eq 24 -and -not $conflict)
+            Note=if($conflict){'MULTIPLE_TOP_PRIORITY_SOURCES_REVIEW_REQUIRED'}elseif($rows.Count -ne 24){'TANGGA_NOT_24_OR_PARSER_REVIEW_REQUIRED'}else{'OK'}
+        })
     }
 }
 
-$csvPath = Join-Path $OutputDir 'QURBATA-INDESIGN-DATA-MERGE.csv'
-$jsonPath = Join-Path $OutputDir 'QURBATA-INDESIGN-DATA.json'
-$auditPath = Join-Path $OutputDir 'QURBATA-INDESIGN-EXPORT-AUDIT.csv'
+$sorted=@($records | Sort-Object Jilid,PageNumber)
+$csvPath=Join-Path $OutputDir 'QURBATA-INDESIGN-DATA-MERGE.csv'
+$jsonPath=Join-Path $OutputDir 'QURBATA-INDESIGN-DATA.json'
+$auditPath=Join-Path $OutputDir 'QURBATA-INDESIGN-EXPORT-AUDIT.csv'
+$layoutPath=Join-Path $OutputDir 'QURBATA-INDESIGN-8ROW-LAYOUT.csv'
+[IO.File]::WriteAllLines($csvPath,($sorted|ConvertTo-Csv -NoTypeInformation),$Utf8Bom)
+[IO.File]::WriteAllText($jsonPath,($sorted|ConvertTo-Json -Depth 7),$Utf8Bom)
+[IO.File]::WriteAllLines($auditPath,($audit|Sort-Object PageCode|ConvertTo-Csv -NoTypeInformation),$Utf8Bom)
+$layout=$sorted|Select-Object PageCode,Title,Row01Count,Row01Cell01,Row01Cell02,Row01Cell03,Row02Count,Row02Cell01,Row02Cell02,Row02Cell03,Row03Count,Row03Cell01,Row03Cell02,Row03Cell03,Row04Count,Row04Cell01,Row04Cell02,Row04Cell03,Row05Count,Row05Cell01,Row05Cell02,Row05Cell03,Row06Count,Row06Cell01,Row06Cell02,Row06Cell03,Row07Count,Row07Cell01,Row07Cell02,Row07Cell03,Row08Count,Row08Cell01,Row08Cell02,Row08Cell03,Nidom,BahasaArab,Tahfidz,Akhlak
+[IO.File]::WriteAllLines($layoutPath,($layout|ConvertTo-Csv -NoTypeInformation),$Utf8Bom)
 
-$csv = $all | Sort-Object Jilid,PageNumber | ConvertTo-Csv -NoTypeInformation
-[System.IO.File]::WriteAllLines($csvPath, $csv, $Utf8Bom)
-
-$json = $all | Sort-Object Jilid,PageNumber | ConvertTo-Json -Depth 6
-[System.IO.File]::WriteAllText($jsonPath, $json, $Utf8Bom)
-
-$audit = $all | Sort-Object Jilid,PageNumber | Select-Object PageCode,Jilid,PageNumber,Title,Status,TanggaCount,SourceFile,@{N='ReadyFor24SlotMerge';E={$_.TanggaCount -eq 24}}
-$auditCsv = $audit | ConvertTo-Csv -NoTypeInformation
-[System.IO.File]::WriteAllLines($auditPath, $auditCsv, $Utf8Bom)
-
-Write-Host "QURBATA InDesign export complete"
-Write-Host "Pages exported : $($all.Count)"
-Write-Host "CSV            : $csvPath"
-Write-Host "JSON           : $jsonPath"
-Write-Host "AUDIT          : $auditPath"
-Write-Host "24-slot pages  : $(($all | Where-Object TanggaCount -eq 24).Count)"
-Write-Host "Other pages    : $(($all | Where-Object TanggaCount -ne 24).Count)"
+Write-Host 'QURBATA InDesign content export complete'
+Write-Host "Pages found          : $($sorted.Count)"
+Write-Host "24-tangga pages      : $(($sorted|Where-Object TanggaCount -eq 24).Count)"
+Write-Host "Source conflicts     : $(($audit|Where-Object SourceConflict).Count)"
+Write-Host "Ready content merge  : $(($audit|Where-Object ReadyForContentMerge).Count)"
+Write-Host "Data Merge CSV       : $csvPath"
+Write-Host "8-row layout CSV     : $layoutPath"
+Write-Host "JSON                 : $jsonPath"
+Write-Host "Audit                : $auditPath"
