@@ -5,11 +5,11 @@ param(
 )
 $ErrorActionPreference='Stop'
 $Utf8Bom=New-Object System.Text.UTF8Encoding($true)
+function Lines([string]$text){ return @($text -split "`r`n|`n|`r") }
 function SplitCells([string]$line){$s=$line.Trim();if($s.StartsWith('|')){$s=$s.Substring(1)};if($s.EndsWith('|')){$s=$s.Substring(0,$s.Length-1)};return @($s -split '\|'|ForEach-Object{$_.Trim()})}
 function PutRange([hashtable]$slots,[int]$a,[int]$b,[object[]]$items){if($a-lt1-or$b-gt24-or$b-lt$a){return};$need=$b-$a+1;if(@($items).Count-ne$need){return};for($i=0;$i-lt$need;$i++){$v=[string]$items[$i];$v=$v.Trim();if($v-and-not$slots.ContainsKey($a+$i)){$slots[$a+$i]=$v}}}
 function ParseFragment([string]$text){
-  $slots=@{};$lines=$text-split "`r?`n"
-  # 1) Markdown tables. Any cell containing a range 1-8 / 1–8 is accepted.
+  $slots=@{};$lines=@(Lines $text)
   for($i=0;$i-lt$lines.Count-1;$i++){
     if($lines[$i]-notmatch '^\s*\|' -or $lines[$i+1]-notmatch '^\s*\|'){continue}
     $header=@(SplitCells $lines[$i]);$joined=($header -join ' ')
@@ -17,12 +17,10 @@ function ParseFragment([string]$text){
       if($lines[$r]-notmatch '^\s*\|'){break};$c=@(SplitCells $lines[$r]);$rangeIdx=-1;$a=0;$b=0
       for($x=0;$x-lt$c.Count;$x++){if($c[$x] -match '^\s*(\d{1,2})\s*[–-]\s*(\d{1,2})\s*$'){$rangeIdx=$x;$a=[int]$Matches[1];$b=[int]$Matches[2];break}}
       if($rangeIdx-lt0){continue};$need=$b-$a+1
-      # Paired table: Tanpa/Dengan al.
       if($joined -match 'Tanpa ال' -and $joined -match 'Dengan ال' -and $c.Count-ge4){
         if($need-eq2 -and $c[2] -and $c[3] -and $c[3]-ne'—'){PutRange $slots $a $b @($c[2],$c[3]);continue}
         if($need-eq4){$parts=@($c[2]-split '\s*[·•]\s*'|Where-Object{$_ -and $_.Trim()});if($parts.Count-eq4){PutRange $slots $a $b $parts;continue}}
       }
-      # Normal table: find a cell that expands exactly to range length.
       $done=$false
       foreach($x in 0..($c.Count-1)){
         if($x-eq$rangeIdx){continue}
@@ -30,23 +28,18 @@ function ParseFragment([string]$text){
         if($parts.Count-eq$need){PutRange $slots $a $b $parts;$done=$true;break}
       }
       if($done){continue}
-      # If a two-slot range has two separate reading cells, take those.
       if($need-eq2){$vals=@();foreach($x in 0..($c.Count-1)){if($x-eq$rangeIdx){continue};$v=$c[$x].Trim();if(!$v-or$v-eq'—'){continue};if($v -match '^(pasangan|fokus|murojaah|transfer|pembuka|\d+ huruf)'){continue};$vals+=$v};if($vals.Count-ge2){PutRange $slots $a $b @($vals[0],$vals[1])}}
     }
   }
-  # 2) Inline bold labels: **Kotak 1–4:** a · b · c · d
   foreach($rm in [regex]::Matches($text,'(?mi)^\*\*Kotak(?: pembuka)?\s+(\d{1,2})\s*[–-]\s*(\d{1,2})[^*]*\*\*\s*:?\s*(.*?)\s*$')){
     $a=[int]$rm.Groups[1].Value;$b=[int]$rm.Groups[2].Value;$need=$b-$a+1;$body=$rm.Groups[3].Value.Trim();$parts=@($body -split '\s*[·•]\s*|\s*\|\s*'|Where-Object{$_ -and $_.Trim()});if($parts.Count-eq$need){PutRange $slots $a $b $parts}
   }
-  # 3) Bold label on one line and values on next line.
   foreach($rm in [regex]::Matches($text,'(?mis)^\*\*Kotak(?: pembuka)?\s+(\d{1,2})\s*[–-]\s*(\d{1,2})[^*]*\*\*\s*:?\s*\r?\n\s*([^\r\n#]+)')){
     $a=[int]$rm.Groups[1].Value;$b=[int]$rm.Groups[2].Value;$need=$b-$a+1;$parts=@($rm.Groups[3].Value -split '\s*[·•]\s*|\s*\|\s*'|Where-Object{$_ -and $_.Trim()});if($parts.Count-eq$need){PutRange $slots $a $b $parts}
   }
-  # 4) Heading ranges: ### Kotak 9–12 ... followed by numbered or pipe-separated values.
   foreach($rm in [regex]::Matches($text,'(?mis)^#{3,4}\s+[^\r\n]*?kotak\s+(\d{1,2})\s*[–-]\s*(\d{1,2})[^\r\n]*\r?\n(.*?)(?=^#{2,4}\s+|^\*\*Kotak|\z)')){
-    $a=[int]$rm.Groups[1].Value;$b=[int]$rm.Groups[2].Value;$need=$b-$a+1;$body=$rm.Groups[3].Value.Trim();$num=@([regex]::Matches($body,'(?m)^\s*\d+\.\s+(.+?)\s*$')|ForEach-Object{$_.Groups[1].Value.Trim()});if($num.Count-eq$need){PutRange $slots $a $b $num;continue};$first=($body-split "`r?`n"|Where-Object{$_ -and $_ -notmatch '^\*\*Source' -and $_ -notmatch '^\*\*Potongan'}|Select-Object -First 1);$parts=@($first -split '\s*\|\s*|\s*[·•]\s*'|Where-Object{$_ -and $_.Trim()});if($parts.Count-eq$need){PutRange $slots $a $b $parts}
+    $a=[int]$rm.Groups[1].Value;$b=[int]$rm.Groups[2].Value;$need=$b-$a+1;$body=$rm.Groups[3].Value.Trim();$num=@([regex]::Matches($body,'(?m)^\s*\d+\.\s+(.+?)\s*$')|ForEach-Object{$_.Groups[1].Value.Trim()});if($num.Count-eq$need){PutRange $slots $a $b $num;continue};$first=(@(Lines $body)|Where-Object{$_ -and $_ -notmatch '^\*\*Source' -and $_ -notmatch '^\*\*Potongan'}|Select-Object -First 1);$parts=@($first -split '\s*\|\s*|\s*[·•]\s*'|Where-Object{$_ -and $_.Trim()});if($parts.Count-eq$need){PutRange $slots $a $b $parts}
   }
-  # 5) Special P040 style: **Kotak 5–12 — kata kompleks:** then material next line.
   foreach($rm in [regex]::Matches($text,'(?mis)^\*\*Kotak\s+(\d{1,2})\s*[–-]\s*(\d{1,2})[^*]*\*\*\s*:?\s*\r?\n([^\r\n#]+)')){
     $a=[int]$rm.Groups[1].Value;$b=[int]$rm.Groups[2].Value;$need=$b-$a+1;$parts=@($rm.Groups[3].Value -split '\s*[·•]\s*|\s*\|\s*'|Where-Object{$_ -and $_.Trim()});if($parts.Count-eq$need){PutRange $slots $a $b $parts}
   }
