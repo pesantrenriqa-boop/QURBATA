@@ -6,7 +6,7 @@ param(
 $ErrorActionPreference='Stop'
 $Utf8Bom=New-Object System.Text.UTF8Encoding($true)
 function Rel([string]$p){$p.Substring($RepoRoot.Length).TrimStart([char[]]'\/') -replace '\\','/'}
-function Cells([string]$l){$s=$l.Trim();if($s.StartsWith('|')){$s=$s.Substring(1)};if($s.EndsWith('|')){$s=$s.Substring(0,$s.Length-1)};,@($s -split '\|'|ForEach-Object{$_.Trim()})}
+function Cells([string]$l){$s=$l.Trim();if($s.StartsWith('|')){$s=$s.Substring(1)};if($s.EndsWith('|')){$s=$s.Substring(0,$s.Length-1)};return @($s -split '\|'|ForEach-Object{$_.Trim()})}
 function NormalizeHeader([string]$s){(($s.ToLowerInvariant()-replace '[`*_]',''-replace '\s+',' ').Trim())}
 function Title([string]$t){$m=[regex]::Match($t,'(?m)^#{1,4}\s+(.+?)\s*$');if($m.Success){$m.Groups[1].Value.Trim()}else{''}}
 function Bold([string]$t,[string]$label){$m=[regex]::Match($t,"(?m)^\*\*$([regex]::Escape($label)):\*\*\s*(.+?)\s*$");if($m.Success){$m.Groups[1].Value.Trim()}else{''}}
@@ -20,7 +20,7 @@ function Panel([string]$t,[string]$labels,[string]$heads){
 function Frags([IO.FileInfo]$f){
   $t=[IO.File]::ReadAllText($f.FullName,[Text.Encoding]::UTF8);$direct=[regex]::Match($f.BaseName,'QJ\d+-P\d{3}');$ms=[regex]::Matches($t,'(?m)^#{1,4}\s+.*?(QJ\d+-P\d{3}).*$')
   if($ms.Count-le1-and$direct.Success){return ,([pscustomobject]@{Code=$direct.Value;Text=$t;File=$f})}
-  $o=@();for($i=0;$i-lt$ms.Count;$i++){$a=$ms[$i].Index;$b=if($i+1-lt$ms.Count){$ms[$i+1].Index}else{$t.Length};$o+=[pscustomobject]@{Code=$ms[$i].Groups[1].Value;Text=$t.Substring($a,$b-$a);File=$f}};,$o
+  $o=@();for($i=0;$i-lt$ms.Count;$i++){$a=$ms[$i].Index;$b=if($i+1-lt$ms.Count){$ms[$i+1].Index}else{$t.Length};$o+=[pscustomobject]@{Code=$ms[$i].Groups[1].Value;Text=$t.Substring($a,$b-$a);File=$f}};return @($o)
 }
 function ParseRows([string]$t){
   $ls=$t-split "`r?`n";$tables=@()
@@ -45,7 +45,7 @@ function ParseRows([string]$t){
     }
     $u=@($rows|Group-Object No|ForEach-Object{$_.Group[0]}|Sort-Object No);if($u.Count){$tables+=,[pscustomobject]@{Rows=$u;Count=$u.Count}}
   }
-  if(!$tables.Count){return @()};$best=$tables|Sort-Object Count -Descending|Select-Object -First 1;,@($best.Rows)
+  if(!$tables.Count){return @()};$best=$tables|Sort-Object Count -Descending|Select-Object -First 1;return @($best.Rows)
 }
 function Rank([int]$j,[int]$pn,[string]$path,[string]$text,[int]$count){
   $p=$path-replace '\\','/';$score=0
