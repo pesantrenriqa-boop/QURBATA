@@ -46,9 +46,12 @@ for($n=11;$n-le40;$n++){
       if($cells.Count-lt3){continue}
 
       $range=$cells[1]
-      if($range -notmatch '^\s*(\d{1,2})\s*[–—-]\s*(\d{1,2})\s*$'){continue}
-      $a=[int]$Matches[1]
-      $b=[int]$Matches[2]
+      if($range -match '^\s*(\d{1,2})\s*[–—-]\s*(\d{1,2})\s*$'){
+        $a=[int]$Matches[1]
+        $b=[int]$Matches[2]
+      } else {
+        continue
+      }
       $need=$b-$a+1
 
       $items=@($cells[2] -split '\s*[·•]\s*' | ForEach-Object {$_.Trim()} | Where-Object {$_})
