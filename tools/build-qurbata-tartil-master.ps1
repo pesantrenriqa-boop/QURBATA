@@ -26,15 +26,19 @@ function ParseMasterMap([int]$J){
   for($i=0;$i-lt$lines.Count-1;$i++){
     if($lines[$i]-notmatch '^\s*\|'){continue}
     $hdr=@(SplitCells $lines[$i]); $norm=@($hdr|ForEach-Object{Normalize $_})
-    $codeIdx=[array]::IndexOf($norm,'kode')
+    $codeIdx=-1
+    for($x=0;$x-lt$norm.Count;$x++){
+      if($norm[$x] -match '^kode(?: unit buku)?$'){$codeIdx=$x;break}
+    }
     if($codeIdx -lt 0){continue}
     $pageIdx=-1
     for($x=0;$x-lt$norm.Count;$x++){ if($norm[$x] -match '^(halaman|hlm)$'){$pageIdx=$x;break} }
     if($pageIdx -lt 0){continue}
-    $focusIdx=-1;$mainIdx=-1;$typeIdx=-1
+    $focusIdx=-1;$mainIdx=-1;$reviewIdx=-1;$typeIdx=-1
     for($x=0;$x-lt$norm.Count;$x++){
       if($focusIdx-lt0 -and $norm[$x]-match '^fokus'){$focusIdx=$x}
-      if($mainIdx-lt0 -and $norm[$x]-match '^(materi baru/utama|materi utama|tangga|tangga kompleksitas)$'){$mainIdx=$x}
+      if($mainIdx-lt0 -and $norm[$x]-match '^(materi baru/utama|materi utama|materi baru|tangga|tangga kompleksitas)$'){$mainIdx=$x}
+      if($reviewIdx-lt0 -and $norm[$x]-match '^review/integrasi$'){$reviewIdx=$x}
       if($typeIdx-lt0 -and $norm[$x]-eq 'jenis'){$typeIdx=$x}
     }
     for($r=$i+2;$r-lt$lines.Count;$r++){
@@ -45,6 +49,9 @@ function ParseMasterMap([int]$J){
       if($code -notmatch ("^QJ{0}-P\d{{3}}$" -f $J)){continue}
       $focus=if($focusIdx-ge0-and$focusIdx-lt$c.Count){$c[$focusIdx]}else{''}
       $main=if($mainIdx-ge0-and$mainIdx-lt$c.Count){$c[$mainIdx]}else{''}
+      $review=if($reviewIdx-ge0-and$reviewIdx-lt$c.Count){$c[$reviewIdx]}else{''}
+      if(!$main -and $review){$main=$review}
+      elseif($main -and $review -and $review -ne '—'){$main="$main | Review: $review"}
       if(!$main -and $c.Count-gt($codeIdx+1)){$main=$c[$c.Count-1]}
       $explicitType=if($typeIdx-ge0-and$typeIdx-lt$c.Count){$c[$typeIdx]}else{''}
       $type=InferType $J $focus $explicitType
