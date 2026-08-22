@@ -18,6 +18,9 @@ function Get-SourceFile([int]$n){
   return 'QJ3-B04B-Materi-P036-P040.md'
 }
 
+$rangePattern='^\s*(\d{1,2})\s*[\u2013\u2014-]\s*(\d{1,2})\s*$'
+$itemSplitPattern='\s*[\u00B7\u2022]\s*'
+
 $fixed=0
 $review=0
 for($n=11;$n-le40;$n++){
@@ -46,7 +49,7 @@ for($n=11;$n-le40;$n++){
       if($cells.Count-lt3){continue}
 
       $range=$cells[1]
-      if($range -match '^\s*(\d{1,2})\s*[–—-]\s*(\d{1,2})\s*$'){
+      if($range -match $rangePattern){
         $a=[int]$Matches[1]
         $b=[int]$Matches[2]
       } else {
@@ -54,7 +57,7 @@ for($n=11;$n-le40;$n++){
       }
       $need=$b-$a+1
 
-      $items=@($cells[2] -split '\s*[·•]\s*' | ForEach-Object {$_.Trim()} | Where-Object {$_})
+      $items=@($cells[2] -split $itemSplitPattern | ForEach-Object {$_.Trim()} | Where-Object {$_})
       if($items.Count-ne$need){continue}
 
       for($k=0;$k-lt$items.Count;$k++){$arr[$a+$k]=$items[$k]}
