@@ -60,7 +60,19 @@ function Rank([int]$j,[int]$pn,[string]$path,[string]$text,[int]$count){
 }
 function Candidates([int]$j){
   $base=Join-Path $RepoRoot "books\jilid-$j";if(!(Test-Path $base)){return @()};$dirs=@('pages');if($j-eq2){$dirs=@('regenerated','rebased','pages')};if($j-eq3){$dirs=@('pages','recovery')};$a=@()
-  foreach($d in $dirs){$dir=Join-Path $base $d;if(!(Test-Path $dir)){continue};foreach($f in Get-ChildItem $dir -Filter '*.md' -File){foreach($g in @(Frags $f)){if($g.Code-notmatch "^QJ$j-P(\d{3})$"){continue};$pn=[int]$Matches[1];$rows=@(ParseRows $g.Text);$a+=[pscustomobject]@{Code=$g.Code;Page=$pn;Text=$g.Text;File=$g.File;Rows=$rows;RowCount=$rows.Count;Score=(Rank $j $pn $g.File.FullName $g.Text $rows.Count)}}}};,$a
+  foreach($d in $dirs){
+    $dir=Join-Path $base $d;if(!(Test-Path $dir)){continue}
+    foreach($f in Get-ChildItem $dir -Filter '*.md' -File){
+      foreach($g in @(Frags $f)){
+        $codeMatch=[regex]::Match([string]$g.Code,"^QJ$j-P(\d{3})$")
+        if(-not $codeMatch.Success){continue}
+        $pn=[int]$codeMatch.Groups[1].Value
+        $rows=@(ParseRows $g.Text)
+        $a+=[pscustomobject]@{Code=$g.Code;Page=$pn;Text=$g.Text;File=$g.File;Rows=$rows;RowCount=$rows.Count;Score=(Rank $j $pn $g.File.FullName $g.Text $rows.Count)}
+      }
+    }
+  }
+  return @($a)
 }
 function Cap([string]$s){$tokens=@($s-split '\s+'|Where-Object{$_}).Count;if($tokens-eq2){4}elseif($tokens-eq3){3}else{3}}
 function Layout([object[]]$rows){
