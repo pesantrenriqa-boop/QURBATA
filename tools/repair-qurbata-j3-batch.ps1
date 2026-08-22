@@ -69,14 +69,11 @@ foreach($name in $files){
     if(!$currentCode){ continue }
     $map=$parsed[$currentCode].Map
 
-    # Standard markdown table row, e.g. | 3 huruf | 1–8 | a · b · ... |
     if($line -match '^\s*\|'){
       $cells=@(($line.Trim().Trim('|') -split '\|') | ForEach-Object { $_.Trim() })
       for($ri=0;$ri-lt$cells.Count;$ri++){
         if($cells[$ri] -match '^\s*(\d{1,2})\s*[–—-]\s*(\d{1,2})\s*$'){
           $a=[int]$Matches[1];$b=[int]$Matches[2];$need=$b-$a+1
-
-          # Most J3 rows keep all reading items in one material cell.
           $done=$false
           for($ci=0;$ci-lt$cells.Count;$ci++){
             if($ci-eq$ri){ continue }
@@ -87,8 +84,6 @@ foreach($name in $files){
               break
             }
           }
-
-          # P032 style: one range covers paired columns (Tanpa/Dengan ال).
           if(!$done -and $need-eq2){
             $vals=@()
             for($ci=0;$ci-lt$cells.Count;$ci++){
@@ -107,7 +102,6 @@ foreach($name in $files){
       continue
     }
 
-    # Same-line block: **Kotak 1–4:** a · b · c · d
     if($line -match '^\*\*Kotak(?:\s+pembuka)?\s+(\d{1,2})\s*[–—-]\s*(\d{1,2})[^*]*\*\*\s*:?\s*(.+)$'){
       $a=[int]$Matches[1];$b=[int]$Matches[2]
       $items=@(Split-Items $Matches[3])
@@ -115,14 +109,12 @@ foreach($name in $files){
       continue
     }
 
-    # Label waiting for following line, e.g. **Kotak 5–12 — kata kompleks:**
     if($line -match '^\*\*Kotak(?:\s+pembuka)?\s+(\d{1,2})\s*[–—-]\s*(\d{1,2})[^*]*\*\*\s*:?[ ]*$'){
       $pending=[pscustomobject]@{A=[int]$Matches[1];B=[int]$Matches[2]}
       $numbered=@()
       continue
     }
 
-    # Heading blocks: ### Kotak 9–12 ... or ### Tangga frasa — kotak 21–24
     if($line -match '^#{3,4}\s+.*?kotak\s+(\d{1,2})\s*[–—-]\s*(\d{1,2})'){
       $pending=[pscustomobject]@{A=[int]$Matches[1];B=[int]$Matches[2]}
       $numbered=@()
