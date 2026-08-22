@@ -67,7 +67,8 @@ function Layout([object[]]$rows){$it=@($rows|Sort-Object No);$o=@();$idx=0;for($
 New-Item -ItemType Directory -Force -Path $OutputDir|Out-Null
 $records=@();$audit=@()
 foreach($j in $Jilid){foreach($grp in (@(Candidates $j)|Group-Object Code|Sort-Object Name)){
-  $ord=@($grp.Group|Sort-Object Score -Descending,@{Expression={$_.File.Length};Descending=$true});$ch=$ord[0];$top=@($ord|?{$_.Score-eq$ch.Score});$conflict=($top.Count-gt1);$rows=@($ch.Rows);$lay=@(Layout $rows)
+  $ord=@($grp.Group | Sort-Object -Property @{Expression={$_.Score};Descending=$true}, @{Expression={$_.File.Length};Descending=$true})
+  $ch=$ord[0];$top=@($ord|?{$_.Score-eq$ch.Score});$conflict=($top.Count-gt1);$rows=@($ch.Rows);$lay=@(Layout $rows)
   $r=[ordered]@{PageCode=$ch.Code;Jilid=$j;PageNumber=$ch.Page;Title=Title $ch.Text;Status=Bold $ch.Text 'Status';SourceFile=Rel $ch.File.FullName;SourceScore=$ch.Score;SourceConflict=$conflict;CandidateFiles=($ord|%{Rel $_.File.FullName})-join' | ';ReadingCount=$rows.Count;Outcome=One (Section $ch.Text 'Outcome Halaman|Tujuan|Hasil Akhir');Nidom=Panel $ch.Text 'NIDOM|NIDHOM' 'NIDOM|NIDHOM';BahasaArab=Panel $ch.Text 'Fokus lisan|Bahasa Arab|Bahasa Arab/mufradat|Mufradat' 'Bahasa Arab|Segmen Bahasa Arab|Mufradat';Tahfidz=Panel $ch.Text 'Tahfidz|Hafalan' 'Tahfidz|Hafalan';Akhlak=Panel $ch.Text 'Hadis/akhlak|Akhlak' 'Tema Akhlak|Akhlak'}
   for($i=1;$i-le24;$i++){$x=$rows|?{$_.No-eq$i}|Select-Object -First 1;$r[('Slot{0:D2}'-f$i)]=if($x){$x.Text}else{''}}
   for($rr=1;$rr-le8;$rr++){$r[('Row{0:D2}Count'-f$rr)]=$lay[$rr-1].Count;for($cc=1;$cc-le4;$cc++){$r[('Row{0:D2}Cell{1:D2}'-f$rr,$cc)]=$lay[$rr-1].Cells[$cc-1]}}
