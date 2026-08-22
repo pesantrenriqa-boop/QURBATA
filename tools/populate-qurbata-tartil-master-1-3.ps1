@@ -6,18 +6,21 @@ $ErrorActionPreference='Stop'
 $Utf8Bom=New-Object System.Text.UTF8Encoding($true)
 
 $buildScript=Join-Path $PSScriptRoot 'build-qurbata-tartil-master.ps1'
-$extractScript=Join-Path $PSScriptRoot 'export-qurbata-indesign-v4.ps1'
+$extractScript=Join-Path $PSScriptRoot 'export-qurbata-indesign-v3.ps1'
 if(!(Test-Path $buildScript)){throw "Missing $buildScript"}
 if(!(Test-Path $extractScript)){throw "Missing $extractScript"}
 
 & powershell -ExecutionPolicy Bypass -File $buildScript | Out-Host
-& powershell -ExecutionPolicy Bypass -File $extractScript -OutputDir (Join-Path $RepoRoot 'dist\tartil-source-1-3') -Jilid 1,2,3 | Out-Host
+$sourceDir=Join-Path $RepoRoot 'dist\tartil-source-1-3'
+New-Item -ItemType Directory -Force -Path $sourceDir|Out-Null
+& powershell -ExecutionPolicy Bypass -File $extractScript -OutputDir $sourceDir -Jilid 1,2,3 | Out-Host
 
 $skeletonPath=Join-Path $OutputDir 'QURBATA-TARTIL-MASTER-1-8.csv'
-$sourcePath=Join-Path $RepoRoot 'dist\tartil-source-1-3\QURBATA-INDESIGN-DATA-MERGE.csv'
-$auditSourcePath=Join-Path $RepoRoot 'dist\tartil-source-1-3\QURBATA-INDESIGN-EXPORT-AUDIT.csv'
+$sourcePath=Join-Path $sourceDir 'QURBATA-INDESIGN-DATA-MERGE.csv'
+$auditSourcePath=Join-Path $sourceDir 'QURBATA-INDESIGN-EXPORT-AUDIT.csv'
 if(!(Test-Path $skeletonPath)){throw "Skeleton not found: $skeletonPath"}
 if(!(Test-Path $sourcePath)){throw "J1-J3 source export not found: $sourcePath"}
+if(!(Test-Path $auditSourcePath)){throw "J1-J3 audit export not found: $auditSourcePath"}
 
 $master=@(Import-Csv $skeletonPath)
 $source=@(Import-Csv $sourcePath)
@@ -26,16 +29,15 @@ $srcByCode=@{};foreach($s in $source){$srcByCode[$s.PageCode]=$s}
 $auditByCode=@{};foreach($a in $auditSource){$auditByCode[$a.PageCode]=$a}
 
 $filled=0;$partial=0;$missing=0;$future=0
-$out=@()
-$audit=@()
+$out=@();$audit=@()
 foreach($m in $master){
   $code=$m.PageCode;$j=[int]$m.Jilid
   $state='FUTURE_J4_J8';$readingCount=0;$sourceFile='';$sourceConflict=$false
   if($j-le3){
     if($srcByCode.ContainsKey($code)){
       $s=$srcByCode[$code]
-      $readingCount=[int]$s.ReadingCount
-      $sourceFile=$s.SourceFile
+      $readingCount=if($s.ReadingCount){[int]$s.ReadingCount}else{0}
+      $sourceFile=[string]$s.SourceFile
       $sourceConflict=([string]$s.SourceConflict -eq 'True')
       for($i=1;$i-le24;$i++){$name=('Slot{0:D2}'-f$i);$m.$name=$s.$name}
       for($r=1;$r-le8;$r++){
