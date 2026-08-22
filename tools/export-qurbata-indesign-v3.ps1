@@ -63,15 +63,33 @@ function Candidates([int]$j){
   foreach($d in $dirs){$dir=Join-Path $base $d;if(!(Test-Path $dir)){continue};foreach($f in Get-ChildItem $dir -Filter '*.md' -File){foreach($g in @(Frags $f)){if($g.Code-notmatch "^QJ$j-P(\d{3})$"){continue};$pn=[int]$Matches[1];$rows=@(ParseRows $g.Text);$a+=[pscustomobject]@{Code=$g.Code;Page=$pn;Text=$g.Text;File=$g.File;Rows=$rows;RowCount=$rows.Count;Score=(Rank $j $pn $g.File.FullName $g.Text $rows.Count)}}}};,$a
 }
 function Cap([string]$s){$tokens=@($s-split '\s+'|Where-Object{$_}).Count;if($tokens-eq2){4}elseif($tokens-eq3){3}else{3}}
-function Layout([object[]]$rows){$it=@($rows|Sort-Object No);$o=@();$idx=0;for($r=1;$r-le8;$r++){$left=$it.Count-$idx;$rowsLeft=9-$r;if($left-le0){$o+=[pscustomobject]@{Count=0;Cells=@('','','','')};continue};$min=[math]::Ceiling($left/[double]$rowsLeft);$pref=Cap $it[$idx].Text;$cnt=[math]::Min(4,[math]::Max($min,$pref));if($cnt-gt$left){$cnt=$left};$cells=@('','','','');for($c=0;$c-lt$cnt;$c++){$cells[$c]=$it[$idx+$c].Text};$o+=[pscustomobject]@{Count=$cnt;Cells=$cells};$idx+=$cnt};,$o}
+function Layout([object[]]$rows){
+  $it=@($rows|Sort-Object No);$o=@();$idx=0
+  for($r=1;$r-le8;$r++){
+    $left=$it.Count-$idx;$rowsLeft=9-$r
+    if($left-le0){$o+=[pscustomobject]@{Count=0;Cells=@('','','','')};continue}
+    $min=[math]::Ceiling($left/[double]$rowsLeft);$pref=Cap $it[$idx].Text;$cnt=[math]::Min(4,[math]::Max($min,$pref));if($cnt-gt$left){$cnt=$left}
+    $cells=@('','','','');for($c=0;$c-lt$cnt;$c++){$cells[$c]=$it[$idx+$c].Text}
+    $o+=[pscustomobject]@{Count=$cnt;Cells=$cells};$idx+=$cnt
+  }
+  return @($o)
+}
 New-Item -ItemType Directory -Force -Path $OutputDir|Out-Null
 $records=@();$audit=@()
 foreach($j in $Jilid){foreach($grp in (@(Candidates $j)|Group-Object Code|Sort-Object Name)){
   $ord=@($grp.Group | Sort-Object -Property @{Expression={$_.Score};Descending=$true}, @{Expression={$_.File.Length};Descending=$true})
+  if($ord.Count-eq0){continue}
   $ch=$ord[0];$top=@($ord|Where-Object{$_.Score-eq$ch.Score});$conflict=($top.Count-gt1);$rows=@($ch.Rows);$lay=@(Layout $rows)
+  while($lay.Count-lt8){$lay+=[pscustomobject]@{Count=0;Cells=@('','','','')}}
   $r=[ordered]@{PageCode=$ch.Code;Jilid=$j;PageNumber=$ch.Page;Title=Title $ch.Text;Status=Bold $ch.Text 'Status';SourceFile=Rel $ch.File.FullName;SourceScore=$ch.Score;SourceConflict=$conflict;CandidateFiles=($ord|ForEach-Object{Rel $_.File.FullName})-join' | ';ReadingCount=$rows.Count;Outcome=One (Section $ch.Text 'Outcome Halaman|Tujuan|Hasil Akhir');Nidom=Panel $ch.Text 'NIDOM|NIDHOM' 'NIDOM|NIDHOM';BahasaArab=Panel $ch.Text 'Fokus lisan|Bahasa Arab|Bahasa Arab/mufradat|Mufradat' 'Bahasa Arab|Segmen Bahasa Arab|Mufradat';Tahfidz=Panel $ch.Text 'Tahfidz|Hafalan' 'Tahfidz|Hafalan';Akhlak=Panel $ch.Text 'Hadis/akhlak|Akhlak' 'Tema Akhlak|Akhlak'}
   for($i=1;$i-le24;$i++){$x=$rows|Where-Object{$_.No-eq$i}|Select-Object -First 1;$r[('Slot{0:D2}'-f$i)]=if($x){$x.Text}else{''}}
-  for($rr=1;$rr-le8;$rr++){$r[('Row{0:D2}Count'-f$rr)]=$lay[$rr-1].Count;for($cc=1;$cc-le4;$cc++){$r[('Row{0:D2}Cell{1:D2}'-f$rr,$cc)]=$lay[$rr-1].Cells[$cc-1]}}
+  for($rr=1;$rr-le8;$rr++){
+    $rowObj=$lay[$rr-1]
+    if($null-eq$rowObj){$rowObj=[pscustomobject]@{Count=0;Cells=@('','','','')}}
+    $rowCells=@($rowObj.Cells);while($rowCells.Count-lt4){$rowCells+=''}
+    $r[('Row{0:D2}Count'-f$rr)]=$rowObj.Count
+    for($cc=1;$cc-le4;$cc++){$r[('Row{0:D2}Cell{1:D2}'-f$rr,$cc)]=$rowCells[$cc-1]}
+  }
   $records+=[pscustomobject]$r;$audit+=[pscustomobject]@{PageCode=$ch.Code;SourceFile=Rel $ch.File.FullName;SourceConflict=$conflict;ReadingCount=$rows.Count;ReadyForContentMerge=($rows.Count-eq24-and-not$conflict);Note=if($conflict){'MULTIPLE_EQUAL_SOURCE_CANDIDATES'}elseif($rows.Count-ne24){'READING_ROWS_NOT_24'}else{'OK'}}
 }}
 $records=@($records|Sort-Object Jilid,PageNumber);$audit=@($audit|Sort-Object PageCode)
