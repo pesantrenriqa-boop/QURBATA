@@ -13,7 +13,9 @@ function Get-Text($row,[string]$name){
   if($null -eq $p){return ''}
   return [string]$p.Value
 }
-function Put([ordered]$o,[string]$name,[string]$value){$o[$name]=$value}
+function Put([System.Collections.IDictionary]$o,[string]$name,[string]$value){
+  $o[$name]=$value
+}
 
 $out=@()
 foreach($row in $rows){
@@ -46,10 +48,13 @@ $all=Join-Path $OutputDir 'QURBATA-INDESIGN-TEMPLATE-DATA-J1-J3.csv'
 foreach($j in 1..3){
   $part=@($out|Where-Object{[int]$_.Jilid-eq$j})
   if($part.Count){
-    $p=Join-Path $OutputDir ("QURBATA-INDESIGN-J{0}-{1}COL-8ROW.csv" -f $j,(if($j-le2){4}else{3}))
+    $colCount=if($j-le2){4}else{3}
+    $p=Join-Path $OutputDir ("QURBATA-INDESIGN-J{0}-{1}COL-8ROW.csv" -f $j,$colCount)
     [IO.File]::WriteAllLines($p,($part|ConvertTo-Csv -NoTypeInformation),$Utf8Bom)
   }
 }
 Write-Host 'QURBATA InDesign template data build complete'
-foreach($g in ($out|Group-Object TemplateKey|Sort-Object Name)){Write-Host ("{0}: {1} pages" -f $g.Name,$g.Count)}
+foreach($g in ($out|Group-Object TemplateKey|Sort-Object Name)){
+  Write-Host ("{0}: {1} pages" -f $g.Name,$g.Count)
+}
 Write-Host ("CSV: {0}" -f $all)
