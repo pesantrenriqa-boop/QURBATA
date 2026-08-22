@@ -49,7 +49,6 @@ foreach($name in $files){
     if(!$code){continue}
     $arr=[object[]]$slotsByPage[$code]
 
-    # Normal markdown rows: | label | 1–8 | a · b ... |
     if($line -match '^\s*\|'){
       $cells=@(($line.Trim().Trim('|') -split '\|') | ForEach-Object{$_.Trim()})
       $rangeIndex=-1;$ra=0;$rb=0
@@ -73,18 +72,16 @@ foreach($name in $files){
           if($vals.Count-ge2){[void](PutItems $arr $ra $rb @($vals[$vals.Count-2],$vals[$vals.Count-1]))}
         }
       }
+      $slotsByPage[$code]=$arr
       continue
     }
 
-    # Bold same-line blocks.
     if($line -match '^\*\*Kotak(?:\s+pembuka)?\s+(\d{1,2})\s*[–—-]\s*(\d{1,2})[^*]*\*\*\s*:?\s*(.+)$'){
-      $a=[int]$Matches[1];$b=[int]$Matches[2];$items=@(SplitItems $Matches[3]);if($items.Count-eq($b-$a+1)){[void](PutItems $arr $a $b $items)};continue
+      $a=[int]$Matches[1];$b=[int]$Matches[2];$items=@(SplitItems $Matches[3]);if($items.Count-eq($b-$a+1)){[void](PutItems $arr $a $b $items)};$slotsByPage[$code]=$arr;continue
     }
-    # Bold block whose values are on next line.
     if($line -match '^\*\*Kotak(?:\s+pembuka)?\s+(\d{1,2})\s*[–—-]\s*(\d{1,2})[^*]*\*\*\s*:?\s*$'){
       $pendingA=[int]$Matches[1];$pendingB=[int]$Matches[2];$numbered=@();continue
     }
-    # Heading block, including "Tangga frasa — kotak 21–24".
     if($line -match '^#{3,4}\s+.*?kotak\s+(\d{1,2})\s*[–—-]\s*(\d{1,2})'){
       $pendingA=[int]$Matches[1];$pendingB=[int]$Matches[2];$numbered=@();continue
     }
@@ -93,12 +90,12 @@ foreach($name in $files){
       $need=$pendingB-$pendingA+1
       if($line -match '^\s*\d+\.\s+(.+?)\s*$'){
         $numbered+=$Matches[1].Trim()
-        if($numbered.Count-eq$need){[void](PutItems $arr $pendingA $pendingB $numbered);$pendingA=0;$pendingB=0;$numbered=@()}
+        if($numbered.Count-eq$need){[void](PutItems $arr $pendingA $pendingB $numbered);$slotsByPage[$code]=$arr;$pendingA=0;$pendingB=0;$numbered=@()}
         continue
       }
       if([string]::IsNullOrWhiteSpace($line)-or$line-match '^\*\*(Source|Potongan)'){continue}
       $items=@(SplitItems $line)
-      if($items.Count-eq$need){[void](PutItems $arr $pendingA $pendingB $items);$pendingA=0;$pendingB=0;$numbered=@();continue}
+      if($items.Count-eq$need){[void](PutItems $arr $pendingA $pendingB $items);$slotsByPage[$code]=$arr;$pendingA=0;$pendingB=0;$numbered=@();continue}
       if($line-match '^#{2,4}\s+'-or$line-match '^\*\*Kotak'){$pendingA=0;$pendingB=0;$numbered=@()}
     }
   }
