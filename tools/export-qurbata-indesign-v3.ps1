@@ -23,29 +23,47 @@ function Frags([IO.FileInfo]$f){
   $o=@();for($i=0;$i-lt$ms.Count;$i++){$a=$ms[$i].Index;$b=if($i+1-lt$ms.Count){$ms[$i+1].Index}else{$t.Length};$o+=[pscustomobject]@{Code=$ms[$i].Groups[1].Value;Text=$t.Substring($a,$b-$a);File=$f}};return @($o)
 }
 function ParseRows([string]$t){
-  $ls=$t-split "`r?`n";$tables=@()
+  $ls=$t-split "`r?`n";$all=@();$fallbackOrdinal=0
   for($i=0;$i-lt$ls.Count-1;$i++){
     if($ls[$i]-notmatch '^\s*\|' -or $ls[$i+1]-notmatch '^\s*\|\s*:?-{2,}'){continue}
-    $hdr=@(Cells $ls[$i]);$norm=@($hdr|ForEach-Object{NormalizeHeader $_});$mat=-1;$no=-1;$id=-1;$typ=-1
+    $hdr=@(Cells $ls[$i]);$norm=@($hdr|ForEach-Object{NormalizeHeader $_});$mat=-1;$short=-1;$long=-1;$no=-1;$id=-1;$typ=-1
     for($x=0;$x-lt$norm.Count;$x++){
       if($norm[$x]-match '^(latihan|materi|bacaan|contoh|teks|sampel|kata)$'){$mat=$x}
+      if($norm[$x]-eq 'pendek'){$short=$x}
+      if($norm[$x]-eq 'panjang'){$long=$x}
       if($norm[$x]-match '^(no\.?|nomor|tangga|kotak)$'){$no=$x}
       if($norm[$x]-match '^(exercise-id|id latihan|assessment-item-id)$'){$id=$x}
-      if($norm[$x]-match '^(jenis|fungsi|tipe|label)$'){$typ=$x}
+      if($norm[$x]-match '^(jenis|fungsi|tipe|label|status/fungsi|jenis/status)$'){$typ=$x}
     }
-    if($mat-lt0){continue};$rows=@();$ord=0
+    if($mat-lt0 -and ($short-lt0 -or $long-lt0)){continue}
     for($r=$i+2;$r-lt$ls.Count;$r++){
-      if($ls[$r]-notmatch '^\s*\|'){break};$c=@(Cells $ls[$r]);if($c.Count-le$mat){continue};$reading=$c[$mat].Trim();if(!$reading){continue}
+      if($ls[$r]-notmatch '^\s*\|'){break};$c=@(Cells $ls[$r]);if(!$c.Count){continue}
       $raw=if($no-ge0-and$no-lt$c.Count){$c[$no]}else{''};$kind=if($typ-ge0-and$typ-lt$c.Count){$c[$typ]}else{''};$exercise=if($id-ge0-and$id-lt$c.Count){$c[$id]}else{''}
-      if($raw-match '^(\d{1,2})\s*[–-]\s*(\d{1,2})$'){
-        $a=[int]$Matches[1];$b=[int]$Matches[2];$parts=@($reading -split '\s*[·•]\s*'|Where-Object{$_});if($parts.Count-eq($b-$a+1)){for($k=0;$k-lt$parts.Count;$k++){$rows+=[pscustomobject]@{No=$a+$k;Text=$parts[$k].Trim();ExerciseID='';Type=$kind}}};continue
+      $reading=''
+      if($short-ge0-and$long-ge0-and$short-lt$c.Count-and$long-lt$c.Count){
+        $aText=$c[$short].Trim();$bText=$c[$long].Trim();if($aText-and$bText){$reading="$aText ⟷ $bText"}
+      }elseif($mat-ge0-and$mat-lt$c.Count){$reading=$c[$mat].Trim()}
+      if(!$reading){continue}
+
+      $range=[regex]::Match($raw,'^\s*(\d{1,2})\s*[–-]\s*(\d{1,2})\s*$')
+      if($range.Success){
+        $a=[int]$range.Groups[1].Value;$b=[int]$range.Groups[2].Value
+        $parts=@($reading -split '\s*[·•]\s*'|Where-Object{$_ -and $_.Trim()})
+        if($parts.Count-eq($b-$a+1)){
+          for($k=0;$k-lt$parts.Count;$k++){$all+=[pscustomobject]@{No=$a+$k;Text=$parts[$k].Trim();ExerciseID='';Type=$kind}}
+          continue
+        }
       }
-      $ord++;$seq=$ord;if($raw-match '^\d{1,2}$'){$seq=[int]$raw}elseif($raw-match '(?:K|L)(\d{1,2})$'){$seq=[int]$Matches[1];if(!$exercise){$exercise=$raw}}elseif($exercise-match '(?:I|L|K)(\d{1,2})$'){$seq=[int]$Matches[1]}
-      if($seq-ge1-and$seq-le24){$rows+=[pscustomobject]@{No=$seq;Text=$reading;ExerciseID=$exercise;Type=$kind}}
+
+      $fallbackOrdinal++;$seq=$fallbackOrdinal
+      if($raw-match '^\s*\d{1,2}\s*$'){$seq=[int]$raw}
+      elseif($raw-match '(?:K|L)(\d{1,2})$'){$seq=[int]$Matches[1];if(!$exercise){$exercise=$raw}}
+      elseif($exercise-match '(?:I|L|K)(\d{1,2})$'){$seq=[int]$Matches[1]}
+      if($seq-ge1-and$seq-le24){$all+=[pscustomobject]@{No=$seq;Text=$reading;ExerciseID=$exercise;Type=$kind}}
     }
-    $u=@($rows|Group-Object No|ForEach-Object{$_.Group[0]}|Sort-Object No);if($u.Count){$tables+=,[pscustomobject]@{Rows=$u;Count=$u.Count}}
   }
-  if(!$tables.Count){return @()};$best=$tables|Sort-Object Count -Descending|Select-Object -First 1;return @($best.Rows)
+  if(!$all.Count){return @()}
+  return @($all|Group-Object No|ForEach-Object{$_.Group[0]}|Sort-Object No)
 }
 function Rank([int]$j,[int]$pn,[string]$path,[string]$text,[int]$count){
   $p=$path-replace '\\','/';$score=0
@@ -74,7 +92,7 @@ function Candidates([int]$j){
   }
   return @($a)
 }
-function Cap([string]$s){$tokens=@($s-split '\s+'|Where-Object{$_}).Count;if($tokens-eq2){4}elseif($tokens-eq3){3}else{3}}
+function Cap([string]$s){$tokens=@($s-split '\s+'|Where-Object{$_}).Count;if($tokens-eq2){4}elseif($tokens-eq3){3}elseif($tokens-ge4){2}else{3}}
 function Layout([object[]]$rows){
   $it=@($rows|Sort-Object No);$o=@();$idx=0
   for($r=1;$r-le8;$r++){
@@ -106,7 +124,9 @@ foreach($j in $Jilid){foreach($grp in (@(Candidates $j)|Group-Object Code|Sort-O
 }}
 $records=@($records|Sort-Object Jilid,PageNumber);$audit=@($audit|Sort-Object PageCode)
 $all=Join-Path $OutputDir 'QURBATA-INDESIGN-DATA-MERGE.csv';$layout=Join-Path $OutputDir 'QURBATA-INDESIGN-8ROW-LAYOUT.csv';$aud=Join-Path $OutputDir 'QURBATA-INDESIGN-EXPORT-AUDIT.csv';$json=Join-Path $OutputDir 'QURBATA-INDESIGN-DATA.json'
-[IO.File]::WriteAllLines($all,($records|ConvertTo-Csv -NoTypeInformation),$Utf8Bom)
-$sel=@('PageCode','Title');for($r=1;$r-le8;$r++){$sel+=('Row{0:D2}Count'-f$r);for($c=1;$c-le4;$c++){$sel+=('Row{0:D2}Cell{1:D2}'-f$r,$c)}};$sel+=@('Nidom','BahasaArab','Tahfidz','Akhlak');[IO.File]::WriteAllLines($layout,($records|Select-Object $sel|ConvertTo-Csv -NoTypeInformation),$Utf8Bom)
-[IO.File]::WriteAllLines($aud,($audit|ConvertTo-Csv -NoTypeInformation),$Utf8Bom);[IO.File]::WriteAllText($json,($records|ConvertTo-Json -Depth 6),$Utf8Bom)
+if($records.Count){
+  [IO.File]::WriteAllLines($all,($records|ConvertTo-Csv -NoTypeInformation),$Utf8Bom)
+  $sel=@('PageCode','Title');for($r=1;$r-le8;$r++){$sel+=('Row{0:D2}Count'-f$r);for($c=1;$c-le4;$c++){$sel+=('Row{0:D2}Cell{1:D2}'-f$r,$c)}};$sel+=@('Nidom','BahasaArab','Tahfidz','Akhlak');[IO.File]::WriteAllLines($layout,($records|Select-Object $sel|ConvertTo-Csv -NoTypeInformation),$Utf8Bom)
+  [IO.File]::WriteAllLines($aud,($audit|ConvertTo-Csv -NoTypeInformation),$Utf8Bom);[IO.File]::WriteAllText($json,($records|ConvertTo-Json -Depth 6),$Utf8Bom)
+}
 Write-Host 'QURBATA InDesign V3 export complete';Write-Host "Pages found          : $($records.Count)";Write-Host "24-reading pages     : $(($audit|Where-Object{$_.ReadingCount-eq24}).Count)";Write-Host "Source conflicts     : $(($audit|Where-Object{$_.SourceConflict}).Count)";Write-Host "Ready content merge  : $(($audit|Where-Object{$_.ReadyForContentMerge}).Count)";Write-Host "Output               : $OutputDir"
