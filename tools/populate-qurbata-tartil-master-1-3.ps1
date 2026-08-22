@@ -10,17 +10,17 @@ $extractScript=Join-Path $PSScriptRoot 'export-qurbata-indesign-v3.ps1'
 if(!(Test-Path $buildScript)){throw "Missing $buildScript"}
 if(!(Test-Path $extractScript)){throw "Missing $extractScript"}
 
-& powershell -ExecutionPolicy Bypass -File $buildScript | Out-Host
-$sourceDir=Join-Path $RepoRoot 'dist\tartil-source-1-3'
-New-Item -ItemType Directory -Force -Path $sourceDir|Out-Null
-& powershell -ExecutionPolicy Bypass -File $extractScript -OutputDir $sourceDir -Jilid 1,2,3 | Out-Host
+# Run both scripts in the current PowerShell process so array parameters stay typed.
+& $buildScript | Out-Host
+$sourceOut=Join-Path $RepoRoot 'dist\tartil-source-1-3'
+& $extractScript -RepoRoot $RepoRoot -OutputDir $sourceOut -Jilid @(1,2,3) | Out-Host
 
 $skeletonPath=Join-Path $OutputDir 'QURBATA-TARTIL-MASTER-1-8.csv'
-$sourcePath=Join-Path $sourceDir 'QURBATA-INDESIGN-DATA-MERGE.csv'
-$auditSourcePath=Join-Path $sourceDir 'QURBATA-INDESIGN-EXPORT-AUDIT.csv'
+$sourcePath=Join-Path $sourceOut 'QURBATA-INDESIGN-DATA-MERGE.csv'
+$auditSourcePath=Join-Path $sourceOut 'QURBATA-INDESIGN-EXPORT-AUDIT.csv'
 if(!(Test-Path $skeletonPath)){throw "Skeleton not found: $skeletonPath"}
 if(!(Test-Path $sourcePath)){throw "J1-J3 source export not found: $sourcePath"}
-if(!(Test-Path $auditSourcePath)){throw "J1-J3 audit export not found: $auditSourcePath"}
+if(!(Test-Path $auditSourcePath)){throw "J1-J3 source audit not found: $auditSourcePath"}
 
 $master=@(Import-Csv $skeletonPath)
 $source=@(Import-Csv $sourcePath)
@@ -36,7 +36,7 @@ foreach($m in $master){
   if($j-le3){
     if($srcByCode.ContainsKey($code)){
       $s=$srcByCode[$code]
-      $readingCount=if($s.ReadingCount){[int]$s.ReadingCount}else{0}
+      $readingCount=if([string]::IsNullOrWhiteSpace([string]$s.ReadingCount)){0}else{[int]$s.ReadingCount}
       $sourceFile=[string]$s.SourceFile
       $sourceConflict=([string]$s.SourceConflict -eq 'True')
       for($i=1;$i-le24;$i++){$name=('Slot{0:D2}'-f$i);$m.$name=$s.$name}
@@ -57,9 +57,9 @@ foreach($m in $master){
 $outCsv=Join-Path $OutputDir 'QURBATA-TARTIL-MASTER-1-8-FILLED.csv'
 $outJson=Join-Path $OutputDir 'QURBATA-TARTIL-MASTER-1-8-FILLED.json'
 $auditCsv=Join-Path $OutputDir 'QURBATA-TARTIL-CONTENT-AUDIT.csv'
-[IO.File]::WriteAllLines($outCsv,($out|ConvertTo-Csv -NoTypeInformation),$Utf8Bom)
+[IO.File]::WriteAllLines($outCsv,@($out|ConvertTo-Csv -NoTypeInformation),$Utf8Bom)
 [IO.File]::WriteAllText($outJson,($out|ConvertTo-Json -Depth 5),$Utf8Bom)
-[IO.File]::WriteAllLines($auditCsv,($audit|ConvertTo-Csv -NoTypeInformation),$Utf8Bom)
+[IO.File]::WriteAllLines($auditCsv,@($audit|ConvertTo-Csv -NoTypeInformation),$Utf8Bom)
 
 Write-Host 'QURBATA TARTIL content populate complete'
 Write-Host "Master pages          : $($out.Count)"
