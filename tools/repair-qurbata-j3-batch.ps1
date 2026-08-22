@@ -43,16 +43,16 @@ function ParseFragment([string]$text){
   foreach($rm in [regex]::Matches($text,'(?mis)^\*\*Kotak\s+(\d{1,2})\s*[–-]\s*(\d{1,2})[^*]*\*\*\s*:?\s*\r?\n([^\r\n#]+)')){
     $a=[int]$rm.Groups[1].Value;$b=[int]$rm.Groups[2].Value;$need=$b-$a+1;$parts=@($rm.Groups[3].Value -split '\s*[·•]\s*|\s*\|\s*'|Where-Object{$_ -and $_.Trim()});if($parts.Count-eq$need){PutRange $slots $a $b $parts}
   }
-  return ,$slots
+  return [pscustomobject]@{SlotMap=$slots;SlotCount=$slots.Count}
 }
 function MakeLayout([hashtable]$slots){$vals=@();for($i=1;$i-le24;$i++){$vals+=if($slots.ContainsKey($i)){$slots[$i]}else{''}};$rows=@();for($r=0;$r-lt8;$r++){$cells=@($vals[($r*3)..($r*3+2)]);$rows+=[pscustomobject]@{Count=3;Cells=@($cells[0],$cells[1],$cells[2],'')}};return @($rows)}
 if(!(Test-Path $MasterPath)){throw "Master not found: $MasterPath"}
 $master=@(Import-Csv $MasterPath);$audit=@();if(Test-Path $AuditPath){$audit=@(Import-Csv $AuditPath)}
 $files=@('QJ3-B02A-Materi-P011-P015.md','QJ3-B02B-Materi-P016-P020.md','QJ3-B03A-Materi-P021-P025.md','QJ3-B03B-Materi-P026-P030.md','QJ3-B04A-Materi-P031-P035.md','QJ3-B04B-Materi-P036-P040.md')
 $parsed=@{}
-foreach($name in $files){$path=Join-Path $RepoRoot ("books\jilid-3\pages\$name");if(!(Test-Path $path)){continue};$t=[IO.File]::ReadAllText($path,[Text.Encoding]::UTF8);$ms=[regex]::Matches($t,'(?m)^##\s+(QJ3-P\d{3})\b.*$');for($i=0;$i-lt$ms.Count;$i++){$start=$ms[$i].Index;$end=if($i+1-lt$ms.Count){$ms[$i+1].Index}else{$t.Length};$frag=$t.Substring($start,$end-$start);$slotMap=ParseFragment $frag;$parsed[$ms[$i].Groups[1].Value]=[pscustomobject]@{Slots=$slotMap;File=("books/jilid-3/pages/$name")}}}
+foreach($name in $files){$path=Join-Path $RepoRoot ("books\jilid-3\pages\$name");if(!(Test-Path $path)){continue};$t=[IO.File]::ReadAllText($path,[Text.Encoding]::UTF8);$ms=[regex]::Matches($t,'(?m)^##\s+(QJ3-P\d{3})\b.*$');for($i=0;$i-lt$ms.Count;$i++){$start=$ms[$i].Index;$end=if($i+1-lt$ms.Count){$ms[$i+1].Index}else{$t.Length};$frag=$t.Substring($start,$end-$start);$parsedResult=ParseFragment $frag;$parsed[$ms[$i].Groups[1].Value]=[pscustomobject]@{Slots=$parsedResult.SlotMap;Count=$parsedResult.SlotCount;File=("books/jilid-3/pages/$name")}}}
 $fixed=0;$still=0
-foreach($page in $master){if([int]$page.Jilid-ne3-or-not$parsed.ContainsKey($page.PageCode)){continue};$p=$parsed[$page.PageCode];$slots=[hashtable]$p.Slots;$count=$slots.Count;Write-Host ("{0} parsed slots : {1}" -f $page.PageCode,$count);if($count-eq24){for($i=1;$i-le24;$i++){$n=('Slot{0:D2}'-f$i);$page.$n=$slots[$i]};$lay=@(MakeLayout $slots);for($r=1;$r-le8;$r++){$page.('Row{0:D2}Count'-f$r)=$lay[$r-1].Count;for($c=1;$c-le4;$c++){$page.('Row{0:D2}Cell{1:D2}'-f$r,$c)=$lay[$r-1].Cells[$c-1]}};$page.ContentStatus='FILLED_24';$fixed++}else{$still++}
+foreach($page in $master){if([int]$page.Jilid-ne3-or-not$parsed.ContainsKey($page.PageCode)){continue};$p=$parsed[$page.PageCode];$slots=$p.Slots;$count=[int]$p.Count;Write-Host ("{0} parsed slots : {1}" -f $page.PageCode,$count);if($count-eq24){for($i=1;$i-le24;$i++){$n=('Slot{0:D2}'-f$i);$page.$n=$slots[$i]};$lay=@(MakeLayout $slots);for($r=1;$r-le8;$r++){$page.('Row{0:D2}Count'-f$r)=$lay[$r-1].Count;for($c=1;$c-le4;$c++){$page.('Row{0:D2}Cell{1:D2}'-f$r,$c)=$lay[$r-1].Cells[$c-1]}};$page.ContentStatus='FILLED_24';$fixed++}else{$still++}
   $aRow=$audit|Where-Object{$_.PageCode-eq$page.PageCode}|Select-Object -First 1;if($aRow){$aRow.ReadingCount=[string]$count;$aRow.ContentStatus=if($count-eq24){'FILLED_24'}else{'PARTIAL_REVIEW'};$aRow.SourceFile=$p.File}
 }
 [IO.File]::WriteAllLines($MasterPath,($master|ConvertTo-Csv -NoTypeInformation),$Utf8Bom)
