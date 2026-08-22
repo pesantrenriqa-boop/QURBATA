@@ -17,9 +17,20 @@ function Get-SourceFile([int]$n){
   if($n-le35){return 'QJ3-B04A-Materi-P031-P035.md'}
   return 'QJ3-B04B-Materi-P036-P040.md'
 }
+function Split-Items([string]$s){
+  if([string]::IsNullOrWhiteSpace($s)){return @()}
+  return @($s -split '\s*[\u00B7\u2022]\s*|\s*\|\s*' | ForEach-Object {$_.Trim()} | Where-Object {$_ -and $_ -ne '-' -and $_ -ne ([char]0x2014)})
+}
+function Put-Range([object[]]$arr,[int]$a,[int]$b,[object[]]$items){
+  $need=$b-$a+1
+  if($a-lt1 -or $b-gt24 -or $items.Count-ne$need){return $false}
+  for($k=0;$k-lt$need;$k++){$arr[$a+$k]=$items[$k]}
+  return $true
+}
 
 $rangePattern='^\s*(\d{1,2})\s*[\u2013\u2014-]\s*(\d{1,2})\s*$'
-$itemSplitPattern='\s*[\u00B7\u2022]\s*'
+$inlineKotak='^\*\*Kotak\s+(\d{1,2})\s*[\u2013\u2014-]\s*(\d{1,2}).*?\*\*\s*:?[ ]*(.*)$'
+$headingKotak='^#{3,4}\s+.*?kotak\s+(\d{1,2})\s*[\u2013\u2014-]\s*(\d{1,2})'
 
 $fixed=0
 $review=0
@@ -41,26 +52,63 @@ for($n=11;$n-le40;$n++){
       if($lines[$i].StartsWith('## QJ3-P')){$endIndex=$i;break}
     }
 
+    $pendingA=0;$pendingB=0;$numbered=@()
     for($i=$startIndex;$i-lt$endIndex;$i++){
       $line=$lines[$i]
-      if(!$line.TrimStart().StartsWith('|')){continue}
+      $trim=$line.Trim()
 
-      $cells=@(($line.Trim().Trim('|') -split '\|') | ForEach-Object {$_.Trim()})
-      if($cells.Count-lt3){continue}
-
-      $range=$cells[1]
-      if($range -match $rangePattern){
-        $a=[int]$Matches[1]
-        $b=[int]$Matches[2]
-      } else {
+      if($trim.StartsWith('|')){
+        $cells=@(($trim.Trim('|') -split '\|') | ForEach-Object {$_.Trim()})
+        $ri=-1;$a=0;$b=0
+        for($ci=0;$ci-lt$cells.Count;$ci++){
+          if($cells[$ci] -match $rangePattern){$ri=$ci;$a=[int]$Matches[1];$b=[int]$Matches[2];break}
+        }
+        if($ri-ge0){
+          $need=$b-$a+1
+          $items=@()
+          for($ci=$ri+1;$ci-lt$cells.Count;$ci++){
+            foreach($x in @(Split-Items $cells[$ci])){$items+=$x}
+          }
+          if($items.Count-eq$need){[void](Put-Range $arr $a $b $items)}
+        }
         continue
       }
-      $need=$b-$a+1
 
-      $items=@($cells[2] -split $itemSplitPattern | ForEach-Object {$_.Trim()} | Where-Object {$_})
-      if($items.Count-ne$need){continue}
+      if($trim -match $inlineKotak){
+        $a=[int]$Matches[1];$b=[int]$Matches[2];$tail=$Matches[3]
+        $items=@(Split-Items $tail)
+        if($items.Count-eq($b-$a+1)){
+          [void](Put-Range $arr $a $b $items)
+          $pendingA=0;$pendingB=0;$numbered=@()
+        }else{
+          $pendingA=$a;$pendingB=$b;$numbered=@()
+        }
+        continue
+      }
 
-      for($k=0;$k-lt$items.Count;$k++){$arr[$a+$k]=$items[$k]}
+      if($trim -match $headingKotak){
+        $pendingA=[int]$Matches[1];$pendingB=[int]$Matches[2];$numbered=@()
+        continue
+      }
+
+      if($pendingA-gt0){
+        $need=$pendingB-$pendingA+1
+        if($trim -match '^\d+\.\s+(.+)$'){
+          $numbered+=$Matches[1].Trim()
+          if($numbered.Count-eq$need){
+            [void](Put-Range $arr $pendingA $pendingB $numbered)
+            $pendingA=0;$pendingB=0;$numbered=@()
+          }
+          continue
+        }
+        if([string]::IsNullOrWhiteSpace($trim) -or $trim.StartsWith('**Source:') -or $trim.StartsWith('**Potongan utuh:')){continue}
+        $items=@(Split-Items $trim)
+        if($items.Count-eq$need){
+          [void](Put-Range $arr $pendingA $pendingB $items)
+          $pendingA=0;$pendingB=0;$numbered=@()
+          continue
+        }
+      }
     }
   }
 
