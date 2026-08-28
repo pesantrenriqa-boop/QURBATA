@@ -1,7 +1,7 @@
 param(
     [ValidateSet('Audit','Cleanup','AuditCleanup')]
     [string]$Mode = 'Audit',
-    [string]$InDesignExe = ''
+    [string]$ProgId = ''
 )
 
 $ErrorActionPreference = 'Stop'
@@ -10,6 +10,8 @@ $RepoRoot = (Resolve-Path "$PSScriptRoot\..").Path
 $JsxPath = Join-Path $PSScriptRoot 'indesign-qurbata-j1-automation.jsx'
 $DistDir = Join-Path $RepoRoot 'dist\indesign-automation'
 $CommandPath = Join-Path $DistDir 'QURBATA-INDESIGN-COMMAND.txt'
+$SummaryPath = Join-Path $DistDir 'QURBATA-J1-AUTOMATION-SUMMARY.txt'
+$AuditPath = Join-Path $DistDir 'QURBATA-J1-OVERSET-AUDIT.tsv'
 
 if (!(Test-Path $JsxPath)) {
     throw "JSX not found: $JsxPath"
@@ -25,77 +27,100 @@ $modeValue = switch ($Mode) {
 
 [IO.File]::WriteAllText(
     $CommandPath,
-    "MODE=$modeValue\`r\`n",
+    "MODE=$modeValue`r`n",
     (New-Object System.Text.UTF8Encoding($false))
 )
 
-function Find-InDesignExe {
+function Get-InDesignProgIds {
     param([string]$Explicit)
 
-    if ($Explicit) {
-        if (!(Test-Path $Explicit)) {
-            throw "InDesign.exe not found at explicit path: $Explicit"
+    if ($Explicit) { return @($Explicit) }
+
+    $ids = New-Object System.Collections.Generic.List[string]
+    $ids.Add('InDesign.Application')
+
+    try {
+        $keys = Get-ChildItem Registry::HKEY_CLASSES_ROOT -ErrorAction Stop |
+            Where-Object { $_.PSChildName -like 'InDesign.Application*' } |
+            Select-Object -ExpandProperty PSChildName
+        foreach ($k in $keys) {
+            if (-not $ids.Contains($k)) { $ids.Add($k) }
         }
-        return (Resolve-Path $Explicit).Path
     }
+    catch {}
 
-    $roots = @()
-    if ($env:ProgramFiles) {
-        $roots += (Join-Path $env:ProgramFiles 'Adobe')
-    }
-    $pf86 = [Environment]::GetFolderPath('ProgramFilesX86')
-    if ($pf86) {
-        $roots += (Join-Path $pf86 'Adobe')
-    }
-
-    $roots = $roots | Where-Object { $_ -and (Test-Path $_) }
-
-    foreach ($root in $roots) {
-        $found = Get-ChildItem -Path $root -Filter 'InDesign.exe' -File -Recurse -ErrorAction SilentlyContinue |
-            Sort-Object FullName -Descending |
-            Select-Object -First 1
-        if ($found) { return $found.FullName }
-    }
-
-    return $null
+    return @($ids)
 }
 
-$exe = Find-InDesignExe -Explicit $InDesignExe
+function Connect-InDesign {
+    param([string[]]$Candidates)
+
+    $errors = @()
+    foreach ($id in $Candidates) {
+        try {
+            Write-Host "Trying COM ProgID: $id"
+            $app = New-Object -ComObject $id
+            if ($null -ne $app) {
+                return [pscustomobject]@{ App=$app; ProgId=$id }
+            }
+        }
+        catch {
+            $errors += "$id => $($_.Exception.Message)"
+        }
+    }
+    throw ("Could not connect to InDesign COM automation.`r`n" + ($errors -join "`r`n"))
+}
 
 Write-Host "QURBATA InDesign J1 automation"
 Write-Host "Mode       : $modeValue"
 Write-Host "JSX        : $JsxPath"
 Write-Host "Command    : $CommandPath"
-
-if (-not $exe) {
-    Write-Warning "InDesign.exe was not found automatically."
-    Write-Host ""
-    Write-Host "Open InDesign, then run this JSX from Window > Utilities > Scripts:"
-    Write-Host "  $JsxPath"
-    Write-Host ""
-    Write-Host "The command file has already been prepared for mode $modeValue."
-    exit 2
-}
-
-Write-Host "InDesign   : $exe"
 Write-Host ""
-Write-Host "Make sure the MERGED QURBATA J1 document is the active InDesign document."
-Write-Host "Launching JSX through InDesign..."
+Write-Host "IMPORTANT: keep the 36-page MERGED J1 document open and active in InDesign."
+Write-Host ""
 
-$quotedJsx = '"' + $JsxPath + '"'
+$candidates = Get-InDesignProgIds -Explicit $ProgId
+$conn = Connect-InDesign -Candidates $candidates
+$app = $conn.App
+Write-Host "Connected  : $($conn.ProgId)"
+
+try { $docCount = [int]$app.Documents.Count }
+catch { throw "Connected to InDesign, but could not read Documents.Count: $($_.Exception.Message)" }
+
+if ($docCount -lt 1) {
+    throw "InDesign is connected, but no document is open. Open the merged J1 document first."
+}
 
 try {
-    Start-Process -FilePath $exe -ArgumentList @('-run', $quotedJsx) | Out-Null
-    Write-Host ""
-    Write-Host "Launch request sent."
-    Write-Host "Expected report:"
-    Write-Host "  $(Join-Path $DistDir 'QURBATA-J1-OVERSET-AUDIT.tsv')"
-    Write-Host "  $(Join-Path $DistDir 'QURBATA-J1-AUTOMATION-SUMMARY.txt')"
+    $activeName = [string]$app.ActiveDocument.Name
+    Write-Host "Active doc : $activeName"
 }
 catch {
-    Write-Warning "Direct -run launch failed: $($_.Exception.Message)"
-    Write-Host ""
-    Write-Host "Fallback: in InDesign run the JSX manually from the Scripts panel:"
-    Write-Host "  $JsxPath"
-    exit 3
+    Write-Warning "Could not read active document name."
 }
+
+$javaScriptLanguage = 1246973031
+$jsxCode = [IO.File]::ReadAllText($JsxPath, [Text.Encoding]::UTF8)
+
+Write-Host "Running JSX inside InDesign..."
+
+try {
+    $null = $app.DoScript($jsxCode, $javaScriptLanguage)
+}
+catch {
+    throw "InDesign DoScript failed: $($_.Exception.Message)"
+}
+
+Start-Sleep -Milliseconds 500
+
+if (!(Test-Path $SummaryPath)) {
+    throw "JSX returned, but summary file was not created: $SummaryPath"
+}
+
+Write-Host ""
+Write-Host "SUCCESS - InDesign created the automation report."
+Write-Host ""
+Get-Content $SummaryPath
+Write-Host ""
+Write-Host "Audit TSV   : $AuditPath"
+Write-Host "Summary TXT : $SummaryPath"
