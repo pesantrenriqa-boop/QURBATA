@@ -1,6 +1,8 @@
 param(
-    [ValidateSet('Audit','Cleanup','AuditCleanup')]
+    [ValidateSet('Audit','Cleanup','AuditCleanup','AutoFix','AutoFixCleanup')]
     [string]$Mode = 'Audit',
+    [double]$MinPointSize = 28,
+    [double]$StepPointSize = 0.5,
     [string]$ProgId = ''
 )
 
@@ -12,28 +14,30 @@ $DistDir = Join-Path $RepoRoot 'dist\indesign-automation'
 $CommandPath = Join-Path $DistDir 'QURBATA-INDESIGN-COMMAND.txt'
 $SummaryPath = Join-Path $DistDir 'QURBATA-J1-AUTOMATION-SUMMARY.txt'
 $AuditPath = Join-Path $DistDir 'QURBATA-J1-OVERSET-AUDIT.tsv'
+$AutoFixPath = Join-Path $DistDir 'QURBATA-J1-AUTOFIX-REPORT.tsv'
 
-if (!(Test-Path $JsxPath)) {
-    throw "JSX not found: $JsxPath"
-}
+if (!(Test-Path $JsxPath)) { throw "JSX not found: $JsxPath" }
+if ($MinPointSize -lt 20 -or $MinPointSize -gt 36) { throw "MinPointSize must be between 20 and 36." }
+if ($StepPointSize -le 0 -or $StepPointSize -gt 2) { throw "StepPointSize must be > 0 and <= 2." }
 
 New-Item -ItemType Directory -Force -Path $DistDir | Out-Null
 
 $modeValue = switch ($Mode) {
-    'Audit'        { 'AUDIT' }
-    'Cleanup'      { 'CLEANUP' }
-    'AuditCleanup' { 'AUDIT_CLEANUP' }
+    'Audit'          { 'AUDIT' }
+    'Cleanup'        { 'CLEANUP' }
+    'AuditCleanup'   { 'AUDIT_CLEANUP' }
+    'AutoFix'        { 'AUTOFIX' }
+    'AutoFixCleanup' { 'AUTOFIX_CLEANUP' }
 }
 
 [IO.File]::WriteAllText(
     $CommandPath,
-    "MODE=$modeValue`r`n",
+    "MODE=$modeValue`r`nMINPT=$MinPointSize`r`nSTEP=$StepPointSize`r`n",
     (New-Object System.Text.UTF8Encoding($false))
 )
 
 function Get-InDesignProgIds {
     param([string]$Explicit)
-
     if ($Explicit) { return @($Explicit) }
 
     $ids = New-Object System.Collections.Generic.List[string]
@@ -48,33 +52,29 @@ function Get-InDesignProgIds {
         }
     }
     catch {}
-
     return @($ids)
 }
 
 function Connect-InDesign {
     param([string[]]$Candidates)
-
     $errors = @()
     foreach ($id in $Candidates) {
         try {
             Write-Host "Trying COM ProgID: $id"
             $app = New-Object -ComObject $id
-            if ($null -ne $app) {
-                return [pscustomobject]@{ App=$app; ProgId=$id }
-            }
+            if ($null -ne $app) { return [pscustomobject]@{ App=$app; ProgId=$id } }
         }
-        catch {
-            $errors += "$id => $($_.Exception.Message)"
-        }
+        catch { $errors += "$id => $($_.Exception.Message)" }
     }
     throw ("Could not connect to InDesign COM automation.`r`n" + ($errors -join "`r`n"))
 }
 
 Write-Host "QURBATA InDesign J1 automation"
 Write-Host "Mode       : $modeValue"
+Write-Host "Min pt     : $MinPointSize"
+Write-Host "Step pt    : $StepPointSize"
 Write-Host "JSX        : $JsxPath"
-Write-Host "Command    : $CommandPath"
+Write-Host "Output     : $DistDir"
 Write-Host ""
 Write-Host "IMPORTANT: keep the 36-page MERGED J1 document open and active in InDesign."
 Write-Host ""
@@ -87,35 +87,32 @@ Write-Host "Connected  : $($conn.ProgId)"
 try { $docCount = [int]$app.Documents.Count }
 catch { throw "Connected to InDesign, but could not read Documents.Count: $($_.Exception.Message)" }
 
-if ($docCount -lt 1) {
-    throw "InDesign is connected, but no document is open. Open the merged J1 document first."
-}
+if ($docCount -lt 1) { throw "InDesign is connected, but no document is open. Open the merged J1 document first." }
 
 try {
     $activeName = [string]$app.ActiveDocument.Name
+    $activePages = [int]$app.ActiveDocument.Pages.Count
     Write-Host "Active doc : $activeName"
+    Write-Host "Pages      : $activePages"
 }
-catch {
-    Write-Warning "Could not read active document name."
-}
+catch { Write-Warning "Could not read active document information." }
 
 $javaScriptLanguage = 1246973031
-$jsxCode = [IO.File]::ReadAllText($JsxPath, [Text.Encoding]::UTF8)
+$jsxBody = [IO.File]::ReadAllText($JsxPath, [Text.Encoding]::UTF8)
+
+$escapedOutput = $DistDir.Replace('\','/').Replace("'","\'")
+$modeJs = $modeValue.Replace("'","\'")
+$prefix = "var QURBATA_MODE='$modeJs'; var QURBATA_OUTPUT_DIR='$escapedOutput'; var QURBATA_MIN_PT=$MinPointSize; var QURBATA_STEP_PT=$StepPointSize;`r`n"
+$jsxCode = $prefix + $jsxBody
 
 Write-Host "Running JSX inside InDesign..."
 
-try {
-    $null = $app.DoScript($jsxCode, $javaScriptLanguage)
-}
-catch {
-    throw "InDesign DoScript failed: $($_.Exception.Message)"
-}
+try { $null = $app.DoScript($jsxCode, $javaScriptLanguage) }
+catch { throw "InDesign DoScript failed: $($_.Exception.Message)" }
 
 Start-Sleep -Milliseconds 500
 
-if (!(Test-Path $SummaryPath)) {
-    throw "JSX returned, but summary file was not created: $SummaryPath"
-}
+if (!(Test-Path $SummaryPath)) { throw "JSX returned, but summary file was not created: $SummaryPath" }
 
 Write-Host ""
 Write-Host "SUCCESS - InDesign created the automation report."
@@ -123,4 +120,5 @@ Write-Host ""
 Get-Content $SummaryPath
 Write-Host ""
 Write-Host "Audit TSV   : $AuditPath"
+if ($Mode -like 'AutoFix*') { Write-Host "AutoFix TSV : $AutoFixPath" }
 Write-Host "Summary TXT : $SummaryPath"
