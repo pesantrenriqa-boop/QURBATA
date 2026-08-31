@@ -3,8 +3,36 @@
     if (app.documents.length === 0) { alert("QURBATA: tidak ada dokumen terbuka."); return; }
     var doc = app.activeDocument;
     if (doc.pages.length !== 40) { alert("QURBATA: aktifkan dokumen produksi 40 halaman. Pages sekarang: " + doc.pages.length); return; }
-    var scriptFile = File($.fileName);
-    var repoRoot = scriptFile.parent.parent;
+
+    // IMPORTANT: this JSX is executed through app.DoScript(string), so $.fileName
+    // is not a reliable path to the original JSX file. Derive the repository root
+    // from the active production document instead.
+    var docFile;
+    try { docFile = doc.fullName; } catch (_) {
+        alert("QURBATA: dokumen produksi belum disimpan. Simpan dokumen 40 halaman di dalam repo QURBATA terlebih dahulu.");
+        return;
+    }
+
+    var cursor = docFile.parent;
+    var repoRoot = null;
+    while (cursor && cursor.exists) {
+        if (cursor.name === "QURBATA") { repoRoot = cursor; break; }
+        var parent = cursor.parent;
+        if (!parent || parent.fsName === cursor.fsName) break;
+        cursor = parent;
+    }
+
+    // Fallback for the established local RIQA workspace.
+    if (!repoRoot) {
+        var fallback = Folder("C:/Users/hp/RIQA-GITHUB/QURBATA");
+        if (fallback.exists) repoRoot = fallback;
+    }
+
+    if (!repoRoot) {
+        alert("QURBATA: root repository tidak ditemukan dari dokumen aktif.");
+        return;
+    }
+
     var dataFile = File(repoRoot.fsName + "/dist/indesign-template-data/QURBATA-J1-40P-COMPETENCY.tsv");
     if (!dataFile.exists) { alert("QURBATA: competency register belum dibuat.\n" + dataFile.fsName); return; }
     dataFile.encoding = "UTF-8";
@@ -44,5 +72,5 @@
         addFrame(page,[y1+h*0.115,x1+w*0.09,y1+h*0.147,x2-w*0.09],titleText,10.5,"QURBATA_COMPETENCY_TITLE",Justification.CENTER_ALIGN);
         addFrame(page,[y1+h*0.148,x1+w*0.10,y1+h*0.183,x2-w*0.10],targetText,8.5,"QURBATA_COMPETENCY_TARGET",Justification.CENTER_ALIGN);
     }
-    alert("QURBATA competency block selesai.\n\nPages: 40\nTitle blocks: 40\nTarget blocks: 40\n\nEmpat halaman khusus tetap menunggu mapping/pengesahan final.");
+    alert("QURBATA competency block selesai.\n\nPages: 40\nTitle blocks: 40\nTarget blocks: 40\n\nRegister: " + dataFile.fsName + "\n\nEmpat halaman khusus tetap menunggu mapping/pengesahan final.");
 })();
