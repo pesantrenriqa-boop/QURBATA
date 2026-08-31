@@ -6,7 +6,8 @@ import scribus
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SOURCE_CSV = os.path.join(REPO_ROOT, "dist", "indesign-template-data", "QURBATA-INDESIGN-J1-4COL-8ROW-FULL-REFINED.csv")
 COMP_TSV = os.path.join(REPO_ROOT, "dist", "indesign-template-data", "QURBATA-J1-40P-COMPETENCY.tsv")
-SPECIAL_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SPECIAL-PAGES.csv")\nSPECIAL_CONTENT_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SPECIAL-CONTENT.csv")
+SPECIAL_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SPECIAL-PAGES.csv")
+SPECIAL_CONTENT_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SPECIAL-CONTENT.csv")
 OUTPUT_SLA = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-PRODUCTION-40P.sla")
 
 PAGE_W = 148.0
@@ -55,11 +56,15 @@ def load_data():
 
     tartil_rows = load_csv(SOURCE_CSV)
     comp_rows = load_csv(COMP_TSV, "\t")
-    special_rows = load_csv(SPECIAL_CSV)\n    if not os.path.exists(SPECIAL_CONTENT_CSV):\n        raise RuntimeError("Special content master not found: " + SPECIAL_CONTENT_CSV)\n    special_content_rows = load_csv(SPECIAL_CONTENT_CSV)
+    special_rows = load_csv(SPECIAL_CSV)
+    if not os.path.exists(SPECIAL_CONTENT_CSV):
+        raise RuntimeError("Special content master not found: " + SPECIAL_CONTENT_CSV)
+    special_content_rows = load_csv(SPECIAL_CONTENT_CSV)
 
     tartil = {int(r["PageNumber"]): r for r in tartil_rows}
     comps = {int(r["PageNumber"]): r for r in comp_rows}
-    specials = {int(r["PageNumber"]): r for r in special_rows}\n    special_content = {int(r["PageNumber"]): r for r in special_content_rows}
+    specials = {int(r["PageNumber"]): r for r in special_rows}
+    special_content = {int(r["PageNumber"]): r for r in special_content_rows}
 
     if len(comps) != 40:
         raise RuntimeError("Competency register must contain 40 rows; found %d" % len(comps))
@@ -214,7 +219,9 @@ def main():
             add_competency(page_num, comps[page_num], latin)
 
             if page_num in specials:
-                if page_num not in special_content:\n                    raise RuntimeError("Special content missing for page %d" % page_num)\n                add_special_page(page_num, specials[page_num], special_content[page_num], comps[page_num], latin, arabic)
+                if page_num not in special_content:
+                    raise RuntimeError("Special content missing for page %d" % page_num)
+                add_special_page(page_num, specials[page_num], special_content[page_num], comps[page_num], latin, arabic)
             else:
                 add_tartil_grid(page_num, tartil[page_num], arabic)
                 add_footer_arabic(page_num, arabic)
