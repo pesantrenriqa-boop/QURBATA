@@ -6,7 +6,7 @@ import scribus
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SOURCE_CSV = os.path.join(REPO_ROOT, "dist", "indesign-template-data", "QURBATA-INDESIGN-J1-4COL-8ROW-FULL-REFINED.csv")
 COMP_TSV = os.path.join(REPO_ROOT, "dist", "indesign-template-data", "QURBATA-J1-40P-COMPETENCY.tsv")
-SPECIAL_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SPECIAL-PAGES.csv")
+SPECIAL_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SPECIAL-PAGES.csv")\nSPECIAL_CONTENT_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SPECIAL-CONTENT.csv")
 OUTPUT_SLA = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-PRODUCTION-40P.sla")
 
 PAGE_W = 148.0
@@ -55,11 +55,11 @@ def load_data():
 
     tartil_rows = load_csv(SOURCE_CSV)
     comp_rows = load_csv(COMP_TSV, "\t")
-    special_rows = load_csv(SPECIAL_CSV)
+    special_rows = load_csv(SPECIAL_CSV)\n    if not os.path.exists(SPECIAL_CONTENT_CSV):\n        raise RuntimeError("Special content master not found: " + SPECIAL_CONTENT_CSV)\n    special_content_rows = load_csv(SPECIAL_CONTENT_CSV)
 
     tartil = {int(r["PageNumber"]): r for r in tartil_rows}
     comps = {int(r["PageNumber"]): r for r in comp_rows}
-    specials = {int(r["PageNumber"]): r for r in special_rows}
+    specials = {int(r["PageNumber"]): r for r in special_rows}\n    special_content = {int(r["PageNumber"]): r for r in special_content_rows}
 
     if len(comps) != 40:
         raise RuntimeError("Competency register must contain 40 rows; found %d" % len(comps))
@@ -69,7 +69,7 @@ def load_data():
     if missing:
         raise RuntimeError("Missing Tartil page data: " + ", ".join(map(str, missing)))
 
-    return tartil, comps, specials
+    return tartil, comps, specials, special_content
 
 def set_frame_text(frame, text, font, size, align=scribus.ALIGN_CENTERED):
     scribus.setText(text, frame)
@@ -140,26 +140,22 @@ def add_tartil_grid(page_num, row, arabic):
                 raise RuntimeError("Unresolved Tartil overflow: %s (%.1f pt)" % (name, final_size))
             i += 1
 
-def add_special_page(page_num, spec, comp, latin, arabic):
-    title = comp["CompetencyTitle"]
-    text_frame(MARGIN, 56.0, GRID_W, 16.0, title, latin, 18.0, "P%02d_SpecialTitle" % page_num, line_width=0.7)
-
-    text_frame(MARGIN + 10, 79.0, GRID_W - 20, 9.0, "HALAMAN KHUSUS", latin, 10.0, "P%02d_SpecialLabel" % page_num)
-
-    note = str(spec.get("IntegrationNote", "")).strip()
-    status = str(spec.get("Status", "")).strip()
-    body = "Status: %s\n\n%s" % (status, note)
-    body_frame = text_frame(MARGIN + 8, 94.0, GRID_W - 16, 42.0, body, latin, 9.0, "P%02d_SpecialBody" % page_num, line_width=0.7)
-    fit_text(body_frame, 9.0, 7.0, 0.5)
-
-    if page_num in (18, 36):
-        foot = "Hafalan adalah amanah yang dijaga dengan sabar, benar, dan rendah hati."
-    elif page_num == 28:
-        foot = "Bahasa yang baik digunakan untuk memahami, menyapa, dan menghormati sesama."
-    else:
-        foot = "Belajar Al-Qur'an dengan tenang, teliti, sungguh-sungguh, dan beradab."
-
-    text_frame(MARGIN + 8, 145.0, GRID_W - 16, 16.0, foot, latin, 8.5, "P%02d_SpecialNote" % page_num)
+def add_special_page(page_num, spec, content, comp, latin, arabic):
+    title = content.get("Title", "").strip() or comp["CompetencyTitle"]
+    text_frame(MARGIN, 54.0, GRID_W, 15.0, title, latin, 16.0, "P%02d_SpecialTitle" % page_num, line_width=0.7)
+    primary = content.get("PrimaryText", "").strip()
+    secondary = content.get("SecondaryText", "").strip()
+    instruction = content.get("Instruction", "").strip()
+    if primary:
+        use_arabic = any("\u0600" <= ch <= "\u06ff" for ch in primary)
+        size = 22.0 if use_arabic else 13.0
+        pf = text_frame(MARGIN + 8, 76.0, GRID_W - 16, 24.0, primary, arabic if use_arabic else latin, size, "P%02d_SpecialPrimary" % page_num, line_width=0.7)
+        fit_text(pf, size, 11.0, 0.5)
+    if secondary:
+        sf = text_frame(MARGIN + 8, 104.0, GRID_W - 16, 12.0, secondary, latin, 9.5, "P%02d_SpecialSecondary" % page_num, line_width=0.7)
+        fit_text(sf, 9.5, 7.0, 0.5)
+    inf = text_frame(MARGIN + 8, 123.0, GRID_W - 16, 34.0, instruction, latin, 9.0, "P%02d_SpecialInstruction" % page_num, line_width=0.7)
+    fit_text(inf, 9.0, 7.0, 0.5)
     add_footer_arabic(page_num, arabic)
 
 def validate_document(tartil_pages):
@@ -176,7 +172,7 @@ def validate_document(tartil_pages):
     return bad
 
 def main():
-    tartil, comps, specials = load_data()
+    tartil, comps, specials, special_content = load_data()
 
     latin = choose_font(FONT_LATIN_CANDIDATES)
     arabic = choose_font(FONT_ARABIC_CANDIDATES)
@@ -218,7 +214,7 @@ def main():
             add_competency(page_num, comps[page_num], latin)
 
             if page_num in specials:
-                add_special_page(page_num, specials[page_num], comps[page_num], latin, arabic)
+                if page_num not in special_content:\n                    raise RuntimeError("Special content missing for page %d" % page_num)\n                add_special_page(page_num, specials[page_num], special_content[page_num], comps[page_num], latin, arabic)
             else:
                 add_tartil_grid(page_num, tartil[page_num], arabic)
                 add_footer_arabic(page_num, arabic)
