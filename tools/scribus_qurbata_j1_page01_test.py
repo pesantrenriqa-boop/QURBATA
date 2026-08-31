@@ -60,10 +60,11 @@ def load_page1():
 
 def text_frame(x, y, w, h, text, font, size, name, align=scribus.ALIGN_CENTERED):
     frame = scribus.createText(x, y, w, h, name)
-    scribus.insertText(text, 0, frame)
+    scribus.setText(text, frame)
     if font:
         scribus.setFont(font, frame)
     scribus.setFontSize(size, frame)
+    scribus.setTextColor("Black", frame)
     scribus.setTextAlignment(align, frame)
     try:
         scribus.setTextVerticalAlignment(scribus.ALIGNV_CENTERED, frame)
@@ -76,6 +77,15 @@ def grid_cell(x, y, w, h, text, font, name):
     scribus.setLineColor("Black", frame)
     scribus.setLineWidth(0.7, frame)
     scribus.setFillColor("None", frame)
+    # Verify content and detect actual overflow instead of trusting frame marker UI.
+    if scribus.getTextLength(frame) <= 0:
+        raise RuntimeError("Arabic content was not inserted into %s" % name)
+    if scribus.textOverflows(frame):
+        # QURBATA drills are short; reduce only if this specific frame really overflows.
+        for pt in (22, 20, 18, 16):
+            scribus.setFontSize(pt, frame)
+            if not scribus.textOverflows(frame):
+                break
     return frame
 
 def main():
@@ -140,6 +150,16 @@ def main():
 
     scribus.saveDocAs(OUTPUT_SLA)
     scribus.redrawAll()
+
+    # Native diagnostic: verify all 32 Arabic frames contain text and fit.
+    bad = []
+    for rr in range(1, 9):
+        for cc in range(1, 5):
+            name = "R%dC%d" % (rr, cc)
+            if scribus.getTextLength(name) <= 0 or scribus.textOverflows(name):
+                bad.append(name)
+    if bad:
+        raise RuntimeError("Arabic frame diagnostic failed: " + ", ".join(bad))
 
     scribus.messageBox(
         "QURBATA Scribus",
