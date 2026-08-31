@@ -23,7 +23,8 @@ AddText 13 27 122 7 ("$($c.CompetencyCode) - $($c.CompetencyTitle)") 10 'Arial' 
 AddText 13 35 122 12 ('Target: '+$c.CompetencyTarget) 7.5 'Arial' 'CompetencyTarget'
 $i=0;foreach($r in 0..7){foreach($col in 0..3){$x=$margin+$col*($cellW+$gapX);$y=$gridY+$r*($cellH+$gapY);AddCell $x $y $cellW $cellH $cells[$i] ("R$($r+1)C$($col+1)");$i++}}
 AddText 13 188 35 7 'QURBATA - JILID 1' 7 'Arial' 'FooterLeft'
-AddText 48 188 87 7 'تَعَلَّمْ • اِعْمَلْ • عَلِّمْ' 8 'KFGQPC Uthman Taha Naskh' 'FooterCenter'
+$footerArabic=[string]::Concat([char]0x062A,[char]0x064E,[char]0x0639,[char]0x064E,[char]0x0644,[char]0x0651,[char]0x064E,[char]0x0645,[char]0x0652,' - ',[char]0x0627,[char]0x0650,[char]0x0639,[char]0x0652,[char]0x0645,[char]0x064E,[char]0x0644,[char]0x0652,' - ',[char]0x0639,[char]0x064E,[char]0x0644,[char]0x0651,[char]0x0650,[char]0x0645,[char]0x0652)
+AddText 48 188 87 7 $footerArabic 8 'KFGQPC Uthman Taha Naskh' 'FooterCenter'
 $nl=[Environment]::NewLine
 $xml='<?xml version="1.0" encoding="UTF-8"?>'+$nl+'<SCRIBUSUTF8NEW Version="1.6.6">'+$nl
 $xml+="<DOCUMENT ANZPAGES='1' PAGEWIDTH='$(F $W)' PAGEHEIGHT='$(F $H)' BORDERLEFT='$(F $margin)' BORDERRIGHT='$(F $margin)' BORDERTOP='$(F 10)' BORDERBOTTOM='$(F 10)' PRESET='0' ORIENTATION='0' PAGESIZE='Custom' FIRSTNUM='1' BOOK='0' AUTOTEXT='0' ScratchLeft='100' ScratchRight='100' ScratchTop='100' ScratchBottom='100'>"+$nl
