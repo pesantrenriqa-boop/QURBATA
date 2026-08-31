@@ -58,7 +58,7 @@ def load_page1():
             cells.append(value)
     return page, comp, cells
 
-def text_frame(x, y, w, h, text, font, size, name, align=scribus.ALIGN_CENTER):
+def text_frame(x, y, w, h, text, font, size, name, align=scribus.ALIGN_CENTERED):
     frame = scribus.createText(x, y, w, h, name)
     scribus.insertText(text, 0, frame)
     if font:
@@ -72,7 +72,7 @@ def text_frame(x, y, w, h, text, font, size, name, align=scribus.ALIGN_CENTER):
     return frame
 
 def grid_cell(x, y, w, h, text, font, name):
-    frame = text_frame(x, y, w, h, text, font, 24, name, scribus.ALIGN_CENTER)
+    frame = text_frame(x, y, w, h, text, font, 24, name, scribus.ALIGN_CENTERED)
     scribus.setLineColor("Black", frame)
     scribus.setLineWidth(0.7, frame)
     scribus.setFillColor("None", frame)
