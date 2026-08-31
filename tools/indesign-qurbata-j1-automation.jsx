@@ -116,11 +116,11 @@
     var oversetBefore = 0;
     var oversetAfter = [];
     var emptyFrames = [];
+    var emptyRows = [];
     var hiddenEmpty = 0;
     var fixedCount = 0;
     var unresolvedCount = 0;
     var fitRows = [];
-    var emptyRows = [];
 
     for (var i = 0; i < frames.length; i++) {
         var tf = frames[i];
@@ -133,7 +133,14 @@
         if (isEmpty) {
             emptyFrames.push(tf);
             var ep = getTextProps(tf);
-            emptyRows.push([getPageName(tf), i + 1, safeText(contents), getBounds(tf), safeText(ep.paraStyle), safeText(ep.objectStyle)]);
+            emptyRows.push([
+                getPageName(tf),
+                i + 1,
+                safeText(contents),
+                getBounds(tf),
+                safeText(ep.paraStyle),
+                safeText(ep.objectStyle)
+            ]);
             if (doCleanup) {
                 try {
                     tf.strokeWeight = 0;
@@ -178,9 +185,9 @@
 
     var emptyReport = File(distDir.fsName + "/QURBATA-J1-EMPTY-AUDIT.tsv");
     var emptyLines = [];
-    emptyLines.push("Page\\tFrameIndex\\tContents\\tGeometricBounds\\tParagraphStyle\\tObjectStyle");
-    for (var e = 0; e < emptyRows.length; e++) emptyLines.push(emptyRows[e].join("\\t"));
-    writeUtf8(emptyReport, emptyLines.join("\\r\\n"));
+    emptyLines.push("Page\tFrameIndex\tContents\tGeometricBounds\tParagraphStyle\tObjectStyle");
+    for (var e = 0; e < emptyRows.length; e++) emptyLines.push(emptyRows[e].join("\t"));
+    writeUtf8(emptyReport, emptyLines.join("\r\n"));
 
     var fitReport = File(distDir.fsName + "/QURBATA-J1-AUTOFIX-REPORT.tsv");
     if (doAutoFix) {
