@@ -151,6 +151,16 @@ def add_integration_strip(page_num, integration, latin, arabic):
 
 
 
+def _arabic_base_letter_count(text):
+    count = 0
+    for ch in text:
+        code = ord(ch)
+        # Count Arabic letters, ignore harakat, tatweel, spaces, punctuation.
+        if (0x0621 <= code <= 0x063A) or (0x0641 <= code <= 0x064A):
+            count += 1
+    return max(1, count)
+
+
 def add_tartil_grid(page_num, row, arabic):
     cells = []
     for rr in range(1, 9):
@@ -173,11 +183,20 @@ def add_tartil_grid(page_num, row, arabic):
             scribus.setLineColor("Black", box)
             scribus.setLineWidth(0.7, box)
 
-            # Wide borderless text frame with a fixed right edge.
-            # ALIGN_RIGHT + LTR gives a stable common visual right edge for short drills.
-            right_pad = 1.2
-            inner_x = x + 1.0
-            inner_w = CELL_W - 2.2
+            # Do not rely on Scribus paragraph alignment for short Arabic drills.
+            # Size the text frame to the drill itself, then anchor that frame's
+            # RIGHT edge to one fixed position inside every cell.
+            base_letters = _arabic_base_letter_count(cells[i])
+            if base_letters <= 2:
+                inner_w = CELL_W * 0.44
+            elif base_letters == 3:
+                inner_w = CELL_W * 0.62
+            else:
+                inner_w = CELL_W * 0.78
+
+            right_pad = 1.3
+            inner_x = x + CELL_W - inner_w - right_pad
+
             frame = scribus.createText(inner_x, y, inner_w, CELL_H, name)
             scribus.setFillColor("None", frame)
             scribus.setLineColor("None", frame)
@@ -185,26 +204,30 @@ def add_tartil_grid(page_num, row, arabic):
             scribus.setText(cells[i], frame)
             if arabic:
                 scribus.setFont(arabic, frame)
-            scribus.setFontSize(30.0, frame)
+            scribus.setFontSize(31.0, frame)
             scribus.setTextColor("Black", frame)
+
             try:
                 scribus.setTextVerticalAlignment(scribus.ALIGNV_CENTERED, frame)
             except Exception:
                 pass
 
+            # Center inside the narrow right-anchored frame. This makes 2-letter
+            # and 3-letter drills visually consistent even when RTL alignment in
+            # Scribus behaves inconsistently.
             try:
                 scribus.selectText(0, scribus.getTextLength(frame), frame)
-                scribus.setTextDirection(scribus.DIRECTION_LTR, frame)
-                scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
+                scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
+                scribus.setTextAlignment(scribus.ALIGN_CENTERED, frame)
             except Exception:
                 pass
 
-            ok, final_size = fit_text(frame, 30.0, 18.0, 0.5)
+            ok, final_size = fit_text(frame, 31.0, 18.0, 0.5)
 
             try:
                 scribus.selectText(0, scribus.getTextLength(frame), frame)
-                scribus.setTextDirection(scribus.DIRECTION_LTR, frame)
-                scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
+                scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
+                scribus.setTextAlignment(scribus.ALIGN_CENTERED, frame)
             except Exception:
                 pass
 
