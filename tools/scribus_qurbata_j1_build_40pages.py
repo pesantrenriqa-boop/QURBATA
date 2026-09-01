@@ -176,6 +176,9 @@ def add_tartil_grid(page_num, row, arabic):
             name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
             frame = text_frame(x, y, CELL_W, CELL_H, cells[i], arabic, 24.0, name, align=scribus.ALIGN_RIGHT, line_width=0.7)
             ok, final_size = fit_text(frame, 24.0, 15.0, 0.5)
+            # Scribus setText()/text fitting may restore the paragraph default.
+            # The learner-facing Tartil cell must finish RIGHT aligned.
+            scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
             if scribus.getTextLength(frame) <= 0:
                 raise RuntimeError("Arabic text did not insert: " + name)
             if not ok:
