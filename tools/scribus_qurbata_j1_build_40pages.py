@@ -19,9 +19,9 @@ MARGIN = 13.0
 HEADER_Y = 9.0
 TITLE_Y = 10.0
 TARGET_Y = 0.0
-GRID_Y = 37.0
+GRID_Y = 35.0
 GRID_W = PAGE_W - 2 * MARGIN
-GRID_H = 143.0
+GRID_H = 148.0
 GAP_X = 2.2
 GAP_Y = 1.6
 CELL_W = (GRID_W - 3 * GAP_X) / 4.0
@@ -100,8 +100,8 @@ def text_frame(x, y, w, h, text, font, size, name, align=scribus.ALIGN_CENTERED,
     frame = scribus.createText(x, y, w, h, name)
     set_frame_text(frame, text, font, size, align)
     scribus.setFillColor("None", frame)
-    scribus.setLineColor("Black", frame)
-    scribus.setLineWidth(line_width, frame)
+    scribus.setLineColor("None", frame)
+    scribus.setLineWidth(0.0, frame)
     return frame
 
 def fit_text(frame, start_size, minimum=7.0, step=0.5):
@@ -113,22 +113,27 @@ def fit_text(frame, start_size, minimum=7.0, step=0.5):
     return (not scribus.textOverflows(frame), size)
 
 def create_page_shell(page_num, latin):
-    # Header intentionally minimal: the competency/material title is the header.
-    text_frame(MARGIN, FOOTER_Y, 35.0, 7.0, "QURBATA - JILID 1", latin, 6.5, "P%02d_FooterLeft" % page_num, line_width=0.7)
+    text_frame(MARGIN, 7.5, GRID_W, 5.0, "◆  QURBATA JILID 1  ◆", latin, 7.0, "P%02d_Brand" % page_num)
+    text_frame(MARGIN, FOOTER_Y, GRID_W, 6.0, "QURBATA JILID 1   •   %02d" % page_num, latin, 6.3, "P%02d_FooterLeft" % page_num)
+
+
 
 def add_footer_arabic(page_num, arabic):
-    frame = text_frame(48.0, FOOTER_Y, 87.0, 7.0, "تَعَلَّمْ - اِعْمَلْ - عَلِّمْ", arabic, 8.0, "P%02d_FooterArabic" % page_num, line_width=0.7)
-    fit_text(frame, 8.0, 6.0, 0.5)
+    frame = text_frame(MARGIN, FOOTER_Y - 5.0, GRID_W, 6.0, "تَعَلَّمْ  •  اِعْمَلْ  •  عَلِّمْ", arabic, 8.5, "P%02d_FooterArabic" % page_num)
+    fit_text(frame, 8.5, 7.0, 0.5)
+
+
 
 def add_competency(page_num, comp, latin):
     title = comp["CompetencyTitle"]
-    tf = text_frame(MARGIN, TITLE_Y, GRID_W, 8.0, title, latin, 11.5, "P%02d_CompetencyTitle" % page_num, line_width=0.7)
-    fit_text(tf, 11.5, 9.0, 0.5)
+    tf = text_frame(MARGIN, 13.0, GRID_W, 8.0, title, latin, 12.0, "P%02d_CompetencyTitle" % page_num)
+    fit_text(tf, 12.0, 9.0, 0.5)
+
+
 
 def add_integration_strip(page_num, integration, latin, arabic):
-    # Compact integration row: keep only the actual learning content.
     x = MARGIN
-    y = 19.0
+    y = 22.0
     w = GRID_W
     col_w = w / 3.0
     items = [
@@ -139,15 +144,15 @@ def add_integration_strip(page_num, integration, latin, arabic):
     for idx, item in enumerate(items):
         label, primary = item
         bx = x + idx * col_w
-        text_frame(bx, y, col_w, 4.0, label, latin, 5.8, "P%02d_IntLabel%d" % (page_num, idx + 1), line_width=0.5)
-        pf = text_frame(bx, y + 4.0, col_w, 10.0, primary, arabic, 9.0, "P%02d_IntPrimary%d" % (page_num, idx + 1), align=scribus.ALIGN_RIGHT, line_width=0.5)
+        text_frame(bx, y, col_w, 3.5, label.upper(), latin, 5.6, "P%02d_IntLabel%d" % (page_num, idx + 1))
+        pf = text_frame(bx + 0.5, y + 3.5, col_w - 1.0, 8.0, primary, arabic, 8.7, "P%02d_IntPrimary%d" % (page_num, idx + 1))
         try:
             scribus.selectText(0, scribus.getTextLength(pf), pf)
             scribus.setTextDirection(scribus.DIRECTION_RTL, pf)
-            scribus.setTextAlignment(scribus.ALIGN_RIGHT, pf)
+            scribus.setTextAlignment(scribus.ALIGN_CENTERED, pf)
         except Exception:
             pass
-        fit_text(pf, 9.0, 6.0, 0.5)
+        fit_text(pf, 8.7, 6.0, 0.5)
 
 
 
@@ -180,53 +185,42 @@ def add_tartil_grid(page_num, row, arabic):
             x = MARGIN + cc * (CELL_W + GAP_X)
             y = GRID_Y + rr * (CELL_H + GAP_Y)
             name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
-
-            # ONE frame only: this frame is both the visible cell border and the
-            # Arabic text container. No inner text frame = no extra editor lines.
-            frame = scribus.createText(x, y, CELL_W, CELL_H, name)
-            scribus.setFillColor("None", frame)
-            scribus.setLineColor("Black", frame)
-            scribus.setLineWidth(0.7, frame)
-
             drill = _nowrap_arabic_drill(cells[i])
             letters = _arabic_base_letter_count(cells[i])
 
-            # Geometry-first right anchoring using LEFT text inset inside the same
-            # frame. Shorter drills receive a larger left inset, so all examples
-            # visually occupy the right side without relying on RTL alignment.
             if letters <= 2:
-                left_inset = CELL_W * 0.42
+                ratio = 0.62
             elif letters == 3:
-                left_inset = CELL_W * 0.24
+                ratio = 0.82
             else:
-                left_inset = CELL_W * 0.08
+                ratio = 0.96
 
-            right_inset = 1.0
-            try:
-                scribus.setTextDistances(left_inset, right_inset, 0.0, 0.0, frame)
-            except Exception:
-                pass
+            inner_w = CELL_W * ratio
+            right_pad = 0.8
+            inner_x = x + CELL_W - inner_w - right_pad
 
+            frame = scribus.createText(inner_x, y, inner_w, CELL_H, name)
+            scribus.setFillColor("None", frame)
+            scribus.setLineColor("None", frame)
+            scribus.setLineWidth(0.0, frame)
             scribus.setText(drill, frame)
             if arabic:
                 scribus.setFont(arabic, frame)
-            scribus.setFontSize(30.0, frame)
+            scribus.setFontSize(32.0, frame)
             scribus.setTextColor("Black", frame)
-
             try:
                 scribus.setTextVerticalAlignment(scribus.ALIGNV_CENTERED, frame)
             except Exception:
                 pass
 
-            # Keep the paragraph stable; geometry controls visual placement.
             try:
                 scribus.selectText(0, scribus.getTextLength(frame), frame)
                 scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
-                scribus.setTextAlignment(scribus.ALIGN_LEFT, frame)
+                scribus.setTextAlignment(scribus.ALIGN_CENTERED, frame)
             except Exception:
                 pass
 
-            ok, final_size = fit_text(frame, 30.0, 18.0, 0.5)
+            ok, final_size = fit_text(frame, 32.0, 20.0, 0.5)
 
             if scribus.getTextLength(frame) <= 0:
                 raise RuntimeError("Arabic text did not insert: " + name)
