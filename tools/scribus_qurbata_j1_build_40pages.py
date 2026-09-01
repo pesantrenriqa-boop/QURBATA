@@ -8,6 +8,7 @@ SOURCE_CSV = os.path.join(REPO_ROOT, "dist", "indesign-template-data", "QURBATA-
 COMP_TSV = os.path.join(REPO_ROOT, "dist", "indesign-template-data", "QURBATA-J1-40P-COMPETENCY.tsv")
 SPECIAL_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SPECIAL-PAGES.csv")
 SPECIAL_CONTENT_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SPECIAL-CONTENT.csv")
+INTEGRATION_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-40P-INTEGRATION-MASTER.csv")
 OUTPUT_SLA = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-PRODUCTION-40P.sla")
 
 PAGE_W = 148.0
@@ -17,9 +18,9 @@ MARGIN = 13.0
 HEADER_Y = 9.0
 TITLE_Y = 22.0
 TARGET_Y = 30.0
-GRID_Y = 48.0
+GRID_Y = 58.0
 GRID_W = PAGE_W - 2 * MARGIN
-GRID_H = 126.0
+GRID_H = 116.0
 GAP_X = 2.2
 GAP_Y = 1.6
 CELL_W = (GRID_W - 3 * GAP_X) / 4.0
@@ -60,11 +61,17 @@ def load_data():
     if not os.path.exists(SPECIAL_CONTENT_CSV):
         raise RuntimeError("Special content master not found: " + SPECIAL_CONTENT_CSV)
     special_content_rows = load_csv(SPECIAL_CONTENT_CSV)
+    if not os.path.exists(INTEGRATION_CSV):
+        raise RuntimeError("Integration master not found: " + INTEGRATION_CSV)
+    integration_rows = load_csv(INTEGRATION_CSV)
 
     tartil = {int(r["PageNumber"]): r for r in tartil_rows}
     comps = {int(r["PageNumber"]): r for r in comp_rows}
     specials = {int(r["PageNumber"]): r for r in special_rows}
     special_content = {int(r["PageNumber"]): r for r in special_content_rows}
+    integration = {int(r["PageNumber"]): r for r in integration_rows}
+    if len(integration) != 40:
+        raise RuntimeError("Integration master must contain 40 rows; found %d" % len(integration))
 
     if len(comps) != 40:
         raise RuntimeError("Competency register must contain 40 rows; found %d" % len(comps))
@@ -74,7 +81,7 @@ def load_data():
     if missing:
         raise RuntimeError("Missing Tartil page data: " + ", ".join(map(str, missing)))
 
-    return tartil, comps, specials, special_content
+    return tartil, comps, specials, special_content, integration
 
 def set_frame_text(frame, text, font, size, align=scribus.ALIGN_CENTERED):
     scribus.setText(text, frame)
@@ -120,6 +127,36 @@ def add_competency(page_num, comp, latin):
     target = "Target: " + comp["CompetencyTarget"]
     tg = text_frame(MARGIN, TARGET_Y, GRID_W, 13.0, target, latin, 7.2, "P%02d_CompetencyTarget" % page_num, line_width=0.7)
     fit_text(tg, 7.2, 5.5, 0.4)
+
+def add_integration_strip(page_num, integration, latin, arabic):
+    # Compact per-meeting integration strip. Pending items remain visually blank;
+    # workflow/status text is never printed in the learner book.
+    x = MARGIN
+    y = 43.5
+    w = GRID_W
+    h = 12.0
+    col_w = w / 3.0
+
+    items = [
+        ("Tahfidz", integration.get("TahfidzText", "").strip(), integration.get("TahfidzRef", "").strip()),
+        ("Bahasa Arab", integration.get("BahasaArabText", "").strip(), integration.get("BahasaArabMeaning", "").strip()),
+        ("NIDOM", integration.get("NidomText", "").strip(), integration.get("NidomMeaning", "").strip()),
+    ]
+
+    for idx, item in enumerate(items):
+        label, primary, secondary = item
+        bx = x + idx * col_w
+        text_frame(bx, y, col_w, 4.0, label, latin, 5.8, "P%02d_IntLabel%d" % (page_num, idx + 1), line_width=0.5)
+        if primary:
+            use_arabic = any("\u0600" <= ch <= "\u06ff" for ch in primary)
+            pf = text_frame(bx, y + 4.0, col_w, 5.0, primary, arabic if use_arabic else latin, 8.0 if use_arabic else 6.2, "P%02d_IntPrimary%d" % (page_num, idx + 1), line_width=0.5)
+            fit_text(pf, 8.0 if use_arabic else 6.2, 5.0, 0.5)
+        else:
+            text_frame(bx, y + 4.0, col_w, 5.0, "", latin, 6.0, "P%02d_IntPrimary%d" % (page_num, idx + 1), line_width=0.5)
+        if secondary:
+            sf = text_frame(bx, y + 9.0, col_w, 3.0, secondary, latin, 4.8, "P%02d_IntSecondary%d" % (page_num, idx + 1), line_width=0.5)
+            fit_text(sf, 4.8, 4.0, 0.4)
+
 
 def add_tartil_grid(page_num, row, arabic):
     cells = []
@@ -177,7 +214,7 @@ def validate_document(tartil_pages):
     return bad
 
 def main():
-    tartil, comps, specials, special_content = load_data()
+    tartil, comps, specials, special_content, integration = load_data()
 
     latin = choose_font(FONT_LATIN_CANDIDATES)
     arabic = choose_font(FONT_ARABIC_CANDIDATES)
@@ -217,6 +254,7 @@ def main():
 
             create_page_shell(page_num, latin)
             add_competency(page_num, comps[page_num], latin)
+            add_integration_strip(page_num, integration[page_num], latin, arabic)
 
             if page_num in specials:
                 if page_num not in special_content:
