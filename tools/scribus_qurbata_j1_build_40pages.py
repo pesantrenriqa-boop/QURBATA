@@ -194,6 +194,9 @@ def add_tartil_grid(page_num, row, arabic):
             right_pad = 1.2
             inner_x = x + CELL_W - inner_w - right_pad
             frame = text_frame(inner_x, y, inner_w, CELL_H, cells[i], arabic, 24.0, name, align=scribus.ALIGN_RIGHT, line_width=0.0)
+            # Inner frame is positioning-only. Never draw its border.
+            scribus.setLineColor("None", frame)
+            scribus.setLineWidth(0.0, frame)
             # IMPORTANT: setTextDirection acts on the current paragraph/selection.
             # Explicitly select all text before applying RTL + right alignment.
             scribus.selectText(0, scribus.getTextLength(frame), frame)
