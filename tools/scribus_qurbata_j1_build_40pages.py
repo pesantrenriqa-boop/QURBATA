@@ -180,7 +180,20 @@ def add_tartil_grid(page_num, row, arabic):
             x = MARGIN + cc * (CELL_W + GAP_X)
             y = GRID_Y + rr * (CELL_H + GAP_Y)
             name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
-            frame = text_frame(x, y, CELL_W, CELL_H, cells[i], arabic, 24.0, name, align=scribus.ALIGN_RIGHT, line_width=0.7)
+
+            # Scribus 1.6 can visually keep short Arabic text at the left edge even
+            # when paragraph RTL/right alignment is applied. Decouple border and
+            # Arabic text geometry: outer frame draws the cell; a narrow inner text
+            # frame is physically anchored to the RIGHT side of that cell.
+            border = scribus.createText(x, y, CELL_W, CELL_H, name + "_BOX")
+            scribus.setFillColor("None", border)
+            scribus.setLineColor("Black", border)
+            scribus.setLineWidth(0.7, border)
+
+            inner_w = CELL_W * 0.72
+            right_pad = 1.2
+            inner_x = x + CELL_W - inner_w - right_pad
+            frame = text_frame(inner_x, y, inner_w, CELL_H, cells[i], arabic, 24.0, name, align=scribus.ALIGN_RIGHT, line_width=0.0)
             # IMPORTANT: setTextDirection acts on the current paragraph/selection.
             # Explicitly select all text before applying RTL + right alignment.
             scribus.selectText(0, scribus.getTextLength(frame), frame)
