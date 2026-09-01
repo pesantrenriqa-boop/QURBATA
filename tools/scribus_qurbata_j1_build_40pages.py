@@ -181,29 +181,33 @@ def add_tartil_grid(page_num, row, arabic):
             y = GRID_Y + rr * (CELL_H + GAP_Y)
             name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
 
-            # Scribus 1.6 can visually keep short Arabic text at the left edge even
-            # when paragraph RTL/right alignment is applied. Decouple border and
-            # Arabic text geometry: outer frame draws the cell; a narrow inner text
-            # frame is physically anchored to the RIGHT side of that cell.
-            border = scribus.createText(x, y, CELL_W, CELL_H, name + "_BOX")
-            scribus.setFillColor("None", border)
-            scribus.setLineColor("Black", border)
-            scribus.setLineWidth(0.7, border)
+            # Use ONE text frame only. The previous nested inner frame caused
+            # visible editing-frame lines in Scribus.
+            frame = text_frame(
+                x, y, CELL_W, CELL_H,
+                cells[i], arabic, 24.0, name,
+                align=scribus.ALIGN_RIGHT,
+                line_width=0.7
+            )
 
-            inner_w = CELL_W * 0.72
-            right_pad = 1.2
-            inner_x = x + CELL_W - inner_w - right_pad
-            frame = text_frame(inner_x, y, inner_w, CELL_H, cells[i], arabic, 24.0, name, align=scribus.ALIGN_RIGHT, line_width=0.0)
-            # Inner frame is positioning-only. Never draw its border.
-            scribus.setLineColor("None", frame)
-            scribus.setLineWidth(0.0, frame)
-            # IMPORTANT: setTextDirection acts on the current paragraph/selection.
-            # Explicitly select all text before applying RTL + right alignment.
+            # Force the usable text area toward the RIGHT geometrically by
+            # increasing the LEFT text inset. This works independently of
+            # Scribus' short-Arabic paragraph positioning quirks.
+            left_inset = CELL_W * 0.30
+            right_inset = 1.0
+            try:
+                scribus.setTextDistances(left_inset, right_inset, 0.0, 0.0, frame)
+            except Exception:
+                pass
+
+            # Apply real Arabic paragraph direction + right alignment.
             scribus.selectText(0, scribus.getTextLength(frame), frame)
             scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
             scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
+
             ok, final_size = fit_text(frame, 24.0, 15.0, 0.5)
-            # Re-select and re-apply after fitting so the stored paragraph itself is RTL/right.
+
+            # Re-apply after fitting.
             scribus.selectText(0, scribus.getTextLength(frame), frame)
             scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
             scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
@@ -211,6 +215,7 @@ def add_tartil_grid(page_num, row, arabic):
                 scribus.deselectAll()
             except Exception:
                 pass
+
             if scribus.getTextLength(frame) <= 0:
                 raise RuntimeError("Arabic text did not insert: " + name)
             if not ok:
