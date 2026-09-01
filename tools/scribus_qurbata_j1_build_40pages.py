@@ -10,6 +10,7 @@ SPECIAL_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SPECIAL-PA
 SPECIAL_CONTENT_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SPECIAL-CONTENT.csv")
 INTEGRATION_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-40P-INTEGRATION-MASTER.csv")
 OUTPUT_SLA = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-PRODUCTION-40P.sla")
+OUTPUT_PDF = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-PRODUCTION-40P-PREVIEW.pdf")
 
 PAGE_W = 148.0
 PAGE_H = 210.0
@@ -327,6 +328,16 @@ def main():
 
         scribus.saveDocAs(OUTPUT_SLA)
 
+        # Export a PDF preview. Scribus "Show Frames" edges are editor-only and
+        # never print; this preview gives a clean production view for QC.
+        try:
+            pdf = scribus.PDFfile()
+            pdf.file = OUTPUT_PDF
+            pdf.pages = list(range(1, 41))
+            pdf.save()
+        except Exception:
+            pass
+
         # Hide Scribus editing-frame edges in the saved document. These are not
         # printable borders; turning them off keeps the Tartil grid visually clean.
         try:
@@ -351,7 +362,7 @@ def main():
         "Special pages: 4\n"
         "Tartil cells: 1152/1152\n"
         "Arabic font: %s\n\n"
-        "Saved: %s" % (arabic, OUTPUT_SLA),
+        "Saved SLA: %s\nPDF preview: %s" % (arabic, OUTPUT_SLA, OUTPUT_PDF),
         scribus.ICON_INFORMATION,
         scribus.BUTTON_OK
     )
