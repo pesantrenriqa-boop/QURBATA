@@ -181,13 +181,20 @@ def add_tartil_grid(page_num, row, arabic):
             y = GRID_Y + rr * (CELL_H + GAP_Y)
             name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
             frame = text_frame(x, y, CELL_W, CELL_H, cells[i], arabic, 24.0, name, align=scribus.ALIGN_RIGHT, line_width=0.7)
-            # Arabic needs paragraph DIRECTION_RTL in Scribus; ALIGN_RIGHT alone is not enough.
+            # IMPORTANT: setTextDirection acts on the current paragraph/selection.
+            # Explicitly select all text before applying RTL + right alignment.
+            scribus.selectText(0, scribus.getTextLength(frame), frame)
             scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
             scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
             ok, final_size = fit_text(frame, 24.0, 15.0, 0.5)
-            # Re-apply both after fitting, because style operations can restore defaults.
+            # Re-select and re-apply after fitting so the stored paragraph itself is RTL/right.
+            scribus.selectText(0, scribus.getTextLength(frame), frame)
             scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
             scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
+            try:
+                scribus.deselectAll()
+            except Exception:
+                pass
             if scribus.getTextLength(frame) <= 0:
                 raise RuntimeError("Arabic text did not insert: " + name)
             if not ok:
