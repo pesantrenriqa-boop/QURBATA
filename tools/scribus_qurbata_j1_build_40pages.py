@@ -181,31 +181,32 @@ def add_tartil_grid(page_num, row, arabic):
             y = GRID_Y + rr * (CELL_H + GAP_Y)
             name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
 
-            box = scribus.createRect(x, y, CELL_W, CELL_H, name + "_BOX")
-            scribus.setFillColor("None", box)
-            scribus.setLineColor("Black", box)
-            scribus.setLineWidth(0.7, box)
+            # ONE frame only: this frame is both the visible cell border and the
+            # Arabic text container. No inner text frame = no extra editor lines.
+            frame = scribus.createText(x, y, CELL_W, CELL_H, name)
+            scribus.setFillColor("None", frame)
+            scribus.setLineColor("Black", frame)
+            scribus.setLineWidth(0.7, frame)
 
             drill = _nowrap_arabic_drill(cells[i])
             letters = _arabic_base_letter_count(cells[i])
 
-            # Geometry-first right anchoring. We no longer depend on Scribus'
-            # inconsistent paragraph alignment for short Arabic text.
+            # Geometry-first right anchoring using LEFT text inset inside the same
+            # frame. Shorter drills receive a larger left inset, so all examples
+            # visually occupy the right side without relying on RTL alignment.
             if letters <= 2:
-                ratio = 0.58
+                left_inset = CELL_W * 0.42
             elif letters == 3:
-                ratio = 0.76
+                left_inset = CELL_W * 0.24
             else:
-                ratio = 0.90
+                left_inset = CELL_W * 0.08
 
-            inner_w = CELL_W * ratio
-            right_pad = 1.0
-            inner_x = x + CELL_W - inner_w - right_pad
+            right_inset = 1.0
+            try:
+                scribus.setTextDistances(left_inset, right_inset, 0.0, 0.0, frame)
+            except Exception:
+                pass
 
-            frame = scribus.createText(inner_x, y, inner_w, CELL_H, name)
-            scribus.setFillColor("None", frame)
-            scribus.setLineColor("None", frame)
-            scribus.setLineWidth(0.0, frame)
             scribus.setText(drill, frame)
             if arabic:
                 scribus.setFont(arabic, frame)
@@ -217,8 +218,7 @@ def add_tartil_grid(page_num, row, arabic):
             except Exception:
                 pass
 
-            # Use LEFT inside the right-anchored narrow frame. The visual position
-            # is therefore controlled by geometry, not by RTL alignment behavior.
+            # Keep the paragraph stable; geometry controls visual placement.
             try:
                 scribus.selectText(0, scribus.getTextLength(frame), frame)
                 scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
@@ -227,13 +227,6 @@ def add_tartil_grid(page_num, row, arabic):
                 pass
 
             ok, final_size = fit_text(frame, 30.0, 18.0, 0.5)
-
-            try:
-                scribus.selectText(0, scribus.getTextLength(frame), frame)
-                scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
-                scribus.setTextAlignment(scribus.ALIGN_LEFT, frame)
-            except Exception:
-                pass
 
             if scribus.getTextLength(frame) <= 0:
                 raise RuntimeError("Arabic text did not insert: " + name)
