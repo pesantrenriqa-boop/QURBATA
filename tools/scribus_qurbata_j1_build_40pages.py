@@ -157,16 +157,20 @@ def add_integration_strip(page_num, integration, latin, arabic):
 
 
 def _nowrap_arabic_drill(text):
+    # Preserve the source order exactly. Non-breaking spaces prevent a drill
+    # from wrapping without manually reversing Arabic characters.
     return text.replace(" ", "\u00A0")
 
 
-def _arabic_base_letter_count(text):
-    count = 0
-    for ch in text:
-        code = ord(ch)
-        if (0x0621 <= code <= 0x063A) or (0x0641 <= code <= 0x064A):
-            count += 1
-    return max(1, count)
+def _apply_arabic_rtl_right(frame):
+    # Final Arabic rule: source text stays untouched, paragraph direction RTL,
+    # paragraph alignment RIGHT, full-width text frame.
+    try:
+        scribus.selectText(0, scribus.getTextLength(frame), frame)
+        scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
+        scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
+    except Exception:
+        pass
 
 
 def add_tartil_grid(page_num, row, arabic):
@@ -185,42 +189,38 @@ def add_tartil_grid(page_num, row, arabic):
             x = MARGIN + cc * (CELL_W + GAP_X)
             y = GRID_Y + rr * (CELL_H + GAP_Y)
             name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
-            drill = _nowrap_arabic_drill(cells[i])
-            letters = _arabic_base_letter_count(cells[i])
 
-            if letters <= 2:
-                ratio = 0.62
-            elif letters == 3:
-                ratio = 0.82
-            else:
-                ratio = 0.96
-
-            inner_w = CELL_W * ratio
-            right_pad = 0.8
-            inner_x = x + CELL_W - inner_w - right_pad
-
-            frame = scribus.createText(inner_x, y, inner_w, CELL_H, name)
+            # Borderless, full-width frame. No narrow-frame geometry and no
+            # manual bidi tricks: every Tartil drill uses the same paragraph rule.
+            pad_left = 1.0
+            pad_right = 1.0
+            frame = scribus.createText(
+                x + pad_left,
+                y,
+                CELL_W - pad_left - pad_right,
+                CELL_H,
+                name
+            )
             scribus.setFillColor("None", frame)
             scribus.setLineColor("None", frame)
             scribus.setLineWidth(0.0, frame)
+
+            drill = _nowrap_arabic_drill(cells[i])
             scribus.setText(drill, frame)
             if arabic:
                 scribus.setFont(arabic, frame)
             scribus.setFontSize(32.0, frame)
             scribus.setTextColor("Black", frame)
+
             try:
                 scribus.setTextVerticalAlignment(scribus.ALIGNV_CENTERED, frame)
             except Exception:
                 pass
 
-            try:
-                scribus.selectText(0, scribus.getTextLength(frame), frame)
-                scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
-                scribus.setTextAlignment(scribus.ALIGN_CENTERED, frame)
-            except Exception:
-                pass
-
+            _apply_arabic_rtl_right(frame)
             ok, final_size = fit_text(frame, 32.0, 20.0, 0.5)
+            # fit_text may reset paragraph properties in some Scribus builds.
+            _apply_arabic_rtl_right(frame)
 
             if scribus.getTextLength(frame) <= 0:
                 raise RuntimeError("Arabic text did not insert: " + name)
