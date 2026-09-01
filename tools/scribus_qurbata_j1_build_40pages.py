@@ -152,9 +152,16 @@ def add_integration_strip(page_num, integration, latin, arabic):
 
 
 def _nowrap_arabic_drill(text):
-    # Keep every Tartil drill on a single visual line. Ordinary spaces let
-    # Scribus wrap short Arabic examples unpredictably; NBSP prevents that.
     return text.replace(" ", "\u00A0")
+
+
+def _arabic_base_letter_count(text):
+    count = 0
+    for ch in text:
+        code = ord(ch)
+        if (0x0621 <= code <= 0x063A) or (0x0641 <= code <= 0x064A):
+            count += 1
+    return max(1, count)
 
 
 def add_tartil_grid(page_num, row, arabic):
@@ -174,28 +181,31 @@ def add_tartil_grid(page_num, row, arabic):
             y = GRID_Y + rr * (CELL_H + GAP_Y)
             name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
 
-            # One clean cell border.
             box = scribus.createRect(x, y, CELL_W, CELL_H, name + "_BOX")
             scribus.setFillColor("None", box)
             scribus.setLineColor("Black", box)
             scribus.setLineWidth(0.7, box)
 
-            # One wide, borderless text frame. No geometry tricks by letter count.
-            # NBSP keeps 2-letter / 3-letter drills on one line; RTL + RIGHT gives
-            # one consistent right edge across all pages.
-            left_pad = 1.2
-            right_pad = 1.2
-            frame = scribus.createText(
-                x + left_pad, y,
-                CELL_W - left_pad - right_pad,
-                CELL_H,
-                name
-            )
+            drill = _nowrap_arabic_drill(cells[i])
+            letters = _arabic_base_letter_count(cells[i])
+
+            # Geometry-first right anchoring. We no longer depend on Scribus'
+            # inconsistent paragraph alignment for short Arabic text.
+            if letters <= 2:
+                ratio = 0.58
+            elif letters == 3:
+                ratio = 0.76
+            else:
+                ratio = 0.90
+
+            inner_w = CELL_W * ratio
+            right_pad = 1.0
+            inner_x = x + CELL_W - inner_w - right_pad
+
+            frame = scribus.createText(inner_x, y, inner_w, CELL_H, name)
             scribus.setFillColor("None", frame)
             scribus.setLineColor("None", frame)
             scribus.setLineWidth(0.0, frame)
-
-            drill = _nowrap_arabic_drill(cells[i])
             scribus.setText(drill, frame)
             if arabic:
                 scribus.setFont(arabic, frame)
@@ -207,10 +217,12 @@ def add_tartil_grid(page_num, row, arabic):
             except Exception:
                 pass
 
+            # Use LEFT inside the right-anchored narrow frame. The visual position
+            # is therefore controlled by geometry, not by RTL alignment behavior.
             try:
                 scribus.selectText(0, scribus.getTextLength(frame), frame)
                 scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
-                scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
+                scribus.setTextAlignment(scribus.ALIGN_LEFT, frame)
             except Exception:
                 pass
 
@@ -219,7 +231,7 @@ def add_tartil_grid(page_num, row, arabic):
             try:
                 scribus.selectText(0, scribus.getTextLength(frame), frame)
                 scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
-                scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
+                scribus.setTextAlignment(scribus.ALIGN_LEFT, frame)
             except Exception:
                 pass
 
