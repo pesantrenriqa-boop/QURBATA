@@ -151,14 +151,10 @@ def add_integration_strip(page_num, integration, latin, arabic):
 
 
 
-def _arabic_base_letter_count(text):
-    count = 0
-    for ch in text:
-        code = ord(ch)
-        # Count Arabic letters, ignore harakat, tatweel, spaces, punctuation.
-        if (0x0621 <= code <= 0x063A) or (0x0641 <= code <= 0x064A):
-            count += 1
-    return max(1, count)
+def _nowrap_arabic_drill(text):
+    # Keep every Tartil drill on a single visual line. Ordinary spaces let
+    # Scribus wrap short Arabic examples unpredictably; NBSP prevents that.
+    return text.replace(" ", "\u00A0")
 
 
 def add_tartil_grid(page_num, row, arabic):
@@ -178,33 +174,32 @@ def add_tartil_grid(page_num, row, arabic):
             y = GRID_Y + rr * (CELL_H + GAP_Y)
             name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
 
+            # One clean cell border.
             box = scribus.createRect(x, y, CELL_W, CELL_H, name + "_BOX")
             scribus.setFillColor("None", box)
             scribus.setLineColor("Black", box)
             scribus.setLineWidth(0.7, box)
 
-            # Do not rely on Scribus paragraph alignment for short Arabic drills.
-            # Size the text frame to the drill itself, then anchor that frame's
-            # RIGHT edge to one fixed position inside every cell.
-            base_letters = _arabic_base_letter_count(cells[i])
-            if base_letters <= 2:
-                inner_w = CELL_W * 0.44
-            elif base_letters == 3:
-                inner_w = CELL_W * 0.62
-            else:
-                inner_w = CELL_W * 0.78
-
-            right_pad = 1.3
-            inner_x = x + CELL_W - inner_w - right_pad
-
-            frame = scribus.createText(inner_x, y, inner_w, CELL_H, name)
+            # One wide, borderless text frame. No geometry tricks by letter count.
+            # NBSP keeps 2-letter / 3-letter drills on one line; RTL + RIGHT gives
+            # one consistent right edge across all pages.
+            left_pad = 1.2
+            right_pad = 1.2
+            frame = scribus.createText(
+                x + left_pad, y,
+                CELL_W - left_pad - right_pad,
+                CELL_H,
+                name
+            )
             scribus.setFillColor("None", frame)
             scribus.setLineColor("None", frame)
             scribus.setLineWidth(0.0, frame)
-            scribus.setText(cells[i], frame)
+
+            drill = _nowrap_arabic_drill(cells[i])
+            scribus.setText(drill, frame)
             if arabic:
                 scribus.setFont(arabic, frame)
-            scribus.setFontSize(31.0, frame)
+            scribus.setFontSize(30.0, frame)
             scribus.setTextColor("Black", frame)
 
             try:
@@ -212,22 +207,19 @@ def add_tartil_grid(page_num, row, arabic):
             except Exception:
                 pass
 
-            # Center inside the narrow right-anchored frame. This makes 2-letter
-            # and 3-letter drills visually consistent even when RTL alignment in
-            # Scribus behaves inconsistently.
             try:
                 scribus.selectText(0, scribus.getTextLength(frame), frame)
                 scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
-                scribus.setTextAlignment(scribus.ALIGN_CENTERED, frame)
+                scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
             except Exception:
                 pass
 
-            ok, final_size = fit_text(frame, 31.0, 18.0, 0.5)
+            ok, final_size = fit_text(frame, 30.0, 18.0, 0.5)
 
             try:
                 scribus.selectText(0, scribus.getTextLength(frame), frame)
                 scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
-                scribus.setTextAlignment(scribus.ALIGN_CENTERED, frame)
+                scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
             except Exception:
                 pass
 
