@@ -149,7 +149,7 @@ def add_integration_strip(page_num, integration, latin, arabic):
         text_frame(bx, y, col_w, 4.0, label, latin, 5.8, "P%02d_IntLabel%d" % (page_num, idx + 1), line_width=0.5)
         if primary:
             use_arabic = any("\u0600" <= ch <= "\u06ff" for ch in primary)
-            pf = text_frame(bx, y + 4.0, col_w, 5.0, primary, arabic if use_arabic else latin, 8.0 if use_arabic else 6.2, "P%02d_IntPrimary%d" % (page_num, idx + 1), line_width=0.5)
+            pf = text_frame(bx, y + 4.0, col_w, 5.0, primary, arabic if use_arabic else latin, 8.0 if use_arabic else 6.2, "P%02d_IntPrimary%d" % (page_num, idx + 1), align=(scribus.ALIGN_RIGHT if use_arabic else scribus.ALIGN_CENTERED), line_width=0.5)
             fit_text(pf, 8.0 if use_arabic else 6.2, 5.0, 0.5)
         else:
             text_frame(bx, y + 4.0, col_w, 5.0, "", latin, 6.0, "P%02d_IntPrimary%d" % (page_num, idx + 1), line_width=0.5)
@@ -174,7 +174,7 @@ def add_tartil_grid(page_num, row, arabic):
             x = MARGIN + cc * (CELL_W + GAP_X)
             y = GRID_Y + rr * (CELL_H + GAP_Y)
             name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
-            frame = text_frame(x, y, CELL_W, CELL_H, cells[i], arabic, 24.0, name, line_width=0.7)
+            frame = text_frame(x, y, CELL_W, CELL_H, cells[i], arabic, 24.0, name, align=scribus.ALIGN_RIGHT, line_width=0.7)
             ok, final_size = fit_text(frame, 24.0, 15.0, 0.5)
             if scribus.getTextLength(frame) <= 0:
                 raise RuntimeError("Arabic text did not insert: " + name)
