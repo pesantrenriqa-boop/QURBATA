@@ -191,7 +191,7 @@ def add_tartil_grid(page_num, row, arabic):
             # anchored to the RIGHT side. Its width is deliberately compact so
             # even if Scribus falls back to left paragraph positioning, the text
             # itself still lives on the right side of the cell.
-            inner_w = CELL_W * 0.52
+            inner_w = CELL_W * 0.78
             right_pad = 1.0
             inner_x = x + CELL_W - inner_w - right_pad
             frame = scribus.createText(inner_x, y, inner_w, CELL_H, name)
@@ -212,7 +212,7 @@ def add_tartil_grid(page_num, row, arabic):
             scribus.selectText(0, scribus.getTextLength(frame), frame)
             scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
             scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
-            ok, final_size = fit_text(frame, 24.0, 15.0, 0.5)
+            ok, final_size = fit_text(frame, 24.0, 13.0, 0.5)
             scribus.selectText(0, scribus.getTextLength(frame), frame)
             scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
             scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
