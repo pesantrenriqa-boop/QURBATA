@@ -181,40 +181,41 @@ def add_tartil_grid(page_num, row, arabic):
             y = GRID_Y + rr * (CELL_H + GAP_Y)
             name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
 
-            # Use ONE text frame only. The previous nested inner frame caused
-            # visible editing-frame lines in Scribus.
-            frame = text_frame(
-                x, y, CELL_W, CELL_H,
-                cells[i], arabic, 24.0, name,
-                align=scribus.ALIGN_RIGHT,
-                line_width=0.7
-            )
+            # Outer cell border is a rectangle, not a text frame.
+            box = scribus.createRect(x, y, CELL_W, CELL_H, name + "_BOX")
+            scribus.setFillColor("None", box)
+            scribus.setLineColor("Black", box)
+            scribus.setLineWidth(0.7, box)
 
-            # Force the usable text area toward the RIGHT geometrically by
-            # increasing the LEFT text inset. This works independently of
-            # Scribus' short-Arabic paragraph positioning quirks.
-            left_inset = CELL_W * 0.30
-            right_inset = 1.0
+            # Arabic content uses a separate, borderless text frame physically
+            # anchored to the RIGHT side. Its width is deliberately compact so
+            # even if Scribus falls back to left paragraph positioning, the text
+            # itself still lives on the right side of the cell.
+            inner_w = CELL_W * 0.52
+            right_pad = 1.0
+            inner_x = x + CELL_W - inner_w - right_pad
+            frame = scribus.createText(inner_x, y, inner_w, CELL_H, name)
+            scribus.setFillColor("None", frame)
+            scribus.setLineColor("None", frame)
+            scribus.setLineWidth(0.0, frame)
+            scribus.setText(cells[i], frame)
+            if arabic:
+                scribus.setFont(arabic, frame)
+            scribus.setFontSize(24.0, frame)
+            scribus.setTextColor("Black", frame)
             try:
-                scribus.setTextDistances(left_inset, right_inset, 0.0, 0.0, frame)
+                scribus.setTextVerticalAlignment(scribus.ALIGNV_CENTERED, frame)
             except Exception:
                 pass
 
-            # Apply real Arabic paragraph direction + right alignment.
+            # Apply RTL/right alignment to the stored paragraph.
             scribus.selectText(0, scribus.getTextLength(frame), frame)
             scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
             scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
-
             ok, final_size = fit_text(frame, 24.0, 15.0, 0.5)
-
-            # Re-apply after fitting.
             scribus.selectText(0, scribus.getTextLength(frame), frame)
             scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
             scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
-            try:
-                scribus.deselectAll()
-            except Exception:
-                pass
 
             if scribus.getTextLength(frame) <= 0:
                 raise RuntimeError("Arabic text did not insert: " + name)
@@ -252,6 +253,17 @@ def validate_document(tartil_pages):
                 except Exception:
                     bad.append(name)
     return bad
+
+def hide_scribus_frame_edges_in_saved_file(path):
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = f.read()
+        data = data.replace('SHOWFRAME="1"', 'SHOWFRAME="0"', 1)
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(data)
+    except Exception:
+        pass
+
 
 def main():
     tartil, comps, specials, special_content, integration = load_data()
@@ -314,6 +326,15 @@ def main():
             os.makedirs(out_dir)
 
         scribus.saveDocAs(OUTPUT_SLA)
+
+        # Hide Scribus editing-frame edges in the saved document. These are not
+        # printable borders; turning them off keeps the Tartil grid visually clean.
+        try:
+            scribus.closeDoc()
+            hide_scribus_frame_edges_in_saved_file(OUTPUT_SLA)
+            scribus.openDoc(OUTPUT_SLA)
+        except Exception:
+            pass
 
     finally:
         try:
