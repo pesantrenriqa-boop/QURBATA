@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
 import csv
-import hashlib
-import struct
 import scribus
 
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -159,28 +157,26 @@ def add_integration_strip(page_num, integration, latin, arabic):
 
 
 
-def _nowrap_arabic_drill(text):
-    return text.replace(" ", "\u00A0")
+def _sanitize_arabic_drill(text):
+    # Remove hidden bidi controls that can make visually identical drills align
+    # differently from page to page. Keep the actual Arabic letters/harakat intact.
+    banned = set([
+        "\u061c", "\u200e", "\u200f",
+        "\u202a", "\u202b", "\u202c", "\u202d", "\u202e",
+        "\u2066", "\u2067", "\u2068", "\u2069"
+    ])
+    clean = "".join(ch for ch in text if ch not in banned)
+    clean = clean.replace("\u00a0", " ")
+    return " ".join(clean.split())
 
 
-def _png_size(path):
-    with open(path, "rb") as f:
-        header = f.read(24)
-    if len(header) < 24 or header[:8] != b"\x89PNG\r\n\x1a\n":
-        raise RuntimeError("Invalid PNG render: " + path)
-    return struct.unpack(">II", header[16:24])
-
-
-def _render_tartil_png(text, arabic):
-    if not os.path.isdir(TARTIL_RENDER_DIR):
-        os.makedirs(TARTIL_RENDER_DIR)
-    key = hashlib.sha1(text.encode("utf-8")).hexdigest()[:16]
-    path = os.path.join(TARTIL_RENDER_DIR, key + ".png")
-    if not os.path.exists(path):
-        ok = scribus.renderFont(arabic, path, text, 48, "PNG")
-        if ok is False or not os.path.exists(path):
-            raise RuntimeError("Could not render Tartil PNG: " + text)
-    return path
+def _apply_arabic_rtl_right(frame):
+    try:
+        scribus.selectText(0, scribus.getTextLength(frame), frame)
+        scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
+        scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
+    except Exception:
+        pass
 
 
 def add_tartil_grid(page_num, row, arabic):
@@ -191,7 +187,7 @@ def add_tartil_grid(page_num, row, arabic):
             value = str(row.get(key, "")).strip()
             if not value:
                 raise RuntimeError("Empty cell on page %d: %s" % (page_num, key))
-            cells.append(value)
+            cells.append(_sanitize_arabic_drill(value))
 
     i = 0
     for rr in range(8):
@@ -200,32 +196,34 @@ def add_tartil_grid(page_num, row, arabic):
             y = GRID_Y + rr * (CELL_H + GAP_Y)
             name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
 
-            # Render Arabic with Qt/Scribus itself, then place the rendered result
-            # as a borderless image whose RIGHT edge is fixed. This completely
-            # bypasses Scribus paragraph/bidi alignment inconsistencies.
-            drill = _nowrap_arabic_drill(cells[i])
-            png = _render_tartil_png(drill, arabic)
-            px_w, px_h = _png_size(png)
-
-            target_h = CELL_H * 0.78
-            target_w = target_h * (float(px_w) / float(px_h))
-            max_w = CELL_W * 0.94
-            if target_w > max_w:
-                scale = max_w / target_w
-                target_w = max_w
-                target_h = target_h * scale
-
-            right_pad = 0.8
-            img_x = x + CELL_W - target_w - right_pad
-            img_y = y + (CELL_H - target_h) / 2.0
-
-            frame = scribus.createImage(img_x, img_y, target_w, target_h, name)
+            # Native text only: no image frames, no cell borders, no nested frames.
+            # One full-width borderless frame per drill.
+            frame = scribus.createText(x, y, CELL_W, CELL_H, name)
             scribus.setFillColor("None", frame)
             scribus.setLineColor("None", frame)
             scribus.setLineWidth(0.0, frame)
-            scribus.loadImage(png, frame)
-            scribus.setScaleImageToFrame(True, True, frame)
+            scribus.setText(cells[i], frame)
+            if arabic:
+                scribus.setFont(arabic, frame)
+            scribus.setFontSize(30.0, frame)
+            scribus.setTextColor("Black", frame)
+            try:
+                scribus.setTextDistances(1.0, 1.0, 0.0, 0.0, frame)
+            except Exception:
+                pass
+            try:
+                scribus.setTextVerticalAlignment(scribus.ALIGNV_CENTERED, frame)
+            except Exception:
+                pass
 
+            _apply_arabic_rtl_right(frame)
+            ok, final_size = fit_text(frame, 30.0, 18.0, 0.5)
+            _apply_arabic_rtl_right(frame)
+
+            if scribus.getTextLength(frame) <= 0:
+                raise RuntimeError("Arabic text did not insert: " + name)
+            if not ok:
+                raise RuntimeError("Unresolved Tartil overflow: %s (%.1f pt)" % (name, final_size))
             i += 1
 
 def add_special_page(page_num, spec, content, comp, latin, arabic):
@@ -247,9 +245,17 @@ def add_special_page(page_num, spec, content, comp, latin, arabic):
     add_footer_arabic(page_num, arabic)
 
 def validate_document(tartil_pages):
-    # Tartil drills are rendered as images; rendering/loading failures raise
-    # immediately during page construction. No text-overflow audit is needed.
-    return []
+    bad = []
+    for page_num in tartil_pages:
+        for rr in range(1, 9):
+            for cc in range(1, 5):
+                name = "P%02d_R%dC%d" % (page_num, rr, cc)
+                try:
+                    if scribus.getTextLength(name) <= 0 or scribus.textOverflows(name):
+                        bad.append(name)
+                except Exception:
+                    bad.append(name)
+    return bad
 
 
 
