@@ -222,7 +222,12 @@ def add_tartil_grid(page_num, row, arabic):
 
             # Small calibration buffer for the difference between renderFont's
             # bitmap metrics and Scribus native text layout.
-            frame_w = max(CELL_W * 0.30, min(CELL_W * 0.90, est_w * 1.08 + 1.4))
+            # Do NOT impose a percentage-based minimum width here.
+            # That minimum created a large invisible left-aligned slack area for
+            # short 2-letter drills, which is exactly why they looked left aligned.
+            # Keep the frame close to the measured visual width and pin its right
+            # edge to one common coordinate.
+            frame_w = min(CELL_W * 0.94, max(6.0, est_w * 1.04 + 0.8))
             right_edge = cell_x + CELL_W - 0.8
             frame_x = right_edge - frame_w
 
