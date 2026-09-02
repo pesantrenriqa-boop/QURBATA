@@ -180,8 +180,6 @@ def _png_size(path):
 
 
 def _measure_arabic_width(text, arabic):
-    # Use Scribus/Qt font renderer ONLY to measure visual width.
-    # The book still uses native editable text, not raster images.
     if not os.path.isdir(TARTIL_MEASURE_DIR):
         os.makedirs(TARTIL_MEASURE_DIR)
     key = hashlib.sha1(text.encode("utf-8")).hexdigest()[:16]
@@ -212,17 +210,20 @@ def add_tartil_grid(page_num, row, arabic):
             name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
             drill = cells[i]
 
-            # Measure visual width with the same font engine, then create a
-            # native text frame just wide enough for that drill. Its RIGHT EDGE
-            # is fixed at the same point inside every cell. This removes all
-            # dependency on Scribus RTL paragraph alignment.
+            # Measure visual width with the same font engine. Then place a
+            # borderless native text frame whose RIGHT edge is fixed. The text
+            # itself is LEFT-aligned inside that measured frame. This avoids the
+            # extra centering slack that made examples look uneven.
             px_w, px_h = _measure_arabic_width(drill, arabic)
             visual_ratio = px_w / max(px_h, 1.0)
 
-            target_h = CELL_H * 0.66
+            target_h = CELL_H * 0.64
             est_w = target_h * visual_ratio
-            frame_w = max(CELL_W * 0.34, min(CELL_W * 0.92, est_w + 2.4))
-            right_edge = cell_x + CELL_W - 0.6
+
+            # Small calibration buffer for the difference between renderFont's
+            # bitmap metrics and Scribus native text layout.
+            frame_w = max(CELL_W * 0.30, min(CELL_W * 0.90, est_w * 1.08 + 1.4))
+            right_edge = cell_x + CELL_W - 0.8
             frame_x = right_edge - frame_w
 
             frame = scribus.createText(frame_x, y, frame_w, CELL_H, name)
@@ -243,12 +244,13 @@ def add_tartil_grid(page_num, row, arabic):
             except Exception:
                 pass
 
-            # Alignment inside the measured frame is CENTERED. The visual right
-            # position comes from frame geometry, not RTL alignment.
+            # Important: the position is controlled by geometry. Keep the text
+            # left-aligned inside the measured frame so its visual right edge
+            # tracks the frame's fixed right edge more predictably.
             try:
                 scribus.selectText(0, scribus.getTextLength(frame), frame)
                 scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
-                scribus.setTextAlignment(scribus.ALIGN_CENTERED, frame)
+                scribus.setTextAlignment(scribus.ALIGN_LEFT, frame)
             except Exception:
                 pass
 
