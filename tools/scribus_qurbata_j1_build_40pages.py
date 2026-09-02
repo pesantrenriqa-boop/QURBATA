@@ -168,8 +168,18 @@ def _sanitize_arabic_drill(text):
     return " ".join(clean.split())
 
 
+def _visual_qurbata_token(token):
+    # QURBATA J1 visual convention:
+    # isolated HEH (ه) should be taught with the two-eye / two-hole shape.
+    # Use the Arabic Presentation Form HEH INITIAL FORM (ﻫ) only for display,
+    # while leaving the source/master drill data unchanged.
+    if token and token[0] == "ه":
+        return "ﻫ" + token[1:]
+    return token
+
+
 def _tokenize_arabic_drill(text):
-    return [tok for tok in _sanitize_arabic_drill(text).split(" ") if tok]
+    return [_visual_qurbata_token(tok) for tok in _sanitize_arabic_drill(text).split(" ") if tok]
 
 
 def _place_tartil_token(x_center, y, slot_w, slot_h, token, arabic, name):
