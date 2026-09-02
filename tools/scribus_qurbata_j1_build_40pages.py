@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import os
 import csv
+import hashlib
+import struct
 import scribus
 
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -11,6 +13,7 @@ SPECIAL_CONTENT_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SP
 INTEGRATION_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-40P-INTEGRATION-MASTER.csv")
 OUTPUT_SLA = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-PRODUCTION-40P.sla")
 OUTPUT_PDF = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-PRODUCTION-40P-PREVIEW.pdf")
+TARTIL_MEASURE_DIR = os.path.join(REPO_ROOT, "dist", "scribus", "tartil-measure-cache")
 TARTIL_RENDER_DIR = os.path.join(REPO_ROOT, "dist", "scribus", "tartil-render-cache")
 
 PAGE_W = 148.0
@@ -158,8 +161,6 @@ def add_integration_strip(page_num, integration, latin, arabic):
 
 
 def _sanitize_arabic_drill(text):
-    # Remove hidden bidi controls that can make visually identical drills align
-    # differently from page to page. Keep the actual Arabic letters/harakat intact.
     banned = set([
         "\u061c", "\u200e", "\u200f",
         "\u202a", "\u202b", "\u202c", "\u202d", "\u202e",
@@ -170,13 +171,27 @@ def _sanitize_arabic_drill(text):
     return " ".join(clean.split())
 
 
-def _apply_arabic_rtl_right(frame):
-    try:
-        scribus.selectText(0, scribus.getTextLength(frame), frame)
-        scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
-        scribus.setTextAlignment(scribus.ALIGN_RIGHT, frame)
-    except Exception:
-        pass
+def _png_size(path):
+    with open(path, "rb") as f:
+        header = f.read(24)
+    if len(header) < 24 or header[:8] != b"\x89PNG\r\n\x1a\n":
+        raise RuntimeError("Invalid PNG measurement: " + path)
+    return struct.unpack(">II", header[16:24])
+
+
+def _measure_arabic_width(text, arabic):
+    # Use Scribus/Qt font renderer ONLY to measure visual width.
+    # The book still uses native editable text, not raster images.
+    if not os.path.isdir(TARTIL_MEASURE_DIR):
+        os.makedirs(TARTIL_MEASURE_DIR)
+    key = hashlib.sha1(text.encode("utf-8")).hexdigest()[:16]
+    path = os.path.join(TARTIL_MEASURE_DIR, key + ".png")
+    if not os.path.exists(path):
+        ok = scribus.renderFont(arabic, path, text, 48, "PNG")
+        if ok is False or not os.path.exists(path):
+            raise RuntimeError("Could not measure Tartil text: " + text)
+    px_w, px_h = _png_size(path)
+    return float(px_w), float(px_h)
 
 
 def add_tartil_grid(page_num, row, arabic):
@@ -192,23 +207,35 @@ def add_tartil_grid(page_num, row, arabic):
     i = 0
     for rr in range(8):
         for cc in range(4):
-            x = MARGIN + cc * (CELL_W + GAP_X)
+            cell_x = MARGIN + cc * (CELL_W + GAP_X)
             y = GRID_Y + rr * (CELL_H + GAP_Y)
             name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
+            drill = cells[i]
 
-            # Native text only: no image frames, no cell borders, no nested frames.
-            # One full-width borderless frame per drill.
-            frame = scribus.createText(x, y, CELL_W, CELL_H, name)
+            # Measure visual width with the same font engine, then create a
+            # native text frame just wide enough for that drill. Its RIGHT EDGE
+            # is fixed at the same point inside every cell. This removes all
+            # dependency on Scribus RTL paragraph alignment.
+            px_w, px_h = _measure_arabic_width(drill, arabic)
+            visual_ratio = px_w / max(px_h, 1.0)
+
+            target_h = CELL_H * 0.66
+            est_w = target_h * visual_ratio
+            frame_w = max(CELL_W * 0.34, min(CELL_W * 0.92, est_w + 2.4))
+            right_edge = cell_x + CELL_W - 0.6
+            frame_x = right_edge - frame_w
+
+            frame = scribus.createText(frame_x, y, frame_w, CELL_H, name)
             scribus.setFillColor("None", frame)
             scribus.setLineColor("None", frame)
             scribus.setLineWidth(0.0, frame)
-            scribus.setText(cells[i], frame)
+            scribus.setText(drill.replace(" ", "\u00A0"), frame)
             if arabic:
                 scribus.setFont(arabic, frame)
-            scribus.setFontSize(30.0, frame)
+            scribus.setFontSize(32.0, frame)
             scribus.setTextColor("Black", frame)
             try:
-                scribus.setTextDistances(1.0, 1.0, 0.0, 0.0, frame)
+                scribus.setTextDistances(0.0, 0.0, 0.0, 0.0, frame)
             except Exception:
                 pass
             try:
@@ -216,9 +243,16 @@ def add_tartil_grid(page_num, row, arabic):
             except Exception:
                 pass
 
-            _apply_arabic_rtl_right(frame)
-            ok, final_size = fit_text(frame, 30.0, 18.0, 0.5)
-            _apply_arabic_rtl_right(frame)
+            # Alignment inside the measured frame is CENTERED. The visual right
+            # position comes from frame geometry, not RTL alignment.
+            try:
+                scribus.selectText(0, scribus.getTextLength(frame), frame)
+                scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
+                scribus.setTextAlignment(scribus.ALIGN_CENTERED, frame)
+            except Exception:
+                pass
+
+            ok, final_size = fit_text(frame, 32.0, 20.0, 0.5)
 
             if scribus.getTextLength(frame) <= 0:
                 raise RuntimeError("Arabic text did not insert: " + name)
