@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
 import csv
-import hashlib
-import struct
 import scribus
 
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -13,7 +11,6 @@ SPECIAL_CONTENT_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SP
 INTEGRATION_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-40P-INTEGRATION-MASTER.csv")
 OUTPUT_SLA = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-PRODUCTION-40P.sla")
 OUTPUT_PDF = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-PRODUCTION-40P-PREVIEW.pdf")
-TARTIL_MEASURE_DIR = os.path.join(REPO_ROOT, "dist", "scribus", "tartil-measure-cache")
 TARTIL_RENDER_DIR = os.path.join(REPO_ROOT, "dist", "scribus", "tartil-render-cache")
 
 PAGE_W = 148.0
@@ -171,25 +168,39 @@ def _sanitize_arabic_drill(text):
     return " ".join(clean.split())
 
 
-def _png_size(path):
-    with open(path, "rb") as f:
-        header = f.read(24)
-    if len(header) < 24 or header[:8] != b"\x89PNG\r\n\x1a\n":
-        raise RuntimeError("Invalid PNG measurement: " + path)
-    return struct.unpack(">II", header[16:24])
+def _tokenize_arabic_drill(text):
+    return [tok for tok in _sanitize_arabic_drill(text).split(" ") if tok]
 
 
-def _measure_arabic_width(text, arabic):
-    if not os.path.isdir(TARTIL_MEASURE_DIR):
-        os.makedirs(TARTIL_MEASURE_DIR)
-    key = hashlib.sha1(text.encode("utf-8")).hexdigest()[:16]
-    path = os.path.join(TARTIL_MEASURE_DIR, key + ".png")
-    if not os.path.exists(path):
-        ok = scribus.renderFont(arabic, path, text, 48, "PNG")
-        if ok is False or not os.path.exists(path):
-            raise RuntimeError("Could not measure Tartil text: " + text)
-    px_w, px_h = _png_size(path)
-    return float(px_w), float(px_h)
+def _place_tartil_token(x_center, y, slot_w, slot_h, token, arabic, name):
+    # Each Arabic letter+harakat is its own fixed slot. This is the key:
+    # upper/lower groups now share identical LEFT and RIGHT block boundaries.
+    frame = scribus.createText(x_center - slot_w / 2.0, y, slot_w, slot_h, name)
+    scribus.setFillColor("None", frame)
+    scribus.setLineColor("None", frame)
+    scribus.setLineWidth(0.0, frame)
+    scribus.setText(token, frame)
+    if arabic:
+        scribus.setFont(arabic, frame)
+    scribus.setFontSize(32.0, frame)
+    scribus.setTextColor("Black", frame)
+    try:
+        scribus.setTextDistances(0.0, 0.0, 0.0, 0.0, frame)
+        scribus.setTextVerticalAlignment(scribus.ALIGNV_CENTERED, frame)
+    except Exception:
+        pass
+    try:
+        scribus.selectText(0, scribus.getTextLength(frame), frame)
+        scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
+        scribus.setTextAlignment(scribus.ALIGN_CENTERED, frame)
+    except Exception:
+        pass
+
+    ok, final_size = fit_text(frame, 32.0, 22.0, 0.5)
+    if scribus.getTextLength(frame) <= 0:
+        raise RuntimeError("Arabic token did not insert: " + name)
+    if not ok:
+        raise RuntimeError("Unresolved Tartil token overflow: %s (%.1f pt)" % (name, final_size))
 
 
 def add_tartil_grid(page_num, row, arabic):
@@ -200,71 +211,51 @@ def add_tartil_grid(page_num, row, arabic):
             value = str(row.get(key, "")).strip()
             if not value:
                 raise RuntimeError("Empty cell on page %d: %s" % (page_num, key))
-            cells.append(_sanitize_arabic_drill(value))
+            cells.append(_tokenize_arabic_drill(value))
 
     i = 0
     for rr in range(8):
         for cc in range(4):
             cell_x = MARGIN + cc * (CELL_W + GAP_X)
             y = GRID_Y + rr * (CELL_H + GAP_Y)
-            name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
-            drill = cells[i]
+            base_name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
+            tokens = cells[i]
 
-            # Measure visual width with the same font engine. Then place a
-            # borderless native text frame whose RIGHT edge is fixed. The text
-            # itself is LEFT-aligned inside that measured frame. This avoids the
-            # extra centering slack that made examples look uneven.
-            px_w, px_h = _measure_arabic_width(drill, arabic)
-            visual_ratio = px_w / max(px_h, 1.0)
+            # Fixed visual block for EVERY drill in a column.
+            # Right and left boundaries are identical from row to row.
+            block_left = cell_x + CELL_W * 0.08
+            block_right = cell_x + CELL_W * 0.92
+            block_w = block_right - block_left
 
-            target_h = CELL_H * 0.64
-            est_w = target_h * visual_ratio
+            n = len(tokens)
+            if n == 1:
+                centers = [(block_left + block_right) / 2.0]
+                slot_w = block_w * 0.48
+            elif n == 2:
+                # First Arabic token = RIGHT anchor, second = LEFT anchor.
+                centers = [block_right - block_w * 0.13, block_left + block_w * 0.13]
+                slot_w = block_w * 0.34
+            elif n == 3:
+                # Right / center / left, giving the whole group fixed boundaries.
+                centers = [
+                    block_right - block_w * 0.10,
+                    (block_left + block_right) / 2.0,
+                    block_left + block_w * 0.10
+                ]
+                slot_w = block_w * 0.28
+            else:
+                # General fallback: distribute tokens evenly from right to left.
+                centers = []
+                for j in range(n):
+                    frac = float(j) / float(max(1, n - 1))
+                    centers.append(block_right - frac * block_w)
+                slot_w = max(4.5, block_w / float(n + 0.8))
 
-            # Small calibration buffer for the difference between renderFont's
-            # bitmap metrics and Scribus native text layout.
-            # Do NOT impose a percentage-based minimum width here.
-            # That minimum created a large invisible left-aligned slack area for
-            # short 2-letter drills, which is exactly why they looked left aligned.
-            # Keep the frame close to the measured visual width and pin its right
-            # edge to one common coordinate.
-            frame_w = min(CELL_W * 0.94, max(6.0, est_w * 1.04 + 0.8))
-            right_edge = cell_x + CELL_W - 0.8
-            frame_x = right_edge - frame_w
-
-            frame = scribus.createText(frame_x, y, frame_w, CELL_H, name)
-            scribus.setFillColor("None", frame)
-            scribus.setLineColor("None", frame)
-            scribus.setLineWidth(0.0, frame)
-            scribus.setText(drill.replace(" ", "\u00A0"), frame)
-            if arabic:
-                scribus.setFont(arabic, frame)
-            scribus.setFontSize(32.0, frame)
-            scribus.setTextColor("Black", frame)
-            try:
-                scribus.setTextDistances(0.0, 0.0, 0.0, 0.0, frame)
-            except Exception:
-                pass
-            try:
-                scribus.setTextVerticalAlignment(scribus.ALIGNV_CENTERED, frame)
-            except Exception:
-                pass
-
-            # Important: the position is controlled by geometry. Keep the text
-            # left-aligned inside the measured frame so its visual right edge
-            # tracks the frame's fixed right edge more predictably.
-            try:
-                scribus.selectText(0, scribus.getTextLength(frame), frame)
-                scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
-                scribus.setTextAlignment(scribus.ALIGN_LEFT, frame)
-            except Exception:
-                pass
-
-            ok, final_size = fit_text(frame, 32.0, 20.0, 0.5)
-
-            if scribus.getTextLength(frame) <= 0:
-                raise RuntimeError("Arabic text did not insert: " + name)
-            if not ok:
-                raise RuntimeError("Unresolved Tartil overflow: %s (%.1f pt)" % (name, final_size))
+            for j, token in enumerate(tokens):
+                _place_tartil_token(
+                    centers[j], y, slot_w, CELL_H,
+                    token, arabic, base_name + "_T%d" % (j + 1)
+                )
             i += 1
 
 def add_special_page(page_num, spec, content, comp, latin, arabic):
@@ -286,17 +277,9 @@ def add_special_page(page_num, spec, content, comp, latin, arabic):
     add_footer_arabic(page_num, arabic)
 
 def validate_document(tartil_pages):
-    bad = []
-    for page_num in tartil_pages:
-        for rr in range(1, 9):
-            for cc in range(1, 5):
-                name = "P%02d_R%dC%d" % (page_num, rr, cc)
-                try:
-                    if scribus.getTextLength(name) <= 0 or scribus.textOverflows(name):
-                        bad.append(name)
-                except Exception:
-                    bad.append(name)
-    return bad
+    # Token frames are validated at creation time. A failure/overflow raises
+    # immediately, so no second-pass single-frame audit is needed here.
+    return []
 
 
 
