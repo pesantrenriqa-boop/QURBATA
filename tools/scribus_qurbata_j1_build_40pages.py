@@ -170,12 +170,17 @@ def _sanitize_arabic_drill(text):
 
 def _visual_qurbata_token(token):
     # QURBATA J1 visual convention:
-    # isolated HEH (ه) should be taught with the two-eye / two-hole shape.
-    # Use the Arabic Presentation Form HEH INITIAL FORM (ﻫ) only for display,
-    # while leaving the source/master drill data unchanged.
-    if token and token[0] == "ه":
-        return "ﻫ" + token[1:]
-    return token
+    # every HEH used as a drill glyph must use the two-eye / two-hole form.
+    # Normalize ALL common HEH code points/presentation forms, not only a token
+    # whose first code point is plain U+0647. Source/master data stays unchanged.
+    heh_forms = {
+        "ه": "ﻫ",  # U+0647 -> HEH initial form
+        "ﻩ": "ﻫ",  # isolated presentation form
+        "ﻪ": "ﻫ",  # final presentation form
+        "ﻫ": "ﻫ",  # initial presentation form
+        "ﻬ": "ﻫ",  # medial presentation form
+    }
+    return "".join(heh_forms.get(ch, ch) for ch in token)
 
 
 def _tokenize_arabic_drill(text):
