@@ -242,10 +242,12 @@ def _tokenize_arabic_drill(text):
 
 
 def _place_tartil_token(x_center, y, slot_w, slot_h, token, arabic, name):
-    # MAIN TARTIL RULE: one absolute font size for every drill glyph.
-    # No per-token autofit is allowed; otherwise wide glyphs shrink and the
-    # page becomes optically inconsistent.
-    frame = scribus.createText(x_center - slot_w / 2.0, y, slot_w, slot_h, name)
+    # Use the SAME generous frame width and SAME 30 pt font for every glyph.
+    # Different frame widths can change Scribus' line fitting/shaping behavior,
+    # so slot_w is ignored for typography and retained only by the caller as
+    # layout metadata.
+    frame_w = CELL_W * 0.92
+    frame = scribus.createText(x_center - frame_w / 2.0, y, frame_w, slot_h, name)
     scribus.setFillColor("None", frame)
     scribus.setLineColor("None", frame)
     scribus.setLineWidth(0.0, frame)
@@ -263,13 +265,19 @@ def _place_tartil_token(x_center, y, slot_w, slot_h, token, arabic, name):
         scribus.selectText(0, scribus.getTextLength(frame), frame)
         scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
         scribus.setTextAlignment(scribus.ALIGN_CENTERED, frame)
+        # Re-assert font and size AFTER selection/direction/alignment. In
+        # Scribus, paragraph operations may otherwise leave selection-specific
+        # formatting inconsistent.
+        if arabic:
+            scribus.setFont(arabic, frame)
+        scribus.setFontSize(30.0, frame)
     except Exception:
         pass
 
     if scribus.getTextLength(frame) <= 0:
         raise RuntimeError("Arabic token did not insert: " + name)
     if scribus.textOverflows(frame):
-        raise RuntimeError("Tartil fixed-size slot too narrow: " + name)
+        raise RuntimeError("Tartil fixed 30pt frame overflow: " + name)
 
 
 
@@ -325,10 +333,23 @@ def add_tartil_grid(page_num, row, arabic):
                 slot_w = max(block_w * 0.52, block_w / float(n) * 2.10)
 
             for j, token in enumerate(tokens):
+                token_name = base_name + "_T%d" % (j + 1)
                 _place_tartil_token(
                     centers[j], y, slot_w, CELL_H,
-                    token, arabic, base_name + "_T%d" % (j + 1)
+                    token, arabic, token_name
                 )
+                try:
+                    scribus.selectText(0, scribus.getTextLength(token_name), token_name)
+                    actual_size = float(scribus.getFontSize(token_name))
+                    if abs(actual_size - 30.0) > 0.05:
+                        raise RuntimeError(
+                            "Tartil font-size audit failed: %s = %.2f pt" %
+                            (token_name, actual_size)
+                        )
+                except RuntimeError:
+                    raise
+                except Exception:
+                    pass
             i += 1
 
 def add_special_page(page_num, spec, content, comp, latin, arabic):
