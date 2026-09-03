@@ -240,8 +240,6 @@ def _tokenize_arabic_drill(text):
 
 
 def _place_tartil_token(x_center, y, slot_w, slot_h, token, arabic, name):
-    # Each Arabic letter+harakat is its own fixed slot. This is the key:
-    # upper/lower groups now share identical LEFT and RIGHT block boundaries.
     frame = scribus.createText(x_center - slot_w / 2.0, y, slot_w, slot_h, name)
     scribus.setFillColor("None", frame)
     scribus.setLineColor("None", frame)
@@ -263,22 +261,11 @@ def _place_tartil_token(x_center, y, slot_w, slot_h, token, arabic, name):
     except Exception:
         pass
 
-    ok, final_size = fit_text(frame, 32.0, 16.0, 0.5)
+    # Preserve the intended large teaching size. The slot is deliberately wide,
+    # so shrinking should be exceptional rather than normal.
+    ok, final_size = fit_text(frame, 32.0, 27.0, 0.5)
     if scribus.getTextLength(frame) <= 0:
         raise RuntimeError("Arabic token did not insert: " + name)
-    if not ok:
-        # Final safety fallback: widen this token slot slightly and refit once.
-        # This is especially needed for the two-hole HEH presentation glyph,
-        # whose visual bounds are wider than plain HEH in KFGQPC.
-        try:
-            cur_w, cur_h = scribus.getSize(name)
-            cur_x, cur_y = scribus.getPosition(name)
-            new_w = cur_w * 1.28
-            scribus.sizeObject(new_w, cur_h, name)
-            scribus.moveObjectAbs(cur_x - (new_w - cur_w) / 2.0, cur_y, name)
-        except Exception:
-            pass
-        ok, final_size = fit_text(frame, min(final_size, 22.0), 14.0, 0.5)
     if not ok:
         raise RuntimeError("Unresolved Tartil token overflow: %s (%.1f pt)" % (name, final_size))
 
@@ -301,35 +288,36 @@ def add_tartil_grid(page_num, row, arabic):
             base_name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
             tokens = cells[i]
 
-            # Fixed visual block for EVERY drill in a column.
-            # Right and left boundaries are identical from row to row.
-            block_left = cell_x + CELL_W * 0.08
-            block_right = cell_x + CELL_W * 0.92
+            # One invisible teaching block per cell. Its left/right anchors are
+            # identical from row to row. Letter slots overlap generously so
+            # glyphs can stay large; we are aligning optical centers, not boxing
+            # every glyph into a narrow frame.
+            block_left = cell_x + CELL_W * 0.07
+            block_right = cell_x + CELL_W * 0.93
             block_w = block_right - block_left
-
             n = len(tokens)
-            if n == 1:
+
+            if n <= 1:
                 centers = [(block_left + block_right) / 2.0]
-                slot_w = block_w * 0.48
+                slot_w = block_w * 0.72
             elif n == 2:
-                # First Arabic token = RIGHT anchor, second = LEFT anchor.
-                centers = [block_right - block_w * 0.13, block_left + block_w * 0.13]
-                slot_w = block_w * 0.34
-            elif n == 3:
-                # Right / center / left, giving the whole group fixed boundaries.
                 centers = [
-                    block_right - block_w * 0.10,
-                    (block_left + block_right) / 2.0,
-                    block_left + block_w * 0.10
+                    block_right - block_w * 0.19,
+                    block_left + block_w * 0.19
                 ]
-                slot_w = block_w * 0.28
+                slot_w = block_w * 0.56
+            elif n == 3:
+                centers = [
+                    block_right - block_w * 0.14,
+                    (block_left + block_right) / 2.0,
+                    block_left + block_w * 0.14
+                ]
+                slot_w = block_w * 0.46
             else:
-                # General fallback: distribute tokens evenly from right to left.
-                centers = []
-                for j in range(n):
-                    frac = float(j) / float(max(1, n - 1))
-                    centers.append(block_right - frac * block_w)
-                slot_w = max(4.5, block_w / float(n + 0.8))
+                # Fallback for unexpected longer drills.
+                step = block_w / float(max(1, n - 1))
+                centers = [block_right - j * step for j in range(n)]
+                slot_w = max(block_w * 0.34, block_w / float(n) * 1.55)
 
             for j, token in enumerate(tokens):
                 _place_tartil_token(
