@@ -211,9 +211,22 @@ def _place_tartil_token(x_center, y, slot_w, slot_h, token, arabic, name):
     except Exception:
         pass
 
-    ok, final_size = fit_text(frame, 32.0, 22.0, 0.5)
+    ok, final_size = fit_text(frame, 32.0, 16.0, 0.5)
     if scribus.getTextLength(frame) <= 0:
         raise RuntimeError("Arabic token did not insert: " + name)
+    if not ok:
+        # Final safety fallback: widen this token slot slightly and refit once.
+        # This is especially needed for the two-hole HEH presentation glyph,
+        # whose visual bounds are wider than plain HEH in KFGQPC.
+        try:
+            cur_w, cur_h = scribus.getSize(name)
+            cur_x, cur_y = scribus.getPosition(name)
+            new_w = cur_w * 1.28
+            scribus.sizeObject(new_w, cur_h, name)
+            scribus.moveObjectAbs(cur_x - (new_w - cur_w) / 2.0, cur_y, name)
+        except Exception:
+            pass
+        ok, final_size = fit_text(frame, min(final_size, 22.0), 14.0, 0.5)
     if not ok:
         raise RuntimeError("Unresolved Tartil token overflow: %s (%.1f pt)" % (name, final_size))
 
