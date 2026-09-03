@@ -20,15 +20,15 @@ MARGIN = 13.0
 HEADER_Y = 9.0
 TITLE_Y = 10.0
 TARGET_Y = 0.0
-GRID_Y = 35.0
+GRID_Y = 38.0
 GRID_W = PAGE_W - 2 * MARGIN
-GRID_H = 148.0
+GRID_H = 142.0
 GAP_X = 2.2
 GAP_Y = 1.6
 CELL_W = (GRID_W - 3 * GAP_X) / 4.0
 CELL_H = (GRID_H - 7 * GAP_Y) / 8.0
 
-FOOTER_Y = 187.0
+FOOTER_Y = 190.0
 
 FONT_LATIN_CANDIDATES = ["Arial", "Arial Regular", "Liberation Sans"]
 FONT_ARABIC_CANDIDATES = [
@@ -113,47 +113,80 @@ def fit_text(frame, start_size, minimum=7.0, step=0.5):
         scribus.setFontSize(size, frame)
     return (not scribus.textOverflows(frame), size)
 
+def _decorative_rule(x1, y, x2, name):
+    line = scribus.createLine(x1, y, x2, y, name)
+    scribus.setLineColor("Blue", line)
+    scribus.setLineWidth(0.55, line)
+    return line
+
+
 def create_page_shell(page_num, latin):
-    text_frame(MARGIN, 7.5, GRID_W, 5.0, "◆  QURBATA JILID 1  ◆", latin, 7.0, "P%02d_Brand" % page_num)
-    text_frame(MARGIN, FOOTER_Y, GRID_W, 6.0, "QURBATA JILID 1   •   %02d" % page_num, latin, 6.3, "P%02d_FooterLeft" % page_num)
+    # Clean book-like header: blue rules + centered brand, no surrounding box.
+    brand = text_frame(MARGIN + 37.0, 6.0, GRID_W - 74.0, 6.0,
+                       "QURBATA JILID 1", latin, 8.2,
+                       "P%02d_Brand" % page_num)
+    scribus.setTextColor("Blue", brand)
+    _decorative_rule(MARGIN, 9.0, MARGIN + 34.0, "P%02d_HeaderRuleL" % page_num)
+    _decorative_rule(MARGIN + GRID_W - 34.0, 9.0, MARGIN + GRID_W, "P%02d_HeaderRuleR" % page_num)
+
+    # Small diamond ornaments beside the title.
+    left_mark = text_frame(MARGIN + 34.2, 6.2, 3.0, 5.0, "◆", latin, 5.8, "P%02d_HeaderDiamondL" % page_num)
+    right_mark = text_frame(MARGIN + GRID_W - 37.2, 6.2, 3.0, 5.0, "◆", latin, 5.8, "P%02d_HeaderDiamondR" % page_num)
+    scribus.setTextColor("Blue", left_mark)
+    scribus.setTextColor("Blue", right_mark)
+
+    # Footer decoration and page identity.
+    _decorative_rule(MARGIN, FOOTER_Y + 5.3, MARGIN + 35.0, "P%02d_FooterRuleL" % page_num)
+    _decorative_rule(MARGIN + GRID_W - 35.0, FOOTER_Y + 5.3, MARGIN + GRID_W, "P%02d_FooterRuleR" % page_num)
+    footer = text_frame(MARGIN + 35.0, FOOTER_Y + 2.0, GRID_W - 70.0, 6.0,
+                        "QURBATA JILID 1   •   %02d" % page_num,
+                        latin, 6.2, "P%02d_FooterLeft" % page_num)
+    scribus.setTextColor("Blue", footer)
 
 
 
 def add_footer_arabic(page_num, arabic):
-    frame = text_frame(MARGIN, FOOTER_Y - 5.0, GRID_W, 6.0, "تَعَلَّمْ  •  اِعْمَلْ  •  عَلِّمْ", arabic, 8.5, "P%02d_FooterArabic" % page_num)
-    fit_text(frame, 8.5, 7.0, 0.5)
+    frame = text_frame(MARGIN, FOOTER_Y - 4.0, GRID_W, 6.0,
+                       "تَعَلَّمْ  •  اِعْمَلْ  •  عَلِّمْ",
+                       arabic, 8.8, "P%02d_FooterArabic" % page_num)
+    scribus.setTextColor("Blue", frame)
+    fit_text(frame, 8.8, 7.2, 0.5)
 
 
 
 def add_competency(page_num, comp, latin):
     title = comp["CompetencyTitle"]
-    tf = text_frame(MARGIN, 13.0, GRID_W, 8.0, title, latin, 12.0, "P%02d_CompetencyTitle" % page_num)
-    fit_text(tf, 12.0, 9.0, 0.5)
+    tf = text_frame(MARGIN, 13.0, GRID_W, 7.5, title, latin, 11.8,
+                    "P%02d_CompetencyTitle" % page_num)
+    fit_text(tf, 11.8, 9.2, 0.5)
 
 
 
 def add_integration_strip(page_num, integration, latin, arabic):
     x = MARGIN
     y = 22.0
-    w = GRID_W
-    col_w = w / 3.0
+    col_w = GRID_W / 3.0
     items = [
-        ("Tahfidz", integration.get("TahfidzText", "").strip()),
-        ("Bahasa Arab", integration.get("BahasaArabText", "").strip()),
+        ("TAHFIDZ", integration.get("TahfidzText", "").strip()),
+        ("BAHASA ARAB", integration.get("BahasaArabText", "").strip()),
         ("NIDOM", integration.get("NidomText", "").strip()),
     ]
     for idx, item in enumerate(items):
         label, primary = item
         bx = x + idx * col_w
-        text_frame(bx, y, col_w, 3.5, label.upper(), latin, 5.6, "P%02d_IntLabel%d" % (page_num, idx + 1))
-        pf = text_frame(bx + 0.5, y + 3.5, col_w - 1.0, 8.0, primary, arabic, 8.7, "P%02d_IntPrimary%d" % (page_num, idx + 1))
+        lf = text_frame(bx, y, col_w, 3.4, label, latin, 5.4,
+                        "P%02d_IntLabel%d" % (page_num, idx + 1))
+        scribus.setTextColor("Blue", lf)
+        pf = text_frame(bx + 0.8, y + 3.2, col_w - 1.6, 8.0, primary,
+                        arabic, 8.5,
+                        "P%02d_IntPrimary%d" % (page_num, idx + 1))
         try:
             scribus.selectText(0, scribus.getTextLength(pf), pf)
             scribus.setTextDirection(scribus.DIRECTION_RTL, pf)
             scribus.setTextAlignment(scribus.ALIGN_CENTERED, pf)
         except Exception:
             pass
-        fit_text(pf, 8.7, 6.0, 0.5)
+        fit_text(pf, 8.5, 6.0, 0.5)
 
 
 
@@ -288,7 +321,7 @@ def add_tartil_grid(page_num, row, arabic):
 
 def add_special_page(page_num, spec, content, comp, latin, arabic):
     title = content.get("Title", "").strip() or comp["CompetencyTitle"]
-    text_frame(MARGIN, 54.0, GRID_W, 15.0, title, latin, 16.0, "P%02d_SpecialTitle" % page_num, line_width=0.7)
+    text_frame(MARGIN, 54.0, GRID_W, 15.0, title, latin, 16.0, "P%02d_SpecialTitle" % page_num, line_width=0.0)
     primary = content.get("PrimaryText", "").strip()
     secondary = content.get("SecondaryText", "").strip()
     instruction = content.get("Instruction", "").strip()
