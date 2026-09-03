@@ -241,13 +241,11 @@ def _tokenize_arabic_drill(text):
     return [_visual_qurbata_token(tok) for tok in _sanitize_arabic_drill(text).split(" ") if tok]
 
 
-def _place_tartil_token(x_center, y, slot_w, slot_h, token, arabic, name):
-    # Use the SAME generous frame width and SAME 30 pt font for every glyph.
-    # Different frame widths can change Scribus' line fitting/shaping behavior,
-    # so slot_w is ignored for typography and retained only by the caller as
-    # layout metadata.
-    frame_w = CELL_W * 0.92
-    frame = scribus.createText(x_center - frame_w / 2.0, y, frame_w, slot_h, name)
+def _place_tartil_token(col_x, y, col_w, slot_h, token, arabic, name):
+    # One real invisible COLUMN per letter. Every column has identical width.
+    # This means a 3-letter drill is literally three equal columns:
+    # [LEFT LETTER] [MIDDLE LETTER] [RIGHT LETTER].
+    frame = scribus.createText(col_x, y, col_w, slot_h, name)
     scribus.setFillColor("None", frame)
     scribus.setLineColor("None", frame)
     scribus.setLineWidth(0.0, frame)
@@ -265,9 +263,6 @@ def _place_tartil_token(x_center, y, slot_w, slot_h, token, arabic, name):
         scribus.selectText(0, scribus.getTextLength(frame), frame)
         scribus.setTextDirection(scribus.DIRECTION_RTL, frame)
         scribus.setTextAlignment(scribus.ALIGN_CENTERED, frame)
-        # Re-assert font and size AFTER selection/direction/alignment. In
-        # Scribus, paragraph operations may otherwise leave selection-specific
-        # formatting inconsistent.
         if arabic:
             scribus.setFont(arabic, frame)
         scribus.setFontSize(30.0, frame)
@@ -277,8 +272,7 @@ def _place_tartil_token(x_center, y, slot_w, slot_h, token, arabic, name):
     if scribus.getTextLength(frame) <= 0:
         raise RuntimeError("Arabic token did not insert: " + name)
     if scribus.textOverflows(frame):
-        raise RuntimeError("Tartil fixed 30pt frame overflow: " + name)
-
+        raise RuntimeError("Tartil letter-column overflow: " + name)
 
 
 def add_tartil_grid(page_num, row, arabic):
@@ -299,43 +293,67 @@ def add_tartil_grid(page_num, row, arabic):
             base_name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
             tokens = cells[i]
 
-            _draw_letter_guides(page_num, rr + 1, cc + 1, cell_x, y)
+            # Fixed 3-column teaching matrix in EVERY material cell.
+            # The PDF has no column lines; these are geometry only.
+            inner_left = cell_x + CELL_W * 0.06
+            inner_w = CELL_W * 0.88
+            col_gap = CELL_W * 0.025
+            col_w = (inner_w - 2.0 * col_gap) / 3.0
 
-            # One invisible teaching block per cell. Its left/right anchors are
-            # identical from row to row. Letter slots overlap generously so
-            # glyphs can stay large; we are aligning optical centers, not boxing
-            # every glyph into a narrow frame.
-            block_left = cell_x + CELL_W * 0.07
-            block_right = cell_x + CELL_W * 0.93
-            block_w = block_right - block_left
+            col_x = [
+                inner_left,                              # physical LEFT column
+                inner_left + col_w + col_gap,           # physical CENTER column
+                inner_left + 2.0 * (col_w + col_gap),   # physical RIGHT column
+            ]
+
             n = len(tokens)
-
-            if n <= 1:
-                centers = [(block_left + block_right) / 2.0]
-                slot_w = block_w * 0.92
+            if n == 1:
+                placements = [(tokens[0], 1)]
             elif n == 2:
-                centers = [
-                    block_right - block_w * 0.19,
-                    block_left + block_w * 0.19
-                ]
-                slot_w = block_w * 0.76
+                # Arabic reading order: token 1 on RIGHT, token 2 on LEFT.
+                # Keep center intentionally empty so both outer edges line up.
+                placements = [(tokens[0], 2), (tokens[1], 0)]
             elif n == 3:
-                centers = [
-                    block_right - block_w * 0.14,
-                    (block_left + block_right) / 2.0,
-                    block_left + block_w * 0.14
-                ]
-                slot_w = block_w * 0.64
+                # token 1 RIGHT, token 2 CENTER, token 3 LEFT.
+                placements = [(tokens[0], 2), (tokens[1], 1), (tokens[2], 0)]
             else:
-                # Fallback for unexpected longer drills.
-                step = block_w / float(max(1, n - 1))
-                centers = [block_right - j * step for j in range(n)]
-                slot_w = max(block_w * 0.52, block_w / float(n) * 2.10)
+                # Defensive fallback. Jilid-1 main drills are expected to be <=3.
+                raise RuntimeError(
+                    "Tartil drill has more than 3 letter-columns: %s" % base_name
+                )
 
-            for j, token in enumerate(tokens):
+            # Non-printing guide lines at the actual column boundaries.
+            try:
+                old_layer = scribus.getActiveLayer()
+            except Exception:
+                old_layer = CONTENT_LAYER
+            _ensure_tartil_guide_layer()
+            scribus.setActiveLayer(GUIDE_LAYER)
+            boundaries = [
+                inner_left,
+                inner_left + col_w,
+                inner_left + col_w + col_gap,
+                inner_left + 2.0 * col_w + col_gap,
+                inner_left + 2.0 * (col_w + col_gap),
+                inner_left + 3.0 * col_w + 2.0 * col_gap,
+            ]
+            for gi, gx in enumerate(boundaries):
+                guide = scribus.createLine(
+                    gx, y + 0.8, gx, y + CELL_H - 0.8,
+                    base_name + "_COLGUIDE%d" % (gi + 1)
+                )
+                scribus.setLineColor("Blue", guide)
+                scribus.setLineWidth(0.20, guide)
+            try:
+                scribus.setActiveLayer(old_layer)
+            except Exception:
+                scribus.setActiveLayer(CONTENT_LAYER)
+
+            for j, placement in enumerate(placements):
+                token, physical_col = placement
                 token_name = base_name + "_T%d" % (j + 1)
                 _place_tartil_token(
-                    centers[j], y, slot_w, CELL_H,
+                    col_x[physical_col], y, col_w, CELL_H,
                     token, arabic, token_name
                 )
                 try:
@@ -350,6 +368,7 @@ def add_tartil_grid(page_num, row, arabic):
                     raise
                 except Exception:
                     pass
+
             i += 1
 
 def add_special_page(page_num, spec, content, comp, latin, arabic):
