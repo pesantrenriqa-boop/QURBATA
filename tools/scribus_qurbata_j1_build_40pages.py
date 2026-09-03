@@ -121,26 +121,45 @@ def _decorative_rule(x1, y, x2, name):
 
 
 def create_page_shell(page_num, latin):
-    # Clean book-like header: blue rules + centered brand, no surrounding box.
-    brand = text_frame(MARGIN + 37.0, 6.0, GRID_W - 74.0, 6.0,
-                       "QURBATA JILID 1", latin, 8.2,
-                       "P%02d_Brand" % page_num)
+    # Decorative header/footer are generated independently on EVERY page.
+    # No dependency on master pages, so pages 1-40 always receive them.
+
+    # HEADER — thin blue rules, diamonds, centered brand.
+    _decorative_rule(MARGIN, 8.8, MARGIN + 33.0, "P%02d_HeaderRuleL" % page_num)
+    _decorative_rule(MARGIN + GRID_W - 33.0, 8.8, MARGIN + GRID_W, "P%02d_HeaderRuleR" % page_num)
+
+    brand = text_frame(
+        MARGIN + 36.0, 5.7, GRID_W - 72.0, 6.0,
+        "QURBATA JILID 1", latin, 8.4,
+        "P%02d_Brand" % page_num
+    )
     scribus.setTextColor("Blue", brand)
-    _decorative_rule(MARGIN, 9.0, MARGIN + 34.0, "P%02d_HeaderRuleL" % page_num)
-    _decorative_rule(MARGIN + GRID_W - 34.0, 9.0, MARGIN + GRID_W, "P%02d_HeaderRuleR" % page_num)
 
-    # Small diamond ornaments beside the title.
-    left_mark = text_frame(MARGIN + 34.2, 6.2, 3.0, 5.0, "◆", latin, 5.8, "P%02d_HeaderDiamondL" % page_num)
-    right_mark = text_frame(MARGIN + GRID_W - 37.2, 6.2, 3.0, 5.0, "◆", latin, 5.8, "P%02d_HeaderDiamondR" % page_num)
-    scribus.setTextColor("Blue", left_mark)
-    scribus.setTextColor("Blue", right_mark)
+    mark_l = text_frame(MARGIN + 32.8, 5.9, 3.2, 5.0, "◆", latin, 5.6,
+                        "P%02d_HeaderDiamondL" % page_num)
+    mark_r = text_frame(MARGIN + GRID_W - 36.0, 5.9, 3.2, 5.0, "◆", latin, 5.6,
+                        "P%02d_HeaderDiamondR" % page_num)
+    scribus.setTextColor("Blue", mark_l)
+    scribus.setTextColor("Blue", mark_r)
 
-    # Footer decoration and page identity.
-    _decorative_rule(MARGIN, FOOTER_Y + 5.3, MARGIN + 35.0, "P%02d_FooterRuleL" % page_num)
-    _decorative_rule(MARGIN + GRID_W - 35.0, FOOTER_Y + 5.3, MARGIN + GRID_W, "P%02d_FooterRuleR" % page_num)
-    footer = text_frame(MARGIN + 35.0, FOOTER_Y + 2.0, GRID_W - 70.0, 6.0,
-                        "QURBATA JILID 1   •   %02d" % page_num,
-                        latin, 6.2, "P%02d_FooterLeft" % page_num)
+    # Small page badge in the top-right, still subtle.
+    badge = text_frame(
+        MARGIN + GRID_W - 11.0, 4.9, 10.0, 5.0,
+        "%02d" % page_num, latin, 5.6,
+        "P%02d_HeaderPage" % page_num
+    )
+    scribus.setTextColor("Blue", badge)
+
+    # FOOTER — motto sits above two short blue rules and centered identity.
+    _decorative_rule(MARGIN, FOOTER_Y + 5.2, MARGIN + 34.0, "P%02d_FooterRuleL" % page_num)
+    _decorative_rule(MARGIN + GRID_W - 34.0, FOOTER_Y + 5.2, MARGIN + GRID_W, "P%02d_FooterRuleR" % page_num)
+
+    footer = text_frame(
+        MARGIN + 35.0, FOOTER_Y + 1.9, GRID_W - 70.0, 6.0,
+        "QURBATA JILID 1   •   %02d" % page_num,
+        latin, 6.2,
+        "P%02d_FooterIdentity" % page_num
+    )
     scribus.setTextColor("Blue", footer)
 
 
