@@ -242,6 +242,9 @@ def _tokenize_arabic_drill(text):
 
 
 def _place_tartil_token(x_center, y, slot_w, slot_h, token, arabic, name):
+    # MAIN TARTIL RULE: one absolute font size for every drill glyph.
+    # No per-token autofit is allowed; otherwise wide glyphs shrink and the
+    # page becomes optically inconsistent.
     frame = scribus.createText(x_center - slot_w / 2.0, y, slot_w, slot_h, name)
     scribus.setFillColor("None", frame)
     scribus.setLineColor("None", frame)
@@ -249,7 +252,7 @@ def _place_tartil_token(x_center, y, slot_w, slot_h, token, arabic, name):
     scribus.setText(token, frame)
     if arabic:
         scribus.setFont(arabic, frame)
-    scribus.setFontSize(32.0, frame)
+    scribus.setFontSize(30.0, frame)
     scribus.setTextColor("Black", frame)
     try:
         scribus.setTextDistances(0.0, 0.0, 0.0, 0.0, frame)
@@ -263,52 +266,11 @@ def _place_tartil_token(x_center, y, slot_w, slot_h, token, arabic, name):
     except Exception:
         pass
 
-    # Preserve the intended large teaching size. The slot is deliberately wide,
-    # so shrinking should be exceptional rather than normal.
-    ok, final_size = fit_text(frame, 32.0, 27.0, 0.5)
     if scribus.getTextLength(frame) <= 0:
         raise RuntimeError("Arabic token did not insert: " + name)
-    if not ok:
-        raise RuntimeError("Unresolved Tartil token overflow: %s (%.1f pt)" % (name, final_size))
+    if scribus.textOverflows(frame):
+        raise RuntimeError("Tartil fixed-size slot too narrow: " + name)
 
-
-def _ensure_tartil_guide_layer():
-    names = [row[0] if isinstance(row, tuple) else row for row in scribus.getLayers()]
-    if GUIDE_LAYER not in names:
-        scribus.createLayer(GUIDE_LAYER)
-    scribus.setLayerPrintable(GUIDE_LAYER, False)
-
-
-def _draw_letter_guides(page_num, row_num, col_num, cell_x, y):
-    # Three non-printing vertical guides per material cell:
-    # RIGHT / CENTER / LEFT letter anchors. They are visible in Scribus for
-    # manual fine-tuning but never appear in the exported PDF.
-    try:
-        old_layer = scribus.getActiveLayer()
-    except Exception:
-        old_layer = CONTENT_LAYER
-
-    _ensure_tartil_guide_layer()
-    scribus.setActiveLayer(GUIDE_LAYER)
-
-    block_left = cell_x + CELL_W * 0.07
-    block_right = cell_x + CELL_W * 0.93
-    block_mid = (block_left + block_right) / 2.0
-    xs = [block_right, block_mid, block_left]
-
-    for idx, gx in enumerate(xs):
-        line = scribus.createLine(
-            gx, y + 1.0,
-            gx, y + CELL_H - 1.0,
-            "P%02d_R%dC%d_G%d" % (page_num, row_num, col_num, idx + 1)
-        )
-        scribus.setLineColor("Blue", line)
-        scribus.setLineWidth(0.25, line)
-
-    try:
-        scribus.setActiveLayer(old_layer)
-    except Exception:
-        scribus.setActiveLayer(CONTENT_LAYER)
 
 
 def add_tartil_grid(page_num, row, arabic):
@@ -342,25 +304,25 @@ def add_tartil_grid(page_num, row, arabic):
 
             if n <= 1:
                 centers = [(block_left + block_right) / 2.0]
-                slot_w = block_w * 0.72
+                slot_w = block_w * 0.92
             elif n == 2:
                 centers = [
                     block_right - block_w * 0.19,
                     block_left + block_w * 0.19
                 ]
-                slot_w = block_w * 0.56
+                slot_w = block_w * 0.76
             elif n == 3:
                 centers = [
                     block_right - block_w * 0.14,
                     (block_left + block_right) / 2.0,
                     block_left + block_w * 0.14
                 ]
-                slot_w = block_w * 0.46
+                slot_w = block_w * 0.64
             else:
                 # Fallback for unexpected longer drills.
                 step = block_w / float(max(1, n - 1))
                 centers = [block_right - j * step for j in range(n)]
-                slot_w = max(block_w * 0.34, block_w / float(n) * 1.55)
+                slot_w = max(block_w * 0.52, block_w / float(n) * 2.10)
 
             for j, token in enumerate(tokens):
                 _place_tartil_token(
