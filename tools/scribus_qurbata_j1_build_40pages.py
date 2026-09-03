@@ -29,6 +29,8 @@ CELL_W = (GRID_W - 3 * GAP_X) / 4.0
 CELL_H = (GRID_H - 7 * GAP_Y) / 8.0
 
 FOOTER_Y = 190.0
+GUIDE_LAYER = "TARTIL GUIDES"
+CONTENT_LAYER = "Background"
 
 FONT_LATIN_CANDIDATES = ["Arial", "Arial Regular", "Liberation Sans"]
 FONT_ARABIC_CANDIDATES = [
@@ -270,6 +272,45 @@ def _place_tartil_token(x_center, y, slot_w, slot_h, token, arabic, name):
         raise RuntimeError("Unresolved Tartil token overflow: %s (%.1f pt)" % (name, final_size))
 
 
+def _ensure_tartil_guide_layer():
+    names = [row[0] if isinstance(row, tuple) else row for row in scribus.getLayers()]
+    if GUIDE_LAYER not in names:
+        scribus.createLayer(GUIDE_LAYER)
+    scribus.setLayerPrintable(GUIDE_LAYER, False)
+
+
+def _draw_letter_guides(page_num, row_num, col_num, cell_x, y):
+    # Three non-printing vertical guides per material cell:
+    # RIGHT / CENTER / LEFT letter anchors. They are visible in Scribus for
+    # manual fine-tuning but never appear in the exported PDF.
+    try:
+        old_layer = scribus.getActiveLayer()
+    except Exception:
+        old_layer = CONTENT_LAYER
+
+    _ensure_tartil_guide_layer()
+    scribus.setActiveLayer(GUIDE_LAYER)
+
+    block_left = cell_x + CELL_W * 0.07
+    block_right = cell_x + CELL_W * 0.93
+    block_mid = (block_left + block_right) / 2.0
+    xs = [block_right, block_mid, block_left]
+
+    for idx, gx in enumerate(xs):
+        line = scribus.createLine(
+            gx, y + 1.0,
+            gx, y + CELL_H - 1.0,
+            "P%02d_R%dC%d_G%d" % (page_num, row_num, col_num, idx + 1)
+        )
+        scribus.setLineColor("Blue", line)
+        scribus.setLineWidth(0.25, line)
+
+    try:
+        scribus.setActiveLayer(old_layer)
+    except Exception:
+        scribus.setActiveLayer(CONTENT_LAYER)
+
+
 def add_tartil_grid(page_num, row, arabic):
     cells = []
     for rr in range(1, 9):
@@ -287,6 +328,8 @@ def add_tartil_grid(page_num, row, arabic):
             y = GRID_Y + rr * (CELL_H + GAP_Y)
             base_name = "P%02d_R%dC%d" % (page_num, rr + 1, cc + 1)
             tokens = cells[i]
+
+            _draw_letter_guides(page_num, rr + 1, cc + 1, cell_x, y)
 
             # One invisible teaching block per cell. Its left/right anchors are
             # identical from row to row. Letter slots overlap generously so
@@ -387,6 +430,12 @@ def main():
     )
     if not ok:
         raise RuntimeError("Scribus could not create A5 document")
+
+    _ensure_tartil_guide_layer()
+    try:
+        scribus.setActiveLayer(CONTENT_LAYER)
+    except Exception:
+        pass
 
     try:
         scribus.setRedraw(False)
