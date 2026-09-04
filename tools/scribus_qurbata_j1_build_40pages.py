@@ -241,6 +241,24 @@ def _tokenize_arabic_drill(text):
     return [_visual_qurbata_token(tok) for tok in _sanitize_arabic_drill(text).split(" ") if tok]
 
 
+def _ensure_tartil_guide_layer():
+    # Create a non-printing guide layer once. The guides are visible in Scribus
+    # for manual alignment, but never exported to PDF.
+    try:
+        layers = scribus.getLayers()
+        names = []
+        for item in layers:
+            if isinstance(item, tuple):
+                names.append(item[0])
+            else:
+                names.append(item)
+        if GUIDE_LAYER not in names:
+            scribus.createLayer(GUIDE_LAYER)
+        scribus.setLayerPrintable(GUIDE_LAYER, False)
+    except Exception as e:
+        raise RuntimeError("Could not prepare TARTIL GUIDES layer: " + str(e))
+
+
 def _place_tartil_token(col_x, y, col_w, slot_h, token, arabic, name):
     # One real invisible COLUMN per letter. Every column has identical width.
     # This means a 3-letter drill is literally three equal columns:
