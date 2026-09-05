@@ -10,8 +10,8 @@ COMP_TSV = os.path.join(REPO_ROOT, "dist", "indesign-template-data", "QURBATA-J1
 SPECIAL_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SPECIAL-PAGES.csv")
 SPECIAL_CONTENT_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SPECIAL-CONTENT.csv")
 INTEGRATION_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-40P-INTEGRATION-MASTER.csv")
-OUTPUT_SLA = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-NATIVE-COLUMNS-40P-V2.sla")
-OUTPUT_PDF = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-NATIVE-COLUMNS-40P-PREVIEW-V2.pdf")
+OUTPUT_SLA = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-NATIVE-COLUMNS-40P-V3.sla")
+OUTPUT_PDF = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-NATIVE-COLUMNS-40P-PREVIEW-V3.pdf")
 
 PAGE_W = 148.0
 PAGE_H = 210.0
@@ -430,11 +430,21 @@ def hide_scribus_frame_edges_in_saved_file(path):
     try:
         with open(path, "r", encoding="utf-8") as f:
             data = f.read()
+
+        # Hide editor-only frame edges.
         data = data.replace('SHOWFRAME="1"', 'SHOWFRAME="0"', 1)
+
+        # Hard-normalize print flags in the persisted SLA. Scribus stores
+        # per-object printability as PRINTABLE="0|1" and per-layer printing as
+        # DRUCKEN="0|1". Older guide-layer experiments can leave content objects
+        # or layers non-printing even after the script thinks they are restored.
+        data = data.replace('PRINTABLE="0"', 'PRINTABLE="1"')
+        data = data.replace('DRUCKEN="0"', 'DRUCKEN="1"')
+
         with open(path, "w", encoding="utf-8") as f:
             f.write(data)
-    except Exception:
-        pass
+    except Exception as e:
+        raise RuntimeError("Could not normalize saved SLA for PDF export: " + str(e))
 
 
 def _export_pdf_with_fallback(preferred_path):
