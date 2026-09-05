@@ -29,7 +29,7 @@ CELL_H = (GRID_H - 7 * GAP_Y) / 8.0
 
 FOOTER_Y = 190.0
 GUIDE_LAYER = "TARTIL GUIDES"
-CONTENT_LAYER = "Background"
+CONTENT_LAYER = "QURBATA CONTENT"
 
 FONT_LATIN_CANDIDATES = ["Arial", "Arial Regular", "Liberation Sans"]
 FONT_ARABIC_CANDIDATES = [
@@ -240,20 +240,35 @@ def _tokenize_arabic_drill(text):
     return [_visual_qurbata_token(tok) for tok in _sanitize_arabic_drill(text).split(" ") if tok]
 
 
-def _ensure_tartil_guide_layer():
-    # Create a non-printing guide layer once. The guides are visible in Scribus
-    # for manual alignment, but never exported to PDF.
+def _layer_names():
+    names = []
+    for item in scribus.getLayers():
+        if isinstance(item, tuple):
+            names.append(item[0])
+        else:
+            names.append(item)
+    return names
+
+
+def _ensure_content_layer():
     try:
-        layers = scribus.getLayers()
-        names = []
-        for item in layers:
-            if isinstance(item, tuple):
-                names.append(item[0])
-            else:
-                names.append(item)
+        names = _layer_names()
+        if CONTENT_LAYER not in names:
+            scribus.createLayer(CONTENT_LAYER)
+        scribus.setLayerPrintable(CONTENT_LAYER, True)
+        scribus.setLayerVisible(CONTENT_LAYER, True)
+        scribus.setActiveLayer(CONTENT_LAYER)
+    except Exception as e:
+        raise RuntimeError("Could not prepare printable QURBATA CONTENT layer: " + str(e))
+
+
+def _ensure_tartil_guide_layer():
+    try:
+        names = _layer_names()
         if GUIDE_LAYER not in names:
             scribus.createLayer(GUIDE_LAYER)
         scribus.setLayerPrintable(GUIDE_LAYER, False)
+        scribus.setLayerVisible(GUIDE_LAYER, True)
     except Exception as e:
         raise RuntimeError("Could not prepare TARTIL GUIDES layer: " + str(e))
 
@@ -312,7 +327,7 @@ def _draw_group_column_guides(page_num, rr, cc, group_x, group_w, y):
         scribus.setLineWidth(0.20, line)
 
     try:
-        scribus.setActiveLayer(old_layer)
+        scribus.setActiveLayer(old_layer if old_layer != GUIDE_LAYER else CONTENT_LAYER)
     except Exception:
         scribus.setActiveLayer(CONTENT_LAYER)
 
@@ -471,11 +486,9 @@ def main():
     if not ok:
         raise RuntimeError("Scribus could not create A5 document")
 
+    _ensure_content_layer()
     _ensure_tartil_guide_layer()
-    try:
-        scribus.setActiveLayer(CONTENT_LAYER)
-    except Exception:
-        pass
+    scribus.setActiveLayer(CONTENT_LAYER)
 
     try:
         scribus.setRedraw(False)
