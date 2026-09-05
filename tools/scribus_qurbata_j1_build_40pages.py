@@ -28,8 +28,6 @@ CELL_W = (GRID_W - 3 * GAP_X) / 4.0
 CELL_H = (GRID_H - 7 * GAP_Y) / 8.0
 
 FOOTER_Y = 190.0
-GUIDE_LAYER = "TARTIL GUIDES"
-CONTENT_LAYER = "QURBATA CONTENT"
 
 FONT_LATIN_CANDIDATES = ["Arial", "Arial Regular", "Liberation Sans"]
 FONT_ARABIC_CANDIDATES = [
@@ -240,39 +238,6 @@ def _tokenize_arabic_drill(text):
     return [_visual_qurbata_token(tok) for tok in _sanitize_arabic_drill(text).split(" ") if tok]
 
 
-def _layer_names():
-    names = []
-    for item in scribus.getLayers():
-        if isinstance(item, tuple):
-            names.append(item[0])
-        else:
-            names.append(item)
-    return names
-
-
-def _ensure_content_layer():
-    try:
-        names = _layer_names()
-        if CONTENT_LAYER not in names:
-            scribus.createLayer(CONTENT_LAYER)
-        scribus.setLayerPrintable(CONTENT_LAYER, True)
-        scribus.setLayerVisible(CONTENT_LAYER, True)
-        scribus.setActiveLayer(CONTENT_LAYER)
-    except Exception as e:
-        raise RuntimeError("Could not prepare printable QURBATA CONTENT layer: " + str(e))
-
-
-def _ensure_tartil_guide_layer():
-    try:
-        names = _layer_names()
-        if GUIDE_LAYER not in names:
-            scribus.createLayer(GUIDE_LAYER)
-        scribus.setLayerPrintable(GUIDE_LAYER, False)
-        scribus.setLayerVisible(GUIDE_LAYER, True)
-    except Exception as e:
-        raise RuntimeError("Could not prepare TARTIL GUIDES layer: " + str(e))
-
-
 def _place_tartil_token(col_x, y, col_w, slot_h, token, arabic, name):
     # Native text only. Every letter has one dedicated fixed column.
     # The frame is exactly the column width: no raster image, no per-letter
@@ -307,14 +272,8 @@ def _place_tartil_token(col_x, y, col_w, slot_h, token, arabic, name):
 
 
 def _draw_group_column_guides(page_num, rr, cc, group_x, group_w, y):
-    # Non-printing guides only. 3 letter columns inside each group.
-    try:
-        old_layer = scribus.getActiveLayer()
-    except Exception:
-        old_layer = CONTENT_LAYER
-    _ensure_tartil_guide_layer()
-    scribus.setActiveLayer(GUIDE_LAYER)
-
+    # Temporary Scribus-only guide objects. They are created on the normal
+    # content layer for editing convenience, then deleted before save/PDF export.
     col_w = group_w / 3.0
     xs = [group_x, group_x + col_w, group_x + 2.0 * col_w, group_x + group_w]
     for gi, gx in enumerate(xs):
@@ -326,10 +285,6 @@ def _draw_group_column_guides(page_num, rr, cc, group_x, group_w, y):
         scribus.setLineColor("Blue", line)
         scribus.setLineWidth(0.20, line)
 
-    try:
-        scribus.setActiveLayer(old_layer if old_layer != GUIDE_LAYER else CONTENT_LAYER)
-    except Exception:
-        scribus.setActiveLayer(CONTENT_LAYER)
 
 
 def add_tartil_grid(page_num, row, arabic):
@@ -411,6 +366,22 @@ def add_special_page(page_num, spec, content, comp, latin, arabic):
     fit_text(inf, 9.0, 7.0, 0.5)
     add_footer_arabic(page_num, arabic)
 
+def _remove_temporary_guides():
+    for page_num in range(1, 41):
+        scribus.gotoPage(page_num)
+        try:
+            items = list(scribus.getPageItems())
+        except Exception:
+            items = []
+        for item in items:
+            name = item[0]
+            if "_GUIDE" in name or "_COLGUIDE" in name:
+                try:
+                    scribus.deleteObject(name)
+                except Exception:
+                    pass
+
+
 def validate_document(tartil_pages):
     # Production invariant: Jilid-1 Tartil must be native text only.
     # Fail the build if any image frame exists anywhere in the document.
@@ -486,10 +457,6 @@ def main():
     if not ok:
         raise RuntimeError("Scribus could not create A5 document")
 
-    _ensure_content_layer()
-    _ensure_tartil_guide_layer()
-    scribus.setActiveLayer(CONTENT_LAYER)
-
     try:
         scribus.setRedraw(False)
     except Exception:
@@ -516,6 +483,10 @@ def main():
                 add_footer_arabic(page_num, arabic)
                 tartil_page_numbers.append(page_num)
 
+        # Guides are editing aids only. Remove them before validation,
+        # saving and PDF export so output cannot be blank because of layer rules.
+        _remove_temporary_guides()
+
         bad = validate_document(tartil_page_numbers)
         if bad:
             raise RuntimeError("Final Tartil validation failed: " + ", ".join(bad[:20]))
@@ -533,8 +504,8 @@ def main():
             pdf.file = OUTPUT_PDF
             pdf.pages = list(range(1, 41))
             pdf.save()
-        except Exception:
-            pass
+        except Exception as e:
+            raise RuntimeError("PDF preview export failed: " + str(e))
 
         # Hide Scribus editing-frame edges in the saved document. These are not
         # printable borders; turning them off keeps the Tartil grid visually clean.
