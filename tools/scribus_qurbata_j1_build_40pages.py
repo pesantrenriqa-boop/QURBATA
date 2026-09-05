@@ -573,9 +573,11 @@ def main():
         # flags from the saved document.
         _force_all_layers_printable()
 
-        # Export from reopened SLA. Embed/subset fonts so the PDF cannot appear
-        # blank because the viewer cannot resolve KFGQPC/Arabic fonts.
-        actual_pdf = _export_pdf_with_fallback(OUTPUT_PDF)
+        # PDF auto-export is intentionally disabled. Scribus 1.6 on this Windows
+        # setup is producing blank PDFs via scripting even though the SLA contains
+        # real page objects. The reliable workflow is: save SLA here, then export
+        # manually from Scribus' GUI (File > Export > Save as PDF).
+        actual_pdf = ""
 
     finally:
         try:
@@ -592,7 +594,7 @@ def main():
         "Special pages: 4\n"
         "Tartil cells: 1152/1152\n"
         "Arabic font: %s\n\n"
-        "Saved SLA: %s\nPDF preview: %s" % (arabic, OUTPUT_SLA, actual_pdf),
+        "Saved SLA: %s\n\nAUTO PDF EXPORT: DISABLED\nExport manually via File > Export > Save as PDF." % (arabic, OUTPUT_SLA),
         scribus.ICON_INFORMATION,
         scribus.BUTTON_OK
     )
