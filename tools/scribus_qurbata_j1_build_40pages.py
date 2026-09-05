@@ -435,6 +435,8 @@ def _export_pdf_with_fallback(preferred_path):
             pdf = scribus.PDFfile()
             pdf.file = path
             pdf.pages = list(range(1, 41))
+            pdf.version = 14
+            pdf.fontEmbedding = 0
             pdf.save()
             return path
         except Exception as e:
@@ -521,18 +523,27 @@ def main():
 
         scribus.saveDocAs(OUTPUT_SLA)
 
-        # Export a PDF preview. Scribus "Show Frames" edges are editor-only and
-        # never print; this preview gives a clean production view for QC.
-        actual_pdf = _export_pdf_with_fallback(OUTPUT_PDF)
-
-        # Hide Scribus editing-frame edges in the saved document. These are not
-        # printable borders; turning them off keeps the Tartil grid visually clean.
+        # Reopen the saved SLA before PDF export. This clears transient script
+        # state and guarantees PDF export reads the persisted printable document.
         try:
             scribus.closeDoc()
-            hide_scribus_frame_edges_in_saved_file(OUTPUT_SLA)
-            scribus.openDoc(OUTPUT_SLA)
         except Exception:
             pass
+        hide_scribus_frame_edges_in_saved_file(OUTPUT_SLA)
+        scribus.openDoc(OUTPUT_SLA)
+
+        # Sanity check: page 1 must contain real production objects after reopen.
+        scribus.gotoPage(1)
+        try:
+            page1_items = list(scribus.getPageItems())
+        except Exception:
+            page1_items = []
+        if len(page1_items) == 0:
+            raise RuntimeError("Saved SLA reopened with zero items on page 1")
+
+        # Export from reopened SLA. Embed/subset fonts so the PDF cannot appear
+        # blank because the viewer cannot resolve KFGQPC/Arabic fonts.
+        actual_pdf = _export_pdf_with_fallback(OUTPUT_PDF)
 
     finally:
         try:
