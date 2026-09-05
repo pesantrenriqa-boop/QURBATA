@@ -260,8 +260,13 @@ def _ensure_tartil_guide_layer():
 
 
 def _place_tartil_token(col_x, y, col_w, slot_h, token, arabic, name):
-    # One dedicated invisible column per letter; native text only.
-    frame = scribus.createText(col_x, y, col_w, slot_h, name)
+    # One dedicated logical column per letter, but the invisible text frame is
+    # wider than the column itself. This preserves a true 3-column layout while
+    # allowing wide 30 pt Arabic glyphs (e.g. ع، م، ه) to fit without shrinking.
+    frame_w = col_w * 1.70
+    col_center = col_x + col_w / 2.0
+    frame_x = col_center - frame_w / 2.0
+    frame = scribus.createText(frame_x, y, frame_w, slot_h, name)
     scribus.setFillColor("None", frame)
     scribus.setLineColor("None", frame)
     scribus.setLineWidth(0.0, frame)
@@ -288,7 +293,19 @@ def _place_tartil_token(col_x, y, col_w, slot_h, token, arabic, name):
     if scribus.getTextLength(frame) <= 0:
         raise RuntimeError("Arabic token did not insert: " + name)
     if scribus.textOverflows(frame):
-        raise RuntimeError("Tartil letter-column overflow: " + name)
+        # Last safety margin without changing font size: widen the invisible
+        # frame around the same column center. The printed letter remains in
+        # the same column and stays 30 pt.
+        try:
+            cur_x, cur_y = scribus.getPosition(frame)
+            cur_w, cur_h = scribus.getSize(frame)
+            wider_w = cur_w * 1.25
+            scribus.sizeObject(wider_w, cur_h, frame)
+            scribus.moveObjectAbs(cur_x - (wider_w - cur_w) / 2.0, cur_y, frame)
+        except Exception:
+            pass
+    if scribus.textOverflows(frame):
+        raise RuntimeError("Tartil letter-column overflow after widening: " + name)
 
 
 def _draw_group_column_guides(page_num, rr, cc, group_x, group_w, y):
