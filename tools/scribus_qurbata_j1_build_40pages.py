@@ -245,8 +245,16 @@ def _place_tartil_token(col_x, y, col_w, slot_h, token, arabic, name):
     # The frame is exactly the column width: no raster image, no per-letter
     # scaling, no autofit. All glyphs are rendered by the same Arabic font at
     # the same 28 pt size.
-    extra_h = 6.0
-    frame = scribus.createText(col_x, y - extra_h / 2.0, col_w, slot_h + extra_h, name)
+    # Logical column anchor remains col_x/col_w. The actual invisible text
+    # frame is generously oversized around that anchor so Scribus does not flag
+    # Arabic glyph metrics as overflow. This does NOT scale the glyph.
+    col_center = col_x + col_w / 2.0
+    row_center = y + slot_h / 2.0
+    frame_w = col_w * 2.20
+    frame_h = slot_h * 1.80
+    frame_x = col_center - frame_w / 2.0
+    frame_y = row_center - frame_h / 2.0
+    frame = scribus.createText(frame_x, frame_y, frame_w, frame_h, name)
     scribus.setFillColor("None", frame)
     scribus.setLineColor("None", frame)
     scribus.setLineWidth(0.0, frame)
@@ -255,6 +263,10 @@ def _place_tartil_token(col_x, y, col_w, slot_h, token, arabic, name):
         scribus.setFont(arabic, frame)
     scribus.setFontSize(28.0, frame)
     scribus.setTextColor("Black", frame)
+    try:
+        scribus.setTextDistances(0.0, 0.0, 0.0, 0.0, frame)
+    except Exception:
+        pass
     try:
         scribus.setTextDistances(0.0, 0.0, 0.0, 0.0, frame)
         scribus.setTextVerticalAlignment(scribus.ALIGNV_CENTERED, frame)
