@@ -140,12 +140,8 @@ def create_page_shell(page_num, latin):
     )
     scribus.setTextColor("Blue", brand)
 
-    mark_l = text_frame(MARGIN + 32.8, 5.9, 3.2, 5.0, "◆", latin, 5.6,
-                        "P%02d_HeaderDiamondL" % page_num)
-    mark_r = text_frame(MARGIN + GRID_W - 36.0, 5.9, 3.2, 5.0, "◆", latin, 5.6,
-                        "P%02d_HeaderDiamondR" % page_num)
-    scribus.setTextColor("Blue", mark_l)
-    scribus.setTextColor("Blue", mark_r)
+    # No decorative symbol glyphs here: some Latin fonts used by Scribus do
+    # not contain the diamond character and preflight reports missing glyphs.
 
     # Small page badge in the top-right, still subtle.
     badge = text_frame(
@@ -161,7 +157,7 @@ def create_page_shell(page_num, latin):
 
     footer = text_frame(
         MARGIN + 35.0, FOOTER_Y + 1.9, GRID_W - 70.0, 6.0,
-        "QURBATA JILID 1   •   %02d" % page_num,
+        "QURBATA JILID 1   -   %02d" % page_num,
         latin, 6.2,
         "P%02d_FooterIdentity" % page_num
     )
@@ -171,7 +167,7 @@ def create_page_shell(page_num, latin):
 
 def add_footer_arabic(page_num, arabic):
     frame = text_frame(MARGIN, FOOTER_Y - 4.0, GRID_W, 6.0,
-                       "تَعَلَّمْ  •  اِعْمَلْ  •  عَلِّمْ",
+                       "تَعَلَّمْ   اِعْمَلْ   عَلِّمْ",
                        arabic, 8.8, "P%02d_FooterArabic" % page_num)
     scribus.setTextColor("Blue", frame)
     fit_text(frame, 8.8, 7.2, 0.5)
@@ -248,15 +244,16 @@ def _place_tartil_token(col_x, y, col_w, slot_h, token, arabic, name):
     # Native text only. Every letter has one dedicated fixed column.
     # The frame is exactly the column width: no raster image, no per-letter
     # scaling, no autofit. All glyphs are rendered by the same Arabic font at
-    # the same 30 pt size.
-    frame = scribus.createText(col_x, y, col_w, slot_h, name)
+    # the same 28 pt size.
+    extra_h = 6.0
+    frame = scribus.createText(col_x, y - extra_h / 2.0, col_w, slot_h + extra_h, name)
     scribus.setFillColor("None", frame)
     scribus.setLineColor("None", frame)
     scribus.setLineWidth(0.0, frame)
     scribus.setText(token, frame)
     if arabic:
         scribus.setFont(arabic, frame)
-    scribus.setFontSize(30.0, frame)
+    scribus.setFontSize(28.0, frame)
     scribus.setTextColor("Black", frame)
     try:
         scribus.setTextDistances(0.0, 0.0, 0.0, 0.0, frame)
@@ -269,7 +266,7 @@ def _place_tartil_token(col_x, y, col_w, slot_h, token, arabic, name):
         scribus.setTextAlignment(scribus.ALIGN_CENTERED, frame)
         if arabic:
             scribus.setFont(arabic, frame)
-        scribus.setFontSize(30.0, frame)
+        scribus.setFontSize(28.0, frame)
     except Exception:
         pass
 
