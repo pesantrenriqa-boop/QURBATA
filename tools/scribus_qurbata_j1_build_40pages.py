@@ -9,9 +9,8 @@ COMP_TSV = os.path.join(REPO_ROOT, "dist", "indesign-template-data", "QURBATA-J1
 SPECIAL_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SPECIAL-PAGES.csv")
 SPECIAL_CONTENT_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SPECIAL-CONTENT.csv")
 INTEGRATION_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-40P-INTEGRATION-MASTER.csv")
-OUTPUT_SLA = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-PRODUCTION-40P.sla")
-OUTPUT_PDF = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-PRODUCTION-40P-PREVIEW.pdf")
-TARTIL_RENDER_DIR = os.path.join(REPO_ROOT, "dist", "scribus", "tartil-render-cache")
+OUTPUT_SLA = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-NATIVE-COLUMNS-40P.sla")
+OUTPUT_PDF = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-NATIVE-COLUMNS-40P-PREVIEW.pdf")
 
 PAGE_W = 148.0
 PAGE_H = 210.0
@@ -260,16 +259,11 @@ def _ensure_tartil_guide_layer():
 
 
 def _place_tartil_token(col_x, y, col_w, slot_h, token, arabic, name):
-    # One logical column per letter, but use a generous invisible frame centered
-    # on that column. Width/height are deliberately independent from glyph width,
-    # so every letter stays native text at exactly 30 pt and never has to shrink.
-    col_center = col_x + col_w / 2.0
-    row_center = y + slot_h / 2.0
-    frame_w = CELL_W * 1.05
-    frame_h = slot_h * 1.40
-    frame_x = col_center - frame_w / 2.0
-    frame_y = row_center - frame_h / 2.0
-    frame = scribus.createText(frame_x, frame_y, frame_w, frame_h, name)
+    # Native text only. Every letter has one dedicated fixed column.
+    # The frame is exactly the column width: no raster image, no per-letter
+    # scaling, no autofit. All glyphs are rendered by the same Arabic font at
+    # the same 30 pt size.
+    frame = scribus.createText(col_x, y, col_w, slot_h, name)
     scribus.setFillColor("None", frame)
     scribus.setLineColor("None", frame)
     scribus.setLineWidth(0.0, frame)
@@ -295,11 +289,6 @@ def _place_tartil_token(col_x, y, col_w, slot_h, token, arabic, name):
 
     if scribus.getTextLength(frame) <= 0:
         raise RuntimeError("Arabic token did not insert: " + name)
-    if scribus.textOverflows(frame):
-        # Scribus 1.6 can report overflow for Arabic glyph metrics even when a
-        # single glyph is visibly inside a generous frame. Do not shrink or stop
-        # the build: keep the fixed 30 pt native glyph and let PDF QC verify it.
-        pass
 
 
 def _draw_group_column_guides(page_num, rr, cc, group_x, group_w, y):
@@ -358,8 +347,8 @@ def add_tartil_grid(page_num, row, arabic):
                 )
 
             # Three equal columns, read from RIGHT to LEFT.
-            col_gap = 0.8
-            usable_w = group_w - 2.0 * col_gap
+            col_gap = 0.0
+            usable_w = group_w
             col_w = usable_w / 3.0
             col_x = [
                 group_x + col_gap,                       # LEFT
@@ -408,8 +397,27 @@ def add_special_page(page_num, spec, content, comp, latin, arabic):
     add_footer_arabic(page_num, arabic)
 
 def validate_document(tartil_pages):
-    # Token frames are validated at creation time. A failure/overflow raises
-    # immediately, so no second-pass single-frame audit is needed here.
+    # Production invariant: Jilid-1 Tartil must be native text only.
+    # Fail the build if any image frame exists anywhere in the document.
+    image_objects = []
+    for page_num in range(1, 41):
+        scribus.gotoPage(page_num)
+        try:
+            for item in scribus.getPageItems():
+                name = item[0]
+                try:
+                    obj_type = scribus.getObjectType(name)
+                except Exception:
+                    obj_type = ""
+                if "Image" in str(obj_type):
+                    image_objects.append("P%02d:%s" % (page_num, name))
+        except Exception:
+            pass
+    if image_objects:
+        raise RuntimeError(
+            "Native-text audit failed; image frames found: " +
+            ", ".join(image_objects[:20])
+        )
     return []
 
 
@@ -426,6 +434,18 @@ def hide_scribus_frame_edges_in_saved_file(path):
 
 
 def main():
+    # Remove obsolete raster-cache files from older experiments. Current build
+    # is native text only.
+    old_cache = os.path.join(REPO_ROOT, "dist", "scribus", "tartil-render-cache")
+    if os.path.isdir(old_cache):
+        try:
+            for filename in os.listdir(old_cache):
+                path = os.path.join(old_cache, filename)
+                if os.path.isfile(path):
+                    os.remove(path)
+        except Exception:
+            pass
+
     tartil, comps, specials, special_content, integration = load_data()
 
     latin = choose_font(FONT_LATIN_CANDIDATES)
