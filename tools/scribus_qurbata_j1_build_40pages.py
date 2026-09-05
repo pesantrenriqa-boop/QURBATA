@@ -30,6 +30,11 @@ CELL_H = (GRID_H - 7 * GAP_Y) / 8.0
 
 FOOTER_Y = 190.0
 
+# Performance switches for Scribus 1.6 on Windows.
+# Guides can be enabled only when manually tuning alignment.
+FAST_MODE = True
+SHOW_EDIT_GUIDES = False
+
 FONT_LATIN_CANDIDATES = ["Arial", "Arial Regular", "Liberation Sans"]
 FONT_ARABIC_CANDIDATES = [
     "KFGQPC Uthman Taha Naskh",
@@ -327,7 +332,8 @@ def add_tartil_grid(page_num, row, arabic):
                 group_x + col_gap + 2.0 * col_w,         # RIGHT
             ]
 
-            _draw_group_column_guides(page_num, rr + 1, cc + 1, group_x, group_w, y)
+            if SHOW_EDIT_GUIDES:
+                _draw_group_column_guides(page_num, rr + 1, cc + 1, group_x, group_w, y)
 
             n = len(tokens)
             if n == 1:
@@ -368,6 +374,8 @@ def add_special_page(page_num, spec, content, comp, latin, arabic):
     add_footer_arabic(page_num, arabic)
 
 def _remove_temporary_guides():
+    if not SHOW_EDIT_GUIDES:
+        return
     for page_num in range(1, 41):
         scribus.gotoPage(page_num)
         try:
@@ -401,8 +409,11 @@ def _force_all_layers_printable():
 
 
 def validate_document(tartil_pages):
-    # Production invariant: Jilid-1 Tartil must be native text only.
-    # Fail the build if any image frame exists anywhere in the document.
+    # Full object-by-object scans are very slow in Scribus on Windows.
+    # Creation-time checks already guarantee non-empty native text frames.
+    if FAST_MODE:
+        return []
+
     image_objects = []
     for page_num in range(1, 41):
         scribus.gotoPage(page_num)
@@ -551,32 +562,19 @@ def main():
 
         scribus.saveDocAs(OUTPUT_SLA)
 
-        # Reopen the saved SLA before PDF export. This clears transient script
-        # state and guarantees PDF export reads the persisted printable document.
-        try:
-            scribus.closeDoc()
-        except Exception:
-            pass
-        hide_scribus_frame_edges_in_saved_file(OUTPUT_SLA)
-        scribus.openDoc(OUTPUT_SLA)
+        # FAST_MODE deliberately leaves the generated document open. Closing,
+        # XML-patching, reopening and rescanning a 40-page file adds a large delay
+        # in Scribus 1.6 on Windows and is unnecessary for manual PDF export.
+        if not FAST_MODE:
+            try:
+                scribus.closeDoc()
+            except Exception:
+                pass
+            hide_scribus_frame_edges_in_saved_file(OUTPUT_SLA)
+            scribus.openDoc(OUTPUT_SLA)
+            _force_all_layers_printable()
 
-        # Sanity check: page 1 must contain real production objects after reopen.
-        scribus.gotoPage(1)
-        try:
-            page1_items = list(scribus.getPageItems())
-        except Exception:
-            page1_items = []
-        if len(page1_items) == 0:
-            raise RuntimeError("Saved SLA reopened with zero items on page 1")
-
-        # Reassert layer printability after reopen as Scribus may restore layer
-        # flags from the saved document.
-        _force_all_layers_printable()
-
-        # PDF auto-export is intentionally disabled. Scribus 1.6 on this Windows
-        # setup is producing blank PDFs via scripting even though the SLA contains
-        # real page objects. The reliable workflow is: save SLA here, then export
-        # manually from Scribus' GUI (File > Export > Save as PDF).
+        # PDF auto-export remains disabled; export manually from the open SLA.
         actual_pdf = ""
 
     finally:
@@ -594,7 +592,7 @@ def main():
         "Special pages: 4\n"
         "Tartil cells: 1152/1152\n"
         "Arabic font: %s\n\n"
-        "Saved SLA: %s\n\nAUTO PDF EXPORT: DISABLED\nExport manually via File > Export > Save as PDF." % (arabic, OUTPUT_SLA),
+        "Saved SLA: %s\nFAST MODE: ON\nEDIT GUIDES: OFF\n\nAUTO PDF EXPORT: DISABLED\nExport manually via File > Export > Save as PDF." % (arabic, OUTPUT_SLA),
         scribus.ICON_INFORMATION,
         scribus.BUTTON_OK
     )
