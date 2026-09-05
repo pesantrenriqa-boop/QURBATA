@@ -1,0 +1,45 @@
+{
+  "book": {
+    "title": "QURBATA JILID 1",
+    "publisher": "Rumah Ilmu Al-Qur’an",
+    "pageSize": "B5",
+    "status": "DRAF TERKENDALI"
+  },
+  "pages": [
+    {
+      "pageId": "QJ1-P001",
+      "pageNumber": "01",
+      "title": "Mari Membaca بَ تَ ثَ",
+      "tartilCompetency": "Mengenali dan membaca huruf ب ت ث berharakat fathah.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P001",
+      "integration": {
+        "tahfidz": {
+          "title": "Talqin Surah An-Nās: 1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "instruction": "Dengarkan dan tirukan"
+        },
+        "arabic": {
+          "title": "Salam dan Jawabannya",
+          "arabic": "السَّلَامُ عَلَيْكُمْ",
+          "instruction": "Dengarkan dan ucapkan"
+        },
+        "nidom": {
+          "title": "Adab Mengucapkan Salam",
+          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
+          "instruction": "Dengarkan dan amalkan"
+        }
+      },
+      "rows": [
+        ["ثَ بَ", "بَ تَ", "ثَ تَ"],
+        ["بَ ثَ", "تَ بَ", "تَ ثَ"],
+        ["ثَ تَ", "بَ بَ", "تَ بَ بَ"],
+        ["بَ تَ بَ", "ثَ بَ ثَ", "تَ ثَ تَ"],
+        ["بَ ثَ ثَ", "ثَ بَ بَ", "تَ بَ تَ"],
+        ["تَ ثَ ثَ", "ثَ تَ بَ", "بَ تَ ثَ"],
+        ["ثَ تَ تَ", "بَ تَ تَ", "تَ بَ ثَ"],
+        ["بَ بَ ثَ", "تَ تَ بَ", "ثَ بَ تَ"]
+      ],
+      "activities": ["Ucapkan salam", "Tirukan ayat", "Praktikkan kepada teman"]
+    }
+  ]
+}

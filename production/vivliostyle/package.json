@@ -1,0 +1,15 @@
+{
+  "name": "qurbata-book-production",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pipeline buku QURBATA berbasis data dan Vivliostyle",
+  "scripts": {
+    "build:html": "node scripts/build-book.mjs",
+    "build:pdf": "npm run build:html && vivliostyle build dist/index.html -o dist/QURBATA-JILID-1-PILOT.pdf",
+    "build": "npm run build:pdf"
+  },
+  "dependencies": {
+    "@vivliostyle/cli": "^10.1.0",
+    "qrcode": "^1.5.4"
+  }
+}
