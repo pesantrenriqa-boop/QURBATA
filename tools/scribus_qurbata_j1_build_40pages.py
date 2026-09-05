@@ -197,15 +197,21 @@ def add_integration_strip(page_num, integration, latin, arabic):
         lf = text_frame(bx, y, col_w, 3.4, label, latin, 5.4,
                         "P%02d_IntLabel%d" % (page_num, idx + 1))
         scribus.setTextColor("Blue", lf)
+        # Integration text may contain Latin metadata/labels on special pages.
+        # Use Arabic font only when the content actually contains Arabic script;
+        # otherwise use the Latin font to avoid missing-glyph preflight errors.
+        has_arabic = any("\u0600" <= ch <= "\u06ff" for ch in primary)
+        primary_font = arabic if has_arabic else latin
         pf = text_frame(bx + 0.8, y + 3.2, col_w - 1.6, 8.0, primary,
-                        arabic, 8.5,
+                        primary_font, 8.5,
                         "P%02d_IntPrimary%d" % (page_num, idx + 1))
-        try:
-            scribus.selectText(0, scribus.getTextLength(pf), pf)
-            scribus.setTextDirection(scribus.DIRECTION_RTL, pf)
-            scribus.setTextAlignment(scribus.ALIGN_CENTERED, pf)
-        except Exception:
-            pass
+        if has_arabic:
+            try:
+                scribus.selectText(0, scribus.getTextLength(pf), pf)
+                scribus.setTextDirection(scribus.DIRECTION_RTL, pf)
+                scribus.setTextAlignment(scribus.ALIGN_CENTERED, pf)
+            except Exception:
+                pass
         fit_text(pf, 8.5, 6.0, 0.5)
 
 
