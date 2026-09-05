@@ -10,8 +10,8 @@ COMP_TSV = os.path.join(REPO_ROOT, "dist", "indesign-template-data", "QURBATA-J1
 SPECIAL_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SPECIAL-PAGES.csv")
 SPECIAL_CONTENT_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-SPECIAL-CONTENT.csv")
 INTEGRATION_CSV = os.path.join(REPO_ROOT, "data", "indesign", "QURBATA-J1-40P-INTEGRATION-MASTER.csv")
-OUTPUT_SLA = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-NATIVE-COLUMNS-40P.sla")
-OUTPUT_PDF = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-NATIVE-COLUMNS-40P-PREVIEW.pdf")
+OUTPUT_SLA = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-NATIVE-COLUMNS-40P-V2.sla")
+OUTPUT_PDF = os.path.join(REPO_ROOT, "dist", "scribus", "QURBATA-JILID-1-NATIVE-COLUMNS-40P-PREVIEW-V2.pdf")
 
 PAGE_W = 148.0
 PAGE_H = 210.0
@@ -383,6 +383,23 @@ def _remove_temporary_guides():
                     pass
 
 
+def _force_all_layers_printable():
+    # After temporary guide objects are deleted, every remaining layer is
+    # production content. Force all layers visible + printable before saving.
+    try:
+        layers = scribus.getLayers()
+    except Exception as e:
+        raise RuntimeError("Could not read Scribus layers: " + str(e))
+
+    for item in layers:
+        name = item[0] if isinstance(item, tuple) else item
+        try:
+            scribus.setLayerVisible(name, True)
+            scribus.setLayerPrintable(name, True)
+        except Exception as e:
+            raise RuntimeError("Could not mark layer printable: %s (%s)" % (name, str(e)))
+
+
 def validate_document(tartil_pages):
     # Production invariant: Jilid-1 Tartil must be native text only.
     # Fail the build if any image frame exists anywhere in the document.
@@ -512,6 +529,7 @@ def main():
         # Guides are editing aids only. Remove them before validation,
         # saving and PDF export so output cannot be blank because of layer rules.
         _remove_temporary_guides()
+        _force_all_layers_printable()
 
         bad = validate_document(tartil_page_numbers)
         if bad:
@@ -540,6 +558,10 @@ def main():
             page1_items = []
         if len(page1_items) == 0:
             raise RuntimeError("Saved SLA reopened with zero items on page 1")
+
+        # Reassert layer printability after reopen as Scribus may restore layer
+        # flags from the saved document.
+        _force_all_layers_printable()
 
         # Export from reopened SLA. Embed/subset fonts so the PDF cannot appear
         # blank because the viewer cannot resolve KFGQPC/Arabic fonts.
