@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 import csv
+import datetime
 import scribus
 
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -419,6 +420,29 @@ def hide_scribus_frame_edges_in_saved_file(path):
         pass
 
 
+def _export_pdf_with_fallback(preferred_path):
+    # Windows PDF viewers often lock an open PDF, causing Scribus to fail with
+    # "Cannot write the File". Try the preferred stable path first; if locked,
+    # write a timestamped preview instead and return the actual path.
+    candidates = [preferred_path]
+    stamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+    root, ext = os.path.splitext(preferred_path)
+    candidates.append(root + "-" + stamp + ext)
+
+    last_error = None
+    for path in candidates:
+        try:
+            pdf = scribus.PDFfile()
+            pdf.file = path
+            pdf.pages = list(range(1, 41))
+            pdf.save()
+            return path
+        except Exception as e:
+            last_error = e
+
+    raise RuntimeError("PDF preview export failed: " + str(last_error))
+
+
 def main():
     # Remove obsolete raster-cache files from older experiments. Current build
     # is native text only.
@@ -499,13 +523,7 @@ def main():
 
         # Export a PDF preview. Scribus "Show Frames" edges are editor-only and
         # never print; this preview gives a clean production view for QC.
-        try:
-            pdf = scribus.PDFfile()
-            pdf.file = OUTPUT_PDF
-            pdf.pages = list(range(1, 41))
-            pdf.save()
-        except Exception as e:
-            raise RuntimeError("PDF preview export failed: " + str(e))
+        actual_pdf = _export_pdf_with_fallback(OUTPUT_PDF)
 
         # Hide Scribus editing-frame edges in the saved document. These are not
         # printable borders; turning them off keeps the Tartil grid visually clean.
@@ -531,7 +549,7 @@ def main():
         "Special pages: 4\n"
         "Tartil cells: 1152/1152\n"
         "Arabic font: %s\n\n"
-        "Saved SLA: %s\nPDF preview: %s" % (arabic, OUTPUT_SLA, OUTPUT_PDF),
+        "Saved SLA: %s\nPDF preview: %s" % (arabic, OUTPUT_SLA, actual_pdf),
         scribus.ICON_INFORMATION,
         scribus.BUTTON_OK
     )
