@@ -7,14 +7,14 @@
 | Halaman | Hadith-ID | Tema | Potongan NIDHOM kandidat | Makna peserta | Sumber / Status |
 |---|---|---|---|---|---|
 | P011 | HAD-000011 | Tidak mengganggu | الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ | Muslim yang baik ialah yang kaum Muslimin selamat dari lisan dan tangannya. | Sahih al-Bukhari 10; Sahih Muslim 40 — sahih |
-| P012 | HAD-000012 | Kendali marah | لَا تَغْضَبْ | Jangan marah. | Sahih al-Bukhari 6116 — sahih |
+| P012 | HAD-000012 | Kendali marah | لَا تَغْضَبْ، وَلَكَ الْجَنَّةُ | Jangan marah, dan bagimu surga. | Riwayat Abu al-Darda’; al-Tabarani, al-Mu‘jam al-Awsat 2353 / Musnad al-Shamiyyin 21; al-Albani: sahih li-ghayrihi (Sahih al-Targhib 2749), juga dinilai sahih dalam Sahih al-Jami‘ 7374 |
 | P013 | HAD-000013 | Kebaikan bagi sesama | لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ | Belum sempurna iman seseorang hingga ia mencintai untuk saudaranya apa yang ia cintai untuk dirinya. | Sahih al-Bukhari 13; Sahih Muslim 45 — sahih |
 | P014 | HAD-000014 | Membantu sesama | وَاللَّهُ فِي عَوْنِ الْعَبْدِ مَا كَانَ الْعَبْدُ فِي عَوْنِ أَخِيهِ | Allah menolong seorang hamba selama ia menolong saudaranya. | Sahih Muslim 2699a — sahih |
 | P015 | HAD-000015 | Belajar Al-Qur'an | خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ | Sebaik-baik kalian adalah yang belajar Al-Qur'an dan mengajarkannya. | Sahih al-Bukhari 5027 — sahih |
 
 ## Catatan Editorial
 - P011 memakai bagian pertama hadis Bukhari 10; potongan berdiri utuh sebagai pesan menjaga lisan dan tangan.
-- P012 sengaja sangat pendek karena lafaz Nabi ﷺ memang berulang: «لَا تَغْضَبْ». Ini sangat cocok untuk NIDHOM awal.
+- P012 atas keputusan akademik menggunakan riwayat Abu al-Darda’: «لَا تَغْضَبْ، وَلَكَ الْجَنَّةُ». Ini **bukan** lafaz Bukhari 6116; sumber dan derajatnya dicatat terpisah. Al-Albani menilainya sahih li-ghayrihi dalam Sahih al-Targhib 2749 dan sahih dalam Sahih al-Jami‘ 7374.
 - P013 terjemah peserta memakai “belum sempurna iman” agar tidak disalahpahami sebagai pengafiran; penjelasan syarah menyatakan penafian di sini terkait kesempurnaan iman.
 - P014 adalah potongan literal dari hadis panjang Muslim 2699a dan berdiri utuh secara makna.
 - P015 dapat digunakan utuh karena hadisnya sendiri ringkas.
