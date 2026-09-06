@@ -15,9 +15,9 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P001",
       "integration": {
         "tahfidz": {
-          "title": "Sima’ Al-Fatihah: 1",
-          "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
-          "instruction": "Dengarkan ayat 1 dengan adab"
+          "title": "An-Nas Ayat 1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "instruction": "Hafalkan ayat 1."
         },
         "arabic": {
           "title": "Salam Kelas",
@@ -74,7 +74,7 @@
       ],
       "activities": [
         "Bahasa Arab QURBATA: Jawab salam guru.",
-        "Simak Al-Fatihah ayat 1",
+        "Tahfidz QURBATA: Hafalkan ayat 1.",
         "Akhlak QURBATA: Dengarkan dan tirukan matan."
       ]
     },
@@ -87,9 +87,9 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P002",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Awal Ayat 1",
-          "arabic": "بِسْمِ اللَّهِ",
-          "instruction": "Dengarkan dan tirukan"
+          "title": "An-Nas Ayat 2",
+          "arabic": "مَلِكِ النَّاسِ",
+          "instruction": "Hafalkan ayat 2; murojaah ayat 1."
         },
         "arabic": {
           "title": "Lihat",
@@ -146,7 +146,7 @@
       ],
       "activities": [
         "Bahasa Arab QURBATA: Lihat huruf/halaman yang ditunjuk.",
-        "Tirukan بِسْمِ اللَّهِ",
+        "Tahfidz QURBATA: Hafalkan ayat 2; murojaah ayat 1.",
         "Akhlak QURBATA: Ingat kembali makna kasih sayang."
       ]
     },
@@ -159,9 +159,9 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P003",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Lanjutan Ayat 1",
-          "arabic": "الرَّحْمَٰنِ الرَّحِيمِ",
-          "instruction": "Tirukan lalu sambungkan"
+          "title": "An-Nas Ayat 3",
+          "arabic": "إِلَٰهِ النَّاسِ",
+          "instruction": "Hafalkan ayat 3; murojaah ayat 1–2."
         },
         "arabic": {
           "title": "Dengarkan",
@@ -218,7 +218,7 @@
       ],
       "activities": [
         "Bahasa Arab QURBATA: Dengarkan model bacaan.",
-        "Sambungkan الرَّحْمَٰنِ الرَّحِيمِ",
+        "Tahfidz QURBATA: Hafalkan ayat 3; murojaah ayat 1–2.",
         "Akhlak QURBATA: Praktikkan satu tindakan kasih sayang."
       ]
     },
@@ -231,9 +231,9 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P004",
       "integration": {
         "tahfidz": {
-          "title": "Ayat 1 Utuh",
-          "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
-          "instruction": "Sambungkan ayat 1"
+          "title": "An-Nas Ayat 4",
+          "arabic": "مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ",
+          "instruction": "Hafalkan ayat 4; murojaah ayat 1–3."
         },
         "arabic": {
           "title": "Tirukan",
@@ -290,7 +290,7 @@
       ],
       "activities": [
         "Bahasa Arab QURBATA: Tirukan bacaan guru.",
-        "Baca ayat 1 utuh",
+        "Tahfidz QURBATA: Hafalkan ayat 4; murojaah ayat 1–3.",
         "Akhlak QURBATA: Dengarkan dan tirukan matan."
       ]
     },
@@ -303,9 +303,9 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P005",
       "integration": {
         "tahfidz": {
-          "title": "Recall Ayat 1",
-          "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
-          "instruction": "Ucapkan tanpa model awal"
+          "title": "An-Nas Ayat 5",
+          "arabic": "الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ",
+          "instruction": "Hafalkan ayat 5; murojaah ayat 1–4."
         },
         "arabic": {
           "title": "Bacalah",
@@ -362,7 +362,7 @@
       ],
       "activities": [
         "Bahasa Arab QURBATA: Baca bagian yang ditunjuk.",
-        "Recall ayat 1",
+        "Tahfidz QURBATA: Hafalkan ayat 5; murojaah ayat 1–4.",
         "Akhlak QURBATA: Sebutkan contoh ucapan baik."
       ]
     },
@@ -375,9 +375,9 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P006",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Awal Ayat 2",
-          "arabic": "الْحَمْدُ لِلَّهِ",
-          "instruction": "Dengarkan dan tirukan"
+          "title": "An-Nas Ayat 6",
+          "arabic": "مِنَ الْجِنَّةِ وَالنَّاسِ",
+          "instruction": "Hafalkan ayat 6; sambungkan An-Nas 1–6."
         },
         "arabic": {
           "title": "Ulangi",
@@ -434,7 +434,7 @@
       ],
       "activities": [
         "Bahasa Arab QURBATA: Ulangi bacaan saat diminta.",
-        "Tirukan awal ayat 2",
+        "Tahfidz QURBATA: Hafalkan ayat 6; sambungkan An-Nas 1–6.",
         "Akhlak QURBATA: Biasakan satu ucapan baik di kelas."
       ]
     },
@@ -447,9 +447,9 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P007",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Lanjutan Ayat 2",
-          "arabic": "رَبِّ الْعَالَمِينَ",
-          "instruction": "Tirukan lalu sambungkan"
+          "title": "Al-Falaq Ayat 1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
+          "instruction": "Hafalkan ayat 1; murojaah An-Nas."
         },
         "arabic": {
           "title": "Sekali Lagi",
@@ -506,7 +506,7 @@
       ],
       "activities": [
         "Bahasa Arab QURBATA: Ulangi sekali lagi.",
-        "Tirukan lanjutan ayat 2",
+        "Tahfidz QURBATA: Hafalkan ayat 1; murojaah An-Nas.",
         "Akhlak QURBATA: Dengarkan dan tirukan matan."
       ]
     },
@@ -519,9 +519,9 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P008",
       "integration": {
         "tahfidz": {
-          "title": "Ayat 2 Utuh",
-          "arabic": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
-          "instruction": "Sambungkan ayat 2"
+          "title": "Al-Falaq Ayat 2",
+          "arabic": "مِنْ شَرِّ مَا خَلَقَ",
+          "instruction": "Hafalkan ayat 2; murojaah ayat 1."
         },
         "arabic": {
           "title": "Ya / Tidak",
@@ -578,7 +578,7 @@
       ],
       "activities": [
         "Bahasa Arab QURBATA: Respons singkat sesuai pertanyaan guru.",
-        "Sambungkan ayat 2",
+        "Tahfidz QURBATA: Hafalkan ayat 2; murojaah ayat 1.",
         "Akhlak QURBATA: Kenali perilaku lembut."
       ]
     },
@@ -591,9 +591,9 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P009",
       "integration": {
         "tahfidz": {
-          "title": "Integrasi Ayat 1–2",
-          "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ۝ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
-          "instruction": "Sambungkan ayat 1–2"
+          "title": "Al-Falaq Ayat 3",
+          "arabic": "وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+          "instruction": "Hafalkan ayat 3; murojaah ayat 1–2."
         },
         "arabic": {
           "title": "Penguatan",
@@ -650,7 +650,7 @@
       ],
       "activities": [
         "Bahasa Arab QURBATA: Kenali ungkapan penguatan guru.",
-        "Sambungkan ayat 1–2",
+        "Tahfidz QURBATA: Hafalkan ayat 3; murojaah ayat 1–2.",
         "Akhlak QURBATA: Praktikkan kelembutan saat belajar."
       ]
     },
@@ -663,9 +663,9 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P010",
       "integration": {
         "tahfidz": {
-          "title": "Recall Ayat 1–2",
-          "arabic": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
-          "instruction": "Mulai dari ayat yang ditunjuk guru"
+          "title": "Al-Falaq Ayat 4",
+          "arabic": "وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
+          "instruction": "Hafalkan ayat 4; murojaah ayat 1–3."
         },
         "arabic": {
           "title": "Checkpoint Bi’ah",
@@ -722,7 +722,7 @@
       ],
       "activities": [
         "Bahasa Arab QURBATA: Gunakan instruksi yang sudah dikenal tanpa ekspresi baru.",
-        "Recall ayat 1–2",
+        "Tahfidz QURBATA: Hafalkan ayat 4; murojaah ayat 1–3.",
         "Akhlak QURBATA: Luruskan niat sebelum belajar."
       ]
     },
@@ -735,9 +735,9 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P011",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Awal Ayat 3",
-          "arabic": "الرَّحْمَٰنِ",
-          "instruction": "Dengarkan dan tirukan"
+          "title": "Al-Falaq Ayat 5",
+          "arabic": "وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+          "instruction": "Hafalkan ayat 5; sambungkan Al-Falaq 1–5."
         },
         "arabic": {
           "title": "Bukalah",
@@ -794,7 +794,7 @@
       ],
       "activities": [
         "Bahasa Arab QURBATA: Buka buku/halaman saat diminta.",
-        "Tirukan الرَّحْمَٰنِ",
+        "Tahfidz QURBATA: Hafalkan ayat 5; sambungkan Al-Falaq 1–5.",
         "Akhlak QURBATA: Dengarkan pesan tentang konsistensi."
       ]
     },
@@ -807,9 +807,9 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P012",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Lanjutan Ayat 3",
-          "arabic": "الرَّحِيمِ",
-          "instruction": "Tirukan lalu sambungkan"
+          "title": "Al-Ikhlas Ayat 1",
+          "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+          "instruction": "Hafalkan ayat 1; murojaah Al-Falaq."
         },
         "arabic": {
           "title": "Tutuplah",
@@ -866,7 +866,7 @@
       ],
       "activities": [
         "Bahasa Arab QURBATA: Tutup buku/halaman saat diminta.",
-        "Tirukan الرَّحِيمِ",
+        "Tahfidz QURBATA: Hafalkan ayat 1; murojaah Al-Falaq.",
         "Akhlak QURBATA: Pilih satu kebiasaan baik kecil."
       ]
     },
@@ -879,9 +879,9 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P013",
       "integration": {
         "tahfidz": {
-          "title": "Ayat 3 Utuh",
-          "arabic": "الرَّحْمَٰنِ الرَّحِيمِ",
-          "instruction": "Sambungkan ayat 3"
+          "title": "Al-Ikhlas Ayat 2",
+          "arabic": "اللَّهُ الصَّمَدُ",
+          "instruction": "Hafalkan ayat 2; murojaah ayat 1."
         },
         "arabic": {
           "title": "Buku / Halaman",
@@ -896,49 +896,49 @@
       },
       "rows": [
         [
-          "هَ وَ",
-          "يَ هَ",
+          "ھَ وَ",
+          "يَ ھَ",
           "وَ يَ"
         ],
         [
-          "هَ يَ",
-          "وَ هَ",
+          "ھَ يَ",
+          "وَ ھَ",
           "يَ وَ"
         ],
         [
-          "هَ وَ",
-          "يَ هَ",
-          "هَ دَ يَ"
+          "ھَ وَ",
+          "يَ ھَ",
+          "ھَ دَ يَ"
         ],
         [
           "وَ عَ دَ",
           "وَ جَ دَ",
-          "وَ هَ بَ"
+          "وَ ھَ بَ"
         ],
         [
           "يَ سَ رَ",
-          "هَ لَ كَ",
-          "هَ جَ رَ"
+          "ھَ لَ كَ",
+          "ھَ جَ رَ"
         ],
         [
           "وَ قَ عَ",
-          "هَ صَ يَ",
-          "وَ طَ هَ"
+          "ھَ صَ يَ",
+          "وَ طَ ھَ"
         ],
         [
           "يَ ظَ وَ",
-          "هَ غَ يَ",
-          "وَ فَ هَ"
+          "ھَ غَ يَ",
+          "وَ فَ ھَ"
         ],
         [
           "يَ قَ وَ",
-          "هَ كَ يَ",
+          "ھَ كَ يَ",
           "مَ نَ لَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Kenali benda dalam aktivitas belajar.",
-        "Sambungkan ayat 3",
+        "Tahfidz QURBATA: Hafalkan ayat 2; murojaah ayat 1.",
         "Akhlak QURBATA: Latih kendali marah."
       ]
     },
@@ -951,9 +951,9 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P014",
       "integration": {
         "tahfidz": {
-          "title": "Integrasi Ayat 1–3",
-          "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ۝ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۝ الرَّحْمَٰنِ الرَّحِيمِ",
-          "instruction": "Sambungkan ayat 1–3"
+          "title": "Al-Ikhlas Ayat 3",
+          "arabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+          "instruction": "Hafalkan ayat 3; murojaah ayat 1–2."
         },
         "arabic": {
           "title": "Pena / Pelajaran",
@@ -1003,14 +1003,14 @@
           "نَ صَ رَ"
         ],
         [
-          "هَ دَ يَ",
+          "ھَ دَ يَ",
           "وَ عَ دَ",
           "يَ سَ رَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Kenali benda/konteks belajar.",
-        "Sambungkan ayat 1–3",
+        "Tahfidz QURBATA: Hafalkan ayat 3; murojaah ayat 1–2.",
         "Akhlak QURBATA: Bantu satu kebutuhan teman."
       ]
     },
@@ -1023,9 +1023,9 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P015",
       "integration": {
         "tahfidz": {
-          "title": "Recall Ayat 1–3",
-          "arabic": "الرَّحْمَٰنِ الرَّحِيمِ",
-          "instruction": "Ulangi bagian yang paling lemah"
+          "title": "Al-Ikhlas Ayat 4",
+          "arabic": "وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
+          "instruction": "Hafalkan ayat 4; sambungkan Al-Ikhlas 1–4."
         },
         "arabic": {
           "title": "Guru / Peserta",
@@ -1067,11 +1067,11 @@
         [
           "نَ فَ عَ",
           "وَ جَ دَ",
-          "وَ هَ بَ"
+          "وَ ھَ بَ"
         ],
         [
           "وَ قَ عَ",
-          "هَ جَ رَ",
+          "ھَ جَ رَ",
           "طَ غَ شَ"
         ],
         [
@@ -1082,7 +1082,7 @@
       ],
       "activities": [
         "Bahasa Arab QURBATA: Kenali peran dalam kelas QURBATA.",
-        "Recall ayat 1–3",
+        "Tahfidz QURBATA: Hafalkan ayat 4; sambungkan Al-Ikhlas 1–4.",
         "Akhlak QURBATA: Ulangi dan biasakan sikap membantu."
       ]
     }
