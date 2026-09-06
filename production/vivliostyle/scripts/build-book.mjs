@@ -84,6 +84,11 @@ const pages = await Promise.all(data.pages.map(async (page) => {
       <div class="activity-content">
         <h2>AKTIVITAS BI’AH QURBATA</h2>
         <div class="activity-grid">${activities}</div>
+        <div class="learning-record" aria-label="Catatan hasil belajar">
+          <div><span>Tanggal</span><i></i></div>
+          <div><span>Nilai</span><i></i></div>
+          <div><span>TTD Guru</span><i></i></div>
+        </div>
       </div>
       <a class="qr-link" href="${escapeHtml(page.riqaOsUrl)}" aria-label="Buka kompetensi ${escapeHtml(page.pageId)} di RIQA OS">
         <img src="${qr}" alt="QR ${escapeHtml(page.pageId)}">
