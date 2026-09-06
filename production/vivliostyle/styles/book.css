@@ -39,8 +39,8 @@ body {
   padding: 6mm 7mm 5mm;
   background: white;
   display: grid;
-  grid-template-rows: 8mm 22mm 35mm 1fr 24mm 13mm;
-  gap: 2.2mm;
+  grid-template-rows: 8mm 16mm 25mm 1fr 22mm 11mm;
+  gap: 1.8mm;
   overflow: hidden;
   break-after: page;
   page-break-after: always;
@@ -86,8 +86,8 @@ body {
   text-align: center;
 }
 
-.lesson-heading h1 { margin: 0; font-size: 22pt; color: var(--blue-900); line-height: 1.15; }
-.lesson-heading p { margin: 1.6mm 0 0; font-size: 8.7pt; }
+.lesson-heading h1 { margin: 0; font-size: 18pt; color: var(--blue-900); line-height: 1.1; }
+.lesson-heading p { margin: .8mm 0 0; font-size: 7.3pt; }
 
 .integration-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2mm; }
 
@@ -96,24 +96,24 @@ body {
   border-radius: 2.5mm;
   overflow: hidden;
   display: grid;
-  grid-template-rows: 7mm 6mm 1fr 6mm;
+  grid-template-rows: 5.5mm 4.5mm 1fr 4.8mm;
   text-align: center;
   background: #fff;
 }
 
 .integration-card h2 {
   margin: 0;
-  padding: 1.7mm 1mm;
+  padding: 1.2mm 1mm;
   color: white;
-  font-size: 8pt;
+  font-size: 7pt;
   letter-spacing: .02em;
   background: linear-gradient(90deg, var(--blue-700), #1096c4);
 }
 
 .integration-card--bahasa h2 { background: linear-gradient(90deg, var(--teal-700), #14aaa7); }
-.integration-title { margin: 1.2mm 1mm 0; font-size: 6.8pt; font-weight: 700; }
-.integration-arabic { margin: 0; align-self: center; font-size: 13pt; line-height: 1.2; color: #111; }
-.integration-instruction { margin: 0 1.5mm 1.2mm; padding: 1mm; border-radius: 2mm; background: var(--blue-100); font-size: 6.5pt; }
+.integration-title { margin: .7mm 1mm 0; font-size: 5.8pt; font-weight: 700; }
+.integration-arabic { margin: 0; align-self: center; font-size: 11pt; line-height: 1.1; color: #111; }
+.integration-instruction { margin: 0 1.5mm .7mm; padding: .6mm; border-radius: 2mm; background: var(--blue-100); font-size: 5.5pt; }
 .integration-card--bahasa .integration-instruction { background: var(--teal-100); }
 
 .practice-panel {
@@ -122,7 +122,7 @@ body {
   border-radius: 3mm;
   overflow: hidden;
   display: grid;
-  grid-template-rows: 9mm 1fr;
+  grid-template-rows: 8mm 1fr;
 }
 
 .practice-panel > header {
@@ -134,8 +134,8 @@ body {
   background: linear-gradient(90deg, var(--blue-900), var(--blue-700));
 }
 
-.practice-panel h2 { margin: 0; font-size: 11pt; }
-.practice-panel header p { margin: 0; font-size: 7.5pt; }
+.practice-panel h2 { margin: 0; font-size: 10pt; }
+.practice-panel header p { margin: 0; font-size: 7pt; }
 .practice-grid { display: grid; grid-template-rows: repeat(8, 1fr); min-height: 0; }
 .practice-row { display: grid; grid-template-columns: repeat(3, 1fr); min-height: 0; border-top: .25mm solid var(--line); }
 .practice-row:first-child { border-top: 0; }
@@ -146,7 +146,7 @@ body {
   justify-content: center;
   border-left: .25mm solid var(--line);
   color: #111;
-  font-size: 23pt;
+  font-size: 26pt;
   line-height: 1;
   white-space: nowrap;
 }
