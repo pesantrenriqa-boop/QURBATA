@@ -276,3 +276,10 @@ body {
 .front-steps li>b{font-size:10pt;color:var(--teal-700)}
 .front-steps span{display:block}.front-steps strong{display:block;font-size:8pt;color:var(--blue-900);margin-bottom:.7mm}
 .front-steps small{display:block;font-size:7.2pt;line-height:1.35;color:#334}
+
+/* milestone review — P020/P040: display only, no explanatory lesson */
+.review-strip{margin:1.8mm 0 2mm;padding:1.8mm 2.4mm;border:.22mm solid #9fb7bd;border-radius:1.8mm;display:grid;grid-template-columns:28mm 1fr 25mm;align-items:center;gap:2mm}
+.review-strip header h2{font-size:7.4pt;margin:0;color:var(--blue-900)}.review-strip header p{font-size:5.7pt;margin:.5mm 0 0}
+.review-letters{display:flex;flex-wrap:wrap;gap:.6mm 1.4mm;justify-content:center;font-size:11.5pt;line-height:1.15}
+.review-letters span{min-width:3.4mm;text-align:center}
+.review-harakat{display:flex;justify-content:flex-end;gap:2mm;align-items:center}.review-harakat div{display:flex;align-items:center;gap:1.5mm}.review-harakat b{font-size:6.2pt}.review-harakat .arabic{font-size:18pt;line-height:1}
