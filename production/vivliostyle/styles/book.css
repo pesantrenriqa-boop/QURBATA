@@ -160,7 +160,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 12mm;
+  bottom: 16mm;
   height: 25mm;
   border: .4mm solid #8fdad6;
   border-radius: 3mm;
@@ -203,6 +203,6 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 3mm;
+  bottom: 7mm;
   height: 7mm;
 }
