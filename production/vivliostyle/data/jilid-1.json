@@ -884,9 +884,9 @@
           "instruction": "Hafalkan ayat 2; murojaah ayat 1."
         },
         "arabic": {
-          "title": "Buku / Halaman",
-          "arabic": "كِتَابٌ — صَفْحَةٌ",
-          "instruction": "Kenali benda dalam aktivitas belajar."
+          "title": "Mana?",
+          "arabic": "أَيْنَ؟",
+          "instruction": "Jawab dengan menunjuk bagian/halaman yang dimaksud."
         },
         "akhlak": {
           "title": "Kendali Diri",
@@ -937,7 +937,7 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Kenali benda dalam aktivitas belajar.",
+        "Bahasa Arab QURBATA: Jawab dengan menunjuk bagian/halaman yang dimaksud.",
         "Tahfidz QURBATA: Hafalkan ayat 2; murojaah ayat 1.",
         "Akhlak QURBATA: Latih kendali marah."
       ]
@@ -956,9 +956,9 @@
           "instruction": "Hafalkan ayat 3; murojaah ayat 1–2."
         },
         "arabic": {
-          "title": "Pena / Pelajaran",
-          "arabic": "قَلَمٌ — دَرْسٌ",
-          "instruction": "Kenali benda/konteks belajar."
+          "title": "Di Sini",
+          "arabic": "هُنَا",
+          "instruction": "Gunakan saat menunjukkan tempat atau bagian bacaan."
         },
         "akhlak": {
           "title": "Membantu 1",
@@ -1009,7 +1009,7 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Kenali benda/konteks belajar.",
+        "Bahasa Arab QURBATA: Gunakan saat menunjukkan tempat atau bagian bacaan.",
         "Tahfidz QURBATA: Hafalkan ayat 3; murojaah ayat 1–2.",
         "Akhlak QURBATA: Bantu satu kebutuhan teman."
       ]
@@ -1028,9 +1028,9 @@
           "instruction": "Hafalkan ayat 4; sambungkan Al-Ikhlas 1–4."
         },
         "arabic": {
-          "title": "Guru / Peserta",
-          "arabic": "مُعَلِّمٌ — مُعَلِّمَةٌ — طَالِبٌ — طَالِبَةٌ",
-          "instruction": "Kenali peran dalam kelas QURBATA."
+          "title": "Sudah Siap?",
+          "arabic": "هَلْ أَنْتَ مُسْتَعِدٌّ؟ — هَلْ أَنْتِ مُسْتَعِدَّةٌ؟",
+          "instruction": "Jawab singkat sebelum memulai atau mengulang bacaan."
         },
         "akhlak": {
           "title": "Membantu 2",
@@ -1081,7 +1081,7 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Kenali peran dalam kelas QURBATA.",
+        "Bahasa Arab QURBATA: Jawab singkat sebelum memulai atau mengulang bacaan.",
         "Tahfidz QURBATA: Hafalkan ayat 4; sambungkan Al-Ikhlas 1–4.",
         "Akhlak QURBATA: Ulangi dan biasakan sikap membantu."
       ]
