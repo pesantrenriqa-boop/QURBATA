@@ -1089,9 +1089,9 @@
     {
       "pageId": "QJ1-P016",
       "pageNumber": "16",
-      "title": "Penguatan Fathah 1",
-      "titleArabic": "مُرَاجَعَةُ الْفَتْحَةِ",
-      "tartilCompetency": "Penguatan kumulatif huruf berfathah; baca tepat tanpa mengejar kecepatan.",
+      "title": "Kasrah 1",
+      "titleArabic": "الْكَسْرَةُ ١",
+      "tartilCompetency": "Mengenali dan membaca huruf berharakat kasrah secara bertahap.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P016",
       "integration": {
         "tahfidz": {
@@ -1112,44 +1112,44 @@
       },
       "rows": [
         [
-          "عَ بَ دَ",
-          "شَ كَ رَ",
-          "صَ بَ رَ"
+          "بِ تِ ثِ",
+          "جِ حِ خِ",
+          "دِ ذِ رِ"
         ],
         [
-          "فَ تَ حَ",
-          "نَ صَ رَ",
-          "غَ فَ رَ"
+          "زِ سِ شِ",
+          "صِ ضِ طِ",
+          "ظِ عِ غِ"
         ],
         [
-          "قَ رَ أَ",
-          "كَ تَ بَ",
-          "ذَ كَ رَ"
+          "فِ قِ كِ",
+          "لِ مِ نِ",
+          "هِ وِ يِ"
         ],
         [
-          "سَ جَ دَ",
-          "رَ حَ مَ",
-          "عَ مَ لَ"
+          "بِ جِ دِ",
+          "تِ حِ ذِ",
+          "ثِ خِ رِ"
         ],
         [
-          "دَ خَ لَ",
-          "جَ عَ لَ",
-          "أَ كَ لَ"
+          "زِ صِ فِ",
+          "سِ ضِ قِ",
+          "شِ طِ كِ"
         ],
         [
-          "سَ مَ عَ",
-          "حَ مَ دَ",
-          "رَ حَ مَ"
+          "ظِ لِ وِ",
+          "عِ مِ يِ",
+          "غِ نِ هِ"
         ],
         [
-          "ذَ كَ رَ",
-          "سَ جَ دَ",
-          "شَ كَ رَ"
+          "بِ تِ جِ",
+          "ثِ حِ دِ",
+          "خِ ذِ رِ"
         ],
         [
-          "صَ بَ رَ",
-          "عَ بَ دَ",
-          "عَ مَ لَ"
+          "زِ سِ صِ",
+          "شِ ضِ طِ",
+          "ظِ عِ فِ"
         ]
       ],
       "activities": [
@@ -1161,9 +1161,9 @@
     {
       "pageId": "QJ1-P017",
       "pageNumber": "17",
-      "title": "Penguatan Fathah 2",
-      "titleArabic": "تَثْبِيتُ الْفَتْحَةِ",
-      "tartilCompetency": "Penguatan pasangan dan rangkaian huruf berfathah secara acak.",
+      "title": "Kasrah 2",
+      "titleArabic": "الْكَسْرَةُ ٢",
+      "tartilCompetency": "Mengenali dan membaca huruf berharakat kasrah secara bertahap.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P017",
       "integration": {
         "tahfidz": {
@@ -1184,44 +1184,44 @@
       },
       "rows": [
         [
-          "جَ مَ عَ",
-          "مَ نَ عَ",
-          "نَ فَ عَ"
+          "ظِ عِ غِ",
+          "فِ قِ كِ",
+          "لِ مِ نِ"
         ],
         [
-          "وَ جَ دَ",
-          "وَ قَ عَ",
-          "هَ جَ رَ"
+          "هِ وِ يِ",
+          "بِ جِ دِ",
+          "تِ حِ ذِ"
         ],
         [
-          "وَ عَ دَ",
-          "هَ دَ يَ",
-          "خَ لَ قَ"
+          "ثِ خِ رِ",
+          "زِ صِ فِ",
+          "سِ ضِ قِ"
         ],
         [
-          "رَ زَ قَ",
-          "بَ لَ غَ",
-          "سَ أَ لَ"
+          "شِ طِ كِ",
+          "ظِ لِ وِ",
+          "عِ مِ يِ"
         ],
         [
-          "حَ سَ بَ",
-          "نَ زَ لَ",
-          "رَ جَ عَ"
+          "غِ نِ هِ",
+          "بِ تِ جِ",
+          "ثِ حِ دِ"
         ],
         [
-          "حَ فَ ظَ",
-          "حَ مَ دَ",
-          "رَ حَ مَ"
+          "خِ ذِ رِ",
+          "زِ سِ صِ",
+          "شِ ضِ طِ"
         ],
         [
-          "ذَ كَ رَ",
-          "سَ جَ دَ",
-          "شَ كَ رَ"
+          "ظِ عِ فِ",
+          "بِ تِ ثِ",
+          "جِ حِ خِ"
         ],
         [
-          "صَ بَ رَ",
-          "عَ بَ دَ",
-          "عَ مَ لَ"
+          "دِ ذِ رِ",
+          "زِ سِ شِ",
+          "صِ ضِ طِ"
         ]
       ],
       "activities": [
@@ -1233,9 +1233,9 @@
     {
       "pageId": "QJ1-P018",
       "pageNumber": "18",
-      "title": "Penguatan Fathah 3",
-      "titleArabic": "إِتْقَانُ الْفَتْحَةِ",
-      "tartilCompetency": "Otomatisasi bacaan fathah dalam rangkaian dua dan tiga huruf.",
+      "title": "Kasrah 3",
+      "titleArabic": "الْكَسْرَةُ ٣",
+      "tartilCompetency": "Mengenali dan membaca huruf berharakat kasrah secara bertahap.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P018",
       "integration": {
         "tahfidz": {
@@ -1256,44 +1256,44 @@
       },
       "rows": [
         [
-          "عَ بَ دَ",
-          "شَ كَ رَ",
-          "صَ بَ رَ"
+          "تِ حِ ذِ",
+          "ثِ خِ رِ",
+          "زِ صِ فِ"
         ],
         [
-          "فَ تَ حَ",
-          "نَ صَ رَ",
-          "غَ فَ رَ"
+          "سِ ضِ قِ",
+          "شِ طِ كِ",
+          "ظِ لِ وِ"
         ],
         [
-          "قَ رَ أَ",
-          "كَ تَ بَ",
-          "ذَ كَ رَ"
+          "عِ مِ يِ",
+          "غِ نِ هِ",
+          "بِ تِ جِ"
         ],
         [
-          "سَ جَ دَ",
-          "رَ حَ مَ",
-          "عَ مَ لَ"
+          "ثِ حِ دِ",
+          "خِ ذِ رِ",
+          "زِ سِ صِ"
         ],
         [
-          "دَ خَ لَ",
-          "جَ عَ لَ",
-          "أَ كَ لَ"
+          "شِ ضِ طِ",
+          "ظِ عِ فِ",
+          "بِ تِ ثِ"
         ],
         [
-          "سَ مَ عَ",
-          "حَ مَ دَ",
-          "رَ حَ مَ"
+          "جِ حِ خِ",
+          "دِ ذِ رِ",
+          "زِ سِ شِ"
         ],
         [
-          "ذَ كَ رَ",
-          "سَ جَ دَ",
-          "شَ كَ رَ"
+          "صِ ضِ طِ",
+          "ظِ عِ غِ",
+          "فِ قِ كِ"
         ],
         [
-          "صَ بَ رَ",
-          "عَ بَ دَ",
-          "عَ مَ لَ"
+          "لِ مِ نِ",
+          "هِ وِ يِ",
+          "بِ جِ دِ"
         ]
       ],
       "activities": [
@@ -1305,9 +1305,9 @@
     {
       "pageId": "QJ1-P019",
       "pageNumber": "19",
-      "title": "Latihan Kumulatif 1",
-      "titleArabic": "تَدْرِيبٌ تَرَاكُمِيٌّ",
-      "tartilCompetency": "Latihan kumulatif seluruh kompetensi fathah yang telah dipelajari.",
+      "title": "Latihan Kasrah",
+      "titleArabic": "تَدْرِيبُ الْكَسْرَةِ",
+      "tartilCompetency": "Membaca kelompok tiga huruf berkasrah secara tepat dan otomatis.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P019",
       "integration": {
         "tahfidz": {
@@ -1328,44 +1328,44 @@
       },
       "rows": [
         [
-          "جَ مَ عَ",
-          "مَ نَ عَ",
-          "نَ فَ عَ"
+          "ظِ لِ وِ",
+          "عِ مِ يِ",
+          "غِ نِ هِ"
         ],
         [
-          "وَ جَ دَ",
-          "وَ قَ عَ",
-          "هَ جَ رَ"
+          "بِ تِ جِ",
+          "ثِ حِ دِ",
+          "خِ ذِ رِ"
         ],
         [
-          "وَ عَ دَ",
-          "هَ دَ يَ",
-          "خَ لَ قَ"
+          "زِ سِ صِ",
+          "شِ ضِ طِ",
+          "ظِ عِ فِ"
         ],
         [
-          "رَ زَ قَ",
-          "بَ لَ غَ",
-          "سَ أَ لَ"
+          "بِ تِ ثِ",
+          "جِ حِ خِ",
+          "دِ ذِ رِ"
         ],
         [
-          "حَ سَ بَ",
-          "نَ زَ لَ",
-          "رَ جَ عَ"
+          "زِ سِ شِ",
+          "صِ ضِ طِ",
+          "ظِ عِ غِ"
         ],
         [
-          "حَ فَ ظَ",
-          "حَ مَ دَ",
-          "رَ حَ مَ"
+          "فِ قِ كِ",
+          "لِ مِ نِ",
+          "هِ وِ يِ"
         ],
         [
-          "ذَ كَ رَ",
-          "سَ جَ دَ",
-          "شَ كَ رَ"
+          "بِ جِ دِ",
+          "تِ حِ ذِ",
+          "ثِ خِ رِ"
         ],
         [
-          "صَ بَ رَ",
-          "عَ بَ دَ",
-          "عَ مَ لَ"
+          "زِ صِ فِ",
+          "سِ ضِ قِ",
+          "شِ طِ كِ"
         ]
       ],
       "activities": [
@@ -1377,9 +1377,9 @@
     {
       "pageId": "QJ1-P020",
       "pageNumber": "20",
-      "title": "Latihan Kumulatif 2",
-      "titleArabic": "مُرَاجَعَةٌ تَرَاكُمِيَّةٌ",
-      "tartilCompetency": "Verifikasi kestabilan seluruh kompetensi fathah sebelum tahap berikutnya.",
+      "title": "Penguatan Kasrah",
+      "titleArabic": "تَثْبِيتُ الْكَسْرَةِ",
+      "tartilCompetency": "Membaca kelompok tiga huruf berkasrah secara tepat dan otomatis.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P020",
       "integration": {
         "tahfidz": {
@@ -1400,44 +1400,44 @@
       },
       "rows": [
         [
-          "عَ بَ دَ",
-          "شَ كَ رَ",
-          "صَ بَ رَ"
+          "خِ ذِ رِ",
+          "زِ سِ صِ",
+          "شِ ضِ طِ"
         ],
         [
-          "فَ تَ حَ",
-          "نَ صَ رَ",
-          "غَ فَ رَ"
+          "ظِ عِ فِ",
+          "بِ تِ ثِ",
+          "جِ حِ خِ"
         ],
         [
-          "قَ رَ أَ",
-          "كَ تَ بَ",
-          "ذَ كَ رَ"
+          "دِ ذِ رِ",
+          "زِ سِ شِ",
+          "صِ ضِ طِ"
         ],
         [
-          "سَ جَ دَ",
-          "رَ حَ مَ",
-          "عَ مَ لَ"
+          "ظِ عِ غِ",
+          "فِ قِ كِ",
+          "لِ مِ نِ"
         ],
         [
-          "دَ خَ لَ",
-          "جَ عَ لَ",
-          "أَ كَ لَ"
+          "هِ وِ يِ",
+          "بِ جِ دِ",
+          "تِ حِ ذِ"
         ],
         [
-          "سَ مَ عَ",
-          "حَ مَ دَ",
-          "رَ حَ مَ"
+          "ثِ خِ رِ",
+          "زِ صِ فِ",
+          "سِ ضِ قِ"
         ],
         [
-          "ذَ كَ رَ",
-          "سَ جَ دَ",
-          "شَ كَ رَ"
+          "شِ طِ كِ",
+          "ظِ لِ وِ",
+          "عِ مِ يِ"
         ],
         [
-          "صَ بَ رَ",
-          "عَ بَ دَ",
-          "عَ مَ لَ"
+          "غِ نِ هِ",
+          "بِ تِ جِ",
+          "ثِ حِ دِ"
         ]
       ],
       "activities": [
@@ -1483,6 +1483,10 @@
           {
             "name": "Fathah",
             "mark": "َ"
+          },
+          {
+            "name": "Kasrah",
+            "mark": "ِ"
           }
         ]
       }
