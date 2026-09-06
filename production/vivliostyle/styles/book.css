@@ -39,7 +39,7 @@ body {
   padding: 6mm 7mm 5mm;
   background: white;
   display: grid;
-  grid-template-rows: 8mm 16mm 25mm 1fr 18mm 10mm;
+  grid-template-rows: 8mm 16mm 25mm 1fr 25mm 8mm;
   gap: 1.8mm;
   overflow: hidden;
   break-after: page;
@@ -160,20 +160,22 @@ body {
   border-radius: 3mm;
   background: linear-gradient(90deg, #eefcfb, var(--teal-100));
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 22mm 68mm;
-  gap: 2mm;
-  padding: 1.5mm 2.5mm;
+  grid-template-columns: minmax(0, 1fr) 27mm 32mm 18mm 31mm;
+  gap: 0;
+  padding: 1.6mm 2.5mm;
+  min-height: 0;
 }
-.activity-content { min-width: 0; }
+.activity-content { min-width: 0; padding-right: 2.5mm; overflow: hidden; }
 .activity-content h2 { margin: 0 0 .7mm; color: var(--teal-700); font-size: 7.5pt; line-height: 1; }
-.activity-grid { display: grid; grid-template-columns: 1fr; gap: .55mm; align-content: center; }
-.activity { display: grid; grid-template-columns: 4.5mm 1fr; align-items: center; gap: 1mm; min-width: 0; font-size: 5.2pt; line-height: 1.15; white-space: normal; }
+.activity-grid { display: grid; grid-template-columns: 1fr; gap: .45mm; align-content: center; }
+.activity { display: grid; grid-template-columns: 4.5mm 1fr; align-items: center; gap: 1mm; min-width: 0; font-size: 5pt; line-height: 1.12; white-space: normal; }
 .activity span { width: 4.5mm; height: 4.5mm; border-radius: 50%; display: grid; place-items: center; color: white; background: var(--teal-700); font-size: 5.5pt; font-weight: 800; }
-.learning-record { display: grid; grid-template-columns: 27mm 14mm 27mm; gap: 2mm; align-items: stretch; }
-.learning-record div { border-left: .25mm solid #8fdad6; padding-left: 2mm; display: grid; grid-template-rows: auto 1fr; color: #42616f; font-size: 5.5pt; font-weight: 700; }
-.learning-record i { display: block; align-self: end; height: 7mm; border: .25mm solid #55aaa9; border-radius: 1.5mm; }
-.qr-link { border-left: .25mm solid #8fdad6; border-right: .25mm solid #8fdad6; color: var(--blue-900); text-decoration: none; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 4.8pt; font-weight: 700; text-align: center; }
-.qr-link img { width: 13mm; height: 13mm; image-rendering: crisp-edges; }
+.qr-link { border-left: .25mm solid #8fdad6; border-right: .25mm solid #8fdad6; color: var(--blue-900); text-decoration: none; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 4.6pt; line-height: 1.05; font-weight: 700; text-align: center; padding: 0 1mm; }
+.qr-link img { width: 14mm; height: 14mm; image-rendering: crisp-edges; }
+.learning-record { display: contents; }
+.learning-record div { min-width: 0; border-right: .25mm solid #8fdad6; padding: 1mm 2mm; display: grid; grid-template-rows: auto 1fr; color: #42616f; font-size: 5.3pt; font-weight: 700; }
+.learning-record div:last-child { border-right: 0; }
+.learning-record i { display: block; align-self: end; width: 100%; height: 11mm; border: .25mm solid #55aaa9; border-radius: 2mm; background: rgba(255,255,255,.55); }
 
 .page-footer { position: relative; text-align: center; color: var(--blue-900); }
 .page-footer > div { position: absolute; left: 0; right: 0; top: 0; display: flex; justify-content: space-between; font-size: 5pt; color: #5f7482; }
