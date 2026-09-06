@@ -224,9 +224,12 @@ const pages = await Promise.all(data.pages.map(async (page) => {
   if (items.length !== 24) {
     throw new Error(`${page.pageId}: halaman wajib mempunyai tepat 24 tangga.`);
   }
+  const pageNo = Number(page.pageNumber);
   const firstEightValid = items.slice(0, 8).every((item) => arabicLetters(item).length === 2);
   const lastSixteenValid = items.slice(8).every((item) => arabicLetters(item).length === 3);
-  if (!firstEightValid || !lastSixteenValid) {
+  const allThreeValid = items.every((item) => arabicLetters(item).length === 3);
+  const patternValid = pageNo >= 14 ? allThreeValid : (firstEightValid && lastSixteenValid);
+  if (!patternValid) {
     throw new Error(`${page.pageId}: pola tangga tidak sesuai fase halaman (P014+ wajib seluruhnya tiga huruf).`);
   }
   if (!/^https:\/\/www\.rumahilmualquran\.com\/q\/[A-Z0-9-]+$/.test(page.riqaOsUrl)) {
