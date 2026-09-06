@@ -157,6 +157,11 @@ body {
 .practice-cell:first-child { border-left: 0; }
 
 .activity-strip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 9mm;
+  height: 25mm;
   border: .4mm solid #8fdad6;
   border-radius: 3mm;
   background: linear-gradient(90deg, #eefcfb, var(--teal-100));
@@ -192,4 +197,12 @@ body {
 @media print {
   body { background: white; }
   .book-page { margin: 0; box-shadow: none; }
+}
+
+.page-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 7mm;
 }
