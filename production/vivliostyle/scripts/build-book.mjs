@@ -114,8 +114,8 @@ const html = template
 await fs.mkdir(path.join(root, "dist"), { recursive: true });
 await fs.mkdir(path.join(root, "dist/fonts"), { recursive: true });
 await fs.copyFile(
-  path.join(root, "node_modules/@fontsource/amiri-quran/files/amiri-quran-arabic-400-normal.woff2"),
-  path.join(root, "dist/fonts/AmiriQuran-Arabic.woff2")
+  path.join(root, "fonts/KFGQPC-Uthman-Taha-Naskh.woff2"),
+  path.join(root, "dist/fonts/KFGQPC-Uthman-Taha-Naskh.woff2")
 );
 await fs.writeFile(path.join(root, "dist/index.html"), html);
 console.log(`Dibangun: ${data.pages.length} halaman -> dist/index.html`);
