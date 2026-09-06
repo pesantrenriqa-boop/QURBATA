@@ -31,24 +31,28 @@ const card = (label, value) => `
   </section>`;
 
 const frontMatterData = [
-  { title: "SAMBUTAN", arabic: "لِكُلِّ شَيْءٍ زَكَاةٌ، وَزَكَاةُ الْعِلْمِ التَّعْلِيمُ", source: "Pesan KH. Basori Alwi", body: "Setiap sesuatu memiliki zakat, dan zakatnya ilmu adalah mengajarkannya." },
-  { title: "PENDAHULUAN", arabic: "إِنَّا أَنْزَلْنَاهُ قُرْآنًا عَرَبِيًّا لَعَلَّكُمْ تَعْقِلُونَ", source: "QS. Yusuf [12]: 2", body: "Bahasa Arab QURBATA dihidupkan sebagai bi’ah ‘Arabiyah dalam proses pembelajaran Al-Qur’an." },
-  { title: "RUH QURBATA", arabic: "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ", source: "HR. al-Bukhari", body: "Belajar, mengamalkan, lalu mengajarkan Al-Qur’an menjadi ruh pendidikan QURBATA." },
-  { title: "TAHFIDZ", arabic: "وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ", source: "QS. Al-Qamar [54]: 17", body: "Hafalan dibangun ayat demi ayat dengan murojaah dan bimbingan guru." },
-  { title: "AKHLAK", arabic: "وَإِنَّكَ لَعَلَى خُلُقٍ عَظِيمٍ", source: "QS. Al-Qalam [68]: 4", body: "Nilai dipahami dan dibiasakan dalam setiap pertemuan." }
+  { title: "SAMBUTAN", arabic: "لِكُلِّ شَيْءٍ زَكَاةٌ، وَزَكَاةُ الْعِلْمِ التَّعْلِيمُ", source: "Pesan KH. Basori Alwi", body: "Setiap sesuatu memiliki zakat, dan zakatnya ilmu adalah mengajarkannya. Pesan ini menjadi salah satu ruh pendidikan QURBATA: ilmu dipelajari dengan benar, diamalkan dalam kehidupan, lalu diteruskan melalui pengajaran." },
+  { title: "PENDAHULUAN", arabic: "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ", source: "HR. al-Bukhari", body: "QURBATA adalah metode integratif pembelajaran Al-Qur’an yang menyatukan Qur’an/Tartil, Bahasa Arab, Tahfidz, dan Akhlak dalam satu ekosistem. Al-Qur’an tetap menjadi pusat; tiga unsur lainnya menguatkan proses belajar tanpa mengambil alih tangga kompetensi Tartil." },
+  { title: "MENGENAL QURBATA", arabic: "إِنَّا أَنْزَلْنَاهُ قُرْآنًا عَرَبِيًّا لَعَلَّكُمْ تَعْقِلُونَ", source: "QS. Yusuf [12]: 2", body: "Bahasa Arab QURBATA berfungsi sebagai bi’ah ‘Arabiyah dalam pembelajaran Al-Qur’an, berbeda dari jalur Bahasa Arab RIQA berbasis kompetensi Bahasa Arab Qur’ani. Tahfidz berjalan ayat demi ayat dengan murojaah. Akhlak terintegrasi melalui pesan hadis/nasihat yang dipahami dan dibiasakan selama beberapa pertemuan." },
+  { title: "PRINSIP PEMBELAJARAN", arabic: "وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ", source: "QS. Al-Qamar [54]: 17", body: "Pembelajaran disusun bertahap, terukur, kaya pengulangan, dan tidak melompati kompetensi. Guru menggunakan talqin, talaqqi, koreksi langsung, latihan, murojaah, pembiasaan Bahasa Arab, Tahfidz, dan Akhlak." },
+  { title: "CARA MENGGUNAKAN BUKU", arabic: "تَعَلَّمْ — اِعْمَلْ — عَلِّمْ", source: "Ruh QURBATA", body: "Setiap halaman memiliki target Tartil sebagai kompetensi inti, target Tahfidz, ungkapan Bahasa Arab QURBATA, Akhlak, Aktivitas Bi’ah, serta pencatatan tanggal, nilai, tanda tangan, dan penghubung RIQA OS. Peserta mengikuti contoh guru dan tidak mendahului materi; pendamping mengulang materi yang telah dipelajari." },
+  { title: "PANDUAN PENGAJARAN", arabic: "وَإِنَّكَ لَعَلَى خُلُقٍ عَظِيمٍ", source: "QS. Al-Qalam [68]: 4", body: "Alur pengajaran: pembukaan dan kesiapan belajar; talqin; talaqqi; latihan dan murojaah; Tahfidz; penggunaan ungkapan Bahasa Arab secara fungsional; pembiasaan Akhlak; lalu verifikasi hasil. Ketepatan bacaan didahulukan daripada kecepatan." },
+  { title: "GAMBARAN KOMPETENSI JILID 1", arabic: "قُرْآنًا عَرَبِيًّا", source: "Empat unsur dalam satu ekosistem", body: "Jilid 1 membangun fondasi Tartil secara bertahap. Tahfidz dimulai dari Surah An-Nas dan bergerak ayat demi ayat sesuai peta yang ditetapkan. Bahasa Arab QURBATA berkembang sebagai bahasa kelas. Akhlak menggunakan satu matan/pesan selama beberapa pertemuan agar berpindah dari mendengar menuju memahami dan membiasakan." },
+  { title: "DAFTAR ISI", arabic: "تَعَلَّمْ — اِعْمَلْ — عَلِّمْ", source: "QURBATA Jilid 1", body: "Sambutan · Pendahuluan · Mengenal QURBATA · Prinsip Pembelajaran · Cara Menggunakan Buku · Panduan Pengajaran · Gambaran Kompetensi Jilid 1 · Materi Jilid 1." }
 ];
 
 const frontMatter = frontMatterData.map((item, index) => `
   <article class="book-page front-matter-page">
-    <header class="page-header"><div class="header-line"></div><div class="book-name"><span class="qurbata-brand-text"><strong>QURBATA</strong><small>Qur’an · Bahasa Arab · Tahfidz · Akhlak</small></span></div><div class="page-number">FM${String(index + 1).padStart(2, "0")}</div></header>
-    <section class="front-matter-content">
+    <header class="page-header"><div class="header-line"></div><div class="book-name"><span class="qurbata-brand-text"><strong>QURBATA</strong><small>Qur’an · Bahasa Arab · Tahfidz · Akhlak</small></span></div><div class="page-number">${String(index + 1).padStart(2, "0")}</div></header>
+    <section class="front-matter-content official-front">
       <h1>${escapeHtml(item.title)}</h1>
-      <div class="front-dalil"><p class="arabic front-arabic" lang="ar" dir="rtl">${escapeHtml(item.arabic)}</p><p class="front-source">${escapeHtml(item.source)}</p></div>
+      <div class="official-epigraph"><p class="arabic front-arabic" lang="ar" dir="rtl">${escapeHtml(item.arabic)}</p><p class="front-source">${escapeHtml(item.source)}</p></div>
       <p class="front-body">${escapeHtml(item.body)}</p>
       ${index === 0 ? `<div class="front-motto"><p class="arabic" lang="ar" dir="rtl">تَعَلَّمْ — اِعْمَلْ — عَلِّمْ</p><small>Belajarlah · Amalkan · Ajarkan</small></div>` : ""}
     </section>
     <footer class="page-footer"><p class="arabic" lang="ar" dir="rtl">تَعَلَّمْ — اِعْمَلْ — عَلِّمْ</p><small>Belajarlah • Amalkan • Ajarkan</small></footer>
   </article>`).join("\n");
+
 const pages = await Promise.all(data.pages.map(async (page) => {
   if (!page.title || !page.titleArabic || arabicLetters(page.titleArabic).length === 0) {
     throw new Error(`${page.pageId}: judul Indonesia dan judul Arab wajib diisi terpisah.`);
