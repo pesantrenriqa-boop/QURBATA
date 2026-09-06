@@ -267,6 +267,8 @@ const pages = await Promise.all(data.pages.map(async (page) => {
       ${card("AKHLAK", page.integration.akhlak)}
     </div>
 
+    ${page.review ? `<section class="review-strip"><header><h2>${escapeHtml(page.review.title)}</h2><p>${escapeHtml(page.review.instruction)}</p></header><div class="review-letters arabic" lang="ar" dir="rtl">${page.review.letters.map(x=>`<span>${escapeHtml(x)}</span>`).join("")}</div><div class="review-harakat">${page.review.harakat.map(x=>`<div><b>${escapeHtml(x.name)}</b><span class="arabic" lang="ar">${escapeHtml(x.mark)}</span></div>`).join("")}</div></section>` : ""}
+
     <section class="practice-panel">
       <header><h2>LATIHAN TARTIL</h2><p>Bacalah dengan tartil dan jelas.</p></header>
       <div class="practice-grid">${rows}</div>
