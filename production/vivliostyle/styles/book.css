@@ -147,9 +147,10 @@ body {
   justify-content: center;
   border-left: .25mm solid var(--line);
   color: #111;
-  font-size: 34pt;
-  line-height: .95;
-  word-spacing: .24em;
+  font-size: 41pt;
+  line-height: .9;
+  word-spacing: .28em;
+  padding-block: .4mm;
   white-space: nowrap;
 }
 .practice-cell:first-child { border-left: 0; }
