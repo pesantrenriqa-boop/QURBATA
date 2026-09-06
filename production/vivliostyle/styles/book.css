@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "QURBATA Quran";
-  src: url("fonts/AmiriQuran-Arabic.woff2") format("woff2");
+  font-family: "QURBATA KFGQPC Uthmani";
+  src: url("fonts/KFGQPC-Uthman-Taha-Naskh.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: block;
@@ -49,7 +49,7 @@ body {
 .book-page:last-child { break-after: auto; page-break-after: auto; }
 
 .arabic {
-  font-family: "QURBATA Quran", "Noto Naskh Arabic", "Traditional Arabic", "DejaVu Sans", serif;
+  font-family: "QURBATA KFGQPC Uthmani", "Traditional Arabic", serif;
   direction: rtl;
   unicode-bidi: isolate;
   font-variant-ligatures: common-ligatures contextual;
