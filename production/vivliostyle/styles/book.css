@@ -147,8 +147,9 @@ body {
   justify-content: center;
   border-left: .25mm solid var(--line);
   color: #111;
-  font-size: 26pt;
-  line-height: 1;
+  font-size: 34pt;
+  line-height: .95;
+  word-spacing: .24em;
   white-space: nowrap;
 }
 .practice-cell:first-child { border-left: 0; }
