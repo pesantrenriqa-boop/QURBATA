@@ -263,3 +263,16 @@ body {
 .official-front .front-motto { margin:4mm 0 0; padding:2.5mm 0; background:transparent; border-top:.2mm solid var(--teal-700); border-bottom:.2mm solid var(--teal-700); }
 .official-front .front-motto .arabic { font-size:13pt; line-height:1.45; }
 .front-matter-page { grid-template-rows:7mm minmax(0,1fr) 7mm; }
+
+/* v0.9 practical front matter: book-style lists/tables, compact and printable */
+.front-list{list-style:none;padding:0;margin:5mm 0 0;display:grid;gap:2.2mm}
+.front-list li{display:grid;grid-template-columns:31mm 1fr;gap:3mm;padding:2.6mm 0;border-bottom:.2mm solid #cbd8dd;font-size:8.5pt;line-height:1.45}
+.front-list strong{color:var(--blue-900)}
+.front-table{width:100%;border-collapse:collapse;margin:5mm 0 0;font-size:7.7pt;line-height:1.35}
+.front-table th,.front-table td{border:.2mm solid #aebfc6;padding:2.2mm 2.4mm;vertical-align:top;text-align:left}
+.front-table th{background:var(--blue-100);color:var(--blue-900);font-weight:800}
+.front-steps{list-style:none;padding:0;margin:5mm 0 0;display:grid;grid-template-columns:1fr 1fr;gap:2.5mm}
+.front-steps li{display:grid;grid-template-columns:9mm 1fr;gap:2mm;border:.2mm solid #c3d1d6;padding:2.5mm;border-radius:1.5mm}
+.front-steps li>b{font-size:10pt;color:var(--teal-700)}
+.front-steps span{display:block}.front-steps strong{display:block;font-size:8pt;color:var(--blue-900);margin-bottom:.7mm}
+.front-steps small{display:block;font-size:7.2pt;line-height:1.35;color:#334}
