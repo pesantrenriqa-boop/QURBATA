@@ -1,0 +1,48 @@
+name: QURBATA Book PDF
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "production/vivliostyle/**"
+      - ".github/workflows/qurbata-book-pdf.yml"
+  pull_request:
+    paths:
+      - "production/vivliostyle/**"
+      - ".github/workflows/qurbata-book-pdf.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: production/vivliostyle
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: production/vivliostyle/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build B5 PDF
+        run: npm run build:pdf
+
+      - name: Upload print proof
+        uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-JILID-1-PILOT
+          path: production/vivliostyle/dist/QURBATA-JILID-1-PILOT.pdf
+          if-no-files-found: error
+          retention-days: 30
