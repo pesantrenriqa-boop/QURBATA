@@ -1,6 +1,6 @@
 # DEC-NID-QJ1-002 — Verifikasi Matan NIDHOM P006–P010
 
-**Status:** VERIFIED-TEXT — READY FOR ACADEMIC RATIFICATION  
+**Status:** APPROVED-NIDHOM-QJ1 — RATIFIED  
 **Tanggal:** 2026-09-06  
 **Cakupan:** HAD-000006–HAD-000010 / QJ1-P006–P010
 
@@ -29,6 +29,6 @@ HAD-000006 sebelumnya menunjuk Muslim 2593 untuk tema kelembutan. Untuk potongan
 - [x] potongan bermakna utuh.
 - [x] terjemah peserta.
 - [x] aktivitas Bi’ah diturunkan dari hadis.
-- [ ] ratifikasi akademik pemilik QURBATA.
+- [x] ratifikasi akademik pemilik QURBATA (disetujui 2026-09-06).
 
-Setelah ratifikasi, HAD-000006–HAD-000010 dapat dinaikkan menjadi APPROVED-NIDHOM-QJ1.
+**Keputusan:** HAD-000006–HAD-000010 disahkan untuk NIDHOM QURBATA Jilid 1 P006–P010. Potongan matan, locator, makna peserta, dan aktivitas Bi’ah pada dokumen ini menjadi baseline resmi.
