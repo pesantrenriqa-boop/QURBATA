@@ -1085,6 +1085,726 @@
         "Tahfidz QURBATA: Hafalkan ayat 4; sambungkan Al-Ikhlas 1–4.",
         "Akhlak QURBATA: Ulangi matan dan biasakan saling membantu."
       ]
+    },
+    {
+      "pageId": "QJ1-P016",
+      "pageNumber": "16",
+      "title": "Penguatan Fathah 1",
+      "titleArabic": "مُرَاجَعَةُ الْفَتْحَةِ",
+      "tartilCompetency": "Penguatan kumulatif huruf berfathah; baca tepat tanpa mengejar kecepatan.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P016",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq Ayat 1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
+          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Baca",
+          "arabic": "اِقْرَأْ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Adab Belajar",
+          "arabic": "أَكْرِمُوا الْقُرْآنَ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "بَ تَ",
+          "ثَ جَ",
+          "حَ خَ"
+        ],
+        [
+          "دَ ذَ",
+          "رَ زَ",
+          "سَ شَ"
+        ],
+        [
+          "صَ ضَ",
+          "طَ ظَ",
+          "عَ غَ"
+        ],
+        [
+          "فَ قَ",
+          "كَ لَ",
+          "مَ نَ"
+        ],
+        [
+          "وَ ھَ",
+          "ءَ يَ",
+          "قَ رَ أَ"
+        ],
+        [
+          "كَ تَ بَ",
+          "ذَ كَ رَ",
+          "سَ جَ دَ"
+        ],
+        [
+          "عَ بَ دَ",
+          "شَ كَ رَ",
+          "صَ بَ رَ"
+        ],
+        [
+          "فَ تَ حَ",
+          "نَ صَ رَ",
+          "غَ فَ رَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Baca” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
+        "Akhlak QURBATA: Praktikkan adab belajar selama pembelajaran."
+      ]
+    },
+    {
+      "pageId": "QJ1-P017",
+      "pageNumber": "17",
+      "title": "Penguatan Fathah 2",
+      "titleArabic": "تَثْبِيتُ الْفَتْحَةِ",
+      "tartilCompetency": "Penguatan pasangan dan rangkaian huruf berfathah secara acak.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P017",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq Ayat 2",
+          "arabic": "مِنْ شَرِّ مَا خَلَقَ",
+          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Baca Ini",
+          "arabic": "اِقْرَأْ هٰذَا",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Mendengar",
+          "arabic": "وَاسْتَمِعُوا لَهُ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "تَ بَ",
+          "جَ ثَ",
+          "خَ حَ"
+        ],
+        [
+          "زَ رَ",
+          "شَ سَ",
+          "ضَ صَ"
+        ],
+        [
+          "ظَ طَ",
+          "غَ عَ",
+          "قَ فَ"
+        ],
+        [
+          "لَ كَ",
+          "نَ مَ",
+          "ھَ وَ"
+        ],
+        [
+          "يَ ءَ",
+          "رَ حَ مَ",
+          "عَ مَ لَ"
+        ],
+        [
+          "دَ خَ لَ",
+          "جَ عَ لَ",
+          "أَ كَ لَ"
+        ],
+        [
+          "سَ مَ عَ",
+          "جَ مَ عَ",
+          "مَ نَ عَ"
+        ],
+        [
+          "وَ جَ دَ",
+          "وَ قَ عَ",
+          "ھَ جَ رَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Baca Ini” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
+        "Akhlak QURBATA: Praktikkan mendengar selama pembelajaran."
+      ]
+    },
+    {
+      "pageId": "QJ1-P018",
+      "pageNumber": "18",
+      "title": "Penguatan Fathah 3",
+      "titleArabic": "إِتْقَانُ الْفَتْحَةِ",
+      "tartilCompetency": "Otomatisasi bacaan fathah dalam rangkaian dua dan tiga huruf.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P018",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq Ayat 3",
+          "arabic": "وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Ulangi",
+          "arabic": "أَعِدْ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Sabar",
+          "arabic": "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "بَ تَ",
+          "ثَ جَ",
+          "حَ خَ"
+        ],
+        [
+          "دَ ذَ",
+          "رَ زَ",
+          "سَ شَ"
+        ],
+        [
+          "صَ ضَ",
+          "طَ ظَ",
+          "عَ غَ"
+        ],
+        [
+          "فَ قَ",
+          "كَ لَ",
+          "مَ نَ"
+        ],
+        [
+          "وَ ھَ",
+          "ءَ يَ",
+          "قَ رَ أَ"
+        ],
+        [
+          "كَ تَ بَ",
+          "ذَ كَ رَ",
+          "سَ جَ دَ"
+        ],
+        [
+          "عَ بَ دَ",
+          "شَ كَ رَ",
+          "صَ بَ رَ"
+        ],
+        [
+          "فَ تَ حَ",
+          "نَ صَ رَ",
+          "غَ فَ رَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Ulangi” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
+        "Akhlak QURBATA: Praktikkan sabar selama pembelajaran."
+      ]
+    },
+    {
+      "pageId": "QJ1-P019",
+      "pageNumber": "19",
+      "title": "Latihan Kumulatif 1",
+      "titleArabic": "تَدْرِيبٌ تَرَاكُمِيٌّ",
+      "tartilCompetency": "Latihan kumulatif seluruh kompetensi fathah yang telah dipelajari.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P019",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq Ayat 4",
+          "arabic": "وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
+          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Bagus",
+          "arabic": "جَيِّدٌ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Bersungguh-sungguh",
+          "arabic": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "تَ بَ",
+          "جَ ثَ",
+          "خَ حَ"
+        ],
+        [
+          "زَ رَ",
+          "شَ سَ",
+          "ضَ صَ"
+        ],
+        [
+          "ظَ طَ",
+          "غَ عَ",
+          "قَ فَ"
+        ],
+        [
+          "لَ كَ",
+          "نَ مَ",
+          "ھَ وَ"
+        ],
+        [
+          "يَ ءَ",
+          "رَ حَ مَ",
+          "عَ مَ لَ"
+        ],
+        [
+          "دَ خَ لَ",
+          "جَ عَ لَ",
+          "أَ كَ لَ"
+        ],
+        [
+          "سَ مَ عَ",
+          "جَ مَ عَ",
+          "مَ نَ عَ"
+        ],
+        [
+          "وَ جَ دَ",
+          "وَ قَ عَ",
+          "ھَ جَ رَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Bagus” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
+        "Akhlak QURBATA: Praktikkan bersungguh-sungguh selama pembelajaran."
+      ]
+    },
+    {
+      "pageId": "QJ1-P020",
+      "pageNumber": "20",
+      "title": "Latihan Kumulatif 2",
+      "titleArabic": "مُرَاجَعَةٌ تَرَاكُمِيَّةٌ",
+      "tartilCompetency": "Verifikasi kestabilan seluruh kompetensi fathah sebelum tahap berikutnya.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P020",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq Ayat 5",
+          "arabic": "وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Sekali Lagi",
+          "arabic": "مَرَّةً أُخْرَى",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Menjaga Ilmu",
+          "arabic": "تَعَلَّمْ وَاعْمَلْ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "بَ تَ",
+          "ثَ جَ",
+          "حَ خَ"
+        ],
+        [
+          "دَ ذَ",
+          "رَ زَ",
+          "سَ شَ"
+        ],
+        [
+          "صَ ضَ",
+          "طَ ظَ",
+          "عَ غَ"
+        ],
+        [
+          "فَ قَ",
+          "كَ لَ",
+          "مَ نَ"
+        ],
+        [
+          "وَ ھَ",
+          "ءَ يَ",
+          "قَ رَ أَ"
+        ],
+        [
+          "كَ تَ بَ",
+          "ذَ كَ رَ",
+          "سَ جَ دَ"
+        ],
+        [
+          "عَ بَ دَ",
+          "شَ كَ رَ",
+          "صَ بَ رَ"
+        ],
+        [
+          "فَ تَ حَ",
+          "نَ صَ رَ",
+          "غَ فَ رَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Sekali Lagi” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
+        "Akhlak QURBATA: Praktikkan menjaga ilmu selama pembelajaran."
+      ]
+    },
+    {
+      "pageId": "QJ1-P021",
+      "pageNumber": "21",
+      "title": "Baca Ini",
+      "titleArabic": "اِقْرَأْ هٰذَا",
+      "tartilCompetency": "Penguatan fathah melalui latihan kumulatif dan instruksi sederhana.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P021",
+      "integration": {
+        "tahfidz": {
+          "title": "Murojaah An-Nas",
+          "arabic": "مُرَاجَعَةٌ",
+          "instruction": "Murojaah hafalan yang telah dipelajari."
+        },
+        "arabic": {
+          "title": "Tutup Al-Qur’an",
+          "arabic": "أَغْلِقِ الْقُرْآنَ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Mengulang Kebaikan",
+          "arabic": "فَذَكِّرْ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "تَ بَ",
+          "جَ ثَ",
+          "خَ حَ"
+        ],
+        [
+          "زَ رَ",
+          "شَ سَ",
+          "ضَ صَ"
+        ],
+        [
+          "ظَ طَ",
+          "غَ عَ",
+          "قَ فَ"
+        ],
+        [
+          "لَ كَ",
+          "نَ مَ",
+          "ھَ وَ"
+        ],
+        [
+          "يَ ءَ",
+          "رَ حَ مَ",
+          "عَ مَ لَ"
+        ],
+        [
+          "دَ خَ لَ",
+          "جَ عَ لَ",
+          "أَ كَ لَ"
+        ],
+        [
+          "سَ مَ عَ",
+          "جَ مَ عَ",
+          "مَ نَ عَ"
+        ],
+        [
+          "وَ جَ دَ",
+          "وَ قَ عَ",
+          "ھَ جَ رَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Tutup Al-Qur’an” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
+        "Akhlak QURBATA: Praktikkan mengulang kebaikan selama pembelajaran."
+      ]
+    },
+    {
+      "pageId": "QJ1-P022",
+      "pageNumber": "22",
+      "title": "Ini Buku",
+      "titleArabic": "هٰذَا كِتَابٌ",
+      "tartilCompetency": "Penguatan fathah dan pembiasaan ungkapan Bahasa Arab sederhana.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P022",
+      "integration": {
+        "tahfidz": {
+          "title": "Murojaah Al-Ikhlas",
+          "arabic": "مُرَاجَعَةٌ",
+          "instruction": "Murojaah hafalan yang telah dipelajari."
+        },
+        "arabic": {
+          "title": "Ini Buku",
+          "arabic": "هٰذَا كِتَابٌ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Menjaga Buku",
+          "arabic": "الطَّهُورُ شَطْرُ الْإِيمَانِ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "بَ تَ",
+          "ثَ جَ",
+          "حَ خَ"
+        ],
+        [
+          "دَ ذَ",
+          "رَ زَ",
+          "سَ شَ"
+        ],
+        [
+          "صَ ضَ",
+          "طَ ظَ",
+          "عَ غَ"
+        ],
+        [
+          "فَ قَ",
+          "كَ لَ",
+          "مَ نَ"
+        ],
+        [
+          "وَ ھَ",
+          "ءَ يَ",
+          "قَ رَ أَ"
+        ],
+        [
+          "كَ تَ بَ",
+          "ذَ كَ رَ",
+          "سَ جَ دَ"
+        ],
+        [
+          "عَ بَ دَ",
+          "شَ كَ رَ",
+          "صَ بَ رَ"
+        ],
+        [
+          "فَ تَ حَ",
+          "نَ صَ رَ",
+          "غَ فَ رَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Ini Buku” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
+        "Akhlak QURBATA: Praktikkan menjaga buku selama pembelajaran."
+      ]
+    },
+    {
+      "pageId": "QJ1-P023",
+      "pageNumber": "23",
+      "title": "Ini Pena",
+      "titleArabic": "هٰذَا قَلَمٌ",
+      "tartilCompetency": "Penguatan fathah dan pembiasaan ungkapan Bahasa Arab sederhana.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P023",
+      "integration": {
+        "tahfidz": {
+          "title": "Murojaah Al-Falaq 1–2",
+          "arabic": "مُرَاجَعَةٌ",
+          "instruction": "Murojaah hafalan yang telah dipelajari."
+        },
+        "arabic": {
+          "title": "Ini Pena",
+          "arabic": "هٰذَا قَلَمٌ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Menghormati Guru",
+          "arabic": "وَقُلْ رَبِّ زِدْنِي عِلْمًا",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "تَ بَ",
+          "جَ ثَ",
+          "خَ حَ"
+        ],
+        [
+          "زَ رَ",
+          "شَ سَ",
+          "ضَ صَ"
+        ],
+        [
+          "ظَ طَ",
+          "غَ عَ",
+          "قَ فَ"
+        ],
+        [
+          "لَ كَ",
+          "نَ مَ",
+          "ھَ وَ"
+        ],
+        [
+          "يَ ءَ",
+          "رَ حَ مَ",
+          "عَ مَ لَ"
+        ],
+        [
+          "دَ خَ لَ",
+          "جَ عَ لَ",
+          "أَ كَ لَ"
+        ],
+        [
+          "سَ مَ عَ",
+          "جَ مَ عَ",
+          "مَ نَ عَ"
+        ],
+        [
+          "وَ جَ دَ",
+          "وَ قَ عَ",
+          "ھَ جَ رَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Ini Pena” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
+        "Akhlak QURBATA: Praktikkan menghormati guru selama pembelajaran."
+      ]
+    },
+    {
+      "pageId": "QJ1-P024",
+      "pageNumber": "24",
+      "title": "Ini Halaman",
+      "titleArabic": "هٰذِهِ صَفْحَةٌ",
+      "tartilCompetency": "Penguatan fathah dan pembiasaan ungkapan Bahasa Arab sederhana.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P024",
+      "integration": {
+        "tahfidz": {
+          "title": "Murojaah Al-Falaq 1–4",
+          "arabic": "مُرَاجَعَةٌ",
+          "instruction": "Murojaah hafalan yang telah dipelajari."
+        },
+        "arabic": {
+          "title": "Ini Halaman",
+          "arabic": "هٰذِهِ صَفْحَةٌ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Membantu",
+          "arabic": "وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَى",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "بَ تَ",
+          "ثَ جَ",
+          "حَ خَ"
+        ],
+        [
+          "دَ ذَ",
+          "رَ زَ",
+          "سَ شَ"
+        ],
+        [
+          "صَ ضَ",
+          "طَ ظَ",
+          "عَ غَ"
+        ],
+        [
+          "فَ قَ",
+          "كَ لَ",
+          "مَ نَ"
+        ],
+        [
+          "وَ ھَ",
+          "ءَ يَ",
+          "قَ رَ أَ"
+        ],
+        [
+          "كَ تَ بَ",
+          "ذَ كَ رَ",
+          "سَ جَ دَ"
+        ],
+        [
+          "عَ بَ دَ",
+          "شَ كَ رَ",
+          "صَ بَ رَ"
+        ],
+        [
+          "فَ تَ حَ",
+          "نَ صَ رَ",
+          "غَ فَ رَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Ini Halaman” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
+        "Akhlak QURBATA: Praktikkan membantu selama pembelajaran."
+      ]
+    },
+    {
+      "pageId": "QJ1-P025",
+      "pageNumber": "25",
+      "title": "Latihan Kumulatif",
+      "titleArabic": "تَدْرِيبٌ تَرَاكُمِيٌّ",
+      "tartilCompetency": "Evaluasi kumulatif fase fathah sebagai jembatan menuju kasrah.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P025",
+      "integration": {
+        "tahfidz": {
+          "title": "Murojaah Tiga Surah",
+          "arabic": "مُرَاجَعَةٌ",
+          "instruction": "Murojaah hafalan yang telah dipelajari."
+        },
+        "arabic": {
+          "title": "Siap",
+          "arabic": "مُسْتَعِدٌّ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Mengamalkan Ilmu",
+          "arabic": "تَعَلَّمْ — اِعْمَلْ — عَلِّمْ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "تَ بَ",
+          "جَ ثَ",
+          "خَ حَ"
+        ],
+        [
+          "زَ رَ",
+          "شَ سَ",
+          "ضَ صَ"
+        ],
+        [
+          "ظَ طَ",
+          "غَ عَ",
+          "قَ فَ"
+        ],
+        [
+          "لَ كَ",
+          "نَ مَ",
+          "ھَ وَ"
+        ],
+        [
+          "يَ ءَ",
+          "رَ حَ مَ",
+          "عَ مَ لَ"
+        ],
+        [
+          "دَ خَ لَ",
+          "جَ عَ لَ",
+          "أَ كَ لَ"
+        ],
+        [
+          "سَ مَ عَ",
+          "جَ مَ عَ",
+          "مَ نَ عَ"
+        ],
+        [
+          "وَ جَ دَ",
+          "وَ قَ عَ",
+          "ھَ جَ رَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Siap” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
+        "Akhlak QURBATA: Praktikkan mengamalkan ilmu selama pembelajaran."
+      ]
     }
   ]
 }
