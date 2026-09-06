@@ -1,11 +1,13 @@
-# Font Al-Qur'an QURBATA
+# Font Utsmani QURBATA
 
-Font produksi awal yang dibekukan:
+Font produksi yang dipakai untuk seluruh teks Arab:
 
-- `dist/fonts/AmiriQuran-Arabic.woff2` (disalin otomatis saat build);
-- sumber paket: `@fontsource/amiri-quran` 5.2.7;
-- lisensi: SIL Open Font License 1.1 (salinan pada `OFL-Amiri-Quran.txt`).
+- nama: **KFGQPC Uthman Taha Naskh**;
+- berkas sumber: `KFGQPC-Uthman-Taha-Naskh.woff2`;
+- versi berkas: UthmanTN1 Ver10;
+- penerbit: King Fahd Glorious Qur'an Printing Complex;
+- rujukan resmi: `https://fonts.qurancomplex.gov.sa/`.
 
-Amiri Quran dipilih karena dirancang untuk penataan teks Al-Qur'an dan mempunyai lisensi terbuka yang jelas. Berkas sumber berasal dari dependensi NPM terkunci dan tidak diduplikasi di Git. Sebelum pencetakan massal, font tetap wajib melewati uji harakat, ligatur, tanda Qurani, embedding PDF, serta persetujuan akademik/editorial QURBATA.
+Pipeline menyalin font ke `dist/fonts/` saat build. Seluruh elemen berkelas `.arabic`—judul Arab, Tahfidz, Bahasa Arab, NIDHOM, latihan Tartil, dan motto—menggunakan font ini.
 
-KFGQPC Uthman Taha dapat diuji sebagai kandidat terpisah apabila berkas dan ketentuan penggunaan resminya sudah terdokumentasi. Jangan mengganti font produksi tanpa uji regresi halaman.
+Sebelum pencetakan massal, font tetap wajib melewati uji harakat, ligatur, tanda Qurani, embedding PDF, serta persetujuan akademik/editorial QURBATA. Jangan mengganti font produksi tanpa uji regresi halaman.
