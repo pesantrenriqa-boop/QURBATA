@@ -1,6 +1,6 @@
 # DEC-NID-QJ1-001 — Verifikasi Matan NIDHOM P001–P005
 
-**Status:** VERIFIED-TEXT — READY FOR ACADEMIC RATIFICATION  
+**Status:** APPROVED-NIDHOM-QJ1 — RATIFIED  
 **Tanggal:** 2026-09-06  
 **Cakupan:** HAD-000001–HAD-000005 / QJ1-P001–P005  
 **Tujuan:** menetapkan teks sumber, potongan NIDHOM, makna ringkas, dan status hadis sebelum ditanamkan sebagai teks peserta.
@@ -40,6 +40,6 @@
 - [x] potongan berdiri utuh secara makna.
 - [x] terjemah ringkas peserta disusun.
 - [x] aktivitas Bi’ah diturunkan dari pesan hadis.
-- [ ] ratifikasi akademik pemilik QURBATA / panel ahli syar‘i.
+- [x] ratifikasi akademik pemilik QURBATA (disetujui 2026-09-06).
 
-Setelah ratifikasi, status kelima objek dapat dinaikkan dari SOURCE-CHECK menjadi APPROVED-NIDHOM-QJ1.
+**Keputusan:** HAD-000001–HAD-000005 disahkan untuk NIDHOM QURBATA Jilid 1 P001–P005. Potongan matan, sumber, makna peserta, dan aktivitas Bi’ah pada dokumen ini menjadi baseline resmi; perubahan berikutnya wajib melalui governance.
