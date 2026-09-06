@@ -9,6 +9,7 @@
     "build": "npm run build:pdf"
   },
   "dependencies": {
+    "@fontsource/amiri-quran": "^5.2.7",
     "@vivliostyle/cli": "^10.1.0",
     "qrcode": "^1.5.4"
   }
