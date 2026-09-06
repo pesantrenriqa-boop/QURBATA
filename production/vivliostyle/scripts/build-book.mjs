@@ -30,6 +30,25 @@ const card = (label, value) => `
     <p class="integration-instruction">${escapeHtml(value.instruction)}</p>
   </section>`;
 
+const frontMatterData = [
+  { title: "SAMBUTAN", arabic: "لِكُلِّ شَيْءٍ زَكَاةٌ، وَزَكَاةُ الْعِلْمِ التَّعْلِيمُ", source: "Pesan KH. Basori Alwi", body: "Setiap sesuatu memiliki zakat, dan zakatnya ilmu adalah mengajarkannya." },
+  { title: "PENDAHULUAN", arabic: "إِنَّا أَنْزَلْنَاهُ قُرْآنًا عَرَبِيًّا لَعَلَّكُمْ تَعْقِلُونَ", source: "QS. Yusuf [12]: 2", body: "Bahasa Arab QURBATA dihidupkan sebagai bi’ah ‘Arabiyah dalam proses pembelajaran Al-Qur’an." },
+  { title: "RUH QURBATA", arabic: "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ", source: "HR. al-Bukhari", body: "Belajar, mengamalkan, lalu mengajarkan Al-Qur’an menjadi ruh pendidikan QURBATA." },
+  { title: "TAHFIDZ", arabic: "وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ", source: "QS. Al-Qamar [54]: 17", body: "Hafalan dibangun ayat demi ayat dengan murojaah dan bimbingan guru." },
+  { title: "AKHLAK", arabic: "وَإِنَّكَ لَعَلَى خُلُقٍ عَظِيمٍ", source: "QS. Al-Qalam [68]: 4", body: "Nilai dipahami dan dibiasakan dalam setiap pertemuan." }
+];
+
+const frontMatter = frontMatterData.map((item, index) => `
+  <article class="book-page front-matter-page">
+    <header class="page-header"><div class="header-line"></div><div class="book-name"><span class="qurbata-brand-text"><strong>QURBATA</strong><small>Qur’an · Bahasa Arab · Tahfidz · Akhlak</small></span></div><div class="page-number">FM${String(index + 1).padStart(2, "0")}</div></header>
+    <section class="front-matter-content">
+      <h1>${escapeHtml(item.title)}</h1>
+      <div class="front-dalil"><p class="arabic front-arabic" lang="ar" dir="rtl">${escapeHtml(item.arabic)}</p><p class="front-source">${escapeHtml(item.source)}</p></div>
+      <p class="front-body">${escapeHtml(item.body)}</p>
+      ${index === 0 ? `<div class="front-motto"><p class="arabic" lang="ar" dir="rtl">تَعَلَّمْ — اِعْمَلْ — عَلِّمْ</p><small>Belajarlah · Amalkan · Ajarkan</small></div>` : ""}
+    </section>
+    <footer class="page-footer"><p class="arabic" lang="ar" dir="rtl">تَعَلَّمْ — اِعْمَلْ — عَلِّمْ</p><small>Belajarlah • Amalkan • Ajarkan</small></footer>
+  </article>`).join("\n");
 const pages = await Promise.all(data.pages.map(async (page) => {
   if (!page.title || !page.titleArabic || arabicLetters(page.titleArabic).length === 0) {
     throw new Error(`${page.pageId}: judul Indonesia dan judul Arab wajib diisi terpisah.`);
@@ -115,7 +134,7 @@ const pages = await Promise.all(data.pages.map(async (page) => {
 
 const html = template
   .replace("/*__BOOK_CSS__*/", css)
-  .replace("<!--__BOOK_PAGES__-->", pages.join("\n"));
+  .replace("<!--__BOOK_PAGES__-->", `${frontMatter}\n${pages.join("\n")}`);
 
 await fs.mkdir(path.join(root, "dist"), { recursive: true });
 await fs.mkdir(path.join(root, "dist/fonts"), { recursive: true });
