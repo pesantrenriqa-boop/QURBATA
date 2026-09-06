@@ -1091,7 +1091,7 @@
       "pageNumber": "16",
       "title": "Kasrah 1",
       "titleArabic": "الْكَسْرَةُ ١",
-      "tartilCompetency": "Kompetensi baru: بِ تِ ثِ جِ. Murojaah merata seluruh kompetensi sebelumnya.",
+      "tartilCompetency": "Kasrah bertahap pada بِ تِ ثِ جِ; setiap kelompok mencampur Kasrah–Fathah dengan posisi acak dan murojaah merata.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P016",
       "integration": {
         "tahfidz": {
@@ -1112,44 +1112,44 @@
       },
       "rows": [
         [
-          "بِ تِ بِ",
-          "تِ بِ تِ",
-          "ثِ بِ ثِ"
+          "بِ جِ ثَ",
+          "تِ بَ جِ",
+          "يَ تِ بِ"
         ],
         [
-          "جِ بِ جِ",
-          "بِ ثِ بِ",
-          "تِ جِ تِ"
+          "جِ ثِ غَ",
+          "بِ ظَ ثِ",
+          "ضَ بِ جِ"
         ],
         [
-          "بَ تَ ثَ",
-          "جَ حَ خَ",
-          "دَ ذَ رَ"
+          "ثِ وَ حَ",
+          "نَ ثِ زَ",
+          "بِ جِ طَ"
         ],
         [
-          "زَ سَ شَ",
-          "صَ ضَ طَ",
-          "ظَ عَ غَ"
+          "تِ صَ جِ",
+          "سَ تِ بِ",
+          "جِ ثِ تَ"
         ],
         [
-          "فَ قَ كَ",
-          "لَ مَ نَ",
-          "هَ وَ يَ"
+          "بِ ءَ ثِ",
+          "وَ بِ جِ",
+          "ثِ زَ عَ"
         ],
         [
-          "ءَ بَ جَ",
-          "حَ دَ رَ",
-          "سَ صَ فَ"
+          "ذَ ثِ لَ",
+          "بِ جِ يَ",
+          "تِ هَ جِ"
         ],
         [
-          "عَ مَ لَ",
-          "ذَ هَ بَ",
-          "رَ جَ عَ"
+          "مَ تِ بِ",
+          "جِ ثِ ضَ",
+          "بِ شَ ثِ"
         ],
         [
-          "كَ تَ بَ",
-          "سَ جَ دَ",
-          "شَ كَ رَ"
+          "زَ بِ جِ",
+          "ثِ لَ بَ",
+          "قَ ثِ خَ"
         ]
       ],
       "activities": [
@@ -1185,7 +1185,7 @@
       "pageNumber": "17",
       "title": "Kasrah 2",
       "titleArabic": "الْكَسْرَةُ ٢",
-      "tartilCompetency": "Kompetensi baru: حِ خِ دِ ذِ. Murojaah merata seluruh kompetensi sebelumnya.",
+      "tartilCompetency": "Kasrah bertahap pada بِ تِ ثِ جِ حِ خِ دِ ذِ; setiap kelompok mencampur Kasrah–Fathah dengan posisi acak dan murojaah merata.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P017",
       "integration": {
         "tahfidz": {
@@ -1206,44 +1206,44 @@
       },
       "rows": [
         [
-          "تِ ثِ جِ",
-          "جِ ذِ ثِ",
-          "خِ حِ تِ"
+          "تِ هَ ذِ",
+          "مَ خِ حِ",
+          "جِ ثِ ضَ"
         ],
         [
-          "ذِ تِ بِ",
-          "تِ دِ ذِ",
-          "جِ جِ دِ"
+          "بِ شَ دِ",
+          "زَ حِ جِ",
+          "ثِ لَ بَ"
         ],
         [
-          "خِ بِ خِ",
-          "ذِ خِ حِ",
-          "تِ ثِ جِ"
+          "قَ دِ خَ",
+          "حِ جِ سَ",
+          "تِ رَ ذِ"
         ],
         [
-          "جِ ذِ ثِ",
-          "خِ حِ تِ",
-          "ذِ تِ بِ"
+          "دَ خِ حِ",
+          "جِ ثِ وَ",
+          "بِ نَ دِ"
         ],
         [
-          "تِ دِ ذِ",
-          "جِ جِ دِ",
-          "خِ بِ خِ"
+          "لَ حِ جِ",
+          "ثِ خَ صَ",
+          "جَ دِ غَ"
         ],
         [
-          "قَ زَ صَ",
-          "لَ طَ قَ",
-          "نَ قَ يَ"
+          "حِ جِ مَ",
+          "تِ كَ ذِ",
+          "فَ خِ حِ"
         ],
         [
-          "وَ هَ خَ",
-          "ءَ تَ صَ",
-          "تَ دَ قَ"
+          "جِ ثِ زَ",
+          "بِ ذَ دِ",
+          "خَ حِ جِ"
         ],
         [
-          "جَ شَ يَ",
-          "خَ عَ خَ",
-          "ذَ لَ صَ"
+          "ثِ غَ هَ",
+          "ظَ دِ تَ",
+          "حِ جِ دَ"
         ]
       ],
       "activities": [
@@ -1257,7 +1257,7 @@
       "pageNumber": "18",
       "title": "Kasrah 3",
       "titleArabic": "الْكَسْرَةُ ٣",
-      "tartilCompetency": "Kompetensi baru: رِ زِ سِ شِ. Murojaah merata seluruh kompetensi sebelumnya.",
+      "tartilCompetency": "Kasrah bertahap pada بِ تِ ثِ جِ حِ خِ دِ ذِ رِ زِ سِ شِ; setiap kelompok mencampur Kasrah–Fathah dengan posisi acak dan murojaah merata.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P018",
       "integration": {
         "tahfidz": {
@@ -1278,44 +1278,44 @@
       },
       "rows": [
         [
-          "دِ ذِ رِ",
-          "رِ بِ جِ",
-          "سِ خِ سِ"
+          "فَ تِ رِ",
+          "شِ دِ زَ",
+          "حِ ذَ دِ"
         ],
         [
-          "بِ سِ خِ",
-          "ثِ جِ بِ",
-          "حِ رِ ذِ"
+          "خَ حِ شِ",
+          "ثِ غَ هَ",
+          "ظَ ثِ تَ"
         ],
         [
-          "دِ تِ ثِ",
-          "رِ دِ زِ",
-          "سِ شِ حِ"
+          "بِ ذِ دَ",
+          "خِ حَ ذِ",
+          "ثَ خِ بِ"
         ],
         [
-          "بِ حِ شِ",
-          "ثِ زِ دِ",
-          "حِ ثِ تِ"
+          "جِ سِ لَ",
+          "رِ قَ سِ",
+          "غَ رِ جِ"
         ],
         [
-          "دِ ذِ رِ",
-          "رِ بِ جِ",
-          "سِ خِ سِ"
+          "دِ تَ رَ",
+          "ءَ دِ ضَ",
+          "حِ شِ فَ"
         ],
         [
-          "كَ سَ ضَ",
-          "مَ ظَ كَ",
-          "هَ كَ ءَ"
+          "زِ عَ شِ",
+          "طَ زِ حِ",
+          "ذِ ثِ خَ"
         ],
         [
-          "يَ وَ دَ",
-          "بَ ثَ ضَ",
-          "ثَ ذَ كَ"
+          "بِ جَ ثِ",
+          "تَ بِ ذِ",
+          "سِ ضَ كَ"
         ],
         [
-          "حَ صَ ءَ",
-          "دَ غَ دَ",
-          "رَ مَ ضَ"
+          "شَ سِ وَ",
+          "رِ جِ ثَ",
+          "تِ بَ جِ"
         ]
       ],
       "activities": [
@@ -1329,7 +1329,7 @@
       "pageNumber": "19",
       "title": "Kasrah 4",
       "titleArabic": "الْكَسْرَةُ ٤",
-      "tartilCompetency": "Kompetensi baru: صِ ضِ طِ ظِ. Murojaah merata seluruh kompetensi sebelumnya.",
+      "tartilCompetency": "Kasrah bertahap pada بِ تِ ثِ جِ حِ خِ دِ ذِ رِ زِ سِ شِ صِ ضِ طِ ظِ; setiap kelompok mencampur Kasrah–Fathah dengan posisi acak dan murojaah merata.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P019",
       "integration": {
         "tahfidz": {
@@ -1350,44 +1350,44 @@
       },
       "rows": [
         [
-          "جِ حِ خِ",
-          "خِ زِ صِ",
-          "ذِ طِ جِ"
+          "جِ سِ خَ",
+          "رِ جَ دِ",
+          "تَ حِ شِ"
         ],
         [
-          "زِ جِ سِ",
-          "شِ رِ تِ",
-          "ضِ ضِ رِ"
+          "ثِ ضَ كَ",
+          "شَ طِ وَ",
+          "صِ جِ ثَ"
         ],
         [
-          "ظِ ثِ ظِ",
-          "تِ ذِ دِ",
-          "جِ صِ ضِ"
+          "تِ بَ ظِ",
+          "يَ ضِ حِ",
+          "شِ ثِ غَ"
         ],
         [
-          "خِ تِ حِ",
-          "ذِ دِ شِ",
-          "زِ شِ ثِ"
+          "بِ ظَ طِ",
+          "ضَ صِ جِ",
+          "سِ وَ حَ"
         ],
         [
-          "شِ بِ زِ",
-          "ضِ خِ بِ",
-          "ظِ سِ ذِ"
+          "نَ دِ زَ",
+          "حِ شِ طَ",
+          "زِ صَ ذِ"
         ],
         [
-          "لَ شَ طَ",
-          "نَ عَ لَ",
-          "وَ لَ بَ"
+          "سَ خِ صِ",
+          "جِ سِ تَ",
+          "رِ ءَ دِ"
         ],
         [
-          "ءَ يَ ذَ",
-          "تَ جَ طَ",
-          "جَ رَ لَ"
+          "وَ حِ شِ",
+          "ثِ زَ عَ",
+          "ذَ طِ لَ"
         ],
         [
-          "خَ ضَ بَ",
-          "ذَ فَ ذَ",
-          "زَ نَ طَ"
+          "صِ جِ يَ",
+          "تِ هَ ظِ",
+          "مَ ضِ حِ"
         ]
       ],
       "activities": [
@@ -1401,7 +1401,7 @@
       "pageNumber": "20",
       "title": "Kasrah 5",
       "titleArabic": "الْكَسْرَةُ ٥",
-      "tartilCompetency": "Kompetensi baru: عِ غِ فِ قِ. Murojaah merata seluruh kompetensi sebelumnya.",
+      "tartilCompetency": "Kasrah bertahap pada بِ تِ ثِ جِ حِ خِ دِ ذِ رِ زِ سِ شِ صِ ضِ طِ ظِ عِ غِ فِ قِ; setiap kelompok mencampur Kasrah–Fathah dengan posisi acak dan murojaah merata.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P020",
       "integration": {
         "tahfidz": {
@@ -1422,44 +1422,44 @@
       },
       "rows": [
         [
-          "بِ تِ ثِ",
-          "ثِ دِ زِ",
-          "حِ شِ عِ"
+          "بِ ءَ طِ",
+          "وَ صِ قِ",
+          "سِ زَ عَ"
         ],
         [
-          "دِ عِ جِ",
-          "رِ تِ سِ",
-          "سِ دِ غِ"
+          "ذَ ثِ لَ",
+          "بِ ذِ يَ",
+          "خِ هَ قِ"
         ],
         [
-          "صِ شِ حِ",
-          "طِ عِ شِ",
-          "عِ تِ فِ"
+          "مَ غِ حِ",
+          "ظِ ثِ ضَ",
+          "بِ شَ طِ"
         ],
         [
-          "فِ دِ خِ",
-          "بِ شِ صِ",
-          "ثِ عِ قِ"
+          "زَ صِ قِ",
+          "سِ لَ بَ",
+          "قَ ثِ خَ"
         ],
         [
-          "حِ تِ دِ",
-          "دِ دِ ضِ",
-          "رِ شِ بِ"
+          "بِ ذِ سَ",
+          "خِ رَ قِ",
+          "دَ غِ حِ"
         ],
         [
-          "مَ صَ ظَ",
-          "هَ غَ مَ",
-          "يَ مَ تَ"
+          "ظِ ثِ وَ",
+          "بِ نَ طِ",
+          "لَ صِ قِ"
         ],
         [
-          "بَ ءَ رَ",
-          "ثَ حَ ظَ",
-          "حَ زَ مَ"
+          "سِ خَ صَ",
+          "جَ ثِ غَ",
+          "بِ ذِ مَ"
         ],
         [
-          "دَ طَ تَ",
-          "رَ قَ رَ",
-          "سَ هَ ظَ"
+          "خِ كَ قِ",
+          "فَ غِ حِ",
+          "ظِ ثِ زَ"
         ]
       ],
       "activities": [
@@ -1518,7 +1518,7 @@
       "pageNumber": "21",
       "title": "Kasrah 6",
       "titleArabic": "الْكَسْرَةُ ٦",
-      "tartilCompetency": "Kompetensi baru: كِ لِ مِ نِ. Murojaah merata seluruh kompetensi sebelumnya.",
+      "tartilCompetency": "Kasrah bertahap pada بِ تِ ثِ جِ حِ خِ دِ ذِ رِ زِ سِ شِ صِ ضِ طِ ظِ عِ غِ فِ قِ كِ لِ مِ نِ; setiap kelompok mencampur Kasrah–Fathah dengan posisi acak dan murojaah merata.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P021",
       "integration": {
         "tahfidz": {
@@ -1539,44 +1539,44 @@
       },
       "rows": [
         [
-          "لِ مِ نِ",
-          "نِ جِ دِ",
-          "تِ رِ ضِ"
+          "لَ حِ شِ",
+          "ثِ خَ صَ",
+          "جَ طِ غَ"
         ],
         [
-          "جِ ضِ كِ",
-          "خِ فِ جِ",
-          "ذِ نِ سِ"
+          "صِ قِ مَ",
+          "غِ كَ ذِ",
+          "فَ خِ صِ"
         ],
         [
-          "زِ حِ غِ",
-          "شِ زِ بِ",
-          "ضِ طِ ذِ"
+          "جِ سِ زَ",
+          "رِ ذَ مِ",
+          "خَ كِ جِ"
         ],
         [
-          "ظِ قِ طِ",
-          "غِ بِ لِ",
-          "قِ خِ حِ"
+          "فِ غَ هَ",
+          "ظَ دِ تَ",
+          "حِ شِ دَ"
         ],
         [
-          "لِ سِ شِ",
-          "نِ ظِ فِ",
-          "تِ كِ تِ"
+          "زِ حَ نِ",
+          "ثَ لِ حِ",
+          "قِ ثِ لَ"
         ],
         [
-          "نَ ضَ عَ",
-          "وَ فَ نَ",
-          "ءَ نَ ثَ"
+          "بِ قَ طِ",
+          "غَ صِ قِ",
+          "سِ تَ رَ"
         ],
         [
-          "تَ بَ زَ",
-          "جَ خَ عَ",
-          "خَ سَ نَ"
+          "ءَ مِ ضَ",
+          "كِ جِ فَ",
+          "تِ عَ ظِ"
         ],
         [
-          "ذَ ظَ ثَ",
-          "زَ كَ زَ",
-          "شَ وَ عَ"
+          "طَ ضِ كِ",
+          "شِ فِ خَ",
+          "عِ جَ دِ"
         ]
       ],
       "activities": [
@@ -1590,7 +1590,7 @@
       "pageNumber": "22",
       "title": "Kasrah 7",
       "titleArabic": "الْكَسْرَةُ ٧",
-      "tartilCompetency": "Kompetensi baru: هِ وِ يِ ءِ. Murojaah merata seluruh kompetensi sebelumnya.",
+      "tartilCompetency": "Kasrah bertahap pada بِ تِ ثِ جِ حِ خِ دِ ذِ رِ زِ سِ شِ صِ ضِ طِ ظِ عِ غِ فِ قِ كِ لِ مِ نِ هِ وِ يِ ءِ; setiap kelompok mencampur Kasrah–Fathah dengan posisi acak dan murojaah merata.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P022",
       "integration": {
         "tahfidz": {
@@ -1611,44 +1611,44 @@
       },
       "rows": [
         [
-          "مِ نِ هِ",
-          "هِ بِ جِ",
-          "يِ خِ سِ"
+          "مِ تَ رَ",
+          "ءَ دِ ضَ",
+          "حِ شِ فَ"
         ],
         [
-          "بِ سِ غِ",
-          "ثِ ظِ هِ",
-          "حِ كِ جِ"
+          "زِ عَ نِ",
+          "طَ لِ بِ",
+          "قِ يِ خَ"
         ],
         [
-          "دِ وِ سِ",
-          "رِ ثِ غِ",
-          "سِ ذِ هِ"
+          "هِ جَ سِ",
+          "تَ رِ ظِ",
+          "دِ ضَ كَ"
         ],
         [
-          "صِ صِ جِ",
-          "طِ غِ سِ",
-          "عِ مِ غِ"
+          "شَ فِ وَ",
+          "عِ نِ ثَ",
+          "لِ بَ ذِ"
         ],
         [
-          "فِ ءِ هِ",
-          "كِ حِ جِ",
-          "مِ زِ سِ"
+          "يَ خِ صِ",
+          "جِ سِ غَ",
+          "رِ ظَ مِ"
         ],
         [
-          "هَ طَ غَ",
-          "يَ قَ هَ",
-          "بَ هَ جَ"
+          "ضَ كِ ءِ",
+          "فِ وَ حَ",
+          "نَ ثِ زَ"
         ],
         [
-          "ثَ تَ سَ",
-          "حَ دَ غَ",
-          "دَ شَ هَ"
+          "بِ ذِ طَ",
+          "خِ صَ قِ",
+          "سَ غِ هِ"
         ],
         [
-          "رَ عَ جَ",
-          "سَ لَ سَ",
-          "صَ يَ غَ"
+          "ظِ مِ تَ",
+          "كِ ءَ دِ",
+          "وَ حِ شِ"
         ]
       ],
       "activities": [
@@ -1662,7 +1662,7 @@
       "pageNumber": "23",
       "title": "Penguatan Kasrah",
       "titleArabic": "تَثْبِيتُ الْكَسْرَةِ",
-      "tartilCompetency": "Penguatan seluruh kasrah dengan murojaah merata kompetensi fathah.",
+      "tartilCompetency": "Kasrah bertahap pada بِ تِ ثِ جِ حِ خِ دِ ذِ رِ زِ سِ شِ صِ ضِ طِ ظِ عِ غِ فِ قِ كِ لِ مِ نِ هِ وِ يِ ءِ; setiap kelompok mencampur Kasrah–Fathah dengan posisi acak dan murojaah merata.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P023",
       "integration": {
         "tahfidz": {
@@ -1683,44 +1683,44 @@
       },
       "rows": [
         [
-          "نِ هِ وِ",
-          "وِ تِ حِ",
-          "ءِ دِ شِ"
+          "نَ ثِ زَ",
+          "بِ ذِ طَ",
+          "خِ صَ قِ"
         ],
         [
-          "تِ شِ فِ",
-          "جِ عِ وِ",
-          "خِ لِ حِ"
+          "سَ غِ هِ",
+          "ظِ مِ تَ",
+          "كِ ءَ دِ"
         ],
         [
-          "ذِ يِ شِ",
-          "زِ جِ فِ",
-          "شِ رِ وِ"
+          "وَ حِ شِ",
+          "ثِ زَ عَ",
+          "ذَ طِ لَ"
         ],
         [
-          "ضِ ضِ حِ",
-          "ظِ فِ شِ",
-          "غِ نِ فِ"
+          "صِ قِ يَ",
+          "غِ هَ جِ",
+          "مَ تِ رِ"
         ],
         [
-          "قِ بِ وِ",
-          "لِ خِ حِ",
-          "نِ سِ شِ"
+          "ءِ دِ ضَ",
+          "حِ شَ فِ",
+          "زَ عِ نِ"
         ],
         [
-          "وَ ظَ فَ",
-          "ءَ كَ وَ",
-          "تَ وَ حَ"
+          "طِ لَ بَ",
+          "قَ يِ خَ",
+          "هِ جِ سَ"
         ],
         [
-          "جَ ثَ شَ",
-          "خَ ذَ فَ",
-          "ذَ صَ وَ"
+          "تِ رَ ظِ",
+          "دَ ضِ كِ",
+          "شِ فِ وَ"
         ],
         [
-          "زَ غَ حَ",
-          "شَ مَ شَ",
-          "ضَ ءَ فَ"
+          "عِ نَ ثِ",
+          "لَ بِ ذِ",
+          "يِ خَ صَ"
         ]
       ],
       "activities": [
@@ -1889,6 +1889,7 @@
     "newConceptIntroduction": "Halaman pertama kompetensi baru wajib memiliki penanaman konsep visual sebelum grid latihan, misalnya ب → بِ; tidak langsung masuk ke grid penuh.",
     "hehPolicy": "Gunakan hanya karakter ه (ha dua lubang pada font Utsmani), bukan ھ/ہ/ۀ/ە; pada latihan Tartil wajib berharakat.",
     "fathahAfterClosure": "Setelah fase Fathah ditutup, Fathah tidak lagi menjadi target pembentukan pola bermakna; hanya muncul sebagai murojaah kumulatif proporsional.",
-    "detachedLetters": "Jilid 1 wajib memakai huruf lepas/tidak sambung pada seluruh grid Tartil."
+    "detachedLetters": "Jilid 1 wajib memakai huruf lepas/tidak sambung pada seluruh grid Tartil.",
+    "mixedHarakatWithinGroup": "Pada fase harakat baru, satu kelompok latihan 3 huruf wajib mencampur harakat kompetensi baru dan harakat lama yang sudah legal di DALAM kelompok yang sama. Posisi harakat baru diacak: awal, tengah, atau akhir. Komposisi keseluruhan halaman mengikuti proporsi target aktif/murojaah (±60/40), bukan memisahkan kelompok Kasrah dan kelompok Fathah."
   }
 }
