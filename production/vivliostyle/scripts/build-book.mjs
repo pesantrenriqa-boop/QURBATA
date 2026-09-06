@@ -227,7 +227,7 @@ const pages = await Promise.all(data.pages.map(async (page) => {
   const firstEightValid = items.slice(0, 8).every((item) => arabicLetters(item).length === 2);
   const lastSixteenValid = items.slice(8).every((item) => arabicLetters(item).length === 3);
   if (!firstEightValid || !lastSixteenValid) {
-    throw new Error(`${page.pageId}: tangga 1-8 wajib dua huruf dan tangga 9-24 wajib tiga huruf.`);
+    throw new Error(`${page.pageId}: pola tangga tidak sesuai fase halaman (P014+ wajib seluruhnya tiga huruf).`);
   }
   if (!/^https:\/\/www\.rumahilmualquran\.com\/q\/[A-Z0-9-]+$/.test(page.riqaOsUrl)) {
     throw new Error(`${page.pageId}: URL RIQA OS tidak mengikuti kontrak /q/{pageId}.`);
