@@ -55,7 +55,7 @@ const frontMatter = frontMatterData.map((item, index) => `
     <header class="page-header"><div class="header-line"></div><div class="book-name"><span class="qurbata-brand-text"><strong>QURBATA</strong><small>Qur’an · Bahasa Arab · Tahfidz · Akhlak</small></span></div><div class="page-number">${String(index + 1).padStart(2, "0")}</div></header>
     <section class="front-matter-content official-front">
       <h1>${escapeHtml(item.title)}</h1>
-      <div class="official-epigraph"><p class="arabic front-arabic" lang="ar" dir="rtl">${escapeHtml(item.arabic)}</p><p class="front-source">${escapeHtml(item.source)}</p></div>
+      <div class="official-epigraph"><p class="arabic front-arabic" lang="ar" dir="rtl">${escapeHtml(item.arabic)}</p>${item.source ? `<p class="front-source">${escapeHtml(item.source)}</p>` : ""}</div>
       <p class="front-body">${escapeHtml(item.body)}</p>
       ${index === 0 ? `<div class="front-motto"><p class="arabic" lang="ar" dir="rtl">تَعَلَّمْ — اِعْمَلْ — عَلِّمْ</p><small>Belajarlah · Amalkan · Ajarkan</small></div>` : ""}
     </section>
