@@ -206,3 +206,23 @@ body {
   bottom: 7mm;
   height: 7mm;
 }
+
+/* Two-aperture ha: preserve requested glyph while placing fathah visibly. */
+.ha-two-fatha {
+  position: relative;
+  display: inline-block;
+  width: .72em;
+  height: 1em;
+  vertical-align: middle;
+}
+.ha-two { display: inline-block; line-height: 1; }
+.ha-fatha {
+  position: absolute;
+  left: 50%;
+  top: -.16em;
+  transform: translateX(-50%);
+  font-family: "QURBATA KFGQPC Uthmani", "Traditional Arabic", serif;
+  font-size: .62em;
+  line-height: 1;
+  pointer-events: none;
+}
