@@ -20,14 +20,14 @@
           "instruction": "Dengarkan ayat 1 dengan adab"
         },
         "arabic": {
-          "title": "Benda Kelas 1",
-          "arabic": "كِتَابٌ — قَلَمٌ",
-          "instruction": "Tunjuk dan ucapkan"
+          "title": "Salam Kelas",
+          "arabic": "السَّلَامُ عَلَيْكُمْ",
+          "instruction": "Jawab salam guru."
         },
         "akhlak": {
-          "title": "Kasih Sayang",
+          "title": "Rahmah 1",
           "arabic": "مَنْ لَا يَرْحَمْ لَا يُرْحَمْ",
-          "instruction": "Siapa yang tidak menyayangi, tidak akan disayangi."
+          "instruction": "Dengarkan dan tirukan matan."
         }
       },
       "rows": [
@@ -73,9 +73,9 @@
         ]
       ],
       "activities": [
+        "Bahasa Arab QURBATA: Jawab salam guru.",
         "Simak Al-Fatihah ayat 1",
-        "Tunjuk كتاب atau قلم",
-        "Praktik satu tindakan kasih sayang."
+        "Akhlak QURBATA: Dengarkan dan tirukan matan."
       ]
     },
     {
@@ -92,14 +92,14 @@
           "instruction": "Dengarkan dan tirukan"
         },
         "arabic": {
-          "title": "Benda Kelas 2",
-          "arabic": "بَابٌ — كُرْسِيٌّ",
-          "instruction": "Tunjuk dan bedakan"
+          "title": "Lihat",
+          "arabic": "اُنْظُرْ",
+          "instruction": "Lihat huruf/halaman yang ditunjuk."
         },
         "akhlak": {
-          "title": "Ucapan Baik",
-          "arabic": "وَالْكَلِمَةُ الطَّيِّبَةُ صَدَقَةٌ",
-          "instruction": "Ucapan yang baik adalah sedekah."
+          "title": "Rahmah 2",
+          "arabic": "مَنْ لَا يَرْحَمْ لَا يُرْحَمْ",
+          "instruction": "Ingat kembali makna kasih sayang."
         }
       },
       "rows": [
@@ -145,9 +145,9 @@
         ]
       ],
       "activities": [
+        "Bahasa Arab QURBATA: Lihat huruf/halaman yang ditunjuk.",
         "Tirukan بِسْمِ اللَّهِ",
-        "Bedakan باب dan كرسي",
-        "Ucapkan satu kalimat baik kepada teman."
+        "Akhlak QURBATA: Ingat kembali makna kasih sayang."
       ]
     },
     {
@@ -164,14 +164,14 @@
           "instruction": "Tirukan lalu sambungkan"
         },
         "arabic": {
-          "title": "Benda Kelas 3",
-          "arabic": "سَبُّورَةٌ — حَقِيبَةٌ",
-          "instruction": "Lihat lalu ucapkan"
+          "title": "Dengarkan",
+          "arabic": "اِسْتَمِعْ",
+          "instruction": "Dengarkan model bacaan."
         },
         "akhlak": {
-          "title": "Bersuci",
-          "arabic": "الطُّهُورُ شَطْرُ الْإِيمَانِ",
-          "instruction": "Bersuci adalah separuh dari iman."
+          "title": "Rahmah 3",
+          "arabic": "مَنْ لَا يَرْحَمْ لَا يُرْحَمْ",
+          "instruction": "Praktikkan satu tindakan kasih sayang."
         }
       },
       "rows": [
@@ -217,9 +217,9 @@
         ]
       ],
       "activities": [
+        "Bahasa Arab QURBATA: Dengarkan model bacaan.",
         "Sambungkan الرَّحْمَٰنِ الرَّحِيمِ",
-        "Tunjuk سبورة atau حقيبة",
-        "Periksa kebersihan diri dan area belajar."
+        "Akhlak QURBATA: Praktikkan satu tindakan kasih sayang."
       ]
     },
     {
@@ -236,14 +236,14 @@
           "instruction": "Sambungkan ayat 1"
         },
         "arabic": {
-          "title": "Lingkungan Qurani",
-          "arabic": "مُصْحَفٌ — مَسْجِدٌ",
-          "instruction": "Tunjuk dan ucapkan"
+          "title": "Tirukan",
+          "arabic": "رَدِّدْ",
+          "instruction": "Tirukan bacaan guru."
         },
         "akhlak": {
-          "title": "Wajah Ramah",
-          "arabic": "تَبَسُّمُكَ فِي وَجْهِ أَخِيكَ لَكَ صَدَقَةٌ",
-          "instruction": "Senyummu kepada saudaramu adalah sedekah bagimu."
+          "title": "Ucapan Baik 1",
+          "arabic": "وَالْكَلِمَةُ الطَّيِّبَةُ صَدَقَةٌ",
+          "instruction": "Dengarkan dan tirukan matan."
         }
       },
       "rows": [
@@ -289,9 +289,9 @@
         ]
       ],
       "activities": [
+        "Bahasa Arab QURBATA: Tirukan bacaan guru.",
         "Baca ayat 1 utuh",
-        "Tunjuk مصحف atau مسجد",
-        "Sapa teman dengan wajah ramah."
+        "Akhlak QURBATA: Dengarkan dan tirukan matan."
       ]
     },
     {
@@ -308,14 +308,14 @@
           "instruction": "Ucapkan tanpa model awal"
         },
         "arabic": {
-          "title": "Lingkungan Dekat",
-          "arabic": "بَيْتٌ — مَاءٌ",
-          "instruction": "Ucapkan dan kenali"
+          "title": "Bacalah",
+          "arabic": "اِقْرَأْ",
+          "instruction": "Baca bagian yang ditunjuk."
         },
         "akhlak": {
-          "title": "Haya’ Terpuji",
-          "arabic": "الْحَيَاءُ لَا يَأْتِي إِلَّا بِخَيْرٍ",
-          "instruction": "Rasa malu yang terpuji tidak mendatangkan kecuali kebaikan."
+          "title": "Ucapan Baik 2",
+          "arabic": "وَالْكَلِمَةُ الطَّيِّبَةُ صَدَقَةٌ",
+          "instruction": "Sebutkan contoh ucapan baik."
         }
       },
       "rows": [
@@ -361,9 +361,9 @@
         ]
       ],
       "activities": [
+        "Bahasa Arab QURBATA: Baca bagian yang ditunjuk.",
         "Recall ayat 1",
-        "Ucapkan بيت atau ماء",
-        "Pilih satu sikap haya’ terpuji dalam belajar."
+        "Akhlak QURBATA: Sebutkan contoh ucapan baik."
       ]
     },
     {
@@ -380,14 +380,14 @@
           "instruction": "Dengarkan dan tirukan"
         },
         "arabic": {
-          "title": "Orang & Demonstratif",
-          "arabic": "مُعَلِّمٌ — هٰذَا",
-          "instruction": "Ucapkan dengan menunjuk"
+          "title": "Ulangi",
+          "arabic": "أَعِدْ",
+          "instruction": "Ulangi bacaan saat diminta."
         },
         "akhlak": {
-          "title": "Kelembutan",
-          "arabic": "إِنَّ الرِّفْقَ لَا يَكُونُ فِي شَيْءٍ إِلَّا زَانَهُ",
-          "instruction": "Kelembutan tidak ada pada sesuatu kecuali menghiasinya."
+          "title": "Ucapan Baik 3",
+          "arabic": "وَالْكَلِمَةُ الطَّيِّبَةُ صَدَقَةٌ",
+          "instruction": "Biasakan satu ucapan baik di kelas."
         }
       },
       "rows": [
@@ -433,9 +433,9 @@
         ]
       ],
       "activities": [
+        "Bahasa Arab QURBATA: Ulangi bacaan saat diminta.",
         "Tirukan awal ayat 2",
-        "Tunjuk معلّم sambil berkata هذا",
-        "Lakukan satu tindakan dengan lembut."
+        "Akhlak QURBATA: Biasakan satu ucapan baik di kelas."
       ]
     },
     {
@@ -452,14 +452,14 @@
           "instruction": "Tirukan lalu sambungkan"
         },
         "arabic": {
-          "title": "Peserta Didik",
-          "arabic": "طَالِبٌ — هٰذَا",
-          "instruction": "Ganti objek dan ucapkan"
+          "title": "Sekali Lagi",
+          "arabic": "مَرَّةً أُخْرَى",
+          "instruction": "Ulangi sekali lagi."
         },
         "akhlak": {
-          "title": "Salam",
-          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
-          "instruction": "Sebarkanlah salam di antara kalian."
+          "title": "Rifq 1",
+          "arabic": "إِنَّ الرِّفْقَ لَا يَكُونُ فِي شَيْءٍ إِلَّا زَانَهُ",
+          "instruction": "Dengarkan dan tirukan matan."
         }
       },
       "rows": [
@@ -505,9 +505,9 @@
         ]
       ],
       "activities": [
+        "Bahasa Arab QURBATA: Ulangi sekali lagi.",
         "Tirukan lanjutan ayat 2",
-        "Tunjuk طالب sambil berkata هذا",
-        "Beri salam ketika bertemu."
+        "Akhlak QURBATA: Dengarkan dan tirukan matan."
       ]
     },
     {
@@ -524,14 +524,14 @@
           "instruction": "Sambungkan ayat 2"
         },
         "arabic": {
-          "title": "Laki-laki & Perempuan",
-          "arabic": "وَلَدٌ — بِنْتٌ — هٰذَا — هٰذِهِ",
-          "instruction": "Bedakan dan tunjuk"
+          "title": "Ya / Tidak",
+          "arabic": "نَعَمْ — لَا",
+          "instruction": "Respons singkat sesuai pertanyaan guru."
         },
         "akhlak": {
-          "title": "Kebaikan Kecil",
-          "arabic": "لَا تَحْقِرَنَّ مِنَ الْمَعْرُوفِ شَيْئًا",
-          "instruction": "Jangan meremehkan kebaikan sekecil apa pun."
+          "title": "Rifq 2",
+          "arabic": "إِنَّ الرِّفْقَ لَا يَكُونُ فِي شَيْءٍ إِلَّا زَانَهُ",
+          "instruction": "Kenali perilaku lembut."
         }
       },
       "rows": [
@@ -577,9 +577,9 @@
         ]
       ],
       "activities": [
+        "Bahasa Arab QURBATA: Respons singkat sesuai pertanyaan guru.",
         "Sambungkan ayat 2",
-        "Bedakan هذا dan هذه",
-        "Lakukan satu kebaikan kecil."
+        "Akhlak QURBATA: Kenali perilaku lembut."
       ]
     },
     {
@@ -596,14 +596,14 @@
           "instruction": "Sambungkan ayat 1–2"
         },
         "arabic": {
-          "title": "Guru & Siswi",
-          "arabic": "مُعَلِّمَةٌ — طَالِبَةٌ — مَا — مَنْ",
-          "instruction": "Tanya jawab terpandu"
+          "title": "Penguatan",
+          "arabic": "أَحْسَنْتَ — أَحْسَنْتِ",
+          "instruction": "Kenali ungkapan penguatan guru."
         },
         "akhlak": {
-          "title": "Niat",
-          "arabic": "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ",
-          "instruction": "Sesungguhnya amal-amal bergantung pada niat."
+          "title": "Rifq 3",
+          "arabic": "إِنَّ الرِّفْقَ لَا يَكُونُ فِي شَيْءٍ إِلَّا زَانَهُ",
+          "instruction": "Praktikkan kelembutan saat belajar."
         }
       },
       "rows": [
@@ -649,9 +649,9 @@
         ]
       ],
       "activities": [
+        "Bahasa Arab QURBATA: Kenali ungkapan penguatan guru.",
         "Sambungkan ayat 1–2",
-        "Tanya ما / من secara lisan",
-        "Luruskan niat sebelum belajar."
+        "Akhlak QURBATA: Praktikkan kelembutan saat belajar."
       ]
     },
     {
@@ -668,14 +668,14 @@
           "instruction": "Mulai dari ayat yang ditunjuk guru"
         },
         "arabic": {
-          "title": "Gerbang Siklus 1",
-          "arabic": "هٰذَا كِتَابٌ — هٰذِهِ حَقِيبَةٌ",
-          "instruction": "Respons sesuai objek"
+          "title": "Checkpoint Bi’ah",
+          "arabic": "اُنْظُرْ — اِسْتَمِعْ — رَدِّدْ — اِقْرَأْ — أَعِدْ",
+          "instruction": "Gunakan instruksi yang sudah dikenal tanpa ekspresi baru."
         },
         "akhlak": {
-          "title": "Konsistensi",
-          "arabic": "أَحَبُّ الْأَعْمَالِ إِلَى اللَّهِ تَعَالَى أَدْوَمُهَا وَإِنْ قَلَّ",
-          "instruction": "Amal yang paling dicintai Allah adalah yang terus-menerus walaupun sedikit."
+          "title": "Niat",
+          "arabic": "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ",
+          "instruction": "Luruskan niat sebelum belajar."
         }
       },
       "rows": [
@@ -721,9 +721,9 @@
         ]
       ],
       "activities": [
+        "Bahasa Arab QURBATA: Gunakan instruksi yang sudah dikenal tanpa ekspresi baru.",
         "Recall ayat 1–2",
-        "Respons objek Siklus 1",
-        "Pilih satu kebiasaan baik kecil dan lakukan konsisten."
+        "Akhlak QURBATA: Luruskan niat sebelum belajar."
       ]
     },
     {
@@ -740,14 +740,14 @@
           "instruction": "Dengarkan dan tirukan"
         },
         "arabic": {
-          "title": "Tempat 1",
-          "arabic": "فَصْلٌ — غُرْفَةٌ",
-          "instruction": "Kenali dan ucapkan"
+          "title": "Bukalah",
+          "arabic": "اِفْتَحْ",
+          "instruction": "Buka buku/halaman saat diminta."
         },
         "akhlak": {
-          "title": "Tidak Mengganggu",
-          "arabic": "الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ",
-          "instruction": "Muslim yang baik ialah yang kaum Muslimin selamat dari lisan dan tangannya."
+          "title": "Istiqamah 1",
+          "arabic": "أَحَبُّ الْأَعْمَالِ إِلَى اللَّهِ تَعَالَى أَدْوَمُهَا وَإِنْ قَلَّ",
+          "instruction": "Dengarkan pesan tentang konsistensi."
         }
       },
       "rows": [
@@ -793,9 +793,9 @@
         ]
       ],
       "activities": [
+        "Bahasa Arab QURBATA: Buka buku/halaman saat diminta.",
         "Tirukan الرَّحْمَٰنِ",
-        "Ucapkan فصل atau غرفة",
-        "Jaga lisan dan tangan agar teman aman."
+        "Akhlak QURBATA: Dengarkan pesan tentang konsistensi."
       ]
     },
     {
@@ -812,14 +812,14 @@
           "instruction": "Tirukan lalu sambungkan"
         },
         "arabic": {
-          "title": "Tempat 2",
-          "arabic": "مَدْرَسَةٌ — نَافِذَةٌ",
-          "instruction": "Kenali dan ucapkan"
+          "title": "Tutuplah",
+          "arabic": "أَغْلِقْ",
+          "instruction": "Tutup buku/halaman saat diminta."
         },
         "akhlak": {
-          "title": "Kendali Marah",
-          "arabic": "لَا تَغْضَبْ، وَلَكَ الْجَنَّةُ",
-          "instruction": "Jangan marah, dan bagimu surga."
+          "title": "Istiqamah 2",
+          "arabic": "أَحَبُّ الْأَعْمَالِ إِلَى اللَّهِ تَعَالَى أَدْوَمُهَا وَإِنْ قَلَّ",
+          "instruction": "Pilih satu kebiasaan baik kecil."
         }
       },
       "rows": [
@@ -865,9 +865,9 @@
         ]
       ],
       "activities": [
+        "Bahasa Arab QURBATA: Tutup buku/halaman saat diminta.",
         "Tirukan الرَّحِيمِ",
-        "Ucapkan مدرسة atau نافذة",
-        "Kendalikan diri ketika mulai marah."
+        "Akhlak QURBATA: Pilih satu kebiasaan baik kecil."
       ]
     },
     {
@@ -884,14 +884,14 @@
           "instruction": "Sambungkan ayat 3"
         },
         "arabic": {
-          "title": "Benda & Sifat",
-          "arabic": "سَرِيرٌ — جَدِيدٌ",
-          "instruction": "Ucapkan pasangan"
+          "title": "Buku / Halaman",
+          "arabic": "كِتَابٌ — صَفْحَةٌ",
+          "instruction": "Kenali benda dalam aktivitas belajar."
         },
         "akhlak": {
-          "title": "Kebaikan bagi Sesama",
-          "arabic": "لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",
-          "instruction": "Belum sempurna iman seseorang hingga ia mencintai untuk saudaranya apa yang ia cintai untuk dirinya."
+          "title": "Kendali Diri",
+          "arabic": "لَا تَغْضَبْ، وَلَكَ الْجَنَّةُ",
+          "instruction": "Latih kendali marah."
         }
       },
       "rows": [
@@ -937,9 +937,9 @@
         ]
       ],
       "activities": [
+        "Bahasa Arab QURBATA: Kenali benda dalam aktivitas belajar.",
         "Sambungkan ayat 3",
-        "Pasangkan سرير dan جديد",
-        "Harapkan satu kebaikan untuk teman sebagaimana untuk diri sendiri."
+        "Akhlak QURBATA: Latih kendali marah."
       ]
     },
     {
@@ -956,14 +956,14 @@
           "instruction": "Sambungkan ayat 1–3"
         },
         "arabic": {
-          "title": "Kontras Sifat 1",
-          "arabic": "قَدِيمٌ — كَبِيرٌ",
-          "instruction": "Bedakan sifat"
+          "title": "Pena / Pelajaran",
+          "arabic": "قَلَمٌ — دَرْسٌ",
+          "instruction": "Kenali benda/konteks belajar."
         },
         "akhlak": {
-          "title": "Membantu Sesama",
+          "title": "Membantu 1",
           "arabic": "وَاللَّهُ فِي عَوْنِ الْعَبْدِ مَا كَانَ الْعَبْدُ فِي عَوْنِ أَخِيهِ",
-          "instruction": "Allah menolong seorang hamba selama ia menolong saudaranya."
+          "instruction": "Bantu satu kebutuhan teman."
         }
       },
       "rows": [
@@ -1009,9 +1009,9 @@
         ]
       ],
       "activities": [
+        "Bahasa Arab QURBATA: Kenali benda/konteks belajar.",
         "Sambungkan ayat 1–3",
-        "Bedakan قديم dan كبير",
-        "Bantu satu kebutuhan teman yang wajar dan aman."
+        "Akhlak QURBATA: Bantu satu kebutuhan teman."
       ]
     },
     {
@@ -1028,14 +1028,14 @@
           "instruction": "Ulangi bagian yang paling lemah"
         },
         "arabic": {
-          "title": "Kontras Sifat 2",
-          "arabic": "صَغِيرٌ — جَمِيلٌ",
-          "instruction": "Deskripsikan secara lisan"
+          "title": "Guru / Peserta",
+          "arabic": "مُعَلِّمٌ — مُعَلِّمَةٌ — طَالِبٌ — طَالِبَةٌ",
+          "instruction": "Kenali peran dalam kelas QURBATA."
         },
         "akhlak": {
-          "title": "Belajar Al-Qur’an",
-          "arabic": "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ",
-          "instruction": "Sebaik-baik kalian adalah yang belajar Al-Qur’an dan mengajarkannya."
+          "title": "Membantu 2",
+          "arabic": "وَاللَّهُ فِي عَوْنِ الْعَبْدِ مَا كَانَ الْعَبْدُ فِي عَوْنِ أَخِيهِ",
+          "instruction": "Ulangi dan biasakan sikap membantu."
         }
       },
       "rows": [
@@ -1081,9 +1081,9 @@
         ]
       ],
       "activities": [
+        "Bahasa Arab QURBATA: Kenali peran dalam kelas QURBATA.",
         "Recall ayat 1–3",
-        "Deskripsikan dengan صغير / جميل",
-        "Baca bersama guru lalu bantu teman mengulang."
+        "Akhlak QURBATA: Ulangi dan biasakan sikap membantu."
       ]
     }
   ]
