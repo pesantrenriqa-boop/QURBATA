@@ -243,3 +243,12 @@ body {
 .front-motto { margin: 13mm auto 0; padding: 5mm; border-radius: 3mm; background: var(--teal-100); }
 .front-motto .arabic { margin: 0; font-size: 22pt; line-height: 1.5; }
 .front-motto small { color: var(--teal-700); font-weight: 800; }
+
+/* Official book-front format: restrained editorial layout, not lesson-card layout. */
+.official-front { text-align: left; padding: 12mm 13mm 6mm; }
+.official-front h1 { text-align: center; letter-spacing: .04em; font-size: 17pt; margin: 5mm 0 12mm; }
+.official-epigraph { border: 0; border-top: .35mm solid var(--blue-700); border-bottom: .35mm solid var(--blue-700); border-radius: 0; background: transparent; padding: 7mm 3mm 5mm; text-align: center; }
+.official-epigraph .front-arabic { font-family: "QURBATA KFGQPC Uthmani", serif !important; font-size: 24pt; line-height: 1.7; }
+.official-front .front-body { margin: 10mm auto 0; max-width: 124mm; text-align: justify; font-size: 10.5pt; line-height: 1.75; }
+.official-front .front-motto { text-align: center; background: transparent; border-top: .25mm solid var(--teal-700); border-bottom: .25mm solid var(--teal-700); border-radius: 0; }
+.official-front .front-motto .arabic { font-family: "QURBATA KFGQPC Uthmani", serif !important; }
