@@ -291,3 +291,14 @@ body {
 .concept-items span{display:flex;align-items:center;gap:1.5mm;white-space:nowrap}
 .concept-items b,.concept-items strong{font-size:17pt;font-weight:400;line-height:1}
 .concept-items i{font-family:sans-serif;font-size:9pt;font-style:normal;color:#566}
+
+/* v1.0 curriculum strip layout fix: strips occupy their own grid row, never overlay practice. */
+.book-page--concept{grid-template-rows:8mm 16mm 25mm 11mm minmax(0,1fr) 25mm 8mm}
+.book-page--review{grid-template-rows:8mm 16mm 25mm 13mm minmax(0,1fr) 25mm 8mm}
+.book-page--concept.book-page--review{grid-template-rows:8mm 16mm 25mm 13mm 11mm minmax(0,1fr) 25mm 8mm}
+.book-page--concept .concept-intro,.book-page--review .review-strip{margin:0;min-height:0;height:100%;align-self:stretch}
+.book-page--concept .practice-panel,.book-page--review .practice-panel{min-height:0;height:100%}
+.concept-intro{padding:1.2mm 3mm;justify-content:center}
+.concept-intro h2{font-size:7.5pt;min-width:14mm}
+.concept-items{justify-content:center;flex:1;gap:7mm}
+.concept-items b,.concept-items strong{font-size:20pt}
