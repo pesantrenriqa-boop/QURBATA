@@ -252,3 +252,14 @@ body {
 .official-front .front-body { margin: 10mm auto 0; max-width: 124mm; text-align: justify; font-size: 10.5pt; line-height: 1.75; }
 .official-front .front-motto { text-align: center; background: transparent; border-top: .25mm solid var(--teal-700); border-bottom: .25mm solid var(--teal-700); border-radius: 0; }
 .official-front .front-motto .arabic { font-family: "QURBATA KFGQPC Uthmani", serif !important; }
+
+/* v0.7 — true book-front typography: dense continuous prose, no slide-like cards. */
+.official-front { padding: 7mm 10mm 3mm; text-align: left; }
+.official-front h1 { margin: 1mm 0 5mm; font-size: 13.5pt; text-align:center; letter-spacing:.02em; }
+.official-epigraph { border:0; padding:0; margin:0; text-align:inherit; }
+.official-epigraph .front-arabic { font-family:"QURBATA KFGQPC Uthmani",serif !important; font-size:13.2pt; line-height:1.72; text-align:justify; margin:0 0 4mm; white-space:pre-line; }
+.official-front .front-source { text-align:right; font-size:6.5pt; margin:-2mm 0 3mm; }
+.official-front .front-body { max-width:none; margin:0; font-size:8.7pt; line-height:1.55; text-align:justify; text-indent:5mm; }
+.official-front .front-motto { margin:4mm 0 0; padding:2.5mm 0; background:transparent; border-top:.2mm solid var(--teal-700); border-bottom:.2mm solid var(--teal-700); }
+.official-front .front-motto .arabic { font-size:13pt; line-height:1.45; }
+.front-matter-page { grid-template-rows:7mm minmax(0,1fr) 7mm; }
