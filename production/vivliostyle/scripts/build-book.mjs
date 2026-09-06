@@ -134,7 +134,7 @@ const pages = await Promise.all(data.pages.map(async (page) => {
 
 const html = template
   .replace("/*__BOOK_CSS__*/", css)
-  .replace("<!--__BOOK_PAGES__-->", `${frontMatter}\n${pages.join("\n")}`);
+  .replace("<!--__BOOK_PAGES__-->", process.env.QURBATA_FRONT_MATTER_ONLY === "1" ? frontMatter : `${frontMatter}\n${pages.join("\n")}`);
 
 await fs.mkdir(path.join(root, "dist"), { recursive: true });
 await fs.mkdir(path.join(root, "dist/fonts"), { recursive: true });
