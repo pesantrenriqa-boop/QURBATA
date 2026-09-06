@@ -105,7 +105,7 @@ const frontMatterData = [
         ["Tartil", "Kompetensi inti; latihan membaca mendapat porsi terbesar dan bergerak bertahap."],
         ["Tahfidz", "Dimulai dari Surah An-Nas dan berkembang ayat demi ayat disertai murojaah."],
         ["Bahasa Arab", "Ungkapan fungsional untuk membangun bi’ah ‘Arabiyah selama pembelajaran."],
-        ["Akhlak / NIDHOM", "Hadis atau nasihat dibiasakan beberapa pertemuan hingga tampak dalam perilaku."],
+        ["Akhlak", "Hadis atau nasihat dibiasakan beberapa pertemuan hingga tampak dalam perilaku."],
         ["Rekam Belajar", "Tanggal, nilai, tanda tangan, QR kompetensi, dan RIQA OS mencatat perkembangan."]
       ]
     }
@@ -119,7 +119,7 @@ const frontMatterData = [
       "Bagian Latihan Tartil merupakan area utama. Guru mencontohkan bacaan melalui talqin, peserta menirukan, kemudian membaca kembali melalui talaqqi. Kesalahan dikoreksi pada saat yang tepat dan bagian yang belum mantap diulang. Ukuran huruf dan jarak latihan sengaja memberi ruang agar perhatian peserta terarah pada bentuk dan harakat.",
       "Bagian Tahfidz menunjukkan target hafalan yang menyertai halaman. Guru membacakan ayat dengan benar, peserta mengikuti, lalu mengulang hingga cukup kuat. Hafalan lama tetap dimurojaah sebelum atau sesudah penambahan target baru.",
       "Bagian Bahasa Arab/Bi’ah memuat ungkapan yang digunakan dalam suasana belajar. Guru tidak cukup meminta peserta menghafalkannya; ungkapan tersebut dipakai secara nyata ketika membuka pelajaran, memberi instruksi, bertanya, menjawab, atau menutup kegiatan. Pengulangan alami membentuk bi’ah ‘Arabiyah tanpa mengubah sesi Tartil menjadi pelajaran nahwu.",
-      "Bagian Akhlak/NIDHOM membawa hadis atau nasihat terpilih ke dalam pembiasaan. Guru menjelaskan makna secara sederhana, memberi contoh perilaku, lalu memilih aktivitas yang dapat dilakukan. Satu nilai boleh dipertahankan pada beberapa pertemuan sampai menjadi kebiasaan.",
+      "Bagian Akhlak membawa hadis atau nasihat terpilih ke dalam pembiasaan. Guru menjelaskan makna secara sederhana, memberi contoh perilaku, lalu memilih aktivitas yang dapat dilakukan. Satu nilai boleh dipertahankan pada beberapa pertemuan sampai menjadi kebiasaan.",
       "Kolom Aktivitas Bi’ah menjadi catatan praktik, bukan sekadar ruang yang harus diisi. Tanggal menunjukkan pelaksanaan, nilai merekam capaian sesuai standar guru, dan tanda tangan menjadi pengesahan pendamping. Catatan singkat dapat digunakan bila ada bagian yang perlu diulang.",
       "QR kompetensi menghubungkan buku dengan RIQA OS. Melalui sistem ini, peserta dan pendamping dapat diarahkan kepada materi pendukung, contoh, asesmen, atau rekam perkembangan yang relevan. QR tidak menggantikan guru dan tidak mengubah buku menjadi pembelajaran mandiri sepenuhnya.",
       "Bagi orang tua atau pendamping di rumah, tugas utama adalah membantu pengulangan materi yang telah diajarkan, menjaga rutinitas, mendengarkan hafalan, dan menguatkan pembiasaan Akhlak. Hindari mengajarkan kompetensi baru sebelum guru membukanya agar pola belajar tetap konsisten."
@@ -131,7 +131,7 @@ const frontMatterData = [
         ["Latihan Tartil", "Guru talqin → peserta menirukan → talaqqi → koreksi → pengulangan."],
         ["Tahfidz", "Dengar → tiru → ulang → sambung → murojaah hafalan sebelumnya."],
         ["Bahasa Arab / Bi’ah", "Gunakan ungkapan secara nyata dalam instruksi dan interaksi kelas."],
-        ["Akhlak / NIDHOM", "Pahami pesan → beri contoh → praktikkan → pertahankan sampai menjadi kebiasaan."],
+        ["Akhlak", "Pahami pesan → beri contoh → praktikkan → pertahankan sampai menjadi kebiasaan."],
         ["Aktivitas Bi’ah", "Catat praktik yang benar-benar dilakukan peserta."],
         ["Tanggal · Nilai · TTD", "Isi setelah verifikasi sebagai rekam perkembangan."],
         ["QR Kompetensi", "Hubungkan halaman fisik dengan materi, asesmen, dan rekam RIQA OS."],
@@ -160,7 +160,7 @@ const frontMatterData = [
         ["04", "Latihan & murojaah", "Perbanyak praktik dan sisipkan materi lama."],
         ["05", "Tahfidz", "Dengar, tiru, ulang, sambung, lalu murojaah."],
         ["06", "Bi’ah ‘Arabiyah", "Gunakan ungkapan Arab sesuai tingkat peserta."],
-        ["07", "Akhlak / NIDHOM", "Latih satu perilaku yang dapat diamati."],
+        ["07", "Akhlak", "Latih satu perilaku yang dapat diamati."],
         ["08", "Verifikasi", "Nilai capaian; lanjut bila kompeten, ulangi bila belum mantap."]
       ]
     }
@@ -171,7 +171,7 @@ const frontMatterData = [
     source: "Qur’an · Bahasa Arab · Tahfidz · Akhlak",
     paragraphs: [
       "Peta kompetensi Jilid 1 dibaca dalam empat jalur yang berjalan berdampingan. Jalur pertama adalah Tartil sebagai kompetensi inti: peserta bergerak dari kemampuan dasar menuju bentuk yang lebih kompleks secara berurutan. Jalur kedua adalah Tahfidz yang bergerak ayat demi ayat dan selalu disertai murojaah.",
-      "Jalur ketiga adalah Bahasa Arab QURBATA sebagai bi’ah kelas. Targetnya bukan menyelesaikan bab tata bahasa, tetapi membuat ungkapan sederhana hadir dalam pengalaman belajar sehari-hari. Jalur keempat adalah Akhlak/NIDHOM: nilai dipilih, dipahami, dipraktikkan, dan dipertahankan hingga menjadi kebiasaan.",
+      "Jalur ketiga adalah Bahasa Arab QURBATA sebagai bi’ah kelas. Targetnya bukan menyelesaikan bab tata bahasa, tetapi membuat ungkapan sederhana hadir dalam pengalaman belajar sehari-hari. Jalur keempat adalah Akhlak: nilai dipilih, dipahami, dipraktikkan, dan dipertahankan hingga menjadi kebiasaan.",
       "Guru menggunakan peta ini untuk melihat hubungan antarkompetensi, sedangkan rincian latihan tetap berada pada halaman materi. Peta bukan alasan untuk mempercepat peserta; ia berfungsi memastikan arah perkembangan tetap jelas dari awal hingga akhir Jilid 1."
     ],
     structured: {
@@ -181,7 +181,7 @@ const frontMatterData = [
         ["Tartil", "Kompetensi inti", "Dasar → bertahap → lebih kompleks; tidak melompati kompetensi."],
         ["Tahfidz", "Menjaga ayat dalam hafalan", "An-Nas → ayat demi ayat → murojaah berkelanjutan."],
         ["Bahasa Arab", "Bi’ah kelas", "Ungkapan sederhana → penggunaan berulang → kebiasaan berbahasa."],
-        ["Akhlak / NIDHOM", "Pembiasaan nilai", "Mendengar → memahami → mempraktikkan → membiasakan."]
+        ["Akhlak", "Pembiasaan nilai", "Mendengar → memahami → mempraktikkan → membiasakan."]
       ]
     }
   },
