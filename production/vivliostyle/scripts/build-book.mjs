@@ -98,7 +98,17 @@ const frontMatterData = [
       "Di sekitar latihan inti tersebut, peserta memperoleh target Tahfidz yang ringan dan berkesinambungan, ungkapan Bahasa Arab yang dapat segera digunakan dalam kelas, serta pesan Akhlak yang dibawa ke dalam aktivitas keseharian. Unsur-unsur ini tidak harus selesai sekaligus dalam satu pertemuan; guru menyesuaikan ritme dengan kesiapan peserta.",
       "Setiap halaman juga berfungsi sebagai catatan perjalanan. Tanggal menunjukkan waktu belajar, nilai merekam hasil, tanda tangan memberi validasi pendamping, dan QR menghubungkan halaman dengan kompetensi digital. Dengan cara ini, buku bukan hanya tempat latihan, tetapi menjadi bagian dari rekam perkembangan peserta.",
       "Keberhasilan Jilid 1 tidak dinilai dari seberapa cepat buku selesai. Ukurannya adalah terbentuknya fondasi: bacaan semakin tepat, peserta nyaman mengikuti talaqqi, hafalan terjaga, ungkapan Arab mulai menjadi kebiasaan, dan nilai Akhlak mulai terlihat dalam perilaku belajar."
-    ]
+    ],
+    structured: {
+      kind: "list",
+      items: [
+        ["Tartil", "Kompetensi inti; latihan membaca mendapat porsi terbesar dan bergerak bertahap."],
+        ["Tahfidz", "Dimulai dari Surah An-Nas dan berkembang ayat demi ayat disertai murojaah."],
+        ["Bahasa Arab", "Ungkapan fungsional untuk membangun bi’ah ‘Arabiyah selama pembelajaran."],
+        ["Akhlak / NIDHOM", "Hadis atau nasihat dibiasakan beberapa pertemuan hingga tampak dalam perilaku."],
+        ["Rekam Belajar", "Tanggal, nilai, tanda tangan, QR kompetensi, dan RIQA OS mencatat perkembangan."]
+      ]
+    }
   },
   {
     title: "PETUNJUK PENGGUNAAN BUKU",
@@ -113,7 +123,21 @@ const frontMatterData = [
       "Kolom Aktivitas Bi’ah menjadi catatan praktik, bukan sekadar ruang yang harus diisi. Tanggal menunjukkan pelaksanaan, nilai merekam capaian sesuai standar guru, dan tanda tangan menjadi pengesahan pendamping. Catatan singkat dapat digunakan bila ada bagian yang perlu diulang.",
       "QR kompetensi menghubungkan buku dengan RIQA OS. Melalui sistem ini, peserta dan pendamping dapat diarahkan kepada materi pendukung, contoh, asesmen, atau rekam perkembangan yang relevan. QR tidak menggantikan guru dan tidak mengubah buku menjadi pembelajaran mandiri sepenuhnya.",
       "Bagi orang tua atau pendamping di rumah, tugas utama adalah membantu pengulangan materi yang telah diajarkan, menjaga rutinitas, mendengarkan hafalan, dan menguatkan pembiasaan Akhlak. Hindari mengajarkan kompetensi baru sebelum guru membukanya agar pola belajar tetap konsisten."
-    ]
+    ],
+    structured: {
+      kind: "table",
+      headers: ["Bagian", "Cara Menggunakan"],
+      rows: [
+        ["Latihan Tartil", "Guru talqin → peserta menirukan → talaqqi → koreksi → pengulangan."],
+        ["Tahfidz", "Dengar → tiru → ulang → sambung → murojaah hafalan sebelumnya."],
+        ["Bahasa Arab / Bi’ah", "Gunakan ungkapan secara nyata dalam instruksi dan interaksi kelas."],
+        ["Akhlak / NIDHOM", "Pahami pesan → beri contoh → praktikkan → pertahankan sampai menjadi kebiasaan."],
+        ["Aktivitas Bi’ah", "Catat praktik yang benar-benar dilakukan peserta."],
+        ["Tanggal · Nilai · TTD", "Isi setelah verifikasi sebagai rekam perkembangan."],
+        ["QR Kompetensi", "Hubungkan halaman fisik dengan materi, asesmen, dan rekam RIQA OS."],
+        ["Pendamping di Rumah", "Ulangi yang sudah diajarkan; jangan mendahului kompetensi baru."]
+      ]
+    }
   },
   {
     title: "PANDUAN PENGAJARAN QURBATA",
@@ -126,7 +150,20 @@ const frontMatterData = [
       "Tahfidz dilakukan dengan pola dengar, tiru, ulang, sambung, dan murojaah. Bahasa Arab digunakan dalam instruksi yang sesuai tingkat peserta. Akhlak dihidupkan melalui satu perilaku yang dapat diamati selama proses belajar, misalnya adab mendengar, menunggu giliran, menjaga kebersihan, atau menghormati guru dan teman.",
       "Di akhir pertemuan guru melakukan verifikasi singkat. Peserta yang telah memenuhi target dapat melanjutkan; peserta yang belum mantap diberi pengulangan terarah tanpa stigma. Nilai dan catatan digunakan untuk membantu keputusan pembelajaran, bukan sekadar administrasi.",
       "Guru QURBATA tidak mengejar selesainya halaman. Tugas utamanya adalah menjaga kesinambungan kompetensi. Pergantian guru pun tidak boleh memutus perkembangan peserta karena posisi kompetensi, catatan, dan rekam RIQA OS menjadi rujukan bersama."
-    ]
+    ],
+    structured: {
+      kind: "steps",
+      items: [
+        ["01", "Pembukaan & kesiapan", "Salam, adab, perhatian, dan murojaah singkat."],
+        ["02", "Talqin", "Guru memberi model bacaan yang jelas dan terukur."],
+        ["03", "Talaqqi", "Peserta membaca; guru menyimak dan mengoreksi langsung."],
+        ["04", "Latihan & murojaah", "Perbanyak praktik dan sisipkan materi lama."],
+        ["05", "Tahfidz", "Dengar, tiru, ulang, sambung, lalu murojaah."],
+        ["06", "Bi’ah ‘Arabiyah", "Gunakan ungkapan Arab sesuai tingkat peserta."],
+        ["07", "Akhlak / NIDHOM", "Latih satu perilaku yang dapat diamati."],
+        ["08", "Verifikasi", "Nilai capaian; lanjut bila kompeten, ulangi bila belum mantap."]
+      ]
+    }
   },
   {
     title: "PETA KOMPETENSI JILID 1",
@@ -136,7 +173,17 @@ const frontMatterData = [
       "Peta kompetensi Jilid 1 dibaca dalam empat jalur yang berjalan berdampingan. Jalur pertama adalah Tartil sebagai kompetensi inti: peserta bergerak dari kemampuan dasar menuju bentuk yang lebih kompleks secara berurutan. Jalur kedua adalah Tahfidz yang bergerak ayat demi ayat dan selalu disertai murojaah.",
       "Jalur ketiga adalah Bahasa Arab QURBATA sebagai bi’ah kelas. Targetnya bukan menyelesaikan bab tata bahasa, tetapi membuat ungkapan sederhana hadir dalam pengalaman belajar sehari-hari. Jalur keempat adalah Akhlak/NIDHOM: nilai dipilih, dipahami, dipraktikkan, dan dipertahankan hingga menjadi kebiasaan.",
       "Guru menggunakan peta ini untuk melihat hubungan antarkompetensi, sedangkan rincian latihan tetap berada pada halaman materi. Peta bukan alasan untuk mempercepat peserta; ia berfungsi memastikan arah perkembangan tetap jelas dari awal hingga akhir Jilid 1."
-    ]
+    ],
+    structured: {
+      kind: "table",
+      headers: ["Jalur", "Fungsi", "Arah Perkembangan"],
+      rows: [
+        ["Tartil", "Kompetensi inti", "Dasar → bertahap → lebih kompleks; tidak melompati kompetensi."],
+        ["Tahfidz", "Menjaga ayat dalam hafalan", "An-Nas → ayat demi ayat → murojaah berkelanjutan."],
+        ["Bahasa Arab", "Bi’ah kelas", "Ungkapan sederhana → penggunaan berulang → kebiasaan berbahasa."],
+        ["Akhlak / NIDHOM", "Pembiasaan nilai", "Mendengar → memahami → mempraktikkan → membiasakan."]
+      ]
+    }
   },
   {
     title: "DAFTAR ISI",
@@ -148,13 +195,19 @@ const frontMatterData = [
   }
 ];
 
+function renderStructured(s) {
+  if (s.kind === "table") return `<table class="front-table"><thead><tr>${s.headers.map(h=>`<th>${escapeHtml(h)}</th>`).join("")}</tr></thead><tbody>${s.rows.map(r=>`<tr>${r.map(c=>`<td>${escapeHtml(c)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+  if (s.kind === "steps") return `<ol class="front-steps">${s.items.map(r=>`<li><b>${escapeHtml(r[0])}</b><span><strong>${escapeHtml(r[1])}</strong><small>${escapeHtml(r[2])}</small></span></li>`).join("")}</ol>`;
+  return `<ul class="front-list">${s.items.map(r=>`<li><strong>${escapeHtml(r[0])}</strong><span>${escapeHtml(r[1])}</span></li>`).join("")}</ul>`;
+}
+
 const frontMatter = frontMatterData.map((item, index) => `
   <article class="book-page front-matter-page">
     <header class="page-header"><div class="header-line"></div><div class="book-name"><span class="qurbata-brand-text"><strong>QURBATA</strong><small>Qur’an · Bahasa Arab · Tahfidz · Akhlak</small></span></div><div class="page-number">${String(index + 1).padStart(2, "0")}</div></header>
     <section class="front-matter-content official-front">
       <h1>${escapeHtml(item.title)}</h1>
       <div class="official-epigraph"><p class="arabic front-arabic" lang="ar" dir="rtl">${escapeHtml(item.arabic)}</p>${item.source ? `<p class="front-source">${escapeHtml(item.source)}</p>` : ""}</div>
-      ${(item.paragraphs || [item.body]).filter(Boolean).map(p => `<p class="front-body">${escapeHtml(p)}</p>`).join("\n")}
+      ${item.structured ? renderStructured(item.structured) : (item.paragraphs || [item.body]).filter(Boolean).map(p => `<p class="front-body">${escapeHtml(p)}</p>`).join("\n")}
       ${index === 0 ? `<div class="front-motto"><p class="arabic" lang="ar" dir="rtl">تَعَلَّمْ — اِعْمَلْ — عَلِّمْ</p><small>Belajarlah · Amalkan · Ajarkan</small></div>` : ""}
     </section>
     <footer class="page-footer"><p class="arabic" lang="ar" dir="rtl">تَعَلَّمْ — اِعْمَلْ — عَلِّمْ</p><small>Belajarlah • Amalkan • Ajarkan</small></footer>
