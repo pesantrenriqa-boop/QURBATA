@@ -1091,7 +1091,7 @@
       "pageNumber": "16",
       "title": "Kasrah 1",
       "titleArabic": "الْكَسْرَةُ ١",
-      "tartilCompetency": "Mengenali dan membaca huruf berharakat kasrah secara bertahap.",
+      "tartilCompetency": "Kompetensi baru: بِ تِ ثِ جِ. Murojaah merata seluruh kompetensi sebelumnya.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P016",
       "integration": {
         "tahfidz": {
@@ -1112,44 +1112,44 @@
       },
       "rows": [
         [
-          "بِ تِ ثِ",
-          "جِ حِ خِ",
-          "دِ ذِ رِ"
+          "بِ تِ جِ",
+          "جَ رَ طَ",
+          "ثِ جِ تِ"
         ],
         [
-          "جِ حِ خِ",
-          "دِ ذِ رِ",
-          "زِ سِ شِ"
+          "زَ طَ بِ",
+          "بِ تِ نَ",
+          "جِ بِ ثِ"
         ],
         [
-          "دِ ذِ رِ",
-          "زِ سِ شِ",
-          "صِ ضِ طِ"
+          "فَ نَ تَ",
+          "تِ ثِ بِ",
+          "هَ تَ جِ"
         ],
         [
-          "زِ سِ شِ",
-          "صِ ضِ طِ",
-          "ظِ عِ غِ"
+          "جِ بِ سَ",
+          "ثِ جِ تِ",
+          "خَ سَ عَ"
         ],
         [
-          "صِ ضِ طِ",
-          "ظِ عِ غِ",
-          "فِ قِ كِ"
+          "بِ تِ جِ",
+          "شَ عَ ثِ",
+          "ثِ جِ وَ"
         ],
         [
-          "ظِ عِ غِ",
-          "فِ قِ كِ",
-          "لِ مِ نِ"
+          "تِ ثِ بِ",
+          "كَ وَ جَ",
+          "جِ بِ ثِ"
         ],
         [
-          "فِ قِ كِ",
-          "لِ مِ نِ",
-          "بِ تِ ثِ"
+          "يَ جَ تِ",
+          "تِ ثِ رَ",
+          "بِ تِ جِ"
         ],
         [
-          "لِ مِ نِ",
-          "بِ تِ ثِ",
-          "جِ حِ خِ"
+          "جَ رَ طَ",
+          "ثِ جِ تِ",
+          "زَ طَ بِ"
         ]
       ],
       "activities": [
@@ -1163,7 +1163,7 @@
       "pageNumber": "17",
       "title": "Kasrah 2",
       "titleArabic": "الْكَسْرَةُ ٢",
-      "tartilCompetency": "Mengenali dan membaca huruf berharakat kasrah secara bertahap.",
+      "tartilCompetency": "Kompetensi baru: حِ خِ دِ ذِ. Murojaah merata seluruh kompetensi sebelumnya.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P017",
       "integration": {
         "tahfidz": {
@@ -1184,44 +1184,44 @@
       },
       "rows": [
         [
-          "هِ وِ يِ",
-          "ءِ بِ تِ",
-          "ثِ جِ حِ"
+          "ذِ حِ فَ",
+          "دِ ذِ خِ",
+          "ضَ فَ هَ"
         ],
         [
-          "ءِ بِ تِ",
-          "ثِ جِ حِ",
-          "خِ دِ ذِ"
+          "حِ خِ ذِ",
+          "قَ هَ دِ",
+          "دِ ذِ تَ"
         ],
         [
-          "ثِ جِ حِ",
-          "خِ دِ ذِ",
-          "رِ زِ سِ"
+          "خِ دِ حِ",
+          "بِ تَ ذَ",
+          "ذِ حِ دِ"
         ],
         [
-          "خِ دِ ذِ",
-          "رِ زِ سِ",
-          "شِ صِ ضِ"
+          "ثَ ذَ خِ",
+          "خِ دِ عَ",
+          "حِ خِ ذِ"
         ],
         [
-          "رِ زِ سِ",
-          "شِ صِ ضِ",
-          "طِ ظِ عِ"
+          "شَ عَ مَ",
+          "دِ ذِ خِ",
+          "غَ مَ حِ"
         ],
         [
-          "شِ صِ ضِ",
-          "طِ ظِ عِ",
-          "غِ فِ قِ"
+          "حِ خِ جَ",
+          "ذِ حِ دِ",
+          "يَ جَ زَ"
         ],
         [
-          "طِ ظِ عِ",
-          "غِ فِ قِ",
-          "هِ وِ يِ"
+          "خِ دِ حِ",
+          "حَ زَ ذِ",
+          "ذِ حِ فَ"
         ],
         [
-          "غِ فِ قِ",
-          "هِ وِ يِ",
-          "ءِ بِ تِ"
+          "دِ ذِ خِ",
+          "ضَ فَ هَ",
+          "حِ خِ ذِ"
         ]
       ],
       "activities": [
@@ -1235,7 +1235,7 @@
       "pageNumber": "18",
       "title": "Kasrah 3",
       "titleArabic": "الْكَسْرَةُ ٣",
-      "tartilCompetency": "Mengenali dan membaca huruf berharakat kasrah secara bertahap.",
+      "tartilCompetency": "Kompetensi baru: رِ زِ سِ شِ. Murojaah merata seluruh kompetensi sebelumnya.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P018",
       "integration": {
         "tahfidz": {
@@ -1256,44 +1256,44 @@
       },
       "rows": [
         [
-          "كِ لِ مِ",
-          "نِ هِ وِ",
-          "يِ ءِ بِ"
+          "طَ قَ زِ",
+          "زِ سِ بِ",
+          "رِ زِ شِ"
         ],
         [
-          "نِ هِ وِ",
-          "يِ ءِ بِ",
-          "تِ ثِ جِ"
+          "نَ بِ دِ",
+          "سِ شِ زِ",
+          "تِ دِ رِ"
         ],
         [
-          "يِ ءِ بِ",
-          "تِ ثِ جِ",
-          "حِ خِ دِ"
+          "رِ زِ ذَ",
+          "شِ رِ سِ",
+          "ثَ ذَ ضَ"
         ],
         [
-          "تِ ثِ جِ",
-          "حِ خِ دِ",
-          "ذِ رِ زِ"
+          "زِ سِ رِ",
+          "رَ ضَ شِ",
+          "شِ رِ مَ"
         ],
         [
-          "حِ خِ دِ",
-          "ذِ رِ زِ",
-          "سِ شِ صِ"
+          "سِ شِ زِ",
+          "غَ مَ حَ",
+          "رِ زِ شِ"
         ],
         [
-          "ذِ رِ زِ",
-          "سِ شِ صِ",
-          "ضِ طِ ظِ"
+          "نَ حَ سِ",
+          "سِ شِ ضَ",
+          "زِ سِ رِ"
         ],
         [
-          "سِ شِ صِ",
-          "ضِ طِ ظِ",
-          "كِ لِ مِ"
+          "رَ ضَ قَ",
+          "شِ رِ سِ",
+          "طَ قَ زِ"
         ],
         [
-          "ضِ طِ ظِ",
-          "كِ لِ مِ",
-          "نِ هِ وِ"
+          "زِ سِ بِ",
+          "رِ زِ شِ",
+          "نَ بِ دِ"
         ]
       ],
       "activities": [
@@ -1307,7 +1307,7 @@
       "pageNumber": "19",
       "title": "Kasrah 4",
       "titleArabic": "الْكَسْرَةُ ٤",
-      "tartilCompetency": "Mengenali dan membaca huruf berharakat kasrah secara bertahap.",
+      "tartilCompetency": "Kompetensi baru: صِ ضِ طِ ظِ. Murojaah merata seluruh kompetensi sebelumnya.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P019",
       "integration": {
         "tahfidz": {
@@ -1328,44 +1328,44 @@
       },
       "rows": [
         [
-          "عِ غِ فِ",
-          "قِ كِ لِ",
-          "مِ نِ هِ"
+          "ضِ طِ صِ",
+          "هَ تِ ظِ",
+          "ظِ صِ سِ"
         ],
         [
-          "قِ كِ لِ",
-          "مِ نِ هِ",
-          "وِ يِ ءِ"
+          "طِ ظِ ضِ",
+          "خِ سِ حَ",
+          "صِ ضِ ظِ"
         ],
         [
-          "مِ نِ هِ",
-          "وِ يِ ءِ",
-          "بِ جِ دِ"
+          "شِ حَ طِ",
+          "طِ ظِ ضَ",
+          "ضِ طِ صِ"
         ],
         [
-          "وِ يِ ءِ",
-          "بِ جِ دِ",
-          "تِ حِ ذِ"
+          "رَ ضَ قَ",
+          "ظِ صِ طِ",
+          "طَ قَ ضِ"
         ],
         [
-          "بِ جِ دِ",
-          "تِ حِ ذِ",
-          "ثِ خِ رِ"
+          "ضِ طِ رَ",
+          "صِ ضِ ظِ",
+          "جَ رَ طَ"
         ],
         [
-          "تِ حِ ذِ",
-          "ثِ خِ رِ",
-          "زِ سِ صِ"
+          "طِ ظِ ضِ",
+          "زَ طَ صِ",
+          "صِ ضِ نَ"
         ],
         [
-          "ثِ خِ رِ",
-          "زِ سِ صِ",
-          "عِ غِ فِ"
+          "ظِ صِ طِ",
+          "فَ نَ تِ",
+          "ضِ طِ صِ"
         ],
         [
-          "زِ سِ صِ",
-          "عِ غِ فِ",
-          "قِ كِ لِ"
+          "هَ تِ ظِ",
+          "ظِ صِ سِ",
+          "طِ ظِ ضِ"
         ]
       ],
       "activities": [
@@ -1379,7 +1379,7 @@
       "pageNumber": "20",
       "title": "Kasrah 5",
       "titleArabic": "الْكَسْرَةُ ٥",
-      "tartilCompetency": "Mengenali dan membaca huruf berharakat kasrah secara bertahap.",
+      "tartilCompetency": "Kompetensi baru: عِ غِ فِ قِ. Murojaah merata seluruh kompetensi sebelumnya.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P020",
       "integration": {
         "tahfidz": {
@@ -1400,44 +1400,44 @@
       },
       "rows": [
         [
-          "شِ ضِ طِ",
-          "ظِ عِ فِ",
-          "غِ قِ كِ"
+          "بِ خِ شِ",
+          "قِ عِ فِ",
+          "دِ شِ غِ"
         ],
         [
-          "ظِ عِ فِ",
-          "غِ قِ كِ",
-          "لِ نِ هِ"
+          "غِ فِ حَ",
+          "عِ غِ قِ",
+          "ظِ حَ سَ"
         ],
         [
-          "غِ قِ كِ",
-          "لِ نِ هِ",
-          "مِ وِ يِ"
+          "فِ قِ غِ",
+          "خَ سَ عِ",
+          "عِ غِ جَ"
         ],
         [
-          "لِ نِ هِ",
-          "مِ وِ يِ",
-          "بِ تِ جِ"
+          "قِ عِ فِ",
+          "طَ جَ زَ",
+          "غِ فِ عِ"
         ],
         [
-          "مِ وِ يِ",
-          "بِ تِ جِ",
-          "ثِ حِ دِ"
+          "حَ زَ قِ",
+          "قِ عِ فَ",
+          "فِ قِ غِ"
         ],
         [
-          "بِ تِ جِ",
-          "ثِ حِ دِ",
-          "خِ ذِ رِ"
+          "ضَ فَ هَ",
+          "عِ غِ قِ",
+          "قَ هَ فِ"
         ],
         [
-          "ثِ حِ دِ",
-          "خِ ذِ رِ",
-          "شِ ضِ طِ"
+          "فِ قِ خِ",
+          "غِ فِ عِ",
+          "بِ خِ شِ"
         ],
         [
-          "خِ ذِ رِ",
-          "شِ ضِ طِ",
-          "ظِ عِ فِ"
+          "قِ عِ فِ",
+          "دِ شِ غِ",
+          "غِ فِ حَ"
         ]
       ],
       "activities": [
@@ -1496,7 +1496,7 @@
       "pageNumber": "21",
       "title": "Kasrah 6",
       "titleArabic": "الْكَسْرَةُ ٦",
-      "tartilCompetency": "Mengenali dan membaca huruf berharakat kasrah secara bertahap.",
+      "tartilCompetency": "Kompetensi baru: كِ لِ مِ نِ. Murojaah merata seluruh kompetensi sebelumnya.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P021",
       "integration": {
         "tahfidz": {
@@ -1517,44 +1517,44 @@
       },
       "rows": [
         [
-          "زِ سِ صِ",
-          "شِ ضِ طِ",
-          "ظِ عِ فِ"
+          "نِ كِ مِ",
+          "سِ ظِ تَ",
+          "لِ مِ كِ"
         ],
         [
-          "شِ ضِ طِ",
-          "ظِ عِ فِ",
-          "غِ قِ كِ"
+          "عِ تَ نِ",
+          "نِ كِ سَ",
+          "مِ نِ لِ"
         ],
         [
-          "ظِ عِ فِ",
-          "غِ قِ كِ",
-          "لِ مِ نِ"
+          "خَ سَ حَ",
+          "كِ لِ نِ",
+          "شَ حَ مِ"
         ],
         [
-          "غِ قِ كِ",
-          "لِ مِ نِ",
-          "هِ وِ يِ"
+          "مِ نِ ضَ",
+          "لِ مِ كِ",
+          "رَ ضَ قَ"
         ],
         [
-          "لِ مِ نِ",
-          "هِ وِ يِ",
-          "ءِ بِ تِ"
+          "نِ كِ مِ",
+          "طَ قَ لِ",
+          "لِ مِ بِ"
         ],
         [
-          "هِ وِ يِ",
-          "ءِ بِ تِ",
-          "ثِ جِ حِ"
+          "كِ لِ نِ",
+          "نَ بِ دِ",
+          "مِ نِ لِ"
         ],
         [
-          "ءِ بِ تِ",
-          "ثِ جِ حِ",
-          "زِ سِ صِ"
+          "تِ دِ كِ",
+          "كِ لِ ظِ",
+          "نِ كِ مِ"
         ],
         [
-          "ثِ جِ حِ",
-          "زِ سِ صِ",
-          "شِ ضِ طِ"
+          "سِ ظِ تَ",
+          "لِ مِ كِ",
+          "عِ تَ نِ"
         ]
       ],
       "activities": [
@@ -1568,7 +1568,7 @@
       "pageNumber": "22",
       "title": "Kasrah 7",
       "titleArabic": "الْكَسْرَةُ ٧",
-      "tartilCompetency": "Mengenali dan membaca huruf berharakat kasrah secara bertahap.",
+      "tartilCompetency": "Kompetensi baru: هِ وِ يِ ءِ. Murojaah merata seluruh kompetensi sebelumnya.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P022",
       "integration": {
         "tahfidz": {
@@ -1589,44 +1589,44 @@
       },
       "rows": [
         [
-          "خِ دِ ذِ",
-          "رِ زِ سِ",
-          "شِ صِ ضِ"
+          "يِ ءِ تَ",
+          "وِ يِ هِ",
+          "كِ تَ ذَ"
         ],
         [
-          "رِ زِ سِ",
-          "شِ صِ ضِ",
-          "طِ ظِ عِ"
+          "ءِ هِ يِ",
+          "ثَ ذَ وِ",
+          "وِ يِ رَ"
         ],
         [
-          "شِ صِ ضِ",
-          "طِ ظِ عِ",
-          "غِ فِ قِ"
+          "هِ وِ ءِ",
+          "جَ رَ طَ",
+          "يِ ءِ وِ"
         ],
         [
-          "طِ ظِ عِ",
-          "غِ فِ قِ",
-          "كِ لِ مِ"
+          "زَ طَ هِ",
+          "هِ وِ نَ",
+          "ءِ هِ يِ"
         ],
         [
-          "غِ فِ قِ",
-          "كِ لِ مِ",
-          "نِ هِ وِ"
+          "فَ نَ تِ",
+          "وِ يِ هِ",
+          "هَ تِ ءِ"
         ],
         [
-          "كِ لِ مِ",
-          "نِ هِ وِ",
-          "يِ ءِ بِ"
+          "ءِ هِ سِ",
+          "يِ ءِ وِ",
+          "خِ سِ عِ"
         ],
         [
-          "نِ هِ وِ",
-          "يِ ءِ بِ",
-          "خِ دِ ذِ"
+          "هِ وِ ءِ",
+          "شِ عِ يِ",
+          "يِ ءِ تَ"
         ],
         [
-          "يِ ءِ بِ",
-          "خِ دِ ذِ",
-          "رِ زِ سِ"
+          "وِ يِ هِ",
+          "كِ تَ ذَ",
+          "ءِ هِ يِ"
         ]
       ],
       "activities": [
@@ -1638,9 +1638,9 @@
     {
       "pageId": "QJ1-P023",
       "pageNumber": "23",
-      "title": "Kasrah 8",
-      "titleArabic": "الْكَسْرَةُ ٨",
-      "tartilCompetency": "Mengenali dan membaca huruf berharakat kasrah secara bertahap.",
+      "title": "Penguatan Kasrah",
+      "titleArabic": "تَثْبِيتُ الْكَسْرَةِ",
+      "tartilCompetency": "Penguatan seluruh kasrah dengan murojaah merata kompetensi fathah.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P023",
       "integration": {
         "tahfidz": {
@@ -1661,44 +1661,44 @@
       },
       "rows": [
         [
-          "بِ تِ ثِ",
-          "جِ حِ خِ",
-          "دِ ذِ رِ"
+          "ذِ صِ فِ",
+          "سِ ظِ لِ",
+          "ضِ فِ هِ"
         ],
         [
-          "جِ حِ خِ",
-          "دِ ذِ رِ",
-          "زِ سِ شِ"
+          "عِ لِ ءِ",
+          "قِ هِ ثَ",
+          "مِ ءِ خَ"
         ],
         [
-          "دِ ذِ رِ",
-          "زِ سِ شِ",
-          "صِ ضِ طِ"
+          "وِ ثَ رَ",
+          "بَ خَ شَ",
+          "جَ رَ طَ"
         ],
         [
-          "زِ سِ شِ",
-          "صِ ضِ طِ",
-          "ظِ عِ غِ"
+          "دَ شَ غَ",
+          "زَ طَ كَ",
+          "صَ غَ نَ"
         ],
         [
-          "صِ ضِ طِ",
-          "ظِ عِ غِ",
-          "فِ قِ كِ"
+          "ظَ كَ يَ",
+          "فَ نَ تِ",
+          "لَ يَ حِ"
         ],
         [
-          "ظِ عِ غِ",
-          "فِ قِ كِ",
-          "لِ مِ نِ"
+          "هَ تِ ذِ",
+          "ءَ حِ سِ",
+          "ثِ ذِ ضِ"
         ],
         [
-          "فِ قِ كِ",
-          "لِ مِ نِ",
-          "بِ تِ ثِ"
+          "خِ سِ عِ",
+          "رِ ضِ قِ",
+          "شِ عِ مِ"
         ],
         [
-          "لِ مِ نِ",
-          "بِ تِ ثِ",
-          "جِ حِ خِ"
+          "طِ قِ وِ",
+          "غِ مِ بَ",
+          "كِ وِ جَ"
         ]
       ],
       "activities": [
@@ -1710,9 +1710,9 @@
     {
       "pageId": "QJ1-P024",
       "pageNumber": "24",
-      "title": "Latihan Penuh Kasrah 1",
+      "title": "Latihan Kumulatif Kasrah 1",
       "titleArabic": "تَدْرِيبُ الْكَسْرَةِ ١",
-      "tartilCompetency": "Latihan penuh seluruh huruf berharakat kasrah sebelum masuk dhammah.",
+      "tartilCompetency": "Penguatan seluruh kasrah dengan murojaah merata kompetensi fathah.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P024",
       "integration": {
         "tahfidz": {
@@ -1733,44 +1733,44 @@
       },
       "rows": [
         [
-          "هِ وِ يِ",
-          "ءِ بِ تِ",
-          "ثِ جِ حِ"
+          "عِ لِ ءِ",
+          "قِ هِ ثَ",
+          "مِ ءِ خَ"
         ],
         [
-          "ءِ بِ تِ",
-          "ثِ جِ حِ",
-          "خِ دِ ذِ"
+          "وِ ثَ رَ",
+          "بَ خَ شَ",
+          "جَ رَ طَ"
         ],
         [
-          "ثِ جِ حِ",
-          "خِ دِ ذِ",
-          "رِ زِ سِ"
+          "دَ شَ غَ",
+          "زَ طَ كَ",
+          "صَ غَ نَ"
         ],
         [
-          "خِ دِ ذِ",
-          "رِ زِ سِ",
-          "شِ صِ ضِ"
+          "ظَ كَ يَ",
+          "فَ نَ تِ",
+          "لَ يَ حِ"
         ],
         [
-          "رِ زِ سِ",
-          "شِ صِ ضِ",
-          "طِ ظِ عِ"
+          "هَ تِ ذِ",
+          "ءَ حِ سِ",
+          "ثِ ذِ ضِ"
         ],
         [
-          "شِ صِ ضِ",
-          "طِ ظِ عِ",
-          "غِ فِ قِ"
+          "خِ سِ عِ",
+          "رِ ضِ قِ",
+          "شِ عِ مِ"
         ],
         [
-          "طِ ظِ عِ",
-          "غِ فِ قِ",
-          "هِ وِ يِ"
+          "طِ قِ وِ",
+          "غِ مِ بَ",
+          "كِ وِ جَ"
         ],
         [
-          "غِ فِ قِ",
-          "هِ وِ يِ",
-          "ءِ بِ تِ"
+          "نِ بَ دَ",
+          "يِ جَ زَ",
+          "تَ دَ صَ"
         ]
       ],
       "activities": [
@@ -1782,9 +1782,9 @@
     {
       "pageId": "QJ1-P025",
       "pageNumber": "25",
-      "title": "Latihan Penuh Kasrah 2",
+      "title": "Latihan Kumulatif Kasrah 2",
       "titleArabic": "تَدْرِيبُ الْكَسْرَةِ ٢",
-      "tartilCompetency": "Latihan penuh seluruh huruf berharakat kasrah sebelum masuk dhammah.",
+      "tartilCompetency": "Penguatan seluruh kasrah dengan murojaah merata kompetensi fathah.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P025",
       "integration": {
         "tahfidz": {
@@ -1805,44 +1805,44 @@
       },
       "rows": [
         [
-          "كِ لِ مِ",
-          "نِ هِ وِ",
-          "يِ ءِ بِ"
+          "وِ ثَ رَ",
+          "بَ خَ شَ",
+          "جَ رَ طَ"
         ],
         [
-          "نِ هِ وِ",
-          "يِ ءِ بِ",
-          "تِ ثِ جِ"
+          "دَ شَ غَ",
+          "زَ طَ كَ",
+          "صَ غَ نَ"
         ],
         [
-          "يِ ءِ بِ",
-          "تِ ثِ جِ",
-          "حِ خِ دِ"
+          "ظَ كَ يَ",
+          "فَ نَ تِ",
+          "لَ يَ حِ"
         ],
         [
-          "تِ ثِ جِ",
-          "حِ خِ دِ",
-          "ذِ رِ زِ"
+          "هَ تِ ذِ",
+          "ءَ حِ سِ",
+          "ثِ ذِ ضِ"
         ],
         [
-          "حِ خِ دِ",
-          "ذِ رِ زِ",
-          "سِ شِ صِ"
+          "خِ سِ عِ",
+          "رِ ضِ قِ",
+          "شِ عِ مِ"
         ],
         [
-          "ذِ رِ زِ",
-          "سِ شِ صِ",
-          "ضِ طِ ظِ"
+          "طِ قِ وِ",
+          "غِ مِ بَ",
+          "كِ وِ جَ"
         ],
         [
-          "سِ شِ صِ",
-          "ضِ طِ ظِ",
-          "كِ لِ مِ"
+          "نِ بَ دَ",
+          "يِ جَ زَ",
+          "تَ دَ صَ"
         ],
         [
-          "ضِ طِ ظِ",
-          "كِ لِ مِ",
-          "نِ هِ وِ"
+          "حَ زَ ظَ",
+          "ذَ صَ فَ",
+          "سَ ظَ لَ"
         ]
       ],
       "activities": [
@@ -1851,5 +1851,17 @@
         "Akhlak QURBATA: Praktikkan mengamalkan ilmu selama pembelajaran."
       ]
     }
-  ]
+  ],
+  "curriculumRules": {
+    "newCompetencyShare": "±60%",
+    "reviewShare": "±40%",
+    "reviewPolicy": "Murojaah wajib tersebar merata dari seluruh kompetensi yang telah legal; tidak boleh hanya mengulang kelompok terakhir.",
+    "progressionPolicy": "Kompetensi baru diperkenalkan bertahap. Setiap penambahan kompetensi wajib mempertahankan kompetensi lama di latihan.",
+    "phaseClosure": "Setelah seluruh huruf pada satu harakat dikenalkan, lakukan penguatan lalu dua halaman latihan kumulatif sebelum masuk harakat berikutnya.",
+    "jilid1Sequence": [
+      "Fathah",
+      "Kasrah",
+      "Dhammah"
+    ]
+  }
 }
