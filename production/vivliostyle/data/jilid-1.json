@@ -1444,7 +1444,48 @@
         "Bahasa Arab QURBATA: Gunakan “Sekali Lagi” dalam kegiatan belajar.",
         "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
         "Akhlak QURBATA: Praktikkan menjaga ilmu selama pembelajaran."
-      ]
+      ],
+      "review": {
+        "title": "Mengenal Huruf & Harakat",
+        "instruction": "Lihat dan kenali.",
+        "letters": [
+          "ا",
+          "ب",
+          "ت",
+          "ث",
+          "ج",
+          "ح",
+          "خ",
+          "د",
+          "ذ",
+          "ر",
+          "ز",
+          "س",
+          "ش",
+          "ص",
+          "ض",
+          "ط",
+          "ظ",
+          "ع",
+          "غ",
+          "ف",
+          "ق",
+          "ك",
+          "ل",
+          "م",
+          "ن",
+          "ه",
+          "و",
+          "ي",
+          "ء"
+        ],
+        "harakat": [
+          {
+            "name": "Fathah",
+            "mark": "َ"
+          }
+        ]
+      }
     },
     {
       "pageId": "QJ1-P021",
