@@ -1112,51 +1112,73 @@
       },
       "rows": [
         [
-          "بِ تِ جِ",
-          "جَ رَ طَ",
-          "ثِ جِ تِ"
+          "كَ تَ بِ",
+          "ذَ هَ بِ",
+          "رَ جَ عَ"
         ],
         [
-          "زَ طَ بِ",
-          "بِ تِ نَ",
-          "جِ بِ ثِ"
+          "عَ مَ لَ",
+          "خَ لَ قَ",
+          "حَ فِ ظَ"
         ],
         [
-          "فَ نَ تَ",
-          "تِ ثِ بِ",
-          "هَ تَ جِ"
+          "سَ جَ دَ",
+          "شَ كَ رَ",
+          "صَ بِ رَ"
         ],
         [
-          "جِ بِ سَ",
-          "ثِ جِ تِ",
-          "خَ سَ عَ"
+          "فَ تَ حَ",
+          "قَ رَ أَ",
+          "كَ تَ بَ"
         ],
         [
-          "بِ تِ جِ",
-          "شَ عَ ثِ",
-          "ثِ جِ وَ"
+          "نَ صَ رَ",
+          "رَ حِ مَ",
+          "عَ بِ دَ"
         ],
         [
-          "تِ ثِ بِ",
-          "كَ وَ جَ",
-          "جِ بِ ثِ"
+          "جَ لَ سَ",
+          "دَ خَ لَ",
+          "خَ رَ جَ"
         ],
         [
-          "يَ جَ تِ",
-          "تِ ثِ رَ",
-          "بِ تِ جِ"
+          "سَ مِ عَ",
+          "جَ مَ عَ",
+          "مَ نَ عَ"
         ],
         [
-          "جَ رَ طَ",
-          "ثِ جِ تِ",
-          "زَ طَ بِ"
+          "وَ جَ دَ",
+          "ذَ كَ رَ",
+          "حَ مِ دَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Gunakan “Baca” dalam kegiatan belajar.",
         "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
         "Akhlak QURBATA: Praktikkan adab belajar selama pembelajaran."
-      ]
+      ],
+      "intro": {
+        "title": "Kasrah",
+        "items": [
+          [
+            "ب",
+            "بِ"
+          ],
+          [
+            "ت",
+            "تِ"
+          ],
+          [
+            "ث",
+            "ثِ"
+          ],
+          [
+            "ج",
+            "جِ"
+          ]
+        ],
+        "arrow": "←"
+      }
     },
     {
       "pageId": "QJ1-P017",
@@ -1862,6 +1884,9 @@
       "Fathah",
       "Kasrah",
       "Dhammah"
-    ]
+    ],
+    "meaningfulPractice": "Utamakan susunan yang merupakan kata Arab bermakna atau mendekati pola kata bermakna, selama tidak memperkenalkan kompetensi yang belum legal.",
+    "newConceptIntroduction": "Halaman pertama kompetensi baru wajib memiliki penanaman konsep visual sebelum grid latihan, misalnya ب → بِ; tidak langsung masuk ke grid penuh.",
+    "hehPolicy": "Gunakan hanya karakter ه (ha dua lubang pada font Utsmani), bukan ھ/ہ/ۀ/ە; pada latihan Tartil wajib berharakat."
   }
 }
