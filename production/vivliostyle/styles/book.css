@@ -158,8 +158,8 @@ body {
 
 .activity-strip {
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 7mm;
+  right: 7mm;
   bottom: 16mm;
   height: 25mm;
   border: .4mm solid #8fdad6;
@@ -201,8 +201,8 @@ body {
 
 .page-footer {
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 7mm;
+  right: 7mm;
   bottom: 7mm;
   height: 7mm;
 }
