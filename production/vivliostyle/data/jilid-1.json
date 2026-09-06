@@ -1158,26 +1158,47 @@
         "Akhlak QURBATA: Praktikkan adab belajar selama pembelajaran."
       ],
       "intro": {
-        "title": "Kasrah",
-        "items": [
+        "title": "Kasrah — Materi Baru",
+        "arrow": "→",
+        "rows": [
           [
-            "ب",
-            "بِ"
+            [
+              "ب",
+              "بِ"
+            ],
+            [
+              "ت",
+              "تِ"
+            ],
+            [
+              "ث",
+              "ثِ"
+            ],
+            [
+              "ج",
+              "جِ"
+            ]
           ],
           [
-            "ت",
-            "تِ"
-          ],
-          [
-            "ث",
-            "ثِ"
-          ],
-          [
-            "ج",
-            "جِ"
+            [
+              "بَ",
+              "بِ"
+            ],
+            [
+              "تَ",
+              "تِ"
+            ],
+            [
+              "ثَ",
+              "ثِ"
+            ],
+            [
+              "جَ",
+              "جِ"
+            ]
           ]
         ],
-        "arrow": "←"
+        "instruction": "Amati perubahan bunyi. Guru menalqinkan, peserta menirukan."
       }
     },
     {
@@ -1886,7 +1907,7 @@
       "Dhammah"
     ],
     "meaningfulPractice": "Pada fase harakat baru, susunan bermakna/mendekati kata terutama dibangun dari kompetensi harakat baru yang SUDAH legal pada halaman-halaman sebelumnya dan kompetensi baru halaman aktif; fathah yang sudah tuntas hanya berfungsi sebagai murojaah kumulatif tersebar. Semua huruf tetap lepas/tidak sambung.",
-    "newConceptIntroduction": "Halaman pertama kompetensi baru wajib memiliki penanaman konsep visual sebelum grid latihan, misalnya ب → بِ; tidak langsung masuk ke grid penuh.",
+    "newConceptIntroduction": "Pada halaman pertama setiap harakat baru, sediakan DUA BARIS khusus penanaman kompetensi sebelum latihan utama. Baris 1: huruf tanpa harakat → huruf dengan harakat baru. Baris 2: bentuk kompetensi lama → bentuk harakat baru pada huruf yang sama. Bukan penjelasan teori; talqin visual singkat.",
     "hehPolicy": "Gunakan hanya karakter ه (ha dua lubang pada font Utsmani), bukan ھ/ہ/ۀ/ە; pada latihan Tartil wajib berharakat.",
     "fathahAfterClosure": "Setelah fase Fathah ditutup, Fathah tidak lagi menjadi target pembentukan pola bermakna; hanya muncul sebagai murojaah kumulatif proporsional.",
     "detachedLetters": "Jilid 1 wajib memakai huruf lepas/tidak sambung pada seluruh grid Tartil.",
