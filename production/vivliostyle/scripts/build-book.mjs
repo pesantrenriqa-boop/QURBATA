@@ -31,7 +31,10 @@ const card = (label, value) => `
   </section>`;
 
 const frontMatterData = [
-  { title: "SAMBUTAN PENDIRI QURBATA & RIQA", type: "founder", arabic: `بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+  {
+    title: "SAMBUTAN PENDIRI QURBATA & RIQA",
+    type: "founder",
+    arabic: `بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
 
 الْحَمْدُ لِلَّهِ الَّذِي أَنْزَلَ الْقُرْآنَ هُدًى وَبُرْهَانًا، وَجَعَلَهُ لِلْقُلُوبِ نُورًا وَلِلصُّدُورِ إِيمَانًا، وَأَنْزَلَهُ بِلِسَانٍ عَرَبِيٍّ مُبِينٍ فَزَادَهُ فَصَاحَةً وَبَيَانًا، وَيَسَّرَهُ لِلذِّكْرِ تِلَاوَةً وَحِفْظًا وَإِمْعَانًا، وَجَعَلَ الْعِلْمَ بِهِ هُدًى وَعِرْفَانًا، وَالْعَمَلَ بِهِ رُشْدًا وَإِذْعَانًا، وَالتَّخَلُّقَ بِآدَابِهِ لِلنُّفُوسِ زِينَةً، وَلِلسُّلُوكِ تَهْذِيبًا، وَلِلْحَيَاةِ صَلَاحًا وَاتِّزَانًا.
 
@@ -39,15 +42,110 @@ const frontMatterData = [
 
 وَالصَّلَاةُ وَالسَّلَامُ عَلَى سَيِّدِنَا مُحَمَّدٍ، الَّذِي تَلَا الْقُرْآنَ فَأَجَادَ تِلَاوَتَهُ، وَبَيَّنَ آيَاتِهِ فَأَظْهَرَ هِدَايَتَهُ، وَعَلَّمَ أُمَّتَهُ فَأَحْكَمَ تَرْبِيَتَهَا، وَعَمِلَ بِوَحْيِ رَبِّهِ فَاسْتَقَامَ عَلَى هَدْيِهِ، وَتَخَلَّقَ بِآدَابِهِ فَكَانَ قُدْوَةً فِي مَكَارِمِ الْأَخْلَاقِ؛ وَعَلَى آلِهِ وَصَحْبِهِ مَصَابِيحِ الْهُدَى، وَمَنَابِعِ الْعِلْمِ وَالتُّقَى، وَمَنْ تَبِعَهُمْ بِإِحْسَانٍ وَاقْتَفَى أَثَرَهُمْ إِلَى يَوْمِ اللِّقَاءِ.
 
-أَمَّا بَعْدُ؛`, source: "", body: "QURBATA lahir dari ikhtiar menghadirkan pembelajaran Al-Qur’an sebagai ekosistem pendidikan: bacaan dibenahi, Bahasa Arab dihidupkan, hafalan dijaga, dan Akhlak dibiasakan. Ilmu tidak berhenti pada kemampuan pribadi, tetapi bergerak menuju amal dan pengajaran. Sebagaimana pesan KH. Basori Alwi: لِكُلِّ شَيْءٍ زَكَاةٌ، وَزَكَاةُ الْعِلْمِ التَّعْلِيمُ. Ruh itu kami ringkas dalam tiga kata: تَعَلَّمْ — اِعْمَلْ — عَلِّمْ." },
-  { title: "PENDAHULUAN", arabic: "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ", source: "HR. al-Bukhari", body: "QURBATA dikembangkan dari kebutuhan akan pembelajaran Al-Qur’an yang tidak berhenti pada kemampuan membaca. Al-Qur’an ditempatkan sebagai pusat ekosistem belajar; Bahasa Arab, Tahfidz, dan Akhlak hadir untuk menguatkan kedekatan peserta dengan Al-Qur’an secara utuh. Integrasi tidak berarti mencampur seluruh bidang menjadi satu, tetapi menempatkan setiap unsur pada fungsi pedagogisnya masing-masing." },
-  { title: "MENGENAL QURBATA", arabic: "إِنَّا أَنْزَلْنَاهُ قُرْآنًا عَرَبِيًّا لَعَلَّكُمْ تَعْقِلُونَ", source: "QS. Yusuf [12]: 2", body: "QURBATA adalah metode integratif Qur’an, Bahasa Arab, Tahfidz, dan Akhlak. Qur’an/Tartil menjadi kompetensi inti. Bahasa Arab QURBATA berfungsi sebagai bi’ah ‘Arabiyah dalam proses pembelajaran dan berbeda dari Bahasa Arab RIQA, yaitu jalur Bahasa Arab Qur’ani berbasis tangga kompetensi korpus Al-Qur’an. Tahfidz berjalan bertahap per ayat dengan murojaah. Akhlak QURBATA merupakan pembiasaan nilai melalui hadis atau nasihat yang dapat berlangsung beberapa pertemuan, dan berbeda dari jalur Hadis RIQA." },
-  { title: "LANDASAN & PRINSIP PEMBELAJARAN", arabic: "وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ", source: "QS. Al-Qamar [54]: 17", body: "Pembelajaran mengikuti tangga kompetensi yang bertahap, terukur, dan tidak dilompati. Guru membimbing melalui talqin, talaqqi, koreksi langsung, latihan, murojaah, pembiasaan, dan verifikasi. Ketepatan bacaan didahulukan daripada kecepatan. Bahasa Arab digunakan secara fungsional dalam kelas; Tahfidz dibangun sedikit demi sedikit; dan Akhlak diarahkan menjadi perilaku yang dapat diamati." },
-  { title: "GAMBARAN QURBATA JILID 1", arabic: "تَعَلَّمْ — اِعْمَلْ — عَلِّمْ", source: "Ruh QURBATA", body: "Jilid 1 merupakan gerbang fondasi. Materi Tartil disusun menurut tangga kompetensi awal dan menjadi porsi utama halaman. Tahfidz dimulai dari Surah An-Nas, bergerak ayat demi ayat sesuai peta yang ditetapkan. Bahasa Arab QURBATA memperkenalkan ungkapan kelas yang langsung dipakai dalam interaksi. Akhlak menggunakan satu pesan atau matan selama beberapa pertemuan agar peserta bergerak dari mendengar, memahami, hingga membiasakan." },
-  { title: "CARA MENGGUNAKAN BUKU", arabic: "تَعَلَّمْ — اِعْمَلْ — عَلِّمْ", source: "Belajarlah · Amalkan · Ajarkan", body: "Peserta mengikuti contoh guru, membaca sesuai target halaman, mengulang bagian yang dikoreksi, menjaga hafalan sebelumnya, menggunakan ungkapan Bahasa Arab yang sedang dibiasakan, dan mempraktikkan pesan Akhlak. Guru menjadikan buku sebagai peta kompetensi dan media talaqqi, bukan pengganti pendampingan. Orang tua atau pendamping mengulang materi yang telah diajarkan tanpa mendahului kompetensi baru. QR dan RIQA OS menjadi penghubung buku fisik dengan materi pendamping, asesmen, pencatatan, dan kesinambungan kompetensi." },
-  { title: "PANDUAN PENGAJARAN", arabic: "وَإِنَّكَ لَعَلَى خُلُقٍ عَظِيمٍ", source: "QS. Al-Qalam [68]: 4", body: "Satu pertemuan QURBATA bergerak melalui pembukaan dan kesiapan belajar, talqin, talaqqi, latihan dan murojaah, Tahfidz, penggunaan Bahasa Arab secara fungsional, pembiasaan Akhlak, lalu verifikasi hasil. Guru menjaga agar unsur integratif menguatkan latihan Tartil, bukan mengurangi porsinya. Perpindahan halaman mengikuti penguasaan kompetensi, bukan semata-mata jumlah pertemuan." },
-  { title: "PETA KOMPETENSI JILID 1", arabic: "قُرْآنًا عَرَبِيًّا", source: "Qur’an · Bahasa Arab · Tahfidz · Akhlak", body: "Peta kompetensi Jilid 1 menampilkan perkembangan empat jalur secara berdampingan: tangga Tartil sebagai jalur inti; Tahfidz per ayat; Bahasa Arab sebagai bi’ah kelas; serta Akhlak sebagai pembiasaan. Peta ini berfungsi sebagai gambaran perkembangan, bukan pengganti rincian kompetensi pada halaman pembelajaran." },
-  { title: "DAFTAR ISI", arabic: "تَعَلَّمْ — اِعْمَلْ — عَلِّمْ", source: "QURBATA Jilid 1", body: "Sambutan Pendiri QURBATA & RIQA · Pendahuluan · Mengenal QURBATA · Landasan & Prinsip Pembelajaran · Gambaran QURBATA Jilid 1 · Cara Menggunakan Buku · Panduan Pengajaran · Peta Kompetensi Jilid 1 · Materi QURBATA Jilid 1." }
+أَمَّا بَعْدُ؛`,
+    source: "",
+    paragraphs: [
+      "QURBATA lahir dari ikhtiar panjang untuk menghadirkan pembelajaran Al-Qur’an yang tidak berhenti pada kemampuan melafalkan huruf dan menyelesaikan halaman. Kami menginginkan proses belajar yang menumbuhkan kedekatan dengan Al-Qur’an: bacaan dibenahi melalui talaqqi, bahasa Al-Qur’an mulai dihidupkan dalam keseharian belajar, ayat-ayat dijaga melalui hafalan, dan adab dibentuk melalui pembiasaan yang terus menerus.",
+      "Karena itu, QURBATA menempatkan Qur’an/Tartil sebagai poros utama, sementara Bahasa Arab, Tahfidz, dan Akhlak hadir sebagai unsur yang saling menguatkan. Integrasi bukan berarti mencampurkan semua pelajaran tanpa batas, melainkan mempertemukan setiap unsur pada tempat dan fungsi yang tepat sehingga satu pertemuan Al-Qur’an dapat sekaligus menjadi ruang tumbuhnya lisan, ingatan, sikap, dan kebiasaan yang Qur’ani.",
+      "Kami meyakini bahwa keberhasilan pendidikan Al-Qur’an tidak hanya tampak ketika seorang peserta mampu membaca dengan benar, tetapi juga ketika ilmu itu meninggalkan bekas pada dirinya. Bacaan yang baik perlu melahirkan kecintaan; hafalan perlu melahirkan penjagaan; bahasa perlu membuka jalan kepada pemahaman; dan ilmu perlu berbuah amal serta akhlak.",
+      "Pesan KH. Basori Alwi, «لِكُلِّ شَيْءٍ زَكَاةٌ، وَزَكَاةُ الْعِلْمِ التَّعْلِيمُ», mengingatkan bahwa ilmu memiliki tanggung jawab untuk diteruskan. Dari semangat itulah QURBATA membawa ruh: «تَعَلَّمْ — اِعْمَلْ — عَلِّمْ» — belajar dengan sungguh-sungguh, mengamalkan dengan kesadaran, kemudian mengajarkan kebaikan kepada yang lain.",
+      "Semoga buku ini menjadi wasilah bagi guru, peserta didik, orang tua, dan lembaga pendidikan untuk membangun pembelajaran Al-Qur’an yang tertib, hangat, bertahap, dan berkesinambungan. Semoga setiap huruf yang dipelajari menjadi cahaya, setiap ayat yang dihafal menjadi penjaga, setiap ungkapan Arab mendekatkan kepada bahasa Al-Qur’an, dan setiap adab yang dibiasakan menjadi jalan menuju kemuliaan akhlak."
+    ]
+  },
+  {
+    title: "PENDAHULUAN",
+    arabic: "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ",
+    source: "HR. al-Bukhari",
+    paragraphs: [
+      "Pembelajaran Al-Qur’an pada dasarnya bukan sebuah proses yang berdiri sendiri. Anak yang belajar membaca Al-Qur’an sedang berhadapan dengan bahasa wahyu, mengulang bunyi dan ayat, menyimpan sebagian darinya dalam ingatan, sekaligus menerima contoh sikap dari guru dan lingkungan belajarnya. Karena itu, QURBATA disusun untuk mengelola unsur-unsur tersebut sebagai satu ekosistem pendidikan yang saling mendukung.",
+      "QURBATA tidak menggeser tujuan pokok pembelajaran Tartil. Ketepatan membaca tetap menjadi kompetensi inti yang dibangun melalui tangga materi secara bertahap. Bahasa Arab, Tahfidz, dan Akhlak tidak mengambil alih ruang latihan bacaan, tetapi hadir secara terukur untuk memperkaya pengalaman belajar dan menghubungkan keterampilan membaca dengan kehidupan peserta.",
+      "Bahasa Arab dalam buku ini terutama hadir sebagai bi’ah ‘Arabiyah: ungkapan sederhana yang digunakan berulang di dalam kelas sehingga peserta mengalami bahasa Al-Qur’an sebagai bahasa yang hidup. Tahfidz dirancang bergerak sedikit demi sedikit, disertai murojaah, agar hafalan tidak terpisah dari proses membaca. Akhlak dihadirkan melalui hadis, nasihat, dan pembiasaan yang dipertahankan selama beberapa pertemuan agar nilai tidak hanya diketahui, tetapi dilatih.",
+      "Jilid 1 menjadi fondasi bagi perjalanan tersebut. Materi disusun dengan prinsip dari yang paling sederhana menuju bentuk yang lebih kompleks, dengan pengulangan yang cukup dan kontrol kompetensi sebelum peserta berpindah. Guru tidak dituntut mengejar halaman; guru dituntut memastikan bahwa halaman yang dilewati benar-benar meninggalkan kemampuan.",
+      "Buku cetak ini juga dirancang sebagai bagian dari ekosistem RIQA OS. QR kompetensi, rekam perkembangan, materi pendamping, dan asesmen digital memungkinkan pembelajaran fisik terhubung dengan pencatatan perkembangan. Teknologi ditempatkan sebagai alat bantu; hubungan guru dan peserta melalui talqin, talaqqi, koreksi, dan keteladanan tetap menjadi pusat proses pendidikan.",
+      "Dengan demikian, QURBATA Jilid 1 diharapkan menjadi gerbang yang kokoh: peserta mulai membaca dengan benar, akrab dengan ungkapan Arab, menjaga hafalan, dan tumbuh dalam kebiasaan baik. Fondasi inilah yang kemudian dikembangkan secara bertahap pada jilid-jilid berikutnya."
+    ]
+  },
+  {
+    title: "MENGENAL QURBATA",
+    arabic: "إِنَّا أَنْزَلْنَاهُ قُرْآنًا عَرَبِيًّا لَعَلَّكُمْ تَعْقِلُونَ",
+    source: "QS. Yusuf [12]: 2",
+    paragraphs: [
+      "QURBATA adalah metode integratif pembelajaran Al-Qur’an yang mempertemukan empat unsur: Qur’an/Tartil, Bahasa Arab, Tahfidz, dan Akhlak. Keempatnya tidak ditempatkan dengan bobot yang sama. Tartil merupakan jalur kompetensi inti, sedangkan tiga unsur lainnya memperkuat ekosistem pembelajaran.",
+      "Qur’an/Tartil disusun sebagai tangga kompetensi. Setiap halaman memiliki sasaran bacaan tertentu dan peserta bergerak setelah kemampuan sebelumnya cukup kokoh. Pola ini menjaga agar proses belajar tidak berubah menjadi sekadar mengejar jumlah halaman.",
+      "Bahasa Arab QURBATA adalah Bahasa Arab untuk menghidupkan suasana belajar Al-Qur’an. Ungkapan dipilih karena dapat langsung digunakan guru dan peserta dalam interaksi kelas. Jalur ini berbeda dari Bahasa Arab RIQA, yang merupakan jalur kompetensi Bahasa Arab Qur’ani tersendiri berbasis peta dan korpus Al-Qur’an.",
+      "Tahfidz menyertai perjalanan belajar secara bertahap. Pada Jilid 1, hafalan dimulai dari Surah An-Nas dan berkembang ayat demi ayat sesuai peta. Hafalan baru selalu berhubungan dengan murojaah agar yang telah diperoleh tetap terjaga.",
+      "Akhlak QURBATA bukan tambahan dekoratif pada halaman. Hadis atau nasihat dipilih sebagai pesan yang dipahami, diulang, dan dibiasakan. Satu pesan dapat hidup selama beberapa pertemuan hingga guru melihat perubahan sikap. Jalur pembiasaan ini berbeda dari pembelajaran Hadis RIQA yang memiliki kompetensi tersendiri.",
+      "Pertemuan empat unsur tersebut membentuk karakter QURBATA: membaca dengan benar, berinteraksi dengan bahasa Al-Qur’an, menjaga ayat dalam dada, dan menghadirkan nilai Al-Qur’an dalam perilaku."
+    ]
+  },
+  {
+    title: "LANDASAN & PRINSIP PEMBELAJARAN",
+    arabic: "وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ",
+    source: "QS. Al-Qamar [54]: 17",
+    paragraphs: [
+      "QURBATA dibangun di atas keyakinan bahwa belajar Al-Qur’an memerlukan kemudahan yang terstruktur, pengulangan yang cukup, dan pendampingan yang benar. Materi karena itu dipecah menjadi kompetensi kecil yang dapat diamati dan dilatih.",
+      "Prinsip pertama adalah bertahap. Peserta tidak melompati kompetensi hanya karena telah mengenal bentuknya. Prinsip kedua adalah talaqqi: bacaan diterima dari guru, dicontohkan, ditirukan, lalu dikoreksi. Prinsip ketiga adalah pengulangan: materi lama tetap hadir di tengah materi baru agar kemampuan tidak rapuh.",
+      "Prinsip keempat adalah integrasi proporsional. Bahasa Arab, Tahfidz, dan Akhlak hadir untuk menguatkan pembelajaran, tetapi latihan Tartil tetap memperoleh ruang terbesar. Prinsip kelima adalah keterukuran. Tanggal, nilai, tanda tangan, aktivitas, QR kompetensi, dan rekam RIQA OS membantu guru melihat perkembangan secara nyata.",
+      "Prinsip keenam adalah keteladanan. Akhlak tidak cukup dibacakan; guru perlu menampakkannya dalam cara menyapa, menyimak, mengoreksi, menunggu, dan menghargai peserta. Dengan demikian, pembelajaran bergerak dari ilmu menuju amal dan dari amal menuju kebiasaan."
+    ]
+  },
+  {
+    title: "GAMBARAN QURBATA JILID 1",
+    arabic: "تَعَلَّمْ — اِعْمَلْ — عَلِّمْ",
+    source: "Ruh QURBATA",
+    paragraphs: [
+      "Jilid 1 merupakan tahap fondasi. Peserta diperkenalkan kepada bentuk dan bunyi melalui urutan kompetensi yang dirancang untuk membangun ketepatan sejak awal. Porsi terbesar halaman adalah Latihan Tartil karena keterampilan membaca memerlukan paparan dan pengulangan yang cukup.",
+      "Di sekitar latihan inti tersebut, peserta memperoleh target Tahfidz yang ringan dan berkesinambungan, ungkapan Bahasa Arab yang dapat segera digunakan dalam kelas, serta pesan Akhlak yang dibawa ke dalam aktivitas keseharian. Unsur-unsur ini tidak harus selesai sekaligus dalam satu pertemuan; guru menyesuaikan ritme dengan kesiapan peserta.",
+      "Setiap halaman juga berfungsi sebagai catatan perjalanan. Tanggal menunjukkan waktu belajar, nilai merekam hasil, tanda tangan memberi validasi pendamping, dan QR menghubungkan halaman dengan kompetensi digital. Dengan cara ini, buku bukan hanya tempat latihan, tetapi menjadi bagian dari rekam perkembangan peserta.",
+      "Keberhasilan Jilid 1 tidak dinilai dari seberapa cepat buku selesai. Ukurannya adalah terbentuknya fondasi: bacaan semakin tepat, peserta nyaman mengikuti talaqqi, hafalan terjaga, ungkapan Arab mulai menjadi kebiasaan, dan nilai Akhlak mulai terlihat dalam perilaku belajar."
+    ]
+  },
+  {
+    title: "PETUNJUK PENGGUNAAN BUKU",
+    arabic: "تَعَلَّمْ — اِعْمَلْ — عَلِّمْ",
+    source: "Belajarlah · Amalkan · Ajarkan",
+    paragraphs: [
+      "Buku QURBATA digunakan bersama guru atau pendamping. Peserta tidak dianjurkan mendahului kompetensi baru secara mandiri, karena bentuk, bunyi, dan cara membaca perlu diterima melalui contoh yang benar. Guru membuka halaman sesuai posisi kompetensi peserta, bukan semata-mata mengikuti pertemuan kelompok.",
+      "Bagian Latihan Tartil merupakan area utama. Guru mencontohkan bacaan melalui talqin, peserta menirukan, kemudian membaca kembali melalui talaqqi. Kesalahan dikoreksi pada saat yang tepat dan bagian yang belum mantap diulang. Ukuran huruf dan jarak latihan sengaja memberi ruang agar perhatian peserta terarah pada bentuk dan harakat.",
+      "Bagian Tahfidz menunjukkan target hafalan yang menyertai halaman. Guru membacakan ayat dengan benar, peserta mengikuti, lalu mengulang hingga cukup kuat. Hafalan lama tetap dimurojaah sebelum atau sesudah penambahan target baru.",
+      "Bagian Bahasa Arab/Bi’ah memuat ungkapan yang digunakan dalam suasana belajar. Guru tidak cukup meminta peserta menghafalkannya; ungkapan tersebut dipakai secara nyata ketika membuka pelajaran, memberi instruksi, bertanya, menjawab, atau menutup kegiatan. Pengulangan alami membentuk bi’ah ‘Arabiyah tanpa mengubah sesi Tartil menjadi pelajaran nahwu.",
+      "Bagian Akhlak/NIDHOM membawa hadis atau nasihat terpilih ke dalam pembiasaan. Guru menjelaskan makna secara sederhana, memberi contoh perilaku, lalu memilih aktivitas yang dapat dilakukan. Satu nilai boleh dipertahankan pada beberapa pertemuan sampai menjadi kebiasaan.",
+      "Kolom Aktivitas Bi’ah menjadi catatan praktik, bukan sekadar ruang yang harus diisi. Tanggal menunjukkan pelaksanaan, nilai merekam capaian sesuai standar guru, dan tanda tangan menjadi pengesahan pendamping. Catatan singkat dapat digunakan bila ada bagian yang perlu diulang.",
+      "QR kompetensi menghubungkan buku dengan RIQA OS. Melalui sistem ini, peserta dan pendamping dapat diarahkan kepada materi pendukung, contoh, asesmen, atau rekam perkembangan yang relevan. QR tidak menggantikan guru dan tidak mengubah buku menjadi pembelajaran mandiri sepenuhnya.",
+      "Bagi orang tua atau pendamping di rumah, tugas utama adalah membantu pengulangan materi yang telah diajarkan, menjaga rutinitas, mendengarkan hafalan, dan menguatkan pembiasaan Akhlak. Hindari mengajarkan kompetensi baru sebelum guru membukanya agar pola belajar tetap konsisten."
+    ]
+  },
+  {
+    title: "PANDUAN PENGAJARAN QURBATA",
+    arabic: "وَإِنَّكَ لَعَلَى خُلُقٍ عَظِيمٍ",
+    source: "QS. Al-Qalam [68]: 4",
+    paragraphs: [
+      "Guru memulai dengan membangun kesiapan: salam, adab duduk, perhatian, dan murojaah singkat. Suasana kelas perlu tenang tetapi hangat. Bahasa Arab yang sudah dikenal dapat digunakan sejak pembukaan agar bi’ah tumbuh secara alami.",
+      "Pada tahap talqin, guru memberikan model bacaan yang jelas dan tidak berlebihan jumlahnya. Peserta mendengar sebelum menirukan. Pada tahap talaqqi, peserta membaca dan guru menyimak secara langsung. Koreksi diprioritaskan pada kompetensi halaman yang sedang dilatih.",
+      "Latihan kemudian diperluas melalui pengulangan contoh pada halaman. Guru menjaga agar peserta tidak menebak atau menghafal urutan visual. Bila diperlukan, guru menunjuk contoh secara acak. Materi lama dapat disisipkan untuk memastikan kemampuan sebelumnya tetap stabil.",
+      "Tahfidz dilakukan dengan pola dengar, tiru, ulang, sambung, dan murojaah. Bahasa Arab digunakan dalam instruksi yang sesuai tingkat peserta. Akhlak dihidupkan melalui satu perilaku yang dapat diamati selama proses belajar, misalnya adab mendengar, menunggu giliran, menjaga kebersihan, atau menghormati guru dan teman.",
+      "Di akhir pertemuan guru melakukan verifikasi singkat. Peserta yang telah memenuhi target dapat melanjutkan; peserta yang belum mantap diberi pengulangan terarah tanpa stigma. Nilai dan catatan digunakan untuk membantu keputusan pembelajaran, bukan sekadar administrasi.",
+      "Guru QURBATA tidak mengejar selesainya halaman. Tugas utamanya adalah menjaga kesinambungan kompetensi. Pergantian guru pun tidak boleh memutus perkembangan peserta karena posisi kompetensi, catatan, dan rekam RIQA OS menjadi rujukan bersama."
+    ]
+  },
+  {
+    title: "PETA KOMPETENSI JILID 1",
+    arabic: "قُرْآنًا عَرَبِيًّا",
+    source: "Qur’an · Bahasa Arab · Tahfidz · Akhlak",
+    paragraphs: [
+      "Peta kompetensi Jilid 1 dibaca dalam empat jalur yang berjalan berdampingan. Jalur pertama adalah Tartil sebagai kompetensi inti: peserta bergerak dari kemampuan dasar menuju bentuk yang lebih kompleks secara berurutan. Jalur kedua adalah Tahfidz yang bergerak ayat demi ayat dan selalu disertai murojaah.",
+      "Jalur ketiga adalah Bahasa Arab QURBATA sebagai bi’ah kelas. Targetnya bukan menyelesaikan bab tata bahasa, tetapi membuat ungkapan sederhana hadir dalam pengalaman belajar sehari-hari. Jalur keempat adalah Akhlak/NIDHOM: nilai dipilih, dipahami, dipraktikkan, dan dipertahankan hingga menjadi kebiasaan.",
+      "Guru menggunakan peta ini untuk melihat hubungan antarkompetensi, sedangkan rincian latihan tetap berada pada halaman materi. Peta bukan alasan untuk mempercepat peserta; ia berfungsi memastikan arah perkembangan tetap jelas dari awal hingga akhir Jilid 1."
+    ]
+  },
+  {
+    title: "DAFTAR ISI",
+    arabic: "تَعَلَّمْ — اِعْمَلْ — عَلِّمْ",
+    source: "QURBATA Jilid 1",
+    paragraphs: [
+      "Sambutan Pendiri QURBATA & RIQA · Pendahuluan · Mengenal QURBATA · Landasan & Prinsip Pembelajaran · Gambaran QURBATA Jilid 1 · Petunjuk Penggunaan Buku · Panduan Pengajaran QURBATA · Peta Kompetensi Jilid 1."
+    ]
+  }
 ];
 
 const frontMatter = frontMatterData.map((item, index) => `
@@ -56,7 +154,7 @@ const frontMatter = frontMatterData.map((item, index) => `
     <section class="front-matter-content official-front">
       <h1>${escapeHtml(item.title)}</h1>
       <div class="official-epigraph"><p class="arabic front-arabic" lang="ar" dir="rtl">${escapeHtml(item.arabic)}</p>${item.source ? `<p class="front-source">${escapeHtml(item.source)}</p>` : ""}</div>
-      <p class="front-body">${escapeHtml(item.body)}</p>
+      ${(item.paragraphs || [item.body]).filter(Boolean).map(p => `<p class="front-body">${escapeHtml(p)}</p>`).join("\n")}
       ${index === 0 ? `<div class="front-motto"><p class="arabic" lang="ar" dir="rtl">تَعَلَّمْ — اِعْمَلْ — عَلِّمْ</p><small>Belajarlah · Amalkan · Ajarkan</small></div>` : ""}
     </section>
     <footer class="page-footer"><p class="arabic" lang="ar" dir="rtl">تَعَلَّمْ — اِعْمَلْ — عَلِّمْ</p><small>Belajarlah • Amalkan • Ajarkan</small></footer>
