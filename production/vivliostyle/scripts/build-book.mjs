@@ -16,6 +16,12 @@ const escapeHtml = (value = "") => String(value)
 const arabicLetters = (value) => Array.from(value.normalize("NFD"))
   .filter((character) => /\p{Script=Arabic}/u.test(character) && !/\p{Mark}/u.test(character));
 
+const renderPracticeArabic = (value = "") => escapeHtml(value)
+  // U+06BE gives the requested two-aperture isolated ha, but its combining
+  // fathah is not reliably positioned by the bundled KFGQPC font.
+  // Keep the glyph and render the fathah explicitly as a positioned mark.
+  .replaceAll("ھَ", '<span class="ha-two-fatha"><span class="ha-two">ھ</span><span class="ha-fatha">َ</span></span>');
+
 const card = (label, value) => `
   <section class="integration-card integration-card--${label.toLowerCase()}">
     <h2>${escapeHtml(label)}</h2>
@@ -53,7 +59,7 @@ const pages = await Promise.all(data.pages.map(async (page) => {
 
   const rows = page.rows.map((row) => `
     <div class="practice-row">
-      ${row.map((item) => `<div class="practice-cell arabic" lang="ar" dir="rtl">${escapeHtml(item)}</div>`).join("")}
+      ${row.map((item) => `<div class="practice-cell arabic" lang="ar" dir="rtl">${renderPracticeArabic(item)}</div>`).join("")}
     </div>`).join("");
 
   const activities = page.activities.map((item, index) => `
