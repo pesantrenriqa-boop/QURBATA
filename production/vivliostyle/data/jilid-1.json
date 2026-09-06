@@ -11,7 +11,7 @@
       "pageNumber": "01",
       "title": "Mari Membaca",
       "titleArabic": "بَ تَ ثَ",
-      "tartilCompetency": "Mengenali dan membaca huruf ب ت ث berharakat fathah.",
+      "tartilCompetency": "Mengenali dan membaca بَ تَ ثَ berharakat fathah.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P001",
       "integration": {
         "tahfidz": {
@@ -32,44 +32,260 @@
       },
       "rows": [
         [
-          "ثَ بَ",
           "بَ تَ",
-          "ثَ تَ"
+          "ثَ ثَ",
+          "بَ بَ"
+        ],
+        [
+          "تَ ثَ",
+          "ثَ تَ",
+          "ثَ بَ"
         ],
         [
           "بَ ثَ",
           "تَ بَ",
-          "تَ ثَ"
+          "تَ تَ تَ"
         ],
         [
-          "ثَ تَ",
-          "بَ بَ",
-          "تَ بَ بَ"
-        ],
-        [
-          "بَ تَ بَ",
-          "ثَ بَ ثَ",
-          "تَ ثَ تَ"
-        ],
-        [
-          "بَ ثَ ثَ",
-          "ثَ بَ بَ",
-          "تَ بَ تَ"
-        ],
-        [
-          "تَ ثَ ثَ",
-          "ثَ تَ بَ",
-          "بَ تَ ثَ"
-        ],
-        [
-          "ثَ تَ تَ",
-          "بَ تَ تَ",
+          "ثَ ثَ تَ",
+          "تَ ثَ بَ",
           "تَ بَ ثَ"
         ],
         [
+          "بَ ثَ ثَ",
+          "بَ ثَ بَ",
+          "بَ ثَ تَ"
+        ],
+        [
+          "بَ بَ بَ",
+          "تَ تَ ثَ",
+          "تَ ثَ ثَ"
+        ],
+        [
+          "ثَ بَ تَ",
+          "ثَ ثَ بَ",
+          "ثَ تَ تَ"
+        ],
+        [
+          "بَ تَ تَ",
           "بَ بَ ثَ",
-          "تَ تَ بَ",
-          "ثَ بَ تَ"
+          "تَ تَ بَ"
+        ]
+      ],
+      "activities": [
+        "Ucapkan salam",
+        "Tirukan ayat",
+        "Praktikkan kepada teman"
+      ]
+    },
+    {
+      "pageId": "QJ1-P002",
+      "pageNumber": "02",
+      "title": "Mari Membaca",
+      "titleArabic": "ءَ أَ",
+      "tartilCompetency": "Membedakan dan membaca ءَ dan أَ bersama murojaah بَ تَ ثَ.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P002",
+      "integration": {
+        "tahfidz": {
+          "title": "Talqin Surah An-Nās: 1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "instruction": "Dengarkan dan tirukan"
+        },
+        "arabic": {
+          "title": "Salam dan Jawabannya",
+          "arabic": "السَّلَامُ عَلَيْكُمْ",
+          "instruction": "Dengarkan dan ucapkan"
+        },
+        "nidom": {
+          "title": "Adab Mengucapkan Salam",
+          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
+          "instruction": "Dengarkan dan amalkan"
+        }
+      },
+      "rows": [
+        [
+          "ءَ أَ",
+          "أَ بَ",
+          "ءَ أَ"
+        ],
+        [
+          "أَ تَ",
+          "ءَ ثَ",
+          "أَ ءَ"
+        ],
+        [
+          "ءَ بَ",
+          "بَ تَ",
+          "ءَ أَ بَ"
+        ],
+        [
+          "أَ ءَ تَ",
+          "ءَ أَ ثَ",
+          "أَ ءَ بَ"
+        ],
+        [
+          "ءَ أَ تَ",
+          "أَ ءَ ثَ",
+          "ءَ أَ أَ"
+        ],
+        [
+          "أَ ءَ ءَ",
+          "بَ ءَ أَ",
+          "تَ أَ ءَ"
+        ],
+        [
+          "ثَ ءَ أَ",
+          "بَ تَ ءَ",
+          "أَ ثَ بَ"
+        ],
+        [
+          "ءَ بَ تَ",
+          "أَ تَ ثَ",
+          "ءَ ثَ بَ"
+        ]
+      ],
+      "activities": [
+        "Ucapkan salam",
+        "Tirukan ayat",
+        "Praktikkan kepada teman"
+      ]
+    },
+    {
+      "pageId": "QJ1-P003",
+      "pageNumber": "03",
+      "title": "Mari Membaca",
+      "titleArabic": "جَ حَ خَ",
+      "tartilCompetency": "Membedakan dan membaca جَ حَ خَ bersama materi sebelumnya.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P003",
+      "integration": {
+        "tahfidz": {
+          "title": "Talqin Surah An-Nās: 1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "instruction": "Dengarkan dan tirukan"
+        },
+        "arabic": {
+          "title": "Salam dan Jawabannya",
+          "arabic": "السَّلَامُ عَلَيْكُمْ",
+          "instruction": "Dengarkan dan ucapkan"
+        },
+        "nidom": {
+          "title": "Adab Mengucapkan Salam",
+          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
+          "instruction": "Dengarkan dan amalkan"
+        }
+      },
+      "rows": [
+        [
+          "جَ حَ",
+          "خَ بَ",
+          "جَ تَ"
+        ],
+        [
+          "حَ ثَ",
+          "خَ أَ",
+          "جَ ءَ"
+        ],
+        [
+          "حَ خَ",
+          "بَ تَ",
+          "جَ حَ خَ"
+        ],
+        [
+          "حَ خَ جَ",
+          "خَ جَ حَ",
+          "جَ حَ بَ"
+        ],
+        [
+          "خَ جَ تَ",
+          "حَ خَ ثَ",
+          "جَ خَ أَ"
+        ],
+        [
+          "حَ جَ ءَ",
+          "بَ جَ حَ",
+          "تَ خَ جَ"
+        ],
+        [
+          "ثَ حَ خَ",
+          "أَ جَ بَ",
+          "ءَ خَ تَ"
+        ],
+        [
+          "بَ حَ ثَ",
+          "تَ جَ أَ",
+          "ثَ خَ ءَ"
+        ]
+      ],
+      "activities": [
+        "Ucapkan salam",
+        "Tirukan ayat",
+        "Praktikkan kepada teman"
+      ]
+    },
+    {
+      "pageId": "QJ1-P004",
+      "pageNumber": "04",
+      "title": "Mari Membaca",
+      "titleArabic": "دَ ذَ رَ زَ",
+      "tartilCompetency": "Membedakan dan membaca دَ ذَ رَ زَ bersama materi sebelumnya.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P004",
+      "integration": {
+        "tahfidz": {
+          "title": "Talqin Surah An-Nās: 1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "instruction": "Dengarkan dan tirukan"
+        },
+        "arabic": {
+          "title": "Salam dan Jawabannya",
+          "arabic": "السَّلَامُ عَلَيْكُمْ",
+          "instruction": "Dengarkan dan ucapkan"
+        },
+        "nidom": {
+          "title": "Adab Mengucapkan Salam",
+          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
+          "instruction": "Dengarkan dan amalkan"
+        }
+      },
+      "rows": [
+        [
+          "دَ ذَ",
+          "ءَ رَ",
+          "زَ أَ"
+        ],
+        [
+          "دَ ذَ",
+          "بَ رَ",
+          "زَ تَ"
+        ],
+        [
+          "دَ ذَ",
+          "ثَ رَ",
+          "زَ جَ دَ"
+        ],
+        [
+          "ذَ حَ رَ",
+          "زَ خَ دَ",
+          "ذَ ءَ رَ"
+        ],
+        [
+          "زَ أَ دَ",
+          "ذَ بَ رَ",
+          "زَ تَ دَ"
+        ],
+        [
+          "ذَ ثَ رَ",
+          "زَ جَ دَ",
+          "ذَ حَ رَ"
+        ],
+        [
+          "زَ خَ دَ",
+          "ذَ ءَ رَ",
+          "زَ أَ دَ"
+        ],
+        [
+          "ذَ بَ رَ",
+          "تَ ثَ جَ",
+          "حَ خَ ءَ"
         ]
       ],
       "activities": [
@@ -83,7 +299,7 @@
       "pageNumber": "05",
       "title": "Mari Membaca",
       "titleArabic": "سَ شَ",
-      "tartilCompetency": "Membedakan dan membaca سَ dan شَ berfathah dengan tetap memurojaah huruf yang telah dipelajari.",
+      "tartilCompetency": "Membedakan dan membaca سَ شَ bersama materi sebelumnya.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P005",
       "integration": {
         "tahfidz": {
@@ -151,11 +367,299 @@
       ]
     },
     {
+      "pageId": "QJ1-P006",
+      "pageNumber": "06",
+      "title": "Mari Membaca",
+      "titleArabic": "صَ ضَ",
+      "tartilCompetency": "Membedakan dan membaca صَ ضَ bersama materi sebelumnya.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P006",
+      "integration": {
+        "tahfidz": {
+          "title": "Talqin Surah An-Nās: 1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "instruction": "Dengarkan dan tirukan"
+        },
+        "arabic": {
+          "title": "Salam dan Jawabannya",
+          "arabic": "السَّلَامُ عَلَيْكُمْ",
+          "instruction": "Dengarkan dan ucapkan"
+        },
+        "nidom": {
+          "title": "Adab Mengucapkan Salam",
+          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
+          "instruction": "Dengarkan dan amalkan"
+        }
+      },
+      "rows": [
+        [
+          "صَ ضَ",
+          "سَ صَ",
+          "ضَ شَ"
+        ],
+        [
+          "صَ ضَ",
+          "دَ صَ",
+          "ضَ ذَ"
+        ],
+        [
+          "صَ ضَ",
+          "رَ صَ",
+          "صَ بَ رَ"
+        ],
+        [
+          "ضَ رَ بَ",
+          "ضَ زَ صَ",
+          "ضَ بَ صَ"
+        ],
+        [
+          "ضَ تَ صَ",
+          "ضَ ثَ صَ",
+          "ضَ جَ صَ"
+        ],
+        [
+          "ضَ حَ صَ",
+          "ضَ خَ صَ",
+          "ضَ ءَ صَ"
+        ],
+        [
+          "ضَ أَ صَ",
+          "ضَ سَ صَ",
+          "ضَ شَ صَ"
+        ],
+        [
+          "ضَ دَ صَ",
+          "زَ بَ تَ",
+          "ثَ جَ حَ"
+        ]
+      ],
+      "activities": [
+        "Ucapkan salam",
+        "Tirukan ayat",
+        "Praktikkan kepada teman"
+      ]
+    },
+    {
+      "pageId": "QJ1-P007",
+      "pageNumber": "07",
+      "title": "Mari Membaca",
+      "titleArabic": "طَ ظَ",
+      "tartilCompetency": "Membedakan dan membaca طَ ظَ bersama materi sebelumnya.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P007",
+      "integration": {
+        "tahfidz": {
+          "title": "Talqin Surah An-Nās: 1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "instruction": "Dengarkan dan tirukan"
+        },
+        "arabic": {
+          "title": "Salam dan Jawabannya",
+          "arabic": "السَّلَامُ عَلَيْكُمْ",
+          "instruction": "Dengarkan dan ucapkan"
+        },
+        "nidom": {
+          "title": "Adab Mengucapkan Salam",
+          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
+          "instruction": "Dengarkan dan amalkan"
+        }
+      },
+      "rows": [
+        [
+          "طَ ظَ",
+          "صَ طَ",
+          "ظَ ضَ"
+        ],
+        [
+          "طَ ظَ",
+          "سَ طَ",
+          "ظَ شَ"
+        ],
+        [
+          "طَ ظَ",
+          "دَ طَ",
+          "ظَ ذَ طَ"
+        ],
+        [
+          "ظَ رَ طَ",
+          "ظَ زَ طَ",
+          "ظَ بَ طَ"
+        ],
+        [
+          "ظَ تَ طَ",
+          "ظَ ثَ طَ",
+          "ظَ جَ طَ"
+        ],
+        [
+          "ظَ حَ طَ",
+          "ظَ خَ طَ",
+          "ظَ صَ طَ"
+        ],
+        [
+          "ظَ ضَ طَ",
+          "ظَ سَ طَ",
+          "ظَ شَ طَ"
+        ],
+        [
+          "ظَ دَ طَ",
+          "ذَ رَ زَ",
+          "بَ تَ ثَ"
+        ]
+      ],
+      "activities": [
+        "Ucapkan salam",
+        "Tirukan ayat",
+        "Praktikkan kepada teman"
+      ]
+    },
+    {
+      "pageId": "QJ1-P008",
+      "pageNumber": "08",
+      "title": "Mari Membaca",
+      "titleArabic": "عَ غَ",
+      "tartilCompetency": "Membedakan dan membaca عَ غَ bersama materi sebelumnya.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P008",
+      "integration": {
+        "tahfidz": {
+          "title": "Talqin Surah An-Nās: 1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "instruction": "Dengarkan dan tirukan"
+        },
+        "arabic": {
+          "title": "Salam dan Jawabannya",
+          "arabic": "السَّلَامُ عَلَيْكُمْ",
+          "instruction": "Dengarkan dan ucapkan"
+        },
+        "nidom": {
+          "title": "Adab Mengucapkan Salam",
+          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
+          "instruction": "Dengarkan dan amalkan"
+        }
+      },
+      "rows": [
+        [
+          "عَ غَ",
+          "طَ عَ",
+          "غَ ظَ"
+        ],
+        [
+          "عَ غَ",
+          "صَ عَ",
+          "غَ ضَ"
+        ],
+        [
+          "عَ غَ",
+          "سَ عَ",
+          "عَ بَ دَ"
+        ],
+        [
+          "بَ عَ ثَ",
+          "رَ جَ عَ",
+          "خَ شَ عَ"
+        ],
+        [
+          "غَ شَ عَ",
+          "غَ دَ عَ",
+          "غَ ذَ عَ"
+        ],
+        [
+          "غَ رَ عَ",
+          "غَ زَ عَ",
+          "غَ بَ عَ"
+        ],
+        [
+          "غَ تَ عَ",
+          "غَ ثَ عَ",
+          "غَ جَ عَ"
+        ],
+        [
+          "غَ طَ عَ",
+          "شَ دَ ذَ",
+          "رَ زَ بَ"
+        ]
+      ],
+      "activities": [
+        "Ucapkan salam",
+        "Tirukan ayat",
+        "Praktikkan kepada teman"
+      ]
+    },
+    {
+      "pageId": "QJ1-P009",
+      "pageNumber": "09",
+      "title": "Mari Membaca",
+      "titleArabic": "فَ قَ",
+      "tartilCompetency": "Membedakan dan membaca فَ قَ bersama materi sebelumnya.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P009",
+      "integration": {
+        "tahfidz": {
+          "title": "Talqin Surah An-Nās: 1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "instruction": "Dengarkan dan tirukan"
+        },
+        "arabic": {
+          "title": "Salam dan Jawabannya",
+          "arabic": "السَّلَامُ عَلَيْكُمْ",
+          "instruction": "Dengarkan dan ucapkan"
+        },
+        "nidom": {
+          "title": "Adab Mengucapkan Salam",
+          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
+          "instruction": "Dengarkan dan amalkan"
+        }
+      },
+      "rows": [
+        [
+          "فَ قَ",
+          "عَ فَ",
+          "قَ غَ"
+        ],
+        [
+          "فَ قَ",
+          "طَ فَ",
+          "قَ ظَ"
+        ],
+        [
+          "فَ قَ",
+          "صَ فَ",
+          "غَ فَ رَ"
+        ],
+        [
+          "فَ تَ حَ",
+          "قَ رَ أَ",
+          "فَ رَ حَ"
+        ],
+        [
+          "رَ فَ عَ",
+          "قَ طَ عَ",
+          "قَ دَ رَ"
+        ],
+        [
+          "فَ سَ دَ",
+          "قَ بَ ضَ",
+          "قَ شَ فَ"
+        ],
+        [
+          "قَ دَ فَ",
+          "قَ ذَ فَ",
+          "قَ زَ فَ"
+        ],
+        [
+          "قَ تَ فَ",
+          "ضَ سَ شَ",
+          "دَ ذَ رَ"
+        ]
+      ],
+      "activities": [
+        "Ucapkan salam",
+        "Tirukan ayat",
+        "Praktikkan kepada teman"
+      ]
+    },
+    {
       "pageId": "QJ1-P010",
       "pageNumber": "10",
       "title": "Mari Membaca",
       "titleArabic": "تَقْيِيمُ الْفَتْحَةِ",
-      "tartilCompetency": "Evaluasi Fathah I: membaca seluruh huruf berfathah yang telah dipelajari sampai قَ tanpa materi baru.",
+      "tartilCompetency": "Evaluasi Fathah I tanpa materi baru.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P010",
       "integration": {
         "tahfidz": {
@@ -213,7 +717,223 @@
         [
           "تَ خَ بَ",
           "ظَ دَ غَ",
-          "ءُ ظَ ضَ"
+          "ءَ ظَ ضَ"
+        ]
+      ],
+      "activities": [
+        "Ucapkan salam",
+        "Tirukan ayat",
+        "Praktikkan kepada teman"
+      ]
+    },
+    {
+      "pageId": "QJ1-P011",
+      "pageNumber": "11",
+      "title": "Mari Membaca",
+      "titleArabic": "كَ لَ",
+      "tartilCompetency": "Membedakan dan membaca كَ لَ bersama murojaah.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P011",
+      "integration": {
+        "tahfidz": {
+          "title": "Talqin Surah An-Nās: 1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "instruction": "Dengarkan dan tirukan"
+        },
+        "arabic": {
+          "title": "Salam dan Jawabannya",
+          "arabic": "السَّلَامُ عَلَيْكُمْ",
+          "instruction": "Dengarkan dan ucapkan"
+        },
+        "nidom": {
+          "title": "Adab Mengucapkan Salam",
+          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
+          "instruction": "Dengarkan dan amalkan"
+        }
+      },
+      "rows": [
+        [
+          "كَ لَ",
+          "قَ كَ",
+          "لَ فَ"
+        ],
+        [
+          "كَ لَ",
+          "عَ كَ",
+          "لَ غَ"
+        ],
+        [
+          "كَ لَ",
+          "صَ كَ",
+          "كَ تَ بَ"
+        ],
+        [
+          "أَ كَ لَ",
+          "شَ كَ رَ",
+          "خَ لَ قَ"
+        ],
+        [
+          "جَ عَ لَ",
+          "دَ خَ لَ",
+          "سَ لَ كَ"
+        ],
+        [
+          "كَ ضَ لَ",
+          "لَ طَ كَ",
+          "كَ ظَ لَ"
+        ],
+        [
+          "لَ حَ كَ",
+          "كَ رَ لَ",
+          "لَ بَ كَ"
+        ],
+        [
+          "كَ ثَ لَ",
+          "لَ جَ كَ",
+          "فَ قَ عَ"
+        ]
+      ],
+      "activities": [
+        "Ucapkan salam",
+        "Tirukan ayat",
+        "Praktikkan kepada teman"
+      ]
+    },
+    {
+      "pageId": "QJ1-P012",
+      "pageNumber": "12",
+      "title": "Mari Membaca",
+      "titleArabic": "مَ نَ",
+      "tartilCompetency": "Membedakan dan membaca مَ نَ bersama murojaah.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P012",
+      "integration": {
+        "tahfidz": {
+          "title": "Talqin Surah An-Nās: 1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "instruction": "Dengarkan dan tirukan"
+        },
+        "arabic": {
+          "title": "Salam dan Jawabannya",
+          "arabic": "السَّلَامُ عَلَيْكُمْ",
+          "instruction": "Dengarkan dan ucapkan"
+        },
+        "nidom": {
+          "title": "Adab Mengucapkan Salam",
+          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
+          "instruction": "Dengarkan dan amalkan"
+        }
+      },
+      "rows": [
+        [
+          "مَ نَ",
+          "كَ مَ",
+          "نَ لَ"
+        ],
+        [
+          "مَ نَ",
+          "قَ مَ",
+          "نَ فَ"
+        ],
+        [
+          "مَ نَ",
+          "عَ مَ",
+          "حَ مَ دَ"
+        ],
+        [
+          "رَ حَ مَ",
+          "عَ مَ لَ",
+          "مَ لَ كَ"
+        ],
+        [
+          "نَ صَ رَ",
+          "مَ نَ عَ",
+          "نَ فَ عَ"
+        ],
+        [
+          "أَ مَ نَ",
+          "سَ مَ عَ",
+          "جَ مَ عَ"
+        ],
+        [
+          "مَ ضَ نَ",
+          "نَ طَ مَ",
+          "مَ ظَ نَ"
+        ],
+        [
+          "نَ خَ مَ",
+          "مَ ذَ نَ",
+          "كَ لَ فَ"
+        ]
+      ],
+      "activities": [
+        "Ucapkan salam",
+        "Tirukan ayat",
+        "Praktikkan kepada teman"
+      ]
+    },
+    {
+      "pageId": "QJ1-P013",
+      "pageNumber": "13",
+      "title": "Mari Membaca",
+      "titleArabic": "هَ وَ يَ",
+      "tartilCompetency": "Membedakan dan membaca هَ وَ يَ bersama murojaah; وَ tetap pendek.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P013",
+      "integration": {
+        "tahfidz": {
+          "title": "Talqin Surah An-Nās: 1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "instruction": "Dengarkan dan tirukan"
+        },
+        "arabic": {
+          "title": "Salam dan Jawabannya",
+          "arabic": "السَّلَامُ عَلَيْكُمْ",
+          "instruction": "Dengarkan dan ucapkan"
+        },
+        "nidom": {
+          "title": "Adab Mengucapkan Salam",
+          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
+          "instruction": "Dengarkan dan amalkan"
+        }
+      },
+      "rows": [
+        [
+          "هَ وَ",
+          "يَ هَ",
+          "وَ يَ"
+        ],
+        [
+          "هَ يَ",
+          "وَ هَ",
+          "يَ وَ"
+        ],
+        [
+          "هَ وَ",
+          "يَ هَ",
+          "هَ دَ يَ"
+        ],
+        [
+          "وَ عَ دَ",
+          "وَ جَ دَ",
+          "وَ هَ بَ"
+        ],
+        [
+          "يَ سَ رَ",
+          "هَ لَ كَ",
+          "هَ جَ رَ"
+        ],
+        [
+          "وَ قَ عَ",
+          "هَ صَ يَ",
+          "وَ طَ هَ"
+        ],
+        [
+          "يَ ظَ وَ",
+          "هَ غَ يَ",
+          "وَ فَ هَ"
+        ],
+        [
+          "يَ قَ وَ",
+          "هَ كَ يَ",
+          "مَ نَ لَ"
         ]
       ],
       "activities": [
@@ -227,7 +947,7 @@
       "pageNumber": "14",
       "title": "Mari Membaca",
       "titleArabic": "تَكَامُلُ الْفَتْحَةِ",
-      "tartilCompetency": "Mengintegrasikan seluruh huruf berfathah dalam rangkaian dua dan tiga huruf terpisah.",
+      "tartilCompetency": "Integrasi seluruh huruf berfathah.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P014",
       "integration": {
         "tahfidz": {
@@ -299,7 +1019,7 @@
       "pageNumber": "15",
       "title": "Mari Membaca",
       "titleArabic": "إِتْقَانُ الْفَتْحَةِ",
-      "tartilCompetency": "Otomatisasi seluruh huruf berfathah dengan ketepatan tetap didahulukan daripada kecepatan.",
+      "tartilCompetency": "Otomatisasi seluruh huruf berfathah; ketepatan di atas kecepatan.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P015",
       "integration": {
         "tahfidz": {
