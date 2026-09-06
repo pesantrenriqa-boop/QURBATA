@@ -1,6 +1,6 @@
 # DEC-NID-QJ1-003 — Verifikasi Matan NIDHOM P011–P015
 
-**Status:** VERIFIED-TEXT — READY FOR ACADEMIC RATIFICATION  
+**Status:** APPROVED-NIDHOM-QJ1 — RATIFIED  
 **Tanggal:** 2026-09-06  
 **Cakupan:** HAD-000011–HAD-000015 / QJ1-P011–P015
 
@@ -33,6 +33,6 @@
 - [x] potongan bermakna utuh.
 - [x] terjemah peserta disusun.
 - [x] aktivitas Bi’ah diturunkan dari pesan hadis.
-- [ ] ratifikasi akademik pemilik QURBATA.
+- [x] ratifikasi akademik pemilik QURBATA (disetujui 2026-09-06).
 
-Setelah ratifikasi, HAD-000011–HAD-000015 dapat dinaikkan menjadi APPROVED-NIDHOM-QJ1.
+**Keputusan:** HAD-000011–HAD-000015 disahkan untuk NIDHOM QURBATA Jilid 1 P011–P015, termasuk P012 dengan lafaz «لَا تَغْضَبْ، وَلَكَ الْجَنَّةُ» dan catatan takhrij/ikhtilaf penilaian yang tercantum.
