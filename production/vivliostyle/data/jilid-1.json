@@ -15,19 +15,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P001",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Surah An-Nās: 1",
-          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-          "instruction": "Dengarkan dan tirukan"
+          "title": "Sima’ Al-Fatihah: 1",
+          "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+          "instruction": "Dengarkan ayat 1 dengan adab"
         },
         "arabic": {
-          "title": "Salam dan Jawabannya",
-          "arabic": "السَّلَامُ عَلَيْكُمْ",
-          "instruction": "Dengarkan dan ucapkan"
+          "title": "Benda Kelas 1",
+          "arabic": "كِتَابٌ — قَلَمٌ",
+          "instruction": "Tunjuk dan ucapkan"
         },
         "nidom": {
-          "title": "Adab Mengucapkan Salam",
-          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
-          "instruction": "Dengarkan dan amalkan"
+          "title": "Kasih Sayang",
+          "arabic": "الرَّحْمَةُ",
+          "instruction": "Tunjukkan sikap penyayang"
         }
       },
       "rows": [
@@ -73,9 +73,9 @@
         ]
       ],
       "activities": [
-        "Ucapkan salam",
-        "Tirukan ayat",
-        "Praktikkan kepada teman"
+        "Simak Al-Fatihah ayat 1",
+        "Tunjuk كتاب atau قلم",
+        "Praktik kasih sayang"
       ]
     },
     {
@@ -87,19 +87,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P002",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Surah An-Nās: 1",
-          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "title": "Talqin Awal Ayat 1",
+          "arabic": "بِسْمِ اللَّهِ",
           "instruction": "Dengarkan dan tirukan"
         },
         "arabic": {
-          "title": "Salam dan Jawabannya",
-          "arabic": "السَّلَامُ عَلَيْكُمْ",
-          "instruction": "Dengarkan dan ucapkan"
+          "title": "Benda Kelas 2",
+          "arabic": "بَابٌ — كُرْسِيٌّ",
+          "instruction": "Tunjuk dan bedakan"
         },
         "nidom": {
-          "title": "Adab Mengucapkan Salam",
-          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
-          "instruction": "Dengarkan dan amalkan"
+          "title": "Ucapan Baik",
+          "arabic": "الْكَلِمَةُ الطَّيِّبَةُ",
+          "instruction": "Ucapkan kata yang baik"
         }
       },
       "rows": [
@@ -145,9 +145,9 @@
         ]
       ],
       "activities": [
-        "Ucapkan salam",
-        "Tirukan ayat",
-        "Praktikkan kepada teman"
+        "Tirukan بِسْمِ اللَّهِ",
+        "Bedakan باب dan كرسي",
+        "Ucapkan kata yang baik"
       ]
     },
     {
@@ -159,19 +159,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P003",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Surah An-Nās: 1",
-          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-          "instruction": "Dengarkan dan tirukan"
+          "title": "Talqin Lanjutan Ayat 1",
+          "arabic": "الرَّحْمَٰنِ الرَّحِيمِ",
+          "instruction": "Tirukan lalu sambungkan"
         },
         "arabic": {
-          "title": "Salam dan Jawabannya",
-          "arabic": "السَّلَامُ عَلَيْكُمْ",
-          "instruction": "Dengarkan dan ucapkan"
+          "title": "Benda Kelas 3",
+          "arabic": "سَبُّورَةٌ — حَقِيبَةٌ",
+          "instruction": "Lihat lalu ucapkan"
         },
         "nidom": {
-          "title": "Adab Mengucapkan Salam",
-          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
-          "instruction": "Dengarkan dan amalkan"
+          "title": "Bersuci & Kebersihan",
+          "arabic": "الطَّهَارَةُ وَالنَّظَافَةُ",
+          "instruction": "Jaga kebersihan diri"
         }
       },
       "rows": [
@@ -217,9 +217,9 @@
         ]
       ],
       "activities": [
-        "Ucapkan salam",
-        "Tirukan ayat",
-        "Praktikkan kepada teman"
+        "Sambungkan الرَّحْمَٰنِ الرَّحِيمِ",
+        "Tunjuk سبورة atau حقيبة",
+        "Rapikan area belajar"
       ]
     },
     {
@@ -231,19 +231,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P004",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Surah An-Nās: 1",
-          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-          "instruction": "Dengarkan dan tirukan"
+          "title": "Ayat 1 Utuh",
+          "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+          "instruction": "Sambungkan ayat 1"
         },
         "arabic": {
-          "title": "Salam dan Jawabannya",
-          "arabic": "السَّلَامُ عَلَيْكُمْ",
-          "instruction": "Dengarkan dan ucapkan"
+          "title": "Lingkungan Qurani",
+          "arabic": "مُصْحَفٌ — مَسْجِدٌ",
+          "instruction": "Tunjuk dan ucapkan"
         },
         "nidom": {
-          "title": "Adab Mengucapkan Salam",
-          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
-          "instruction": "Dengarkan dan amalkan"
+          "title": "Wajah Ramah",
+          "arabic": "طَلَاقَةُ الْوَجْهِ",
+          "instruction": "Sapa dengan wajah ramah"
         }
       },
       "rows": [
@@ -289,9 +289,9 @@
         ]
       ],
       "activities": [
-        "Ucapkan salam",
-        "Tirukan ayat",
-        "Praktikkan kepada teman"
+        "Baca ayat 1 utuh",
+        "Tunjuk مصحف atau مسجد",
+        "Sapa dengan wajah ramah"
       ]
     },
     {
@@ -303,19 +303,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P005",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Surah An-Nās: 1",
-          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-          "instruction": "Dengarkan dan tirukan"
+          "title": "Recall Ayat 1",
+          "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+          "instruction": "Ucapkan tanpa model awal"
         },
         "arabic": {
-          "title": "Salam dan Jawabannya",
-          "arabic": "السَّلَامُ عَلَيْكُمْ",
-          "instruction": "Dengarkan dan ucapkan"
+          "title": "Lingkungan Dekat",
+          "arabic": "بَيْتٌ — مَاءٌ",
+          "instruction": "Ucapkan dan kenali"
         },
         "nidom": {
-          "title": "Adab Mengucapkan Salam",
-          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
-          "instruction": "Dengarkan dan amalkan"
+          "title": "Haya’ Terpuji",
+          "arabic": "الْحَيَاءُ",
+          "instruction": "Jaga sikap yang baik"
         }
       },
       "rows": [
@@ -361,9 +361,9 @@
         ]
       ],
       "activities": [
-        "Ucapkan salam",
-        "Tirukan ayat",
-        "Praktikkan kepada teman"
+        "Recall ayat 1",
+        "Ucapkan بيت atau ماء",
+        "Praktik haya’ terpuji"
       ]
     },
     {
@@ -375,19 +375,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P006",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Surah An-Nās: 1",
-          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "title": "Talqin Awal Ayat 2",
+          "arabic": "الْحَمْدُ لِلَّهِ",
           "instruction": "Dengarkan dan tirukan"
         },
         "arabic": {
-          "title": "Salam dan Jawabannya",
-          "arabic": "السَّلَامُ عَلَيْكُمْ",
-          "instruction": "Dengarkan dan ucapkan"
+          "title": "Orang & Demonstratif",
+          "arabic": "مُعَلِّمٌ — هٰذَا",
+          "instruction": "Ucapkan dengan menunjuk"
         },
         "nidom": {
-          "title": "Adab Mengucapkan Salam",
-          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
-          "instruction": "Dengarkan dan amalkan"
+          "title": "Kelembutan",
+          "arabic": "الرِّفْقُ",
+          "instruction": "Bersikap lembut"
         }
       },
       "rows": [
@@ -433,9 +433,9 @@
         ]
       ],
       "activities": [
-        "Ucapkan salam",
-        "Tirukan ayat",
-        "Praktikkan kepada teman"
+        "Tirukan awal ayat 2",
+        "Tunjuk معلّم sambil berkata هذا",
+        "Bersikap lembut"
       ]
     },
     {
@@ -447,19 +447,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P007",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Surah An-Nās: 1",
-          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-          "instruction": "Dengarkan dan tirukan"
+          "title": "Talqin Lanjutan Ayat 2",
+          "arabic": "رَبِّ الْعَالَمِينَ",
+          "instruction": "Tirukan lalu sambungkan"
         },
         "arabic": {
-          "title": "Salam dan Jawabannya",
-          "arabic": "السَّلَامُ عَلَيْكُمْ",
-          "instruction": "Dengarkan dan ucapkan"
+          "title": "Peserta Didik",
+          "arabic": "طَالِبٌ — هٰذَا",
+          "instruction": "Ganti objek dan ucapkan"
         },
         "nidom": {
-          "title": "Adab Mengucapkan Salam",
-          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
-          "instruction": "Dengarkan dan amalkan"
+          "title": "Salam",
+          "arabic": "السَّلَامُ",
+          "instruction": "Biasakan memberi salam"
         }
       },
       "rows": [
@@ -505,9 +505,9 @@
         ]
       ],
       "activities": [
-        "Ucapkan salam",
-        "Tirukan ayat",
-        "Praktikkan kepada teman"
+        "Tirukan lanjutan ayat 2",
+        "Tunjuk طالب sambil berkata هذا",
+        "Biasakan salam"
       ]
     },
     {
@@ -519,19 +519,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P008",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Surah An-Nās: 1",
-          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-          "instruction": "Dengarkan dan tirukan"
+          "title": "Ayat 2 Utuh",
+          "arabic": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+          "instruction": "Sambungkan ayat 2"
         },
         "arabic": {
-          "title": "Salam dan Jawabannya",
-          "arabic": "السَّلَامُ عَلَيْكُمْ",
-          "instruction": "Dengarkan dan ucapkan"
+          "title": "Laki-laki & Perempuan",
+          "arabic": "وَلَدٌ — بِنْتٌ — هٰذَا — هٰذِهِ",
+          "instruction": "Bedakan dan tunjuk"
         },
         "nidom": {
-          "title": "Adab Mengucapkan Salam",
-          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
-          "instruction": "Dengarkan dan amalkan"
+          "title": "Kebaikan Kecil",
+          "arabic": "الْمَعْرُوفُ",
+          "instruction": "Lakukan satu kebaikan kecil"
         }
       },
       "rows": [
@@ -577,9 +577,9 @@
         ]
       ],
       "activities": [
-        "Ucapkan salam",
-        "Tirukan ayat",
-        "Praktikkan kepada teman"
+        "Sambungkan ayat 2",
+        "Bedakan هذا dan هذه",
+        "Lakukan kebaikan kecil"
       ]
     },
     {
@@ -591,19 +591,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P009",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Surah An-Nās: 1",
-          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-          "instruction": "Dengarkan dan tirukan"
+          "title": "Integrasi Ayat 1–2",
+          "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ۝ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+          "instruction": "Sambungkan ayat 1–2"
         },
         "arabic": {
-          "title": "Salam dan Jawabannya",
-          "arabic": "السَّلَامُ عَلَيْكُمْ",
-          "instruction": "Dengarkan dan ucapkan"
+          "title": "Guru & Siswi",
+          "arabic": "مُعَلِّمَةٌ — طَالِبَةٌ — مَا — مَنْ",
+          "instruction": "Tanya jawab terpandu"
         },
         "nidom": {
-          "title": "Adab Mengucapkan Salam",
-          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
-          "instruction": "Dengarkan dan amalkan"
+          "title": "Niat",
+          "arabic": "النِّيَّةُ",
+          "instruction": "Luruskan niat belajar"
         }
       },
       "rows": [
@@ -649,9 +649,9 @@
         ]
       ],
       "activities": [
-        "Ucapkan salam",
-        "Tirukan ayat",
-        "Praktikkan kepada teman"
+        "Sambungkan ayat 1–2",
+        "Tanya ما / من secara lisan",
+        "Luruskan niat belajar"
       ]
     },
     {
@@ -663,19 +663,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P010",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Surah An-Nās: 1",
-          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-          "instruction": "Dengarkan dan tirukan"
+          "title": "Recall Ayat 1–2",
+          "arabic": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+          "instruction": "Mulai dari ayat yang ditunjuk guru"
         },
         "arabic": {
-          "title": "Salam dan Jawabannya",
-          "arabic": "السَّلَامُ عَلَيْكُمْ",
-          "instruction": "Dengarkan dan ucapkan"
+          "title": "Gerbang Siklus 1",
+          "arabic": "هٰذَا كِتَابٌ — هٰذِهِ حَقِيبَةٌ",
+          "instruction": "Respons sesuai objek"
         },
         "nidom": {
-          "title": "Adab Mengucapkan Salam",
-          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
-          "instruction": "Dengarkan dan amalkan"
+          "title": "Konsistensi",
+          "arabic": "الْمُدَاوَمَةُ",
+          "instruction": "Istiqamah dalam latihan"
         }
       },
       "rows": [
@@ -721,9 +721,9 @@
         ]
       ],
       "activities": [
-        "Ucapkan salam",
-        "Tirukan ayat",
-        "Praktikkan kepada teman"
+        "Recall ayat 1–2",
+        "Respons objek Siklus 1",
+        "Selesaikan latihan dengan istiqamah"
       ]
     },
     {
@@ -735,19 +735,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P011",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Surah An-Nās: 1",
-          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "title": "Talqin Awal Ayat 3",
+          "arabic": "الرَّحْمَٰنِ",
           "instruction": "Dengarkan dan tirukan"
         },
         "arabic": {
-          "title": "Salam dan Jawabannya",
-          "arabic": "السَّلَامُ عَلَيْكُمْ",
-          "instruction": "Dengarkan dan ucapkan"
+          "title": "Tempat 1",
+          "arabic": "فَصْلٌ — غُرْفَةٌ",
+          "instruction": "Kenali dan ucapkan"
         },
         "nidom": {
-          "title": "Adab Mengucapkan Salam",
-          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
-          "instruction": "Dengarkan dan amalkan"
+          "title": "Tidak Mengganggu",
+          "arabic": "كَفُّ الْأَذَى",
+          "instruction": "Jangan mengganggu teman"
         }
       },
       "rows": [
@@ -793,9 +793,9 @@
         ]
       ],
       "activities": [
-        "Ucapkan salam",
-        "Tirukan ayat",
-        "Praktikkan kepada teman"
+        "Tirukan الرَّحْمَٰنِ",
+        "Ucapkan فصل atau غرفة",
+        "Jaga agar tidak mengganggu"
       ]
     },
     {
@@ -807,19 +807,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P012",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Surah An-Nās: 1",
-          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-          "instruction": "Dengarkan dan tirukan"
+          "title": "Talqin Lanjutan Ayat 3",
+          "arabic": "الرَّحِيمِ",
+          "instruction": "Tirukan lalu sambungkan"
         },
         "arabic": {
-          "title": "Salam dan Jawabannya",
-          "arabic": "السَّلَامُ عَلَيْكُمْ",
-          "instruction": "Dengarkan dan ucapkan"
+          "title": "Tempat 2",
+          "arabic": "مَدْرَسَةٌ — نَافِذَةٌ",
+          "instruction": "Kenali dan ucapkan"
         },
         "nidom": {
-          "title": "Adab Mengucapkan Salam",
-          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
-          "instruction": "Dengarkan dan amalkan"
+          "title": "Kendali Marah",
+          "arabic": "ضَبْطُ الْغَضَبِ",
+          "instruction": "Tahan diri saat marah"
         }
       },
       "rows": [
@@ -865,9 +865,9 @@
         ]
       ],
       "activities": [
-        "Ucapkan salam",
-        "Tirukan ayat",
-        "Praktikkan kepada teman"
+        "Tirukan الرَّحِيمِ",
+        "Ucapkan مدرسة atau نافذة",
+        "Latih kendali marah"
       ]
     },
     {
@@ -879,19 +879,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P013",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Surah An-Nās: 1",
-          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-          "instruction": "Dengarkan dan tirukan"
+          "title": "Ayat 3 Utuh",
+          "arabic": "الرَّحْمَٰنِ الرَّحِيمِ",
+          "instruction": "Sambungkan ayat 3"
         },
         "arabic": {
-          "title": "Salam dan Jawabannya",
-          "arabic": "السَّلَامُ عَلَيْكُمْ",
-          "instruction": "Dengarkan dan ucapkan"
+          "title": "Benda & Sifat",
+          "arabic": "سَرِيرٌ — جَدِيدٌ",
+          "instruction": "Ucapkan pasangan"
         },
         "nidom": {
-          "title": "Adab Mengucapkan Salam",
-          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
-          "instruction": "Dengarkan dan amalkan"
+          "title": "Kebaikan bagi Sesama",
+          "arabic": "حُبُّ الْخَيْرِ لِلْغَيْرِ",
+          "instruction": "Doakan kebaikan teman"
         }
       },
       "rows": [
@@ -937,9 +937,9 @@
         ]
       ],
       "activities": [
-        "Ucapkan salam",
-        "Tirukan ayat",
-        "Praktikkan kepada teman"
+        "Sambungkan ayat 3",
+        "Pasangkan سرير dan جديد",
+        "Doakan kebaikan teman"
       ]
     },
     {
@@ -951,19 +951,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P014",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Surah An-Nās: 1",
-          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-          "instruction": "Dengarkan dan tirukan"
+          "title": "Integrasi Ayat 1–3",
+          "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ۝ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۝ الرَّحْمَٰنِ الرَّحِيمِ",
+          "instruction": "Sambungkan ayat 1–3"
         },
         "arabic": {
-          "title": "Salam dan Jawabannya",
-          "arabic": "السَّلَامُ عَلَيْكُمْ",
-          "instruction": "Dengarkan dan ucapkan"
+          "title": "Kontras Sifat 1",
+          "arabic": "قَدِيمٌ — كَبِيرٌ",
+          "instruction": "Bedakan sifat"
         },
         "nidom": {
-          "title": "Adab Mengucapkan Salam",
-          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
-          "instruction": "Dengarkan dan amalkan"
+          "title": "Membantu Sesama",
+          "arabic": "إِعَانَةُ الْآخَرِينَ",
+          "instruction": "Bantu teman yang membutuhkan"
         }
       },
       "rows": [
@@ -1009,9 +1009,9 @@
         ]
       ],
       "activities": [
-        "Ucapkan salam",
-        "Tirukan ayat",
-        "Praktikkan kepada teman"
+        "Sambungkan ayat 1–3",
+        "Bedakan قديم dan كبير",
+        "Bantu seorang teman"
       ]
     },
     {
@@ -1023,19 +1023,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P015",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Surah An-Nās: 1",
-          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-          "instruction": "Dengarkan dan tirukan"
+          "title": "Recall Ayat 1–3",
+          "arabic": "الرَّحْمَٰنِ الرَّحِيمِ",
+          "instruction": "Ulangi bagian yang paling lemah"
         },
         "arabic": {
-          "title": "Salam dan Jawabannya",
-          "arabic": "السَّلَامُ عَلَيْكُمْ",
-          "instruction": "Dengarkan dan ucapkan"
+          "title": "Kontras Sifat 2",
+          "arabic": "صَغِيرٌ — جَمِيلٌ",
+          "instruction": "Deskripsikan secara lisan"
         },
         "nidom": {
-          "title": "Adab Mengucapkan Salam",
-          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
-          "instruction": "Dengarkan dan amalkan"
+          "title": "Belajar Al-Qur’an",
+          "arabic": "تَعَلُّمُ الْقُرْآنِ",
+          "instruction": "Belajar dan mengajarkan kebaikan"
         }
       },
       "rows": [
@@ -1081,9 +1081,9 @@
         ]
       ],
       "activities": [
-        "Ucapkan salam",
-        "Tirukan ayat",
-        "Praktikkan kepada teman"
+        "Recall ayat 1–3",
+        "Deskripsikan dengan صغير / جميل",
+        "Ulangi bacaan Al-Qur’an terbaikmu"
       ]
     }
   ]
