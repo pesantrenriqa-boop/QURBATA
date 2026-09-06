@@ -25,6 +25,9 @@ const card = (label, value) => `
   </section>`;
 
 const pages = await Promise.all(data.pages.map(async (page) => {
+  if (!page.title || !page.titleArabic || arabicLetters(page.titleArabic).length === 0) {
+    throw new Error(`${page.pageId}: judul Indonesia dan judul Arab wajib diisi terpisah.`);
+  }
   if (page.rows.length !== 8 || page.rows.some((row) => row.length !== 3)) {
     throw new Error(`${page.pageId}: grid wajib tepat 8 baris x 3 kolom.`);
   }
@@ -65,7 +68,7 @@ const pages = await Promise.all(data.pages.map(async (page) => {
     </header>
 
     <section class="lesson-heading">
-      <h1>${escapeHtml(page.title)}</h1>
+      <h1><span>${escapeHtml(page.title)}</span> <span class="arabic lesson-title-arabic" lang="ar" dir="rtl">${escapeHtml(page.titleArabic)}</span></h1>
       <p><strong>Kompetensi Tartil:</strong> ${escapeHtml(page.tartilCompetency)}</p>
     </section>
 
