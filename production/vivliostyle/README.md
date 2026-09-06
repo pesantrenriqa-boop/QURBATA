@@ -41,4 +41,4 @@ Build dihentikan jika halaman latihan tidak memenuhi semuanya:
 
 ## Font
 
-Template menyertakan Amiri Quran untuk teks Arab/Al-Qur'an. Font dibundel secara lokal agar hasil tidak bergantung pada internet dan dapat diulang pada mesin produksi. Lihat sumber, lisensi, dan aturan penggantian font pada `fonts/README.md`.
+Template memakai KFGQPC Uthman Taha Naskh untuk seluruh teks Arab/Al-Qur'an. Font dibundel secara lokal agar hasil tidak bergantung pada internet dan dapat diulang pada mesin produksi. Lihat sumber dan aturan penggantian font pada `fonts/README.md`.
