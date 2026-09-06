@@ -302,3 +302,12 @@ body {
 .concept-intro h2{font-size:7.5pt;min-width:14mm}
 .concept-items{justify-content:center;flex:1;gap:7mm}
 .concept-items b,.concept-items strong{font-size:20pt}
+
+/* two-row competency planting on first page of a new harakat */
+.book-page--concept{grid-template-rows:8mm 16mm 25mm 18mm minmax(0,1fr) 25mm 8mm}
+.concept-intro{display:grid;grid-template-columns:27mm 1fr;gap:3mm;padding:1.3mm 2.5mm}
+.concept-label{align-self:center}.concept-label h2{margin:0;font-size:7.2pt;color:var(--blue-900)}.concept-label small{display:block;margin-top:.7mm;font-size:5.2pt;line-height:1.2}
+.concept-rows{display:grid;grid-template-rows:1fr 1fr;gap:.8mm;min-width:0}
+.concept-rows .concept-items{display:flex;justify-content:space-around;gap:2mm;min-width:0}
+.concept-rows .concept-items span{gap:1mm}
+.concept-rows .concept-items b,.concept-rows .concept-items strong{font-size:16.5pt}
