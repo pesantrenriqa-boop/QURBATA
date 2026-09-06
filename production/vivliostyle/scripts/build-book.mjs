@@ -75,7 +75,7 @@ const pages = await Promise.all(data.pages.map(async (page) => {
     <div class="integration-grid">
       ${card("TAHFIDZ", page.integration.tahfidz)}
       ${card("BAHASA ARAB", page.integration.arabic)}
-      ${card("NIDHOM", page.integration.nidom)}
+      ${card("AKHLAK", page.integration.akhlak)}
     </div>
 
     <section class="practice-panel">
