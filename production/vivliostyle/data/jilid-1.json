@@ -1017,9 +1017,9 @@
     {
       "pageId": "QJ1-P015",
       "pageNumber": "15",
-      "title": "Mari Membaca",
-      "titleArabic": "إِتْقَانُ الْفَتْحَةِ",
-      "tartilCompetency": "Otomatisasi seluruh huruf berfathah; ketepatan di atas kecepatan.",
+      "title": "Latihan Penuh Fathah 2",
+      "titleArabic": "تَدْرِيبُ الْفَتْحَةِ ٢",
+      "tartilCompetency": "Latihan penuh kedua seluruh huruf berfathah; tiga huruf lepas, bermakna atau mendekati kata bermakna, sebagai penutup fase Fathah.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P015",
       "integration": {
         "tahfidz": {
@@ -1040,44 +1040,44 @@
       },
       "rows": [
         [
-          "خَ لَ قَ",
-          "جَ عَ لَ",
-          "دَ خَ لَ"
+          "خَ رَ جَ",
+          "دَ خَ لَ",
+          "جَ لَ سَ"
         ],
         [
-          "أَ كَ لَ",
           "سَ مَ عَ",
-          "جَ مَ عَ"
+          "نَ ظَ رَ",
+          "فَ هَ مَ"
         ],
         [
-          "مَ نَ عَ",
-          "نَ فَ عَ",
-          "وَ جَ دَ"
+          "عَ رَ فَ",
+          "طَ لَ بَ",
+          "تَ رَ كَ"
         ],
         [
-          "وَ هَ بَ",
-          "وَ قَ عَ",
-          "هَ جَ رَ"
+          "رَ كَ بَ",
+          "وَ قَ فَ",
+          "سَ كَ نَ"
         ],
         [
-          "طَ غَ شَ",
-          "ضَ فَ ءَ",
-          "يَ ذَ ثَ"
+          "مَ لَ كَ",
+          "حَ كَ مَ",
+          "قَ بَ لَ"
         ],
         [
-          "قَ ثَ ذَ",
-          "حَ مَ دَ",
-          "رَ حَ مَ"
+          "رَ فَ عَ",
+          "خَ فَ ضَ",
+          "قَ رَ بَ"
         ],
         [
-          "ذَ كَ رَ",
-          "سَ جَ دَ",
-          "شَ كَ رَ"
+          "بَ عَ دَ",
+          "سَ بَ قَ",
+          "غَ لَ بَ"
         ],
         [
-          "صَ بَ رَ",
-          "عَ بَ دَ",
-          "عَ مَ لَ"
+          "كَ بَ رَ",
+          "صَ غَ رَ",
+          "صَ دَ قَ"
         ]
       ],
       "activities": [
