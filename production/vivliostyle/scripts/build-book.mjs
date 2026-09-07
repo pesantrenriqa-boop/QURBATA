@@ -217,13 +217,13 @@ const pages = await Promise.all(data.pages.map(async (page) => {
   if (!page.title || !page.titleArabic || arabicLetters(page.titleArabic).length === 0) {
     throw new Error(`${page.pageId}: judul Indonesia dan judul Arab wajib diisi terpisah.`);
   }
-  if (page.rows.length !== 8 || page.rows.some((row) => row.length !== 3)) {
+  if (page.rows.length !== (page.intro ? 7 : 8) || page.rows.some((row) => row.length !== 3)) {
     throw new Error(`${page.pageId}: grid wajib ${page.intro ? "7" : "8"} baris x 3 kolom sesuai tipe halaman.`);
   }
   const items = page.rows.flat();
   const expectedItems = page.intro ? 21 : 24;
   if (items.length !== expectedItems) {
-    throw new Error(`${page.pageId}: halaman wajib mempunyai tepat 24 tangga.`);
+    throw new Error(`${page.pageId}: halaman wajib mempunyai tepat ${expectedItems} tangga sesuai tipe halaman.`);
   }
   const pageNo = Number(page.pageNumber);
   const firstEightValid = items.slice(0, 8).every((item) => arabicLetters(item).length === 2);
