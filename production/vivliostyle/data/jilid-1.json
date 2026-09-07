@@ -1281,26 +1281,26 @@
         "Akhlak QURBATA: Praktikkan adab belajar selama pembelajaran."
       ],
       "intro": {
-        "title": "Kompetensi Baru",
+        "title": "Kasrah — Materi Baru",
         "items": [
           [
-            "بِ",
+            "بَ",
             "بِ"
           ],
           [
-            "تِ",
+            "تَ",
             "تِ"
           ],
           [
-            "ثِ",
+            "ثَ",
             "ثِ"
           ],
           [
-            "جِ",
+            "جَ",
             "جِ"
           ]
         ],
-        "instruction": "Talqin kompetensi baru."
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah."
       }
     },
     {
@@ -1370,26 +1370,26 @@
         "Akhlak QURBATA: Praktikkan mendengar selama pembelajaran."
       ],
       "intro": {
-        "title": "Kompetensi Baru",
+        "title": "Kasrah — Materi Baru",
         "items": [
           [
-            "حِ",
+            "حَ",
             "حِ"
           ],
           [
-            "خِ",
+            "خَ",
             "خِ"
           ],
           [
-            "دِ",
+            "دَ",
             "دِ"
           ],
           [
-            "ذِ",
+            "ذَ",
             "ذِ"
           ]
         ],
-        "instruction": "Talqin kompetensi baru."
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah."
       }
     },
     {
@@ -1459,26 +1459,26 @@
         "Akhlak QURBATA: Praktikkan sabar selama pembelajaran."
       ],
       "intro": {
-        "title": "Kompetensi Baru",
+        "title": "Kasrah — Materi Baru",
         "items": [
           [
-            "رِ",
+            "رَ",
             "رِ"
           ],
           [
-            "زِ",
+            "زَ",
             "زِ"
           ],
           [
-            "سِ",
+            "سَ",
             "سِ"
           ],
           [
-            "شِ",
+            "شَ",
             "شِ"
           ]
         ],
-        "instruction": "Talqin kompetensi baru."
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah."
       }
     },
     {
@@ -1548,26 +1548,26 @@
         "Akhlak QURBATA: Praktikkan bersungguh-sungguh selama pembelajaran."
       ],
       "intro": {
-        "title": "Kompetensi Baru",
+        "title": "Kasrah — Materi Baru",
         "items": [
           [
-            "صِ",
+            "صَ",
             "صِ"
           ],
           [
-            "ضِ",
+            "ضَ",
             "ضِ"
           ],
           [
-            "طِ",
+            "طَ",
             "طِ"
           ],
           [
-            "ظِ",
+            "ظَ",
             "ظِ"
           ]
         ],
-        "instruction": "Talqin kompetensi baru."
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah."
       }
     },
     {
@@ -1682,26 +1682,26 @@
         ]
       },
       "intro": {
-        "title": "Kompetensi Baru",
+        "title": "Kasrah — Materi Baru",
         "items": [
           [
-            "عِ",
+            "عَ",
             "عِ"
           ],
           [
-            "غِ",
+            "غَ",
             "غِ"
           ],
           [
-            "فِ",
+            "فَ",
             "فِ"
           ],
           [
-            "قِ",
+            "قَ",
             "قِ"
           ]
         ],
-        "instruction": "Talqin kompetensi baru."
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah."
       }
     },
     {
@@ -1771,26 +1771,26 @@
         "Akhlak QURBATA: Praktikkan mengulang kebaikan selama pembelajaran."
       ],
       "intro": {
-        "title": "Kompetensi Baru",
+        "title": "Kasrah — Materi Baru",
         "items": [
           [
-            "كِ",
+            "كَ",
             "كِ"
           ],
           [
-            "لِ",
+            "لَ",
             "لِ"
           ],
           [
-            "مِ",
+            "مَ",
             "مِ"
           ],
           [
-            "نِ",
+            "نَ",
             "نِ"
           ]
         ],
-        "instruction": "Talqin kompetensi baru."
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah."
       }
     },
     {
@@ -1860,26 +1860,26 @@
         "Akhlak QURBATA: Praktikkan menjaga buku selama pembelajaran."
       ],
       "intro": {
-        "title": "Kompetensi Baru",
+        "title": "Kasrah — Materi Baru",
         "items": [
           [
-            "هِ",
+            "هَ",
             "هِ"
           ],
           [
-            "وِ",
+            "وَ",
             "وِ"
           ],
           [
-            "يِ",
+            "يَ",
             "يِ"
           ],
           [
-            "ءِ",
+            "ءَ",
             "ءِ"
           ]
         ],
-        "instruction": "Talqin kompetensi baru."
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah."
       }
     },
     {
@@ -2117,6 +2117,6 @@
     "detachedLetters": "Jilid 1 wajib memakai huruf lepas/tidak sambung pada seluruh grid Tartil.",
     "mixedHarakatWithinGroup": "Pada fase harakat baru, satu kelompok latihan 3 huruf wajib mencampur harakat kompetensi baru dan harakat lama yang sudah legal di DALAM kelompok yang sama. Posisi harakat baru diacak: awal, tengah, atau akhir. Komposisi keseluruhan halaman mengikuti proporsi target aktif/murojaah (±60/40), bukan memisahkan kelompok Kasrah dan kelompok Fathah.",
     "meaningfulMixedGroups": "Kelompok 3 huruf campuran harakat TIDAK boleh dibentuk secara acak huruf. Pilih terlebih dahulu bentuk dasar kata Arab bermakna atau sangat dekat dengan kata bermakna, lalu distribusikan harakat baru/lama pada tiga hurufnya sesuai kompetensi legal dan proporsi halaman. Posisi harakat baru boleh awal/tengah/akhir; huruf tetap lepas.",
-    "newCompetencyHeaderEveryIntroduction": "WAJIB pada SETIAP halaman yang memperkenalkan huruf/harakat baru: tampilkan satu baris 'Kompetensi Baru' sebelum grid latihan. Isi hanya huruf kompetensi baru yang diajarkan pada halaman itu (bukan seluruh kompetensi lama), menggunakan font Arab Utsmani dan ukuran SAMA dengan huruf latihan. Baris ini menggantikan satu baris latihan sehingga halaman materi baru = 1 baris kompetensi baru + 7 baris latihan. Halaman murojaah/evaluasi/penguatan tanpa materi baru = 8 baris latihan tanpa header kompetensi baru."
+    "newCompetencyHeaderEveryIntroduction": "WAJIB pada SETIAP halaman kompetensi baru: baris penanaman harus MENJELASKAN PERUBAHAN dari kompetensi lama yang telah dikuasai menuju kompetensi baru pada huruf yang sama, misalnya جَ → جِ. DILARANG menampilkan bentuk baru → bentuk baru (misalnya جِ → جِ) karena tidak menjelaskan perubahan. Huruf contoh memakai font Utsmani dan ukuran sama dengan huruf latihan. Halaman materi baru = 1 baris penanaman + 7 baris latihan."
   }
 }
