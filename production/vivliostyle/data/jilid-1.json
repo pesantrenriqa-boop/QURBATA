@@ -65,18 +65,31 @@
           "ثَ بَ تَ",
           "ثَ ثَ بَ",
           "ثَ تَ تَ"
-        ],
-        [
-          "بَ تَ تَ",
-          "بَ بَ ثَ",
-          "تَ تَ بَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Jawab salam guru.",
         "Tahfidz QURBATA: Hafalkan ayat 1.",
         "Akhlak QURBATA: Dengarkan dan tirukan matan dengan benar."
-      ]
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "بَ",
+            "بَ"
+          ],
+          [
+            "تَ",
+            "تَ"
+          ],
+          [
+            "ثَ",
+            "ثَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
     },
     {
       "pageId": "QJ1-P002",
@@ -137,18 +150,27 @@
           "ثَ ءَ أَ",
           "بَ تَ ءَ",
           "أَ ثَ بَ"
-        ],
-        [
-          "ءَ بَ تَ",
-          "أَ تَ ثَ",
-          "ءَ ثَ بَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Lihat huruf/halaman yang ditunjuk.",
         "Tahfidz QURBATA: Hafalkan ayat 2; murojaah ayat 1.",
         "Akhlak QURBATA: Pahami pesan: sayangi orang lain."
-      ]
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "ءَ",
+            "ءَ"
+          ],
+          [
+            "أَ",
+            "أَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
     },
     {
       "pageId": "QJ1-P003",
@@ -209,18 +231,31 @@
           "ثَ حَ خَ",
           "أَ جَ بَ",
           "ءَ خَ تَ"
-        ],
-        [
-          "بَ حَ ثَ",
-          "تَ جَ أَ",
-          "ثَ خَ ءَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Dengarkan model bacaan.",
         "Tahfidz QURBATA: Hafalkan ayat 3; murojaah ayat 1–2.",
         "Akhlak QURBATA: Praktikkan satu tindakan kasih sayang."
-      ]
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "جَ",
+            "جَ"
+          ],
+          [
+            "حَ",
+            "حَ"
+          ],
+          [
+            "خَ",
+            "خَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
     },
     {
       "pageId": "QJ1-P004",
@@ -281,18 +316,35 @@
           "زَ خَ دَ",
           "ذَ ءَ رَ",
           "زَ أَ دَ"
-        ],
-        [
-          "ذَ بَ رَ",
-          "تَ ثَ جَ",
-          "حَ خَ ءَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Tirukan bacaan guru.",
         "Tahfidz QURBATA: Hafalkan ayat 4; murojaah ayat 1–3.",
         "Akhlak QURBATA: Dengarkan dan tirukan matan."
-      ]
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "دَ",
+            "دَ"
+          ],
+          [
+            "ذَ",
+            "ذَ"
+          ],
+          [
+            "رَ",
+            "رَ"
+          ],
+          [
+            "زَ",
+            "زَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
     },
     {
       "pageId": "QJ1-P005",
@@ -353,18 +405,27 @@
           "شَ ذَ سَ",
           "شَ زَ سَ",
           "شَ بَ سَ"
-        ],
-        [
-          "شَ تَ سَ",
-          "شَ ثَ سَ",
-          "جَ حَ خَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Baca bagian yang ditunjuk.",
         "Tahfidz QURBATA: Hafalkan ayat 5; murojaah ayat 1–4.",
         "Akhlak QURBATA: Gunakan satu ucapan baik kepada teman."
-      ]
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "سَ",
+            "سَ"
+          ],
+          [
+            "شَ",
+            "شَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
     },
     {
       "pageId": "QJ1-P006",
@@ -425,18 +486,27 @@
           "ضَ أَ صَ",
           "ضَ سَ صَ",
           "ضَ شَ صَ"
-        ],
-        [
-          "ضَ دَ صَ",
-          "زَ بَ تَ",
-          "ثَ جَ حَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Ulangi bacaan saat diminta.",
         "Tahfidz QURBATA: Hafalkan ayat 6; sambungkan An-Nas 1–6.",
         "Akhlak QURBATA: Biasakan ucapan baik selama pembelajaran."
-      ]
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "صَ",
+            "صَ"
+          ],
+          [
+            "ضَ",
+            "ضَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
     },
     {
       "pageId": "QJ1-P007",
@@ -497,18 +567,27 @@
           "ظَ ضَ طَ",
           "ظَ سَ طَ",
           "ظَ شَ طَ"
-        ],
-        [
-          "ظَ دَ طَ",
-          "ذَ رَ زَ",
-          "بَ تَ ثَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Ulangi sekali lagi.",
         "Tahfidz QURBATA: Hafalkan ayat 1; murojaah An-Nas.",
         "Akhlak QURBATA: Dengarkan dan tirukan matan."
-      ]
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "طَ",
+            "طَ"
+          ],
+          [
+            "ظَ",
+            "ظَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
     },
     {
       "pageId": "QJ1-P008",
@@ -569,18 +648,27 @@
           "غَ تَ عَ",
           "غَ ثَ عَ",
           "غَ جَ عَ"
-        ],
-        [
-          "غَ طَ عَ",
-          "شَ دَ ذَ",
-          "رَ زَ بَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Respons singkat sesuai pertanyaan guru.",
         "Tahfidz QURBATA: Hafalkan ayat 2; murojaah ayat 1.",
         "Akhlak QURBATA: Kenali sikap lembut dalam belajar."
-      ]
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "عَ",
+            "عَ"
+          ],
+          [
+            "غَ",
+            "غَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
     },
     {
       "pageId": "QJ1-P009",
@@ -641,18 +729,27 @@
           "قَ دَ فَ",
           "قَ ذَ فَ",
           "قَ زَ فَ"
-        ],
-        [
-          "قَ تَ فَ",
-          "ضَ سَ شَ",
-          "دَ ذَ رَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Kenali ungkapan penguatan guru.",
         "Tahfidz QURBATA: Hafalkan ayat 3; murojaah ayat 1–2.",
         "Akhlak QURBATA: Praktikkan kelembutan kepada guru dan teman."
-      ]
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "فَ",
+            "فَ"
+          ],
+          [
+            "قَ",
+            "قَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
     },
     {
       "pageId": "QJ1-P010",
@@ -785,18 +882,27 @@
           "لَ حَ كَ",
           "كَ رَ لَ",
           "لَ بَ كَ"
-        ],
-        [
-          "كَ ثَ لَ",
-          "لَ جَ كَ",
-          "فَ قَ عَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Buka buku/halaman saat diminta.",
         "Tahfidz QURBATA: Hafalkan ayat 5; sambungkan Al-Falaq 1–5.",
         "Akhlak QURBATA: Ucapkan niat baik sebelum memulai pembelajaran."
-      ]
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "كَ",
+            "كَ"
+          ],
+          [
+            "لَ",
+            "لَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
     },
     {
       "pageId": "QJ1-P012",
@@ -857,18 +963,27 @@
           "مَ ضَ نَ",
           "نَ طَ مَ",
           "مَ ظَ نَ"
-        ],
-        [
-          "نَ خَ مَ",
-          "مَ ذَ نَ",
-          "كَ لَ فَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Tutup buku/halaman saat diminta.",
         "Tahfidz QURBATA: Hafalkan ayat 1; murojaah Al-Falaq.",
         "Akhlak QURBATA: Dengarkan dan tirukan pesan menahan marah."
-      ]
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "مَ",
+            "مَ"
+          ],
+          [
+            "نَ",
+            "نَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
     },
     {
       "pageId": "QJ1-P013",
@@ -929,18 +1044,31 @@
           "يَ ظَ وَ",
           "هَ غَ يَ",
           "وَ فَ هَ"
-        ],
-        [
-          "يَ قَ وَ",
-          "هَ كَ يَ",
-          "مَ نَ لَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Jawab dengan menunjuk bagian/halaman yang dimaksud.",
         "Tahfidz QURBATA: Hafalkan ayat 2; murojaah ayat 1.",
         "Akhlak QURBATA: Latih menahan marah saat belajar bersama."
-      ]
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "هَ",
+            "هَ"
+          ],
+          [
+            "وَ",
+            "وَ"
+          ],
+          [
+            "يَ",
+            "يَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
     },
     {
       "pageId": "QJ1-P014",
@@ -1153,26 +1281,26 @@
         "Akhlak QURBATA: Praktikkan adab belajar selama pembelajaran."
       ],
       "intro": {
-        "title": "Kasrah — Materi Baru",
+        "title": "Kompetensi Baru",
         "items": [
           [
-            "ب",
+            "بِ",
             "بِ"
           ],
           [
-            "ت",
+            "تِ",
             "تِ"
           ],
           [
-            "ث",
+            "ثِ",
             "ثِ"
           ],
           [
-            "ج",
+            "جِ",
             "جِ"
           ]
         ],
-        "instruction": "Talqin materi baru."
+        "instruction": "Talqin kompetensi baru."
       }
     },
     {
@@ -1234,18 +1362,35 @@
           "حِ فَ ظَ",
           "سَ جَ دِ",
           "صَ بِ رَ"
-        ],
-        [
-          "فَ تِ حَ",
-          "رَ حِ مَ",
-          "عَ بِ دَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Gunakan “Baca Ini” dalam kegiatan belajar.",
         "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
         "Akhlak QURBATA: Praktikkan mendengar selama pembelajaran."
-      ]
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "حِ",
+            "حِ"
+          ],
+          [
+            "خِ",
+            "خِ"
+          ],
+          [
+            "دِ",
+            "دِ"
+          ],
+          [
+            "ذِ",
+            "ذِ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
     },
     {
       "pageId": "QJ1-P018",
@@ -1306,18 +1451,35 @@
           "سِ بَ قَ",
           "سِ كَ نَ",
           "حِ كَ مَ"
-        ],
-        [
-          "كَ تِ بَ",
-          "ذِ هَ بَ",
-          "رِ جَ عَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Gunakan “Ulangi” dalam kegiatan belajar.",
         "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
         "Akhlak QURBATA: Praktikkan sabar selama pembelajaran."
-      ]
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "رِ",
+            "رِ"
+          ],
+          [
+            "زِ",
+            "زِ"
+          ],
+          [
+            "سِ",
+            "سِ"
+          ],
+          [
+            "شِ",
+            "شِ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
     },
     {
       "pageId": "QJ1-P019",
@@ -1378,18 +1540,35 @@
           "سِ كَ نَ",
           "حِ كَ مَ",
           "كَ تِ بَ"
-        ],
-        [
-          "ذِ هَ بَ",
-          "رِ جَ عَ",
-          "خِ لَ قَ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Gunakan “Bagus” dalam kegiatan belajar.",
         "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
         "Akhlak QURBATA: Praktikkan bersungguh-sungguh selama pembelajaran."
-      ]
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "صِ",
+            "صِ"
+          ],
+          [
+            "ضِ",
+            "ضِ"
+          ],
+          [
+            "طِ",
+            "طِ"
+          ],
+          [
+            "ظِ",
+            "ظِ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
     },
     {
       "pageId": "QJ1-P020",
@@ -1450,11 +1629,6 @@
           "دِ رَ سَ",
           "لَ عِ بَ",
           "غِ لَ بَ"
-        ],
-        [
-          "سِ بَ قِ",
-          "وَ قِ فِ",
-          "سِ كَ نَ"
         ]
       ],
       "activities": [
@@ -1506,6 +1680,28 @@
             "mark": "ِ"
           }
         ]
+      },
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "عِ",
+            "عِ"
+          ],
+          [
+            "غِ",
+            "غِ"
+          ],
+          [
+            "فِ",
+            "فِ"
+          ],
+          [
+            "قِ",
+            "قِ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
       }
     },
     {
@@ -1567,18 +1763,35 @@
           "لَ عِ بَ",
           "غِ لِ بَ",
           "سِ بَ قِ"
-        ],
-        [
-          "وَ قِ فِ",
-          "سِ كِ نَ",
-          "مِ لَ كِ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Gunakan “Tutup Al-Qur’an” dalam kegiatan belajar.",
         "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
         "Akhlak QURBATA: Praktikkan mengulang kebaikan selama pembelajaran."
-      ]
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "كِ",
+            "كِ"
+          ],
+          [
+            "لِ",
+            "لِ"
+          ],
+          [
+            "مِ",
+            "مِ"
+          ],
+          [
+            "نِ",
+            "نِ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
     },
     {
       "pageId": "QJ1-P022",
@@ -1639,18 +1852,35 @@
           "غِ لِ بَ",
           "سِ بَ قِ",
           "وَ قِ فِ"
-        ],
-        [
-          "سِ كِ نَ",
-          "مِ لَ كِ",
-          "حَ كِ مِ"
         ]
       ],
       "activities": [
         "Bahasa Arab QURBATA: Gunakan “Ini Buku” dalam kegiatan belajar.",
         "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
         "Akhlak QURBATA: Praktikkan menjaga buku selama pembelajaran."
-      ]
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "هِ",
+            "هِ"
+          ],
+          [
+            "وِ",
+            "وِ"
+          ],
+          [
+            "يِ",
+            "يِ"
+          ],
+          [
+            "ءِ",
+            "ءِ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
     },
     {
       "pageId": "QJ1-P023",
@@ -1886,6 +2116,7 @@
     "fathahAfterClosure": "Setelah fase Fathah ditutup, Fathah tidak lagi menjadi target pembentukan pola bermakna; hanya muncul sebagai murojaah kumulatif proporsional.",
     "detachedLetters": "Jilid 1 wajib memakai huruf lepas/tidak sambung pada seluruh grid Tartil.",
     "mixedHarakatWithinGroup": "Pada fase harakat baru, satu kelompok latihan 3 huruf wajib mencampur harakat kompetensi baru dan harakat lama yang sudah legal di DALAM kelompok yang sama. Posisi harakat baru diacak: awal, tengah, atau akhir. Komposisi keseluruhan halaman mengikuti proporsi target aktif/murojaah (±60/40), bukan memisahkan kelompok Kasrah dan kelompok Fathah.",
-    "meaningfulMixedGroups": "Kelompok 3 huruf campuran harakat TIDAK boleh dibentuk secara acak huruf. Pilih terlebih dahulu bentuk dasar kata Arab bermakna atau sangat dekat dengan kata bermakna, lalu distribusikan harakat baru/lama pada tiga hurufnya sesuai kompetensi legal dan proporsi halaman. Posisi harakat baru boleh awal/tengah/akhir; huruf tetap lepas."
+    "meaningfulMixedGroups": "Kelompok 3 huruf campuran harakat TIDAK boleh dibentuk secara acak huruf. Pilih terlebih dahulu bentuk dasar kata Arab bermakna atau sangat dekat dengan kata bermakna, lalu distribusikan harakat baru/lama pada tiga hurufnya sesuai kompetensi legal dan proporsi halaman. Posisi harakat baru boleh awal/tengah/akhir; huruf tetap lepas.",
+    "newCompetencyHeaderEveryIntroduction": "WAJIB pada SETIAP halaman yang memperkenalkan huruf/harakat baru: tampilkan satu baris 'Kompetensi Baru' sebelum grid latihan. Isi hanya huruf kompetensi baru yang diajarkan pada halaman itu (bukan seluruh kompetensi lama), menggunakan font Arab Utsmani dan ukuran SAMA dengan huruf latihan. Baris ini menggantikan satu baris latihan sehingga halaman materi baru = 1 baris kompetensi baru + 7 baris latihan. Halaman murojaah/evaluasi/penguatan tanpa materi baru = 8 baris latihan tanpa header kompetensi baru."
   }
 }
