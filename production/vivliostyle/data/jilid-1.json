@@ -1300,7 +1300,8 @@
             "جِ"
           ]
         ],
-        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah."
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah.",
+        "direction": "rtl-old-to-new"
       }
     },
     {
@@ -1389,7 +1390,8 @@
             "ذِ"
           ]
         ],
-        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah."
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah.",
+        "direction": "rtl-old-to-new"
       }
     },
     {
@@ -1478,7 +1480,8 @@
             "شِ"
           ]
         ],
-        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah."
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah.",
+        "direction": "rtl-old-to-new"
       }
     },
     {
@@ -1567,7 +1570,8 @@
             "ظِ"
           ]
         ],
-        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah."
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah.",
+        "direction": "rtl-old-to-new"
       }
     },
     {
@@ -1701,7 +1705,8 @@
             "قِ"
           ]
         ],
-        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah."
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah.",
+        "direction": "rtl-old-to-new"
       }
     },
     {
@@ -1790,7 +1795,8 @@
             "نِ"
           ]
         ],
-        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah."
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah.",
+        "direction": "rtl-old-to-new"
       }
     },
     {
@@ -1879,7 +1885,8 @@
             "ءِ"
           ]
         ],
-        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah."
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah.",
+        "direction": "rtl-old-to-new"
       }
     },
     {
@@ -2112,7 +2119,7 @@
     ],
     "meaningfulPractice": "Pada fase harakat baru, susunan bermakna/mendekati kata terutama dibangun dari kompetensi harakat baru yang SUDAH legal pada halaman-halaman sebelumnya dan kompetensi baru halaman aktif; fathah yang sudah tuntas hanya berfungsi sebagai murojaah kumulatif tersebar. Semua huruf tetap lepas/tidak sambung.",
     "newConceptIntroduction": "SETIAP halaman yang memperkenalkan kompetensi baru wajib mengganti SATU baris latihan dengan satu baris PENANAMAN KOMPETENSI BARU. Huruf contoh harus sebesar huruf pada grid Latihan Tartil. Pola contoh: huruf/bentuk lama → bentuk kompetensi baru. Karena satu baris dipakai untuk penanaman, halaman materi baru hanya memiliki 7 baris grid latihan. Bukan strip teori kecil.",
-    "hehPolicy": "Gunakan hanya karakter ه (ha dua lubang pada font Utsmani), bukan ھ/ہ/ۀ/ە; pada latihan Tartil wajib berharakat.",
+    "hehPolicy": "Audit global: hanya gunakan ه untuk ha dua lubang menurut font Utsmani; karakter ھ/ہ/ۀ/ە dilarang di seluruh data. Pada latihan Tartil, ha wajib membawa harakat sesuai kompetensi.",
     "fathahAfterClosure": "Setelah fase Fathah ditutup, Fathah tidak lagi menjadi target pembentukan pola bermakna; hanya muncul sebagai murojaah kumulatif proporsional.",
     "detachedLetters": "Jilid 1 wajib memakai huruf lepas/tidak sambung pada seluruh grid Tartil.",
     "mixedHarakatWithinGroup": "Pada fase harakat baru, satu kelompok latihan 3 huruf wajib mencampur harakat kompetensi baru dan harakat lama yang sudah legal di DALAM kelompok yang sama. Posisi harakat baru diacak: awal, tengah, atau akhir. Komposisi keseluruhan halaman mengikuti proporsi target aktif/murojaah (±60/40), bukan memisahkan kelompok Kasrah dan kelompok Fathah.",
