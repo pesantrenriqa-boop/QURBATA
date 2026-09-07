@@ -945,9 +945,9 @@
     {
       "pageId": "QJ1-P014",
       "pageNumber": "14",
-      "title": "Mari Membaca",
-      "titleArabic": "تَكَامُلُ الْفَتْحَةِ",
-      "tartilCompetency": "Integrasi seluruh huruf berfathah.",
+      "title": "Latihan Penuh Fathah 1",
+      "titleArabic": "تَدْرِيبُ الْفَتْحَةِ ١",
+      "tartilCompetency": "Latihan penuh seluruh huruf berfathah dalam susunan tiga huruf lepas yang bermakna atau mendekati kata bermakna.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P014",
       "integration": {
         "tahfidz": {
@@ -989,29 +989,29 @@
         ],
         [
           "نَ صَ رَ",
-          "هَ دَ يَ",
-          "وَ عَ دَ"
+          "وَ عَ دَ",
+          "يَ سَ رَ"
         ],
         [
-          "يَ سَ رَ",
-          "حَ مَ دَ",
-          "رَ حَ مَ"
+          "خَ لَ قَ",
+          "جَ عَ لَ",
+          "دَ خَ لَ"
         ],
         [
-          "ذَ كَ رَ",
-          "سَ جَ دَ",
-          "شَ كَ رَ"
+          "أَ كَ لَ",
+          "سَ مَ عَ",
+          "جَ مَ عَ"
         ],
         [
-          "صَ بَ رَ",
-          "عَ بَ دَ",
-          "عَ مَ لَ"
+          "مَ نَ عَ",
+          "نَ فَ عَ",
+          "وَ جَ دَ"
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan saat menunjukkan tempat atau bagian bacaan.",
-        "Tahfidz QURBATA: Hafalkan ayat 3; murojaah ayat 1–2.",
-        "Akhlak QURBATA: Dengarkan pesan dan bantu satu kebutuhan teman."
+        "Bahasa Arab QURBATA: Gunakan هُنَا saat menunjukkan tempat atau bagian bacaan.",
+        "Tahfidz QURBATA: Hafalkan Al-Ikhlas ayat 3 dan murojaah ayat 1–2.",
+        "Akhlak QURBATA: Bantu satu kebutuhan teman selama pembelajaran."
       ]
     },
     {
