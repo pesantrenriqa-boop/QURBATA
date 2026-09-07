@@ -218,10 +218,11 @@ const pages = await Promise.all(data.pages.map(async (page) => {
     throw new Error(`${page.pageId}: judul Indonesia dan judul Arab wajib diisi terpisah.`);
   }
   if (page.rows.length !== 8 || page.rows.some((row) => row.length !== 3)) {
-    throw new Error(`${page.pageId}: grid wajib tepat 8 baris x 3 kolom.`);
+    throw new Error(`${page.pageId}: grid wajib ${page.intro ? "7" : "8"} baris x 3 kolom sesuai tipe halaman.`);
   }
   const items = page.rows.flat();
-  if (items.length !== 24) {
+  const expectedItems = page.intro ? 21 : 24;
+  if (items.length !== expectedItems) {
     throw new Error(`${page.pageId}: halaman wajib mempunyai tepat 24 tangga.`);
   }
   const pageNo = Number(page.pageNumber);
