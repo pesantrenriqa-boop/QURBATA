@@ -15,19 +15,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P001",
       "integration": {
         "tahfidz": {
-          "title": "An-Nas Ayat 1",
+          "title": "An-Nas 1",
           "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-          "instruction": "Hafalkan ayat 1."
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Salam Kelas",
-          "arabic": "السَّلَامُ عَلَيْكُمْ",
-          "instruction": "Jawab salam guru."
+          "title": "Dengarkan",
+          "arabic": "اِسْتَمِعْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Rahmah 1",
-          "arabic": "مَنْ لَا يَرْحَمْ لَا يُرْحَمْ",
-          "instruction": "Dengarkan dan tirukan matan dengan benar."
+          "title": "Niat",
+          "arabic": "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -68,9 +68,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Jawab salam guru.",
-        "Tahfidz QURBATA: Hafalkan ayat 1.",
-        "Akhlak QURBATA: Dengarkan dan tirukan matan dengan benar."
+        "Bahasa Arab QURBATA: Praktikkan “Dengarkan” (اِسْتَمِعْ).",
+        "Tahfidz QURBATA: An-Nas 1.",
+        "Akhlak QURBATA: Praktikkan niat."
       ],
       "intro": {
         "title": "Kompetensi Baru",
@@ -100,19 +100,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P002",
       "integration": {
         "tahfidz": {
-          "title": "An-Nas Ayat 2",
+          "title": "An-Nas 2",
           "arabic": "مَلِكِ النَّاسِ",
-          "instruction": "Hafalkan ayat 2; murojaah ayat 1."
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Lihat",
-          "arabic": "اُنْظُرْ",
-          "instruction": "Lihat huruf/halaman yang ditunjuk."
+          "title": "Bacalah",
+          "arabic": "اِقْرَأْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Rahmah 2",
-          "arabic": "مَنْ لَا يَرْحَمْ لَا يُرْحَمْ",
-          "instruction": "Pahami pesan: sayangi orang lain."
+          "title": "Adab belajar",
+          "arabic": "وَقُلْ رَبِّ زِدْنِي عِلْمًا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -153,9 +153,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Lihat huruf/halaman yang ditunjuk.",
-        "Tahfidz QURBATA: Hafalkan ayat 2; murojaah ayat 1.",
-        "Akhlak QURBATA: Pahami pesan: sayangi orang lain."
+        "Bahasa Arab QURBATA: Praktikkan “Bacalah” (اِقْرَأْ).",
+        "Tahfidz QURBATA: An-Nas 2.",
+        "Akhlak QURBATA: Praktikkan adab belajar."
       ],
       "intro": {
         "title": "Kompetensi Baru",
@@ -181,19 +181,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P003",
       "integration": {
         "tahfidz": {
-          "title": "An-Nas Ayat 3",
-          "arabic": "إِلَٰهِ النَّاسِ",
-          "instruction": "Hafalkan ayat 3; murojaah ayat 1–2."
+          "title": "An-Nas 3",
+          "arabic": "إِلَهِ النَّاسِ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Dengarkan",
-          "arabic": "اِسْتَمِعْ",
-          "instruction": "Dengarkan model bacaan."
+          "title": "Ulangi",
+          "arabic": "أَعِدْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Rahmah 3",
-          "arabic": "مَنْ لَا يَرْحَمْ لَا يُرْحَمْ",
-          "instruction": "Praktikkan satu tindakan kasih sayang."
+          "title": "Mendengar",
+          "arabic": "فَاسْتَمِعُوا لَهُ وَأَنْصِتُوا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -234,9 +234,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Dengarkan model bacaan.",
-        "Tahfidz QURBATA: Hafalkan ayat 3; murojaah ayat 1–2.",
-        "Akhlak QURBATA: Praktikkan satu tindakan kasih sayang."
+        "Bahasa Arab QURBATA: Praktikkan “Ulangi” (أَعِدْ).",
+        "Tahfidz QURBATA: An-Nas 3.",
+        "Akhlak QURBATA: Praktikkan mendengar."
       ],
       "intro": {
         "title": "Kompetensi Baru",
@@ -266,19 +266,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P004",
       "integration": {
         "tahfidz": {
-          "title": "An-Nas Ayat 4",
+          "title": "An-Nas 4",
           "arabic": "مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ",
-          "instruction": "Hafalkan ayat 4; murojaah ayat 1–3."
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Tirukan",
-          "arabic": "رَدِّدْ",
-          "instruction": "Tirukan bacaan guru."
+          "title": "Lihatlah",
+          "arabic": "اُنْظُرْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Ucapan Baik 1",
-          "arabic": "وَالْكَلِمَةُ الطَّيِّبَةُ صَدَقَةٌ",
-          "instruction": "Dengarkan dan tirukan matan."
+          "title": "Sabar",
+          "arabic": "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -319,9 +319,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Tirukan bacaan guru.",
-        "Tahfidz QURBATA: Hafalkan ayat 4; murojaah ayat 1–3.",
-        "Akhlak QURBATA: Dengarkan dan tirukan matan."
+        "Bahasa Arab QURBATA: Praktikkan “Lihatlah” (اُنْظُرْ).",
+        "Tahfidz QURBATA: An-Nas 4.",
+        "Akhlak QURBATA: Praktikkan sabar."
       ],
       "intro": {
         "title": "Kompetensi Baru",
@@ -355,19 +355,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P005",
       "integration": {
         "tahfidz": {
-          "title": "An-Nas Ayat 5",
+          "title": "An-Nas 5",
           "arabic": "الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ",
-          "instruction": "Hafalkan ayat 5; murojaah ayat 1–4."
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Bacalah",
-          "arabic": "اِقْرَأْ",
-          "instruction": "Baca bagian yang ditunjuk."
+          "title": "Bukalah Al-Qur’an",
+          "arabic": "اِفْتَحِ الْقُرْآنَ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Ucapan Baik 2",
-          "arabic": "وَالْكَلِمَةُ الطَّيِّبَةُ صَدَقَةٌ",
-          "instruction": "Gunakan satu ucapan baik kepada teman."
+          "title": "Bersungguh-sungguh",
+          "arabic": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -408,9 +408,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Baca bagian yang ditunjuk.",
-        "Tahfidz QURBATA: Hafalkan ayat 5; murojaah ayat 1–4.",
-        "Akhlak QURBATA: Gunakan satu ucapan baik kepada teman."
+        "Bahasa Arab QURBATA: Praktikkan “Bukalah Al-Qur’an” (اِفْتَحِ الْقُرْآنَ).",
+        "Tahfidz QURBATA: An-Nas 5.",
+        "Akhlak QURBATA: Praktikkan bersungguh-sungguh."
       ],
       "intro": {
         "title": "Kompetensi Baru",
@@ -436,19 +436,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P006",
       "integration": {
         "tahfidz": {
-          "title": "An-Nas Ayat 6",
+          "title": "An-Nas 6",
           "arabic": "مِنَ الْجِنَّةِ وَالنَّاسِ",
-          "instruction": "Hafalkan ayat 6; sambungkan An-Nas 1–6."
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Ulangi",
-          "arabic": "أَعِدْ",
-          "instruction": "Ulangi bacaan saat diminta."
+          "title": "Tutuplah Al-Qur’an",
+          "arabic": "أَغْلِقِ الْقُرْآنَ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Ucapan Baik 3",
-          "arabic": "وَالْكَلِمَةُ الطَّيِّبَةُ صَدَقَةٌ",
-          "instruction": "Biasakan ucapan baik selama pembelajaran."
+          "title": "Bersyukur",
+          "arabic": "لَئِنْ شَكَرْتُمْ لَأَزِيدَنَّكُمْ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -489,9 +489,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Ulangi bacaan saat diminta.",
-        "Tahfidz QURBATA: Hafalkan ayat 6; sambungkan An-Nas 1–6.",
-        "Akhlak QURBATA: Biasakan ucapan baik selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Tutuplah Al-Qur’an” (أَغْلِقِ الْقُرْآنَ).",
+        "Tahfidz QURBATA: An-Nas 6.",
+        "Akhlak QURBATA: Praktikkan bersyukur."
       ],
       "intro": {
         "title": "Kompetensi Baru",
@@ -517,19 +517,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P007",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 1",
+          "title": "Al-Falaq 1",
           "arabic": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
-          "instruction": "Hafalkan ayat 1; murojaah An-Nas."
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Sekali Lagi",
-          "arabic": "مَرَّةً أُخْرَى",
-          "instruction": "Ulangi sekali lagi."
+          "title": "Ini buku",
+          "arabic": "هَذَا كِتَابٌ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Rifq 1",
-          "arabic": "إِنَّ الرِّفْقَ لَا يَكُونُ فِي شَيْءٍ إِلَّا زَانَهُ",
-          "instruction": "Dengarkan dan tirukan matan."
+          "title": "Berkata baik",
+          "arabic": "وَقُولُوا لِلنَّاسِ حُسْنًا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -570,9 +570,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Ulangi sekali lagi.",
-        "Tahfidz QURBATA: Hafalkan ayat 1; murojaah An-Nas.",
-        "Akhlak QURBATA: Dengarkan dan tirukan matan."
+        "Bahasa Arab QURBATA: Praktikkan “Ini buku” (هَذَا كِتَابٌ).",
+        "Tahfidz QURBATA: Al-Falaq 1.",
+        "Akhlak QURBATA: Praktikkan berkata baik."
       ],
       "intro": {
         "title": "Kompetensi Baru",
@@ -598,19 +598,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P008",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 2",
+          "title": "Al-Falaq 2",
           "arabic": "مِنْ شَرِّ مَا خَلَقَ",
-          "instruction": "Hafalkan ayat 2; murojaah ayat 1."
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Ya / Tidak",
-          "arabic": "نَعَمْ — لَا",
-          "instruction": "Respons singkat sesuai pertanyaan guru."
+          "title": "Ini pena",
+          "arabic": "هَذَا قَلَمٌ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Rifq 2",
-          "arabic": "إِنَّ الرِّفْقَ لَا يَكُونُ فِي شَيْءٍ إِلَّا زَانَهُ",
-          "instruction": "Kenali sikap lembut dalam belajar."
+          "title": "Rendah hati",
+          "arabic": "وَعِبَادُ الرَّحْمَنِ الَّذِينَ يَمْشُونَ عَلَى الْأَرْضِ هَوْنًا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -651,9 +651,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Respons singkat sesuai pertanyaan guru.",
-        "Tahfidz QURBATA: Hafalkan ayat 2; murojaah ayat 1.",
-        "Akhlak QURBATA: Kenali sikap lembut dalam belajar."
+        "Bahasa Arab QURBATA: Praktikkan “Ini pena” (هَذَا قَلَمٌ).",
+        "Tahfidz QURBATA: Al-Falaq 2.",
+        "Akhlak QURBATA: Praktikkan rendah hati."
       ],
       "intro": {
         "title": "Kompetensi Baru",
@@ -679,19 +679,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P009",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 3",
+          "title": "Al-Falaq 3",
           "arabic": "وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ",
-          "instruction": "Hafalkan ayat 3; murojaah ayat 1–2."
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Penguatan",
-          "arabic": "أَحْسَنْتَ — أَحْسَنْتِ",
-          "instruction": "Kenali ungkapan penguatan guru."
+          "title": "Ini halaman",
+          "arabic": "هَذِهِ صَفْحَةٌ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Rifq 3",
-          "arabic": "إِنَّ الرِّفْقَ لَا يَكُونُ فِي شَيْءٍ إِلَّا زَانَهُ",
-          "instruction": "Praktikkan kelembutan kepada guru dan teman."
+          "title": "Menjaga kebersihan",
+          "arabic": "إِنَّ اللَّهَ يُحِبُّ التَّوَّابِينَ وَيُحِبُّ الْمُتَطَهِّرِينَ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -732,9 +732,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Kenali ungkapan penguatan guru.",
-        "Tahfidz QURBATA: Hafalkan ayat 3; murojaah ayat 1–2.",
-        "Akhlak QURBATA: Praktikkan kelembutan kepada guru dan teman."
+        "Bahasa Arab QURBATA: Praktikkan “Ini halaman” (هَذِهِ صَفْحَةٌ).",
+        "Tahfidz QURBATA: Al-Falaq 3.",
+        "Akhlak QURBATA: Praktikkan menjaga kebersihan."
       ],
       "intro": {
         "title": "Kompetensi Baru",
@@ -760,19 +760,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P010",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 4",
+          "title": "Al-Falaq 4",
           "arabic": "وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
-          "instruction": "Hafalkan ayat 4; murojaah ayat 1–3."
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Checkpoint Bi’ah",
-          "arabic": "اُنْظُرْ — اِسْتَمِعْ — رَدِّدْ — اِقْرَأْ — أَعِدْ",
-          "instruction": "Gunakan instruksi yang sudah dikenal tanpa ekspresi baru."
+          "title": "Di sini",
+          "arabic": "هُنَا",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Niat 1",
-          "arabic": "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ",
-          "instruction": "Dengarkan dan tirukan matan; luruskan niat belajar."
+          "title": "Tolong-menolong",
+          "arabic": "وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَى",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -818,9 +818,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan instruksi yang sudah dikenal tanpa ekspresi baru.",
-        "Tahfidz QURBATA: Hafalkan ayat 4; murojaah ayat 1–3.",
-        "Akhlak QURBATA: Dengarkan dan tirukan matan; luruskan niat belajar."
+        "Bahasa Arab QURBATA: Praktikkan “Di sini” (هُنَا).",
+        "Tahfidz QURBATA: Al-Falaq 4.",
+        "Akhlak QURBATA: Praktikkan tolong-menolong."
       ]
     },
     {
@@ -832,19 +832,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P011",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 5",
+          "title": "Al-Falaq 5",
           "arabic": "وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ",
-          "instruction": "Hafalkan ayat 5; sambungkan Al-Falaq 1–5."
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Bukalah",
-          "arabic": "اِفْتَحْ",
-          "instruction": "Buka buku/halaman saat diminta."
+          "title": "Di sana",
+          "arabic": "هُنَاكَ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Niat 2",
-          "arabic": "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ",
-          "instruction": "Ucapkan niat baik sebelum memulai pembelajaran."
+          "title": "Menepati janji",
+          "arabic": "وَأَوْفُوا بِالْعَهْدِ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -885,9 +885,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Buka buku/halaman saat diminta.",
-        "Tahfidz QURBATA: Hafalkan ayat 5; sambungkan Al-Falaq 1–5.",
-        "Akhlak QURBATA: Ucapkan niat baik sebelum memulai pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Di sana” (هُنَاكَ).",
+        "Tahfidz QURBATA: Al-Falaq 5.",
+        "Akhlak QURBATA: Praktikkan menepati janji."
       ],
       "intro": {
         "title": "Kompetensi Baru",
@@ -913,19 +913,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P012",
       "integration": {
         "tahfidz": {
-          "title": "Al-Ikhlas Ayat 1",
+          "title": "Al-Ikhlas 1",
           "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ",
-          "instruction": "Hafalkan ayat 1; murojaah Al-Falaq."
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Tutuplah",
-          "arabic": "أَغْلِقْ",
-          "instruction": "Tutup buku/halaman saat diminta."
+          "title": "Duduklah",
+          "arabic": "اِجْلِسْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Kendali Diri 1",
-          "arabic": "لَا تَغْضَبْ، وَلَكَ الْجَنَّةُ",
-          "instruction": "Dengarkan dan tirukan pesan menahan marah."
+          "title": "Jujur",
+          "arabic": "وَكُونُوا مَعَ الصَّادِقِينَ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -966,9 +966,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Tutup buku/halaman saat diminta.",
-        "Tahfidz QURBATA: Hafalkan ayat 1; murojaah Al-Falaq.",
-        "Akhlak QURBATA: Dengarkan dan tirukan pesan menahan marah."
+        "Bahasa Arab QURBATA: Praktikkan “Duduklah” (اِجْلِسْ).",
+        "Tahfidz QURBATA: Al-Ikhlas 1.",
+        "Akhlak QURBATA: Praktikkan jujur."
       ],
       "intro": {
         "title": "Kompetensi Baru",
@@ -994,19 +994,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P013",
       "integration": {
         "tahfidz": {
-          "title": "Al-Ikhlas Ayat 2",
+          "title": "Al-Ikhlas 2",
           "arabic": "اللَّهُ الصَّمَدُ",
-          "instruction": "Hafalkan ayat 2; murojaah ayat 1."
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Mana?",
-          "arabic": "أَيْنَ؟",
-          "instruction": "Jawab dengan menunjuk bagian/halaman yang dimaksud."
+          "title": "Berdirilah",
+          "arabic": "قُمْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Kendali Diri 2",
-          "arabic": "لَا تَغْضَبْ، وَلَكَ الْجَنَّةُ",
-          "instruction": "Latih menahan marah saat belajar bersama."
+          "title": "Tidak mengejek",
+          "arabic": "لَا يَسْخَرْ قَوْمٌ مِنْ قَوْمٍ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -1047,9 +1047,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Jawab dengan menunjuk bagian/halaman yang dimaksud.",
-        "Tahfidz QURBATA: Hafalkan ayat 2; murojaah ayat 1.",
-        "Akhlak QURBATA: Latih menahan marah saat belajar bersama."
+        "Bahasa Arab QURBATA: Praktikkan “Berdirilah” (قُمْ).",
+        "Tahfidz QURBATA: Al-Ikhlas 2.",
+        "Akhlak QURBATA: Praktikkan tidak mengejek."
       ],
       "intro": {
         "title": "Kompetensi Baru",
@@ -1079,19 +1079,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P014",
       "integration": {
         "tahfidz": {
-          "title": "Al-Ikhlas Ayat 3",
+          "title": "Al-Ikhlas 3",
           "arabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
-          "instruction": "Hafalkan ayat 3; murojaah ayat 1–2."
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Di Sini",
-          "arabic": "هُنَا",
-          "instruction": "Gunakan saat menunjukkan tempat atau bagian bacaan."
+          "title": "Majulah",
+          "arabic": "تَقَدَّمْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Membantu 1",
-          "arabic": "وَاللَّهُ فِي عَوْنِ الْعَبْدِ مَا كَانَ الْعَبْدُ فِي عَوْنِ أَخِيهِ",
-          "instruction": "Dengarkan pesan dan bantu satu kebutuhan teman."
+          "title": "Berbuat baik",
+          "arabic": "إِنَّ اللَّهَ يُحِبُّ الْمُحْسِنِينَ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -1137,9 +1137,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan هُنَا saat menunjukkan tempat atau bagian bacaan.",
-        "Tahfidz QURBATA: Hafalkan Al-Ikhlas ayat 3 dan murojaah ayat 1–2.",
-        "Akhlak QURBATA: Bantu satu kebutuhan teman selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Majulah” (تَقَدَّمْ).",
+        "Tahfidz QURBATA: Al-Ikhlas 3.",
+        "Akhlak QURBATA: Praktikkan berbuat baik."
       ]
     },
     {
@@ -1151,19 +1151,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P015",
       "integration": {
         "tahfidz": {
-          "title": "Al-Ikhlas Ayat 4",
+          "title": "Al-Ikhlas 4",
           "arabic": "وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
-          "instruction": "Hafalkan ayat 4; sambungkan Al-Ikhlas 1–4."
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Sudah Siap?",
-          "arabic": "هَلْ أَنْتَ مُسْتَعِدٌّ؟ — هَلْ أَنْتِ مُسْتَعِدَّةٌ؟",
-          "instruction": "Jawab singkat sebelum memulai atau mengulang bacaan."
+          "title": "Kembalilah",
+          "arabic": "اِرْجِعْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Membantu 2",
-          "arabic": "وَاللَّهُ فِي عَوْنِ الْعَبْدِ مَا كَانَ الْعَبْدُ فِي عَوْنِ أَخِيهِ",
-          "instruction": "Ulangi matan dan biasakan saling membantu."
+          "title": "Menghormati orang tua",
+          "arabic": "وَبِالْوَالِدَيْنِ إِحْسَانًا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -1209,9 +1209,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Jawab singkat sebelum memulai atau mengulang bacaan.",
-        "Tahfidz QURBATA: Hafalkan ayat 4; sambungkan Al-Ikhlas 1–4.",
-        "Akhlak QURBATA: Ulangi matan dan biasakan saling membantu."
+        "Bahasa Arab QURBATA: Praktikkan “Kembalilah” (اِرْجِعْ).",
+        "Tahfidz QURBATA: Al-Ikhlas 4.",
+        "Akhlak QURBATA: Praktikkan menghormati orang tua."
       ]
     },
     {
@@ -1223,19 +1223,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P016",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 1",
-          "arabic": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
-          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+          "title": "Al-Masad 1",
+          "arabic": "تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Baca",
-          "arabic": "اِقْرَأْ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Pelan-pelan",
+          "arabic": "بِتَأَنٍّ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Adab Belajar",
-          "arabic": "أَكْرِمُوا الْقُرْآنَ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Menjaga lisan",
+          "arabic": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -1276,9 +1276,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Baca” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
-        "Akhlak QURBATA: Praktikkan adab belajar selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Pelan-pelan” (بِتَأَنٍّ).",
+        "Tahfidz QURBATA: Al-Masad 1.",
+        "Akhlak QURBATA: Praktikkan menjaga lisan."
       ],
       "intro": {
         "title": "Kasrah — Materi Baru",
@@ -1313,19 +1313,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P017",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 2",
-          "arabic": "مِنْ شَرِّ مَا خَلَقَ",
-          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+          "title": "Al-Masad 2",
+          "arabic": "مَا أَغْنَى عَنْهُ مَالُهُ وَمَا كَسَبَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Baca Ini",
-          "arabic": "اِقْرَأْ هذَا",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Dengan jelas",
+          "arabic": "بِوُضُوحٍ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Mendengar",
-          "arabic": "وَاسْتَمِعُوا لَهُ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Malu",
+          "arabic": "الْحَيَاءُ مِنَ الْإِيمَانِ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -1366,9 +1366,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Baca Ini” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
-        "Akhlak QURBATA: Praktikkan mendengar selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Dengan jelas” (بِوُضُوحٍ).",
+        "Tahfidz QURBATA: Al-Masad 2.",
+        "Akhlak QURBATA: Praktikkan malu."
       ],
       "intro": {
         "title": "Kasrah — Materi Baru",
@@ -1403,19 +1403,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P018",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 3",
-          "arabic": "وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ",
-          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+          "title": "Al-Masad 3",
+          "arabic": "سَيَصْلَى نَارًا ذَاتَ لَهَبٍ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Ulangi",
-          "arabic": "أَعِدْ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Sekali lagi",
+          "arabic": "مَرَّةً أُخْرَى",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Sabar",
-          "arabic": "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Kasih sayang",
+          "arabic": "الرَّاحِمُونَ يَرْحَمُهُمُ الرَّحْمَنُ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -1456,9 +1456,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Ulangi” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
-        "Akhlak QURBATA: Praktikkan sabar selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Sekali lagi” (مَرَّةً أُخْرَى).",
+        "Tahfidz QURBATA: Al-Masad 3.",
+        "Akhlak QURBATA: Praktikkan kasih sayang."
       ],
       "intro": {
         "title": "Kasrah — Materi Baru",
@@ -1493,19 +1493,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P019",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 4",
-          "arabic": "وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
-          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+          "title": "Al-Masad 4",
+          "arabic": "وَامْرَأَتُهُ حَمَّالَةَ الْحَطَبِ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
           "title": "Bagus",
           "arabic": "جَيِّدٌ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Bersungguh-sungguh",
-          "arabic": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Membantu teman",
+          "arabic": "وَاللَّهُ فِي عَوْنِ الْعَبْدِ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -1546,9 +1546,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Bagus” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
-        "Akhlak QURBATA: Praktikkan bersungguh-sungguh selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Bagus” (جَيِّدٌ).",
+        "Tahfidz QURBATA: Al-Masad 4.",
+        "Akhlak QURBATA: Praktikkan membantu teman."
       ],
       "intro": {
         "title": "Kasrah — Materi Baru",
@@ -1583,19 +1583,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P020",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 5",
-          "arabic": "وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ",
-          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+          "title": "Al-Masad 5",
+          "arabic": "فِي جِيدِهَا حَبْلٌ مِنْ مَسَدٍ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Sekali Lagi",
-          "arabic": "مَرَّةً أُخْرَى",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Sangat bagus",
+          "arabic": "جَيِّدٌ جِدًّا",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Menjaga Ilmu",
-          "arabic": "تَعَلَّمْ وَاعْمَلْ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Tidak marah",
+          "arabic": "لَا تَغْضَبْ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -1636,9 +1636,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Sekali Lagi” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
-        "Akhlak QURBATA: Praktikkan menjaga ilmu selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Sangat bagus” (جَيِّدٌ جِدًّا).",
+        "Tahfidz QURBATA: Al-Masad 5.",
+        "Akhlak QURBATA: Praktikkan tidak marah."
       ],
       "review": {
         "title": "Mengenal Huruf & Harakat",
@@ -1718,19 +1718,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P021",
       "integration": {
         "tahfidz": {
-          "title": "Murojaah An-Nas",
-          "arabic": "مُرَاجَعَةٌ",
-          "instruction": "Murojaah hafalan yang telah dipelajari."
+          "title": "An-Nasr 1",
+          "arabic": "إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Tutup Al-Qur’an",
-          "arabic": "أَغْلِقِ الْقُرْآنَ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Benar",
+          "arabic": "صَحِيحٌ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Mengulang Kebaikan",
-          "arabic": "فَذَكِّرْ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Amanah",
+          "arabic": "أَدِّ الْأَمَانَةَ إِلَى مَنِ ائْتَمَنَكَ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -1771,9 +1771,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Tutup Al-Qur’an” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
-        "Akhlak QURBATA: Praktikkan mengulang kebaikan selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Benar” (صَحِيحٌ).",
+        "Tahfidz QURBATA: An-Nasr 1.",
+        "Akhlak QURBATA: Praktikkan amanah."
       ],
       "intro": {
         "title": "Kasrah — Materi Baru",
@@ -1808,19 +1808,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P022",
       "integration": {
         "tahfidz": {
-          "title": "Murojaah Al-Ikhlas",
-          "arabic": "مُرَاجَعَةٌ",
-          "instruction": "Murojaah hafalan yang telah dipelajari."
+          "title": "An-Nasr 2",
+          "arabic": "وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Ini Buku",
-          "arabic": "هذَا كِتَابٌ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Coba lagi",
+          "arabic": "حَاوِلْ مَرَّةً أُخْرَى",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Menjaga Buku",
-          "arabic": "الطَّهُورُ شَطْرُ الْإِيمَانِ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Mencintai saudara",
+          "arabic": "لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -1861,9 +1861,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Ini Buku” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
-        "Akhlak QURBATA: Praktikkan menjaga buku selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Coba lagi” (حَاوِلْ مَرَّةً أُخْرَى).",
+        "Tahfidz QURBATA: An-Nasr 2.",
+        "Akhlak QURBATA: Praktikkan mencintai saudara."
       ],
       "intro": {
         "title": "Kasrah — Materi Baru",
@@ -1898,19 +1898,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P023",
       "integration": {
         "tahfidz": {
-          "title": "Murojaah Al-Falaq 1–2",
-          "arabic": "مُرَاجَعَةٌ",
-          "instruction": "Murojaah hafalan yang telah dipelajari."
+          "title": "An-Nasr 3",
+          "arabic": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ إِنَّهُ كَانَ تَوَّابًا",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Ini Pena",
-          "arabic": "هذَا قَلَمٌ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Siap",
+          "arabic": "مُسْتَعِدٌّ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Menghormati Guru",
-          "arabic": "وَقُلْ رَبِّ زِدْنِي عِلْمًا",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Memberi salam",
+          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -1956,9 +1956,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Ini Pena” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
-        "Akhlak QURBATA: Praktikkan menghormati guru selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Siap” (مُسْتَعِدٌّ).",
+        "Tahfidz QURBATA: An-Nasr 3.",
+        "Akhlak QURBATA: Praktikkan memberi salam."
       ]
     },
     {
@@ -1970,19 +1970,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P024",
       "integration": {
         "tahfidz": {
-          "title": "Murojaah Al-Falaq 1–4",
-          "arabic": "مُرَاجَعَةٌ",
-          "instruction": "Murojaah hafalan yang telah dipelajari."
+          "title": "Al-Kafirun 1",
+          "arabic": "قُلْ يَا أَيُّهَا الْكَافِرُونَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Ini Halaman",
-          "arabic": "هذِهِ صَفْحَةٌ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Saya siap",
+          "arabic": "أَنَا مُسْتَعِدٌّ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Membantu",
-          "arabic": "وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَى",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Tersenyum",
+          "arabic": "تَبَسُّمُكَ فِي وَجْهِ أَخِيكَ لَكَ صَدَقَةٌ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -2028,9 +2028,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Ini Halaman” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
-        "Akhlak QURBATA: Praktikkan membantu selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Saya siap” (أَنَا مُسْتَعِدٌّ).",
+        "Tahfidz QURBATA: Al-Kafirun 1.",
+        "Akhlak QURBATA: Praktikkan tersenyum."
       ]
     },
     {
@@ -2042,19 +2042,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P025",
       "integration": {
         "tahfidz": {
-          "title": "Murojaah Tiga Surah",
-          "arabic": "مُرَاجَعَةٌ",
-          "instruction": "Murojaah hafalan yang telah dipelajari."
+          "title": "Al-Kafirun 2",
+          "arabic": "لَا أَعْبُدُ مَا تَعْبُدُونَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Siap",
-          "arabic": "مُسْتَعِدٌّ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Giliran saya",
+          "arabic": "دَوْرِي",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Mengamalkan Ilmu",
-          "arabic": "تَعَلَّمْ — اِعْمَلْ — عَلِّمْ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Menjaga waktu",
+          "arabic": "وَالْعَصْرِ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -2100,9 +2100,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Siap” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
-        "Akhlak QURBATA: Praktikkan mengamalkan ilmu selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Giliran saya” (دَوْرِي).",
+        "Tahfidz QURBATA: Al-Kafirun 2.",
+        "Akhlak QURBATA: Praktikkan menjaga waktu."
       ]
     },
     {
@@ -2114,19 +2114,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P026",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 2",
-          "arabic": "مِنْ شَرِّ مَا خَلَقَ",
-          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+          "title": "Al-Kafirun 3",
+          "arabic": "وَلَا أَنْتُمْ عَابِدُونَ مَا أَعْبُدُ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Baca Ini",
-          "arabic": "اِقْرَأْ هذَا",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Giliranmu",
+          "arabic": "دَوْرُكَ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Mendengar",
-          "arabic": "وَاسْتَمِعُوا لَهُ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Tidak berlebihan",
+          "arabic": "وَلَا تُسْرِفُوا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -2167,9 +2167,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Baca Ini” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
-        "Akhlak QURBATA: Praktikkan mendengar selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Giliranmu” (دَوْرُكَ).",
+        "Tahfidz QURBATA: Al-Kafirun 3.",
+        "Akhlak QURBATA: Praktikkan tidak berlebihan."
       ],
       "intro": {
         "title": "Dhammah — Materi Baru",
@@ -2204,19 +2204,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P027",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 3",
-          "arabic": "وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ",
-          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+          "title": "Al-Kafirun 4",
+          "arabic": "وَلَا أَنَا عَابِدٌ مَا عَبَدْتُمْ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Ulangi",
-          "arabic": "أَعِدْ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Bersama-sama",
+          "arabic": "مَعًا",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Sabar",
-          "arabic": "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Memaafkan",
+          "arabic": "وَلْيَعْفُوا وَلْيَصْفَحُوا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -2257,9 +2257,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Ulangi” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
-        "Akhlak QURBATA: Praktikkan sabar selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Bersama-sama” (مَعًا).",
+        "Tahfidz QURBATA: Al-Kafirun 4.",
+        "Akhlak QURBATA: Praktikkan memaafkan."
       ],
       "intro": {
         "title": "Dhammah — Materi Baru",
@@ -2294,19 +2294,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P028",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 4",
-          "arabic": "وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
-          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+          "title": "Al-Kafirun 5",
+          "arabic": "وَلَا أَنْتُمْ عَابِدُونَ مَا أَعْبُدُ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Bagus",
-          "arabic": "جَيِّدٌ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Sendiri",
+          "arabic": "وَحْدِي",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Bersungguh-sungguh",
-          "arabic": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Berlomba dalam kebaikan",
+          "arabic": "فَاسْتَبِقُوا الْخَيْرَاتِ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -2347,9 +2347,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Bagus” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
-        "Akhlak QURBATA: Praktikkan bersungguh-sungguh selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Sendiri” (وَحْدِي).",
+        "Tahfidz QURBATA: Al-Kafirun 5.",
+        "Akhlak QURBATA: Praktikkan berlomba dalam kebaikan."
       ],
       "intro": {
         "title": "Dhammah — Materi Baru",
@@ -2384,19 +2384,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P029",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 5",
-          "arabic": "وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ",
-          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+          "title": "Al-Kafirun 6",
+          "arabic": "لَكُمْ دِينُكُمْ وَلِيَ دِينِ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Sekali Lagi",
-          "arabic": "مَرَّةً أُخْرَى",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Apa ini?",
+          "arabic": "مَا هَذَا؟",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Menjaga Ilmu",
-          "arabic": "تَعَلَّمْ وَاعْمَلْ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Tawakal",
+          "arabic": "وَعَلَى اللَّهِ فَتَوَكَّلُوا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -2437,9 +2437,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Sekali Lagi” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
-        "Akhlak QURBATA: Praktikkan menjaga ilmu selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Apa ini?” (مَا هَذَا؟).",
+        "Tahfidz QURBATA: Al-Kafirun 6.",
+        "Akhlak QURBATA: Praktikkan tawakal."
       ],
       "intro": {
         "title": "Dhammah — Materi Baru",
@@ -2474,19 +2474,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P030",
       "integration": {
         "tahfidz": {
-          "title": "Murojaah An-Nas",
-          "arabic": "مُرَاجَعَةٌ",
-          "instruction": "Murojaah hafalan yang telah dipelajari."
+          "title": "Al-Kawthar 1",
+          "arabic": "إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Tutup Al-Qur’an",
-          "arabic": "أَغْلِقِ الْقُرْآنَ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Ini Al-Qur’an",
+          "arabic": "هَذَا الْقُرْآنُ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Mengulang Kebaikan",
-          "arabic": "فَذَكِّرْ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Istiqamah",
+          "arabic": "فَاسْتَقِمْ كَمَا أُمِرْتَ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -2527,9 +2527,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Tutup Al-Qur’an” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
-        "Akhlak QURBATA: Praktikkan mengulang kebaikan selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Ini Al-Qur’an” (هَذَا الْقُرْآنُ).",
+        "Tahfidz QURBATA: Al-Kawthar 1.",
+        "Akhlak QURBATA: Praktikkan istiqamah."
       ],
       "intro": {
         "title": "Dhammah — Materi Baru",
@@ -2564,19 +2564,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P031",
       "integration": {
         "tahfidz": {
-          "title": "Murojaah Al-Ikhlas",
-          "arabic": "مُرَاجَعَةٌ",
-          "instruction": "Murojaah hafalan yang telah dipelajari."
+          "title": "Al-Kawthar 2",
+          "arabic": "فَصَلِّ لِرَبِّكَ وَانْحَرْ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Ini Buku",
-          "arabic": "هذَا كِتَابٌ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Mana buku?",
+          "arabic": "أَيْنَ الْكِتَابُ؟",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Menjaga Buku",
-          "arabic": "الطَّهُورُ شَطْرُ الْإِيمَانِ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Menjaga persaudaraan",
+          "arabic": "إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -2617,9 +2617,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Ini Buku” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
-        "Akhlak QURBATA: Praktikkan menjaga buku selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Mana buku?” (أَيْنَ الْكِتَابُ؟).",
+        "Tahfidz QURBATA: Al-Kawthar 2.",
+        "Akhlak QURBATA: Praktikkan menjaga persaudaraan."
       ],
       "intro": {
         "title": "Dhammah — Materi Baru",
@@ -2654,19 +2654,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P032",
       "integration": {
         "tahfidz": {
-          "title": "Murojaah Al-Falaq 1–2",
-          "arabic": "مُرَاجَعَةٌ",
-          "instruction": "Murojaah hafalan yang telah dipelajari."
+          "title": "Al-Kawthar 3",
+          "arabic": "إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Ini Pena",
-          "arabic": "هذَا قَلَمٌ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Buku di sini",
+          "arabic": "الْكِتَابُ هُنَا",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Menghormati Guru",
-          "arabic": "وَقُلْ رَبِّ زِدْنِي عِلْمًا",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Tidak sombong",
+          "arabic": "إِنَّ اللَّهَ لَا يُحِبُّ كُلَّ مُخْتَالٍ فَخُورٍ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -2707,9 +2707,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Ini Pena” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
-        "Akhlak QURBATA: Praktikkan menghormati guru selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Buku di sini” (الْكِتَابُ هُنَا).",
+        "Tahfidz QURBATA: Al-Kawthar 3.",
+        "Akhlak QURBATA: Praktikkan tidak sombong."
       ],
       "intro": {
         "title": "Dhammah — Materi Baru",
@@ -2744,19 +2744,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P033",
       "integration": {
         "tahfidz": {
-          "title": "Murojaah Al-Falaq 1–4",
-          "arabic": "مُرَاجَعَةٌ",
-          "instruction": "Murojaah hafalan yang telah dipelajari."
+          "title": "Al-Ma'un 1",
+          "arabic": "أَرَأَيْتَ الَّذِي يُكَذِّبُ بِالدِّينِ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Ini Halaman",
-          "arabic": "هذِهِ صَفْحَةٌ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Ambil bukumu",
+          "arabic": "خُذْ كِتَابَكَ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Membantu",
-          "arabic": "وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَى",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Pemaaf",
+          "arabic": "وَالْعَافِينَ عَنِ النَّاسِ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -2802,9 +2802,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Ini Halaman” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
-        "Akhlak QURBATA: Praktikkan membantu selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Ambil bukumu” (خُذْ كِتَابَكَ).",
+        "Tahfidz QURBATA: Al-Ma'un 1.",
+        "Akhlak QURBATA: Praktikkan pemaaf."
       ]
     },
     {
@@ -2816,19 +2816,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P034",
       "integration": {
         "tahfidz": {
-          "title": "Murojaah Tiga Surah",
-          "arabic": "مُرَاجَعَةٌ",
-          "instruction": "Murojaah hafalan yang telah dipelajari."
+          "title": "Al-Ma'un 2",
+          "arabic": "فَذَلِكَ الَّذِي يَدُعُّ الْيَتِيمَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Siap",
-          "arabic": "مُسْتَعِدٌّ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Letakkan bukumu",
+          "arabic": "ضَعْ كِتَابَكَ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Mengamalkan Ilmu",
-          "arabic": "تَعَلَّمْ — اِعْمَلْ — عَلِّمْ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Dermawan",
+          "arabic": "لَنْ تَنَالُوا الْبِرَّ حَتَّى تُنْفِقُوا مِمَّا تُحِبُّونَ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -2874,9 +2874,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Siap” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
-        "Akhlak QURBATA: Praktikkan mengamalkan ilmu selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Letakkan bukumu” (ضَعْ كِتَابَكَ).",
+        "Tahfidz QURBATA: Al-Ma'un 2.",
+        "Akhlak QURBATA: Praktikkan dermawan."
       ]
     },
     {
@@ -2888,19 +2888,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P035",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 2",
-          "arabic": "مِنْ شَرِّ مَا خَلَقَ",
-          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+          "title": "Al-Ma'un 3",
+          "arabic": "وَلَا يَحُضُّ عَلَى طَعَامِ الْمِسْكِينِ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Baca Ini",
-          "arabic": "اِقْرَأْ هذَا",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Buka halaman",
+          "arabic": "اِفْتَحِ الصَّفْحَةَ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Mendengar",
-          "arabic": "وَاسْتَمِعُوا لَهُ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Menjaga pandangan",
+          "arabic": "قُلْ لِلْمُؤْمِنِينَ يَغُضُّوا مِنْ أَبْصَارِهِمْ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -2946,9 +2946,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Baca Ini” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
-        "Akhlak QURBATA: Praktikkan mendengar selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Buka halaman” (اِفْتَحِ الصَّفْحَةَ).",
+        "Tahfidz QURBATA: Al-Ma'un 3.",
+        "Akhlak QURBATA: Praktikkan menjaga pandangan."
       ]
     },
     {
@@ -2960,19 +2960,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P036",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 3",
-          "arabic": "وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ",
-          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+          "title": "Al-Ma'un 4",
+          "arabic": "فَوَيْلٌ لِلْمُصَلِّينَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Ulangi",
-          "arabic": "أَعِدْ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Tunjukkan",
+          "arabic": "أَشِرْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Sabar",
-          "arabic": "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Berdoa",
+          "arabic": "ادْعُونِي أَسْتَجِبْ لَكُمْ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -3018,9 +3018,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Ulangi” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
-        "Akhlak QURBATA: Praktikkan sabar selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Tunjukkan” (أَشِرْ).",
+        "Tahfidz QURBATA: Al-Ma'un 4.",
+        "Akhlak QURBATA: Praktikkan berdoa."
       ]
     },
     {
@@ -3032,19 +3032,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P037",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 4",
-          "arabic": "وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
-          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+          "title": "Al-Ma'un 5",
+          "arabic": "الَّذِينَ هُمْ عَنْ صَلَاتِهِمْ سَاهُونَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Bagus",
-          "arabic": "جَيِّدٌ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Ikuti saya",
+          "arabic": "اِتَّبِعْنِي",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Bersungguh-sungguh",
-          "arabic": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Mengingat Allah",
+          "arabic": "فَاذْكُرُونِي أَذْكُرْكُمْ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -3090,9 +3090,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Bagus” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
-        "Akhlak QURBATA: Praktikkan bersungguh-sungguh selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Ikuti saya” (اِتَّبِعْنِي).",
+        "Tahfidz QURBATA: Al-Ma'un 5.",
+        "Akhlak QURBATA: Praktikkan mengingat allah."
       ]
     },
     {
@@ -3104,19 +3104,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P038",
       "integration": {
         "tahfidz": {
-          "title": "Al-Falaq Ayat 5",
-          "arabic": "وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ",
-          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+          "title": "Al-Ma'un 6",
+          "arabic": "الَّذِينَ هُمْ يُرَاءُونَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Sekali Lagi",
-          "arabic": "مَرَّةً أُخْرَى",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Dengarkan guru",
+          "arabic": "اِسْتَمِعْ إِلَى الْمُعَلِّمِ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Menjaga Ilmu",
-          "arabic": "تَعَلَّمْ وَاعْمَلْ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Membaca dengan tartil",
+          "arabic": "وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -3162,9 +3162,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Sekali Lagi” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
-        "Akhlak QURBATA: Praktikkan menjaga ilmu selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Dengarkan guru” (اِسْتَمِعْ إِلَى الْمُعَلِّمِ).",
+        "Tahfidz QURBATA: Al-Ma'un 6.",
+        "Akhlak QURBATA: Praktikkan membaca dengan tartil."
       ]
     },
     {
@@ -3176,19 +3176,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P039",
       "integration": {
         "tahfidz": {
-          "title": "Murojaah An-Nas",
-          "arabic": "مُرَاجَعَةٌ",
-          "instruction": "Murojaah hafalan yang telah dipelajari."
+          "title": "Al-Ma'un 7",
+          "arabic": "وَيَمْنَعُونَ الْمَاعُونَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Tutup Al-Qur’an",
-          "arabic": "أَغْلِقِ الْقُرْآنَ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Terima kasih",
+          "arabic": "شُكْرًا",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Mengulang Kebaikan",
-          "arabic": "فَذَكِّرْ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Mengamalkan ilmu",
+          "arabic": "تَعَلَّمْ — اِعْمَلْ — عَلِّمْ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -3234,9 +3234,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Tutup Al-Qur’an” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
-        "Akhlak QURBATA: Praktikkan mengulang kebaikan selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Terima kasih” (شُكْرًا).",
+        "Tahfidz QURBATA: Al-Ma'un 7.",
+        "Akhlak QURBATA: Praktikkan mengamalkan ilmu."
       ]
     },
     {
@@ -3248,19 +3248,19 @@
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P040",
       "integration": {
         "tahfidz": {
-          "title": "Murojaah Al-Ikhlas",
-          "arabic": "مُرَاجَعَةٌ",
-          "instruction": "Murojaah hafalan yang telah dipelajari."
+          "title": "Murojaah Jilid 1",
+          "arabic": "مُرَاجَعَةٌ شَامِلَةٌ",
+          "instruction": "Murojaah seluruh target tahfidz Jilid 1."
         },
         "arabic": {
-          "title": "Ini Buku",
-          "arabic": "هذَا كِتَابٌ",
-          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+          "title": "Alhamdulillah",
+          "arabic": "الْحَمْدُ لِلَّهِ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
         "akhlak": {
-          "title": "Menjaga Buku",
-          "arabic": "الطَّهُورُ شَطْرُ الْإِيمَانِ",
-          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+          "title": "Penutup adab",
+          "arabic": "خَيْرُكُمْ أَحْسَنُكُمْ أَخْلَاقًا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
@@ -3306,9 +3306,9 @@
         ]
       ],
       "activities": [
-        "Bahasa Arab QURBATA: Gunakan “Ini Buku” dalam kegiatan belajar.",
-        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
-        "Akhlak QURBATA: Praktikkan menjaga buku selama pembelajaran."
+        "Bahasa Arab QURBATA: Praktikkan “Alhamdulillah” (الْحَمْدُ لِلَّهِ).",
+        "Tahfidz QURBATA: Murojaah Jilid 1.",
+        "Akhlak QURBATA: Praktikkan penutup adab."
       ]
     }
   ],
@@ -3331,6 +3331,8 @@
     "mixedHarakatWithinGroup": "Pada fase harakat baru, satu kelompok latihan 3 huruf wajib mencampur harakat kompetensi baru dan harakat lama yang sudah legal di DALAM kelompok yang sama. Posisi harakat baru diacak: awal, tengah, atau akhir. Komposisi keseluruhan halaman mengikuti proporsi target aktif/murojaah (±60/40), bukan memisahkan kelompok Kasrah dan kelompok Fathah.",
     "meaningfulMixedGroups": "Kelompok 3 huruf campuran harakat TIDAK boleh dibentuk secara acak huruf. Pilih terlebih dahulu bentuk dasar kata Arab bermakna atau sangat dekat dengan kata bermakna, lalu distribusikan harakat baru/lama pada tiga hurufnya sesuai kompetensi legal dan proporsi halaman. Posisi harakat baru boleh awal/tengah/akhir; huruf tetap lepas.",
     "newCompetencyHeaderEveryIntroduction": "WAJIB pada SETIAP halaman kompetensi baru: baris penanaman harus MENJELASKAN PERUBAHAN dari kompetensi lama yang telah dikuasai menuju kompetensi baru pada huruf yang sama, misalnya جَ → جِ. DILARANG menampilkan bentuk baru → bentuk baru (misalnya جِ → جِ) karena tidak menjelaskan perubahan. Huruf contoh memakai font Utsmani dan ukuran sama dengan huruf latihan. Halaman materi baru = 1 baris penanaman + 7 baris latihan.",
-    "jilid1To40": "P026–P032 pengenalan Dhammah bertahap; setiap halaman materi baru memakai 1 baris penanaman kompetensi lama→baru ukuran latihan + 7 baris latihan. P033 penguatan; P034–P035 kumulatif Dhammah; P036–P040 penguatan kumulatif Jilid 1. Semua kelompok tiga huruf lepas berbasis kata bermakna/mendekati bermakna dan murojaah tersebar."
+    "jilid1To40": "P026–P032 pengenalan Dhammah bertahap; setiap halaman materi baru memakai 1 baris penanaman kompetensi lama→baru ukuran latihan + 7 baris latihan. P033 penguatan; P034–P035 kumulatif Dhammah; P036–P040 penguatan kumulatif Jilid 1. Semua kelompok tiga huruf lepas berbasis kata bermakna/mendekati bermakna dan murojaah tersebar.",
+    "integrationNoRepeat": "Tahfidz, Bahasa Arab, dan Akhlak memiliki TARGET BARU unik per halaman P001–P040. Murojaah boleh dan wajib dilakukan, tetapi tidak boleh menggantikan slot target baru sehingga judul/target integrasi tidak berulang.",
+    "activeCompetencyDominance": "Pada halaman pengenalan kompetensi baru, latihan Tartil wajib didominasi kompetensi baru ±60% dan murojaah kompetensi legal sebelumnya ±40%. Kompetensi baru tidak boleh hanya muncul satu contoh. Proporsi dihitung pada seluruh unit huruf/harakat dalam 7 baris latihan, sambil tetap memakai susunan kata Arab bermakna atau mendekati bermakna dan posisi kompetensi baru tersebar awal–tengah–akhir."
   }
 }
