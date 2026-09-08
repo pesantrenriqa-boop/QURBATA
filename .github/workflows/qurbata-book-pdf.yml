@@ -39,6 +39,17 @@ jobs:
       - name: Build B5 PDF
         run: npm run build:pdf
 
+      - name: Build B5 PDF Jilid 2
+        run: npm run build:pdf:j2
+
+      - name: Upload Jilid 2 proof
+        uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-JILID-2-PILOT
+          path: production/vivliostyle/dist/QURBATA-JILID-2-PILOT.pdf
+          if-no-files-found: error
+          retention-days: 30
+
       - name: Upload print proof
         uses: actions/upload-artifact@v4
         with:
