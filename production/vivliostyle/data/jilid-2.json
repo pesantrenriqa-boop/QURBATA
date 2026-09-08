@@ -72,7 +72,9 @@
       "م",
       "ه"
     ],
-    "meaningPriorityJ2": "Pada fase satu huruf sambung, contoh bermakna diprioritaskan. Jika kata bermakna memerlukan huruf lain, huruf lain tidak boleh membentuk sambungan baru yang belum legal. Dilarang membuat rangkaian semu hanya untuk memenuhi pola."
+    "meaningPriorityJ2": "Pada fase satu huruf sambung, contoh bermakna diprioritaskan. Jika kata bermakna memerlukan huruf lain, huruf lain tidak boleh membentuk sambungan baru yang belum legal. Dilarang membuat rangkaian semu hanya untuk memenuhi pola.",
+    "noFutureSignsJ2": "Pada fase huruf sambung awal, DILARANG muncul mad (ا و ي sebagai huruf mad), tasydid, sukun, tanwin, alif-lam, atau tanda/kompetensi lain yang belum diajarkan. Harakat yang legal hanya Fathah, Kasrah, Dhammah dari Jilid 1.",
+    "meaningVsLadder": "Prinsip kata bermakna tidak boleh memaksa masuknya kompetensi masa depan. Jika kata utuh bermakna membutuhkan mad/tasydid/sukun/bentuk sambung yang belum legal, gunakan pasangan latihan pedagogis dua huruf yang mendekati pola bunyi dan jelas sebagai latihan bentuk, bukan mengklaimnya sebagai kata bermakna."
   },
   "competencyMap": {
     "P001_P018": "Huruf sambung bertahap",
@@ -90,7 +92,7 @@
       "pageNumber": "01",
       "title": "Sambung ب",
       "titleArabic": "ب",
-      "tartilCompetency": "Fokus tunggal bentuk awal sambung بـ. Bentuk sambung huruf lain belum menjadi tuntutan baca; contoh memprioritaskan pasangan dengan ا د ذ ر ز و atau bentuk yang tidak menambah kompetensi sambung baru.",
+      "tartilCompetency": "Fokus hanya bentuk awal sambung بـ dengan Fathah, Kasrah, Dhammah yang sudah dikuasai di Jilid 1. Pelengkap hanya د ذ ر ز و. Tidak ada mad, sukun, tanwin, tasydid, atau bentuk sambung baru lain.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P001",
       "integration": {
         "tahfidz": {
@@ -111,39 +113,39 @@
       },
       "rows": [
         [
-          "بَدَا",
-          "بَرَأَ",
-          "بَذَرَ"
+          "بَـدَ",
+          "بِـدَ",
+          "بُـدَ"
         ],
         [
-          "بَرَدَ",
-          "بَارَ",
-          "بُورَ"
+          "بَـذَ",
+          "بِـذَ",
+          "بُـذَ"
         ],
         [
-          "بِيرَ",
-          "بَدَرَ",
-          "بَزَرَ"
+          "بَـرَ",
+          "بِـرَ",
+          "بُـرَ"
         ],
         [
-          "بَوَرَ",
-          "بَرَزَ",
-          "بَذَا"
+          "بَـزَ",
+          "بِـزَ",
+          "بُـزَ"
         ],
         [
-          "بُورَ",
-          "بَدَا",
-          "بَرَأَ"
+          "بَـوَ",
+          "بِـوَ",
+          "بُـوَ"
         ],
         [
-          "بَذَرَ",
-          "بَرَدَ",
-          "بَدَرَ"
+          "بَـدِ",
+          "بِـرَ",
+          "بُـزِ"
         ],
         [
-          "بَرَزَ",
-          "بَارَ",
-          "بُورَ"
+          "بَـذُ",
+          "بِـوَ",
+          "بُـرِ"
         ]
       ],
       "activities": [
@@ -151,7 +153,7 @@
         "Tahfidz QURBATA: Al-Fil 1.",
         "Akhlak QURBATA: Tekun."
       ],
-      "status": "DRAFT-TANGGA-SAMBUNG-V2",
+      "status": "AUDITED-STRICT-NO-FUTURE-COMPETENCY",
       "intro": {
         "title": "Kompetensi Baru",
         "items": [
@@ -168,7 +170,7 @@
             "بُـ"
           ]
         ],
-        "instruction": "Huruf yang sudah dikenal dari Jilid 1 sekarang dikenalkan bentuk awal sambungnya.",
+        "instruction": "Perhatikan huruf lepas lalu bentuk awal sambungnya. Tidak ada mad, sukun, tanwin, atau tasydid.",
         "direction": "rtl-old-to-new"
       }
     },
@@ -177,7 +179,7 @@
       "pageNumber": "02",
       "title": "Sambung ت",
       "titleArabic": "ت",
-      "tartilCompetency": "Fokus tunggal bentuk awal sambung تـ. Bentuk sambung huruf lain belum menjadi tuntutan baca; contoh memprioritaskan pasangan dengan ا د ذ ر ز و atau bentuk yang tidak menambah kompetensi sambung baru.",
+      "tartilCompetency": "Fokus hanya bentuk awal sambung تـ dengan Fathah, Kasrah, Dhammah yang sudah dikuasai di Jilid 1. Pelengkap hanya د ذ ر ز و. Tidak ada mad, sukun, tanwin, tasydid, atau bentuk sambung baru lain.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P002",
       "integration": {
         "tahfidz": {
@@ -198,39 +200,39 @@
       },
       "rows": [
         [
-          "تَرَكَ",
-          "تَابَ",
-          "تَارَ"
+          "تَـدَ",
+          "تِـدَ",
+          "تُـدَ"
         ],
         [
-          "تَوَرَ",
-          "تَرَدَّ",
-          "تَزَرَ"
+          "تَـذَ",
+          "تِـذَ",
+          "تُـذَ"
         ],
         [
-          "تَدَارَ",
-          "تَذَرَ",
-          "تَرَاءَى"
+          "تَـرَ",
+          "تِـرَ",
+          "تُـرَ"
         ],
         [
-          "تَوَارَى",
-          "تَدَرَّ",
-          "تَزَادَ"
+          "تَـزَ",
+          "تِـزَ",
+          "تُـزَ"
         ],
         [
-          "تَرَكَ",
-          "تَابَ",
-          "تَوَرَ"
+          "تَـوَ",
+          "تِـوَ",
+          "تُـوَ"
         ],
         [
-          "تَرَدَّ",
-          "تَدَارَ",
-          "تَوَارَى"
+          "تَـدِ",
+          "تِـرَ",
+          "تُـزِ"
         ],
         [
-          "تَزَادَ",
-          "تَرَكَ",
-          "تَابَ"
+          "تَـذُ",
+          "تِـوَ",
+          "تُـرِ"
         ]
       ],
       "activities": [
@@ -238,7 +240,7 @@
         "Tahfidz QURBATA: Al-Fil 2.",
         "Akhlak QURBATA: Teliti."
       ],
-      "status": "DRAFT-TANGGA-SAMBUNG-V2",
+      "status": "AUDITED-STRICT-NO-FUTURE-COMPETENCY",
       "intro": {
         "title": "Kompetensi Baru",
         "items": [
@@ -255,7 +257,7 @@
             "تُـ"
           ]
         ],
-        "instruction": "Huruf yang sudah dikenal dari Jilid 1 sekarang dikenalkan bentuk awal sambungnya.",
+        "instruction": "Perhatikan huruf lepas lalu bentuk awal sambungnya. Tidak ada mad, sukun, tanwin, atau tasydid.",
         "direction": "rtl-old-to-new"
       }
     },
@@ -264,7 +266,7 @@
       "pageNumber": "03",
       "title": "Sambung ث",
       "titleArabic": "ث",
-      "tartilCompetency": "Fokus tunggal bentuk awal sambung ثـ. Bentuk sambung huruf lain belum menjadi tuntutan baca; contoh memprioritaskan pasangan dengan ا د ذ ر ز و atau bentuk yang tidak menambah kompetensi sambung baru.",
+      "tartilCompetency": "Fokus hanya bentuk awal sambung ثـ dengan Fathah, Kasrah, Dhammah yang sudah dikuasai di Jilid 1. Pelengkap hanya د ذ ر ز و. Tidak ada mad, sukun, tanwin, tasydid, atau bentuk sambung baru lain.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P003",
       "integration": {
         "tahfidz": {
@@ -285,39 +287,39 @@
       },
       "rows": [
         [
-          "ثَارَ",
-          "ثَوَرَ",
-          "ثَرَدَ"
+          "ثَـدَ",
+          "ثِـدَ",
+          "ثُـدَ"
         ],
         [
-          "ثَرَا",
-          "ثَوَى",
-          "ثَارَ"
+          "ثَـذَ",
+          "ثِـذَ",
+          "ثُـذَ"
         ],
         [
-          "ثَرَدَ",
-          "ثَوَرَ",
-          "ثَرَا"
+          "ثَـرَ",
+          "ثِـرَ",
+          "ثُـرَ"
         ],
         [
-          "ثَوَى",
-          "ثَارَ",
-          "ثَرَدَ"
+          "ثَـزَ",
+          "ثِـزَ",
+          "ثُـزَ"
         ],
         [
-          "ثَوَرَ",
-          "ثَرَا",
-          "ثَوَى"
+          "ثَـوَ",
+          "ثِـوَ",
+          "ثُـوَ"
         ],
         [
-          "ثَارَ",
-          "ثَرَدَ",
-          "ثَوَرَ"
+          "ثَـدِ",
+          "ثِـرَ",
+          "ثُـزِ"
         ],
         [
-          "ثَرَا",
-          "ثَوَى",
-          "ثَارَ"
+          "ثَـذُ",
+          "ثِـوَ",
+          "ثُـرِ"
         ]
       ],
       "activities": [
@@ -325,7 +327,7 @@
         "Tahfidz QURBATA: Al-Fil 3.",
         "Akhlak QURBATA: Tidak tergesa-gesa."
       ],
-      "status": "DRAFT-TANGGA-SAMBUNG-V2",
+      "status": "AUDITED-STRICT-NO-FUTURE-COMPETENCY",
       "intro": {
         "title": "Kompetensi Baru",
         "items": [
@@ -342,7 +344,7 @@
             "ثُـ"
           ]
         ],
-        "instruction": "Huruf yang sudah dikenal dari Jilid 1 sekarang dikenalkan bentuk awal sambungnya.",
+        "instruction": "Perhatikan huruf lepas lalu bentuk awal sambungnya. Tidak ada mad, sukun, tanwin, atau tasydid.",
         "direction": "rtl-old-to-new"
       }
     },
@@ -351,7 +353,7 @@
       "pageNumber": "04",
       "title": "Sambung ن",
       "titleArabic": "ن",
-      "tartilCompetency": "Fokus tunggal bentuk awal sambung نـ. Bentuk sambung huruf lain belum menjadi tuntutan baca; contoh memprioritaskan pasangan dengan ا د ذ ر ز و atau bentuk yang tidak menambah kompetensi sambung baru.",
+      "tartilCompetency": "Fokus hanya bentuk awal sambung نـ dengan Fathah, Kasrah, Dhammah yang sudah dikuasai di Jilid 1. Pelengkap hanya د ذ ر ز و. Tidak ada mad, sukun, tanwin, tasydid, atau bentuk sambung baru lain.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P004",
       "integration": {
         "tahfidz": {
@@ -372,39 +374,39 @@
       },
       "rows": [
         [
-          "نَذَرَ",
-          "نَزَرَ",
-          "نَادَى"
+          "نَـدَ",
+          "نِـدَ",
+          "نُـدَ"
         ],
         [
-          "نَوَى",
-          "نَارَ",
-          "نَدَا"
+          "نَـذَ",
+          "نِـذَ",
+          "نُـذَ"
         ],
         [
-          "نَذَرَ",
-          "نَزَرَ",
-          "نَادَى"
+          "نَـرَ",
+          "نِـرَ",
+          "نُـرَ"
         ],
         [
-          "نَوَى",
-          "نَارَ",
-          "نَدَا"
+          "نَـزَ",
+          "نِـزَ",
+          "نُـزَ"
         ],
         [
-          "نَذَرَ",
-          "نَزَرَ",
-          "نَادَى"
+          "نَـوَ",
+          "نِـوَ",
+          "نُـوَ"
         ],
         [
-          "نَوَى",
-          "نَارَ",
-          "نَدَا"
+          "نَـدِ",
+          "نِـرَ",
+          "نُـزِ"
         ],
         [
-          "نَذَرَ",
-          "نَوَى",
-          "نَادَى"
+          "نَـذُ",
+          "نِـوَ",
+          "نُـرِ"
         ]
       ],
       "activities": [
@@ -412,7 +414,7 @@
         "Tahfidz QURBATA: Al-Fil 4.",
         "Akhlak QURBATA: Memudahkan."
       ],
-      "status": "DRAFT-TANGGA-SAMBUNG-V2",
+      "status": "AUDITED-STRICT-NO-FUTURE-COMPETENCY",
       "intro": {
         "title": "Kompetensi Baru",
         "items": [
@@ -429,7 +431,7 @@
             "نُـ"
           ]
         ],
-        "instruction": "Huruf yang sudah dikenal dari Jilid 1 sekarang dikenalkan bentuk awal sambungnya.",
+        "instruction": "Perhatikan huruf lepas lalu bentuk awal sambungnya. Tidak ada mad, sukun, tanwin, atau tasydid.",
         "direction": "rtl-old-to-new"
       }
     },
@@ -438,7 +440,7 @@
       "pageNumber": "05",
       "title": "Sambung ي",
       "titleArabic": "ي",
-      "tartilCompetency": "Fokus tunggal bentuk awal sambung يـ. Bentuk sambung huruf lain belum menjadi tuntutan baca; contoh memprioritaskan pasangan dengan ا د ذ ر ز و atau bentuk yang tidak menambah kompetensi sambung baru.",
+      "tartilCompetency": "Fokus hanya bentuk awal sambung يـ dengan Fathah, Kasrah, Dhammah yang sudah dikuasai di Jilid 1. Pelengkap hanya د ذ ر ز و. Tidak ada mad, sukun, tanwin, tasydid, atau bentuk sambung baru lain.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P005",
       "integration": {
         "tahfidz": {
@@ -459,39 +461,39 @@
       },
       "rows": [
         [
-          "يَدَرَ",
-          "يَرَى",
-          "يَزِيدُ"
+          "يَـدَ",
+          "يِـدَ",
+          "يُـدَ"
         ],
         [
-          "يَدُورُ",
-          "يَذَرُ",
-          "يَرِدُ"
+          "يَـذَ",
+          "يِـذَ",
+          "يُـذَ"
         ],
         [
-          "يَزُورُ",
-          "يَدْرِي",
-          "يَرْوِي"
+          "يَـرَ",
+          "يِـرَ",
+          "يُـرَ"
         ],
         [
-          "يَدْعُو",
-          "يَذُوقُ",
-          "يَرُدُّ"
+          "يَـزَ",
+          "يِـزَ",
+          "يُـزَ"
         ],
         [
-          "يَزْرَعُ",
-          "يَدْرُسُ",
-          "يَرْجِعُ"
+          "يَـوَ",
+          "يِـوَ",
+          "يُـوَ"
         ],
         [
-          "يَدْخُلُ",
-          "يَذْكُرُ",
-          "يَرْفَعُ"
+          "يَـدِ",
+          "يِـرَ",
+          "يُـزِ"
         ],
         [
-          "يَزِيدُ",
-          "يَدُورُ",
-          "يَرَى"
+          "يَـذُ",
+          "يِـوَ",
+          "يُـرِ"
         ]
       ],
       "activities": [
@@ -499,7 +501,7 @@
         "Tahfidz QURBATA: Al-Fil 5.",
         "Akhlak QURBATA: Menjaga ilmu."
       ],
-      "status": "DRAFT-TANGGA-SAMBUNG-V2",
+      "status": "AUDITED-STRICT-NO-FUTURE-COMPETENCY",
       "intro": {
         "title": "Kompetensi Baru",
         "items": [
@@ -516,7 +518,7 @@
             "يُـ"
           ]
         ],
-        "instruction": "Huruf yang sudah dikenal dari Jilid 1 sekarang dikenalkan bentuk awal sambungnya.",
+        "instruction": "Perhatikan huruf lepas lalu bentuk awal sambungnya. Tidak ada mad, sukun, tanwin, atau tasydid.",
         "direction": "rtl-old-to-new"
       }
     },
