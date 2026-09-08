@@ -45,7 +45,8 @@
     ],
     "jilid2Policy": "Jilid 2 melanjutkan kompetensi Jilid 1; tidak mengulang pengajaran Fathah–Kasrah–Dhammah sebagai materi baru. Huruf sambung diperkenalkan bertahap dalam kelompok tiga huruf, lalu tanwin, kata empat huruf, mad, sukun, alif-lam, awailus suwar dan penguatan. Materi baru dominan ±60%, murojaah legal ±40%, dan tidak boleh ada kompetensi yang muncul sebelum waktunya.",
     "connectedLetters": "Pada fase sambung, bentuk awal–tengah–akhir dikenalkan bertahap. Contoh harus berupa bentuk Arab sah/bermakna; dilarang menyambung huruf secara acak hanya demi mengejar frekuensi.",
-    "integrationJ2": "Tahfidz, Bahasa Arab, dan Akhlak Jilid 2 harus melanjutkan target Jilid 1 tanpa mengulang target baru P001–P040 Jilid 1."
+    "integrationJ2": "Tahfidz, Bahasa Arab, dan Akhlak Jilid 2 harus melanjutkan target Jilid 1 tanpa mengulang target baru P001–P040 Jilid 1.",
+    "jilid2ConnectedIntro": "Setiap kelompok sambung baru memakai baris penanaman huruf lepas → bentuk sambung pada huruf yang sama, ukuran setara latihan. Latihan sesudahnya wajib memuat kompetensi baru berulang pada kata Arab bermakna dan tetap memurojaah kelompok sambung yang telah legal."
   },
   "competencyMap": {
     "P001_P018": "Huruf sambung bertahap",
@@ -61,142 +62,437 @@
     {
       "pageId": "QJ2-P001",
       "pageNumber": "01",
-      "title": "Huruf Sambung 1",
-      "titleArabic": "",
-      "tartilCompetency": "Pengenalan huruf sambung ب ت ث secara bertahap; materi baru dominan dan kompetensi Jilid 1 menjadi murojaah.",
+      "title": "Sambung ب ت ث",
+      "titleArabic": "ب ت ث",
+      "tartilCompetency": "Mengenali ب ت ث ketika berada pada awal, tengah, dan akhir kata sambung.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P001",
       "integration": {
         "tahfidz": {
-          "title": "TARGET_BELUM_DIISI",
-          "arabic": "",
-          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+          "title": "Al-Fil 1",
+          "arabic": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَابِ الْفِيلِ",
+          "instruction": "Hafalkan target baru dan murojaah hafalan sebelumnya."
         },
         "arabic": {
-          "title": "TARGET_BELUM_DIISI",
-          "arabic": "",
-          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+          "title": "Sambungkan",
+          "arabic": "صِلْ",
+          "instruction": "Gunakan ungkapan ini selama kegiatan belajar."
         },
         "akhlak": {
-          "title": "TARGET_BELUM_DIISI",
-          "arabic": "",
-          "instruction": "Target akhlak baru dan aplikatif."
+          "title": "Tekun",
+          "arabic": "أَحَبُّ الْأَعْمَالِ إِلَى اللَّهِ أَدْوَمُهَا",
+          "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
         }
       },
-      "rows": [],
-      "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "rows": [
+        [
+          "كَتَبَ",
+          "ثَبَتَ",
+          "بَثَّ"
+        ],
+        [
+          "تَبِعَ",
+          "بَحَثَ",
+          "ثَبَتَ"
+        ],
+        [
+          "كَتِبَ",
+          "بَتَرَ",
+          "تَبَتَّ"
+        ],
+        [
+          "بَثَرَ",
+          "ثَبَتَ",
+          "كَتَبَ"
+        ],
+        [
+          "تَبِعَ",
+          "بَحَثَ",
+          "ثَبَتَ"
+        ],
+        [
+          "كَتَبَ",
+          "بَثَّ",
+          "تَبِعَ"
+        ],
+        [
+          "بَحَثَ",
+          "ثَبَتَ",
+          "كَتَبَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Sambungkan (صِلْ).",
+        "Tahfidz QURBATA: Al-Fil 1.",
+        "Akhlak QURBATA: Tekun."
+      ],
+      "status": "DRAFT-CONTENT-AUDITED",
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "بَ",
+            "بَـ"
+          ],
+          [
+            "تَ",
+            "تَـ"
+          ],
+          [
+            "ثَ",
+            "ثَـ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan huruf lepas menjadi bentuk sambung pada huruf yang sama.",
+        "direction": "rtl-old-to-new"
+      }
     },
     {
       "pageId": "QJ2-P002",
       "pageNumber": "02",
-      "title": "Huruf Sambung 2",
-      "titleArabic": "",
-      "tartilCompetency": "Pengenalan huruf sambung ب ت ث secara bertahap; materi baru dominan dan kompetensi Jilid 1 menjadi murojaah.",
+      "title": "Sambung ج ح خ",
+      "titleArabic": "ج ح خ",
+      "tartilCompetency": "Mengenali ج ح خ pada posisi sambung dengan murojaah ب ت ث.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P002",
       "integration": {
         "tahfidz": {
-          "title": "TARGET_BELUM_DIISI",
-          "arabic": "",
-          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+          "title": "Al-Fil 2",
+          "arabic": "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِي تَضْلِيلٍ",
+          "instruction": "Hafalkan target baru dan murojaah hafalan sebelumnya."
         },
         "arabic": {
-          "title": "TARGET_BELUM_DIISI",
-          "arabic": "",
-          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+          "title": "Pisahkan",
+          "arabic": "اِفْصِلْ",
+          "instruction": "Gunakan ungkapan ini selama kegiatan belajar."
         },
         "akhlak": {
-          "title": "TARGET_BELUM_DIISI",
-          "arabic": "",
-          "instruction": "Target akhlak baru dan aplikatif."
+          "title": "Teliti",
+          "arabic": "إِنَّ اللَّهَ يُحِبُّ إِذَا عَمِلَ أَحَدُكُمْ عَمَلًا أَنْ يُتْقِنَهُ",
+          "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
         }
       },
-      "rows": [],
-      "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "rows": [
+        [
+          "جَعَلَ",
+          "حَمِدَ",
+          "خَلَقَ"
+        ],
+        [
+          "بَحَثَ",
+          "خَبَرَ",
+          "جَلَسَ"
+        ],
+        [
+          "حَفِظَ",
+          "خَدِمَ",
+          "جَبَرَ"
+        ],
+        [
+          "بَخِلَ",
+          "حَسِبَ",
+          "خَرَجَ"
+        ],
+        [
+          "جَهِلَ",
+          "رَحِمَ",
+          "دَخَلَ"
+        ],
+        [
+          "خَشِيَ",
+          "حَذِرَ",
+          "جَمَعَ"
+        ],
+        [
+          "كَتَبَ",
+          "بَحَثَ",
+          "خَلَقَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Pisahkan (اِفْصِلْ).",
+        "Tahfidz QURBATA: Al-Fil 2.",
+        "Akhlak QURBATA: Teliti."
+      ],
+      "status": "DRAFT-CONTENT-AUDITED",
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "جَ",
+            "جَـ"
+          ],
+          [
+            "حَ",
+            "حَـ"
+          ],
+          [
+            "خَ",
+            "خَـ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan huruf lepas menjadi bentuk sambung pada huruf yang sama.",
+        "direction": "rtl-old-to-new"
+      }
     },
     {
       "pageId": "QJ2-P003",
       "pageNumber": "03",
-      "title": "Huruf Sambung 3",
-      "titleArabic": "",
-      "tartilCompetency": "Pengenalan huruf sambung ج ح خ secara bertahap; materi baru dominan dan kompetensi Jilid 1 menjadi murojaah.",
+      "title": "Sambung س ش ص",
+      "titleArabic": "س ش ص",
+      "tartilCompetency": "Mengenali س ش ص pada posisi sambung; kompetensi sambung sebelumnya tetap dimurojaah.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P003",
       "integration": {
         "tahfidz": {
-          "title": "TARGET_BELUM_DIISI",
-          "arabic": "",
-          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+          "title": "Al-Fil 3",
+          "arabic": "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ",
+          "instruction": "Hafalkan target baru dan murojaah hafalan sebelumnya."
         },
         "arabic": {
-          "title": "TARGET_BELUM_DIISI",
-          "arabic": "",
-          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+          "title": "Bacalah kata",
+          "arabic": "اِقْرَأِ الْكَلِمَةَ",
+          "instruction": "Gunakan ungkapan ini selama kegiatan belajar."
         },
         "akhlak": {
-          "title": "TARGET_BELUM_DIISI",
-          "arabic": "",
-          "instruction": "Target akhlak baru dan aplikatif."
+          "title": "Tidak tergesa-gesa",
+          "arabic": "التَّأَنِّي مِنَ اللَّهِ",
+          "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
         }
       },
-      "rows": [],
-      "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "rows": [
+        [
+          "سَجَدَ",
+          "شَكَرَ",
+          "صَبَرَ"
+        ],
+        [
+          "شَرِبَ",
+          "سَمِعَ",
+          "صَدَقَ"
+        ],
+        [
+          "حَسِبَ",
+          "خَشِيَ",
+          "نَصَرَ"
+        ],
+        [
+          "سَكَنَ",
+          "شَهِدَ",
+          "صَنَعَ"
+        ],
+        [
+          "مَسَحَ",
+          "بَشَرَ",
+          "قَصَدَ"
+        ],
+        [
+          "سَفَرَ",
+          "شَرَحَ",
+          "صَرَفَ"
+        ],
+        [
+          "جَلَسَ",
+          "حَفِظَ",
+          "كَتَبَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Bacalah kata (اِقْرَأِ الْكَلِمَةَ).",
+        "Tahfidz QURBATA: Al-Fil 3.",
+        "Akhlak QURBATA: Tidak tergesa-gesa."
+      ],
+      "status": "DRAFT-CONTENT-AUDITED",
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "سَ",
+            "سَـ"
+          ],
+          [
+            "شَ",
+            "شَـ"
+          ],
+          [
+            "صَ",
+            "صَـ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan huruf lepas menjadi bentuk sambung pada huruf yang sama.",
+        "direction": "rtl-old-to-new"
+      }
     },
     {
       "pageId": "QJ2-P004",
       "pageNumber": "04",
-      "title": "Huruf Sambung 4",
-      "titleArabic": "",
-      "tartilCompetency": "Pengenalan huruf sambung ج ح خ secara bertahap; materi baru dominan dan kompetensi Jilid 1 menjadi murojaah.",
+      "title": "Sambung ض ط ظ",
+      "titleArabic": "ض ط ظ",
+      "tartilCompetency": "Mengenali ض ط ظ pada posisi sambung tanpa mendahului kompetensi kelompok berikutnya.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P004",
       "integration": {
         "tahfidz": {
-          "title": "TARGET_BELUM_DIISI",
-          "arabic": "",
-          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+          "title": "Al-Fil 4",
+          "arabic": "تَرْمِيهِمْ بِحِجَارَةٍ مِنْ سِجِّيلٍ",
+          "instruction": "Hafalkan target baru dan murojaah hafalan sebelumnya."
         },
         "arabic": {
-          "title": "TARGET_BELUM_DIISI",
-          "arabic": "",
-          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+          "title": "Perhatikan bentuknya",
+          "arabic": "اُنْظُرْ إِلَى شَكْلِهِ",
+          "instruction": "Gunakan ungkapan ini selama kegiatan belajar."
         },
         "akhlak": {
-          "title": "TARGET_BELUM_DIISI",
-          "arabic": "",
-          "instruction": "Target akhlak baru dan aplikatif."
+          "title": "Memudahkan",
+          "arabic": "يَسِّرُوا وَلَا تُعَسِّرُوا",
+          "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
         }
       },
-      "rows": [],
-      "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "rows": [
+        [
+          "ضَرَبَ",
+          "طَلَبَ",
+          "ظَلَمَ"
+        ],
+        [
+          "حَضَرَ",
+          "قَطَعَ",
+          "نَظَرَ"
+        ],
+        [
+          "ضَبَطَ",
+          "طَبَعَ",
+          "ظَهَرَ"
+        ],
+        [
+          "مَرِضَ",
+          "بَطَلَ",
+          "حَفِظَ"
+        ],
+        [
+          "قَبَضَ",
+          "طَرَحَ",
+          "عَظُمَ"
+        ],
+        [
+          "رَضِيَ",
+          "فَطِنَ",
+          "وَعَظَ"
+        ],
+        [
+          "صَبَرَ",
+          "شَكَرَ",
+          "سَجَدَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Perhatikan bentuknya (اُنْظُرْ إِلَى شَكْلِهِ).",
+        "Tahfidz QURBATA: Al-Fil 4.",
+        "Akhlak QURBATA: Memudahkan."
+      ],
+      "status": "DRAFT-CONTENT-AUDITED",
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "ضَ",
+            "ضَـ"
+          ],
+          [
+            "طَ",
+            "طَـ"
+          ],
+          [
+            "ظَ",
+            "ظَـ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan huruf lepas menjadi bentuk sambung pada huruf yang sama.",
+        "direction": "rtl-old-to-new"
+      }
     },
     {
       "pageId": "QJ2-P005",
       "pageNumber": "05",
-      "title": "Huruf Sambung 5",
-      "titleArabic": "",
-      "tartilCompetency": "Pengenalan huruf sambung س ش ص secara bertahap; materi baru dominan dan kompetensi Jilid 1 menjadi murojaah.",
+      "title": "Sambung ع غ ف",
+      "titleArabic": "ع غ ف",
+      "tartilCompetency": "Mengenali ع غ ف pada posisi sambung dengan latihan kata bermakna dan murojaah tersebar.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P005",
       "integration": {
         "tahfidz": {
-          "title": "TARGET_BELUM_DIISI",
-          "arabic": "",
-          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+          "title": "Al-Fil 5",
+          "arabic": "فَجَعَلَهُمْ كَعَصْفٍ مَأْكُولٍ",
+          "instruction": "Hafalkan target baru dan murojaah hafalan sebelumnya."
         },
         "arabic": {
-          "title": "TARGET_BELUM_DIISI",
-          "arabic": "",
-          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+          "title": "Ulangi dengan benar",
+          "arabic": "أَعِدْ صَحِيحًا",
+          "instruction": "Gunakan ungkapan ini selama kegiatan belajar."
         },
         "akhlak": {
-          "title": "TARGET_BELUM_DIISI",
-          "arabic": "",
-          "instruction": "Target akhlak baru dan aplikatif."
+          "title": "Menjaga ilmu",
+          "arabic": "قَيِّدُوا الْعِلْمَ بِالْكِتَابِ",
+          "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
         }
       },
-      "rows": [],
-      "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "rows": [
+        [
+          "عَلِمَ",
+          "غَفَرَ",
+          "فَهِمَ"
+        ],
+        [
+          "عَمِلَ",
+          "غَلَبَ",
+          "فَتَحَ"
+        ],
+        [
+          "رَفَعَ",
+          "شَغِفَ",
+          "حَفِظَ"
+        ],
+        [
+          "عَرَفَ",
+          "غَرَسَ",
+          "نَفَعَ"
+        ],
+        [
+          "جَمَعَ",
+          "رَغِبَ",
+          "سَفَرَ"
+        ],
+        [
+          "عَبَرَ",
+          "غَرِقَ",
+          "فَرِحَ"
+        ],
+        [
+          "ضَرَبَ",
+          "طَلَبَ",
+          "نَظَرَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Ulangi dengan benar (أَعِدْ صَحِيحًا).",
+        "Tahfidz QURBATA: Al-Fil 5.",
+        "Akhlak QURBATA: Menjaga ilmu."
+      ],
+      "status": "DRAFT-CONTENT-AUDITED",
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "عَ",
+            "عَـ"
+          ],
+          [
+            "غَ",
+            "غَـ"
+          ],
+          [
+            "فَ",
+            "فَـ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan huruf lepas menjadi bentuk sambung pada huruf yang sama.",
+        "direction": "rtl-old-to-new"
+      }
     },
     {
       "pageId": "QJ2-P006",
