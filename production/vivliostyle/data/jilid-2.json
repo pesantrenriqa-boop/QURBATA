@@ -34,7 +34,7 @@
       "pageNumber": "01",
       "title": "Empat Posisi Huruf Ba",
       "titleArabic": "أَشْكَالُ الْبَاءِ",
-      "tartilCompetency": "ب: tunggal, awal, tengah, akhir",
+      "tartilCompetency": "ب: tunggal → awal → tengah → akhir; tidak boleh ada bentuk sambung baru selain ب",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P001",
       "integration": {
         "tahfidz": {
@@ -53,54 +53,52 @@
           "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
         }
       },
-      "rows": [
-        [
-          "بَحَرَ",
-          "قَلَمَ",
-          "بَقَرَ"
-        ],
-        [
-          "عَلَمَ",
-          "كَتَبَ",
-          "دَرَسَ"
-        ],
-        [
-          "سَبَقَ",
-          "ذَهَبَ",
-          "عَبَدَ"
-        ],
-        [
-          "رَجَعَ",
-          "قَبِلَ",
-          "وَجَدَ"
-        ],
-        [
-          "حَبَسَ",
-          "نَظَرَ",
-          "نَبَتَ"
-        ],
-        [
-          "خَلَقَ",
-          "طَلَبَ",
-          "سَجَدَ"
-        ],
-        [
-          "كَسَبَ",
-          "عَرَفَ",
-          "بَدَأَ"
-        ],
-        [
-          "قَرَأَ",
-          "بَلَغَ",
-          "شَكَرَ"
-        ]
-      ],
+      "rows": [],
       "activities": [
         "Bahasa Arab QURBATA: Sambungkan (صِلْ).",
         "Tahfidz QURBATA: Al-Fil 1.",
         "Akhlak QURBATA: Tekun."
       ],
-      "status": "SOURCE-OF-TRUTH-REGENERATED"
+      "status": "BLOCKED-FOR-STRICT-PREREQUISITE-REGENERATION",
+      "intro": {
+        "title": "Penanaman Kompetensi Baru",
+        "direction": "rtl-old-to-new",
+        "instruction": "Kenali perubahan bentuk ب. Huruf pelengkap tidak boleh menuntut bentuk sambung yang belum diajarkan.",
+        "items": [
+          [
+            "بَ",
+            "بَـ"
+          ],
+          [
+            "بِ",
+            "بِـ"
+          ],
+          [
+            "بُ",
+            "بُـ"
+          ],
+          [
+            "بَ",
+            "ـبَـ"
+          ],
+          [
+            "بَ",
+            "ـبَ"
+          ]
+        ]
+      },
+      "audit": {
+        "controller": [
+          "DEC-CUR-010",
+          "MAT-QJ2-FORM-001",
+          "QURBATA-BASELINE"
+        ],
+        "targetOnly": "ب",
+        "forbidFutureJoinedForms": true,
+        "meaningPriority": true,
+        "meaningCannotOverridePrerequisite": true,
+        "reason": "Existing regenerated examples leak joined forms of letters scheduled P002+; must be regenerated before print."
+      }
     },
     {
       "pageId": "QJ2-P002",
