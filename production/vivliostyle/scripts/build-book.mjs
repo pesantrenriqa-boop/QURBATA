@@ -230,7 +230,7 @@ const pages = await Promise.all(data.pages.map(async (page) => {
   const firstEightValid = items.slice(0, 8).every((item) => arabicLetters(item).length === 2);
   const lastSixteenValid = items.slice(8).every((item) => arabicLetters(item).length === 3);
   const allThreeValid = items.every((item) => arabicLetters(item).length === 3);
-  const isJilid2 = data.book?.id === "QURBATA-J2";
+  const isJilid2 = volume === "jilid-2";
   const patternValid = isJilid2 ? allThreeValid : (pageNo >= 14 ? allThreeValid : (firstEightValid && lastSixteenValid));
   if (!patternValid) {
     throw new Error(`${page.pageId}: pola tangga tidak sesuai fase halaman (P014+ wajib seluruhnya tiga huruf).`);
