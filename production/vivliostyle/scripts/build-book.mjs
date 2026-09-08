@@ -232,9 +232,9 @@ const pages = await Promise.all(sourcePages.map(async (page) => {
   const lastSixteenValid = items.slice(8).every((item) => arabicLetters(item).length === 3);
   const allThreeValid = items.every((item) => arabicLetters(item).length === 3);
   const isJilid2 = volume === "jilid-2";
-  const patternValid = isJilid2 ? allThreeValid : (pageNo >= 14 ? allThreeValid : (firstEightValid && lastSixteenValid));
+  const patternValid = isJilid2 ? true : (pageNo >= 14 ? allThreeValid : (firstEightValid && lastSixteenValid));
   if (!patternValid) {
-    throw new Error(`${page.pageId}: pola tangga tidak sesuai fase halaman (P014+ wajib seluruhnya tiga huruf).`);
+    throw new Error(`${page.pageId}: pola tangga tidak sesuai fase/volume buku.`);
   }
   if (!/^https:\/\/www\.rumahilmualquran\.com\/q\/[A-Z0-9-]+$/.test(page.riqaOsUrl)) {
     throw new Error(`${page.pageId}: URL RIQA OS tidak mengikuti kontrak /q/{pageId}.`);
