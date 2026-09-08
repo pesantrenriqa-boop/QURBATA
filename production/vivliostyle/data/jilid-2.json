@@ -1760,7 +1760,7 @@
     {
       "pageId": "QJ2-P026",
       "pageNumber": "26",
-      "title": "Kata 4 Huruf 26",
+      "title": "Mad Alif",
       "titleArabic": "",
       "tartilCompetency": "Kata 4 Huruf bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P026",
@@ -1781,14 +1781,56 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "قَالَ",
+          "أَحَدَ",
+          "بَاعَ"
+        ],
+        [
+          "رَجُلَ",
+          "نَامَ",
+          "عَمَلَ"
+        ],
+        [
+          "صَامَ",
+          "مَثَلَ",
+          "كِتَابَ"
+        ],
+        [
+          "شَجَرَةَ",
+          "عَذَابَ",
+          "بَقَرَةَ"
+        ],
+        [
+          "سَحَابَ",
+          "كَلِمَةَ",
+          "شَرَابَ"
+        ],
+        [
+          "حَسَنَةَ",
+          "جَوَابَ",
+          "ثَمَرَةَ"
+        ],
+        [
+          "حِسَابَ",
+          "وَرَقَةَ",
+          "مَكَانَ"
+        ],
+        [
+          "دَرَجَةَ",
+          "زَمَانَ",
+          "رَقَبَةَ"
+        ]
+      ],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P026-Mad-Alif.md"
     },
     {
       "pageId": "QJ2-P027",
       "pageNumber": "27",
-      "title": "Kata 4 Huruf 27",
+      "title": "Mad Ya",
       "titleArabic": "",
       "tartilCompetency": "Kata 4 Huruf bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P027",
@@ -1809,14 +1851,56 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "قِيلَ",
+          "قَالَ",
+          "فِيهِ"
+        ],
+        [
+          "بَاعَ",
+          "دِينِ",
+          "نَامَ"
+        ],
+        [
+          "رِيحِ",
+          "صَامَ",
+          "كَبِيرِ"
+        ],
+        [
+          "كِتَابَ",
+          "رَحِيمِ",
+          "عَذَابَ"
+        ],
+        [
+          "كَرِيمِ",
+          "سَحَابَ",
+          "قَدِيرِ"
+        ],
+        [
+          "شَرَابَ",
+          "حَكِيمِ",
+          "جَوَابَ"
+        ],
+        [
+          "بَصِيرِ",
+          "حِسَابَ",
+          "عَلِيمِ"
+        ],
+        [
+          "مَكَانَ",
+          "نَذِيرِ",
+          "زَمَانَ"
+        ]
+      ],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P027-Mad-Ya.md"
     },
     {
       "pageId": "QJ2-P028",
       "pageNumber": "28",
-      "title": "Kata 4 Huruf 28",
+      "title": "Bahasa Arab 2",
       "titleArabic": "",
       "tartilCompetency": "Kata 4 Huruf bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P028",
@@ -1839,12 +1923,13 @@
       },
       "rows": [],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-REVIEW-0",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P028-Bahasa-Arab-2.md"
     },
     {
       "pageId": "QJ2-P029",
       "pageNumber": "29",
-      "title": "Mad 29",
+      "title": "Mad Waw",
       "titleArabic": "",
       "tartilCompetency": "Mad bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P029",
@@ -1865,14 +1950,56 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "نُورُ",
+          "قَالَ",
+          "رُوحُ"
+        ],
+        [
+          "قِيلَ",
+          "سُوقُ",
+          "بَاعَ"
+        ],
+        [
+          "حُوتُ",
+          "فِيهِ",
+          "رَسُولُ"
+        ],
+        [
+          "كِتَابَ",
+          "يَقُولُ",
+          "كَبِيرِ"
+        ],
+        [
+          "دُخُولُ",
+          "عَذَابَ",
+          "خُرُوجُ"
+        ],
+        [
+          "رَحِيمِ",
+          "وُجُوهُ",
+          "سَحَابَ"
+        ],
+        [
+          "قُلُوبُ",
+          "كَرِيمِ",
+          "حُدُودُ"
+        ],
+        [
+          "شَرَابَ",
+          "سُجُودُ",
+          "قَدِيرِ"
+        ]
+      ],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P029-Mad-Waw.md"
     },
     {
       "pageId": "QJ2-P030",
       "pageNumber": "30",
-      "title": "Mad 30",
+      "title": "Evaluasi Mad Asli",
       "titleArabic": "",
       "tartilCompetency": "Mad bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P030",
@@ -1893,14 +2020,56 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "قَالَ",
+          "قِيلَ",
+          "نُورُ"
+        ],
+        [
+          "بَاعَ",
+          "فِيهِ",
+          "رُوحُ"
+        ],
+        [
+          "نَامَ",
+          "دِينِ",
+          "كِتَابَ"
+        ],
+        [
+          "عَذَابَ",
+          "سَحَابَ",
+          "شَرَابَ"
+        ],
+        [
+          "جَوَابَ",
+          "كَبِيرِ",
+          "رَحِيمِ"
+        ],
+        [
+          "كَرِيمِ",
+          "قَدِيرِ",
+          "حَكِيمِ"
+        ],
+        [
+          "رَسُولُ",
+          "يَقُولُ",
+          "دُخُولُ"
+        ],
+        [
+          "خُرُوجُ",
+          "وُجُوهُ",
+          "قُلُوبُ"
+        ]
+      ],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P030-Evaluasi-Mad-Asli.md"
     },
     {
       "pageId": "QJ2-P031",
       "pageNumber": "31",
-      "title": "Mad 31",
+      "title": "Kontras Pendek–Panjang",
       "titleArabic": "",
       "tartilCompetency": "Mad bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P031",
@@ -1921,14 +2090,56 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "قَالَ",
+          "قِيلَ",
+          "نُورُ"
+        ],
+        [
+          "أَحَدٌ",
+          "رَجُلٍ",
+          "عَمَلًا"
+        ],
+        [
+          "بَاعَ",
+          "فِيهِ",
+          "كِتَابَ"
+        ],
+        [
+          "كَبِيرِ",
+          "رَسُولُ",
+          "شَجَرَةٌ"
+        ],
+        [
+          "بَقَرَةٍ",
+          "حَسَنَةً",
+          "عَذَابَ"
+        ],
+        [
+          "رَحِيمِ",
+          "يَقُولُ",
+          "صَدَقَةٌ"
+        ],
+        [
+          "حِسَابَ",
+          "عَلِيمِ",
+          "قُلُوبُ"
+        ],
+        [
+          "نَفَقَةٍ",
+          "مَكَانَ",
+          "سُجُودُ"
+        ]
+      ],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P031-Pendek-Panjang.md"
     },
     {
       "pageId": "QJ2-P032",
       "pageNumber": "32",
-      "title": "Mad 32",
+      "title": "Kata Terkendali",
       "titleArabic": "",
       "tartilCompetency": "Mad bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P032",
@@ -1949,14 +2160,56 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "قِيلَ",
+          "نُورُ",
+          "أَحَدٌ"
+        ],
+        [
+          "رَجُلٍ",
+          "عَمَلًا",
+          "بَاعَ"
+        ],
+        [
+          "فِيهِ",
+          "قَالَ",
+          "كَبِيرِ"
+        ],
+        [
+          "رَسُولُ",
+          "شَجَرَةٌ",
+          "بَقَرَةٍ"
+        ],
+        [
+          "حَسَنَةً",
+          "عَذَابَ",
+          "رَحِيمِ"
+        ],
+        [
+          "يَقُولُ",
+          "صَدَقَةٌ",
+          "حِسَابَ"
+        ],
+        [
+          "عَلِيمِ",
+          "قُلُوبُ",
+          "نَفَقَةٍ"
+        ],
+        [
+          "مَكَانَ",
+          "سُجُودُ",
+          "كِتَابَ"
+        ]
+      ],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P032-Kata-Terkendali.md"
     },
     {
       "pageId": "QJ2-P033",
       "pageNumber": "33",
-      "title": "Sukun 33",
+      "title": "Integrasi Kandidat Qurani",
       "titleArabic": "",
       "tartilCompetency": "Sukun bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P033",
@@ -1977,9 +2230,51 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "نُورُ",
+          "أَحَدٌ",
+          "رَجُلٍ"
+        ],
+        [
+          "عَمَلًا",
+          "بَاعَ",
+          "فِيهِ"
+        ],
+        [
+          "قَالَ",
+          "قِيلَ",
+          "رَسُولُ"
+        ],
+        [
+          "شَجَرَةٌ",
+          "بَقَرَةٍ",
+          "حَسَنَةً"
+        ],
+        [
+          "عَذَابَ",
+          "رَحِيمِ",
+          "يَقُولُ"
+        ],
+        [
+          "صَدَقَةٌ",
+          "حِسَابَ",
+          "عَلِيمِ"
+        ],
+        [
+          "قُلُوبُ",
+          "نَفَقَةٍ",
+          "مَكَانَ"
+        ],
+        [
+          "سُجُودُ",
+          "كِتَابَ",
+          "كَبِيرِ"
+        ]
+      ],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P033-Integrasi-Kandidat-Qurani.md"
     },
     {
       "pageId": "QJ2-P034",
