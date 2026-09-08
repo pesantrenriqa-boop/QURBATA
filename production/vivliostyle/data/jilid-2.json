@@ -2279,7 +2279,7 @@
     {
       "pageId": "QJ2-P034",
       "pageNumber": "34",
-      "title": "Sukun 34",
+      "title": "Transfer Bentuk–Tanwin–Mad",
       "titleArabic": "",
       "tartilCompetency": "Sukun bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P034",
@@ -2300,14 +2300,56 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "أَحَدٌ",
+          "رَجُلٍ",
+          "عَمَلًا"
+        ],
+        [
+          "بَاعَ",
+          "فِيهِ",
+          "قَالَ"
+        ],
+        [
+          "قِيلَ",
+          "نُورُ",
+          "شَجَرَةٌ"
+        ],
+        [
+          "بَقَرَةٍ",
+          "حَسَنَةً",
+          "عَذَابَ"
+        ],
+        [
+          "رَحِيمِ",
+          "يَقُولُ",
+          "صَدَقَةٌ"
+        ],
+        [
+          "حِسَابَ",
+          "عَلِيمِ",
+          "قُلُوبُ"
+        ],
+        [
+          "نَفَقَةٍ",
+          "مَكَانَ",
+          "سُجُودُ"
+        ],
+        [
+          "كِتَابَ",
+          "كَبِيرِ",
+          "رَسُولُ"
+        ]
+      ],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P034-Transfer-Bentuk-Tanwin-Mad.md"
     },
     {
       "pageId": "QJ2-P035",
       "pageNumber": "35",
-      "title": "Sukun 35",
+      "title": "Remedial Pola Kritis",
       "titleArabic": "",
       "tartilCompetency": "Sukun bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P035",
@@ -2330,12 +2372,13 @@
       },
       "rows": [],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-REVIEW-0",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P035-Remedial-Pola-Kritis.md"
     },
     {
       "pageId": "QJ2-P036",
       "pageNumber": "36",
-      "title": "Alif-Lam 36",
+      "title": "Hafalan 2",
       "titleArabic": "",
       "tartilCompetency": "Alif-Lam bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P036",
@@ -2358,12 +2401,13 @@
       },
       "rows": [],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-REVIEW-0",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P036-Hafalan-2.md"
     },
     {
       "pageId": "QJ2-P037",
       "pageNumber": "37",
-      "title": "Alif-Lam 37",
+      "title": "Simulasi Baca Kata",
       "titleArabic": "",
       "tartilCompetency": "Alif-Lam bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P037",
@@ -2384,14 +2428,56 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "رَجُلٍ",
+          "عَمَلًا",
+          "بَاعَ"
+        ],
+        [
+          "فِيهِ",
+          "قَالَ",
+          "قِيلَ"
+        ],
+        [
+          "نُورُ",
+          "أَحَدٌ",
+          "بَقَرَةٍ"
+        ],
+        [
+          "حَسَنَةً",
+          "عَذَابَ",
+          "رَحِيمِ"
+        ],
+        [
+          "يَقُولُ",
+          "صَدَقَةٌ",
+          "حِسَابَ"
+        ],
+        [
+          "عَلِيمِ",
+          "قُلُوبُ",
+          "نَفَقَةٍ"
+        ],
+        [
+          "مَكَانَ",
+          "سُجُودُ",
+          "كِتَابَ"
+        ],
+        [
+          "كَبِيرِ",
+          "رَسُولُ",
+          "شَجَرَةٌ"
+        ]
+      ],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P037-Simulasi-Baca-Kata.md"
     },
     {
       "pageId": "QJ2-P038",
       "pageNumber": "38",
-      "title": "Awailus Suwar 38",
+      "title": "Akhlak/Hadis 2",
       "titleArabic": "",
       "tartilCompetency": "Awailus Suwar bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P038",
@@ -2414,12 +2500,13 @@
       },
       "rows": [],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-REVIEW-0",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P038-Akhlak-Hadis-2.md"
     },
     {
       "pageId": "QJ2-P039",
       "pageNumber": "39",
-      "title": "Awailus Suwar 39",
+      "title": "Simulasi Mandiri",
       "titleArabic": "",
       "tartilCompetency": "Awailus Suwar bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P039",
@@ -2440,14 +2527,56 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "عَمَلًا",
+          "بَاعَ",
+          "فِيهِ"
+        ],
+        [
+          "قَالَ",
+          "قِيلَ",
+          "نُورُ"
+        ],
+        [
+          "أَحَدٌ",
+          "رَجُلٍ",
+          "حَسَنَةً"
+        ],
+        [
+          "عَذَابَ",
+          "رَحِيمِ",
+          "يَقُولُ"
+        ],
+        [
+          "صَدَقَةٌ",
+          "حِسَابَ",
+          "عَلِيمِ"
+        ],
+        [
+          "قُلُوبُ",
+          "نَفَقَةٍ",
+          "مَكَانَ"
+        ],
+        [
+          "سُجُودُ",
+          "كِتَابَ",
+          "كَبِيرِ"
+        ],
+        [
+          "رَسُولُ",
+          "شَجَرَةٌ",
+          "بَقَرَةٍ"
+        ]
+      ],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P039-Simulasi-Mandiri.md"
     },
     {
       "pageId": "QJ2-P040",
       "pageNumber": "40",
-      "title": "Evaluasi Jilid 2 40",
+      "title": "Ujian Akhir Jilid 2",
       "titleArabic": "",
       "tartilCompetency": "Evaluasi Jilid 2 bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P040",
@@ -2468,9 +2597,51 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "بَاعَ",
+          "فِيهِ",
+          "قَالَ"
+        ],
+        [
+          "قِيلَ",
+          "نُورُ",
+          "أَحَدٌ"
+        ],
+        [
+          "رَجُلٍ",
+          "عَمَلًا",
+          "عَذَابَ"
+        ],
+        [
+          "رَحِيمِ",
+          "يَقُولُ",
+          "صَدَقَةٌ"
+        ],
+        [
+          "حِسَابَ",
+          "عَلِيمِ",
+          "قُلُوبُ"
+        ],
+        [
+          "نَفَقَةٍ",
+          "مَكَانَ",
+          "سُجُودُ"
+        ],
+        [
+          "كِتَابَ",
+          "كَبِيرِ",
+          "رَسُولُ"
+        ],
+        [
+          "شَجَرَةٌ",
+          "بَقَرَةٍ",
+          "حَسَنَةً"
+        ]
+      ],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P040-Ujian-Akhir-Jilid-2.md"
     }
   ]
 }
