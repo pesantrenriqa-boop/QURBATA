@@ -46,7 +46,32 @@
     "jilid2Policy": "Jilid 2 melanjutkan kompetensi Jilid 1; tidak mengulang pengajaran Fathah–Kasrah–Dhammah sebagai materi baru. Huruf sambung diperkenalkan bertahap dalam kelompok tiga huruf, lalu tanwin, kata empat huruf, mad, sukun, alif-lam, awailus suwar dan penguatan. Materi baru dominan ±60%, murojaah legal ±40%, dan tidak boleh ada kompetensi yang muncul sebelum waktunya.",
     "connectedLetters": "Pada fase sambung, bentuk awal–tengah–akhir dikenalkan bertahap. Contoh harus berupa bentuk Arab sah/bermakna; dilarang menyambung huruf secara acak hanya demi mengejar frekuensi.",
     "integrationJ2": "Tahfidz, Bahasa Arab, dan Akhlak Jilid 2 harus melanjutkan target Jilid 1 tanpa mengulang target baru P001–P040 Jilid 1.",
-    "jilid2ConnectedIntro": "Setiap kelompok sambung baru memakai baris penanaman huruf lepas → bentuk sambung pada huruf yang sama, ukuran setara latihan. Latihan sesudahnya wajib memuat kompetensi baru berulang pada kata Arab bermakna dan tetap memurojaah kelompok sambung yang telah legal."
+    "jilid2ConnectedIntro": "Setiap kelompok sambung baru memakai baris penanaman huruf lepas → bentuk sambung pada huruf yang sama, ukuran setara latihan. Latihan sesudahnya wajib memuat kompetensi baru berulang pada kata Arab bermakna dan tetap memurojaah kelompok sambung yang telah legal.",
+    "connectedLetterLadderStrict": "Fase awal Jilid 2 mengajarkan SATU huruf sambung baru per tahap. Anak belum boleh dipaksa membaca sambungan huruf yang bentuk sambungnya belum diajarkan. Pada pengenalan bentuk awal, pelengkap diprioritaskan huruf pemutus sambungan ا د ذ ر ز و agar hanya satu bentuk sambung baru yang harus dikenali. Setelah beberapa bentuk legal dikuasai, murojaah boleh menggabungkan hanya bentuk-bentuk sambung yang sudah legal.",
+    "connectedLetterOrder": [
+      "ب",
+      "ت",
+      "ث",
+      "ن",
+      "ي",
+      "ج",
+      "ح",
+      "خ",
+      "س",
+      "ش",
+      "ص",
+      "ض",
+      "ط",
+      "ظ",
+      "ع",
+      "غ",
+      "ف",
+      "ق",
+      "ك",
+      "ل",
+      "م",
+      "ه"
+    ]
   },
   "competencyMap": {
     "P001_P018": "Huruf sambung bertahap",
@@ -62,9 +87,9 @@
     {
       "pageId": "QJ2-P001",
       "pageNumber": "01",
-      "title": "Sambung ب ت ث",
-      "titleArabic": "ب ت ث",
-      "tartilCompetency": "Mengenali ب ت ث ketika berada pada awal, tengah, dan akhir kata sambung.",
+      "title": "Sambung ب",
+      "titleArabic": "ب",
+      "tartilCompetency": "Kompetensi baru hanya huruf ب pada bentuk awal sambung. Pelengkap hanya huruf yang tidak menyambung ke kiri (ا د ذ ر ز و), sehingga anak belum dituntut mengenali bentuk sambung huruf lain.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P001",
       "integration": {
         "tahfidz": {
@@ -85,39 +110,39 @@
       },
       "rows": [
         [
-          "كَتَبَ",
-          "ثَبَتَ",
-          "بَثَرَ"
+          "بَـدَ",
+          "بِـدَ",
+          "بُـدَ"
         ],
         [
-          "تَبِعَ",
-          "بَحَثَ",
-          "ثَبَتَ"
+          "بَـرَ",
+          "بِـرَ",
+          "بُـرَ"
         ],
         [
-          "كَتِبَ",
-          "بَتَرَ",
-          "تَبَتَّ"
+          "بَـزَ",
+          "بِـزَ",
+          "بُـزَ"
         ],
         [
-          "بَثَرَ",
-          "ثَبَتَ",
-          "كَتَبَ"
+          "بَـذَ",
+          "بِـذَ",
+          "بُـذَ"
         ],
         [
-          "تَبِعَ",
-          "بَحَثَ",
-          "ثَبَتَ"
+          "بَـوَ",
+          "بِـوَ",
+          "بُـوَ"
         ],
         [
-          "كَتَبَ",
-          "بَثَرَ",
-          "تَبِعَ"
+          "بَـا",
+          "بِـي",
+          "بُـو"
         ],
         [
-          "بَحَثَ",
-          "ثَبَتَ",
-          "كَتَبَ"
+          "بَـدَ",
+          "بِـرَ",
+          "بُـزَ"
         ]
       ],
       "activities": [
@@ -134,24 +159,24 @@
             "بَـ"
           ],
           [
-            "تَ",
-            "تَـ"
+            "بِ",
+            "بِـ"
           ],
           [
-            "ثَ",
-            "ثَـ"
+            "بُ",
+            "بُـ"
           ]
         ],
-        "instruction": "Perhatikan perubahan huruf lepas menjadi bentuk sambung pada huruf yang sama.",
+        "instruction": "Huruf yang sudah dikenal dari Jilid 1 sekarang dikenalkan bentuk awal sambungnya.",
         "direction": "rtl-old-to-new"
       }
     },
     {
       "pageId": "QJ2-P002",
       "pageNumber": "02",
-      "title": "Sambung ج ح خ",
-      "titleArabic": "ج ح خ",
-      "tartilCompetency": "Mengenali ج ح خ pada posisi sambung dengan murojaah ب ت ث.",
+      "title": "Sambung ت",
+      "titleArabic": "ت",
+      "tartilCompetency": "Kompetensi baru hanya huruf ت pada bentuk awal sambung. Pelengkap hanya huruf yang tidak menyambung ke kiri (ا د ذ ر ز و), sehingga anak belum dituntut mengenali bentuk sambung huruf lain.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P002",
       "integration": {
         "tahfidz": {
@@ -172,39 +197,39 @@
       },
       "rows": [
         [
-          "جَعَلَ",
-          "حَمِدَ",
-          "خَلَقَ"
+          "تَـدَ",
+          "تِـدَ",
+          "تُـدَ"
         ],
         [
-          "بَحَثَ",
-          "خَبَرَ",
-          "جَلَسَ"
+          "تَـرَ",
+          "تِـرَ",
+          "تُـرَ"
         ],
         [
-          "حَفِظَ",
-          "خَدِمَ",
-          "جَبَرَ"
+          "تَـزَ",
+          "تِـزَ",
+          "تُـزَ"
         ],
         [
-          "بَخِلَ",
-          "حَسِبَ",
-          "خَرَجَ"
+          "تَـذَ",
+          "تِـذَ",
+          "تُـذَ"
         ],
         [
-          "جَهِلَ",
-          "رَحِمَ",
-          "دَخَلَ"
+          "تَـوَ",
+          "تِـوَ",
+          "تُـوَ"
         ],
         [
-          "خَشِيَ",
-          "حَذِرَ",
-          "جَمَعَ"
+          "تَـا",
+          "تِـي",
+          "تُـو"
         ],
         [
-          "كَتَبَ",
-          "بَحَثَ",
-          "خَلَقَ"
+          "تَـدَ",
+          "تِـرَ",
+          "تُـزَ"
         ]
       ],
       "activities": [
@@ -217,28 +242,28 @@
         "title": "Kompetensi Baru",
         "items": [
           [
-            "جَ",
-            "جَـ"
+            "تَ",
+            "تَـ"
           ],
           [
-            "حَ",
-            "حَـ"
+            "تِ",
+            "تِـ"
           ],
           [
-            "خَ",
-            "خَـ"
+            "تُ",
+            "تُـ"
           ]
         ],
-        "instruction": "Perhatikan perubahan huruf lepas menjadi bentuk sambung pada huruf yang sama.",
+        "instruction": "Huruf yang sudah dikenal dari Jilid 1 sekarang dikenalkan bentuk awal sambungnya.",
         "direction": "rtl-old-to-new"
       }
     },
     {
       "pageId": "QJ2-P003",
       "pageNumber": "03",
-      "title": "Sambung س ش ص",
-      "titleArabic": "س ش ص",
-      "tartilCompetency": "Mengenali س ش ص pada posisi sambung; kompetensi sambung sebelumnya tetap dimurojaah.",
+      "title": "Sambung ث",
+      "titleArabic": "ث",
+      "tartilCompetency": "Kompetensi baru hanya huruf ث pada bentuk awal sambung. Pelengkap hanya huruf yang tidak menyambung ke kiri (ا د ذ ر ز و), sehingga anak belum dituntut mengenali bentuk sambung huruf lain.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P003",
       "integration": {
         "tahfidz": {
@@ -259,39 +284,39 @@
       },
       "rows": [
         [
-          "سَجَدَ",
-          "شَكَرَ",
-          "صَبَرَ"
+          "ثَـدَ",
+          "ثِـدَ",
+          "ثُـدَ"
         ],
         [
-          "شَرِبَ",
-          "سَمِعَ",
-          "صَدَقَ"
+          "ثَـرَ",
+          "ثِـرَ",
+          "ثُـرَ"
         ],
         [
-          "حَسِبَ",
-          "خَشِيَ",
-          "نَصَرَ"
+          "ثَـزَ",
+          "ثِـزَ",
+          "ثُـزَ"
         ],
         [
-          "سَكَنَ",
-          "شَهِدَ",
-          "صَنَعَ"
+          "ثَـذَ",
+          "ثِـذَ",
+          "ثُـذَ"
         ],
         [
-          "مَسَحَ",
-          "بَشَرَ",
-          "قَصَدَ"
+          "ثَـوَ",
+          "ثِـوَ",
+          "ثُـوَ"
         ],
         [
-          "سَفَرَ",
-          "شَرَحَ",
-          "صَرَفَ"
+          "ثَـا",
+          "ثِـي",
+          "ثُـو"
         ],
         [
-          "جَلَسَ",
-          "حَفِظَ",
-          "كَتَبَ"
+          "ثَـدَ",
+          "ثِـرَ",
+          "ثُـزَ"
         ]
       ],
       "activities": [
@@ -304,28 +329,28 @@
         "title": "Kompetensi Baru",
         "items": [
           [
-            "سَ",
-            "سَـ"
+            "ثَ",
+            "ثَـ"
           ],
           [
-            "شَ",
-            "شَـ"
+            "ثِ",
+            "ثِـ"
           ],
           [
-            "صَ",
-            "صَـ"
+            "ثُ",
+            "ثُـ"
           ]
         ],
-        "instruction": "Perhatikan perubahan huruf lepas menjadi bentuk sambung pada huruf yang sama.",
+        "instruction": "Huruf yang sudah dikenal dari Jilid 1 sekarang dikenalkan bentuk awal sambungnya.",
         "direction": "rtl-old-to-new"
       }
     },
     {
       "pageId": "QJ2-P004",
       "pageNumber": "04",
-      "title": "Sambung ض ط ظ",
-      "titleArabic": "ض ط ظ",
-      "tartilCompetency": "Mengenali ض ط ظ pada posisi sambung tanpa mendahului kompetensi kelompok berikutnya.",
+      "title": "Sambung ن",
+      "titleArabic": "ن",
+      "tartilCompetency": "Kompetensi baru hanya huruf ن pada bentuk awal sambung. Pelengkap hanya huruf yang tidak menyambung ke kiri (ا د ذ ر ز و), sehingga anak belum dituntut mengenali bentuk sambung huruf lain.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P004",
       "integration": {
         "tahfidz": {
@@ -346,39 +371,39 @@
       },
       "rows": [
         [
-          "ضَرَبَ",
-          "طَلَبَ",
-          "ظَلَمَ"
+          "نَـدَ",
+          "نِـدَ",
+          "نُـدَ"
         ],
         [
-          "حَضَرَ",
-          "قَطَعَ",
-          "نَظَرَ"
+          "نَـرَ",
+          "نِـرَ",
+          "نُـرَ"
         ],
         [
-          "ضَبَطَ",
-          "طَبَعَ",
-          "ظَهَرَ"
+          "نَـزَ",
+          "نِـزَ",
+          "نُـزَ"
         ],
         [
-          "مَرِضَ",
-          "بَطَلَ",
-          "حَفِظَ"
+          "نَـذَ",
+          "نِـذَ",
+          "نُـذَ"
         ],
         [
-          "قَبَضَ",
-          "طَرَحَ",
-          "عَظُمَ"
+          "نَـوَ",
+          "نِـوَ",
+          "نُـوَ"
         ],
         [
-          "رَضِيَ",
-          "فَطِنَ",
-          "وَعَظَ"
+          "نَـا",
+          "نِـي",
+          "نُـو"
         ],
         [
-          "صَبَرَ",
-          "شَكَرَ",
-          "سَجَدَ"
+          "نَـدَ",
+          "نِـرَ",
+          "نُـزَ"
         ]
       ],
       "activities": [
@@ -391,28 +416,28 @@
         "title": "Kompetensi Baru",
         "items": [
           [
-            "ضَ",
-            "ضَـ"
+            "نَ",
+            "نَـ"
           ],
           [
-            "طَ",
-            "طَـ"
+            "نِ",
+            "نِـ"
           ],
           [
-            "ظَ",
-            "ظَـ"
+            "نُ",
+            "نُـ"
           ]
         ],
-        "instruction": "Perhatikan perubahan huruf lepas menjadi bentuk sambung pada huruf yang sama.",
+        "instruction": "Huruf yang sudah dikenal dari Jilid 1 sekarang dikenalkan bentuk awal sambungnya.",
         "direction": "rtl-old-to-new"
       }
     },
     {
       "pageId": "QJ2-P005",
       "pageNumber": "05",
-      "title": "Sambung ع غ ف",
-      "titleArabic": "ع غ ف",
-      "tartilCompetency": "Mengenali ع غ ف pada posisi sambung dengan latihan kata bermakna dan murojaah tersebar.",
+      "title": "Sambung ي",
+      "titleArabic": "ي",
+      "tartilCompetency": "Kompetensi baru hanya huruf ي pada bentuk awal sambung. Pelengkap hanya huruf yang tidak menyambung ke kiri (ا د ذ ر ز و), sehingga anak belum dituntut mengenali bentuk sambung huruf lain.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P005",
       "integration": {
         "tahfidz": {
@@ -433,39 +458,39 @@
       },
       "rows": [
         [
-          "عَلِمَ",
-          "غَفَرَ",
-          "فَهِمَ"
+          "يَـدَ",
+          "يِـدَ",
+          "يُـدَ"
         ],
         [
-          "عَمِلَ",
-          "غَلَبَ",
-          "فَتَحَ"
+          "يَـرَ",
+          "يِـرَ",
+          "يُـرَ"
         ],
         [
-          "رَفَعَ",
-          "شَغِفَ",
-          "حَفِظَ"
+          "يَـزَ",
+          "يِـزَ",
+          "يُـزَ"
         ],
         [
-          "عَرَفَ",
-          "غَرَسَ",
-          "نَفَعَ"
+          "يَـذَ",
+          "يِـذَ",
+          "يُـذَ"
         ],
         [
-          "جَمَعَ",
-          "رَغِبَ",
-          "سَفَرَ"
+          "يَـوَ",
+          "يِـوَ",
+          "يُـوَ"
         ],
         [
-          "عَبَرَ",
-          "غَرِقَ",
-          "فَرِحَ"
+          "يَـا",
+          "يِـي",
+          "يُـو"
         ],
         [
-          "ضَرَبَ",
-          "طَلَبَ",
-          "نَظَرَ"
+          "يَـدَ",
+          "يِـرَ",
+          "يُـزَ"
         ]
       ],
       "activities": [
@@ -478,19 +503,19 @@
         "title": "Kompetensi Baru",
         "items": [
           [
-            "عَ",
-            "عَـ"
+            "يَ",
+            "يَـ"
           ],
           [
-            "غَ",
-            "غَـ"
+            "يِ",
+            "يِـ"
           ],
           [
-            "فَ",
-            "فَـ"
+            "يُ",
+            "يُـ"
           ]
         ],
-        "instruction": "Perhatikan perubahan huruf lepas menjadi bentuk sambung pada huruf yang sama.",
+        "instruction": "Huruf yang sudah dikenal dari Jilid 1 sekarang dikenalkan bentuk awal sambungnya.",
         "direction": "rtl-old-to-new"
       }
     },
@@ -523,49 +548,8 @@
         "Tahfidz QURBATA: Quraisy 1.",
         "Akhlak QURBATA: Sabar belajar."
       ],
-      "status": "DRAFT-CONTENT-AUDITED",
-      "intro": {
-        "title": "Kompetensi Baru",
-        "items": [
-          [
-            "قَرَأَ",
-            "كَتَبَ",
-            "لَعِبَ"
-          ],
-          [
-            "قَبِلَ",
-            "كَبِرَ",
-            "لَبِسَ"
-          ],
-          [
-            "عَقَلَ",
-            "شَكَرَ",
-            "جَلَسَ"
-          ],
-          [
-            "قَصَدَ",
-            "سَكَنَ",
-            "مَلَكَ"
-          ],
-          [
-            "قَدِمَ",
-            "كَرِهَ",
-            "بَلَغَ"
-          ],
-          [
-            "قَطَعَ",
-            "رَكِبَ",
-            "عَلِمَ"
-          ],
-          [
-            "غَفَرَ",
-            "فَهِمَ",
-            "ضَرَبَ"
-          ]
-        ],
-        "instruction": "Perhatikan bentuk huruf ketika masuk ke rangkaian kata.",
-        "direction": "rtl-old-to-new"
-      }
+      "status": "SCAFFOLD—menunggu urutan tangga sambung setelah audit P001-P005",
+      "rows": []
     },
     {
       "pageId": "QJ2-P007",
@@ -596,49 +580,8 @@
         "Tahfidz QURBATA: Quraisy 2.",
         "Akhlak QURBATA: Bersungguh-sungguh."
       ],
-      "status": "DRAFT-CONTENT-AUDITED",
-      "intro": {
-        "title": "Kompetensi Baru",
-        "items": [
-          [
-            "مَلَكَ",
-            "نَصَرَ",
-            "هَجَرَ"
-          ],
-          [
-            "سَمِعَ",
-            "نَدِمَ",
-            "فَهِمَ"
-          ],
-          [
-            "عَمِلَ",
-            "نَظَرَ",
-            "شَهِدَ"
-          ],
-          [
-            "حَمِدَ",
-            "نَفَعَ",
-            "جَهِلَ"
-          ],
-          [
-            "مَرِضَ",
-            "نَزَلَ",
-            "وَهَبَ"
-          ],
-          [
-            "مَنَعَ",
-            "نَجَحَ",
-            "هَلَكَ"
-          ],
-          [
-            "قَرَأَ",
-            "كَتَبَ",
-            "لَبِسَ"
-          ]
-        ],
-        "instruction": "Perhatikan bentuk huruf ketika masuk ke rangkaian kata.",
-        "direction": "rtl-old-to-new"
-      }
+      "status": "SCAFFOLD—menunggu urutan tangga sambung setelah audit P001-P005",
+      "rows": []
     },
     {
       "pageId": "QJ2-P008",
@@ -669,49 +612,8 @@
         "Tahfidz QURBATA: Quraisy 3.",
         "Akhlak QURBATA: Rendah hati."
       ],
-      "status": "DRAFT-CONTENT-AUDITED",
-      "intro": {
-        "title": "Kompetensi Baru",
-        "items": [
-          [
-            "وَجَدَ",
-            "يَسَرَ",
-            "رَحِمَ"
-          ],
-          [
-            "وَرِثَ",
-            "يَبِسَ",
-            "رَكِبَ"
-          ],
-          [
-            "وَعَدَ",
-            "يَمَنَ",
-            "رَفَعَ"
-          ],
-          [
-            "وَهَبَ",
-            "يَسِرَ",
-            "رَغِبَ"
-          ],
-          [
-            "وَقَعَ",
-            "يَئِسَ",
-            "رَجَعَ"
-          ],
-          [
-            "وَزَنَ",
-            "يَقِظَ",
-            "رَشَدَ"
-          ],
-          [
-            "مَلَكَ",
-            "نَصَرَ",
-            "فَهِمَ"
-          ]
-        ],
-        "instruction": "Perhatikan bentuk huruf ketika masuk ke rangkaian kata.",
-        "direction": "rtl-old-to-new"
-      }
+      "status": "SCAFFOLD—menunggu urutan tangga sambung setelah audit P001-P005",
+      "rows": []
     },
     {
       "pageId": "QJ2-P009",
@@ -742,49 +644,8 @@
         "Tahfidz QURBATA: Quraisy 4.",
         "Akhlak QURBATA: Bersyukur."
       ],
-      "status": "DRAFT-CONTENT-AUDITED",
-      "intro": {
-        "title": "Kompetensi Baru",
-        "items": [
-          [
-            "زَرَعَ",
-            "دَخَلَ",
-            "ذَكَرَ"
-          ],
-          [
-            "نَزَلَ",
-            "دَرَسَ",
-            "أَذِنَ"
-          ],
-          [
-            "زَهِدَ",
-            "دَفَعَ",
-            "حَذِرَ"
-          ],
-          [
-            "زَعَمَ",
-            "دَعَا",
-            "ذَهَبَ"
-          ],
-          [
-            "وَزَنَ",
-            "قَدِمَ",
-            "ذَبَحَ"
-          ],
-          [
-            "زَجَرَ",
-            "خَدِمَ",
-            "ذَخَرَ"
-          ],
-          [
-            "وَجَدَ",
-            "يَسَرَ",
-            "رَحِمَ"
-          ]
-        ],
-        "instruction": "Perhatikan bentuk huruf ketika masuk ke rangkaian kata.",
-        "direction": "rtl-old-to-new"
-      }
+      "status": "SCAFFOLD—menunggu urutan tangga sambung setelah audit P001-P005",
+      "rows": []
     },
     {
       "pageId": "QJ2-P010",
@@ -810,54 +671,13 @@
           "instruction": "Praktikkan dalam pembelajaran."
         }
       },
-      "rows": [
-        [
-          "كَتَبَ",
-          "بَحَثَ",
-          "خَلَقَ"
-        ],
-        [
-          "سَجَدَ",
-          "شَكَرَ",
-          "صَبَرَ"
-        ],
-        [
-          "ضَرَبَ",
-          "طَلَبَ",
-          "نَظَرَ"
-        ],
-        [
-          "عَلِمَ",
-          "غَفَرَ",
-          "فَهِمَ"
-        ],
-        [
-          "قَرَأَ",
-          "لَبِسَ",
-          "مَلَكَ"
-        ],
-        [
-          "نَصَرَ",
-          "وَجَدَ",
-          "رَحِمَ"
-        ],
-        [
-          "زَرَعَ",
-          "دَخَلَ",
-          "ذَكَرَ"
-        ],
-        [
-          "جَمَعَ",
-          "حَفِظَ",
-          "رَغِبَ"
-        ]
-      ],
+      "rows": [],
       "activities": [
         "Bahasa Arab QURBATA: Ulangi bersama.",
         "Tahfidz QURBATA: Murojaah Al-Fil–Quraisy.",
         "Akhlak QURBATA: Istiqamah."
       ],
-      "status": "DRAFT-CONTENT-AUDITED"
+      "status": "SCAFFOLD—menunggu urutan tangga sambung setelah audit P001-P005"
     },
     {
       "pageId": "QJ2-P011",
