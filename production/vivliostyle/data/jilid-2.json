@@ -78,7 +78,8 @@
     "connectedPageInternalLadder": "ATURAN BAKU JILID 2: tangga terjadi DI DALAM setiap halaman, bukan satu huruf per halaman. Urutan latihan: (1) bentuk sambung 2 huruf, (2) naik ke 3 huruf, (3) bila seluruh bentuk yang diperlukan sudah legal boleh 4 huruf. Pada kompetensi sambung, huruf target dikenalkan bertahap pada posisi AWAL → TENGAH → AKHIR. Setiap tahap hanya boleh memakai bentuk/harakat/kompetensi yang sudah diajarkan; dilarang melompati mad, sukun, tanwin, tasydid, alif-lam, atau bentuk sambung huruf lain yang belum legal.",
     "connectedMeaningRule": "Latihan harus berupa kata Arab bermakna jika memungkinkan. Jika batas tangga belum memungkinkan kata utuh, gunakan bentuk yang mendekati pola kata/bunyi Arab; jangan memasukkan kompetensi masa depan hanya demi memperoleh kata utuh.",
     "connectedReviewRule": "Setelah satu bentuk sambung menjadi legal pada baris sebelumnya, bentuk itu boleh menjadi murojaah pada baris berikutnya. Kompetensi baru tetap dominan, tetapi murojaah tersebar dan tidak menghapus tangga 2→3→4 huruf.",
-    "connectedPositionRule": "Untuk satu huruf target, jangan menganggap kompetensi selesai hanya setelah bentuk awal. Ajarkan awal, kemudian tengah, kemudian akhir secara eksplisit di halaman yang sama atau sesuai batas ruang, dengan contoh yang tidak memerlukan bentuk sambung belum legal."
+    "connectedPositionRule": "Untuk satu huruf target, jangan menganggap kompetensi selesai hanya setelah bentuk awal. Ajarkan awal, kemudian tengah, kemudian akhir secara eksplisit di halaman yang sama atau sesuai batas ruang, dengan contoh yang tidak memerlukan bentuk sambung belum legal.",
+    "pageRowLadder": "Baris halaman sambung harus merepresentasikan tangga nyata: awal halaman 2 huruf, lalu 3 huruf, kemudian 4 huruf HANYA jika seluruh bentuk sambung yang dibutuhkan sudah legal. Jangan memalsukan jumlah huruf dengan tatweel/kashida."
   },
   "competencyMap": {
     "P001_P018": "Huruf sambung bertahap",
@@ -96,7 +97,7 @@
       "pageNumber": "01",
       "title": "Sambung ب",
       "titleArabic": "ب",
-      "tartilCompetency": "Tangga internal halaman: ب pada sambung awal → tengah → akhir; latihan naik dari 2 huruf → 3 huruf → 4 huruf hanya bila legal. Tanpa mad, sukun, tanwin, tasydid.",
+      "tartilCompetency": "P001: ب sambung bertahap. Baris 1–2 = dua huruf/fokus awal; baris 3–4 = tiga huruf/fokus tengah; baris 5–7 = tiga huruf/fokus akhir dan murojaah. Empat huruf belum dipaksakan karena belum cukup bentuk sambung legal. Hanya fathah-kasrah-dhammah; tanpa mad, sukun, tanwin, tasydid.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P001",
       "integration": {
         "tahfidz": {
@@ -157,7 +158,7 @@
         "Tahfidz QURBATA: Al-Fil 1.",
         "Akhlak QURBATA: Tekun."
       ],
-      "status": "AUDITED-INTERNAL-LADDER-2-3-POSITION",
+      "status": "PROTOTYPE-P001-INTERNAL-LADDER",
       "intro": {
         "title": "Kompetensi Baru",
         "items": [
@@ -166,16 +167,16 @@
             "بَـ"
           ],
           [
-            "ـبَـ",
-            "ـبَـ"
+            "بِ",
+            "بِـ"
           ],
           [
-            "ـبَ",
-            "ـبَ"
+            "بُ",
+            "بُـ"
           ]
         ],
-        "instruction": "Perhatikan ب ketika berada di awal, tengah, dan akhir sambungan.",
-        "direction": "rtl"
+        "instruction": "Kenali perubahan ب lepas menjadi ب ketika mulai tersambung. Setelah itu latihan naik 2 huruf → 3 huruf dan posisi ب berpindah awal → tengah → akhir.",
+        "direction": "rtl-old-to-new"
       }
     },
     {
