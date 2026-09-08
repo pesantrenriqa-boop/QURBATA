@@ -1381,9 +1381,9 @@
     {
       "pageId": "QJ2-P020",
       "pageNumber": "20",
-      "title": "Tanwin 20",
+      "title": "Evaluasi Bentuk II",
       "titleArabic": "",
-      "tartilCompetency": "Tanwin bertahap sesuai tangga kompetensi Jilid 2.",
+      "tartilCompetency": "evaluasi P011–P019",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P020",
       "integration": {
         "tahfidz": {
@@ -1402,14 +1402,56 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "فَتَحَ",
+          "خَلَقَ",
+          "ضَحِكَ"
+        ],
+        [
+          "لَمَسَ",
+          "مَنَعَ",
+          "جَعَلَ"
+        ],
+        [
+          "شَغَلَ",
+          "هَلَكَ",
+          "وَهَبَ"
+        ],
+        [
+          "فَقَهَ",
+          "سَنَةَ",
+          "ثِقَةَ"
+        ],
+        [
+          "بَنَتَ",
+          "رَمَى",
+          "بَقِيَ"
+        ],
+        [
+          "قَرَأَ",
+          "أَمَرَ",
+          "إِذَا"
+        ],
+        [
+          "فِئَةَ",
+          "مِئَةَ",
+          "وَقَفَ"
+        ],
+        [
+          "ذَكَرَ",
+          "بَرَزَ",
+          "نَهَرَ"
+        ]
+      ],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P020-Evaluasi-Bentuk-II.md"
     },
     {
       "pageId": "QJ2-P021",
       "pageNumber": "21",
-      "title": "Tanwin 21",
+      "title": "Fathatain dan Jembatan Tiga–Empat Huruf",
       "titleArabic": "",
       "tartilCompetency": "Tanwin bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P021",
@@ -1430,14 +1472,56 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "أَحَدًا",
+          "رَجُلَ",
+          "عَمَلًا"
+        ],
+        [
+          "مَثَلَ",
+          "بَشَرًا",
+          "وَلَدَ"
+        ],
+        [
+          "أَجَلًا",
+          "خَبَرَ",
+          "شَجَرَةً"
+        ],
+        [
+          "بَقَرَةَ",
+          "كَلِمَةً",
+          "حَسَنَةَ"
+        ],
+        [
+          "ثَمَرَةً",
+          "وَرَقَةَ",
+          "دَرَجَةً"
+        ],
+        [
+          "رَقَبَةَ",
+          "نَظِرَةً",
+          "بَرَكَةَ"
+        ],
+        [
+          "حَرَكَةً",
+          "سَمَكَةَ",
+          "صَدَقَةً"
+        ],
+        [
+          "نَفَقَةَ",
+          "طَبَقَةً",
+          "شَبَكَةَ"
+        ]
+      ],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P021-Fathatain-dan-Jembatan-Tiga-Empat-Huruf.md"
     },
     {
       "pageId": "QJ2-P022",
       "pageNumber": "22",
-      "title": "Tanwin 22",
+      "title": "Kasratain dan Jembatan Tiga–Empat Huruf",
       "titleArabic": "",
       "tartilCompetency": "Tanwin bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P022",
@@ -1458,14 +1542,56 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "أَحَدًا",
+          "رَجُلٍ",
+          "عَمَلًا"
+        ],
+        [
+          "مَثَلٍ",
+          "بَشَرًا",
+          "وَلَدٍ"
+        ],
+        [
+          "أَجَلًا",
+          "خَبَرٍ",
+          "شَجَرَةً"
+        ],
+        [
+          "بَقَرَةٍ",
+          "كَلِمَةً",
+          "حَسَنَةٍ"
+        ],
+        [
+          "ثَمَرَةً",
+          "وَرَقَةٍ",
+          "دَرَجَةً"
+        ],
+        [
+          "رَقَبَةٍ",
+          "نَظِرَةً",
+          "بَرَكَةٍ"
+        ],
+        [
+          "حَرَكَةً",
+          "سَمَكَةٍ",
+          "صَدَقَةً"
+        ],
+        [
+          "نَفَقَةٍ",
+          "طَبَقَةً",
+          "شَبَكَةٍ"
+        ]
+      ],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P022-Kasratain-dan-Jembatan-Tiga-Empat-Huruf.md"
     },
     {
       "pageId": "QJ2-P023",
       "pageNumber": "23",
-      "title": "Tanwin 23",
+      "title": "Dhammatain dan Jembatan Tiga–Empat Huruf",
       "titleArabic": "",
       "tartilCompetency": "Tanwin bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P023",
@@ -1486,14 +1612,56 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "أَحَدٌ",
+          "رَجُلٌ",
+          "عَمَلٍ"
+        ],
+        [
+          "مَثَلٍ",
+          "بَشَرٌ",
+          "وَلَدٌ"
+        ],
+        [
+          "أَجَلٍ",
+          "خَبَرٍ",
+          "شَجَرَةٌ"
+        ],
+        [
+          "بَقَرَةٌ",
+          "كَلِمَةٍ",
+          "حَسَنَةٍ"
+        ],
+        [
+          "ثَمَرَةٌ",
+          "وَرَقَةٌ",
+          "دَرَجَةٍ"
+        ],
+        [
+          "رَقَبَةٍ",
+          "نَظِرَةٌ",
+          "بَرَكَةٌ"
+        ],
+        [
+          "حَرَكَةٍ",
+          "سَمَكَةٍ",
+          "صَدَقَةٌ"
+        ],
+        [
+          "نَفَقَةٌ",
+          "طَبَقَةٍ",
+          "شَبَكَةٍ"
+        ]
+      ],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P023-Dhammatain-dan-Jembatan-Tiga-Empat-Huruf.md"
     },
     {
       "pageId": "QJ2-P024",
       "pageNumber": "24",
-      "title": "Tanwin 24",
+      "title": "Integrasi Tiga Tanwin",
       "titleArabic": "",
       "tartilCompetency": "Tanwin bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P024",
@@ -1514,14 +1682,56 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "أَحَدًا",
+          "رَجُلٍ",
+          "عَمَلٌ"
+        ],
+        [
+          "مَثَلًا",
+          "بَشَرٍ",
+          "وَلَدٌ"
+        ],
+        [
+          "أَجَلًا",
+          "خَبَرٍ",
+          "شَجَرَةٌ"
+        ],
+        [
+          "بَقَرَةً",
+          "كَلِمَةٍ",
+          "حَسَنَةٌ"
+        ],
+        [
+          "ثَمَرَةً",
+          "وَرَقَةٍ",
+          "دَرَجَةٌ"
+        ],
+        [
+          "رَقَبَةً",
+          "نَظِرَةٍ",
+          "بَرَكَةٌ"
+        ],
+        [
+          "حَرَكَةً",
+          "سَمَكَةٍ",
+          "صَدَقَةٌ"
+        ],
+        [
+          "نَفَقَةً",
+          "طَبَقَةٍ",
+          "شَبَكَةٌ"
+        ]
+      ],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P024-Integrasi-Tiga-Tanwin.md"
     },
     {
       "pageId": "QJ2-P025",
       "pageNumber": "25",
-      "title": "Kata 4 Huruf 25",
+      "title": "Hafalan 1",
       "titleArabic": "",
       "tartilCompetency": "Kata 4 Huruf bertahap sesuai tangga kompetensi Jilid 2.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P025",
@@ -1544,7 +1754,8 @@
       },
       "rows": [],
       "activities": [],
-      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
+      "status": "SOURCE-REVIEW-0",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P025-Hafalan-1.md"
     },
     {
       "pageId": "QJ2-P026",
