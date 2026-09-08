@@ -2,84 +2,19 @@
   "book": {
     "id": "QURBATA-J2",
     "title": "QURBATA JILID 2",
-    "status": "DRAFT-CURRICULUM-SCAFFOLD"
+    "status": "REBUILT-FROM-REPOSITORY-FROZEN-SOURCES"
   },
   "curriculumRules": {
-    "newCompetencyShare": "±60%",
-    "reviewShare": "±40%",
-    "reviewPolicy": "Murojaah wajib tersebar merata dari seluruh kompetensi yang telah legal; tidak boleh hanya mengulang kelompok terakhir.",
-    "progressionPolicy": "Kompetensi baru diperkenalkan bertahap. Setiap penambahan kompetensi wajib mempertahankan kompetensi lama di latihan.",
-    "phaseClosure": "Setelah seluruh huruf pada satu harakat dikenalkan, lakukan penguatan lalu dua halaman latihan kumulatif sebelum masuk harakat berikutnya.",
-    "jilid1Sequence": [
-      "Fathah",
-      "Kasrah",
-      "Dhammah"
+    "sourceOfTruth": [
+      "QJ2-MASTER",
+      "DEC-CUR-010",
+      "MAT-QJ2-FORM-001",
+      "DEC-CUR-012",
+      "QURBATA-BOOK-BLUEPRINT-v1.0-FROZEN"
     ],
-    "meaningfulPractice": "Pada fase harakat baru, susunan bermakna/mendekati kata terutama dibangun dari kompetensi harakat baru yang SUDAH legal pada halaman-halaman sebelumnya dan kompetensi baru halaman aktif; fathah yang sudah tuntas hanya berfungsi sebagai murojaah kumulatif tersebar. Semua huruf tetap lepas/tidak sambung.",
-    "newConceptIntroduction": "SETIAP halaman yang memperkenalkan kompetensi baru wajib mengganti SATU baris latihan dengan satu baris PENANAMAN KOMPETENSI BARU. Huruf contoh harus sebesar huruf pada grid Latihan Tartil. Pola contoh: huruf/bentuk lama → bentuk kompetensi baru. Karena satu baris dipakai untuk penanaman, halaman materi baru hanya memiliki 7 baris grid latihan. Bukan strip teori kecil.",
-    "hehPolicy": "Audit global: hanya gunakan ه untuk ha dua lubang menurut font Utsmani; karakter ھ/ہ/ۀ/ە dilarang di seluruh data. Pada latihan Tartil, ha wajib membawa harakat sesuai kompetensi.",
-    "fathahAfterClosure": "Setelah fase Fathah ditutup, Fathah tidak lagi menjadi target pembentukan pola bermakna; hanya muncul sebagai murojaah kumulatif proporsional.",
-    "detachedLetters": "Jilid 1 wajib memakai huruf lepas/tidak sambung pada seluruh grid Tartil.",
-    "mixedHarakatWithinGroup": "Pada fase harakat baru, satu kelompok latihan 3 huruf wajib mencampur harakat kompetensi baru dan harakat lama yang sudah legal di DALAM kelompok yang sama. Posisi harakat baru diacak: awal, tengah, atau akhir. Komposisi keseluruhan halaman mengikuti proporsi target aktif/murojaah (±60/40), bukan memisahkan kelompok Kasrah dan kelompok Fathah.",
-    "meaningfulMixedGroups": "Kelompok 3 huruf campuran harakat TIDAK boleh dibentuk secara acak huruf. Pilih terlebih dahulu bentuk dasar kata Arab bermakna atau sangat dekat dengan kata bermakna, lalu distribusikan harakat baru/lama pada tiga hurufnya sesuai kompetensi legal dan proporsi halaman. Posisi harakat baru boleh awal/tengah/akhir; huruf tetap lepas.",
-    "newCompetencyHeaderEveryIntroduction": "WAJIB pada SETIAP halaman kompetensi baru: baris penanaman harus MENJELASKAN PERUBAHAN dari kompetensi lama yang telah dikuasai menuju kompetensi baru pada huruf yang sama, misalnya جَ → جِ. DILARANG menampilkan bentuk baru → bentuk baru (misalnya جِ → جِ) karena tidak menjelaskan perubahan. Huruf contoh memakai font Utsmani dan ukuran sama dengan huruf latihan. Halaman materi baru = 1 baris penanaman + 7 baris latihan.",
-    "jilid1To40": "P026–P032 pengenalan Dhammah bertahap; setiap halaman materi baru memakai 1 baris penanaman kompetensi lama→baru ukuran latihan + 7 baris latihan. P033 penguatan; P034–P035 kumulatif Dhammah; P036–P040 penguatan kumulatif Jilid 1. Semua kelompok tiga huruf lepas berbasis kata bermakna/mendekati bermakna dan murojaah tersebar.",
-    "integrationNoRepeat": "Tahfidz, Bahasa Arab, dan Akhlak memiliki TARGET BARU unik per halaman P001–P040. Murojaah boleh dan wajib dilakukan, tetapi tidak boleh menggantikan slot target baru sehingga judul/target integrasi tidak berulang.",
-    "activeCompetencyDominance": "Pada halaman pengenalan kompetensi baru, latihan Tartil wajib didominasi kompetensi baru ±60% dan murojaah kompetensi legal sebelumnya ±40%. Kompetensi baru tidak boleh hanya muncul satu contoh. Proporsi dihitung pada seluruh unit huruf/harakat dalam 7 baris latihan, sambil tetap memakai susunan kata Arab bermakna atau mendekati bermakna dan posisi kompetensi baru tersebar awal–tengah–akhir.",
-    "activeCompetencyImplementation": "P016–P022 dan P026–P032 diaudit ulang: kompetensi aktif muncul berulang dan tersebar pada 7 baris, sementara harakat lama tetap tertanam sebagai murojaah di kelompok yang sama. Semua kelompok bersumber dari bank kata/akar Arab bermakna atau mendekati bermakna; tidak memakai kombinasi acak.",
-    "meaningAndVowelIntegrity": "ATURAN KERAS: latihan tidak boleh dibentuk dengan mengganti harakat secara mekanis pada akar/kata. Jika contoh diklaim kata bermakna, seluruh pola harakatnya harus mengikuti bentuk Arab yang sah. Untuk kompetensi yang belum cukup bank kata pada batas kompetensi jilid, gunakan contoh suku/fragmen pedagogis yang jelas sebagai latihan bunyi dan jangan menyebutnya kata bermakna. Dilarang menghasilkan bentuk palsu seperti كِ مِ لِ dari كَمُلَ.",
-    "noDuplicateRows": "Dalam satu halaman, tidak boleh ada baris latihan yang identik; antarkompetensi/halaman juga harus divariasikan agar dua halaman tidak berisi latihan yang sama seluruhnya.",
-    "dhammahMeaningfulBank": "P026–P032 dibangun dari bentuk Arab berharakat yang sah (terutama pola pasif فُعِلَ dan bentuk yang sesuai), bukan akar yang diharakati ulang secara acak. Kompetensi Dhammah aktif tersebar, sementara Kasrah/Fathah tetap hadir alami di dalam kata sebagai murojaah.",
-    "threeLetterMeaningfulIntegrity": "Mulai P014 setiap sel latihan wajib tepat tiga huruf dasar. Bentuk dua huruf/fragmen pendek dilarang. Untuk huruf yang contoh leksikalnya lebih jarang, gunakan kata Arab sah yang menempatkan kompetensi aktif di awal/tengah/akhir kata; jangan memalsukan harakat.",
-    "phaseLegalityStrict": "Pada setiap halaman materi baru, HARAKAT BARU hanya boleh muncul pada huruf yang sedang diperkenalkan atau yang sudah legal pada fase baru sebelumnya. Contoh: P026 hanya بُ تُ ثُ جُ yang boleh berdhammah; ضُ dan huruf Dhammah lain dilarang sebelum halamannya.",
-    "activeNewExamplesRequired": "Kompetensi baru wajib benar-benar muncul berulang dalam latihan, bukan hanya pada baris penanaman. Setiap huruf baru harus memiliki beberapa contoh pada kata Arab yang sah/mendekati bentuk bermakna, dengan posisi tersebar dan murojaah tetap tertanam.",
-    "jilid2Sequence": [
-      "Huruf sambung bertahap",
-      "Tanwin bertahap",
-      "Kata 4 huruf",
-      "Mad bertahap",
-      "Sukun per huruf",
-      "Alif-Lam bertahap",
-      "Awailus Suwar",
-      "Penguatan kumulatif"
-    ],
-    "jilid2Policy": "Jilid 2 melanjutkan kompetensi Jilid 1; tidak mengulang pengajaran Fathah–Kasrah–Dhammah sebagai materi baru. Huruf sambung diperkenalkan bertahap dalam kelompok tiga huruf, lalu tanwin, kata empat huruf, mad, sukun, alif-lam, awailus suwar dan penguatan. Materi baru dominan ±60%, murojaah legal ±40%, dan tidak boleh ada kompetensi yang muncul sebelum waktunya.",
-    "connectedLetters": "Pada fase sambung, bentuk awal–tengah–akhir dikenalkan bertahap. Contoh harus berupa bentuk Arab sah/bermakna; dilarang menyambung huruf secara acak hanya demi mengejar frekuensi.",
-    "integrationJ2": "Tahfidz, Bahasa Arab, dan Akhlak Jilid 2 harus melanjutkan target Jilid 1 tanpa mengulang target baru P001–P040 Jilid 1.",
-    "jilid2ConnectedIntro": "Setiap kelompok sambung baru memakai baris penanaman huruf lepas → bentuk sambung pada huruf yang sama, ukuran setara latihan. Latihan sesudahnya wajib memuat kompetensi baru berulang pada kata Arab bermakna dan tetap memurojaah kelompok sambung yang telah legal.",
-    "connectedLetterLadderStrict": "Fase awal Jilid 2 mengajarkan SATU huruf sambung baru per tahap. Anak belum boleh dipaksa membaca sambungan huruf yang bentuk sambungnya belum diajarkan. Pada pengenalan bentuk awal, pelengkap diprioritaskan huruf pemutus sambungan ا د ذ ر ز و agar hanya satu bentuk sambung baru yang harus dikenali. Setelah beberapa bentuk legal dikuasai, murojaah boleh menggabungkan hanya bentuk-bentuk sambung yang sudah legal.",
-    "connectedLetterOrder": [
-      "ب",
-      "ت",
-      "ث",
-      "ن",
-      "ي",
-      "ج",
-      "ح",
-      "خ",
-      "س",
-      "ش",
-      "ص",
-      "ض",
-      "ط",
-      "ظ",
-      "ع",
-      "غ",
-      "ف",
-      "ق",
-      "ك",
-      "ل",
-      "م",
-      "ه"
-    ],
-    "meaningPriorityJ2": "Pada fase satu huruf sambung, contoh bermakna diprioritaskan. Jika kata bermakna memerlukan huruf lain, huruf lain tidak boleh membentuk sambungan baru yang belum legal. Dilarang membuat rangkaian semu hanya untuk memenuhi pola.",
-    "noFutureSignsJ2": "Pada fase huruf sambung awal, DILARANG muncul mad (ا و ي sebagai huruf mad), tasydid, sukun, tanwin, alif-lam, atau tanda/kompetensi lain yang belum diajarkan. Harakat yang legal hanya Fathah, Kasrah, Dhammah dari Jilid 1.",
-    "meaningVsLadder": "Prinsip kata bermakna tidak boleh memaksa masuknya kompetensi masa depan. Jika kata utuh bermakna membutuhkan mad/tasydid/sukun/bentuk sambung yang belum legal, gunakan pasangan latihan pedagogis dua huruf yang mendekati pola bunyi dan jelas sebagai latihan bentuk, bukan mengklaimnya sebagai kata bermakna.",
-    "connectedPageInternalLadder": "ATURAN BAKU JILID 2: tangga terjadi DI DALAM setiap halaman, bukan satu huruf per halaman. Urutan latihan: (1) bentuk sambung 2 huruf, (2) naik ke 3 huruf, (3) bila seluruh bentuk yang diperlukan sudah legal boleh 4 huruf. Pada kompetensi sambung, huruf target dikenalkan bertahap pada posisi AWAL → TENGAH → AKHIR. Setiap tahap hanya boleh memakai bentuk/harakat/kompetensi yang sudah diajarkan; dilarang melompati mad, sukun, tanwin, tasydid, alif-lam, atau bentuk sambung huruf lain yang belum legal.",
-    "connectedMeaningRule": "Latihan harus berupa kata Arab bermakna jika memungkinkan. Jika batas tangga belum memungkinkan kata utuh, gunakan bentuk yang mendekati pola kata/bunyi Arab; jangan memasukkan kompetensi masa depan hanya demi memperoleh kata utuh.",
-    "connectedReviewRule": "Setelah satu bentuk sambung menjadi legal pada baris sebelumnya, bentuk itu boleh menjadi murojaah pada baris berikutnya. Kompetensi baru tetap dominan, tetapi murojaah tersebar dan tidak menghapus tangga 2→3→4 huruf.",
-    "connectedPositionRule": "Untuk satu huruf target, jangan menganggap kompetensi selesai hanya setelah bentuk awal. Ajarkan awal, kemudian tengah, kemudian akhir secara eksplisit di halaman yang sama atau sesuai batas ruang, dengan contoh yang tidak memerlukan bentuk sambung belum legal.",
-    "pageRowLadder": "Baris halaman sambung harus merepresentasikan tangga nyata: awal halaman 2 huruf, lalu 3 huruf, kemudian 4 huruf HANYA jika seluruh bentuk sambung yang dibutuhkan sudah legal. Jangan memalsukan jumlah huruf dengan tatweel/kashida."
+    "P001_P020": "24 × 3 huruf; 12 Fokus + 12 Murojaah pada halaman akuisisi; tidak regresi ke dua huruf.",
+    "P021_P040": "8 × 3 + 16 × 4; tanwin P021-P024; mad asli P025-P040.",
+    "prohibited": "Sukun dan tasydid bukan kompetensi Jilid 2. Jangan memalsukan kata atau sumber."
   },
   "competencyMap": {
     "P001_P018": "Huruf sambung bertahap",
@@ -95,9 +30,9 @@
     {
       "pageId": "QJ2-P001",
       "pageNumber": "01",
-      "title": "Sambung ب",
-      "titleArabic": "ب",
-      "tartilCompetency": "P001: ب sambung bertahap. Baris 1–2 = dua huruf/fokus awal; baris 3–4 = tiga huruf/fokus tengah; baris 5–7 = tiga huruf/fokus akhir dan murojaah. Empat huruf belum dipaksakan karena belum cukup bentuk sambung legal. Hanya fathah-kasrah-dhammah; tanpa mad, sukun, tanwin, tasydid.",
+      "title": "Empat Posisi Huruf Ba",
+      "titleArabic": "",
+      "tartilCompetency": "ب: tunggal, awal, tengah, akhir",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P001",
       "integration": {
         "tahfidz": {
@@ -118,39 +53,44 @@
       },
       "rows": [
         [
-          "بَـدَ",
-          "بِـرَ",
-          "بُـزَ"
+          "بَحَرَ",
+          "قَلَمَ",
+          "بَقَرَ"
         ],
         [
-          "بَـذَ",
-          "بِـوَ",
-          "بُـرَ"
+          "عَلَمَ",
+          "كَتَبَ",
+          "دَرَسَ"
         ],
         [
-          "دَبَـرَ",
-          "رَبِـذَ",
-          "زَبُـرَ"
+          "سَبَقَ",
+          "ذَهَبَ",
+          "عَبَدَ"
         ],
         [
-          "ذَبَـرَ",
-          "وَبِـرَ",
-          "دَبُـرَ"
+          "رَجَعَ",
+          "قَبِلَ",
+          "وَجَدَ"
         ],
         [
-          "دَرَبَ",
-          "رَذَبِ",
-          "زَرَبُ"
+          "حَبَسَ",
+          "نَظَرَ",
+          "نَبَتَ"
         ],
         [
-          "ذَرَبَ",
-          "وَرَبِ",
-          "دَزَبُ"
+          "خَلَقَ",
+          "طَلَبَ",
+          "سَجَدَ"
         ],
         [
-          "دَبَرَ",
-          "رَبِذَ",
-          "زَبُرَ"
+          "كَسَبَ",
+          "عَرَفَ",
+          "بَدَأَ"
+        ],
+        [
+          "قَرَأَ",
+          "بَلَغَ",
+          "شَكَرَ"
         ]
       ],
       "activities": [
@@ -158,33 +98,14 @@
         "Tahfidz QURBATA: Al-Fil 1.",
         "Akhlak QURBATA: Tekun."
       ],
-      "status": "PROTOTYPE-P001-INTERNAL-LADDER",
-      "intro": {
-        "title": "Kompetensi Baru",
-        "items": [
-          [
-            "بَ",
-            "بَـ"
-          ],
-          [
-            "بِ",
-            "بِـ"
-          ],
-          [
-            "بُ",
-            "بُـ"
-          ]
-        ],
-        "instruction": "Kenali perubahan ب lepas menjadi ب ketika mulai tersambung. Setelah itu latihan naik 2 huruf → 3 huruf dan posisi ب berpindah awal → tengah → akhir.",
-        "direction": "rtl-old-to-new"
-      }
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
     },
     {
       "pageId": "QJ2-P002",
       "pageNumber": "02",
-      "title": "Sambung ت",
-      "titleArabic": "ت",
-      "tartilCompetency": "Fokus hanya bentuk awal sambung تـ dengan Fathah, Kasrah, Dhammah yang sudah dikuasai di Jilid 1. Pelengkap hanya د ذ ر ز و. Tidak ada mad, sukun, tanwin, tasydid, atau bentuk sambung baru lain.",
+      "title": "Keluarga Ba–Ta–Tsa",
+      "titleArabic": "",
+      "tartilCompetency": "ب ت ث: satu kerangka, beda titik",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P002",
       "integration": {
         "tahfidz": {
@@ -203,20 +124,61 @@
           "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "كَتَبَ",
+          "بَحَرَ",
+          "ثَبَتَ"
+        ],
+        [
+          "سَبَقَ",
+          "بَثَثَ",
+          "طَلَبَ"
+        ],
+        [
+          "تَبَتَ",
+          "كَسَبَ",
+          "بَتَثَ"
+        ],
+        [
+          "عَبَدَ",
+          "ثَبَرَ",
+          "قَبِلَ"
+        ],
+        [
+          "تَبِعَ",
+          "حَبَسَ",
+          "بَتَرَ"
+        ],
+        [
+          "نَبَتَ",
+          "ثَقَبَ",
+          "ذَهَبَ"
+        ],
+        [
+          "تَابَ",
+          "بَقَرَ",
+          "بَاتَ"
+        ],
+        [
+          "بَدَأَ",
+          "ثَابَ",
+          "بَلَغَ"
+        ]
+      ],
       "activities": [
         "Bahasa Arab QURBATA: Pisahkan (اِفْصِلْ).",
         "Tahfidz QURBATA: Al-Fil 2.",
         "Akhlak QURBATA: Teliti."
       ],
-      "status": "SCAFFOLD—menunggu validasi pola P001 tangga internal 2→3→4 dan awal→tengah→akhir"
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
     },
     {
       "pageId": "QJ2-P003",
       "pageNumber": "03",
-      "title": "Sambung ث",
-      "titleArabic": "ث",
-      "tartilCompetency": "Fokus hanya bentuk awal sambung ثـ dengan Fathah, Kasrah, Dhammah yang sudah dikuasai di Jilid 1. Pelengkap hanya د ذ ر ز و. Tidak ada mad, sukun, tanwin, tasydid, atau bentuk sambung baru lain.",
+      "title": "Kontras Ba–Ta–Tsa–Nun–Ya",
+      "titleArabic": "",
+      "tartilCompetency": "ب ت ث ن ي pada awal dan tengah; bentuk akhir ن ي",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P003",
       "integration": {
         "tahfidz": {
@@ -235,20 +197,61 @@
           "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "بَيتَ",
+          "كَتَبَ",
+          "بَنَتَ"
+        ],
+        [
+          "ثَبَتَ",
+          "نَبَتَ",
+          "بَتَرَ"
+        ],
+        [
+          "يَتِمَ",
+          "تَبِعَ",
+          "يَبِنَ"
+        ],
+        [
+          "بَتَثَ",
+          "بَيَنَ",
+          "ثَقَبَ"
+        ],
+        [
+          "نَيَبَ",
+          "بَاتَ",
+          "يَبِسَ"
+        ],
+        [
+          "تَابَ",
+          "تَيَنَ",
+          "بَثَثَ"
+        ],
+        [
+          "ثَنَا",
+          "تَبَتَ",
+          "بَنَت"
+        ],
+        [
+          "بَقَرَ",
+          "نَبِيَ",
+          "سَبَقَ"
+        ]
+      ],
       "activities": [
         "Bahasa Arab QURBATA: Bacalah kata (اِقْرَأِ الْكَلِمَةَ).",
         "Tahfidz QURBATA: Al-Fil 3.",
         "Akhlak QURBATA: Tidak tergesa-gesa."
       ],
-      "status": "SCAFFOLD—menunggu validasi pola P001 tangga internal 2→3→4 dan awal→tengah→akhir"
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
     },
     {
       "pageId": "QJ2-P004",
       "pageNumber": "04",
-      "title": "Sambung ن",
-      "titleArabic": "ن",
-      "tartilCompetency": "Fokus hanya bentuk awal sambung نـ dengan Fathah, Kasrah, Dhammah yang sudah dikuasai di Jilid 1. Pelengkap hanya د ذ ر ز و. Tidak ada mad, sukun, tanwin, tasydid, atau bentuk sambung baru lain.",
+      "title": "Keluarga Jim–Ha–Kha",
+      "titleArabic": "",
+      "tartilCompetency": "ج ح خ: satu kerangka mangkuk, beda titik",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P004",
       "integration": {
         "tahfidz": {
@@ -267,20 +270,61 @@
           "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "جَبَلَ",
+          "بَيتَ",
+          "حَبلَ"
+        ],
+        [
+          "نَبِيَ",
+          "خَبَرَ",
+          "ثَنَى"
+        ],
+        [
+          "سَجَدَ",
+          "كَتَبَ",
+          "بَحَرَ"
+        ],
+        [
+          "بَنَت",
+          "دَخَلَ",
+          "يَبِسَ"
+        ],
+        [
+          "خَرَجَ",
+          "نَبَتَ",
+          "نَجَحَ"
+        ],
+        [
+          "بَيَنَ",
+          "حَجَبَ",
+          "تَيَنَ"
+        ],
+        [
+          "جَرَحَ",
+          "ثَبَتَ",
+          "خَلَقَ"
+        ],
+        [
+          "قَبِلَ",
+          "مَزَجَ",
+          "بَاتَ"
+        ]
+      ],
       "activities": [
         "Bahasa Arab QURBATA: Perhatikan bentuknya (اُنْظُرْ إِلَى شَكْلِهِ).",
         "Tahfidz QURBATA: Al-Fil 4.",
         "Akhlak QURBATA: Memudahkan."
       ],
-      "status": "SCAFFOLD—menunggu validasi pola P001 tangga internal 2→3→4 dan awal→tengah→akhir"
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
     },
     {
       "pageId": "QJ2-P005",
       "pageNumber": "05",
-      "title": "Sambung ي",
-      "titleArabic": "ي",
-      "tartilCompetency": "Fokus hanya bentuk awal sambung يـ dengan Fathah, Kasrah, Dhammah yang sudah dikuasai di Jilid 1. Pelengkap hanya د ذ ر ز و. Tidak ada mad, sukun, tanwin, tasydid, atau bentuk sambung baru lain.",
+      "title": "Huruf Pemutus Dal–Dzal–Ra–Zai",
+      "titleArabic": "",
+      "tartilCompetency": "د ذ ر ز: menyambung dari kanan tetapi memutus rangkaian sesudahnya",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P005",
       "integration": {
         "tahfidz": {
@@ -299,20 +343,61 @@
           "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "دَرَسَ",
+          "جَبَلَ",
+          "ذَهَبَ"
+        ],
+        [
+          "حَبلَ",
+          "رَزَقَ",
+          "خَبَرَ"
+        ],
+        [
+          "زَرَعَ",
+          "نَجَحَ",
+          "بَدَأَ"
+        ],
+        [
+          "بَحَرَ",
+          "نَذَرَ",
+          "دَخَلَ"
+        ],
+        [
+          "خَرَجَ",
+          "حَجَبَ",
+          "بَرَزَ"
+        ],
+        [
+          "مَزَجَ",
+          "رَدَدَ",
+          "ثَبَتَ"
+        ],
+        [
+          "ذَكَرَ",
+          "بَيتَ",
+          "دَخَرَ"
+        ],
+        [
+          "نَبِيَ",
+          "زَهَدَ",
+          "خَلَقَ"
+        ]
+      ],
       "activities": [
         "Bahasa Arab QURBATA: Ulangi dengan benar (أَعِدْ صَحِيحًا).",
         "Tahfidz QURBATA: Al-Fil 5.",
         "Akhlak QURBATA: Menjaga ilmu."
       ],
-      "status": "SCAFFOLD—menunggu validasi pola P001 tangga internal 2→3→4 dan awal→tengah→akhir"
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
     },
     {
       "pageId": "QJ2-P006",
       "pageNumber": "06",
-      "title": "Sambung ق ك ل",
-      "titleArabic": "ق ك ل",
-      "tartilCompetency": "Mengenali ق ك ل dalam bentuk sambung; seluruh kelompok sambung sebelumnya menjadi murojaah legal.",
+      "title": "Alif–Waw: Pemutus Sambungan",
+      "titleArabic": "",
+      "tartilCompetency": "ا و dalam rangkaian tiga huruf",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P006",
       "integration": {
         "tahfidz": {
@@ -336,15 +421,56 @@
         "Tahfidz QURBATA: Quraisy 1.",
         "Akhlak QURBATA: Sabar belajar."
       ],
-      "status": "SCAFFOLD—menunggu urutan tangga sambung setelah audit P001-P005",
-      "rows": []
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "rows": [
+        [
+          "وَجَدَ",
+          "دَرَسَ",
+          "قَالَ"
+        ],
+        [
+          "جَبَلَ",
+          "دَعَا",
+          "ذَهَبَ"
+        ],
+        [
+          "وَعَدَ",
+          "نَجَحَ",
+          "صَامَ"
+        ],
+        [
+          "بَرَزَ",
+          "وَرَدَ",
+          "خَرَجَ"
+        ],
+        [
+          "زَادَ",
+          "ثَبَرَ",
+          "وَلَدَ"
+        ],
+        [
+          "حَجَبَ",
+          "نَامَ",
+          "يَبِسَ"
+        ],
+        [
+          "وَهَبَ",
+          "رَزَقَ",
+          "بَاعَ"
+        ],
+        [
+          "ثَقَبَ",
+          "وَقَفَ",
+          "زَهَدَ"
+        ]
+      ]
     },
     {
       "pageId": "QJ2-P007",
       "pageNumber": "07",
-      "title": "Sambung م ن ه",
-      "titleArabic": "م ن ه",
-      "tartilCompetency": "Mengenali م ن ه dalam bentuk sambung; seluruh kelompok sambung sebelumnya menjadi murojaah legal.",
+      "title": "Keluarga Sin–Syin",
+      "titleArabic": "",
+      "tartilCompetency": "س ش: kerangka bergigi, beda titik",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P007",
       "integration": {
         "tahfidz": {
@@ -368,15 +494,56 @@
         "Tahfidz QURBATA: Quraisy 2.",
         "Akhlak QURBATA: Bersungguh-sungguh."
       ],
-      "status": "SCAFFOLD—menunggu urutan tangga sambung setelah audit P001-P005",
-      "rows": []
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "rows": [
+        [
+          "سَجَدَ",
+          "وَجَدَ",
+          "شَكَرَ"
+        ],
+        [
+          "قَالَ",
+          "سَمَعَ",
+          "وَعَدَ"
+        ],
+        [
+          "شَهَدَ",
+          "دَعَا",
+          "جَلَسَ"
+        ],
+        [
+          "وَلَدَ",
+          "حَبَسَ",
+          "زَادَ"
+        ],
+        [
+          "لَبِسَ",
+          "نَجَحَ",
+          "نَشَرَ"
+        ],
+        [
+          "ثَبَرَ",
+          "بَشَرَ",
+          "خَرَجَ"
+        ],
+        [
+          "شَعَرَ",
+          "وَهَبَ",
+          "شَرِبَ"
+        ],
+        [
+          "بَاعَ",
+          "غَسَلَ",
+          "رَزَقَ"
+        ]
+      ]
     },
     {
       "pageId": "QJ2-P008",
       "pageNumber": "08",
-      "title": "Sambung و ي ر",
-      "titleArabic": "و ي ر",
-      "tartilCompetency": "Mengenali و ي ر dalam bentuk sambung; seluruh kelompok sambung sebelumnya menjadi murojaah legal.",
+      "title": "Keluarga Shad–Dhad",
+      "titleArabic": "",
+      "tartilCompetency": "ص ض: kerangka mangkuk tebal, beda titik",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P008",
       "integration": {
         "tahfidz": {
@@ -400,15 +567,56 @@
         "Tahfidz QURBATA: Quraisy 3.",
         "Akhlak QURBATA: Rendah hati."
       ],
-      "status": "SCAFFOLD—menunggu urutan tangga sambung setelah audit P001-P005",
-      "rows": []
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "rows": [
+        [
+          "صَدَقَ",
+          "سَجَدَ",
+          "صَبَرَ"
+        ],
+        [
+          "شَكَرَ",
+          "صَلَحَ",
+          "جَلَسَ"
+        ],
+        [
+          "صَعَدَ",
+          "نَشَرَ",
+          "نَصَرَ"
+        ],
+        [
+          "حَبَسَ",
+          "فَصَلَ",
+          "شَهَدَ"
+        ],
+        [
+          "ضَرَبَ",
+          "وَجَدَ",
+          "ضَحِكَ"
+        ],
+        [
+          "ذَهَبَ",
+          "مَرِضَ",
+          "بَشَرَ"
+        ],
+        [
+          "فَرَضَ",
+          "غَسَلَ",
+          "قَبَضَ"
+        ],
+        [
+          "وَقَفَ",
+          "حَضَرَ",
+          "سَمَعَ"
+        ]
+      ]
     },
     {
       "pageId": "QJ2-P009",
       "pageNumber": "09",
-      "title": "Sambung ز د ذ",
-      "titleArabic": "ز د ذ",
-      "tartilCompetency": "Mengenali ز د ذ dalam bentuk sambung; seluruh kelompok sambung sebelumnya menjadi murojaah legal.",
+      "title": "Keluarga Tha–Zha",
+      "titleArabic": "",
+      "tartilCompetency": "ط ظ: kerangka bertiang, beda titik",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P009",
       "integration": {
         "tahfidz": {
@@ -432,8 +640,49 @@
         "Tahfidz QURBATA: Quraisy 4.",
         "Akhlak QURBATA: Bersyukur."
       ],
-      "status": "SCAFFOLD—menunggu urutan tangga sambung setelah audit P001-P005",
-      "rows": []
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "rows": [
+        [
+          "طَلَبَ",
+          "صَدَقَ",
+          "طَبَعَ"
+        ],
+        [
+          "ضَرَبَ",
+          "طَرَدَ",
+          "نَصَرَ"
+        ],
+        [
+          "طَلَعَ",
+          "حَضَرَ",
+          "بَطَلَ"
+        ],
+        [
+          "قَبَضَ",
+          "نَطَقَ",
+          "فَصَلَ"
+        ],
+        [
+          "نَظَرَ",
+          "شَكَرَ",
+          "ظَهَرَ"
+        ],
+        [
+          "سَجَدَ",
+          "ظَلَمَ",
+          "صَبَرَ"
+        ],
+        [
+          "حَفِظَ",
+          "مَرِضَ",
+          "وَعَظَ"
+        ],
+        [
+          "صَلَحَ",
+          "لَفَظَ",
+          "ضَحِكَ"
+        ]
+      ]
     },
     {
       "pageId": "QJ2-P010",
@@ -465,7 +714,7 @@
         "Tahfidz QURBATA: Murojaah Al-Fil–Quraisy.",
         "Akhlak QURBATA: Istiqamah."
       ],
-      "status": "SCAFFOLD—menunggu urutan tangga sambung setelah audit P001-P005"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P011",
@@ -493,7 +742,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P012",
@@ -521,7 +770,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P013",
@@ -549,7 +798,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P014",
@@ -577,7 +826,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P015",
@@ -605,7 +854,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P016",
@@ -633,7 +882,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P017",
@@ -661,7 +910,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P018",
@@ -689,7 +938,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P019",
@@ -717,7 +966,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P020",
@@ -745,7 +994,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P021",
@@ -773,7 +1022,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P022",
@@ -801,7 +1050,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P023",
@@ -829,7 +1078,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P024",
@@ -857,7 +1106,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P025",
@@ -885,7 +1134,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P026",
@@ -913,7 +1162,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P027",
@@ -941,7 +1190,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P028",
@@ -969,7 +1218,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P029",
@@ -997,7 +1246,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P030",
@@ -1025,7 +1274,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P031",
@@ -1053,7 +1302,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P032",
@@ -1081,7 +1330,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P033",
@@ -1109,7 +1358,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P034",
@@ -1137,7 +1386,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P035",
@@ -1165,7 +1414,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P036",
@@ -1193,7 +1442,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P037",
@@ -1221,7 +1470,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P038",
@@ -1249,7 +1498,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P039",
@@ -1277,7 +1526,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     },
     {
       "pageId": "QJ2-P040",
@@ -1305,7 +1554,7 @@
       },
       "rows": [],
       "activities": [],
-      "status": "SCAFFOLD—isi wajib diaudit sebelum produksi"
+      "status": "BLOCKED-UNTIL-FROZEN-SOURCE-IMPORTED"
     }
   ]
 }
