@@ -214,7 +214,8 @@ const frontMatter = frontMatterData.map((item, index) => `
     <footer class="page-footer"><p class="arabic" lang="ar" dir="rtl">تَعَلَّمْ — اِعْمَلْ — عَلِّمْ</p><small>Belajarlah • Amalkan • Ajarkan</small></footer>
   </article>`).join("\n");
 
-const pages = await Promise.all(data.pages.map(async (page) => {
+const sourcePages = volume === "jilid-2" ? data.pages.filter((page) => Array.isArray(page.rows) && page.rows.length > 0) : data.pages;
+const pages = await Promise.all(sourcePages.map(async (page) => {
   if (!page.title || !page.titleArabic || arabicLetters(page.titleArabic).length === 0) {
     throw new Error(`${page.pageId}: judul Indonesia dan judul Arab wajib diisi terpisah.`);
   }
