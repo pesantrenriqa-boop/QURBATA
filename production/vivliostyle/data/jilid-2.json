@@ -74,7 +74,11 @@
     ],
     "meaningPriorityJ2": "Pada fase satu huruf sambung, contoh bermakna diprioritaskan. Jika kata bermakna memerlukan huruf lain, huruf lain tidak boleh membentuk sambungan baru yang belum legal. Dilarang membuat rangkaian semu hanya untuk memenuhi pola.",
     "noFutureSignsJ2": "Pada fase huruf sambung awal, DILARANG muncul mad (ا و ي sebagai huruf mad), tasydid, sukun, tanwin, alif-lam, atau tanda/kompetensi lain yang belum diajarkan. Harakat yang legal hanya Fathah, Kasrah, Dhammah dari Jilid 1.",
-    "meaningVsLadder": "Prinsip kata bermakna tidak boleh memaksa masuknya kompetensi masa depan. Jika kata utuh bermakna membutuhkan mad/tasydid/sukun/bentuk sambung yang belum legal, gunakan pasangan latihan pedagogis dua huruf yang mendekati pola bunyi dan jelas sebagai latihan bentuk, bukan mengklaimnya sebagai kata bermakna."
+    "meaningVsLadder": "Prinsip kata bermakna tidak boleh memaksa masuknya kompetensi masa depan. Jika kata utuh bermakna membutuhkan mad/tasydid/sukun/bentuk sambung yang belum legal, gunakan pasangan latihan pedagogis dua huruf yang mendekati pola bunyi dan jelas sebagai latihan bentuk, bukan mengklaimnya sebagai kata bermakna.",
+    "connectedPageInternalLadder": "ATURAN BAKU JILID 2: tangga terjadi DI DALAM setiap halaman, bukan satu huruf per halaman. Urutan latihan: (1) bentuk sambung 2 huruf, (2) naik ke 3 huruf, (3) bila seluruh bentuk yang diperlukan sudah legal boleh 4 huruf. Pada kompetensi sambung, huruf target dikenalkan bertahap pada posisi AWAL → TENGAH → AKHIR. Setiap tahap hanya boleh memakai bentuk/harakat/kompetensi yang sudah diajarkan; dilarang melompati mad, sukun, tanwin, tasydid, alif-lam, atau bentuk sambung huruf lain yang belum legal.",
+    "connectedMeaningRule": "Latihan harus berupa kata Arab bermakna jika memungkinkan. Jika batas tangga belum memungkinkan kata utuh, gunakan bentuk yang mendekati pola kata/bunyi Arab; jangan memasukkan kompetensi masa depan hanya demi memperoleh kata utuh.",
+    "connectedReviewRule": "Setelah satu bentuk sambung menjadi legal pada baris sebelumnya, bentuk itu boleh menjadi murojaah pada baris berikutnya. Kompetensi baru tetap dominan, tetapi murojaah tersebar dan tidak menghapus tangga 2→3→4 huruf.",
+    "connectedPositionRule": "Untuk satu huruf target, jangan menganggap kompetensi selesai hanya setelah bentuk awal. Ajarkan awal, kemudian tengah, kemudian akhir secara eksplisit di halaman yang sama atau sesuai batas ruang, dengan contoh yang tidak memerlukan bentuk sambung belum legal."
   },
   "competencyMap": {
     "P001_P018": "Huruf sambung bertahap",
@@ -92,7 +96,7 @@
       "pageNumber": "01",
       "title": "Sambung ب",
       "titleArabic": "ب",
-      "tartilCompetency": "Fokus hanya bentuk awal sambung بـ dengan Fathah, Kasrah, Dhammah yang sudah dikuasai di Jilid 1. Pelengkap hanya د ذ ر ز و. Tidak ada mad, sukun, tanwin, tasydid, atau bentuk sambung baru lain.",
+      "tartilCompetency": "Tangga internal halaman: ب pada sambung awal → tengah → akhir; latihan naik dari 2 huruf → 3 huruf → 4 huruf hanya bila legal. Tanpa mad, sukun, tanwin, tasydid.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P001",
       "integration": {
         "tahfidz": {
@@ -114,38 +118,38 @@
       "rows": [
         [
           "بَـدَ",
-          "بِـدَ",
-          "بُـدَ"
-        ],
-        [
-          "بَـذَ",
-          "بِـذَ",
-          "بُـذَ"
-        ],
-        [
-          "بَـرَ",
           "بِـرَ",
-          "بُـرَ"
-        ],
-        [
-          "بَـزَ",
-          "بِـزَ",
           "بُـزَ"
         ],
         [
-          "بَـوَ",
+          "بَـذَ",
           "بِـوَ",
-          "بُـوَ"
+          "بُـرَ"
         ],
         [
-          "بَـدِ",
-          "بِـرَ",
-          "بُـزِ"
+          "دَبَـرَ",
+          "رَبِـذَ",
+          "زَبُـرَ"
         ],
         [
-          "بَـذُ",
-          "بِـوَ",
-          "بُـرِ"
+          "ذَبَـرَ",
+          "وَبِـرَ",
+          "دَبُـرَ"
+        ],
+        [
+          "دَرَبَ",
+          "رَذَبِ",
+          "زَرَبُ"
+        ],
+        [
+          "ذَرَبَ",
+          "وَرَبِ",
+          "دَزَبُ"
+        ],
+        [
+          "دَبَرَ",
+          "رَبِذَ",
+          "زَبُرَ"
         ]
       ],
       "activities": [
@@ -153,7 +157,7 @@
         "Tahfidz QURBATA: Al-Fil 1.",
         "Akhlak QURBATA: Tekun."
       ],
-      "status": "AUDITED-STRICT-NO-FUTURE-COMPETENCY",
+      "status": "AUDITED-INTERNAL-LADDER-2-3-POSITION",
       "intro": {
         "title": "Kompetensi Baru",
         "items": [
@@ -162,16 +166,16 @@
             "بَـ"
           ],
           [
-            "بِ",
-            "بِـ"
+            "ـبَـ",
+            "ـبَـ"
           ],
           [
-            "بُ",
-            "بُـ"
+            "ـبَ",
+            "ـبَ"
           ]
         ],
-        "instruction": "Perhatikan huruf lepas lalu bentuk awal sambungnya. Tidak ada mad, sukun, tanwin, atau tasydid.",
-        "direction": "rtl-old-to-new"
+        "instruction": "Perhatikan ب ketika berada di awal, tengah, dan akhir sambungan.",
+        "direction": "rtl"
       }
     },
     {
@@ -198,68 +202,13 @@
           "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
         }
       },
-      "rows": [
-        [
-          "تَـدَ",
-          "تِـدَ",
-          "تُـدَ"
-        ],
-        [
-          "تَـذَ",
-          "تِـذَ",
-          "تُـذَ"
-        ],
-        [
-          "تَـرَ",
-          "تِـرَ",
-          "تُـرَ"
-        ],
-        [
-          "تَـزَ",
-          "تِـزَ",
-          "تُـزَ"
-        ],
-        [
-          "تَـوَ",
-          "تِـوَ",
-          "تُـوَ"
-        ],
-        [
-          "تَـدِ",
-          "تِـرَ",
-          "تُـزِ"
-        ],
-        [
-          "تَـذُ",
-          "تِـوَ",
-          "تُـرِ"
-        ]
-      ],
+      "rows": [],
       "activities": [
         "Bahasa Arab QURBATA: Pisahkan (اِفْصِلْ).",
         "Tahfidz QURBATA: Al-Fil 2.",
         "Akhlak QURBATA: Teliti."
       ],
-      "status": "AUDITED-STRICT-NO-FUTURE-COMPETENCY",
-      "intro": {
-        "title": "Kompetensi Baru",
-        "items": [
-          [
-            "تَ",
-            "تَـ"
-          ],
-          [
-            "تِ",
-            "تِـ"
-          ],
-          [
-            "تُ",
-            "تُـ"
-          ]
-        ],
-        "instruction": "Perhatikan huruf lepas lalu bentuk awal sambungnya. Tidak ada mad, sukun, tanwin, atau tasydid.",
-        "direction": "rtl-old-to-new"
-      }
+      "status": "SCAFFOLD—menunggu validasi pola P001 tangga internal 2→3→4 dan awal→tengah→akhir"
     },
     {
       "pageId": "QJ2-P003",
@@ -285,68 +234,13 @@
           "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
         }
       },
-      "rows": [
-        [
-          "ثَـدَ",
-          "ثِـدَ",
-          "ثُـدَ"
-        ],
-        [
-          "ثَـذَ",
-          "ثِـذَ",
-          "ثُـذَ"
-        ],
-        [
-          "ثَـرَ",
-          "ثِـرَ",
-          "ثُـرَ"
-        ],
-        [
-          "ثَـزَ",
-          "ثِـزَ",
-          "ثُـزَ"
-        ],
-        [
-          "ثَـوَ",
-          "ثِـوَ",
-          "ثُـوَ"
-        ],
-        [
-          "ثَـدِ",
-          "ثِـرَ",
-          "ثُـزِ"
-        ],
-        [
-          "ثَـذُ",
-          "ثِـوَ",
-          "ثُـرِ"
-        ]
-      ],
+      "rows": [],
       "activities": [
         "Bahasa Arab QURBATA: Bacalah kata (اِقْرَأِ الْكَلِمَةَ).",
         "Tahfidz QURBATA: Al-Fil 3.",
         "Akhlak QURBATA: Tidak tergesa-gesa."
       ],
-      "status": "AUDITED-STRICT-NO-FUTURE-COMPETENCY",
-      "intro": {
-        "title": "Kompetensi Baru",
-        "items": [
-          [
-            "ثَ",
-            "ثَـ"
-          ],
-          [
-            "ثِ",
-            "ثِـ"
-          ],
-          [
-            "ثُ",
-            "ثُـ"
-          ]
-        ],
-        "instruction": "Perhatikan huruf lepas lalu bentuk awal sambungnya. Tidak ada mad, sukun, tanwin, atau tasydid.",
-        "direction": "rtl-old-to-new"
-      }
+      "status": "SCAFFOLD—menunggu validasi pola P001 tangga internal 2→3→4 dan awal→tengah→akhir"
     },
     {
       "pageId": "QJ2-P004",
@@ -372,68 +266,13 @@
           "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
         }
       },
-      "rows": [
-        [
-          "نَـدَ",
-          "نِـدَ",
-          "نُـدَ"
-        ],
-        [
-          "نَـذَ",
-          "نِـذَ",
-          "نُـذَ"
-        ],
-        [
-          "نَـرَ",
-          "نِـرَ",
-          "نُـرَ"
-        ],
-        [
-          "نَـزَ",
-          "نِـزَ",
-          "نُـزَ"
-        ],
-        [
-          "نَـوَ",
-          "نِـوَ",
-          "نُـوَ"
-        ],
-        [
-          "نَـدِ",
-          "نِـرَ",
-          "نُـزِ"
-        ],
-        [
-          "نَـذُ",
-          "نِـوَ",
-          "نُـرِ"
-        ]
-      ],
+      "rows": [],
       "activities": [
         "Bahasa Arab QURBATA: Perhatikan bentuknya (اُنْظُرْ إِلَى شَكْلِهِ).",
         "Tahfidz QURBATA: Al-Fil 4.",
         "Akhlak QURBATA: Memudahkan."
       ],
-      "status": "AUDITED-STRICT-NO-FUTURE-COMPETENCY",
-      "intro": {
-        "title": "Kompetensi Baru",
-        "items": [
-          [
-            "نَ",
-            "نَـ"
-          ],
-          [
-            "نِ",
-            "نِـ"
-          ],
-          [
-            "نُ",
-            "نُـ"
-          ]
-        ],
-        "instruction": "Perhatikan huruf lepas lalu bentuk awal sambungnya. Tidak ada mad, sukun, tanwin, atau tasydid.",
-        "direction": "rtl-old-to-new"
-      }
+      "status": "SCAFFOLD—menunggu validasi pola P001 tangga internal 2→3→4 dan awal→tengah→akhir"
     },
     {
       "pageId": "QJ2-P005",
@@ -459,68 +298,13 @@
           "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
         }
       },
-      "rows": [
-        [
-          "يَـدَ",
-          "يِـدَ",
-          "يُـدَ"
-        ],
-        [
-          "يَـذَ",
-          "يِـذَ",
-          "يُـذَ"
-        ],
-        [
-          "يَـرَ",
-          "يِـرَ",
-          "يُـرَ"
-        ],
-        [
-          "يَـزَ",
-          "يِـزَ",
-          "يُـزَ"
-        ],
-        [
-          "يَـوَ",
-          "يِـوَ",
-          "يُـوَ"
-        ],
-        [
-          "يَـدِ",
-          "يِـرَ",
-          "يُـزِ"
-        ],
-        [
-          "يَـذُ",
-          "يِـوَ",
-          "يُـرِ"
-        ]
-      ],
+      "rows": [],
       "activities": [
         "Bahasa Arab QURBATA: Ulangi dengan benar (أَعِدْ صَحِيحًا).",
         "Tahfidz QURBATA: Al-Fil 5.",
         "Akhlak QURBATA: Menjaga ilmu."
       ],
-      "status": "AUDITED-STRICT-NO-FUTURE-COMPETENCY",
-      "intro": {
-        "title": "Kompetensi Baru",
-        "items": [
-          [
-            "يَ",
-            "يَـ"
-          ],
-          [
-            "يِ",
-            "يِـ"
-          ],
-          [
-            "يُ",
-            "يُـ"
-          ]
-        ],
-        "instruction": "Perhatikan huruf lepas lalu bentuk awal sambungnya. Tidak ada mad, sukun, tanwin, atau tasydid.",
-        "direction": "rtl-old-to-new"
-      }
+      "status": "SCAFFOLD—menunggu validasi pola P001 tangga internal 2→3→4 dan awal→tengah→akhir"
     },
     {
       "pageId": "QJ2-P006",
