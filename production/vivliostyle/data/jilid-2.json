@@ -71,7 +71,8 @@
       "ل",
       "م",
       "ه"
-    ]
+    ],
+    "meaningPriorityJ2": "Pada fase satu huruf sambung, contoh bermakna diprioritaskan. Jika kata bermakna memerlukan huruf lain, huruf lain tidak boleh membentuk sambungan baru yang belum legal. Dilarang membuat rangkaian semu hanya untuk memenuhi pola."
   },
   "competencyMap": {
     "P001_P018": "Huruf sambung bertahap",
@@ -89,7 +90,7 @@
       "pageNumber": "01",
       "title": "Sambung ب",
       "titleArabic": "ب",
-      "tartilCompetency": "Kompetensi baru hanya huruf ب pada bentuk awal sambung. Pelengkap hanya huruf yang tidak menyambung ke kiri (ا د ذ ر ز و), sehingga anak belum dituntut mengenali bentuk sambung huruf lain.",
+      "tartilCompetency": "Fokus tunggal bentuk awal sambung بـ. Bentuk sambung huruf lain belum menjadi tuntutan baca; contoh memprioritaskan pasangan dengan ا د ذ ر ز و atau bentuk yang tidak menambah kompetensi sambung baru.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P001",
       "integration": {
         "tahfidz": {
@@ -110,39 +111,39 @@
       },
       "rows": [
         [
-          "بَـدَ",
-          "بِـدَ",
-          "بُـدَ"
+          "بَدَا",
+          "بَرَأَ",
+          "بَذَرَ"
         ],
         [
-          "بَـرَ",
-          "بِـرَ",
-          "بُـرَ"
+          "بَرَدَ",
+          "بَارَ",
+          "بُورَ"
         ],
         [
-          "بَـزَ",
-          "بِـزَ",
-          "بُـزَ"
+          "بِيرَ",
+          "بَدَرَ",
+          "بَزَرَ"
         ],
         [
-          "بَـذَ",
-          "بِـذَ",
-          "بُـذَ"
+          "بَوَرَ",
+          "بَرَزَ",
+          "بَذَا"
         ],
         [
-          "بَـوَ",
-          "بِـوَ",
-          "بُـوَ"
+          "بُورَ",
+          "بَدَا",
+          "بَرَأَ"
         ],
         [
-          "بَـا",
-          "بِـي",
-          "بُـو"
+          "بَذَرَ",
+          "بَرَدَ",
+          "بَدَرَ"
         ],
         [
-          "بَـدَ",
-          "بِـرَ",
-          "بُـزَ"
+          "بَرَزَ",
+          "بَارَ",
+          "بُورَ"
         ]
       ],
       "activities": [
@@ -150,7 +151,7 @@
         "Tahfidz QURBATA: Al-Fil 1.",
         "Akhlak QURBATA: Tekun."
       ],
-      "status": "DRAFT-CONTENT-AUDITED",
+      "status": "DRAFT-TANGGA-SAMBUNG-V2",
       "intro": {
         "title": "Kompetensi Baru",
         "items": [
@@ -176,7 +177,7 @@
       "pageNumber": "02",
       "title": "Sambung ت",
       "titleArabic": "ت",
-      "tartilCompetency": "Kompetensi baru hanya huruf ت pada bentuk awal sambung. Pelengkap hanya huruf yang tidak menyambung ke kiri (ا د ذ ر ز و), sehingga anak belum dituntut mengenali bentuk sambung huruf lain.",
+      "tartilCompetency": "Fokus tunggal bentuk awal sambung تـ. Bentuk sambung huruf lain belum menjadi tuntutan baca; contoh memprioritaskan pasangan dengan ا د ذ ر ز و atau bentuk yang tidak menambah kompetensi sambung baru.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P002",
       "integration": {
         "tahfidz": {
@@ -197,39 +198,39 @@
       },
       "rows": [
         [
-          "تَـدَ",
-          "تِـدَ",
-          "تُـدَ"
+          "تَرَكَ",
+          "تَابَ",
+          "تَارَ"
         ],
         [
-          "تَـرَ",
-          "تِـرَ",
-          "تُـرَ"
+          "تَوَرَ",
+          "تَرَدَّ",
+          "تَزَرَ"
         ],
         [
-          "تَـزَ",
-          "تِـزَ",
-          "تُـزَ"
+          "تَدَارَ",
+          "تَذَرَ",
+          "تَرَاءَى"
         ],
         [
-          "تَـذَ",
-          "تِـذَ",
-          "تُـذَ"
+          "تَوَارَى",
+          "تَدَرَّ",
+          "تَزَادَ"
         ],
         [
-          "تَـوَ",
-          "تِـوَ",
-          "تُـوَ"
+          "تَرَكَ",
+          "تَابَ",
+          "تَوَرَ"
         ],
         [
-          "تَـا",
-          "تِـي",
-          "تُـو"
+          "تَرَدَّ",
+          "تَدَارَ",
+          "تَوَارَى"
         ],
         [
-          "تَـدَ",
-          "تِـرَ",
-          "تُـزَ"
+          "تَزَادَ",
+          "تَرَكَ",
+          "تَابَ"
         ]
       ],
       "activities": [
@@ -237,7 +238,7 @@
         "Tahfidz QURBATA: Al-Fil 2.",
         "Akhlak QURBATA: Teliti."
       ],
-      "status": "DRAFT-CONTENT-AUDITED",
+      "status": "DRAFT-TANGGA-SAMBUNG-V2",
       "intro": {
         "title": "Kompetensi Baru",
         "items": [
@@ -263,7 +264,7 @@
       "pageNumber": "03",
       "title": "Sambung ث",
       "titleArabic": "ث",
-      "tartilCompetency": "Kompetensi baru hanya huruf ث pada bentuk awal sambung. Pelengkap hanya huruf yang tidak menyambung ke kiri (ا د ذ ر ز و), sehingga anak belum dituntut mengenali bentuk sambung huruf lain.",
+      "tartilCompetency": "Fokus tunggal bentuk awal sambung ثـ. Bentuk sambung huruf lain belum menjadi tuntutan baca; contoh memprioritaskan pasangan dengan ا د ذ ر ز و atau bentuk yang tidak menambah kompetensi sambung baru.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P003",
       "integration": {
         "tahfidz": {
@@ -284,39 +285,39 @@
       },
       "rows": [
         [
-          "ثَـدَ",
-          "ثِـدَ",
-          "ثُـدَ"
+          "ثَارَ",
+          "ثَوَرَ",
+          "ثَرَدَ"
         ],
         [
-          "ثَـرَ",
-          "ثِـرَ",
-          "ثُـرَ"
+          "ثَرَا",
+          "ثَوَى",
+          "ثَارَ"
         ],
         [
-          "ثَـزَ",
-          "ثِـزَ",
-          "ثُـزَ"
+          "ثَرَدَ",
+          "ثَوَرَ",
+          "ثَرَا"
         ],
         [
-          "ثَـذَ",
-          "ثِـذَ",
-          "ثُـذَ"
+          "ثَوَى",
+          "ثَارَ",
+          "ثَرَدَ"
         ],
         [
-          "ثَـوَ",
-          "ثِـوَ",
-          "ثُـوَ"
+          "ثَوَرَ",
+          "ثَرَا",
+          "ثَوَى"
         ],
         [
-          "ثَـا",
-          "ثِـي",
-          "ثُـو"
+          "ثَارَ",
+          "ثَرَدَ",
+          "ثَوَرَ"
         ],
         [
-          "ثَـدَ",
-          "ثِـرَ",
-          "ثُـزَ"
+          "ثَرَا",
+          "ثَوَى",
+          "ثَارَ"
         ]
       ],
       "activities": [
@@ -324,7 +325,7 @@
         "Tahfidz QURBATA: Al-Fil 3.",
         "Akhlak QURBATA: Tidak tergesa-gesa."
       ],
-      "status": "DRAFT-CONTENT-AUDITED",
+      "status": "DRAFT-TANGGA-SAMBUNG-V2",
       "intro": {
         "title": "Kompetensi Baru",
         "items": [
@@ -350,7 +351,7 @@
       "pageNumber": "04",
       "title": "Sambung ن",
       "titleArabic": "ن",
-      "tartilCompetency": "Kompetensi baru hanya huruf ن pada bentuk awal sambung. Pelengkap hanya huruf yang tidak menyambung ke kiri (ا د ذ ر ز و), sehingga anak belum dituntut mengenali bentuk sambung huruf lain.",
+      "tartilCompetency": "Fokus tunggal bentuk awal sambung نـ. Bentuk sambung huruf lain belum menjadi tuntutan baca; contoh memprioritaskan pasangan dengan ا د ذ ر ز و atau bentuk yang tidak menambah kompetensi sambung baru.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P004",
       "integration": {
         "tahfidz": {
@@ -371,39 +372,39 @@
       },
       "rows": [
         [
-          "نَـدَ",
-          "نِـدَ",
-          "نُـدَ"
+          "نَذَرَ",
+          "نَزَرَ",
+          "نَادَى"
         ],
         [
-          "نَـرَ",
-          "نِـرَ",
-          "نُـرَ"
+          "نَوَى",
+          "نَارَ",
+          "نَدَا"
         ],
         [
-          "نَـزَ",
-          "نِـزَ",
-          "نُـزَ"
+          "نَذَرَ",
+          "نَزَرَ",
+          "نَادَى"
         ],
         [
-          "نَـذَ",
-          "نِـذَ",
-          "نُـذَ"
+          "نَوَى",
+          "نَارَ",
+          "نَدَا"
         ],
         [
-          "نَـوَ",
-          "نِـوَ",
-          "نُـوَ"
+          "نَذَرَ",
+          "نَزَرَ",
+          "نَادَى"
         ],
         [
-          "نَـا",
-          "نِـي",
-          "نُـو"
+          "نَوَى",
+          "نَارَ",
+          "نَدَا"
         ],
         [
-          "نَـدَ",
-          "نِـرَ",
-          "نُـزَ"
+          "نَذَرَ",
+          "نَوَى",
+          "نَادَى"
         ]
       ],
       "activities": [
@@ -411,7 +412,7 @@
         "Tahfidz QURBATA: Al-Fil 4.",
         "Akhlak QURBATA: Memudahkan."
       ],
-      "status": "DRAFT-CONTENT-AUDITED",
+      "status": "DRAFT-TANGGA-SAMBUNG-V2",
       "intro": {
         "title": "Kompetensi Baru",
         "items": [
@@ -437,7 +438,7 @@
       "pageNumber": "05",
       "title": "Sambung ي",
       "titleArabic": "ي",
-      "tartilCompetency": "Kompetensi baru hanya huruf ي pada bentuk awal sambung. Pelengkap hanya huruf yang tidak menyambung ke kiri (ا د ذ ر ز و), sehingga anak belum dituntut mengenali bentuk sambung huruf lain.",
+      "tartilCompetency": "Fokus tunggal bentuk awal sambung يـ. Bentuk sambung huruf lain belum menjadi tuntutan baca; contoh memprioritaskan pasangan dengan ا د ذ ر ز و atau bentuk yang tidak menambah kompetensi sambung baru.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P005",
       "integration": {
         "tahfidz": {
@@ -458,39 +459,39 @@
       },
       "rows": [
         [
-          "يَـدَ",
-          "يِـدَ",
-          "يُـدَ"
+          "يَدَرَ",
+          "يَرَى",
+          "يَزِيدُ"
         ],
         [
-          "يَـرَ",
-          "يِـرَ",
-          "يُـرَ"
+          "يَدُورُ",
+          "يَذَرُ",
+          "يَرِدُ"
         ],
         [
-          "يَـزَ",
-          "يِـزَ",
-          "يُـزَ"
+          "يَزُورُ",
+          "يَدْرِي",
+          "يَرْوِي"
         ],
         [
-          "يَـذَ",
-          "يِـذَ",
-          "يُـذَ"
+          "يَدْعُو",
+          "يَذُوقُ",
+          "يَرُدُّ"
         ],
         [
-          "يَـوَ",
-          "يِـوَ",
-          "يُـوَ"
+          "يَزْرَعُ",
+          "يَدْرُسُ",
+          "يَرْجِعُ"
         ],
         [
-          "يَـا",
-          "يِـي",
-          "يُـو"
+          "يَدْخُلُ",
+          "يَذْكُرُ",
+          "يَرْفَعُ"
         ],
         [
-          "يَـدَ",
-          "يِـرَ",
-          "يُـزَ"
+          "يَزِيدُ",
+          "يَدُورُ",
+          "يَرَى"
         ]
       ],
       "activities": [
@@ -498,7 +499,7 @@
         "Tahfidz QURBATA: Al-Fil 5.",
         "Akhlak QURBATA: Menjaga ilmu."
       ],
-      "status": "DRAFT-CONTENT-AUDITED",
+      "status": "DRAFT-TANGGA-SAMBUNG-V2",
       "intro": {
         "title": "Kompetensi Baru",
         "items": [
