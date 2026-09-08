@@ -1752,10 +1752,77 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "كَتَبَ",
+          "قَالَ",
+          "عَلِمَ"
+        ],
+        [
+          "قِيلَ",
+          "رَسُلَ",
+          "نُورُ"
+        ],
+        [
+          "ذَهَبَ",
+          "نَامَ",
+          "فَهِمَ"
+        ],
+        [
+          "دِينِ",
+          "حَسُنَ",
+          "سُوقُ"
+        ],
+        [
+          "كَتَبَ",
+          "كِتَابَ",
+          "عَذَبَ"
+        ],
+        [
+          "عَذَابَ",
+          "رَحِمَ",
+          "رَحِيمِ"
+        ],
+        [
+          "رَسُلَ",
+          "رَسُولُ",
+          "حَسَبَ"
+        ],
+        [
+          "حِسَابَ",
+          "قَلَبَ",
+          "قُلُوبُ"
+        ]
+      ],
       "activities": [],
-      "status": "PENDING-REGENERATION-FROM-QJ2-MASTER-v0.25",
-      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md"
+      "status": "STAGING-CONTROLLED-AWAITING-EXPERT-GATE",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md",
+      "intro": {
+        "title": "Penanaman Kompetensi Baru",
+        "items": [
+          [
+            "بَ",
+            "بَا"
+          ],
+          [
+            "بِ",
+            "بِي"
+          ],
+          [
+            "بُ",
+            "بُو"
+          ]
+        ],
+        "instruction": "Bandingkan bunyi pendek dengan bunyi panjang dua harakat. Materi baru ditampilkan sebelum latihan.",
+        "direction": "rtl-old-to-new"
+      },
+      "audit": {
+        "noTanwin": true,
+        "noShadda": true,
+        "noWrittenSukun": true,
+        "meaningPriority": true,
+        "expertAudioRequired": true
+      }
     },
     {
       "pageId": "QJ2-P026",
@@ -1781,10 +1848,77 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "كَتَبَ",
+          "قَالَ",
+          "ذَهَبَ"
+        ],
+        [
+          "بَاعَ",
+          "نَظَرَ",
+          "نَامَ"
+        ],
+        [
+          "صَبَرَ",
+          "صَامَ",
+          "كَتَبَ"
+        ],
+        [
+          "كِتَابَ",
+          "عَذَبَ",
+          "عَذَابَ"
+        ],
+        [
+          "سَحَبَ",
+          "سَحَابَ",
+          "شَرَبَ"
+        ],
+        [
+          "شَرَابَ",
+          "جَوَبَ",
+          "جَوَابَ"
+        ],
+        [
+          "حَسَبَ",
+          "حِسَابَ",
+          "مَكَنَ"
+        ],
+        [
+          "مَكَانَ",
+          "زَمَنَ",
+          "زَمَانَ"
+        ]
+      ],
       "activities": [],
-      "status": "PENDING-REGENERATION-FROM-QJ2-MASTER-v0.25",
-      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md"
+      "status": "STAGING-CONTROLLED-AWAITING-EXPERT-GATE",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md",
+      "intro": {
+        "title": "Penanaman Kompetensi Baru",
+        "items": [
+          [
+            "بَ",
+            "بَا"
+          ],
+          [
+            "قَ",
+            "قَا"
+          ],
+          [
+            "نَ",
+            "نَا"
+          ]
+        ],
+        "instruction": "Bandingkan bunyi pendek dengan bunyi panjang dua harakat. Materi baru ditampilkan sebelum latihan.",
+        "direction": "rtl-old-to-new"
+      },
+      "audit": {
+        "noTanwin": true,
+        "noShadda": true,
+        "noWrittenSukun": true,
+        "meaningPriority": true,
+        "expertAudioRequired": true
+      }
     },
     {
       "pageId": "QJ2-P027",
@@ -1810,10 +1944,77 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "قَالَ",
+          "كَتَبَ",
+          "بَاعَ"
+        ],
+        [
+          "ذَهَبَ",
+          "نَامَ",
+          "نَظَرَ"
+        ],
+        [
+          "صَامَ",
+          "صَبَرَ",
+          "كِتَابَ"
+        ],
+        [
+          "عَلِمَ",
+          "عَذَابَ",
+          "غَفَرَ"
+        ],
+        [
+          "سَحَابَ",
+          "شَكَرَ",
+          "شَرَابَ"
+        ],
+        [
+          "سَجَدَ",
+          "جَوَابَ",
+          "فَهِمَ"
+        ],
+        [
+          "حِسَابَ",
+          "ذَكَرَ",
+          "مَكَانَ"
+        ],
+        [
+          "حَضَرَ",
+          "زَمَانَ",
+          "خَلَقَ"
+        ]
+      ],
       "activities": [],
-      "status": "PENDING-REGENERATION-FROM-QJ2-MASTER-v0.25",
-      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md"
+      "status": "STAGING-CONTROLLED-AWAITING-EXPERT-GATE",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md",
+      "intro": {
+        "title": "Penanaman Kompetensi Baru",
+        "items": [
+          [
+            "قَ",
+            "قَا"
+          ],
+          [
+            "بَ",
+            "بَا"
+          ],
+          [
+            "صَ",
+            "صَا"
+          ]
+        ],
+        "instruction": "Bandingkan bunyi pendek dengan bunyi panjang dua harakat. Materi baru ditampilkan sebelum latihan.",
+        "direction": "rtl-old-to-new"
+      },
+      "audit": {
+        "noTanwin": true,
+        "noShadda": true,
+        "noWrittenSukun": true,
+        "meaningPriority": true,
+        "expertAudioRequired": true
+      }
     },
     {
       "pageId": "QJ2-P028",
@@ -1837,10 +2038,77 @@
           "instruction": "Target akhlak baru dan aplikatif."
         }
       },
-      "rows": [],
+      "rows": [
+        [
+          "قَالَ",
+          "ذَهَبَ",
+          "نَامَ"
+        ],
+        [
+          "شَكَرَ",
+          "بَاعَ",
+          "سَجَدَ"
+        ],
+        [
+          "صَامَ",
+          "خَرَجَ",
+          "كِتَابَ"
+        ],
+        [
+          "وَجَدَ",
+          "عَذَابَ",
+          "نَظَرَ"
+        ],
+        [
+          "سَحَابَ",
+          "حَضَرَ",
+          "شَرَابَ"
+        ],
+        [
+          "ذَكَرَ",
+          "جَوَابَ",
+          "فَهِمَ"
+        ],
+        [
+          "حِسَابَ",
+          "خَلَقَ",
+          "مَكَانَ"
+        ],
+        [
+          "عَلِمَ",
+          "زَمَانَ",
+          "غَفَرَ"
+        ]
+      ],
       "activities": [],
-      "status": "PENDING-REGENERATION-FROM-QJ2-MASTER-v0.25",
-      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md"
+      "status": "STAGING-CONTROLLED-AWAITING-EXPERT-GATE",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md",
+      "intro": {
+        "title": "Penanaman Kompetensi Baru",
+        "items": [
+          [
+            "ـبَـ",
+            "ـبَا"
+          ],
+          [
+            "ـحَـ",
+            "ـحَا"
+          ],
+          [
+            "ـكَـ",
+            "ـكَا"
+          ]
+        ],
+        "instruction": "Bandingkan bunyi pendek dengan bunyi panjang dua harakat. Materi baru ditampilkan sebelum latihan.",
+        "direction": "rtl-old-to-new"
+      },
+      "audit": {
+        "noTanwin": true,
+        "noShadda": true,
+        "noWrittenSukun": true,
+        "meaningPriority": true,
+        "expertAudioRequired": true
+      }
     },
     {
       "pageId": "QJ2-P029",
