@@ -2104,6 +2104,1212 @@
         "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
         "Akhlak QURBATA: Praktikkan mengamalkan ilmu selama pembelajaran."
       ]
+    },
+    {
+      "pageId": "QJ1-P026",
+      "pageNumber": "26",
+      "title": "Dhammah 1",
+      "titleArabic": "الضَّمَّةُ 1",
+      "tartilCompetency": "Dhammah bertahap pada بُ تُ ثُ جُ dengan murojaah Kasrah–Fathah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P026",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq Ayat 2",
+          "arabic": "مِنْ شَرِّ مَا خَلَقَ",
+          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Baca Ini",
+          "arabic": "اِقْرَأْ هذَا",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Mendengar",
+          "arabic": "وَاسْتَمِعُوا لَهُ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "خِ رَ جُ",
+          "ذَ كَ رِ",
+          "شَ كِ رَ"
+        ],
+        [
+          "صِ بُ رَ",
+          "فَ تُ حِ",
+          "نَ صِ رَ"
+        ],
+        [
+          "جُ مَ عَ",
+          "مَ نَ عِ",
+          "نَ فِ عَ"
+        ],
+        [
+          "وِ جُ دَ",
+          "نَ ظَ رِ",
+          "طَ لِ بُ"
+        ],
+        [
+          "صِ دَ قَ",
+          "قَ رَ بُ",
+          "بُ عِ دَ"
+        ],
+        [
+          "رِ فَ عَ",
+          "خَ فَ ضِ",
+          "دَ رِ سَ"
+        ],
+        [
+          "لِ عَ بُ",
+          "غَ لَ بُ",
+          "سَ بُ قَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Baca Ini” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
+        "Akhlak QURBATA: Praktikkan mendengar selama pembelajaran."
+      ],
+      "intro": {
+        "title": "Dhammah — Materi Baru",
+        "items": [
+          [
+            "بِ",
+            "بُ"
+          ],
+          [
+            "تِ",
+            "تُ"
+          ],
+          [
+            "ثِ",
+            "ثُ"
+          ],
+          [
+            "جِ",
+            "جُ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Kasrah yang telah dikuasai menuju Dhammah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P027",
+      "pageNumber": "27",
+      "title": "Dhammah 2",
+      "titleArabic": "الضَّمَّةُ 2",
+      "tartilCompetency": "Dhammah bertahap pada بُ تُ ثُ جُ حُ خُ دُ ذُ dengan murojaah Kasrah–Fathah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P027",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq Ayat 3",
+          "arabic": "وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Ulangi",
+          "arabic": "أَعِدْ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Sabar",
+          "arabic": "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "ذُ كَ رَ",
+          "شَ كَ رِ",
+          "صَ بُ رَ"
+        ],
+        [
+          "فِ تَ حُ",
+          "نَ صَ رِ",
+          "جُ مِ عَ"
+        ],
+        [
+          "مِ نَ عَ",
+          "نَ فَ عِ",
+          "وَ جِ دُ"
+        ],
+        [
+          "نِ ظَ رَ",
+          "طَ لَ بُ",
+          "صَ دُ قَ"
+        ],
+        [
+          "قِ رَ بُ",
+          "بَ عَ دُ",
+          "رَ فِ عَ"
+        ],
+        [
+          "خُ فَ ضَ",
+          "دُ رَ سِ",
+          "لَ عِ بُ"
+        ],
+        [
+          "غِ لَ بُ",
+          "سَ بُ قِ",
+          "وَ قِ فَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Ulangi” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
+        "Akhlak QURBATA: Praktikkan sabar selama pembelajaran."
+      ],
+      "intro": {
+        "title": "Dhammah — Materi Baru",
+        "items": [
+          [
+            "حِ",
+            "حُ"
+          ],
+          [
+            "خِ",
+            "خُ"
+          ],
+          [
+            "دِ",
+            "دُ"
+          ],
+          [
+            "ذِ",
+            "ذُ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Kasrah yang telah dikuasai menuju Dhammah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P028",
+      "pageNumber": "28",
+      "title": "Dhammah 3",
+      "titleArabic": "الضَّمَّةُ 3",
+      "tartilCompetency": "Dhammah bertahap pada بُ تُ ثُ جُ حُ خُ دُ ذُ رُ زُ سُ شُ dengan murojaah Kasrah–Fathah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P028",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq Ayat 4",
+          "arabic": "وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
+          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Bagus",
+          "arabic": "جَيِّدٌ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Bersungguh-sungguh",
+          "arabic": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "شُ كَ رُ",
+          "صَ بُ رِ",
+          "فَ تُ حَ"
+        ],
+        [
+          "نِ صَ رُ",
+          "جُ مَ عِ",
+          "مَ نِ عَ"
+        ],
+        [
+          "نِ فَ عَ",
+          "وَ جُ دِ",
+          "نَ ظِ رُ"
+        ],
+        [
+          "طِ لَ بُ",
+          "صَ دُ قِ",
+          "قَ رُ بَ"
+        ],
+        [
+          "بُ عَ دَ",
+          "رُ فَ عِ",
+          "خُ فِ ضَ"
+        ],
+        [
+          "دُ رُ سُ",
+          "لَ عَ بُ",
+          "غَ لِ بُ"
+        ],
+        [
+          "سُ بَ قَ",
+          "وَ قَ فِ",
+          "سُ كِ نَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Bagus” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
+        "Akhlak QURBATA: Praktikkan bersungguh-sungguh selama pembelajaran."
+      ],
+      "intro": {
+        "title": "Dhammah — Materi Baru",
+        "items": [
+          [
+            "رِ",
+            "رُ"
+          ],
+          [
+            "زِ",
+            "زُ"
+          ],
+          [
+            "سِ",
+            "سُ"
+          ],
+          [
+            "شِ",
+            "شُ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Kasrah yang telah dikuasai menuju Dhammah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P029",
+      "pageNumber": "29",
+      "title": "Dhammah 4",
+      "titleArabic": "الضَّمَّةُ 4",
+      "tartilCompetency": "Dhammah bertahap pada بُ تُ ثُ جُ حُ خُ دُ ذُ رُ زُ سُ شُ صُ ضُ طُ ظُ dengan murojaah Kasrah–Fathah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P029",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq Ayat 5",
+          "arabic": "وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Sekali Lagi",
+          "arabic": "مَرَّةً أُخْرَى",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Menjaga Ilmu",
+          "arabic": "تَعَلَّمْ وَاعْمَلْ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "صُ بُ رُ",
+          "فَ تُ حِ",
+          "نَ صُ رَ"
+        ],
+        [
+          "جُ مَ عَ",
+          "مَ نَ عِ",
+          "نَ فِ عَ"
+        ],
+        [
+          "وِ جُ دَ",
+          "نَ ظُ رِ",
+          "طَ لِ بُ"
+        ],
+        [
+          "صِ دُ قَ",
+          "قَ رُ بُ",
+          "بُ عِ دَ"
+        ],
+        [
+          "رُ فَ عَ",
+          "خَ فَ ضُ",
+          "دَ رُ سُ"
+        ],
+        [
+          "لِ عَ بُ",
+          "غَ لَ بُ",
+          "سُ بِ قَ"
+        ],
+        [
+          "وِ قَ فَ",
+          "سُ كَ نِ",
+          "كَ تُ بُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Sekali Lagi” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
+        "Akhlak QURBATA: Praktikkan menjaga ilmu selama pembelajaran."
+      ],
+      "intro": {
+        "title": "Dhammah — Materi Baru",
+        "items": [
+          [
+            "صِ",
+            "صُ"
+          ],
+          [
+            "ضِ",
+            "ضُ"
+          ],
+          [
+            "طِ",
+            "طُ"
+          ],
+          [
+            "ظِ",
+            "ظُ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Kasrah yang telah dikuasai menuju Dhammah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P030",
+      "pageNumber": "30",
+      "title": "Dhammah 5",
+      "titleArabic": "الضَّمَّةُ 5",
+      "tartilCompetency": "Dhammah bertahap pada بُ تُ ثُ جُ حُ خُ دُ ذُ رُ زُ سُ شُ صُ ضُ طُ ظُ عُ غُ فُ قُ dengan murojaah Kasrah–Fathah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P030",
+      "integration": {
+        "tahfidz": {
+          "title": "Murojaah An-Nas",
+          "arabic": "مُرَاجَعَةٌ",
+          "instruction": "Murojaah hafalan yang telah dipelajari."
+        },
+        "arabic": {
+          "title": "Tutup Al-Qur’an",
+          "arabic": "أَغْلِقِ الْقُرْآنَ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Mengulang Kebaikan",
+          "arabic": "فَذَكِّرْ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "فُ تُ حُ",
+          "نَ صُ رِ",
+          "جُ مِ عَ"
+        ],
+        [
+          "مِ نَ عُ",
+          "نَ فُ عُ",
+          "وَ جُ دُ"
+        ],
+        [
+          "نِ ظُ رَ",
+          "طُ لَ بِ",
+          "صَ دِ قُ"
+        ],
+        [
+          "قِ رُ بُ",
+          "بُ عُ دُ",
+          "رُ فُ عَ"
+        ],
+        [
+          "خُ فَ ضَ",
+          "دَ رَ سُ",
+          "لَ عُ بُ"
+        ],
+        [
+          "غُ لَ بُ",
+          "سُ بُ قِ",
+          "وَ قُ فَ"
+        ],
+        [
+          "سُ كَ نَ",
+          "كَ تُ بُ",
+          "عُ لِ مَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Tutup Al-Qur’an” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
+        "Akhlak QURBATA: Praktikkan mengulang kebaikan selama pembelajaran."
+      ],
+      "intro": {
+        "title": "Dhammah — Materi Baru",
+        "items": [
+          [
+            "عِ",
+            "عُ"
+          ],
+          [
+            "غِ",
+            "غُ"
+          ],
+          [
+            "فِ",
+            "فُ"
+          ],
+          [
+            "قِ",
+            "قُ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Kasrah yang telah dikuasai menuju Dhammah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P031",
+      "pageNumber": "31",
+      "title": "Dhammah 6",
+      "titleArabic": "الضَّمَّةُ 6",
+      "tartilCompetency": "Dhammah bertahap pada بُ تُ ثُ جُ حُ خُ دُ ذُ رُ زُ سُ شُ صُ ضُ طُ ظُ عُ غُ فُ قُ كُ لُ مُ نُ dengan murojaah Kasrah–Fathah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P031",
+      "integration": {
+        "tahfidz": {
+          "title": "Murojaah Al-Ikhlas",
+          "arabic": "مُرَاجَعَةٌ",
+          "instruction": "Murojaah hafalan yang telah dipelajari."
+        },
+        "arabic": {
+          "title": "Ini Buku",
+          "arabic": "هذَا كِتَابٌ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Menjaga Buku",
+          "arabic": "الطَّهُورُ شَطْرُ الْإِيمَانِ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "نُ صُ رُ",
+          "جُ مُ عِ",
+          "مُ نِ عَ"
+        ],
+        [
+          "نِ فَ عُ",
+          "وَ جُ دُ",
+          "نُ ظُ رُ"
+        ],
+        [
+          "طُ لُ بَ",
+          "صُ دَ قِ",
+          "قَ رِ بُ"
+        ],
+        [
+          "بِ عُ دُ",
+          "رُ فُ عُ",
+          "خُ فُ ضَ"
+        ],
+        [
+          "دُ رَ سَ",
+          "لَ عَ بُ",
+          "غَ لُ بُ"
+        ],
+        [
+          "سُ بُ قُ",
+          "وَ قُ فِ",
+          "سُ كِ نَ"
+        ],
+        [
+          "كِ تَ بُ",
+          "عَ لُ مُ",
+          "فُ هِ مُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Ini Buku” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
+        "Akhlak QURBATA: Praktikkan menjaga buku selama pembelajaran."
+      ],
+      "intro": {
+        "title": "Dhammah — Materi Baru",
+        "items": [
+          [
+            "كِ",
+            "كُ"
+          ],
+          [
+            "لِ",
+            "لُ"
+          ],
+          [
+            "مِ",
+            "مُ"
+          ],
+          [
+            "نِ",
+            "نُ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Kasrah yang telah dikuasai menuju Dhammah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P032",
+      "pageNumber": "32",
+      "title": "Dhammah 7",
+      "titleArabic": "الضَّمَّةُ 7",
+      "tartilCompetency": "Dhammah bertahap pada بُ تُ ثُ جُ حُ خُ دُ ذُ رُ زُ سُ شُ صُ ضُ طُ ظُ عُ غُ فُ قُ كُ لُ مُ نُ هُ وُ يُ ءُ dengan murojaah Kasrah–Fathah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P032",
+      "integration": {
+        "tahfidz": {
+          "title": "Murojaah Al-Falaq 1–2",
+          "arabic": "مُرَاجَعَةٌ",
+          "instruction": "Murojaah hafalan yang telah dipelajari."
+        },
+        "arabic": {
+          "title": "Ini Pena",
+          "arabic": "هذَا قَلَمٌ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Menghormati Guru",
+          "arabic": "وَقُلْ رَبِّ زِدْنِي عِلْمًا",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "جُ مُ عُ",
+          "مُ نُ عِ",
+          "نُ فِ عَ"
+        ],
+        [
+          "وِ جَ دُ",
+          "نَ ظُ رُ",
+          "طُ لُ بُ"
+        ],
+        [
+          "صُ دُ قَ",
+          "قُ رَ بِ",
+          "بَ عِ دُ"
+        ],
+        [
+          "رِ فُ عُ",
+          "خُ فُ ضُ",
+          "دُ رُ سَ"
+        ],
+        [
+          "لُ عَ بَ",
+          "غَ لَ بُ",
+          "سَ بُ قُ"
+        ],
+        [
+          "وُ قُ فُ",
+          "سُ كُ نِ",
+          "كُ تِ بَ"
+        ],
+        [
+          "عِ لَ مُ",
+          "فَ هُ مُ",
+          "عُ مُ لُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Ini Pena” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
+        "Akhlak QURBATA: Praktikkan menghormati guru selama pembelajaran."
+      ],
+      "intro": {
+        "title": "Dhammah — Materi Baru",
+        "items": [
+          [
+            "هِ",
+            "هُ"
+          ],
+          [
+            "وِ",
+            "وُ"
+          ],
+          [
+            "يِ",
+            "يُ"
+          ],
+          [
+            "ءِ",
+            "ءُ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Kasrah yang telah dikuasai menuju Dhammah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P033",
+      "pageNumber": "33",
+      "title": "Penguatan Dhammah",
+      "titleArabic": "تَثْبِيتُ الضَّمَّةِ",
+      "tartilCompetency": "Penguatan seluruh Dhammah dengan murojaah Kasrah dan Fathah.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P033",
+      "integration": {
+        "tahfidz": {
+          "title": "Murojaah Al-Falaq 1–4",
+          "arabic": "مُرَاجَعَةٌ",
+          "instruction": "Murojaah hafalan yang telah dipelajari."
+        },
+        "arabic": {
+          "title": "Ini Halaman",
+          "arabic": "هذِهِ صَفْحَةٌ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Membantu",
+          "arabic": "وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَى",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "مُ نُ عُ",
+          "نُ فُ عِ",
+          "وُ جِ دَ"
+        ],
+        [
+          "نِ ظَ رُ",
+          "طَ لُ بُ",
+          "صُ دُ قُ"
+        ],
+        [
+          "قُ رُ بَ",
+          "بُ عَ دِ",
+          "رَ فِ عُ"
+        ],
+        [
+          "خِ فُ ضُ",
+          "دُ رُ سُ",
+          "لُ عُ بَ"
+        ],
+        [
+          "غُ لَ بَ",
+          "سَ بَ قُ",
+          "وَ قُ فُ"
+        ],
+        [
+          "سُ كُ نُ",
+          "كُ تُ بِ",
+          "عُ لِ مَ"
+        ],
+        [
+          "فِ هَ مُ",
+          "عَ مُ لُ",
+          "سُ مُ عُ"
+        ],
+        [
+          "رُ حُ مَ",
+          "حُ فَ ظِ",
+          "شَ رِ بُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Ini Halaman” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
+        "Akhlak QURBATA: Praktikkan membantu selama pembelajaran."
+      ]
+    },
+    {
+      "pageId": "QJ1-P034",
+      "pageNumber": "34",
+      "title": "Latihan Kumulatif Dhammah 1",
+      "titleArabic": "تَدْرِيبُ الضَّمَّةِ 1",
+      "tartilCompetency": "Latihan kumulatif Dhammah–Kasrah–Fathah dalam kelompok tiga huruf lepas yang bermakna atau mendekati kata bermakna.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P034",
+      "integration": {
+        "tahfidz": {
+          "title": "Murojaah Tiga Surah",
+          "arabic": "مُرَاجَعَةٌ",
+          "instruction": "Murojaah hafalan yang telah dipelajari."
+        },
+        "arabic": {
+          "title": "Siap",
+          "arabic": "مُسْتَعِدٌّ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Mengamalkan Ilmu",
+          "arabic": "تَعَلَّمْ — اِعْمَلْ — عَلِّمْ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "نُ فُ عُ",
+          "وُ جُ دِ",
+          "نُ ظِ رَ"
+        ],
+        [
+          "طِ لَ بُ",
+          "صَ دُ قُ",
+          "قُ رُ بُ"
+        ],
+        [
+          "بُ عُ دَ",
+          "رُ فَ عِ",
+          "خَ فِ ضُ"
+        ],
+        [
+          "دِ رُ سُ",
+          "لُ عُ بُ",
+          "غُ لُ بَ"
+        ],
+        [
+          "سُ بَ قَ",
+          "وَ قَ فُ",
+          "سَ كُ نُ"
+        ],
+        [
+          "كُ تُ بُ",
+          "عُ لُ مِ",
+          "فُ هِ مَ"
+        ],
+        [
+          "عِ مَ لُ",
+          "سَ مُ عُ",
+          "رُ حُ مُ"
+        ],
+        [
+          "حُ فُ ظَ",
+          "شُ رَ بِ",
+          "رَ كِ بُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Siap” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
+        "Akhlak QURBATA: Praktikkan mengamalkan ilmu selama pembelajaran."
+      ]
+    },
+    {
+      "pageId": "QJ1-P035",
+      "pageNumber": "35",
+      "title": "Latihan Kumulatif Dhammah 2",
+      "titleArabic": "تَدْرِيبُ الضَّمَّةِ 2",
+      "tartilCompetency": "Latihan kumulatif Dhammah–Kasrah–Fathah dalam kelompok tiga huruf lepas yang bermakna atau mendekati kata bermakna.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P035",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq Ayat 2",
+          "arabic": "مِنْ شَرِّ مَا خَلَقَ",
+          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Baca Ini",
+          "arabic": "اِقْرَأْ هذَا",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Mendengar",
+          "arabic": "وَاسْتَمِعُوا لَهُ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "وُ جُ دُ",
+          "نُ ظُ رِ",
+          "طُ لِ بَ"
+        ],
+        [
+          "صِ دَ قُ",
+          "قَ رُ بُ",
+          "بُ عُ دُ"
+        ],
+        [
+          "رُ فُ عَ",
+          "خُ فَ ضِ",
+          "دَ رِ سُ"
+        ],
+        [
+          "لِ عُ بُ",
+          "غُ لُ بُ",
+          "سُ بُ قَ"
+        ],
+        [
+          "وُ قَ فَ",
+          "سَ كَ نُ",
+          "كَ تُ بُ"
+        ],
+        [
+          "عُ لُ مُ",
+          "فُ هُ مِ",
+          "عُ مِ لَ"
+        ],
+        [
+          "سِ مَ عُ",
+          "رَ حُ مُ",
+          "حُ فُ ظُ"
+        ],
+        [
+          "شُ رُ بَ",
+          "رُ كَ بِ",
+          "جَ لِ سُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Baca Ini” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
+        "Akhlak QURBATA: Praktikkan mendengar selama pembelajaran."
+      ]
+    },
+    {
+      "pageId": "QJ1-P036",
+      "pageNumber": "36",
+      "title": "Penguatan Jilid 1 1",
+      "titleArabic": "مُرَاجَعَةُ الْجُزْءِ الْأَوَّلِ 1",
+      "tartilCompetency": "Penguatan kumulatif Fathah, Kasrah, dan Dhammah dalam kelompok huruf lepas bermakna atau mendekati kata bermakna.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P036",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq Ayat 3",
+          "arabic": "وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Ulangi",
+          "arabic": "أَعِدْ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Sabar",
+          "arabic": "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "نُ ظُ رُ",
+          "طُ لُ بِ",
+          "صُ دِ قَ"
+        ],
+        [
+          "قِ رَ بُ",
+          "بَ عُ دُ",
+          "رُ فُ عُ"
+        ],
+        [
+          "خُ فُ ضَ",
+          "دُ رَ سِ",
+          "لَ عِ بُ"
+        ],
+        [
+          "غِ لُ بُ",
+          "سُ بُ قُ",
+          "وُ قُ فَ"
+        ],
+        [
+          "سُ كَ نَ",
+          "كَ تَ بُ",
+          "عَ لُ مُ"
+        ],
+        [
+          "فُ هُ مُ",
+          "عُ مُ لِ",
+          "سُ مِ عَ"
+        ],
+        [
+          "رِ حَ مُ",
+          "حَ فُ ظُ",
+          "شُ رُ بُ"
+        ],
+        [
+          "رُ كُ بَ",
+          "جُ لَ سِ",
+          "لَ بِ سُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Ulangi” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
+        "Akhlak QURBATA: Praktikkan sabar selama pembelajaran."
+      ]
+    },
+    {
+      "pageId": "QJ1-P037",
+      "pageNumber": "37",
+      "title": "Penguatan Jilid 1 2",
+      "titleArabic": "مُرَاجَعَةُ الْجُزْءِ الْأَوَّلِ 2",
+      "tartilCompetency": "Penguatan kumulatif Fathah, Kasrah, dan Dhammah dalam kelompok huruf lepas bermakna atau mendekati kata bermakna.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P037",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq Ayat 4",
+          "arabic": "وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
+          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Bagus",
+          "arabic": "جَيِّدٌ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Bersungguh-sungguh",
+          "arabic": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "طُ لُ بُ",
+          "صُ دُ قِ",
+          "قُ رِ بَ"
+        ],
+        [
+          "بِ عَ دُ",
+          "رَ فُ عُ",
+          "خُ فُ ضُ"
+        ],
+        [
+          "دُ رُ سَ",
+          "لُ عَ بِ",
+          "غَ لِ بُ"
+        ],
+        [
+          "سِ بُ قُ",
+          "وُ قُ فُ",
+          "سُ كُ نَ"
+        ],
+        [
+          "كُ تَ بَ",
+          "عَ لَ مُ",
+          "فَ هُ مُ"
+        ],
+        [
+          "عُ مُ لُ",
+          "سُ مُ عِ",
+          "رُ حِ مَ"
+        ],
+        [
+          "حِ فَ ظُ",
+          "شَ رُ بُ",
+          "رُ كُ بُ"
+        ],
+        [
+          "جُ لُ سَ",
+          "لُ بَ سِ",
+          "فَ رِ حُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Bagus” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
+        "Akhlak QURBATA: Praktikkan bersungguh-sungguh selama pembelajaran."
+      ]
+    },
+    {
+      "pageId": "QJ1-P038",
+      "pageNumber": "38",
+      "title": "Penguatan Jilid 1 3",
+      "titleArabic": "مُرَاجَعَةُ الْجُزْءِ الْأَوَّلِ 3",
+      "tartilCompetency": "Penguatan kumulatif Fathah, Kasrah, dan Dhammah dalam kelompok huruf lepas bermakna atau mendekati kata bermakna.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P038",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq Ayat 5",
+          "arabic": "وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+          "instruction": "Hafalkan ayat ini dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Sekali Lagi",
+          "arabic": "مَرَّةً أُخْرَى",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Menjaga Ilmu",
+          "arabic": "تَعَلَّمْ وَاعْمَلْ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "صُ دُ قُ",
+          "قُ رُ بِ",
+          "بُ عِ دَ"
+        ],
+        [
+          "رِ فَ عُ",
+          "خَ فُ ضُ",
+          "دُ رُ سُ"
+        ],
+        [
+          "لُ عُ بَ",
+          "غُ لَ بِ",
+          "سَ بِ قُ"
+        ],
+        [
+          "وِ قُ فُ",
+          "سُ كُ نُ",
+          "كُ تُ بَ"
+        ],
+        [
+          "عُ لَ مَ",
+          "فَ هَ مُ",
+          "عَ مُ لُ"
+        ],
+        [
+          "سُ مُ عُ",
+          "رُ حُ مِ",
+          "حُ فِ ظَ"
+        ],
+        [
+          "شِ رَ بُ",
+          "رَ كُ بُ",
+          "جُ لُ سُ"
+        ],
+        [
+          "لُ بُ سَ",
+          "فُ رَ حِ",
+          "حَ مِ دُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Sekali Lagi” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Hafalkan target dan murojaah hafalan sebelumnya.",
+        "Akhlak QURBATA: Praktikkan menjaga ilmu selama pembelajaran."
+      ]
+    },
+    {
+      "pageId": "QJ1-P039",
+      "pageNumber": "39",
+      "title": "Penguatan Jilid 1 4",
+      "titleArabic": "مُرَاجَعَةُ الْجُزْءِ الْأَوَّلِ 4",
+      "tartilCompetency": "Penguatan kumulatif Fathah, Kasrah, dan Dhammah dalam kelompok huruf lepas bermakna atau mendekati kata bermakna.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P039",
+      "integration": {
+        "tahfidz": {
+          "title": "Murojaah An-Nas",
+          "arabic": "مُرَاجَعَةٌ",
+          "instruction": "Murojaah hafalan yang telah dipelajari."
+        },
+        "arabic": {
+          "title": "Tutup Al-Qur’an",
+          "arabic": "أَغْلِقِ الْقُرْآنَ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Mengulang Kebaikan",
+          "arabic": "فَذَكِّرْ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "قُ رُ بُ",
+          "بُ عُ دِ",
+          "رُ فِ عَ"
+        ],
+        [
+          "خِ فَ ضُ",
+          "دَ رُ سُ",
+          "لُ عُ بُ"
+        ],
+        [
+          "غُ لُ بَ",
+          "سُ بَ قِ",
+          "وَ قِ فُ"
+        ],
+        [
+          "سِ كُ نُ",
+          "كُ تُ بُ",
+          "عُ لُ مَ"
+        ],
+        [
+          "فُ هَ مَ",
+          "عَ مَ لُ",
+          "سَ مُ عُ"
+        ],
+        [
+          "رُ حُ مُ",
+          "حُ فُ ظِ",
+          "شُ رِ بَ"
+        ],
+        [
+          "رِ كَ بُ",
+          "جَ لُ سُ",
+          "لُ بُ سُ"
+        ],
+        [
+          "فُ رُ حَ",
+          "حُ مَ دِ",
+          "نَ دِ مُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Tutup Al-Qur’an” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
+        "Akhlak QURBATA: Praktikkan mengulang kebaikan selama pembelajaran."
+      ]
+    },
+    {
+      "pageId": "QJ1-P040",
+      "pageNumber": "40",
+      "title": "Penguatan Jilid 1 5",
+      "titleArabic": "مُرَاجَعَةُ الْجُزْءِ الْأَوَّلِ 5",
+      "tartilCompetency": "Penguatan kumulatif Fathah, Kasrah, dan Dhammah dalam kelompok huruf lepas bermakna atau mendekati kata bermakna.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P040",
+      "integration": {
+        "tahfidz": {
+          "title": "Murojaah Al-Ikhlas",
+          "arabic": "مُرَاجَعَةٌ",
+          "instruction": "Murojaah hafalan yang telah dipelajari."
+        },
+        "arabic": {
+          "title": "Ini Buku",
+          "arabic": "هذَا كِتَابٌ",
+          "instruction": "Gunakan ungkapan ini secara nyata dalam pembelajaran."
+        },
+        "akhlak": {
+          "title": "Menjaga Buku",
+          "arabic": "الطَّهُورُ شَطْرُ الْإِيمَانِ",
+          "instruction": "Pahami pesan dan praktikkan dalam kegiatan belajar."
+        }
+      },
+      "rows": [
+        [
+          "بُ عُ دُ",
+          "رُ فُ عِ",
+          "خُ فِ ضَ"
+        ],
+        [
+          "دِ رَ سُ",
+          "لَ عُ بُ",
+          "غُ لُ بُ"
+        ],
+        [
+          "سُ بُ قَ",
+          "وُ قَ فِ",
+          "سَ كِ نُ"
+        ],
+        [
+          "كِ تُ بُ",
+          "عُ لُ مُ",
+          "فُ هُ مَ"
+        ],
+        [
+          "عُ مَ لَ",
+          "سَ مَ عُ",
+          "رَ حُ مُ"
+        ],
+        [
+          "حُ فُ ظُ",
+          "شُ رُ بِ",
+          "رُ كِ بَ"
+        ],
+        [
+          "جِ لَ سُ",
+          "لَ بُ سُ",
+          "فُ رُ حُ"
+        ],
+        [
+          "حُ مُ دَ",
+          "نُ دَ مِ",
+          "مَ لِ كُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Gunakan “Ini Buku” dalam kegiatan belajar.",
+        "Tahfidz QURBATA: Murojaah hafalan yang telah dipelajari.",
+        "Akhlak QURBATA: Praktikkan menjaga buku selama pembelajaran."
+      ]
     }
   ],
   "curriculumRules": {
@@ -2124,6 +3330,7 @@
     "detachedLetters": "Jilid 1 wajib memakai huruf lepas/tidak sambung pada seluruh grid Tartil.",
     "mixedHarakatWithinGroup": "Pada fase harakat baru, satu kelompok latihan 3 huruf wajib mencampur harakat kompetensi baru dan harakat lama yang sudah legal di DALAM kelompok yang sama. Posisi harakat baru diacak: awal, tengah, atau akhir. Komposisi keseluruhan halaman mengikuti proporsi target aktif/murojaah (±60/40), bukan memisahkan kelompok Kasrah dan kelompok Fathah.",
     "meaningfulMixedGroups": "Kelompok 3 huruf campuran harakat TIDAK boleh dibentuk secara acak huruf. Pilih terlebih dahulu bentuk dasar kata Arab bermakna atau sangat dekat dengan kata bermakna, lalu distribusikan harakat baru/lama pada tiga hurufnya sesuai kompetensi legal dan proporsi halaman. Posisi harakat baru boleh awal/tengah/akhir; huruf tetap lepas.",
-    "newCompetencyHeaderEveryIntroduction": "WAJIB pada SETIAP halaman kompetensi baru: baris penanaman harus MENJELASKAN PERUBAHAN dari kompetensi lama yang telah dikuasai menuju kompetensi baru pada huruf yang sama, misalnya جَ → جِ. DILARANG menampilkan bentuk baru → bentuk baru (misalnya جِ → جِ) karena tidak menjelaskan perubahan. Huruf contoh memakai font Utsmani dan ukuran sama dengan huruf latihan. Halaman materi baru = 1 baris penanaman + 7 baris latihan."
+    "newCompetencyHeaderEveryIntroduction": "WAJIB pada SETIAP halaman kompetensi baru: baris penanaman harus MENJELASKAN PERUBAHAN dari kompetensi lama yang telah dikuasai menuju kompetensi baru pada huruf yang sama, misalnya جَ → جِ. DILARANG menampilkan bentuk baru → bentuk baru (misalnya جِ → جِ) karena tidak menjelaskan perubahan. Huruf contoh memakai font Utsmani dan ukuran sama dengan huruf latihan. Halaman materi baru = 1 baris penanaman + 7 baris latihan.",
+    "jilid1To40": "P026–P032 pengenalan Dhammah bertahap; setiap halaman materi baru memakai 1 baris penanaman kompetensi lama→baru ukuran latihan + 7 baris latihan. P033 penguatan; P034–P035 kumulatif Dhammah; P036–P040 penguatan kumulatif Jilid 1. Semua kelompok tiga huruf lepas berbasis kata bermakna/mendekati bermakna dan murojaah tersebar."
   }
 }
