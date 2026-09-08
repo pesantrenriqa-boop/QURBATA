@@ -3,7 +3,8 @@ import path from "node:path";
 import QRCode from "qrcode";
 
 const root = path.resolve(import.meta.dirname, "..");
-const data = JSON.parse(await fs.readFile(path.join(root, "data/jilid-1.json"), "utf8"));
+const volume = process.env.QURBATA_VOLUME || "jilid-1";
+const data = JSON.parse(await fs.readFile(path.join(root, `data/${volume}.json`), "utf8"));
 const template = await fs.readFile(path.join(root, "templates/book.html"), "utf8");
 const css = await fs.readFile(path.join(root, "styles/book.css"), "utf8");
 
