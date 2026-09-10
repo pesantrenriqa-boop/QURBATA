@@ -36,6 +36,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Build QJ1 P001 master proof
+        run: npm run build:p001
+
+      - name: Upload QJ1 P001 master proof
+        uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-J1-P001-MASTER-PROOF
+          path: production/vivliostyle/dist-p001/QURBATA-J1-P001-MASTER-PROOF.pdf
+          if-no-files-found: error
+          retention-days: 30
+
       - name: Build B5 PDF
         run: npm run build:pdf
 
