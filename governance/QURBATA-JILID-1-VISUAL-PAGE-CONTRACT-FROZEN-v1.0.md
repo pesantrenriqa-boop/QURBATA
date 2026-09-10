@@ -194,3 +194,21 @@ Keputusan pemilik akademik yang mengikat:
 8. Sebelum render final P001, wajib menyelesaikan dua dependency: **(a) asset logo resmi QURBATA; (b) URL deployment/domain RIQA OS kanonik untuk QRT-T01**. Preview boleh dibuat tanpa QR/logo final hanya jika diberi status DRAFT dan tidak boleh di-FREEZE.
 
 **Status amendment:** FROZEN; menggantikan ketentuan visual lama yang bertentangan, khususnya jumlah latihan 24 kandidat / 7×3.
+
+
+## 14. Amendment 2026-09-10 — Grid 3 Kelompok dan Hard Whitelist P001
+
+Keputusan terbaru pemilik akademik, menggantikan ketentuan 8 kelompok per baris pada Amendment §13:
+
+1. **Latihan tetap 8 baris, tetapi setiap baris hanya 3 kelompok baca.**
+2. Baris 1–2: 3 kelompok per baris × 2 huruf terpisah per kelompok = 6 kelompok dua huruf.
+3. Baris 3–8: 3 kelompok per baris × 3 huruf terpisah per kelompok = 18 kelompok tiga huruf.
+4. Total render latihan = **24 kelompok baca**; huruf harus dibuat jauh lebih besar dan area Tartil tetap ±80% halaman.
+5. **P001 HARD WHITELIST = بَ تَ ثَ saja.** Tidak boleh muncul huruf lain pada grid latihan P001.
+6. P001 hanya fathah, huruf lepas. Dilarang sambung, kasrah, dhammah, tanwin, mad, sukun, tasydid.
+7. Semua 24 kelompok P001 harus tersusun hanya dari permutasi/controlled drill بَ تَ ثَ.
+8. Panel Tahfidz/BA/Akhlak tidak mengubah whitelist grid Tartil; teks panel adalah kanal talqin/bi'ah/akhlak tersendiri.
+9. **Tidak ada Arab Pegon** atau teks Arab dekoratif/non-kurikuler.
+10. Jika generator gambar memasukkan huruf di luar whitelist atau bentuk sambung, artwork otomatis **REJECTED** dan tidak boleh disimpan sebagai final.
+
+**Status:** FROZEN; §14 supersedes §13 hanya pada jumlah kelompok per baris dan total kelompok latihan.
