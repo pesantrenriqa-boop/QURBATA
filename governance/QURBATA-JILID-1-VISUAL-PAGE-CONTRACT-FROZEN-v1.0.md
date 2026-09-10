@@ -174,3 +174,23 @@ Prosedur:
 **QJ1_VISUAL_PAGE_CONTRACT = FROZEN_v1.0**
 
 P001 selanjutnya digunakan untuk menguji dan mengunci master visual aktual. Setelah P001 disetujui, referensi P001 menjadi baseline visual P002–P040.
+
+
+## 13. Amendment 2026-09-10 — Dominasi Latihan, Grid 8×8, Asset Resmi, QR RIQA OS
+
+Keputusan pemilik akademik yang mengikat:
+
+1. **Area Latihan Tartil ±80% dari halaman.** Header, Penanaman, tiga panel integrasi, dan footer wajib dipadatkan; latihan baca adalah objek visual dominan mutlak.
+2. **Grid latihan = 8 baris × 8 kelompok = 64 kelompok per halaman.**
+   - Baris 1–2: masing-masing 8 kelompok, **2 huruf terpisah per kelompok** (16 kelompok dua huruf).
+   - Baris 3–8: masing-masing 8 kelompok, **3 huruf terpisah per kelompok** (48 kelompok tiga huruf).
+   - Total = **64 kelompok baca / 176 token huruf** per halaman sebelum aturan khusus evaluasi.
+   - Arah baca RTL; satu kelompok tidak boleh tampak sebagai huruf sambung.
+3. **Bank konten dan SPEC harus diperluas mengikuti 64 kelompok**, sehingga kontrak lama 24 kandidat / 7×3 untuk artwork dinyatakan **SUPERSEDED** oleh amendment ini.
+4. **Logo QURBATA wajib asset resmi, bukan logo hasil generatif/rekonstruksi AI.** Jika asset resmi belum ditemukan/tersedia dalam source repo, artwork tidak boleh mengarang logo; status halaman harus menunggu asset resmi.
+5. **QR/barcode wajib QR nyata** yang dihasilkan dari URL kanonik RIQA OS untuk kompetensi halaman. Dilarang menggunakan QR dekoratif/AI/fiktif.
+6. Sumber RIQA OS yang telah ditelusuri: repo `pesantrenriqa-boop/RIQA-OS`. Jalur belajar kompetensi yang benar dibangun oleh aplikasi sebagai `/peserta/belajar/{field}/{competency}/{action}`. Untuk Tartil, field = `qrt`; kompetensi awal RIQA OS saat ini = `QRT-T01`. Dengan demikian P001 harus dipetakan ke kompetensi RIQA OS **QRT-T01**, dan QR harus memakai URL deployment kanonik + route belajar tersebut, setelah domain deployment diverifikasi.
+7. Repo RIQA OS saat ini memiliki `apps/web/public/icons/qurbata.svg`, tetapi file itu adalah ikon buku generik untuk UI dan **tidak boleh dianggap logo resmi QURBATA**.
+8. Sebelum render final P001, wajib menyelesaikan dua dependency: **(a) asset logo resmi QURBATA; (b) URL deployment/domain RIQA OS kanonik untuk QRT-T01**. Preview boleh dibuat tanpa QR/logo final hanya jika diberi status DRAFT dan tidak boleh di-FREEZE.
+
+**Status amendment:** FROZEN; menggantikan ketentuan visual lama yang bertentangan, khususnya jumlah latihan 24 kandidat / 7×3.
