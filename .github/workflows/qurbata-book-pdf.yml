@@ -47,6 +47,17 @@ jobs:
           if-no-files-found: error
           retention-days: 30
 
+      - name: Build QJ1 P002 master proof
+        run: npm run build:p002
+
+      - name: Upload QJ1 P002 master proof
+        uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-J1-P002-MASTER-PROOF
+          path: production/vivliostyle/dist-p002/QURBATA-J1-P002-MASTER-PROOF.pdf
+          if-no-files-found: error
+          retention-days: 30
+
       - name: Build B5 PDF
         run: npm run build:pdf
 
