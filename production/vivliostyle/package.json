@@ -8,7 +8,7 @@
     "build:pdf": "npm run build:html && vivliostyle build dist/index.html -o dist/QURBATA-JILID-1-PILOT.pdf",
     "build": "npm run build:pdf",
     "build:pdf:j2": "QURBATA_VOLUME=jilid-2 node scripts/build-book.mjs && vivliostyle build dist/index.html -o dist/QURBATA-JILID-2-PILOT.pdf",
-    "build:p001": "node scripts/build-p001-master.mjs && node scripts/fix-p001-layout.mjs && vivliostyle build dist-p001/index.html -o dist-p001/QURBATA-J1-P001-MASTER-PROOF.pdf"
+    "build:p001": "node scripts/build-p001-master.mjs && node scripts/fix-p001-layout.mjs && node scripts/inject-p001-mushaf-ornament.mjs && vivliostyle build dist-p001/index.html -o dist-p001/QURBATA-J1-P001-MASTER-PROOF.pdf"
   },
   "dependencies": {
     "@vivliostyle/cli": "^10.1.0",
