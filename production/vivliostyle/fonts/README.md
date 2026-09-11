@@ -1,7 +1,13 @@
-# Font Arab QURBATA
+# Font Utsmani QURBATA
 
-Letakkan berkas font resmi yang telah diperiksa lisensinya di folder ini dengan nama:
+Font produksi yang dipakai untuk seluruh teks Arab:
 
-`KFGQPC-Uthman-Taha.ttf`
+- nama: **KFGQPC Uthman Taha Naskh**;
+- berkas sumber: `KFGQPC-Uthman-Taha-Naskh.woff2`;
+- versi berkas: UthmanTN1 Ver10;
+- penerbit: King Fahd Glorious Qur'an Printing Complex;
+- rujukan resmi: `https://fonts.qurancomplex.gov.sa/`.
 
-Pipeline tetap dapat membangun pratinjau memakai font Arab cadangan ketika berkas tersebut belum tersedia. Font produksi wajib di-freeze setelah uji harakat, ligatur, tanda Qurani, embedding PDF, dan persetujuan akademik/editorial.
+Pipeline menyalin font ke `dist/fonts/` saat build. Seluruh elemen berkelas `.arabic`—judul Arab, Tahfidz, Bahasa Arab, NIDHOM, latihan Tartil, dan motto—menggunakan font ini.
+
+Sebelum pencetakan massal, font tetap wajib melewati uji harakat, ligatur, tanda Qurani, embedding PDF, serta persetujuan akademik/editorial QURBATA. Jangan mengganti font produksi tanpa uji regresi halaman.

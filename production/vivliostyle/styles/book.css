@@ -1,6 +1,8 @@
 @font-face {
-  font-family: "QURBATA Uthmani";
-  src: url("../fonts/KFGQPC-Uthman-Taha.ttf") format("truetype");
+  font-family: "QURBATA KFGQPC Uthmani";
+  src: url("fonts/KFGQPC-Uthman-Taha-Naskh.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
   font-display: block;
 }
 
@@ -37,8 +39,8 @@ body {
   padding: 6mm 7mm 5mm;
   background: white;
   display: grid;
-  grid-template-rows: 8mm 22mm 35mm 1fr 24mm 13mm;
-  gap: 2.2mm;
+  grid-template-rows: 8mm 16mm 25mm minmax(0, 1fr) 25mm 8mm;
+  gap: 1.8mm;
   overflow: hidden;
   break-after: page;
   page-break-after: always;
@@ -47,7 +49,7 @@ body {
 .book-page:last-child { break-after: auto; page-break-after: auto; }
 
 .arabic {
-  font-family: "QURBATA Uthmani", "Noto Naskh Arabic", "Traditional Arabic", "DejaVu Sans", serif;
+  font-family: "QURBATA KFGQPC Uthmani", "Traditional Arabic", serif;
   direction: rtl;
   unicode-bidi: isolate;
   font-variant-ligatures: common-ligatures contextual;
@@ -70,7 +72,12 @@ body {
   text-align: center;
 }
 
-.book-name { padding: 1.1mm 12mm; font-size: 10pt; }
+.book-name { padding: .45mm 3mm; font-size: 9pt; display:flex; align-items:center; justify-content:center; gap:1.6mm; min-width:48mm; }
+.qurbata-brand-logo { width:5.8mm; height:6.1mm; display:block; flex:0 0 auto; }
+.qurbata-brand-logo svg { width:100%; height:100%; display:block; }
+.qurbata-brand-text { display:flex; flex-direction:column; align-items:flex-start; line-height:1; }
+.qurbata-brand-text strong { font-size:8.5pt; }
+.qurbata-brand-text small { margin-top:.45mm; font-size:4.2pt; font-weight:700; letter-spacing:.01em; white-space:nowrap; color:var(--teal-700); }
 .page-number { padding: 1.1mm 0; font-size: 9pt; }
 
 .lesson-heading {
@@ -84,8 +91,9 @@ body {
   text-align: center;
 }
 
-.lesson-heading h1 { margin: 0; font-size: 22pt; color: var(--blue-900); line-height: 1.15; }
-.lesson-heading p { margin: 1.6mm 0 0; font-size: 8.7pt; }
+.lesson-heading h1 { margin: 0; font-size: 18pt; color: var(--blue-900); line-height: 1.1; }
+.lesson-title-arabic { display: inline-block; margin-inline-start: 1mm; font-size: 23pt; font-weight: 400; line-height: .8; }
+.lesson-heading p { margin: .8mm 0 0; font-size: 7.3pt; }
 
 .integration-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2mm; }
 
@@ -94,24 +102,24 @@ body {
   border-radius: 2.5mm;
   overflow: hidden;
   display: grid;
-  grid-template-rows: 7mm 6mm 1fr 6mm;
+  grid-template-rows: 5.5mm 4.5mm 1fr 4.8mm;
   text-align: center;
   background: #fff;
 }
 
 .integration-card h2 {
   margin: 0;
-  padding: 1.7mm 1mm;
+  padding: 1.2mm 1mm;
   color: white;
-  font-size: 8pt;
+  font-size: 7pt;
   letter-spacing: .02em;
   background: linear-gradient(90deg, var(--blue-700), #1096c4);
 }
 
 .integration-card--bahasa h2 { background: linear-gradient(90deg, var(--teal-700), #14aaa7); }
-.integration-title { margin: 1.2mm 1mm 0; font-size: 6.8pt; font-weight: 700; }
-.integration-arabic { margin: 0; align-self: center; font-size: 13pt; line-height: 1.2; color: #111; }
-.integration-instruction { margin: 0 1.5mm 1.2mm; padding: 1mm; border-radius: 2mm; background: var(--blue-100); font-size: 6.5pt; }
+.integration-title { margin: .7mm 1mm 0; font-size: 5.8pt; font-weight: 700; }
+.integration-arabic { margin: 0; align-self: center; font-size: 11pt; line-height: 1.1; color: #111; }
+.integration-instruction { margin: 0 1.5mm .7mm; padding: .6mm; border-radius: 2mm; background: var(--blue-100); font-size: 5.5pt; }
 .integration-card--bahasa .integration-instruction { background: var(--teal-100); }
 
 .practice-panel {
@@ -120,7 +128,7 @@ body {
   border-radius: 3mm;
   overflow: hidden;
   display: grid;
-  grid-template-rows: 9mm 1fr;
+  grid-template-rows: 8mm 1fr;
 }
 
 .practice-panel > header {
@@ -132,9 +140,10 @@ body {
   background: linear-gradient(90deg, var(--blue-900), var(--blue-700));
 }
 
-.practice-panel h2 { margin: 0; font-size: 11pt; }
-.practice-panel header p { margin: 0; font-size: 7.5pt; }
-.practice-grid { display: grid; grid-template-rows: repeat(8, 1fr); min-height: 0; }
+.practice-panel h2 { margin: 0; font-size: 10pt; }
+.practice-panel header p { margin: 0; font-size: 7pt; }
+.practice-grid {
+  height: 100%; display: grid; grid-template-rows: repeat(8, 1fr); min-height: 0; }
 .practice-row { display: grid; grid-template-columns: repeat(3, 1fr); min-height: 0; border-top: .25mm solid var(--line); }
 .practice-row:first-child { border-top: 0; }
 .practice-cell {
@@ -144,30 +153,40 @@ body {
   justify-content: center;
   border-left: .25mm solid var(--line);
   color: #111;
-  font-size: 23pt;
+  font-size: 39pt;
   line-height: 1;
+  word-spacing: .28em;
+  padding: 1mm .6mm .7mm;
   white-space: nowrap;
 }
 .practice-cell:first-child { border-left: 0; }
 
 .activity-strip {
+  position: absolute;
+  left: 7mm;
+  right: 7mm;
+  bottom: 16mm;
+  height: 25mm;
   border: .4mm solid #8fdad6;
   border-radius: 3mm;
   background: linear-gradient(90deg, #eefcfb, var(--teal-100));
   display: grid;
-  grid-template-columns: 1fr 20mm;
-  gap: 2mm;
-  padding: 2.5mm 3mm;
+  grid-template-columns: minmax(0, 1fr) 27mm 32mm 18mm 31mm;
+  gap: 0;
+  padding: 1.6mm 2.5mm;
+  min-height: 0;
 }
-
-.activity-content { display: grid; grid-template-rows: auto 1fr; }
-.activity-content h2 { margin: 0; color: var(--teal-700); font-size: 9pt; }
-.activity-grid { display: grid; grid-template-columns: repeat(3, 1fr); align-items: center; gap: 2mm; }
-.activity { display: flex; align-items: center; gap: 1.5mm; font-size: 6.5pt; }
-.activity span { flex: 0 0 6mm; height: 6mm; border-radius: 50%; display: grid; place-items: center; color: white; background: var(--teal-700); font-weight: 800; }
-
-.qr-link { color: var(--blue-900); text-decoration: none; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 5pt; font-weight: 700; }
-.qr-link img { width: 15mm; height: 15mm; image-rendering: crisp-edges; }
+.activity-content { min-width: 0; padding-right: 2.5mm; overflow: hidden; }
+.activity-content h2 { margin: 0 0 .7mm; color: var(--teal-700); font-size: 7.5pt; line-height: 1; }
+.activity-grid { display: grid; grid-template-columns: 1fr; gap: .45mm; align-content: center; }
+.activity { display: grid; grid-template-columns: 4.5mm 1fr; align-items: center; gap: 1mm; min-width: 0; font-size: 5pt; line-height: 1.12; white-space: normal; }
+.activity span { width: 4.5mm; height: 4.5mm; border-radius: 50%; display: grid; place-items: center; color: white; background: var(--teal-700); font-size: 5.5pt; font-weight: 800; }
+.qr-link { border-left: .25mm solid #8fdad6; border-right: .25mm solid #8fdad6; color: var(--blue-900); text-decoration: none; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 4.6pt; line-height: 1.05; font-weight: 700; text-align: center; padding: 0 1mm; }
+.qr-link img { width: 14mm; height: 14mm; image-rendering: crisp-edges; }
+.learning-record { display: contents; }
+.learning-record div { min-width: 0; border-right: .25mm solid #8fdad6; padding: 1mm 2mm; display: grid; grid-template-rows: auto 1fr; color: #42616f; font-size: 5.3pt; font-weight: 700; }
+.learning-record div:last-child { border-right: 0; }
+.learning-record i { display: block; align-self: end; width: 100%; height: 11mm; border: .25mm solid #55aaa9; border-radius: 2mm; background: rgba(255,255,255,.55); }
 
 .page-footer { position: relative; text-align: center; color: var(--blue-900); }
 .page-footer > div { position: absolute; left: 0; right: 0; top: 0; display: flex; justify-content: space-between; font-size: 5pt; color: #5f7482; }
@@ -184,3 +203,126 @@ body {
   body { background: white; }
   .book-page { margin: 0; box-shadow: none; }
 }
+
+.page-footer {
+  position: absolute;
+  left: 7mm;
+  right: 7mm;
+  bottom: 7mm;
+  height: 7mm;
+}
+
+/* Two-aperture ha: preserve requested glyph while placing fathah visibly. */
+.ha-two-fatha {
+  position: relative;
+  display: inline-block;
+  width: .72em;
+  height: 1em;
+  vertical-align: middle;
+}
+.ha-two { display: inline-block; line-height: 1; }
+.ha-fatha {
+  position: absolute;
+  left: 50%;
+  top: -.16em;
+  transform: translateX(-50%);
+  font-family: "QURBATA KFGQPC Uthmani", "Traditional Arabic", serif;
+  font-size: .62em;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* Front matter: same frozen QURBATA visual language and Uthmani font pipeline. */
+.front-matter-page { grid-template-rows: 8mm minmax(0,1fr) 8mm; }
+.front-matter-content { padding: 9mm 9mm 4mm; text-align: center; }
+.front-matter-content h1 { margin: 0 0 10mm; color: var(--blue-900); font-size: 18pt; }
+.front-dalil { border: .45mm solid var(--blue-700); border-radius: 3mm; padding: 8mm 7mm 6mm; background: linear-gradient(180deg,#f7fcff,var(--blue-100)); }
+.front-arabic { margin: 0; font-size: 25pt; line-height: 1.65; color: #111; font-weight: 400; }
+.front-source { margin: 3mm 0 0; color: var(--teal-700); font-size: 7pt; font-weight: 800; }
+.front-body { max-width: 128mm; margin: 9mm auto 0; font-size: 10pt; line-height: 1.55; }
+.front-motto { margin: 13mm auto 0; padding: 5mm; border-radius: 3mm; background: var(--teal-100); }
+.front-motto .arabic { margin: 0; font-size: 22pt; line-height: 1.5; }
+.front-motto small { color: var(--teal-700); font-weight: 800; }
+
+/* Official book-front format: restrained editorial layout, not lesson-card layout. */
+.official-front { text-align: left; padding: 12mm 13mm 6mm; }
+.official-front h1 { text-align: center; letter-spacing: .04em; font-size: 17pt; margin: 5mm 0 12mm; }
+.official-epigraph { border: 0; border-top: .35mm solid var(--blue-700); border-bottom: .35mm solid var(--blue-700); border-radius: 0; background: transparent; padding: 7mm 3mm 5mm; text-align: center; }
+.official-epigraph .front-arabic { font-family: "QURBATA KFGQPC Uthmani", serif !important; font-size: 24pt; line-height: 1.7; }
+.official-front .front-body { margin: 10mm auto 0; max-width: 124mm; text-align: justify; font-size: 10.5pt; line-height: 1.75; }
+.official-front .front-motto { text-align: center; background: transparent; border-top: .25mm solid var(--teal-700); border-bottom: .25mm solid var(--teal-700); border-radius: 0; }
+.official-front .front-motto .arabic { font-family: "QURBATA KFGQPC Uthmani", serif !important; }
+
+/* v0.7 — true book-front typography: dense continuous prose, no slide-like cards. */
+.official-front { padding: 7mm 10mm 3mm; text-align: left; }
+.official-front h1 { margin: 1mm 0 5mm; font-size: 13.5pt; text-align:center; letter-spacing:.02em; }
+.official-epigraph { border:0; padding:0; margin:0; text-align:inherit; }
+.official-epigraph .front-arabic { font-family:"QURBATA KFGQPC Uthmani",serif !important; font-size:13.2pt; line-height:1.72; text-align:justify; margin:0 0 4mm; white-space:pre-line; }
+.official-front .front-source { text-align:right; font-size:6.5pt; margin:-2mm 0 3mm; }
+.official-front .front-body { max-width:none; margin:0; font-size:8.7pt; line-height:1.55; text-align:justify; text-indent:5mm; }
+.official-front .front-motto { margin:4mm 0 0; padding:2.5mm 0; background:transparent; border-top:.2mm solid var(--teal-700); border-bottom:.2mm solid var(--teal-700); }
+.official-front .front-motto .arabic { font-size:13pt; line-height:1.45; }
+.front-matter-page { grid-template-rows:7mm minmax(0,1fr) 7mm; }
+
+/* v0.9 practical front matter: book-style lists/tables, compact and printable */
+.front-list{list-style:none;padding:0;margin:5mm 0 0;display:grid;gap:2.2mm}
+.front-list li{display:grid;grid-template-columns:31mm 1fr;gap:3mm;padding:2.6mm 0;border-bottom:.2mm solid #cbd8dd;font-size:8.5pt;line-height:1.45}
+.front-list strong{color:var(--blue-900)}
+.front-table{width:100%;border-collapse:collapse;margin:5mm 0 0;font-size:7.7pt;line-height:1.35}
+.front-table th,.front-table td{border:.2mm solid #aebfc6;padding:2.2mm 2.4mm;vertical-align:top;text-align:left}
+.front-table th{background:var(--blue-100);color:var(--blue-900);font-weight:800}
+.front-steps{list-style:none;padding:0;margin:5mm 0 0;display:grid;grid-template-columns:1fr 1fr;gap:2.5mm}
+.front-steps li{display:grid;grid-template-columns:9mm 1fr;gap:2mm;border:.2mm solid #c3d1d6;padding:2.5mm;border-radius:1.5mm}
+.front-steps li>b{font-size:10pt;color:var(--teal-700)}
+.front-steps span{display:block}.front-steps strong{display:block;font-size:8pt;color:var(--blue-900);margin-bottom:.7mm}
+.front-steps small{display:block;font-size:7.2pt;line-height:1.35;color:#334}
+
+/* milestone review — P020/P040: display only, no explanatory lesson */
+.review-strip{margin:1.8mm 0 2mm;padding:1.8mm 2.4mm;border:.22mm solid #9fb7bd;border-radius:1.8mm;display:grid;grid-template-columns:28mm 1fr 25mm;align-items:center;gap:2mm}
+.review-strip header h2{font-size:7.4pt;margin:0;color:var(--blue-900)}.review-strip header p{font-size:5.7pt;margin:.5mm 0 0}
+.review-letters{display:flex;flex-wrap:wrap;gap:.6mm 1.4mm;justify-content:center;font-size:11.5pt;line-height:1.15}
+.review-letters span{min-width:3.4mm;text-align:center}
+.review-harakat{display:flex;justify-content:flex-end;gap:2mm;align-items:center}.review-harakat div{display:flex;align-items:center;gap:1.5mm}.review-harakat b{font-size:6.2pt}.review-harakat .arabic{font-size:18pt;line-height:1}
+
+/* New harakat concept planting: compact, before main practice */
+.concept-intro{margin:1.5mm 0 2mm;padding:1.5mm 2.5mm;border:.22mm solid #9fb7bd;border-radius:1.8mm;display:flex;align-items:center;gap:4mm}
+.concept-intro h2{font-size:7pt;margin:0;color:var(--blue-900);min-width:15mm}
+.concept-items{display:flex;gap:5mm;align-items:center;direction:ltr}
+.concept-items span{display:flex;align-items:center;gap:1.5mm;white-space:nowrap}
+.concept-items b,.concept-items strong{font-size:17pt;font-weight:400;line-height:1}
+.concept-items i{font-family:sans-serif;font-size:9pt;font-style:normal;color:#566}
+
+/* v1.0 curriculum strip layout fix: strips occupy their own grid row, never overlay practice. */
+.book-page--concept{grid-template-rows:8mm 16mm 25mm 11mm minmax(0,1fr) 25mm 8mm}
+.book-page--review{grid-template-rows:8mm 16mm 25mm 13mm minmax(0,1fr) 25mm 8mm}
+.book-page--concept.book-page--review{grid-template-rows:8mm 16mm 25mm 13mm 11mm minmax(0,1fr) 25mm 8mm}
+.book-page--concept .concept-intro,.book-page--review .review-strip{margin:0;min-height:0;height:100%;align-self:stretch}
+.book-page--concept .practice-panel,.book-page--review .practice-panel{min-height:0;height:100%}
+.concept-intro{padding:1.2mm 3mm;justify-content:center}
+.concept-intro h2{font-size:7.5pt;min-width:14mm}
+.concept-items{justify-content:center;flex:1;gap:7mm}
+.concept-items b,.concept-items strong{font-size:20pt}
+
+/* two-row competency planting on first page of a new harakat */
+.book-page--concept{grid-template-rows:8mm 16mm 25mm 18mm minmax(0,1fr) 25mm 8mm}
+.concept-intro{display:grid;grid-template-columns:27mm 1fr;gap:3mm;padding:1.3mm 2.5mm}
+.concept-label{align-self:center}.concept-label h2{margin:0;font-size:7.2pt;color:var(--blue-900)}.concept-label small{display:block;margin-top:.7mm;font-size:5.2pt;line-height:1.2}
+.concept-rows{display:grid;grid-template-rows:1fr 1fr;gap:.8mm;min-width:0}
+.concept-rows .concept-items{display:flex;justify-content:space-around;gap:2mm;min-width:0}
+.concept-rows .concept-items span{gap:1mm}
+.concept-rows .concept-items b,.concept-rows .concept-items strong{font-size:16.5pt}
+
+/* full-size competency planting row */
+.book-page--concept{grid-template-rows:8mm 16mm 25mm 20mm minmax(0,1fr) 25mm 8mm}
+.concept-intro--practice{display:grid;grid-template-columns:25mm 1fr;align-items:center;padding:0 3mm;border:.22mm solid var(--blue-500);border-radius:1.8mm}
+.concept-intro--practice .concept-label h2{font-size:7.2pt;margin:0}
+.concept-intro--practice .concept-items{display:flex;justify-content:space-around;align-items:center;gap:3mm}
+.concept-intro--practice .concept-items span{display:flex;align-items:center;gap:2mm}
+.concept-intro--practice .concept-items b,.concept-intro--practice .concept-items strong{font-size:27pt;line-height:1;font-weight:400}
+.concept-intro--practice .concept-items i{font-size:12pt}
+.book-page--concept .practice-grid{grid-template-rows:repeat(7,1fr)}
+
+/* RTL competency transition: read old competence on the right, then new competence on the left. */
+.concept-intro--practice .concept-items{direction:rtl !important}
+.concept-intro--practice .concept-items i{font-size:0 !important}
+.concept-intro--practice .concept-items i::before{content:"\2190";font-size:12pt;font-family:Arial,sans-serif}

@@ -16,6 +16,8 @@ Hasil:
 - `dist/index.html` — pratinjau browser
 - `dist/QURBATA-JILID-1-PILOT.pdf` — PDF cetak
 
+Jika Chromium lokal dibatasi oleh sandbox, workflow GitHub Actions `QURBATA Book PDF` menjalankan build yang sama dan menyediakan PDF sebagai artefak selama 30 hari. Ini juga menjadi pemeriksaan build otomatis untuk setiap perubahan modul buku.
+
 ## Kontrak integrasi RIQA OS
 
 Setiap halaman memiliki:
@@ -39,4 +41,4 @@ Build dihentikan jika halaman latihan tidak memenuhi semuanya:
 
 ## Font
 
-Masukkan font resmi sesuai petunjuk `fonts/README.md`. Saat belum ada, browser memakai fallback Arab yang tersedia; fallback bukan font final produksi.
+Template memakai KFGQPC Uthman Taha Naskh untuk seluruh teks Arab/Al-Qur'an. Font dibundel secara lokal agar hasil tidak bergantung pada internet dan dapat diulang pada mesin produksi. Lihat sumber dan aturan penggantian font pada `fonts/README.md`.

@@ -1,0 +1,2436 @@
+{
+  "book": {
+    "id": "QURBATA-J2",
+    "title": "QURBATA JILID 2",
+    "status": "REBUILT-FROM-REPOSITORY-FROZEN-SOURCES"
+  },
+  "curriculumRules": {
+    "sourceOfTruth": [
+      "QJ2-MASTER",
+      "DEC-CUR-010",
+      "MAT-QJ2-FORM-001",
+      "DEC-CUR-012",
+      "QURBATA-BOOK-BLUEPRINT-v1.0-FROZEN"
+    ],
+    "P001_P020": "24 × 3 huruf; 12 Fokus + 12 Murojaah pada halaman akuisisi; tidak regresi ke dua huruf.",
+    "P021_P040": "8 × 3 + 16 × 4; tanwin P021-P024; mad asli P025-P040.",
+    "prohibited": "Sukun dan tasydid bukan kompetensi Jilid 2. Jangan memalsukan kata atau sumber.",
+    "specialPagesSuperseded": "P025 Hafalan-1, P028 Bahasa-Arab-2, P035 Remedial, P036 Hafalan-2, P038 Akhlak/Hadis-2 versi halaman khusus adalah SUPERSEDED. Seluruh 40 halaman wajib materi baca; Tahfidz/BA/NIDHOM/remedial hanya panel terintegrasi.",
+    "p025p040": "Wajib regenerasi mengikuti QJ2-MASTER v0.25 / DEC-CUR-012: P025 orientasi pendek-panjang; P026-P030 alif mad; P031-P034 ya mad; P035-P038 waw mad; P039 integrasi; P040 evaluasi."
+  },
+  "competencyMap": {
+    "P001_P018": "Huruf sambung bertahap",
+    "P019_P024": "Tanwin bertahap",
+    "P025_P028": "Kata empat huruf",
+    "P029_P032": "Mad bertahap",
+    "P033_P035": "Sukun per huruf",
+    "P036_P037": "Alif-Lam bertahap",
+    "P038_P039": "Awailus Suwar",
+    "P040": "Evaluasi/penguatan kumulatif"
+  },
+  "pages": [
+    {
+      "pageId": "QJ2-P001",
+      "pageNumber": "01",
+      "title": "Empat Posisi Huruf Ba",
+      "titleArabic": "أَشْكَالُ الْبَاءِ",
+      "tartilCompetency": "ب: tunggal → awal → tengah → akhir; tidak boleh ada bentuk sambung baru selain ب",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P001",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Fil 1",
+          "arabic": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَابِ الْفِيلِ",
+          "instruction": "Hafalkan target baru dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Sambungkan",
+          "arabic": "صِلْ",
+          "instruction": "Gunakan ungkapan ini selama kegiatan belajar."
+        },
+        "akhlak": {
+          "title": "Tekun",
+          "arabic": "أَحَبُّ الْأَعْمَالِ إِلَى اللَّهِ أَدْوَمُهَا",
+          "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
+        }
+      },
+      "rows": [],
+      "activities": [
+        "Bahasa Arab QURBATA: Sambungkan (صِلْ).",
+        "Tahfidz QURBATA: Al-Fil 1.",
+        "Akhlak QURBATA: Tekun."
+      ],
+      "status": "BLOCKED-FOR-STRICT-PREREQUISITE-REGENERATION",
+      "intro": {
+        "title": "Penanaman Kompetensi Baru",
+        "direction": "rtl-old-to-new",
+        "instruction": "Kenali perubahan bentuk ب. Huruf pelengkap tidak boleh menuntut bentuk sambung yang belum diajarkan.",
+        "items": [
+          [
+            "بَ",
+            "بَـ"
+          ],
+          [
+            "بِ",
+            "بِـ"
+          ],
+          [
+            "بُ",
+            "بُـ"
+          ],
+          [
+            "بَ",
+            "ـبَـ"
+          ],
+          [
+            "بَ",
+            "ـبَ"
+          ]
+        ]
+      },
+      "audit": {
+        "controller": [
+          "DEC-CUR-010",
+          "MAT-QJ2-FORM-001",
+          "QURBATA-BASELINE"
+        ],
+        "targetOnly": "ب",
+        "forbidFutureJoinedForms": true,
+        "meaningPriority": true,
+        "meaningCannotOverridePrerequisite": true,
+        "reason": "Existing regenerated examples leak joined forms of letters scheduled P002+; must be regenerated before print."
+      }
+    },
+    {
+      "pageId": "QJ2-P002",
+      "pageNumber": "02",
+      "title": "Keluarga Ba–Ta–Tsa",
+      "titleArabic": "أُسْرَةُ الْبَاءِ وَالتَّاءِ وَالثَّاءِ",
+      "tartilCompetency": "ب ت ث: satu kerangka, beda titik",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P002",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Fil 2",
+          "arabic": "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِي تَضْلِيلٍ",
+          "instruction": "Hafalkan target baru dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Pisahkan",
+          "arabic": "اِفْصِلْ",
+          "instruction": "Gunakan ungkapan ini selama kegiatan belajar."
+        },
+        "akhlak": {
+          "title": "Teliti",
+          "arabic": "إِنَّ اللَّهَ يُحِبُّ إِذَا عَمِلَ أَحَدُكُمْ عَمَلًا أَنْ يُتْقِنَهُ",
+          "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
+        }
+      },
+      "rows": [
+        [
+          "كَتَبَ",
+          "بَحَرَ",
+          "ثَبَتَ"
+        ],
+        [
+          "سَبَقَ",
+          "بَثَثَ",
+          "طَلَبَ"
+        ],
+        [
+          "تَبَتَ",
+          "كَسَبَ",
+          "بَتَثَ"
+        ],
+        [
+          "عَبَدَ",
+          "ثَبَرَ",
+          "قَبِلَ"
+        ],
+        [
+          "تَبِعَ",
+          "حَبَسَ",
+          "بَتَرَ"
+        ],
+        [
+          "نَبَتَ",
+          "ثَقَبَ",
+          "ذَهَبَ"
+        ],
+        [
+          "تَابَ",
+          "بَقَرَ",
+          "بَاتَ"
+        ],
+        [
+          "بَدَأَ",
+          "ثَابَ",
+          "بَلَغَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Pisahkan (اِفْصِلْ).",
+        "Tahfidz QURBATA: Al-Fil 2.",
+        "Akhlak QURBATA: Teliti."
+      ],
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
+    },
+    {
+      "pageId": "QJ2-P003",
+      "pageNumber": "03",
+      "title": "Kontras Ba–Ta–Tsa–Nun–Ya",
+      "titleArabic": "الْبَاءُ وَالتَّاءُ وَالثَّاءُ وَالنُّونُ وَالْيَاءُ",
+      "tartilCompetency": "ب ت ث ن ي pada awal dan tengah; bentuk akhir ن ي",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P003",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Fil 3",
+          "arabic": "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ",
+          "instruction": "Hafalkan target baru dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Bacalah kata",
+          "arabic": "اِقْرَأِ الْكَلِمَةَ",
+          "instruction": "Gunakan ungkapan ini selama kegiatan belajar."
+        },
+        "akhlak": {
+          "title": "Tidak tergesa-gesa",
+          "arabic": "التَّأَنِّي مِنَ اللَّهِ",
+          "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
+        }
+      },
+      "rows": [
+        [
+          "بَيتَ",
+          "كَتَبَ",
+          "بَنَتَ"
+        ],
+        [
+          "ثَبَتَ",
+          "نَبَتَ",
+          "بَتَرَ"
+        ],
+        [
+          "يَتِمَ",
+          "تَبِعَ",
+          "يَبِنَ"
+        ],
+        [
+          "بَتَثَ",
+          "بَيَنَ",
+          "ثَقَبَ"
+        ],
+        [
+          "نَيَبَ",
+          "بَاتَ",
+          "يَبِسَ"
+        ],
+        [
+          "تَابَ",
+          "تَيَنَ",
+          "بَثَثَ"
+        ],
+        [
+          "ثَنَا",
+          "تَبَتَ",
+          "بَنَت"
+        ],
+        [
+          "بَقَرَ",
+          "نَبِيَ",
+          "سَبَقَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Bacalah kata (اِقْرَأِ الْكَلِمَةَ).",
+        "Tahfidz QURBATA: Al-Fil 3.",
+        "Akhlak QURBATA: Tidak tergesa-gesa."
+      ],
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
+    },
+    {
+      "pageId": "QJ2-P004",
+      "pageNumber": "04",
+      "title": "Keluarga Jim–Ha–Kha",
+      "titleArabic": "أُسْرَةُ الْجِيمِ وَالْحَاءِ وَالْخَاءِ",
+      "tartilCompetency": "ج ح خ: satu kerangka mangkuk, beda titik",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P004",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Fil 4",
+          "arabic": "تَرْمِيهِمْ بِحِجَارَةٍ مِنْ سِجِّيلٍ",
+          "instruction": "Hafalkan target baru dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Perhatikan bentuknya",
+          "arabic": "اُنْظُرْ إِلَى شَكْلِهِ",
+          "instruction": "Gunakan ungkapan ini selama kegiatan belajar."
+        },
+        "akhlak": {
+          "title": "Memudahkan",
+          "arabic": "يَسِّرُوا وَلَا تُعَسِّرُوا",
+          "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
+        }
+      },
+      "rows": [
+        [
+          "جَبَلَ",
+          "بَيتَ",
+          "حَبلَ"
+        ],
+        [
+          "نَبِيَ",
+          "خَبَرَ",
+          "ثَنَى"
+        ],
+        [
+          "سَجَدَ",
+          "كَتَبَ",
+          "بَحَرَ"
+        ],
+        [
+          "بَنَت",
+          "دَخَلَ",
+          "يَبِسَ"
+        ],
+        [
+          "خَرَجَ",
+          "نَبَتَ",
+          "نَجَحَ"
+        ],
+        [
+          "بَيَنَ",
+          "حَجَبَ",
+          "تَيَنَ"
+        ],
+        [
+          "جَرَحَ",
+          "ثَبَتَ",
+          "خَلَقَ"
+        ],
+        [
+          "قَبِلَ",
+          "مَزَجَ",
+          "بَاتَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Perhatikan bentuknya (اُنْظُرْ إِلَى شَكْلِهِ).",
+        "Tahfidz QURBATA: Al-Fil 4.",
+        "Akhlak QURBATA: Memudahkan."
+      ],
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
+    },
+    {
+      "pageId": "QJ2-P005",
+      "pageNumber": "05",
+      "title": "Huruf Pemutus Dal–Dzal–Ra–Zai",
+      "titleArabic": "الدَّالُ وَالذَّالُ وَالرَّاءُ وَالزَّايُ",
+      "tartilCompetency": "د ذ ر ز: menyambung dari kanan tetapi memutus rangkaian sesudahnya",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P005",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Fil 5",
+          "arabic": "فَجَعَلَهُمْ كَعَصْفٍ مَأْكُولٍ",
+          "instruction": "Hafalkan target baru dan murojaah hafalan sebelumnya."
+        },
+        "arabic": {
+          "title": "Ulangi dengan benar",
+          "arabic": "أَعِدْ صَحِيحًا",
+          "instruction": "Gunakan ungkapan ini selama kegiatan belajar."
+        },
+        "akhlak": {
+          "title": "Menjaga ilmu",
+          "arabic": "قَيِّدُوا الْعِلْمَ بِالْكِتَابِ",
+          "instruction": "Praktikkan nilai akhlak ini dalam pembelajaran."
+        }
+      },
+      "rows": [
+        [
+          "دَرَسَ",
+          "جَبَلَ",
+          "ذَهَبَ"
+        ],
+        [
+          "حَبلَ",
+          "رَزَقَ",
+          "خَبَرَ"
+        ],
+        [
+          "زَرَعَ",
+          "نَجَحَ",
+          "بَدَأَ"
+        ],
+        [
+          "بَحَرَ",
+          "نَذَرَ",
+          "دَخَلَ"
+        ],
+        [
+          "خَرَجَ",
+          "حَجَبَ",
+          "بَرَزَ"
+        ],
+        [
+          "مَزَجَ",
+          "رَدَدَ",
+          "ثَبَتَ"
+        ],
+        [
+          "ذَكَرَ",
+          "بَيتَ",
+          "دَخَرَ"
+        ],
+        [
+          "نَبِيَ",
+          "زَهَدَ",
+          "خَلَقَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Ulangi dengan benar (أَعِدْ صَحِيحًا).",
+        "Tahfidz QURBATA: Al-Fil 5.",
+        "Akhlak QURBATA: Menjaga ilmu."
+      ],
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
+    },
+    {
+      "pageId": "QJ2-P006",
+      "pageNumber": "06",
+      "title": "Alif–Waw: Pemutus Sambungan",
+      "titleArabic": "الْأَلِفُ وَالْوَاوُ",
+      "tartilCompetency": "ا و dalam rangkaian tiga huruf",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P006",
+      "integration": {
+        "tahfidz": {
+          "title": "Quraisy 1",
+          "arabic": "لِإِيلَافِ قُرَيْشٍ",
+          "instruction": "Hafalkan target baru dan murojaah sebelumnya."
+        },
+        "arabic": {
+          "title": "Sambung huruf",
+          "arabic": "صِلِ الْحُرُوفَ",
+          "instruction": "Gunakan selama kegiatan belajar."
+        },
+        "akhlak": {
+          "title": "Sabar belajar",
+          "arabic": "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
+          "instruction": "Praktikkan dalam pembelajaran."
+        }
+      },
+      "activities": [
+        "Bahasa Arab QURBATA: Sambung huruf.",
+        "Tahfidz QURBATA: Quraisy 1.",
+        "Akhlak QURBATA: Sabar belajar."
+      ],
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "rows": [
+        [
+          "وَجَدَ",
+          "دَرَسَ",
+          "قَالَ"
+        ],
+        [
+          "جَبَلَ",
+          "دَعَا",
+          "ذَهَبَ"
+        ],
+        [
+          "وَعَدَ",
+          "نَجَحَ",
+          "صَامَ"
+        ],
+        [
+          "بَرَزَ",
+          "وَرَدَ",
+          "خَرَجَ"
+        ],
+        [
+          "زَادَ",
+          "ثَبَرَ",
+          "وَلَدَ"
+        ],
+        [
+          "حَجَبَ",
+          "نَامَ",
+          "يَبِسَ"
+        ],
+        [
+          "وَهَبَ",
+          "رَزَقَ",
+          "بَاعَ"
+        ],
+        [
+          "ثَقَبَ",
+          "وَقَفَ",
+          "زَهَدَ"
+        ]
+      ]
+    },
+    {
+      "pageId": "QJ2-P007",
+      "pageNumber": "07",
+      "title": "Keluarga Sin–Syin",
+      "titleArabic": "أُسْرَةُ السِّينِ وَالشِّينِ",
+      "tartilCompetency": "س ش: kerangka bergigi, beda titik",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P007",
+      "integration": {
+        "tahfidz": {
+          "title": "Quraisy 2",
+          "arabic": "إِيلَافِهِمْ رِحْلَةَ الشِّتَاءِ وَالصَّيْفِ",
+          "instruction": "Hafalkan target baru dan murojaah sebelumnya."
+        },
+        "arabic": {
+          "title": "Bentuk kata",
+          "arabic": "كَوِّنْ كَلِمَةً",
+          "instruction": "Gunakan selama kegiatan belajar."
+        },
+        "akhlak": {
+          "title": "Bersungguh-sungguh",
+          "arabic": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
+          "instruction": "Praktikkan dalam pembelajaran."
+        }
+      },
+      "activities": [
+        "Bahasa Arab QURBATA: Bentuk kata.",
+        "Tahfidz QURBATA: Quraisy 2.",
+        "Akhlak QURBATA: Bersungguh-sungguh."
+      ],
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "rows": [
+        [
+          "سَجَدَ",
+          "وَجَدَ",
+          "شَكَرَ"
+        ],
+        [
+          "قَالَ",
+          "سَمَعَ",
+          "وَعَدَ"
+        ],
+        [
+          "شَهَدَ",
+          "دَعَا",
+          "جَلَسَ"
+        ],
+        [
+          "وَلَدَ",
+          "حَبَسَ",
+          "زَادَ"
+        ],
+        [
+          "لَبِسَ",
+          "نَجَحَ",
+          "نَشَرَ"
+        ],
+        [
+          "ثَبَرَ",
+          "بَشَرَ",
+          "خَرَجَ"
+        ],
+        [
+          "شَعَرَ",
+          "وَهَبَ",
+          "شَرِبَ"
+        ],
+        [
+          "بَاعَ",
+          "غَسَلَ",
+          "رَزَقَ"
+        ]
+      ]
+    },
+    {
+      "pageId": "QJ2-P008",
+      "pageNumber": "08",
+      "title": "Keluarga Shad–Dhad",
+      "titleArabic": "أُسْرَةُ الصَّادِ وَالضَّادِ",
+      "tartilCompetency": "ص ض: kerangka mangkuk tebal, beda titik",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P008",
+      "integration": {
+        "tahfidz": {
+          "title": "Quraisy 3",
+          "arabic": "فَلْيَعْبُدُوا رَبَّ هَذَا الْبَيْتِ",
+          "instruction": "Hafalkan target baru dan murojaah sebelumnya."
+        },
+        "arabic": {
+          "title": "Baca perlahan",
+          "arabic": "اِقْرَأْ بِتَأَنٍّ",
+          "instruction": "Gunakan selama kegiatan belajar."
+        },
+        "akhlak": {
+          "title": "Rendah hati",
+          "arabic": "وَلَا تَمْشِ فِي الْأَرْضِ مَرَحًا",
+          "instruction": "Praktikkan dalam pembelajaran."
+        }
+      },
+      "activities": [
+        "Bahasa Arab QURBATA: Baca perlahan.",
+        "Tahfidz QURBATA: Quraisy 3.",
+        "Akhlak QURBATA: Rendah hati."
+      ],
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "rows": [
+        [
+          "صَدَقَ",
+          "سَجَدَ",
+          "صَبَرَ"
+        ],
+        [
+          "شَكَرَ",
+          "صَلَحَ",
+          "جَلَسَ"
+        ],
+        [
+          "صَعَدَ",
+          "نَشَرَ",
+          "نَصَرَ"
+        ],
+        [
+          "حَبَسَ",
+          "فَصَلَ",
+          "شَهَدَ"
+        ],
+        [
+          "ضَرَبَ",
+          "وَجَدَ",
+          "ضَحِكَ"
+        ],
+        [
+          "ذَهَبَ",
+          "مَرِضَ",
+          "بَشَرَ"
+        ],
+        [
+          "فَرَضَ",
+          "غَسَلَ",
+          "قَبَضَ"
+        ],
+        [
+          "وَقَفَ",
+          "حَضَرَ",
+          "سَمَعَ"
+        ]
+      ]
+    },
+    {
+      "pageId": "QJ2-P009",
+      "pageNumber": "09",
+      "title": "Keluarga Tha–Zha",
+      "titleArabic": "أُسْرَةُ الطَّاءِ وَالظَّاءِ",
+      "tartilCompetency": "ط ظ: kerangka bertiang, beda titik",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P009",
+      "integration": {
+        "tahfidz": {
+          "title": "Quraisy 4",
+          "arabic": "الَّذِي أَطْعَمَهُمْ مِنْ جُوعٍ وَآمَنَهُمْ مِنْ خَوْفٍ",
+          "instruction": "Hafalkan target baru dan murojaah sebelumnya."
+        },
+        "arabic": {
+          "title": "Baca dengan jelas",
+          "arabic": "اِقْرَأْ بِوُضُوحٍ",
+          "instruction": "Gunakan selama kegiatan belajar."
+        },
+        "akhlak": {
+          "title": "Bersyukur",
+          "arabic": "لَئِنْ شَكَرْتُمْ لَأَزِيدَنَّكُمْ",
+          "instruction": "Praktikkan dalam pembelajaran."
+        }
+      },
+      "activities": [
+        "Bahasa Arab QURBATA: Baca dengan jelas.",
+        "Tahfidz QURBATA: Quraisy 4.",
+        "Akhlak QURBATA: Bersyukur."
+      ],
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "rows": [
+        [
+          "طَلَبَ",
+          "صَدَقَ",
+          "طَبَعَ"
+        ],
+        [
+          "ضَرَبَ",
+          "طَرَدَ",
+          "نَصَرَ"
+        ],
+        [
+          "طَلَعَ",
+          "حَضَرَ",
+          "بَطَلَ"
+        ],
+        [
+          "قَبَضَ",
+          "نَطَقَ",
+          "فَصَلَ"
+        ],
+        [
+          "نَظَرَ",
+          "شَكَرَ",
+          "ظَهَرَ"
+        ],
+        [
+          "سَجَدَ",
+          "ظَلَمَ",
+          "صَبَرَ"
+        ],
+        [
+          "حَفِظَ",
+          "مَرِضَ",
+          "وَعَظَ"
+        ],
+        [
+          "صَلَحَ",
+          "لَفَظَ",
+          "ضَحِكَ"
+        ]
+      ]
+    },
+    {
+      "pageId": "QJ2-P010",
+      "pageNumber": "10",
+      "title": "Evaluasi Bentuk I",
+      "titleArabic": "تَقْيِيمُ الْأَشْكَالِ",
+      "tartilCompetency": "evaluasi P001–P009; tidak ada huruf baru",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P010",
+      "integration": {
+        "tahfidz": {
+          "title": "Murojaah Al-Fil–Quraisy",
+          "arabic": "مُرَاجَعَةُ سُورَتَيِ الْفِيلِ وَقُرَيْشٍ",
+          "instruction": "Murojaah target tanpa mengganti target baru pada halaman materi."
+        },
+        "arabic": {
+          "title": "Ulangi bersama",
+          "arabic": "أَعِدْ مَعَنَا",
+          "instruction": "Gunakan selama kegiatan belajar."
+        },
+        "akhlak": {
+          "title": "Istiqamah",
+          "arabic": "فَاسْتَقِمْ كَمَا أُمِرْتَ",
+          "instruction": "Praktikkan dalam pembelajaran."
+        }
+      },
+      "rows": [
+        [
+          "كَتَبَ",
+          "نَبَتَ",
+          "يَبِسَ"
+        ],
+        [
+          "جَبَلَ",
+          "نَجَحَ",
+          "خَرَجَ"
+        ],
+        [
+          "دَرَسَ",
+          "ذَهَبَ",
+          "بَرَزَ"
+        ],
+        [
+          "وَجَدَ",
+          "قَالَ",
+          "وَعَدَ"
+        ],
+        [
+          "سَجَدَ",
+          "شَكَرَ",
+          "نَشَرَ"
+        ],
+        [
+          "صَدَقَ",
+          "نَصَرَ",
+          "ضَرَبَ"
+        ],
+        [
+          "حَضَرَ",
+          "طَلَبَ",
+          "نَطَقَ"
+        ],
+        [
+          "ظَهَرَ",
+          "حَفِظَ",
+          "لَفَظَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Ulangi bersama.",
+        "Tahfidz QURBATA: Murojaah Al-Fil–Quraisy.",
+        "Akhlak QURBATA: Istiqamah."
+      ],
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
+    },
+    {
+      "pageId": "QJ2-P011",
+      "pageNumber": "11",
+      "title": "Keluarga Fa–Qaf",
+      "titleArabic": "أُسْرَةُ الْفَاءِ وَالْقَافِ",
+      "tartilCompetency": "ف ق: kepala, titik, dan bentuk akhir",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P011",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "فَتَحَ",
+          "طَلَبَ",
+          "فَهِمَ"
+        ],
+        [
+          "ظَهَرَ",
+          "فَلَقَ",
+          "صَدَقَ"
+        ],
+        [
+          "غَفَرَ",
+          "ضَرَبَ",
+          "نَفَعَ"
+        ],
+        [
+          "شَكَرَ",
+          "وَقَفَ",
+          "سَجَدَ"
+        ],
+        [
+          "قَعَدَ",
+          "وَعَظَ",
+          "قَدَرَ"
+        ],
+        [
+          "حَفِظَ",
+          "قَرُبَ",
+          "نَطَقَ"
+        ],
+        [
+          "قَتَلَ",
+          "مَرِضَ",
+          "سَبَقَ"
+        ],
+        [
+          "نَصَرَ",
+          "خَلَقَ",
+          "لَفَظَ"
+        ]
+      ],
+      "activities": [],
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
+    },
+    {
+      "pageId": "QJ2-P012",
+      "pageNumber": "12",
+      "title": "Huruf Unik Kaf",
+      "titleArabic": "أَشْكَالُ الْكَافِ",
+      "tartilCompetency": "ك: perubahan tunggal, awal, tengah, dan akhir",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P012",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "كَتَبَ",
+          "فَتَحَ",
+          "كَسَبَ"
+        ],
+        [
+          "قَعَدَ",
+          "كَفَرَ",
+          "فَهِمَ"
+        ],
+        [
+          "مَلَكَ",
+          "قَدَرَ",
+          "شَكَرَ"
+        ],
+        [
+          "غَفَرَ",
+          "ذَكَرَ",
+          "فَلَقَ"
+        ],
+        [
+          "رَكِبَ",
+          "نَفَعَ",
+          "سَكَنَ"
+        ],
+        [
+          "وَقَفَ",
+          "ضَحِكَ",
+          "قَرُبَ"
+        ],
+        [
+          "تَرَكَ",
+          "قَتَلَ",
+          "حَكَمَ"
+        ],
+        [
+          "سَبَقَ",
+          "مَسَكَ",
+          "خَلَقَ"
+        ]
+      ],
+      "activities": [],
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
+    },
+    {
+      "pageId": "QJ2-P013",
+      "pageNumber": "13",
+      "title": "Keluarga Alur Lam–Mim",
+      "titleArabic": "اللَّامُ وَالْمِيمُ",
+      "tartilCompetency": "ل م: perubahan alur dan badan dalam sambungan",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P013",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "عَلِمَ",
+          "كَتَبَ",
+          "عَمِلَ"
+        ],
+        [
+          "رَكِبَ",
+          "حَمَلَ",
+          "شَكَرَ"
+        ],
+        [
+          "سَلِمَ",
+          "حَكَمَ",
+          "مَلَكَ"
+        ],
+        [
+          "فَهِمَ",
+          "قَلَمَ",
+          "قَدَرَ"
+        ],
+        [
+          "حَلُمَ",
+          "ضَحِكَ",
+          "لَمَحَ"
+        ],
+        [
+          "ذَكَرَ",
+          "لَمَسَ",
+          "نَفَعَ"
+        ],
+        [
+          "مَنَعَ",
+          "تَرَكَ",
+          "مَلَأَ"
+        ],
+        [
+          "سَبَقَ",
+          "لَزِمَ",
+          "وَقَفَ"
+        ]
+      ],
+      "activities": [],
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
+    },
+    {
+      "pageId": "QJ2-P014",
+      "pageNumber": "14",
+      "title": "Keluarga Ain–Ghain",
+      "titleArabic": "الْعَيْنُ وَالْغَيْنُ",
+      "tartilCompetency": "ع غ: kepala terbuka, perubahan posisi, dan titik",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P014",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "عَلِمَ",
+          "حَمَلَ",
+          "عَمِلَ"
+        ],
+        [
+          "لَمَحَ",
+          "عَبَدَ",
+          "نَفَعَ"
+        ],
+        [
+          "عَرَفَ",
+          "قَلَمَ",
+          "جَعَلَ"
+        ],
+        [
+          "سَلِمَ",
+          "مَنَعَ",
+          "مَلَكَ"
+        ],
+        [
+          "غَفَرَ",
+          "كَتَبَ",
+          "غَسَلَ"
+        ],
+        [
+          "فَتَحَ",
+          "بَلَغَ",
+          "قَرُبَ"
+        ],
+        [
+          "فَرَغَ",
+          "حَكَمَ",
+          "شَغَلَ"
+        ],
+        [
+          "لَزِمَ",
+          "صَغُرَ",
+          "ذَكَرَ"
+        ]
+      ],
+      "activities": [],
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
+    },
+    {
+      "pageId": "QJ2-P015",
+      "pageNumber": "15",
+      "title": "Empat Bentuk Ha",
+      "titleArabic": "أَشْكَالُ الْهَاءِ",
+      "tartilCompetency": "ه: tunggal, awal, tengah, dan akhir",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P015",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "هَدَفَ",
+          "عَلِمَ",
+          "هَلَكَ"
+        ],
+        [
+          "غَفَرَ",
+          "هَجَرَ",
+          "جَعَلَ"
+        ],
+        [
+          "هَمَسَ",
+          "شَغَلَ",
+          "وَهَبَ"
+        ],
+        [
+          "مَنَعَ",
+          "شَهَدَ",
+          "بَلَغَ"
+        ],
+        [
+          "فَهِمَ",
+          "حَمَلَ",
+          "نَهَرَ"
+        ],
+        [
+          "كَتَبَ",
+          "سَهَلَ",
+          "قَلَمَ"
+        ],
+        [
+          "لَهَبَ",
+          "صَغُرَ",
+          "وَجَهَ"
+        ],
+        [
+          "عَرَفَ",
+          "فَقَهَ",
+          "مَلَكَ"
+        ]
+      ],
+      "activities": [],
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
+    },
+    {
+      "pageId": "QJ2-P016",
+      "pageNumber": "16",
+      "title": "Kontras Ta–Ta Marbuthah–Ha",
+      "titleArabic": "التَّاءُ وَالتَّاءُ الْمَرْبُوطَةُ وَالْهَاءُ",
+      "tartilCompetency": "ت ة ه",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P016",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "هِبَةَ",
+          "عَلِمَ",
+          "سَعَةَ"
+        ],
+        [
+          "غَفَرَ",
+          "عِدَةَ",
+          "هَدَفَ"
+        ],
+        [
+          "زِنَةَ",
+          "وَهَبَ",
+          "لُغَةَ"
+        ],
+        [
+          "هَجَرَ",
+          "سَنَةَ",
+          "كَتَبَ"
+        ],
+        [
+          "صِلَةَ",
+          "نَبَتَ",
+          "ثِقَةَ"
+        ],
+        [
+          "شَهَدَ",
+          "بَنَتَ",
+          "هَلَكَ"
+        ],
+        [
+          "فَقَهَ",
+          "تَرَكَ",
+          "وَجَهَ"
+        ],
+        [
+          "حَضَرَ",
+          "كَرِهَ",
+          "لَهَبَ"
+        ]
+      ],
+      "activities": [],
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
+    },
+    {
+      "pageId": "QJ2-P017",
+      "pageNumber": "17",
+      "title": "Kontras Ya–Alif Maqsurah",
+      "titleArabic": "الْيَاءُ وَالْأَلِفُ الْمَقْصُورَةُ",
+      "tartilCompetency": "ي ى",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P017",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "هَدَى",
+          "هِبَةَ",
+          "بَنَى"
+        ],
+        [
+          "سَنَةَ",
+          "رَمَى",
+          "كَتَبَ"
+        ],
+        [
+          "سَعَى",
+          "فَقَهَ",
+          "مَضَى"
+        ],
+        [
+          "لُغَةَ",
+          "بَغَى",
+          "كَرِهَ"
+        ],
+        [
+          "قَضَى",
+          "عِدَةَ",
+          "نَهَى"
+        ],
+        [
+          "بَنَتَ",
+          "جَرَى",
+          "وَجَهَ"
+        ],
+        [
+          "رَضِيَ",
+          "ثِقَةَ",
+          "بَقِيَ"
+        ],
+        [
+          "شَهَدَ",
+          "لَقِيَ",
+          "صِلَةَ"
+        ]
+      ],
+      "activities": [],
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
+    },
+    {
+      "pageId": "QJ2-P018",
+      "pageNumber": "18",
+      "title": "Pengenalan Bentuk Hamzah",
+      "titleArabic": "أَشْكَالُ الْهَمْزَةِ",
+      "tartilCompetency": "ء أ إ ؤ ئ",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P018",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "سَأَلَ",
+          "هَدَى",
+          "قَرَأَ"
+        ],
+        [
+          "رَضِيَ",
+          "بَدَأَ",
+          "سَعَى"
+        ],
+        [
+          "أَكَلَ",
+          "بَقِيَ",
+          "أَمَرَ"
+        ],
+        [
+          "هِبَةَ",
+          "أَخَذَ",
+          "قَضَى"
+        ],
+        [
+          "إِبِلَ",
+          "لَقِيَ",
+          "إِذَا"
+        ],
+        [
+          "كَرِهَ",
+          "سُئِلَ",
+          "نَهَى"
+        ],
+        [
+          "فِئَةَ",
+          "صِلَةَ",
+          "مِئَةَ"
+        ],
+        [
+          "جَرَى",
+          "بَرِئَ",
+          "شَهَدَ"
+        ]
+      ],
+      "activities": [],
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
+    },
+    {
+      "pageId": "QJ2-P019",
+      "pageNumber": "19",
+      "title": "Integrasi Seluruh Bentuk",
+      "titleArabic": "تَكَامُلُ أَشْكَالِ الْحُرُوفِ",
+      "tartilCompetency": "semua bentuk P001–P018",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P019",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "كَتَبَ",
+          "نَبَتَ",
+          "خَرَجَ"
+        ],
+        [
+          "حَضَرَ",
+          "وَجَدَ",
+          "ذَهَبَ"
+        ],
+        [
+          "سَجَدَ",
+          "شَكَرَ",
+          "صَدَقَ"
+        ],
+        [
+          "ضَرَبَ",
+          "طَلَبَ",
+          "ظَهَرَ"
+        ],
+        [
+          "عَلِمَ",
+          "غَفَرَ",
+          "فَهِمَ"
+        ],
+        [
+          "قَرُبَ",
+          "مَلَكَ",
+          "هِبَةَ"
+        ],
+        [
+          "رَضِيَ",
+          "قَضَى",
+          "سَأَلَ"
+        ],
+        [
+          "إِبِلَ",
+          "سُئِلَ",
+          "بَرِئَ"
+        ]
+      ],
+      "activities": [],
+      "status": "SOURCE-OF-TRUTH-REGENERATED"
+    },
+    {
+      "pageId": "QJ2-P020",
+      "pageNumber": "20",
+      "title": "Evaluasi Bentuk II",
+      "titleArabic": "تَقْيِيمُ الْأَشْكَالِ الثَّانِي",
+      "tartilCompetency": "evaluasi P011–P019",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P020",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "فَتَحَ",
+          "خَلَقَ",
+          "ضَحِكَ"
+        ],
+        [
+          "لَمَسَ",
+          "مَنَعَ",
+          "جَعَلَ"
+        ],
+        [
+          "شَغَلَ",
+          "هَلَكَ",
+          "وَهَبَ"
+        ],
+        [
+          "فَقَهَ",
+          "سَنَةَ",
+          "ثِقَةَ"
+        ],
+        [
+          "بَنَتَ",
+          "رَمَى",
+          "بَقِيَ"
+        ],
+        [
+          "قَرَأَ",
+          "أَمَرَ",
+          "إِذَا"
+        ],
+        [
+          "فِئَةَ",
+          "مِئَةَ",
+          "وَقَفَ"
+        ],
+        [
+          "ذَكَرَ",
+          "بَرَزَ",
+          "نَهَرَ"
+        ]
+      ],
+      "activities": [],
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P020-Evaluasi-Bentuk-II.md"
+    },
+    {
+      "pageId": "QJ2-P021",
+      "pageNumber": "21",
+      "title": "Fathatain dan Jembatan Tiga–Empat Huruf",
+      "titleArabic": "الْفَتْحَتَانِ",
+      "tartilCompetency": "Tanwin bertahap sesuai tangga kompetensi Jilid 2.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P021",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "أَحَدًا",
+          "رَجُلَ",
+          "عَمَلًا"
+        ],
+        [
+          "مَثَلَ",
+          "بَشَرًا",
+          "وَلَدَ"
+        ],
+        [
+          "أَجَلًا",
+          "خَبَرَ",
+          "شَجَرَةً"
+        ],
+        [
+          "بَقَرَةَ",
+          "كَلِمَةً",
+          "حَسَنَةَ"
+        ],
+        [
+          "ثَمَرَةً",
+          "وَرَقَةَ",
+          "دَرَجَةً"
+        ],
+        [
+          "رَقَبَةَ",
+          "نَظِرَةً",
+          "بَرَكَةَ"
+        ],
+        [
+          "حَرَكَةً",
+          "سَمَكَةَ",
+          "صَدَقَةً"
+        ],
+        [
+          "نَفَقَةَ",
+          "طَبَقَةً",
+          "شَبَكَةَ"
+        ]
+      ],
+      "activities": [],
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P021-Fathatain-dan-Jembatan-Tiga-Empat-Huruf.md"
+    },
+    {
+      "pageId": "QJ2-P022",
+      "pageNumber": "22",
+      "title": "Kasratain dan Jembatan Tiga–Empat Huruf",
+      "titleArabic": "الْكَسْرَتَانِ",
+      "tartilCompetency": "Tanwin bertahap sesuai tangga kompetensi Jilid 2.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P022",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "أَحَدًا",
+          "رَجُلٍ",
+          "عَمَلًا"
+        ],
+        [
+          "مَثَلٍ",
+          "بَشَرًا",
+          "وَلَدٍ"
+        ],
+        [
+          "أَجَلًا",
+          "خَبَرٍ",
+          "شَجَرَةً"
+        ],
+        [
+          "بَقَرَةٍ",
+          "كَلِمَةً",
+          "حَسَنَةٍ"
+        ],
+        [
+          "ثَمَرَةً",
+          "وَرَقَةٍ",
+          "دَرَجَةً"
+        ],
+        [
+          "رَقَبَةٍ",
+          "نَظِرَةً",
+          "بَرَكَةٍ"
+        ],
+        [
+          "حَرَكَةً",
+          "سَمَكَةٍ",
+          "صَدَقَةً"
+        ],
+        [
+          "نَفَقَةٍ",
+          "طَبَقَةً",
+          "شَبَكَةٍ"
+        ]
+      ],
+      "activities": [],
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P022-Kasratain-dan-Jembatan-Tiga-Empat-Huruf.md"
+    },
+    {
+      "pageId": "QJ2-P023",
+      "pageNumber": "23",
+      "title": "Dhammatain dan Jembatan Tiga–Empat Huruf",
+      "titleArabic": "الضَّمَّتَانِ",
+      "tartilCompetency": "Tanwin bertahap sesuai tangga kompetensi Jilid 2.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P023",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "أَحَدٌ",
+          "رَجُلٌ",
+          "عَمَلٍ"
+        ],
+        [
+          "مَثَلٍ",
+          "بَشَرٌ",
+          "وَلَدٌ"
+        ],
+        [
+          "أَجَلٍ",
+          "خَبَرٍ",
+          "شَجَرَةٌ"
+        ],
+        [
+          "بَقَرَةٌ",
+          "كَلِمَةٍ",
+          "حَسَنَةٍ"
+        ],
+        [
+          "ثَمَرَةٌ",
+          "وَرَقَةٌ",
+          "دَرَجَةٍ"
+        ],
+        [
+          "رَقَبَةٍ",
+          "نَظِرَةٌ",
+          "بَرَكَةٌ"
+        ],
+        [
+          "حَرَكَةٍ",
+          "سَمَكَةٍ",
+          "صَدَقَةٌ"
+        ],
+        [
+          "نَفَقَةٌ",
+          "طَبَقَةٍ",
+          "شَبَكَةٍ"
+        ]
+      ],
+      "activities": [],
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P023-Dhammatain-dan-Jembatan-Tiga-Empat-Huruf.md"
+    },
+    {
+      "pageId": "QJ2-P024",
+      "pageNumber": "24",
+      "title": "Integrasi Tiga Tanwin",
+      "titleArabic": "تَكَامُلُ التَّنْوِينِ",
+      "tartilCompetency": "Tanwin bertahap sesuai tangga kompetensi Jilid 2.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P024",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "أَحَدًا",
+          "رَجُلٍ",
+          "عَمَلٌ"
+        ],
+        [
+          "مَثَلًا",
+          "بَشَرٍ",
+          "وَلَدٌ"
+        ],
+        [
+          "أَجَلًا",
+          "خَبَرٍ",
+          "شَجَرَةٌ"
+        ],
+        [
+          "بَقَرَةً",
+          "كَلِمَةٍ",
+          "حَسَنَةٌ"
+        ],
+        [
+          "ثَمَرَةً",
+          "وَرَقَةٍ",
+          "دَرَجَةٌ"
+        ],
+        [
+          "رَقَبَةً",
+          "نَظِرَةٍ",
+          "بَرَكَةٌ"
+        ],
+        [
+          "حَرَكَةً",
+          "سَمَكَةٍ",
+          "صَدَقَةٌ"
+        ],
+        [
+          "نَفَقَةً",
+          "طَبَقَةٍ",
+          "شَبَكَةٌ"
+        ]
+      ],
+      "activities": [],
+      "status": "SOURCE-OF-TRUTH-REGENERATED",
+      "sourcePath": "books/jilid-2/regenerated/QJ2-P024-Integrasi-Tiga-Tanwin.md"
+    },
+    {
+      "pageId": "QJ2-P025",
+      "pageNumber": "25",
+      "title": "Orientasi Pendek–Panjang",
+      "titleArabic": "الْقَصِيرُ وَالطَّوِيلُ",
+      "tartilCompetency": "dengar, tunjuk, tirukan; 8 × 3 + 16 × 4",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P025",
+      "integration": {
+        "tahfidz": {
+          "status": "PANEL-INTEGRATED-NOT-SEPARATE-PAGE"
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "كَتَبَ",
+          "قَالَ",
+          "عَلِمَ"
+        ],
+        [
+          "قِيلَ",
+          "رَسُلَ",
+          "نُورُ"
+        ],
+        [
+          "ذَهَبَ",
+          "نَامَ",
+          "فَهِمَ"
+        ],
+        [
+          "دِينِ",
+          "حَسُنَ",
+          "سُوقُ"
+        ],
+        [
+          "كَتَبَ",
+          "كِتَابَ",
+          "عَذَبَ"
+        ],
+        [
+          "عَذَابَ",
+          "رَحِمَ",
+          "رَحِيمِ"
+        ],
+        [
+          "رَسُلَ",
+          "رَسُولُ",
+          "حَسَبَ"
+        ]
+      ],
+      "activities": [],
+      "status": "STAGING-CONTROLLED-AWAITING-EXPERT-GATE",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md",
+      "intro": {
+        "title": "Penanaman Kompetensi Baru",
+        "items": [
+          [
+            "بَ",
+            "بَا"
+          ],
+          [
+            "بِ",
+            "بِي"
+          ],
+          [
+            "بُ",
+            "بُو"
+          ]
+        ],
+        "instruction": "Bandingkan bunyi pendek dengan bunyi panjang dua harakat. Materi baru ditampilkan sebelum latihan.",
+        "direction": "rtl-old-to-new"
+      },
+      "audit": {
+        "noTanwin": true,
+        "noShadda": true,
+        "noWrittenSukun": true,
+        "meaningPriority": true,
+        "expertAudioRequired": true
+      }
+    },
+    {
+      "pageId": "QJ2-P026",
+      "pageNumber": "26",
+      "title": "Fathah Pendek vs Fathah + Alif",
+      "titleArabic": "الْفَتْحَةُ وَمَدُّ الْأَلِفِ",
+      "tartilCompetency": "kontras pendek dengan alif mad; 8 × 3 + 16 × 4",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P026",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "كَتَبَ",
+          "قَالَ",
+          "ذَهَبَ"
+        ],
+        [
+          "بَاعَ",
+          "نَظَرَ",
+          "نَامَ"
+        ],
+        [
+          "صَبَرَ",
+          "صَامَ",
+          "كَتَبَ"
+        ],
+        [
+          "كِتَابَ",
+          "عَذَبَ",
+          "عَذَابَ"
+        ],
+        [
+          "سَحَبَ",
+          "سَحَابَ",
+          "شَرَبَ"
+        ],
+        [
+          "شَرَابَ",
+          "جَوَبَ",
+          "جَوَابَ"
+        ],
+        [
+          "حَسَبَ",
+          "حِسَابَ",
+          "مَكَنَ"
+        ]
+      ],
+      "activities": [],
+      "status": "STAGING-CONTROLLED-AWAITING-EXPERT-GATE",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md",
+      "intro": {
+        "title": "Penanaman Kompetensi Baru",
+        "items": [
+          [
+            "بَ",
+            "بَا"
+          ],
+          [
+            "قَ",
+            "قَا"
+          ],
+          [
+            "نَ",
+            "نَا"
+          ]
+        ],
+        "instruction": "Bandingkan bunyi pendek dengan bunyi panjang dua harakat. Materi baru ditampilkan sebelum latihan.",
+        "direction": "rtl-old-to-new"
+      },
+      "audit": {
+        "noTanwin": true,
+        "noShadda": true,
+        "noWrittenSukun": true,
+        "meaningPriority": true,
+        "expertAudioRequired": true
+      }
+    },
+    {
+      "pageId": "QJ2-P027",
+      "pageNumber": "27",
+      "title": "Alif Mad pada Tiga Huruf",
+      "titleArabic": "مَدُّ الْأَلِفِ",
+      "tartilCompetency": "alif mad dalam rangkaian; 8 × 3 + 16 × 4",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P027",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "قَالَ",
+          "كَتَبَ",
+          "بَاعَ"
+        ],
+        [
+          "ذَهَبَ",
+          "نَامَ",
+          "نَظَرَ"
+        ],
+        [
+          "صَامَ",
+          "صَبَرَ",
+          "كِتَابَ"
+        ],
+        [
+          "عَلِمَ",
+          "عَذَابَ",
+          "غَفَرَ"
+        ],
+        [
+          "سَحَابَ",
+          "شَكَرَ",
+          "شَرَابَ"
+        ],
+        [
+          "سَجَدَ",
+          "جَوَابَ",
+          "فَهِمَ"
+        ],
+        [
+          "حِسَابَ",
+          "ذَكَرَ",
+          "مَكَانَ"
+        ]
+      ],
+      "activities": [],
+      "status": "STAGING-CONTROLLED-AWAITING-EXPERT-GATE",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md",
+      "intro": {
+        "title": "Penanaman Kompetensi Baru",
+        "items": [
+          [
+            "قَ",
+            "قَا"
+          ],
+          [
+            "بَ",
+            "بَا"
+          ],
+          [
+            "صَ",
+            "صَا"
+          ]
+        ],
+        "instruction": "Bandingkan bunyi pendek dengan bunyi panjang dua harakat. Materi baru ditampilkan sebelum latihan.",
+        "direction": "rtl-old-to-new"
+      },
+      "audit": {
+        "noTanwin": true,
+        "noShadda": true,
+        "noWrittenSukun": true,
+        "meaningPriority": true,
+        "expertAudioRequired": true
+      }
+    },
+    {
+      "pageId": "QJ2-P028",
+      "pageNumber": "28",
+      "title": "Alif Mad pada Empat Huruf dan Pemutus",
+      "titleArabic": "مَدُّ الْأَلِفِ فِي أَرْبَعَةِ أَحْرُفٍ",
+      "tartilCompetency": "alif mad + huruf pemutus; 8 × 3 + 16 × 4",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P028",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "status": "PANEL-INTEGRATED-NOT-SEPARATE-PAGE"
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [
+        [
+          "قَالَ",
+          "ذَهَبَ",
+          "نَامَ"
+        ],
+        [
+          "شَكَرَ",
+          "بَاعَ",
+          "سَجَدَ"
+        ],
+        [
+          "صَامَ",
+          "خَرَجَ",
+          "كِتَابَ"
+        ],
+        [
+          "وَجَدَ",
+          "عَذَابَ",
+          "نَظَرَ"
+        ],
+        [
+          "سَحَابَ",
+          "حَضَرَ",
+          "شَرَابَ"
+        ],
+        [
+          "ذَكَرَ",
+          "جَوَابَ",
+          "فَهِمَ"
+        ],
+        [
+          "حِسَابَ",
+          "خَلَقَ",
+          "مَكَانَ"
+        ]
+      ],
+      "activities": [],
+      "status": "STAGING-CONTROLLED-AWAITING-EXPERT-GATE",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md",
+      "intro": {
+        "title": "Penanaman Kompetensi Baru",
+        "items": [
+          [
+            "ـبَـ",
+            "ـبَا"
+          ],
+          [
+            "ـحَـ",
+            "ـحَا"
+          ],
+          [
+            "ـكَـ",
+            "ـكَا"
+          ]
+        ],
+        "instruction": "Bandingkan bunyi pendek dengan bunyi panjang dua harakat. Materi baru ditampilkan sebelum latihan.",
+        "direction": "rtl-old-to-new"
+      },
+      "audit": {
+        "noTanwin": true,
+        "noShadda": true,
+        "noWrittenSukun": true,
+        "meaningPriority": true,
+        "expertAudioRequired": true
+      }
+    },
+    {
+      "pageId": "QJ2-P029",
+      "pageNumber": "29",
+      "title": "Transfer Alif Mad",
+      "titleArabic": "نَقْلُ مَدِّ الْأَلِفِ",
+      "tartilCompetency": "kata bermakna/Qurani tervalidasi; 8 × 3 + 16 × 4",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P029",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [],
+      "activities": [],
+      "status": "PENDING-REGENERATION-FROM-QJ2-MASTER-v0.25",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md"
+    },
+    {
+      "pageId": "QJ2-P030",
+      "pageNumber": "30",
+      "title": "Evaluasi Alif Mad",
+      "titleArabic": "تَقْيِيمُ مَدِّ الْأَلِفِ",
+      "tartilCompetency": "kontras pendek–panjang; 8 × 3 + 16 × 4",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P030",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [],
+      "activities": [],
+      "status": "PENDING-REGENERATION-FROM-QJ2-MASTER-v0.25",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md"
+    },
+    {
+      "pageId": "QJ2-P031",
+      "pageNumber": "31",
+      "title": "Kasrah Pendek vs Kasrah + Ya Mad",
+      "titleArabic": "الْكَسْرَةُ وَمَدُّ الْيَاءِ",
+      "tartilCompetency": "kontras pendek dengan ya mad; 8 × 3 + 16 × 4",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P031",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [],
+      "activities": [],
+      "status": "PENDING-REGENERATION-FROM-QJ2-MASTER-v0.25",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md"
+    },
+    {
+      "pageId": "QJ2-P032",
+      "pageNumber": "32",
+      "title": "Ya Mad pada Tiga Huruf",
+      "titleArabic": "مَدُّ الْيَاءِ",
+      "tartilCompetency": "ya mad dalam rangkaian; 8 × 3 + 16 × 4",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P032",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [],
+      "activities": [],
+      "status": "PENDING-REGENERATION-FROM-QJ2-MASTER-v0.25",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md"
+    },
+    {
+      "pageId": "QJ2-P033",
+      "pageNumber": "33",
+      "title": "Ya Mad pada Empat Huruf dan Transfer",
+      "titleArabic": "مَدُّ الْيَاءِ فِي أَرْبَعَةِ أَحْرُفٍ",
+      "tartilCompetency": "8 × 3 + 16 × 4",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P033",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [],
+      "activities": [],
+      "status": "PENDING-REGENERATION-FROM-QJ2-MASTER-v0.25",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md"
+    },
+    {
+      "pageId": "QJ2-P034",
+      "pageNumber": "34",
+      "title": "Ya Mad vs Ya Konsonan",
+      "titleArabic": "مَدُّ الْيَاءِ وَالْيَاءُ",
+      "tartilCompetency": "murojaah alif mad; 8 × 3 + 16 × 4",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P034",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [],
+      "activities": [],
+      "status": "PENDING-REGENERATION-FROM-QJ2-MASTER-v0.25",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md"
+    },
+    {
+      "pageId": "QJ2-P035",
+      "pageNumber": "35",
+      "title": "Dhammah Pendek vs Dhammah + Waw Mad",
+      "titleArabic": "الضَّمَّةُ وَمَدُّ الْوَاوِ",
+      "tartilCompetency": "8 × 3 + 16 × 4",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P035",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [],
+      "activities": [],
+      "status": "PENDING-REGENERATION-FROM-QJ2-MASTER-v0.25",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md"
+    },
+    {
+      "pageId": "QJ2-P036",
+      "pageNumber": "36",
+      "title": "Waw Mad pada Tiga Huruf",
+      "titleArabic": "مَدُّ الْوَاوِ",
+      "tartilCompetency": "8 × 3 + 16 × 4",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P036",
+      "integration": {
+        "tahfidz": {
+          "status": "PANEL-INTEGRATED-NOT-SEPARATE-PAGE"
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [],
+      "activities": [],
+      "status": "PENDING-REGENERATION-FROM-QJ2-MASTER-v0.25",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md"
+    },
+    {
+      "pageId": "QJ2-P037",
+      "pageNumber": "37",
+      "title": "Waw Mad pada Empat Huruf dan Transfer",
+      "titleArabic": "مَدُّ الْوَاوِ فِي أَرْبَعَةِ أَحْرُفٍ",
+      "tartilCompetency": "8 × 3 + 16 × 4",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P037",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [],
+      "activities": [],
+      "status": "PENDING-REGENERATION-FROM-QJ2-MASTER-v0.25",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md"
+    },
+    {
+      "pageId": "QJ2-P038",
+      "pageNumber": "38",
+      "title": "Waw Mad vs Waw Konsonan",
+      "titleArabic": "مَدُّ الْوَاوِ وَالْوَاوُ",
+      "tartilCompetency": "murojaah alif/ya; 8 × 3 + 16 × 4",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P038",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "status": "PANEL-INTEGRATED-NOT-SEPARATE-PAGE"
+        }
+      },
+      "rows": [],
+      "activities": [],
+      "status": "PENDING-REGENERATION-FROM-QJ2-MASTER-v0.25",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md"
+    },
+    {
+      "pageId": "QJ2-P039",
+      "pageNumber": "39",
+      "title": "Integrasi Tiga Mad",
+      "titleArabic": "تَكَامُلُ الْمَدِّ",
+      "tartilCompetency": "kontras pendek–panjang; 8 × 3 + 16 × 4",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P039",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [],
+      "activities": [],
+      "status": "PENDING-REGENERATION-FROM-QJ2-MASTER-v0.25",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md"
+    },
+    {
+      "pageId": "QJ2-P040",
+      "pageNumber": "40",
+      "title": "Evaluasi Akhir Jilid 2",
+      "titleArabic": "التَّقْيِيمُ الْخِتَامِيُّ",
+      "tartilCompetency": "8 × 3 + 16 × 4 + Checkpoint Nama Huruf IV",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ2-P040",
+      "integration": {
+        "tahfidz": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target baru; tidak boleh mengulang Jilid 1."
+        },
+        "arabic": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Ungkapan baru untuk bi’ah Arabiyah."
+        },
+        "akhlak": {
+          "title": "TARGET_BELUM_DIISI",
+          "arabic": "",
+          "instruction": "Target akhlak baru dan aplikatif."
+        }
+      },
+      "rows": [],
+      "activities": [],
+      "status": "PENDING-REGENERATION-FROM-QJ2-MASTER-v0.25",
+      "sourcePath": "books/jilid-2/QJ2-MASTER-Struktur-40-Halaman.md"
+    }
+  ]
+}

@@ -9,37 +9,3337 @@
     {
       "pageId": "QJ1-P001",
       "pageNumber": "01",
-      "title": "Mari Membaca بَ تَ ثَ",
-      "tartilCompetency": "Mengenali dan membaca huruf ب ت ث berharakat fathah.",
+      "title": "Mari Membaca",
+      "titleArabic": "بَ تَ ثَ",
+      "tartilCompetency": "Mengenali dan membaca بَ تَ ثَ berharakat fathah.",
       "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P001",
       "integration": {
         "tahfidz": {
-          "title": "Talqin Surah An-Nās: 1",
-          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
-          "instruction": "Dengarkan dan tirukan"
+          "title": "An-Nas 1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
         },
         "arabic": {
-          "title": "Salam dan Jawabannya",
-          "arabic": "السَّلَامُ عَلَيْكُمْ",
-          "instruction": "Dengarkan dan ucapkan"
+          "title": "Dengarkan",
+          "arabic": "اِسْتَمِعْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
         },
-        "nidom": {
-          "title": "Adab Mengucapkan Salam",
-          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
-          "instruction": "Dengarkan dan amalkan"
+        "akhlak": {
+          "title": "Niat",
+          "arabic": "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
         }
       },
       "rows": [
-        ["ثَ بَ", "بَ تَ", "ثَ تَ"],
-        ["بَ ثَ", "تَ بَ", "تَ ثَ"],
-        ["ثَ تَ", "بَ بَ", "تَ بَ بَ"],
-        ["بَ تَ بَ", "ثَ بَ ثَ", "تَ ثَ تَ"],
-        ["بَ ثَ ثَ", "ثَ بَ بَ", "تَ بَ تَ"],
-        ["تَ ثَ ثَ", "ثَ تَ بَ", "بَ تَ ثَ"],
-        ["ثَ تَ تَ", "بَ تَ تَ", "تَ بَ ثَ"],
-        ["بَ بَ ثَ", "تَ تَ بَ", "ثَ بَ تَ"]
+        [
+          "بَ تَ",
+          "ثَ ثَ",
+          "بَ بَ"
+        ],
+        [
+          "تَ ثَ",
+          "ثَ تَ",
+          "ثَ بَ"
+        ],
+        [
+          "بَ ثَ",
+          "تَ بَ",
+          "تَ تَ تَ"
+        ],
+        [
+          "ثَ ثَ تَ",
+          "تَ ثَ بَ",
+          "تَ بَ ثَ"
+        ],
+        [
+          "بَ ثَ ثَ",
+          "بَ ثَ بَ",
+          "بَ ثَ تَ"
+        ],
+        [
+          "بَ بَ بَ",
+          "تَ تَ ثَ",
+          "تَ ثَ ثَ"
+        ],
+        [
+          "ثَ بَ تَ",
+          "ثَ ثَ بَ",
+          "ثَ تَ تَ"
+        ]
       ],
-      "activities": ["Ucapkan salam", "Tirukan ayat", "Praktikkan kepada teman"]
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Dengarkan” (اِسْتَمِعْ).",
+        "Tahfidz QURBATA: An-Nas 1.",
+        "Akhlak QURBATA: Praktikkan niat."
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "بَ",
+            "بَ"
+          ],
+          [
+            "تَ",
+            "تَ"
+          ],
+          [
+            "ثَ",
+            "ثَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
+    },
+    {
+      "pageId": "QJ1-P002",
+      "pageNumber": "02",
+      "title": "Mari Membaca",
+      "titleArabic": "ءَ أَ",
+      "tartilCompetency": "Membedakan dan membaca ءَ dan أَ bersama murojaah بَ تَ ثَ.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P002",
+      "integration": {
+        "tahfidz": {
+          "title": "An-Nas 2",
+          "arabic": "مَلِكِ النَّاسِ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Bacalah",
+          "arabic": "اِقْرَأْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Adab belajar",
+          "arabic": "وَقُلْ رَبِّ زِدْنِي عِلْمًا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "ءَ أَ",
+          "أَ بَ",
+          "ءَ أَ"
+        ],
+        [
+          "أَ تَ",
+          "ءَ ثَ",
+          "أَ ءَ"
+        ],
+        [
+          "ءَ بَ",
+          "بَ تَ",
+          "ءَ أَ بَ"
+        ],
+        [
+          "أَ ءَ تَ",
+          "ءَ أَ ثَ",
+          "أَ ءَ بَ"
+        ],
+        [
+          "ءَ أَ تَ",
+          "أَ ءَ ثَ",
+          "ءَ أَ أَ"
+        ],
+        [
+          "أَ ءَ ءَ",
+          "بَ ءَ أَ",
+          "تَ أَ ءَ"
+        ],
+        [
+          "ثَ ءَ أَ",
+          "بَ تَ ءَ",
+          "أَ ثَ بَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Bacalah” (اِقْرَأْ).",
+        "Tahfidz QURBATA: An-Nas 2.",
+        "Akhlak QURBATA: Praktikkan adab belajar."
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "ءَ",
+            "ءَ"
+          ],
+          [
+            "أَ",
+            "أَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
+    },
+    {
+      "pageId": "QJ1-P003",
+      "pageNumber": "03",
+      "title": "Mari Membaca",
+      "titleArabic": "جَ حَ خَ",
+      "tartilCompetency": "Membedakan dan membaca جَ حَ خَ bersama materi sebelumnya.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P003",
+      "integration": {
+        "tahfidz": {
+          "title": "An-Nas 3",
+          "arabic": "إِلَهِ النَّاسِ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Ulangi",
+          "arabic": "أَعِدْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Mendengar",
+          "arabic": "فَاسْتَمِعُوا لَهُ وَأَنْصِتُوا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "جَ حَ",
+          "خَ بَ",
+          "جَ تَ"
+        ],
+        [
+          "حَ ثَ",
+          "خَ أَ",
+          "جَ ءَ"
+        ],
+        [
+          "حَ خَ",
+          "بَ تَ",
+          "جَ حَ خَ"
+        ],
+        [
+          "حَ خَ جَ",
+          "خَ جَ حَ",
+          "جَ حَ بَ"
+        ],
+        [
+          "خَ جَ تَ",
+          "حَ خَ ثَ",
+          "جَ خَ أَ"
+        ],
+        [
+          "حَ جَ ءَ",
+          "بَ جَ حَ",
+          "تَ خَ جَ"
+        ],
+        [
+          "ثَ حَ خَ",
+          "أَ جَ بَ",
+          "ءَ خَ تَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Ulangi” (أَعِدْ).",
+        "Tahfidz QURBATA: An-Nas 3.",
+        "Akhlak QURBATA: Praktikkan mendengar."
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "جَ",
+            "جَ"
+          ],
+          [
+            "حَ",
+            "حَ"
+          ],
+          [
+            "خَ",
+            "خَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
+    },
+    {
+      "pageId": "QJ1-P004",
+      "pageNumber": "04",
+      "title": "Mari Membaca",
+      "titleArabic": "دَ ذَ رَ زَ",
+      "tartilCompetency": "Membedakan dan membaca دَ ذَ رَ زَ bersama materi sebelumnya.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P004",
+      "integration": {
+        "tahfidz": {
+          "title": "An-Nas 4",
+          "arabic": "مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Lihatlah",
+          "arabic": "اُنْظُرْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Sabar",
+          "arabic": "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "دَ ذَ",
+          "ءَ رَ",
+          "زَ أَ"
+        ],
+        [
+          "دَ ذَ",
+          "بَ رَ",
+          "زَ تَ"
+        ],
+        [
+          "دَ ذَ",
+          "ثَ رَ",
+          "زَ جَ دَ"
+        ],
+        [
+          "ذَ حَ رَ",
+          "زَ خَ دَ",
+          "ذَ ءَ رَ"
+        ],
+        [
+          "زَ أَ دَ",
+          "ذَ بَ رَ",
+          "زَ تَ دَ"
+        ],
+        [
+          "ذَ ثَ رَ",
+          "زَ جَ دَ",
+          "ذَ حَ رَ"
+        ],
+        [
+          "زَ خَ دَ",
+          "ذَ ءَ رَ",
+          "زَ أَ دَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Lihatlah” (اُنْظُرْ).",
+        "Tahfidz QURBATA: An-Nas 4.",
+        "Akhlak QURBATA: Praktikkan sabar."
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "دَ",
+            "دَ"
+          ],
+          [
+            "ذَ",
+            "ذَ"
+          ],
+          [
+            "رَ",
+            "رَ"
+          ],
+          [
+            "زَ",
+            "زَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
+    },
+    {
+      "pageId": "QJ1-P005",
+      "pageNumber": "05",
+      "title": "Mari Membaca",
+      "titleArabic": "سَ شَ",
+      "tartilCompetency": "Membedakan dan membaca سَ شَ bersama materi sebelumnya.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P005",
+      "integration": {
+        "tahfidz": {
+          "title": "An-Nas 5",
+          "arabic": "الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Bukalah Al-Qur’an",
+          "arabic": "اِفْتَحِ الْقُرْآنَ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Bersungguh-sungguh",
+          "arabic": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "سَ شَ",
+          "دَ سَ",
+          "شَ ذَ"
+        ],
+        [
+          "سَ شَ",
+          "رَ سَ",
+          "شَ زَ"
+        ],
+        [
+          "سَ شَ",
+          "بَ سَ",
+          "دَ رَ سَ"
+        ],
+        [
+          "شَ رَ حَ",
+          "حَ رَ سَ",
+          "شَ تَ سَ"
+        ],
+        [
+          "شَ ثَ سَ",
+          "شَ جَ سَ",
+          "شَ خَ سَ"
+        ],
+        [
+          "شَ ءَ سَ",
+          "شَ أَ سَ",
+          "شَ دَ سَ"
+        ],
+        [
+          "شَ ذَ سَ",
+          "شَ زَ سَ",
+          "شَ بَ سَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Bukalah Al-Qur’an” (اِفْتَحِ الْقُرْآنَ).",
+        "Tahfidz QURBATA: An-Nas 5.",
+        "Akhlak QURBATA: Praktikkan bersungguh-sungguh."
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "سَ",
+            "سَ"
+          ],
+          [
+            "شَ",
+            "شَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
+    },
+    {
+      "pageId": "QJ1-P006",
+      "pageNumber": "06",
+      "title": "Mari Membaca",
+      "titleArabic": "صَ ضَ",
+      "tartilCompetency": "Membedakan dan membaca صَ ضَ bersama materi sebelumnya.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P006",
+      "integration": {
+        "tahfidz": {
+          "title": "An-Nas 6",
+          "arabic": "مِنَ الْجِنَّةِ وَالنَّاسِ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Tutuplah Al-Qur’an",
+          "arabic": "أَغْلِقِ الْقُرْآنَ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Bersyukur",
+          "arabic": "لَئِنْ شَكَرْتُمْ لَأَزِيدَنَّكُمْ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "صَ ضَ",
+          "سَ صَ",
+          "ضَ شَ"
+        ],
+        [
+          "صَ ضَ",
+          "دَ صَ",
+          "ضَ ذَ"
+        ],
+        [
+          "صَ ضَ",
+          "رَ صَ",
+          "صَ بَ رَ"
+        ],
+        [
+          "ضَ رَ بَ",
+          "ضَ زَ صَ",
+          "ضَ بَ صَ"
+        ],
+        [
+          "ضَ تَ صَ",
+          "ضَ ثَ صَ",
+          "ضَ جَ صَ"
+        ],
+        [
+          "ضَ حَ صَ",
+          "ضَ خَ صَ",
+          "ضَ ءَ صَ"
+        ],
+        [
+          "ضَ أَ صَ",
+          "ضَ سَ صَ",
+          "ضَ شَ صَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Tutuplah Al-Qur’an” (أَغْلِقِ الْقُرْآنَ).",
+        "Tahfidz QURBATA: An-Nas 6.",
+        "Akhlak QURBATA: Praktikkan bersyukur."
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "صَ",
+            "صَ"
+          ],
+          [
+            "ضَ",
+            "ضَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
+    },
+    {
+      "pageId": "QJ1-P007",
+      "pageNumber": "07",
+      "title": "Mari Membaca",
+      "titleArabic": "طَ ظَ",
+      "tartilCompetency": "Membedakan dan membaca طَ ظَ bersama materi sebelumnya.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P007",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq 1",
+          "arabic": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Ini buku",
+          "arabic": "هَذَا كِتَابٌ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Berkata baik",
+          "arabic": "وَقُولُوا لِلنَّاسِ حُسْنًا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "طَ ظَ",
+          "صَ طَ",
+          "ظَ ضَ"
+        ],
+        [
+          "طَ ظَ",
+          "سَ طَ",
+          "ظَ شَ"
+        ],
+        [
+          "طَ ظَ",
+          "دَ طَ",
+          "ظَ ذَ طَ"
+        ],
+        [
+          "ظَ رَ طَ",
+          "ظَ زَ طَ",
+          "ظَ بَ طَ"
+        ],
+        [
+          "ظَ تَ طَ",
+          "ظَ ثَ طَ",
+          "ظَ جَ طَ"
+        ],
+        [
+          "ظَ حَ طَ",
+          "ظَ خَ طَ",
+          "ظَ صَ طَ"
+        ],
+        [
+          "ظَ ضَ طَ",
+          "ظَ سَ طَ",
+          "ظَ شَ طَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Ini buku” (هَذَا كِتَابٌ).",
+        "Tahfidz QURBATA: Al-Falaq 1.",
+        "Akhlak QURBATA: Praktikkan berkata baik."
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "طَ",
+            "طَ"
+          ],
+          [
+            "ظَ",
+            "ظَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
+    },
+    {
+      "pageId": "QJ1-P008",
+      "pageNumber": "08",
+      "title": "Mari Membaca",
+      "titleArabic": "عَ غَ",
+      "tartilCompetency": "Membedakan dan membaca عَ غَ bersama materi sebelumnya.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P008",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq 2",
+          "arabic": "مِنْ شَرِّ مَا خَلَقَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Ini pena",
+          "arabic": "هَذَا قَلَمٌ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Rendah hati",
+          "arabic": "وَعِبَادُ الرَّحْمَنِ الَّذِينَ يَمْشُونَ عَلَى الْأَرْضِ هَوْنًا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "عَ غَ",
+          "طَ عَ",
+          "غَ ظَ"
+        ],
+        [
+          "عَ غَ",
+          "صَ عَ",
+          "غَ ضَ"
+        ],
+        [
+          "عَ غَ",
+          "سَ عَ",
+          "عَ بَ دَ"
+        ],
+        [
+          "بَ عَ ثَ",
+          "رَ جَ عَ",
+          "خَ شَ عَ"
+        ],
+        [
+          "غَ شَ عَ",
+          "غَ دَ عَ",
+          "غَ ذَ عَ"
+        ],
+        [
+          "غَ رَ عَ",
+          "غَ زَ عَ",
+          "غَ بَ عَ"
+        ],
+        [
+          "غَ تَ عَ",
+          "غَ ثَ عَ",
+          "غَ جَ عَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Ini pena” (هَذَا قَلَمٌ).",
+        "Tahfidz QURBATA: Al-Falaq 2.",
+        "Akhlak QURBATA: Praktikkan rendah hati."
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "عَ",
+            "عَ"
+          ],
+          [
+            "غَ",
+            "غَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
+    },
+    {
+      "pageId": "QJ1-P009",
+      "pageNumber": "09",
+      "title": "Mari Membaca",
+      "titleArabic": "فَ قَ",
+      "tartilCompetency": "Membedakan dan membaca فَ قَ bersama materi sebelumnya.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P009",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq 3",
+          "arabic": "وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Ini halaman",
+          "arabic": "هَذِهِ صَفْحَةٌ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Menjaga kebersihan",
+          "arabic": "إِنَّ اللَّهَ يُحِبُّ التَّوَّابِينَ وَيُحِبُّ الْمُتَطَهِّرِينَ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "فَ قَ",
+          "عَ فَ",
+          "قَ غَ"
+        ],
+        [
+          "فَ قَ",
+          "طَ فَ",
+          "قَ ظَ"
+        ],
+        [
+          "فَ قَ",
+          "صَ فَ",
+          "غَ فَ رَ"
+        ],
+        [
+          "فَ تَ حَ",
+          "قَ رَ أَ",
+          "فَ رَ حَ"
+        ],
+        [
+          "رَ فَ عَ",
+          "قَ طَ عَ",
+          "قَ دَ رَ"
+        ],
+        [
+          "فَ سَ دَ",
+          "قَ بَ ضَ",
+          "قَ شَ فَ"
+        ],
+        [
+          "قَ دَ فَ",
+          "قَ ذَ فَ",
+          "قَ زَ فَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Ini halaman” (هَذِهِ صَفْحَةٌ).",
+        "Tahfidz QURBATA: Al-Falaq 3.",
+        "Akhlak QURBATA: Praktikkan menjaga kebersihan."
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "فَ",
+            "فَ"
+          ],
+          [
+            "قَ",
+            "قَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
+    },
+    {
+      "pageId": "QJ1-P010",
+      "pageNumber": "10",
+      "title": "Mari Membaca",
+      "titleArabic": "تَقْيِيمُ الْفَتْحَةِ",
+      "tartilCompetency": "Evaluasi Fathah I tanpa materi baru.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P010",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq 4",
+          "arabic": "وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Di sini",
+          "arabic": "هُنَا",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Tolong-menolong",
+          "arabic": "وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَى",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "خَ عَ",
+          "سَ ثَ",
+          "دَ أَ"
+        ],
+        [
+          "جَ حَ",
+          "ذَ سَ",
+          "غَ فَ"
+        ],
+        [
+          "تَ ثَ",
+          "بَ ضَ",
+          "غَ فَ رَ"
+        ],
+        [
+          "فَ تَ حَ",
+          "قَ رَ أَ",
+          "عَ بَ دَ"
+        ],
+        [
+          "بَ عَ ثَ",
+          "رَ جَ عَ",
+          "صَ بَ رَ"
+        ],
+        [
+          "ضَ رَ بَ",
+          "دَ رَ سَ",
+          "شَ رَ حَ"
+        ],
+        [
+          "خَ رَ جَ",
+          "بَ دَ أَ",
+          "قَ شَ حَ"
+        ],
+        [
+          "تَ خَ بَ",
+          "ظَ دَ غَ",
+          "ءَ ظَ ضَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Di sini” (هُنَا).",
+        "Tahfidz QURBATA: Al-Falaq 4.",
+        "Akhlak QURBATA: Praktikkan tolong-menolong."
+      ]
+    },
+    {
+      "pageId": "QJ1-P011",
+      "pageNumber": "11",
+      "title": "Mari Membaca",
+      "titleArabic": "كَ لَ",
+      "tartilCompetency": "Membedakan dan membaca كَ لَ bersama murojaah.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P011",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Falaq 5",
+          "arabic": "وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Di sana",
+          "arabic": "هُنَاكَ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Menepati janji",
+          "arabic": "وَأَوْفُوا بِالْعَهْدِ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "كَ لَ",
+          "قَ كَ",
+          "لَ فَ"
+        ],
+        [
+          "كَ لَ",
+          "عَ كَ",
+          "لَ غَ"
+        ],
+        [
+          "كَ لَ",
+          "صَ كَ",
+          "كَ تَ بَ"
+        ],
+        [
+          "أَ كَ لَ",
+          "شَ كَ رَ",
+          "خَ لَ قَ"
+        ],
+        [
+          "جَ عَ لَ",
+          "دَ خَ لَ",
+          "سَ لَ كَ"
+        ],
+        [
+          "كَ ضَ لَ",
+          "لَ طَ كَ",
+          "كَ ظَ لَ"
+        ],
+        [
+          "لَ حَ كَ",
+          "كَ رَ لَ",
+          "لَ بَ كَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Di sana” (هُنَاكَ).",
+        "Tahfidz QURBATA: Al-Falaq 5.",
+        "Akhlak QURBATA: Praktikkan menepati janji."
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "كَ",
+            "كَ"
+          ],
+          [
+            "لَ",
+            "لَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
+    },
+    {
+      "pageId": "QJ1-P012",
+      "pageNumber": "12",
+      "title": "Mari Membaca",
+      "titleArabic": "مَ نَ",
+      "tartilCompetency": "Membedakan dan membaca مَ نَ bersama murojaah.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P012",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Ikhlas 1",
+          "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Duduklah",
+          "arabic": "اِجْلِسْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Jujur",
+          "arabic": "وَكُونُوا مَعَ الصَّادِقِينَ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "مَ نَ",
+          "كَ مَ",
+          "نَ لَ"
+        ],
+        [
+          "مَ نَ",
+          "قَ مَ",
+          "نَ فَ"
+        ],
+        [
+          "مَ نَ",
+          "عَ مَ",
+          "حَ مَ دَ"
+        ],
+        [
+          "رَ حَ مَ",
+          "عَ مَ لَ",
+          "مَ لَ كَ"
+        ],
+        [
+          "نَ صَ رَ",
+          "مَ نَ عَ",
+          "نَ فَ عَ"
+        ],
+        [
+          "أَ مَ نَ",
+          "سَ مَ عَ",
+          "جَ مَ عَ"
+        ],
+        [
+          "مَ ضَ نَ",
+          "نَ طَ مَ",
+          "مَ ظَ نَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Duduklah” (اِجْلِسْ).",
+        "Tahfidz QURBATA: Al-Ikhlas 1.",
+        "Akhlak QURBATA: Praktikkan jujur."
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "مَ",
+            "مَ"
+          ],
+          [
+            "نَ",
+            "نَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
+    },
+    {
+      "pageId": "QJ1-P013",
+      "pageNumber": "13",
+      "title": "Mari Membaca",
+      "titleArabic": "هَ وَ يَ",
+      "tartilCompetency": "Membedakan dan membaca هَ وَ يَ bersama murojaah; وَ tetap pendek.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P013",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Ikhlas 2",
+          "arabic": "اللَّهُ الصَّمَدُ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Berdirilah",
+          "arabic": "قُمْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Tidak mengejek",
+          "arabic": "لَا يَسْخَرْ قَوْمٌ مِنْ قَوْمٍ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "هَ وَ",
+          "يَ هَ",
+          "وَ يَ"
+        ],
+        [
+          "هَ يَ",
+          "وَ هَ",
+          "يَ وَ"
+        ],
+        [
+          "هَ وَ",
+          "يَ هَ",
+          "هَ دَ يَ"
+        ],
+        [
+          "وَ عَ دَ",
+          "وَ جَ دَ",
+          "وَ هَ بَ"
+        ],
+        [
+          "يَ سَ رَ",
+          "هَ لَ كَ",
+          "هَ جَ رَ"
+        ],
+        [
+          "وَ قَ عَ",
+          "هَ صَ يَ",
+          "وَ طَ هَ"
+        ],
+        [
+          "يَ ظَ وَ",
+          "هَ غَ يَ",
+          "وَ فَ هَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Berdirilah” (قُمْ).",
+        "Tahfidz QURBATA: Al-Ikhlas 2.",
+        "Akhlak QURBATA: Praktikkan tidak mengejek."
+      ],
+      "intro": {
+        "title": "Kompetensi Baru",
+        "items": [
+          [
+            "هَ",
+            "هَ"
+          ],
+          [
+            "وَ",
+            "وَ"
+          ],
+          [
+            "يَ",
+            "يَ"
+          ]
+        ],
+        "instruction": "Talqin kompetensi baru."
+      }
+    },
+    {
+      "pageId": "QJ1-P014",
+      "pageNumber": "14",
+      "title": "Latihan Penuh Fathah 1",
+      "titleArabic": "تَدْرِيبُ الْفَتْحَةِ ١",
+      "tartilCompetency": "Latihan penuh seluruh huruf berfathah dalam susunan tiga huruf lepas yang bermakna atau mendekati kata bermakna.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P014",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Ikhlas 3",
+          "arabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Majulah",
+          "arabic": "تَقَدَّمْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Berbuat baik",
+          "arabic": "إِنَّ اللَّهَ يُحِبُّ الْمُحْسِنِينَ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "حَ مَ دَ",
+          "رَ حَ مَ",
+          "ذَ كَ رَ"
+        ],
+        [
+          "سَ جَ دَ",
+          "شَ كَ رَ",
+          "صَ بَ رَ"
+        ],
+        [
+          "عَ بَ دَ",
+          "عَ مَ لَ",
+          "غَ فَ رَ"
+        ],
+        [
+          "فَ تَ حَ",
+          "قَ رَ أَ",
+          "كَ تَ بَ"
+        ],
+        [
+          "نَ صَ رَ",
+          "وَ عَ دَ",
+          "يَ سَ رَ"
+        ],
+        [
+          "خَ لَ قَ",
+          "جَ عَ لَ",
+          "دَ خَ لَ"
+        ],
+        [
+          "أَ كَ لَ",
+          "سَ مَ عَ",
+          "جَ مَ عَ"
+        ],
+        [
+          "مَ نَ عَ",
+          "نَ فَ عَ",
+          "وَ جَ دَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Majulah” (تَقَدَّمْ).",
+        "Tahfidz QURBATA: Al-Ikhlas 3.",
+        "Akhlak QURBATA: Praktikkan berbuat baik."
+      ]
+    },
+    {
+      "pageId": "QJ1-P015",
+      "pageNumber": "15",
+      "title": "Latihan Penuh Fathah 2",
+      "titleArabic": "تَدْرِيبُ الْفَتْحَةِ ٢",
+      "tartilCompetency": "Latihan penuh kedua seluruh huruf berfathah; tiga huruf lepas, bermakna atau mendekati kata bermakna, sebagai penutup fase Fathah.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P015",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Ikhlas 4",
+          "arabic": "وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Kembalilah",
+          "arabic": "اِرْجِعْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Menghormati orang tua",
+          "arabic": "وَبِالْوَالِدَيْنِ إِحْسَانًا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "خَ رَ جَ",
+          "دَ خَ لَ",
+          "جَ لَ سَ"
+        ],
+        [
+          "سَ مَ عَ",
+          "نَ ظَ رَ",
+          "فَ هَ مَ"
+        ],
+        [
+          "عَ رَ فَ",
+          "طَ لَ بَ",
+          "تَ رَ كَ"
+        ],
+        [
+          "رَ كَ بَ",
+          "وَ قَ فَ",
+          "سَ كَ نَ"
+        ],
+        [
+          "مَ لَ كَ",
+          "حَ كَ مَ",
+          "قَ بَ لَ"
+        ],
+        [
+          "رَ فَ عَ",
+          "خَ فَ ضَ",
+          "قَ رَ بَ"
+        ],
+        [
+          "بَ عَ دَ",
+          "سَ بَ قَ",
+          "غَ لَ بَ"
+        ],
+        [
+          "كَ بَ رَ",
+          "صَ غَ رَ",
+          "صَ دَ قَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Kembalilah” (اِرْجِعْ).",
+        "Tahfidz QURBATA: Al-Ikhlas 4.",
+        "Akhlak QURBATA: Praktikkan menghormati orang tua."
+      ]
+    },
+    {
+      "pageId": "QJ1-P016",
+      "pageNumber": "16",
+      "title": "Kasrah 1",
+      "titleArabic": "الْكَسْرَةُ ١",
+      "tartilCompetency": "Kasrah bertahap pada بِ تِ ثِ جِ; setiap kelompok mencampur Kasrah–Fathah dengan posisi acak dan murojaah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P016",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Masad 1",
+          "arabic": "تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Pelan-pelan",
+          "arabic": "بِتَأَنٍّ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Menjaga lisan",
+          "arabic": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "كَ تِ بَ",
+          "ثَ بِ تَ",
+          "تَ بِ عَ"
+        ],
+        [
+          "وَ جِ دَ",
+          "سَ جِ دَ",
+          "رَ جِ عَ"
+        ],
+        [
+          "فَ هِ مَ",
+          "عَ لِ مَ",
+          "عَ مِ لَ"
+        ],
+        [
+          "سَ مِ عَ",
+          "رَ حِ مَ",
+          "شَ رِ بَ"
+        ],
+        [
+          "رَ كِ بَ",
+          "جَ لِ سَ",
+          "لَ بِ سَ"
+        ],
+        [
+          "فَ رِ حَ",
+          "حَ مِ دَ",
+          "نَ دِ مَ"
+        ],
+        [
+          "مَ لِ كَ",
+          "كَ بِ رَ",
+          "صَ غِ رَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Pelan-pelan” (بِتَأَنٍّ).",
+        "Tahfidz QURBATA: Al-Masad 1.",
+        "Akhlak QURBATA: Praktikkan menjaga lisan."
+      ],
+      "intro": {
+        "title": "Kasrah — Materi Baru",
+        "items": [
+          [
+            "بَ",
+            "بِ"
+          ],
+          [
+            "تَ",
+            "تِ"
+          ],
+          [
+            "ثَ",
+            "ثِ"
+          ],
+          [
+            "جَ",
+            "جِ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P017",
+      "pageNumber": "17",
+      "title": "Kasrah 2",
+      "titleArabic": "الْكَسْرَةُ ٢",
+      "tartilCompetency": "Kasrah bertahap pada بِ تِ ثِ جِ حِ خِ دِ ذِ; setiap kelompok mencampur Kasrah–Fathah dengan posisi acak dan murojaah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P017",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Masad 2",
+          "arabic": "مَا أَغْنَى عَنْهُ مَالُهُ وَمَا كَسَبَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Dengan jelas",
+          "arabic": "بِوُضُوحٍ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Malu",
+          "arabic": "الْحَيَاءُ مِنَ الْإِيمَانِ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "حَ فِ ظَ",
+          "خَ دِ مَ",
+          "دَ خِ لَ"
+        ],
+        [
+          "ذَ كِ رَ",
+          "حَ ذِ رَ",
+          "صَ دِ قَ"
+        ],
+        [
+          "قَ دِ مَ",
+          "وَ رِ ثَ",
+          "مَ رِ ضَ"
+        ],
+        [
+          "تَ عِ بَ",
+          "كَ رِ هَ",
+          "حَ سِ بَ"
+        ],
+        [
+          "نَ دِ مَ",
+          "شَ رِ بَ",
+          "رَ كِ بَ"
+        ],
+        [
+          "فَ هِ مَ",
+          "عَ لِ مَ",
+          "عَ مِ لَ"
+        ],
+        [
+          "سَ مِ عَ",
+          "رَ حِ مَ",
+          "جَ لِ سَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Dengan jelas” (بِوُضُوحٍ).",
+        "Tahfidz QURBATA: Al-Masad 2.",
+        "Akhlak QURBATA: Praktikkan malu."
+      ],
+      "intro": {
+        "title": "Kasrah — Materi Baru",
+        "items": [
+          [
+            "حَ",
+            "حِ"
+          ],
+          [
+            "خَ",
+            "خِ"
+          ],
+          [
+            "دَ",
+            "دِ"
+          ],
+          [
+            "ذَ",
+            "ذِ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P018",
+      "pageNumber": "18",
+      "title": "Kasrah 3",
+      "titleArabic": "الْكَسْرَةُ ٣",
+      "tartilCompetency": "Kasrah bertahap pada بِ تِ ثِ جِ حِ خِ دِ ذِ رِ زِ سِ شِ; setiap kelompok mencampur Kasrah–Fathah dengan posisi acak dan murojaah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P018",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Masad 3",
+          "arabic": "سَيَصْلَى نَارًا ذَاتَ لَهَبٍ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Sekali lagi",
+          "arabic": "مَرَّةً أُخْرَى",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Kasih sayang",
+          "arabic": "الرَّاحِمُونَ يَرْحَمُهُمُ الرَّحْمَنُ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "شَ رِ بَ",
+          "رَ كِ بَ",
+          "فَ رِ حَ"
+        ],
+        [
+          "كَ رِ هَ",
+          "مَ رِ ضَ",
+          "وَ رِ ثَ"
+        ],
+        [
+          "عَ رِ فَ",
+          "حَ سِ بَ",
+          "نَ دِ مَ"
+        ],
+        [
+          "قَ دِ مَ",
+          "صَ غِ رَ",
+          "كَ بِ رَ"
+        ],
+        [
+          "حَ فِ ظَ",
+          "فَ هِ مَ",
+          "عَ لِ مَ"
+        ],
+        [
+          "عَ مِ لَ",
+          "سَ مِ عَ",
+          "رَ حِ مَ"
+        ],
+        [
+          "جَ لِ سَ",
+          "لَ بِ سَ",
+          "خَ دِ مَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Sekali lagi” (مَرَّةً أُخْرَى).",
+        "Tahfidz QURBATA: Al-Masad 3.",
+        "Akhlak QURBATA: Praktikkan kasih sayang."
+      ],
+      "intro": {
+        "title": "Kasrah — Materi Baru",
+        "items": [
+          [
+            "رَ",
+            "رِ"
+          ],
+          [
+            "زَ",
+            "زِ"
+          ],
+          [
+            "سَ",
+            "سِ"
+          ],
+          [
+            "شَ",
+            "شِ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P019",
+      "pageNumber": "19",
+      "title": "Kasrah 4",
+      "titleArabic": "الْكَسْرَةُ ٤",
+      "tartilCompetency": "Kasrah baru pada صِ ضِ طِ ظِ dengan kemunculan aktif dominan dan tersebar; Fathah serta Kasrah sebelumnya tetap menjadi murojaah di dalam kata bermakna.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P019",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Masad 4",
+          "arabic": "وَامْرَأَتُهُ حَمَّالَةَ الْحَطَبِ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Bagus",
+          "arabic": "جَيِّدٌ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Membantu teman",
+          "arabic": "وَاللَّهُ فِي عَوْنِ الْعَبْدِ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "بَ صِ رَ",
+          "رَ ضِ يَ",
+          "فَ طِ نَ"
+        ],
+        [
+          "عَ ظِ مَ",
+          "حَ صِ رَ",
+          "فَ ضِ لَ"
+        ],
+        [
+          "عَ طِ شَ",
+          "حَ ظِ يَ",
+          "قَ صِ رَ"
+        ],
+        [
+          "غَ ضِ بَ",
+          "بَ طِ رَ",
+          "خَ صِ مَ"
+        ],
+        [
+          "حَ ضِ رَ",
+          "نَ صِ بَ",
+          "رَ ضِ عَ"
+        ],
+        [
+          "نَ ضِ جَ",
+          "فَ طِ رَ",
+          "عَ ظِ مَ"
+        ],
+        [
+          "بَ صِ رَ",
+          "رَ ضِ يَ",
+          "عَ طِ شَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Bagus” (جَيِّدٌ).",
+        "Tahfidz QURBATA: Al-Masad 4.",
+        "Akhlak QURBATA: Praktikkan membantu teman."
+      ],
+      "intro": {
+        "title": "Kasrah — Materi Baru",
+        "items": [
+          [
+            "صَ",
+            "صِ"
+          ],
+          [
+            "ضَ",
+            "ضِ"
+          ],
+          [
+            "طَ",
+            "طِ"
+          ],
+          [
+            "ظَ",
+            "ظِ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P020",
+      "pageNumber": "20",
+      "title": "Kasrah 5",
+      "titleArabic": "الْكَسْرَةُ ٥",
+      "tartilCompetency": "Kasrah bertahap pada بِ تِ ثِ جِ حِ خِ دِ ذِ رِ زِ سِ شِ صِ ضِ طِ ظِ عِ غِ فِ قِ; setiap kelompok mencampur Kasrah–Fathah dengan posisi acak dan murojaah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P020",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Masad 5",
+          "arabic": "فِي جِيدِهَا حَبْلٌ مِنْ مَسَدٍ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Sangat bagus",
+          "arabic": "جَيِّدٌ جِدًّا",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Tidak marah",
+          "arabic": "لَا تَغْضَبْ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "شَ عِ رَ",
+          "لَ عِ بَ",
+          "نَ عِ مَ"
+        ],
+        [
+          "صَ غِ رَ",
+          "بَ غِ ضَ",
+          "رَ غِ بَ"
+        ],
+        [
+          "شَ غِ فَ",
+          "حَ فِ ظَ",
+          "نَ فِ دَ"
+        ],
+        [
+          "رَ فِ قَ",
+          "عَ فِ فَ",
+          "سَ فِ هَ"
+        ],
+        [
+          "ثَ قِ لَ",
+          "نَ قِ مَ",
+          "لَ قِ حَ"
+        ],
+        [
+          "فَ قِ هَ",
+          "بَ قِ يَ",
+          "شَ قِ يَ"
+        ],
+        [
+          "عَ رِ فَ",
+          "فَ هِ مَ",
+          "رَ حِ مَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Sangat bagus” (جَيِّدٌ جِدًّا).",
+        "Tahfidz QURBATA: Al-Masad 5.",
+        "Akhlak QURBATA: Praktikkan tidak marah."
+      ],
+      "review": {
+        "title": "Mengenal Huruf & Harakat",
+        "instruction": "Lihat dan kenali.",
+        "letters": [
+          "ا",
+          "ب",
+          "ت",
+          "ث",
+          "ج",
+          "ح",
+          "خ",
+          "د",
+          "ذ",
+          "ر",
+          "ز",
+          "س",
+          "ش",
+          "ص",
+          "ض",
+          "ط",
+          "ظ",
+          "ع",
+          "غ",
+          "ف",
+          "ق",
+          "ك",
+          "ل",
+          "م",
+          "ن",
+          "ه",
+          "و",
+          "ي",
+          "ء"
+        ],
+        "harakat": [
+          {
+            "name": "Fathah",
+            "mark": "َ"
+          },
+          {
+            "name": "Kasrah",
+            "mark": "ِ"
+          }
+        ]
+      },
+      "intro": {
+        "title": "Kasrah — Materi Baru",
+        "items": [
+          [
+            "عَ",
+            "عِ"
+          ],
+          [
+            "غَ",
+            "غِ"
+          ],
+          [
+            "فَ",
+            "فِ"
+          ],
+          [
+            "قَ",
+            "قِ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P021",
+      "pageNumber": "21",
+      "title": "Kasrah 6",
+      "titleArabic": "الْكَسْرَةُ ٦",
+      "tartilCompetency": "Kasrah bertahap pada بِ تِ ثِ جِ حِ خِ دِ ذِ رِ زِ سِ شِ صِ ضِ طِ ظِ عِ غِ فِ قِ كِ لِ مِ نِ; setiap kelompok mencampur Kasrah–Fathah dengan posisi acak dan murojaah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P021",
+      "integration": {
+        "tahfidz": {
+          "title": "An-Nasr 1",
+          "arabic": "إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Benar",
+          "arabic": "صَحِيحٌ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Amanah",
+          "arabic": "أَدِّ الْأَمَانَةَ إِلَى مَنِ ائْتَمَنَكَ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "حَ كِ مَ",
+          "رَ كِ بَ",
+          "شَ كِ رَ"
+        ],
+        [
+          "سَ كِ نَ",
+          "مَ كِ ثَ",
+          "عَ لِ مَ"
+        ],
+        [
+          "مَ لِ كَ",
+          "سَ لِ مَ",
+          "بَ لِ غَ"
+        ],
+        [
+          "سَ مِ عَ",
+          "حَ مِ دَ",
+          "نَ دِ مَ"
+        ],
+        [
+          "عَ مِ لَ",
+          "جَ مِ دَ",
+          "أَ نِ سَ"
+        ],
+        [
+          "حَ نِ فَ",
+          "قَ نِ طَ",
+          "فَ نِ يَ"
+        ],
+        [
+          "غَ نِ يَ",
+          "كَ رِ هَ",
+          "وَ رِ ثَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Benar” (صَحِيحٌ).",
+        "Tahfidz QURBATA: An-Nasr 1.",
+        "Akhlak QURBATA: Praktikkan amanah."
+      ],
+      "intro": {
+        "title": "Kasrah — Materi Baru",
+        "items": [
+          [
+            "كَ",
+            "كِ"
+          ],
+          [
+            "لَ",
+            "لِ"
+          ],
+          [
+            "مَ",
+            "مِ"
+          ],
+          [
+            "نَ",
+            "نِ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P022",
+      "pageNumber": "22",
+      "title": "Kasrah 7",
+      "titleArabic": "الْكَسْرَةُ ٧",
+      "tartilCompetency": "Kasrah bertahap pada بِ تِ ثِ جِ حِ خِ دِ ذِ رِ زِ سِ شِ صِ ضِ طِ ظِ عِ غِ فِ قِ كِ لِ مِ نِ هِ وِ يِ ءِ; setiap kelompok mencampur Kasrah–Fathah dengan posisi acak dan murojaah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P022",
+      "integration": {
+        "tahfidz": {
+          "title": "An-Nasr 2",
+          "arabic": "وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Coba lagi",
+          "arabic": "حَاوِلْ مَرَّةً أُخْرَى",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Mencintai saudara",
+          "arabic": "لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "فَ هِ مَ",
+          "وَ هِ مَ",
+          "شَ هِ دَ"
+        ],
+        [
+          "زَ هِ دَ",
+          "جَ هِ لَ",
+          "قَ وِ يَ"
+        ],
+        [
+          "رَ وِ يَ",
+          "لَ وِ يَ",
+          "حَ يِ يَ"
+        ],
+        [
+          "عَ يِ يَ",
+          "سَ ءِ مَ",
+          "رَ ءِ يَ"
+        ],
+        [
+          "وَ هِ بَ",
+          "هَ جِ رَ",
+          "يَ سِ رَ"
+        ],
+        [
+          "بَ قِ يَ",
+          "شَ قِ يَ",
+          "غَ نِ يَ"
+        ],
+        [
+          "عَ رِ فَ",
+          "كَ رِ هَ",
+          "حَ سِ بَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Coba lagi” (حَاوِلْ مَرَّةً أُخْرَى).",
+        "Tahfidz QURBATA: An-Nasr 2.",
+        "Akhlak QURBATA: Praktikkan mencintai saudara."
+      ],
+      "intro": {
+        "title": "Kasrah — Materi Baru",
+        "items": [
+          [
+            "هَ",
+            "هِ"
+          ],
+          [
+            "وَ",
+            "وِ"
+          ],
+          [
+            "يَ",
+            "يِ"
+          ],
+          [
+            "ءَ",
+            "ءِ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Fathah yang telah dikuasai menuju Kasrah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P023",
+      "pageNumber": "23",
+      "title": "Penguatan Kasrah",
+      "titleArabic": "تَثْبِيتُ الْكَسْرَةِ",
+      "tartilCompetency": "Kasrah bertahap pada بِ تِ ثِ جِ حِ خِ دِ ذِ رِ زِ سِ شِ صِ ضِ طِ ظِ عِ غِ فِ قِ كِ لِ مِ نِ هِ وِ يِ ءِ; setiap kelompok mencampur Kasrah–Fathah dengan posisi acak dan murojaah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P023",
+      "integration": {
+        "tahfidz": {
+          "title": "An-Nasr 3",
+          "arabic": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ إِنَّهُ كَانَ تَوَّابًا",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Siap",
+          "arabic": "مُسْتَعِدٌّ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Memberi salam",
+          "arabic": "أَفْشُوا السَّلَامَ بَيْنَكُمْ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "عَ لِ مَ",
+          "عِ رِ فَ",
+          "قِ بَ لِ"
+        ],
+        [
+          "رَ كِ بِ",
+          "تِ رِ كَ",
+          "طِ لَ بِ"
+        ],
+        [
+          "صَ دِ قِ",
+          "كِ بَ رَ",
+          "صَ غِ رَ"
+        ],
+        [
+          "قِ رِ بَ",
+          "بِ عَ دِ",
+          "رَ فِ عِ"
+        ],
+        [
+          "خِ فِ ضَ",
+          "نِ ظَ رِ",
+          "فَ هِ مِ"
+        ],
+        [
+          "دِ رَ سَ",
+          "لَ عِ بَ",
+          "غِ لِ بَ"
+        ],
+        [
+          "سِ بَ قِ",
+          "وَ قِ فِ",
+          "سِ كِ نَ"
+        ],
+        [
+          "مِ لَ كِ",
+          "حَ كِ مِ",
+          "كِ تَ بَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Siap” (مُسْتَعِدٌّ).",
+        "Tahfidz QURBATA: An-Nasr 3.",
+        "Akhlak QURBATA: Praktikkan memberi salam."
+      ]
+    },
+    {
+      "pageId": "QJ1-P024",
+      "pageNumber": "24",
+      "title": "Latihan Kumulatif Kasrah 1",
+      "titleArabic": "تَدْرِيبُ الْكَسْرَةِ ١",
+      "tartilCompetency": "Penguatan Kasrah dengan murojaah Fathah; setiap kelompok tiga huruf lepas mengikuti susunan kata Arab bermakna atau sangat dekat dengan bentuk kata bermakna.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P024",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Kafirun 1",
+          "arabic": "قُلْ يَا أَيُّهَا الْكَافِرُونَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Saya siap",
+          "arabic": "أَنَا مُسْتَعِدٌّ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Tersenyum",
+          "arabic": "تَبَسُّمُكَ فِي وَجْهِ أَخِيكَ لَكَ صَدَقَةٌ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "كَ تِ بَ",
+          "عَ لِ مَ",
+          "فَ هِ مَ"
+        ],
+        [
+          "عَ مِ لَ",
+          "سَ مِ عَ",
+          "رَ حِ مَ"
+        ],
+        [
+          "حَ فِ ظَ",
+          "شَ رِ بَ",
+          "رَ كِ بَ"
+        ],
+        [
+          "جَ لِ سَ",
+          "لَ بِ سَ",
+          "فَ رِ حَ"
+        ],
+        [
+          "حَ مِ دَ",
+          "نَ دِ مَ",
+          "مَ لِ كَ"
+        ],
+        [
+          "كَ بِ رَ",
+          "صَ غِ رَ",
+          "قَ دِ مَ"
+        ],
+        [
+          "حَ سِ بَ",
+          "وَ رِ ثَ",
+          "كَ رِ هَ"
+        ],
+        [
+          "عَ رِ فَ",
+          "مَ رِ ضَ",
+          "تَ عِ بَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Saya siap” (أَنَا مُسْتَعِدٌّ).",
+        "Tahfidz QURBATA: Al-Kafirun 1.",
+        "Akhlak QURBATA: Praktikkan tersenyum."
+      ]
+    },
+    {
+      "pageId": "QJ1-P025",
+      "pageNumber": "25",
+      "title": "Latihan Kumulatif Kasrah 2",
+      "titleArabic": "تَدْرِيبُ الْكَسْرَةِ ٢",
+      "tartilCompetency": "Penguatan seluruh kasrah dengan murojaah merata kompetensi fathah.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P025",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Kafirun 2",
+          "arabic": "لَا أَعْبُدُ مَا تَعْبُدُونَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Giliran saya",
+          "arabic": "دَوْرِي",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Menjaga waktu",
+          "arabic": "وَالْعَصْرِ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "وِ ثَ رَ",
+          "بَ خَ شَ",
+          "جَ رَ طَ"
+        ],
+        [
+          "دَ شَ غَ",
+          "زَ طَ كَ",
+          "صَ غَ نَ"
+        ],
+        [
+          "ظَ كَ يَ",
+          "فَ نَ تِ",
+          "لَ يَ حِ"
+        ],
+        [
+          "هَ تِ ذِ",
+          "ءَ حِ سِ",
+          "ثِ ذِ ضِ"
+        ],
+        [
+          "خِ سِ عِ",
+          "رِ ضِ قِ",
+          "شِ عِ مِ"
+        ],
+        [
+          "طِ قِ وِ",
+          "غِ مِ بَ",
+          "كِ وِ جَ"
+        ],
+        [
+          "نِ بَ دَ",
+          "يِ جَ زَ",
+          "تَ دَ صَ"
+        ],
+        [
+          "حَ زَ ظَ",
+          "ذَ صَ فَ",
+          "سَ ظَ لَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Giliran saya” (دَوْرِي).",
+        "Tahfidz QURBATA: Al-Kafirun 2.",
+        "Akhlak QURBATA: Praktikkan menjaga waktu."
+      ]
+    },
+    {
+      "pageId": "QJ1-P026",
+      "pageNumber": "26",
+      "title": "Dhammah 1",
+      "titleArabic": "الضَّمَّةُ 1",
+      "tartilCompetency": "Dhammah baru hanya pada بُ تُ ثُ جُ; seluruh huruf lain tetap memakai kompetensi Fathah/Kasrah yang telah legal. Tidak boleh muncul Dhammah pada huruf yang belum diajarkan.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P026",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Kafirun 3",
+          "arabic": "وَلَا أَنْتُمْ عَابِدُونَ مَا أَعْبُدُ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Giliranmu",
+          "arabic": "دَوْرُكَ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Tidak berlebihan",
+          "arabic": "وَلَا تُسْرِفُوا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "بُ عِ ثَ",
+          "تُ رِ كَ",
+          "جُ عِ لَ"
+        ],
+        [
+          "بُ ذِ لَ",
+          "ثُ قِ لَ",
+          "جُ مِ عَ"
+        ],
+        [
+          "بُ رِ ئَ",
+          "تُ بِ عَ",
+          "جُ رِ حَ"
+        ],
+        [
+          "بُ سِ طَ",
+          "ثُ بِ تَ",
+          "جُ لِ بَ"
+        ],
+        [
+          "بُ لِ غَ",
+          "تُ لِ يَ",
+          "جُ هِ لَ"
+        ],
+        [
+          "بُ دِ ئَ",
+          "ثُ قِلَ",
+          "جُ رِ بَ"
+        ],
+        [
+          "بُ عِ ثَ",
+          "تُ رِ كَ",
+          "جُ نِ بَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Giliranmu” (دَوْرُكَ).",
+        "Tahfidz QURBATA: Al-Kafirun 3.",
+        "Akhlak QURBATA: Praktikkan tidak berlebihan."
+      ],
+      "intro": {
+        "title": "Dhammah — Materi Baru",
+        "items": [
+          [
+            "بِ",
+            "بُ"
+          ],
+          [
+            "تِ",
+            "تُ"
+          ],
+          [
+            "ثِ",
+            "ثُ"
+          ],
+          [
+            "جِ",
+            "جُ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Kasrah yang telah dikuasai menuju Dhammah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P027",
+      "pageNumber": "27",
+      "title": "Dhammah 2",
+      "titleArabic": "الضَّمَّةُ 2",
+      "tartilCompetency": "Dhammah bertahap pada بُ تُ ثُ جُ حُ خُ دُ ذُ dengan murojaah Kasrah–Fathah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P027",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Kafirun 4",
+          "arabic": "وَلَا أَنَا عَابِدٌ مَا عَبَدْتُمْ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Bersama-sama",
+          "arabic": "مَعًا",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Memaafkan",
+          "arabic": "وَلْيَعْفُوا وَلْيَصْفَحُوا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "حُ فِ ظَ",
+          "خُ لِ قَ",
+          "دُ خِ لَ"
+        ],
+        [
+          "ذُ كِ رَ",
+          "حُ مِ دَ",
+          "دُ رِ سَ"
+        ],
+        [
+          "خُ دِ مَ",
+          "ذُ بِ حَ",
+          "حُ سِ بَ"
+        ],
+        [
+          "دُ فِ عَ",
+          "خُ فِ ضَ",
+          "ذُ هِ بَ"
+        ],
+        [
+          "كُ تِ بَ",
+          "ضُ رِ بَ",
+          "سُ مِ عَ"
+        ],
+        [
+          "عُ لِ مَ",
+          "فُ هِ مَ",
+          "رُ حِ مَ"
+        ],
+        [
+          "جُ لِ سَ",
+          "شُ رِ بَ",
+          "رُ كِ بَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Bersama-sama” (مَعًا).",
+        "Tahfidz QURBATA: Al-Kafirun 4.",
+        "Akhlak QURBATA: Praktikkan memaafkan."
+      ],
+      "intro": {
+        "title": "Dhammah — Materi Baru",
+        "items": [
+          [
+            "حِ",
+            "حُ"
+          ],
+          [
+            "خِ",
+            "خُ"
+          ],
+          [
+            "دِ",
+            "دُ"
+          ],
+          [
+            "ذِ",
+            "ذُ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Kasrah yang telah dikuasai menuju Dhammah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P028",
+      "pageNumber": "28",
+      "title": "Dhammah 3",
+      "titleArabic": "الضَّمَّةُ 3",
+      "tartilCompetency": "Dhammah bertahap pada بُ تُ ثُ جُ حُ خُ دُ ذُ رُ زُ سُ شُ dengan murojaah Kasrah–Fathah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P028",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Kafirun 5",
+          "arabic": "وَلَا أَنْتُمْ عَابِدُونَ مَا أَعْبُدُ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Sendiri",
+          "arabic": "وَحْدِي",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Berlomba dalam kebaikan",
+          "arabic": "فَاسْتَبِقُوا الْخَيْرَاتِ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "رُ فِ عَ",
+          "سُ مِ عَ",
+          "شُ رِ بَ"
+        ],
+        [
+          "زُ رِ عَ",
+          "رُ كِ بَ",
+          "سُ جِ دَ"
+        ],
+        [
+          "شُ كِ رَ",
+          "زُ حِ فَ",
+          "رُ حِ مَ"
+        ],
+        [
+          "سُ ئِلَ",
+          "شُ هِ دَ",
+          "زُ جِ رَ"
+        ],
+        [
+          "كُ تِ بَ",
+          "ضُ رِ بَ",
+          "ذُ كِ رَ"
+        ],
+        [
+          "عُ لِ مَ",
+          "حُ فِ ظَ",
+          "فُ هِ مَ"
+        ],
+        [
+          "جُ لِ سَ",
+          "قُ بِ لَ",
+          "وُ جِ دَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Sendiri” (وَحْدِي).",
+        "Tahfidz QURBATA: Al-Kafirun 5.",
+        "Akhlak QURBATA: Praktikkan berlomba dalam kebaikan."
+      ],
+      "intro": {
+        "title": "Dhammah — Materi Baru",
+        "items": [
+          [
+            "رِ",
+            "رُ"
+          ],
+          [
+            "زِ",
+            "زُ"
+          ],
+          [
+            "سِ",
+            "سُ"
+          ],
+          [
+            "شِ",
+            "شُ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Kasrah yang telah dikuasai menuju Dhammah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P029",
+      "pageNumber": "29",
+      "title": "Dhammah 4",
+      "titleArabic": "الضَّمَّةُ 4",
+      "tartilCompetency": "Dhammah bertahap pada بُ تُ ثُ جُ حُ خُ دُ ذُ رُ زُ سُ شُ صُ ضُ طُ ظُ dengan murojaah Kasrah–Fathah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P029",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Kafirun 6",
+          "arabic": "لَكُمْ دِينُكُمْ وَلِيَ دِينِ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Apa ini?",
+          "arabic": "مَا هَذَا؟",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Tawakal",
+          "arabic": "وَعَلَى اللَّهِ فَتَوَكَّلُوا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "صُ بِ رَ",
+          "ضُ رِ بَ",
+          "طُ لِ بَ"
+        ],
+        [
+          "ظُ لِ مَ",
+          "صُ نِ عَ",
+          "ضُ بِ طَ"
+        ],
+        [
+          "طُ بِ عَ",
+          "ظُ هِ رَ",
+          "صُ رِ فَ"
+        ],
+        [
+          "ضُ غِ طَ",
+          "طُ رِ حَ",
+          "ظُ لِ مَ"
+        ],
+        [
+          "كُ تِ بَ",
+          "سُ مِ عَ",
+          "عُ لِ مَ"
+        ],
+        [
+          "حُ فِ ظَ",
+          "فُ هِ مَ",
+          "رُ حِ مَ"
+        ],
+        [
+          "جُ لِ سَ",
+          "شُ رِ بَ",
+          "رُ كِ بَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Apa ini?” (مَا هَذَا؟).",
+        "Tahfidz QURBATA: Al-Kafirun 6.",
+        "Akhlak QURBATA: Praktikkan tawakal."
+      ],
+      "intro": {
+        "title": "Dhammah — Materi Baru",
+        "items": [
+          [
+            "صِ",
+            "صُ"
+          ],
+          [
+            "ضِ",
+            "ضُ"
+          ],
+          [
+            "طِ",
+            "طُ"
+          ],
+          [
+            "ظِ",
+            "ظُ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Kasrah yang telah dikuasai menuju Dhammah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P030",
+      "pageNumber": "30",
+      "title": "Dhammah 5",
+      "titleArabic": "الضَّمَّةُ 5",
+      "tartilCompetency": "Dhammah bertahap pada بُ تُ ثُ جُ حُ خُ دُ ذُ رُ زُ سُ شُ صُ ضُ طُ ظُ عُ غُ فُ قُ dengan murojaah Kasrah–Fathah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P030",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Kawthar 1",
+          "arabic": "إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Ini Al-Qur’an",
+          "arabic": "هَذَا الْقُرْآنُ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Istiqamah",
+          "arabic": "فَاسْتَقِمْ كَمَا أُمِرْتَ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "عُ لِ مَ",
+          "غُ فِ رَ",
+          "فُ هِ مَ"
+        ],
+        [
+          "قُ بِ لَ",
+          "عُ رِ فَ",
+          "غُ لِ بَ"
+        ],
+        [
+          "فُ تِ حَ",
+          "قُ رِ ئَ",
+          "عُ مِلَ"
+        ],
+        [
+          "غُ رِ سَ",
+          "فُ قِ دَ",
+          "قُ تِلَ"
+        ],
+        [
+          "كُ تِ بَ",
+          "ضُ رِ بَ",
+          "ذُ كِ رَ"
+        ],
+        [
+          "سُ مِ عَ",
+          "حُ فِ ظَ",
+          "رُ حِ مَ"
+        ],
+        [
+          "جُ لِ سَ",
+          "شُ رِ بَ",
+          "رُ كِ بَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Ini Al-Qur’an” (هَذَا الْقُرْآنُ).",
+        "Tahfidz QURBATA: Al-Kawthar 1.",
+        "Akhlak QURBATA: Praktikkan istiqamah."
+      ],
+      "intro": {
+        "title": "Dhammah — Materi Baru",
+        "items": [
+          [
+            "عِ",
+            "عُ"
+          ],
+          [
+            "غِ",
+            "غُ"
+          ],
+          [
+            "فِ",
+            "فُ"
+          ],
+          [
+            "قِ",
+            "قُ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Kasrah yang telah dikuasai menuju Dhammah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P031",
+      "pageNumber": "31",
+      "title": "Dhammah 6",
+      "titleArabic": "الضَّمَّةُ 6",
+      "tartilCompetency": "Dhammah bertahap pada بُ تُ ثُ جُ حُ خُ دُ ذُ رُ زُ سُ شُ صُ ضُ طُ ظُ عُ غُ فُ قُ كُ لُ مُ نُ dengan murojaah Kasrah–Fathah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P031",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Kawthar 2",
+          "arabic": "فَصَلِّ لِرَبِّكَ وَانْحَرْ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Mana buku?",
+          "arabic": "أَيْنَ الْكِتَابُ؟",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Menjaga persaudaraan",
+          "arabic": "إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "كُ تِ بَ",
+          "مُ لِ كَ",
+          "نُ ظِ رَ"
+        ],
+        [
+          "لُ بِ سَ",
+          "كُ سِ رَ",
+          "مُ نِ عَ"
+        ],
+        [
+          "نُ صِ رَ",
+          "لُ عِ بَ",
+          "كُ رِ هَ"
+        ],
+        [
+          "مُ سِ حَ",
+          "نُ قِلَ",
+          "لُ قِيَ"
+        ],
+        [
+          "ضُ رِ بَ",
+          "ذُ كِ رَ",
+          "سُ مِ عَ"
+        ],
+        [
+          "عُ لِ مَ",
+          "حُ فِ ظَ",
+          "فُ هِ مَ"
+        ],
+        [
+          "رُ حِ مَ",
+          "جُ لِ سَ",
+          "شُ رِ بَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Mana buku?” (أَيْنَ الْكِتَابُ؟).",
+        "Tahfidz QURBATA: Al-Kawthar 2.",
+        "Akhlak QURBATA: Praktikkan menjaga persaudaraan."
+      ],
+      "intro": {
+        "title": "Dhammah — Materi Baru",
+        "items": [
+          [
+            "كِ",
+            "كُ"
+          ],
+          [
+            "لِ",
+            "لُ"
+          ],
+          [
+            "مِ",
+            "مُ"
+          ],
+          [
+            "نِ",
+            "نُ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Kasrah yang telah dikuasai menuju Dhammah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P032",
+      "pageNumber": "32",
+      "title": "Dhammah 7",
+      "titleArabic": "الضَّمَّةُ 7",
+      "tartilCompetency": "Dhammah bertahap pada بُ تُ ثُ جُ حُ خُ دُ ذُ رُ زُ سُ شُ صُ ضُ طُ ظُ عُ غُ فُ قُ كُ لُ مُ نُ هُ وُ يُ ءُ dengan murojaah Kasrah–Fathah merata.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P032",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Kawthar 3",
+          "arabic": "إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Buku di sini",
+          "arabic": "الْكِتَابُ هُنَا",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Tidak sombong",
+          "arabic": "إِنَّ اللَّهَ لَا يُحِبُّ كُلَّ مُخْتَالٍ فَخُورٍ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "هُ دِيَ",
+          "وُ جِ دَ",
+          "يُ سِ رَ"
+        ],
+        [
+          "أُ خِ ذَ",
+          "هُ زِ مَ",
+          "وُ عِ دَ"
+        ],
+        [
+          "يُ مِ نَ",
+          "أُ كِلَ",
+          "هُ جِ رَ"
+        ],
+        [
+          "وُ زِنَ",
+          "يُ بِ سَ",
+          "أُ مِ رَ"
+        ],
+        [
+          "كُ تِ بَ",
+          "ضُ رِ بَ",
+          "ذُ كِ رَ"
+        ],
+        [
+          "سُ مِ عَ",
+          "عُ لِ مَ",
+          "حُ فِ ظَ"
+        ],
+        [
+          "فُ هِ مَ",
+          "رُ حِ مَ",
+          "جُ لِ سَ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Buku di sini” (الْكِتَابُ هُنَا).",
+        "Tahfidz QURBATA: Al-Kawthar 3.",
+        "Akhlak QURBATA: Praktikkan tidak sombong."
+      ],
+      "intro": {
+        "title": "Dhammah — Materi Baru",
+        "items": [
+          [
+            "هِ",
+            "هُ"
+          ],
+          [
+            "وِ",
+            "وُ"
+          ],
+          [
+            "يِ",
+            "يُ"
+          ],
+          [
+            "ءِ",
+            "ءُ"
+          ]
+        ],
+        "instruction": "Perhatikan perubahan bunyi dari Kasrah yang telah dikuasai menuju Dhammah.",
+        "direction": "rtl-old-to-new"
+      }
+    },
+    {
+      "pageId": "QJ1-P033",
+      "pageNumber": "33",
+      "title": "Penguatan Dhammah",
+      "titleArabic": "تَثْبِيتُ الضَّمَّةِ",
+      "tartilCompetency": "Penguatan seluruh Dhammah dengan murojaah Kasrah dan Fathah.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P033",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Ma'un 1",
+          "arabic": "أَرَأَيْتَ الَّذِي يُكَذِّبُ بِالدِّينِ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Ambil bukumu",
+          "arabic": "خُذْ كِتَابَكَ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Pemaaf",
+          "arabic": "وَالْعَافِينَ عَنِ النَّاسِ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "مُ نُ عُ",
+          "نُ فُ عِ",
+          "وُ جِ دَ"
+        ],
+        [
+          "نِ ظَ رُ",
+          "طَ لُ بُ",
+          "صُ دُ قُ"
+        ],
+        [
+          "قُ رُ بَ",
+          "بُ عَ دِ",
+          "رَ فِ عُ"
+        ],
+        [
+          "خِ فُ ضُ",
+          "دُ رُ سُ",
+          "لُ عُ بَ"
+        ],
+        [
+          "غُ لَ بَ",
+          "سَ بَ قُ",
+          "وَ قُ فُ"
+        ],
+        [
+          "سُ كُ نُ",
+          "كُ تُ بِ",
+          "عُ لِ مَ"
+        ],
+        [
+          "فِ هَ مُ",
+          "عَ مُ لُ",
+          "سُ مُ عُ"
+        ],
+        [
+          "رُ حُ مَ",
+          "حُ فَ ظِ",
+          "شَ رِ بُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Ambil bukumu” (خُذْ كِتَابَكَ).",
+        "Tahfidz QURBATA: Al-Ma'un 1.",
+        "Akhlak QURBATA: Praktikkan pemaaf."
+      ]
+    },
+    {
+      "pageId": "QJ1-P034",
+      "pageNumber": "34",
+      "title": "Latihan Kumulatif Dhammah 1",
+      "titleArabic": "تَدْرِيبُ الضَّمَّةِ 1",
+      "tartilCompetency": "Latihan kumulatif Dhammah–Kasrah–Fathah dalam kelompok tiga huruf lepas yang bermakna atau mendekati kata bermakna.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P034",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Ma'un 2",
+          "arabic": "فَذَلِكَ الَّذِي يَدُعُّ الْيَتِيمَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Letakkan bukumu",
+          "arabic": "ضَعْ كِتَابَكَ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Dermawan",
+          "arabic": "لَنْ تَنَالُوا الْبِرَّ حَتَّى تُنْفِقُوا مِمَّا تُحِبُّونَ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "نُ فُ عُ",
+          "وُ جُ دِ",
+          "نُ ظِ رَ"
+        ],
+        [
+          "طِ لَ بُ",
+          "صَ دُ قُ",
+          "قُ رُ بُ"
+        ],
+        [
+          "بُ عُ دَ",
+          "رُ فَ عِ",
+          "خَ فِ ضُ"
+        ],
+        [
+          "دِ رُ سُ",
+          "لُ عُ بُ",
+          "غُ لُ بَ"
+        ],
+        [
+          "سُ بَ قَ",
+          "وَ قَ فُ",
+          "سَ كُ نُ"
+        ],
+        [
+          "كُ تُ بُ",
+          "عُ لُ مِ",
+          "فُ هِ مَ"
+        ],
+        [
+          "عِ مَ لُ",
+          "سَ مُ عُ",
+          "رُ حُ مُ"
+        ],
+        [
+          "حُ فُ ظَ",
+          "شُ رَ بِ",
+          "رَ كِ بُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Letakkan bukumu” (ضَعْ كِتَابَكَ).",
+        "Tahfidz QURBATA: Al-Ma'un 2.",
+        "Akhlak QURBATA: Praktikkan dermawan."
+      ]
+    },
+    {
+      "pageId": "QJ1-P035",
+      "pageNumber": "35",
+      "title": "Latihan Kumulatif Dhammah 2",
+      "titleArabic": "تَدْرِيبُ الضَّمَّةِ 2",
+      "tartilCompetency": "Latihan kumulatif Dhammah–Kasrah–Fathah dalam kelompok tiga huruf lepas yang bermakna atau mendekati kata bermakna.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P035",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Ma'un 3",
+          "arabic": "وَلَا يَحُضُّ عَلَى طَعَامِ الْمِسْكِينِ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Buka halaman",
+          "arabic": "اِفْتَحِ الصَّفْحَةَ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Menjaga pandangan",
+          "arabic": "قُلْ لِلْمُؤْمِنِينَ يَغُضُّوا مِنْ أَبْصَارِهِمْ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "وُ جُ دُ",
+          "نُ ظُ رِ",
+          "طُ لِ بَ"
+        ],
+        [
+          "صِ دَ قُ",
+          "قَ رُ بُ",
+          "بُ عُ دُ"
+        ],
+        [
+          "رُ فُ عَ",
+          "خُ فَ ضِ",
+          "دَ رِ سُ"
+        ],
+        [
+          "لِ عُ بُ",
+          "غُ لُ بُ",
+          "سُ بُ قَ"
+        ],
+        [
+          "وُ قَ فَ",
+          "سَ كَ نُ",
+          "كَ تُ بُ"
+        ],
+        [
+          "عُ لُ مُ",
+          "فُ هُ مِ",
+          "عُ مِ لَ"
+        ],
+        [
+          "سِ مَ عُ",
+          "رَ حُ مُ",
+          "حُ فُ ظُ"
+        ],
+        [
+          "شُ رُ بَ",
+          "رُ كَ بِ",
+          "جَ لِ سُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Buka halaman” (اِفْتَحِ الصَّفْحَةَ).",
+        "Tahfidz QURBATA: Al-Ma'un 3.",
+        "Akhlak QURBATA: Praktikkan menjaga pandangan."
+      ]
+    },
+    {
+      "pageId": "QJ1-P036",
+      "pageNumber": "36",
+      "title": "Penguatan Jilid 1 1",
+      "titleArabic": "مُرَاجَعَةُ الْجُزْءِ الْأَوَّلِ 1",
+      "tartilCompetency": "Penguatan kumulatif Fathah, Kasrah, dan Dhammah dalam kelompok huruf lepas bermakna atau mendekati kata bermakna.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P036",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Ma'un 4",
+          "arabic": "فَوَيْلٌ لِلْمُصَلِّينَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Tunjukkan",
+          "arabic": "أَشِرْ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Berdoa",
+          "arabic": "ادْعُونِي أَسْتَجِبْ لَكُمْ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "نُ ظُ رُ",
+          "طُ لُ بِ",
+          "صُ دِ قَ"
+        ],
+        [
+          "قِ رَ بُ",
+          "بَ عُ دُ",
+          "رُ فُ عُ"
+        ],
+        [
+          "خُ فُ ضَ",
+          "دُ رَ سِ",
+          "لَ عِ بُ"
+        ],
+        [
+          "غِ لُ بُ",
+          "سُ بُ قُ",
+          "وُ قُ فَ"
+        ],
+        [
+          "سُ كَ نَ",
+          "كَ تَ بُ",
+          "عَ لُ مُ"
+        ],
+        [
+          "فُ هُ مُ",
+          "عُ مُ لِ",
+          "سُ مِ عَ"
+        ],
+        [
+          "رِ حَ مُ",
+          "حَ فُ ظُ",
+          "شُ رُ بُ"
+        ],
+        [
+          "رُ كُ بَ",
+          "جُ لَ سِ",
+          "لَ بِ سُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Tunjukkan” (أَشِرْ).",
+        "Tahfidz QURBATA: Al-Ma'un 4.",
+        "Akhlak QURBATA: Praktikkan berdoa."
+      ]
+    },
+    {
+      "pageId": "QJ1-P037",
+      "pageNumber": "37",
+      "title": "Penguatan Jilid 1 2",
+      "titleArabic": "مُرَاجَعَةُ الْجُزْءِ الْأَوَّلِ 2",
+      "tartilCompetency": "Penguatan kumulatif Fathah, Kasrah, dan Dhammah dalam kelompok huruf lepas bermakna atau mendekati kata bermakna.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P037",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Ma'un 5",
+          "arabic": "الَّذِينَ هُمْ عَنْ صَلَاتِهِمْ سَاهُونَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Ikuti saya",
+          "arabic": "اِتَّبِعْنِي",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Mengingat Allah",
+          "arabic": "فَاذْكُرُونِي أَذْكُرْكُمْ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "طُ لُ بُ",
+          "صُ دُ قِ",
+          "قُ رِ بَ"
+        ],
+        [
+          "بِ عَ دُ",
+          "رَ فُ عُ",
+          "خُ فُ ضُ"
+        ],
+        [
+          "دُ رُ سَ",
+          "لُ عَ بِ",
+          "غَ لِ بُ"
+        ],
+        [
+          "سِ بُ قُ",
+          "وُ قُ فُ",
+          "سُ كُ نَ"
+        ],
+        [
+          "كُ تَ بَ",
+          "عَ لَ مُ",
+          "فَ هُ مُ"
+        ],
+        [
+          "عُ مُ لُ",
+          "سُ مُ عِ",
+          "رُ حِ مَ"
+        ],
+        [
+          "حِ فَ ظُ",
+          "شَ رُ بُ",
+          "رُ كُ بُ"
+        ],
+        [
+          "جُ لُ سَ",
+          "لُ بَ سِ",
+          "فَ رِ حُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Ikuti saya” (اِتَّبِعْنِي).",
+        "Tahfidz QURBATA: Al-Ma'un 5.",
+        "Akhlak QURBATA: Praktikkan mengingat allah."
+      ]
+    },
+    {
+      "pageId": "QJ1-P038",
+      "pageNumber": "38",
+      "title": "Penguatan Jilid 1 3",
+      "titleArabic": "مُرَاجَعَةُ الْجُزْءِ الْأَوَّلِ 3",
+      "tartilCompetency": "Penguatan kumulatif Fathah, Kasrah, dan Dhammah dalam kelompok huruf lepas bermakna atau mendekati kata bermakna.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P038",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Ma'un 6",
+          "arabic": "الَّذِينَ هُمْ يُرَاءُونَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Dengarkan guru",
+          "arabic": "اِسْتَمِعْ إِلَى الْمُعَلِّمِ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Membaca dengan tartil",
+          "arabic": "وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "صُ دُ قُ",
+          "قُ رُ بِ",
+          "بُ عِ دَ"
+        ],
+        [
+          "رِ فَ عُ",
+          "خَ فُ ضُ",
+          "دُ رُ سُ"
+        ],
+        [
+          "لُ عُ بَ",
+          "غُ لَ بِ",
+          "سَ بِ قُ"
+        ],
+        [
+          "وِ قُ فُ",
+          "سُ كُ نُ",
+          "كُ تُ بَ"
+        ],
+        [
+          "عُ لَ مَ",
+          "فَ هَ مُ",
+          "عَ مُ لُ"
+        ],
+        [
+          "سُ مُ عُ",
+          "رُ حُ مِ",
+          "حُ فِ ظَ"
+        ],
+        [
+          "شِ رَ بُ",
+          "رَ كُ بُ",
+          "جُ لُ سُ"
+        ],
+        [
+          "لُ بُ سَ",
+          "فُ رَ حِ",
+          "حَ مِ دُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Dengarkan guru” (اِسْتَمِعْ إِلَى الْمُعَلِّمِ).",
+        "Tahfidz QURBATA: Al-Ma'un 6.",
+        "Akhlak QURBATA: Praktikkan membaca dengan tartil."
+      ]
+    },
+    {
+      "pageId": "QJ1-P039",
+      "pageNumber": "39",
+      "title": "Penguatan Jilid 1 4",
+      "titleArabic": "مُرَاجَعَةُ الْجُزْءِ الْأَوَّلِ 4",
+      "tartilCompetency": "Penguatan kumulatif Fathah, Kasrah, dan Dhammah dalam kelompok huruf lepas bermakna atau mendekati kata bermakna.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P039",
+      "integration": {
+        "tahfidz": {
+          "title": "Al-Ma'un 7",
+          "arabic": "وَيَمْنَعُونَ الْمَاعُونَ",
+          "instruction": "Hafalkan target baru halaman ini; murojaah target sebelumnya dilakukan terpisah tanpa mengganti target baru."
+        },
+        "arabic": {
+          "title": "Terima kasih",
+          "arabic": "شُكْرًا",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Mengamalkan ilmu",
+          "arabic": "تَعَلَّمْ — اِعْمَلْ — عَلِّمْ",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "قُ رُ بُ",
+          "بُ عُ دِ",
+          "رُ فِ عَ"
+        ],
+        [
+          "خِ فَ ضُ",
+          "دَ رُ سُ",
+          "لُ عُ بُ"
+        ],
+        [
+          "غُ لُ بَ",
+          "سُ بَ قِ",
+          "وَ قِ فُ"
+        ],
+        [
+          "سِ كُ نُ",
+          "كُ تُ بُ",
+          "عُ لُ مَ"
+        ],
+        [
+          "فُ هَ مَ",
+          "عَ مَ لُ",
+          "سَ مُ عُ"
+        ],
+        [
+          "رُ حُ مُ",
+          "حُ فُ ظِ",
+          "شُ رِ بَ"
+        ],
+        [
+          "رِ كَ بُ",
+          "جَ لُ سُ",
+          "لُ بُ سُ"
+        ],
+        [
+          "فُ رُ حَ",
+          "حُ مَ دِ",
+          "نَ دِ مُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Terima kasih” (شُكْرًا).",
+        "Tahfidz QURBATA: Al-Ma'un 7.",
+        "Akhlak QURBATA: Praktikkan mengamalkan ilmu."
+      ]
+    },
+    {
+      "pageId": "QJ1-P040",
+      "pageNumber": "40",
+      "title": "Penguatan Jilid 1 5",
+      "titleArabic": "مُرَاجَعَةُ الْجُزْءِ الْأَوَّلِ 5",
+      "tartilCompetency": "Penguatan kumulatif Fathah, Kasrah, dan Dhammah dalam kelompok huruf lepas bermakna atau mendekati kata bermakna.",
+      "riqaOsUrl": "https://www.rumahilmualquran.com/q/QJ1-P040",
+      "integration": {
+        "tahfidz": {
+          "title": "Murojaah Jilid 1",
+          "arabic": "مُرَاجَعَةٌ شَامِلَةٌ",
+          "instruction": "Murojaah seluruh target tahfidz Jilid 1."
+        },
+        "arabic": {
+          "title": "Alhamdulillah",
+          "arabic": "الْحَمْدُ لِلَّهِ",
+          "instruction": "Gunakan ungkapan baru ini secara nyata dalam bi’ah pembelajaran."
+        },
+        "akhlak": {
+          "title": "Penutup adab",
+          "arabic": "خَيْرُكُمْ أَحْسَنُكُمْ أَخْلَاقًا",
+          "instruction": "Pahami pesan akhlak baru ini dan praktikkan pada kegiatan halaman ini."
+        }
+      },
+      "rows": [
+        [
+          "بُ عُ دُ",
+          "رُ فُ عِ",
+          "خُ فِ ضَ"
+        ],
+        [
+          "دِ رَ سُ",
+          "لَ عُ بُ",
+          "غُ لُ بُ"
+        ],
+        [
+          "سُ بُ قَ",
+          "وُ قَ فِ",
+          "سَ كِ نُ"
+        ],
+        [
+          "كِ تُ بُ",
+          "عُ لُ مُ",
+          "فُ هُ مَ"
+        ],
+        [
+          "عُ مَ لَ",
+          "سَ مَ عُ",
+          "رَ حُ مُ"
+        ],
+        [
+          "حُ فُ ظُ",
+          "شُ رُ بِ",
+          "رُ كِ بَ"
+        ],
+        [
+          "جِ لَ سُ",
+          "لَ بُ سُ",
+          "فُ رُ حُ"
+        ],
+        [
+          "حُ مُ دَ",
+          "نُ دَ مِ",
+          "مَ لِ كُ"
+        ]
+      ],
+      "activities": [
+        "Bahasa Arab QURBATA: Praktikkan “Alhamdulillah” (الْحَمْدُ لِلَّهِ).",
+        "Tahfidz QURBATA: Murojaah Jilid 1.",
+        "Akhlak QURBATA: Praktikkan penutup adab."
+      ]
     }
-  ]
+  ],
+  "curriculumRules": {
+    "newCompetencyShare": "±60%",
+    "reviewShare": "±40%",
+    "reviewPolicy": "Murojaah wajib tersebar merata dari seluruh kompetensi yang telah legal; tidak boleh hanya mengulang kelompok terakhir.",
+    "progressionPolicy": "Kompetensi baru diperkenalkan bertahap. Setiap penambahan kompetensi wajib mempertahankan kompetensi lama di latihan.",
+    "phaseClosure": "Setelah seluruh huruf pada satu harakat dikenalkan, lakukan penguatan lalu dua halaman latihan kumulatif sebelum masuk harakat berikutnya.",
+    "jilid1Sequence": [
+      "Fathah",
+      "Kasrah",
+      "Dhammah"
+    ],
+    "meaningfulPractice": "Pada fase harakat baru, susunan bermakna/mendekati kata terutama dibangun dari kompetensi harakat baru yang SUDAH legal pada halaman-halaman sebelumnya dan kompetensi baru halaman aktif; fathah yang sudah tuntas hanya berfungsi sebagai murojaah kumulatif tersebar. Semua huruf tetap lepas/tidak sambung.",
+    "newConceptIntroduction": "SETIAP halaman yang memperkenalkan kompetensi baru wajib mengganti SATU baris latihan dengan satu baris PENANAMAN KOMPETENSI BARU. Huruf contoh harus sebesar huruf pada grid Latihan Tartil. Pola contoh: huruf/bentuk lama → bentuk kompetensi baru. Karena satu baris dipakai untuk penanaman, halaman materi baru hanya memiliki 7 baris grid latihan. Bukan strip teori kecil.",
+    "hehPolicy": "Audit global: hanya gunakan ه untuk ha dua lubang menurut font Utsmani; karakter ھ/ہ/ۀ/ە dilarang di seluruh data. Pada latihan Tartil, ha wajib membawa harakat sesuai kompetensi.",
+    "fathahAfterClosure": "Setelah fase Fathah ditutup, Fathah tidak lagi menjadi target pembentukan pola bermakna; hanya muncul sebagai murojaah kumulatif proporsional.",
+    "detachedLetters": "Jilid 1 wajib memakai huruf lepas/tidak sambung pada seluruh grid Tartil.",
+    "mixedHarakatWithinGroup": "Pada fase harakat baru, satu kelompok latihan 3 huruf wajib mencampur harakat kompetensi baru dan harakat lama yang sudah legal di DALAM kelompok yang sama. Posisi harakat baru diacak: awal, tengah, atau akhir. Komposisi keseluruhan halaman mengikuti proporsi target aktif/murojaah (±60/40), bukan memisahkan kelompok Kasrah dan kelompok Fathah.",
+    "meaningfulMixedGroups": "Kelompok 3 huruf campuran harakat TIDAK boleh dibentuk secara acak huruf. Pilih terlebih dahulu bentuk dasar kata Arab bermakna atau sangat dekat dengan kata bermakna, lalu distribusikan harakat baru/lama pada tiga hurufnya sesuai kompetensi legal dan proporsi halaman. Posisi harakat baru boleh awal/tengah/akhir; huruf tetap lepas.",
+    "newCompetencyHeaderEveryIntroduction": "WAJIB pada SETIAP halaman kompetensi baru: baris penanaman harus MENJELASKAN PERUBAHAN dari kompetensi lama yang telah dikuasai menuju kompetensi baru pada huruf yang sama, misalnya جَ → جِ. DILARANG menampilkan bentuk baru → bentuk baru (misalnya جِ → جِ) karena tidak menjelaskan perubahan. Huruf contoh memakai font Utsmani dan ukuran sama dengan huruf latihan. Halaman materi baru = 1 baris penanaman + 7 baris latihan.",
+    "jilid1To40": "P026–P032 pengenalan Dhammah bertahap; setiap halaman materi baru memakai 1 baris penanaman kompetensi lama→baru ukuran latihan + 7 baris latihan. P033 penguatan; P034–P035 kumulatif Dhammah; P036–P040 penguatan kumulatif Jilid 1. Semua kelompok tiga huruf lepas berbasis kata bermakna/mendekati bermakna dan murojaah tersebar.",
+    "integrationNoRepeat": "Tahfidz, Bahasa Arab, dan Akhlak memiliki TARGET BARU unik per halaman P001–P040. Murojaah boleh dan wajib dilakukan, tetapi tidak boleh menggantikan slot target baru sehingga judul/target integrasi tidak berulang.",
+    "activeCompetencyDominance": "Pada halaman pengenalan kompetensi baru, latihan Tartil wajib didominasi kompetensi baru ±60% dan murojaah kompetensi legal sebelumnya ±40%. Kompetensi baru tidak boleh hanya muncul satu contoh. Proporsi dihitung pada seluruh unit huruf/harakat dalam 7 baris latihan, sambil tetap memakai susunan kata Arab bermakna atau mendekati bermakna dan posisi kompetensi baru tersebar awal–tengah–akhir.",
+    "activeCompetencyImplementation": "P016–P022 dan P026–P032 diaudit ulang: kompetensi aktif muncul berulang dan tersebar pada 7 baris, sementara harakat lama tetap tertanam sebagai murojaah di kelompok yang sama. Semua kelompok bersumber dari bank kata/akar Arab bermakna atau mendekati bermakna; tidak memakai kombinasi acak.",
+    "meaningAndVowelIntegrity": "ATURAN KERAS: latihan tidak boleh dibentuk dengan mengganti harakat secara mekanis pada akar/kata. Jika contoh diklaim kata bermakna, seluruh pola harakatnya harus mengikuti bentuk Arab yang sah. Untuk kompetensi yang belum cukup bank kata pada batas kompetensi jilid, gunakan contoh suku/fragmen pedagogis yang jelas sebagai latihan bunyi dan jangan menyebutnya kata bermakna. Dilarang menghasilkan bentuk palsu seperti كِ مِ لِ dari كَمُلَ.",
+    "noDuplicateRows": "Dalam satu halaman, tidak boleh ada baris latihan yang identik; antarkompetensi/halaman juga harus divariasikan agar dua halaman tidak berisi latihan yang sama seluruhnya.",
+    "dhammahMeaningfulBank": "P026–P032 dibangun dari bentuk Arab berharakat yang sah (terutama pola pasif فُعِلَ dan bentuk yang sesuai), bukan akar yang diharakati ulang secara acak. Kompetensi Dhammah aktif tersebar, sementara Kasrah/Fathah tetap hadir alami di dalam kata sebagai murojaah.",
+    "threeLetterMeaningfulIntegrity": "Mulai P014 setiap sel latihan wajib tepat tiga huruf dasar. Bentuk dua huruf/fragmen pendek dilarang. Untuk huruf yang contoh leksikalnya lebih jarang, gunakan kata Arab sah yang menempatkan kompetensi aktif di awal/tengah/akhir kata; jangan memalsukan harakat.",
+    "phaseLegalityStrict": "Pada setiap halaman materi baru, HARAKAT BARU hanya boleh muncul pada huruf yang sedang diperkenalkan atau yang sudah legal pada fase baru sebelumnya. Contoh: P026 hanya بُ تُ ثُ جُ yang boleh berdhammah; ضُ dan huruf Dhammah lain dilarang sebelum halamannya.",
+    "activeNewExamplesRequired": "Kompetensi baru wajib benar-benar muncul berulang dalam latihan, bukan hanya pada baris penanaman. Setiap huruf baru harus memiliki beberapa contoh pada kata Arab yang sah/mendekati bentuk bermakna, dengan posisi tersebar dan murojaah tetap tertanam."
+  }
 }

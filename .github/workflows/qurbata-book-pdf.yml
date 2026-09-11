@@ -1,0 +1,89 @@
+name: QURBATA Book PDF
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "production/vivliostyle/**"
+      - ".github/workflows/qurbata-book-pdf.yml"
+  pull_request:
+    paths:
+      - "production/vivliostyle/**"
+      - ".github/workflows/qurbata-book-pdf.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: production/vivliostyle
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: production/vivliostyle/package-lock.json
+      - name: Install dependencies
+        run: npm ci
+      - name: Build QJ1 P001 master proof
+        run: npm run build:p001
+      - name: Upload QJ1 P001 master proof
+        uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-J1-P001-MASTER-PROOF
+          path: production/vivliostyle/dist-p001/QURBATA-J1-P001-MASTER-PROOF.pdf
+          if-no-files-found: error
+          retention-days: 30
+      - name: Build QJ1 P002 master proof
+        run: npm run build:p002
+      - name: Upload QJ1 P002 master proof
+        uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-J1-P002-MASTER-PROOF
+          path: production/vivliostyle/dist-p002/QURBATA-J1-P002-MASTER-PROOF.pdf
+          if-no-files-found: error
+          retention-days: 30
+      - name: Build QJ1 P003 master proof
+        run: npm run build:p003
+      - name: Upload QJ1 P003 master proof
+        uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-J1-P003-MASTER-PROOF
+          path: production/vivliostyle/dist-p003/QURBATA-J1-P003-MASTER-PROOF.pdf
+          if-no-files-found: error
+          retention-days: 30
+      - name: Build QJ1 P004-P010 audit block
+        run: npm run build:p004-p010
+      - name: Upload QJ1 P004-P010 audit block
+        uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-J1-P004-P010-AUDIT
+          path: production/vivliostyle/dist-p004-p010/QURBATA-J1-P004-P010-AUDIT.pdf
+          if-no-files-found: error
+          retention-days: 30
+      - name: Build B5 PDF
+        run: npm run build:pdf
+      - name: Build B5 PDF Jilid 2
+        run: npm run build:pdf:j2
+      - name: Upload Jilid 2 proof
+        uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-JILID-2-PILOT
+          path: production/vivliostyle/dist/QURBATA-JILID-2-PILOT.pdf
+          if-no-files-found: error
+          retention-days: 30
+      - name: Upload print proof
+        uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-JILID-1-PILOT
+          path: production/vivliostyle/dist/QURBATA-JILID-1-PILOT.pdf
+          if-no-files-found: error
+          retention-days: 30
