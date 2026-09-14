@@ -1,6 +1,6 @@
 @font-face {
   font-family: "QURBATA Uthmani";
-  src: url("../fonts/KFGQPC-Uthman-Taha.ttf") format("truetype");
+  src: url("../fonts/KFGQPC-Uthman-Taha-Naskh.woff2") format("woff2");
   font-display: block;
 }
 
@@ -47,7 +47,7 @@ body {
 .book-page:last-child { break-after: auto; page-break-after: auto; }
 
 .arabic {
-  font-family: "QURBATA Uthmani", "Noto Naskh Arabic", "Traditional Arabic", "DejaVu Sans", serif;
+  font-family: "QURBATA Uthmani", serif;
   direction: rtl;
   unicode-bidi: isolate;
   font-variant-ligatures: common-ligatures contextual;
