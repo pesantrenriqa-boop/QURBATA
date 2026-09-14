@@ -14,10 +14,12 @@
     "build:p021-p030:pdf": "npm run build:p021-p030:html && mkdir -p dist/fonts && cp fonts/KFGQPC-Uthman-Taha-Naskh.woff2 dist/fonts/KFGQPC-Uthman-Taha-Naskh.woff2 && vivliostyle build dist/QURBATA-J1-P021-P030-AUDIT.html -o dist/QURBATA-J1-P021-P030-AUDIT.pdf",
     "build:p031-p040:html": "node scripts/build-p031-p040-from-frozen.mjs",
     "build:p031-p040:pdf": "npm run build:p031-p040:html && mkdir -p dist/fonts && cp fonts/KFGQPC-Uthman-Taha-Naskh.woff2 dist/fonts/KFGQPC-Uthman-Taha-Naskh.woff2 && vivliostyle build dist/QURBATA-J1-P031-P040-AUDIT.html -o dist/QURBATA-J1-P031-P040-AUDIT.pdf",
+    "build:j1-full:pdf": "npm run build:p001-p010:pdf && npm run build:p011-p020:pdf && npm run build:p021-p030:pdf && npm run build:p031-p040:pdf && node scripts/merge-j1-full-audit.mjs",
     "build": "npm run build:pdf"
   },
   "dependencies": {
     "@vivliostyle/cli": "^10.1.0",
+    "pdf-lib": "^1.17.1",
     "qrcode": "^1.5.4"
   }
 }
