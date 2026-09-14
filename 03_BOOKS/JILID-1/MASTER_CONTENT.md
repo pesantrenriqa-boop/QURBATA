@@ -26,18 +26,39 @@ Keputusan kunci:
 - P011: `كَ لَ`
 - P012: `مَ نَ`
 - P013: `هَ وَ يَ`
-- P014: **awal/penanaman Kasrah**, menggantikan struktur lama yang masih menjadikan P014 latihan penuh Fathah.
+- P014: **awal/penanaman Kasrah**.
 - P015–P019: perluasan Kasrah bertahap hingga seluruh huruf tercakup.
-- P020: **checkpoint khusus**, bukan halaman Kasrah biasa.
-- Murojaah wajib kumulatif sejak P001 dan kompetensi awal tetap berputar merata.
+- P020: **checkpoint khusus** Fathah + Kasrah.
+- Murojaah wajib kumulatif sejak P001.
 
-## Status produksi
+Status produksi:
+- Generator P011–P020: TERSEDIA DI MAIN.
+- Workflow audit PDF: TERSEDIA DI MAIN.
+- KFGQPC Uthman Taha: EMBEDDED pada build audit yang lolos.
+- P014/P019/P020: audit visual terakhir lulus.
+- Output tetap berlabel AUDIT sampai gate final kurikulum untuk satu blok dinyatakan selesai.
+
+### P021–P030
+Sumber resmi:
+- `03_BOOKS/JILID-1/PAGE_REGISTER_P021-P030_FROZEN-v1.0.md`
+
+Keputusan kunci:
+- P021: **awal Dhammah**, karena Kasrah sudah dituntaskan di P019 dan P020 adalah checkpoint.
+- P021–P027: Dhammah bertahap sampai seluruh huruf tercakup.
+- P028: penguatan Dhammah.
+- P029–P030: latihan kumulatif Fathah–Kasrah–Dhammah.
+- Jadwal Tahfidz/Bi’ah Arabiyah/Akhlak tetap mengikuti nomor pertemuan P021–P030 dan tidak ikut bergeser akibat recovery struktur Tartil.
+- Murojaah tetap kumulatif sejak P001.
+
+## Status produksi keseluruhan
 - Repository structure: READY
 - Master curriculum Jilid 1: FROZEN v1.0
 - Cumulative murojaah rule: FROZEN v1.0
 - P011–P020 page register: FROZEN v1.0
-- Production generator P011–P020: BELUM DITURUNKAN DARI REGISTER TERBARU
-- PDF P011–P020: BELUM FINAL
+- P011–P020 production pipeline: MERGED TO MAIN
+- P021–P030 page register: FROZEN v1.0
+- P021–P030 production pipeline: BELUM DITURUNKAN DARI REGISTER
+- P031–P040: MENUNGGU RECOVERY + FREEZE REGISTER
 
 ## Sumber prioritas
 1. Master curriculum frozen.
@@ -47,4 +68,4 @@ Keputusan kunci:
 5. Dokumen foundation QURBATA.
 
 ## Catatan recovery penting
-Sumber produksi lama berhasil dipulihkan sampai sedikitnya P020, tetapi tidak boleh disalin mentah karena terdapat konflik dengan keputusan terbaru pada titik transisi Kasrah dan checkpoint halaman 20. Sumber lama disimpan sebagai bukti historis/audit, sedangkan produksi baru mengikuti register frozen.
+Sumber produksi lama tetap disimpan sebagai bukti historis/audit. Struktur lama tidak otomatis menjadi authority. Pada P011–P030 telah ditemukan pergeseran fase yang harus dikoreksi: Kasrah selesai lebih awal di master terbaru sehingga Dhammah dimajukan mulai P021. Produk baru wajib mengikuti register frozen terbaru.
