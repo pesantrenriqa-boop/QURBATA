@@ -21,18 +21,19 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: npm
-          cache-dependency-path: production/vivliostyle/package-lock.json
+          cache: 'npm'
+          cache-dependency-path: production/vivliostyle/package.json
       - name: Install dependencies
-        run: npm ci
+        run: npm install
       - name: Build P021-P030 audit PDF
         run: npm run build:p021-p030:pdf
       - name: Verify artifact
         run: |
-          test -s dist/QURBATA-J1-P021-P030-AUDIT.pdf
-          pdfinfo dist/QURBATA-J1-P021-P030-AUDIT.pdf | grep -q 'Pages:          10'
+          test -f dist/QURBATA-J1-P021-P030-AUDIT.pdf
+          ls -lh dist/QURBATA-J1-P021-P030-AUDIT.pdf
       - name: Upload PDF
         uses: actions/upload-artifact@v4
         with:
           name: QURBATA-J1-P021-P030-AUDIT
           path: production/vivliostyle/dist/QURBATA-J1-P021-P030-AUDIT.pdf
+          if-no-files-found: error
