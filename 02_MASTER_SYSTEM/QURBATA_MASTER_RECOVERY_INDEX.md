@@ -21,11 +21,23 @@ Sumber pengendali utama:
 - `02_MASTER_SYSTEM/QURBATA_TARTIL_J1_MASTER_CURRICULUM_FROZEN-v1.0.md`
 - `02_MASTER_SYSTEM/QURBATA-J1-CUMULATIVE-MUROJAAH-FROZEN-v1.0.md`
 
+Register halaman yang sudah dibekukan:
+- `03_BOOKS/JILID-1/PAGE_REGISTER_P011-P020_FROZEN-v1.0.md`
+
 Ketentuan:
 - Seluruh generator, PDF, RIQA OS, audio, assessment, dan turunan Jilid 1 wajib tunduk pada master tersebut.
 - Jika ada perubahan kebijakan, revisi master terlebih dahulu, naikkan versi, lalu turunkan perubahan ke produksi.
 - File PDF atau script produksi tidak boleh menjadi sumber kebijakan kurikulum.
 - Keputusan halaman tidak boleh mengubah aturan master secara ad hoc.
+- Sumber/draft produksi lama boleh dipakai sebagai bahan recovery tetapi tidak otomatis menjadi authority bila bertentangan dengan master frozen.
+
+## STATUS RECOVERY JILID 1
+
+- Master curriculum: FROZEN v1.0
+- Cumulative murojaah rule: FROZEN v1.0
+- P011–P020: PAGE REGISTER FROZEN v1.0
+- Koreksi penting P011–P020: P014 mulai Kasrah; P020 checkpoint khusus.
+- Generator/PDF P011–P020 berikutnya harus diturunkan ulang dari register terbaru.
 
 ## Prioritas Recovery
 
@@ -43,6 +55,6 @@ Ketentuan:
 
 ## Aturan
 
-Tidak membuat ulang materi yang sudah pernah selesai.
-Semua revisi dilakukan melalui master file.
-Draft lama dipindahkan ke archive, bukan menjadi sumber kerja baru.
+Tidak membuat ulang materi yang sudah pernah selesai tanpa audit recovery.
+Semua revisi dilakukan melalui master/register file.
+Draft lama dipindahkan ke archive atau ditandai obsolete/audit, bukan menjadi sumber kerja baru.
