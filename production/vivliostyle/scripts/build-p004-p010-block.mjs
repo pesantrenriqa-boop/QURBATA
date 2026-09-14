@@ -4,25 +4,35 @@ import QRCode from "qrcode";
 
 const root = path.resolve(import.meta.dirname, "..");
 const pages = [
- {n:4,focus:"دَ ذَ رَ زَ",comp:"Dal, Dzal, Ra, Zai dengan Fathah",desc:"Membedakan dan membaca دَ ذَ رَ زَ bersama murojaah materi sebelumnya. Hanya huruf lepas berharakat fathah.",tahTitle:"An-Nas 4",tah:"مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ",biah:"رَدِّدْ",akhTitle:"Ma'ruf",akh:"لَا تَحْقِرَنَّ مِنَ الْمَعْرُوفِ شَيْئًا",akhNote:"Biasakan menghargai setiap kebaikan.",active:["دَ","ذَ","رَ","زَ"],review:["بَ","تَ","ثَ","ءَ","أَ","جَ","حَ","خَ"]},
- {n:5,focus:"سَ شَ",comp:"Sin dan Syin dengan Fathah",desc:"Membedakan dan membaca سَ شَ bersama murojaah materi sebelumnya. Hanya huruf lepas berharakat fathah.",tahTitle:"An-Nas 5",tah:"الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ",biah:"اِقْرَأْ",akhTitle:"Haya'",akh:"الْحَيَاءُ مِنَ الْإِيمَانِ",akhNote:"Tanamkan rasa malu yang menjaga adab.",active:["سَ","شَ"],review:["بَ","تَ","ثَ","جَ","حَ","خَ","دَ","ذَ","رَ","زَ"]},
- {n:6,focus:"صَ ضَ",comp:"Shad dan Dhad dengan Fathah",desc:"Membedakan dan membaca صَ ضَ bersama murojaah materi sebelumnya. Hanya huruf lepas berharakat fathah.",tahTitle:"An-Nas 6",tah:"مِنَ الْجِنَّةِ وَالنَّاسِ",biah:"أَعِدْ",akhTitle:"Rifq",akh:"إِنَّ اللَّهَ رَفِيقٌ يُحِبُّ الرِّفْقَ",akhNote:"Biasakan kelembutan dalam belajar dan berinteraksi.",active:["صَ","ضَ"],review:["سَ","شَ","دَ","ذَ","رَ","زَ","جَ","حَ","خَ"]},
- {n:7,focus:"طَ ظَ",comp:"Tha dan Zha dengan Fathah",desc:"Membedakan dan membaca طَ ظَ bersama murojaah materi sebelumnya. Hanya huruf lepas berharakat fathah.",tahTitle:"Al-Falaq 1",tah:"قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",biah:"مَرَّةً أُخْرَى",akhTitle:"Salam",akh:"أَفْشُوا السَّلَامَ بَيْنَكُمْ",akhNote:"Hidupkan salam dalam lingkungan belajar.",active:["طَ","ظَ"],review:["صَ","ضَ","سَ","شَ","دَ","ذَ","رَ","زَ"]},
- {n:8,focus:"عَ غَ",comp:"Ain dan Ghain dengan Fathah",desc:"Membedakan dan membaca عَ غَ bersama murojaah materi sebelumnya. Hanya huruf lepas berharakat fathah.",tahTitle:"Al-Falaq 2",tah:"مِنْ شَرِّ مَا خَلَقَ",biah:"نَعَمْ / لَا",akhTitle:"Ma'ruf",akh:"لَا تَحْقِرَنَّ مِنَ الْمَعْرُوفِ شَيْئًا",akhNote:"Biasakan menghargai setiap kebaikan.",active:["عَ","غَ"],review:["طَ","ظَ","صَ","ضَ","سَ","شَ","دَ","ذَ"]},
- {n:9,focus:"فَ قَ",comp:"Fa dan Qaf dengan Fathah",desc:"Membedakan dan membaca فَ قَ bersama murojaah materi sebelumnya. Hanya huruf lepas berharakat fathah.",tahTitle:"Al-Falaq 3",tah:"وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ",biah:"أَحْسَنْتَ / أَحْسَنْتِ",akhTitle:"Niat",akh:"إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ",akhNote:"Biasakan memulai amal dengan niat yang baik.",active:["فَ","قَ"],review:["عَ","غَ","طَ","ظَ","صَ","ضَ","سَ","شَ"]},
- {n:10,focus:"بَ تَ ثَ جَ حَ خَ دَ ذَ رَ زَ سَ شَ صَ ضَ طَ ظَ عَ غَ فَ قَ",comp:"Evaluasi Fathah I",desc:"Gate evaluasi: membaca dan membedakan seluruh huruf fathah yang telah dipelajari sampai P009. Tidak ada kompetensi baru.",tahTitle:"REVIEW GATE",tah:"قُلْ أَعُوذُ بِرَبِّ النَّاسِ",biah:"مُرَاجَعَةُ التَّعْلِيمَاتِ",akhTitle:"Istiqamah",akh:"أَحَبُّ الْأَعْمَالِ إِلَى اللَّهِ أَدْوَمُهَا وَإِنْ قَلَّ",akhNote:"Jaga konsistensi amal meskipun sedikit.",active:["بَ","تَ","ثَ","ءَ","أَ","جَ","حَ","خَ","دَ","ذَ","رَ","زَ","سَ","شَ","صَ","ضَ","طَ","ظَ","عَ","غَ","فَ","قَ"],review:[]}
+ {n:4,focus:"دَ ذَ رَ زَ",comp:"Dal, Dzal, Ra, Zai dengan Fathah",desc:"Membedakan dan membaca دَ ذَ رَ زَ bersama murojaah kumulatif materi sejak kompetensi awal. Hanya huruf lepas berharakat fathah.",tahTitle:"An-Nas 4",tah:"مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ",biah:"رَدِّدْ",akhTitle:"Ma'ruf",akh:"لَا تَحْقِرَنَّ مِنَ الْمَعْرُوفِ شَيْئًا",akhNote:"Biasakan menghargai setiap kebaikan.",active:["دَ","ذَ","رَ","زَ"],review:["بَ","تَ","ثَ","ءَ","أَ","جَ","حَ","خَ"]},
+ {n:5,focus:"سَ شَ",comp:"Sin dan Syin dengan Fathah",desc:"Membedakan dan membaca سَ شَ bersama murojaah kumulatif materi sejak kompetensi awal. Hanya huruf lepas berharakat fathah.",tahTitle:"An-Nas 5",tah:"الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ",biah:"اِقْرَأْ",akhTitle:"Haya'",akh:"الْحَيَاءُ مِنَ الْإِيمَانِ",akhNote:"Tanamkan rasa malu yang menjaga adab.",active:["سَ","شَ"],review:["بَ","تَ","ثَ","ءَ","أَ","جَ","حَ","خَ","دَ","ذَ","رَ","زَ"]},
+ {n:6,focus:"صَ ضَ",comp:"Shad dan Dhad dengan Fathah",desc:"Membedakan dan membaca صَ ضَ bersama murojaah kumulatif materi sejak kompetensi awal. Hanya huruf lepas berharakat fathah.",tahTitle:"An-Nas 6",tah:"مِنَ الْجِنَّةِ وَالنَّاسِ",biah:"أَعِدْ",akhTitle:"Rifq",akh:"إِنَّ اللَّهَ رَفِيقٌ يُحِبُّ الرِّفْقَ",akhNote:"Biasakan kelembutan dalam belajar dan berinteraksi.",active:["صَ","ضَ"],review:["بَ","تَ","ثَ","ءَ","أَ","جَ","حَ","خَ","دَ","ذَ","رَ","زَ","سَ","شَ"]},
+ {n:7,focus:"طَ ظَ",comp:"Tha dan Zha dengan Fathah",desc:"Membedakan dan membaca طَ ظَ bersama murojaah kumulatif materi sejak kompetensi awal. Hanya huruf lepas berharakat fathah.",tahTitle:"Al-Falaq 1",tah:"قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",biah:"مَرَّةً أُخْرَى",akhTitle:"Salam",akh:"أَفْشُوا السَّلَامَ بَيْنَكُمْ",akhNote:"Hidupkan salam dalam lingkungan belajar.",active:["طَ","ظَ"],review:["بَ","تَ","ثَ","ءَ","أَ","جَ","حَ","خَ","دَ","ذَ","رَ","زَ","سَ","شَ","صَ","ضَ"]},
+ {n:8,focus:"عَ غَ",comp:"Ain dan Ghain dengan Fathah",desc:"Membedakan dan membaca عَ غَ bersama murojaah kumulatif materi sejak kompetensi awal. Hanya huruf lepas berharakat fathah.",tahTitle:"Al-Falaq 2",tah:"مِنْ شَرِّ مَا خَلَقَ",biah:"نَعَمْ / لَا",akhTitle:"Ma'ruf",akh:"لَا تَحْقِرَنَّ مِنَ الْمَعْرُوفِ شَيْئًا",akhNote:"Biasakan menghargai setiap kebaikan.",active:["عَ","غَ"],review:["بَ","تَ","ثَ","ءَ","أَ","جَ","حَ","خَ","دَ","ذَ","رَ","زَ","سَ","شَ","صَ","ضَ","طَ","ظَ"]},
+ {n:9,focus:"فَ قَ",comp:"Fa dan Qaf dengan Fathah",desc:"Membedakan dan membaca فَ قَ bersama murojaah kumulatif materi sejak kompetensi awal. Hanya huruf lepas berharakat fathah.",tahTitle:"Al-Falaq 3",tah:"وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ",biah:"أَحْسَنْتَ / أَحْسَنْتِ",akhTitle:"Niat",akh:"إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ",akhNote:"Biasakan memulai amal dengan niat yang baik.",active:["فَ","قَ"],review:["بَ","تَ","ثَ","ءَ","أَ","جَ","حَ","خَ","دَ","ذَ","رَ","زَ","سَ","شَ","صَ","ضَ","طَ","ظَ","عَ","غَ"]},
+ {n:10,focus:"بَ تَ ثَ ءَ أَ جَ حَ خَ دَ ذَ رَ زَ سَ شَ صَ ضَ طَ ظَ عَ غَ فَ قَ",comp:"Evaluasi Fathah I",desc:"Gate evaluasi: membaca dan membedakan seluruh huruf fathah yang telah dipelajari sampai P009 secara merata. Tidak ada kompetensi baru.",tahTitle:"REVIEW GATE",tah:"قُلْ أَعُوذُ بِرَبِّ النَّاسِ",biah:"مُرَاجَعَةُ التَّعْلِيمَاتِ",akhTitle:"Istiqamah",akh:"أَحَبُّ الْأَعْمَالِ إِلَى اللَّهِ أَدْوَمُهَا وَإِنْ قَلَّ",akhNote:"Jaga konsistensi amal meskipun sedikit.",active:["بَ","تَ","ثَ","ءَ","أَ","جَ","حَ","خَ","دَ","ذَ","رَ","زَ","سَ","شَ","صَ","ضَ","طَ","ظَ","عَ","غَ","فَ","قَ"],review:[]}
 ];
 
+// FROZEN J1 MUROJAAH RULE:
+// - Practice remains 8 rows x 3 groups = 24 groups.
+// - Rows 1-2 are two-letter planting/reinforcement of the current competency.
+// - Rows 3-8 are three-letter groups.
+// - For every non-evaluation page, each three-letter group contains 2 active tokens + 1 review token.
+// - Review is cumulative from the earliest valid competency, not only the latest page.
+// - Review tokens are selected with an even-cycle cursor so early letters (including ءَ / أَ) cannot disappear.
+// - P010 is an evaluation gate and is handled by the separate coverage-audit fixer.
 function rowsFor(p){
- const a=p.active, r=p.review.length?p.review:p.active;
- const pick=(arr,i)=>arr[i%arr.length];
+ const a=p.active;
+ const r=p.review.length?p.review:p.active;
+ const pick=(arr,i)=>arr[((i%arr.length)+arr.length)%arr.length];
  const rows=[];
- rows.push([`${pick(a,0)} ${pick(a,1)}`,`${pick(a,1)} ${pick(a,2)}`,`${pick(a,2)} ${pick(a,0)}`]);
- rows.push([`${pick(a,1)} ${pick(a,0)}`,`${pick(a,0)} ${pick(a,2)}`,`${pick(a,2)} ${pick(a,1)}`]);
+ rows.push([`${pick(a,0)} ${pick(a,1)}`,`${pick(a,1)} ${pick(a,0)}`,`${pick(a,0)} ${pick(a,1)}`]);
+ rows.push([`${pick(a,1)} ${pick(a,0)}`,`${pick(a,0)} ${pick(a,1)}`,`${pick(a,1)} ${pick(a,0)}`]);
+ const reviewOffset=p.n<=4?0:((p.n-4)*3)%r.length;
  for(let k=0;k<6;k++) rows.push([
-   `${pick(a,k)} ${pick(a,k+1)} ${pick(r,k)}`,
-   `${pick(a,k+1)} ${pick(r,k+2)} ${pick(a,k+2)}`,
-   `${pick(r,k+3)} ${pick(a,k+2)} ${pick(a,k)}`
+   `${pick(a,2*k)} ${pick(a,2*k+1)} ${pick(r,reviewOffset+3*k)}`,
+   `${pick(a,2*k+1)} ${pick(r,reviewOffset+3*k+1)} ${pick(a,2*k+2)}`,
+   `${pick(r,reviewOffset+3*k+2)} ${pick(a,2*k+2)} ${pick(a,2*k+3)}`
  ]);
  return rows;
 }
@@ -60,4 +70,4 @@ await fs.rm(block,{recursive:true,force:true});
 await fs.mkdir(path.join(block,"fonts"),{recursive:true});
 await fs.copyFile(path.join(root,"fonts/KFGQPC-Uthman-Taha-Naskh.woff2"),path.join(block,"fonts/KFGQPC-Uthman-Taha-Naskh.woff2"));
 await fs.writeFile(path.join(block,"index.html"),combined,"utf8");
-console.log("QJ1 P004-P010 frozen block generated: 7 pages + combined audit HTML");
+console.log("QJ1 P004-P010 cumulative-murojaah block generated: 7 pages + combined audit HTML");
