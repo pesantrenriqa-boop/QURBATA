@@ -8,6 +8,8 @@
     "build:pdf": "npm run build:html && vivliostyle build dist/index.html -o dist/QURBATA-JILID-1-PILOT.pdf",
     "build:p011-p020:html": "node scripts/build-p011-p020-from-frozen.mjs && node scripts/fix-p011-p020-layout.mjs",
     "build:p011-p020:pdf": "npm run build:p011-p020:html && mkdir -p dist/fonts && cp fonts/KFGQPC-Uthman-Taha-Naskh.woff2 dist/fonts/KFGQPC-Uthman-Taha-Naskh.woff2 && vivliostyle build dist/QURBATA-J1-P011-P020-AUDIT.html -o dist/QURBATA-J1-P011-P020-AUDIT.pdf",
+    "build:p021-p030:html": "node scripts/build-p021-p030-from-frozen.mjs",
+    "build:p021-p030:pdf": "npm run build:p021-p030:html && mkdir -p dist/fonts && cp fonts/KFGQPC-Uthman-Taha-Naskh.woff2 dist/fonts/KFGQPC-Uthman-Taha-Naskh.woff2 && vivliostyle build dist/QURBATA-J1-P021-P030-AUDIT.html -o dist/QURBATA-J1-P021-P030-AUDIT.pdf",
     "build": "npm run build:pdf"
   },
   "dependencies": {
