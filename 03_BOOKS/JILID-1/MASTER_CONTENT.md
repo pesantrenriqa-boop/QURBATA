@@ -50,6 +50,16 @@ Keputusan kunci:
 - Jadwal Tahfidz/Bi’ah Arabiyah/Akhlak tetap mengikuti nomor pertemuan P021–P030 dan tidak ikut bergeser akibat recovery struktur Tartil.
 - Murojaah tetap kumulatif sejak P001.
 
+Status produksi:
+- Generator P021–P030: TERSEDIA DI MAIN.
+- Workflow audit PDF: TERSEDIA DI MAIN.
+- Rasio latihan normal: 38 token aktif : 26 token review (~59,4% : 40,6%).
+- Gate contoh 3 huruf bermakna/nyaris bermakna: AKTIF.
+- KFGQPC Uthman Taha: EMBEDDED pada build audit yang lolos.
+- P021/P027/P030: audit visual terakhir lulus.
+- Grafem Hamzah/Alif pada P027: lolos audit visual.
+- Output tetap berlabel AUDIT sampai gate final kurikulum blok dinyatakan selesai.
+
 ## Status produksi keseluruhan
 - Repository structure: READY
 - Master curriculum Jilid 1: FROZEN v1.0
@@ -57,7 +67,7 @@ Keputusan kunci:
 - P011–P020 page register: FROZEN v1.0
 - P011–P020 production pipeline: MERGED TO MAIN
 - P021–P030 page register: FROZEN v1.0
-- P021–P030 production pipeline: BELUM DITURUNKAN DARI REGISTER
+- P021–P030 production pipeline: MERGED TO MAIN
 - P031–P040: MENUNGGU RECOVERY + FREEZE REGISTER
 
 ## Sumber prioritas
