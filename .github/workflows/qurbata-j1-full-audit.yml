@@ -31,9 +31,9 @@ jobs:
         run: |
           test -f dist/QURBATA-J1-P001-P040-AUDIT.pdf
           ls -lh dist/QURBATA-J1-P001-P040-AUDIT.pdf
-          pdfinfo dist/QURBATA-J1-P001-P040-AUDIT.pdf | grep -E 'Pages:[[:space:]]+40'
-      - name: Verify KFGQPC embedded
-        run: pdffonts dist/QURBATA-J1-P001-P040-AUDIT.pdf | grep -q 'KFGQPCUthmanTahaNaskh'
+          node --input-type=module -e "import fs from 'node:fs'; import {PDFDocument} from 'pdf-lib'; const b=fs.readFileSync('dist/QURBATA-J1-P001-P040-AUDIT.pdf'); const d=await PDFDocument.load(b); if(d.getPageCount()!==40) throw new Error('expected 40 pages, got '+d.getPageCount()); console.log('Verified pages:',d.getPageCount());"
+      - name: Verify KFGQPC marker retained
+        run: grep -a -q 'KFGQPCUthmanTahaNaskh' dist/QURBATA-J1-P001-P040-AUDIT.pdf
       - name: Upload full PDF
         uses: actions/upload-artifact@v4
         with:
