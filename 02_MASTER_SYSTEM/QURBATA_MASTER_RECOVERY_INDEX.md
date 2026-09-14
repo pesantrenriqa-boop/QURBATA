@@ -13,6 +13,19 @@ Mengembalikan seluruh hasil kerja QURBATA yang sudah pernah dibuat, membersihkan
 4. Freeze versi resmi
 5. Produk berikutnya wajib mengacu pada master repository
 
+## MASTER RESMI YANG SUDAH DIBEKUKAN
+
+### QURBATA TARTIL JILID 1
+
+Sumber pengendali utama:
+- `02_MASTER_SYSTEM/QURBATA_TARTIL_J1_MASTER_CURRICULUM_FROZEN-v1.0.md`
+- `02_MASTER_SYSTEM/QURBATA-J1-CUMULATIVE-MUROJAAH-FROZEN-v1.0.md`
+
+Ketentuan:
+- Seluruh generator, PDF, RIQA OS, audio, assessment, dan turunan Jilid 1 wajib tunduk pada master tersebut.
+- Jika ada perubahan kebijakan, revisi master terlebih dahulu, naikkan versi, lalu turunkan perubahan ke produksi.
+- File PDF atau script produksi tidak boleh menjadi sumber kebijakan kurikulum.
+
 ## Prioritas Recovery
 
 ### BOOK CONTENT
@@ -24,7 +37,7 @@ Mengembalikan seluruh hasil kerja QURBATA yang sudah pernah dibuat, membersihkan
 ### TURUNAN SETELAH BOOK CONTENT FREEZE
 - Hafalan surat dan ayat per pertemuan
 - Target Bahasa Arab
-- NIDHOM
+- Akhlak
 - Assessment
 
 ## Aturan
