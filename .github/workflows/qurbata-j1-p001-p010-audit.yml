@@ -1,0 +1,39 @@
+name: QURBATA J1 P001-P010 Audit
+
+on:
+  push:
+    branches:
+      - prod/j1-p001-p010-from-frozen-register
+    paths:
+      - 'production/vivliostyle/**'
+      - '03_BOOKS/JILID-1/PAGE_REGISTER_P001-P010_FROZEN-v1.0.md'
+      - '.github/workflows/qurbata-j1-p001-p010-audit.yml'
+  workflow_dispatch:
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: production/vivliostyle
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: production/vivliostyle/package.json
+      - name: Install dependencies
+        run: npm install
+      - name: Build P001-P010 audit PDF
+        run: npm run build:p001-p010:pdf
+      - name: Verify artifact
+        run: |
+          test -f dist/QURBATA-J1-P001-P010-AUDIT.pdf
+          ls -lh dist/QURBATA-J1-P001-P010-AUDIT.pdf
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-J1-P001-P010-AUDIT
+          path: production/vivliostyle/dist/QURBATA-J1-P001-P010-AUDIT.pdf
+          if-no-files-found: error
