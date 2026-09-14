@@ -1,0 +1,42 @@
+name: QURBATA J1 Full Audit
+
+on:
+  push:
+    branches:
+      - prod/j1-full-p001-p040-audit
+    paths:
+      - 'production/vivliostyle/**'
+      - '03_BOOKS/JILID-1/**'
+      - '.github/workflows/qurbata-j1-full-audit.yml'
+  workflow_dispatch:
+
+jobs:
+  build-full-pdf:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: production/vivliostyle
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: production/vivliostyle/package.json
+      - name: Install dependencies
+        run: npm install
+      - name: Build full Jilid 1 audit PDF
+        run: npm run build:j1-full:pdf
+      - name: Verify 40 pages
+        run: |
+          test -f dist/QURBATA-J1-P001-P040-AUDIT.pdf
+          ls -lh dist/QURBATA-J1-P001-P040-AUDIT.pdf
+          pdfinfo dist/QURBATA-J1-P001-P040-AUDIT.pdf | grep -E 'Pages:[[:space:]]+40'
+      - name: Verify KFGQPC embedded
+        run: pdffonts dist/QURBATA-J1-P001-P040-AUDIT.pdf | grep -q 'KFGQPCUthmanTahaNaskh'
+      - name: Upload full PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-J1-P001-P040-AUDIT
+          path: production/vivliostyle/dist/QURBATA-J1-P001-P040-AUDIT.pdf
+          if-no-files-found: error
