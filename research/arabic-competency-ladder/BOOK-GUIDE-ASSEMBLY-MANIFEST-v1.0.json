@@ -1,0 +1,27 @@
+{
+  "manifest_version": "1.0",
+  "registry_version": "K01-K67-v1.0",
+  "separation": ["content_model", "assembly_model", "presentation_model"],
+  "presets": {
+    "student_book": ["objective", "explanation", "worked_examples", "guided_practice", "independent_practice", "review", "quick_check"],
+    "teacher_guide": ["objective", "prerequisites", "explanation", "teaching_steps", "worked_examples", "common_errors", "remediation", "enrichment", "do_not_teach_yet", "answer_key"],
+    "workbook": ["guided_practice", "independent_practice", "cumulative_review", "evaluation"],
+    "qurbata_module": ["objective", "prerequisite_reminder", "concise_explanation", "worked_examples", "guided_practice", "independent_practice", "quick_check", "teacher_note"]
+  },
+  "request_example": {
+    "artifact": "teacher_guide",
+    "k_from": "K01",
+    "k_to": "K12",
+    "meetings": 40,
+    "examples_per_k": 5,
+    "questions_per_k": 8,
+    "review_ratio": 0.4,
+    "new_material_ratio": 0.6,
+    "language": "id-ar",
+    "template": "configurable",
+    "answers": true,
+    "teacher_notes": true
+  },
+  "assembly_guards": ["all_K_exist", "ordered_range_valid", "feature_ceiling_pass", "example_reference_valid", "question_key_present", "future_feature_not_required", "teacher_boundary_note_present"],
+  "open_extension": {"new_templates_without_content_rewrite": true, "new_K_without_old_artifact_breakage": true, "presentation_change_without_content_change": true}
+}
