@@ -1,166 +1,184 @@
 # QURBATA TARTIL — ATURAN PENYUSUNAN BUKU
 
-Status: **FROZEN v1.5**
+Status: **FROZEN v1.5.1**
 Effective: 2026-09-17
 Authority: **BOOK COMPOSITION MASTER**
 Scope: penyusunan isi, tipografi latihan, glyph Arab, proporsi halaman, dan layout seluruh Buku QURBATA Tartil
 
-> v1.5 menggantikan aturan layout v1.4.x. Seluruh PDF lama berstatus AUDIT/OBSOLETE sampai diregenerasi dan lolos visual gate v1.5.
+> v1.5.1 menggantikan aturan layout v1.5 dan seluruh v1.4.x. Seluruh PDF sebelumnya berstatus AUDIT/OBSOLETE sampai diregenerasi dan lolos visual gate v1.5.1.
 
-# 1. Prinsip utama: HALAMAN BELAJAR, BUKAN HALAMAN KOSONG
-Setiap halaman A5 harus terasa penuh, lapang, dan proporsional untuk belajar. Ruang putih hanya boleh menjadi breathing room fungsional, bukan area kosong besar tanpa fungsi.
+# 1. Prinsip utama — LATIHAN BACA HARUS BESAR, JELAS, DAN PROPORSIONAL
+Tujuan halaman adalah membuat santri mudah melihat, menirukan, dan membaca latihan Tartil pada ukuran cetak A5. Ukuran huruf tidak dinilai dari angka pt semata, tetapi dari hasil render nyata.
 
-**Dilarang ada dead space vertikal besar** antara latihan Tartil dan bagian bawah halaman. Bila terdapat ruang kosong, ruang tersebut WAJIB dialokasikan kembali dengan urutan:
-1. memperbesar contoh/penanaman kompetensi;
-2. memperbesar latihan Tartil;
-3. menambah tinggi efektif baris latihan;
-4. memperbesar jarak aman antar-glyph/harakat;
-5. memperjelas panel Tahfidz–Bi'ah–Akhlak;
-6. baru sisanya menjadi breathing room.
+Prinsip resmi:
+**besar ≠ memenuhi halaman secara paksa. Besar berarti glyph dan harakat mudah dibaca, memiliki ruang aman, seimbang dengan grid, dan tetap nyaman dipandang.**
 
-# 2. Hierarki visual halaman
-Urutan dominasi wajib:
-**Contoh/Penanaman Kompetensi + Latihan Tartil → panel integrasi → footer administrasi/RIQA OS → ornamen.**
+# 2. Hierarki visual wajib
+Urutan dominasi:
+**Contoh/Penanaman Kompetensi → Latihan Tartil → Panel Tahfidz–Bi'ah–Akhlak → Footer administrasi/RIQA OS → Ornamen.**
 
-Tartil harus menguasai mayoritas area belajar halaman. Footer tidak boleh terlihat sebagai blok utama halaman.
+Contoh dan latihan Tartil bersama-sama harus menguasai sekitar **60–65% area belajar efektif** pada halaman reguler.
 
-# 3. Contoh / penanaman materi baru — WAJIB BESAR
-Contoh materi baru adalah objek pertama yang ditiru santri, sehingga tidak boleh kecil seperti teks penjelasan.
+# 3. Contoh / penanaman kompetensi — BESAR DAN MENONJOL
+Contoh adalah objek pertama yang ditiru santri.
 
 Aturan:
-- Arab contoh/penanaman menggunakan KFGQPC Uthman Taha.
-- Target ukuran visual **minimum 30 pt**, ideal **32–36 pt** pada A5 selama tidak clipping.
-- Pada halaman pengenalan harakat/kompetensi baru, contoh boleh lebih besar daripada latihan reguler.
-- Minimal dua baris penanaman bila master halaman mensyaratkan penanaman.
-- Harakat harus jelas, tidak bertabrakan dengan border atau baris di atas/bawah.
-- Contoh tidak boleh diperkecil otomatis untuk menyelamatkan footer/ornamen.
+- font Arab wajib KFGQPC Uthman Taha;
+- target awal **36–40 pt** pada A5;
+- boleh lebih besar daripada latihan reguler;
+- minimal dua baris penanaman pada halaman yang memang membutuhkan penanaman menurut page register;
+- harakat harus utuh dan jelas;
+- tidak boleh menyentuh border;
+- tidak boleh diperkecil demi mempertahankan ornamen/footer yang terlalu besar;
+- ukuran final ditentukan melalui render audit, bukan hanya nilai CSS.
 
-# 4. Latihan Tartil — WAJIB BESAR DAN DOMINAN
-- Struktur tetap **8 baris × 3 kelompok = 24 kelompok**.
-- Satu pertemuan = satu halaman.
-- Font Arab latihan KFGQPC Uthman Taha.
-- Target ukuran visual latihan **minimum 28 pt**, ideal **30–34 pt** pada A5 jika glyph/harakat aman.
-- Tinggi baris harus memanfaatkan ruang vertikal halaman, bukan dipadatkan di bagian atas.
-- Setiap cell memiliki breathing room atas/bawah yang cukup agar harakat tidak menyentuh garis.
-- Tiga kelompok per baris harus terbaca dari jarak belajar normal.
-- Dilarang auto-shrink latihan sebagai solusi pagination pertama.
+# 4. Latihan Tartil — BESAR, JELAS, PROPORSIONAL
+Struktur tetap **8 baris × 3 kelompok = 24 kelompok** pada halaman reguler.
 
-# 5. Distribusi tinggi halaman A5
-Generator wajib menghitung tinggi halaman sebagai sistem, bukan menumpuk komponen dengan margin bebas.
+## 4.1 Target ukuran
+- target awal render **32–36 pt**;
+- angka tersebut bukan kewajiban kaku: generator boleh menyesuaikan dalam rentang aman berdasarkan bentuk glyph dan harakat;
+- tidak boleh turun di bawah **30 pt** pada halaman reguler tanpa alasan khusus yang terdokumentasi;
+- bila masih ada dead space dan glyph aman, ukuran/tinggi row harus dinaikkan sebelum ruang dibiarkan kosong.
 
-Target proporsi vertikal area isi:
-- header/judul/kompetensi: ±8–10%;
-- contoh/penanaman: ±10–14%;
-- latihan Tartil 8 baris: **±50–58%**;
-- panel Tahfidz–Bi'ah–Akhlak: ±10–13%;
-- footer administrasi + QR/brand: ±8–10%;
-- gap/breathing room total: maksimum ±5% dan harus tersebar, bukan satu blok kosong.
+## 4.2 Proporsi cell dan row
+- 3 kolom harus memiliki lebar seimbang;
+- 8 row harus menyebar merata secara vertikal;
+- tinggi row mengikuti area latihan yang tersedia, bukan tinggi konten minimum;
+- glyph harus center horizontal dan vertikal;
+- setiap glyph memiliki breathing room atas/bawah agar fathah/kasrah/dhammah tidak menyentuh garis;
+- garis grid tipis dan tidak mengalahkan visual huruf;
+- padding tidak boleh terlalu sempit dan tidak boleh terlalu besar sampai menciptakan ruang mubazir.
 
-Toleransi boleh berubah pada checkpoint/evaluasi, tetapi **tidak boleh menghasilkan dead space besar**.
+## 4.3 Visual reading gate
+Latihan dinyatakan PASS hanya bila pada PDF A5 100%:
+- glyph dapat dikenali dengan cepat;
+- harakat dapat dibedakan tanpa zoom digital;
+- tiga kelompok per baris tidak terasa sesak;
+- jarak glyph ke border aman;
+- ukuran antarhalaman konsisten secara visual;
+- tidak ada clipping/overlap;
+- ukuran tidak tampak kecil sementara halaman masih memiliki ruang kosong besar.
 
-# 6. Aturan anti-dead-space
-LAYOUT FAIL bila terdapat area kosong vertikal tanpa fungsi yang secara visual lebih tinggi daripada kira-kira satu baris latihan reguler.
+# 5. Distribusi vertikal halaman reguler
+Target area efektif:
+- header/judul/kompetensi: **±6–8%**;
+- contoh/penanaman: **±12–15%**;
+- latihan Tartil 8×3: **±50–55%**;
+- panel Tahfidz–Bi'ah–Akhlak: **±10–12%**;
+- footer: **±8–10%**;
+- breathing room/gap total: **maksimum ±5%**, tersebar antarbagian.
 
-Generator harus menggunakan layout grid halaman dengan row terkontrol, misalnya:
-`header | planting | practice | integration | footer`
+Proporsi dapat bergeser sedikit sesuai halaman, tetapi contoh + latihan harus tetap sekitar **60–65%** dari area belajar efektif.
 
-dengan `practice` sebagai `minmax(0,1fr)` / area fleksibel utama. Margin/padding antarbagian harus kecil dan konsisten. Dilarang fixed-height lama yang meninggalkan lubang besar setelah practice.
+# 6. Anti-dead-space — RUANG KOSONG DIKEMBALIKAN KE PEMBELAJARAN
+Dilarang ada blok kosong vertikal tanpa fungsi yang lebih tinggi dari kira-kira satu row latihan.
 
-# 7. Ha dua lubang — GLYPH GATE
-Seluruh ه detached pada Tartil wajib tampil sebagai Ha dua lubang. Audit harus visual. Ha satu lubang pada latihan, judul, penanaman, evaluasi, atau checkpoint = FAIL.
+Jika ruang tersisa, alokasi wajib berurutan:
+1. tambah tinggi row latihan;
+2. naikkan ukuran latihan dalam rentang aman;
+3. perbesar contoh/penanaman;
+4. tambah breathing room glyph/harakat;
+5. perjelas panel integrasi;
+6. sisanya baru menjadi whitespace fungsional.
 
-# 8. Panel Tahfidz – Bi'ah Arabiyah – Akhlak
-- Tetap tiga domain pendukung yang ringkas dan terbaca.
-- Arab + arti Indonesia harus terbaca tanpa crowding.
-- Panel tidak boleh menjadi penyebab latihan Tartil mengecil.
-- Bi'ah adalah bahasa instruksional, bukan daftar kosakata dekoratif.
-- Tidak ada lagi zona `Aktivitas Bi'ah QURBATA` atau kotak kosong khusus aktivitas di bawah latihan.
+Tidak boleh mengisi dead space dengan ornamen baru.
 
-# 9. Footer resmi — ringkas dan proporsional
-Footer wajib selalu tampil tetapi **harus kompak** agar tidak menciptakan dead space.
+# 7. Sistem layout halaman
+Generator wajib memakai layout vertikal terukur:
+`header | planting/example | integration | practice | footer`
+atau urutan ekuivalen yang ditetapkan master halaman, dengan **practice sebagai area fleksibel utama**.
 
-Urutan horizontal:
+Dilarang fixed-height/margin lama yang menyebabkan konten menumpuk di atas dan meninggalkan ruang putih besar di bawah.
+
+# 8. Ha dua lubang — GLYPH GATE
+Seluruh ه detached pada materi Tartil wajib tampil sebagai Ha dua lubang. Audit harus visual; Unicode scan saja tidak cukup. Ha satu lubang pada latihan, judul, contoh/penanaman, evaluasi, atau checkpoint = FAIL.
+
+# 9. Panel Tahfidz – Bi'ah Arabiyah – Akhlak
+- ringkas dan terbaca;
+- Arab + arti Indonesia jelas;
+- tidak boleh menyebabkan contoh/latihan mengecil;
+- Bi'ah adalah bahasa instruksional;
+- tidak ada zona `Aktivitas Bi'ah QURBATA` atau kotak aktivitas kosong.
+
+# 10. Footer resmi — KOMPAK, LENGKAP, TIDAK MENGAMBIL AREA LATIHAN
+Urutan satu row:
 **ID halaman | Tanggal | Nilai | TTD | QR | RIQA OS**.
 
 Aturan:
-- satu row, tidak pecah;
-- target tinggi total **14–17 mm**;
-- Tanggal/Nilai/TTD wajib terlihat dan bisa ditulis;
+- tinggi target **14–16 mm**;
+- Tanggal/Nilai/TTD wajib tampil dan bisa ditulis;
 - TTD paling lebar;
-- QR target **12–14 mm** + quiet zone putih;
-- brand RIQA OS di kanan QR;
-- tidak ada metadata AUDIT/path/PAGE_REGISTER/debug pada halaman cetak;
-- tidak ada motto/brand tercecer di area lain;
-- footer tidak boleh memakai ruang lebih besar daripada yang dibutuhkan.
+- QR target **12–13 mm** + quiet zone;
+- brand/motto hanya satu kali, di kanan QR;
+- tidak ada brand/motto duplikat di kiri/kanan bawah;
+- tidak ada metadata AUDIT/PAGE_REGISTER/path/debug pada halaman;
+- footer tidak boleh mendorong latihan menjadi kecil atau menciptakan dead space.
 
-# 10. Ornamen
-Ornamen adalah prioritas terakhir. Jika halaman belum proporsional atau latihan masih terlalu kecil, ornamen bawah harus dihapus. Ornamen tidak boleh menciptakan margin kosong tambahan.
+# 11. Ornamen
+Ornamen adalah prioritas terakhir. Jika latihan belum besar/proporsional atau masih ada masalah density, ornamen dihapus. Tidak boleh ada margin tambahan hanya untuk ornamen.
 
-# 11. Aturan implementasi generator
-Generator wajib menggunakan satu page-layout terukur dan footer berada di dalam setiap article/page.
-
+# 12. Implementasi generator
 Wajib:
-- `box-sizing:border-box` pada komponen utama;
-- `overflow` tidak boleh menyembunyikan materi wajib;
-- practice menjadi area fleksibel utama;
-- tidak memakai absolute positioning untuk mengisi layout utama;
-- tidak memakai negative margin/transform untuk mengejar tampilan;
-- semua halaman tetap tepat satu page A5.
+- satu page-layout terukur per article;
+- `box-sizing:border-box`;
+- practice menggunakan area fleksibel (`minmax(0,1fr)`/flex-grow ekuivalen);
+- 8 row memakai distribusi tinggi merata;
+- glyph center pada cell;
+- tidak memakai absolute positioning/negative margin/transform untuk layout utama;
+- footer berada di dalam page/article;
+- satu halaman tepat satu A5.
 
-Pipeline wajib assertion:
-- tepat 8×3 latihan pada halaman reguler;
-- contoh/penanaman ada dan memenuhi ukuran minimum pada halaman yang membutuhkan;
+Generator tidak boleh mengunci satu ukuran font sebagai satu-satunya kebenaran. Target 32–36 pt harus divalidasi terhadap render. Bila 36 pt clipping, turun seperlunya; bila 32 pt masih tampak kecil dan ada ruang, naikkan.
+
+# 13. Build assertions
+Pipeline wajib memeriksa:
+- tepat 8×3 pada halaman reguler;
+- contoh/penanaman ada pada halaman yang membutuhkannya;
+- aturan CSS latihan tidak di bawah 30 pt tanpa exception terdokumentasi;
 - Tanggal/Nilai/TTD ada;
-- tepat satu footer per halaman;
-- tidak ada legacy activity box;
+- tepat satu footer;
+- tidak ada activity box lama;
 - tidak ada metadata teknis tercetak;
-- tidak ada overflow ke halaman berikutnya.
+- tidak overflow ke halaman berikutnya.
 
-# 12. Visual density gate
-Selain assertion DOM, audit visual wajib menilai **kepadatan halaman**.
+# 14. Visual audit wajib
+Sampel minimal: **P001, P002, P010, P014, P020, P030, P040**.
 
-PASS bila:
-- tidak ada blok kosong besar;
-- contoh materi tampak besar/utama;
-- latihan Tartil jelas dominan;
-- 8 baris menyebar proporsional pada area latihan;
-- bagian bawah kompak dan rapi;
-- halaman terasa sebagai lembar belajar yang utuh, bukan konten yang menumpuk di atas dengan ruang kosong di bawah.
-
-# 13. Sampel audit wajib
-Audit minimal P001, P002, P010, P014, P020, P030, P040.
-
-Pada setiap sampel periksa:
-- ukuran contoh ≥30 pt secara aturan CSS/render;
-- latihan ≥28 pt secara aturan CSS/render;
-- harakat tidak clipping;
+Audit dilakukan pada render A5, bukan hanya source/CSS. Periksa:
+- contoh tampak jelas lebih menonjol;
+- latihan besar dan nyaman dibaca;
+- harakat jelas pada tampilan 100%;
+- 8 row tersebar proporsional;
+- tidak ada dead space besar;
 - Ha dua lubang bila muncul;
-- tidak ada dead space > kira-kira satu baris latihan;
-- footer lengkap dan tidak dominan;
-- tidak ada overlap;
 - panel integrasi terbaca;
+- footer lengkap tetapi tidak dominan;
+- QR tidak overlap;
+- tidak ada motto/brand duplikat;
 - KFGQPC Uthman Taha tertanam.
 
-# 14. Gate FINAL
-**CURRICULUM PASS → DOMAIN PASS → PAGE REGISTER PASS → CONTENT FREEZE → GLYPH PASS → DENSITY PASS → LAYOUT PASS → PDF PASS.**
+# 15. Gate FINAL
+**CURRICULUM PASS → DOMAIN PASS → PAGE REGISTER PASS → CONTENT FREEZE → GLYPH PASS → READING-SIZE PASS → DENSITY PASS → LAYOUT PASS → PDF PASS.**
 
 Satu kegagalan = belum FINAL.
 
-# 15. Changelog
+# 16. Changelog
+## v1.5.1 — 2026-09-17
+- Mengunci prinsip `besar, jelas, proporsional`, bukan sekadar font sebesar mungkin.
+- Target contoh/penanaman 36–40 pt.
+- Target latihan 32–36 pt; minimum reguler 30 pt tanpa exception.
+- Contoh + latihan ditargetkan 60–65% area belajar efektif.
+- Memprioritaskan tinggi row dan ukuran glyph ketika terdapat dead space.
+- Menambah READING-SIZE PASS pada gate FINAL.
+- Mewajibkan audit keterbacaan pada PDF A5 100%.
+- Mempertegas penghapusan brand/motto footer duplikat.
+
 ## v1.5 — 2026-09-17
-- Menetapkan anti-dead-space sebagai aturan resmi.
-- Memindahkan ruang kosong kembali ke contoh dan latihan Tartil.
-- Menetapkan contoh/penanaman minimum 30 pt, ideal 32–36 pt.
-- Menetapkan latihan Tartil minimum 28 pt, ideal 30–34 pt.
-- Menetapkan latihan sebagai area fleksibel utama ±50–58% halaman.
-- Memadatkan footer menjadi 14–17 mm.
-- Menambah DENSITY PASS sebelum LAYOUT PASS.
+- Anti-dead-space dan latihan sebagai area fleksibel utama.
 
 ## v1.4.3 — 2026-09-17
 - Mengunci Tanggal, Nilai, TTD dan footer proporsional.
-
-## v1.4.2 — 2026-09-17
-- Mengunci footer satu row dan melarang metadata audit tercetak.
 
 ## v1.4 — 2026-09-17
 - Menghapus zona Aktivitas Bi'ah bawah dan memperkuat glyph gate Ha dua lubang.
