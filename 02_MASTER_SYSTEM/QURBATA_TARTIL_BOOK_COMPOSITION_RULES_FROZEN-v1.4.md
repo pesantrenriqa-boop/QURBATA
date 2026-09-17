@@ -1,16 +1,16 @@
 # QURBATA TARTIL — ATURAN PENYUSUNAN BUKU
 
-Status: **FROZEN v1.5.2**
+Status: **FROZEN v1.5.3**
 Effective: 2026-09-17
 Authority: **BOOK COMPOSITION MASTER**
 Scope: penyusunan isi, tipografi latihan, glyph Arab, proporsi halaman, dan layout seluruh Buku QURBATA Tartil
 
-> v1.5.2 menggantikan layout v1.5.1 dan seluruh v1.4.x. PDF sebelumnya berstatus AUDIT/OBSOLETE sampai diregenerasi dan lolos visual gate v1.5.2.
+> v1.5.3 menggantikan layout v1.5.2 dan seluruh versi sebelumnya. PDF sebelumnya berstatus AUDIT/OBSOLETE sampai diregenerasi dan lolos visual gate v1.5.3.
 
 # 1. Prinsip utama — BACAAN BESAR DIPERTAHANKAN, RUANG HALAMAN YANG DIPERBAIKI
 Hasil audit visual v1.5.1 menunjukkan ukuran bacaan Tartil sudah mendekati ukuran yang diinginkan. Karena itu koreksi berikutnya **tidak boleh menyelesaikan masalah layout dengan mengecilkan huruf latihan**.
 
-Prinsip resmi v1.5.2:
+Prinsip resmi v1.5.3:
 **pertahankan keterbacaan glyph; perbaiki distribusi tinggi row dan struktur vertikal halaman.**
 
 # 2. Hierarki visual
@@ -26,6 +26,33 @@ Contoh + latihan harus menjadi mayoritas area belajar efektif dan halaman tidak 
 - Harakat utuh, tidak clipping, dan tidak menyentuh border.
 - Beri ruang vertikal yang cukup agar tahap `lihat/tirukan` terasa jelas.
 - Jangan memperbesar panel pendukung dengan mengambil ruang contoh.
+
+
+# 3A. CONTOH/PENANAMAN ADALAH KOMPONEN WAJIB — TIDAK BOLEH HILANG
+Hasil audit PDF v1.5.2 menunjukkan bahwa koreksi density dapat mendesak atau menghilangkan contoh/penanaman. Hal ini dinyatakan **EXAMPLE GATE FAIL**.
+
+Aturan resmi:
+- setiap halaman yang menurut page register memiliki materi/kompetensi baru WAJIB menampilkan blok contoh/penanaman;
+- blok contoh harus berada di antara Header/Kompetensi dan Panel Integrasi, sebelum latihan 8×3;
+- blok contoh memiliki **reserved row/track sendiri** dan tidak boleh digabung ke track auto yang dapat runtuh;
+- tinggi efektif minimum blok contoh reguler **18 mm**, target **20–24 mm** bila dua baris penanaman diperlukan;
+- glyph contoh target **36–40 pt** dan tidak boleh lebih kecil daripada 34 pt tanpa exception terdokumentasi;
+- minimal isi contoh mengikuti page register; generator dilarang membuat placeholder kosong;
+- contoh tidak boleh dihapus oleh normalisasi DOM, selector legacy, overflow, clipping, atau optimasi density;
+- overflow hidden pada ancestor tidak boleh memotong contoh/harakat;
+- jika ruang halaman kurang, kompres ornamen/footer/gap lebih dahulu, lalu tinggi row latihan secara proporsional; **contoh tidak boleh dikorbankan**;
+- halaman review/evaluasi yang memang tidak mensyaratkan penanaman harus mengikuti page register dan tidak dipaksa memiliki contoh palsu.
+
+## 3A.1 Assertion wajib contoh
+Sebelum render, generator harus memeriksa setiap halaman terhadap page register:
+1. apakah halaman membutuhkan contoh/penanaman;
+2. bila ya, blok contoh harus ada dan berisi teks Arab non-kosong;
+3. declared/computed font-size memenuhi minimum;
+4. blok tidak display:none, tidak memiliki tinggi nol, dan tidak berada di luar article;
+5. kegagalan satu poin harus membuat build **FAIL**, bukan menghasilkan PDF.
+
+## 3A.2 Visual gate contoh
+Pada audit PDF A5 100%, contoh harus langsung terlihat sebagai tahap lihat/tirukan sebelum latihan, lebih menonjol daripada panel integrasi, memiliki harakat utuh dan breathing room, tidak terpotong, serta tetap hadir setelah koreksi density.
 
 # 4. Latihan Tartil — ukuran v1.5.1 dipertahankan sebagai baseline
 Struktur reguler tetap **8 baris × 3 kelompok = 24 kelompok**.
@@ -77,7 +104,7 @@ Aturan:
 
 # 7. Urutan struktur halaman
 Untuk halaman reguler, struktur visual harus konsisten:
-**Header/Kompetensi → Contoh/Penanaman → Panel Integrasi → Latihan Tartil → Footer.**
+**Header/Kompetensi → Contoh/Penanaman (reserved, wajib bila page register mensyaratkan) → Panel Integrasi → Latihan Tartil → Footer.**
 
 Bila source lama mempunyai urutan berbeda, generator boleh menormalisasi DOM selama substansi kurikulum tidak berubah.
 
@@ -132,7 +159,7 @@ Generator berikutnya harus:
 # 14. Build assertions
 Sebelum PDF dibuat, pipeline wajib memeriksa:
 - tepat 8×3 pada halaman reguler;
-- contoh/penanaman tersedia sesuai page register;
+- contoh/penanaman tersedia sesuai page register, berisi Arab non-kosong, memiliki reserved height, dan tidak collapse/hidden;
 - font latihan tidak di bawah 30 pt tanpa exception;
 - tepat satu footer resmi;
 - Tanggal/Nilai/TTD ada;
@@ -142,7 +169,7 @@ Sebelum PDF dibuat, pipeline wajib memeriksa:
 - tidak ada metadata teknis tercetak;
 - tidak overflow ke halaman berikutnya.
 
-# 15. Visual audit v1.5.2
+# 15. Visual audit v1.5.3
 Sampel wajib: **P001, P002, P010, P014, P020, P030, P040**.
 
 Pada setiap sampel:
@@ -167,12 +194,12 @@ Pada setiap sampel:
 - **LAYOUT:** FAIL sampai Density + Footer lulus.
 
 # 17. Gate FINAL
-**CURRICULUM PASS → DOMAIN PASS → PAGE REGISTER PASS → CONTENT FREEZE → GLYPH PASS → READING-SIZE PASS → DENSITY PASS → FOOTER PASS → LAYOUT PASS → PDF PASS.**
+**CURRICULUM PASS → DOMAIN PASS → PAGE REGISTER PASS → CONTENT FREEZE → GLYPH PASS → EXAMPLE PASS → READING-SIZE PASS → DENSITY PASS → FOOTER PASS → LAYOUT PASS → PDF PASS.**
 
 Satu kegagalan = belum FINAL.
 
 # 18. Changelog
-## v1.5.2 — 2026-09-17
+## v1.5.3 — 2026-09-17
 - Membekukan hasil evaluasi visual v1.5.1 sebagai dasar koreksi.
 - Mempertahankan baseline latihan sekitar 34 pt; koreksi difokuskan pada tinggi row.
 - Menetapkan blank band > ±0,5 row sebagai DENSITY FAIL.
@@ -191,3 +218,12 @@ Satu kegagalan = belum FINAL.
 
 ## v1.4.3 — 2026-09-17
 - Tanggal/Nilai/TTD dan footer proporsional.
+
+
+## v1.5.3 — 2026-09-18
+- Membekukan temuan audit v1.5.2 bahwa contoh/penanaman dapat terdesak atau hilang.
+- Menjadikan contoh/penanaman sebagai reserved layout track yang tidak boleh collapse.
+- Menetapkan tinggi minimum 18 mm dan target 20–24 mm untuk blok contoh reguler.
+- Menetapkan contoh 36–40 pt, minimum 34 pt tanpa exception.
+- Menambahkan assertion berbasis page register: contoh wajib ada, non-kosong, visible, dan berada di dalam article.
+- Menambahkan **EXAMPLE PASS** ke gate FINAL sebelum READING-SIZE dan DENSITY.
