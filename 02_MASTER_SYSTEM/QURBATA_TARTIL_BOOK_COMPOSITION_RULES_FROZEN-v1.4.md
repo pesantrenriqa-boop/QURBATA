@@ -1,11 +1,11 @@
 # QURBATA TARTIL — ATURAN PENYUSUNAN BUKU
 
-Status: **FROZEN v1.4.2**
+Status: **FROZEN v1.4.3**
 Effective: 2026-09-17
 Authority: **BOOK COMPOSITION MASTER**
 Scope: penyusunan isi, tipografi latihan, glyph Arab, dan prinsip layout seluruh Buku QURBATA Tartil
 
-> Seluruh generator, layout, PDF, dan audit visual setelah keputusan ini WAJIB mengikuti v1.4.2. PDF footer versi sebelumnya berstatus AUDIT/OBSOLETE sampai diregenerasi.
+> Seluruh generator, layout, PDF, dan audit visual setelah keputusan ini WAJIB mengikuti v1.4.3. PDF footer versi sebelumnya berstatus AUDIT/OBSOLETE sampai diregenerasi.
 
 ## 1. Urutan kerja wajib
 Master kurikulum → domain masters → page register → audit integrasi isi → content freeze → generator/layout → audit visual → FINAL. Layout tidak boleh mengubah substansi kurikulum.
@@ -31,89 +31,147 @@ Tetap ringkas, terbaca, Arab berpasangan dengan arti Indonesia, dan tidak mengam
 ## 7. Zona Aktivitas Bi'ah bawah DIHAPUS
 Heading `Aktivitas Bi'ah QURBATA`, kotak biru/mint kosong, dan ruang kosong khusus aktivitas di antara latihan dan footer dilarang. Ruang hasil penghapusan menjadi milik latihan Tartil.
 
-## 8. FOOTER RESMI QURBATA JILID 1 — FROZEN v1.4.2
-Referensi visual yang disetujui pengguna pada 17 September 2026 adalah authority visual footer.
+# 8. FOOTER RESMI QURBATA JILID 1 — FROZEN v1.4.3
+Referensi visual footer yang disetujui pengguna pada 17 September 2026 menjadi **authority visual resmi**. Tujuannya: sederhana, proporsional, mudah diisi dengan pena, mudah dipindai, dan tidak mengganggu dominasi latihan Tartil.
 
-### 8.1 Satu baris tunggal — tidak boleh pecah
-Footer WAJIB berupa **SATU ROW horizontal** dan satu baseline visual. Tidak boleh ada komponen footer turun ke baris kedua.
+## 8.1 Prinsip utama
+Footer wajib **selalu tampil pada setiap halaman isi**. Elemen Tanggal, Nilai, dan TTD tidak boleh hilang karena pagination, overflow, clipping, selector, transformasi DOM, atau penggabungan PDF.
 
-Urutan kiri → kanan:
-**badge ID halaman | Tanggal | Nilai | TTD | QR | brand RIQA OS**.
+Footer merupakan **satu pita horizontal tunggal** di bawah latihan. Tidak boleh pecah menjadi dua baris dan tidak boleh ada elemen footer tercecer di bagian bawah halaman.
 
-### 8.2 Geometri wajib
-- Footer memakai satu container grid/flex khusus, bukan memanfaatkan footer lama yang terpisah-pisah.
-- Tinggi efektif footer maksimum sekitar 18 mm pada A5.
-- Badge ID kompak.
-- Tanggal: field sedang.
-- Nilai: field paling sempit.
-- TTD: field administrasi paling lebar.
-- QR: satu kolom tetap dengan quiet zone putih.
-- Brand: satu kolom tetap di kanan QR.
-- Semua kolom align-center secara vertikal.
-- Tidak boleh memakai `position:absolute` untuk QR, motto, badge, atau metadata footer.
-- Tidak boleh ada transform/negative margin yang menyebabkan tumpang tindih.
+Urutan visual kiri → kanan:
+**ID halaman | Tanggal | Nilai | TTD | QR | identitas RIQA OS**.
 
-### 8.3 Field administrasi
-- Label `Tanggal:`, `Nilai:`, `TTD:` berada tepat di atas kotak masing-masing, masih di dalam kolom footer yang sama.
-- Kotak outline tipis biru/teal, sudut membulat ringan, latar putih.
-- Ruang tulis berada di dalam kotak.
-- TTD harus cukup luas untuk tanda tangan pena.
-- Field tidak boleh menyentuh QR.
+## 8.2 Proporsi footer pada halaman A5
+Gunakan proporsi relatif, bukan ukuran yang memaksa overflow:
+- ID halaman: ±9% lebar footer.
+- Tanggal: ±21%.
+- Nilai: ±14%.
+- TTD: ±23%.
+- QR + quiet zone: ±11%.
+- Brand RIQA OS: ±22%.
 
-### 8.4 QR dan brand
-- QR hitam-putih, ukuran konsisten, quiet zone putih bersih minimal sekitar 1 mm di setiap sisi.
-- QR tidak boleh memiliki teks yang menempel/bertumpuk di bawahnya selain bila berada dalam kolom brand terpisah.
-- Di kanan QR terdapat brand tersusun vertikal: motto Arab `تَعَلَّمْ – اِعْمَلْ – عَلِّمْ`, arti `Belajar, Mengamalkan, Mengajarkan`, lalu `RIQA OS`.
-- Motto tidak boleh muncul di kiri bawah atau pada baris lain.
-- Brand tidak boleh berada di bawah QR.
+Gap antarkolom kecil dan konsisten. Total seluruh kolom + gap wajib <= 100% area aman halaman.
 
-### 8.5 Metadata teknis DILARANG di halaman cetak
-String seperti `AUDIT`, nama file page register, path repository, debug text, source marker, atau metadata build **tidak boleh dicetak di halaman buku**. Metadata tersebut hanya boleh ada pada log/build artifact metadata.
+Tinggi keseluruhan footer target **16–19 mm**, termasuk label dan field, dan wajib masuk di area cetak halaman tanpa mendorong konten keluar.
 
-### 8.6 Larangan eksplisit
+## 8.3 ID halaman
+- Bentuk badge kecil/pill berwarna biru muda.
+- Contoh `QJ1-P002`.
+- Teks tebal, kontras, dan satu baris.
+- Badge tidak boleh mengambil ruang lebih besar daripada field administrasi.
+
+## 8.4 Tanggal, Nilai, TTD — WAJIB TAMPIL
+Ketiga field adalah elemen administrasi wajib dan tidak boleh dihapus.
+
+Struktur masing-masing kolom:
+1. label di atas: `Tanggal:`, `Nilai:`, `TTD:`;
+2. kotak tulis tepat di bawah label;
+3. outline tipis biru/teal;
+4. sudut membulat ringan;
+5. latar putih;
+6. garis/titik bantu tulis boleh berada dekat dasar kotak.
+
+Proporsi:
+- Tanggal cukup untuk tanggal lengkap.
+- Nilai paling kompak.
+- TTD paling lebar untuk tanda tangan pena.
+
+Field harus mempunyai tinggi efektif tulis sekitar **9–11 mm** dan tidak boleh terpotong.
+
+## 8.5 QR RIQA OS
+- QR hitam-putih.
+- QR berada pada kolom sendiri, center secara vertikal.
+- Ukuran target sekitar **13–15 mm**, disesuaikan agar seluruh footer tetap muat.
+- Quiet zone putih bersih minimal ±1 mm di setiap sisi.
+- QR tidak boleh menyentuh TTD atau brand.
+- QR tidak boleh menimpa teks, berada di belakang teks, atau turun ke baris kedua.
+
+## 8.6 Identitas RIQA OS
+Di sebelah kanan QR, tersusun vertikal dan center:
+1. `تَعَلَّمْ – اِعْمَلْ – عَلِّمْ`
+2. `Belajar, Mengamalkan, Mengajarkan`
+3. **RIQA OS**
+
+Arab menggunakan KFGQPC Uthman Taha. Brand tidak boleh berada di bawah QR atau tercecer di kiri bawah halaman.
+
+## 8.7 Ornamen bawah
+Boleh ada **strip ornamen geometris/arabesque yang sangat tipis dan ringan** di tepi bawah halaman sebagai penutup visual, dengan syarat:
+- tinggi maksimum ±3–4 mm;
+- warna biru sangat muda;
+- tidak memuat teks;
+- tidak mengurangi ruang Tanggal/Nilai/TTD;
+- tidak mengganggu QR;
+- menjadi elemen dekoratif terakhir, sehingga harus dihapus lebih dahulu bila halaman kekurangan ruang.
+
+## 8.8 Metadata teknis
+String `AUDIT`, path repository, nama `PAGE_REGISTER`, debug text, source marker, SHA, dan metadata build **DILARANG dicetak pada halaman buku**. Hanya boleh tersimpan pada log/artifact metadata.
+
+## 8.9 Larangan eksplisit
+- Dilarang menghilangkan Tanggal, Nilai, atau TTD.
 - Dilarang kotak biru/mint kosong di atas footer.
-- Dilarang footer dua/lebih baris.
-- Dilarang QR berada di tengah halaman sendiri.
-- Dilarang ID halaman terpisah jauh dari row footer.
+- Dilarang footer lebih dari satu row.
+- Dilarang QR berdiri sendiri di tengah bawah halaman.
+- Dilarang QR overlap dengan TTD/brand.
 - Dilarang motto Arab jatuh ke kiri bawah.
-- Dilarang metadata audit melintas di samping QR.
-- Dilarang QR/brand/field saling overlap.
+- Dilarang metadata audit/path tercetak.
+- Dilarang footer keluar dari area aman cetak.
+- Dilarang mengurangi ukuran latihan Tartil hanya untuk mempertahankan ornamen footer.
 
-## 9. Implementasi generator
-Generator harus menormalisasi DOM footer menjadi satu komponen resmi, bukan hanya menambal CSS class lama. Bila struktur HTML lama memisahkan `.study-fields`, QR, ID, motto, atau audit metadata, pipeline wajib memindahkan/menyusun ulang elemen tersebut ke satu `.qurbata-footer-v142` sebelum render.
+# 9. Aturan implementasi generator
+Generator wajib membangun footer sebagai **komponen mandiri per halaman**, misalnya `.qurbata-footer`, dan menempatkannya **di dalam struktur halaman sebelum penutup page/article**, bukan setelah page container.
 
-## 10. Visual gate v1.4.2
-LAYOUT PASS hanya jika:
+Komponen footer harus dibuat per halaman dan tidak boleh bergantung pada pencarian selector QR lama yang mungkin gagal. Sumber QR harus eksplisit/stabil. Jika QR tidak tersedia, field administrasi tetap wajib tampil; kegagalan QR tidak boleh menghapus seluruh footer.
+
+Gunakan CSS Grid/Flex proporsional dengan `box-sizing:border-box`, `min-width:0`, dan tanpa `position:absolute`, negative margin, atau transform yang dapat menyebabkan overlap. Footer wajib `break-inside:avoid` dan seluruh dimensinya harus dihitung terhadap content-box A5.
+
+Pipeline wajib melakukan assertion sebelum render:
+- setiap halaman memiliki tepat 1 footer resmi;
+- setiap footer memiliki `Tanggal`, `Nilai`, `TTD`;
+- setiap footer memiliki ID halaman;
+- tidak ada string metadata teknis tercetak;
+- tidak ada legacy footer kedua.
+
+Jika assertion gagal, build harus FAIL, bukan menghasilkan PDF tanpa administrasi.
+
+# 10. Visual gate v1.4.3
+LAYOUT PASS hanya jika pada sampel P001, P002, P010, P014, P020, P030, dan P040 terbukti:
 - satu pertemuan/satu halaman dan 8×3 utuh;
 - latihan Tartil besar/lapang;
 - Ha detached dua lubang;
 - tidak ada zona Aktivitas Bi'ah bawah;
-- footer benar-benar satu row: ID + Tanggal + Nilai + TTD + QR + brand;
+- footer tampil lengkap dan proporsional;
+- Tanggal + Nilai + TTD semuanya terlihat dan bisa ditulis;
+- footer satu row: ID + Tanggal + Nilai + TTD + QR + RIQA OS;
 - QR scan-safe dan tidak overlap;
 - motto hanya di kanan QR;
-- tidak ada metadata audit/path di halaman;
+- tidak ada metadata audit/path;
+- footer tidak terpotong di tepi bawah;
 - panel integrasi terbaca;
 - KFGQPC Uthman Taha tertanam;
 - jumlah halaman sesuai register.
 
 Satu kegagalan = **LAYOUT FAIL**.
 
-## 11. Gate FINAL
+# 11. Gate FINAL
 **CURRICULUM PASS → DOMAIN PASS → PAGE REGISTER PASS → CONTENT FREEZE → GLYPH PASS → LAYOUT PASS → PDF PASS.**
 
-## 12. Changelog
-### v1.4.2 — 2026-09-17
-- Mengunci footer sebagai satu row tunggal.
-- Mewajibkan normalisasi DOM footer, bukan CSS patch saja.
-- Menghapus seluruh metadata audit/path dari halaman cetak.
-- Mengunci QR dan brand dalam kolom terpisah di kanan.
-- Melarang motto jatuh ke baris kedua/kiri bawah.
-- Menetapkan referensi visual pengguna sebagai authority layout footer.
+# 12. Changelog
+## v1.4.3 — 2026-09-17
+- Mengunci Tanggal, Nilai, TTD sebagai elemen wajib yang tidak boleh hilang.
+- Menetapkan proporsi footer berbasis persentase agar muat pada A5.
+- Menetapkan tinggi field tulis dan QR yang realistis.
+- Mengizinkan strip arabesque tipis sebagai ornamen paling bawah/non-prioritas.
+- Mewajibkan footer dibuat di dalam setiap page/article.
+- Mewajibkan build assertion agar PDF tanpa Tanggal/Nilai/TTD otomatis FAIL.
+- Menetapkan sampel audit visual P001/P002/P010/P014/P020/P030/P040.
 
-### v1.4.1 — 2026-09-17
+## v1.4.2 — 2026-09-17
+- Mengunci footer sebagai satu row tunggal dan melarang metadata audit tercetak.
+
+## v1.4.1 — 2026-09-17
 - Menetapkan urutan ID → Tanggal → Nilai → TTD → QR → brand.
-- Menghapus kotak aktivitas kosong dan menetapkan quiet zone QR.
 
-### v1.4 — 2026-09-17
+## v1.4 — 2026-09-17
 - Memperbesar latihan Tartil dan menghapus zona Aktivitas Bi'ah bawah.
 - Memperkuat Ha dua lubang sebagai visual glyph gate.
