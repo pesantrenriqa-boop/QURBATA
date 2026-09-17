@@ -1,177 +1,166 @@
 # QURBATA TARTIL — ATURAN PENYUSUNAN BUKU
 
-Status: **FROZEN v1.4.3**
+Status: **FROZEN v1.5**
 Effective: 2026-09-17
 Authority: **BOOK COMPOSITION MASTER**
-Scope: penyusunan isi, tipografi latihan, glyph Arab, dan prinsip layout seluruh Buku QURBATA Tartil
+Scope: penyusunan isi, tipografi latihan, glyph Arab, proporsi halaman, dan layout seluruh Buku QURBATA Tartil
 
-> Seluruh generator, layout, PDF, dan audit visual setelah keputusan ini WAJIB mengikuti v1.4.3. PDF footer versi sebelumnya berstatus AUDIT/OBSOLETE sampai diregenerasi.
+> v1.5 menggantikan aturan layout v1.4.x. Seluruh PDF lama berstatus AUDIT/OBSOLETE sampai diregenerasi dan lolos visual gate v1.5.
 
-## 1. Urutan kerja wajib
-Master kurikulum → domain masters → page register → audit integrasi isi → content freeze → generator/layout → audit visual → FINAL. Layout tidak boleh mengubah substansi kurikulum.
+# 1. Prinsip utama: HALAMAN BELAJAR, BUKAN HALAMAN KOSONG
+Setiap halaman A5 harus terasa penuh, lapang, dan proporsional untuk belajar. Ruang putih hanya boleh menjadi breathing room fungsional, bukan area kosong besar tanpa fungsi.
 
-## 2. Empat domain QURBATA
-QURBATA tetap terdiri dari Quran/Tartil, Bi'ah Arabiyah, Tahfidz, dan Akhlak. Tartil adalah domain utama. Bi'ah tetap hadir sebagai bahasa instruksional pada panel materi/pertemuan, tanpa zona aktivitas tambahan di bawah.
+**Dilarang ada dead space vertikal besar** antara latihan Tartil dan bagian bawah halaman. Bila terdapat ruang kosong, ruang tersebut WAJIB dialokasikan kembali dengan urutan:
+1. memperbesar contoh/penanaman kompetensi;
+2. memperbesar latihan Tartil;
+3. menambah tinggi efektif baris latihan;
+4. memperbesar jarak aman antar-glyph/harakat;
+5. memperjelas panel Tahfidz–Bi'ah–Akhlak;
+6. baru sisanya menjadi breathing room.
 
-## 3. Struktur latihan Jilid 1
-- 8 baris per halaman; 3 kelompok per baris = 24 kelompok.
+# 2. Hierarki visual halaman
+Urutan dominasi wajib:
+**Contoh/Penanaman Kompetensi + Latihan Tartil → panel integrasi → footer administrasi/RIQA OS → ornamen.**
+
+Tartil harus menguasai mayoritas area belajar halaman. Footer tidak boleh terlihat sebagai blok utama halaman.
+
+# 3. Contoh / penanaman materi baru — WAJIB BESAR
+Contoh materi baru adalah objek pertama yang ditiru santri, sehingga tidak boleh kecil seperti teks penjelasan.
+
+Aturan:
+- Arab contoh/penanaman menggunakan KFGQPC Uthman Taha.
+- Target ukuran visual **minimum 30 pt**, ideal **32–36 pt** pada A5 selama tidak clipping.
+- Pada halaman pengenalan harakat/kompetensi baru, contoh boleh lebih besar daripada latihan reguler.
+- Minimal dua baris penanaman bila master halaman mensyaratkan penanaman.
+- Harakat harus jelas, tidak bertabrakan dengan border atau baris di atas/bawah.
+- Contoh tidak boleh diperkecil otomatis untuk menyelamatkan footer/ornamen.
+
+# 4. Latihan Tartil — WAJIB BESAR DAN DOMINAN
+- Struktur tetap **8 baris × 3 kelompok = 24 kelompok**.
 - Satu pertemuan = satu halaman.
-- Materi baru/review mengikuti master dan page register.
-- Tartil wajib menjadi elemen visual terbesar dan paling dominan.
+- Font Arab latihan KFGQPC Uthman Taha.
+- Target ukuran visual latihan **minimum 28 pt**, ideal **30–34 pt** pada A5 jika glyph/harakat aman.
+- Tinggi baris harus memanfaatkan ruang vertikal halaman, bukan dipadatkan di bagian atas.
+- Setiap cell memiliki breathing room atas/bawah yang cukup agar harakat tidak menyentuh garis.
+- Tiga kelompok per baris harus terbaca dari jarak belajar normal.
+- Dilarang auto-shrink latihan sebagai solusi pagination pertama.
 
-## 4. Proporsi dan breathing room
-Tidak boleh ada clipping, overlap, baseline collision, teks mepet, atau panel sesak. Jika ruang kurang, kompres ornamen/footer/QR lebih dahulu, bukan latihan Tartil. Ukuran latihan tidak boleh diperkecil sebagai solusi pertama.
+# 5. Distribusi tinggi halaman A5
+Generator wajib menghitung tinggi halaman sebagai sistem, bukan menumpuk komponen dengan margin bebas.
 
-## 5. Ha dua lubang — GLYPH GATE
-Seluruh ه tunggal/detached pada materi Tartil wajib tampil sebagai Ha dua lubang. Audit harus visual; Unicode scan saja tidak cukup. Ha satu lubang pada latihan, judul, penanaman, evaluasi, atau checkpoint = FAIL.
+Target proporsi vertikal area isi:
+- header/judul/kompetensi: ±8–10%;
+- contoh/penanaman: ±10–14%;
+- latihan Tartil 8 baris: **±50–58%**;
+- panel Tahfidz–Bi'ah–Akhlak: ±10–13%;
+- footer administrasi + QR/brand: ±8–10%;
+- gap/breathing room total: maksimum ±5% dan harus tersebar, bukan satu blok kosong.
 
-## 6. Panel Tahfidz – Bi'ah Arabiyah – Akhlak
-Tetap ringkas, terbaca, Arab berpasangan dengan arti Indonesia, dan tidak mengambil ruang berlebihan dari Tartil.
+Toleransi boleh berubah pada checkpoint/evaluasi, tetapi **tidak boleh menghasilkan dead space besar**.
 
-## 7. Zona Aktivitas Bi'ah bawah DIHAPUS
-Heading `Aktivitas Bi'ah QURBATA`, kotak biru/mint kosong, dan ruang kosong khusus aktivitas di antara latihan dan footer dilarang. Ruang hasil penghapusan menjadi milik latihan Tartil.
+# 6. Aturan anti-dead-space
+LAYOUT FAIL bila terdapat area kosong vertikal tanpa fungsi yang secara visual lebih tinggi daripada kira-kira satu baris latihan reguler.
 
-# 8. FOOTER RESMI QURBATA JILID 1 — FROZEN v1.4.3
-Referensi visual footer yang disetujui pengguna pada 17 September 2026 menjadi **authority visual resmi**. Tujuannya: sederhana, proporsional, mudah diisi dengan pena, mudah dipindai, dan tidak mengganggu dominasi latihan Tartil.
+Generator harus menggunakan layout grid halaman dengan row terkontrol, misalnya:
+`header | planting | practice | integration | footer`
 
-## 8.1 Prinsip utama
-Footer wajib **selalu tampil pada setiap halaman isi**. Elemen Tanggal, Nilai, dan TTD tidak boleh hilang karena pagination, overflow, clipping, selector, transformasi DOM, atau penggabungan PDF.
+dengan `practice` sebagai `minmax(0,1fr)` / area fleksibel utama. Margin/padding antarbagian harus kecil dan konsisten. Dilarang fixed-height lama yang meninggalkan lubang besar setelah practice.
 
-Footer merupakan **satu pita horizontal tunggal** di bawah latihan. Tidak boleh pecah menjadi dua baris dan tidak boleh ada elemen footer tercecer di bagian bawah halaman.
+# 7. Ha dua lubang — GLYPH GATE
+Seluruh ه detached pada Tartil wajib tampil sebagai Ha dua lubang. Audit harus visual. Ha satu lubang pada latihan, judul, penanaman, evaluasi, atau checkpoint = FAIL.
 
-Urutan visual kiri → kanan:
-**ID halaman | Tanggal | Nilai | TTD | QR | identitas RIQA OS**.
+# 8. Panel Tahfidz – Bi'ah Arabiyah – Akhlak
+- Tetap tiga domain pendukung yang ringkas dan terbaca.
+- Arab + arti Indonesia harus terbaca tanpa crowding.
+- Panel tidak boleh menjadi penyebab latihan Tartil mengecil.
+- Bi'ah adalah bahasa instruksional, bukan daftar kosakata dekoratif.
+- Tidak ada lagi zona `Aktivitas Bi'ah QURBATA` atau kotak kosong khusus aktivitas di bawah latihan.
 
-## 8.2 Proporsi footer pada halaman A5
-Gunakan proporsi relatif, bukan ukuran yang memaksa overflow:
-- ID halaman: ±9% lebar footer.
-- Tanggal: ±21%.
-- Nilai: ±14%.
-- TTD: ±23%.
-- QR + quiet zone: ±11%.
-- Brand RIQA OS: ±22%.
+# 9. Footer resmi — ringkas dan proporsional
+Footer wajib selalu tampil tetapi **harus kompak** agar tidak menciptakan dead space.
 
-Gap antarkolom kecil dan konsisten. Total seluruh kolom + gap wajib <= 100% area aman halaman.
+Urutan horizontal:
+**ID halaman | Tanggal | Nilai | TTD | QR | RIQA OS**.
 
-Tinggi keseluruhan footer target **16–19 mm**, termasuk label dan field, dan wajib masuk di area cetak halaman tanpa mendorong konten keluar.
+Aturan:
+- satu row, tidak pecah;
+- target tinggi total **14–17 mm**;
+- Tanggal/Nilai/TTD wajib terlihat dan bisa ditulis;
+- TTD paling lebar;
+- QR target **12–14 mm** + quiet zone putih;
+- brand RIQA OS di kanan QR;
+- tidak ada metadata AUDIT/path/PAGE_REGISTER/debug pada halaman cetak;
+- tidak ada motto/brand tercecer di area lain;
+- footer tidak boleh memakai ruang lebih besar daripada yang dibutuhkan.
 
-## 8.3 ID halaman
-- Bentuk badge kecil/pill berwarna biru muda.
-- Contoh `QJ1-P002`.
-- Teks tebal, kontras, dan satu baris.
-- Badge tidak boleh mengambil ruang lebih besar daripada field administrasi.
+# 10. Ornamen
+Ornamen adalah prioritas terakhir. Jika halaman belum proporsional atau latihan masih terlalu kecil, ornamen bawah harus dihapus. Ornamen tidak boleh menciptakan margin kosong tambahan.
 
-## 8.4 Tanggal, Nilai, TTD — WAJIB TAMPIL
-Ketiga field adalah elemen administrasi wajib dan tidak boleh dihapus.
+# 11. Aturan implementasi generator
+Generator wajib menggunakan satu page-layout terukur dan footer berada di dalam setiap article/page.
 
-Struktur masing-masing kolom:
-1. label di atas: `Tanggal:`, `Nilai:`, `TTD:`;
-2. kotak tulis tepat di bawah label;
-3. outline tipis biru/teal;
-4. sudut membulat ringan;
-5. latar putih;
-6. garis/titik bantu tulis boleh berada dekat dasar kotak.
+Wajib:
+- `box-sizing:border-box` pada komponen utama;
+- `overflow` tidak boleh menyembunyikan materi wajib;
+- practice menjadi area fleksibel utama;
+- tidak memakai absolute positioning untuk mengisi layout utama;
+- tidak memakai negative margin/transform untuk mengejar tampilan;
+- semua halaman tetap tepat satu page A5.
 
-Proporsi:
-- Tanggal cukup untuk tanggal lengkap.
-- Nilai paling kompak.
-- TTD paling lebar untuk tanda tangan pena.
+Pipeline wajib assertion:
+- tepat 8×3 latihan pada halaman reguler;
+- contoh/penanaman ada dan memenuhi ukuran minimum pada halaman yang membutuhkan;
+- Tanggal/Nilai/TTD ada;
+- tepat satu footer per halaman;
+- tidak ada legacy activity box;
+- tidak ada metadata teknis tercetak;
+- tidak ada overflow ke halaman berikutnya.
 
-Field harus mempunyai tinggi efektif tulis sekitar **9–11 mm** dan tidak boleh terpotong.
+# 12. Visual density gate
+Selain assertion DOM, audit visual wajib menilai **kepadatan halaman**.
 
-## 8.5 QR RIQA OS
-- QR hitam-putih.
-- QR berada pada kolom sendiri, center secara vertikal.
-- Ukuran target sekitar **13–15 mm**, disesuaikan agar seluruh footer tetap muat.
-- Quiet zone putih bersih minimal ±1 mm di setiap sisi.
-- QR tidak boleh menyentuh TTD atau brand.
-- QR tidak boleh menimpa teks, berada di belakang teks, atau turun ke baris kedua.
+PASS bila:
+- tidak ada blok kosong besar;
+- contoh materi tampak besar/utama;
+- latihan Tartil jelas dominan;
+- 8 baris menyebar proporsional pada area latihan;
+- bagian bawah kompak dan rapi;
+- halaman terasa sebagai lembar belajar yang utuh, bukan konten yang menumpuk di atas dengan ruang kosong di bawah.
 
-## 8.6 Identitas RIQA OS
-Di sebelah kanan QR, tersusun vertikal dan center:
-1. `تَعَلَّمْ – اِعْمَلْ – عَلِّمْ`
-2. `Belajar, Mengamalkan, Mengajarkan`
-3. **RIQA OS**
+# 13. Sampel audit wajib
+Audit minimal P001, P002, P010, P014, P020, P030, P040.
 
-Arab menggunakan KFGQPC Uthman Taha. Brand tidak boleh berada di bawah QR atau tercecer di kiri bawah halaman.
-
-## 8.7 Ornamen bawah
-Boleh ada **strip ornamen geometris/arabesque yang sangat tipis dan ringan** di tepi bawah halaman sebagai penutup visual, dengan syarat:
-- tinggi maksimum ±3–4 mm;
-- warna biru sangat muda;
-- tidak memuat teks;
-- tidak mengurangi ruang Tanggal/Nilai/TTD;
-- tidak mengganggu QR;
-- menjadi elemen dekoratif terakhir, sehingga harus dihapus lebih dahulu bila halaman kekurangan ruang.
-
-## 8.8 Metadata teknis
-String `AUDIT`, path repository, nama `PAGE_REGISTER`, debug text, source marker, SHA, dan metadata build **DILARANG dicetak pada halaman buku**. Hanya boleh tersimpan pada log/artifact metadata.
-
-## 8.9 Larangan eksplisit
-- Dilarang menghilangkan Tanggal, Nilai, atau TTD.
-- Dilarang kotak biru/mint kosong di atas footer.
-- Dilarang footer lebih dari satu row.
-- Dilarang QR berdiri sendiri di tengah bawah halaman.
-- Dilarang QR overlap dengan TTD/brand.
-- Dilarang motto Arab jatuh ke kiri bawah.
-- Dilarang metadata audit/path tercetak.
-- Dilarang footer keluar dari area aman cetak.
-- Dilarang mengurangi ukuran latihan Tartil hanya untuk mempertahankan ornamen footer.
-
-# 9. Aturan implementasi generator
-Generator wajib membangun footer sebagai **komponen mandiri per halaman**, misalnya `.qurbata-footer`, dan menempatkannya **di dalam struktur halaman sebelum penutup page/article**, bukan setelah page container.
-
-Komponen footer harus dibuat per halaman dan tidak boleh bergantung pada pencarian selector QR lama yang mungkin gagal. Sumber QR harus eksplisit/stabil. Jika QR tidak tersedia, field administrasi tetap wajib tampil; kegagalan QR tidak boleh menghapus seluruh footer.
-
-Gunakan CSS Grid/Flex proporsional dengan `box-sizing:border-box`, `min-width:0`, dan tanpa `position:absolute`, negative margin, atau transform yang dapat menyebabkan overlap. Footer wajib `break-inside:avoid` dan seluruh dimensinya harus dihitung terhadap content-box A5.
-
-Pipeline wajib melakukan assertion sebelum render:
-- setiap halaman memiliki tepat 1 footer resmi;
-- setiap footer memiliki `Tanggal`, `Nilai`, `TTD`;
-- setiap footer memiliki ID halaman;
-- tidak ada string metadata teknis tercetak;
-- tidak ada legacy footer kedua.
-
-Jika assertion gagal, build harus FAIL, bukan menghasilkan PDF tanpa administrasi.
-
-# 10. Visual gate v1.4.3
-LAYOUT PASS hanya jika pada sampel P001, P002, P010, P014, P020, P030, dan P040 terbukti:
-- satu pertemuan/satu halaman dan 8×3 utuh;
-- latihan Tartil besar/lapang;
-- Ha detached dua lubang;
-- tidak ada zona Aktivitas Bi'ah bawah;
-- footer tampil lengkap dan proporsional;
-- Tanggal + Nilai + TTD semuanya terlihat dan bisa ditulis;
-- footer satu row: ID + Tanggal + Nilai + TTD + QR + RIQA OS;
-- QR scan-safe dan tidak overlap;
-- motto hanya di kanan QR;
-- tidak ada metadata audit/path;
-- footer tidak terpotong di tepi bawah;
+Pada setiap sampel periksa:
+- ukuran contoh ≥30 pt secara aturan CSS/render;
+- latihan ≥28 pt secara aturan CSS/render;
+- harakat tidak clipping;
+- Ha dua lubang bila muncul;
+- tidak ada dead space > kira-kira satu baris latihan;
+- footer lengkap dan tidak dominan;
+- tidak ada overlap;
 - panel integrasi terbaca;
-- KFGQPC Uthman Taha tertanam;
-- jumlah halaman sesuai register.
+- KFGQPC Uthman Taha tertanam.
 
-Satu kegagalan = **LAYOUT FAIL**.
+# 14. Gate FINAL
+**CURRICULUM PASS → DOMAIN PASS → PAGE REGISTER PASS → CONTENT FREEZE → GLYPH PASS → DENSITY PASS → LAYOUT PASS → PDF PASS.**
 
-# 11. Gate FINAL
-**CURRICULUM PASS → DOMAIN PASS → PAGE REGISTER PASS → CONTENT FREEZE → GLYPH PASS → LAYOUT PASS → PDF PASS.**
+Satu kegagalan = belum FINAL.
 
-# 12. Changelog
+# 15. Changelog
+## v1.5 — 2026-09-17
+- Menetapkan anti-dead-space sebagai aturan resmi.
+- Memindahkan ruang kosong kembali ke contoh dan latihan Tartil.
+- Menetapkan contoh/penanaman minimum 30 pt, ideal 32–36 pt.
+- Menetapkan latihan Tartil minimum 28 pt, ideal 30–34 pt.
+- Menetapkan latihan sebagai area fleksibel utama ±50–58% halaman.
+- Memadatkan footer menjadi 14–17 mm.
+- Menambah DENSITY PASS sebelum LAYOUT PASS.
+
 ## v1.4.3 — 2026-09-17
-- Mengunci Tanggal, Nilai, TTD sebagai elemen wajib yang tidak boleh hilang.
-- Menetapkan proporsi footer berbasis persentase agar muat pada A5.
-- Menetapkan tinggi field tulis dan QR yang realistis.
-- Mengizinkan strip arabesque tipis sebagai ornamen paling bawah/non-prioritas.
-- Mewajibkan footer dibuat di dalam setiap page/article.
-- Mewajibkan build assertion agar PDF tanpa Tanggal/Nilai/TTD otomatis FAIL.
-- Menetapkan sampel audit visual P001/P002/P010/P014/P020/P030/P040.
+- Mengunci Tanggal, Nilai, TTD dan footer proporsional.
 
 ## v1.4.2 — 2026-09-17
-- Mengunci footer sebagai satu row tunggal dan melarang metadata audit tercetak.
-
-## v1.4.1 — 2026-09-17
-- Menetapkan urutan ID → Tanggal → Nilai → TTD → QR → brand.
+- Mengunci footer satu row dan melarang metadata audit tercetak.
 
 ## v1.4 — 2026-09-17
-- Memperbesar latihan Tartil dan menghapus zona Aktivitas Bi'ah bawah.
-- Memperkuat Ha dua lubang sebagai visual glyph gate.
+- Menghapus zona Aktivitas Bi'ah bawah dan memperkuat glyph gate Ha dua lubang.
