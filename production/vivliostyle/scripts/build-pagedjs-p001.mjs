@@ -12,33 +12,33 @@ const cells=exercises.map(x=>`<div class="cell" dir="rtl">${x}</div>`).join("");
 const html=`<!doctype html><html lang="id"><head><meta charset="utf-8"><title>QURBATA P001 Paged.js</title><style>
 @font-face{font-family:Uthman;src:url("./fonts/KFGQPC-Uthman-Taha-Naskh.woff2") format("woff2")}
 @page{size:A5 portrait;margin:5mm}*{box-sizing:border-box}html,body{margin:0;padding:0;background:#fffdf8}
-.page{position:relative;width:138mm;height:200mm;padding:3.5mm;overflow:hidden;display:grid;grid-template-rows:14mm 21mm 23mm 1fr 15mm;gap:1.7mm;font-family:Arial,sans-serif;color:#173b52;border:.35mm solid #d9b968;break-after:page;background:linear-gradient(180deg,#fffefa,#fff)}
+.page{position:relative;width:138mm;height:200mm;padding:3.5mm;overflow:hidden;display:grid;grid-template-rows:12mm 22mm 20mm 1fr 15mm;gap:1.7mm;font-family:Arial,sans-serif;color:#173b52;border:.35mm solid #d9b968;break-after:page;background:linear-gradient(180deg,#fffefa,#fff)}
 .page:before,.page:after{content:"";position:absolute;width:18mm;height:18mm;border-color:#d9b968;pointer-events:none}
 .page:before{left:1.3mm;top:1.3mm;border-left:.7mm double #d9b968;border-top:.7mm double #d9b968;border-radius:5mm 0 0 0}
 .page:after{right:1.3mm;bottom:1.3mm;border-right:.7mm double #d9b968;border-bottom:.7mm double #d9b968;border-radius:0 0 5mm 0}
-.ar{font-family:Uthman,serif;direction:rtl}.header{display:grid;grid-template-columns:27mm 1fr 24mm;align-items:center;border-bottom:.3mm solid #d9b968;padding:0 2mm}
-.logo{display:flex;align-items:center;gap:1.4mm}.logo img{width:11mm;height:11mm;object-fit:contain}.logo small{font-size:4.7pt;line-height:1.05;font-weight:600}
-.header h1{text-align:center;font-size:14pt;margin:0}.code{text-align:center;border:.25mm solid #e2ca8d;border-radius:5mm;padding:1.5mm;font-size:7pt;font-weight:700;background:#fff8e8}
+.ar{font-family:Uthman,serif;direction:rtl}.header{display:grid;grid-template-columns:32mm 1fr 14mm;align-items:center;border-bottom:.3mm solid #d9b968;padding:0 2mm}
+.logo{display:flex;align-items:center;gap:1mm;min-width:0}.logo img{width:13mm;height:10mm;object-fit:contain;display:block}.logo small{font-size:4.2pt;line-height:1.02;font-weight:600;white-space:nowrap}
+.header h1{text-align:center;font-size:12.5pt;margin:0}.page-no{text-align:center;border:.25mm solid #e2ca8d;border-radius:50%;width:9mm;height:9mm;line-height:8.5mm;margin:auto;font-size:8pt;font-weight:700;background:#fff8e8}
 .plant{display:flex;align-items:center;justify-content:center;border:.4mm solid #77b7d2;border-radius:4mm;background:linear-gradient(90deg,#f7fcff,#eef8fc,#f7fcff);box-shadow:inset 0 0 0 .5mm #fff}
-.plant .ar{font-size:42pt;line-height:1}
+.plant .ar{font-size:46pt;line-height:1}
 .integrations{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4mm}.card{border:.3mm solid #b8d5df;border-radius:3mm;padding:1.2mm;text-align:center;overflow:hidden;background:#fff}.card:nth-child(1){background:#f6fbf4}.card:nth-child(2){background:#fffaf0}.card:nth-child(3){background:#fff7f3}
-.card b{display:block;font-size:6.3pt}.card .ar{font-size:14pt;line-height:1.08;margin:.35mm 0}.card small{font-size:5.8pt;line-height:1.05;display:block}
-.practice{display:grid;grid-template-rows:6.5mm 1fr;border:.4mm solid #70b3d0;border-radius:3.5mm;overflow:hidden;background:#fff}
-.practice-title{display:flex;align-items:center;justify-content:space-between;padding:0 2mm;font-size:6.5pt;font-weight:700;background:linear-gradient(90deg,#e9f6fb,#fff8e9)}
-.practice-title strong{font-size:9pt}.grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(8,1fr);min-height:0}
-.cell{font-family:Uthman,serif;font-size:28pt;line-height:.95;display:flex;align-items:center;justify-content:center;border-top:.2mm solid #c4dfe9;border-left:.2mm solid #c4dfe9;white-space:nowrap;overflow:hidden}
+.card b{display:block;font-size:5.8pt}.card .ar{font-size:13pt;line-height:1.03;margin:.2mm 0}.card small{font-size:5.3pt;line-height:1;display:block}
+.practice{display:grid;grid-template-rows:5mm 1fr;border:.4mm solid #70b3d0;border-radius:3.5mm;overflow:hidden;background:#fff}
+.practice-title{display:flex;align-items:center;justify-content:flex-start;padding:0 2mm;font-size:6.5pt;font-weight:700;background:linear-gradient(90deg,#e9f6fb,#fff8e9)}
+.practice-title strong{font-size:8pt}.grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(8,1fr);min-height:0}
+.cell{font-family:Uthman,serif;font-size:31pt;line-height:.95;display:flex;align-items:center;justify-content:center;border-top:.2mm solid #c4dfe9;border-left:.2mm solid #c4dfe9;white-space:nowrap;overflow:hidden}
 .footer{position:relative;z-index:1;display:grid;grid-template-columns:17mm 1fr 1fr 1fr 16mm;gap:1.4mm;align-items:center;border:.3mm solid #e2ca8d;border-radius:3mm;padding:1.2mm 1.8mm;background:#fffdfa;font-size:5.8pt}
-.id{text-align:center;font-weight:700}.field{height:7mm;border-bottom:.25mm dotted #7995a5;display:flex;align-items:flex-end;justify-content:center;padding-bottom:.7mm}.qr{text-align:center;font-size:5pt;font-weight:700}.qr img{display:block;width:9mm;height:9mm;margin:auto}.motto{position:absolute;bottom:1.2mm;left:50%;transform:translateX(-50%);font-family:Uthman,serif;font-size:6pt;color:#9c7b34;white-space:nowrap}
+.id{text-align:center;font-weight:700}.field{height:7mm;border-bottom:.25mm dotted #7995a5;display:flex;align-items:flex-end;justify-content:center;padding-bottom:.7mm}.qr{text-align:center;font-size:5pt;font-weight:700}.qr img{display:block;width:9mm;height:9mm;margin:auto}.motto{position:absolute;bottom:.8mm;left:50%;transform:translateX(-50%);font-family:Uthman,serif;font-size:6.5pt;color:#9c7b34;white-space:nowrap;background:#fffefa;padding:0 2mm;z-index:3}
 </style></head><body><article class="page">
-<header class="header"><div class="logo"><img src="${logo}" alt="QURBATA"><small>Quran · Bahasa Arab<br>Tahfidz · Akhlak</small></div><h1>Mari Membaca</h1><div class="code">QJ1-P001</div></header>
+<header class="header"><div class="logo"><img src="${logo}" alt="QURBATA"><small>Quran · Bahasa Arab<br>Tahfidz · Akhlak</small></div><h1>Mari Membaca</h1><div class="page-no">1</div></header>
 <section class="plant"><div class="ar">بَ تَ ثَ</div></section>
 <section class="integrations">
 <div class="card"><b>TAHFIDZ · An-Nas 1</b><div class="ar">قُلْ أَعُوذُ بِرَبِّ النَّاسِ</div><small>Katakanlah, “Aku berlindung kepada Tuhan manusia.”</small></div>
 <div class="card"><b>BI'AH ARABIYAH · Salam</b><div class="ar">السَّلَامُ عَلَيْكُمْ</div><small>Semoga keselamatan tercurah atas kalian.</small></div>
 <div class="card"><b>AKHLAK · Adab Salam</b><div class="ar">أَفْشُوا السَّلَامَ بَيْنَكُمْ</div><small>Sebarkanlah salam di antara kalian.</small></div>
 </section>
-<section class="practice"><div class="practice-title"><strong>LATIHAN TARTIL</strong><span>8 baris × 3 kelompok</span></div><div class="grid">${cells}</div></section>
+<section class="practice"><div class="practice-title"><strong>LATIHAN TARTIL</strong></div><div class="grid">${cells}</div></section>
 <footer class="footer"><div class="id">QJ1-P001</div><div class="field">Tanggal</div><div class="field">Nilai</div><div class="field">TTD</div><div class="qr"><img src="${qr}">RIQA OS</div></footer>
-<div class="motto">تَعَلَّمْ — اِعْمَلْ — عَلِّمْ &nbsp; · &nbsp; <span style="font-family:Arial,sans-serif">1</span></div></article></body></html>`;
+<div class="motto">تَعَلَّمْ — اِعْمَلْ — عَلِّمْ</div></article></body></html>`;
 await fs.mkdir(path.dirname(out),{recursive:true});await fs.writeFile(out,html);
 console.log("Built ornamental Paged.js P001 master: A5, 24 Arabic cells, translations, QR, fixed footer.");
