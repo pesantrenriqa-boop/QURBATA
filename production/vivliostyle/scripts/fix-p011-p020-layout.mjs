@@ -10,18 +10,18 @@ const override = `
 /* P011-P020 FINAL PAGINATION GATE — applies to normal, intro, and checkpoint pages. */
 .book-page {
   box-sizing:border-box !important;
-  height:239mm !important;
-  min-height:239mm !important;
-  max-height:239mm !important;
+  height:210mm !important;
+  min-height:210mm !important;
+  max-height:210mm !important;
   break-after:page !important;
   page-break-after:always !important;
   overflow:hidden !important;
-  grid-template-rows:7mm 18mm 24mm minmax(0,1fr) 23mm 7mm !important;
+  grid-template-rows:6mm 16mm 21mm minmax(0,1fr) 18mm 6mm !important;
   gap:1mm !important;
 }
 .book-page:last-child{break-after:auto !important;page-break-after:auto !important;}
-.book-page.has-intro{grid-template-rows:7mm 18mm 24mm 12mm minmax(0,1fr) 23mm 7mm !important;}
-.book-page.checkpoint{grid-template-rows:7mm 18mm 22mm 22mm minmax(0,1fr) 23mm 7mm !important;}
+.book-page.has-intro{grid-template-rows:6mm 16mm 21mm 11mm minmax(0,1fr) 18mm 6mm !important;}
+.book-page.checkpoint{grid-template-rows:6mm 16mm 20mm 20mm minmax(0,1fr) 18mm 6mm !important;}
 
 .lesson-heading{min-height:0 !important;overflow:hidden !important;}
 .lesson-heading h1{font-size:16pt !important;line-height:.94 !important;margin:0 !important;}
@@ -58,7 +58,7 @@ const override = `
 .practice-cell{font-size:20pt !important;line-height:.88 !important;min-height:0 !important;padding:.1mm !important;overflow:hidden !important;}
 
 /* Teacher work zone: writing/signature space ABOVE labels, never below. */
-.activity-strip{height:23mm !important;min-height:23mm !important;max-height:23mm !important;margin-top:0 !important;padding:.7mm 2mm .7mm !important;align-self:stretch !important;overflow:hidden !important;}
+.activity-strip{height:18mm !important;min-height:18mm !important;max-height:18mm !important;margin-top:0 !important;padding:.7mm 2mm .7mm !important;align-self:stretch !important;overflow:hidden !important;}
 .activity-content{grid-template-rows:auto 1fr !important;min-height:0 !important;overflow:hidden !important;}
 .activity-content h2{margin:0 0 .2mm !important;font-size:6.5pt !important;line-height:1 !important;}
 .study-fields{height:11mm !important;min-height:11mm !important;margin-top:0 !important;gap:1.5mm !important;align-items:end !important;font-size:5.1pt !important;}
