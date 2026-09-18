@@ -1,0 +1,25 @@
+name: Paged.js P001 Prototype
+on:
+  push:
+    branches: [renderer/pagedjs-p001-prototype]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: production/vivliostyle
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: production/vivliostyle/package-lock.json
+      - run: npm install
+      - run: mkdir -p dist/fonts && cp fonts/KFGQPC-Uthman-Taha-Naskh.woff2 dist/fonts/KFGQPC-Uthman-Taha-Naskh.woff2
+      - run: npm run build:pagedjs:p001:pdf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-P001-PAGEDJS
+          path: production/vivliostyle/dist/QURBATA-J1-P001-PAGEDJS.pdf
