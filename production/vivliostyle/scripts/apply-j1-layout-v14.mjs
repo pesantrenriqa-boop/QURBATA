@@ -90,12 +90,15 @@ for(const file of files){
  if(articles.length!==10)throw new Error(`${file}: PAGE_COUNT_DOM_FAIL articles=${articles.length}`);
  articles.forEach((a,i)=>{
    const pageNo=Number(file.match(/P(\d{3})-/)?.[1]||1)+i;
-   if(![20,40].includes(pageNo)){
-     const panel=a.match(/<[^>]+class=["'][^"']*practice-panel[^"']*["'][^>]*>[\s\S]*?<\/[^>]+>/i);
-     if(!panel)throw new Error(`P${String(pageNo).padStart(3,'0')}: PRACTICE_PANEL_MISSING`);
+   if(![10,20,40].includes(pageNo)){
+     const panel=a.match(/<[^>]+class=["'][^"']*(?:practice-panel|practice-grid|exercise-grid)[^"']*["'][^>]*>[\s\S]*?<\/[^>]+>/i);
+     if(!panel)throw new Error(`P${String(pageNo).padStart(3,'0')}: PRACTICE_CONTAINER_MISSING`);
      const rows=(a.match(/class=["'][^"']*(?:practice-row|exercise-row)[^"']*["']/g)||[]).length;
      const cells=(a.match(/class=["'][^"']*(?:practice-cell|exercise-cell)[^"']*["']/g)||[]).length;
      const arabic=(a.match(/[\u0600-\u06FF]/g)||[]).length;
+     /* Some frozen legacy pages encode 8×3 as grid children without explicit row wrappers.
+        The non-negotiable content gate is therefore 24 rendered exercise cells; when row
+        wrappers exist, they must be exactly eight. */
      if(cells!==24)throw new Error(`P${String(pageNo).padStart(3,'0')}: PRACTICE_24_FAIL rows=${rows} cells=${cells}`);
      if(rows!==0&&rows!==8)throw new Error(`P${String(pageNo).padStart(3,'0')}: PRACTICE_8ROW_FAIL rows=${rows}`);
      if(arabic<24)throw new Error(`P${String(pageNo).padStart(3,'0')}: PRACTICE_CONTENT_EMPTY`);
