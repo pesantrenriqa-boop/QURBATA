@@ -23,8 +23,8 @@ const html=`<!doctype html><html lang="id"><head><meta charset="utf-8"><title>QU
 .plant .ar{font-size:48pt;line-height:1}
 .integrations{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4mm}.card{border:.3mm solid #b8d5df;border-radius:3mm;padding:1.5mm 1.2mm;text-align:center;overflow:hidden;background:#fff}.card:nth-child(1){background:#f6fbf4}.card:nth-child(2){background:#fffaf0}.card:nth-child(3){background:#fff7f3}
 .card b{display:block;font-size:6.2pt;margin-bottom:1.1mm}.card .ar{font-size:15pt;line-height:1.08;margin:.7mm 0 1.2mm}.card small{font-size:5.7pt;line-height:1.12;display:block}
-.practice{display:grid;grid-template-rows:6mm 1fr;border:.4mm solid #70b3d0;border-radius:3.5mm;overflow:hidden;background:#fff}
-.practice-title{display:flex;align-items:center;justify-content:center;padding:0 2mm;font-size:6pt;font-weight:700;background:linear-gradient(90deg,#e9f6fb,#fff8e9);border-bottom:.2mm solid #c4dfe9}
+.practice{display:grid;grid-template-rows:1fr;border:.4mm solid #70b3d0;border-radius:3.5mm;overflow:hidden;background:#fff}
+.practice-title{display:none}
 .practice-title strong{font-size:8pt}.grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(8,1fr);min-height:0}
 .cell{font-family:Uthman,serif;font-size:32pt;line-height:.95;display:flex;align-items:center;justify-content:center;border-top:.2mm solid #c4dfe9;border-left:.2mm solid #c4dfe9;white-space:nowrap;overflow:hidden}
 .footer{position:relative;z-index:1;display:grid;grid-template-columns:15mm 1fr 1fr 1fr 15mm;gap:1.4mm;align-items:start;border:.3mm solid #e2ca8d;border-radius:3mm;padding:2mm 1.8mm 1.2mm;background:#fffdfa;font-size:5.8pt}
@@ -37,7 +37,7 @@ const html=`<!doctype html><html lang="id"><head><meta charset="utf-8"><title>QU
 <div class="card"><b>BI'AH ARABIYAH · Salam</b><div class="ar">السَّلَامُ عَلَيْكُمْ</div><small>Semoga keselamatan tercurah atas kalian.</small></div>
 <div class="card"><b>AKHLAK · Adab Salam</b><div class="ar">أَفْشُوا السَّلَامَ بَيْنَكُمْ</div><small>Sebarkanlah salam di antara kalian.</small></div>
 </section>
-<section class="practice"><div class="practice-title"><span class="ar" style="font-size:16pt;margin-left:2mm">بَ تَ ثَ</span><span>Contoh Latihan</span><strong>LATIHAN TARTIL</strong></div><div class="grid">${cells}</div></section>
+<section class="practice"><div class="grid">${cells}</div></section>
 <footer class="footer"><div class="id">QJ1-P001</div><div class="field"><span>Tanggal</span></div><div class="field"><span>Nilai</span></div><div class="field"><span>TTD</span></div><div class="qr"><img src="${qr}">RIQA OS</div></footer>
 <div class="motto">تَعَلَّمْ — اِعْمَلْ — عَلِّمْ</div></article></body></html>`;
 await fs.mkdir(path.dirname(out),{recursive:true});await fs.writeFile(out,html);
