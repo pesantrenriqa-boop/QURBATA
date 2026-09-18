@@ -1,16 +1,16 @@
 # QURBATA TARTIL — ATURAN PENYUSUNAN BUKU
 
-Status: **FROZEN v1.5.3**
+Status: **FROZEN v1.5.4**
 Effective: 2026-09-17
 Authority: **BOOK COMPOSITION MASTER**
 Scope: penyusunan isi, tipografi latihan, glyph Arab, proporsi halaman, dan layout seluruh Buku QURBATA Tartil
 
-> v1.5.3 menggantikan layout v1.5.2 dan seluruh versi sebelumnya. PDF sebelumnya berstatus AUDIT/OBSOLETE sampai diregenerasi dan lolos visual gate v1.5.3.
+> v1.5.4 menggantikan layout v1.5.3 dan seluruh versi sebelumnya. PDF sebelumnya berstatus AUDIT/OBSOLETE sampai diregenerasi dan lolos visual gate v1.5.4.
 
 # 1. Prinsip utama — BACAAN BESAR DIPERTAHANKAN, RUANG HALAMAN YANG DIPERBAIKI
 Hasil audit visual v1.5.1 menunjukkan ukuran bacaan Tartil sudah mendekati ukuran yang diinginkan. Karena itu koreksi berikutnya **tidak boleh menyelesaikan masalah layout dengan mengecilkan huruf latihan**.
 
-Prinsip resmi v1.5.3:
+Prinsip resmi v1.5.4:
 **pertahankan keterbacaan glyph; perbaiki distribusi tinggi row dan struktur vertikal halaman.**
 
 # 2. Hierarki visual
@@ -53,6 +53,33 @@ Sebelum render, generator harus memeriksa setiap halaman terhadap page register:
 
 ## 3A.2 Visual gate contoh
 Pada audit PDF A5 100%, contoh harus langsung terlihat sebagai tahap lihat/tirukan sebelum latihan, lebih menonjol daripada panel integrasi, memiliki harakat utuh dan breathing room, tidak terpotong, serta tetap hadir setelah koreksi density.
+
+
+# 3B. SOURCE-CONTENT GATE — BLOK ADA TETAPI KOSONG = FAIL
+Audit PDF v1.5.3 membuktikan bahwa keberadaan class/box contoh tidak membuktikan adanya materi contoh. Karena itu v1.5.4 membedakan **struktur** dan **isi**.
+
+Aturan wajib:
+- contoh/penanaman harus bersumber dari materi kompetensi pada Page Register/Master Curriculum, bukan dibuat sebagai box kosong oleh layout;
+- generator wajib memasukkan/menjaga **teks Arab contoh yang nyata** sebelum tahap layout;
+- untuk halaman yang membutuhkan contoh, setelah normalisasi DOM isi teks blok contoh harus memiliki minimal satu karakter Arab (rentang Unicode Arab), bukan hanya label, whitespace, `<br>`, border, atau placeholder;
+- assertion tidak boleh hanya menghitung class `planting`, `intro-pair`, atau `lesson-heading`;
+- bila source halaman belum mempunyai materi contoh, build harus berhenti dengan `EXAMPLE_CONTENT_MISSING` dan menyebut nomor halaman;
+- layout tidak boleh mengarang contoh yang tidak tercatat pada Page Register; jika mapping belum tersedia, mapping Page Register harus diperbaiki dahulu;
+- P001 wajib menjadi sentinel visual/content: contoh kompetensi awal harus benar-benar terlihat sebagai **بَ تَ ثَ** sesuai materi awal; kegagalan P001 otomatis menggagalkan seluruh build;
+- halaman penanaman Kasrah/Dhammah wajib menampilkan contoh perubahan harakat sesuai Page Register, bukan hanya judul kosong;
+- checkpoint/evaluasi mengikuti Page Register dan boleh tidak memiliki blok penanaman hanya jika secara eksplisit ditandai demikian.
+
+## 3B.1 Assertion konten minimum
+Untuk setiap halaman `exampleRequired=true`:
+1. temukan blok contoh yang benar;
+2. ambil `textContent` setelah tag dibersihkan;
+3. normalisasi whitespace;
+4. pastikan terdapat karakter Arab `/[\\u0600-\\u06FF]/`;
+5. pastikan isi bukan hanya label generik;
+6. P001 harus memuat بَ, تَ, ثَ;
+7. jika gagal: **BUILD FAIL — EXAMPLE_CONTENT_MISSING**.
+
+Gate ini harus dijalankan **sebelum PDF render** dan diverifikasi lagi secara visual sesudah render.
 
 # 4. Latihan Tartil — ukuran v1.5.1 dipertahankan sebagai baseline
 Struktur reguler tetap **8 baris × 3 kelompok = 24 kelompok**.
@@ -159,7 +186,8 @@ Generator berikutnya harus:
 # 14. Build assertions
 Sebelum PDF dibuat, pipeline wajib memeriksa:
 - tepat 8×3 pada halaman reguler;
-- contoh/penanaman tersedia sesuai page register, berisi Arab non-kosong, memiliki reserved height, dan tidak collapse/hidden;
+- contoh/penanaman tersedia sesuai page register, memiliki teks Arab nyata non-kosong, reserved height, dan tidak collapse/hidden;
+- P001 sentinel memuat contoh بَ تَ ثَ;
 - font latihan tidak di bawah 30 pt tanpa exception;
 - tepat satu footer resmi;
 - Tanggal/Nilai/TTD ada;
@@ -169,7 +197,7 @@ Sebelum PDF dibuat, pipeline wajib memeriksa:
 - tidak ada metadata teknis tercetak;
 - tidak overflow ke halaman berikutnya.
 
-# 15. Visual audit v1.5.3
+# 15. Visual audit v1.5.4
 Sampel wajib: **P001, P002, P010, P014, P020, P030, P040**.
 
 Pada setiap sampel:
@@ -194,12 +222,12 @@ Pada setiap sampel:
 - **LAYOUT:** FAIL sampai Density + Footer lulus.
 
 # 17. Gate FINAL
-**CURRICULUM PASS → DOMAIN PASS → PAGE REGISTER PASS → CONTENT FREEZE → GLYPH PASS → EXAMPLE PASS → READING-SIZE PASS → DENSITY PASS → FOOTER PASS → LAYOUT PASS → PDF PASS.**
+**CURRICULUM PASS → DOMAIN PASS → PAGE REGISTER PASS → CONTENT FREEZE → SOURCE-CONTENT PASS → GLYPH PASS → EXAMPLE PASS → READING-SIZE PASS → DENSITY PASS → FOOTER PASS → LAYOUT PASS → PDF PASS.**
 
 Satu kegagalan = belum FINAL.
 
 # 18. Changelog
-## v1.5.3 — 2026-09-17
+## v1.5.4 — 2026-09-17
 - Membekukan hasil evaluasi visual v1.5.1 sebagai dasar koreksi.
 - Mempertahankan baseline latihan sekitar 34 pt; koreksi difokuskan pada tinggi row.
 - Menetapkan blank band > ±0,5 row sebagai DENSITY FAIL.
@@ -220,10 +248,18 @@ Satu kegagalan = belum FINAL.
 - Tanggal/Nilai/TTD dan footer proporsional.
 
 
-## v1.5.3 — 2026-09-18
+## v1.5.4 — 2026-09-18
 - Membekukan temuan audit v1.5.2 bahwa contoh/penanaman dapat terdesak atau hilang.
 - Menjadikan contoh/penanaman sebagai reserved layout track yang tidak boleh collapse.
 - Menetapkan tinggi minimum 18 mm dan target 20–24 mm untuk blok contoh reguler.
 - Menetapkan contoh 36–40 pt, minimum 34 pt tanpa exception.
 - Menambahkan assertion berbasis page register: contoh wajib ada, non-kosong, visible, dan berada di dalam article.
 - Menambahkan **EXAMPLE PASS** ke gate FINAL sebelum READING-SIZE dan DENSITY.
+
+
+## v1.5.4 — 2026-09-18
+- Menyatakan v1.5.3 gagal karena blok contoh dapat ada secara struktural tetapi kosong secara isi.
+- Menambahkan SOURCE-CONTENT GATE berbasis teks Arab nyata, bukan keberadaan class.
+- Menetapkan P001 sebagai sentinel: wajib memuat contoh بَ تَ ثَ.
+- Build wajib berhenti dengan EXAMPLE_CONTENT_MISSING bila materi contoh yang diwajibkan kosong.
+- Layout dilarang mengarang materi; sumber contoh harus berasal dari Page Register/Master Curriculum.
