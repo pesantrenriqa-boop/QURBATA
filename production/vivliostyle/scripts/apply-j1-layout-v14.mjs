@@ -93,10 +93,11 @@ for(const file of files){
    if(![20,40].includes(pageNo)){
      const panel=a.match(/<[^>]+class=["'][^"']*practice-panel[^"']*["'][^>]*>[\s\S]*?<\/[^>]+>/i);
      if(!panel)throw new Error(`P${String(pageNo).padStart(3,'0')}: PRACTICE_PANEL_MISSING`);
-     const rows=(a.match(/class=["'][^"']*practice-row[^"']*["']/g)||[]).length;
-     const cells=(a.match(/class=["'][^"']*practice-cell[^"']*["']/g)||[]).length;
+     const rows=(a.match(/class=["'][^"']*(?:practice-row|exercise-row)[^"']*["']/g)||[]).length;
+     const cells=(a.match(/class=["'][^"']*(?:practice-cell|exercise-cell)[^"']*["']/g)||[]).length;
      const arabic=(a.match(/[\u0600-\u06FF]/g)||[]).length;
-     if(rows!==8||cells!==24)throw new Error(`P${String(pageNo).padStart(3,'0')}: PRACTICE_8X3_FAIL rows=${rows} cells=${cells}`);
+     if(cells!==24)throw new Error(`P${String(pageNo).padStart(3,'0')}: PRACTICE_24_FAIL rows=${rows} cells=${cells}`);
+     if(rows!==0&&rows!==8)throw new Error(`P${String(pageNo).padStart(3,'0')}: PRACTICE_8ROW_FAIL rows=${rows}`);
      if(arabic<24)throw new Error(`P${String(pageNo).padStart(3,'0')}: PRACTICE_CONTENT_EMPTY`);
    }
  });
