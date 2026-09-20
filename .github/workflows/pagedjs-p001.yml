@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
+    timeout-minutes: 10
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -14,7 +15,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm install
+          cache: npm
+          cache-dependency-path: production/vivliostyle/package-lock.json
+      - run: npm ci --no-audit --no-fund --prefer-offline
+        timeout-minutes: 5
       - run: mkdir -p dist/fonts && cp fonts/KFGQPC-Uthman-Taha-Naskh.woff2 dist/fonts/KFGQPC-Uthman-Taha-Naskh.woff2
       - run: npm run build:pagedjs:p001:pdf
       - uses: actions/upload-artifact@v4
