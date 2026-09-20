@@ -289,3 +289,14 @@ Untuk P002 dan seterusnya, **layout tidak didesain ulang**. Renderer wajib memak
 
 Gate tambahan:
 **P001 VISUAL MASTER MATCH → CONTENT-SPECIFIC PAGE GATES → PDF PASS.**
+
+
+## v1.6.1 — 2026-09-20 — KOREKSI WAJIB SEBELUM PRODUKSI LANJUT
+
+Berdasarkan audit visual PDF P001–P010, master P001 v1.6.0 tetap menjadi basis dan seluruh elemen yang tidak disebut di bawah tetap **FROZEN**. Tiga koreksi berikut wajib diterapkan pada renderer sebelum PDF produksi berikutnya:
+
+1. **Kompaksi area atas.** Header, blok contoh/penanaman, dan panel integrasi Tahfidz–Bi'ah Arabiyah–Akhlak harus ditata lebih hemat tinggi tanpa mengurangi keterbacaan. Ruang yang diperoleh dialihkan ke area latihan Tartil sehingga latihan menjadi lebih besar/dominan.
+2. **Safe area glyph latihan.** Huruf/harakat latihan tidak boleh menyentuh, tertutup, atau terpotong garis kotak/grid. Setiap cell wajib memiliki ruang aman vertikal dan horizontal; line-height, alignment, padding, dan tinggi row harus diuji pada glyph berharakat. **GLYPH PASS gagal bila satu huruf/harakat pun bersinggungan dengan border.**
+3. **Logo QURBATA.** Mark QURBATA di header wajib memakai bentuk QOf/Q yang **berlubang (counter terbuka/terlihat)** sesuai identitas logo yang disetujui; bentuk dengan lubang tertutup/terisi dilarang.
+
+Setelah ketiga koreksi diterapkan, halaman P001 menjadi sentinel audit ulang. Produksi P001–P010 hanya dilanjutkan setelah sentinel memenuhi: **HEADER-DENSITY PASS → LOGO PASS → GLYPH-SAFE PASS → LAYOUT PASS → PDF PASS**.
