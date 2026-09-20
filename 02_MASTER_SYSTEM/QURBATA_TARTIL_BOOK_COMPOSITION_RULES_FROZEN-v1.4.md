@@ -263,3 +263,29 @@ Satu kegagalan = belum FINAL.
 - Menetapkan P001 sebagai sentinel: wajib memuat contoh بَ تَ ثَ.
 - Build wajib berhenti dengan EXAMPLE_CONTENT_MISSING bila materi contoh yang diwajibkan kosong.
 - Layout dilarang mengarang materi; sumber contoh harus berasal dari Page Register/Master Curriculum.
+
+
+## v1.6.0 — 2026-09-20 — P001 PAGED.JS VISUAL MASTER FROZEN
+
+Status: **APPROVED / FROZEN**  
+Approved reference: **QURBATA Jilid 1 P001 — Paged.js Build #21**  
+Reference commit: `13e3c0cc3805b52f45076fcf918c2a19c5efa982`
+
+P001 Build #21 ditetapkan sebagai **master visual produksi** untuk halaman reguler Jilid 1. Proporsi yang telah disetujui tidak boleh diubah ketika memproduksi halaman berikutnya.
+
+Komponen yang dibekukan:
+- header satu baris: logo QURBATA + wordmark QURBATA;
+- sublabel kecil: `Quran · Bahasa Arab · Tahfidz · Akhlak`;
+- badge Jilid dan nomor halaman;
+- proporsi header, margin, frame, dan ornamen;
+- blok contoh/penanaman;
+- panel integrasi Tahfidz–Bahasa Arab–Akhlak;
+- area latihan Tartil **8 baris × 3 kelompok**;
+- font Arab **KFGQPC Uthman Taha** dan skala visual yang telah lolos P001;
+- footer Tanggal–Nilai–TTD, QR/RIQA OS, motto, serta jarak vertikalnya;
+- distribusi ruang halaman dan keseluruhan komposisi A5.
+
+Untuk P002 dan seterusnya, **layout tidak didesain ulang**. Renderer wajib memakai master P001 ini dan hanya mengganti konten yang ditentukan oleh Master Curriculum, Page Register, dan Content Freeze halaman terkait. Perubahan layout master memerlukan audit visual baru dan persetujuan eksplisit.
+
+Gate tambahan:
+**P001 VISUAL MASTER MATCH → CONTENT-SPECIFIC PAGE GATES → PDF PASS.**
