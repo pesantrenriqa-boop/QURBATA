@@ -8,6 +8,7 @@
     "build:pagedjs:p001:pdf": "npm run build:pagedjs:p001:html && pagedjs-cli dist/QURBATA-J1-P001-PAGEDJS.html -o dist/QURBATA-J1-P001-PAGEDJS.pdf --browserArgs '--no-sandbox,--disable-setuid-sandbox'"
   },
   "dependencies": {
-    "pagedjs-cli": "^0.4.3"
+    "pagedjs-cli": "^0.4.3",
+    "qrcode": "^1.5.4"
   }
 }
