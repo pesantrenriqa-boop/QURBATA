@@ -1,28 +1,13 @@
 {
-  "name": "qurbata-book-production",
+  "name": "qurbata-pagedjs-p001-prototype",
   "version": "0.1.0",
   "private": true,
-  "description": "Pipeline buku QURBATA — renderer Vivliostyle produksi + prototipe Paged.js",
+  "description": "Isolated Paged.js renderer for QURBATA P001 prototype",
   "scripts": {
-    "build:html": "node scripts/build-book.mjs",
-    "build:pdf": "npm run build:html && vivliostyle build dist/index.html -o dist/QURBATA-JILID-1-PILOT.pdf",
-    "build:p001-p010:html": "node scripts/build-p001-p010-from-frozen.mjs && node scripts/fix-p001-p010-variety.mjs",
-    "build:p001-p010:pdf": "npm run build:p001-p010:html && mkdir -p dist/fonts && cp fonts/KFGQPC-Uthman-Taha-Naskh.woff2 dist/fonts/KFGQPC-Uthman-Taha-Naskh.woff2 && vivliostyle build dist/QURBATA-J1-P001-P010-AUDIT.html -o dist/QURBATA-J1-P001-P010-AUDIT.pdf",
-    "build:p011-p020:html": "node scripts/build-p011-p020-from-frozen.mjs && node scripts/fix-p011-p020-layout.mjs",
-    "build:p011-p020:pdf": "npm run build:p011-p020:html && mkdir -p dist/fonts && cp fonts/KFGQPC-Uthman-Taha-Naskh.woff2 dist/fonts/KFGQPC-Uthman-Taha-Naskh.woff2 && vivliostyle build dist/QURBATA-J1-P011-P020-AUDIT.html -o dist/QURBATA-J1-P011-P020-AUDIT.pdf",
-    "build:p021-p030:html": "node scripts/build-p021-p030-from-frozen.mjs && node scripts/fix-p021-p030-meaningful.mjs",
-    "build:p021-p030:pdf": "npm run build:p021-p030:html && mkdir -p dist/fonts && cp fonts/KFGQPC-Uthman-Taha-Naskh.woff2 dist/fonts/KFGQPC-Uthman-Taha-Naskh.woff2 && vivliostyle build dist/QURBATA-J1-P021-P030-AUDIT.html -o dist/QURBATA-J1-P021-P030-AUDIT.pdf",
-    "build:p031-p040:html": "node scripts/build-p031-p040-from-frozen.mjs",
-    "build:p031-p040:pdf": "npm run build:p031-p040:html && mkdir -p dist/fonts && cp fonts/KFGQPC-Uthman-Taha-Naskh.woff2 dist/fonts/KFGQPC-Uthman-Taha-Naskh.woff2 && vivliostyle build dist/QURBATA-J1-P031-P040-AUDIT.html -o dist/QURBATA-J1-P031-P040-AUDIT.pdf",
-    "build:j1-full:pdf": "npm run build:p001-p010:html && npm run build:p011-p020:html && npm run build:p021-p030:html && npm run build:p031-p040:html && node scripts/apply-j1-integration-v13.mjs && node scripts/fix-p011-p020-layout.mjs && node scripts/apply-j1-layout-v14.mjs && mkdir -p dist/fonts && cp fonts/KFGQPC-Uthman-Taha-Naskh.woff2 dist/fonts/KFGQPC-Uthman-Taha-Naskh.woff2 && vivliostyle build dist/QURBATA-J1-P001-P010-AUDIT.html -o dist/QURBATA-J1-P001-P010-AUDIT.pdf && vivliostyle build dist/QURBATA-J1-P011-P020-AUDIT.html -o dist/QURBATA-J1-P011-P020-AUDIT.pdf && vivliostyle build dist/QURBATA-J1-P021-P030-AUDIT.html -o dist/QURBATA-J1-P021-P030-AUDIT.pdf && vivliostyle build dist/QURBATA-J1-P031-P040-AUDIT.html -o dist/QURBATA-J1-P031-P040-AUDIT.pdf && node scripts/merge-j1-full-audit.mjs",
-    "build": "npm run build:pdf",
     "build:pagedjs:p001:html": "node scripts/build-pagedjs-p001.mjs",
     "build:pagedjs:p001:pdf": "npm run build:pagedjs:p001:html && pagedjs-cli dist/QURBATA-J1-P001-PAGEDJS.html -o dist/QURBATA-J1-P001-PAGEDJS.pdf --browserArgs '--no-sandbox,--disable-setuid-sandbox'"
   },
   "dependencies": {
-    "@vivliostyle/cli": "^10.1.0",
-    "pdf-lib": "^1.17.1",
-    "qrcode": "^1.5.4",
     "pagedjs-cli": "^0.4.3"
   }
 }
