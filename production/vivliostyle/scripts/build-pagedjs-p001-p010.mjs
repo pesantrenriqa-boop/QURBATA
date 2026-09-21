@@ -24,7 +24,7 @@ const logo="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABYCAYAAABI8oFvAA
 const qr=await QRCode.toDataURL("https://rumahilmualquran.com",{margin:0,width:128});
 const page=spec=>{const exercises=exercisesFor(spec.n);if(exercises.length!==24)throw new Error("24-cell gate failed");const cells=exercises.map(x=>`<div class="cell${/[جحخعغ]/.test(x)?" low-descender":""}" dir="rtl">${x}</div>`).join("");return `<article class="page">
 <header class="header"><div class="logo"><div class="logo-main"><img class="logo-mark" src="../assets/qurbata-logo.svg" alt=""><span class="logo-name">QURBATA</span></div><small>Quran · Bahasa Arab · Tahfidz · Akhlak</small></div><h1></h1><div class="page-no">${spec.n}</div></header>
-<section class="plant"><div class="ar">${spec.a}</div></section>
+<section class="plant${spec.n===10?" evaluation-title":""}"><div class="ar">${spec.a}</div></section>
 <section class="integrations">
 <div class="card"><b>${spec.tf[0]}</b><div class="ar">${spec.tf[1]}</div><small>${spec.tf[2]}</small></div>
 <div class="card"><b>${spec.ba[0]}</b><div class="ar">${spec.ba[1]}</div><small>${spec.ba[2]}</small></div>
@@ -44,7 +44,7 @@ const html=`<!doctype html><html lang="id"><head><meta charset="utf-8"><title>QU
 .logo{display:flex;flex-direction:column;justify-content:center;min-width:0;line-height:1}.logo-main{display:flex;align-items:center;gap:1.2mm;white-space:nowrap}.logo-mark{display:block;width:5.8mm;height:6mm;object-fit:contain}.logo-name{font-family:Georgia,serif;font-size:8.5pt;font-weight:700;letter-spacing:.12mm;color:#19394b}.logo small{display:block;font-size:3.8pt;line-height:1;margin-top:.8mm;font-weight:600;white-space:nowrap;color:#344b55}
 .header h1{display:block;font-family:Georgia,serif;font-style:italic;font-weight:400;font-size:5.5pt;color:#7f7b72;text-align:right;margin:0;padding-right:3mm}.header h1:before{content:"Langkah Kecil";display:block}.header h1{font-size:0}.header h1:after{content:"Menuju Generasi Qur’ani";font-size:5.5pt}.page-no{text-align:center;border:.35mm solid #c69b2d;border-radius:45% 45% 48% 48%;width:9.5mm;height:9.5mm;line-height:9mm;margin:auto;font-size:9pt;font-weight:700;background:#fffdf7;position:relative}.page-no:before{content:"Jilid 1";position:absolute;top:-3.2mm;left:-1.7mm;width:13mm;font-size:4pt;line-height:4mm}
 .plant{display:flex;align-items:center;justify-content:center;border:.4mm solid #77b7d2;border-radius:4mm;background:linear-gradient(90deg,#f7fcff,#eef8fc,#f7fcff);box-shadow:inset 0 0 0 .5mm #fff}
-.plant .ar{font-size:44pt;line-height:1}
+.plant .ar{font-size:44pt;line-height:1}\n.plant.evaluation-title .ar{font-size:33pt;line-height:1.05}
 .integrations{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4mm}.card{border:.3mm solid #b8d5df;border-radius:3mm;padding:.8mm 1.1mm;text-align:center;overflow:hidden;background:#fff;display:flex;flex-direction:column;justify-content:center}.card:nth-child(1){background:#f6fbf4}.card:nth-child(2){background:#fffaf0}.card:nth-child(3){background:#fff7f3}
 .card b{display:block;font-size:5.8pt;margin-bottom:.6mm}.card .ar{font-size:13.5pt;line-height:1.12;margin:.4mm 0 .6mm}.card small{font-size:5.2pt;line-height:1.08;display:block}
 .practice{display:grid;grid-template-rows:1fr;border:.4mm solid #70b3d0;border-radius:3.5mm;overflow:hidden;background:#fff}
