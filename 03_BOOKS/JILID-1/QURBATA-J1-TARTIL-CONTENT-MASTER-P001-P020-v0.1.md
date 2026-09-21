@@ -22,16 +22,16 @@ Dokumen ini adalah tahap kurasi isi sebelum produksi PDF. Urutan kompetensi Tart
 
 | Page | Kompetensi baru | Kandidat WORD legal | Gloss audit | Status |
 |---|---|---|---|---|
-| P001 | بَ تَ ثَ | — | Belum dipaksakan; stok huruf belum memadai | HOLD |
-| P002 | ءَ أَ | — | Belum dipaksakan | HOLD |
-| P003 | جَ حَ خَ | بَحَثَ | mencari/meneliti | WORD |
-| P004 | دَ ذَ رَ زَ | — | Kurasi lanjutan | REVIEW |
-| P005 | سَ شَ | دَرَسَ | belajar/telah belajar | WORD |
+| P001 | بَ تَ ثَ | — | Belum ada WORD 3 huruf yang aman dengan whitelist ini | HOLD |
+| P002 | ءَ أَ | — | Belum ada WORD 3 huruf yang aman dengan whitelist ini | HOLD |
+| P003 | جَ حَ خَ | بَحَثَ | mencari / meneliti | WORD |
+| P004 | دَ ذَ رَ زَ | — | Tidak dipaksakan; lanjut memakai WORD legal terdahulu bila perlu | HOLD |
+| P005 | سَ شَ | دَرَسَ ؛ جَلَسَ | belajar; duduk | WORD |
 | P006 | صَ ضَ | صَبَرَ ؛ ضَرَبَ ؛ حَصَدَ | bersabar; memukul; memanen | WORD |
-| P007 | طَ ظَ | طَلَبَ ؛ نَظَرَ ؛ ظَهَرَ | mencari/meminta; melihat; tampak | WORD |
-| P008 | عَ غَ | عَمَلَ ؛ عَلَمَ ؛ غَفَرَ | berbuat/bekerja; mengetahui/menandai (perlu audit bentuk); mengampuni | REVIEW |
-| P009 | فَ قَ | فَتَحَ ؛ قَرَأَ ؛ فَرَحَ | membuka; membaca; bergembira | WORD |
-| P010 | Evaluasi Fathah I | Kandidat sah P003–P009 | Review seluruh Fathah legal | CURATE |
+| P007 | طَ ظَ | طَلَبَ ؛ نَظَرَ ؛ ظَهَرَ | meminta/mencari; melihat; tampak/muncul | WORD |
+| P008 | عَ غَ | غَفَرَ | mengampuni/menutupi | WORD |
+| P009 | فَ قَ | فَتَحَ ؛ قَرَأَ | membuka; membaca | WORD |
+| P010 | Evaluasi Fathah I | بَحَثَ ؛ دَرَسَ ؛ جَلَسَ ؛ صَبَرَ ؛ ضَرَبَ ؛ حَصَدَ ؛ طَلَبَ ؛ نَظَرَ ؛ ظَهَرَ ؛ غَفَرَ ؛ فَتَحَ ؛ قَرَأَ | Bank WORD terkurasi P001–P009 | CURATED |
 | P011 | كَ لَ | كَتَبَ ؛ أَكَلَ ؛ مَلَكَ | menulis; makan; memiliki/menguasai | WORD |
 | P012 | مَ نَ | مَنَعَ ؛ نَزَلَ ؛ عَمَلَ | mencegah; turun; bekerja | WORD |
 | P013 | هَ وَ يَ | هَدَى* ؛ وَجَدَ | memberi petunjuk*; menemukan | REVIEW |
@@ -44,6 +44,29 @@ Dokumen ini adalah tahap kurasi isi sebelum produksi PDF. Urutan kompetensi Tart
 | P020 | Checkpoint Fathah + Kasrah | — | Curated checkpoint; bukan random | CURATE |
 
 \* Kandidat yang memerlukan bentuk/fitur di luar whitelist halaman harus ditolak saat audit final. Entri REVIEW bukan izin produksi.
+
+## Curated WORD bank P001–P010
+
+| First legal page | WORD | Gloss ID | Catatan |
+|---|---|---|---|
+| P003 | بَحَثَ | mencari / meneliti | Fathah-only; legal mulai P003 |
+| P005 | دَرَسَ | belajar | Fathah-only |
+| P005 | جَلَسَ | duduk | Fathah-only |
+| P006 | صَبَرَ | bersabar | Fathah-only |
+| P006 | ضَرَبَ | memukul | Fathah-only |
+| P006 | حَصَدَ | memanen | Fathah-only |
+| P007 | طَلَبَ | meminta / mencari | Fathah-only |
+| P007 | نَظَرَ | melihat / memandang | Fathah-only |
+| P007 | ظَهَرَ | tampak / muncul | Fathah-only |
+| P008 | غَفَرَ | mengampuni / menutupi | Fathah-only |
+| P009 | فَتَحَ | membuka | Fathah-only |
+| P009 | قَرَأَ | membaca | Fathah-only |
+
+### Deliberate exclusions
+- `عَمَلَ` ditolak: bentuk verba bakunya **عَمِلَ**, sehingga `عَمَلَ` tidak boleh dipakai hanya demi pola fathah.
+- `فَرَحَ` ditolak sebagai verba “bergembira”: bentuk verba yang dimaksud adalah **فَرِحَ**.
+- Kata yang membutuhkan huruf yang belum dikenalkan pada halaman terkait tidak boleh dimajukan.
+- P001, P002, dan P004 tidak dipaksa memiliki WORD baru. Latihan 3 huruf pada halaman tersebut hanya boleh memakai WORD yang sudah legal; jika belum ada, komposisi latihan memakai kelompok 2 huruf.
 
 ## Audit fields per final word
 Setiap entri final wajib dicatat sebagai:
