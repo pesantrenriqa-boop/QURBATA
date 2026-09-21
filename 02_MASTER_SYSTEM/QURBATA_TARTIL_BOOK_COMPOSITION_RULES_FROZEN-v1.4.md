@@ -349,3 +349,40 @@ Build #31 ditetapkan sebagai baseline baku untuk kelanjutan produksi Jilid 1. Ke
    - P001–P010 Build #31 menjadi **visual/content sentinel** untuk P011–P040.
    - Produksi berikut tidak boleh mengubah komponen frozen di atas secara diam-diam.
    - Setiap blok berikut wajib melewati: `REGISTER PASS → CONTENT PASS → GLYPH-SAFE PASS → LAYOUT PASS → PDF PASS`.
+
+
+---
+
+## REVISION v1.6.3 — OPEN PRACTICE FIELD + SEMANTICALLY INFORMED GROUPING
+
+**Effective:** 2026-09-21  
+**Status:** FROZEN — supersedes any earlier rule that requires visible internal cell borders in the Tartil practice area.
+
+### 1. Practice field without internal boxes
+- Area latihan tetap memiliki batas luar sebagai pengendali komposisi halaman.
+- **Garis kotak/grid di antara kelompok latihan dihilangkan.**
+- Struktur pedagogis **8 baris × 3 kelompok = 24 kelompok** tetap berlaku sebagai grid tak terlihat untuk alignment dan distribusi.
+- Jarak putih, baseline, dan alignment menjadi pemisah antarkelompok; bukan garis kotak.
+- Penghilangan garis internal tidak boleh menyebabkan kelompok huruf saling berhimpitan atau mengurangi safe-area glyph.
+
+### 2. Semantic-first selection for 2–3 letter groups
+- Pemilihan kelompok huruf **tidak boleh hanya bersifat algoritmik/acak**.
+- Setelah whitelist kompetensi halaman diterapkan, generator/editor wajib terlebih dahulu mencari susunan 2–3 huruf yang:
+  1. membentuk kata Arab/Qurani yang sah bila seluruh huruf dan harakatnya sudah legal pada tahap tersebut;
+  2. bila kata penuh belum mungkin, **mendekati pola atau potongan bermakna** yang wajar dalam bahasa Arab/Qur'an tanpa mengklaimnya sebagai kata penuh;
+  3. baru menggunakan kombinasi latihan fonetik netral untuk slot yang tersisa.
+- Harakat pada kelompok tidak dibubuhkan secara sembarang untuk mengejar variasi visual. **Pilihan harakat mempertimbangkan bentuk leksikal/makna** sejauh tidak melompati kompetensi yang belum diajarkan.
+- Prinsip ini berlaku terutama pada kelompok 3 huruf; kelompok 2 huruf tetap boleh berfungsi sebagai latihan diskriminasi bunyi.
+- **Makna tidak boleh dipaksakan.** Jika kata bermakna memerlukan huruf, harakat, sambungan, sukun, tasydid, mad, tanwin, atau fitur yang belum legal, bentuk tersebut tidak boleh dimasukkan.
+- Urutan prioritas produksi: `CURRICULUM LEGALITY → SEMANTIC VALUE → PHONETIC VARIETY → VISUAL DISTRIBUTION`.
+
+### 3. Semantic audit metadata
+Setiap halaman produksi mulai revisi ini harus dapat diaudit dengan tiga kelas kelompok:
+- `WORD` = kata Arab/Qurani yang sah;
+- `NEAR-SEMANTIC` = susunan yang mendekati pola/potongan bermakna tetapi tidak diklaim sebagai kata;
+- `PHONETIC` = kombinasi murni untuk latihan bunyi.
+
+Generator boleh tetap menghasilkan 24 kelompok, tetapi daftar akhir harus melewati **SEMANTIC-GROUP PASS** sebelum PDF diberi status FINAL.
+
+### 4. Updated production gate
+`REGISTER PASS → CONTENT PASS → SEMANTIC-GROUP PASS → GLYPH-SAFE PASS → OPEN-GRID PASS → LAYOUT PASS → PDF PASS`.
