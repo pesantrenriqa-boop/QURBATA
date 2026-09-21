@@ -436,6 +436,35 @@ This gives 18 meaningful checkpoint WORD slots with broad Fathah/Kasrah coverage
 ### Removed / held from final core
 Any candidate whose exact lemma/vowel pattern has not yet been independently confirmed remains outside the final core. Discovery lists above are retained for provenance but do not authorize PDF use.
 
+
+## Verification pass v0.9 — second lexical check and source-of-truth cleanup
+
+### Newly hard-confirmed Quranic forms
+- `تَبِعَ` — Quranic Form I, “to follow”; legal anchor for P014 because kasrah is on بِ.
+- `غَضِبَ` — Quranic Form I, “to be angry”; legal from P017 because ضِ is introduced there.
+- Root `ن د م` is Quranic, but the Corpus occurrences are noun/active-participle forms, not the exact Form-I perfect `نَدِمَ`. Therefore `نَدِمَ` remains FUSHA, not QURAN-CONFIRMED.
+- Forms that require shaddah such as `ظَنَّ` are excluded from J1 at this stage even though Quranic.
+- Nominals with sukun such as `عِنْد` are excluded until sukun is legal.
+
+### P014–P018 safe anchors after second check
+- P014: `تَبِعَ`.
+- P015: keep `نَدِمَ` only as FUSHA pending dictionary tag; do not label Quranic.
+- P016: `فَرِحَ، شَرِبَ، خَسِرَ، رَحِمَ، حَسِبَ`.
+- P017: `غَضِبَ، مَرِضَ، نَشِطَ، عَطِشَ`.
+- P018: `قَبِلَ، عَرِفَ، عَجِبَ، خَطِفَ، وَسِعَ`.
+- P019: full cumulative mixed-vowel inventory; prioritize Quran-confirmed forms first.
+
+### P019 final-priority set
+`تَبِعَ، فَرِحَ، شَرِبَ، خَسِرَ، رَحِمَ، حَسِبَ، غَضِبَ، وَسِعَ، عَلِمَ، عَمِلَ، سَمِعَ، شَهِدَ، وَرِثَ، حَفِظَ، قَبِلَ، عَرِفَ، فَهِمَ، نَدِمَ`
+
+Labels:
+- QURAN-CONFIRMED where Corpus explicitly confirms the exact lemma/pattern.
+- FUSHA-VERIFIED where classical/modern lexicon confirms the lemma but Corpus does not attest that exact perfect form.
+- No candidate may be labeled Quranic merely because its root occurs in the Quran.
+
+### Content-master cleanup rule
+Earlier discovery tables remain historical research notes only. **The latest verification section has precedence** whenever an earlier candidate/status conflicts with it. Before PDF production, a clean v1.0 frozen file must be generated containing only final page allocations, without superseded discovery pools.
+
 ## Audit fields per final word
 Setiap entri final wajib dicatat sebagai:
 `PAGE | ARABIC | ROOT/LEMMA | GLOSS_ID | QURAN/FUSHA | LEGAL_FEATURES | VERIFIED`
