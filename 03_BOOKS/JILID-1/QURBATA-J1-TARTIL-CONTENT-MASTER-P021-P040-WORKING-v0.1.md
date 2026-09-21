@@ -116,3 +116,25 @@ The generator must never transform a known Fathah/Kasrah word by swapping a vowe
 
 ## Production gate
 REGISTER PASS → DHAMMAH WORD-BANK PASS → FIRST-LEGAL-DHAMMAH PASS → MEANING PASS → 24-GROUP ALLOCATION PASS → HA-TWO-HOLE PASS → P040 CHECKPOINT PASS → CONTENT FREEZE → PDF.
+
+
+## P021-P027 allocation gate v0.3
+
+Normal page = 24 groups. Slots 01-06 are transition/2-letter planting groups; slots 07-24 are lexical WORD or previously verified cumulative WORD. Three-letter pseudo-words are forbidden.
+
+- P021 planting: بِ→بُ ; تِ→تُ ; ثِ→ثُ ; جِ→جُ ; بُ تُ ; ثُ جُ. Remaining slots use only verified cumulative WORD plus separately verified Dhammah WORD.
+- P022 planting: حِ→حُ ; خِ→خُ ; دِ→دُ ; ذِ→ذُ ; حُ خُ ; دُ ذُ. No forced lexical item.
+- P023 planting: رِ→رُ ; زِ→زُ ; سِ→سُ ; شِ→شُ ; رُ زُ ; سُ شُ. Candidate Dhammah anchors remain حَسُنَ / كَرُمَ / قَرُبَ pending exact source-status tagging.
+- P024 planting: صِ→صُ ; ضِ→ضُ ; طِ→طُ ; ظِ→ظُ ; صُ ضُ ; طُ ظُ. No mechanical vowel substitution.
+- P025 planting: عِ→عُ ; غِ→غُ ; فِ→فُ ; قِ→قُ ; عُ غُ ; فُ قُ. Candidate anchors remain ضَعُفَ / بَعُدَ / ثَقُلَ / صَغُرَ pending exact source-status tagging.
+- P026 planting: كِ→كُ ; لِ→لُ ; مِ→مُ ; نِ→نُ ; كُ لُ ; مُ نُ. Admit new words only after exact-form verification.
+- P027 planting: هِ→هُ ; وِ→وُ ; يِ→يُ ; ءِ→ءُ ; هُ وُ ; يُ ءُ. Detached هُ is a mandatory two-hole glyph sentinel.
+
+### Correction carried forward
+كَبُرَ is evaluated by the actual Dhammah-bearing letter بُ, therefore its curriculum gate is P021, not P026. It remains blocked from FINAL allocation until exact lexical source status is recorded.
+
+### Search status
+A targeted web-index search of Quranic Arabic Corpus returned no usable indexed hits for the requested exact فَعُلَ forms in this pass. Therefore no new candidate is promoted to QURAN-CONFIRMED by this revision. This is deliberately conservative.
+
+### Freeze condition
+P021-P027 may be frozen only after every three-letter Dhammah item has: exact spelling, exact harakat, Indonesian gloss, source-status, and first-legal-page PASS.
