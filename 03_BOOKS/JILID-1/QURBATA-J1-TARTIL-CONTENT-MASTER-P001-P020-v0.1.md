@@ -68,6 +68,36 @@ Dokumen ini adalah tahap kurasi isi sebelum produksi PDF. Urutan kompetensi Tart
 - Kata yang membutuhkan huruf yang belum dikenalkan pada halaman terkait tidak boleh dimajukan.
 - P001, P002, dan P004 tidak dipaksa memiliki WORD baru. Latihan 3 huruf pada halaman tersebut hanya boleh memakai WORD yang sudah legal; jika belum ada, komposisi latihan memakai kelompok 2 huruf.
 
+
+## Full-page allocation rule P001–P010
+
+Untuk memenuhi setiap halaman tanpa kata palsu:
+- **Baris 1–2:** kelompok 2 huruf untuk pengenalan/diskriminasi kompetensi baru.
+- **Baris 3–8:** 18 slot kelompok 3 huruf. Setiap slot wajib `WORD`.
+- WORD bersifat **kumulatif**: setelah sebuah kata legal, kata itu boleh dipakai lagi pada halaman berikutnya.
+- Jika jumlah WORD unik belum mencapai 18, kata sah boleh diulang dengan distribusi seimbang. Dilarang mengisi kekurangan dengan kombinasi tak bermakna.
+- Halaman sebelum WORD pertama tersedia (P001–P002) memakai kelompok 2 huruf pada seluruh slot; tidak ada 3-huruf palsu.
+
+### Allocation P001–P010
+
+| Page | 3-letter WORD pool yang legal pada halaman | Kebijakan 18 slot WORD |
+|---|---|---|
+| P001 | — | 24 slot = 2 huruf; tidak ada 3-huruf |
+| P002 | — | 24 slot = 2 huruf; tidak ada 3-huruf |
+| P003 | بَحَثَ | ulang terkontrol بَحَثَ pada slot WORD |
+| P004 | بَحَثَ | ulang terkontrol; P004 fokus diskriminasi huruf baru pada slot 2-huruf |
+| P005 | بَحَثَ، دَرَسَ، جَلَسَ | rotasi 3 WORD × 6 |
+| P006 | بَحَثَ، دَرَسَ، جَلَسَ، صَبَرَ، ضَرَبَ، حَصَدَ | rotasi 6 WORD × 3 |
+| P007 | بَحَثَ، دَرَسَ، جَلَسَ، صَبَرَ، ضَرَبَ، حَصَدَ، طَلَبَ، نَظَرَ، ظَهَرَ | rotasi 9 WORD × 2 |
+| P008 | بَحَثَ، دَرَسَ، جَلَسَ، صَبَرَ، ضَرَبَ، حَصَدَ، طَلَبَ، نَظَرَ، ظَهَرَ، غَفَرَ | 10 WORD; 8 diulang terkontrol untuk 18 slot |
+| P009 | بَحَثَ، دَرَسَ، جَلَسَ، صَبَرَ، ضَرَبَ، حَصَدَ، طَلَبَ، نَظَرَ، ظَهَرَ، غَفَرَ، فَتَحَ، قَرَأَ، فَطَرَ | 13 WORD; 5 diulang terkontrol untuk 18 slot |
+| P010 | seluruh bank P003–P009 | checkpoint curated; sebar seluruh WORD dan ulang maksimal seperlunya |
+
+### Additional verified candidates
+- `فَطَرَ` — menciptakan/memulai penciptaan; legal mulai P009 dan Qurani.
+- `تَفَثَ` **DITOLAK** untuk latihan: Quranic Corpus mencatat lemma/noun `تَفَث`, bukan bentuk latihan `تَفَثَ`; kita tidak menambahkan fathah akhir untuk mengejar pola.
+- Bentuk seperti `فَتْح`, `قَرْح`, `فَتِيل` tidak masuk tahap Fathah-only karena membutuhkan sukun/kasrah/mad yang belum legal.
+
 ## Audit fields per final word
 Setiap entri final wajib dicatat sebagai:
 `PAGE | ARABIC | ROOT/LEMMA | GLOSS_ID | QURAN/FUSHA | LEGAL_FEATURES | VERIFIED`
