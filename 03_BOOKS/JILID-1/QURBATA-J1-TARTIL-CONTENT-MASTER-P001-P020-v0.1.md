@@ -98,6 +98,39 @@ Untuk memenuhi setiap halaman tanpa kata palsu:
 - `تَفَثَ` **DITOLAK** untuk latihan: Quranic Corpus mencatat lemma/noun `تَفَث`, bukan bentuk latihan `تَفَثَ`; kita tidak menambahkan fathah akhir untuk mengejar pola.
 - Bentuk seperti `فَتْح`, `قَرْح`, `فَتِيل` tidak masuk tahap Fathah-only karena membutuhkan sukun/kasrah/mad yang belum legal.
 
+
+## Deep lexical pass v0.2 — strict first-legal-page correction
+
+Audit ini memperketat syarat: sebuah WORD baru legal hanya jika **setiap hurufnya sudah diperkenalkan** pada page tersebut dan **setiap harakat yang tercetak sudah legal**. Temuan lama yang memakai huruf masa depan dipindahkan ke first-legal page yang benar.
+
+| First legal page | WORD bank (Fathah-only) | Gloss ringkas |
+|---|---|---|
+| P001 | — | belum tersedia WORD aman |
+| P002 | — | belum tersedia WORD aman |
+| P003 | بَحَثَ | mencari/meneliti |
+| P004 | جَحَدَ، حَذَرَ | mengingkari; berhati-hati/takut |
+| P005 | دَرَسَ، سَجَدَ، حَسَدَ، حَبَسَ، حَرَسَ | belajar; bersujud; dengki; menahan; menjaga |
+| P006 | صَبَرَ، ضَرَبَ، حَصَدَ، رَصَدَ | bersabar; memukul; memanen; mengawasi/mengintai |
+| P007 | بَسَطَ، شَطَرَ | membentangkan; membelah/menuju separuh |
+| P008 | عَبَدَ، رَجَعَ، غَدَرَ، عَرَضَ، غَضَبَ، عَجَزَ، عَبَرَ، عَثَرَ، شَعَرَ، سَحَرَ | menyembah; kembali; berkhianat; menampilkan/menawarkan; marah; lemah/tidak mampu; menyeberang; tersandung/menemukan; mengetahui/merasakan; menyihir |
+| P009 | فَتَحَ، قَرَأَ، فَطَرَ، رَفَعَ، دَفَعَ، فَرَضَ، فَرَقَ، قَطَعَ، قَعَدَ، قَبَضَ، قَدَرَ، قَرَعَ | membuka; membaca; menciptakan; mengangkat; menolak/mendorong; menetapkan; memisahkan; memotong; duduk; menggenggam; menentukan/mengukur; mengetuk |
+
+### Corrections from earlier pass
+- `طَلَبَ` dipindahkan: **ل** baru legal P011.
+- `نَظَرَ` dipindahkan: **ن** baru legal P012.
+- `ظَهَرَ` dipindahkan: **ه** baru legal P013.
+- `جَلَسَ` dipindahkan: **ل** baru legal P011.
+- Dengan demikian allocation lama yang menaruh bentuk-bentuk tersebut di P005/P007 **SUPERSEDED** oleh tabel strict-first-legal-page ini.
+
+### Cumulative fill policy
+Mulai P003, semua WORD pada page sebelumnya tetap tersedia secara kumulatif. Target 18 slot WORD dipenuhi dari bank legal kumulatif; pengulangan hanya digunakan setelah seluruh WORD unik legal pada page itu terpakai. P001–P002 tetap tanpa 3-huruf palsu.
+
+### Verification notes
+- Bentuk Qurani `فَتَحَ` terkonfirmasi sebagai Form I pada Quranic Arabic Corpus.
+- Bentuk Qurani `فَطَرَ` terkonfirmasi sebagai Form I pada Quranic Arabic Corpus.
+- `نَظَرَ` memang Qurani, tetapi secara urutan buku baru legal setelah ن diperkenalkan, sehingga tidak boleh dimajukan ke P007.
+- Kandidat yang masih membutuhkan pemeriksaan kamus lebih dalam tetap tidak boleh otomatis masuk generator sampai `VERIFIED=YES`.
+
 ## Audit fields per final word
 Setiap entri final wajib dicatat sebagai:
 `PAGE | ARABIC | ROOT/LEMMA | GLOSS_ID | QURAN/FUSHA | LEGAL_FEATURES | VERIFIED`
