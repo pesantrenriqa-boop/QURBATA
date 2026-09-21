@@ -198,3 +198,37 @@ Before P021-P040 can become FROZEN:
 - P028-P039 coverage matrix shows all three harakat and broad letter distribution;
 - P040 contains all 29 identities exactly as intended;
 - no discovery candidate can leak into the generator merely because it appears in this WORKING file.
+
+
+## Dhammah verification table v0.5
+
+This table records exact-form evidence separately from curriculum legality.
+
+| WORD | Gloss ID | Evidence status | Dhammah carrier | First legal page | Decision |
+|---|---|---|---|---|---|
+| كَبُرَ | menjadi besar/agung; terasa berat/sulit | QURAN-CONFIRMED Form I | بُ | P021 | APPROVED |
+| حَسُنَ | menjadi baik/indah | QURAN-CONFIRMED Form I | سُ | P023 | APPROVED |
+| ضَعُفَ | menjadi lemah | QURAN-CONFIRMED Form I | عُ | P025 | APPROVED |
+| قَرُبَ | menjadi dekat/mendekat | QURAN ROOT+FORM-I CONFIRMED; exact perfect citation not used as sole evidence here | رُ | P023 | HOLD exact-perfect label |
+| كَرُمَ | menjadi mulia/dermawan | FUSHA candidate | رُ | P023 | HOLD second lexicon |
+| بَعُدَ | menjadi jauh | FUSHA candidate | عُ | P025 | HOLD second lexicon |
+| ثَقُلَ | menjadi berat | FUSHA candidate | قُ | P025 | HOLD second lexicon |
+| صَغُرَ | menjadi kecil | FUSHA candidate | غُ | P025 | HOLD second lexicon |
+
+### Evidence notes
+- Quranic Arabic Corpus explicitly lists root ك ب ر with eight Form-I occurrences of **كَبُرَ** and gloss “to be great”.
+- Corpus explicitly lists root ح س ن with three Form-I occurrences of **حَسُنَ** and gloss “to be the best, to be good”.
+- Corpus explicitly lists root ض ع ف with two Form-I occurrences of **ضَعُفَ** and gloss “to weaken”.
+- Corpus lists ق ر ب as Form I “to approach, to go near”; because the visible concordance returned inflected forms rather than the exact perfect token **قَرُبَ**, QURBATA does not overstate its exact-token status in this table.
+- No HOLD item may enter a FINAL generator allocation until a second lexical source confirms its exact vocalization.
+
+## Approved Dhammah anchors by page v0.5
+- P021: **كَبُرَ**.
+- P022: no newly approved exact Dhammah WORD required.
+- P023: **حَسُنَ**; قَرُبَ remains HOLD for exact-perfect status.
+- P024: no newly approved exact Dhammah WORD required.
+- P025: **ضَعُفَ**.
+- P026: no newly approved exact Dhammah WORD required.
+- P027: no newly approved exact Dhammah WORD required.
+
+This is intentionally sparse. Pages are filled with legal cumulative Fathah/Kasrah WORDs and controlled repetition of approved Dhammah WORDs rather than fabricated forms.
