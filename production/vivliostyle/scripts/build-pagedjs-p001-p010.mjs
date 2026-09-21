@@ -72,7 +72,7 @@ const html=`<!doctype html><html lang="id"><head><meta charset="utf-8"><title>QU
 .practice{display:grid;grid-template-rows:1fr;border:.4mm solid #70b3d0;border-radius:3.5mm;overflow:hidden;background:#fff}
 .practice-title{display:none}
 .practice-title strong{font-size:8pt}.grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(8,1fr);min-height:0}
-.cell{font-family:Uthman,serif;font-size:32pt;line-height:1;display:flex;align-items:center;justify-content:center;padding:4mm 1.5mm 3.2mm;border-top:.2mm solid #c4dfe9;border-left:.2mm solid #c4dfe9;white-space:nowrap;overflow:hidden}
+.cell{font-family:Uthman,serif;font-size:32pt;line-height:1;display:flex;align-items:center;justify-content:center;padding:4mm 1.5mm 3.2mm;border:0;white-space:nowrap;overflow:hidden}
 .cell.low-descender{transform:translateY(-1.25mm)}\n.footer{position:relative;z-index:1;display:grid;grid-template-columns:15mm 1fr 1fr 1fr 15mm;gap:1.4mm;align-items:start;border:.3mm solid #e2ca8d;border-radius:3mm;padding:2mm 1.8mm 1.2mm;background:#fffdfa;font-size:5.8pt}
 .id{text-align:center;font-weight:700}.field{height:10mm;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:.2mm}.field:after{content:"";display:block;width:92%;border-bottom:.25mm dotted #7995a5;margin-top:auto;margin-bottom:.8mm}.qr{text-align:center;font-size:5pt;font-weight:700}.qr img{display:block;width:9mm;height:9mm;margin:auto}.motto{position:absolute;bottom:.8mm;left:50%;transform:translateX(-50%);font-family:Uthman,serif;font-size:6.5pt;color:#9c7b34;white-space:nowrap;background:#fffefa;padding:0 2mm;z-index:3}
 </style></head><body>${specs.map(page).join("")}</body></html>`;
