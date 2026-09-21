@@ -274,6 +274,45 @@ P019 memakai **curated cumulative mixed-vowel bank**, bukan random. Prioritas 18
 Sebelum freeze:
 `FIRST-LEGAL-LETTER PASS → FIRST-LEGAL-KASRAH PASS → LEMMA PASS → GLOSS PASS → 3-LETTER PASS → P019 CURATION PASS → P020 CURATION PASS`.
 
+
+## Strict Kasrah audit v0.6 — first-legal harakat
+
+Audit ini membedakan **huruf sudah dikenal** dari **kasrah pada huruf tersebut sudah dikenal**. Sebuah WORD campuran baru boleh tampil ketika setiap kasrah di dalam WORD sudah termasuk kompetensi page.
+
+| Page | Kasrah baru | WORD yang lolos untuk diprioritaskan |
+|---|---|---|
+| P014 | بِ تِ ثِ جِ | تَبِعَ |
+| P015 | حِ خِ دِ ذِ | حَسِبَ، حَمِدَ، نَدِمَ |
+| P016 | رِ زِ سِ شِ | عَمِلَ، فَرِحَ، شَرِبَ، سَمِعَ، رَكِبَ، لَعِبَ، وَرِثَ، خَسِرَ، رَحِمَ، سَلِمَ، شَهِدَ، عَلِمَ |
+| P017 | صِ ضِ طِ ظِ | مَرِضَ، غَضِبَ، نَشِطَ، عَطِشَ |
+| P018 | عِ غِ فِ قِ | فَهِمَ، قَبِلَ، عَرِفَ، عَجِبَ، خَطِفَ، وَسِعَ |
+| P019 | كِ لِ مِ نِ هِ وِ يِ ءِ إِ | أَمِنَ، بَخِلَ، كَرِهَ + seluruh WORD legal kumulatif P014–P018 |
+
+### Corrections
+- `عَمِلَ` **tidak legal di P014** karena kasrah pada م baru diperkenalkan P019; dipindahkan ke P019 jika aturan kasrah-letter literal diterapkan.
+- `فَرِحَ` tidak legal sebelum رِ diperkenalkan P016.
+- `شَرِبَ` tidak legal sebelum رِ P016.
+- `سَمِعَ` tidak legal sebelum مِ P019.
+- `رَكِبَ` tidak legal sebelum كِ P019.
+- `لَعِبَ` memakai عِ, baru legal P018.
+- Karena itu tabel “WORD yang lolos” di atas masih harus dibaca dengan validator posisi kasrah; daftar contoh sumber tidak otomatis sama dengan first-legal page QURBATA.
+
+### Literal validator result — safe anchors
+Untuk menghindari kesalahan urutan, anchor yang benar-benar aman:
+- P014: `تَبِعَ` (kasrah pada ب).
+- P015: `حَسِبَ` (kasrah pada س — **belum legal sampai P016**, maka pindah P016); `حَمِدَ` (kasrah pada م — P019), `نَدِمَ` (kasrah pada د — legal P015).
+- P016: `فَرِحَ` (رِ legal), `شَرِبَ` (رِ legal), `خَسِرَ` (سِ legal), `رَحِمَ` (حِ sudah legal P015), `سَلِمَ` (لِ belum legal P019), `شَهِدَ` (هِ belum legal P019).
+- P017: `مَرِضَ` (رِ legal), `غَضِبَ` (ضِ legal), `نَشِطَ` (شِ legal), `عَطِشَ` (طِ legal).
+- P018: `فَهِمَ` (هِ belum legal P019), `قَبِلَ` (بِ legal P014), `عَرِفَ` (رِ legal P016), `عَجِبَ` (جِ legal P014), `خَطِفَ` (طِ legal P017), `وَسِعَ` (سِ legal P016).
+- P019: seluruh bentuk di atas menjadi legal dari sisi inventori fathah+kasrah.
+
+### Consequence for page design
+P014–P018 **tidak boleh dipaksa mempunyai 18 WORD unik yang semuanya mengandung kasrah baru**. Halaman tetap dapat penuh dengan:
+1. 6 slot pasangan/pola untuk penanaman kompetensi baru;
+2. WORD legal yang sudah lolos sampai page tersebut;
+3. pengulangan WORD sah secara terkontrol.
+P019/P020 memiliki inventori cukup besar untuk 18 WORD bermakna tanpa kombinasi palsu.
+
 ## Audit fields per final word
 Setiap entri final wajib dicatat sebagai:
 `PAGE | ARABIC | ROOT/LEMMA | GLOSS_ID | QURAN/FUSHA | LEGAL_FEATURES | VERIFIED`
