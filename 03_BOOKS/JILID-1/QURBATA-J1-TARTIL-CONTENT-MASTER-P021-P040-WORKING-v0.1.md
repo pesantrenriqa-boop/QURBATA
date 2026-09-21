@@ -73,6 +73,38 @@ Special layout, not a normal 24-group page:
 3. Balanced reading assessment across Fathah–Kasrah–Dhammah.
 4. No connected letters/mad/tanwin/sukun/shaddah introduced as new Tartil content.
 
+
+## Dhammah lexical pass v0.2 — conservative bank
+
+### Method correction
+A valid `فَعُلَ` pattern is **not** permission to synthesize arbitrary roots. Dhammah WORDs are admitted only after exact-form lexical evidence. When evidence is not yet sufficient, the page uses legal 2-letter planting drills and previously verified cumulative WORDs instead of invented 3-letter material.
+
+### High-confidence anchors
+- **حَسُنَ** — “menjadi/bersifat baik”; middle-radical dhammah on سُ → first legal **P023**.
+- **كَبُرَ** — “menjadi besar/agung”; initial ك is Fathah, middle بُ is already legal from P021, so from the Tartil harakat-position gate it is legal **P021** (not P026). Earlier note tying it to كُ was incorrect and is superseded.
+- **ضَعُفَ** — “menjadi lemah”; middle عُ → first legal **P025**.
+- **كَرُمَ** — “menjadi mulia/dermawan”; middle رُ → first legal **P023**.
+- **قَرُبَ** — “menjadi dekat”; middle رُ → first legal **P023**.
+- **بَعُدَ** — “menjadi jauh”; middle عُ → first legal **P025**.
+- **ثَقُلَ** — “menjadi berat”; middle قُ → first legal **P025**.
+- **صَغُرَ** — “menjadi kecil”; middle غُ → first legal **P025**.
+
+These anchors still require the source-status field (QURAN-CONFIRMED or FUSHA-VERIFIED) before final freeze; they are not automatically labelled Quranic.
+
+### First-legal-page principle clarified
+The gate follows the **actual letter carrying Dhammah**, not every letter in the word. Example: `كَبُرَ` contains كَ + بُ + رَ, so it does **not** wait for كُ on P026; بُ is already introduced on P021. This correction applies globally to Fathah/Kasrah/Dhammah validation.
+
+### Allocation consequence P021–P027
+- P021: may use **كَبُرَ** once exact lexical status is recorded; otherwise cumulative Fathah/Kasrah words remain available.
+- P022: no need to force a new unique Dhammah WORD if no exact-form candidate passes.
+- P023: bank expands with **حَسُنَ، كَرُمَ، قَرُبَ**.
+- P024: use cumulative legal Dhammah bank; do not force صُ/ضُ/طُ/ظُ into fake words.
+- P025: bank expands with **ضَعُفَ، بَعُدَ، ثَقُلَ، صَغُرَ**.
+- P026–P027: cumulative Dhammah bank plus any newly verified exact forms; diversity is secondary to lexical correctness.
+
+### Generator prohibition
+The generator must never transform a known Fathah/Kasrah word by swapping a vowel to Dhammah. Every Dhammah WORD is a separately approved lexical record.
+
 ## Verification backlog before freeze
 1. Build a Quran-priority Dhammah WORD bank by exact lemma/vowel pattern.
 2. Add verified fusha words only where Quranic inventory is insufficient.
