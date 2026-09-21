@@ -313,6 +313,102 @@ P014–P018 **tidak boleh dipaksa mempunyai 18 WORD unik yang semuanya mengandun
 3. pengulangan WORD sah secara terkontrol.
 P019/P020 memiliki inventori cukup besar untuk 18 WORD bermakna tanpa kombinasi palsu.
 
+
+## Page-material blueprint v0.7 — 24 groups before PDF
+
+**Frozen composition target:** 8 rows × 3 groups = 24 groups. For normal pages, groups 01–06 are controlled 2-letter drills; groups 07–24 are meaningful 3-letter WORD slots. No random 3-letter generation.
+
+### P001–P002
+Because no safe meaningful 3-letter inventory exists yet under the strict whitelist, all 24 groups remain controlled 2-letter drills. This is an explicit exception, not a license for fake words.
+
+### P003
+01–06: controlled 2-letter drills emphasizing جَ حَ خَ and review بَ تَ ثَ.  
+07–24: `بَحَثَ` repeated with spacing/distribution control. No fake alternatives.
+
+### P004
+01–06: drills emphasizing دَ ذَ رَ زَ.  
+07–24 rotate legal WORD bank:
+`بَحَثَ، جَحَدَ، حَذَرَ، بَدَأَ، أَخَذَ، خَبَرَ، بَرَزَ، حَرَثَ`, then controlled repeats.
+
+### P005
+01–06 emphasize سَ شَ.  
+07–24 exactly:
+`بَحَثَ، جَحَدَ، حَذَرَ، بَدَأَ، أَخَذَ، خَبَرَ، بَرَزَ، حَرَثَ، دَرَسَ، سَجَدَ، حَسَدَ، حَبَسَ، حَرَسَ، سَبَحَ، شَرَحَ، شَرَدَ، شَرَبَ، سَحَبَ`.
+
+### P006
+01–06 emphasize صَ ضَ.  
+07–24 exactly:
+`بَحَثَ، جَحَدَ، حَذَرَ، دَرَسَ، سَجَدَ، حَسَدَ، حَبَسَ، حَرَسَ، صَبَرَ، ضَرَبَ، حَصَدَ، رَصَدَ، صَرَخَ، صَدَرَ، ضَحَكَ، ضَجَرَ، شَرَحَ، شَرَبَ`.
+
+### P007
+01–06 emphasize طَ ظَ.  
+07–24:
+`بَسَطَ، شَطَرَ، طَرَحَ، طَرَدَ، طَبَخَ، طَبَعَ`
++ 12 verified cumulative WORD from P003–P006.
+
+### P008
+01–06 emphasize عَ غَ.  
+07–24:
+`عَبَدَ، رَجَعَ، غَدَرَ، عَرَضَ، غَضَبَ، عَجَزَ، عَبَرَ، عَثَرَ، شَعَرَ، سَحَرَ، عَصَرَ، غَرَسَ، غَرَفَ، غَرَقَ`
++ 4 verified cumulative WORD.
+
+### P009
+01–06 emphasize فَ قَ.  
+07–24 exactly:
+`فَتَحَ، قَرَأَ، فَطَرَ، رَفَعَ، دَفَعَ، فَرَضَ، فَرَقَ، قَطَعَ، قَعَدَ، قَبَضَ، قَدَرَ، قَرَعَ، سَفَرَ، شَفَعَ، صَرَفَ، فَقَدَ، قَذَفَ، قَصَدَ`.
+
+### P010
+Checkpoint Fathah. 24 groups curated from verified P003–P009 inventory, maximizing letter coverage; no new letter/harakat.
+
+### P011
+01–06 emphasize كَ لَ.  
+07–24 use `كَتَبَ، أَكَلَ، مَلَكَ، سَلَكَ، تَرَكَ` plus verified cumulative Fathah WORD. Quranic concordance independently confirms `كَتَبَ` and `أَكَلَ`.
+
+### P012
+01–06 emphasize مَ نَ.  
+07–24 prioritize:
+`مَنَعَ، نَزَلَ، نَصَرَ، نَفَعَ، نَفَرَ، نَشَرَ، نَقَلَ، نَكَحَ، مَسَحَ، مَسَكَ، مَكَرَ، مَلَأَ، مَرَضَ، مَرَجَ`
++ 4 cumulative Fathah WORD.
+
+### P013
+01–06 emphasize هَ وَ يَ. Detached ه must pass two-hole renderer gate.  
+07–24 prioritize:
+`هَلَكَ، هَجَرَ، هَدَمَ، هَرَبَ، وَجَدَ، وَرَدَ، وَزَنَ، وَهَبَ، يَبَسَ`
++ cumulative Fathah WORD.
+
+### P014
+Two initial rows are the mandated transition planting: `بَ←بِ، تَ←تِ، ثَ←ثِ، جَ←جِ` distributed as six large groups.  
+Remaining 18 slots: only WORD whose kasrah occurs on ب/ت/ث/ج. Anchor `تَبِعَ`; expand only after strict lexical verification. Repetition is preferable to an illegal kasrah.
+
+### P015
+01–06 emphasize حِ خِ دِ ذِ with Fathah comparison.  
+07–24 use P014-safe WORD plus P015-safe additions such as `نَدِمَ` where kasrah is on د. Do not use `حَسِبَ` yet because سِ is P016.
+
+### P016
+01–06 emphasize رِ زِ سِ شِ.  
+07–24 may add `فَرِحَ، شَرِبَ، خَسِرَ، رَحِمَ، حَسِبَ` where all kasrah positions are now legal. Quranic concordance confirms common Form-I lemmas such as `سَمِعَ` and `عَلِمَ`, but those wait until مِ/لِ become legal at P019.
+
+### P017
+01–06 emphasize صِ ضِ طِ ظِ.  
+07–24 may add `مَرِضَ، غَضِبَ، نَشِطَ، عَطِشَ` plus cumulative legal WORD.
+
+### P018
+01–06 emphasize عِ غِ فِ قِ.  
+07–24 may add `قَبِلَ، عَرِفَ، عَجِبَ، خَطِفَ، وَسِعَ` plus cumulative legal WORD. `فَهِمَ` waits for هِ P019.
+
+### P019
+01–06 emphasize `كِ لِ مِ نِ هِ وِ يِ ءِ إِ`; detached `هِ` is mandatory two-hole.  
+07–24 curated 18 WORD:
+`عَمِلَ، فَرِحَ، شَرِبَ، حَسِبَ، سَمِعَ، رَكِبَ، لَعِبَ، تَبِعَ، وَرِثَ، نَدِمَ، حَفِظَ، حَمِدَ، خَسِرَ، رَحِمَ، سَلِمَ، شَهِدَ، عَلِمَ، فَهِمَ`.
+
+### P020
+Checkpoint Fathah + Kasrah. 24 groups are curated, not cycled. Core 18 WORD:
+`بَحَثَ، دَرَسَ، صَبَرَ، ضَرَبَ، عَبَدَ، غَفَرَ، فَتَحَ، قَرَأَ، كَتَبَ، نَزَلَ، وَجَدَ، عَمِلَ، فَرِحَ، شَرِبَ، سَمِعَ، رَكِبَ، عَلِمَ، فَهِمَ`.
+The remaining checkpoint groups are reserved for 29-letter-name/harakat-name recognition required by the P020 register, rather than meaningless 3-letter filler.
+
+### Evidence policy
+Quranic Arabic Corpus is used as a high-priority verification source for Quranic lemmas and morphology. Its verb concordance explicitly lists, among others, `عَلِمَ`, `عَمِلَ`, `أَخَذَ`, `عَبَدَ`, `سَأَلَ`, `وَجَدَ`, `أَكَلَ`, `غَفَرَ`, `صَبَرَ`, `ضَرَبَ`, `كَتَبَ`, `نَصَرَ`, `رَزَقَ`, and `سَمِعَ` as verbs with glosses. Corpus evidence confirms lexical/morphological existence; QURBATA first-legal-page rules remain a separate curriculum gate.
+
 ## Audit fields per final word
 Setiap entri final wajib dicatat sebagai:
 `PAGE | ARABIC | ROOT/LEMMA | GLOSS_ID | QURAN/FUSHA | LEGAL_FEATURES | VERIFIED`
