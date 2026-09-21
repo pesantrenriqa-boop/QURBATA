@@ -232,3 +232,45 @@ This table records exact-form evidence separately from curriculum legality.
 - P027: no newly approved exact Dhammah WORD required.
 
 This is intentionally sparse. Pages are filled with legal cumulative Fathah/Kasrah WORDs and controlled repetition of approved Dhammah WORDs rather than fabricated forms.
+
+
+## Exact allocation P021-P027 v0.6
+
+**Status:** ALLOCATION LOCKED FOR CONTENT AUDIT; PDF still blocked until full lexical/source-status gate passes.
+
+Rule: slots 01–06 = pedagogical planting (not lexical claims). Slots 07–24 = meaningful WORDs already approved in the Fathah/Kasrah master plus Quran-confirmed Dhammah anchors. Repetition of a valid word is permitted; pseudo-words are not.
+
+### P021
+01 `بِ→بُ` | 02 `تِ→تُ` | 03 `ثِ→ثُ` | 04 `جِ→جُ` | 05 `بُ تُ` | 06 `ثُ جُ`
+07 `كَبُرَ` | 08 `بَحَثَ` | 09 `دَرَسَ` | 10 `صَبَرَ` | 11 `ضَرَبَ` | 12 `عَبَدَ` | 13 `غَفَرَ` | 14 `فَتَحَ` | 15 `قَرَأَ` | 16 `كَتَبَ` | 17 `نَصَرَ` | 18 `وَجَدَ` | 19 `تَبِعَ` | 20 `فَرِحَ` | 21 `شَرِبَ` | 22 `خَسِرَ` | 23 `رَحِمَ` | 24 `حَسِبَ`.
+
+### P022
+01 `حِ→حُ` | 02 `خِ→خُ` | 03 `دِ→دُ` | 04 `ذِ→ذُ` | 05 `حُ خُ` | 06 `دُ ذُ`
+07–24: `كَبُرَ، بَحَثَ، دَرَسَ، صَبَرَ، ضَرَبَ، عَبَدَ، غَفَرَ، فَتَحَ، قَرَأَ، كَتَبَ، نَصَرَ، وَجَدَ، تَبِعَ، فَرِحَ، شَرِبَ، خَسِرَ، رَحِمَ، حَسِبَ`.
+
+### P023
+01 `رِ→رُ` | 02 `زِ→زُ` | 03 `سِ→سُ` | 04 `شِ→شُ` | 05 `رُ زُ` | 06 `سُ شُ`
+07 `حَسُنَ` | 08 `كَبُرَ` | 09 `بَحَثَ` | 10 `دَرَسَ` | 11 `صَبَرَ` | 12 `ضَرَبَ` | 13 `عَبَدَ` | 14 `غَفَرَ` | 15 `فَتَحَ` | 16 `قَرَأَ` | 17 `كَتَبَ` | 18 `نَصَرَ` | 19 `وَجَدَ` | 20 `تَبِعَ` | 21 `فَرِحَ` | 22 `شَرِبَ` | 23 `خَسِرَ` | 24 `حَسِبَ`.
+
+### P024
+01 `صِ→صُ` | 02 `ضِ→ضُ` | 03 `طِ→طُ` | 04 `ظِ→ظُ` | 05 `صُ ضُ` | 06 `طُ ظُ`
+07–24: `حَسُنَ، كَبُرَ، بَحَثَ، دَرَسَ، صَبَرَ، ضَرَبَ، عَبَدَ، غَفَرَ، فَتَحَ، قَرَأَ، كَتَبَ، نَصَرَ، وَجَدَ، تَبِعَ، فَرِحَ، شَرِبَ، خَسِرَ، حَسِبَ`.
+
+### P025
+01 `عِ→عُ` | 02 `غِ→غُ` | 03 `فِ→فُ` | 04 `قِ→قُ` | 05 `عُ غُ` | 06 `فُ قُ`
+07 `ضَعُفَ` | 08 `حَسُنَ` | 09 `كَبُرَ` | 10 `بَحَثَ` | 11 `دَرَسَ` | 12 `صَبَرَ` | 13 `ضَرَبَ` | 14 `عَبَدَ` | 15 `غَفَرَ` | 16 `فَتَحَ` | 17 `قَرَأَ` | 18 `كَتَبَ` | 19 `نَصَرَ` | 20 `وَجَدَ` | 21 `تَبِعَ` | 22 `فَرِحَ` | 23 `شَرِبَ` | 24 `حَسِبَ`.
+
+### P026
+01 `كِ→كُ` | 02 `لِ→لُ` | 03 `مِ→مُ` | 04 `نِ→نُ` | 05 `كُ لُ` | 06 `مُ نُ`
+07–24: `ضَعُفَ، حَسُنَ، كَبُرَ، بَحَثَ، دَرَسَ، صَبَرَ، ضَرَبَ، عَبَدَ، غَفَرَ، فَتَحَ، قَرَأَ، كَتَبَ، نَصَرَ، وَجَدَ، تَبِعَ، فَرِحَ، شَرِبَ، حَسِبَ`.
+
+### P027
+01 `هِ→هُ` | 02 `وِ→وُ` | 03 `يِ→يُ` | 04 `ءِ→ءُ` | 05 `هُ وُ` | 06 `يُ ءُ`
+07–24: `ضَعُفَ، حَسُنَ، كَبُرَ، بَحَثَ، دَرَسَ، صَبَرَ، ضَرَبَ، عَبَدَ، غَفَرَ، فَتَحَ، قَرَأَ، كَتَبَ، نَصَرَ، وَجَدَ، تَبِعَ، فَرِحَ، شَرِبَ، حَسِبَ`.
+
+### Exact-source evidence carried into allocation
+- `كَبُرَ`: Quranic Arabic Corpus gives exact perfect tokens (e.g. 6:35, 10:71, 40:35, 42:13, 61:3) under Form I “to be great”.
+- `حَسُنَ`: Corpus gives exact Form-I perfect `حَسُنَ` at 4:69 and feminine perfect forms at 18:31 and 25:76.
+- `ضَعُفَ`: Corpus gives exact Form-I perfect `ضَعُفَ` at 22:73 and plural perfect `ضَعُفُوا` at 3:146.
+
+Therefore these three Dhammah anchors are not merely pattern-derived; they have direct Quranic morphological evidence.
