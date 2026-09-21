@@ -386,3 +386,36 @@ Generator boleh tetap menghasilkan 24 kelompok, tetapi daftar akhir harus melewa
 
 ### 4. Updated production gate
 `REGISTER PASS → CONTENT PASS → SEMANTIC-GROUP PASS → GLYPH-SAFE PASS → OPEN-GRID PASS → LAYOUT PASS → PDF PASS`.
+
+
+---
+
+## REVISION v1.6.4 — MEANINGFUL 3-LETTER ONLY + DETACHED HA TWO-HOLE HARD GATE
+
+**Effective:** 2026-09-21  
+**Status:** FROZEN — supersedes the v1.6.3 allowance for `NEAR-SEMANTIC` three-letter groups.
+
+### 1. Three-letter groups must be meaningful
+- Setiap kelompok latihan **3 huruf wajib membentuk kata Arab yang sah dan bermakna** dengan harakat yang benar-benar tercetak.
+- Prioritas kosakata: **kata yang terdapat dalam Al-Qur'an → kata Arab fusha yang sah → bentuk lain yang terverifikasi secara leksikal**.
+- `NEAR-SEMANTIC` dan kombinasi fonetik acak **dilarang untuk kelompok 3 huruf**.
+- Jika kompetensi halaman belum memungkinkan cukup banyak kata 3 huruf yang sah, **jangan mengarang kombinasi**. Ulangi kata sah yang tersedia dengan distribusi terkontrol, atau gunakan kelompok 2 huruf untuk latihan fonetik.
+- Tidak boleh menambahkan harakat/fitur yang belum diajarkan hanya untuk membuat kata: sukun, tasydid, tanwin, mad, sambung, atau harakat tahap berikutnya tetap mengikuti whitelist kompetensi.
+- Harakat dipilih karena bentuk katanya, bukan untuk variasi visual.
+- Gate: setiap kelompok 3 huruf harus mempunyai metadata `WORD` dan makna/glos audit internal sebelum masuk PDF.
+
+### 2. Detached ha must be two-hole
+- Seluruh kemunculan **ha terpisah** pada latihan Tartil (`هَ / هِ / هُ / ه`) wajib tampil sebagai **ha dua lubang** sesuai master QURBATA.
+- Bentuk ha satu lubang pada latihan adalah **FAIL**, walaupun berasal dari glyph default font.
+- Identitas Unicode huruf tetap `ه`; dilarang mengganti dengan karakter mirip seperti `ھ / ہ / ۀ / ە`.
+- Renderer wajib memakai solusi glyph/sequence/style yang mempertahankan identitas `ه` tetapi menghasilkan bentuk visual dua lubang yang disetujui.
+- Sentinel audit wajib: P013, P019, P020 dan seluruh halaman yang mengandung detached ha.
+
+### 3. P019/P020 composition
+- P019 dan P020 tidak boleh menggunakan pool algoritmik mentah yang membuat latihan tampak acak/berantakan.
+- P019 disusun sebagai **curated Kasrah completion page** dengan ritme visual 8×3 yang seimbang.
+- P020 disusun sebagai **curated checkpoint Fathah + Kasrah**, coverage merata, bukan random cycling.
+- Gate khusus: `P019-CURATED PASS → P020-CURATED PASS → HA-TWO-HOLE PASS → 3-LETTER-WORD PASS`.
+
+### 4. Updated FINAL gate
+`REGISTER PASS → CONTENT PASS → 3-LETTER-WORD PASS → HA-TWO-HOLE PASS → OPEN-GRID PASS → P019/P020-CURATED PASS → LAYOUT PASS → PDF PASS`.
