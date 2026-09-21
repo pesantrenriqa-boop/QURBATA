@@ -409,6 +409,33 @@ The remaining checkpoint groups are reserved for 29-letter-name/harakat-name rec
 ### Evidence policy
 Quranic Arabic Corpus is used as a high-priority verification source for Quranic lemmas and morphology. Its verb concordance explicitly lists, among others, `عَلِمَ`, `عَمِلَ`, `أَخَذَ`, `عَبَدَ`, `سَأَلَ`, `وَجَدَ`, `أَكَلَ`, `غَفَرَ`, `صَبَرَ`, `ضَرَبَ`, `كَتَبَ`, `نَصَرَ`, `رَزَقَ`, and `سَمِعَ` as verbs with glosses. Corpus evidence confirms lexical/morphological existence; QURBATA first-legal-page rules remain a separate curriculum gate.
 
+
+## Quranic verification pass v0.8 — promoted / corrected entries
+
+This pass uses Quranic Arabic Corpus verb concordance as lexical/morphological evidence, then applies QURBATA's stricter first-letter and first-harakat gates.
+
+### Promoted Quranic WORD anchors
+- Fathah bank confirmed in the Corpus includes: `أَخَذَ، عَبَدَ، وَجَدَ، أَكَلَ، غَفَرَ، صَبَرَ، ضَرَبَ، كَتَبَ، نَصَرَ، رَجَعَ، بَسَطَ، فَتَحَ، قَرَأَ، صَرَفَ، قَعَدَ، مَنَعَ، سَلَكَ، نَكَحَ، دَرَسَ، دَفَعَ، شَرَحَ، هَلَكَ، وَرَدَ`.
+- Mixed Fathah/Kasrah bank confirmed includes: `عَلِمَ، عَمِلَ، سَمِعَ، حَسِبَ، شَهِدَ، فَرِحَ، شَرِبَ، خَسِرَ، وَرِثَ، حَفِظَ، رَحِمَ، وَسِعَ`.
+- Corpus confirmation does **not** override page legality; e.g. `عَلِمَ` and `عَمِلَ` wait until P019 because لِ/مِ are introduced there.
+
+### P019 VERIFIED core — 18 meaningful slots
+The following 18 are approved as the current P019 core, subject only to final typography/glyph audit:
+`عَلِمَ، عَمِلَ، سَمِعَ، حَسِبَ، شَهِدَ، فَرِحَ، شَرِبَ، خَسِرَ، وَرِثَ، حَفِظَ، رَحِمَ، وَسِعَ، تَبِعَ، نَدِمَ، قَبِلَ، عَرِفَ، غَضِبَ، فَهِمَ`.
+
+Classification:
+- **QURAN-CONFIRMED:** عَلِمَ، عَمِلَ، سَمِعَ، حَسِبَ، شَهِدَ، فَرِحَ، شَرِبَ، خَسِرَ، وَرِثَ، حَفِظَ، رَحِمَ، وَسِعَ.
+- **FUSHA-LEXICON VERIFY:** تَبِعَ، نَدِمَ، قَبِلَ، عَرِفَ، غَضِبَ، فَهِمَ. These remain meaningful candidates but must receive a second lexical-source check before CONTENT FREEZE.
+
+### P020 Quran-priority checkpoint core
+For P020, prioritize Corpus-confirmed forms:
+`بَسَطَ، دَرَسَ، صَبَرَ، ضَرَبَ، عَبَدَ، غَفَرَ، فَتَحَ، قَرَأَ، كَتَبَ، نَصَرَ، وَجَدَ، عَلِمَ، عَمِلَ، فَرِحَ، شَرِبَ، سَمِعَ، حَسِبَ، وَرِثَ`.
+
+This gives 18 meaningful checkpoint WORD slots with broad Fathah/Kasrah coverage; separate P020 recognition material still handles letter names and harakat names required by the page register.
+
+### Removed / held from final core
+Any candidate whose exact lemma/vowel pattern has not yet been independently confirmed remains outside the final core. Discovery lists above are retained for provenance but do not authorize PDF use.
+
 ## Audit fields per final word
 Setiap entri final wajib dicatat sebagai:
 `PAGE | ARABIC | ROOT/LEMMA | GLOSS_ID | QURAN/FUSHA | LEGAL_FEATURES | VERIFIED`
