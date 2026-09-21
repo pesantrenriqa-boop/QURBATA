@@ -7,7 +7,9 @@
     "build:pagedjs:p001:html": "node scripts/build-pagedjs-p001.mjs",
     "build:pagedjs:p001:pdf": "npm run build:pagedjs:p001:html && pagedjs-cli dist/QURBATA-J1-P001-PAGEDJS.html -o dist/QURBATA-J1-P001-PAGEDJS.pdf --browserArgs '--no-sandbox,--disable-setuid-sandbox'",
     "build:pagedjs:p001-p010:html": "node scripts/build-pagedjs-p001-p010.mjs",
-    "build:pagedjs:p001-p010:pdf": "npm run build:pagedjs:p001-p010:html && pagedjs-cli dist/QURBATA-J1-P001-P010-PAGEDJS.html -o dist/QURBATA-J1-P001-P010-PAGEDJS.pdf --browserArgs '--no-sandbox,--disable-setuid-sandbox'"
+    "build:pagedjs:p001-p010:pdf": "npm run build:pagedjs:p001-p010:html && pagedjs-cli dist/QURBATA-J1-P001-P010-PAGEDJS.html -o dist/QURBATA-J1-P001-P010-PAGEDJS.pdf --browserArgs '--no-sandbox,--disable-setuid-sandbox'",
+    "build:pagedjs:p001-p020:html": "node scripts/build-pagedjs-p001-p010.mjs",
+    "build:pagedjs:p001-p020:pdf": "npm run build:pagedjs:p001-p020:html && pagedjs-cli dist/QURBATA-J1-P001-P020-PAGEDJS.html -o dist/QURBATA-J1-P001-P020-PAGEDJS.pdf --browserArgs '--no-sandbox,--disable-setuid-sandbox'"
   },
   "dependencies": {
     "pagedjs-cli": "^0.4.3",
