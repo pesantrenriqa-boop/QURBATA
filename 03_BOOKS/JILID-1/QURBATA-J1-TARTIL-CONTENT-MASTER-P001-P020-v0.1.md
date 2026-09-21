@@ -131,6 +131,36 @@ Mulai P003, semua WORD pada page sebelumnya tetap tersedia secara kumulatif. Tar
 - `نَظَرَ` memang Qurani, tetapi secara urutan buku baru legal setelah ن diperkenalkan, sehingga tidak boleh dimajukan ke P007.
 - Kandidat yang masih membutuhkan pemeriksaan kamus lebih dalam tetap tidak boleh otomatis masuk generator sampai `VERIFIED=YES`.
 
+
+## Deep lexical pass v0.3 — expanded cumulative Fathah bank
+
+Tujuan pass ini adalah memenuhi slot latihan dengan WORD sah sebanyak mungkin sambil mempertahankan **first-legal-page**. Daftar berikut menambah kandidat yang tidak membutuhkan fitur selain fathah.
+
+| First legal page | Additional WORD | Gloss ID |
+|---|---|---|
+| P004 | بَدَأَ، أَخَذَ، خَبَرَ، بَرَزَ، حَرَثَ | memulai; mengambil; mengetahui/memberitakan; tampil/keluar; mengolah/menanam |
+| P005 | سَأَلَ، سَبَحَ، سَرَدَ، شَرَحَ، شَرَدَ، شَرَبَ، سَحَبَ، سَخَرَ، سَرَحَ، سَرَقَ | bertanya/meminta; berenang/bertasbih menurut konteks; menuturkan berurutan; menjelaskan/membelah; lari/menyimpang; minum; menarik; mengejek/menundukkan menurut konteks; melepas/pergi; mencuri |
+| P006 | صَرَخَ، صَدَرَ، ضَحَكَ، ضَجَرَ | berteriak; keluar/terbit; tertawa; jemu/gelisah |
+| P007 | طَرَحَ، طَرَدَ، طَبَخَ، طَبَعَ، ظَلَمَ* | melempar/mengajukan; mengusir; memasak; mencetak/menutup; menzalimi* |
+| P008 | عَرَفَ*، عَزَمَ*، عَصَرَ، عَطَفَ*، غَرَسَ، غَرَفَ، غَرَقَ، غَلَبَ*، غَلَقَ*، غَسَلَ* | mengenal*; bertekad*; memeras; membelok/menaruh kasih*; menanam; menciduk; tenggelam; mengalahkan*; menutup*; mencuci* |
+| P009 | سَأَلَ، خَلَقَ*، رَزَقَ*، سَفَرَ، شَفَعَ، صَرَفَ، عَقَرَ، عَقَدَ*، فَصَلَ*، فَقَدَ، قَذَفَ، قَسَمَ، قَصَدَ، قَصَرَ، قَتَلَ* | bertanya; menciptakan*; memberi rezeki*; bepergian/tersingkap; memberi syafaat/menggenapkan; memalingkan; melukai/menyembelih; mengikat*; memisahkan*; kehilangan; melempar; membagi/bersumpah; menuju; memendekkan/membatasi; membunuh* |
+
+\* Kandidat bertanda bintang hanya legal jika semua hurufnya memang sudah masuk whitelist kumulatif pada page tersebut; validator first-legal-page wajib memindahkan kandidat bila ada huruf masa depan. Daftar ini adalah lexical discovery pool, bukan izin otomatis generator.
+
+### Mandatory validator before allocation
+Sebelum WORD masuk slot:
+1. pecah WORD menjadi huruf dasar;
+2. cocokkan semua huruf dengan cumulative introduced letters pada page;
+3. pastikan seluruh vokal yang tercetak hanya harakat legal;
+4. tolak bentuk yang memerlukan sukun/tasydid/mad/tanwin;
+5. simpan gloss dan lemma;
+6. hanya `VERIFIED=YES` yang boleh masuk allocation final.
+
+### Fill target
+- P003–P009: terus perluas WORD unik sampai sebanyak mungkin; setelah seluruh WORD legal unik digunakan, pengulangan terkontrol diperbolehkan untuk mencapai 18 slot WORD.
+- P010: gunakan keseluruhan bank Fathah yang telah VERIFIED, dengan distribusi huruf seluas mungkin.
+- Tidak ada kombinasi 3 huruf non-kata.
+
 ## Audit fields per final word
 Setiap entri final wajib dicatat sebagai:
 `PAGE | ARABIC | ROOT/LEMMA | GLOSS_ID | QURAN/FUSHA | LEGAL_FEATURES | VERIFIED`
