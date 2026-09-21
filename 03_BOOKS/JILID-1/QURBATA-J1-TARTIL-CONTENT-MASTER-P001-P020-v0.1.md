@@ -212,6 +212,68 @@ ditambah WORD legal P003–P006 sampai 18 slot.
 ### Exclusion principle
 Bentuk yang hanya “terlihat seperti فَعَلَ” tetapi lemma/harakatnya tidak terverifikasi tetap dilarang. Kata dengan huruf masa depan dipindah ke halaman first-legal yang benar.
 
+
+## Kasrah lexical pass v0.5 — P011–P020
+
+### Important sequencing
+- P011–P013 masih **Fathah-only**. Kasrah baru legal mulai P014.
+- WORD tiga huruf harus tepat 3 huruf dasar. Bentuk yang membutuhkan alif mad, ta marbuta, sukun, tasydid, tanwin, atau huruf keempat tidak masuk.
+- Untuk P014–P019, bentuk campuran Fathah+Kasrah boleh dipakai hanya jika semua harakatnya telah legal.
+
+### P011 — new كَ لَ
+Kandidat prioritas:
+`كَتَبَ · أَكَلَ · مَلَكَ · سَلَكَ · تَرَكَ · هَلَكَ*`
+Gloss: menulis; makan; memiliki/menguasai; menempuh; meninggalkan; binasa*.
+`هَلَكَ` ditahan sampai ه legal P013.
+
+### P012 — new مَ نَ
+Kandidat:
+`مَنَعَ · نَزَلَ · نَصَرَ · نَفَعَ · نَفَرَ · نَشَرَ · نَقَلَ · نَكَحَ · مَسَحَ · مَسَكَ · مَكَرَ · مَلَأَ · مَرَضَ · مَرَجَ`
+Gloss: mencegah; turun; menolong; memberi manfaat; berangkat/menjauh; menyebarkan; memindahkan; menikah; mengusap; memegang; membuat makar; memenuhi; sakit; bercampur/membiarkan mengalir.
+
+### P013 — new هَ وَ يَ
+Kandidat:
+`هَلَكَ · هَجَرَ · هَدَمَ · هَرَبَ · وَجَدَ · وَرَدَ · وَزَنَ · وَهَبَ · يَبَسَ`
+Gloss: binasa; meninggalkan; merobohkan; melarikan diri; menemukan; mendatangi; menimbang; memberi/anugerah; menjadi kering.
+Kandidat yang secara bentuk memerlukan alif maqsurah/mad atau fitur lain tidak dimasukkan.
+
+### P014 — Kasrah بِ تِ ثِ جِ
+Target bukan sekadar menambah kasrah, tetapi mencari WORD yang benar-benar memiliki kasrah pada salah satu huruf legal. Kandidat awal:
+`عَمِلَ · فَرِحَ · شَرِبَ · حَسِبَ · سَمِعَ · رَكِبَ · لَعِبَ · تَبِعَ · وَرِثَ · نَدِمَ`
+Semua kandidat wajib dicek first-legal huruf; hanya bentuk dengan kasrah pada huruf yang sudah diperkenalkan sebagai kasrah boleh masuk page terkait.
+
+### P015 — new حِ خِ دِ ذِ
+Tambahan kandidat:
+`حَفِظَ · حَمِدَ · خَسِرَ · خَشِيَ* · ذَكِرَ`
+`خَشِيَ` ditahan bila bentuk akhirnya menuntut perlakuan ya/struktur yang belum sesuai gate.
+
+### P016 — new رِ زِ سِ شِ
+Tambahan:
+`رَحِمَ · رَضِيَ* · سَلِمَ · شَهِدَ · عَلِمَ`
+Bentuk berakhir ya seperti `رَضِيَ` diaudit khusus sebelum produksi.
+
+### P017 — new صِ ضِ طِ ظِ
+Tambahan:
+`ظَلِمَ · طَمِعَ · ضَحِكَ`
+Catatan: tidak semua akar dengan ص/ض/ط/ظ memiliki Form-I kasrah yang cocok; jangan memaksakan.
+
+### P018 — new عِ غِ فِ قِ
+Tambahan:
+`غَضِبَ · فَهِمَ · قَدِمَ · قَبِلَ · قَدِرَ · عَرِفَ`
+Gloss: marah; memahami; datang; menerima; mampu/berkuasa; mengetahui/mengenal.
+
+### P019 — completion Kasrah
+P019 memakai **curated cumulative mixed-vowel bank**, bukan random. Prioritas 18 WORD:
+`عَمِلَ · فَرِحَ · شَرِبَ · حَسِبَ · سَمِعَ · رَكِبَ · لَعِبَ · تَبِعَ · وَرِثَ · نَدِمَ · حَفِظَ · حَمِدَ · خَسِرَ · رَحِمَ · سَلِمَ · شَهِدَ · عَلِمَ · فَهِمَ`
+
+### P020 — checkpoint Fathah + Kasrah
+18 WORD checkpoint curated:
+`بَحَثَ · دَرَسَ · صَبَرَ · ضَرَبَ · عَبَدَ · غَفَرَ · فَتَحَ · قَرَأَ · كَتَبَ · نَزَلَ · وَجَدَ · عَمِلَ · فَرِحَ · شَرِبَ · سَمِعَ · رَكِبَ · عَلِمَ · فَهِمَ`
+
+### Kasrah hard gate
+Sebelum freeze:
+`FIRST-LEGAL-LETTER PASS → FIRST-LEGAL-KASRAH PASS → LEMMA PASS → GLOSS PASS → 3-LETTER PASS → P019 CURATION PASS → P020 CURATION PASS`.
+
 ## Audit fields per final word
 Setiap entri final wajib dicatat sebagai:
 `PAGE | ARABIC | ROOT/LEMMA | GLOSS_ID | QURAN/FUSHA | LEGAL_FEATURES | VERIFIED`
