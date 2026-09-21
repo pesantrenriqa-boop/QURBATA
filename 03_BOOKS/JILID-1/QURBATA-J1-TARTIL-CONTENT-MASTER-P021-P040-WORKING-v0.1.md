@@ -138,3 +138,63 @@ A targeted web-index search of Quranic Arabic Corpus returned no usable indexed 
 
 ### Freeze condition
 P021-P027 may be frozen only after every three-letter Dhammah item has: exact spelling, exact harakat, Indonesian gloss, source-status, and first-legal-page PASS.
+
+
+## P028-P039 cumulative allocation framework v0.4
+
+After P027, all three short vowels are legal across the full letter inventory. P028-P039 introduce **no new Tartil feature**. The task is therefore controlled coverage, not invention.
+
+### Shared 24-group composition
+For P028-P039:
+- 24 reading groups per normal page.
+- Target balance: 8 Fathah-dominant WORDs, 8 Kasrah-bearing WORDs, 8 Dhammah-bearing WORDs, while allowing small adjustments for lexical validity.
+- Every 3-letter group must remain a real WORD with exact harakat.
+- Do not alter a verified word's vowel merely to satisfy an 8/8/8 quota.
+- Across each 3-page window, cover early, middle, and late letter identities; do not let the same easy roots dominate.
+- Identical 24-word ordering may not be reused on adjacent pages.
+
+### P028 — Dhammah reinforcement
+Focus: newly completed Dhammah, but Fathah/Kasrah remain visible. Use the verified Dhammah bank repeatedly only as needed; lexical correctness outranks variety.
+
+### P029 — cumulative Dhammah 1
+Mix all three harakat. The older register phrase “bermakna/nyaris bermakna” is superseded here by the stricter semantic rule: **meaningful only** for 3-letter groups.
+
+### P030 — cumulative Dhammah 2
+Second mixed set, different ordering and root distribution from P029. Include competencies from the earliest pages.
+
+### P031 — cumulative reinforcement 1
+Balanced three-harakat set; emphasize early alphabet identities that may have become underrepresented.
+
+### P032 — cumulative reinforcement 2
+Balanced set including legal Hamzah/Alif identities; exact glyph audit required.
+
+### P033 — cumulative reinforcement 3
+Coverage-driven set across all 29 identities; no new feature.
+
+### P034-P035 — final cumulative practice
+Meaning-first fluency sets. No mechanical vowel substitution and no pseudo-word.
+
+### P036-P038 — evaluative reinforcement
+Three distinct assessment-like sets. Each must sample early/middle/late alphabet identities and all three harakat. Repetition across pages is allowed only when pedagogically useful, not because the generator cycles.
+
+### P039 — pre-checkpoint
+Simulation set of 24 curated groups. It must demonstrate balanced coverage before P040 and expose any missing letter/harakat combination in the book-level audit.
+
+## P040 checkpoint content contract v0.4
+
+P040 is exempt from normal 24-group composition. It must contain:
+1. **29 letter identities without harakat** for letter-name recognition.
+2. Harakat recognition: **فَتْحَة — كَسْرَة — ضَمَّة** with their signs.
+3. A balanced reading assessment using legal detached-letter material from all three harakat.
+4. No connected letters, mad, tanwin, sukun, or shaddah as new Tartil competencies.
+5. Detached ه remains a two-hole glyph sentinel.
+6. Tanggal — Nilai — TTD and RIQA OS QR remain required in layout stage.
+
+### Book-level audit before freeze
+Before P021-P040 can become FROZEN:
+- every Dhammah 3-letter WORD has exact-form lexical verification;
+- every allocated word has an Indonesian gloss;
+- first-legal-page is computed from the actual letter carrying the relevant harakat;
+- P028-P039 coverage matrix shows all three harakat and broad letter distribution;
+- P040 contains all 29 identities exactly as intended;
+- no discovery candidate can leak into the generator merely because it appears in this WORKING file.
