@@ -161,6 +161,57 @@ Sebelum WORD masuk slot:
 - P010: gunakan keseluruhan bank Fathah yang telah VERIFIED, dengan distribusi huruf seluas mungkin.
 - Tidak ada kombinasi 3 huruf non-kata.
 
+
+## Curated allocation v0.4 — P003–P010 full 18 WORD slots
+
+**Rule:** 6 slot awal halaman tetap dapat dipakai untuk pasangan 2 huruf; 18 slot berikut wajib WORD. Semua WORD di bawah hanya memakai huruf yang telah legal secara kumulatif dan fathah. Daftar ini menggantikan allocation algoritmik lama.
+
+### P003
+`بَحَثَ` diulang terkontrol 18×. Tidak dibuat kata palsu.
+
+### P004
+`بَحَثَ · جَحَدَ · حَذَرَ · بَدَأَ · أَخَذَ · خَبَرَ · بَرَزَ · حَرَثَ`
+Distribusi 18 slot: 8 WORD unik terlebih dahulu, kemudian pengulangan terkontrol.
+
+### P005
+`بَحَثَ · جَحَدَ · حَذَرَ · بَدَأَ · أَخَذَ · خَبَرَ · بَرَزَ · حَرَثَ · دَرَسَ · سَجَدَ · حَسَدَ · حَبَسَ · حَرَسَ · سَبَحَ · شَرَحَ · شَرَدَ · شَرَبَ · سَحَبَ`
+
+### P006
+18 slot dipilih tanpa kombinasi palsu dari:
+`بَحَثَ · جَحَدَ · حَذَرَ · بَدَأَ · أَخَذَ · دَرَسَ · سَجَدَ · حَسَدَ · حَبَسَ · حَرَسَ · صَبَرَ · ضَرَبَ · حَصَدَ · رَصَدَ · صَرَخَ · صَدَرَ · ضَحَكَ · ضَجَرَ`
+
+### P007
+18 slot dipilih dari bank legal kumulatif, dengan prioritas WORD yang memakai kompetensi baru:
+`بَسَطَ · شَطَرَ · طَرَحَ · طَرَدَ · طَبَخَ · طَبَعَ`
+ditambah WORD legal P003–P006 sampai 18 slot.
+
+### P008
+18 slot:
+`عَبَدَ · رَجَعَ · غَدَرَ · عَرَضَ · غَضَبَ · عَجَزَ · عَبَرَ · عَثَرَ · شَعَرَ · سَحَرَ · عَصَرَ · غَرَسَ · غَرَفَ · غَرَقَ`
++ 4 WORD legal kumulatif dari halaman sebelumnya.
+
+### P009
+18 slot:
+`فَتَحَ · قَرَأَ · فَطَرَ · رَفَعَ · دَفَعَ · فَرَضَ · فَرَقَ · قَطَعَ · قَعَدَ · قَبَضَ · قَدَرَ · قَرَعَ · سَفَرَ · شَفَعَ · صَرَفَ · فَقَدَ · قَذَفَ · قَصَدَ`
+
+### P010 — Fathah checkpoint
+18 slot checkpoint dipilih dari seluruh bank P003–P009 dengan syarat:
+- minimal satu representasi setiap kompetensi huruf P001–P009;
+- tidak ada kata non-meaningful;
+- tidak ada kasrah/dhammah/sukun/tasydid/mad/tanwin;
+- tidak ada huruf P011 ke atas;
+- prioritas kata Qurani/fusha yang paling jelas.
+
+### Quranic morphology confirmations used as hard evidence
+- `فَتَحَ` = Form I, “to open / give victory”.
+- `فَطَرَ` = Form I.
+- `صَبَرَ` = Form I, “to be patient”.
+- `ضَرَبَ` = Form I, “to strike / set forth”.
+- Pola `فَعَلَ` sendiri adalah pola dasar Form I yang digunakan Quranic Arabic Corpus; tetapi kecocokan pola **tidak cukup** — lemma/kata tetap harus sah.
+
+### Exclusion principle
+Bentuk yang hanya “terlihat seperti فَعَلَ” tetapi lemma/harakatnya tidak terverifikasi tetap dilarang. Kata dengan huruf masa depan dipindah ke halaman first-legal yang benar.
+
 ## Audit fields per final word
 Setiap entri final wajib dicatat sebagai:
 `PAGE | ARABIC | ROOT/LEMMA | GLOSS_ID | QURAN/FUSHA | LEGAL_FEATURES | VERIFIED`
