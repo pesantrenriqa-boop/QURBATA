@@ -300,3 +300,52 @@ Berdasarkan audit visual PDF P001–P010, master P001 v1.6.0 tetap menjadi basis
 3. **Logo QURBATA.** Mark QURBATA di header wajib memakai bentuk QOf/Q yang **berlubang (counter terbuka/terlihat)** sesuai identitas logo yang disetujui; bentuk dengan lubang tertutup/terisi dilarang.
 
 Setelah ketiga koreksi diterapkan, halaman P001 menjadi sentinel audit ulang. Produksi P001–P010 hanya dilanjutkan setelah sentinel memenuhi: **HEADER-DENSITY PASS → LOGO PASS → GLYPH-SAFE PASS → LAYOUT PASS → PDF PASS**.
+
+
+---
+
+## FREEZE v1.6.2 — APPROVED P001–P010 PRODUCTION BASELINE
+
+**Effective:** 2026-09-21  
+**Approved reference:** Paged.js Build #31  
+**Approved commit:** `4c4ccf623f092e67c34bfff393a50be92d7d673b`
+
+Build #31 ditetapkan sebagai baseline baku untuk kelanjutan produksi Jilid 1. Ketentuan berikut **FROZEN** dan tidak boleh berubah tanpa keputusan revisi master terlebih dahulu:
+
+1. **Arsitektur halaman**
+   - A5 portrait.
+   - Urutan: Header → Penanaman → panel Tahfidz/Bi'ah/Akhlak → latihan Tartil 8×3 → footer.
+   - Tartil tetap domain visual paling dominan.
+   - Layout atas menggunakan komposisi compact yang telah disetujui pada Build #31.
+
+2. **Tipografi Arab**
+   - Font produksi Arab wajib **KFGQPC Uthman Taha**.
+   - Ukuran latihan dan safe-area mengikuti Build #31.
+   - Glyph latihan tidak boleh menyentuh, tertutup, atau terpotong garis kotak.
+   - Bentuk `ج ح خ ع غ` pada latihan menggunakan koreksi posisi vertikal seperti Build #31 agar ekor/badan bawah tidak menabrak garis.
+
+3. **Penanaman kompetensi**
+   - Ukuran penanaman halaman normal mengikuti baseline Build #31.
+   - P010 `تَقْيِيمُ الْفَتْحَةِ` menggunakan ukuran khusus **33 pt**; aturan ini tidak mengubah ukuran penanaman P001–P009.
+
+4. **Bi'ah Arabiyah**
+   - Authority isi: `PAGE_REGISTER_P001-P040_INTEGRATION_FROZEN-v1.3.md`.
+   - Satu materi dipertahankan **1–3 pertemuan**; tidak mengganti ungkapan baru setiap halaman.
+   - Untuk P001–P010: P001–P003 salam; P004–P006 `اُنْظُرْ`; P007–P009 `اِسْتَمِعْ`; P010 reinforcement.
+   - Baris kecil panel adalah **arti Indonesia**, bukan instruksi aktivitas.
+
+5. **Akhlak**
+   - Authority isi: `PAGE_REGISTER_P001-P040_INTEGRATION_FROZEN-v1.3.md`.
+   - Materi Akhlak dibiasakan selama **2–3 pertemuan**, bukan nash baru setiap halaman.
+   - Untuk P001–P010: P001–P003 adab salam; P004–P006 doa tambah ilmu; P007–P009 adab mendengar; P010 reinforcement.
+   - Baris kecil panel adalah arti Indonesia.
+
+6. **Footer**
+   - Tanggal, Nilai, dan TTD tetap satu baseline.
+   - QR mempunyai area sendiri dan tidak boleh mengganggu ruang latihan.
+   - Motto bawah tetap `تَعَلَّمْ — اِعْمَلْ — عَلِّمْ`.
+
+7. **Gate produksi lanjutan**
+   - P001–P010 Build #31 menjadi **visual/content sentinel** untuk P011–P040.
+   - Produksi berikut tidak boleh mengubah komponen frozen di atas secara diam-diam.
+   - Setiap blok berikut wajib melewati: `REGISTER PASS → CONTENT PASS → GLYPH-SAFE PASS → LAYOUT PASS → PDF PASS`.
