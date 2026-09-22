@@ -105,7 +105,10 @@ const html=`<!doctype html><html lang="id"><head><meta charset="utf-8"><title>QU
    The pseudo-element adds the second visible counter only to isolated heh tokens;
    content remains the original ه character for curriculum/search/copy. */
 .heh-two-hole{position:relative;isolation:isolate}
-.heh-two-hole:after{content:"";position:absolute;width:.18em;height:.13em;border:.055em solid currentColor;border-radius:50%;left:50%;top:50%;transform:translate(-48%,-18%);pointer-events:none}\n.footer{position:relative;z-index:1;display:grid;grid-template-columns:15mm 1fr 1fr 1fr 15mm;gap:1.4mm;align-items:start;border:.3mm solid #e2ca8d;border-radius:3mm;padding:2mm 1.8mm 1.2mm;background:#fffdfa;font-size:5.8pt}
+.heh-two-hole{position:relative;display:inline-flex;align-items:center;justify-content:center;min-width:.78em}
+.heh-two-hole:before,.heh-two-hole:after{content:"";position:absolute;box-sizing:border-box;border:.045em solid currentColor;border-radius:50%;pointer-events:none;z-index:2}
+.heh-two-hole:before{width:.15em;height:.105em;left:43%;top:43%;transform:translate(-50%,-50%)}
+.heh-two-hole:after{width:.15em;height:.105em;left:57%;top:55%;transform:translate(-50%,-50%)}\n.footer{position:relative;z-index:1;display:grid;grid-template-columns:15mm 1fr 1fr 1fr 15mm;gap:1.4mm;align-items:start;border:.3mm solid #e2ca8d;border-radius:3mm;padding:2mm 1.8mm 1.2mm;background:#fffdfa;font-size:5.8pt}
 .id{text-align:center;font-weight:700}.field{height:10mm;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:.2mm}.field:after{content:"";display:block;width:92%;border-bottom:.25mm dotted #7995a5;margin-top:auto;margin-bottom:.8mm}.qr{text-align:center;font-size:5pt;font-weight:700}.qr img{display:block;width:9mm;height:9mm;margin:auto}.motto{position:absolute;bottom:.8mm;left:50%;transform:translateX(-50%);font-family:Uthman,serif;font-size:6.5pt;color:#9c7b34;white-space:nowrap;background:#fffefa;padding:0 2mm;z-index:3}
 </style></head><body>${specs.map(page).join("")}</body></html>`;
 await fs.mkdir(path.dirname(out),{recursive:true});await fs.writeFile(out,html);
