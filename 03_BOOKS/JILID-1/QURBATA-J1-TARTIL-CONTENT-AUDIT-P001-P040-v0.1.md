@@ -142,3 +142,20 @@ The frozen P001–P020 v1.0 must not be edited in place. A corrected v1.1 must:
 4. preserve all other register constraints.
 
 This closes the **priority-set** lexical audit only. The book-level global unique-word inventory still requires an explicit machine-readable audit table before GLOBAL LEXICAL PASS can be declared.
+
+
+## Gate state after P001–P020 global lexical closure
+
+- P001–P020 Content Master v1.1 candidate: GLOBAL LEXICAL PASS.
+- Priority HOLD set: 0.
+- Historical invalid exact forms removed from active allocation: `يَبَسَ، ضَجَرَ`.
+- P019/P020 curated-content gate: PASS.
+- P021–P040 exact allocation/checkpoint contract: remains PASS from v0.9.
+- Dhammah exact-form evidence: PASS.
+- Detached heh source implementation: UPDATED at renderer commit `9efe5c1b`.
+- Detached heh visual artifact inspection: **PENDING**.
+- Unified P001–P040 content freeze: **BLOCKED only by required visual proof and final cross-master manifest reconciliation**.
+
+### No-premature-freeze rule
+
+A source-level CSS implementation is not equivalent to visual PASS. The project MUST NOT label HA-TWO-HOLE PASS, unified freeze, or production PDF FINAL until the four sentinel forms `هَ / هِ / هُ / ه` have been inspected from an actual render artifact.
