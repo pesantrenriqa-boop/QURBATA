@@ -179,3 +179,61 @@ P010 introduces no new lexical form; it curates previously legal P003–P009 inv
 - First-legal-page conflicts: **0**
 - P010 new lexical forms: **0**
 - Batch 2: **PASS**
+
+
+## Batch 3 — P011–P013 Fathah inventory
+
+### P011 additions
+| Form | Gloss | Status | First-legal note |
+|---|---|---|---|
+| كَتَبَ | menulis | QURAN-CONFIRMED | P011 |
+| أَكَلَ | makan | QURAN-CONFIRMED | P011 |
+| مَلَكَ | memiliki / menguasai | FUSHA-VERIFIED | P011 |
+| سَلَكَ | menempuh / memasukkan | QURAN-CONFIRMED | P011 |
+| تَرَكَ | meninggalkan | QURAN-CONFIRMED | P011 |
+
+### P012 additions
+| Form | Gloss | Status | First-legal note |
+|---|---|---|---|
+| مَنَعَ | mencegah | FUSHA-VERIFIED | P012 |
+| نَزَلَ | turun | QURAN-CONFIRMED | P012 |
+| نَصَرَ | menolong | QURAN-CONFIRMED | P012 |
+| نَفَعَ | memberi manfaat | QURAN-CONFIRMED | P012 |
+| نَفَرَ | berangkat / menjauh | FUSHA-VERIFIED | P012 |
+| نَشَرَ | menyebarkan | FUSHA-VERIFIED | P012 |
+| نَقَلَ | memindahkan | FUSHA-VERIFIED | P012 |
+| نَكَحَ | menikahi | QURAN-CONFIRMED | P012 |
+| مَسَحَ | mengusap | FUSHA-VERIFIED | P012 |
+| مَسَكَ | memegang / menahan | FUSHA-VERIFIED | P012 |
+| مَكَرَ | membuat tipu daya | QURAN-CONFIRMED | P012 |
+| مَلَأَ | memenuhi | FUSHA-VERIFIED | P012 |
+| مَرَضَ | sakit / penyakit (context-sensitive lexical use) | FUSHA-VERIFIED | P012 |
+| مَرَجَ | mencampurkan / melepaskan | FUSHA-VERIFIED | P012 |
+
+### P013 additions
+| Form | Gloss | Status | First-legal note |
+|---|---|---|---|
+| هَلَكَ | binasa | QURAN-CONFIRMED | P013 |
+| هَجَرَ | meninggalkan / menjauhi | FUSHA-VERIFIED | P013 |
+| هَدَمَ | merobohkan | FUSHA-VERIFIED | P013 |
+| هَرَبَ | melarikan diri | FUSHA-VERIFIED | P013 |
+| وَجَدَ | menemukan / mendapati | QURAN-CONFIRMED | P013 |
+| وَرَدَ | mendatangi / tiba | QURAN-CONFIRMED | P013 |
+| وَزَنَ | menimbang | FUSHA-VERIFIED | P013 |
+| وَهَبَ | menganugerahkan / memberi | QURAN-CONFIRMED | P013 |
+
+### P013 correction verification
+
+- v1.0 item `يَبَسَ`: **REJECTED AND REMOVED**.
+- Correct lexical form `يَبِسَ` is not inserted on P013 because `بِ` is not yet legal there.
+- v1.1 controlled replacement `وَهَبَ`: **PASS**; all three letters and Fathah forms are legal by P013.
+- Detached `هَ` remains subject to the separate renderer **HA-TWO-HOLE** visual gate.
+
+### Batch 3 decision
+
+- New unique forms audited: **27**
+- HOLD: **0**
+- REJECT in current v1.1 allocation: **0**
+- Historical rejected form: **1** (`يَبَسَ`, already removed)
+- First-legal-page conflicts in v1.1: **0**
+- Batch 3: **PASS**
