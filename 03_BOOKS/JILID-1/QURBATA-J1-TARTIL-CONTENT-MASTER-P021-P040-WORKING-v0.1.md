@@ -39,7 +39,7 @@ Unlike Fathah/Kasrah, many valid Form-I perfect verbs have middle-radical dhamma
 
 ### P026 — كُ لُ مُ نُ
 01–06: planting/contrast drills.  
-07–24: **كَبُرَ** becomes legal here because كُ is introduced on P026; Corpus confirms it as Form I “to be great”. Add other verified cumulative words only after exact-vowel validation.
+07–24: cumulative verified words only. **كَبُرَ is already legal from P021** because its actual Dhammah-bearing letter is بُ; P026 does not create its legality. Add other words only after exact-vowel validation.
 
 ### P027 — هُ وُ يُ ءُ
 01–06: final Dhammah planting/contrast drills; detached هُ must pass two-hole glyph audit.  
@@ -391,3 +391,29 @@ P040 does not introduce connected letters, mad, tanwin, sukun, or shaddah as new
 2. renderer proof that detached `هَ / هِ / هُ / ه` is visually two-hole.
 
 Once both pass, create a clean P021-P040 FROZEN master and then a single J1 P001-P040 production manifest. PDF production remains paused until that point.
+
+
+## Audit closure v0.9 — source evidence and remaining renderer gate
+
+### Exact Quranic Dhammah evidence — PASS
+Quranic Arabic Corpus morphology confirms:
+- `كَبُرَ` — Form I; eight Quranic occurrences under root ك ب ر. Exact perfect examples include 6:35, 10:71, 40:35, 42:13, 61:3.
+- `حَسُنَ` — Form I; exact perfect at 4:69, with feminine perfect `حَسُنَتْ` at 18:31 and 25:76.
+- `ضَعُفَ` — Form I; exact perfect at 22:73, with plural perfect `ضَعُفُوا` at 3:146.
+
+These three remain the only Dhammah lexical anchors authorized by this working master. HOLD candidates remain excluded from final allocations.
+
+### Stale contradiction removed
+The P026 blueprint has been corrected in place: `كَبُرَ` is legal from P021 because the Dhammah carrier is بُ. The old P026 rationale is no longer present as operative guidance.
+
+### Content gate status after audit
+- REGISTER: PASS
+- P021-P039 exact allocation: PASS
+- P040 exact checkpoint inventory: PASS
+- Dhammah exact-form evidence: PASS
+- No pseudo-word in P021-P040 allocation: PASS
+- HOLD candidates excluded from allocation: PASS
+- Detached ه two-hole visual proof: **PENDING RENDERER**
+- PDF production: **BLOCKED until HA-TWO-HOLE PASS**
+
+The next repository action is renderer-only: preserve Unicode `ه` and frozen KFGQPC Uthman Taha policy while producing a visually two-hole detached glyph at P013/P019/P027/P040 sentinels. No content may be changed to solve that renderer issue.
