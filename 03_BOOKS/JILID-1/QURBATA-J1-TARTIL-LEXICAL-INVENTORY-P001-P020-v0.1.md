@@ -57,3 +57,59 @@ Priority-set audit: PASS
 Versioned correction v1.1: PASS  
 Global unique-word audit: IN PROGRESS  
 Unified P001–P040 freeze: BLOCKED
+
+
+## Batch 1 — P003–P006 Fathah inventory
+
+Audit target is the exact-harakat inventory actually used by the v1.1 candidate.
+
+### P003
+| Form | Gloss | Status | First-legal note |
+|---|---|---|---|
+| بَحَثَ | mencari / meneliti | FUSHA-VERIFIED | P003: بَ، حَ، ثَ legal |
+
+### P004
+| Form | Gloss | Status | First-legal note |
+|---|---|---|---|
+| جَحَدَ | mengingkari | FUSHA-VERIFIED | P004 |
+| حَذَرَ | waspada / takut | FUSHA-VERIFIED | P004 |
+| بَدَأَ | memulai | FUSHA-VERIFIED | P004 |
+| أَخَذَ | mengambil | QURAN-CONFIRMED | P004 |
+| خَبَرَ | mengetahui / menguji (lexical senses) | FUSHA-VERIFIED | P004 |
+| بَرَزَ | tampil / keluar | FUSHA-VERIFIED | P004 |
+| حَرَثَ | membajak / mengolah tanah | FUSHA-VERIFIED | P004 |
+
+### P005 additions
+| Form | Gloss | Status | First-legal note |
+|---|---|---|---|
+| دَرَسَ | belajar / mempelajari | FUSHA-VERIFIED | P005 |
+| سَجَدَ | bersujud | QURAN-CONFIRMED | P005 |
+| حَسَدَ | dengki | FUSHA-VERIFIED | P005 |
+| حَبَسَ | menahan | FUSHA-VERIFIED | P005 |
+| حَرَسَ | menjaga | FUSHA-VERIFIED | P005 |
+| سَبَحَ | berenang / bergerak melaju | FUSHA-VERIFIED | P005 |
+| شَرَحَ | menjelaskan / melapangkan | FUSHA-VERIFIED | P005 |
+| شَرَدَ | lari / menyimpang | FUSHA-VERIFIED | P005 |
+| شَرَبَ | minum | QURAN-CONFIRMED | P005 |
+| سَحَبَ | menarik | FUSHA-VERIFIED | P005 |
+
+### P006 additions
+| Form | Gloss | Status | First-legal note |
+|---|---|---|---|
+| صَبَرَ | bersabar | FUSHA-VERIFIED | P006 |
+| ضَرَبَ | memukul / membuat perumpamaan (context-dependent) | QURAN-CONFIRMED | P006 |
+| حَصَدَ | menuai | FUSHA-VERIFIED | P006 |
+| رَصَدَ | mengamati / mengintai | FUSHA-VERIFIED | P006 |
+| صَرَخَ | berteriak | FUSHA-VERIFIED | P006 |
+| صَدَرَ | keluar / terbit | FUSHA-VERIFIED | P006 |
+| ضَحَكَ | tertawa | QURAN-CONFIRMED | P006 |
+
+### Batch 1 decision
+
+- Unique forms audited: **25**
+- HOLD: **0**
+- REJECT: **0**
+- First-legal-page conflicts: **0**
+- Batch 1: **PASS**
+
+Note: QURAN-CONFIRMED is used only for items whose exact form is established; the remainder are conservatively classified FUSHA-VERIFIED rather than being promoted merely because their roots occur in the Qur'an.
