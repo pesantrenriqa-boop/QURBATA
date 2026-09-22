@@ -237,3 +237,56 @@ P010 introduces no new lexical form; it curates previously legal P003–P009 inv
 - Historical rejected form: **1** (`يَبَسَ`, already removed)
 - First-legal-page conflicts in v1.1: **0**
 - Batch 3: **PASS**
+
+
+## Batch 4 — P014–P018 Kasrah inventory
+
+Kasrah legality is checked on the exact consonant carrying kasrah.
+
+### P014
+| Form | Segmentation | Gloss | Status | First-legal note |
+|---|---|---|---|---|
+| تَبِعَ | تَ + بِ + عَ | mengikuti | QURAN-CONFIRMED | P014: بِ introduced |
+
+### P015
+| Form | Segmentation | Gloss | Status | First-legal note |
+|---|---|---|---|---|
+| نَدِمَ | نَ + دِ + مَ | menyesal | FUSHA-VERIFIED | P015: دِ introduced |
+
+### P016
+| Form | Segmentation | Gloss | Status | First-legal note |
+|---|---|---|---|---|
+| فَرِحَ | فَ + رِ + حَ | bergembira | QURAN-CONFIRMED | P016: رِ introduced |
+| شَرِبَ | شَ + رِ + بَ | minum | QURAN-CONFIRMED | P016 |
+| خَسِرَ | خَ + سِ + رَ | merugi | QURAN-CONFIRMED | P016: سِ introduced |
+| رَحِمَ | رَ + حِ + مَ | menyayangi | FUSHA-VERIFIED | P015 already permits حِ |
+| حَسِبَ | حَ + سِ + بَ | mengira / memperhitungkan | QURAN-CONFIRMED | P016 |
+
+### P017
+| Form | Segmentation | Gloss | Status | First-legal note |
+|---|---|---|---|---|
+| غَضِبَ | غَ + ضِ + بَ | marah | QURAN-CONFIRMED | P017: ضِ introduced |
+| مَرِضَ | مَ + رِ + ضَ | sakit | FUSHA-VERIFIED | P016 already permits رِ |
+| نَشِطَ | نَ + شِ + طَ | giat / bersemangat | FUSHA-VERIFIED | P016: شِ introduced |
+| عَطِشَ | عَ + طِ + شَ | haus | FUSHA-VERIFIED | P017: طِ introduced |
+
+### P018
+| Form | Segmentation | Gloss | Status | First-legal note |
+|---|---|---|---|---|
+| قَبِلَ | قَ + بِ + لَ | menerima | FUSHA-VERIFIED | بِ legal since P014 |
+| عَرِفَ | عَ + رِ + فَ | mengetahui / mengenal | FUSHA-VERIFIED | رِ legal since P016 |
+| عَجِبَ | عَ + جِ + بَ | merasa heran | FUSHA-VERIFIED | جِ legal since P014 |
+| خَطِفَ | خَ + طِ + فَ | menyambar / merampas cepat | FUSHA-VERIFIED | طِ legal since P017 |
+| وَسِعَ | وَ + سِ + عَ | luas / mencakup | QURAN-CONFIRMED | سِ legal since P016 |
+
+### Historical rejected form placement
+
+`ضَجِرَ` = ضَ + جِ + رَ is morphologically the intended verb and becomes harakat-legal from P014 because `جِ` is introduced there. It is **not automatically inserted** into the allocation; v1.1 correctly removes the invalid Fathah-form `ضَجَرَ` and uses a controlled verified replacement.
+
+### Batch 4 decision
+
+- Kasrah lexical forms audited: **15**
+- HOLD: **0**
+- REJECT in current allocation: **0**
+- First-legal-page conflicts: **0**
+- Batch 4: **PASS**
