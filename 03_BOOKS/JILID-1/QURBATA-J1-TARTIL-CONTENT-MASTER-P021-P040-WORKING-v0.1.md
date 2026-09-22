@@ -348,3 +348,46 @@ All groups below are selected from the already approved Fathah/Kasrah bank plus 
 - Dhammah scarcity is handled by controlled repetition of Quran-confirmed anchors, not vowel mutation.
 - P039 is now a fixed 24-group pre-checkpoint set.
 - P040 remains governed by the checkpoint contract rather than a normal 24-group page.
+
+
+## Book-level audit P001-P040 v0.8 — findings and corrections
+
+### Audit result
+- P001-P020 authority file reviewed against P021-P040 allocation.
+- P021-P039 allocation count: PASS (24 groups on each normal page).
+- P040 special checkpoint contract: STRUCTURE PASS, exact layout pending renderer stage.
+- Pseudo-word prohibition: PASS in current P021-P039 allocations.
+- First-legal Dhammah carrier: PASS for approved anchors كَبُرَ / حَسُنَ / ضَعُفَ.
+- Detached ه two-hole: CONTENT PASS / RENDERER PENDING.
+- Full lexical-source audit for every legacy Fathah/Kasrah item: NOT YET GLOBAL PASS; the P001-P020 frozen master remains its current authority.
+
+### Superseded contradiction
+The early P026 blueprint sentence stating that **كَبُرَ** becomes legal at P026 because of كُ is formally **SUPERSEDED**. Exact form is كَ + بُ + رَ; therefore its first legal page is P021 because the Dhammah-bearing letter is بُ.
+
+### Quranic exact-form evidence retained
+- **كَبُرَ**: exact perfect form is attested, including 10:71 and 40:35.
+- **ضَعُفَ**: exact perfect form is attested at 22:73; plural perfect **ضَعُفُوا** also occurs at 3:146.
+- **حَسُنَ** remains an approved Form-I anchor according to the recorded Corpus morphology audit.
+
+### P040 exact checkpoint inventory
+**A. 29 letter identities without harakat**
+`ء ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي`
+
+**B. Harakat names/signs**
+- `فَتْحَة` — َ
+- `كَسْرَة` — ِ
+- `ضَمَّة` — ُ
+
+**C. Balanced reading assessment — 24 groups**
+01 `بَحَثَ` | 02 `دَرَسَ` | 03 `صَبَرَ` | 04 `ضَرَبَ` | 05 `عَبَدَ` | 06 `فَتَحَ` | 07 `قَرَأَ` | 08 `كَتَبَ`
+09 `تَبِعَ` | 10 `فَرِحَ` | 11 `شَرِبَ` | 12 `خَسِرَ` | 13 `عَلِمَ` | 14 `عَمِلَ` | 15 `سَمِعَ` | 16 `حَفِظَ`
+17 `كَبُرَ` | 18 `حَسُنَ` | 19 `ضَعُفَ` | 20 `كَبُرَ` | 21 `حَسُنَ` | 22 `ضَعُفَ` | 23 `كَبُرَ` | 24 `حَسُنَ`.
+
+P040 does not introduce connected letters, mad, tanwin, sukun, or shaddah as new Tartil competencies.
+
+### Freeze decision
+**DO NOT FREEZE P021-P040 YET.** Content allocation is complete, but two gates remain external to this content file:
+1. global lexical/source-status audit of inherited Fathah/Kasrah bank where evidence is not explicitly recorded;
+2. renderer proof that detached `هَ / هِ / هُ / ه` is visually two-hole.
+
+Once both pass, create a clean P021-P040 FROZEN master and then a single J1 P001-P040 production manifest. PDF production remains paused until that point.
