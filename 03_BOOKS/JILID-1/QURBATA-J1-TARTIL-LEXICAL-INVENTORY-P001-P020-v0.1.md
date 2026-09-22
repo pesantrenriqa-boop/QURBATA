@@ -113,3 +113,69 @@ Audit target is the exact-harakat inventory actually used by the v1.1 candidate.
 - Batch 1: **PASS**
 
 Note: QURAN-CONFIRMED is used only for items whose exact form is established; the remainder are conservatively classified FUSHA-VERIFIED rather than being promoted merely because their roots occur in the Qur'an.
+
+
+## Batch 2 — P007–P010 Fathah inventory
+
+### P007 additions
+| Form | Gloss | Status | First-legal note |
+|---|---|---|---|
+| بَسَطَ | membentangkan / melapangkan | QURAN-CONFIRMED | P007 |
+| شَطَرَ | membelah / menuju sisi | FUSHA-VERIFIED | P007 |
+| طَرَحَ | melempar / mengajukan | FUSHA-VERIFIED | P007 |
+| طَرَدَ | mengusir | FUSHA-VERIFIED | P007 |
+| طَبَخَ | memasak | FUSHA-VERIFIED | P007 |
+| طَبَعَ | mencetak / menutup (context-dependent) | FUSHA-VERIFIED | P007 |
+
+### P008 additions
+| Form | Gloss | Status | First-legal note |
+|---|---|---|---|
+| عَبَدَ | menyembah | QURAN-CONFIRMED | P008 |
+| رَجَعَ | kembali | QURAN-CONFIRMED | P008 |
+| غَدَرَ | berkhianat | FUSHA-VERIFIED | P008 |
+| عَرَضَ | menampilkan / menawarkan | FUSHA-VERIFIED | P008 |
+| غَضَبَ | marah / kemurkaan (context-dependent) | FUSHA-VERIFIED | P008 |
+| عَجَزَ | lemah / tidak mampu | FUSHA-VERIFIED | P008 |
+| عَبَرَ | menyeberang / mengambil pelajaran | FUSHA-VERIFIED | P008 |
+| عَثَرَ | tersandung / menemukan | FUSHA-VERIFIED | P008 |
+| شَعَرَ | mengetahui / merasakan | FUSHA-VERIFIED | P008 |
+| سَحَرَ | menyihir | FUSHA-VERIFIED | P008 |
+| عَصَرَ | memeras | FUSHA-VERIFIED | P008 |
+| غَرَسَ | menanam | FUSHA-VERIFIED | P008 |
+| غَرَفَ | mengambil / menciduk | FUSHA-VERIFIED | P008 |
+| غَرَقَ | tenggelam | FUSHA-VERIFIED | P008 |
+
+### P009 additions
+| Form | Gloss | Status | First-legal note |
+|---|---|---|---|
+| فَتَحَ | membuka | QURAN-CONFIRMED | P009 |
+| قَرَأَ | membaca | QURAN-CONFIRMED | P009 |
+| فَطَرَ | menciptakan / membelah | QURAN-CONFIRMED | P009 |
+| رَفَعَ | mengangkat | QURAN-CONFIRMED | P009 |
+| دَفَعَ | menolak / mendorong | QURAN-CONFIRMED | P009 |
+| فَرَضَ | menetapkan / mewajibkan | QURAN-CONFIRMED | P009 |
+| فَرَقَ | memisahkan | FUSHA-VERIFIED | P009 |
+| قَطَعَ | memotong | QURAN-CONFIRMED | P009 |
+| قَعَدَ | duduk | QURAN-CONFIRMED | P009 |
+| قَبَضَ | menggenggam / menahan | FUSHA-VERIFIED | P009 |
+| قَدَرَ | menentukan / mengukur | FUSHA-VERIFIED | P009 |
+| قَرَعَ | mengetuk / memukul | FUSHA-VERIFIED | P009 |
+| سَفَرَ | bepergian / menyingkap | FUSHA-VERIFIED | P009 |
+| شَفَعَ | memberi syafaat / menggenapkan | FUSHA-VERIFIED | P009 |
+| صَرَفَ | memalingkan / mengalihkan | FUSHA-VERIFIED | P009 |
+| فَقَدَ | kehilangan | FUSHA-VERIFIED | P009 |
+| قَذَفَ | melempar | QURAN-CONFIRMED | P009 |
+| قَصَدَ | menuju / bermaksud | FUSHA-VERIFIED | P009 |
+
+### P010 checkpoint
+
+P010 introduces no new lexical form; it curates previously legal P003–P009 inventory.
+
+### Batch 2 decision
+
+- New unique forms audited: **38**
+- HOLD: **0**
+- REJECT: **0**
+- First-legal-page conflicts: **0**
+- P010 new lexical forms: **0**
+- Batch 2: **PASS**
