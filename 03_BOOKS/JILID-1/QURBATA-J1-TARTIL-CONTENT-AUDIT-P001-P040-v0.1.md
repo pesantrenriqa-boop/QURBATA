@@ -113,3 +113,32 @@ REJECT: `يَبَسَ`
 HOLD: `مَرَجَ، ضَجَرَ، شَفَعَ`
 
 Unified freeze remains blocked until HOLD=0 and the P013 correction is issued as a versioned master amendment.
+
+
+## Lexical audit pass C — close remaining HOLD set
+
+Authoritative/lexicographic evidence closes the remaining priority HOLD set:
+
+| Item | Result | Note | Decision |
+|---|---|---|---|
+| مَرَجَ | FUSHA-VERIFIED | exact form recorded; among meanings: mixed/released/let graze | KEEP |
+| شَفَعَ | FUSHA-VERIFIED | exact form recorded; interceded / joined a like thing to it | KEEP |
+| ضَجَرَ | **REJECT EXACT FORM AS VERB** | dictionaries identify the verb as ضَجِرَ; ضَجَر is its verbal noun | REMOVE/REPLACE |
+
+### Priority re-check closure
+
+Priority HOLD count is now **0**.
+
+- KEEP: `شَطَرَ، مَرَجَ، نَشِطَ، عَطِشَ، خَطِفَ، رَصَدَ، قَرَعَ، شَفَعَ`
+- REJECT exact form: `يَبَسَ، ضَجَرَ`
+
+### Versioned correction requirement
+
+The frozen P001–P020 v1.0 must not be edited in place. A corrected v1.1 must:
+
+1. replace `يَبَسَ` with a page-legal verified Fathah item or controlled repetition;
+2. replace `ضَجَرَ` with a page-legal verified Fathah item or controlled repetition;
+3. retain `يَبِسَ` and `ضَجِرَ` only for a later page where the actual Kasrah-bearing letter is legal;
+4. preserve all other register constraints.
+
+This closes the **priority-set** lexical audit only. The book-level global unique-word inventory still requires an explicit machine-readable audit table before GLOBAL LEXICAL PASS can be declared.
