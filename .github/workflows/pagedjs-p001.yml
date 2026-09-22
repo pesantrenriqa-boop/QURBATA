@@ -1,4 +1,4 @@
-name: Paged.js P001 Prototype
+name: Paged.js J1 Renderer Audit
 on:
   push:
     branches: [renderer/pagedjs-p001-prototype]
@@ -26,7 +26,23 @@ jobs:
       - run: mkdir -p dist/fonts && cp fonts/KFGQPC-Uthman-Taha-Naskh.woff2 dist/fonts/KFGQPC-Uthman-Taha-Naskh.woff2
       - run: npm run build:pagedjs:p001-p020:pdf
         timeout-minutes: 5
+      - name: Audit detached heh sentinel wiring
+        run: |
+          grep -q 'heh-two-hole' scripts/build-pagedjs-p001-p010.mjs
+          grep -q 'Uthman' scripts/build-pagedjs-p001-p010.mjs
+          echo "HA_SENTINEL_SOURCE_PASS"
+      - name: Record renderer audit manifest
+        run: |
+          {
+            echo "commit=$GITHUB_SHA"
+            echo "font=KFGQPC-Uthman-Taha-Naskh"
+            echo "unicode_heh=U+0647"
+            echo "sentinels=P013:P019:P027:P040"
+            echo "status=VISUAL_REVIEW_REQUIRED"
+          } > dist/HA-TWO-HOLE-AUDIT.txt
       - uses: actions/upload-artifact@v4
         with:
           name: QURBATA-P001-P020-PAGEDJS
-          path: production/vivliostyle/dist/QURBATA-J1-P001-P020-PAGEDJS.pdf
+          path: |
+            production/vivliostyle/dist/QURBATA-J1-P001-P020-PAGEDJS.pdf
+            production/vivliostyle/dist/HA-TWO-HOLE-AUDIT.txt
