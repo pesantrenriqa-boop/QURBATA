@@ -290,3 +290,61 @@ Kasrah legality is checked on the exact consonant carrying kasrah.
 - REJECT in current allocation: **0**
 - First-legal-page conflicts: **0**
 - Batch 4: **PASS**
+
+
+## Batch 5 — P019–P020 curated cumulative inventory
+
+### P019 additions / final Kasrah closure
+| Form | Segmentation | Gloss | Status | First-legal note |
+|---|---|---|---|---|
+| عَلِمَ | عَ + لِ + مَ | mengetahui | QURAN-CONFIRMED | P019: لِ legal |
+| عَمِلَ | عَ + مِ + لَ | mengerjakan / beramal | QURAN-CONFIRMED | P019: مِ legal |
+| سَمِعَ | سَ + مِ + عَ | mendengar | QURAN-CONFIRMED | P019 |
+| شَهِدَ | شَ + هِ + دَ | menyaksikan | QURAN-CONFIRMED | P019: هِ legal |
+| وَرِثَ | وَ + رِ + ثَ | mewarisi | QURAN-CONFIRMED | رِ legal since P016 |
+| حَفِظَ | حَ + فِ + ظَ | menjaga / menghafal | QURAN-CONFIRMED | P018: فِ legal |
+| فَهِمَ | فَ + هِ + مَ | memahami | FUSHA-VERIFIED | P019: هِ legal |
+
+All other P019 core items were already audited in Batch 4:
+`تَبِعَ، فَرِحَ، شَرِبَ، خَسِرَ، رَحِمَ، حَسِبَ، غَضِبَ، وَسِعَ، نَدِمَ، قَبِلَ، عَرِفَ`.
+
+### P020 checkpoint core
+
+P020 introduces no new 3-letter lexical item. Its 18-word core is a curated reuse of previously audited Fathah/Kasrah forms:
+`بَسَطَ، دَرَسَ، صَبَرَ، ضَرَبَ، عَبَدَ، غَفَرَ، فَتَحَ، قَرَأَ، كَتَبَ، نَصَرَ، وَجَدَ، عَلِمَ، عَمِلَ، فَرِحَ، شَرِبَ، سَمِعَ، حَسِبَ، وَرِثَ`.
+
+### Additional inherited item found by checkpoint reconciliation
+
+| Form | Gloss | Status | First-legal note |
+|---|---|---|---|
+| غَفَرَ | mengampuni | QURAN-CONFIRMED | P009: غَ، فَ، رَ already legal |
+
+### Batch 5 decision
+
+- New unique forms audited: **8**
+- HOLD: **0**
+- REJECT in current v1.1 allocation: **0**
+- First-legal-page conflicts: **0**
+- P019 curated core: **PASS**
+- P020 curated core: **PASS**
+- Batch 5: **PASS**
+
+## Global lexical audit closure — P001–P020
+
+All five audit batches are complete.
+
+- Batch 1 P003–P006: PASS
+- Batch 2 P007–P010: PASS
+- Batch 3 P011–P013: PASS
+- Batch 4 P014–P018: PASS
+- Batch 5 P019–P020: PASS
+- Current v1.1 HOLD: **0**
+- Current v1.1 REJECT: **0**
+- Historical rejected forms removed: `يَبَسَ، ضَجَرَ`
+- First-legal-page conflicts in current v1.1 allocation: **0**
+- P019/P020 curated-content gate: **PASS**
+
+**GLOBAL LEXICAL PASS — P001–P020**
+
+Remaining non-lexical blocker before unified P001–P040 freeze:
+**HA-TWO-HOLE VISUAL PASS** for detached `هَ / هِ / هُ / ه`.
