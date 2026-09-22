@@ -62,3 +62,34 @@ Do **not** freeze P021–P040 or unified P001–P040 until:
 
 `GLOBAL LEXICAL PASS → HA-TWO-HOLE VISUAL PASS → UNIFIED CONTENT FREEZE → GENERATOR MIGRATION → BUILD → VISUAL AUDIT`
 
+
+
+## Lexical audit pass A — priority re-check set
+
+External dictionary verification was performed for the priority set. Production classification is conservative: an item is not promoted unless the exact vocalized form is supported.
+
+| Item | Audit status | Meaning / note | Production decision |
+|---|---|---|---|
+| شَطَرَ | FUSHA-VERIFIED | berpisah/menjauh; also verb under root شطر | KEEP |
+| مَرَجَ | HOLD | exact fully-vocalized production form not yet independently closed in this pass | HOLD |
+| يَبَسَ | **REJECT EXACT FORM** | authoritative dictionary gives perfect **يَبِسَ**, “menjadi kering” | REMOVE/REPLACE if present as verb |
+| نَشِطَ | FUSHA-VERIFIED | giat/bersemangat | KEEP |
+| عَطِشَ | FUSHA-VERIFIED | haus | KEEP |
+| خَطِفَ | HOLD | exact vocalization still requires authoritative closure | HOLD |
+| رَصَدَ | FUSHA-VERIFIED | mengamati/mengintai | KEEP |
+| ضَجَرَ | HOLD | exact vocalization/source closure pending | HOLD |
+| قَرَعَ | HOLD | exact vocalization/source closure pending | HOLD |
+| شَفَعَ | HOLD | exact vocalization/source closure pending | HOLD |
+
+### Correction required
+
+The P013 allocation in frozen v1.0 currently lists `يَبَسَ`. This cannot remain as an exact-harakat verb under the strict v1.6.4 rule. The verified Form-I perfect is `يَبِسَ`, whose kasrah on ب makes it illegal on P013 (Fathah stage). Therefore:
+
+- do **not** silently alter frozen v1.0;
+- issue a v1.1 correction before unified freeze;
+- replace the P013 `يَبَسَ` slot with a previously verified, page-legal Fathah word or controlled repetition;
+- `يَبِسَ` may only be considered on/after the page where بِ is legal.
+
+### Gate impact
+
+Global inherited Fathah/Kasrah lexical-source audit remains **PENDING**. This pass found one concrete exact-harakat defect (`يَبَسَ`) and four HOLD items requiring closure. Unified content freeze remains blocked.
