@@ -93,3 +93,23 @@ The P013 allocation in frozen v1.0 currently lists `يَبَسَ`. This cannot r
 ### Gate impact
 
 Global inherited Fathah/Kasrah lexical-source audit remains **PENDING**. This pass found one concrete exact-harakat defect (`يَبَسَ`) and four HOLD items requiring closure. Unified content freeze remains blocked.
+
+
+## Lexical audit pass B — authoritative dictionary closure
+
+Using Cairo Arabic Language Academy dictionary evidence:
+
+- `خَطِفَ` — **FUSHA-VERIFIED**. The dictionary explicitly records `خَطِفَ` as a Form-I perfect variant with meaning equivalent to `خَطَفَ`. **KEEP**.
+- `قَرَعَ` — **FUSHA-VERIFIED**. Exact perfect is explicitly recorded, including “ضربه / طرق الباب”. **KEEP**.
+- `يَبَسَ` — remains **REJECT EXACT FORM**; correction to `يَبِسَ` remains required and page legality must be recalculated.
+- `مَرَجَ`, `ضَجَرَ`, `شَفَعَ` — remain **HOLD** until exact-vocalization evidence is attached.
+
+### Priority-set status after pass B
+
+KEEP: `شَطَرَ، نَشِطَ، عَطِشَ، رَصَدَ، خَطِفَ، قَرَعَ`
+
+REJECT: `يَبَسَ`
+
+HOLD: `مَرَجَ، ضَجَرَ، شَفَعَ`
+
+Unified freeze remains blocked until HOLD=0 and the P013 correction is issued as a versioned master amendment.
