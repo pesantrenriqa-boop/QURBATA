@@ -1,4 +1,5 @@
 name: Paged.js J1 Renderer Audit
+# audit-trigger: full P001-P040 candidate + detached-heh visual gate
 on:
   push:
     branches: [renderer/pagedjs-p001-prototype]
