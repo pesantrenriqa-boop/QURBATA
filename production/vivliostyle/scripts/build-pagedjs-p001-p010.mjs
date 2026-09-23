@@ -107,7 +107,7 @@ const logo="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABYCAYAAABI8oFvAA
 const qr=await QRCode.toDataURL("https://rumahilmualquran.com",{margin:0,width:128});
 const page=spec=>{const exercises=exercisesFor(spec.n);if(exercises.length!==24)throw new Error("24-cell gate failed");const renderToken=x=>String(x).replace(/(^|\\s)(ه[َُِ]?)(?=\\s|$)/g,(m,lead,h)=>`${lead}<span class="heh-two-hole">${h}</span>`);const cells=exercises.map(x=>`<div class="cell${/[جحخعغ]/.test(x)?" low-descender":""}" dir="rtl">${renderToken(x)}</div>`).join("");return `<article class="page">
 <header class="header"><div class="logo"><div class="logo-main"><img class="logo-mark" src="../assets/qurbata-logo.svg" alt=""><span class="logo-name">QURBATA</span></div><small>Quran · Bahasa Arab · Tahfidz · Akhlak</small></div><h1></h1><div class="page-no">${spec.n}</div></header>
-<section class="plant${(spec.n===10||spec.n===20)?" evaluation-title":""}${spec.transition?" transition-title":""}${spec.checkpoint?" checkpoint-title":""}"><div class="ar">${spec.a}</div>${spec.checkpoint?'<div class="checkpoint-meta ar">ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي ء<br><span>فَتْحَة · كَسْرَة</span></div>':""}</section>
+<section class="plant${(spec.n===10||spec.n===20)?" evaluation-title":""}${spec.transition?" transition-title":""}${spec.checkpoint?" checkpoint-title":""}"><div class="ar">${spec.a}</div>${spec.checkpoint?`<div class="checkpoint-meta ar">${spec.n===40?"ء ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي":"ء ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي"}<br><span>${spec.n===40?"فَتْحَة · كَسْرَة · ضَمَّة":"فَتْحَة · كَسْرَة"}</span></div>`:""}</section>
 <section class="integrations">
 <div class="card"><b>${spec.tf[0]}</b><div class="ar">${spec.tf[1]}</div><small>${spec.tf[2]}</small></div>
 <div class="card"><b>${spec.ba[0]}</b><div class="ar">${spec.ba[1]}</div><small>${spec.ba[2]}</small></div>
@@ -116,7 +116,7 @@ const page=spec=>{const exercises=exercisesFor(spec.n);if(exercises.length!==24)
 <section class="practice"><div class="grid">${cells}</div></section>
 <footer class="footer"><div class="id">QJ1-P${String(spec.n).padStart(3,"0")}</div><div class="field"><span>Tanggal</span></div><div class="field"><span>Nilai</span></div><div class="field"><span>TTD</span></div><div class="qr"><img src="${qr}">RIQA OS</div></footer>
 <div class="motto">تَعَلَّمْ — اِعْمَلْ — عَلِّمْ</div></article>`};
-const html=`<!doctype html><html lang="id"><head><meta charset="utf-8"><title>QURBATA P001-P020 Paged.js</title><style>
+const html=`<!doctype html><html lang="id"><head><meta charset="utf-8"><title>QURBATA P001-P040 Paged.js</title><style>
 @font-face{font-family:Uthman;src:url("./fonts/KFGQPC-Uthman-Taha-Naskh.woff2") format("woff2")}
 @page{size:A5 portrait;margin:5mm}*{box-sizing:border-box}html,body{margin:0;padding:0;background:#fffdf8}
 .page{position:relative;width:138mm;height:200mm;padding:3.5mm;overflow:hidden;display:grid;grid-template-rows:9mm 20mm 21mm 1fr 17mm;gap:1.35mm;font-family:Arial,sans-serif;color:#173b52;border:.35mm solid #d9b968;break-after:page;background:linear-gradient(180deg,#fffefa,#fff)}
