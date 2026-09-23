@@ -47,15 +47,25 @@ The production generator MUST:
 | Dhammah exact anchors | PASS |
 | HOLD in production allocation | 0 |
 | Pseudo-word in production allocation | 0 |
-| Detached-heh source wiring | PASS |
+| Detached-heh source wiring | PASS — including isolated heh tokens inside multi-token drills |
 | Detached-heh visual proof | **PENDING** |
-| Unified final content freeze | **PENDING visual gate** |
-| Generator migration | **NOT STARTED under this manifest** |
+| Original QURBATA logo asset | **PENDING — repo currently contains traced SVG only** |\n| Unified final content freeze | **PENDING visual + logo gates** |
+| Generator migration | **PASS — exact governed allocations wired through P040; P021–P027 planting sets and P028 identity rotation enforced** |
 | Production PDF | **BLOCKED** |
 
 ## Release rule
 No artifact may be labeled FINAL until:
 
-`HA-TWO-HOLE VISUAL PASS → UNIFIED CONTENT FREEZE → GENERATOR MIGRATION → 40-PAGE BUILD → VISUAL/CONTENT AUDIT PASS`
+`ORIGINAL-LOGO ASSET PASS → HA-TWO-HOLE VISUAL PASS → UNIFIED CONTENT FREEZE → 40-PAGE BUILD → VISUAL/CONTENT AUDIT PASS`
 
 This candidate manifest is intentionally prepared before the visual gate so generator migration can begin immediately after the sentinel proof passes without reopening curriculum decisions.
+
+
+## Migration reconciliation — 2026-09-23
+- P001–P020 generator uses approved content-master allocations; random 3-letter construction is disabled.
+- P021–P027 now use the exact 6 planting groups + 18 approved WORD groups per page.
+- P028–P039 now use the exact 24-group allocations from the reconciled P021–P040 candidate master.
+- P028 explicitly carries the full 29-letter identity rotation required by its register.
+- P020 checkpoint remains Fathah + Kasrah; P040 checkpoint carries Fathah + Kasrah + Dhammah and the exact 29-letter inventory.
+- Detached-heh visual handling now applies to isolated `هَ / هِ / هُ / ه` tokens even when they occur inside multi-token drills.
+- Generator migration is therefore content-side PASS. Final release remains blocked by the actual visual proof and original-logo asset gate.
