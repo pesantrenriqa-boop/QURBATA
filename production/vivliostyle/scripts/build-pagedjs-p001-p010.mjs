@@ -109,7 +109,7 @@ function exercisesFor(n){
  }
  if(n>=28&&n<=39)return assertUniquePage(n,rotateUnique(uniqueReviewPool,(n-28)*24,24));
  if(n===1)return assertUniquePage(n,p1);
- if(n===2){const p=["أَ","بَ","تَ","ثَ"];const pairs=[];for(let i=0;i<p.length;i++)for(let j=0;j<p.length;j++)if(i!==j)pairs.push(p[i]+" "+p[j]);return assertUniquePage(n,rotateUnique(pairs,0,12).concat(rotateUnique(pairs,1,12).map(x=>x.split(" ").reverse().join(" "))));}
+ if(n===2){const p=["ءَ","أَ","بَ","تَ","ثَ"];const pairs=[];for(let i=0;i<p.length;i++)for(let j=0;j<p.length;j++)if(i!==j)pairs.push(p[i]+" "+p[j]);const singles=p.map(x=>x);return assertUniquePage(n,[...pairs,...singles.slice(0,4)]);}
  const words=approvedWords[n]||[];
  if(n===10){const w=rotateUnique(approvedWords[9],0,18);return assertUniquePage(n,[...twoLetter(n),...w].slice(0,24));}
  if(n===20)return assertUniquePage(n,[...twoLetter(n),...rotateUnique(words,0,18)].slice(0,24));
