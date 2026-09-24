@@ -419,3 +419,21 @@ Generator boleh tetap menghasilkan 24 kelompok, tetapi daftar akhir harus melewa
 
 ### 4. Updated FINAL gate
 `REGISTER PASS → CONTENT PASS → 3-LETTER-WORD PASS → HA-TWO-HOLE PASS → OPEN-GRID PASS → P019/P020-CURATED PASS → LAYOUT PASS → PDF PASS`.
+
+
+## v1.6.5 — ZERO-DUPLICATE EXAMPLE GATE (FROZEN ADDENDUM)
+
+Effective for Jilid 1 P001–P040 production:
+
+1. **No identical exercise group may appear twice on the same page.**
+2. **No identical 3-letter word may be repeated on the same page.**
+3. Repetition of a competency is achieved through the **target letter/harakat**, not by mechanically repeating the same word.
+4. Dhammah planting pages P021–P027 target approximately **60% active competency : 40% cumulative review**; current 24-slot implementation is 14 active slots (58.3%) and 10 review slots (41.7%).
+5. Every 3-letter example remains a real meaningful Arabic word with its printed harakat.
+6. If the legal meaningful-word stock for a page is insufficient, use **unique 2-letter detached drills** rather than inventing a word or duplicating one.
+7. All Tartil practice letters in Jilid 1 remain **detached/tunggal**. Connected forms are not a Jilid 1 competency.
+8. Production generator must fail when the within-page duplicate gate fails.
+
+Production gate becomes:
+
+`REGISTER PASS → CONTENT PASS → LEGAL-WORD PASS → ZERO-DUPLICATE PASS → 60/40 PASS → DETACHED-LETTER PASS → HA-GLYPH PASS → LAYOUT PASS → PDF PASS`
