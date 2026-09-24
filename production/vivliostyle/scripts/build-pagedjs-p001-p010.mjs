@@ -95,6 +95,7 @@ function exercisesFor(n){
  if(n===1)return p1;
  if(n===2){const p=["أَ","بَ","تَ","ثَ"];return Array.from({length:24},(_,i)=>p[i%4]+" "+p[(i*3+1)%4]);}
  const words=approvedWords[n]||[];
+ if(n===10){const w=approvedWords[9];if(w?.length!==18)throw new Error("P010 requires 18 approved Fathah WORD slots");return [...twoLetter(10),...w].slice(0,24);}
  if(n===20)return [...twoLetter(n),...words].slice(0,24);
  const drills=twoLetter(n);
  const out=[...drills];
