@@ -107,7 +107,7 @@ const logo="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABYCAYAAABI8oFvAA
 
 const qr=await QRCode.toDataURL("https://rumahilmualquran.com",{margin:0,width:128});
 const identityRotation28="ء ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي";
-const page=spec=>{const exercises=exercisesFor(spec.n);if(exercises.length!==24)throw new Error("24-cell gate failed");const renderToken=x=>String(x).replace(/(^|\\s)(ه[َُِ]?)(?=\\s|$)/g,(m,lead,h)=>`${lead}<span class="heh-two-hole">${h}</span>`);const cells=exercises.map(x=>`<div class="cell${/[جحخعغ]/.test(x)?" low-descender":""}" dir="rtl">${renderToken(x)}</div>`).join("");return `<article class="page">
+const page=spec=>{const exercises=exercisesFor(spec.n);if(exercises.length!==24)throw new Error("24-cell gate failed");const renderToken=x=>String(x).replace(/(^|\\s)(ه[َُِ]?)(?=\\s|$)/g,(m,lead,h)=>`${lead}<span class="heh-two-hole">${h}</span>`);const cells=exercises.map(x=>`<div class="cell${/[جحخعغ]/.test(x)?" low-descender":""}" dir="rtl">${renderToken(x)}</div>`).join("");return `<article class="page" data-page="${spec.n}">
 <header class="header"><div class="logo"><div class="logo-main"><img class="logo-mark" src="../assets/qurbata-logo.svg" alt=""><span class="logo-name">QURBATA</span></div><small>Quran · Bahasa Arab · Tahfidz · Akhlak</small></div><h1></h1><div class="page-no">${spec.n}</div></header>
 <section class="plant${(spec.n===10||spec.n===20)?" evaluation-title":""}${spec.transition?" transition-title":""}${spec.checkpoint?" checkpoint-title":""}"><div class="ar">${spec.a}</div>${spec.checkpoint?`<div class="checkpoint-meta ar">${spec.n===40?"ء ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي":"ء ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي"}<br><span>${spec.n===40?"فَتْحَة · كَسْرَة · ضَمَّة":"فَتْحَة · كَسْرَة"}</span></div>`:""}</section>
 <section class="integrations">
@@ -132,11 +132,13 @@ const html=`<!doctype html><html lang="id"><head><meta charset="utf-8"><title>QU
 .plant .ar{font-size:44pt;line-height:1}\n.plant.evaluation-title>.ar{font-size:33pt;line-height:1.05}
 .plant.transition-title>.ar{font-size:24pt;line-height:1.1}
 .plant.checkpoint-title{flex-direction:column;gap:.8mm}
-.plant.checkpoint-title>.ar{font-size:22pt}
-.checkpoint-meta{font-size:11pt;line-height:1.15;text-align:center}
-.checkpoint-meta span{font-size:9pt}
+.plant.checkpoint-title>.ar{font-size:16.5pt;line-height:.92}
+.checkpoint-meta{font-size:9.5pt;line-height:1.05;text-align:center}
+.checkpoint-meta span{font-size:8pt}
 .integrations{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4mm}.card{border:.3mm solid #b8d5df;border-radius:3mm;padding:.8mm 1.1mm;text-align:center;overflow:hidden;background:#fff;display:flex;flex-direction:column;justify-content:center}.card:nth-child(1){background:#f6fbf4}.card:nth-child(2){background:#fffaf0}.card:nth-child(3){background:#fff7f3}
 .card b{display:block;font-size:5.8pt;margin-bottom:.6mm}.card .ar{font-size:13.5pt;line-height:1.12;margin:.4mm 0 .6mm}.card small{font-size:5.2pt;line-height:1.08;display:block}
+.page[data-page="40"] .card:first-child .ar{font-size:10.8pt;line-height:1.02;margin:.15mm 0 .25mm}
+.page[data-page="40"] .card:first-child small{font-size:4.65pt;line-height:1.0}
 .practice{display:grid;grid-template-rows:1fr;border:.4mm solid #70b3d0;border-radius:3.5mm;overflow:hidden;background:#fff}
 .practice:has(.identity-rotation){grid-template-rows:auto 1fr}.identity-rotation{font-family:Uthman,serif;direction:rtl;text-align:center;border-bottom:.25mm solid #d9b968;padding:.45mm .6mm;font-size:11pt;line-height:1.15}.identity-rotation b{font-size:8pt;margin-left:2mm}.identity-rotation span{word-spacing:.12em}
 .practice-title{display:none}
