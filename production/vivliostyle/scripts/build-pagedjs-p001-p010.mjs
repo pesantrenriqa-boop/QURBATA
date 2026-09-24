@@ -90,7 +90,7 @@ const checkpoint40=["بَحَثَ","دَرَسَ","صَبَرَ","ضَرَبَ",
 const twoLetter=n=>{const pool=n<=13?fathah:[...fathah,...kasrahTo(Math.min(19,n))];const out=[];for(let i=0;i<6;i++)out.push(pool[(i+n)%pool.length]+" "+pool[(i*3+n+1)%pool.length]);return out};
 function exercisesFor(n){
  if(n===40)return checkpoint40;
- if(n>=21&&n<=27){const words=approved21_39[n];if(words?.length!==18)throw new Error(`P${n} requires 18 approved WORD slots`);const a=intro[n]||[];const plant=[`${a[0]?.replace("ُ","ِ")}→${a[0]}`,`${a[1]?.replace("ُ","ِ")}→${a[1]}`,`${a[2]?.replace("ُ","ِ")}→${a[2]}`,`${a[3]?.replace("ُ","ِ")}→${a[3]}`,`${a[0]} ${a[1]}`,`${a[2]} ${a[3]}`];return [...plant,...words];}
+ if(n>=21&&n<=27){const words=[...new Set(approved21_39[n])].slice(0,10);if(words.length!==10)throw new Error(`P${n} requires 10 unique review WORD slots`);const a=intro[n]||[];const plant=[`${a[0]?.replace("ُ","ِ")}→${a[0]}`,`${a[1]?.replace("ُ","ِ")}→${a[1]}`,`${a[2]?.replace("ُ","ِ")}→${a[2]}`,`${a[3]?.replace("ُ","ِ")}→${a[3]}`,`${a[0]} ${a[1]}`,`${a[2]} ${a[3]}`];const active=[`${a[0]} ${a[2]}`,`${a[1]} ${a[3]}`,`${a[2]} ${a[0]}`,`${a[3]} ${a[1]}`,`${a[0]} ${a[3]}`,`${a[1]} ${a[2]}`,`${a[2]} ${a[1]}`,`${a[3]} ${a[0]}`];return [...plant,...active,...words];}
  if(n>=28&&n<=39){const w=approved21_39[n];if(w?.length!==24)throw new Error(`P${n} requires exact 24-group allocation`);return w;}
  if(n===1)return p1;
  if(n===2){const p=["أَ","بَ","تَ","ثَ"];return Array.from({length:24},(_,i)=>p[i%4]+" "+p[(i*3+1)%4]);}
@@ -148,10 +148,7 @@ const html=`<!doctype html><html lang="id"><head><meta charset="utf-8"><title>QU
 /* Detached-heh sentinel: preserve Unicode U+0647 and frozen Uthman font.
    The pseudo-element adds the second visible counter only to isolated heh tokens;
    content remains the original ه character for curriculum/search/copy. */
-.heh-two-hole{position:relative;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;min-width:.78em}
-.heh-two-hole:before,.heh-two-hole:after{content:"";position:absolute;box-sizing:border-box;border:.045em solid currentColor;border-radius:50%;pointer-events:none;z-index:2}
-.heh-two-hole:before{width:.15em;height:.105em;left:43%;top:43%;transform:translate(-50%,-50%)}
-.heh-two-hole:after{width:.15em;height:.105em;left:57%;top:55%;transform:translate(-50%,-50%)}\n.footer{position:relative;z-index:1;display:grid;grid-template-columns:15mm 1fr 1fr 1fr 15mm;gap:1.4mm;align-items:start;border:.3mm solid #e2ca8d;border-radius:3mm;padding:2mm 1.8mm 1.2mm;background:#fffdfa;font-size:5.8pt}
+.heh-two-hole{display:inline-block;min-width:.78em;text-align:center;font-family:Uthman,serif;font-feature-settings:"liga" 0,"rlig" 0}\n.footer{position:relative;z-index:1;display:grid;grid-template-columns:15mm 1fr 1fr 1fr 15mm;gap:1.4mm;align-items:start;border:.3mm solid #e2ca8d;border-radius:3mm;padding:2mm 1.8mm 1.2mm;background:#fffdfa;font-size:5.8pt}
 .id{text-align:center;font-weight:700}.field{height:10mm;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:.2mm}.field:after{content:"";display:block;width:92%;border-bottom:.25mm dotted #7995a5;margin-top:auto;margin-bottom:.8mm}.qr{text-align:center;font-size:5pt;font-weight:700}.qr img{display:block;width:9mm;height:9mm;margin:auto}.motto{position:absolute;bottom:.8mm;left:50%;transform:translateX(-50%);font-family:Uthman,serif;font-size:6.5pt;color:#9c7b34;white-space:nowrap;background:#fffefa;padding:0 2mm;z-index:3}
 </style></head><body>${specs.map(page).join("")}</body></html>`;
 await fs.mkdir(path.dirname(out),{recursive:true});await fs.writeFile(out,html);
