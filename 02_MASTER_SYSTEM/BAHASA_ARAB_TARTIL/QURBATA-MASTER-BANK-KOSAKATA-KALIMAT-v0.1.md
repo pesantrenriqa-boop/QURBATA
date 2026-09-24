@@ -142,3 +142,89 @@ Baseline awal terverifikasi yang terkonsolidasi di file ini:
 - 2 rangkaian instruksional.
 
 Jumlah ini **bukan** total corpus QURBATA. Ini adalah baseline yang telah ditarik dari master Bi'ah yang berhasil diverifikasi pada konsolidasi awal.
+
+
+## 13. Import audit corpus Bahasa Arab Jilid 3 — P001–P012
+
+Audit `03_BOOKS/BAHASA-ARAB/` pada 2026-09-24 menemukan satu corpus tersimpan: **JILID-3 P001–P012**, dengan **60 paragraf** (5 paragraf × 12 unit). Status sumber tetap dibedakan: P001–P003 FROZEN; P004–P011 REVIEWED/RECOVERED; P012 REVIEW COMPLETE.
+
+### 13.1 Registry ungkapan inti corpus
+
+| ID | Arab | Fungsi | Source |
+|---|---|---|---|
+| COR-001 | مَاذَا تَقْرَأُ؟ | Menanyakan bacaan | J3-P001 |
+| COR-002 | أَقْرَأُ الْقُرْآنَ | Menjawab objek bacaan | J3-P002 |
+| COR-003 | اِقْرَأْ مِنْ هُنَا | Menentukan titik mulai bacaan | J3-P003 |
+| COR-004 | اِقْرَأْ إِلَى هُنَا | Menentukan batas akhir bacaan | J3-P004 |
+| COR-005 | دَوْرُ مَنْ؟ | Menanyakan giliran | J3-P007 |
+| COR-006 | دَوْرِي | Menyatakan giliran diri | J3-P008 |
+| COR-007 | الْآنَ دَوْرُكَ | Menyerahkan giliran | J3-P009 |
+| COR-008 | اِقْرَأْ بَعْدَ صَدِيقِكَ | Membaca setelah teman | J3-P010 |
+| COR-009 | اِسْمَعْ إِلَى صَدِيقِكَ | Mendengarkan teman | J3-P011 |
+
+P005, P006, dan P012 berfungsi sebagai penguatan/latihan kumulatif dan tidak dicatat sebagai kompetensi baru.
+
+### 13.2 Variasi komunikatif terverifikasi
+
+| ID | Arab | Keterangan |
+|---|---|---|
+| COR-V01 | أَقْرَأُ مِنْ هُنَا إِلَى هُنَا | Menyatakan rentang bacaan |
+| COR-V02 | مِنْ أَيْنَ أَبْدَأُ؟ | Menanyakan titik mulai |
+| COR-V03 | دَوْرُكَ | Giliranmu |
+| COR-V04 | اِقْرَئِي مِنْ هُنَا | Bentuk muannats: bacalah dari sini |
+| COR-V05 | اِقْرَئِي إِلَى هُنَا | Bentuk muannats: bacalah sampai sini |
+| COR-V06 | اِسْتَمِعْ إِلَى قِرَاءَةِ صَدِيقِكَ | Dengarkan bacaan temanmu |
+| COR-V07 | أَسْمَعُ إِلَى قِرَاءَةِ صَدِيقِي | Saya mendengarkan bacaan teman saya |
+| COR-V08 | اِسْمَعْ إِلَى قِرَاءَتِي، ثُمَّ اِقْرَأْ بَعْدِي | Dengarkan bacaanku, kemudian bacalah setelahku |
+
+### 13.3 Lemma pedagogis terverifikasi dari corpus
+
+| ID | Arab | Makna |
+|---|---|---|
+| VOC-J3-001 | الْقُرْآنُ | Al-Qur'an |
+| VOC-J3-002 | آيَةٌ | ayat |
+| VOC-J3-003 | سُورَةٌ | surah |
+| VOC-J3-004 | قِرَاءَةٌ | bacaan/membaca |
+| VOC-J3-005 | مُرَاجَعَةٌ | pengulangan/review |
+| VOC-J3-006 | فَصْلٌ | kelas |
+| VOC-J3-007 | مَسْجِدٌ | masjid |
+| VOC-J3-008 | صَدِيقٌ | teman |
+| VOC-J3-009 | زَمِيلٌ | rekan/teman |
+| VOC-J3-010 | مَجْمُوعَةٌ | kelompok |
+| VOC-J3-011 | حَلْقَةٌ | halaqah/lingkaran belajar |
+| VOC-J3-012 | مَقْطَعٌ | bagian/potongan |
+| VOC-J3-013 | سَطْرٌ | baris |
+| VOC-J3-014 | مَكَانٌ | tempat |
+| VOC-J3-015 | مَوْضِعٌ | posisi/tempat |
+| VOC-J3-016 | دَوْرٌ | giliran |
+| VOC-J3-017 | بَعْدَ | setelah |
+| VOC-J3-018 | قَبْلَ | sebelum |
+| VOC-J3-019 | أَمَامَ | di depan |
+| VOC-J3-020 | إِلَى | ke/sampai |
+| VOC-J3-021 | مِنْ | dari |
+| VOC-J3-022 | هُنَا | di sini/dari sini |
+| VOC-J3-023 | الْآنَ | sekarang |
+
+Item yang sudah ada pada VOC-001–VOC-009 tidak diduplikasi ulang sebagai klaim lemma baru; tabel J3 mempertahankan jejak sumber corpus dan akan dinormalisasi pada versi database berikutnya.
+
+### 13.4 Posisi terhadap master Bi'ah
+
+Corpus Jilid 3 adalah **BA-standalone / competency-paragraph corpus**, bukan otomatis BA-for-Tartil. Namun COR-003, COR-004, COR-005, COR-006, COR-007, COR-008, dan COR-009 menunjukkan jalur komunikasi kelas yang dapat dicrosswalk ke Bi'ah setelah validasi integrasi.
+
+Audit rinci disimpan di:
+`03_BOOKS/BAHASA-ARAB/AUDIT-CORPUS-BAHASA-ARAB-v0.1.md`
+
+## 14. Progres konsolidasi
+
+- [x] Audit struktur `03_BOOKS/BAHASA-ARAB/`.
+- [x] Identifikasi corpus tersimpan Jilid 3 P001–P012.
+- [x] Registry 9 ungkapan inti.
+- [x] Registry 8 variasi komunikatif.
+- [x] Registry awal lemma pedagogis penting.
+- [x] Pisahkan BA-for-Tartil vs BA-standalone/competency paragraphs.
+- [ ] Ekstraksi komputasional seluruh surface-form/lemma dari 60 paragraf.
+- [ ] Dedup morfologis tervalidasi.
+- [ ] Crosswalk lengkap ke J1–J8/M01–M21.
+- [ ] Crosswalk K01–K65 setelah definisi kompetensi pulih.
+- [ ] Corpus Qur'ani + sumber surah/ayat.
+- [ ] Sinkronisasi field audio/RIQA OS/assessment.
