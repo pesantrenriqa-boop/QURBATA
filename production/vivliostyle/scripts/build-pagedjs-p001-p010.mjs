@@ -115,7 +115,7 @@ function exercisesFor(n){
  if(n===20){const drills=twoLetter(n);const uniq=[...new Set(words)];const wordCount=Math.min(18,uniq.length);const chosen=rotateUnique(uniq,0,wordCount);const need=24-drills.length-chosen.length;const legal=[...fathah,...kasrahTo(19)];const pairPool=[];for(let i=0;i<legal.length;i++)for(let j=0;j<legal.length;j++)if(i!==j)pairPool.push(legal[i]+" "+legal[j]);const used=new Set(drills.map(x=>x.replace(/\\s+/g,"")));const fillers=[];for(const x of pairPool){const k=x.replace(/\\s+/g,"");if(!used.has(k)){fillers.push(x);used.add(k);}if(fillers.length===need)break;}return assertUniquePage(n,[...drills,...chosen,...fillers]);}
  const drills=twoLetter(n);
  const need=24-drills.length;
- if(words.length>=need)return assertUniquePage(n,[...drills,...rotateUnique(words,(n*3)%words.length,need)]);
+ {const uniq=[...new Set(words)];if(uniq.length>=need)return assertUniquePage(n,[...drills,...rotateUnique(uniq,(n*3)%uniq.length,need)]);}
  // Early pages may not yet have enough legal meaningful 3-letter words: fill with unique 2-letter drills, never duplicate a word.
  const legal=n<=13?fathah:[...fathah,...kasrahTo(Math.min(19,n))];
  const pairPool=[];for(let i=0;i<legal.length;i++)for(let j=0;j<legal.length;j++)if(i!==j)pairPool.push(legal[i]+" "+legal[j]);
