@@ -114,13 +114,13 @@ function exercisesFor(n){
  if(n===10){
    const drills=twoLetter(n), chosen=[...new Set(approvedWords[9])].slice(0,18);
    const need=24-drills.length-chosen.length, legal=[...fathah], fillers=[], used=new Set([...drills,...chosen].map(x=>String(x).replace(/\s+/g,"")));
-   outer10: for(let i=0;i<legal.length;i++)for(let j=0;j<legal.length;j++){if(i===j)continue;const x=legal[i]+" "+legal[j],k=x.replace(/\s+/g,"");if(!used.has(k)){fillers.push(x);used.add(k);if(fillers.length===need)break outer10;}}
+   if(need>0){outer10: for(let i=0;i<legal.length;i++)for(let j=0;j<legal.length;j++){if(i===j)continue;const x=legal[i]+" "+legal[j],k=x.replace(/\s+/g,"");if(!used.has(k)){fillers.push(x);used.add(k);if(fillers.length>=need)break outer10;}}}
    return assertUniquePage(n,[...drills,...chosen,...fillers]);
  }
  if(n===20){
    const drills=twoLetter(n), chosen=[...new Set(words)].slice(0,18);
    const need=24-drills.length-chosen.length, legal=[...fathah,...kasrahTo(19)], fillers=[], used=new Set([...drills,...chosen].map(x=>String(x).replace(/\s+/g,"")));
-   outer20: for(let i=0;i<legal.length;i++)for(let j=0;j<legal.length;j++){if(i===j)continue;const x=legal[i]+" "+legal[j],k=x.replace(/\s+/g,"");if(!used.has(k)){fillers.push(x);used.add(k);if(fillers.length===need)break outer20;}}
+   if(need>0){outer20: for(let i=0;i<legal.length;i++)for(let j=0;j<legal.length;j++){if(i===j)continue;const x=legal[i]+" "+legal[j],k=x.replace(/\s+/g,"");if(!used.has(k)){fillers.push(x);used.add(k);if(fillers.length>=need)break outer20;}}}
    return assertUniquePage(n,[...drills,...chosen,...fillers]);
  }
  const drills=twoLetter(n);
