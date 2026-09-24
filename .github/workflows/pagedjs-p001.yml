@@ -1,5 +1,5 @@
 name: Paged.js J1 Renderer Audit
-# audit-trigger: full P001-P040 candidate + detached-heh visual gate
+# audit-trigger: full P001-P040 candidate + hard detached-letter gate
 on:
   push:
     branches: [renderer/pagedjs-p001-prototype]
@@ -24,12 +24,19 @@ jobs:
         timeout-minutes: 3
       - name: Verify system Chrome
         run: google-chrome --version
+      - name: Enforce Jilid 1 detached-letter renderer
+        run: |
+          node scripts/enforce-detached-j1.mjs
+          grep -q 'class="detached-letter' scripts/build-pagedjs-p001-p010.mjs
+          grep -q 'font-variant-ligatures:none' scripts/build-pagedjs-p001-p010.mjs
+          echo "DETACHED_LETTER_SOURCE_PASS"
       - run: mkdir -p dist/fonts && cp fonts/KFGQPC-Uthman-Taha-Naskh.woff2 dist/fonts/KFGQPC-Uthman-Taha-Naskh.woff2
       - run: npm run build:pagedjs:p001-p040:pdf
         timeout-minutes: 5
       - name: Audit detached heh sentinel wiring
         run: |
           grep -q 'heh-two-hole' scripts/build-pagedjs-p001-p010.mjs
+          grep -q 'detached-letter' scripts/build-pagedjs-p001-p010.mjs
           grep -q 'Uthman' scripts/build-pagedjs-p001-p010.mjs
           echo "HA_SENTINEL_SOURCE_PASS"
       - name: Record renderer audit manifest
@@ -37,6 +44,7 @@ jobs:
           {
             echo "commit=$GITHUB_SHA"
             echo "font=KFGQPC-Uthman-Taha-Naskh"
+            echo "j1_letter_mode=DETACHED_HARD_GATE"
             echo "unicode_heh=U+0647"
             echo "sentinels=P013:P019:P027:P040"
             echo "status=VISUAL_REVIEW_REQUIRED"
@@ -48,10 +56,7 @@ jobs:
           @font-face{font-family:Uthman;src:url("./fonts/KFGQPC-Uthman-Taha-Naskh.woff2")}
           body{margin:0;background:white;font-family:Uthman,serif}
           .proof{width:1200px;height:800px;display:grid;grid-template-columns:repeat(4,1fr);align-items:center;text-align:center}
-          .s{position:relative;display:inline-flex;align-items:center;justify-content:center;min-width:.78em;font-size:180px;line-height:1}
-          .s:before,.s:after{content:"";position:absolute;box-sizing:border-box;border:.045em solid currentColor;border-radius:50%;pointer-events:none;z-index:2}
-          .s:before{width:.15em;height:.105em;left:43%;top:43%;transform:translate(-50%,-50%)}
-          .s:after{width:.15em;height:.105em;left:57%;top:55%;transform:translate(-50%,-50%)}
+          .s{display:inline-block;font-size:180px;line-height:1;font-variant-ligatures:none;font-feature-settings:"liga" 0,"rlig" 0,"calt" 0}
           small{display:block;font-family:Arial,sans-serif;font-size:24px;margin-top:40px}
           </style></head><body><div class="proof">
           <div><span class="s">هَ</span><small>P013 · U+0647 + FATHA</small></div>
