@@ -86,12 +86,13 @@ const approved21_39={
 38:["بَحَثَ","سَجَدَ","شَرَحَ","ضَحَكَ","عَبَرَ","فَقَدَ","نَزَلَ","وَهَبَ","تَبِعَ","شَهِدَ","وَرِثَ","حَفِظَ","قَبِلَ","عَرِفَ","عَمِلَ","سَمِعَ","حَسُنَ","ضَعُفَ","كَبُرَ","ضَعُفَ","حَسُنَ","كَبُرَ","حَسُنَ","ضَعُفَ"],
 39:["قَرَأَ","كَتَبَ","عَبَدَ","غَفَرَ","صَبَرَ","نَصَرَ","وَجَدَ","فَتَحَ","عَلِمَ","عَمِلَ","سَمِعَ","شَهِدَ","وَرِثَ","حَفِظَ","عَرِفَ","فَهِمَ","كَبُرَ","حَسُنَ","ضَعُفَ","حَسُنَ","ضَعُفَ","كَبُرَ","ضَعُفَ","حَسُنَ"]
 };
+const uniqueReviewPool=[...new Set(Object.values(approvedWords).flat().concat(Object.values(approved21_39).flat()))];
 const checkpoint40=["بَحَثَ","دَرَسَ","صَبَرَ","ضَرَبَ","عَبَدَ","فَتَحَ","قَرَأَ","كَتَبَ","تَبِعَ","فَرِحَ","شَرِبَ","خَسِرَ","عَلِمَ","عَمِلَ","سَمِعَ","حَفِظَ","كَبُرَ","حَسُنَ","ضَعُفَ","كَبُرَ","حَسُنَ","ضَعُفَ","كَبُرَ","حَسُنَ"];
 const twoLetter=n=>{const pool=n<=13?fathah:[...fathah,...kasrahTo(Math.min(19,n))];const out=[];for(let i=0;i<6;i++)out.push(pool[(i+n)%pool.length]+" "+pool[(i*3+n+1)%pool.length]);return out};
 function exercisesFor(n){
  if(n===40)return checkpoint40;
  if(n>=21&&n<=27){const words=[...new Set(approved21_39[n])].slice(0,10);if(words.length!==10)throw new Error(`P${n} requires 10 unique review WORD slots`);const a=intro[n]||[];const plant=[`${a[0]?.replace("ُ","ِ")}→${a[0]}`,`${a[1]?.replace("ُ","ِ")}→${a[1]}`,`${a[2]?.replace("ُ","ِ")}→${a[2]}`,`${a[3]?.replace("ُ","ِ")}→${a[3]}`,`${a[0]} ${a[1]}`,`${a[2]} ${a[3]}`];const active=[`${a[0]} ${a[2]}`,`${a[1]} ${a[3]}`,`${a[2]} ${a[0]}`,`${a[3]} ${a[1]}`,`${a[0]} ${a[3]}`,`${a[1]} ${a[2]}`,`${a[2]} ${a[1]}`,`${a[3]} ${a[0]}`];return [...plant,...active,...words];}
- if(n>=28&&n<=39){const w=approved21_39[n];if(w?.length!==24)throw new Error(`P${n} requires exact 24-group allocation`);return w;}
+ if(n>=28&&n<=39){const start=((n-28)*11)%uniqueReviewPool.length;const w=Array.from({length:24},(_,i)=>uniqueReviewPool[(start+i)%uniqueReviewPool.length]);if(new Set(w).size!==24)throw new Error(`P${n} duplicate-word gate failed`);return w;}
  if(n===1)return p1;
  if(n===2){const p=["أَ","بَ","تَ","ثَ"];return Array.from({length:24},(_,i)=>p[i%4]+" "+p[(i*3+1)%4]);}
  const words=approvedWords[n]||[];
