@@ -107,7 +107,7 @@ const logo="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABYCAYAAABI8oFvAA
 
 const qr=await QRCode.toDataURL("https://rumahilmualquran.com",{margin:0,width:128});
 const identityRotation28="ء ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي";
-const page=spec=>{const exercises=exercisesFor(spec.n);if(exercises.length!==24)throw new Error("24-cell gate failed");const renderToken=x=>String(x).replace(/(^|\\s)(ه[َُِ]?)(?=\\s|$)/g,(m,lead,h)=>`${lead}<span class="heh-two-hole">${h}</span>`);const cells=exercises.map(x=>`<div class="cell${/[جحخعغ]/.test(x)?" low-descender":""}" dir="rtl">${renderToken(x)}</div>`).join("");return `<article class="page" data-page="${spec.n}">
+const page=spec=>{const exercises=exercisesFor(spec.n);if(exercises.length!==24)throw new Error("24-cell gate failed");const renderToken=x=>String(x).split(/\\s+/).filter(Boolean).map(token=>{const chars=Array.from(token);let groups=[];for(let i=0;i<chars.length;i++){const ch=chars[i];if(/[ء-ي]/.test(ch)){let g=ch;while(i+1<chars.length&&/[َُِ]/.test(chars[i+1]))g+=chars[++i];groups.push(g);}}return groups.map(g=>/^ه[َُِ]?$/.test(g)?`<span class="heh-two-hole">${g}</span>`:g).join(" ");}).join("&nbsp;&nbsp;");const cells=exercises.map(x=>`<div class="cell${/[جحخعغ]/.test(x)?" low-descender":""}" dir="rtl">${renderToken(x)}</div>`).join("");return `<article class="page" data-page="${spec.n}">
 <header class="header"><div class="logo"><div class="logo-main"><img class="logo-mark" src="../assets/qurbata-logo.svg" alt=""><span class="logo-name">QURBATA</span></div><small>Quran · Bahasa Arab · Tahfidz · Akhlak</small></div><h1></h1><div class="page-no">${spec.n}</div></header>
 <section class="plant${(spec.n===10||spec.n===20)?" evaluation-title":""}${spec.transition?" transition-title":""}${spec.checkpoint?" checkpoint-title":""}"><div class="ar">${spec.a}</div>${spec.checkpoint?`<div class="checkpoint-meta ar">${spec.n===40?"ء ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي":"ء ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي"}<br><span>${spec.n===40?"فَتْحَة · كَسْرَة · ضَمَّة":"فَتْحَة · كَسْرَة"}</span></div>`:""}</section>
 <section class="integrations">
@@ -143,7 +143,7 @@ const html=`<!doctype html><html lang="id"><head><meta charset="utf-8"><title>QU
 .practice:has(.identity-rotation){grid-template-rows:auto 1fr}.identity-rotation{font-family:Uthman,serif;direction:rtl;text-align:center;border-bottom:.25mm solid #d9b968;padding:.45mm .6mm;font-size:11pt;line-height:1.15}.identity-rotation b{font-size:8pt;margin-left:2mm}.identity-rotation span{word-spacing:.12em}
 .practice-title{display:none}
 .practice-title strong{font-size:8pt}.grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(8,1fr);min-height:0}
-.cell{font-family:Uthman,serif;font-size:32pt;line-height:1;display:flex;align-items:center;justify-content:center;padding:4mm 1.5mm 3.2mm;border:0;white-space:nowrap;overflow:hidden}
+.cell{font-family:Uthman,serif;font-size:32pt;line-height:1;word-spacing:.28em;display:flex;align-items:center;justify-content:center;padding:4mm 1.5mm 3.2mm;border:0;white-space:nowrap;overflow:hidden}
 .cell.low-descender{transform:translateY(-1.25mm)}
 /* Detached-heh sentinel: preserve Unicode U+0647 and frozen Uthman font.
    The pseudo-element adds the second visible counter only to isolated heh tokens;
