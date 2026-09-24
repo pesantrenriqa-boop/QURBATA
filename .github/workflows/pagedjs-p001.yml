@@ -1,5 +1,5 @@
 name: Paged.js J1 Renderer Audit
-# audit-trigger: full P001-P040 candidate + hard detached-letter gate
+# audit-trigger: full P001-P040 candidate + exact-three-letter + hard detached-letter gates
 on:
   push:
     branches: [renderer/pagedjs-p001-prototype]
@@ -24,6 +24,12 @@ jobs:
         timeout-minutes: 3
       - name: Verify system Chrome
         run: google-chrome --version
+      - name: Enforce exact three-letter phase
+        run: |
+          node scripts/enforce-three-letter-phase.mjs
+          grep -q 'EXACT-3 gate failed' scripts/build-pagedjs-p001-p010.mjs
+          grep -q 'n>=3' scripts/build-pagedjs-p001-p010.mjs
+          echo "EXACT_THREE_LETTER_GATE_PASS"
       - name: Enforce Jilid 1 detached-letter renderer
         run: |
           node scripts/enforce-detached-j1.mjs
@@ -45,6 +51,8 @@ jobs:
             echo "commit=$GITHUB_SHA"
             echo "font=KFGQPC-Uthman-Taha-Naskh"
             echo "j1_letter_mode=DETACHED_HARD_GATE"
+            echo "j1_group_mode=P003_P040_EXACTLY_3_LETTERS"
+            echo "dhammah_mix=P021_P027_14_ACTIVE_10_REVIEW"
             echo "unicode_heh=U+0647"
             echo "sentinels=P013:P019:P027:P040"
             echo "status=VISUAL_REVIEW_REQUIRED"
