@@ -111,7 +111,7 @@ function exercisesFor(n){
  if(n===1)return assertUniquePage(n,p1);
  if(n===2){const p=["ءَ","أَ","بَ","تَ","ثَ"];const pairs=[];for(let i=0;i<p.length;i++)for(let j=0;j<p.length;j++)if(i!==j)pairs.push(p[i]+" "+p[j]);const singles=p.map(x=>x);return assertUniquePage(n,[...pairs,...singles.slice(0,4)]);}
  const words=approvedWords[n]||[];
- if(n===10){const w=rotateUnique(approvedWords[9],0,18);return assertUniquePage(n,[...twoLetter(n),...w].slice(0,24));}
+ if(n===10){const drills=twoLetter(n);const uniq=[...new Set(approvedWords[9])];const chosen=rotateUnique(uniq,0,Math.min(18,uniq.length));const need=24-drills.length-chosen.length;const legal=[...fathah];const pairPool=[];for(let i=0;i<legal.length;i++)for(let j=0;j<legal.length;j++)if(i!==j)pairPool.push(legal[i]+" "+legal[j]);const used=new Set(drills.map(x=>x.replace(/\\s+/g,"")));const fillers=[];for(const x of pairPool){const k=x.replace(/\\s+/g,"");if(!used.has(k)){fillers.push(x);used.add(k);}if(fillers.length===need)break;}return assertUniquePage(n,[...drills,...chosen,...fillers]);}
  if(n===20){const drills=twoLetter(n);const uniq=[...new Set(words)];const wordCount=Math.min(18,uniq.length);const chosen=rotateUnique(uniq,0,wordCount);const need=24-drills.length-chosen.length;const legal=[...fathah,...kasrahTo(19)];const pairPool=[];for(let i=0;i<legal.length;i++)for(let j=0;j<legal.length;j++)if(i!==j)pairPool.push(legal[i]+" "+legal[j]);const used=new Set(drills.map(x=>x.replace(/\\s+/g,"")));const fillers=[];for(const x of pairPool){const k=x.replace(/\\s+/g,"");if(!used.has(k)){fillers.push(x);used.add(k);}if(fillers.length===need)break;}return assertUniquePage(n,[...drills,...chosen,...fillers]);}
  const drills=twoLetter(n);
  const need=24-drills.length;
