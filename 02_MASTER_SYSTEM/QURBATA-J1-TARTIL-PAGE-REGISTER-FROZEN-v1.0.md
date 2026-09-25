@@ -1,93 +1,89 @@
 # QURBATA JILID 1 — TARTIL PAGE REGISTER
 
-Status: **FROZEN v1.0**  
+Status: **FROZEN v1.1 — SOURCE-ALIGNED**  
 Effective: 2026-09-25  
-Authority: `QURBATA_TARTIL_BOOK_COMPOSITION_RULES_FROZEN-v1.4.md` status v1.6.6
+Authority isi: master curriculum/spec halaman yang sudah ada di renderer + `QURBATA_TARTIL_BOOK_COMPOSITION_RULES_FROZEN-v1.4.md` status v1.6.6.
 
-## Prinsip
-- Register ini adalah sumber TARGET/REVIEW untuk generator Tartil Jilid 1.
-- Generator dilarang menebak TARGET dari nomor halaman.
-- `REGULAR` = 2 baris pertama EXACT-2 TARGET-only; 6 baris berikut EXACT-3 dan setiap kelompok memuat TARGET.
-- `CHECKPOINT` = struktur khusus curated; tidak memakai fallback REGULAR.
-- Semua bentuk tetap detached/tunggal.
+> Koreksi v1.1: register v1.0 sebelumnya salah karena memetakan ulang urutan huruf. v1.1 mengembalikan TARGET persis ke spesifikasi halaman yang sudah ada. Generator tidak boleh mengubah urutan kompetensi ini.
 
-## FASE FATHAH
+## ATURAN STRUKTUR
+- `REGULAR`: 2 baris pertama = 6 kelompok EXACT-2 TARGET-only; 6 baris berikut = 18 kelompok EXACT-3, relevan dengan TARGET dan hanya memakai REVIEW_ALLOWED sebagai unsur pendamping.
+- `TRANSITION`: aturan REGULAR, tetapi fokus pada perpindahan harakat sesuai TARGET halaman.
+- `REVIEW/CURATED`: tidak memakai pola TARGET baru; 24 kelompok harus dikurasi dari kompetensi legal yang disebut.
+- `CHECKPOINT`: struktur khusus curated; tidak boleh memakai fallback global.
+- Semua huruf Tartil tetap detached/tunggal.
+- Kelompok satu huruf dilarang.
 
-| Page | Type | TARGET | REVIEW_ALLOWED |
+## PAGE REGISTER — SESUAI MASTER YANG SUDAH ADA
+
+| Page | Type | TARGET / FOCUS | REVIEW_ALLOWED |
 |---|---|---|---|
 | P001 | REGULAR-FOUNDATION | بَ تَ ثَ | — |
-| P002 | REGULAR | ءَ أَ | بَ تَ ثَ |
-| P003 | REGULAR | جَ حَ خَ | ءَ أَ بَ تَ ثَ |
-| P004 | REGULAR | دَ ذَ رَ | ءَ أَ بَ تَ ثَ جَ حَ خَ |
-| P005 | REGULAR | زَ سَ شَ | ءَ أَ بَ تَ ثَ جَ حَ خَ دَ ذَ رَ |
-| P006 | REGULAR | صَ ضَ طَ | ءَ أَ بَ تَ ثَ جَ حَ خَ دَ ذَ رَ زَ سَ شَ |
-| P007 | REGULAR | ظَ عَ غَ | seluruh Fathah P001–P006 |
-| P008 | REGULAR | فَ قَ كَ | seluruh Fathah P001–P007 |
-| P009 | REGULAR | لَ مَ نَ هَ وَ يَ | seluruh Fathah P001–P008 |
-| P010 | CHECKPOINT-FATHAH | seluruh huruf Fathah legal | P001–P009 |
+| P002 | REGULAR | ءَ أَ | P001 |
+| P003 | REGULAR | جَ حَ خَ | P001–P002 |
+| P004 | REGULAR | دَ ذَ رَ زَ | P001–P003 |
+| P005 | REGULAR | سَ شَ | P001–P004 |
+| P006 | REGULAR | صَ ضَ | P001–P005 |
+| P007 | REGULAR | طَ ظَ | P001–P006 |
+| P008 | REGULAR | عَ غَ | P001–P007 |
+| P009 | REGULAR | فَ قَ | P001–P008 |
+| P010 | CHECKPOINT | تَقْيِيمُ الْفَتْحَةِ | seluruh kompetensi legal P001–P009 |
+| P011 | REGULAR | كَ لَ | seluruh Fathah P001–P009 |
+| P012 | REGULAR | مَ نَ | P001–P011 |
+| P013 | REGULAR | هَ وَ يَ | P001–P012 |
+| P014 | TRANSITION | بِ تِ ثِ جِ | seluruh Fathah P001–P013 |
+| P015 | REGULAR | حِ خِ دِ ذِ | Fathah + Kasrah P014 |
+| P016 | REGULAR | رِ زِ سِ شِ | Fathah + Kasrah P014–P015 |
+| P017 | REGULAR | صِ ضِ طِ ظِ | Fathah + Kasrah P014–P016 |
+| P018 | REGULAR | عِ غِ فِ قِ | Fathah + Kasrah P014–P017 |
+| P019 | REGULAR-CURATED | كِ لِ مِ نِ هِ وِ يِ ءِ إِ | Fathah + Kasrah P014–P018 |
+| P020 | CHECKPOINT | تَقْيِيمُ الْفَتْحَةِ وَالْكَسْرَةِ | seluruh kompetensi legal P001–P019 |
+| P021 | TRANSITION | بُ تُ ثُ جُ | seluruh Fathah + Kasrah |
+| P022 | TRANSITION | حُ خُ دُ ذُ | P001–P021 |
+| P023 | TRANSITION | رُ زُ سُ شُ | P001–P022 |
+| P024 | TRANSITION | صُ ضُ طُ ظُ | P001–P023 |
+| P025 | TRANSITION | عُ غُ فُ قُ | P001–P024 |
+| P026 | TRANSITION | كُ لُ مُ نُ | P001–P025 |
+| P027 | TRANSITION | هُ وُ يُ ءُ | P001–P026 |
+| P028 | REVIEW-CURATED | تَدْرِيبُ الضَّمَّةِ | seluruh Dhammah legal P021–P027 + review terdahulu yang diperlukan |
+| P029 | REVIEW-CURATED | مُرَاجَعَةُ الْحَرَكَاتِ | seluruh Fathah + Kasrah + Dhammah legal |
+| P030 | REVIEW-CURATED | مُرَاجَعَةٌ شَامِلَةٌ | seluruh kompetensi legal P001–P029 |
+| P031 | REVIEW-CURATED | مُرَاجَعَةٌ تَرَاكُمِيَّةٌ | seluruh kompetensi legal P001–P030 |
+| P032 | REVIEW-CURATED | مُرَاجَعَةٌ تَرَاكُمِيَّةٌ | seluruh kompetensi legal P001–P031 |
+| P033 | REVIEW-CURATED | مُرَاجَعَةٌ تَرَاكُمِيَّةٌ | seluruh kompetensi legal P001–P032 |
+| P034 | REVIEW-CURATED | تَدْرِيبٌ خِتَامِيٌّ | seluruh kompetensi legal P001–P033 |
+| P035 | REVIEW-CURATED | تَدْرِيبٌ خِتَامِيٌّ | seluruh kompetensi legal P001–P034 |
+| P036 | REVIEW-CURATED | تَقْوِيَةٌ تَقْيِيمِيَّةٌ | seluruh kompetensi legal P001–P035 |
+| P037 | REVIEW-CURATED | تَقْوِيَةٌ تَقْيِيمِيَّةٌ | seluruh kompetensi legal P001–P036 |
+| P038 | REVIEW-CURATED | تَقْوِيَةٌ تَقْيِيمِيَّةٌ | seluruh kompetensi legal P001–P037 |
+| P039 | REVIEW-CURATED | مُحَاكَاةُ التَّقْيِيمِ | seluruh kompetensi legal P001–P038 |
+| P040 | CHECKPOINT-FINAL | التَّقْيِيمُ الْخِتَامِيُّ | seluruh kompetensi legal Jilid 1 |
 
-> P009 memiliki enam TARGET; dua baris penanaman harus dikurasi dari TARGET P009 dan tidak boleh memakai review.
+## CONTOH SENTINEL P003
+TARGET P003 = `جَ حَ خَ`.
 
-## FASE KASRAH
+Dua baris penanaman wajib enam pasangan unik TARGET-only:
+- Baris 1: `جَ حَ` | `جَ خَ` | `حَ جَ`
+- Baris 2: `حَ خَ` | `خَ جَ` | `خَ حَ`
 
-Prinsip fase Kasrah: huruf TARGET adalah huruf ber-Kasrah pada halaman itu. REVIEW_ALLOWED mencakup seluruh Fathah yang sudah legal + Kasrah dari halaman sebelumnya.
-
-| Page | Type | TARGET | REVIEW_ALLOWED |
-|---|---|---|---|
-| P011 | REGULAR | بِ تِ ثِ | seluruh Fathah |
-| P012 | REGULAR | ءِ إِ | seluruh Fathah + Kasrah P011 |
-| P013 | REGULAR | جِ حِ خِ | seluruh Fathah + Kasrah P011–P012 |
-| P014 | REGULAR | دِ ذِ رِ | seluruh Fathah + Kasrah P011–P013 |
-| P015 | REGULAR | زِ سِ شِ | seluruh Fathah + Kasrah P011–P014 |
-| P016 | REGULAR | صِ ضِ طِ | seluruh Fathah + Kasrah P011–P015 |
-| P017 | REGULAR | ظِ عِ غِ | seluruh Fathah + Kasrah P011–P016 |
-| P018 | REGULAR | فِ قِ كِ | seluruh Fathah + Kasrah P011–P017 |
-| P019 | REGULAR-CURATED | لِ مِ نِ هِ وِ يِ | seluruh Fathah + Kasrah P011–P018 |
-| P020 | CHECKPOINT-FATHAH-KASRAH | seluruh Fathah + Kasrah legal | P001–P019 |
-
-## FASE DHAMMAH
-
-Prinsip fase Dhammah: huruf TARGET adalah huruf ber-Dhammah. REVIEW_ALLOWED mencakup seluruh Fathah + Kasrah legal dan Dhammah halaman sebelumnya.
-
-| Page | Type | TARGET | REVIEW_ALLOWED |
-|---|---|---|---|
-| P021 | REGULAR | بُ تُ ثُ | seluruh Fathah + Kasrah |
-| P022 | REGULAR | ءُ أُ | seluruh Fathah + Kasrah + Dhammah P021 |
-| P023 | REGULAR | جُ حُ خُ | seluruh Fathah + Kasrah + Dhammah P021–P022 |
-| P024 | REGULAR | دُ ذُ رُ | seluruh Fathah + Kasrah + Dhammah P021–P023 |
-| P025 | REGULAR | زُ سُ شُ | seluruh Fathah + Kasrah + Dhammah P021–P024 |
-| P026 | REGULAR | صُ ضُ طُ | seluruh Fathah + Kasrah + Dhammah P021–P025 |
-| P027 | REGULAR | ظُ عُ غُ | seluruh Fathah + Kasrah + Dhammah P021–P026 |
-| P028 | REGULAR | فُ قُ كُ | seluruh Fathah + Kasrah + Dhammah P021–P027 |
-| P029 | REGULAR | لُ مُ نُ هُ وُ يُ | seluruh Fathah + Kasrah + Dhammah P021–P028 |
-| P030 | CHECKPOINT-DHAMMAH | seluruh Fathah + Kasrah + Dhammah legal | P001–P029 |
-
-## P031–P040 — HOLD / SPEC REQUIRED
-
-P031–P040 **tidak boleh digenerasikan dari tebakan atau pool algoritmik** sampai kompetensi halaman-halaman ini diverifikasi terhadap master curriculum yang sah. Status sementara:
-
-| Page | Type | TARGET | Status |
-|---|---|---|---|
-| P031 | HOLD | — | SPECIAL_PAGE_SPEC_MISSING |
-| P032 | HOLD | — | SPECIAL_PAGE_SPEC_MISSING |
-| P033 | HOLD | — | SPECIAL_PAGE_SPEC_MISSING |
-| P034 | HOLD | — | SPECIAL_PAGE_SPEC_MISSING |
-| P035 | HOLD | — | SPECIAL_PAGE_SPEC_MISSING |
-| P036 | HOLD | — | SPECIAL_PAGE_SPEC_MISSING |
-| P037 | HOLD | — | SPECIAL_PAGE_SPEC_MISSING |
-| P038 | HOLD | — | SPECIAL_PAGE_SPEC_MISSING |
-| P039 | HOLD | — | SPECIAL_PAGE_SPEC_MISSING |
-| P040 | HOLD/CHECKPOINT | — | SPECIAL_PAGE_SPEC_MISSING |
+Baris 3–8:
+- setiap kelompok tepat 3 huruf;
+- minimal satu posisi memuat `جَ/حَ/خَ`;
+- posisi lain hanya boleh memakai P001–P002 (`بَ تَ ثَ ءَ أَ`) atau TARGET P003;
+- tidak boleh ada huruf P004 ke atas;
+- tidak boleh ada kelompok 1/2 huruf.
 
 ## HARD GATES
-
-1. `TARGET_MISSING` → FAIL.
-2. REGULAR cell 1–6 bukan EXACT-2 → FAIL.
-3. REGULAR cell 7–24 bukan EXACT-3 → FAIL.
-4. REGULAR cell 1–6 mengandung non-TARGET → FAIL.
-5. REGULAR cell 7–24 tidak mengandung minimal satu TARGET → FAIL.
+1. `TARGET_MISSING` → FAIL untuk REGULAR/TRANSITION.
+2. REGULAR/TRANSITION cell 1–6 bukan EXACT-2 → `PLANTING_LENGTH_FAIL`.
+3. REGULAR/TRANSITION cell 7–24 bukan EXACT-3 → `PRACTICE_LENGTH_FAIL`.
+4. Cell 1–6 mengandung non-TARGET → `COMPETENCY_MISMATCH_FAIL`.
+5. Cell 7–24 tidak relevan dengan TARGET → `COMPETENCY_MISMATCH_FAIL`.
 6. Unsur di luar TARGET + REVIEW_ALLOWED → `FUTURE_COMPETENCY_FAIL`.
 7. Kelompok 1 huruf di mana pun → `SINGLE_LETTER_GROUP_FAIL`.
 8. Duplikasi kelompok → `DUPLICATE_GROUP_FAIL`.
-9. Page berstatus HOLD → `SPECIAL_PAGE_SPEC_MISSING`; PDF P001–P040 tidak boleh dinyatakan FINAL.
-10. Semua output tetap harus lolos `DETACHED-LETTER` dan `HA-GLYPH`.
+9. REVIEW/CHECKPOINT harus memakai daftar curated; fallback algoritmik → `CURATION_REQUIRED_FAIL`.
+10. Semua output wajib lolos `DETACHED-LETTER` dan `HA-GLYPH`.
+
+## PRODUCTION RULE
+Generator wajib membaca/mencerminkan register ini. Data `intro`/`specs` yang bertentangan dengan register harus membuat build FAIL, bukan memilih salah satunya secara diam-diam.
