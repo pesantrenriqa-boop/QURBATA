@@ -1,5 +1,5 @@
 name: Paged.js J1 Renderer Audit
-# audit-trigger: full P001-P040 candidate + two-row planting + hard detached-letter gates
+# audit-trigger: P003 competency sentinel + hard detached-letter gates
 on:
   push:
     branches: [renderer/pagedjs-p001-prototype]
@@ -28,6 +28,13 @@ jobs:
         run: |
           node scripts/enforce-j1-row-structure.mjs
           echo "J1_ROW_STRUCTURE_GATE_PASS"
+      - name: Apply P003 competency-first sentinel
+        run: |
+          node scripts/enforce-three-letter-phase.mjs
+          grep -q "P003_COMPETENCY_SENTINEL_PATCHED" <(node scripts/enforce-three-letter-phase.mjs)
+          grep -q "'جَ حَ','جَ خَ','حَ جَ','حَ خَ','خَ جَ','خَ حَ'" scripts/build-pagedjs-p001-p010.mjs
+          grep -q "review:\['ءَ','أَ','بَ','تَ','ثَ'\]" scripts/build-pagedjs-p001-p010.mjs
+          echo "P003_COMPETENCY_GATE_PASS"
       - name: Enforce Jilid 1 detached-letter renderer
         run: |
           node scripts/enforce-detached-j1.mjs
@@ -49,12 +56,13 @@ jobs:
             echo "commit=$GITHUB_SHA"
             echo "font=KFGQPC-Uthman-Taha-Naskh"
             echo "j1_letter_mode=DETACHED_HARD_GATE"
-            echo "j1_group_mode=2_PLANTING_ROWS_X_2_LETTERS_THEN_7_PRACTICE_ROWS_X_3_LETTERS"
-            echo "target_review_ratio=APPROX_60_40"
+            echo "curriculum_sentinel=P003"
+            echo "P003_target=جَ حَ خَ"
+            echo "P003_planting=6xEXACT2_TARGET_ONLY"
+            echo "P003_practice=18xEXACT3_TARGET_REQUIRED"
+            echo "P003_review_allowed=ءَ أَ بَ تَ ثَ"
             echo "zero_duplicate=REQUIRED"
-            echo "unicode_heh=U+0647"
-            echo "sentinels=P013:P019:P027:P040"
-            echo "status=VISUAL_REVIEW_REQUIRED"
+            echo "status=P003_SENTINEL_REVIEW_REQUIRED"
           } > dist/HA-TWO-HOLE-AUDIT.txt
       - name: Render detached-heh visual proof
         run: |
