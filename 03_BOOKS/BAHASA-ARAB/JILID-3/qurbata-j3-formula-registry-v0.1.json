@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1",
+  "updated_at": "2026-09-25",
+  "scope": "QURBATA Bahasa Arab Jilid 3 P001-P012",
+  "policy": "Repeat for mastery, expand for richness",
+  "rules": {
+    "review_pages": ["P005", "P006", "P012"],
+    "count_narrative_as_mastered": false,
+    "count_surface_variants_as_unique_lemma": false,
+    "duplicate_guard_statuses": ["NEW", "EXPANSION", "VALUABLE_REUSE", "REDUNDANT"],
+    "exposure_levels": ["ACTIVE", "RECEPTIVE", "NARRATIVE"]
+  },
+  "items": [
+    {"item_id":"F-J3-001","item_type":"FORMULA","arabic_surface":"مَاذَا تَقْرَأُ؟","lemma_family":["قرأ"],"first_seen":"P001","first_active_target":"P001","exposure_level":"ACTIVE","communicative_function":"ASK_READING_OBJECT","reuse_value":"NEW","source_status":"FROZEN","riqa_os_status":"READY_FOR_IMPORT"},
+    {"item_id":"F-J3-002","item_type":"FORMULA","arabic_surface":"أَقْرَأُ الْقُرْآنَ","lemma_family":["قرأ"],"first_seen":"P001","first_active_target":"P002","exposure_level":"ACTIVE","communicative_function":"ANSWER_READING_OBJECT","reuse_value":"EXPANSION","source_status":"FROZEN","riqa_os_status":"READY_FOR_IMPORT"},
+    {"item_id":"F-J3-003","item_type":"FORMULA","arabic_surface":"اِقْرَأْ مِنْ هُنَا","lemma_family":["قرأ"],"first_seen":"P003","first_active_target":"P003","exposure_level":"ACTIVE","communicative_function":"SET_START_POINT","reuse_value":"EXPANSION","source_status":"FROZEN","riqa_os_status":"READY_FOR_IMPORT"},
+    {"item_id":"F-J3-004","item_type":"FORMULA","arabic_surface":"اِقْرَأْ إِلَى هُنَا","lemma_family":["قرأ"],"first_seen":"P004","first_active_target":"P004","exposure_level":"ACTIVE","communicative_function":"SET_END_POINT","reuse_value":"EXPANSION","source_status":"REVIEWED_RECOVERED","riqa_os_status":"READY_FOR_IMPORT"},
+    {"item_id":"F-J3-005","item_type":"FORMULA","arabic_surface":"دَوْرُ مَنْ؟","lemma_family":["دور"],"first_seen":"P007","first_active_target":"P007","exposure_level":"ACTIVE","communicative_function":"ASK_TURN","reuse_value":"NEW","source_status":"REVIEWED_RECOVERED","riqa_os_status":"READY_FOR_IMPORT"},
+    {"item_id":"F-J3-006","item_type":"FORMULA","arabic_surface":"دَوْرِي","lemma_family":["دور"],"first_seen":"P008","first_active_target":"P008","exposure_level":"ACTIVE","communicative_function":"CLAIM_TURN","reuse_value":"EXPANSION","source_status":"REVIEWED_RECOVERED","riqa_os_status":"READY_FOR_IMPORT"},
+    {"item_id":"F-J3-007","item_type":"FORMULA","arabic_surface":"الْآنَ دَوْرُكَ","lemma_family":["دور"],"first_seen":"P009","first_active_target":"P009","exposure_level":"ACTIVE","communicative_function":"TRANSFER_TURN","reuse_value":"EXPANSION","source_status":"REVIEWED_RECOVERED","riqa_os_status":"READY_FOR_IMPORT"},
+    {"item_id":"F-J3-008","item_type":"FORMULA","arabic_surface":"اِقْرَأْ بَعْدَ صَدِيقِكَ","lemma_family":["قرأ","بعد","صديق"],"first_seen":"P010","first_active_target":"P010","exposure_level":"ACTIVE","communicative_function":"PEER_SEQUENCE_READING","reuse_value":"EXPANSION","source_status":"REVIEWED_RECOVERED","riqa_os_status":"READY_FOR_IMPORT"},
+    {"item_id":"F-J3-009","item_type":"FORMULA","arabic_surface":"اِسْمَعْ إِلَى صَدِيقِكَ","lemma_family":["سمع","استمع"],"first_seen":"P011","first_active_target":"P011","exposure_level":"ACTIVE","communicative_function":"PEER_LISTENING","reuse_value":"NEW_FUNCTION","source_status":"REVIEWED_RECOVERED","riqa_os_status":"REVIEW_MORPHOLOGY_BEFORE_IMPORT"}
+  ]
+}
