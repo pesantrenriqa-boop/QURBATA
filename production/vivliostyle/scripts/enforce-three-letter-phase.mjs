@@ -4,8 +4,8 @@ import path from 'node:path';
 const file=path.resolve(import.meta.dirname,'build-pagedjs-p001-p010.mjs');
 let src=await fs.readFile(file,'utf8');
 
-// CI intentionally invokes this enforcer more than once. Never inject the sentinel twice.
-if(src.includes('const P003_SENTINEL_VERSION="v1.0";')){
+// CI invokes this enforcer more than once. Never inject the sentinel twice.
+if(src.includes('const P003_SENTINEL_VERSION="v1.1";')){
   console.log('P003_COMPETENCY_SENTINEL_PATCHED');
   console.log('P003_SENTINEL_ALREADY_PRESENT');
   console.log('P003_TARGET=جَ حَ خَ');
@@ -19,22 +19,24 @@ const start=src.indexOf('function exercisesFor(n){');
 const end=src.indexOf('\nconst logo=',start);
 if(start<0||end<0) throw new Error('Cannot locate exercisesFor() for J1 competency-first patch');
 
-const replacement=String.raw`const P003_SENTINEL_VERSION="v1.0";
-const p003Normalize=x=>String(x).replace(/→/g,' ').trim().replace(/\\s+/g,' ');
-const p003Units=x=>p003Normalize(x).split(/\\s+/).filter(Boolean);
-const p003Key=x=>p003Normalize(x).replace(/\\s+/g,'');
+const replacement=String.raw`const P003_SENTINEL_VERSION="v1.1";
+// Parse one pedagogical unit as Arabic base letter plus its combining marks.
+// Do not depend on spaces: detached rendering may normalize whitespace later.
+const p003Units=x=>String(x).normalize('NFC').match(/[ء-ي][\\u064B-\\u065F\\u0670]*/gu)||[];
+const p003Key=x=>p003Units(x).join('|');
 const assertP003Regular=(items,target,review)=>{
  if(items.length!==24)throw new Error('P003 GROUP_COUNT_FAIL '+items.length+'/24');
  const keys=items.map(p003Key);if(new Set(keys).size!==items.length)throw new Error('P003 DUPLICATE_GROUP_FAIL');
- const allowed=new Set([...target,...review]);
+ const allowed=new Set([...target,...review].map(x=>x.normalize('NFC')));
+ const targetSet=new Set(target.map(x=>x.normalize('NFC')));
  for(let i=0;i<items.length;i++){
    const u=p003Units(items[i]);
    if(u.length===1)throw new Error('P003 SINGLE_LETTER_GROUP_FAIL cell='+(i+1));
-   if(i<6&&u.length!==2)throw new Error('P003 PLANTING_LENGTH_FAIL cell='+(i+1));
-   if(i>=6&&u.length!==3)throw new Error('P003 PRACTICE_LENGTH_FAIL cell='+(i+1));
-   if(i<6&&u.some(x=>!target.includes(x)))throw new Error('P003 COMPETENCY_MISMATCH_FAIL planting='+(i+1));
-   if(i>=6&&!u.some(x=>target.includes(x)))throw new Error('P003 COMPETENCY_MISMATCH_FAIL practice='+(i+1));
-   if(u.some(x=>!allowed.has(x)))throw new Error('P003 FUTURE_COMPETENCY_FAIL cell='+(i+1));
+   if(i<6&&u.length!==2)throw new Error('P003 PLANTING_LENGTH_FAIL cell='+(i+1)+' len='+u.length);
+   if(i>=6&&u.length!==3)throw new Error('P003 PRACTICE_LENGTH_FAIL cell='+(i+1)+' len='+u.length);
+   if(i<6&&u.some(x=>!targetSet.has(x.normalize('NFC'))))throw new Error('P003 COMPETENCY_MISMATCH_FAIL planting='+(i+1));
+   if(i>=6&&!u.some(x=>targetSet.has(x.normalize('NFC'))))throw new Error('P003 COMPETENCY_MISMATCH_FAIL practice='+(i+1));
+   if(u.some(x=>!allowed.has(x.normalize('NFC'))))throw new Error('P003 FUTURE_COMPETENCY_FAIL cell='+(i+1)+' units='+u.join(','));
  }
  return items;
 };
@@ -61,6 +63,7 @@ function exercisesFor(n){
 src=src.slice(0,start)+replacement+src.slice(end);
 await fs.writeFile(file,src,'utf8');
 console.log('P003_COMPETENCY_SENTINEL_PATCHED');
+console.log('P003_PARSER=ARABIC_BASE_PLUS_COMBINING_MARKS');
 console.log('P003_TARGET=جَ حَ خَ');
 console.log('P003_PLANTING=6xEXACT2_TARGET_ONLY');
 console.log('P003_PRACTICE=18xEXACT3_TARGET_REQUIRED');
