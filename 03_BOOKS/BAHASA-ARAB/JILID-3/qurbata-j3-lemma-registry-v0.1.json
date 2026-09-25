@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1",
+  "updated_at": "2026-09-25",
+  "scope": "QURBATA Bahasa Arab Jilid 3 P001-P012",
+  "counting_policy": {
+    "count_surface_forms_as_unique_lemmas": false,
+    "count_narrative_as_mastered": false,
+    "active_mastery_requires_first_active_target": true,
+    "review_does_not_increment_unique_lemma_count": true
+  },
+  "duplicate_guard": {
+    "match_order": ["normalized_family", "lemma", "surface_form", "formula", "communicative_function"],
+    "existing_lemma_default_status": "REVIEW_OR_EXPANSION",
+    "new_lemma_requires": ["not_found_in_registry", "meaning_validated", "first_active_target_assigned"],
+    "manual_review_families": ["سمع/استمع"]
+  },
+  "items": [
+    {"lemma_id":"L-J3-001","lemma":"قَرَأَ","normalized_family":"قرأ","meaning":"membaca","first_seen":"P001","first_active_target":"P001","exposure_level":"ACTIVE","status":"CORE","domain":"READING","surface_examples":["أَقْرَأُ","تَقْرَأُ","يَقْرَأُ","اِقْرَأْ","اِقْرَئِي","قِرَاءَةٌ"]},
+    {"lemma_id":"L-J3-002","lemma":"الْقُرْآنُ","normalized_family":"قرآن","meaning":"Al-Qur'an","first_seen":"P001","first_active_target":"P002","exposure_level":"ACTIVE","status":"CORE","domain":"QURAN"},
+    {"lemma_id":"L-J3-003","lemma":"مَاذَا","normalized_family":"ماذا","meaning":"apa","first_seen":"P001","first_active_target":"P001","exposure_level":"ACTIVE","status":"CORE","domain":"QUESTION"},
+    {"lemma_id":"L-J3-004","lemma":"هُنَا","normalized_family":"هنا","meaning":"di sini","first_seen":"P003","first_active_target":"P003","exposure_level":"ACTIVE","status":"CORE","domain":"NAVIGATION"},
+    {"lemma_id":"L-J3-005","lemma":"مِنْ","normalized_family":"من-prep","meaning":"dari","first_seen":"P001","first_active_target":"P003","exposure_level":"ACTIVE","status":"EXPANSION","domain":"NAVIGATION"},
+    {"lemma_id":"L-J3-006","lemma":"إِلَى","normalized_family":"إلى","meaning":"ke/sampai","first_seen":"P001","first_active_target":"P004","exposure_level":"ACTIVE","status":"EXPANSION","domain":"NAVIGATION"},
+    {"lemma_id":"L-J3-007","lemma":"دَوْرٌ","normalized_family":"دور","meaning":"giliran","first_seen":"P003","first_active_target":"P007","exposure_level":"ACTIVE","status":"CORE","domain":"TURN_MANAGEMENT","surface_examples":["دَوْرِي","دَوْرُكَ","دَوْرُهُ","دَوْرُهَا"]},
+    {"lemma_id":"L-J3-008","lemma":"مَنْ","normalized_family":"من-interrogative","meaning":"siapa","first_seen":"P001","first_active_target":"P007","exposure_level":"ACTIVE","status":"EXPANSION","domain":"QUESTION"},
+    {"lemma_id":"L-J3-009","lemma":"الْآنَ","normalized_family":"الآن","meaning":"sekarang","first_seen":"P003","first_active_target":"P009","exposure_level":"ACTIVE","status":"EXPANSION","domain":"TIME"},
+    {"lemma_id":"L-J3-010","lemma":"بَعْدَ","normalized_family":"بعد","meaning":"setelah","first_seen":"P001","first_active_target":"P010","exposure_level":"ACTIVE","status":"EXPANSION","domain":"SEQUENCING"},
+    {"lemma_id":"L-J3-011","lemma":"صَدِيقٌ","normalized_family":"صديق","meaning":"teman","first_seen":"P001","first_active_target":"P010","exposure_level":"ACTIVE","status":"EXPANSION","domain":"PEER_INTERACTION","surface_examples":["صَدِيقِي","صَدِيقِكَ"]},
+    {"lemma_id":"L-J3-012","lemma":"اِسْتَمَعَ","normalized_family":"استمع","meaning":"mendengarkan","first_seen":"P003","first_active_target":"P011","exposure_level":"ACTIVE","status":"REVIEW_REQUIRED","domain":"LISTENING","note":"validate سمع/استمع source morphology before production import"},
+    {"lemma_id":"L-J3-015","lemma":"صَفْحَةٌ","normalized_family":"صفحة","meaning":"halaman","first_seen":"P001","first_active_target":null,"exposure_level":"RECEPTIVE","status":"CANDIDATE_ACTIVE","domain":"QURAN_NAVIGATION"},
+    {"lemma_id":"L-J3-017","lemma":"آيَةٌ","normalized_family":"آية","meaning":"ayat","first_seen":"P001","first_active_target":null,"exposure_level":"RECEPTIVE","status":"CANDIDATE_ACTIVE","domain":"QURAN_NAVIGATION"},
+    {"lemma_id":"L-J3-019","lemma":"مُصْحَفٌ","normalized_family":"مصحف","meaning":"mushaf","first_seen":"P001","first_active_target":null,"exposure_level":"RECEPTIVE","status":"CANDIDATE_ACTIVE","domain":"QURAN_NAVIGATION"},
+    {"lemma_id":"L-J3-020","lemma":"سُورَةٌ","normalized_family":"سورة","meaning":"surah","first_seen":"P001","first_active_target":null,"exposure_level":"RECEPTIVE","status":"CANDIDATE_ACTIVE","domain":"QURAN_NAVIGATION"},
+    {"lemma_id":"L-J3-021","lemma":"سَطْرٌ","normalized_family":"سطر","meaning":"baris","first_seen":"P003","first_active_target":null,"exposure_level":"RECEPTIVE","status":"CANDIDATE_ACTIVE","domain":"TEXT_NAVIGATION"},
+    {"lemma_id":"L-J3-024","lemma":"صَحِيحٌ","normalized_family":"صحيح","meaning":"benar","first_seen":"P003","first_active_target":null,"exposure_level":"RECEPTIVE","status":"CANDIDATE_ACTIVE","domain":"FEEDBACK"},
+    {"lemma_id":"L-J3-025","lemma":"تَدْرِيبٌ","normalized_family":"تدريب","meaning":"latihan","first_seen":"P012","first_active_target":null,"exposure_level":"NARRATIVE","status":"KNOWN","domain":"AUTONOMY"},
+    {"lemma_id":"L-J3-026","lemma":"تَنْظِيمٌ","normalized_family":"تنظيم","meaning":"pengaturan","first_seen":"P012","first_active_target":null,"exposure_level":"NARRATIVE","status":"KNOWN","domain":"AUTONOMY"},
+    {"lemma_id":"L-J3-027","lemma":"أَدَارَ","normalized_family":"إدارة","meaning":"mengelola","first_seen":"P012","first_active_target":null,"exposure_level":"NARRATIVE","status":"KNOWN","domain":"AUTONOMY","surface_examples":["يُدِيرُوا"]},
+    {"lemma_id":"L-J3-028","lemma":"تَعَاوَنَ","normalized_family":"تعاون","meaning":"bekerja sama","first_seen":"P012","first_active_target":null,"exposure_level":"NARRATIVE","status":"KNOWN","domain":"COLLABORATION","surface_examples":["يَتَعَاوَنُوا"]},
+    {"lemma_id":"L-J3-029","lemma":"نِظَامٌ","normalized_family":"نظام","meaning":"keteraturan/sistem","first_seen":"P012","first_active_target":null,"exposure_level":"NARRATIVE","status":"KNOWN","domain":"AUTONOMY"}
+  ]
+}
