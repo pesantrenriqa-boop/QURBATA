@@ -3,11 +3,24 @@ import path from 'node:path';
 
 const file=path.resolve(import.meta.dirname,'build-pagedjs-p001-p010.mjs');
 let src=await fs.readFile(file,'utf8');
+
+// CI intentionally invokes this enforcer more than once. Never inject the sentinel twice.
+if(src.includes('const P003_SENTINEL_VERSION="v1.0";')){
+  console.log('P003_COMPETENCY_SENTINEL_PATCHED');
+  console.log('P003_SENTINEL_ALREADY_PRESENT');
+  console.log('P003_TARGET=جَ حَ خَ');
+  console.log('P003_PLANTING=6xEXACT2_TARGET_ONLY');
+  console.log('P003_PRACTICE=18xEXACT3_TARGET_REQUIRED');
+  console.log('P003_REVIEW_ALLOWED=ءَ أَ بَ تَ ثَ');
+  process.exit(0);
+}
+
 const start=src.indexOf('function exercisesFor(n){');
 const end=src.indexOf('\nconst logo=',start);
 if(start<0||end<0) throw new Error('Cannot locate exercisesFor() for J1 competency-first patch');
 
-const replacement=String.raw`const p003Normalize=x=>String(x).replace(/→/g,' ').trim().replace(/\\s+/g,' ');
+const replacement=String.raw`const P003_SENTINEL_VERSION="v1.0";
+const p003Normalize=x=>String(x).replace(/→/g,' ').trim().replace(/\\s+/g,' ');
 const p003Units=x=>p003Normalize(x).split(/\\s+/).filter(Boolean);
 const p003Key=x=>p003Normalize(x).replace(/\\s+/g,'');
 const assertP003Regular=(items,target,review)=>{
