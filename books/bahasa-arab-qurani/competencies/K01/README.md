@@ -2,7 +2,7 @@
 
 **Kode:** REC-N-BASE  
 **Layer:** A — Fondasi Pengenalan  
-**Status materi:** DRAF MASTER / PILOT  
+**Status materi:** CONTENT COMPLETE / QURAN EVIDENCE VERIFIED / EXPERT REVIEW PENDING  
 **Prasyarat:** tidak ada  
 **Standar:** COMPETENCY-AUTHORING-STANDARD-v1.0
 
@@ -38,6 +38,7 @@ Peserta mengelompokkan contoh Qurani yang menunjukkan nama khusus, manusia/makhl
 3. Langsung menentukan i'rab sebelum mampu mengenali kategori katanya.
 
 ## 5. Bank Contoh Qurani Bertingkat — حلّل
+Bank canonical lengkap disimpan pada `quran-examples.json` dan telah melalui QA evidence Qurani. README hanya menampilkan subset pengajaran.
 
 | No | Contoh | Rujukan | Target | Makna ringkas | Catatan K01 |
 |---|---|---|---|---|---|
@@ -49,36 +50,30 @@ Peserta mengelompokkan contoh Qurani yang menunjukkan nama khusus, manusia/makhl
 | 6 | ٱلنَّاسِ | An-Nas 114:1 | ٱلنَّاسِ | manusia | kelompok makhluk |
 | 7 | مَلِكِ | An-Nas 114:2 | مَلِكِ | Raja | sebutan |
 | 8 | شَرِّ | Al-Falaq 113:2 | شَرِّ | kejahatan | konsep |
-| 9 | ٱلْفَلَقِ | Al-Falaq 113:1 | ٱلْفَلَقِ | waktu/subuh yang terbelah | konsep/waktu |
+| 9 | ٱلْفَلَقِ | Al-Falaq 113:1 | ٱلْفَلَقِ | fajar | konsep/waktu |
 | 10 | أَحَدٌ | Al-Ikhlas 112:1 | أَحَدٌ | Esa | sifat/sebutan |
 | 11 | ٱلصَّمَدُ | Al-Ikhlas 112:2 | ٱلصَّمَدُ | tempat bergantung/Yang Mahasempurna | sebutan |
 | 12 | نَصْرُ | An-Nasr 110:1 | نَصْرُ | pertolongan | konsep |
 
-> Catatan QA: teks lengkap ayat, orthography produksi, terjemah final, dan target span wajib diverifikasi kembali sebelum status K01 dinaikkan menjadi FROZEN.
-
 ## 6. Mufradat K01
-Bank awal: الله، رب، يوم، الدين، الصراط، الناس، ملك، شر، الفلق، أحد، الصمد، نصر.
-
-Kosakata ini adalah vocabulary exposure K01. Status receptive/productive dan recycle history akan disimpan pada `vocabulary.json`.
+Bank canonical disimpan pada `vocabulary.json`. Kosakata K01 berfungsi sebagai exposure/receptive vocabulary; productive vocabulary untuk Bi'ah dikelola pada jalur terpisah.
 
 ## 7. Latihan Terbimbing — طبّق
-1. Tandai kata yang merupakan isim pada potongan Qurani yang disediakan.
+1. Tandai kata yang merupakan isim pada potongan Qurani.
 2. Cocokkan isim dengan makna ringkasnya.
 3. Kelompokkan isim: nama khusus / manusia-makhluk / waktu / konsep / sebutan.
-4. Bandingkan dua kata dan tentukan mana yang telah dapat dikenali sebagai isim.
+4. Bandingkan dua kata dan tentukan mana yang dapat dikenali sebagai isim.
 5. Temukan kembali isim yang pernah muncul pada contoh sebelumnya.
 
+Bank lengkap disimpan pada `assessment.json`.
+
 ## 8. Latihan Analisis/Transfer
-Gunakan potongan ayat baru yang belum digunakan pada paparan utama. Peserta diminta menemukan target isim tanpa menentukan i'rab atau fungsi sintaksisnya. Item transfer final harus berasal dari bank evidence terverifikasi dan tidak mengulang contoh pengajaran secara kosmetik.
+Potongan ayat baru digunakan agar peserta menemukan target isim tanpa menentukan i'rab atau fungsi sintaksisnya. Item transfer tidak sekadar mengulang contoh pengajaran.
 
 ## 9. Uji Kompetensi
-Blueprint awal 10 item:
-- 3 recognition;
-- 2 classification/comprehension;
-- 3 application pada potongan baru;
-- 2 transfer.
+Bank tersedia sebanyak **30 item**, mencakup recognition, comprehension, application, analysis, dan transfer. Jawaban serta pembahasan melekat pada data assessment agar dapat dipisahkan saat produksi buku siswa.
 
-Kriteria mastery awal: minimal 8/10 benar, dengan sekurang-kurangnya 1 item transfer benar. Ambang ini masih berstatus kebijakan pilot dan harus divalidasi sebelum freeze asesmen lintas K01–K65.
+Kriteria mastery pilot: minimal 8/10 benar dengan sekurang-kurangnya 1 item transfer benar. Ambang ini belum dianggap final sebelum pilot/validasi asesmen.
 
 ## 10. Tadabbur & Transfer Makna
 Peserta menyadari bahwa satu ayat dapat memuat nama Allah, manusia, waktu, konsep, dan sebutan. Struktur bahasa dipelajari untuk membantu membaca makna Al-Qur'an secara lebih sadar, bukan sekadar menghafal istilah nahwu.
@@ -90,12 +85,17 @@ K01 menjadi rujukan `first_allowed_competency` bagi item Bi'ah yang target produ
 - [x] capaian dan boundary ditetapkan
 - [x] pola 10 komponen diterapkan
 - [x] ≥10 kandidat contoh Qurani terkumpul
-- [x] bank mufradat awal tersedia
-- [ ] seluruh teks/rujukan diverifikasi QA
-- [ ] `quran-examples.json` final
-- [ ] `vocabulary.json` final
-- [ ] bank 25–40 latihan/soal
-- [ ] answer key + pembahasan
-- [ ] teacher notes
-- [ ] review ahli
-- [ ] K01 FROZEN
+- [x] bank mufradat tersedia
+- [x] seluruh teks/rujukan evidence Qurani diverifikasi QA
+- [x] `quran-examples.json` tersedia dan menjadi bank canonical K01
+- [x] `vocabulary.json` tersedia
+- [x] bank 25–40 latihan/soal — **30 item tersedia**
+- [x] answer key + pembahasan tersedia di `assessment.json`
+- [x] `teacher-notes.md` tersedia
+- [ ] review ahli Bahasa Arab/nahwu
+- [ ] review ahli pembelajaran Bahasa Arab
+- [ ] validasi mastery threshold melalui pilot
+- [ ] K01 FROZEN v1.0
+
+### Aturan status
+Checklist hanya boleh dibiarkan kosong jika pekerjaan memang belum dilakukan. Setiap artifact yang sudah tersedia wajib segera disinkronkan pada Production Gate agar status repo mencerminkan kondisi aktual.
