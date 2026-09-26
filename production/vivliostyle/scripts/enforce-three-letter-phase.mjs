@@ -3,7 +3,7 @@ import path from 'node:path';
 
 const file=path.resolve(import.meta.dirname,'build-pagedjs-p001-p010.mjs');
 let src=await fs.readFile(file,'utf8');
-if(src.includes('const P003_SENTINEL_VERSION="v1.3";')){
+if(src.includes('const P003_SENTINEL_VERSION="v1.4";')){
   console.log('P003_COMPETENCY_SENTINEL_PATCHED');
   console.log('P003_SENTINEL_ALREADY_PRESENT');
   process.exit(0);
@@ -11,9 +11,7 @@ if(src.includes('const P003_SENTINEL_VERSION="v1.3";')){
 const start=src.indexOf('function exercisesFor(n){');
 const end=src.indexOf('\nconst logo=',start);
 if(start<0||end<0) throw new Error('Cannot locate exercisesFor() for J1 competency-first patch');
-const replacement=String.raw`const P003_SENTINEL_VERSION="v1.3";
-// Parse pedagogical Arabic units using Unicode properties: one Arabic base + following marks.
-// This avoids the previous escaped \\u range being emitted literally by String.raw.
+const replacement=`const P003_SENTINEL_VERSION="v1.4";
 const p003Units=x=>String(x).normalize('NFD').match(/\\p{Script=Arabic}\\p{M}*/gu)||[];
 const p003Base=x=>(x.normalize('NFD').match(/\\p{Script=Arabic}/u)||[''])[0];
 const p003HasFathah=x=>Array.from(x.normalize('NFD')).includes(String.fromCodePoint(0x064E));
@@ -28,7 +26,7 @@ const assertP003Regular=(items,target,review)=>{
    if(u.length===1)throw new Error('P003 SINGLE_LETTER_GROUP_FAIL cell='+(i+1));
    if(i<6&&u.length!==2)throw new Error('P003 PLANTING_LENGTH_FAIL cell='+(i+1)+' len='+u.length);
    if(i>=6&&u.length!==3)throw new Error('P003 PRACTICE_LENGTH_FAIL cell='+(i+1)+' len='+u.length);
-   if(u.some(x=>!p003HasFathah(x)))throw new Error('P003 HARAKAT_MISMATCH_FAIL cell='+(i+1)+' cps='+u.map(v=>Array.from(v).map(c=>c.codePointAt(0).toString(16)).join('+')).join(','));
+   if(u.some(x=>!p003HasFathah(x)))throw new Error('P003 HARAKAT_MISMATCH_FAIL cell='+(i+1));
    const bases=u.map(p003Base);
    if(i<6&&bases.some(x=>!targetBases.has(x)))throw new Error('P003 COMPETENCY_MISMATCH_FAIL planting='+(i+1)+' bases='+bases.join(','));
    if(i>=6&&!bases.some(x=>targetBases.has(x)))throw new Error('P003 COMPETENCY_MISMATCH_FAIL practice='+(i+1));
@@ -59,7 +57,7 @@ function exercisesFor(n){
 src=src.slice(0,start)+replacement+src.slice(end);
 await fs.writeFile(file,src,'utf8');
 console.log('P003_COMPETENCY_SENTINEL_PATCHED');
-console.log('P003_PARSER=UNICODE_SCRIPT_ARABIC_PLUS_MARKS');
+console.log('P003_PARSER=VALID_UNICODE_PROPERTY_REGEX');
 console.log('P003_TARGET=جَ حَ خَ');
 console.log('P003_PLANTING=6xEXACT2_TARGET_ONLY');
 console.log('P003_PRACTICE=18xEXACT3_TARGET_REQUIRED');
