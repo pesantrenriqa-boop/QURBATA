@@ -1,5 +1,5 @@
 name: Paged.js J1 Renderer Audit
-# audit-trigger: P003 competency sentinel + hard detached-letter gates
+# audit-trigger: P003 competency sentinel + hard detached-letter gates + preserved Arabic shaping
 on:
   push:
     branches: [renderer/pagedjs-p001-prototype]
@@ -39,8 +39,14 @@ jobs:
         run: |
           node scripts/enforce-detached-j1.mjs
           grep -q 'class="detached-letter' scripts/build-pagedjs-p001-p010.mjs
-          grep -q 'font-variant-ligatures:none' scripts/build-pagedjs-p001-p010.mjs
+          grep -q 'detached-gap' scripts/build-pagedjs-p001-p010.mjs
+          grep -q 'font-family:Uthman' scripts/build-pagedjs-p001-p010.mjs
+          if grep -q 'font-feature-settings:"liga" 0,"rlig" 0,"calt" 0' scripts/build-pagedjs-p001-p010.mjs; then
+            echo "ERROR: Arabic required shaping disabled inside detached unit"
+            exit 1
+          fi
           echo "DETACHED_LETTER_SOURCE_PASS"
+          echo "ARABIC_UNIT_SHAPING_PRESERVED"
       - run: mkdir -p dist/fonts && cp fonts/KFGQPC-Uthman-Taha-Naskh.woff2 dist/fonts/KFGQPC-Uthman-Taha-Naskh.woff2
       - run: npm run build:pagedjs:p001-p040:pdf
         timeout-minutes: 5
@@ -56,6 +62,7 @@ jobs:
             echo "commit=$GITHUB_SHA"
             echo "font=KFGQPC-Uthman-Taha-Naskh"
             echo "j1_letter_mode=DETACHED_HARD_GATE"
+            echo "arabic_unit_shaping=PRESERVED"
             echo "curriculum_sentinel=P003"
             echo "P003_target=جَ حَ خَ"
             echo "P003_planting=6xEXACT2_TARGET_ONLY"
@@ -71,7 +78,7 @@ jobs:
           @font-face{font-family:Uthman;src:url("./fonts/KFGQPC-Uthman-Taha-Naskh.woff2")}
           body{margin:0;background:white;font-family:Uthman,serif}
           .proof{width:1200px;height:800px;display:grid;grid-template-columns:repeat(4,1fr);align-items:center;text-align:center}
-          .s{display:inline-block;font-size:180px;line-height:1;font-variant-ligatures:none;font-feature-settings:"liga" 0,"rlig" 0,"calt" 0}
+          .s{display:inline-block;font-size:180px;line-height:1;font-family:Uthman,serif;unicode-bidi:isolate}
           small{display:block;font-family:Arial,sans-serif;font-size:24px;margin-top:40px}
           </style></head><body><div class="proof">
           <div><span class="s">هَ</span><small>P013 · U+0647 + FATHA</small></div>
