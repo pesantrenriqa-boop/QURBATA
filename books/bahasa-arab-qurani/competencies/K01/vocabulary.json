@@ -1,0 +1,22 @@
+{
+  "competency":"K01",
+  "status":"DRAFT_BANK",
+  "items":[
+    {"arabic":"ٱللَّهُ","meaning":"Allah","firstCompetency":"K01","quranic":true,"receptive":true,"productive":false},
+    {"arabic":"رَبّ","meaning":"Tuhan/Pemelihara","firstCompetency":"K01","quranic":true,"receptive":true,"productive":false},
+    {"arabic":"يَوْم","meaning":"hari","firstCompetency":"K01","quranic":true,"receptive":true,"productive":false},
+    {"arabic":"دِين","meaning":"agama/pembalasan sesuai konteks","firstCompetency":"K01","quranic":true,"receptive":true,"productive":false},
+    {"arabic":"صِرَاط","meaning":"jalan","firstCompetency":"K01","quranic":true,"receptive":true,"productive":false},
+    {"arabic":"نَاس","meaning":"manusia","firstCompetency":"K01","quranic":true,"receptive":true,"productive":false},
+    {"arabic":"مَلِك","meaning":"raja","firstCompetency":"K01","quranic":true,"receptive":true,"productive":false},
+    {"arabic":"شَرّ","meaning":"kejahatan","firstCompetency":"K01","quranic":true,"receptive":true,"productive":false},
+    {"arabic":"فَلَق","meaning":"fajar/subuh","firstCompetency":"K01","quranic":true,"receptive":true,"productive":false},
+    {"arabic":"أَحَد","meaning":"satu/esa sesuai konteks","firstCompetency":"K01","quranic":true,"receptive":true,"productive":false},
+    {"arabic":"صَمَد","meaning":"tempat bergantung/Yang Mahasempurna sesuai konteks","firstCompetency":"K01","quranic":true,"receptive":true,"productive":false},
+    {"arabic":"نَصْر","meaning":"pertolongan","firstCompetency":"K01","quranic":true,"receptive":true,"productive":false},
+    {"arabic":"إِنسَان","meaning":"manusia","firstCompetency":"K01","quranic":true,"receptive":true,"productive":false},
+    {"arabic":"قَلَم","meaning":"pena","firstCompetency":"K01","quranic":true,"receptive":true,"productive":false},
+    {"arabic":"مَال","meaning":"harta","firstCompetency":"K01","quranic":true,"receptive":true,"productive":false}
+  ],
+  "note":"Bentuk lemma untuk bank belajar; orthography evidence ayat disimpan terpisah di quran-examples.json. CEFR belum ditetapkan. Productive vocabulary untuk Bi'ah dikelola pada corpus Bi'ah terpisah."
+}
