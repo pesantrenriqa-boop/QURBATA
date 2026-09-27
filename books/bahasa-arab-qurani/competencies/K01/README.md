@@ -2,9 +2,9 @@
 
 **Kode:** REC-N-BASE  
 **Layer:** A — Fondasi Pengenalan  
-**Status materi:** CONTENT COMPLETE / QURAN EVIDENCE VERIFIED / EXPERT REVIEW PENDING  
+**Status materi:** CONTENT BANK COMPLETE (45 EVIDENCE) / QURAN EVIDENCE VERIFIED / EXPERT REVIEW PENDING  
 **Prasyarat:** tidak ada  
-**Standar:** COMPETENCY-AUTHORING-STANDARD-v1.0 + BEGINNER-PEDAGOGY-RULES-v1.0
+**Standar:** COMPETENCY-AUTHORING-STANDARD-v1.1 + BEGINNER-PEDAGOGY-RULES-v1.0
 
 ## AHA K01
 **Saya bisa mulai menemukan isim dalam Al-Qur'an, meskipun belum mengetahui arti seluruh ayat.**
@@ -13,97 +13,52 @@
 Peserta mampu mengenali **isim** pada contoh Al-Qur'an sederhana tanpa dituntut mengetahui arti seluruh potongan ayat, menentukan i'rab, atau menjelaskan fungsi sintaksisnya.
 
 # 1. LIHAT — لاحظ
-Jangan mulai dengan definisi. Perlihatkan banyak contoh yang jelas.
+Jangan mulai dengan definisi. Perlihatkan banyak contoh yang jelas. Bank K01 sekarang menyediakan **45 evidence Qurani terverifikasi**; buku memilih subset agar halaman tetap ringan.
 
-### Lihat 1
-**ٱللَّهُ — رَبِّ — يَوْمِ — ٱلنَّاسِ**
+Contoh awal:
+**ٱللَّهُ — رَبِّ — يَوْمِ — ٱلنَّاسِ — مَلِكِ — شَرِّ — ٱلْفَلَقِ — أَحَدٌ — ٱلصَّمَدُ — نَصْرُ — ٱلْقَلَمِ — مَالُهُۥ**
 
-### Lihat 2
-**مَلِكِ — شَرِّ — ٱلْفَلَقِ — أَحَدٌ**
-
-### Lihat 3
-**ٱلصَّمَدُ — نَصْرُ — ٱلْقَلَمِ — مَالُهُۥ**
-
-Instruksi awal cukup: **lihat, baca, dan perhatikan kata-katanya.** Arti boleh diberikan sebagai bantuan, tetapi tidak menjadi syarat untuk menemukan target.
+Instruksi: **lihat, baca, dan perhatikan kata-katanya.** Arti boleh diberikan sebagai bantuan, tetapi tidak menjadi syarat untuk menemukan target.
 
 # 2. TEMUKAN — اكتشف
-Gunakan beberapa putaran, bukan satu pertanyaan besar.
+Gunakan beberapa putaran dan variasi evidence.
 
-### Temukan A — kata atau perbuatan?
-Bandingkan:
-- **ٱللَّهُ** ↔ **خَلَقَ**
-- **ٱلنَّاسِ** ↔ **قُلْ**
-- **ٱلْقَلَمِ** ↔ **عَلَّمَ**
-- **مَالُهُۥ** ↔ **أَغْنَىٰ**
+Bandingkan isim dengan bentuk perbuatan yang jelas, lalu minta peserta mencari pola pada evidence Qurani lain. Bank TEMUKAN mencakup antara lain **ٱلْإِنسَـٰنَ، عَلَقٍ، ٱلْقَلَمِ، مَالُهُۥ، ٱلْعَصْرِ، خُسْرٍ، ٱلْحَقِّ، ٱلصَّبْرِ**.
 
-Tanya: **mana yang terasa sebagai nama/sebutan/sesuatu, bukan perbuatan?**
-
-### Temukan B — tanpa harus tahu seluruh arti
-Tampilkan potongan:
-
-**قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ**
-
-Peserta tidak harus menerjemahkan seluruh ayat. Arahkan mata pada **رَبِّ** dan **ٱلنَّاسِ**.
-
-### Temukan C — cari lagi
-Tampilkan:
-
-**جَآءَ نَصْرُ ٱللَّهِ**
-
-Minta peserta mencoba menemukan kata yang sejenis dengan contoh sebelumnya.
+Peserta tidak harus menerjemahkan seluruh ayat.
 
 # 3. CIRI MUDAH
-Pada K01, ciri dipakai sebagai **alat bantu menemukan**, bukan definisi nahwu lengkap.
-
-1. Isim sering berupa **nama atau sebutan**: **ٱللَّهُ، رَبِّ، مَلِكِ**.
-2. Isim dapat menunjuk **orang/makhluk atau sesuatu**: **ٱلنَّاسِ، ٱلْإِنسَانَ، ٱلْقَلَمِ**.
-3. Isim juga dapat menunjuk **waktu atau gagasan/hal yang tidak dapat disentuh**: **يَوْمِ، شَرِّ، نَصْرُ**.
+1. Isim sering berupa **nama atau sebutan**.
+2. Isim dapat menunjuk **orang/makhluk atau sesuatu**.
+3. Isim dapat menunjuk **waktu, tempat, keadaan, atau gagasan/konsep**.
 4. Jadi, **isim tidak hanya berarti benda**.
-5. Untuk K01, peserta cukup belajar membedakan contoh isim yang jelas dari bentuk perbuatan yang jelas. Tanda-tanda isim yang lebih khusus akan ditemukan satu per satu pada kompetensi berikutnya.
+5. Pada K01, ciri ini adalah alat bantu pengenalan. Tanda isim yang lebih khusus ditemukan bertahap pada K02 dan seterusnya.
 
 > **Ingat:** belum tahu arti seluruh ayat bukan berarti belum bisa menemukan pola bahasanya.
 
 # 4. PAHAMI — افهم
 Nama konsepnya adalah **اَلِاسْمُ — isim**.
 
-Penjelasan pemula: **isim adalah kata yang kita kenali sebagai nama, sebutan, orang/makhluk, benda, waktu, sifat, atau suatu hal/konsep.**
+Penjelasan pemula: **isim adalah kata yang kita kenali sebagai nama, sebutan, orang/makhluk, benda, waktu, tempat, sifat, keadaan, atau suatu hal/konsep.**
 
-Definisi nahwu yang lebih akademik disimpan untuk guru/backend dan tidak menjadi hafalan wajib K01.
+Definisi nahwu akademik tetap tersedia untuk guru/backend dan tidak menjadi hafalan wajib K01.
 
 ### Belum perlu
-Pada K01 belum perlu menentukan mubtada, khabar, fa'il, maf'ul, mudhaf, i'rab, ma'rifah–nakirah, atau idhafah.
+Belum menentukan mubtada, khabar, fa'il, maf'ul, mudhaf, i'rab, ma'rifah–nakirah, atau idhafah.
 
 # 5. COBA — طبّق
-Buat latihan pendek dan berulang.
+Bank COBA menggunakan evidence yang lebih beragam, antara lain dari Al-Fil dan Quraysh: **أَصْحَـٰبِ، ٱلْفِيلِ، كَيْدَهُمْ، طَيْرًا، حِجَارَةٍ، سِجِّيلٍ، قُرَيْشٍ، رِحْلَةَ، ٱلشِّتَآءِ، ٱلصَّيْفِ، ٱلْبَيْتِ**.
 
-### Coba 1 — pilih
-Mana isim?
-- **ٱلنَّاسِ** / **قُلْ**
-- **يَوْمِ** / **نَعْبُدُ**
-- **ٱلْقَلَمِ** / **عَلَّمَ**
-
-### Coba 2 — tandai
-Pada **قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ**, tandai isim yang sudah dapat kamu temukan.
-
-### Coba 3 — cari dua
-Pada **جَآءَ نَصْرُ ٱللَّهِ**, temukan dua isim.
-
-### Coba 4 — tidak harus menerjemahkan
-Guru memberikan potongan baru. Peserta hanya diminta **menemukan isim**, bukan menerjemahkan seluruh ayat.
-
-Bank lengkap 30 item disimpan pada `assessment.json`.
+Latihan dibuat pendek: pilih, tandai, cari, kelompokkan secara sederhana, lalu recycle evidence lama. Bank 30 assessment beserta jawaban/pembahasan tetap berada di `assessment.json` dan dapat diperluas saat produksi latihan buku/RIQA OS.
 
 # 6. BUKTIKAN — أثبت
-Gunakan evidence yang tidak menjadi contoh utama.
+Evidence BUKTIKAN disimpan sebagai unseen set dan tidak dipakai pada paparan utama. Set K01 saat ini mencakup:
+**جُوعٍ — خَوْفٍ — ٱلتَّكَاثُرُ — ٱلْمَقَابِرَ — ٱلْيَقِينِ — ٱلْجَحِيمَ — ٱلْقَارِعَةُ**.
 
-Contoh transfer:
-- **سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ** → cari isim yang sudah dapat dikenali.
-- **فِي جِيدِهَا حَبْلٌ مِّن مَّسَدٍ** → cari isim yang sudah dapat dikenali.
-
-Peserta dinyatakan menunjukkan kompetensi K01 jika dapat menemukan target pada evidence baru tanpa bantuan arti penuh dan tanpa diminta melakukan analisis di atas K01.
+Peserta membuktikan kemampuan dengan menemukan isim pada evidence baru tanpa bantuan arti penuh. Reserve tambahan tersedia untuk variasi ujian/remedial.
 
 # Bank Materi Backend
-Bank canonical evidence berada di `quran-examples.json`; vocabulary di `vocabulary.json`; bank 30 assessment beserta jawaban/pembahasan di `assessment.json`; strategi guru dan QA di `teacher-notes.md`.
+`quran-examples.json` sekarang menyimpan **45 evidence Qurani terverifikasi** dengan distribusi pedagogis: **14 LIHAT, 10 TEMUKAN, 11 COBA, 7 BUKTIKAN, 3 RESERVE**. Vocabulary berada di `vocabulary.json`; assessment di `assessment.json`; strategi guru dan QA di `teacher-notes.md`.
 
 ## Miskonsepsi yang dicegah
 - isim = hanya benda konkret;
@@ -116,15 +71,17 @@ K01 menjadi rujukan `first_allowed_competency` untuk item Bi'ah yang target prod
 
 ## Production Gate K01
 - [x] capaian dan boundary ditetapkan
-- [x] COMPETENCY-AUTHORING-STANDARD-v1.0 diterapkan
+- [x] COMPETENCY-AUTHORING-STANDARD-v1.1 diterapkan
 - [x] BEGINNER-PEDAGOGY-RULES-v1.0 diterapkan
-- [x] siklus LIHAT → TEMUKAN → CIRI MUDAH → PAHAMI → COBA → BUKTIKAN diterapkan
-- [x] ≥10 kandidat contoh Qurani terkumpul
+- [x] LIHAT → TEMUKAN → CIRI MUDAH → PAHAMI → COBA → BUKTIKAN diterapkan
+- [x] **45 evidence Qurani tersedia (target v1.1 K01–K10 = 40–50)**
+- [x] diversity evidence lintas surah/kosakata/konteks
+- [x] unseen BUKTIKAN dipisahkan dari paparan
 - [x] bank mufradat tersedia
-- [x] seluruh teks/rujukan evidence Qurani diverifikasi QA
-- [x] `quran-examples.json` tersedia dan menjadi bank canonical K01
+- [x] seluruh 45 evidence Qurani berstatus verified
+- [x] `quran-examples.json` canonical K01
 - [x] `vocabulary.json` tersedia
-- [x] bank 25–40 latihan/soal — **30 item tersedia**
+- [x] 30 item latihan/soal tersedia
 - [x] answer key + pembahasan tersedia di `assessment.json`
 - [x] `teacher-notes.md` tersedia
 - [ ] review ahli Bahasa Arab/nahwu
@@ -133,4 +90,4 @@ K01 menjadi rujukan `first_allowed_competency` untuk item Bi'ah yang target prod
 - [ ] K01 FROZEN v1.0
 
 ### Aturan status
-Checklist hanya boleh kosong jika pekerjaan memang belum dilakukan. Artifact yang selesai wajib segera disinkronkan agar status repo mencerminkan kondisi aktual.
+K01 sudah memenuhi **content/evidence gate v1.1**. Perubahan berikutnya hanya untuk koreksi QA/review ahli, pengayaan yang tidak merusak unseen set, atau hasil pilot.
