@@ -2,7 +2,7 @@
 
 **Kode:** REC-HARF-JARR  
 **Layer:** A — Fondasi Pengenalan  
-**Status:** AUTHORING IN PROGRESS / EXPERT REVIEW PENDING  
+**Status:** CONTENT COMPLETE / QURAN EVIDENCE VERIFIED / EXPERT REVIEW PENDING  
 **Prasyarat:** K01 — Mengenali Isim Dasar; K02 — Mengenali Alif Lam; K03 — Mengenali Nakirah dan Tanwin  
 **Standar:** COMPETENCY-AUTHORING-STANDARD-v1.1 + BEGINNER-PEDAGOGY-RULES-v1.0
 
@@ -68,13 +68,16 @@ Latihan bergerak bertahap:
 6. recycle K01–K03 tanpa mengajarkan ulang kompetensi lama.
 
 # 6. BUKTIKAN — أثبت
-Evidence BUKTIKAN harus berupa evidence baru yang tidak dipakai pada LIHAT/TEMUKAN/COBA. Peserta diminta menemukan huruf jar dan isim sesudahnya tanpa bantuan arti penuh.
+Evidence BUKTIKAN berupa evidence baru yang tidak dipakai pada LIHAT/TEMUKAN/COBA. Peserta menemukan huruf jar dan isim sesudahnya tanpa bantuan arti penuh.
 
-# Target Bank Canonical K04
-- `quran-examples.json` — target **40–50 evidence Qurani** dengan stage LIHAT/TEMUKAN/COBA/BUKTIKAN/RESERVE.
-- `vocabulary.json` — vocabulary/recycle bank, tanpa klaim CEFR yang belum divalidasi.
-- `assessment.json` — target **30 item** recognition → discrimination → application → transfer, lengkap dengan answer/explanation.
+## Bank Canonical K04
+- `quran-examples.json` — **45 evidence Qurani**, distribusi 14 LIHAT + 10 TEMUKAN + 11 COBA + 7 BUKTIKAN + 3 RESERVE.
+- `vocabulary.json` — vocabulary/recycle bank tanpa klaim CEFR.
+- `assessment.json` — **30 item** recognition → discrimination → application → analysis → transfer, lengkap dengan answer/explanation.
 - `teacher-notes.md` — panduan guru, boundary, miskonsepsi, dan QA gate.
+
+## Catatan QA penting
+Audit canonical menemukan dan memperbaiki beberapa kandidat authoring yang sebelumnya tidak cocok dengan ayat: bentuk At-Tin 95:3, At-Tariq 86:1, Al-Qasas 28:29, serta satu rujukan `عَلَىٰ صَلَاتِهِمْ`. Bank canonical sekarang memakai evidence yang telah dikoreksi. `BUKTIKAN` Q036–Q042 dipisahkan dari teaching/practice set.
 
 ## Miskonsepsi yang dicegah
 - semua kata kecil adalah huruf jar;
@@ -89,14 +92,15 @@ Evidence BUKTIKAN harus berupa evidence baru yang tidak dipakai pada LIHAT/TEMUK
 - [x] AHA tunggal ditetapkan
 - [x] beginner cycle LIHAT → TEMUKAN → CIRI MUDAH → PAHAMI → COBA → BUKTIKAN ditetapkan
 - [x] recycle K01–K03 dirancang
-- [ ] 40–50 evidence Qurani canonical tersedia
-- [ ] distribusi evidence pedagogis final
-- [ ] vocabulary bank tersedia
-- [ ] 30 assessment items + answer key tersedia
-- [ ] teacher notes tersedia
-- [ ] QA rujukan surah/ayat
-- [ ] normalisasi orthography Utsmani canonical
-- [ ] unseen BUKTIKAN dipastikan tidak bocor ke teaching/practice set
+- [x] 40–50 evidence Qurani canonical tersedia — **45 evidence**
+- [x] distribusi evidence pedagogis final — **14/10/11/7/3**
+- [x] vocabulary bank tersedia
+- [x] 30 assessment items + answer key tersedia
+- [x] teacher notes tersedia
+- [x] QA rujukan surah/ayat
+- [x] QA stimulus Qurani assessment
+- [x] unseen BUKTIKAN dipastikan tidak bocor ke teaching/practice set
+- [ ] normalisasi glyph/waqf Utsmani final pada pipeline PDF dari satu sumber canonical
 - [ ] review ahli Bahasa Arab/nahwu
 - [ ] review ahli pembelajaran Bahasa Arab
 - [ ] validasi mastery threshold melalui pilot
