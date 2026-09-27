@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "QURBATA Uthmani";
+  src: url("../fonts/KFGQPC-Uthman-Taha-Naskh.woff2") format("woff2");
+  font-display: block;
+}
+
+@page {
+  size: 176mm 250mm;
+  margin: 18mm 16mm 17mm;
+  @top-left { content: "QURBATA  •  BAHASA ARAB QURANI"; color: #286052; font: 700 7.5pt Arial, sans-serif; letter-spacing: .08em; }
+  @top-right { content: string(chapter); color: #5d706a; font: 7.5pt Arial, sans-serif; }
+  @bottom-left { content: "Rumah Ilmu Al-Qur'an"; color: #64746f; font: 7pt Arial, sans-serif; }
+  @bottom-right { content: counter(page); color: #164e3f; font: 800 9pt Arial, sans-serif; }
+}
+
+@page cover { margin: 0; @top-left { content: none; } @top-right { content: none; } @bottom-left { content: none; } @bottom-right { content: none; } }
+@page chapter { @top-right { content: none; } }
+
+:root {
+  --green-950: #123d33;
+  --green-800: #1b5b4b;
+  --green-600: #2f826c;
+  --green-100: #e8f3ef;
+  --green-050: #f5faf8;
+  --gold: #b89242;
+  --gold-soft: #efe2bb;
+  --ink: #17221f;
+  --muted: #64746f;
+  --line: #cbd9d4;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { color: var(--ink); background: #dce4e1; font-family: "Aptos", "Segoe UI", Arial, sans-serif; line-height: 1.55; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.arabic { font-family: "QURBATA Uthmani", "Noto Naskh Arabic", "Traditional Arabic", serif; direction: rtl; unicode-bidi: isolate; }
+.print-page { break-after: page; }
+
+.cover { page: cover; width: 176mm; height: 250mm; padding: 22mm 18mm; overflow: hidden; color: white; background: linear-gradient(145deg, #0d382f 0%, #1e6654 58%, #b89242 160%); position: relative; display: flex; flex-direction: column; }
+.cover::before, .cover::after { content: ""; position: absolute; border: 1px solid rgb(255 255 255 / 18%); transform: rotate(45deg); }
+.cover::before { width: 118mm; height: 118mm; right: -46mm; top: -36mm; }
+.cover::after { width: 86mm; height: 86mm; left: -50mm; bottom: -25mm; }
+.cover-kicker { font-size: 9pt; font-weight: 800; letter-spacing: .17em; color: var(--gold-soft); }
+.cover-title { margin: 42mm 0 5mm; max-width: 130mm; font-size: 30pt; line-height: 1.08; letter-spacing: -.025em; }
+.cover-subtitle { margin: 0; max-width: 122mm; color: #e8f3ef; font-size: 12pt; line-height: 1.55; }
+.cover-arabic { margin: 19mm 0 0; font-size: 27pt; color: var(--gold-soft); }
+.cover-ladder { margin-top: auto; display: grid; grid-template-columns: repeat(5, 1fr); gap: 2mm; }
+.cover-ladder span { padding: 2.4mm 1mm; border: 1px solid rgb(255 255 255 / 27%); border-radius: 2mm; text-align: center; font-size: 7pt; font-weight: 800; }
+.cover-brand { margin-top: 9mm; display: flex; justify-content: space-between; align-items: end; font-size: 8pt; }
+.cover-brand strong { font-size: 13pt; letter-spacing: .08em; }
+
+.front-title { margin: 0 0 12mm; font-size: 25pt; line-height: 1.15; color: var(--green-950); }
+.front-subtitle { margin: -7mm 0 16mm; color: var(--green-600); font-size: 12pt; }
+.lead { font-size: 12pt; line-height: 1.75; }
+.chapter-name { string-set: chapter content(text); }
+h1.chapter-name { page: chapter; break-before: page; margin: 0 0 9mm; color: var(--green-950); font-size: 24pt; line-height: 1.18; }
+h2 { margin: 8mm 0 3mm; color: var(--green-800); font-size: 15pt; line-height: 1.25; }
+p { margin: 0 0 4mm; }
+
+.principles { counter-reset: principle; display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin: 7mm 0; }
+.principle { counter-increment: principle; min-height: 25mm; padding: 4mm; border-top: 1.4mm solid var(--green-600); background: var(--green-050); }
+.principle::before { content: counter(principle, decimal-leading-zero); display: block; color: var(--gold); font-weight: 900; font-size: 15pt; }
+.principle strong { display: block; margin-bottom: 1mm; }
+
+.layer-grid { display: grid; gap: 4mm; }
+.layer-card { display: grid; grid-template-columns: 18mm 1fr; gap: 4mm; padding: 4mm; border: .35mm solid var(--line); border-radius: 2mm; background: white; break-inside: avoid; }
+.layer-letter { width: 15mm; height: 15mm; display: grid; place-items: center; border-radius: 50%; color: white; background: var(--green-800); font-weight: 900; font-size: 16pt; }
+.layer-card h3 { margin: 0 0 1mm; color: var(--green-950); font-size: 12pt; }
+.layer-card p { margin: 0; color: var(--muted); font-size: 9pt; }
+
+.registry { width: 100%; border-collapse: collapse; font-size: 7.7pt; }
+.registry th { padding: 2.2mm; background: var(--green-800); color: white; text-align: left; }
+.registry td { padding: 2mm; border-bottom: .25mm solid var(--line); vertical-align: top; }
+.registry tr:nth-child(even) td { background: var(--green-050); }
+.registry .id { width: 13mm; font-weight: 900; color: var(--green-800); }
+.registry .layer { width: 10mm; text-align: center; }
+
+.competency { break-before: page; }
+.competency-heading { display: grid; grid-template-columns: 25mm 1fr; gap: 5mm; align-items: center; margin-bottom: 6mm; }
+.competency-id { height: 25mm; display: grid; place-items: center; border-radius: 50%; color: white; background: var(--green-800); font-size: 14pt; font-weight: 900; }
+.competency-title { margin: 0; color: var(--green-950); font-size: 22pt; line-height: 1.12; string-set: chapter content(text); }
+.competency-code { margin-top: 1.5mm; color: var(--gold); font-size: 8pt; font-weight: 900; letter-spacing: .08em; }
+.competency-summary { padding: 5mm 0; border-top: .6mm solid var(--gold); border-bottom: .3mm solid var(--line); font-size: 12pt; line-height: 1.65; }
+.metadata { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin: 5mm 0; }
+.meta { padding: 3mm; background: var(--green-050); border-radius: 2mm; }
+.meta-label { display: block; color: var(--green-600); font-size: 7pt; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+.meta-value { display: block; margin-top: 1mm; font-size: 9pt; }
+
+.examples { width: 100%; border-collapse: collapse; margin-top: 3mm; font-size: 8pt; }
+.examples th { padding: 2mm; background: var(--green-800); color: white; text-align: left; }
+.examples td { padding: 2.5mm 2mm; border-bottom: .25mm solid var(--line); vertical-align: middle; }
+.examples tr:nth-child(even) td { background: var(--green-050); }
+.examples .quran { width: 42mm; font-size: 16pt; text-align: right; color: #111; }
+.status { margin-top: 5mm; color: var(--muted); font-size: 7.5pt; }
+.status strong { color: var(--green-800); }
+.pending { margin-top: 9mm; padding: 5mm 0; border-top: .5mm solid var(--line); border-bottom: .5mm solid var(--line); color: var(--muted); }
+.next { margin-top: 8mm; display: grid; grid-template-columns: 1fr 34mm; gap: 6mm; align-items: center; }
+.next p { margin: 0; font-size: 9pt; }
+.qr-placeholder { width: 34mm; height: 34mm; padding: 4mm; display: grid; place-items: center; border: .4mm solid var(--green-600); color: var(--green-800); text-align: center; font-size: 7pt; font-weight: 800; }
+
+@media screen {
+  body { padding: 20px; }
+  .print-page, .competency { width: 176mm; min-height: 250mm; margin: 0 auto 20px; padding: 18mm 16mm 17mm; background: white; box-shadow: 0 8px 30px rgb(22 58 49 / 16%); }
+  .cover { padding: 22mm 18mm; }
+}
+
+@media print { body { background: white; } }

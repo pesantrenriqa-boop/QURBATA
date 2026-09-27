@@ -30,6 +30,7 @@ QURBATA/
   - Assessment Framework
 
 03-BOOKS/
+  - BAHASA-ARAB-QURANI
   - JILID-1
   - JILID-2
   - JILID-3
@@ -53,6 +54,7 @@ QURBATA/
 1. Consolidate all existing QURBATA sources.
 2. Freeze Jilid 1 as official source book.
 3. Prepare production pipeline for subsequent jilid.
+4. Develop the corpus-evidenced K01-K65 Bahasa Arab Qurani master book.
 
 ## STATUS DEFINITIONS
 

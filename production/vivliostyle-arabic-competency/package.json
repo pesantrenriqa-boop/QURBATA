@@ -1,0 +1,15 @@
+{
+  "name": "qurbata-quranic-arabic-competency-book",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Buku Tangga Kompetensi Bahasa Arab Qurani QURBATA berbasis Vivliostyle",
+  "type": "module",
+  "scripts": {
+    "build:html": "node scripts/build-book.mjs",
+    "build:pdf": "npm run build:html && vivliostyle build dist/index.html -o dist/TANGGA-KOMPETENSI-BAHASA-ARAB-QURANI-QURBATA-v0.1.pdf",
+    "build": "npm run build:pdf"
+  },
+  "dependencies": {
+    "@vivliostyle/cli": "^10.1.0"
+  }
+}
