@@ -2,7 +2,7 @@
 
 **Kode:** REC-AL  
 **Layer:** A — Fondasi Pengenalan  
-**Status:** CONTENT BANK COMPLETE / QURAN QA PENDING  
+**Status:** CONTENT COMPLETE / QURAN EVIDENCE VERIFIED / EXPERT REVIEW PENDING  
 **Prasyarat:** K01 — Mengenali Isim Dasar  
 **Standar:** COMPETENCY-AUTHORING-STANDARD-v1.0 + BEGINNER-PEDAGOGY-RULES-v1.0
 
@@ -16,7 +16,7 @@ Peserta mampu menemukan dan menandai **ال** pada isim Qurani yang sudah dapat 
 Perbanyak contoh sebelum memberi teori.
 
 ### Lihat 1
-**ٱلْحَمْدُ — ٱلْعَٰلَمِينَ — ٱلرَّحْمَٰنِ — ٱلرَّحِيمِ**
+**ٱلْحَمْدُ — ٱلْعَـٰلَمِينَ — ٱلرَّحْمَـٰنِ — ٱلرَّحِيمِ**
 
 ### Lihat 2
 **ٱلدِّينِ — ٱلصِّرَٰطَ — ٱلْمُسْتَقِيمَ — ٱلنَّاسِ**
@@ -73,7 +73,7 @@ Mana yang memiliki **ال**?
 - **ٱلدِّينِ** / **يَوْمِ**
 
 ### Coba 2 — tandai
-**ٱلرَّحْمَٰنِ ٱلرَّحِيمِ**  
+**ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ**  
 Tandai **ال** pada kedua kata.
 
 ### Coba 3 — cari dalam potongan ayat
@@ -90,7 +90,7 @@ Bank lengkap 30 item disimpan pada `assessment.json`.
 # 6. BUKTIKAN — أثبت
 Gunakan evidence baru:
 - **ٱلْجِنَّةِ**
-- **ٱلنَّفَّاثَٰتِ**
+- **ٱلنَّفَّـٰثَـٰتِ**
 - **ٱلْعُقَدِ**
 - **ٱلْكَوْثَرَ**
 - **ٱلْإِنسَانَ**
@@ -98,7 +98,7 @@ Gunakan evidence baru:
 Peserta diminta menemukan dan menandai **ال** tanpa bantuan arti. Jika mampu pada evidence baru, target K02 tercapai.
 
 # Bank Materi Backend
-`quran-examples.json` menyimpan 20 kandidat evidence Qurani; `vocabulary.json` menyimpan vocabulary/recycle bank; `assessment.json` menyimpan 30 item beserta jawaban/pembahasan; `teacher-notes.md` menyimpan strategi guru dan QA gate.
+`quran-examples.json` menyimpan **20 evidence Qurani terverifikasi**; `vocabulary.json` menyimpan vocabulary/recycle bank; `assessment.json` menyimpan 30 item beserta jawaban/pembahasan; `teacher-notes.md` menyimpan strategi guru dan QA gate.
 
 ## Miskonsepsi yang dicegah
 - semua isim harus memakai ال;
@@ -111,12 +111,12 @@ Peserta diminta menemukan dan menandai **ال** tanpa bantuan arti. Jika mampu p
 - [x] COMPETENCY-AUTHORING-STANDARD-v1.0 diterapkan
 - [x] BEGINNER-PEDAGOGY-RULES-v1.0 diterapkan
 - [x] siklus LIHAT → TEMUKAN → CIRI MUDAH → PAHAMI → COBA → BUKTIKAN diterapkan
-- [x] 20 kandidat evidence Qurani tersedia
+- [x] 20 evidence Qurani tersedia
 - [x] vocabulary bank tersedia
 - [x] 30 item latihan/soal tersedia
 - [x] kunci + pembahasan tersedia di `assessment.json`
 - [x] teacher notes tersedia
-- [ ] QA Qurani final K02
+- [x] QA Qurani final K02 — 20/20 evidence diverifikasi dan orthography dinormalisasi
 - [ ] review ahli Bahasa Arab/nahwu
 - [ ] review ahli pembelajaran Bahasa Arab
 - [ ] validasi mastery threshold melalui pilot
