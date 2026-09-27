@@ -4,86 +4,121 @@
 **Layer:** A — Fondasi Pengenalan  
 **Status materi:** CONTENT COMPLETE / QURAN EVIDENCE VERIFIED / EXPERT REVIEW PENDING  
 **Prasyarat:** tidak ada  
-**Standar:** COMPETENCY-AUTHORING-STANDARD-v1.0
+**Standar:** COMPETENCY-AUTHORING-STANDARD-v1.0 + BEGINNER-PEDAGOGY-RULES-v1.0
 
-## 1. Capaian Kompetensi
-Peserta mampu mengenali kata yang berfungsi sebagai **isim** pada contoh Al-Qur'an sederhana, tanpa dituntut menentukan kedudukan i'rab atau fungsi sintaksisnya.
+## AHA K01
+**Saya bisa mulai menemukan isim dalam Al-Qur'an, meskipun belum mengetahui arti seluruh ayat.**
 
-## 2. Pemantik Qurani — لاحظ
-Amati kata-kata berikut.
+## Capaian
+Peserta mampu mengenali **isim** pada contoh Al-Qur'an sederhana tanpa dituntut mengetahui arti seluruh potongan ayat, menentukan i'rab, atau menjelaskan fungsi sintaksisnya.
 
-- **ٱللَّهُ** — Al-Fatihah 1:2
-- **رَبِّ** — Al-Fatihah 1:2
-- **يَوْمِ** — Al-Fatihah 1:4
-- **ٱلنَّاسِ** — An-Nas 114:1
+# 1. LIHAT — لاحظ
+Jangan mulai dengan definisi. Perlihatkan banyak contoh yang jelas.
 
-Pertanyaan pengamatan: Apakah kata-kata tersebut menunjukkan nama, makhluk, benda, waktu, tempat, sifat/sebutan, atau sesuatu yang dapat disebut sebagai nama?
+### Lihat 1
+**ٱللَّهُ — رَبِّ — يَوْمِ — ٱلنَّاسِ**
 
-## 3. Temukan Polanya — اكتشف
-Peserta mengelompokkan contoh Qurani yang menunjukkan nama khusus, manusia/makhluk, benda/konsep, waktu, tempat, dan sifat/sebutan. Fokus awal adalah mengenali kategori kata, bukan menghafal definisi panjang.
+### Lihat 2
+**مَلِكِ — شَرِّ — ٱلْفَلَقِ — أَحَدٌ**
 
-## 4. Pahami Kaidah — افهم
-**Isim (الاسم)** adalah kata yang menunjukkan makna pada dirinya dan tidak terikat dengan waktu sebagai bagian dari maknanya. Pada tahap K01, peserta cukup mampu mengenali contoh isim yang jelas.
+### Lihat 3
+**ٱلصَّمَدُ — نَصْرُ — ٱلْقَلَمِ — مَالُهُۥ**
 
-### Batas K01
-- belum menentukan mubtada, khabar, fa'il, maf'ul, mudhaf, atau fungsi sintaksis lain;
-- belum menjadikan tanda i'rab sebagai target;
-- belum membahas ma'rifah–nakirah sebagai target;
-- belum membahas alif-lam sebagai target khusus;
-- belum membahas idhafah sebagai target.
+Instruksi awal cukup: **lihat, baca, dan perhatikan kata-katanya.** Arti boleh diberikan sebagai bantuan, tetapi tidak menjadi syarat untuk menemukan target.
 
-### Kesalahan umum
-1. Menganggap isim hanya berarti benda konkret.
-2. Menganggap setiap kata berawalan ال otomatis cukup dianalisis hanya dari ال.
-3. Langsung menentukan i'rab sebelum mampu mengenali kategori katanya.
+# 2. TEMUKAN — اكتشف
+Gunakan beberapa putaran, bukan satu pertanyaan besar.
 
-## 5. Bank Contoh Qurani Bertingkat — حلّل
-Bank canonical lengkap disimpan pada `quran-examples.json` dan telah melalui QA evidence Qurani. README hanya menampilkan subset pengajaran.
+### Temukan A — kata atau perbuatan?
+Bandingkan:
+- **ٱللَّهُ** ↔ **خَلَقَ**
+- **ٱلنَّاسِ** ↔ **قُلْ**
+- **ٱلْقَلَمِ** ↔ **عَلَّمَ**
+- **مَالُهُۥ** ↔ **أَغْنَىٰ**
 
-| No | Contoh | Rujukan | Target | Makna ringkas | Catatan K01 |
-|---|---|---|---|---|---|
-| 1 | ٱللَّهُ | Al-Fatihah 1:2 | ٱللَّهُ | Allah | nama khusus |
-| 2 | رَبِّ | Al-Fatihah 1:2 | رَبِّ | Tuhan/Pemelihara | sebutan |
-| 3 | يَوْمِ | Al-Fatihah 1:4 | يَوْمِ | hari | waktu |
-| 4 | ٱلدِّينِ | Al-Fatihah 1:4 | ٱلدِّينِ | pembalasan/agama sesuai konteks | konsep |
-| 5 | ٱلصِّرَاطَ | Al-Fatihah 1:6 | ٱلصِّرَاطَ | jalan | benda/konsep |
-| 6 | ٱلنَّاسِ | An-Nas 114:1 | ٱلنَّاسِ | manusia | kelompok makhluk |
-| 7 | مَلِكِ | An-Nas 114:2 | مَلِكِ | Raja | sebutan |
-| 8 | شَرِّ | Al-Falaq 113:2 | شَرِّ | kejahatan | konsep |
-| 9 | ٱلْفَلَقِ | Al-Falaq 113:1 | ٱلْفَلَقِ | fajar | konsep/waktu |
-| 10 | أَحَدٌ | Al-Ikhlas 112:1 | أَحَدٌ | Esa | sifat/sebutan |
-| 11 | ٱلصَّمَدُ | Al-Ikhlas 112:2 | ٱلصَّمَدُ | tempat bergantung/Yang Mahasempurna | sebutan |
-| 12 | نَصْرُ | An-Nasr 110:1 | نَصْرُ | pertolongan | konsep |
+Tanya: **mana yang terasa sebagai nama/sebutan/sesuatu, bukan perbuatan?**
 
-## 6. Mufradat K01
-Bank canonical disimpan pada `vocabulary.json`. Kosakata K01 berfungsi sebagai exposure/receptive vocabulary; productive vocabulary untuk Bi'ah dikelola pada jalur terpisah.
+### Temukan B — tanpa harus tahu seluruh arti
+Tampilkan potongan:
 
-## 7. Latihan Terbimbing — طبّق
-1. Tandai kata yang merupakan isim pada potongan Qurani.
-2. Cocokkan isim dengan makna ringkasnya.
-3. Kelompokkan isim: nama khusus / manusia-makhluk / waktu / konsep / sebutan.
-4. Bandingkan dua kata dan tentukan mana yang dapat dikenali sebagai isim.
-5. Temukan kembali isim yang pernah muncul pada contoh sebelumnya.
+**قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ**
 
-Bank lengkap disimpan pada `assessment.json`.
+Peserta tidak harus menerjemahkan seluruh ayat. Arahkan mata pada **رَبِّ** dan **ٱلنَّاسِ**.
 
-## 8. Latihan Analisis/Transfer
-Potongan ayat baru digunakan agar peserta menemukan target isim tanpa menentukan i'rab atau fungsi sintaksisnya. Item transfer tidak sekadar mengulang contoh pengajaran.
+### Temukan C — cari lagi
+Tampilkan:
 
-## 9. Uji Kompetensi
-Bank tersedia sebanyak **30 item**, mencakup recognition, comprehension, application, analysis, dan transfer. Jawaban serta pembahasan melekat pada data assessment agar dapat dipisahkan saat produksi buku siswa.
+**جَآءَ نَصْرُ ٱللَّهِ**
 
-Kriteria mastery pilot: minimal 8/10 benar dengan sekurang-kurangnya 1 item transfer benar. Ambang ini belum dianggap final sebelum pilot/validasi asesmen.
+Minta peserta mencoba menemukan kata yang sejenis dengan contoh sebelumnya.
 
-## 10. Tadabbur & Transfer Makna
-Peserta menyadari bahwa satu ayat dapat memuat nama Allah, manusia, waktu, konsep, dan sebutan. Struktur bahasa dipelajari untuk membantu membaca makna Al-Qur'an secara lebih sadar, bukan sekadar menghafal istilah nahwu.
+# 3. CIRI MUDAH
+Pada K01, ciri dipakai sebagai **alat bantu menemukan**, bukan definisi nahwu lengkap.
 
-## Catatan untuk jalur Bi'ah
-K01 menjadi rujukan `first_allowed_competency` bagi item Bi'ah yang target produksinya hanya membutuhkan pengenalan isim. Materi Bi'ah tidak dimasukkan sebagai contoh Qurani dan disimpan pada corpus terpisah.
+1. Isim sering berupa **nama atau sebutan**: **ٱللَّهُ، رَبِّ، مَلِكِ**.
+2. Isim dapat menunjuk **orang/makhluk atau sesuatu**: **ٱلنَّاسِ، ٱلْإِنسَانَ، ٱلْقَلَمِ**.
+3. Isim juga dapat menunjuk **waktu atau gagasan/hal yang tidak dapat disentuh**: **يَوْمِ، شَرِّ، نَصْرُ**.
+4. Jadi, **isim tidak hanya berarti benda**.
+5. Untuk K01, peserta cukup belajar membedakan contoh isim yang jelas dari bentuk perbuatan yang jelas. Tanda-tanda isim yang lebih khusus akan ditemukan satu per satu pada kompetensi berikutnya.
+
+> **Ingat:** belum tahu arti seluruh ayat bukan berarti belum bisa menemukan pola bahasanya.
+
+# 4. PAHAMI — افهم
+Nama konsepnya adalah **اَلِاسْمُ — isim**.
+
+Penjelasan pemula: **isim adalah kata yang kita kenali sebagai nama, sebutan, orang/makhluk, benda, waktu, sifat, atau suatu hal/konsep.**
+
+Definisi nahwu yang lebih akademik disimpan untuk guru/backend dan tidak menjadi hafalan wajib K01.
+
+### Belum perlu
+Pada K01 belum perlu menentukan mubtada, khabar, fa'il, maf'ul, mudhaf, i'rab, ma'rifah–nakirah, atau idhafah.
+
+# 5. COBA — طبّق
+Buat latihan pendek dan berulang.
+
+### Coba 1 — pilih
+Mana isim?
+- **ٱلنَّاسِ** / **قُلْ**
+- **يَوْمِ** / **نَعْبُدُ**
+- **ٱلْقَلَمِ** / **عَلَّمَ**
+
+### Coba 2 — tandai
+Pada **قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ**, tandai isim yang sudah dapat kamu temukan.
+
+### Coba 3 — cari dua
+Pada **جَآءَ نَصْرُ ٱللَّهِ**, temukan dua isim.
+
+### Coba 4 — tidak harus menerjemahkan
+Guru memberikan potongan baru. Peserta hanya diminta **menemukan isim**, bukan menerjemahkan seluruh ayat.
+
+Bank lengkap 30 item disimpan pada `assessment.json`.
+
+# 6. BUKTIKAN — أثبت
+Gunakan evidence yang tidak menjadi contoh utama.
+
+Contoh transfer:
+- **سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ** → cari isim yang sudah dapat dikenali.
+- **فِي جِيدِهَا حَبْلٌ مِّن مَّسَدٍ** → cari isim yang sudah dapat dikenali.
+
+Peserta dinyatakan menunjukkan kompetensi K01 jika dapat menemukan target pada evidence baru tanpa bantuan arti penuh dan tanpa diminta melakukan analisis di atas K01.
+
+# Bank Materi Backend
+Bank canonical evidence berada di `quran-examples.json`; vocabulary di `vocabulary.json`; bank 30 assessment beserta jawaban/pembahasan di `assessment.json`; strategi guru dan QA di `teacher-notes.md`.
+
+## Miskonsepsi yang dicegah
+- isim = hanya benda konkret;
+- harus mengetahui terjemah seluruh ayat sebelum dapat mengenali struktur;
+- hafal definisi = sudah kompeten;
+- harus langsung menentukan i'rab setelah menemukan isim.
+
+## Jalur Bi'ah
+K01 menjadi rujukan `first_allowed_competency` untuk item Bi'ah yang target produksinya sesuai kemampuan K01. Corpus Bi'ah tetap terpisah dari evidence Qurani.
 
 ## Production Gate K01
 - [x] capaian dan boundary ditetapkan
-- [x] pola 10 komponen diterapkan
+- [x] COMPETENCY-AUTHORING-STANDARD-v1.0 diterapkan
+- [x] BEGINNER-PEDAGOGY-RULES-v1.0 diterapkan
+- [x] siklus LIHAT → TEMUKAN → CIRI MUDAH → PAHAMI → COBA → BUKTIKAN diterapkan
 - [x] ≥10 kandidat contoh Qurani terkumpul
 - [x] bank mufradat tersedia
 - [x] seluruh teks/rujukan evidence Qurani diverifikasi QA
@@ -98,4 +133,4 @@ K01 menjadi rujukan `first_allowed_competency` bagi item Bi'ah yang target produ
 - [ ] K01 FROZEN v1.0
 
 ### Aturan status
-Checklist hanya boleh dibiarkan kosong jika pekerjaan memang belum dilakukan. Setiap artifact yang sudah tersedia wajib segera disinkronkan pada Production Gate agar status repo mencerminkan kondisi aktual.
+Checklist hanya boleh kosong jika pekerjaan memang belum dilakukan. Artifact yang selesai wajib segera disinkronkan agar status repo mencerminkan kondisi aktual.
