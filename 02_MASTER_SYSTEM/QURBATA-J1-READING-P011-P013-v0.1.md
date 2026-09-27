@@ -1,6 +1,6 @@
 # QURBATA JILID 1 — MASTER LATIHAN MEMBACA P011–P013
 
-Status: **CURATED v0.2 — MSL INTEGRATED / NO RENDER AUTHORITY**
+Status: **CURATED v0.3 — MSL AUDITED / NO RENDER AUTHORITY**
 
 Authority target: `QURBATA-J1-TARTIL-PAGE-REGISTER-FROZEN-v1.0.md` v1.1.  
 Addendum: `QURBATA-J1-MEANINGFUL-SEQUENCE-ADDENDUM-v0.1.md`.
@@ -19,11 +19,8 @@ Addendum: `QURBATA-J1-MEANINGFUL-SEQUENCE-ADDENDUM-v0.1.md`.
 - Meaningful source word tidak boleh diulang secara global.
 
 # P011 — كَ لَ
-Review legal: seluruh Fathah P001–P009.
-
 ### Penanaman EXACT-2
 1. كَ لَ | 2. لَ كَ | 3. كَ كَ | 4. لَ لَ | 5. كَ أَ | 6. لَ ءَ
-
 ### Latihan EXACT-3
 7. **كَ تَ بَ** ← `كَتَبَ` (menulis) [MSL]  
 8. **تَ رَ كَ** ← `تَرَكَ` (meninggalkan) [MSL]  
@@ -34,40 +31,26 @@ Review legal: seluruh Fathah P001–P009.
 19. كَ ظَ عَ | 20. غَ لَ فَ | 21. قَ كَ أَ  
 22. ءَ لَ جَ | 23. حَ كَ زَ | 24. صَ لَ قَ
 
-### MSL P011
-- `كتب` dipakai P011/C07 — USED
-- `ترك` dipakai P011/C08 — USED
-- `ركب` dipakai P011/C09 — USED
-- Ketiganya mengandung TARGET `كَ/لَ` sesuai aturan halaman.
-
 # P012 — مَ نَ
-Review legal: P001–P011.
-
 ### Penanaman EXACT-2
 1. مَ نَ | 2. نَ مَ | 3. مَ مَ | 4. نَ نَ | 5. مَ أَ | 6. نَ ءَ
-
 ### Latihan EXACT-3
 7. **مَ نَ عَ** ← `مَنَعَ` (mencegah) [MSL]  
 8. **نَ فَ عَ** ← `نَفَعَ` (memberi manfaat) [MSL]  
 9. **نَ زَ لَ** ← `نَزَلَ` (turun) [MSL]  
 10. **نَ صَ رَ** ← `نَصَرَ` (menolong) [MSL]  
 11. **نَ ظَ رَ** ← `نَظَرَ` (melihat/memandang) [MSL]  
-12. **عَ بَ دَ** ← `عَبَدَ` (menyembah) [MSL]  
+12. مَ بَ دَ  
 13. مَ جَ حَ | 14. نَ خَ دَ | 15. ذَ مَ رَ  
 16. زَ نَ سَ | 17. شَ مَ صَ | 18. ضَ نَ طَ  
 19. مَ ظَ عَ | 20. غَ نَ فَ | 21. قَ مَ كَ  
 22. لَ نَ أَ | 23. ءَ مَ حَ | 24. كَ نَ لَ
 
-### MSL P012
-USED global: `منع`, `نفع`, `نزل`, `نصر`, `نظر`, `عبد`.
-Tidak ada source word P011 yang digunakan kembali.
+> C12 dikembalikan menjadi latihan fonetik curated `مَ بَ دَ`. Kandidat `عَبَدَ` dilepas karena tidak mengandung TARGET مَ/نَ. MSL tidak boleh mengalahkan hard rule halaman.
 
 # P013 — هَ وَ يَ
-Review legal: P001–P012.
-
-### Penanaman EXACT-2 — TARGET-only
+### Penanaman EXACT-2
 1. هَ وَ | 2. هَ يَ | 3. وَ هَ | 4. وَ يَ | 5. يَ هَ | 6. يَ وَ
-
 ### Latihan EXACT-3
 7. **وَ عَ دَ** ← `وَعَدَ` (berjanji) [MSL]  
 8. **وَ هَ بَ** ← `وَهَبَ` (memberi/menganugerahkan) [MSL]  
@@ -81,19 +64,16 @@ Review legal: P001–P012.
 19. صَ هَ ضَ | 20. طَ وَ ظَ | 21. عَ يَ غَ  
 22. فَ هَ قَ | 23. كَ وَ لَ | 24. مَ يَ نَ
 
-### MSL P013
-USED global: `وعد`, `وهب`, `وجد`, `ولد`, `وقع`, `هلك`, `هجر`.
-Tidak ada source word P011/P012 yang digunakan kembali.
+## GLOBAL MSL USED — VALID AFTER AUDIT
+`كتب` · `ترك` · `ركب` · `منع` · `نفع` · `نزل` · `نصر` · `نظر` · `وعد` · `وهب` · `وجد` · `ولد` · `وقع` · `هلك` · `هجر`
 
-## GLOBAL MSL USED P011–P013
-`كتب` · `ترك` · `ركب` · `منع` · `نفع` · `نزل` · `نصر` · `نظر` · `عبد` · `وعد` · `وهب` · `وجد` · `ولد` · `وقع` · `هلك` · `هجر`
+Total valid USED = **15 kata unik**. `عبد` = NOT USED / tersedia untuk halaman lain bila kelak legal dan relevan.
 
-Total = **16 kata sumber unik**.
-
-## CATATAN QA
-Integrasi ini belum dinyatakan FINAL. Mengganti slot fonetik dengan meaningful sequence dapat mengubah frekuensi review lama. Karena itu langkah berikutnya wajib menghitung ulang coverage numerik P011–P013 dan rolling coverage P001–P013. Jika coverage turun di bawah gate, slot non-MSL yang tersisa harus direbalancing; kata MSL tidak boleh digandakan untuk menutup kekurangan.
-
-## STATUS
-**P011–P013 CURATED v0.2 / MSL INTEGRATED / GLOBAL ZERO-REPEAT = PASS (16/16 unique).**
-
-Renderer tetap ditahan sampai coverage audit ulang selesai.
+## QA STATUS
+- P011 target gate: PASS
+- P012 target gate: PASS setelah repair C12
+- P013 target gate: PASS
+- EXACT length: PASS
+- Future competency: PASS
+- Global MSL source duplicate: 0
+- Renderer: tetap ditahan sampai rolling frequency audit selesai.
