@@ -1,6 +1,6 @@
 # QURBATA JILID 1 — MEANINGFUL WORD REGISTRY P001–P013
 
-Status: **WORKING v0.1 — CURATED / GLOBAL-NO-REPEAT**
+Status: **WORKING v0.2 — AUDITED / GLOBAL-NO-REPEAT**
 Authority: `QURBATA-J1-MEANINGFUL-SEQUENCE-ADDENDUM-v0.1.md`.
 
 ## Prinsip
@@ -8,44 +8,39 @@ Authority: `QURBATA-J1-MEANINGFUL-SEQUENCE-ADDENDUM-v0.1.md`.
 - Kata bermakna hanya menggantikan slot EXACT-3 jika legal pada halaman tersebut.
 - Tampilan tetap detached.
 - Satu `source_word_key` hanya boleh dipakai sekali di seluruh Jilid 1.
-- Daftar ini tidak memaksa semua slot menjadi kata bermakna.
-- Kandidat yang maknanya/harakatnya belum cukup pasti tidak dimasukkan ke registry APPROVED.
+- Kandidat tidak otomatis USED; status USED hanya setelah lolos target gate halaman.
 
-## APPROVED CANDIDATES — FATHAH ONLY
-
-| key | source_word | detached_display | arti ringkas | earliest legal page | status |
+## REGISTRY
+| key | source_word | detached_display | arti ringkas | earliest legal | status / location |
 |---|---|---|---|---:|---|
-| كتب | كَتَبَ | كَ تَ بَ | ia telah menulis | P011 | APPROVED |
-| ترك | تَرَكَ | تَ رَ كَ | ia telah meninggalkan | P011 | APPROVED |
-| ركب | رَكَبَ | رَ كَ بَ | ia telah menaiki | P011 | APPROVED |
-| سكن | سَكَنَ | سَ كَ نَ | ia telah tinggal/diam | P012 | APPROVED |
-| منع | مَنَعَ | مَ نَ عَ | ia telah mencegah | P012 | APPROVED |
-| نفع | نَفَعَ | نَ فَ عَ | ia telah memberi manfaat | P012 | APPROVED |
-| نزل | نَزَلَ | نَ زَ لَ | ia telah turun | P012 | APPROVED |
-| نصر | نَصَرَ | نَ صَ رَ | ia telah menolong | P012 | APPROVED |
-| نظر | نَظَرَ | نَ ظَ رَ | ia telah melihat/memandang | P012 | APPROVED |
-| عبد | عَبَدَ | عَ بَ دَ | ia telah menyembah | P012 | APPROVED |
-| وعد | وَعَدَ | وَ عَ دَ | ia telah berjanji | P013 | APPROVED |
-| وهب | وَهَبَ | وَ هَ بَ | ia telah memberi/menganugerahkan | P013 | APPROVED |
-| وجد | وَجَدَ | وَ جَ دَ | ia telah menemukan | P013 | APPROVED |
-| ولد | وَلَدَ | وَ لَ دَ | ia telah melahirkan | P013 | APPROVED |
-| وقع | وَقَعَ | وَ قَ عَ | ia telah terjadi/jatuh | P013 | APPROVED |
-| يسر | يَسَرَ | يَ سَ رَ | ia menjadi mudah / memudahkan (akar يسر; penggunaan perlu konteks) | P013 | APPROVED-WITH-NOTE |
-| هلك | هَلَكَ | هَ لَ كَ | ia telah binasa | P013 | APPROVED |
-| هجر | هَجَرَ | هَ جَ رَ | ia telah meninggalkan/berhijrah dari | P013 | APPROVED |
+| كتب | كَتَبَ | كَ تَ بَ | telah menulis | P011 | USED P011/C07 |
+| ترك | تَرَكَ | تَ رَ كَ | telah meninggalkan | P011 | USED P011/C08 |
+| ركب | رَكَبَ | رَ كَ بَ | telah menaiki | P011 | USED P011/C09 |
+| سكن | سَكَنَ | سَ كَ نَ | telah tinggal/diam | P012 | AVAILABLE |
+| منع | مَنَعَ | مَ نَ عَ | telah mencegah | P012 | USED P012/C07 |
+| نفع | نَفَعَ | نَ فَ عَ | telah memberi manfaat | P012 | USED P012/C08 |
+| نزل | نَزَلَ | نَ زَ لَ | telah turun | P012 | USED P012/C09 |
+| نصر | نَصَرَ | نَ صَ رَ | telah menolong | P012 | USED P012/C10 |
+| نظر | نَظَرَ | نَ ظَ رَ | telah melihat/memandang | P012 | USED P012/C11 |
+| عبد | عَبَدَ | عَ بَ دَ | telah menyembah | P012 | AVAILABLE — rejected P012 because no مَ/نَ target |
+| وعد | وَعَدَ | وَ عَ دَ | telah berjanji | P013 | USED P013/C07 |
+| وهب | وَهَبَ | وَ هَ بَ | telah memberi/menganugerahkan | P013 | USED P013/C08 |
+| وجد | وَجَدَ | وَ جَ دَ | telah menemukan | P013 | USED P013/C09 |
+| ولد | وَلَدَ | وَ لَ دَ | telah melahirkan | P013 | USED P013/C10 |
+| وقع | وَقَعَ | وَ قَ عَ | telah terjadi/jatuh | P013 | USED P013/C11 |
+| يسر | يَسَرَ | يَ سَ رَ | bentuk dari akar يسر; perlu verifikasi makna-konteks sebelum penggunaan | P013 | HOLD |
+| هلك | هَلَكَ | هَ لَ كَ | telah binasa | P013 | USED P013/C12 |
+| هجر | هَجَرَ | هَ جَ رَ | telah meninggalkan | P013 | USED P013/C13 |
 
-## GLOBAL UNIQUENESS
-Semua key di atas unik. Tidak ada kata sumber yang diulang.
+## GLOBAL USED SET
+`كتب`, `ترك`, `ركب`, `منع`, `نفع`, `نزل`, `نصر`, `نظر`, `وعد`, `وهب`, `وجد`, `ولد`, `وقع`, `هلك`, `هجر`
 
-## CATATAN PEDAGOGIS
-Registry ini sengaja dimulai konservatif. P001–P009 memiliki keterbatasan alfabet legal, sehingga kita tidak akan memaksakan kata bermakna hanya untuk memenuhi kuota. Slot fonetik curated tetap sah dan tetap diperlukan untuk coverage.
+Total USED = **15**; duplicate = **0**.
 
-P010 adalah checkpoint seimbang; data P010 tidak diubah pada tahap ini agar pemerataan 22 kompetensi × 3 kemunculan tidak rusak.
+## AVAILABLE / HOLD
+- `سكن` AVAILABLE
+- `عبد` AVAILABLE; tidak boleh digunakan kecuali target halaman kelak membuatnya legal.
+- `يسر` HOLD sampai verifikasi bentuk/makna.
 
-P011–P013 adalah area pertama yang cukup kaya untuk meningkatkan meaningful sequence secara nyata tanpa melanggar kompetensi.
-
-## NEXT
-1. Pilih substitusi P011–P013 dari registry ini.
-2. Setiap substitusi harus mempertahankan minimal satu TARGET halaman.
-3. Setelah substitusi, hitung ulang coverage P011–P013.
-4. Kata yang sudah dipakai diberi `USED` + page/cell dan tidak boleh dipakai lagi di P014–P040.
+## QA RULE
+Sebelum kandidat berubah menjadi USED, wajib PASS berurutan: legal letters/harakat → target presence → exact length → page duplicate → rolling coverage → global source uniqueness.
