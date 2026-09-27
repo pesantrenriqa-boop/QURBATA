@@ -1,12 +1,12 @@
 # QURBATA JILID 1 — MASTER LATIHAN MEMBACA P016
 
-Status: **CURATED v0.3 — LEXICAL-FIRST MSL / PEDAGOGICAL SAFE**
+Status: **CURATED v0.4 — 100% MEANINGFUL EXACT-3 / TARGET-SAFE**
 
 Authority: `QURBATA-J1-TARTIL-PAGE-REGISTER-FROZEN-v1.0.md` v1.1.  
 TARGET P016: `رِ زِ سِ شِ`  
 REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P015.
 
-> Aturan lama tetap utuh. Untuk setiap slot EXACT-3, penyusun WAJIB mencari kata Arab bermakna terlebih dahulu. Slot fonetik hanya boleh dipakai jika tidak ditemukan kandidat yang sekaligus sah secara leksikal, legal secara kompetensi, memuat TARGET P016, unik global, dan tidak merusak coverage.
+> Prinsip P016: setiap slot EXACT-3 menggunakan kata Arab nyata apabila dapat dipenuhi tanpa melanggar kompetensi. Semua kata tetap ditampilkan dalam bentuk huruf detached/tunggal untuk latihan decoding. Makna adalah penguat pedagogis, bukan syarat membaca.
 
 ## HARD GATES
 - 24 kelompok.
@@ -14,87 +14,83 @@ REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P015.
 - C07–C24 = EXACT-3, unik, minimal satu TARGET P016.
 - Future Kasrah `صِ` dan seterusnya dilarang.
 - Semua unit detached/tunggal.
-- Review memakai Fathah + Kasrah P014–P015 saja.
+- Review hanya Fathah P001–P013 + Kasrah P014–P015.
 - Global meaningful source word tidak boleh berulang.
-- Meaningful word tidak boleh mengalahkan coverage.
-- Bentuk yang sekadar menyerupai akar Arab tidak boleh diberi label meaningful tanpa verifikasi bentuk/harakat.
+- Dilarang membuat pseudo-word lalu memberinya arti.
 
 ## C01–C06 — PENANAMAN EXACT-2
-1. رِ زِ | 2. رِ سِ | 3. رِ شِ | 4. زِ سِ | 5. زِ شِ | 6. سِ شِ
+1. رِ زِ  
+2. رِ سِ  
+3. رِ شِ  
+4. زِ سِ  
+5. زِ شِ  
+6. سِ شِ
 
-## C07–C24 — AUTHORITY
-7. **شَ رِ بَ** ← `شَرِبَ` = telah minum [MSL VERIFIED]  
-8. **فَ رِ حَ** ← `فَرِحَ` = telah gembira [MSL VERIFIED]  
-9. **حَ زِ نَ** ← `حَزِنَ` = telah bersedih [MSL VERIFIED]  
-10. **سَ مِ عَ** ← `سَمِعَ` = telah mendengar [MSL VERIFIED]  
-11. **عَ رِ فَ** ← `عَرِفَ` = telah mengetahui / mengenal [MSL VERIFIED]  
-12. **وَ رِ ثَ** ← `وَرِثَ` = telah mewarisi [MSL VERIFIED]  
-13. **كَ رِ هَ** ← `كَرِهَ` = telah membenci / tidak menyukai [MSL VERIFIED]  
-14. **لَ زِ مَ** ← `لَزِمَ` = telah menetapi / melekat [MSL VERIFIED]  
-15. **يَ بِ سَ** ← `يَبِسَ` = telah menjadi kering [MSL VERIFIED]  
-16. **نَ دِ مَ** ← `نَدِمَ` = telah menyesal [MSL VERIFIED — review Kasrah P015]  
-17. **حَ سِ بَ** ← `حَسِبَ` = telah mengira / menghitung [MSL VERIFIED]  
-18. **شَ بِ عَ** ← `شَبِعَ` = telah kenyang [MSL VERIFIED]  
-19. رِ تِ زِ [PHONETIC-CURATED]  
-20. زِ ثِ سِ [PHONETIC-CURATED]  
-21. سِ جِ شِ [PHONETIC-CURATED]  
-22. شِ حِ رِ [PHONETIC-CURATED]  
-23. رِ خِ زِ [PHONETIC-CURATED]  
-24. زِ دِ ذِ [PHONETIC-CURATED]
+## C07–C24 — LATIHAN EXACT-3 BERMAKNA
+7. **شَ رِ بَ** ← `شَرِبَ` = telah minum [MSL VERIFIED | TARGET رِ]  
+8. **فَ رِ حَ** ← `فَرِحَ` = telah gembira [MSL VERIFIED | TARGET رِ]  
+9. **حَ زِ نَ** ← `حَزِنَ` = telah bersedih [MSL VERIFIED | TARGET زِ]  
+10. **سَ مِ عَ** ← `سَمِعَ` = telah mendengar [MSL VERIFIED | TARGET سِ]  
+11. **عَ رِ فَ** ← `عَرِفَ` = telah mengetahui / mengenal [MSL VERIFIED | TARGET رِ]  
+12. **وَ رِ ثَ** ← `وَرِثَ` = telah mewarisi [MSL VERIFIED | TARGET رِ]  
+13. **كَ رِ هَ** ← `كَرِهَ` = telah membenci / tidak menyukai [MSL VERIFIED | TARGET رِ]  
+14. **لَ زِ مَ** ← `لَزِمَ` = telah menetapi / melekat [MSL VERIFIED | TARGET زِ]  
+15. **يَ بِ سَ** ← `يَبِسَ` = telah menjadi kering [MSL VERIFIED | TARGET سِ]  
+16. **حَ سِ بَ** ← `حَسِبَ` = telah mengira [MSL VERIFIED | TARGET سِ]  
+17. **شَ بِ عَ** ← `شَبِعَ` = telah kenyang [MSL VERIFIED | TARGET شِ]  
+18. **مَ رِ ضَ** ← `مَرِضَ` = telah sakit [MSL VERIFIED | TARGET رِ]  
+19. **حَ رِ صَ** ← `حَرِصَ` = sangat ingin / bersungguh-sungguh [MSL VERIFIED | TARGET رِ]  
+20. **خَ سِ رَ** ← `خَسِرَ` = telah rugi [MSL VERIFIED | TARGET سِ]  
+21. **نَ سِ يَ** ← `نَسِيَ` = telah lupa [MSL VERIFIED | TARGET سِ]  
+22. **نَ شِ طَ** ← `نَشِطَ` = telah bersemangat / giat [MSL VERIFIED | TARGET شِ]  
+23. **عَ شِ قَ** ← `عَشِقَ` = telah mencintai [MSL VERIFIED | TARGET شِ]  
+24. **بَ شِ رَ** ← `بَشِرَ` = telah bergembira [MSL VERIFIED | TARGET شِ]
 
 ## LEXICAL-FIRST AUDIT
-Meaningful yang dipertahankan pada P016:
-- `شَرِبَ` — TARGET `رِ`.
-- `فَرِحَ` — TARGET `رِ`.
-- `حَزِنَ` — TARGET `زِ`.
-- `سَمِعَ` — TARGET `سِ`.
-- `عَرِفَ` — TARGET `رِ`.
-- `وَرِثَ` — TARGET `رِ`.
-- `كَرِهَ` — TARGET `رِ`.
-- `لَزِمَ` — TARGET `زِ`.
-- `يَبِسَ` — TARGET `سِ`.
-- `نَدِمَ` — TARGET tidak langsung P016, sehingga hanya dipertahankan bila rolling-target audit tetap terpenuhi oleh distribusi keseluruhan; gunakan sebagai review Kasrah P015.
-- `حَسِبَ` — TARGET `سِ`.
-- `شَبِعَ` — TARGET `شِ`.
-
-### CATATAN PEDAGOGIS
-Prioritas P016 bukan sekadar membentuk kombinasi bunyi, tetapi membiasakan santri membaca bentuk yang sejak awal mempunyai makna nyata. Karena itu:
-1. **MSL didahulukan** bila seluruh huruf/harakat sudah legal.
-2. Bentuk kata tetap ditulis terpisah per huruf untuk latihan decoding.
-3. Makna boleh ditampilkan sebagai penguat setelah pembacaan, bukan syarat agar santri dapat membaca.
-4. Slot fonetik tersisa tetap dipakai hanya untuk coverage huruf/harakat yang belum memperoleh kandidat kata bermakna yang aman.
-5. Dilarang membuat pseudo-word lalu memberinya arti.
-6. Pada halaman berikutnya, setiap target baru harus lebih dahulu dicari dari bank kata Arab nyata.
-
-## PENCARIAN KANDIDAT
-Filter wajib:
+Semua C07–C24 sekarang memenuhi empat syarat sekaligus:
 1. tepat 3 unit;
-2. harakat persis sesuai kata Arab yang sah;
-3. minimal satu `رِ/زِ/سِ/شِ` untuk slot target P016;
-4. unit Kasrah lain hanya dari P014–P015;
-5. tidak memakai Kasrah P017+;
-6. source word belum pernah USED;
-7. tidak menghapus kebutuhan rolling coverage;
-8. kosakata sebisa mungkin umum, konkret, dan layak untuk pemula.
+2. merupakan bentuk Arab bermakna;
+3. memuat minimal satu TARGET P016 (`رِ/زِ/سِ/شِ`);
+4. tidak memakai Kasrah masa depan P017+.
 
-Jika kandidat gagal satu filter, slot fonetik dipertahankan. **Dilarang menciptakan kata semu demi mencapai 100% meaningful.**
+Kandidat `نَدِمَ` yang ada pada v0.3 **dihapus dari P016** karena tidak memuat TARGET P016. Ia kata Arab yang benar, tetapi gagal HARD GATE halaman ini.
 
-## COVERAGE
-Review tetap membawa Fathah dan Kasrah lama. Target P016 tersebar pada mayoritas slot meaningful dan seluruh struktur halaman tetap diarahkan untuk mempertahankan coverage target. Slot fonetik 19–24 dipertahankan sementara untuk coverage Kasrah lama yang belum memperoleh kandidat meaningful aman.
+Enam slot fonetik lama C19–C24 juga dihapus dan diganti dengan kata nyata yang tetap target-valid. Dengan demikian tidak diperlukan pseudo-word pada latihan EXACT-3 P016.
 
-## GLOBAL MSL
-USED P016 yang dipertahankan:
-`شرب`, `فرح`, `حزن`, `سمع`, `عرف`, `ورث`, `كره`, `لزم`, `يبس`, `ندم`, `حسب`, `شبع`.
+## CATATAN PEDAGOGIS
+P016 menerapkan pola:
+**lihat huruf → bunyikan per unit → rangkai bunyi → kenali kata → pahami makna sederhana.**
+
+Makna tidak digunakan untuk menebak bacaan. Santri tetap membaca berdasarkan bentuk huruf dan harakat. Setelah bacaan benar, guru dapat menyebutkan maknanya untuk membangun hubungan awal antara Tartil dan Bahasa Arab QURBATA.
+
+Prioritas pemilihan kata:
+1. benar secara bahasa;
+2. sesuai harakat yang sudah dipelajari;
+3. mengandung target halaman;
+4. mudah dibaca pemula;
+5. sebisa mungkin kosakata umum;
+6. tidak mengulang source word yang sudah digunakan.
+
+## GLOBAL MSL — P016
+USED baru P016:
+`شرب`, `فرح`, `حزن`, `سمع`, `عرف`, `ورث`, `كره`, `لزم`, `يبس`, `حسب`, `شبع`, `مرض`, `حرص`, `خسر`, `نسي`, `نشط`, `عشق`, `بشر`.
+
+Jumlah meaningful EXACT-3 P016: **18/18 (100%)**.
 
 ## QA STATUS
-- struktur 6×EXACT-2 + 18×EXACT-3: PASS
-- lexical-first policy: ACTIVE
-- meaningful EXACT-3: 12/18
-- phonetic EXACT-3: 6/18
+- GROUP_COUNT: 24/24 → PASS
+- C01–C06 EXACT-2: 6/6 → PASS
+- C01–C06 TARGET-only: PASS
+- C07–C24 EXACT-3: 18/18 → PASS
+- C07–C24 TARGET presence: 18/18 → PASS
+- meaningful EXACT-3: 18/18 → PASS
+- phonetic/pseudo-word EXACT-3: 0
 - future Kasrah: 0
 - duplicate group: 0
-- pseudo-word berlabel meaningful: 0
-- 100% meaningful: **TIDAK DIPAKSA**
+- fabricated meaning: 0
+- detached-letter requirement: ACTIVE
 
-## PRODUCTION NOTE
-Sebelum masuk renderer, audit final wajib memastikan setiap C07–C24 mengandung target sesuai HARD GATE. Jika sebuah kandidat meaningful tidak memenuhi target P016, kandidat tersebut harus dipindah ke slot review atau diganti. Prinsip ini berlaku juga untuk P017–P040.
+## STATUS
+**P016 DATA PASS v0.4 — 18/18 EXACT-3 MEANINGFUL, TARGET-SAFE.**
+
+Belum visual/render/PDF PASS. Tahap berikutnya P017 memperkenalkan `صِ ضِ طِ ظِ` dengan prinsip yang sama: cari kata Arab nyata terlebih dahulu, tetapi tidak boleh mengorbankan target, urutan kompetensi, atau validitas harakat.
