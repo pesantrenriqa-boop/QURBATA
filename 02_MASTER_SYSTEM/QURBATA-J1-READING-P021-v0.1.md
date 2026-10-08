@@ -42,7 +42,7 @@ REVIEW_ALLOWED: seluruh Fathah + Kasrah P001–P020.
 16. **ثُ نِ يَ** ← `ثُنِيَ` = telah dilipat / dibengkokkan [TARGET ثُ]
 17. **بُ تِ رَ** ← `بُتِرَ` = telah dipotong / diputus [TARGET بُ]
 18. **بُ دِ ئَ** ← `بُدِئَ` = telah dimulai [TARGET بُ]
-19. **تُ رِ جَ** ← `تُرِجَ` = dibiarkan / ditinggalkan [TARGET تُ; LEXICAL — teacher-side only]
+19. **تُ رِ جَ** [LEXICAL HOLD — klaim arti ditarik; verifikasi kamus dan pengganti legal diperlukan sebelum cetak]
 20. **جُ بِ لَ** ← `جُبِلَ` = telah diciptakan dengan tabiat / dibentuk [TARGET جُ]
 21. **جُ رِ حَ** ← `جُرِحَ` = telah dilukai [TARGET جُ]
 22. **ثُ قِ بَ** ← `ثُقِبَ` = telah dilubangi / ditembus [TARGET ثُ]
@@ -51,14 +51,14 @@ REVIEW_ALLOWED: seluruh Fathah + Kasrah P001–P020.
 
 ## MEANINGFUL AUDIT — v0.2
 Semua C07–C24 memiliki sumber kata Arab, sehingga:
-- meaningful EXACT-3 = **18/18**
-- phonetic/pseudo-word = **0/18**
+- meaningful EXACT-3 = **17/18 candidate; C19 LEXICAL HOLD**
+- unverified lexical = **1/18**
 
 Catatan pedagogis: beberapa bentuk P021 adalah fi'il pasif dan sebagian kosakatanya tidak seumum halaman Fathah/Kasrah. Kata yang kurang umum **tidak dijadikan beban hafalan makna**; fungsinya tetap sebagai bahan decoding autentik.
 
 ## TARGET COVERAGE
 - `بُ`: بُعِثَ، بُلِيَ، بُتِرَ، بُدِئَ، بُسِطَ
-- `تُ`: تُبِعَ، تُرِكَ، تُلِيَ، تُرِجَ
+- `تُ`: تُبِعَ، تُرِكَ، تُلِيَ؛ C19 HOLD
 - `ثُ`: ثُبِتَ، ثُنِيَ، ثُقِبَ، ثُلِمَ
 - `جُ`: جُعِلَ، جُمِعَ، جُهِلَ، جُبِلَ، جُرِحَ
 
@@ -84,7 +84,7 @@ Tidak boleh:
 
 ## GLOBAL MSL — NEW P021
 Kandidat source word:
-`تبع`, `ترك`, `تلي`, `بعث`, `بلي`, `جعل`, `جمع`, `جهل`, `ثبت`, `ثني`, `بتر`, `بدأ`, `ترج`, `جبل`, `جرح`, `ثقب`, `ثلم`, `بسط`.
+`تبع`, `ترك`, `تلي`, `بعث`, `بلي`, `جعل`, `جمع`, `جهل`, `ثبت`, `ثني`, `بتر`, `بدأ`, `جبل`, `جرح`, `ثقب`, `ثلم`, `بسط`.
 
 Global registry audit P001–P020 tetap wajib sebelum renderer FINAL.
 
@@ -95,7 +95,7 @@ Global registry audit P001–P020 tetap wajib sebelum renderer FINAL.
 - C07–C24 EXACT-3 → PASS
 - C07–C24 target presence → PASS
 - future Dhammah → 0
-- meaningful EXACT-3 → **18/18**
+- meaningful EXACT-3 → **17/18 candidate; C19 HOLD**
 - phonetic curated → **0/18**
 - all four targets meaningful-covered → PASS
 - pseudo-word berlabel meaningful → 0
@@ -104,6 +104,6 @@ Global registry audit P001–P020 tetap wajib sebelum renderer FINAL.
 - renderer/PDF → PENDING
 
 ## STATUS
-**P021 DATA PASS v0.2 — 18/18 EXACT-3 MEANINGFUL.**
+**P021 DATA PASS v0.2 — 17/18 candidate; C19 HOLD, NOT PRINT READY.**
 
 Gate berikutnya sebelum visual FINAL: audit global source-word registry dan renderer detached-letter.
