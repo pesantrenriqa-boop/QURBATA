@@ -39,7 +39,7 @@ REVIEW_ALLOWED: P001–P022.
 12. **زُ رِ عَ** ← `زُرِعَ` = telah ditanam [TARGET زُ]
 13. **زُ حِ فَ** ← `زُحِفَ` = telah dirayapi / didatangi dengan merangkak [TARGET زُ; teacher-side]
 14. **زُ جِ رَ** ← `زُجِرَ` = telah dicegah / dihardik [TARGET زُ]
-15. **سُ ئِ لَ** ← `سُئِلَ` = telah ditanya [TARGET سُ]
+15. **سُ ءِ لَ** ← `سُئِلَ` = telah ditanya [TARGET سُ; unit ءِ detached mewakili hamzah berkasrah pada kata utuh]
 16. **سُ مِ عَ** ← `سُمِعَ` = telah didengar [TARGET سُ]
 17. **سُ رِ قَ** ← `سُرِقَ` = telah dicuri [TARGET سُ]
 18. **سُ جِ نَ** ← `سُجِنَ` = telah dipenjara [TARGET سُ]
@@ -66,7 +66,7 @@ Sebagian bentuk pasif dipilih karena pola `فُعِلَ` sangat cocok untuk tran
 Target `زُ` memiliki pilihan sederhana lebih sedikit; kosakata teacher-side tidak menjadi beban hafalan arti.
 
 ## PEDAGOGICAL RULE
-1. Baca detached dahulu: contoh `سُ ئِ لَ`.
+1. Baca detached dahulu: contoh `سُ ءِ لَ`; pada bentuk kata utuh, hamzah ditulis berkursi `سُئِلَ`.
 2. Santri fokus pada perubahan bunyi target menuju Dhammah.
 3. Bentuk tersambung dan arti diberikan setelah decoding.
 4. Makna bukan petunjuk membaca.
