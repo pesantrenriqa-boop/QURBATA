@@ -62,7 +62,7 @@
 
 ## Jilid 2 — 40 halaman
 
-**Status: AUDIT INTERNAL TAHAP 2 — DRAF 40/40, BELUM FROZEN.** Tangga kompetensi: bentuk sambung awal/tengah/akhir → tanwin → mad asli → diskriminasi panjang-pendek → transfer. **Tidak ada pengenalan ulang ungkapan utuh Jilid 1**; guru tetap memakai ungkapan lama dalam interaksi sebagai MUROJAAH, bukan slot materi baru. Ungkapan di bawah adalah **kandidat pedagogis**, bukan kutipan ayat Al-Qur'an; klaim keterikatan korpus Qurani menunggu pemetaan ayat/sumber, dan prasyarat per halaman menunggu whitelist Tartil J2. Setiap baris perlu audit bahasa dan korpus sebelum freeze.
+**Status: AUDIT INTERNAL TAHAP 3 — DRAF 40/40, BELUM FROZEN.** Tangga kompetensi: bentuk sambung awal/tengah/akhir → tanwin → mad asli → diskriminasi panjang-pendek → transfer. **Tidak ada pengenalan ulang ungkapan utuh Jilid 1**; guru tetap memakai ungkapan lama dalam interaksi sebagai MUROJAAH, bukan slot materi baru. Ungkapan di bawah adalah **kandidat pedagogis**, bukan kutipan ayat Al-Qur'an; klaim keterikatan korpus Qurani menunggu pemetaan ayat/sumber, dan prasyarat per halaman menunggu whitelist Tartil J2. Setiap baris perlu audit bahasa dan korpus sebelum freeze.
 
 | Halaman | Ungkapan / instruksi baru | Arti / fungsi | Status |
 |---|---|---|---|
@@ -129,6 +129,29 @@
 - **Kebijakan anti-duplikasi:** identitas *ungkapan utuh* berbeda dari identitas *fungsi kompetensi* dan *lema*. Untuk tiap item final wajib disimpan `expression_id`, `function_id`, `lemma_family_ids`, `first_introduction`, `prerequisite_ids`, `corpus_evidence`, dan `review_status`. Tanpa metadata ini J2 tidak lolos gate.
 
 **Keputusan audit tahap 2: tetap HOLD.** Audit klasifikasi fungsi/prasyarat awal telah dilakukan; verifikasi korpus ayat-per-lema dan review ahli belum dilakukan, sehingga belum ada dasar untuk FROZEN.
+
+
+### Matriks dependensi fungsional (hasil klasifikasi internal)
+
+| Slot | Prasyarat fungsional | Capaian yang diuji | Status kebaruan |
+|---|---|---|---|
+| P001–P002 | J1-P009/P010 | Transfer membuka/menutup; mengganti objek buku → mushaf | Fungsi lama, bukan baru |
+| P003–P005 | J1-P021/P007 | Menunjuk, menemukan, membaca huruf/kata | P003–P004 fungsi baru; P005 transfer |
+| P006–P010 | J2-P003–P004 | Membedakan posisi dan keterhubungan huruf | Fungsi baru bertingkat |
+| P011–P018 | J2-P003–P010 | Mencari, menelusuri, dan mengidentifikasi huruf | Campuran fungsi baru dan transfer |
+| P019–P022 | J1-P023–P028 + J2 bentuk sambung | Mengenali tiga tanwin sebelum membaca | P019–P021 baru; P022 transfer pola |
+| P023–P027 | J2-P019–P022 | Mengenali mad asli dan memodelkan panjang suara | P023–P026 baru; P027 transfer |
+| P028–P031 | J2-P023–P027 | Membedakan bunyi panjang dan pendek | P028–P030 baru; P031 transfer |
+| P032–P035 | J1-P034/P035 + J2-P028–P031 | Memilih, memperbaiki, dan membaca tanpa bantuan | Campuran transfer dan fungsi baru |
+| P036–P040 | Semua kompetensi terdahulu | Murojaah, transfer, evaluasi | 0 fungsi baru |
+
+### Register bukti korpus — aturan pengisian operasional
+
+Untuk **setiap** ungkapan J2 P001–P035, bukti minimal wajib memuat: (a) pemenggalan token Arab; (b) lema dan keluarga lema, termasuk kata tugas; (c) apakah lema terdapat dalam Al-Qur'an; (d) jika ada, surah:ayat dan posisi kata yang dapat dicek; (e) apakah ungkapan lengkap merupakan kutipan atau **adaptasi instruksional**; (f) status reviewer. **Tidak ada status Quran-attested yang diberikan tanpa pemeriksaan langsung sumber primer.**
+
+**Pemetaan fungsi ≠ pemetaan korpus.** Misalnya `الْمُصْحَفَ`, `الْفَتْحَتَانِ`, `الْمَدِّ`, dan `مُتَّصِلٌ` memerlukan pemeriksaan terpisah, dan tidak boleh dianggap kata Al-Qur'an hanya karena digunakan dalam kelas Al-Qur'an. Korpus berfungsi sebagai **evidence linguistik**, sementara istilah teknis Tartil boleh tetap digunakan bila sesuai tujuan, tetapi harus diberi label teknis nonkutipan bila memang demikian.
+
+**Pemeriksaan kelayakan:** urutan J2 dalam tabel masih memuat **transfer sebagai materi per halaman**; untuk menghindari pengulangan kompetensi, saat finalisasi slot transfer harus diperlakukan sebagai **aplikasi kontekstual**, bukan hitungan kompetensi baru. Halaman P036–P040 belum memiliki ungkapan baru karena dialokasikan untuk review. **Tidak ada perubahan J1 frozen.**
 
 ## Jilid 3 — 40 halaman
 
