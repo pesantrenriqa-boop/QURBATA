@@ -41,7 +41,7 @@ REVIEW_ALLOWED: seluruh Fathah + Kasrah P001–P020.
 15. **ثُ بِ تَ** ← `ثُبِتَ` = telah ditetapkan / terbukti [TARGET ثُ]
 16. **ثُ نِ يَ** ← `ثُنِيَ` = telah dilipat / dibengkokkan [TARGET ثُ]
 17. **بُ تِ رَ** ← `بُتِرَ` = telah dipotong / diputus [TARGET بُ]
-18. **بُ دِ ئَ** ← `بُدِئَ` = telah dimulai [TARGET بُ]
+18. **بُ دِ ءَ** ← `بُدِئَ` = telah dimulai [TARGET بُ; unit ءَ detached; bentuk utuh hamzah berkursi]
 19. تُ سِ مَ [PHONETIC-CURATED; tanpa klaim arti; decoding saja]
 20. **جُ بِ لَ** ← `جُبِلَ` = telah diciptakan dengan tabiat / dibentuk [TARGET جُ]
 21. **جُ رِ حَ** ← `جُرِحَ` = telah dilukai [TARGET جُ]
@@ -110,3 +110,7 @@ Gate berikutnya sebelum visual FINAL: audit global source-word registry dan rend
 
 ## QA RECONCILIATION 2026-10-08
 - Header, jumlah dan QA C19 diselaraskan: 17 lexical candidates + 1 phonetic-curated, bukan 18/18 meaningful.
+
+
+## HAMZAH DETACHED QA — 2026-10-08
+Unit hamzah pada latihan awal ditulis mandiri (`ءَ` atau `ءِ`) sesuai harakat bunyinya. Ejaan kata utuh tetap mempertahankan kursi hamzah yang baku (`ئ`). Normalisasi ini berlaku pada unit latihan, bukan perubahan ejaan leksikal atau makna.
