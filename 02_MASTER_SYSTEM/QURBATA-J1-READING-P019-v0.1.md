@@ -34,23 +34,14 @@ REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P018.
 10. **حَ مِ لَ** ← `حَمِلَ` = telah membawa [MSL VERIFIED — TARGET مِ/لِ]
 11. **رَ كِ بَ** ← `رَكِبَ` = telah menaiki [MSL VERIFIED — TARGET كِ]
 12. **سَ كِ نَ** ← `سَكِنَ` = telah tinggal / menjadi tenang [MSL VERIFIED — TARGET كِ/نِ]
-13. **شَ رِ بَ** ← `شَرِبَ` = telah minum [REJECT GLOBAL DUPLICATE — pernah dipakai P016]
-
-> `شَرِبَ` benar dan legal, tetapi tidak boleh masuk authority karena global zero-repeat.
-
 13. **فَ هِ مَ** ← `فَهِمَ` = telah memahami [MSL VERIFIED — TARGET هِ]
 14. **شَ هِ دَ** ← `شَهِدَ` = telah menyaksikan [MSL VERIFIED — TARGET هِ]
-15. **نَ دِ مَ** ← `نَدِمَ` = telah menyesal [MSL VERIFIED — TARGET نِ? REJECT]
-
-> `نَدِمَ` memakai نَ, bukan نِ. Tidak dihitung sebagai target P019.
-
 15. **أَ نِ سَ** ← `أَنِسَ` = merasa akrab / tenteram [MSL VERIFIED — TARGET نِ]
-16. **كَ رِ هَ** ← `كَرِهَ` = tidak menyukai [REJECT GLOBAL DUPLICATE — pernah dipakai P016]
 16. **وَ جِ لَ** ← `وَجِلَ` = merasa takut / gentar [MSL VERIFIED — TARGET لِ]
 17. **يَ ئِ سَ** ← `يَئِسَ` = telah berputus asa [MSL VERIFIED — TARGET ءِ]
 18. **سَ ئِ مَ** ← `سَئِمَ` = telah bosan [MSL VERIFIED — TARGET ءِ/مِ]
 19. **بَ ئِ سَ** ← `بَئِسَ` = buruk / alangkah buruk [MSL VERIFIED — TARGET ءِ]
-20. **إِ ذِ نَ** ← `إِذِنَ` = telah mengizinkan [MSL VERIFIED — TARGET إِ/نِ]
+20. **إِ ذِ نَ** [LEXICAL HOLD — bentuk إِذِنَ dan klaim 'telah mengizinkan' perlu verifikasi ahli; jangan ajarkan makna sebelum dikonfirmasi]
 21. **وَ لِ يَ** ← `وَلِيَ` = telah dekat / menguasai [MSL VERIFIED — TARGET لِ]
 22. **حَ يِ يَ** ← `حَيِيَ` = telah merasa malu [MSL VERIFIED — TARGET يِ]
 23. **قَ وِ يَ** ← `قَوِيَ` = telah menjadi kuat [MSL VERIFIED — TARGET وِ]
@@ -70,7 +61,7 @@ REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P018.
 17. يَ ئِ سَ
 18. سَ ئِ مَ
 19. بَ ئِ سَ
-20. إِ ذِ نَ
+20. إِ ذِ نَ [LEXICAL HOLD]
 21. وَ لِ يَ
 22. حَ يِ يَ
 23. قَ وِ يَ
@@ -89,12 +80,12 @@ REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P018.
 - `كِ`: رَكِبَ، سَكِنَ
 - `لِ`: عَلِمَ، حَمِلَ، وَجِلَ، وَلِيَ
 - `مِ`: عَمِلَ، حَمِدَ، حَمِلَ، سَئِمَ
-- `نِ`: سَكِنَ، أَنِسَ، إِذِنَ
+- `نِ`: سَكِنَ، أَنِسَ؛ إِ ذِ نَ [LEXICAL HOLD]
 - `هِ`: فَهِمَ، شَهِدَ
 - `وِ`: قَوِيَ، رَوِيَ
 - `يِ`: حَيِيَ
 - `ءِ`: يَئِسَ، سَئِمَ، بَئِسَ
-- `إِ`: إِذِنَ
+- `إِ`: إِ ذِ نَ [LEXICAL HOLD — belum boleh dihitung meaningful]
 
 ## GLOBAL MSL — NEW P019
 Kandidat USED baru:
@@ -104,13 +95,13 @@ Kandidat USED baru:
 - GROUP_COUNT 24/24 → PASS
 - EXACT-2 6/6 → PASS
 - EXACT-3 18/18 → PASS
-- meaningful EXACT-3 → **18/18**
-- phonetic EXACT-3 → **0/18**
-- seluruh 9 TARGET memiliki contoh meaningful → PASS
+- meaningful EXACT-3 → **17/18 confirmed by internal draft; 1/18 lexical HOLD; external expert verification pending**
+- phonetic/lexical-hold EXACT-3 → **1/18**
+- seluruh 9 TARGET memiliki contoh meaningful → PENDING (إِ requires verified example)
 - future Dhammah → 0
 - pseudo-word berlabel meaningful → 0
 - global duplicate yang terdeteksi (`شرب`, `كره`) → REJECTED
 - harakat mismatch yang terdeteksi (`ندم`) → REJECTED
 
 ## PRODUCTION NOTE
-P019 adalah halaman Kasrah pertama yang mencapai **18/18 meaningful** pada draft authority. Sebelum renderer final, lakukan audit registry global P001–P018 untuk memastikan seluruh 18 source word benar-benar belum pernah USED. Jika ditemukan duplicate, ganti dengan kandidat legal lain; jangan menurunkan gate zero-repeat.
+Klaim **18/18 meaningful** ditarik sementara karena C20 masih LEXICAL HOLD. Sebelum renderer final, lakukan audit registry global P001–P018 untuk memastikan seluruh 18 source word benar-benar belum pernah USED. Jika ditemukan duplicate, ganti dengan kandidat legal lain; jangan menurunkan gate zero-repeat.
