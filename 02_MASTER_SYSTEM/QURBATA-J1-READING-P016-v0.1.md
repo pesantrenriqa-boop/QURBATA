@@ -30,14 +30,14 @@ REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P015.
 7. **شَ رِ بَ** ← `شَرِبَ` = telah minum [MSL VERIFIED | TARGET رِ]  
 8. **فَ رِ حَ** ← `فَرِحَ` = telah gembira [MSL VERIFIED | TARGET رِ]  
 9. **حَ زِ نَ** ← `حَزِنَ` = telah bersedih [MSL VERIFIED | TARGET زِ]  
-10. **سَ رِ قَ** ← `سَرِقَ` = telah mencuri [MSL CANDIDATE | TARGET رِ; audit global pending]  
+10. **فَ رِ غَ** ← `فَرِغَ` = telah selesai / luang [MSL CANDIDATE | TARGET رِ; audit global pending]  
 11. **عَ رِ فَ** ← `عَرِفَ` = telah mengetahui / mengenal [MSL VERIFIED | TARGET رِ]  
 12. **وَ رِ ثَ** ← `وَرِثَ` = telah mewarisi [MSL VERIFIED | TARGET رِ]  
 13. **كَ رِ هَ** ← `كَرِهَ` = telah membenci / tidak menyukai [MSL VERIFIED | TARGET رِ]  
 14. **لَ زِ مَ** ← `لَزِمَ` = telah menetapi / melekat [MSL VERIFIED | TARGET زِ]  
 15. **يَ بِ سَ** ← `يَبِسَ` = telah menjadi kering [MSL VERIFIED | TARGET سِ]  
 16. **حَ سِ بَ** ← `حَسِبَ` = telah mengira [MSL VERIFIED | TARGET سِ]  
-17. **شَ رِ حَ** ← `شَرِحَ` = menjadi lapang / terbuka [MSL CANDIDATE | TARGET رِ; audit global pending]  
+17. **وَ رِ مَ** ← `وَرِمَ` = telah membengkak [MSL CANDIDATE | TARGET رِ; audit global pending]  
 18. **مَ رِ ضَ** ← `مَرِضَ` = telah sakit [MSL VERIFIED | TARGET رِ]  
 19. **حَ رِ صَ** ← `حَرِصَ` = sangat ingin / bersungguh-sungguh [MSL VERIFIED | TARGET رِ]  
 20. **خَ سِ رَ** ← `خَسِرَ` = telah rugi [MSL VERIFIED | TARGET سِ]  
@@ -73,7 +73,7 @@ Prioritas pemilihan kata:
 
 ## GLOBAL MSL — P016
 USED baru P016:
-`شرب`, `فرح`, `حزن`, `سرق`, `عرف`, `ورث`, `كره`, `لزم`, `يبس`, `حسب`, `شرح`, `مرض`, `حرص`, `خسر`, `نسي`, `نشط`, `عشق`, `بشر`.
+`شرب`, `فرح`, `حزن`, `فرغ`, `عرف`, `ورث`, `كره`, `لزم`, `يبس`, `حسب`, `ورم`, `مرض`, `حرص`, `خسر`, `نسي`, `نشط`, `عشق`, `بشر`.
 
 Jumlah kandidat meaningful: **18/18**; C10 dan C17 diganti, validasi lintas halaman masih diperlukan.
 
@@ -96,7 +96,7 @@ Jumlah kandidat meaningful: **18/18**; C10 dan C17 diganti, validasi lintas hala
 Belum visual/render/PDF PASS. Tahap berikutnya P017 memperkenalkan `صِ ضِ طِ ظِ` dengan prinsip yang sama: cari kata Arab nyata terlebih dahulu, tetapi tidak boleh mengorbankan target, urutan kompetensi, atau validitas harakat.
 
 ## CORRECTIVE AUDIT 2026-10-08
-- C10 sebelumnya `سَ مِ عَ` melanggar future Kasrah `مِ` dan target P016; diganti `سَ رِ قَ` dengan target `رِ`.
-- C17 sebelumnya `شَ بِ عَ` tidak memiliki target P016; diganti `شَ رِ حَ` dengan target `رِ`.
+- C10 sebelumnya `سَ مِ عَ` melanggar future Kasrah `مِ` dan target P016; diganti `فَ رِ غَ` dengan target `رِ`.
+- C17 sebelumnya `شَ بِ عَ` tidak memiliki target P016; diganti `وَ رِ مَ` dengan target `رِ`.
 - Kedua pengganti hanya menggunakan Fathah dan Kasrah `رِ` yang legal sampai P016. Bentuk Arab dan keunikan global tetap harus dikonfirmasi sebelum print freeze.
 - Semua klaim lama 18/18 verified harus dipahami sebagai kandidat sampai audit lintas halaman selesai.
