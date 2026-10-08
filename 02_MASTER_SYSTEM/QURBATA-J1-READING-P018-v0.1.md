@@ -37,7 +37,7 @@ REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P017.
 14. **لَ قِ يَ** ← `لَقِيَ` = telah bertemu [MSL VERIFIED — TARGET قِ]  
 15. **رَ فِ قَ** ← `رَفِقَ` = telah bersikap lembut / ramah [MSL VERIFIED — TARGET فِ]  
 16. **وَ عِ رَ** ← `وَعِرَ` = menjadi sukar / terjal [MSL VERIFIED — TARGET عِ]  
-17. **وَ قِ فَ** ← `وَقِفَ` = telah berdiri / berhenti [MSL CANDIDATE — TARGET قِ; audit global pending]  
+17. **فَ قِ هَ** ← `فَقِهَ` = telah memahami [MSL CANDIDATE — TARGET قِ; audit global pending]  
 18. **نَ قِ مَ** ← `نَقِمَ` = membenci / mengingkari [MSL CANDIDATE — TARGET قِ; audit global pending]  
 19. عِ حِ سَ [PHONETIC-CURATED]  
 20. غِ خِ شَ [PHONETIC-CURATED]  
@@ -58,8 +58,8 @@ Meaningful P018 v0.2:
 - `لَقِيَ` — TARGET `قِ`.
 - `رَفِقَ` — TARGET `فِ`.
 - `وَعِرَ` — TARGET `عِ`.
-- `قَلِقَ` — TARGET `قِ`.
-- `فَرِقَ` — TARGET `قِ`.
+- `فَقِهَ` — TARGET `قِ`.
+- `نَقِمَ` — TARGET `قِ`.
 
 ## HARAKAT-PROTECTION
 Kecocokan akar atau keberadaan huruf tidak cukup. Unit target harus cocok huruf + harakat. Karena itu bentuk seperti berikut tidak dipakai untuk target P018:
@@ -82,13 +82,13 @@ Kecocokan akar atau keberadaan huruf tidak cukup. Unit target harus cocok huruf 
 - `عِ`: لَعِبَ، سَعِدَ، تَعِبَ، وَعِرَ
 - `غِ`: رَغِبَ
 - `فِ`: غَفِلَ، نَفِدَ، رَفِقَ
-- `قِ`: بَقِيَ، لَقِيَ، وَقِفَ، نَقِمَ
+- `قِ`: بَقِيَ، لَقِيَ، فَقِهَ، نَقِمَ
 
 Target `غِ` tetap paling sempit secara leksikal pada pola tiga-unit yang legal. Karena itu tidak dibuat kata semu untuk mengejar pemerataan angka.
 
 ## GLOBAL MSL — NEW P018
 USED kandidat baru P018:
-`لعب`, `سعد`, `تعب`, `رغب`, `غفل`, `نفد`, `بقي`, `لقي`, `رفق`, `وعر`, `وقف`, `نقم`.
+`لعب`, `سعد`, `تعب`, `رغب`, `غفل`, `نفد`, `بقي`, `لقي`, `رفق`, `وعر`, `فقه`, `نقم`.
 
 Wajib audit global terhadap P001–P017 sebelum renderer produksi.
 
@@ -116,6 +116,6 @@ Enam slot C19–C24 tetap terbuka untuk penggantian bila ditemukan kata Arab nya
 Target bukan 100% secara paksa. **Kebenaran bahasa > jumlah kata bermakna.**
 
 ## CORRECTIVE AUDIT 2026-10-08
-- C17 sebelumnya `قَ لِ قَ` tidak memuat target P018 (`قَ` bukan `قِ`) dan mengandung `لِ` future P019; diganti `وَ قِ فَ`.
+- C17 sebelumnya `قَ لِ قَ` tidak memuat target P018 (`قَ` bukan `قِ`) dan mengandung `لِ` future P019; diganti `فَ قِ هَ`.
 - C18 sebelumnya `فَ رِ قَ` tidak memuat target P018 (`قَ` bukan `قِ`); diganti `نَ قِ مَ`.
 - Kandidat pengganti harus tetap melalui audit leksikal, keunikan global, dan rendering sebelum print freeze.
