@@ -15,48 +15,50 @@
 
 ## Jilid 1 — 40 halaman
 
-| Halaman | Kosakata / ungkapan / kalimat | Arti | Status sumber |
+**Sumber pilot:** `MAP-ARB-QJ1-001` (40/40; belum final). **Catatan konflik:** P001–P006 juga mempunyai materi salam/instruksi pada berkas produksi; daftar di bawah adalah **jalur pilot kosakata**, bukan penggantian diam-diam materi tersebut. Rekonsiliasi kedua jalur wajib sebelum freeze.
+
+| Halaman | Kosakata / ungkapan / kalimat | Arti / fungsi | Status sumber |
 |---|---|---|---|
-| P001 | السَّلَامُ عَلَيْكُمْ | Salam | Ada sumber J1; perlu sinkronisasi status |
-| P002 | كَيْفَ حَالُكَ؟ | Bagaimana kabarmu? | Ada sumber J1; perlu sinkronisasi status |
-| P003 | يَا صَدِيقِي | Wahai temanku | Ada sumber J1; perlu sinkronisasi status |
-| P004 | اِسْمَعْ | Dengarkan | Ada sumber J1; perlu sinkronisasi status |
-| P005 | اُنْظُرْ | Perhatikan | Ada sumber J1; perlu sinkronisasi status |
-| P006 | كَرِّرْ | Ulangilah | DRAF P006 |
-| P007 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P008 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P009 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P010 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P011 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P012 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P013 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P014 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P015 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P016 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P017 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P018 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P019 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P020 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P021 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P022 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P023 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P024 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P025 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P026 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P027 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P028 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P029 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P030 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P031 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P032 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P033 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P034 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P035 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P036 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P037 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P038 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P039 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P040 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
+| P001 | كِتَابٌ، قَلَمٌ | buku; pena | PILOT — konflik jalur salam/instruksi; review |
+| P002 | بَابٌ، كُرْسِيٌّ | pintu; kursi | PILOT — konflik jalur salam/instruksi; review |
+| P003 | سَبُّورَةٌ، حَقِيبَةٌ | papan tulis; tas | PILOT — konflik jalur salam/instruksi; review |
+| P004 | مُصْحَفٌ، مَسْجِدٌ | mushaf; masjid | PILOT — konflik jalur salam/instruksi; review |
+| P005 | بَيْتٌ، مَاءٌ | rumah; air | PILOT — konflik jalur salam/instruksi; review |
+| P006 | مُعَلِّمٌ، هٰذَا | guru laki-laki; ini (mudzakkar) | PILOT — konflik jalur salam/instruksi; review |
+| P007 | طَالِبٌ، هٰذَا | pelajar laki-laki; ini | PILOT — belum divalidasi |
+| P008 | وَلَدٌ، بِنْتٌ | anak laki-laki; anak perempuan | PILOT — belum divalidasi |
+| P009 | مُعَلِّمَةٌ، طَالِبَةٌ، مَا، مَنْ | guru perempuan; pelajar perempuan; apa; siapa | PILOT — belum divalidasi |
+| P010 | — | murojaah dan gerbang siklus 1 | PILOT — belum divalidasi |
+| P011 | فَصْلٌ، غُرْفَةٌ | kelas; ruangan | PILOT — belum divalidasi |
+| P012 | مَدْرَسَةٌ، نَافِذَةٌ | sekolah; jendela | PILOT — belum divalidasi |
+| P013 | سَرِيرٌ، جَدِيدٌ | tempat tidur; baru | PILOT — belum divalidasi |
+| P014 | قَدِيمٌ، كَبِيرٌ | lama; besar | PILOT — belum divalidasi |
+| P015 | صَغِيرٌ، جَمِيلٌ | kecil; indah | PILOT — belum divalidasi |
+| P016 | نَظِيفٌ، قَرِيبٌ | bersih; dekat | PILOT — belum divalidasi |
+| P017 | بَعِيدٌ، مَفْتُوحٌ | jauh; terbuka | PILOT — belum divalidasi |
+| P018 | — | murojaah lisan | PILOT — belum divalidasi |
+| P019 | مَكْتَبٌ، فِي، عَلَى | meja; di dalam; di atas | PILOT — belum divalidasi |
+| P020 | — | murojaah dan gerbang siklus 2 | PILOT — belum divalidasi |
+| P021 | قَرَأَ، كَتَبَ | telah membaca; telah menulis | PILOT — belum divalidasi |
+| P022 | جَلَسَ، ذَهَبَ | telah duduk; telah pergi | PILOT — belum divalidasi |
+| P023 | فَتَحَ، أَغْلَقَ | telah membuka; telah menutup | PILOT — belum divalidasi |
+| P024 | دَخَلَ، خَرَجَ | telah masuk; telah keluar | PILOT — belum divalidasi |
+| P025 | شَرِبَ، أَكَلَ | telah minum; telah makan | PILOT — belum divalidasi |
+| P026 | نَامَ، قَامَ | telah tidur; telah berdiri | PILOT — belum divalidasi |
+| P027 | سَمِعَ، نَظَرَ | telah mendengar; telah melihat | PILOT — belum divalidasi |
+| P028 | — | integrasi teks kumulatif | PILOT — belum divalidasi |
+| P029 | — | murojaah benda/orang | PILOT — belum divalidasi |
+| P030 | — | murojaah sifat/lokasi | PILOT — belum divalidasi |
+| P031 | — | murojaah isim–sifat | PILOT — belum divalidasi |
+| P032 | — | murojaah fi'il dan pelaku | PILOT — belum divalidasi |
+| P033 | — | transfer pola lama | PILOT — belum divalidasi |
+| P034 | — | cerita ulang teks | PILOT — belum divalidasi |
+| P035 | — | transfer kumulatif | PILOT — belum divalidasi |
+| P036 | — | murojaah ringan | PILOT — belum divalidasi |
+| P037 | — | remedial dan transfer | PILOT — belum divalidasi |
+| P038 | — | murojaah bertema akhlak | PILOT — belum divalidasi |
+| P039 | — | retensi teks | PILOT — belum divalidasi |
+| P040 | — | evaluasi diagnostik | PILOT — belum divalidasi |
 
 ## Jilid 2 — 40 halaman
 
