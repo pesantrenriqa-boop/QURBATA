@@ -251,48 +251,54 @@ P036–P040 kini berisi **ungkapan Arab yang benar-benar dapat dipraktikkan**, b
 
 ## Jilid 3 — 40 halaman
 
-| Halaman | Kosakata / ungkapan / kalimat | Arti | Status sumber |
+**Status: DRAF INTEGRASI 40/40 — BELUM FROZEN SECARA KESELURUHAN.** P001–P003 mengambil kompetensi inti dari `03_BOOKS/BAHASA-ARAB/JILID-3/MASTER-P001-P012-REGISTRY-v1.0.md` yang sudah FROZEN; P004 dan P007–P011 mengambil kompetensi yang REVIEWED/RECOVERED. P005, P006, P012 adalah **usulan ungkapan panel untuk slot penguatan**, bukan kutipan teks dari lima paragraf sumber. P013–P040 adalah **kandidat baru**. Dokumen 5 paragraf per halaman di Jilid 3 adalah jalur Bahasa Arab tersendiri; tabel di bawah merupakan **pemetaan ringkas panel Bi'ah**, bukan pengganti atau penulisan ulang sumber tersebut.
+
+**Prasyarat:** J1 instruksi dasar → J2 kata bersambung, tanwin, mad asli, transfer → J3 komunikasi giliran membaca, simak-teman, penandaan berhenti, dan koreksi dalam konteks sukun/tasydid dasar. Bahasa panel LISAN-GURU, tidak dicampurkan ke grid Tartil. Ungkapan pedagogis **bukan kutipan Al-Qur'an**; verifikasi korpus per lema belum selesai.
+
+| Halaman | Ungkapan Arab | Arti Indonesia | Status sumber |
 |---|---|---|---|
-| P001 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P002 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P003 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P004 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P005 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P006 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P007 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P008 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P009 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P010 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P011 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P012 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P013 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P014 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P015 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P016 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P017 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P018 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P019 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P020 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P021 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P022 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P023 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P024 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P025 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P026 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P027 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P028 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P029 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P030 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P031 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P032 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P033 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P034 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P035 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P036 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P037 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P038 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P039 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P040 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
+| P001 | مَاذَا تَقْرَأُ؟ | Apa yang kamu baca? | FROZEN SOURCE |
+| P002 | أَقْرَأُ الْقُرْآنَ | Saya membaca Al-Qur'an | FROZEN SOURCE |
+| P003 | اِقْرَأْ مِنْ هُنَا | Bacalah mulai dari sini | FROZEN SOURCE |
+| P004 | اِقْرَأْ إِلَى هُنَا | Bacalah sampai di sini | REVIEWED SOURCE |
+| P005 | اِقْرَأْ مِنْ هُنَا إِلَى هُنَا | Bacalah dari sini sampai sini | REVIEW KUMULATIF — USULAN PANEL |
+| P006 | مَاذَا تَقْرَأُ الْآنَ؟ | Apa yang sedang kamu baca sekarang? | REVIEW KUMULATIF — USULAN PANEL |
+| P007 | دَوْرُ مَنْ؟ | Giliran siapa? | REVIEWED SOURCE |
+| P008 | دَوْرِي | Giliran saya | REVIEWED SOURCE |
+| P009 | الْآنَ دَوْرُكَ | Sekarang giliranmu | REVIEWED SOURCE |
+| P010 | اِقْرَأْ بَعْدَ صَدِيقِكَ | Bacalah setelah temanmu | REVIEWED SOURCE |
+| P011 | اِسْمَعْ إِلَى صَدِيقِكَ | Dengarkan temanmu | REVIEWED SOURCE |
+| P012 | دَوْرِي، ثُمَّ دَوْرُكَ | Giliran saya, kemudian giliranmu | REVIEW KUMULATIF — USULAN PANEL |
+| P013 | مَنْ يَقْرَأُ الْآنَ؟ | Siapa yang membaca sekarang? | KANDIDAT BARU |
+| P014 | أَنَا أَقْرَأُ الْآنَ | Saya sedang membaca sekarang | KANDIDAT BARU |
+| P015 | مَنْ يَسْتَمِعُ؟ | Siapa yang menyimak? | KANDIDAT BARU |
+| P016 | أَنَا أَسْتَمِعُ | Saya menyimak | KANDIDAT BARU |
+| P017 | هَلْ أَنْتَ مُنْتَبِهٌ؟ | Apakah kamu memperhatikan? | KANDIDAT BARU |
+| P018 | نَعَمْ، أَنَا مُنْتَبِهٌ | Ya, saya memperhatikan | KANDIDAT BARU |
+| P019 | أَيْنَ وَقَفْتَ؟ | Di mana kamu berhenti? | KANDIDAT BARU |
+| P020 | وَقَفْتُ هُنَا | Saya berhenti di sini | KANDIDAT BARU |
+| P021 | مِنْ أَيْنَ أَبْدَأُ؟ | Dari mana saya mulai? | KANDIDAT BARU |
+| P022 | اِبْدَأْ مِنَ الْكَلِمَةِ الْأُولَى | Mulailah dari kata pertama | KANDIDAT BARU |
+| P023 | هَلْ أُعِيدُ الْقِرَاءَةَ؟ | Apakah saya perlu mengulang bacaan? | KANDIDAT BARU |
+| P024 | نَعَمْ، أَعِدِ الْقِرَاءَةَ | Ya, ulangilah bacaan | TRANSFER — BUKAN FUNGSI BARU |
+| P025 | هَلْ قَرَأْتُ صَحِيحًا؟ | Apakah saya membaca dengan benar? | KANDIDAT BARU |
+| P026 | قَرَأْتَ صَحِيحًا | Kamu membaca dengan benar | KANDIDAT BARU |
+| P027 | أَيْنَ أَخْطَأْتُ؟ | Di mana saya salah? | KANDIDAT BARU |
+| P028 | أَخْطَأْتَ فِي هٰذِهِ الْكَلِمَةِ | Kamu salah pada kata ini | KANDIDAT BARU |
+| P029 | هَلْ أُصَحِّحُ الْخَطَأَ؟ | Apakah saya memperbaiki kesalahan? | KANDIDAT BARU |
+| P030 | صَحِّحْ هٰذِهِ الْكَلِمَةَ | Perbaikilah kata ini | KANDIDAT BARU |
+| P031 | هَلْ أَقْرَأُ مَرَّةً أُخْرَى؟ | Apakah saya membaca sekali lagi? | TRANSFER — BUKAN FUNGSI BARU |
+| P032 | نَعَمْ، اِقْرَأْ مَرَّةً أُخْرَى | Ya, bacalah sekali lagi | TRANSFER — BUKAN FUNGSI BARU |
+| P033 | هَلْ أَقْرَأُ وَحْدِي؟ | Apakah saya membaca sendiri? | KANDIDAT BARU |
+| P034 | نَعَمْ، اِقْرَأْ وَحْدَكَ | Ya, bacalah sendiri | KANDIDAT BARU |
+| P035 | هَلْ نَقْرَأُ مَعًا؟ | Apakah kita membaca bersama? | KANDIDAT BARU |
+| P036 | نَعَمْ، نَقْرَأُ مَعًا | Ya, kita membaca bersama | KANDIDAT BARU |
+| P037 | دَوْرُ مَنْ؟ — دَوْرِي | Giliran siapa? — Giliran saya | MUROJAAH — 0 BARU |
+| P038 | أَيْنَ وَقَفْتَ؟ — وَقَفْتُ هُنَا | Di mana kamu berhenti? — Saya berhenti di sini | MUROJAAH — 0 BARU |
+| P039 | أَيْنَ أَخْطَأْتُ؟ — أَخْطَأْتَ فِي هٰذِهِ الْكَلِمَةِ | Di mana saya salah? — Kamu salah pada kata ini | MUROJAAH — 0 BARU |
+| P040 | هَلْ نَقْرَأُ مَعًا؟ — نَعَمْ، نَقْرَأُ مَعًا | Apakah kita membaca bersama? — Ya, bersama | EVALUASI LISAN — 0 BARU |
+
+**Gate sebelum freeze:** (1) audit silang J1–J3 pada ungkapan, fungsi, dan keluarga lema; (2) cocokkan P005–P006/P012 dengan paragraf asli tanpa mengubah materi yang disimpan; (3) audit nahwu, harakat, bentuk mudzakkar/muannats; (4) bukti korpus Qurani per lema yang diklaim; (5) selaraskan slot dengan halaman Tartil J3 dan evaluasi; (6) review ahli. **Tidak ada klaim bahwa seluruh 40 halaman sudah disahkan.**
 
 ## Jilid 4 — 40 halaman
 
