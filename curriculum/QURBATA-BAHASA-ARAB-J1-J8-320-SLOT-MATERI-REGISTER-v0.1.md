@@ -15,7 +15,7 @@
 
 ## Jilid 1 — 40 halaman
 
-**Status: DRAF USULAN 40/40, BELUM FROZEN.** P001–P006 mengikuti jalur salam/instruksi yang sudah ada; P007–P040 merupakan usulan untuk ditelaah terhadap sumber frozen, prasyarat, ketepatan bentuk bahasa Arab, dan alokasi halaman Tartil. Ini bukan pengganti otomatis dokumen pilot kosakata atau materi halaman yang telah disahkan. **Mode pengajaran: LISAN-GURU** sampai teks memenuhi whitelist baca mandiri Tartil.
+**Status: CONTENT FROZEN (keputusan pengguna 2026-10-08) — belum berarti validasi ahli / FINAL CETAK.** P001–P006 mengikuti jalur salam/instruksi yang sudah ada; P007–P040 merupakan usulan untuk ditelaah terhadap sumber frozen, prasyarat, ketepatan bentuk bahasa Arab, dan alokasi halaman Tartil. Ini bukan pengganti otomatis dokumen pilot kosakata atau materi halaman yang telah disahkan. **Mode pengajaran: LISAN-GURU** sampai teks memenuhi whitelist baca mandiri Tartil.
 
 | Halaman | Ungkapan / instruksi | Arti | Status |
 |---|---|---|---|
@@ -62,48 +62,50 @@
 
 ## Jilid 2 — 40 halaman
 
-| Halaman | Kosakata / ungkapan / kalimat | Arti | Status sumber |
+**Status: DRAF USULAN 40/40 — BELUM FROZEN.** Materi Bi'ah Arabiyah instruksional untuk fase bentuk sambung dan mad asli Tartil J2. Satu ungkapan baru maksimal per halaman; beberapa ungkapan J1 muncul kembali sebagai MUROJAAH, bukan pengenalan baru. Kalimat kompleks diajarkan lisan oleh guru; tidak menjadi grid latihan baca. Bentuk maskulin tunggal adalah model dasar, guru menyesuaikan sapaan santri. **Review Arab, pemetaan prasyarat, dan persetujuan akademik masih diperlukan.**
+
+| Halaman | Ungkapan / instruksi | Arti / fungsi | Status |
 |---|---|---|---|
-| P001 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P002 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P003 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P004 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P005 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P006 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P007 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P008 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P009 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P010 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P011 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P012 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P013 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P014 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P015 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P016 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P017 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P018 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P019 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P020 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P021 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P022 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P023 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P024 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P025 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P026 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P027 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P028 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P029 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P030 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P031 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P032 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P033 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P034 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P035 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P036 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P037 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P038 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P039 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P040 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
+| P001 | اِفْتَحِ الْمُصْحَفَ | Bukalah mushaf | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P002 | أَغْلِقِ الْمُصْحَفَ | Tutuplah mushaf | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P003 | أَشِرْ إِلَى الْحَرْفِ | Tunjuk hurufnya | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P004 | اُنْظُرْ إِلَى الْكَلِمَةِ | Perhatikan katanya | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P005 | اِقْرَأِ الْكَلِمَةَ | Bacalah katanya | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P006 | أَعِدِ الْقِرَاءَةَ | Ulangi bacaannya | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P007 | قِفْ | Berhenti | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P008 | وَاصِلْ | Lanjutkan | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P009 | أَجِبْ | Jawablah | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P010 | اِسْمَعْ ثُمَّ كَرِّرْ | Dengarkan lalu ulangi | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P011 | نَعَمْ | Ya | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P012 | لَا | Tidak | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P013 | حَاضِرٌ | Siap/hadir | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P014 | فَهِمْتُ | Saya paham | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P015 | لَمْ أَفْهَمْ | Saya belum paham | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P016 | هَلْ فَهِمْتَ؟ | Apakah kamu paham? | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P017 | مَا هٰذَا؟ | Apa ini? | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P018 | أَيْنَ الْحَرْفُ؟ | Di mana hurufnya? | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P019 | أَحْسَنْتَ | Bagus | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P020 | صَحِيحٌ | Benar | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P021 | خَطَأٌ | Salah | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P022 | اِقْرَأْ بِصَوْتٍ وَاضِحٍ | Bacalah dengan suara jelas | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P023 | اِقْرَأْ بِهُدُوءٍ | Bacalah dengan tenang | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P024 | اِسْمَعْ جَيِّدًا | Dengarkan baik-baik | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P025 | اُنْظُرْ جَيِّدًا | Perhatikan baik-baik | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P026 | اِقْرَأْ مِنَ الْبِدَايَةِ | Bacalah dari awal | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P027 | اِقْرَأْ إِلَى هُنَا | Bacalah sampai sini | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P028 | هَلْ أَنْتَ مُسْتَعِدٌّ؟ | Apakah kamu siap? | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P029 | أَنَا مُسْتَعِدٌّ | Saya siap | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P030 | اِبْدَأِ الْقِرَاءَةَ | Mulailah membaca | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P031 | اِقْرَأْ ثُمَّ قِفْ | Baca lalu berhenti | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P032 | اِسْمَعْ ثُمَّ أَجِبْ | Dengarkan lalu jawab | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P033 | اُنْظُرْ ثُمَّ اِقْرَأْ | Perhatikan lalu baca | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P034 | اِفْتَحِ الْمُصْحَفَ ثُمَّ اِقْرَأْ | Buka mushaf lalu baca | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P035 | أَعِدْ مَرَّةً أُخْرَى | Ulangi sekali lagi | DRAF — cek kesesuaian bahasa dan prasyarat |
+| P036 | — | Murojaah instruksi membuka, menutup, membaca | MUROJAAH |
+| P037 | — | Murojaah respons santri | MUROJAAH |
+| P038 | — | Murojaah koreksi bacaan | MUROJAAH |
+| P039 | — | Murojaah rangkaian instruksi | MUROJAAH |
+| P040 | — | Evaluasi lisan kumulatif | MUROJAAH |
 
 ## Jilid 3 — 40 halaman
 
