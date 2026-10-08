@@ -30,7 +30,7 @@ Mengukur akurasi huruf, ketepatan harakat, kelancaran merangkai bunyi, dan trans
 17. كُ تِ بَ
 18. وُ جِ دَ
 
-C13–C18 dipakai sebagai butir evaluasi membaca. Status REVIEW-REUSE untuk setiap kata harus dibuktikan melalui audit lintas P001–P039; jangan menyatakan semuanya sudah pernah muncul sebelum verifikasi.
+C13–C18 dipakai sebagai butir evaluasi membaca. Status REVIEW-REUSE diverifikasi terhadap P019 (فَهِمَ، رَكِبَ), P022 (خُلِقَ), P023 (سُئِلَ), P026 (كُتِبَ), dan P027 (وُجِدَ). Ini adalah reuse terkontrol untuk evaluasi, bukan NEW MSL.
 
 ## D — MEMBACA TANPA HARAKAT (C19–C24)
 19. ب ت ث
@@ -84,7 +84,17 @@ Ambang ini pedoman internal, bukan standar nasional. Guru juga memperhatikan kes
 - Tidak memperkenalkan sukun/tasydid/tanwin/mad.
 - Huruf latihan tetap detached.
 - Tidak ada klaim makna untuk rangkaian tanpa harakat.
-- Global cross-page MSL audit PENDING.
+- Global cross-page MSL audit PENDING untuk seluruh buku; C13–C18 REVIEW-REUSE telah dicocokkan terhadap sumber P019/P022/P023/P026/P027.
 - Layout/font KFGQPC Uthman Taha + renderer/PDF PENDING.
 
 STATUS: P040 FINAL CHECKPOINT DATA PASS v0.1 — PEDAGOGICAL REVIEW REQUIRED BEFORE PRINT FREEZE.
+
+
+## QA CROSS-PAGE REUSE — 2026-10-08
+- C13 `فَ هِ مَ`: P019 C13.
+- C14 `رَ كِ بَ`: P019 C11.
+- C15 `خُ لِ قَ`: P022 C11.
+- C16 `سُ ئِ لَ`: P023 C15 (kursi hamzah pada sumber teacher-side; unit latihan P040 perlu ditinjau agar sama dengan representasi detached pada P023).
+- C17 `كُ تِ بَ`: P026 C07.
+- C18 `وُ جِ دَ`: P027 C12.
+- Verifikasi ini hanya berlaku untuk enam item C13–C18; bukan pengesahan seluruh Jilid 1.
