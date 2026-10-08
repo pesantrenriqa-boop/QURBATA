@@ -400,48 +400,52 @@ P036–P040 kini berisi **ungkapan Arab yang benar-benar dapat dipraktikkan**, b
 
 ## Jilid 6 — 40 halaman
 
-| Halaman | Kosakata / ungkapan / kalimat | Arti | Status sumber |
+**Status DRAF 40/40 — BELUM FROZEN.** Prasyarat: J1 harakat → J2 bentuk sambung/tanwin/mad asli → J3 interaksi dan koreksi → J4 nun/mim sakinah dan alif-lam → J5 mad lanjutan → **J6 tafkhim/tarqiq, ra/lam jalalah, waqaf dan ibtida**. Ini bahasa interaksi kelas LISAN-GURU, bukan teks grid Tartil. Penerapan hukum ra, lam jalalah, dan waqaf/ibtida wajib merujuk riwayat bacaan, konteks ayat, dan tashih guru; jangan menyimpulkan hukum hanya dari satu harakat atau simbol.
+
+| Halaman | Ungkapan Arab | Arti Indonesia | Status |
 |---|---|---|---|
-| P001 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P002 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P003 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P004 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P005 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P006 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P007 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P008 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P009 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P010 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P011 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P012 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P013 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P014 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P015 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P016 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P017 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P018 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P019 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P020 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P021 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P022 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P023 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P024 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P025 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P026 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P027 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P028 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P029 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P030 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P031 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P032 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P033 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P034 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P035 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P036 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P037 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P038 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P039 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P040 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
+| P001 | هَلْ هٰذَا الْحَرْفُ مُفَخَّمٌ أَمْ مُرَقَّقٌ؟ | Apakah huruf ini dibaca tebal atau tipis? | KANDIDAT / TRANSFER — audit fungsi |
+| P002 | اِسْتَمِعْ إِلَى تَفْخِيمِ الْحَرْفِ | Dengarkan penebalan bunyi huruf | KANDIDAT / TRANSFER — audit fungsi |
+| P003 | فَخِّمْ هٰذَا الْحَرْفَ | Tebalkan bunyi huruf ini | KANDIDAT / TRANSFER — audit fungsi |
+| P004 | رَقِّقْ هٰذَا الْحَرْفَ | Tipiskan bunyi huruf ini | KANDIDAT / TRANSFER — audit fungsi |
+| P005 | هَلْ تَغَيَّرَ صَوْتُ الْحَرْفِ؟ | Apakah bunyi huruf berubah? | KANDIDAT / TRANSFER — audit fungsi |
+| P006 | قَارِنْ بَيْنَ الْحَرْفِ الْمُفَخَّمِ وَالْمُرَقَّقِ | Bandingkan huruf tebal dan tipis | KANDIDAT / TRANSFER — audit fungsi |
+| P007 | أَيُّ الْحَرْفَيْنِ أَثْقَلُ صَوْتًا؟ | Manakah dari dua huruf yang lebih berat bunyinya? | KANDIDAT / TRANSFER — audit fungsi |
+| P008 | هَلْ هٰذِهِ رَاءٌ مُفَخَّمَةٌ؟ | Apakah ra ini dibaca tebal? | KANDIDAT / TRANSFER — audit fungsi |
+| P009 | هَلْ هٰذِهِ رَاءٌ مُرَقَّقَةٌ؟ | Apakah ra ini dibaca tipis? | KANDIDAT / TRANSFER — audit fungsi |
+| P010 | اُنْظُرْ إِلَى حَرَكَةِ الرَّاءِ | Perhatikan harakat ra | KANDIDAT / TRANSFER — audit fungsi |
+| P011 | مَا حَرَكَةُ الْحَرْفِ الَّذِي قَبْلَ الرَّاءِ؟ | Apa harakat huruf sebelum ra? | KANDIDAT / TRANSFER — audit fungsi |
+| P012 | اِخْتَرِ النُّطْقَ الْأَصَحَّ لِلرَّاءِ | Pilih pelafalan ra yang lebih tepat | KANDIDAT / TRANSFER — audit fungsi |
+| P013 | هَلْ لَامُ لَفْظِ الْجَلَالَةِ مُفَخَّمَةٌ؟ | Apakah lam pada lafaz Allah dibaca tebal? | KANDIDAT / TRANSFER — audit fungsi |
+| P014 | هَلْ لَامُ لَفْظِ الْجَلَالَةِ مُرَقَّقَةٌ؟ | Apakah lam pada lafaz Allah dibaca tipis? | KANDIDAT / TRANSFER — audit fungsi |
+| P015 | تَأَمَّلْ حَرَكَةَ مَا قَبْلَ لَفْظِ الْجَلَالَةِ | Perhatikan harakat sebelum lafaz Allah | KANDIDAT / TRANSFER — audit fungsi |
+| P016 | اِقْرَأْ مَعَ مُرَاعَاةِ التَّفْخِيمِ وَالتَّرْقِيقِ | Bacalah dengan memperhatikan tebal-tipis bunyi | KANDIDAT / TRANSFER — audit fungsi |
+| P017 | أَيْنَ يَحْسُنُ الْوَقْفُ؟ | Di mana sebaiknya berhenti? | KANDIDAT / TRANSFER — audit fungsi |
+| P018 | هَلْ يَتِمُّ الْمَعْنَى عِنْدَ الْوَقْفِ هُنَا؟ | Apakah makna sudah lengkap jika berhenti di sini? | KANDIDAT / TRANSFER — audit fungsi |
+| P019 | مَا عَلَامَةُ الْوَقْفِ هُنَا؟ | Apa tanda waqaf di sini? | KANDIDAT / TRANSFER — audit fungsi |
+| P020 | اِتَّبِعْ عَلَامَةَ الْوَقْفِ | Ikutilah tanda waqaf | KANDIDAT / TRANSFER — audit fungsi |
+| P021 | هَلْ يَجُوزُ الْوَقْفُ هُنَا؟ | Bolehkah berhenti di sini? | KANDIDAT / TRANSFER — audit fungsi |
+| P022 | هَلِ الْوَقْفُ هُنَا أَوْلَى؟ | Apakah lebih baik berhenti di sini? | KANDIDAT / TRANSFER — audit fungsi |
+| P023 | هَلِ الْوَصْلُ هُنَا أَوْلَى؟ | Apakah lebih baik menyambung di sini? | KANDIDAT / TRANSFER — audit fungsi |
+| P024 | لَا تَقْطَعِ الْمَعْنَى بِالْوَقْفِ | Jangan memutus makna dengan berhenti | KANDIDAT / TRANSFER — audit fungsi |
+| P025 | اِسْتَمِعْ إِلَى الْمَعْنَى قَبْلَ الْوَقْفِ | Perhatikan makna sebelum berhenti | KANDIDAT / TRANSFER — audit fungsi |
+| P026 | مِنْ أَيْنَ تَبْدَأُ بَعْدَ الْوَقْفِ؟ | Dari mana kamu memulai setelah waqaf? | KANDIDAT / TRANSFER — audit fungsi |
+| P027 | اِبْدَأْ مِنْ مَوْضِعٍ مُنَاسِبٍ | Mulailah dari tempat yang sesuai | KANDIDAT / TRANSFER — audit fungsi |
+| P028 | هَلْ يَصِحُّ الِابْتِدَاءُ مِنْ هُنَا؟ | Apakah tepat memulai dari sini? | KANDIDAT / TRANSFER — audit fungsi |
+| P029 | اِخْتَرْ مَوْضِعَ الِابْتِدَاءِ | Pilih tempat memulai bacaan | KANDIDAT / TRANSFER — audit fungsi |
+| P030 | أَعِدِ الْآيَةَ مِنْ مَوْضِعٍ أَصَحَّ | Ulangi ayat dari tempat yang lebih tepat | KANDIDAT / TRANSFER — audit fungsi |
+| P031 | هَلْ تَغَيَّرَ الْمَعْنَى بِسَبَبِ الْوَقْفِ؟ | Apakah makna berubah karena waqaf? | KANDIDAT / TRANSFER — audit fungsi |
+| P032 | قَارِنْ بَيْنَ الْوَقْفِ وَالْوَصْلِ | Bandingkan berhenti dan menyambung | KANDIDAT / TRANSFER — audit fungsi |
+| P033 | اشْرَحْ سَبَبَ اخْتِيَارِ مَوْضِعِ الْوَقْفِ | Jelaskan alasan memilih tempat waqaf | KANDIDAT / TRANSFER — audit fungsi |
+| P034 | اِسْتَمِعْ إِلَى الْقِرَاءَةِ ثُمَّ قَيِّمْهَا | Simak bacaan lalu nilailah | KANDIDAT / TRANSFER — audit fungsi |
+| P035 | صَحِّحِ التَّفْخِيمَ وَالتَّرْقِيقَ وَالْوَقْفَ | Perbaiki tebal-tipis dan waqaf | KANDIDAT / TRANSFER — audit fungsi |
+| P036 | هَلْ هٰذَا الْحَرْفُ مُفَخَّمٌ أَمْ مُرَقَّقٌ؟ | Ulangi pembedaan tebal-tipis | MUROJAAH — 0 baru |
+| P037 | هَلْ هٰذِهِ رَاءٌ مُفَخَّمَةٌ؟ | Ulangi identifikasi ra tebal | MUROJAAH — 0 baru |
+| P038 | أَيْنَ يَحْسُنُ الْوَقْفُ؟ | Ulangi penentuan tempat waqaf | MUROJAAH — 0 baru |
+| P039 | مِنْ أَيْنَ تَبْدَأُ بَعْدَ الْوَقْفِ؟ | Ulangi pemilihan ibtida | MUROJAAH — 0 baru |
+| P040 | اِسْتَمِعْ إِلَى الْقِرَاءَةِ ثُمَّ قَيِّمْهَا | Evaluasi lisan terpadu | MUROJAAH — 0 baru |
+
+**Audit permukaan:** tidak ada teks ungkapan P001–P035 yang identik setelah normalisasi harakat dengan J1–J5. Ini tidak membuktikan fungsi atau keluarga lema unik. P036–P040 pengulangan sengaja (0 baru). **Gate:** audit bahasa Arab, aturan waqaf yang tidak mengubah makna, prasyarat page-ID Tartil, verifikasi lema Qurani, bentuk sapaan perempuan, dan persetujuan ahli sebelum freeze.
 
 ## Jilid 7 — 40 halaman
 
