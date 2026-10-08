@@ -58,11 +58,11 @@ Tujuan: menguji retensi dari enam fase Dhammah sebelumnya.
 24. **وُ عِ دَ** ← `وُعِدَ` = telah dijanjikan [MSL-TRANSFER]
 
 ## PEDAGOGICAL SEQUENCE
-1. **discrimination** — kenali bunyi Dhammah;
-2. **switching** — berpindah antara a/i/u;
-3. **retention** — baca kembali kata yang pernah ditemui;
-4. **transfer** — baca kata autentik baru;
-5. **meaning reinforcement** — arti diberikan setelah bacaan benar.
+- **discrimination** — kenali bunyi Dhammah;
+- **switching** — berpindah antara a/i/u;
+- **retention** — baca kembali kata yang pernah ditemui;
+- **transfer** — baca kata autentik baru;
+- **meaning reinforcement** — arti diberikan setelah bacaan benar.
 
 Pendekatan ini menjaga latihan membaca tetap bertahap dan sistematis; penelitian pembelajaran qira'ah juga menekankan kombinasi latihan pelafalan, kosakata, dan latihan membaca sebagai tahapan yang membantu pemahaman. Namun P028 tetap memisahkan kemampuan decoding dari tuntutan memahami arti.
 
@@ -99,3 +99,7 @@ Bagian A–D secara kolektif mencakup Dhammah dari rentang P021–P027. Review t
 **P028 DATA PASS v0.1 — FULL DHAMMAH REVIEW.**
 
 Gate berikutnya: P029–P039 cumulative review dengan beban transfer meningkat bertahap.
+
+## QA STRUCTURAL NOTE — 2026-10-08
+- Jumlah latihan yang otoritatif adalah 24 butir di blok A–D, bukan hitungan semua baris bernomor pada dokumen.
+- Pedagogical sequence diubah ke bullet agar parser latihan tidak keliru menghitungnya sebagai butir.
