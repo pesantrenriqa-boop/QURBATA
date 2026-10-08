@@ -302,48 +302,52 @@ P036–P040 kini berisi **ungkapan Arab yang benar-benar dapat dipraktikkan**, b
 
 ## Jilid 4 — 40 halaman
 
-| Halaman | Kosakata / ungkapan / kalimat | Arti | Status sumber |
+**Status: DRAF 40/40 — BELUM FROZEN.** Tangga: J1 instruksi dasar → J2 bentuk sambung/tanwin/mad asli → J3 interaksi dan koreksi dengan sukun/tasydid → **J4 nun/mim sakinah dan alif-lam**. Panel berupa komunikasi kelas (LISAN-GURU), bukan grid bacaan Tartil. Istilah izhar/idgham/ikhfa/iqlab adalah **istilah teknis**, bukan otomatis kutipan Qurani; korpus per lema belum diverifikasi.
+
+| Halaman | Ungkapan Arab | Arti / fungsi | Status |
 |---|---|---|---|
-| P001 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P002 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P003 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P004 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P005 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P006 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P007 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P008 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P009 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P010 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P011 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P012 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P013 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P014 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P015 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P016 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P017 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P018 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P019 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P020 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P021 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P022 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P023 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P024 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P025 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P026 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P027 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P028 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P029 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P030 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P031 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P032 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P033 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P034 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P035 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P036 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P037 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P038 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P039 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P040 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
+| P001 | مَا حُكْمُ النُّونِ السَّاكِنَةِ هُنَا؟ | Apa hukum nun sukun di sini? | KANDIDAT — perlu audit ahli |
+| P002 | اُنْظُرْ إِلَى النُّونِ السَّاكِنَةِ | Perhatikan nun sukun | KANDIDAT — perlu audit ahli |
+| P003 | مَا الْحَرْفُ الَّذِي بَعْدَهَا؟ | Huruf apa yang ada sesudahnya? | KANDIDAT — perlu audit ahli |
+| P004 | حَدِّدِ الْحَرْفَ التَّالِيَ | Tentukan huruf berikutnya | KANDIDAT — perlu audit ahli |
+| P005 | هَلْ تَسْمَعُ النُّونَ بِوُضُوحٍ؟ | Apakah kamu mendengar bunyi nun dengan jelas? | KANDIDAT — perlu audit ahli |
+| P006 | هٰذَا إِظْهَارٌ | Ini izhar | KANDIDAT — perlu audit ahli |
+| P007 | أَظْهِرِ النُّونَ | Jelaskan bunyi nun | KANDIDAT — perlu audit ahli |
+| P008 | هَلْ يَدْخُلُ صَوْتٌ فِي صَوْتٍ؟ | Apakah satu bunyi masuk ke bunyi lain? | KANDIDAT — perlu audit ahli |
+| P009 | هٰذَا إِدْغَامٌ | Ini idgham | KANDIDAT — perlu audit ahli |
+| P010 | أَدْغِمِ النُّونَ | Idghamkan bunyi nun | KANDIDAT — perlu audit ahli |
+| P011 | هَلْ تَسْمَعُ غُنَّةً؟ | Apakah kamu mendengar dengung? | KANDIDAT — perlu audit ahli |
+| P012 | اِسْتَمِعْ إِلَى الْغُنَّةِ | Simak dengungnya | KANDIDAT — perlu audit ahli |
+| P013 | هٰذَا إِقْلَابٌ | Ini iqlab | KANDIDAT — perlu audit ahli |
+| P014 | اِقْلِبِ النُّونَ مِيمًا | Ubahlah bunyi nun menjadi mim | KANDIDAT — perlu audit ahli |
+| P015 | هٰذَا إِخْفَاءٌ | Ini ikhfa | KANDIDAT — perlu audit ahli |
+| P016 | أَخْفِ صَوْتَ النُّونِ | Samarkan bunyi nun | KANDIDAT — perlu audit ahli |
+| P017 | مَا حُكْمُ التَّنْوِينِ هُنَا؟ | Apa hukum tanwin di sini? | KANDIDAT — perlu audit ahli |
+| P018 | هَلْ تَسْمَعُ الْفَرْقَ بَيْنَهُمَا؟ | Apakah kamu mendengar perbedaannya? | KANDIDAT — perlu audit ahli |
+| P019 | اِخْتَرِ الْحُكْمَ الْمُنَاسِبَ | Pilih hukum yang sesuai | KANDIDAT — perlu audit ahli |
+| P020 | بَيِّنْ سَبَبَ اخْتِيَارِكَ | Jelaskan alasan pilihanmu | KANDIDAT — perlu audit ahli |
+| P021 | مَا حُكْمُ الْمِيمِ السَّاكِنَةِ؟ | Apa hukum mim sukun? | KANDIDAT — perlu audit ahli |
+| P022 | اُنْظُرْ إِلَى الْمِيمِ السَّاكِنَةِ | Perhatikan mim sukun | KANDIDAT — perlu audit ahli |
+| P023 | هَلْ تَلْتَقِي الْمِيمُ بِمِيمٍ؟ | Apakah mim bertemu mim? | KANDIDAT — perlu audit ahli |
+| P024 | هٰذَا إِدْغَامٌ شَفَوِيٌّ | Ini idgham syafawi | KANDIDAT — perlu audit ahli |
+| P025 | هَلْ تَلْتَقِي الْمِيمُ بِبَاءٍ؟ | Apakah mim bertemu ba? | KANDIDAT — perlu audit ahli |
+| P026 | هٰذَا إِخْفَاءٌ شَفَوِيٌّ | Ini ikhfa syafawi | KANDIDAT — perlu audit ahli |
+| P027 | هٰذَا إِظْهَارٌ شَفَوِيٌّ | Ini izhar syafawi | KANDIDAT — perlu audit ahli |
+| P028 | مَا الْحَرْفُ الَّذِي يَأْتِي بَعْدَ الْمِيمِ؟ | Huruf apa setelah mim? | KANDIDAT — perlu audit ahli |
+| P029 | هَلْ تُنْطَقُ اللَّامُ؟ | Apakah lam dibunyikan? | KANDIDAT — perlu audit ahli |
+| P030 | هٰذِهِ لَامٌ قَمَرِيَّةٌ | Ini lam qamariyah | KANDIDAT — perlu audit ahli |
+| P031 | هٰذِهِ لَامٌ شَمْسِيَّةٌ | Ini lam syamsiyah | KANDIDAT — perlu audit ahli |
+| P032 | اِقْرَأِ الْكَلِمَةَ مَعَ اللَّامِ | Bacalah kata dengan lam | KANDIDAT — perlu audit ahli |
+| P033 | مَا الْفَرْقُ بَيْنَ الْقِرَاءَتَيْنِ؟ | Apa perbedaan dua bacaan? | KANDIDAT — perlu audit ahli |
+| P034 | اِسْتَمِعْ ثُمَّ حَدِّدِ الْحُكْمَ | Dengarkan lalu tentukan hukumnya | KANDIDAT — perlu audit ahli |
+| P035 | هَلْ تَسْتَطِيعُ تَصْحِيحَ الْخَطَإِ؟ | Bisakah kamu memperbaiki kesalahan? | KANDIDAT — perlu audit ahli |
+| P036 | مَا حُكْمُ النُّونِ السَّاكِنَةِ هُنَا؟ | Ulangi identifikasi hukum nun sukun | MUROJAAH — 0 baru |
+| P037 | مَا حُكْمُ الْمِيمِ السَّاكِنَةِ؟ | Ulangi identifikasi hukum mim sukun | MUROJAAH — 0 baru |
+| P038 | هَلْ تُنْطَقُ اللَّامُ؟ | Ulangi identifikasi lam | MUROJAAH — 0 baru |
+| P039 | اِسْتَمِعْ ثُمَّ حَدِّدِ الْحُكْمَ | Ulangi penentuan hukum dari audio | MUROJAAH — 0 baru |
+| P040 | بَيِّنْ سَبَبَ اخْتِيَارِكَ | Evaluasi lisan alasan pilihan | MUROJAAH — 0 baru |
+
+**Audit anti-duplikasi permukaan:** 35 slot akuisisi/transfer J4 tidak identik secara teks setelah normalisasi harakat dengan ungkapan J1–J3. P036–P040 adalah pengulangan sengaja untuk evaluasi, bukan kompetensi baru. **Audit keluarga lema, fungsi yang sama, prasyarat halaman, korpus dan keakuratan tajwid masih diperlukan.**
 
 ## Jilid 5 — 40 halaman
 
