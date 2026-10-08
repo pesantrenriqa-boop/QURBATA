@@ -30,14 +30,14 @@ REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P015.
 7. **شَ رِ بَ** ← `شَرِبَ` = telah minum [MSL VERIFIED | TARGET رِ]  
 8. **فَ رِ حَ** ← `فَرِحَ` = telah gembira [MSL VERIFIED | TARGET رِ]  
 9. **حَ زِ نَ** ← `حَزِنَ` = telah bersedih [MSL VERIFIED | TARGET زِ]  
-10. **سَ مِ عَ** [REJECT — مِ baru legal P019; tidak memuat سِ; pengganti wajib sebelum cetak]  
+10. **سَ رِ قَ** ← `سَرِقَ` = telah mencuri [MSL CANDIDATE | TARGET رِ; audit global pending]  
 11. **عَ رِ فَ** ← `عَرِفَ` = telah mengetahui / mengenal [MSL VERIFIED | TARGET رِ]  
 12. **وَ رِ ثَ** ← `وَرِثَ` = telah mewarisi [MSL VERIFIED | TARGET رِ]  
 13. **كَ رِ هَ** ← `كَرِهَ` = telah membenci / tidak menyukai [MSL VERIFIED | TARGET رِ]  
 14. **لَ زِ مَ** ← `لَزِمَ` = telah menetapi / melekat [MSL VERIFIED | TARGET زِ]  
 15. **يَ بِ سَ** ← `يَبِسَ` = telah menjadi kering [MSL VERIFIED | TARGET سِ]  
 16. **حَ سِ بَ** ← `حَسِبَ` = telah mengira [MSL VERIFIED | TARGET سِ]  
-17. **شَ بِ عَ** [REJECT — شَ bukan شِ; pengganti wajib sebelum cetak]  
+17. **شَ رِ حَ** ← `شَرِحَ` = menjadi lapang / terbuka [MSL CANDIDATE | TARGET رِ; audit global pending]  
 18. **مَ رِ ضَ** ← `مَرِضَ` = telah sakit [MSL VERIFIED | TARGET رِ]  
 19. **حَ رِ صَ** ← `حَرِصَ` = sangat ingin / bersungguh-sungguh [MSL VERIFIED | TARGET رِ]  
 20. **خَ سِ رَ** ← `خَسِرَ` = telah rugi [MSL VERIFIED | TARGET سِ]  
@@ -73,24 +73,30 @@ Prioritas pemilihan kata:
 
 ## GLOBAL MSL — P016
 USED baru P016:
-`شرب`, `فرح`, `حزن`, `سمع`, `عرف`, `ورث`, `كره`, `لزم`, `يبس`, `حسب`, `شبع`, `مرض`, `حرص`, `خسر`, `نسي`, `نشط`, `عشق`, `بشر`.
+`شرب`, `فرح`, `حزن`, `سرق`, `عرف`, `ورث`, `كره`, `لزم`, `يبس`, `حسب`, `شرح`, `مرض`, `حرص`, `خسر`, `نسي`, `نشط`, `عشق`, `بشر`.
 
-Jumlah meaningful yang lolos pemeriksaan target awal: **16/18**; C10 dan C17 belum diganti.
+Jumlah kandidat meaningful: **18/18**; C10 dan C17 diganti, validasi lintas halaman masih diperlukan.
 
 ## QA STATUS
 - GROUP_COUNT: 24/24 → PASS
 - C01–C06 EXACT-2: 6/6 → PASS
 - C01–C06 TARGET-only: PASS
 - C07–C24 EXACT-3: 18/18 → PASS
-- C07–C24 TARGET presence: 16/18 → FAIL (C10, C17)
-- meaningful EXACT-3: 16/18 kandidat; C10 dan C17 REJECT
+- C07–C24 TARGET presence: 18/18 → PASS
+- meaningful EXACT-3: 18/18 kandidat; C10 dan C17 telah diganti, audit global pending
 - phonetic/pseudo-word EXACT-3: 0
-- future Kasrah: 1 (C10 مِ)
+- future Kasrah: 0
 - duplicate group: 0
 - fabricated meaning: 0
 - detached-letter requirement: ACTIVE
 
 ## STATUS
-**P016 QA FAIL — C10 dan C17 perlu penggantian; tidak boleh dicetak.**
+**P016 TARGET/PROGRESSION REPAIR PASS — global lexical, duplicate, and renderer QA PENDING.**
 
 Belum visual/render/PDF PASS. Tahap berikutnya P017 memperkenalkan `صِ ضِ طِ ظِ` dengan prinsip yang sama: cari kata Arab nyata terlebih dahulu, tetapi tidak boleh mengorbankan target, urutan kompetensi, atau validitas harakat.
+
+## CORRECTIVE AUDIT 2026-10-08
+- C10 sebelumnya `سَ مِ عَ` melanggar future Kasrah `مِ` dan target P016; diganti `سَ رِ قَ` dengan target `رِ`.
+- C17 sebelumnya `شَ بِ عَ` tidak memiliki target P016; diganti `شَ رِ حَ` dengan target `رِ`.
+- Kedua pengganti hanya menggunakan Fathah dan Kasrah `رِ` yang legal sampai P016. Bentuk Arab dan keunikan global tetap harus dikonfirmasi sebelum print freeze.
+- Semua klaim lama 18/18 verified harus dipahami sebagai kandidat sampai audit lintas halaman selesai.
