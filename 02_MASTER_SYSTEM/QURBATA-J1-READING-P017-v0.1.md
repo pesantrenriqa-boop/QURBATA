@@ -31,7 +31,7 @@ REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P016.
 8. **خَ صِ مَ** ← `خَصِمَ` = berselisih / menjadi lawan [MSL VERIFIED]  
 9. **حَ صِ رَ** ← `حَصِرَ` = menjadi sempit / terhalang [MSL VERIFIED]  
 10. **بَ صِ رَ** ← `بَصِرَ` = melihat / mengetahui dengan jelas [MSL VERIFIED]  
-11. **مَ رِ ضَ** [GLOBAL DUPLICATE P016:18 — HOLD; perlu pengganti sah dengan ضِ sebelum cetak]  
+11. **رَ ضِ عَ** ← `رَضِعَ` = telah menyusu [MSL CANDIDATE — TARGET ضِ; validasi leksikal akhir tetap diperlukan]  
 12. **رَ ضِ يَ** ← `رَضِيَ` = telah rela / rida [MSL VERIFIED — TARGET ضِ]  
 13. **حَ فِ ظَ** ← `حَفِظَ` = telah menjaga / menghafal [MSL VERIFIED — TARGET ظِ]  
 14. **يَ قِ ظَ** ← `يَقِظَ` = terjaga / waspada [MSL VERIFIED — TARGET ظِ]  
@@ -52,7 +52,7 @@ Meaningful yang dipertahankan pada P017:
 - `خَصِمَ` — TARGET `صِ`.
 - `حَصِرَ` — TARGET `صِ`.
 - `بَصِرَ` — TARGET `صِ`.
-- `مَرِضَ` — REJECT: P016:18 dan tidak mengandung ضِ (mengandung ضَ).
+- `رَضِعَ` — TARGET `ضِ`; menggantikan `مَرِضَ` yang salah target dan berulang dari P016.
 - `رَضِيَ` — TARGET `ضِ`.
 - `حَفِظَ` — TARGET `ظِ`.
 - `يَقِظَ` — TARGET `ظِ`.
@@ -75,7 +75,7 @@ Dengan optimasi ini target `طِ` tidak lagi hanya diwakili latihan fonetik: `ف
 ## COVERAGE
 Keempat target P017 kini memiliki representasi meaningful:
 - `صِ`: وَصِلَ، خَصِمَ، حَصِرَ، بَصِرَ
-- `ضِ`: مَرِضَ، رَضِيَ
+- `ضِ`: رَضِعَ، رَضِيَ
 - `طِ`: فَطِنَ، عَطِشَ
 - `ظِ`: حَفِظَ، يَقِظَ، نَظِفَ
 
@@ -83,18 +83,18 @@ Slot C18–C24 tetap phonetic-curated untuk memperluas review Kasrah legal dan m
 
 ## GLOBAL MSL — NEW P017
 USED baru P017:
-`وصل`, `خصم`, `حصر`, `بصر`, `رضي`, `حفظ`, `يقظ`, `فطن`, `نظف`, `عطش`.
+`وصل`, `خصم`, `حصر`, `بصر`, `رضع`, `رضي`, `حفظ`, `يقظ`, `فطن`, `نظف`, `عطش`.
 
 Semua tetap tunduk pada audit global zero-repeat sebelum renderer produksi.
 
 ## QA STATUS
-- GROUP_COUNT 24/24 → PASS; lexical gate HOLD
+- GROUP_COUNT 24/24 → PASS; lexical gate PENDING
 - EXACT-2 6/6 → PASS
 - EXACT-3 18/18 → PASS
 - TARGET-only planting → PASS
-- TARGET presence C07–C24 → FAIL (C11 lacks ضِ)
+- TARGET presence C07–C24 → PASS (C11 kini mengandung ضِ)
 - FUTURE KASRAH → 0
-- meaningful EXACT-3 → 10/18 valid candidates; C11 HOLD
+- meaningful EXACT-3 → 11/18 kandidat; C11 diganti, audit leksikal global tetap PENDING
 - phonetic curated → 7/18
 - seluruh TARGET memiliki contoh meaningful → PASS
 - pseudo-word berlabel meaningful → 0
