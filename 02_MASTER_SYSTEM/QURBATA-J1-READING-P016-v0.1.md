@@ -35,7 +35,7 @@ REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P015.
 12. **وَ رِ ثَ** ← `وَرِثَ` = telah mewarisi [MSL VERIFIED | TARGET رِ]  
 13. **كَ رِ هَ** ← `كَرِهَ` = telah membenci / tidak menyukai [MSL VERIFIED | TARGET رِ]  
 14. **لَ زِ مَ** ← `لَزِمَ` = telah menetapi / melekat [MSL VERIFIED | TARGET زِ]  
-15. **يَ بِ سَ** ← `يَبِسَ` = telah menjadi kering [MSL VERIFIED | TARGET سِ]  
+15. **وَ سِ عَ** ← `وَسِعَ` = menjadi luas / mencakup [MSL CANDIDATE | TARGET سِ; audit global pending]  
 16. **حَ سِ بَ** ← `حَسِبَ` = telah mengira [MSL VERIFIED | TARGET سِ]  
 17. **وَ رِ مَ** ← `وَرِمَ` = telah membengkak [MSL CANDIDATE | TARGET رِ; audit global pending]  
 18. **مَ رِ ضَ** ← `مَرِضَ` = telah sakit [MSL VERIFIED | TARGET رِ]  
@@ -73,7 +73,7 @@ Prioritas pemilihan kata:
 
 ## GLOBAL MSL — P016
 USED baru P016:
-`شرب`, `فرح`, `حزن`, `فرغ`, `عرف`, `ورث`, `كره`, `لزم`, `يبس`, `حسب`, `ورم`, `مرض`, `حرص`, `خسر`, `نسي`, `نشط`, `عشق`, `بشر`.
+`شرب`, `فرح`, `حزن`, `فرغ`, `عرف`, `ورث`, `كره`, `لزم`, `وسع`, `حسب`, `ورم`, `مرض`, `حرص`, `خسر`, `نسي`, `نشط`, `عشق`, `بشر`.
 
 Jumlah kandidat meaningful: **18/18**; C10 dan C17 diganti, validasi lintas halaman masih diperlukan.
 
@@ -100,3 +100,8 @@ Belum visual/render/PDF PASS. Tahap berikutnya P017 memperkenalkan `صِ ضِ ط
 - C17 sebelumnya `شَ بِ عَ` tidak memiliki target P016; diganti `وَ رِ مَ` dengan target `رِ`.
 - Kedua pengganti hanya menggunakan Fathah dan Kasrah `رِ` yang legal sampai P016. Bentuk Arab dan keunikan global tetap harus dikonfirmasi sebelum print freeze.
 - Semua klaim lama 18/18 verified harus dipahami sebagai kandidat sampai audit lintas halaman selesai.
+
+
+## CORRECTIVE AUDIT 2026-10-08
+- C15 sebelumnya `يَ بِ سَ` tidak memuat target P016 (`سَ` bukan `سِ`) dan diganti `وَ سِ عَ` dengan target `سِ`.
+- Kandidat pengganti harus tetap melalui audit leksikal, keunikan global, dan rendering sebelum print freeze.
