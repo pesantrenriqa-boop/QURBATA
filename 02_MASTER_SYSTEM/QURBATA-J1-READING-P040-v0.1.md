@@ -30,7 +30,7 @@ Mengukur akurasi huruf, ketepatan harakat, kelancaran merangkai bunyi, dan trans
 17. كُ تِ بَ
 18. وُ جِ دَ
 
-C13–C18 adalah REVIEW-REUSE terkontrol, bukan kata baru.
+C13–C18 dipakai sebagai butir evaluasi membaca. Status REVIEW-REUSE untuk setiap kata harus dibuktikan melalui audit lintas P001–P039; jangan menyatakan semuanya sudah pernah muncul sebelum verifikasi.
 
 ## D — MEMBACA TANPA HARAKAT (C19–C24)
 19. ب ت ث
