@@ -42,7 +42,7 @@ REVIEW_ALLOWED: seluruh Fathah + Kasrah P001–P020.
 16. **ثُ نِ يَ** ← `ثُنِيَ` = telah dilipat / dibengkokkan [TARGET ثُ]
 17. **بُ تِ رَ** ← `بُتِرَ` = telah dipotong / diputus [TARGET بُ]
 18. **بُ دِ ئَ** ← `بُدِئَ` = telah dimulai [TARGET بُ]
-19. **تُ سِ مَ** ← `تُسِمَ` [PHONETIC-CURATED; tanpa klaim arti; decoding saja]
+19. تُ سِ مَ [PHONETIC-CURATED; tanpa klaim arti; decoding saja]
 20. **جُ بِ لَ** ← `جُبِلَ` = telah diciptakan dengan tabiat / dibentuk [TARGET جُ]
 21. **جُ رِ حَ** ← `جُرِحَ` = telah dilukai [TARGET جُ]
 22. **ثُ قِ بَ** ← `ثُقِبَ` = telah dilubangi / ditembus [TARGET ثُ]
