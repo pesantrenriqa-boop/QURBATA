@@ -15,50 +15,50 @@
 
 ## Jilid 1 — 40 halaman
 
-**Sumber pilot:** `MAP-ARB-QJ1-001` (40/40; belum final). **Catatan konflik:** P001–P006 juga mempunyai materi salam/instruksi pada berkas produksi; daftar di bawah adalah **jalur pilot kosakata**, bukan penggantian diam-diam materi tersebut. Rekonsiliasi kedua jalur wajib sebelum freeze.
+**Jalur utama:** Bi'ah Arabiyah instruksi/sapaan kelas Tartil, sesuai berkas P001–P006 dan unit frozen `RIQA-M01-BAHASA-01`. P007–P012 merupakan **usulan urutan** yang masih perlu dicocokkan dengan pemetaan halaman frozen; jangan diklaim final. Jalur kosakata benda pada `MAP-ARB-QJ1-001` tetap tersimpan sebagai pilot terpisah, bukan pengganti jalur ini.
 
-| Halaman | Kosakata / ungkapan / kalimat | Arti / fungsi | Status sumber |
+| Halaman | Ungkapan / instruksi | Arti | Status |
 |---|---|---|---|
-| P001 | كِتَابٌ، قَلَمٌ | buku; pena | PILOT — konflik jalur salam/instruksi; review |
-| P002 | بَابٌ، كُرْسِيٌّ | pintu; kursi | PILOT — konflik jalur salam/instruksi; review |
-| P003 | سَبُّورَةٌ، حَقِيبَةٌ | papan tulis; tas | PILOT — konflik jalur salam/instruksi; review |
-| P004 | مُصْحَفٌ، مَسْجِدٌ | mushaf; masjid | PILOT — konflik jalur salam/instruksi; review |
-| P005 | بَيْتٌ، مَاءٌ | rumah; air | PILOT — konflik jalur salam/instruksi; review |
-| P006 | مُعَلِّمٌ، هٰذَا | guru laki-laki; ini (mudzakkar) | PILOT — konflik jalur salam/instruksi; review |
-| P007 | طَالِبٌ، هٰذَا | pelajar laki-laki; ini | PILOT — belum divalidasi |
-| P008 | وَلَدٌ، بِنْتٌ | anak laki-laki; anak perempuan | PILOT — belum divalidasi |
-| P009 | مُعَلِّمَةٌ، طَالِبَةٌ، مَا، مَنْ | guru perempuan; pelajar perempuan; apa; siapa | PILOT — belum divalidasi |
-| P010 | — | murojaah dan gerbang siklus 1 | PILOT — belum divalidasi |
-| P011 | فَصْلٌ، غُرْفَةٌ | kelas; ruangan | PILOT — belum divalidasi |
-| P012 | مَدْرَسَةٌ، نَافِذَةٌ | sekolah; jendela | PILOT — belum divalidasi |
-| P013 | سَرِيرٌ، جَدِيدٌ | tempat tidur; baru | PILOT — belum divalidasi |
-| P014 | قَدِيمٌ، كَبِيرٌ | lama; besar | PILOT — belum divalidasi |
-| P015 | صَغِيرٌ، جَمِيلٌ | kecil; indah | PILOT — belum divalidasi |
-| P016 | نَظِيفٌ، قَرِيبٌ | bersih; dekat | PILOT — belum divalidasi |
-| P017 | بَعِيدٌ، مَفْتُوحٌ | jauh; terbuka | PILOT — belum divalidasi |
-| P018 | — | murojaah lisan | PILOT — belum divalidasi |
-| P019 | مَكْتَبٌ، فِي، عَلَى | meja; di dalam; di atas | PILOT — belum divalidasi |
-| P020 | — | murojaah dan gerbang siklus 2 | PILOT — belum divalidasi |
-| P021 | قَرَأَ، كَتَبَ | telah membaca; telah menulis | PILOT — belum divalidasi |
-| P022 | جَلَسَ، ذَهَبَ | telah duduk; telah pergi | PILOT — belum divalidasi |
-| P023 | فَتَحَ، أَغْلَقَ | telah membuka; telah menutup | PILOT — belum divalidasi |
-| P024 | دَخَلَ، خَرَجَ | telah masuk; telah keluar | PILOT — belum divalidasi |
-| P025 | شَرِبَ، أَكَلَ | telah minum; telah makan | PILOT — belum divalidasi |
-| P026 | نَامَ، قَامَ | telah tidur; telah berdiri | PILOT — belum divalidasi |
-| P027 | سَمِعَ، نَظَرَ | telah mendengar; telah melihat | PILOT — belum divalidasi |
-| P028 | — | integrasi teks kumulatif | PILOT — belum divalidasi |
-| P029 | — | murojaah benda/orang | PILOT — belum divalidasi |
-| P030 | — | murojaah sifat/lokasi | PILOT — belum divalidasi |
-| P031 | — | murojaah isim–sifat | PILOT — belum divalidasi |
-| P032 | — | murojaah fi'il dan pelaku | PILOT — belum divalidasi |
-| P033 | — | transfer pola lama | PILOT — belum divalidasi |
-| P034 | — | cerita ulang teks | PILOT — belum divalidasi |
-| P035 | — | transfer kumulatif | PILOT — belum divalidasi |
-| P036 | — | murojaah ringan | PILOT — belum divalidasi |
-| P037 | — | remedial dan transfer | PILOT — belum divalidasi |
-| P038 | — | murojaah bertema akhlak | PILOT — belum divalidasi |
-| P039 | — | retensi teks | PILOT — belum divalidasi |
-| P040 | — | evaluasi diagnostik | PILOT — belum divalidasi |
+| P001 | السَّلَامُ عَلَيْكُمْ | Salam | SUMBER HALAMAN J1 |
+| P002 | كَيْفَ حَالُكَ؟ | Bagaimana kabarmu? | SUMBER HALAMAN J1 |
+| P003 | يَا صَدِيقِي | Wahai temanku | SUMBER HALAMAN J1 |
+| P004 | اِسْمَعْ | Dengarkan! | SUMBER HALAMAN J1 |
+| P005 | اُنْظُرْ | Perhatikan! | SUMBER HALAMAN J1 |
+| P006 | كَرِّرْ | Ulangilah! | SUMBER HALAMAN J1 |
+| P007 | اِقْرَأْ | Bacalah! | USULAN URUTAN — cek register |
+| P008 | اُكْتُبْ | Tulislah! | USULAN URUTAN — cek register |
+| P009 | اِفْتَحِ الْكِتَابَ | Bukalah buku! | USULAN URUTAN — cek register |
+| P010 | أَغْلِقِ الْكِتَابَ | Tutuplah buku! | USULAN URUTAN — cek register |
+| P011 | اِجْلِسْ | Duduklah! | USULAN URUTAN — cek register |
+| P012 | قُمْ | Berdirilah! | USULAN URUTAN — cek register |
+| P013 | — | — | USULAN URUTAN — cek register |
+| P014 | — | — | USULAN URUTAN — cek register |
+| P015 | — | — | USULAN URUTAN — cek register |
+| P016 | — | — | USULAN URUTAN — cek register |
+| P017 | — | — | USULAN URUTAN — cek register |
+| P018 | — | — | USULAN URUTAN — cek register |
+| P019 | — | — | USULAN URUTAN — cek register |
+| P020 | — | — | USULAN URUTAN — cek register |
+| P021 | — | — | USULAN URUTAN — cek register |
+| P022 | — | — | USULAN URUTAN — cek register |
+| P023 | — | — | USULAN URUTAN — cek register |
+| P024 | — | — | USULAN URUTAN — cek register |
+| P025 | — | — | USULAN URUTAN — cek register |
+| P026 | — | — | USULAN URUTAN — cek register |
+| P027 | — | — | USULAN URUTAN — cek register |
+| P028 | — | — | USULAN URUTAN — cek register |
+| P029 | — | — | USULAN URUTAN — cek register |
+| P030 | — | — | USULAN URUTAN — cek register |
+| P031 | — | — | USULAN URUTAN — cek register |
+| P032 | — | — | USULAN URUTAN — cek register |
+| P033 | — | — | USULAN URUTAN — cek register |
+| P034 | — | — | USULAN URUTAN — cek register |
+| P035 | — | — | USULAN URUTAN — cek register |
+| P036 | — | — | USULAN URUTAN — cek register |
+| P037 | — | — | USULAN URUTAN — cek register |
+| P038 | — | — | USULAN URUTAN — cek register |
+| P039 | — | — | USULAN URUTAN — cek register |
+| P040 | — | — | USULAN URUTAN — cek register |
 
 ## Jilid 2 — 40 halaman
 
