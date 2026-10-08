@@ -62,7 +62,7 @@
 
 ## Jilid 2 — 40 halaman
 
-**Status: AUDIT INTERNAL TAHAP 3 — DRAF 40/40, BELUM FROZEN.** Tangga kompetensi: bentuk sambung awal/tengah/akhir → tanwin → mad asli → diskriminasi panjang-pendek → transfer. **Tidak ada pengenalan ulang ungkapan utuh Jilid 1**; guru tetap memakai ungkapan lama dalam interaksi sebagai MUROJAAH, bukan slot materi baru. Ungkapan di bawah adalah **kandidat pedagogis**, bukan kutipan ayat Al-Qur'an; klaim keterikatan korpus Qurani menunggu pemetaan ayat/sumber, dan prasyarat per halaman menunggu whitelist Tartil J2. Setiap baris perlu audit bahasa dan korpus sebelum freeze.
+**Status: AUDIT INTERNAL TAHAP 4 — DRAF 40/40, BELUM FROZEN.** Tangga kompetensi: bentuk sambung awal/tengah/akhir → tanwin → mad asli → diskriminasi panjang-pendek → transfer. **Tidak ada pengenalan ulang ungkapan utuh Jilid 1**; guru tetap memakai ungkapan lama dalam interaksi sebagai MUROJAAH, bukan slot materi baru. Ungkapan di bawah adalah **kandidat pedagogis**, bukan kutipan ayat Al-Qur'an; klaim keterikatan korpus Qurani menunggu pemetaan ayat/sumber, dan prasyarat per halaman menunggu whitelist Tartil J2. Setiap baris perlu audit bahasa dan korpus sebelum freeze.
 
 | Halaman | Ungkapan / instruksi baru | Arti / fungsi | Status |
 |---|---|---|---|
@@ -152,6 +152,29 @@ Untuk **setiap** ungkapan J2 P001–P035, bukti minimal wajib memuat: (a) pemeng
 **Pemetaan fungsi ≠ pemetaan korpus.** Misalnya `الْمُصْحَفَ`, `الْفَتْحَتَانِ`, `الْمَدِّ`, dan `مُتَّصِلٌ` memerlukan pemeriksaan terpisah, dan tidak boleh dianggap kata Al-Qur'an hanya karena digunakan dalam kelas Al-Qur'an. Korpus berfungsi sebagai **evidence linguistik**, sementara istilah teknis Tartil boleh tetap digunakan bila sesuai tujuan, tetapi harus diberi label teknis nonkutipan bila memang demikian.
 
 **Pemeriksaan kelayakan:** urutan J2 dalam tabel masih memuat **transfer sebagai materi per halaman**; untuk menghindari pengulangan kompetensi, saat finalisasi slot transfer harus diperlakukan sebagai **aplikasi kontekstual**, bukan hitungan kompetensi baru. Halaman P036–P040 belum memiliki ungkapan baru karena dialokasikan untuk review. **Tidak ada perubahan J1 frozen.**
+
+
+### Bukti tekstual awal dari ayat Al-Qur'an (bukan validasi korpus morfologis penuh)
+
+Di bawah ini **kutipan ayat yang dapat ditelusuri**, bukan klaim bahwa seluruh ungkapan instruksional J2 merupakan kutipan Al-Qur'an. Ayat yang dipakai sebagai jangkar pedagogis harus dibedakan dari kalimat instruksi buatan.
+
+| Target J2 | Akar / unsur yang dibandingkan | Kutipan ayat pendek | Rujukan | Jenis hubungan | Batas klaim |
+|---|---|---|---|---|---|
+| P005/P014–P016 `اِقْرَأِ` | قرأ | `اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ` | Al-‘Alaq 96:1 | Bentuk perintah baca `اقرأ` | Frasa `اقرأ الكلمة` **bukan** kutipan ayat |
+| P003/P009/P017 `الْحَرْفِ` | حرف | `وَمِنَ النَّاسِ مَنْ يَعْبُدُ اللَّهَ عَلَىٰ حَرْفٍ` | Al-Hajj 22:11 | Bentuk kata `حرف` ditemukan; **makna berbeda** | Dalam ayat bermakna keadaan/tepi, **bukan huruf alfabet**; **tidak boleh** digunakan sebagai bukti kesamaan makna pedagogis |
+| P004–P008 `الْكَلِمَةِ` | كلم | `تَعَالَوْا إِلَىٰ كَلِمَةٍ سَوَاءٍ بَيْنَنَا وَبَيْنَكُمْ` | Ali ‘Imran 3:64 | Bentuk nomina `كلمة` dalam Al-Qur'an | Konteks ayat adalah seruan pada prinsip bersama, bukan menunjuk kata cetak |
+| P006/P008 `أَوَّلُ` / `آخِرُ` | أول / آخر | `هُوَ الْأَوَّلُ وَالْآخِرُ` | Al-Hadid 57:3 | Bentuk kata urutan awal/akhir | Ayat menyebut sifat Allah, **bukan** posisi huruf dalam kata |
+| P028 `اِسْمَعِ` | سمع | `وَإِذَا قُرِئَ الْقُرْآنُ فَاسْتَمِعُوا لَهُ وَأَنْصِتُوا` | Al-A‘raf 7:204 | Hubungan keluarga akar mendengar, **bukan bentuk kata yang sama** | `استمعوا` berbeda dari `اسمع`; tidak boleh dianggap padanan morfologis identik |
+
+**Status bukti:** `VERSE-ANCHOR-IDENTIFIED / MORPHOLOGY-NOT-YET-VERIFIED`. Referensi di atas perlu dicocokkan dengan teks mushaf otoritatif dan Quranic Arabic Corpus sebelum status `CORPUS-VERIFIED` diberikan. **Contoh ayat tidak boleh dipindahkan ke latihan decoding J2** bila memuat struktur di luar whitelist Tartil.
+
+### Pemeriksaan konflik semantik dan fungsi
+
+1. `حَرْف` dalam Al-Hajj 22:11 **tidak** menjadi legitimasi semantik bagi istilah huruf alfabet. Untuk konteks pedagogis, tetap klasifikasikan `الْحَرْفِ` sebagai **istilah teknis pengajaran**, sekalipun akar katanya terdapat di Al-Qur'an.
+2. `كَلِمَة` dan `أَوَّل/آخِر` adalah jangkar leksikal, **bukan bukti bahwa kalimat instruksi yang disusun merupakan ayat**.
+3. Bentuk imperatif `اِقْرَأْ` sudah muncul pada J1; setiap pemakaian di J2 adalah **transfer struktur/objek**, tidak dihitung fungsi perintah baru.
+4. P001, P002, P005, P014–P016, P022, P027, P031–P032, dan P034 harus dilabeli **TRANSFER**, bukan kompetensi baru; alokasi ini harus diputuskan ulang bila targetnya setiap slot akuisisi benar-benar fungsi baru.
+5. J2 tetap membutuhkan audit lengkap untuk **semua** lema pada 35 ungkapan, termasuk varian perempuan, pemeriksaan harakat, dan validasi ahli. **HOLD sebelum freeze**.
 
 ## Jilid 3 — 40 halaman
 
