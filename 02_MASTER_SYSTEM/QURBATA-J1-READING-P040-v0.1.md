@@ -26,7 +26,7 @@ Mengukur akurasi huruf, ketepatan harakat, kelancaran merangkai bunyi, dan trans
 13. فَ هِ مَ
 14. رَ كِ بَ
 15. خُ لِ قَ
-16. سُ ئِ لَ
+16. سُ ءِ لَ
 17. كُ تِ بَ
 18. وُ جِ دَ
 
@@ -94,7 +94,7 @@ STATUS: P040 FINAL CHECKPOINT DATA PASS v0.1 — PEDAGOGICAL REVIEW REQUIRED BEF
 - C13 `فَ هِ مَ`: P019 C13.
 - C14 `رَ كِ بَ`: P019 C11.
 - C15 `خُ لِ قَ`: P022 C11.
-- C16 `سُ ئِ لَ`: P023 C15 (kursi hamzah pada sumber teacher-side; unit latihan P040 perlu ditinjau agar sama dengan representasi detached pada P023).
+- C16 `سُ ءِ لَ`: P023 C15; latihan detached menggunakan `ءِ` dan bentuk kata utuh tetap `سُئِلَ`.
 - C17 `كُ تِ بَ`: P026 C07.
 - C18 `وُ جِ دَ`: P027 C12.
 - Verifikasi ini hanya berlaku untuk enam item C13–C18; bukan pengesahan seluruh Jilid 1.
