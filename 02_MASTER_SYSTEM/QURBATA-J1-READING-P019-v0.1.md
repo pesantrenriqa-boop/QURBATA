@@ -37,12 +37,12 @@ REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P018.
 13. **فَ هِ مَ** ← `فَهِمَ` = telah memahami [MSL VERIFIED — TARGET هِ]
 14. **شَ هِ دَ** ← `شَهِدَ` = telah menyaksikan [MSL VERIFIED — TARGET هِ]
 15. **أَ نِ سَ** ← `أَنِسَ` = merasa akrab / tenteram [MSL VERIFIED — TARGET نِ]
-16. **وَ جِ لَ** ← `وَجِلَ` = merasa takut / gentar [MSL VERIFIED — TARGET لِ]
-17. **يَ ئِ سَ** ← `يَئِسَ` = telah berputus asa [MSL VERIFIED — TARGET ءِ]
-18. **سَ ئِ مَ** ← `سَئِمَ` = telah bosan [MSL VERIFIED — TARGET ءِ/مِ]
-19. **بَ ئِ سَ** ← `بَئِسَ` = buruk / alangkah buruk [MSL VERIFIED — TARGET ءِ]
+16. **وَ لِ يَ** ← `وَلِيَ` = telah dekat / menguasai [MSL CANDIDATE — TARGET لِ]
+17. **يَ ءِ سَ** ← `يَئِسَ` = telah berputus asa [MSL VERIFIED — TARGET ءِ]
+18. **سَ ءِ مَ** ← `سَئِمَ` = telah bosan [MSL VERIFIED — TARGET ءِ/مِ]
+19. **بَ ءِ سَ** ← `بَئِسَ` = buruk / alangkah buruk [MSL VERIFIED — TARGET ءِ]
 20. **إِ ذِ نَ** [LEXICAL HOLD — bentuk إِذِنَ dan klaim 'telah mengizinkan' perlu verifikasi ahli; jangan ajarkan makna sebelum dikonfirmasi]
-21. **وَ لِ يَ** ← `وَلِيَ` = telah dekat / menguasai [MSL VERIFIED — TARGET لِ]
+21. نِ خَ فَ [PHONETIC-CURATED — TARGET نِ; no meaning claim]
 22. **حَ يِ يَ** ← `حَيِيَ` = telah merasa malu [MSL VERIFIED — TARGET يِ]
 23. **قَ وِ يَ** ← `قَوِيَ` = telah menjadi kuat [MSL VERIFIED — TARGET وِ]
 24. **رَ وِ يَ** ← `رَوِيَ` = telah hilang haus / puas minum [MSL VERIFIED — TARGET وِ]
@@ -58,9 +58,9 @@ REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P018.
 14. شَ هِ دَ
 15. أَ نِ سَ
 16. وَ جِ لَ
-17. يَ ئِ سَ
-18. سَ ئِ مَ
-19. بَ ئِ سَ
+17. يَ ءِ سَ
+18. سَ ءِ مَ
+19. بَ ءِ سَ
 20. إِ ذِ نَ [LEXICAL HOLD]
 21. وَ لِ يَ
 22. حَ يِ يَ
@@ -78,7 +78,7 @@ REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P018.
 
 ## TARGET COVERAGE MEANINGFUL
 - `كِ`: رَكِبَ، سَكِنَ
-- `لِ`: عَلِمَ، حَمِلَ، وَجِلَ، وَلِيَ
+- `لِ`: عَلِمَ، حَمِلَ، وَلِيَ
 - `مِ`: عَمِلَ، حَمِدَ، حَمِلَ، سَئِمَ
 - `نِ`: سَكِنَ، أَنِسَ؛ إِ ذِ نَ [LEXICAL HOLD]
 - `هِ`: فَهِمَ، شَهِدَ
@@ -89,14 +89,14 @@ REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P018.
 
 ## GLOBAL MSL — NEW P019
 Kandidat USED baru:
-`عمل`, `علم`, `حمد`, `حمل`, `ركب`, `سكن`, `فهم`, `شهد`, `أنس`, `وجل`, `يئس`, `سئم`, `بئس`, `إذن`, `ولي`, `حيي`, `قوي`, `روي`.
+`عمل`, `علم`, `حمد`, `حمل`, `ركب`, `سكن`, `فهم`, `شهد`, `أنس`, `يئس`, `سئم`, `بئس`, `إذن`, `ولي`, `حيي`, `قوي`, `روي`.
 
 ## QA STATUS
 - GROUP_COUNT 24/24 → PASS
 - EXACT-2 6/6 → PASS
 - EXACT-3 18/18 → PASS
-- meaningful EXACT-3 → **17/18 confirmed by internal draft; 1/18 lexical HOLD; external expert verification pending**
-- phonetic/lexical-hold EXACT-3 → **1/18**
+- meaningful EXACT-3 → **16/18 lexical candidates; C20 HOLD; C21 PHONETIC**
+- phonetic/lexical-hold EXACT-3 → **2/18**
 - seluruh 9 TARGET memiliki contoh meaningful → PENDING (إِ requires verified example)
 - future Dhammah → 0
 - pseudo-word berlabel meaningful → 0
@@ -105,3 +105,6 @@ Kandidat USED baru:
 
 ## PRODUCTION NOTE
 Klaim **18/18 meaningful** ditarik sementara karena C20 masih LEXICAL HOLD. Sebelum renderer final, lakukan audit registry global P001–P018 untuk memastikan seluruh 18 source word benar-benar belum pernah USED. Jika ditemukan duplicate, ganti dengan kandidat legal lain; jangan menurunkan gate zero-repeat.
+
+## QA CORRECTION 2026-10-08
+C16 `وَ جِ لَ` had no P019 target. C16 now uses C21's prior target-valid `وَ لِ يَ`; C21 is phonetic-only. C17–C19 use standalone hamza `ءِ` in detached student exercises, while connected teacher words retain seated hamza orthography. Lexical and global reuse audit pending.
