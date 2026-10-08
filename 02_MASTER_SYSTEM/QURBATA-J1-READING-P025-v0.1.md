@@ -48,7 +48,7 @@ REVIEW_ALLOWED: P001–P024.
 
 21. **قُ تِ لَ** ← `قُتِلَ` = telah dibunuh [MSL — TARGET قُ]
 22. **قُ بِ لَ** ← `قُبِلَ` = telah diterima [MSL — TARGET قُ]
-23. **قُ رِ ئَ** ← `قُرِئَ` = telah dibaca [MSL — TARGET قُ]
+23. **قُ رِ ءَ** ← `قُرِئَ` = telah dibaca [MSL — TARGET قُ; unit ءَ detached; bentuk utuh hamzah berkursi]
 24. **قُ طِ عَ** ← `قُطِعَ` = telah dipotong / diputus [MSL — TARGET قُ]
 
 ## MEANINGFUL AUDIT
@@ -104,3 +104,6 @@ Authority forms:
 
 ## STATUS
 **P025 DATA PASS v0.1 — 18/18 EXACT-3 MEANINGFUL, subject to global authority-form audit.**
+
+## HAMZAH DETACHED QA — 2026-10-08
+Unit hamzah pada latihan awal ditulis mandiri (`ءَ` atau `ءِ`) sesuai harakat bunyinya. Ejaan kata utuh tetap mempertahankan kursi hamzah yang baku (`ئ`). Normalisasi ini berlaku pada unit latihan, bukan perubahan ejaan leksikal atau makna.
