@@ -62,7 +62,7 @@
 
 ## Jilid 2 — 40 halaman
 
-**Status: AUDIT INTERNAL TAHAP 4 — DRAF 40/40, BELUM FROZEN.** Tangga kompetensi: bentuk sambung awal/tengah/akhir → tanwin → mad asli → diskriminasi panjang-pendek → transfer. **Tidak ada pengenalan ulang ungkapan utuh Jilid 1**; guru tetap memakai ungkapan lama dalam interaksi sebagai MUROJAAH, bukan slot materi baru. Ungkapan di bawah adalah **kandidat pedagogis**, bukan kutipan ayat Al-Qur'an; klaim keterikatan korpus Qurani menunggu pemetaan ayat/sumber, dan prasyarat per halaman menunggu whitelist Tartil J2. Setiap baris perlu audit bahasa dan korpus sebelum freeze.
+**Status: AUDIT INTERNAL TAHAP 5 — DRAF 40/40, BELUM FROZEN.** Tangga kompetensi: bentuk sambung awal/tengah/akhir → tanwin → mad asli → diskriminasi panjang-pendek → transfer. **Tidak ada pengenalan ulang ungkapan utuh Jilid 1**; guru tetap memakai ungkapan lama dalam interaksi sebagai MUROJAAH, bukan slot materi baru. Ungkapan di bawah adalah **kandidat pedagogis**, bukan kutipan ayat Al-Qur'an; klaim keterikatan korpus Qurani menunggu pemetaan ayat/sumber, dan prasyarat per halaman menunggu whitelist Tartil J2. Setiap baris perlu audit bahasa dan korpus sebelum freeze.
 
 | Halaman | Ungkapan / instruksi baru | Arti / fungsi | Status |
 |---|---|---|---|
@@ -175,6 +175,56 @@ Di bawah ini **kutipan ayat yang dapat ditelusuri**, bukan klaim bahwa seluruh u
 3. Bentuk imperatif `اِقْرَأْ` sudah muncul pada J1; setiap pemakaian di J2 adalah **transfer struktur/objek**, tidak dihitung fungsi perintah baru.
 4. P001, P002, P005, P014–P016, P022, P027, P031–P032, dan P034 harus dilabeli **TRANSFER**, bukan kompetensi baru; alokasi ini harus diputuskan ulang bila targetnya setiap slot akuisisi benar-benar fungsi baru.
 5. J2 tetap membutuhkan audit lengkap untuk **semua** lema pada 35 ungkapan, termasuk varian perempuan, pemeriksaan harakat, dan validasi ahli. **HOLD sebelum freeze**.
+
+
+### Register fungsi dan prasyarat per halaman — tahap 5
+
+Kode `TR` berarti transfer fungsi terdahulu, `NEW` kandidat fungsi baru, `REV` penguatan. Ini **bukan** verifikasi lema Qurani. Semua ungkapan tetap LISAN-GURU.
+
+| Halaman | ID fungsi | Kategori | Gerbang kompetensi | Bukti korpus |
+|---|---|---|---|---|
+| P001 | TR-J2-001 | Transfer, 0 baru | J1 huruf dan harakat | Belum diverifikasi |
+| P002 | TR-J2-002 | Transfer, 0 baru | J1 huruf dan harakat | Belum diverifikasi |
+| P003 | NEW-J2-003 | Kandidat baru | J1 huruf dan harakat | Belum diverifikasi |
+| P004 | NEW-J2-004 | Kandidat baru | J1 huruf dan harakat | Belum diverifikasi |
+| P005 | TR-J2-005 | Transfer, 0 baru | J1 huruf dan harakat | Belum diverifikasi |
+| P006 | NEW-J2-006 | Kandidat baru | J2 bentuk sambung | Belum diverifikasi |
+| P007 | NEW-J2-007 | Kandidat baru | J2 bentuk sambung | Belum diverifikasi |
+| P008 | NEW-J2-008 | Kandidat baru | J2 bentuk sambung | Belum diverifikasi |
+| P009 | NEW-J2-009 | Kandidat baru | J2 bentuk sambung | Belum diverifikasi |
+| P010 | NEW-J2-010 | Kandidat baru | J2 bentuk sambung | Belum diverifikasi |
+| P011 | NEW-J2-011 | Kandidat baru | J2 bentuk sambung | Belum diverifikasi |
+| P012 | NEW-J2-012 | Kandidat baru | J2 bentuk sambung | Belum diverifikasi |
+| P013 | NEW-J2-013 | Kandidat baru | J2 bentuk sambung | Belum diverifikasi |
+| P014 | TR-J2-014 | Transfer, 0 baru | J2 bentuk sambung | Belum diverifikasi |
+| P015 | TR-J2-015 | Transfer, 0 baru | J2 bentuk sambung | Belum diverifikasi |
+| P016 | TR-J2-016 | Transfer, 0 baru | J2 bentuk sambung | Belum diverifikasi |
+| P017 | TR-J2-017 | Transfer, 0 baru | J2 bentuk sambung | Belum diverifikasi |
+| P018 | TR-J2-018 | Transfer, 0 baru | J2 bentuk sambung | Belum diverifikasi |
+| P019 | NEW-J2-019 | Kandidat baru | J2 tanwin | Belum diverifikasi |
+| P020 | NEW-J2-020 | Kandidat baru | J2 tanwin | Belum diverifikasi |
+| P021 | NEW-J2-021 | Kandidat baru | J2 tanwin | Belum diverifikasi |
+| P022 | TR-J2-022 | Transfer, 0 baru | J2 tanwin | Belum diverifikasi |
+| P023 | NEW-J2-023 | Kandidat baru | J2 mad asli | Belum diverifikasi |
+| P024 | NEW-J2-024 | Kandidat baru | J2 mad asli | Belum diverifikasi |
+| P025 | NEW-J2-025 | Kandidat baru | J2 mad asli | Belum diverifikasi |
+| P026 | NEW-J2-026 | Kandidat baru | J2 mad asli | Belum diverifikasi |
+| P027 | TR-J2-027 | Transfer, 0 baru | J2 mad asli | Belum diverifikasi |
+| P028 | NEW-J2-028 | Kandidat baru | J2 panjang–pendek | Belum diverifikasi |
+| P029 | NEW-J2-029 | Kandidat baru | J2 panjang–pendek | Belum diverifikasi |
+| P030 | NEW-J2-030 | Kandidat baru | J2 panjang–pendek | Belum diverifikasi |
+| P031 | TR-J2-031 | Transfer, 0 baru | J2 panjang–pendek | Belum diverifikasi |
+| P032 | TR-J2-032 | Transfer, 0 baru | J2 transfer bacaan | Belum diverifikasi |
+| P033 | NEW-J2-033 | Kandidat baru | J2 transfer bacaan | Belum diverifikasi |
+| P034 | TR-J2-034 | Transfer, 0 baru | J2 transfer bacaan | Belum diverifikasi |
+| P035 | NEW-J2-035 | Kandidat baru | J2 transfer bacaan | Belum diverifikasi |
+| P036 | REV-J2-036 | Murojaah, 0 baru | J2 transfer bacaan | Tidak ada lema baru |
+| P037 | REV-J2-037 | Murojaah, 0 baru | J2 transfer bacaan | Tidak ada lema baru |
+| P038 | REV-J2-038 | Murojaah, 0 baru | J2 transfer bacaan | Tidak ada lema baru |
+| P039 | REV-J2-039 | Murojaah, 0 baru | J2 transfer bacaan | Tidak ada lema baru |
+| P040 | REV-J2-040 | Murojaah, 0 baru | J2 transfer bacaan | Tidak ada lema baru |
+
+**Rekap:** 22 slot kandidat fungsi baru, 13 slot transfer, 5 slot murojaah/evaluasi. Ini klasifikasi fungsi awal, bukan jumlah lema baru, bukan sertifikasi sumber Qurani. **Status HOLD** sampai pemetaan korpus per lema dan pemeriksaan ahli.
 
 ## Jilid 3 — 40 halaman
 
