@@ -498,48 +498,53 @@ P036–P040 kini berisi **ungkapan Arab yang benar-benar dapat dipraktikkan**, b
 
 ## Jilid 8 — 40 halaman
 
-| Halaman | Kosakata / ungkapan / kalimat | Arti | Status sumber |
+**Status: DRAF 40/40 — BELUM FROZEN.** Tangga: J1 instruksi dasar → J2 sambung/tanwin/mad asli → J3 interaksi/sukun/tasydid → J4 nun/mim sakinah dan alif-lam → J5 mad lanjutan → J6 tafkhim/tarqiq/waqaf/ibtida → J7 integrasi/mutasyabihat lafziyyah/umpan balik → **J8 tashih menyeluruh, membaca mandiri, perbaikan berbasis bukti, dan setoran akhir kepada guru**. Lulus J8 tidak otomatis berarti mendapat sanad/syahadah; keputusan memerlukan tashih dan otorisasi guru sesuai aturan terpisah. Semua kalimat adalah ungkapan kelas lisan, **bukan kutipan ayat**.
+
+| Halaman | Ungkapan Arab | Arti / fungsi | Status |
 |---|---|---|---|
-| P001 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P002 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P003 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P004 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P005 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P006 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P007 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P008 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P009 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P010 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P011 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P012 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P013 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P014 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P015 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P016 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P017 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P018 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P019 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P020 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P021 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P022 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P023 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P024 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P025 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P026 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P027 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P028 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P029 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P030 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P031 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P032 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P033 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P034 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P035 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P036 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P037 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P038 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P039 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P040 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
+| P001 | هَلْ أَنْتَ مُسْتَعِدٌّ لِاخْتِبَارِ التَّصْحِيحِ؟ | Apakah kamu siap mengikuti ujian tashih? | KANDIDAT / TRANSFER — audit fungsi |
+| P002 | سَأَقْرَأُ الْمَقْطَعَ دُونَ تَلْقِينٍ | Saya akan membaca bagian ini tanpa dituntun | KANDIDAT / TRANSFER — audit fungsi |
+| P003 | حَدِّدْ مَوْضِعَ الْبِدَايَةِ وَالنِّهَايَةِ | Tentukan bagian awal dan akhir bacaan | KANDIDAT / TRANSFER — audit fungsi |
+| P004 | اِقْرَأْ بِتَرْتِيلٍ وَطُمَأْنِينَةٍ | Bacalah dengan tartil dan tenang | KANDIDAT / TRANSFER — audit fungsi |
+| P005 | حَافِظْ عَلَى صِحَّةِ الْمَخَارِجِ | Jagalah ketepatan makhraj | KANDIDAT / TRANSFER — audit fungsi |
+| P006 | رَاعِ صِفَاتِ الْحُرُوفِ | Perhatikan sifat-sifat huruf | KANDIDAT / TRANSFER — audit fungsi |
+| P007 | لَا تَتَجَاوَزْ خَطَأً دُونَ تَصْحِيحٍ | Jangan melewati kesalahan tanpa memperbaikinya | KANDIDAT / TRANSFER — audit fungsi |
+| P008 | هَلْ تَسْتَطِيعُ تَصْحِيحَ نَفْسِكَ؟ | Bisakah kamu mengoreksi diri sendiri? | KANDIDAT / TRANSFER — audit fungsi |
+| P009 | سَأُعِيدُ الْمَوْضِعَ الَّذِي أَخْطَأْتُ فِيهِ | Saya akan mengulang bagian yang salah | KANDIDAT / TRANSFER — audit fungsi |
+| P010 | هَلْ أَصْبَحَ النُّطْقُ أَدَقَّ؟ | Apakah pengucapannya sudah lebih tepat? | KANDIDAT / TRANSFER — audit fungsi |
+| P011 | اِقْرَأْ مَقْطَعًا لَمْ تَتَدَرَّبْ عَلَيْهِ | Bacalah bagian yang belum kamu latih | KANDIDAT / TRANSFER — audit fungsi |
+| P012 | هَلْ تَعَرَّفْتَ عَلَى الْحُكْمِ دُونَ مُسَاعَدَةٍ؟ | Apakah kamu mengenali hukumnya tanpa bantuan? | KANDIDAT / TRANSFER — audit fungsi |
+| P013 | بَيِّنْ كَيْفَ طَبَّقْتَ الْحُكْمَ | Jelaskan bagaimana kamu menerapkan hukumnya | KANDIDAT / TRANSFER — audit fungsi |
+| P014 | مَا سَبَبُ اخْتِيَارِكَ لِهٰذَا الْوَقْفِ؟ | Apa alasanmu memilih tempat waqaf ini? | KANDIDAT / TRANSFER — audit fungsi |
+| P015 | اِسْتَأْنِفِ الْقِرَاءَةَ مِنْ مَوْضِعٍ صَحِيحٍ | Lanjutkan kembali bacaan dari tempat yang tepat | KANDIDAT / TRANSFER — audit fungsi |
+| P016 | هَلْ حَافَظْتَ عَلَى الْمَعْنَى عِنْدَ الْوَقْفِ؟ | Apakah makna terjaga ketika berhenti? | KANDIDAT / TRANSFER — audit fungsi |
+| P017 | اِقْرَأْ مَعَ ضَبْطِ الْمُدُودِ وَالْغُنَنِ | Bacalah dengan ketepatan mad dan ghunnah | KANDIDAT / TRANSFER — audit fungsi |
+| P018 | هَلْ ظَهَرَ خَلَلٌ فِي التَّفْخِيمِ أَوِ التَّرْقِيقِ؟ | Adakah kekeliruan pada tebal atau tipis bunyi? | KANDIDAT / TRANSFER — audit fungsi |
+| P019 | رَاجِعْ مَوَاضِعَ الْخَلَلِ وَحْدَكَ | Tinjau bagian yang keliru secara mandiri | KANDIDAT / TRANSFER — audit fungsi |
+| P020 | اِطْلُبِ التَّوْجِيهَ عِنْدَ الْحَاجَةِ | Mintalah arahan bila diperlukan | KANDIDAT / TRANSFER — audit fungsi |
+| P021 | اِسْتَمِعْ إِلَى تَسْجِيلِ قِرَاءَتِكَ | Dengarkan rekaman bacaanmu | KANDIDAT / TRANSFER — audit fungsi |
+| P022 | مَا الْخَطَأُ الَّذِي تَكَرَّرَ؟ | Kesalahan apa yang berulang? | KANDIDAT / TRANSFER — audit fungsi |
+| P023 | صَنِّفِ الْأَخْطَاءَ حَسَبَ نَوْعِهَا | Kelompokkan kesalahan menurut jenisnya | KANDIDAT / TRANSFER — audit fungsi |
+| P024 | اِخْتَرْ تَمْرِينًا لِعِلَاجِ الْخَطَإِ | Pilih latihan untuk memperbaiki kesalahan | KANDIDAT / TRANSFER — audit fungsi |
+| P025 | أَعِدِ التَّسْجِيلَ بَعْدَ التَّدْرِيبِ | Rekam kembali setelah berlatih | KANDIDAT / TRANSFER — audit fungsi |
+| P026 | قَارِنْ بَيْنَ التَّسْجِيلَيْنِ | Bandingkan kedua rekaman | KANDIDAT / TRANSFER — audit fungsi |
+| P027 | هَلْ انْخَفَضَ عَدَدُ الْأَخْطَاءِ؟ | Apakah jumlah kesalahan berkurang? | KANDIDAT / TRANSFER — audit fungsi |
+| P028 | سَأُوَاظِبُ عَلَى التَّدْرِيبِ الْيَوْمِيِّ | Saya akan rutin berlatih setiap hari | KANDIDAT / TRANSFER — audit fungsi |
+| P029 | مَا الْهَدَفُ الَّذِي حَقَّقْتَهُ؟ | Target apa yang telah kamu capai? | KANDIDAT / TRANSFER — audit fungsi |
+| P030 | مَا الْهَدَفُ الَّذِي لَمْ تَحْقِقْهُ بَعْدُ؟ | Target apa yang belum kamu capai? | KANDIDAT / TRANSFER — audit fungsi |
+| P031 | اِعْرِضْ قِرَاءَتَكَ عَلَى الْمُعَلِّمِ | Perdengarkan bacaanmu kepada guru | KANDIDAT / TRANSFER — audit fungsi |
+| P032 | اِسْتَمِعْ إِلَى مُلَاحَظَاتِ الْمُعَلِّمِ | Dengarkan catatan guru | KANDIDAT / TRANSFER — audit fungsi |
+| P033 | هَلْ أَتْمَمْتَ مُتَطَلَّبَاتِ التَّصْحِيحِ؟ | Apakah persyaratan tashih sudah kamu selesaikan? | KANDIDAT / TRANSFER — audit fungsi |
+| P034 | مَا الَّذِي يَلْزَمُكَ قَبْلَ الِاعْتِمَادِ؟ | Apa yang masih perlu kamu lakukan sebelum pengesahan? | KANDIDAT / TRANSFER — audit fungsi |
+| P035 | سَأُوَاصِلُ التَّعَلُّمَ وَالْمُرَاجَعَةَ | Saya akan terus belajar dan mengulang | KANDIDAT / TRANSFER — audit fungsi |
+| P036 | هَلْ تَسْتَطِيعُ تَصْحِيحَ نَفْسِكَ؟ | Ulangi kemampuan koreksi mandiri | MUROJAAH — 0 baru |
+| P037 | اِقْرَأْ مَقْطَعًا لَمْ تَتَدَرَّبْ عَلَيْهِ | Ulangi membaca bagian baru | MUROJAAH — 0 baru |
+| P038 | اِسْتَمِعْ إِلَى تَسْجِيلِ قِرَاءَتِكَ | Ulangi evaluasi rekaman | MUROJAAH — 0 baru |
+| P039 | اِعْرِضْ قِرَاءَتَكَ عَلَى الْمُعَلِّمِ | Ulangi setoran kepada guru | MUROJAAH — 0 baru |
+| P040 | سَأُوَاصِلُ التَّعَلُّمَ وَالْمُرَاجَعَةَ | Komitmen tindak lanjut setelah evaluasi | MUROJAAH — 0 baru |
+
+**Audit awal:** P001–P035 tidak identik secara teks Arab ternormalisasi dengan panel J1–J7. P036–P040 mengulang materi J8 untuk evaluasi dan tidak dihitung baru. **Belum memenuhi gate final:** kesamaan fungsi/keluarga lema, bukti korpus per lema, pemeriksaan bahasa Arab dan bentuk gender, kelayakan usia, kesesuaian halaman Tartil, dan validasi ahli. Jangan beri status FROZEN/CORPUS-VERIFIED sebelum diperiksa.
+
 
 ## Aturan pengisian
 1. Untuk setiap slot, periksa dulu materi yang telah ada; jangan membuat duplikat.
