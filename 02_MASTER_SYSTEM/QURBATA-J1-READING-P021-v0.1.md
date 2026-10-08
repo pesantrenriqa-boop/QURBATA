@@ -1,6 +1,6 @@
 # QURBATA JILID 1 — MASTER LATIHAN MEMBACA P021
 
-Status: **CURATED v0.2 — TRANSITION DHAMMAH / 18-OF-18 MEANINGFUL**
+Status: **CURATED v0.3 — TRANSITION DHAMMAH / 17 LEXICAL + 1 PHONETIC**
 
 Authority: `QURBATA-J1-TARTIL-PAGE-REGISTER-FROZEN-v1.0.md` v1.1.  
 TYPE: TRANSITION  
@@ -29,7 +29,7 @@ REVIEW_ALLOWED: seluruh Fathah + Kasrah P001–P020.
 5. تُ جُ
 6. ثُ جُ
 
-## C07–C24 — EXACT-3 MEANINGFUL
+## C07–C24 — EXACT-3 LEXICAL-FIRST
 7. **تُ بِ عَ** ← `تُبِعَ` = telah diikuti [TARGET تُ]
 8. **تُ رِ كَ** ← `تُرِكَ` = telah ditinggalkan [TARGET تُ]
 9. **تُ لِ يَ** ← `تُلِيَ` = telah dibacakan [TARGET تُ]
@@ -50,7 +50,7 @@ REVIEW_ALLOWED: seluruh Fathah + Kasrah P001–P020.
 24. **بُ سِ طَ** ← `بُسِطَ` = telah dibentangkan / dilapangkan [TARGET بُ]
 
 ## MEANINGFUL AUDIT — v0.2
-Semua C07–C24 memiliki sumber kata Arab, sehingga:
+C07–C24 terdiri dari kandidat kata Arab dan satu latihan fonetik:
 - meaningful EXACT-3 = **17/18 lexical candidates; C19 PHONETIC-CURATED**
 - phonetic-curated = **1/18**
 
@@ -96,7 +96,7 @@ Global registry audit P001–P020 tetap wajib sebelum renderer FINAL.
 - C07–C24 target presence → PASS
 - future Dhammah → 0
 - meaningful EXACT-3 → **17/18 lexical candidates; C19 phonetic-curated**
-- phonetic curated → **0/18**
+- phonetic curated → **1/18**
 - all four targets meaningful-covered → PASS
 - pseudo-word berlabel meaningful → 0
 - detached-letter → ACTIVE
@@ -107,3 +107,6 @@ Global registry audit P001–P020 tetap wajib sebelum renderer FINAL.
 **P021 DATA PASS v0.2 — 17/18 candidate; C19 PHONETIC-CURATED; global audit and renderer still pending.**
 
 Gate berikutnya sebelum visual FINAL: audit global source-word registry dan renderer detached-letter.
+
+## QA RECONCILIATION 2026-10-08
+- Header, jumlah dan QA C19 diselaraskan: 17 lexical candidates + 1 phonetic-curated, bukan 18/18 meaningful.
