@@ -62,45 +62,45 @@
 
 ## Jilid 2 — 40 halaman
 
-**Status: AUDIT INTERNAL TAHAP 1 — DRAF 40/40, BELUM FROZEN.** Tangga kompetensi: bentuk sambung awal/tengah/akhir → tanwin → mad asli → diskriminasi panjang-pendek → transfer. **Tidak ada pengenalan ulang ungkapan utuh Jilid 1**; guru tetap memakai ungkapan lama dalam interaksi sebagai MUROJAAH, bukan slot materi baru. Ungkapan di bawah adalah **kandidat pedagogis**, bukan kutipan ayat Al-Qur'an; klaim keterikatan korpus Qurani menunggu pemetaan ayat/sumber, dan prasyarat per halaman menunggu whitelist Tartil J2. Setiap baris perlu audit bahasa dan korpus sebelum freeze.
+**Status: AUDIT INTERNAL TAHAP 2 — DRAF 40/40, BELUM FROZEN.** Tangga kompetensi: bentuk sambung awal/tengah/akhir → tanwin → mad asli → diskriminasi panjang-pendek → transfer. **Tidak ada pengenalan ulang ungkapan utuh Jilid 1**; guru tetap memakai ungkapan lama dalam interaksi sebagai MUROJAAH, bukan slot materi baru. Ungkapan di bawah adalah **kandidat pedagogis**, bukan kutipan ayat Al-Qur'an; klaim keterikatan korpus Qurani menunggu pemetaan ayat/sumber, dan prasyarat per halaman menunggu whitelist Tartil J2. Setiap baris perlu audit bahasa dan korpus sebelum freeze.
 
 | Halaman | Ungkapan / instruksi baru | Arti / fungsi | Status |
 |---|---|---|---|
-| P001 | اِفْتَحِ الْمُصْحَفَ | Bukalah mushaf | KANDIDAT — cek prasyarat dan korpus |
-| P002 | أَغْلِقِ الْمُصْحَفَ | Tutuplah mushaf | KANDIDAT — cek prasyarat dan korpus |
-| P003 | أَشِرْ إِلَى الْحَرْفِ | Tunjuklah huruf itu | KANDIDAT — cek prasyarat dan korpus |
-| P004 | أَيْنَ الْكَلِمَةُ؟ | Di mana katanya? | KANDIDAT — cek prasyarat dan korpus |
-| P005 | اِقْرَأِ الْكَلِمَةَ | Bacalah katanya | KANDIDAT — cek prasyarat dan korpus |
-| P006 | أَيْنَ أَوَّلُ الْكَلِمَةِ؟ | Di mana awal kata? | KANDIDAT — cek prasyarat dan korpus |
-| P007 | أَيْنَ وَسَطُ الْكَلِمَةِ؟ | Di mana tengah kata? | KANDIDAT — cek prasyarat dan korpus |
-| P008 | أَيْنَ آخِرُ الْكَلِمَةِ؟ | Di mana akhir kata? | KANDIDAT — cek prasyarat dan korpus |
-| P009 | هَلِ الْحَرْفُ مُتَّصِلٌ؟ | Apakah hurufnya bersambung? | KANDIDAT — cek prasyarat dan korpus |
-| P010 | هَلِ الْحَرْفُ مُنْفَصِلٌ؟ | Apakah hurufnya terpisah? | KANDIDAT — cek prasyarat dan korpus |
-| P011 | اِبْحَثْ عَنِ الْحَرْفِ | Carilah hurufnya | KANDIDAT — cek prasyarat dan korpus |
-| P012 | ضَعْ إِصْبَعَكَ عَلَى الْكَلِمَةِ | Letakkan jarimu pada kata itu | KANDIDAT — cek prasyarat dan korpus |
-| P013 | تَابِعْ بِإِصْبَعِكَ | Ikuti dengan jarimu | KANDIDAT — cek prasyarat dan korpus |
-| P014 | اِقْرَأْ مِنَ الْيَمِينِ | Bacalah dari kanan | KANDIDAT — cek prasyarat dan korpus |
-| P015 | اِقْرَأْ حَرْفًا حَرْفًا | Bacalah huruf demi huruf | KANDIDAT — cek prasyarat dan korpus |
-| P016 | اِقْرَأِ الْكَلِمَةَ كَامِلَةً | Bacalah kata itu secara utuh | KANDIDAT — cek prasyarat dan korpus |
-| P017 | مَا الْحَرْفُ الْأَوَّلُ؟ | Apa huruf pertama? | KANDIDAT — cek prasyarat dan korpus |
-| P018 | مَا الْحَرْفُ الْأَخِيرُ؟ | Apa huruf terakhir? | KANDIDAT — cek prasyarat dan korpus |
-| P019 | أَيْنَ الْفَتْحَتَانِ؟ | Di mana fathatain? | KANDIDAT — cek prasyarat dan korpus |
-| P020 | أَيْنَ الْكَسْرَتَانِ؟ | Di mana kasratain? | KANDIDAT — cek prasyarat dan korpus |
-| P021 | أَيْنَ الضَّمَّتَانِ؟ | Di mana dhammatain? | KANDIDAT — cek prasyarat dan korpus |
-| P022 | اِقْرَأْ بِالتَّنْوِينِ | Bacalah dengan tanwin | KANDIDAT — cek prasyarat dan korpus |
-| P023 | مَا الْمَدُّ؟ | Apa itu mad? | KANDIDAT — cek prasyarat dan korpus |
-| P024 | أَيْنَ حَرْفُ الْمَدِّ؟ | Di mana huruf mad? | KANDIDAT — cek prasyarat dan korpus |
-| P025 | هٰذَا مَدٌّ طَبِيعِيٌّ | Ini mad asli | KANDIDAT — cek prasyarat dan korpus |
-| P026 | مُدَّ الصَّوْتَ | Panjangkan suara | KANDIDAT — cek prasyarat dan korpus |
-| P027 | لَا تَمُدَّ الصَّوْتَ | Jangan panjangkan suara | KANDIDAT — cek prasyarat dan korpus |
-| P028 | اِسْمَعِ الْفَرْقَ | Dengarkan perbedaannya | KANDIDAT — cek prasyarat dan korpus |
-| P029 | مَا الصَّوْتُ الطَّوِيلُ؟ | Mana bunyi panjang? | KANDIDAT — cek prasyarat dan korpus |
-| P030 | مَا الصَّوْتُ الْقَصِيرُ؟ | Mana bunyi pendek? | KANDIDAT — cek prasyarat dan korpus |
-| P031 | مَيِّزْ بَيْنَ الصَّوْتَيْنِ | Bedakan kedua bunyi | KANDIDAT — cek prasyarat dan korpus |
-| P032 | اِخْتَرِ الْقِرَاءَةَ الصَّحِيحَةَ | Pilih bacaan yang benar | KANDIDAT — cek prasyarat dan korpus |
-| P033 | صَحِّحِ الْقِرَاءَةَ | Perbaiki bacaan | KANDIDAT — cek prasyarat dan korpus |
-| P034 | أَيْنَ الْخَطَأُ؟ | Di mana kesalahannya? | KANDIDAT — cek prasyarat dan korpus |
-| P035 | اِقْرَأْ دُونَ مُسَاعَدَةٍ | Bacalah tanpa bantuan | KANDIDAT — cek prasyarat dan korpus |
+| P001 | اِفْتَحِ الْمُصْحَفَ | Bukalah mushaf | TRANSFER J1-P009 (buka): objek mushaf — 0 fungsi baru |
+| P002 | أَغْلِقِ الْمُصْحَفَ | Tutuplah mushaf | TRANSFER J1-P010 (tutup): objek mushaf — 0 fungsi baru |
+| P003 | أَشِرْ إِلَى الْحَرْفِ | Tunjuklah huruf itu | BARU: menunjuk huruf; bentuk sambung |
+| P004 | أَيْنَ الْكَلِمَةُ؟ | Di mana katanya? | BARU: lokasi kata; bentuk sambung |
+| P005 | اِقْرَأِ الْكَلِمَةَ | Bacalah katanya | TRANSFER J1-P007 (baca): objek kata — 0 fungsi baru |
+| P006 | أَيْنَ أَوَّلُ الْكَلِمَةِ؟ | Di mana awal kata? | BARU: posisi awal kata |
+| P007 | أَيْنَ وَسَطُ الْكَلِمَةِ؟ | Di mana tengah kata? | BARU: posisi tengah kata |
+| P008 | أَيْنَ آخِرُ الْكَلِمَةِ؟ | Di mana akhir kata? | BARU: posisi akhir kata |
+| P009 | هَلِ الْحَرْفُ مُتَّصِلٌ؟ | Apakah hurufnya bersambung? | BARU: identifikasi huruf tersambung |
+| P010 | هَلِ الْحَرْفُ مُنْفَصِلٌ؟ | Apakah hurufnya terpisah? | BARU: identifikasi huruf terpisah |
+| P011 | اِبْحَثْ عَنِ الْحَرْفِ | Carilah hurufnya | BARU: mencari huruf |
+| P012 | ضَعْ إِصْبَعَكَ عَلَى الْكَلِمَةِ | Letakkan jarimu pada kata itu | BARU: menempatkan jari pada kata |
+| P013 | تَابِعْ بِإِصْبَعِكَ | Ikuti dengan jarimu | BARU: mengikuti dengan jari |
+| P014 | اِقْرَأْ مِنَ الْيَمِينِ | Bacalah dari kanan | TRANSFER J1-P007: arah membaca — fungsi turunan |
+| P015 | اِقْرَأْ حَرْفًا حَرْفًا | Bacalah huruf demi huruf | TRANSFER J1-P007: satuan huruf — fungsi turunan |
+| P016 | اِقْرَأِ الْكَلِمَةَ كَامِلَةً | Bacalah kata itu secara utuh | TRANSFER J1-P007: kata utuh — fungsi turunan |
+| P017 | مَا الْحَرْفُ الْأَوَّلُ؟ | Apa huruf pertama? | TRANSFER posisi P006: huruf pertama |
+| P018 | مَا الْحَرْفُ الْأَخِيرُ؟ | Apa huruf terakhir? | TRANSFER posisi P008: huruf terakhir |
+| P019 | أَيْنَ الْفَتْحَتَانِ؟ | Di mana fathatain? | BARU: identifikasi fathatain |
+| P020 | أَيْنَ الْكَسْرَتَانِ؟ | Di mana kasratain? | BARU: identifikasi kasratain |
+| P021 | أَيْنَ الضَّمَّتَانِ؟ | Di mana dhammatain? | BARU: identifikasi dhammatain |
+| P022 | اِقْرَأْ بِالتَّنْوِينِ | Bacalah dengan tanwin | TRANSFER J1-P026–028: membaca dengan tanwin |
+| P023 | مَا الْمَدُّ؟ | Apa itu mad? | BARU: mengenali konsep mad |
+| P024 | أَيْنَ حَرْفُ الْمَدِّ؟ | Di mana huruf mad? | BARU: identifikasi huruf mad |
+| P025 | هٰذَا مَدٌّ طَبِيعِيٌّ | Ini mad asli | ISTILAH TEKNIS — ubah menjadi dialog kelas sebelum final |
+| P026 | مُدَّ الصَّوْتَ | Panjangkan suara | BARU: memanjangkan bunyi |
+| P027 | لَا تَمُدَّ الصَّوْتَ | Jangan panjangkan suara | TRANSFER P026: larangan memanjangkan |
+| P028 | اِسْمَعِ الْفَرْقَ | Dengarkan perbedaannya | BARU: membandingkan bunyi |
+| P029 | مَا الصَّوْتُ الطَّوِيلُ؟ | Mana bunyi panjang? | BARU: identifikasi bunyi panjang |
+| P030 | مَا الصَّوْتُ الْقَصِيرُ؟ | Mana bunyi pendek? | BARU: identifikasi bunyi pendek |
+| P031 | مَيِّزْ بَيْنَ الصَّوْتَيْنِ | Bedakan kedua bunyi | TRANSFER P028–030: diskriminasi dua bunyi |
+| P032 | اِخْتَرِ الْقِرَاءَةَ الصَّحِيحَةَ | Pilih bacaan yang benar | TRANSFER J1-P034: memilih bacaan benar |
+| P033 | صَحِّحِ الْقِرَاءَةَ | Perbaiki bacaan | BARU: mengoreksi bacaan |
+| P034 | أَيْنَ الْخَطَأُ؟ | Di mana kesalahannya? | TRANSFER J1-P034–035: menemukan kesalahan |
+| P035 | اِقْرَأْ دُونَ مُسَاعَدَةٍ | Bacalah tanpa bantuan | BARU: membaca mandiri tanpa bantuan |
 | P036 | — | Murojaah bentuk awal, tengah, akhir | MUROJAAH/TRANSFER — 0 baru |
 | P037 | — | Murojaah tanwin dan bentuk sambung | MUROJAAH/TRANSFER — 0 baru |
 | P038 | — | Murojaah panjang–pendek | MUROJAAH/TRANSFER — 0 baru |
@@ -117,6 +117,18 @@
 **C. Gerbang korpus Qurani (BELUM LULUS):** ungkapan pada tabel merupakan bahasa instruksional pedagogis, **bukan ayat**. Belum tersedia verifikasi lema-per-lema berikut bentuk, lokasi ayat, dan status adaptasi terhadap korpus. Referensi pengecekan: https://corpus.quran.com/ dan https://corpus.quran.com/documentation/ . **Dilarang memberi label CORPUS-VERIFIED/QURAN-QUOTE sebelum ayat, posisi kata, dan hasil pemeriksaan ahli dicatat.** Ungkapan seperti tanwin, mad, dan istilah bentuk huruf merupakan istilah teknis Tartil; jangan dipaksakan seolah kutipan Qurani.
 
 **D. Gate sebelum freeze:** (1) audit keluarga lema lintas J1–J2; (2) setiap slot diberi fungsi komunikasi dan kompetensi prasyarat; (3) audit bahasa Arab/harakat; (4) bukti sumber korpus pada lema yang diklaim Qurani; (5) peninjauan alokasi khusus evaluasi/hafalan dan pemetaan halaman J2; (6) review ahli dan persetujuan otoritas akademik. **Status akhir: HOLD — jangan freeze J2.**
+
+
+### Audit fungsi dan prasyarat per slot — tahap 2
+
+- **P001, P002, P005** adalah **transfer objek** dari fungsi J1 (buka/tutup/baca), bukan kompetensi instruksi baru. P014–P016, P022, P027, P031–P032, P034 juga memanfaatkan fungsi lama atau fungsi J2 yang telah diperkenalkan; **jangan dihitung sebagai fungsi baru**. Dengan demikian, klaim “35 ungkapan = 35 kompetensi baru” **ditolak**.
+- **P003–P018** dipakai hanya sesudah J1 mengenali identitas huruf/harakat; instruksi mengenai awal–tengah–akhir dan sambung dipakai setelah kompetensi bentuk sambung pada halaman Tartil bersangkutan diajarkan. **P019–P022** setelah pengenalan tiga tanwin. **P023–P031** setelah mad asli dan perbedaan panjang-pendek diajarkan. **P032–P035** sesudah latihan transfer bacaan.
+- **P025** (هٰذَا مَدٌّ طَبِيعِيٌّ) adalah ujaran penjelas teknis, bukan instruksi; hanya boleh sebagai **dialog guru menunjukkan contoh**, bukan kosakata lepas. **P029–P030** berbentuk pertanyaan untuk memilih/mengidentifikasi bunyi panjang/pendek; harus diuji dengan pasangan contoh audio yang nyata.
+- **Audit morfologi korpus: TIDAK DAPAT DIKLAIM SELESAI.** Satu ungkapan kelas bisa mengandung lema Qurani dan lema teknis non-Qurani; verifikasi harus memeriksa **setiap lema**, bentuk dan lokasi ayat. Tidak ada ayat atau nomor ayat yang dicantumkan tanpa pembuktian. Istilah kelas tidak wajib seluruhnya muncul dalam mushaf, tetapi harus diberi klasifikasi `QURAN-ATTESTED`, `PEDAGOGICAL-ADAPTATION`, atau `TECHNICAL-NONQUOTE` setelah pengecekan.
+- **Audit harakat dan komunikasi: TINJAUAN AWAL**, bukan persetujuan ahli. P009–P010 memakai pertanyaan sifat yang memerlukan demonstrasi konkret; P012 menuntut guru memastikan santri paham gestur; P026–P027 jangan diberikan sebagai aturan panjang-pendek tanpa model tajwid. Varian muannats belum diturunkan dan harus tersedia dalam panduan guru.
+- **Kebijakan anti-duplikasi:** identitas *ungkapan utuh* berbeda dari identitas *fungsi kompetensi* dan *lema*. Untuk tiap item final wajib disimpan `expression_id`, `function_id`, `lemma_family_ids`, `first_introduction`, `prerequisite_ids`, `corpus_evidence`, dan `review_status`. Tanpa metadata ini J2 tidak lolos gate.
+
+**Keputusan audit tahap 2: tetap HOLD.** Audit klasifikasi fungsi/prasyarat awal telah dilakukan; verifikasi korpus ayat-per-lema dan review ahli belum dilakukan, sehingga belum ada dasar untuk FROZEN.
 
 ## Jilid 3 — 40 halaman
 
