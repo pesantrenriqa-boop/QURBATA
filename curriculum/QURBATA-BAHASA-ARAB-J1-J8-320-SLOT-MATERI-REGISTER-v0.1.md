@@ -4,6 +4,15 @@
 
 **Rujukan:** `ACP-QUR-001`, `MAT-ARB-001`, `REG-ARB-001`, `REG-ARB-002`, `03_BOOKS/JILID-1/BAHASA-ARAB/`, dan materi Jilid 3 yang sudah ada. Baseline 640 lema adalah target perencanaan terpisah, **bukan** 320 kosakata unik. Tahap dan status validasi harus dicek sebelum finalisasi.
 
+## Kunci pedagogis Bi'ah Arabiyah Qurani — 2026-10-08
+
+- Fungsi utama: bahasa Arab hidup dalam talqin, talaqqi, pengulangan, instruksi kelas Tartil, dan adab Qurani; bukan hafalan istilah nahwu.
+- Prioritaskan ungkapan yang mudah didengar, ditirukan, dan dipraktikkan dalam kegiatan QURBATA. Perkenalkan satu fungsi baru setelah prasyarat tersedia, lalu lakukan murojaah kumulatif.
+- Bedakan **mode LISAN-GURU** (ungkapan boleh mengandung tulisan sambung/kaidah yang belum dikuasai) dari **BACA-MANDIRI** (harus lulus whitelist Tartil pada halaman tersebut). Jangan memaksa santri membaca mandiri tulisan sambung saat J1 Tartil masih huruf terpisah.
+- Qurani berarti selaras dengan Al-Qur'an dan adabnya; jangan menandai dialog buatan sebagai ayat/hadis. Kutipan langsung harus memiliki sumber terverifikasi.
+- Satu halaman = satu slot materi inti, bukan wajib satu lema baru. Hitungan lema unik dan keluarga kata mengikuti REG-ARB-001 serta MAT-ARB-001; pengulangan tidak menambah hitungan.
+- Utamakan sumber materi yang sudah frozen. Kandidat harus tetap berstatus kandidat sampai melewati language/pedagogy review; tidak boleh mengklaim 320 materi telah disahkan.
+
 ## Jilid 1 — 40 halaman
 
 | Halaman | Kosakata / ungkapan / kalimat | Arti | Status sumber |
