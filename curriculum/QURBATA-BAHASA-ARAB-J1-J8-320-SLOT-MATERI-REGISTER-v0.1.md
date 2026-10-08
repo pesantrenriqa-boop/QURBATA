@@ -62,7 +62,7 @@
 
 ## Jilid 2 — 40 halaman
 
-**Status: REVISI DRAF 40/40, BELUM FROZEN.** Tangga kompetensi: bentuk sambung awal/tengah/akhir → tanwin → mad asli → diskriminasi panjang-pendek → transfer. **Tidak ada pengenalan ulang ungkapan utuh Jilid 1**; guru tetap memakai ungkapan lama dalam interaksi sebagai MUROJAAH, bukan slot materi baru. Ungkapan di bawah adalah **kandidat pedagogis**, bukan kutipan ayat Al-Qur'an; klaim keterikatan korpus Qurani menunggu pemetaan ayat/sumber, dan prasyarat per halaman menunggu whitelist Tartil J2. Setiap baris perlu audit bahasa dan korpus sebelum freeze.
+**Status: AUDIT INTERNAL TAHAP 1 — DRAF 40/40, BELUM FROZEN.** Tangga kompetensi: bentuk sambung awal/tengah/akhir → tanwin → mad asli → diskriminasi panjang-pendek → transfer. **Tidak ada pengenalan ulang ungkapan utuh Jilid 1**; guru tetap memakai ungkapan lama dalam interaksi sebagai MUROJAAH, bukan slot materi baru. Ungkapan di bawah adalah **kandidat pedagogis**, bukan kutipan ayat Al-Qur'an; klaim keterikatan korpus Qurani menunggu pemetaan ayat/sumber, dan prasyarat per halaman menunggu whitelist Tartil J2. Setiap baris perlu audit bahasa dan korpus sebelum freeze.
 
 | Halaman | Ungkapan / instruksi baru | Arti / fungsi | Status |
 |---|---|---|---|
@@ -106,6 +106,17 @@
 | P038 | — | Murojaah panjang–pendek | MUROJAAH/TRANSFER — 0 baru |
 | P039 | — | Transfer kata baru dengan pola yang sudah dikuasai | MUROJAAH/TRANSFER — 0 baru |
 | P040 | — | Evaluasi lisan dan praktik kumulatif | MUROJAAH/TRANSFER — 0 baru |
+
+
+### Audit internal Jilid 2 — 8 Oktober 2026
+
+**A. Audit duplikasi permukaan (SELESAI):** perbandingan normalisasi harakat/hamzah antara 40 slot J1 dan 40 slot J2 menemukan **0 ungkapan utuh identik**; di dalam J2 juga 0 ungkapan utuh identik. Ini **bukan** bukti bahwa tidak ada pengulangan lema, fungsi, atau pola. Penggunaan kata dasar lama dalam ungkapan baru adalah prasyarat/murojaah, bukan lema baru.
+
+**B. Tangga prasyarat (PEMETAAN AWAL):** P001–P018 = identifikasi huruf dan bentuk sambung; P019–P022 = tanwin; P023–P027 = mad asli; P028–P035 = diskriminasi dan koreksi bacaan; P036–P040 = murojaah, transfer, evaluasi. Seluruh instruksi tetap mode **LISAN-GURU**, bukan latihan decoding.
+
+**C. Gerbang korpus Qurani (BELUM LULUS):** ungkapan pada tabel merupakan bahasa instruksional pedagogis, **bukan ayat**. Belum tersedia verifikasi lema-per-lema berikut bentuk, lokasi ayat, dan status adaptasi terhadap korpus. Referensi pengecekan: https://corpus.quran.com/ dan https://corpus.quran.com/documentation/ . **Dilarang memberi label CORPUS-VERIFIED/QURAN-QUOTE sebelum ayat, posisi kata, dan hasil pemeriksaan ahli dicatat.** Ungkapan seperti tanwin, mad, dan istilah bentuk huruf merupakan istilah teknis Tartil; jangan dipaksakan seolah kutipan Qurani.
+
+**D. Gate sebelum freeze:** (1) audit keluarga lema lintas J1–J2; (2) setiap slot diberi fungsi komunikasi dan kompetensi prasyarat; (3) audit bahasa Arab/harakat; (4) bukti sumber korpus pada lema yang diklaim Qurani; (5) peninjauan alokasi khusus evaluasi/hafalan dan pemetaan halaman J2; (6) review ahli dan persetujuan otoritas akademik. **Status akhir: HOLD — jangan freeze J2.**
 
 ## Jilid 3 — 40 halaman
 
