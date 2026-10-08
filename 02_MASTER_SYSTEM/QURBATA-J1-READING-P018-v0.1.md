@@ -37,7 +37,7 @@ REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P017.
 14. **لَ قِ يَ** ← `لَقِيَ` = telah bertemu [MSL VERIFIED — TARGET قِ]  
 15. **رَ فِ قَ** ← `رَفِقَ` = telah bersikap lembut / ramah [MSL VERIFIED — TARGET فِ]  
 16. **وَ عِ رَ** ← `وَعِرَ` = menjadi sukar / terjal [MSL VERIFIED — TARGET عِ]  
-17. **فَ قِ هَ** ← `فَقِهَ` = telah memahami [MSL CANDIDATE — TARGET قِ; audit global pending]  
+17. **فَ قِ هَ** ← `فَقِهَ` = telah memahami / mendalami [MSL CANDIDATE — TARGET قِ; audit global pending]  
 18. **نَ قِ مَ** ← `نَقِمَ` = membenci / mengingkari [MSL CANDIDATE — TARGET قِ; audit global pending]  
 19. عِ حِ سَ [PHONETIC-CURATED]  
 20. غِ خِ شَ [PHONETIC-CURATED]  
@@ -116,6 +116,6 @@ Enam slot C19–C24 tetap terbuka untuk penggantian bila ditemukan kata Arab nya
 Target bukan 100% secara paksa. **Kebenaran bahasa > jumlah kata bermakna.**
 
 ## CORRECTIVE AUDIT 2026-10-08
-- C17 sebelumnya `قَ لِ قَ` tidak memuat target P018 (`قَ` bukan `قِ`) dan mengandung `لِ` future P019; diganti `فَ قِ هَ`.
+- C17 sebelumnya `قَ لِ قَ` tidak memuat target P018 (`قَ` bukan `قِ`) dan mengandung `لِ` future P019; pengganti awal `وَ قِ فَ` dibatalkan karena tidak tepat diberi arti 'berdiri/berhenti' (bentuknya `وَقَفَ`); C17 kini `فَ قِ هَ` (`فَقِهَ`).
 - C18 sebelumnya `فَ رِ قَ` tidak memuat target P018 (`قَ` bukan `قِ`); diganti `نَ قِ مَ`.
 - Kandidat pengganti harus tetap melalui audit leksikal, keunikan global, dan rendering sebelum print freeze.
