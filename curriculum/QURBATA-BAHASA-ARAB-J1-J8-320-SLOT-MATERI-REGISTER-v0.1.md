@@ -62,50 +62,50 @@
 
 ## Jilid 2 — 40 halaman
 
-**Status: DRAF USULAN 40/40 — BELUM FROZEN.** Materi Bi'ah Arabiyah instruksional untuk fase bentuk sambung dan mad asli Tartil J2. Satu ungkapan baru maksimal per halaman; beberapa ungkapan J1 muncul kembali sebagai MUROJAAH, bukan pengenalan baru. Kalimat kompleks diajarkan lisan oleh guru; tidak menjadi grid latihan baca. Bentuk maskulin tunggal adalah model dasar, guru menyesuaikan sapaan santri. **Review Arab, pemetaan prasyarat, dan persetujuan akademik masih diperlukan.**
+**Status: REVISI DRAF 40/40, BELUM FROZEN.** Tangga kompetensi: bentuk sambung awal/tengah/akhir → tanwin → mad asli → diskriminasi panjang-pendek → transfer. **Tidak ada pengenalan ulang ungkapan utuh Jilid 1**; guru tetap memakai ungkapan lama dalam interaksi sebagai MUROJAAH, bukan slot materi baru. Ungkapan di bawah adalah **kandidat pedagogis**, bukan kutipan ayat Al-Qur'an; klaim keterikatan korpus Qurani menunggu pemetaan ayat/sumber, dan prasyarat per halaman menunggu whitelist Tartil J2. Setiap baris perlu audit bahasa dan korpus sebelum freeze.
 
-| Halaman | Ungkapan / instruksi | Arti / fungsi | Status |
+| Halaman | Ungkapan / instruksi baru | Arti / fungsi | Status |
 |---|---|---|---|
-| P001 | اِفْتَحِ الْمُصْحَفَ | Bukalah mushaf | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P002 | أَغْلِقِ الْمُصْحَفَ | Tutuplah mushaf | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P003 | أَشِرْ إِلَى الْحَرْفِ | Tunjuk hurufnya | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P004 | اُنْظُرْ إِلَى الْكَلِمَةِ | Perhatikan katanya | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P005 | اِقْرَأِ الْكَلِمَةَ | Bacalah katanya | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P006 | أَعِدِ الْقِرَاءَةَ | Ulangi bacaannya | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P007 | قِفْ | Berhenti | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P008 | وَاصِلْ | Lanjutkan | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P009 | أَجِبْ | Jawablah | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P010 | اِسْمَعْ ثُمَّ كَرِّرْ | Dengarkan lalu ulangi | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P011 | نَعَمْ | Ya | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P012 | لَا | Tidak | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P013 | حَاضِرٌ | Siap/hadir | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P014 | فَهِمْتُ | Saya paham | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P015 | لَمْ أَفْهَمْ | Saya belum paham | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P016 | هَلْ فَهِمْتَ؟ | Apakah kamu paham? | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P017 | مَا هٰذَا؟ | Apa ini? | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P018 | أَيْنَ الْحَرْفُ؟ | Di mana hurufnya? | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P019 | أَحْسَنْتَ | Bagus | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P020 | صَحِيحٌ | Benar | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P021 | خَطَأٌ | Salah | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P022 | اِقْرَأْ بِصَوْتٍ وَاضِحٍ | Bacalah dengan suara jelas | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P023 | اِقْرَأْ بِهُدُوءٍ | Bacalah dengan tenang | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P024 | اِسْمَعْ جَيِّدًا | Dengarkan baik-baik | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P025 | اُنْظُرْ جَيِّدًا | Perhatikan baik-baik | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P026 | اِقْرَأْ مِنَ الْبِدَايَةِ | Bacalah dari awal | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P027 | اِقْرَأْ إِلَى هُنَا | Bacalah sampai sini | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P028 | هَلْ أَنْتَ مُسْتَعِدٌّ؟ | Apakah kamu siap? | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P029 | أَنَا مُسْتَعِدٌّ | Saya siap | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P030 | اِبْدَأِ الْقِرَاءَةَ | Mulailah membaca | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P031 | اِقْرَأْ ثُمَّ قِفْ | Baca lalu berhenti | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P032 | اِسْمَعْ ثُمَّ أَجِبْ | Dengarkan lalu jawab | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P033 | اُنْظُرْ ثُمَّ اِقْرَأْ | Perhatikan lalu baca | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P034 | اِفْتَحِ الْمُصْحَفَ ثُمَّ اِقْرَأْ | Buka mushaf lalu baca | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P035 | أَعِدْ مَرَّةً أُخْرَى | Ulangi sekali lagi | DRAF — cek kesesuaian bahasa dan prasyarat |
-| P036 | — | Murojaah instruksi membuka, menutup, membaca | MUROJAAH |
-| P037 | — | Murojaah respons santri | MUROJAAH |
-| P038 | — | Murojaah koreksi bacaan | MUROJAAH |
-| P039 | — | Murojaah rangkaian instruksi | MUROJAAH |
-| P040 | — | Evaluasi lisan kumulatif | MUROJAAH |
+| P001 | اِفْتَحِ الْمُصْحَفَ | Bukalah mushaf | KANDIDAT — cek prasyarat dan korpus |
+| P002 | أَغْلِقِ الْمُصْحَفَ | Tutuplah mushaf | KANDIDAT — cek prasyarat dan korpus |
+| P003 | أَشِرْ إِلَى الْحَرْفِ | Tunjuklah huruf itu | KANDIDAT — cek prasyarat dan korpus |
+| P004 | أَيْنَ الْكَلِمَةُ؟ | Di mana katanya? | KANDIDAT — cek prasyarat dan korpus |
+| P005 | اِقْرَأِ الْكَلِمَةَ | Bacalah katanya | KANDIDAT — cek prasyarat dan korpus |
+| P006 | أَيْنَ أَوَّلُ الْكَلِمَةِ؟ | Di mana awal kata? | KANDIDAT — cek prasyarat dan korpus |
+| P007 | أَيْنَ وَسَطُ الْكَلِمَةِ؟ | Di mana tengah kata? | KANDIDAT — cek prasyarat dan korpus |
+| P008 | أَيْنَ آخِرُ الْكَلِمَةِ؟ | Di mana akhir kata? | KANDIDAT — cek prasyarat dan korpus |
+| P009 | هَلِ الْحَرْفُ مُتَّصِلٌ؟ | Apakah hurufnya bersambung? | KANDIDAT — cek prasyarat dan korpus |
+| P010 | هَلِ الْحَرْفُ مُنْفَصِلٌ؟ | Apakah hurufnya terpisah? | KANDIDAT — cek prasyarat dan korpus |
+| P011 | اِبْحَثْ عَنِ الْحَرْفِ | Carilah hurufnya | KANDIDAT — cek prasyarat dan korpus |
+| P012 | ضَعْ إِصْبَعَكَ عَلَى الْكَلِمَةِ | Letakkan jarimu pada kata itu | KANDIDAT — cek prasyarat dan korpus |
+| P013 | تَابِعْ بِإِصْبَعِكَ | Ikuti dengan jarimu | KANDIDAT — cek prasyarat dan korpus |
+| P014 | اِقْرَأْ مِنَ الْيَمِينِ | Bacalah dari kanan | KANDIDAT — cek prasyarat dan korpus |
+| P015 | اِقْرَأْ حَرْفًا حَرْفًا | Bacalah huruf demi huruf | KANDIDAT — cek prasyarat dan korpus |
+| P016 | اِقْرَأِ الْكَلِمَةَ كَامِلَةً | Bacalah kata itu secara utuh | KANDIDAT — cek prasyarat dan korpus |
+| P017 | مَا الْحَرْفُ الْأَوَّلُ؟ | Apa huruf pertama? | KANDIDAT — cek prasyarat dan korpus |
+| P018 | مَا الْحَرْفُ الْأَخِيرُ؟ | Apa huruf terakhir? | KANDIDAT — cek prasyarat dan korpus |
+| P019 | أَيْنَ الْفَتْحَتَانِ؟ | Di mana fathatain? | KANDIDAT — cek prasyarat dan korpus |
+| P020 | أَيْنَ الْكَسْرَتَانِ؟ | Di mana kasratain? | KANDIDAT — cek prasyarat dan korpus |
+| P021 | أَيْنَ الضَّمَّتَانِ؟ | Di mana dhammatain? | KANDIDAT — cek prasyarat dan korpus |
+| P022 | اِقْرَأْ بِالتَّنْوِينِ | Bacalah dengan tanwin | KANDIDAT — cek prasyarat dan korpus |
+| P023 | مَا الْمَدُّ؟ | Apa itu mad? | KANDIDAT — cek prasyarat dan korpus |
+| P024 | أَيْنَ حَرْفُ الْمَدِّ؟ | Di mana huruf mad? | KANDIDAT — cek prasyarat dan korpus |
+| P025 | هٰذَا مَدٌّ طَبِيعِيٌّ | Ini mad asli | KANDIDAT — cek prasyarat dan korpus |
+| P026 | مُدَّ الصَّوْتَ | Panjangkan suara | KANDIDAT — cek prasyarat dan korpus |
+| P027 | لَا تَمُدَّ الصَّوْتَ | Jangan panjangkan suara | KANDIDAT — cek prasyarat dan korpus |
+| P028 | اِسْمَعِ الْفَرْقَ | Dengarkan perbedaannya | KANDIDAT — cek prasyarat dan korpus |
+| P029 | مَا الصَّوْتُ الطَّوِيلُ؟ | Mana bunyi panjang? | KANDIDAT — cek prasyarat dan korpus |
+| P030 | مَا الصَّوْتُ الْقَصِيرُ؟ | Mana bunyi pendek? | KANDIDAT — cek prasyarat dan korpus |
+| P031 | مَيِّزْ بَيْنَ الصَّوْتَيْنِ | Bedakan kedua bunyi | KANDIDAT — cek prasyarat dan korpus |
+| P032 | اِخْتَرِ الْقِرَاءَةَ الصَّحِيحَةَ | Pilih bacaan yang benar | KANDIDAT — cek prasyarat dan korpus |
+| P033 | صَحِّحِ الْقِرَاءَةَ | Perbaiki bacaan | KANDIDAT — cek prasyarat dan korpus |
+| P034 | أَيْنَ الْخَطَأُ؟ | Di mana kesalahannya? | KANDIDAT — cek prasyarat dan korpus |
+| P035 | اِقْرَأْ دُونَ مُسَاعَدَةٍ | Bacalah tanpa bantuan | KANDIDAT — cek prasyarat dan korpus |
+| P036 | — | Murojaah bentuk awal, tengah, akhir | MUROJAAH/TRANSFER — 0 baru |
+| P037 | — | Murojaah tanwin dan bentuk sambung | MUROJAAH/TRANSFER — 0 baru |
+| P038 | — | Murojaah panjang–pendek | MUROJAAH/TRANSFER — 0 baru |
+| P039 | — | Transfer kata baru dengan pola yang sudah dikuasai | MUROJAAH/TRANSFER — 0 baru |
+| P040 | — | Evaluasi lisan dan praktik kumulatif | MUROJAAH/TRANSFER — 0 baru |
 
 ## Jilid 3 — 40 halaman
 
