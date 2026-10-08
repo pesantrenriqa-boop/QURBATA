@@ -15,50 +15,50 @@
 
 ## Jilid 1 — 40 halaman
 
-**Jalur utama:** Bi'ah Arabiyah instruksi/sapaan kelas Tartil, sesuai berkas P001–P006 dan unit frozen `RIQA-M01-BAHASA-01`. P007–P012 merupakan **usulan urutan** yang masih perlu dicocokkan dengan pemetaan halaman frozen; jangan diklaim final. Jalur kosakata benda pada `MAP-ARB-QJ1-001` tetap tersimpan sebagai pilot terpisah, bukan pengganti jalur ini.
+**Status: DRAF USULAN 40/40, BELUM FROZEN.** P001–P006 mengikuti jalur salam/instruksi yang sudah ada; P007–P040 merupakan usulan untuk ditelaah terhadap sumber frozen, prasyarat, ketepatan bentuk bahasa Arab, dan alokasi halaman Tartil. Ini bukan pengganti otomatis dokumen pilot kosakata atau materi halaman yang telah disahkan. **Mode pengajaran: LISAN-GURU** sampai teks memenuhi whitelist baca mandiri Tartil.
 
 | Halaman | Ungkapan / instruksi | Arti | Status |
 |---|---|---|---|
-| P001 | السَّلَامُ عَلَيْكُمْ | Salam | SUMBER HALAMAN J1 |
-| P002 | كَيْفَ حَالُكَ؟ | Bagaimana kabarmu? | SUMBER HALAMAN J1 |
-| P003 | يَا صَدِيقِي | Wahai temanku | SUMBER HALAMAN J1 |
-| P004 | اِسْمَعْ | Dengarkan! | SUMBER HALAMAN J1 |
-| P005 | اُنْظُرْ | Perhatikan! | SUMBER HALAMAN J1 |
-| P006 | كَرِّرْ | Ulangilah! | SUMBER HALAMAN J1 |
-| P007 | اِقْرَأْ | Bacalah! | USULAN URUTAN — cek register |
-| P008 | اُكْتُبْ | Tulislah! | USULAN URUTAN — cek register |
-| P009 | اِفْتَحِ الْكِتَابَ | Bukalah buku! | USULAN URUTAN — cek register |
-| P010 | أَغْلِقِ الْكِتَابَ | Tutuplah buku! | USULAN URUTAN — cek register |
-| P011 | اِجْلِسْ | Duduklah! | USULAN URUTAN — cek register |
-| P012 | قُمْ | Berdirilah! | USULAN URUTAN — cek register |
-| P013 | — | — | USULAN URUTAN — cek register |
-| P014 | — | — | USULAN URUTAN — cek register |
-| P015 | — | — | USULAN URUTAN — cek register |
-| P016 | — | — | USULAN URUTAN — cek register |
-| P017 | — | — | USULAN URUTAN — cek register |
-| P018 | — | — | USULAN URUTAN — cek register |
-| P019 | — | — | USULAN URUTAN — cek register |
-| P020 | — | — | USULAN URUTAN — cek register |
-| P021 | — | — | USULAN URUTAN — cek register |
-| P022 | — | — | USULAN URUTAN — cek register |
-| P023 | — | — | USULAN URUTAN — cek register |
-| P024 | — | — | USULAN URUTAN — cek register |
-| P025 | — | — | USULAN URUTAN — cek register |
-| P026 | — | — | USULAN URUTAN — cek register |
-| P027 | — | — | USULAN URUTAN — cek register |
-| P028 | — | — | USULAN URUTAN — cek register |
-| P029 | — | — | USULAN URUTAN — cek register |
-| P030 | — | — | USULAN URUTAN — cek register |
-| P031 | — | — | USULAN URUTAN — cek register |
-| P032 | — | — | USULAN URUTAN — cek register |
-| P033 | — | — | USULAN URUTAN — cek register |
-| P034 | — | — | USULAN URUTAN — cek register |
-| P035 | — | — | USULAN URUTAN — cek register |
-| P036 | — | — | USULAN URUTAN — cek register |
-| P037 | — | — | USULAN URUTAN — cek register |
-| P038 | — | — | USULAN URUTAN — cek register |
-| P039 | — | — | USULAN URUTAN — cek register |
-| P040 | — | — | USULAN URUTAN — cek register |
+| P001 | السَّلَامُ عَلَيْكُمْ | Semoga keselamatan atas kalian | Ada sumber J1; perlu rekonsiliasi |
+| P002 | كَيْفَ حَالُكَ؟ | Bagaimana kabarmu? | Ada sumber J1; perlu rekonsiliasi |
+| P003 | يَا صَدِيقِي | Wahai temanku | Ada sumber J1; perlu rekonsiliasi |
+| P004 | اِسْمَعْ | Dengarkan! | Ada sumber J1; perlu rekonsiliasi |
+| P005 | اُنْظُرْ | Perhatikan! | Ada sumber J1; perlu rekonsiliasi |
+| P006 | كَرِّرْ | Ulangilah! | Ada sumber J1; perlu rekonsiliasi |
+| P007 | اِقْرَأْ | Bacalah! | USULAN — belum divalidasi |
+| P008 | اُكْتُبْ | Tulislah! | USULAN — belum divalidasi |
+| P009 | اِفْتَحِ الْكِتَابَ | Bukalah buku! | USULAN — belum divalidasi |
+| P010 | أَغْلِقِ الْكِتَابَ | Tutuplah buku! | USULAN — belum divalidasi |
+| P011 | اِجْلِسْ | Duduklah! | USULAN — belum divalidasi |
+| P012 | قُمْ | Berdirilah! | USULAN — belum divalidasi |
+| P013 | تَعَالَ | Kemarilah! | USULAN — belum divalidasi |
+| P014 | اِبْدَأْ | Mulailah! | USULAN — belum divalidasi |
+| P015 | تَوَقَّفْ | Berhentilah! | USULAN — belum divalidasi |
+| P016 | أَعِدْ | Ulangi kembali! | USULAN — belum divalidasi |
+| P017 | اِنْتَبِهْ | Perhatikan baik-baik! | USULAN — belum divalidasi |
+| P018 | أَحْسَنْتَ | Bagus sekali! | USULAN — belum divalidasi |
+| P019 | مُمْتَازٌ | Istimewa! | USULAN — belum divalidasi |
+| P020 | بَارَكَ اللَّهُ فِيكَ | Semoga Allah memberkahimu | USULAN — belum divalidasi |
+| P021 | هٰذَا حَرْفٌ | Ini huruf | USULAN — belum divalidasi |
+| P022 | هٰذِهِ حَرَكَةٌ | Ini harakat | USULAN — belum divalidasi |
+| P023 | هٰذِهِ فَتْحَةٌ | Ini fathah | USULAN — belum divalidasi |
+| P024 | هٰذِهِ كَسْرَةٌ | Ini kasrah | USULAN — belum divalidasi |
+| P025 | هٰذِهِ ضَمَّةٌ | Ini dhammah | USULAN — belum divalidasi |
+| P026 | اِقْرَأْ بِالْفَتْحَةِ | Bacalah dengan fathah! | USULAN — belum divalidasi |
+| P027 | اِقْرَأْ بِالْكَسْرَةِ | Bacalah dengan kasrah! | USULAN — belum divalidasi |
+| P028 | اِقْرَأْ بِالضَّمَّةِ | Bacalah dengan dhammah! | USULAN — belum divalidasi |
+| P029 | مَا هٰذَا؟ | Apa ini? | USULAN — belum divalidasi |
+| P030 | هٰذَا حَرْفُ الْبَاءِ | Ini huruf ba | USULAN — belum divalidasi |
+| P031 | اِقْرَأْ مَرَّةً أُخْرَى | Bacalah sekali lagi! | USULAN — belum divalidasi |
+| P032 | اِقْرَأْ بِبُطْءٍ | Bacalah perlahan! | USULAN — belum divalidasi |
+| P033 | اِقْرَأْ بِوُضُوحٍ | Bacalah dengan jelas! | USULAN — belum divalidasi |
+| P034 | صَحِيحٌ | Benar! | USULAN — belum divalidasi |
+| P035 | حَاوِلْ مَرَّةً أُخْرَى | Cobalah sekali lagi! | USULAN — belum divalidasi |
+| P036 | هَلْ فَهِمْتَ؟ | Apakah kamu paham? | USULAN — belum divalidasi |
+| P037 | نَعَمْ، فَهِمْتُ | Ya, saya paham | USULAN — belum divalidasi |
+| P038 | لَا أَفْهَمُ | Saya belum paham | USULAN — belum divalidasi |
+| P039 | أَنَا مُسْتَعِدٌّ | Saya siap | USULAN — belum divalidasi |
+| P040 | الْحَمْدُ لِلَّهِ | Segala puji bagi Allah | USULAN — belum divalidasi |
 
 ## Jilid 2 — 40 halaman
 
