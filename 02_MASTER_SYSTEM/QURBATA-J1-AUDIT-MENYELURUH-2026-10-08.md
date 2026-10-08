@@ -33,3 +33,31 @@ STATUS: AUDIT IN PROGRESS — NOT PRINT READY
 
 ## KEPUTUSAN
 HOLD PRINT FREEZE. Dokumen ini adalah catatan audit awal yang didasarkan pada pembacaan dan verifikasi akses berkas, bukan sertifikat bahwa seluruh 40 halaman sudah lolos audit substansi.
+
+
+## AUDIT LANJUTAN — 2026-10-08: DEDUPLIKASI P029–P040
+Metode: membaca langsung 12 berkas P029–P040, mengekstrak nomor soal 1–24, dan membandingkan rangkaian Arab setelah normalisasi spasi (harakat tetap dipertahankan).
+
+HASIL:
+- 12/12 berkas dapat dibaca.
+- 288/288 butir bernomor 1–24 teridentifikasi (24 per halaman).
+- 8 kemunculan ulang identik lintas halaman:
+  1. P029:8 → P032:3 — `دِ ذُ رَ`
+  2. P032:15 → P037:15 — `زُ رِ عَ`
+  3. P036:19 → P039:13 — `تُ بِ عَ`
+  4. P030:15 → P039:17 — `فُ تِ حَ`
+  5. P029:1 → P040:1 — `بَ بِ بُ`
+  6. P029:4 → P040:4 — `سَ سُ سِ`
+  7. P029:15 → P040:16 — `سُ ئِ لَ`
+  8. P030:14 → P040:18 — `وُ جِ دَ`
+
+PENILAIAN:
+- Pengulangan pada P040 mungkin sengaja sebagai tes retensi; pertahankan sementara sampai blueprint tes akhir dikonfirmasi.
+- P039 diberi label simulasi final dan memuat 2 stimulus identik dari halaman sebelumnya. Tandai sebagai potensi paparan soal (MEDIUM) dan ganti bila menginginkan tes transfer belum pernah dilihat.
+- P037:15 adalah reuse P032:15; mungkin retensi terencana.
+- Klaim P040 bahwa C13–C18 seluruhnya 'REVIEW-REUSE' belum terbukti untuk keenam butir hanya dari data P029–P040: ditemukan bukti identik untuk C16 dan C18 saja pada rentang itu. Audit halaman lebih awal diperlukan.
+
+CATATAN BATASAN:
+- Ini audit kecocokan string, bukan verifikasi keabsahan kata Arab.
+- P001–P013 masih belum ditemukan pada pola path yang diuji; pencarian GitHub pada default branch untuk nama P001/P013 tidak memberi hasil, namun bukan bukti tidak adanya berkas pada branch kerja.
+- Tidak ada perubahan pada materi latihan dalam tahap ini.
