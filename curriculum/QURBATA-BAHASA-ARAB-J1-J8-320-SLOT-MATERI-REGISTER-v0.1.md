@@ -62,7 +62,7 @@
 
 ## Jilid 2 — 40 halaman
 
-**Status: AUDIT INTERNAL TAHAP 5 — DRAF 40/40, BELUM FROZEN.** Tangga kompetensi: bentuk sambung awal/tengah/akhir → tanwin → mad asli → diskriminasi panjang-pendek → transfer. **Tidak ada pengenalan ulang ungkapan utuh Jilid 1**; guru tetap memakai ungkapan lama dalam interaksi sebagai MUROJAAH, bukan slot materi baru. Ungkapan di bawah adalah **kandidat pedagogis**, bukan kutipan ayat Al-Qur'an; klaim keterikatan korpus Qurani menunggu pemetaan ayat/sumber, dan prasyarat per halaman menunggu whitelist Tartil J2. Setiap baris perlu audit bahasa dan korpus sebelum freeze.
+**Status: AUDIT INTERNAL TAHAP 6 — DRAF 40/40, BELUM FROZEN.** Tangga kompetensi: bentuk sambung awal/tengah/akhir → tanwin → mad asli → diskriminasi panjang-pendek → transfer. **Tidak ada pengenalan ulang ungkapan utuh Jilid 1**; guru tetap memakai ungkapan lama dalam interaksi sebagai MUROJAAH, bukan slot materi baru. Ungkapan di bawah adalah **kandidat pedagogis**, bukan kutipan ayat Al-Qur'an; klaim keterikatan korpus Qurani menunggu pemetaan ayat/sumber, dan prasyarat per halaman menunggu whitelist Tartil J2. Setiap baris perlu audit bahasa dan korpus sebelum freeze.
 
 | Halaman | Ungkapan / instruksi baru | Arti / fungsi | Status |
 |---|---|---|---|
@@ -101,11 +101,11 @@
 | P033 | صَحِّحِ الْقِرَاءَةَ | Perbaiki bacaan | BARU: mengoreksi bacaan |
 | P034 | أَيْنَ الْخَطَأُ؟ | Di mana kesalahannya? | TRANSFER J1-P034–035: menemukan kesalahan |
 | P035 | اِقْرَأْ دُونَ مُسَاعَدَةٍ | Bacalah tanpa bantuan | BARU: membaca mandiri tanpa bantuan |
-| P036 | — | Murojaah bentuk awal, tengah, akhir | MUROJAAH/TRANSFER — 0 baru |
-| P037 | — | Murojaah tanwin dan bentuk sambung | MUROJAAH/TRANSFER — 0 baru |
-| P038 | — | Murojaah panjang–pendek | MUROJAAH/TRANSFER — 0 baru |
-| P039 | — | Transfer kata baru dengan pola yang sudah dikuasai | MUROJAAH/TRANSFER — 0 baru |
-| P040 | — | Evaluasi lisan dan praktik kumulatif | MUROJAAH/TRANSFER — 0 baru |
+| P036 | أَيْنَ أَوَّلُ الْكَلِمَةِ؟ | Di mana awal kata? (ulang P006) | MUROJAAH — 0 baru; pengulangan disengaja |
+| P037 | اِقْرَأْ بِالتَّنْوِينِ | Bacalah dengan tanwin (ulang P022) | MUROJAAH — 0 baru; pengulangan disengaja |
+| P038 | مَيِّزْ بَيْنَ الصَّوْتَيْنِ | Bedakan kedua bunyi (ulang P031) | MUROJAAH — 0 baru; pengulangan disengaja |
+| P039 | اِقْرَأِ الْكَلِمَةَ كَامِلَةً | Bacalah kata secara utuh (ulang P016) | MUROJAAH — 0 baru; pengulangan disengaja |
+| P040 | صَحِّحِ الْقِرَاءَةَ | Perbaiki bacaan (ulang P033) | MUROJAAH — 0 baru; pengulangan disengaja |
 
 
 ### Audit internal Jilid 2 — 8 Oktober 2026
@@ -225,6 +225,13 @@ Kode `TR` berarti transfer fungsi terdahulu, `NEW` kandidat fungsi baru, `REV` p
 | P040 | REV-J2-040 | Murojaah, 0 baru | J2 transfer bacaan | Tidak ada lema baru |
 
 **Rekap:** 22 slot kandidat fungsi baru, 13 slot transfer, 5 slot murojaah/evaluasi. Ini klasifikasi fungsi awal, bukan jumlah lema baru, bukan sertifikasi sumber Qurani. **Status HOLD** sampai pemetaan korpus per lema dan pemeriksaan ahli.
+
+
+### Implementasi konkret halaman review — tahap 6
+
+P036–P040 kini berisi **ungkapan Arab yang benar-benar dapat dipraktikkan**, bukan tanda kosong. Kelimanya adalah **pengulangan sengaja** dari P006, P022, P031, P016, dan P033; statusnya `REV`, **0 ungkapan baru dan 0 fungsi baru**. Dengan demikian aturan anti-duplikasi berarti *jangan menyajikan ulang sebagai akuisisi*, bukan melarang murojaah. Materi tetap berupa bahasa komunikasi kelas Tartil, bukan contoh ayat atau bank latihan decoding.
+
+**Tindak lanjut yang belum lulus:** pemetaan keluarga lema lintas jilid dan verifikasi ayat-per-lema; jangan memberi label `CORPUS-VERIFIED` atau `FROZEN` untuk J2.
 
 ## Jilid 3 — 40 halaman
 
