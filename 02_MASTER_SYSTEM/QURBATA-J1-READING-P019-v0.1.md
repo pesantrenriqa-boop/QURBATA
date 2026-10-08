@@ -17,7 +17,7 @@ REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P018.
 - Tidak ada Dhammah.
 - Review hanya Fathah + Kasrah legal sampai P018.
 - Harakat kata tidak boleh dimanipulasi.
-- Global source word tidak boleh diulang.
+- Global source word tidak boleh diulang pada NEW MSL; latihan fonetik tidak diklaim sebagai kata bermakna.
 
 ## C01–C06 — PENANAMAN EXACT-2
 1. كِ لِ
@@ -80,7 +80,7 @@ REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P018.
 - `كِ`: رَكِبَ، سَكِنَ
 - `لِ`: عَلِمَ، حَمِلَ، وَلِيَ
 - `مِ`: عَمِلَ، حَمِدَ، حَمِلَ، سَئِمَ
-- `نِ`: سَكِنَ، أَنِسَ؛ إِ ذِ نَ [LEXICAL HOLD]
+- `نِ`: سَكِنَ، أَنِسَ؛ C21 fonetik (نِ خَ فَ)
 - `هِ`: فَهِمَ، شَهِدَ
 - `وِ`: قَوِيَ، رَوِيَ
 - `يِ`: حَيِيَ
@@ -96,7 +96,7 @@ Kandidat USED baru:
 - EXACT-2 6/6 → PASS
 - EXACT-3 18/18 → PASS
 - meaningful EXACT-3 → **16/18 lexical candidates; C20 dan C21 PHONETIC**
-- phonetic/lexical-hold EXACT-3 → **2/18**
+- phonetic EXACT-3 → **2/18**
 - seluruh 9 TARGET memiliki contoh meaningful → PENDING (إِ requires verified example)
 - future Dhammah → 0
 - pseudo-word berlabel meaningful → 0
