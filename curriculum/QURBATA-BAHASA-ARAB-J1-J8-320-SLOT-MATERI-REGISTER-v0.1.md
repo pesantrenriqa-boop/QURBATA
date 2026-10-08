@@ -552,3 +552,12 @@ P036–P040 kini berisi **ungkapan Arab yang benar-benar dapat dipraktikkan**, b
 3. Ikuti dependency fungsi/struktur dan bedakan kosakata baru, turunan, dan murojaah.
 4. Teks buatan tidak boleh dilabeli sebagai ayat/hadis.
 5. Tanda `BELUM DIPETAKAN` berarti belum diverifikasi terhadap semua berkas, **bukan** bukti materi tidak ada.
+
+## Kunci produksi identitas visual — ADENDUM 8 Oktober 2026
+
+Saat isi register ini dikembangkan menjadi halaman buku Bahasa Arab QURBATA, **WAJIB** mengikuti `02_MASTER_SYSTEM/QURBATA_BAHASA_ARAB_BOOK_LAYOUT_MASTER_FROZEN-v1.0.md` bagian **7 (Adendum wajib identitas visual dan khat)**:
+
+- Pakai **logo QURBATA asli dari gambar yang disediakan pengguna**, bukan emblem buku/perisai atau logo AI. Logo memuat kaligrafi hijau, nama QURBATA, empat pilar QURAN–BAHASA ARAB–TAHFIDZ–AKHLAK, serta tagline Sistem Pendidikan Integratif Al Quran. Jangan menggambar ulang atau mengubah bentuk identitas.
+- Render teks Arab memakai **font KFGQPC Uthman Taha** dengan harakat serta arah tulisan yang benar. Rasm Utsmani hanya untuk kutipan ayat mushaf yang terverifikasi; teks dialog/instruksi kelas jangan disalahklaim sebagai ayat.
+- Jika aset logo asli atau font resmi belum siap di renderer, tandai **BLOCKED-ASSET / BLOCKED-FONT** dan **jangan menghasilkan gambar halaman pengganti**.
+- Pembaruan ini adalah **aturan produksi visual saja**, bukan perubahan Page-ID, ungkapan Arab, status frozen konten, atau kuota lema. Seluruh tabel Jilid 1–8 tetap utuh.
