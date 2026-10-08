@@ -7,7 +7,7 @@ TYPE: REGULAR-CURATED
 TARGET P019: `كِ لِ مِ نِ هِ وِ يِ ءِ إِ`  
 REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P018.
 
-> P019 menutup rangkaian Kasrah Jilid 1. Karena inventaris Kasrah legal sudah sangat luas, latihan EXACT-3 diprioritaskan menjadi kata Arab nyata, umum, dan mudah dipahami. Zero pseudo-word tetap wajib.
+> P019 menutup rangkaian Kasrah Jilid 1. Karena inventaris Kasrah legal sudah sangat luas, latihan EXACT-3 diprioritaskan menjadi kata Arab nyata, umum, dan mudah dipahami. Tidak boleh memberi arti pada latihan fonetik; bentuk fonetik tetap diperbolehkan untuk decoding.
 
 ## HARD GATES
 - 24 kelompok.
@@ -114,3 +114,9 @@ C16 `وَ جِ لَ` had no P019 target. C16 now uses C21's prior target-valid `
 - AUTHORITY CLEAN LIST C16/C21 disamakan dengan latihan utama.
 - C20 resmi phonetic-curated tanpa klaim arti; status lexical HOLD tidak lagi ambigu.
 - Klaim `إِ` bermakna masih PENDING; coverage decoding tetap ada.
+
+
+## RELEASE GATE — P019
+- `إِ` telah diperkenalkan secara fonetik pada C05 dan C20; tidak ada contoh bermakna `إِ` yang lolos verifikasi.
+- Tidak boleh menaikkan status menjadi `ALL TARGETS MEANINGFUL` tanpa bukti kata autentik.
+- AUTHORITY CLEAN LIST harus sama dengan C07–C24, dan harus diverifikasi otomatis sebelum renderer.
