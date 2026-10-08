@@ -50,3 +50,16 @@
 ### 6. Ketentuan prototipe
 - Uji **Jilid 1 P001** terlebih dahulu, **tanpa** menyalin panel Bi’ah J1 P001 sebagai seluruh kompetensi Bahasa Arab.
 - Pilih materi dari progresi Bahasa Arab dan register lema; periksa prasyarat dan contoh Qurani. Jangan mengklaim prototipe sebagai halaman final sebelum validasi.
+
+### 7. Adendum wajib identitas visual dan khat — 8 Oktober 2026
+**Keputusan pengguna, berlaku mengikat untuk semua halaman buku Bahasa Arab QURBATA.** Bagian 1–6 pedoman v1.0 tetap dipertahankan; adendum ini hanya memperjelas persyaratan aset dan pengujian mutu. Versi pedoman tetap FROZEN, bukan izin mengubah desain/isi yang telah disetujui.
+
+1. **Logo WAJIB logo QURBATA asli yang disediakan pemilik**, dengan kaligrafi hijau pada latar putih, tulisan **QURBATA**, baris **QURAN ◆ BAHASA ARAB ◆ TAHFIDZ ◆ AKHLAK**, dan tagline **Sistem Pendidikan Integratif Al Quran** sebagaimana gambar referensi pengguna pada percakapan 8 Oktober 2026. **Logo buku-terbuka dalam perisai, ilustrasi logo AI, tiruan, atau versi yang direka ulang DILARANG.**
+2. Gunakan file aset logo asli secara langsung (place-as-image / embed) tanpa menggambar ulang, mengubah bentuk kaligrafi, menghilangkan elemen, atau mengganti ejaan. Pengubahan ukuran secara proporsional dan penyesuaian ruang putih di sekelilingnya diperbolehkan; tidak boleh mendistorsi proporsi.
+3. **Sumber identitas:** gambar asli disediakan pengguna pada percakapan; **belum boleh mengklaim URL/path aset permanen di GitHub sebelum berkas berhasil diunggah dan diperiksa**. Saat aset belum tersedia di renderer, produksi halaman ditahan (**BLOCKED-ASSET**); jangan membuat logo pengganti.
+4. **Semua teks Arab halaman wajib dirender dengan font KFGQPC Uthman Taha resmi** sesuai pedoman utama, dengan shaping, ligatur, harakat dan RTL yang benar. Tidak cukup membuat gambar huruf Arab menggunakan font mirip lalu menyebutnya Utsmani.
+5. Khat Utsmani **bukan izin mengubah setiap kalimat menjadi rasm mushaf**. Ayat Al-Qur'an yang dikutip harus menggunakan teks/rasm mushaf Utsmani terverifikasi; ungkapan dan dialog kelas tetap mengikuti ejaan Arab yang sah, tetapi tampil dalam jenis huruf KFGQPC Uthman Taha. Jangan menggunakan generator gambar untuk merender teks Arab final yang berisiko mengubah huruf/harakat.
+6. Jika font belum terpasang atau hak penggunaan/asetnya belum diverifikasi, tandai **BLOCKED-FONT**; tidak boleh mengklaim bahwa halaman sudah memenuhi standar tipografi. Jangan membagikan file font berlisensi kepada pengguna.
+7. **Quality gate wajib sebelum preview halaman:** (a) cocokkan logo tertanam secara visual dengan aset asli, (b) cek font terpakai secara teknis, (c) bandingkan teks Arab harakat demi harakat dengan sumber, (d) cek tulisan kanan-ke-kiri, (e) pastikan heading, margin B5, warna, dan metadata halaman konsisten. Halaman yang gagal satu pemeriksaan tetap DRAF/BLOCKED, bukan APPROVED/FROZEN.
+8. Materi halaman harus berasal dari **Page-ID register 320 slot**, tidak boleh membuat topik baru semisal perkenalan pada P001 atau mengganti P002 **كَيْفَ حَالُكَ؟**. Bahan murojaah harus dilabeli; jangan menganggap 320 ungkapan sebagai 640 lema kurikulum.
+9. **Instruksi produksi:** sebelum membuat gambar halaman berikut, pastikan aset logo asli dan font resmi siap serta diperiksa; bila belum, berhenti pada rancangan editorial tanpa menciptakan gambar pengganti.
