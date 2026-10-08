@@ -31,7 +31,7 @@ REVIEW_ALLOWED: seluruh Fathah P001–P013 + Kasrah P014–P016.
 8. **خَ صِ مَ** ← `خَصِمَ` = berselisih / menjadi lawan [MSL VERIFIED]  
 9. **حَ صِ رَ** ← `حَصِرَ` = menjadi sempit / terhalang [MSL VERIFIED]  
 10. **بَ صِ رَ** ← `بَصِرَ` = melihat / mengetahui dengan jelas [MSL VERIFIED]  
-11. **مَ رِ ضَ** ← `مَرِضَ` = telah sakit [MSL VERIFIED — TARGET ضِ]  
+11. **مَ رِ ضَ** [GLOBAL DUPLICATE P016:18 — HOLD; perlu pengganti sah dengan ضِ sebelum cetak]  
 12. **رَ ضِ يَ** ← `رَضِيَ` = telah rela / rida [MSL VERIFIED — TARGET ضِ]  
 13. **حَ فِ ظَ** ← `حَفِظَ` = telah menjaga / menghafal [MSL VERIFIED — TARGET ظِ]  
 14. **يَ قِ ظَ** ← `يَقِظَ` = terjaga / waspada [MSL VERIFIED — TARGET ظِ]  
@@ -52,7 +52,7 @@ Meaningful yang dipertahankan pada P017:
 - `خَصِمَ` — TARGET `صِ`.
 - `حَصِرَ` — TARGET `صِ`.
 - `بَصِرَ` — TARGET `صِ`.
-- `مَرِضَ` — TARGET `ضِ`.
+- `مَرِضَ` — REJECT: P016:18 dan tidak mengandung ضِ (mengandung ضَ).
 - `رَضِيَ` — TARGET `ضِ`.
 - `حَفِظَ` — TARGET `ظِ`.
 - `يَقِظَ` — TARGET `ظِ`.
@@ -83,18 +83,18 @@ Slot C18–C24 tetap phonetic-curated untuk memperluas review Kasrah legal dan m
 
 ## GLOBAL MSL — NEW P017
 USED baru P017:
-`وصل`, `خصم`, `حصر`, `بصر`, `مرض`, `رضي`, `حفظ`, `يقظ`, `فطن`, `نظف`, `عطش`.
+`وصل`, `خصم`, `حصر`, `بصر`, `رضي`, `حفظ`, `يقظ`, `فطن`, `نظف`, `عطش`.
 
 Semua tetap tunduk pada audit global zero-repeat sebelum renderer produksi.
 
 ## QA STATUS
-- GROUP_COUNT 24/24 → PASS
+- GROUP_COUNT 24/24 → PASS; lexical gate HOLD
 - EXACT-2 6/6 → PASS
 - EXACT-3 18/18 → PASS
 - TARGET-only planting → PASS
-- TARGET presence C07–C24 → PASS
+- TARGET presence C07–C24 → FAIL (C11 lacks ضِ)
 - FUTURE KASRAH → 0
-- meaningful EXACT-3 → 11/18
+- meaningful EXACT-3 → 10/18 valid candidates; C11 HOLD
 - phonetic curated → 7/18
 - seluruh TARGET memiliki contoh meaningful → PASS
 - pseudo-word berlabel meaningful → 0
