@@ -351,48 +351,52 @@ P036–P040 kini berisi **ungkapan Arab yang benar-benar dapat dipraktikkan**, b
 
 ## Jilid 5 — 40 halaman
 
-| Halaman | Kosakata / ungkapan / kalimat | Arti | Status sumber |
+**Status DRAF 40/40 — BELUM FROZEN.** Prasyarat: J1 harakat → J2 mad asli dan pendek/panjang → J3 komunikasi koreksi → J4 hukum nun/mim dan alif-lam → **J5 ragam mad lanjutan, sebab dan kadar panjangnya**. Fokus fungsi kelas adalah bertanya, mengamati, membandingkan, dan mengoreksi kadar mad, bukan mengulang instruksi dasar sebagai fungsi baru. Istilah teknis bukan klaim kutipan Al-Qur'an. Kadar mad harus dikonfirmasi menurut riwayat bacaan dan standar pengajaran QURBATA sebelum final.
+
+| Halaman | Ungkapan Arab | Arti Indonesia | Status |
 |---|---|---|---|
-| P001 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P002 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P003 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P004 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P005 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P006 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P007 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P008 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P009 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P010 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P011 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P012 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P013 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P014 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P015 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P016 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P017 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P018 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P019 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P020 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P021 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P022 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P023 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P024 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P025 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P026 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P027 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P028 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P029 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P030 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P031 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P032 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P033 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P034 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P035 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P036 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P037 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P038 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P039 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
-| P040 | — | — | BELUM DIPETAKAN — cek materi yang sudah ada |
+| P001 | أَيُّ نَوْعٍ مِنَ الْمَدِّ هٰذَا؟ | Apa jenis mad ini? | KANDIDAT / TRANSFER — audit fungsi |
+| P002 | كَمْ حَرَكَةً نَمُدُّ؟ | Berapa harakat kita panjangkan? | KANDIDAT / TRANSFER — audit fungsi |
+| P003 | اِحْسِبْ عَدَدَ الْحَرَكَاتِ | Hitung jumlah harakat | KANDIDAT / TRANSFER — audit fungsi |
+| P004 | هَلْ هٰذَا مَدٌّ طَبِيعِيٌّ أَمْ فَرْعِيٌّ؟ | Ini mad asli atau mad far'i? | KANDIDAT / TRANSFER — audit fungsi |
+| P005 | أَيْنَ سَبَبُ الْمَدِّ؟ | Di mana sebab mad? | KANDIDAT / TRANSFER — audit fungsi |
+| P006 | هَلْ بَعْدَ حَرْفِ الْمَدِّ هَمْزَةٌ؟ | Apakah setelah huruf mad ada hamzah? | KANDIDAT / TRANSFER — audit fungsi |
+| P007 | هٰذَا مَدٌّ مُتَّصِلٌ | Ini mad muttasil | KANDIDAT / TRANSFER — audit fungsi |
+| P008 | هٰذَا مَدٌّ مُنْفَصِلٌ | Ini mad munfasil | KANDIDAT / TRANSFER — audit fungsi |
+| P009 | هَلِ الْهَمْزَةُ فِي الْكَلِمَةِ نَفْسِهَا؟ | Apakah hamzah berada dalam kata yang sama? | KANDIDAT / TRANSFER — audit fungsi |
+| P010 | هَلِ الْهَمْزَةُ فِي الْكَلِمَةِ التَّالِيَةِ؟ | Apakah hamzah berada pada kata berikutnya? | KANDIDAT / TRANSFER — audit fungsi |
+| P011 | مَا الْفَرْقُ بَيْنَ الْمُتَّصِلِ وَالْمُنْفَصِلِ؟ | Apa perbedaan muttasil dan munfasil? | KANDIDAT / TRANSFER — audit fungsi |
+| P012 | هَلْ بَعْدَ حَرْفِ الْمَدِّ سُكُونٌ؟ | Apakah setelah huruf mad ada sukun? | KANDIDAT / TRANSFER — audit fungsi |
+| P013 | هٰذَا مَدٌّ لَازِمٌ | Ini mad lazim | KANDIDAT / TRANSFER — audit fungsi |
+| P014 | اِلْتَزِمْ مِقْدَارَ الْمَدِّ | Jagalah kadar panjang mad | KANDIDAT / TRANSFER — audit fungsi |
+| P015 | هَلِ السُّكُونُ أَصْلِيٌّ؟ | Apakah sukunnya asli? | KANDIDAT / TRANSFER — audit fungsi |
+| P016 | هَلِ السُّكُونُ عَارِضٌ؟ | Apakah sukunnya sementara karena berhenti? | KANDIDAT / TRANSFER — audit fungsi |
+| P017 | هٰذَا مَدٌّ عَارِضٌ لِلسُّكُونِ | Ini mad arid lissukun | KANDIDAT / TRANSFER — audit fungsi |
+| P018 | قِفْ عَلَى آخِرِ الْكَلِمَةِ | Berhentilah pada akhir kata | KANDIDAT / TRANSFER — audit fungsi |
+| P019 | مَا مِقْدَارُ الْمَدِّ عِنْدَ الْوَقْفِ؟ | Berapa panjang mad ketika waqaf? | KANDIDAT / TRANSFER — audit fungsi |
+| P020 | هَلْ يَتَغَيَّرُ الْمَدُّ عِنْدَ الْوَصْلِ؟ | Apakah mad berubah ketika disambung? | KANDIDAT / TRANSFER — audit fungsi |
+| P021 | هٰذَا مَدُّ لِينٍ | Ini mad lin | KANDIDAT / TRANSFER — audit fungsi |
+| P022 | أَيْنَ حَرْفُ اللِّينِ؟ | Di mana huruf lin? | KANDIDAT / TRANSFER — audit fungsi |
+| P023 | هَلْ هٰذَا حَرْفُ لِينٍ أَمْ حَرْفُ مَدٍّ؟ | Ini huruf lin atau huruf mad? | KANDIDAT / TRANSFER — audit fungsi |
+| P024 | قَارِنْ بَيْنَ الْمَدِّ وَاللِّينِ | Bandingkan mad dan lin | KANDIDAT / TRANSFER — audit fungsi |
+| P025 | هٰذَا مَدُّ بَدَلٍ | Ini mad badal | KANDIDAT / TRANSFER — audit fungsi |
+| P026 | هَلْ تَسْبِقُ الْهَمْزَةُ حَرْفَ الْمَدِّ؟ | Apakah hamzah mendahului huruf mad? | KANDIDAT / TRANSFER — audit fungsi |
+| P027 | هٰذَا مَدُّ صِلَةٍ | Ini mad silah | KANDIDAT / TRANSFER — audit fungsi |
+| P028 | أَيْنَ هَاءُ الضَّمِيرِ؟ | Di mana ha dhamir? | KANDIDAT / TRANSFER — audit fungsi |
+| P029 | هَلْ هٰذِهِ صِلَةٌ صُغْرَى أَمْ كُبْرَى؟ | Ini silah sughra atau kubra? | KANDIDAT / TRANSFER — audit fungsi |
+| P030 | اِضْبِطْ مِقْدَارَ الْمَدِّ | Tepatkan kadar panjang mad | KANDIDAT / TRANSFER — audit fungsi |
+| P031 | هَلْ تَسَاوَتْ مُدَدُ الْمَدِّ؟ | Apakah panjang mad sudah konsisten? | KANDIDAT / TRANSFER — audit fungsi |
+| P032 | اِسْتَمِعْ إِلَى مِقْدَارِ الْمَدِّ | Dengarkan kadar panjang mad | KANDIDAT / TRANSFER — audit fungsi |
+| P033 | أَيُّ الْقِرَاءَتَيْنِ أَدَقُّ؟ | Manakah dari dua bacaan yang lebih tepat? | KANDIDAT / TRANSFER — audit fungsi |
+| P034 | بَيِّنْ مَوْضِعَ الْمَدِّ وَسَبَبَهُ | Tunjukkan posisi mad dan penyebabnya | KANDIDAT / TRANSFER — audit fungsi |
+| P035 | اِخْتَبِرْ نَفْسَكَ فِي أَحْكَامِ الْمَدِّ | Uji dirimu tentang hukum mad | KANDIDAT / TRANSFER — audit fungsi |
+| P036 | كَمْ حَرَكَةً نَمُدُّ؟ | Ulangi penentuan panjang mad | MUROJAAH — 0 baru |
+| P037 | مَا الْفَرْقُ بَيْنَ الْمُتَّصِلِ وَالْمُنْفَصِلِ؟ | Ulangi pembedaan muttasil–munfasil | MUROJAAH — 0 baru |
+| P038 | مَا مِقْدَارُ الْمَدِّ عِنْدَ الْوَقْفِ؟ | Ulangi panjang mad saat waqaf | MUROJAAH — 0 baru |
+| P039 | بَيِّنْ مَوْضِعَ الْمَدِّ وَسَبَبَهُ | Ulangi lokasi dan sebab mad | MUROJAAH — 0 baru |
+| P040 | اِضْبِطْ مِقْدَارَ الْمَدِّ | Evaluasi ketepatan kadar mad | MUROJAAH — 0 baru |
+
+**Gate audit:** tidak ada identitas teks ternormalisasi pada P001–P035 dengan J1–J4; ini **bukan** bukti tidak ada pengulangan fungsi/keluarga lema. P036–P040 pengulangan terencana tanpa akuisisi. Selaraskan urutan mad dengan page-ID Tartil, periksa ketepatan contoh hukum dan riwayat, verifikasi sumber per lema, bentuk gender dan beban kognitif sebelum freeze.
 
 ## Jilid 6 — 40 halaman
 
