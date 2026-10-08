@@ -62,7 +62,7 @@
 
 ## Jilid 2 — 40 halaman
 
-**Status: AUDIT INTERNAL TAHAP 6 — DRAF 40/40, BELUM FROZEN.** Tangga kompetensi: bentuk sambung awal/tengah/akhir → tanwin → mad asli → diskriminasi panjang-pendek → transfer. **Tidak ada pengenalan ulang ungkapan utuh Jilid 1**; guru tetap memakai ungkapan lama dalam interaksi sebagai MUROJAAH, bukan slot materi baru. Ungkapan di bawah adalah **kandidat pedagogis**, bukan kutipan ayat Al-Qur'an; klaim keterikatan korpus Qurani menunggu pemetaan ayat/sumber, dan prasyarat per halaman menunggu whitelist Tartil J2. Setiap baris perlu audit bahasa dan korpus sebelum freeze.
+**Status: AUDIT INTERNAL TAHAP 7 — DRAF 40/40, BELUM FROZEN.** Tangga kompetensi: bentuk sambung awal/tengah/akhir → tanwin → mad asli → diskriminasi panjang-pendek → transfer. **Tidak ada pengenalan ulang ungkapan utuh Jilid 1**; guru tetap memakai ungkapan lama dalam interaksi sebagai MUROJAAH, bukan slot materi baru. Ungkapan di bawah adalah **kandidat pedagogis**, bukan kutipan ayat Al-Qur'an; klaim keterikatan korpus Qurani menunggu pemetaan ayat/sumber, dan prasyarat per halaman menunggu whitelist Tartil J2. Setiap baris perlu audit bahasa dan korpus sebelum freeze.
 
 | Halaman | Ungkapan / instruksi baru | Arti / fungsi | Status |
 |---|---|---|---|
@@ -232,6 +232,22 @@ Kode `TR` berarti transfer fungsi terdahulu, `NEW` kandidat fungsi baru, `REV` p
 P036–P040 kini berisi **ungkapan Arab yang benar-benar dapat dipraktikkan**, bukan tanda kosong. Kelimanya adalah **pengulangan sengaja** dari P006, P022, P031, P016, dan P033; statusnya `REV`, **0 ungkapan baru dan 0 fungsi baru**. Dengan demikian aturan anti-duplikasi berarti *jangan menyajikan ulang sebagai akuisisi*, bukan melarang murojaah. Materi tetap berupa bahasa komunikasi kelas Tartil, bukan contoh ayat atau bank latihan decoding.
 
 **Tindak lanjut yang belum lulus:** pemetaan keluarga lema lintas jilid dan verifikasi ayat-per-lema; jangan memberi label `CORPUS-VERIFIED` atau `FROZEN` untuk J2.
+
+
+### Rekonsiliasi dua domain Bahasa Arab QURBATA — tahap 7
+
+**Temuan tata kelola penting:** `02_MASTER_SYSTEM/QURBATA_BIAH_ARABIYAH_INSTRUCTION_MASTER_FROZEN-v1.0.md` mengatur **panel Bi'ah Arabiyah instruksional dalam buku Tartil**. Sementara `curriculum/ACP-QUR-001-Arabic-Competency-Progression.md` dan `curriculum/MAT-ARB-001-Matriks-Baseline-Kosa-Kata-Jilid-1-8.md` mengatur **kurikulum Bahasa Arab yang lebih luas**, dengan enam domain kompetensi dan baseline 640 lema (J2 direncanakan 50 lema baru). **Keduanya tidak boleh disamakan.** Tabel 40 ungkapan J2 ini adalah **panel Bi'ah Tartil**, bukan pemenuhan 50 lema baru atau 40 kompetensi Bahasa Arab umum.
+
+| Aturan | Penerapan pada J2 | Hasil |
+|---|---|---|
+| Satu fungsi instruksional diperkenalkan satu kali | ID NEW/TR/REV telah dibuat | Klasifikasi awal tersedia, belum review ahli |
+| Ungkapan lama boleh muncul sebagai penguatan | P036–P040 secara eksplisit mengulang item J2 | Memenuhi prinsip murojaah, tidak menambah hitungan |
+| 50 lema baru J2 (MAT-ARB-001) | Target kurikulum Bahasa Arab umum, bukan kuota panel | **Jangan klaim terpenuhi oleh tabel ini** |
+| Teks Bi'ah tidak tunduk whitelist baca mandiri Tartil | Guru mengucapkan, santri menyimak/merespons | Berlaku LISAN-GURU, tidak masuk grid Tartil |
+| Qurani/korpus | Ayat sebagai jangkar; instruksi kelas sebagai adaptasi | Belum lolos bukti per lema |
+| Progresi fonik J2 | Sambung → tanwin → mad asli | Pemetaan tingkat fase, belum terikat halaman master |
+
+**Keputusan pelaksanaan:** pertahankan isi 40 panel J2 sebagai draf kerja; **jangan** menggabungkan target 50 lema kurikulum umum ke panel instruksi lima menit; **jangan** menganggap ungkapan instruksi sebagai kutipan Qurani. Freeze J2 baru boleh setelah pemetaan page-ID Tartil, verifikasi linguistik, dan persetujuan akademik. J1 CONTENT FROZEN tidak diubah.
 
 ## Jilid 3 — 40 halaman
 
