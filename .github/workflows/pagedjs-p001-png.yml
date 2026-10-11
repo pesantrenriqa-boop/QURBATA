@@ -1,4 +1,4 @@
-name: QURBATA P001 PNG via Paged.js
+name: QURBATA P001 Original Layout PNG
 on:
   workflow_dispatch:
   push:
@@ -7,7 +7,7 @@ on:
 jobs:
   p001:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 15
     defaults:
       run:
         working-directory: production/vivliostyle
@@ -19,13 +19,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Install Paged.js dependencies
+      - name: Install original renderer dependencies
         run: npm install --no-audit --no-fund --ignore-scripts
-      - name: Set approved P001 reading exercise source
+      - name: Prepare P001 with ORIGINAL 40-page master layout and approved drills
         run: |
           python3 - <<'PY'
           import pathlib,re,json
-          p=pathlib.Path('scripts/build-pagedjs-p001.mjs')
+          p=pathlib.Path('scripts/build-pagedjs-p001-p010.mjs')
           s=p.read_text()
           drills=[
             "بَ تَ","بَ ثَ","تَ بَ","تَ ثَ","ثَ بَ","ثَ تَ",
@@ -34,23 +34,30 @@ jobs:
             "بَ تَ بَ","بَ ثَ بَ","تَ بَ تَ","تَ ثَ تَ","ثَ بَ ثَ","ثَ تَ ثَ"
           ]
           assert len(drills)==24
-          s,n=re.subn(r'const exercises=\[.*?\];', 'const exercises='+json.dumps(drills,ensure_ascii=False)+';',s,count=1,flags=re.S)
-          assert n==1, 'Renderer P001 exercise declaration not found'
+          s,n=re.subn(r'const p1=\[.*?\];','const p1='+json.dumps(drills,ensure_ascii=False)+';',s,count=1,flags=re.S)
+          assert n==1, 'P001 source declaration missing'
+          s,n=re.subn(r'specs\.map\(page\)\.join\(" "\)', 'specs.filter(spec=>spec.n===1).map(page).join("")',s,count=1)
+          if n!=1:
+            s,n=re.subn(r'specs\.map\(page\)\.join\(""\)', 'specs.filter(spec=>spec.n===1).map(page).join("")',s,count=1)
+          assert n==1, 'Original master page selection not found'
           p.write_text(s)
           PY
-      - name: Copy official Arabic font
-        run: mkdir -p dist/fonts && cp fonts/KFGQPC-Uthman-Taha-Naskh.woff2 dist/fonts/
-      - name: Render P001 using Paged.js
-        run: npm run build:pagedjs:p001:pdf
-      - name: Export only P001 to PNG
+      - name: Build ORIGINAL P001 HTML
+        run: |
+          mkdir -p dist/fonts
+          cp fonts/KFGQPC-Uthman-Taha-Naskh.woff2 dist/fonts/
+          node scripts/build-pagedjs-p001-p010.mjs
+      - name: Render P001 with Paged.js
+        run: pagedjs-cli dist/QURBATA-J1-P001-P040-PAGEDJS.html -o dist/QURBATA-J1-P001-ORIGINAL-LAYOUT.pdf --browserArgs '--no-sandbox,--disable-setuid-sandbox'
+      - name: Export PNG and validate one page
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
-          pdftoppm -f 1 -singlefile -r 200 -png dist/QURBATA-J1-P001-PAGEDJS.pdf dist/QURBATA-J1-P001-PAGEDJS
-          test -s dist/QURBATA-J1-P001-PAGEDJS.png
-          pdfinfo dist/QURBATA-J1-P001-PAGEDJS.pdf | grep Pages
+          test "$(pdfinfo dist/QURBATA-J1-P001-ORIGINAL-LAYOUT.pdf | awk '/^Pages:/{print $2}')" = "1"
+          pdftoppm -f 1 -singlefile -r 240 -png dist/QURBATA-J1-P001-ORIGINAL-LAYOUT.pdf dist/QURBATA-J1-P001-ORIGINAL-LAYOUT
+          test -s dist/QURBATA-J1-P001-ORIGINAL-LAYOUT.png
       - uses: actions/upload-artifact@v4
         with:
-          name: QURBATA-J1-P001-PAGEDJS-PNG
+          name: QURBATA-J1-P001-ORIGINAL-LAYOUT-PNG
           path: |
-            production/vivliostyle/dist/QURBATA-J1-P001-PAGEDJS.png
-            production/vivliostyle/dist/QURBATA-J1-P001-PAGEDJS.pdf
+            production/vivliostyle/dist/QURBATA-J1-P001-ORIGINAL-LAYOUT.png
+            production/vivliostyle/dist/QURBATA-J1-P001-ORIGINAL-LAYOUT.pdf
