@@ -1,0 +1,45 @@
+name: Publish frozen QURBATA J1 P001
+on:
+  push:
+    branches: [renderer/pagedjs-p001-prototype]
+    paths:
+      - '.github/workflows/publish-frozen-j1-p001.yml'
+      - 'production/vivliostyle/scripts/render-frozen-j1-p001.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish-p001:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: renderer/pagedjs-p001-prototype
+          persist-credentials: true
+      - name: Install Arabic rendering dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-dejavu-core libharfbuzz0b libfribidi0
+          python -m pip install --disable-pip-version-check pillow reportlab pymupdf fonttools brotli
+      - name: Render frozen P001 from repository font
+        run: python production/vivliostyle/scripts/render-frozen-j1-p001.py
+      - name: Verify and publish PDF and PNG into repository
+        run: |
+          test -s production/vivliostyle/dist/QURBATA-J1-P001-FROZEN.pdf
+          test -s production/vivliostyle/dist/QURBATA-J1-P001-FROZEN.png
+          mkdir -p 03_BOOKS/JILID-1/FROZEN_PAGES/P001
+          cp production/vivliostyle/dist/QURBATA-J1-P001-FROZEN.pdf 03_BOOKS/JILID-1/FROZEN_PAGES/P001/P001.pdf
+          cp production/vivliostyle/dist/QURBATA-J1-P001-FROZEN.png 03_BOOKS/JILID-1/FROZEN_PAGES/P001/P001.png
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 03_BOOKS/JILID-1/FROZEN_PAGES/P001/
+          if ! git diff --cached --quiet; then
+            git commit -m "production: publish frozen P001 PDF and PNG"
+            git push
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: QURBATA-J1-P001-FROZEN
+          path: |
+            03_BOOKS/JILID-1/FROZEN_PAGES/P001/P001.pdf
+            03_BOOKS/JILID-1/FROZEN_PAGES/P001/P001.png
