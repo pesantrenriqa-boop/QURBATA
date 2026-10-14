@@ -38,3 +38,12 @@ Tiap halaman mengandung fokus Tartil, pengantar guru, respons santri, dialog Tah
 - `AUDIT_KONFLIK_TAHFIDZ_J1_BLOKER_v0.1.md` mengungkap konflik mapping Tahfidz J1 dengan register halaman; **status BLOCKER** tetap berlaku.
 - Catatan pembetulan: frasa 'Tahfidz P011–P020 belum memiliki sumber' pada matriks awal berarti tidak eksplisit dalam register Tartil yang dibaca, **bukan** bahwa target belum dipetakan di repositori. Sumber distribusi lengkap ditemukan kemudian.
 - Belum ada tashih nash Qurani per ayat, verifikasi terjemah, atau pemeriksaan beban. Jangan sebut siap cetak.
+
+## Matriks produksi J1 lengkap P001–P040 (14 Oktober 2026)
+
+- P001–P010: `QJ1_P001-P040_MATRIKS_SUMBER_4_DOMAIN_QA_v0.1.md` serta pilot `QJ1_P001-P006_PILOT_AYAT_TAHFIDZ_TALQIN_QA_v0.1.md` dan `QJ1_P007-P010_PILOT_TAHFIDZ_BIAH_AKHLAK_QA_v0.1.md`.
+- P011–P020: `QJ1_P011-P020_PRODUCTION_CONTROL_v0.1.md`.
+- P021–P030: `QJ1_P021-P030_PRODUCTION_CONTROL_v0.1.md`.
+- P031–P040: `QJ1_P031-P040_PRODUCTION_CONTROL_v0.1.md`.
+- Cakupan matriks kendali sumber: **40/40 halaman**. Ini tidak berarti naskah pedagogis, contoh ayat, terjemah, tashih, layout atau PDF sudah selesai.
+- **BLOCKER:** konflik Tahfidz antarsumber J1; baca `AUDIT_KONFLIK_TAHFIDZ_J1_BLOKER_v0.1.md`. Jangan mencampur jalur target Tahfidz tanpa keputusan kurikulum.
