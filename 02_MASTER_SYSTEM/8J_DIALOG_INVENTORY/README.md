@@ -30,3 +30,11 @@ Tiap halaman mengandung fokus Tartil, pengantar guru, respons santri, dialog Tah
 5. Kelayakan beban teks untuk buku A5, proporsi Tartil dominan, dan pemisahan materi buku santri dari buku guru belum diputuskan.
 
 **Gate:** jangan mengubah register FROZEN Jilid 1, jangan menyebut seluruh isi final, dan jangan produksi PDF massal sebelum audit domain dan nash selesai.
+
+## Pembaruan audit sumber Tahfidz 14 Oktober 2026
+
+- `QURBATA_8J_TAHFIDZ_CROSSWALK_FROZEN_320P_v0.1.md` menginventaris 320 target surah/ayat dari mapping yang secara eksplisit dirujuk FROZEN distribusi.
+- `QJ1_P001-P040_MATRIKS_SUMBER_4_DOMAIN_QA_v0.1.md` mengikat Tartil dan Bi'ah/Akhlak J1 ke register masing-masing.
+- `AUDIT_KONFLIK_TAHFIDZ_J1_BLOKER_v0.1.md` mengungkap konflik mapping Tahfidz J1 dengan register halaman; **status BLOCKER** tetap berlaku.
+- Catatan pembetulan: frasa 'Tahfidz P011–P020 belum memiliki sumber' pada matriks awal berarti tidak eksplisit dalam register Tartil yang dibaca, **bukan** bahwa target belum dipetakan di repositori. Sumber distribusi lengkap ditemukan kemudian.
+- Belum ada tashih nash Qurani per ayat, verifikasi terjemah, atau pemeriksaan beban. Jangan sebut siap cetak.
