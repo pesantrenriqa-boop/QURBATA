@@ -14,9 +14,9 @@ Enam file grid aktual di `02_MASTER_SYSTEM/8J_DIALOG_INVENTORY/`:
 ## Hasil
 - 20/20 halaman memiliki tepat delapan baris dan 24 kelompok (480 kelompok).
 - 20/20 halaman tidak memiliki kelompok identik berulang di dalam halaman.
-- **P029:** satu kelompok memuat token identik dua kali (`بُ بُ` pada salah satu kelompok).
-- **P030:** satu kelompok memuat token identik dua kali (`دُ دُ` pada salah satu kelompok).
-- Pengulangan token di dalam kelompok tidak otomatis melanggar register, tetapi perlu kurasi pedagogis agar variasi latihan baik.
+- **P029:** koreksi audit — grid aktual memuat `جَ بُ تُ`, bukan pengulangan `بُ بُ`; tidak ada duplikasi token dalam kelompok.
+- **P030:** koreksi audit — grid aktual memuat `زَ دُ ذُ`, bukan pengulangan `دُ دُ`; tidak ada duplikasi token dalam kelompok.
+- Koreksi: tidak ditemukan token identik dalam kelompok pada P021–P040 setelah pemeriksaan ulang sumber aktual. Kurasi pedagogis tetap diperlukan.
 - P040 memiliki 29 identitas tanpa harakat dan cakupan identitas pada grid menurut audit sebelumnya; bukti visual/glyph belum diperiksa.
 
 ## Batas klaim
@@ -25,6 +25,9 @@ Enam file grid aktual di `02_MASTER_SYSTEM/8J_DIALOG_INVENTORY/`:
 - Pemeriksaan token legal dan distribusi identitas menyeluruh per halaman memerlukan QA berikutnya.
 
 ## Tindakan berikut
-1. Revisi dua kelompok berulang pada P029/P030 sebagai file versi baru setelah mempertahankan legalitas token dan keseimbangan tiga harakat.
+1. Tidak perlu revisi P029/P030 untuk isu duplikasi token; temuan awal merupakan false positive audit.
 2. Audit P001–P020 dan empat panel per halaman terhadap sumber otoritatif.
 3. Tashih nash dan arti, proof cetak serta gate visual sebelum status FINAL.
+
+## Koreksi audit (15 Oktober 2026)
+Pembacaan ulang sumber P028–P030 mengonfirmasi `جَ بُ تُ` dan `زَ دُ ذُ`. Temuan duplikasi P029/P030 pada audit awal ditarik. File grid tidak diubah.
