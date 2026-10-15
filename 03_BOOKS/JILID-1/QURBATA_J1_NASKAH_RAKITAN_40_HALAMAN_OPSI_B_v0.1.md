@@ -1,12 +1,22 @@
-# QURBATA JILID 1 — NASKAH RAKITAN 40 HALAMAN v0.1
+# QURBATA JILID 1 — NASKAH RAKITAN 40 HALAMAN v0.2
 
 **STATUS: PROTOTIPE NASKAH TERPADU / NOT FROZEN / NOT PRINT READY.** Ini penyatuan empat domain menjadi **40 unit halaman santri** berdasarkan register Tartil FROZEN, overlay integrasi FROZEN v1.3, dan **Tahfidz Opsi B kandidat validasi**. Bukan pengganti naskah Tartil yang sudah disahkan. **Tidak ada teks ayat Tahfidz yang direka**; target referensi ditampilkan untuk pengisian setelah tashih nash dan arti. Panel Arab lisan **bukan kompetensi membaca mandiri**.
 
 **Sumber otoritatif:** `03_BOOKS/JILID-1/PAGE_REGISTER_P001-P010_FROZEN-v1.0.md` sampai `PAGE_REGISTER_P031-P040_FROZEN-v1.0.md` (Tartil); `03_BOOKS/JILID-1/PAGE_REGISTER_P001-P040_INTEGRATION_FROZEN-v1.3.md` (Bi'ah, Akhlak, arti); `02_MASTER_SYSTEM/TAHFIDZ/QURBATA-TAHFIDZ-J1-P001-P040-MAP-v0.2.md` (Opsi B, kandidat). Skenario guru tersedia terpisah di `02_MASTER_SYSTEM/8J_DIALOG_INVENTORY/QJ1_P001-P005_SKENARIO_4_DOMAIN_OPSI_B_v0.1.md` dan lanjutan hingga P040.
 
+**Pembaruan v0.2:** setiap halaman kini memuat instruksi Arab lisan, respons santri, praktik Bi'ah dan contoh tanya-jawab kontekstual. Dialog tambahan adalah panduan lisan yang bisa disesuaikan keadaan, bukan teks bacaan Tartil. Bank skenario rinci P001–P040 tetap menjadi sumber pendalaman, bukan diganti.
+
 **Susunan buku:** judul kompetensi → blok Tartil dominan (ambil grid asli/tervalidasi dari master, **bukan mencipta ulang**) → Tahfidz talqin dan arti → Bi'ah + arti → Akhlak + arti → ruang tanggal/nilai/paraf + QR RIQA OS. Naskah ini mengisi konten kendali; layout final menunggu audit.
 
 ## HALAMAN P001
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **السَّلَامُ عَلَيْكُمْ**
+- Santri: **وَعَلَيْكُمُ السَّلَامُ**
+- Praktik: Guru membuka kelas dan santri menjawab salam.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — بَ تَ ثَ**
 
@@ -36,6 +46,14 @@ Arti: Sebarkanlah salam di antara kalian. Status: INTRODUCE → REPEAT-2.
 
 ## HALAMAN P002
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **السَّلَامُ عَلَيْكُمْ**
+- Santri: **وَعَلَيْكُمُ السَّلَامُ**
+- Praktik: Guru membuka kelas dan santri menjawab salam.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — ءَ أَ**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P002.
@@ -63,6 +81,14 @@ Arti: Sebarkanlah salam di antara kalian. Status: INTRODUCE → REPEAT-2.
 ---
 
 ## HALAMAN P003
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **السَّلَامُ عَلَيْكُمْ**
+- Santri: **وَعَلَيْكُمُ السَّلَامُ**
+- Praktik: Guru membuka kelas dan santri menjawab salam.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — جَ حَ خَ**
 
@@ -92,6 +118,14 @@ Arti: Sebarkanlah salam di antara kalian. Status: INTRODUCE → REPEAT-2.
 
 ## HALAMAN P004
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **اُنْظُرْ إِلَى الْحَرْفِ**
+- Santri: **نَعَمْ، أَنْظُرُ**
+- Praktik: Guru menunjuk huruf pada buku, santri melihat.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — دَ ذَ رَ زَ**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P004.
@@ -119,6 +153,14 @@ Arti: Ya Tuhanku, tambahkanlah ilmuku. Status: INTRODUCE → REPEAT-2.
 ---
 
 ## HALAMAN P005
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **اُنْظُرْ إِلَى الْحَرْفِ**
+- Santri: **نَعَمْ، أَنْظُرُ**
+- Praktik: Guru menunjuk huruf pada buku, santri melihat.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — سَ شَ**
 
@@ -148,6 +190,14 @@ Arti: Ya Tuhanku, tambahkanlah ilmuku. Status: INTRODUCE → REPEAT-2.
 
 ## HALAMAN P006
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **اُنْظُرْ إِلَى الْحَرْفِ**
+- Santri: **نَعَمْ، أَنْظُرُ**
+- Praktik: Guru menunjuk huruf pada buku, santri melihat.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — صَ ضَ**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P006.
@@ -175,6 +225,14 @@ Arti: Ya Tuhanku, tambahkanlah ilmuku. Status: INTRODUCE → REPEAT-2.
 ---
 
 ## HALAMAN P007
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **اِسْتَمِعْ جَيِّدًا**
+- Santri: **نَعَمْ، أَسْتَمِعُ**
+- Praktik: Guru memperdengarkan contoh bunyi, santri menyimak.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — طَ ظَ**
 
@@ -204,6 +262,14 @@ Arti: Dengarkanlah dan perhatikanlah dengan tenang. Status: INTRODUCE → REPEAT
 
 ## HALAMAN P008
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **اِسْتَمِعْ جَيِّدًا**
+- Santri: **نَعَمْ، أَسْتَمِعُ**
+- Praktik: Guru memperdengarkan contoh bunyi, santri menyimak.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — عَ غَ**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P008.
@@ -231,6 +297,14 @@ Arti: Dengarkanlah dan perhatikanlah dengan tenang. Status: INTRODUCE → REPEAT
 ---
 
 ## HALAMAN P009
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **اِسْتَمِعْ جَيِّدًا**
+- Santri: **نَعَمْ، أَسْتَمِعُ**
+- Praktik: Guru memperdengarkan contoh bunyi, santri menyimak.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — فَ قَ**
 
@@ -260,6 +334,14 @@ Arti: Dengarkanlah dan perhatikanlah dengan tenang. Status: INTRODUCE → REPEAT
 
 ## HALAMAN P010
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **اِسْتَمِعْ جَيِّدًا**
+- Santri: **نَعَمْ، أَسْتَمِعُ**
+- Praktik: Guru memperdengarkan contoh bunyi, santri menyimak.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — Evaluasi fathah (22 bentuk)**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P010.
@@ -287,6 +369,14 @@ Arti: Sebarkanlah salam di antara kalian. Status: REINFORCE.
 ---
 
 ## HALAMAN P011
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **اِقْرَأْ هَذَا الْحَرْفَ**
+- Santri: **نَعَمْ**
+- Praktik: Santri membaca hanya huruf Tartil yang sudah dipelajari.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — كَ لَ**
 
@@ -316,6 +406,14 @@ Arti: Sesungguhnya Allah bersama orang-orang yang sabar. Status: INTRODUCE → R
 
 ## HALAMAN P012
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **اِقْرَأْ هَذَا الْحَرْفَ**
+- Santri: **نَعَمْ**
+- Praktik: Santri membaca hanya huruf Tartil yang sudah dipelajari.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — مَ نَ**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P012.
@@ -343,6 +441,14 @@ Arti: Sesungguhnya Allah bersama orang-orang yang sabar. Status: INTRODUCE → R
 ---
 
 ## HALAMAN P013
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **اِقْرَأْ هَذَا الْحَرْفَ**
+- Santri: **نَعَمْ**
+- Praktik: Santri membaca hanya huruf Tartil yang sudah dipelajari.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — هَ وَ يَ**
 
@@ -372,6 +478,14 @@ Arti: Sesungguhnya Allah bersama orang-orang yang sabar. Status: INTRODUCE → R
 
 ## HALAMAN P014
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **أَعِدْ مَرَّةً أُخْرَى**
+- Santri: **نَعَمْ، أُعِيدُ**
+- Praktik: Guru meminta santri mengulang bacaan.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — بِ تِ ثِ جِ**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P014.
@@ -399,6 +513,14 @@ Arti: Dan bagimu surga. Status: INTRODUCE → REPEAT-2.
 ---
 
 ## HALAMAN P015
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **أَعِدْ مَرَّةً أُخْرَى**
+- Santri: **نَعَمْ، أُعِيدُ**
+- Praktik: Guru meminta santri mengulang bacaan.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — حِ خِ دِ ذِ**
 
@@ -428,6 +550,14 @@ Arti: Dan bagimu surga. Status: INTRODUCE → REPEAT-2.
 
 ## HALAMAN P016
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **أَعِدْ مَرَّةً أُخْرَى**
+- Santri: **نَعَمْ، أُعِيدُ**
+- Praktik: Guru meminta santri mengulang bacaan.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — رِ زِ سِ شِ**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P016.
@@ -455,6 +585,14 @@ Arti: Dan bagimu surga. Status: INTRODUCE → REPEAT-2.
 ---
 
 ## HALAMAN P017
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **اِفْتَحِ الْكِتَابَ**
+- Santri: **نَعَمْ، أَفْتَحُ الْكِتَابَ**
+- Praktik: Santri membuka buku.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — صِ ضِ طِ ظِ**
 
@@ -484,6 +622,14 @@ Arti: Berkatalah yang baik kepada manusia. Status: INTRODUCE → REPEAT-2.
 
 ## HALAMAN P018
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **اِفْتَحِ الْكِتَابَ**
+- Santri: **نَعَمْ، أَفْتَحُ الْكِتَابَ**
+- Praktik: Santri membuka buku.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — عِ غِ فِ قِ**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P018.
@@ -511,6 +657,14 @@ Arti: Berkatalah yang baik kepada manusia. Status: INTRODUCE → REPEAT-2.
 ---
 
 ## HALAMAN P019
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **اِفْتَحِ الْكِتَابَ**
+- Santri: **نَعَمْ، أَفْتَحُ الْكِتَابَ**
+- Praktik: Santri membuka buku.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — كِ لِ مِ نِ هِ وِ يِ ءِ إِ**
 
@@ -540,6 +694,14 @@ Arti: Berkatalah yang baik kepada manusia. Status: INTRODUCE → REPEAT-2.
 
 ## HALAMAN P020
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **اِقْرَأْ هَذَا الْحَرْفَ**
+- Santri: **نَعَمْ**
+- Praktik: Santri membaca hanya huruf Tartil yang sudah dipelajari.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — Checkpoint fathah + kasrah**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P020.
@@ -567,6 +729,14 @@ Arti: Ya Tuhanku, tambahkanlah ilmuku. Status: REINFORCE.
 ---
 
 ## HALAMAN P021
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **أَغْلِقِ الْكِتَابَ**
+- Santri: **نَعَمْ، أُغْلِقُ الْكِتَابَ**
+- Praktik: Santri menutup buku.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — بُ تُ ثُ جُ**
 
@@ -596,6 +766,14 @@ Arti: Tunaikan amanah kepada orang yang mempercayaimu. Status: INTRODUCE → REP
 
 ## HALAMAN P022
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **أَغْلِقِ الْكِتَابَ**
+- Santri: **نَعَمْ، أُغْلِقُ الْكِتَابَ**
+- Praktik: Santri menutup buku.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — حُ خُ دُ ذُ**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P022.
@@ -623,6 +801,14 @@ Arti: Tunaikan amanah kepada orang yang mempercayaimu. Status: INTRODUCE → REP
 ---
 
 ## HALAMAN P023
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **أَغْلِقِ الْكِتَابَ**
+- Santri: **نَعَمْ، أُغْلِقُ الْكِتَابَ**
+- Praktik: Santri menutup buku.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — رُ زُ سُ شُ**
 
@@ -652,6 +838,14 @@ Arti: Tunaikan amanah kepada orang yang mempercayaimu. Status: INTRODUCE → REP
 
 ## HALAMAN P024
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **مَرَّةً أُخْرَى**
+- Santri: **حَاضِرٌ**
+- Praktik: Guru meminta pengulangan, santri bersiap mengulang.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — صُ ضُ طُ ظُ**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P024.
@@ -679,6 +873,14 @@ Arti: Janganlah berlebih-lebihan. Status: INTRODUCE → REPEAT-2.
 ---
 
 ## HALAMAN P025
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **مَرَّةً أُخْرَى**
+- Santri: **حَاضِرٌ**
+- Praktik: Guru meminta pengulangan, santri bersiap mengulang.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — عُ غُ فُ قُ**
 
@@ -708,6 +910,14 @@ Arti: Janganlah berlebih-lebihan. Status: INTRODUCE → REPEAT-2.
 
 ## HALAMAN P026
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **مَرَّةً أُخْرَى**
+- Santri: **حَاضِرٌ**
+- Praktik: Guru meminta pengulangan, santri bersiap mengulang.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — كُ لُ مُ نُ**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P026.
@@ -735,6 +945,14 @@ Arti: Janganlah berlebih-lebihan. Status: INTRODUCE → REPEAT-2.
 ---
 
 ## HALAMAN P027
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **قِفْ**
+- Santri: **نَعَمْ**
+- Praktik: Santri menghentikan bacaan.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — هُ وُ يُ ءُ (grafem alif/hamzah perlu audit)**
 
@@ -764,6 +982,14 @@ Arti: Berlomba-lombalah dalam kebaikan. Status: INTRODUCE → REPEAT-2.
 
 ## HALAMAN P028
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **قِفْ**
+- Santri: **نَعَمْ**
+- Praktik: Santri menghentikan bacaan.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — Penguatan dhammah**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P028.
@@ -791,6 +1017,14 @@ Arti: Berlomba-lombalah dalam kebaikan. Status: INTRODUCE → REPEAT-2.
 ---
 
 ## HALAMAN P029
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **قِفْ**
+- Santri: **نَعَمْ**
+- Praktik: Santri menghentikan bacaan.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — Kumulatif tiga harakat**
 
@@ -820,6 +1054,14 @@ Arti: Berlomba-lombalah dalam kebaikan. Status: INTRODUCE → REPEAT-2.
 
 ## HALAMAN P030
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **مَرَّةً أُخْرَى**
+- Santri: **حَاضِرٌ**
+- Praktik: Guru meminta pengulangan, santri bersiap mengulang.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — Kumulatif tiga harakat**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P030.
@@ -847,6 +1089,14 @@ Arti: Beristiqamahlah sebagaimana diperintahkan kepadamu. Status: INTRODUCE.
 ---
 
 ## HALAMAN P031
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **وَاصِلْ**
+- Santri: **نَعَمْ، أُوَاصِلُ**
+- Praktik: Santri melanjutkan latihan.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — Kumulatif tiga harakat**
 
@@ -876,6 +1126,14 @@ Arti: Sesungguhnya orang-orang beriman itu bersaudara. Status: INTRODUCE → REP
 
 ## HALAMAN P032
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **وَاصِلْ**
+- Santri: **نَعَمْ، أُوَاصِلُ**
+- Praktik: Santri melanjutkan latihan.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — Kumulatif tiga harakat**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P032.
@@ -903,6 +1161,14 @@ Arti: Sesungguhnya orang-orang beriman itu bersaudara. Status: INTRODUCE → REP
 ---
 
 ## HALAMAN P033
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **وَاصِلْ**
+- Santri: **نَعَمْ، أُوَاصِلُ**
+- Praktik: Santri melanjutkan latihan.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — Kumulatif tiga harakat**
 
@@ -932,6 +1198,14 @@ Arti: Sesungguhnya orang-orang beriman itu bersaudara. Status: INTRODUCE → REP
 
 ## HALAMAN P034
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **هَلْ هَذَا صَحِيحٌ؟**
+- Santri: **نَعَمْ**
+- Praktik: Jawaban hanya jika contoh yang ditunjuk benar.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — Latihan akhir tiga harakat**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P034.
@@ -959,6 +1233,14 @@ Arti: Orang-orang yang memaafkan manusia. Status: INTRODUCE → REPEAT-2.
 ---
 
 ## HALAMAN P035
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **هَلْ هَذَا صَحِيحٌ؟**
+- Santri: **نَعَمْ**
+- Praktik: Jawaban hanya jika contoh yang ditunjuk benar.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — Latihan akhir tiga harakat**
 
@@ -988,6 +1270,14 @@ Arti: Orang-orang yang memaafkan manusia. Status: INTRODUCE → REPEAT-2.
 
 ## HALAMAN P036
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **هَلْ هَذَا صَحِيحٌ؟**
+- Santri: **لَا**
+- Praktik: Jawaban hanya jika contoh yang ditunjuk salah.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — Evaluatif tiga harakat**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P036.
@@ -1015,6 +1305,14 @@ Arti: Orang-orang yang memaafkan manusia. Status: INTRODUCE → REPEAT-2.
 ---
 
 ## HALAMAN P037
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **هَلْ هَذَا صَحِيحٌ؟**
+- Santri: **لَا**
+- Praktik: Jawaban hanya jika contoh yang ditunjuk salah.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — Evaluatif tiga harakat**
 
@@ -1044,6 +1342,14 @@ Arti: Bacalah Al-Qur'an dengan tartil. Status: INTRODUCE → REPEAT-2.
 
 ## HALAMAN P038
 
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **أَحْسَنْتَ**
+- Santri: **الْحَمْدُ لِلَّهِ**
+- Praktik: Guru memuji usaha santri.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
+
 **TARTIL — Evaluatif tiga harakat**
 
 - Materi latihan santri: **tautkan dari master Tartil frozen dan grid yang sudah lolos QA**. Bentuk huruf lepas dan harakat hanya yang legal sampai P038.
@@ -1071,6 +1377,14 @@ Arti: Bacalah Al-Qur'an dengan tartil. Status: INTRODUCE → REPEAT-2.
 ---
 
 ## HALAMAN P039
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **أَحْسَنْتَ**
+- Santri: **الْحَمْدُ لِلَّهِ**
+- Praktik: Guru memuji usaha santri.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — Pra-checkpoint**
 
@@ -1100,6 +1414,14 @@ Arti: Bacalah Al-Qur'an dengan tartil. Status: INTRODUCE → REPEAT-2.
 ---
 
 ## HALAMAN P040
+
+**INSTRUKSI ARAB & DIALOG GURU–SANTRI (LISAN; KONTEKSTUAL)**
+
+- Guru: **الْحَمْدُ لِلَّهِ**
+- Santri: **الْحَمْدُ لِلَّهِ**
+- Praktik: Guru dan santri menutup sesi.
+- Tartil: guru mengarahkan **اُنْظُرْ — اِسْتَمِعْ — اِقْرَأْ — أَعِدْ** pada huruf lepas yang legal; santri menunjuk, menirukan, lalu membaca. Untuk Tahfidz, guru menggunakan **اِسْتَمِعْ ثُمَّ أَعِدْ** (talqin, bukan membaca ayat mandiri). Untuk Akhlak, guru membacakan panel dan mencontohkan tindakan, santri merespons secara lisan.
+- Tanya-jawab tambahan saat benar-benar ada objek: **أَيْنَ الْكِتَابُ؟** — **الْكِتَابُ عَلَى الْمَكْتَبِ** (buku di atas meja), atau **الْكِتَابُ تَحْتَ الْمَكْتَبِ** (buku di bawah meja). **Jangan** mengucapkan jawaban posisi yang tidak sesuai kenyataan.
 
 **TARTIL — Checkpoint akhir: 29 huruf + 3 nama harakat**
 
