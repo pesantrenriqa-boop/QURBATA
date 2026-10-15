@@ -19,17 +19,19 @@ footer{margin-top:auto;border-top:1px solid #c9ddda;padding-top:3mm;font-size:9p
 @media print{body{background:white}.page{margin:0;break-after:page;width:auto;min-height:0;height:186mm;padding:0;box-shadow:none}.page:last-child{break-after:auto}}
 </style></head><body><main id="pages"></main>
 <script src="./qurbata-a5-staging-data-p001-p010.js"></script>
+<script src="./qurbata-a5-staging-data-p002-p009.js"></script>
 <script>
 /* REVIEW-ONLY. Set window.QURBATA_PAGES to an array of validated records before this script.
 Example record: {page:"P001",grid:[24 arrays of 2 or 3 detached tokens],biah:"...",akhlak:"...",tahfidz:{surah:"An-Nas",ayah:1,arabic:"",translation_id:""},logo_url:"",qr_url:"",gate:"REVIEW"}.
 Never supply unverified ayah/translation to print. */
 (function(){
- const pages=window.QURBATA_PAGES||[];
+ const pages=[...(window.QURBATA_PAGES||[]),...(window.QURBATA_PAGES_MIDDLE||[])].sort((a,b)=>Number(a.page.slice(1))-Number(b.page.slice(1)));
  const root=document.getElementById("pages");
  const el=(tag,cls,text)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(text!==undefined)x.textContent=text;return x};
  for(const data of pages){
   if(!Array.isArray(data.grid)||data.grid.length!==24||data.grid.some(g=>!Array.isArray(g)||g.length<2||g.length>5))throw Error("Invalid 8x3 grid "+data.page);
   const page=el("article","page"),header=el("header");
+  if(data.gate&&data.gate.includes("BLOCKED")){page.style.outline="2px dashed #a45c1d";page.setAttribute("data-release","BLOCKED");}
   const identity=el("div");identity.append(el("div","brand","QURBATA"),el("div","meta","JILID 1 · "+data.page+" · DRAF TASHIH"));
   header.append(identity);
   if(data.logo_url){const img=el("img","logo");img.src=data.logo_url;img.alt="Logo resmi";header.append(img)}else header.append(el("span","placeholder","LOGO BELUM TERPASANG"));
