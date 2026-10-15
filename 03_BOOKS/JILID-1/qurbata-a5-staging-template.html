@@ -4,19 +4,19 @@
 <style>
 @page {size:A5 portrait;margin:11mm 10mm 13mm}
 *{box-sizing:border-box}body{margin:0;background:#eee;color:#153d3c;font-family:Arial,sans-serif}
-.page{width:148mm;min-height:210mm;margin:12px auto;padding:11mm 10mm 13mm;background:white;display:flex;flex-direction:column;gap:4mm}
+.page{position:relative;width:148mm;min-height:210mm;margin:12px auto;padding:11mm 10mm 13mm;background:white;display:flex;flex-direction:column;gap:4mm}
 .qa-banner{font:700 10px Arial,sans-serif;padding:7px 10px;background:#fff1d6;color:#633d00;text-align:center}header{display:flex;align-items:center;justify-content:space-between;border-bottom:1.5px solid #197c77;padding-bottom:3mm}
 .brand{font-size:15px;font-weight:bold}.meta{font-size:9px;color:#596b6a}
 .logo{width:17mm;height:17mm;object-fit:contain}.placeholder{font-size:8px;color:#9a5100}
 .ar{font-family:"KFGQPC Uthman Taha",serif;direction:rtl;unicode-bidi:isolate}
-.panel{border-radius:3mm;border:1px solid #c9ddda;padding:2.5mm}
+.page::after{content:"DRAF · TIDAK UNTUK CETAK FINAL";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-34deg);font:700 21px Arial,sans-serif;color:rgba(160,70,30,.17);pointer-events:none;white-space:nowrap;z-index:5}.panel{border-radius:3mm;border:1px solid #c9ddda;padding:2.5mm}
 .panel h2{margin:0 0 2mm;font-size:10px;letter-spacing:.04em}
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2mm;direction:rtl}
 .group{display:flex;align-items:center;justify-content:center;min-height:10mm;border-bottom:1px solid #d7e5e3;font-size:22px;white-space:nowrap;direction:rtl}
 .group .token{display:inline-block;margin-inline:1.2mm}
 .panel.small{min-height:17mm}.panel.small .ar{font-size:18px}
 footer{margin-top:auto;border-top:1px solid #c9ddda;padding-top:3mm;font-size:9px;display:flex;justify-content:space-between}
-@media print{.qa-banner{display:none}body{background:white}.page{margin:0;break-after:page;width:auto;min-height:0;height:186mm;padding:0;box-shadow:none}.page:last-child{break-after:auto}}
+@media print{.qa-banner{display:block!important;position:fixed;top:0;left:0;right:0;z-index:99;font-size:8px}.page::after{color:rgba(160,70,30,.22)}body{background:white}.page{margin:0;break-after:page;width:auto;min-height:0;height:186mm;padding:0;box-shadow:none}.page:last-child{break-after:auto}}
 </style></head><body><div id="qa-banner" class="qa-banner" role="status">STAGING · BELUM LULUS QA FONT, TASHIH DAN CC-001 · JANGAN CETAK SEBAGAI BUKU FINAL</div><main id="pages"></main>
 <script src="./qurbata-a5-staging-data-p001-p010.js"></script>
 <script src="./qurbata-a5-staging-data-p002-p009.js"></script>
@@ -52,10 +52,10 @@ Never supply unverified ayah/translation to print. */
   return {dup,countTarget};
  }
  pages.forEach(gatePage);
- const fontOK=!!(document.fonts&&document.fonts.check('18px "KFGQPC Uthman Taha"'));
+ const fontOK=!!(document.fonts&&Array.from(document.fonts).some(f=>f.family.replace(/[\x22\x27]/g,"").trim().toLowerCase()==="kfgqpc uthman taha"&&f.status==="loaded"));
  const qaBanner=document.getElementById("qa-banner");
  qaBanner.textContent="STAGING · "+(fontOK?"FONT TERDETEKSI":"FONT UTHMAN TAHA BELUM TERDETEKSI")+" · CC-001 BELUM DISETUJUI · TASHIH BELUM SELESAI";
- window.addEventListener("beforeprint",()=>{if(!window.QURBATA_ALLOW_STAGING_PRINT){qaBanner.style.display="block";window.alert("Ini hanya staging. PDF yang dicetak tidak boleh digunakan sebagai master buku final.");}});
+ window.addEventListener("beforeprint",()=>{qaBanner.style.display="block";});
  const el=(tag,cls,text)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(text!==undefined)x.textContent=text;return x};
  for(const data of pages){
   if(!Array.isArray(data.grid)||data.grid.length!==24||data.grid.some(g=>!Array.isArray(g)||g.length<2||g.length>5))throw Error("Invalid 8x3 grid "+data.page);
@@ -80,6 +80,7 @@ Never supply unverified ayah/translation to print. */
   const foot=el("footer");foot.append(el("span","","Nilai: ______"),el("span","","Tanggal: ______"),el("span","","Paraf: ______"));
   page.append(foot,el("div","meta","STATUS: "+(data.gate||"REVIEW ONLY")+" · BUKAN SIAP CETAK"));root.append(page);
  }
+ requestAnimationFrame(()=>{for(const page of root.querySelectorAll(".page")){const bounds=page.getBoundingClientRect();const last=page.lastElementChild?.getBoundingClientRect();if(last&&last.bottom>bounds.bottom+1){page.dataset.overflow="YES";page.style.outline="3px solid #b42318";console.error("A5 overflow",page.querySelector(".meta")?.textContent);}}});
  if(!pages.length)root.append(el("p","placeholder","Belum ada data halaman. Muat window.QURBATA_PAGES dari sumber kandidat terverifikasi."));
 })();
 </script></body></html>
