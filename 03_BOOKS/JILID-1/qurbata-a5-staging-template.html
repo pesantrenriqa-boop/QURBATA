@@ -5,7 +5,7 @@
 @page {size:A5 portrait;margin:11mm 10mm 13mm}
 *{box-sizing:border-box}body{margin:0;background:#eee;color:#153d3c;font-family:Arial,sans-serif}
 .page{width:148mm;min-height:210mm;margin:12px auto;padding:11mm 10mm 13mm;background:white;display:flex;flex-direction:column;gap:4mm}
-header{display:flex;align-items:center;justify-content:space-between;border-bottom:1.5px solid #197c77;padding-bottom:3mm}
+.qa-banner{font:700 10px Arial,sans-serif;padding:7px 10px;background:#fff1d6;color:#633d00;text-align:center}header{display:flex;align-items:center;justify-content:space-between;border-bottom:1.5px solid #197c77;padding-bottom:3mm}
 .brand{font-size:15px;font-weight:bold}.meta{font-size:9px;color:#596b6a}
 .logo{width:17mm;height:17mm;object-fit:contain}.placeholder{font-size:8px;color:#9a5100}
 .ar{font-family:"KFGQPC Uthman Taha",serif;direction:rtl;unicode-bidi:isolate}
@@ -16,8 +16,8 @@ header{display:flex;align-items:center;justify-content:space-between;border-bott
 .group .token{display:inline-block;margin-inline:1.2mm}
 .panel.small{min-height:17mm}.panel.small .ar{font-size:18px}
 footer{margin-top:auto;border-top:1px solid #c9ddda;padding-top:3mm;font-size:9px;display:flex;justify-content:space-between}
-@media print{body{background:white}.page{margin:0;break-after:page;width:auto;min-height:0;height:186mm;padding:0;box-shadow:none}.page:last-child{break-after:auto}}
-</style></head><body><main id="pages"></main>
+@media print{.qa-banner{display:none}body{background:white}.page{margin:0;break-after:page;width:auto;min-height:0;height:186mm;padding:0;box-shadow:none}.page:last-child{break-after:auto}}
+</style></head><body><div id="qa-banner" class="qa-banner" role="status">STAGING · BELUM LULUS QA FONT, TASHIH DAN CC-001 · JANGAN CETAK SEBAGAI BUKU FINAL</div><main id="pages"></main>
 <script src="./qurbata-a5-staging-data-p001-p010.js"></script>
 <script src="./qurbata-a5-staging-data-p002-p009.js"></script>
 <script>
@@ -27,6 +27,35 @@ Never supply unverified ayah/translation to print. */
 (function(){
  const pages=[...(window.QURBATA_PAGES||[]),...(window.QURBATA_PAGES_MIDDLE||[])].sort((a,b)=>Number(a.page.slice(1))-Number(b.page.slice(1)));
  const root=document.getElementById("pages");
+ const expected=Array.from({length:10},(_,i)=>"P"+String(i+1).padStart(3,"0"));
+ const found=pages.map(x=>x.page);
+ if(JSON.stringify(found)!==JSON.stringify(expected))throw Error("Missing, duplicate or misordered page in P001-P010 data");
+ const blocked=new Set(["P002","P005","P006","P007","P008","P009"]);
+ const targetByPage={"P001":"بَ تَ ثَ","P002":"ءَ أَ","P003":"جَ حَ خَ","P004":"دَ ذَ رَ زَ","P005":"سَ شَ","P006":"صَ ضَ","P007":"طَ ظَ","P008":"عَ غَ","P009":"فَ قَ"};
+ const legal=new Set();
+ function gatePage(data){
+  const isCheckpoint=data.page==="P010";const target=(targetByPage[data.page]||"").split(" ").filter(Boolean);
+  if(!isCheckpoint)target.forEach(t=>legal.add(t));
+  const grid=data.grid;
+  if(!Array.isArray(grid)||grid.length!==24)throw Error("24 groups required "+data.page);
+  const keys=[];let countTarget=0;
+  grid.forEach((group,i)=>{
+   if(!Array.isArray(group)||group.length<(isCheckpoint?2:i<6?2:3)||(!isCheckpoint&&group.length!==(i<6?2:3))||group.length>5)throw Error("Invalid group length "+data.page+" group "+(i+1));
+   group.forEach(token=>{if(!legal.has(token))throw Error("Future/illegal token "+data.page+" "+token);if(target.includes(token))countTarget++;if(i<6&&!isCheckpoint&&!target.includes(token))throw Error("Planting mismatch "+data.page)});
+   if(!isCheckpoint&&i>=6&&!group.some(token=>target.includes(token)))throw Error("Practice missing target "+data.page);
+   keys.push(group.join("|"));
+  });
+  const dup=keys.length-new Set(keys).size;
+  if(dup!==(blocked.has(data.page)?2:0))throw Error("Unexpected duplicate groups "+data.page+" "+dup);
+  if(!isCheckpoint&&countTarget!==(data.page==="P001"?66:40))throw Error("Target ratio mismatch "+data.page);
+  if(blocked.has(data.page)&&!String(data.gate).includes("CC-001"))throw Error("Missing CC-001 block "+data.page);
+  return {dup,countTarget};
+ }
+ pages.forEach(gatePage);
+ const fontOK=!!(document.fonts&&document.fonts.check('18px "KFGQPC Uthman Taha"'));
+ const qaBanner=document.getElementById("qa-banner");
+ qaBanner.textContent="STAGING · "+(fontOK?"FONT TERDETEKSI":"FONT UTHMAN TAHA BELUM TERDETEKSI")+" · CC-001 BELUM DISETUJUI · TASHIH BELUM SELESAI";
+ window.addEventListener("beforeprint",()=>{if(!window.QURBATA_ALLOW_STAGING_PRINT){qaBanner.style.display="block";window.alert("Ini hanya staging. PDF yang dicetak tidak boleh digunakan sebagai master buku final.");}});
  const el=(tag,cls,text)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(text!==undefined)x.textContent=text;return x};
  for(const data of pages){
   if(!Array.isArray(data.grid)||data.grid.length!==24||data.grid.some(g=>!Array.isArray(g)||g.length<2||g.length>5))throw Error("Invalid 8x3 grid "+data.page);
