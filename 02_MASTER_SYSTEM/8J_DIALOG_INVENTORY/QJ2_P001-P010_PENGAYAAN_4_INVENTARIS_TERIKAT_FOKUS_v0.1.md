@@ -1,0 +1,26 @@
+# QURBATA JILID 2 — EMPAT INVENTARIS P001–P010 (PENGAYAAN TERKENDALI) v0.1
+
+**STATUS: DRAF PENGAYAAN / BUKAN GRID FINAL / BELUM FROZEN.** Materi Tartil dan distribusi Tahfidz disalin sebagai fokus/target dari matriks staging J2 dan crosswalk Tahfidz FROZEN 320P. Dialog spesifik di bawah adalah **usulan pengayaan baru**, tidak diklaim berasal dari skenario lama. Contoh kartu guru bukan contoh latihan yang sudah disahkan. Untuk Akhlak/Hadis, **belum ada nash spesifik yang ditetapkan** pada sumber J2; tidak boleh mengarang atribusi hadis.
+
+| Halaman | 1. Tartil — fokus master | 2. Bi'ah Arabiyah — pengayaan lisan terikat fokus | 3. Akhlak/Hadis | 4. Tahfidz — baseline FROZEN |
+|---|---|---|---|---|
+| P001 | Konsep sambung dengan ب — **grid 8×3 belum disahkan** | Guru memperlihatkan kartu بَ dan bentuk awal بـ pada contoh terpisah. Tanya: أَيْنَ الْبَاءُ؟ Santri: هُنَا (menunjuk bentuk yang ditanyakan). Jangan menganggap kartu sebagai grid final. | **Nash belum teridentifikasi/tertakhrij**; tema dan dalil belum diputuskan | Quraisy 1–2 (talqin/setoran; nash mushaf belum ditempel) |
+| P002 | ب ت ث: satu kerangka, beda titik — **grid 8×3 belum disahkan** | Guru memperlihatkan bentuk awal بـ، تـ، ثـ. Tanya: كَمْ نُقْطَةً فَوْقَ ثـ؟ Santri: ثَلَاثُ نُقَطٍ. Pastikan contoh sudah ditashih. | **Nash belum teridentifikasi/tertakhrij**; tema dan dalil belum diputuskan | Quraisy 3–4 (talqin/setoran; nash mushaf belum ditempel) |
+| P003 | ب ت ث ن ي: kontras posisi — **grid 8×3 belum disahkan** | Guru menyiapkan kartu bentuk awal/akhir yang sudah diverifikasi. Tanya: أَيْنَ النُّقْطَةُ فِي ب؟ Santri: تَحْتَ الْحَرْفِ; pertanyaan mengacu kartu terpisah ب, bukan klaim semua bentuk posisi. | **Nash belum teridentifikasi/tertakhrij**; tema dan dalil belum diputuskan | Al-Fil 1–2 (talqin/setoran; nash mushaf belum ditempel) |
+| P004 | ج ح خ: keluarga mangkuk — **grid 8×3 belum disahkan** | Guru menampilkan جـ، حـ، خـ sebagai alat peraga, bukan grid buku. Tanya: هَلْ فَوْقَ خـ نُقْطَةٌ؟ Santri: نَعَمْ; untuk حـ jawab لَا. | **Nash belum teridentifikasi/tertakhrij**; tema dan dalil belum diputuskan | Al-Fil 3–5 (talqin/setoran; nash mushaf belum ditempel) |
+| P005 | د ذ ر ز: pemutus sambungan — **grid 8×3 belum disahkan** | Guru menunjukkan دَ ذَ رَ زَ dan satu contoh sambungan tervalidasi. Tanya: هَلْ فَوْقَ ذَ نُقْطَةٌ؟ Santri: نَعَمْ. Guru menjelaskan batas sambung lewat contoh, bukan sekadar titik. | **Nash belum teridentifikasi/tertakhrij**; tema dan dalil belum diputuskan | Al-Humazah 1–3 (talqin/setoran; nash mushaf belum ditempel) |
+| P006 | ا و: pemutus dalam rangkaian — **grid 8×3 belum disahkan** | Guru menyiapkan contoh dua rangkaian yang telah divalidasi. Tanya: أَيْنَ الْوَاوُ؟ Santri: هُنَا (menunjuk و). Jangan menyimpulkan alif berharakat tertentu tanpa contoh resmi. | **Nash belum teridentifikasi/tertakhrij**; tema dan dalil belum diputuskan | Al-Humazah 4–6 (talqin/setoran; nash mushaf belum ditempel) |
+| P007 | س ش: keluarga gigi — **grid 8×3 belum disahkan** | Guru memperlihatkan سـ dan شـ. Tanya: كَمْ نُقْطَةً فَوْقَ شـ؟ Santri: ثَلَاثُ نُقَطٍ. Bandingkan dengan سـ tanpa titik. | **Nash belum teridentifikasi/tertakhrij**; tema dan dalil belum diputuskan | Al-Humazah 7–9 (talqin/setoran; nash mushaf belum ditempel) |
+| P008 | ص ض: keluarga mangkuk tebal — **grid 8×3 belum disahkan** | Guru memperlihatkan صـ dan ضـ. Tanya: هَلْ فَوْقَ ضـ نُقْطَةٌ؟ Santri: نَعَمْ. Latihan bunyi memerlukan contoh makhraj dari guru. | **Nash belum teridentifikasi/tertakhrij**; tema dan dalil belum diputuskan | Al-Asr 1–3 (talqin/setoran; nash mushaf belum ditempel) |
+| P009 | ط ظ: batang tegak — **grid 8×3 belum disahkan** | Guru memperlihatkan طـ dan ظـ. Tanya: أَيْنَ النُّقْطَةُ فِي ظـ؟ Santri: فَوْقَ الْحَرْفِ. | **Nash belum teridentifikasi/tertakhrij**; tema dan dalil belum diputuskan | At-Takathur 1–2 (talqin/setoran; nash mushaf belum ditempel) |
+| P010 | Evaluasi bentuk I — **grid 8×3 belum disahkan** | Guru mengacak kartu keluarga huruf P001–P009, meminta santri menunjuk bentuk dan menyebut posisi. Tanya: أَيْنَ الْحَرْفُ؟ Santri: هُنَا. Tidak memperkenalkan bentuk baru. | **Nash belum teridentifikasi/tertakhrij**; tema dan dalil belum diputuskan | At-Takathur 3–4 (talqin/setoran; nash mushaf belum ditempel) |
+
+## Gate konten empat domain
+
+1. **Tartil:** kembangkan latihan aktual sesuai standar jilid, periksa sambungan tiap grafem, jumlah kelompok, dan harakat; jangan menyalin pola huruf lepas J1 secara mekanis ke J2.
+2. **Dialog:** setiap dialog harus diuji terhadap contoh **yang benar-benar dicetak**; saat ini posisi merujuk kartu demonstrasi guru, bukan koordinat halaman final. Koreksi redaksi Arab oleh reviewer.
+3. **Akhlak/Hadis:** inventaris tetap **kosong-tercatat** sampai nash Arab, sumber (Al-Qur'an/hadis/maqalah), takhrij bila hadis, dan relevansi adab tervalidasi. Jangan melabeli semua ayat sebagai hadis.
+4. **Tahfidz:** target J2 P001–P010 dari baseline FROZEN, bukan ayat yang diketik ulang; tashih nash dan arti sebelum masuk buku.
+5. **Produksi:** layout A5, font KFGQPC Uthman Taha, RTL, dan penilaian santri belum diuji.
+
+**Catatan:** Ini menambah isi pedagogis 10 halaman pertama J2, bukan mengklaim bahwa 320 halaman empat domain telah selesai.
