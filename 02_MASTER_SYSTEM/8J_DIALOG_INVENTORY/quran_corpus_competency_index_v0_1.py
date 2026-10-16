@@ -8,7 +8,8 @@ import argparse
 import csv
 import json
 import re
-from collections import Counter, defaultdict
+from collections import defaultdict
+import hashlib
 from pathlib import Path
 
 ARABIC_MARKS = re.compile(r"[\u064b-\u065f\u0670\u06d6-\u06ed]")
@@ -35,6 +36,7 @@ def main():
     args.output_dir.mkdir(parents=True, exist_ok=True)
     rows = []
     seen = set()
+    corpus_sha256 = hashlib.sha256(args.input_tsv.read_bytes()).hexdigest()
     with args.input_tsv.open(encoding="utf-8-sig", newline="") as f:
         rd = csv.DictReader(f, delimiter="\t")
         required = {"surah", "ayah", "token_index", "uthmani"}
@@ -64,8 +66,12 @@ def main():
                 out.write(json.dumps(item, ensure_ascii=False) + "\n")
     report = {
         "status": "AUTO-CANDIDATE / NOT FOR PRINT",
+        "source_file_sha256": corpus_sha256,
+        "source_file": args.input_tsv.name,
         "surahs_seen": len({r["surah"] for r in rows}),
         "surah_coverage_complete": len({r["surah"] for r in rows}) == 114,
+        "missing_surahs": sorted(set(range(1, 115)) - {r["surah"] for r in rows}),
+        "note": "114-surah coverage does not establish complete verses or tokens; compare against a validated manifest.",
         "token_occurrences": len(rows),
         "distinct_exact_forms": len({r["exact_uthmani"] for r in rows}),
         "candidate_counts": dict(sorted((k, len(v)) for k, v in by_feature.items())),
