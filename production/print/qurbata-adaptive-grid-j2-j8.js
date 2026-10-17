@@ -17,9 +17,11 @@ function validate(data){
   if(![1,2,3].includes(row.columns))throw Error("Invalid column count at row "+i);
   if(!types.has(row.content_type))throw Error("Invalid content type at row "+i);
   if(!Array.isArray(row.items)||row.items.length!==row.columns||row.items.some(v=>typeof v!=="string"||!v.trim()))throw Error("Each column needs exactly one nonempty item at row "+i);
-  if(["ayah_excerpt","full_ayah"].includes(row.content_type)&&(!row.source_ref||typeof row.source_ref!=="string"))throw Error("Qur'an reference required at row "+i);
+  if(["ayah_excerpt","full_ayah"].includes(row.content_type)&&(!row.source_ref||typeof row.source_ref!=="string"||!row.source_ref.trim()))throw Error("Qur'an reference required at row "+i);
+  if(row.content_type==="full_ayah"&&row.columns!==1)throw Error("Full ayah must occupy one full-width box at row "+i);
+  if(row.phase==="evaluation"&&row.columns!==1)throw Error("Reading evaluation must occupy one full-width box at row "+i);
   if(row.phase==="fluency"&&row.columns!==1)throw Error("Fluency exercises must use one full-width box at row "+i);
-  if(row.phase==="introduction"&&row.columns===1&&!row.allow_long_introduction)throw Error("New competency introduction requires 2–3 boxes, unless explicitly justified at row "+i);
+  if(row.phase==="introduction"&&row.columns===1&&!(data.jilid>=6&&typeof row.introduction_rationale==="string"&&row.introduction_rationale.trim().length>=12))throw Error("New competency introduction needs 2–3 boxes, or documented J6–J8 exception at row "+i);
  });
  return true;
 }
