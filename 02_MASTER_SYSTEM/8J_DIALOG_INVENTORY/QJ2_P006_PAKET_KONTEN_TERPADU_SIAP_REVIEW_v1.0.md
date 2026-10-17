@@ -26,3 +26,7 @@ G1–G4 review, G5 blocked.
 **Kunci latihan (detail):** (1) ا adalah alif mandiri; (2) و adalah waw mandiri; (3) waw tidak menyambung ke huruf sesudahnya; (4) alif tidak menyambung ke huruf sesudahnya; (5) guru memeriksa makhraj dan identifikasi dua kartu, bukan menilai panjang mad tanpa konteks harakat. **Catatan pedagogis:** alif dan waw dapat menerima sambungan dari huruf sebelumnya. Jangan mengajarkan keduanya sebagai huruf yang tidak pernah tersambung.
 
 **Gate tetap REVIEW; ini pemeriksaan internal, bukan tashih mushaf primer.**
+
+
+## Integrasi hadis Akhlak H04 — 17 Oktober 2026
+Kandidat matan: **إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ**. Sumber: Shahih al-Bukhari 1 (https://sunnah.com/bukhari:1). Penerapan kelas: usaha belajar dinilai dari perilaku, bukan menebak niat batin. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, rasm/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
