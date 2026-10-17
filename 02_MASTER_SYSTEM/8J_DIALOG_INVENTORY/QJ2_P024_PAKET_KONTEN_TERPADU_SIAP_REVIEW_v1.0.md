@@ -35,3 +35,7 @@ G1 BLOCKED (mushaf primer); G2 REVIEW; G3 REVIEW; G4 REVIEW; G5 BLOCKED. **Belum
 Klasifikasi tiga kartu: أَفْوَاجًا = fathatain pada ج; خَوْفٍ = kasratain pada ف; سَلَامٌ = dhammatain pada م. Tugas 4 mengelompokkan tiga kartu berbeda, bukan menyusun ketiganya menjadi frasa ayat. Tambahkan demonstrasi washal/waqaf dan rubrik terpisah; target Tahfidz Al-Bayyinah ayat 1 tetap satu ayat sesuai FROZEN.
 
 **Bukti yang masih dibutuhkan:** token mushaf primer, rasm/harakat, verifikasi ayat, tanda tangan penashih. G1 tetap BLOCKED; G2–G4 REVIEW; G5 BLOCKED.
+
+
+## Integrasi hadis Akhlak H09 — 17 Oktober 2026
+Kandidat matan: **مَنْ لَا يَرْحَمْ لَا يُرْحَمْ**. Sumber: Shahih al-Bukhari 5997 (https://sunnah.com/bukhari:5997). Penerapan kelas: kasih sayang kepada teman sebagai penerapan; konteks asal tentang Nabi mencium cucunya. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, matan/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
