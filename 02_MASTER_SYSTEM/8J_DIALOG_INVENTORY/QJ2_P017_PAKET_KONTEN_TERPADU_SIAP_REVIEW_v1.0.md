@@ -30,3 +30,7 @@ G1–G4 REVIEW; G5 BLOCKED. **NOT FOR PRINT.**
 **Batas rasm:** kartu ي dan ى merupakan representasi ortografi pedagogis umum. Bentuk ya akhir tanpa titik dalam rasm Utsmani tidak boleh otomatis diklasifikasikan sebagai alif maqsurah. Uji token mushaf dan font wajib sebelum menggeneralisasi aturan. Kunci kartu semata: ي bertitik dua, ى tanpa titik.
 
 **G1–G5 belum PASS; belum CONTENT-FINAL.**
+
+
+## Integrasi hadis Akhlak H07 — 17 Oktober 2026
+Kandidat matan: **الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ**. Sumber: Shahih al-Bukhari 10 (https://sunnah.com/bukhari:10). Penerapan kelas: menjaga ucapan dan tindakan, termasuk tidak mengejek teman. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, matan/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
