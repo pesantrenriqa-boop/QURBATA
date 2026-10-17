@@ -10,7 +10,7 @@
 2. أَشِرْ إِلَى الْأَلِفِ فِي كَانَ.
 3. مَا حَرَكَةُ الْقَافِ قَبْلَ الْأَلِفِ؟
 4. اِسْتَمِعْ إِلَى قَالَ ثُمَّ أَعِدْ.
-5. اِقْرَأْ كَانَ بَعْدَ الْمُعَلِّمِ.
+5. اِقْرَأِ الْبِطَاقَةَ الثَّانِيَةَ بَعْدَ الْمُعَلِّمِ.
 
 **Kunci:** A alif sesudah qaf berfathah; B sesudah kaf berfathah. Penilaian bacaan wajib melalui guru; bukan hanya cek simbol.
 
@@ -27,8 +27,8 @@
 1. ضَعْ دَائِرَةً حَوْلَ أَلِفِ الْمَدِّ فِي الْمَالُ.
 2. ضَعْ خَطًّا تَحْتَ أَلِفِ الْمَدِّ فِي النَّهَارَ.
 3. مَا الْحَرْفُ الَّذِي قَبْلَ الْأَلِفِ فِي الْمَالُ؟
-4. اِسْتَمِعْ إِلَى الْمَالُ ثُمَّ أَعِدْ.
-5. اِقْرَأِ النَّهَارَ بِتَأَنٍّ.
+4. اِسْتَمِعْ إِلَى قِرَاءَةِ الْبِطَاقَةِ الْأُولَى ثُمَّ أَعِدْ.
+5. اِقْرَأِ الْبِطَاقَةَ الثَّانِيَةَ بِتَأَنٍّ.
 
 **Kunci:** A alif sesudah mim; B alif sesudah ha. Bunyi lengkap diverifikasi guru. Penilaian bacaan wajib melalui guru; bukan hanya cek simbol.
 
@@ -40,15 +40,15 @@
 
 ## P027 — Mad alif
 
-**1. Tartil:** kartu A `كِتَابٌ` (2:89; CEK bentuk i‘rab dalam ayat); kartu B `عِبَادُ` (25:63; CEK: ayat memuat وَعِبَادُ).
+**1. Tartil:** kartu A `كِتَابٌ` (2:89; kandidat, perlu tashih rasm); kartu B `وَعِبَادُ` (25:63; bentuk berawalan waw pada ayat).
 
 1. اِبْحَثْ عَنْ أَلِفِ الْمَدِّ فِي كِتَابٌ.
-2. اِبْحَثْ عَنْ أَلِفِ الْمَدِّ فِي عِبَادُ.
+2. اِبْحَثْ عَنْ أَلِفِ الْمَدِّ فِي وَعِبَادُ.
 3. مَا حَرَكَةُ التَّاءِ فِي كِتَابٌ؟
 4. اِسْتَمِعْ إِلَى الْكَلِمَةِ الْأُولَى.
-5. اِقْرَأِ الْكَلِمَةَ الثَّانِيَةَ بَعْدَ الْمُعَلِّمِ.
+5. اِقْرَأِ الْبِطَاقَةَ الثَّانِيَةَ بَعْدَ الْمُعَلِّمِ.
 
-**Kunci:** A alif sesudah ta berfathah; B sesudah ba berfathah. Tanwin pada A bukan fokus. Penilaian bacaan wajib melalui guru; bukan hanya cek simbol.
+**Kunci:** A alif sesudah ta berfathah; B sesudah ba berfathah (waw prefiks bukan mad). Tanwin pada A bukan fokus. Penilaian bacaan wajib melalui guru; bukan hanya cek simbol.
 
 **2. Bi'ah Arabiyah:** المعلم: لِمَاذَا نَتَعَلَّمُ؟ الطالب: لِنَقْرَأَ الْقُرْآنَ قِرَاءَةً صَحِيحَةً. المعلم: أَيْنَ أَلِفُ الْمَدِّ؟ الطالب: هُنَا.
 
@@ -58,15 +58,15 @@
 
 ## P028 — Mad alif
 
-**1. Tartil:** kartu A `سَلَامٌ` (19:15; CEK: ayat memuat وَسَلَامٌ); kartu B `النَّارَ` (2:24).
+**1. Tartil:** kartu A `وَسَلَامٌ` (19:15; bentuk berawalan waw pada ayat); kartu B `النَّارَ` (2:24).
 
-1. أَشِرْ إِلَى أَلِفِ الْمَدِّ فِي سَلَامٌ.
+1. أَشِرْ إِلَى أَلِفِ الْمَدِّ فِي وَسَلَامٌ.
 2. أَشِرْ إِلَى أَلِفِ الْمَدِّ فِي النَّارَ.
 3. اِسْتَمِعْ إِلَى زَمِيلِكَ دُونَ مُقَاطَعَةٍ.
-4. اِقْرَأْ سَلَامٌ بَعْدَ الْمُعَلِّمِ.
+4. اِقْرَأِ الْبِطَاقَةَ الْأُولَى بَعْدَ الْمُعَلِّمِ.
 5. صَحِّحْ قِرَاءَتَكَ بِهُدُوءٍ.
 
-**Kunci:** A alif sesudah lam; B sesudah nun. Butir 3 dan 5 observasi perilaku, bukan tes huruf. Penilaian bacaan wajib melalui guru; bukan hanya cek simbol.
+**Kunci:** A alif sesudah lam; B sesudah nun (waw prefiks bukan mad). Butir 3 dan 5 observasi perilaku, bukan tes huruf. Penilaian bacaan wajib melalui guru; bukan hanya cek simbol.
 
 **2. Bi'ah Arabiyah:** المعلم: مَنْ يَقْرَأُ أَوَّلًا؟ الطالب: زَمِيلِي أَوَّلًا. المعلم: وَمَاذَا تَفْعَلُ أَنْتَ؟ الطالب: أَسْتَمِعُ إِلَيْهِ.
 
@@ -76,13 +76,13 @@
 
 ## P029 — Mad alif
 
-**1. Tartil:** kartu A `قَالَ` (2:30); kartu B `عِبَادُ` (25:63; CEK: ayat memuat وَعِبَادُ).
+**1. Tartil:** kartu A `قَالَ` (2:30); kartu B `وَعِبَادُ` (25:63; bentuk berawalan waw pada ayat).
 
-1. اِقْرَأْ قَالَ بَعْدَ الْمُعَلِّمِ.
-2. اِقْرَأْ عِبَادُ بَعْدَ الْمُعَلِّمِ.
+1. اِقْرَأِ الْبِطَاقَةَ الْأُولَى بَعْدَ الْمُعَلِّمِ.
+2. اِقْرَأِ الْبِطَاقَةَ الثَّانِيَةَ بَعْدَ الْمُعَلِّمِ.
 3. أَشِرْ إِلَى أَلِفِ الْمَدِّ فِي الْكَلِمَتَيْنِ.
 4. مَا الْحَرْفُ الَّذِي قَبْلَ الْأَلِفِ فِي قَالَ؟
-5. مَا الْحَرْفُ الَّذِي قَبْلَ الْأَلِفِ فِي عِبَادُ؟
+5. مَا الْحَرْفُ الَّذِي قَبْلَ الْأَلِفِ فِي وَعِبَادُ؟
 
 **Kunci:** A qaf; B ba. Keduanya sebelum alif berfathah. Penilaian bacaan wajib melalui guru; bukan hanya cek simbol.
 
@@ -127,3 +127,8 @@
 - **Catatan bahasa:** instruksi `اِسْتَمِعْ إِلَى الْمَالُ` dan `اِقْرَأْ سَلَامٌ` mencampurkan kutipan kartu dengan tuntutan i'rab kalimat perintah; revisi redaksional disarankan memakai `اِسْتَمِعْ إِلَى قِرَاءَةِ الْكَلِمَةِ الْأُولَى` dan `اِقْرَأِ الْبِطَاقَةَ الْأُولَى`.
 
 **Status:** isu rasm/token dan dialog tercatat; 0/6 CONTENT-FINAL.
+
+## Perbaikan diterapkan langsung pada isi (bukan catatan saja)
+- Kartu P027 B dan P028 A sekarang mempertahankan waw prefiks sesuai bentuk ayat yang dirujuk; bukan menampilkan token yang sudah dipotong tanpa penanda.
+- Instruksi dengan kata yang memiliki i'rab asal kini memakai 'البطاقة' agar tidak mengubah harakat kutipan saat dipakai sebagai objek gramatikal.
+- Pemeriksaan tashih mushaf primer dan reviewer tetap diperlukan sebelum penetapan CONTENT-FINAL. Audit belum dianggap sebagai pengesahan.
