@@ -1,0 +1,44 @@
+# Jilid 1 — Tabel 4 Inventaris
+
+| Halaman | Konten Tartil | Dialog Bahasa Arab | Akhlak/Hadis | Tahfidz |
+|---|---|---|---|---|
+| P001 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Keluarga Ba berfathah | Skenario asli P001; panel Bi'ah: السَّلَامُ عَلَيْكُمْ | أَفْشُوا السَّلَامَ بَيْنَكُمْ — Sebarkanlah salam di antara kalian | An-Nas 1 |
+| P002 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Hamza–Alif dan penguatan keluarga Ba | Skenario asli P002; panel Bi'ah: السَّلَامُ عَلَيْكُمْ | أَفْشُوا السَّلَامَ بَيْنَكُمْ — Sebarkanlah salam di antara kalian | An-Nas 2 |
+| P003 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Keluarga Jim | Skenario asli P003; panel Bi'ah: السَّلَامُ عَلَيْكُمْ | أَفْشُوا السَّلَامَ بَيْنَكُمْ — Sebarkanlah salam di antara kalian | An-Nas 3 |
+| P004 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Keluarga Dal–Ra | Skenario asli P004; panel Bi'ah: اُنْظُرْ | وَقُلْ رَبِّ زِدْنِي عِلْمًا — Ya Tuhanku, tambahkanlah ilmuku | An-Nas 4 |
+| P005 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Keluarga Sin | Skenario asli P005; panel Bi'ah: اُنْظُرْ | وَقُلْ رَبِّ زِدْنِي عِلْمًا — Ya Tuhanku, tambahkanlah ilmuku | An-Nas 5 |
+| P006 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Keluarga Shad | Skenario asli P006; panel Bi'ah: اُنْظُرْ | وَقُلْ رَبِّ زِدْنِي عِلْمًا — Ya Tuhanku, tambahkanlah ilmuku | An-Nas 6 |
+| P007 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Keluarga Tha | Skenario asli P007; panel Bi'ah: اِسْتَمِعْ | فَاسْتَمِعُوا لَهُ وَأَنْصِتُوا — Dengarkanlah dan perhatikanlah dengan tenang | Al-Falaq 1 |
+| P008 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Keluarga ‘Ain | Skenario asli P008; panel Bi'ah: اِسْتَمِعْ | فَاسْتَمِعُوا لَهُ وَأَنْصِتُوا — Dengarkanlah dan perhatikanlah dengan tenang | Al-Falaq 2 |
+| P009 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Keluarga Fa–Qaf | Skenario asli P009; panel Bi'ah: اِسْتَمِعْ | فَاسْتَمِعُوا لَهُ وَأَنْصِتُوا — Dengarkanlah dan perhatikanlah dengan tenang | Al-Falaq 3 |
+| P010 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Evaluasi Fathah I | Skenario asli P010; panel Bi'ah: اِسْتَمِعْ | أَفْشُوا السَّلَامَ بَيْنَكُمْ — Sebarkanlah salam di antara kalian | Al-Falaq 4 |
+| P011 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Keluarga Kaf–Lam | Skenario asli P011; panel Bi'ah: اِقْرَأْ | إِنَّ اللَّهَ مَعَ الصَّابِرِينَ — Sesungguhnya Allah bersama orang-orang yang sabar | Al-Falaq 5 |
+| P012 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Keluarga Mim–Nun | Skenario asli P012; panel Bi'ah: اِقْرَأْ | إِنَّ اللَّهَ مَعَ الصَّابِرِينَ — Sesungguhnya Allah bersama orang-orang yang sabar | Al-Ikhlas 1 |
+| P013 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Keluarga Ha–Waw–Ya | Skenario asli P013; panel Bi'ah: اِقْرَأْ | إِنَّ اللَّهَ مَعَ الصَّابِرِينَ — Sesungguhnya Allah bersama orang-orang yang sabar | Al-Ikhlas 2 |
+| P014 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Integrasi seluruh fathah | Skenario asli P014; panel Bi'ah: أَعِدْ | وَلَكَ الْجَنَّةُ — Dan bagimu surga | Al-Ikhlas 3–4 |
+| P015 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Otomatisasi fathah | Skenario asli P015; panel Bi'ah: أَعِدْ | وَلَكَ الْجَنَّةُ — Dan bagimu surga | Al-Fatihah 1 |
+| P016 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Bunyi kasrah awal | Skenario asli P016; panel Bi'ah: أَعِدْ | وَلَكَ الْجَنَّةُ — Dan bagimu surga | Al-Fatihah 2 |
+| P017 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Kasrah keluarga tenggorokan | Skenario asli P017; panel Bi'ah: اِفْتَحِ الْكِتَابَ | وَقُولُوا لِلنَّاسِ حُسْنًا — Berkatalah yang baik kepada manusia | Al-Fatihah 3 |
+| P018 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Hafalan 1 | Skenario asli P018; panel Bi'ah: اِفْتَحِ الْكِتَابَ | وَقُولُوا لِلنَّاسِ حُسْنًا — Berkatalah yang baik kepada manusia | Al-Fatihah 4 |
+| P019 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Kasrah ujung lidah | Skenario asli P019; panel Bi'ah: اِفْتَحِ الْكِتَابَ | وَقُولُوا لِلنَّاسِ حُسْنًا — Berkatalah yang baik kepada manusia | Al-Fatihah 5 |
+| P020 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Evaluasi Fathah–Kasrah + Checkpoint Nama Huruf I | Skenario asli P020; panel Bi'ah: اِقْرَأْ | وَقُلْ رَبِّ زِدْنِي عِلْمًا — Ya Tuhanku, tambahkanlah ilmuku | Al-Fatihah 6 |
+| P021 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Kasrah huruf tebal | Skenario asli P021; panel Bi'ah: أَغْلِقِ الْكِتَابَ | أَدِّ الْأَمَانَةَ إِلَى مَنِ ائْتَمَنَكَ — Tunaikan amanah kepada orang yang mempercayaimu | Al-Fatihah 7 |
+| P022 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Kasrah Fa–Qaf–Kaf–Lam | Skenario asli P022; panel Bi'ah: أَغْلِقِ الْكِتَابَ | أَدِّ الْأَمَانَةَ إِلَى مَنِ ائْتَمَنَكَ — Tunaikan amanah kepada orang yang mempercayaimu | Al-Kawthar 1 |
+| P023 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Kasrah Mim–Nun–Waw–Ya | Skenario asli P023; panel Bi'ah: أَغْلِقِ الْكِتَابَ | أَدِّ الْأَمَانَةَ إِلَى مَنِ ائْتَمَنَكَ — Tunaikan amanah kepada orang yang mempercayaimu | Al-Kawthar 2 |
+| P024 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Integrasi seluruh kasrah | Skenario asli P024; panel Bi'ah: مَرَّةً أُخْرَى | وَلَا تُسْرِفُوا — Janganlah berlebih-lebihan | Al-Kawthar 3 |
+| P025 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Kontras fathah–kasrah | Skenario asli P025; panel Bi'ah: مَرَّةً أُخْرَى | وَلَا تُسْرِفُوا — Janganlah berlebih-lebihan | An-Nasr 1 |
+| P026 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Bunyi dhammah awal | Skenario asli P026; panel Bi'ah: مَرَّةً أُخْرَى | وَلَا تُسْرِفُوا — Janganlah berlebih-lebihan | An-Nasr 2 |
+| P027 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Dhammah keluarga Jim dan tenggorokan | Skenario asli P027; panel Bi'ah: قِفْ | فَاسْتَبِقُوا الْخَيْرَاتِ — Berlomba-lombalah dalam kebaikan | An-Nasr 3 |
+| P028 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Bahasa Arab 1 | Skenario asli P028; panel Bi'ah: قِفْ | فَاسْتَبِقُوا الْخَيْرَاتِ — Berlomba-lombalah dalam kebaikan | Al-Kafirun 1 |
+| P029 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Dhammah Dal–Syin | Skenario asli P029; panel Bi'ah: قِفْ | فَاسْتَبِقُوا الْخَيْرَاتِ — Berlomba-lombalah dalam kebaikan | Al-Kafirun 2 |
+| P030 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Evaluasi Tiga Harakat I | Skenario asli P030; panel Bi'ah: اِقْرَأْ مَرَّةً أُخْرَى | فَاسْتَقِمْ كَمَا أُمِرْتَ — Beristiqamahlah sebagaimana diperintahkan kepadamu | Al-Kafirun 3 |
+| P031 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Dhammah huruf tebal | Skenario asli P031; panel Bi'ah: وَاصِلْ | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ — Sesungguhnya orang-orang beriman itu bersaudara | Al-Kafirun 4 |
+| P032 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Dhammah Fa–Lam | Skenario asli P032; panel Bi'ah: وَاصِلْ | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ — Sesungguhnya orang-orang beriman itu bersaudara | Al-Kafirun 5–6 |
+| P033 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Dhammah Mim–Ya dan Hamza Mandiri | Skenario asli P033; panel Bi'ah: وَاصِلْ | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ — Sesungguhnya orang-orang beriman itu bersaudara | Al-Masad 1 |
+| P034 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Integrasi seluruh dhammah | Skenario asli P034; panel Bi'ah: نَعَمْ | وَالْعَافِينَ عَنِ النَّاسِ — Orang-orang yang memaafkan manusia | Al-Masad 2 |
+| P035 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Kontras tiga harakat per keluarga | Skenario asli P035; panel Bi'ah: نَعَمْ | وَالْعَافِينَ عَنِ النَّاسِ — Orang-orang yang memaafkan manusia | Al-Masad 3 |
+| P036 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Hafalan 2 | Skenario asli P036; panel Bi'ah: لَا | وَالْعَافِينَ عَنِ النَّاسِ — Orang-orang yang memaafkan manusia | Al-Masad 4 |
+| P037 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Ketelitian titik dan bentuk serupa | Skenario asli P037; panel Bi'ah: لَا | وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا — Bacalah Al-Qur'an dengan tartil | Al-Masad 5 |
+| P038 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Akhlak 1 | Skenario asli P038; panel Bi'ah: أَحْسَنْتَ | وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا — Bacalah Al-Qur'an dengan tartil | Al-Ma'un 1–2 |
+| P039 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Simulasi baca mandiri | Skenario asli P039; panel Bi'ah: أَحْسَنْتَ | وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا — Bacalah Al-Qur'an dengan tartil | Al-Ma'un 3–4 |
+| P040 | **WAJIB CEK REGISTER J1 FROZEN**, master historis: Ujian Akhir + Checkpoint Nama Huruf II | Skenario asli P040; panel Bi'ah: الْحَمْدُ لِلَّهِ | تَعَلَّمْ — اِعْمَلْ — عَلِّمْ — Belajarlah — amalkanlah — ajarkanlah | Al-Ma'un 5–7 |
