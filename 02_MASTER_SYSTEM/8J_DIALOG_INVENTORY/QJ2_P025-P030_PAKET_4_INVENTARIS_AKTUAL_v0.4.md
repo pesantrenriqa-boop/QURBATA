@@ -1,6 +1,6 @@
 # QURBATA J2 P025–P030 — Paket Empat Inventaris Aktual v0.4
 
-**DRAF REVIEW / TIDAK UNTUK CETAK.** Memperbaiki pengulangan kartu dan dialog pada v0.1. Rujukan dan bentuk kata masih kandidat yang perlu tashih mushaf primer (termasuk posisi i'rab/harakat pada ayat). Kartu lintas ayat tidak digabung sebagai satu kutipan. Tahfidz mengikuti FROZEN.
+**DRAF REVIEW / TIDAK UNTUK CETAK.** Memperbaiki pengulangan kartu dan dialog pada v0.1. Koreksi awal: كِتَابٌ bukan bentuk yang muncul di Al-Baqarah 2:2 (di sana الْكِتَابُ); kandidat rujukan dipindah ke Al-Baqarah 2:89, masih wajib tashih primer. Rujukan dan bentuk kata masih kandidat yang perlu tashih mushaf primer (termasuk posisi i'rab/harakat pada ayat). Kartu lintas ayat tidak digabung sebagai satu kutipan. Tahfidz mengikuti FROZEN.
 
 ## P025 — Mad alif
 
@@ -40,7 +40,7 @@
 
 ## P027 — Mad alif
 
-**1. Tartil:** kartu A `كِتَابٌ` (2:2); kartu B `عِبَادُ` (25:63).
+**1. Tartil:** kartu A `كِتَابٌ` (2:89); kartu B `عِبَادُ` (25:63).
 
 1. اِبْحَثْ عَنْ أَلِفِ الْمَدِّ فِي كِتَابٌ.
 2. اِبْحَثْ عَنْ أَلِفِ الْمَدِّ فِي عِبَادُ.
