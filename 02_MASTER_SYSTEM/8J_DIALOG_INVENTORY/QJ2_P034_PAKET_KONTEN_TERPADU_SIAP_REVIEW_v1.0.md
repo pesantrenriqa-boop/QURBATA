@@ -20,13 +20,15 @@ Latihan Arab khusus P034:
 Dialog khusus halaman, karangan pedagogis (bukan nash). Reviewer Bahasa Arab masih diperlukan.
 
 ## 3 Akhlak
-Tema ketelitian. Kandidat ayat Al-Isra 17:36, **nash utuh dan konteks tafsir belum ditetapkan**. Kegiatan: santri menunjukkan perilaku sesuai tema saat membaca dan menyimak temannya. Jangan menganggap sumber kandidat sebagai nash final.
+**Kandidat nash Qurani terlokalisasi:** Al-Isra 17:36 — `وَلَا تَقْفُ مَا لَيْسَ لَكَ بِهِ عِلْمٌ`.
+**Batas konteks:** Tidak mengaku tahu tanpa pengetahuan; analogi kelas: periksa bacaan sebelum membenarkan orang lain.
+**Tugas teramati:** guru mengamati tindakan santri saat giliran membaca, menyimak, dan memberi tanggapan. **Petikan ayat dan konteks tafsir masih wajib ditashih; ini bukan penetapan nash final.**
 
 ## 4 Tahfidz
 Target **FROZEN**: Al-Alaq 7–10. Talqin → talaqqi → setoran → murojaah. Rubrik sementara: lafaz/urutan 40%, tajwid 40%, kelancaran 20%. P039: nilai dua surat secara terpisah.
 
 ## Gate
-G1 kartu dan rasm REVIEW; G2 dialog REVIEW; G3 nash Akhlak REVIEW; G4 teks dan beban Tahfidz REVIEW; G5 BLOCKED. **0 halaman dinyatakan CONTENT-FINAL oleh dokumen ini.**
+G1 kartu dan rasm REVIEW; G2 dialog REVIEW; G3 kandidat nash Akhlak tertulis dan relevansi dicatat; REVIEW tafsir/rasm; G4 teks dan beban Tahfidz REVIEW; G5 BLOCKED. **0 halaman dinyatakan CONTENT-FINAL oleh dokumen ini.**
 
 ## Audit revisi isi — 17 Oktober 2026
 Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum telah diganti dialog khusus. STATUS tetap REVIEW karena G1 rasm, G2 reviewer bahasa, G3 nash Akhlak, G4 teks Tahfidz belum disahkan.
