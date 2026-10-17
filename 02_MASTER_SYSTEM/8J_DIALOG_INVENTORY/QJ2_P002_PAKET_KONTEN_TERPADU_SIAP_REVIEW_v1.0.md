@@ -26,3 +26,9 @@ Target **FROZEN: Quraysh 3–4**. Talqin per ayat → talaqqi → setoran indivi
 
 ## Gate
 G1 kartu dan fonetik REVIEW; G2 dialog REVIEW; G3 nash dan tafsir REVIEW; G4 Tahfidz REVIEW; G5 BLOCKED. **NOT FOR PRINT.**
+
+
+## Audit kunci spesifik dan prasyarat grafem — 17 Oktober 2026
+**Audit titik:** ب satu titik di bawah; ت dua di atas; ث tiga di atas. **Kunci:** (1) ب; (2) ت; (3) ث; (4) tiga titik; (5) pengurutan jumlah 1–2–3 disertai pemeriksaan posisi titik. Jangan menyamakan jumlah titik dengan bunyi huruf.
+
+**Belum lulus G1–G5; verifikasi ahli dan font target masih wajib.**
