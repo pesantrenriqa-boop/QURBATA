@@ -29,3 +29,9 @@ Dialog pedagogis buatan, bukan kutipan ayat. Review bahasa diperlukan.
 
 ## Status gate
 G1 BLOCKED (mushaf primer); G2 REVIEW; G3 REVIEW; G4 REVIEW; G5 BLOCKED. **Belum CONTENT-FINAL.**
+
+
+## Audit substantif Tartil — 17 Oktober 2026
+Klasifikasi tiga kartu: أَفْوَاجًا = fathatain pada ج; خَوْفٍ = kasratain pada ف; سَلَامٌ = dhammatain pada م. Tugas 4 mengelompokkan tiga kartu berbeda, bukan menyusun ketiganya menjadi frasa ayat. Tambahkan demonstrasi washal/waqaf dan rubrik terpisah; target Tahfidz Al-Bayyinah ayat 1 tetap satu ayat sesuai FROZEN.
+
+**Bukti yang masih dibutuhkan:** token mushaf primer, rasm/harakat, verifikasi ayat, tanda tangan penashih. G1 tetap BLOCKED; G2–G4 REVIEW; G5 BLOCKED.
