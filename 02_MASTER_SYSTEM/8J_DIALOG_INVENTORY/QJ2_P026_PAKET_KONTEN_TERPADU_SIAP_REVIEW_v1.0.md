@@ -26,3 +26,9 @@ Tema: sabar mengulang. Kandidat ayat **Al-Baqarah 2:153** — **إِنَّ ال�
 
 ## Gate
 G1 kunci posisi mad: DITULIS SPESIFIK, token/rasm: REVIEW; G2 dialog: REVIEW; G3 ayat dan konteks Akhlak: REVIEW; G4 Tahfidz: REVIEW; G5 integrasi: BLOCKED. **CONTENT-FINAL belum PASS.**
+
+
+## Audit substantif Tartil — 17 Oktober 2026
+Kartu الْمَالُ dan النَّهَارَ masing-masing memiliki alif mad setelah مَ dan هَ. Soal 4 perlu memastikan fathah pada هَ yang tepat, bukan harakat ه secara umum. Catat batas materi: panjang dua harakat mad asli diuji ketika tidak ada sebab mad lain; verifikasi token 18:46 dan 78:11 pada mushaf primer.
+
+**Bukti yang masih dibutuhkan:** token mushaf primer, rasm/harakat, verifikasi ayat, tanda tangan penashih. G1 tetap BLOCKED; G2–G4 REVIEW; G5 BLOCKED.
