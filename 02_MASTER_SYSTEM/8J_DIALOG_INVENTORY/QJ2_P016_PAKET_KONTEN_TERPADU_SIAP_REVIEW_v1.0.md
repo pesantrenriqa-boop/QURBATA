@@ -24,3 +24,9 @@ Dialog pedagogis, bukan kutipan ayat; perlu review bahasa.
 **FROZEN: Al-Qari'ah 9–11.** Talqin → talaqqi → setoran individual → murojaah. Teks mushaf, tajwid dan beban setoran belum diaudit.
 
 G1–G4 REVIEW; G5 BLOCKED. **NOT FOR PRINT.**
+
+
+## Audit pedagogis dan koreksi — 17 Oktober 2026
+**Perbaikan penting:** pada kartu ت / ة / ه, dua titik terdapat pada ت dan ة; tetapi ة lazimnya muncul di akhir kata dan bacaan waqafnya berbeda dari ت. Tugas kelima harus memakai contoh kata Qurani yang diverifikasi lebih dahulu sebelum evaluasi bacaan washal–waqaf. Jangan membaca ة sebagai ت pada waqaf secara otomatis.
+
+**G1–G5 belum PASS; belum CONTENT-FINAL.**
