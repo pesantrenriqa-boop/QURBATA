@@ -28,3 +28,7 @@ G1–G4 REVIEW; G5 BLOCKED. NOT FOR PRINT.
 **Audit ل/م:** dua kartu tidak bertitik, sehingga pertanyaan pembeda harus fokus bentuk dan bunyi, bukan jumlah titik. Kunci 1/3 = ل; 2/4 = م; 5 talaqqi makhraj lam dan mim. Dialog guru 'اِسْتَمِعْ أَوَّلًا' cocok untuk aktivitas pendengaran.
 
 **Gate tetap REVIEW, bukan tashih primer atau CONTENT-FINAL.**
+
+
+## Hadis Akhlak — kandidat terintegrasi
+H08: **يَسِّرُوا وَلَا تُعَسِّرُوا، وَبَشِّرُوا وَلَا تُنَفِّرُوا**. Rujukan: Shahih al-Bukhari 69, Kitab al-'Ilm, dari Anas bin Malik; https://sunnah.com/bukhari:69 . Penerapan: guru membimbing perbedaan ل dan م secara bertahap, tanpa merendahkan santri. Ayat Al-A'raf 7:204 tetap kandidat terpisah, bukan dihapus. Matan dan kelayakan penggunaan pada halaman perlu persetujuan penashih. **G3 REVIEW, bukan PASS.**
