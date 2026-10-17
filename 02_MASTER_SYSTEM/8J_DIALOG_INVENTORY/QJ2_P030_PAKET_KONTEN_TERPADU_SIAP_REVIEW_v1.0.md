@@ -26,3 +26,7 @@ Tema: menghormati teman saat evaluasi. Kandidat ayat **Al-Hujurat 49:11** — **
 
 ## Gate
 G1 kunci posisi mad: DITULIS SPESIFIK, token/rasm: REVIEW; G2 dialog: REVIEW; G3 ayat dan konteks Akhlak: REVIEW; G4 Tahfidz: REVIEW; G5 integrasi: BLOCKED. **CONTENT-FINAL belum PASS.**
+
+
+## Integrasi hadis Akhlak H12 — batch aman
+Matan kandidat: **إِنَّ اللَّهَ رَفِيقٌ يُحِبُّ الرِّفْقَ**. Sumber kerja: Sahih Muslim 2593 (https://sunnah.com/muslim:2593). Aplikasi kelas: kelembutan saat membimbing teman. Ayat Akhlak lama tetap kandidat terpisah; matan dan konteks perlu persetujuan penashih sebelum cetak. **G3 REVIEW, G5 BLOCKED; NOT CONTENT-FINAL.**
