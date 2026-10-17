@@ -3,7 +3,7 @@
 **STATUS: CONTENT-COMPLETE DRAFT; NOT CONTENT-FINAL.** Teks kartu masih harus ditashih terhadap mushaf primer, terutama rasm dan ketepatan bentuk token. Jangan cetak sebelum review.
 
 ## 1 Tartil — Mad ya
-Kartu A **فِي** (kandidat QS 2:2); kartu B **الَّذِي** (kandidat QS 96:1). Kartu dari ayat berbeda, bukan frasa sambungan.
+Kartu A **فِي** (kandidat QS 95:4; `فِي أَحْسَنِ تَقْوِيمٍ`); kartu B **الَّذِي** (kandidat QS 96:1). Kartu dari ayat berbeda, bukan frasa sambungan.
 
 Latihan (5):
 1. أَشِرْ إِلَى يَاءِ الْمَدِّ فِي الْبِطَاقَةِ الْأُولَى.
