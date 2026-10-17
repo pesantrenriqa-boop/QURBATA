@@ -24,3 +24,9 @@ Dialog pedagogis, bukan kutipan ayat; perlu review bahasa.
 **FROZEN: Al-Adiyat 9–11.** Talqin → talaqqi → setoran individual → murojaah. Teks mushaf, tajwid dan beban setoran belum diaudit.
 
 G1–G4 REVIEW; G5 BLOCKED. **NOT FOR PRINT.**
+
+
+## Audit pedagogis dan koreksi — 17 Oktober 2026
+**Rubrik evaluasi spesifik:** lima tugas × 0–2 poin = 10. Tugas 1 kartu tanpa titik (contoh ح atau ع), tugas 2 satu titik bawah (ب atau ج), tugas 3 tiga titik atas (ث atau ش), tugas 4 pemutus sambungan ke sesudahnya (د ذ ر ز), tugas 5 lima kartu dipilih guru dan direkam pada lembar penilaian. Skor ini rubrik kerja, bukan batas lulus resmi. Hindari jawaban tunggal untuk kartu dengan beberapa kemungkinan benar.
+
+**G1–G5 belum PASS; belum CONTENT-FINAL.**
