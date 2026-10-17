@@ -27,3 +27,7 @@ Dialog pedagogis buatan, bukan kutipan ayat. Review bahasa diperlukan.
 
 ## Status gate
 G1 BLOCKED (mushaf primer); G2 REVIEW; G3 REVIEW; G4 REVIEW; G5 BLOCKED. **Belum CONTENT-FINAL.**
+
+
+## Integrasi hadis Akhlak H09 — 17 Oktober 2026
+Kandidat matan: **مَنْ لَا يَرْحَمْ لَا يُرْحَمْ**. Sumber: Shahih al-Bukhari 5997 (https://sunnah.com/bukhari:5997). Penerapan kelas: kasih sayang kepada teman sebagai penerapan; konteks asal tentang Nabi mencium cucunya. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, matan/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
