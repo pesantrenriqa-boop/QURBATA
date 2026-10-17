@@ -5,19 +5,19 @@
 ## 1 Tartil
 Kompetensi: kontras waw mad dan waw berharakat. Kartu Qurani **terpisah**, sumber kandidat: يَقُولُ (2:8); يَعْلَمُونَ (2:13); وَالْعَصْرِ (103:1). Jangan gabungkan kartu dari ayat berbeda menjadi frasa yang diklaim Qurani.
 
-Latihan (Arab):
-1. أَشِرْ إِلَى حَرْفِ الْمَدِّ فِي الْبِطَاقَةِ الْأُولَى.
-2. أَشِرْ إِلَى حَرْفِ الْمَدِّ فِي الْبِطَاقَةِ الثَّانِيَةِ.
-3. مَا حَرَكَةُ الْحَرْفِ الَّذِي قَبْلَ حَرْفِ الْمَدِّ؟
-4. قَارِنْ بَيْنَ الْبِطَاقَتَيْنِ وَبَيِّنْ وَجْهَ الْفَرْقِ.
-5. اِسْتَمِعْ إِلَى الْقِرَاءَةِ ثُمَّ اقْرَأْ بِصَوْتٍ وَاضِحٍ.
+Latihan Arab khusus P038:
+1. أَشِرْ إِلَى وَاوِ الْمَدِّ فِي يَقُولُ.
+2. أَشِرْ إِلَى وَاوِ الْمَدِّ فِي يَعْلَمُونَ.
+3. أَشِرْ إِلَى الْوَاوِ الْمُتَحَرِّكَةِ فِي وَالْعَصْرِ.
+4. صَنِّفِ الْبِطَاقَاتِ إِلَى مَدٍّ وَغَيْرِ مَدٍّ.
+5. اِقْرَأِ الْبِطَاقَاتِ الثَّلَاثَ.
 
-**Kunci kontras:** يَقُولُ dan يَعْلَمُونَ = waw mad; وَالْعَصْرِ = waw awal berfathah bukan waw mad. Guru mengidentifikasi alif setelah fathah, ya setelah kasrah, atau waw setelah dhammah pada kartu yang memang memuat mad; pada kartu kontras ya/waw berharakat **bukan mad**. P040 khusus tanwin: kartu خَوْفٍ = kasratain, سَلَامٌ = dhammatain, أَفْوَاجًا = fathatain. **Butir 1–4 untuk P040 harus diganti dengan instrumen rinci pada dokumen evaluasi v0.2 sebelum penggunaan.** Penilaian butir 5 dilakukan melalui talaqqi.
+**Kunci spesifik:** يَقُولُ: waw mad setelah قُ; يَعْلَمُونَ: waw mad setelah مُ; وَالْعَصْرِ: waw pertama berfathah, bukan mad. Butir baca dinilai guru melalui talaqqi. Seluruh bentuk kartu dan referensi perlu tashih mushaf primer.
 
 ## 2 Bi'ah Arabiyah
-المعلم: هَلْ قَرَأْتَ الْبِطَاقَاتِ؟ الطالب: قَرَأْتُ بَعْضَهَا. المعلم: مَا الَّذِي تَحْتَاجُ إِلَى مُرَاجَعَتِهِ؟ الطالب: أُرِيدُ أَنْ أُعِيدَ الْقِرَاءَةَ. المعلم: حَسَنًا، اِبْدَأْ بِالْبِطَاقَةِ الْأُولَى.
+المعلم: هَلِ الْوَاوُ فِي وَالْعَصْرِ حَرْفَ مَدٍّ؟ الطالب: لَا، هِيَ وَاوٌ مُتَحَرِّكَةٌ. المعلم: وَفِي يَقُولُ؟ الطالب: وَاوُ مَدٍّ.
 
-Dialog karangan pendidikan, belum ditashih reviewer dan masih perlu diferensiasi per halaman.
+Dialog khusus halaman, karangan pedagogis (bukan nash). Reviewer Bahasa Arab masih diperlukan.
 
 ## 3 Akhlak
 Tema tidak mengejek teman. Kandidat ayat Al-Hujurat 49:11, **nash utuh dan konteks tafsir belum ditetapkan**. Kegiatan: santri menunjukkan perilaku sesuai tema saat membaca dan menyimak temannya. Jangan menganggap sumber kandidat sebagai nash final.
@@ -27,3 +27,6 @@ Target **FROZEN**: At-Tin 4–6. Talqin → talaqqi → setoran → murojaah. Ru
 
 ## Gate
 G1 kartu dan rasm REVIEW; G2 dialog REVIEW; G3 nash Akhlak REVIEW; G4 teks dan beban Tahfidz REVIEW; G5 BLOCKED. **0 halaman dinyatakan CONTENT-FINAL oleh dokumen ini.**
+
+## Audit revisi isi — 17 Oktober 2026
+Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum telah diganti dialog khusus. STATUS tetap REVIEW karena G1 rasm, G2 reviewer bahasa, G3 nash Akhlak, G4 teks Tahfidz belum disahkan.
