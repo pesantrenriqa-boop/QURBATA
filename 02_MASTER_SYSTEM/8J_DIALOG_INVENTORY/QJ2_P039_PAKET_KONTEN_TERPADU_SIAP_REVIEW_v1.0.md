@@ -52,3 +52,7 @@ Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum 
 P039: قَالَ mad alif, الرَّحِيمِ mad ya, يَقُولُ mad waw. Setoran Tahfidz At-Tin 7–8 dan Ash-Sharh 1–2 wajib dicatat pada dua baris terpisah; evaluasi Tartil juga menguji tiga kartu secara individual.
 
 Gate G1 BLOCKED, G2–G4 REVIEW, G5 BLOCKED. Tidak siap cetak.
+
+
+## Integrasi hadis Akhlak H11 — batch audit
+Matan kandidat: **مَنْ غَشَّنَا فَلَيْسَ مِنَّا**. Rujukan: Sahih Muslim 101 (https://sunnah.com/muslim:101). Penerapan: menjawab evaluasi dengan jujur, tidak meniru jawaban teman. Ini penerapan pendidikan, bukan konteks asal hadis. Penashih harus memeriksa redaksi, konteks, dan pemilihan nash utama. **G3 REVIEW, G5 BLOCKED; bukan CONTENT-FINAL.**
