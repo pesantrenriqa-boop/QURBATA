@@ -56,3 +56,7 @@ Catatan: nash masih perlu tashih mushaf dan review tafsir; tidak ada hadis yang 
 Kartu قَالَ / كَانَ / الْمَالُ memiliki alif mad setelah fathah pada ق / ك / م. Jangan menganggap الْمَالُ (18:46) dan kata lain dari ayat berlainan sebagai satu frasa Qurani. Nilai tiga pelafalan secara terpisah, serta cek rasm dan keberadaan token pada lokasi yang diklaim sebelum G1 PASS.
 
 **Bukti yang masih dibutuhkan:** token mushaf primer, rasm/harakat, verifikasi ayat, tanda tangan penashih. G1 tetap BLOCKED; G2–G4 REVIEW; G5 BLOCKED.
+
+
+## Integrasi hadis Akhlak H11 — batch aman
+Matan kandidat: **مَنْ غَشَّنَا فَلَيْسَ مِنَّا**. Sumber kerja: Sahih Muslim 101 (https://sunnah.com/muslim:101). Aplikasi kelas: kejujuran saat evaluasi; jangan salah atribusi ke redaksi Muslim 102. Ayat Akhlak lama tetap kandidat terpisah; matan dan konteks perlu persetujuan penashih sebelum cetak. **G3 REVIEW, G5 BLOCKED; NOT CONTENT-FINAL.**
