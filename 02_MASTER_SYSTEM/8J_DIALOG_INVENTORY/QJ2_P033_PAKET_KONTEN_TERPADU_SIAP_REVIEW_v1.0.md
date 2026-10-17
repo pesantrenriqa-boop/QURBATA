@@ -31,3 +31,7 @@ G1 token dan rasm: REVIEW; G2 dialog: REVIEW; G3 nash dan konteks: REVIEW; G4 se
 ## Penyempurnaan langsung kunci dan pemeriksaan bentuk
 - Kunci lokasi huruf mad sekarang menyebut huruf sebelum ya pada setiap kartu; tidak lagi sekadar 'sesudah kasrah'.
 - Kartu dan rujukan masih perlu perbandingan mushaf Utsmani primer dan telaah ahli sebelum G1 PASS.
+
+
+## Integrasi hadis Akhlak H05 — batch audit
+Matan kandidat: **الدِّينُ النَّصِيحَةُ**. Rujukan kerja: Sahih Muslim 55a, https://sunnah.com/muslim:55a. Akhlak terapan di kelas harus terkait fokus halaman dan dinilai melalui perilaku teramati, bukan niat batin. Ayat kandidat lama tidak dihapus. Pemeriksaan matan, konteks, dan keputusan penashih masih diperlukan. **G3 REVIEW, G5 BLOCKED, bukan CONTENT-FINAL.**
