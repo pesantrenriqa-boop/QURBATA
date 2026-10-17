@@ -21,3 +21,8 @@ Kandidat Al-Ankabut 29:69. Perilaku: ketelitian, kesabaran, dan menerima koreksi
 FROZEN Al-Humazah 4–6. Talqin, talaqqi, setoran dan murojaah. Audit teks dan beban belum lulus.
 
 G1–G4 review, G5 blocked.
+
+## Revisi kunci dan ketepatan objek — 17 Oktober 2026
+**Kunci latihan (detail):** (1) ا adalah alif mandiri; (2) و adalah waw mandiri; (3) waw tidak menyambung ke huruf sesudahnya; (4) alif tidak menyambung ke huruf sesudahnya; (5) guru memeriksa makhraj dan identifikasi dua kartu, bukan menilai panjang mad tanpa konteks harakat. **Catatan pedagogis:** alif dan waw dapat menerima sambungan dari huruf sebelumnya. Jangan mengajarkan keduanya sebagai huruf yang tidak pernah tersambung.
+
+**Gate tetap REVIEW; ini pemeriksaan internal, bukan tashih mushaf primer.**
