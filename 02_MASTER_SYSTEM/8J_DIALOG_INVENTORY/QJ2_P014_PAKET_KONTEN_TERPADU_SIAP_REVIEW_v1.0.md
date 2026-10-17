@@ -28,3 +28,9 @@ G1–G4 REVIEW; G5 BLOCKED. NOT FOR PRINT.
 **Audit ع/غ:** keduanya satu keluarga bentuk; ع tidak bertitik, غ satu titik di atas. Kunci soal 3 = نعم; 4 = لا. Guru wajib memeriksa bunyi dua huruf, tidak hanya kemampuan menunjuk titik.
 
 **Gate tetap REVIEW, bukan tashih primer atau CONTENT-FINAL.**
+
+
+## Integrasi kandidat hadis dan koreksi materi — 17 Oktober 2026
+Hadis Akhlak kandidat H08 (Bukhari 69): يَسِّرُوا وَلَا تُعَسِّرُوا، وَبَشِّرُوا وَلَا تُنَفِّرُوا. Pembelajaran ع/غ menggunakan satu perbedaan titik dahulu lalu latihan makhraj; perilaku guru yang diamati adalah memberi kemudahan tanpa menghilangkan standar bacaan. G3 belum PASS.
+
+**Status: REVIEW; tidak siap cetak.**
