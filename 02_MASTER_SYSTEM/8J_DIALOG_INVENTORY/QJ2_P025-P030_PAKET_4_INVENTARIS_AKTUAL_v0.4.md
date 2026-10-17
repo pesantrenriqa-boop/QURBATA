@@ -22,7 +22,7 @@
 
 ## P026 — Mad alif
 
-**1. Tartil:** kartu A `الْمَالُ` (18:46); kartu B `النَّهَارَ` (78:11).
+**1. Tartil:** kartu A `الْمَالُ` (18:46; CEK: ayat memuat الْمَالُ); kartu B `النَّهَارَ` (78:11; CEK: ayat memuat النَّهَارَ).
 
 1. ضَعْ دَائِرَةً حَوْلَ أَلِفِ الْمَدِّ فِي الْمَالُ.
 2. ضَعْ خَطًّا تَحْتَ أَلِفِ الْمَدِّ فِي النَّهَارَ.
@@ -40,7 +40,7 @@
 
 ## P027 — Mad alif
 
-**1. Tartil:** kartu A `كِتَابٌ` (2:89); kartu B `عِبَادُ` (25:63).
+**1. Tartil:** kartu A `كِتَابٌ` (2:89; CEK bentuk i‘rab dalam ayat); kartu B `عِبَادُ` (25:63; CEK: ayat memuat وَعِبَادُ).
 
 1. اِبْحَثْ عَنْ أَلِفِ الْمَدِّ فِي كِتَابٌ.
 2. اِبْحَثْ عَنْ أَلِفِ الْمَدِّ فِي عِبَادُ.
@@ -58,7 +58,7 @@
 
 ## P028 — Mad alif
 
-**1. Tartil:** kartu A `سَلَامٌ` (19:15); kartu B `النَّارَ` (2:24).
+**1. Tartil:** kartu A `سَلَامٌ` (19:15; CEK: ayat memuat وَسَلَامٌ); kartu B `النَّارَ` (2:24).
 
 1. أَشِرْ إِلَى أَلِفِ الْمَدِّ فِي سَلَامٌ.
 2. أَشِرْ إِلَى أَلِفِ الْمَدِّ فِي النَّارَ.
@@ -76,7 +76,7 @@
 
 ## P029 — Mad alif
 
-**1. Tartil:** kartu A `قَالَ` (2:30); kartu B `عِبَادُ` (25:63).
+**1. Tartil:** kartu A `قَالَ` (2:30); kartu B `عِبَادُ` (25:63; CEK: ayat memuat وَعِبَادُ).
 
 1. اِقْرَأْ قَالَ بَعْدَ الْمُعَلِّمِ.
 2. اِقْرَأْ عِبَادُ بَعْدَ الْمُعَلِّمِ.
@@ -94,7 +94,7 @@
 
 ## P030 — Mad alif
 
-**1. Tartil:** kartu A `كَانَ` (4:1); kartu B `النَّهَارَ` (78:11).
+**1. Tartil:** kartu A `كَانَ` (4:1); kartu B `النَّهَارَ` (78:11; CEK: ayat memuat النَّهَارَ).
 
 1. هَلْ فِي الْكَلِمَتَيْنِ أَلِفُ مَدٍّ؟
 2. أَشِرْ إِلَى أَلِفِ الْمَدِّ فِي كَانَ.
@@ -117,3 +117,13 @@
 - G3: tema Akhlak tersedia, **nash hadis beserta takhrij belum final**.
 - G4: target Tahfidz FROZEN tidak diubah, teks ayat dan beban masih perlu validasi.
 - G5: 0/6 CONTENT-FINAL; tidak layak cetak sebelum G1–G4 PASS.
+
+## Audit koreksi teknis — 17 Oktober 2026
+
+- **P026:** bentuk kartu `الْمَالُ` pada Al-Kahf 18:46 perlu diperiksa terhadap ayat yang berbunyi `الْمَالُ وَالْبَنُونَ زِينَةُ الْحَيَاةِ الدُّنْيَا` (normalisasi imla'i; bukan representasi rasm Utsmani final). Kata `النَّهَارَ` pada An-Naba 78:11 tampak dalam frasa `وَجَعَلْنَا النَّهَارَ مَعَاشًا`.
+- **P027:** `كِتَابٌ` pada Al-Baqarah 2:89 adalah kandidat yang perlu dipastikan tepat pada ayat; bukan memakai 2:2 yang memuat `الْكِتَابُ`. Bentuk `عِبَادُ` pada Al-Furqan 25:63 merupakan bagian dari `وَعِبَادُ الرَّحْمَٰنِ` dan perlu ditandai sebagai **ekstraksi token dari prefiks waw**, bukan klaim kutipan grafis utuh.
+- **P028:** `سَلَامٌ` pada Maryam 19:15 adalah bagian dari `وَسَلَامٌ عَلَيْهِ` sehingga perlu menampilkan prefiks waw atau secara eksplisit menjelaskan pemisahan pedagogis; jangan klaim kartu itu potongan ortografis persis. 
+- **P025, P029, P030:** pemeriksaan lengkap seluruh konteks ayat dan tanda Utsmani masih wajib. **Tidak ada perubahan Tahfidz FROZEN.**
+- **Catatan bahasa:** instruksi `اِسْتَمِعْ إِلَى الْمَالُ` dan `اِقْرَأْ سَلَامٌ` mencampurkan kutipan kartu dengan tuntutan i'rab kalimat perintah; revisi redaksional disarankan memakai `اِسْتَمِعْ إِلَى قِرَاءَةِ الْكَلِمَةِ الْأُولَى` dan `اِقْرَأِ الْبِطَاقَةَ الْأُولَى`.
+
+**Status:** isu rasm/token dan dialog tercatat; 0/6 CONTENT-FINAL.
