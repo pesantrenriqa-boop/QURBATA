@@ -26,3 +26,9 @@ Tema: ikhlas beramal. Kandidat ayat **Al-Bayyinah 98:5** — **مُخْلِصِ�
 
 ## Gate
 G1 kunci posisi mad: DITULIS SPESIFIK, token/rasm: REVIEW; G2 dialog: REVIEW; G3 ayat dan konteks Akhlak: REVIEW; G4 Tahfidz: REVIEW; G5 integrasi: BLOCKED. **CONTENT-FINAL belum PASS.**
+
+
+## Audit substantif Tartil — 17 Oktober 2026
+Kartu كِتَابٌ dan وَعِبَادُ: alif mad setelah تَ dan بَ. Waw pada وَعِبَادُ adalah waw berfathah (penghubung), bukan waw mad. Periksa apakah bentuk token وَعِبَادُ benar pada Al-Furqan 25:63, termasuk tanda akhir saat tersambung ke kata berikutnya. Jangan mengklaim kata yang sudah dilepas dari konteks sebagai kalimat Qurani.
+
+**Bukti yang masih dibutuhkan:** token mushaf primer, rasm/harakat, verifikasi ayat, tanda tangan penashih. G1 tetap BLOCKED; G2–G4 REVIEW; G5 BLOCKED.
