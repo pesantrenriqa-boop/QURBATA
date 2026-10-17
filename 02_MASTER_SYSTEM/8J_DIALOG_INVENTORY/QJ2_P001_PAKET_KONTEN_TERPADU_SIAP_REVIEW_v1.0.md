@@ -26,3 +26,9 @@ Target **FROZEN: Quraysh 1–2**. Talqin per ayat → talaqqi → setoran indivi
 
 ## Gate
 G1 kartu dan fonetik REVIEW; G2 dialog REVIEW; G3 nash dan tafsir REVIEW; G4 Tahfidz REVIEW; G5 BLOCKED. **NOT FOR PRINT.**
+
+
+## Audit kunci spesifik dan prasyarat grafem — 17 Oktober 2026
+**Audit objek:** بَ adalah ba mandiri berfathah; بـ bentuk awal; ـبـ bentuk tengah; ـب bentuk akhir. Keempat kartu bukan kata Qurani. **Kunci lima tugas:** (1) بَ; (2) بـ; (3) ـبـ; (4) ـب; (5) talaqqi bunyi بَ pendek, bukan mad. Tanda sambung ـ adalah peraga visual, bukan bagian dari ayat.
+
+**Belum lulus G1–G5; verifikasi ahli dan font target masih wajib.**
