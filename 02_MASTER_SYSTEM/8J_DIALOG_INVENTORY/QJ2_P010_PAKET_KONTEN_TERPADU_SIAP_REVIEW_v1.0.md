@@ -26,3 +26,9 @@ Kandidat nash **An-Nahl 16:43**: فَاسْأَلُوا أَهْلَ الذِّ�
 
 ## Gate
 G1 REVIEW; G2 REVIEW; G3 REVIEW; G4 REVIEW; G5 BLOCKED. **NOT FOR PRINT.**
+
+
+## Audit ketepatan objek dan kunci — 17 Oktober 2026
+**Audit evaluasi pertama:** jawaban soal 1 bukan tunggal: ح ص ط termasuk kartu tanpa titik; soal 2 ب atau ج satu titik di bawah; soal 3 ث atau ش tiga titik di atas. Guru wajib mencatat kartu yang ditampilkan. Soal 4 harus meminta perbandingan pasangan spesifik (mis. س/ش), dan soal 5 lima kartu dipilih dari himpunan yang dicantumkan. **Rubrik kerja:** lima tugas × 0–2 poin; tidak boleh disebut standar lulus resmi.
+
+**Gate tetap REVIEW, bukan tashih primer atau CONTENT-FINAL.**
