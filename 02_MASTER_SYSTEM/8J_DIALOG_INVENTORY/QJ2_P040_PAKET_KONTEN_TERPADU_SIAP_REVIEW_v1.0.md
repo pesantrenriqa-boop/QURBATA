@@ -20,8 +20,8 @@ Latihan evaluasi spesifik (Arab):
 Dialog khusus halaman, karangan pedagogis (bukan nash). Reviewer Bahasa Arab masih diperlukan.
 
 ## 3 Akhlak
-**Kandidat nash Qurani terlokalisasi:** Al-Baqarah 2:148 — `فَاسْتَبِقُوا الْخَيْرَاتِ`.
-**Batas konteks:** Berlomba dalam kebaikan; tidak secara langsung memerintahkan kejujuran ujian. Kesesuaian tema kejujuran belum cukup, perlu penggantian dalil atau tema.
+**Kandidat nash Qurani terlokalisasi:** At-Tawbah 9:119 — `يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَكُونُوا مَعَ الصَّادِقِينَ`.
+**Batas konteks:** Perintah bertakwa dan bersama orang-orang yang benar; kejujuran dalam mengerjakan evaluasi adalah aplikasi pendidikan, bukan konteks khusus ayat. Tashih rasm dan tafsir primer tetap diperlukan.
 **Tugas teramati:** guru mengamati tindakan santri saat giliran membaca, menyimak, dan memberi tanggapan. **Petikan ayat dan konteks tafsir masih wajib ditashih; ini bukan penetapan nash final.**
 
 ## 4 Tahfidz
@@ -32,3 +32,7 @@ G1 kartu dan rasm REVIEW; G2 dialog REVIEW; G3 kandidat nash Akhlak tertulis dan
 
 ## Audit revisi isi — 17 Oktober 2026
 Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum telah diganti dialog khusus. STATUS tetap REVIEW karena G1 rasm, G2 reviewer bahasa, G3 nash Akhlak, G4 teks Tahfidz belum disahkan.
+
+## Koreksi relevansi P040
+- Kandidat lama Al-Baqarah 2:148 tidak dipakai lagi sebagai dalil utama tema kejujuran; ia tetap dapat dipakai pada P039 dengan tema berlomba dalam kebaikan.
+- Kandidat baru At-Tawbah 9:119 dipilih karena hubungan langsung dengan sifat benar/jujur. **Belum disahkan sebagai teks Utsmani final.**
