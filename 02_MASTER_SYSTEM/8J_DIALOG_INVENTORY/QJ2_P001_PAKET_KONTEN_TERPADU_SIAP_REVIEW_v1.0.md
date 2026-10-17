@@ -32,3 +32,7 @@ G1 kartu dan fonetik REVIEW; G2 dialog REVIEW; G3 nash dan tafsir REVIEW; G4 Tah
 **Audit objek:** بَ adalah ba mandiri berfathah; بـ bentuk awal; ـبـ bentuk tengah; ـب bentuk akhir. Keempat kartu bukan kata Qurani. **Kunci lima tugas:** (1) بَ; (2) بـ; (3) ـبـ; (4) ـب; (5) talaqqi bunyi بَ pendek, bukan mad. Tanda sambung ـ adalah peraga visual, bukan bagian dari ayat.
 
 **Belum lulus G1–G5; verifikasi ahli dan font target masih wajib.**
+
+
+## Kandidat hadis Akhlak terkait halaman — integrasi
+H03: **خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ**. Rujukan kerja Shahih al-Bukhari 5027, https://sunnah.com/bukhari:5027. Tema: belajar dan mengajarkan Al-Qur'an; penerapan kelas dicatat sebagai perilaku belajar atau membantu teman, bukan tafsir khusus matan. Ayat Akhlak yang sudah ada tetap kandidat dan tidak otomatis diganti. Pemeriksaan edisi kitab, reviewer dan pemilihan nash utama belum selesai. **G3 REVIEW; CONTENT-FINAL belum PASS.**
