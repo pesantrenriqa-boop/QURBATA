@@ -1,8 +1,8 @@
-# QURBATA J1 — Peta Kompetensi Kandidat Batch 2
+# QURBATA J1 — Peta Kompetensi Kandidat Batch 2 (audit format diperbaiki)
 
-**Status kandidat belum ditashih sumber.** Paling awal adalah kelayakan karakter/harakat, bukan klaim kata Qur'ani dan bukan instruksi otomatis masuk halaman.
+**48 kandidat; BELUM tashih leksikal/Qur'ani.** Pemeriksaan ini hanya mencocokkan tiga huruf lepas berharakat dengan waktu pengenalan kasrah/dhammah. Audit terdahulu keliru menolak 12 kandidat karena regex tidak mengakomodasi seluruh huruf Arab; hasilnya diperbaiki di sini.
 
-| Huruf lepas | Makna | Paling awal | Verifikasi Qur'ani |
+| Huruf lepas | Makna sementara | Halaman paling awal | Status sumber |
 |---|---|---|---|
 | فَ عَ لَ | melakukan | P014 | BELUM DIVERIFIKASI |
 | فَ هِ مَ | memahami | P019 | BELUM DIVERIFIKASI |
@@ -41,8 +41,4 @@
 | بَ دَ أَ | memulai | P014 | BELUM DIVERIFIKASI |
 | خَ تَ مَ | menutup/mengakhiri | P014 | BELUM DIVERIFIKASI |
 
-## Gerbang wajib
-- Cek tashih harakat dan makna oleh ahli.
-- Jika dilabeli Qur'ani, wajib mencatat surah:ayat dan bentuk harakat persis.
-- Kata berharakat dhammah hanya boleh muncul sejak halaman pengenalannya.
-- Penggantian latihan hanya dilakukan setelah gate sumber lulus.
+**Batasan:** bentuk Arab bermakna belum otomatis sama dengan bentuk kata Qur'ani. Seluruh bentuk wajib tashih makna, vokalisasi, dan jika mengklaim Qur'ani, surah:ayat persis sebelum produksi.
