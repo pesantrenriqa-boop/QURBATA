@@ -26,3 +26,7 @@ G1–G4 review, G5 blocked.
 **Kunci latihan (detail):** (1) سـ sin tanpa titik; (2) شـ syin dengan tiga titik di atas; (3) tiga; (4) tidak ada; (5) guru memeriksa bunyi sin dan syin secara terpisah. **Catatan:** titik syin adalah tiga, bukan dua; kedua kartu bentuk awal dan bukan kata Qurani.
 
 **Gate tetap REVIEW; ini pemeriksaan internal, bukan tashih mushaf primer.**
+
+
+## Integrasi hadis Akhlak H04 — 17 Oktober 2026
+Kandidat matan: **إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ**. Sumber: Shahih al-Bukhari 1 (https://sunnah.com/bukhari:1). Penerapan kelas: usaha belajar dinilai dari perilaku, bukan menebak niat batin. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, rasm/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
