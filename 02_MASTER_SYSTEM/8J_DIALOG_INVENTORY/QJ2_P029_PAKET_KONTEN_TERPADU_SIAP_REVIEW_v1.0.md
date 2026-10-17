@@ -26,3 +26,9 @@ Tema: memeriksa sebelum menjawab. Kandidat ayat **Al-Isra 17:36** — **وَلَ
 
 ## Gate
 G1 kunci posisi mad: DITULIS SPESIFIK, token/rasm: REVIEW; G2 dialog: REVIEW; G3 ayat dan konteks Akhlak: REVIEW; G4 Tahfidz: REVIEW; G5 integrasi: BLOCKED. **CONTENT-FINAL belum PASS.**
+
+
+## Audit lanjutan prafinal — 17 Oktober 2026
+Kartu قَالَ dan وَعِبَادُ menguji alif mad setelah قَ dan بَ; waw pada وَعِبَادُ adalah prefiks berfathah, bukan mad. Penilaian lisan 1,2,5 tidak dapat diberi kunci tunggal tanpa rekaman/observasi guru. Periksa konteks token 25:63.
+
+**Keputusan:** G1 BLOCKED sampai token, rasm, dan ayat diverifikasi dari mushaf primer; G2–G4 REVIEW; G5 BLOCKED. Belum CONTENT-FINAL.
