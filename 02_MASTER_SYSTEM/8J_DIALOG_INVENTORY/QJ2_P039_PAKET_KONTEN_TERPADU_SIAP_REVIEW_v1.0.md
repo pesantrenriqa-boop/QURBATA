@@ -5,19 +5,19 @@
 ## 1 Tartil
 Kompetensi: evaluasi alif, ya, waw. Kartu Qurani **terpisah**, sumber kandidat: قَالَ (2:30); الرَّحِيمِ (1:3); يَقُولُ (2:8). Jangan gabungkan kartu dari ayat berbeda menjadi frasa yang diklaim Qurani.
 
-Latihan (Arab):
-1. أَشِرْ إِلَى حَرْفِ الْمَدِّ فِي الْبِطَاقَةِ الْأُولَى.
-2. أَشِرْ إِلَى حَرْفِ الْمَدِّ فِي الْبِطَاقَةِ الثَّانِيَةِ.
-3. مَا حَرَكَةُ الْحَرْفِ الَّذِي قَبْلَ حَرْفِ الْمَدِّ؟
-4. قَارِنْ بَيْنَ الْبِطَاقَتَيْنِ وَبَيِّنْ وَجْهَ الْفَرْقِ.
-5. اِسْتَمِعْ إِلَى الْقِرَاءَةِ ثُمَّ اقْرَأْ بِصَوْتٍ وَاضِحٍ.
+Latihan Arab khusus P039:
+1. أَشِرْ إِلَى الْأَلِفِ فِي قَالَ.
+2. أَشِرْ إِلَى الْيَاءِ فِي الرَّحِيمِ.
+3. أَشِرْ إِلَى الْوَاوِ فِي يَقُولُ.
+4. صَنِّفِ الْكَلِمَاتِ حَسَبَ حَرْفِ الْمَدِّ.
+5. اِقْرَأِ الْبِطَاقَاتِ الثَّلَاثَ دُونَ مُسَاعَدَةٍ.
 
-**Kunci:** guru mengidentifikasi alif setelah fathah, ya setelah kasrah, atau waw setelah dhammah pada kartu yang memang memuat mad; pada kartu kontras ya/waw berharakat **bukan mad**. P040 khusus tanwin: kartu خَوْفٍ = kasratain, سَلَامٌ = dhammatain, أَفْوَاجًا = fathatain. **Butir 1–4 untuk P040 harus diganti dengan instrumen rinci pada dokumen evaluasi v0.2 sebelum penggunaan.** Penilaian butir 5 dilakukan melalui talaqqi.
+**Kunci spesifik:** قَالَ = alif setelah قَ; الرَّحِيمِ = ya setelah حِ; يَقُولُ = waw setelah قُ; klasifikasi masing-masing kartu, rubrik lisan terpisah. Butir baca dinilai guru melalui talaqqi. Seluruh bentuk kartu dan referensi perlu tashih mushaf primer.
 
 ## 2 Bi'ah Arabiyah
-المعلم: هَلْ قَرَأْتَ الْبِطَاقَاتِ؟ الطالب: قَرَأْتُ بَعْضَهَا. المعلم: مَا الَّذِي تَحْتَاجُ إِلَى مُرَاجَعَتِهِ؟ الطالب: أُرِيدُ أَنْ أُعِيدَ الْقِرَاءَةَ. المعلم: حَسَنًا، اِبْدَأْ بِالْبِطَاقَةِ الْأُولَى.
+المعلم: كَمْ حَرْفَ مَدٍّ دَرَسْنَا؟ الطالب: ثَلَاثَةَ أَحْرُفٍ. المعلم: سَمِّهَا. الطالب: الْأَلِفُ وَالْيَاءُ وَالْوَاوُ.
 
-Dialog karangan pendidikan, belum ditashih reviewer dan masih perlu diferensiasi per halaman.
+Dialog khusus halaman, karangan pedagogis (bukan nash). Reviewer Bahasa Arab masih diperlukan.
 
 ## 3 Akhlak
 Tema berusaha baik. Kandidat ayat Al-Baqarah 2:148, **nash utuh dan konteks tafsir belum ditetapkan**. Kegiatan: santri menunjukkan perilaku sesuai tema saat membaca dan menyimak temannya. Jangan menganggap sumber kandidat sebagai nash final.
@@ -27,3 +27,6 @@ Target **FROZEN**: At-Tin 7–8; Ash-Sharh 1–2. Talqin → talaqqi → setoran
 
 ## Gate
 G1 kartu dan rasm REVIEW; G2 dialog REVIEW; G3 nash Akhlak REVIEW; G4 teks dan beban Tahfidz REVIEW; G5 BLOCKED. **0 halaman dinyatakan CONTENT-FINAL oleh dokumen ini.**
+
+## Audit revisi isi — 17 Oktober 2026
+Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum telah diganti dialog khusus. STATUS tetap REVIEW karena G1 rasm, G2 reviewer bahasa, G3 nash Akhlak, G4 teks Tahfidz belum disahkan.
