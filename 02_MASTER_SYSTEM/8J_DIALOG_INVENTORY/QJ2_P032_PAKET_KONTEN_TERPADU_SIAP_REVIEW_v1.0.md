@@ -12,7 +12,7 @@ Latihan (5):
 4. اِسْتَمِعْ إِلَى قِرَاءَةِ الْبِطَاقَةِ الْأُولَى ثُمَّ أَعِدْهَا.
 5. اِقْرَأِ الْبِطَاقَةَ الثَّانِيَةَ وَدَعْ زَمِيلَكَ يُصَحِّحْ لَكَ.
 
-Kunci/rubrik: (1–2) tandai ya mad setelah kasrah, bukan setiap ya; (3) kasrah; (4–5) guru nilai bunyi dan panjang mad asli dua harakat pada segmen sasaran. **Jika suatu kartu tidak mengandung ya mad menurut bentuk mushaf, kartu harus diganti, bukan diluluskan.**
+Kunci/rubrik spesifik: Kartu A فِي: ya mad sesudah فِ; kartu B الَّذِي: ya mad sesudah ذِ. Catatan: الَّذِي dalam Al-Alaq 96:1 muncul sebagai الَّذِي خَلَقَ. (1–2) tunjuk ya mad pada masing-masing kartu; (3) kasrah; (4–5) guru menilai bunyi dan panjang mad asli dua harakat secara lisan. **Jika suatu kartu tidak mengandung ya mad menurut bentuk mushaf, kartu harus diganti, bukan diluluskan.**
 
 ## 2 Bi'ah Arabiyah
 المعلم: هَلْ تَحْتَاجُ إِلَى إِعَادَةِ الْقِرَاءَةِ؟ الطالب: نَعَمْ، مِنْ فَضْلِكَ. المعلم: اِسْتَمِعْ جَيِّدًا ثُمَّ أَعِدْ. الطالب: شُكْرًا، سَأُحَاوِلُ.
@@ -27,3 +27,7 @@ FROZEN: **Al-Alaq 1–3**. Talqin → talaqqi → setoran berurutan → murojaah
 
 ## Gate
 G1 token dan rasm: REVIEW; G2 dialog: REVIEW; G3 nash dan konteks: REVIEW; G4 setoran: REVIEW; G5 integrasi: BLOCKED. **Belum CONTENT-FINAL.**
+
+## Penyempurnaan langsung kunci dan pemeriksaan bentuk
+- Kunci lokasi huruf mad sekarang menyebut huruf sebelum ya pada setiap kartu; tidak lagi sekadar 'sesudah kasrah'.
+- Kartu dan rujukan masih perlu perbandingan mushaf Utsmani primer dan telaah ahli sebelum G1 PASS.
