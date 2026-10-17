@@ -7,11 +7,11 @@ Kartu A: **الْمَالُ** (18:46); kartu B: **النَّهَارَ** (78:11)
 
 1. أَشِرْ إِلَى أَلِفِ الْمَدِّ فِي الْبِطَاقَةِ الْأُولَى.
 2. أَشِرْ إِلَى أَلِفِ الْمَدِّ فِي الْبِطَاقَةِ الثَّانِيَةِ.
-3. مَا الْحَرْفُ الَّذِي يَسْبِقُ أَلِفَ الْمَدِّ فِي الْبِطَاقَةِ الْأُولَى؟
-4. مَا الْحَرْفُ الَّذِي يَسْبِقُ أَلِفَ الْمَدِّ فِي الْبِطَاقَةِ الثَّانِيَةِ؟
-5. اِسْتَمِعْ إِلَى الْبِطَاقَتَيْنِ ثُمَّ اقْرَأْهُمَا بِصَوْتٍ وَاضِحٍ.
+3. مَا الْحَرْفُ قَبْلَ الْأَلِفِ فِي الْبِطَاقَةِ الْأُولَى؟
+4. مَا حَرَكَةُ الْهَاءِ قَبْلَ الْأَلِفِ فِي الْبِطَاقَةِ الثَّانِيَةِ؟
+5. اِقْرَأِ الْبِطَاقَتَيْنِ بَعْدَ الْمُعَلِّمِ.
 
-**Kunci operasional spesifik:** (1) alif mad pada kartu A **الْمَالُ**, tepat setelah huruf **م** berfathah; (2) alif mad pada kartu B **النَّهَارَ**, tepat setelah huruf **ه** berfathah; (3) **م**; (4) **ه**; (5) guru memeriksa panjang mad asli dua harakat dan ketepatan makhraj tiap kartu secara terpisah. Harakat/rasm wajib ditashih dari mushaf primer sebelum cetak.
+**Kunci operasional spesifik:** (1) alif setelah مَ pada الْمَالُ; (2) alif setelah هَ pada النَّهَارَ; (3) م; (4) fathah; (5) baca masing-masing kartu dengan mad asli dua harakat. Semua token masih menunggu tashih rasm mushaf primer.
 
 ## 2. Bi'ah Arabiyah
 المعلم: هَلْ قَرَأْتَ الْبِطَاقَةَ الثَّانِيَةَ؟ الطالب: نَعَمْ، وَلَكِنِّي أُرِيدُ أَنْ أُعِيدَهَا. المعلم: أَعِدْهَا بِتَأَنٍّ.
