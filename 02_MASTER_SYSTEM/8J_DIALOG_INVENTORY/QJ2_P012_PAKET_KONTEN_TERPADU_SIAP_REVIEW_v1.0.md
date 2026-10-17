@@ -28,3 +28,7 @@ G1–G4 REVIEW; G5 BLOCKED. NOT FOR PRINT.
 **Audit ك:** kartu ك (mandiri), كـ (awal), ـكـ (tengah), ـك (akhir) dibedakan berdasarkan sambungan, bukan empat huruf berbeda. Kunci kelima soal harus mengikuti posisi kartu. Tanda tatweel pada peraga tidak boleh dianggap sebagai karakter mushaf.
 
 **Gate tetap REVIEW, bukan tashih primer atau CONTENT-FINAL.**
+
+
+## Integrasi hadis Akhlak H05 — 17 Oktober 2026
+Kandidat matan: **الدِّينُ النَّصِيحَةُ**. Sumber: Shahih Muslim 55a (https://sunnah.com/muslim:55a). Penerapan kelas: menasihati dengan adab; makna nasihat hadis lebih luas dari koreksi bacaan. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, rasm/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
