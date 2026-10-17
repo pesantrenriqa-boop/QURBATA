@@ -22,3 +22,9 @@ Kandidat An-Nahl 16:43: فَاسْأَلُوا أَهْلَ الذِّكْرِ �
 FROZEN: At-Takathur 5–6. Talqin, talaqqi, setoran, murojaah. Teks ayat dan beban setoran belum diaudit.
 
 G1–G4 REVIEW; G5 BLOCKED. NOT FOR PRINT.
+
+
+## Audit ketepatan objek dan kunci — 17 Oktober 2026
+**Audit ف/ق:** dalam kartu ortografi Arab umum, ف memiliki satu titik di atas dan ق dua titik di atas. Namun titik qaf dalam tradisi penulisan mushaf/font tertentu harus dicek pada KFGQPC Uthman Taha. Kunci soal 3 = dua; soal 4 = satu. Evaluasi pelafalan ف dan ق terpisah dari evaluasi titik.
+
+**Gate tetap REVIEW, bukan tashih primer atau CONTENT-FINAL.**
