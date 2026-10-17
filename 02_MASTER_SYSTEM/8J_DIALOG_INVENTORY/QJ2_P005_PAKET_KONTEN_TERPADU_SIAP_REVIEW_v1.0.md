@@ -26,3 +26,9 @@ Target **FROZEN: Al-Humazah 1–3**. Talqin per ayat → talaqqi → setoran ind
 
 ## Gate
 G1 kartu dan fonetik REVIEW; G2 dialog REVIEW; G3 nash dan tafsir REVIEW; G4 Tahfidz REVIEW; G5 BLOCKED. **NOT FOR PRINT.**
+
+
+## Audit kunci spesifik dan prasyarat grafem — 17 Oktober 2026
+**Audit huruf pemutus:** د ذ ر ز menerima sambungan dari huruf sebelumnya, tetapi tidak menyambung ke sesudahnya. **Kunci:** (1) د ذ; (2) ر ز; (3) ذ dan ز bertitik; (4) tidak; (5) identifikasi nama keempat huruf dan pasangan bertitik/tanpa titik. Hindari klaim bahwa huruf-huruf ini tidak dapat tersambung sama sekali.
+
+**Belum lulus G1–G5; verifikasi ahli dan font target masih wajib.**
