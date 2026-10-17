@@ -28,3 +28,7 @@ G1–G4 REVIEW; G5 BLOCKED. NOT FOR PRINT.
 **Audit ف/ق:** dalam kartu ortografi Arab umum, ف memiliki satu titik di atas dan ق dua titik di atas. Namun titik qaf dalam tradisi penulisan mushaf/font tertentu harus dicek pada KFGQPC Uthman Taha. Kunci soal 3 = dua; soal 4 = satu. Evaluasi pelafalan ف dan ق terpisah dari evaluasi titik.
 
 **Gate tetap REVIEW, bukan tashih primer atau CONTENT-FINAL.**
+
+
+## Integrasi hadis Akhlak H05 — 17 Oktober 2026
+Kandidat matan: **الدِّينُ النَّصِيحَةُ**. Sumber: Shahih Muslim 55a (https://sunnah.com/muslim:55a). Penerapan kelas: menasihati dengan adab; konteks hadis lebih luas daripada koreksi bacaan. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, matan/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
