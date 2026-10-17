@@ -21,3 +21,8 @@ Kandidat Al-Ankabut 29:69. Perilaku: ketelitian, kesabaran, dan menerima koreksi
 FROZEN Al-Asr 1–3. Talqin, talaqqi, setoran dan murojaah. Audit teks dan beban belum lulus.
 
 G1–G4 review, G5 blocked.
+
+## Revisi kunci dan ketepatan objek — 17 Oktober 2026
+**Kunci latihan (detail):** (1) صـ sad tanpa titik; (2) ضـ dad dengan satu titik di atas; (3) ya, satu; (4) tidak; (5) guru memeriksa bunyi ṣād dan ḍād serta ketebalan, bukan sekadar jumlah titik. **Catatan:** bentuk grafis final harus diperiksa pada font target.
+
+**Gate tetap REVIEW; ini pemeriksaan internal, bukan tashih mushaf primer.**
