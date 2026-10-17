@@ -5,19 +5,19 @@
 ## 1 Tartil
 Kompetensi: mad waw. Kartu Qurani **terpisah**, sumber kandidat: يَعْلَمُونَ (2:13); يَقُولُ (2:8). Jangan gabungkan kartu dari ayat berbeda menjadi frasa yang diklaim Qurani.
 
-Latihan (Arab):
-1. أَشِرْ إِلَى حَرْفِ الْمَدِّ فِي الْبِطَاقَةِ الْأُولَى.
-2. أَشِرْ إِلَى حَرْفِ الْمَدِّ فِي الْبِطَاقَةِ الثَّانِيَةِ.
-3. مَا حَرَكَةُ الْحَرْفِ الَّذِي قَبْلَ حَرْفِ الْمَدِّ؟
-4. قَارِنْ بَيْنَ الْبِطَاقَتَيْنِ وَبَيِّنْ وَجْهَ الْفَرْقِ.
-5. اِسْتَمِعْ إِلَى الْقِرَاءَةِ ثُمَّ اقْرَأْ بِصَوْتٍ وَاضِحٍ.
+Latihan Arab khusus P036:
+1. أَشِرْ إِلَى وَاوِ الْمَدِّ فِي يَعْلَمُونَ.
+2. مَا الْحَرْفُ قَبْلَ الْوَاوِ؟
+3. مَا حَرَكَةُ ذَلِكَ الْحَرْفِ؟
+4. قَارِنْ بَيْنَ يَعْلَمُونَ وَيَقُولُ.
+5. اِقْرَأِ الْبِطَاقَتَيْنِ بِتَأَنٍّ.
 
-**Kunci:** guru mengidentifikasi alif setelah fathah, ya setelah kasrah, atau waw setelah dhammah pada kartu yang memang memuat mad; pada kartu kontras ya/waw berharakat **bukan mad**. P040 khusus tanwin: kartu خَوْفٍ = kasratain, سَلَامٌ = dhammatain, أَفْوَاجًا = fathatain. **Butir 1–4 untuk P040 harus diganti dengan instrumen rinci pada dokumen evaluasi v0.2 sebelum penggunaan.** Penilaian butir 5 dilakukan melalui talaqqi.
+**Kunci spesifik:** يَعْلَمُونَ: waw mad setelah مُ; يَقُولُ: waw mad setelah قُ. Uji bunyi مُو dan قُو melalui kata Qurani lengkap, bukan mengklaim suku kata buatan sebagai ayat. Butir baca dinilai guru melalui talaqqi. Seluruh bentuk kartu dan referensi perlu tashih mushaf primer.
 
 ## 2 Bi'ah Arabiyah
-المعلم: هَلْ قَرَأْتَ الْبِطَاقَاتِ؟ الطالب: قَرَأْتُ بَعْضَهَا. المعلم: مَا الَّذِي تَحْتَاجُ إِلَى مُرَاجَعَتِهِ؟ الطالب: أُرِيدُ أَنْ أُعِيدَ الْقِرَاءَةَ. المعلم: حَسَنًا، اِبْدَأْ بِالْبِطَاقَةِ الْأُولَى.
+المعلم: هَلْ تَسْتَطِيعُ قِرَاءَةَ يَعْلَمُونَ؟ الطالب: سَأُحَاوِلُ. المعلم: أَعِدْ مَقْطَعَ مُو. الطالب: مُو.
 
-Dialog karangan pendidikan, belum ditashih reviewer dan masih perlu diferensiasi per halaman.
+Dialog khusus halaman, karangan pedagogis (bukan nash). Reviewer Bahasa Arab masih diperlukan.
 
 ## 3 Akhlak
 Tema menjaga ucapan. Kandidat ayat Qaf 50:18, **nash utuh dan konteks tafsir belum ditetapkan**. Kegiatan: santri menunjukkan perilaku sesuai tema saat membaca dan menyimak temannya. Jangan menganggap sumber kandidat sebagai nash final.
@@ -27,3 +27,6 @@ Target **FROZEN**: Al-Alaq 15–19. Talqin → talaqqi → setoran → murojaah.
 
 ## Gate
 G1 kartu dan rasm REVIEW; G2 dialog REVIEW; G3 nash Akhlak REVIEW; G4 teks dan beban Tahfidz REVIEW; G5 BLOCKED. **0 halaman dinyatakan CONTENT-FINAL oleh dokumen ini.**
+
+## Audit revisi isi — 17 Oktober 2026
+Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum telah diganti dialog khusus. STATUS tetap REVIEW karena G1 rasm, G2 reviewer bahasa, G3 nash Akhlak, G4 teks Tahfidz belum disahkan.
