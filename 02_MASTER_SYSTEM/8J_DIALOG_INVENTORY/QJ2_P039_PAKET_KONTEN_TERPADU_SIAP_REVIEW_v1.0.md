@@ -46,3 +46,9 @@ Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum 
 - **Pemeriksaan substantif:** Tiga jenis mad dipisahkan menurut kartu; tidak dirangkai menjadi ayat.
 - **Kriteria G1 PASS:** (a) salinan token persis dari mushaf primer yang ditentukan; (b) verifikasi nomor ayat; (c) kesesuaian hukum mad/tanwin dan prasyarat; (d) kunci soal sesuai token; (e) identitas penashih dan tanggal.
 - **Hasil saat ini:** G1 **BLOCKED — belum ada bukti tashih mushaf primer dan persetujuan penashih**. Kunci yang sudah ditulis adalah kandidat pedagogis, bukan bukti tashih.
+
+
+## Audit substantif tambahan — 17 Oktober 2026
+P039: قَالَ mad alif, الرَّحِيمِ mad ya, يَقُولُ mad waw. Setoran Tahfidz At-Tin 7–8 dan Ash-Sharh 1–2 wajib dicatat pada dua baris terpisah; evaluasi Tartil juga menguji tiga kartu secara individual.
+
+Gate G1 BLOCKED, G2–G4 REVIEW, G5 BLOCKED. Tidak siap cetak.
