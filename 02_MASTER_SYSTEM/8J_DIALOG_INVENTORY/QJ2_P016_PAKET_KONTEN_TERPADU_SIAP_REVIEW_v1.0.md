@@ -30,3 +30,9 @@ G1–G4 REVIEW; G5 BLOCKED. **NOT FOR PRINT.**
 **Perbaikan penting:** pada kartu ت / ة / ه, dua titik terdapat pada ت dan ة; tetapi ة lazimnya muncul di akhir kata dan bacaan waqafnya berbeda dari ت. Tugas kelima harus memakai contoh kata Qurani yang diverifikasi lebih dahulu sebelum evaluasi bacaan washal–waqaf. Jangan membaca ة sebagai ت pada waqaf secara otomatis.
 
 **G1–G5 belum PASS; belum CONTENT-FINAL.**
+
+
+## Integrasi kandidat hadis dan koreksi materi — 17 Oktober 2026
+Hadis Akhlak kandidat H08 (Bukhari 69): يَسِّرُوا وَلَا تُعَسِّرُوا، وَبَشِّرُوا وَلَا تُنَفِّرُوا. Pada kontras ت / ة / ه, pengajaran bertahap membedakan grafem dan bunyi dalam konteks; penilaian ة memerlukan contoh kata Qurani yang sudah diverifikasi. G3 belum PASS.
+
+**Status: REVIEW; tidak siap cetak.**
