@@ -11,7 +11,7 @@ Kartu A: **وَسَلَامٌ** (19:15); kartu B: **النَّارَ** (2:24). D
 4. مَا الْحَرْفُ الَّذِي يَسْبِقُ أَلِفَ الْمَدِّ فِي الْبِطَاقَةِ الثَّانِيَةِ؟
 5. اِسْتَمِعْ إِلَى الْبِطَاقَتَيْنِ ثُمَّ اقْرَأْهُمَا بِصَوْتٍ وَاضِحٍ.
 
-**Kunci:** 1–2 alif yang sesudah huruf berfathah; 3–4 guru mencocokkan huruf tepat sebelum alif pada masing-masing kartu; 5 asesmen lisan tiap kartu (panjang mad asli dua harakat menurut riwayat yang dipakai). **Kunci posisi rinci wajib ditashih reviewer, jangan menilai dengan kunci generik saja.**
+**Kunci operasional spesifik:** (1) alif mad pada kartu A **وَسَلَامٌ**, tepat setelah huruf **ل** berfathah; (2) alif mad pada kartu B **النَّارَ**, tepat setelah huruf **ن** berfathah; (3) **ل**; (4) **ن**; (5) guru memeriksa panjang mad asli dua harakat dan ketepatan makhraj tiap kartu secara terpisah. Harakat/rasm wajib ditashih dari mushaf primer sebelum cetak.
 
 ## 2. Bi'ah Arabiyah
 المعلم: مَاذَا تَفْعَلُ إِذَا أَخْطَأَ صَدِيقُكَ؟ الطالب: أُسَاعِدُهُ وَلَا أَسْخَرُ مِنْهُ.
@@ -25,4 +25,4 @@ Tema: tidak mengejek teman. Kandidat ayat **Al-Hujurat 49:11** — **لَا يَ
 **FROZEN:** Al-Bayyinah 98:6. Urutan: talqin → talaqqi → setoran tanpa melihat → murojaah bersama target halaman sebelumnya. Rubrik usulan: lafaz dan urutan 40%, tajwid 40%, kelancaran 20%. Guru menilai ayat sesuai mushaf dan riwayat baku.
 
 ## Gate
-G1 sumber token/rasm: REVIEW; G2 dialog: REVIEW; G3 ayat dan konteks Akhlak: REVIEW; G4 Tahfidz: REVIEW; G5 integrasi: BLOCKED. **CONTENT-FINAL belum PASS.**
+G1 kunci posisi mad: DITULIS SPESIFIK, token/rasm: REVIEW; G2 dialog: REVIEW; G3 ayat dan konteks Akhlak: REVIEW; G4 Tahfidz: REVIEW; G5 integrasi: BLOCKED. **CONTENT-FINAL belum PASS.**
