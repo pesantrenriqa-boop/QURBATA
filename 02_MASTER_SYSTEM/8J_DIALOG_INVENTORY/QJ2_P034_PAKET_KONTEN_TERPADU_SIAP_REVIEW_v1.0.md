@@ -39,3 +39,7 @@ Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum 
 - **Pemeriksaan substantif:** Ya awal berfathah bukan ya mad; waw sukun sesudah fathah adalah huruf lin, bukan mad waw asli.
 - **Kriteria G1 PASS:** (a) salinan token persis dari mushaf primer yang ditentukan; (b) verifikasi nomor ayat; (c) kesesuaian hukum mad/tanwin dan prasyarat; (d) kunci soal sesuai token; (e) identitas penashih dan tanggal.
 - **Hasil saat ini:** G1 **BLOCKED — belum ada bukti tashih mushaf primer dan persetujuan penashih**. Kunci yang sudah ditulis adalah kandidat pedagogis, bukan bukti tashih.
+
+
+## Integrasi hadis Akhlak H05 — batch aman
+Matan kandidat: **الدِّينُ النَّصِيحَةُ**. Sumber kerja: Sahih Muslim 55a (https://sunnah.com/muslim:55a). Aplikasi kelas: memberi nasihat santun tanpa menyempitkan makna hadis. Ayat Akhlak lama tetap kandidat terpisah; matan dan konteks perlu persetujuan penashih sebelum cetak. **G3 REVIEW, G5 BLOCKED; NOT CONTENT-FINAL.**
