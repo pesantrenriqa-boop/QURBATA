@@ -45,3 +45,7 @@ Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum 
 Kartu يَقُولُ: waw mad sesudah قُ; يَعْلَمُونَ: waw mad sesudah مُ. Waw yang dibaca panjang mensyaratkan sukun sesudah dhammah dalam konteks yang sesuai. Guru menilai pembacaan dua kata secara terpisah; referensi 2:8 dan 2:13 tetap perlu cek mushaf.
 
 **Keputusan:** G1 BLOCKED sampai token, rasm, dan ayat diverifikasi dari mushaf primer; G2–G4 REVIEW; G5 BLOCKED. Belum CONTENT-FINAL.
+
+
+## Integrasi hadis Akhlak H07 — batch audit
+Matan kandidat: **الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ**. Rujukan kerja: Sahih al-Bukhari 10, https://sunnah.com/bukhari:10. Akhlak terapan di kelas harus terkait fokus halaman dan dinilai melalui perilaku teramati, bukan niat batin. Ayat kandidat lama tidak dihapus. Pemeriksaan matan, konteks, dan keputusan penashih masih diperlukan. **G3 REVIEW, G5 BLOCKED, bukan CONTENT-FINAL.**
