@@ -51,3 +51,8 @@ Catatan: nash masih perlu tashih mushaf dan review tafsir; tidak ada hadis yang 
 - G5 integrasi: **BLOCKED** sampai G1–G4 PASS.
 
 **Definisi status:** konten keempat inventaris sudah tertulis dan punya objek/kunci/rubrik, tetapi tidak boleh diberi label CONTENT-FINAL tanpa bukti persetujuan reviewer.
+
+## Audit substantif Tartil — 17 Oktober 2026
+Kartu قَالَ / كَانَ / الْمَالُ memiliki alif mad setelah fathah pada ق / ك / م. Jangan menganggap الْمَالُ (18:46) dan kata lain dari ayat berlainan sebagai satu frasa Qurani. Nilai tiga pelafalan secara terpisah, serta cek rasm dan keberadaan token pada lokasi yang diklaim sebelum G1 PASS.
+
+**Bukti yang masih dibutuhkan:** token mushaf primer, rasm/harakat, verifikasi ayat, tanda tangan penashih. G1 tetap BLOCKED; G2–G4 REVIEW; G5 BLOCKED.
