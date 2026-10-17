@@ -28,3 +28,9 @@ Dialog pedagogis buatan, bukan kutipan ayat. Review bahasa diperlukan.
 
 ## Status gate
 G1 BLOCKED (mushaf primer); G2 REVIEW; G3 REVIEW; G4 REVIEW; G5 BLOCKED. **Belum CONTENT-FINAL.**
+
+
+## Audit substantif Tartil — 17 Oktober 2026
+Kartu أَفْوَاجًا (110:2) dan أَحَدًا (18:110) memuat fathatain pada ج dan د. Audit soal 5: tanda tanwin sama-sama fathatain, namun bacaan waqaf harus diperagakan per kartu; jangan mengajarkan tanwin dibunyikan saat waqaf. Referensi token dan penempatan tanda Utsmani tetap perlu verifikasi mushaf primer.
+
+**Bukti yang masih dibutuhkan:** token mushaf primer, rasm/harakat, verifikasi ayat, tanda tangan penashih. G1 tetap BLOCKED; G2–G4 REVIEW; G5 BLOCKED.
