@@ -16,3 +16,11 @@ Status: **BELUM FINAL**. Pemeriksaan terhadap inventaris pada commit 810b19e.
 5. Setelah sumber bertambah, lakukan rotasi dengan batas pengulangan dan review pedagogis terencana; pertahankan 24 kelompok dan whitelist halaman frozen.
 
 **Keputusan:** audit jumlah/keunikan dalam halaman lulus, tetapi gate kekayaan leksikal dan bukti Qur'ani belum lulus.
+
+
+## Audit ulang sesudah commit c334f08
+
+- 40 halaman × 24 = **960 kelompok**; tidak ditemukan kompetensi harakat prematur pada kelompok yang diperiksa.
+- Rotasi sebelumnya **belum berhasil menurunkan pengulangan global**: جَ عَ لَ 16 kali; سَ جَ دَ 15 kali; شَ رِ بَ 15 kali; لَ عِ بَ 15 kali.
+- Penyebab: pool kata terbatas dan algoritme masih mengisi kekurangan dari kata lama, sehingga kata bermakna berulang. Klaim bahwa variasi sudah memadai **ditolak**.
+- **Tindakan berikutnya yang sah:** perluasan bank kata dengan attestasi sumber, penyaringan sesuai whitelist harakat per halaman, kemudian penggantian contoh repetitif dan audit ulang metrik global. Jangan mengarang kata baru hanya untuk mengejar angka.
