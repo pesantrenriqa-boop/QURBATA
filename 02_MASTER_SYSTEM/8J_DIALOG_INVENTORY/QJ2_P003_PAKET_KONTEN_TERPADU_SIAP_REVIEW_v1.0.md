@@ -26,3 +26,9 @@ Target **FROZEN: Al-Fil 1–2**. Talqin per ayat → talaqqi → setoran individ
 
 ## Gate
 G1 kartu dan fonetik REVIEW; G2 dialog REVIEW; G3 nash dan tafsir REVIEW; G4 Tahfidz REVIEW; G5 BLOCKED. **NOT FOR PRINT.**
+
+
+## Audit kunci spesifik dan prasyarat grafem — 17 Oktober 2026
+**Audit kartu awal:** ب satu titik bawah, ت dua atas, ث tiga atas, ن satu atas, ي dua bawah. **Kunci:** (1) ب; (2) ن; (3) ي; (4) ت dua titik dan ث tiga titik di atas; (5) lima huruf disebutkan sesuai urutan kartu. Untuk يـ bentuk awal, audit penempatan dua titik pada font target.
+
+**Belum lulus G1–G5; verifikasi ahli dan font target masih wajib.**
