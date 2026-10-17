@@ -32,3 +32,10 @@ G1 kartu dan rasm REVIEW; G2 dialog REVIEW; G3 kandidat nash Akhlak tertulis dan
 
 ## Audit revisi isi — 17 Oktober 2026
 Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum telah diganti dialog khusus. STATUS tetap REVIEW karena G1 rasm, G2 reviewer bahasa, G3 nash Akhlak, G4 teks Tahfidz belum disahkan.
+
+## Bukti audit prafinal — kartu Tartil
+- **Kartu yang diaudit:** `وَالْعَصْرِ`.
+- **Rujukan kandidat:** Al-Asr 103:1.
+- **Pemeriksaan substantif:** Waw awal berfathah, bukan waw mad.
+- **Kriteria G1 PASS:** (a) salinan token persis dari mushaf primer yang ditentukan; (b) verifikasi nomor ayat; (c) kesesuaian hukum mad/tanwin dan prasyarat; (d) kunci soal sesuai token; (e) identitas penashih dan tanggal.
+- **Hasil saat ini:** G1 **BLOCKED — belum ada bukti tashih mushaf primer dan persetujuan penashih**. Kunci yang sudah ditulis adalah kandidat pedagogis, bukan bukti tashih.
