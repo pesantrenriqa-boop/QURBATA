@@ -25,7 +25,7 @@ Dialog khusus halaman, karangan pedagogis (bukan nash). Reviewer Bahasa Arab mas
 **Tugas teramati:** guru mengamati tindakan santri saat giliran membaca, menyimak, dan memberi tanggapan. **Petikan ayat dan konteks tafsir masih wajib ditashih; ini bukan penetapan nash final.**
 
 ## 4 Tahfidz
-Target **FROZEN**: Al-Alaq 11–14. Talqin → talaqqi → setoran → murojaah. Rubrik sementara: lafaz/urutan 40%, tajwid 40%, kelancaran 20%. P039: nilai dua surat secara terpisah.
+Target **FROZEN**: Al-Alaq 11–14. Talqin → talaqqi → setoran → murojaah. Rubrik sementara: lafaz/urutan 40%, tajwid 40%, kelancaran 20%. Setoran Al-Alaq 11–14 dinilai sebagai target halaman ini.
 
 ## Gate
 G1 kartu dan rasm REVIEW; G2 dialog REVIEW; G3 kandidat nash Akhlak tertulis dan relevansi dicatat; REVIEW tafsir/rasm; G4 teks dan beban Tahfidz REVIEW; G5 BLOCKED. **0 halaman dinyatakan CONTENT-FINAL oleh dokumen ini.**
