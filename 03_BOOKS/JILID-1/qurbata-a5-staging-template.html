@@ -12,6 +12,15 @@
 .page::after{content:"DRAF · TIDAK UNTUK CETAK FINAL";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-34deg);font:700 21px Arial,sans-serif;color:rgba(160,70,30,.17);pointer-events:none;white-space:nowrap;z-index:5}.panel{border-radius:3mm;border:1px solid #c9ddda;padding:2.5mm}
 .panel h2{margin:0 0 2mm;font-size:10px;letter-spacing:.04em}
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2mm;direction:rtl}
+/* J2-J8 adaptive grid primitives; J1 staging behavior remains unchanged */
+.exercise-row{display:grid;gap:2mm;direction:rtl;break-inside:avoid;margin-bottom:2mm}
+.exercise-row[data-columns="3"]{grid-template-columns:repeat(3,minmax(0,1fr))}
+.exercise-row[data-columns="2"]{grid-template-columns:repeat(2,minmax(0,1fr))}
+.exercise-row[data-columns="1"]{grid-template-columns:minmax(0,1fr)}
+.exercise-cell{min-width:0;min-height:11mm;padding:2mm;display:flex;align-items:center;justify-content:center;border:1px solid #c9ddda;border-radius:1.5mm;direction:rtl;unicode-bidi:isolate;overflow-wrap:anywhere;white-space:normal;line-height:1.9}
+.exercise-row[data-columns="1"] .exercise-cell{justify-content:flex-start;text-align:right;min-height:14mm}
+.exercise-row[data-columns="1"][data-phase="fluency"] .exercise-cell{font-size:20px}
+@media print{.exercise-row,.exercise-cell{break-inside:avoid}}
 .group{display:flex;align-items:center;justify-content:center;min-height:10mm;border-bottom:1px solid #d7e5e3;font-size:22px;white-space:nowrap;direction:rtl}
 .group .token{display:inline-block;margin-inline:1.2mm}
 .panel.small{min-height:17mm}.panel.small .ar{font-size:18px}
