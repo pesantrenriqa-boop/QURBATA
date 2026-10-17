@@ -1,0 +1,29 @@
+# J2 P032 — Empat Inventaris Terpadu v1.0
+
+**STATUS: CONTENT-COMPLETE DRAFT; NOT CONTENT-FINAL.** Teks kartu masih harus ditashih terhadap mushaf primer, terutama rasm dan ketepatan bentuk token. Jangan cetak sebelum review.
+
+## 1 Tartil — Mad ya
+Kartu A **فِي** (kandidat QS 2:2); kartu B **الَّذِي** (kandidat QS 96:1). Kartu dari ayat berbeda, bukan frasa sambungan.
+
+Latihan (5):
+1. أَشِرْ إِلَى يَاءِ الْمَدِّ فِي الْبِطَاقَةِ الْأُولَى.
+2. أَشِرْ إِلَى يَاءِ الْمَدِّ فِي الْبِطَاقَةِ الثَّانِيَةِ.
+3. مَا حَرَكَةُ الْحَرْفِ الَّذِي قَبْلَ يَاءِ الْمَدِّ؟
+4. اِسْتَمِعْ إِلَى قِرَاءَةِ الْبِطَاقَةِ الْأُولَى ثُمَّ أَعِدْهَا.
+5. اِقْرَأِ الْبِطَاقَةَ الثَّانِيَةَ وَدَعْ زَمِيلَكَ يُصَحِّحْ لَكَ.
+
+Kunci/rubrik: (1–2) tandai ya mad setelah kasrah, bukan setiap ya; (3) kasrah; (4–5) guru nilai bunyi dan panjang mad asli dua harakat pada segmen sasaran. **Jika suatu kartu tidak mengandung ya mad menurut bentuk mushaf, kartu harus diganti, bukan diluluskan.**
+
+## 2 Bi'ah Arabiyah
+المعلم: هَلْ تَحْتَاجُ إِلَى إِعَادَةِ الْقِرَاءَةِ؟ الطالب: نَعَمْ، مِنْ فَضْلِكَ. المعلم: اِسْتَمِعْ جَيِّدًا ثُمَّ أَعِدْ. الطالب: شُكْرًا، سَأُحَاوِلُ.
+
+Komunikasi: bertanya dengan santun; dialog karangan pembelajaran, bukan nash.
+
+## 3 Akhlak
+Tema: bertanya dengan santun. Kandidat nash Qurani An-Nahl 16:43: **فَاسْأَلُوا أَهْلَ الذِّكْرِ**. Perlu review tafsir dan ketepatan petikan; contoh aplikasi perilaku di kelas tidak boleh diperlakukan sebagai makna tunggal ayat. Penilaian: guru mengamati santri menerapkan tema dalam aktivitas membaca.
+
+## 4 Tahfidz
+FROZEN: **Al-Alaq 1–3**. Talqin → talaqqi → setoran berurutan → murojaah dengan halaman sebelumnya. Rubrik usulan: lafaz dan urutan 40%; tajwid 40%; kelancaran 20%.
+
+## Gate
+G1 token dan rasm: REVIEW; G2 dialog: REVIEW; G3 nash dan konteks: REVIEW; G4 setoran: REVIEW; G5 integrasi: BLOCKED. **Belum CONTENT-FINAL.**
