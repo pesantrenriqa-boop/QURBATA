@@ -22,3 +22,9 @@ Kandidat Al-A'raf 7:204: فَاسْتَمِعُوا لَهُ وَأَنْصِت�
 FROZEN: Al-Qari'ah 4–5. Talqin, talaqqi, setoran, murojaah. Teks ayat dan beban setoran belum diaudit.
 
 G1–G4 REVIEW; G5 BLOCKED. NOT FOR PRINT.
+
+
+## Audit ketepatan objek dan kunci — 17 Oktober 2026
+**Audit ع/غ:** keduanya satu keluarga bentuk; ع tidak bertitik, غ satu titik di atas. Kunci soal 3 = نعم; 4 = لا. Guru wajib memeriksa bunyi dua huruf, tidak hanya kemampuan menunjuk titik.
+
+**Gate tetap REVIEW, bukan tashih primer atau CONTENT-FINAL.**
