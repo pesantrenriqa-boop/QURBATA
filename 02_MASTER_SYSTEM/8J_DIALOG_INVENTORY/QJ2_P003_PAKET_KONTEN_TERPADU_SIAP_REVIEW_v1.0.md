@@ -36,3 +36,12 @@ G1 kartu dan fonetik REVIEW; G2 dialog REVIEW; G3 nash dan tafsir REVIEW; G4 Tah
 
 ## Integrasi hadis Akhlak H03 — 17 Oktober 2026
 Kandidat matan: **خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ**. Sumber: Shahih al-Bukhari 5027 (https://sunnah.com/bukhari:5027). Penerapan kelas: belajar dan mengajarkan Al-Qur'an. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, rasm/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
+
+
+## Integrasi hadis sumber primer — 17 Oktober 2026
+- Kandidat H03: **خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ**.
+- Rujukan kerja: Shahih al-Bukhari 5027, https://sunnah.com/bukhari:5027.
+- Ini petikan matan; guru wajib memahami hadis dalam konteks lengkap, bukan menyamakan penerapan kelas dengan sebab periwayatan.
+- Belajar dan mengajarkan Al-Qur'an dikaitkan dengan aktivitas membaca dan membimbing tanpa mengganti konteks hadis.
+- Ayat Akhlak sebelumnya dipertahankan sebagai kandidat terpisah. Tidak mengubah urutan Tahfidz FROZEN.
+- **G3 REVIEW; belum disahkan ahli; NOT FOR PRINT.**
