@@ -31,3 +31,9 @@ G1 token dan rasm: REVIEW; G2 dialog: REVIEW; G3 nash dan konteks: REVIEW; G4 se
 ## Penyempurnaan langsung kunci dan pemeriksaan bentuk
 - Kunci lokasi huruf mad sekarang menyebut huruf sebelum ya pada setiap kartu; tidak lagi sekadar 'sesudah kasrah'.
 - Kartu dan rujukan masih perlu perbandingan mushaf Utsmani primer dan telaah ahli sebelum G1 PASS.
+
+
+## Audit lanjutan prafinal — 17 Oktober 2026
+Kartu فِي dan الَّذِي mengandung ya mad setelah فِ dan ذِ. Dalam pembacaan sambung, hukum mad dapat dipengaruhi konteks huruf berikutnya; jangan menilai panjang tanpa konteks bacaan. Rujukan kandidat QS 95:4 dan 96:1 harus dicocokkan pada mushaf primer.
+
+**Keputusan:** G1 BLOCKED sampai token, rasm, dan ayat diverifikasi dari mushaf primer; G2–G4 REVIEW; G5 BLOCKED. Belum CONTENT-FINAL.
