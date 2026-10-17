@@ -26,3 +26,7 @@ G1–G4 review, G5 blocked.
 **Kunci latihan (detail):** (1) طـ tha tanpa titik; (2) ظـ zha dengan satu titik di atas; (3) ظـ; (4) di atas; (5) talaqqi dua makhraj. **Catatan:** perbedaan bukan sekadar harakat; pelafalan dan titik harus dinilai bersama.
 
 **Gate tetap REVIEW; ini pemeriksaan internal, bukan tashih mushaf primer.**
+
+
+## Integrasi hadis Akhlak H05 — 17 Oktober 2026
+Kandidat matan: **الدِّينُ النَّصِيحَةُ**. Sumber: Shahih Muslim 55a (https://sunnah.com/muslim:55a). Penerapan kelas: menasihati dengan adab; makna nasihat hadis lebih luas dari koreksi bacaan. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, rasm/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
