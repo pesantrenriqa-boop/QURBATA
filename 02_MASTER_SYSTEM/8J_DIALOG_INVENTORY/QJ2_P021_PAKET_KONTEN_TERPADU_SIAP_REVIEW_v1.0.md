@@ -34,3 +34,7 @@ G1 BLOCKED (mushaf primer); G2 REVIEW; G3 REVIEW; G4 REVIEW; G5 BLOCKED. **Belum
 Kartu أَفْوَاجًا (110:2) dan أَحَدًا (18:110) memuat fathatain pada ج dan د. Audit soal 5: tanda tanwin sama-sama fathatain, namun bacaan waqaf harus diperagakan per kartu; jangan mengajarkan tanwin dibunyikan saat waqaf. Referensi token dan penempatan tanda Utsmani tetap perlu verifikasi mushaf primer.
 
 **Bukti yang masih dibutuhkan:** token mushaf primer, rasm/harakat, verifikasi ayat, tanda tangan penashih. G1 tetap BLOCKED; G2–G4 REVIEW; G5 BLOCKED.
+
+
+## Integrasi hadis Akhlak H09 — 17 Oktober 2026
+Kandidat matan: **مَنْ لَا يَرْحَمْ لَا يُرْحَمْ**. Sumber: Shahih al-Bukhari 5997 (https://sunnah.com/bukhari:5997). Penerapan kelas: kasih sayang kepada teman sebagai penerapan; konteks asal tentang Nabi mencium cucunya. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, matan/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
