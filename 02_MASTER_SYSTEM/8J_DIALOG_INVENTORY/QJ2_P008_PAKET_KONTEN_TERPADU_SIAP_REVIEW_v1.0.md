@@ -26,3 +26,7 @@ G1–G4 review, G5 blocked.
 **Kunci latihan (detail):** (1) صـ sad tanpa titik; (2) ضـ dad dengan satu titik di atas; (3) ya, satu; (4) tidak; (5) guru memeriksa bunyi ṣād dan ḍād serta ketebalan, bukan sekadar jumlah titik. **Catatan:** bentuk grafis final harus diperiksa pada font target.
 
 **Gate tetap REVIEW; ini pemeriksaan internal, bukan tashih mushaf primer.**
+
+
+## Integrasi hadis Akhlak H04 — 17 Oktober 2026
+Kandidat matan: **إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ**. Sumber: Shahih al-Bukhari 1 (https://sunnah.com/bukhari:1). Penerapan kelas: usaha belajar dinilai dari perilaku, bukan menebak niat batin. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, rasm/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
