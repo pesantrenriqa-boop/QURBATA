@@ -28,3 +28,9 @@ G1–G4 REVIEW; G5 BLOCKED. NOT FOR PRINT.
 **Audit ه:** kartu ه / هـ / ـه mencakup bentuk mandiri, awal, akhir; bentuk tengah ـهـ perlu ditambahkan pada versi desain untuk melengkapi empat posisi. Kunci tugas 1 ه; 2 هـ; 3 ـه; 4 perbandingan tiga kartu yang tersedia; 5 talaqqi. Jangan klaim telah mencakup semua bentuk sebelum kartu tengah tersedia.
 
 **Gate tetap REVIEW, bukan tashih primer atau CONTENT-FINAL.**
+
+
+## Integrasi kandidat hadis dan koreksi materi — 17 Oktober 2026
+Perbaikan inti Tartil: empat bentuk grafis ه / هـ / ـهـ / ـه. Latihan pengganti nomor 4: أَشِرْ إِلَى الْهَاءِ فِي وَسَطِ الْكَلِمَةِ. Kunci nomor 4: ـهـ. Latihan nomor 1–3 dan 5 tetap; kartu bentuk tengah wajib ada pada desain. Hadis Akhlak kandidat H08 (Bukhari 69) tentang memudahkan pembelajaran; bukan pengganti ayat otomatis. G1/G3 belum PASS.
+
+**Status: REVIEW; tidak siap cetak.**
