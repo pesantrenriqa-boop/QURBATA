@@ -22,3 +22,9 @@ Kandidat Al-A'raf 7:204: فَاسْتَمِعُوا لَهُ وَأَنْصِت�
 FROZEN: Al-Qari'ah 6–8. Talqin, talaqqi, setoran, murojaah. Teks ayat dan beban setoran belum diaudit.
 
 G1–G4 REVIEW; G5 BLOCKED. NOT FOR PRINT.
+
+
+## Audit ketepatan objek dan kunci — 17 Oktober 2026
+**Audit ه:** kartu ه / هـ / ـه mencakup bentuk mandiri, awal, akhir; bentuk tengah ـهـ perlu ditambahkan pada versi desain untuk melengkapi empat posisi. Kunci tugas 1 ه; 2 هـ; 3 ـه; 4 perbandingan tiga kartu yang tersedia; 5 talaqqi. Jangan klaim telah mencakup semua bentuk sebelum kartu tengah tersedia.
+
+**Gate tetap REVIEW, bukan tashih primer atau CONTENT-FINAL.**
