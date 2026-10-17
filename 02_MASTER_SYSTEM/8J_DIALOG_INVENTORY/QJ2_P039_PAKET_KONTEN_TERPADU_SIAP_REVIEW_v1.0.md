@@ -32,3 +32,10 @@ G1 kartu dan rasm REVIEW; G2 dialog REVIEW; G3 kandidat nash Akhlak tertulis dan
 
 ## Audit revisi isi — 17 Oktober 2026
 Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum telah diganti dialog khusus. STATUS tetap REVIEW karena G1 rasm, G2 reviewer bahasa, G3 nash Akhlak, G4 teks Tahfidz belum disahkan.
+
+## Checklist validasi Tahfidz khusus P039
+- Target tetap At-Tin 7–8 dan Ash-Sharh 1–2; dua surat harus memiliki lembar cek setoran **terpisah**.
+- At-Tin: verifikasi ayat 7 dan 8, urutan, dan sambungan bacaan.
+- Ash-Sharh: verifikasi ayat 1 dan 2, urutan, dan sambungan bacaan.
+- Nilai masing-masing surat dicatat terpisah; jangan menganggap satu nilai gabungan cukup untuk membuktikan penguasaan dua target.
+- **Belum PASS G4** sebelum pemeriksaan teks ayat pada mushaf primer dan uji beban santri.
