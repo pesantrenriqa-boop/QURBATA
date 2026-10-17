@@ -39,3 +39,9 @@ Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum 
 - **Pemeriksaan substantif:** Waw mad setelah qaf dhammah; pada 2:8 ada يَقُولُ yang perlu dicocokkan bentuknya.
 - **Kriteria G1 PASS:** (a) salinan token persis dari mushaf primer yang ditentukan; (b) verifikasi nomor ayat; (c) kesesuaian hukum mad/tanwin dan prasyarat; (d) kunci soal sesuai token; (e) identitas penashih dan tanggal.
 - **Hasil saat ini:** G1 **BLOCKED — belum ada bukti tashih mushaf primer dan persetujuan penashih**. Kunci yang sudah ditulis adalah kandidat pedagogis, bukan bukti tashih.
+
+
+## Audit lanjutan prafinal — 17 Oktober 2026
+Kartu يَقُولُ: waw mad sesudah قُ; يَعْلَمُونَ: waw mad sesudah مُ. Waw yang dibaca panjang mensyaratkan sukun sesudah dhammah dalam konteks yang sesuai. Guru menilai pembacaan dua kata secara terpisah; referensi 2:8 dan 2:13 tetap perlu cek mushaf.
+
+**Keputusan:** G1 BLOCKED sampai token, rasm, dan ayat diverifikasi dari mushaf primer; G2–G4 REVIEW; G5 BLOCKED. Belum CONTENT-FINAL.
