@@ -6,12 +6,12 @@
 Kartu A: **كِتَابٌ** (2:89); kartu B: **وَعِبَادُ** (25:63). Dua kartu berasal dari ayat berbeda, tidak boleh disambung sebagai kutipan ayat. Fokus: alif mad sesudah fathah. Bila ada waw prefiks, bukan huruf mad.
 
 1. أَشِرْ إِلَى أَلِفِ الْمَدِّ فِي الْبِطَاقَةِ الْأُولَى.
-2. أَشِرْ إِلَى أَلِفِ الْمَدِّ فِي الْبِطَاقَةِ الثَّانِيَةِ.
-3. مَا الْحَرْفُ الَّذِي يَسْبِقُ أَلِفَ الْمَدِّ فِي الْبِطَاقَةِ الْأُولَى؟
-4. مَا الْحَرْفُ الَّذِي يَسْبِقُ أَلِفَ الْمَدِّ فِي الْبِطَاقَةِ الثَّانِيَةِ؟
-5. اِسْتَمِعْ إِلَى الْبِطَاقَتَيْنِ ثُمَّ اقْرَأْهُمَا بِصَوْتٍ وَاضِحٍ.
+2. مَا الْحَرْفُ الَّذِي قَبْلَ الْأَلِفِ فِي كِتَابٌ؟
+3. أَشِرْ إِلَى وَاوِ الْعَطْفِ فِي وَعِبَادُ.
+4. هَلْ وَاوُ الْعَطْفِ فِي وَعِبَادُ وَاوَ مَدٍّ؟
+5. اِقْرَأِ الْكَلِمَتَيْنِ دُونَ وَصْلِهِمَا فِي جُمْلَةٍ.
 
-**Kunci operasional spesifik:** (1) alif mad pada kartu A **كِتَابٌ**, tepat setelah huruf **ت** berfathah; (2) alif mad pada kartu B **وَعِبَادُ**, tepat setelah huruf **ب** berfathah; (3) **ت**; (4) **ب**; (5) guru memeriksa panjang mad asli dua harakat dan ketepatan makhraj tiap kartu secara terpisah. Harakat/rasm wajib ditashih dari mushaf primer sebelum cetak.
+**Kunci operasional spesifik:** (1) alif setelah تَ pada كِتَابٌ; (2) ت; (3) waw prefiks وَ; (4) bukan, waw prefiks berfathah; (5) dua kartu terpisah, mad alif pada تَ dan بَ. Semua token masih menunggu tashih rasm mushaf primer.
 
 ## 2. Bi'ah Arabiyah
 المعلم: أَيْنَ أَلِفُ الْمَدِّ فِي الْبِطَاقَةِ الْأُولَى؟ الطالب: بَعْدَ التَّاءِ. المعلم: وَفِي الثَّانِيَةِ؟ الطالب: بَعْدَ الْبَاءِ.
