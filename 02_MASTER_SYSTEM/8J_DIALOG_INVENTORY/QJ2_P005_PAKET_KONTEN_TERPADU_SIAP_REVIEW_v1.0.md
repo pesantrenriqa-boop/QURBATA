@@ -36,3 +36,12 @@ G1 kartu dan fonetik REVIEW; G2 dialog REVIEW; G3 nash dan tafsir REVIEW; G4 Tah
 
 ## Integrasi hadis Akhlak H04 — 17 Oktober 2026
 Kandidat matan: **إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ**. Sumber: Shahih al-Bukhari 1 (https://sunnah.com/bukhari:1). Penerapan kelas: usaha belajar dinilai dari perilaku, bukan menebak niat batin. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, rasm/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
+
+
+## Integrasi hadis sumber primer — 17 Oktober 2026
+- Kandidat H04: **إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ**.
+- Rujukan kerja: Shahih al-Bukhari 1, https://sunnah.com/bukhari:1.
+- Ini petikan matan; guru wajib memahami hadis dalam konteks lengkap, bukan menyamakan penerapan kelas dengan sebab periwayatan.
+- Niat batin tidak dijadikan objek skor; nilai perilaku teramati seperti kesiapan, ketekunan, dan ketepatan tugas.
+- Ayat Akhlak sebelumnya dipertahankan sebagai kandidat terpisah. Tidak mengubah urutan Tahfidz FROZEN.
+- **G3 REVIEW; belum disahkan ahli; NOT FOR PRINT.**
