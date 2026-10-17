@@ -32,3 +32,7 @@ G1 kartu dan fonetik REVIEW; G2 dialog REVIEW; G3 nash dan tafsir REVIEW; G4 Tah
 **Audit kartu awal:** ب satu titik bawah, ت dua atas, ث tiga atas, ن satu atas, ي dua bawah. **Kunci:** (1) ب; (2) ن; (3) ي; (4) ت dua titik dan ث tiga titik di atas; (5) lima huruf disebutkan sesuai urutan kartu. Untuk يـ bentuk awal, audit penempatan dua titik pada font target.
 
 **Belum lulus G1–G5; verifikasi ahli dan font target masih wajib.**
+
+
+## Integrasi hadis Akhlak H03 — 17 Oktober 2026
+Kandidat matan: **خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ**. Sumber: Shahih al-Bukhari 5027 (https://sunnah.com/bukhari:5027). Penerapan kelas: belajar dan mengajarkan Al-Qur'an. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, rasm/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
