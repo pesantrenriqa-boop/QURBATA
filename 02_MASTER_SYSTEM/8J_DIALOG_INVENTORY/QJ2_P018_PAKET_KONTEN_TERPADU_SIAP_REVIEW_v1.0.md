@@ -30,3 +30,7 @@ G1–G4 REVIEW; G5 BLOCKED. **NOT FOR PRINT.**
 **Perbaikan:** lima kartu ء / أ / إ / ؤ / ئ mewakili hamzah mandiri, hamzah di atas alif, di bawah alif, di atas waw, dan di atas kursi ya. Kartu bukan lima cara membaca yang selalu berbeda; bunyi hamzah dan kursinya harus diajarkan terpisah. Konfirmasi bentuk Utsmani wajib sebelum memasukkan contoh Qurani.
 
 **G1–G5 belum PASS; belum CONTENT-FINAL.**
+
+
+## Integrasi hadis Akhlak H07 — 17 Oktober 2026
+Kandidat matan: **الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ**. Sumber: Shahih al-Bukhari 10 (https://sunnah.com/bukhari:10). Penerapan kelas: menjaga ucapan dan tindakan, termasuk tidak mengejek teman. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, matan/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
