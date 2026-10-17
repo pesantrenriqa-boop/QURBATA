@@ -26,3 +26,9 @@ Target **FROZEN: Al-Fil 3–5**. Talqin per ayat → talaqqi → setoran individ
 
 ## Gate
 G1 kartu dan fonetik REVIEW; G2 dialog REVIEW; G3 nash dan tafsir REVIEW; G4 Tahfidz REVIEW; G5 BLOCKED. **NOT FOR PRINT.**
+
+
+## Audit kunci spesifik dan prasyarat grafem — 17 Oktober 2026
+**Audit keluarga grafem:** ج satu titik bawah, ح tanpa titik, خ satu titik atas. **Kunci:** (1) ج; (2) ح; (3) خ; (4) bawah; (5) perbedaan ح dan خ tidak hanya titik, tetapi juga bunyi; harus ada demonstrasi talaqqi.
+
+**Belum lulus G1–G5; verifikasi ahli dan font target masih wajib.**
