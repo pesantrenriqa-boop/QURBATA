@@ -21,3 +21,8 @@ Kandidat An-Nahl 16:43. Perilaku: ketelitian, kesabaran, dan menerima koreksi. T
 FROZEN At-Takathur 1–2. Talqin, talaqqi, setoran dan murojaah. Audit teks dan beban belum lulus.
 
 G1–G4 review, G5 blocked.
+
+## Revisi kunci dan ketepatan objek — 17 Oktober 2026
+**Kunci latihan (detail):** (1) طـ tha tanpa titik; (2) ظـ zha dengan satu titik di atas; (3) ظـ; (4) di atas; (5) talaqqi dua makhraj. **Catatan:** perbedaan bukan sekadar harakat; pelafalan dan titik harus dinilai bersama.
+
+**Gate tetap REVIEW; ini pemeriksaan internal, bukan tashih mushaf primer.**
