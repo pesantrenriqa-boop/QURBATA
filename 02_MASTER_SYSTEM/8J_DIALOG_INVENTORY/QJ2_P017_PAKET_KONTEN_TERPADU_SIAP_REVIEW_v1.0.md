@@ -24,3 +24,9 @@ Dialog pedagogis, bukan kutipan ayat; perlu review bahasa.
 **FROZEN: Al-Adiyat 1–3.** Talqin → talaqqi → setoran individual → murojaah. Teks mushaf, tajwid dan beban setoran belum diaudit.
 
 G1–G4 REVIEW; G5 BLOCKED. **NOT FOR PRINT.**
+
+
+## Audit pedagogis dan koreksi — 17 Oktober 2026
+**Batas rasm:** kartu ي dan ى merupakan representasi ortografi pedagogis umum. Bentuk ya akhir tanpa titik dalam rasm Utsmani tidak boleh otomatis diklasifikasikan sebagai alif maqsurah. Uji token mushaf dan font wajib sebelum menggeneralisasi aturan. Kunci kartu semata: ي bertitik dua, ى tanpa titik.
+
+**G1–G5 belum PASS; belum CONTENT-FINAL.**
