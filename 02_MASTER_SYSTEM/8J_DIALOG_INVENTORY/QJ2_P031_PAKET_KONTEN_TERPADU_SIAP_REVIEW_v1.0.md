@@ -37,3 +37,7 @@ G1 token dan rasm: REVIEW; G2 dialog: REVIEW; G3 nash dan konteks: REVIEW; G4 se
 Kartu الرَّحِيمِ dan الدِّينِ sama-sama mengandung ya mad sesudah kasrah (حِ dan دِ). Pastikan pengajaran ya mad tidak mengacaukan harakat akhir ketika berhenti; cek bentuk rasm QS 1:3 dan 1:4. Dialog meminta pengulangan masih memerlukan review kealamian.
 
 **Keputusan:** G1 BLOCKED sampai token, rasm, dan ayat diverifikasi dari mushaf primer; G2–G4 REVIEW; G5 BLOCKED. Belum CONTENT-FINAL.
+
+
+## Integrasi hadis Akhlak H05 — batch aman
+Matan kandidat: **الدِّينُ النَّصِيحَةُ**. Sumber kerja: Sahih Muslim 55a (https://sunnah.com/muslim:55a). Aplikasi kelas: memberi nasihat santun tanpa menyempitkan makna hadis. Ayat Akhlak lama tetap kandidat terpisah; matan dan konteks perlu persetujuan penashih sebelum cetak. **G3 REVIEW, G5 BLOCKED; NOT CONTENT-FINAL.**
