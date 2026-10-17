@@ -49,3 +49,7 @@ Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum 
 - **Pemeriksaan substantif:** Tanwin kasrah/dhammah/fathah; pemeriksaan penulisan Utsmani dan penempatan tanda masih wajib.
 - **Kriteria G1 PASS:** (a) salinan token persis dari mushaf primer yang ditentukan; (b) verifikasi nomor ayat; (c) kesesuaian hukum mad/tanwin dan prasyarat; (d) kunci soal sesuai token; (e) identitas penashih dan tanggal.
 - **Hasil saat ini:** G1 **BLOCKED — belum ada bukti tashih mushaf primer dan persetujuan penashih**. Kunci yang sudah ditulis adalah kandidat pedagogis, bukan bukti tashih.
+
+
+## Integrasi hadis Akhlak H11 — batch audit
+Matan kandidat: **مَنْ غَشَّنَا فَلَيْسَ مِنَّا**. Rujukan: Sahih Muslim 101 (https://sunnah.com/muslim:101). Penerapan: menjawab evaluasi dengan jujur, tidak meniru jawaban teman. Ini penerapan pendidikan, bukan konteks asal hadis. Penashih harus memeriksa redaksi, konteks, dan pemilihan nash utama. **G3 REVIEW, G5 BLOCKED; bukan CONTENT-FINAL.**
