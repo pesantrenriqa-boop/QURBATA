@@ -32,3 +32,7 @@ G1 kartu dan fonetik REVIEW; G2 dialog REVIEW; G3 nash dan tafsir REVIEW; G4 Tah
 **Audit huruf pemutus:** د ذ ر ز menerima sambungan dari huruf sebelumnya, tetapi tidak menyambung ke sesudahnya. **Kunci:** (1) د ذ; (2) ر ز; (3) ذ dan ز bertitik; (4) tidak; (5) identifikasi nama keempat huruf dan pasangan bertitik/tanpa titik. Hindari klaim bahwa huruf-huruf ini tidak dapat tersambung sama sekali.
 
 **Belum lulus G1–G5; verifikasi ahli dan font target masih wajib.**
+
+
+## Integrasi hadis Akhlak H04 — 17 Oktober 2026
+Kandidat matan: **إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ**. Sumber: Shahih al-Bukhari 1 (https://sunnah.com/bukhari:1). Penerapan kelas: usaha belajar dinilai dari perilaku, bukan menebak niat batin. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, rasm/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
