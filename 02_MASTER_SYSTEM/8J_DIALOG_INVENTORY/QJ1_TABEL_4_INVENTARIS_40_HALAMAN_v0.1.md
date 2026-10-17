@@ -51,7 +51,7 @@
 
 | Halaman | Konten Tartil | Dialog Bahasa Arab | Akhlak/Hadis | Tahfidz |
 |---|---|---|---|---|
-| P001 | konsep sambung dengan ب | Skenario asli P001; dialog DRAFT | NASH BELUM TERIDENTIFIKASI/TERTAK HRIJ | Quraisy 1–2 |
+| P001 | Kartu: بَ / بـ / ـبـ / ـب. Latihan: أَشِرْ إِلَى الْبَاءِ الْمُنْفَصِلَةِ؛ أَشِرْ إِلَى الْبَاءِ فِي أَوَّلِ الْكَلِمَةِ؛ أَشِرْ إِلَى الْبَاءِ فِي وَسَطِ الْكَلِمَةِ؛ أَشِرْ إِلَى الْبَاءِ فِي آخِرِ الْكَلِمَةِ؛ اِسْتَمِعْ إِلَى صَوْتِ الْبَاءِ ثُمَّ رَدِّدْ. | المعلّم: أَيْنَ الْبَاءُ الْمُنْفَصِلَةُ؟ الطالب: هَذِهِ. المعلّم: وَأَيْنَ الْبَاءُ الْمُتَّصِلَةُ؟ الطالب: هُنَا. | Kandidat QS Taha 20:114: وَقُلْ رَبِّ زِدْنِي عِلْمًا. Tema: adab belajar; menunggu tashih. | Quraisy 1–2 |
 | P002 | ب ت ث: satu kerangka, beda titik | Skenario asli P002; dialog DRAFT | NASH BELUM TERIDENTIFIKASI/TERTAK HRIJ | Quraisy 3–4 |
 | P003 | ب ت ث ن ي: kontras posisi | Skenario asli P003; dialog DRAFT | NASH BELUM TERIDENTIFIKASI/TERTAK HRIJ | Al-Fil 1–2 |
 | P004 | ج ح خ: keluarga mangkuk | Skenario asli P004; dialog DRAFT | NASH BELUM TERIDENTIFIKASI/TERTAK HRIJ | Al-Fil 3–5 |
