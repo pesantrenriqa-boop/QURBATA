@@ -26,3 +26,7 @@ Tema: tidak mengejek teman. Kandidat ayat **Al-Hujurat 49:11** — **لَا يَ
 
 ## Gate
 G1 kunci posisi mad: DITULIS SPESIFIK, token/rasm: REVIEW; G2 dialog: REVIEW; G3 ayat dan konteks Akhlak: REVIEW; G4 Tahfidz: REVIEW; G5 integrasi: BLOCKED. **CONTENT-FINAL belum PASS.**
+
+
+## Integrasi hadis Akhlak H12 — batch audit
+Matan kandidat: **إِنَّ اللَّهَ رَفِيقٌ يُحِبُّ الرِّفْقَ**. Rujukan kerja: Sahih Muslim 2593, https://sunnah.com/muslim:2593. Akhlak terapan di kelas harus terkait fokus halaman dan dinilai melalui perilaku teramati, bukan niat batin. Ayat kandidat lama tidak dihapus. Pemeriksaan matan, konteks, dan keputusan penashih masih diperlukan. **G3 REVIEW, G5 BLOCKED, bukan CONTENT-FINAL.**
