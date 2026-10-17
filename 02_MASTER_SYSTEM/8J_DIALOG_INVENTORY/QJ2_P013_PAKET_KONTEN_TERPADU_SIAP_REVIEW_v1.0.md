@@ -22,3 +22,9 @@ Kandidat Al-A'raf 7:204: فَاسْتَمِعُوا لَهُ وَأَنْصِت�
 FROZEN: Al-Qari'ah 1–3. Talqin, talaqqi, setoran, murojaah. Teks ayat dan beban setoran belum diaudit.
 
 G1–G4 REVIEW; G5 BLOCKED. NOT FOR PRINT.
+
+
+## Audit ketepatan objek dan kunci — 17 Oktober 2026
+**Audit ل/م:** dua kartu tidak bertitik, sehingga pertanyaan pembeda harus fokus bentuk dan bunyi, bukan jumlah titik. Kunci 1/3 = ل; 2/4 = م; 5 talaqqi makhraj lam dan mim. Dialog guru 'اِسْتَمِعْ أَوَّلًا' cocok untuk aktivitas pendengaran.
+
+**Gate tetap REVIEW, bukan tashih primer atau CONTENT-FINAL.**
