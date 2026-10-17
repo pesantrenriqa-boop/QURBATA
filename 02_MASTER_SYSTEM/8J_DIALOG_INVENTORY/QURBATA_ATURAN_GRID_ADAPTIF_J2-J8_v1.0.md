@@ -35,3 +35,25 @@ Ketiga pola **boleh dicampur pada halaman yang sama**. Keputusan dibuat **per ba
 - G2: kelayakan instruksi Arab.
 - G5: cek overflow A5, tinggi baris, posisi harakat, RTL, konsistensi variasi 3/2/1.
 - Jangan menandai final tanpa bukti render dan pemeriksaan penashih.
+
+
+## Addendum v1.1 — Pedagogi bertahap J2–J8 (keputusan 17 Oktober 2026)
+
+**Aturan lebih spesifik ini mengungguli interpretasi bahwa semua latihan harus campuran 3/2/1.**
+
+- **Penanaman kompetensi baru:** mulai dengan **2 atau 3 kotak per baris** berisi contoh pendek yang terfokus. Guru mencontohkan, santri menirukan, lalu membedakan fitur target.
+- **Transisi:** 2 kotak untuk frasa/penggalan yang memperluas konteks; hanya dipakai bila mendukung kompetensi.
+- **Latihan inti dan kelancaran:** **1 kotak penuh per baris** untuk frasa/ayat yang lebih panjang; utamakan kesinambungan bacaan, waqaf dan keterbacaan.
+- **Jilid 6–8:** **seluruh baris latihan boleh 1 kotak penuh** apabila kompetensi yang diajarkan sudah layak dalam konteks ayat panjang. Jika hukum bacaan baru, berikan contoh pendek terarah pada bagian penanaman (dapat berupa 2–3 kotak), lalu latihan panjang 1 kotak.
+- **Evaluasi:** 1 kotak per baris bila targetnya bacaan berkesinambungan; jangan menjadikan jumlah kotak sebagai indikator kompetensi.
+- **Batasan:** 1 kotak adalah **lebar satu baris latihan**, bukan janji bahwa seluruh ayat selalu muat dalam satu baris tipografis. Ayat yang terlalu panjang dapat membungkus beberapa baris teks **di dalam kotak penuh** dengan penanganan waqaf yang benar.
+- **Keputusan per baris berdasarkan:** kompetensi baru/lama, panjang nash, kompleksitas tajwid, kapasitas santri, dan keterbacaan A5.
+- **Jangan mengubah urutan kompetensi FROZEN, Tahfidz FROZEN, atau mencomot potongan ayat tanpa tashih sumber.**
+
+### Perbandingan metodologis
+- **Ummi:** direct method, pengulangan, dan pembelajaran bertahap; menjadi inspirasi contoh langsung dan latihan berulang (https://ummifoundation.org/metode).
+- **Tilawati:** urutan kompetensi berjilid, klasikal dan baca-simak serta evaluasi bertahap; menjadi inspirasi perpindahan dari penanaman ke bacaan praktik (https://tilawati.org/).
+- **Iqro’ dan Bil Qolam:** dijadikan rujukan pembanding lanjutan setelah contoh halaman otoritatif diperiksa; **tidak diklaim** memiliki aturan jumlah kotak yang sama.
+
+### QA tambahan
+Setiap halaman harus menyimpan `phase: introduction | transition | fluency | evaluation`, `columns: 1|2|3`, `competency_id`, `quran_source_ref` bila menggunakan nash, serta `layout_review`. Untuk J6–J8, `columns:1` pada semua baris latihan adalah **valid**, bukan kegagalan variasi.
