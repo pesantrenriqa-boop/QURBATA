@@ -32,3 +32,12 @@ G1–G4 REVIEW; G5 BLOCKED. NOT FOR PRINT.
 
 ## Integrasi hadis Akhlak H05 — 17 Oktober 2026
 Kandidat matan: **الدِّينُ النَّصِيحَةُ**. Sumber: Shahih Muslim 55a (https://sunnah.com/muslim:55a). Penerapan kelas: menasihati dengan adab; makna nasihat hadis lebih luas dari koreksi bacaan. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, rasm/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
+
+
+## Integrasi hadis sumber primer — 17 Oktober 2026
+- Kandidat H05: **الدِّينُ النَّصِيحَةُ**.
+- Rujukan kerja: Shahih Muslim 55a, https://sunnah.com/muslim:55a.
+- Ini petikan matan; guru wajib memahami hadis dalam konteks lengkap, bukan menyamakan penerapan kelas dengan sebab periwayatan.
+- Nasihat diterapkan sebagai koreksi bacaan yang sopan dan benar, bukan klaim bahwa konteks hadis hanya koreksi teman.
+- Ayat Akhlak sebelumnya dipertahankan sebagai kandidat terpisah. Tidak mengubah urutan Tahfidz FROZEN.
+- **G3 REVIEW; belum disahkan ahli; NOT FOR PRINT.**
