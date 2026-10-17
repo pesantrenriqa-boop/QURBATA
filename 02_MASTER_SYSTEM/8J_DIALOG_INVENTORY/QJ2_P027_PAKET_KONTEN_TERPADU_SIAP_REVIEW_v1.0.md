@@ -32,3 +32,7 @@ G1 kunci posisi mad: DITULIS SPESIFIK, token/rasm: REVIEW; G2 dialog: REVIEW; G3
 Kartu كِتَابٌ dan وَعِبَادُ: alif mad setelah تَ dan بَ. Waw pada وَعِبَادُ adalah waw berfathah (penghubung), bukan waw mad. Periksa apakah bentuk token وَعِبَادُ benar pada Al-Furqan 25:63, termasuk tanda akhir saat tersambung ke kata berikutnya. Jangan mengklaim kata yang sudah dilepas dari konteks sebagai kalimat Qurani.
 
 **Bukti yang masih dibutuhkan:** token mushaf primer, rasm/harakat, verifikasi ayat, tanda tangan penashih. G1 tetap BLOCKED; G2–G4 REVIEW; G5 BLOCKED.
+
+
+## Integrasi hadis Akhlak H11 — batch audit
+Matan kandidat: **مَنْ غَشَّنَا فَلَيْسَ مِنَّا**. Rujukan kerja: Sahih Muslim 101, https://sunnah.com/muslim:101. Akhlak terapan di kelas harus terkait fokus halaman dan dinilai melalui perilaku teramati, bukan niat batin. Ayat kandidat lama tidak dihapus. Pemeriksaan matan, konteks, dan keputusan penashih masih diperlukan. **G3 REVIEW, G5 BLOCKED, bukan CONTENT-FINAL.**
