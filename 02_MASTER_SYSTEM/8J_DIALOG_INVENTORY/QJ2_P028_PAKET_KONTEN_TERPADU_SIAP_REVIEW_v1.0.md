@@ -5,13 +5,13 @@
 ## 1. Tartil — Mad alif
 Kartu A: **وَسَلَامٌ** (19:15); kartu B: **النَّارَ** (2:24). Dua kartu berasal dari ayat berbeda, tidak boleh disambung sebagai kutipan ayat. Fokus: alif mad sesudah fathah. Bila ada waw prefiks, bukan huruf mad.
 
-1. أَشِرْ إِلَى أَلِفِ الْمَدِّ فِي الْبِطَاقَةِ الْأُولَى.
-2. أَشِرْ إِلَى أَلِفِ الْمَدِّ فِي الْبِطَاقَةِ الثَّانِيَةِ.
-3. مَا الْحَرْفُ الَّذِي يَسْبِقُ أَلِفَ الْمَدِّ فِي الْبِطَاقَةِ الْأُولَى؟
-4. مَا الْحَرْفُ الَّذِي يَسْبِقُ أَلِفَ الْمَدِّ فِي الْبِطَاقَةِ الثَّانِيَةِ؟
-5. اِسْتَمِعْ إِلَى الْبِطَاقَتَيْنِ ثُمَّ اقْرَأْهُمَا بِصَوْتٍ وَاضِحٍ.
+1. أَشِرْ إِلَى وَاوِ الْعَطْفِ فِي وَسَلَامٌ.
+2. أَشِرْ إِلَى أَلِفِ الْمَدِّ فِي وَسَلَامٌ.
+3. أَشِرْ إِلَى أَلِفِ الْمَدِّ فِي النَّارَ.
+4. مَا حَرَكَةُ اللَّامِ قَبْلَ الْأَلِفِ فِي وَسَلَامٌ؟
+5. اِقْرَأِ الْبِطَاقَتَيْنِ وَصَحِّحْ خَطَأَكَ بَعْدَ التَّوْجِيهِ.
 
-**Kunci operasional spesifik:** (1) alif mad pada kartu A **وَسَلَامٌ**, tepat setelah huruf **ل** berfathah; (2) alif mad pada kartu B **النَّارَ**, tepat setelah huruf **ن** berfathah; (3) **ل**; (4) **ن**; (5) guru memeriksa panjang mad asli dua harakat dan ketepatan makhraj tiap kartu secara terpisah. Harakat/rasm wajib ditashih dari mushaf primer sebelum cetak.
+**Kunci operasional spesifik:** (1) waw prefiks وَ bukan mad; (2) alif setelah لَ; (3) alif setelah نَّ; (4) fathah; (5) koreksi berdasarkan dua kartu terpisah. Semua token masih menunggu tashih rasm mushaf primer.
 
 ## 2. Bi'ah Arabiyah
 المعلم: مَاذَا تَفْعَلُ إِذَا أَخْطَأَ صَدِيقُكَ؟ الطالب: أُسَاعِدُهُ وَلَا أَسْخَرُ مِنْهُ.
