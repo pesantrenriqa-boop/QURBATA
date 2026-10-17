@@ -32,3 +32,7 @@ G1 kunci posisi mad: DITULIS SPESIFIK, token/rasm: REVIEW; G2 dialog: REVIEW; G3
 Kartu الْمَالُ dan النَّهَارَ masing-masing memiliki alif mad setelah مَ dan هَ. Soal 4 perlu memastikan fathah pada هَ yang tepat, bukan harakat ه secara umum. Catat batas materi: panjang dua harakat mad asli diuji ketika tidak ada sebab mad lain; verifikasi token 18:46 dan 78:11 pada mushaf primer.
 
 **Bukti yang masih dibutuhkan:** token mushaf primer, rasm/harakat, verifikasi ayat, tanda tangan penashih. G1 tetap BLOCKED; G2–G4 REVIEW; G5 BLOCKED.
+
+
+## Integrasi hadis Akhlak H11 — batch aman
+Matan kandidat: **مَنْ غَشَّنَا فَلَيْسَ مِنَّا**. Sumber kerja: Sahih Muslim 101 (https://sunnah.com/muslim:101). Aplikasi kelas: kejujuran saat evaluasi; jangan salah atribusi ke redaksi Muslim 102. Ayat Akhlak lama tetap kandidat terpisah; matan dan konteks perlu persetujuan penashih sebelum cetak. **G3 REVIEW, G5 BLOCKED; NOT CONTENT-FINAL.**
