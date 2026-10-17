@@ -1,0 +1,26 @@
+# QURBATA J2 P018 — Paket Empat Inventaris v1.0
+
+**DRAF SIAP REVIEW — BUKAN CONTENT-FINAL.** Kartu huruf adalah alat peraga pedagogis, bukan token atau kutipan ayat Al-Qur'an. Jika menggunakan kata utuh, semua kata wajib berasal dari korpus Al-Qur'an dengan referensi.
+
+## 1 Tartil
+Kartu: ء / أ / إ / ؤ / ئ.
+1. أَشِرْ إِلَى الْهَمْزَةِ الْمُفْرَدَةِ.
+2. أَشِرْ إِلَى الْهَمْزَةِ فَوْقَ الْأَلِفِ.
+3. أَشِرْ إِلَى الْهَمْزَةِ تَحْتَ الْأَلِفِ.
+4. أَشِرْ إِلَى الْهَمْزَةِ عَلَى الْوَاوِ.
+5. أَشِرْ إِلَى الْهَمْزَةِ عَلَى الْيَاءِ.
+
+**Kunci spesifik:** 1 ء; 2 أ; 3 إ; 4 ؤ; 5 ئ; seluruh kartu perlu audit penulisan Utsmani. Uji font KFGQPC Uthman Taha dan validasi ahli masih diperlukan.
+
+## 2 Bi'ah Arabiyah
+المعلم: أَيْنَ الْهَمْزَةُ فَوْقَ الْأَلِفِ؟ الطالب: هَذِهِ أ.
+
+Dialog pedagogis, bukan kutipan ayat; perlu review bahasa.
+
+## 3 Akhlak
+**Kandidat ayat Al-Baqarah 2:83:** وَقُولُوا لِلنَّاسِ حُسْنًا. Perilaku teramati: mendengar saat teman membaca, memberi koreksi santun, dan tidak mengejek. Penerapan kelas bukan klaim tafsir literal. Tashih nash/tafsir dan inventaris hadis bertakhrij belum selesai.
+
+## 4 Tahfidz
+**FROZEN: Al-Adiyat 4–6.** Talqin → talaqqi → setoran individual → murojaah. Teks mushaf, tajwid dan beban setoran belum diaudit.
+
+G1–G4 REVIEW; G5 BLOCKED. **NOT FOR PRINT.**
