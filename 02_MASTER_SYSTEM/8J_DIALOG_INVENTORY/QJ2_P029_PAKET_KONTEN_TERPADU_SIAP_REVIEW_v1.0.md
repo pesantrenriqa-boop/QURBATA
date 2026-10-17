@@ -32,3 +32,7 @@ G1 kunci posisi mad: DITULIS SPESIFIK, token/rasm: REVIEW; G2 dialog: REVIEW; G3
 Kartu قَالَ dan وَعِبَادُ menguji alif mad setelah قَ dan بَ; waw pada وَعِبَادُ adalah prefiks berfathah, bukan mad. Penilaian lisan 1,2,5 tidak dapat diberi kunci tunggal tanpa rekaman/observasi guru. Periksa konteks token 25:63.
 
 **Keputusan:** G1 BLOCKED sampai token, rasm, dan ayat diverifikasi dari mushaf primer; G2–G4 REVIEW; G5 BLOCKED. Belum CONTENT-FINAL.
+
+
+## Integrasi hadis Akhlak H12 — batch aman
+Matan kandidat: **إِنَّ اللَّهَ رَفِيقٌ يُحِبُّ الرِّفْقَ**. Sumber kerja: Sahih Muslim 2593 (https://sunnah.com/muslim:2593). Aplikasi kelas: kelembutan saat membimbing teman. Ayat Akhlak lama tetap kandidat terpisah; matan dan konteks perlu persetujuan penashih sebelum cetak. **G3 REVIEW, G5 BLOCKED; NOT CONTENT-FINAL.**
