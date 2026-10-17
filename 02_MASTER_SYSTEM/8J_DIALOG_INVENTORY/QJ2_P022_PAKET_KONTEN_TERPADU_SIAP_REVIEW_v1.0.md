@@ -34,3 +34,7 @@ G1 BLOCKED (mushaf primer); G2 REVIEW; G3 REVIEW; G4 REVIEW; G5 BLOCKED. **Belum
 Kartu خَوْفٍ dan جُوعٍ sama-sama diklaim dari Quraysh 106:4. Keduanya berkasratain pada ف dan ع. Catat bahwa saat waqaf, bunyi tanwin tidak dipertahankan; pada خَوْفٍ terdapat waw sukun yang perlu diaudit sebagai unsur bunyi lain, bukan otomatis mad waw. Guru harus membedakan target kasratain dari hukum huruf lain.
 
 **Bukti yang masih dibutuhkan:** token mushaf primer, rasm/harakat, verifikasi ayat, tanda tangan penashih. G1 tetap BLOCKED; G2–G4 REVIEW; G5 BLOCKED.
+
+
+## Integrasi hadis Akhlak H09 — 17 Oktober 2026
+Kandidat matan: **مَنْ لَا يَرْحَمْ لَا يُرْحَمْ**. Sumber: Shahih al-Bukhari 5997 (https://sunnah.com/bukhari:5997). Penerapan kelas: kasih sayang kepada teman sebagai penerapan; konteks asal tentang Nabi mencium cucunya. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, matan/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
