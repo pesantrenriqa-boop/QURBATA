@@ -32,3 +32,7 @@ G1 REVIEW; G2 REVIEW; G3 REVIEW; G4 REVIEW; G5 BLOCKED. **NOT FOR PRINT.**
 **Audit evaluasi pertama:** jawaban soal 1 bukan tunggal: ح ص ط termasuk kartu tanpa titik; soal 2 ب atau ج satu titik di bawah; soal 3 ث atau ش tiga titik di atas. Guru wajib mencatat kartu yang ditampilkan. Soal 4 harus meminta perbandingan pasangan spesifik (mis. س/ش), dan soal 5 lima kartu dipilih dari himpunan yang dicantumkan. **Rubrik kerja:** lima tugas × 0–2 poin; tidak boleh disebut standar lulus resmi.
 
 **Gate tetap REVIEW, bukan tashih primer atau CONTENT-FINAL.**
+
+
+## Integrasi hadis Akhlak H05 — 17 Oktober 2026
+Kandidat matan: **الدِّينُ النَّصِيحَةُ**. Sumber: Shahih Muslim 55a (https://sunnah.com/muslim:55a). Penerapan kelas: menasihati dengan adab; makna nasihat hadis lebih luas dari koreksi bacaan. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, rasm/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
