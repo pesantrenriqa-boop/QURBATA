@@ -22,3 +22,9 @@ Kandidat An-Nahl 16:43: فَاسْأَلُوا أَهْلَ الذِّكْرِ �
 FROZEN: At-Takathur 7–8. Talqin, talaqqi, setoran, murojaah. Teks ayat dan beban setoran belum diaudit.
 
 G1–G4 REVIEW; G5 BLOCKED. NOT FOR PRINT.
+
+
+## Audit ketepatan objek dan kunci — 17 Oktober 2026
+**Audit ك:** kartu ك (mandiri), كـ (awal), ـكـ (tengah), ـك (akhir) dibedakan berdasarkan sambungan, bukan empat huruf berbeda. Kunci kelima soal harus mengikuti posisi kartu. Tanda tatweel pada peraga tidak boleh dianggap sebagai karakter mushaf.
+
+**Gate tetap REVIEW, bukan tashih primer atau CONTENT-FINAL.**
