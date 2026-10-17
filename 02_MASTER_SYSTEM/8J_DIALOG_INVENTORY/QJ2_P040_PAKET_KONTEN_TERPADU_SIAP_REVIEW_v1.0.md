@@ -42,3 +42,10 @@ Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum 
 - Murojaah Ash-Sharh 1–2 dan At-Tin 1–8 dicatat **terpisah** dari target hafalan baru.
 - Cek urutan ayat 3–8, makhraj, hukum tajwid, kelancaran, dan titik sambung antarayat.
 - **Belum PASS G4** sebelum pemeriksaan teks ayat pada mushaf primer dan uji beban santri.
+
+## Bukti audit prafinal — kartu Tartil
+- **Kartu yang diaudit:** `خَوْفٍ / سَلَامٌ / أَفْوَاجًا`.
+- **Rujukan kandidat:** 106:4 / 97:5 / 110:2.
+- **Pemeriksaan substantif:** Tanwin kasrah/dhammah/fathah; pemeriksaan penulisan Utsmani dan penempatan tanda masih wajib.
+- **Kriteria G1 PASS:** (a) salinan token persis dari mushaf primer yang ditentukan; (b) verifikasi nomor ayat; (c) kesesuaian hukum mad/tanwin dan prasyarat; (d) kunci soal sesuai token; (e) identitas penashih dan tanggal.
+- **Hasil saat ini:** G1 **BLOCKED — belum ada bukti tashih mushaf primer dan persetujuan penashih**. Kunci yang sudah ditulis adalah kandidat pedagogis, bukan bukti tashih.
