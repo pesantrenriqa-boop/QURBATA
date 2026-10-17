@@ -36,3 +36,9 @@ Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum 
 ## Koreksi relevansi P040
 - Kandidat lama Al-Baqarah 2:148 tidak dipakai lagi sebagai dalil utama tema kejujuran; ia tetap dapat dipakai pada P039 dengan tema berlomba dalam kebaikan.
 - Kandidat baru At-Tawbah 9:119 dipilih karena hubungan langsung dengan sifat benar/jujur. **Belum disahkan sebagai teks Utsmani final.**
+
+## Checklist validasi Tahfidz khusus P040
+- Target tetap Ash-Sharh 3–8; jangan menambah ayat wajib di luar rentang FROZEN.
+- Murojaah Ash-Sharh 1–2 dan At-Tin 1–8 dicatat **terpisah** dari target hafalan baru.
+- Cek urutan ayat 3–8, makhraj, hukum tajwid, kelancaran, dan titik sambung antarayat.
+- **Belum PASS G4** sebelum pemeriksaan teks ayat pada mushaf primer dan uji beban santri.
