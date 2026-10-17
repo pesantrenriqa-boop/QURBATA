@@ -24,3 +24,9 @@ Dialog pedagogis, bukan kutipan ayat; perlu review bahasa.
 **FROZEN: Al-Adiyat 4–6.** Talqin → talaqqi → setoran individual → murojaah. Teks mushaf, tajwid dan beban setoran belum diaudit.
 
 G1–G4 REVIEW; G5 BLOCKED. **NOT FOR PRINT.**
+
+
+## Audit pedagogis dan koreksi — 17 Oktober 2026
+**Perbaikan:** lima kartu ء / أ / إ / ؤ / ئ mewakili hamzah mandiri, hamzah di atas alif, di bawah alif, di atas waw, dan di atas kursi ya. Kartu bukan lima cara membaca yang selalu berbeda; bunyi hamzah dan kursinya harus diajarkan terpisah. Konfirmasi bentuk Utsmani wajib sebelum memasukkan contoh Qurani.
+
+**G1–G5 belum PASS; belum CONTENT-FINAL.**
