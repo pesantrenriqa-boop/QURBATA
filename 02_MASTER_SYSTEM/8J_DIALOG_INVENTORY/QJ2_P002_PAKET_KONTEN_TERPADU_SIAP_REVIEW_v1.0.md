@@ -32,3 +32,7 @@ G1 kartu dan fonetik REVIEW; G2 dialog REVIEW; G3 nash dan tafsir REVIEW; G4 Tah
 **Audit titik:** ب satu titik di bawah; ت dua di atas; ث tiga di atas. **Kunci:** (1) ب; (2) ت; (3) ث; (4) tiga titik; (5) pengurutan jumlah 1–2–3 disertai pemeriksaan posisi titik. Jangan menyamakan jumlah titik dengan bunyi huruf.
 
 **Belum lulus G1–G5; verifikasi ahli dan font target masih wajib.**
+
+
+## Kandidat hadis Akhlak terkait halaman — integrasi
+H03: **خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ**. Rujukan kerja Shahih al-Bukhari 5027, https://sunnah.com/bukhari:5027. Tema: belajar dan mengajarkan Al-Qur'an; penerapan kelas dicatat sebagai perilaku belajar atau membantu teman, bukan tafsir khusus matan. Ayat Akhlak yang sudah ada tetap kandidat dan tidak otomatis diganti. Pemeriksaan edisi kitab, reviewer dan pemilihan nash utama belum selesai. **G3 REVIEW; CONTENT-FINAL belum PASS.**
