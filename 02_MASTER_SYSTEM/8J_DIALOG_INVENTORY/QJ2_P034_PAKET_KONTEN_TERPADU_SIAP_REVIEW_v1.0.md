@@ -5,19 +5,19 @@
 ## 1 Tartil
 Kompetensi: kontras ya mad dan ya berharakat. Kartu Qurani **terpisah**, sumber kandidat: الرَّحِيمِ (1:3); الدِّينِ (1:4); يَوْمِ (1:4). Jangan gabungkan kartu dari ayat berbeda menjadi frasa yang diklaim Qurani.
 
-Latihan (Arab):
-1. أَشِرْ إِلَى حَرْفِ الْمَدِّ فِي الْبِطَاقَةِ الْأُولَى.
-2. أَشِرْ إِلَى حَرْفِ الْمَدِّ فِي الْبِطَاقَةِ الثَّانِيَةِ.
-3. مَا حَرَكَةُ الْحَرْفِ الَّذِي قَبْلَ حَرْفِ الْمَدِّ؟
-4. قَارِنْ بَيْنَ الْبِطَاقَتَيْنِ وَبَيِّنْ وَجْهَ الْفَرْقِ.
-5. اِسْتَمِعْ إِلَى الْقِرَاءَةِ ثُمَّ اقْرَأْ بِصَوْتٍ وَاضِحٍ.
+Latihan Arab khusus P034:
+1. أَشِرْ إِلَى يَاءِ الْمَدِّ فِي الرَّحِيمِ.
+2. أَشِرْ إِلَى يَاءِ الْمَدِّ فِي الدِّينِ.
+3. أَشِرْ إِلَى الْيَاءِ الْمُتَحَرِّكَةِ فِي يَوْمِ.
+4. صَنِّفِ الْيَاءَ فِي الْبِطَاقَاتِ الثَّلَاثِ.
+5. اِقْرَأِ الْبِطَاقَاتِ بَعْدَ الْمُعَلِّمِ.
 
-**Kunci kontras:** الرَّحِيمِ dan الدِّينِ = ya mad; يَوْمِ = ya awal berfathah bukan ya mad (waw sukun perlu cek prasyarat). Guru mengidentifikasi alif setelah fathah, ya setelah kasrah, atau waw setelah dhammah pada kartu yang memang memuat mad; pada kartu kontras ya/waw berharakat **bukan mad**. P040 khusus tanwin: kartu خَوْفٍ = kasratain, سَلَامٌ = dhammatain, أَفْوَاجًا = fathatain. **Butir 1–4 untuk P040 harus diganti dengan instrumen rinci pada dokumen evaluasi v0.2 sebelum penggunaan.** Penilaian butir 5 dilakukan melalui talaqqi.
+**Kunci spesifik:** الرَّحِيمِ: ya setelah حِ; الدِّينِ: ya setelah دِ; يَوْمِ: ya pertama berfathah, bukan mad; waw sukun adalah huruf lin setelah fathah, bukan mad waw asli. Butir baca dinilai guru melalui talaqqi. Seluruh bentuk kartu dan referensi perlu tashih mushaf primer.
 
 ## 2 Bi'ah Arabiyah
-المعلم: هَلْ قَرَأْتَ الْبِطَاقَاتِ؟ الطالب: قَرَأْتُ بَعْضَهَا. المعلم: مَا الَّذِي تَحْتَاجُ إِلَى مُرَاجَعَتِهِ؟ الطالب: أُرِيدُ أَنْ أُعِيدَ الْقِرَاءَةَ. المعلم: حَسَنًا، اِبْدَأْ بِالْبِطَاقَةِ الْأُولَى.
+المعلم: هَلْ كُلُّ يَاءٍ حَرْفَ مَدٍّ؟ الطالب: لَا، الْيَاءُ فِي يَوْمِ مُتَحَرِّكَةٌ. المعلم: وَفِي الرَّحِيمِ؟ الطالب: يَاءُ مَدٍّ.
 
-Dialog karangan pendidikan, belum ditashih reviewer dan masih perlu diferensiasi per halaman.
+Dialog khusus halaman, karangan pedagogis (bukan nash). Reviewer Bahasa Arab masih diperlukan.
 
 ## 3 Akhlak
 Tema ketelitian. Kandidat ayat Al-Isra 17:36, **nash utuh dan konteks tafsir belum ditetapkan**. Kegiatan: santri menunjukkan perilaku sesuai tema saat membaca dan menyimak temannya. Jangan menganggap sumber kandidat sebagai nash final.
@@ -27,3 +27,6 @@ Target **FROZEN**: Al-Alaq 7–10. Talqin → talaqqi → setoran → murojaah. 
 
 ## Gate
 G1 kartu dan rasm REVIEW; G2 dialog REVIEW; G3 nash Akhlak REVIEW; G4 teks dan beban Tahfidz REVIEW; G5 BLOCKED. **0 halaman dinyatakan CONTENT-FINAL oleh dokumen ini.**
+
+## Audit revisi isi — 17 Oktober 2026
+Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum telah diganti dialog khusus. STATUS tetap REVIEW karena G1 rasm, G2 reviewer bahasa, G3 nash Akhlak, G4 teks Tahfidz belum disahkan.
