@@ -32,3 +32,7 @@ G1 kartu dan fonetik REVIEW; G2 dialog REVIEW; G3 nash dan tafsir REVIEW; G4 Tah
 **Audit keluarga grafem:** ج satu titik bawah, ح tanpa titik, خ satu titik atas. **Kunci:** (1) ج; (2) ح; (3) خ; (4) bawah; (5) perbedaan ح dan خ tidak hanya titik, tetapi juga bunyi; harus ada demonstrasi talaqqi.
 
 **Belum lulus G1–G5; verifikasi ahli dan font target masih wajib.**
+
+
+## Kandidat hadis Akhlak terkait halaman — integrasi
+H03: **خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ**. Rujukan kerja Shahih al-Bukhari 5027, https://sunnah.com/bukhari:5027. Tema: belajar dan mengajarkan Al-Qur'an; penerapan kelas dicatat sebagai perilaku belajar atau membantu teman, bukan tafsir khusus matan. Ayat Akhlak yang sudah ada tetap kandidat dan tidak otomatis diganti. Pemeriksaan edisi kitab, reviewer dan pemilihan nash utama belum selesai. **G3 REVIEW; CONTENT-FINAL belum PASS.**
