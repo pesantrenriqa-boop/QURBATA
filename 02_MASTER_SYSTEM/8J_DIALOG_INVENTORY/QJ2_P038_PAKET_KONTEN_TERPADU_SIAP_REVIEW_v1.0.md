@@ -39,3 +39,7 @@ Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum 
 - **Pemeriksaan substantif:** Waw awal berfathah, bukan waw mad.
 - **Kriteria G1 PASS:** (a) salinan token persis dari mushaf primer yang ditentukan; (b) verifikasi nomor ayat; (c) kesesuaian hukum mad/tanwin dan prasyarat; (d) kunci soal sesuai token; (e) identitas penashih dan tanggal.
 - **Hasil saat ini:** G1 **BLOCKED — belum ada bukti tashih mushaf primer dan persetujuan penashih**. Kunci yang sudah ditulis adalah kandidat pedagogis, bukan bukti tashih.
+
+
+## Integrasi hadis Akhlak H07 — batch audit
+Matan kandidat: **الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ**. Rujukan: Sahih al-Bukhari 10 (https://sunnah.com/bukhari:10). Penerapan: menghindari ejekan dan ucapan menyakiti saat latihan. Ini penerapan pendidikan, bukan konteks asal hadis. Penashih harus memeriksa redaksi, konteks, dan pemilihan nash utama. **G3 REVIEW, G5 BLOCKED; bukan CONTENT-FINAL.**
