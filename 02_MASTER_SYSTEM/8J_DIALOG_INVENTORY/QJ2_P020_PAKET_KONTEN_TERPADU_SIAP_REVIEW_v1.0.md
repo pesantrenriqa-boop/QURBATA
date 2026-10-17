@@ -30,3 +30,7 @@ G1–G4 REVIEW; G5 BLOCKED. **NOT FOR PRINT.**
 **Rubrik evaluasi spesifik:** lima tugas × 0–2 poin = 10. Tugas 1 kartu tanpa titik (contoh ح atau ع), tugas 2 satu titik bawah (ب atau ج), tugas 3 tiga titik atas (ث atau ش), tugas 4 pemutus sambungan ke sesudahnya (د ذ ر ز), tugas 5 lima kartu dipilih guru dan direkam pada lembar penilaian. Skor ini rubrik kerja, bukan batas lulus resmi. Hindari jawaban tunggal untuk kartu dengan beberapa kemungkinan benar.
 
 **G1–G5 belum PASS; belum CONTENT-FINAL.**
+
+
+## Integrasi hadis Akhlak H07 — 17 Oktober 2026
+Kandidat matan: **الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ**. Sumber: Shahih al-Bukhari 10 (https://sunnah.com/bukhari:10). Penerapan kelas: menjaga ucapan dan tindakan, termasuk tidak mengejek teman. Ayat Akhlak sebelumnya tetap kandidat terpisah. Penashih harus memeriksa konteks, matan/harakat dan memilih nash utama sebelum cetak. **G3 REVIEW; G5 BLOCKED; bukan CONTENT-FINAL.**
