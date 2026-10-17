@@ -39,3 +39,10 @@ Lima soal dan kunci per halaman telah dibedakan sesuai objek, serta dialog umum 
 - Ash-Sharh: verifikasi ayat 1 dan 2, urutan, dan sambungan bacaan.
 - Nilai masing-masing surat dicatat terpisah; jangan menganggap satu nilai gabungan cukup untuk membuktikan penguasaan dua target.
 - **Belum PASS G4** sebelum pemeriksaan teks ayat pada mushaf primer dan uji beban santri.
+
+## Bukti audit prafinal — kartu Tartil
+- **Kartu yang diaudit:** `قَالَ / الرَّحِيمِ / يَقُولُ`.
+- **Rujukan kandidat:** 2:30 / 1:3 / 2:8.
+- **Pemeriksaan substantif:** Tiga jenis mad dipisahkan menurut kartu; tidak dirangkai menjadi ayat.
+- **Kriteria G1 PASS:** (a) salinan token persis dari mushaf primer yang ditentukan; (b) verifikasi nomor ayat; (c) kesesuaian hukum mad/tanwin dan prasyarat; (d) kunci soal sesuai token; (e) identitas penashih dan tanggal.
+- **Hasil saat ini:** G1 **BLOCKED — belum ada bukti tashih mushaf primer dan persetujuan penashih**. Kunci yang sudah ditulis adalah kandidat pedagogis, bukan bukti tashih.
