@@ -15,7 +15,7 @@ from pathlib import Path
 # Tanda tajwid Utsmani: gunakan larangan konservatif, bukan normalisasi diam-diam.
 TASHDID = "\u0651"
 MAD_MARKS = set("\u0653\u0654\u0655\u0670\u06e4\u06e5\u06e6")
-LONG_LETTERS = set("اوىآٱ")
+LONG_LETTERS = set("اىآٱ")  # waw/ya checked contextually: allow layyin (ـَوْ / ـَيْ)
 SUN = set("تثدذرزسشصضطظلن")
 QALQALAH = set("قطبجد")
 VOWELS = set("\u064e\u064f\u0650")
@@ -31,6 +31,9 @@ def fail_reasons(ws):
     if any(x in s for x in MAD_MARKS): errors.append("tanda_mad")
     # Tolak seluruh huruf pemanjang (sangat konservatif; false rejection disengaja).
     if any(x in s for x in LONG_LETTERS): errors.append("potensi_mad_atau_alif_wasl")
+    # Waw/ya sukun after fathah = layyin; other waw/ya remain conservative rejects.
+    if re.search(r"(?<![َ])وْ|(?<![َ])يْ|[وي][َُِ]?", s) and not re.search(r"[َ][وي]ْ", s):
+        errors.append("waw_ya_perlu_audit_mad")
     for w in ws:
         if re.search(r"ال["+ "".join(SUN) +r"]", re.sub(r"[\u064b-\u065f]","",w)):
             errors.append("potensi_al_syamsiyah")
@@ -81,5 +84,7 @@ def main():
         w.writerow(["surah","ayah","start_word","word_count","exact_uthmani_text","status"])
         w.writerows(found)
     print(f"verses_checked={verse_count} windows_checked={checked} candidates={len(found)} output={args.output}")
+    if verse_count != 6236:
+        print(f"WARNING: corpus has {verse_count} verses; expected 6236. Inspect basmalah/format and coverage.")
     print("WARNING: conservative automatic filter; verify every phrase with qualified Quran reviewer before print.")
 if __name__=="__main__": main()
