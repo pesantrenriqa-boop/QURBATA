@@ -8,16 +8,20 @@ Tanggal: 18 Oktober 2026. Status: audit awal; **tidak ada frasa yang disahkan un
 - Kandidat harus dua token berurutan dalam ayat yang sama, surah di Juz 1–29, dan harus dicek bacaan sambung, bukan sekadar bentuk tulisan.
 - Dilarang: نْ, sukun selain huruf yang sudah diajarkan, qalqalah, tasydid, mad, dan hukum pertemuan nun/mim/tanwin yang belum diajarkan.
 
-## Kandidat nyata, bukan materi disahkan
-| Surah:ayat | Dua kata berurutan | Pemeriksaan | Keputusan |
-|---|---|---|---|
-| 2:6 | أَمْ لَمْ | Dua مْ, tidak ada نْ, tasydid, atau mad dalam dua kata; namun pertemuan مْ + ل membutuhkan penilaian bacaan mim sukun (izhar syafawi). | TAHAN: tidak memenuhi larangan mutlak atas hukum tajwid lain |
-| 23:69 | أَمْ لَمْ | Sama seperti 2:6; bukan bentuk unik baru. | TAHAN |
-| 26:136 | أَمْ لَمْ | Sama; duplikasi frasa. | TAHAN |
-| 36:10 | أَمْ لَمْ | Sama; duplikasi frasa. | TAHAN |
-| 23:69 | أَمْ يَقُولُونَ | Memuat mad pada يَقُولُونَ. | GUGUR |
-| 23:69 | لَمْ يَعْرِفُوا | Memuat عْ dan رْ yang belum masuk P001; mad pada akhir kata kedua. | GUGUR P001 |
-| 2:6 | لَمْ تُنْذِرْهُمْ | Memuat نْ, رْ selain مْ. | GUGUR P001 |
+## Inventaris latihan yang lolos
+
+**Belum ada entri yang disahkan.** Hanya frasa yang lulus semua larangan (termasuk tanpa mad pada kedua kata) boleh dimasukkan ke bagian ini.
+
+## Log penolakan (bukan contoh latihan)
+
+| Frasa | Alasan ditolak |
+|---|---|
+| أَمْ لَمْ (2:6; 23:69; 26:136; 36:10) | Memerlukan pemeriksaan hukum mim sukun pada pertemuan dua kata; belum dapat disahkan dengan kriteria ketat |
+| أَمْ يَقُولُونَ | Mengandung mad — dilarang |
+| لَمْ يَعْرِفُوا | Mengandung mad dan sukun lain yang belum diajarkan pada P001 — dilarang |
+| لَمْ تُنْذِرْهُمْ | Mengandung نْ dan رْ — dilarang untuk P001 |
+
+**Aturan keras:** setiap frasa yang mengandung mad, tasydid, nun sukun, qalqalah, atau sukun di luar kompetensi halaman harus langsung masuk log penolakan; jangan tampilkan sebagai kandidat latihan.
 
 ## Hasil sementara
 Tidak boleh menyimpulkan tersedia 24 contoh lolos per halaman sebelum tersedia korpus mushaf lengkap, penyaringan tanda dan tajwid, serta tashih ahli. Frasa `أَمْ لَمْ` ditemukan di beberapa ayat tetapi bukan empat frasa unik. **Jumlah disahkan: 0.**
