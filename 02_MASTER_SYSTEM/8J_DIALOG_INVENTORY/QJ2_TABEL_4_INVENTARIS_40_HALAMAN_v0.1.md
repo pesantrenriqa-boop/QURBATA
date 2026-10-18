@@ -1,8 +1,12 @@
 # QURBATA Jilid 2 — Empat Inventaris Terpadu P001–P040
 
-**ATURAN JILID 2:** TANPA MAD, SUKUN, TAS YDID pada latihan Tartil mandiri. Alif penyangga fathatain bukan mad. P021–P023 fathatain, P024–P025 kasratain, P026–P027 dhammatain, P028–P029 integrasi, P030–P032 ta marbuthah, P033–P034 hamzah akhir, P035–P038 transfer bentuk dan tanwin, P039–P040 evaluasi. Contoh ta marbuthah dipilih tanpa sukun/tasydid. Tahfidz tetap sesuai register asli.
+**ATURAN JILID 2:** TANPA MAD, SUKUN, TASYDID pada latihan Tartil mandiri. Alif penyangga fathatain bukan mad. P021–P023 fathatain, P024–P025 kasratain, P026–P027 dhammatain, P028–P029 integrasi, P030–P032 ta marbuthah, P033–P034 hamzah akhir, P035–P038 transfer bentuk dan tanwin, P039–P040 evaluasi. Contoh ta marbuthah dipilih tanpa sukun/tasydid. Tahfidz tetap sesuai register asli.
 
 
+
+**CATATAN TASHIH BERJENJANG:** Inventaris P001–P040 adalah draf pedagogis, bukan bank token mushaf terverifikasi. Kategori latihan dibedakan: (A) kata Arab sahih sesuai prasyarat, (B) rangkaian fonetik yang dilabeli eksplisit, (C) kata Qurani hanya setelah lokasi ayat dan bentuk token diverifikasi. Jangan menandai seluruh contoh sebagai kutipan Al-Qur'an.
+**KHUSUS TANWIN:** fathatain pada ة ditulis langsung di atas ة tanpa alif penyangga (بَقَرَةً); fathatain pada hamzah akhir mengikuti kaidah imla tersendiri (نَبَأً، خَطَأً). Latihan wasal pada ta marbuthah dibaca dengan bunyi /t/ (بَقَرَةٌ = baqaratun); aturan waqaf tidak diajarkan sebagai bacaan mandiri di jilid ini.
+**BATAS KOMPETENSI:** contoh dalam kolom Dialog adalah tuturan lisan guru–santri dan boleh mengandung materi bahasa yang lebih tinggi; larangan mad, sukun, dan tasydid berlaku pada **bank Tartil mandiri**. Penempatan hamzah akhir P033–P034 memerlukan pemeriksaan prasyarat bentuk hamzah pada P018–P020. Jumlah kata latihan mengikuti kualitas dan validitas; tidak boleh ditambah dengan bentuk rekaan.
 
 **Status: DRAF LENGKAP — BELUM LOLOS TASHIH/QA.** Kelanjutan pedagogis dari Jilid 1. Kata tiga huruf diprioritaskan, empat huruf tidak dipaksakan. Dialog meningkat dari tirukan ke pilih, bandingkan, jelaskan dan refleksi. Kolom Tartil harus diperiksa terhadap kompetensi tanda baca tiap halaman; contoh guru bukan otomatis latihan mandiri. Kandidat kata Qurani belum terverifikasi sebagai token mushaf; nash akhlak/hadis belum final.
 
