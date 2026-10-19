@@ -375,10 +375,10 @@ Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. *
 | 5 | Lam jalalah | وَاللَّهُ غَفُورٌ رَحِيمٌ | 2:173 | KANDIDAT — TASHIH |
 | 5 | Lam jalalah tafkhim | قَالَ اللَّهُ | 5:116 | KANDIDAT — TASHIH |
 | 5 | Qalqalah (cek register) | قَدْ أَفْلَحَ | 23:1 | KANDIDAT — TASHIH |
-| 5 | Qalqalah ba | وَتَبَّ | 111:1 | KANDIDAT — TASHIH |
-| 5 | Qalqalah ba | يَبْتَغُونَ | 2:198 | TAHAN — BUKAN QALQALAH: بْ tidak ada; بَ berharakat fathah |
+| 5 | Qalqalah ba | وَتَبَّ | 111:1 | TAHAN — بّ tasydid: qalqalah hanya jika berhenti (waqaf), bukan bacaan washal |
+| 5 | Qalqalah ba | يَبْتَغُونَ | 2:198 | TAHAN — بْ tidak ada; bukan contoh qalqalah ba |
 | 5 | Qalqalah dal | قَدْ أَفْلَحَ | 23:1 | DUPLIKAT — REVIEW |
-| 5 | Qalqalah dal | يَدْعُونَ | 2:23 | TAHAN — PERIKSA SUMBER dan ketepatan contoh |
+| 5 | Qalqalah dal | يَدْعُونَ | 2:23 | KANDIDAT — دْ sukun asli; rujukan ayat perlu tashih |
 | 5 | Qalqalah jim | يَجْعَلُونَ | 2:19 | KANDIDAT — TASHIH (huruf qalqalah bersukun ditemukan) |
 | 5 | Qalqalah qaf | يَقْطَعُونَ | 2:27 | KANDIDAT — TASHIH |
 | 5 | Qalqalah tha | أَطْعَمَهُمْ | 106:4 | KANDIDAT — TASHIH (huruf qalqalah bersukun ditemukan) |
@@ -520,3 +520,13 @@ Pemeriksaan pola harakat awal menemukan sejumlah contoh yang **tidak boleh langs
 **Catatan koreksi lanjutan:** sumber surah:ayat, bentuk Utsmani, serta kesesuaian prasyarat harus dicek dengan mushaf dan register resmi. Jangan mengubah status menjadi SAH hanya berdasarkan pemeriksaan pola teks ini.
 
 **Koreksi audit langsung:** `يَجْعَلُونَ` mengandung جْ dan `أَطْعَمَهُمْ` mengandung طْ. Keduanya **memenuhi pola dasar qalqalah sughra**, sehingga penandaan sebelumnya yang menyatakan bukan qalqalah adalah salah dan sudah diperbaiki pada tabel induk. Verifikasi rujukan dan gate pedagogis tetap diperlukan.
+
+## Audit tajwid lanjutan — bedakan washal dan waqaf
+
+| Contoh | Kompetensi | Penilaian teknis |
+|---|---|---|
+| `وَتَبَّ` | Qalqalah ba | **Bukan contoh qalqalah sughra ketika washal**; ba bertasydid. Bila waqaf pada kata, ada sukun aridh dan dapat menjadi qalqalah kubra sesuai kaidah; harus diberi instruksi waqaf eksplisit |
+| `يَدْعُونَ` | Qalqalah dal | Memuat دْ sehingga **secara pola** memenuhi qalqalah sughra; rujukan ayat harus ditashih |
+| `يَبْتَغُونَ` | Qalqalah ba | بْ tidak ada sehingga **ditahan** |
+
+**Aturan produksi:** tabel wajib membedakan hukum bacaan saat washal dan saat waqaf. Jangan memasukkan kata bertasydid ke latihan qalqalah sughra tanpa konteks bacaan.
