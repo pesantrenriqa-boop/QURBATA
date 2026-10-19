@@ -187,3 +187,60 @@ Diperbarui: 19 Oktober 2026. **Status faktual, bukan persentase perkiraan.** Kat
 | 8 | Bacaan ayat utuh | وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا | 17:32 | KANDIDAT |
 | 8 | Bacaan ayat utuh | وَقُلْ رَبِّ زِدْنِي عِلْمًا | 20:114 | KANDIDAT |
 | 8 | Bacaan ayat utuh | إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ وَإِيتَاءِ ذِي الْقُرْبَى | 16:90 | KANDIDAT |
+
+## Tambahan teks konkret — Batch 3: cakupan huruf nun sakinah/tanwin dan bacaan lanjutan
+
+**Kandidat yang harus diaudit:** potongan ayat, hukum bacaan saat washal, dan surah/ayat wajib diperiksa ulang pada mushaf. Ini bukan reproduksi buku metode. Sebagian contoh dari Juz 30 hanya untuk J5–J8, bukan latihan ayat panjang J4. Pemetaan J5–J8 sementara.
+
+| Jilid | Hukum/kompetensi | Teks contoh | Surah:ayat | Status |
+|---|---|---|---|---|
+| J4 | Izhar ه | مِنْ هَادٍ | 13:33 | KANDIDAT |
+| J4 | Izhar ح | مِنْ حَكِيمٍ | 41:42 | KANDIDAT |
+| J4 | Izhar غ | مِنْ غِلٍّ | 7:43 | KANDIDAT |
+| J4 | Izhar ء | مَنْ آمَنَ | 2:62 | KANDIDAT |
+| J4 | Izhar ع | أَنْعَمْتَ | 1:7 | KANDIDAT |
+| J4 | Izhar خ | مِنْ خَيْرٍ | 2:105 | KANDIDAT |
+| J4 | Idgham ن | مِنْ نِعْمَةٍ | 16:53 | KANDIDAT |
+| J4 | Idgham م | مِنْ مَالٍ | 23:55 | KANDIDAT |
+| J4 | Idgham ي | مَنْ يَعْمَلْ | 4:123 | KANDIDAT |
+| J4 | Idgham و | مِنْ وَالٍ | 13:11 | KANDIDAT |
+| J4 | Idgham ل | مِنْ لَدُنْهُ | 18:2 | KANDIDAT |
+| J4 | Idgham ر | مِنْ رَبِّهِمْ | 2:5 | KANDIDAT |
+| J4 | Ikhfa ص | مِنْ صَلْصَالٍ | 15:26 | KANDIDAT |
+| J4 | Ikhfa ذ | مَنْ ذَا الَّذِي | 2:245 | KANDIDAT |
+| J4 | Ikhfa ث | مِنْ ثَمَرَةٍ | 2:25 | KANDIDAT |
+| J4 | Ikhfa ك | مِنْ كُلِّ | 16:11 | KANDIDAT |
+| J4 | Ikhfa ج | إِنْ جَاءَكُمْ | 49:6 | KANDIDAT |
+| J4 | Ikhfa ش | مِنْ شَيْءٍ | 2:20 | KANDIDAT |
+| J4 | Ikhfa ق | مِنْ قَبْلِ | 30:4 | KANDIDAT |
+| J4 | Ikhfa س | مِنْ سُوءٍ | 4:79 | KANDIDAT |
+| J4 | Ikhfa د | مِنْ دُونِ اللَّهِ | 2:23 | KANDIDAT |
+| J4 | Ikhfa ط | مِنْ طَيِّبَاتِ | 2:57 | KANDIDAT |
+| J4 | Ikhfa ز | أَنْزَلْنَا | 2:23 | KANDIDAT |
+| J4 | Ikhfa ف | مِنْ فَوْقِهِمْ | 16:50 | KANDIDAT |
+| J4 | Ikhfa ت | مِنْ تَحْتِهَا | 2:25 | KANDIDAT |
+| J4 | Ikhfa ض | مَنْ ضَلَّ | 6:117 | KANDIDAT |
+| J4 | Ikhfa ظ | مِنْ ظَهِيرٍ | 34:22 | KANDIDAT |
+| J4 | Iqlab ب | أَنْبِئْهُمْ | 2:33 | KANDIDAT |
+| J4 | Iqlab ب | مِنْ بَعْدِ | 30:4 | KANDIDAT |
+| J4 | Mim sukun izhar | هُمْ فِيهَا | 2:25 | KANDIDAT |
+| J4 | Mim sukun ikhfa | تَرْمِيهِمْ بِحِجَارَةٍ | 105:4 | KANDIDAT |
+| J4 | Mim sukun idgham | لَكُمْ مَا | 2:29 | KANDIDAT |
+| J4 | Lam syamsiyah | الشَّمْسَ وَالْقَمَرَ | 7:54 | KANDIDAT |
+| J4 | Lam qamariyah | الْكِتَابُ | 2:2 | KANDIDAT |
+| J5 | Ghunnah nun | إِنَّ اللَّهَ | 2:20 | KANDIDAT |
+| J5 | Ghunnah mim | ثُمَّ | 2:29 | KANDIDAT |
+| J5 | Qalqalah dal | قَدْ أَفْلَحَ | 23:1 | KANDIDAT |
+| J5 | Qalqalah qaf | يَقْطَعُونَ | 2:27 | KANDIDAT |
+| J5 | Lam jalalah | وَاللَّهُ غَفُورٌ رَحِيمٌ | 2:173 | KANDIDAT |
+| J6 | Mad wajib | السَّمَاءِ | 2:19 | KANDIDAT |
+| J6 | Mad wajib | جَاءَ | 2:89 | KANDIDAT |
+| J6 | Mad jaiz | بِمَا أُنْزِلَ | 2:4 | KANDIDAT |
+| J6 | Mad badal | آمَنُوا | 2:9 | KANDIDAT |
+| J6 | Mad lazim | الضَّالِّينَ | 1:7 | KANDIDAT |
+| J7 | Ayat utuh | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | KANDIDAT |
+| J7 | Ayat utuh | وَقُلْ رَبِّ زِدْنِي عِلْمًا | 20:114 | KANDIDAT |
+| J7 | Ayat utuh | وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا | 17:32 | KANDIDAT |
+| J8 | Ayat utuh | قُلْ يَا أَيُّهَا الْكَافِرُونَ | 109:1 | KANDIDAT |
+| J8 | Ayat utuh | وَإِلَٰهُكُمْ إِلَٰهٌ وَاحِدٌ لَا إِلَٰهَ إِلَّا هُوَ الرَّحْمَٰنُ الرَّحِيمُ | 2:163 | KANDIDAT |
+| J8 | Ayat utuh | وَاعْتَصِمُوا بِحَبْلِ اللَّهِ جَمِيعًا وَلَا تَفَرَّقُوا | 3:103 | KANDIDAT |
