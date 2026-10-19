@@ -272,7 +272,7 @@ Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. *
 | 2 | Mad waw | يُوقِنُونَ | 2:4 | KANDIDAT — TASHIH |
 | 2 | Mad ya | الَّذِينَ | 2:3 | KANDIDAT — TASHIH |
 | 2 | Mad ya | عَظِيمٌ | 2:7 | KANDIDAT — TASHIH |
-| 2 | Mad ya | فِي | 2:2 | KANDIDAT — TASHIH |
+| 2 | Mad ya | فِي | 2:2 | TAHAN — PERIKSA KOMPETENSI: mad ya pada فِي valid bila disambung |
 | 2 | Mad ya | فِيهِ | 2:2 | KANDIDAT — TASHIH |
 | 2 | Tanwin | هُدًى | 2:2 | KANDIDAT — TASHIH |
 | 2 | Tanwin damm | عَلِيمٌ | 2:29 | KANDIDAT — TASHIH |
@@ -376,17 +376,17 @@ Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. *
 | 5 | Lam jalalah tafkhim | قَالَ اللَّهُ | 5:116 | KANDIDAT — TASHIH |
 | 5 | Qalqalah (cek register) | قَدْ أَفْلَحَ | 23:1 | KANDIDAT — TASHIH |
 | 5 | Qalqalah ba | وَتَبَّ | 111:1 | KANDIDAT — TASHIH |
-| 5 | Qalqalah ba | يَبْتَغُونَ | 2:198 | KANDIDAT — TASHIH |
+| 5 | Qalqalah ba | يَبْتَغُونَ | 2:198 | TAHAN — BUKAN QALQALAH: بْ tidak ada; بَ berharakat fathah |
 | 5 | Qalqalah dal | قَدْ أَفْلَحَ | 23:1 | DUPLIKAT — REVIEW |
-| 5 | Qalqalah dal | يَدْعُونَ | 2:23 | KANDIDAT — TASHIH |
-| 5 | Qalqalah jim | يَجْعَلُونَ | 2:19 | KANDIDAT — TASHIH |
+| 5 | Qalqalah dal | يَدْعُونَ | 2:23 | TAHAN — PERIKSA SUMBER dan ketepatan contoh |
+| 5 | Qalqalah jim | يَجْعَلُونَ | 2:19 | TAHAN — BUKAN QALQALAH: جْ tidak ada; جْ? teks يَجْعَلُونَ mengandung جْ, periksa |
 | 5 | Qalqalah qaf | يَقْطَعُونَ | 2:27 | KANDIDAT — TASHIH |
-| 5 | Qalqalah tha | أَطْعَمَهُمْ | 106:4 | KANDIDAT — TASHIH |
+| 5 | Qalqalah tha | أَطْعَمَهُمْ | 106:4 | TAHAN — BUKAN QALQALAH: طْ bukan huruf qalqalah |
 | 5 | Ra tafkhim | رَبِّ الْعَالَمِينَ | 1:2 | KANDIDAT — TASHIH |
 | 6 | Mad (cek register) | جَاءَ | 2:89 | KANDIDAT — TASHIH |
 | 6 | Mad arid lissukun | الْعَالَمِينَ | 1:2 | KANDIDAT — TASHIH |
 | 6 | Mad badal | آمَنُوا | 2:9 | KANDIDAT — TASHIH |
-| 6 | Mad badal | إِيمَانًا | 2:143 | KANDIDAT — TASHIH |
+| 6 | Mad badal | إِيمَانًا | 2:143 | TAHAN — PERIKSA SUMBER AYAT dan hukum mad |
 | 6 | Mad jaiz | بِمَا أُنْزِلَ | 2:4 | KANDIDAT — TASHIH |
 | 6 | Mad jaiz munfasil | بِمَا أُنْزِلَ | 2:4 | DUPLIKAT — REVIEW |
 | 6 | Mad jaiz munfasil | يَا أَيُّهَا | 2:21 | KANDIDAT — TASHIH |
@@ -503,3 +503,18 @@ Tabel induk di atas kini menampilkan status per baris: `KANDIDAT — TASHIH`, `D
 - 30 baris pengulangan lintas kompetensi pada jilid yang sama ditandai langsung.
 - 5 baris yang diklaim ayat utuh namun tampak sebagai petikan telah ditandai untuk koreksi klasifikasi.
 - **Jangan anggap status KANDIDAT sebagai hasil tashih.** Semua teks perlu verifikasi dari sumber mushaf, terutama rasm, batas ayat, dan kesesuaian hukum.
+
+## Audit pedagogis khusus — qalqalah dan penempatan contoh
+
+Pemeriksaan pola harakat awal menemukan sejumlah contoh yang **tidak boleh langsung masuk latihan cetak**. Pada hukum qalqalah, huruf ق ط ب ج د harus bersukun asli atau menjadi sukun karena waqaf. Kesamaan huruf tanpa sukun tidak cukup. Status TAHAN pada tabel induk berarti perlu diganti atau ditashih sebelum dipakai.
+
+| Jilid | Kompetensi | Contoh | Temuan |
+|---|---|---|---|
+| 2 | Mad ya | فِي | PERIKSA KOMPETENSI: mad ya pada فِي valid bila disambung |
+| 5 | Qalqalah ba | يَبْتَغُونَ | BUKAN QALQALAH: بْ tidak ada; بَ berharakat fathah |
+| 5 | Qalqalah dal | يَدْعُونَ | PERIKSA SUMBER dan ketepatan contoh |
+| 5 | Qalqalah jim | يَجْعَلُونَ | BUKAN QALQALAH: جْ tidak ada; جْ? teks يَجْعَلُونَ mengandung جْ, periksa |
+| 5 | Qalqalah tha | أَطْعَمَهُمْ | BUKAN QALQALAH: طْ bukan huruf qalqalah |
+| 6 | Mad badal | إِيمَانًا | PERIKSA SUMBER AYAT dan hukum mad |
+
+**Catatan koreksi lanjutan:** sumber surah:ayat, bentuk Utsmani, serta kesesuaian prasyarat harus dicek dengan mushaf dan register resmi. Jangan mengubah status menjadi SAH hanya berdasarkan pemeriksaan pola teks ini.
