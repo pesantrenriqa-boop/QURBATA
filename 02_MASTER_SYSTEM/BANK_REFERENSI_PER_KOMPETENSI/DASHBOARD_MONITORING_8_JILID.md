@@ -262,10 +262,10 @@ Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. *
 | 1 | Kasrah | مِنَ | 2:8 | KANDIDAT — TASHIH |
 | 2 | Bacaan panjang | قَالُوا | 2:11 | KANDIDAT — TASHIH |
 | 2 | Huruf sambung | خَلَقَ الْإِنْسَانَ | 96:2 | KANDIDAT — TASHIH |
-| 2 | Mad alif | النَّاسَ | 2:13 | KANDIDAT — TASHIH |
+| 2 | Mad alif | النَّاسَ | 2:13 | TAHAN — cek bentuk: 2:13 mengandung النَّاسُ, bukan النَّاسَ pada konteks tersebut |
 | 2 | Mad alif | قَالَ | 2:30 | KANDIDAT — TASHIH |
 | 2 | Mad alif | قَالُوا | 2:11 | KANDIDAT — TASHIH |
-| 2 | Mad alif | كَانَ | 2:10 | KANDIDAT — TASHIH |
+| 2 | Mad alif | كَانَ | 2:10 | TAHAN — cek rujukan: 2:10 mengandung كَانُوا, bukan كَانَ sebagai kata tersendiri |
 | 2 | Mad waw | يُؤْمِنُونَ | 2:3 | KANDIDAT — TASHIH |
 | 2 | Mad waw | يَقُولُ | 2:8 | KANDIDAT — TASHIH |
 | 2 | Mad waw | يَقُولُونَ | 2:8 | KANDIDAT — TASHIH |
@@ -374,12 +374,12 @@ Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. *
 | 5 | Ghunnah/tasydid (cek register) | إِنَّ اللَّهَ | 2:20 | DUPLIKAT — REVIEW |
 | 5 | Lam jalalah | وَاللَّهُ غَفُورٌ رَحِيمٌ | 2:173 | KANDIDAT — TASHIH |
 | 5 | Lam jalalah tafkhim | قَالَ اللَّهُ | 5:116 | KANDIDAT — TASHIH |
-| 5 | Qalqalah (cek register) | قَدْ أَفْلَحَ | 23:1 | KANDIDAT — TASHIH |
+| 5 | Qalqalah (cek register) | قَدْ أَفْلَحَ | 23:1 | TAHAN — sumber 23:1 berbunyi قَدْ أَفْلَحَ الْمُؤْمِنُونَ, namun potongan ini mengandung qalqalah دْ; perlu status washal |
 | 5 | Qalqalah ba | وَتَبَّ | 111:1 | TAHAN — بّ tasydid: qalqalah hanya jika berhenti (waqaf), bukan bacaan washal |
 | 5 | Qalqalah ba | يَبْتَغُونَ | 2:198 | TAHAN — بْ tidak ada; bukan contoh qalqalah ba |
-| 5 | Qalqalah dal | قَدْ أَفْلَحَ | 23:1 | DUPLIKAT — REVIEW |
-| 5 | Qalqalah dal | يَدْعُونَ | 2:23 | KANDIDAT — دْ sukun asli; rujukan ayat perlu tashih |
-| 5 | Qalqalah jim | يَجْعَلُونَ | 2:19 | KANDIDAT — TASHIH (huruf qalqalah bersukun ditemukan) |
+| 5 | Qalqalah dal | قَدْ أَفْلَحَ | 23:1 | TAHAN — sumber 23:1 berbunyi قَدْ أَفْلَحَ الْمُؤْمِنُونَ, namun potongan ini mengandung qalqalah دْ; perlu status washal |
+| 5 | Qalqalah dal | يَدْعُونَ | 2:23 | TAHAN — rujukan 2:23 perlu koreksi: bentuk يَدْعُونَ tidak muncul pada ayat tersebut |
+| 5 | Qalqalah jim | يَجْعَلُونَ | 2:19 | TAHAN — cek rujukan: 2:19 memuat يَجْعَلُونَ tetapi klasifikasi جْ tetap kandidat |
 | 5 | Qalqalah qaf | يَقْطَعُونَ | 2:27 | KANDIDAT — TASHIH |
 | 5 | Qalqalah tha | أَطْعَمَهُمْ | 106:4 | KANDIDAT — TASHIH (huruf qalqalah bersukun ditemukan) |
 | 5 | Ra tafkhim | رَبِّ الْعَالَمِينَ | 1:2 | KANDIDAT — TASHIH |
@@ -530,3 +530,16 @@ Pemeriksaan pola harakat awal menemukan sejumlah contoh yang **tidak boleh langs
 | `يَبْتَغُونَ` | Qalqalah ba | بْ tidak ada sehingga **ditahan** |
 
 **Aturan produksi:** tabel wajib membedakan hukum bacaan saat washal dan saat waqaf. Jangan memasukkan kata bertasydid ke latihan qalqalah sughra tanpa konteks bacaan.
+
+## Audit kecocokan bentuk teks dengan rujukan ayat — gelombang awal
+
+Pemeriksaan awal menunjukkan rujukan harus cocok **persis** dengan bentuk kata pada ayat (termasuk harakat akhir), bukan sekadar akar kata yang sama. Entri bermasalah diberi status **TAHAN** di tabel utama. Ini audit terbatas, bukan tashih mushaf menyeluruh.
+
+| Jilid | Teks | Rujukan tercatat | Tindakan |
+|---|---|---|---|
+| 2 | النَّاسَ | 2:13 | TAHAN — cek bentuk: 2:13 mengandung النَّاسُ, bukan النَّاسَ pada konteks tersebut |
+| 2 | كَانَ | 2:10 | TAHAN — cek rujukan: 2:10 mengandung كَانُوا, bukan كَانَ sebagai kata tersendiri |
+| 5 | قَدْ أَفْلَحَ | 23:1 | TAHAN — sumber 23:1 berbunyi قَدْ أَفْلَحَ الْمُؤْمِنُونَ, namun potongan ini mengandung qalqalah دْ; perlu status washal |
+| 5 | قَدْ أَفْلَحَ | 23:1 | TAHAN — sumber 23:1 berbunyi قَدْ أَفْلَحَ الْمُؤْمِنُونَ, namun potongan ini mengandung qalqalah دْ; perlu status washal |
+| 5 | يَدْعُونَ | 2:23 | TAHAN — rujukan 2:23 perlu koreksi: bentuk يَدْعُونَ tidak muncul pada ayat tersebut |
+| 5 | يَجْعَلُونَ | 2:19 | TAHAN — cek rujukan: 2:19 memuat يَجْعَلُونَ tetapi klasifikasi جْ tetap kandidat |
