@@ -4,7 +4,7 @@
 
 | Halaman | Kompetensi | K01 | K02 | K03 | K04 | K05 | K06 | K07 | K08 | K09 | K10 | K11 | K12 | K13 | K14 | K15 | K16 | K17 | K18 | K19 | K20 | K21 | K22 | K23 | K24 | Sah |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| P001 | BELUM DISALIN — cocokkan master kompetensi | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P001 | Fathah huruf lepas بَ تَ ثَ — 24 kelompok latihan pengulangan terarah | بَ | تَ | ثَ | بَ تَ | تَ ثَ | ثَ بَ | بَ ثَ | تَ بَ | ثَ تَ | بَ تَ ثَ | تَ ثَ بَ | ثَ بَ تَ | بَ ثَ تَ | تَ بَ ثَ | ثَ تَ بَ | بَ بَ تَ | تَ تَ ثَ | ثَ ثَ بَ | بَ تَ بَ ثَ | تَ ثَ تَ بَ | ثَ بَ ثَ تَ | بَ ثَ بَ تَ | تَ بَ تَ ثَ | ثَ تَ ثَ بَ | 0/24 (24 draf; belum tashih) |
 | P002 | BELUM DISALIN — cocokkan master kompetensi | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P003 | BELUM DISALIN — cocokkan master kompetensi | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P004 | BELUM DISALIN — cocokkan master kompetensi | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
@@ -57,3 +57,15 @@
 | Kasrah | بِسْمِ | 1:1 | KANDIDAT — TASHIH |
 | Kasrah | بِهِ | 2:26 | KANDIDAT — TASHIH |
 | Kasrah | مِنَ | 2:8 | KANDIDAT — TASHIH |
+
+## P001 — petunjuk pelaksanaan 24 kelompok
+
+**Acuan:** register J1 P001–P010 FROZEN melalui inventaris dialog J1. Hanya بَ تَ ثَ, huruf lepas berfathah. Tidak ada sambungan, mad, sukun, atau kata baru. **24 kelompok adalah 24 unit latihan, bukan 24 kutipan ayat unik.** Ini rangkaian latihan pedagogis dari huruf Al-Qur'an, bukan kutipan ayat; tidak boleh diberi nomor surah/ayat palsu.
+
+- K01–K03: talqin dan makhraj satu huruf.
+- K04–K09: diskriminasi pasangan dua huruf.
+- K10–K15: pergantian urutan tiga huruf.
+- K16–K18: penguatan bunyi berulang.
+- K19–K24: kelancaran membaca acak empat huruf.
+
+**Gate:** pemeriksaan kesesuaian rasm/grafem huruf lepas, kelayakan tingkat kesulitan, dan validasi pembimbing; semua 24 masih draf, bukan SAH. Tahfidz QS An-Nas:1 diperlakukan terpisah, tidak dihitung sebagai 24 kelompok tartil.
