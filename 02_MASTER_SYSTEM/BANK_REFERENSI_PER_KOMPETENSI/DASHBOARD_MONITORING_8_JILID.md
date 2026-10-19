@@ -273,7 +273,6 @@ Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. *
 | 3 | Alif lam qamariyah | الْكِتَابُ | 2:2 | KANDIDAT |
 | 3 | Alif-lam qamariyah | الْكِتَابُ | 2:2 (teks rujukan الْكِتَابُ, periksa i'rab) | KANDIDAT |
 | 3 | Lam sukun | قُلْ | 112:1 | KANDIDAT |
-| 3 | Sukun | لَمْ يَكُنِ | 2:105 (cek konteks; jangan gunakan sebelum tashih) | KANDIDAT |
 | 3 | Sukun dal | قَدْ | 2:60 | KANDIDAT |
 | 3 | Sukun lam | قُلْ | 112:1 | KANDIDAT |
 | 3 | Sukun mim | لَمْ | 2:6 | KANDIDAT |
@@ -330,7 +329,6 @@ Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. *
 | 4 | Mim sukun — idgham mimi | لَكُمْ مَا | 2:29 | KANDIDAT |
 | 4 | Mim sukun — izhar syafawi | عَلَيْهِمْ وَلَا | 1:7 | KANDIDAT |
 | 4 | Mim sukun idgham | لَكُمْ مَا | 2:29 | KANDIDAT |
-| 4 | Mim sukun ikhfa | تَرْمِيهِمْ بِحِجَارَةٍ | 105:4 | KANDIDAT |
 | 4 | Mim sukun izhar | هُمْ فِيهَا | 2:25 | KANDIDAT |
 | 4 | Nun sukun — idgham م | مِنْ مَاءٍ | 2:22 | KANDIDAT |
 | 4 | Nun sukun — idgham ن | مِنْ نِعْمَةٍ | 16:53 | KANDIDAT |
@@ -393,5 +391,12 @@ Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. *
 | 8 | Bacaan ayat utuh | وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا | 17:32 | KANDIDAT |
 | 8 | Bacaan mushaf (cek register) | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | KANDIDAT |
 
-**Total 140 baris terintegrasi.** Prioritas berikutnya: koreksi sumber, hapus contoh yang tidak lolos, dan cocokkan register halaman J1–J8.
+**Total 138 baris terintegrasi.** Prioritas berikutnya: koreksi sumber, hapus contoh yang tidak lolos, dan cocokkan register halaman J1–J8.
 <!-- QURBATA_CONSOLIDATED_END -->
+
+### Audit awal bank terintegrasi (19 Oktober 2026)
+
+- **Dikeluarkan dari tabel aktif:** `لَمْ يَكُنِ` berlabel 2:105, karena tidak aman dipakai tanpa kecocokan teks dan konteks ayat.
+- **Dikeluarkan dari J4:** `تَرْمِيهِمْ بِحِجَارَةٍ` (105:4) karena kebijakan J4 menggunakan ayat luar Juz Amma. Contoh mim sukun ikhfa di J4 kini belum terisi dengan contoh sah dan perlu penggantian yang ditashih.
+- **Koreksi interpretasi:** 138 baris adalah baris berdasarkan jilid+kompetensi+teks, bukan 138 ayat berbeda. Tidak ada contoh berstatus final karena belum ada audit mushaf sistematis maupun akses langsung buku empat metode.
+- **Pekerjaan tersisa untuk status FINAL:** (1) verifikasi setiap petikan ke mushaf Hafs resmi dan penanda ayat; (2) klasifikasi hukum saat washal/waqaf; (3) pemeriksaan prasyarat menurut register asli J1–J8; (4) seleksi contoh per halaman; (5) verifikasi halaman sumber buku berizin; (6) tashih ahli.
