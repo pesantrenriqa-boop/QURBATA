@@ -130,3 +130,60 @@ Diperbarui: 19 Oktober 2026. **Status faktual, bukan persentase perkiraan.** Kat
 | 8 | Bacaan mushaf (cek register) | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | Ayat utuh | KANDIDAT |
 
 **Audit wajib:** jangan pindahkan baris bertanda PERLU KOREKSI ke produksi. Baris lainnya juga belum final; periksa teks ayat, lokasi, tajwid washal, serta kompetensi prasyarat. Contoh J1–J3 harus menyesuaikan urutan halaman resmi, bukan otomatis dicetak pada jilid yang tertera.
+
+## Tambahan bank teks Arab langsung — Batch 2 (19 Oktober 2026)
+
+**Catatan:** contoh independen dari Al-Qur'an, bukan transkripsi buku metode. Seluruh entri masih **KANDIDAT**; periksa kecocokan petikan dengan mushaf, rasm, ayat, washal/waqaf, dan register QURBATA sebelum dipakai. Contoh dari Juz 30 pada J1–J3/J5/J8 **bukan** untuk latihan panjang J4.
+
+| Jilid | Kompetensi | Contoh teks Arab | Rujukan | Status |
+|---|---|---|---|---|
+| 1 | Fathah | خَلَقَ | 96:1 | KANDIDAT |
+| 1 | Fathah | جَعَلَ | 2:22 | KANDIDAT |
+| 1 | Kasrah | بِهِ | 2:26 | KANDIDAT |
+| 1 | Kasrah | مِنَ | 2:8 | KANDIDAT |
+| 1 | Dhammah | رُسُلٌ | 2:87 | KANDIDAT |
+| 1 | Dhammah | كُتِبَ | 2:183 | KANDIDAT |
+| 2 | Tanwin fath | عَلِيمًا | 4:11 | KANDIDAT |
+| 2 | Tanwin kasr | عَلِيمٍ | 2:32 | KANDIDAT |
+| 2 | Tanwin damm | عَلِيمٌ | 2:29 | KANDIDAT |
+| 2 | Mad alif | قَالَ | 2:30 | KANDIDAT |
+| 2 | Mad ya | فِيهِ | 2:2 | KANDIDAT |
+| 2 | Mad waw | يَقُولُونَ | 2:8 | KANDIDAT |
+| 3 | Sukun mim | لَمْ | 2:6 | KANDIDAT |
+| 3 | Sukun nun | مِنْ | 2:8 | KANDIDAT |
+| 3 | Sukun lam | قُلْ | 112:1 | KANDIDAT |
+| 3 | Sukun dal | قَدْ | 2:60 | KANDIDAT |
+| 3 | Alif lam qamariyah | الْكِتَابُ | 2:2 | KANDIDAT |
+| 3 | Alif lam qamariyah | الْحَمْدُ | 1:2 | KANDIDAT |
+| 4 | Izhar ء | مَنْ آمَنَ | 2:62 | KANDIDAT |
+| 4 | Izhar ع | أَنْعَمْتَ | 1:7 | KANDIDAT |
+| 4 | Izhar خ | مِنْ خَيْرٍ | 2:105 | KANDIDAT |
+| 4 | Idgham ي | مَنْ يَعْمَلْ | 4:123 | KANDIDAT |
+| 4 | Idgham و | مِنْ وَالٍ | 13:11 | KANDIDAT |
+| 4 | Idgham ر | مِنْ رَبِّهِمْ | 2:5 | KANDIDAT |
+| 4 | Idgham ل | مِنْ لَدُنْهُ | 18:2 | KANDIDAT |
+| 4 | Iqlab ب | أَنْبِئْهُمْ | 2:33 | KANDIDAT |
+| 4 | Ikhfa ت | مِنْ تَحْتِهَا | 2:25 | KANDIDAT |
+| 4 | Ikhfa ج | إِنْ جَاءَكُمْ | 49:6 | KANDIDAT |
+| 4 | Ikhfa ذ | مَنْ ذَا الَّذِي | 2:245 | KANDIDAT |
+| 4 | Ikhfa ق | مِنْ قَبْلِ | 30:4 | KANDIDAT |
+| 5 | Ghunnah nun | إِنَّ اللَّهَ | 2:20 | KANDIDAT |
+| 5 | Ghunnah mim | ثُمَّ | 2:29 | KANDIDAT |
+| 5 | Qalqalah dal | قَدْ أَفْلَحَ | 23:1 | KANDIDAT |
+| 5 | Qalqalah ba | وَتَبَّ | 111:1 | KANDIDAT |
+| 5 | Lam jalalah tafkhim | قَالَ اللَّهُ | 5:116 | KANDIDAT |
+| 5 | Ra tafkhim | رَبِّ الْعَالَمِينَ | 1:2 | KANDIDAT |
+| 6 | Mad wajib muttasil | جَاءَ | 2:89 | KANDIDAT |
+| 6 | Mad jaiz munfasil | بِمَا أُنْزِلَ | 2:4 | KANDIDAT |
+| 6 | Mad badal | آمَنُوا | 2:9 | KANDIDAT |
+| 6 | Mad arid lissukun | الْعَالَمِينَ | 1:2 | KANDIDAT |
+| 6 | Waqaf | لَا رَيْبَ فِيهِ | 2:2 | KANDIDAT |
+| 6 | Waqaf ayat | وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ | 2:29 | KANDIDAT |
+| 7 | Tartil terpadu | وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا | 73:4 | KANDIDAT |
+| 7 | Nun/tanwin terpadu | إِنْ جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا | 49:6 | KANDIDAT |
+| 7 | Waqaf dan bacaan sambung | إِنَّ اللَّهَ عَلِيمٌ خَبِيرٌ | 49:13 | KANDIDAT |
+| 7 | Bacaan utuh | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | KANDIDAT |
+| 8 | Bacaan ayat utuh | قُلْ هُوَ اللَّهُ أَحَدٌ | 112:1 | KANDIDAT |
+| 8 | Bacaan ayat utuh | وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا | 17:32 | KANDIDAT |
+| 8 | Bacaan ayat utuh | وَقُلْ رَبِّ زِدْنِي عِلْمًا | 20:114 | KANDIDAT |
+| 8 | Bacaan ayat utuh | إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ وَإِيتَاءِ ذِي الْقُرْبَى | 16:90 | KANDIDAT |
