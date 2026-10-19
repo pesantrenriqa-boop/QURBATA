@@ -58,3 +58,16 @@ Diperbarui: 19 Oktober 2026. **Status faktual, bukan persentase perkiraan.** Kat
 - [Pustaka empat metode](../REFERENSI_METODE_TARTIL_IQRO_UMMI_TILAWATI_BILQOLAM.md).
 
 **Aturan pemutakhiran:** naikkan status hanya setelah ada bukti pada kolom terkait. Jangan menganggap satu rujukan daring sebagai bukti isi halaman buku. Semua contoh Al-Qur'an perlu tashih mushaf dan penilaian pedagogis sebelum dicetak.
+
+## Bukti riset tambahan — 19 Oktober 2026
+
+| ID | Metode | Kompetensi | Bukti rujukan | Temuan yang dapat dipakai | Status |
+|---|---|---|---|---|---|
+| R-001 | Iqro' | Huruf dasar | [Kemenag](https://kemenag.go.id/en/kolom/metode-baca-al-qur-an-iqro-HBXHy) | Enam jilid, latihan bertahap dan bacaan langsung | SUMBER SEKUNDER TERBACA |
+| R-002 | Iqro' | Nun sukun/tanwin | [Silabus pembanding](https://id.scribd.com/document/369488197/1-SILABUS) | Izhar J4 hlm 16; idgham J5–6; iqlab dan ikhfa J6; nomor halaman wajib cek edisi asli | SUMBER SEKUNDER TERBACA |
+| R-003 | Tilawati | J1–J6 | [Situs resmi](https://tilawati.org/) | J1 fathah; J2 kasrah/dhammah/sambung; J3 mad/sukun; J4 tasydid/ikhfa; J5 waqaf/gharib awal; J6 gharib/tajwid terpadu | SUMBER RESMI TERBACA |
+| R-004 | Tilawati | Nun sukun/tanwin | [Silabus pembanding](https://id.scribd.com/document/369488197/1-SILABUS) | Ikhfa J4; hukum lainnya J4–5; halaman masih perlu cek edisi | SUMBER SEKUNDER TERBACA |
+| R-005 | Ummi | J1–J6 → mushaf | [Panduan resmi](https://www.ummi.id/posts/belajar-tajwid-metode-ummi) | Setelah enam jilid: tadarus juz 1–5, Gharib, kemudian Tajwid | SUMBER RESMI TERBACA |
+| R-006 | Bilqolam | Urutan per jilid | [Profil metode](https://bilqolam.piqsingosari.com/tentang/) | Pemetaan rinci belum terverifikasi terhadap buku asli | BELUM |
+
+**Implikasi nyata untuk QURBATA:** J4 perlu latihan ayat utuh di luar Juz Amma, bukan hanya frasa pendek. R-003 dan R-005 menunjukkan adanya tahapan menuju pembacaan mushaf. **Belum ada bukti bahwa contoh pada buku asli sudah ditranskripsi**, sehingga status empat kolom sumber buku pada ringkasan tetap BELUM sampai edisi dan halaman buku diperiksa. Data ini menambah bukti riset, bukan menyelesaikan audit 320 halaman.
