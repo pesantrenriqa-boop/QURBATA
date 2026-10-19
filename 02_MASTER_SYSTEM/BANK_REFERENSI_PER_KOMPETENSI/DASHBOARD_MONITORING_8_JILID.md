@@ -262,10 +262,10 @@ Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. *
 | 1 | Kasrah | مِنَ | 2:8 | KANDIDAT — TASHIH |
 | 2 | Bacaan panjang | قَالُوا | 2:11 | KANDIDAT — TASHIH |
 | 2 | Huruf sambung | خَلَقَ الْإِنْسَانَ | 96:2 | KANDIDAT — TASHIH |
-| 2 | Mad alif | النَّاسَ | 2:13 | TAHAN — cek bentuk: 2:13 mengandung النَّاسُ, bukan النَّاسَ pada konteks tersebut |
+| 2 | Mad alif | النَّاسُ | 2:13 | KOREKSI HARAKAT — perlu tashih rasm |
 | 2 | Mad alif | قَالَ | 2:30 | KANDIDAT — TASHIH |
 | 2 | Mad alif | قَالُوا | 2:11 | KANDIDAT — TASHIH |
-| 2 | Mad alif | كَانَ | 2:10 | TAHAN — cek rujukan: 2:10 mengandung كَانُوا, bukan كَانَ sebagai kata tersendiri |
+| 2 | Mad alif | كَانُوا | 2:10 | KOREKSI TEKS — perlu tashih rasm |
 | 2 | Mad waw | يُؤْمِنُونَ | 2:3 | KANDIDAT — TASHIH |
 | 2 | Mad waw | يَقُولُ | 2:8 | KANDIDAT — TASHIH |
 | 2 | Mad waw | يَقُولُونَ | 2:8 | KANDIDAT — TASHIH |
@@ -374,11 +374,11 @@ Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. *
 | 5 | Ghunnah/tasydid (cek register) | إِنَّ اللَّهَ | 2:20 | DUPLIKAT — REVIEW |
 | 5 | Lam jalalah | وَاللَّهُ غَفُورٌ رَحِيمٌ | 2:173 | KANDIDAT — TASHIH |
 | 5 | Lam jalalah tafkhim | قَالَ اللَّهُ | 5:116 | KANDIDAT — TASHIH |
-| 5 | Qalqalah (cek register) | قَدْ أَفْلَحَ | 23:1 | TAHAN — sumber 23:1 berbunyi قَدْ أَفْلَحَ الْمُؤْمِنُونَ, namun potongan ini mengandung qalqalah دْ; perlu status washal |
+| 5 | Qalqalah (cek register) | قَدْ أَفْلَحَ | 23:1 | KANDIDAT — دْ qalqalah sughra saat washal; tashih mushaf tertunda |
 | 5 | Qalqalah ba | وَتَبَّ | 111:1 | TAHAN — بّ tasydid: qalqalah hanya jika berhenti (waqaf), bukan bacaan washal |
 | 5 | Qalqalah ba | يَبْتَغُونَ | 2:198 | TAHAN — بْ tidak ada; bukan contoh qalqalah ba |
-| 5 | Qalqalah dal | قَدْ أَفْلَحَ | 23:1 | TAHAN — sumber 23:1 berbunyi قَدْ أَفْلَحَ الْمُؤْمِنُونَ, namun potongan ini mengandung qalqalah دْ; perlu status washal |
-| 5 | Qalqalah dal | يَدْعُونَ | 2:23 | TAHAN — rujukan 2:23 perlu koreksi: bentuk يَدْعُونَ tidak muncul pada ayat tersebut |
+| 5 | Qalqalah dal | قَدْ أَفْلَحَ | 23:1 | KANDIDAT — دْ qalqalah sughra saat washal; tashih mushaf tertunda |
+| 5 | Qalqalah dal — kata berimbuhan | وَادْعُوا | 2:23 | KOREKSI TEKS — دْ sukun, perlu tashih rasm |
 | 5 | Qalqalah jim | يَجْعَلُونَ | 2:19 | TAHAN — cek rujukan: 2:19 memuat يَجْعَلُونَ tetapi klasifikasi جْ tetap kandidat |
 | 5 | Qalqalah qaf | يَقْطَعُونَ | 2:27 | KANDIDAT — TASHIH |
 | 5 | Qalqalah tha | أَطْعَمَهُمْ | 106:4 | KANDIDAT — TASHIH (huruf qalqalah bersukun ditemukan) |
@@ -543,3 +543,15 @@ Pemeriksaan awal menunjukkan rujukan harus cocok **persis** dengan bentuk kata p
 | 5 | قَدْ أَفْلَحَ | 23:1 | TAHAN — sumber 23:1 berbunyi قَدْ أَفْلَحَ الْمُؤْمِنُونَ, namun potongan ini mengandung qalqalah دْ; perlu status washal |
 | 5 | يَدْعُونَ | 2:23 | TAHAN — rujukan 2:23 perlu koreksi: bentuk يَدْعُونَ tidak muncul pada ayat tersebut |
 | 5 | يَجْعَلُونَ | 2:19 | TAHAN — cek rujukan: 2:19 memuat يَجْعَلُونَ tetapi klasifikasi جْ tetap kandidat |
+
+## Perbaikan langsung teks kandidat — 19 Oktober 2026
+
+Perbaikan dilakukan **di kolom teks pada tabel induk**, bukan hanya catatan audit:
+
+| Jilid | Sebelum | Sesudah | Alasan |
+|---|---|---|---|
+| 2 | كَانَ (2:10) | كَانُوا (2:10) | Bentuk yang muncul pada ayat ialah كَانُوا |
+| 2 | النَّاسَ (2:13) | النَّاسُ (2:13) | Sesuai bentuk pada ungkapan كَمَا آمَنَ النَّاسُ |
+| 5 | يَدْعُونَ (2:23) | وَادْعُوا (2:23) | Ayat memuat وَادْعُوا شُهَدَاءَكُمْ; دْ memenuhi pola qalqalah sughra |
+
+**Batas verifikasi:** ini koreksi bentuk kata yang dapat dikenali dari konteks ayat, bukan pemeriksaan menyeluruh terhadap mushaf resmi/rasm Utsmani. Semua tetap kandidat hingga tashih dan gate halaman selesai.
