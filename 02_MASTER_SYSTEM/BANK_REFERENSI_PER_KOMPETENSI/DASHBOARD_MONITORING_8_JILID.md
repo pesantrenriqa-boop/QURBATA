@@ -248,7 +248,7 @@ Diperbarui: 19 Oktober 2026. **Status faktual, bukan persentase perkiraan.** Kat
 <!-- QURBATA_CONSOLIDATED_START -->
 ## TABEL INDUK TERPADU — DIKELOMPOKKAN JILID DAN KOMPETENSI
 
-Ini tabel kerja utama yang menyatukan baris teks Arab dari batch sebelumnya. Duplikasi identik pada jilid+kompetensi+teks dihapus; pengulangan lintas kompetensi dipertahankan untuk audit. **Belum tashih** dan **belum otomatis sesuai urutan master halaman**. Tabel historis di atas dipertahankan sebagai jejak kerja; gunakan tabel induk ini untuk pemantauan berikutnya.
+Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. **KANDIDAT: belum tashih mushaf, surah-ayat, hukum washal, dan gate pedagogis.** Pengulangan teks lintas kompetensi dipertahankan untuk evaluasi.
 
 | Jilid | Kompetensi | Teks contoh langsung | Surah:ayat (perlu verifikasi) | Status |
 |---|---|---|---|---|
@@ -278,6 +278,10 @@ Ini tabel kerja utama yang menyatukan baris teks Arab dari batch sebelumnya. Dup
 | 3 | Sukun lam | قُلْ | 112:1 | KANDIDAT |
 | 3 | Sukun mim | لَمْ | 2:6 | KANDIDAT |
 | 3 | Sukun nun | مِنْ | 2:8 | KANDIDAT |
+| 4 | Ayat utuh — transfer | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | KANDIDAT |
+| 4 | Ayat utuh — transfer | وَإِلَٰهُكُمْ إِلَٰهٌ وَاحِدٌ لَا إِلَٰهَ إِلَّا هُوَ الرَّحْمَٰنُ الرَّحِيمُ | 2:163 | KANDIDAT |
+| 4 | Ayat utuh — transfer | وَقُلْ رَبِّ زِدْنِي عِلْمًا | 20:114 | KANDIDAT |
+| 4 | Ayat utuh — transfer | وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا | 17:32 | KANDIDAT |
 | 4 | Idgham bighunnah | مِنْ وَالٍ | 13:11 | KANDIDAT |
 | 4 | Idgham bighunnah | مَنْ يَعْمَلْ سُوءًا | 4:123 | KANDIDAT |
 | 4 | Idgham bilaghunnah | مِنْ رَبِّهِمْ | 2:5 | KANDIDAT |
@@ -319,11 +323,36 @@ Ini tabel kerja utama yang menyatukan baris teks Arab dari batch sebelumnya. Dup
 | 4 | Izhar ع | أَنْعَمْتَ | 1:7 | KANDIDAT |
 | 4 | Izhar غ | مِنْ غِلٍّ | 7:43 | KANDIDAT |
 | 4 | Izhar ه | مِنْ هَادٍ | 13:33 | KANDIDAT |
+| 4 | Lam qamariyah | الْأَرْضَ | 2:22 | KANDIDAT |
 | 4 | Lam qamariyah | الْكِتَابُ | 2:2 | KANDIDAT |
 | 4 | Lam syamsiyah | الشَّمْسَ وَالْقَمَرَ | 7:54 | KANDIDAT |
+| 4 | Lam syamsiyah | النَّاسِ | 2:21 | KANDIDAT |
+| 4 | Mim sukun — idgham mimi | لَكُمْ مَا | 2:29 | KANDIDAT |
+| 4 | Mim sukun — izhar syafawi | عَلَيْهِمْ وَلَا | 1:7 | KANDIDAT |
 | 4 | Mim sukun idgham | لَكُمْ مَا | 2:29 | KANDIDAT |
 | 4 | Mim sukun ikhfa | تَرْمِيهِمْ بِحِجَارَةٍ | 105:4 | KANDIDAT |
 | 4 | Mim sukun izhar | هُمْ فِيهَا | 2:25 | KANDIDAT |
+| 4 | Nun sukun — idgham م | مِنْ مَاءٍ | 2:22 | KANDIDAT |
+| 4 | Nun sukun — idgham ن | مِنْ نِعْمَةٍ | 16:53 | KANDIDAT |
+| 4 | Nun sukun — idgham ي | مَنْ يَقُولُ | 2:8 | KANDIDAT |
+| 4 | Nun sukun — ikhfa ت | أَنْ تَقُولُوا | 2:94 | KANDIDAT |
+| 4 | Nun sukun — ikhfa ث | مِنْ ثَمَرَةٍ | 2:25 | KANDIDAT |
+| 4 | Nun sukun — ikhfa ج | إِنْ جَاءَكُمْ | 49:6 | KANDIDAT |
+| 4 | Nun sukun — ikhfa د | مِنْ دُونِ اللَّهِ | 2:23 | KANDIDAT |
+| 4 | Nun sukun — ikhfa ذ | مَنْ ذَا الَّذِي | 2:245 | KANDIDAT |
+| 4 | Nun sukun — ikhfa ز | أَنْزَلَ | 2:22 | KANDIDAT |
+| 4 | Nun sukun — ikhfa س | مِنْ سُوءٍ | 4:79 | KANDIDAT |
+| 4 | Nun sukun — ikhfa ش | مِنْ شَيْءٍ | 2:20 | KANDIDAT |
+| 4 | Nun sukun — ikhfa ص | مِنْ صَلْصَالٍ | 15:26 | KANDIDAT |
+| 4 | Nun sukun — ikhfa ض | مَنْ ضَلَّ | 6:117 | KANDIDAT |
+| 4 | Nun sukun — ikhfa ط | مِنْ طَيِّبَاتِ | 2:57 | KANDIDAT |
+| 4 | Nun sukun — ikhfa ظ | مِنْ ظَهِيرٍ | 34:22 | KANDIDAT |
+| 4 | Nun sukun — ikhfa ف | مِنْ فَضْلِ اللَّهِ | 2:198 | KANDIDAT |
+| 4 | Nun sukun — ikhfa ق | مِنْ قَبْلِ | 2:25 | KANDIDAT |
+| 4 | Nun sukun — ikhfa ك | مِنْ كُلِّ | 2:164 | KANDIDAT |
+| 4 | Nun sukun — izhar ح | مِنْ حَيْثُ | 2:149 | KANDIDAT |
+| 4 | Nun sukun — izhar ع | مِنْ عِلْمٍ | 2:145 | KANDIDAT |
+| 4 | Nun sukun — izhar غ | مِنْ غَيْرِ | 2:173 | KANDIDAT |
 | 4 | Transfer ke ayat utuh | مَّن ذَا ٱلَّذِي يُقۡرِضُ ٱللَّهَ قَرۡضًا حَسَنٗا فَيُضَٰعِفَهُۥ لَهُۥٓ أَضۡعَافٗا كَثِيرَةٗۚ وَٱللَّهُ يَقۡبِضُ وَيَبۡصُۜطُ وَإِلَيۡهِ تُرۡجَعُونَ | 2:245 | KANDIDAT |
 | 5 | Ghunnah mim | ثُمَّ | 2:29 | KANDIDAT |
 | 5 | Ghunnah nun | إِنَّ اللَّهَ | 2:20 | KANDIDAT |
@@ -364,5 +393,5 @@ Ini tabel kerja utama yang menyatukan baris teks Arab dari batch sebelumnya. Dup
 | 8 | Bacaan ayat utuh | وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا | 17:32 | KANDIDAT |
 | 8 | Bacaan mushaf (cek register) | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | KANDIDAT |
 
-**Total baris unik per jilid+kompetensi+teks: 111.** Angka bukan jumlah contoh tervalidasi.
+**Total 140 baris terintegrasi.** Prioritas berikutnya: koreksi sumber, hapus contoh yang tidak lolos, dan cocokkan register halaman J1–J8.
 <!-- QURBATA_CONSOLIDATED_END -->
