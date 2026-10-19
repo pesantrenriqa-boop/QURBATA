@@ -400,3 +400,62 @@ Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. *
 - **Dikeluarkan dari J4:** `تَرْمِيهِمْ بِحِجَارَةٍ` (105:4) karena kebijakan J4 menggunakan ayat luar Juz Amma. Contoh mim sukun ikhfa di J4 kini belum terisi dengan contoh sah dan perlu penggantian yang ditashih.
 - **Koreksi interpretasi:** 138 baris adalah baris berdasarkan jilid+kompetensi+teks, bukan 138 ayat berbeda. Tidak ada contoh berstatus final karena belum ada audit mushaf sistematis maupun akses langsung buku empat metode.
 - **Pekerjaan tersisa untuk status FINAL:** (1) verifikasi setiap petikan ke mushaf Hafs resmi dan penanda ayat; (2) klasifikasi hukum saat washal/waqaf; (3) pemeriksaan prasyarat menurut register asli J1–J8; (4) seleksi contoh per halaman; (5) verifikasi halaman sumber buku berizin; (6) tashih ahli.
+
+## AUDIT KONSISTENSI TABEL INDUK — 19 Oktober 2026
+
+| Ukuran | Hasil | Tindak lanjut |
+|---|---:|---|
+| Baris contoh aktif | 138 | Belum ditashih |
+| Jilid 1–8 | 8 | Seluruh jilid terwakili |
+| Jilid 4 contoh dari Juz 30 | 0 berdasarkan nomor surah pada tabel aktif | Tetap perlu cek nomor surah/ayat ke mushaf |
+| Pengulangan teks pada kompetensi berbeda dalam jilid yang sama | 30 | Pilih satu posisi utama; pengulangan terencana hanya untuk murojaah |
+
+### Sebaran per jilid
+
+| Jilid | Baris |
+|---|---:|
+| 1 | 8 |
+| 2 | 9 |
+| 3 | 8 |
+| 4 | 75 |
+| 5 | 10 |
+| 6 | 12 |
+| 7 | 8 |
+| 8 | 8 |
+
+### Daftar teks yang dipakai lebih dari satu kompetensi pada jilid sama
+
+| Jilid | Teks | Kompetensi pertama | Kompetensi berikutnya | Keputusan sementara |
+|---|---|---|---|---|
+| 3 | الْكِتَابُ | Alif lam qamariyah | Alif-lam qamariyah | TINJAU ULANG |
+| 3 | قُلْ | Lam sukun | Sukun lam | TINJAU ULANG |
+| 4 | مِنْ رَبِّهِمْ | Idgham bilaghunnah | Idgham ر | TINJAU ULANG |
+| 4 | مِنْ لَدُنْهُ | Idgham bilaghunnah | Idgham ل | TINJAU ULANG |
+| 4 | مِنْ وَالٍ | Idgham bighunnah | Idgham و | TINJAU ULANG |
+| 4 | مِنْ قَبْلِ | Ikhfa | Ikhfa ق | TINJAU ULANG |
+| 4 | مِنْ بَعْدِ | Iqlab | Iqlab ب | TINJAU ULANG |
+| 4 | مِنْ خَيْرٍ | Izhar nun sukun | Izhar خ | TINJAU ULANG |
+| 4 | لَكُمْ مَا | Mim sukun — idgham mimi | Mim sukun idgham | TINJAU ULANG |
+| 4 | مِنْ نِعْمَةٍ | Idgham ن | Nun sukun — idgham ن | TINJAU ULANG |
+| 4 | مِنْ ثَمَرَةٍ | Ikhfa ث | Nun sukun — ikhfa ث | TINJAU ULANG |
+| 4 | إِنْ جَاءَكُمْ | Ikhfa ج | Nun sukun — ikhfa ج | TINJAU ULANG |
+| 4 | مِنْ دُونِ اللَّهِ | Ikhfa د | Nun sukun — ikhfa د | TINJAU ULANG |
+| 4 | مَنْ ذَا الَّذِي | Ikhfa ذ | Nun sukun — ikhfa ذ | TINJAU ULANG |
+| 4 | مِنْ سُوءٍ | Ikhfa س | Nun sukun — ikhfa س | TINJAU ULANG |
+| 4 | مِنْ شَيْءٍ | Ikhfa ش | Nun sukun — ikhfa ش | TINJAU ULANG |
+| 4 | مِنْ صَلْصَالٍ | Ikhfa ص | Nun sukun — ikhfa ص | TINJAU ULANG |
+| 4 | مَنْ ضَلَّ | Ikhfa ض | Nun sukun — ikhfa ض | TINJAU ULANG |
+| 4 | مِنْ طَيِّبَاتِ | Ikhfa ط | Nun sukun — ikhfa ط | TINJAU ULANG |
+| 4 | مِنْ ظَهِيرٍ | Ikhfa ظ | Nun sukun — ikhfa ظ | TINJAU ULANG |
+| 4 | مِنْ قَبْلِ | Ikhfa | Nun sukun — ikhfa ق | TINJAU ULANG |
+| 4 | مِنْ كُلِّ | Ikhfa ك | Nun sukun — ikhfa ك | TINJAU ULANG |
+| 5 | إِنَّ اللَّهَ | Ghunnah nun | Ghunnah/tasydid (cek register) | TINJAU ULANG |
+| 5 | قَدْ أَفْلَحَ | Qalqalah (cek register) | Qalqalah dal | TINJAU ULANG |
+| 6 | بِمَا أُنْزِلَ | Mad jaiz | Mad jaiz munfasil | TINJAU ULANG |
+| 6 | جَاءَ | Mad (cek register) | Mad wajib | TINJAU ULANG |
+| 6 | جَاءَ | Mad (cek register) | Mad wajib muttasil | TINJAU ULANG |
+| 6 | لَا رَيْبَ فِيهِ | Waqaf | Waqaf (cek register) | TINJAU ULANG |
+| 7 | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | Ayat utuh | Bacaan utuh | TINJAU ULANG |
+| 7 | وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا | Tajwid terpadu (cek register) | Tartil terpadu | TINJAU ULANG |
+
+**Perhatian:** pengecekan Juz 30 di atas hanya menggunakan nomor surah yang dicantumkan pada tabel, bukan pemeriksaan teks ayat. Ini audit struktural, **bukan tashih Al-Qur'an**.
