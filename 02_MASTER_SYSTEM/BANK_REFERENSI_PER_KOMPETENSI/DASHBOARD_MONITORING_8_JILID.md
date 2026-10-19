@@ -71,3 +71,23 @@ Diperbarui: 19 Oktober 2026. **Status faktual, bukan persentase perkiraan.** Kat
 | R-006 | Bilqolam | Urutan per jilid | [Profil metode](https://bilqolam.piqsingosari.com/tentang/) | Pemetaan rinci belum terverifikasi terhadap buku asli | BELUM |
 
 **Implikasi nyata untuk QURBATA:** J4 perlu latihan ayat utuh di luar Juz Amma, bukan hanya frasa pendek. R-003 dan R-005 menunjukkan adanya tahapan menuju pembacaan mushaf. **Belum ada bukti bahwa contoh pada buku asli sudah ditranskripsi**, sehingga status empat kolom sumber buku pada ringkasan tetap BELUM sampai edisi dan halaman buku diperiksa. Data ini menambah bukti riset, bukan menyelesaikan audit 320 halaman.
+
+## Audit sumber tambahan — Bilqolam dan Ummi (19 Oktober 2026)
+
+**Perubahan status:** bukti silabus/panduan **sekunder** Bilqolam ditemukan, serta uraian materi Ummi J1–J6 dari penelitian. Ini bukan verifikasi teks latihan halaman asli.
+
+| Bukti | Metode | Jilid | Materi dan lokasi yang dilaporkan | Sumber | Tingkat kepastian |
+|---|---|---|---|---|---|
+| R-007 | Bilqolam | 2 | Huruf sambung hlm 1–15; tanwin hlm 16–17; sukun hlm 18–28; mad thabi'i hlm 29–36; izhar qamari hlm 37–38; hamzah washal hlm 39–40 | [Panduan Bilqolam, unggahan pihak ketiga](https://id.scribd.com/document/755992705/Buku-Panduan-Bilqolam-Edit-12-Maret-2020) | SEKUNDER; cek edisi |
+| R-008 | Bilqolam | 3 | Izhar syafawi hlm 1–3; izhar halqi 4–6; hamzah washal 7–8; tasydid 9–11; idgham bilaghunnah 12–13; syamsiyah 14–16; lin 17–18; qalqalah 19–20; lafzul jalalah 21–22; ghunnah 23–25 | [Panduan Bilqolam](https://id.scribd.com/document/755992705/Buku-Panduan-Bilqolam-Edit-12-Maret-2020) | SEKUNDER; cek edisi |
+| R-009 | Bilqolam | 3 | Ikhfa syafawi/idgham mimi 26–27; iqlab 28; idgham bighunnah 29–30; ikhfa haqiqi 31–33; izhar mutlak 34–37 | [Panduan Bilqolam](https://id.scribd.com/document/755992705/Buku-Panduan-Bilqolam-Edit-12-Maret-2020) | SEKUNDER; cek edisi |
+| R-010 | Bilqolam | 4 | Waqaf-ibtida hlm 1–25; gharib 26–37; fawatihus suwar 38–39; Juz Amma 40–43 | [Panduan Bilqolam](https://id.scribd.com/document/755992705/Buku-Panduan-Bilqolam-Edit-12-Maret-2020) | SEKUNDER; cek edisi |
+| R-011 | Ummi | 1–2 | J1 huruf tunggal dan fathah, dua-tiga huruf; J2 harakat selain fathah dan huruf sambung | [Kajian ilmiah](https://ejournal.staimmgt.ac.id/index.php/tanbih/issue/download/21/attanbihvol2no12025) | SEKUNDER |
+| R-012 | Ummi | 3–6 | J3 mad dasar; J4 sukun/tasydid; J5 fawatihus suwar; J6 qalqalah (deskripsi pelaksanaan sekolah, belum tentu seluruh cakupan buku) | [Skripsi IAIN Ponorogo](https://etheses.iainponorogo.ac.id/17554/1/210317119_Etwin%20Fidaroyani_PAI.pdf) | SEKUNDER; perlu cek buku |
+
+### Tindak lanjut konkret
+- **J2-QURBATA:** cocokkan sukun dan tanwin terhadap Bilqolam J2, tetapi jangan pindahkan urutan tanpa pemeriksaan register QURBATA.
+- **J3-QURBATA:** bandingkan sukun dan qamariyah dengan Bilqolam J2; cocokkan batas kompetensi sebelum memilih ayat.
+- **J4-QURBATA:** bandingkan hukum nun sukun/tanwin terhadap Bilqolam J3 halaman 4–6, 12–13, 28–37; lalu cari ayat utuh **di luar Juz Amma** untuk transfer membaca mushaf.
+- **J5–J8:** belum ada bukti pemetaan halaman sumber ke kompetensi resmi QURBATA; tetap BELUM sampai register asli dibaca.
+- Jangan salin halaman atau bank contoh dari buku komersial ke repo. Catat pola dan pilih ayat Al-Qur'an secara independen, dengan tashih.
