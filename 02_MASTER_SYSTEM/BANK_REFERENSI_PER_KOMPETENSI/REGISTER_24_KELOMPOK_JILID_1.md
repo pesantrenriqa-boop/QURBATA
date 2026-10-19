@@ -5,8 +5,8 @@
 | Halaman | Kompetensi | K01 | K02 | K03 | K04 | K05 | K06 | K07 | K08 | K09 | K10 | K11 | K12 | K13 | K14 | K15 | K16 | K17 | K18 | K19 | K20 | K21 | K22 | K23 | K24 | Sah |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | P001 | Fathah huruf lepas بَ تَ ثَ — 24 kelompok latihan pengulangan terarah | بَ | تَ | ثَ | بَ تَ | تَ ثَ | ثَ بَ | بَ ثَ | تَ بَ | ثَ تَ | بَ تَ ثَ | تَ ثَ بَ | ثَ بَ تَ | بَ ثَ تَ | تَ بَ ثَ | ثَ تَ بَ | بَ بَ تَ | تَ تَ ثَ | ثَ ثَ بَ | بَ تَ بَ ثَ | تَ ثَ تَ بَ | ثَ بَ ثَ تَ | بَ ثَ بَ تَ | تَ بَ تَ ثَ | ثَ تَ ثَ بَ | 0/24 (24 draf; belum tashih) |
-| P002 | BELUM DISALIN — cocokkan master kompetensi | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P003 | BELUM DISALIN — cocokkan master kompetensi | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P002 | Fathah hamzah lepas ءَ أَ — disalin dari inventaris J1 P001–P010; variasi latihan disusun dari huruf kompetensi | ءَ | أَ | ءَ أَ | أَ ءَ | ءَ ءَ | أَ أَ | ءَ أَ ءَ | أَ ءَ أَ | ءَ ءَ أَ | أَ أَ ءَ | ءَ أَ أَ | أَ ءَ ءَ | ءَ أَ ءَ أَ | أَ ءَ أَ ءَ | ءَ ءَ أَ أَ | أَ أَ ءَ ءَ | ءَ أَ أَ ءَ | أَ ءَ ءَ أَ | ءَ ءَ أَ ءَ | أَ أَ ءَ أَ | ءَ أَ ءَ ءَ | أَ ءَ أَ أَ | ءَ أَ أَ أَ | أَ ءَ ءَ ءَ | 0/24 (24 draf; belum disahkan) |
+| P003 | Fathah huruf lepas جَ حَ خَ — disalin dari inventaris J1 P001–P010; variasi latihan disusun dari huruf kompetensi | جَ | حَ | خَ | جَ حَ | حَ خَ | خَ جَ | جَ خَ | حَ جَ | خَ حَ | جَ حَ خَ | حَ خَ جَ | خَ جَ حَ | جَ خَ حَ | حَ جَ خَ | خَ حَ جَ | جَ جَ حَ | حَ حَ خَ | خَ خَ جَ | جَ حَ جَ خَ | حَ خَ حَ جَ | خَ جَ خَ حَ | جَ خَ جَ حَ | حَ جَ حَ خَ | خَ حَ خَ جَ | 0/24 (24 draf; belum disahkan) |
 | P004 | BELUM DISALIN — cocokkan master kompetensi | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P005 | BELUM DISALIN — cocokkan master kompetensi | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P006 | BELUM DISALIN — cocokkan master kompetensi | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
@@ -69,3 +69,9 @@
 - K19–K24: kelancaran membaca acak empat huruf.
 
 **Gate:** pemeriksaan kesesuaian rasm/grafem huruf lepas, kelayakan tingkat kesulitan, dan validasi pembimbing; semua 24 masih draf, bukan SAH. Tahfidz QS An-Nas:1 diperlakukan terpisah, tidak dihitung sebagai 24 kelompok tartil.
+
+## P002–P003 — transfer kompetensi dari inventaris GitHub
+
+- **P002:** kompetensi asli `ءَ / أَ` pada inventaris dialog J1 P002 (sumbernya menulis `ءَ` sebagai hamzah lepas); 24 unit latihan kombinasi dua grafem, bukan kutipan ayat.
+- **P003:** kompetensi asli `جَ حَ خَ` pada inventaris dialog J1 P003; 24 unit latihan dari satu huruf menuju pergantian acak empat huruf.
+- **Status:** 24/24 unit terisi sebagai **DRAF** masing-masing halaman, **0/24 SAH** sampai audit. P002 hamzah lepas perlu audit bentuk grafem/fathah dan font Uthman Taha.
