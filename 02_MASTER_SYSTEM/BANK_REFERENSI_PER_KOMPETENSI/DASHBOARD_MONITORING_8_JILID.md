@@ -91,3 +91,42 @@ Diperbarui: 19 Oktober 2026. **Status faktual, bukan persentase perkiraan.** Kat
 - **J4-QURBATA:** bandingkan hukum nun sukun/tanwin terhadap Bilqolam J3 halaman 4–6, 12–13, 28–37; lalu cari ayat utuh **di luar Juz Amma** untuk transfer membaca mushaf.
 - **J5–J8:** belum ada bukti pemetaan halaman sumber ke kompetensi resmi QURBATA; tetap BELUM sampai register asli dibaca.
 - Jangan salin halaman atau bank contoh dari buku komersial ke repo. Catat pola dan pilih ayat Al-Qur'an secara independen, dengan tashih.
+
+
+## TABEL TEKS LATIHAN LANGSUNG (bukan deskripsi) — tahap 1
+
+**Cara membaca:** kolom “teks” adalah contoh Al-Qur'an untuk dipilih; status KANDIDAT berarti **belum ditashih** terhadap mushaf resmi. Sumber metode pembanding belum ditranskripsi; contoh dikumpulkan secara independen. Khusus J4 dipilih di luar Juz 30.
+
+| Jilid | Kompetensi | Teks Arab latihan | Al-Qur'an | Bentuk | Status |
+|---|---|---|---|---|---|
+| 1 | Fathah | خَلَقَ | 96:1 | Kata (di Juz 30; hanya bank J1) | KANDIDAT |
+| 1 | Fathah | كَتَبَ | 2:187 | Kata | KANDIDAT |
+| 1 | Kasrah | بِسْمِ | 1:1 | Kata | KANDIDAT |
+| 1 | Dhammah | كُتِبَ | 2:183 | Kata | KANDIDAT |
+| 2 | Tanwin | هُدًى | 2:2 | Kata | KANDIDAT |
+| 2 | Huruf sambung | خَلَقَ الْإِنْسَانَ | 96:2 | Frasa | KANDIDAT |
+| 2 | Bacaan panjang | قَالُوا | 2:11 | Kata | KANDIDAT |
+| 3 | Sukun | لَمْ يَكُنِ | 2:105 (cek konteks; jangan gunakan sebelum tashih) | Frasa | PERLU KOREKSI |
+| 3 | Lam sukun | قُلْ | 112:1 | Kata | KANDIDAT |
+| 3 | Alif-lam qamariyah | الْكِتَابُ | 2:2 (teks rujukan الْكِتَابُ, periksa i'rab) | Kata | KANDIDAT |
+| 4 | Izhar nun sukun | مَنْ آمَنَ بِاللَّهِ | 2:62 | Frasa | KANDIDAT |
+| 4 | Izhar nun sukun | مِنْ خَيْرٍ | 2:105 | Frasa | KANDIDAT |
+| 4 | Idgham bighunnah | مَنْ يَعْمَلْ سُوءًا | 4:123 | Frasa | KANDIDAT |
+| 4 | Idgham bighunnah | مِنْ وَالٍ | 13:11 | Frasa | KANDIDAT |
+| 4 | Idgham bilaghunnah | مِنْ رَبِّهِمْ | 2:5 | Frasa | KANDIDAT |
+| 4 | Idgham bilaghunnah | مِنْ لَدُنْهُ | 18:2 | Frasa | KANDIDAT |
+| 4 | Iqlab | مِنْ بَعْدِ | 30:4 | Frasa | KANDIDAT |
+| 4 | Iqlab | أَنْبِئْهُمْ بِأَسْمَائِهِمْ | 2:33 | Frasa | KANDIDAT |
+| 4 | Ikhfa | مِنْ تَحْتِهَا الْأَنْهَارُ | 2:25 | Frasa | KANDIDAT |
+| 4 | Ikhfa | إِنْ جَاءَكُمْ فَاسِقٌ بِنَبَإٍ | 49:6 | Frasa | KANDIDAT |
+| 4 | Ikhfa | مَنْ ذَا الَّذِي يُقْرِضُ اللَّهَ | 2:245 | Frasa | KANDIDAT |
+| 4 | Ikhfa | مِنْ قَبْلِ | 30:4 | Frasa | KANDIDAT |
+| 4 | Transfer ke ayat utuh | مَّن ذَا ٱلَّذِي يُقۡرِضُ ٱللَّهَ قَرۡضًا حَسَنٗا فَيُضَٰعِفَهُۥ لَهُۥٓ أَضۡعَافٗا كَثِيرَةٗۚ وَٱللَّهُ يَقۡبِضُ وَيَبۡصُۜطُ وَإِلَيۡهِ تُرۡجَعُونَ | 2:245 | Ayat utuh | KANDIDAT; perlu tashih |
+| 5 | Ghunnah/tasydid (cek register) | إِنَّ اللَّهَ | 2:20 | Frasa | KANDIDAT |
+| 5 | Qalqalah (cek register) | قَدْ أَفْلَحَ | 23:1 | Frasa | KANDIDAT |
+| 6 | Mad (cek register) | جَاءَ | 2:89 | Kata | KANDIDAT |
+| 6 | Waqaf (cek register) | لَا رَيْبَ فِيهِ | 2:2 | Frasa | KANDIDAT |
+| 7 | Tajwid terpadu (cek register) | وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا | 73:4 | Frasa | KANDIDAT |
+| 8 | Bacaan mushaf (cek register) | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | Ayat utuh | KANDIDAT |
+
+**Audit wajib:** jangan pindahkan baris bertanda PERLU KOREKSI ke produksi. Baris lainnya juga belum final; periksa teks ayat, lokasi, tajwid washal, serta kompetensi prasyarat. Contoh J1–J3 harus menyesuaikan urutan halaman resmi, bukan otomatis dicetak pada jilid yang tertera.
