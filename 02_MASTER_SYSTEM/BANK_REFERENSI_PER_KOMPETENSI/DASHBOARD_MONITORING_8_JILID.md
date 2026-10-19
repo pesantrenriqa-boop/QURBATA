@@ -262,20 +262,35 @@ Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. *
 | 1 | Kasrah | مِنَ | 2:8 | KANDIDAT — TASHIH |
 | 2 | Bacaan panjang | قَالُوا | 2:11 | KANDIDAT — TASHIH |
 | 2 | Huruf sambung | خَلَقَ الْإِنْسَانَ | 96:2 | KANDIDAT — TASHIH |
+| 2 | Mad alif | النَّاسَ | 2:13 | KANDIDAT — TASHIH |
 | 2 | Mad alif | قَالَ | 2:30 | KANDIDAT — TASHIH |
+| 2 | Mad alif | قَالُوا | 2:11 | KANDIDAT — TASHIH |
+| 2 | Mad alif | كَانَ | 2:10 | KANDIDAT — TASHIH |
+| 2 | Mad waw | يُؤْمِنُونَ | 2:3 | KANDIDAT — TASHIH |
+| 2 | Mad waw | يَقُولُ | 2:8 | KANDIDAT — TASHIH |
 | 2 | Mad waw | يَقُولُونَ | 2:8 | KANDIDAT — TASHIH |
+| 2 | Mad waw | يُوقِنُونَ | 2:4 | KANDIDAT — TASHIH |
+| 2 | Mad ya | الَّذِينَ | 2:3 | KANDIDAT — TASHIH |
+| 2 | Mad ya | عَظِيمٌ | 2:7 | KANDIDAT — TASHIH |
+| 2 | Mad ya | فِي | 2:2 | KANDIDAT — TASHIH |
 | 2 | Mad ya | فِيهِ | 2:2 | KANDIDAT — TASHIH |
 | 2 | Tanwin | هُدًى | 2:2 | KANDIDAT — TASHIH |
 | 2 | Tanwin damm | عَلِيمٌ | 2:29 | KANDIDAT — TASHIH |
 | 2 | Tanwin fath | عَلِيمًا | 4:11 | KANDIDAT — TASHIH |
 | 2 | Tanwin kasr | عَلِيمٍ | 2:32 | KANDIDAT — TASHIH |
+| 3 | Alif lam qamariyah | الْأَرْضَ | 2:22 | KANDIDAT — TASHIH |
 | 3 | Alif lam qamariyah | الْحَمْدُ | 1:2 | KANDIDAT — TASHIH |
+| 3 | Alif lam qamariyah | الْغَيْبِ | 2:3 | KANDIDAT — TASHIH |
 | 3 | Alif lam qamariyah | الْكِتَابُ | 2:2 | KANDIDAT — TASHIH |
 | 3 | Alif-lam qamariyah | الْكِتَابُ | 2:2 (teks rujukan الْكِتَابُ, periksa i'rab) | DUPLIKAT — REVIEW |
 | 3 | Lam sukun | قُلْ | 112:1 | KANDIDAT — TASHIH |
+| 3 | Sukun ba | يَبْتَغُونَ | 2:198 | KANDIDAT — TASHIH |
 | 3 | Sukun dal | قَدْ | 2:60 | KANDIDAT — TASHIH |
+| 3 | Sukun kaf | يَكْتُبُونَ | 2:79 | KANDIDAT — TASHIH |
 | 3 | Sukun lam | قُلْ | 112:1 | DUPLIKAT — REVIEW |
 | 3 | Sukun mim | لَمْ | 2:6 | KANDIDAT — TASHIH |
+| 3 | Sukun mim | هُمْ | 2:8 | KANDIDAT — TASHIH |
+| 3 | Sukun nun | أَنْتُمْ | 2:22 | KANDIDAT — TASHIH |
 | 3 | Sukun nun | مِنْ | 2:8 | KANDIDAT — TASHIH |
 | 4 | Ayat utuh — transfer | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | KANDIDAT — TASHIH |
 | 4 | Ayat utuh — transfer | وَإِلَٰهُكُمْ إِلَٰهٌ وَاحِدٌ لَا إِلَٰهَ إِلَّا هُوَ الرَّحْمَٰنُ الرَّحِيمُ | 2:163 | KANDIDAT — TASHIH |
@@ -353,30 +368,45 @@ Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. *
 | 4 | Nun sukun — izhar غ | مِنْ غَيْرِ | 2:173 | KANDIDAT — TASHIH |
 | 4 | Transfer ke ayat utuh | مَّن ذَا ٱلَّذِي يُقۡرِضُ ٱللَّهَ قَرۡضًا حَسَنٗا فَيُضَٰعِفَهُۥ لَهُۥٓ أَضۡعَافٗا كَثِيرَةٗۚ وَٱللَّهُ يَقۡبِضُ وَيَبۡصُۜطُ وَإِلَيۡهِ تُرۡجَعُونَ | 2:245 | KANDIDAT — TASHIH |
 | 5 | Ghunnah mim | ثُمَّ | 2:29 | KANDIDAT — TASHIH |
+| 5 | Ghunnah mim tasydid | ثُمَّ | 2:29 | KANDIDAT — TASHIH |
 | 5 | Ghunnah nun | إِنَّ اللَّهَ | 2:20 | KANDIDAT — TASHIH |
+| 5 | Ghunnah nun tasydid | إِنَّ | 2:6 | KANDIDAT — TASHIH |
 | 5 | Ghunnah/tasydid (cek register) | إِنَّ اللَّهَ | 2:20 | DUPLIKAT — REVIEW |
 | 5 | Lam jalalah | وَاللَّهُ غَفُورٌ رَحِيمٌ | 2:173 | KANDIDAT — TASHIH |
 | 5 | Lam jalalah tafkhim | قَالَ اللَّهُ | 5:116 | KANDIDAT — TASHIH |
 | 5 | Qalqalah (cek register) | قَدْ أَفْلَحَ | 23:1 | KANDIDAT — TASHIH |
 | 5 | Qalqalah ba | وَتَبَّ | 111:1 | KANDIDAT — TASHIH |
+| 5 | Qalqalah ba | يَبْتَغُونَ | 2:198 | KANDIDAT — TASHIH |
 | 5 | Qalqalah dal | قَدْ أَفْلَحَ | 23:1 | DUPLIKAT — REVIEW |
+| 5 | Qalqalah dal | يَدْعُونَ | 2:23 | KANDIDAT — TASHIH |
+| 5 | Qalqalah jim | يَجْعَلُونَ | 2:19 | KANDIDAT — TASHIH |
 | 5 | Qalqalah qaf | يَقْطَعُونَ | 2:27 | KANDIDAT — TASHIH |
+| 5 | Qalqalah tha | أَطْعَمَهُمْ | 106:4 | KANDIDAT — TASHIH |
 | 5 | Ra tafkhim | رَبِّ الْعَالَمِينَ | 1:2 | KANDIDAT — TASHIH |
 | 6 | Mad (cek register) | جَاءَ | 2:89 | KANDIDAT — TASHIH |
 | 6 | Mad arid lissukun | الْعَالَمِينَ | 1:2 | KANDIDAT — TASHIH |
 | 6 | Mad badal | آمَنُوا | 2:9 | KANDIDAT — TASHIH |
+| 6 | Mad badal | إِيمَانًا | 2:143 | KANDIDAT — TASHIH |
 | 6 | Mad jaiz | بِمَا أُنْزِلَ | 2:4 | KANDIDAT — TASHIH |
 | 6 | Mad jaiz munfasil | بِمَا أُنْزِلَ | 2:4 | DUPLIKAT — REVIEW |
+| 6 | Mad jaiz munfasil | يَا أَيُّهَا | 2:21 | KANDIDAT — TASHIH |
 | 6 | Mad lazim | الضَّالِّينَ | 1:7 | KANDIDAT — TASHIH |
 | 6 | Mad wajib | السَّمَاءِ | 2:19 | KANDIDAT — TASHIH |
 | 6 | Mad wajib | جَاءَ | 2:89 | DUPLIKAT — REVIEW |
+| 6 | Mad wajib muttasil | السَّمَاءِ | 2:19 | KANDIDAT — TASHIH |
 | 6 | Mad wajib muttasil | جَاءَ | 2:89 | DUPLIKAT — REVIEW |
+| 6 | Mad wajib muttasil | جَاءَهُمْ | 2:89 | KANDIDAT — TASHIH |
 | 6 | Waqaf | لَا رَيْبَ فِيهِ | 2:2 | KANDIDAT — TASHIH |
 | 6 | Waqaf (cek register) | لَا رَيْبَ فِيهِ | 2:2 | DUPLIKAT — REVIEW |
 | 6 | Waqaf ayat | وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ | 2:29 | KANDIDAT — TASHIH |
 | 7 | Ayat utuh | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | KANDIDAT — TASHIH |
 | 7 | Ayat utuh | وَقُلْ رَبِّ زِدْنِي عِلْمًا | 20:114 | POTONGAN AYAT — BUKAN UTUH |
 | 7 | Ayat utuh | وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا | 17:32 | KANDIDAT — TASHIH |
+| 7 | Bacaan sambung | الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ | 2:3 | KANDIDAT — TASHIH |
+| 7 | Bacaan sambung | ذَٰلِكَ الْكِتَابُ لَا رَيْبَ فِيهِ | 2:2 | KANDIDAT — TASHIH |
+| 7 | Bacaan sambung | هُدًى لِلْمُتَّقِينَ | 2:2 | KANDIDAT — TASHIH |
+| 7 | Bacaan sambung | وَمِمَّا رَزَقْنَاهُمْ يُنْفِقُونَ | 2:3 | KANDIDAT — TASHIH |
+| 7 | Bacaan sambung | وَيُقِيمُونَ الصَّلَاةَ | 2:3 | KANDIDAT — TASHIH |
 | 7 | Bacaan utuh | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | DUPLIKAT — REVIEW |
 | 7 | Nun/tanwin terpadu | إِنْ جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا | 49:6 | KANDIDAT — TASHIH |
 | 7 | Tajwid terpadu (cek register) | وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا | 73:4 | KANDIDAT — TASHIH |
@@ -390,8 +420,14 @@ Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. *
 | 8 | Bacaan ayat utuh | وَقُلْ رَبِّ زِدْنِي عِلْمًا | 20:114 | POTONGAN AYAT — BUKAN UTUH |
 | 8 | Bacaan ayat utuh | وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا | 17:32 | KANDIDAT — TASHIH |
 | 8 | Bacaan mushaf (cek register) | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | KANDIDAT — TASHIH |
+| 8 | Bacaan sambung | أَأَنْذَرْتَهُمْ أَمْ لَمْ تُنْذِرْهُمْ | 2:6 | KANDIDAT — TASHIH |
+| 8 | Bacaan sambung | إِنَّ الَّذِينَ كَفَرُوا سَوَاءٌ عَلَيْهِمْ | 2:6 | KANDIDAT — TASHIH |
+| 8 | Bacaan sambung | أُولَٰئِكَ عَلَىٰ هُدًى مِنْ رَبِّهِمْ | 2:5 | KANDIDAT — TASHIH |
+| 8 | Bacaan sambung | لَا يُؤْمِنُونَ | 2:6 | KANDIDAT — TASHIH |
+| 8 | Bacaan sambung | وَأُولَٰئِكَ هُمُ الْمُفْلِحُونَ | 2:5 | KANDIDAT — TASHIH |
+| 8 | Bacaan sambung | وَبِالْآخِرَةِ هُمْ يُوقِنُونَ | 2:4 | KANDIDAT — TASHIH |
 
-**Total 138 baris terintegrasi.** Prioritas berikutnya: koreksi sumber, hapus contoh yang tidak lolos, dan cocokkan register halaman J1–J8.
+**Total 174 baris terintegrasi; belum tashih.**
 <!-- QURBATA_CONSOLIDATED_END -->
 
 ### Audit awal bank terintegrasi (19 Oktober 2026)
