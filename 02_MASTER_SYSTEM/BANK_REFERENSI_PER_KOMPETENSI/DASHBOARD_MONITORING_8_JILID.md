@@ -379,9 +379,9 @@ Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. *
 | 5 | Qalqalah ba | يَبْتَغُونَ | 2:198 | TAHAN — BUKAN QALQALAH: بْ tidak ada; بَ berharakat fathah |
 | 5 | Qalqalah dal | قَدْ أَفْلَحَ | 23:1 | DUPLIKAT — REVIEW |
 | 5 | Qalqalah dal | يَدْعُونَ | 2:23 | TAHAN — PERIKSA SUMBER dan ketepatan contoh |
-| 5 | Qalqalah jim | يَجْعَلُونَ | 2:19 | TAHAN — BUKAN QALQALAH: جْ tidak ada; جْ? teks يَجْعَلُونَ mengandung جْ, periksa |
+| 5 | Qalqalah jim | يَجْعَلُونَ | 2:19 | KANDIDAT — TASHIH (huruf qalqalah bersukun ditemukan) |
 | 5 | Qalqalah qaf | يَقْطَعُونَ | 2:27 | KANDIDAT — TASHIH |
-| 5 | Qalqalah tha | أَطْعَمَهُمْ | 106:4 | TAHAN — BUKAN QALQALAH: طْ bukan huruf qalqalah |
+| 5 | Qalqalah tha | أَطْعَمَهُمْ | 106:4 | KANDIDAT — TASHIH (huruf qalqalah bersukun ditemukan) |
 | 5 | Ra tafkhim | رَبِّ الْعَالَمِينَ | 1:2 | KANDIDAT — TASHIH |
 | 6 | Mad (cek register) | جَاءَ | 2:89 | KANDIDAT — TASHIH |
 | 6 | Mad arid lissukun | الْعَالَمِينَ | 1:2 | KANDIDAT — TASHIH |
@@ -513,8 +513,10 @@ Pemeriksaan pola harakat awal menemukan sejumlah contoh yang **tidak boleh langs
 | 2 | Mad ya | فِي | PERIKSA KOMPETENSI: mad ya pada فِي valid bila disambung |
 | 5 | Qalqalah ba | يَبْتَغُونَ | BUKAN QALQALAH: بْ tidak ada; بَ berharakat fathah |
 | 5 | Qalqalah dal | يَدْعُونَ | PERIKSA SUMBER dan ketepatan contoh |
-| 5 | Qalqalah jim | يَجْعَلُونَ | BUKAN QALQALAH: جْ tidak ada; جْ? teks يَجْعَلُونَ mengandung جْ, periksa |
-| 5 | Qalqalah tha | أَطْعَمَهُمْ | BUKAN QALQALAH: طْ bukan huruf qalqalah |
+| 5 | Qalqalah jim | يَجْعَلُونَ | BUKAN QALQALAH: جْ tidak ada; جْ? teks يَجْعَلُونَ mengandung جْ, periksa | KANDIDAT — TASHIH (huruf qalqalah bersukun ditemukan) |
+| 5 | Qalqalah tha | أَطْعَمَهُمْ | BUKAN QALQALAH: طْ bukan huruf qalqalah | KANDIDAT — TASHIH (huruf qalqalah bersukun ditemukan) |
 | 6 | Mad badal | إِيمَانًا | PERIKSA SUMBER AYAT dan hukum mad |
 
 **Catatan koreksi lanjutan:** sumber surah:ayat, bentuk Utsmani, serta kesesuaian prasyarat harus dicek dengan mushaf dan register resmi. Jangan mengubah status menjadi SAH hanya berdasarkan pemeriksaan pola teks ini.
+
+**Koreksi audit langsung:** `يَجْعَلُونَ` mengandung جْ dan `أَطْعَمَهُمْ` mengandung طْ. Keduanya **memenuhi pola dasar qalqalah sughra**, sehingga penandaan sebelumnya yang menyatakan bukan qalqalah adalah salah dan sudah diperbaiki pada tabel induk. Verifikasi rujukan dan gate pedagogis tetap diperlukan.
