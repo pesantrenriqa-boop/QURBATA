@@ -252,144 +252,144 @@ Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. *
 
 | Jilid | Kompetensi | Teks contoh langsung | Surah:ayat (perlu verifikasi) | Status |
 |---|---|---|---|---|
-| 1 | Dhammah | رُسُلٌ | 2:87 | KANDIDAT |
-| 1 | Dhammah | كُتِبَ | 2:183 | KANDIDAT |
-| 1 | Fathah | جَعَلَ | 2:22 | KANDIDAT |
-| 1 | Fathah | خَلَقَ | 96:1 | KANDIDAT |
-| 1 | Fathah | كَتَبَ | 2:187 | KANDIDAT |
-| 1 | Kasrah | بِسْمِ | 1:1 | KANDIDAT |
-| 1 | Kasrah | بِهِ | 2:26 | KANDIDAT |
-| 1 | Kasrah | مِنَ | 2:8 | KANDIDAT |
-| 2 | Bacaan panjang | قَالُوا | 2:11 | KANDIDAT |
-| 2 | Huruf sambung | خَلَقَ الْإِنْسَانَ | 96:2 | KANDIDAT |
-| 2 | Mad alif | قَالَ | 2:30 | KANDIDAT |
-| 2 | Mad waw | يَقُولُونَ | 2:8 | KANDIDAT |
-| 2 | Mad ya | فِيهِ | 2:2 | KANDIDAT |
-| 2 | Tanwin | هُدًى | 2:2 | KANDIDAT |
-| 2 | Tanwin damm | عَلِيمٌ | 2:29 | KANDIDAT |
-| 2 | Tanwin fath | عَلِيمًا | 4:11 | KANDIDAT |
-| 2 | Tanwin kasr | عَلِيمٍ | 2:32 | KANDIDAT |
-| 3 | Alif lam qamariyah | الْحَمْدُ | 1:2 | KANDIDAT |
-| 3 | Alif lam qamariyah | الْكِتَابُ | 2:2 | KANDIDAT |
-| 3 | Alif-lam qamariyah | الْكِتَابُ | 2:2 (teks rujukan الْكِتَابُ, periksa i'rab) | KANDIDAT |
-| 3 | Lam sukun | قُلْ | 112:1 | KANDIDAT |
-| 3 | Sukun dal | قَدْ | 2:60 | KANDIDAT |
-| 3 | Sukun lam | قُلْ | 112:1 | KANDIDAT |
-| 3 | Sukun mim | لَمْ | 2:6 | KANDIDAT |
-| 3 | Sukun nun | مِنْ | 2:8 | KANDIDAT |
-| 4 | Ayat utuh — transfer | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | KANDIDAT |
-| 4 | Ayat utuh — transfer | وَإِلَٰهُكُمْ إِلَٰهٌ وَاحِدٌ لَا إِلَٰهَ إِلَّا هُوَ الرَّحْمَٰنُ الرَّحِيمُ | 2:163 | KANDIDAT |
-| 4 | Ayat utuh — transfer | وَقُلْ رَبِّ زِدْنِي عِلْمًا | 20:114 | KANDIDAT |
-| 4 | Ayat utuh — transfer | وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا | 17:32 | KANDIDAT |
-| 4 | Idgham bighunnah | مِنْ وَالٍ | 13:11 | KANDIDAT |
-| 4 | Idgham bighunnah | مَنْ يَعْمَلْ سُوءًا | 4:123 | KANDIDAT |
-| 4 | Idgham bilaghunnah | مِنْ رَبِّهِمْ | 2:5 | KANDIDAT |
-| 4 | Idgham bilaghunnah | مِنْ لَدُنْهُ | 18:2 | KANDIDAT |
-| 4 | Idgham ر | مِنْ رَبِّهِمْ | 2:5 | KANDIDAT |
-| 4 | Idgham ل | مِنْ لَدُنْهُ | 18:2 | KANDIDAT |
-| 4 | Idgham م | مِنْ مَالٍ | 23:55 | KANDIDAT |
-| 4 | Idgham ن | مِنْ نِعْمَةٍ | 16:53 | KANDIDAT |
-| 4 | Idgham و | مِنْ وَالٍ | 13:11 | KANDIDAT |
-| 4 | Idgham ي | مَنْ يَعْمَلْ | 4:123 | KANDIDAT |
-| 4 | Ikhfa | إِنْ جَاءَكُمْ فَاسِقٌ بِنَبَإٍ | 49:6 | KANDIDAT |
-| 4 | Ikhfa | مِنْ تَحْتِهَا الْأَنْهَارُ | 2:25 | KANDIDAT |
-| 4 | Ikhfa | مَنْ ذَا الَّذِي يُقْرِضُ اللَّهَ | 2:245 | KANDIDAT |
-| 4 | Ikhfa | مِنْ قَبْلِ | 30:4 | KANDIDAT |
-| 4 | Ikhfa ت | مِنْ تَحْتِهَا | 2:25 | KANDIDAT |
-| 4 | Ikhfa ث | مِنْ ثَمَرَةٍ | 2:25 | KANDIDAT |
-| 4 | Ikhfa ج | إِنْ جَاءَكُمْ | 49:6 | KANDIDAT |
-| 4 | Ikhfa د | مِنْ دُونِ اللَّهِ | 2:23 | KANDIDAT |
-| 4 | Ikhfa ذ | مَنْ ذَا الَّذِي | 2:245 | KANDIDAT |
-| 4 | Ikhfa ز | أَنْزَلْنَا | 2:23 | KANDIDAT |
-| 4 | Ikhfa س | مِنْ سُوءٍ | 4:79 | KANDIDAT |
-| 4 | Ikhfa ش | مِنْ شَيْءٍ | 2:20 | KANDIDAT |
-| 4 | Ikhfa ص | مِنْ صَلْصَالٍ | 15:26 | KANDIDAT |
-| 4 | Ikhfa ض | مَنْ ضَلَّ | 6:117 | KANDIDAT |
-| 4 | Ikhfa ط | مِنْ طَيِّبَاتِ | 2:57 | KANDIDAT |
-| 4 | Ikhfa ظ | مِنْ ظَهِيرٍ | 34:22 | KANDIDAT |
-| 4 | Ikhfa ف | مِنْ فَوْقِهِمْ | 16:50 | KANDIDAT |
-| 4 | Ikhfa ق | مِنْ قَبْلِ | 30:4 | KANDIDAT |
-| 4 | Ikhfa ك | مِنْ كُلِّ | 16:11 | KANDIDAT |
-| 4 | Iqlab | أَنْبِئْهُمْ بِأَسْمَائِهِمْ | 2:33 | KANDIDAT |
-| 4 | Iqlab | مِنْ بَعْدِ | 30:4 | KANDIDAT |
-| 4 | Iqlab ب | أَنْبِئْهُمْ | 2:33 | KANDIDAT |
-| 4 | Iqlab ب | مِنْ بَعْدِ | 30:4 | KANDIDAT |
-| 4 | Izhar nun sukun | مَنْ آمَنَ بِاللَّهِ | 2:62 | KANDIDAT |
-| 4 | Izhar nun sukun | مِنْ خَيْرٍ | 2:105 | KANDIDAT |
-| 4 | Izhar ء | مَنْ آمَنَ | 2:62 | KANDIDAT |
-| 4 | Izhar ح | مِنْ حَكِيمٍ | 41:42 | KANDIDAT |
-| 4 | Izhar خ | مِنْ خَيْرٍ | 2:105 | KANDIDAT |
-| 4 | Izhar ع | أَنْعَمْتَ | 1:7 | KANDIDAT |
-| 4 | Izhar غ | مِنْ غِلٍّ | 7:43 | KANDIDAT |
-| 4 | Izhar ه | مِنْ هَادٍ | 13:33 | KANDIDAT |
-| 4 | Lam qamariyah | الْأَرْضَ | 2:22 | KANDIDAT |
-| 4 | Lam qamariyah | الْكِتَابُ | 2:2 | KANDIDAT |
-| 4 | Lam syamsiyah | الشَّمْسَ وَالْقَمَرَ | 7:54 | KANDIDAT |
-| 4 | Lam syamsiyah | النَّاسِ | 2:21 | KANDIDAT |
-| 4 | Mim sukun — idgham mimi | لَكُمْ مَا | 2:29 | KANDIDAT |
-| 4 | Mim sukun — izhar syafawi | عَلَيْهِمْ وَلَا | 1:7 | KANDIDAT |
-| 4 | Mim sukun idgham | لَكُمْ مَا | 2:29 | KANDIDAT |
-| 4 | Mim sukun izhar | هُمْ فِيهَا | 2:25 | KANDIDAT |
-| 4 | Nun sukun — idgham م | مِنْ مَاءٍ | 2:22 | KANDIDAT |
-| 4 | Nun sukun — idgham ن | مِنْ نِعْمَةٍ | 16:53 | KANDIDAT |
-| 4 | Nun sukun — idgham ي | مَنْ يَقُولُ | 2:8 | KANDIDAT |
-| 4 | Nun sukun — ikhfa ت | أَنْ تَقُولُوا | 2:94 | KANDIDAT |
-| 4 | Nun sukun — ikhfa ث | مِنْ ثَمَرَةٍ | 2:25 | KANDIDAT |
-| 4 | Nun sukun — ikhfa ج | إِنْ جَاءَكُمْ | 49:6 | KANDIDAT |
-| 4 | Nun sukun — ikhfa د | مِنْ دُونِ اللَّهِ | 2:23 | KANDIDAT |
-| 4 | Nun sukun — ikhfa ذ | مَنْ ذَا الَّذِي | 2:245 | KANDIDAT |
-| 4 | Nun sukun — ikhfa ز | أَنْزَلَ | 2:22 | KANDIDAT |
-| 4 | Nun sukun — ikhfa س | مِنْ سُوءٍ | 4:79 | KANDIDAT |
-| 4 | Nun sukun — ikhfa ش | مِنْ شَيْءٍ | 2:20 | KANDIDAT |
-| 4 | Nun sukun — ikhfa ص | مِنْ صَلْصَالٍ | 15:26 | KANDIDAT |
-| 4 | Nun sukun — ikhfa ض | مَنْ ضَلَّ | 6:117 | KANDIDAT |
-| 4 | Nun sukun — ikhfa ط | مِنْ طَيِّبَاتِ | 2:57 | KANDIDAT |
-| 4 | Nun sukun — ikhfa ظ | مِنْ ظَهِيرٍ | 34:22 | KANDIDAT |
-| 4 | Nun sukun — ikhfa ف | مِنْ فَضْلِ اللَّهِ | 2:198 | KANDIDAT |
-| 4 | Nun sukun — ikhfa ق | مِنْ قَبْلِ | 2:25 | KANDIDAT |
-| 4 | Nun sukun — ikhfa ك | مِنْ كُلِّ | 2:164 | KANDIDAT |
-| 4 | Nun sukun — izhar ح | مِنْ حَيْثُ | 2:149 | KANDIDAT |
-| 4 | Nun sukun — izhar ع | مِنْ عِلْمٍ | 2:145 | KANDIDAT |
-| 4 | Nun sukun — izhar غ | مِنْ غَيْرِ | 2:173 | KANDIDAT |
-| 4 | Transfer ke ayat utuh | مَّن ذَا ٱلَّذِي يُقۡرِضُ ٱللَّهَ قَرۡضًا حَسَنٗا فَيُضَٰعِفَهُۥ لَهُۥٓ أَضۡعَافٗا كَثِيرَةٗۚ وَٱللَّهُ يَقۡبِضُ وَيَبۡصُۜطُ وَإِلَيۡهِ تُرۡجَعُونَ | 2:245 | KANDIDAT |
-| 5 | Ghunnah mim | ثُمَّ | 2:29 | KANDIDAT |
-| 5 | Ghunnah nun | إِنَّ اللَّهَ | 2:20 | KANDIDAT |
-| 5 | Ghunnah/tasydid (cek register) | إِنَّ اللَّهَ | 2:20 | KANDIDAT |
-| 5 | Lam jalalah | وَاللَّهُ غَفُورٌ رَحِيمٌ | 2:173 | KANDIDAT |
-| 5 | Lam jalalah tafkhim | قَالَ اللَّهُ | 5:116 | KANDIDAT |
-| 5 | Qalqalah (cek register) | قَدْ أَفْلَحَ | 23:1 | KANDIDAT |
-| 5 | Qalqalah ba | وَتَبَّ | 111:1 | KANDIDAT |
-| 5 | Qalqalah dal | قَدْ أَفْلَحَ | 23:1 | KANDIDAT |
-| 5 | Qalqalah qaf | يَقْطَعُونَ | 2:27 | KANDIDAT |
-| 5 | Ra tafkhim | رَبِّ الْعَالَمِينَ | 1:2 | KANDIDAT |
-| 6 | Mad (cek register) | جَاءَ | 2:89 | KANDIDAT |
-| 6 | Mad arid lissukun | الْعَالَمِينَ | 1:2 | KANDIDAT |
-| 6 | Mad badal | آمَنُوا | 2:9 | KANDIDAT |
-| 6 | Mad jaiz | بِمَا أُنْزِلَ | 2:4 | KANDIDAT |
-| 6 | Mad jaiz munfasil | بِمَا أُنْزِلَ | 2:4 | KANDIDAT |
-| 6 | Mad lazim | الضَّالِّينَ | 1:7 | KANDIDAT |
-| 6 | Mad wajib | السَّمَاءِ | 2:19 | KANDIDAT |
-| 6 | Mad wajib | جَاءَ | 2:89 | KANDIDAT |
-| 6 | Mad wajib muttasil | جَاءَ | 2:89 | KANDIDAT |
-| 6 | Waqaf | لَا رَيْبَ فِيهِ | 2:2 | KANDIDAT |
-| 6 | Waqaf (cek register) | لَا رَيْبَ فِيهِ | 2:2 | KANDIDAT |
-| 6 | Waqaf ayat | وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ | 2:29 | KANDIDAT |
-| 7 | Ayat utuh | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | KANDIDAT |
-| 7 | Ayat utuh | وَقُلْ رَبِّ زِدْنِي عِلْمًا | 20:114 | KANDIDAT |
-| 7 | Ayat utuh | وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا | 17:32 | KANDIDAT |
-| 7 | Bacaan utuh | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | KANDIDAT |
-| 7 | Nun/tanwin terpadu | إِنْ جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا | 49:6 | KANDIDAT |
-| 7 | Tajwid terpadu (cek register) | وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا | 73:4 | KANDIDAT |
-| 7 | Tartil terpadu | وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا | 73:4 | KANDIDAT |
-| 7 | Waqaf dan bacaan sambung | إِنَّ اللَّهَ عَلِيمٌ خَبِيرٌ | 49:13 | KANDIDAT |
-| 8 | Ayat utuh | قُلْ يَا أَيُّهَا الْكَافِرُونَ | 109:1 | KANDIDAT |
-| 8 | Ayat utuh | وَاعْتَصِمُوا بِحَبْلِ اللَّهِ جَمِيعًا وَلَا تَفَرَّقُوا | 3:103 | KANDIDAT |
-| 8 | Ayat utuh | وَإِلَٰهُكُمْ إِلَٰهٌ وَاحِدٌ لَا إِلَٰهَ إِلَّا هُوَ الرَّحْمَٰنُ الرَّحِيمُ | 2:163 | KANDIDAT |
-| 8 | Bacaan ayat utuh | إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ وَإِيتَاءِ ذِي الْقُرْبَى | 16:90 | KANDIDAT |
-| 8 | Bacaan ayat utuh | قُلْ هُوَ اللَّهُ أَحَدٌ | 112:1 | KANDIDAT |
-| 8 | Bacaan ayat utuh | وَقُلْ رَبِّ زِدْنِي عِلْمًا | 20:114 | KANDIDAT |
-| 8 | Bacaan ayat utuh | وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا | 17:32 | KANDIDAT |
-| 8 | Bacaan mushaf (cek register) | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | KANDIDAT |
+| 1 | Dhammah | رُسُلٌ | 2:87 | KANDIDAT — TASHIH |
+| 1 | Dhammah | كُتِبَ | 2:183 | KANDIDAT — TASHIH |
+| 1 | Fathah | جَعَلَ | 2:22 | KANDIDAT — TASHIH |
+| 1 | Fathah | خَلَقَ | 96:1 | KANDIDAT — TASHIH |
+| 1 | Fathah | كَتَبَ | 2:187 | KANDIDAT — TASHIH |
+| 1 | Kasrah | بِسْمِ | 1:1 | KANDIDAT — TASHIH |
+| 1 | Kasrah | بِهِ | 2:26 | KANDIDAT — TASHIH |
+| 1 | Kasrah | مِنَ | 2:8 | KANDIDAT — TASHIH |
+| 2 | Bacaan panjang | قَالُوا | 2:11 | KANDIDAT — TASHIH |
+| 2 | Huruf sambung | خَلَقَ الْإِنْسَانَ | 96:2 | KANDIDAT — TASHIH |
+| 2 | Mad alif | قَالَ | 2:30 | KANDIDAT — TASHIH |
+| 2 | Mad waw | يَقُولُونَ | 2:8 | KANDIDAT — TASHIH |
+| 2 | Mad ya | فِيهِ | 2:2 | KANDIDAT — TASHIH |
+| 2 | Tanwin | هُدًى | 2:2 | KANDIDAT — TASHIH |
+| 2 | Tanwin damm | عَلِيمٌ | 2:29 | KANDIDAT — TASHIH |
+| 2 | Tanwin fath | عَلِيمًا | 4:11 | KANDIDAT — TASHIH |
+| 2 | Tanwin kasr | عَلِيمٍ | 2:32 | KANDIDAT — TASHIH |
+| 3 | Alif lam qamariyah | الْحَمْدُ | 1:2 | KANDIDAT — TASHIH |
+| 3 | Alif lam qamariyah | الْكِتَابُ | 2:2 | KANDIDAT — TASHIH |
+| 3 | Alif-lam qamariyah | الْكِتَابُ | 2:2 (teks rujukan الْكِتَابُ, periksa i'rab) | DUPLIKAT — REVIEW |
+| 3 | Lam sukun | قُلْ | 112:1 | KANDIDAT — TASHIH |
+| 3 | Sukun dal | قَدْ | 2:60 | KANDIDAT — TASHIH |
+| 3 | Sukun lam | قُلْ | 112:1 | DUPLIKAT — REVIEW |
+| 3 | Sukun mim | لَمْ | 2:6 | KANDIDAT — TASHIH |
+| 3 | Sukun nun | مِنْ | 2:8 | KANDIDAT — TASHIH |
+| 4 | Ayat utuh — transfer | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | KANDIDAT — TASHIH |
+| 4 | Ayat utuh — transfer | وَإِلَٰهُكُمْ إِلَٰهٌ وَاحِدٌ لَا إِلَٰهَ إِلَّا هُوَ الرَّحْمَٰنُ الرَّحِيمُ | 2:163 | KANDIDAT — TASHIH |
+| 4 | Ayat utuh — transfer | وَقُلْ رَبِّ زِدْنِي عِلْمًا | 20:114 | POTONGAN AYAT — BUKAN UTUH |
+| 4 | Ayat utuh — transfer | وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا | 17:32 | KANDIDAT — TASHIH |
+| 4 | Idgham bighunnah | مِنْ وَالٍ | 13:11 | KANDIDAT — TASHIH |
+| 4 | Idgham bighunnah | مَنْ يَعْمَلْ سُوءًا | 4:123 | KANDIDAT — TASHIH |
+| 4 | Idgham bilaghunnah | مِنْ رَبِّهِمْ | 2:5 | KANDIDAT — TASHIH |
+| 4 | Idgham bilaghunnah | مِنْ لَدُنْهُ | 18:2 | KANDIDAT — TASHIH |
+| 4 | Idgham ر | مِنْ رَبِّهِمْ | 2:5 | DUPLIKAT — REVIEW |
+| 4 | Idgham ل | مِنْ لَدُنْهُ | 18:2 | DUPLIKAT — REVIEW |
+| 4 | Idgham م | مِنْ مَالٍ | 23:55 | KANDIDAT — TASHIH |
+| 4 | Idgham ن | مِنْ نِعْمَةٍ | 16:53 | KANDIDAT — TASHIH |
+| 4 | Idgham و | مِنْ وَالٍ | 13:11 | DUPLIKAT — REVIEW |
+| 4 | Idgham ي | مَنْ يَعْمَلْ | 4:123 | KANDIDAT — TASHIH |
+| 4 | Ikhfa | إِنْ جَاءَكُمْ فَاسِقٌ بِنَبَإٍ | 49:6 | KANDIDAT — TASHIH |
+| 4 | Ikhfa | مِنْ تَحْتِهَا الْأَنْهَارُ | 2:25 | KANDIDAT — TASHIH |
+| 4 | Ikhfa | مَنْ ذَا الَّذِي يُقْرِضُ اللَّهَ | 2:245 | KANDIDAT — TASHIH |
+| 4 | Ikhfa | مِنْ قَبْلِ | 30:4 | KANDIDAT — TASHIH |
+| 4 | Ikhfa ت | مِنْ تَحْتِهَا | 2:25 | KANDIDAT — TASHIH |
+| 4 | Ikhfa ث | مِنْ ثَمَرَةٍ | 2:25 | KANDIDAT — TASHIH |
+| 4 | Ikhfa ج | إِنْ جَاءَكُمْ | 49:6 | KANDIDAT — TASHIH |
+| 4 | Ikhfa د | مِنْ دُونِ اللَّهِ | 2:23 | KANDIDAT — TASHIH |
+| 4 | Ikhfa ذ | مَنْ ذَا الَّذِي | 2:245 | KANDIDAT — TASHIH |
+| 4 | Ikhfa ز | أَنْزَلْنَا | 2:23 | KANDIDAT — TASHIH |
+| 4 | Ikhfa س | مِنْ سُوءٍ | 4:79 | KANDIDAT — TASHIH |
+| 4 | Ikhfa ش | مِنْ شَيْءٍ | 2:20 | KANDIDAT — TASHIH |
+| 4 | Ikhfa ص | مِنْ صَلْصَالٍ | 15:26 | KANDIDAT — TASHIH |
+| 4 | Ikhfa ض | مَنْ ضَلَّ | 6:117 | KANDIDAT — TASHIH |
+| 4 | Ikhfa ط | مِنْ طَيِّبَاتِ | 2:57 | KANDIDAT — TASHIH |
+| 4 | Ikhfa ظ | مِنْ ظَهِيرٍ | 34:22 | KANDIDAT — TASHIH |
+| 4 | Ikhfa ف | مِنْ فَوْقِهِمْ | 16:50 | KANDIDAT — TASHIH |
+| 4 | Ikhfa ق | مِنْ قَبْلِ | 30:4 | DUPLIKAT — REVIEW |
+| 4 | Ikhfa ك | مِنْ كُلِّ | 16:11 | KANDIDAT — TASHIH |
+| 4 | Iqlab | أَنْبِئْهُمْ بِأَسْمَائِهِمْ | 2:33 | KANDIDAT — TASHIH |
+| 4 | Iqlab | مِنْ بَعْدِ | 30:4 | KANDIDAT — TASHIH |
+| 4 | Iqlab ب | أَنْبِئْهُمْ | 2:33 | KANDIDAT — TASHIH |
+| 4 | Iqlab ب | مِنْ بَعْدِ | 30:4 | DUPLIKAT — REVIEW |
+| 4 | Izhar nun sukun | مَنْ آمَنَ بِاللَّهِ | 2:62 | KANDIDAT — TASHIH |
+| 4 | Izhar nun sukun | مِنْ خَيْرٍ | 2:105 | KANDIDAT — TASHIH |
+| 4 | Izhar ء | مَنْ آمَنَ | 2:62 | KANDIDAT — TASHIH |
+| 4 | Izhar ح | مِنْ حَكِيمٍ | 41:42 | KANDIDAT — TASHIH |
+| 4 | Izhar خ | مِنْ خَيْرٍ | 2:105 | DUPLIKAT — REVIEW |
+| 4 | Izhar ع | أَنْعَمْتَ | 1:7 | KANDIDAT — TASHIH |
+| 4 | Izhar غ | مِنْ غِلٍّ | 7:43 | KANDIDAT — TASHIH |
+| 4 | Izhar ه | مِنْ هَادٍ | 13:33 | KANDIDAT — TASHIH |
+| 4 | Lam qamariyah | الْأَرْضَ | 2:22 | KANDIDAT — TASHIH |
+| 4 | Lam qamariyah | الْكِتَابُ | 2:2 | KANDIDAT — TASHIH |
+| 4 | Lam syamsiyah | الشَّمْسَ وَالْقَمَرَ | 7:54 | KANDIDAT — TASHIH |
+| 4 | Lam syamsiyah | النَّاسِ | 2:21 | KANDIDAT — TASHIH |
+| 4 | Mim sukun — idgham mimi | لَكُمْ مَا | 2:29 | KANDIDAT — TASHIH |
+| 4 | Mim sukun — izhar syafawi | عَلَيْهِمْ وَلَا | 1:7 | KANDIDAT — TASHIH |
+| 4 | Mim sukun idgham | لَكُمْ مَا | 2:29 | DUPLIKAT — REVIEW |
+| 4 | Mim sukun izhar | هُمْ فِيهَا | 2:25 | KANDIDAT — TASHIH |
+| 4 | Nun sukun — idgham م | مِنْ مَاءٍ | 2:22 | KANDIDAT — TASHIH |
+| 4 | Nun sukun — idgham ن | مِنْ نِعْمَةٍ | 16:53 | DUPLIKAT — REVIEW |
+| 4 | Nun sukun — idgham ي | مَنْ يَقُولُ | 2:8 | KANDIDAT — TASHIH |
+| 4 | Nun sukun — ikhfa ت | أَنْ تَقُولُوا | 2:94 | KANDIDAT — TASHIH |
+| 4 | Nun sukun — ikhfa ث | مِنْ ثَمَرَةٍ | 2:25 | DUPLIKAT — REVIEW |
+| 4 | Nun sukun — ikhfa ج | إِنْ جَاءَكُمْ | 49:6 | DUPLIKAT — REVIEW |
+| 4 | Nun sukun — ikhfa د | مِنْ دُونِ اللَّهِ | 2:23 | DUPLIKAT — REVIEW |
+| 4 | Nun sukun — ikhfa ذ | مَنْ ذَا الَّذِي | 2:245 | DUPLIKAT — REVIEW |
+| 4 | Nun sukun — ikhfa ز | أَنْزَلَ | 2:22 | KANDIDAT — TASHIH |
+| 4 | Nun sukun — ikhfa س | مِنْ سُوءٍ | 4:79 | DUPLIKAT — REVIEW |
+| 4 | Nun sukun — ikhfa ش | مِنْ شَيْءٍ | 2:20 | DUPLIKAT — REVIEW |
+| 4 | Nun sukun — ikhfa ص | مِنْ صَلْصَالٍ | 15:26 | DUPLIKAT — REVIEW |
+| 4 | Nun sukun — ikhfa ض | مَنْ ضَلَّ | 6:117 | DUPLIKAT — REVIEW |
+| 4 | Nun sukun — ikhfa ط | مِنْ طَيِّبَاتِ | 2:57 | DUPLIKAT — REVIEW |
+| 4 | Nun sukun — ikhfa ظ | مِنْ ظَهِيرٍ | 34:22 | DUPLIKAT — REVIEW |
+| 4 | Nun sukun — ikhfa ف | مِنْ فَضْلِ اللَّهِ | 2:198 | KANDIDAT — TASHIH |
+| 4 | Nun sukun — ikhfa ق | مِنْ قَبْلِ | 2:25 | DUPLIKAT — REVIEW |
+| 4 | Nun sukun — ikhfa ك | مِنْ كُلِّ | 2:164 | DUPLIKAT — REVIEW |
+| 4 | Nun sukun — izhar ح | مِنْ حَيْثُ | 2:149 | KANDIDAT — TASHIH |
+| 4 | Nun sukun — izhar ع | مِنْ عِلْمٍ | 2:145 | KANDIDAT — TASHIH |
+| 4 | Nun sukun — izhar غ | مِنْ غَيْرِ | 2:173 | KANDIDAT — TASHIH |
+| 4 | Transfer ke ayat utuh | مَّن ذَا ٱلَّذِي يُقۡرِضُ ٱللَّهَ قَرۡضًا حَسَنٗا فَيُضَٰعِفَهُۥ لَهُۥٓ أَضۡعَافٗا كَثِيرَةٗۚ وَٱللَّهُ يَقۡبِضُ وَيَبۡصُۜطُ وَإِلَيۡهِ تُرۡجَعُونَ | 2:245 | KANDIDAT — TASHIH |
+| 5 | Ghunnah mim | ثُمَّ | 2:29 | KANDIDAT — TASHIH |
+| 5 | Ghunnah nun | إِنَّ اللَّهَ | 2:20 | KANDIDAT — TASHIH |
+| 5 | Ghunnah/tasydid (cek register) | إِنَّ اللَّهَ | 2:20 | DUPLIKAT — REVIEW |
+| 5 | Lam jalalah | وَاللَّهُ غَفُورٌ رَحِيمٌ | 2:173 | KANDIDAT — TASHIH |
+| 5 | Lam jalalah tafkhim | قَالَ اللَّهُ | 5:116 | KANDIDAT — TASHIH |
+| 5 | Qalqalah (cek register) | قَدْ أَفْلَحَ | 23:1 | KANDIDAT — TASHIH |
+| 5 | Qalqalah ba | وَتَبَّ | 111:1 | KANDIDAT — TASHIH |
+| 5 | Qalqalah dal | قَدْ أَفْلَحَ | 23:1 | DUPLIKAT — REVIEW |
+| 5 | Qalqalah qaf | يَقْطَعُونَ | 2:27 | KANDIDAT — TASHIH |
+| 5 | Ra tafkhim | رَبِّ الْعَالَمِينَ | 1:2 | KANDIDAT — TASHIH |
+| 6 | Mad (cek register) | جَاءَ | 2:89 | KANDIDAT — TASHIH |
+| 6 | Mad arid lissukun | الْعَالَمِينَ | 1:2 | KANDIDAT — TASHIH |
+| 6 | Mad badal | آمَنُوا | 2:9 | KANDIDAT — TASHIH |
+| 6 | Mad jaiz | بِمَا أُنْزِلَ | 2:4 | KANDIDAT — TASHIH |
+| 6 | Mad jaiz munfasil | بِمَا أُنْزِلَ | 2:4 | DUPLIKAT — REVIEW |
+| 6 | Mad lazim | الضَّالِّينَ | 1:7 | KANDIDAT — TASHIH |
+| 6 | Mad wajib | السَّمَاءِ | 2:19 | KANDIDAT — TASHIH |
+| 6 | Mad wajib | جَاءَ | 2:89 | DUPLIKAT — REVIEW |
+| 6 | Mad wajib muttasil | جَاءَ | 2:89 | DUPLIKAT — REVIEW |
+| 6 | Waqaf | لَا رَيْبَ فِيهِ | 2:2 | KANDIDAT — TASHIH |
+| 6 | Waqaf (cek register) | لَا رَيْبَ فِيهِ | 2:2 | DUPLIKAT — REVIEW |
+| 6 | Waqaf ayat | وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ | 2:29 | KANDIDAT — TASHIH |
+| 7 | Ayat utuh | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | KANDIDAT — TASHIH |
+| 7 | Ayat utuh | وَقُلْ رَبِّ زِدْنِي عِلْمًا | 20:114 | POTONGAN AYAT — BUKAN UTUH |
+| 7 | Ayat utuh | وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا | 17:32 | KANDIDAT — TASHIH |
+| 7 | Bacaan utuh | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | DUPLIKAT — REVIEW |
+| 7 | Nun/tanwin terpadu | إِنْ جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا | 49:6 | KANDIDAT — TASHIH |
+| 7 | Tajwid terpadu (cek register) | وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا | 73:4 | KANDIDAT — TASHIH |
+| 7 | Tartil terpadu | وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا | 73:4 | DUPLIKAT — REVIEW |
+| 7 | Waqaf dan bacaan sambung | إِنَّ اللَّهَ عَلِيمٌ خَبِيرٌ | 49:13 | KANDIDAT — TASHIH |
+| 8 | Ayat utuh | قُلْ يَا أَيُّهَا الْكَافِرُونَ | 109:1 | POTONGAN AYAT — BUKAN UTUH |
+| 8 | Ayat utuh | وَاعْتَصِمُوا بِحَبْلِ اللَّهِ جَمِيعًا وَلَا تَفَرَّقُوا | 3:103 | POTONGAN AYAT — BUKAN UTUH |
+| 8 | Ayat utuh | وَإِلَٰهُكُمْ إِلَٰهٌ وَاحِدٌ لَا إِلَٰهَ إِلَّا هُوَ الرَّحْمَٰنُ الرَّحِيمُ | 2:163 | KANDIDAT — TASHIH |
+| 8 | Bacaan ayat utuh | إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ وَإِيتَاءِ ذِي الْقُرْبَى | 16:90 | KANDIDAT — TASHIH |
+| 8 | Bacaan ayat utuh | قُلْ هُوَ اللَّهُ أَحَدٌ | 112:1 | KANDIDAT — TASHIH |
+| 8 | Bacaan ayat utuh | وَقُلْ رَبِّ زِدْنِي عِلْمًا | 20:114 | POTONGAN AYAT — BUKAN UTUH |
+| 8 | Bacaan ayat utuh | وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا | 17:32 | KANDIDAT — TASHIH |
+| 8 | Bacaan mushaf (cek register) | إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ | 49:10 | KANDIDAT — TASHIH |
 
 **Total 138 baris terintegrasi.** Prioritas berikutnya: koreksi sumber, hapus contoh yang tidak lolos, dan cocokkan register halaman J1–J8.
 <!-- QURBATA_CONSOLIDATED_END -->
@@ -459,3 +459,11 @@ Semua contoh dikumpulkan independen dari Al-Qur'an, bukan salinan buku metode. *
 | 7 | وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا | Tajwid terpadu (cek register) | Tartil terpadu | TINJAU ULANG |
 
 **Perhatian:** pengecekan Juz 30 di atas hanya menggunakan nomor surah yang dicantumkan pada tabel, bukan pemeriksaan teks ayat. Ini audit struktural, **bukan tashih Al-Qur'an**.
+
+## Gate seleksi praktis — hasil penandaan langsung dalam tabel induk
+
+Tabel induk di atas kini menampilkan status per baris: `KANDIDAT — TASHIH`, `DUPLIKAT — REVIEW`, atau `POTONGAN AYAT — BUKAN UTUH`. Teks duplikat tetap terlihat untuk evaluasi, tetapi tidak boleh dihitung sebagai materi unik tambahan. Label ayat utuh harus dibuktikan dengan perbandingan teks lengkap mushaf.
+
+- 30 baris pengulangan lintas kompetensi pada jilid yang sama ditandai langsung.
+- 5 baris yang diklaim ayat utuh namun tampak sebagai petikan telah ditandai untuk koreksi klasifikasi.
+- **Jangan anggap status KANDIDAT sebagai hasil tashih.** Semua teks perlu verifikasi dari sumber mushaf, terutama rasm, batas ayat, dan kesesuaian hukum.
