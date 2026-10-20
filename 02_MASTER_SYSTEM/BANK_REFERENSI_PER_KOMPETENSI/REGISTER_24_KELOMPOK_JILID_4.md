@@ -40,10 +40,10 @@
 | P034 | Remedial pola kritis | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P035 | Murojaah berjarak | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P036 | Hafalan 2 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P037 | Simulasi baca ayat pendek | خَتَمَ ٱللَّهُ عَلَىٰ قُلُوبِهِمْ وَعَلَىٰ سَمْعِهِمْ وَعَلَىٰٓ أَبْصَٰرِهِمْ غِشَٰوَةٌ وَلَهُمْ عَذَابٌ عَظِيمٌ [QS 2:7; TASHIH-TEKNIS] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P037 | Simulasi baca ayat pendek | خَتَمَ ٱللَّهُ عَلَىٰ قُلُوبِهِمْ وَعَلَىٰ سَمْعِهِمْ وَعَلَىٰٓ أَبْصَٰرِهِمْ غِشَٰوَةٌ وَلَهُمْ عَذَابٌ عَظِيمٌ [QS 2:7; TASHIH-TEKNIS] | ٱللَّهُ يَسْتَهْزِئُ بِهِمْ وَيَمُدُّهُمْ فِي طُغْيَٰنِهِمْ يَعْمَهُونَ [QS 2:15; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P038 | Akhlak/Hadis 4 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P039 | Simulasi akhir | يُخَٰدِعُونَ ٱللَّهَ وَٱلَّذِينَ ءَامَنُوا۟ وَمَا يَخْدَعُونَ إِلَّآ أَنفُسَهُمْ وَمَا يَشْعُرُونَ [QS 2:9; TASHIH-TEKNIS] | فِى قُلُوبِهِم مَّرَضٌ فَزَادَهُمُ ٱللَّهُ مَرَضًا وَلَهُمْ عَذَابٌ أَلِيمٌ بِمَا كَانُوا يَكْذِبُونَ [QS 2:10; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P040 | Ujian Akhir Jilid 4 | إِنَّ ٱلَّذِينَ كَفَرُوا۟ سَوَآءٌ عَلَيْهِمْ ءَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ [QS 2:6; TASHIH-TEKNIS] | وَإِذَا قِيلَ لَهُمْ لَا تُفْسِدُوا فِى ٱلْأَرْضِ قَالُوا إِنَّمَا نَحْنُ مُصْلِحُونَ [QS 2:11; AUDIT MANDIRI] | أَلَآ إِنَّهُمْ هُمُ ٱلْمُفْسِدُونَ وَلَـٰكِن لَّا يَشْعُرُونَ [QS 2:12; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P039 | Simulasi akhir | يُخَٰدِعُونَ ٱللَّهَ وَٱلَّذِينَ ءَامَنُوا۟ وَمَا يَخْدَعُونَ إِلَّآ أَنفُسَهُمْ وَمَا يَشْعُرُونَ [QS 2:9; TASHIH-TEKNIS] | فِى قُلُوبِهِم مَّرَضٌ فَزَادَهُمُ ٱللَّهُ مَرَضًا وَلَهُمْ عَذَابٌ أَلِيمٌ بِمَا كَانُوا يَكْذِبُونَ [QS 2:10; AUDIT MANDIRI] | وَإِذَا قِيلَ لَهُمْ ءَامِنُوا كَمَآ ءَامَنَ ٱلنَّاسُ قَالُوا أَنُؤْمِنُ كَمَآ ءَامَنَ ٱلسُّفَهَآءُ أَلَآ إِنَّهُمْ هُمُ ٱلسُّفَهَآءُ وَلَٰكِن لَّا يَعْلَمُونَ [QS 2:13; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P040 | Ujian Akhir Jilid 4 | إِنَّ ٱلَّذِينَ كَفَرُوا۟ سَوَآءٌ عَلَيْهِمْ ءَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ [QS 2:6; TASHIH-TEKNIS] | وَإِذَا قِيلَ لَهُمْ لَا تُفْسِدُوا فِى ٱلْأَرْضِ قَالُوا إِنَّمَا نَحْنُ مُصْلِحُونَ [QS 2:11; AUDIT MANDIRI] | أَلَآ إِنَّهُمْ هُمُ ٱلْمُفْسِدُونَ وَلَـٰكِن لَّا يَشْعُرُونَ [QS 2:12; AUDIT MANDIRI] | وَإِذَا لَقُوا ٱلَّذِينَ ءَامَنُوا قَالُوا ءَامَنَّا وَإِذَا خَلَوْا إِلَىٰ شَيَٰطِينِهِمْ قَالُوا إِنَّا مَعَكُمْ إِنَّمَا نَحْنُ مُسْتَهْزِءُونَ [QS 2:14; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 
 ## Kandidat bank jilid 4 — belum dialokasikan ke halaman
 
@@ -306,3 +306,14 @@ Kedua teks disimpan sebagai transkripsi latihan berharakat untuk pemeriksaan isi
 ## PENGISIAN P040/K03 — AYAT UTUH 2:12
 
 Teks: **أَلَآ إِنَّهُمْ هُمُ ٱلْمُفْسِدُونَ وَلَـٰكِن لَّا يَشْعُرُونَ**. Sumber mushaf https://quran.com/ar/al-baqarah/12/translation/1014. Ini satu ayat lengkap (QS 2:12), bukan petikan. Audit tajwid: mim sukun pada إِنَّهُمْ diikuti هُمُ dan pada ٱلْمُفْسِدُونَ sebelum وَ = izhar syafawi; lam qamariyah pada ٱلْمُفْسِدُونَ; lam pada لَّا merupakan idgham dari nun sakinah di akhir وَلَـٰكِن ketika wasal; ada mad dan tasydid. Penempatan P040 sebagai kandidat evaluasi terpadu, **belum sah cetak**. Teks rasm/waqaf wajib dicocokkan kembali pada layout KFGQPC Uthman Taha. Jumlah isi kandidat: 7/960, sah cetak tetap 0.
+
+
+## BATCH LANJUTAN — QS 2:13–15
+
+Tiga ayat utuh ditambahkan pada P039/K03 (2:13), P040/K04 (2:14), P037/K02 (2:15). Sumber https://quran.com/2/13 , https://quran.com/2/14 , https://quran.com/2/15. **Teks register adalah transkripsi berharakat**, belum salinan identik semua tanda Utsmani/waqaf pada sumber. Status: AUDIT MANDIRI, bukan SAH CETAK.
+
+- **2:13:** alif-lam syamsiyah (ٱلنَّاسُ, ٱلسُّفَهَآءُ), mim sukun sebelum hamzah pada إِنَّهُمْ هُمُ (izhar syafawi), mad; cocok sebagai kandidat simulasi akhir P039.
+- **2:14:** mim sukun bertemu qaf pada شَيَٰطِينِهِمْ قَالُوا dan mim sukun bertemu hamzah pada مَعَكُمْ إِنَّمَا (izhar syafawi); alif-lam syamsiyah ٱلَّذِينَ; cocok sebagai kandidat evaluasi akhir P040.
+- **2:15:** mim sukun bertemu waw pada بِهِمْ وَيَمُدُّهُمْ (izhar syafawi); mad pada فِي dan طُغْيَٰنِهِمْ; cocok sebagai kandidat simulasi bacaan P037.
+
+**Kendali kualitas:** pastikan tanda waqaf dan rasm sesuai mushaf saat layout; cek ulang seluruh hukum tajwid, termasuk sambungan antar-kata. Jangan menaikkan kolom Sah secara otomatis.
