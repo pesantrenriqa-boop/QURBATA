@@ -5,13 +5,13 @@
 | Halaman | Kompetensi | K01 | K02 | K03 | K04 | K05 | K06 | K07 | K08 | K09 | K10 | K11 | K12 | K13 | K14 | K15 | K16 | K17 | K18 | K19 | K20 | K21 | K22 | K23 | K24 | Sah |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | P001 | Orientasi nun sukun dan tanwin | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P002 | Izhar halqi: ء ه | مَنْ آمَنَ [PENGGALAN QS 2:62; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P003 | Izhar halqi: ع ح | أَنْعَمْتَ عَلَيْهِمْ [PENGGALAN QS 1:7; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P004 | Izhar halqi: غ خ | مِنْ خَيْرٍ [PENGGALAN QS 2:105; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P002 | Izhar halqi: ء ه | مَنْ آمَنَ [PENGGALAN QS 2:62; AUDIT MANDIRI] | مِنْ أَهْلِ [PENGGALAN QS 3:75; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P003 | Izhar halqi: ع ح | أَنْعَمْتَ عَلَيْهِمْ [PENGGALAN QS 1:7; AUDIT MANDIRI] | مِنْ عِلْمٍ [PENGGALAN QS 2:145; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P004 | Izhar halqi: غ خ | مِنْ خَيْرٍ [PENGGALAN QS 2:105; AUDIT MANDIRI] | مِنْ غِلٍّ [PENGGALAN QS 7:43; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P005 | Integrasi izhar halqi | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P006 | Idgham bighunnah: ي ن | مَن يَعْمَلْ [PENGGALAN QS 4:123; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P007 | Idgham bighunnah: م و | مِن مَّالِ ٱللَّهِ [PENGGALAN QS 24:33; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P008 | Idgham bila ghunnah: ل ر | مِن رَّبِّهِمْ [PENGGALAN QS 2:5; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P006 | Idgham bighunnah: ي ن | مَن يَعْمَلْ [PENGGALAN QS 4:123; AUDIT MANDIRI] | مَنْ يَعْمَلْ سُوءًا [PENGGALAN QS 4:123; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P007 | Idgham bighunnah: م و | مِن مَّالِ ٱللَّهِ [PENGGALAN QS 24:33; AUDIT MANDIRI] | مِنْ وَالٍ [PENGGALAN QS 13:11; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P008 | Idgham bila ghunnah: ل ر | مِن رَّبِّهِمْ [PENGGALAN QS 2:5; AUDIT MANDIRI] | مِنْ رَبِّهِمْ [PENGGALAN QS 8:4; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P009 | Kontras izhar dan idgham | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P010 | Evaluasi nun sukun I | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P011 | Iqlab | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
@@ -355,3 +355,17 @@ Setiap contoh adalah **penggalan pendek berurutan dari satu ayat**, bukan ayat u
 | P015/K01 | مِن قَبْلُ | QS 30:4 | Ikhfa: نْ bertemu ق | AUDIT MANDIRI — belum sah cetak |
 
 **Catatan gate:** Semua hukum lain yang muncul dalam penggalan (termasuk mad, tasydid, dan hukum sambung) harus tetap diperiksa terhadap kompetensi jilid sebelumnya. Penggalan pada baris yang tidak memenuhi gate harus diganti, bukan disahkan otomatis. Jumlah sah masih 0/24.
+
+
+## BATCH TAMBAHAN K02 — AUDIT KONTEKS
+
+| Slot | Potongan | Rujukan | Hukum target | Status |
+|---|---|---|---|---|
+| P002/K02 | مِنْ أَهْلِ | QS 3:75 | Izhar ء | Perlu tashih teks dan seluruh hukum |
+| P003/K02 | مِنْ عِلْمٍ | QS 2:145 | Izhar ع | Perlu tashih teks dan seluruh hukum |
+| P004/K02 | مِنْ غِلٍّ | QS 7:43 | Izhar غ | Perlu tashih teks dan seluruh hukum |
+| P006/K02 | مَنْ يَعْمَلْ سُوءًا | QS 4:123 | Idgham ي | Perlu tashih teks dan seluruh hukum |
+| P007/K02 | مِنْ وَالٍ | QS 13:11 | Idgham و | Perlu tashih teks dan seluruh hukum |
+| P008/K02 | مِنْ رَبِّهِمْ | QS 8:4 | Idgham ر | Perlu tashih teks dan seluruh hukum |
+
+**Contoh yang sengaja ditolak:** مِنْ غَيْرِ سُوءٍ (QS 27:12) bukan ikhfa pada P015, karena نْ bertemu غ adalah **izhar halqi**. Audit ini mencegah pencocokan materi hanya berdasarkan kemunculan nun sukun. Penggalan lain juga wajib diuji terhadap tajwid tambahan dan ketepatan sumber; tidak ada yang otomatis sah cetak.
