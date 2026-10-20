@@ -70,54 +70,60 @@
 K01–K24 pada P001–P040 ditranskripsi dari `02_MASTER_SYSTEM/MASTER_4_INVENTARIS_JILID_3.md`, kolom `Konten Tartil`. Tidak ada contoh yang dikarang untuk memenuhi kuota. Kolom dialog Bahasa Arab, akhlak/hadis, tahfidz, petunjuk pedagogis, serta status gate ayat tetap berada di master empat inventaris. Semua 960 contoh berstatus **KANDIDAT DRAF**, belum ditashih dan belum disahkan untuk cetak. Kotak ayat yang ditahan dalam master tetap DITAHAN; jangan menyamakan contoh latihan dengan kutipan ayat. Audit urutan sukun, mad, tasydid, harakat, dan teks mushaf diperlukan per halaman.
 
 
-## REGISTER AYAT UTUH — PENGGANTI LAMPIRAN FRASA BUATAN
+## REGISTER AYAT UTUH — REVISI AUDIT
 
-**KEPUTUSAN EDITORIAL:** Lampiran frasa dua/tiga kata buatan telah dicabut dari materi santri. Satu kotak ayat wajib berisi **satu ayat utuh** yang persis sesuai mushaf, beserta rujukan surah:ayat. Tidak boleh merangkai kata terpisah, memotong ayat lalu menamainya ayat utuh, atau mengambil potongan lintas ayat. K01–K24 di tabel induk masih merupakan bank latihan kata/fragmen **DRAF**, bukan 24 ayat utuh dan tidak boleh diberi label ayat. Penggantian seluruh bank K01–K24 memerlukan inventaris ayat tersahih per halaman; jangan mengisi kuota dengan ayat yang melanggar urutan tajwid.
+**Aturan:** Satu kotak hanya boleh berisi satu ayat lengkap sesuai mushaf dan rujukan surah:ayat. K01–K24 tetap bank latihan DRAF, bukan ayat utuh. Tidak boleh menggabungkan kata terpisah menjadi ayat. Tidak boleh mengulang satu ayat untuk mengisi kuota. Kandidat di bawah belum disahkan cetak.
 
-| Halaman | Satu ayat utuh | Rujukan | Keputusan |
+| Halaman | Ayat utuh | Sumber | Status |
 |---|---|---|---|
-| P001 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P002 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P003 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P004 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P005 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P006 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P007 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P008 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P009 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P010 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P011 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P012 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P013 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P014 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P015 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P016 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P017 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P018 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P019 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P020 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P021 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P022 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P023 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P024 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P025 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P026 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P027 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
-| P028 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
-| P029 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
-| P030 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
-| P031 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
-| P032 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
-| P033 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
-| P034 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
-| P035 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
-| P036 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
-| P037 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
-| P038 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
-| P039 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
-| P040 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
+| P001 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P002 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P003 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P004 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P005 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P006 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P007 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P008 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P009 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P010 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P011 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P012 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P013 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P014 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P015 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P016 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P017 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P018 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P019 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P020 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P021 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P022 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P023 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P024 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P025 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P026 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P027 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P028 | وَٱلْعَصْرِ | QS 103:1 | KANDIDAT — perlu tashih dan audit gate |
+| P029 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P030 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P031 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P032 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P033 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P034 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P035 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P036 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P037 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P038 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P039 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
+| P040 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
 
-**Catatan:** Pengulangan QS 103:1 di P028–P040 hanya menunjukkan satu kandidat yang sama untuk pemeriksaan kelayakan, **bukan 13 ayat berbeda atau pemenuhan kuota**. P001–P027 tidak diisi dengan tebakan. Pemilihan ayat baru harus diperiksa per huruf dan per hukum bacaan terhadap urutan kompetensi, lalu dicocokkan dengan mushaf Utsmani sebelum status SAH.
+### Kandidat yang ditolak pada tahap ini
+
+- QS 94:1: أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ — terdapat دْ sebelum kompetensinya.
+- QS 105:2: أَلَمْ يَجْعَلْ كَيْدَهُمْ فِي تَضْلِيلٍ — terdapat جْ, دْ dan mad yang belum sesuai urutan.
+- QS 103:1: وَٱلْعَصْرِ — hanya satu kandidat pada P028, bukan pengulangan untuk P029–P040.
+
+**Sumber pemeriksaan:** https://quran.com/103/1 dan https://quran.com/94/1. Semua teks untuk cetak wajib diperiksa dengan mushaf Utsmani resmi dan guru ahli.
 
 ## AUDIT GATE 960 KELOMPOK UTAMA — PEMERIKSAAN PARSIAL
 
