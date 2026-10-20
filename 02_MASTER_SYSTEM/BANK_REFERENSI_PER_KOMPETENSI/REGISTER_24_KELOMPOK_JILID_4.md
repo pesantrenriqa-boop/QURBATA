@@ -36,14 +36,14 @@
 | P030 | Evaluasi Mim dan Alif-Lam I | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P031 | Alif-lam syamsiyah II | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P032 | Kontras qamariyah–syamsiyah | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P033 | Integrasi nun–mim–alif-lam | QS 2:8 — KANDIDAT/HOLD (AY-003) | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P033 | Integrasi nun–mim–alif-lam | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P034 | Remedial pola kritis | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P035 | Murojaah berjarak | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P036 | Hafalan 2 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P037 | Simulasi baca ayat pendek | QS 2:7 — KANDIDAT/HOLD (AY-002) | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P037 | Simulasi baca ayat pendek | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P038 | Akhlak/Hadis 4 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P039 | Simulasi akhir | QS 2:9 — KANDIDAT/HOLD (AY-004) | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P040 | Ujian Akhir Jilid 4 | QS 2:6 — KANDIDAT/HOLD (AY-001) | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P039 | Simulasi akhir | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P040 | Ujian Akhir Jilid 4 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 
 ## Kandidat bank jilid 4 — belum dialokasikan ke halaman
 
@@ -264,3 +264,17 @@ Empat slot K01 kini berisi **identitas ayat lengkap** yang dapat ditelusuri ke b
 | P040/K01 | QS Al-Baqarah 2:6 | [Mushaf](https://quran.com/2/6) · AY-001 | nun sukun, tasydid, mad | HOLD |
 
 **Kebijakan:** satu ayat lengkap di satu slot, tidak mengulang ayat untuk mengejar kuota. Ayat utuh tersimpan pada BANK_AYAT_UTUH_JILID_4_BATCH_01.md dan BATCH_02.md. Penempatan ini **sementara untuk proses review**, bukan bukti bahwa ayat memenuhi seluruh prasyarat halaman tersebut. Jika gagal gate, pindahkan ke bank HOLD tanpa menghapus jejak audit.
+
+
+## KEPUTUSAN GATE PENGISIAN — 20 OKTOBER 2026
+
+**Empat kandidat sebelumnya dikeluarkan dari sel latihan aktif** (P033/K01, P037/K01, P039/K01, P040/K01) karena belum lolos prasyarat dan tashih. Semua tetap terlacak di tabel pengisian perdana dan bank AY-001–AY-004. Sel latihan hanya untuk contoh yang sudah disahkan; kandidat HOLD tidak dihitung sebagai isi.
+
+| Ayat | Asal slot | Status sekarang | Alasan |
+|---|---|---|---|
+| QS 2:8 (AY-003) | P033/K01 | HOLD di bank | Idgham, tasydid, mad; kelayakan seluruh hukum pada halaman belum disahkan |
+| QS 2:7 (AY-002) | P037/K01 | HOLD di bank | Mad dan tanwin; tashih menyeluruh belum selesai |
+| QS 2:9 (AY-004) | P039/K01 | HOLD di bank | Ikhfa, tasydid, mad; perlu pemeriksaan seluruh hukum |
+| QS 2:6 (AY-001) | P040/K01 | HOLD di bank | Tasydid, mad, nun sukun; belum ditashih |
+
+**Pintu masuk K01–K24:** (1) teks satu ayat lengkap, (2) sumber dan rasm diperiksa, (3) semua hukum tajwid di dalam ayat dipetakan, (4) semua sudah diajarkan sebelum halaman tujuan, (5) disahkan guru ahli. Belum ada sel yang memenuhi seluruh lima syarat. Status Sah tetap 0/24. Jangan mengganti HOLD dengan kata atau petikan yang diklaim sebagai ayat.
