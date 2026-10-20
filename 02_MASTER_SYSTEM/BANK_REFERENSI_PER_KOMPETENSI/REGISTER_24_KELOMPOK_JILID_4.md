@@ -174,3 +174,33 @@
 | P040 | Ujian Akhir Jilid 4 | Ujian Akhir Jilid 4 — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
 
 **Temuan awal:** P001 memuat 24 petikan bernomor dari banyak ayat dan surah; itu bukan 24 ayat utuh. P002–P040 juga berisi kandidat potongan ayat yang belum lolos tashih. Tidak boleh memasukkan petikan tersebut ke register ayat utuh tanpa melengkapi dan mengaudit keseluruhan ayat. J4 menargetkan bacaan dari luar Juz Amma, namun hukum nun sukun/tanwin tetap harus diperkenalkan bertahap; ayat yang memuat hukum lebih lanjut ditahan.
+
+
+## TASHIH BATAS AYAT — BATCH 1 (P001–P010)
+
+**Aturan keputusan:** 1 kotak = 1 ayat utuh, bukan potongan 2–3 kata atau gabungan kata. Hukum nun sukun/tanwin harus sesuai tahapan halaman; jika satu ayat mengandung hukum lain yang belum diajarkan, seluruh ayat ditahan. Bank sumber master tidak otomatis disahkan sebagai bacaan santri.
+
+| Halaman | Materi | Hasil pemeriksaan sumber | Keputusan |
+|---|---|---|---|
+| P001 | Orientasi nun sukun dan tanwin | أَنْعَمْتَ عَلَيْهِمْ (الفاتحة: 7) | DITAHAN — kandidat master berupa petikan, belum dibuktikan sebagai ayat utuh yang lolos gate |
+| P002 | Izhar halqi: ء ه | مَنْ آمَنَ بِاللَّهِ — البقرة 62 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradasi J1–J3) | DITAHAN — kandidat master berupa petikan, belum dibuktikan sebagai ayat utuh yang lolos gate |
+| P003 | Izhar halqi: ع ح | أَنْعَمْتَ عَلَيْهِمْ — الفاتحة 7 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradasi J1–J3) | DITAHAN — kandidat master berupa petikan, belum dibuktikan sebagai ayat utuh yang lolos gate |
+| P004 | Izhar halqi: غ خ | مِنْ خَيْرٍ — البقرة 105 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradasi J1–J3) | DITAHAN — kandidat master berupa petikan, belum dibuktikan sebagai ayat utuh yang lolos gate |
+| P005 | Integrasi izhar halqi | مَنْ آمَنَ بِاللَّهِ — البقرة 62 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradasi J1–J3) | DITAHAN — kandidat master berupa petikan, belum dibuktikan sebagai ayat utuh yang lolos gate |
+| P006 | Idgham bighunnah: ي ن | مَنْ يَعْمَلْ سُوءًا — النساء 123 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradasi J1–J3) | DITAHAN — kandidat master berupa petikan, belum dibuktikan sebagai ayat utuh yang lolos gate |
+| P007 | Idgham bighunnah: م و | مِنْ وَالٍ — الرعد 11 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradasi J1–J3) | DITAHAN — kandidat master berupa petikan, belum dibuktikan sebagai ayat utuh yang lolos gate |
+| P008 | Idgham bila ghunnah: ل ر | مِنْ رَبِّهِمْ — البقرة 5 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradasi J1–J3) | DITAHAN — kandidat master berupa petikan, belum dibuktikan sebagai ayat utuh yang lolos gate |
+| P009 | Kontras izhar dan idgham | أَنْعَمْتَ عَلَيْهِمْ — الفاتحة 7 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradasi J1–J3) | DITAHAN — kandidat master berupa petikan, belum dibuktikan sebagai ayat utuh yang lolos gate |
+| P010 | Evaluasi nun sukun I | مَنْ يَعْمَلْ سُوءًا — النساء 123 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradasi J1–J3) | DITAHAN — kandidat master berupa petikan, belum dibuktikan sebagai ayat utuh yang lolos gate |
+
+### Contoh pembuktian batas ayat dari luar Juz Amma
+
+**QS Al-Baqarah 2:2 (ayat lengkap):**
+
+> ذَٰلِكَ ٱلْكِتَـٰبُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًۭى لِّلْمُتَّقِينَ
+
+Sumber: https://quran.com/ar/al-baqarah/2
+
+**Keputusan: DITAHAN untuk J4 P001–P010.** Ayat utuh tersebut memuat tasydid pada لِّلْمُتَّقِينَ, mad pada ٱلْكِتَـٰبُ / فِيهِ, dan tanwin هُدًۭى yang memerlukan pemeriksaan hukum sambung. Ini membuktikan bahwa mengganti potongan dengan ayat lengkap tidak otomatis membuatnya sesuai urutan tajwid. Teks sumber memakai penanda waqaf dan rasm Utsmani; wajib tashih akhir sebelum produksi.
+
+**Tindak lanjut audit:** P011–P040 menunggu seleksi ayat lengkap satu per satu; jangan mengisi 24 slot dengan fragmen atau ayat yang mengandung materi belum diajarkan. Seluruh tabel K01–K24 induk tetap kosong dan tidak dipalsukan sebagai 960 ayat sah.
