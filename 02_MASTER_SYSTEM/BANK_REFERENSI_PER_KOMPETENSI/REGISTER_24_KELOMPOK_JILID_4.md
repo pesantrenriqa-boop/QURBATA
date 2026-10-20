@@ -204,3 +204,49 @@ Sumber: https://quran.com/ar/al-baqarah/2
 **Keputusan: DITAHAN untuk J4 P001–P010.** Ayat utuh tersebut memuat tasydid pada لِّلْمُتَّقِينَ, mad pada ٱلْكِتَـٰبُ / فِيهِ, dan tanwin هُدًۭى yang memerlukan pemeriksaan hukum sambung. Ini membuktikan bahwa mengganti potongan dengan ayat lengkap tidak otomatis membuatnya sesuai urutan tajwid. Teks sumber memakai penanda waqaf dan rasm Utsmani; wajib tashih akhir sebelum produksi.
 
 **Tindak lanjut audit:** P011–P040 menunggu seleksi ayat lengkap satu per satu; jangan mengisi 24 slot dengan fragmen atau ayat yang mengandung materi belum diajarkan. Seluruh tabel K01–K24 induk tetap kosong dan tidak dipalsukan sebagai 960 ayat sah.
+
+
+## AUDIT BATCH 2 — P011–P040
+
+Status HOLD berarti kandidat master belum diverifikasi sebagai satu ayat utuh yang memenuhi seluruh prasyarat tajwid. Audit ini baru pemeriksaan sumber per halaman, bukan tashih tekstual setiap kandidat.
+
+| Halaman | Kompetensi | Petikan master untuk ditelusuri | Status |
+|---|---|---|---|
+| P011 | Iqlab | 1. أَنْبِئْهُمْ بِأَسْمَائِهِمْ (البقرة:33) ؛ 2. مِنْ بَعْدِ مَا جَاءَتْهُمُ الْ | HOLD |
+| P012 | Ikhfa I (ت ث ج) | مِنْ تَحْتِهَا الْأَنْهَارُ (البقرة:25) ؛ مِنْ ثَمَرَةٍ رِزْقًا (البقرة:25) ؛ إِ | HOLD |
+| P013 | Ikhfa II (د ذ ز) | مِنْ دُونِ اللَّهِ (البقرة:23) ؛ مَنْ ذَا الَّذِي يُقْرِضُ اللَّهَ (البقرة:245)  | HOLD |
+| P014 | Ikhfa III (س ش ص) | مِنْ سُوءٍ (النساء:79) ؛ مِنْ شَرِّ مَا خَلَقَ (الفلق:2) ؛ رِيحًا صَرْصَرًا (الح | HOLD |
+| P015 | Ikhfa IV (ض ط ظ ف ق ك) | مِنْ قَبْلِ أَنْ يَأْتِيَ (البقرة:254) ؛ مِنْ فَضْلِ اللَّهِ (الجمعة:10) ؛ مِنْ  | HOLD |
+| P016 | Integrasi ikhfa | مِنْ شَرِّ مَا خَلَقَ (الفلق:2) ؛ مَنْ يَعْمَلْ سُوءًا (النساء:123) ؛ مِنْ قَبْل | HOLD |
+| P017 | Kontras empat hukum nun sukun/tanwin | مَنْ آمَنَ بِاللَّهِ (البقرة:62؛ إظهار) ؛ مَنْ يَعْمَلْ سُوءًا (النساء:123؛ إدغا | HOLD |
+| P018 | Hafalan dan penerapan hukum nun | أَنْعَمْتَ عَلَيْهِمْ (الفاتحة:7؛ إظهار) ؛ مِنْ خَيْرٍ (البقرة:105؛ إظهار) ؛ مَن | HOLD |
+| P019 | Transfer nun sakinah/tanwin | Transfer nun sakinah/tanwin — mengikuti register J4 sumber | HOLD |
+| P020 | Evaluasi Hukum Nun | Evaluasi Hukum Nun — mengikuti register J4 sumber | HOLD |
+| P021 | Orientasi mim sakinah | Orientasi mim sakinah — mengikuti register J4 sumber | HOLD |
+| P022 | Ikhfa syafawi | Ikhfa syafawi — mengikuti register J4 sumber | HOLD |
+| P023 | Idgham mimi | Idgham mimi — mengikuti register J4 sumber | HOLD |
+| P024 | Izhar syafawi | Izhar syafawi — mengikuti register J4 sumber | HOLD |
+| P025 | Kontras hukum mim | Kontras hukum mim — mengikuti register J4 sumber | HOLD |
+| P026 | Alif-lam qamariyah I | Alif-lam qamariyah I — mengikuti register J4 sumber | HOLD |
+| P027 | Alif-lam qamariyah II | Alif-lam qamariyah II — mengikuti register J4 sumber | HOLD |
+| P028 | Bahasa Arab 4 | Bahasa Arab 4 — mengikuti register J4 sumber | HOLD |
+| P029 | Alif-lam syamsiyah I | Alif-lam syamsiyah I — mengikuti register J4 sumber | HOLD |
+| P030 | Evaluasi Mim dan Alif-Lam I | Evaluasi Mim dan Alif-Lam I — mengikuti register J4 sumber | HOLD |
+| P031 | Alif-lam syamsiyah II | Alif-lam syamsiyah II — mengikuti register J4 sumber | HOLD |
+| P032 | Kontras qamariyah–syamsiyah | Kontras qamariyah–syamsiyah — mengikuti register J4 sumber | HOLD |
+| P033 | Integrasi nun–mim–alif-lam | Integrasi nun–mim–alif-lam — mengikuti register J4 sumber | HOLD |
+| P034 | Remedial pola kritis | Remedial pola kritis — mengikuti register J4 sumber | HOLD |
+| P035 | Murojaah berjarak | Murojaah berjarak — mengikuti register J4 sumber | HOLD |
+| P036 | Hafalan 2 | Hafalan 2 — mengikuti register J4 sumber | HOLD |
+| P037 | Simulasi baca ayat pendek | Simulasi baca ayat pendek — mengikuti register J4 sumber | HOLD |
+| P038 | Akhlak/Hadis 4 | Akhlak/Hadis 4 — mengikuti register J4 sumber | HOLD |
+| P039 | Simulasi akhir | Simulasi akhir — mengikuti register J4 sumber | HOLD |
+| P040 | Ujian Akhir Jilid 4 | Ujian Akhir Jilid 4 — mengikuti register J4 sumber | HOLD |
+
+### Uji ayat lengkap luar Juz Amma
+
+QS Al-Baqarah 2:5 (https://quran.com/ar/al-baqarah/5):
+
+> أُو۟لَـٰٓئِكَ عَلَىٰ هُدًۭى مِّن رَّبِّهِمْ ۖ وَأُو۟لَـٰٓئِكَ هُمُ ٱلْمُفْلِحُونَ
+
+**HOLD untuk P001–P010:** mengandung tanwin bertemu mim, tasydid, dan mad; bukan contoh izhar awal yang terisolasi. Penggunaan pada halaman lebih lanjut wajib audit tajwid menyeluruh dan tashih. K01–K24 tetap kosong sampai tersedia ayat lengkap yang lolos.
