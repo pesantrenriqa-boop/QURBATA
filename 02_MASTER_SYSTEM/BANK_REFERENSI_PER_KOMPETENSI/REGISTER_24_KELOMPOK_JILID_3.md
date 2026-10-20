@@ -139,6 +139,16 @@ Teks dan batas ayat dibandingkan dengan sumber Quran.com. Kandidat di bawah meru
 
 **Catatan integritas:** frasa dari kata-kata berbeda bukan ayat. Ayat lengkap yang tidak lolos gate tetap dicatat sebagai DITAHAN, bukan dipecah-pecah untuk mengisi K01–K24. Pengesahan cetak harus menggunakan rasm Utsmani dan pemeriksaan guru ahli.
 
+## AUDIT AYAT UTUH LANJUTAN — PEMERIKSAAN PRASYARAT
+
+| Ayat lengkap | Rujukan | Status | Alasan |
+|---|---|---|---|
+| إِنَّ ٱلْإِنسَـٰنَ لَفِى خُسْرٍ | [QS 103:2](https://quran.com/103/2) | DITAHAN | Tasydid pada إِنَّ; mad pada إِنسَـٰنَ dan فِى; bukan kompetensi J3 yang sudah dinyatakan legal |
+| ٱللَّهُ ٱلصَّمَدُ | [QS 112:2](https://quran.com/112/2) | DITAHAN | Tasydid pada lafzul jalalah dan صَّ; bukan qamariyah biasa |
+| وَٱلْعَصْرِ | [QS 103:1](https://quran.com/103/1) | KANDIDAT P028 | Ayat lengkap pendek, tetapi tetap wajib pemeriksaan wasal, rasm dan pengesahan guru |
+
+**Aturan audit:** sumber ayat lengkap bukan otomatis materi legal. Jangan memecah ayat menjadi kumpulan kata, jangan menambahkan tajwid sebelum waktunya, dan jangan menghitung satu ayat yang sama sebagai banyak ayat berbeda. K01–K24 tidak berubah dan masih DRAF.
+
 ## AUDIT GATE 960 KELOMPOK UTAMA — PEMERIKSAAN PARSIAL
 
 **Status: temuan untuk tashih, bukan penghapusan konten.** Pemeriksaan mekanis ini menguji sukun eksplisit terhadap urutan pengenalan per halaman, tasydid, dan alif-lam dini. Hamzah berkursi أ/إ/ؤ/ئ dipetakan ke ء agar tidak salah ditandai sebagai huruf baru. Pemeriksaan belum membuktikan ketiadaan mad, masalah wasal, kekeliruan lafaz mushaf, atau kesalahan tata bahasa. Semua K01–K24 tetap utuh. **Temuan di bawah DITAHAN untuk pemakaian santri sampai disaring dan ditashih.**
