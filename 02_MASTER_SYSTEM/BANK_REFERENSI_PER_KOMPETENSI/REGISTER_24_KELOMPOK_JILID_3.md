@@ -103,7 +103,7 @@ K01–K24 pada P001–P040 ditranskripsi dari `02_MASTER_SYSTEM/MASTER_4_INVENTA
 | P025 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
 | P026 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
 | P027 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
-| P028 | وَٱلْعَصْرِ | QS 103:1 | KANDIDAT — perlu tashih dan audit gate |
+| P028 | وَٱلْعَصْرِ | [QS 103:1](https://quran.com/103/1) | KANDIDAT TERKONFIRMASI AYAT UTUH — cek pedagogis dan tashih final |
 | P029 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
 | P030 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
 | P031 | — | — | DITAHAN — belum ada ayat utuh yang terbukti lolos gate |
@@ -124,6 +124,20 @@ K01–K24 pada P001–P040 ditranskripsi dari `02_MASTER_SYSTEM/MASTER_4_INVENTA
 - QS 103:1: وَٱلْعَصْرِ — hanya satu kandidat pada P028, bukan pengulangan untuk P029–P040.
 
 **Sumber pemeriksaan:** https://quran.com/103/1 dan https://quran.com/94/1. Semua teks untuk cetak wajib diperiksa dengan mushaf Utsmani resmi dan guru ahli.
+
+
+### Audit sumber tambahan — 20 Oktober 2026
+
+Teks dan batas ayat dibandingkan dengan sumber Quran.com. Kandidat di bawah merupakan **ayat utuh asli**, tetapi **tidak lolos gate pedagogis Jilid 3** dan tidak boleh dipakai sebagai latihan sebelum kompetensinya diajarkan.
+
+| Ayat utuh | Sumber | Temuan yang menahan |
+|---|---|---|
+| فَصَلِّ لِرَبِّكَ وَٱنْحَرْ | [QS 108:2](https://quran.com/108/2) | Tasydid pada صِّ dan بِّ; نْ, حْ dan رْ perlu audit urutan; DITAHAN |
+| قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ | [QS 113:1](https://quran.com/113/1) | Tasydid pada بِّ serta mad pada أَعُوذُ; DITAHAN |
+| مِن شَرِّ مَا خَلَقَ | [QS 113:2](https://quran.com/113/2) | Tasydid pada رِّ dan mad pada مَا; DITAHAN |
+| وَٱلْعَصْرِ | [QS 103:1](https://quran.com/103/1) | Kandidat tunggal P028; alif-lam qamariyah, عْ dan صْ sudah dikenalkan; tetap perlu tashih akhir |
+
+**Catatan integritas:** frasa dari kata-kata berbeda bukan ayat. Ayat lengkap yang tidak lolos gate tetap dicatat sebagai DITAHAN, bukan dipecah-pecah untuk mengisi K01–K24. Pengesahan cetak harus menggunakan rasm Utsmani dan pemeriksaan guru ahli.
 
 ## AUDIT GATE 960 KELOMPOK UTAMA — PEMERIKSAAN PARSIAL
 
