@@ -90,3 +90,7 @@ Kompetensi P004 دَ ذَ رَ زَ; P005 سَ شَ; P006 صَ ضَ; P007 طَ �
 ## Koreksi otoritatif grid P001–P009
 
 24 sel per halaman sekarang mengikuti urutan **8 baris × 3 kelompok** persis dari berkas sumber GitHub revisi rasio v0.2, bukan hasil permutasi otomatis. Penanaman huruf besar adalah tahap terpisah dari 24 latihan. Sumber melaporkan rasio token P002–P009 sekitar 60% aktif / 40% review, P001 pengecualian 100% aktif karena belum ada materi lama. **Rasio token tidak identik dengan rasio jumlah kelompok**; QA G1–G7 dan keterbacaan tetap harus diuji. P010 belum diganti.
+
+## Klarifikasi resmi unit kelompok/kotak (20 Oktober 2026)
+
+**Satu kelompok = satu kotak latihan** yang dapat berisi **campuran grafem/harakat baru dan kompetensi lama yang telah legal**. Jangan memaksa setiap kotak berisi hanya materi baru atau hanya murojaah. Urutan penanaman tunggal → dua huruf → tiga huruf tetap dijaga, kemudian campuran kumulatif di dalam kotak diperbolehkan. Proporsi ±60:40 dihitung dari kemunculan token/grafem sasaran baru versus review pada keseluruhan grid, dengan pengecualian P001 dan halaman evaluasi. Hitung juga cakupan setiap grafem baru; bukan hanya jumlah kotak yang mengandung salah satu grafem baru. Setiap kotak fonetik tidak otomatis disebut kata Arab atau kutipan ayat. Contoh legal P003: `بَ جَ تَ` (fonetik campuran, bukan kata). **Grid P001–P009 dari master tetap berstatus kandidat; audit distribusi token per kotak dan urutan visual sebelum gate cetak.**
