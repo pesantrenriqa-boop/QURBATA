@@ -125,3 +125,28 @@ K01–K24 pada P001–P040 ditranskripsi dari `02_MASTER_SYSTEM/MASTER_4_INVENTA
 ### Audit bertahap sukun pada frasa tambahan
 
 Pemeriksaan setiap frasa dilakukan terhadap daftar huruf bersukun yang sudah diperkenalkan sampai halaman tersebut (bukan hanya sukun pada halaman saat ini). P001 مْ; P002 لْ; P003 فْ; P004 كْ; P005 سْ/شْ; P006 ثْ/ذْ/زْ; P007 رْ; P008 نْ; P009 هْ/حْ; P011 خْ; P012 عْ; P013 غْ; P014 ءْ; P015 صْ; P016 ضْ; P017 ظْ; P018 وْ/يْ non-mad. P026 baru alif-lam. Tanda **DITAHAN** tidak menghapus frasa; frasa tidak boleh dipakai sebelum diperbaiki dan diperiksa ulang. **Penting:** audit ini bersifat parsial; bentuk mad tanpa tanda khusus, hukum wasal, dan kebenaran nahwu masih memerlukan tashih manusia. Materi 960 K01–K24 belum berubah dan belum otomatis lulus gate.
+
+
+## AUDIT GATE 960 KELOMPOK UTAMA — PEMERIKSAAN PARSIAL
+
+**Status: temuan untuk tashih, bukan penghapusan konten.** Pemeriksaan mekanis ini menguji sukun eksplisit terhadap urutan pengenalan per halaman, tasydid, dan alif-lam dini. Hamzah berkursi أ/إ/ؤ/ئ dipetakan ke ء agar tidak salah ditandai sebagai huruf baru. Pemeriksaan belum membuktikan ketiadaan mad, masalah wasal, kekeliruan lafaz mushaf, atau kesalahan tata bahasa. Semua K01–K24 tetap utuh. **Temuan di bawah DITAHAN untuk pemakaian santri sampai disaring dan ditashih.**
+
+| Halaman | Kotak | Isi asli (tidak diubah) | Temuan |
+|---|---|---|---|
+| P020 | K06 | صَبْرٌ | sukun بْ |
+| P021 | K03 | فَعَلَ رَبُّكَ بِأَصْحَابِ [QS 105:1] | tasydid (perlu cek gate) |
+| P021 | K06 | لَمْ يَلِدْ وَلَمْ [QS 112:3] | sukun دْ |
+| P021 | K07 | وَلَمْ يُولَدْ وَلَمْ [QS 112:3–4] | sukun دْ |
+| P021 | K09 | قُلْ هُوَ اللَّهُ [QS 112:1] | tasydid (perlu cek gate) |
+| P021 | K10 | قُلْ أَعُوذُ بِرَبِّ [QS 113:1] | tasydid (perlu cek gate) |
+| P021 | K11 | قُلْ أَعُوذُ بِرَبِّ النَّاسِ [QS 114:1] | tasydid (perlu cek gate) |
+| P021 | K12 | مِنْ شَرِّ مَا [QS 113:2] | tasydid (perlu cek gate) |
+| P021 | K13 | مِنْ شَرِّ غَاسِقٍ [QS 113:3] | tasydid (perlu cek gate) |
+| P021 | K14 | مِنْ شَرِّ حَاسِدٍ [QS 113:5] | tasydid (perlu cek gate) |
+| P021 | K15 | إِنْ هُوَ إِلَّا [QS 53:4] | tasydid (perlu cek gate) |
+| P021 | K17 | أَلَمْ تَرَ أَنَّ [QS 22:18] | tasydid (perlu cek gate) |
+| P021 | K19 | أَلَمْ تَرَ إِلَى الَّذِينَ [QS 2:243] | tasydid (perlu cek gate) |
+| P021 | K20 | أَلَمْ يَأْنِ لِلَّذِينَ [QS 57:16] | tasydid (perlu cek gate) |
+| P029 | K14 | اَلْيُتْمُ | sukun تْ |
+
+**Perhatian khusus P021:** petikan ayat yang mengandung tasydid atau sukun di luar prasyarat tidak boleh dipakai sebagai latihan mandiri meskipun ayatnya sah. Penggunaan kutipan Qurani harus diperiksa ulang pada mushaf serta gate kompetensi. Temuan pada kolom ini hanya indikator otomatis, bukan putusan tajwid final.
