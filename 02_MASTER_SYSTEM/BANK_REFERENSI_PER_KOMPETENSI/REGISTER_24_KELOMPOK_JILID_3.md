@@ -70,62 +70,54 @@
 K01–K24 pada P001–P040 ditranskripsi dari `02_MASTER_SYSTEM/MASTER_4_INVENTARIS_JILID_3.md`, kolom `Konten Tartil`. Tidak ada contoh yang dikarang untuk memenuhi kuota. Kolom dialog Bahasa Arab, akhlak/hadis, tahfidz, petunjuk pedagogis, serta status gate ayat tetap berada di master empat inventaris. Semua 960 contoh berstatus **KANDIDAT DRAF**, belum ditashih dan belum disahkan untuk cetak. Kotak ayat yang ditahan dalam master tetap DITAHAN; jangan menyamakan contoh latihan dengan kutipan ayat. Audit urutan sukun, mad, tasydid, harakat, dan teks mushaf diperlukan per halaman.
 
 
-## LAMPIRAN TAMBAHAN — FRASA 2–3 KATA (TANPA MENGUBAH K01–K24)
+## REGISTER AYAT UTUH — PENGGANTI LAMPIRAN FRASA BUATAN
 
-**PENGUNCIAN GATE TAJWID:** Tidak boleh memasukkan bacaan yang memerlukan kompetensi tajwid sebelum halaman pengenalannya. Frasa tambahan tidak otomatis menjadi materi santri. Status DITAHAN berarti tidak boleh dipakai sampai diganti dengan contoh yang legal dan ditashih. Pemeriksaan otomatis di bawah hanya mendeteksi sebagian pelanggaran (sukun eksplisit, tasydid, alif-lam); tidak menjamin lolos mad atau kaidah bacaan lain. Semua 960 entri lama dipertahankan, tetapi juga masih memerlukan audit tersendiri.
+**KEPUTUSAN EDITORIAL:** Lampiran frasa dua/tiga kata buatan telah dicabut dari materi santri. Satu kotak ayat wajib berisi **satu ayat utuh** yang persis sesuai mushaf, beserta rujukan surah:ayat. Tidak boleh merangkai kata terpisah, memotong ayat lalu menamainya ayat utuh, atau mengambil potongan lintas ayat. K01–K24 di tabel induk masih merupakan bank latihan kata/fragmen **DRAF**, bukan 24 ayat utuh dan tidak boleh diberi label ayat. Penggantian seluruh bank K01–K24 memerlukan inventaris ayat tersahih per halaman; jangan mengisi kuota dengan ayat yang melanggar urutan tajwid.
 
-
-**Ketentuan:** Seluruh 960 entri Tartil K01–K24 di atas tetap utuh. Frasa berikut adalah **bank kandidat tambahan** di luar 24 kelompok, bukan pengganti. Disaring menurut kompetensi per halaman: P001–P017 sukun yang sudah diajarkan bertahap, P018–P020 waw/ya sukun non-mad, P021–P025 lam sukun, P026–P040 alif-lam qamariyah. Jangan mengklaim frasa sebagai kutipan Qurani tanpa verifikasi mushaf. **HOLD** berarti belum layak digunakan sebagai bacaan mandiri pada halaman tersebut. Dialog guru tidak otomatis legal sebagai bacaan santri.
-
-| Halaman | Frasa dua kata (kandidat) | Frasa tiga kata (kandidat) | Gate dan status |
+| Halaman | Satu ayat utuh | Rujukan | Keputusan |
 |---|---|---|---|
-| P001 | أَمْ تَمْ | أَمْ تَمْرٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P002 | عِلْمٌ جَمْعٌ | عِلْمٌ جَمْعٌ تَمْرٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P003 | نَفْسٌ تَفْهَمُ | نَفْسٌ تَفْهَمُ عِلْمًا | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P004 | يَكْتُبُ عِلْمًا | يَكْتُبُ عِلْمًا نَفْعًا | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P005 | يَسْمَعُ نَفْسًا | يَسْمَعُ نَفْسًا وَيَفْهَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P006 | يَثْبُتُ عَزْمٌ | يَثْبُتُ عَزْمٌ وَيَنْفَعُ | DITAHAN — sukun نْ belum diajarkan |
-| P007 | بَرْدٌ وَفَرْحٌ | بَرْدٌ وَفَرْحٌ وَنَفْعٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P008 | أَنْتَ تَفْهَمُ | أَنْتَ تَفْهَمُ عِلْمًا | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P009 | نَحْنُ نَفْهَمُ | نَحْنُ نَفْهَمُ عِلْمًا | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P010 | نَحْنُ نَكْتُبُ | نَحْنُ نَكْتُبُ وَنَفْهَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P011 | يَخْرُجُ مِنْهُ | يَخْرُجُ مِنْهُ نَفْعٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P012 | يَعْلَمُ وَيَفْهَمُ | يَعْلَمُ وَيَفْهَمُ نَفْعًا | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P013 | يَغْفِرُ وَيَرْحَمُ | يَغْفِرُ وَيَرْحَمُ عَبْدًا | DITAHAN — sukun بْ belum diajarkan |
-| P014 | يَسْأَلُ وَيَعْلَمُ | يَسْأَلُ وَيَعْلَمُ وَيَفْهَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P015 | يَصْبِرُ وَيَفْهَمُ | يَصْبِرُ وَيَفْهَمُ وَيَعْلَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P016 | يَضْرِبُ وَيَصْبِرُ | يَضْرِبُ وَيَصْبِرُ وَيَفْهَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P017 | يَظْهَرُ وَيَعْلَمُ | يَظْهَرُ وَيَعْلَمُ وَيَفْهَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P018 | خَوْفٌ وَفَرْحٌ | خَوْفٌ وَفَرْحٌ وَعِلْمٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P019 | يَغْفِرُ وَيَرْحَمُ | يَغْفِرُ وَيَرْحَمُ وَيَعْلَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P020 | يَكْتُبُ وَيَفْهَمُ | يَكْتُبُ وَيَفْهَمُ وَيَعْلَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P021 | عِلْمٌ وَحِلْمٌ | عِلْمٌ وَحِلْمٌ وَفَهْمٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P022 | قَلْبٌ وَعِلْمٌ | قَلْبٌ وَعِلْمٌ وَحِلْمٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P023 | مُلْكٌ وَعِلْمٌ | مُلْكٌ وَعِلْمٌ وَحِلْمٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P024 | يَلْعَبُ وَيَفْهَمُ | يَلْعَبُ وَيَفْهَمُ وَيَعْلَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P025 | عِلْمٌ وَفَهْمٌ | عِلْمٌ وَفَهْمٌ وَحِلْمٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P026 | الْبَيْتُ وَالْقَلَمُ | الْبَيْتُ وَالْقَلَمُ وَالْكِتَابُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P027 | الْقَمَرُ وَالْبَيْتُ | الْقَمَرُ وَالْبَيْتُ وَالْكِتَابُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P028 | الْجَبَلُ وَالْعِلْمُ | الْجَبَلُ وَالْعِلْمُ وَالْخَبَرُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P029 | الْوَلَدُ وَالْيَوْمُ | الْوَلَدُ وَالْيَوْمُ وَالْأَمْرُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P030 | الْبَيْتُ وَالْقَمَرُ | الْبَيْتُ وَالْقَمَرُ وَالْجَبَلُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P031 | الْمَكْتَبُ وَالْمَسْجِدُ | الْمَكْتَبُ وَالْمَسْجِدُ وَالْقَلَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P032 | بَيْتٌ وَالْبَيْتُ | بَيْتٌ وَالْبَيْتُ وَالْقَلَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P033 | هَذَا الْبَيْتُ | هَذَا الْبَيْتُ الْكَبِيرُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P034 | الْعِلْمُ وَالْقَلَمُ | الْعِلْمُ وَالْقَلَمُ وَالْكِتَابُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P035 | يَسْتَغْفِرُ وَيَفْهَمُ | يَسْتَغْفِرُ وَيَفْهَمُ وَيَعْلَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P036 | هَذَا الْقَلَمُ | هَذَا الْقَلَمُ الْجَدِيدُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P037 | الْحَمْدُ لِلَّهِ | الْحَمْدُ لِلَّهِ رَبِّ | DITAHAN — tasydid perlu gate |
-| P038 | الْبَيْتُ وَالْقَمَرُ | الْبَيْتُ وَالْقَمَرُ وَالْعِلْمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P039 | عِنْدَ الْمَسْجِدِ | عِنْدَ الْمَسْجِدِ الْكَبِيرِ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
-| P040 | هَذَا الْكِتَابُ | هَذَا الْكِتَابُ الْجَدِيدُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P001 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P002 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P003 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P004 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P005 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P006 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P007 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P008 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P009 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P010 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P011 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P012 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P013 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P014 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P015 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P016 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P017 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P018 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P019 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P020 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P021 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P022 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P023 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P024 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P025 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P026 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P027 | — | — | DITAHAN — belum ditemukan ayat utuh yang terbukti lolos seluruh gate halaman; tidak boleh diganti frasa buatan |
+| P028 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
+| P029 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
+| P030 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
+| P031 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
+| P032 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
+| P033 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
+| P034 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
+| P035 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
+| P036 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
+| P037 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
+| P038 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
+| P039 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
+| P040 | وَالْعَصْرِ | QS Al-‘Ashr 103:1 | KANDIDAT AYAT UTUH — belum disahkan untuk cetak; audit gate qamariyah ع dan cara wasal |
 
-**Catatan QA:** Rangkaian yang hanya menggabungkan kata dengan وَ belum tentu frasa alami untuk latihan komunikasi. Semua frasa ini perlu ditashih; jika memuat huruf sukun/mad/tasydid belum legal pada halaman terkait, tahan frasa tersebut. P037 memuat potongan ayat dan perlu pencocokan lafaz serta batas potongan secara langsung dengan mushaf. Jangan mencetak lampiran sebelum gate disahkan.
-
-### Audit bertahap sukun pada frasa tambahan
-
-Pemeriksaan setiap frasa dilakukan terhadap daftar huruf bersukun yang sudah diperkenalkan sampai halaman tersebut (bukan hanya sukun pada halaman saat ini). P001 مْ; P002 لْ; P003 فْ; P004 كْ; P005 سْ/شْ; P006 ثْ/ذْ/زْ; P007 رْ; P008 نْ; P009 هْ/حْ; P011 خْ; P012 عْ; P013 غْ; P014 ءْ; P015 صْ; P016 ضْ; P017 ظْ; P018 وْ/يْ non-mad. P026 baru alif-lam. Tanda **DITAHAN** tidak menghapus frasa; frasa tidak boleh dipakai sebelum diperbaiki dan diperiksa ulang. **Penting:** audit ini bersifat parsial; bentuk mad tanpa tanda khusus, hukum wasal, dan kebenaran nahwu masih memerlukan tashih manusia. Materi 960 K01–K24 belum berubah dan belum otomatis lulus gate.
-
+**Catatan:** Pengulangan QS 103:1 di P028–P040 hanya menunjukkan satu kandidat yang sama untuk pemeriksaan kelayakan, **bukan 13 ayat berbeda atau pemenuhan kuota**. P001–P027 tidak diisi dengan tebakan. Pemilihan ayat baru harus diperiksa per huruf dan per hukum bacaan terhadap urutan kompetensi, lalu dicocokkan dengan mushaf Utsmani sebelum status SAH.
 
 ## AUDIT GATE 960 KELOMPOK UTAMA — PEMERIKSAAN PARSIAL
 
