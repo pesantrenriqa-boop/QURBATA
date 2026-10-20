@@ -79,45 +79,49 @@ K01–K24 pada P001–P040 ditranskripsi dari `02_MASTER_SYSTEM/MASTER_4_INVENTA
 
 | Halaman | Frasa dua kata (kandidat) | Frasa tiga kata (kandidat) | Gate dan status |
 |---|---|---|---|
-| P001 | أَمْ تَمْ | أَمْ تَمْرٌ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P002 | عِلْمٌ جَمْعٌ | عِلْمٌ جَمْعٌ تَمْرٌ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P003 | نَفْسٌ تَفْهَمُ | نَفْسٌ تَفْهَمُ عِلْمًا | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P004 | يَكْتُبُ عِلْمًا | يَكْتُبُ عِلْمًا نَفْعًا | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P005 | يَسْمَعُ نَفْسًا | يَسْمَعُ نَفْسًا وَيَفْهَمُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P006 | يَثْبُتُ عَزْمٌ | يَثْبُتُ عَزْمٌ وَيَنْفَعُ | DITAHAN — sukun belum diajarkan |
-| P007 | بَرْدٌ وَفَرْحٌ | بَرْدٌ وَفَرْحٌ وَنَفْعٌ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P008 | أَنْتَ تَفْهَمُ | أَنْتَ تَفْهَمُ عِلْمًا | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P009 | نَحْنُ نَفْهَمُ | نَحْنُ نَفْهَمُ عِلْمًا | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P010 | نَحْنُ نَكْتُبُ | نَحْنُ نَكْتُبُ وَنَفْهَمُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P011 | يَخْرُجُ مِنْهُ | يَخْرُجُ مِنْهُ نَفْعٌ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P012 | يَعْلَمُ وَيَفْهَمُ | يَعْلَمُ وَيَفْهَمُ نَفْعًا | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P013 | يَغْفِرُ وَيَرْحَمُ | يَغْفِرُ وَيَرْحَمُ عَبْدًا | DITAHAN — sukun belum diajarkan |
-| P014 | يَسْأَلُ وَيَعْلَمُ | يَسْأَلُ وَيَعْلَمُ وَيَفْهَمُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P015 | يَصْبِرُ وَيَفْهَمُ | يَصْبِرُ وَيَفْهَمُ وَيَعْلَمُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P016 | يَضْرِبُ وَيَصْبِرُ | يَضْرِبُ وَيَصْبِرُ وَيَفْهَمُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P017 | يَظْهَرُ وَيَعْلَمُ | يَظْهَرُ وَيَعْلَمُ وَيَفْهَمُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P018 | خَوْفٌ وَفَرْحٌ | خَوْفٌ وَفَرْحٌ وَعِلْمٌ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P019 | يَغْفِرُ وَيَرْحَمُ | يَغْفِرُ وَيَرْحَمُ وَيَعْلَمُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P020 | يَكْتُبُ وَيَفْهَمُ | يَكْتُبُ وَيَفْهَمُ وَيَعْلَمُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P021 | عِلْمٌ وَحِلْمٌ | عِلْمٌ وَحِلْمٌ وَفَهْمٌ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P022 | قَلْبٌ وَعِلْمٌ | قَلْبٌ وَعِلْمٌ وَحِلْمٌ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P023 | مُلْكٌ وَعِلْمٌ | مُلْكٌ وَعِلْمٌ وَحِلْمٌ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P024 | يَلْعَبُ وَيَفْهَمُ | يَلْعَبُ وَيَفْهَمُ وَيَعْلَمُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P025 | عِلْمٌ وَفَهْمٌ | عِلْمٌ وَفَهْمٌ وَحِلْمٌ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P026 | الْبَيْتُ وَالْقَلَمُ | الْبَيْتُ وَالْقَلَمُ وَالْكِتَابُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P027 | الْقَمَرُ وَالْبَيْتُ | الْقَمَرُ وَالْبَيْتُ وَالْكِتَابُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P028 | الْجَبَلُ وَالْعِلْمُ | الْجَبَلُ وَالْعِلْمُ وَالْخَبَرُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P029 | الْوَلَدُ وَالْيَوْمُ | الْوَلَدُ وَالْيَوْمُ وَالْأَمْرُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P030 | الْبَيْتُ وَالْقَمَرُ | الْبَيْتُ وَالْقَمَرُ وَالْجَبَلُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P031 | الْمَكْتَبُ وَالْمَسْجِدُ | الْمَكْتَبُ وَالْمَسْجِدُ وَالْقَلَمُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P032 | بَيْتٌ وَالْبَيْتُ | بَيْتٌ وَالْبَيْتُ وَالْقَلَمُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P033 | هَذَا الْبَيْتُ | هَذَا الْبَيْتُ الْكَبِيرُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P034 | الْعِلْمُ وَالْقَلَمُ | الْعِلْمُ وَالْقَلَمُ وَالْكِتَابُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P035 | يَسْتَغْفِرُ وَيَفْهَمُ | يَسْتَغْفِرُ وَيَفْهَمُ وَيَعْلَمُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P036 | هَذَا الْقَلَمُ | هَذَا الْقَلَمُ الْجَدِيدُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P037 | الْحَمْدُ لِلَّهِ | الْحَمْدُ لِلَّهِ رَبِّ | DITAHAN — tasydid |
-| P038 | الْبَيْتُ وَالْقَمَرُ | الْبَيْتُ وَالْقَمَرُ وَالْعِلْمُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P039 | عِنْدَ الْمَسْجِدِ | عِنْدَ الْمَسْجِدِ الْكَبِيرِ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
-| P040 | هَذَا الْكِتَابُ | هَذَا الْكِتَابُ الْجَدِيدُ | BELUM LOLOS GATE — wajib audit mad, harakat, sukun, nahwu dan sumber |
+| P001 | أَمْ تَمْ | أَمْ تَمْرٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P002 | عِلْمٌ جَمْعٌ | عِلْمٌ جَمْعٌ تَمْرٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P003 | نَفْسٌ تَفْهَمُ | نَفْسٌ تَفْهَمُ عِلْمًا | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P004 | يَكْتُبُ عِلْمًا | يَكْتُبُ عِلْمًا نَفْعًا | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P005 | يَسْمَعُ نَفْسًا | يَسْمَعُ نَفْسًا وَيَفْهَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P006 | يَثْبُتُ عَزْمٌ | يَثْبُتُ عَزْمٌ وَيَنْفَعُ | DITAHAN — sukun نْ belum diajarkan |
+| P007 | بَرْدٌ وَفَرْحٌ | بَرْدٌ وَفَرْحٌ وَنَفْعٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P008 | أَنْتَ تَفْهَمُ | أَنْتَ تَفْهَمُ عِلْمًا | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P009 | نَحْنُ نَفْهَمُ | نَحْنُ نَفْهَمُ عِلْمًا | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P010 | نَحْنُ نَكْتُبُ | نَحْنُ نَكْتُبُ وَنَفْهَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P011 | يَخْرُجُ مِنْهُ | يَخْرُجُ مِنْهُ نَفْعٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P012 | يَعْلَمُ وَيَفْهَمُ | يَعْلَمُ وَيَفْهَمُ نَفْعًا | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P013 | يَغْفِرُ وَيَرْحَمُ | يَغْفِرُ وَيَرْحَمُ عَبْدًا | DITAHAN — sukun بْ belum diajarkan |
+| P014 | يَسْأَلُ وَيَعْلَمُ | يَسْأَلُ وَيَعْلَمُ وَيَفْهَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P015 | يَصْبِرُ وَيَفْهَمُ | يَصْبِرُ وَيَفْهَمُ وَيَعْلَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P016 | يَضْرِبُ وَيَصْبِرُ | يَضْرِبُ وَيَصْبِرُ وَيَفْهَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P017 | يَظْهَرُ وَيَعْلَمُ | يَظْهَرُ وَيَعْلَمُ وَيَفْهَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P018 | خَوْفٌ وَفَرْحٌ | خَوْفٌ وَفَرْحٌ وَعِلْمٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P019 | يَغْفِرُ وَيَرْحَمُ | يَغْفِرُ وَيَرْحَمُ وَيَعْلَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P020 | يَكْتُبُ وَيَفْهَمُ | يَكْتُبُ وَيَفْهَمُ وَيَعْلَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P021 | عِلْمٌ وَحِلْمٌ | عِلْمٌ وَحِلْمٌ وَفَهْمٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P022 | قَلْبٌ وَعِلْمٌ | قَلْبٌ وَعِلْمٌ وَحِلْمٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P023 | مُلْكٌ وَعِلْمٌ | مُلْكٌ وَعِلْمٌ وَحِلْمٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P024 | يَلْعَبُ وَيَفْهَمُ | يَلْعَبُ وَيَفْهَمُ وَيَعْلَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P025 | عِلْمٌ وَفَهْمٌ | عِلْمٌ وَفَهْمٌ وَحِلْمٌ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P026 | الْبَيْتُ وَالْقَلَمُ | الْبَيْتُ وَالْقَلَمُ وَالْكِتَابُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P027 | الْقَمَرُ وَالْبَيْتُ | الْقَمَرُ وَالْبَيْتُ وَالْكِتَابُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P028 | الْجَبَلُ وَالْعِلْمُ | الْجَبَلُ وَالْعِلْمُ وَالْخَبَرُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P029 | الْوَلَدُ وَالْيَوْمُ | الْوَلَدُ وَالْيَوْمُ وَالْأَمْرُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P030 | الْبَيْتُ وَالْقَمَرُ | الْبَيْتُ وَالْقَمَرُ وَالْجَبَلُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P031 | الْمَكْتَبُ وَالْمَسْجِدُ | الْمَكْتَبُ وَالْمَسْجِدُ وَالْقَلَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P032 | بَيْتٌ وَالْبَيْتُ | بَيْتٌ وَالْبَيْتُ وَالْقَلَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P033 | هَذَا الْبَيْتُ | هَذَا الْبَيْتُ الْكَبِيرُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P034 | الْعِلْمُ وَالْقَلَمُ | الْعِلْمُ وَالْقَلَمُ وَالْكِتَابُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P035 | يَسْتَغْفِرُ وَيَفْهَمُ | يَسْتَغْفِرُ وَيَفْهَمُ وَيَعْلَمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P036 | هَذَا الْقَلَمُ | هَذَا الْقَلَمُ الْجَدِيدُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P037 | الْحَمْدُ لِلَّهِ | الْحَمْدُ لِلَّهِ رَبِّ | DITAHAN — tasydid perlu gate |
+| P038 | الْبَيْتُ وَالْقَمَرُ | الْبَيْتُ وَالْقَمَرُ وَالْعِلْمُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P039 | عِنْدَ الْمَسْجِدِ | عِنْدَ الْمَسْجِدِ الْكَبِيرِ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
+| P040 | هَذَا الْكِتَابُ | هَذَا الْكِتَابُ الْجَدِيدُ | KANDIDAT BELUM SAH — audit mad, harakat, leksikal dan nahwu |
 
 **Catatan QA:** Rangkaian yang hanya menggabungkan kata dengan وَ belum tentu frasa alami untuk latihan komunikasi. Semua frasa ini perlu ditashih; jika memuat huruf sukun/mad/tasydid belum legal pada halaman terkait, tahan frasa tersebut. P037 memuat potongan ayat dan perlu pencocokan lafaz serta batas potongan secara langsung dengan mushaf. Jangan mencetak lampiran sebelum gate disahkan.
+
+### Audit bertahap sukun pada frasa tambahan
+
+Pemeriksaan setiap frasa dilakukan terhadap daftar huruf bersukun yang sudah diperkenalkan sampai halaman tersebut (bukan hanya sukun pada halaman saat ini). P001 مْ; P002 لْ; P003 فْ; P004 كْ; P005 سْ/شْ; P006 ثْ/ذْ/زْ; P007 رْ; P008 نْ; P009 هْ/حْ; P011 خْ; P012 عْ; P013 غْ; P014 ءْ; P015 صْ; P016 ضْ; P017 ظْ; P018 وْ/يْ non-mad. P026 baru alif-lam. Tanda **DITAHAN** tidak menghapus frasa; frasa tidak boleh dipakai sebelum diperbaiki dan diperiksa ulang. **Penting:** audit ini bersifat parsial; bentuk mad tanpa tanda khusus, hukum wasal, dan kebenaran nahwu masih memerlukan tashih manusia. Materi 960 K01–K24 belum berubah dan belum otomatis lulus gate.
