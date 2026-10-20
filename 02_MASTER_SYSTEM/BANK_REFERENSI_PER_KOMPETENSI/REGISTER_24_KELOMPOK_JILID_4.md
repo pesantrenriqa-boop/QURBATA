@@ -5,20 +5,20 @@
 | Halaman | Kompetensi | K01 | K02 | K03 | K04 | K05 | K06 | K07 | K08 | K09 | K10 | K11 | K12 | K13 | K14 | K15 | K16 | K17 | K18 | K19 | K20 | K21 | K22 | K23 | K24 | Sah |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | P001 | Orientasi nun sukun dan tanwin | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P002 | Izhar halqi: ء ه | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P003 | Izhar halqi: ع ح | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P004 | Izhar halqi: غ خ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P002 | Izhar halqi: ء ه | مَنْ آمَنَ [PENGGALAN QS 2:62; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P003 | Izhar halqi: ع ح | أَنْعَمْتَ عَلَيْهِمْ [PENGGALAN QS 1:7; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P004 | Izhar halqi: غ خ | مِنْ خَيْرٍ [PENGGALAN QS 2:105; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P005 | Integrasi izhar halqi | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P006 | Idgham bighunnah: ي ن | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P007 | Idgham bighunnah: م و | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P008 | Idgham bila ghunnah: ل ر | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P006 | Idgham bighunnah: ي ن | مَن يَعْمَلْ [PENGGALAN QS 4:123; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P007 | Idgham bighunnah: م و | مِن مَّالِ ٱللَّهِ [PENGGALAN QS 24:33; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P008 | Idgham bila ghunnah: ل ر | مِن رَّبِّهِمْ [PENGGALAN QS 2:5; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P009 | Kontras izhar dan idgham | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P010 | Evaluasi nun sukun I | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P011 | Iqlab | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P012 | Ikhfa I (ت ث ج) | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P012 | Ikhfa I (ت ث ج) | مِن جُوعٍ [PENGGALAN QS 106:4; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P013 | Ikhfa II (د ذ ز) | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P014 | Ikhfa III (س ش ص) | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P015 | Ikhfa IV (ض ط ظ ف ق ك) | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P015 | Ikhfa IV (ض ط ظ ف ق ك) | مِن قَبْلُ [PENGGALAN QS 30:4; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P016 | Integrasi ikhfa | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P017 | Kontras empat hukum nun sukun/tanwin | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P018 | Hafalan dan penerapan hukum nun | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
@@ -337,3 +337,21 @@ Tiga ayat utuh ditambahkan pada P039/K03 (2:13), P040/K04 (2:14), P037/K02 (2:15
 | QS 2:13 | ءَامَنَ ٱلنَّاسُ | Cocokkan seluruh hukum dan urutan kompetensi sebelum disahkan |
 | QS 2:14 | مَعَكُمْ إِنَّمَا | Cocokkan seluruh hukum dan urutan kompetensi sebelum disahkan |
 | QS 2:15 | بِهِمْ وَيَمُدُّهُمْ | Cocokkan seluruh hukum dan urutan kompetensi sebelum disahkan |
+
+
+## BATCH PENGISIAN BERTAHAP — P002, P003, P004, P006, P007, P008, P012, P015
+
+Setiap contoh adalah **penggalan pendek berurutan dari satu ayat**, bukan ayat utuh dan bukan gabungan kata. Sumber rujukan untuk tashih: https://quran.com/2/62 , https://quran.com/1/7 , https://quran.com/2/105 , https://quran.com/4/123 , https://quran.com/24/33 , https://quran.com/2/5 , https://quran.com/106/4 , https://quran.com/30/4 .
+
+| Slot | Penggalan | Rujukan | Fokus target | Status |
+|---|---|---|---|---|
+| P002/K01 | مَنْ آمَنَ | QS 2:62 | Izhar: نْ bertemu ء | AUDIT MANDIRI — belum sah cetak |
+| P003/K01 | أَنْعَمْتَ عَلَيْهِمْ | QS 1:7 | Izhar: نْ bertemu ع | AUDIT MANDIRI — belum sah cetak |
+| P004/K01 | مِنْ خَيْرٍ | QS 2:105 | Izhar: نْ bertemu خ | AUDIT MANDIRI — belum sah cetak |
+| P006/K01 | مَن يَعْمَلْ | QS 4:123 | Idgham bighunnah: نْ bertemu ي | AUDIT MANDIRI — belum sah cetak |
+| P007/K01 | مِن مَّالِ ٱللَّهِ | QS 24:33 | Idgham bighunnah: نْ bertemu م | AUDIT MANDIRI — belum sah cetak |
+| P008/K01 | مِن رَّبِّهِمْ | QS 2:5 | Idgham bila ghunnah: نْ bertemu ر | AUDIT MANDIRI — belum sah cetak |
+| P012/K01 | مِن جُوعٍ | QS 106:4 | Ikhfa: نْ bertemu ج | AUDIT MANDIRI — belum sah cetak |
+| P015/K01 | مِن قَبْلُ | QS 30:4 | Ikhfa: نْ bertemu ق | AUDIT MANDIRI — belum sah cetak |
+
+**Catatan gate:** Semua hukum lain yang muncul dalam penggalan (termasuk mad, tasydid, dan hukum sambung) harus tetap diperiksa terhadap kompetensi jilid sebelumnya. Penggalan pada baris yang tidak memenuhi gate harus diganti, bukan disahkan otomatis. Jumlah sah masih 0/24.
