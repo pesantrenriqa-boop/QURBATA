@@ -5,19 +5,19 @@
 | Halaman | Kompetensi | K01 | K02 | K03 | K04 | K05 | K06 | K07 | K08 | K09 | K10 | K11 | K12 | K13 | K14 | K15 | K16 | K17 | K18 | K19 | K20 | K21 | K22 | K23 | K24 | Sah |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | P001 | Orientasi nun sukun dan tanwin | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P002 | Izhar halqi: ء ه | مَنْ آمَنَ [PENGGALAN QS 2:62; AUDIT MANDIRI] | مِنْ أَهْلِ [PENGGALAN QS 3:75; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P003 | Izhar halqi: ع ح | أَنْعَمْتَ عَلَيْهِمْ [PENGGALAN QS 1:7; AUDIT MANDIRI] | مِنْ عِلْمٍ [PENGGALAN QS 2:145; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P002 | Izhar halqi: ء ه | مَنْ آمَنَ [PENGGALAN QS 2:62; AUDIT MANDIRI] | مِنْ أَهْلِ [PENGGALAN QS 3:75; AUDIT MANDIRI] | مَنْ هَادَ [KANDIDAT PENGGALAN QS 2:62; VERIFIKASI SUMBER WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P003 | Izhar halqi: ع ح | أَنْعَمْتَ عَلَيْهِمْ [PENGGALAN QS 1:7; AUDIT MANDIRI] | مِنْ عِلْمٍ [PENGGALAN QS 2:145; AUDIT MANDIRI] | مِنْ حَكِيمٍ [KANDIDAT PENGGALAN QS 41:42; VERIFIKASI SUMBER WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P004 | Izhar halqi: غ خ | مِنْ خَيْرٍ [PENGGALAN QS 2:105; AUDIT MANDIRI] | مِنْ غِلٍّ [PENGGALAN QS 7:43; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P005 | Integrasi izhar halqi | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P006 | Idgham bighunnah: ي ن | مَن يَعْمَلْ [PENGGALAN QS 4:123; AUDIT MANDIRI] | مَنْ يَعْمَلْ سُوءًا [PENGGALAN QS 4:123; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P006 | Idgham bighunnah: ي ن | مَن يَعْمَلْ [PENGGALAN QS 4:123; AUDIT MANDIRI] | مَنْ يَعْمَلْ سُوءًا [PENGGALAN QS 4:123; AUDIT MANDIRI] | مِنْ نِعْمَةٍ [KANDIDAT PENGGALAN QS 16:53; VERIFIKASI SUMBER WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P007 | Idgham bighunnah: م و | مِن مَّالِ ٱللَّهِ [PENGGALAN QS 24:33; AUDIT MANDIRI] | مِنْ وَالٍ [PENGGALAN QS 13:11; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P008 | Idgham bila ghunnah: ل ر | مِن رَّبِّهِمْ [PENGGALAN QS 2:5; AUDIT MANDIRI] | مِنْ رَبِّهِمْ [PENGGALAN QS 8:4; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P008 | Idgham bila ghunnah: ل ر | مِن رَّبِّهِمْ [PENGGALAN QS 2:5; AUDIT MANDIRI] | مِنْ رَبِّهِمْ [PENGGALAN QS 8:4; AUDIT MANDIRI] | مِنْ لَدُنْهُ [KANDIDAT PENGGALAN QS 18:2; VERIFIKASI SUMBER WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P009 | Kontras izhar dan idgham | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P010 | Evaluasi nun sukun I | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P011 | Iqlab | مِنْ بَعْدِ [PENGGALAN QS 2:27; PERLU TASHIH] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P012 | Ikhfa I (ت ث ج) | مِن جُوعٍ [PENGGALAN QS 106:4; AUDIT MANDIRI] | مِنْ تَحْتِهَا [PENGGALAN QS 2:25; PERLU TASHIH] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P013 | Ikhfa II (د ذ ز) | مِنْ دُونِ ٱللَّهِ [PENGGALAN QS 2:23; PERLU TASHIH] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P014 | Ikhfa III (س ش ص) | مِنْ شَرِّ [PENGGALAN QS 113:2; PERLU TASHIH] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P011 | Iqlab | مِنْ بَعْدِ [PENGGALAN QS 2:27; PERLU TASHIH] | مِنْ بَعْدِ مَا [KANDIDAT PENGGALAN QS 2:27; VERIFIKASI SUMBER WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P012 | Ikhfa I (ت ث ج) | مِن جُوعٍ [PENGGALAN QS 106:4; AUDIT MANDIRI] | مِنْ تَحْتِهَا [PENGGALAN QS 2:25; PERLU TASHIH] | مِنْ ثَمَرَةٍ [KANDIDAT PENGGALAN QS 2:25; VERIFIKASI SUMBER WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P013 | Ikhfa II (د ذ ز) | مِنْ دُونِ ٱللَّهِ [PENGGALAN QS 2:23; PERLU TASHIH] | مِنْ ذَكَرٍ [KANDIDAT PENGGALAN QS 49:13; VERIFIKASI SUMBER WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P014 | Ikhfa III (س ش ص) | مِنْ شَرِّ [PENGGALAN QS 113:2; PERLU TASHIH] | مِنْ صَلْصَالٍ [KANDIDAT PENGGALAN QS 15:26; VERIFIKASI SUMBER WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P015 | Ikhfa IV (ض ط ظ ف ق ك) | مِن قَبْلُ [PENGGALAN QS 30:4; AUDIT MANDIRI] | مِنْ قَبْلِ [PENGGALAN QS 2:25; PERLU TASHIH] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P016 | Integrasi ikhfa | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P017 | Kontras empat hukum nun sukun/tanwin | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
@@ -25,14 +25,14 @@
 | P019 | Transfer nun sakinah/tanwin | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P020 | Evaluasi Hukum Nun | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P021 | Orientasi mim sakinah | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P022 | Ikhfa syafawi | تَرْمِيهِمْ بِحِجَارَةٍ [PENGGALAN QS 105:4; PERLU TASHIH] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P023 | Idgham mimi | لَهُمْ مَا يَشَاءُونَ [PENGGALAN QS 39:34; PERLU TASHIH] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P022 | Ikhfa syafawi | تَرْمِيهِمْ بِحِجَارَةٍ [PENGGALAN QS 105:4; PERLU TASHIH] | عَلَيْهِمْ بِمُصَيْطِرٍ [KANDIDAT PENGGALAN QS 88:22; VERIFIKASI SUMBER WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P023 | Idgham mimi | لَهُمْ مَا يَشَاءُونَ [PENGGALAN QS 39:34; PERLU TASHIH] | لَكُمْ مَا [KANDIDAT PENGGALAN QS 2:29; VERIFIKASI SUMBER WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P024 | Izhar syafawi | هُمْ فِيهَا [PENGGALAN QS 2:25; PERLU TASHIH] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P025 | Kontras hukum mim | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P026 | Alif-lam qamariyah I | ٱلْحَمْدُ لِلَّهِ [PENGGALAN QS 1:2; PERLU TASHIH] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P026 | Alif-lam qamariyah I | ٱلْحَمْدُ لِلَّهِ [PENGGALAN QS 1:2; PERLU TASHIH] | ٱلْكِتَابُ [KANDIDAT PENGGALAN QS 2:2; VERIFIKASI SUMBER WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P027 | Alif-lam qamariyah II | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P028 | Bahasa Arab 4 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P029 | Alif-lam syamsiyah I | ٱلرَّحْمَٰنِ ٱلرَّحِيمِ [PENGGALAN QS 1:3; PERLU TASHIH] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P029 | Alif-lam syamsiyah I | ٱلرَّحْمَٰنِ ٱلرَّحِيمِ [PENGGALAN QS 1:3; PERLU TASHIH] | ٱلنَّاسِ [KANDIDAT PENGGALAN QS 114:1; VERIFIKASI SUMBER WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P030 | Evaluasi Mim dan Alif-Lam I | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P031 | Alif-lam syamsiyah II | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P032 | Kontras qamariyah–syamsiyah | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
@@ -387,3 +387,23 @@ Setiap contoh adalah **penggalan pendek berurutan dari satu ayat**, bukan ayat u
 | P029/K01 | ٱلرَّحْمَٰنِ ٱلرَّحِيمِ | QS 1:3 | Alif-lam syamsiyah ر | PERLU TASHIH |
 
 Catatan: penulisan teks, sambungan kata, hukum tambahan, dan kecocokan rasm Utsmani masih harus diverifikasi sebelum sah cetak. Jangan gunakan penggalan yang memutus konteks hingga menyesatkan. Contoh QS 2:25 untuk مِنْ قَبْلِ wajib diperiksa ulang rujukannya; bila tidak cocok harus diganti.
+
+
+## BATCH KANDIDAT PENGGALAN — 12 SLOT TAMBAHAN
+
+**Peringatan:** Rujukan ayat pada batch ini adalah indeks kandidat dan **belum terverifikasi satu per satu**; jangan menganggap sebagai kutipan siap cetak. Cocokkan semua penggalan terhadap mushaf Utsmani dan koreksi/hapus apabila tidak terdapat secara persis dalam ayat yang ditunjuk. Hukum target adalah hipotesis awal; tajwid lain wajib diaudit.
+
+| Slot | Kandidat | Rujukan yang perlu dicocokkan | Fokus |
+|---|---|---|---|
+| P002/K03 | مَنْ هَادَ | QS 2:62 | Izhar ه |
+| P003/K03 | مِنْ حَكِيمٍ | QS 41:42 | Izhar ح — periksa rujukan |
+| P006/K03 | مِنْ نِعْمَةٍ | QS 16:53 | Idgham ن |
+| P008/K03 | مِنْ لَدُنْهُ | QS 18:2 | Idgham ل |
+| P011/K02 | مِنْ بَعْدِ مَا | QS 2:27 | Iqlab ب |
+| P012/K03 | مِنْ ثَمَرَةٍ | QS 2:25 | Ikhfa ث |
+| P013/K02 | مِنْ ذَكَرٍ | QS 49:13 | Ikhfa ذ |
+| P014/K02 | مِنْ صَلْصَالٍ | QS 15:26 | Ikhfa ص |
+| P022/K02 | عَلَيْهِمْ بِمُصَيْطِرٍ | QS 88:22 | Ikhfa syafawi ب |
+| P023/K02 | لَكُمْ مَا | QS 2:29 | Idgham mimi م — periksa rujukan |
+| P026/K02 | ٱلْكِتَابُ | QS 2:2 | Qamariyah ك |
+| P029/K02 | ٱلنَّاسِ | QS 114:1 | Syamsiyah ن |
