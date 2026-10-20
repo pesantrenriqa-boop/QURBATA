@@ -43,7 +43,7 @@
 | P037 | Simulasi baca ayat pendek | خَتَمَ ٱللَّهُ عَلَىٰ قُلُوبِهِمْ وَعَلَىٰ سَمْعِهِمْ وَعَلَىٰٓ أَبْصَٰرِهِمْ غِشَٰوَةٌ وَلَهُمْ عَذَابٌ عَظِيمٌ [QS 2:7; TASHIH-TEKNIS] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P038 | Akhlak/Hadis 4 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P039 | Simulasi akhir | يُخَٰدِعُونَ ٱللَّهَ وَٱلَّذِينَ ءَامَنُوا۟ وَمَا يَخْدَعُونَ إِلَّآ أَنفُسَهُمْ وَمَا يَشْعُرُونَ [QS 2:9; TASHIH-TEKNIS] | فِى قُلُوبِهِم مَّرَضٌ فَزَادَهُمُ ٱللَّهُ مَرَضًا وَلَهُمْ عَذَابٌ أَلِيمٌ بِمَا كَانُوا يَكْذِبُونَ [QS 2:10; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P040 | Ujian Akhir Jilid 4 | إِنَّ ٱلَّذِينَ كَفَرُوا۟ سَوَآءٌ عَلَيْهِمْ ءَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ [QS 2:6; TASHIH-TEKNIS] | وَإِذَا قِيلَ لَهُمْ لَا تُفْسِدُوا فِى ٱلْأَرْضِ قَالُوا إِنَّمَا نَحْنُ مُصْلِحُونَ [QS 2:11; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P040 | Ujian Akhir Jilid 4 | إِنَّ ٱلَّذِينَ كَفَرُوا۟ سَوَآءٌ عَلَيْهِمْ ءَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ [QS 2:6; TASHIH-TEKNIS] | وَإِذَا قِيلَ لَهُمْ لَا تُفْسِدُوا فِى ٱلْأَرْضِ قَالُوا إِنَّمَا نَحْنُ مُصْلِحُونَ [QS 2:11; AUDIT MANDIRI] | أَلَآ إِنَّهُمْ هُمُ ٱلْمُفْسِدُونَ وَلَـٰكِن لَّا يَشْعُرُونَ [QS 2:12; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 
 ## Kandidat bank jilid 4 — belum dialokasikan ke halaman
 
@@ -301,3 +301,8 @@ Empat slot K01 kini berisi **identitas ayat lengkap** yang dapat ditelusuri ke b
 **P040/K02:** QS Al-Baqarah 2:11, satu ayat lengkap; sumber https://quran.com/2/11. Temuan: mim sukun pada لَهُمْ diikuti لَا = izhar syafawi; alif-lam qamariyah pada ٱلْأَرْضِ; tasydid pada إِنَّمَا dan mad pada beberapa kata. Cocok sebagai kandidat ujian integrasi, **belum sah cetak**.
 
 Kedua teks disimpan sebagai transkripsi latihan berharakat untuk pemeriksaan isi, **bukan jaminan identik seluruh tanda rasm/waqaf Utsmani**. Kolom Sah tetap 0/24 hingga penyelarasan glyph Uthman Taha dan pemeriksaan mushaf akhir. Setiap ayat dipakai satu kali.
+
+
+## PENGISIAN P040/K03 — AYAT UTUH 2:12
+
+Teks: **أَلَآ إِنَّهُمْ هُمُ ٱلْمُفْسِدُونَ وَلَـٰكِن لَّا يَشْعُرُونَ**. Sumber mushaf https://quran.com/ar/al-baqarah/12/translation/1014. Ini satu ayat lengkap (QS 2:12), bukan petikan. Audit tajwid: mim sukun pada إِنَّهُمْ diikuti هُمُ dan pada ٱلْمُفْسِدُونَ sebelum وَ = izhar syafawi; lam qamariyah pada ٱلْمُفْسِدُونَ; lam pada لَّا merupakan idgham dari nun sakinah di akhir وَلَـٰكِن ketika wasal; ada mad dan tasydid. Penempatan P040 sebagai kandidat evaluasi terpadu, **belum sah cetak**. Teks rasm/waqaf wajib dicocokkan kembali pada layout KFGQPC Uthman Taha. Jumlah isi kandidat: 7/960, sah cetak tetap 0.
