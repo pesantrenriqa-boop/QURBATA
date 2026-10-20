@@ -1,6 +1,6 @@
 # QURBATA JILID 4 — REGISTER 40 HALAMAN × 24 KELOMPOK
 
-**REGISTER KAPASITAS, BELUM ISI FINAL.** Setiap sel Kxx adalah satu kelompok. `—` = belum terisi, bukan contoh sah. Tidak boleh mengulang otomatis. Wajib cocokkan master dan tashih mushaf. J4: ayat panjang luar Juz Amma.
+**REGISTER KAPASITAS — AUDIT SUMBER J4 DIMULAI, BELUM SAH CETAK.** Setiap sel Kxx adalah satu kelompok. `—` = belum terisi, bukan contoh sah. Tidak boleh mengulang otomatis. Wajib cocokkan master dan tashih mushaf. J4: ayat panjang luar Juz Amma.
 
 | Halaman | Kompetensi | K01 | K02 | K03 | K04 | K05 | K06 | K07 | K08 | K09 | K10 | K11 | K12 | K13 | K14 | K15 | K16 | K17 | K18 | K19 | K20 | K21 | K22 | K23 | K24 | Sah |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -124,3 +124,53 @@
 | Nun sukun — izhar ع | مِنْ عِلْمٍ | 2:145 | KANDIDAT — TASHIH |
 | Nun sukun — izhar غ | مِنْ غَيْرِ | 2:173 | KANDIDAT — TASHIH |
 | Transfer ke ayat utuh | مَّن ذَا ٱلَّذِي يُقۡرِضُ ٱللَّهَ قَرۡضًا حَسَنٗا فَيُضَٰعِفَهُۥ لَهُۥٓ أَضۡعَافٗا كَثِيرَةٗۚ وَٱللَّهُ يَقۡبِضُ وَيَبۡصُۜطُ وَإِلَيۡهِ تُرۡجَعُونَ | 2:245 | KANDIDAT — TASHIH |
+
+
+## AUDIT SUMBER EMPAT INVENTARIS DAN AYAT UTUH J4
+
+**Aturan penguncian:** Sel K01–K24 tidak diisi otomatis dengan potongan ayat atau frasa buatan. Satu entri ayat harus satu ayat utuh sesuai mushaf, memiliki surah:ayat, dan lolos gate kompetensi. Master J4 masih memuat petikan dan kandidat, **bukan 960 ayat utuh terverifikasi**. Dialog, hadis, dan tahfidz dipertahankan pada master; hadis dan tahfidz yang berstatus ditahan tidak dinyatakan final.
+
+| Halaman | Kompetensi | Kandidat dari master | Keputusan |
+|---|---|---|---|
+| P001 | Orientasi nun sukun dan tanwin | 1. أَنْعَمْتَ عَلَيْهِمْ (الفاتحة: 7) ؛ 2. مِنْ رَبِّهِمْ (البقرة: 5) ؛ 3. مَنْ آمَنَ بِاللَّهِ (الب… | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P002 | Izhar halqi: ء ه | مَنْ آمَنَ بِاللَّهِ — البقرة 62 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradasi… | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P003 | Izhar halqi: ع ح | أَنْعَمْتَ عَلَيْهِمْ — الفاتحة 7 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradas… | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P004 | Izhar halqi: غ خ | مِنْ خَيْرٍ — البقرة 105 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradasi J1–J3) | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P005 | Integrasi izhar halqi | مَنْ آمَنَ بِاللَّهِ — البقرة 62 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradasi… | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P006 | Idgham bighunnah: ي ن | مَنْ يَعْمَلْ سُوءًا — النساء 123 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradas… | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P007 | Idgham bighunnah: م و | مِنْ وَالٍ — الرعد 11 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradasi J1–J3) | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P008 | Idgham bila ghunnah: ل ر | مِنْ رَبِّهِمْ — البقرة 5 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradasi J1–J3) | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P009 | Kontras izhar dan idgham | أَنْعَمْتَ عَلَيْهِمْ — الفاتحة 7 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradas… | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P010 | Evaluasi nun sukun I | مَنْ يَعْمَلْ سُوءًا — النساء 123 (kandidat potongan ayat; belum lulus pemeriksaan mushaf dan gradas… | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P011 | Iqlab | 1. أَنْبِئْهُمْ بِأَسْمَائِهِمْ (البقرة:33) ؛ 2. مِنْ بَعْدِ مَا جَاءَتْهُمُ الْبَيِّنَاتُ (البقرة:2… | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P012 | Ikhfa I (ت ث ج) | مِنْ تَحْتِهَا الْأَنْهَارُ (البقرة:25) ؛ مِنْ ثَمَرَةٍ رِزْقًا (البقرة:25) ؛ إِنْ جَاءَكُمْ فَاسِقٌ… | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P013 | Ikhfa II (د ذ ز) | مِنْ دُونِ اللَّهِ (البقرة:23) ؛ مَنْ ذَا الَّذِي يُقْرِضُ اللَّهَ (البقرة:245) ؛ أَنْزَلْنَاهُ فِي … | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P014 | Ikhfa III (س ش ص) | مِنْ سُوءٍ (النساء:79) ؛ مِنْ شَرِّ مَا خَلَقَ (الفلق:2) ؛ رِيحًا صَرْصَرًا (الحاقة:6) — **3 kandida… | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P015 | Ikhfa IV (ض ط ظ ف ق ك) | مِنْ قَبْلِ أَنْ يَأْتِيَ (البقرة:254) ؛ مِنْ فَضْلِ اللَّهِ (الجمعة:10) ؛ مِنْ كُلِّ زَوْجٍ بَهِيجٍ… | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P016 | Integrasi ikhfa | مِنْ شَرِّ مَا خَلَقَ (الفلق:2) ؛ مَنْ يَعْمَلْ سُوءًا (النساء:123) ؛ مِنْ قَبْلِ (الروم:4) ؛ مِنْ د… | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P017 | Kontras empat hukum nun sukun/tanwin | مَنْ آمَنَ بِاللَّهِ (البقرة:62؛ إظهار) ؛ مَنْ يَعْمَلْ سُوءًا (النساء:123؛ إدغام بغنة) ؛ مِنْ رَبِّ… | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P018 | Hafalan dan penerapan hukum nun | أَنْعَمْتَ عَلَيْهِمْ (الفاتحة:7؛ إظهار) ؛ مِنْ خَيْرٍ (البقرة:105؛ إظهار) ؛ مَنْ يَعْمَلْ سُوءًا (ا… | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P019 | Transfer nun sakinah/tanwin | Transfer nun sakinah/tanwin — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P020 | Evaluasi Hukum Nun | Evaluasi Hukum Nun — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P021 | Orientasi mim sakinah | Orientasi mim sakinah — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P022 | Ikhfa syafawi | Ikhfa syafawi — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P023 | Idgham mimi | Idgham mimi — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P024 | Izhar syafawi | Izhar syafawi — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P025 | Kontras hukum mim | Kontras hukum mim — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P026 | Alif-lam qamariyah I | Alif-lam qamariyah I — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P027 | Alif-lam qamariyah II | Alif-lam qamariyah II — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P028 | Bahasa Arab 4 | Bahasa Arab 4 — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P029 | Alif-lam syamsiyah I | Alif-lam syamsiyah I — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P030 | Evaluasi Mim dan Alif-Lam I | Evaluasi Mim dan Alif-Lam I — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P031 | Alif-lam syamsiyah II | Alif-lam syamsiyah II — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P032 | Kontras qamariyah–syamsiyah | Kontras qamariyah–syamsiyah — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P033 | Integrasi nun–mim–alif-lam | Integrasi nun–mim–alif-lam — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P034 | Remedial pola kritis | Remedial pola kritis — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P035 | Murojaah berjarak | Murojaah berjarak — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P036 | Hafalan 2 | Hafalan 2 — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P037 | Simulasi baca ayat pendek | Simulasi baca ayat pendek — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P038 | Akhlak/Hadis 4 | Akhlak/Hadis 4 — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P039 | Simulasi akhir | Simulasi akhir — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+| P040 | Ujian Akhir Jilid 4 | Ujian Akhir Jilid 4 — mengikuti register J4 sumber | DITAHAN untuk slot ayat utuh — perlu verifikasi batas ayat, mushaf dan gate tajwid |
+
+**Temuan awal:** P001 memuat 24 petikan bernomor dari banyak ayat dan surah; itu bukan 24 ayat utuh. P002–P040 juga berisi kandidat potongan ayat yang belum lolos tashih. Tidak boleh memasukkan petikan tersebut ke register ayat utuh tanpa melengkapi dan mengaudit keseluruhan ayat. J4 menargetkan bacaan dari luar Juz Amma, namun hukum nun sukun/tanwin tetap harus diperkenalkan bertahap; ayat yang memuat hukum lebih lanjut ditahan.
