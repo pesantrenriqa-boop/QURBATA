@@ -36,14 +36,14 @@
 | P030 | Evaluasi Mim dan Alif-Lam I | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P031 | Alif-lam syamsiyah II | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P032 | Kontras qamariyah–syamsiyah | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P033 | Integrasi nun–mim–alif-lam | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P033 | Integrasi nun–mim–alif-lam | وَمِنَ ٱلنَّاسِ مَن يَقُولُ ءَامَنَّا بِٱللَّهِ وَبِٱلْيَوْمِ ٱلْـَٔاخِرِ وَمَا هُم بِمُؤْمِنِينَ [QS 2:8; TASHIH-TEKNIS] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P034 | Remedial pola kritis | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P035 | Murojaah berjarak | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P036 | Hafalan 2 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P037 | Simulasi baca ayat pendek | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P037 | Simulasi baca ayat pendek | خَتَمَ ٱللَّهُ عَلَىٰ قُلُوبِهِمْ وَعَلَىٰ سَمْعِهِمْ وَعَلَىٰٓ أَبْصَٰرِهِمْ غِشَٰوَةٌ وَلَهُمْ عَذَابٌ عَظِيمٌ [QS 2:7; TASHIH-TEKNIS] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P038 | Akhlak/Hadis 4 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P039 | Simulasi akhir | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P040 | Ujian Akhir Jilid 4 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P039 | Simulasi akhir | يُخَٰدِعُونَ ٱللَّهَ وَٱلَّذِينَ ءَامَنُوا۟ وَمَا يَخْدَعُونَ إِلَّآ أَنفُسَهُمْ وَمَا يَشْعُرُونَ [QS 2:9; TASHIH-TEKNIS] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P040 | Ujian Akhir Jilid 4 | إِنَّ ٱلَّذِينَ كَفَرُوا۟ سَوَآءٌ عَلَيْهِمْ ءَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ [QS 2:6; TASHIH-TEKNIS] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 
 ## Kandidat bank jilid 4 — belum dialokasikan ke halaman
 
@@ -278,3 +278,17 @@ Empat slot K01 kini berisi **identitas ayat lengkap** yang dapat ditelusuri ke b
 | QS 2:6 (AY-001) | P040/K01 | HOLD di bank | Tasydid, mad, nun sukun; belum ditashih |
 
 **Pintu masuk K01–K24:** (1) teks satu ayat lengkap, (2) sumber dan rasm diperiksa, (3) semua hukum tajwid di dalam ayat dipetakan, (4) semua sudah diajarkan sebelum halaman tujuan, (5) disahkan guru ahli. Belum ada sel yang memenuhi seluruh lima syarat. Status Sah tetap 0/24. Jangan mengganti HOLD dengan kata atau petikan yang diklaim sebagai ayat.
+
+
+## TASHIH MANDIRI TEKNIS — 4 AYAT UTUH DISELARASKAN DENGAN REGISTER
+
+**Ruang lingkup:** Pemeriksaan mandiri atas batas ayat, teks Utsmani, identitas surah:ayat, dan kecocokan umum dengan tahapan integrasi J4. Sumber teks Utsmani: https://quranandsunnah.world/id/kutuphane/kuran-quran-uthmani-tanzil-txt ; pembanding https://quran.com/al-baqarah. **Bukan sertifikasi sanad/qiraat atau pengesahan cetak oleh pentashih manusia.** Empat teks utuh sekarang ditempatkan di K01, bukan hanya ID kandidat. Kolom Sah tetap 0/24 sampai verifikasi akhir yang mencakup tanda waqaf, font KFGQPC, serta bacaan wasal dan waqaf.
+
+| Slot | Sumber | Hasil audit mandiri | Status |
+|---|---|---|---|
+| P033/K01 | QS 2:8 | Nun sukun pada مَن يَقُولُ → idgham bighunnah (P006); alif-lam syamsiyah pada ٱلنَّاسِ (P029); mad dan tasydid; integrasi nun–mim–alif-lam P033 | TASHIH TEKNIS, belum sah cetak |
+| P037/K01 | QS 2:7 | Tanwin عَذَابٌ عَظِيمٌ → izhar halqi (P003); mad dan lafzul jalalah; simulasi ayat utuh P037 | TASHIH TEKNIS, belum sah cetak |
+| P039/K01 | QS 2:9 | Nun sukun أَنفُسَهُمْ → ikhfa bertemu ف (P015); alif-lam syamsiyah ٱلَّذِينَ (P029); mad; simulasi akhir P039 | TASHIH TEKNIS, belum sah cetak |
+| P040/K01 | QS 2:6 | Nun sukun ءَأَنذَرْتَهُمْ → ikhfa bertemu ذ (P013), nun sukun تُنذِرْهُمْ → ikhfa bertemu ذ; tasydid dan mad; ujian akhir P040 | TASHIH TEKNIS, belum sah cetak |
+
+**Koreksi terhadap keputusan sebelumnya:** Keempat kandidat dipindahkan kembali ke sel K01 **setelah** teks lengkap dan hukum target diperiksa, bukan sebagai isi sah otomatis. Bila pemeriksaan font/rasm/waqaf berikutnya menemukan masalah, wajib diperbaiki sebelum produksi. Setiap ayat hanya dipakai sekali.
