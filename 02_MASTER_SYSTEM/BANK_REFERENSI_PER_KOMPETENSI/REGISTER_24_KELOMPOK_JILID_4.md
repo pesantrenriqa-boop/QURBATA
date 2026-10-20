@@ -42,8 +42,8 @@
 | P036 | Hafalan 2 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P037 | Simulasi baca ayat pendek | خَتَمَ ٱللَّهُ عَلَىٰ قُلُوبِهِمْ وَعَلَىٰ سَمْعِهِمْ وَعَلَىٰٓ أَبْصَٰرِهِمْ غِشَٰوَةٌ وَلَهُمْ عَذَابٌ عَظِيمٌ [QS 2:7; TASHIH-TEKNIS] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P038 | Akhlak/Hadis 4 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P039 | Simulasi akhir | يُخَٰدِعُونَ ٱللَّهَ وَٱلَّذِينَ ءَامَنُوا۟ وَمَا يَخْدَعُونَ إِلَّآ أَنفُسَهُمْ وَمَا يَشْعُرُونَ [QS 2:9; TASHIH-TEKNIS] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P040 | Ujian Akhir Jilid 4 | إِنَّ ٱلَّذِينَ كَفَرُوا۟ سَوَآءٌ عَلَيْهِمْ ءَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ [QS 2:6; TASHIH-TEKNIS] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P039 | Simulasi akhir | يُخَٰدِعُونَ ٱللَّهَ وَٱلَّذِينَ ءَامَنُوا۟ وَمَا يَخْدَعُونَ إِلَّآ أَنفُسَهُمْ وَمَا يَشْعُرُونَ [QS 2:9; TASHIH-TEKNIS] | فِى قُلُوبِهِم مَّرَضٌ فَزَادَهُمُ ٱللَّهُ مَرَضًا وَلَهُمْ عَذَابٌ أَلِيمٌ بِمَا كَانُوا يَكْذِبُونَ [QS 2:10; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P040 | Ujian Akhir Jilid 4 | إِنَّ ٱلَّذِينَ كَفَرُوا۟ سَوَآءٌ عَلَيْهِمْ ءَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ [QS 2:6; TASHIH-TEKNIS] | وَإِذَا قِيلَ لَهُمْ لَا تُفْسِدُوا فِى ٱلْأَرْضِ قَالُوا إِنَّمَا نَحْنُ مُصْلِحُونَ [QS 2:11; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 
 ## Kandidat bank jilid 4 — belum dialokasikan ke halaman
 
@@ -292,3 +292,12 @@ Empat slot K01 kini berisi **identitas ayat lengkap** yang dapat ditelusuri ke b
 | P040/K01 | QS 2:6 | Nun sukun ءَأَنذَرْتَهُمْ → ikhfa bertemu ذ (P013), nun sukun تُنذِرْهُمْ → ikhfa bertemu ذ; tasydid dan mad; ujian akhir P040 | TASHIH TEKNIS, belum sah cetak |
 
 **Koreksi terhadap keputusan sebelumnya:** Keempat kandidat dipindahkan kembali ke sel K01 **setelah** teks lengkap dan hukum target diperiksa, bukan sebagai isi sah otomatis. Bila pemeriksaan font/rasm/waqaf berikutnya menemukan masalah, wajib diperbaiki sebelum produksi. Setiap ayat hanya dipakai sekali.
+
+
+## PENGISIAN LANJUTAN — K02 P039 DAN P040
+
+**P039/K02:** QS Al-Baqarah 2:10, satu ayat lengkap; sumber https://quran.com/2/10. Temuan: مَّرَضٌ setelah mim sukun قُلُوبِهِمْ = idgham mimi; tanwin مَرَضًا diikuti وَلَهُمْ = idgham bighunnah; tanwin عَذَابٌ diikuti أَلِيمٌ = izhar halqi. Cocok sebagai kandidat integrasi akhir, **belum sah cetak**.
+
+**P040/K02:** QS Al-Baqarah 2:11, satu ayat lengkap; sumber https://quran.com/2/11. Temuan: mim sukun pada لَهُمْ diikuti لَا = izhar syafawi; alif-lam qamariyah pada ٱلْأَرْضِ; tasydid pada إِنَّمَا dan mad pada beberapa kata. Cocok sebagai kandidat ujian integrasi, **belum sah cetak**.
+
+Kedua teks disimpan sebagai transkripsi latihan berharakat untuk pemeriksaan isi, **bukan jaminan identik seluruh tanda rasm/waqaf Utsmani**. Kolom Sah tetap 0/24 hingga penyelarasan glyph Uthman Taha dan pemeriksaan mushaf akhir. Setiap ayat dipakai satu kali.
