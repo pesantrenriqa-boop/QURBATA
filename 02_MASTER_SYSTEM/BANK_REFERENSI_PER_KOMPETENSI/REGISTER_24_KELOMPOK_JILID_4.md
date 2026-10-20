@@ -1,6 +1,6 @@
 # QURBATA JILID 4 — REGISTER 40 HALAMAN × 24 KELOMPOK
 
-**REGISTER KAPASITAS — AUDIT SUMBER J4 DIMULAI, BELUM SAH CETAK.** Setiap sel Kxx adalah satu kelompok. `—` = belum terisi, bukan contoh sah. Tidak boleh mengulang otomatis. Wajib cocokkan master dan tashih mushaf. J4: ayat panjang luar Juz Amma.
+**REGISTER KAPASITAS — KEBIJAKAN TERBARU: POTONGAN AYAT PENDEK YANG SESUAI MATERI.** Satu kelompok berupa penggalan kontigu dari satu ayat Al-Qur'an, disertai QS dan nomor ayat; bukan gabungan kata dari sumber berbeda. Setiap penggalan wajib diuji hukum tajwid yang muncul, termasuk saat wasal, sebelum dianggap layak cetak. Kolom Sah tetap 0/24 sampai audit tuntas.
 
 | Halaman | Kompetensi | K01 | K02 | K03 | K04 | K05 | K06 | K07 | K08 | K09 | K10 | K11 | K12 | K13 | K14 | K15 | K16 | K17 | K18 | K19 | K20 | K21 | K22 | K23 | K24 | Sah |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -36,14 +36,14 @@
 | P030 | Evaluasi Mim dan Alif-Lam I | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P031 | Alif-lam syamsiyah II | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P032 | Kontras qamariyah–syamsiyah | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P033 | Integrasi nun–mim–alif-lam | وَمِنَ ٱلنَّاسِ مَن يَقُولُ ءَامَنَّا بِٱللَّهِ وَبِٱلْيَوْمِ ٱلْـَٔاخِرِ وَمَا هُم بِمُؤْمِنِينَ [QS 2:8; TASHIH-TEKNIS] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P033 | Integrasi nun–mim–alif-lam | مَن يَقُولُ ءَامَنَّا [PENGGALAN QS 2:8; PERLU AUDIT] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P034 | Remedial pola kritis | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P035 | Murojaah berjarak | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P036 | Hafalan 2 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P037 | Simulasi baca ayat pendek | خَتَمَ ٱللَّهُ عَلَىٰ قُلُوبِهِمْ وَعَلَىٰ سَمْعِهِمْ وَعَلَىٰٓ أَبْصَٰرِهِمْ غِشَٰوَةٌ وَلَهُمْ عَذَابٌ عَظِيمٌ [QS 2:7; TASHIH-TEKNIS] | ٱللَّهُ يَسْتَهْزِئُ بِهِمْ وَيَمُدُّهُمْ فِي طُغْيَٰنِهِمْ يَعْمَهُونَ [QS 2:15; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P037 | Simulasi baca ayat pendek | وَعَلَىٰ سَمْعِهِمْ [PENGGALAN QS 2:7; PERLU AUDIT] | بِهِمْ وَيَمُدُّهُمْ [PENGGALAN QS 2:15; PERLU AUDIT] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 | P038 | Akhlak/Hadis 4 | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P039 | Simulasi akhir | يُخَٰدِعُونَ ٱللَّهَ وَٱلَّذِينَ ءَامَنُوا۟ وَمَا يَخْدَعُونَ إِلَّآ أَنفُسَهُمْ وَمَا يَشْعُرُونَ [QS 2:9; TASHIH-TEKNIS] | فِى قُلُوبِهِم مَّرَضٌ فَزَادَهُمُ ٱللَّهُ مَرَضًا وَلَهُمْ عَذَابٌ أَلِيمٌ بِمَا كَانُوا يَكْذِبُونَ [QS 2:10; AUDIT MANDIRI] | وَإِذَا قِيلَ لَهُمْ ءَامِنُوا كَمَآ ءَامَنَ ٱلنَّاسُ قَالُوا أَنُؤْمِنُ كَمَآ ءَامَنَ ٱلسُّفَهَآءُ أَلَآ إِنَّهُمْ هُمُ ٱلسُّفَهَآءُ وَلَٰكِن لَّا يَعْلَمُونَ [QS 2:13; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
-| P040 | Ujian Akhir Jilid 4 | إِنَّ ٱلَّذِينَ كَفَرُوا۟ سَوَآءٌ عَلَيْهِمْ ءَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ [QS 2:6; TASHIH-TEKNIS] | وَإِذَا قِيلَ لَهُمْ لَا تُفْسِدُوا فِى ٱلْأَرْضِ قَالُوا إِنَّمَا نَحْنُ مُصْلِحُونَ [QS 2:11; AUDIT MANDIRI] | أَلَآ إِنَّهُمْ هُمُ ٱلْمُفْسِدُونَ وَلَـٰكِن لَّا يَشْعُرُونَ [QS 2:12; AUDIT MANDIRI] | وَإِذَا لَقُوا ٱلَّذِينَ ءَامَنُوا قَالُوا ءَامَنَّا وَإِذَا خَلَوْا إِلَىٰ شَيَٰطِينِهِمْ قَالُوا إِنَّا مَعَكُمْ إِنَّمَا نَحْنُ مُسْتَهْزِءُونَ [QS 2:14; AUDIT MANDIRI] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P039 | Simulasi akhir | أَنفُسَهُمْ وَمَا يَشْعُرُونَ [PENGGALAN QS 2:9; PERLU AUDIT] | فِى قُلُوبِهِم مَّرَضٌ [PENGGALAN QS 2:10; PERLU AUDIT] | ءَامَنَ ٱلنَّاسُ [PENGGALAN QS 2:13; PERLU AUDIT] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
+| P040 | Ujian Akhir Jilid 4 | إِنَّ ٱلَّذِينَ كَفَرُوا۟ [PENGGALAN QS 2:6; PERLU AUDIT] | لَهُمْ لَا تُفْسِدُوا [PENGGALAN QS 2:11; PERLU AUDIT] | هُمُ ٱلْمُفْسِدُونَ [PENGGALAN QS 2:12; PERLU AUDIT] | مَعَكُمْ إِنَّمَا [PENGGALAN QS 2:14; PERLU AUDIT] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/24 |
 
 ## Kandidat bank jilid 4 — belum dialokasikan ke halaman
 
@@ -317,3 +317,23 @@ Tiga ayat utuh ditambahkan pada P039/K03 (2:13), P040/K04 (2:14), P037/K02 (2:15
 - **2:15:** mim sukun bertemu waw pada بِهِمْ وَيَمُدُّهُمْ (izhar syafawi); mad pada فِي dan طُغْيَٰنِهِمْ; cocok sebagai kandidat simulasi bacaan P037.
 
 **Kendali kualitas:** pastikan tanda waqaf dan rasm sesuai mushaf saat layout; cek ulang seluruh hukum tajwid, termasuk sambungan antar-kata. Jangan menaikkan kolom Sah secara otomatis.
+
+
+## REVISI KEBIJAKAN — PENGGALAN AYAT PROPORSIONAL
+
+**Instruksi terbaru menggantikan kewajiban satu ayat lengkap.** Gunakan petikan pendek yang merupakan rentang kata berurutan dari satu ayat yang sama, mengandung tepat sasaran kompetensi, tidak terlalu panjang, tidak menyisipkan kata buatan, dan menyertakan sumber QS. Boleh 2–6 kata atau lebih sedikit/panjang sesuai kebutuhan pedagogis, tanpa memaksakan kuota. Batas penggalan tidak boleh mengubah makna secara menyesatkan. Hukum pada sambungan antar-kata wajib dihitung. Periksa teks rasm Utsmani dan tanda baca sebelum layout.
+
+**Migrasi:** 10 sel kandidat lama QS 2:6–15 diubah dari teks ayat panjang menjadi penggalan pendek yang dapat ditelusuri. Semuanya tetap berstatus PERLU AUDIT; tidak otomatis SAH CETAK. Catatan audit historis sebelumnya tetap tersimpan tetapi tidak lagi menjadi kebijakan pengisian terbaru.
+
+| Rujukan | Penggalan pendek | Fokus awal yang perlu diverifikasi |
+|---|---|---|
+| QS 2:6 | إِنَّ ٱلَّذِينَ كَفَرُوا۟ | Cocokkan seluruh hukum dan urutan kompetensi sebelum disahkan |
+| QS 2:7 | وَعَلَىٰ سَمْعِهِمْ | Cocokkan seluruh hukum dan urutan kompetensi sebelum disahkan |
+| QS 2:8 | مَن يَقُولُ ءَامَنَّا | Cocokkan seluruh hukum dan urutan kompetensi sebelum disahkan |
+| QS 2:9 | أَنفُسَهُمْ وَمَا يَشْعُرُونَ | Cocokkan seluruh hukum dan urutan kompetensi sebelum disahkan |
+| QS 2:10 | فِى قُلُوبِهِم مَّرَضٌ | Cocokkan seluruh hukum dan urutan kompetensi sebelum disahkan |
+| QS 2:11 | لَهُمْ لَا تُفْسِدُوا | Cocokkan seluruh hukum dan urutan kompetensi sebelum disahkan |
+| QS 2:12 | هُمُ ٱلْمُفْسِدُونَ | Cocokkan seluruh hukum dan urutan kompetensi sebelum disahkan |
+| QS 2:13 | ءَامَنَ ٱلنَّاسُ | Cocokkan seluruh hukum dan urutan kompetensi sebelum disahkan |
+| QS 2:14 | مَعَكُمْ إِنَّمَا | Cocokkan seluruh hukum dan urutan kompetensi sebelum disahkan |
+| QS 2:15 | بِهِمْ وَيَمُدُّهُمْ | Cocokkan seluruh hukum dan urutan kompetensi sebelum disahkan |
