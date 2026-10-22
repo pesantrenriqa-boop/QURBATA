@@ -765,3 +765,16 @@ Ditambahkan 10 kandidat pada halaman P002, P003, P004, P005, P014, P026, P031, P
 
 - P003/K12: hapus kandidat مِنْ عِلْمٍ إِلَّا karena QS 17:85 menggunakan مِنَ الْعِلْمِ إِلَّا, bukan penggalan tersebut.
 - Kandidat aktif 338/960, belum sah cetak.
+
+
+## Daftar prioritas tashih sumber
+
+Contoh berikut diprioritaskan untuk pemeriksaan mushaf dan kesesuaian rujukan; **belum dihapus dan belum dinyatakan salah**:
+- P002/K10: مِنْ أَوْلِيَاءَ QS 4:76
+- P003/K10: مِنْ عَذَابٍ QS 2:49
+- P007/K05: مِنْ مَالٍ QS 23:55
+- P008/K09: عَلِيمٌ رَحِيمٌ QS 9:47
+- P012/K05: مِنْ جَنَّاتٍ QS 18:31
+- P013/K06: مِنْ زُخْرُفٍ QS 17:93
+- P027/K13: الْيَتِيمَ QS 93:9
+- P040/K07: وَالْعَصْرِ إِنَّ الْإِنْسَانَ QS 103:1-2
