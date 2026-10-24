@@ -964,3 +964,14 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - P028/K01 الْحَمْدُ لِلَّهِ sama dengan P026/K01; audit variasi lintas kompetensi, bukan otomatis salah.
 - P029/K10 الشَّمْسِ berujuk QS 91:1; redaksi ayat dimulai وَالشَّمْسِ. Penggalan internal bisa sah, tetapi jika dimaksud pembuka ayat lengkap perlu وَ.
 - Semua temuan masih kandidat; validasi rasm Utsmani, waqaf/wasal, dan hukum bacaan tetap wajib. Angka 379/960 adalah baseline commit ef7d901, bukan hitung ulang setelah audit ini.
+
+
+## Audit P030–P032 (24 Oktober 2026)
+
+- P031/K01, K04, K05 adalah variasi potongan QS 91:1 yang sama; prioritaskan keragaman tanpa menyebut teks salah.
+- P031/K03 الصَّمَدُ dan K09 اللَّهُ الصَّمَدُ berasal dari QS 112:2 yang sama; pengulangan perlu alasan pedagogis.
+- P031/K11 وَالنَّازِعَاتِ benar sebagai pembuka QS 79:1; kandidat dipertahankan.
+- P032/K01 الْقَمَرِ إِذَا تَلَاهَا adalah penggalan QS 91:2; ق qamariyah.
+- P032/K03 وَالْعَصْرِ mengulang P026/K16 dan P027/K06; prioritaskan pengganti.
+- P032/K07 وَالشَّمْسِ وَضُحَاهَا mengulang P029/K11 dan P031/K04; prioritaskan pengganti.
+- Seluruhnya belum sah cetak sampai verifikasi rasm Utsmani dan hukum bacaan selesai. Baseline 379/960 tidak berubah.
