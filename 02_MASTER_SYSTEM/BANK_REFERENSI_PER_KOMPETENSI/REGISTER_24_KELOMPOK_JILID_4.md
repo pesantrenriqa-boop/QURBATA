@@ -1084,3 +1084,12 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - P022/K07 dibersihkan dari label tumpang tindih setelah K06 dinonaktifkan; contoh panjang QS 83:17 dipertahankan.
 - P030/K01 diperpanjang lintas QS 1:3–4 untuk memperlihatkan perbandingan alif-lam syamsiyah dan qamariyah.
 - Status tetap kandidat; wajib verifikasi terhadap mushaf rasm Utsmani sebelum sah cetak.
+
+
+## Audit silang duplikasi lintas halaman (24 Oktober 2026)
+
+- Cakupan: hanya 40 baris register utama P001–P040; catatan riwayat/audit di bawah tabel tidak dihitung ulang sebagai slot.
+- Total kandidat aktif: **368**; frasa Arab unik (berdasarkan kecocokan teks persis sebelum anotasi): **211**; frasa yang muncul pada lebih dari satu halaman: **77**. Angka ini adalah inventaris pengulangan, **bukan** jumlah kesalahan.
+- **Tidak ditemukan duplikasi teks persis dalam halaman yang sama** pada register utama setelah koreksi P038. Pengulangan lintas halaman tetap diperbolehkan bila memiliki fungsi eksplisit: pengenalan, kontras hukum, remedial, murojaah berjarak, atau ujian akhir.
+- Prioritas kurasi: `مِنْ شَرِّ مَا خَلَقَ` muncul **8 kali** (P001, P014, P016, P018, P020, P033, P034, P036); `مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ` muncul **6 kali** (P001, P014, P018, P035, P039, P040); `الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ` muncul **6 kali** (P026, P027, P028, P030, P032, P034). Pada audit berikutnya, setiap pengulangan ini harus dibenarkan oleh tujuan kompetensi; bila tidak, pilih ayat lain yang setara dan legal.
+- Audit ini bersifat struktural dan **tidak mengesahkan** kesesuaian rujukan ayat, tajwid saat wasal, harakat, maupun rasm Utsmani. Semua slot tetap **KANDIDAT**, bukan SAH cetak.
