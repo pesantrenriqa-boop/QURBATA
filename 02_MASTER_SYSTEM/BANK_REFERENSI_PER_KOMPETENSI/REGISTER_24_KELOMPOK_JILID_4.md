@@ -992,3 +992,13 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - P036/K07–K10 diisi empat kandidat ayat pendek untuk hafalan: QS 112:2, QS 112:3, QS 114:2, QS 114:3.
 - Penggalan dipilih dari ayat yang diketahui lengkap, bukan menyambung kata dari ayat berbeda. Tetap perlu verifikasi mushaf Utsmani dan gate tajwid sebelum dinyatakan sah cetak.
 - Audit jumlah kandidat per halaman sebelumnya mengidentifikasi P036 memiliki 6/24; setelah pengayaan menjadi 10/24.
+
+
+## Kebijakan revisi kapasitas P020–P040 (24 Oktober 2026)
+
+- P001–P019: kapasitas maksimal 24 kelompok per halaman; contoh cenderung pendek sesuai tahap awal.
+- P020–P040: kapasitas maksimal 16 kelompok per halaman; utamakan frasa kontigu lebih panjang dari pola 24 kelompok, umumnya 2–6 kata bila cocok dengan kompetensi dan batas ayat. Tidak wajib mengisi seluruh 16 jika target pembelajaran telah tercapai.
+- Kolom K17–K24 pada P020–P040 adalah kolom legacy nonaktif, **bukan** kekurangan yang wajib diisi. Register 24 kolom dipertahankan sementara demi kompatibilitas; renderer harus mengabaikan kolom nonaktif pada halaman 20 ke atas.
+- Audit migrasi: P026 mempunyai 17 kandidat dan P035 mempunyai 18; perlu kurasi menjadi paling banyak 16 tanpa membuang kandidat sebelum diverifikasi dan dipindahkan ke bank cadangan.
+- Kapasitas baru maksimum: (19 × 24) + (21 × 16) = 792 kelompok. Hitungan kandidat sebelum kurasi: 382, tetapi 3 kandidat melebihi batas halaman P026 dan P035, sehingga jumlah kandidat yang masuk batas aktif saat ini maksimal 379. Ini bukan jumlah sah cetak.
+- Untuk P020–P040, kriteria mutu adalah kecocokan materi, kontinuitas ayat, ketepatan rasm, keragaman, dan kecukupan pedagogis, bukan mengejar angka 16.
