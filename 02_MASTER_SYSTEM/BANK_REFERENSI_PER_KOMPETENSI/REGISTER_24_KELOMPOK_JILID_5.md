@@ -1,49 +1,49 @@
 # QURBATA JILID 5 — REGISTER 40 HALAMAN (P001–P020: 16; P021–P040: 8 KELOMPOK)
 
-**DRAF KERANGKA KOMPETENSI 40 HALAMAN — BUKAN TASHIH FINAL.** Kerangka P001–P040 telah diisi untuk percepatan produksi; wajib disinkronkan dengan master kompetensi resmi sebelum penulisan contoh. **REGISTER KAPASITAS, BELUM ISI FINAL.** Kapasitas baru: P001–P020 maksimal 16 kelompok/halaman, P021–P040 maksimal 8 kelompok/halaman, total 480 kelompok. K09–K16 pada P021–P040 dinonaktifkan (—). Setiap sel Kxx adalah satu kelompok. `—` = belum terisi, bukan contoh sah. Tidak boleh mengulang otomatis. Wajib cocokkan master dan tashih mushaf. J4: ayat panjang luar Juz Amma.
+**SINKRON DENGAN QJ5-MASTER RESMI DI books/jilid-5/QJ5-MASTER-Struktur-40-Halaman.md.** Semua 40 kompetensi diturunkan dari master. Sebanyak 24 kandidat awal yang dibuat memakai urutan kompetensi keliru dikosongkan dari slot aktif agar tidak dianggap sesuai kurikulum. **DRAF KERANGKA KOMPETENSI 40 HALAMAN — BUKAN TASHIH FINAL.** Kerangka P001–P040 telah diisi untuk percepatan produksi; wajib disinkronkan dengan master kompetensi resmi sebelum penulisan contoh. **REGISTER KAPASITAS, BELUM ISI FINAL.** Kapasitas baru: P001–P020 maksimal 16 kelompok/halaman, P021–P040 maksimal 8 kelompok/halaman, total 480 kelompok. K09–K16 pada P021–P040 dinonaktifkan (—). Setiap sel Kxx adalah satu kelompok. `—` = belum terisi, bukan contoh sah. Tidak boleh mengulang otomatis. Wajib cocokkan master dan tashih mushaf. J4: ayat panjang luar Juz Amma.
 
 | Halaman | Kompetensi | K01 | K02 | K03 | K04 | K05 | K06 | K07 | K08 | K09 | K10 | K11 | K12 | K13 | K14 | K15 | K16 | Sah |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| P001 | Orientasi ayat bersambung dan waqaf [RENCANA SEMENTARA; COCOKKAN MASTER] | الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ [KANDIDAT QS 1:2; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | الرَّحْمَٰنِ الرَّحِيمِ [KANDIDAT QS 1:3; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | مَالِكِ يَوْمِ الدِّينِ [KANDIDAT QS 1:4; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ [KANDIDAT QS 1:5; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P002 | Pengulangan hukum nun sukun dalam ayat [RENCANA SEMENTARA; COCOKKAN MASTER] | مِنْ شَرِّ مَا خَلَقَ [KANDIDAT QS 113:2; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ [KANDIDAT QS 113:3; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ [KANDIDAT QS 113:4; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ [KANDIDAT QS 113:5; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P003 | Pengulangan hukum mim sukun dalam ayat [RENCANA SEMENTARA; COCOKKAN MASTER] | تَرْمِيهِمْ بِحِجَارَةٍ مِنْ سِجِّيلٍ [KANDIDAT QS 105:4; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | لَهُمْ مَا يَشَاءُونَ عِنْدَ رَبِّهِمْ [KANDIDAT QS 39:34; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | وَلَهُمْ فِيهَا أَزْوَاجٌ مُطَهَّرَةٌ [KANDIDAT QS 2:25; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | كَمْ مِنْ فِئَةٍ قَلِيلَةٍ [KANDIDAT QS 2:249; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P004 | Kontras alif-lam syamsiyah–qamariyah [RENCANA SEMENTARA; COCOKKAN MASTER] | وَالتِّينِ وَالزَّيْتُونِ [KANDIDAT QS 95:1; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | وَالشَّمْسِ وَضُحَاهَا [KANDIDAT QS 91:1; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | وَالْقَمَرِ إِذَا تَلَاهَا [KANDIDAT QS 91:2; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | اقْتَرَبَتِ السَّاعَةُ وَانْشَقَّ الْقَمَرُ [KANDIDAT QS 54:1; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P005 | Mad thabi'i dalam ayat I [RENCANA SEMENTARA; COCOKKAN MASTER] | قُلْ أَعُوذُ بِرَبِّ النَّاسِ [KANDIDAT QS 114:1; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | مَلِكِ النَّاسِ [KANDIDAT QS 114:2; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | إِلَٰهِ النَّاسِ [KANDIDAT QS 114:3; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | اللَّهُ الصَّمَدُ [KANDIDAT QS 112:2; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P006 | Mad thabi'i dalam ayat II [RENCANA SEMENTARA; COCOKKAN MASTER] | إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ [KANDIDAT QS 108:1; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | فَصَلِّ لِرَبِّكَ وَانْحَرْ [KANDIDAT QS 108:2; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ [KANDIDAT QS 108:3; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | قُلْ هُوَ اللَّهُ أَحَدٌ [KANDIDAT QS 112:1; DRAF AWAL; TASHIH RASM DAN KESESUAIAN KOMPETENSI WAJIB] | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P007 | Mad wajib muttasil I [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P008 | Mad wajib muttasil II [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P009 | Mad jaiz munfasil I [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P010 | Mad jaiz munfasil II [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P011 | Kontras mad thabi'i–far'i [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P012 | Latihan ayat dengan beberapa mad [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P013 | Mad 'aridh lissukun I [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P014 | Mad 'aridh lissukun II [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P015 | Mad lin I [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P016 | Mad lin II [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P017 | Latihan waqaf dan ibtida I [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P018 | Latihan waqaf dan ibtida II [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P019 | Integrasi hukum mad I [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P020 | Evaluasi antara: hukum mad [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
-| P021 | Qalqalah sughra I [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P022 | Qalqalah sughra II [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P023 | Qalqalah kubra I [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P024 | Qalqalah kubra II [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P025 | Kontras qalqalah dan sukun biasa [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P026 | Tafkhim dan tarqiq ra I [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P027 | Tafkhim dan tarqiq ra II [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P028 | Lam jalalah: tafkhim dan tarqiq [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P029 | Integrasi qalqalah, ra, dan lam [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P030 | Evaluasi antara: makharij dan sifat [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P031 | Membaca ayat 1 baris I [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P032 | Membaca ayat 1 baris II [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P033 | Membaca ayat 1 baris III [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P034 | Membaca ayat 1 baris IV [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P035 | Murojaah berjarak hukum mad [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P036 | Murojaah berjarak qalqalah dan ra [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P037 | Latihan ayat kontigu dan waqaf [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P038 | Simulasi bacaan terintegrasi I [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P039 | Simulasi bacaan terintegrasi II [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
-| P040 | Evaluasi akhir Jilid 5 [RENCANA SEMENTARA; COCOKKAN MASTER] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P001 | Orientasi mad lanjutan — review mad asli dan satuan panjang [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P002 | Mad wajib muttasil I — pengenalan struktur dalam satu kata [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P003 | Mad wajib muttasil II — transfer contoh sah [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P004 | Mad jaiz munfasil I — struktur antarkata [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P005 | Mad jaiz munfasil II — transfer contoh sah [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P006 | Kontras wajib–jaiz — lokasi hamzah dan struktur [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P007 | Mad badal — contoh terkendali [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P008 | Mad silah qashirah — ha dhamir tanpa hamzah sesudahnya [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P009 | Mad silah thawilah — ha dhamir dengan hamzah sesudahnya [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P010 | Evaluasi Mad I — P001–P009 [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P011 | Mad lazim kalimi — struktur bertasydid/bersukun tetap [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P012 | Mad lazim harfi — huruf muqaththa'ah sesuai jalur ahli [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P013 | Mad farq — contoh terbatas tervalidasi [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P014 | Kontras mad lazim — kalimi dan harfi [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P015 | Mad 'aridh lissukun — perubahan karena waqaf [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P016 | Mad lin — waw/ya lin saat waqaf [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P017 | Kontras 'aridh–lin — struktur dan bunyi [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P018 | Hafalan 1 — unit Al-Qur'an disahkan [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P019 | Transfer mad far'i — potongan baru setara [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P020 | Evaluasi Mad II — P011–P019 [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/16 |
+| P021 | Integrasi mad pada ayat pendek — seluruh jenis eligible [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P022 | Panjang mad dan tempo — konsistensi sesuai riwayat bacaan [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P023 | Deteksi kesalahan pemanjangan — kurang/lebih panjang [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P024 | Mad dan waqaf awal — pengaruh berhenti sederhana [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P025 | Murojaah berjarak I — mad asli dan far'i [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P026 | Bentuk paralel I — ayat/potongan setara [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P027 | Bentuk paralel II — transfer tanpa hafalan urutan [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P028 | Bahasa Arab 5 — struktur dan teks kumulatif tervalidasi [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P029 | Integrasi tartil awal — mad, makhraj, hukum terdahulu [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P030 | Evaluasi Mad Terpadu — P021–P029 [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P031 | Ayat pendek bersumber I — integrasi kaidah [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P032 | Ayat pendek bersumber II — integrasi kaidah [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P033 | Remedial berbasis profil — jenis mad kritis [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P034 | Retensi tertunda — sampel N+8 [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P035 | Simulasi baca ayat — tempo dan panjang konsisten [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P036 | Hafalan 2 — unit sah + murojaah [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P037 | Transfer lintas tema — sampel baru setara [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P038 | Akhlak/Hadis 5 — niat, tanggung jawab, disiplin, adil [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P039 | Simulasi akhir — seluruh mad Jilid 5 [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
+| P040 | Ujian Akhir Jilid 5 — retensi, transfer, dan adab [SESUAI QJ5-MASTER; DRAF] | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 0/8 |
 
 ## Kandidat bank jilid 5 — belum dialokasikan ke halaman
 
