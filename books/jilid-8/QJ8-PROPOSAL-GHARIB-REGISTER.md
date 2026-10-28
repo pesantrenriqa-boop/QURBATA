@@ -36,3 +36,21 @@ Page-ID | Slot 01–09 | Competency-ID | Materi | Lafaz Utsmani | Surah:Ayat | S
 4. Petakan kembali domain HIF, FAH, AMT dan KHT serta portofolio dari master lama agar tidak hilang.
 5. Wajib Decision-ID dan review ahli sebelum mengganti master resmi.
 6. Tiap contoh Qurani memerlukan Source-ID, lokasi ayat, whitelist, tashih, dan audit.
+
+
+## Revisi arah berdasarkan rujukan Buku Gharib Metode UMMI (28 Oktober 2026)
+
+**Prioritas baru:** contoh bacaan gharib/musykilat dan latihan lafaz Qurani; teori maksimal ringkas. Pendekatan Ummi sebagai referensi pedagogis, bukan menyalin tata letak/isi buku.
+
+**Referensi:** https://ummifoundation.org/program ; https://fliphtml5.com/cpmkq/xkgu/UMMI_Gharib/ (materi pengantar yang dapat dibaca); https://ummifoundation.org/metode
+
+**Contoh kandidat autentik untuk tashih dan verifikasi rasm:**
+- Saktah: Al-Kahfi 18:1–2 (عِوَجًا / قَيِّمًا); Yasin 36:52 (مَرْقَدِنَا / هَٰذَا); Al-Qiyamah 75:27 (مَنْ / رَاقٍ); Al-Muthaffifin 83:14 (بَلْ / رَانَ).
+- Imalah: Hud 11:41 (مَجْر۪ىٰهَا).
+- Tashil: Fussilat 41:44 (ءَا۬عْجَمِيٌّ).
+- Isymam: Yusuf 12:11 (لَا تَأْمَنَّا).
+- Bacaan khusus sin/shad: Al-Baqarah 2:245 (وَيَبْصُطُ); Al-Ghasyiyah 88:22 (بِمُصَيْطِرٍ), dengan pemeriksaan jalur riwayat dan mushaf.
+
+**Desain slot:** target 9 latihan per halaman bukan 9 kasus gharib unik. Latihan berupa lafaz sasaran, potongan konteks, latihan sambung/berhenti yang sah, identifikasi tanda, bacaan acak, dan tashih. Setiap slot harus merujuk ke ayat nyata dan status audit; jangan membuat teks Qurani buatan.
+
+**Prioritas pemeriksaan berikutnya:** inventaris seluruh kasus gharib dari referensi, cek tumpang tindih dengan Jilid 1–7, revisi alokasi P001–P040 dengan dominasi contoh nyata, validasi ahli, baru produksi register slot. Proposal ini belum mengubah master resmi.
