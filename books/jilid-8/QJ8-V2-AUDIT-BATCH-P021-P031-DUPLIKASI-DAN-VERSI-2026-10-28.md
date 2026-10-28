@@ -39,3 +39,8 @@
 - [P031–P035 dan HOLD](QJ8-V2-P031-P035-AYAT-DAN-AUDIT-HOLD-2026-10-28.md)
 
 **Kesimpulan batch:** 11 halaman ditinjau; 3 halaman punya versi utama yang masih parsial; 3 relasi pengulangan teridentifikasi; 0 halaman disahkan siap cetak.
+
+
+## Koreksi setelah revisi P032 — 28 Oktober 2026
+
+Catatan lama yang mengaitkan P032 sebagai pengulangan An-Najm 53:51 kini hanya berlaku untuk draf lama. Contoh utama P032 dipindahkan ke Hud 11:68 (lafaz ثَمُودَا), sebagaimana didokumentasikan pada `QJ8-V2-REVISI-P032-THAMUDA-HUD-11-68-2026-10-28.md` dan diselaraskan ke `QJ8-V2-P031-P035-AYAT-DAN-AUDIT-HOLD-2026-10-28.md`. P022 tetap menggunakan An-Najm 53:49–51 dengan target عَادًا ٱلْأُولَىٰ; ayat 53:51 hanya konteks. Status P032 tetap DRAF karena perbedaan wajah qiraat yang ditampilkan sumber daring dan tanda rasm harus disahkan guru Hafs serta dibandingkan dengan mushaf acuan.
