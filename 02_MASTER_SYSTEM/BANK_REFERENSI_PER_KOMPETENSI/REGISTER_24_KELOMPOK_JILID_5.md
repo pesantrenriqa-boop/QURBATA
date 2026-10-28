@@ -96,3 +96,14 @@
 2. Verifikasi kandidat dengan mushaf rujukan sebelum menandainya “Sah”.
 3. P013 tetap ditandai sebagai halaman yang memiliki 12 slot kosong; jangan mengisinya dengan contoh yang belum tervalidasi.
 4. Perbarui kolom “Sah” hanya setelah bukti tashih dicatat dan pemeriksa berwenang menyetujuinya.
+
+
+## Audit terarah P001–P010 — tindak lanjut cepat
+
+Pemindaian rujukan otomatis pada P001–P010 menemukan pengulangan sumber berikut:
+
+- P002: QS 17:81 muncul pada dua slot. Tandai satu sebagai duplikasi sumber; jangan hapus sebelum menilai fungsi latihan.
+- P004: QS 2:4 muncul pada dua slot dengan potongan berbeda. Karena sasaran hukum berada pada sambungan antarkata, kedua potongan mungkin memperlihatkan konteks yang sama; tetap perlu penilaian pedagogis.
+- P009: QS 3:83, QS 57:11, dan QS 13:39 masing-masing muncul pada dua slot. Ketiganya tidak dihitung sebagai contoh sumber unik sampai peninjauan selesai.
+
+Keputusan aman: tidak ada ayat yang dihapus atau diganti pada tahap rekap ini. Penanda duplikasi adalah status audit, bukan keputusan bahwa contoh salah. Kandidat P009 harus diperiksa khusus untuk posisi ha dhamir, hamzah setelahnya, dan kondisi wasal; tashih mushaf dan tajwid belum dinyatakan lulus.
