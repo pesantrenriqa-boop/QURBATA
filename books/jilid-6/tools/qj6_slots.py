@@ -54,6 +54,13 @@ def audit(master,inp,report):
             if r.get("competency_verified")!="yes":problems.append([sid,"COMPETENCY_UNVERIFIED"])
             if r.get("review_status")=="APPROVED" and not r.get("reviewer"):problems.append([sid,"NO_REVIEWER"])
         elif status=="APPROVED":problems.append([sid,"EMPTY_APPROVED"])
+        # Preserve rejected-example history without treating an empty slot as filled.
+        if not filled and "AUDIT-REJECTED" in (r.get("notes") or "") and status!="EMPTY":
+            problems.append([sid,"REJECTED_SLOT_NOT_EMPTY_STATUS"])
+        if filled and status=="REJECTED":
+            problems.append([sid,"REJECTED_TEXT_STILL_PRESENT"])
+        if filled and "AUDIT HOLD" in (r.get("notes") or "") and status=="APPROVED":
+            problems.append([sid,"AUDIT_HOLD_APPROVED"])
         if status=="APPROVED" and (not filled or r.get("source_verified")!="yes" or r.get("competency_verified")!="yes" or not r.get("reviewer","").strip()):
             problems.append([sid,"INVALID_APPROVAL"])
     # Catch repeated excerpts and identical verse spans within Jilid 6.
