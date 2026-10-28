@@ -1193,3 +1193,10 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Pemeriksaan teks persis pada 40 baris register tidak menemukan frasa yang sama. Ini tidak menggantikan verifikasi teks ayat dan rasm Utsmani di mushaf rujukan.
 - Status kandidat penelitian; jangan dihitung sebagai contoh sah cetak sebelum tashih akhir.
 - Sumber pembanding: https://quran.com/id/yunus/72
+
+
+## Rencana kandidat P002/K13 — 28 Oktober 2026
+
+- Slot K13 masih kosong. Kandidat yang diusulkan untuk pemeriksaan manual: penggalan QS Ali 'Imran 3:44 yang memuat frasa مِنْ أَنْبَاءِ الْغَيْبِ.
+- Sasaran yang dituju adalah nun sukun bertemu hamzah. Pemeriksaan teks persis pada baris register utama tidak menemukan frasa yang sama.
+- Belum ada perubahan slot yang disimpan pada langkah ini. Kandidat belum sah cetak; verifikasi mushaf Utsmani, harakat, dan konteks tetap wajib. Kolom Sah P002 tetap 0/24.
