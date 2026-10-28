@@ -85,3 +85,8 @@ Aturan: jika surah+ayat sama muncul pada halaman lain, isi `repeat_of` atau jela
 ## Pembaruan 28 Oktober 2026 — pelengkap konteks
 
 P023, P029, dan P030 telah berpindah dari PARSIAL ke DRAF karena ayat pendamping ditranskripsi di [berkas pelengkap](QJ8-V2-PELENGKAP-AYAT-P023-P029-P030-2026-10-28.md). Ini **bukan** kelulusan tashih; semua indikator verifikasi rasm, guru, dan layout masih false.
+
+
+## Pembaruan audit batch P021–P031 — 28 Oktober 2026
+
+Audit batch baru disimpan di [QJ8-V2-AUDIT-BATCH-P021-P031-DUPLIKASI-DAN-VERSI-2026-10-28.md](QJ8-V2-AUDIT-BATCH-P021-P031-DUPLIKASI-DAN-VERSI-2026-10-28.md). Tiga berkas utama masih parsial walau berkas pelengkap tersedia: P023, P029, P030. Sampai disinkronkan, gunakan berkas pelengkap sebagai sumber konteks terbaru, bukan berkas utama lama. Relasi pengulangan: P021/P028 pada 18:39; P022/P032 pada 53:51 (P032 HOLD); P030/P031 pada 33:66. Semua status tashih tetap belum lulus.
