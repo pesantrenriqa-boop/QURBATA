@@ -45,6 +45,18 @@ def audit(master,inp,report):
         elif status=="APPROVED":problems.append([sid,"EMPTY_APPROVED"])
         if status=="APPROVED" and (not filled or r.get("source_verified")!="yes" or r.get("competency_verified")!="yes" or not r.get("reviewer","").strip()):
             problems.append([sid,"INVALID_APPROVAL"])
+    # Catch repeated excerpts and identical verse spans within Jilid 6.
+    seen_text={};seen_verse={}
+    for r in rows:
+        if not (r.get("text_uthmani") or "").strip():continue
+        sid=r.get("slot_id","")
+        key=" ".join(r["text_uthmani"].split())
+        verse=(r.get("surah"),r.get("ayah_start"),r.get("ayah_end"))
+        if key in seen_text:problems.append([sid,"REPEATED_TEXT_J6",seen_text[key]])
+        else:seen_text[key]=sid
+        if all(verse):
+            if verse in seen_verse:problems.append([sid,"REPEATED_VERSE_J6",seen_verse[verse]])
+            else:seen_verse[verse]=sid
     for sid in sorted(expected-ids):problems.append([sid,"MISSING_SLOT"])
     filled=sum(bool(r.get("text_uthmani","").strip()) for r in rows)
     approved=sum(r.get("review_status")=="APPROVED" for r in rows)
