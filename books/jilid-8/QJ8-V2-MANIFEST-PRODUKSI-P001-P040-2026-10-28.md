@@ -36,7 +36,7 @@
 | 022 | عَادًا ٱلْأُولَىٰ | 53:49–51 | DRAF | Tandai irisan 53:51 dengan P032 |
 | 023 | Ha kinayah | 25:68–70 | DRAF | Rentang ditranskripsi di berkas pelengkap; perlu tashih |
 | 024 | Ha kinayah | 39:7 | DRAF | Wajah baca |
-| 025 | Ra khusus | 26:62–64 | DRAF | Tafkhim/tarqiq |
+| 025 | Rā’ khusus — target perlu dikunci | 26:62–64 | HOLD LABEL | Guru harus menetapkan lafaz sasaran dan dasar kompetensi |
 | 026 | الٓمٓ | 2:1–3 | DRAF | Huruf muqaththa'ah |
 | 027 | كٓهيعٓصٓ | 19:1–3 | DRAF | Huruf muqaththa'ah |
 | 028 | أَنَا | 18:39–40 | DRAF | Tandai ulang ayat P021 |
@@ -54,9 +54,9 @@
 | 040 | Ujian akhir | Bank kompetensi sah | ULANG | Pengesahan kriteria |
 
 ## Ringkasan status yang dapat dihitung
-- DRAF teks rentang ayat tersedia (belum tashih): **25 halaman**.
+- DRAF teks rentang ayat tersedia (belum tashih): **26 halaman**.
 - PARSIAL: **0 halaman** pada rentang yang direncanakan; kelengkapan teks belum berarti rasm sah.
-- HOLD: **3 halaman** (P010, P032, P033).
+- HOLD/HOLD LABEL: **2 halaman** (P025, P033). P010 dan P032 adalah DRAF, bukan HOLD.
 - ULANG/orientasi/evaluasi: **12 halaman**.
 - Total: **40 halaman**. **Tidak ada halaman berstatus siap cetak.**
 
@@ -153,3 +153,8 @@ P032 kini memakai kandidat QS. Hud 11:68 untuk lafaz ثَمُودَا, sesuai co
 - P030/P031: Al-Ahzab 33:66–67 beririsan; target masing-masing berbeda, sehingga konteks berulang harus ditandai.
 - P023: ayat inti P023 adalah 25:69; 25:68 dan 25:70 konteks pendamping, bukan contoh tambahan.
 - Status semua halaman tetap DRAF sampai pemeriksaan karakter demi karakter terhadap mushaf acuan dan pengesahan guru Hafs. Tidak ada klaim siap cetak.
+
+
+## Audit kompetensi P021–P035 — 28 Oktober 2026
+
+Lihat [QJ8-V2-AUDIT-KOMPETENSI-P021-P035-REKONSILIASI-2026-10-28.md](QJ8-V2-AUDIT-KOMPETENSI-P021-P035-REKONSILIASI-2026-10-28.md). P025 ditahan pada label sampai lafaz sasaran dan dasar kompetensi ditetapkan guru; P033 tetap HOLD menunggu daftar gharib UMMI resmi. P023/P024 dan P026/P027 diperlakukan sebagai contoh/latihan pembanding kecuali silabus resmi membedakan kompetensinya. Pengulangan konteks ditandai dan tidak menambah hitungan ayat unik.
