@@ -43,7 +43,7 @@
 | 029 | الظُّنُونَا | 33:9–11 | DRAF | Rentang ditranskripsi di berkas pelengkap; perlu tashih |
 | 030 | الرَّسُولَا | 33:65–67 | DRAF | Rentang ditranskripsi di berkas pelengkap; perlu tashih |
 | 031 | السَّبِيلَا | 33:66–68 | DRAF | Tandai ulang 33:66 dari P030 |
-| 032 | ثَمُودَا | 53:51 | HOLD | Duplikasi konteks P022; putuskan kompetensi |
+| 032 | Mad/qasr lafaz ثَمُودَا | 53:51 | DRAF PENGUATAN/ULANG | Bukan ayat unik; validasi guru Hafsh tetap wajib |
 | 033 | Nun wiqayah (?) | Belum sah | HOLD | Putuskan istilah atau ganti unit |
 | 034 | Evaluasi hamzah | 41:44;6:143;10:59 | ULANG | Rubrik |
 | 035 | Evaluasi tanda sifr | 33:10;33:66–67;76:15–16 | ULANG | Tanda dan waqf |
@@ -123,3 +123,8 @@ Audit lokasi saktah/imalah tersimpan di [QJ8-V2-AUDIT-RUJUKAN-P002-P003-P007-202
 ## Keputusan P010 — 28 Oktober 2026
 
 P010 dipetakan sebagai **Naql** pada Al-Hujurat 49:11. Dasar keputusan dan sumber pendukung ada di [QJ8-V2-KEPUTUSAN-KOMPETENSI-P010-NAQL-2026-10-28.md](QJ8-V2-KEPUTUSAN-KOMPETENSI-P010-NAQL-2026-10-28.md). Status berubah dari HOLD label ke DRAF; ini bukan pengesahan rasm, audio, atau kesiapan cetak. P032 dan P033 tetap HOLD.
+
+
+## Pembaruan P032 — 28 Oktober 2026
+
+P032 diubah dari HOLD kompetensi menjadi **DRAF PENGUATAN/ULANG** untuk fokus mad/qasr lafaz ثَمُودَا pada An-Najm 53:51. Rujukan pembelajaran menyebut lafaz tersebut dibaca pendek, tetapi kategori akhir dan praktik baca tetap perlu disahkan guru Hafsh. Ayat 53:51 tetap ditandai pengulangan konteks P022 dan tidak menambah hitungan ayat unik. Keputusan dicatat pada [register HOLD/anti-duplikasi](QJ8-V2-KEPUTUSAN-HOLD-DAN-REGISTER-ANTI-DUPLIKASI-2026-10-28.md).
