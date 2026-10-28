@@ -90,3 +90,8 @@ P023, P029, dan P030 telah berpindah dari PARSIAL ke DRAF karena ayat pendamping
 ## Pembaruan audit batch P021–P031 — 28 Oktober 2026
 
 Audit batch baru disimpan di [QJ8-V2-AUDIT-BATCH-P021-P031-DUPLIKASI-DAN-VERSI-2026-10-28.md](QJ8-V2-AUDIT-BATCH-P021-P031-DUPLIKASI-DAN-VERSI-2026-10-28.md). Tiga berkas utama masih parsial walau berkas pelengkap tersedia: P023, P029, P030. Sampai disinkronkan, gunakan berkas pelengkap sebagai sumber konteks terbaru, bukan berkas utama lama. Relasi pengulangan: P021/P028 pada 18:39; P022/P032 pada 53:51 (P032 HOLD); P030/P031 pada 33:66. Semua status tashih tetap belum lulus.
+
+
+## Pembaruan audit cepat P036–P040 — 28 Oktober 2026
+
+Audit bank ayat/rubrik tersimpan di [QJ8-V2-AUDIT-P036-P040-BANK-AYAT-RUBRIK-2026-10-28.md](QJ8-V2-AUDIT-P036-P040-BANK-AYAT-RUBRIK-2026-10-28.md). P036 harus dinilai sebagai dua stasiun berbeda; P037–P038 memerlukan item terpisah dan audio guru; P039 perlu matriks cakupan kompetensi sebelum pengacakan; ambang 80/100 P040 tetap usulan sampai disahkan. P010/P032/P033 tetap dikecualikan dari ujian sampai status HOLD diputuskan. Status tashih/audio/layout tetap belum terverifikasi.
