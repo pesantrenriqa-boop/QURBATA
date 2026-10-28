@@ -36,7 +36,7 @@
 | 022 | عَادًا ٱلْأُولَىٰ | 53:49–51 | DRAF | Tandai irisan 53:51 dengan P032 |
 | 023 | Ha kinayah | 25:68–70 | DRAF | Rentang ditranskripsi di berkas pelengkap; perlu tashih |
 | 024 | Ha kinayah | 39:7 | DRAF | Wajah baca |
-| 025 | Rā’ khusus — target perlu dikunci | 26:62–64 | HOLD LABEL | Guru harus menetapkan lafaz sasaran dan dasar kompetensi |
+| 025 | Hukum rā’ pada فِرْقٍ — 26:63 | 26:62–64 | DRAF KLASIFIKASI | Target tersedia; guru menetapkan tajwid lanjutan vs gharib dan mengesahkan bacaan |
 | 026 | الٓمٓ | 2:1–3 | DRAF | Huruf muqaththa'ah |
 | 027 | كٓهيعٓصٓ | 19:1–3 | DRAF | Huruf muqaththa'ah |
 | 028 | أَنَا | 18:39–40 | DRAF | Tandai ulang ayat P021 |
@@ -158,3 +158,8 @@ P032 kini memakai kandidat QS. Hud 11:68 untuk lafaz ثَمُودَا, sesuai co
 ## Audit kompetensi P021–P035 — 28 Oktober 2026
 
 Lihat [QJ8-V2-AUDIT-KOMPETENSI-P021-P035-REKONSILIASI-2026-10-28.md](QJ8-V2-AUDIT-KOMPETENSI-P021-P035-REKONSILIASI-2026-10-28.md). P025 ditahan pada label sampai lafaz sasaran dan dasar kompetensi ditetapkan guru; P033 tetap HOLD menunggu daftar gharib UMMI resmi. P023/P024 dan P026/P027 diperlakukan sebagai contoh/latihan pembanding kecuali silabus resmi membedakan kompetensinya. Pengulangan konteks ditandai dan tidak menambah hitungan ayat unik.
+
+
+## Keputusan P025 — 28 Oktober 2026
+
+Target lafaz P025 sudah tersedia, yaitu **فِرْقٍ** pada Asy-Syu'ara 26:63. Status diperbarui dari HOLD LABEL menjadi **DRAF KLASIFIKASI**: fokusnya hukum rā’ sukun setelah kasrah sebelum huruf isti‘lā’ dalam satu kata. Ini belum otomatis berarti kompetensi gharib mandiri UMMI. Guru Hafsh/pengampu harus mengesahkan klasifikasi, rasm, dan audio. Detail: [QJ8-V2-KEPUTUSAN-P025-RA-FIRQ-2026-10-28.md](QJ8-V2-KEPUTUSAN-P025-RA-FIRQ-2026-10-28.md).
