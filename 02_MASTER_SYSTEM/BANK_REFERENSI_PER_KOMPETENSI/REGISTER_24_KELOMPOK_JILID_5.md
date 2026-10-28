@@ -124,3 +124,15 @@ Status ini hanya deteksi sumber berulang. Potongan berbeda dari ayat yang sama b
 - Tidak ada kandidat yang dihapus atau dinyatakan lolos tashih.
 - P021 dan P023 perlu ditinjau untuk menentukan apakah pengulangan frasa memberi latihan berbeda atau merupakan duplikasi tanpa nilai tambah.
 - Teks mushaf, ketepatan kutipan, tajwid, kondisi waqaf/wasal, dan urutan prasyarat tetap perlu pemeriksaan manual.
+
+
+## Audit terarah P031–P040 — tindak lanjut cepat
+
+Pemindaian otomatis rujukan surah:ayat pada P031–P040 menemukan satu pengulangan dalam halaman:
+
+- P040: QS Al-Isra' 17:70 muncul pada K03 dan K06. K06 harus ditinjau sebagai pengulangan sumber; jangan dihitung sebagai contoh sumber unik sebelum review.
+- P031–P039: tidak ditemukan rujukan surah:ayat ganda di dalam halaman menurut pola pemindaian otomatis. Ini tidak membuktikan ketepatan teks atau kompetensi.
+
+Catatan struktur: P038 adalah “Akhlak/Hadis 5 — niat, tanggung jawab, disiplin, adil” sesuai master. Jangan mengubahnya menjadi halaman Tartil. P040 adalah ujian akhir lintas kompetensi (termasuk retensi, transfer, dan adab); audit harus mempertahankan pemisahan antara penilaian bacaan dan adab.
+
+Keputusan aman: tidak ada ayat yang dihapus atau diganti pada tahap ini. Kandidat tetap draf sampai teks mushaf, konteks kutipan, hukum bacaan, waqaf/wasal, duplikasi lintas halaman, dan prasyarat kompetensi diverifikasi.
