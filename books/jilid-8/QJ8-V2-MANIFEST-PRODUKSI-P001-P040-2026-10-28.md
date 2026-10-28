@@ -143,3 +143,13 @@ Audit sumber resmi tersedia pada [QJ8-V2-AUDIT-SUMBER-RESMI-UMMI-P033-2026-10-28
 ## Revisi P032 — sumber contoh berbeda
 
 P032 kini memakai kandidat QS. Hud 11:68 untuk lafaz ثَمُودَا, sesuai contoh dalam artikel pembelajaran gharib Hafsh: https://tafsiralquran.id/bacaan-gharib-dalam-al-quran-menurut-riwayat-imam-hafs/. Dengan demikian, tidak perlu mengulang An-Najm 53:51 dari konteks P022. Keputusan rinci: [QJ8-V2-REVISI-P032-THAMUDA-HUD-11-68-2026-10-28.md](QJ8-V2-REVISI-P032-THAMUDA-HUD-11-68-2026-10-28.md). Status tetap DRAF sampai teks rasm dan bacaan disahkan guru.
+
+
+## Konsolidasi P021–P035 setelah revisi P032 — 28 Oktober 2026
+
+- P032: gunakan **Hud 11:68** sebagai kandidat utama ثَمُودَا; baris P031–P035 telah diselaraskan pada commit `13305b2f`. Catatan yang masih menyebut P032=An-Najm 53:51 adalah draf lama/riwayat, bukan sumber aktif.
+- P021/P028: Al-Kahfi 18:39 merupakan konteks berulang untuk target berbeda; tandai sebagai konteks, jangan hitung sebagai ayat unik.
+- P022/P032: An-Najm 53:51 tetap konteks P022; P032 tidak memakai ayat itu sebagai contoh utama.
+- P030/P031: Al-Ahzab 33:66–67 beririsan; target masing-masing berbeda, sehingga konteks berulang harus ditandai.
+- P023: ayat inti P023 adalah 25:69; 25:68 dan 25:70 konteks pendamping, bukan contoh tambahan.
+- Status semua halaman tetap DRAF sampai pemeriksaan karakter demi karakter terhadap mushaf acuan dan pengesahan guru Hafs. Tidak ada klaim siap cetak.
