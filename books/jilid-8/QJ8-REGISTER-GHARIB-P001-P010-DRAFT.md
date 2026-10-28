@@ -22,3 +22,22 @@ Kompetensi induk: QCF-TIL-L8-001 (CANDIDATE). 9 slot per halaman merupakan 9 akt
 - Kasus raum/naql dan opsi jalur qiraat belum dimasukkan sebelum penetapan jalur Hafsh.
 - Mapping ke master P001–P010 lama masih **konflik**; perlu Decision-ID sebelum aktivasi.
 - Materi Bahasa Arab, hafalan, akhlak dan empat evaluasi dari master lama wajib dipetakan kembali pada revisi komprehensif.
+
+
+## Teori singkat berbahasa Indonesia untuk halaman peserta
+**Prinsip tata letak:** satu kotak teori 2–3 kalimat sederhana di atas latihan; 9 slot tetap dominan. Penjelasan teknis mendalam disimpan pada panduan guru. Pelafalan khusus harus dicontohkan guru, bukan hanya dipelajari dari tulisan.
+
+| Halaman | Teori singkat yang ditampilkan |
+|---|---|
+| P001 | **Saktah** adalah berhenti sejenak tanpa mengambil napas, lalu melanjutkan bacaan. Pada pertemuan ini kita berlatih saktah antara عِوَجًا dan قَيِّمًا (Al-Kahfi 1–2) saat disambung. |
+| P002 | Saktah juga terdapat pada Surah Yasin ayat 52. Ketika menyambung bacaan dari مَرْقَدِنَا ke هَٰذَا, ikuti jeda singkat sesuai contoh guru. |
+| P003 | Pada مَنْ رَاقٍ (Al-Qiyamah 27), nun dibaca jelas karena terdapat saktah saat disambung. Jangan meleburkan nun ke huruf ra. |
+| P004 | Pada بَلْ رَانَ (Al-Muthaffifin 14), terdapat saktah saat disambung. Lam tidak dileburkan ke ra. |
+| P005 | Empat tempat saktah yang dipelajari perlu dikenali letaknya dan dibaca dengan jeda yang tepat. Berlatihlah tanpa menambah napas ketika melakukan saktah. |
+| P006 | **Imalah** adalah cara membaca bunyi yang condong antara fathah dan kasrah sesuai riwayat. Bacaan مَجْر۪ىٰهَا (Hud 41) dipraktikkan melalui talaqqi guru. |
+| P007 | **Tashil** ialah meringankan pengucapan hamzah tertentu. Pada ءَا۬عْجَمِيٌّ (Fussilat 44), hamzah kedua dibaca dengan cara khusus yang harus didengar langsung dari guru. |
+| P008 | **Isymam** adalah isyarat gerak bibir tanpa menambahkan bunyi vokal baru. Pada لَا تَأْمَنَّا (Yusuf 11), cara praktiknya harus ditunjukkan guru. |
+| P009 | Ada lafaz Al-Qur'an yang memiliki ketentuan khusus dalam pengucapan sin atau shad. Cara membacanya harus mengikuti riwayat dan jalur bacaan yang ditetapkan guru RIQA. |
+| P010 | Bacalah contoh gharib yang telah dipelajari secara mandiri. Guru menilai ketepatan lafaz, tanda bacaan, dan penerapan cara baca khusus. Tidak ada materi baru pada halaman evaluasi ini. |
+
+**Catatan editorial:** teori ringkas ini masih DRAFT. Tanda mushaf dan ketentuan bacaan diverifikasi terhadap mushaf rujukan serta jalur Hafsh yang ditetapkan RIQA. Jangan menganggap transliterasi/penjelasan teks sebagai pengganti talaqqi.
