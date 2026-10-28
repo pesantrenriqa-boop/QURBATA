@@ -39,6 +39,17 @@ def audit(master,inp,report):
             except (ValueError,TypeError):pass
             for k in ("source_id","surah","ayah_start","ayah_end"):
                 if not r.get(k,"").strip():problems.append([sid,"MISSING_"+k.upper()])
+            # Waqf pages require an actual sign in the cited excerpt, not a generic verse.
+            if sid.startswith(("QJ6-P015-", "QJ6-P016-", "QJ6-P017-")):
+                signs={"ۘ","ۚ","ۖ","ۗ","ۙ","ۛ","ۜ","۝"}
+                found={sign for sign in signs if sign in r.get("text_uthmani","")}
+                if not found:problems.append([sid,"WAQF_SIGN_MISSING"])
+                if sid.startswith("QJ6-P016-") and not (found & {"ۘ","ۚ"}):
+                    problems.append([sid,"WAQF_LAZIM_JAIZ_SIGN_MISSING"])
+                if sid.startswith("QJ6-P017-") and "ۙ" not in found:
+                    problems.append([sid,"WAQF_LA_SIGN_MISSING"])
+                if "AUDIT HOLD" in r.get("notes","") and status=="APPROVED":
+                    problems.append([sid,"AUDIT_HOLD_APPROVED"])
             if r.get("source_verified")!="yes":problems.append([sid,"SOURCE_UNVERIFIED"])
             if r.get("competency_verified")!="yes":problems.append([sid,"COMPETENCY_UNVERIFIED"])
             if r.get("review_status")=="APPROVED" and not r.get("reviewer"):problems.append([sid,"NO_REVIEWER"])
