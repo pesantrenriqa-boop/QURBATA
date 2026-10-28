@@ -31,6 +31,8 @@ def audit(master,inp,report):
         if r.get("page_id")!=sid[:8]:problems.append([sid,"PAGE_MISMATCH"])
         filled=bool(r.get("text_uthmani","").strip())
         if filled:
+            if status=="APPROVED" and "PENDING-DEDUP" in r.get("notes",""):
+                problems.append([sid,"DEDUP_NOT_CLEARED"])
             try:
                 sn=int(r.get("surah",""))
                 if sn==1 or 78<=sn<=114:problems.append([sid,"FORBIDDEN_SURAH_J6"])
