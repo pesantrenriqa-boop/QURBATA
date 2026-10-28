@@ -34,14 +34,14 @@
 | 020 | Waqf khusus | 76:16 | DRAF | Tanda qawarira |
 | 021 | لَّٰكِنَّا | 18:38–39 | DRAF | Tandai irisan 18:39 dengan P028 |
 | 022 | عَادًا ٱلْأُولَىٰ | 53:49–51 | DRAF | Tandai irisan 53:51 dengan P032 |
-| 023 | Ha kinayah | 25:68–70 | PARSIAL | Baru 25:69 ditranskripsi |
+| 023 | Ha kinayah | 25:68–70 | DRAF | Rentang ditranskripsi di berkas pelengkap; perlu tashih |
 | 024 | Ha kinayah | 39:7 | DRAF | Wajah baca |
 | 025 | Ra khusus | 26:62–64 | DRAF | Tafkhim/tarqiq |
 | 026 | الٓمٓ | 2:1–3 | DRAF | Huruf muqaththa'ah |
 | 027 | كٓهيعٓصٓ | 19:1–3 | DRAF | Huruf muqaththa'ah |
 | 028 | أَنَا | 18:39–40 | DRAF | Tandai ulang ayat P021 |
-| 029 | الظُّنُونَا | 33:9–11 | PARSIAL | Baru 33:10 ditranskripsi |
-| 030 | الرَّسُولَا | 33:65–67 | PARSIAL | Baru 33:66 ditranskripsi |
+| 029 | الظُّنُونَا | 33:9–11 | DRAF | Rentang ditranskripsi di berkas pelengkap; perlu tashih |
+| 030 | الرَّسُولَا | 33:65–67 | DRAF | Rentang ditranskripsi di berkas pelengkap; perlu tashih |
 | 031 | السَّبِيلَا | 33:66–68 | DRAF | Tandai ulang 33:66 dari P030 |
 | 032 | ثَمُودَا | 53:51 | HOLD | Duplikasi konteks P022; putuskan kompetensi |
 | 033 | Nun wiqayah (?) | Belum sah | HOLD | Putuskan istilah atau ganti unit |
@@ -54,8 +54,8 @@
 | 040 | Ujian akhir | Bank kompetensi sah | ULANG | Pengesahan kriteria |
 
 ## Ringkasan status yang dapat dihitung
-- DRAF lengkap sesuai rentang yang dicatat: **22 halaman**.
-- PARSIAL: **3 halaman** (P023, P029, P030).
+- DRAF teks rentang ayat tersedia (belum tashih): **25 halaman**.
+- PARSIAL: **0 halaman** pada rentang yang direncanakan; kelengkapan teks belum berarti rasm sah.
 - HOLD: **3 halaman** (P010, P032, P033).
 - ULANG/orientasi/evaluasi: **12 halaman**.
 - Total: **40 halaman**. **Tidak ada halaman berstatus siap cetak.**
@@ -65,7 +65,7 @@
 1. **P005** — cek bahwa koreksi 83:13–15 adalah versi tunggal yang dipakai.
 2. **P009** — pastikan isymam pada 12:11 benar secara tanda dan demonstrasi audio.
 3. **P019/P020** — jangan menyeragamkan tanda dua qawarira.
-4. **P023/P029/P030** — lengkapi teks konteks dan bandingkan karakter demi karakter dengan mushaf.
+4. **P023/P029/P030** — konteks sudah ditranskripsi dalam berkas pelengkap; bandingkan karakter demi karakter dengan mushaf sebelum disahkan.
 5. **P010/P032/P033** — putuskan label dan kompetensi sebelum desain cetak.
 6. **P001/P006/P011/P017/P034–P040** — finalisasi tugas dan rubrik, bukan menambah contoh gharib palsu.
 
@@ -81,3 +81,7 @@ Aturan: jika surah+ayat sama muncul pada halaman lain, isi `repeat_of` atau jela
 - [P021–P025](QJ8-V2-AYAT-NYATA-P021-P025-2026-10-28.md)
 - [P026–P030](QJ8-V2-AYAT-NYATA-P026-P030-2026-10-28.md)
 - [P031–P035](QJ8-V2-P031-P035-AYAT-DAN-AUDIT-HOLD-2026-10-28.md)
+
+## Pembaruan 28 Oktober 2026 — pelengkap konteks
+
+P023, P029, dan P030 telah berpindah dari PARSIAL ke DRAF karena ayat pendamping ditranskripsi di [berkas pelengkap](QJ8-V2-PELENGKAP-AYAT-P023-P029-P030-2026-10-28.md). Ini **bukan** kelulusan tashih; semua indikator verifikasi rasm, guru, dan layout masih false.
