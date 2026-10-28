@@ -113,3 +113,8 @@ Catatan audit terdahulu yang menyebut berkas utama masih parsial adalah **riwaya
 - P010/P032/P033 tetap HOLD; jangan mengisi contoh atau mengikutkannya ke ujian sebelum keputusan kompetensi.
 - Langkah kerja berikutnya: audit karakter/tanda per kelompok ayat memakai satu mushaf acuan, catat bukti dan hasil; jangan mengubah teks Utsmani hanya karena tampilan font.
 - Status rasm/guru/audio/layout tetap belum disahkan; siap cetak 0/40.
+
+
+## Audit rujukan eksternal P002/P003/P007 — 28 Oktober 2026
+
+Audit lokasi saktah/imalah tersimpan di [QJ8-V2-AUDIT-RUJUKAN-P002-P003-P007-2026-10-28.md](QJ8-V2-AUDIT-RUJUKAN-P002-P003-P007-2026-10-28.md). Lokasi hukum didukung rujukan publik LPMQ; ini belum mengesahkan glyph, rasm, audio atau layout produksi. Rasm produksi tervalidasi 0/3; audio disahkan 0/3.
