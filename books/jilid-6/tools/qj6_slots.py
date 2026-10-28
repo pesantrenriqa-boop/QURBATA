@@ -28,7 +28,7 @@ def audit(master,inp,report):
         if sid in ids:problems.append([sid,"DUPLICATE_ID"])
         ids.add(sid)
         if sid not in expected:problems.append([sid,"UNKNOWN_ID"])
-        if r.get("page_id")!=sid[:9]:problems.append([sid,"PAGE_MISMATCH"])
+        if r.get("page_id")!=sid[:8]:problems.append([sid,"PAGE_MISMATCH"])
         filled=bool(r.get("text_uthmani","").strip())
         if filled:
             for k in ("source_id","surah","ayah_start","ayah_end"):
