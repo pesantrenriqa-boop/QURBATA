@@ -1173,3 +1173,15 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Pemeriksaan teks persis pada baris utama register tidak menemukan kandidat yang sama; ini hanya pemeriksaan duplikasi literal, bukan pengesahan rasm.
 - Sebelum cetak, cocokkan kembali ayat dan harakat pada mushaf Utsmani rujukan serta pastikan potongan dan instruksi pembelajaran sesuai.
 - Kolom Sah P002 tetap 0/24; kandidat belum lolos tashih.
+
+
+## Batch audit sumber P002/K06–K12 — 28 Oktober 2026
+
+- Pemeriksaan sumber primer/teks ayat mendukung rujukan berikut untuk kandidat izhar nun sukun bertemu hamzah:
+  - وَإِنَّ مِنْ أَهْلِ الْكِتَابِ — QS Ali 'Imran 3:199.
+  - مِنْ أَجْلِ ذَٰلِكَ — QS Al-Ma'idah 5:32.
+  - مِنْ أَمْرِ اللَّهِ — QS Ar-Ra'd 13:11.
+  - مِنْ إِلَٰهٍ — QS Ali 'Imran 3:62, dalam konteks وَمَا مِنْ إِلَٰهٍ إِلَّا اللَّهُ.
+- Sumber pembanding: Kemenag untuk QS 5:32 (https://quran.kemenag.go.id/quran/per-ayat/surah/5?from=32&to=32), Quran.com/Kemenag untuk QS 3:62 (https://quran.com/id/keluarga-imran/62), dan Quran.com untuk QS 13:11 (https://quran.com/id/guruh-petir/11).
+- Status ini memverifikasi rujukan teks dasar, bukan sertifikasi rasm Utsmani pada naskah buku. Harakat, waqaf, batas potong, dan kesesuaian desain materi tetap memerlukan tashih akhir.
+- Tidak ada slot diubah dalam batch audit sumber ini; contoh sah cetak P002 tetap 0/24 sampai pemeriksaan naskah final selesai.
