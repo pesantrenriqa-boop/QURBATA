@@ -6,6 +6,10 @@ on:
     paths:
       - 'books/jilid-6/**'
       - '.github/workflows/qj6-register-audit.yml'
+  pull_request:
+    paths:
+      - 'books/jilid-6/**'
+      - '.github/workflows/qj6-register-audit.yml'
   workflow_dispatch:
 jobs:
   audit:
