@@ -78,3 +78,21 @@
 - P013: mad farq memiliki korpus ayat sangat terbatas; slot yang kosong **tidak boleh diisi dengan pengulangan semu** hanya untuk memenuhi 16 kolom. Revisi kapasitas pedagogis P013 memerlukan persetujuan kurikulum.
 - P011–P020: contoh untuk mad 'aridh dan mad lin harus ditandai kondisi **waqaf**, dan muqaththa'ah harus diperiksa sesuai riwayat bacaan yang dipakai.
 - Tanda `[KANDIDAT]` tidak berarti teks telah ditashih atau siap cetak.
+
+
+## Rekap audit otomatis lintas halaman — 2026-10-28
+
+- Cakupan register: 40 halaman (P001–P040).
+- Kapasitas aktif sesuai struktur: 480 slot (P001–P020: 16 slot/halaman; P021–P040: 8 slot/halaman).
+- Sel aktif berisi kandidat: 468/480 (97,5%); kosong: 12 slot, seluruhnya di P013 menurut pemindaian struktur saat ini.
+- Jumlah rujukan ayat unik yang terbaca otomatis: 246.
+- Rujukan ayat yang muncul lebih dari sekali lintas register: 109. Angka ini adalah sinyal audit, bukan 109 kesalahan; termasuk murojaah, evaluasi, dan contoh yang sengaja diulang.
+- Kolom “Sah” masih 0 pada baris yang diperiksa; kandidat terisi tidak boleh dihitung sebagai contoh lolos tashih.
+- Pemindaian otomatis hanya membaca pola rujukan “QS surah:ayat”. Ia tidak membuktikan ketepatan rasm Utsmani, kutipan frasa, hukum tajwid, waqaf/wasal, atau urutan prasyarat kompetensi.
+
+### Prosedur tindak lanjut aman
+
+1. Jangan menghapus rujukan berulang secara massal; klasifikasikan sebagai murojaah, evaluasi, transfer, atau duplikasi tanpa tujuan.
+2. Verifikasi kandidat dengan mushaf rujukan sebelum menandainya “Sah”.
+3. P013 tetap ditandai sebagai halaman yang memiliki 12 slot kosong; jangan mengisinya dengan contoh yang belum tervalidasi.
+4. Perbarui kolom “Sah” hanya setelah bukti tashih dicatat dan pemeriksa berwenang menyetujuinya.
