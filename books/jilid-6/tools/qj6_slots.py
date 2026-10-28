@@ -37,6 +37,8 @@ def audit(master,inp,report):
             if r.get("competency_verified")!="yes":problems.append([sid,"COMPETENCY_UNVERIFIED"])
             if r.get("review_status")=="APPROVED" and not r.get("reviewer"):problems.append([sid,"NO_REVIEWER"])
         elif status=="APPROVED":problems.append([sid,"EMPTY_APPROVED"])
+        if status=="APPROVED" and (not filled or r.get("source_verified")!="yes" or r.get("competency_verified")!="yes" or not r.get("reviewer","").strip()):
+            problems.append([sid,"INVALID_APPROVAL"])
     for sid in sorted(expected-ids):problems.append([sid,"MISSING_SLOT"])
     filled=sum(bool(r.get("text_uthmani","").strip()) for r in rows)
     approved=sum(r.get("review_status")=="APPROVED" for r in rows)
