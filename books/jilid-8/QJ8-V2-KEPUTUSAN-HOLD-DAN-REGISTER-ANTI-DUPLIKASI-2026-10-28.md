@@ -8,12 +8,13 @@
 - **Status:** DRAF, bukan HOLD label. Tashih teks Utsmani, wajah bacaan, dan audio tetap wajib sebelum produksi.
 - **Catatan:** keputusan editorial ini tidak menggantikan pengesahan guru Hafsh.
 
-## 2. P032 — ثَمُودَا (An-Najm 53:51)
+## 2. P032 — ثَمُودَا (contoh utama: Hud 11:68)
 
-- **Lokasi kandidat teridentifikasi:** An-Najm 53:51: وَثَمُودَا۟ فَمَآ أَبْقَىٰ.
-- **Masalah:** ayat ini sudah tercakup dalam konteks P022 (An-Najm 53:49–51). Mengulangnya pada P032 sebagai 'contoh baru' menimbulkan duplikasi.
-- **Keputusan editorial:** ubah P032 dari HOLD kompetensi menjadi **DRAF PENGUATAN — mad/qasr pada lafaz ثَمُودَا**, bukan contoh ayat unik baru. Sumber pembelajaran tajwid yang ditemukan menyebut ثَمُودَا dibaca pendek dan memberi contoh An-Najm 53:51; namun kategori, cara praktik, dan teks mushaf tetap perlu disahkan guru Hafsh sebelum produksi. P022 tetap dihitung sebagai konteks berulang.
-- **Syarat rilis:** verifikasi mushaf Hafsh dan putuskan apakah tetap berdiri sendiri atau digabung dengan halaman tanda alif.
+- **Keputusan terbaru:** kandidat utama P032 adalah QS. Hud 11:68, lafaz ثَمُودَا, bukan An-Najm 53:51.
+- **Alasan:** menghindari penggunaan ulang An-Najm 53:51 yang sudah menjadi konteks P022. Sumber pembelajaran gharib menyebut contoh Hud 11:68.
+- **Status:** DRAF; belum tashih karakter rasm, wajah bacaan Hafs, atau audio.
+- **Sumber aktif:** [revisi P032](QJ8-V2-REVISI-P032-THAMUDA-HUD-11-68-2026-10-28.md) dan [berkas P031–P035](QJ8-V2-P031-P035-AYAT-DAN-AUDIT-HOLD-2026-10-28.md).
+- **Catatan:** setiap referensi lama yang menyebut P032=An-Najm 53:51 adalah riwayat draf, bukan keputusan aktif.
 
 ## 3. P033 — 'Nun wiqayah'
 
