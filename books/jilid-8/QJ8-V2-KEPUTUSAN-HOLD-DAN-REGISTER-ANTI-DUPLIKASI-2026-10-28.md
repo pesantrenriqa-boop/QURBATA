@@ -42,7 +42,7 @@
 - [ ] Pengampu menyetujui kompetensi resmi Jilid 8 dan memutuskan P010/P032/P033.
 - [ ] Satu mushaf Utsmani Hafsh menjadi sumber tunggal untuk seluruh karakter dan tanda khusus.
 - [ ] Tashih audio/talaqqi untuk saktah, imalah, isymam, tashil, waqf.
-- [ ] Lengkapi ayat pendamping yang masih parsial pada P023, P029, P030.
+- [x] Transkripsi konteks P023, P029, P030 sudah disinkronkan ke berkas utama pada commit d42e87c9 dan 4d4093d8; tashih rasm tetap belum dilakukan.
 - [ ] Buat manifest halaman dengan ID, sumber, sasaran, jenis baru/ulang, status QA.
 - [ ] Susun PDF A5 hanya dari bacaan yang telah disahkan.
 
@@ -54,3 +54,8 @@
 - [P021–P025](QJ8-V2-AYAT-NYATA-P021-P025-2026-10-28.md)
 - [P026–P030](QJ8-V2-AYAT-NYATA-P026-P030-2026-10-28.md)
 - [P031–P035](QJ8-V2-P031-P035-AYAT-DAN-AUDIT-HOLD-2026-10-28.md)
+
+
+## Pembaruan status sinkronisasi — 28 Oktober 2026
+
+P023, P029, dan P030 sudah tidak menunggu transkripsi konteks: rentang ayat telah disalin ke berkas utama. Statusnya tetap DRAF karena belum dicocokkan karakter demi karakter dengan mushaf rujukan dan belum ditashih guru. Catatan lama tentang konteks parsial dibaca sebagai riwayat sebelum sinkronisasi.
