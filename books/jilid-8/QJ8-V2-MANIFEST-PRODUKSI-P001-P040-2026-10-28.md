@@ -133,3 +133,8 @@ P032 diubah dari HOLD kompetensi menjadi **DRAF PENGUATAN/ULANG** untuk fokus ma
 ## Keputusan P033 — 28 Oktober 2026
 
 P033 tetap HOLD. Istilah nun wiqayah belum terbukti sebagai kompetensi gharib Hafsh dalam sumber yang dapat diverifikasi. Judul kerja diganti menjadi “Verifikasi daftar resmi gharib/musykilat — calon materi pengganti”. Lihat [keputusan P033](QJ8-V2-KEPUTUSAN-P033-VERIFIKASI-GHARIB-UMMI-2026-10-28.md). Jangan menambahkan ayat baru sampai pengampu memilih kompetensi dari sumber resmi.
+
+
+## Verifikasi sumber resmi UMMI untuk P033 — 28 Oktober 2026
+
+Audit sumber resmi tersedia pada [QJ8-V2-AUDIT-SUMBER-RESMI-UMMI-P033-2026-10-28.md](QJ8-V2-AUDIT-SUMBER-RESMI-UMMI-P033-2026-10-28.md). Situs resmi mengonfirmasi keberadaan buku Gharib UMMI dan distribusi terbatas, tetapi tidak menampilkan daftar kompetensi lengkap yang dapat diperiksa publik. Oleh sebab itu P033 tetap HOLD sampai pengampu memeriksa buku resmi; jangan mengarang kompetensi pengganti.
