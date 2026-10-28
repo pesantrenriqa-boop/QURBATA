@@ -2,12 +2,11 @@
 
 28 Oktober 2026. **Keputusan editorial sementara**, bukan fatwa qiraat, bukan tashih guru, dan bukan perubahan kompetensi resmi. Dokumen ini melanjutkan audit P001–P040.
 
-## 1. P010 — بِئْسَ ٱلِٱسْمُ (Al-Hujurat 49:11)
+## 1. P010 — Naql, بِئْسَ ٱلِٱسْمُ (Al-Hujurat 49:11)
 
-- **Lokasi ayat jelas:** Al-Hujurat 49:11, teks ayat utuh telah tercatat pada master P001–P010.
-- **Masalah:** label 'naql' pada draf sebelumnya belum didukung rujukan pedagogis yang ditetapkan. Jangan otomatis menamainya naql Hafsh.
-- **Keputusan:** **HOLD LABEL, RETAIN AYAT**. Judul kerja: *bacaan khusus pada بِئْسَ ٱلِٱسْمُ*, tanpa menyebut kaidah yang belum ditashih.
-- **Syarat rilis:** guru ahli mengesahkan istilah, wajah bacaan, dan contoh audio.
+- **Keputusan terbaru:** label P010 dipetakan sebagai **Naql** pada draf keputusan P010, commit `283e2a36`, dengan rujukan pendukung yang dicatat di berkas keputusan tersebut.
+- **Status:** DRAF, bukan HOLD label. Tashih teks Utsmani, wajah bacaan, dan audio tetap wajib sebelum produksi.
+- **Catatan:** keputusan editorial ini tidak menggantikan pengesahan guru Hafsh.
 
 ## 2. P032 — ثَمُودَا (An-Najm 53:51)
 
@@ -63,5 +62,5 @@ P023, P029, dan P030 sudah tidak menunggu transkripsi konteks: rentang ayat tela
 
 ## Pembaruan keputusan P032 — 28 Oktober 2026
 
-Rujukan pembelajaran tajwid yang ditemukan menjelaskan lafaz ثَمُودَا sebagai bacaan pendek, dengan contoh pada An-Najm 53:51. Oleh sebab itu P032 dapat diteruskan sebagai **draf penguatan mad/qasr**, tetapi bukan contoh ayat unik. Validasi guru Hafsh dan mushaf acuan masih wajib. P033 tetap HOLD.
-Rujukan pendukung: https://tafsiralquran.id/bacaan-gharib-dalam-al-quran-menurut-riwayat-imam-hafs/.
+Contoh utama P032 dialihkan ke QS. Hud 11:68, lafaz ثَمُودَا, karena sumber pembelajaran gharib Hafsh menyebut contoh tersebut untuk bacaan pendek. Ini menghindari penggunaan ulang An-Najm 53:51 dari konteks P022. Lihat [revisi P032](QJ8-V2-REVISI-P032-THAMUDA-HUD-11-68-2026-10-28.md). Status DRAF; tashih guru dan rasm tetap wajib. P033 tetap HOLD.
+Rujukan: https://tafsiralquran.id/bacaan-gharib-dalam-al-quran-menurut-riwayat-imam-hafs/.
