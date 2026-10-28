@@ -13,7 +13,7 @@
 
 - **Lokasi kandidat teridentifikasi:** An-Najm 53:51: وَثَمُودَا۟ فَمَآ أَبْقَىٰ.
 - **Masalah:** ayat ini sudah tercakup dalam konteks P022 (An-Najm 53:49–51). Mengulangnya pada P032 sebagai 'contoh baru' menimbulkan duplikasi.
-- **Keputusan:** **HOLD KOMPETENSI**; jangan hitung sebagai ayat baru atau final. Jika guru menyetujui kaidah alif/waqf sebagai kompetensi mandiri, P032 boleh menjadi *latihan fokus berbeda*, tetapi harus diberi penanda pengulangan P022.
+- **Keputusan editorial:** ubah P032 dari HOLD kompetensi menjadi **DRAF PENGUATAN — mad/qasr pada lafaz ثَمُودَا**, bukan contoh ayat unik baru. Sumber pembelajaran tajwid yang ditemukan menyebut ثَمُودَا dibaca pendek dan memberi contoh An-Najm 53:51; namun kategori, cara praktik, dan teks mushaf tetap perlu disahkan guru Hafsh sebelum produksi. P022 tetap dihitung sebagai konteks berulang.
 - **Syarat rilis:** verifikasi mushaf Hafsh dan putuskan apakah tetap berdiri sendiri atau digabung dengan halaman tanda alif.
 
 ## 3. P033 — 'Nun wiqayah'
@@ -29,7 +29,7 @@
 | QJ8-021 | P021 | 18:38–39 | لَّٰكِنَّا | Baru | 18:39 juga digunakan P028 |
 | QJ8-028 | P028 | 18:39–40 | أَنَا | Fokus berbeda | Ulang ayat 18:39; jangan klaim unik |
 | QJ8-022 | P022 | 53:49–51 | عَادًا ٱلْأُولَىٰ | Baru | 53:51 muncul lagi P032 |
-| QJ8-032 | P032 | 53:51 | ثَمُودَا | HOLD | Pengulangan konteks P022 |
+| QJ8-032 | P032 | 53:51 | ثَمُودَا | Penguatan/ulang | Bukan ayat unik; fokus mad/qasr harus disahkan guru |
 | QJ8-030 | P030 | 33:66 | ٱلرَّسُولَا | Baru | 33:66 juga konteks P031 |
 | QJ8-031 | P031 | 33:66–68 | ٱلسَّبِيلَا | Fokus berbeda | Jangan hitung 33:66 sebagai ayat unik baru |
 | QJ8-019 | P019 | 76:15 | قَوَارِيرَا | Baru | Waqf ayat 15 |
@@ -59,3 +59,9 @@
 ## Pembaruan status sinkronisasi — 28 Oktober 2026
 
 P023, P029, dan P030 sudah tidak menunggu transkripsi konteks: rentang ayat telah disalin ke berkas utama. Statusnya tetap DRAF karena belum dicocokkan karakter demi karakter dengan mushaf rujukan dan belum ditashih guru. Catatan lama tentang konteks parsial dibaca sebagai riwayat sebelum sinkronisasi.
+
+
+## Pembaruan keputusan P032 — 28 Oktober 2026
+
+Rujukan pembelajaran tajwid yang ditemukan menjelaskan lafaz ثَمُودَا sebagai bacaan pendek, dengan contoh pada An-Najm 53:51. Oleh sebab itu P032 dapat diteruskan sebagai **draf penguatan mad/qasr**, tetapi bukan contoh ayat unik. Validasi guru Hafsh dan mushaf acuan masih wajib. P033 tetap HOLD.
+Rujukan pendukung: https://tafsiralquran.id/bacaan-gharib-dalam-al-quran-menurut-riwayat-imam-hafs/.
