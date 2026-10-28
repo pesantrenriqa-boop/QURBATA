@@ -1127,3 +1127,11 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - P001/K11 mengganti slot duplikasi سَمِيعًا بَصِيرًا (QS 4:58; berulang di P011) dengan خَبِيرٌ, kandidat visual tanwin pada akhir QS Al-Hujurat 49:13.
 - Dua kandidat baru dibatasi untuk pengenalan bentuk tanwin ketika berhenti pada akhir ayat; jangan digunakan untuk menyimpulkan hukum saat wasal. Status tetap kandidat penelitian sampai rasm, harakat, sumber, dan rancangan instruksi waqaf diverifikasi.
 - Frasa lama tetap dicatat di riwayat audit sebagai duplikasi yang dipindahkan dari slot aktif; tidak dihapus dari histori. Kolom Sah P001 tetap 0/24.
+
+
+## Koreksi audit P002 — 28 Oktober 2026
+
+- Kandidat yang sebelumnya direncanakan, مِنْ أَنْفُسِكُمْ (QS 9:128), **tidak ditambahkan ke slot P002**. Lafaz ayat pada sumber mushaf daring tampil sebagai مِّنْ أَنفُسِكُمْ dalam konteks رَسُولٌ مِّنْ أَنفُسِكُمْ. Karena terdapat konteks idgham tanwin pada kata sebelumnya dan hukum lain pada أَنْفُسِكُمْ, potongan ini bukan contoh bersih untuk P002 tanpa penandaan batas dan sasaran yang jelas.
+- Koreksi: rencana penambahan P002/K13 yang sempat disiapkan tidak berhasil disimpan dan tidak boleh dianggap sebagai perubahan register.
+- Rujukan untuk pengecekan konteks ayat: https://quran.com/id/pengampunan/128
+- P002/K13 tetap kosong sampai ditemukan potongan yang jelas, sesuai kompetensi izhar hamzah/ha, dan lolos verifikasi teks serta duplikasi. Kolom Sah tetap 0/24.
