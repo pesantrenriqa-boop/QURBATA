@@ -1093,3 +1093,14 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - **Tidak ditemukan duplikasi teks persis dalam halaman yang sama** pada register utama setelah koreksi P038. Pengulangan lintas halaman tetap diperbolehkan bila memiliki fungsi eksplisit: pengenalan, kontras hukum, remedial, murojaah berjarak, atau ujian akhir.
 - Prioritas kurasi: `مِنْ شَرِّ مَا خَلَقَ` muncul **8 kali** (P001, P014, P016, P018, P020, P033, P034, P036); `مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ` muncul **6 kali** (P001, P014, P018, P035, P039, P040); `الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ` muncul **6 kali** (P026, P027, P028, P030, P032, P034). Pada audit berikutnya, setiap pengulangan ini harus dibenarkan oleh tujuan kompetensi; bila tidak, pilih ayat lain yang setara dan legal.
 - Audit ini bersifat struktural dan **tidak mengesahkan** kesesuaian rujukan ayat, tajwid saat wasal, harakat, maupun rasm Utsmani. Semua slot tetap **KANDIDAT**, bukan SAH cetak.
+
+
+## Protokol kerja cepat-aman P001 (28 Oktober 2026)
+
+- Status P001: tujuh kandidat lama tetap berstatus ARSIP/TIDAK LAYAK CETAK; tidak dihitung sebagai contoh lolos.
+- Target kerja P001 mengikuti kuota operasional 16 contoh, tetapi skema 24 kolom register dipertahankan untuk kompatibilitas. K17–K24 tidak diisi hanya demi memenuhi format; kolom Sah tetap 0 sampai tashih.
+- Pengisian dilakukan per batch maksimal 4 kandidat. Setiap kandidat wajib mempunyai (1) lafaz persis, (2) surah:ayat yang benar, (3) potongan kontigu, (4) penandaan sasaran visual نْ atau tanwin, (5) pemeriksaan hukum yang muncul pada wasal, dan (6) pemeriksaan duplikasi lintas halaman.
+- P001 hanya mengajarkan orientasi bentuk نْ dan ً ٍ ٌ. Contoh yang menuntut penerapan hukum lanjutan yang belum diajarkan tidak boleh berstatus LAYAK CETAK; simpan sebagai arsip atau pindahkan ke halaman kompetensi yang tepat setelah verifikasi.
+- Jangan memakai lafaz gabungan dari sumber berbeda, jangan memotong ayat sehingga memberi kesan bacaan yang tidak sah, dan jangan mengarang nomor ayat demi mengejar kuota.
+- Hitungan kandidat aktif, kandidat unik, kandidat lolos, dan slot kosong harus dilaporkan terpisah. Kandidat berstatus arsip tidak dihitung sebagai aktif/lolos.
+- Status perubahan: protokol audit ini ditambahkan; tidak ada kandidat baru yang dinaikkan menjadi sah cetak pada commit ini. Tahap berikutnya adalah memasukkan empat kandidat terverifikasi pertama, lalu mengulang gate yang sama sebelum batch berikutnya.
