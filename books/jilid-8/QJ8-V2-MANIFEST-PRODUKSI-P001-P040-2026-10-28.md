@@ -65,7 +65,7 @@
 1. **P005** — cek bahwa koreksi 83:13–15 adalah versi tunggal yang dipakai.
 2. **P009** — pastikan isymam pada 12:11 benar secara tanda dan demonstrasi audio.
 3. **P019/P020** — jangan menyeragamkan tanda dua qawarira.
-4. **P023/P029/P030** — konteks sudah ditranskripsi dalam berkas pelengkap; bandingkan karakter demi karakter dengan mushaf sebelum disahkan.
+4. **P023/P029/P030** — konteks sudah disinkronkan ke berkas utama; tahap berikutnya adalah tashih karakter demi karakter, bukan transkripsi ulang.
 5. **P010/P032/P033** — putuskan label dan kompetensi sebelum desain cetak.
 6. **P001/P006/P011/P017/P034–P040** — finalisasi tugas dan rubrik, bukan menambah contoh gharib palsu.
 
@@ -104,3 +104,12 @@ Berkas utama sudah disinkronkan dengan ayat konteks lengkap dari berkas pelengka
 - [P026–P030 utama](QJ8-V2-AYAT-NYATA-P026-P030-2026-10-28.md): P029 memuat Al-Ahzab 33:9–11 dan P030 memuat 33:65–67.
 
 Catatan audit terdahulu yang menyebut berkas utama masih parsial adalah **riwayat sebelum sinkronisasi**. Status rasm, guru Hafsh, audio, dan layout tetap belum disahkan; sinkronisasi isi tidak sama dengan tashih.
+
+
+## Pembaruan kontrol cepat dan aman — 28 Oktober 2026
+
+- Status sumber konteks P023/P029/P030: **sinkronisasi selesai**; jangan ulangi pekerjaan transkripsi.
+- Referensi keputusan HOLD diperbarui pada commit e926a37d.
+- P010/P032/P033 tetap HOLD; jangan mengisi contoh atau mengikutkannya ke ujian sebelum keputusan kompetensi.
+- Langkah kerja berikutnya: audit karakter/tanda per kelompok ayat memakai satu mushaf acuan, catat bukti dan hasil; jangan mengubah teks Utsmani hanya karena tampilan font.
+- Status rasm/guru/audio/layout tetap belum disahkan; siap cetak 0/40.
