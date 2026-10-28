@@ -1,6 +1,6 @@
 # QJ8 — P021–P030, 90 Kotak Transkripsi Arab (DRAFT)
 
-**KOREKSI EDITORIAL 28-10-2026:** Lima slot rujukan 76:16 diperbaiki secara konsisten menjadi قَوَارِيرَ; P026-K09 ditahan karena rujukan ganda. Koreksi ini **belum** merupakan tashih mushaf.
+**KOREKSI EDITORIAL 28-10-2026:** Lima slot rujukan 76:16 diperbaiki secara konsisten menjadi قَوَارِيرَ; P026-K09 ditetapkan hanya merujuk 76:15 (bukan 76:16) sebagai perbaikan metadata editorial. Koreksi ini **belum** merupakan tashih mushaf.
 
 **BELUM VERIFIKASI MUSHAF / BELUM TASHIH / TIDAK SIAP CETAK.** Teks ini transkripsi kerja dengan referensi ayat, bukan salinan resmi dari mushaf terpilih. Setiap halaman berisi sembilan kotak yang boleh mengulang ayat/konteks. Jangan hitung sebagai 90 kejadian gharib unik. Materi yang perlu penetapan wajah Hafsh dan perbedaan waqaf/wasal wajib ditashih guru.
 
@@ -92,7 +92,7 @@
 | QJ8-P026-K06 | قَوَارِيرَ مِن فِضَّةٍ | 76:16 | CORRECTED-DRAFT / VERIFY-MUSHAF |
 | QJ8-P026-K07 | قَدَّرُوهَا تَقْدِيرًا | 76:16 | UNVERIFIED |
 | QJ8-P026-K08 | كَانَتْ قَوَارِيرَا | 76:15 | UNVERIFIED |
-| QJ8-P026-K09 | قَوَارِيرَا | 76:15–16 | HOLD-AMBIGUOUS-REF |
+| QJ8-P026-K09 | قَوَارِيرَا | 76:15 | CORRECTED-DRAFT / VERIFY-MUSHAF |
 
 ## P027 — Alif pada lakinna Al-Kahfi 18:38
 **Teori singkat:** Pada beberapa lafaz, bacaan ketika berhenti dapat berbeda dari bacaan ketika disambung. Praktikkan keduanya bersama guru.
@@ -155,6 +155,6 @@
 | QJ8-P030-K09 | ءَآلذَّكَرَيْنِ | 6:143 | UNVERIFIED |
 
 ## Audit khusus
-- **Perhatian:** QJ8-P026-K02/K06 dan K09 menggunakan tulisan قَوَارِيرَا sebagai *placeholder transkripsi*, tetapi **bentuk akhir ayat 76:16 harus dicek langsung** pada mushaf Hafsh; jangan cetak sebelum koreksi. P027 bentuk لَّٰكِنَّا juga perlu verifikasi rasm.
+- **Perhatian:** QJ8-P026-K02/K06 sudah diseragamkan secara editorial untuk 76:16; K09 kini merujuk khusus 76:15. **Semua bentuk tetap wajib dicek langsung** pada mushaf Hafsh sebelum cetak. P027 bentuk لَّٰكِنَّا juga perlu verifikasi rasm.
 - Materi P028 bertabrakan dengan master yang menetapkan Bahasa Arab 8. Jangan aktifkan tanpa Decision-ID.
 - Progres kumulatif transkripsi **270/360 (75%)**, tervalidasi **0/360**.
