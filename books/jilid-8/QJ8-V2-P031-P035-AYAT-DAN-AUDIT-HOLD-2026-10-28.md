@@ -12,13 +12,13 @@
 
 Fokus **ٱلسَّبِيلَا۠** (33:67). Ayat 66 sengaja menjadi konteks tetapi tidak dihitung sebagai contoh gharib baru: telah dipakai P030 untuk **ٱلرَّسُولَا۠**. Perlu tashih tanda sifr serta wasl–waqf. Sumber https://quran.com/33/67
 
-## P032 — ثَمُودَا: contoh utama dipindahkan ke Hud 11:68
+## P032 — ثَمُودَا: kandidat utama Hud 11:68
 
 **Hud 11:68** — sasaran **ثَمُودَا** pada rangkaian **أَلَآ إِنَّ ثَمُودَا۟ كَفَرُوا۟ رَبَّهُمْ**.
 
-Rujukan pembelajaran gharib Hafs menyebut lafaz ثَمُودَا sebagai bacaan pendek dan memberi contoh Hud 11:68: https://tafsiralquran.id/bacaan-gharib-dalam-al-quran-menurut-riwayat-imam-hafs/. Tampilan teks ayat juga dapat dibandingkan di Quran.com: https://quran.com/id/hud/68/qiraat.
+Sumber pembelajaran gharib Hafs menyebut lafaz ثَمُودَا dengan contoh Hud 11:68: https://tafsiralquran.id/bacaan-gharib-dalam-al-quran-menurut-riwayat-imam-hafs/. Draf keputusan rinci: [QJ8-V2-REVISI-P032-THAMUDA-HUD-11-68-2026-10-28.md](QJ8-V2-REVISI-P032-THAMUDA-HUD-11-68-2026-10-28.md).
 
-**Keputusan editorial:** kandidat utama P032 dipindahkan dari An-Najm 53:51 ke Hud 11:68 untuk menghindari pengulangan konteks P022. Ini tetap **DRAF**, bukan tashih akhir. Sumber qiraat daring menampilkan beberapa wajah bacaan; guru wajib memastikan pilihan Hafs dan penjelasan mad/qasr yang tepat. Transkripsi siap cetak harus dicocokkan karakter demi karakter dengan mushaf acuan. An-Najm 53:51 tidak dihitung sebagai contoh unik P032.
+**Status: DRAF, bukan siap cetak.** Cocokkan bentuk rasm/tanda dan wajah baca Hafs dengan mushaf acuan serta guru. An-Najm 53:51 tetap konteks P022, bukan contoh utama P032.
 
 ## P033 — Istilah 'nun wiqayah': HOLD
 
@@ -37,7 +37,7 @@ Gunakan **ayat utuh yang sudah dicatat**: Al-Ahzab 33:10, 33:66–67; Al-Insan 7
 | Halaman | Bacaan kontekstual | Status |
 |---|---|---|
 | P031 | 33:66–68 | Draf baru, perlu tashih |
-| P032 | 53:51 | Lokasi teridentifikasi; **HOLD penetapan kompetensi** |
+| P032 | Hud 11:68 | **DRAF kandidat berbeda**; tashih guru/rasm belum selesai |
 | P033 | Belum ada | **HOLD istilah dan rujukan** |
 | P034 | Rujukan ayat terdahulu | Evaluasi, bukan bacaan baru |
 | P035 | Rujukan ayat terdahulu | Evaluasi, bukan bacaan baru |
