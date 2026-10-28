@@ -21,7 +21,7 @@
 | 007 | Imalah | 11:41 | DRAF | Audio guru |
 | 008 | Tashil | 41:44 | DRAF | Audio guru |
 | 009 | Isymam | 12:11 | DRAF | Tanda dan audio |
-| 010 | بِئْسَ ٱلِٱسْمُ | 49:11 | HOLD | Istilah kaidah; teks ada |
+| 010 | Naql — بِئْسَ الِاسْمُ | 49:11 | DRAF | Label Naql diputuskan; rasm/audio belum ditashih |
 | 011 | Penguatan | Referensi P002–P010 | ULANG | Rubrik |
 | 012 | Sin/Shad | 2:245 | DRAF | Tanda huruf |
 | 013 | Sin/Shad | 88:21–22 | DRAF | Wajah baca |
@@ -118,3 +118,8 @@ Catatan audit terdahulu yang menyebut berkas utama masih parsial adalah **riwaya
 ## Audit rujukan eksternal P002/P003/P007 — 28 Oktober 2026
 
 Audit lokasi saktah/imalah tersimpan di [QJ8-V2-AUDIT-RUJUKAN-P002-P003-P007-2026-10-28.md](QJ8-V2-AUDIT-RUJUKAN-P002-P003-P007-2026-10-28.md). Lokasi hukum didukung rujukan publik LPMQ; ini belum mengesahkan glyph, rasm, audio atau layout produksi. Rasm produksi tervalidasi 0/3; audio disahkan 0/3.
+
+
+## Keputusan P010 — 28 Oktober 2026
+
+P010 dipetakan sebagai **Naql** pada Al-Hujurat 49:11. Dasar keputusan dan sumber pendukung ada di [QJ8-V2-KEPUTUSAN-KOMPETENSI-P010-NAQL-2026-10-28.md](QJ8-V2-KEPUTUSAN-KOMPETENSI-P010-NAQL-2026-10-28.md). Status berubah dari HOLD label ke DRAF; ini bukan pengesahan rasm, audio, atau kesiapan cetak. P032 dan P033 tetap HOLD.
