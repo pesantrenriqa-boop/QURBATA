@@ -1,5 +1,7 @@
 # QJ8 — P021–P030, 90 Kotak Transkripsi Arab (DRAFT)
 
+**KOREKSI EDITORIAL 28-10-2026:** Lima slot rujukan 76:16 diperbaiki secara konsisten menjadi قَوَارِيرَ; P026-K09 ditahan karena rujukan ganda. Koreksi ini **belum** merupakan tashih mushaf.
+
 **BELUM VERIFIKASI MUSHAF / BELUM TASHIH / TIDAK SIAP CETAK.** Teks ini transkripsi kerja dengan referensi ayat, bukan salinan resmi dari mushaf terpilih. Setiap halaman berisi sembilan kotak yang boleh mengulang ayat/konteks. Jangan hitung sebagai 90 kejadian gharib unik. Materi yang perlu penetapan wajah Hafsh dan perbedaan waqaf/wasal wajib ditashih guru.
 
 ## P021 — Mad farq Al-An'am 6:143
@@ -83,14 +85,14 @@
 | Slot | Transkripsi teks Arab | QS | Status |
 |---|---|---|---|
 | QJ8-P026-K01 | قَوَارِيرَا | 76:15 | UNVERIFIED |
-| QJ8-P026-K02 | قَوَارِيرَا | 76:16 | UNVERIFIED |
+| QJ8-P026-K02 | قَوَارِيرَ | 76:16 | CORRECTED-DRAFT / VERIFY-MUSHAF |
 | QJ8-P026-K03 | مِن فِضَّةٍ | 76:16 | UNVERIFIED |
 | QJ8-P026-K04 | قَدَّرُوهَا | 76:16 | UNVERIFIED |
 | QJ8-P026-K05 | تَقْدِيرًا | 76:16 | UNVERIFIED |
-| QJ8-P026-K06 | قَوَارِيرَا مِن فِضَّةٍ | 76:16 | UNVERIFIED |
+| QJ8-P026-K06 | قَوَارِيرَ مِن فِضَّةٍ | 76:16 | CORRECTED-DRAFT / VERIFY-MUSHAF |
 | QJ8-P026-K07 | قَدَّرُوهَا تَقْدِيرًا | 76:16 | UNVERIFIED |
 | QJ8-P026-K08 | كَانَتْ قَوَارِيرَا | 76:15 | UNVERIFIED |
-| QJ8-P026-K09 | قَوَارِيرَا | 76:15–16 | UNVERIFIED |
+| QJ8-P026-K09 | قَوَارِيرَا | 76:15–16 | HOLD-AMBIGUOUS-REF |
 
 ## P027 — Alif pada lakinna Al-Kahfi 18:38
 **Teori singkat:** Pada beberapa lafaz, bacaan ketika berhenti dapat berbeda dari bacaan ketika disambung. Praktikkan keduanya bersama guru.
@@ -115,11 +117,11 @@
 | QJ8-P028-K01 | سَلَٰسِلَا | 76:4 | UNVERIFIED |
 | QJ8-P028-K02 | وَأَغْلَٰلًا | 76:4 | UNVERIFIED |
 | QJ8-P028-K03 | قَوَارِيرَا | 76:15 | UNVERIFIED |
-| QJ8-P028-K04 | قَوَارِيرَا | 76:16 | UNVERIFIED |
+| QJ8-P028-K04 | قَوَارِيرَ | 76:16 | CORRECTED-DRAFT / VERIFY-MUSHAF |
 | QJ8-P028-K05 | لَّٰكِنَّا | 18:38 | UNVERIFIED |
 | QJ8-P028-K06 | هُوَ ٱللَّهُ رَبِّي | 18:38 | UNVERIFIED |
 | QJ8-P028-K07 | سَلَٰسِلَا وَأَغْلَٰلًا | 76:4 | UNVERIFIED |
-| QJ8-P028-K08 | قَوَارِيرَا مِن فِضَّةٍ | 76:16 | UNVERIFIED |
+| QJ8-P028-K08 | قَوَارِيرَ مِن فِضَّةٍ | 76:16 | CORRECTED-DRAFT / VERIFY-MUSHAF |
 | QJ8-P028-K09 | لَّٰكِنَّا هُوَ ٱللَّهُ | 18:38 | UNVERIFIED |
 
 ## P029 — Latihan lintas kompetensi
@@ -148,7 +150,7 @@
 | QJ8-P030-K04 | ءَآلْـَٰٔنَ | 10:91 | UNVERIFIED |
 | QJ8-P030-K05 | سَلَٰسِلَا | 76:4 | UNVERIFIED |
 | QJ8-P030-K06 | قَوَارِيرَا | 76:15 | UNVERIFIED |
-| QJ8-P030-K07 | قَوَارِيرَا | 76:16 | UNVERIFIED |
+| QJ8-P030-K07 | قَوَارِيرَ | 76:16 | CORRECTED-DRAFT / VERIFY-MUSHAF |
 | QJ8-P030-K08 | لَّٰكِنَّا | 18:38 | UNVERIFIED |
 | QJ8-P030-K09 | ءَآلذَّكَرَيْنِ | 6:143 | UNVERIFIED |
 
