@@ -7,9 +7,9 @@ import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
-ROW = re.compile(r"^\\| P(\\d{3}) \\|")
-REF = re.compile(r"QS\\s*\\d+\\s*:\\s*\\d+")
-ARABIC_MARKS = re.compile(r"[\\u064b-\\u065f\\u0670\\u06d6-\\u06ed]")
+ROW = re.compile(r"^\| P(\d{3}) \|")
+REF = re.compile(r"QS\s*\d+\s*:\s*\d+")
+ARABIC_MARKS = re.compile(r"[\u064b-\u065f\u0670\u06d6-\u06ed]")
 KNOWN_MISQUOTES = {
     ("P008", "QS 85:14", "إِنَّهُ هُوَ الْغَفُورُ الْوَدُودُ"),
     ("P007", "QS 22:16", "آيَاتِنَا بَيِّنَاتٍ"),
