@@ -43,7 +43,7 @@
 | 029 | الظُّنُونَا | 33:9–11 | DRAF | Rentang ditranskripsi di berkas pelengkap; perlu tashih |
 | 030 | الرَّسُولَا | 33:65–67 | DRAF | Rentang ditranskripsi di berkas pelengkap; perlu tashih |
 | 031 | السَّبِيلَا | 33:66–68 | DRAF | Tandai ulang 33:66 dari P030 |
-| 032 | Mad/qasr lafaz ثَمُودَا | 53:51 | DRAF PENGUATAN/ULANG | Bukan ayat unik; validasi guru Hafsh tetap wajib |
+| 032 | Mad/qasr lafaz ثَمُودَا | Hud 11:68 | DRAF | Contoh berbeda dari P022; tashih mushaf/guru belum selesai |
 | 033 | Verifikasi daftar gharib/musykilat UMMI | Belum dipilih | HOLD | Jangan gunakan nun wiqayah tanpa bukti kompetensi; pilih materi pengganti dari sumber resmi |
 | 034 | Evaluasi hamzah | 41:44;6:143;10:59 | ULANG | Rubrik |
 | 035 | Evaluasi tanda sifr | 33:10;33:66–67;76:15–16 | ULANG | Tanda dan waqf |
@@ -138,3 +138,8 @@ P033 tetap HOLD. Istilah nun wiqayah belum terbukti sebagai kompetensi gharib Ha
 ## Verifikasi sumber resmi UMMI untuk P033 — 28 Oktober 2026
 
 Audit sumber resmi tersedia pada [QJ8-V2-AUDIT-SUMBER-RESMI-UMMI-P033-2026-10-28.md](QJ8-V2-AUDIT-SUMBER-RESMI-UMMI-P033-2026-10-28.md). Situs resmi mengonfirmasi keberadaan buku Gharib UMMI dan distribusi terbatas, tetapi tidak menampilkan daftar kompetensi lengkap yang dapat diperiksa publik. Oleh sebab itu P033 tetap HOLD sampai pengampu memeriksa buku resmi; jangan mengarang kompetensi pengganti.
+
+
+## Revisi P032 — sumber contoh berbeda
+
+P032 kini memakai kandidat QS. Hud 11:68 untuk lafaz ثَمُودَا, sesuai contoh dalam artikel pembelajaran gharib Hafsh: https://tafsiralquran.id/bacaan-gharib-dalam-al-quran-menurut-riwayat-imam-hafs/. Dengan demikian, tidak perlu mengulang An-Najm 53:51 dari konteks P022. Keputusan rinci: [QJ8-V2-REVISI-P032-THAMUDA-HUD-11-68-2026-10-28.md](QJ8-V2-REVISI-P032-THAMUDA-HUD-11-68-2026-10-28.md). Status tetap DRAF sampai teks rasm dan bacaan disahkan guru.
