@@ -12,11 +12,13 @@
 
 Fokus **ٱلسَّبِيلَا۠** (33:67). Ayat 66 sengaja menjadi konteks tetapi tidak dihitung sebagai contoh gharib baru: telah dipakai P030 untuk **ٱلرَّسُولَا۠**. Perlu tashih tanda sifr serta wasl–waqf. Sumber https://quran.com/33/67
 
-## P032 — ثَمُودَا: lokasi yang dapat diperiksa
+## P032 — ثَمُودَا: contoh utama dipindahkan ke Hud 11:68
 
-**An-Najm 53:51** وَثَمُودَا۟ فَمَآ أَبْقَىٰ
+**Hud 11:68** — sasaran **ثَمُودَا** pada rangkaian **أَلَآ إِنَّ ثَمُودَا۟ كَفَرُوا۟ رَبَّهُمْ**.
 
-Sumber https://quran.com/53/51. **HOLD:** meskipun lokasi dan bentuk tampak pada mushaf, belum ditetapkan apakah kompetensi ini perlu halaman khusus, karena 53:51 sudah menjadi konteks P022 dan klasifikasi rasm/waqf harus diperiksa. Hindari kandidat Hud 11:68 atau Al-Furqan 25:38 sebagai bukti tanpa pemeriksaan lafaz dan rasm.
+Rujukan pembelajaran gharib Hafs menyebut lafaz ثَمُودَا sebagai bacaan pendek dan memberi contoh Hud 11:68: https://tafsiralquran.id/bacaan-gharib-dalam-al-quran-menurut-riwayat-imam-hafs/. Tampilan teks ayat juga dapat dibandingkan di Quran.com: https://quran.com/id/hud/68/qiraat.
+
+**Keputusan editorial:** kandidat utama P032 dipindahkan dari An-Najm 53:51 ke Hud 11:68 untuk menghindari pengulangan konteks P022. Ini tetap **DRAF**, bukan tashih akhir. Sumber qiraat daring menampilkan beberapa wajah bacaan; guru wajib memastikan pilihan Hafs dan penjelasan mad/qasr yang tepat. Transkripsi siap cetak harus dicocokkan karakter demi karakter dengan mushaf acuan. An-Najm 53:51 tidak dihitung sebagai contoh unik P032.
 
 ## P033 — Istilah 'nun wiqayah': HOLD
 
