@@ -57,6 +57,8 @@ def audit(master,inp,report):
         # Preserve rejected-example history without treating an empty slot as filled.
         if not filled and "AUDIT-REJECTED" in (r.get("notes") or "") and status!="EMPTY":
             problems.append([sid,"REJECTED_SLOT_NOT_EMPTY_STATUS"])
+        if not filled and status=="EMPTY" and (r.get("source_verified")=="yes" or r.get("competency_verified")=="yes"):
+            problems.append([sid,"EMPTY_SLOT_VERIFICATION_FLAG"])
         if filled and status=="REJECTED":
             problems.append([sid,"REJECTED_TEXT_STILL_PRESENT"])
         if filled and "AUDIT HOLD" in (r.get("notes") or "") and status=="APPROVED":
