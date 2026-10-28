@@ -95,3 +95,12 @@ Audit batch baru disimpan di [QJ8-V2-AUDIT-BATCH-P021-P031-DUPLIKASI-DAN-VERSI-2
 ## Pembaruan audit cepat P036–P040 — 28 Oktober 2026
 
 Audit bank ayat/rubrik tersimpan di [QJ8-V2-AUDIT-P036-P040-BANK-AYAT-RUBRIK-2026-10-28.md](QJ8-V2-AUDIT-P036-P040-BANK-AYAT-RUBRIK-2026-10-28.md). P036 harus dinilai sebagai dua stasiun berbeda; P037–P038 memerlukan item terpisah dan audio guru; P039 perlu matriks cakupan kompetensi sebelum pengacakan; ambang 80/100 P040 tetap usulan sampai disahkan. P010/P032/P033 tetap dikecualikan dari ujian sampai status HOLD diputuskan. Status tashih/audio/layout tetap belum terverifikasi.
+
+
+## Koreksi sinkronisasi sumber kanonik — 28 Oktober 2026
+
+Berkas utama sudah disinkronkan dengan ayat konteks lengkap dari berkas pelengkap:
+- [P021–P025 utama](QJ8-V2-AYAT-NYATA-P021-P025-2026-10-28.md): P023 sekarang memuat Al-Furqan 25:68–70.
+- [P026–P030 utama](QJ8-V2-AYAT-NYATA-P026-P030-2026-10-28.md): P029 memuat Al-Ahzab 33:9–11 dan P030 memuat 33:65–67.
+
+Catatan audit terdahulu yang menyebut berkas utama masih parsial adalah **riwayat sebelum sinkronisasi**. Status rasm, guru Hafsh, audio, dan layout tetap belum disahkan; sinkronisasi isi tidak sama dengan tashih.
