@@ -1,0 +1,31 @@
+name: QURBATA J6 Register Audit
+on:
+  push:
+    branches:
+      - work/qj6-register-9-slot-20261028
+    paths:
+      - 'books/jilid-6/**'
+      - '.github/workflows/qj6-register-audit.yml'
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate isolated 360-slot CSV
+        run: |
+          python3 books/jilid-6/tools/qj6_slots.py init --master books/jilid-6/QJ6-MASTER-Struktur-40-Halaman.md --csv /tmp/QJ6-slots.csv
+      - name: Audit register
+        run: |
+          python3 books/jilid-6/tools/qj6_slots.py audit --master books/jilid-6/QJ6-MASTER-Struktur-40-Halaman.md --csv /tmp/QJ6-slots.csv --report /tmp/QJ6-audit.json
+      - name: Upload reproducible register and report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qj6-register-and-audit
+          path: |
+            /tmp/QJ6-slots.csv
+            /tmp/QJ6-audit.json
