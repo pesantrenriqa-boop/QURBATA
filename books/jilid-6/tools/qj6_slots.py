@@ -80,8 +80,9 @@ def audit(master,inp,report):
     approved=sum(r.get("review_status")=="APPROVED" for r in rows)
     rejected=sum(r.get("review_status")=="REJECTED" for r in rows)
     held=sum("AUDIT HOLD" in (r.get("notes") or "") for r in rows)
+    rejected_history=sum("AUDIT-REJECTED" in (r.get("notes") or "") for r in rows)
     usable_candidates=sum(bool(r.get("text_uthmani","").strip()) and r.get("review_status")=="CANDIDATE" and "AUDIT HOLD" not in (r.get("notes") or "") for r in rows)
-    result={"expected":360,"actual":len(rows),"filled":filled,"approved":approved,"rejected":rejected,"held":held,"usable_candidates":usable_candidates,"issues":len(problems),"findings":problems,"sha256":hashlib.sha256(inp.read_bytes()).hexdigest(),"warning":"Automated audit cannot authenticate Quranic text or tajwid; human tashih mandatory."}
+    result={"expected":360,"actual":len(rows),"filled":filled,"approved":approved,"rejected":rejected,"held":held,"rejected_history":rejected_history,"usable_candidates":usable_candidates,"issues":len(problems),"findings":problems,"sha256":hashlib.sha256(inp.read_bytes()).hexdigest(),"warning":"Automated audit cannot authenticate Quranic text or tajwid; human tashih mandatory."}
     report.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding="utf-8")
     print(json.dumps({k:v for k,v in result.items() if k!="findings"},ensure_ascii=False))
     return 1 if problems else 0
