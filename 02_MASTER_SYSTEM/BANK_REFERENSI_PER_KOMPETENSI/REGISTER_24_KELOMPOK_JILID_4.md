@@ -1142,3 +1142,11 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Audit ulang menegaskan tidak boleh mengisi slot P002 dengan frasa yang hukum targetnya bukan izhar halqi. Contoh أَنْ يَضْرِبَ pada QS 2:26 adalah nun sukun bertemu ي (idgham bighunnah ketika wasal), sehingga **ditandai eksplisit TIDAK SESUAI P002** dan tidak dihitung sebagai kandidat aktif/lolos. Rujukan teks ayat: https://quran.com/id/bakara/26/tafsirs
 - P002/K13 tetap kosong. Tidak ada kandidat izhar baru yang ditambahkan sampai contoh dengan hamzah/ha yang tepat dan teks mushaf terverifikasi ditemukan.
 - Kolom Sah tetap 0/24; audit ini mencegah pengisian keliru, bukan menambah kandidat yang layak cetak.
+
+
+## Audit cepat P002 — duplikasi dan kontrol slot (28 Oktober 2026)
+
+- Pemeriksaan baris utama menemukan مِنْ أَيِّ شَيْءٍ خَلَقَهُ (QS 80:18) tercatat pada P002 dan P009. Ini pengulangan teks persis lintas halaman; jangan dihitung sebagai variasi unik. Pertahankan hanya bila ada fungsi yang terdokumentasi (pengenalan awal vs evaluasi/transfer); selain itu pindahkan salah satunya ke arsip setelah keputusan kurikulum.
+- P002 masih memiliki slot kosong. Saya tidak menambahkan contoh pengganti pada batch ini karena belum menemukan kandidat hamzah/ha yang telah diverifikasi sumber, batas penggalan, dan status duplikasi secara memadai.
+- Sumber teks QS 80:18 mengonfirmasi lafaz مِنْ أَيِّ شَيْءٍ خَلَقَهُ; lihat https://surahquran.com/english-arabic-aya-18-sora-80.html . Status contoh tetap kandidat, bukan sah cetak.
+- Tidak ada slot diubah pada audit ini. Ini pembaruan catatan audit saja; jumlah lolos P002 tetap 0/24.
