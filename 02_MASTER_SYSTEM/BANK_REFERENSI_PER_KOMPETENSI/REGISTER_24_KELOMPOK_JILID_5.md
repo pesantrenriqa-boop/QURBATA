@@ -107,3 +107,20 @@ Pemindaian rujukan otomatis pada P001–P010 menemukan pengulangan sumber beriku
 - P009: QS 3:83, QS 57:11, dan QS 13:39 masing-masing muncul pada dua slot. Ketiganya tidak dihitung sebagai contoh sumber unik sampai peninjauan selesai.
 
 Keputusan aman: tidak ada ayat yang dihapus atau diganti pada tahap rekap ini. Penanda duplikasi adalah status audit, bukan keputusan bahwa contoh salah. Kandidat P009 harus diperiksa khusus untuk posisi ha dhamir, hamzah setelahnya, dan kondisi wasal; tashih mushaf dan tajwid belum dinyatakan lulus.
+
+
+## Audit terarah P021–P030 — tindak lanjut cepat
+
+Pemindaian otomatis rujukan QS surah:ayat pada P021–P030 menemukan pengulangan berikut:
+
+- P021: QS Taha 20:14 muncul pada K05 dan K06; QS Taha 20:18 muncul pada K07 dan K08.
+- P023: QS Maryam 19:4 muncul pada K05 dan K06; QS Ali 'Imran 3:38 muncul pada K07 dan K08.
+- P022, P024–P030: tidak ditemukan rujukan surah:ayat ganda dalam pemindaian otomatis.
+
+Status ini hanya deteksi sumber berulang. Potongan berbeda dari ayat yang sama bisa saja dipakai untuk tujuan latihan yang berbeda; jangan hapus atau ganti sebelum memastikan fungsi pedagogis dan kompetensi. P028 adalah halaman Bahasa Arab menurut master, sehingga auditnya harus menilai kompetensi BA, bukan memaksakan klasifikasi tajwid.
+
+### Pengamanan tahap ini
+
+- Tidak ada kandidat yang dihapus atau dinyatakan lolos tashih.
+- P021 dan P023 perlu ditinjau untuk menentukan apakah pengulangan frasa memberi latihan berbeda atau merupakan duplikasi tanpa nilai tambah.
+- Teks mushaf, ketepatan kutipan, tajwid, kondisi waqaf/wasal, dan urutan prasyarat tetap perlu pemeriksaan manual.
