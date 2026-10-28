@@ -31,6 +31,10 @@ def audit(master,inp,report):
         if r.get("page_id")!=sid[:8]:problems.append([sid,"PAGE_MISMATCH"])
         filled=bool(r.get("text_uthmani","").strip())
         if filled:
+            try:
+                sn=int(r.get("surah",""))
+                if sn==1 or 78<=sn<=114:problems.append([sid,"FORBIDDEN_SURAH_J6"])
+            except (ValueError,TypeError):pass
             for k in ("source_id","surah","ayah_start","ayah_end"):
                 if not r.get(k,"").strip():problems.append([sid,"MISSING_"+k.upper()])
             if r.get("source_verified")!="yes":problems.append([sid,"SOURCE_UNVERIFIED"])
