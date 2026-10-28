@@ -65,6 +65,16 @@ def audit(master,inp,report):
             problems.append([sid,"AUDIT_HOLD_APPROVED"])
         if status=="APPROVED" and (not filled or r.get("source_verified")!="yes" or r.get("competency_verified")!="yes" or not r.get("reviewer","").strip()):
             problems.append([sid,"INVALID_APPROVAL"])
+    # Explicitly report page-level gaps for focused filling.
+    page_progress={}
+    for r in rows:
+        page=r.get("page_id","")
+        if not page:continue
+        x=page_progress.setdefault(page,{"filled":0,"empty":0,"approved":0,"held":0})
+        if (r.get("text_uthmani") or "").strip():x["filled"]+=1
+        else:x["empty"]+=1
+        if r.get("review_status")=="APPROVED":x["approved"]+=1
+        if "AUDIT HOLD" in (r.get("notes") or ""):x["held"]+=1
     # Catch repeated excerpts and identical verse spans within Jilid 6.
     seen_text={};seen_verse={}
     for r in rows:
@@ -84,7 +94,7 @@ def audit(master,inp,report):
     held=sum("AUDIT HOLD" in (r.get("notes") or "") for r in rows)
     rejected_history=sum("AUDIT-REJECTED" in (r.get("notes") or "") for r in rows)
     usable_candidates=sum(bool(r.get("text_uthmani","").strip()) and r.get("review_status")=="CANDIDATE" and "AUDIT HOLD" not in (r.get("notes") or "") for r in rows)
-    result={"expected":360,"actual":len(rows),"filled":filled,"approved":approved,"rejected":rejected,"held":held,"rejected_history":rejected_history,"usable_candidates":usable_candidates,"issues":len(problems),"findings":problems,"sha256":hashlib.sha256(inp.read_bytes()).hexdigest(),"warning":"Automated audit cannot authenticate Quranic text or tajwid; human tashih mandatory."}
+    result={"expected":360,"actual":len(rows),"filled":filled,"approved":approved,"rejected":rejected,"held":held,"rejected_history":rejected_history,"usable_candidates":usable_candidates,"issues":len(problems),"findings":problems,"sha256":hashlib.sha256(inp.read_bytes()).hexdigest(),"page_progress":page_progress,"warning":"Automated audit cannot authenticate Quranic text or tajwid; human tashih mandatory."}
     report.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding="utf-8")
     print(json.dumps({k:v for k,v in result.items() if k!="findings"},ensure_ascii=False))
     return 1 if problems else 0
