@@ -22,6 +22,8 @@ def validate(path):
     required={"case_id","target_reference","before_reference","target_verse_references","after_reference"}
     if not rows or not required.issubset(rows[0]):
         raise ValueError("missing required columns")
+    if any(not row["case_id"] or not row["target_verse_references"] for row in rows):
+        raise ValueError("blank case ID or target references")
     ids=Counter(x["case_id"] for x in rows)
     duplicates=[k for k,n in ids.items() if n>1]
     if duplicates: raise ValueError(f"duplicate case IDs: {duplicates}")
@@ -31,6 +33,8 @@ def validate(path):
         ident=row["case_id"]
         try:
             target=[parse(v) for v in row["target_verse_references"].split(";")]
+            if not target:
+                raise ValueError("empty target interval")
             if any(target[i+1] != (target[i][0],target[i][1]+1) for i in range(len(target)-1)):
                 raise ValueError("target verses not consecutive within one surah")
             s,start=target[0]
