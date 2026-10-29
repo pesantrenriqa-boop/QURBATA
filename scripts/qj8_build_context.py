@@ -11,6 +11,10 @@ from pathlib import Path
 
 REF = re.compile(r"^\d{1,3}:\d+$")
 
+def context_refs(before, targets, after):
+    """Return only existing verse references, respecting surah boundaries."""
+    return ([before] if before != "N/A" else []) + list(targets) + ([after] if after != "N/A" else [])
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--manifest", default="books/jilid-8/QJ8-MANIFEST-KONTEKS-AYAT-2026-10-29.csv")
@@ -34,7 +38,7 @@ def main():
         before = row["before_reference"]
         targets = row["target_verse_references"].split(";")
         after = row["after_reference"]
-        refs = ([before] if before != "N/A" else []) + targets + ([after] if after != "N/A" else [])
+        refs = context_refs(before, targets, after)
         missing = [r for r in refs if r not in verses]
         output += [f"## {row['case_id']} — {row['target_reference']}", ""]
         if missing:
@@ -49,7 +53,11 @@ def main():
             output += [f"**Sesudah ({after}):**", "", verses[after], ""]
         output += ["**Status:** belum tashih target Gharib, rasm/dabt, dan jalur Hafs.", ""]
     output.insert(4, f"Kasus dengan konteks lengkap: {complete}/{len(rows)}. Sisanya HOLD.")
-    Path(args.output).write_text("\n".join(output), encoding="utf-8")
+    destination = Path(args.output)
+    if destination.exists():
+        raise SystemExit(f"ERROR: refusing to overwrite existing preview: {destination}")
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    destination.write_text("\n".join(output), encoding="utf-8")
     print(f"Context complete {complete}/{len(rows)}; all output remains HOLD pending tashih.")
 
 if __name__ == "__main__":
