@@ -201,7 +201,7 @@ slot_id,page_id,competency,kind,text_uthmani,surah,ayah_start,ayah_end,source_id
 "QJ6-P023-S02","QJ6-P023","Waqaf ta marbuthah — contoh sah","tartil","لِسَعْيِهَا رَاضِيَةٌ","88","9","9","QURANCOM:88:9","no","no","","CANDIDATE","Provisional end of Al-Ghashiyah 88:9 with ta marbuthah رَاضِيَةٌ; verify rasm, prerequisites and J1-J5 dedup; NOT APPROVED."
 "QJ6-P023-S03","QJ6-P023","Waqaf ta marbuthah — contoh sah","tartil","فَأُمُّهُۥ هَاوِيَةٌ","101","9","9","QURANCOM:101:9","no","no","","CANDIDATE","Provisional Al-Qariah 101:9; pause on final ta marbuthah هَاوِيَةٌ. Verify rasm, prerequisites and J1-J5 dedup before approval."
 "QJ6-P023-S04","QJ6-P023","Waqaf ta marbuthah — contoh sah","tartil","كَلَّا لَيُنۢبَذَنَّ فِى ٱلْحُطَمَةِ","104","4","4","QURANCOM:104:4","no","no","","CANDIDATE","Provisional Al-Humazah 104:4 ending ta marbuthah in ٱلْحُطَمَةِ; verify precise Uthmani rasm and J1-J5 dedup before approval."
-"QJ6-P023-S05","QJ6-P023","Waqaf ta marbuthah — contoh sah","tartil","","","","","","","","","EMPTY",""
+"QJ6-P023-S05","QJ6-P023","Waqaf ta marbuthah — contoh sah","tartil","نَفْخَةٌ وَٰحِدَةٌ","69","13","13","QURANCOM:69:13","no","no","","CANDIDATE","Provisional end of Al-Haqqah 69:13; waqaf on ta marbuthah وَٰحِدَةٌ. Requires exact Uthmani verification, competency audit and cross-volume dedup before approval."
 "QJ6-P023-S06","QJ6-P023","Waqaf ta marbuthah — contoh sah","tartil","","","","","","","","","EMPTY",""
 "QJ6-P023-S07","QJ6-P023","Waqaf ta marbuthah — contoh sah","tartil","","","","","","","","","EMPTY",""
 "QJ6-P023-S08","QJ6-P023","Waqaf ta marbuthah — contoh sah","tartil","","","","","","","","","EMPTY",""
