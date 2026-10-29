@@ -1,0 +1,28 @@
+{
+  "document": "QJ8 Saktah source gate",
+  "status": "HOLD_PENDING_AUTHENTIC_UTHMANI_TEXT",
+  "case_count": 4,
+  "required_verse_count": 12,
+  "required_verse_refs": [
+    "18:1",
+    "18:2",
+    "18:3",
+    "36:51",
+    "36:52",
+    "36:53",
+    "75:26",
+    "75:27",
+    "75:28",
+    "83:13",
+    "83:14",
+    "83:15"
+  ],
+  "rules": [
+    "No inferred Quran text",
+    "Full preceding, target, following ayat",
+    "Verbatim Uthmani source",
+    "Teacher review before print"
+  ],
+  "structural_validation": "PASS_2026-10-29",
+  "text_validation": "HOLD_NO_SOURCE"
+}
