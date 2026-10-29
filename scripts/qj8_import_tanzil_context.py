@@ -34,6 +34,8 @@ def main():
         match = LINE.fullmatch(line)
         if not match:
             raise SystemExit(f"Unknown source format on line {n}; stop rather than modify: {line[:70]}")
+        if match[1] != str(int(match[1])) or match[2] != str(int(match[2])):
+            raise SystemExit(f"Noncanonical source numbering on line {n}")
         key = f"{int(match[1])}:{int(match[2])}"
         if key in verses:
             raise SystemExit(f"Duplicate source verse {key}")
@@ -45,7 +47,7 @@ def main():
         missing = sorted(expected - set(verses))
         extra = sorted(set(verses) - expected)
         raise SystemExit(f"Noncanonical source reference coverage: missing={missing[:8]}, extra={extra[:8]}")
-    if any(not verse or verse != verse.strip() for verse in verses.values()):
+    if any(not verse or verse != verse.strip() or "\\r" in verse or "\\n" in verse for verse in verses.values()):
         raise SystemExit("Whitespace anomaly in source verse; stop rather than silently modify")
     with Path(args.manifest).open(encoding="utf-8-sig", newline="") as f:
         rows = list(csv.DictReader(f))
