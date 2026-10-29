@@ -136,3 +136,18 @@ Pemindaian otomatis rujukan surah:ayat pada P031–P040 menemukan satu pengulang
 Catatan struktur: P038 adalah “Akhlak/Hadis 5 — niat, tanggung jawab, disiplin, adil” sesuai master. Jangan mengubahnya menjadi halaman Tartil. P040 adalah ujian akhir lintas kompetensi (termasuk retensi, transfer, dan adab); audit harus mempertahankan pemisahan antara penilaian bacaan dan adab.
 
 Keputusan aman: tidak ada ayat yang dihapus atau diganti pada tahap ini. Kandidat tetap draf sampai teks mushaf, konteks kutipan, hukum bacaan, waqaf/wasal, duplikasi lintas halaman, dan prasyarat kompetensi diverifikasi.
+
+
+## Prioritas koreksi lintas 40 halaman — 2026-10-29
+
+Pemindaian ulang seluruh 480 slot aktif menunjukkan **11 halaman** dengan rujukan surah:ayat berulang di dalam halaman: P002, P004, P009, P011, P014, P016, P017, P019, P021, P023, P040. Hasil ini dihitung dari isi register terbaru, bukan dari catatan audit terdahulu. Pengulangan tidak otomatis salah karena satu ayat dapat memiliki dua potongan berbeda atau tujuan murojaah.
+
+| Prioritas | Halaman | Rujukan berulang | Pemeriksaan wajib |
+|---|---|---|---|
+| Tinggi | P009 | QS 3:83, 57:11, 13:39 | Ha dhamir, hamzah setelahnya, dan wasal; pastikan mad silah thawilah benar |
+| Tinggi | P016 | QS 106:3, 105:1, 2:2, 50:19 | Mad lin saat waqaf; bedakan waqaf ikhtibari dari waqaf alami |
+| Tinggi | P011 | QS 69:1, 79:34, 80:33 | Mad lazim kalimi dan kebenaran contoh |
+| Sedang | P021, P023 | QS 20:14, 20:18, 19:4, 3:38 | Potongan berbeda dari ayat sama; bedakan tujuan latihan |
+| Sedang | P002, P004, P014, P017, P019, P040 | QS 17:81, 2:4, 69:1, 105:1, 110:1, 17:70 | Tinjau nilai tambah dan alternatif non-duplikat |
+
+**Aturan aman:** jangan ubah status Sah; jangan menghapus atau mengganti massal; pastikan ketepatan rasm dan rujukan mushaf, hukum bacaan, wasal/waqaf, serta prasyarat sebelum setiap penggantian. P028 tetap Bahasa Arab dan P038 tetap Akhlak/Hadis sesuai master. P013 memiliki 12 slot kosong yang tidak boleh diisi dengan kandidat Mad Farq rekaan.
