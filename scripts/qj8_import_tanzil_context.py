@@ -11,6 +11,8 @@ import json
 import re
 from pathlib import Path
 
+from qj8_validate_context_manifest import LENGTHS
+
 LINE = re.compile(r"^(\d{1,3})\|(\d{1,3})\|(.+)$")
 REF = re.compile(r"^\d{1,3}:\d+$")
 
@@ -27,7 +29,6 @@ def main():
         raise SystemExit(f"Invalid UTF-8: {e}")
     verses = {}
     for n, line in enumerate(text.splitlines(), 1):
-        line = line.strip()
         if not line or line.startswith("#"):
             continue
         match = LINE.fullmatch(line)
@@ -39,6 +40,13 @@ def main():
         verses[key] = match[3]  # verbatim; no normalization or diacritic removal
     if len(verses) != 6236:
         raise SystemExit(f"Expected 6236 verses; found {len(verses)}. Wrong edition/format?")
+    expected = {f"{s}:{a}" for s, count in enumerate(LENGTHS, 1) for a in range(1, count + 1)}
+    if set(verses) != expected:
+        missing = sorted(expected - set(verses))
+        extra = sorted(set(verses) - expected)
+        raise SystemExit(f"Noncanonical source reference coverage: missing={missing[:8]}, extra={extra[:8]}")
+    if any(not verse or verse != verse.strip() for verse in verses.values()):
+        raise SystemExit("Whitespace anomaly in source verse; stop rather than silently modify")
     with Path(args.manifest).open(encoding="utf-8-sig", newline="") as f:
         rows = list(csv.DictReader(f))
     required = {"before_reference", "target_verse_references", "after_reference"}
