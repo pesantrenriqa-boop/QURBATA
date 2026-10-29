@@ -14,6 +14,7 @@ def main():
     altered.add("18:111")
     assert len(altered)==6236
     assert altered!=expected, "Equal verse count must not bypass reference integrity"
+    assert "18:111" not in expected, "Out-of-range ayah must be rejected"
     sample="  بِسْمِ ٱللَّهِ  "
     assert sample!=sample.strip(), "Whitespace changes must be detectable"
     print("PASS: canonical set 6236; equal-count corrupted reference rejected by set comparison")
