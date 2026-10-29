@@ -7,9 +7,9 @@ import argparse
 import csv
 import json
 import re
+from qj8_validate_context_manifest import parse, validate
 from pathlib import Path
 
-REF = re.compile(r"^\d{1,3}:\d+$")
 
 def context_refs(before, targets, after):
     """Return only existing verse references, respecting surah boundaries."""
@@ -22,12 +22,24 @@ def main():
     ap.add_argument("--output", required=True, help="Output markdown preview (never final)")
     args = ap.parse_args()
     data = json.loads(Path(args.verses).read_text(encoding="utf-8"))
-    source_id = data.get("source_id", "").strip()
+    source_id = data.get("source_id")
+    source_sha256 = data.get("source_sha256")
+    source_status = data.get("status")
     verses = data.get("verses")
-    if not source_id or not isinstance(verses, dict):
+    if not isinstance(source_id, str) or not source_id.strip() or not isinstance(verses, dict):
         raise SystemExit("ERROR: source_id and verses map required")
-    if not all(REF.fullmatch(k) and isinstance(v, str) and v.strip() for k, v in verses.items()):
-        raise SystemExit("ERROR: invalid verse key or empty text")
+    if not isinstance(source_sha256, str) or not re.fullmatch(r"[0-9a-f]{64}", source_sha256):
+        raise SystemExit("ERROR: authentic source SHA-256 metadata required")
+    if source_status != "SOURCE_IMPORTED_NOT_TASHIH":
+        raise SystemExit("ERROR: source must be explicitly marked unreviewed")
+    if not all(isinstance(k, str) and isinstance(v, str) and v and v == v.strip() for k, v in verses.items()):
+        raise SystemExit("ERROR: invalid or altered verse text")
+    try:
+        for ref in verses:
+            parse(ref)
+        validate(args.manifest)
+    except ValueError as e:
+        raise SystemExit(f"ERROR: invalid references: {e}")
     with Path(args.manifest).open(encoding="utf-8-sig", newline="") as f:
         rows = list(csv.DictReader(f))
     if len(rows) != 33:
