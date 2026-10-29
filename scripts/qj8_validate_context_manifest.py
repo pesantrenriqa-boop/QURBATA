@@ -2,6 +2,7 @@
 """Fail-closed QJ8 manifest validator. No Quran text generated."""
 import argparse
 import csv
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -10,6 +11,8 @@ LENGTHS = [7,286,200,176,120,165,206,75,129,109,123,111,43,52,99,128,111,110,98,
 assert len(LENGTHS)==114 and sum(LENGTHS)==6236
 
 def parse(ref):
+    if not isinstance(ref,str) or not re.fullmatch(r"[1-9][0-9]*:[1-9][0-9]*",ref):
+        raise ValueError(f"malformed Quran verse reference: {ref!r}")
     a,b = ref.split(":")
     s,n=int(a),int(b)
     if not (1<=s<=114 and 1<=n<=LENGTHS[s-1]):
