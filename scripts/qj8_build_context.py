@@ -34,7 +34,7 @@ def main():
         before = row["before_reference"]
         targets = row["target_verse_references"].split(";")
         after = row["after_reference"]
-        refs = ([before] if before != "N/A" else []) + targets + [after]
+        refs = ([before] if before != "N/A" else []) + targets + ([after] if after != "N/A" else [])
         missing = [r for r in refs if r not in verses]
         output += [f"## {row['case_id']} — {row['target_reference']}", ""]
         if missing:
@@ -45,7 +45,9 @@ def main():
             output += [f"**Sebelum ({before}):**", "", verses[before], ""]
         for ref in targets:
             output += [f"**TARGET ({ref}):**", "", verses[ref], ""]
-        output += [f"**Sesudah ({after}):**", "", verses[after], "", "**Status:** belum tashih target Gharib, rasm/dabt, dan jalur Hafs.", ""]
+        if after != "N/A":
+            output += [f"**Sesudah ({after}):**", "", verses[after], ""]
+        output += ["**Status:** belum tashih target Gharib, rasm/dabt, dan jalur Hafs.", ""]
     output.insert(4, f"Kasus dengan konteks lengkap: {complete}/{len(rows)}. Sisanya HOLD.")
     Path(args.output).write_text("\n".join(output), encoding="utf-8")
     print(f"Context complete {complete}/{len(rows)}; all output remains HOLD pending tashih.")
