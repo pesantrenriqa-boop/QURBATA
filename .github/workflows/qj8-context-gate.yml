@@ -8,6 +8,8 @@ on:
       - 'scripts/qj8_test_saktah_context_gate.py'
       - 'scripts/qj8_validate_canonical_saktah.py'
       - 'scripts/qj8_import_tanzil_context.py'
+      - 'scripts/qj8_build_context.py'
+      - 'scripts/qj8_test_context_boundary.py'
       - 'scripts/qj8_test_import_source_integrity.py'
       - 'books/jilid-8/QJ8-REGISTER-KASUS-KANONIK-SAKTAH-2026-10-29.csv'
       - '.github/workflows/qj8-context-gate.yml'
@@ -36,6 +38,8 @@ jobs:
         run: python scripts/qj8_validate_canonical_saktah.py
       - name: Test Quran source reference integrity
         run: python scripts/qj8_test_import_source_integrity.py
+      - name: Test context at surah boundaries
+        run: python scripts/qj8_test_context_boundary.py
       - name: Confirm source remains HOLD (not print-ready)
         run: |
           python - <<'PY'
