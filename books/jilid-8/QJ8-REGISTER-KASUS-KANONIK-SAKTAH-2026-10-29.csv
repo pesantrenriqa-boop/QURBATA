@@ -1,0 +1,5 @@
+case_id,competency_id,target_ref_start,target_ref_end,before_ref,target_refs,after_ref,source_text_status,recitation_status,print_status,notes
+GH-SAK-01,GHARIB-SAKTAH,18:1,18:2,N/A,18:1;18:2,18:3,HOLD_NO_SOURCE,PENDING_TASHIH,HOLD,Kasus lintas ayat; jangan anggap 18:1 dan 18:2 sebagai dua kejadian
+GH-SAK-02,GHARIB-SAKTAH,36:52,36:52,36:51,36:52,36:53,HOLD_NO_SOURCE,PENDING_TASHIH,HOLD,Kasus saktah dalam satu ayat
+GH-SAK-03,GHARIB-SAKTAH,75:27,75:27,75:26,75:27,75:28,HOLD_NO_SOURCE,PENDING_TASHIH,HOLD,Kasus saktah dalam satu ayat
+GH-SAK-04,GHARIB-SAKTAH,83:14,83:14,83:13,83:14,83:15,HOLD_NO_SOURCE,PENDING_TASHIH,HOLD,Kasus saktah dalam satu ayat
