@@ -189,7 +189,7 @@ slot_id,page_id,competency,kind,text_uthmani,surah,ayah_start,ayah_end,source_id
 "QJ6-P021-S08","QJ6-P021","Ibtida' dasar — memulai setelah berhenti","tartil","","","","","","","","","EMPTY",""
 "QJ6-P021-S09","QJ6-P021","Ibtida' dasar — memulai setelah berhenti","tartil","","","","","","","","","EMPTY",""
 "QJ6-P022-S01","QJ6-P022","Waqaf pada akhir ayat — perubahan bunyi eligible","tartil","","","","","","","","","EMPTY","Dedup audit: QS 21:83 already at P002-S09; prior P022-S01 excerpt preserved in Git history. Need distinct end-of-ayah example with verified mushaf."
-"QJ6-P022-S02","QJ6-P022","Waqaf pada akhir ayat — perubahan bunyi eligible","tartil","","","","","","","","","EMPTY",""
+"QJ6-P022-S02","QJ6-P022","Waqaf pada akhir ayat — perubahan bunyi eligible","tartil","وَأَنتَ خَيْرُ ٱلرَّٰحِمِينَ","23","118","118","QURANCOM:23:118","no","no","","CANDIDATE","Provisional end-of-ayah excerpt QS Al-Muminun 23:118; no duplicate surah:ayah found in current J6 CSV at time of insertion. Verify Uthmani orthography and end-of-ayah glyph against selected mushaf, J1-J5 dedup, and competency before approval; https://quran.com/23/118"
 "QJ6-P022-S03","QJ6-P022","Waqaf pada akhir ayat — perubahan bunyi eligible","tartil","","","","","","","","","EMPTY",""
 "QJ6-P022-S04","QJ6-P022","Waqaf pada akhir ayat — perubahan bunyi eligible","tartil","","","","","","","","","EMPTY",""
 "QJ6-P022-S05","QJ6-P022","Waqaf pada akhir ayat — perubahan bunyi eligible","tartil","","","","","","","","","EMPTY",""
