@@ -1,0 +1,39 @@
+name: QJ8 context integrity gate
+on:
+  push:
+    paths:
+      - 'books/jilid-8/QJ8-MANIFEST-KONTEKS-AYAT-2026-10-29.csv'
+      - 'books/jilid-8/QJ8-SAKTAH-CONTEXT-GATE.json'
+      - 'scripts/qj8_validate_context_manifest.py'
+      - 'scripts/qj8_test_saktah_context_gate.py'
+      - '.github/workflows/qj8-context-gate.yml'
+  pull_request:
+    paths:
+      - 'books/jilid-8/**'
+      - 'scripts/qj8_*.py'
+      - '.github/workflows/qj8-context-gate.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  context-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate context manifest
+        run: python scripts/qj8_validate_context_manifest.py
+      - name: Validate Saktah gate and negative tests
+        run: python scripts/qj8_test_saktah_context_gate.py
+      - name: Confirm source remains HOLD (not print-ready)
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('books/jilid-8/QJ8-SAKTAH-CONTEXT-GATE.json').read_text(encoding='utf-8'))
+          assert d['text_validation']=='HOLD_NO_SOURCE', 'Review workflow before changing source status'
+          print('PASS: source HOLD, no print approval claimed')
+          PY
