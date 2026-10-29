@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Regression test for first/last surah boundaries in QJ8 preview logic."""
 from pathlib import Path
-import csv
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from qj8_validate_context_manifest import LENGTHS, parse
