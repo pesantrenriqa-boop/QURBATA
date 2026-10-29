@@ -30,6 +30,10 @@ def main():
         raise SystemExit("ERROR: source_id and verses map required")
     if not isinstance(source_sha256, str) or not re.fullmatch(r"[0-9a-f]{64}", source_sha256):
         raise SystemExit("ERROR: authentic source SHA-256 metadata required")
+    if source_id != "TANZIL-UTHMANI-LOCAL-" + source_sha256[:16]:
+        raise SystemExit("ERROR: source_id and source_sha256 mismatch")
+    if data.get("source_url") != "https://tanzil.net/pub/download/index.php":
+        raise SystemExit("ERROR: unexpected source provenance URL")
     if source_status != "SOURCE_IMPORTED_NOT_TASHIH":
         raise SystemExit("ERROR: source must be explicitly marked unreviewed")
     if not all(isinstance(k, str) and isinstance(v, str) and v and v == v.strip() for k, v in verses.items()):
