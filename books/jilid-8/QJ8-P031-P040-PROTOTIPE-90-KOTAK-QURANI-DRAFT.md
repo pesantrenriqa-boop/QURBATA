@@ -69,11 +69,11 @@
 |---|---|---|---|
 | QJ8-P035-K01 | سَلَٰسِلَا | 76:4 | UNVERIFIED |
 | QJ8-P035-K02 | قَوَارِيرَا | 76:15 | UNVERIFIED |
-| QJ8-P035-K03 | قَوَارِيرَ | 76:16 | UNVERIFIED |
+| QJ8-P035-K03 | قَوَارِيرَا۟ | 76:16 | SOURCE-CHECKED-QURANCOM / HOLD-REVIEW |
 | QJ8-P035-K04 | لَّٰكِنَّا | 18:38 | UNVERIFIED |
 | QJ8-P035-K05 | سَلَٰسِلَا | 76:4 | UNVERIFIED |
 | QJ8-P035-K06 | قَوَارِيرَا | 76:15 | UNVERIFIED |
-| QJ8-P035-K07 | قَوَارِيرَ | 76:16 | UNVERIFIED |
+| QJ8-P035-K07 | قَوَارِيرَا۟ | 76:16 | SOURCE-CHECKED-QURANCOM / HOLD-REVIEW |
 | QJ8-P035-K08 | لَّٰكِنَّا | 18:38 | UNVERIFIED |
 | QJ8-P035-K09 | سَلَٰسِلَا | 76:4 | UNVERIFIED |
 
@@ -119,7 +119,7 @@
 | QJ8-P038-K05 | ءَآللَّهُ | 10:59 | UNVERIFIED |
 | QJ8-P038-K06 | سَلَٰسِلَا | 76:4 | UNVERIFIED |
 | QJ8-P038-K07 | قَوَارِيرَا | 76:15 | UNVERIFIED |
-| QJ8-P038-K08 | قَوَارِيرَ | 76:16 | UNVERIFIED |
+| QJ8-P038-K08 | قَوَارِيرَا۟ | 76:16 | SOURCE-CHECKED-QURANCOM / HOLD-REVIEW |
 | QJ8-P038-K09 | لَّٰكِنَّا | 18:38 | UNVERIFIED |
 
 ## P039 — Uji kesiapan
@@ -150,7 +150,7 @@
 | QJ8-P040-K06 | لَا تَأْمَنَّا | 12:11 | UNVERIFIED |
 | QJ8-P040-K07 | ءَآللَّهُ | 10:59 | UNVERIFIED |
 | QJ8-P040-K08 | قَوَارِيرَا | 76:15 | UNVERIFIED |
-| QJ8-P040-K09 | قَوَارِيرَ | 76:16 | UNVERIFIED |
+| QJ8-P040-K09 | قَوَارِيرَا۟ | 76:16 | SOURCE-CHECKED-QURANCOM / HOLD-REVIEW |
 
 ## Audit akhir tahap transkripsi
 - **90/90** kotak P031–P040 memiliki teks lafaz dan referensi; kumulatif **360/360** kotak memiliki teks Arab draf. Ini **bukan 360 ayat berbeda**.
