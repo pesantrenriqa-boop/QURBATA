@@ -1,6 +1,6 @@
 # QJ8 — P021–P030, 90 Kotak Transkripsi Arab (DRAFT)
 
-**KOREKSI EDITORIAL 28-10-2026:** Lima slot rujukan 76:16 diperbaiki secara konsisten menjadi قَوَارِيرَ; P026-K09 ditetapkan hanya merujuk 76:15 (bukan 76:16) sebagai perbaikan metadata editorial. Koreksi ini **belum** merupakan tashih mushaf.
+**REVISI BERDASARKAN SUMBER 29-10-2026:** Lima slot QS 76:16 dikembalikan ke bentuk beralif dan tanda khusus قَوَارِيرَا۟, mengikuti tampilan teks Utsmani Quran.com (https://quran.com/id/manusia/15-16). Koreksi sebelumnya menjadi قَوَارِيرَ ditarik karena tidak sesuai tampilan sumber. P026-K09 tetap khusus 76:15. **HOLD-REVIEW:** perbedaan rasm/dabt antaredisi dan cara waqaf/washal wajib ditashih reviewer mushaf Hafsh sebelum cetak.
 
 **BELUM VERIFIKASI MUSHAF / BELUM TASHIH / TIDAK SIAP CETAK.** Teks ini transkripsi kerja dengan referensi ayat, bukan salinan resmi dari mushaf terpilih. Setiap halaman berisi sembilan kotak yang boleh mengulang ayat/konteks. Jangan hitung sebagai 90 kejadian gharib unik. Materi yang perlu penetapan wajah Hafsh dan perbedaan waqaf/wasal wajib ditashih guru.
 
@@ -85,11 +85,11 @@
 | Slot | Transkripsi teks Arab | QS | Status |
 |---|---|---|---|
 | QJ8-P026-K01 | قَوَارِيرَا | 76:15 | UNVERIFIED |
-| QJ8-P026-K02 | قَوَارِيرَ | 76:16 | CORRECTED-DRAFT / VERIFY-MUSHAF |
+| QJ8-P026-K02 | قَوَارِيرَا۟ | 76:16 | SOURCE-CHECKED-QURANCOM / HOLD-REVIEW |
 | QJ8-P026-K03 | مِن فِضَّةٍ | 76:16 | UNVERIFIED |
 | QJ8-P026-K04 | قَدَّرُوهَا | 76:16 | UNVERIFIED |
 | QJ8-P026-K05 | تَقْدِيرًا | 76:16 | UNVERIFIED |
-| QJ8-P026-K06 | قَوَارِيرَ مِن فِضَّةٍ | 76:16 | CORRECTED-DRAFT / VERIFY-MUSHAF |
+| QJ8-P026-K06 | قَوَارِيرَا۟ مِن فِضَّةٍ | 76:16 | SOURCE-CHECKED-QURANCOM / HOLD-REVIEW |
 | QJ8-P026-K07 | قَدَّرُوهَا تَقْدِيرًا | 76:16 | UNVERIFIED |
 | QJ8-P026-K08 | كَانَتْ قَوَارِيرَا | 76:15 | UNVERIFIED |
 | QJ8-P026-K09 | قَوَارِيرَا | 76:15 | CORRECTED-DRAFT / VERIFY-MUSHAF |
@@ -117,11 +117,11 @@
 | QJ8-P028-K01 | سَلَٰسِلَا | 76:4 | UNVERIFIED |
 | QJ8-P028-K02 | وَأَغْلَٰلًا | 76:4 | UNVERIFIED |
 | QJ8-P028-K03 | قَوَارِيرَا | 76:15 | UNVERIFIED |
-| QJ8-P028-K04 | قَوَارِيرَ | 76:16 | CORRECTED-DRAFT / VERIFY-MUSHAF |
+| QJ8-P028-K04 | قَوَارِيرَا۟ | 76:16 | SOURCE-CHECKED-QURANCOM / HOLD-REVIEW |
 | QJ8-P028-K05 | لَّٰكِنَّا | 18:38 | UNVERIFIED |
 | QJ8-P028-K06 | هُوَ ٱللَّهُ رَبِّي | 18:38 | UNVERIFIED |
 | QJ8-P028-K07 | سَلَٰسِلَا وَأَغْلَٰلًا | 76:4 | UNVERIFIED |
-| QJ8-P028-K08 | قَوَارِيرَ مِن فِضَّةٍ | 76:16 | CORRECTED-DRAFT / VERIFY-MUSHAF |
+| QJ8-P028-K08 | قَوَارِيرَا۟ مِن فِضَّةٍ | 76:16 | SOURCE-CHECKED-QURANCOM / HOLD-REVIEW |
 | QJ8-P028-K09 | لَّٰكِنَّا هُوَ ٱللَّهُ | 18:38 | UNVERIFIED |
 
 ## P029 — Latihan lintas kompetensi
@@ -150,11 +150,11 @@
 | QJ8-P030-K04 | ءَآلْـَٰٔنَ | 10:91 | UNVERIFIED |
 | QJ8-P030-K05 | سَلَٰسِلَا | 76:4 | UNVERIFIED |
 | QJ8-P030-K06 | قَوَارِيرَا | 76:15 | UNVERIFIED |
-| QJ8-P030-K07 | قَوَارِيرَ | 76:16 | CORRECTED-DRAFT / VERIFY-MUSHAF |
+| QJ8-P030-K07 | قَوَارِيرَا۟ | 76:16 | SOURCE-CHECKED-QURANCOM / HOLD-REVIEW |
 | QJ8-P030-K08 | لَّٰكِنَّا | 18:38 | UNVERIFIED |
 | QJ8-P030-K09 | ءَآلذَّكَرَيْنِ | 6:143 | UNVERIFIED |
 
 ## Audit khusus
-- **Perhatian:** QJ8-P026-K02/K06 sudah diseragamkan secara editorial untuk 76:16; K09 kini merujuk khusus 76:15. **Semua bentuk tetap wajib dicek langsung** pada mushaf Hafsh sebelum cetak. P027 bentuk لَّٰكِنَّا juga perlu verifikasi rasm.
+- **Perhatian:** QJ8-P026-K02/K06 diselaraskan dengan teks Utsmani Quran.com untuk 76:16; K09 merujuk khusus 76:15. **Semua bentuk tetap wajib dicek langsung** pada mushaf Hafsh sebelum cetak. P027 bentuk لَّٰكِنَّا juga perlu verifikasi rasm.
 - Materi P028 bertabrakan dengan master yang menetapkan Bahasa Arab 8. Jangan aktifkan tanpa Decision-ID.
 - Progres kumulatif transkripsi **270/360 (75%)**, tervalidasi **0/360**.
