@@ -21,6 +21,8 @@ def main():
     ap.add_argument("--verses", required=True, help="JSON with source_id and verses keyed 'surah:ayah'")
     ap.add_argument("--output", required=True, help="Output markdown preview (never final)")
     args = ap.parse_args()
+    if Path(args.output).resolve() == Path(args.verses).resolve() or Path(args.output).resolve() == Path(args.manifest).resolve():
+        raise SystemExit("ERROR: output cannot overwrite source or manifest")
     data = json.loads(Path(args.verses).read_text(encoding="utf-8"))
     source_id = data.get("source_id")
     source_sha256 = data.get("source_sha256")
@@ -48,7 +50,7 @@ def main():
         rows = list(csv.DictReader(f))
     if len(rows) != 33:
         raise SystemExit(f"ERROR: expected 33 manifest rows, found {len(rows)}")
-    output = ["# QJ8 — Pratinjau konteks ayat (BELUM TASHIH)", "", f"Source-ID: {source_id}", "Status: DRAF / HOLD. Teks ditampilkan verbatim dari input JSON, tanpa modifikasi karakter.", ""]
+    output = ["# QJ8 — Pratinjau konteks ayat (BELUM TASHIH)", "", f"Source-ID: {source_id}", f"SHA-256 sumber (klaim metadata, belum diverifikasi ulang): {source_sha256}", "Status: DRAF / HOLD. Metadata sumber tidak membuktikan keaslian teks tanpa berkas asli dan tashih.", ""]
     complete = 0
     for row in rows:
         before = row["before_reference"]
@@ -68,7 +70,7 @@ def main():
         if after != "N/A":
             output += [f"**Sesudah ({after}):**", "", verses[after], ""]
         output += ["**Status:** belum tashih target Gharib, rasm/dabt, dan jalur Hafs.", ""]
-    output.insert(4, f"Kasus dengan konteks lengkap: {complete}/{len(rows)}. Sisanya HOLD.")
+    output.insert(5, f"Kasus dengan konteks lengkap: {complete}/{len(rows)}. Sisanya HOLD.")
     destination = Path(args.output)
     if destination.exists():
         raise SystemExit(f"ERROR: refusing to overwrite existing preview: {destination}")
