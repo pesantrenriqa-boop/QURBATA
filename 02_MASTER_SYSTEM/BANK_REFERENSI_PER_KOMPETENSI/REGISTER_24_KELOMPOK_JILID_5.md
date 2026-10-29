@@ -151,3 +151,10 @@ Pemindaian ulang seluruh 480 slot aktif menunjukkan **11 halaman** dengan rujuka
 | Sedang | P002, P004, P014, P017, P019, P040 | QS 17:81, 2:4, 69:1, 105:1, 110:1, 17:70 | Tinjau nilai tambah dan alternatif non-duplikat |
 
 **Aturan aman:** jangan ubah status Sah; jangan menghapus atau mengganti massal; pastikan ketepatan rasm dan rujukan mushaf, hukum bacaan, wasal/waqaf, serta prasyarat sebelum setiap penggantian. P028 tetap Bahasa Arab dan P038 tetap Akhlak/Hadis sesuai master. P013 memiliki 12 slot kosong yang tidak boleh diisi dengan kandidat Mad Farq rekaan.
+
+
+## Rekap validasi kuantitatif setelah audit P011 — 2026-10-29
+
+Hasil pemindaian ulang register 40 halaman: 480 slot aktif, 468 terisi (97,5%), 12 kosong seluruhnya P013 Mad Farq. Terdapat 22 kemunculan tambahan dari rujukan QS yang sama dalam halaman (tidak otomatis berarti kesalahan; potongan dan fungsi latihan dapat berbeda), tersebar di 11 halaman: P002, P004, P009, P011, P014, P016, P017, P019, P021, P023, dan P040.
+
+**Prioritas:** (1) verifikasi sumber mushaf dan tajwid P011, P009, P016; (2) audit fungsi latihan pada duplikasi; (3) biarkan 12 slot P013 kosong sampai ada dasar akademik yang sah. Keterisian bukan kelulusan tashih; tidak ada perubahan status Sah pada tahap rekap ini.
