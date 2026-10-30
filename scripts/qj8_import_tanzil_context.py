@@ -39,6 +39,8 @@ def main():
         key = f"{int(match[1])}:{int(match[2])}"
         if key in verses:
             raise SystemExit(f"Duplicate source verse {key}")
+        if not re.search(r"[\u0621-\u064a\u0671]", match[3]):
+            raise SystemExit(f"Source verse {key} has no Arabic letters; stop import")
         verses[key] = match[3]  # verbatim; no normalization or diacritic removal
     if len(verses) != 6236:
         raise SystemExit(f"Expected 6236 verses; found {len(verses)}. Wrong edition/format?")
