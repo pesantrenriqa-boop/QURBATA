@@ -59,6 +59,8 @@ def main():
     output.parent.mkdir(parents=True,exist_ok=True)
     with output.open("xb") as destination:
         destination.write(data)
+    if hashlib.sha256(output.read_bytes()).digest() != hashlib.sha256(data).digest():
+        raise SystemExit("CRITICAL: saved source differs from downloaded bytes; stop")
     print(f"Downloaded {count} verses without modification: {output}")
     print(f"SHA256: {hashlib.sha256(data).hexdigest()}")
     print("HOLD: run qj8_import_tanzil_context.py and manual tashih before use.")
