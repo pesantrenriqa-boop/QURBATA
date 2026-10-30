@@ -11,6 +11,26 @@ from qj8_validate_context_manifest import LENGTHS
 
 URL = "https://tanzil.net/pub/download/index.php"
 
+
+def validate_download(data):
+    text = data.decode("utf-8-sig")
+    lines = [line for line in text.splitlines() if line and not line.startswith("#")]
+    if len(lines) != 6236:
+        raise SystemExit(f"Unexpected verse count ({len(lines)}); nothing saved")
+    expected = {f"{surah}|{ayah}" for surah, count in enumerate(LENGTHS, 1) for ayah in range(1, count + 1)}
+    found = set()
+    for line in lines:
+        parts = line.split("|", 2)
+        if len(parts) != 3 or not parts[2] or parts[2] != parts[2].strip():
+            raise SystemExit("Malformed or whitespace-altered verse; nothing saved")
+        ref = parts[0] + "|" + parts[1]
+        if ref in found:
+            raise SystemExit(f"Duplicate source verse {ref}; nothing saved")
+        found.add(ref)
+    if found != expected:
+        raise SystemExit("Source has noncanonical or missing Quran references; nothing saved")
+    return len(lines)
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--output", required=True, help="New local source file; refuses overwrite")
@@ -32,25 +52,10 @@ def main():
         data = response.read(4_000_001)
     if len(data) > 4_000_000:
         raise SystemExit("Unexpected oversized response; nothing saved")
-    text = data.decode("utf-8-sig")
-    lines = [line for line in text.splitlines() if line and not line.startswith("#")]
-    if len(lines) != 6236:
-        raise SystemExit(f"Unexpected verse count ({len(lines)}); nothing saved")
-    expected = {f"{surah}|{ayah}" for surah, count in enumerate(LENGTHS, 1) for ayah in range(1, count + 1)}
-    found = set()
-    for line in lines:
-        parts = line.split("|", 2)
-        if len(parts) != 3 or not parts[2] or parts[2] != parts[2].strip():
-            raise SystemExit("Malformed or whitespace-altered verse; nothing saved")
-        ref = parts[0] + "|" + parts[1]
-        if ref in found:
-            raise SystemExit(f"Duplicate source verse {ref}; nothing saved")
-        found.add(ref)
-    if found != expected:
-        raise SystemExit("Source has noncanonical or missing Quran references; nothing saved")
+    count = validate_download(data)
     output.parent.mkdir(parents=True,exist_ok=True)
     output.write_bytes(data)
-    print(f"Downloaded {len(lines)} verses without modification: {output}")
+    print(f"Downloaded {count} verses without modification: {output}")
     print(f"SHA256: {hashlib.sha256(data).hexdigest()}")
     print("HOLD: run qj8_import_tanzil_context.py and manual tashih before use.")
 
