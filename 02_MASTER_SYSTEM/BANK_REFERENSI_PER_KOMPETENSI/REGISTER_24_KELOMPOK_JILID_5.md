@@ -197,3 +197,7 @@ Pemindaian otomatis atas **40 baris P001–P040** pada branch audit: **480 slot 
 - Indikator: mad wajib muttasil pada جَآءَ (huruf mad dan hamzah dalam satu kata).
 - Pemeriksaan awal: frasa utuh ini belum tercatat dalam slot 40 halaman; perlu audit kemunculan potongan pendek dan prasyarat bacaan sebelum dipakai sebagai pengganti.
 - Keputusan: usulan dicatat sebagai calon, bukan penggantian; teks aktif P039/K01 dan nilai Sah tidak diubah sampai tashih akhir.
+
+### AUDIT DUPLIKASI QS 17:81 — 2026-10-30
+
+Audit ulang terhadap baris P001–P040 menemukan bahwa **QS Al-Isra 17:81 telah digunakan di P002, P006, dan P010**. Kandidat وَقُلْ جَآءَ ٱلْحَقُّ وَزَهَقَ ٱلْبَـٰطِلُ memang bersumber dari QS 17:81 (https://quran.com/17:81), namun **tidak memenuhi target kebaruan sumber ayat**. Usulan sebelumnya untuk P039/K01 diturunkan menjadi *alternatif cadangan, bukan pengganti prioritas*. Jangan ganti teks aktif atau ubah kolom Sah. Pencarian berikutnya harus menguji duplikasi berdasarkan **nomor surat:ayat** selain kesamaan frasa.
