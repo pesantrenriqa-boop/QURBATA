@@ -57,7 +57,8 @@ def main():
         raise SystemExit("Unexpected oversized response; nothing saved")
     count = validate_download(data)
     output.parent.mkdir(parents=True,exist_ok=True)
-    output.write_bytes(data)
+    with output.open("xb") as destination:
+        destination.write(data)
     print(f"Downloaded {count} verses without modification: {output}")
     print(f"SHA256: {hashlib.sha256(data).hexdigest()}")
     print("HOLD: run qj8_import_tanzil_context.py and manual tashih before use.")
