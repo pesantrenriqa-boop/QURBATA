@@ -164,3 +164,14 @@ Hasil pemindaian ulang register 40 halaman: 480 slot aktif, 468 terisi (97,5%), 
 Pemindaian otomatis atas **40 baris P001–P040** pada branch audit: **480 slot aktif; 468 berisi kandidat; 12 kosong (seluruhnya P013: K03, K04, K06, K08–K16)**. Seluruh kolom **Sah masih 0/16 atau 0/8**; ini bukan 468 contoh yang telah ditashih. P029–P040 telah memperoleh catatan audit per slot, tetapi status validasi sumber/rasm/tajwid/hadis belum otomatis lulus.
 
 **Temuan prioritas:** (1) P040 K03 dan K06 mengulang frasa QS 17:70 secara identik; (2) P039 K01 belum memiliki rujukan ayat terkonfirmasi; (3) P037 K08 memerlukan pembuktian klasifikasi mad jaiz munfasil; (4) P038 K01–K03 memerlukan pemeriksaan matan dan sumber hadis; (5) P013 tidak boleh dipenuhi dengan contoh mad farq rekaan. **Keputusan aman:** tidak mengganti teks Arab, tidak mengisi 12 slot P013, tidak menaikkan nilai Sah, dan tidak menyatakan siap cetak sebelum tashih independen.
+
+## Audit silang konsistensi rujukan dan indikator — 2026-10-30
+
+**Pemeriksaan silang internal (bukan verifikasi mushaf):**
+
+1. **P033/K05 ↔ P039/K01:** frasa `وَجَاءَتْهُمْ رُسُلُهُمْ بِالْبَيِّنَاتِ` sama persis. P033/K05 menyebut QS 40:83 tetapi masih memberi peringatan rujukan; P039/K01 tidak menetapkan nomor ayat. **Jangan memindahkan QS 40:83 ke P039 sebagai rujukan sah tanpa pembandingan teks mushaf**, dan jangan memasukkan kandidat ini ke ujian final dahulu.
+2. **P005/K02:** metadata mengklaim QS 109:5 untuk frasa `وَلَا أَنْتُمْ عَابِدُونَ مَا أَعْبُدُ`. Perlu periksa apakah kutipan tersebut justru QS 109:3; **prioritas tinggi untuk tashih nomor ayat**. Jangan ubah nomor sebelum pembuktian mushaf.
+3. **P008/K08:** metadata QS 10:4 untuk frasa `إِنَّهُ يَبْدَأُ الْخَلْقَ ثُمَّ يُعِيدُهُ`; periksa apakah potongan itu benar-benar bersumber dari ayat tersebut sebelum menguji mad silah qashirah.
+4. **P039/K01:** label mad wajib muttasil juga perlu diuji pada lafaz sasaran, bukan diterima dari anotasi sebelumnya.
+
+**Status:** TEMUAN UNTUK VERIFIKASI, bukan kesalahan yang sudah dibuktikan dan bukan tashih final. Tidak ada perubahan teks Arab, nomor ayat, atau kolom Sah.
