@@ -32,6 +32,10 @@ jobs:
       - name: Validate canonical references and select only required context
         run: |
           python scripts/qj8_import_tanzil_context.py --tanzil /tmp/qj8-tanzil-uthmani.txt --output /tmp/qj8-context.json
+      - name: Verify all 12 canonical Saktah context ayat are present
+        run: |
+          python scripts/qj8_validate_canonical_saktah.py
+          python scripts/qj8_verify_saktah_import.py --source /tmp/qj8-context.json
       - name: Generate HOLD preview, never overwrite master
         run: |
           python scripts/qj8_build_context.py --verses /tmp/qj8-context.json --output /tmp/qj8-context-HOLD.md
