@@ -26,7 +26,7 @@ def main():
     assert rejected(b"<html>not Quran</html>")
     no_arabic=lines.copy()
     no_arabic[0]="1|1|NOT_ARABIC"
-    assert rejected(("\\n".join(no_arabic)+"\\n").encode())
+    assert rejected(("\n".join(no_arabic)+"\n").encode())
     print("PASS: 6236 canonical synthetic refs accepted; wrong ref, duplicate and HTML rejected")
     print("HOLD: no authentic Quran text downloaded or validated")
 
