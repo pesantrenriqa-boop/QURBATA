@@ -158,3 +158,9 @@ Pemindaian ulang seluruh 480 slot aktif menunjukkan **11 halaman** dengan rujuka
 Hasil pemindaian ulang register 40 halaman: 480 slot aktif, 468 terisi (97,5%), 12 kosong seluruhnya P013 Mad Farq. Terdapat 22 kemunculan tambahan dari rujukan QS yang sama dalam halaman (tidak otomatis berarti kesalahan; potongan dan fungsi latihan dapat berbeda), tersebar di 11 halaman: P002, P004, P009, P011, P014, P016, P017, P019, P021, P023, dan P040.
 
 **Prioritas:** (1) verifikasi sumber mushaf dan tajwid P011, P009, P016; (2) audit fungsi latihan pada duplikasi; (3) biarkan 12 slot P013 kosong sampai ada dasar akademik yang sah. Keterisian bukan kelulusan tashih; tidak ada perubahan status Sah pada tahap rekap ini.
+
+## Checkpoint audit register P001–P040 — 2026-10-30
+
+Pemindaian otomatis atas **40 baris P001–P040** pada branch audit: **480 slot aktif; 468 berisi kandidat; 12 kosong (seluruhnya P013: K03, K04, K06, K08–K16)**. Seluruh kolom **Sah masih 0/16 atau 0/8**; ini bukan 468 contoh yang telah ditashih. P029–P040 telah memperoleh catatan audit per slot, tetapi status validasi sumber/rasm/tajwid/hadis belum otomatis lulus.
+
+**Temuan prioritas:** (1) P040 K03 dan K06 mengulang frasa QS 17:70 secara identik; (2) P039 K01 belum memiliki rujukan ayat terkonfirmasi; (3) P037 K08 memerlukan pembuktian klasifikasi mad jaiz munfasil; (4) P038 K01–K03 memerlukan pemeriksaan matan dan sumber hadis; (5) P013 tidak boleh dipenuhi dengan contoh mad farq rekaan. **Keputusan aman:** tidak mengganti teks Arab, tidak mengisi 12 slot P013, tidak menaikkan nilai Sah, dan tidak menyatakan siap cetak sebelum tashih independen.
