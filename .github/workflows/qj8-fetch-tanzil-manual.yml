@@ -1,0 +1,38 @@
+name: QJ8 fetch Tanzil source (manual only)
+on:
+  workflow_dispatch:
+    inputs:
+      accept_tanzil_terms:
+        description: 'I have read and accept Tanzil terms (type YES)'
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  source:
+    if: ${{ inputs.accept_tanzil_terms == 'YES' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download official source and reject unexpected formats
+        run: |
+          python scripts/qj8_download_official_tanzil.py --accept-tanzil-terms --output /tmp/qj8-tanzil-uthmani.txt
+      - name: Validate canonical references and select only required context
+        run: |
+          python scripts/qj8_import_tanzil_context.py --tanzil /tmp/qj8-tanzil-uthmani.txt --output /tmp/qj8-context.json
+      - name: Generate HOLD preview, never overwrite master
+        run: |
+          python scripts/qj8_build_context.py --verses /tmp/qj8-context.json --output /tmp/qj8-context-HOLD.md
+      - name: Upload context artifact for tashih
+        uses: actions/upload-artifact@v4
+        with:
+          name: qj8-context-hold
+          path: |
+            /tmp/qj8-context.json
+            /tmp/qj8-context-HOLD.md
+          retention-days: 7
+          if-no-files-found: error
