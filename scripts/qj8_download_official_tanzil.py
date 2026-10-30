@@ -4,6 +4,7 @@ No source file is committed automatically. Requires internet and explicit licens
 """
 import argparse
 import hashlib
+import re
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -23,6 +24,8 @@ def validate_download(data):
         parts = line.split("|", 2)
         if len(parts) != 3 or not parts[2] or parts[2] != parts[2].strip():
             raise SystemExit("Malformed or whitespace-altered verse; nothing saved")
+        if not re.search(r"[\u0621-\u064a\u0671]", parts[2]):
+            raise SystemExit("Verse contains no Arabic letters; nothing saved")
         ref = parts[0] + "|" + parts[1]
         if ref in found:
             raise SystemExit(f"Duplicate source verse {ref}; nothing saved")
