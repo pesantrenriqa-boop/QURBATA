@@ -75,7 +75,8 @@ def main():
     if destination.exists():
         raise SystemExit(f"ERROR: refusing to overwrite existing preview: {destination}")
     destination.parent.mkdir(parents=True, exist_ok=True)
-    destination.write_text("\n".join(output), encoding="utf-8")
+    with destination.open("x", encoding="utf-8") as preview:
+        preview.write("\n".join(output))
     print(f"Context complete {complete}/{len(rows)}; all output remains HOLD pending tashih.")
 
 if __name__ == "__main__":
