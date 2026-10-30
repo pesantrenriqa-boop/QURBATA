@@ -35,6 +35,11 @@ jobs:
       - name: Generate HOLD preview, never overwrite master
         run: |
           python scripts/qj8_build_context.py --verses /tmp/qj8-context.json --output /tmp/qj8-context-HOLD.md
+      - name: Check that preview is explicitly HOLD
+        run: |
+          grep -q "BELUM TASHIH" /tmp/qj8-context-HOLD.md
+          grep -q "SOURCE_IMPORTED_NOT_TASHIH" /tmp/qj8-context.json
+          test ! -e books/jilid-8/qj8-context-HOLD.md
       - name: Upload context artifact for tashih
         uses: actions/upload-artifact@v4
         with:
