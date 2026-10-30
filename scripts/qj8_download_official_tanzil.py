@@ -26,6 +26,8 @@ def validate_download(data):
             raise SystemExit("Malformed or whitespace-altered verse; nothing saved")
         if not re.search(r"[\u0621-\u064a\u0671]", parts[2]):
             raise SystemExit("Verse contains no Arabic letters; nothing saved")
+        if not re.fullmatch(r"[1-9][0-9]*", parts[0]) or not re.fullmatch(r"[1-9][0-9]*", parts[1]):
+            raise SystemExit("Noncanonical source numbering; nothing saved")
         ref = parts[0] + "|" + parts[1]
         if ref in found:
             raise SystemExit(f"Duplicate source verse {ref}; nothing saved")
