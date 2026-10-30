@@ -79,8 +79,12 @@ def main():
     if target.exists():
         raise SystemExit(f"Output exists; refusing overwrite: {target}")
     target.parent.mkdir(parents=True, exist_ok=True)
+    serialized = json.dumps(out, ensure_ascii=False, indent=2) + "\n"
     with target.open("x", encoding="utf-8") as destination:
-        destination.write(json.dumps(out, ensure_ascii=False, indent=2) + "\n")
+        destination.write(serialized)
+    verified = json.loads(target.read_text(encoding="utf-8"))
+    if verified != out:
+        raise SystemExit("CRITICAL: saved context JSON differs from imported data; stop")
     print(f"Imported {len(out['verses'])} distinct source verses for {len(rows)} manifest cases.")
     print("All texts are unmodified. HOLD until Gharib target and recitation review.")
 
