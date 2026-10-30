@@ -8,6 +8,7 @@ on:
       - 'scripts/qj8_test_saktah_context_gate.py'
       - 'scripts/qj8_validate_canonical_saktah.py'
       - 'scripts/qj8_import_tanzil_context.py'
+      - 'scripts/qj8_download_official_tanzil.py'
       - 'scripts/qj8_build_context.py'
       - 'scripts/qj8_test_context_boundary.py'
       - 'scripts/qj8_test_import_source_integrity.py'
