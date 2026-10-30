@@ -7,6 +7,7 @@ import hashlib
 import urllib.parse
 import urllib.request
 from pathlib import Path
+from qj8_validate_context_manifest import LENGTHS
 
 URL = "https://tanzil.net/pub/download/index.php"
 
@@ -33,8 +34,20 @@ def main():
         raise SystemExit("Unexpected oversized response; nothing saved")
     text = data.decode("utf-8-sig")
     lines = [line for line in text.splitlines() if line and not line.startswith("#")]
-    if len(lines) != 6236 or not all(line.count("|") >= 2 for line in lines):
-        raise SystemExit(f"Unexpected download format/count ({len(lines)}); nothing saved")
+    if len(lines) != 6236:
+        raise SystemExit(f"Unexpected verse count ({len(lines)}); nothing saved")
+    expected = {f"{surah}|{ayah}" for surah, count in enumerate(LENGTHS, 1) for ayah in range(1, count + 1)}
+    found = set()
+    for line in lines:
+        parts = line.split("|", 2)
+        if len(parts) != 3 or not parts[2] or parts[2] != parts[2].strip():
+            raise SystemExit("Malformed or whitespace-altered verse; nothing saved")
+        ref = parts[0] + "|" + parts[1]
+        if ref in found:
+            raise SystemExit(f"Duplicate source verse {ref}; nothing saved")
+        found.add(ref)
+    if found != expected:
+        raise SystemExit("Source has noncanonical or missing Quran references; nothing saved")
     output.parent.mkdir(parents=True,exist_ok=True)
     output.write_bytes(data)
     print(f"Downloaded {len(lines)} verses without modification: {output}")
