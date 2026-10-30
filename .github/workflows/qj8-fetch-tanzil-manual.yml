@@ -44,6 +44,25 @@ jobs:
           grep -q "BELUM TASHIH" /tmp/qj8-context-HOLD.md
           grep -q "SOURCE_IMPORTED_NOT_TASHIH" /tmp/qj8-context.json
           test ! -e books/jilid-8/qj8-context-HOLD.md
+      - name: Record source provenance for reviewer
+        run: |
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          source=Path("/tmp/qj8-tanzil-uthmani.txt")
+          context=json.loads(Path("/tmp/qj8-context.json").read_text(encoding="utf-8"))
+          digest=hashlib.sha256(source.read_bytes()).hexdigest()
+          assert context["source_sha256"] == digest, "Imported metadata does not match downloaded source"
+          report={
+              "source_url":"https://tanzil.net/pub/download/index.php",
+              "source_sha256":digest,
+              "required_saktah_context_ayat":12,
+              "text_status":"SOURCE_IMPORTED_NOT_TASHIH",
+              "print_status":"HOLD",
+              "note":"Hash proves consistency of this download, not authenticity of its provider or recitation correctness"
+          }
+          Path("/tmp/qj8-source-provenance-HOLD.json").write_text(json.dumps(report,indent=2)+"\\n",encoding="utf-8")
+          PY
       - name: Upload context artifact for tashih
         uses: actions/upload-artifact@v4
         with:
@@ -51,5 +70,6 @@ jobs:
           path: |
             /tmp/qj8-context.json
             /tmp/qj8-context-HOLD.md
+            /tmp/qj8-source-provenance-HOLD.json
           retention-days: 7
           if-no-files-found: error
