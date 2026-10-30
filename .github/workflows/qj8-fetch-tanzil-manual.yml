@@ -61,7 +61,7 @@ jobs:
               "print_status":"HOLD",
               "note":"Hash proves consistency of this download, not authenticity of its provider or recitation correctness"
           }
-          Path("/tmp/qj8-source-provenance-HOLD.json").write_text(json.dumps(report,indent=2)+"\\n",encoding="utf-8")
+          Path("/tmp/qj8-source-provenance-HOLD.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
           PY
       - name: Upload context artifact for tashih
         uses: actions/upload-artifact@v4
