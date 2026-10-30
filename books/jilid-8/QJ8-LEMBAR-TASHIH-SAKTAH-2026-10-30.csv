@@ -1,0 +1,5 @@
+case_id,target_refs,context_refs,rasm_uthmani_verified,waqf_saktah_verified,hafs_recitation_verified,source_sha256_checked,reviewer,review_date,decision,notes
+GH-SAK-01,18:1;18:2,18:1;18:2;18:3,NO,NO,NO,NO,,,HOLD,Target crosses ayah boundary; do not invent 18:0
+GH-SAK-02,36:52,36:51;36:52;36:53,NO,NO,NO,NO,,,HOLD,Check saktah placement and exact Uthmani marks
+GH-SAK-03,75:27,75:26;75:27;75:28,NO,NO,NO,NO,,,HOLD,Check saktah placement and exact Uthmani marks
+GH-SAK-04,83:14,83:13;83:14;83:15,NO,NO,NO,NO,,,HOLD,Check saktah placement and exact Uthmani marks
