@@ -175,3 +175,11 @@ Pemindaian otomatis atas **40 baris P001–P040** pada branch audit: **480 slot 
 4. **P039/K01:** label mad wajib muttasil juga perlu diuji pada lafaz sasaran, bukan diterima dari anotasi sebelumnya.
 
 **Status:** TEMUAN UNTUK VERIFIKASI, bukan kesalahan yang sudah dibuktikan dan bukan tashih final. Tidak ada perubahan teks Arab, nomor ayat, atau kolom Sah.
+
+## Verifikasi sumber eksternal tahap 1 — 2026-10-30
+
+- **P005/K02 — KOREKSI TEMUAN AUDIT:** frasa وَلا أَنْتُمْ عَابِدُونَ مَا أَعْبُدُ memang terdapat pada **QS 109:3 dan QS 109:5** dengan lafaz sama. Dengan demikian rujukan **QS 109:5 yang sudah ada TIDAK keliru**; dugaan pada audit silang sebelumnya bahwa harus menjadi ayat 3 **dibatalkan**. Sumber pembanding: https://quran.com/al-kafirun . Rasm Utsmani dan tanda mad pada register tetap perlu normalisasi terpisah.
+- **P008/K08 — RUJUKAN DIDUKUNG, RASM BELUM FINAL:** bagian إِنَّهُ ... الْخَلْقَ ثُمَّ يُعِيدُهُ muncul dalam **QS 10:4**. Teks mushaf pembanding menampilkan إِنَّهُۥ يَبْدَؤُا۟ ٱلْخَلْقَ ثُمَّ يُعِيدُهُۥ, berbeda dari ejaan kandidat إِنَّهُ يَبْدَأُ الْخَلْقَ ثُمَّ يُعِيدُهُ; perlu tashih ejaan/rasm dan tanda silah menurut riwayat yang digunakan, **jangan ganti otomatis**. Sumber: https://quran.com/id/yunus/4/qiraat .
+- **P033/K05 dan P039/K01:** belum disahkan dalam pemeriksaan sumber eksternal tahap ini. Prioritaskan penelusuran frasa persis dan uji klasifikasi mad wajib muttasil.
+
+**Keputusan:** koreksi kesimpulan audit terdahulu yang terbukti terlalu cepat; pertahankan teks Arab, metadata slot, dan seluruh nilai Sah. Ini verifikasi rujukan terbatas, **bukan tashih final**.
