@@ -183,3 +183,9 @@ Pemindaian otomatis atas **40 baris P001–P040** pada branch audit: **480 slot 
 - **P033/K05 dan P039/K01:** belum disahkan dalam pemeriksaan sumber eksternal tahap ini. Prioritaskan penelusuran frasa persis dan uji klasifikasi mad wajib muttasil.
 
 **Keputusan:** koreksi kesimpulan audit terdahulu yang terbukti terlalu cepat; pertahankan teks Arab, metadata slot, dan seluruh nilai Sah. Ini verifikasi rujukan terbatas, **bukan tashih final**.
+
+### AUDIT ALTERNATIF P039/K01 — 2026-10-30
+
+- QS Yusuf 12:58: وَجَاءَ إِخْوَةُ يُوسُفَ — sumber cocok dengan https://quran.com/id/yusuf/58; contoh mad wajib muttasil pada جَاءَ, tetapi frasa sudah muncul di register; TIDAK dipilih sebagai pengganti.
+- QS Qaf 50:19: وَجَاءَتْ سَكْرَةُ الْمَوْتِ بِالْحَقِّ — kandidat pembanding sebelumnya sudah tercatat di register; TIDAK dipilih sebagai pengganti sebelum audit sumber/rasm tersendiri.
+- Keputusan P039/K01: pertahankan kandidat aktif saat ini, jangan naikkan Sah; cari contoh yang berbeda secara tekstual dan belum ada pada register, lalu tashih sebelum penggantian.
