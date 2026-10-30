@@ -189,3 +189,11 @@ Pemindaian otomatis atas **40 baris P001–P040** pada branch audit: **480 slot 
 - QS Yusuf 12:58: وَجَاءَ إِخْوَةُ يُوسُفَ — sumber cocok dengan https://quran.com/id/yusuf/58; contoh mad wajib muttasil pada جَاءَ, tetapi frasa sudah muncul di register; TIDAK dipilih sebagai pengganti.
 - QS Qaf 50:19: وَجَاءَتْ سَكْرَةُ الْمَوْتِ بِالْحَقِّ — kandidat pembanding sebelumnya sudah tercatat di register; TIDAK dipilih sebagai pengganti sebelum audit sumber/rasm tersendiri.
 - Keputusan P039/K01: pertahankan kandidat aktif saat ini, jangan naikkan Sah; cari contoh yang berbeda secara tekstual dan belum ada pada register, lalu tashih sebelum penggantian.
+
+### P039 K01 — calon pengganti QS 17:81 (audit 2026-10-30)
+
+- Usulan bacaan: وَقُلْ جَآءَ ٱلْحَقُّ وَزَهَقَ ٱلْبَـٰطِلُ (QS Al-Isra 17:81).
+- Sumber pembanding rasm Utsmani: https://quran.com/17%3A81/tafsirs/ar-tafsir-al-baghawi dan https://islamenc.com/id/quran/17/81.
+- Indikator: mad wajib muttasil pada جَآءَ (huruf mad dan hamzah dalam satu kata).
+- Pemeriksaan awal: frasa utuh ini belum tercatat dalam slot 40 halaman; perlu audit kemunculan potongan pendek dan prasyarat bacaan sebelum dipakai sebagai pengganti.
+- Keputusan: usulan dicatat sebagai calon, bukan penggantian; teks aktif P039/K01 dan nilai Sah tidak diubah sampai tashih akhir.
