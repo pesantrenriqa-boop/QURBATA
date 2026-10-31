@@ -210,3 +210,11 @@ Pemeriksaan duplikasi **nomor surat:ayat** pada seluruh 40 baris register menunj
 2. **QS Al-Baqarah 2:89** — وَلَمَّا جَاءَهُمْ كِتَابٌ مِنْ عِنْدِ اللَّهِ (sasaran mad wajib muttasil: جَاءَهُمْ). Rujukan pemeriksaan: https://quran.com/2/89 . **CADANGAN**; periksa rasm dan potongan ayat yang tepat.
 
 Status: **kandidat belum ditashih terhadap mushaf**, tidak otomatis lolos syarat unik frasa pendek/kemunculan lintas jilid. P039/K01 tetap tidak diubah, Sah tetap 0. Pemeriksaan selanjutnya: rasm Utsmani, tanda mad, akurasi kutipan, dan audit lintas jilid sebelum penggantian.
+
+### AUDIT TEKS DAN KOMPETENSI QS 18:98 — 2026-10-31
+
+- Kandidat P039/K01: فَإِذَا جَاءَ وَعْدُ رَبِّي — QS Al-Kahf 18:98 (rujukan teks: https://quran.com/18/98).
+- Pemeriksaan kaidah: pada جَاءَ terdapat alif mad diikuti hamzah dalam satu kata; indikator **mad wajib muttasil** sesuai. Saat dipakai, bentuk rasm Utsmani dan harakat harus dicocokkan dengan mushaf Hafs yang dipakai buku.
+- Pemeriksaan duplikasi di **40 baris slot register Jilid 5**: tidak ditemukan frasa penuh, subfrasa جَاءَ وَعْدُ رَبِّي, maupun metadata QS 18:98. Ini hanya bukti kebaruan internal Jilid 5, **bukan** kebaruan lintas jilid.
+- Catatan pedagogis: ayat memuat pula unsur bacaan lain pada konteks yang lebih panjang; untuk asesmen sasaran mad wajib muttasil gunakan potongan pendek yang utuh secara makna dan cocokkan awal/akhir kutipan dengan mushaf.
+- Keputusan: kandidat **lolos penyaringan awal**, belum ditetapkan Sah dan belum mengganti slot aktif P039/K01 sampai tashih rasm dan lintas jilid.
