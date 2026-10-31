@@ -201,3 +201,12 @@ Pemindaian otomatis atas **40 baris P001–P040** pada branch audit: **480 slot 
 ### AUDIT DUPLIKASI QS 17:81 — 2026-10-30
 
 Audit ulang terhadap baris P001–P040 menemukan bahwa **QS Al-Isra 17:81 telah digunakan di P002, P006, dan P010**. Kandidat وَقُلْ جَآءَ ٱلْحَقُّ وَزَهَقَ ٱلْبَـٰطِلُ memang bersumber dari QS 17:81 (https://quran.com/17:81), namun **tidak memenuhi target kebaruan sumber ayat**. Usulan sebelumnya untuk P039/K01 diturunkan menjadi *alternatif cadangan, bukan pengganti prioritas*. Jangan ganti teks aktif atau ubah kolom Sah. Pencarian berikutnya harus menguji duplikasi berdasarkan **nomor surat:ayat** selain kesamaan frasa.
+
+### AUDIT KANDIDAT AYAT BARU — 2026-10-31
+
+Pemeriksaan duplikasi **nomor surat:ayat** pada seluruh 40 baris register menunjukkan QS 18:98 dan QS 2:89 belum ditemukan sebagai rujukan slot. Kandidat untuk tashih:
+
+1. **QS Al-Kahf 18:98** — فَإِذَا جَاءَ وَعْدُ رَبِّي (sasaran mad wajib muttasil: جَاءَ). Rujukan pemeriksaan: https://quran.com/18/98 . **PRIORITAS A** karena potongan ringkas dan sesuai kompetensi.
+2. **QS Al-Baqarah 2:89** — وَلَمَّا جَاءَهُمْ كِتَابٌ مِنْ عِنْدِ اللَّهِ (sasaran mad wajib muttasil: جَاءَهُمْ). Rujukan pemeriksaan: https://quran.com/2/89 . **CADANGAN**; periksa rasm dan potongan ayat yang tepat.
+
+Status: **kandidat belum ditashih terhadap mushaf**, tidak otomatis lolos syarat unik frasa pendek/kemunculan lintas jilid. P039/K01 tetap tidak diubah, Sah tetap 0. Pemeriksaan selanjutnya: rasm Utsmani, tanda mad, akurasi kutipan, dan audit lintas jilid sebelum penggantian.
