@@ -1342,3 +1342,11 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Pemeriksaan internal: رَبَّهُمْ بِهِمْ memuat mim sukun di akhir رَبَّهُمْ dan ba di awal بِهِمْ, sehingga pola ikhfa syafawi terpenuhi.
 - Catatan pedagogis: penggalan juga memuat tasydid (إِنَّ, رَبَّهُمْ), mim sukun lain pada بِهِمْ يَوْمَئِذٍ, serta tanwin pada يَوْمَئِذٍ; perlu cocokkan prasyarat kompetensi sebelum mengganti slot aktif.
 - Audit lintas jilid dan pembandingan rasm mushaf resmi belum dibuktikan pada tahap ini; kandidat tetap CANDIDATE-REVIEW. P022/K01 lama tidak diubah.
+
+
+## Gate prasyarat P022/K01 QS 100:11 - 2026-11-01
+
+- Urutan kompetensi dalam register: P017 kontras hukum nun sukun/tanwin; P018-P020 penerapan/evaluasi hukum nun; P021 orientasi mim sakinah; P022 ikhfa syafawi.
+- Kandidat QS 100:11 (إِنَّ رَبَّهُمْ بِهِمْ يَوْمَئِذٍ لَخَبِيرٌ) mengandung target ikhfa syafawi pada رَبَّهُمْ بِهِمْ, sedangkan bentuk tanwin pada يَوْمَئِذٍ dan tasydid memerlukan pemeriksaan terhadap daftar kompetensi resmi jilid sebelumnya.
+- Urutan di atas mendukung bahwa materi nun/tanwin sudah diperkenalkan sebelum P022, tetapi **tidak membuktikan** semua prasyarat fonetik dan hukum tambahan telah tuntas. Keputusan penggantian K01: HOLD sampai validasi mushaf, prasyarat resmi, dan duplikasi lintas jilid.
+- Tidak ada perubahan isi slot maupun kolom Sah.
