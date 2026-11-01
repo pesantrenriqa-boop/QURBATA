@@ -27,3 +27,4 @@ GH-025,WAQF,Ha sakt pada lafaz,69:25,كتابيه,1,Periksa ha sakt dalam wasal 
 GH-026,WAQF,Ha sakt pada lafaz,69:26,حسابيه,1,Periksa ha sakt dalam wasal dan waqaf menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Lafaz sama tetapi posisi berbeda dari 69:20
 GH-027,WAQF,Ha sakt pada lafaz,69:29,سلطانيه,1,Periksa ha sakt dalam wasal dan waqaf menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Bandingkan GH-021 yang melintasi 69:28-29
 GH-028,WAQF,Ha sakt pada lafaz,101:10,ماهيه,1,Periksa ha sakt dan wajah wasal/waqaf menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Kandidat pada akhir surah
+GH-029,WAQF,Ha sakt pada lafaz,69:28,ماليه,1,Periksa ha sakt pada akhir 69:28 dan sambungannya ke 69:29,TINGGI,PENDING,PENDING,HOLD,,Tumpang tindih GH-021; jangan hitung ganda dalam final
