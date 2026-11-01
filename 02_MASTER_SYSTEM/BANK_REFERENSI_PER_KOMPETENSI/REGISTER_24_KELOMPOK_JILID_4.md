@@ -1293,3 +1293,13 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Kandidat pembanding untuk K01: QS Al-Anbiya 21:27, وَهُمْ بِأَمْرِهِ يَعْمَلُونَ, memuat مْ + ب tanpa tambahan مِنْ سِجِّيلٍ. **Tidak layak sebagai pengganti baru** karena sudah digunakan di P022/K09.
 - Prinsip pencarian lanjutan: hindari mengambil contoh dari slot P022 lain; periksa keseluruhan register Jilid 4 dan lintas jilid sebelum memilih pengganti.
 - K01 lama tetap dipertahankan sampai kandidat baru lolos validasi mushaf, prasyarat, dan duplikasi. Tidak ada perubahan kolom Sah.
+
+
+## Audit otomatis duplikasi lintas halaman P022 - 2026-11-01
+
+- Metode: ekstraksi 16 teks slot P022 (sebelum anotasi) dan pencocokan substring persis terhadap semua baris utama P001-P040 dalam file register ini. Pencocokan ini lebih luas daripada membandingkan slot yang sama, tetapi belum mencakup perbedaan harakat dan file jilid lain.
+- K01: juga ditemukan pada P025, P033, P035.
+- K02: juga ditemukan pada P030.
+- K03: juga ditemukan pada P025, P030.
+- K05: juga ditemukan pada P030.
+- Hasil: 4 dari 16 slot memiliki kemunculan pada halaman lain; 12 tidak ditemukan dengan teks persis. Penggantian ditunda sampai kandidat pengganti tervalidasi; kolom Sah tetap.
