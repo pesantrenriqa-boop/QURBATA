@@ -1230,3 +1230,11 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - P022/K12: QS Hud 11:19 memuat وَهُمْ بِالْآخِرَةِ هُمْ كَافِرُونَ. Bukti: https://quran.com/id/hud/19 . Pola ikhfa syafawi مْ + ب pada وَهُمْ بِالْآخِرَةِ.
 - P022/K15: QS Al-An'am 6:150 memuat وَهُمْ بِرَبِّهِمْ يَعْدِلُونَ. Bukti: https://quran.com/id/binatang-ternak/150 . Pola ikhfa syafawi مْ + ب pada وَهُمْ بِرَبِّهِمْ.
 - Status pemeriksaan: rujukan sumber dan pertemuan huruf untuk kedua kandidat telah dicocokkan. Pemeriksaan rasm Utsmani final dan duplikasi lintas jilid belum selesai; kolom Sah tetap tidak diubah.
+
+
+## Audit sumber P022 K02 K03 K05 — 2026-11-01
+
+- K02 — QS Al-Ghasyiyah 88:22: لَسْتَ عَلَيْهِمْ بِمُصَيْطِرٍ. Rujukan https://quran.com/id/88%3A22/tafsirs/ar-tafsir-ibn-kathir . Mim sukun bertemu ba pada عَلَيْهِمْ بِمُصَيْطِرٍ; cocok dengan ikhfa syafawi.
+- K03 — QS Qaf 50:45: وَمَا أَنْتَ عَلَيْهِمْ بِجَبَّارٍ. Rujukan https://quran.ksu.edu.sa/tafseer/katheer/sura50-aya45.html . Mim sukun bertemu ba pada عَلَيْهِمْ بِجَبَّارٍ; cocok dengan ikhfa syafawi.
+- K05 — QS Al-Baqarah 2:8: وَمَا هُمْ بِمُؤْمِنِينَ. Rujukan https://quran.com/id/sapi-betina/8-68 . Mim sukun bertemu ba pada هُمْ بِمُؤْمِنِينَ; cocok dengan ikhfa syafawi.
+- Ketiga penggalan sesuai sumber pada pemeriksaan teks umum. Ini belum mengesahkan rasm Utsmani final, syarat kompetensi lain, maupun duplikasi lintas jilid. Kolom Sah tetap tidak diubah.
