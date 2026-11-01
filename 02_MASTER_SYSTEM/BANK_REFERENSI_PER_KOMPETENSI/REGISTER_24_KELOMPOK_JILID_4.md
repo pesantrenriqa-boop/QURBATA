@@ -1381,3 +1381,9 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - P022/K01 saat ini tetap QS 105:4. QS 100:11 masih kandidat alternatif, belum menjadi slot utama.
 - Target pada QS 100:11: pertemuan mim sakinah dan ba. Selain itu ada unsur bacaan lain sehingga perlu penilaian beban pedagogis, bukan hanya kebenaran hukum target.
 - Keputusan konservatif: jangan mengganti K01 sebelum tashih mushaf final dan penilaian prasyarat; pertahankan semua data lama.
+
+## Gate integritas slot P022 2026-11-01
+- Baris register utama P022 teridentifikasi berisi 16 slot K01-K16, masing-masing dengan rujukan QS.
+- K01 aktif tetap QS 105:4; calon QS 100:11 tidak ditemukan pada baris register utama lain di Jilid 4 dengan pencocokan teks yang dinormalisasi.
+- Pemeriksaan ini tidak mencakup catatan naratif, sumber mushaf primer, atau semua variasi kutipan pendek.
+- Kebijakan rilis: jangan ubah slot utama hingga sumber, urutan kompetensi, dan persetujuan tashih selesai. Simpan catatan audit secara aditif.
