@@ -224,3 +224,9 @@ Status: **kandidat belum ditashih terhadap mushaf**, tidak otomatis lolos syarat
 - Master kompetensi `books/jilid-5/QJ5-MASTER-Struktur-40-Halaman.md` menegaskan P039 = **Simulasi akhir, seluruh mad Jilid 5**, sehingga pengganti K01 harus memenuhi target asesmen dan bukan sekadar berbeda frasa.
 - Kandidat QS Al-Kahf 18:98 `فَإِذَا جَاءَ وَعْدُ رَبِّي` memenuhi indikator kaidah mad wajib muttasil pada `جَاءَ` dan belum ditemukan pada baris slot Jilid 5; **belum terbukti unik lintas jilid**. Pencarian kode GitHub tidak mengembalikan kecocokan; hasil negatif tidak membuktikan tidak adanya penggunaan di file/branch lain.
 - Langkah wajib sebelum penggantian: periksa register Jilid 1–4 dan 6–8 di branch yang relevan, cocokkan rasm Utsmani mushaf Hafs, lalu simpan bukti tashih. **Jangan mengubah kandidat aktif atau nilai Sah sebelum ketiga syarat selesai.**
+
+### AUDIT LINTAS REGISTER J1–J8 — 2026-11-01
+
+Pemeriksaan langsung register `REGISTER_24_KELOMPOK_JILID_{1,2,3,4,6,7,8}.md` pada branch `audit/j4-tashih-20261024`: pencarian pada baris berawalan `| P### |` tidak menemukan metadata `QS 18:98`, frasa `جَاءَ وَعْدُ رَبِّي`, maupun `فَإِذَا جَاءَ وَعْدُ`. Register Jilid 5 juga telah diperiksa sebelumnya dan tidak memuat kandidat ini dalam slot. **Hasil: lolos penyaringan duplikasi lintas 8 register pada branch ini**, bukan jaminan kebaruan seluruh dokumen dan branch.
+
+Usulan P039/K01 tetap `فَإِذَا جَاءَ وَعْدُ رَبِّي` (QS Al-Kahf 18:98), sasaran mad wajib muttasil pada `جَاءَ`. Sebelum mengganti teks aktif, lakukan tashih rasm Utsmani Hafs dan verifikasi batas kutipan. Status `Sah` tetap tidak berubah.
