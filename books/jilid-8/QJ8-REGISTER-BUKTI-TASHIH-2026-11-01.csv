@@ -1,8 +1,8 @@
 gh_id,rujukan_target,status_bukti,sumber_mushaf,versi_mushaf,checksum_mushaf,ayat_konteks,rujukan_hafs,thariq,pemeriksa,tanggal_tashih,keputusan_tashih,catatan
-GH-001,18:1-2,BELUM_ADA_BUKTI,,,,,,,,,HOLD,
-GH-002,36:52,BELUM_ADA_BUKTI,,,,,,,,,HOLD,
-GH-003,75:27,BELUM_ADA_BUKTI,,,,,,,,,HOLD,
-GH-004,83:14,BELUM_ADA_BUKTI,,,,,,,,,HOLD,
+GH-001,18:1-2,REFERENSI_SEKUNDER_DITEMUKAN,,,,,https://tashih.kemenag.go.id/uploads/1/2019-12/buku_tanya_jawab_tentang_mushaf_fth.pdf,,,,HOLD,Kemenag LPMQ memuat empat lokasi saktah Hafs; mushaf Utsmani dan tashih ahli masih belum diverifikasi
+GH-002,36:52,REFERENSI_SEKUNDER_DITEMUKAN,,,,,https://tashih.kemenag.go.id/uploads/1/2019-12/buku_tanya_jawab_tentang_mushaf_fth.pdf,,,,HOLD,Kemenag LPMQ memuat empat lokasi saktah Hafs; mushaf Utsmani dan tashih ahli masih belum diverifikasi
+GH-003,75:27,REFERENSI_SEKUNDER_DITEMUKAN,,,,,https://tashih.kemenag.go.id/uploads/1/2019-12/buku_tanya_jawab_tentang_mushaf_fth.pdf,,,,HOLD,Kemenag LPMQ memuat empat lokasi saktah Hafs; mushaf Utsmani dan tashih ahli masih belum diverifikasi
+GH-004,83:14,REFERENSI_SEKUNDER_DITEMUKAN,,,,,https://tashih.kemenag.go.id/uploads/1/2019-12/buku_tanya_jawab_tentang_mushaf_fth.pdf,,,,HOLD,Kemenag LPMQ memuat empat lokasi saktah Hafs; mushaf Utsmani dan tashih ahli masih belum diverifikasi
 GH-005,11:41,BELUM_ADA_BUKTI,,,,,,,,,HOLD,
 GH-006,12:11,BELUM_ADA_BUKTI,,,,,,,,,HOLD,
 GH-007,41:44,BELUM_ADA_BUKTI,,,,,,,,,HOLD,
