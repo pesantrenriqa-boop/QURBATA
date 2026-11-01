@@ -269,7 +269,7 @@ slot_id,page_id,competency,kind,text_uthmani,surah,ayah_start,ayah_end,source_id
 "QJ6-P030-S07","QJ6-P030","Evaluasi Waqaf–Ibtida' — P021–P029","tartil","","","","","","","","","EMPTY",""
 "QJ6-P030-S08","QJ6-P030","Evaluasi Waqaf–Ibtida' — P021–P029","tartil","","","","","","","","","EMPTY",""
 "QJ6-P030-S09","QJ6-P030","Evaluasi Waqaf–Ibtida' — P021–P029","tartil","","","","","","","","","EMPTY",""
-"QJ6-P031-S01","QJ6-P031","Ayat lebih panjang I — tempo dan jeda","tartil","","","","","","","","","EMPTY",""
+"QJ6-P031-S01","QJ6-P031","Ayat lebih panjang I — tempo dan jeda","tartil","إِنَّمَا ٱلْمُؤْمِنُونَ إِخْوَةٌۭ فَأَصْلِحُوا۟ بَيْنَ أَخَوَيْكُمْ وَٱتَّقُوا۟ ٱللَّهَ لَعَلَّكُمْ تُرْحَمُونَ","49","10","10","QURANCOM:49:10","no","no","","CANDIDATE","QS 49:10 full verse for tempo and pause practice; verse-final waqaf. https://quran.com/49/10 . Verify exact Uthmani MSI, lesson prerequisites, cross-volume duplicates, and pause segmentation before approval."
 "QJ6-P031-S02","QJ6-P031","Ayat lebih panjang I — tempo dan jeda","tartil","","","","","","","","","EMPTY",""
 "QJ6-P031-S03","QJ6-P031","Ayat lebih panjang I — tempo dan jeda","tartil","","","","","","","","","EMPTY",""
 "QJ6-P031-S04","QJ6-P031","Ayat lebih panjang I — tempo dan jeda","tartil","","","","","","","","","EMPTY",""
