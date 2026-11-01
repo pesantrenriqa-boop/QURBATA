@@ -1356,3 +1356,9 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - QS Al-Adiyat 100:11: إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍۢ لَّخَبِيرٌۢ .
 - Target ikhfa syafawi: رَبَّهُم بِهِمْ (mim sukun bertemu ba). Teks kandidat lama berbeda pada penandaan akhir ayat dan harus diselaraskan dengan mushaf acuan sebelum cetak.
 - Status kandidat K01: HOLD. Pemeriksaan lintas jilid dan rasm final belum selesai. Slot aktif dan status Sah tidak diubah.
+
+## Audit lintas jilid P022 K01 2026-11-01
+- Pemeriksaan literal dilakukan pada register Jilid 1, 2, 3, 5, 6, 7, dan 8 pada branch audit yang sama.
+- Penggalan kandidat QS 100:11 tidak ditemukan sebagai kecocokan literal pada ketujuh file tersebut.
+- Batasan: perbedaan harakat dan rasm serta dokumen lain belum dicakup.
+- Keputusan: K01 tetap HOLD, tidak ada perubahan slot aktif atau kolom Sah.
