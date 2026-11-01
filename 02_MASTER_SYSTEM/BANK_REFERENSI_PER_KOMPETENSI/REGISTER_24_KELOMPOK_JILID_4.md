@@ -1277,3 +1277,12 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Kebijakan sementara: tidak mengganti otomatis sebelum tersedia penggalan pengganti otentik, sesuai kompetensi ikhfa syafawi, dan lolos pemeriksaan sumber serta duplikasi.
 - Cakupan audit yang sudah pasti: baris tabel utama register Jilid 4 pada branch ini; belum ada hasil terverifikasi untuk Jilid 1-3 dan 5-8.
 - Tabel P022 tetap 16/16 secara administratif, tetapi empat slot tersebut diberi prioritas revisi. Kolom Sah tidak diubah.
+
+
+## Kebijakan seleksi duplikasi P022 - 2026-11-01
+
+- Audit menemukan duplikasi contoh P022/K01, K02, K03, dan K05 di halaman Jilid 4 lainnya.
+- Prinsip seleksi: satu contoh identik sebaiknya tidak berulang tanpa tujuan pedagogis eksplisit; untuk pengganti wajib cocok مْ+ب, sumber QS tepat, serta tidak memuat kompetensi yang belum diajarkan.
+- P022/K01 memiliki hukum tambahan ikhfa haqiqi pada مِنْ سِجِّيلٍ; karena itu harus ditinjau terhadap prasyarat kompetensi halaman sebelum dicetak.
+- Tindakan berikutnya: inventaris kandidat pengganti terverifikasi dari surah berbeda, cek duplikasi lintas jilid, lalu revisi satu slot per commit dengan arsip kandidat lama.
+- Tidak ada penggantian slot otomatis dalam catatan ini. Kolom Sah tidak diubah.
