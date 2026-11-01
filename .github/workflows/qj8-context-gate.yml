@@ -7,6 +7,8 @@ on:
       - 'books/jilid-8/QJ8-LEMBAR-TASHIH-SAKTAH-2026-10-30.csv'
       - 'scripts/qj8_validate_tashih_worksheet.py'
       - 'scripts/qj8_test_tashih_worksheet.py'
+      - 'scripts/qj8_audit_360_slots.py'
+      - 'books/jilid-8/QJ8-MATRIKS-SINKRON-360-SLOT-2026-10-29.md'
       - 'scripts/qj8_validate_context_manifest.py'
       - 'scripts/qj8_test_saktah_context_gate.py'
       - 'scripts/qj8_validate_canonical_saktah.py'
@@ -35,6 +37,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Audit all 360 draft slots without modifying source
+        run: python scripts/qj8_audit_360_slots.py --output /tmp/qj8-slot-audit.json
       - name: Validate context manifest
         run: python scripts/qj8_validate_context_manifest.py
       - name: Validate Saktah gate and negative tests
