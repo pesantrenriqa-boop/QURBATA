@@ -1247,3 +1247,14 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - K06 (QS 34:8): pola mim sukun + ba ada pada أَمْ بِهِ جِنَّةٌ. Status: cocok secara pola; rasm dan konteks tetap menunggu tashih.
 - K07 (QS 83:17): pola mim sukun + ba ada pada كُنْتُمْ بِهِ تُكَذِّبُونَ. Status: cocok secara pola; rasm dan konteks tetap menunggu tashih.
 - Pemeriksaan ini adalah audit pola huruf pada teks yang sudah tercatat, bukan pengesahan kebenaran seluruh rujukan. Tidak mengubah slot utama maupun kolom Sah.
+
+
+## Audit pola P022 K08 K09 K10 K11 K13 K14 — 2026-11-01
+
+- K08 (QS 29:22): أَنْتُمْ بِمُعْجِزِينَ mengandung مْ + ب; sesuai pola ikhfa syafawi.
+- K09 (QS 21:27): وَهُمْ بِأَمْرِهِ mengandung مْ + ب; sesuai pola ikhfa syafawi.
+- K10 (QS 2:167): هُمْ بِخَارِجِينَ mengandung مْ + ب; sesuai pola ikhfa syafawi.
+- K11 (QS 2:102): هُمْ بِضَارِّينَ mengandung مْ + ب; sesuai pola ikhfa syafawi.
+- K13 (QS 7:45): وَهُمْ بِالْآخِرَةِ mengandung مْ + ب; sesuai pola ikhfa syafawi.
+- K14 (QS 27:3): وَهُمْ بِالْآخِرَةِ mengandung مْ + ب; sesuai pola ikhfa syafawi.
+- Cakupan audit ini terbatas pada pemeriksaan pola huruf di teks register. Tashih rasm Utsmani, validasi sumber penuh, dan duplikasi lintas jilid belum selesai. Tidak mengubah kolom Sah.
