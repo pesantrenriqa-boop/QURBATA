@@ -1368,3 +1368,10 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Pola kata rabbahum bihim dari QS 100:11 tidak ditemukan di Jilid 1-3 dan 5-8; kemunculan di Jilid 4 berasal dari catatan audit kandidat sendiri.
 - Ini bukan bukti keunikan pada seluruh dokumen atau cabang lain. K01 tetap HOLD sampai pemeriksaan rasm dan prasyarat final.
 - Slot aktif dan kolom Sah tidak diubah.
+
+## Audit bentuk akhir QS 100:11 P022 K01 2026-11-01
+- Kandidat QS 100:11 memiliki target ikhfa syafawi pada رَبَّهُم بِهِمْ.
+- Bentuk teks yang dicatat dari mushaf daring: إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍۢ لَّخَبِيرٌۢ.
+- Perbedaan dari catatan awal meliputi tanda pada mim, tanwin dan lam bertasydid. Jangan menyamakan ejaan latihan dengan rasm mushaf sebelum tashih.
+- Pemeriksaan kemiripan antarregister dengan normalisasi sudah dilakukan; belum mencakup dokumen tambahan.
+- Status K01 tetap HOLD, belum dipromosikan menjadi Sah. Isi slot utama tidak diubah.
