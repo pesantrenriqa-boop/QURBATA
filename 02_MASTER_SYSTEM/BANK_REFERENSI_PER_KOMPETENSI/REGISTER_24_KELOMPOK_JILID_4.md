@@ -1334,3 +1334,11 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Pemeriksaan teks persis terhadap file register Jilid 4 ini tidak menemukan penggalan penuh tersebut sebelum catatan ini ditambahkan. Belum diuji terhadap seluruh jilid atau mushaf rasm Utsmani resmi.
 - Status: CANDIDATE-REVIEW, belum masuk slot aktif K01. Sebelum mengganti, verifikasi teks mushaf dan seluruh kompetensi tambahan pada penggalan, termasuk tasydid dan mad, serta duplikasi lintas jilid.
 - Kandidat lama K01 dan kolom Sah tidak diubah.
+
+
+## Tashih internal kandidat QS 100:11 P022/K01 - 2026-11-01
+
+- Teks kandidat: إِنَّ رَبَّهُمْ بِهِمْ يَوْمَئِذٍ لَخَبِيرٌ (QS Al-Adiyat 100:11).
+- Pemeriksaan internal: رَبَّهُمْ بِهِمْ memuat mim sukun di akhir رَبَّهُمْ dan ba di awal بِهِمْ, sehingga pola ikhfa syafawi terpenuhi.
+- Catatan pedagogis: penggalan juga memuat tasydid (إِنَّ, رَبَّهُمْ), mim sukun lain pada بِهِمْ يَوْمَئِذٍ, serta tanwin pada يَوْمَئِذٍ; perlu cocokkan prasyarat kompetensi sebelum mengganti slot aktif.
+- Audit lintas jilid dan pembandingan rasm mushaf resmi belum dibuktikan pada tahap ini; kandidat tetap CANDIDATE-REVIEW. P022/K01 lama tidak diubah.
