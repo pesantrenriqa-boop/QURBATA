@@ -1286,3 +1286,10 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - P022/K01 memiliki hukum tambahan ikhfa haqiqi pada مِنْ سِجِّيلٍ; karena itu harus ditinjau terhadap prasyarat kompetensi halaman sebelum dicetak.
 - Tindakan berikutnya: inventaris kandidat pengganti terverifikasi dari surah berbeda, cek duplikasi lintas jilid, lalu revisi satu slot per commit dengan arsip kandidat lama.
 - Tidak ada penggantian slot otomatis dalam catatan ini. Kolom Sah tidak diubah.
+
+
+## Kandidat pengganti P022/K01 - 2026-11-01
+
+- Kandidat pembanding untuk K01: QS Al-Anbiya 21:27, وَهُمْ بِأَمْرِهِ يَعْمَلُونَ, memuat مْ + ب tanpa tambahan مِنْ سِجِّيلٍ. **Tidak layak sebagai pengganti baru** karena sudah digunakan di P022/K09.
+- Prinsip pencarian lanjutan: hindari mengambil contoh dari slot P022 lain; periksa keseluruhan register Jilid 4 dan lintas jilid sebelum memilih pengganti.
+- K01 lama tetap dipertahankan sampai kandidat baru lolos validasi mushaf, prasyarat, dan duplikasi. Tidak ada perubahan kolom Sah.
