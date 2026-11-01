@@ -1214,3 +1214,12 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Kandidat sebelumnya: وَهُمْ بِالْآخِرَةِ كَافِرُونَ [ARSIP KANDIDAT: RUJUKAN QS 16:22 TIDAK SESUAI TEKS; JANGAN CETAK; PERLU PENGGANTI TERVALIDASI]
 - Status: karantina, bukan slot aktif. Rujukan ayat tidak cocok; jangan cetak.
 - Slot K13 tetap kosong hingga ada pengganti dengan bukti teks mushaf.
+
+## Audit P022 K16 - 1 November 2026
+
+- Slot: P022/K16; rujukan QS Al-Anbiya 21:36.
+- Penggalan terdaftar: وَهُمْ بِذِكْرِ الرَّحْمَٰنِ هُمْ كَافِرُونَ.
+- Pemeriksaan sumber: penggalan berurutan sesuai teks QS 21:36 pada Quran.com dan Quranic Arabic Corpus (https://quran.com/21/36 ; https://corpus.quran.com/grammar.jsp?chapter=21&verse=36).
+- Kompetensi: mim sukun bertemu ba pada وَهُمْ بِذِكْرِ, sehingga cocok sebagai contoh ikhfa syafawi.
+- Pemeriksaan lokal: 16 slot K01-K16 P022 terisi secara administratif. Tidak ada slot dikosongkan atau digeser.
+- Status: sumber dan pola tajwid K16 diperiksa; tashih rasm Utsmani final, batas penggalan untuk cetak, dan duplikasi lintas jilid masih diperlukan. Kolom Sah tidak diubah.
