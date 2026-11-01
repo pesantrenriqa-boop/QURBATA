@@ -10,7 +10,7 @@ GH-008,IBDAL,Perubahan lafal khusus,2:245,ويبصط,1,Periksa rasm dan cara bac
 GH-009,IBDAL,Perubahan lafal khusus,88:22,بمصيطر,1,Periksa rasm dan cara baca ṣād/sīn menurut riwayat,TINGGI,PENDING,PENDING,HOLD,,Klasifikasi rinci menunggu ahli
 GH-010,NAQL,Naql khusus,49:11,بئس الاسم,1,Periksa bentuk wasal dan waqaf serta penggolongan,TINGGI,PENDING,PENDING,HOLD,,Kandidat tambahan di luar sembilan kasus draf
 GH-011,GHUNNAH,Idgham khusus,53:50,عادا الأولى,1,Periksa naql/hamzah dan cara wasal pada lafaz,TINGGI,PENDING,PENDING,HOLD,,Kategori sementara perlu ditetapkan ulang
-GH-012,WAQF,Kalimat dengan perlakuan khusus,76:15-16,قواريرا,1,Periksa dua kemunculan dan kaidah waqaf,TINGGI,PENDING,PENDING,HOLD,,Jangan gabungkan dua ayat menjadi satu kejadian tanpa audit
+GH-012,WAQF,KELOMPOK_REFERENSI_BUKAN_KEJADIAN,76:15-16,قواريرا,0,Induk telaah dua kejadian pada ayat berbeda,TINGGI,PENDING,PENDING,HOLD,,JANGAN DITEMPATKAN; gunakan GH-017 dan GH-018 setelah tashih
 
 GH-014,MAD_QASHR,Perlakuan alif waqaf/wasal,76:4,سلاسلا,1,Periksa wajah waqaf dan wasal serta rasm,TINGGI,PENDING,PENDING,HOLD,,Kandidat baru; perlu tashih
 GH-015,MAD_QASHR,Perlakuan alif waqaf/wasal,33:10,الظنونا,1,Periksa hukum alif akhir saat waqaf dan wasal,TINGGI,PENDING,PENDING,HOLD,,Kandidat baru; perlu tashih
