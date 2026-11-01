@@ -18,3 +18,6 @@ GH-016,MAD_QASHR,Perlakuan alif waqaf/wasal,33:66,الرسولا,1,Periksa hukum
 GH-017,MAD_QASHR,Perlakuan alif waqaf/wasal,76:15,قواريرا,1,Periksa ayat 15 tersendiri dan bandingkan ayat 16,TINGGI,PENDING,PENDING,HOLD,,Pisahkan dari GH-012 yang merangkum dua ayat
 GH-018,MAD_QASHR,Perlakuan alif waqaf/wasal,76:16,قواريرا,1,Periksa ayat 16 tersendiri dan bandingkan ayat 15,TINGGI,PENDING,PENDING,HOLD,,Pisahkan dari GH-012 yang merangkum dua ayat
 GH-019,BADAL,Hamzah/ibdal khusus,46:4,ائتوني,1,Periksa bentuk ibtida dan wasal menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Kandidat baru; perlu tashih
+GH-020,MAD_QASHR,Alif akhir saat waqaf/wasal,33:67,السبيلا,1,Periksa alif akhir dan cara baca saat wasal atau waqaf,TINGGI,PENDING,PENDING,HOLD,,Kandidat tambahan pasangan 33:66
+GH-021,WAQF,Ha sakt pada sambungan ayat,69:28-29,ماليه هلك,1,Periksa kaidah ha sakt saat wasal dan waqaf serta kemungkinan wajah bacaan,TINGGI,PENDING,PENDING,HOLD,,Bukan tambahan kasus Saktah kanonik empat tempat
+GH-022,WAQF,Alif khusus waqaf/wasal,18:38,لكنا,1,Periksa rasm alif dan perbedaan wasal atau waqaf menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Kandidat perlu sumber dan tashih
