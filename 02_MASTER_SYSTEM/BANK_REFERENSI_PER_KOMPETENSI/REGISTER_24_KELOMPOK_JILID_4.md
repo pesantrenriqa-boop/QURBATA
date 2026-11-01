@@ -1223,3 +1223,10 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Kompetensi: mim sukun bertemu ba pada وَهُمْ بِذِكْرِ, sehingga cocok sebagai contoh ikhfa syafawi.
 - Pemeriksaan lokal: 16 slot K01-K16 P022 terisi secara administratif. Tidak ada slot dikosongkan atau digeser.
 - Status: sumber dan pola tajwid K16 diperiksa; tashih rasm Utsmani final, batas penggalan untuk cetak, dan duplikasi lintas jilid masih diperlukan. Kolom Sah tidak diubah.
+
+
+## Audit sumber P022 K12 dan K15 — 2026-11-01
+
+- P022/K12: QS Hud 11:19 memuat وَهُمْ بِالْآخِرَةِ هُمْ كَافِرُونَ. Bukti: https://quran.com/id/hud/19 . Pola ikhfa syafawi مْ + ب pada وَهُمْ بِالْآخِرَةِ.
+- P022/K15: QS Al-An'am 6:150 memuat وَهُمْ بِرَبِّهِمْ يَعْدِلُونَ. Bukti: https://quran.com/id/binatang-ternak/150 . Pola ikhfa syafawi مْ + ب pada وَهُمْ بِرَبِّهِمْ.
+- Status pemeriksaan: rujukan sumber dan pertemuan huruf untuk kedua kandidat telah dicocokkan. Pemeriksaan rasm Utsmani final dan duplikasi lintas jilid belum selesai; kolom Sah tetap tidak diubah.
