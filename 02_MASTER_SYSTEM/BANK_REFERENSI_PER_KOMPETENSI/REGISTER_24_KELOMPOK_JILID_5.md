@@ -237,3 +237,17 @@ Usulan P039/K01 tetap `فَإِذَا جَاءَ وَعْدُ رَبِّي` (QS 
 - Kandidat baru: فَإِذَا جَآءَ وَعْدُ رَبِّى [KANDIDAT QS 18:98; MAD WAJIB MUTTASIL pada جَآءَ; teks rasm pembanding Quran.com QS 18:98; lolos pemeriksaan duplikasi 8 register pada branch audit; BELUM TASHIH FINAL; Sah tetap 0]
 - Rujukan: https://quran.com/id/18%3A98/qiraat dan https://www.islam.museum/ar/passage/quran-18-98/
 - Tindakan hanya mengganti **kandidat DRAF**, bukan mengesahkan bacaan, rasm final cetak, atau skor Sah. Perlu review font Utsmani, konsistensi penulisan rasm seluruh jilid, dan tashih ahli sebelum final.
+
+### AUDIT P039 K02-K08 — 2026-11-01
+
+Pemeriksaan otomatis metadata sumber pada 40 baris slot Jilid 5 (duplikasi nomor surat:ayat; **bukan tashih final**):
+
+- P039/K02 QS 44:3: rujukan sama ditemukan pada P033; status kandidat tetap DRAF.
+- P039/K03 QS 19:4: rujukan sama ditemukan pada P023, P035; status kandidat tetap DRAF.
+- P039/K04 QS 12:16: rujukan sama ditemukan pada P003, P027, P037; status kandidat tetap DRAF.
+- P039/K05 QS 2:260: rujukan sama ditemukan pada P030; status kandidat tetap DRAF.
+- P039/K06 QS 47:20: rujukan sama ditemukan pada P037; status kandidat tetap DRAF.
+- P039/K07 QS 51:7: rujukan sama ditemukan pada P003, P033; status kandidat tetap DRAF.
+- P039/K08 QS 58:6: rujukan sama ditemukan pada P032; status kandidat tetap DRAF.
+
+**Verifikasi sumber tahap awal:** QS 44:3 untuk K02 cocok dengan teks Kemenag (https://bimasislam.kemenag.go.id/al-quran/44); mad jaiz munfasil pada إِنَّا أَنْزَلْنَاهُ saat wasal perlu ditashih detail rasm/tanda mad. QS 19:4 untuk K03 cocok dengan Quran.com (https://quran.com/19/4), tetapi bukan alasan menaikkan Sah. Untuk K04–K08 pemeriksaan sumber/rasm belum dilakukan pada tahap ini. **Jangan mengganti slot, jangan menghapus kandidat, dan jangan mengubah nilai Sah.**
