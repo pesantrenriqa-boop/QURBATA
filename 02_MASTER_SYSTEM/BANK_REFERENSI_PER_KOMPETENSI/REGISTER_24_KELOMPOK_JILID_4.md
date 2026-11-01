@@ -1375,3 +1375,9 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Perbedaan dari catatan awal meliputi tanda pada mim, tanwin dan lam bertasydid. Jangan menyamakan ejaan latihan dengan rasm mushaf sebelum tashih.
 - Pemeriksaan kemiripan antarregister dengan normalisasi sudah dilakukan; belum mencakup dokumen tambahan.
 - Status K01 tetap HOLD, belum dipromosikan menjadi Sah. Isi slot utama tidak diubah.
+
+## Gate pedagogis P022 K01 2026-11-01
+- Baris utama P021 adalah orientasi mim sakinah, P022 ikhfa syafawi, P023 idgham mimi.
+- P022/K01 saat ini tetap QS 105:4. QS 100:11 masih kandidat alternatif, belum menjadi slot utama.
+- Target pada QS 100:11: pertemuan mim sakinah dan ba. Selain itu ada unsur bacaan lain sehingga perlu penilaian beban pedagogis, bukan hanya kebenaran hukum target.
+- Keputusan konservatif: jangan mengganti K01 sebelum tashih mushaf final dan penilaian prasyarat; pertahankan semua data lama.
