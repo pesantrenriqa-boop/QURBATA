@@ -1326,3 +1326,11 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Kandidat baru untuk pengganti K01: وَمَا هُوَ بِمُزَحْزِحِهِ مِنَ الْعَذَابِ (QS Al-Baqarah 2:96). **Ditolak untuk P022** karena هُوَ بِمُزَحْزِحِهِ bukan mim sukun + ba. Ini adalah pengecekan kesalahan pola sebelum slot diubah.
 - Pemeriksaan teks register saat ini tidak menemukan بِمُزَحْزِحِهِ, tetapi ketiadaan duplikasi tidak dapat menggantikan uji hukum tajwid.
 - K01 tetap kandidat lama. Jangan mengganti hanya berdasarkan kemiripan makna atau keberadaan huruf ba. Status Sah tidak berubah.
+
+
+## Kandidat alternatif P022/K01 QS 100:11 - 2026-11-01
+
+- Kandidat eksplorasi: إِنَّ رَبَّهُمْ بِهِمْ يَوْمَئِذٍ لَخَبِيرٌ (QS Al-Adiyat 100:11). Pada رَبَّهُمْ بِهِمْ terdapat mim sukun + ba (ikhfa syafawi).
+- Pemeriksaan teks persis terhadap file register Jilid 4 ini tidak menemukan penggalan penuh tersebut sebelum catatan ini ditambahkan. Belum diuji terhadap seluruh jilid atau mushaf rasm Utsmani resmi.
+- Status: CANDIDATE-REVIEW, belum masuk slot aktif K01. Sebelum mengganti, verifikasi teks mushaf dan seluruh kompetensi tambahan pada penggalan, termasuk tasydid dan mad, serta duplikasi lintas jilid.
+- Kandidat lama K01 dan kolom Sah tidak diubah.
