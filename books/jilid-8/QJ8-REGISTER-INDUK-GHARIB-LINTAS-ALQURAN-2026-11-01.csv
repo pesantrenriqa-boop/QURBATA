@@ -30,3 +30,7 @@ GH-028,WAQF,Ha sakt pada lafaz,101:10,ماهيه,1,Periksa ha sakt dan wajah was
 GH-029,WAQF,Ha sakt pada lafaz,69:28,ماليه,1,Periksa ha sakt pada akhir 69:28 dan sambungannya ke 69:29,TINGGI,PENDING,PENDING,HOLD,,Tumpang tindih GH-021; jangan hitung ganda dalam final
 GH-030,MAD_FARQ,Hamzah istifham,10:51,آلآن,1,Periksa bentuk hamzah dan mad farq menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Kandidat terpisah dari 10:91
 GH-031,MAD_FARQ,Hamzah istifham,10:91,آلآن,1,Periksa bentuk hamzah dan mad farq menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Kandidat terpisah dari 10:51
+GH-032,MAD_FARQ,Hamzah istifham,6:143,آلذكرين,1,Periksa bentuk hamzah dan mad farq menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Pasangan lokasi 6:144
+GH-033,MAD_FARQ,Hamzah istifham,6:144,آلذكرين,1,Periksa bentuk hamzah dan mad farq menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Pasangan lokasi 6:143
+GH-034,MAD_FARQ,Hamzah istifham,10:59,آلله,1,Periksa bentuk hamzah dan mad farq menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Bandingkan lokasi 27:59
+GH-035,MAD_FARQ,Hamzah istifham,27:59,آلله,1,Periksa bentuk hamzah dan mad farq menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Bandingkan lokasi 10:59
