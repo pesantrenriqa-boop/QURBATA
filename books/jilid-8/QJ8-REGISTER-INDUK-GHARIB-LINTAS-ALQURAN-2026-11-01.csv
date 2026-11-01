@@ -1,0 +1,13 @@
+gh_id,kategori,subkategori,rujukan_target,lafaz_indeks_nonotoritatif,kejadian_unik,catatan_bacaan_hafs,prioritas,validasi_mushaf,validasi_riwayat,keputusan,halaman_jilid8,catatan
+GH-001,SAKTAH,Saktah lintas ayat,18:1-2,عوجا قيما,1,Saktah pada sambungan ayat; konteks lengkap 18:1-3,TINGGI,PENDING,PENDING,HOLD,,Satu kejadian bukan dua
+GH-002,SAKTAH,Saktah dalam ayat,36:52,مرقدنا هذا,1,Saktah pada sambungan lafaz,TINGGI,PENDING,PENDING,HOLD,,Konteks 36:51-53
+GH-003,SAKTAH,Saktah dalam ayat,75:27,من راق,1,Saktah pada sambungan lafaz,TINGGI,PENDING,PENDING,HOLD,,Konteks 75:26-28
+GH-004,SAKTAH,Saktah dalam ayat,83:14,بل ران,1,Saktah pada sambungan lafaz,TINGGI,PENDING,PENDING,HOLD,,Konteks 83:13-15
+GH-005,IMALAH,Imalah kubra,11:41,مجراها,1,Periksa cara baca dan letak tanda pada mushaf Hafs,TINGGI,PENDING,PENDING,HOLD,,Bukan contoh saktah
+GH-006,ISYMAM,Isymam khusus,12:11,لا تأمنا,1,Periksa isymam dan kemungkinan wajah bacaan sesuai talaqqi,TINGGI,PENDING,PENDING,HOLD,,Perlu demonstrasi guru
+GH-007,TASHIL,Tashil hamzah,41:44,أأعجمي,1,Periksa tanda tashil dan jalur Hafs,TINGGI,PENDING,PENDING,HOLD,,Jangan samakan dengan hamzah biasa
+GH-008,IBDAL,Perubahan lafal khusus,2:245,ويبصط,1,Periksa rasm dan cara baca ṣād/sīn menurut riwayat,TINGGI,PENDING,PENDING,HOLD,,Klasifikasi rinci menunggu ahli
+GH-009,IBDAL,Perubahan lafal khusus,88:22,بمصيطر,1,Periksa rasm dan cara baca ṣād/sīn menurut riwayat,TINGGI,PENDING,PENDING,HOLD,,Klasifikasi rinci menunggu ahli
+GH-010,NAQL,Naql khusus,49:11,بئس الاسم,1,Periksa bentuk wasal dan waqaf serta penggolongan,TINGGI,PENDING,PENDING,HOLD,,Kandidat tambahan di luar sembilan kasus draf
+GH-011,GHUNNAH,Idgham khusus,53:50,عادا الأولى,1,Periksa naql/hamzah dan cara wasal pada lafaz,TINGGI,PENDING,PENDING,HOLD,,Kategori sementara perlu ditetapkan ulang
+GH-012,WAQF,Kalimat dengan perlakuan khusus,76:15-16,قواريرا,1,Periksa dua kemunculan dan kaidah waqaf,TINGGI,PENDING,PENDING,HOLD,,Jangan gabungkan dua ayat menjadi satu kejadian tanpa audit
