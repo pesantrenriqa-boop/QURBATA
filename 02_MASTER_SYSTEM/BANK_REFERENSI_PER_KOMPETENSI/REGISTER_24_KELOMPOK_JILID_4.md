@@ -1319,3 +1319,10 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - K14 (QS 27:3): وَهُمْ بِالْآخِرَةِ هُمْ يُوقِنُونَ.
 - Ketiga slot tidak sama persis sebagai penggalan penuh, tetapi berbagi awalan وَهُمْ بِالْآخِرَةِ dan pola ikhfa syafawi yang sama. K12 dan K13 bahkan sama-sama berakhir dengan كَافِرُونَ. Ini adalah kemiripan pedagogis yang tidak terdeteksi oleh audit duplikasi teks persis.
 - Rekomendasi: saat memilih variasi pengganti, prioritaskan keragaman struktur dan surah; jangan mengubah ketiga slot sampai contoh pengganti lolos verifikasi sumber, kompetensi, dan rasm. Status Sah tetap.
+
+
+## Kandidat baru P022/K01 QS 2:96 - 2026-11-01
+
+- Kandidat baru untuk pengganti K01: وَمَا هُوَ بِمُزَحْزِحِهِ مِنَ الْعَذَابِ (QS Al-Baqarah 2:96). **Ditolak untuk P022** karena هُوَ بِمُزَحْزِحِهِ bukan mim sukun + ba. Ini adalah pengecekan kesalahan pola sebelum slot diubah.
+- Pemeriksaan teks register saat ini tidak menemukan بِمُزَحْزِحِهِ, tetapi ketiadaan duplikasi tidak dapat menggantikan uji hukum tajwid.
+- K01 tetap kandidat lama. Jangan mengganti hanya berdasarkan kemiripan makna atau keberadaan huruf ba. Status Sah tidak berubah.
