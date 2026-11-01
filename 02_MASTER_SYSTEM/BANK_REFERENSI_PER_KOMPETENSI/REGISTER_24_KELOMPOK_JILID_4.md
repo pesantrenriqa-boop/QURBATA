@@ -1303,3 +1303,10 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - K03: juga ditemukan pada P025, P030.
 - K05: juga ditemukan pada P030.
 - Hasil: 4 dari 16 slot memiliki kemunculan pada halaman lain; 12 tidak ditemukan dengan teks persis. Penggantian ditunda sampai kandidat pengganti tervalidasi; kolom Sah tetap.
+
+
+## Kandidat alternatif P022/K01 dari QS 4:80 - 2026-11-01
+
+- QS An-Nisa 4:80 (`وَمَنْ تَوَلَّىٰ فَمَا أَرْسَلْنَاكَ عَلَيْهِمْ حَفِيظًا`) **bukan** kandidat ikhfa syafawi: عَلَيْهِمْ حَفِيظًا adalah مْ + ح, bukan مْ + ب. Ditolak sebelum masuk slot aktif.
+- Kriteria otomatis yang wajib dipenuhi kandidat baru: mengandung mim sukun langsung diikuti ba pada batas kata atau di dalam kata sesuai materi, tidak identik dengan slot yang ada, dan sumber ayat terverifikasi.
+- Penolakan kandidat ini tidak mengubah P022/K01, status Sah, maupun slot lain.
