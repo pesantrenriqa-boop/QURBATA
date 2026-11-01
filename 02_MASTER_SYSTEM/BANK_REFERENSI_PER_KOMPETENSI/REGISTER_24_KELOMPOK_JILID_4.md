@@ -1238,3 +1238,12 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - K03 — QS Qaf 50:45: وَمَا أَنْتَ عَلَيْهِمْ بِجَبَّارٍ. Rujukan https://quran.ksu.edu.sa/tafseer/katheer/sura50-aya45.html . Mim sukun bertemu ba pada عَلَيْهِمْ بِجَبَّارٍ; cocok dengan ikhfa syafawi.
 - K05 — QS Al-Baqarah 2:8: وَمَا هُمْ بِمُؤْمِنِينَ. Rujukan https://quran.com/id/sapi-betina/8-68 . Mim sukun bertemu ba pada هُمْ بِمُؤْمِنِينَ; cocok dengan ikhfa syafawi.
 - Ketiga penggalan sesuai sumber pada pemeriksaan teks umum. Ini belum mengesahkan rasm Utsmani final, syarat kompetensi lain, maupun duplikasi lintas jilid. Kolom Sah tetap tidak diubah.
+
+
+## Audit pola P022 K01 K04 K06 K07 — 2026-11-01
+
+- K01 (QS 105:4): pola mim sukun + ba ada pada تَرْمِيهِمْ بِحِجَارَةٍ. Teks dan nomor ayat perlu tetap dibandingkan dengan mushaf Utsmani sebelum pengesahan.
+- K04 (QS 6:107): pola mim sukun + ba ada pada عَلَيْهِمْ بِوَكِيلٍ. Status: cocok secara pola; rasm dan konteks tetap menunggu tashih.
+- K06 (QS 34:8): pola mim sukun + ba ada pada أَمْ بِهِ جِنَّةٌ. Status: cocok secara pola; rasm dan konteks tetap menunggu tashih.
+- K07 (QS 83:17): pola mim sukun + ba ada pada كُنْتُمْ بِهِ تُكَذِّبُونَ. Status: cocok secara pola; rasm dan konteks tetap menunggu tashih.
+- Pemeriksaan ini adalah audit pola huruf pada teks yang sudah tercatat, bukan pengesahan kebenaran seluruh rujukan. Tidak mengubah slot utama maupun kolom Sah.
