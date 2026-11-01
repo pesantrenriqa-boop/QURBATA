@@ -42,8 +42,10 @@ jobs:
       - name: Check that preview is explicitly HOLD
         run: |
           grep -q "BELUM TASHIH" /tmp/qj8-context-HOLD.md
+          grep -q "Kasus dengan konteks lengkap: 33/33" /tmp/qj8-context-HOLD.md
           grep -q "SOURCE_IMPORTED_NOT_TASHIH" /tmp/qj8-context.json
           test ! -e books/jilid-8/qj8-context-HOLD.md
+          git diff --exit-code -- books/jilid-8
       - name: Record source provenance for reviewer
         run: |
           python - <<'PY'
