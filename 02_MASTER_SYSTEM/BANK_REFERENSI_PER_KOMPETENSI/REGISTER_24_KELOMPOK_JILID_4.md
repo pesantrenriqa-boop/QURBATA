@@ -1350,3 +1350,9 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Kandidat QS 100:11 (إِنَّ رَبَّهُمْ بِهِمْ يَوْمَئِذٍ لَخَبِيرٌ) mengandung target ikhfa syafawi pada رَبَّهُمْ بِهِمْ, sedangkan bentuk tanwin pada يَوْمَئِذٍ dan tasydid memerlukan pemeriksaan terhadap daftar kompetensi resmi jilid sebelumnya.
 - Urutan di atas mendukung bahwa materi nun/tanwin sudah diperkenalkan sebelum P022, tetapi **tidak membuktikan** semua prasyarat fonetik dan hukum tambahan telah tuntas. Keputusan penggantian K01: HOLD sampai validasi mushaf, prasyarat resmi, dan duplikasi lintas jilid.
 - Tidak ada perubahan isi slot maupun kolom Sah.
+
+## Verifikasi mushaf QS 100:11 P022/K01 — 2026-11-01
+- Sumber: https://quran.com/id/100%3A11/tafsirs/ar-tafseer-al-qurtubi ; https://quran.ksu.edu.sa/tafseer/saadi/sura100-aya11.html .
+- QS Al-Adiyat 100:11: إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍۢ لَّخَبِيرٌۢ .
+- Target ikhfa syafawi: رَبَّهُم بِهِمْ (mim sukun bertemu ba). Teks kandidat lama berbeda pada penandaan akhir ayat dan harus diselaraskan dengan mushaf acuan sebelum cetak.
+- Status kandidat K01: HOLD. Pemeriksaan lintas jilid dan rasm final belum selesai. Slot aktif dan status Sah tidak diubah.
