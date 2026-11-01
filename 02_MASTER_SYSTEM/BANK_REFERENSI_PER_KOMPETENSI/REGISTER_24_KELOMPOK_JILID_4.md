@@ -1258,3 +1258,14 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - K13 (QS 7:45): وَهُمْ بِالْآخِرَةِ mengandung مْ + ب; sesuai pola ikhfa syafawi.
 - K14 (QS 27:3): وَهُمْ بِالْآخِرَةِ mengandung مْ + ب; sesuai pola ikhfa syafawi.
 - Cakupan audit ini terbatas pada pemeriksaan pola huruf di teks register. Tashih rasm Utsmani, validasi sumber penuh, dan duplikasi lintas jilid belum selesai. Tidak mengubah kolom Sah.
+
+
+## Audit duplikasi teks persis P022 - 2026-11-01
+
+- Metode: bandingkan teks penggalan sebelum anotasi [KANDIDAT] terhadap baris tabel utama P001-P040 di file Jilid 4 yang sama; tidak mencakup seluruh jilid atau varian harakat.
+- P022/K01: teks persis ditemukan lagi pada P025, P033, dan P035.
+- P022/K02: teks persis ditemukan lagi pada P030.
+- P022/K03: teks persis ditemukan lagi pada P025 dan P030.
+- P022/K05: teks persis ditemukan lagi pada P030.
+- P022/K04 dan K06-K16: tidak ditemukan duplikasi teks persis di baris utama halaman lain pada file ini.
+- Keputusan: jangan menghapus otomatis; perlu kebijakan pengulangan pedagogis dan pemeriksaan lintas jilid. Status Sah tidak diubah.
