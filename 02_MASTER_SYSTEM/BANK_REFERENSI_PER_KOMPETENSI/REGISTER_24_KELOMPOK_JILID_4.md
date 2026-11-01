@@ -1269,3 +1269,11 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - P022/K05: teks persis ditemukan lagi pada P030.
 - P022/K04 dan K06-K16: tidak ditemukan duplikasi teks persis di baris utama halaman lain pada file ini.
 - Keputusan: jangan menghapus otomatis; perlu kebijakan pengulangan pedagogis dan pemeriksaan lintas jilid. Status Sah tidak diubah.
+
+
+## Tindak lanjut audit duplikasi P022 - 2026-11-01
+
+- Prioritas penggantian kandidat berulang: K01 (juga P025/P033/P035), K03 (juga P025/P030), K02 (juga P030), dan K05 (juga P030).
+- Kebijakan sementara: tidak mengganti otomatis sebelum tersedia penggalan pengganti otentik, sesuai kompetensi ikhfa syafawi, dan lolos pemeriksaan sumber serta duplikasi.
+- Cakupan audit yang sudah pasti: baris tabel utama register Jilid 4 pada branch ini; belum ada hasil terverifikasi untuk Jilid 1-3 dan 5-8.
+- Tabel P022 tetap 16/16 secara administratif, tetapi empat slot tersebut diberi prioritas revisi. Kolom Sah tidak diubah.
