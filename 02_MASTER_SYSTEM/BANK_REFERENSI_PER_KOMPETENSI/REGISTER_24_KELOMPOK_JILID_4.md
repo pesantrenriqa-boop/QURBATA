@@ -1362,3 +1362,9 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Penggalan kandidat QS 100:11 tidak ditemukan sebagai kecocokan literal pada ketujuh file tersebut.
 - Batasan: perbedaan harakat dan rasm serta dokumen lain belum dicakup.
 - Keputusan: K01 tetap HOLD, tidak ada perubahan slot aktif atau kolom Sah.
+
+## Audit normalisasi harakat P022 K01 2026-11-01
+- Pemindaian delapan register Jilid 1-8 menggunakan normalisasi NFKD, penghapusan harakat dan tanda Quran, penyamaan variasi alif/hamzah, serta spasi.
+- Pola kata rabbahum bihim dari QS 100:11 tidak ditemukan di Jilid 1-3 dan 5-8; kemunculan di Jilid 4 berasal dari catatan audit kandidat sendiri.
+- Ini bukan bukti keunikan pada seluruh dokumen atau cabang lain. K01 tetap HOLD sampai pemeriksaan rasm dan prasyarat final.
+- Slot aktif dan kolom Sah tidak diubah.
