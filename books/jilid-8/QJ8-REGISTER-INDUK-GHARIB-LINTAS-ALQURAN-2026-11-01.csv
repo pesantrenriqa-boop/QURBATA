@@ -21,3 +21,9 @@ GH-019,BADAL,Hamzah/ibdal khusus,46:4,ائتوني,1,Periksa bentuk ibtida dan w
 GH-020,MAD_QASHR,Alif akhir saat waqaf/wasal,33:67,السبيلا,1,Periksa alif akhir dan cara baca saat wasal atau waqaf,TINGGI,PENDING,PENDING,HOLD,,Kandidat tambahan pasangan 33:66
 GH-021,WAQF,Ha sakt pada sambungan ayat,69:28-29,ماليه هلك,1,Periksa kaidah ha sakt saat wasal dan waqaf serta kemungkinan wajah bacaan,TINGGI,PENDING,PENDING,HOLD,,Bukan tambahan kasus Saktah kanonik empat tempat
 GH-022,WAQF,Alif khusus waqaf/wasal,18:38,لكنا,1,Periksa rasm alif dan perbedaan wasal atau waqaf menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Kandidat perlu sumber dan tashih
+GH-023,WAQF,Ha sakt pada lafaz,69:19,كتابيه,1,Periksa ha sakt dalam wasal dan waqaf menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Kandidat tersendiri dari 69:28
+GH-024,WAQF,Ha sakt pada lafaz,69:20,حسابيه,1,Periksa ha sakt dalam wasal dan waqaf menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Kandidat tersendiri dari 69:19
+GH-025,WAQF,Ha sakt pada lafaz,69:25,كتابيه,1,Periksa ha sakt dalam wasal dan waqaf menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Lafaz sama tetapi posisi berbeda dari 69:19
+GH-026,WAQF,Ha sakt pada lafaz,69:26,حسابيه,1,Periksa ha sakt dalam wasal dan waqaf menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Lafaz sama tetapi posisi berbeda dari 69:20
+GH-027,WAQF,Ha sakt pada lafaz,69:29,سلطانيه,1,Periksa ha sakt dalam wasal dan waqaf menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Bandingkan GH-021 yang melintasi 69:28-29
+GH-028,WAQF,Ha sakt pada lafaz,101:10,ماهيه,1,Periksa ha sakt dan wajah wasal/waqaf menurut Hafs,TINGGI,PENDING,PENDING,HOLD,,Kandidat pada akhir surah
