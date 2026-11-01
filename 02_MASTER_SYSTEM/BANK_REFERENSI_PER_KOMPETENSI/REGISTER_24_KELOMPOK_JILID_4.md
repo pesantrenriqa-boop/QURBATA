@@ -1310,3 +1310,12 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - QS An-Nisa 4:80 (`وَمَنْ تَوَلَّىٰ فَمَا أَرْسَلْنَاكَ عَلَيْهِمْ حَفِيظًا`) **bukan** kandidat ikhfa syafawi: عَلَيْهِمْ حَفِيظًا adalah مْ + ح, bukan مْ + ب. Ditolak sebelum masuk slot aktif.
 - Kriteria otomatis yang wajib dipenuhi kandidat baru: mengandung mim sukun langsung diikuti ba pada batas kata atau di dalam kata sesuai materi, tidak identik dengan slot yang ada, dan sumber ayat terverifikasi.
 - Penolakan kandidat ini tidak mengubah P022/K01, status Sah, maupun slot lain.
+
+
+## Audit kemiripan non-identik P022 K12-K14 - 2026-11-01
+
+- K12 (QS 11:19): وَهُمْ بِالْآخِرَةِ هُمْ كَافِرُونَ.
+- K13 (QS 7:45): وَهُمْ بِالْآخِرَةِ كَافِرُونَ.
+- K14 (QS 27:3): وَهُمْ بِالْآخِرَةِ هُمْ يُوقِنُونَ.
+- Ketiga slot tidak sama persis sebagai penggalan penuh, tetapi berbagi awalan وَهُمْ بِالْآخِرَةِ dan pola ikhfa syafawi yang sama. K12 dan K13 bahkan sama-sama berakhir dengan كَافِرُونَ. Ini adalah kemiripan pedagogis yang tidak terdeteksi oleh audit duplikasi teks persis.
+- Rekomendasi: saat memilih variasi pengganti, prioritaskan keragaman struktur dan surah; jangan mengubah ketiga slot sampai contoh pengganti lolos verifikasi sumber, kompetensi, dan rasm. Status Sah tetap.
