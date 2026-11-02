@@ -1440,3 +1440,20 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Kesamaan penggalan tidak otomatis merupakan kesalahan; P021 adalah orientasi mim sakinah dan halaman lanjutan dapat memuat penguatan.
 - Temuan ini memperluas audit duplikasi teks lengkap; keputusan penggantian tetap memerlukan tashih mushaf dan tinjauan pedagogis.
 - Slot utama P022/K01-K16 tidak diubah.
+
+## Klasifikasi pengulangan P022 menurut fungsi 2026-11-03
+| Hubungan | Fungsi halaman lain | Keputusan sementara |
+|---|---|---|
+| P022/K01 -> P021/K04 | Orientasi sebelum pelajaran | Pertahankan sebagai pengenalan, tinjau variasi saat latihan |
+| P022/K01 -> P025/K01 | Kontras hukum mim | Pengulangan dapat disengaja |
+| P022/K01 -> P033/K08 | Integrasi lintas hukum | Pengulangan dapat disengaja |
+| P022/K01 -> P034/K03 | Remedial pola kritis | Pengulangan dapat disengaja |
+| P022/K01 -> P035/K07 | Murojaah berjarak | Pengulangan dapat disengaja |
+| P022/K02 -> P025/K05 | Kontras hukum mim (potongan) | Pengulangan dapat disengaja |
+| P022/K02 -> P030/K07 | Evaluasi | Pengulangan dapat disengaja |
+| P022/K03 -> P025/K11, P030/K09 | Kontras dan evaluasi | Pengulangan dapat disengaja |
+| P022/K05 -> P030/K08 | Evaluasi | Pengulangan dapat disengaja |
+
+- Klasifikasi berdasarkan judul halaman, bukan bukti desain pembelajaran yang telah disetujui. Jangan otomatis menghapus pengulangan.
+- Tindakan selanjutnya: tetapkan apakah P022 memerlukan contoh unik, lalu pilih kandidat hanya setelah tashih ayat dan gate prasyarat.
+- Tidak ada slot atau status utama yang diubah.
