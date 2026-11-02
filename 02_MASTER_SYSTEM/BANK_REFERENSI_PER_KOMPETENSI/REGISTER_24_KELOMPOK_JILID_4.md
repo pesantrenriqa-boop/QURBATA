@@ -1394,3 +1394,11 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Ini hitungan kemunculan pada baris lain, bukan jumlah ayat unik. Audit lintas jilid dan variasi petikan tetap diperlukan.
 - Prioritas perbaikan: K01, K03, K02, K05; jangan mengubah slot sebelum kandidat lolos tashih rasm dan gate kompetensi.
 - Seluruh slot P022 K01-K16 tetap dipertahankan.
+
+## Peta lokasi duplikasi P022 2026-11-02
+- K01 (QS 105:4): teks penuh ditemukan lagi pada baris P025, P033, P035.
+- K02 (QS 88:22): ditemukan pada P030.
+- K03 (QS 50:45): ditemukan pada P025 dan P030.
+- K05 (QS 2:8): ditemukan pada P030.
+- P025 adalah kontras hukum mim, P030 evaluasi mim dan alif-lam, P033 integrasi nun-mim-alif-lam, P035 murojaah berjarak. Pengulangan pada evaluasi/murojaah dapat disengaja secara pedagogis; jangan tandai sebagai kesalahan otomatis.
+- Kebijakan: bedakan pengulangan sengaja dan pengulangan tidak perlu sebelum mengganti. K01 alternatif QS 100:11 tetap HOLD. Tidak ada slot aktif diubah.
