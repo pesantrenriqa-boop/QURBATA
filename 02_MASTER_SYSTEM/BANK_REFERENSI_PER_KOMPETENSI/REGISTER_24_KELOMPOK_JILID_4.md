@@ -1419,3 +1419,10 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Hasil: 16/16 lolos pemeriksaan pola tulisan. Ini bukan tashih rasm, validasi konteks ayat, atau penilaian kompetensi menyeluruh.
 - Duplikasi untuk K01, K02, K03, K05 tetap dicatat; pengulangan evaluasi/murojaah tidak otomatis salah.
 - Tidak ada perubahan slot aktif, rujukan QS, atau status Sah.
+
+## Skrining beban tajwid tambahan P022 2026-11-02
+- Uji pola literal nun sukun diikuti huruf ikhfa (dalam kata maupun antarkata) pada 16 contoh P022 menandai K01 (QS 105:4), K03 (QS 50:45), K07 (QS 83:17), dan K08 (QS 29:22).
+- Contoh pemicu: K01 MIN SIJJIL, K03 ANTA, K07 KUNTUM, K08 ANTUM. Materi nun sukun sudah ditempatkan sebelum P022, tetapi penguatan kontras hukum perlu dinilai secara pedagogis.
+- Hasil ini hanya skrining tekstual; tidak menguji seluruh tajwid atau kebenaran rasm. Tidak otomatis membuat slot gagal.
+- Rekomendasi: saat menilai pengganti K01 dan K03, bandingkan jumlah fenomena tajwid tambahan agar fokus ikhfa syafawi tetap jelas.
+- Tidak ada perubahan slot utama atau status Sah.
