@@ -1402,3 +1402,14 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - K05 (QS 2:8): ditemukan pada P030.
 - P025 adalah kontras hukum mim, P030 evaluasi mim dan alif-lam, P033 integrasi nun-mim-alif-lam, P035 murojaah berjarak. Pengulangan pada evaluasi/murojaah dapat disengaja secara pedagogis; jangan tandai sebagai kesalahan otomatis.
 - Kebijakan: bedakan pengulangan sengaja dan pengulangan tidak perlu sebelum mengganti. K01 alternatif QS 100:11 tetap HOLD. Tidak ada slot aktif diubah.
+
+## Matriks slot pengulangan P022 2026-11-02
+| Slot asal | Pengulangan tepat pada slot lain | Fungsi halaman tujuan |
+|---|---|---|
+| P022/K01 | P025/K01, P033/K08, P035/K07 | Kontras, integrasi, murojaah |
+| P022/K02 | P030/K07 | Evaluasi |
+| P022/K03 | P025/K11, P030/K09 | Kontras, evaluasi |
+| P022/K05 | P030/K08 | Evaluasi |
+
+- Matriks dibuat dari pencocokan isi sel register utama yang dinormalisasi; tidak membuktikan bahwa pengulangan perlu dihapus.
+- Keputusan: pertahankan contoh evaluasi/murojaah sampai ada keputusan desain pedagogis dan tashih kandidat alternatif. Tidak mengubah 16 slot P022.
