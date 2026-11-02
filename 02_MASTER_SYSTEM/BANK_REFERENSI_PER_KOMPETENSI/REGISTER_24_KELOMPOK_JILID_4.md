@@ -1413,3 +1413,9 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 
 - Matriks dibuat dari pencocokan isi sel register utama yang dinormalisasi; tidak membuktikan bahwa pengulangan perlu dihapus.
 - Keputusan: pertahankan contoh evaluasi/murojaah sampai ada keputusan desain pedagogis dan tashih kandidat alternatif. Tidak mengubah 16 slot P022.
+
+## Uji otomatis pola P022 2026-11-02
+- Pemeriksaan terprogram atas 16 sel utama P022/K01-K16: semuanya memuat pola literal mim sukun diikuti ba pada batas kata (مْ + ب).
+- Hasil: 16/16 lolos pemeriksaan pola tulisan. Ini bukan tashih rasm, validasi konteks ayat, atau penilaian kompetensi menyeluruh.
+- Duplikasi untuk K01, K02, K03, K05 tetap dicatat; pengulangan evaluasi/murojaah tidak otomatis salah.
+- Tidak ada perubahan slot aktif, rujukan QS, atau status Sah.
