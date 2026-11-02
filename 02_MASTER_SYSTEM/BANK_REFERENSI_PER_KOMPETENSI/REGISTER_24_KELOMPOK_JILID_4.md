@@ -1432,3 +1432,11 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Alternatif QS 100:11: 5 kata, 2 tanwin, 3 tasydid (skrining karakter). Penulisan mushaf daring memakai mim tanpa tanda sukun eksplisit pada rangkaian rabbahum bihim; pemeriksa regex mim-sukun eksplisit tidak cocok untuk rasm tersebut, sehingga hasil nol regex bukan berarti hukum ikhfa syafawi tidak ada.
 - Alternatif mengurangi contoh nun-sukun+sin tetapi lebih panjang dan memiliki lebih banyak tasydid. Tidak otomatis lebih mudah.
 - Keputusan: jangan promosikan alternatif K01 sebelum validasi rasm mushaf baku dan uji keterbacaan pedagogis; pertahankan data utama.
+
+## Audit pengulangan potongan P022 2026-11-02
+- Pemeriksaan sebelumnya berfokus pada kesamaan teks lengkap. Audit tambahan mengidentifikasi pengulangan potongan yang lebih pendek.
+- P022/K01 QS 105:4 berbagi penggalan `تَرْمِيهِمْ بِحِجَارَةٍ` dengan P021/K04 dan P034/K03.
+- P022/K02 QS 88:22 berbagi penggalan `عَلَيْهِمْ بِمُصَيْطِرٍ` dengan P025/K05.
+- Kesamaan penggalan tidak otomatis merupakan kesalahan; P021 adalah orientasi mim sakinah dan halaman lanjutan dapat memuat penguatan.
+- Temuan ini memperluas audit duplikasi teks lengkap; keputusan penggantian tetap memerlukan tashih mushaf dan tinjauan pedagogis.
+- Slot utama P022/K01-K16 tidak diubah.
