@@ -1387,3 +1387,10 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - K01 aktif tetap QS 105:4; calon QS 100:11 tidak ditemukan pada baris register utama lain di Jilid 4 dengan pencocokan teks yang dinormalisasi.
 - Pemeriksaan ini tidak mencakup catatan naratif, sumber mushaf primer, atau semua variasi kutipan pendek.
 - Kebijakan rilis: jangan ubah slot utama hingga sumber, urutan kompetensi, dan persetujuan tashih selesai. Simpan catatan audit secara aditif.
+
+## Verifikasi ulang duplikasi P022 2026-11-02
+- Pemindaian baris register utama Jilid 4 dengan normalisasi harakat menemukan pengulangan teks penuh: K01=3 baris lain, K02=1, K03=2, K05=1.
+- Rujukan aktif masing-masing: K01 QS 105:4; K02 QS 88:22; K03 QS 50:45; K05 QS 2:8.
+- Ini hitungan kemunculan pada baris lain, bukan jumlah ayat unik. Audit lintas jilid dan variasi petikan tetap diperlukan.
+- Prioritas perbaikan: K01, K03, K02, K05; jangan mengubah slot sebelum kandidat lolos tashih rasm dan gate kompetensi.
+- Seluruh slot P022 K01-K16 tetap dipertahankan.
