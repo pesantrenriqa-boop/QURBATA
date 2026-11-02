@@ -1,0 +1,22 @@
+name: QJ5 P039 integrity
+on:
+  push:
+    paths:
+      - '02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/REGISTER_24_KELOMPOK_JILID_5.md'
+      - 'scripts/check_qj5_p039_integrity.py'
+      - '.github/workflows/qj5-p039-integrity.yml'
+  pull_request:
+    paths:
+      - '02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/REGISTER_24_KELOMPOK_JILID_5.md'
+      - 'scripts/check_qj5_p039_integrity.py'
+      - '.github/workflows/qj5-p039-integrity.yml'
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check P039 structural integrity
+        run: python3 scripts/check_qj5_p039_integrity.py
