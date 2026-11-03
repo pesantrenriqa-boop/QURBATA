@@ -37,5 +37,12 @@ class CheckerTests(unittest.TestCase):
         self.assertEqual(len(set(module.REFERENCES)), 16)
         self.assertEqual(len(module.EXPECTED_SHA256), 64)
 
+    def test_source_digest_has_expected_hex_format(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("checker", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        self.assertRegex(module.EXPECTED_SHA256, r"^[0-9a-f]{64}$")
+
 if __name__ == "__main__":
     unittest.main()
