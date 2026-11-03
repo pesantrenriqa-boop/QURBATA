@@ -45,3 +45,23 @@ Pemeriksaan langsung terhadap QS Al-An'am 6:143–144 pada Quran.com membuktikan
 **Catatan rasm:** register memakai `آللَّهُ`, sedangkan tampilan mushaf pembanding menampilkan bentuk `ءَآللَّهُ`. Perbedaan ini tidak boleh diselesaikan dengan penggantian massal: pemeriksa harus menetapkan standar rasm, font Utsmani, riwayat Hafs, dan pemeriksaan tampilan cetak. Pembuktian sumber ayat **bukan** pengesahan semua aspek bacaan.
 
 **Rekap P013:** keempat rujukan K01/K02/K05/K07 telah memperoleh pemeriksaan sumber terbatas; K02 dan K07 memakai lafaz yang sama pada dua konteks ayat berbeda. Masih ada 12 slot kosong. Seluruh Sah tetap `0/16` sampai pemeriksa ahli menyetujui tashih.
+
+## Rancangan keputusan kurikulum yang dapat langsung ditashih — 2026-11-03
+
+**Usulan, belum disetujui:** P013 tidak dipaksa menghasilkan 16 kutipan ayat berbeda. Tetapkan **4 lokasi ayat untuk latihan berbasis sumber** dan gunakan ruang lain hanya untuk *aktivitas non-kutipan* setelah format buku disetujui; aktivitas tersebut **tidak boleh dimasukkan ke kolom kandidat ayat atau dihitung Sah**.
+
+| Tahap belajar | Bahan yang sudah ada | Kegiatan yang diusulkan | Bukti asesmen |
+|---|---|---|---|
+| Identifikasi | K01, QS 27:59 | Temukan lafaz mad farq dan jelaskan perbedaan bentuk tulis dan cara baca | Penandaan lafaz dan alasan |
+| Identifikasi | K05, QS 10:59 | Bandingkan pola pada lafaz Allah dengan K01 | Penandaan lafaz dan alasan |
+| Konteks I | K02, QS 6:143 | Baca dalam konteks ayat domba/kambing | Rekaman bacaan dan penjelasan konteks |
+| Konteks II | K07, QS 6:144 | Baca dalam konteks ayat unta/sapi; jelaskan mengapa frasa sama bukan ayat yang sama | Rekaman bacaan dan penjelasan konteks |
+| Evaluasi | Keempat sumber di atas | Bandingkan tiga pola frasa dalam empat lokasi tanpa menciptakan ayat baru | Rubrik guru, terpisah dari hitungan Sah |
+
+**Pilihan yang harus diputuskan penanggung jawab kurikulum:**
+- **Opsi A (disarankan untuk dibahas):** pertahankan struktur 16 kolom demi kompatibilitas sistem; 12 slot ditandai `—` dan diberi catatan dispensasi kurikulum P013. Kapasitas teknis 16, target sumber sah maksimal 4 lokasi.
+- **Opsi B:** revisi kapasitas khusus P013 setelah persetujuan kurikulum, pembaruan master 40 halaman, register, skrip audit, tes, dan template cetak secara konsisten. Jangan ubah sepihak.
+
+**Lembar keputusan ahli (diisi manusia):** pemeriksa: __________; mushaf/riwayat/edisi: __________; tanggal: __________; hasil K01: __________; K02: __________; K05: __________; K07: __________; keputusan Opsi A/B: __________; bukti koreksi: __________; persetujuan kurikulum: __________.
+
+**Batasan:** Quran.com QS 6:143 menunjukkan lafaz `ءَآلذَّكَرَيۡنِ` dalam konteks ayat 143 (https://quran.com/6/143); kesamaan frasa pada ayat 144 dan seluruh kesimpulan pedagogis tetap harus diperiksa bersama mushaf rujukan cetak. Tidak ada kandidat atau nilai Sah yang diubah pada tahap ini.
