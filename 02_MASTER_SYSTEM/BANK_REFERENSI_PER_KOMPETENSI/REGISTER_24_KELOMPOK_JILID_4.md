@@ -1503,3 +1503,8 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - K16 QS 21:36: `وَهُمْ بِذِكْرِ الرَّحْمَٰنِ هُمْ كَافِرُونَ` cocok dengan penggalan ayat. Sumber https://quran.com/id/para-nabi/36/translations/quran.id dan https://corpus.quran.com/grammar.jsp?chapter=21&verse=36 .
 - Akumulasi audit rujukan: 16/16 slot P022 telah dicocokkan pada tahap sebelumnya dan tahap ini; tidak berarti tashih rasm cetak final. Untuk K06-K16 khususnya, rasm Utsmani dapat menghilangkan sukun eksplisit pada mim sebelum ba; jangan memaksakan pola regex literal sebagai standar mushaf.
 - Gate berikutnya: tetapkan sumber rasm Utsmani yang konsisten, periksa simbol waqaf, hamzah, harakat, dan batas penggalan secara manual sebelum PASS cetak. Semua slot utama dan status sebelumnya tetap tidak diubah.
+
+## Audit rasm K01 P022 - 2026-11-03
+- Sumber pembanding: https://quran.com/105/4
+- Perbedaan tipografi pada mim sebelum ba, tanwin, dan mim pada kata berikutnya perlu diperiksa terhadap standar mushaf cetak.
+- Rujukan cocok; persetujuan cetak tetap HOLD. Tidak mengubah sel utama.
