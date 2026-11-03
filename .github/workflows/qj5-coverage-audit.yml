@@ -4,11 +4,13 @@ on:
     paths:
       - '02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/REGISTER_24_KELOMPOK_JILID_5.md'
       - 'scripts/audit_qj5_coverage.py'
+      - 'tests/test_qj5_coverage.py'
       - '.github/workflows/qj5-coverage-audit.yml'
   pull_request:
     paths:
       - '02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/REGISTER_24_KELOMPOK_JILID_5.md'
       - 'scripts/audit_qj5_coverage.py'
+      - 'tests/test_qj5_coverage.py'
       - '.github/workflows/qj5-coverage-audit.yml'
 permissions:
   contents: read
@@ -20,3 +22,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate 40-page Jilid 5 register coverage
         run: python3 scripts/audit_qj5_coverage.py
+      - name: Run QJ5 regression tests
+        run: python3 -m unittest discover -s tests -p 'test_qj5_coverage.py'
