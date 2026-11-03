@@ -1481,3 +1481,10 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - K05: QS 2:8, sumber https://quran.com/id/sapi-betina/8-68 ; penggalan sesuai ayat, tanda mim pada teks Utsmani perlu disesuaikan.
 - Status keempatnya: RUJUKAN TERCOCOKKAN; TASHIH RASM CETAK MASIH HOLD. Jangan menyamakan verifikasi rujukan dengan persetujuan cetak.
 - Sel P022 utama dan penanda status tidak diubah.
+
+## Tashih rujukan daring P022 K12 K13 K14 2026-11-03
+- K12 QS Hud 11:19: penggalan `وَهُمْ بِالْآخِرَةِ هُمْ كَافِرُونَ` sesuai urutan kata ayat. Sumber: https://quran.com/11/19 .
+- K13 QS Al-Araf 7:45: penggalan `وَهُمْ بِالْآخِرَةِ كَافِرُونَ` sesuai urutan kata ayat. Sumber: https://quran.com/7/45 .
+- K14 QS An-Naml 27:3: penggalan `وَهُمْ بِالْآخِرَةِ هُمْ يُوقِنُونَ` sesuai urutan kata ayat. Sumber: https://quran.com/27/3 .
+- Ketiganya berbagi pembuka hukum ikhfa syafawi, tetapi kelanjutan kalimat berbeda. Kemiripan pedagogis tidak otomatis salah.
+- Status: RUJUKAN TERCOCOKKAN; TASHIH RASM CETAK HOLD. Tidak ada perubahan slot utama maupun status Sah.
