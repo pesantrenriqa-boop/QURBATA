@@ -15,12 +15,14 @@ class CoverageTests(unittest.TestCase):
     def setUpClass(cls):
         cls.original = REGISTER.read_text(encoding="utf-8")
 
-    def test_original_has_40_pages_468_candidates_12_empty(self):
+    def test_original_has_40_pages_and_consistent_capacity(self):
         rows, errors = module.audit(self.original)
         self.assertFalse(errors, errors)
         self.assertEqual(len(rows), 40)
-        self.assertEqual(sum(r[1] for r in rows), 468)
-        self.assertEqual(sum(r[3] for r in rows), 12)
+        self.assertEqual(sum(r[2] for r in rows), 480)
+        self.assertEqual(sum(r[1] + r[3] for r in rows), 480)
+        self.assertEqual(next(r for r in rows if r[0] == "P013")[2], 16)
+        # Do not hardcode 468/12: valid future candidate edits must not break CI.
 
     def test_duplicate_page_rejected(self):
         line = next(s for s in self.original.splitlines() if s.startswith("| P013 |"))
