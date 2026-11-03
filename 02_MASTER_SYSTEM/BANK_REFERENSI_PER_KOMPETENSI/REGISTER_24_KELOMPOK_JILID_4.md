@@ -1544,3 +1544,10 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Paket yang ditampilkan: versi 15.0, revisi 30-09-2026, SHA-256 227E6B1564D980F2BD09C2C35EBFB0330AC268C79A7C247CD1AB665BC635F245.
 - Verifikasi checksum baru dapat dilakukan setelah arsip resmi berhasil diperoleh. Belum ada verifikasi checksum atau perbandingan codepoint dalam tahap ini.
 - Lanjutkan pencocokan `aya_text_unicode` dan pratinjau A5 setelah paket diverifikasi. Jangan mengubah slot utama sebelum tashih.
+
+## Pemilahan paket Hafs P022 - 2026-11-03
+- Platform resmi: https://qurancomplex.gov.sa/quran-dev/
+- Untuk cetak QURBATA, gunakan paket `Unicode Uthmanic Font (Hafs Narration)` versi 15.0 (30-09-2026), bukan paket `for smart devices` versi 6.0 (30-06-2022). Keduanya produk berbeda di situs resmi.
+- Identitas checksum SHA-256 paket versi 15.0 yang tercantum di situs: 227E6B1564D980F2BD09C2C35EBFB0330AC268C79A7C247CD1AB665BC635F245.
+- Rencana pemeriksaan: unduh arsip yang benar, verifikasi SHA-256 berkas, baca `aya_text_unicode`, bandingkan 16 penggalan P022 per karakter, lalu pratinjau A5 dengan font kompatibel.
+- Belum ada arsip yang diperiksa pada tahap ini. Tidak ada klaim checksum PASS atau cetak PASS. Semua sel utama dan status dipertahankan.
