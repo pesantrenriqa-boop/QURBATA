@@ -1538,3 +1538,9 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - K16 QS 21:36 https://quran.com/21/36 : bandingkan mim sebelum ba dan tanda pada الرحمن.
 - Semua K11-K16 memiliki rujukan cocok, namun penyeragaman rasm untuk cetak masih HOLD. Dengan catatan sebelumnya K01-K10, seluruh 16 slot kini mempunyai catatan perbandingan awal; ini bukan pengesahan cetak final.
 - Tidak mengubah sel utama atau status sebelumnya.
+
+## Gate sumber resmi P022 2026-11-03
+- Sumber resmi: https://qurancomplex.gov.sa/quran-dev/ . Pilih Unicode Uthmanic Font Hafs (bukan paket smart-device yang berbeda).
+- Paket yang ditampilkan: versi 15.0, revisi 30-09-2026, SHA-256 227E6B1564D980F2BD09C2C35EBFB0330AC268C79A7C247CD1AB665BC635F245.
+- Verifikasi checksum baru dapat dilakukan setelah arsip resmi berhasil diperoleh. Belum ada verifikasi checksum atau perbandingan codepoint dalam tahap ini.
+- Lanjutkan pencocokan `aya_text_unicode` dan pratinjau A5 setelah paket diverifikasi. Jangan mengubah slot utama sebelum tashih.
