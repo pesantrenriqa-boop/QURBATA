@@ -45,6 +45,10 @@ def audit(content):
             errors.append(f"{page}: invalid Sah counter {sah!r}")
         elif int(sah.split("/")[1]) != capacity:
             errors.append(f"{page}: Sah denominator mismatch")
+        elif int(sah.split("/")[0]) > filled:
+            errors.append(f"{page}: Sah count exceeds filled candidates ({filled})")
+        elif page == "P013" and int(sah.split("/")[0]) > 4:
+            errors.append("P013: Sah count exceeds the four distinct documented Mad Farq loci")
         results.append((page, filled, capacity, capacity-filled, sah))
     expected = {f"P{i:03d}" for i in range(1, 41)}
     if seen != expected:
