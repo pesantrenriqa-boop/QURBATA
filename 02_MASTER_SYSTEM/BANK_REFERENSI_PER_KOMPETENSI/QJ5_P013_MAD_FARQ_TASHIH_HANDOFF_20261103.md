@@ -26,3 +26,11 @@
 Tidak mengubah teks kandidat, tidak mengisi slot kosong, tidak mengubah kolom Sah `0/16`, dan tidak mengklaim kelulusan tashih. **Keterisian 4/16 bukan berarti 4 contoh unik secara tekstual atau 4 contoh sah.**
 
 Sumber internal: `REGISTER_24_KELOMPOK_JILID_5.md`, baris P013, branch `audit/j4-tashih-20261024`.
+
+## Verifikasi sumber eksternal — 2026-11-03
+
+Pemeriksaan langsung terhadap QS Al-An'am 6:143–144 pada Quran.com membuktikan bahwa frasa **قُلْ ءَآلذَّكَرَيْنِ حَرَّمَ أَمِ ٱلْأُنثَيَيْنِ** terdapat pada **kedua ayat**. Maka **K02 (QS 6:143) dan K07 (QS 6:144) tidak salah rujukan** hanya karena lafaznya sama. Konteks 6:143 membahas domba/kambing, sedangkan 6:144 membahas unta/sapi. Rujukan: https://quran.com/ar/al-anam/143-144 dan https://quran.com/id/binatang-ternak/143-144 .
+
+**Klasifikasi keputusan:** VALIDASI SUMBER TERBATAS (dua lokasi ayat benar), **DUPLIKASI LAFaz UNTUK REVIEW PEDAGOGIS** (bukan dua pola teks unik), **BELUM TASHIH RASM/TAJWID**. Perbedaan grafem rasm Utsmani pembanding (mis. `ءَآلذَّكَرَيْنِ`) dari ejaan kandidat register (`آلذَّكَرَيْنِ`) harus ditangani melalui pemeriksaan font dan mushaf Hafs; jangan normalisasi otomatis.
+
+**Rekomendasi:** pertahankan kedua lokasi sebagai konteks pembanding bila disetujui penyusun kurikulum, tetapi jangan klaim empat frasa unik atau menaikkan Sah sebelum tashih. Seluruh 12 slot kosong tetap dibiarkan kosong.
