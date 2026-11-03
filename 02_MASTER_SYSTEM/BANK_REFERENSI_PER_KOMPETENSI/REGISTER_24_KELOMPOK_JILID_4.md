@@ -1528,3 +1528,13 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - K09 QS 21:27: pembanding https://quran.com/id/para-nabi/27-48 menampilkan `وَهُم بِأَمْرِهِۦ` sedangkan register menggunakan `وَهُمْ بِأَمْرِهِ`. Periksa mim dan tanda ha.
 - Ketiganya cocok sebagai penggalan ayat dan contoh ikhfa syafawi, tetapi belum PASS rasm cetak. Jangan mengganti teks utama sampai standar mushaf/font disahkan.
 - Semua slot utama dan status lama dipertahankan.
+
+## Audit rasm P022 K11-K16 2026-11-03
+- K11 QS 2:102 https://quran.com/2/102 : bandingkan tanda mad pada kata بِضَارِّينَ dan ha pada بِهِ.
+- K12 QS 11:19 https://quran.com/11/19 : bandingkan mim sebelum ba dan alif kecil pada kata كَافِرُونَ.
+- K13 QS 7:45 https://quran.com/7/45 : bandingkan mim sebelum ba dan tanda hamzah pada kata akhirat.
+- K14 QS 27:3 https://quran.com/27/3 : bandingkan mim sebelum ba dan tanda pada akhir penggalan.
+- K15 QS 6:150 https://quran.com/6/150 : bandingkan mim sebelum ba dan tanda pada بِرَبِّهِمْ.
+- K16 QS 21:36 https://quran.com/21/36 : bandingkan mim sebelum ba dan tanda pada الرحمن.
+- Semua K11-K16 memiliki rujukan cocok, namun penyeragaman rasm untuk cetak masih HOLD. Dengan catatan sebelumnya K01-K10, seluruh 16 slot kini mempunyai catatan perbandingan awal; ini bukan pengesahan cetak final.
+- Tidak mengubah sel utama atau status sebelumnya.
