@@ -1473,3 +1473,11 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Prioritas 3: K04 QS 6:107, K06 QS 34:8, K07 QS 83:17, K08 QS 29:22, K09 QS 21:27, K10 QS 2:167, K11 QS 2:102, K15 QS 6:150, K16 QS 21:36.
 - Gate setiap slot: cocokkan ayat sumber primer, batas penggalan, rasm dan tanda baca mushaf standar, hukum tajwid, serta prasyarat. Catat PASS/HOLD secara terpisah sebelum mengubah sel utama.
 - Status: daftar kerja disusun; belum ada tashih primer baru yang dilakukan pada tahap ini. Sel utama dan status lama tidak diubah.
+
+## Tashih rujukan daring P022 K01 K02 K03 K05 2026-11-03
+- K01: QS 105:4, sumber https://quran.com/id/gajah/4-5 ; penggalan sesuai ayat, namun tanda rasm dan harakat perlu diselaraskan dengan standar cetak.
+- K02: QS 88:22, sumber https://quran.com/id/hari-pembalasan/22 ; penggalan sesuai ayat; sumber menampilkan variasi tanda pada kata terakhir.
+- K03: QS 50:45, sumber https://quran.com/50/45 ; penggalan sesuai ayat, bentuk Utsmani pada sumber berbeda dari teks latihan pada sejumlah tanda.
+- K05: QS 2:8, sumber https://quran.com/id/sapi-betina/8-68 ; penggalan sesuai ayat, tanda mim pada teks Utsmani perlu disesuaikan.
+- Status keempatnya: RUJUKAN TERCOCOKKAN; TASHIH RASM CETAK MASIH HOLD. Jangan menyamakan verifikasi rujukan dengan persetujuan cetak.
+- Sel P022 utama dan penanda status tidak diubah.
