@@ -54,6 +54,15 @@ class CoverageTests(unittest.TestCase):
         _, errors = module.audit("\n".join(lines))
         self.assertTrue(any("duplicate Quran locus" in e for e in errors))
 
+    def test_sah_cannot_exceed_filled_candidates(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P013 |"):
+                lines[i] = line.replace("| 0/16 |", "| 5/16 |")
+                break
+        _, errors = module.audit("\n".join(lines))
+        self.assertTrue(any("Sah count exceeds filled candidates" in e for e in errors))
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
