@@ -1457,3 +1457,11 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Klasifikasi berdasarkan judul halaman, bukan bukti desain pembelajaran yang telah disetujui. Jangan otomatis menghapus pengulangan.
 - Tindakan selanjutnya: tetapkan apakah P022 memerlukan contoh unik, lalu pilih kandidat hanya setelah tashih ayat dan gate prasyarat.
 - Tidak ada slot atau status utama yang diubah.
+
+## Audit variasi internal P022 2026-11-03
+- Enam belas sel utama P022/K01-K16 berisi 16 frasa berbeda setelah normalisasi NFKD, penghilangan harakat, dan penyamaan variasi alif/hamzah. Tidak ditemukan duplikasi teks penuh di dalam P022 sendiri.
+- Jumlah kata per slot: K01=4, K02=3, K03=4, K04=2, K05=3, K06=3, K07=5, K08=5, K09=3, K10=5, K11=6, K12=4, K13=3, K14=4, K15=3, K16=5.
+- Rentang 2-6 kata; perbedaan panjang dan kemiripan pola perlu dinilai sebagai progresi pedagogis, bukan alasan otomatis mengganti.
+- Pengulangan yang ditemukan sebelumnya bersifat lintas halaman (orientasi, kontras, evaluasi, integrasi, remedial, murojaah), bukan duplikasi teks penuh antar-slot P022.
+- Keputusan: jangan mengganti slot hanya demi menghilangkan pengulangan lintas halaman. Tetap prioritaskan tashih rasm dan kesesuaian prasyarat.
+- Semua slot utama dan status lama tidak diubah.
