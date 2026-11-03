@@ -36,7 +36,7 @@ def audit(content):
             for index, example in enumerate(examples, 1):
                 if not example or example == "—":
                     continue
-                refs = re.findall(r"QS\s+\d{1,3}:\d{1,3}(?!\d)", example)
+                refs = re.findall(r"(?<![\w])QS\s+\d{1,3}:\d{1,3}(?![\w:])", example)
                 if len(refs) != 1 or refs[0] not in allowed_refs:
                     errors.append(f"P013 K{index:02d}: expected exactly one known Mad Farq reference")
                     continue
