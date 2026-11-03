@@ -1488,3 +1488,10 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - K14 QS An-Naml 27:3: penggalan `وَهُمْ بِالْآخِرَةِ هُمْ يُوقِنُونَ` sesuai urutan kata ayat. Sumber: https://quran.com/27/3 .
 - Ketiganya berbagi pembuka hukum ikhfa syafawi, tetapi kelanjutan kalimat berbeda. Kemiripan pedagogis tidak otomatis salah.
 - Status: RUJUKAN TERCOCOKKAN; TASHIH RASM CETAK HOLD. Tidak ada perubahan slot utama maupun status Sah.
+
+## Tashih sumber P022 batch lanjutan 2026-11-03
+- Tercocokkan dengan teks ayat Quran.com: K04 QS 6:107 (https://quran.com/6/107), K08 QS 29:22 (https://quran.com/29/22), K10 QS 2:167 (https://quran.com/2/167), K11 QS 2:102 (https://quran.com/2/102), K15 QS 6:150 (https://quran.com/6/150). Ini verifikasi kesesuaian penggalan, bukan tashih rasm final.
+- K06 QS 34:8, K07 QS 83:17, K09 QS 21:27, K16 QS 21:36: pembukaan halaman sumber pada pemeriksaan ini gagal; tetap HOLD sampai verifikasi sumber primer berhasil.
+- Pemeriksaan teks register untuk K04, K06-K11, K15-K16: 9/9 memuat pola literal mim sukun diikuti ba (مْ + ب); ini hanya pemeriksaan tekstual, bukan pengesahan tajwid atau cetak.
+- Akumulasi pemeriksaan sumber langsung pada rangkaian audit ini: 12/16 tercocokkan, 4/16 masih HOLD verifikasi sumber. Seluruh 16 slot tetap HOLD untuk tashih rasm cetak.
+- Tidak mengubah sel utama, teks ayat, maupun status yang sudah ada.
