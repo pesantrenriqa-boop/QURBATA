@@ -1551,3 +1551,10 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Identitas checksum SHA-256 paket versi 15.0 yang tercantum di situs: 227E6B1564D980F2BD09C2C35EBFB0330AC268C79A7C247CD1AB665BC635F245.
 - Rencana pemeriksaan: unduh arsip yang benar, verifikasi SHA-256 berkas, baca `aya_text_unicode`, bandingkan 16 penggalan P022 per karakter, lalu pratinjau A5 dengan font kompatibel.
 - Belum ada arsip yang diperiksa pada tahap ini. Tidak ada klaim checksum PASS atau cetak PASS. Semua sel utama dan status dipertahankan.
+
+## Manifest pemeriksaan Unicode P022 2026-11-03
+- Urutan pemeriksaan 16 slot dan ayat sumber: K01=105:4; K02=88:22; K03=50:45; K04=6:107; K05=2:8; K06=34:8; K07=83:17; K08=29:22; K09=21:27; K10=2:167; K11=2:102; K12=11:19; K13=7:45; K14=27:3; K15=6:150; K16=21:36.
+- Gate arsip: unduh dari situs resmi, catat URL dan versi, verifikasi SHA-256 aktual sebelum parsing. Status: PENDING (arsip belum diperoleh dalam tahap ini).
+- Gate Unicode: bandingkan penggalan terhadap `aya_text_unicode` pada batas kata dan urutan yang sama. Status: PENDING.
+- Gate cetak: render A5 dengan font sumber kompatibel dan periksa diakritik. Status: PENDING.
+- Larangan: jangan mengubah teks register atau mengklaim PASS hanya dari kecocokan referensi.
