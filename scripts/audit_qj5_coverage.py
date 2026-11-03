@@ -23,6 +23,14 @@ def audit(content):
         capacity = 16 if number <= 20 else 8
         examples = cells[2:2+capacity]
         filled = sum(bool(c and c != "—") for c in examples)
+        if page == "P013":
+            # Mad farq has only a small number of Quranic occurrences.
+            # Do not fill the remaining 12 slots with invented/repeated text.
+            if filled > 4:
+                errors.append("P013: more than four candidates; manually verify each distinct Quran locus before acceptance")
+            for index, example in enumerate(examples, 1):
+                if example != "—" and not any(ref in example for ref in ("QS 27:59", "QS 6:143", "QS 10:59", "QS 6:144")):
+                    errors.append(f"P013 K{index:02d}: missing an expected Mad Farq reference; requires review")
         sah = cells[-1]
         if not re.fullmatch(r"\d+/(?:16|8)", sah):
             errors.append(f"{page}: invalid Sah counter {sah!r}")
@@ -43,6 +51,7 @@ def main():
     for page, filled, capacity, empty, sah in rows:
         print(f"{page} | {filled} | {capacity} | {empty} | {sah}")
     print(f"TOTAL: {sum(x[1] for x in rows)}/{sum(x[2] for x in rows)} filled; {sum(x[3] for x in rows)} empty")
+    print("P013: 12 unfilled slots are an intentional pending curriculum exception, not permission to duplicate Quran text.")
     for error in errors:
         print("ERROR:", error, file=sys.stderr)
     print("Note: filled means nonempty candidate, NOT verified Quran text or approved Sah.")
