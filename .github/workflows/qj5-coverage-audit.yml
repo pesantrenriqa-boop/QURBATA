@@ -6,6 +6,7 @@ on:
       - 'scripts/audit_qj5_coverage.py'
       - 'tests/test_qj5_coverage.py'
       - '.github/workflows/qj5-coverage-audit.yml'
+  workflow_dispatch:
   pull_request:
     paths:
       - '02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/REGISTER_24_KELOMPOK_JILID_5.md'
