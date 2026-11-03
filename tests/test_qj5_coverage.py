@@ -75,6 +75,28 @@ class CoverageTests(unittest.TestCase):
         _, errors = module.audit("\n".join(lines))
         self.assertTrue(any("inactive K slots contain data" in e for e in errors))
 
+    def test_p013_rejects_unapproved_quran_locus(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P013 |"):
+                cells = line.split("|")
+                cells[5] = " contoh uji [KANDIDAT QS 27:590] "
+                lines[i] = "|".join(cells)
+                break
+        _, errors = module.audit("\n".join(lines))
+        self.assertTrue(any("expected exactly one known Mad Farq reference" in e for e in errors))
+
+    def test_p013_rejects_multiple_references_in_one_slot(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P013 |"):
+                cells = line.split("|")
+                cells[5] = " contoh uji [KANDIDAT QS 27:59; QS 6:143] "
+                lines[i] = "|".join(cells)
+                break
+        _, errors = module.audit("\n".join(lines))
+        self.assertTrue(any("expected exactly one known Mad Farq reference" in e for e in errors))
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
