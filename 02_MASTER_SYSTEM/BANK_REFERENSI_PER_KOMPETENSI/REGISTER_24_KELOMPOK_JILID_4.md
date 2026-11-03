@@ -1515,3 +1515,9 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Pembanding QS 6:107 https://quran.com/6/107 : K04 perlu pemeriksaan tanda mim sebelum ba dan tanwin.
 - Pembanding QS 2:8 https://quran.com/2/8 : K05 perlu pemeriksaan tanda mim sebelum ba dan sukun internal kata terakhir.
 - Keempat rujukan cocok, tetapi keputusan rasm cetak HOLD sampai standar mushaf dan font ditetapkan. Tidak ada perubahan slot utama atau status.
+
+## Audit rasm P022 K06-K10 2026-11-03
+- K08 QS 29:22, https://quran.com/29/22 : penggalan sesuai. Bentuk Utsmani sumber menampilkan mim akhir sebelum ba tanpa sukun eksplisit serta tanda sukun khas di kata berikutnya.
+- K10 QS 2:167, https://quran.com/2/167 : penggalan sesuai. Sumber menampilkan mim akhir sebelum ba tanpa sukun eksplisit dan bentuk alif kecil pada kata sesudahnya.
+- K06 QS 34:8, K07 QS 83:17, K09 QS 21:27: akses halaman sumber untuk perbandingan rasm pada tahap ini tidak berhasil; status pemeriksaan rasm HOLD. Kecocokan rujukan yang sudah tercatat sebelumnya tetap berlaku.
+- K06-K10 tetap HOLD untuk keputusan rasm cetak. Tidak ada penggantian teks, perubahan sel utama, atau pengesahan status.
