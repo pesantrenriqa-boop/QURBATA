@@ -1558,3 +1558,10 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Gate Unicode: bandingkan penggalan terhadap `aya_text_unicode` pada batas kata dan urutan yang sama. Status: PENDING.
 - Gate cetak: render A5 dengan font sumber kompatibel dan periksa diakritik. Status: PENDING.
 - Larangan: jangan mengubah teks register atau mengklaim PASS hanya dari kecocokan referensi.
+
+## Validasi metadata sumber KFGQPC P022 - 2026-11-03
+- Metadata diperiksa ulang pada https://qurancomplex.gov.sa/quran-dev/ : Hafs Unicode Uthmanic Font v15.0, pembaruan 30-09-2026, menyediakan `aya_text_unicode` dan font `kfgqpc_hafs_v3`.
+- SHA-256 yang dipublikasikan penerbit: `227E6B1564D980F2BD09C2C35EBFB0330AC268C79A7C247CD1AB665BC635F245` (nilai referensi, BUKAN hasil hash berkas lokal).
+- Pemeriksaan teknis belum dapat menyatakan checksum PASS karena arsip resmi belum tersedia di lingkungan audit. Belum ada perbandingan codepoint terhadap dataset versi 15.0.
+- Langkah penerimaan: arsip unduhan resmi -> SHA-256 sama -> ekstraksi dataset -> validasi surah/ayat dan substring kata -> laporan selisih Unicode -> tinjau render A5 -> tashih manusia.
+- Keputusan: HOLD semua slot untuk cetak. Tidak ada perubahan teks utama atau status.
