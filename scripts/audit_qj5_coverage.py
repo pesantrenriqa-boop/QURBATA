@@ -22,6 +22,9 @@ def audit(content):
         number = int(page[1:])
         capacity = 16 if number <= 20 else 8
         examples = cells[2:2+capacity]
+        inactive = cells[2+capacity:18]
+        if any(value not in ("", "—") for value in inactive):
+            errors.append(f"{page}: inactive K slots contain data; do not count or publish")
         filled = sum(bool(c and c != "—") for c in examples)
         if page == "P013":
             # Mad farq has only a small number of Quranic occurrences.
