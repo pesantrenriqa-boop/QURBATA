@@ -1495,3 +1495,11 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Pemeriksaan teks register untuk K04, K06-K11, K15-K16: 9/9 memuat pola literal mim sukun diikuti ba (مْ + ب); ini hanya pemeriksaan tekstual, bukan pengesahan tajwid atau cetak.
 - Akumulasi pemeriksaan sumber langsung pada rangkaian audit ini: 12/16 tercocokkan, 4/16 masih HOLD verifikasi sumber. Seluruh 16 slot tetap HOLD untuk tashih rasm cetak.
 - Tidak mengubah sel utama, teks ayat, maupun status yang sudah ada.
+
+## Penutupan verifikasi rujukan P022 K06 K07 K09 K16 2026-11-03
+- K06 QS 34:8: `أَمْ بِهِ جِنَّةٌ` cocok dengan urutan ayat. Sumber https://quran.com/id/saba/8-54 .
+- K07 QS 83:17: `هَٰذَا الَّذِي كُنْتُمْ بِهِ تُكَذِّبُونَ` cocok dengan penggalan ayat. Sumber https://quran.com/id/orang-orang-curang/17-23 dan https://quran.kemenag.go.id/quran/per-ayat/surah/83?from=1&to=36 .
+- K09 QS 21:27: `وَهُمْ بِأَمْرِهِ يَعْمَلُونَ` cocok dengan penggalan ayat. Sumber https://quran.com/id/para-nabi/27-91 .
+- K16 QS 21:36: `وَهُمْ بِذِكْرِ الرَّحْمَٰنِ هُمْ كَافِرُونَ` cocok dengan penggalan ayat. Sumber https://quran.com/id/para-nabi/36/translations/quran.id dan https://corpus.quran.com/grammar.jsp?chapter=21&verse=36 .
+- Akumulasi audit rujukan: 16/16 slot P022 telah dicocokkan pada tahap sebelumnya dan tahap ini; tidak berarti tashih rasm cetak final. Untuk K06-K16 khususnya, rasm Utsmani dapat menghilangkan sukun eksplisit pada mim sebelum ba; jangan memaksakan pola regex literal sebagai standar mushaf.
+- Gate berikutnya: tetapkan sumber rasm Utsmani yang konsisten, periksa simbol waqaf, hamzah, harakat, dan batas penggalan secara manual sebelum PASS cetak. Semua slot utama dan status sebelumnya tetap tidak diubah.
