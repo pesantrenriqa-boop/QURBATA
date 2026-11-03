@@ -1521,3 +1521,10 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - K10 QS 2:167, https://quran.com/2/167 : penggalan sesuai. Sumber menampilkan mim akhir sebelum ba tanpa sukun eksplisit dan bentuk alif kecil pada kata sesudahnya.
 - K06 QS 34:8, K07 QS 83:17, K09 QS 21:27: akses halaman sumber untuk perbandingan rasm pada tahap ini tidak berhasil; status pemeriksaan rasm HOLD. Kecocokan rujukan yang sudah tercatat sebelumnya tetap berlaku.
 - K06-K10 tetap HOLD untuk keputusan rasm cetak. Tidak ada penggantian teks, perubahan sel utama, atau pengesahan status.
+
+## Audit rasm lanjutan P022 K06 K07 K09 2026-11-03
+- K06 QS 34:8: pembanding https://quran.com/id/saba/8-54 menampilkan bentuk `أَم بِهِۦ جِنَّةٌۢ` sedangkan register menggunakan `أَمْ بِهِ جِنَّةٌ`. Periksa sukun mim, tanda ha, dan tanwin sebelum cetak.
+- K07 QS 83:17: pembanding https://quran.com/id/orang-orang-curang/17-27 menampilkan `كُنتُم بِهِۦ` sedangkan register menggunakan `كُنْتُمْ بِهِ`. Periksa tanda pada mim sebelum ba dan ha akhir.
+- K09 QS 21:27: pembanding https://quran.com/id/para-nabi/27-48 menampilkan `وَهُم بِأَمْرِهِۦ` sedangkan register menggunakan `وَهُمْ بِأَمْرِهِ`. Periksa mim dan tanda ha.
+- Ketiganya cocok sebagai penggalan ayat dan contoh ikhfa syafawi, tetapi belum PASS rasm cetak. Jangan mengganti teks utama sampai standar mushaf/font disahkan.
+- Semua slot utama dan status lama dipertahankan.
