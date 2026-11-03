@@ -1508,3 +1508,10 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Sumber pembanding: https://quran.com/105/4
 - Perbedaan tipografi pada mim sebelum ba, tanwin, dan mim pada kata berikutnya perlu diperiksa terhadap standar mushaf cetak.
 - Rujukan cocok; persetujuan cetak tetap HOLD. Tidak mengubah sel utama.
+
+## Audit rasm P022 K02-K05 2026-11-03
+- Pembanding QS 88:22 https://quran.com/88/22 : K02 perlu pemeriksaan tanda mim sebelum ba dan ejaan Utsmani kata terakhir.
+- Pembanding QS 50:45 https://quran.com/50/45 : K03 perlu pemeriksaan tanda mim sebelum ba, tanwin dan tanda berhenti.
+- Pembanding QS 6:107 https://quran.com/6/107 : K04 perlu pemeriksaan tanda mim sebelum ba dan tanwin.
+- Pembanding QS 2:8 https://quran.com/2/8 : K05 perlu pemeriksaan tanda mim sebelum ba dan sukun internal kata terakhir.
+- Keempat rujukan cocok, tetapi keputusan rasm cetak HOLD sampai standar mushaf dan font ditetapkan. Tidak ada perubahan slot utama atau status.
