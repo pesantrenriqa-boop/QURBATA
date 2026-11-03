@@ -38,7 +38,19 @@ class CoverageTests(unittest.TestCase):
                 lines[i] = "|".join(cells)
                 break
         _, errors = module.audit("\n".join(lines))
-        self.assertTrue(any("missing an expected Mad Farq reference" in e for e in errors))
+        self.assertTrue(any("expected exactly one known Mad Farq reference" in e for e in errors))
+
+    def test_duplicate_mad_farq_locus_rejected(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P013 |"):
+                cells = line.split("|")
+                # Duplicate the known QS 27:59 reference in K03.
+                cells[5] = " آللَّهُ خَيْرٌ [KANDIDAT QS 27:59] "
+                lines[i] = "|".join(cells)
+                break
+        _, errors = module.audit("\\n".join(lines))
+        self.assertTrue(any("duplicate Quran locus" in e for e in errors))
 
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
