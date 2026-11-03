@@ -34,3 +34,14 @@ Pemeriksaan langsung terhadap QS Al-An'am 6:143–144 pada Quran.com membuktikan
 **Klasifikasi keputusan:** VALIDASI SUMBER TERBATAS (dua lokasi ayat benar), **DUPLIKASI LAFaz UNTUK REVIEW PEDAGOGIS** (bukan dua pola teks unik), **BELUM TASHIH RASM/TAJWID**. Perbedaan grafem rasm Utsmani pembanding (mis. `ءَآلذَّكَرَيْنِ`) dari ejaan kandidat register (`آلذَّكَرَيْنِ`) harus ditangani melalui pemeriksaan font dan mushaf Hafs; jangan normalisasi otomatis.
 
 **Rekomendasi:** pertahankan kedua lokasi sebagai konteks pembanding bila disetujui penyusun kurikulum, tetapi jangan klaim empat frasa unik atau menaikkan Sah sebelum tashih. Seluruh 12 slot kosong tetap dibiarkan kosong.
+
+## Verifikasi sumber eksternal K01 dan K05 — 2026-11-03
+
+| Slot | Sumber pembanding | Hasil pemeriksaan terbatas |
+|---|---|---|
+| K01 | QS An-Naml 27:59 — https://quran.com/27:59 | Frasa `ءَآللَّهُ خَيْرٌ أَمَّا يُشْرِكُونَ` terdapat pada ayat tersebut; rujukan kandidat benar |
+| K05 | QS Yunus 10:59 — https://quran.com/id/yunus/59-60 | Frasa `قُلْ ءَآللَّهُ أَذِنَ لَكُمْ` terdapat pada ayat tersebut; rujukan kandidat benar |
+
+**Catatan rasm:** register memakai `آللَّهُ`, sedangkan tampilan mushaf pembanding menampilkan bentuk `ءَآللَّهُ`. Perbedaan ini tidak boleh diselesaikan dengan penggantian massal: pemeriksa harus menetapkan standar rasm, font Utsmani, riwayat Hafs, dan pemeriksaan tampilan cetak. Pembuktian sumber ayat **bukan** pengesahan semua aspek bacaan.
+
+**Rekap P013:** keempat rujukan K01/K02/K05/K07 telah memperoleh pemeriksaan sumber terbatas; K02 dan K07 memakai lafaz yang sama pada dua konteks ayat berbeda. Masih ada 12 slot kosong. Seluruh Sah tetap `0/16` sampai pemeriksa ahli menyetujui tashih.
