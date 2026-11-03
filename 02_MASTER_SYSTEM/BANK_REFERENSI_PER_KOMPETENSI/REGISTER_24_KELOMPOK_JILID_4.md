@@ -1465,3 +1465,11 @@ Ayat مَالِكِ يَوْمِ الدِّينِ tidak memiliki alif-lam pada k
 - Pengulangan yang ditemukan sebelumnya bersifat lintas halaman (orientasi, kontras, evaluasi, integrasi, remedial, murojaah), bukan duplikasi teks penuh antar-slot P022.
 - Keputusan: jangan mengganti slot hanya demi menghilangkan pengulangan lintas halaman. Tetap prioritaskan tashih rasm dan kesesuaian prasyarat.
 - Semua slot utama dan status lama tidak diubah.
+
+## Daftar antrean tashih sumber P022 2026-11-03
+- Pemeriksaan metadata 16 sel utama P022: seluruhnya memiliki rujukan QS; seluruhnya masih memuat penanda perlunya tashih rasm/mushaf atau pemeriksaan tambahan. Penanda tersebut bukan bukti bahwa teks salah.
+- Prioritas 1: K01 QS 105:4, K02 QS 88:22, K03 QS 50:45, K05 QS 2:8 (kaitannya dengan pengulangan lintas halaman).
+- Prioritas 2: K12 QS 11:19, K13 QS 7:45, K14 QS 27:3 (kemiripan pola kalimat; cek kutipan dan keperluan variasi).
+- Prioritas 3: K04 QS 6:107, K06 QS 34:8, K07 QS 83:17, K08 QS 29:22, K09 QS 21:27, K10 QS 2:167, K11 QS 2:102, K15 QS 6:150, K16 QS 21:36.
+- Gate setiap slot: cocokkan ayat sumber primer, batas penggalan, rasm dan tanda baca mushaf standar, hukum tajwid, serta prasyarat. Catat PASS/HOLD secara terpisah sebelum mengubah sel utama.
+- Status: daftar kerja disusun; belum ada tashih primer baru yang dilakukan pada tahap ini. Sel utama dan status lama tidak diubah.
