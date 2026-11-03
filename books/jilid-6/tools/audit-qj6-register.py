@@ -4,6 +4,7 @@ import csv
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
+import unicodedata
 
 CSV_PATH = Path(__file__).with_name("QJ6-slots.csv")
 EXPECTED_FIELDS = [
@@ -37,8 +38,11 @@ def audit(path=CSV_PATH):
     if missing:
         errors.append(f"Missing expected slot IDs: {missing}")
     empty_by_page = defaultdict(int)
+    text_index = defaultdict(list)
     for r in rows:
         ident, status = r["slot_id"], r["review_status"]
+        if r["text_uthmani"].strip():
+            text_index[unicodedata.normalize("NFC", r["text_uthmani"].strip())].append(ident)
         if r["page_id"] != ident[:8]:
             errors.append(f"{ident}: page_id mismatch")
         if status == "EMPTY":
@@ -57,8 +61,12 @@ def audit(path=CSV_PATH):
                 warnings.append(f"{ident}: no explicit waqf-la glyph in text")
         if r["page_id"] in ("QJ6-P018", "QJ6-P036") and status != "EMPTY":
             warnings.append(f"{ident}: verify official hafalan unit approval")
+    duplicate_text_groups = [slot_ids for slot_ids in text_index.values() if len(slot_ids) > 1]
+    for slot_ids in duplicate_text_groups:
+        warnings.append("Repeated text (review intentional reuse): " + ", ".join(slot_ids))
     return {
         "rows": len(rows),
+        "duplicate_text_groups": len(duplicate_text_groups),
         "filled": len(rows) - sum(empty_by_page.values()),
         "empty": sum(empty_by_page.values()),
         "empty_by_page": dict(sorted(empty_by_page.items())),
