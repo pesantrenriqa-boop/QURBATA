@@ -28,9 +28,18 @@ def audit(content):
             # Do not fill the remaining 12 slots with invented/repeated text.
             if filled > 4:
                 errors.append("P013: more than four candidates; manually verify each distinct Quran locus before acceptance")
+            allowed_refs = ("QS 27:59", "QS 6:143", "QS 10:59", "QS 6:144")
+            seen_refs = set()
             for index, example in enumerate(examples, 1):
-                if example != "—" and not any(ref in example for ref in ("QS 27:59", "QS 6:143", "QS 10:59", "QS 6:144")):
-                    errors.append(f"P013 K{index:02d}: missing an expected Mad Farq reference; requires review")
+                if not example or example == "—":
+                    continue
+                refs = [ref for ref in allowed_refs if ref in example]
+                if len(refs) != 1:
+                    errors.append(f"P013 K{index:02d}: expected exactly one known Mad Farq reference")
+                    continue
+                if refs[0] in seen_refs:
+                    errors.append(f"P013 K{index:02d}: duplicate Quran locus {refs[0]}")
+                seen_refs.add(refs[0])
         sah = cells[-1]
         if not re.fullmatch(r"\d+/(?:16|8)", sah):
             errors.append(f"{page}: invalid Sah counter {sah!r}")
