@@ -49,7 +49,7 @@ class CoverageTests(unittest.TestCase):
                 cells[5] = " آللَّهُ خَيْرٌ [KANDIDAT QS 27:59] "
                 lines[i] = "|".join(cells)
                 break
-        _, errors = module.audit("\\n".join(lines))
+        _, errors = module.audit("\n".join(lines))
         self.assertTrue(any("duplicate Quran locus" in e for e in errors))
 
     def test_missing_page_rejected(self):
