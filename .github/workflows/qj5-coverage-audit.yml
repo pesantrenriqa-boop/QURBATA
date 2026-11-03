@@ -1,0 +1,22 @@
+name: QJ5 coverage audit
+on:
+  push:
+    paths:
+      - '02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/REGISTER_24_KELOMPOK_JILID_5.md'
+      - 'scripts/audit_qj5_coverage.py'
+      - '.github/workflows/qj5-coverage-audit.yml'
+  pull_request:
+    paths:
+      - '02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/REGISTER_24_KELOMPOK_JILID_5.md'
+      - 'scripts/audit_qj5_coverage.py'
+      - '.github/workflows/qj5-coverage-audit.yml'
+permissions:
+  contents: read
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate 40-page Jilid 5 register coverage
+        run: python3 scripts/audit_qj5_coverage.py
