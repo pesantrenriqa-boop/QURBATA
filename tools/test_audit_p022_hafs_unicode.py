@@ -87,7 +87,9 @@ class CheckerTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             root = Path(d)
             archive = root / "synthetic.zip"
-            archive.write_bytes(b"synthetic fixture")
+            import zipfile
+            with zipfile.ZipFile(archive, "w") as z:
+                z.writestr("verses.csv", "sura_no,aya_no,aya_text_unicode\\n105,4,SLOT_01\\n")
             data = root / "verses.csv"
             data.write_text("sura_no,aya_no,aya_text_unicode\n105,4,SLOT_01\n", encoding="utf-8")
             register = root / "register.md"
