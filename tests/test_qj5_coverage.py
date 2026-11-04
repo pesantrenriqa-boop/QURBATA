@@ -130,6 +130,28 @@ class CoverageTests(unittest.TestCase):
         _, errors = module.audit("\n".join(lines))
         self.assertTrue(any("expected exactly one known Mad Farq reference" in e for e in errors))
 
+    def test_repeated_phrases_are_advisory_only(self):
+        groups = module.repeated_phrases(self.original)
+        self.assertTrue(any(page == "P016" and slots == ["K03", "K04"]
+                            for page, _, slots in groups))
+        self.assertTrue(any(page == "P013" and slots == ["K02", "K07"]
+                            for page, _, slots in groups))
+        _, errors = module.audit(self.original)
+        self.assertFalse(errors, errors)
+
+    def test_repeated_phrases_ignore_inactive_and_review_notes(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P040 |"):
+                cells = line.split("|")
+                cells[3] = "نَصٌّ [review A]"
+                cells[4] = "نَصٌّ [review B]"
+                lines[i] = "|".join(cells)
+                break
+        groups = module.repeated_phrases("\n".join(lines))
+        self.assertTrue(any(page == "P040" and slots == ["K01", "K02"]
+                            for page, _, slots in groups))
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
