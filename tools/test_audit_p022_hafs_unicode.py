@@ -73,5 +73,10 @@ class CheckerTests(unittest.TestCase):
             self.assertTrue(cells[-1].startswith("SLOT_16 "))
             self.assertIn('match.split("|")[3:19]', SCRIPT.read_text(encoding="utf-8"))
 
+    def test_reference_guard_present(self):
+        source = SCRIPT.read_text(encoding="utf-8")
+        self.assertIn('re.search(r"\\bQS\\s+', source)
+        self.assertIn("source reference mismatch", source)
+
 if __name__ == "__main__":
     unittest.main()
