@@ -63,7 +63,7 @@ def repeated_phrases(content):
     """Advisory only: exact same-page phrases, ignoring bracketed review notes."""
     groups = {}
     for line in content.splitlines():
-        if not re.match(r"^\\| P\\d{3} \\|", line):
+        if not re.match(r"^\| P\d{3} \|", line):
             continue
         cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
         if len(cells) != 19:
