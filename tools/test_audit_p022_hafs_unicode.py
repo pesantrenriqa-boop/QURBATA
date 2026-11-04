@@ -134,14 +134,14 @@ class CheckerTests(unittest.TestCase):
         spec.loader.exec_module(module)
         with tempfile.TemporaryDirectory() as d:
             root = Path(d)
-            csv_bytes = b"sura_no,aya_no,aya_text_unicode\\n105,4,first\\n105,4,second\\n"
+            csv_bytes = b"sura_no,aya_no,aya_text_unicode\n105,4,first\n105,4,second\n"
             archive = root / "fixture.zip"
             with zipfile.ZipFile(archive, "w") as z:
                 z.writestr("verses.csv", csv_bytes)
             data = root / "verses.csv"
             data.write_bytes(csv_bytes)
             register = root / "register.md"
-            register.write_text("| P022 | Ikhfa syafawi |\\n", encoding="utf-8")
+            register.write_text("| P022 | Ikhfa syafawi |\n", encoding="utf-8")
             report = root / "report.json"
             argv = ["checker", "--archive", str(archive), "--data", str(data),
                     "--register", str(register), "--output", str(report)]
