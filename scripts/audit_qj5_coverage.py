@@ -80,6 +80,26 @@ def repeated_phrases(content):
     return [(page, phrase, slots) for (page, phrase), slots in groups.items()
             if len(slots) > 1]
 
+def repeated_quran_loci(content):
+    """Advisory only: repeated QS references within one page."""
+    groups = {}
+    for line in content.splitlines():
+        if not re.match(r"^\| P\d{3} \|", line):
+            continue
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        if len(cells) != 19:
+            continue
+        page = cells[0]
+        capacity = 16 if int(page[1:]) <= 20 else 8
+        for index, value in enumerate(cells[2:2+capacity], 1):
+            if not value or value == "—":
+                continue
+            refs = set(re.findall(r"QS\s+\d{1,3}:\d{1,3}(?:[–-]\d{1,3})?", value))
+            for reference in refs:
+                groups.setdefault((page, reference), []).append(f"K{index:02d}")
+    return [(page, reference, slots) for (page, reference), slots in groups.items()
+            if len(slots) > 1]
+
 def main():
     if not SOURCE.is_file():
         print(f"ERROR missing {SOURCE}", file=sys.stderr)
@@ -96,6 +116,10 @@ def main():
     print(f"ADVISORY: {len(duplicates)} exact same-page phrase groups (not CI errors).")
     for page, phrase, slots in duplicates:
         print(f"ADVISORY {page} {','.join(slots)}: {phrase}")
+    source_duplicates = repeated_quran_loci(SOURCE.read_text(encoding="utf-8"))
+    print(f"ADVISORY: {len(source_duplicates)} repeated same-page Quran reference groups.")
+    for page, reference, slots in source_duplicates:
+        print(f"ADVISORY SOURCE {page} {','.join(slots)}: {reference}")
     print("Note: filled means nonempty candidate, NOT verified Quran text or approved Sah.")
     return 1 if errors else 0
 
