@@ -43,12 +43,12 @@ def main():
     match = next((x for x in lines if x.startswith("| P022 | Ikhfa syafawi |")), None)
     if match is None:
         sys.exit("HOLD: main P022 row not found")
-    cells = [x.strip() for x in match.split("|")[3:19]]
+    cells = [x.strip() for x in match.split("|")[2:18]]
     if len(cells) != 16:
         sys.exit("HOLD: expected 16 slots")
     results = []
     for i, (cell, ref) in enumerate(zip(cells, REFERENCES), 1):
-        passage = cell.split(" [", 1)[0].strip()
+        passage = cell.split(" [", 1)[0].strip()\n        if not passage or passage == "—":\n            sys.exit(f"HOLD: empty or placeholder slot K{i:02d}")
         verse = index.get(tuple(map(int, ref.split(":"))))
         exact = verse is not None and passage in verse
         results.append({"slot": f"K{i:02d}", "reference": ref, "exact_unicode_substring": exact,
