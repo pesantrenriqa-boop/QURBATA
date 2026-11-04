@@ -163,6 +163,26 @@ class CoverageTests(unittest.TestCase):
         _, errors = module.audit(self.original)
         self.assertFalse(errors, errors)
 
+    def test_source_advisory_ignores_review_note_cross_references(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P040 |"):
+                cells = line.split("|")
+                cells[3] = "نَصٌّ [KANDIDAT QS 17:70; AUDIT: lihat QS 2:2]"
+                cells[4] = "نَصٌّ آخر [KANDIDAT QS 2:3; AUDIT: lihat QS 2:2]"
+                lines[i] = "|".join(cells)
+                break
+        groups = module.repeated_quran_loci("\n".join(lines))
+        self.assertFalse(any(page == "P040" and reference == "QS 2:2"
+                             for page, reference, _ in groups))
+
+    def test_source_advisory_is_not_a_sah_decision(self):
+        groups = module.repeated_quran_loci(self.original)
+        self.assertTrue(groups)
+        rows, errors = module.audit(self.original)
+        self.assertFalse(errors, errors)
+        self.assertEqual(next(row for row in rows if row[0] == "P013")[4], "0/16")
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
