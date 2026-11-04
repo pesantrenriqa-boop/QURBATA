@@ -67,11 +67,11 @@ class CheckerTests(unittest.TestCase):
                             " | — | — | 0/24 |\n", encoding="utf-8")
             row = next(line for line in path.read_text(encoding="utf-8").splitlines()
                        if line.startswith("| P022 | Ikhfa syafawi |"))
-            cells = [value.strip() for value in row.split("|")[2:18]]
+            cells = [value.strip() for value in row.split("|")[3:19]]
             self.assertEqual(len(cells), 16)
             self.assertTrue(cells[0].startswith("SLOT_01 "))
             self.assertTrue(cells[-1].startswith("SLOT_16 "))
-            self.assertIn('match.split("|")[2:18]', SCRIPT.read_text(encoding="utf-8"))
+            self.assertIn('match.split("|")[3:19]', SCRIPT.read_text(encoding="utf-8"))
 
 if __name__ == "__main__":
     unittest.main()
