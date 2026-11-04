@@ -59,6 +59,27 @@ def audit(content):
         errors.append(f"missing pages: {sorted(expected-seen)}; unexpected: {sorted(seen-expected)}")
     return results, errors
 
+def repeated_phrases(content):
+    """Advisory only: exact same-page phrases, ignoring bracketed review notes."""
+    groups = {}
+    for line in content.splitlines():
+        if not re.match(r"^\\| P\\d{3} \\|", line):
+            continue
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        if len(cells) != 19:
+            continue
+        page = cells[0]
+        capacity = 16 if int(page[1:]) <= 20 else 8
+        for index, value in enumerate(cells[2:2+capacity], 1):
+            if not value or value == "—":
+                continue
+            phrase = value.split(" [", 1)[0].strip()
+            if not phrase:
+                continue
+            groups.setdefault((page, phrase), []).append(f"K{index:02d}")
+    return [(page, phrase, slots) for (page, phrase), slots in groups.items()
+            if len(slots) > 1]
+
 def main():
     if not SOURCE.is_file():
         print(f"ERROR missing {SOURCE}", file=sys.stderr)
@@ -71,6 +92,10 @@ def main():
     print("P013: 12 unfilled slots are an intentional pending curriculum exception, not permission to duplicate Quran text.")
     for error in errors:
         print("ERROR:", error, file=sys.stderr)
+    duplicates = repeated_phrases(SOURCE.read_text(encoding="utf-8"))
+    print(f"ADVISORY: {len(duplicates)} exact same-page phrase groups (not CI errors).")
+    for page, phrase, slots in duplicates:
+        print(f"ADVISORY {page} {','.join(slots)}: {phrase}")
     print("Note: filled means nonempty candidate, NOT verified Quran text or approved Sah.")
     return 1 if errors else 0
 
