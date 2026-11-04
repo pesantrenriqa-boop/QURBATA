@@ -194,6 +194,34 @@ class CoverageTests(unittest.TestCase):
                             and slots == ["K03", "K06"]
                             for page, reference, slots in source_groups))
 
+    def test_source_advisory_does_not_count_bare_qs_in_notes(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P040 |"):
+                cells = line.split("|")
+                cells[3] = "نَصٌّ [AUDIT: QS 2:2; tanpa label KANDIDAT]"
+                cells[4] = "نَصٌّ آخر [AUDIT: QS 2:2; tanpa label KANDIDAT]"
+                lines[i] = "|".join(cells)
+                break
+        groups = module.repeated_quran_loci("\n".join(lines))
+        self.assertFalse(any(page == "P040" and reference == "QS 2:2"
+                             for page, reference, _ in groups))
+
+    def test_source_advisory_does_not_read_inactive_slots(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P040 |"):
+                cells = line.split("|")
+                cells[11] = "uji [KANDIDAT QS 2:2]"
+                cells[12] = "uji [KANDIDAT QS 2:2]"
+                lines[i] = "|".join(cells)
+                break
+        groups = module.repeated_quran_loci("\n".join(lines))
+        self.assertFalse(any(page == "P040" and reference == "QS 2:2"
+                             for page, reference, _ in groups))
+        _, errors = module.audit("\n".join(lines))
+        self.assertTrue(any("inactive K slots" in e for e in errors))
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
