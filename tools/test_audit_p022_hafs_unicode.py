@@ -44,5 +44,16 @@ class CheckerTests(unittest.TestCase):
         spec.loader.exec_module(module)
         self.assertRegex(module.EXPECTED_SHA256, r"^[0-9a-f]{64}$")
 
+    def test_sha256_computes_known_fixture(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("checker", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "fixture.bin"
+            path.write_bytes(b"abc")
+            self.assertEqual(module.sha256(path),
+                             "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad")
+
 if __name__ == "__main__":
     unittest.main()
