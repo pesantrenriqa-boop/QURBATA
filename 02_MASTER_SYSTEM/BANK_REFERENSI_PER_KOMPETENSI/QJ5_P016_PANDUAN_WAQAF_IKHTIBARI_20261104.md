@@ -37,3 +37,17 @@ Tanggal 2026-11-04. **DRAF PEDAGOGIS, BELUM TASHIH AHLI, BUKAN MATERI SIAP CETAK
 - [ ] Jangan menaikkan Sah atau mengubah kutipan register hanya karena panduan ini tersedia.
 
 **Catatan keselamatan konten:** kata sasaran dalam tabel adalah *metadata instruksional*, bukan teks Al-Qur'an pengganti. Dilarang menyisipkan tanda berhenti ke dalam teks mushaf tanpa proses desain/tashih.
+
+## Keputusan operasional sementara untuk tiga pasangan identik
+
+Keputusan di bawah adalah **penugasan fungsi latihan sementara**, bukan izin mengesahkan bacaan atau menambah jumlah contoh unik. Kutipan Arab pada register tetap apa adanya.
+
+| Pasangan | Slot pertama | Slot kedua | Bukti yang harus berbeda |
+|---|---|---|---|
+| K03 / K04 — `هَٰذَا الْبَيْتِ` | K03: **identifikasi** huruf lin dan posisi berhenti pada الْبَيْتِ | K04: **perbandingan** bacaan wasal vs waqaf pada teks yang sama | K03: penandaan; K04: dua rekaman/catatan guru |
+| K07 / K08 — `لَا رَيْبَ فِيهِ` | K07: **identifikasi** bahwa target رَيْبَ berada di tengah kutipan | K08: **uji waqaf ikhtibari** dan ibtida' ulang yang disahkan guru | K07: lokasi target; K08: praktik berhenti dan melanjutkan |
+| K11 / K13 — `وَجَاءَتْ سَكْرَةُ الْمَوْتِ` | K11: **identifikasi** kata الْمَوْتِ dan hukum saat waqaf | K13: **asesmen transfer** tanpa petunjuk kata sasaran pada lembar siswa | K11: penjelasan; K13: performa mandiri |
+
+**Aturan pencatatan:** 6 slot terisi tetap 6 kandidat administrasi, tetapi hanya **3 kutipan identik yang berbeda secara tekstual** di antara pasangan tersebut. Bila tim kurikulum menghendaki seluruh 16 slot berbeda lafaz, ketiga slot kedua (K04, K08, K13) berstatus **perlu penggantian setelah tashih**; jangan mengganti dengan ayat yang belum diverifikasi. Jika fungsi latihan berjenjang disetujui, ketiganya dapat dipertahankan sebagai pengulangan yang disengaja dengan label tugas berbeda.
+
+**Gerbang keputusan:** pemeriksa Al-Qur'an menyetujui rasm dan titik waqaf; penyusun kurikulum menyetujui tujuan ganda; guru menguji instruksi di kelas; barulah status slot ditinjau. Sampai itu terjadi, semua Sah tetap nol.
