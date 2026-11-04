@@ -183,6 +183,17 @@ class CoverageTests(unittest.TestCase):
         self.assertFalse(errors, errors)
         self.assertEqual(next(row for row in rows if row[0] == "P013")[4], "0/16")
 
+    def test_current_duplicate_baseline_requires_review_not_auto_replacement(self):
+        # Snapshot of advisory group counts for the current 40-page register.
+        # Any future change must be reviewed; counts are not acceptance criteria.
+        text_groups = module.repeated_phrases(self.original)
+        source_groups = module.repeated_quran_loci(self.original)
+        self.assertEqual(len(text_groups), 9)
+        self.assertEqual(len(source_groups), 18)
+        self.assertTrue(any(page == "P040" and reference == "QS 17:70"
+                            and slots == ["K03", "K06"]
+                            for page, reference, slots in source_groups))
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
