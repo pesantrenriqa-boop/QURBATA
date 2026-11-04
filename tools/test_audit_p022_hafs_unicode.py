@@ -78,5 +78,31 @@ class CheckerTests(unittest.TestCase):
         self.assertIn('re.search(r"\\bQS\\s+', source)
         self.assertIn("source reference mismatch", source)
 
+    def test_reference_mismatch_fails_closed_with_verified_fixture(self):
+        from unittest.mock import patch
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("checker", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            archive = root / "synthetic.zip"
+            archive.write_bytes(b"synthetic fixture")
+            data = root / "verses.csv"
+            data.write_text("sura_no,aya_no,aya_text_unicode\\n105,4,SLOT_01\\n", encoding="utf-8")
+            register = root / "register.md"
+            slots = [f"SLOT_{i:02d} [KANDIDAT QS {ref}]" for i, ref in enumerate(module.REFERENCES, 1)]
+            slots[0] = "SLOT_01 [KANDIDAT QS 1:1]"
+            register.write_text("| P022 | Ikhfa syafawi | " + " | ".join(slots) + " | — |\\n", encoding="utf-8")
+            output = root / "report.json"
+            argv = ["checker", "--archive", str(archive), "--data", str(data),
+                    "--register", str(register), "--output", str(output)]
+            with patch.object(module, "sha256", return_value=module.EXPECTED_SHA256):
+                with patch.object(sys, "argv", argv):
+                    with self.assertRaises(SystemExit) as error:
+                        module.main()
+            self.assertIn("source reference mismatch at K01", str(error.exception))
+            self.assertFalse(output.exists())
+
 if __name__ == "__main__":
     unittest.main()
