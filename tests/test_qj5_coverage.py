@@ -152,6 +152,17 @@ class CoverageTests(unittest.TestCase):
         self.assertTrue(any(page == "P040" and slots == ["K01", "K02"]
                             for page, _, slots in groups))
 
+    def test_repeated_quran_loci_are_advisory(self):
+        groups = module.repeated_quran_loci(self.original)
+        self.assertTrue(any(page == "P016" and reference == "QS 106:3"
+                            and {"K03", "K04", "K05"}.issubset(set(slots))
+                            for page, reference, slots in groups))
+        self.assertTrue(any(page == "P011" and reference == "QS 80:33"
+                            and {"K04", "K12"}.issubset(set(slots))
+                            for page, reference, slots in groups))
+        _, errors = module.audit(self.original)
+        self.assertFalse(errors, errors)
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
