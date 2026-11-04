@@ -6,6 +6,7 @@ import hashlib
 import json
 import re
 import sys
+import zipfile
 from pathlib import Path
 
 EXPECTED_SHA256 = "227e6b1564d980f2bd09c2c35ebfb0330ac268c79a7c247cd1ab665bc635f245"
@@ -17,6 +18,25 @@ def sha256(path):
         for chunk in iter(lambda: f.read(1024 * 1024), b""):
             h.update(chunk)
     return h.hexdigest()
+
+def verify_dataset_in_archive(archive, data):
+    """Reject extracted files not byte-identical to a member of the verified ZIP."""
+    if not zipfile.is_zipfile(archive):
+        sys.exit("HOLD: archive is not ZIP; dataset provenance cannot be established")
+    digest = sha256(data)
+    with zipfile.ZipFile(archive) as z:
+        for info in z.infolist():
+            if info.is_dir():
+                continue
+            if info.file_size != data.stat().st_size:
+                continue
+            h = hashlib.sha256()
+            with z.open(info) as source:
+                for chunk in iter(lambda: source.read(1024 * 1024), b""):
+                    h.update(chunk)
+            if h.hexdigest() == digest:
+                return info.filename
+    sys.exit("HOLD: supplied dataset is not byte-identical to a member of verified archive")
 
 def read_rows(path):
     with open(path, encoding="utf-8-sig", newline="") as f:
@@ -37,6 +57,7 @@ def main():
     digest = sha256(a.archive)
     if digest.lower() != EXPECTED_SHA256:
         sys.exit("HOLD: SHA-256 mismatch; refusing to compare unverified source")
+    source_member = verify_dataset_in_archive(a.archive, a.data)
     rows = read_rows(a.data)
     index = {(int(r["sura_no"]), int(r["aya_no"])): r["aya_text_unicode"] for r in rows}
     lines = a.register.read_text(encoding="utf-8").splitlines()
@@ -59,7 +80,7 @@ def main():
         results.append({"slot": f"K{i:02d}", "reference": ref, "exact_unicode_substring": exact,
                         "source_present": verse is not None, "status": "EXACT_MATCH" if exact else "HOLD_REVIEW"})
     a.output.parent.mkdir(parents=True, exist_ok=True)
-    a.output.write_text(json.dumps({"sha256_verified": True, "slots": results}, ensure_ascii=False, indent=2), encoding="utf-8")
+    a.output.write_text(json.dumps({"sha256_verified": True, "archive_member": source_member, "slots": results}, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Report saved: {a.output}; exact matches: {sum(x['exact_unicode_substring'] for x in results)}/16")
     print("Exact substring matching is a screening gate, not final rasm or print approval.")
 
