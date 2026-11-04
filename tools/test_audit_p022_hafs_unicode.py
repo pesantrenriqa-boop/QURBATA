@@ -104,5 +104,24 @@ class CheckerTests(unittest.TestCase):
             self.assertIn("source reference mismatch at K01", str(error.exception))
             self.assertFalse(output.exists())
 
+    def test_dataset_must_match_member_of_verified_zip(self):
+        import importlib.util
+        import zipfile
+        spec = importlib.util.spec_from_file_location("checker", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            archive = root / "synthetic.zip"
+            with zipfile.ZipFile(archive, "w") as z:
+                z.writestr("official.csv", "sura_no,aya_no,aya_text_unicode\\n")
+            data = root / "source.csv"
+            data.write_text("sura_no,aya_no,aya_text_unicode\\n", encoding="utf-8")
+            self.assertEqual(module.verify_dataset_in_archive(archive, data), "official.csv")
+            data.write_text("altered", encoding="utf-8")
+            with self.assertRaises(SystemExit) as error:
+                module.verify_dataset_in_archive(archive, data)
+            self.assertIn("not byte-identical", str(error.exception))
+
 if __name__ == "__main__":
     unittest.main()
