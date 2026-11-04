@@ -55,5 +55,23 @@ class CheckerTests(unittest.TestCase):
             self.assertEqual(module.sha256(path),
                              "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad")
 
+    def test_p022_column_offset_matches_register_layout(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("checker", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "register.md"
+            slots = [f"SLOT_{i:02d} [KANDIDAT QS 1:1]" for i in range(1, 17)]
+            path.write_text("| P022 | Ikhfa syafawi | " + " | ".join(slots) +
+                            " | — | — | 0/24 |\n", encoding="utf-8")
+            row = next(line for line in path.read_text(encoding="utf-8").splitlines()
+                       if line.startswith("| P022 | Ikhfa syafawi |"))
+            cells = [value.strip() for value in row.split("|")[2:18]]
+            self.assertEqual(len(cells), 16)
+            self.assertTrue(cells[0].startswith("SLOT_01 "))
+            self.assertTrue(cells[-1].startswith("SLOT_16 "))
+            self.assertIn('match.split("|")[2:18]', SCRIPT.read_text(encoding="utf-8"))
+
 if __name__ == "__main__":
     unittest.main()
