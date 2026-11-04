@@ -89,7 +89,7 @@ class CheckerTests(unittest.TestCase):
             archive = root / "synthetic.zip"
             import zipfile
             with zipfile.ZipFile(archive, "w") as z:
-                z.writestr("verses.csv", "sura_no,aya_no,aya_text_unicode\\n105,4,SLOT_01\\n")
+                z.writestr("verses.csv", "sura_no,aya_no,aya_text_unicode\n105,4,SLOT_01\n")
             data = root / "verses.csv"
             data.write_text("sura_no,aya_no,aya_text_unicode\n105,4,SLOT_01\n", encoding="utf-8")
             register = root / "register.md"
