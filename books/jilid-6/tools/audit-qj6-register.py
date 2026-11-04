@@ -61,12 +61,39 @@ def audit(path=CSV_PATH):
                 warnings.append(f"{ident}: no explicit waqf-la glyph in text")
         if r["page_id"] in ("QJ6-P018", "QJ6-P036") and status != "EMPTY":
             warnings.append(f"{ident}: verify official hafalan unit approval")
+    # Internal source references must exist and preserve the excerpt verbatim.
+    # References to later pages are curricular review flags, not data errors.
+    forward_references = []
+    for r in rows:
+        source = r["source_id"].strip()
+        if not source.startswith("QJ6-P"):
+            continue
+        ident = r["slot_id"]
+        target = index.get(source)
+        if target is None:
+            errors.append(f"{ident}: internal source {source} not found")
+            continue
+        if r["text_uthmani"].strip() and (
+            unicodedata.normalize("NFC", r["text_uthmani"].strip())
+            != unicodedata.normalize("NFC", target["text_uthmani"].strip())
+        ):
+            warnings.append(f"{ident}: internal source text differs from {source}")
+        try:
+            own_page = int(r["page_id"].split("-P")[1])
+            source_page = int(target["page_id"].split("-P")[1])
+        except (IndexError, ValueError):
+            errors.append(f"{ident}: invalid page number in internal source mapping")
+            continue
+        if source_page > own_page:
+            forward_references.append({"slot_id": ident, "source_id": source})
+            warnings.append(f"{ident}: cites later-page source {source}; review prerequisites")
     duplicate_text_groups = [slot_ids for slot_ids in text_index.values() if len(slot_ids) > 1]
     for slot_ids in duplicate_text_groups:
         warnings.append("Repeated text (review intentional reuse): " + ", ".join(slot_ids))
     return {
         "rows": len(rows),
         "duplicate_text_groups": len(duplicate_text_groups),
+        "forward_references": forward_references,
         "filled": len(rows) - sum(empty_by_page.values()),
         "empty": sum(empty_by_page.values()),
         "empty_by_page": dict(sorted(empty_by_page.items())),
