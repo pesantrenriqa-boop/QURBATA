@@ -99,7 +99,7 @@ class CheckerTests(unittest.TestCase):
             output = root / "report.json"
             argv = ["checker", "--archive", str(archive), "--data", str(data),
                     "--register", str(register), "--output", str(output)]
-            with patch.object(module, "sha256", return_value=module.EXPECTED_SHA256):
+            with patch.object(module, "EXPECTED_SHA256", module.sha256(archive)):
                 with patch.object(sys, "argv", argv):
                     with self.assertRaises(SystemExit) as error:
                         module.main()
@@ -145,7 +145,7 @@ class CheckerTests(unittest.TestCase):
             report = root / "report.json"
             argv = ["checker", "--archive", str(archive), "--data", str(data),
                     "--register", str(register), "--output", str(report)]
-            with patch.object(module, "sha256", return_value=module.EXPECTED_SHA256):
+            with patch.object(module, "EXPECTED_SHA256", module.sha256(archive)):
                 with patch.object(sys, "argv", argv):
                     with self.assertRaises(SystemExit) as error:
                         module.main()
