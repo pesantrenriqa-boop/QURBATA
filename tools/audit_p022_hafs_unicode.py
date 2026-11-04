@@ -59,7 +59,18 @@ def main():
         sys.exit("HOLD: SHA-256 mismatch; refusing to compare unverified source")
     source_member = verify_dataset_in_archive(a.archive, a.data)
     rows = read_rows(a.data)
-    index = {(int(r["sura_no"]), int(r["aya_no"])): r["aya_text_unicode"] for r in rows}
+    index = {}
+    for row in rows:
+        try:
+            key = (int(row["sura_no"]), int(row["aya_no"]))
+            value = row["aya_text_unicode"]
+        except (KeyError, TypeError, ValueError) as exc:
+            sys.exit(f"HOLD: invalid source dataset row: {exc}")
+        if not isinstance(value, str) or not value.strip():
+            sys.exit(f"HOLD: missing Unicode verse at {key}")
+        if key in index:
+            sys.exit(f"HOLD: duplicate verse reference in dataset: {key}")
+        index[key] = value
     lines = a.register.read_text(encoding="utf-8").splitlines()
     match = next((x for x in lines if x.startswith("| P022 | Ikhfa syafawi |")), None)
     if match is None:
