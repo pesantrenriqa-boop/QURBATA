@@ -34,3 +34,39 @@
 4. Catat pemeriksa, edisi mushaf Hafs, tanggal, dan bukti keputusan untuk setiap kandidat yang hendak dipromosikan.
 
 **Pengamanan:** register utama tidak diubah oleh dokumen ini.
+
+## Matriks pemeriksaan 16 slot P011 — 2026-11-04
+
+**Metode:** penelusuran metadata register aktif, pengelompokan menurut lafaz sasaran, dan identifikasi risiko pengajaran. **Belum dilakukan pembandingan menyeluruh terhadap mushaf Hafs resmi**, sehingga tabel ini bukan penetapan hukum final.
+
+| Slot | Lafaz sasaran dari register | Kategori yang diklaim register | Pemeriksaan khusus yang diwajibkan |
+|---|---|---|---|
+| K01 | الضَّالِّينَ | Kalimi mutsaqqal | Alif mad dan lam bertasydid; rasm dan bacaan |
+| K02 | الْحَاقَّةُ | Kalimi mutsaqqal | Kutipan melintasi QS 69:1–2; batas ayat |
+| K03 | الطَّامَّةُ | Kalimi mutsaqqal | Bedakan dari mad wajib muttasil pada جَاءَتِ |
+| K04 | الصَّاخَّةُ | Kalimi mutsaqqal | Ketepatan kata sasaran dan rasm |
+| K05 | الْحَاقَّةُ | Kalimi mutsaqqal (perlu konfirmasi) | Pengulangan lafaz K02; fungsi latihan |
+| K06 | الْحَاقَّةُ | Kalimi mutsaqqal (perlu konfirmasi) | Pengulangan lafaz K02/K05 dengan QS 69:2 |
+| K07 | آلْآنَ | Kalimi mukhaffaf (klaim register) | **PRIORITAS TINGGI:** hamzah istifham, rasm khusus, cara baca Hafs |
+| K08 | أَتُحَاجُّونَنِي | Kalimi mutsaqqal (perlu konfirmasi) | Periksa ejaan/rasm, alif sebelum جّ, dan bentuk bacaan |
+| K09 | آلْآنَ | Kalimi mukhaffaf (klaim register) | **PRIORITAS TINGGI:** pasangan QS 10:51 dan 10:91, cara baca Hafs |
+| K10 | الْحَاقَّةُ | Kalimi mutsaqqal (perlu konfirmasi) | Fungsi pengulangan dalam QS 69:3 |
+| K11 | تَحَاضُّونَ | Kalimi mutsaqqal (klaim register) | Pastikan bentuk kata dan alif sebelum ضّ |
+| K12 | الصَّاخَّةُ | Kalimi mutsaqqal | Pisahkan dari mad wajib muttasil جَاءَتِ |
+| K13 | الطَّامَّةُ | Kalimi mutsaqqal | Bedakan fungsi dari K03 |
+| K14 | دَابَّةٍ | Kalimi mutsaqqal (klaim register) | Periksa alif dan بّ; QS 11:6 |
+| K15 | دَابَّةٍ | Kalimi mutsaqqal (klaim register) | Sama lafaz sasaran K14, QS 29:60 berbeda |
+| K16 | الْجَانَّ | Kalimi mutsaqqal (klaim register) | Periksa alif dan نّ; QS 15:27 |
+
+### Aturan tashih yang dapat diuji
+
+1. **Jangan menyamakan mad lazim kalimi mutsaqqal dengan semua mad pada halaman.** Bila kutipan juga memuat mad wajib muttasil, guru harus menunjuk kata sasaran yang benar.
+2. **K07 dan K09 ditahan dari keputusan Sah** sampai pemeriksa menetapkan penulisan dan cara baca `آلْآنَ` menurut mushaf Hafs yang digunakan; jangan menetapkan satu bentuk bacaan hanya dari ejaan register.
+3. **K02** perlu keputusan penyajian dua ayat berurutan: batas ayat dan waqaf/ibtida tidak boleh hilang ketika dijadikan satu contoh.
+4. **K08** perlu pembandingan langsung kata `أَتُحَاجُّونَنِي` terhadap mushaf; jangan menganggap ejaan register sudah final.
+5. **K05/K06/K10**, **K03/K13**, **K04/K12**, dan **K14/K15** harus memiliki tujuan latihan berbeda jika tetap dipakai, meskipun frasa dan lokasi ayat tidak selalu identik.
+6. Catat hasil pemeriksaan setiap slot: **sesuai sumber / koreksi diperlukan / tidak sesuai kompetensi / ditunda**, disertai sumber mushaf, pemeriksa, tanggal, dan bukti.
+
+### Gerbang penerbitan
+
+**Belum boleh cetak atau menaikkan Sah:** belum ada berita acara tashih ahli untuk P011. Dokumen ini menyiapkan pekerjaan pemeriksa, bukan menggantikannya. Teks Arab dan nilai Sah pada register tetap tidak diubah.
