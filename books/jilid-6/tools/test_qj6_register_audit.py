@@ -85,6 +85,18 @@ class RegisterAuditRegression(unittest.TestCase):
         self.assertTrue(any("source verified without source_id" in error for error in result["errors"]))
         self.assertFalse(result["print_approved"])
 
+    def test_mixed_competency_on_one_page_is_rejected(self):
+        def change(rows):
+            next(row for row in rows if row["slot_id"] == "QJ6-P002-S09")["competency"] = "Wrong target"
+        result = self.audit_mutation(change)
+        self.assertTrue(any("inconsistent or blank page competency" in e for e in result["errors"]))
+
+    def test_mixed_material_kind_on_one_page_is_rejected(self):
+        def change(rows):
+            next(row for row in rows if row["slot_id"] == "QJ6-P002-S09")["kind"] = "hafalan"
+        result = self.audit_mutation(change)
+        self.assertTrue(any("mixed material kinds within page" in e for e in result["errors"]))
+
     def test_unknown_slot_kind_fails_closed(self):
         for invalid in ("", "tartil ", "unknown", "print-ready"):
             with self.subTest(kind=invalid):
