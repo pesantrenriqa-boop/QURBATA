@@ -345,6 +345,8 @@ class CoverageTests(unittest.TestCase):
     def test_p036_hafalan_incomplete_surah_is_advisory(self):
         warnings = module.p036_hafalan_advisory(self.original)
         self.assertTrue(any("QS 113:5" in warning for warning in warnings))
+        self.assertFalse(any("differs from documented" in warning
+                             for warning in warnings), warnings)
         _, errors = module.audit(self.original)
         self.assertFalse(errors, errors)
 
