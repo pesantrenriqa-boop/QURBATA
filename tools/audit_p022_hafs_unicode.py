@@ -48,7 +48,7 @@ def read_rows(path):
                     sys.exit("HOLD: JSON source must contain exactly one verse list")
                 data = candidates[0]
             return data
-        reader = csv.DictReader(f)
+        reader = csv.DictReader(f, strict=True)
         required = {"sura_no", "aya_no", "aya_text_unicode"}
         if reader.fieldnames is None or not required.issubset(reader.fieldnames):
             sys.exit("HOLD: CSV source is missing required Quran verse columns")
