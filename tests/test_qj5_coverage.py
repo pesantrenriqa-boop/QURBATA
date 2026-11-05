@@ -417,8 +417,22 @@ class CoverageTests(unittest.TestCase):
         rows, errors = module.audit(self.original)
         self.assertFalse(errors, errors)
         p013 = next(row for row in rows if row[0] == "P013")
-        self.assertEqual(p013[3], 12)
         self.assertEqual(p013[1] + p013[3], p013[2])
+        # Remove one existing candidate in a synthetic copy: the pending count
+        # must increase by one, without changing the real register.
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P013 |"):
+                cells = line.split("|")
+                self.assertNotIn(cells[3].strip(), ("", "—"))
+                cells[3] = " — "
+                lines[i] = "|".join(cells)
+                break
+        changed_rows, changed_errors = module.audit("\n".join(lines))
+        self.assertFalse(changed_errors, changed_errors)
+        changed = next(row for row in changed_rows if row[0] == "P013")
+        self.assertEqual(changed[1], p013[1] - 1)
+        self.assertEqual(changed[3], p013[3] + 1)
 
     def test_qs1135_scan_ignores_inactive_slots(self):
         changed = self.original.replace("KANDIDAT QS 113:5",
