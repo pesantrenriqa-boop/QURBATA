@@ -403,6 +403,18 @@ class CoverageTests(unittest.TestCase):
         warnings = module.qj5_alfalaq_completion_advisory(changed)
         self.assertTrue(any("QS 113:5" in warning for warning in warnings))
 
+    def test_qs1135_locations_are_active_declared_candidates(self):
+        locations = module.qj5_alfalaq_source_locations(self.original)
+        self.assertEqual(len(locations), 2)
+        self.assertTrue(any(item.startswith("P001 K") for item in locations))
+        self.assertTrue(any(item.startswith("P018 K") for item in locations))
+        self.assertFalse(any(item.startswith("P036 K") for item in locations))
+
+    def test_qs1135_location_scan_ignores_notes(self):
+        changed = self.original.replace("KANDIDAT QS 113:5",
+                                        "AUDIT: QS 113:5", 2)
+        self.assertEqual(module.qj5_alfalaq_source_locations(changed), [])
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
