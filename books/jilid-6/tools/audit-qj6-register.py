@@ -177,6 +177,16 @@ def audit(path=CSV_PATH):
         {"slot_id": row["slot_id"], "reason": "research_review_pending"}
         for row in rows if row["review_status"] == "RESEARCH"
     )
+    # Multiple hold reasons can refer to the same slot. Report both totals.
+    hold_reason_counts = dict(sorted(Counter(
+        hold["reason"] for hold in release_holds
+    ).items()))
+    held_slot_ids = sorted({hold["slot_id"] for hold in release_holds})
+    release_hold_summary = {
+        "hold_records": len(release_holds),
+        "unique_held_slots": len(held_slot_ids),
+        "by_reason": hold_reason_counts,
+    }
     duplicate_text_groups = [slot_ids for slot_ids in text_index.values() if len(slot_ids) > 1]
     for slot_ids in duplicate_text_groups:
         warnings.append("Repeated text (review intentional reuse): " + ", ".join(slot_ids))
@@ -186,6 +196,7 @@ def audit(path=CSV_PATH):
         "forward_references": forward_references,
         "msi_sign_checks": msi_sign_checks,
         "release_holds": release_holds,
+        "release_hold_summary": release_hold_summary,
         "filled": len(rows) - sum(empty_by_page.values()),
         "empty": sum(empty_by_page.values()),
         "empty_by_page": dict(sorted(empty_by_page.items())),
