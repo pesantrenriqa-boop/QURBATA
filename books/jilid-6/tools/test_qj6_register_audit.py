@@ -67,6 +67,15 @@ class RegisterAuditRegression(unittest.TestCase):
         )
         self.assertFalse(result["print_approved"])
 
+    def test_unknown_review_status_fails_closed(self):
+        for invalid in ("APPROVED", "PRINT_READY", "", "CANDIDATE "):
+            with self.subTest(status=invalid):
+                def change(rows):
+                    next(row for row in rows if row["slot_id"] == "QJ6-P002-S09")["review_status"] = invalid
+                result = self.audit_mutation(change)
+                self.assertTrue(any("unknown review_status" in error for error in result["errors"]))
+                self.assertFalse(result["print_approved"])
+
     def test_empty_slot_accepts_blank_flags(self):
         result = self.audit_mutation(lambda rows: None)
         self.assertEqual(result["errors"], [])
