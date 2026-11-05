@@ -46,7 +46,11 @@ class RegisterAuditRegression(unittest.TestCase):
                             and "لا" not in row["text_uthmani"]}
         self.assertEqual(unfilled, expected_empty)
         self.assertEqual(glyph_missing, expected_missing)
-        self.assertEqual(len(holds), len(expected_empty) + len(expected_missing))
+        expected_source = {row['slot_id'] for row in self.rows if row['review_status'] != 'EMPTY' and row['source_verified'].lower() != 'yes'}
+        expected_competency = {row['slot_id'] for row in self.rows if row['review_status'] != 'EMPTY' and row['competency_verified'].lower() != 'yes'}
+        self.assertEqual({item['slot_id'] for item in holds if item['reason'] == 'source_unverified'}, expected_source)
+        self.assertEqual({item['slot_id'] for item in holds if item['reason'] == 'competency_unverified'}, expected_competency)
+        self.assertEqual(len(holds), sum(map(len, (expected_empty, expected_missing, expected_source, expected_competency))))
 
     def test_empty_slot_accepts_blank_flags(self):
         result = self.audit_mutation(lambda rows: None)
