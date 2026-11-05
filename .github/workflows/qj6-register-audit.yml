@@ -29,16 +29,27 @@ jobs:
           import json
           from pathlib import Path
           report = json.loads(Path('/tmp/QJ6-committed-audit.json').read_text(encoding='utf-8'))
+          import csv
+          with Path('books/jilid-6/tools/QJ6-slots.csv').open(encoding='utf-8-sig', newline='') as f:
+              rows = list(csv.DictReader(f))
+          expected_empty = {r['slot_id'] for r in rows if r['review_status'] == 'EMPTY'}
+          expected_missing_sign = {
+              r['slot_id'] for r in rows
+              if r['page_id'] == 'QJ6-P017'
+              and r['review_status'] != 'EMPTY'
+              and 'لا' not in r['text_uthmani']
+          }
           holds = report['release_holds']
-          empty = {item['slot_id'] for item in holds if item['reason'] == 'unfilled_slot'}
-          missing_sign = {item['slot_id'] for item in holds if item['reason'] == 'waqf_la_glyph_missing'}
+          actual_empty = {h['slot_id'] for h in holds if h['reason'] == 'unfilled_slot'}
+          actual_missing_sign = {h['slot_id'] for h in holds if h['reason'] == 'waqf_la_glyph_missing'}
           assert report['errors'] == [], report['errors']
           assert report['print_approved'] is False
-          assert report['rows'] == 360
-          assert report['filled'] == 335 and report['empty'] == 25
-          assert len(empty) == 25
-          assert missing_sign == {'QJ6-P017-S02', 'QJ6-P017-S04'}
-          assert len(holds) == 27
+          assert report['rows'] == len(rows) == 360
+          assert report['empty'] == len(expected_empty)
+          assert report['filled'] == len(rows) - len(expected_empty)
+          assert actual_empty == expected_empty
+          assert actual_missing_sign == expected_missing_sign
+          assert len(holds) == len(expected_empty) + len(expected_missing_sign)
           print('Committed audit release holds and publication gate verified.')
           PY
       - name: Generate isolated 360-slot CSV
