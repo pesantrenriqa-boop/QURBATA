@@ -22,11 +22,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Validate 40-page Jilid 5 register coverage
+        id: coverage_audit
         shell: bash
         run: |
           set -o pipefail
           python3 scripts/audit_qj5_coverage.py 2>&1 | tee qj5-coverage-audit.log
       - name: Run QJ5 regression tests
+        id: regression_tests
         if: always()
         shell: bash
         run: |
@@ -42,19 +44,21 @@ jobs:
             echo '| Check | Outcome |'
             echo '|---|---|'
             if [ -f qj5-coverage-audit.log ]; then
-              echo '| Register coverage | Log captured |'
+              echo '| Register coverage | Log captured (see step outcome below) |'
               grep '^TOTAL:' qj5-coverage-audit.log || true
             else
               echo '| Register coverage | Log missing |'
             fi
             if [ -f qj5-regression-tests.log ]; then
-              echo '| Regression tests | Log captured |'
+              echo '| Regression tests | Log captured (see step outcome below) |'
               grep -E '^(Ran [0-9]+ tests|OK|FAILED)' qj5-regression-tests.log || true
             else
               echo '| Regression tests | Log missing |'
             fi
             echo
-            echo 'Logs are diagnostic evidence only; rely on job conclusion for pass/fail.'
+            echo 'Coverage step outcome: ${{ steps.coverage_audit.outcome }}'
+            echo 'Regression step outcome: ${{ steps.regression_tests.outcome }}'
+            echo 'The overall job conclusion remains authoritative; captured logs do not imply success.'
           } >> "$GITHUB_STEP_SUMMARY"
       - name: Preserve audit and test evidence
         if: always()
