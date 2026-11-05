@@ -184,7 +184,8 @@ def main():
     if not SOURCE.is_file():
         print(f"ERROR missing {SOURCE}", file=sys.stderr)
         return 2
-    rows, errors = audit(SOURCE.read_text(encoding="utf-8"))
+    content = SOURCE.read_text(encoding="utf-8")
+    rows, errors = audit(content)
     print("PAGE | FILLED | CAPACITY | EMPTY | SAH")
     for page, filled, capacity, empty, sah in rows:
         print(f"{page} | {filled} | {capacity} | {empty} | {sah}")
@@ -192,20 +193,20 @@ def main():
     print("P013: 12 unfilled slots are an intentional pending curriculum exception, not permission to duplicate Quran text.")
     for error in errors:
         print("ERROR:", error, file=sys.stderr)
-    duplicates = repeated_phrases(SOURCE.read_text(encoding="utf-8"))
+    duplicates = repeated_phrases(content)
     print(f"ADVISORY: {len(duplicates)} exact same-page phrase groups (not CI errors).")
     for page, phrase, slots in duplicates:
         print(f"ADVISORY {page} {','.join(slots)}: {phrase}")
-    source_duplicates = repeated_quran_loci(SOURCE.read_text(encoding="utf-8"))
+    source_duplicates = repeated_quran_loci(content)
     print(f"ADVISORY: {len(source_duplicates)} repeated same-page Quran reference groups.")
     for page, reference, slots in source_duplicates:
         print(f"ADVISORY SOURCE {page} {','.join(slots)}: {reference}")
-    for warning in p036_hafalan_advisory(SOURCE.read_text(encoding="utf-8")):
+    for warning in p036_hafalan_advisory(content):
         print("ADVISORY HAFALAN:", warning)
-    locations = qj5_alfalaq_source_locations(SOURCE.read_text(encoding="utf-8"))
+    locations = qj5_alfalaq_source_locations(content)
     print("INFO QS 113:5 reading candidates:", ", ".join(locations) or "none",
           "(not proof of P036 hafalan completion)")
-    for warning in qj5_alfalaq_completion_advisory(SOURCE.read_text(encoding="utf-8")):
+    for warning in qj5_alfalaq_completion_advisory(content):
         print("ADVISORY HAFALAN:", warning)
     print("Note: filled means nonempty candidate, NOT verified Quran text or approved Sah.")
     return 1 if errors else 0
