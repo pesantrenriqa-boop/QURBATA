@@ -48,6 +48,8 @@ def audit(path=CSV_PATH):
     msi_sign_checks = []
     for r in rows:
         ident, status = r["slot_id"], r["review_status"]
+        if status not in ("EMPTY", "CANDIDATE", "RESEARCH"):
+            errors.append(f"{ident}: unknown review_status {status!r}; fail closed")
         if ident in msi_pending:
             glyph = msi_pending[ident]
             actual = [f"U+{ord(ch):04X}" for ch in r["text_uthmani"] if ch in "\u06d8\u06da"]
