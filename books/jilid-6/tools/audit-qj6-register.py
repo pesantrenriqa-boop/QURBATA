@@ -112,6 +112,7 @@ def audit(path=CSV_PATH):
             forward_references.append({"slot_id": ident, "source_id": source})
             warnings.append(f"{ident}: cites later-page source {source}; review prerequisites")
     # Explicit, machine-readable review queue; not a substitute for MSI tashih.
+    # Never imply that a clean structural audit is publication approval.
     release_holds = [
         {"slot_id": row["slot_id"], "reason": "unfilled_slot"}
         for row in rows if row["review_status"] == "EMPTY"
@@ -122,6 +123,20 @@ def audit(path=CSV_PATH):
         if row["page_id"] == "QJ6-P017"
         and row["review_status"] != "EMPTY"
         and "لا" not in row["text_uthmani"]
+    )
+    # Pending content verification remains a publication hold even if all
+    # 360 slots are populated. Source and competency approval are independent.
+    release_holds.extend(
+        {"slot_id": row["slot_id"], "reason": "source_unverified"}
+        for row in rows
+        if row["review_status"] != "EMPTY"
+        and row["source_verified"].lower() != "yes"
+    )
+    release_holds.extend(
+        {"slot_id": row["slot_id"], "reason": "competency_unverified"}
+        for row in rows
+        if row["review_status"] != "EMPTY"
+        and row["competency_verified"].lower() != "yes"
     )
     duplicate_text_groups = [slot_ids for slot_ids in text_index.values() if len(slot_ids) > 1]
     for slot_ids in duplicate_text_groups:
