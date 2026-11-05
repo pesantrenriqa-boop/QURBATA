@@ -31,6 +31,30 @@ jobs:
         run: |
           set -o pipefail
           python3 -m unittest discover -v -s tests -p 'test_qj5_coverage.py' 2>&1 | tee qj5-regression-tests.log
+      - name: Summarize QJ5 audit evidence
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo '## QURBATA Jilid 5 — audit evidence'
+            echo
+            echo '| Check | Outcome |'
+            echo '|---|---|'
+            if [ -f qj5-coverage-audit.log ]; then
+              echo '| Register coverage | Log captured |'
+              grep '^TOTAL:' qj5-coverage-audit.log || true
+            else
+              echo '| Register coverage | Log missing |'
+            fi
+            if [ -f qj5-regression-tests.log ]; then
+              echo '| Regression tests | Log captured |'
+              grep -E '^(Ran [0-9]+ tests|OK|FAILED)' qj5-regression-tests.log || true
+            else
+              echo '| Regression tests | Log missing |'
+            fi
+            echo
+            echo 'Logs are diagnostic evidence only; rely on job conclusion for pass/fail.'
+          } >> "$GITHUB_STEP_SUMMARY"
       - name: Preserve audit and test evidence
         if: always()
         uses: actions/upload-artifact@v4
