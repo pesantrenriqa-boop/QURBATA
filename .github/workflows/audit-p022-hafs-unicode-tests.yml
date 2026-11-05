@@ -26,6 +26,26 @@ jobs:
         run: |
           set -o pipefail
           python -m unittest discover -s tools -p 'test_audit_p022_hafs_unicode.py' -v 2>&1 | tee p022-unittest.log
+      - name: Publish test summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo '## P022 Hafs Unicode offline regression'
+            echo ''
+            echo 'This job tests checker behavior only; it does not authenticate KFGQPC data or approve Quran text for printing.'
+            echo ''
+            if [ -f p022-unittest.log ]; then
+              echo '### Test result'
+              echo '~~~'
+              tail -n 12 p022-unittest.log
+              echo '~~~'
+            else
+              echo 'No test log generated; check syntax and setup steps.'
+            fi
+            echo ''
+            echo '**Print approval: HOLD (0/16).**'
+          } >> "$GITHUB_STEP_SUMMARY"
       - name: Upload offline test evidence
         if: always()
         uses: actions/upload-artifact@v4
