@@ -492,6 +492,20 @@ class CoverageTests(unittest.TestCase):
         self.assertFalse(errors, errors)
         self.assertEqual(next(row for row in rows if row[0] == "P036")[4], "0/8")
 
+    def test_p036_malformed_row_does_not_certify_hafalan(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P036 |"):
+                cells = line.split("|")
+                del cells[10]  # Drop K08, leaving a malformed table row.
+                lines[i] = "|".join(cells)
+                break
+        content = "\n".join(lines)
+        warnings = module.p036_hafalan_advisory(content)
+        self.assertTrue(any("malformed row" in w for w in warnings), warnings)
+        _, errors = module.audit(content)
+        self.assertTrue(any("P036: expected 19 cells" in e for e in errors), errors)
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
