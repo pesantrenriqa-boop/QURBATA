@@ -54,6 +54,8 @@ def main():
     p.add_argument("--register", required=True, type=Path, help="Jilid 4 Markdown register")
     p.add_argument("--output", required=True, type=Path, help="New JSON report")
     a = p.parse_args()
+    if a.output.exists():
+        sys.exit("HOLD: output report already exists; choose a fresh path to prevent stale or overwritten evidence")
     digest = sha256(a.archive)
     if digest.lower() != EXPECTED_SHA256:
         sys.exit("HOLD: SHA-256 mismatch; refusing to compare unverified source")
