@@ -243,5 +243,32 @@ class CheckerTests(unittest.TestCase):
             self.assertIs(report["print_approved"], False)
             self.assertNotIn("print_ready", report)
 
+    def test_empty_source_dataset_fails_closed_without_report(self):
+        from unittest.mock import patch
+        import importlib.util
+        import zipfile
+        spec = importlib.util.spec_from_file_location("checker", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            csv_data = "sura_no,aya_no,aya_text_unicode\n"
+            archive = root / "fixture.zip"
+            with zipfile.ZipFile(archive, "w") as z:
+                z.writestr("verses.csv", csv_data)
+            data = root / "verses.csv"
+            data.write_text(csv_data, encoding="utf-8")
+            register = root / "register.md"
+            register.write_text("| P022 | Ikhfa syafawi |\n", encoding="utf-8")
+            output = root / "report.json"
+            argv = ["checker", "--archive", str(archive), "--data", str(data),
+                    "--register", str(register), "--output", str(output)]
+            with patch.object(module, "EXPECTED_SHA256", module.sha256(archive)):
+                with patch.object(sys, "argv", argv):
+                    with self.assertRaises(SystemExit) as error:
+                        module.main()
+            self.assertIn("nonempty list of verse objects", str(error.exception))
+            self.assertFalse(output.exists())
+
 if __name__ == "__main__":
     unittest.main()
