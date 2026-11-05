@@ -381,29 +381,27 @@ class CoverageTests(unittest.TestCase):
         warnings = module.p036_hafalan_advisory("\n".join(lines))
         self.assertTrue(any("P036 K06:" in w for w in warnings), warnings)
 
-    def test_jilid5_alfalaq_source_missing_across_active_slots(self):
+    def test_jilid5_alfalaq_source_exists_in_reading_practice(self):
         warnings = module.qj5_alfalaq_completion_advisory(self.original)
-        self.assertTrue(any("QS 113:5" in warning for warning in warnings))
+        self.assertFalse(warnings, warnings)
+        rows = [line for line in self.original.splitlines()
+                if line.startswith("| P001 |") or line.startswith("| P018 |")]
+        self.assertEqual(len(rows), 2)
+        self.assertTrue(all("KANDIDAT QS 113:5" in row for row in rows))
 
-    def test_jilid5_alfalaq_audit_note_is_not_a_candidate_source(self):
-        changed = self.original.replace(
-            "AUDIT HAFALAN:",
-            "AUDIT HAFALAN: catatan pembanding QS 113:5;",
-            1,
-        )
+    def test_jilid5_alfalaq_missing_source_is_advisory(self):
+        changed = self.original.replace("KANDIDAT QS 113:5",
+                                        "AUDIT: QS 113:5", 2)
         warnings = module.qj5_alfalaq_completion_advisory(changed)
         self.assertTrue(any("QS 113:5" in warning for warning in warnings))
 
-    def test_jilid5_alfalaq_declared_candidate_source_clears_warning(self):
-        lines = self.original.splitlines()
-        for i, line in enumerate(lines):
-            if line.startswith("| P040 |"):
-                cells = line.split("|")
-                cells[3] = "contoh uji [KANDIDAT QS 113:5]"
-                lines[i] = "|".join(cells)
-                break
-        warnings = module.qj5_alfalaq_completion_advisory("\n".join(lines))
-        self.assertFalse(warnings, warnings)
+    def test_jilid5_alfalaq_notes_are_not_candidate_sources(self):
+        changed = self.original.replace("KANDIDAT QS 113:5",
+                                        "AUDIT: QS 113:5", 2)
+        changed = changed.replace("AUDIT HAFALAN:",
+                                  "AUDIT HAFALAN: catatan QS 113:5;", 1)
+        warnings = module.qj5_alfalaq_completion_advisory(changed)
+        self.assertTrue(any("QS 113:5" in warning for warning in warnings))
 
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
