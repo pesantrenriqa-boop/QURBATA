@@ -327,6 +327,21 @@ class CoverageTests(unittest.TestCase):
         self.assertTrue(any("P013 K01: expected exactly one" in error
                             for error in errors), errors)
 
+    def test_p013_allows_audit_cross_reference_after_declared_source(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P013 |"):
+                cells = line.split("|")
+                cells[3] = cells[3].replace(
+                    "KANDIDAT QS 27:59",
+                    "KANDIDAT QS 27:59; AUDIT: bandingkan QS 6:143",
+                )
+                lines[i] = "|".join(cells)
+                break
+        _, errors = module.audit("\n".join(lines))
+        self.assertFalse(any("P013 K01: expected exactly one" in e
+                             for e in errors), errors)
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
