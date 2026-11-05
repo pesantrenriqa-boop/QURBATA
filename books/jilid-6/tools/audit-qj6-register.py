@@ -111,6 +111,18 @@ def audit(path=CSV_PATH):
         if source_page > own_page:
             forward_references.append({"slot_id": ident, "source_id": source})
             warnings.append(f"{ident}: cites later-page source {source}; review prerequisites")
+    # Explicit, machine-readable review queue; not a substitute for MSI tashih.
+    release_holds = [
+        {"slot_id": row["slot_id"], "reason": "unfilled_slot"}
+        for row in rows if row["review_status"] == "EMPTY"
+    ]
+    release_holds.extend(
+        {"slot_id": row["slot_id"], "reason": "waqf_la_glyph_missing"}
+        for row in rows
+        if row["page_id"] == "QJ6-P017"
+        and row["review_status"] != "EMPTY"
+        and "لا" not in row["text_uthmani"]
+    )
     duplicate_text_groups = [slot_ids for slot_ids in text_index.values() if len(slot_ids) > 1]
     for slot_ids in duplicate_text_groups:
         warnings.append("Repeated text (review intentional reuse): " + ", ".join(slot_ids))
@@ -119,6 +131,7 @@ def audit(path=CSV_PATH):
         "duplicate_text_groups": len(duplicate_text_groups),
         "forward_references": forward_references,
         "msi_sign_checks": msi_sign_checks,
+        "release_holds": release_holds,
         "filled": len(rows) - sum(empty_by_page.values()),
         "empty": sum(empty_by_page.values()),
         "empty_by_page": dict(sorted(empty_by_page.items())),
