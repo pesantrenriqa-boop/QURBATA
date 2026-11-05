@@ -625,5 +625,18 @@ class CheckerTests(unittest.TestCase):
                 self.assertTrue(passage and passage != "—")
                 self.assertRegex(passage, r"مْ\s*ب")
 
+    def test_nonstandard_json_numeric_constants_fail_closed(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("p022_json_guard", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        for value in ("NaN", "Infinity", "-Infinity"):
+            with self.subTest(value=value), tempfile.TemporaryDirectory() as directory:
+                dataset = Path(directory) / "verses.json"
+                dataset.write_text('[{"sura_no":105,"aya_no":4,"aya_text_unicode":"X","extra":' + value + '}]', encoding="utf-8")
+                with self.assertRaises(SystemExit) as error:
+                    module.read_rows(dataset)
+                self.assertIn("HOLD:", str(error.exception))
+
 if __name__ == "__main__":
     unittest.main()
