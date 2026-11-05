@@ -80,6 +80,9 @@ def audit(path=CSV_PATH):
         if r["page_id"] == "QJ6-P017" and status != "EMPTY":
             if "لا" not in r["text_uthmani"]:
                 warnings.append(f"{ident}: no explicit waqf-la glyph in text")
+                if (r["source_verified"].lower() == "yes"
+                        or r["competency_verified"].lower() == "yes"):
+                    errors.append(f"{ident}: cannot verify waqf-la without an explicit sign in the excerpt")
         if r["page_id"] in ("QJ6-P018", "QJ6-P036") and status != "EMPTY":
             warnings.append(f"{ident}: verify official hafalan unit approval")
     # Internal source references must exist and preserve the excerpt verbatim.
