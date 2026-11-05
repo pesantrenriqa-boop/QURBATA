@@ -95,7 +95,7 @@ def repeated_quran_loci(content):
             if not value or value == "—":
                 continue
             # Use only the candidate's declared source, not QS mentions in review notes.
-            candidate = re.search(r"\[KANDIDAT\s+(QS\s+\d{1,3}:\d{1,3}(?:[–-]\d{1,3})?)", value)
+            candidate = re.search(r"\bKANDIDAT\s+(QS\s+\d{1,3}:\d{1,3}(?:[–-]\d{1,3})?)", value)
             if candidate:
                 reference = candidate.group(1)
                 groups.setdefault((page, reference), []).append(f"K{index:02d}")
