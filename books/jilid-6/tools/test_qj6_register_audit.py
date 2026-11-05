@@ -52,7 +52,8 @@ class RegisterAuditRegression(unittest.TestCase):
         self.assertEqual({item['slot_id'] for item in holds if item['reason'] == 'competency_unverified'}, expected_competency)
         expected_research = {row['slot_id'] for row in self.rows if row['review_status'] == 'RESEARCH'}
         self.assertEqual({item['slot_id'] for item in holds if item['reason'] == 'research_review_pending'}, expected_research)
-        self.assertEqual(len(holds), sum(map(len, (expected_empty, expected_missing, expected_source, expected_competency, expected_research))) + 3)
+        expected_p017 = {row['slot_id'] for row in self.rows if row['page_id'] == 'QJ6-P017' and row['review_status'] != 'EMPTY'}
+        self.assertEqual(len(holds), sum(map(len, (expected_empty, expected_missing, expected_source, expected_competency, expected_research))) + 3 + len(expected_p017))
 
     def test_research_hold_persists_after_verification_flags_change(self):
         def change(rows):
@@ -84,6 +85,15 @@ class RegisterAuditRegression(unittest.TestCase):
         result = self.audit_mutation(change)
         self.assertTrue(any("source verified without source_id" in error for error in result["errors"]))
         self.assertFalse(result["print_approved"])
+
+    def test_populated_p017_cases_require_independent_msi_review(self):
+        expected = {row["slot_id"] for row in self.rows
+                    if row["page_id"] == "QJ6-P017" and row["review_status"] != "EMPTY"}
+        holds = MODULE.audit()["release_holds"]
+        self.assertEqual(
+            {item["slot_id"] for item in holds if item["reason"] == "waqf_la_msi_review_pending"},
+            expected,
+        )
 
     def test_three_msi_sign_cases_remain_on_independent_hold(self):
         expected = {"QJ6-P015-S01", "QJ6-P015-S06", "QJ6-P016-S03"}
