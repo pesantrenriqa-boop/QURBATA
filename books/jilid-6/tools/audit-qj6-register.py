@@ -37,6 +37,14 @@ def audit(path=CSV_PATH):
                 missing.append(ident)
     if missing:
         errors.append(f"Missing expected slot IDs: {missing}")
+    # Reject noncanonical or out-of-range IDs even if all expected IDs exist.
+    expected_ids = {
+        f"QJ6-P{page:03d}-S{slot:02d}"
+        for page in range(1, 41) for slot in range(1, 10)
+    }
+    unexpected_ids = sorted(set(ids) - expected_ids)
+    if unexpected_ids:
+        errors.append(f"Unexpected slot IDs: {unexpected_ids}")
     # Each nine-slot page has exactly one curriculum target and material kind.
     # This checks internal consistency, not external curriculum authorization.
     page_targets = defaultdict(set)
