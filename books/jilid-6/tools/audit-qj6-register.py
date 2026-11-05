@@ -138,6 +138,11 @@ def audit(path=CSV_PATH):
         if row["review_status"] != "EMPTY"
         and row["competency_verified"].lower() != "yes"
     )
+    # Research cases require an explicit expert decision independent of flags.
+    release_holds.extend(
+        {"slot_id": row["slot_id"], "reason": "research_review_pending"}
+        for row in rows if row["review_status"] == "RESEARCH"
+    )
     duplicate_text_groups = [slot_ids for slot_ids in text_index.values() if len(slot_ids) > 1]
     for slot_ids in duplicate_text_groups:
         warnings.append("Repeated text (review intentional reuse): " + ", ".join(slot_ids))
