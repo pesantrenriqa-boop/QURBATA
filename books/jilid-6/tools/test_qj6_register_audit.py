@@ -129,6 +129,13 @@ class RegisterAuditRegression(unittest.TestCase):
         )
         self.assertFalse(result["print_approved"])
 
+    def test_page_id_must_match_full_slot_id(self):
+        def change(rows):
+            next(row for row in rows if row["slot_id"] == "QJ6-P002-S09")["page_id"] = "QJ6-P003"
+        result = self.audit_mutation(change)
+        self.assertTrue(any("page_id does not match full slot ID" in e for e in result["errors"]))
+        self.assertFalse(result["print_approved"])
+
     def test_out_of_range_slot_id_is_rejected(self):
         for invalid in ("QJ6-P041-S01", "QJ6-P001-S10", "QJ6-P1-S01"):
             with self.subTest(slot_id=invalid):
