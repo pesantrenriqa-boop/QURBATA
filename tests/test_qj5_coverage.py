@@ -236,6 +236,26 @@ class CoverageTests(unittest.TestCase):
                             and slots == ["K01", "K02"]
                             for page, reference, slots in groups))
 
+    def test_p016_first_slot_source_label_after_audit_note(self):
+        # The real register starts K01's annotation with AUDIT, not KANDIDAT.
+        line = next(line for line in self.original.splitlines()
+                    if line.startswith("| P016 |"))
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        self.assertIn("AUDIT:", cells[2])
+        self.assertIn("KANDIDAT QS 106:1", cells[2])
+        # Reuse its genuine annotation in K02 to prove source detection.
+        lines = self.original.splitlines()
+        for i, row in enumerate(lines):
+            if row.startswith("| P016 |"):
+                parts = row.split("|")
+                parts[4] = parts[3]
+                lines[i] = "|".join(parts)
+                break
+        groups = module.repeated_quran_loci("\n".join(lines))
+        self.assertTrue(any(page == "P016" and reference == "QS 106:1"
+                            and slots == ["K01", "K02"]
+                            for page, reference, slots in groups))
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
