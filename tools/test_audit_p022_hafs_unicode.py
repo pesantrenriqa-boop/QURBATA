@@ -409,5 +409,19 @@ class CheckerTests(unittest.TestCase):
             self.assertIn("ambiguous citations", str(error.exception))
             self.assertFalse(output.exists())
 
+    def test_ragged_csv_rows_are_rejected(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("checker", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as d:
+            data = Path(d) / "verses.csv"
+            for row in ("105,4\n", "105,4,text,unexpected\n"):
+                with self.subTest(row=row):
+                    data.write_text("sura_no,aya_no,aya_text_unicode\n" + row, encoding="utf-8")
+                    with self.assertRaises(SystemExit) as error:
+                        module.read_rows(data)
+                    self.assertIn("missing or surplus fields", str(error.exception))
+
 if __name__ == "__main__":
     unittest.main()
