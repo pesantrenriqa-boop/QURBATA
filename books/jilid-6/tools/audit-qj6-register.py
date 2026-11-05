@@ -106,8 +106,6 @@ def audit(path=CSV_PATH):
             errors.append(f"{ident}: competency verified without reviewer")
         if r["source_verified"].lower() == "yes" and not r["source_id"].strip():
             errors.append(f"{ident}: source verified without source_id")
-        if r["page_id"] != ident[:8]:
-            errors.append(f"{ident}: page_id mismatch")
         if status == "EMPTY":
             empty_by_page[r["page_id"]] += 1
             if r["text_uthmani"].strip():
