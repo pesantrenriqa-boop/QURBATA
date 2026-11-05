@@ -105,7 +105,7 @@ def main():
             sys.exit(f"HOLD: empty or placeholder slot K{i:02d}")
         citations = re.findall(r"\bQS\s+(\d+):(\d+)\b", cell)
         if len(citations) != 1 or f"{int(citations[0][0])}:{int(citations[0][1])}" != ref:
-            sys.exit(f"HOLD: source reference mismatch or ambiguous citations at K{i:02d}; expected one QS {ref}")
+            sys.exit(f"HOLD: source reference mismatch at K{i:02d}; ambiguous citations or wrong QS (expected exactly one QS {ref})")
         verse = index.get(tuple(map(int, ref.split(":"))))
         exact = verse is not None and passage in verse
         results.append({"slot": f"K{i:02d}", "reference": ref, "exact_unicode_substring": exact,
