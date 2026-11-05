@@ -50,7 +50,9 @@ class RegisterAuditRegression(unittest.TestCase):
         expected_competency = {row['slot_id'] for row in self.rows if row['review_status'] != 'EMPTY' and row['competency_verified'].lower() != 'yes'}
         self.assertEqual({item['slot_id'] for item in holds if item['reason'] == 'source_unverified'}, expected_source)
         self.assertEqual({item['slot_id'] for item in holds if item['reason'] == 'competency_unverified'}, expected_competency)
-        self.assertEqual(len(holds), sum(map(len, (expected_empty, expected_missing, expected_source, expected_competency))))
+        expected_research = {row['slot_id'] for row in self.rows if row['review_status'] == 'RESEARCH'}
+        self.assertEqual({item['slot_id'] for item in holds if item['reason'] == 'research_review_pending'}, expected_research)
+        self.assertEqual(len(holds), sum(map(len, (expected_empty, expected_missing, expected_source, expected_competency, expected_research))))
 
     def test_empty_slot_accepts_blank_flags(self):
         result = self.audit_mutation(lambda rows: None)
