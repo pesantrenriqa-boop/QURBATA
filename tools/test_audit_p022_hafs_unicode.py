@@ -573,5 +573,36 @@ class CheckerTests(unittest.TestCase):
                     else:
                         register.write_text("| P022 | Ikhfa syafawi |\n", encoding="utf-8")
 
+    def test_corrupted_zip_member_fails_closed_without_report(self):
+        from unittest.mock import patch
+        import importlib.util
+        import zipfile
+        spec = importlib.util.spec_from_file_location("checker", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            archive = root / "corrupt.zip"
+            data = root / "verses.csv"
+            csv_text = "sura_no,aya_no,aya_text_unicode\n105,4,SLOT_01\n"
+            data.write_text(csv_text, encoding="utf-8")
+            with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_STORED) as z:
+                z.writestr("verses.csv", csv_text)
+            blob = bytearray(archive.read_bytes())
+            payload_offset = blob.index(csv_text.encode("utf-8"))
+            blob[payload_offset] ^= 1
+            archive.write_bytes(blob)
+            register = root / "register.md"
+            register.write_text("| P022 | Ikhfa syafawi |\n", encoding="utf-8")
+            output = root / "report.json"
+            argv = ["checker", "--archive", str(archive), "--data", str(data),
+                    "--register", str(register), "--output", str(output)]
+            with patch.object(module, "EXPECTED_SHA256", module.sha256(archive)):
+                with patch.object(sys, "argv", argv):
+                    with self.assertRaises(SystemExit) as error:
+                        module.main()
+            self.assertIn("unreadable or corrupted source archive", str(error.exception))
+            self.assertFalse(output.exists())
+
 if __name__ == "__main__":
     unittest.main()
