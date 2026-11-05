@@ -10,6 +10,15 @@
 - Published dataset columns include `sura_no`, `aya_no`, and `aya_text_unicode`.
 - **Scope:** The publisher's metadata and checksum have been checked against the official page. **The actual ZIP has not been downloaded, hashed, or matched against the register as part of this metadata check.**
 
+## Critical product distinction
+
+The official publisher lists **two different Hafs downloads** on the same page:
+
+- **Unicode Uthmanic Font (Hafs Narration)**: update **15.0**, last modified **2026-09-30**, SHA-256 **227E6B1564D980F2BD09C2C35EBFB0330AC268C79A7C247CD1AB665BC635F245**. **This is the only expected archive for the P022 verifier.**
+- **Unicode Uthmanic Font (Hafs Narration) for smart devices**: update **6.0**, last modified **2022-06-30**, and the publisher lists MD5/SHA-1 for this different package. **Do not substitute this archive**, even though it also has Quran verse text and developer CSV/JSON files.
+
+The publisher page's listed checksum is **metadata, not evidence that a local download has passed hashing**. No third-party mirror or similarly named archive can satisfy the source gate without matching the published SHA-256.
+
 ## Safe local procedure
 
 1. Obtain the **Hafs Unicode version 15.0** archive directly from the official publisher page above. Do not use a mirror or a similarly named Hafs product.
