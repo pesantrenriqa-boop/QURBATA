@@ -127,6 +127,14 @@ def p036_hafalan_advisory(content):
         )
         references.append(found.group(1) if found else None)
     warnings = []
+    expected = ["112:1", "112:2", "112:3", "112:4",
+                "113:1", "113:2", "113:3", "113:4"]
+    for index, (actual, required) in enumerate(zip(references, expected), 1):
+        if actual != required:
+            warnings.append(
+                f"P036 K{index:02d}: declared source {actual or 'missing'} "
+                f"differs from documented {required}; review hafalan sequence"
+            )
     if references[4:8] == ["113:1", "113:2", "113:3", "113:4"]:
         warnings.append(
             "P036: QS 113:1-4 are present, but QS 113:5 is not in the active "
