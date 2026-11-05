@@ -222,6 +222,20 @@ class CoverageTests(unittest.TestCase):
         _, errors = module.audit("\n".join(lines))
         self.assertTrue(any("inactive K slots" in e for e in errors))
 
+    def test_source_advisory_finds_candidate_after_audit_note(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P040 |"):
+                cells = line.split("|")
+                cells[3] = "أَوَّلٌ [AUDIT: periksa waqaf; KANDIDAT QS 2:2]"
+                cells[4] = "ثَانٍ [AUDIT: periksa rasm; KANDIDAT QS 2:2]"
+                lines[i] = "|".join(cells)
+                break
+        groups = module.repeated_quran_loci("\n".join(lines))
+        self.assertTrue(any(page == "P040" and reference == "QS 2:2"
+                            and slots == ["K01", "K02"]
+                            for page, reference, slots in groups))
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
