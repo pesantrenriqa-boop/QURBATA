@@ -555,6 +555,20 @@ class CoverageTests(unittest.TestCase):
         self.assertIn(expected, output.getvalue())
         self.assertNotIn("TOTAL: INVALID STRUCTURE", output.getvalue())
 
+    def test_p013_rejects_unbracketed_source_label(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P013 |"):
+                cells = line.split("|")
+                cells[5] = "contoh tanpa anotasi KANDIDAT QS 27:59"
+                lines[i] = "|".join(cells)
+                break
+        _, errors = module.audit("\n".join(lines))
+        self.assertTrue(
+            any("P013 K03: expected exactly one known Mad Farq reference" in e
+                for e in errors), errors
+        )
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
