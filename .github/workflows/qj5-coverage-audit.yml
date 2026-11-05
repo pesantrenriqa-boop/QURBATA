@@ -41,23 +41,22 @@ jobs:
           {
             echo '## QURBATA Jilid 5 — audit evidence'
             echo
-            echo '| Check | Outcome |'
-            echo '|---|---|'
+            echo '| Check | Step outcome | Evidence |'
+            echo '|---|---|---|'
             if [ -f qj5-coverage-audit.log ]; then
-              echo '| Register coverage | Log captured (see step outcome below) |'
-              grep '^TOTAL:' qj5-coverage-audit.log || true
+              coverage_summary=$(grep '^TOTAL:' qj5-coverage-audit.log | tail -n 1 || true)
+              echo "| Register coverage | ${{ steps.coverage_audit.outcome }} | ${coverage_summary:-Log captured; no TOTAL line} |"
             else
-              echo '| Register coverage | Log missing |'
+              echo '| Register coverage | ${{ steps.coverage_audit.outcome }} | Log missing |'
             fi
             if [ -f qj5-regression-tests.log ]; then
-              echo '| Regression tests | Log captured (see step outcome below) |'
-              grep -E '^(Ran [0-9]+ tests|OK|FAILED)' qj5-regression-tests.log || true
+              tests_summary=$(grep -E '^Ran [0-9]+ tests' qj5-regression-tests.log | tail -n 1 || true)
+              result_summary=$(grep -E '^(OK|FAILED)' qj5-regression-tests.log | tail -n 1 || true)
+              echo "| Regression tests | ${{ steps.regression_tests.outcome }} | ${tests_summary:-No test count}; ${result_summary:-No result line} |"
             else
-              echo '| Regression tests | Log missing |'
+              echo '| Regression tests | ${{ steps.regression_tests.outcome }} | Log missing |'
             fi
             echo
-            echo 'Coverage step outcome: ${{ steps.coverage_audit.outcome }}'
-            echo 'Regression step outcome: ${{ steps.regression_tests.outcome }}'
             echo 'The overall job conclusion remains authoritative; captured logs do not imply success.'
           } >> "$GITHUB_STEP_SUMMARY"
       - name: Preserve audit and test evidence
