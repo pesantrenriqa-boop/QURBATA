@@ -154,7 +154,7 @@ def qj5_alfalaq_completion_advisory(content):
         capacity = 16 if int(cells[0][1:]) <= 20 else 8
         for value in cells[2:2 + capacity]:
             match = re.search(
-                r"\bKANDIDAT(?:\s+QS|\s*;\s*(?:MUROJAAH|HAFALAN UNIT)\s+QS)"
+                r"\[\s*KANDIDAT(?:\s+QS|\s*;\s*(?:MUROJAAH|HAFALAN UNIT)\s+QS)"
                 r"\s+(\d{1,3}:\d{1,3})\b", value
             )
             if match:
