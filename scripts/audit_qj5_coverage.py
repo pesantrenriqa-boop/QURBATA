@@ -36,11 +36,14 @@ def audit(content):
             for index, example in enumerate(examples, 1):
                 if not example or example == "—":
                     continue
-                # Notes may mention other ayat: validate only the declared candidate.
+                # Only declared candidate sources count; a bare QS immediately
+                # following its semicolon is a second unlabelled source.
                 declared = re.findall(
-                    r"\bKANDIDAT\s+QS\s+(\d{1,3}:\d{1,3})\b", example
+                    r"\bKANDIDAT\s+QS\s+([^\s;\],)]+)", example
                 )
                 refs = ["QS " + ref for ref in declared]
+                if re.search(r"\bKANDIDAT\s+QS\s+[^;\]]+;\s*QS\s+", example):
+                    refs.append("ambiguous second source")
                 if len(refs) != 1 or refs[0] not in allowed_refs:
                     errors.append(f"P013 K{index:02d}: expected exactly one known Mad Farq reference")
                     continue
