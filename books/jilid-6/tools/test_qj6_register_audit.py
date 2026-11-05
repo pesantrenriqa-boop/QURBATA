@@ -86,6 +86,19 @@ class RegisterAuditRegression(unittest.TestCase):
         self.assertTrue(any("source verified without source_id" in error for error in result["errors"]))
         self.assertFalse(result["print_approved"])
 
+    def test_hold_summary_counts_records_and_distinct_slots(self):
+        from collections import Counter
+        result = MODULE.audit()
+        holds = result["release_holds"]
+        summary = result["release_hold_summary"]
+        self.assertEqual(summary["hold_records"], len(holds))
+        self.assertEqual(summary["unique_held_slots"],
+                         len({item["slot_id"] for item in holds}))
+        self.assertEqual(summary["by_reason"],
+                         dict(sorted(Counter(item["reason"] for item in holds).items())))
+        self.assertEqual(summary["unique_held_slots"], 360)
+        self.assertGreater(summary["hold_records"], summary["unique_held_slots"])
+
     def test_populated_p017_cases_require_independent_msi_review(self):
         expected = {row["slot_id"] for row in self.rows
                     if row["page_id"] == "QJ6-P017" and row["review_status"] != "EMPTY"}
