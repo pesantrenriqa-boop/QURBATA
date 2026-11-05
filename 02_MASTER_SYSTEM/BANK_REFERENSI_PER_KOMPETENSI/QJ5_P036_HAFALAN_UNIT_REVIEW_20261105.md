@@ -26,3 +26,9 @@ Pencarian tekstual terhadap **register aktif Jilid 5** menemukan sebutan QS 113:
 **Batas temuan:** pemeriksaan ini hanya berlaku untuk satu file register Jilid 5, bukan keseluruhan master kurikulum, jilid lain, atau jadwal pengajar. Jangan menyimpulkan QS 113:5 tidak ada di seluruh sistem.
 
 **Tindakan lanjutan yang diperlukan:** cocokkan dengan master kompetensi resmi dan register hafalan jilid lain; jika tidak ada, minta keputusan penempatan unit QS 113:5 tanpa melanggar kapasitas P036. Bukti penempatan harus mencantumkan file, halaman, slot, dan status tashih.
+
+## Koreksi pemeriksaan lintas halaman — 2026-11-05
+
+Pemeriksaan yang lebih tepat terhadap label sumber kandidat menunjukkan **QS 113:5 memang terdapat pada P001 dan P018** sebagai kandidat latihan bacaan/mad. Dengan demikian, pernyataan sebelumnya bahwa tidak ada slot kandidat QS 113:5 di seluruh Jilid 5 **dicabut**.
+
+Yang masih benar: **P036 K05–K08 hanya mencakup QS 113:1–4**. Penempatan QS 113:5 pada P001/P018 tidak otomatis menjadi bukti setoran hafalan utuh di P036. Diperlukan keputusan guru/kurikulum tentang apakah hafalan Al-Falaq ayat kelima disetor lintas halaman atau melalui unit lain. Semua kandidat tetap belum tashih.
