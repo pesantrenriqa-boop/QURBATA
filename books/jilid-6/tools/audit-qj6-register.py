@@ -159,6 +159,12 @@ def audit(path=CSV_PATH):
         if row["review_status"] != "EMPTY"
         and row["competency_verified"].lower() != "yes"
     )
+    # Online glyph matches do not establish Mushaf Standar Indonesia approval.
+    # Hold these specific cases until direct verse-level MSI collation is documented.
+    release_holds.extend(
+        {"slot_id": row["slot_id"], "reason": "msi_sign_collation_pending"}
+        for row in rows if row["slot_id"] in msi_pending
+    )
     # Research cases require an explicit expert decision independent of flags.
     release_holds.extend(
         {"slot_id": row["slot_id"], "reason": "research_review_pending"}
