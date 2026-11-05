@@ -518,7 +518,9 @@ class CoverageTests(unittest.TestCase):
         self.assertTrue(any("duplicate page: P036" in e for e in errors), errors)
         self.assertEqual(sum(row[0] == "P036" for row in rows), 2)
         # A clean-looking hafalan sequence cannot override structural failure.
-        self.assertTrue(module.p036_hafalan_advisory(content))
+        warnings = module.p036_hafalan_advisory(content)
+        self.assertTrue(any("duplicate hafalan rows (2)" in w
+                            for w in warnings), warnings)
 
     def test_invalid_structure_never_reports_valid_coverage_total(self):
         # A duplicated page must invalidate the displayed aggregate.
