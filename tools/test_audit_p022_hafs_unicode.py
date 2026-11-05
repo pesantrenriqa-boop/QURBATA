@@ -461,5 +461,43 @@ class CheckerTests(unittest.TestCase):
             self.assertIn(module.REFERENCES[-1], str(error.exception))
             self.assertFalse(output.exists())
 
+    def test_unicode_normalization_difference_stays_on_hold(self):
+        from unittest.mock import patch
+        import importlib.util
+        import zipfile
+        import unicodedata
+        spec = importlib.util.spec_from_file_location("checker", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            csv_text = "sura_no,aya_no,aya_text_unicode\n"
+            slots = []
+            for i, ref in enumerate(module.REFERENCES, 1):
+                sura, aya = ref.split(":")
+                passage = "\u0622" if i == 1 else f"SLOT_{i:02d}"
+                source_verse = unicodedata.normalize("NFD", passage) if i == 1 else passage
+                csv_text += f"{sura},{aya},{source_verse}\n"
+                slots.append(f"{passage} [KANDIDAT QS {ref}]")
+            archive = root / "fixture.zip"
+            with zipfile.ZipFile(archive, "w") as z:
+                z.writestr("verses.csv", csv_text)
+            data = root / "verses.csv"
+            data.write_text(csv_text, encoding="utf-8")
+            register = root / "register.md"
+            register.write_text("| P022 | Ikhfa syafawi | " + " | ".join(slots) + " | — |\n", encoding="utf-8")
+            output = root / "screening.json"
+            argv = ["checker", "--archive", str(archive), "--data", str(data),
+                    "--register", str(register), "--output", str(output)]
+            with patch.object(module, "EXPECTED_SHA256", module.sha256(archive)):
+                with patch.object(sys, "argv", argv):
+                    with self.assertRaises(SystemExit) as error:
+                        module.main()
+            self.assertIn("failed exact Unicode screening", str(error.exception))
+            report = json.loads(output.read_text(encoding="utf-8"))
+            self.assertEqual(report["slots"][0]["status"], "HOLD_REVIEW")
+            self.assertEqual(report["approval_status"], "HOLD")
+            self.assertIs(report["print_approved"], False)
+
 if __name__ == "__main__":
     unittest.main()
