@@ -48,6 +48,8 @@ def audit(path=CSV_PATH):
     msi_sign_checks = []
     for r in rows:
         ident, status = r["slot_id"], r["review_status"]
+        if r["kind"] not in ("tartil", "hafalan", "bahasa-arab", "akhlak-hadis"):
+            errors.append(f"{ident}: unknown slot kind {r['kind']!r}; fail closed")
         if status not in ("EMPTY", "CANDIDATE", "RESEARCH"):
             errors.append(f"{ident}: unknown review_status {status!r}; fail closed")
         if ident in msi_pending:
