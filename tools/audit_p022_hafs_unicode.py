@@ -109,6 +109,8 @@ def main():
         sys.exit("HOLD: output report already exists; refusing to overwrite audit evidence")
     print(f"Report saved: {a.output}; exact matches: {sum(x['exact_unicode_substring'] for x in results)}/16")
     print("Exact substring matching is a screening gate, not final rasm or print approval.")
+    if any(not item["exact_unicode_substring"] for item in results):
+        sys.exit("HOLD: one or more P022 slots failed exact Unicode screening; inspect report")
 
 if __name__ == "__main__":
     main()
