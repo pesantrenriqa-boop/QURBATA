@@ -310,5 +310,25 @@ class CheckerTests(unittest.TestCase):
             self.assertEqual(report["slots"][-1]["status"], "HOLD_REVIEW")
             self.assertIs(report["print_approved"], False)
 
+    def test_source_parser_rejects_ambiguous_json_and_missing_csv_headers(self):
+        from unittest.mock import patch
+        import importlib.util
+        import zipfile
+        spec = importlib.util.spec_from_file_location("checker", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            ambiguous = root / "verses.json"
+            ambiguous.write_text(json.dumps({"first": [], "second": []}), encoding="utf-8")
+            with self.assertRaises(SystemExit) as error:
+                module.read_rows(ambiguous)
+            self.assertIn("exactly one verse list", str(error.exception))
+            incomplete = root / "verses.csv"
+            incomplete.write_text("sura_no,aya_no\n105,4\n", encoding="utf-8")
+            with self.assertRaises(SystemExit) as error:
+                module.read_rows(incomplete)
+            self.assertIn("missing required Quran verse columns", str(error.exception))
+
 if __name__ == "__main__":
     unittest.main()
