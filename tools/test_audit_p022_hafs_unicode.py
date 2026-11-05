@@ -511,5 +511,17 @@ class CheckerTests(unittest.TestCase):
             with self.assertRaises(csv.Error):
                 module.read_rows(data)
 
+    def test_duplicate_json_keys_fail_closed(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("checker", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as d:
+            data = Path(d) / "verses.json"
+            data.write_text('{"verses":[{"sura_no":105,"sura_no":88,"aya_no":4,"aya_text_unicode":"TEST"}]}', encoding="utf-8")
+            with self.assertRaises(SystemExit) as error:
+                module.read_rows(data)
+            self.assertIn("duplicate key: sura_no", str(error.exception))
+
 if __name__ == "__main__":
     unittest.main()
