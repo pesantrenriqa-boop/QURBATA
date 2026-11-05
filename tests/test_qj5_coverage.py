@@ -297,6 +297,36 @@ class CoverageTests(unittest.TestCase):
                     self.fail("Unclassified source marker in register: " + cells[0])
         self.assertEqual(counts, {"quran": 457, "arabic": 8, "hadith": 3})
 
+    def test_p013_ignores_qs_cross_reference_in_review_note(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P013 |"):
+                cells = line.split("|")
+                cells[3] = cells[3].replace(
+                    "KANDIDAT QS 27:59",
+                    "AUDIT: bandingkan QS 6:143; KANDIDAT QS 27:59",
+                )
+                lines[i] = "|".join(cells)
+                break
+        _, errors = module.audit("\n".join(lines))
+        self.assertFalse(any("P013 K01: expected exactly one" in error
+                             for error in errors), errors)
+
+    def test_p013_rejects_two_declared_sources(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P013 |"):
+                cells = line.split("|")
+                cells[3] = cells[3].replace(
+                    "KANDIDAT QS 27:59",
+                    "KANDIDAT QS 27:59; KANDIDAT QS 6:143",
+                )
+                lines[i] = "|".join(cells)
+                break
+        _, errors = module.audit("\n".join(lines))
+        self.assertTrue(any("P013 K01: expected exactly one" in error
+                            for error in errors), errors)
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
