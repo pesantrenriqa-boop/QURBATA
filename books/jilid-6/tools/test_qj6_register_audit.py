@@ -54,10 +54,17 @@ class RegisterAuditRegression(unittest.TestCase):
         self.assertTrue(any("internal source text differs" in x for x in self.audit_mutation(change)["errors"]))
 
     def test_priority_waqf_glyph_removal_is_error(self):
-        def change(rows):
-            row = next(row for row in rows if row["slot_id"] == "QJ6-P016-S03")
-            row["text_uthmani"] = row["text_uthmani"].replace("ۚ", "")
-        self.assertTrue(any("expected online-source sign" in x for x in self.audit_mutation(change)["errors"]))
+        for slot_id, glyph in (
+            ("QJ6-P015-S01", "ۘ"),
+            ("QJ6-P015-S06", "ۘ"),
+            ("QJ6-P016-S03", "ۚ"),
+        ):
+            with self.subTest(slot_id=slot_id):
+                def change(rows):
+                    row = next(row for row in rows if row["slot_id"] == slot_id)
+                    row["text_uthmani"] = row["text_uthmani"].replace(glyph, "")
+                self.assertTrue(any("expected online-source sign" in x
+                                    for x in self.audit_mutation(change)["errors"]))
 
 
 if __name__ == "__main__":
