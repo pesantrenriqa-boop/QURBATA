@@ -75,7 +75,7 @@ class CheckerTests(unittest.TestCase):
 
     def test_reference_guard_present(self):
         source = SCRIPT.read_text(encoding="utf-8")
-        self.assertIn('re.search(r"\\bQS\\s+', source)
+        self.assertIn('re.findall(r"\\bQS\\s+', source)
         self.assertIn("source reference mismatch", source)
 
     def test_reference_mismatch_fails_closed_with_verified_fixture(self):
