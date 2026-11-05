@@ -67,6 +67,24 @@ class RegisterAuditRegression(unittest.TestCase):
         )
         self.assertFalse(result["print_approved"])
 
+    def test_competency_verification_requires_reviewer(self):
+        def change(rows):
+            row = next(row for row in rows if row["slot_id"] == "QJ6-P002-S09")
+            row["competency_verified"] = "yes"
+            row["reviewer"] = ""
+        result = self.audit_mutation(change)
+        self.assertTrue(any("competency verified without reviewer" in error for error in result["errors"]))
+        self.assertFalse(result["print_approved"])
+
+    def test_source_verification_requires_source_id(self):
+        def change(rows):
+            row = next(row for row in rows if row["slot_id"] == "QJ6-P002-S09")
+            row["source_verified"] = "yes"
+            row["source_id"] = ""
+        result = self.audit_mutation(change)
+        self.assertTrue(any("source verified without source_id" in error for error in result["errors"]))
+        self.assertFalse(result["print_approved"])
+
     def test_unknown_review_status_fails_closed(self):
         for invalid in ("APPROVED", "PRINT_READY", "", "CANDIDATE "):
             with self.subTest(status=invalid):
