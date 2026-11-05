@@ -92,6 +92,9 @@ def main():
         if key in index:
             sys.exit(f"HOLD: duplicate verse reference in dataset: {key}")
         index[key] = value
+    missing = [ref for ref in REFERENCES if tuple(map(int, ref.split(":"))) not in index]
+    if missing:
+        sys.exit(f"HOLD: verified dataset is missing required P022 verse references: {', '.join(missing)}")
     lines = a.register.read_text(encoding="utf-8").splitlines()
     candidates = [x for x in lines if x.startswith("| P022 | Ikhfa syafawi |")
                   and len(x.split("|")) >= 19]
