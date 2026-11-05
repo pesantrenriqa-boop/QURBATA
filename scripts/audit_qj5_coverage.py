@@ -190,7 +190,10 @@ def main():
     for page, filled, capacity, empty, sah in rows:
         print(f"{page} | {filled} | {capacity} | {empty} | {sah}")
     print(f"TOTAL: {sum(x[1] for x in rows)}/{sum(x[2] for x in rows)} filled; {sum(x[3] for x in rows)} empty")
-    print("P013: 12 unfilled slots are an intentional pending curriculum exception, not permission to duplicate Quran text.")
+    p013 = next((row for row in rows if row[0] == "P013"), None)
+    if p013 is not None:
+        print(f"P013: {p013[3]} unfilled slots; pending curriculum review. "
+              "Empty slots are not permission to duplicate Quran text.")
     for error in errors:
         print("ERROR:", error, file=sys.stderr)
     duplicates = repeated_phrases(content)
