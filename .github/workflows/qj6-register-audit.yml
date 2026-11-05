@@ -60,6 +60,11 @@ jobs:
           expected_p017 = {r['slot_id'] for r in rows if r['page_id'] == 'QJ6-P017' and r['review_status'] != 'EMPTY'}
           assert {h['slot_id'] for h in holds if h['reason'] == 'waqf_la_msi_review_pending'} == expected_p017
           assert len(holds) == sum(map(len, (expected_empty, expected_missing_sign, expected_source, expected_competency, expected_research, expected_msi, expected_p017)))
+          summary = report['release_hold_summary']
+          assert summary['hold_records'] == len(holds)
+          assert summary['unique_held_slots'] == len({h['slot_id'] for h in holds}) == 360
+          from collections import Counter
+          assert summary['by_reason'] == dict(sorted(Counter(h['reason'] for h in holds).items()))
           print('Committed audit release holds and publication gate verified.')
           PY
       - name: Generate isolated 360-slot CSV
