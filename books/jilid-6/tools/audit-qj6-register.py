@@ -159,6 +159,13 @@ def audit(path=CSV_PATH):
         if row["review_status"] != "EMPTY"
         and row["competency_verified"].lower() != "yes"
     )
+    # P017 requires a dedicated waqf-la decision; a bare 'لا' substring
+    # can also be ordinary Quranic negation and is not sufficient evidence.
+    release_holds.extend(
+        {"slot_id": row["slot_id"], "reason": "waqf_la_msi_review_pending"}
+        for row in rows
+        if row["page_id"] == "QJ6-P017" and row["review_status"] != "EMPTY"
+    )
     # Online glyph matches do not establish Mushaf Standar Indonesia approval.
     # Hold these specific cases until direct verse-level MSI collation is documented.
     release_holds.extend(
