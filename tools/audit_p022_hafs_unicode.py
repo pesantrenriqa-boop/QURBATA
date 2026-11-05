@@ -51,7 +51,10 @@ def read_rows(path):
                         sys.exit(f"HOLD: JSON source has duplicate key: {key}")
                     result[key] = value
                 return result
-            data = json.load(f, object_pairs_hook=reject_duplicate_keys)
+            def reject_invalid_number(value):
+                sys.exit(f"HOLD: invalid JSON numeric constant: {value}")
+            data = json.load(f, object_pairs_hook=reject_duplicate_keys,
+                             parse_constant=reject_invalid_number)
             if isinstance(data, dict):
                 candidates = [v for v in data.values() if isinstance(v, list)]
                 if len(candidates) != 1:
