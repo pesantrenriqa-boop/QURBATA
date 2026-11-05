@@ -44,6 +44,18 @@ def audit(path=CSV_PATH):
     for row in rows:
         page_targets[row["page_id"]].add(row["competency"].strip())
         page_kinds[row["page_id"]].add(row["kind"])
+    # Approved structural allocation: 36 tartil pages, 2 hafalan,
+    # 1 Arabic and 1 akhlak/hadith. This is a schema check only.
+    special_page_kinds = {
+        "QJ6-P018": "hafalan",
+        "QJ6-P028": "bahasa-arab",
+        "QJ6-P036": "hafalan",
+        "QJ6-P038": "akhlak-hadis",
+    }
+    for page_id, actual_kinds in sorted(page_kinds.items()):
+        expected_kind = special_page_kinds.get(page_id, "tartil")
+        if actual_kinds != {expected_kind}:
+            errors.append(f"{page_id}: expected material kind {expected_kind}, found {sorted(actual_kinds)}")
     for page_id in sorted(page_targets):
         if len(page_targets[page_id]) != 1 or "" in page_targets[page_id]:
             errors.append(f"{page_id}: inconsistent or blank page competency")
