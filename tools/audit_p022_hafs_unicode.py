@@ -25,6 +25,9 @@ def verify_dataset_in_archive(archive, data):
         sys.exit("HOLD: archive is not ZIP; dataset provenance cannot be established")
     digest = sha256(data)
     with zipfile.ZipFile(archive) as z:
+        names = [info.filename for info in z.infolist() if not info.is_dir()]
+        if len(names) != len(set(names)):
+            sys.exit("HOLD: archive contains duplicate member names; source provenance is ambiguous")
         for info in z.infolist():
             if info.is_dir():
                 continue
