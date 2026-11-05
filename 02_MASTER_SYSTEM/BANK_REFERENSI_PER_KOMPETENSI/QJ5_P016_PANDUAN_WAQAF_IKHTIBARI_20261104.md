@@ -51,3 +51,30 @@ Keputusan di bawah adalah **penugasan fungsi latihan sementara**, bukan izin men
 **Aturan pencatatan:** 6 slot terisi tetap 6 kandidat administrasi, tetapi hanya **3 kutipan identik yang berbeda secara tekstual** di antara pasangan tersebut. Bila tim kurikulum menghendaki seluruh 16 slot berbeda lafaz, ketiga slot kedua (K04, K08, K13) berstatus **perlu penggantian setelah tashih**; jangan mengganti dengan ayat yang belum diverifikasi. Jika fungsi latihan berjenjang disetujui, ketiganya dapat dipertahankan sebagai pengulangan yang disengaja dengan label tugas berbeda.
 
 **Gerbang keputusan:** pemeriksa Al-Qur'an menyetujui rasm dan titik waqaf; penyusun kurikulum menyetujui tujuan ganda; guru menguji instruksi di kelas; barulah status slot ditinjau. Sampai itu terjadi, semua Sah tetap nol.
+
+## Matriks keputusan lapangan P016 — 2026-11-05
+
+**Status seluruh baris: menunggu pemeriksaan ahli dan uji guru.** Matriks ini hanya menguraikan fungsi slot dari register, tidak mengubah rasm maupun mengesahkan hukum bacaan.
+
+| Slot | Sasaran | Instruksi pengujian yang diusulkan | Bukti yang harus disimpan |
+|---|---|---|---|
+| K01 | قُرَيْشٍ | Baca QS 106:1 dan berhenti di akhir ayat | Audio waqaf dan identifikasi huruf lin |
+| K02 | خَوْفٍ | Baca QS 106:4 dan berhenti pada akhir ayat | Audio waqaf; catatan tanwin |
+| K03 | الْبَيْتِ | Temukan kata sasaran dan posisi huruf lin | Penandaan kata oleh peserta |
+| K04 | الْبَيْتِ | Bandingkan wasal dan waqaf pada kutipan identik K03 | Dua contoh audio dan umpan balik guru |
+| K05 | الْبَيْتِ | Tunjukkan pengaruh tambahan konteks رَبَّ pada kutipan QS 106:3 | Penjelasan bahwa sumber sama, bukan ayat baru |
+| K06 | كَيْفَ | Waqaf ikhtibari setelah kata sasaran pada QS 105:1 | Penanda titik berhenti dan rekaman |
+| K07 | رَيْبَ | Identifikasi target di tengah QS 2:2, bukan pada فِيهِ | Penandaan target dan keterangan wasal |
+| K08 | رَيْبَ | Waqaf ikhtibari, lalu ibtida sesuai keputusan guru | Rekaman waqaf dan kelanjutan bacaan |
+| K09 | رَيْبَ | Terapkan keterampilan pada konteks kutipan lebih panjang QS 2:2 | Rekaman dan perbandingan dengan K07/K08 |
+| K10 | الْغَيْبِ | Waqaf ikhtibari pada kata sasaran QS 2:3 | Audio dan catatan posisi waqaf |
+| K11 | الْمَوْتِ | Identifikasi sasaran pada QS 50:19 | Penandaan kata dan alasan bacaan |
+| K12 | خَوْفٌ | Waqaf ikhtibari pada QS 2:38, periksa perubahan akhir | Rekaman dan koreksi guru |
+| K13 | الْمَوْتِ | Uji mandiri tanpa petunjuk kata sasaran; teks identik K11 | Rekaman unjuk kerja |
+| K14 | كَيْفَ | Terapkan waqaf ikhtibari pada konteks lebih panjang QS 105:1 | Rekaman; pembeda dari K06 |
+| K15 | اللَّيْلِ | Waqaf ikhtibari pada kata sasaran QS 92:1 | Rekaman; jangan salah berhenti di يَغْشَىٰ |
+| K16 | اللَّيْلِ | Waqaf ikhtibari pada kata sasaran QS 93:2 | Rekaman; bandingkan konteks QS 92:1 |
+
+**Keputusan kurikulum yang belum boleh diasumsikan:** (1) apakah pengulangan K03/K04, K07/K08, K11/K13 diterima sebagai latihan bertahap; (2) apakah K05 dan K09 layak dihitung sebagai variasi konteks, bukan variasi sumber; (3) apakah titik waqaf ikhtibari yang diusulkan layak digunakan untuk pemula. Setiap keputusan harus menyebut penanggung jawab, tanggal, dan bukti.
+
+**Larangan promosi otomatis:** 16 slot adalah kandidat administratif, bukan 16 sumber unik dan bukan 16 slot Sah. Jangan menambah Sah atau mengubah naskah mushaf berdasarkan matriks ini.
