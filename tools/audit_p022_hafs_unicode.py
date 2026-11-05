@@ -102,7 +102,10 @@ def main():
     a.output.parent.mkdir(parents=True, exist_ok=True)
     try:
         with a.output.open("x", encoding="utf-8") as report:
-            json.dump({"sha256_verified": True, "archive_member": source_member,
+            json.dump({"sha256_verified": True, "archive_sha256": digest,
+                       "dataset_sha256": sha256(a.data),
+                       "register_sha256": sha256(a.register),
+                       "archive_member": source_member,
                        "screening_only": True, "print_approved": False, "slots": results},
                       report, ensure_ascii=False, indent=2)
     except FileExistsError:
