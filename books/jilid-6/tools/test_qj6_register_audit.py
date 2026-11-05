@@ -129,6 +129,23 @@ class RegisterAuditRegression(unittest.TestCase):
         )
         self.assertFalse(result["print_approved"])
 
+    def test_whole_page_material_reclassification_is_rejected(self):
+        for page_id, wrong_kind in (
+            ("QJ6-P018", "tartil"),
+            ("QJ6-P028", "tartil"),
+            ("QJ6-P036", "tartil"),
+            ("QJ6-P038", "tartil"),
+            ("QJ6-P002", "hafalan"),
+        ):
+            with self.subTest(page_id=page_id):
+                def change(rows):
+                    for row in rows:
+                        if row["page_id"] == page_id:
+                            row["kind"] = wrong_kind
+                result = self.audit_mutation(change)
+                self.assertTrue(any("expected material kind" in e for e in result["errors"]))
+                self.assertFalse(result["print_approved"])
+
     def test_mixed_competency_on_one_page_is_rejected(self):
         def change(rows):
             next(row for row in rows if row["slot_id"] == "QJ6-P002-S09")["competency"] = "Wrong target"
