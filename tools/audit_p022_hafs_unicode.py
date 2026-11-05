@@ -84,7 +84,10 @@ def main():
     digest = sha256(a.archive)
     if digest.lower() != EXPECTED_SHA256:
         sys.exit("HOLD: SHA-256 mismatch; refusing to compare unverified source")
-    source_member = verify_dataset_in_archive(a.archive, a.data)
+    try:
+        source_member = verify_dataset_in_archive(a.archive, a.data)
+    except (OSError, zipfile.BadZipFile, RuntimeError, EOFError) as exc:
+        sys.exit(f"HOLD: unreadable or corrupted source archive: {exc}")
     try:
         rows = read_rows(a.data)
     except (UnicodeError, csv.Error, json.JSONDecodeError) as exc:
