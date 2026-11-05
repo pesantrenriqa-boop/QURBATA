@@ -256,6 +256,21 @@ class CoverageTests(unittest.TestCase):
                             and slots == ["K01", "K02"]
                             for page, reference, slots in groups))
 
+    def test_murajaah_source_recognized_but_not_hadith(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P036 |"):
+                cells = line.split("|")
+                cells[4] = cells[3]  # Repeat the genuine P036 K01 MUROJAAH source in K02
+                lines[i] = "|".join(cells)
+                break
+        groups = module.repeated_quran_loci("\n".join(lines))
+        self.assertTrue(any(page == "P036" and reference == "QS 112:1"
+                            and slots == ["K01", "K02"]
+                            for page, reference, slots in groups))
+        self.assertFalse(any(page == "P038" and "BUKHARI" in reference
+                             for page, reference, _ in groups))
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
