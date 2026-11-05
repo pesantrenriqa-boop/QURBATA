@@ -53,7 +53,9 @@ jobs:
           expected_competency = {r['slot_id'] for r in rows if r['review_status'] != 'EMPTY' and r['competency_verified'].lower() != 'yes'}
           assert {h['slot_id'] for h in holds if h['reason'] == 'source_unverified'} == expected_source
           assert {h['slot_id'] for h in holds if h['reason'] == 'competency_unverified'} == expected_competency
-          assert len(holds) == sum(map(len, (expected_empty, expected_missing_sign, expected_source, expected_competency)))
+          expected_research = {r['slot_id'] for r in rows if r['review_status'] == 'RESEARCH'}
+          assert {h['slot_id'] for h in holds if h['reason'] == 'research_review_pending'} == expected_research
+          assert len(holds) == sum(map(len, (expected_empty, expected_missing_sign, expected_source, expected_competency, expected_research)))
           print('Committed audit release holds and publication gate verified.')
           PY
       - name: Generate isolated 360-slot CSV
