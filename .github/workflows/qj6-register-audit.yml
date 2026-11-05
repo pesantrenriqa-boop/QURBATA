@@ -49,7 +49,11 @@ jobs:
           assert report['filled'] == len(rows) - len(expected_empty)
           assert actual_empty == expected_empty
           assert actual_missing_sign == expected_missing_sign
-          assert len(holds) == len(expected_empty) + len(expected_missing_sign)
+          expected_source = {r['slot_id'] for r in rows if r['review_status'] != 'EMPTY' and r['source_verified'].lower() != 'yes'}
+          expected_competency = {r['slot_id'] for r in rows if r['review_status'] != 'EMPTY' and r['competency_verified'].lower() != 'yes'}
+          assert {h['slot_id'] for h in holds if h['reason'] == 'source_unverified'} == expected_source
+          assert {h['slot_id'] for h in holds if h['reason'] == 'competency_unverified'} == expected_competency
+          assert len(holds) == sum(map(len, (expected_empty, expected_missing_sign, expected_source, expected_competency)))
           print('Committed audit release holds and publication gate verified.')
           PY
       - name: Generate isolated 360-slot CSV
