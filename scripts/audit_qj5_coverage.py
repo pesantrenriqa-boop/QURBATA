@@ -176,7 +176,7 @@ def qj5_alfalaq_source_locations(content):
         page = cells[0]
         capacity = 16 if int(page[1:]) <= 20 else 8
         for index, value in enumerate(cells[2:2 + capacity], 1):
-            if re.search(r"\bKANDIDAT\s+QS\s+113:5\b", value):
+            if re.search(r"\[\s*KANDIDAT\s+QS\s+113:5\b", value):
                 locations.append(f"{page} K{index:02d}")
     return locations
 
