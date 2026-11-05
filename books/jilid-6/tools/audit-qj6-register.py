@@ -50,6 +50,14 @@ def audit(path=CSV_PATH):
         expected_page_id = row["slot_id"].rsplit("-S", 1)[0]
         if row["page_id"] != expected_page_id:
             errors.append(f"{row['slot_id']}: page_id does not match full slot ID")
+    # Slot IDs must also be in canonical reading order; sorting them later
+    # could conceal accidental row moves in a print-production pipeline.
+    canonical_order = [
+        f"QJ6-P{page:03d}-S{slot:02d}"
+        for page in range(1, 41) for slot in range(1, 10)
+    ]
+    if ids != canonical_order:
+        errors.append("Register rows are not in canonical P001-S01 to P040-S09 order")
     # Each nine-slot page has exactly one curriculum target and material kind.
     # This checks internal consistency, not external curriculum authorization.
     page_targets = defaultdict(set)
