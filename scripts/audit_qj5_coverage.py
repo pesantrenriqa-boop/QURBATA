@@ -38,9 +38,16 @@ def audit(content):
                     continue
                 # Only declared candidate sources count; a bare QS immediately
                 # following its semicolon is a second unlabelled source.
-                declared = re.findall(
-                    r"\bKANDIDAT\s+QS\s+([^\s;\],)]+)", example
-                )
+                # Source labels must be inside a bracketed candidate annotation;
+                # plain narrative or unbracketed quoted labels are not evidence.
+                annotations = re.findall(r"\[([^\]]*)\]", example)
+                declared = [
+                    ref
+                    for annotation in annotations
+                    for ref in re.findall(
+                        r"\bKANDIDAT\s+QS\s+([^\s;\],)]+)", annotation
+                    )
+                ]
                 refs = ["QS " + ref for ref in declared]
                 if re.search(r"\bKANDIDAT\s+QS\s+[^;\]]+;\s*QS\s+", example):
                     refs.append("ambiguous second source")
