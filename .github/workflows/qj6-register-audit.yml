@@ -22,7 +22,7 @@ jobs:
       - name: Run regression tests
         run: python3 -m unittest discover -s books/jilid-6/tools -p 'test_*.py' -v
       - name: Audit actual committed QJ6 register
-        run: python3 books/jilid-6/tools/audit-qj6-register.py
+        run: python3 books/jilid-6/tools/audit-qj6-register.py > /tmp/QJ6-committed-audit.json
       - name: Generate isolated 360-slot CSV
         run: |
           python3 books/jilid-6/tools/qj6_slots.py init --master books/jilid-6/QJ6-MASTER-Struktur-40-Halaman.md --csv /tmp/QJ6-slots.csv
@@ -37,3 +37,4 @@ jobs:
           path: |
             /tmp/QJ6-slots.csv
             /tmp/QJ6-audit.json
+            /tmp/QJ6-committed-audit.json
