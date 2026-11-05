@@ -33,6 +33,14 @@ class RegisterAuditRegression(unittest.TestCase):
         self.assertEqual(result["errors"], [])
         self.assertEqual((result["filled"], result["empty"]), (335, 25))
 
+    def test_release_holds_identify_unfilled_and_missing_waqf_la(self):
+        holds = MODULE.audit()["release_holds"]
+        unfilled = {item["slot_id"] for item in holds if item["reason"] == "unfilled_slot"}
+        glyph_missing = {item["slot_id"] for item in holds if item["reason"] == "waqf_la_glyph_missing"}
+        self.assertEqual(len(unfilled), 25)
+        self.assertEqual(glyph_missing, {"QJ6-P017-S02", "QJ6-P017-S04"})
+        self.assertEqual(len(holds), 27)
+
     def test_empty_slot_accepts_blank_flags(self):
         result = self.audit_mutation(lambda rows: None)
         self.assertEqual(result["errors"], [])
