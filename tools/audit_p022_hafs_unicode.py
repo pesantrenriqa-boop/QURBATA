@@ -82,6 +82,8 @@ def main():
             sys.exit(f"HOLD: invalid source dataset row: {exc}")
         if not isinstance(value, str) or not value.strip():
             sys.exit(f"HOLD: missing Unicode verse at {key}")
+        if key[0] < 1 or key[0] > 114 or key[1] < 1:
+            sys.exit(f"HOLD: invalid Quran verse coordinates: {key}")
         if key in index:
             sys.exit(f"HOLD: duplicate verse reference in dataset: {key}")
         index[key] = value
