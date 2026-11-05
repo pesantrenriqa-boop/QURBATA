@@ -68,6 +68,8 @@ def audit(path=CSV_PATH):
                 errors.append(f"{ident}: EMPTY but text exists")
         elif not r["text_uthmani"].strip():
             errors.append(f"{ident}: {status} but text missing")
+        if r["source_verified"].lower() not in ("yes", "no") or r["competency_verified"].lower() not in ("yes", "no"):
+            errors.append(f"{ident}: invalid verification flag; expected yes/no")
         if status in ("CANDIDATE", "RESEARCH") and (
             r["source_verified"].lower() == "yes"
             or r["competency_verified"].lower() == "yes"
@@ -94,7 +96,7 @@ def audit(path=CSV_PATH):
             unicodedata.normalize("NFC", r["text_uthmani"].strip())
             != unicodedata.normalize("NFC", target["text_uthmani"].strip())
         ):
-            warnings.append(f"{ident}: internal source text differs from {source}")
+            errors.append(f"{ident}: internal source text differs from {source}")
         try:
             own_page = int(r["page_id"].split("-P")[1])
             source_page = int(target["page_id"].split("-P")[1])
