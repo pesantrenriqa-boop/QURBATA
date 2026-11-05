@@ -356,6 +356,29 @@ class CoverageTests(unittest.TestCase):
         self.assertTrue(any("missing" in warning
                             for warning in module.p036_hafalan_advisory(content)))
 
+    def test_p036_warns_when_hafalan_sources_are_swapped(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P036 |"):
+                cells = line.split("|")
+                cells[3], cells[4] = cells[4], cells[3]
+                lines[i] = "|".join(cells)
+                break
+        warnings = module.p036_hafalan_advisory("\n".join(lines))
+        self.assertTrue(any("P036 K01:" in w for w in warnings), warnings)
+        self.assertTrue(any("P036 K02:" in w for w in warnings), warnings)
+
+    def test_p036_warns_when_hafalan_source_is_missing(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P036 |"):
+                cells = line.split("|")
+                cells[8] = " — "  # K06, originally QS 113:2
+                lines[i] = "|".join(cells)
+                break
+        warnings = module.p036_hafalan_advisory("\n".join(lines))
+        self.assertTrue(any("P036 K06:" in w for w in warnings), warnings)
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
