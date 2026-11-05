@@ -49,7 +49,7 @@ def audit(content):
                     ref
                     for annotation in annotations
                     for ref in re.findall(
-                        r"\bKANDIDAT\s+QS\s+([^\s;\],)]+)", annotation
+                        r"(?:^|;)\s*KANDIDAT\s+QS\s+([^\s;\],)]+)", annotation
                     )
                 ]
                 refs = ["QS " + ref for ref in declared]
