@@ -37,6 +37,18 @@ def audit(path=CSV_PATH):
                 missing.append(ident)
     if missing:
         errors.append(f"Missing expected slot IDs: {missing}")
+    # Each nine-slot page has exactly one curriculum target and material kind.
+    # This checks internal consistency, not external curriculum authorization.
+    page_targets = defaultdict(set)
+    page_kinds = defaultdict(set)
+    for row in rows:
+        page_targets[row["page_id"]].add(row["competency"].strip())
+        page_kinds[row["page_id"]].add(row["kind"])
+    for page_id in sorted(page_targets):
+        if len(page_targets[page_id]) != 1 or "" in page_targets[page_id]:
+            errors.append(f"{page_id}: inconsistent or blank page competency")
+        if len(page_kinds[page_id]) != 1:
+            errors.append(f"{page_id}: mixed material kinds within page")
     empty_by_page = defaultdict(int)
     text_index = defaultdict(list)
     # These three signs have online evidence but no verse-level MSI confirmation.
