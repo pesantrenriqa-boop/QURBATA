@@ -189,7 +189,10 @@ def main():
     print("PAGE | FILLED | CAPACITY | EMPTY | SAH")
     for page, filled, capacity, empty, sah in rows:
         print(f"{page} | {filled} | {capacity} | {empty} | {sah}")
-    print(f"TOTAL: {sum(x[1] for x in rows)}/{sum(x[2] for x in rows)} filled; {sum(x[3] for x in rows)} empty")
+    if errors:
+        print("TOTAL: INVALID STRUCTURE; page counts below are diagnostic only")
+    else:
+        print(f"TOTAL: {sum(x[1] for x in rows)}/{sum(x[2] for x in rows)} filled; {sum(x[3] for x in rows)} empty")
     p013 = next((row for row in rows if row[0] == "P013"), None)
     if p013 is not None:
         print(f"P013: {p013[3]} unfilled slots; pending curriculum review. "
