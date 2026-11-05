@@ -95,7 +95,12 @@ def main():
         results.append({"slot": f"K{i:02d}", "reference": ref, "exact_unicode_substring": exact,
                         "source_present": verse is not None, "status": "EXACT_MATCH" if exact else "HOLD_REVIEW"})
     a.output.parent.mkdir(parents=True, exist_ok=True)
-    a.output.write_text(json.dumps({"sha256_verified": True, "archive_member": source_member, "slots": results}, ensure_ascii=False, indent=2), encoding="utf-8")
+    try:
+        with a.output.open("x", encoding="utf-8") as report:
+            json.dump({"sha256_verified": True, "archive_member": source_member, "slots": results},
+                      report, ensure_ascii=False, indent=2)
+    except FileExistsError:
+        sys.exit("HOLD: output report already exists; refusing to overwrite audit evidence")
     print(f"Report saved: {a.output}; exact matches: {sum(x['exact_unicode_substring'] for x in results)}/16")
     print("Exact substring matching is a screening gate, not final rasm or print approval.")
 
