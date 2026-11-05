@@ -39,8 +39,25 @@ def audit(path=CSV_PATH):
         errors.append(f"Missing expected slot IDs: {missing}")
     empty_by_page = defaultdict(int)
     text_index = defaultdict(list)
+    # These three signs have online evidence but no verse-level MSI confirmation.
+    msi_pending = {
+        "QJ6-P015-S01": "\u06d8",
+        "QJ6-P015-S06": "\u06d8",
+        "QJ6-P016-S03": "\u06da",
+    }
+    msi_sign_checks = []
     for r in rows:
         ident, status = r["slot_id"], r["review_status"]
+        if ident in msi_pending:
+            glyph = msi_pending[ident]
+            actual = [f"U+{ord(ch):04X}" for ch in r["text_uthmani"] if ch in "\u06d8\u06da"]
+            msi_sign_checks.append({"slot_id": ident, "expected": f"U+{ord(glyph):04X}", "found": actual,
+                                    "source_verified": r["source_verified"],
+                                    "competency_verified": r["competency_verified"]})
+            if glyph not in r["text_uthmani"]:
+                errors.append(f"{ident}: expected online-source sign U+{ord(glyph):04X} missing; review change")
+            if r["source_verified"].lower() == "yes" or r["competency_verified"].lower() == "yes":
+                warnings.append(f"{ident}: verify signed MSI verse-level evidence before treating flags as approved")
         if r["text_uthmani"].strip():
             text_index[unicodedata.normalize("NFC", r["text_uthmani"].strip())].append(ident)
         if r["page_id"] != ident[:8]:
@@ -94,6 +111,7 @@ def audit(path=CSV_PATH):
         "rows": len(rows),
         "duplicate_text_groups": len(duplicate_text_groups),
         "forward_references": forward_references,
+        "msi_sign_checks": msi_sign_checks,
         "filled": len(rows) - sum(empty_by_page.values()),
         "empty": sum(empty_by_page.values()),
         "empty_by_page": dict(sorted(empty_by_page.items())),
