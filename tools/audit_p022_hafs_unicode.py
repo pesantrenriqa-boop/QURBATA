@@ -41,7 +41,14 @@ def verify_dataset_in_archive(archive, data):
 def read_rows(path):
     with open(path, encoding="utf-8-sig", newline="") as f:
         if path.suffix.lower() == ".json":
-            data = json.load(f)
+            def reject_duplicate_keys(pairs):
+                result = {}
+                for key, value in pairs:
+                    if key in result:
+                        sys.exit(f"HOLD: JSON source has duplicate key: {key}")
+                    result[key] = value
+                return result
+            data = json.load(f, object_pairs_hook=reject_duplicate_keys)
             if isinstance(data, dict):
                 candidates = [v for v in data.values() if isinstance(v, list)]
                 if len(candidates) != 1:
