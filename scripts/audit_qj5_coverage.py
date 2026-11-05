@@ -111,6 +111,29 @@ def repeated_quran_loci(content):
     return [(page, reference, slots) for (page, reference), slots in groups.items()
             if len(slots) > 1]
 
+def p036_hafalan_advisory(content):
+    """Report declared P036 hafalan coverage; never certify memorization."""
+    line = next((s for s in content.splitlines() if s.startswith("| P036 |")), None)
+    if line is None:
+        return ["P036: missing hafalan row"]
+    cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+    if len(cells) != 19:
+        return ["P036: malformed row; hafalan coverage cannot be assessed"]
+    references = []
+    for value in cells[2:10]:
+        found = re.search(
+            r"\\bKANDIDAT\\s*;\\s*(?:MUROJAAH|HAFALAN UNIT)\\s+QS\\s+(\\d{1,3}:\\d{1,3})\\b",
+            value,
+        )
+        references.append(found.group(1) if found else None)
+    warnings = []
+    if references[4:8] == ["113:1", "113:2", "113:3", "113:4"]:
+        warnings.append(
+            "P036: QS 113:1-4 are present, but QS 113:5 is not in the active "
+            "P036 slots; do not mark Al-Falaq complete without a documented continuation"
+        )
+    return warnings
+
 def main():
     if not SOURCE.is_file():
         print(f"ERROR missing {SOURCE}", file=sys.stderr)
@@ -131,6 +154,8 @@ def main():
     print(f"ADVISORY: {len(source_duplicates)} repeated same-page Quran reference groups.")
     for page, reference, slots in source_duplicates:
         print(f"ADVISORY SOURCE {page} {','.join(slots)}: {reference}")
+    for warning in p036_hafalan_advisory(SOURCE.read_text(encoding="utf-8")):
+        print("ADVISORY HAFALAN:", warning)
     print("Note: filled means nonempty candidate, NOT verified Quran text or approved Sah.")
     return 1 if errors else 0
 
