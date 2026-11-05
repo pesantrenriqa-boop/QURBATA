@@ -60,7 +60,12 @@ def main():
     if digest.lower() != EXPECTED_SHA256:
         sys.exit("HOLD: SHA-256 mismatch; refusing to compare unverified source")
     source_member = verify_dataset_in_archive(a.archive, a.data)
-    rows = read_rows(a.data)
+    try:
+        rows = read_rows(a.data)
+    except (UnicodeError, csv.Error, json.JSONDecodeError) as exc:
+        sys.exit(f"HOLD: unreadable or malformed source dataset: {exc}")
+    if not isinstance(rows, list) or not rows or any(not isinstance(row, dict) for row in rows):
+        sys.exit("HOLD: source dataset must contain a nonempty list of verse objects")
     index = {}
     for row in rows:
         try:
