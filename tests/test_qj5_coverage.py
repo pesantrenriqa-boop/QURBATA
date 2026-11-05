@@ -506,6 +506,16 @@ class CoverageTests(unittest.TestCase):
         _, errors = module.audit(content)
         self.assertTrue(any("P036: expected 19 cells" in e for e in errors), errors)
 
+    def test_duplicate_p036_page_is_structural_error_even_with_valid_hafalan(self):
+        original_row = next(line for line in self.original.splitlines()
+                            if line.startswith("| P036 |"))
+        content = self.original + "\n" + original_row
+        rows, errors = module.audit(content)
+        self.assertTrue(any("duplicate page: P036" in e for e in errors), errors)
+        self.assertEqual(sum(row[0] == "P036" for row in rows), 2)
+        # A clean-looking hafalan sequence cannot override structural failure.
+        self.assertTrue(module.p036_hafalan_advisory(content))
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
