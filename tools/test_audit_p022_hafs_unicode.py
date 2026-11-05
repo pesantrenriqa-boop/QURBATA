@@ -244,6 +244,7 @@ class CheckerTests(unittest.TestCase):
             self.assertEqual(report["register_sha256"], module.sha256(register))
             self.assertIs(report["screening_only"], True)
             self.assertIs(report["print_approved"], False)
+            self.assertEqual(report["approval_status"], "HOLD")
             self.assertNotIn("print_ready", report)
 
     def test_empty_source_dataset_fails_closed_without_report(self):
@@ -309,6 +310,7 @@ class CheckerTests(unittest.TestCase):
             self.assertEqual(len(report["slots"]), 16)
             self.assertEqual(report["slots"][-1]["status"], "HOLD_REVIEW")
             self.assertIs(report["print_approved"], False)
+            self.assertEqual(report["approval_status"], "HOLD")
 
     def test_source_parser_rejects_ambiguous_json_and_missing_csv_headers(self):
         from unittest.mock import patch
