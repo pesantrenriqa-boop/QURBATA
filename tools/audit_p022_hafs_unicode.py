@@ -72,9 +72,11 @@ def main():
             sys.exit(f"HOLD: duplicate verse reference in dataset: {key}")
         index[key] = value
     lines = a.register.read_text(encoding="utf-8").splitlines()
-    match = next((x for x in lines if x.startswith("| P022 | Ikhfa syafawi |")), None)
-    if match is None:
-        sys.exit("HOLD: main P022 row not found")
+    candidates = [x for x in lines if x.startswith("| P022 | Ikhfa syafawi |")
+                  and len(x.split("|")) >= 19]
+    if len(candidates) != 1:
+        sys.exit(f"HOLD: expected exactly one 16-slot main P022 row; found {len(candidates)}")
+    match = candidates[0]
     cells = [x.strip() for x in match.split("|")[3:19]]
     if len(cells) != 16:
         sys.exit("HOLD: expected 16 slots")
