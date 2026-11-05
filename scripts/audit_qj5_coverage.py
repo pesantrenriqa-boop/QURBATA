@@ -122,7 +122,7 @@ def p036_hafalan_advisory(content):
     references = []
     for value in cells[2:10]:
         found = re.search(
-            r"\bKANDIDAT\s*;\s*(?:MUROJAAH|HAFALAN UNIT)\s+QS\s+(\d{1,3}:\d{1,3})\b",
+            r"\[\s*KANDIDAT\s*;\s*(?:MUROJAAH|HAFALAN UNIT)\s+QS\s+(\d{1,3}:\d{1,3})\b",
             value,
         )
         references.append(found.group(1) if found else None)
