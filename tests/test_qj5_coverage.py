@@ -436,6 +436,17 @@ class CoverageTests(unittest.TestCase):
         _, errors = module.audit(content)
         self.assertTrue(any("inactive K slots contain data" in e for e in errors))
 
+    def test_qs1135_scan_rejects_candidate_label_quoted_in_audit_note(self):
+        changed = self.original.replace("KANDIDAT QS 113:5",
+                                        "AUDIT: QS 113:5", 2)
+        changed = changed.replace(
+            "AUDIT: QS 113:5",
+            "AUDIT: contoh label KANDIDAT QS 113:5 bukan sumber",
+            1,
+        )
+        self.assertEqual(module.qj5_alfalaq_source_locations(changed), [])
+        self.assertTrue(module.qj5_alfalaq_completion_advisory(changed))
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
