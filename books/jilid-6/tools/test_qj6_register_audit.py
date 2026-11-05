@@ -85,6 +85,27 @@ class RegisterAuditRegression(unittest.TestCase):
         self.assertTrue(any("source verified without source_id" in error for error in result["errors"]))
         self.assertFalse(result["print_approved"])
 
+    def test_three_msi_sign_cases_remain_on_independent_hold(self):
+        expected = {"QJ6-P015-S01", "QJ6-P015-S06", "QJ6-P016-S03"}
+        holds = MODULE.audit()["release_holds"]
+        self.assertEqual(
+            {item["slot_id"] for item in holds if item["reason"] == "msi_sign_collation_pending"},
+            expected,
+        )
+
+    def test_msi_hold_persists_even_with_both_verification_flags(self):
+        def change(rows):
+            row = next(row for row in rows if row["slot_id"] == "QJ6-P015-S01")
+            row["source_verified"] = "yes"
+            row["competency_verified"] = "yes"
+            row["reviewer"] = "TEST ONLY"
+        result = self.audit_mutation(change)
+        self.assertIn(
+            {"slot_id": "QJ6-P015-S01", "reason": "msi_sign_collation_pending"},
+            result["release_holds"],
+        )
+        self.assertFalse(result["print_approved"])
+
     def test_mixed_competency_on_one_page_is_rejected(self):
         def change(rows):
             next(row for row in rows if row["slot_id"] == "QJ6-P002-S09")["competency"] = "Wrong target"
