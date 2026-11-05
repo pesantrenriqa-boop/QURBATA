@@ -88,10 +88,14 @@ class CheckerTests(unittest.TestCase):
             root = Path(d)
             archive = root / "synthetic.zip"
             import zipfile
+            csv_data = "sura_no,aya_no,aya_text_unicode\n"
+            for i, ref in enumerate(module.REFERENCES, 1):
+                sura, aya = ref.split(":")
+                csv_data += f"{sura},{aya},SLOT_{i:02d}\n"
             with zipfile.ZipFile(archive, "w") as z:
-                z.writestr("verses.csv", "sura_no,aya_no,aya_text_unicode\n105,4,SLOT_01\n")
+                z.writestr("verses.csv", csv_data)
             data = root / "verses.csv"
-            data.write_text("sura_no,aya_no,aya_text_unicode\n105,4,SLOT_01\n", encoding="utf-8")
+            data.write_text(csv_data, encoding="utf-8")
             register = root / "register.md"
             slots = [f"SLOT_{i:02d} [KANDIDAT QS {ref}]" for i, ref in enumerate(module.REFERENCES, 1)]
             slots[0] = "SLOT_01 [KANDIDAT QS 1:1]"
@@ -168,7 +172,10 @@ class CheckerTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             root = Path(d)
             archive = root / "fixture.zip"
-            csv_data = "sura_no,aya_no,aya_text_unicode\n105,4,SLOT_01\n"
+            csv_data = "sura_no,aya_no,aya_text_unicode\n"
+            for i, ref in enumerate(module.REFERENCES, 1):
+                sura, aya = ref.split(":")
+                csv_data += f"{sura},{aya},SLOT_{i:02d}\n"
             with zipfile.ZipFile(archive, "w") as z:
                 z.writestr("verses.csv", csv_data)
             data = root / "verses.csv"
