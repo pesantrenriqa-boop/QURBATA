@@ -85,6 +85,15 @@ class RegisterAuditRegression(unittest.TestCase):
         self.assertTrue(any("source verified without source_id" in error for error in result["errors"]))
         self.assertFalse(result["print_approved"])
 
+    def test_unknown_slot_kind_fails_closed(self):
+        for invalid in ("", "tartil ", "unknown", "print-ready"):
+            with self.subTest(kind=invalid):
+                def change(rows):
+                    next(row for row in rows if row["slot_id"] == "QJ6-P002-S09")["kind"] = invalid
+                result = self.audit_mutation(change)
+                self.assertTrue(any("unknown slot kind" in error for error in result["errors"]))
+                self.assertFalse(result["print_approved"])
+
     def test_unknown_review_status_fails_closed(self):
         for invalid in ("APPROVED", "PRINT_READY", "", "CANDIDATE "):
             with self.subTest(status=invalid):
