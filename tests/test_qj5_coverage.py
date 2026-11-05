@@ -1,6 +1,10 @@
 """Regression tests for the read-only Jilid 5 coverage auditor."""
 import importlib.util
+import io
+import tempfile
 import unittest
+from contextlib import redirect_stdout, redirect_stderr
+from unittest.mock import patch
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -515,6 +519,22 @@ class CoverageTests(unittest.TestCase):
         self.assertEqual(sum(row[0] == "P036" for row in rows), 2)
         # A clean-looking hafalan sequence cannot override structural failure.
         self.assertTrue(module.p036_hafalan_advisory(content))
+
+    def test_invalid_structure_never_reports_valid_coverage_total(self):
+        # A duplicated page must invalidate the displayed aggregate.
+        duplicated = next(line for line in self.original.splitlines()
+                          if line.startswith("| P036 |"))
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "register.md"
+            source.write_text(self.original + "\n" + duplicated, encoding="utf-8")
+            output, errors = io.StringIO(), io.StringIO()
+            with patch.object(module, "SOURCE", source):
+                with redirect_stdout(output), redirect_stderr(errors):
+                    code = module.main()
+        self.assertEqual(code, 1)
+        self.assertIn("TOTAL: INVALID STRUCTURE", output.getvalue())
+        self.assertNotIn("TOTAL: 476/488", output.getvalue())
+        self.assertIn("duplicate page: P036", errors.getvalue())
 
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
