@@ -23,6 +23,24 @@ jobs:
         run: python3 -m unittest discover -s books/jilid-6/tools -p 'test_*.py' -v
       - name: Audit actual committed QJ6 register
         run: python3 books/jilid-6/tools/audit-qj6-register.py > /tmp/QJ6-committed-audit.json
+      - name: Verify committed audit release holds
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path('/tmp/QJ6-committed-audit.json').read_text(encoding='utf-8'))
+          holds = report['release_holds']
+          empty = {item['slot_id'] for item in holds if item['reason'] == 'unfilled_slot'}
+          missing_sign = {item['slot_id'] for item in holds if item['reason'] == 'waqf_la_glyph_missing'}
+          assert report['errors'] == [], report['errors']
+          assert report['print_approved'] is False
+          assert report['rows'] == 360
+          assert report['filled'] == 335 and report['empty'] == 25
+          assert len(empty) == 25
+          assert missing_sign == {'QJ6-P017-S02', 'QJ6-P017-S04'}
+          assert len(holds) == 27
+          print('Committed audit release holds and publication gate verified.')
+          PY
       - name: Generate isolated 360-slot CSV
         run: |
           python3 books/jilid-6/tools/qj6_slots.py init --master books/jilid-6/QJ6-MASTER-Struktur-40-Halaman.md --csv /tmp/QJ6-slots.csv
