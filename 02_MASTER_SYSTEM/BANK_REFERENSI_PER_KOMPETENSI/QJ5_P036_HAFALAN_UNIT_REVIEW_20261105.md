@@ -18,3 +18,11 @@ Jangan menandai Al-Falaq tuntas hanya dari K05–K08. K01–K04 adalah murajaah 
 
 ## Larangan perubahan otomatis
 Dokumen ini **tidak** mengubah register, mengisi slot, mengesahkan lafaz, ataupun menaikkan nilai Sah. Keputusan akhir memerlukan pemeriksa ahli dan pemilik kurikulum.
+
+## Pemeriksaan lintas halaman register Jilid 5 — 2026-11-05
+
+Pencarian tekstual terhadap **register aktif Jilid 5** menemukan sebutan QS 113:5 pada catatan audit, tetapi **belum menemukan satu pun slot kandidat yang secara eksplisit mendeklarasikan QS 113:5 sebagai sumber**. Dengan demikian, catatan audit bukan bukti bahwa ayat kelima sudah diajarkan atau dijadwalkan.
+
+**Batas temuan:** pemeriksaan ini hanya berlaku untuk satu file register Jilid 5, bukan keseluruhan master kurikulum, jilid lain, atau jadwal pengajar. Jangan menyimpulkan QS 113:5 tidak ada di seluruh sistem.
+
+**Tindakan lanjutan yang diperlukan:** cocokkan dengan master kompetensi resmi dan register hafalan jilid lain; jika tidak ada, minta keputusan penempatan unit QS 113:5 tanpa melanggar kapasitas P036. Bukti penempatan harus mencantumkan file, halaman, slot, dan status tashih.
