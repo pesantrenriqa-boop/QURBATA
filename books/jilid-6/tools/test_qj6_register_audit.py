@@ -42,6 +42,15 @@ class RegisterAuditRegression(unittest.TestCase):
             next(row for row in rows if row["slot_id"] == "QJ6-P018-S01")["source_verified"] = "yes"
         self.assertTrue(any("invalid verification flag" in x for x in self.audit_mutation(change)["errors"]))
 
+    def test_all_empty_slots_reject_verified_flags(self):
+        for slot_id in ("QJ6-P017-S01", "QJ6-P018-S01", "QJ6-P036-S01"):
+            for field in ("source_verified", "competency_verified"):
+                with self.subTest(slot_id=slot_id, field=field):
+                    def change(rows):
+                        next(row for row in rows if row["slot_id"] == slot_id)[field] = "yes"
+                    self.assertTrue(any("invalid verification flag" in x
+                                        for x in self.audit_mutation(change)["errors"]))
+
     def test_candidate_requires_explicit_verification_flag(self):
         def change(rows):
             next(row for row in rows if row["slot_id"] == "QJ6-P015-S01")["source_verified"] = ""
