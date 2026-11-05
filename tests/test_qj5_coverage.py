@@ -271,6 +271,32 @@ class CoverageTests(unittest.TestCase):
         self.assertFalse(any(page == "P038" and "BUKHARI" in reference
                              for page, reference, _ in groups))
 
+    def test_current_register_source_families_are_explicit(self):
+        # Snapshot of source metadata, not a claim of Quranic or hadith validity.
+        counts = {"quran": 0, "arabic": 0, "hadith": 0}
+        for line in self.original.splitlines():
+            if not line.startswith("| P") or not line[3:6].isdigit():
+                continue
+            cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+            if len(cells) != 19:
+                continue
+            capacity = 16 if int(cells[0][1:]) <= 20 else 8
+            for value in cells[2:2 + capacity]:
+                if not value or value == "—":
+                    continue
+                if "BAHASA ARAB" in value:
+                    counts["arabic"] += 1
+                elif "KANDIDAT HADIS" in value:
+                    counts["hadith"] += 1
+                elif "KANDIDAT QS " in value or (
+                    "KANDIDAT;" in value
+                    and ("MUROJAAH QS " in value or "HAFALAN UNIT QS " in value)
+                ):
+                    counts["quran"] += 1
+                else:
+                    self.fail("Unclassified source marker in register: " + cells[0])
+        self.assertEqual(counts, {"quran": 457, "arabic": 8, "hadith": 3})
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
