@@ -22,4 +22,15 @@ jobs:
       - name: Check Python syntax
         run: python -m py_compile tools/audit_p022_hafs_unicode.py tools/test_audit_p022_hafs_unicode.py
       - name: Run offline regression suite
-        run: python -m unittest discover -s tools -p 'test_audit_p022_hafs_unicode.py' -v
+        shell: bash
+        run: |
+          set -o pipefail
+          python -m unittest discover -s tools -p 'test_audit_p022_hafs_unicode.py' -v 2>&1 | tee p022-unittest.log
+      - name: Upload offline test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: p022-unittest-log
+          path: p022-unittest.log
+          if-no-files-found: warn
+          retention-days: 30
