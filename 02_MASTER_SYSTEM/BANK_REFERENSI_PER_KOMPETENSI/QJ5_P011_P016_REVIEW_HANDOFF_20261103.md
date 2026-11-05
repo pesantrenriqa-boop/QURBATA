@@ -70,3 +70,18 @@
 ### Gerbang penerbitan
 
 **Belum boleh cetak atau menaikkan Sah:** belum ada berita acara tashih ahli untuk P011. Dokumen ini menyiapkan pekerjaan pemeriksa, bukan menggantikannya. Teks Arab dan nilai Sah pada register tetap tidak diubah.
+
+## Lembar keputusan prioritas P011 K02/K07/K08/K09 — 2026-11-05
+
+**Status: BELUM TASHIH.** Ini instruksi kerja pemeriksa, bukan verifikasi mushaf. Gunakan mushaf Utsmani riwayat Hafs yang edisi dan sumbernya dicatat, bukan menyalin bentuk tulisan register sebagai bukti.
+
+| Slot | Teks kandidat register | Sumber yang diklaim | Pemeriksaan yang harus dibuktikan | Keputusan sementara |
+|---|---|---|---|---|
+| K02 | الْحَاقَّةُ مَا الْحَاقَّةُ | QS 69:1–2 | Cocokkan masing-masing ayat, pemisah ayat, dan cara penyajian bila dua ayat digabung sebagai satu latihan | TAHAN |
+| K07 | آلْآنَ وَقَدْ كُنْتُمْ بِهِ تَسْتَعْجِلُونَ | QS 10:51 | Cocokkan rasm آلْآنَ, tanda baca mushaf, serta wajah bacaan yang diajarkan dalam riwayat Hafs; jangan menyimpulkan dari Unicode register | TAHAN |
+| K08 | أَتُحَاجُّونَنِي فِي اللَّهِ | QS 6:80 | Cocokkan bentuk tertulis dan bunyi kata أَتُحَاجُّونَنِي, posisi huruf mad dan tasydid, serta klasifikasi mad lazim yang diklaim | TAHAN |
+| K09 | آلْآنَ وَقَدْ عَصَيْتَ قَبْلُ | QS 10:91 | Cocokkan rasm dan cara baca آلْآنَ; bandingkan dengan K07 sebagai dua konteks ayat berbeda | TAHAN |
+
+**Format bukti per slot:** identitas mushaf/edisi; nomor surah dan ayat; teks persis dari sumber; titik kata sasaran; jenis dan alasan hukum tajwid; penjelasan waqaf/ibtida jika relevan; pemeriksa; tanggal; keputusan (sesuai/perlu koreksi/tidak sesuai kompetensi/ditunda); tautan atau foto bukti yang berizin.
+
+**Gerbang aman:** tidak ada penggantian teks Arab, rujukan, atau kenaikan Sah sampai keempat slot diperiksa ahli. Jika ada ketidakcocokan, usulkan koreksi pada lembar terpisah agar register asli tetap dapat diaudit.
