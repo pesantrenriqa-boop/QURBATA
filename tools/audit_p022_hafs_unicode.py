@@ -103,9 +103,9 @@ def main():
         passage = cell.split(" [", 1)[0].strip()
         if not passage or passage == "—":
             sys.exit(f"HOLD: empty or placeholder slot K{i:02d}")
-        cited = re.search(r"\bQS\s+(\d+):(\d+)\b", cell)
-        if cited is None or f"{int(cited.group(1))}:{int(cited.group(2))}" != ref:
-            sys.exit(f"HOLD: source reference mismatch at K{i:02d}; expected QS {ref}")
+        citations = re.findall(r"\bQS\s+(\d+):(\d+)\b", cell)
+        if len(citations) != 1 or f"{int(citations[0][0])}:{int(citations[0][1])}" != ref:
+            sys.exit(f"HOLD: source reference mismatch or ambiguous citations at K{i:02d}; expected one QS {ref}")
         verse = index.get(tuple(map(int, ref.split(":"))))
         exact = verse is not None and passage in verse
         results.append({"slot": f"K{i:02d}", "reference": ref, "exact_unicode_substring": exact,
