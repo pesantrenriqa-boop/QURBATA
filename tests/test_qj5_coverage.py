@@ -342,6 +342,20 @@ class CoverageTests(unittest.TestCase):
         self.assertFalse(any("P013 K01: expected exactly one" in e
                              for e in errors), errors)
 
+    def test_p036_hafalan_incomplete_surah_is_advisory(self):
+        warnings = module.p036_hafalan_advisory(self.original)
+        self.assertTrue(any("QS 113:5" in warning for warning in warnings))
+        _, errors = module.audit(self.original)
+        self.assertFalse(errors, errors)
+
+    def test_p036_hafalan_advisory_handles_missing_page(self):
+        content = "\n".join(
+            line for line in self.original.splitlines()
+            if not line.startswith("| P036 |")
+        )
+        self.assertTrue(any("missing" in warning
+                            for warning in module.p036_hafalan_advisory(content)))
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
