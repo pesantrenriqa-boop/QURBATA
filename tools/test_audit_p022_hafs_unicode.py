@@ -523,5 +523,26 @@ class CheckerTests(unittest.TestCase):
                 module.read_rows(data)
             self.assertIn("duplicate key: sura_no", str(error.exception))
 
+    def test_duplicate_zip_member_names_fail_closed(self):
+        import importlib.util
+        import zipfile
+        import warnings
+        spec = importlib.util.spec_from_file_location("checker", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            archive = root / "ambiguous.zip"
+            data = root / "verses.csv"
+            data.write_text("sura_no,aya_no,aya_text_unicode\n", encoding="utf-8")
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore", UserWarning)
+                with zipfile.ZipFile(archive, "w") as z:
+                    z.writestr("verses.csv", data.read_bytes())
+                    z.writestr("verses.csv", b"altered")
+            with self.assertRaises(SystemExit) as error:
+                module.verify_dataset_in_archive(archive, data)
+            self.assertIn("duplicate member names", str(error.exception))
+
 if __name__ == "__main__":
     unittest.main()
