@@ -405,9 +405,7 @@ class CoverageTests(unittest.TestCase):
 
     def test_qs1135_locations_are_active_declared_candidates(self):
         locations = module.qj5_alfalaq_source_locations(self.original)
-        self.assertEqual(len(locations), 2)
-        self.assertTrue(any(item.startswith("P001 K") for item in locations))
-        self.assertTrue(any(item.startswith("P018 K") for item in locations))
+        self.assertEqual(locations, ["P001 K13", "P018 K15"])
         self.assertFalse(any(item.startswith("P036 K") for item in locations))
 
     def test_qs1135_location_scan_ignores_notes(self):
