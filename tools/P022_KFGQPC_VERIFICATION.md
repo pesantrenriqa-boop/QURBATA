@@ -36,6 +36,31 @@ python tools/audit_p022_hafs_unicode.py \
 
 5. Inspect all 16 slot statuses, preserve the generated report and checksums, and conduct independent human tashih against the authoritative mushaf.
 
+## Per-slot evidence checklist (not yet verified)
+
+This table is a **tracking checklist**, not a transcription of Quran text. Every slot requires exact source matching and independent human tashih before any approval.
+
+| Slot | Expected QS | Official ZIP SHA-256 verified | Exact Unicode substring | Independent tashih | Print status |
+|---|---|---|---|---|---|
+| K01 | 105:4 | PENDING | PENDING | PENDING | HOLD |
+| K02 | 88:22 | PENDING | PENDING | PENDING | HOLD |
+| K03 | 50:45 | PENDING | PENDING | PENDING | HOLD |
+| K04 | 6:107 | PENDING | PENDING | PENDING | HOLD |
+| K05 | 2:8 | PENDING | PENDING | PENDING | HOLD |
+| K06 | 34:8 | PENDING | PENDING | PENDING | HOLD |
+| K07 | 83:17 | PENDING | PENDING | PENDING | HOLD |
+| K08 | 29:22 | PENDING | PENDING | PENDING | HOLD |
+| K09 | 21:27 | PENDING | PENDING | PENDING | HOLD |
+| K10 | 2:167 | PENDING | PENDING | PENDING | HOLD |
+| K11 | 2:102 | PENDING | PENDING | PENDING | HOLD |
+| K12 | 11:19 | PENDING | PENDING | PENDING | HOLD |
+| K13 | 7:45 | PENDING | PENDING | PENDING | HOLD |
+| K14 | 27:3 | PENDING | PENDING | PENDING | HOLD |
+| K15 | 6:150 | PENDING | PENDING | PENDING | HOLD |
+| K16 | 21:36 | PENDING | PENDING | PENDING | HOLD |
+
+Never mark a row approved from CI unit tests alone. Attach the checker report with archive, dataset, and register hashes; review each failed slot individually without silently normalizing Quranic Unicode.
+
 ## Release gate
 
 - A successful offline unit-test run proves only checker behavior with synthetic fixtures.
