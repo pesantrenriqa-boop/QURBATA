@@ -45,6 +45,11 @@ def audit(path=CSV_PATH):
     unexpected_ids = sorted(set(ids) - expected_ids)
     if unexpected_ids:
         errors.append(f"Unexpected slot IDs: {unexpected_ids}")
+    # Enforce page_id derived from the complete slot_id, not a string prefix.
+    for row in rows:
+        expected_page_id = row["slot_id"].rsplit("-S", 1)[0]
+        if row["page_id"] != expected_page_id:
+            errors.append(f"{row['slot_id']}: page_id does not match full slot ID")
     # Each nine-slot page has exactly one curriculum target and material kind.
     # This checks internal consistency, not external curriculum authorization.
     page_targets = defaultdict(set)
