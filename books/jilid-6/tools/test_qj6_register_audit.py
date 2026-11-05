@@ -54,6 +54,19 @@ class RegisterAuditRegression(unittest.TestCase):
         self.assertEqual({item['slot_id'] for item in holds if item['reason'] == 'research_review_pending'}, expected_research)
         self.assertEqual(len(holds), sum(map(len, (expected_empty, expected_missing, expected_source, expected_competency, expected_research))))
 
+    def test_research_hold_persists_after_verification_flags_change(self):
+        def change(rows):
+            row = next(row for row in rows if row["slot_id"] == "QJ6-P022-S09")
+            row["source_verified"] = "yes"
+            row["competency_verified"] = "yes"
+        result = self.audit_mutation(change)
+        holds = result["release_holds"]
+        self.assertIn(
+            {"slot_id": "QJ6-P022-S09", "reason": "research_review_pending"},
+            holds,
+        )
+        self.assertFalse(result["print_approved"])
+
     def test_empty_slot_accepts_blank_flags(self):
         result = self.audit_mutation(lambda rows: None)
         self.assertEqual(result["errors"], [])
