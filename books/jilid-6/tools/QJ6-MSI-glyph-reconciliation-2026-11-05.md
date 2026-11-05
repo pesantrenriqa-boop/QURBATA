@@ -26,3 +26,17 @@ Unicode extraction is a mechanical observation of the register, **not** proof of
 6. Only then propose any change to CSV verification flags or Quranic text.
 
 **Disposition:** all three remain CANDIDATE; no source or competency flag changed; no print approval. Register remains 335 filled / 25 EMPTY.
+
+## Official digital mushaf retrieval route
+
+LPMQ explicitly lists **Quran Kemenag** as its official digital Quran, including a web version: https://web.lpmqkemenag.id/unduhan/1-quran-kemenag and https://quran.kemenag.go.id/ . For the three pending comparisons, use that edition (or a clearly identified official MSI printed edition), not Quran.com as the decisive reference. Source listing verified 2026-11-05.
+
+### Capture record (leave unverified until actual page inspected)
+
+| Slot | Official mushaf edition/version | Surah:ayah screen/page | Exact official sign | Stop and restart | Reviewer/date | Decision |
+|---|---|---|---|---|---|---|
+| P015-S01 | PENDING | 6:36 | PENDING | PENDING | PENDING | HOLD |
+| P015-S06 | PENDING | 10:65 | PENDING | PENDING | PENDING | HOLD |
+| P016-S03 | PENDING | 61:7 | PENDING | PENDING | PENDING | HOLD |
+
+The public LPMQ download listing confirms where to access the official digital mushaf, **not** the sign positions within these verses. Do not claim verse-level MSI validation from a download-page listing.
