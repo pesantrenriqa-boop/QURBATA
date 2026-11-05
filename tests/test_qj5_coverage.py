@@ -476,6 +476,22 @@ class CoverageTests(unittest.TestCase):
         self.assertTrue(any("P036 K01:" in w and "missing" in w
                             for w in warnings), warnings)
 
+    def test_p036_reading_source_does_not_complete_hafalan(self):
+        # QS 113:5 in reading practice is not evidence that P036 hafalan
+        # includes the fifth verse or that any memorization was assessed.
+        self.assertEqual(
+            module.qj5_alfalaq_source_locations(self.original),
+            ["P001 K13", "P018 K15"],
+        )
+        self.assertFalse(module.qj5_alfalaq_completion_advisory(self.original))
+        self.assertTrue(
+            any("QS 113:5" in warning
+                for warning in module.p036_hafalan_advisory(self.original))
+        )
+        rows, errors = module.audit(self.original)
+        self.assertFalse(errors, errors)
+        self.assertEqual(next(row for row in rows if row[0] == "P036")[4], "0/8")
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
