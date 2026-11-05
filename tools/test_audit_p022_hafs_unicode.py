@@ -152,5 +152,11 @@ class CheckerTests(unittest.TestCase):
             self.assertIn("duplicate verse reference", str(error.exception))
             self.assertFalse(report.exists())
 
+    def test_main_row_selection_requires_unique_full_width_row(self):
+        source = SCRIPT.read_text(encoding="utf-8")
+        self.assertIn('len(candidates) != 1', source)
+        self.assertIn('len(x.split("|")) >= 19', source)
+        self.assertIn('expected exactly one 16-slot main P022 row', source)
+
 if __name__ == "__main__":
     unittest.main()
