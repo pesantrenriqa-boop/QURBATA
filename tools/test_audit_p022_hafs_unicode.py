@@ -544,5 +544,34 @@ class CheckerTests(unittest.TestCase):
                 module.verify_dataset_in_archive(archive, data)
             self.assertIn("duplicate member names", str(error.exception))
 
+    def test_missing_inputs_exit_with_hold_without_traceback_or_report(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            archive = root / "archive.zip"
+            data = root / "verses.csv"
+            register = root / "register.md"
+            output = root / "report.json"
+            archive.write_bytes(b"invalid")
+            data.write_text("sura_no,aya_no,aya_text_unicode\n", encoding="utf-8")
+            register.write_text("| P022 | Ikhfa syafawi |\n", encoding="utf-8")
+            for label, missing in (("archive", archive), ("dataset", data), ("register", register)):
+                with self.subTest(label=label):
+                    missing.unlink()
+                    result = subprocess.run(
+                        [sys.executable, str(SCRIPT), "--archive", str(archive),
+                         "--data", str(data), "--register", str(register),
+                         "--output", str(output)],
+                        text=True, capture_output=True)
+                    self.assertNotEqual(result.returncode, 0)
+                    self.assertIn(f"HOLD: {label} input file", result.stderr)
+                    self.assertNotIn("Traceback", result.stderr)
+                    self.assertFalse(output.exists())
+                    if label == "archive":
+                        archive.write_bytes(b"invalid")
+                    elif label == "dataset":
+                        data.write_text("sura_no,aya_no,aya_text_unicode\n", encoding="utf-8")
+                    else:
+                        register.write_text("| P022 | Ikhfa syafawi |\n", encoding="utf-8")
+
 if __name__ == "__main__":
     unittest.main()
