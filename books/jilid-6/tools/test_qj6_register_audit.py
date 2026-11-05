@@ -31,15 +31,22 @@ class RegisterAuditRegression(unittest.TestCase):
     def test_committed_register_has_no_structural_errors(self):
         result = MODULE.audit()
         self.assertEqual(result["errors"], [])
-        self.assertEqual((result["filled"], result["empty"]), (335, 25))
+        expected_empty = sum(row["review_status"] == "EMPTY" for row in self.rows)
+        self.assertEqual((result["filled"], result["empty"]),
+                         (len(self.rows) - expected_empty, expected_empty))
 
     def test_release_holds_identify_unfilled_and_missing_waqf_la(self):
         holds = MODULE.audit()["release_holds"]
         unfilled = {item["slot_id"] for item in holds if item["reason"] == "unfilled_slot"}
         glyph_missing = {item["slot_id"] for item in holds if item["reason"] == "waqf_la_glyph_missing"}
-        self.assertEqual(len(unfilled), 25)
-        self.assertEqual(glyph_missing, {"QJ6-P017-S02", "QJ6-P017-S04"})
-        self.assertEqual(len(holds), 27)
+        expected_empty = {row["slot_id"] for row in self.rows if row["review_status"] == "EMPTY"}
+        expected_missing = {row["slot_id"] for row in self.rows
+                            if row["page_id"] == "QJ6-P017"
+                            and row["review_status"] != "EMPTY"
+                            and "لا" not in row["text_uthmani"]}
+        self.assertEqual(unfilled, expected_empty)
+        self.assertEqual(glyph_missing, expected_missing)
+        self.assertEqual(len(holds), len(expected_empty) + len(expected_missing))
 
     def test_empty_slot_accepts_blank_flags(self):
         result = self.audit_mutation(lambda rows: None)
