@@ -78,6 +78,9 @@ def main():
     a = p.parse_args()
     if a.output.exists():
         sys.exit("HOLD: output report already exists; choose a fresh path to prevent stale or overwritten evidence")
+    for label, source in (("archive", a.archive), ("dataset", a.data), ("register", a.register)):
+        if not source.is_file():
+            sys.exit(f"HOLD: {label} input file does not exist or is not a regular file: {source}")
     digest = sha256(a.archive)
     if digest.lower() != EXPECTED_SHA256:
         sys.exit("HOLD: SHA-256 mismatch; refusing to compare unverified source")
