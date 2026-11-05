@@ -6,6 +6,7 @@ on:
     paths:
       - 'tools/audit_p022_hafs_unicode.py'
       - 'tools/test_audit_p022_hafs_unicode.py'
+      - '02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/REGISTER_24_KELOMPOK_JILID_4.md'
       - '.github/workflows/audit-p022-hafs-unicode-tests.yml'
   workflow_dispatch:
 permissions:
