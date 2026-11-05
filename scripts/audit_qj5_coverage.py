@@ -38,7 +38,7 @@ def audit(content):
                     continue
                 # A reference-only slot is not a Quranic reading example.
                 phrase = re.sub(r"\[[^\]]*\]", "", example).strip()
-                if not phrase:
+                if not phrase or not re.search(r"[\u0621-\u064a\u0671-\u06d3]", phrase):
                     errors.append(f"P013 K{index:02d}: missing Quranic example text")
                 # Only declared candidate sources count; a bare QS immediately
                 # following its semicolon is a second unlabelled source.
