@@ -330,5 +330,33 @@ class CheckerTests(unittest.TestCase):
                 module.read_rows(incomplete)
             self.assertIn("missing required Quran verse columns", str(error.exception))
 
+    def test_invalid_verse_coordinates_fail_closed(self):
+        from unittest.mock import patch
+        import importlib.util
+        import zipfile
+        spec = importlib.util.spec_from_file_location("checker", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        for sura, aya in [(0, 4), (115, 1), (105, 0), (105, -1)]:
+            with self.subTest(sura=sura, aya=aya), tempfile.TemporaryDirectory() as d:
+                root = Path(d)
+                csv_data = f"sura_no,aya_no,aya_text_unicode\n{sura},{aya},synthetic\n"
+                archive = root / "fixture.zip"
+                with zipfile.ZipFile(archive, "w") as z:
+                    z.writestr("verses.csv", csv_data)
+                data = root / "verses.csv"
+                data.write_text(csv_data, encoding="utf-8")
+                register = root / "register.md"
+                register.write_text("| P022 | Ikhfa syafawi |\n", encoding="utf-8")
+                output = root / "report.json"
+                argv = ["checker", "--archive", str(archive), "--data", str(data),
+                        "--register", str(register), "--output", str(output)]
+                with patch.object(module, "EXPECTED_SHA256", module.sha256(archive)):
+                    with patch.object(sys, "argv", argv):
+                        with self.assertRaises(SystemExit) as error:
+                            module.main()
+                self.assertIn("invalid Quran verse coordinates", str(error.exception))
+                self.assertFalse(output.exists())
+
 if __name__ == "__main__":
     unittest.main()
