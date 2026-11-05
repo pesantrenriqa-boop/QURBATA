@@ -122,7 +122,7 @@ def p036_hafalan_advisory(content):
     references = []
     for value in cells[2:10]:
         found = re.search(
-            r"\\bKANDIDAT\\s*;\\s*(?:MUROJAAH|HAFALAN UNIT)\\s+QS\\s+(\\d{1,3}:\\d{1,3})\\b",
+            r"\bKANDIDAT\s*;\s*(?:MUROJAAH|HAFALAN UNIT)\s+QS\s+(\d{1,3}:\d{1,3})\b",
             value,
         )
         references.append(found.group(1) if found else None)
@@ -146,7 +146,7 @@ def qj5_alfalaq_completion_advisory(content):
     """Check declared candidate sources across Jilid 5, not QS mentions in notes."""
     declared = set()
     for line in content.splitlines():
-        if not re.match(r"^\\| P\\d{3} \\|", line):
+        if not re.match(r"^\| P\d{3} \|", line):
             continue
         cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
         if len(cells) != 19:
@@ -154,8 +154,8 @@ def qj5_alfalaq_completion_advisory(content):
         capacity = 16 if int(cells[0][1:]) <= 20 else 8
         for value in cells[2:2 + capacity]:
             match = re.search(
-                r"\\bKANDIDAT(?:\\s+QS|\\s*;\\s*(?:MUROJAAH|HAFALAN UNIT)\\s+QS)"
-                r"\\s+(\\d{1,3}:\\d{1,3})\\b", value
+                r"\bKANDIDAT(?:\s+QS|\s*;\s*(?:MUROJAAH|HAFALAN UNIT)\s+QS)"
+                r"\s+(\d{1,3}:\d{1,3})\b", value
             )
             if match:
                 declared.add(match.group(1))
