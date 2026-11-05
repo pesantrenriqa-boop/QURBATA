@@ -43,9 +43,16 @@ def read_rows(path):
         if path.suffix.lower() == ".json":
             data = json.load(f)
             if isinstance(data, dict):
-                data = next((v for v in data.values() if isinstance(v, list)), [])
+                candidates = [v for v in data.values() if isinstance(v, list)]
+                if len(candidates) != 1:
+                    sys.exit("HOLD: JSON source must contain exactly one verse list")
+                data = candidates[0]
             return data
-        return list(csv.DictReader(f))
+        reader = csv.DictReader(f)
+        required = {"sura_no", "aya_no", "aya_text_unicode"}
+        if reader.fieldnames is None or not required.issubset(reader.fieldnames):
+            sys.exit("HOLD: CSV source is missing required Quran verse columns")
+        return list(reader)
 
 def main():
     p = argparse.ArgumentParser()
