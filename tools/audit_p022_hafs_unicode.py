@@ -54,7 +54,10 @@ def read_rows(path):
             sys.exit("HOLD: CSV source is missing required Quran verse columns")
         if len(reader.fieldnames) != len(set(reader.fieldnames)):
             sys.exit("HOLD: CSV source has duplicate column headers")
-        return list(reader)
+        rows = list(reader)
+        if any(None in row or any(value is None for value in row.values()) for row in rows):
+            sys.exit("HOLD: CSV source contains rows with missing or surplus fields")
+        return rows
 
 def main():
     p = argparse.ArgumentParser()
