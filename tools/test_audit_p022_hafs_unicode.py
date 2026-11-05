@@ -499,5 +499,17 @@ class CheckerTests(unittest.TestCase):
             self.assertEqual(report["approval_status"], "HOLD")
             self.assertIs(report["print_approved"], False)
 
+    def test_malformed_quoted_csv_fails_closed(self):
+        import importlib.util
+        import csv
+        spec = importlib.util.spec_from_file_location("checker", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as d:
+            data = Path(d) / "broken.csv"
+            data.write_text('sura_no,aya_no,aya_text_unicode\n105,4,"unclosed verse\n', encoding="utf-8")
+            with self.assertRaises(csv.Error):
+                module.read_rows(data)
+
 if __name__ == "__main__":
     unittest.main()
