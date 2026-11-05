@@ -62,6 +62,11 @@ def audit(path=CSV_PATH):
                 warnings.append(f"{ident}: verify signed MSI verse-level evidence before treating flags as approved")
         if r["text_uthmani"].strip():
             text_index[unicodedata.normalize("NFC", r["text_uthmani"].strip())].append(ident)
+        # A verified flag is not evidence by itself: require traceable review metadata.
+        if r["competency_verified"].lower() == "yes" and not r["reviewer"].strip():
+            errors.append(f"{ident}: competency verified without reviewer")
+        if r["source_verified"].lower() == "yes" and not r["source_id"].strip():
+            errors.append(f"{ident}: source verified without source_id")
         if r["page_id"] != ident[:8]:
             errors.append(f"{ident}: page_id mismatch")
         if status == "EMPTY":
