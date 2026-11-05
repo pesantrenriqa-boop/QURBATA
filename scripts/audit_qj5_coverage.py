@@ -36,6 +36,10 @@ def audit(content):
             for index, example in enumerate(examples, 1):
                 if not example or example == "—":
                     continue
+                # A reference-only slot is not a Quranic reading example.
+                phrase = re.sub(r"\[[^\]]*\]", "", example).strip()
+                if not phrase:
+                    errors.append(f"P013 K{index:02d}: missing Quranic example text")
                 # Only declared candidate sources count; a bare QS immediately
                 # following its semicolon is a second unlabelled source.
                 # Source labels must be inside a bracketed candidate annotation;
