@@ -57,7 +57,9 @@ jobs:
           assert {h['slot_id'] for h in holds if h['reason'] == 'research_review_pending'} == expected_research
           expected_msi = {'QJ6-P015-S01', 'QJ6-P015-S06', 'QJ6-P016-S03'}
           assert {h['slot_id'] for h in holds if h['reason'] == 'msi_sign_collation_pending'} == expected_msi
-          assert len(holds) == sum(map(len, (expected_empty, expected_missing_sign, expected_source, expected_competency, expected_research, expected_msi)))
+          expected_p017 = {r['slot_id'] for r in rows if r['page_id'] == 'QJ6-P017' and r['review_status'] != 'EMPTY'}
+          assert {h['slot_id'] for h in holds if h['reason'] == 'waqf_la_msi_review_pending'} == expected_p017
+          assert len(holds) == sum(map(len, (expected_empty, expected_missing_sign, expected_source, expected_competency, expected_research, expected_msi, expected_p017)))
           print('Committed audit release holds and publication gate verified.')
           PY
       - name: Generate isolated 360-slot CSV
