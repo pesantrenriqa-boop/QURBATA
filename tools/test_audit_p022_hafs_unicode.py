@@ -239,7 +239,8 @@ class CheckerTests(unittest.TestCase):
             self.assertEqual(len(report["slots"]), 16)
             self.assertTrue(all(x["status"] == "EXACT_MATCH" for x in report["slots"]))
             self.assertTrue(report["sha256_verified"])
-            self.assertNotIn("approved", report)
+            self.assertIs(report["screening_only"], True)
+            self.assertIs(report["print_approved"], False)
             self.assertNotIn("print_ready", report)
 
 if __name__ == "__main__":
