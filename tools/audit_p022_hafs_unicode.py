@@ -117,7 +117,8 @@ def main():
                        "dataset_sha256": sha256(a.data),
                        "register_sha256": sha256(a.register),
                        "archive_member": source_member,
-                       "screening_only": True, "print_approved": False, "slots": results},
+                       "screening_only": True, "print_approved": False,
+                       "approval_status": "HOLD", "slots": results},
                       report, ensure_ascii=False, indent=2)
     except FileExistsError:
         sys.exit("HOLD: output report already exists; refusing to overwrite audit evidence")
