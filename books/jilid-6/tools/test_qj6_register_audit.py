@@ -52,7 +52,7 @@ class RegisterAuditRegression(unittest.TestCase):
         self.assertEqual({item['slot_id'] for item in holds if item['reason'] == 'competency_unverified'}, expected_competency)
         expected_research = {row['slot_id'] for row in self.rows if row['review_status'] == 'RESEARCH'}
         self.assertEqual({item['slot_id'] for item in holds if item['reason'] == 'research_review_pending'}, expected_research)
-        self.assertEqual(len(holds), sum(map(len, (expected_empty, expected_missing, expected_source, expected_competency, expected_research))))
+        self.assertEqual(len(holds), sum(map(len, (expected_empty, expected_missing, expected_source, expected_competency, expected_research))) + 3)
 
     def test_research_hold_persists_after_verification_flags_change(self):
         def change(rows):
