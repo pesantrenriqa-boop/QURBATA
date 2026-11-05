@@ -461,6 +461,21 @@ class CoverageTests(unittest.TestCase):
         self.assertEqual(module.qj5_alfalaq_source_locations(changed), [])
         self.assertTrue(module.qj5_alfalaq_completion_advisory(changed))
 
+    def test_p036_quoted_hafalan_marker_in_note_is_not_declared_source(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P036 |"):
+                cells = line.split("|")
+                cells[3] = (
+                    "catatan audit mengutip KANDIDAT; MUROJAAH QS 112:1 "
+                    "tanpa deklarasi kandidat [AUDIT: perlu sumber sah]"
+                )
+                lines[i] = "|".join(cells)
+                break
+        warnings = module.p036_hafalan_advisory("\n".join(lines))
+        self.assertTrue(any("P036 K01:" in w and "missing" in w
+                            for w in warnings), warnings)
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
