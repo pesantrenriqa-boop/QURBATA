@@ -129,6 +129,13 @@ class RegisterAuditRegression(unittest.TestCase):
         )
         self.assertFalse(result["print_approved"])
 
+    def test_swapped_rows_are_rejected_even_if_ids_are_valid(self):
+        def change(rows):
+            rows[0], rows[1] = rows[1], rows[0]
+        result = self.audit_mutation(change)
+        self.assertTrue(any("not in canonical" in e for e in result["errors"]))
+        self.assertFalse(result["print_approved"])
+
     def test_page_id_must_match_full_slot_id(self):
         def change(rows):
             next(row for row in rows if row["slot_id"] == "QJ6-P002-S09")["page_id"] = "QJ6-P003"
