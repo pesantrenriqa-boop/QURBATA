@@ -358,5 +358,20 @@ class CheckerTests(unittest.TestCase):
                 self.assertIn("invalid Quran verse coordinates", str(error.exception))
                 self.assertFalse(output.exists())
 
+    def test_duplicate_csv_header_is_rejected(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("checker", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as d:
+            data = Path(d) / "verses.csv"
+            data.write_text(
+                "sura_no,aya_no,aya_text_unicode,aya_text_unicode\n"
+                "105,4,original,shadowed\n", encoding="utf-8"
+            )
+            with self.assertRaises(SystemExit) as error:
+                module.read_rows(data)
+            self.assertIn("duplicate column headers", str(error.exception))
+
 if __name__ == "__main__":
     unittest.main()
