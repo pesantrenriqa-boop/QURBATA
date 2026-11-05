@@ -188,5 +188,21 @@ class CheckerTests(unittest.TestCase):
             self.assertIn("found 2", str(error.exception))
             self.assertFalse(output.exists())
 
+    def test_existing_report_is_never_overwritten(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            output = root / "existing.json"
+            original = b'{"approved": false, "historic": true}'
+            output.write_bytes(original)
+            result = subprocess.run(
+                [sys.executable, str(SCRIPT), "--archive", str(root / "missing.zip"),
+                 "--data", str(root / "missing.csv"),
+                 "--register", str(root / "missing.md"),
+                 "--output", str(output)],
+                text=True, capture_output=True)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("output report already exists", result.stderr)
+            self.assertEqual(output.read_bytes(), original)
+
 if __name__ == "__main__":
     unittest.main()
