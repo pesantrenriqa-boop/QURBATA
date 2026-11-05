@@ -604,5 +604,26 @@ class CheckerTests(unittest.TestCase):
             self.assertIn("unreadable or corrupted source archive", str(error.exception))
             self.assertFalse(output.exists())
 
+    def test_real_jilid4_p022_register_structure(self):
+        import importlib.util
+        import re
+        spec = importlib.util.spec_from_file_location("checker", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        register = SCRIPT.parents[1] / "02_MASTER_SYSTEM" / "BANK_REFERENSI_PER_KOMPETENSI" / "REGISTER_24_KELOMPOK_JILID_4.md"
+        lines = register.read_text(encoding="utf-8").splitlines()
+        rows = [line for line in lines if line.startswith("| P022 | Ikhfa syafawi |")
+                and len(line.split("|")) >= 19]
+        self.assertEqual(len(rows), 1, "Exactly one main 16-slot P022 row is required")
+        cells = [cell.strip() for cell in rows[0].split("|")[3:19]]
+        self.assertEqual(len(cells), 16)
+        for i, (cell, ref) in enumerate(zip(cells, module.REFERENCES), 1):
+            with self.subTest(slot=i, reference=ref):
+                self.assertEqual(re.findall(r"\bQS\s+(\d+):(\d+)\b", cell),
+                                 [tuple(ref.split(":"))])
+                passage = cell.split(" [", 1)[0].strip()
+                self.assertTrue(passage and passage != "—")
+                self.assertRegex(passage, r"مْ\s*ب")
+
 if __name__ == "__main__":
     unittest.main()
