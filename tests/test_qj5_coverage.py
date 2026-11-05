@@ -413,6 +413,13 @@ class CoverageTests(unittest.TestCase):
                                         "AUDIT: QS 113:5", 2)
         self.assertEqual(module.qj5_alfalaq_source_locations(changed), [])
 
+    def test_p013_pending_count_comes_from_audited_rows(self):
+        rows, errors = module.audit(self.original)
+        self.assertFalse(errors, errors)
+        p013 = next(row for row in rows if row[0] == "P013")
+        self.assertEqual(p013[3], 12)
+        self.assertEqual(p013[1] + p013[3], p013[2])
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
