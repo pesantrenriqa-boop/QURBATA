@@ -97,7 +97,8 @@ def main():
     a.output.parent.mkdir(parents=True, exist_ok=True)
     try:
         with a.output.open("x", encoding="utf-8") as report:
-            json.dump({"sha256_verified": True, "archive_member": source_member, "slots": results},
+            json.dump({"sha256_verified": True, "archive_member": source_member,
+                       "screening_only": True, "print_approved": False, "slots": results},
                       report, ensure_ascii=False, indent=2)
     except FileExistsError:
         sys.exit("HOLD: output report already exists; refusing to overwrite audit evidence")
