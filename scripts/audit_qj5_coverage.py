@@ -164,6 +164,22 @@ def qj5_alfalaq_completion_advisory(content):
                 "audit notes alone do not establish hafalan completion"]
     return []
 
+def qj5_alfalaq_source_locations(content):
+    """List declared QS 113:5 candidate slots; not evidence of completed hafalan."""
+    locations = []
+    for line in content.splitlines():
+        if not re.match(r"^\| P\d{3} \|", line):
+            continue
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        if len(cells) != 19:
+            continue
+        page = cells[0]
+        capacity = 16 if int(page[1:]) <= 20 else 8
+        for index, value in enumerate(cells[2:2 + capacity], 1):
+            if re.search(r"\bKANDIDAT\s+QS\s+113:5\b", value):
+                locations.append(f"{page} K{index:02d}")
+    return locations
+
 def main():
     if not SOURCE.is_file():
         print(f"ERROR missing {SOURCE}", file=sys.stderr)
@@ -186,6 +202,9 @@ def main():
         print(f"ADVISORY SOURCE {page} {','.join(slots)}: {reference}")
     for warning in p036_hafalan_advisory(SOURCE.read_text(encoding="utf-8")):
         print("ADVISORY HAFALAN:", warning)
+    locations = qj5_alfalaq_source_locations(SOURCE.read_text(encoding="utf-8"))
+    print("INFO QS 113:5 reading candidates:", ", ".join(locations) or "none",
+          "(not proof of P036 hafalan completion)")
     for warning in qj5_alfalaq_completion_advisory(SOURCE.read_text(encoding="utf-8")):
         print("ADVISORY HAFALAN:", warning)
     print("Note: filled means nonempty candidate, NOT verified Quran text or approved Sah.")
