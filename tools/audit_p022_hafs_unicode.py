@@ -52,6 +52,8 @@ def read_rows(path):
         required = {"sura_no", "aya_no", "aya_text_unicode"}
         if reader.fieldnames is None or not required.issubset(reader.fieldnames):
             sys.exit("HOLD: CSV source is missing required Quran verse columns")
+        if len(reader.fieldnames) != len(set(reader.fieldnames)):
+            sys.exit("HOLD: CSV source has duplicate column headers")
         return list(reader)
 
 def main():
