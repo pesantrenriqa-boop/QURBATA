@@ -4,11 +4,11 @@ Date: 2026-11-04. **Reference review, not per-verse verification.**
 
 ## Authoritative basis
 
-- LPMQ article on Mushaf Standar Usmani and seven simplified waqf signs: https://web.lpmqkemenag.id/berita-dan-artikel/artikel/mushaf-al-qur-an-standar-usmani.html
+- Primary source: LPMQ Pedoman Pentashihan Mushaf Al-Qur'an, page 109, Table 39 (six MSI waqf marks): https://tashih.lpmqkemenag.id/uploads/1/2019-12/buku_pedoman_pentashihan_mushaf_al_quran.pdf
 - LPMQ pentashihan service requirements: https://tashih.lpmqkemenag.id/info-layanan-pentashihan/read/standar-pelayanan-permohonan-surat-tanda-tashih
-- Official pentashihan guide: https://tashih.kemenag.go.id/uploads/1/2019-12/buku_pedoman_pentashihan_mushaf_al_quran.pdf
+- General LPMQ article (not used to override the explicit six-mark MSI table): https://web.lpmqkemenag.id/berita-dan-artikel/artikel/mushaf-al-qur-an-standar-usmani.html
 
-Mushaf Standar Indonesia governs rasm, harakat, reading marks and waqf marks. The LPMQ article describes seven simplified categories: mim, la, jim, shad-lam-ya, qaf-lam-ya, mu'anaqah and saktah. Quran.com glyphs alone cannot establish the corresponding mark or its position in the official MSI edition.
+Mushaf Standar Indonesia governs rasm, harakat, reading marks and waqf marks. The official LPMQ Pedoman Pentashihan, page 109, Table 39, enumerates **six** MSI waqf marks: م (waqf lazim), قلى (stopping preferred), ج (permissible stop), mu'anaqah (paired stop), صلى (continuing preferred), and لا (do not stop, with the documented end-of-ayah exception). Do not silently count saktah as a seventh member of this specific table; its treatment should be documented separately when relevant. Quran.com glyphs alone cannot establish the corresponding mark or its position in the official MSI edition.
 
 ## Targeted register items
 
