@@ -22,6 +22,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Validate 40-page Jilid 5 register coverage
-        run: python3 scripts/audit_qj5_coverage.py
+        shell: bash
+        run: |
+          set -o pipefail
+          python3 scripts/audit_qj5_coverage.py 2>&1 | tee qj5-coverage-audit.log
       - name: Run QJ5 regression tests
-        run: python3 -m unittest discover -s tests -p 'test_qj5_coverage.py'
+        shell: bash
+        run: |
+          set -o pipefail
+          python3 -m unittest discover -v -s tests -p 'test_qj5_coverage.py' 2>&1 | tee qj5-regression-tests.log
+      - name: Preserve audit and test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qj5-audit-evidence
+          path: |
+            qj5-coverage-audit.log
+            qj5-regression-tests.log
+          if-no-files-found: warn
+          retention-days: 30
