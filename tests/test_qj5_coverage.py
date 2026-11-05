@@ -536,6 +536,25 @@ class CoverageTests(unittest.TestCase):
         self.assertNotIn("TOTAL: 476/488", output.getvalue())
         self.assertIn("duplicate page: P036", errors.getvalue())
 
+    def test_valid_structure_reports_real_total_and_returns_success(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "register.md"
+            source.write_text(self.original, encoding="utf-8")
+            output, errors = io.StringIO(), io.StringIO()
+            with patch.object(module, "SOURCE", source):
+                with redirect_stdout(output), redirect_stderr(errors):
+                    code = module.main()
+        self.assertEqual(code, 0, errors.getvalue())
+        rows, structural_errors = module.audit(self.original)
+        self.assertFalse(structural_errors, structural_errors)
+        expected = (
+            f"TOTAL: {sum(row[1] for row in rows)}/"
+            f"{sum(row[2] for row in rows)} filled; "
+            f"{sum(row[3] for row in rows)} empty"
+        )
+        self.assertIn(expected, output.getvalue())
+        self.assertNotIn("TOTAL: INVALID STRUCTURE", output.getvalue())
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
