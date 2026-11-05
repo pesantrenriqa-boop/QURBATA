@@ -204,5 +204,43 @@ class CheckerTests(unittest.TestCase):
             self.assertIn("output report already exists", result.stderr)
             self.assertEqual(output.read_bytes(), original)
 
+    def test_all_sixteen_synthetic_matches_generate_screening_only(self):
+        from unittest.mock import patch
+        import importlib.util
+        import zipfile
+        spec = importlib.util.spec_from_file_location("checker", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            csv_text = "sura_no,aya_no,aya_text_unicode\n"
+            for i, ref in enumerate(module.REFERENCES, 1):
+                sura, aya = ref.split(":")
+                csv_text += f"{sura},{aya},BEFORE SLOT_{i:02d} AFTER\n"
+            archive = root / "fixture.zip"
+            with zipfile.ZipFile(archive, "w") as z:
+                z.writestr("verses.csv", csv_text)
+            data = root / "verses.csv"
+            data.write_text(csv_text, encoding="utf-8")
+            slots = [f"SLOT_{i:02d} [KANDIDAT QS {ref}]"
+                     for i, ref in enumerate(module.REFERENCES, 1)]
+            register = root / "register.md"
+            register.write_text(
+                "| P022 | Ikhfa syafawi | " + " | ".join(slots) + " | — |\n"
+                "| P022 | Ikhfa syafawi | supporting note | HOLD |\n",
+                encoding="utf-8")
+            output = root / "screening.json"
+            argv = ["checker", "--archive", str(archive), "--data", str(data),
+                    "--register", str(register), "--output", str(output)]
+            with patch.object(module, "EXPECTED_SHA256", module.sha256(archive)):
+                with patch.object(sys, "argv", argv):
+                    module.main()
+            report = json.loads(output.read_text(encoding="utf-8"))
+            self.assertEqual(len(report["slots"]), 16)
+            self.assertTrue(all(x["status"] == "EXACT_MATCH" for x in report["slots"]))
+            self.assertTrue(report["sha256_verified"])
+            self.assertNotIn("approved", report)
+            self.assertNotIn("print_ready", report)
+
 if __name__ == "__main__":
     unittest.main()
