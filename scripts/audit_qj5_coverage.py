@@ -124,9 +124,12 @@ def repeated_quran_loci(content):
 
 def p036_hafalan_advisory(content):
     """Report declared P036 hafalan coverage; never certify memorization."""
-    line = next((s for s in content.splitlines() if s.startswith("| P036 |")), None)
-    if line is None:
+    matches = [s for s in content.splitlines() if s.startswith("| P036 |")]
+    if not matches:
         return ["P036: missing hafalan row"]
+    if len(matches) != 1:
+        return [f"P036: duplicate hafalan rows ({len(matches)}); coverage cannot be assessed"]
+    line = matches[0]
     cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
     if len(cells) != 19:
         return ["P036: malformed row; hafalan coverage cannot be assessed"]
