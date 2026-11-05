@@ -62,6 +62,15 @@ class RegisterAuditRegression(unittest.TestCase):
             row["text_uthmani"] += "X"
         self.assertTrue(any("internal source text differs" in x for x in self.audit_mutation(change)["errors"]))
 
+    def test_p017_cannot_be_verified_without_explicit_waqf_la(self):
+        for slot_id in ("QJ6-P017-S02", "QJ6-P017-S04"):
+            for field in ("source_verified", "competency_verified"):
+                with self.subTest(slot_id=slot_id, field=field):
+                    def change(rows):
+                        next(row for row in rows if row["slot_id"] == slot_id)[field] = "yes"
+                    self.assertTrue(any("cannot verify waqf-la" in x
+                                        for x in self.audit_mutation(change)["errors"]))
+
     def test_priority_waqf_glyph_removal_is_error(self):
         for slot_id, glyph in (
             ("QJ6-P015-S01", "ۘ"),
