@@ -1,0 +1,40 @@
+{
+  "engine_version": "1.0",
+  "registry_version": "K01-K67-v1.0",
+  "status": "functional-core",
+  "purpose": "Generate ceiling-safe examples, questions, and teaching/book content from any canonical competency.",
+  "example_engine": {
+    "input": ["target_k", "count", "difficulty", "use", "source", "seed"],
+    "defaults": {"count": 5, "difficulty": "standard", "source": "quran-curated", "use": "teaching"},
+    "pipeline": ["load_competency", "expand_prerequisites", "set_feature_ceiling", "retrieve_candidates", "target_operation_match", "future_feature_rejection", "ambiguity_filter", "difficulty_rank", "deduplicate", "emit_records"],
+    "required_output": ["example_id", "competency_id", "reference", "span_ar", "target_operation", "features_required", "difficulty", "ambiguity", "ceiling_check"],
+    "acceptance": {"target_operation_required": true, "ceiling_check": "pass", "future_feature_required": false, "reference_required_for_quran": true}
+  },
+  "question_engine": {
+    "input": ["target_k", "count", "types", "difficulty", "answers", "cumulative_review", "seed"],
+    "pipeline": ["load_competency", "route_template", "select_eligible_example", "build_prompt", "build_distractors_if_needed", "build_key", "build_rationale", "ceiling_check", "deduplicate", "emit_records"],
+    "template_router": {
+      "recognition": ["recognition", "identify", "classify"],
+      "relation": ["identify_relation", "segmentation", "relation_mapping", "short_response"],
+      "morphology": ["identify_form", "reconstruct", "contrast", "error_detection"],
+      "discourse": ["relation_mapping", "directionality", "contrast", "short_response"]
+    },
+    "distractor_policy": ["use_plausible_prior_level_error", "never_require_future_K", "avoid_semantically_absurd_option", "one_unambiguously_best_answer"],
+    "required_output": ["question_id", "target_k", "tested_operation", "source_example_id", "question_type", "prompt", "correct_answer", "rationale", "difficulty", "ceiling_check"]
+  },
+  "guide_engine": {
+    "input": ["k_from", "k_to", "audience", "meetings", "examples_per_k", "questions_per_k", "template", "teacher_notes", "answers"],
+    "unit_blocks": ["objective", "prerequisite_reminder", "concise_explanation", "worked_examples", "guided_practice", "independent_practice", "cumulative_review", "quick_check", "remediation", "enrichment", "teacher_boundary_note"],
+    "teacher_boundary_note_required": true,
+    "assembly_rule": "content is selected by competency and ceiling; layout is applied only after content assembly",
+    "outputs": ["student_book", "teacher_guide", "workbook", "question_bank", "evaluation_booklet", "remediation_booklet", "enrichment_booklet", "scope_sequence", "qurbata_module"]
+  },
+  "extension": {
+    "allow_new_sequential_k": true,
+    "allow_subcompetency": true,
+    "allow_optional_domains": true,
+    "immutable_published_ids": true,
+    "versioned_definition_changes": true,
+    "reproducible_by_registry_version_and_seed": true
+  }
+}
