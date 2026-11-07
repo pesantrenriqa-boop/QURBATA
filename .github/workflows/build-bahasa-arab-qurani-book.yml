@@ -1,0 +1,28 @@
+name: Build Buku Bahasa Arab Qurani QURBATA
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "books/bahasa-arab-qurani/**"
+      - "production/vivliostyle-arabic-competency/**"
+      - ".github/workflows/build-bahasa-arab-qurani-book.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: production/vivliostyle-arabic-competency
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tangga-kompetensi-bahasa-arab-qurani-qurbata
+          path: production/vivliostyle-arabic-competency/dist/
+          if-no-files-found: error
