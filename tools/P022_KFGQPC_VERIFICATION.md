@@ -44,6 +44,21 @@ python tools/audit_p022_hafs_unicode.py \
 
 5. Inspect all 16 slot statuses, preserve the generated report and checksums, and conduct independent human tashih against the authoritative mushaf.
 
+## Windows PowerShell: archive integrity gate (before extraction)
+
+On Windows, after obtaining the original publisher archive, run the following command in PowerShell (replace the path with the actual ZIP location):
+
+```powershell
+$archive = 'C:\\Users\\YOUR_USER\\Downloads\\official-hafs-v15.zip'
+$expected = '227E6B1564D980F2BD09C2C35EBFB0330AC268C79A7C247CD1AB665BC635F245'
+if (-not (Test-Path -LiteralPath $archive -PathType Leaf)) { throw 'Archive not found: no verification performed' }
+$actual = (Get-FileHash -LiteralPath $archive -Algorithm SHA256).Hash
+if ($actual -ne $expected) { throw "SHA-256 mismatch. Expected $expected; got $actual. STOP: do not extract or audit." }
+Write-Output 'SHA-256 VERIFIED: archive matches published KFGQPC Hafs Unicode v15.0 digest.'
+```
+
+**Important:** This confirms only the ZIP bytes match the published checksum, not that P022 is approved for print. If the site is under maintenance or no ZIP is available, do not run the screening on a substitute. Keep all slots HOLD until the dataset is verified and independently reviewed.
+
 ## Per-slot evidence checklist (not yet verified)
 
 This table is a **tracking checklist**, not a transcription of Quran text. Every slot requires exact source matching and independent human tashih before any approval.
