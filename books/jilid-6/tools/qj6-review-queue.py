@@ -16,6 +16,9 @@ PRIORITY = (
     "msi_sign_collation_pending", "research_review_pending",
     "waqf_la_glyph_missing", "source_unverified", "competency_unverified",
 )
+DECISION_FIELDS = ("decision", "reviewer_name", "review_date", "mushaf_edition",
+                   "evidence_reference", "tajwid_rule", "curriculum_evidence",
+                   "review_notes")
 FIELDS = ("slot_id", "row_sha256", "page_id", "kind", "competency", "review_status",
           "text_uthmani", "surah", "ayah_start", "ayah_end",
           "source_id", "source_verified", "competency_verified",
@@ -64,9 +67,24 @@ def export(path, register=MODULE.CSV_PATH):
     return len(rows)
 
 
+def export_review_worksheet(path, register=MODULE.CSV_PATH):
+    """A blank reviewer form; no verification or decision is prefilled."""
+    rows = build_queue(register)
+    with Path(path).open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=FIELDS + DECISION_FIELDS)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({**row, **{field: "" for field in DECISION_FIELDS}})
+    return len(rows)
+
+
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("output", type=Path, help="Destination review CSV")
+    parser.add_argument("--worksheet", type=Path, help="Optional blank reviewer decision worksheet")
     args = parser.parse_args()
-    print(f"Exported {export(args.output)} held slots; NOT approved for print")
+    count = export(args.output)
+    if args.worksheet:
+        assert export_review_worksheet(args.worksheet) == count
+    print(f"Exported {count} held slots; NOT approved for print")
