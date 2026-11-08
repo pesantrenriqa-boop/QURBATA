@@ -28,6 +28,27 @@ class CoverageTests(unittest.TestCase):
         self.assertEqual(next(r for r in rows if r[0] == "P013")[2], 16)
         # Do not hardcode 468/12: valid future candidate edits must not break CI.
 
+    def test_non_quran_sources_remain_explicitly_classified(self):
+        # P028 is Arabic-language practice; P038 K01-K03 are hadith.
+        # Neither category should be mislabeled as Quranic verse evidence.
+        rows = {
+            line.split("|")[1].strip(): [
+                cell.strip() for cell in line.strip().strip("|").split("|")
+            ]
+            for line in self.original.splitlines()
+            if line.startswith("| P028 |") or line.startswith("| P038 |")
+        }
+        self.assertEqual(set(rows), {"P028", "P038"})
+        for index, example in enumerate(rows["P028"][2:10], 1):
+            with self.subTest(page="P028", slot=index):
+                self.assertIn("BAHASA ARAB", example)
+                self.assertIn("BUKAN AYAT", example)
+                self.assertNotIn("KANDIDAT QS", example)
+        for index, example in enumerate(rows["P038"][2:5], 1):
+            with self.subTest(page="P038", slot=index):
+                self.assertIn("KANDIDAT HADIS", example)
+                self.assertNotIn("KANDIDAT QS", example)
+
     def test_duplicate_page_rejected(self):
         line = next(s for s in self.original.splitlines() if s.startswith("| P013 |"))
         _, errors = module.audit(self.original + "\n" + line)
