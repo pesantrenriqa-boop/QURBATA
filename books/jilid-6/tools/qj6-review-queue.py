@@ -138,6 +138,45 @@ def export_empty_slot_evidence(path, register=MODULE.CSV_PATH):
     return len(rows)
 
 
+def validate_empty_slot_evidence(path, register=MODULE.CSV_PATH):
+    """Check evidence-intake completeness; never authenticate Quranic text."""
+    with Path(register).open(encoding="utf-8-sig", newline="") as handle:
+        expected = {r["slot_id"]: r for r in csv.DictReader(handle)
+                    if r["review_status"] == "EMPTY"}
+    errors = []
+    with Path(path).open(encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        if reader.fieldnames != list(EMPTY_EVIDENCE_FIELDS):
+            return ["Evidence intake columns differ from controlled template"]
+        seen = set()
+        for row in reader:
+            slot = row["slot_id"]
+            if slot in seen:
+                errors.append(f"{slot}: duplicate slot")
+            seen.add(slot)
+            source = expected.get(slot)
+            if source is None:
+                errors.append(f"{slot}: not an empty register slot")
+                continue
+            if row["page_id"] != source["page_id"] or row["competency"] != source["competency"]:
+                errors.append(f"{slot}: controlled page or competency changed")
+            proposed = any(row[f].strip() for f in (
+                "proposed_surah", "proposed_ayah_start", "proposed_ayah_end"))
+            if proposed:
+                common = ("proposed_surah", "proposed_ayah_start", "proposed_ayah_end",
+                          "mushaf_edition", "edition_page_or_link", "reviewer_name",
+                          "decision_id", "prerequisite_and_duplicate_check")
+                specialized = (("waqf_sign_position",) if source["page_id"] == "QJ6-P017"
+                               else ("hafalan_unit_approval_id",))
+                for field in common + specialized:
+                    if not row[field].strip():
+                        errors.append(f"{slot}: proposed evidence missing {field}")
+    missing = set(expected) - seen
+    if missing:
+        errors.append(f"Evidence intake missing {len(missing)} empty slots")
+    return errors
+
+
 def export_review_worksheet(path, register=MODULE.CSV_PATH):
     """A blank reviewer form; no verification or decision is prefilled."""
     rows = build_queue(register)
@@ -155,10 +194,20 @@ if __name__ == "__main__":
     parser.add_argument("output", nargs="?", type=Path, help="Destination review CSV")
     parser.add_argument("--worksheet", type=Path, help="Optional blank reviewer decision worksheet")
     parser.add_argument("--empty-evidence", type=Path, help="Optional blank evidence intake for empty slots")
+    parser.add_argument("--validate-empty-evidence", type=Path, help="Check completed empty-slot evidence intake")
     parser.add_argument("--validate-worksheet", type=Path,
                         help="Validate existing worksheet without modifying it")
     args = parser.parse_args()
-    if args.validate_worksheet:
+    if args.validate_empty_evidence:
+        if args.output or args.worksheet or args.empty_evidence or args.validate_worksheet:
+            parser.error("--validate-empty-evidence cannot be combined with other options")
+        issues = validate_empty_slot_evidence(args.validate_empty_evidence)
+        for issue in issues:
+            print("ERROR:", issue)
+        if issues:
+            raise SystemExit(1)
+        print("Evidence intake structurally valid; Quranic evidence NOT authenticated")
+    elif args.validate_worksheet:
         if args.output or args.worksheet or args.empty_evidence:
             parser.error("--validate-worksheet cannot be combined with export options")
         issues = validate_review_worksheet(args.validate_worksheet)
