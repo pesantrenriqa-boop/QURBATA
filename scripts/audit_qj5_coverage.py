@@ -183,7 +183,7 @@ def qj5_alfalaq_source_locations(content):
         capacity = 16 if int(page[1:]) <= 20 else 8
         for index, value in enumerate(cells[2:2 + capacity], 1):
             annotations = re.findall(r"\[([^\]]*)\]", value)
-            if any(re.search(r"(?:^|;)\s*KANDIDAT\s+QS\s+113:5\b", note)
+            if any(re.search(r"(?:^|;)\s*KANDIDAT\s+QS\s+113:5(?![\d:–-])", note)
                    for note in annotations):
                 locations.append(f"{page} K{index:02d}")
     return locations
