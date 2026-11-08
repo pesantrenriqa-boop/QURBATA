@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Export a read-only, prioritized QJ6 human-review queue; never grants approval."""
 import csv
+import hashlib
+import json
 import importlib.util
 from collections import defaultdict
 from pathlib import Path
@@ -14,7 +16,7 @@ PRIORITY = (
     "msi_sign_collation_pending", "research_review_pending",
     "waqf_la_glyph_missing", "source_unverified", "competency_unverified",
 )
-FIELDS = ("slot_id", "page_id", "kind", "competency", "review_status",
+FIELDS = ("slot_id", "row_sha256", "page_id", "kind", "competency", "review_status",
           "text_uthmani", "surah", "ayah_start", "ayah_end",
           "source_id", "source_verified", "competency_verified",
           "hold_reasons", "reviewer", "notes")
@@ -35,6 +37,10 @@ def build_queue(register=MODULE.CSV_PATH):
         if not slot_reasons:
             continue
         record = {field: row.get(field, "") for field in FIELDS}
+        # Fingerprint the entire source row, not the queue-derived hold reasons.
+        # A reviewer must recheck evidence if any original register field changes.
+        payload = json.dumps(row, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+        record["row_sha256"] = hashlib.sha256(payload.encode("utf-8")).hexdigest()
         record["hold_reasons"] = ";".join(
             sorted(slot_reasons, key=lambda reason: (
                 PRIORITY.index(reason) if reason in PRIORITY else len(PRIORITY), reason
