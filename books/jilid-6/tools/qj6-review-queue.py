@@ -58,6 +58,42 @@ def build_queue(register=MODULE.CSV_PATH):
     return result
 
 
+def validate_review_worksheet(worksheet, register=MODULE.CSV_PATH):
+    """Read-only check for stale fingerprints and unsupported decisions."""
+    expected = {row["slot_id"]: row for row in build_queue(register)}
+    problems = []
+    with Path(worksheet).open(encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        if reader.fieldnames != list(FIELDS + DECISION_FIELDS):
+            return ["Worksheet columns differ from controlled template"]
+        seen = set()
+        for row in reader:
+            ident = row["slot_id"]
+            if ident in seen:
+                problems.append(f"{ident}: duplicate worksheet row")
+            seen.add(ident)
+            source = expected.get(ident)
+            if source is None:
+                problems.append(f"{ident}: not in current held-slot queue")
+                continue
+            for field in FIELDS:
+                if row[field] != source[field]:
+                    problems.append(f"{ident}: stale or changed controlled field {field}")
+            decision = row["decision"].strip()
+            if decision not in ("", "APPROVE", "REVISE", "REJECT"):
+                problems.append(f"{ident}: invalid decision {decision!r}")
+            if decision:
+                required = ("reviewer_name", "review_date", "mushaf_edition",
+                            "evidence_reference", "tajwid_rule", "curriculum_evidence")
+                for field in required:
+                    if not row[field].strip():
+                        problems.append(f"{ident}: decision missing {field}")
+        missing = sorted(set(expected) - seen)
+        if missing:
+            problems.append(f"Worksheet missing {len(missing)} held slots")
+    return problems
+
+
 def export(path, register=MODULE.CSV_PATH):
     rows = build_queue(register)
     with Path(path).open("w", encoding="utf-8", newline="") as handle:
