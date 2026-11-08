@@ -9,8 +9,9 @@ Unduh artefak `qj6-register-and-audit` dari workflow **QURBATA J6 Register Audit
 - `QJ6-committed-slots.csv`: register **asli** dari commit, bukan template kosong.
 - `QJ6-review-queue.csv`: daftar slot tertahan beserta alasan dan sidik jari baris.
 - `QJ6-review-worksheet.csv`: lembar keputusan kosong untuk pemeriksa.
+- `QJ6-empty-slot-evidence.csv`: formulir pengumpulan bukti primer untuk 25 slot kosong; tidak berisi usulan ayat.
 - `QJ6-committed-audit.json`: hasil audit register asli.
-- `QJ6-review-artifact-sha256.txt`: checksum untuk keempat berkas di atas.
+- `QJ6-review-artifact-sha256.txt`: checksum untuk kelima berkas di atas.
 - `QJ6-slots.csv` dan `QJ6-audit.json`: **hanya scaffolding terisolasi untuk pengujian**, jangan dipakai sebagai register materi yang telah terisi.
 
 ## Verifikasi integritas
@@ -33,6 +34,11 @@ Seluruh entri harus berstatus `OK`. Jika gagal, unduh ulang dari run yang sama; 
    ```bash
    python3 books/jilid-6/tools/qj6-review-queue.py --validate-worksheet QJ6-review-worksheet.csv
    ```
-6. Arsipkan keputusan dan bukti dengan Decision-ID. Perubahan register hanya melalui perubahan terpisah, pemeriksaan ahli, pengujian ulang, dan persetujuan eksplisit.
+6. Untuk 25 slot kosong, lengkapi formulir bukti primer sesuai P017 (posisi tanda waqaf) atau P018/P036 (persetujuan unit hafalan). Periksa dengan:
+   ```bash
+   python3 books/jilid-6/tools/qj6-review-queue.py --validate-empty-evidence QJ6-empty-slot-evidence.csv
+   ```
+   Lulus validasi hanya membuktikan kelengkapan kolom, **bukan autentikasi ayat, edisi MSI, atau persetujuan kurikulum**.
+7. Arsipkan keputusan dan bukti dengan Decision-ID. Perubahan register hanya melalui perubahan terpisah, pemeriksaan ahli, pengujian ulang, dan persetujuan eksplisit.
 
 **Gate:** semua slot masih tertahan; `print_approved=false`. Lulus audit teknis tidak berarti lulus pentashihan atau siap cetak.
