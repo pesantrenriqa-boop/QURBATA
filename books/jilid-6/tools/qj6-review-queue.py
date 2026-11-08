@@ -4,6 +4,7 @@ import csv
 import hashlib
 import json
 import importlib.util
+from datetime import date
 from collections import defaultdict
 from pathlib import Path
 
@@ -82,7 +83,16 @@ def validate_review_worksheet(worksheet, register=MODULE.CSV_PATH):
             decision = row["decision"].strip()
             if decision not in ("", "APPROVE", "REVISE", "REJECT"):
                 problems.append(f"{ident}: invalid decision {decision!r}")
+            if decision == "APPROVE" and source["review_status"] == "EMPTY":
+                problems.append(f"{ident}: cannot approve an unfilled slot")
             if decision:
+                raw_date = row["review_date"].strip()
+                if raw_date:
+                    try:
+                        if date.fromisoformat(raw_date).isoformat() != raw_date:
+                            raise ValueError("noncanonical date")
+                    except ValueError:
+                        problems.append(f"{ident}: review_date must be a real YYYY-MM-DD date")
                 required = ("reviewer_name", "review_date", "mushaf_edition",
                             "evidence_reference", "tajwid_rule", "curriculum_evidence")
                 for field in required:
