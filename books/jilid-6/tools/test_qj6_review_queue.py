@@ -39,6 +39,22 @@ class ReviewQueueRegression(unittest.TestCase):
                 [(r["slot_id"], r["text_uthmani"]) for r in queue],
             )
 
+    def test_row_fingerprints_match_original_register_and_detect_changes(self):
+        import csv
+        import hashlib
+        import json
+        with (HERE / "QJ6-slots.csv").open(encoding="utf-8-sig", newline="") as f:
+            originals = {r["slot_id"]: r for r in csv.DictReader(f)}
+        for record in MODULE.build_queue():
+            row = originals[record["slot_id"]]
+            canonical = json.dumps(row, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+            expected = hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+            self.assertEqual(record["row_sha256"], expected)
+            modified = dict(row)
+            modified["notes"] += " changed"
+            altered = json.dumps(modified, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+            self.assertNotEqual(record["row_sha256"], hashlib.sha256(altered.encode("utf-8")).hexdigest())
+
     def test_queue_is_prioritized_and_exportable(self):
         queue = MODULE.build_queue()
         self.assertTrue(all(r["review_status"] == "EMPTY" for r in queue[:25]))
