@@ -616,6 +616,18 @@ class CoverageTests(unittest.TestCase):
                 for e in errors), errors
         )
 
+    def test_swapped_pages_rejected_even_when_all_pages_exist(self):
+        lines = self.original.splitlines()
+        first = next(i for i, line in enumerate(lines)
+                     if line.startswith("| P001 |"))
+        second = next(i for i, line in enumerate(lines)
+                      if line.startswith("| P002 |"))
+        lines[first], lines[second] = lines[second], lines[first]
+        rows, errors = module.audit("\n".join(lines))
+        self.assertEqual(len(rows), 40)
+        self.assertTrue(any("page order mismatch" in e for e in errors),
+                        errors)
+
     def test_missing_page_rejected(self):
         lines = [s for s in self.original.splitlines() if not s.startswith("| P040 |")]
         _, errors = module.audit("\n".join(lines))
