@@ -49,6 +49,11 @@ class CoverageTests(unittest.TestCase):
                 self.assertIn("KANDIDAT HADIS", example)
                 self.assertNotIn("KANDIDAT QS", example)
 
+        for index, example in enumerate(rows["P038"][5:10], 4):
+            with self.subTest(page="P038", slot=index):
+                self.assertIn("KANDIDAT QS", example)
+                self.assertNotIn("KANDIDAT HADIS", example)
+
     def test_duplicate_page_rejected(self):
         line = next(s for s in self.original.splitlines() if s.startswith("| P013 |"))
         _, errors = module.audit(self.original + "\n" + line)
