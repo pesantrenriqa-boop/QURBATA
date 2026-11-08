@@ -185,8 +185,10 @@ def validate_empty_slot_evidence(path, register=MODULE.CSV_PATH):
                     elif int(start) < 1 or int(end) < int(start):
                         errors.append(f"{slot}: invalid ayah range")
                 surah = row["proposed_surah"].strip()
-                if surah and surah.isascii() and surah.isdecimal():
-                    if not 1 <= int(surah) <= 114:
+                if surah:
+                    if not surah.isascii() or not surah.isdecimal():
+                        errors.append(f"{slot}: surah must be a numeric ID 1-114")
+                    elif not 1 <= int(surah) <= 114:
                         errors.append(f"{slot}: surah number outside 1-114")
     missing = set(expected) - seen
     if missing:
