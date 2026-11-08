@@ -55,6 +55,21 @@ class ReviewQueueRegression(unittest.TestCase):
             altered = json.dumps(modified, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
             self.assertNotEqual(record["row_sha256"], hashlib.sha256(altered.encode("utf-8")).hexdigest())
 
+    def test_reviewer_worksheet_never_prefills_decisions(self):
+        import csv
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "worksheet.csv"
+            count = MODULE.export_review_worksheet(output)
+            with output.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+            self.assertEqual(len(rows), count)
+            self.assertEqual(count, len(MODULE.build_queue()))
+            for row in rows:
+                for field in MODULE.DECISION_FIELDS:
+                    self.assertEqual(row[field], "", f"{row['slot_id']}: {field}")
+                self.assertEqual(len(row["row_sha256"]), 64)
+        self.assertFalse(MODULE.MODULE.audit()["print_approved"])
+
     def test_queue_is_prioritized_and_exportable(self):
         queue = MODULE.build_queue()
         self.assertTrue(all(r["review_status"] == "EMPTY" for r in queue[:25]))
