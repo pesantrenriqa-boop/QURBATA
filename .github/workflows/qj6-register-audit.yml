@@ -122,6 +122,8 @@ jobs:
           )
           print('Committed register and review artifacts preserved with SHA-256 manifest.')
           PY
+      - name: Verify review artifact checksums before upload
+        run: cd /tmp && sha256sum --check QJ6-review-artifact-sha256.txt
       - name: Generate isolated 360-slot CSV
         run: |
           python3 books/jilid-6/tools/qj6_slots.py init --master books/jilid-6/QJ6-MASTER-Struktur-40-Halaman.md --csv /tmp/QJ6-slots.csv
