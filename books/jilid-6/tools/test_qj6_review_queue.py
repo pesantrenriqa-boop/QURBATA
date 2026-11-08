@@ -70,6 +70,25 @@ class ReviewQueueRegression(unittest.TestCase):
                 self.assertEqual(len(row["row_sha256"]), 64)
         self.assertFalse(MODULE.MODULE.audit()["print_approved"])
 
+    def test_worksheet_validator_rejects_stale_and_unsubstantiated_decisions(self):
+        import csv
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "worksheet.csv"
+            MODULE.export_review_worksheet(path)
+            self.assertEqual(MODULE.validate_review_worksheet(path), [])
+            with path.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+            rows[0]["decision"] = "APPROVE"
+            rows[0]["row_sha256"] = "0" * 64
+            with path.open("w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=MODULE.FIELDS + MODULE.DECISION_FIELDS)
+                writer.writeheader()
+                writer.writerows(rows)
+            errors = MODULE.validate_review_worksheet(path)
+            self.assertTrue(any("row_sha256" in error for error in errors))
+            self.assertTrue(any("decision missing reviewer_name" in error for error in errors))
+            self.assertFalse(MODULE.MODULE.audit()["print_approved"])
+
     def test_queue_is_prioritized_and_exportable(self):
         queue = MODULE.build_queue()
         self.assertTrue(all(r["review_status"] == "EMPTY" for r in queue[:25]))
