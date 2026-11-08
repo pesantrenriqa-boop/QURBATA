@@ -251,6 +251,28 @@ class ReviewQueueRegression(unittest.TestCase):
             self.assertTrue(any("placeholder is not evidence for mushaf_edition" in e for e in issues))
             self.assertTrue(any("placeholder is not evidence for hafalan_unit_approval_id" in e for e in issues))
 
+    def test_review_decision_rejects_placeholder_evidence(self):
+        import csv
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "worksheet.csv"
+            MODULE.export_review_worksheet(path)
+            with path.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+            row = next(r for r in rows if r["review_status"] == "CANDIDATE")
+            row.update({
+                "decision": "REVISE", "reviewer_name": "Reviewer",
+                "review_date": "2026-11-09", "mushaf_edition": "pending",
+                "evidence_reference": "TBD", "tajwid_rule": "TODO",
+                "curriculum_evidence": "N/A",
+            })
+            with path.open("w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=MODULE.FIELDS + MODULE.DECISION_FIELDS)
+                writer.writeheader()
+                writer.writerows(rows)
+            issues = MODULE.validate_review_worksheet(path)
+            self.assertTrue(any("placeholder is not reviewer evidence for mushaf_edition" in e for e in issues))
+            self.assertTrue(any("placeholder is not reviewer evidence for curriculum_evidence" in e for e in issues))
+
     def test_queue_is_prioritized_and_exportable(self):
         queue = MODULE.build_queue()
         self.assertTrue(all(r["review_status"] == "EMPTY" for r in queue[:25]))
