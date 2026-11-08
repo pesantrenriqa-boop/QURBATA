@@ -113,6 +113,31 @@ def export(path, register=MODULE.CSV_PATH):
     return len(rows)
 
 
+EMPTY_EVIDENCE_FIELDS = (
+    "slot_id", "page_id", "competency", "proposed_surah", "proposed_ayah_start",
+    "proposed_ayah_end", "mushaf_edition", "edition_page_or_link",
+    "waqf_sign_position", "hafalan_unit_approval_id",
+    "prerequisite_and_duplicate_check", "reviewer_name", "decision_id", "notes",
+)
+
+
+def export_empty_slot_evidence(path, register=MODULE.CSV_PATH):
+    """Create a blank evidence-intake sheet, never proposed Quranic text."""
+    with Path(register).open(encoding="utf-8-sig", newline="") as handle:
+        rows = [r for r in csv.DictReader(handle) if r["review_status"] == "EMPTY"]
+    with Path(path).open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=EMPTY_EVIDENCE_FIELDS)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({
+                **{field: "" for field in EMPTY_EVIDENCE_FIELDS},
+                "slot_id": row["slot_id"],
+                "page_id": row["page_id"],
+                "competency": row["competency"],
+            })
+    return len(rows)
+
+
 def export_review_worksheet(path, register=MODULE.CSV_PATH):
     """A blank reviewer form; no verification or decision is prefilled."""
     rows = build_queue(register)
@@ -129,11 +154,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("output", nargs="?", type=Path, help="Destination review CSV")
     parser.add_argument("--worksheet", type=Path, help="Optional blank reviewer decision worksheet")
+    parser.add_argument("--empty-evidence", type=Path, help="Optional blank evidence intake for empty slots")
     parser.add_argument("--validate-worksheet", type=Path,
                         help="Validate existing worksheet without modifying it")
     args = parser.parse_args()
     if args.validate_worksheet:
-        if args.output or args.worksheet:
+        if args.output or args.worksheet or args.empty_evidence:
             parser.error("--validate-worksheet cannot be combined with export options")
         issues = validate_review_worksheet(args.validate_worksheet)
         for issue in issues:
@@ -147,4 +173,6 @@ if __name__ == "__main__":
         count = export(args.output)
         if args.worksheet:
             assert export_review_worksheet(args.worksheet) == count
+        if args.empty_evidence:
+            print(f"Exported {export_empty_slot_evidence(args.empty_evidence)} empty-slot evidence requests")
         print(f"Exported {count} held slots; NOT approved for print")
