@@ -117,10 +117,24 @@ def export_review_worksheet(path, register=MODULE.CSV_PATH):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("output", type=Path, help="Destination review CSV")
+    parser.add_argument("output", nargs="?", type=Path, help="Destination review CSV")
     parser.add_argument("--worksheet", type=Path, help="Optional blank reviewer decision worksheet")
+    parser.add_argument("--validate-worksheet", type=Path,
+                        help="Validate existing worksheet without modifying it")
     args = parser.parse_args()
-    count = export(args.output)
-    if args.worksheet:
-        assert export_review_worksheet(args.worksheet) == count
-    print(f"Exported {count} held slots; NOT approved for print")
+    if args.validate_worksheet:
+        if args.output or args.worksheet:
+            parser.error("--validate-worksheet cannot be combined with export options")
+        issues = validate_review_worksheet(args.validate_worksheet)
+        for issue in issues:
+            print("ERROR:", issue)
+        if issues:
+            raise SystemExit(1)
+        print("Worksheet structurally valid against current register; NOT approved for print")
+    else:
+        if args.output is None:
+            parser.error("output is required for export")
+        count = export(args.output)
+        if args.worksheet:
+            assert export_review_worksheet(args.worksheet) == count
+        print(f"Exported {count} held slots; NOT approved for print")
