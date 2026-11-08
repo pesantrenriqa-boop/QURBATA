@@ -19,6 +19,10 @@ The official publisher lists **two different Hafs downloads** on the same page:
 
 The publisher page's listed checksum is **metadata, not evidence that a local download has passed hashing**. No third-party mirror or similarly named archive can satisfy the source gate without matching the published SHA-256.
 
+## Official-site maintenance contingency
+
+If the publisher's download page displays **Website Under Maintenance**, do not substitute a different Quran package or approve any slot based on an indexed/cached web page. The publisher's official Quran Hafs app guide lists **developer@qurancomplex.gov.sa** as a developer contact. Ask the publisher for the original **Unicode Uthmanic Font (Hafs Narration) update 15.0** archive and verify its SHA-256 against the publisher's published value before using it. Treat an email attachment or alternate link as **unverified until its downloaded bytes pass the same SHA-256 gate**. The main register and print approval must remain unchanged while the archive is unavailable.
+
 ## Safe local procedure
 
 1. Obtain the **Hafs Unicode version 15.0** archive directly from the official publisher page above. Do not use a mirror or a similarly named Hafs product.
