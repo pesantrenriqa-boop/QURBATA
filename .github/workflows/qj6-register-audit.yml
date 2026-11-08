@@ -118,7 +118,7 @@ jobs:
               digest = hashlib.sha256((Path('/tmp') / name).read_bytes()).hexdigest()
               lines.append(f'{digest}  {name}')
           Path('/tmp/QJ6-review-artifact-sha256.txt').write_text(
-              '\\n'.join(lines) + '\\n', encoding='utf-8'
+              '\n'.join(lines) + '\n', encoding='utf-8'
           )
           print('Committed register and review artifacts preserved with SHA-256 manifest.')
           PY
