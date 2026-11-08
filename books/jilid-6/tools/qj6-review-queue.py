@@ -160,8 +160,9 @@ def validate_empty_slot_evidence(path, register=MODULE.CSV_PATH):
                 continue
             if row["page_id"] != source["page_id"] or row["competency"] != source["competency"]:
                 errors.append(f"{slot}: controlled page or competency changed")
-            proposed = any(row[f].strip() for f in (
-                "proposed_surah", "proposed_ayah_start", "proposed_ayah_end"))
+            # Any entered evidence starts a proposal; do not let partial records
+            # bypass checks merely because surah/ayah fields are still blank.
+            proposed = any(row[f].strip() for f in EMPTY_EVIDENCE_FIELDS[3:])
             if proposed:
                 common = ("proposed_surah", "proposed_ayah_start", "proposed_ayah_end",
                           "mushaf_edition", "edition_page_or_link", "reviewer_name",
