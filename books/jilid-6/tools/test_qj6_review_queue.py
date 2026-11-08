@@ -163,6 +163,26 @@ class ReviewQueueRegression(unittest.TestCase):
             issues = MODULE.validate_empty_slot_evidence(path)
             self.assertTrue(any("proposed evidence missing proposed_surah" in x for x in issues))
 
+    def test_validators_report_malformed_csv_rows_without_crashing(self):
+        import csv
+        with tempfile.TemporaryDirectory() as directory:
+            for exporter, validator, fields in (
+                (MODULE.export_review_worksheet, MODULE.validate_review_worksheet,
+                 MODULE.FIELDS + MODULE.DECISION_FIELDS),
+                (MODULE.export_empty_slot_evidence, MODULE.validate_empty_slot_evidence,
+                 MODULE.EMPTY_EVIDENCE_FIELDS),
+            ):
+                path = Path(directory) / (fields[0] + str(len(fields)) + ".csv")
+                exporter(path)
+                with path.open(encoding="utf-8", newline="") as f:
+                    rows = list(csv.reader(f))
+                rows[1].append("unexpected-extra-column")
+                rows[2] = rows[2][:-1]
+                with path.open("w", encoding="utf-8", newline="") as f:
+                    csv.writer(f).writerows(rows)
+                issues = validator(path)
+                self.assertTrue(any("malformed CSV field count" in issue for issue in issues))
+
     def test_queue_is_prioritized_and_exportable(self):
         queue = MODULE.build_queue()
         self.assertTrue(all(r["review_status"] == "EMPTY" for r in queue[:25]))
