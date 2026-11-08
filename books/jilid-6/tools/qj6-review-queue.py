@@ -178,6 +178,16 @@ def validate_empty_slot_evidence(path, register=MODULE.CSV_PATH):
                 for field in common + specialized:
                     if not row[field].strip():
                         errors.append(f"{slot}: proposed evidence missing {field}")
+                start, end = row["proposed_ayah_start"].strip(), row["proposed_ayah_end"].strip()
+                if start and end:
+                    if not start.isascii() or not end.isascii() or not start.isdecimal() or not end.isdecimal():
+                        errors.append(f"{slot}: ayah range must use positive ASCII integers")
+                    elif int(start) < 1 or int(end) < int(start):
+                        errors.append(f"{slot}: invalid ayah range")
+                surah = row["proposed_surah"].strip()
+                if surah and surah.isascii() and surah.isdecimal():
+                    if not 1 <= int(surah) <= 114:
+                        errors.append(f"{slot}: surah number outside 1-114")
     missing = set(expected) - seen
     if missing:
         errors.append(f"Evidence intake missing {len(missing)} empty slots")
