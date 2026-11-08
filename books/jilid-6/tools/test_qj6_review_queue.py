@@ -89,6 +89,28 @@ class ReviewQueueRegression(unittest.TestCase):
             self.assertTrue(any("decision missing reviewer_name" in error for error in errors))
             self.assertFalse(MODULE.MODULE.audit()["print_approved"])
 
+    def test_worksheet_rejects_empty_approval_and_invalid_date(self):
+        import csv
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "worksheet.csv"
+            MODULE.export_review_worksheet(path)
+            with path.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+            empty = next(row for row in rows if row["review_status"] == "EMPTY")
+            empty.update({
+                "decision": "APPROVE", "reviewer_name": "Reviewer",
+                "review_date": "2026-02-30", "mushaf_edition": "pending",
+                "evidence_reference": "pending", "tajwid_rule": "pending",
+                "curriculum_evidence": "pending",
+            })
+            with path.open("w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=MODULE.FIELDS + MODULE.DECISION_FIELDS)
+                writer.writeheader()
+                writer.writerows(rows)
+            issues = MODULE.validate_review_worksheet(path)
+            self.assertTrue(any("cannot approve an unfilled slot" in x for x in issues))
+            self.assertTrue(any("real YYYY-MM-DD date" in x for x in issues))
+
     def test_queue_is_prioritized_and_exportable(self):
         queue = MODULE.build_queue()
         self.assertTrue(all(r["review_status"] == "EMPTY" for r in queue[:25]))
