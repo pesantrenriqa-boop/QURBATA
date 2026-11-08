@@ -492,7 +492,7 @@ class CoverageTests(unittest.TestCase):
         self.assertTrue(module.qj5_alfalaq_completion_advisory(changed))
 
     def test_qs1135_scan_rejects_malformed_source_suffixes(self):
-        for invalid_ref in ("113:5:1", "113:5-6", "113:5–6"):
+        for invalid_ref in ("113:5:1", "113:5-6", "113:5–6", "113:5a", "113:5A", "113:5_1"):
             with self.subTest(source=invalid_ref):
                 changed = self.original.replace("KANDIDAT QS 113:5",
                                                 f"KANDIDAT QS {invalid_ref}", 2)
