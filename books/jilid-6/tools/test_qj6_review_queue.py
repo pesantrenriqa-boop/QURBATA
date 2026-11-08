@@ -206,6 +206,28 @@ class ReviewQueueRegression(unittest.TestCase):
             self.assertTrue(any("surah number outside 1-114" in e for e in errors))
             self.assertTrue(any("invalid ayah range" in e for e in errors))
 
+    def test_evidence_rejects_nonnumeric_surah_identifier(self):
+        import csv
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "intake.csv"
+            MODULE.export_empty_slot_evidence(path)
+            with path.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+            row = next(r for r in rows if r["page_id"] == "QJ6-P018")
+            row.update({
+                "proposed_surah": "Al-Baqarah", "proposed_ayah_start": "1",
+                "proposed_ayah_end": "2", "mushaf_edition": "pending",
+                "edition_page_or_link": "pending", "reviewer_name": "Reviewer",
+                "decision_id": "pending", "prerequisite_and_duplicate_check": "pending",
+                "hafalan_unit_approval_id": "pending",
+            })
+            with path.open("w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=MODULE.EMPTY_EVIDENCE_FIELDS)
+                writer.writeheader()
+                writer.writerows(rows)
+            errors = MODULE.validate_empty_slot_evidence(path)
+            self.assertTrue(any("surah must be a numeric ID" in e for e in errors))
+
     def test_queue_is_prioritized_and_exportable(self):
         queue = MODULE.build_queue()
         self.assertTrue(all(r["review_status"] == "EMPTY" for r in queue[:25]))
