@@ -148,6 +148,21 @@ class ReviewQueueRegression(unittest.TestCase):
             self.assertTrue(any("waqf_sign_position" in x for x in errors))
             self.assertTrue(any("hafalan_unit_approval_id" in x for x in errors))
 
+    def test_evidence_intake_detects_partial_record_without_surah(self):
+        import csv
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "intake.csv"
+            MODULE.export_empty_slot_evidence(path)
+            with path.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+            rows[0]["reviewer_name"] = "Reviewer"
+            with path.open("w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=MODULE.EMPTY_EVIDENCE_FIELDS)
+                writer.writeheader()
+                writer.writerows(rows)
+            issues = MODULE.validate_empty_slot_evidence(path)
+            self.assertTrue(any("proposed evidence missing proposed_surah" in x for x in issues))
+
     def test_queue_is_prioritized_and_exportable(self):
         queue = MODULE.build_queue()
         self.assertTrue(all(r["review_status"] == "EMPTY" for r in queue[:25]))
