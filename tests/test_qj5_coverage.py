@@ -491,6 +491,14 @@ class CoverageTests(unittest.TestCase):
         self.assertEqual(module.qj5_alfalaq_source_locations(changed), [])
         self.assertTrue(module.qj5_alfalaq_completion_advisory(changed))
 
+    def test_qs1135_scan_rejects_malformed_source_suffixes(self):
+        for invalid_ref in ("113:5:1", "113:5-6", "113:5–6"):
+            with self.subTest(source=invalid_ref):
+                changed = self.original.replace("KANDIDAT QS 113:5",
+                                                f"KANDIDAT QS {invalid_ref}", 2)
+                self.assertEqual(module.qj5_alfalaq_source_locations(changed), [])
+                self.assertTrue(module.qj5_alfalaq_completion_advisory(changed))
+
     def test_p013_pending_count_comes_from_audited_rows(self):
         rows, errors = module.audit(self.original)
         self.assertFalse(errors, errors)
