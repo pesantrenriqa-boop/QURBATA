@@ -69,7 +69,7 @@ jobs:
           PY
       - name: Export human review queue (read-only)
         run: |
-          python3 books/jilid-6/tools/qj6-review-queue.py /tmp/QJ6-review-queue.csv --worksheet /tmp/QJ6-review-worksheet.csv
+          python3 books/jilid-6/tools/qj6-review-queue.py /tmp/QJ6-review-queue.csv --worksheet /tmp/QJ6-review-worksheet.csv --empty-evidence /tmp/QJ6-empty-slot-evidence.csv
           python3 - <<'PY'
           import csv
           import json
@@ -92,6 +92,11 @@ jobs:
                   'decision', 'reviewer_name', 'review_date', 'mushaf_edition',
                   'evidence_reference', 'tajwid_rule', 'curriculum_evidence', 'review_notes'
               ))
+          with Path('/tmp/QJ6-empty-slot-evidence.csv').open(encoding='utf-8', newline='') as f:
+              intake = list(csv.DictReader(f))
+          expected_empty = {r['slot_id'] for r in rows if r['review_status'] == 'EMPTY'}
+          assert {r['slot_id'] for r in intake} == expected_empty
+          assert all(not r['proposed_surah'] and not r['mushaf_edition'] and not r['decision_id'] for r in intake)
           assert report['print_approved'] is False
           print(f'Exported {len(rows)} held slots for human review; no print approval.')
           PY
@@ -117,7 +122,8 @@ jobs:
           assert len(rows) - filled == report['empty']
           assert report['print_approved'] is False
           names = ('QJ6-committed-slots.csv', 'QJ6-committed-audit.json',
-                   'QJ6-review-queue.csv', 'QJ6-review-worksheet.csv')
+                   'QJ6-review-queue.csv', 'QJ6-review-worksheet.csv',
+                   'QJ6-empty-slot-evidence.csv')
           lines = []
           for name in names:
               digest = hashlib.sha256((Path('/tmp') / name).read_bytes()).hexdigest()
@@ -148,3 +154,4 @@ jobs:
             /tmp/QJ6-committed-audit.json
             /tmp/QJ6-review-queue.csv
             /tmp/QJ6-review-worksheet.csv
+            /tmp/QJ6-empty-slot-evidence.csv
