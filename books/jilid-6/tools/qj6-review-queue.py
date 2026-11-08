@@ -99,8 +99,11 @@ def validate_review_worksheet(worksheet, register=MODULE.CSV_PATH):
                 required = ("reviewer_name", "review_date", "mushaf_edition",
                             "evidence_reference", "tajwid_rule", "curriculum_evidence")
                 for field in required:
-                    if not row[field].strip():
+                    value = row[field].strip()
+                    if not value:
                         problems.append(f"{ident}: decision missing {field}")
+                    elif value.casefold() in ("pending", "tbd", "todo", "n/a", "none", "-", "?"):
+                        problems.append(f"{ident}: placeholder is not reviewer evidence for {field}")
         missing = sorted(set(expected) - seen)
         if missing:
             problems.append(f"Worksheet missing {len(missing)} held slots")
