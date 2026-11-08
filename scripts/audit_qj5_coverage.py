@@ -164,23 +164,8 @@ def p036_hafalan_advisory(content):
     return warnings
 
 def qj5_alfalaq_completion_advisory(content):
-    """Check declared candidate sources across Jilid 5, not QS mentions in notes."""
-    declared = set()
-    for line in content.splitlines():
-        if not re.match(r"^\| P\d{3} \|", line):
-            continue
-        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
-        if len(cells) != 19:
-            continue
-        capacity = 16 if int(cells[0][1:]) <= 20 else 8
-        for value in cells[2:2 + capacity]:
-            match = re.search(
-                r"\[\s*KANDIDAT(?:\s+QS|\s*;\s*(?:MUROJAAH|HAFALAN UNIT)\s+QS)"
-                r"\s+(\d{1,3}:\d{1,3})\b", value
-            )
-            if match:
-                declared.add(match.group(1))
-    if "113:5" not in declared:
+    """Check declared QS 113:5 candidates, never infer completed hafalan."""
+    if not qj5_alfalaq_source_locations(content):
         return ["Jilid 5: QS 113:5 has no declared active candidate source; "
                 "audit notes alone do not establish hafalan completion"]
     return []
