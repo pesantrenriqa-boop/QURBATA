@@ -479,6 +479,18 @@ class CoverageTests(unittest.TestCase):
                                         "AUDIT: QS 113:5", 2)
         self.assertEqual(module.qj5_alfalaq_source_locations(changed), [])
 
+    def test_qs1135_location_scan_rejects_note_only_and_other_verse(self):
+        # A note mentioning QS 113:5 is not a declared Quran source.
+        changed = self.original.replace(
+            "KANDIDAT QS 113:5", "AUDIT: lihat QS 113:5", 2
+        )
+        self.assertEqual(module.qj5_alfalaq_source_locations(changed), [])
+        self.assertTrue(module.qj5_alfalaq_completion_advisory(changed))
+        # Word boundaries must not confuse verse 5 with verse 50.
+        changed = self.original.replace("KANDIDAT QS 113:5", "KANDIDAT QS 113:50", 2)
+        self.assertEqual(module.qj5_alfalaq_source_locations(changed), [])
+        self.assertTrue(module.qj5_alfalaq_completion_advisory(changed))
+
     def test_p013_pending_count_comes_from_audited_rows(self):
         rows, errors = module.audit(self.original)
         self.assertFalse(errors, errors)
