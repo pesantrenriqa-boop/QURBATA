@@ -176,8 +176,11 @@ def validate_empty_slot_evidence(path, register=MODULE.CSV_PATH):
                 specialized = (("waqf_sign_position",) if source["page_id"] == "QJ6-P017"
                                else ("hafalan_unit_approval_id",))
                 for field in common + specialized:
-                    if not row[field].strip():
+                    value = row[field].strip()
+                    if not value:
                         errors.append(f"{slot}: proposed evidence missing {field}")
+                    elif value.casefold() in ("pending", "tbd", "todo", "n/a", "none", "-", "?"):
+                        errors.append(f"{slot}: placeholder is not evidence for {field}")
                 start, end = row["proposed_ayah_start"].strip(), row["proposed_ayah_end"].strip()
                 if start and end:
                     if not start.isascii() or not end.isascii() or not start.isdecimal() or not end.isdecimal():
