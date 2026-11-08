@@ -128,6 +128,26 @@ class ReviewQueueRegression(unittest.TestCase):
                     self.assertEqual(row[field], "")
         self.assertFalse(MODULE.MODULE.audit()["print_approved"])
 
+    def test_empty_evidence_validation_requires_page_specific_evidence(self):
+        import csv
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "intake.csv"
+            MODULE.export_empty_slot_evidence(path)
+            self.assertEqual(MODULE.validate_empty_slot_evidence(path), [])
+            with path.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+            p017 = next(r for r in rows if r["page_id"] == "QJ6-P017")
+            p018 = next(r for r in rows if r["page_id"] == "QJ6-P018")
+            p017["proposed_surah"] = "2"
+            p018["proposed_surah"] = "2"
+            with path.open("w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=MODULE.EMPTY_EVIDENCE_FIELDS)
+                writer.writeheader()
+                writer.writerows(rows)
+            errors = MODULE.validate_empty_slot_evidence(path)
+            self.assertTrue(any("waqf_sign_position" in x for x in errors))
+            self.assertTrue(any("hafalan_unit_approval_id" in x for x in errors))
+
     def test_queue_is_prioritized_and_exportable(self):
         queue = MODULE.build_queue()
         self.assertTrue(all(r["review_status"] == "EMPTY" for r in queue[:25]))
