@@ -451,6 +451,18 @@ class CoverageTests(unittest.TestCase):
         self.assertEqual(locations, ["P001 K13", "P018 K15"])
         self.assertFalse(any(item.startswith("P036 K") for item in locations))
 
+    def test_alfalaq_advisory_accepts_source_after_audit_note(self):
+        # Both source-location reporting and advisory must share the same rule.
+        changed = self.original.replace(
+            "[KANDIDAT QS 113:5;",
+            "[AUDIT: periksa rasm; KANDIDAT QS 113:5;",
+        )
+        self.assertEqual(
+            module.qj5_alfalaq_source_locations(changed),
+            ["P001 K13", "P018 K15"],
+        )
+        self.assertEqual(module.qj5_alfalaq_completion_advisory(changed), [])
+
     def test_qs1135_location_scan_finds_declaration_after_audit_note(self):
         lines = self.original.splitlines()
         for i, line in enumerate(lines):
