@@ -111,6 +111,23 @@ class ReviewQueueRegression(unittest.TestCase):
             self.assertTrue(any("cannot approve an unfilled slot" in x for x in issues))
             self.assertTrue(any("real YYYY-MM-DD date" in x for x in issues))
 
+    def test_empty_evidence_intake_has_no_invented_verses_or_approvals(self):
+        import csv
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "empty-evidence.csv"
+            count = MODULE.export_empty_slot_evidence(path)
+            with path.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+            self.assertEqual(count, 25)
+            self.assertEqual(len(rows), count)
+            self.assertEqual(len({r["slot_id"] for r in rows}), count)
+            for row in rows:
+                self.assertTrue(row["slot_id"])
+                self.assertTrue(row["page_id"])
+                for field in MODULE.EMPTY_EVIDENCE_FIELDS[3:]:
+                    self.assertEqual(row[field], "")
+        self.assertFalse(MODULE.MODULE.audit()["print_approved"])
+
     def test_queue_is_prioritized_and_exportable(self):
         queue = MODULE.build_queue()
         self.assertTrue(all(r["review_status"] == "EMPTY" for r in queue[:25]))
