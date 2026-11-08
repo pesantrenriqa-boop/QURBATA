@@ -19,6 +19,26 @@ class ReviewQueueRegression(unittest.TestCase):
         self.assertTrue(all(r["hold_reasons"] for r in queue))
         self.assertEqual(sum(r["review_status"] == "EMPTY" for r in queue), 25)
 
+    def test_review_queue_preserves_verbatim_quranic_excerpts(self):
+        import csv
+        with (HERE / "QJ6-slots.csv").open(encoding="utf-8-sig", newline="") as f:
+            originals = {r["slot_id"]: r for r in csv.DictReader(f)}
+        queue = MODULE.build_queue()
+        for row in queue:
+            with self.subTest(slot_id=row["slot_id"]):
+                original = originals[row["slot_id"]]
+                for field in ("text_uthmani", "surah", "ayah_start", "ayah_end"):
+                    self.assertEqual(row[field], original[field])
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "review.csv"
+            MODULE.export(output)
+            with output.open(encoding="utf-8", newline="") as f:
+                exported = list(csv.DictReader(f))
+            self.assertEqual(
+                [(r["slot_id"], r["text_uthmani"]) for r in exported],
+                [(r["slot_id"], r["text_uthmani"]) for r in queue],
+            )
+
     def test_queue_is_prioritized_and_exportable(self):
         queue = MODULE.build_queue()
         self.assertTrue(all(r["review_status"] == "EMPTY" for r in queue[:25]))
