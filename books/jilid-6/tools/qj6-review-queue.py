@@ -15,6 +15,7 @@ PRIORITY = (
     "waqf_la_glyph_missing", "source_unverified", "competency_unverified",
 )
 FIELDS = ("slot_id", "page_id", "kind", "competency", "review_status",
+          "text_uthmani", "surah", "ayah_start", "ayah_end",
           "source_id", "source_verified", "competency_verified",
           "hold_reasons", "reviewer", "notes")
 
