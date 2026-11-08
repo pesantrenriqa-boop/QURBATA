@@ -1,3 +1,7 @@
+## Alternative official platform URL (unverified download)
+
+KFGQPC's own technology news page also advertises `https://qurancomplex.gov.sa/techquran/dev` as a developer platform entry point. It may be checked if `/quran-dev/` is under maintenance, but **the existence of the link or indexed product description does not establish a downloadable or authenticated ZIP**. Continue to require the original Hafs Unicode v15.0 package with SHA-256 `227E6B1564D980F2BD09C2C35EBFB0330AC268C79A7C247CD1AB665BC635F245`. No substitute packages, third-party mirrors, or print approval are permitted. Source: https://qurancomplex.gov.sa/category/%D8%AA%D9%82%D9%86%D9%8A%D8%A9/
+
 # P022 — KFGQPC Hafs Unicode verification (read-only)
 
 ## Verified publisher metadata (2026-11-05)
