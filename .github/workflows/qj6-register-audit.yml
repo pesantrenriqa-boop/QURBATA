@@ -81,6 +81,7 @@ jobs:
           assert len({r['slot_id'] for r in rows}) == len(rows)
           assert all(r['hold_reasons'] for r in rows)
           assert {r['slot_id'] for r in rows} == {h['slot_id'] for h in report['release_holds']}
+          # The same validator is available to reviewers for their completed worksheets.
           with Path('/tmp/QJ6-review-worksheet.csv').open(encoding='utf-8', newline='') as f:
               worksheet = list(csv.DictReader(f))
           assert len(worksheet) == len(rows)
@@ -94,6 +95,8 @@ jobs:
           assert report['print_approved'] is False
           print(f'Exported {len(rows)} held slots for human review; no print approval.')
           PY
+      - name: Validate generated reviewer worksheet using public CLI
+        run: python3 books/jilid-6/tools/qj6-review-queue.py --validate-worksheet /tmp/QJ6-review-worksheet.csv
       - name: Generate isolated 360-slot CSV
         run: |
           python3 books/jilid-6/tools/qj6_slots.py init --master books/jilid-6/QJ6-MASTER-Struktur-40-Halaman.md --csv /tmp/QJ6-slots.csv
