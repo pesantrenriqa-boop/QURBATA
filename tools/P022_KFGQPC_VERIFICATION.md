@@ -21,7 +21,7 @@ The publisher page's listed checksum is **metadata, not evidence that a local do
 
 ## Official-site maintenance contingency
 
-If the publisher's download page displays **Website Under Maintenance**, do not substitute a different Quran package or approve any slot based on an indexed/cached web page. The publisher's official Quran Hafs app guide lists **developer@qurancomplex.gov.sa** as a developer contact. Ask the publisher for the original **Unicode Uthmanic Font (Hafs Narration) update 15.0** archive and verify its SHA-256 against the publisher's published value before using it. Treat an email attachment or alternate link as **unverified until its downloaded bytes pass the same SHA-256 gate**. The main register and print approval must remain unchanged while the archive is unavailable.
+If the publisher's download page displays **Website Under Maintenance**, do not substitute a different Quran package or approve any slot based on an indexed/cached web page. The publisher's general contact page also lists **info@qurancomplex.gov.sa** (https://qurancomplex.gov.sa/contact/); this is an escalation contact only, not an alternate source of Quran text. The publisher's official Quran Hafs app guide lists **developer@qurancomplex.gov.sa** as a developer contact. Ask the publisher for the original **Unicode Uthmanic Font (Hafs Narration) update 15.0** archive and verify its SHA-256 against the publisher's published value before using it. Treat an email attachment or alternate link as **unverified until its downloaded bytes pass the same SHA-256 gate**. The main register and print approval must remain unchanged while the archive is unavailable.
 
 ## Safe local procedure
 
