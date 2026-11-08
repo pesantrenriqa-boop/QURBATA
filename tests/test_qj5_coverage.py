@@ -451,6 +451,17 @@ class CoverageTests(unittest.TestCase):
         self.assertEqual(locations, ["P001 K13", "P018 K15"])
         self.assertFalse(any(item.startswith("P036 K") for item in locations))
 
+    def test_qs1135_location_scan_finds_declaration_after_audit_note(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P040 |"):
+                cells = line.split("|")
+                cells[3] = "وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ [AUDIT: periksa; KANDIDAT QS 113:5]"
+                lines[i] = "|".join(cells)
+                break
+        locations = module.qj5_alfalaq_source_locations("\n".join(lines))
+        self.assertIn("P040 K01", locations)
+
     def test_qs1135_location_scan_ignores_notes(self):
         changed = self.original.replace("KANDIDAT QS 113:5",
                                         "AUDIT: QS 113:5", 2)
