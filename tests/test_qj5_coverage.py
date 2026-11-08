@@ -198,6 +198,19 @@ class CoverageTests(unittest.TestCase):
                             and slots == ["K03", "K06"]
                             for page, reference, slots in source_groups))
 
+    def test_source_advisory_ignores_quoted_candidate_label(self):
+        lines = self.original.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("| P040 |"):
+                cells = line.split("|")
+                cells[3] = "نَصٌّ [AUDIT: tulisan KANDIDAT QS 2:2 hanya kutipan]"
+                cells[4] = "نَصٌّ آخر [AUDIT: tulisan KANDIDAT QS 2:2 hanya kutipan]"
+                lines[i] = "|".join(cells)
+                break
+        groups = module.repeated_quran_loci("\n".join(lines))
+        self.assertFalse(any(page == "P040" and reference == "QS 2:2"
+                             for page, reference, _ in groups), groups)
+
     def test_source_advisory_does_not_count_bare_qs_in_notes(self):
         lines = self.original.splitlines()
         for i, line in enumerate(lines):
