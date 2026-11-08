@@ -102,6 +102,8 @@ jobs:
           PY
       - name: Validate generated reviewer worksheet using public CLI
         run: python3 books/jilid-6/tools/qj6-review-queue.py --validate-worksheet /tmp/QJ6-review-worksheet.csv
+      - name: Validate blank evidence intake using public CLI
+        run: python3 books/jilid-6/tools/qj6-review-queue.py --validate-empty-evidence /tmp/QJ6-empty-slot-evidence.csv
       - name: Preserve committed register and artifact checksums
         run: |
           cp books/jilid-6/tools/QJ6-slots.csv /tmp/QJ6-committed-slots.csv
