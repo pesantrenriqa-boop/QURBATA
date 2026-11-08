@@ -28,6 +28,31 @@ class RegisterAuditRegression(unittest.TestCase):
                 writer.writerows(rows)
             return MODULE.audit(path)
 
+    def test_page_kinds_agree_with_master_curriculum(self):
+        """Guard against silent drift between the master table and register."""
+        master = (HERE.parent / "QJ6-MASTER-Struktur-40-Halaman.md").read_text(encoding="utf-8")
+        master_kinds = {}
+        for line in master.splitlines():
+            columns = [part.strip() for part in line.split("|")]
+            if len(columns) != 7 or not columns[2].startswith("QJ6-P"):
+                continue
+            page_id, kind = columns[2], columns[5]
+            if kind.startswith("Hafalan"):
+                expected = "hafalan"
+            elif kind == "Bahasa Arab":
+                expected = "bahasa-arab"
+            elif kind == "Akhlak/Hadis":
+                expected = "akhlak-hadis"
+            else:
+                expected = "tartil"
+            self.assertNotIn(page_id, master_kinds)
+            master_kinds[page_id] = expected
+        self.assertEqual(len(master_kinds), 40, "Master must define all 40 pages")
+        for row in self.rows:
+            with self.subTest(slot_id=row["slot_id"]):
+                self.assertIn(row["page_id"], master_kinds)
+                self.assertEqual(row["kind"], master_kinds[row["page_id"]])
+
     def test_committed_register_has_no_structural_errors(self):
         result = MODULE.audit()
         self.assertEqual(result["errors"], [])
