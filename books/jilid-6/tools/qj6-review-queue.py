@@ -68,7 +68,10 @@ def validate_review_worksheet(worksheet, register=MODULE.CSV_PATH):
         if reader.fieldnames != list(FIELDS + DECISION_FIELDS):
             return ["Worksheet columns differ from controlled template"]
         seen = set()
-        for row in reader:
+        for line_number, row in enumerate(reader, start=2):
+            if None in row or any(value is None for value in row.values()):
+                problems.append(f"Worksheet line {line_number}: malformed CSV field count")
+                continue
             ident = row["slot_id"]
             if ident in seen:
                 problems.append(f"{ident}: duplicate worksheet row")
@@ -149,7 +152,10 @@ def validate_empty_slot_evidence(path, register=MODULE.CSV_PATH):
         if reader.fieldnames != list(EMPTY_EVIDENCE_FIELDS):
             return ["Evidence intake columns differ from controlled template"]
         seen = set()
-        for row in reader:
+        for line_number, row in enumerate(reader, start=2):
+            if None in row or any(value is None for value in row.values()):
+                errors.append(f"Evidence intake line {line_number}: malformed CSV field count")
+                continue
             slot = row["slot_id"]
             if slot in seen:
                 errors.append(f"{slot}: duplicate slot")
