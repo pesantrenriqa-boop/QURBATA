@@ -71,6 +71,9 @@ def audit(content):
         elif page == "P013" and int(sah.split("/")[0]) > 4:
             errors.append("P013: Sah count exceeds the four distinct documented Mad Farq loci")
         results.append((page, filled, capacity, capacity-filled, sah))
+    ordered_pages = [row[0] for row in results]
+    if len(ordered_pages) == 40 and sorted(ordered_pages) == [f"P{i:03d}" for i in range(1, 41)] and ordered_pages != sorted(ordered_pages):
+        errors.append("page order mismatch: P001-P040 must be sequential")
     expected = {f"P{i:03d}" for i in range(1, 41)}
     if seen != expected:
         errors.append(f"missing pages: {sorted(expected-seen)}; unexpected: {sorted(seen-expected)}")
