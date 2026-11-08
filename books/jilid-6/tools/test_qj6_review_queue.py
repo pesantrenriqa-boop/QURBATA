@@ -228,6 +228,29 @@ class ReviewQueueRegression(unittest.TestCase):
             errors = MODULE.validate_empty_slot_evidence(path)
             self.assertTrue(any("surah must be a numeric ID" in e for e in errors))
 
+    def test_evidence_rejects_placeholder_as_primary_reference(self):
+        import csv
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "intake.csv"
+            MODULE.export_empty_slot_evidence(path)
+            with path.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+            row = next(r for r in rows if r["page_id"] == "QJ6-P018")
+            row.update({
+                "proposed_surah": "2", "proposed_ayah_start": "1",
+                "proposed_ayah_end": "2", "mushaf_edition": "pending",
+                "edition_page_or_link": "TBD", "reviewer_name": "Reviewer",
+                "decision_id": "TODO", "prerequisite_and_duplicate_check": "N/A",
+                "hafalan_unit_approval_id": "pending",
+            })
+            with path.open("w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=MODULE.EMPTY_EVIDENCE_FIELDS)
+                writer.writeheader()
+                writer.writerows(rows)
+            issues = MODULE.validate_empty_slot_evidence(path)
+            self.assertTrue(any("placeholder is not evidence for mushaf_edition" in e for e in issues))
+            self.assertTrue(any("placeholder is not evidence for hafalan_unit_approval_id" in e for e in issues))
+
     def test_queue_is_prioritized_and_exportable(self):
         queue = MODULE.build_queue()
         self.assertTrue(all(r["review_status"] == "EMPTY" for r in queue[:25]))
