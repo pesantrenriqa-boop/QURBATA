@@ -183,6 +183,29 @@ class ReviewQueueRegression(unittest.TestCase):
                 issues = validator(path)
                 self.assertTrue(any("malformed CSV field count" in issue for issue in issues))
 
+    def test_evidence_rejects_invalid_surah_and_reversed_ayah_range(self):
+        import csv
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "intake.csv"
+            MODULE.export_empty_slot_evidence(path)
+            with path.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+            row = next(r for r in rows if r["page_id"] == "QJ6-P017")
+            row.update({
+                "proposed_surah": "115", "proposed_ayah_start": "9",
+                "proposed_ayah_end": "3", "mushaf_edition": "pending",
+                "edition_page_or_link": "pending", "reviewer_name": "Reviewer",
+                "decision_id": "pending", "prerequisite_and_duplicate_check": "pending",
+                "waqf_sign_position": "pending",
+            })
+            with path.open("w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=MODULE.EMPTY_EVIDENCE_FIELDS)
+                writer.writeheader()
+                writer.writerows(rows)
+            errors = MODULE.validate_empty_slot_evidence(path)
+            self.assertTrue(any("surah number outside 1-114" in e for e in errors))
+            self.assertTrue(any("invalid ayah range" in e for e in errors))
+
     def test_queue_is_prioritized_and_exportable(self):
         queue = MODULE.build_queue()
         self.assertTrue(all(r["review_status"] == "EMPTY" for r in queue[:25]))
