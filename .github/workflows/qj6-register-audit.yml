@@ -69,7 +69,7 @@ jobs:
           PY
       - name: Export human review queue (read-only)
         run: |
-          python3 books/jilid-6/tools/qj6-review-queue.py /tmp/QJ6-review-queue.csv
+          python3 books/jilid-6/tools/qj6-review-queue.py /tmp/QJ6-review-queue.csv --worksheet /tmp/QJ6-review-worksheet.csv
           python3 - <<'PY'
           import csv
           import json
@@ -100,3 +100,4 @@ jobs:
             /tmp/QJ6-audit.json
             /tmp/QJ6-committed-audit.json
             /tmp/QJ6-review-queue.csv
+            /tmp/QJ6-review-worksheet.csv
