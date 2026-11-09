@@ -82,7 +82,7 @@ class CoverageTests(unittest.TestCase):
         finally:
             self.original = original
 
-
+    def test_original_has_40_pages_and_consistent_capacity(self):
         rows, errors = module.audit(self.original)
         self.assertFalse(errors, errors)
         self.assertEqual(len(rows), 40)
