@@ -129,6 +129,22 @@ class ReviewQueueRegression(unittest.TestCase):
                     self.assertEqual(row[field], "")
         self.assertFalse(MODULE.MODULE.audit()["print_approved"])
 
+    def test_empty_evidence_rejects_duplicate_decision_ids(self):
+        import csv
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "intake.csv"
+            MODULE.export_empty_slot_evidence(path)
+            with path.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+            for row in rows[:2]:
+                row["decision_id"] = "same-decision"
+            with path.open("w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=MODULE.EMPTY_EVIDENCE_FIELDS)
+                writer.writeheader()
+                writer.writerows(rows)
+            issues = MODULE.validate_empty_slot_evidence(path)
+            self.assertTrue(any("duplicate decision_id" in e for e in issues))
+
     def test_empty_evidence_rejects_stale_row_fingerprint(self):
         import csv
         with tempfile.TemporaryDirectory() as directory:
