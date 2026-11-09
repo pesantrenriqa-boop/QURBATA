@@ -648,10 +648,10 @@ class CheckerTests(unittest.TestCase):
         for suffix in ("a", ":1", "_1", "-2", "–2"):
             with self.subTest(suffix=suffix), tempfile.TemporaryDirectory() as directory:
                 root = Path(directory)
-                csv_text = "sura_no,aya_no,aya_text_unicode\\n"
+                csv_text = "sura_no,aya_no,aya_text_unicode\n"
                 for index, reference in enumerate(module.REFERENCES, 1):
                     sura, aya = reference.split(":")
-                    csv_text += f"{sura},{aya},SLOT_{index:02d}\\n"
+                    csv_text += f"{sura},{aya},SLOT_{index:02d}\n"
                 archive = root / "synthetic.zip"
                 with zipfile.ZipFile(archive, "w") as z:
                     z.writestr("verses.csv", csv_text)
@@ -663,7 +663,7 @@ class CheckerTests(unittest.TestCase):
                 ]
                 register = root / "register.md"
                 register.write_text(
-                    "| P022 | Ikhfa syafawi | " + " | ".join(slots) + " | — |\\n",
+                    "| P022 | Ikhfa syafawi | " + " | ".join(slots) + " | — |\n",
                     encoding="utf-8",
                 )
                 report = root / "screening.json"
