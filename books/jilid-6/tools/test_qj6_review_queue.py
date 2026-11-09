@@ -294,6 +294,28 @@ class ReviewQueueRegression(unittest.TestCase):
             issues = MODULE.validate_review_worksheet(path)
             self.assertTrue(any("research slot needs a revised register" in e for e in issues))
 
+    def test_evidence_rejects_ayah_above_quran_wide_maximum(self):
+        import csv
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "intake.csv"
+            MODULE.export_empty_slot_evidence(path)
+            with path.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+            row = next(r for r in rows if r["page_id"] == "QJ6-P018")
+            row.update({
+                "proposed_surah": "2", "proposed_ayah_start": "1",
+                "proposed_ayah_end": "287", "mushaf_edition": "MSI",
+                "edition_page_or_link": "source page", "reviewer_name": "Reviewer",
+                "decision_id": "review-1", "prerequisite_and_duplicate_check": "checked",
+                "hafalan_unit_approval_id": "curriculum-1",
+            })
+            with path.open("w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=MODULE.EMPTY_EVIDENCE_FIELDS)
+                writer.writeheader()
+                writer.writerows(rows)
+            issues = MODULE.validate_empty_slot_evidence(path)
+            self.assertTrue(any("Quran-wide maximum 286" in e for e in issues))
+
     def test_queue_is_prioritized_and_exportable(self):
         queue = MODULE.build_queue()
         self.assertTrue(all(r["review_status"] == "EMPTY" for r in queue[:25]))
