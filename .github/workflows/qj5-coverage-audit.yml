@@ -59,6 +59,14 @@ jobs:
               echo '| Regression tests | ${{ steps.regression_tests.outcome }} | Log missing |'
             fi
             echo
+            if [ -f qj5-coverage-audit.log ]; then
+              echo
+              echo '### Human tashih review (advisory; not a pass/fail decision)'
+              grep '^ADVISORY: .*same-page phrase groups' qj5-coverage-audit.log || true
+              grep '^ADVISORY: .*repeated same-page Quran reference groups' qj5-coverage-audit.log || true
+              grep '^ADVISORY P040 ' qj5-coverage-audit.log || true
+              echo 'Do not replace Quran text or increase Sah based on these advisories.'
+            fi
             echo 'The overall job conclusion remains authoritative; captured logs do not imply success.'
           } >> "$GITHUB_STEP_SUMMARY"
       - name: Preserve audit and test evidence
