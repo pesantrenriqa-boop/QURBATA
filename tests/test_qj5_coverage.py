@@ -224,6 +224,24 @@ class CoverageTests(unittest.TestCase):
                             and slots == ["K03", "K06"]
                             for page, reference, slots in source_groups))
 
+    def test_p040_identical_exam_items_remain_visible_for_human_review(self):
+        # A repeated final-exam item is an advisory, never automatic permission
+        # to replace Quran text or increase Sah.
+        duplicates = module.repeated_phrases(self.original)
+        self.assertTrue(any(
+            page == "P040" and slots == ["K03", "K06"]
+            for page, _phrase, slots in duplicates
+        ))
+        source_duplicates = module.repeated_quran_loci(self.original)
+        self.assertTrue(any(
+            page == "P040" and reference == "QS 17:70"
+            and slots == ["K03", "K06"]
+            for page, reference, slots in source_duplicates
+        ))
+        rows, errors = module.audit(self.original)
+        self.assertFalse(errors, errors)
+        self.assertEqual(next(row for row in rows if row[0] == "P040")[4], "0/8")
+
     def test_source_advisory_ignores_quoted_candidate_label(self):
         lines = self.original.splitlines()
         for i, line in enumerate(lines):
