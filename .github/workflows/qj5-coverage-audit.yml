@@ -4,6 +4,7 @@ on:
     paths:
       - '02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/REGISTER_24_KELOMPOK_JILID_5.md'
       - '02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/REVIEW_DUPLIKASI_INTERNAL_JILID_5_2026-11-09.md'
+      - '02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/LEMBAR_TASHIH_P040_JILID_5.md'
       - 'scripts/audit_qj5_coverage.py'
       - 'tests/test_qj5_coverage.py'
       - '.github/workflows/qj5-coverage-audit.yml'
@@ -12,6 +13,7 @@ on:
     paths:
       - '02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/REGISTER_24_KELOMPOK_JILID_5.md'
       - '02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/REVIEW_DUPLIKASI_INTERNAL_JILID_5_2026-11-09.md'
+      - '02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/LEMBAR_TASHIH_P040_JILID_5.md'
       - 'scripts/audit_qj5_coverage.py'
       - 'tests/test_qj5_coverage.py'
       - '.github/workflows/qj5-coverage-audit.yml'
