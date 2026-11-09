@@ -89,11 +89,15 @@ jobs:
             echo "run_id=$GITHUB_RUN_ID"
             echo "run_attempt=$GITHUB_RUN_ATTEMPT"
             echo "generated_utc=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo "workflow=$GITHUB_WORKFLOW"
+            echo "run_url=https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/attempts/$GITHUB_RUN_ATTEMPT"
             echo "coverage_step=${{ steps.coverage_audit.outcome }}"
             echo "tests_step=${{ steps.regression_tests.outcome }}"
             grep -E '^Ran [0-9]+ tests' qj5-regression-tests.log | tail -n 1 || true
             grep -E '^(OK|FAILED)' qj5-regression-tests.log | tail -n 1 || true
           } > qj5-ci-provenance.txt
+          # Hash the captured logs so exported evidence can be checked offline.
+          sha256sum qj5-coverage-audit.log qj5-regression-tests.log > qj5-log-checksums.sha256
       - name: Preserve audit and test evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -103,5 +107,6 @@ jobs:
             qj5-coverage-audit.log
             qj5-regression-tests.log
             qj5-ci-provenance.txt
+            qj5-log-checksums.sha256
           if-no-files-found: warn
           retention-days: 30
