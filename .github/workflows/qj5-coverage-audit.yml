@@ -78,6 +78,22 @@ jobs:
             fi
             echo 'The overall job conclusion remains authoritative; captured logs do not imply success.'
           } >> "$GITHUB_STEP_SUMMARY"
+      - name: Record CI evidence provenance
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "repository=$GITHUB_REPOSITORY"
+            echo "commit=$GITHUB_SHA"
+            echo "ref=$GITHUB_REF"
+            echo "run_id=$GITHUB_RUN_ID"
+            echo "run_attempt=$GITHUB_RUN_ATTEMPT"
+            echo "generated_utc=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo "coverage_step=${{ steps.coverage_audit.outcome }}"
+            echo "tests_step=${{ steps.regression_tests.outcome }}"
+            grep -E '^Ran [0-9]+ tests' qj5-regression-tests.log | tail -n 1 || true
+            grep -E '^(OK|FAILED)' qj5-regression-tests.log | tail -n 1 || true
+          } > qj5-ci-provenance.txt
       - name: Preserve audit and test evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -86,5 +102,6 @@ jobs:
           path: |
             qj5-coverage-audit.log
             qj5-regression-tests.log
+            qj5-ci-provenance.txt
           if-no-files-found: warn
           retention-days: 30
