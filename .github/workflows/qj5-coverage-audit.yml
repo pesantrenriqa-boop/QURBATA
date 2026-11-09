@@ -69,6 +69,13 @@ jobs:
               grep '^ADVISORY P040 ' qj5-coverage-audit.log || true
               echo 'Do not replace Quran text or increase Sah based on these advisories.'
             fi
+            echo
+            echo '### P040 human approval gate'
+            if grep -Fq 'Izin pembaruan register: **BELUM DIBERIKAN**' '02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/LEMBAR_TASHIH_P040_JILID_5.md'; then
+              echo 'P040: approval pending. Keep Sah at 0/8; no automatic Quran text changes.'
+            else
+              echo 'P040: approval marker changed or unavailable. Require manual review of the worksheet and register; CI is not tashih.'
+            fi
             echo 'The overall job conclusion remains authoritative; captured logs do not imply success.'
           } >> "$GITHUB_STEP_SUMMARY"
       - name: Preserve audit and test evidence
