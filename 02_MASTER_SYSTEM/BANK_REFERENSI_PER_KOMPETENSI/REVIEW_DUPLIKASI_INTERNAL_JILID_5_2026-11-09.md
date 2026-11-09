@@ -68,6 +68,30 @@ Untuk setiap slot, pentashih mengisi: (1) lokasi QS dan rasm tervalidasi; (2) hu
 
 **Gerbang keputusan K06:** tahan perubahan sampai matriks K01–K08 menunjukkan hukum mad mana yang belum tercakup, lalu pilih ayat terverifikasi yang menguji hukum tersebut. Calon QS 17:67 tetap cadangan, bukan rekomendasi final.
 
+## Matriks kesenjangan kompetensi P040 terhadap kurikulum Jilid 5
+
+Pemetaan di bawah bersifat **audit deklarasi**, bukan hasil analisis tajwid yang disahkan. Kompetensi resmi diambil dari judul P001–P017 pada register; bukti ujian berasal dari catatan K01–K08 P040. **Tidak disebut dalam anotasi** berarti belum terdokumentasi, bukan berarti pasti tidak muncul dalam ayat.
+
+| Kompetensi Jilid 5 | Halaman pembelajaran | Bukti sasaran eksplisit di P040 | Keputusan audit |
+|---|---|---|---|
+| Mad asli | P001 | Belum dipetakan ke slot tertentu | Perlu penandaan dan rubrik |
+| Mad wajib muttasil | P002–P003 | Belum dipetakan | Perlu verifikasi sasaran |
+| Mad jaiz munfasil | P004–P005 | Belum dipetakan | Perlu verifikasi sasaran |
+| Kontras wajib–jaiz | P006 | Belum dipetakan | Perlu asesmen pembeda |
+| Mad badal | P007 | **K07** menyebut `آمِنُوا` dan `آمَنَ` | Ada deklarasi; belum tashih |
+| Mad silah qashirah | P008 | Belum dipetakan | Perlu verifikasi sasaran |
+| Mad silah thawilah | P009 | Belum dipetakan | Perlu verifikasi sasaran |
+| Mad lazim kalimi | P011 | Belum dipetakan | Perlu verifikasi sasaran |
+| Mad lazim harfi | P012 | Belum dipetakan | Perlu verifikasi sasaran |
+| Mad farq | P013 | Belum dipetakan | Jangan membuat contoh baru; hanya empat lokasi yang dicatat di register |
+| Mad 'aridh lissukun | P015 | Belum dipetakan | Perlu kondisi waqaf dan rubrik |
+| Mad lin | P016 | Belum dipetakan | Perlu kondisi waqaf dan rubrik |
+| Kontras 'aridh–lin | P017 | Belum dipetakan | Perlu asesmen pembeda |
+
+**Kesimpulan terbatas:** dari anotasi P040 yang ada, hanya **mad badal pada K07** yang secara eksplisit menunjuk jenis mad tertentu. Slot lainnya berlabel umum `UJIAN TRANSFER MAD`. Karena itu, **belum dapat ditentukan secara sah satu jenis mad paling kurang terwakili** tanpa mengaudit teks dan cara bacanya satu per satu.
+
+**Tindakan prioritas:** (1) pentashih memberi label hukum mad utama dan sekunder pada K01–K08; (2) menilai cakupan dan bobot; (3) baru menentukan kebutuhan K06; (4) menyeleksi alternatif berdasarkan sumber Quran yang telah ditashih. Tidak boleh menafsirkan satu slot ujian sebagai bukti penguasaan seluruh 13 kategori.
+
 ## Checklist penerimaan alternatif P040 K06
 
 - [ ] Kutipan dan lokasi QS terkonfirmasi dari mushaf rujukan yang berwenang.
