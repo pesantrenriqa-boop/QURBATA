@@ -62,7 +62,27 @@ class CoverageTests(unittest.TestCase):
                 "P040 Sah must stay zero until human approval is documented"
             )
 
-    def test_original_has_40_pages_and_consistent_capacity(self):
+    def test_p040_pending_approval_gate_rejects_premature_sah(self):
+        # Mutation regression: an accidental 1/8 approval must fail the gate.
+        original = self.original
+        lines = original.splitlines()
+        for index, line in enumerate(lines):
+            if line.startswith("| P040 |"):
+                fields = line.split("|")
+                self.assertEqual(fields[-2].strip(), "0/8")
+                fields[-2] = " 1/8 "
+                lines[index] = "|".join(fields)
+                break
+        else:
+            self.fail("P040 missing")
+        self.original = "\n".join(lines)
+        try:
+            with self.assertRaisesRegex(AssertionError, "P040 Sah must stay zero"):
+                self.test_p040_sah_stays_zero_until_worksheet_authorizes_update()
+        finally:
+            self.original = original
+
+
         rows, errors = module.audit(self.original)
         self.assertFalse(errors, errors)
         self.assertEqual(len(rows), 40)
