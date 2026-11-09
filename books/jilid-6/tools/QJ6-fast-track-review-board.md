@@ -11,6 +11,16 @@
 | C — Kurikulum hafalan lanjutan | P036 sembilan EMPTY | Penanggung jawab kurikulum menetapkan progresi dan murajaah terkait P018 | Dokumen keputusan resmi + ID persetujuan, peta hubungan P018 | Urutan konsisten, tidak ada duplikasi yang tidak disengaja |
 | D — Kasus khusus | P022-S09 RESEARCH | Pentashih dan ahli tajwid menilai teks QS 21:92 serta titik waqaf sesuai kompetensi | Keputusan tertulis dengan alasan, rujukan mushaf, aturan bacaan | Status RESEARCH diselesaikan lewat revisi register terpisah, bukan APPROVE langsung |
 
+## Pelacakan GitHub langsung
+
+- [Issue #22 — pusat koordinasi](https://github.com/pesantrenriqa-boop/QURBATA/issues/22)
+- [Issue #23 — jalur A, pentashih MSI/waqaf](https://github.com/pesantrenriqa-boop/QURBATA/issues/23)
+- [Issue #24 — jalur B, hafalan P018](https://github.com/pesantrenriqa-boop/QURBATA/issues/24)
+- [Issue #25 — jalur C, hafalan P036](https://github.com/pesantrenriqa-boop/QURBATA/issues/25)
+- [Issue #26 — jalur D, P022-S09 RESEARCH](https://github.com/pesantrenriqa-boop/QURBATA/issues/26)
+
+Gunakan [template laporan bukti ahli](../../../.github/ISSUE_TEMPLATE/qj6-expert-evidence.md) saat menyerahkan hasil pemeriksaan. Template ini berada pada branch kerja; sampai tersedia pada default branch, salin isinya ke komentar issue yang relevan. **Issue yang dibuat tidak berarti reviewer telah ditugaskan atau bukti sudah diterima.**
+
 ## Prosedur satu putaran
 
 1. **Bagi tugas A–D secara paralel.** Tidak perlu menunggu hasil jalur lain untuk mulai memeriksa bukti.
