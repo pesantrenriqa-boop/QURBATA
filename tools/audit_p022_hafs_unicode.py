@@ -128,7 +128,7 @@ def main():
         passage = cell.split(" [", 1)[0].strip()
         if not passage or passage == "—":
             sys.exit(f"HOLD: empty or placeholder slot K{i:02d}")
-        citations = re.findall(r"\bQS\s+(\d+):(\d+)\b", cell)
+        citations = re.findall(r"\bQS\s+(\d+):(\d+)(?![\w:–-])", cell)
         if len(citations) != 1 or f"{int(citations[0][0])}:{int(citations[0][1])}" != ref:
             sys.exit(f"HOLD: source reference mismatch at K{i:02d}; ambiguous citations or wrong QS (expected exactly one QS {ref})")
         verse = index.get(tuple(map(int, ref.split(":"))))
