@@ -9,7 +9,7 @@ Unduh artefak `qj6-register-and-audit` dari workflow **QURBATA J6 Register Audit
 - `QJ6-committed-slots.csv`: register **asli** dari commit, bukan template kosong.
 - `QJ6-review-queue.csv`: daftar slot tertahan beserta alasan dan sidik jari baris.
 - `QJ6-review-worksheet.csv`: lembar keputusan kosong untuk pemeriksa.
-- `QJ6-empty-slot-evidence.csv`: formulir pengumpulan bukti primer untuk 25 slot kosong; tidak berisi usulan ayat.
+- `QJ6-empty-slot-evidence.csv`: formulir pengumpulan bukti primer untuk 25 slot kosong; tidak berisi usulan ayat. Kolom `row_sha256` mengikat setiap slot kosong pada isi register di commit asal; **jangan mengubah kolom ini**.
 - `QJ6-committed-audit.json`: hasil audit register asli.
 - `QJ6-review-artifact-sha256.txt`: checksum untuk kelima berkas di atas.
 - `QJ6-slots.csv` dan `QJ6-audit.json`: **hanya scaffolding terisolasi untuk pengujian**, jangan dipakai sebagai register materi yang telah terisi.
