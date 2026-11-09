@@ -88,6 +88,8 @@ def validate_review_worksheet(worksheet, register=MODULE.CSV_PATH):
                 problems.append(f"{ident}: reviewer fields entered without a decision")
             if decision not in ("", "APPROVE", "REVISE", "REJECT"):
                 problems.append(f"{ident}: invalid decision {decision!r}")
+            if decision and not row["review_notes"].strip() and decision in ("REVISE", "REJECT"):
+                problems.append(f"{ident}: {decision} requires review_notes explaining the action")
             if decision == "APPROVE" and source["review_status"] == "EMPTY":
                 problems.append(f"{ident}: cannot approve an unfilled slot")
             if decision == "APPROVE" and source["review_status"] == "RESEARCH":
