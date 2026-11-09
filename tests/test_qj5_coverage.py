@@ -34,7 +34,7 @@ class CoverageTests(unittest.TestCase):
         for index, candidate in enumerate(cells[2:10], 1):
             with self.subTest(slot=index):
                 match = __import__("re").search(
-                    r"KANDIDAT QS (\\d+:\\d+)", candidate
+                    r"KANDIDAT QS (\d+:\d+)", candidate
                 )
                 self.assertIsNotNone(match, "P040 source label missing")
                 slot = f"K{index:02d}"
