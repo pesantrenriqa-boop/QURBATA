@@ -316,6 +316,22 @@ class ReviewQueueRegression(unittest.TestCase):
             issues = MODULE.validate_empty_slot_evidence(path)
             self.assertTrue(any("Quran-wide maximum 286" in e for e in issues))
 
+    def test_review_worksheet_rejects_orphaned_reviewer_fields(self):
+        import csv
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "worksheet.csv"
+            MODULE.export_review_worksheet(path)
+            with path.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+            rows[0]["reviewer_name"] = "Reviewer"
+            rows[0]["evidence_reference"] = "unreviewed source"
+            with path.open("w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=MODULE.FIELDS + MODULE.DECISION_FIELDS)
+                writer.writeheader()
+                writer.writerows(rows)
+            issues = MODULE.validate_review_worksheet(path)
+            self.assertTrue(any("reviewer fields entered without a decision" in e for e in issues))
+
     def test_queue_is_prioritized_and_exportable(self):
         queue = MODULE.build_queue()
         self.assertTrue(all(r["review_status"] == "EMPTY" for r in queue[:25]))
