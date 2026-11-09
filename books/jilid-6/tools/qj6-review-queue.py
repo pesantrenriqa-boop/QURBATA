@@ -192,6 +192,8 @@ def validate_empty_slot_evidence(path, register=MODULE.CSV_PATH):
                         errors.append(f"{slot}: ayah range must use positive ASCII integers")
                     elif int(start) < 1 or int(end) < int(start):
                         errors.append(f"{slot}: invalid ayah range")
+                    elif int(end) > 286:
+                        errors.append(f"{slot}: ayah number exceeds Quran-wide maximum 286; verify surah-specific limit")
                 surah = row["proposed_surah"].strip()
                 if surah:
                     if not surah.isascii() or not surah.isdecimal():
