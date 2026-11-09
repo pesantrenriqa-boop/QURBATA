@@ -126,7 +126,7 @@ def export(path, register=MODULE.CSV_PATH):
 
 
 EMPTY_EVIDENCE_FIELDS = (
-    "slot_id", "page_id", "competency", "proposed_surah", "proposed_ayah_start",
+    "slot_id", "page_id", "competency", "row_sha256", "proposed_surah", "proposed_ayah_start",
     "proposed_ayah_end", "mushaf_edition", "edition_page_or_link",
     "waqf_sign_position", "hafalan_unit_approval_id",
     "prerequisite_and_duplicate_check", "reviewer_name", "decision_id", "notes",
@@ -146,6 +146,7 @@ def export_empty_slot_evidence(path, register=MODULE.CSV_PATH):
                 "slot_id": row["slot_id"],
                 "page_id": row["page_id"],
                 "competency": row["competency"],
+                "row_sha256": hashlib.sha256(json.dumps(row, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest(),
             })
     return len(rows)
 
@@ -175,9 +176,12 @@ def validate_empty_slot_evidence(path, register=MODULE.CSV_PATH):
                 continue
             if row["page_id"] != source["page_id"] or row["competency"] != source["competency"]:
                 errors.append(f"{slot}: controlled page or competency changed")
+            fingerprint = hashlib.sha256(json.dumps(source, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
+            if row["row_sha256"] != fingerprint:
+                errors.append(f"{slot}: stale or changed register row_sha256")
             # Any entered evidence starts a proposal; do not let partial records
             # bypass checks merely because surah/ayah fields are still blank.
-            proposed = any(row[f].strip() for f in EMPTY_EVIDENCE_FIELDS[3:])
+            proposed = any(row[f].strip() for f in EMPTY_EVIDENCE_FIELDS[4:])
             if proposed:
                 common = ("proposed_surah", "proposed_ayah_start", "proposed_ayah_end",
                           "mushaf_edition", "edition_page_or_link", "reviewer_name",
