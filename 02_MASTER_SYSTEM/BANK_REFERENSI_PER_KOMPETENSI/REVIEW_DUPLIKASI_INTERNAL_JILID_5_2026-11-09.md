@@ -24,8 +24,8 @@ Status: **DRAF REVIEW / BELUM TASHIH**. Dokumen ini tidak mengesahkan ayat, rasm
 
 ## Pemeriksaan pembanding awal (9 November 2026)
 
-- **Sumber terbaca:** [Quran.com QS 17:67](https://quran.com/17/67) menampilkan secara berurutan `وَإِذَا`, `مَسَّكُمُ`, `ٱلضُّرُّ`, `فِي`, `ٱلۡبَحۡرِ`. Tampilan rasm Utsmani Quran.com pada QS 17:67 memakai `فِى ٱلْبَحْرِ`. Penulisan sebelumnya `فِي ٱلۡبَحۡرِ` tidak sama secara karakter; usulan dikoreksi agar sesuai tampilan sumber, tetapi **belum ditashih sebagai rasm final**.
-- **Indikator awal:** mad asli pada `فِي` layak **diperiksa**; untuk evaluasi transfer Jilid 5, pentashih harus menentukan apakah satu target ini cukup atau perlu kombinasi hukum mad lain. Jangan menyatakan semua hukum pada potongan telah lolos.
+- **Sumber terbaca:** [Quran.com QS 17:67](https://quran.com/id/perjalanan-malam/67) menampilkan secara berurutan `وَإِذَا`, `مَسَّكُمُ`, `ٱلضُّرُّ`, `فِى`, `ٱلْبَحْرِ`. Versi draf sebelumnya memakai karakter berbeda (`فِي ٱلۡبَحۡرِ`); teks usulan kini diselaraskan **secara tekstual** dengan tampilan rasm Utsmani sumber daring, bukan disahkan sebagai rasm final.
+- **Indikator awal:** mad asli pada `فِى` layak **diperiksa**; untuk evaluasi transfer Jilid 5, pentashih harus menentukan apakah satu target ini cukup atau perlu kombinasi hukum mad lain. Jangan menyatakan semua hukum pada potongan telah lolos.
 - **Batas potongan:** penggalan berhenti pada `ٱلۡبَحۡرِ`, bukan akhir QS 17:67; aturan waqaf pada potongan dan rasm cetak perlu keputusan pentashih.
 - **Keputusan:** kandidat **ditahan sebagai usulan**. Tidak ada penggantian P040 K06 dan tidak ada perubahan Sah sampai pemeriksaan manusia selesai.
 
@@ -39,7 +39,7 @@ Status: **DRAF REVIEW / BELUM TASHIH**. Dokumen ini tidak mengesahkan ayat, rasm
 |---|---|---|
 | Sumber Quran dapat dilacak | Ada, QS 17:67 | Layak dilanjutkan ke tashih |
 | Berbeda dari K03 QS 17:70 | Ya, secara teks dan lokasi ayat | Mengurangi pengulangan identik |
-| Memuat sasaran mad | Ada calon mad asli pada `فِي`; unsur lain perlu analisis | Belum cukup untuk menyatakan kompetensi ujian transfer terpenuhi |
+| Memuat sasaran mad | Ada calon mad asli pada `فِى`; unsur lain perlu analisis | Belum cukup untuk menyatakan kompetensi ujian transfer terpenuhi |
 | Kesesuaian dengan ujian akhir (retensi, transfer, adab) | **Belum terbukti** dari satu penggalan | **Tahan penggantian** sampai indikator dan rubrik penilaian ditetapkan |
 | Waqaf di akhir kutipan | Kutipan berhenti sebelum akhir ayat | Tidak boleh diajarkan sebagai waqaf akhir ayat tanpa keputusan pentashih |
 | Rasm Utsmani dan tajwid final | Belum ditashih | Sah tetap 0 |
