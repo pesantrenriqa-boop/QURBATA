@@ -19,6 +19,35 @@ class CoverageTests(unittest.TestCase):
     def setUpClass(cls):
         cls.original = REGISTER.read_text(encoding="utf-8")
 
+    def test_p040_tashih_worksheet_matches_current_candidate_sources(self):
+        # Guard against a stale human-review worksheet after register edits.
+        worksheet_path = ROOT / (
+            "02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/"
+            "LEMBAR_TASHIH_P040_JILID_5.md"
+        )
+        worksheet = worksheet_path.read_text(encoding="utf-8")
+        register_row = next(
+            line for line in self.original.splitlines()
+            if line.startswith("| P040 |")
+        )
+        cells = [cell.strip() for cell in register_row.strip("|").split("|")]
+        for index, candidate in enumerate(cells[2:10], 1):
+            with self.subTest(slot=index):
+                match = __import__("re").search(
+                    r"KANDIDAT QS (\\d+:\\d+)", candidate
+                )
+                self.assertIsNotNone(match, "P040 source label missing")
+                slot = f"K{index:02d}"
+                worksheet_rows = [
+                    line for line in worksheet.splitlines()
+                    if line.startswith(f"| {slot} |")
+                ]
+                self.assertEqual(len(worksheet_rows), 1)
+                source = worksheet_rows[0].split("|")[2].strip()
+                self.assertEqual(source, "QS " + match.group(1))
+        self.assertIn("BELUM DIBERIKAN", worksheet)
+        self.assertIn("tetap 0/8", worksheet)
+
     def test_original_has_40_pages_and_consistent_capacity(self):
         rows, errors = module.audit(self.original)
         self.assertFalse(errors, errors)
