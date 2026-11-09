@@ -14,13 +14,20 @@ Status: **DRAF REVIEW / BELUM TASHIH**. Dokumen ini tidak mengesahkan ayat, rasm
 
 **Usulan pertama:** QS Al-Isra' 17:67, potongan awal:
 
-> وَإِذَا مَسَّكُمُ ٱلضُّرُّ فِى ٱلْبَحْرِ
+> وَإِذَا مَسَّكُمُ ٱلضُّرُّ فِي ٱلۡبَحۡرِ
 
 **Bukti pembanding:** https://quran.com/17/67 dan https://www.quran.net/read?surah=17&verse=67 . Potongan ini berasal dari ayat 17:67; rasm dan tanda baca harus dicocokkan ulang pada mushaf standar cetak yang dipakai QURBATA sebelum produksi.
 
 **Alasan menjadi kandidat:** berbeda dari P040 K03 (QS 17:70), bersumber di luar Juz Amma, dan mengandung materi mad asli yang dapat dipertimbangkan untuk asesmen transfer. Pencarian tekstual pada register aktif Jilid 5 tanggal 9 November 2026 tidak menemukan deklarasi `QS 17:67`; ini **bukan** bukti bebas duplikasi lintas jilid atau bahwa indikator ujian sudah terpenuhi.
 
 **Status keputusan:** BELUM TASHIH / BELUM DISETUJUI. Jangan salin otomatis ke P040 K06. Pentashih perlu menentukan fokus hukum mad, batas potongan, kaidah wasal/waqaf, dan kecocokan tingkat kesulitan sebelum memutuskan. Tidak ada perubahan Sah.
+
+## Pemeriksaan pembanding awal (9 November 2026)
+
+- **Sumber terbaca:** [Quran.com QS 17:67](https://quran.com/17/67) menampilkan secara berurutan `وَإِذَا`, `مَسَّكُمُ`, `ٱلضُّرُّ`, `فِي`, `ٱلۡبَحۡرِ`. Penulisan draf sebelumnya memakai `فِى ٱلْبَحْرِ`; teks usulan di atas kini diselaraskan **secara tekstual** dengan tampilan sumber daring, bukan disahkan sebagai rasm final.
+- **Indikator awal:** mad asli pada `فِي` layak **diperiksa**; untuk evaluasi transfer Jilid 5, pentashih harus menentukan apakah satu target ini cukup atau perlu kombinasi hukum mad lain. Jangan menyatakan semua hukum pada potongan telah lolos.
+- **Batas potongan:** penggalan berhenti pada `ٱلۡبَحۡرِ`, bukan akhir QS 17:67; aturan waqaf pada potongan dan rasm cetak perlu keputusan pentashih.
+- **Keputusan:** kandidat **ditahan sebagai usulan**. Tidak ada penggantian P040 K06 dan tidak ada perubahan Sah sampai pemeriksaan manusia selesai.
 
 ## Checklist penerimaan alternatif P040 K06
 
