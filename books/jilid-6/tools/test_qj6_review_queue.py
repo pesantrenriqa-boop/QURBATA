@@ -332,6 +332,28 @@ class ReviewQueueRegression(unittest.TestCase):
             issues = MODULE.validate_review_worksheet(path)
             self.assertTrue(any("reviewer fields entered without a decision" in e for e in issues))
 
+    def test_revise_and_reject_require_review_rationale(self):
+        import csv
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "worksheet.csv"
+            MODULE.export_review_worksheet(path)
+            with path.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+            for row, decision in zip(rows[:2], ("REVISE", "REJECT")):
+                row.update({
+                    "decision": decision, "reviewer_name": "Reviewer",
+                    "review_date": "2026-11-09", "mushaf_edition": "MSI",
+                    "evidence_reference": "source page", "tajwid_rule": "rule evidence",
+                    "curriculum_evidence": "curriculum reference",
+                })
+            with path.open("w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=MODULE.FIELDS + MODULE.DECISION_FIELDS)
+                writer.writeheader()
+                writer.writerows(rows)
+            issues = MODULE.validate_review_worksheet(path)
+            self.assertTrue(any("REVISE requires review_notes" in e for e in issues))
+            self.assertTrue(any("REJECT requires review_notes" in e for e in issues))
+
     def test_queue_is_prioritized_and_exportable(self):
         queue = MODULE.build_queue()
         self.assertTrue(all(r["review_status"] == "EMPTY" for r in queue[:25]))
