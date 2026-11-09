@@ -48,6 +48,19 @@ class CoverageTests(unittest.TestCase):
         self.assertIn("BELUM DIBERIKAN", worksheet)
         self.assertIn("tetap 0/8", worksheet)
 
+    def test_p040_sah_stays_zero_until_worksheet_authorizes_update(self):
+        # Never certify Quran candidates while human tashih approval is pending.
+        worksheet = (ROOT / "02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/"
+                     "LEMBAR_TASHIH_P040_JILID_5.md").read_text(encoding="utf-8")
+        row = next(line for line in self.original.splitlines()
+                   if line.startswith("| P040 |"))
+        sah = row.strip("|").split("|")[-1].strip()
+        if "Izin pembaruan register: **BELUM DIBERIKAN**" in worksheet:
+            self.assertEqual(
+                sah, "0/8",
+                "P040 Sah must stay zero until human approval is documented"
+            )
+
     def test_original_has_40_pages_and_consistent_capacity(self):
         rows, errors = module.audit(self.original)
         self.assertFalse(errors, errors)
