@@ -638,5 +638,43 @@ class CheckerTests(unittest.TestCase):
                     module.read_rows(dataset)
                 self.assertIn("HOLD:", str(error.exception))
 
+    def test_malformed_qs_suffixes_fail_closed_without_report(self):
+        from unittest.mock import patch
+        import importlib.util
+        import zipfile
+        spec = importlib.util.spec_from_file_location("p022_suffix_guard", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        for suffix in ("a", ":1", "_1", "-2", "–2"):
+            with self.subTest(suffix=suffix), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                csv_text = "sura_no,aya_no,aya_text_unicode\\n"
+                for index, reference in enumerate(module.REFERENCES, 1):
+                    sura, aya = reference.split(":")
+                    csv_text += f"{sura},{aya},SLOT_{index:02d}\\n"
+                archive = root / "synthetic.zip"
+                with zipfile.ZipFile(archive, "w") as z:
+                    z.writestr("verses.csv", csv_text)
+                data = root / "verses.csv"
+                data.write_text(csv_text, encoding="utf-8")
+                slots = [
+                    f"SLOT_{index:02d} [KANDIDAT QS {reference}{suffix if index == 1 else ''}]"
+                    for index, reference in enumerate(module.REFERENCES, 1)
+                ]
+                register = root / "register.md"
+                register.write_text(
+                    "| P022 | Ikhfa syafawi | " + " | ".join(slots) + " | — |\\n",
+                    encoding="utf-8",
+                )
+                report = root / "screening.json"
+                argv = ["checker", "--archive", str(archive), "--data", str(data),
+                        "--register", str(register), "--output", str(report)]
+                with patch.object(module, "EXPECTED_SHA256", module.sha256(archive)):
+                    with patch.object(sys, "argv", argv):
+                        with self.assertRaises(SystemExit) as error:
+                            module.main()
+                self.assertIn("source reference mismatch at K01", str(error.exception))
+                self.assertFalse(report.exists())
+
 if __name__ == "__main__":
     unittest.main()
