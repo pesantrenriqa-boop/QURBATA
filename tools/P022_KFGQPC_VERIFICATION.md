@@ -1,3 +1,9 @@
+## Source discovery warning — historical direct download (2026-11-09)
+
+A public inventory of KFGQPC developer resources (quran-ws/kfgqpc-resources, `metadata/quran-dev.json`, captured 2026-09-07) records the publisher-hosted direct URL `https://download.qurancomplex.gov.sa/resources_dev/UthmanicHafs_v2-0.zip`. **Do not use this as the v15.0 source**: the inventory identifies it as **Hafs update 13.0 (last modified 2023-09-19)**, with computed SHA-256 `a7b0e5591945712ec5e4d6142938ae4d1e9b49bdc89dff06222789bfebdfd72c`. This is not the expected v15.0 SHA-256 `227e6b1564d980f2bd09c2c35ebfb0330ac268c79a7c247cd1ab665bc635f245`.
+
+The inventory is a third-party historical index, not publisher authorization or evidence of current file availability. The v15.0 direct ZIP URL is **not yet identified or verified**. Retain the strict SHA-256 gate and 0/16 HOLD; do not infer a filename by changing the old URL.
+
 ## Alternative official platform URL (unverified download)
 
 KFGQPC's own technology news page also advertises `https://qurancomplex.gov.sa/techquran/dev` as a developer platform entry point. It may be checked if `/quran-dev/` is under maintenance, but **the existence of the link or indexed product description does not establish a downloadable or authenticated ZIP**. Continue to require the original Hafs Unicode v15.0 package with SHA-256 `227E6B1564D980F2BD09C2C35EBFB0330AC268C79A7C247CD1AB665BC635F245`. No substitute packages, third-party mirrors, or print approval are permitted. Source: https://qurancomplex.gov.sa/category/%D8%AA%D9%82%D9%86%D9%8A%D8%A9/
