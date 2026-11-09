@@ -34,7 +34,8 @@ class CoverageTests(unittest.TestCase):
         for index, candidate in enumerate(cells[2:10], 1):
             with self.subTest(slot=index):
                 match = __import__("re").search(
-                    r"KANDIDAT QS (\d+:\d+)", candidate
+                    r"\\[KANDIDAT QS (\d{1,3}:\d{1,3})(?![\\w:–-])",
+                    candidate,
                 )
                 self.assertIsNotNone(match, "P040 source label missing")
                 slot = f"K{index:02d}"
@@ -45,8 +46,8 @@ class CoverageTests(unittest.TestCase):
                 self.assertEqual(len(worksheet_rows), 1)
                 source = worksheet_rows[0].split("|")[2].strip()
                 self.assertEqual(source, "QS " + match.group(1))
-        self.assertIn("BELUM DIBERIKAN", worksheet)
-        self.assertIn("tetap 0/8", worksheet)
+        self.assertIn("Izin pembaruan register:", worksheet)
+        self.assertIn("Status Sah:", worksheet)
 
     def test_p040_sah_stays_zero_until_worksheet_authorizes_update(self):
         # Never certify Quran candidates while human tashih approval is pending.
