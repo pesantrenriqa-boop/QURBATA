@@ -242,6 +242,24 @@ class CoverageTests(unittest.TestCase):
         self.assertFalse(errors, errors)
         self.assertEqual(next(row for row in rows if row[0] == "P040")[4], "0/8")
 
+    def test_source_advisory_rejects_malformed_reference_suffixes(self):
+        # A malformed source label must not inflate a duplicate-QS advisory.
+        for malformed in ("17:70a", "17:70:1", "17:70_1"):
+            with self.subTest(reference=malformed):
+                lines = self.original.splitlines()
+                for index, line in enumerate(lines):
+                    if line.startswith("| P040 |"):
+                        cells = line.split("|")
+                        cells[4] = f"نَصٌّ [KANDIDAT QS {malformed}]"
+                        lines[index] = "|".join(cells)
+                        break
+                duplicates = module.repeated_quran_loci("\n".join(lines))
+                self.assertFalse(any(
+                    page == "P040" and reference == "QS 17:70"
+                    and slots == ["K03", "K06"]
+                    for page, reference, slots in duplicates
+                ))
+
     def test_source_advisory_ignores_quoted_candidate_label(self):
         lines = self.original.splitlines()
         for i, line in enumerate(lines):
