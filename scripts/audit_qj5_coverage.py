@@ -119,7 +119,7 @@ def repeated_quran_loci(content):
                 match.group(1)
                 for annotation in re.findall(r"\[([^\]]*)\]", value)
                 for match in re.finditer(
-                    r"(?:^|;)\s*KANDIDAT(?:\s+QS|\s*;\s*(?:MUROJAAH|HAFALAN UNIT)\s+QS)\s+(\d{1,3}:\d{1,3}(?:[–-]\d{1,3})?)\b",
+                    r"(?:^|;)\s*KANDIDAT(?:\s+QS|\s*;\s*(?:MUROJAAH|HAFALAN UNIT)\s+QS)\s+(\d{1,3}:\d{1,3}(?:[–-]\d{1,3})?)(?![\w:–-])",
                     annotation,
                 )
             ]
