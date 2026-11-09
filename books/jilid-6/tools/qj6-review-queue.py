@@ -88,6 +88,8 @@ def validate_review_worksheet(worksheet, register=MODULE.CSV_PATH):
                 problems.append(f"{ident}: invalid decision {decision!r}")
             if decision == "APPROVE" and source["review_status"] == "EMPTY":
                 problems.append(f"{ident}: cannot approve an unfilled slot")
+            if decision == "APPROVE" and source["review_status"] == "RESEARCH":
+                problems.append(f"{ident}: research slot needs a revised register before approval")
             if decision:
                 raw_date = row["review_date"].strip()
                 if raw_date:
