@@ -250,7 +250,7 @@ class CoverageTests(unittest.TestCase):
                 for index, line in enumerate(lines):
                     if line.startswith("| P040 |"):
                         cells = line.split("|")
-                        cells[4] = f"نَصٌّ [KANDIDAT QS {malformed}]"
+                        cells[5] = f"نَصٌّ [KANDIDAT QS {malformed}]"  # K03: split includes leading empty cell
                         lines[index] = "|".join(cells)
                         break
                 duplicates = module.repeated_quran_loci("\n".join(lines))
