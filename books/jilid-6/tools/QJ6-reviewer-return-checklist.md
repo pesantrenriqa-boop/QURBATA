@@ -7,6 +7,7 @@
 - [ ] Catat URL run GitHub Actions, commit SHA penuh, tanggal pengiriman, nama dan peran pengirim.
 - [ ] Terima `QJ6-review-worksheet.csv` dan/atau `QJ6-empty-slot-evidence.csv` dari **satu** versi register; jangan menggabungkan hasil lintas commit.
 - [ ] Cocokkan `QJ6-committed-slots.csv` dengan commit rujukan; verifikasi `QJ6-review-artifact-sha256.txt` menggunakan `sha256sum --check`.
+- [ ] Pastikan `row_sha256` pada **setiap baris** `QJ6-empty-slot-evidence.csv` tidak diubah; formulir versi lama tanpa kolom tersebut harus diekspor ulang dari commit yang sesuai. Jangan memindahkan keputusan ke formulir baru tanpa pemeriksaan ulang sumbernya.
 - [ ] Jalankan `python3 books/jilid-6/tools/qj6-review-queue.py --validate-worksheet <path>` untuk worksheet dan `--validate-empty-evidence <path>` untuk intake slot kosong.
 - [ ] Pastikan setiap keputusan menyertakan identitas pentashih, tanggal, identitas edisi mushaf, bukti rujukan, kaidah tajwid, dan kecocokan kompetensi.
 - [ ] Untuk `REVISE`/`REJECT`, periksa alasan pada `review_notes`. Untuk `RESEARCH` dan `EMPTY`, jangan memproses `APPROVE` langsung.
