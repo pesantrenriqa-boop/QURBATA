@@ -17,6 +17,14 @@
 - [ ] Buat usulan perubahan register sebagai pull request/commit **terpisah**; jalankan seluruh audit dan regression tests sebelum penggabungan.
 - [ ] Pertahankan `print_approved=false` hingga ada otorisasi rilis independen setelah semua hold ditutup.
 
+## Jalur pengembalian tercepat
+
+1. **Pentashih MSI:** unggah bukti ke [Issue #23](https://github.com/pesantrenriqa-boop/QURBATA/issues/23) untuk P017/P015/P016; kasus P022-S09 khusus ke [Issue #26](https://github.com/pesantrenriqa-boop/QURBATA/issues/26).
+2. **Penanggung jawab hafalan:** unggah keputusan resmi P018 ke [Issue #24](https://github.com/pesantrenriqa-boop/QURBATA/issues/24), dan P036 ke [Issue #25](https://github.com/pesantrenriqa-boop/QURBATA/issues/25).
+3. Gunakan [template laporan](../../../.github/ISSUE_TEMPLATE/qj6-expert-evidence.md) sebagai format komentar; sertakan tautan bukti primer dan nomor keputusan, bukan sekadar pernyataan sudah dicek.
+4. Koordinator memperbarui [Issue #22](https://github.com/pesantrenriqa-boop/QURBATA/issues/22) hanya setelah berkas diterima dan diperiksa. Jika belum ada bukti, biarkan checklist tetap kosong.
+5. Jangan menunggu keempat jalur selesai untuk memvalidasi **administrasi** satu paket yang sudah masuk; tetapi jangan melakukan persetujuan cetak secara parsial.
+
 ## Log serah-terima (isi oleh penerima)
 
 | Kolom | Nilai |
