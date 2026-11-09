@@ -28,6 +28,10 @@ sha256sum --check QJ6-review-artifact-sha256.txt
 
 Seluruh entri harus berstatus `OK`. Jika gagal, unduh ulang dari run yang sama; jangan menggabungkan berkas dari run atau commit berbeda. Sidik jari `row_sha256` mengikat setiap keputusan dengan keseluruhan baris register asal.
 
+## Mulai cepat — empat jalur paralel
+
+Buka [QJ6-fast-track-review-board.md](QJ6-fast-track-review-board.md) untuk pembagian kerja A (MSI/waqaf), B (hafalan P018), C (hafalan P036), dan D (kasus P022-S09). Setiap jalur dapat dimulai secara mandiri, tetapi perubahan register **hanya** dilakukan setelah bukti primer dan keputusan ahli diterima.
+
 ## Pembagian tugas pemeriksa
 
 Gunakan [QJ6-reviewer-action-request.md](QJ6-reviewer-action-request.md) sebagai daftar tugas yang dapat diserahkan kepada pentashih dan penanggung jawab kurikulum. Dokumen tersebut memisahkan pemeriksaan tanda waqaf P017, penetapan hafalan P018/P036, serta keputusan khusus P022-S09. **Tidak ada hasil pemeriksaan ahli yang diasumsikan sudah selesai.**
