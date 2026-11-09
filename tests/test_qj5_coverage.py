@@ -83,7 +83,11 @@ class CoverageTests(unittest.TestCase):
         )
 
     def test_p040_pending_approval_gate_rejects_premature_sah(self):
-        # Mutation regression: an accidental 1/8 approval must fail the gate.
+        # Mutation regression applies only while human approval is pending.
+        worksheet = (ROOT / "02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/"
+                     "LEMBAR_TASHIH_P040_JILID_5.md").read_text(encoding="utf-8")
+        if "Izin pembaruan register: **BELUM DIBERIKAN**" not in worksheet:
+            self.skipTest("P040 approval changed; manual review required")
         original = self.original
         lines = original.splitlines()
         for index, line in enumerate(lines):
