@@ -47,6 +47,27 @@ Status: **DRAF REVIEW / BELUM TASHIH**. Dokumen ini tidak mengesahkan ayat, rasm
 
 **Keputusan sementara:** `QS 17:67` tetap **calon cadangan**, bukan kandidat yang disetujui. Untuk K06, prioritaskan contoh dengan indikator ujian transfer yang terukur (jenis mad, kondisi wasal/waqaf, rubrik benar-salah) setelah pentashih memvalidasi teks. Tidak ada perubahan register.
 
+## Pemetaan delapan slot ujian P040 (audit berbasis anotasi register)
+
+| Slot | Deklarasi sumber saat ini | Bukti sasaran pada anotasi | Status audit |
+|---|---|---|---|
+| K01 | QS 2:30 | Ujian transfer mad; hukum spesifik belum ditetapkan | Perlu rubrik hukum dan tashih |
+| K02 | QS 10:44 | Ujian transfer mad; hukum spesifik belum ditetapkan | Perlu rubrik hukum dan tashih |
+| K03 | QS 17:70 | Ujian transfer mad; identik K06 | Tetap sebagai pembanding; belum tashih |
+| K04 | QS 4:96 | Ujian transfer mad; hukum spesifik belum ditetapkan | Perlu rubrik hukum dan tashih |
+| K05 | QS 11:88 | Ujian transfer mad; hukum spesifik belum ditetapkan | Perlu rubrik hukum dan tashih |
+| K06 | QS 17:70 | Ujian transfer mad; identik K03 | **Prioritas revisi sesudah tashih alternatif** |
+| K07 | QS 2:13 | Anotasi menyebut mad badal pada `آمِنُوا` / `آمَنَ` | Verifikasi hukum dan rasm; jangan menganggap sudah Sah |
+| K08 | QS 5:120 | Ujian transfer mad; hukum spesifik belum ditetapkan | Perlu rubrik hukum dan tashih |
+
+**Temuan baru:** K07 sudah secara eksplisit ditujukan untuk **mad badal**. Karena itu, mengganti K06 hanya dengan penggalan yang memuat mad asli (`فِى` pada usulan QS 17:67) belum otomatis menambah cakupan kompetensi ujian. **K06 harus mengisi kesenjangan kompetensi yang dibuktikan lewat pemetaan K01–K08, bukan sekadar menghilangkan duplikasi.**
+
+### Rubrik usulan untuk penguji P040 (belum menjadi keputusan kurikulum)
+
+Untuk setiap slot, pentashih mengisi: (1) lokasi QS dan rasm tervalidasi; (2) hukum mad sasaran dan alasan; (3) cara baca ketika wasal dan/atau waqaf yang relevan; (4) ketepatan pelafalan/panjang mad; (5) transfer pada teks yang belum dihafal; (6) adab tilawah. Penguji menandai **benar / perlu perbaikan / tidak dapat dinilai** pada tiap indikator yang berlaku. **Jangan menjumlahkan skor atau menetapkan ambang lulus** sebelum rubrik dan bobot disahkan oleh pengelola kurikulum.
+
+**Gerbang keputusan K06:** tahan perubahan sampai matriks K01–K08 menunjukkan hukum mad mana yang belum tercakup, lalu pilih ayat terverifikasi yang menguji hukum tersebut. Calon QS 17:67 tetap cadangan, bukan rekomendasi final.
+
 ## Checklist penerimaan alternatif P040 K06
 
 - [ ] Kutipan dan lokasi QS terkonfirmasi dari mushaf rujukan yang berwenang.
