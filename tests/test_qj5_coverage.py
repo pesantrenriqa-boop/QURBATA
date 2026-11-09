@@ -72,6 +72,15 @@ class CoverageTests(unittest.TestCase):
             worksheet.count("Izin pembaruan register:"), 1,
             "Ambiguous or duplicate approval declarations need human review"
         )
+        # Fail closed: unknown wording must not silently disable the Sah guard.
+        approval_line = next(
+            line.strip() for line in worksheet.splitlines()
+            if "Izin pembaruan register:" in line
+        )
+        self.assertEqual(
+            approval_line, "- Izin pembaruan register: **BELUM DIBERIKAN**",
+            "Approval state changed: human-reviewed test and policy update required"
+        )
 
     def test_p040_pending_approval_gate_rejects_premature_sah(self):
         # Mutation regression: an accidental 1/8 approval must fail the gate.
