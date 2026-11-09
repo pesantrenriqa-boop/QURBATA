@@ -14,7 +14,7 @@ Status: **DRAF REVIEW / BELUM TASHIH**. Dokumen ini tidak mengesahkan ayat, rasm
 
 **Usulan pertama:** QS Al-Isra' 17:67, potongan awal:
 
-> وَإِذَا مَسَّكُمُ ٱلضُّرُّ فِي ٱلۡبَحۡرِ
+> وَإِذَا مَسَّكُمُ ٱلضُّرُّ فِى ٱلْبَحْرِ
 
 **Bukti pembanding:** https://quran.com/17/67 dan https://www.quran.net/read?surah=17&verse=67 . Potongan ini berasal dari ayat 17:67; rasm dan tanda baca harus dicocokkan ulang pada mushaf standar cetak yang dipakai QURBATA sebelum produksi.
 
@@ -24,14 +24,14 @@ Status: **DRAF REVIEW / BELUM TASHIH**. Dokumen ini tidak mengesahkan ayat, rasm
 
 ## Pemeriksaan pembanding awal (9 November 2026)
 
-- **Sumber terbaca:** [Quran.com QS 17:67](https://quran.com/17/67) menampilkan secara berurutan `وَإِذَا`, `مَسَّكُمُ`, `ٱلضُّرُّ`, `فِي`, `ٱلۡبَحۡرِ`. Penulisan draf sebelumnya memakai `فِى ٱلْبَحْرِ`; teks usulan di atas kini diselaraskan **secara tekstual** dengan tampilan sumber daring, bukan disahkan sebagai rasm final.
+- **Sumber terbaca:** [Quran.com QS 17:67](https://quran.com/17/67) menampilkan secara berurutan `وَإِذَا`, `مَسَّكُمُ`, `ٱلضُّرُّ`, `فِي`, `ٱلۡبَحۡرِ`. Tampilan rasm Utsmani Quran.com pada QS 17:67 memakai `فِى ٱلْبَحْرِ`. Penulisan sebelumnya `فِي ٱلۡبَحۡرِ` tidak sama secara karakter; usulan dikoreksi agar sesuai tampilan sumber, tetapi **belum ditashih sebagai rasm final**.
 - **Indikator awal:** mad asli pada `فِي` layak **diperiksa**; untuk evaluasi transfer Jilid 5, pentashih harus menentukan apakah satu target ini cukup atau perlu kombinasi hukum mad lain. Jangan menyatakan semua hukum pada potongan telah lolos.
 - **Batas potongan:** penggalan berhenti pada `ٱلۡبَحۡرِ`, bukan akhir QS 17:67; aturan waqaf pada potongan dan rasm cetak perlu keputusan pentashih.
 - **Keputusan:** kandidat **ditahan sebagai usulan**. Tidak ada penggantian P040 K06 dan tidak ada perubahan Sah sampai pemeriksaan manusia selesai.
 
 ## Putusan kelayakan pedagogis sementara — QS 17:67
 
-**Sumber ayat:** Quran.com QS 17:67, https://quran.com/al-isra/67, menampilkan lima kata pertama secara berurutan: `وَإِذَا مَسَّكُمُ ٱلضُّرُّ فِي ٱلۡبَحۡرِ`. Ini pemeriksaan teks daring, **bukan tashih final**.
+**Sumber ayat:** Quran.com QS 17:67, https://quran.com/al-isra/67, menampilkan lima kata pertama secara berurutan: `وَإِذَا مَسَّكُمُ ٱلضُّرُّ فِى ٱلْبَحْرِ`. Ini pemeriksaan teks daring, **bukan tashih final**.
 
 **Matriks kelayakan P040 K06**
 
