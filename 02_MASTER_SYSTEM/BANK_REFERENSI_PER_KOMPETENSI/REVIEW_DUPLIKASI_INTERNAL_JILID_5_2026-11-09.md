@@ -29,6 +29,24 @@ Status: **DRAF REVIEW / BELUM TASHIH**. Dokumen ini tidak mengesahkan ayat, rasm
 - **Batas potongan:** penggalan berhenti pada `ٱلۡبَحۡرِ`, bukan akhir QS 17:67; aturan waqaf pada potongan dan rasm cetak perlu keputusan pentashih.
 - **Keputusan:** kandidat **ditahan sebagai usulan**. Tidak ada penggantian P040 K06 dan tidak ada perubahan Sah sampai pemeriksaan manusia selesai.
 
+## Putusan kelayakan pedagogis sementara — QS 17:67
+
+**Sumber ayat:** Quran.com QS 17:67, https://quran.com/al-isra/67, menampilkan lima kata pertama secara berurutan: `وَإِذَا مَسَّكُمُ ٱلضُّرُّ فِي ٱلۡبَحۡرِ`. Ini pemeriksaan teks daring, **bukan tashih final**.
+
+**Matriks kelayakan P040 K06**
+
+| Kriteria | Hasil sementara | Konsekuensi |
+|---|---|---|
+| Sumber Quran dapat dilacak | Ada, QS 17:67 | Layak dilanjutkan ke tashih |
+| Berbeda dari K03 QS 17:70 | Ya, secara teks dan lokasi ayat | Mengurangi pengulangan identik |
+| Memuat sasaran mad | Ada calon mad asli pada `فِي`; unsur lain perlu analisis | Belum cukup untuk menyatakan kompetensi ujian transfer terpenuhi |
+| Kesesuaian dengan ujian akhir (retensi, transfer, adab) | **Belum terbukti** dari satu penggalan | **Tahan penggantian** sampai indikator dan rubrik penilaian ditetapkan |
+| Waqaf di akhir kutipan | Kutipan berhenti sebelum akhir ayat | Tidak boleh diajarkan sebagai waqaf akhir ayat tanpa keputusan pentashih |
+| Rasm Utsmani dan tajwid final | Belum ditashih | Sah tetap 0 |
+| Bebas duplikasi lintas jilid | Belum diaudit secara menyeluruh | Jangan klaim unik lintas jilid |
+
+**Keputusan sementara:** `QS 17:67` tetap **calon cadangan**, bukan kandidat yang disetujui. Untuk K06, prioritaskan contoh dengan indikator ujian transfer yang terukur (jenis mad, kondisi wasal/waqaf, rubrik benar-salah) setelah pentashih memvalidasi teks. Tidak ada perubahan register.
+
 ## Checklist penerimaan alternatif P040 K06
 
 - [ ] Kutipan dan lokasi QS terkonfirmasi dari mushaf rujukan yang berwenang.
