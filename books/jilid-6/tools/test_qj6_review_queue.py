@@ -129,6 +129,25 @@ class ReviewQueueRegression(unittest.TestCase):
                     self.assertEqual(row[field], "")
         self.assertFalse(MODULE.MODULE.audit()["print_approved"])
 
+    def test_empty_evidence_rejects_cross_page_evidence_fields(self):
+        import csv
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "intake.csv"
+            MODULE.export_empty_slot_evidence(path)
+            with path.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+            p017 = next(r for r in rows if r["page_id"] == "QJ6-P017")
+            p018 = next(r for r in rows if r["page_id"] == "QJ6-P018")
+            p017["hafalan_unit_approval_id"] = "wrong-unit"
+            p018["waqf_sign_position"] = "wrong-waqf"
+            with path.open("w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=MODULE.EMPTY_EVIDENCE_FIELDS)
+                writer.writeheader()
+                writer.writerows(rows)
+            issues = MODULE.validate_empty_slot_evidence(path)
+            self.assertTrue(any("not applicable to waqf page P017" in e for e in issues))
+            self.assertTrue(any("not applicable to hafalan page" in e for e in issues))
+
     def test_empty_evidence_rejects_duplicate_decision_ids(self):
         import csv
         with tempfile.TemporaryDirectory() as directory:
