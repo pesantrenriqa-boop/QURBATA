@@ -14,6 +14,10 @@ Unduh artefak `qj6-register-and-audit` dari workflow **QURBATA J6 Register Audit
 - `QJ6-review-artifact-sha256.txt`: checksum untuk kelima berkas di atas.
 - `QJ6-slots.csv` dan `QJ6-audit.json`: **hanya scaffolding terisolasi untuk pengujian**, jangan dipakai sebagai register materi yang telah terisi.
 
+## Setelah hasil pemeriksaan dikembalikan
+
+Penerima wajib menggunakan [QJ6-reviewer-return-checklist.md](QJ6-reviewer-return-checklist.md) untuk memeriksa asal commit, integritas checksum, kelengkapan keputusan, bukti primer, dan persetujuan kurikulum sebelum mengusulkan perubahan register. Checklist ini **tidak** mengesahkan materi atau membuka izin cetak.
+
 ## Verifikasi integritas
 
 Di folder hasil ekstraksi artefak, jalankan:
