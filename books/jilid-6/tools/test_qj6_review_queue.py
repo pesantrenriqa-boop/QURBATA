@@ -124,9 +124,26 @@ class ReviewQueueRegression(unittest.TestCase):
             for row in rows:
                 self.assertTrue(row["slot_id"])
                 self.assertTrue(row["page_id"])
-                for field in MODULE.EMPTY_EVIDENCE_FIELDS[3:]:
+                self.assertEqual(len(row["row_sha256"]), 64)
+                for field in MODULE.EMPTY_EVIDENCE_FIELDS[4:]:
                     self.assertEqual(row[field], "")
         self.assertFalse(MODULE.MODULE.audit()["print_approved"])
+
+    def test_empty_evidence_rejects_stale_row_fingerprint(self):
+        import csv
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "intake.csv"
+            MODULE.export_empty_slot_evidence(path)
+            self.assertEqual(MODULE.validate_empty_slot_evidence(path), [])
+            with path.open(encoding="utf-8", newline="") as f:
+                rows = list(csv.DictReader(f))
+            rows[0]["row_sha256"] = "0" * 64
+            with path.open("w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=MODULE.EMPTY_EVIDENCE_FIELDS)
+                writer.writeheader()
+                writer.writerows(rows)
+            issues = MODULE.validate_empty_slot_evidence(path)
+            self.assertTrue(any("stale or changed register row_sha256" in e for e in issues))
 
     def test_empty_evidence_validation_requires_page_specific_evidence(self):
         import csv
