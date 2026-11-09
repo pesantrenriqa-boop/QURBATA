@@ -97,7 +97,14 @@ jobs:
             grep -E '^(OK|FAILED)' qj5-regression-tests.log | tail -n 1 || true
           } > qj5-ci-provenance.txt
           # Hash the captured logs so exported evidence can be checked offline.
-          sha256sum qj5-coverage-audit.log qj5-regression-tests.log > qj5-log-checksums.sha256
+          : > qj5-log-checksums.sha256
+          for log in qj5-coverage-audit.log qj5-regression-tests.log; do
+            if [ -f "$log" ]; then
+              sha256sum "$log" >> qj5-log-checksums.sha256
+            else
+              echo "MISSING_LOG=$log" >> qj5-ci-provenance.txt
+            fi
+          done
       - name: Preserve audit and test evidence
         if: always()
         uses: actions/upload-artifact@v4
