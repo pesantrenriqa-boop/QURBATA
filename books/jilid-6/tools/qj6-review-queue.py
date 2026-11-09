@@ -189,6 +189,10 @@ def validate_empty_slot_evidence(path, register=MODULE.CSV_PATH):
                     if decision_id in decision_ids:
                         errors.append(f"{slot}: duplicate decision_id {decision_id!r}")
                     decision_ids.add(decision_id)
+                if source["page_id"] == "QJ6-P017" and row["hafalan_unit_approval_id"].strip():
+                    errors.append(f"{slot}: hafalan approval ID is not applicable to waqf page P017")
+                if source["page_id"] != "QJ6-P017" and row["waqf_sign_position"].strip():
+                    errors.append(f"{slot}: waqf sign position is not applicable to hafalan page")
                 common = ("proposed_surah", "proposed_ayah_start", "proposed_ayah_end",
                           "mushaf_edition", "edition_page_or_link", "reviewer_name",
                           "decision_id", "prerequisite_and_duplicate_check")
