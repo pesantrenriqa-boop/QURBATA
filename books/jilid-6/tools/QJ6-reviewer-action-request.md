@@ -15,6 +15,14 @@
 
 Selain P017, mohon kolasi langsung tanda waqaf pada P015-S01 (QS 6:36), P015-S06 (QS 10:65), dan P016-S03 (QS 61:7). Catat **posisi dan bentuk glyph yang terlihat pada edisi MSI**, bukan hasil pencarian teks digital atau perkiraan.
 
+## Ketentuan isian formulir yang diperbarui
+
+- Kolom `row_sha256` pada `QJ6-empty-slot-evidence.csv` adalah sidik jari **baris register asal** dan tidak boleh diubah. Formulir tanpa kolom ini berasal dari versi lama dan perlu diekspor ulang.
+- Gunakan `decision_id` unik untuk setiap usulan slot. Jangan memakai ID yang sama untuk dua usulan berbeda.
+- Untuk P017, isi `waqf_sign_position` berdasarkan tanda waqaf yang benar-benar terlihat di edisi MSI target; **jangan isi** `hafalan_unit_approval_id`.
+- Untuk P018/P036, isi `hafalan_unit_approval_id` dari keputusan kurikulum resmi; **jangan isi** `waqf_sign_position`.
+- Kolom yang masih kosong berarti **belum ada bukti**, bukan bukti persetujuan. Tidak perlu mengisi ayat rekaan untuk memenuhi jumlah slot.
+
 ## Instruksi pelaksanaan
 
 1. Unduh satu artefak `qj6-register-and-audit` dari run GitHub Actions yang sama. Gunakan `QJ6-committed-slots.csv` sebagai sumber register, **bukan** `QJ6-slots.csv` scaffold pengujian.
