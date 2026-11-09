@@ -162,6 +162,7 @@ def validate_empty_slot_evidence(path, register=MODULE.CSV_PATH):
         if reader.fieldnames != list(EMPTY_EVIDENCE_FIELDS):
             return ["Evidence intake columns differ from controlled template"]
         seen = set()
+        decision_ids = set()
         for line_number, row in enumerate(reader, start=2):
             if None in row or any(value is None for value in row.values()):
                 errors.append(f"Evidence intake line {line_number}: malformed CSV field count")
@@ -183,6 +184,11 @@ def validate_empty_slot_evidence(path, register=MODULE.CSV_PATH):
             # bypass checks merely because surah/ayah fields are still blank.
             proposed = any(row[f].strip() for f in EMPTY_EVIDENCE_FIELDS[4:])
             if proposed:
+                decision_id = row["decision_id"].strip()
+                if decision_id:
+                    if decision_id in decision_ids:
+                        errors.append(f"{slot}: duplicate decision_id {decision_id!r}")
+                    decision_ids.add(decision_id)
                 common = ("proposed_surah", "proposed_ayah_start", "proposed_ayah_end",
                           "mushaf_edition", "edition_page_or_link", "reviewer_name",
                           "decision_id", "prerequisite_and_duplicate_check")
