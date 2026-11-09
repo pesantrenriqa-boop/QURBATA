@@ -62,6 +62,17 @@ class CoverageTests(unittest.TestCase):
                 "P040 Sah must stay zero until human approval is documented"
             )
 
+    def test_p040_pending_approval_gate_is_explicit(self):
+        worksheet = (ROOT / "02_MASTER_SYSTEM/BANK_REFERENSI_PER_KOMPETENSI/"
+                     "LEMBAR_TASHIH_P040_JILID_5.md").read_text(encoding="utf-8")
+        # A changed approval state must be reviewed, not silently treated as pending.
+        self.assertIn("Izin pembaruan register:", worksheet)
+        self.assertIn("Status Sah:", worksheet)
+        self.assertEqual(
+            worksheet.count("Izin pembaruan register:"), 1,
+            "Ambiguous or duplicate approval declarations need human review"
+        )
+
     def test_p040_pending_approval_gate_rejects_premature_sah(self):
         # Mutation regression: an accidental 1/8 approval must fail the gate.
         original = self.original
