@@ -84,6 +84,8 @@ def validate_review_worksheet(worksheet, register=MODULE.CSV_PATH):
                 if row[field] != source[field]:
                     problems.append(f"{ident}: stale or changed controlled field {field}")
             decision = row["decision"].strip()
+            if not decision and any(row[field].strip() for field in DECISION_FIELDS[1:]):
+                problems.append(f"{ident}: reviewer fields entered without a decision")
             if decision not in ("", "APPROVE", "REVISE", "REJECT"):
                 problems.append(f"{ident}: invalid decision {decision!r}")
             if decision == "APPROVE" and source["review_status"] == "EMPTY":
