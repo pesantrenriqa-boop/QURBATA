@@ -117,3 +117,24 @@ Register tidak diubah oleh dokumen ini. Ke-12 slot kosong P013 (Mad Farq) tetap 
 
 **Batas interpretasi:** lulus CI berarti pemeriksaan otomatis pada commit di atas lulus, **bukan** pentashihan teks, pemenuhan seluruh kompetensi, kenaikan Sah, atau izin cetak. Perubahan setelah commit tersebut memerlukan verifikasi run baru. Temuan P040 dan P036 tetap memerlukan keputusan manusia.
 
+
+## Jalur kerja teknis mandiri — tanpa menunggu ahli (10 November 2026)
+
+**Keputusan operasional sementara:** lanjutkan audit administratif dan persiapan bukti secara mandiri; **jangan menafsirkan pekerjaan ini sebagai keputusan pentashih atau persetujuan kurikulum**. Issue #27, #28, #29 tetap terbuka sebagai *backlog keputusan*, tetapi bukan penghalang untuk pekerjaan teknis di bawah.
+
+| Jalur | Yang bisa dikerjakan otomatis sekarang | Batas yang tidak boleh dilampaui |
+|---|---|---|
+| [#27 P040](https://github.com/pesantrenriqa-boop/QURBATA/issues/27) | Cek kesesuaian 8 ID slot dengan worksheet, kesamaan teks/sumber K03-K06, konsistensi indikator dan jejak bukti | Tidak mengganti K06, tidak mengubah `Sah 0/8` |
+| [#28 P036](https://github.com/pesantrenriqa-boop/QURBATA/issues/28) | Catat letak QS 113:1–5 dalam register dan cek silang label progresi hafalan | Tidak menyatakan hafalan Al-Falaq tuntas, tidak memindah ayat |
+| [#29 P013](https://github.com/pesantrenriqa-boop/QURBATA/issues/29) | Verifikasi hitungan 12 slot kosong, format/ID slot dan pelaporan coverage | Tidak mengisi dengan contoh rekaan, tidak mengubah kuota tanpa dasar |
+
+### Urutan kerja cepat dan aman
+
+1. Jalankan auditor `python3 scripts/audit_qj5_coverage.py` dan regresi `python3 -m unittest discover -v -s tests -p 'test_qj5_coverage.py'` pada commit yang sedang diperiksa.
+2. Rekam `commit SHA`, nomor run, hasil pengujian, angka coverage, dan seluruh advisory. Bedakan baseline #119 dengan run pada commit baru.
+3. Kerjakan hanya perbaikan **kode audit, pengujian, pelaporan, dan dokumentasi** yang dapat dibuktikan tanpa keputusan materi.
+4. Jika ditemukan anomali substansial, tambahkan bukti dan usulan ke issue terkait dengan status **HOLD**; jangan mengubah kutipan ayat atau persetujuan.
+5. Jangan membuat commit berulang hanya untuk memicu CI. Gabungkan perubahan teknis yang memang diperlukan dalam satu commit terukur.
+
+**Kriteria selesai untuk tahap mandiri:** pengujian teknis lulus pada commit yang relevan; temuan dan bukti tertaut; tidak ada perubahan isi ayat, angka Sah, ataupun `print_approved`. Penyelesaian substantif #27–#29 tetap ditunda, bukan dianggap disetujui.
+
