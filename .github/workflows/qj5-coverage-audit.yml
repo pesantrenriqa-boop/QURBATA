@@ -76,6 +76,12 @@ jobs:
             else
               echo 'P040: approval marker changed or unavailable. Require manual review of the worksheet and register; CI is not tashih.'
             fi
+            echo
+            echo '### Outstanding review work (not CI failures)'
+            echo '- [#27 — P040 K03/K06 and K01–K08 review](https://github.com/${GITHUB_REPOSITORY}/issues/27): HOLD; Sah 0/8.'
+            echo '- [#28 — P036 Al-Falaq hafalan progression](https://github.com/${GITHUB_REPOSITORY}/issues/28): HOLD; do not infer completion from other pages.'
+            echo '- [#29 — P013 Mad Farq empty slots](https://github.com/${GITHUB_REPOSITORY}/issues/29): HOLD; do not invent or duplicate Quran text.'
+            echo 'Technical checks can proceed independently; these links do not imply human approval or print authorization.'
             echo 'The overall job conclusion remains authoritative; captured logs do not imply success.'
           } >> "$GITHUB_STEP_SUMMARY"
       - name: Record CI evidence provenance
