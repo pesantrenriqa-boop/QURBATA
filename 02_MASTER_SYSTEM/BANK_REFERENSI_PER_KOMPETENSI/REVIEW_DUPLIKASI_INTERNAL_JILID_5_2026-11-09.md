@@ -104,3 +104,16 @@ Pemetaan di bawah bersifat **audit deklarasi**, bukan hasil analisis tajwid yang
 ## Batas keselamatan
 
 Register tidak diubah oleh dokumen ini. Ke-12 slot kosong P013 (Mad Farq) tetap kosong; jangan diisi dengan contoh rekaan atau duplikasi lokasi ayat. Kandidat bukan bukti tashih; angka Sah tidak boleh dinaikkan otomatis. Hasil GitHub Actions harus dibaca dari run aktual sebelum pengujian dinyatakan lulus.
+
+## Bukti CI terverifikasi — run #119 (10 November 2026)
+
+- **Run GitHub Actions:** https://github.com/pesantrenriqa-boop/QURBATA/actions/runs/42698306874
+- **Commit yang diuji:** `00bf37bb2306393222ebb3c2f90d4cd5e5cb1c8b`, branch `audit/j4-tashih-20261024`.
+- **Kesimpulan job `coverage`:** `success`; langkah audit register, regresi, ringkasan, provenance, dan unggah artefak semuanya `success`.
+- **Log regresi:** `Ran 62 tests in 0.118s`, hasil `OK`.
+- **Log audit:** `TOTAL: 468/480 filled; 12 empty`; P013 memiliki 12 slot kosong yang menunggu keputusan kurikulum.
+- **Peringatan tetap terbuka:** 9 kelompok duplikasi frasa dalam halaman, 18 kelompok pengulangan sumber QS dalam halaman; khusus P040 K03/K06 sama-sama QS 17:70. Pada P036, QS 113:5 belum berada di slot aktif P036.
+- **Artefak:** `qj5-audit-evidence`, ID `13710241475`, tercatat tersedia pada run tersebut.
+
+**Batas interpretasi:** lulus CI berarti pemeriksaan otomatis pada commit di atas lulus, **bukan** pentashihan teks, pemenuhan seluruh kompetensi, kenaikan Sah, atau izin cetak. Perubahan setelah commit tersebut memerlukan verifikasi run baru. Temuan P040 dan P036 tetap memerlukan keputusan manusia.
+
