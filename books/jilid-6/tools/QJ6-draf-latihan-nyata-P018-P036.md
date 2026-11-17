@@ -1,35 +1,35 @@
-# QJ6 — Draf latihan nyata untuk telaah kurikulum (BUKAN REGISTER RESMI)
+# QJ6 — Draf latihan nyata lintas surah (revisi non-Juz ‘Amma)
 
-**Status: KANDIDAT BELUM DISAHKAN.** Urutan berikut hanya bahan yang dapat dibaca santri untuk ditelaah; **bukan keputusan kurikulum P018/P036**, bukan tashih mushaf MSI, dan tidak boleh dipindahkan ke register sebelum keputusan ahli, pengecekan prasyarat, rasm, dan sumber primer. Jangan mengubah 335/360 atau print_approved=false.
+**KANDIDAT BELUM DISAHKAN — bukan register resmi dan bukan izin cetak.** Seluruh teks di bawah adalah **potongan ayat**, bukan selalu ayat lengkap. Transkripsi ini belum dikolasi terhadap Mushaf Standar Indonesia (MSI), termasuk rasm, harakat, dan tanda waqaf. Penggunaan untuk P018/P036 masih memerlukan keputusan kurikulum hafalan: potongan ayat tidak boleh otomatis dianggap unit hafalan final.
 
-## P018 — 9 kandidat latihan hafalan awal
+| Halaman | Slot | Potongan latihan nyata (draf) | QS |
+|---|---|---|---|
+| P018 | S01 | رَبَّنَا تَقَبَّلْ مِنَّا | 2:127 |
+| P018 | S02 | رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً | 2:201 |
+| P018 | S03 | لَا إِكْرَاهَ فِي الدِّينِ | 2:256 |
+| P018 | S04 | رَبَّنَا لَا تُزِغْ قُلُوبَنَا | 3:8 |
+| P018 | S05 | وَاللَّهُ يُحِبُّ الْمُحْسِنِينَ | 3:134 |
+| P018 | S06 | إِنَّ اللَّهَ يَأْمُرُكُمْ أَنْ تُؤَدُّوا الْأَمَانَاتِ | 4:58 |
+| P018 | S07 | وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ | 5:2 |
+| P018 | S08 | وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ | 6:17 |
+| P018 | S09 | إِنَّ رَحْمَتَ اللَّهِ قَرِيبٌ مِنَ الْمُحْسِنِينَ | 7:56 |
+| P036 | S01 | إِنِ الْحُكْمُ إِلَّا لِلَّهِ | 12:40 |
+| P036 | S02 | إِنَّ اللَّهَ لَا يُغَيِّرُ مَا بِقَوْمٍ | 13:11 |
+| P036 | S03 | لَئِنْ شَكَرْتُمْ لَأَزِيدَنَّكُمْ | 14:7 |
+| P036 | S04 | إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ | 16:90 |
+| P036 | S05 | وَقُلْ رَبِّ ارْحَمْهُمَا | 17:24 |
+| P036 | S06 | وَقُلِ الْحَقُّ مِنْ رَبِّكُمْ | 18:29 |
+| P036 | S07 | رَبِّ اشْرَحْ لِي صَدْرِي | 20:25 |
+| P036 | S08 | وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِلْعَالَمِينَ | 21:107 |
+| P036 | S09 | وَقُلْ رَبِّ زِدْنِي عِلْمًا | 20:114 |
 
-| Slot | Latihan baca/hafalkan (teks kandidat) | Rujukan |
-|---|---|---|
-| S01 | قُلْ أَعُوذُ بِرَبِّ النَّاسِ | QS 114:1 |
-| S02 | مَلِكِ النَّاسِ | QS 114:2 |
-| S03 | إِلَٰهِ النَّاسِ | QS 114:3 |
-| S04 | مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ | QS 114:4 |
-| S05 | الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ | QS 114:5 |
-| S06 | مِنَ الْجِنَّةِ وَالنَّاسِ | QS 114:6 |
-| S07 | قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ | QS 113:1 |
-| S08 | مِنْ شَرِّ مَا خَلَقَ | QS 113:2 |
-| S09 | وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ | QS 113:3 |
+## Gerbang penerimaan
 
-## P036 — 9 kandidat latihan hafalan lanjutan
+1. Kolasi teks per baris dengan mushaf MSI primer; koreksi rasm/harakat dan batas potongan, lalu dokumentasikan bukti.
+2. Periksa apakah potongan ayat sesuai target kompetensi halaman, dan apakah kurikulum mengharuskan ayat utuh sebagai unit hafalan.
+3. Penanggung jawab kurikulum menetapkan urutan P018, progresi P036, murajaah, ID persetujuan, tanggal, dan cek duplikasi.
+4. Cocokkan `row_sha256` dari artefak run yang sama sebelum perubahan register.
+5. P017 tujuh slot waqaf لا tetap memerlukan bukti visual glyph dari MSI; P022-S09 tetap RESEARCH.
+6. Jangan mengubah `print_approved=false` atau menghitung 18 draf ini sebagai slot resmi terisi.
 
-| Slot | Latihan baca/hafalkan (teks kandidat) | Rujukan |
-|---|---|---|
-| S01 | وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ | QS 113:4 |
-| S02 | وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ | QS 113:5 |
-| S03 | قُلْ هُوَ اللَّهُ أَحَدٌ | QS 112:1 |
-| S04 | اللَّهُ الصَّمَدُ | QS 112:2 |
-| S05 | لَمْ يَلِدْ وَلَمْ يُولَدْ | QS 112:3 |
-| S06 | وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ | QS 112:4 |
-| S07 | قُلْ يَا أَيُّهَا الْكَافِرُونَ | QS 109:1 |
-| S08 | لَا أَعْبُدُ مَا تَعْبُدُونَ | QS 109:2 |
-| S09 | وَلَا أَنْتُمْ عَابِدُونَ مَا أَعْبُدُ | QS 109:3 |
-
-**Catatan kritis:** 18 teks ini adalah transkripsi draf, bukan kolasi rasm Utsmani MSI. Hafalan P036 belum tentu cocok dengan target progresi resmi; urutan wajib diputuskan oleh penanggung jawab kurikulum. P017 tujuh slot waqaf لا **tidak diisi dengan contoh tebakan** karena letak glyph harus dibuktikan pada mushaf target. P022-S09 tetap RESEARCH.
-
-**Langkah berikutnya:** cocokkan seluruh kandidat dengan mushaf MSI primer dan kurikulum yang disahkan; rekam decision_id, reviewer, tanggal, row_sha256, dan bukti. Hanya setelah itu transfer ke QJ6-committed-slots.csv melalui PR terpisah dan audit ulang.
+Baseline register: 335/360 terisi; 25 EMPTY; 1 RESEARCH.
