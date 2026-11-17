@@ -1,0 +1,159 @@
+name: QURBATA J6 Register Audit
+on:
+  push:
+    branches:
+      - work/qj6-register-9-slot-20261028
+    paths:
+      - 'books/jilid-6/**'
+      - '.github/workflows/qj6-register-audit.yml'
+  pull_request:
+    paths:
+      - 'books/jilid-6/**'
+      - '.github/workflows/qj6-register-audit.yml'
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run regression tests
+        run: python3 -m unittest discover -s books/jilid-6/tools -p 'test_*.py' -v
+      - name: Audit actual committed QJ6 register
+        run: python3 books/jilid-6/tools/audit-qj6-register.py > /tmp/QJ6-committed-audit.json
+      - name: Verify committed audit release holds
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path('/tmp/QJ6-committed-audit.json').read_text(encoding='utf-8'))
+          import csv
+          with Path('books/jilid-6/tools/QJ6-slots.csv').open(encoding='utf-8-sig', newline='') as f:
+              rows = list(csv.DictReader(f))
+          expected_empty = {r['slot_id'] for r in rows if r['review_status'] == 'EMPTY'}
+          expected_missing_sign = {
+              r['slot_id'] for r in rows
+              if r['page_id'] == 'QJ6-P017'
+              and r['review_status'] != 'EMPTY'
+              and 'لا' not in r['text_uthmani']
+          }
+          holds = report['release_holds']
+          actual_empty = {h['slot_id'] for h in holds if h['reason'] == 'unfilled_slot'}
+          actual_missing_sign = {h['slot_id'] for h in holds if h['reason'] == 'waqf_la_glyph_missing'}
+          assert report['errors'] == [], report['errors']
+          assert report['print_approved'] is False
+          assert report['rows'] == len(rows) == 360
+          assert report['empty'] == len(expected_empty)
+          assert report['filled'] == len(rows) - len(expected_empty)
+          assert actual_empty == expected_empty
+          assert actual_missing_sign == expected_missing_sign
+          expected_source = {r['slot_id'] for r in rows if r['review_status'] != 'EMPTY' and r['source_verified'].lower() != 'yes'}
+          expected_competency = {r['slot_id'] for r in rows if r['review_status'] != 'EMPTY' and r['competency_verified'].lower() != 'yes'}
+          assert {h['slot_id'] for h in holds if h['reason'] == 'source_unverified'} == expected_source
+          assert {h['slot_id'] for h in holds if h['reason'] == 'competency_unverified'} == expected_competency
+          expected_research = {r['slot_id'] for r in rows if r['review_status'] == 'RESEARCH'}
+          assert {h['slot_id'] for h in holds if h['reason'] == 'research_review_pending'} == expected_research
+          expected_msi = {'QJ6-P015-S01', 'QJ6-P015-S06', 'QJ6-P016-S03'}
+          assert {h['slot_id'] for h in holds if h['reason'] == 'msi_sign_collation_pending'} == expected_msi
+          expected_p017 = {r['slot_id'] for r in rows if r['page_id'] == 'QJ6-P017' and r['review_status'] != 'EMPTY'}
+          assert {h['slot_id'] for h in holds if h['reason'] == 'waqf_la_msi_review_pending'} == expected_p017
+          assert len(holds) == sum(map(len, (expected_empty, expected_missing_sign, expected_source, expected_competency, expected_research, expected_msi, expected_p017)))
+          summary = report['release_hold_summary']
+          assert summary['hold_records'] == len(holds)
+          assert summary['unique_held_slots'] == len({h['slot_id'] for h in holds}) == 360
+          from collections import Counter
+          assert summary['by_reason'] == dict(sorted(Counter(h['reason'] for h in holds).items()))
+          print('Committed audit release holds and publication gate verified.')
+          PY
+      - name: Export human review queue (read-only)
+        run: |
+          python3 books/jilid-6/tools/qj6-review-queue.py /tmp/QJ6-review-queue.csv --worksheet /tmp/QJ6-review-worksheet.csv --empty-evidence /tmp/QJ6-empty-slot-evidence.csv
+          python3 - <<'PY'
+          import csv
+          import json
+          from pathlib import Path
+          report = json.loads(Path('/tmp/QJ6-committed-audit.json').read_text(encoding='utf-8'))
+          with Path('/tmp/QJ6-review-queue.csv').open(encoding='utf-8', newline='') as f:
+              rows = list(csv.DictReader(f))
+          assert len(rows) == report['release_hold_summary']['unique_held_slots']
+          assert len({r['slot_id'] for r in rows}) == len(rows)
+          assert all(r['hold_reasons'] for r in rows)
+          assert {r['slot_id'] for r in rows} == {h['slot_id'] for h in report['release_holds']}
+          # The same validator is available to reviewers for their completed worksheets.
+          with Path('/tmp/QJ6-review-worksheet.csv').open(encoding='utf-8', newline='') as f:
+              worksheet = list(csv.DictReader(f))
+          assert len(worksheet) == len(rows)
+          assert [r['slot_id'] for r in worksheet] == [r['slot_id'] for r in rows]
+          for source, review in zip(rows, worksheet):
+              assert all(review[key] == value for key, value in source.items())
+              assert all(review[field] == '' for field in (
+                  'decision', 'reviewer_name', 'review_date', 'mushaf_edition',
+                  'evidence_reference', 'tajwid_rule', 'curriculum_evidence', 'review_notes'
+              ))
+          with Path('/tmp/QJ6-empty-slot-evidence.csv').open(encoding='utf-8', newline='') as f:
+              intake = list(csv.DictReader(f))
+          expected_empty = {r['slot_id'] for r in rows if r['review_status'] == 'EMPTY'}
+          assert {r['slot_id'] for r in intake} == expected_empty
+          assert all(not r['proposed_surah'] and not r['mushaf_edition'] and not r['decision_id'] for r in intake)
+          assert report['print_approved'] is False
+          print(f'Exported {len(rows)} held slots for human review; no print approval.')
+          PY
+      - name: Validate generated reviewer worksheet using public CLI
+        run: python3 books/jilid-6/tools/qj6-review-queue.py --validate-worksheet /tmp/QJ6-review-worksheet.csv
+      - name: Validate blank evidence intake using public CLI
+        run: python3 books/jilid-6/tools/qj6-review-queue.py --validate-empty-evidence /tmp/QJ6-empty-slot-evidence.csv
+      - name: Preserve committed register and artifact checksums
+        run: |
+          cp books/jilid-6/tools/QJ6-slots.csv /tmp/QJ6-committed-slots.csv
+          python3 - <<'PY'
+          import csv
+          import hashlib
+          from pathlib import Path
+          original = Path('books/jilid-6/tools/QJ6-slots.csv')
+          committed = Path('/tmp/QJ6-committed-slots.csv')
+          assert original.read_bytes() == committed.read_bytes()
+          with committed.open(encoding='utf-8-sig', newline='') as f:
+              rows = list(csv.DictReader(f))
+          assert len(rows) == 360
+          import json
+          report = json.loads(Path('/tmp/QJ6-committed-audit.json').read_text(encoding='utf-8'))
+          filled = sum(row['review_status'] != 'EMPTY' for row in rows)
+          assert filled == report['filled']
+          assert len(rows) - filled == report['empty']
+          assert report['print_approved'] is False
+          names = ('QJ6-committed-slots.csv', 'QJ6-committed-audit.json',
+                   'QJ6-review-queue.csv', 'QJ6-review-worksheet.csv',
+                   'QJ6-empty-slot-evidence.csv')
+          lines = []
+          for name in names:
+              digest = hashlib.sha256((Path('/tmp') / name).read_bytes()).hexdigest()
+              lines.append(f'{digest}  {name}')
+          Path('/tmp/QJ6-review-artifact-sha256.txt').write_text(
+              '\n'.join(lines) + '\n', encoding='utf-8'
+          )
+          print('Committed register and review artifacts preserved with SHA-256 manifest.')
+          PY
+      - name: Verify review artifact checksums before upload
+        run: cd /tmp && sha256sum --check QJ6-review-artifact-sha256.txt
+      - name: Generate isolated 360-slot CSV
+        run: |
+          python3 books/jilid-6/tools/qj6_slots.py init --master books/jilid-6/QJ6-MASTER-Struktur-40-Halaman.md --csv /tmp/QJ6-slots.csv
+      - name: Audit register
+        run: |
+          python3 books/jilid-6/tools/qj6_slots.py audit --master books/jilid-6/QJ6-MASTER-Struktur-40-Halaman.md --csv /tmp/QJ6-slots.csv --report /tmp/QJ6-audit.json
+      - name: Upload reproducible register and report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qj6-register-and-audit
+          path: |
+            /tmp/QJ6-slots.csv
+            /tmp/QJ6-committed-slots.csv
+            /tmp/QJ6-review-artifact-sha256.txt
+            /tmp/QJ6-audit.json
+            /tmp/QJ6-committed-audit.json
+            /tmp/QJ6-review-queue.csv
+            /tmp/QJ6-review-worksheet.csv
+            /tmp/QJ6-empty-slot-evidence.csv
