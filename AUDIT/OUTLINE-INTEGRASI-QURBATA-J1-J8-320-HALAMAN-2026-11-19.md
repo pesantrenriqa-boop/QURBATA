@@ -104,18 +104,18 @@
 
 | Halaman | Tartil (fokus resmi yang ditemukan) | Bahasa Arab (Arab — arti) | Tahfidz (surah/ayat; arti belum ada di distribusi) | Akhlak (Arab — arti) | Status |
 |---|---|---|---|---|---|
-| P001 | Sukun pada مْ — penutupan dua bibir tanpa tawallud | — BELUM TERVERIFIKASI — | Ad-Duha 1–3 | — BELUM TERVERIFIKASI — | Tartil: DRAF MASTER; Tahfidz: FROZEN; Bi'ah/Akhlak: belum terpetakan |
-| P002 | Sukun pada لْ — ujung lidah; jelas tanpa vokal tambahan | — BELUM TERVERIFIKASI — | Ad-Duha 4–6 | — BELUM TERVERIFIKASI — | Tartil: DRAF MASTER; Tahfidz: FROZEN; Bi'ah/Akhlak: belum terpetakan |
-| P003 | Sukun pada فْ — bibir bawah–gigi atas; aliran terukur | — BELUM TERVERIFIKASI — | Ad-Duha 7–8 | — BELUM TERVERIFIKASI — | Tartil: DRAF MASTER; Tahfidz: FROZEN; Bi'ah/Akhlak: belum terpetakan |
-| P004 | Sukun pada كْ — pangkal lidah; tidak dipantulkan | — BELUM TERVERIFIKASI — | Ad-Duha 9–11 | — BELUM TERVERIFIKASI — | Tartil: DRAF MASTER; Tahfidz: FROZEN; Bi'ah/Akhlak: belum terpetakan |
-| P005 | Sukun pada سْ dan شْ — aliran suara dan kontras bentuk | — BELUM TERVERIFIKASI — | Al-Layl 1–4 | — BELUM TERVERIFIKASI — | Tartil: DRAF MASTER; Tahfidz: FROZEN; Bi'ah/Akhlak: belum terpetakan |
-| P006 | Sukun pada ثْ ذْ زْ — kontras ujung lidah/gigi | — BELUM TERVERIFIKASI — | Al-Layl 5–7 | — BELUM TERVERIFIKASI — | Tartil: DRAF MASTER; Tahfidz: FROZEN; Bi'ah/Akhlak: belum terpetakan |
-| P007 | Sukun pada رْ — penutupan ra dasar; hukum tafkhim/tarqiq belum formal | — BELUM TERVERIFIKASI — | Al-Layl 8–11 | — BELUM TERVERIFIKASI — | Tartil: DRAF MASTER; Tahfidz: FROZEN; Bi'ah/Akhlak: belum terpetakan |
-| P008 | Sukun pada نْ — bunyi dasar dalam satu kata; tanpa istilah hukum pertemuan | — BELUM TERVERIFIKASI — | Al-Layl 12–15 | — BELUM TERVERIFIKASI — | Tartil: DRAF MASTER; Tahfidz: FROZEN; Bi'ah/Akhlak: belum terpetakan |
-| P009 | Sukun pada هْ dan حْ — awal keluarga tenggorokan | — BELUM TERVERIFIKASI — | Al-Layl 16–18 | — BELUM TERVERIFIKASI — | Tartil: DRAF MASTER; Tahfidz: FROZEN; Bi'ah/Akhlak: belum terpetakan |
-| P010 | Evaluasi Sukun I — م ل ف ك س ش ث ذ ز ر ن ه ح | — BELUM TERVERIFIKASI — | Al-Layl 19–21 | — BELUM TERVERIFIKASI — | Tartil: DRAF MASTER; Tahfidz: FROZEN; Bi'ah/Akhlak: belum terpetakan |
-| P011 | Sukun pada خْ — tenggorokan; bunyi gesek terukur | — BELUM TERVERIFIKASI — | Ash-Shams 1–4 | — BELUM TERVERIFIKASI — | Tartil: DRAF MASTER; Tahfidz: FROZEN; Bi'ah/Akhlak: belum terpetakan |
-| P012 | Sukun pada عْ — makhraj tengah tenggorokan | — BELUM TERVERIFIKASI — | Ash-Shams 5–7 | — BELUM TERVERIFIKASI — | Tartil: DRAF MASTER; Tahfidz: FROZEN; Bi'ah/Akhlak: belum terpetakan |
+| P001 | Sukun pada مْ — penutupan dua bibir tanpa tawallud | مَاذَا تَقْرَأُ؟ — FROZEN | Ad-Duha 1–3 | — BELUM TERVERIFIKASI — | Tartil DRAF; Tahfidz FROZEN; Bahasa Arab J3 registry; Akhlak belum terpetakan |
+| P002 | Sukun pada لْ — ujung lidah; jelas tanpa vokal tambahan | أَقْرَأُ الْقُرْآنَ — FROZEN | Ad-Duha 4–6 | — BELUM TERVERIFIKASI — | Tartil DRAF; Tahfidz FROZEN; Bahasa Arab J3 registry; Akhlak belum terpetakan |
+| P003 | Sukun pada فْ — bibir bawah–gigi atas; aliran terukur | اِقْرَأْ مِنْ هُنَا — FROZEN | Ad-Duha 7–8 | — BELUM TERVERIFIKASI — | Tartil DRAF; Tahfidz FROZEN; Bahasa Arab J3 registry; Akhlak belum terpetakan |
+| P004 | Sukun pada كْ — pangkal lidah; tidak dipantulkan | اِقْرَأْ إِلَى هُنَا — REVIEWED/RECOVERED | Ad-Duha 9–11 | — BELUM TERVERIFIKASI — | Tartil DRAF; Tahfidz FROZEN; Bahasa Arab J3 registry; Akhlak belum terpetakan |
+| P005 | Sukun pada سْ dan شْ — aliran suara dan kontras bentuk | Penguatan kumulatif — REVIEWED/RECOVERED | Al-Layl 1–4 | — BELUM TERVERIFIKASI — | Tartil DRAF; Tahfidz FROZEN; Bahasa Arab J3 registry; Akhlak belum terpetakan |
+| P006 | Sukun pada ثْ ذْ زْ — kontras ujung lidah/gigi | Latihan kumulatif — REVIEWED/RECOVERED | Al-Layl 5–7 | — BELUM TERVERIFIKASI — | Tartil DRAF; Tahfidz FROZEN; Bahasa Arab J3 registry; Akhlak belum terpetakan |
+| P007 | Sukun pada رْ — penutupan ra dasar; hukum tafkhim/tarqiq belum formal | دَوْرُ مَنْ؟ — REVIEWED/RECOVERED | Al-Layl 8–11 | — BELUM TERVERIFIKASI — | Tartil DRAF; Tahfidz FROZEN; Bahasa Arab J3 registry; Akhlak belum terpetakan |
+| P008 | Sukun pada نْ — bunyi dasar dalam satu kata; tanpa istilah hukum pertemuan | دَوْرِي — REVIEWED/RECOVERED | Al-Layl 12–15 | — BELUM TERVERIFIKASI — | Tartil DRAF; Tahfidz FROZEN; Bahasa Arab J3 registry; Akhlak belum terpetakan |
+| P009 | Sukun pada هْ dan حْ — awal keluarga tenggorokan | الْآنَ دَوْرُكَ — REVIEWED/RECOVERED | Al-Layl 16–18 | — BELUM TERVERIFIKASI — | Tartil DRAF; Tahfidz FROZEN; Bahasa Arab J3 registry; Akhlak belum terpetakan |
+| P010 | Evaluasi Sukun I — م ل ف ك س ش ث ذ ز ر ن ه ح | اِقْرَأْ بَعْدَ صَدِيقِكَ — REVIEWED/RECOVERED | Al-Layl 19–21 | — BELUM TERVERIFIKASI — | Tartil DRAF; Tahfidz FROZEN; Bahasa Arab J3 registry; Akhlak belum terpetakan |
+| P011 | Sukun pada خْ — tenggorokan; bunyi gesek terukur | اِسْمَعْ إِلَى صَدِيقِكَ — REVIEWED/RECOVERED | Ash-Shams 1–4 | — BELUM TERVERIFIKASI — | Tartil DRAF; Tahfidz FROZEN; Bahasa Arab J3 registry; Akhlak belum terpetakan |
+| P012 | Sukun pada عْ — makhraj tengah tenggorokan | Latihan komunikasi kumulatif — REVIEWED COMPLETE | Ash-Shams 5–7 | — BELUM TERVERIFIKASI — | Tartil DRAF; Tahfidz FROZEN; Bahasa Arab J3 registry; Akhlak belum terpetakan |
 | P013 | Sukun pada غْ — kontras غْ–خْ dan tanpa vokal tambahan | — BELUM TERVERIFIKASI — | Ash-Shams 8–10 | — BELUM TERVERIFIKASI — | Tartil: DRAF MASTER; Tahfidz: FROZEN; Bi'ah/Akhlak: belum terpetakan |
 | P014 | Sukun pada ءْ — penutupan hamzah; bentuk kursi bertahap | — BELUM TERVERIFIKASI — | Ash-Shams 11–12 | — BELUM TERVERIFIKASI — | Tartil: DRAF MASTER; Tahfidz: FROZEN; Bi'ah/Akhlak: belum terpetakan |
 | P015 | Sukun pada صْ — huruf tebal non-qalqalah I | — BELUM TERVERIFIKASI — | Ash-Shams 13–15 | — BELUM TERVERIFIKASI — | Tartil: DRAF MASTER; Tahfidz: FROZEN; Bi'ah/Akhlak: belum terpetakan |
@@ -391,3 +391,16 @@
 
 - [REG-ARB-001](https://github.com/pesantrenriqa-boop/QURBATA/blob/main/curriculum/REG-ARB-001-Register-Objek-Kompetensi-Bahasa-Arab.md) — masih UNMAPPED untuk banyak tahap.
 - [REG-HAD-001](https://github.com/pesantrenriqa-boop/QURBATA/blob/main/curriculum/REG-HAD-001-Master-Hadis-Akhlak.md) — 0 APPROVED.
+
+## Koreksi penelusuran (19 November 2026)
+
+J3 P001–P012 Bahasa Arab memiliki 60 paragraf tersimpan. P001–P003 FROZEN; P004–P012 REVIEWED/RECOVERED. Fokus halaman dimasukkan di atas; teks paragraf lengkap tetap di sumber, dan arti yang tidak tersedia tidak direka.
+
+- [J3 Master P001–P012](https://github.com/pesantrenriqa-boop/QURBATA/blob/main/03_BOOKS/BAHASA-ARAB/JILID-3/MASTER-P001-P012-REGISTRY-v1.0.md)
+- [J2 P028 Bahasa Arab](https://github.com/pesantrenriqa-boop/QURBATA/blob/main/books/jilid-2/regenerated/QJ2-P028-Bahasa-Arab-2.md): STAGED-BLOCKED, teks Arab belum disahkan
+- [J2 P038 Akhlak](https://github.com/pesantrenriqa-boop/QURBATA/blob/main/books/jilid-2/regenerated/QJ2-P038-Akhlak-Hadis-2.md): STAGED-BLOCKED, hadis belum dipilih
+- [MAT-ARB-001](https://github.com/pesantrenriqa-boop/QURBATA/blob/main/curriculum/MAT-ARB-001-Matriks-Baseline-Kosa-Kata-Jilid-1-8.md): baseline J2–J8 adalah DRAF PERENCANAAN, bukan isi halaman
+- [QCF-QUR-002](https://github.com/pesantrenriqa-boop/QURBATA/blob/main/curriculum/QCF-QUR-002-Matriks-Kompetensi-Level-1-8.md): kerangka kompetensi, DRAFT TERKENDALI
+- [Master Bi'ah Arabiyah](https://github.com/pesantrenriqa-boop/QURBATA/blob/main/02_MASTER_SYSTEM/BAHASA_ARAB_TARTIL/MASTER-BIAH-ARABIYYAH-v0.1.md): bank instruksi WORKING DRAFT tanpa pemetaan J2–J8
+
+Cakupan bukti pemetaan Bahasa Arab sekarang J1 40 + J3 12 = 52 halaman, **bukan 52 halaman final disahkan**. Akhlak J1 40 halaman terpetakan; J2–J8 belum ditemukan pemetaan halaman terotorisasi. Audit ini bukan persetujuan cetak.
