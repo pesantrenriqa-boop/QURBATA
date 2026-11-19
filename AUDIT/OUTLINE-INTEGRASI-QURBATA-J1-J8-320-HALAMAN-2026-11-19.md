@@ -404,3 +404,27 @@ J3 P001–P012 Bahasa Arab memiliki 60 paragraf tersimpan. P001–P003 FROZEN; P
 - [Master Bi'ah Arabiyah](https://github.com/pesantrenriqa-boop/QURBATA/blob/main/02_MASTER_SYSTEM/BAHASA_ARAB_TARTIL/MASTER-BIAH-ARABIYYAH-v0.1.md): bank instruksi WORKING DRAFT tanpa pemetaan J2–J8
 
 Cakupan bukti pemetaan Bahasa Arab sekarang J1 40 + J3 12 = 52 halaman, **bukan 52 halaman final disahkan**. Akhlak J1 40 halaman terpetakan; J2–J8 belum ditemukan pemetaan halaman terotorisasi. Audit ini bukan persetujuan cetak.
+
+## Penelusuran lanjutan: pemulihan kerangka Bahasa Arab dan Akhlak J2–J8
+
+**Penting:** peta berikut adalah kompetensi/tema dari register resmi DRAF TERKENDALI, bukan teks Arab/Hadis FROZEN per halaman. Jangan menyalinnya sebagai materi final.
+
+| Jilid | Bahasa Arab — MAT-ARB-001 (baseline lema; belum divalidasi) | Akhlak — HCP-QUR-001 (tema perkembangan; memerlukan takhrij) |
+|---|---|---|
+| 2 | 50 lema: lingkungan rumah, kelas, masjid, pola dasar | adab keluarga, teman, guru, masjid, benda bersama |
+| 3 | 60 lema: aktivitas harian, jumlah ismiyah–fi‘liyah awal | jujur, amanah, sabar, syukur, menahan gangguan |
+| 4 | 70 lema: deskripsi, lokasi, kepemilikan, pertanyaan, waktu | lisan, prasangka, tolong-menolong, hak tetangga |
+| 5 | 80 lema: fi‘il, instruksi, kuantitas, interaksi | niat, tanggung jawab, disiplin, keadilan |
+| 6 | 100 lema: keluarga kata, kalimat gabungan, Qurani/hadis | persaudaraan, konflik, maaf, kepedulian sosial |
+| 7 | 120 lema: kalimat kompleks, transformasi, analisis struktur | kepemimpinan, pelayanan, musyawarah, integritas |
+| 8 | 120 lema: wacana, sintaksis Qurani, balaghah dasar | konsistensi, kematangan moral, dakwah bil-hikmah |
+
+**Bukti Bahasa Arab J3 berupa teks Arab lengkap** (bukan hanya judul):
+- [J3 P001 — 5 paragraf FROZEN](https://github.com/pesantrenriqa-boop/QURBATA/blob/main/03_BOOKS/BAHASA-ARAB/JILID-3/FROZEN/P001-5-PARAGRAF.md)
+- [J3 P002 — 5 paragraf FROZEN](https://github.com/pesantrenriqa-boop/QURBATA/blob/main/03_BOOKS/BAHASA-ARAB/JILID-3/FROZEN/P002-5-PARAGRAF.md)
+- [J3 P003 — 5 paragraf FROZEN](https://github.com/pesantrenriqa-boop/QURBATA/blob/main/03_BOOKS/BAHASA-ARAB/JILID-3/FROZEN/P003-5-PARAGRAF.md)
+- [J3 P004–P012 — registri REVIEW/RECOVERY](https://github.com/pesantrenriqa-boop/QURBATA/blob/main/03_BOOKS/BAHASA-ARAB/JILID-3/MASTER-P001-P012-REGISTRY-v1.0.md)
+
+**Hasil pemeriksaan file halaman:** J2 P001/P010 dan J3 P001/P012 adalah file latihan Tartil; tidak boleh menyimpulkan kata Arab di latihan baca merupakan panel Bahasa Arab. J2 P028 kandidat Bahasa Arab dan P038 kandidat hadis adalah STAGED-BLOCKED dan tidak menyimpan teks Arab/hadis yang dapat disahkan. HCP-QUR-001 mensyaratkan satu Hadith-ID baru hanya sekali dan verifikasi takhrij sebelum APPROVED. Keberadaan 320 slot bukan 320 hadis yang tersedia.
+
+**Sumber pengendali:** [ACP-QUR-001](https://github.com/pesantrenriqa-boop/QURBATA/blob/main/curriculum/ACP-QUR-001-Arabic-Competency-Progression.md), [HCP-QUR-001](https://github.com/pesantrenriqa-boop/QURBATA/blob/main/curriculum/HCP-QUR-001-Hadith-and-Akhlak-Competency-Progression.md), [MAT-ARB-001](https://github.com/pesantrenriqa-boop/QURBATA/blob/main/curriculum/MAT-ARB-001-Matriks-Baseline-Kosa-Kata-Jilid-1-8.md).
