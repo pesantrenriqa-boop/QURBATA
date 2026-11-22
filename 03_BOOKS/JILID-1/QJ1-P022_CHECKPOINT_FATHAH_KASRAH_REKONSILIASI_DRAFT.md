@@ -1,6 +1,6 @@
 # QURBATA Jilid 1 — P022 Checkpoint Fathah–Kasrah (DRAF REKONSILIASI)
 
-**Tanggal:** 22 November 2026. **Revisi:** audit cakupan Kasrah 29/29 dan keseimbangan 32:32. **Status:** DRAF; BELUM FROZEN; BELUM SIAP CETAK.
+**Tanggal:** 22 November 2026. **Revisi:** audit cakupan Kasrah 29/29, keseimbangan 32:32, serta BA/Akhlak aplikatif checkpoint. **Status:** DRAF; BELUM FROZEN; BELUM SIAP CETAK.
 
 ## Keputusan usulan dan konflik FROZEN
 
@@ -47,13 +47,23 @@
 - Kasrah: `كَسْرَة`.
 - Tidak menguji Dhammah karena belum diperkenalkan pada alur draf.
 
-## 2. Bahasa Arab — review checkpoint
+## 2. Bahasa Arab — review checkpoint (APLIKATIF)
 
-**`اِقْرَأْ`** — **Bacalah.** Sumber: `PAGE_REGISTER_P001-P040_INTEGRATION_FROZEN-v1.3.md`, **P020 REINFORCE**. Materi resmi tertunda akibat pergeseran halaman dan diusulkan dipulihkan pada P022. Guru menunjuk bacaan yang sudah sah, santri merespons perintah. Ini bukan materi baru atau perubahan FROZEN.
+**Nash:** `اِقْرَأْ` — **Bacalah.**
 
-## 3. Akhlak — review checkpoint
+- **Asal resmi:** `PAGE_REGISTER_P001-P040_INTEGRATION_FROZEN-v1.3.md`, P011–P013 (INTRODUCE → REPEAT-2), dan P020 (REINFORCE). P022 ini adalah **usulan pemulihan checkpoint**, bukan perubahan overlay.
+- **Tindakan santri:** setelah guru menunjuk satu latihan Tartil legal pada halaman ini dan mengucapkan `اِقْرَأْ`, santri membaca kelompok huruf yang ditunjuk dengan suara jelas; pasangan menyimak, kemudian bergantian.
+- **Indikator observasi:** (1) memahami perintah tanpa terjemahan ulang; (2) menunjuk kelompok yang tepat; (3) mulai membaca setelah perintah; (4) membaca sesuai Fathah/Kasrah yang sudah dipelajari. Jangan mencampurkan kemampuan berbicara Arab dengan skor ketepatan Tartil.
+- **Asesmen sederhana:** guru mencatat `Mandiri / Dengan bantuan / Belum` untuk respons perintah. Tidak menambahkan mufradat baru ke register.
 
-**`وَقُلْ رَبِّ زِدْنِي عِلْمًا`** — **Dan katakanlah: Ya Tuhanku, tambahkanlah ilmuku.** Sumber: `PAGE_REGISTER_P001-P040_INTEGRATION_FROZEN-v1.3.md`, **P020 REINFORCE**. Dipulihkan sebagai usulan P022; praktik doa sebelum belajar dan adab menuntut ilmu. Tidak mengubah register.
+## 3. Akhlak — review checkpoint (APLIKATIF; USULAN PENGGANTI)
+
+**Nash:** `وَقُولُوا لِلنَّاسِ حُسْنًا` — **Berkatalah yang baik kepada manusia.**
+
+- **Asal resmi:** `PAGE_REGISTER_P001-P040_INTEGRATION_FROZEN-v1.3.md`, P017–P019 (INTRODUCE → REPEAT-2). Dipilih sebagai **review aplikatif P022** karena dapat diamati langsung ketika santri belajar berpasangan.
+- **Tindakan santri:** (1) meminta izin secara sopan sebelum bergantian; (2) mengoreksi teman tanpa mengejek; (3) mengucapkan kata-kata yang baik kepada guru dan teman.
+- **Indikator observasi:** perilaku bahasa sopan terlihat pada minimal satu interaksi nyata selama checkpoint; guru mencatat `Teramati / Perlu bimbingan / Belum teramati`, bukan menilai hafalan nash saja.
+- **Jejak keputusan:** **FROZEN P020 tetap menetapkan** `وَقُلْ رَبِّ زِدْنِي عِلْمًا` sebagai REINFORCE. Materi doa tersebut **tidak dihapus dari kurikulum**; penempatan penguatan alternatifnya masih memerlukan keputusan rekonsiliasi. Penggantian di sini **hanya pada draf P022**, tidak mengubah FROZEN.
 
 ## 4. Tahfidz — QS. Al-Masad ayat 5 (usulan)
 
@@ -72,7 +82,7 @@
 
 **Pemetaan tentatif:** P023 Dhammah 1 → P024 Dhammah 2 → P025 Dhammah 3 → P026 Dhammah 4 → P027 Dhammah 5 → P028 Dhammah 6 → P029 Dhammah 7 → P030 penguatan → P031–P032 kumulatif. Ini hanya **usulan hitungan pergeseran +2**, belum dicek konflik dengan register FROZEN P031–P040 dan belum sah.
 
-**Konflik lintas domain:** FROZEN P021 menetapkan Tahfidz An-Nasr:1, BA `صَحِيحٌ`, Akhlak amanah; P022 Tahfidz An-Nasr:2 dan BA `حَاوِلْ مَرَّةً أُخْرَى`. Materi tersebut **tidak dihapus**, tetapi membutuhkan pemetaan ulang setelah checkpoint. BA/Akhlak P020 `اِقْرَأْ` / `وَقُلْ رَبِّ زِدْنِي عِلْمًا` ditempatkan dalam draf checkpoint untuk pemulihan.
+**Konflik lintas domain:** FROZEN P021 menetapkan Tahfidz An-Nasr:1, BA `صَحِيحٌ`, Akhlak amanah; P022 Tahfidz An-Nasr:2 dan BA `حَاوِلْ مَرَّةً أُخْرَى`. Materi tersebut **tidak dihapus**, tetapi membutuhkan pemetaan ulang setelah checkpoint. BA P020 `اِقْرَأْ` dipertahankan sebagai review aplikatif di draf checkpoint. Akhlak draf P022 menggunakan review `وَقُولُوا لِلنَّاسِ حُسْنًا` dari P017–P019; Akhlak P020 FROZEN `وَقُلْ رَبِّ زِدْنِي عِلْمًا` tetap wajib dipetakan sebagai penguatan terpisah, bukan dihapus.
 
 ## Gate sebelum FINAL
 
