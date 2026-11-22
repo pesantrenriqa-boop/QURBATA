@@ -39,7 +39,7 @@
 - **Akhlak P016 — USULAN MATERI BARU:** `وَقُولُوا لِلنَّاسِ حُسْنًا` — Berkatalah yang baik kepada manusia. Materi ini **berasal dari rentang P017–P019** pada register integrasi FROZEN v1.3; dipercepat ke P016 atas permintaan pengguna. **Belum disahkan sebagai perubahan FROZEN.**
 - **Status sumber lama:** P016 pada FROZEN v1.3 masih `أَعِدْ` (REPEAT-2) dan `وَلَكَ الْجَنَّةُ` (REPEAT-2); keduanya tidak dipakai sebagai fokus panel pada draf produksi P016 ini, tetapi sumber asli tetap dipertahankan.
 - **Catatan urutan:** perpindahan ini perlu ditinjau pada P017 dan seterusnya agar tidak memunculkan pengulangan baru atau melewati materi resmi.
-- Tahfidz: belum ditetapkan; harus diperiksa terhadap master Tahfidz dan progres halaman 15 yang nyata.
+- **TAHFIDZ P016 — KEPUTUSAN PRODUKSI TERBARU (2026-11-22): QS. Al-Ikhlas ayat 3** — `لَمْ يَلِدْ وَلَمْ يُولَدْ` — **Arti:** Dia tidak beranak dan tidak pula diperanakkan. Status: ditetapkan pengguna sebagai target P016; **menggantikan status 'belum ditetapkan'** dalam draf ini. Dasar perubahan: `03_BOOKS/JILID-1/AMENDMENT_TAHFIDZ_P016_2026-11-22.md`. Target ini berbeda dari generator lama P016 (Al-Masad:1) dan tidak boleh diam-diam ditimpa oleh build lama.
 
 ## Sumber dan otoritas
 
