@@ -56,14 +56,15 @@
 - **Indikator observasi:** (1) memahami perintah tanpa terjemahan ulang; (2) menunjuk kelompok yang tepat; (3) mulai membaca setelah perintah; (4) membaca sesuai Fathah/Kasrah yang sudah dipelajari. Jangan mencampurkan kemampuan berbicara Arab dengan skor ketepatan Tartil.
 - **Asesmen sederhana:** guru mencatat `Mandiri / Dengan bantuan / Belum` untuk respons perintah. Tidak menambahkan mufradat baru ke register.
 
-## 3. Akhlak — review checkpoint (APLIKATIF; USULAN PENGGANTI)
+## 3. Akhlak — evaluasi praktik amanah (CHECKPOINT APLIKATIF)
 
-**Nash:** `وَقُولُوا لِلنَّاسِ حُسْنًا` — **Berkatalah yang baik kepada manusia.**
+**Nash:** `أَدِّ الْأَمَانَةَ إِلَى مَنِ ائْتَمَنَكَ` — **Tunaikanlah amanah kepada orang yang mempercayaimu.**
 
-- **Asal resmi:** `PAGE_REGISTER_P001-P040_INTEGRATION_FROZEN-v1.3.md`, P017–P019 (INTRODUCE → REPEAT-2). Dipilih sebagai **review aplikatif P022** karena dapat diamati langsung ketika santri belajar berpasangan.
-- **Tindakan santri:** (1) meminta izin secara sopan sebelum bergantian; (2) mengoreksi teman tanpa mengejek; (3) mengucapkan kata-kata yang baik kepada guru dan teman.
-- **Indikator observasi:** perilaku bahasa sopan terlihat pada minimal satu interaksi nyata selama checkpoint; guru mencatat `Teramati / Perlu bimbingan / Belum teramati`, bukan menilai hafalan nash saja.
-- **Jejak keputusan:** **FROZEN P020 tetap menetapkan** `وَقُلْ رَبِّ زِدْنِي عِلْمًا` sebagai REINFORCE. Materi doa tersebut **tidak dihapus dari kurikulum**; penempatan penguatan alternatifnya masih memerlukan keputusan rekonsiliasi. Penggantian di sini **hanya pada draf P022**, tidak mengubah FROZEN.
+- **Jejak materi:** Dalam alur **draf rekonsiliasi** P019 INTRODUCE, P020 REPEAT-1, P021 REPEAT-2. Nash juga tercantum dalam `PAGE_REGISTER_P001-P040_INTEGRATION_FROZEN-v1.3.md` pada P021–P023. P022 adalah **asesmen praktik**, bukan pengenalan nash atau pengulangan hafalan baru.
+- **Skenario praktik:** (1) santri menerima titipan alat tulis dan menjaganya; (2) santri mengembalikan barang pinjaman kepada pemilik; (3) santri menyampaikan keadaan barang secara jujur bila ditanya.
+- **Rubrik observasi:** guru memberi status `Mandiri / Dengan bantuan / Belum tampak` untuk tiap tindakan: **menjaga titipan**, **mengembalikan kepada pemilik**, **berkata jujur**. Penilaian didasarkan pada tindakan yang benar-benar diamati, bukan asumsi sifat pribadi santri.
+- **Batasan:** praktik amanah harus menggunakan barang dengan izin dan tidak boleh menempatkan santri pada situasi yang merugikan atau mempermalukan.
+- **Jejak keputusan:** Akhlak `وَقُولُوا لِلنَّاسِ حُسْنًا` telah tuntas sebagai INTRODUCE → REPEAT-2 pada P017–P019 menurut overlay resmi, sehingga **tidak dipilih sebagai materi Akhlak P022**. **FROZEN P020 tetap menetapkan** `وَقُلْ رَبِّ زِدْنِي عِلْمًا` sebagai REINFORCE; materi doa tersebut **tidak dihapus** dan masih memerlukan penempatan rekonsiliasi. Perubahan ini hanya pada **draf P022**, tidak mengubah FROZEN.
 
 ## 4. Tahfidz — QS. Al-Masad ayat 5 (usulan)
 
@@ -82,7 +83,7 @@
 
 **Pemetaan tentatif:** P023 Dhammah 1 → P024 Dhammah 2 → P025 Dhammah 3 → P026 Dhammah 4 → P027 Dhammah 5 → P028 Dhammah 6 → P029 Dhammah 7 → P030 penguatan → P031–P032 kumulatif. Ini hanya **usulan hitungan pergeseran +2**, belum dicek konflik dengan register FROZEN P031–P040 dan belum sah.
 
-**Konflik lintas domain:** FROZEN P021 menetapkan Tahfidz An-Nasr:1, BA `صَحِيحٌ`, Akhlak amanah; P022 Tahfidz An-Nasr:2 dan BA `حَاوِلْ مَرَّةً أُخْرَى`. Materi tersebut **tidak dihapus**, tetapi membutuhkan pemetaan ulang setelah checkpoint. BA P020 `اِقْرَأْ` dipertahankan sebagai review aplikatif di draf checkpoint. Akhlak draf P022 menggunakan review `وَقُولُوا لِلنَّاسِ حُسْنًا` dari P017–P019; Akhlak P020 FROZEN `وَقُلْ رَبِّ زِدْنِي عِلْمًا` tetap wajib dipetakan sebagai penguatan terpisah, bukan dihapus.
+**Konflik lintas domain:** FROZEN P021 menetapkan Tahfidz An-Nasr:1, BA `صَحِيحٌ`, Akhlak amanah; P022 Tahfidz An-Nasr:2 dan BA `حَاوِلْ مَرَّةً أُخْرَى`. Materi tersebut **tidak dihapus**, tetapi membutuhkan pemetaan ulang setelah checkpoint. BA P020 `اِقْرَأْ` dipertahankan sebagai review aplikatif di draf checkpoint. Akhlak draf P022 mengevaluasi praktik amanah `أَدِّ الْأَمَانَةَ إِلَى مَنِ ائْتَمَنَكَ` yang telah diajarkan pada alur draf P019–P021; Akhlak P020 FROZEN `وَقُلْ رَبِّ زِدْنِي عِلْمًا` tetap wajib dipetakan sebagai penguatan terpisah, bukan dihapus.
 
 ## Gate sebelum FINAL
 
