@@ -35,8 +35,10 @@
 
 ## Integrasi (register resmi)
 
-- Bahasa Arab: `أَعِدْ` — Ulangilah — REPEAT-2 (berdasarkan register integrasi v1.3 untuk P016).
-- Akhlak: `وَلَكَ الْجَنَّةُ` — Dan bagimu surga — REPEAT-2 (berdasarkan register integrasi v1.3 untuk P014–P016).
+- **Bahasa Arab P016 — USULAN MATERI BARU:** `اِفْتَحِ الْكِتَابَ` — Bukalah buku. Materi ini **berasal dari P017 INTRODUCE** pada register integrasi FROZEN v1.3; dipercepat ke P016 atas permintaan pengguna agar panel tidak berulang empat halaman. **Belum disahkan sebagai perubahan FROZEN.**
+- **Akhlak P016 — USULAN MATERI BARU:** `وَقُولُوا لِلنَّاسِ حُسْنًا` — Berkatalah yang baik kepada manusia. Materi ini **berasal dari rentang P017–P019** pada register integrasi FROZEN v1.3; dipercepat ke P016 atas permintaan pengguna. **Belum disahkan sebagai perubahan FROZEN.**
+- **Status sumber lama:** P016 pada FROZEN v1.3 masih `أَعِدْ` (REPEAT-2) dan `وَلَكَ الْجَنَّةُ` (REPEAT-2); keduanya tidak dipakai sebagai fokus panel pada draf produksi P016 ini, tetapi sumber asli tetap dipertahankan.
+- **Catatan urutan:** perpindahan ini perlu ditinjau pada P017 dan seterusnya agar tidak memunculkan pengulangan baru atau melewati materi resmi.
 - Tahfidz: belum ditetapkan; harus diperiksa terhadap master Tahfidz dan progres halaman 15 yang nyata.
 
 ## Sumber dan otoritas
