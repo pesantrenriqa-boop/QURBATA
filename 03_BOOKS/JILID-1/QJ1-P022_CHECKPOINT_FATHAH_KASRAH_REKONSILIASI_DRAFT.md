@@ -1,6 +1,6 @@
 # QURBATA Jilid 1 — P022 Checkpoint Fathah–Kasrah (DRAF REKONSILIASI)
 
-**Tanggal:** 22 November 2026. **Status:** DRAF; BELUM FROZEN; BELUM SIAP CETAK.
+**Tanggal:** 22 November 2026. **Revisi:** audit cakupan Kasrah 29/29 dan keseimbangan 32:32. **Status:** DRAF; BELUM FROZEN; BELUM SIAP CETAK.
 
 ## Keputusan usulan dan konflik FROZEN
 
@@ -14,21 +14,23 @@
 
 | Baris | Kolom 1 | Kolom 2 | Kolom 3 |
 |---:|---|---|---|
-| 1 | كَ تَ بَ | حَ مَ دَ | رَ حِ مَ |
-| 2 | عَ مِ لَ | وَ جَ دَ | شَ كَ رَ |
-| 3 | خَ لَ قَ | حَ فِ ظَ | فَ هِ مَ |
-| 4 | سَ مِ عَ | شَ رِ بَ | بَ صِ رَ |
-| 5 | فَ قِ هَ | بَ قِ يَ | مَ لِ كَ |
-| 6 | جَ لِ سَ | بَ تَ | ثَ ءَ |
+| 1 | ذَ كِ رَ | خَ دِ مَ | قِ حِ خِ |
+| 2 | يِ ءِ ثِ | إِ جِ حِ | نِ شِ صِ |
+| 3 | هِ وِ تِ | ضِ طِ هَ | وَ رِ ثَ |
+| 4 | شَ عِ رَ | ظِ دِ ذِ | حَ فِ ظَ |
+| 5 | مِ نِ بِ | صَ غِ رَ | جَ لِ سَ |
+| 6 | زِ سِ قَ | بَ تَ | ثَ ءَ |
 | 7 | أَ جَ | حَ خَ | دَ ذَ |
 | 8 | رَ زَ | سَ شَ | صَ ضَ |
 
-### Audit otomatis karakter dan keunikan
+### Audit otomatis karakter, cakupan, dan keunikan (REVISI)
 
-- **24/24 slot terisi**, **24/24 unik**, 16 tiga-huruf + 8 dua-huruf, total 64 token; **0 duplikasi**.
-- **0 token di luar whitelist** Fathah kumulatif dan Kasrah 1–6.
-- Komposisi latihan generator checkpoint: **53 token Fathah**, **11 token Kasrah**, **8 bentuk Kasrah berbeda**. **PERINGATAN:** komposisi tidak seimbang dan **tidak mencakup semua 29 bentuk Kasrah**; checkpoint ini **belum lulus audit coverage**. Tidak boleh mengklaim seluruh Kasrah diuji hanya karena whitelist lulus. Perlu perluasan/pertukaran slot menggunakan sumber sah sebelum cetak.
-- Pasangan Fathah di bagian akhir bersumber langsung dari urutan awal pool generator checkpoint; bukan latihan karangan.
+- **24/24 slot terisi dan unik**; 16 kelompok tiga huruf di depan, 8 pasangan di belakang; **0 duplikasi** dan **0 token di luar whitelist** Fathah–Kasrah.
+- **32 token Fathah : 32 token Kasrah**, tepat **50% : 50%**.
+- **29/29 bentuk Kasrah tercakup**, tanpa satu bentuk yang hilang. Bentuk Fathah unik yang muncul dalam grid: **21/29**. Karena itu **tidak diklaim semua bentuk Fathah telah tercakup di grid**; 29 identitas huruf diuji pada panel tersendiri, dan evaluasi Fathah individual penuh tetap perlu pemeriksaan.
+- **Sumber per slot:** semua 16 kelompok tiga huruf disalin persis dari `pageSpecs[n=14..19].triples` atau keluaran deterministik `makeRows` generator resmi `production/vivliostyle/scripts/build-p011-p020-from-frozen.mjs` blob `f3cc15a5b696231b57ded8e3bd173d0ec4b83b6e`; 8 pasangan Fathah diambil dari keluaran `makeRows` checkpoint P020, yaitu 16 token pertama `FATHA_ALL`. Tidak mengarang rangkaian latihan.
+- **Audit grafem khusus:** `ءِ`, `إِ` ada dalam cakupan tetapi belum diverifikasi secara visual dengan font KFGQPC Uthman Taha.
+- **Status gate:** **cakupan Kasrah dan keseimbangan harakat LULUS audit karakter**; **cetak tetap BLOCKED** karena FROZEN berbeda, audit grafem, kecukupan evaluasi Fathah individual, dan render A5 belum selesai.
 
 ### Evaluasi identitas 29 huruf tanpa harakat
 
@@ -74,7 +76,7 @@
 
 ## Gate sebelum FINAL
 
-1. **BLOCKED COVERAGE:** revisi slot dari sumber terverifikasi supaya evaluasi Fathah–Kasrah benar-benar representatif; saat ini hanya 8 bentuk Kasrah muncul dari 29 bentuk.
+1. **AUDIT KASRAH LULUS:** seluruh 29 bentuk Kasrah terwakili; komposisi 32 Kasrah dan 32 Fathah. **MASIH TERBUKA:** hanya 21/29 bentuk Fathah unik tampil dalam grid; uji individual seluruh Fathah perlu penataan tambahan bila diwajibkan.
 2. Audit pengenalan 29 nama huruf (sumber generator hanya identitas grafem), khusus `ءِ` dan `إِ` dengan master tipografi.
 3. Rekonsiliasi konflik FROZEN P020–P040, khususnya urutan Dhammah dan domain Tahfidz–BA–Akhlak.
 4. Verifikasi ayat Tahfidz terhadap mushaf dan render A5 sebelum cetak.
