@@ -1,4 +1,6 @@
-# QURBATA Jilid 1 — P022 Checkpoint Fathah–Kasrah (DRAF REKONSILIASI)
+# QURBATA Jilid 1 — P022 مُرَاجَعَةٌ وَتَقْيِيمٌ (DRAF REKONSILIASI)
+
+**Judul Indonesia:** Pengulangan dan Evaluasi. **Prinsip:** seluruh empat bidang hanya mengulang dan mengevaluasi materi sebelumnya; tidak ada target materi baru. Cakupan kumulatif P001–P021 berdasarkan register dan alur draf, bukan bukti pelaksanaan kelas.
 
 **Tanggal:** 22 November 2026. **Revisi:** audit cakupan Kasrah 29/29, keseimbangan 32:32, serta BA/Akhlak aplikatif checkpoint. **Status:** DRAF; BELUM FROZEN; BELUM SIAP CETAK.
 
@@ -6,7 +8,7 @@
 
 - Berdasarkan keputusan pengguna: P020 Kasrah 6A `كِ لِ مِ نِ هِ`, P021 Kasrah 6B `وِ يِ ءِ إِ`, sehingga **checkpoint diusulkan P022**. Ini **bukan perubahan register resmi**.
 - **FROZEN:** `PAGE_REGISTER_P011-P020_FROZEN-v1.0.md` menetapkan checkpoint pada P020; `PAGE_REGISTER_P021-P030_FROZEN-v1.0.md` menetapkan P021 Dhammah 1 `بُ تُ ثُ جُ` dan P022 Dhammah 2 `حُ خُ دُ ذُ`. Dhammah resmi P021–P030 tidak boleh dihapus; seluruh jadwal perlu pemetaan ulang terkontrol.
-- **Sumber latihan:** `production/vivliostyle/scripts/build-p011-p020-from-frozen.mjs` blob `f3cc15a5b696231b57ded8e3bd173d0ec4b83b6e`, `pageSpecs[n=20].triples` (16 contoh persis) dan keluaran deterministik `makeRows` checkpoint (8 pasangan Fathah pertama). **Tidak ada rangkaian latihan baru.** Urutan disusun 16 tiga huruf dahulu, 8 pasangan kemudian sesuai arahan produksi terbaru.
+- **Sumber latihan:** `production/vivliostyle/scripts/build-p011-p020-from-frozen.mjs` blob `f3cc15a5b696231b57ded8e3bd173d0ec4b83b6e`, `pageSpecs[n=14..19].triples` dan keluaran deterministik `makeRows` (16 kelompok tiga huruf) dan keluaran deterministik `makeRows` checkpoint (8 pasangan Fathah pertama). **Tidak ada rangkaian latihan baru.** Urutan disusun 16 tiga huruf dahulu, 8 pasangan kemudian sesuai arahan produksi terbaru.
 
 ## 1. Tartil — evaluasi Fathah–Kasrah
 
@@ -41,34 +43,60 @@
 - **29/29 identitas tercantum**, unik sebagai simbol menurut daftar sumber. Guru menunjuk secara acak dan meminta santri **menyebutkan nama huruf**, membedakan bentuk, dan membaca contoh harakat yang sudah dipelajari.
 - **Batas audit:** sumber hanya menyimpan bentuk identitas, **tidak menyimpan 29 nama huruf lengkap**; daftar nama tertulis perlu disahkan dari master khusus sebelum diproduksi sebagai tabel nama.
 
+### Pelengkap evaluasi Fathah lisan
+
+Delapan bentuk yang belum tampil di grid, disalin dari `FATHA_ALL` generator: `طَ عَ غَ فَ كَ لَ نَ يَ`. Guru menguji satu per satu secara lisan sebagai review, bukan slot cetak tambahan atau materi baru. Cakupan rancangan asesmen menjadi 29/29 Fathah (21 grid + 8 lisan); 29/29 Kasrah di grid. Hasil belajar aktual belum diukur.
+
 ### Pengenalan nama harakat
 
 - Fathah: `فَتْحَة`.
 - Kasrah: `كَسْرَة`.
 - Tidak menguji Dhammah karena belum diperkenalkan pada alur draf.
 
-## 2. Bahasa Arab — review checkpoint (APLIKATIF)
+## 2. Bahasa Arab — murajaah dan taqyim kumulatif
 
-**Nash:** `اِقْرَأْ` — **Bacalah.**
+Sumber: overlay integrasi FROZEN v1.3 P001–P019 dan draf P019–P021 untuk penutupan buku. Tujuh ungkapan lama; tidak ada mufradat baru. Materi lengkap menjadi panduan guru, panel cetak dapat ringkas.
 
-- **Asal resmi:** `PAGE_REGISTER_P001-P040_INTEGRATION_FROZEN-v1.3.md`, P011–P013 (INTRODUCE → REPEAT-2), dan P020 (REINFORCE). P022 ini adalah **usulan pemulihan checkpoint**, bukan perubahan overlay.
-- **Tindakan santri:** setelah guru menunjuk satu latihan Tartil legal pada halaman ini dan mengucapkan `اِقْرَأْ`, santri membaca kelompok huruf yang ditunjuk dengan suara jelas; pasangan menyimak, kemudian bergantian.
-- **Indikator observasi:** (1) memahami perintah tanpa terjemahan ulang; (2) menunjuk kelompok yang tepat; (3) mulai membaca setelah perintah; (4) membaca sesuai Fathah/Kasrah yang sudah dipelajari. Jangan mencampurkan kemampuan berbicara Arab dengan skor ketepatan Tartil.
-- **Asesmen sederhana:** guru mencatat `Mandiri / Dengan bantuan / Belum` untuk respons perintah. Tidak menambahkan mufradat baru ke register.
+| Ungkapan | Asal | Praktik |
+|---|---|---|
+| السَّلَامُ عَلَيْكُمْ | P001–P003 FROZEN | Mengucapkan salam |
+| اُنْظُرْ | P004–P006 FROZEN | Memperhatikan |
+| اِسْتَمِعْ | P007–P010 FROZEN | Menyimak |
+| اِقْرَأْ | P011–P013 FROZEN | Membaca |
+| أَعِدْ | P014–P016 FROZEN | Mengulangi |
+| اِفْتَحِ الْكِتَابَ | P017–P019 FROZEN; P019 draf berbeda | Membuka buku |
+| أَغْلِقِ الْكِتَابَ | P019–P021 draf; P021–P023 FROZEN | Menutup buku |
 
-## 3. Akhlak — evaluasi praktik amanah (CHECKPOINT APLIKATIF)
+Guru mengacak instruksi, santri merespons tanpa terjemahan awal; catat Mandiri / Dengan bantuan / Belum. Untuk materi dengan konflik P019, cek keterpaparan aktual sebelum menguji. Jangan mencampur skor BA dan Tartil.
 
-**Nash:** `أَدِّ الْأَمَانَةَ إِلَى مَنِ ائْتَمَنَكَ` — **Tunaikanlah amanah kepada orang yang mempercayaimu.**
+## 3. Akhlak — murajaah dan taqyim kumulatif
 
-- **Jejak materi:** Dalam alur **draf rekonsiliasi** P019 INTRODUCE, P020 REPEAT-1, P021 REPEAT-2. Nash juga tercantum dalam `PAGE_REGISTER_P001-P040_INTEGRATION_FROZEN-v1.3.md` pada P021–P023. P022 adalah **asesmen praktik**, bukan pengenalan nash atau pengulangan hafalan baru.
-- **Skenario praktik:** (1) santri menerima titipan alat tulis dan menjaganya; (2) santri mengembalikan barang pinjaman kepada pemilik; (3) santri menyampaikan keadaan barang secara jujur bila ditanya.
-- **Rubrik observasi:** guru memberi status `Mandiri / Dengan bantuan / Belum tampak` untuk tiap tindakan: **menjaga titipan**, **mengembalikan kepada pemilik**, **berkata jujur**. Penilaian didasarkan pada tindakan yang benar-benar diamati, bukan asumsi sifat pribadi santri.
-- **Batasan:** praktik amanah harus menggunakan barang dengan izin dan tidak boleh menempatkan santri pada situasi yang merugikan atau mempermalukan.
-- **Jejak keputusan:** Akhlak `وَقُولُوا لِلنَّاسِ حُسْنًا` telah tuntas sebagai INTRODUCE → REPEAT-2 pada P017–P019 menurut overlay resmi, sehingga **tidak dipilih sebagai materi Akhlak P022**. **FROZEN P020 tetap menetapkan** `وَقُلْ رَبِّ زِدْنِي عِلْمًا` sebagai REINFORCE; materi doa tersebut **tidak dihapus** dan masih memerlukan penempatan rekonsiliasi. Perubahan ini hanya pada **draf P022**, tidak mengubah FROZEN.
+Sumber: overlay integrasi FROZEN v1.3 P001–P019 dan draf P019–P021. Semua nash berikut merupakan materi terdahulu dalam sumber; bukan nash baru P022.
 
-## 4. Tahfidz — QS. Al-Masad ayat 5 (usulan)
+| Nash | Asal | Evaluasi |
+|---|---|---|
+| أَفْشُوا السَّلَامَ بَيْنَكُمْ | P001–P003, P010 FROZEN | Membiasakan salam |
+| وَقُلْ رَبِّ زِدْنِي عِلْمًا | P004–P006 FROZEN | Berdoa sebelum belajar |
+| فَاسْتَمِعُوا لَهُ وَأَنْصِتُوا | P007–P009 FROZEN | Menyimak dengan tenang |
+| إِنَّ اللَّهَ مَعَ الصَّابِرِينَ | P011–P013 FROZEN | Menunggu giliran |
+| وَلَكَ الْجَنَّةُ | P014–P016 FROZEN | Mengingat makna motivasi surga; bukan skor perilaku yang tidak teramati |
+| وَقُولُوا لِلنَّاسِ حُسْنًا | P017–P019 FROZEN; P019 draf berbeda | Berbicara sopan |
+| أَدِّ الْأَمَانَةَ إِلَى مَنِ ائْتَمَنَكَ | P019–P021 draf; P021–P023 FROZEN | Menjaga titipan, mengembalikan barang, melaporkan keadaan dengan jujur |
 
-**`فِي جِيدِهَا حَبْلٌ مِنْ مَسَدٍ`** — **Di lehernya ada tali dari sabut yang dipintal.** Teks berasal dari generator checkpoint lama `pageSpecs[n=20].tahfidz` sebagai Al-Masad:5 review. Setelah draf P021 Al-Masad:4, diusulkan P022 Al-Masad:5, **bukan penetapan master Tahfidz**. Perlu audit mushaf/font KFGQPC Uthman Taha sebelum cetak.
+Rubrik Mandiri / Dengan bantuan / Belum tampak; catat hanya tindakan yang teramati. Materi doa P020 FROZEN tercakup sebagai review dari P004–P006, tetapi pemetaan resmi tetap tidak diubah. Cek keterpaparan aktual terutama bila alur draf berbeda. Tidak ada penambahan nash.
+
+## 4. Tahfidz — murajaah kumulatif tanpa ayat baru
+
+| Target review | Sumber |
+|---|---|
+| An-Nas 1–6 | P001–P006 FROZEN |
+| Al-Falaq 1–4 | P007–P010 FROZEN |
+| Al-Falaq 5 | Generator lama P011 (cek terhadap master Tahfidz sebelum asesmen) |
+| Al-Ikhlas 1–2 | Generator lama P012–P013 (cek terhadap master Tahfidz sebelum asesmen) |
+| Al-Ikhlas 3–4 | Alur draf P016–P017 sebagaimana dicatat pada draf P019 |
+| Al-Masad 1–4 | Alur draf P018–P021; draf P019, P020, P021 |
+
+**Al-Masad ayat 5 dikeluarkan dari target P022** karena belum tercatat sebagai materi sebelumnya pada alur draf. Tidak dihapus dari kurikulum; perlu penempatan berikutnya melalui rekonsiliasi Tahfidz. Guru meminta santri menyambung hafalan dari target yang benar-benar sudah dipelajari, mencatat kelancaran dan ketepatan secara terpisah. Daftar di atas adalah cakupan rencana review, bukan klaim hafalan santri atau validasi master Tahfidz lengkap. Panel cetak ringkas; daftar lengkap untuk panduan guru. Arti Indonesia dan teks Utsmani setiap ayat yang akhirnya dicetak wajib diverifikasi.
 
 ## Dampak pergeseran Dhammah — daftar konflik yang harus diselesaikan
 
@@ -83,11 +111,11 @@
 
 **Pemetaan tentatif:** P023 Dhammah 1 → P024 Dhammah 2 → P025 Dhammah 3 → P026 Dhammah 4 → P027 Dhammah 5 → P028 Dhammah 6 → P029 Dhammah 7 → P030 penguatan → P031–P032 kumulatif. Ini hanya **usulan hitungan pergeseran +2**, belum dicek konflik dengan register FROZEN P031–P040 dan belum sah.
 
-**Konflik lintas domain:** FROZEN P021 menetapkan Tahfidz An-Nasr:1, BA `صَحِيحٌ`, Akhlak amanah; P022 Tahfidz An-Nasr:2 dan BA `حَاوِلْ مَرَّةً أُخْرَى`. Materi tersebut **tidak dihapus**, tetapi membutuhkan pemetaan ulang setelah checkpoint. BA P020 `اِقْرَأْ` dipertahankan sebagai review aplikatif di draf checkpoint. Akhlak draf P022 mengevaluasi praktik amanah `أَدِّ الْأَمَانَةَ إِلَى مَنِ ائْتَمَنَكَ` yang telah diajarkan pada alur draf P019–P021; Akhlak P020 FROZEN `وَقُلْ رَبِّ زِدْنِي عِلْمًا` tetap wajib dipetakan sebagai penguatan terpisah, bukan dihapus.
+**Konflik lintas domain:** FROZEN P021 menetapkan Tahfidz An-Nasr:1, BA `صَحِيحٌ`, Akhlak amanah; P022 Tahfidz An-Nasr:2 dan BA `حَاوِلْ مَرَّةً أُخْرَى`. Materi tersebut **tidak dihapus**, tetapi membutuhkan pemetaan ulang setelah checkpoint. BA dan Akhlak P022 menjadi review kumulatif; `اِقْرَأْ`, praktik amanah, dan doa menuntut ilmu tetap tercakup. Pemetaan FROZEN tetap wajib direkonsiliasi, bukan dihapus.
 
 ## Gate sebelum FINAL
 
-1. **AUDIT KASRAH LULUS:** seluruh 29 bentuk Kasrah terwakili; komposisi 32 Kasrah dan 32 Fathah. **MASIH TERBUKA:** hanya 21/29 bentuk Fathah unik tampil dalam grid; uji individual seluruh Fathah perlu penataan tambahan bila diwajibkan.
+1. **AUDIT KASRAH LULUS:** seluruh 29 bentuk Kasrah terwakili; komposisi 32 Kasrah dan 32 Fathah. **PELENGKAP:** 21/29 bentuk Fathah unik di grid + 8 bentuk dalam panduan lisan; rancangan cakupan 29/29, belum diuji pada santri.
 2. Audit pengenalan 29 nama huruf (sumber generator hanya identitas grafem), khusus `ءِ` dan `إِ` dengan master tipografi.
 3. Rekonsiliasi konflik FROZEN P020–P040, khususnya urutan Dhammah dan domain Tahfidz–BA–Akhlak.
 4. Verifikasi ayat Tahfidz terhadap mushaf dan render A5 sebelum cetak.
