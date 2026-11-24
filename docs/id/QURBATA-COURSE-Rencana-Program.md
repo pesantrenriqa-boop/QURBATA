@@ -1,33 +1,40 @@
 # QURBATA COURSE — Rencana Program Layanan Kursus
 
-Status: DRAFT | Versi: 0.1 | Tanggal: 24 November 2026
+Status: DRAFT | Versi: 0.2 | Tanggal: 24 November 2026
 
 ## Kedudukan
 Usulan layanan kursus non-mukim RIQA Education Center (REC) berbasis metode QURBATA. Pengembangan paralel sebagai rencana layanan, bukan perubahan kurikulum, bukan persetujuan peluncuran. Mengacu pada QC-000, QURBATA-BASELINE.md, master jilid dan registry resmi. Tidak mengubah FROZEN, kode kompetensi, atau prioritas produksi buku. Materi QURBATA hanya menggunakan sumber yang telah diizinkan sesuai status validasi.
 
 ## Paket
-- Rp600.000 per paket minimal satu bulan / 8 tatap muka (TM), masing-masing 90 menit.
-- Online atau offline; jadwal berdasarkan kesepakatan, rancangan 2 TM per minggu.
-- Bonus setoran 10 menit per sesi, 2 hari per minggu (8 sesi dalam siklus empat minggu).
-- MoU minimal satu bulan / 8 TM.
-- Peserta bebas memilih satu bidang: Baca Al-Qur’an (dasar), Bahasa Arab, Tahfidz, atau Tartil (perbaikan kualitas bacaan).
-- Dapat meminta pelajaran Diniyah atau agama lainnya; ruang lingkup dan pengajar disepakati.
+| Paket | Harga/bulan | TM/bulan | Durasi/TM | Bonus setoran |
+|---|---:|---:|---:|---|
+| Basic | Rp350.000 | 4 | 60 menit | Tidak ada |
+| Regular | Rp450.000 | 4 | 90 menit | 1 kali/minggu × 10 menit |
+| Intensive | Rp600.000 | 8 | 90 menit | 2 kali/minggu × 10 menit |
+
+- Online/offline, jadwal sesuai kesepakatan; Basic dan Regular 1 TM/minggu, Intensive 2 TM/minggu.
+- MoU minimal satu bulan sesuai paket (4 atau 8 TM).
+- Peserta bebas memilih satu bidang: Baca Al-Qur’an, Bahasa Arab, Tahfidz, atau Tartil.
+- Bisa request Diniyah atau pelajaran agama lainnya sesuai kesepakatan.
+- Asumsi operasional untuk draf ini: Basic tanpa bonus dan Regular bonus 10 menit; konfirmasi eksplisit sebelum publikasi final.
 
 ## Rencana operasional
 1. Pendaftaran dan pilihan bidang/mode.
 2. Pemetaan kemampuan awal dan target belajar; gunakan registry/asesmen resmi yang relevan tanpa membuat kurikulum tandingan.
 3. Penetapan pengajar, jadwal, MoU dan pembayaran.
-4. Pelaksanaan 8 TM dan bonus setoran; bentuk setoran menyesuaikan bidang.
+4. Pelaksanaan TM dan bonus setoran sesuai paket; bentuk setoran menyesuaikan bidang.
 5. Catatan kehadiran, progres, evaluasi akhir dan penawaran perpanjangan.
 6. Rencana integrasi RIQA OS: katalog kelas, pendaftaran, pembayaran, jadwal, log setoran dan laporan progres; belum merupakan implementasi.
 
 ## Naskah flyer
 QURBATA COURSE — Kursus Al-Qur’an, Bahasa Arab & Studi Islam
 Pilih kelas sesuai kebutuhan: Baca Al-Qur’an | Bahasa Arab | Tahfidz | Tartil.
-Rp600.000 / 8 pertemuan × 90 menit. Online / Offline.
-BONUS setoran 10 menit, 2 hari setiap minggu.
+BASIC Rp350.000/bulan — 4 TM × 60 menit.
+REGULAR Rp450.000/bulan — 4 TM × 90 menit; bonus setoran 1×/minggu @ 10 menit.
+INTENSIVE Rp600.000/bulan — 8 TM × 90 menit; bonus setoran 2×/minggu @ 10 menit.
+Online / Offline.
 Menggunakan metode QURBATA. Bisa request pelajaran Diniyah dan agama lainnya.
-Minimal MoU 1 bulan / 8 TM. Jadwal sesuai kesepakatan.
+Minimal MoU 1 bulan sesuai paket. Jadwal sesuai kesepakatan.
 Mudah • Indah • Barokah. RIQA Education Center.
 
 ## Gate sebelum publikasi dan peluncuran
