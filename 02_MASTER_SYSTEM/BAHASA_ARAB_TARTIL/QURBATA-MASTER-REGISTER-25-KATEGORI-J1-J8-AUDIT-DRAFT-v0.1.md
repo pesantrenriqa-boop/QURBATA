@@ -281,3 +281,25 @@ Batas: 25 file sumber diperiksa dalam batch ini. Percobaan batch seluruh sumber 
 - [J4–J8](QURBATA-BA-J4-J8-EVIDENCE-STAGE3-DRAFT.md), commit b9d03342183cef50deeee8463256c7d634be3725. J4 P028 frasa/pola lisan; J5 P028 struktur dan teks kumulatif; J6 P028 tema dan struktur menengah; J7 baris 62 perlu pemetaan ulang; J8 P028 sintesis teks dan struktur. Empat register isi nyata J8 adalah gharib, bukan BA.
 
 Tidak ada ungkapan instruksional baru yang terverifikasi dari batch ini. Pemetaan 25 kategori tahap 2 tetap sementara. Belum membaca seluruh file pages/regenerated/rebased J2–J7, recovery J3 tambahan, JSON standalone, CSV gharib J8 atau paket BAT-004–006. Tidak menyatakan seluruh repository selesai. P025 HOLD. Tidak mengubah FROZEN atau membuat mufradat baru.
+
+
+## Tahap 4 — batch awal (DRAFT)
+20 sumber unik dalam tiga lampiran (10 JSON/recovery/pilot, 3 P028, 8 rebased dengan satu overlap). [Pilot dan recovery](QURBATA-BA-PILOT-RECOVERY-EVIDENCE-STAGE4-DRAFT.md), [P028 lintas versi](QURBATA-BA-P028-EVIDENCE-STAGE4-DRAFT.md), [J2 rebased batch 1](QURBATA-BA-J2-REBASED-BATCH1-STAGE4-DRAFT.md). Bukti path, blob dan baris tersedia pada lampiran.
+
+JSON J3: 9 formula (8 READY_FOR_IMPORT, F-J3-009 review morfologi), 29 lema; tidak dihitung ulang dari CSV. BAT-004–006 DRAF PILOT, gate belum dijalankan; 3 kalimat identifikasi AR-TXT-000002 dan 5 kalimat lingkungan AR-TXT-000003, bukan instruksi baru. Recovery J3 adalah sumber Tartil/koneksi makna.
+
+| Bentuk asli | Arti sumber | Bukti rebased J2 | Klasifikasi |
+|---|---|---|---|
+| بَابٌ | pintu | P025:49; P027:46 | mufradat makna |
+| نَارٌ | api | P026:45; P029:50 | mufradat makna |
+| سَلَامٌ | keselamatan/salam | P026:45 | bukan formula salam |
+| دَارٌ | rumah/negeri | P027:46 | mufradat makna |
+| مَالٌ | harta | P027:46; P029:50 | mufradat makna |
+| طَعَامٌ | makanan | P028:46; P029:50 | mufradat makna |
+| شَرَابٌ | minuman | P028:46; P029:50 | mufradat makna |
+| لِبَاسٌ | pakaian | P028:46; P029:50 | mufradat makna |
+| مَكَانٌ | tempat | P029:50 | mufradat makna |
+
+9 bentuk unik dalam panel batch, bukan 9 lema baru lintas master. P030 evaluasi meminta arti empat kata lama. P028 regenerated BA STAGED-BLOCKED berbeda dari P028 rebased Mad Alif COMPLETE-DRAFT; jangan gabung status. J3 P028 Qamariyah bukan panel BA. Tidak ada kategori wajib baru yang disahkan.
+
+143 kandidat terdeteksi berdasarkan filter path; 20 dibaca dan bukti tersimpan, 123 belum tercakup dalam batch berhasil (sebagian pernah dibaca pada tahap sebelumnya). Percobaan batch lebih besar melampaui batas panggilan dan tidak menghasilkan lampiran terverifikasi. Lanjut batch kecil. P025 HOLD; tidak membuat materi baru, tidak mengubah FROZEN.
