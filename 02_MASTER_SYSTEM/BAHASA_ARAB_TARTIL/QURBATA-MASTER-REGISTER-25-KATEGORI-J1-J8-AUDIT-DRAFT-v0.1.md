@@ -272,3 +272,12 @@ Tiga lampiran bukti verbatim telah dibuat dan diverifikasi: [J3 corpus](QURBATA-
 Audit: كِتَابٌ dan قَلَمٌ muncul pada LEX-ARB-001:22–23 dan bank VOC-001/VOC-003; jangan hitung ulang. قَرَأَ pada LEX-ARB-003:14 dan J3 lemma CSV:2 adalah kandidat keluarga sama. Bentuk كَرِّرْ, رَدِّدْ, أَعِدْ berbeda bentuk, fungsi berdekatan. Jangan hapus tanpa review. Kategori 11 kini ditemukan; 22 dan 23 memiliki bukti tambahan. Kategori lain belum diaudit ulang secara menyeluruh.
 
 Batas: 25 file sumber diperiksa dalam batch ini. Percobaan batch seluruh sumber terkena batas jumlah panggilan; J2–J8 file halaman dan data lain belum seluruhnya dibaca, termasuk audit leksikal tambahan dan paket BAT-004–006. HTML P010 tidak menghasilkan baris Arab dengan ekstraktor Unicode; perlu inspeksi aset/encoding. Belum ada total unik lintas sumber, belum ada gradasi per jilid final. P025 tetap HOLD. Tidak menambah mufradat dan tidak mengubah FROZEN.
+
+
+## Tahap 3 — audit data, recovery dan struktur J2–J8 (DRAFT)
+24 sumber unik dibaca dalam batch ini (8 CSV, 7 recovery/materi J2–J3, 9 struktur/gharib J4–J8). Bukti verbatim dengan path, blob dan nomor baris:
+- [Data CSV](QURBATA-BA-DATA-EVIDENCE-STAGE3-DRAFT.md), commit ef9f2cddac2f142569e8b9400740db2a81438ca1. REG-BOOK-PAGES berisi indeks 320 halaman; tujuh CSV J3 berisi 840 slot Tartil P001–P035 (24/halaman), bukan dialog. Tidak ditemukan CSV P036–P040 pada daftar data/jilid-3. Jangan mengimpor sebagai BA.
+- [Recovery J2–J3](QURBATA-BA-RECOVERY-EVIDENCE-STAGE3-DRAFT.md), commit 8bb3f8a978b866853c681630b161ae53f906b34a. J2 P028: STAGED-BLOCKED, belum ada teks lisan sah; J3 PAGE-001-010 hingga PAGE-031-040: koneksi makna dan Tartil, bukan instruksi kelas.
+- [J4–J8](QURBATA-BA-J4-J8-EVIDENCE-STAGE3-DRAFT.md), commit b9d03342183cef50deeee8463256c7d634be3725. J4 P028 frasa/pola lisan; J5 P028 struktur dan teks kumulatif; J6 P028 tema dan struktur menengah; J7 baris 62 perlu pemetaan ulang; J8 P028 sintesis teks dan struktur. Empat register isi nyata J8 adalah gharib, bukan BA.
+
+Tidak ada ungkapan instruksional baru yang terverifikasi dari batch ini. Pemetaan 25 kategori tahap 2 tetap sementara. Belum membaca seluruh file pages/regenerated/rebased J2–J7, recovery J3 tambahan, JSON standalone, CSV gharib J8 atau paket BAT-004–006. Tidak menyatakan seluruh repository selesai. P025 HOLD. Tidak mengubah FROZEN atau membuat mufradat baru.
