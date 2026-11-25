@@ -324,3 +324,37 @@ Panel rebased: نُورٌ، رَسُولٌ، قُلُوبٌ (P031:67); كَرِ�
 J2 pages 15, regenerated 19; J3 batch 8, halaman 39; J4 halaman 2. J3 B02A dan P011 menyatakan objek BA dari kata yang lolos tashih; integrasi tidak mengurangi kotak utama. J4 P001/P002 adalah kandidat Tartil, panel transfer HOLD. Tidak ada kategori instruksional baru yang dapat disahkan dari temuan ini; ekstraksi baris belum merupakan review semantik per item.
 
 [Normalisasi lintas lima master](QURBATA-BA-CROSS-MASTER-NORMALIZATION-STAGE6-DRAFT.md): 26 bentuk panel rebased diuji kecocokan ejaan tanpa harakat terhadap master bank, LEX-001–003 dan JSON lema J3. Dua kecocokan: بَابٌ AR-LEX-000003 (LEX-001:24), مَكَانٌ VOC-J3-014 (master bank:197). 24 tanpa kecocokan persis bukan bukti lema baru; perlu review morfologi, makna dan sumber lain. Tidak menghapus bentuk asli. Belum finalisasi 25 kategori atau gradasi 320 halaman. P025 HOLD. Tidak membuat materi baru dan tidak mengubah FROZEN.
+
+
+## Tahap 7 — konsolidasi awal terstruktur (DRAFT)
+[Register konsolidasi](QURBATA-BA-CONSOLIDATED-REGISTER-STAGE7-DRAFT.md): 278 baris sumber, 238 kelompok ejaan sementara; bukan jumlah kompetensi unik. ID sumber, bentuk asli, peran, makna/fungsi, locator dan status dipertahankan. Pengelompokan tanpa harakat bukan dedup semantik; مِنْ dan مَنْ tidak disatukan. 81 baris contoh/dialog, 126 mufradat, 31 guru, 12 murid, 13 interaksi, 9 formula alias, 2 rangkaian, 1 trace, 2 sapaan, 1 guru/interaksi. Peran audit sementara, perlu review terutama formula dan dialog.
+
+| No | Kategori | Guru / bukti instruksi | Murid / bukti respons | Status sementara |
+|---|---|---|---|---|
+| 01 | Sapaan awal | INS-001; P003 sapaan | RES-001 | tersedia |
+| 02 | Persiapan belajar | INS-007/014/015; M01 duduk/berdiri | RES-004/005; tindakan | tersedia |
+| 03 | Doa pembuka | — | — | kosong |
+| 04 | Mengikuti bacaan guru | INS-004; COR-V08 | tindakan | tersedia |
+| 05 | Memperhatikan bacaan guru | INS-002/013 | tindakan | tersedia |
+| 06 | Mendengarkan bacaan guru | INS-003; COR-V08 | tindakan | tersedia |
+| 07 | Membaca bersama | INS-005 umum | — | parsial |
+| 08 | Membaca baik benar | INS-005; INT-007/008 | narasi J3 P001:6 | parsial |
+| 09 | Mengulang bacaan | INS-006/009/018; M01 كَرِّرْ | tindakan | tersedia |
+| 10 | Apresiasi | INT-005/006 | — | tersedia |
+| 11 | Tanya kabar | P003:25 | P003:27 | tersedia legacy |
+| 12 | Perkenalan | — | — | kosong |
+| 13 | Penutupan | — | J1 P040 الْحَمْدُ لِلَّهِ | parsial |
+| 14 | Persiapan selesai | INS-008/016/017 | tindakan | tersedia |
+| 15 | Doa penutup | — | — | kosong |
+| 16 | Belajar di rumah | — | narasi J3 P001:18 | parsial narasi, bukan respons lisan |
+| 17 | Murajaah di rumah | — | narasi J3 P001:12,15 | parsial narasi |
+| 18 | Menghafal ayat | — | — | kosong |
+| 19 | Memperhatikan hadis | INS-002 umum | — | parsial |
+| 20 | Menerapkan hadis | — | — | kosong |
+| 21 | Menerapkan hadis di rumah | — | — | kosong |
+| 22 | Menebali tulisan | M01:28 اُكْتُبْ umum | P011:57–60 trace | parsial |
+| 23 | Tertib dan fokus | INS-010/013; P011:53 اِجْلِسْ | tindakan duduk P011:54–55 | parsial |
+| 24 | Ice breaking | — | — | kosong |
+| 25 | Materi/hadis baru | — | — | kosong |
+
+9 tersedia, 8 parsial, 8 kosong menurut bukti sementara (tersedia tidak berarti pasangan lisan lengkap). Narasi rumah bukan instruksi baru. Sumber J3 P001 adalah 03_BOOKS/BAHASA-ARAB/JILID-3/FROZEN/P001-5-PARAGRAF.md; M01 adalah 03_BOOKS/JILID-1/BAHASA-ARAB/UNITS/RIQA-M01-BAHASA-01-SALAM-INSTRUKSI-v1.0.md; P003/P011 legacy lihat lampiran J1 tahap 2. Belum review semantik seluruh 1954 baris, seluruh paragraf, pemisahan setiap dialog atau dedup morfologis. Tidak membuat materi baru, FROZEN tidak diubah, P025 HOLD.
