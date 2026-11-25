@@ -308,3 +308,19 @@ JSON J3: 9 formula (8 READY_FOR_IMPORT, F-J3-009 review morfologi), 29 lema; tid
 ## Tahap 5 — batch 1–4 (DRAFT)
 40 file tambahan berhasil discreen dengan kata kunci, 20 rebased dan 20 regenerated. Bukti path/blob/baris: [rebased 2](QURBATA-BA-J2-REBASED-BATCH2-STAGE5-DRAFT.md), [rebased 3](QURBATA-BA-J2-REBASED-BATCH3-STAGE5-DRAFT.md), [regenerated 1](QURBATA-BA-J2-REGENERATED-BATCH1-STAGE5-DRAFT.md), [regenerated 2](QURBATA-BA-J2-REGENERATED-BATCH2-STAGE5-DRAFT.md).
 Panel rebased: نُورٌ، رَسُولٌ، قُلُوبٌ (P031:67); كَرِيْمٌ، يَتِيْمٌ (P031:50); يَوْمٌ (P032:44); فِيْلٌ، طِيْنٌ (P032:45); رَحِيْمٌ، عَلِيْمٌ، حَكِيْمٌ (P033:51); نُجُوْمٌ (P035:45); سُوْقٌ، رُوْحٌ (P036:50); دُخُوْلٌ، خُرُوْجٌ (P037:50); غَفُوْرٌ (P038:61). 17 keluarga bentuk kandidat tambahan terhadap batch rebased pertama, 26 total dalam panel rebased yang discreen, bukan total lema unik master. نُوْرٌ/نُورٌ dan رَسُوْلٌ/رَسُولٌ disatukan untuk hitungan varian mad saja; sumber asli dipertahankan. Regenerated P001–P020 tidak menghasilkan panel komunikasi melalui screening; larangan mengajarkan rangkaian kendali sebagai mufradat eksplisit pada P001–P015. Seluruh 28 file rebased telah discreen lintas tahap 4–5. Tidak ada kategori instruksional baru yang disahkan. 60/143 kandidat tercakup tahap 4–5, 83 tersisa. Screening kata kunci bukan ekstraksi menyeluruh semua ungkapan; normalisasi lintas master belum selesai. P025 HOLD, FROZEN tidak diubah, tidak membuat materi baru.
+
+
+## Tahap 6 — penutupan antrean 143 kandidat (DRAFT)
+83 path tersisa berhasil diekstrak dan diverifikasi ulang dari 9 lampiran, 1954 baris mengandung Arab (bukan jumlah lema). Cakupan antrean tahap 4–6: 143/143. Tahap 4–5 sebagian hanya screening kata kunci; tahap 6 ekstraksi semua baris dengan huruf Arab dasar dan kata kunci panel. Tidak menyatakan semua file repository atau semua lema telah diaudit semantik.
+- [Batch 1](QURBATA-BA-STAGE6-BATCH01-DRAFT.md): 10 sumber
+- [Batch 2](QURBATA-BA-STAGE6-BATCH02-DRAFT.md): 10 sumber
+- [Batch 3](QURBATA-BA-STAGE6-BATCH03-DRAFT.md): 10 sumber
+- [Batch 4](QURBATA-BA-STAGE6-BATCH04-DRAFT.md): 10 sumber
+- [Batch 5](QURBATA-BA-STAGE6-BATCH05-DRAFT.md): 10 sumber
+- [Batch 6](QURBATA-BA-STAGE6-BATCH06-DRAFT.md): 10 sumber
+- [Batch 7](QURBATA-BA-STAGE6-BATCH07-DRAFT.md): 10 sumber
+- [Batch 8](QURBATA-BA-STAGE6-BATCH08-DRAFT.md): 10 sumber
+- [Batch 9](QURBATA-BA-STAGE6-BATCH09-DRAFT.md): 3 sumber
+J2 pages 15, regenerated 19; J3 batch 8, halaman 39; J4 halaman 2. J3 B02A dan P011 menyatakan objek BA dari kata yang lolos tashih; integrasi tidak mengurangi kotak utama. J4 P001/P002 adalah kandidat Tartil, panel transfer HOLD. Tidak ada kategori instruksional baru yang dapat disahkan dari temuan ini; ekstraksi baris belum merupakan review semantik per item.
+
+[Normalisasi lintas lima master](QURBATA-BA-CROSS-MASTER-NORMALIZATION-STAGE6-DRAFT.md): 26 bentuk panel rebased diuji kecocokan ejaan tanpa harakat terhadap master bank, LEX-001–003 dan JSON lema J3. Dua kecocokan: بَابٌ AR-LEX-000003 (LEX-001:24), مَكَانٌ VOC-J3-014 (master bank:197). 24 tanpa kecocokan persis bukan bukti lema baru; perlu review morfologi, makna dan sumber lain. Tidak menghapus bentuk asli. Belum finalisasi 25 kategori atau gradasi 320 halaman. P025 HOLD. Tidak membuat materi baru dan tidak mengubah FROZEN.
