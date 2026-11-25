@@ -255,3 +255,20 @@ K29 hanya crosswalk instruksi; K27 potensial negasi. Bukan kurikulum panel Nahwu
 
 ## Gate lanjutan
 Audit semua file BA standalone dan sumber halaman J2–8, normalisasi lema/kalimat dengan sumber, cek respons dan 25 kategori, baru usulkan urutan halaman. P025 ditahan. P023–024 draf tetap utuh. Tidak mengklaim inventaris seluruh repo selesai.
+
+
+## Tahap 2 — 25 November 2026 (DRAFT, belum lengkap)
+Tiga lampiran bukti verbatim telah dibuat dan diverifikasi: [J3 corpus](QURBATA-BA-J3-CORPUS-EVIDENCE-STAGE2-DRAFT.md) (9 sumber, 29 entri lema, 9 formula), [kurikulum kandidat](QURBATA-BA-CURRICULUM-EVIDENCE-STAGE2-DRAFT.md) (8 sumber), [J1 dan unit guru](QURBATA-BA-J1-EVIDENCE-STAGE2-DRAFT.md) (8 sumber). Setiap baris mencatat path, blob, nomor baris. Ekstraksi baris bukan segmentasi lema final.
+
+| Kategori | Temuan asli tambahan | Bukti | Status |
+|---|---|---|---|
+| 11 Tanya kabar | كَيْفَ حَالُكَ؟ / بِخَيْرٍ، الْحَمْدُ لِلّٰهِ | 03_BOOKS/JILID-1/BAHASA-ARAB/P003.md:25,27 | ditemukan pada sumber lama, bukan otomatis overlay |
+| 01 Sapaan | يَا صَدِيقِي / يَا صَدِيقَتِي | sumber P003:11,17 | varian sapaan |
+| 23 Tertib | اِجْلِسْ | 03_BOOKS/JILID-1/BAHASA-ARAB/P011/BAHASA-ARAB-QURBATA-J1-P011-v1.1.html:53–55 | instruksi lama, respons tindakan |
+| 22 Menebali | اِجْلِسْ • أَغْلِقِ الْكِتَابَ | sumber HTML P011:57 | teks trace, bukan instruksi lisan menebali |
+| 09 Mengulang | كَرِّرْ | 03_BOOKS/JILID-1/BAHASA-ARAB/UNITS/RIQA-M01-BAHASA-01-SALAM-INSTRUKSI-v1.0.md:26 | varian sumber unit |
+| 06 Mendengar | اِسْمَعْ | 03_BOOKS/JILID-1/BAHASA-ARAB/DRAFT/P004.md:7,10,21 | varian sumber lama |
+
+Audit: كِتَابٌ dan قَلَمٌ muncul pada LEX-ARB-001:22–23 dan bank VOC-001/VOC-003; jangan hitung ulang. قَرَأَ pada LEX-ARB-003:14 dan J3 lemma CSV:2 adalah kandidat keluarga sama. Bentuk كَرِّرْ, رَدِّدْ, أَعِدْ berbeda bentuk, fungsi berdekatan. Jangan hapus tanpa review. Kategori 11 kini ditemukan; 22 dan 23 memiliki bukti tambahan. Kategori lain belum diaudit ulang secara menyeluruh.
+
+Batas: 25 file sumber diperiksa dalam batch ini. Percobaan batch seluruh sumber terkena batas jumlah panggilan; J2–J8 file halaman dan data lain belum seluruhnya dibaca, termasuk audit leksikal tambahan dan paket BAT-004–006. HTML P010 tidak menghasilkan baris Arab dengan ekstraktor Unicode; perlu inspeksi aset/encoding. Belum ada total unik lintas sumber, belum ada gradasi per jilid final. P025 tetap HOLD. Tidak menambah mufradat dan tidak mengubah FROZEN.
