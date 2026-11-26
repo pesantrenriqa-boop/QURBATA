@@ -1,0 +1,8 @@
+# Stage 02B DRAFT — 2026-11-26
+Public web searches (not native database exports). Queries:
+1. Quran based Arabic language teaching learning empirical study Quran Arabic vocabulary teaching integration DOI Arabic language Quran pesantren
+2. pembelajaran bahasa arab berbasis al quran integrasi tahfidz lingkungan bahasa arab bi'ah arabiyah jurnal DOI
+3. تعليم اللغة العربية من خلال القرآن الكريم دراسة تعليمية تجريبية DOI
+4. "The Contribution of Memorizing the Qur'an" "Baeturrahman" DOI
+5. تعليم اللغة العربية بالقرآن الكريم للناطقين بغيرها دراسة تطبيقية مجلة
+Retained 12 new records P12–P23, plus 11 prior records = 23 unique register rows. Dedup by observed DOI/title against pilot; P02/P03/P04/P07 rediscovered, P16 publisher/PDF/GARUDA mirrors merged. This is a purposive exploratory shortlist, not exhaustive hit count or formal screening. Other visible results not retained due to scope or redundancy; no PRISMA count. 3 new core candidates, 3 borderline, 2 context, 4 background. Combined 9 candidate, 4 borderline, 2 context, 8 background. 20 reported DOI total, 3 missing. Existing pilot metadata carried forward, not all independently revalidated. P02 PDF prints variant 10.32699/liar.v8vi1.6679 vs prior v8i1; title also varies: reconcile before inclusion. P03 publisher/GARUDA match DOI; P16 publisher/PDF/GARUDA match. Crossref API GET for P12–P15 returned inaccessible tool errors, not evidence of invalid DOI. Other Crossref checks pending. No native Scopus/WoS/ERIC/DOAJ/GARUDA/Scholar searches or exports performed; no indexing or quartile claims. Article language must be checked from full text, not title. Prioritize journals on relevance, then verify indexing against official sources. No full text screening. No FROZEN edits.
