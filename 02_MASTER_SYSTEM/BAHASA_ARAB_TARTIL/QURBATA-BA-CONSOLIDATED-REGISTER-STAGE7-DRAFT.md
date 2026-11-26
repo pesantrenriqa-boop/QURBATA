@@ -282,3 +282,20 @@ Indeks terstruktur dari master bank, register kurikulum, JSON J3, legacy J1 dan 
 | دخول | REB-24 | دُخُوْلٌ | MUFRADAT | lihat bukti panel | QURBATA-BA-CROSS-MASTER-NORMALIZATION-STAGE6-DRAFT.md § دُخُوْلٌ — دخول | DRAFT PANEL |
 | خروج | REB-25 | خُرُوْجٌ | MUFRADAT | lihat bukti panel | QURBATA-BA-CROSS-MASTER-NORMALIZATION-STAGE6-DRAFT.md § خُرُوْجٌ — خروج | DRAFT PANEL |
 | غفور | REB-26 | غَفُوْرٌ | MUFRADAT | lihat bukti panel | QURBATA-BA-CROSS-MASTER-NORMALIZATION-STAGE6-DRAFT.md § غَفُوْرٌ — غفور | DRAFT PANEL |
+
+
+## Stage 8 — verified additional standalone utterances (DRAFT)
+
+| Kelompok ejaan | ID audit | Arab asli | Peran | Fungsi | Sumber | Status |
+|---|---|---|---|---|---|---|
+| أقرأ القرآن وأراجع بعض الآيات | S8-1 | أَقْرَأُ الْقُرْآنَ وَأُرَاجِعُ بَعْضَ الْآيَاتِ | MURID/KELUARGA | murajaah | 03_BOOKS/BAHASA-ARAB/JILID-3/FROZEN/P001-5-PARAGRAF.md:12 | STANDALONE; integrasi HOLD |
+| أقرأ القرآن وأراجع بعض الآيات التي قرأتها من قبل | S8-2 | أَقْرَأُ الْقُرْآنَ وَأُرَاجِعُ بَعْضَ الْآيَاتِ الَّتِي قَرَأْتُهَا مِنْ قَبْلُ | MURID/KELUARGA | murajaah | 03_BOOKS/BAHASA-ARAB/JILID-3/FROZEN/P001-5-PARAGRAF.md:15 | STANDALONE; integrasi HOLD |
+| أقرأ القرآن وأراجع آيات قصيرة قبل الدرس | S8-3 | أَقْرَأُ الْقُرْآنَ وَأُرَاجِعُ آيَاتٍ قَصِيرَةً قَبْلَ الدَّرْسِ | MURID/KELUARGA | murajaah sebelum pelajaran | 03_BOOKS/BAHASA-ARAB/JILID-3/FROZEN/P001-5-PARAGRAF.md:18 | STANDALONE; integrasi HOLD |
+| أقرأ القرآن وأراجع هذه الآية | S8-4 | أَقْرَأُ الْقُرْآنَ وَأُرَاجِعُ هٰذِهِ الْآيَةَ | MURID/KELUARGA | murajaah ayat | 03_BOOKS/BAHASA-ARAB/JILID-3/FROZEN/P002-5-PARAGRAF.md:9 | STANDALONE; integrasi HOLD |
+| أقرأ القرآن وأراجع سورة قصيرة | S8-5 | أَقْرَأُ الْقُرْآنَ وَأُرَاجِعُ سُورَةً قَصِيرَةً | ANTARTEMAN | murajaah surah | 03_BOOKS/BAHASA-ARAB/JILID-3/FROZEN/P002-5-PARAGRAF.md:12 | STANDALONE; integrasi HOLD |
+| أقرأ القرآن وأراجع ما قرأته من قبل | S8-6 | أَقْرَأُ الْقُرْآنَ وَأُرَاجِعُ مَا قَرَأْتُهُ مِنْ قَبْلُ | MURID/KELUARGA | murajaah | 03_BOOKS/BAHASA-ARAB/JILID-3/FROZEN/P002-5-PARAGRAF.md:15 | STANDALONE; integrasi HOLD |
+| أقرأ القرآن وأراجع بعض الآيات التي قرأتها أمس | S8-7 | أَقْرَأُ الْقُرْآنَ وَأُرَاجِعُ بَعْضَ الْآيَاتِ الَّتِي قَرَأْتُهَا أَمْسِ | MURID/KELUARGA | murajaah | 03_BOOKS/BAHASA-ARAB/JILID-3/FROZEN/P002-5-PARAGRAF.md:18 | STANDALONE; integrasi HOLD |
+| دورك الآن | S8-8 | دَوْرُكَ الْآنَ | ANTARKELUARGA | varian COR-007 | 03_BOOKS/BAHASA-ARAB/JILID-3/REVIEW/P006-P012-CHAT-RECOVERY-2026-08-21.md:39 | STANDALONE; integrasi HOLD |
+| من أين أقرأ | S8-9 | مِنْ أَيْنَ أَقْرَأُ؟ | ANTARTEMAN | tanya titik mulai | 03_BOOKS/BAHASA-ARAB/JILID-3/REVIEW/P006-P012-CHAT-RECOVERY-2026-08-21.md:74 | STANDALONE; integrasi HOLD |
+| ماذا تفعل | S8-10 | مَاذَا تَفْعَلُ؟ | INTERAKSI | tanya kegiatan | 03_BOOKS/BAHASA-ARAB/JILID-3/REVIEW/P006-P012-CHAT-RECOVERY-2026-08-21.md:112 | STANDALONE; integrasi HOLD |
+| استمع إلى قراءة صديقك ثم اقرأ بعد صديقك | S8-11 | اِسْتَمِعْ إِلَى قِرَاءَةِ صَدِيقِكَ، ثُمَّ اِقْرَأْ بَعْدَ صَدِيقِكَ | INSTRUKSI | rangkaian dengar dan baca | 03_BOOKS/BAHASA-ARAB/JILID-3/REVIEW/P006-P012-CHAT-RECOVERY-2026-08-21.md:99 | STANDALONE; integrasi HOLD |
