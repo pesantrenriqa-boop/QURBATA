@@ -32,3 +32,9 @@ Setiap revisi catat tanggal, sumber/path, versi, alasan, status, perubahan, depe
 - `books/jilid-1/Panduan-Guru-QJ1-Bagian-04-P031-P040-v3-DRAFT.md`, commit `abc3d1cc97fdf3a8fb39cd69fbd52b757ffa4ed2`. 10 tabel, 18 langkah dan 60 menit masing-masing; blob sumber dicatat.
 - P033 ءُ HOLD; P036 BLOCKED-CUR-HAF-002; P038 inti akhlak dengan target Arab kondisional. P040 konflik sumber §6 talqin sampel vs tes mandiri: usulan pisahkan tes dari latihan setelah tes, perlu keputusan formal. Panel nama huruf II terpisah; uji kelayakan waktu. Hadis HOLD, audit token dan validasi ahli terbuka.
 - 40/40 panduan DRAFT tersusun, bukan FROZEN final. Berikutnya audit lintas empat bagian, harmonisasi dan pengesahan desain sesuai governance. Tidak mengubah FROZEN atau register induk.
+
+
+## Log konsolidasi v3.1 — 26 November 2026
+- Master `books/jilid-1/Master-Panduan-Guru-QJ1-v3.1-DRAFT.md`: commit awal `23c28c5cf61c791268ae225183b1b7462ae4ef47`; penandaan paparan `7040b5d5720188dfd24511c5291af83e53e2440b`. 40 tabel/720 langkah/2400 menit; 10–40–10 tiap sesi. 32 target reguler, 2 kondisional, 6 review/evaluasi. Jadwal recall N+1/2/4/8 asumsi satu halaman per sesi; hitung ulang jika tertunda.
+- Audit literal awal 149 kecocokan instruksi sebelum intro reguler (dapat tumpang tindih); 159 baris instruksi diberi label paparan awal/kondisional. Bukan audit linguistik menyeluruh. Paparan bukan mastery. Dokumen bagian asli dipertahankan.
+- Status DRAFT, bukan FROZEN final. Audit token, whitelist, LO/KO, validasi hadis/hafalan, harmonisasi unit khusus dan tes, Decision-ID dan uji waktu terbuka. Tidak mengubah FROZEN atau register induk.
