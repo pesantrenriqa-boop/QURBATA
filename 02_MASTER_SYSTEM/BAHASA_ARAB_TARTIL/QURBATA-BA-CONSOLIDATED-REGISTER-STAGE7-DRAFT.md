@@ -299,3 +299,14 @@ Indeks terstruktur dari master bank, register kurikulum, JSON J3, legacy J1 dan 
 | من أين أقرأ | S8-9 | مِنْ أَيْنَ أَقْرَأُ؟ | ANTARTEMAN | tanya titik mulai | 03_BOOKS/BAHASA-ARAB/JILID-3/REVIEW/P006-P012-CHAT-RECOVERY-2026-08-21.md:74 | STANDALONE; integrasi HOLD |
 | ماذا تفعل | S8-10 | مَاذَا تَفْعَلُ؟ | INTERAKSI | tanya kegiatan | 03_BOOKS/BAHASA-ARAB/JILID-3/REVIEW/P006-P012-CHAT-RECOVERY-2026-08-21.md:112 | STANDALONE; integrasi HOLD |
 | استمع إلى قراءة صديقك ثم اقرأ بعد صديقك | S8-11 | اِسْتَمِعْ إِلَى قِرَاءَةِ صَدِيقِكَ، ثُمَّ اِقْرَأْ بَعْدَ صَدِيقِكَ | INSTRUKSI | rangkaian dengar dan baca | 03_BOOKS/BAHASA-ARAB/JILID-3/REVIEW/P006-P012-CHAT-RECOVERY-2026-08-21.md:99 | STANDALONE; integrasi HOLD |
+
+
+## Tahap 9 — tambahan bentuk ujaran standalone DRAFT
+
+| Kelompok ejaan | ID audit | Arab asli | Peran | Fungsi | Sumber | Status |
+|---|---|---|---|---|---|---|
+| الحمد لله | S9-1 | الْحَمْدُ لِلَّهِ | KELUARGA | hamdalah setelah membaca | P004.4 03_BOOKS/BAHASA-ARAB/JILID-3/REVIEW/P004-P005-CHAT-RECOVERY-2026-08-21.md:20 | DRAFT; varian, bukan kompetensi baru; hamdalah sudah ada di overlay J1 |
+| دور خالد | S9-2 | دَوْرُ خَالِدٍ | GURU | giliran nama orang | P007.1 03_BOOKS/BAHASA-ARAB/JILID-3/REVIEW/P006-P012-CHAT-RECOVERY-2026-08-21.md:33 | DRAFT; varian, bukan kompetensi baru; hamdalah sudah ada di overlay J1 |
+| دور سلمان | S9-3 | دَوْرُ سَلْمَانَ | ANTARSANTRI | varian giliran nama orang | P007.5 03_BOOKS/BAHASA-ARAB/JILID-3/REVIEW/P006-P012-CHAT-RECOVERY-2026-08-21.md:45 | DRAFT; varian, bukan kompetensi baru; hamdalah sudah ada di overlay J1 |
+| الآن دورك، اقرأ بعد صديقك | S9-4 | الْآنَ دَوْرُكَ، اِقْرَأْ بَعْدَ صَدِيقِكَ | ANTARSANTRI | kombinasi COR-007/008 | P012.1 03_BOOKS/BAHASA-ARAB/JILID-3/REVIEW/P012-COMPLETE-5-PARAGRAPHS-REVIEW-2026-08-21.md:11; P012.2 03_BOOKS/BAHASA-ARAB/JILID-3/REVIEW/P012-COMPLETE-5-PARAGRAPHS-REVIEW-2026-08-21.md:14; P012.3 03_BOOKS/BAHASA-ARAB/JILID-3/REVIEW/P012-COMPLETE-5-PARAGRAPHS-REVIEW-2026-08-21.md:17; P012.4 03_BOOKS/BAHASA-ARAB/JILID-3/REVIEW/P012-COMPLETE-5-PARAGRAPHS-REVIEW-2026-08-21.md:20; P012.5 03_BOOKS/BAHASA-ARAB/JILID-3/REVIEW/P012-COMPLETE-5-PARAGRAPHS-REVIEW-2026-08-21.md:23 | DRAFT; varian, bukan kompetensi baru; hamdalah sudah ada di overlay J1 |
+| الآن دورك، اقرأ من هنا | S9-5 | الْآنَ دَوْرُكَ، اِقْرَأْ مِنْ هُنَا | ANTARSANTRI | kombinasi COR-007/003 | P012.4 03_BOOKS/BAHASA-ARAB/JILID-3/REVIEW/P012-COMPLETE-5-PARAGRAPHS-REVIEW-2026-08-21.md:20 | DRAFT; varian, bukan kompetensi baru; hamdalah sudah ada di overlay J1 |
