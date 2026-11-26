@@ -20,3 +20,9 @@ Setiap revisi catat tanggal, sumber/path, versi, alasan, status, perubahan, depe
 - `books/jilid-1/Panduan-Guru-QJ1-Bagian-02-P011-P020-v3-DRAFT.md` — commit `ab17597791897380a3ba8491add4a846643d0936`. Revisi 10 tabel, 180 langkah, masing-masing 60 menit; target lisan mengikuti v3, kandidat hadis HOLD. Panduan lama P011–P020 dipertahankan sebagai riwayat, bukan target Arab terbaru.
 - P018 tetap BLOCKED-CUR-HAF-002; P020 evaluasi respons tanpa model, panel nama huruf terpisah. Sumber Tartil diwarisi dari panduan sebelumnya, belum diperiksa ulang. Tidak ada aktivasi atau perubahan FROZEN.
 - Progres revisi panduan J1: 20/40. Berikutnya P021–P030 setelah pemeriksaan gate desain dan sumber halaman. Decision-ID formal, harmonisasi register, validasi ahli dan uji durasi masih terbuka.
+
+
+## Log P021–P030 — 26 November 2026
+- Panduan `books/jilid-1/Panduan-Guru-QJ1-Bagian-03-P021-P030-v3-DRAFT.md`, commit `b00052c2843590f52982bbd79333e6f2c90fc9b1`. 10 tabel, 18 langkah dan 60 menit masing-masing; blob sumber dicatat.
+- P028 alternatif desain praktik kumulatif v3, unit khusus tetap ditahan sampai harmonisasi DEC-CUR-005/gate. P030 evaluasi 24 fathah, 24 kasrah, 16 dhammah, 29 identitas; tidak mengklaim cakupan 74 padanan. Hadis HOLD; tidak mengubah FROZEN atau register induk. Audit token independen, validasi ahli dan Decision-ID masih terbuka.
+- Progres 30/40 panduan DRAFT. Berikutnya P031–P040.
