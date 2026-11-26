@@ -26,3 +26,9 @@ Setiap revisi catat tanggal, sumber/path, versi, alasan, status, perubahan, depe
 - Panduan `books/jilid-1/Panduan-Guru-QJ1-Bagian-03-P021-P030-v3-DRAFT.md`, commit `b00052c2843590f52982bbd79333e6f2c90fc9b1`. 10 tabel, 18 langkah dan 60 menit masing-masing; blob sumber dicatat.
 - P028 alternatif desain praktik kumulatif v3, unit khusus tetap ditahan sampai harmonisasi DEC-CUR-005/gate. P030 evaluasi 24 fathah, 24 kasrah, 16 dhammah, 29 identitas; tidak mengklaim cakupan 74 padanan. Hadis HOLD; tidak mengubah FROZEN atau register induk. Audit token independen, validasi ahli dan Decision-ID masih terbuka.
 - Progres 30/40 panduan DRAFT. Berikutnya P031–P040.
+
+
+## Log P031–P040 — 26 November 2026
+- `books/jilid-1/Panduan-Guru-QJ1-Bagian-04-P031-P040-v3-DRAFT.md`, commit `abc3d1cc97fdf3a8fb39cd69fbd52b757ffa4ed2`. 10 tabel, 18 langkah dan 60 menit masing-masing; blob sumber dicatat.
+- P033 ءُ HOLD; P036 BLOCKED-CUR-HAF-002; P038 inti akhlak dengan target Arab kondisional. P040 konflik sumber §6 talqin sampel vs tes mandiri: usulan pisahkan tes dari latihan setelah tes, perlu keputusan formal. Panel nama huruf II terpisah; uji kelayakan waktu. Hadis HOLD, audit token dan validasi ahli terbuka.
+- 40/40 panduan DRAFT tersusun, bukan FROZEN final. Berikutnya audit lintas empat bagian, harmonisasi dan pengesahan desain sesuai governance. Tidak mengubah FROZEN atau register induk.
