@@ -1,0 +1,2 @@
+# DRAFT 02B
+Register 23 unique records, 12 new; 20 reported DOI, 3 absent. Crossref verification blocked for four attempted records; remaining pending. Primary sources linked. Formal database search and comprehensive screening not complete. P16 provides counterevidence to automatic vocabulary transfer from tahfidz. P12 documents existing integrative ecological elements; no novelty claim. Next resolve DOI discrepancies, verify index and full texts, run native queries. No FROZEN changes.
